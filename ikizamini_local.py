@@ -32,12 +32,21 @@ import uuid
 import hashlib
 import random
 import zipfile
+import sys
+from datetime import datetime
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 from flask import Flask, request, redirect, url_for, send_file, render_template_string, abort
 from jsonschema import validate as jsonschema_validate, ValidationError
+
+# Logging helper
+def log_progress(message: str):
+    """Print progress message with timestamp to terminal"""
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[{timestamp}] {message}", flush=True)
+    sys.stdout.flush()
 
 
 # =============================================================================
@@ -469,13 +478,44 @@ PAGE = """
     .row { display:flex; gap:16px; margin-bottom:12px; }
     .row label { width: 180px; font-weight: bold; }
     input[type=text], input[type=number] { width: 420px; padding: 6px; }
-    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; }
-    .btn:disabled { opacity:0.5; cursor:not-allowed; }
+    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; transition: all 0.3s; }
+    .btn:hover:not(:disabled) { background:#333; }
+    .btn:disabled { opacity:0.5; cursor:not-allowed; background:#666; }
+    .btn.loading { background:#0066cc; position:relative; }
+    .btn.loading::after { content: '...'; animation: dots 1.5s steps(4, end) infinite; }
+    @keyframes dots { 0%, 20% { content: '.'; } 40% { content: '..'; } 60%, 100% { content: '...'; } }
     .card { border:1px solid #ddd; padding:16px; margin-top:18px; }
     .muted { color:#666; }
     pre { background:#f7f7f7; padding:12px; overflow:auto; }
     .links a { margin-right:12px; }
+    .status-message { margin-top: 12px; padding: 10px; background: #e8f4f8; border-left: 4px solid #0066cc; display: none; }
+    .status-message.show { display: block; }
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('form');
+      const submitBtn = document.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.textContent;
+      
+      // Add status message div
+      const statusMsg = document.createElement('div');
+      statusMsg.className = 'status-message';
+      statusMsg.textContent = 'Processing request... Please wait.';
+      form.appendChild(statusMsg);
+      
+      form.addEventListener('submit', function(e) {
+        // Show visual feedback immediately when button is clicked
+        submitBtn.disabled = true;
+        submitBtn.classList.add('loading');
+        submitBtn.textContent = 'Generating...';
+        statusMsg.classList.add('show');
+        statusMsg.textContent = 'Request submitted! Processing objectives... This may take a while. Please check the terminal for progress.';
+        
+        // Allow form to submit normally (don't prevent default)
+        // The button will stay disabled until page reloads
+      });
+    });
+  </script>
 </head>
 <body>
 <div class="box">
@@ -559,10 +599,16 @@ def job_view(job_id: str):
 def generate():
     up = request.files.get("input_file")
     if not up or up.filename == "":
+        log_progress("ERROR: No file uploaded")
         return "No file uploaded", 400
+
+    log_progress("=" * 60)
+    log_progress("NEW GENERATION REQUEST RECEIVED")
+    log_progress("=" * 60)
 
     # Read file content
     content = up.read().decode("utf-8", errors="replace")
+    log_progress(f"File uploaded: {up.filename} ({len(content)} bytes)")
 
     ollama_url = request.form.get("ollama_url", "http://localhost:11434").strip()
     worker_model = request.form.get("worker_model", "qwen:32b").strip()
@@ -571,7 +617,17 @@ def generate():
     num_ctx = int(request.form.get("num_ctx", "8192"))
     limit = int(request.form.get("limit", "0"))
 
+    log_progress(f"Configuration:")
+    log_progress(f"  Ollama URL: {ollama_url}")
+    log_progress(f"  Worker model: {worker_model}")
+    log_progress(f"  Manager model: {manager_model}")
+    log_progress(f"  Max rounds: {max_rounds}")
+    log_progress(f"  Context size: {num_ctx}")
+    log_progress(f"  Limit: {limit if limit > 0 else 'None'}")
+
     job_id = str(uuid.uuid4())[:8]
+    log_progress(f"Job ID: {job_id}")
+    
     JOBS[job_id] = {
         "status": "running",
         "requested": 0,
@@ -591,12 +647,17 @@ def generate():
 
     # Run synchronously (local app). If you want async later, we can add Celery/RQ.
     try:
+        log_progress("Parsing objectives from file...")
         roots = parse_objectives(content)
         objectives = collect_learning_objectives_with_paths(roots)
         if limit and limit > 0:
             objectives = objectives[:limit]
+            log_progress(f"Limited to first {limit} objectives")
 
-        JOBS[job_id]["requested"] = len(objectives)
+        total_objectives = len(objectives)
+        JOBS[job_id]["requested"] = total_objectives
+        log_progress(f"Found {total_objectives} learning objectives to process")
+        log_progress("-" * 60)
 
         generated_by_id: Dict[str, Dict[str, Any]] = {}
         failures: List[str] = []
@@ -617,6 +678,10 @@ def generate():
                 obj_id = obj["objective_id"]
                 obj_text = obj["objective_text"]
                 path = obj["path"]
+                
+                log_progress(f"[{i}/{total_objectives}] Processing: {obj_id} - {obj_text[:60]}...")
+                start_time = time.time()
+                
                 try:
                     ik = generate_for_objective_strict(
                         base_url=ollama_url,
@@ -629,6 +694,9 @@ def generate():
                     )
                     validate_ikizamini(ik)
                     generated_by_id[obj_id] = ik
+                    elapsed = time.time() - start_time
+                    log_progress(f"  ✓ Success ({elapsed:.1f}s)")
+                    
                     JOBS[job_id]["completed"] = len(generated_by_id)
 
                     fname = unique_objective_filename(obj_id, obj_text)
@@ -637,7 +705,9 @@ def generate():
                     index_lines.append(f"- {fname}")
 
                 except Exception as e:
+                    elapsed = time.time() - start_time
                     msg = f"{obj_id}: {e}"
+                    log_progress(f"  ✗ FAILED ({elapsed:.1f}s): {msg}")
                     failures.append(msg)
                     JOBS[job_id]["failures"] = failures
 
@@ -659,6 +729,9 @@ def generate():
             "requested": len(objectives),
             "completed": len(generated_by_id),
         }
+        
+        log_progress("-" * 60)
+        log_progress("Generating master file...")
         master_text = write_master_from_tree(roots, generated_by_id, meta)
 
         JOBS[job_id]["master_text"] = master_text
@@ -667,7 +740,13 @@ def generate():
         JOBS[job_id]["completed"] = len(generated_by_id)
         JOBS[job_id]["status"] = "done"
 
+        log_progress("=" * 60)
+        log_progress(f"JOB COMPLETED: {job_id}")
+        log_progress(f"  Total: {total_objectives} | Success: {len(generated_by_id)} | Failed: {len(failures)}")
+        log_progress("=" * 60)
+
     except Exception as e:
+        log_progress(f"ERROR: {str(e)}")
         JOBS[job_id]["status"] = "error"
         JOBS[job_id]["failures"] = [str(e)]
 
