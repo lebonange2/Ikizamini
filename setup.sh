@@ -39,18 +39,41 @@ check_root() {
 
 # Detect package manager
 detect_package_manager() {
+    # Check if running as root
+    if [ "$EUID" -eq 0 ]; then
+        SUDO_CMD=""
+    else
+        SUDO_CMD="sudo"
+    fi
+    
     if command -v apt-get &> /dev/null; then
         PKG_MANAGER="apt-get"
-        INSTALL_CMD="sudo apt-get install -y"
+        if [ -n "$SUDO_CMD" ]; then
+            INSTALL_CMD="$SUDO_CMD apt-get install -y"
+        else
+            INSTALL_CMD="apt-get install -y"
+        fi
     elif command -v yum &> /dev/null; then
         PKG_MANAGER="yum"
-        INSTALL_CMD="sudo yum install -y"
+        if [ -n "$SUDO_CMD" ]; then
+            INSTALL_CMD="$SUDO_CMD yum install -y"
+        else
+            INSTALL_CMD="yum install -y"
+        fi
     elif command -v dnf &> /dev/null; then
         PKG_MANAGER="dnf"
-        INSTALL_CMD="sudo dnf install -y"
+        if [ -n "$SUDO_CMD" ]; then
+            INSTALL_CMD="$SUDO_CMD dnf install -y"
+        else
+            INSTALL_CMD="dnf install -y"
+        fi
     elif command -v pacman &> /dev/null; then
         PKG_MANAGER="pacman"
-        INSTALL_CMD="sudo pacman -S --noconfirm"
+        if [ -n "$SUDO_CMD" ]; then
+            INSTALL_CMD="$SUDO_CMD pacman -S --noconfirm"
+        else
+            INSTALL_CMD="pacman -S --noconfirm"
+        fi
     elif command -v brew &> /dev/null; then
         PKG_MANAGER="brew"
         INSTALL_CMD="brew install"
