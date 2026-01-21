@@ -218,9 +218,19 @@ install_ollama() {
         print_success "Ollama is already installed: $OLLAMA_VERSION"
     else
         print_info "Installing Ollama..."
+        print_info "Note: GPU detection warnings are expected on cloud GPU systems and can be safely ignored."
         
         # Download and install Ollama
-        curl -fsSL https://ollama.com/install.sh | sh
+        # Note: Warnings about GPU detection are normal on cloud GPU systems
+        curl -fsSL https://ollama.com/install.sh | sh || {
+            # Check if ollama was actually installed despite errors
+            if command -v ollama &> /dev/null; then
+                print_info "Ollama installed (some warnings during installation are normal)"
+            else
+                print_error "Failed to install Ollama. Please install it manually from https://ollama.com"
+                exit 1
+            fi
+        }
         
         if command -v ollama &> /dev/null; then
             print_success "Ollama installed successfully"
@@ -254,22 +264,52 @@ install_ollama() {
     fi
 }
 
-# Pull qwen:30b model
+# Pull qwen model (try 32b first, then alternatives)
 pull_qwen_model() {
     echo ""
-    echo "Step 5: Pulling qwen:30b model..."
+    echo "Step 5: Pulling qwen model..."
     
-    # Check if model is already pulled
-    if ollama list 2>/dev/null | grep -q "qwen:30b"; then
-        print_success "qwen:30b model is already available"
-    else
-        print_info "Pulling qwen:30b model (this may take a while and requires significant disk space)..."
-        ollama pull qwen:30b
+    # Try different model variants
+    MODELS=("qwen:32b" "qwen2.5:32b" "qwen2:32b" "qwen:30b")
+    MODEL_PULLED=false
+    
+    # Check if any qwen model is already available
+    for model in "${MODELS[@]}"; do
+        if ollama list 2>/dev/null | grep -q "$model"; then
+            print_success "Qwen model found: $model"
+            MODEL_PULLED=true
+            break
+        fi
+    done
+    
+    if [ "$MODEL_PULLED" = false ]; then
+        print_info "Pulling qwen model (this may take a while and requires significant disk space)..."
+        print_info "Trying available qwen model variants..."
         
-        if ollama list 2>/dev/null | grep -q "qwen:30b"; then
-            print_success "qwen:30b model pulled successfully"
-        else
-            print_error "Failed to pull qwen:30b model. Please check your internet connection and disk space."
+        for model in "${MODELS[@]}"; do
+            print_info "Attempting to pull $model..."
+            if ollama pull "$model" 2>&1; then
+                # Check if pull was successful
+                if ollama list 2>/dev/null | grep -q "$model"; then
+                    print_success "Successfully pulled $model"
+                    MODEL_PULLED=true
+                    break
+                fi
+            else
+                print_info "Failed to pull $model, trying next variant..."
+            fi
+        done
+        
+        if [ "$MODEL_PULLED" = false ]; then
+            print_error "Failed to pull any qwen model variant."
+            print_info "Available qwen models you can try manually:"
+            print_info "  - qwen:32b"
+            print_info "  - qwen2.5:32b"
+            print_info "  - qwen2:32b"
+            print_info "  - qwen:14b (smaller alternative)"
+            print_info ""
+            print_info "To see all available models: ollama list"
+            print_info "To pull manually: ollama pull <model-name>"
             exit 1
         fi
     fi
@@ -301,11 +341,12 @@ verify_installation() {
         print_error "Ollama: NOT FOUND"
     fi
     
-    # Check qwen:30b model
-    if ollama list 2>/dev/null | grep -q "qwen:30b"; then
-        print_success "qwen:30b model: OK"
+    # Check qwen model (any variant)
+    QWEN_MODEL=$(ollama list 2>/dev/null | grep -E "qwen.*:32b|qwen.*:30b" | head -n1 | awk '{print $1}' || echo "")
+    if [ -n "$QWEN_MODEL" ]; then
+        print_success "Qwen model: OK ($QWEN_MODEL)"
     else
-        print_error "qwen:30b model: NOT FOUND"
+        print_error "Qwen model: NOT FOUND"
     fi
     
     # Check Ollama service
