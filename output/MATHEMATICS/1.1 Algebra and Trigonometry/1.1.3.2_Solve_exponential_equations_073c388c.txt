@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.3.2 Solve exponential equations
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.3 Exponential and Logarithmic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Solve for x: 2^(x+1) = 16.
+A) x = 2
+B) x = 3
+C) x = 4
+D) x = 5
+Correct Answer: B
+
+Solution:
+2^(x+1) = 16. Since 16 = 2^4, we have 2^(x+1) = 2^4, so x+1 = 4 and x = 3.
+
+Explanation:
+Rewrite the number on the right as a power of 2, then equate exponents (valid because the base 2 is positive and not 1).
+
+Common mistake note:
+Forgetting the exponent is x+1 and answering x=4 just because 16=2^4.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Solve for x: 5^(2x−1) = 125.
+A) x = 1
+B) x = 2
+C) x = 3
+D) x = 4
+Correct Answer: B
+
+Solution:
+125 = 5^3, so 5^(2x−1) = 5^3. Equate exponents: 2x−1 = 3 ⇒ 2x = 4 ⇒ x = 2.
+
+Explanation:
+Convert 125 to a power of 5 so the bases match, then solve the linear equation in the exponent.
+
+Common mistake note:
+Trying to manipulate exponents incorrectly (e.g., “divide exponents”) instead of solving 2x−1=3.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Solve for x: 3^(x+2) = 27.
+A) x = 0
+B) x = 1
+C) x = 2
+D) x = 3
+Correct Answer: B
+
+Solution:
+27 = 3^3, so 3^(x+2) = 3^3. Then x+2 = 3 ⇒ x = 1.
+
+Explanation:
+Rewrite 27 as a power of 3, then equate exponents and solve.
+
+Common mistake note:
+Subtracting incorrectly after x+2=3; check by substitution: 3^(1+2)=3^3=27.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Solve for x: 2^x = 8^3.
+A) x = 3
+B) x = 6
+C) x = 9
+D) x = 12
+Correct Answer: C
+
+Solution:
+Rewrite 8 as 2^3: 8^3 = (2^3)^3 = 2^9. Then 2^x = 2^9, so x = 9.
+
+Explanation:
+Use exponent rules to express both sides with base 2, then equate exponents.
+
+Common mistake note:
+Confusing 8^3 with 8·3; it means 8·8·8, and (2^3)^3 = 2^(3·3), not 2^(3+3).
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Solve for x: 4^(x−1) = 8.
+A) x = 1/2
+B) x = 3/2
+C) x = 2
+D) x = 5/2
+Correct Answer: D
+
+Solution:
+Write everything in base 2: 4 = 2^2 and 8 = 2^3. Then 4^(x−1) = (2^2)^(x−1) = 2^(2x−2). So 2^(2x−2) = 2^3 ⇒ 2x−2 = 3 ⇒ 2x = 5 ⇒ x = 5/2.
+
+Explanation:
+Convert both sides to the same base (2), then set exponents equal and solve the resulting linear equation.
+
+Common mistake note:
+Setting x−1=3 directly without matching bases first; 4^(x−1)=8 does not imply x−1=3.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Solve for x: 3^x = 7.
+A) x = log_3(7)
+B) x = log_7(3)
+C) x = 7^3
+D) x = 3^7
+Correct Answer: A
+
+Solution:
+Take logarithms: 3^x = 7 ⇒ x = log_3(7) = (ln 7)/(ln 3).
+
+Explanation:
+When the right-hand side is not a convenient power of 3, use logarithms to isolate the exponent.
+
+Common mistake note:
+Mixing up the base in the log: log_7(3) would solve 7^x=3, not 3^x=7.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Solve for x: 2^(x+2) − 5·2^x = 0.
+A) x = 0
+B) x = 1
+C) x = 2
+D) No real solution
+Correct Answer: D
+
+Solution:
+Factor out 2^x: 2^(x+2) = 2^x·2^2 = 4·2^x. So 2^(x+2) − 5·2^x = 4·2^x − 5·2^x = (4−5)2^x = −2^x. Setting −2^x = 0 gives 2^x = 0, which has no real solution because 2^x > 0 for all real x.
+
+Explanation:
+After factoring out the common exponential term, the equation reduces to 2^x=0, which is impossible over the reals since exponential functions with base > 1 are always positive.
+
+Common mistake note:
+After factoring, incorrectly assuming 2^x can be 0, or mistakenly setting 4−5=0.
+------------------------------------------------------------------------------

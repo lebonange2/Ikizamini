@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.3.7 Apply the change-of-base formula
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.3 Exponential and Logarithmic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Use the change-of-base formula to evaluate \(\log_2(32)\) using common logarithms (base 10).
+A) 5
+B) 4
+C) \(\dfrac{\log 32}{\log 2}\) and it equals 6
+D) \(\dfrac{\log 2}{\log 32}\) and it equals 5
+Correct Answer: A
+
+Solution:
+\(\log_2(32)=\dfrac{\log(32)}{\log(2)}\). Since \(32=2^5\), \(\log_2(32)=5\).
+
+Explanation:
+By change of base, \(\log_b(a)=\dfrac{\log(a)}{\log(b)}\). Here, \(\log_2(32)=\dfrac{\log(32)}{\log(2)}\), and because \(32=2^5\), the logarithm equals 5.
+
+Common mistake note:
+Flipping the fraction gives \(\dfrac{\log 2}{\log 32}=\log_{32}(2)\), not \(\log_2(32)\).
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Write \(\log_5(12)\) using natural logarithms (\(\ln\)) via change of base.
+A) \(\dfrac{\ln 12}{\ln 5}\)
+B) \(\dfrac{\ln 5}{\ln 12}\)
+C) \(\ln(12\cdot 5)\)
+D) \(\ln(12-5)\)
+Correct Answer: A
+
+Solution:
+\(\log_5(12)=\dfrac{\ln 12}{\ln 5}\).
+
+Explanation:
+The change-of-base formula rewrites \(\log_b(a)\) as \(\dfrac{\ln a}{\ln b}\). Substituting \(a=12\), \(b=5\) gives \(\dfrac{\ln 12}{\ln 5}\).
+
+Common mistake note:
+\(\dfrac{\ln 5}{\ln 12}\) equals \(\log_{12}(5)\), not \(\log_5(12)\).
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Given \(\log_{10}(2)\approx 0.3010\), approximate \(\log_2(10)\) using change of base. Round to 3 decimal places.
+A) 3.322
+B) 0.301
+C) 2.000
+D) 0.500
+Correct Answer: A
+
+Solution:
+\(\log_2(10)=\dfrac{\log_{10}(10)}{\log_{10}(2)}=\dfrac{1}{0.3010}\approx 3.322\).
+
+Explanation:
+Using base-10 change of base, \(\log_2(10)=\dfrac{\log(10)}{\log(2)}\). Since \(\log(10)=1\), compute \(1/0.3010\approx 3.322\).
+
+Common mistake note:
+Using \(\dfrac{\log(2)}{\log(10)}\) gives \(\log_{10}(2)\), not \(\log_2(10)\).
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Solve for \(x\): \(\log_3(x)=4\). Use change of base to justify your steps.
+A) 81
+B) 64
+C) 12
+D) 16
+Correct Answer: A
+
+Solution:
+\(\log_3(x)=\dfrac{\ln x}{\ln 3}=4\Rightarrow \ln x=4\ln 3\Rightarrow x=e^{4\ln 3}=3^4=81\).
+
+Explanation:
+Change of base converts \(\log_3(x)\) to \(\dfrac{\ln x}{\ln 3}\). Multiply both sides by \(\ln 3\): \(\ln x=4\ln 3\). Exponentiate to get \(x=e^{4\ln 3}=3^4=81\).
+
+Common mistake note:
+Don’t treat \(\log_3(x)=4\) as linear (e.g., \(x=4\cdot 3\)). It means \(x\) is the value of \(3^4\).
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Which expression is obtained by applying ONLY the change-of-base formula to rewrite \(\log_7(\sqrt{5})\) in terms of common logarithms (base 10)? (Do not apply any other log properties.)
+A) \(\dfrac{\log(\sqrt{5})}{\log 7}\)
+B) \(\dfrac{\log 7}{\log(\sqrt{5})}\)
+C) \(\dfrac{\log(5^{1/2})}{\log 7}\)
+D) \(\dfrac{\log 5}{\log 49}\)
+Correct Answer: A
+
+Solution:
+\(\log_7(\sqrt{5})=\dfrac{\log(\sqrt{5})}{\log 7}\).
+
+Explanation:
+Using change of base with common logs: \(\log_b(a)=\dfrac{\log(a)}{\log(b)}\). With \(a=\sqrt{5}\) and \(b=7\), this becomes \(\dfrac{\log(\sqrt{5})}{\log 7}\).
+
+Common mistake note:
+Choice B is the reciprocal (\(\log_{\sqrt{5}}(7)\)). Choices C and D rewrite the argument/base beyond a direct single application of change of base as stated.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Use change of base to solve for \(x\): \(\log_4(x)=\dfrac{1}{2}\).
+A) 2
+B) 8
+C) 16
+D) 4
+Correct Answer: A
+
+Solution:
+\(\log_4(x)=\dfrac{\ln x}{\ln 4}=\dfrac{1}{2}\Rightarrow \ln x=\dfrac{1}{2}\ln 4\Rightarrow x=e^{(1/2)\ln 4}=4^{1/2}=2\).
+
+Explanation:
+Rewrite with change of base: \(\log_4(x)=\dfrac{\ln x}{\ln 4}\). Solve for \(\ln x\) and exponentiate to obtain \(x\).
+
+Common mistake note:
+A common error is to treat \(\log_4(x)=\tfrac12\) as \(x=4/2\). It instead means \(x=4^{1/2}\).
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+A student writes: \(\log_3(7)=\dfrac{\ln 3}{\ln 7}\). Which statement best describes the error?
+A) The numerator and denominator are reversed; it should be \(\dfrac{\ln 7}{\ln 3}\).
+B) Natural logs cannot be used in change of base; only base 10 logs work.
+C) Change of base requires multiplying: \(\log_3(7)=\ln 3\cdot \ln 7\).
+D) The expression is correct as written.
+Correct Answer: A
+
+Solution:
+Correct change-of-base: \(\log_3(7)=\dfrac{\ln 7}{\ln 3}\). The student inverted the fraction.
+
+Explanation:
+By change of base, \(\log_b(a)=\dfrac{\ln a}{\ln b}\). Here \(a=7\), \(b=3\), so it must be \(\dfrac{\ln 7}{\ln 3}\). The student wrote the reciprocal, which equals \(\log_7(3)\).
+
+Common mistake note:
+Swapping numerator and denominator changes the value to a different logarithm (base and argument swapped), not the original.
+------------------------------------------------------------------------------

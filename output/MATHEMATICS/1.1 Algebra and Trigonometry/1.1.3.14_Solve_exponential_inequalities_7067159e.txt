@@ -1,0 +1,134 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.3.14 Solve exponential inequalities
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.3 Exponential and Logarithmic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Solve the inequality: \(2^{x} > 16\).
+A) \(x > 4\)
+B) \(x \ge 4\)
+C) \(x < 4\)
+D) \(x \le 4\)
+Correct Answer: A
+
+Solution:
+\(2^x > 16 = 2^4\). Since the base \(2>1\), \(2^x\) is increasing, so compare exponents: \(x>4\).
+
+Explanation:
+For \(a>1\), the function \(a^x\) is increasing, so \(a^u>a^v\iff u>v\).
+
+Common mistake note:
+Choosing \(x\ge 4\) by treating \(>\) as \(\ge\). But \(x=4\) gives \(2^4=16\), which is not strictly greater.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Solve the inequality: \(3^{x-2} \le 27\).
+A) \(x \le 5\)
+B) \(x \ge 5\)
+C) \(x \le 3\)
+D) \(x \ge 3\)
+Correct Answer: A
+
+Solution:
+Rewrite \(27\) as \(3^3\). Then \(3^{x-2} \le 3^3\). Since \(3>1\), compare exponents: \(x-2 \le 3\), so \(x \le 5\).
+
+Explanation:
+When the base is the same and greater than 1, \(3^u \le 3^v\) is equivalent to \(u\le v\).
+
+Common mistake note:
+Answering \(x\ge 5\) by incorrectly flipping the inequality sign. The inequality direction is preserved here because the base is \(>1\) and we are comparing exponents.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Solve the inequality: \((1/2)^{x} > 8\).
+A) \(x > -3\)
+B) \(x < -3\)
+C) \(x > 3\)
+D) \(x < 3\)
+Correct Answer: B
+
+Solution:
+Rewrite in base 2: \((1/2)^x = 2^{-x}\) and \(8=2^3\). So \(2^{-x} > 2^3\). Since base \(2>1\), compare exponents: \(-x > 3\). Multiply by \(-1\) and flip the inequality: \(x < -3\).
+
+Explanation:
+Rewriting with base \(2\) avoids confusion about a base between 0 and 1; the inequality flips only when multiplying by a negative number (here, \(-1\)).
+
+Common mistake note:
+Forgetting to flip the inequality when multiplying by \(-1\), leading to \(x>-3\). Check: \(x=-2\) gives \((1/2)^{-2}=4\), not greater than 8.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Solve the inequality: \(e^{2x+1} \ge e^{5}\).
+A) \(x \ge 2\)
+B) \(x \le 2\)
+C) \(x \ge 3\)
+D) \(x \le 3\)
+Correct Answer: A
+
+Solution:
+Since \(e^t\) is increasing, compare exponents: \(2x+1 \ge 5\). Then \(2x\ge 4\), so \(x\ge 2\).
+
+Explanation:
+For any base \(a>1\) (including \(e\)), \(a^u\ge a^v\iff u\ge v\).
+
+Common mistake note:
+Arithmetic slip after subtracting 1 or dividing by 2 (e.g., concluding \(x\ge 4\) instead of \(x\ge 2\)).
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Solve the inequality: \(5^{x} < 2\).
+A) \(x < \log_{5}(2)\)
+B) \(x > \log_{5}(2)\)
+C) \(x < \log_{2}(5)\)
+D) \(x > \log_{2}(5)\)
+Correct Answer: A
+
+Solution:
+Take \(\log_5\) of both sides (monotonic since base \(5>1\)): \(\log_5(5^x) < \log_5(2)\). Thus \(x < \log_5(2)\).
+
+Explanation:
+Because \(5^x\) is increasing, applying \(\log_5\) preserves the inequality direction and simplifies \(\log_5(5^x)=x\).
+
+Common mistake note:
+Using the wrong log base and writing \(x<\log_2(5)\); that is a different number and does not solve \(5^x<2\).
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Solve the inequality: \(2^{x+1} \le 3\cdot 2^{x-2}\).
+A) All real numbers \(x\)
+B) No real solutions
+C) \(x \le 3\)
+D) \(x \ge 3\)
+Correct Answer: B
+
+Solution:
+Divide both sides by \(2^{x-2}\) (which is always positive):
+\[\frac{2^{x+1}}{2^{x-2}} \le 3.\]
+Then \(2^{(x+1)-(x-2)}=2^3=8\), so the inequality becomes \(8\le 3\), which is false. Therefore, there are no real solutions.
+
+Explanation:
+Since \(2^{x-2}>0\) for all real \(x\), dividing by it is valid and does not reverse the inequality. The variable cancels, leaving a statement that is never true.
+
+Common mistake note:
+Canceling exponents incorrectly (e.g., thinking \(2^{x+1}/2^{x-2}=2\)). The correct exponent difference is \((x+1)-(x-2)=3\), so the quotient is \(2^3=8\).
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Solve the inequality: \(4^{x} > 2^{x+3}\).
+A) \(x > 3\)
+B) \(x < 3\)
+C) \(x > -3\)
+D) \(x < -3\)
+Correct Answer: A
+
+Solution:
+Rewrite \(4^x\) as \((2^2)^x=2^{2x}\). Then \(2^{2x} > 2^{x+3}\). Since base \(2>1\), compare exponents: \(2x > x+3\), hence \(x>3\).
+
+Explanation:
+Express both sides with the same base so the inequality reduces to a linear inequality in the exponent.
+
+Common mistake note:
+Forgetting that \((2^2)^x=2^{2x}\) (not \(2^{x^2}\)). Alternatively, mishandling subtraction: \(2^{2x}/2^{x+3}=2^{x-3}>1\Rightarrow x-3>0\Rightarrow x>3\).
+------------------------------------------------------------------------------

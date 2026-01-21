@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.3.8 Graph exponential functions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.3 Exponential and Logarithmic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Which graph best represents the function f(x)=2^x ?
+A) Passes through (0,1), increases as x increases, and has horizontal asymptote y=0.
+B) Passes through (0,0), increases as x increases, and has vertical asymptote x=0.
+C) Passes through (0,1), decreases as x increases, and has horizontal asymptote y=0.
+D) Passes through (1,0), increases as x increases, and has horizontal asymptote y=1.
+Correct Answer: A
+
+Solution:
+For f(x)=2^x: f(0)=2^0=1 so it passes through (0,1). Since base 2>1, it is increasing. As x→−∞, 2^x→0, so the horizontal asymptote is y=0. Therefore choice A.
+
+Explanation:
+An exponential with base greater than 1 grows to the right, crosses the y-axis at 1, and approaches 0 on the left, giving asymptote y=0.
+
+Common mistake note:
+Choosing C by thinking all exponentials “decay.” Decay happens when 0<b<1, not when b>1.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+A graph is decreasing, has y-intercept 1, and approaches y=0 as x increases. Which function matches this graph?
+A) f(x)=2^x
+B) f(x)=(1/2)^x
+C) f(x)=2^x+1
+D) f(x)=(1/2)^x+3
+Correct Answer: B
+
+Solution:
+A decreasing exponential with y-intercept 1 and horizontal asymptote y=0 must be of the form b^x with 0<b<1 and no vertical shift. (1/2)^x fits: f(0)=1 and it decreases to 0 as x→∞. So B.
+
+Explanation:
+For b^x, the y-intercept is always 1 (since b^0=1). Decreasing behavior indicates 0<b<1; no vertical shift keeps asymptote at y=0.
+
+Common mistake note:
+Picking C because it still has y-intercept 2^0+1=2 (not 1) and asymptote y=1 (not 0).
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Graph g(x)=3^(x−2). Which statement is correct?
+A) It is the graph of 3^x shifted 2 units left.
+B) It is the graph of 3^x shifted 2 units right.
+C) It is the graph of 3^x shifted 2 units up.
+D) It is the graph of 3^x reflected across the x-axis.
+Correct Answer: B
+
+Solution:
+Replacing x by (x−2) shifts the graph right 2 units. Thus g(x)=3^(x−2) is 3^x shifted 2 units right → B.
+
+Explanation:
+Horizontal shifts: f(x−h) moves right by h; f(x+h) moves left by h. Here h=2.
+
+Common mistake note:
+Choosing A by confusing the sign inside the input. The minus sign causes a shift to the right, not left.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+For the function h(x)=2^x+5, what is the horizontal asymptote?
+A) y=0
+B) y=5
+C) x=0
+D) x=5
+Correct Answer: B
+
+Solution:
+The parent function 2^x has horizontal asymptote y=0. Adding +5 shifts the graph up 5 units, so the asymptote becomes y=5. Answer: B.
+
+Explanation:
+A vertical shift f(x)+k moves all y-values (including the asymptote) up by k.
+
+Common mistake note:
+Choosing A because you remember 2^x has asymptote y=0, but forgetting that the +5 shifts the entire graph upward.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+A function has horizontal asymptote y=−3 and passes through the point (0,−2). It is an increasing exponential. Which function could it be?
+A) f(x)=2^x−3
+B) f(x)=(1/2)^x−3
+C) f(x)=2^x+3
+D) f(x)=−2^x−3
+Correct Answer: A
+
+Solution:
+Asymptote y=−3 suggests a vertical shift down 3: f(x)=b^x−3. Passing through (0,−2) gives f(0)=1−3=−2, which works. Increasing requires b>1, so choose b=2. Thus A.
+
+Explanation:
+An exponential of the form b^x+k has asymptote y=k and y-intercept 1+k. With k=−3, the y-intercept is −2, matching the point.
+
+Common mistake note:
+Choosing B because it matches the asymptote and point, but (1/2)^x is decreasing (since 0<b<1), contradicting “increasing.”
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Which table of values could come from an exponential function of the form f(x)=a·b^x with a>0 and b>1?
+A) x: 0,1,2,3  | f(x): 2,4,6,8
+B) x: 0,1,2,3  | f(x): 3,6,12,24
+C) x: 0,1,2,3  | f(x): 5,4,3,2
+D) x: 0,1,2,3  | f(x): 1,1,1,1
+Correct Answer: B
+
+Solution:
+For f(x)=a·b^x, the ratio f(x+1)/f(x) is constant and equals b. In B, ratios are 6/3=2, 12/6=2, 24/12=2, constant with b=2>1 and a=f(0)=3>0. So B.
+
+Explanation:
+Exponential growth shows a constant multiplicative factor between consecutive outputs. Linear patterns (constant difference) are not exponential.
+
+Common mistake note:
+Choosing A because it “increases,” but A has constant differences (+2) rather than constant ratios, so it’s linear, not exponential.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Graph y=−(1/3)^x. Which description is correct?
+A) Always positive, decreasing, with asymptote y=0.
+B) Always negative, increasing, with asymptote y=0.
+C) Always negative, decreasing, with asymptote y=1.
+D) Crosses the x-axis at x=0 and has asymptote y=0.
+Correct Answer: B
+
+Solution:
+(1/3)^x is always positive and decreasing (since 0<b<1). Multiplying by −1 makes all values negative and reflects across the x-axis, which turns a decreasing curve into an increasing one. The horizontal asymptote remains y=0. Therefore: always negative, increasing, asymptote y=0 → B.
+
+Explanation:
+Reflection across the x-axis changes the sign of y-values and reverses monotonicity: if a positive function decreases, its negative increases.
+
+Common mistake note:
+Choosing A by ignoring the leading negative sign. The negative makes the entire graph lie below the x-axis (never positive).
+------------------------------------------------------------------------------

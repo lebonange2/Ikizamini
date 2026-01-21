@@ -1,0 +1,163 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.3.15 Solve logarithmic inequalities
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.3 Exponential and Logarithmic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Solve the inequality: \(\log_2(x) \ge 3\).
+A) \(x \ge 6\)
+B) \(x \ge 8\)
+C) \(0 < x \le 8\)
+D) \(x > 8\)
+Correct Answer: B
+
+Solution:
+Domain: \(x>0\). Since base \(2>1\), \(\log_2(x)\) is increasing, so exponentiating preserves the inequality:
+\[\log_2(x) \ge 3 \iff x \ge 2^3 = 8.\]
+Thus \(x\ge 8\).
+
+Explanation:
+For logarithms with base greater than 1, the function is increasing, so \(\log_b(x)\ge c\) is equivalent to \(x\ge b^c\), provided \(x>0\).
+
+Common mistake note:
+Forgetting the domain restriction \(x>0\), or using \(x>8\) instead of \(x\ge 8\).
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Solve the inequality: \(\log_{1/3}(x) < 2\).
+A) \(0<x<\tfrac{1}{9}\)
+B) \(x>\tfrac{1}{9}\)
+C) \(x\ge \tfrac{1}{9}\)
+D) \(0<x<9\)
+Correct Answer: B
+
+Solution:
+Domain: \(x>0\). Because the base satisfies \(0<\tfrac13<1\), \(\log_{1/3}(x)\) is decreasing, so the inequality reverses when converting to exponential form:
+\[\log_{1/3}(x) < 2 \iff x > \left(\tfrac13\right)^2 = \tfrac19.\]
+Therefore, \(x>\tfrac19\).
+
+Explanation:
+When \(0<b<1\), \(\log_b(x)\) is decreasing. Applying \(b^{(\cdot)}\) to both sides flips the inequality sign.
+
+Common mistake note:
+Not reversing the inequality (leading to \(0<x<1/9\)), or including the endpoint \(x=1/9\) even though the inequality is strict.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Solve the inequality: \(\ln(x-1) \le 0\).
+A) \(x \le 2\)
+B) \(1 < x \le 2\)
+C) \(x \ge 2\)
+D) \(0 < x \le 2\)
+Correct Answer: B
+
+Solution:
+Domain: \(x-1>0\Rightarrow x>1\).
+Since \(\ln\) is increasing,
+\[\ln(x-1)\le 0 \iff x-1 \le e^0=1.\]
+So \(x\le 2\). Intersect with the domain gives \(1<x\le 2\).
+
+Explanation:
+First enforce the log domain (argument positive). Then use monotonicity of \(\ln\) (increasing) to move from a log inequality to an inequality in the argument.
+
+Common mistake note:
+Including \(x=1\) (where \(\ln(0)\) is undefined) or forgetting to apply the domain restriction.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Solve the inequality: \(\log_{5}(2x+1) > \log_{5}(x+4)\).
+A) \(x > 3\)
+B) \(-\tfrac{1}{2} < x \le 3\)
+C) \(x < -\tfrac{1}{2}\)
+D) \(x > -\tfrac{1}{2}\)
+Correct Answer: A
+
+Solution:
+Domain: \(2x+1>0\Rightarrow x>-\tfrac12\) and \(x+4>0\Rightarrow x>-4\). Combined domain: \(x>-\tfrac12\).
+Because base \(5>1\), \(\log_5\) is increasing, so compare arguments:
+\[2x+1 > x+4 \Rightarrow x>3.\]
+Intersecting with the domain leaves \(x>3\).
+
+Explanation:
+With the same base \(b>1\), \(\log_b(A) > \log_b(B)\) is equivalent to \(A>B\) as long as both arguments are positive.
+
+Common mistake note:
+Ignoring domain restrictions or trying to subtract logs without ensuring both arguments are valid.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Solve the inequality: \(\log_2(x+3) + \log_2(x-1) \ge 3\).
+A) \(x \ge 1\)
+B) \(x \ge 3\)
+C) \(x \ge -1+2\sqrt{3}\)
+D) \(x \le -1-2\sqrt{3}\)
+Correct Answer: C
+
+Solution:
+Domain: \(x+3>0\Rightarrow x>-3\) and \(x-1>0\Rightarrow x>1\). So domain: \(x>1\).
+Combine logs:
+\[\log_2((x+3)(x-1))\ge 3.\]
+Since base \(2>1\), exponentiate:
+\[(x+3)(x-1)\ge 8.\]
+Expand and solve:
+\[x^2+2x-3\ge 8 \Rightarrow x^2+2x-11\ge 0.\]
+Roots: \(x=\frac{-2\pm\sqrt{48}}{2}=-1\pm 2\sqrt3\).
+Thus \(x\le -1-2\sqrt3\) or \(x\ge -1+2\sqrt3\).
+Intersect with \(x>1\) gives \(x\ge -1+2\sqrt3\).
+
+Explanation:
+Use the product rule \(\log_b A+\log_b B=\log_b(AB)\) (valid only when both arguments are positive), then solve the resulting quadratic inequality and apply the domain.
+
+Common mistake note:
+Combining logs without enforcing \(x>1\), which can lead to incorrectly including the left-branch solution \(x\le -1-2\sqrt3\).
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Solve the inequality: \(\log_3(x^2-4) \le 1\).
+A) \(-\sqrt{7} \le x \le \sqrt{7}\)
+B) \(-\sqrt{7} \le x < -2\) or \(2 < x \le \sqrt{7}\)
+C) \(x < -\sqrt{7}\) or \(x > \sqrt{7}\)
+D) \(-2 < x < 2\)
+Correct Answer: B
+
+Solution:
+Domain: \(x^2-4>0\Rightarrow x^2>4\Rightarrow x<-2\) or \(x>2\).
+Since base \(3>1\), exponentiate without flipping:
+\[x^2-4 \le 3^1=3 \Rightarrow x^2 \le 7.\]
+So \(-\sqrt7 \le x \le \sqrt7\). Intersect with the domain gives
+\[[-\sqrt7,\sqrt7]\cap\big(( -\infty,-2)\cup(2,\infty)\big)= [-\sqrt7,-2)\cup(2,\sqrt7].\]
+Thus \(-\sqrt7 \le x < -2\) or \(2 < x \le \sqrt7\).
+
+Explanation:
+Solve the inequality from exponentiating (since the base is >1) and intersect with the necessary domain condition that the log argument is positive.
+
+Common mistake note:
+Including \(x=\pm2\) (argument becomes 0, log undefined) or forgetting to intersect with the domain \(|x|>2\).
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Solve the inequality: \(\log_2(x) - \log_2(x-2) \ge 1\).
+A) \(x \ge 4\)
+B) \(2 < x \le 4\)
+C) \(x>2\)
+D) \(0<x\le 4\)
+Correct Answer: B
+
+Solution:
+Domain: \(x>0\) and \(x-2>0\Rightarrow x>2\). So domain: \(x>2\).
+Combine logs:
+\[\log_2\left(\frac{x}{x-2}\right)\ge 1.\]
+Since base \(2>1\), exponentiate:
+\[\frac{x}{x-2} \ge 2.\]
+On the domain, \(x-2>0\), so multiply both sides by \(x-2\) without flipping:
+\[x \ge 2(x-2)=2x-4 \Rightarrow x\le 4.\]
+Intersect with \(x>2\) gives \(2<x\le 4\).
+
+Explanation:
+After combining logs into a single log, exponentiate (base >1) and solve the resulting rational inequality, using the domain to determine the sign of \(x-2\).
+
+Common mistake note:
+Multiplying by \(x-2\) without noting it must be positive (from the domain), or allowing \(x\le 2\) where the expression is undefined.
+------------------------------------------------------------------------------

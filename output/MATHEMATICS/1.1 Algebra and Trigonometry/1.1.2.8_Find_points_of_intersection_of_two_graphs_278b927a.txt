@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.2.8 Find points of intersection of two graphs
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.2 The Cartesian Plane and the Distance Formula
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+What are the points of intersection of the graphs of the equations \(y = 2x + 3\) and \(y = -x + 1\)?
+A) (1, 5)
+B) (1, 3)
+C) (-1, 1)
+D) (-\frac{2}{3}, \frac{5}{3})
+Correct Answer: D
+
+Solution:
+Set the equations equal: \(2x + 3 = -x + 1\). Solve for \(x\): \(3x = -2\) so \(x = -\frac{2}{3}\). Substitute \(x = -\frac{2}{3}\) back into \(y = 2x + 3\) to find \(y = \frac{5}{3}\). Thus, the intersection point is \((-\frac{2}{3}, \frac{5}{3})\).
+
+Explanation:
+Set the equations equal because the intersection points have the same \(y\) value for both equations. Substitute the \(x\) value back into either equation to find \(y\).
+
+Common mistake note:
+Be careful with algebraic manipulation and don't forget to substitute back to find \(y\).
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Determine the intersection points of \(y = x^2\) and \(y = 2x + 3\).
+A) (3, 12)
+B) (3, 9)
+C) (-1, 2)
+D) (-1, 2) and (3, 9)
+Correct Answer: D
+
+Solution:
+Set \(x^2 = 2x + 3\) leading to \(x^2 - 2x - 3 = 0\). Factor to \((x-3)(x+1) = 0\) giving roots \(x = 3, -1\). For \(x = 3\), \(y = 9\); for \(x = -1\), \(y = 2\). Intersections: \((-1, 2)\), \((3, 9)\).
+
+Explanation:
+Form a quadratic by equalizing, solve for \(x\), and substitute each solution back to get \(y\)-values.
+
+Common mistake note:
+Check all roots and substitute them to find corresponding \(y\)-values.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+What is the point of intersection for \(y = \sin(x)\) and \(y = \cos(x)\) over \([0, \pi/2]\)?
+A) (0, 0)
+B) (\pi/4, \sqrt{2}/2)
+C) (\pi/2, 0)
+D) (1, 1)
+Correct Answer: B
+
+Solution:
+Solve \(\sin(x) = \cos(x)\). This implies \(\tan(x) = 1\), occurring at \(x = \pi/4\). Verify using the unit circle: \(\sin(\pi/4) = \cos(\pi/4) = \frac{\sqrt{2}}{2}\).
+
+Explanation:
+\(\sin\) and \(\cos\) are equal when \(\tan(x) = 1\). Using the unit circle, this occurs at \(x = \pi/4\), giving \(y = \frac{\sqrt{2}}{2}\).
+
+Common mistake note:
+Remember the values of \(\sin\) and \(\cos\) at common angles on the unit circle.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Approximate the points where \(y = e^x\) and \(y = 3 - x\) intersect.
+A) (0, 2.7)
+B) (1, 2)
+C) (1, 1)
+D) (0, 3)
+Correct Answer: B
+
+Solution:
+Equating \(e^x = 3-x\), use numerical methods like graphing. The intersection occurs near \(x=1\), where \(e^1 \approx 2.7\) approaches \(y = 2\).
+
+Explanation:
+Use numerical methods or graphing to find approximate intersection at \(x \approx 1\), yielding approximately \((1, 2)\).
+
+Common mistake note:
+Graphing helps visualize intersections. Avoid round-off errors in approximations.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Where do the circles defined by \((x-1)^2 + y^2 = 4\) and \(x^2 + (y-1)^2 = 4\) intersect?
+A) (1, 3) and (3, 1)
+B) (0, 1) and (1, 0)
+C) (2, 2) and (4, 0)
+D) (2, 2) and (0, 0)
+Correct Answer: D
+
+Solution:
+Expand both circles: \((x-1)^2 + y^2 = x^2 - 2x + 1 + y^2 = 4\) and \(x^2 + y^2 - 2y + 1 = 4 \). Solving leads to \((2, 2)\) and \((0, 0)\).
+
+Explanation:
+Use algebraic methods to solve the system of equations derived from the expanded circle equations.
+
+Common mistake note:
+Verify each intersection point satisfies both original circle equations.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+For the curves \(y = x^3\) and \(y = 6x - 9\), find all intersection points.
+A) (0, 0)
+B) (1, -3)
+C) (-3, 0)
+D) (3, 9) and (-1.85, -11.52)
+Correct Answer: D
+
+Solution:
+Set \(x^3 = 6x - 9\) leading to \(x^3 - 6x + 9 = 0\). Use numerical methods like Newton-Raphson to find roots \(x = 3\) and \(x \approx -1.85\). Calculate intersections \((3, 9)\) and \((-1.85, -11.52)\).
+
+Explanation:
+Use iterative numerical solutions to find intersection points accurately due to non-linear nature.
+
+Common mistake note:
+Numerical solutions require careful handling; verify results by substitution.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Identify where the parabola \(y = x^2 - 4x + 4\) and line \(y = x - 2\) intersect.
+A) (2, 0)
+B) (0, 4)
+C) (3, 1)
+D) (2, 0) and (3, 1)
+Correct Answer: D
+
+Solution:
+Set \(x^2 - 4x + 4 = x - 2\), simplifying to \(x^2 - 5x + 6 = 0\), factored as \((x-2)(x-3) = 0\). Thus, the intersections are \((2, 0)\) and \((3, 1)\).
+
+Explanation:
+Solve for \(x\) after equalizing the equations, check roots by substituting back into the linear formula.
+
+Common mistake note:
+Make sure to substitute back and verify each point is an intersection.
+------------------------------------------------------------------------------

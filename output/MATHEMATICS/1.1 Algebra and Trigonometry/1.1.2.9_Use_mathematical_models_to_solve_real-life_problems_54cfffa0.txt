@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.2.9 Use mathematical models to solve real-life problems
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.2 The Cartesian Plane and the Distance Formula
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+A company's profit \( P \) (in thousands of dollars) can be modeled by the equation \( P = 50x - 0.5x^2 \), where \( x \) is the number of units sold in hundreds. What is the maximum profit the company can achieve?
+A) 5,000
+B) 2,500
+C) 10,000
+D) 12,500
+Correct Answer: B
+
+Solution:
+To find the maximum profit, identify the vertex of the parabola. The vertex x-coordinate is given by \( x = -\frac{b}{2a} \) in the equation \( ax^2 + bx + c \). Here, \( a = -0.5 \) and \( b = 50 \). Hence, \( x = -\frac{50}{2(-0.5)} = 50 \). Substitute \( x = 50 \) back into the equation: \( P = 50(50) - 0.5(50)^2 = 2,500 \). Thus, the maximum profit is 2,500 thousand dollars.
+
+Explanation:
+The quadratic model represents a parabola that opens downwards (a < 0). The vertex gives the maximum point. Finding the vertex ensures we capture this maximum point precisely.
+
+Common mistake note:
+A common mistake is to solve it as a linear equation, leading to an incorrect maximization strategy.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+A rectangle's area needs to be 200 square meters. Let the length be \( l \) meters and the width be \( w \) meters. If the perimeter is modeled by the equation \( 2l + 2w = 60 \), which pair of length and width satisfy both conditions?
+A) l = 10, w = 20
+B) l = 15, w = 15
+C) l = 20, w = 10
+D) l = 25, w = 5
+Correct Answer: C
+
+Solution:
+First, notice that \( lw = 200 \) and \( 2l + 2w = 60 \). Solve for \( w \) in the perimeter equation: \( w = 30 - l \). Substituting in the area: \( l(30-l) = 200 \). This can be solved by: \( l^2 - 30l + 200 = 0 \), which translates into the pairs: \( l = 20 \) and \( w = 10 \).
+
+Explanation:
+Use simultaneous equations: one for area, one for perimeter, solve to find the correct length and width pair that satisfies both equations.
+
+Common mistake note:
+Often mistakenly assume \( l = w \) without solving, leading to incorrect dimensions.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+A car rental service charges a flat fee of $20 plus $0.50 per mile driven. If a customer wants to spend no more than $50, what is the maximum number of miles they can drive?
+A) 60 miles
+B) 100 miles
+C) 40 miles
+D) 80 miles
+Correct Answer: A
+
+Solution:
+Set up the inequality: \( 20 + 0.5x \leq 50 \), where \( x \) is miles. Solving gives: \( 0.5x \leq 30 \Rightarrow x \leq 60 \). The maximum number of miles \( x \) is 60.
+
+Explanation:
+Formulate a linear inequality from the cost constraint to solve for the maximum miles driven without exceeding the budget.
+
+Common mistake note:
+Misreading the flat fee as part of the per mile charge, leading to a smaller \( x \).
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+If the population of a bacteria culture doubles every 3 hours, modeled by \( P(t) = P_0 \, 2^{t/3} \), where \( P_0 \) is the initial population, how long will it take to increase from 100 to 800 bacteria?
+A) 6 hours
+B) 9 hours
+C) 12 hours
+D) 24 hours
+Correct Answer: B
+
+Solution:
+\( 800 = 100 \, 2^{t/3} \Rightarrow 2^{t/3} = 8 \Rightarrow t = 9 \). First verify \( 2^3 = 8 \), so \( t = 9 \) hours.
+
+Explanation:
+Understanding the pattern of exponential growth and applying powers of two helps solve for the time. Use logarithms if needed for validation.
+
+Common mistake note:
+Forget to convert population growth to exponential form, guessing linear growth.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+A store is having a sale where all items are 30% off. What is the sale price of an item originally costing $50?
+A) $15
+B) $35
+C) $45
+D) $25
+Correct Answer: B
+
+Solution:
+Calculate the discount: 30% of $50 is $15. Subtract the discount from the original price: \( 50 - 15 = 35 \).
+
+Explanation:
+Determine the discount as a percentage of the original price and subtract it directly to find the sale price.
+
+Common mistake note:
+Confuse percentage discount, adding rather than subtracting from the original price.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+The height \( h \) of a ball thrown into the air is modeled by \( h(t) = -16t^2 + 32t + 5 \). What is the maximum height the ball reaches?
+A) 5 feet
+B) 21 feet
+C) 25 feet
+D) 37 feet
+Correct Answer: B
+
+Solution:
+Find the vertex: \( t = -b/2a = -32/2(-16) = 1 \). \( h(1) = -16(1)^2 + 32(1) + 5 = 21 \). Maximum height is 21 feet.
+
+Explanation:
+The maximum height corresponds to the vertex of the quadratic function that describes the ball's trajectory.
+
+Common mistake note:
+Incorrect vertex calculation, mistaking it for a slope or misusing formula.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+A household uses a linear model to calculate electricity bills: \( C = 0.12x + 15 \), where \( C \) is cost and \( x \) is kWh used. If their monthly bill is $99, how much electricity was consumed?
+A) 600 kWh
+B) 700 kWh
+C) 950 kWh
+D) 1,000 kWh
+Correct Answer: B
+
+Solution:
+Set the model equation: \( 0.12x + 15 = 99 \). \( 0.12x = 84 \), \( x = 700 \). Thus, 700 kWh were consumed.
+
+Explanation:
+Solve the linear equation by isolating \( x \), accounting for both the per kWh charge and the fixed cost.
+
+Common mistake note:
+Overlook the fixed cost and attempt division with total cost by variable rate only.
+------------------------------------------------------------------------------

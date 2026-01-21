@@ -1,0 +1,166 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.2.12 Use point-slope form to write equations of lines
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.2 The Cartesian Plane and the Distance Formula
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Write the equation of the line with slope 4 that passes through the point (2, -3) in point-slope form.
+A) y + 3 = 4(x - 2)
+B) y - 3 = 4(x - 2)
+C) y + 3 = 2(x - 4)
+D) y - 2 = 4(x + 3)
+Correct Answer: A
+
+Solution:
+Use point-slope form y - y1 = m(x - x1). With m = 4 and (x1, y1) = (2, -3):
+
+y - (-3) = 4(x - 2)
+
+y + 3 = 4(x - 2).
+
+Explanation:
+Point-slope form substitutes the given slope and a point directly: y - y1 = m(x - x1). Because y1 = -3, subtracting y1 becomes adding 3.
+
+Common mistake note:
+A common mistake is to write y - 3 = 4(x - 2), treating y1 as +3 instead of -3. This shifts the line and does not pass through (2, -3).
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+A line passes through (-5, 7) and has slope -2. Which point-slope equation is correct?
+A) y - 7 = -2(x + 5)
+B) y + 7 = -2(x + 5)
+C) y - 7 = -2(x - 5)
+D) y - 7 = 2(x + 5)
+Correct Answer: A
+
+Solution:
+Point-slope form: y - y1 = m(x - x1).
+Given m = -2, (x1, y1) = (-5, 7):
+
+y - 7 = -2(x - (-5)) = -2(x + 5).
+
+Explanation:
+Since x1 = -5, the expression (x - x1) becomes (x + 5). The slope stays -2.
+
+Common mistake note:
+A common mistake is using (x - 5) instead of (x + 5), forgetting that x - (-5) becomes x + 5. That would create a line through (5, 7) instead.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Write the point-slope equation of the line that passes through the points (1, 2) and (5, 10).
+A) y - 2 = 2(x - 1)
+B) y - 10 = 2(x + 5)
+C) y - 2 = 8(x - 1)
+D) y + 2 = 2(x - 1)
+Correct Answer: A
+
+Solution:
+First find the slope:
+
+m = (10 - 2)/(5 - 1) = 8/4 = 2.
+
+Use point-slope form with point (1, 2):
+
+y - 2 = 2(x - 1).
+
+Explanation:
+Two-point information requires computing the slope first, then substituting one of the points into y - y1 = m(x - x1).
+
+Common mistake note:
+A common mistake is to use the rise (10-2)=8 directly as the slope (choice C). Slope must be rise/run, so it must be 8/4 = 2.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+The line is given by 3x - 2y = 8. Write an equivalent equation in point-slope form using the point (4, 2) on the line.
+A) y - 2 = (3/2)(x - 4)
+B) y - 2 = (-3/2)(x - 4)
+C) y + 2 = (2/3)(x - 4)
+D) y - 4 = (3/2)(x - 2)
+Correct Answer: A
+
+Solution:
+Solve for y to find the slope:
+
+3x - 2y = 8
+-2y = 8 - 3x
+2y = 3x - 8
+y = (3/2)x - 4
+
+So slope m = 3/2. Using point (4, 2):
+
+y - 2 = (3/2)(x - 4).
+
+Explanation:
+Point-slope form needs the slope and a point. Converting standard form to slope-intercept reveals the slope 3/2, then substitute the given point.
+
+Common mistake note:
+A common mistake is flipping the slope to 2/3 (from solving incorrectly or swapping rise/run). That would not match the line’s rate of change.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Which point-slope equation represents a line with slope 1/3 passing through (6, -1)?
+A) y + 1 = (1/3)(x - 6)
+B) y - 1 = (1/3)(x - 6)
+C) y + 1 = 3(x - 6)
+D) y + 1 = (1/3)(x + 6)
+Correct Answer: A
+
+Solution:
+Use y - y1 = m(x - x1) with m = 1/3 and (x1, y1) = (6, -1):
+
+y - (-1) = (1/3)(x - 6)
+
+y + 1 = (1/3)(x - 6).
+
+Explanation:
+Because y1 is -1, subtracting y1 becomes y + 1. Because x1 is 6, (x - x1) is (x - 6).
+
+Common mistake note:
+A common mistake is writing (x + 6) instead of (x - 6). That uses x1 = -6, which changes the point the line passes through.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+A line passes through (0, -4) and is parallel to the line y = -5x + 2. Write its equation in point-slope form.
+A) y + 4 = -5(x - 0)
+B) y - 4 = -5(x - 0)
+C) y + 4 = 5(x - 0)
+D) y + 2 = -5(x - 0)
+Correct Answer: A
+
+Solution:
+Parallel lines have the same slope. The given line y = -5x + 2 has slope m = -5.
+Using point (0, -4) in y - y1 = m(x - x1):
+
+y - (-4) = -5(x - 0)
+
+y + 4 = -5(x - 0).
+
+Explanation:
+Recognize parallel lines share the same slope, then substitute the given point into point-slope form.
+
+Common mistake note:
+A common mistake is to use the y-intercept 2 from the given line (choice D). Parallel lines generally do not share the same intercept, only the same slope.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+A line is perpendicular to y = (2/5)x - 1 and passes through (-10, 3). What is its equation in point-slope form?
+A) y - 3 = (-5/2)(x + 10)
+B) y - 3 = (5/2)(x + 10)
+C) y + 3 = (-5/2)(x + 10)
+D) y - 3 = (-2/5)(x + 10)
+Correct Answer: A
+
+Solution:
+The given slope is 2/5. A perpendicular line has slope equal to the negative reciprocal: m = -5/2.
+Use point-slope form with point (-10, 3):
+
+y - 3 = (-5/2)(x - (-10)) = (-5/2)(x + 10).
+
+Explanation:
+Perpendicular slopes multiply to -1, so the new slope is the negative reciprocal of 2/5. Then substitute the point into y - y1 = m(x - x1).
+
+Common mistake note:
+A common mistake is using 5/2 instead of -5/2, forgetting the negative sign for perpendicular slopes. That produces a line with the wrong orientation (not perpendicular).
+------------------------------------------------------------------------------

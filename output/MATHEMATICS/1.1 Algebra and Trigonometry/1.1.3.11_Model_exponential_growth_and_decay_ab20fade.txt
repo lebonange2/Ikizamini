@@ -1,0 +1,150 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.3.11 Model exponential growth and decay
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.3 Exponential and Logarithmic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+A bacteria culture starts with 500 cells and grows by 12% each hour. Which model gives the number of cells N(t) after t hours?
+A) N(t)=500(1.12)^t
+B) N(t)=500(0.88)^t
+C) N(t)=500+1.12t
+D) N(t)=500e^{0.12t}
+Correct Answer: A
+
+Solution:
+Growth by a fixed percent per hour uses N(t)=N0(1+r)^t.
+Here N0=500 and r=0.12, so N(t)=500(1.12)^t.
+
+Explanation:
+Discrete exponential growth with rate r per time step is modeled by multiplying by (1+r) each step: 500, 500(1.12), 500(1.12)^2, ... giving 500(1.12)^t.
+
+Common mistake note:
+Choosing D confuses 12% per hour (a discrete factor 1.12) with a continuous growth rate of 0.12 in e^{kt}. Continuous rate k=0.12 would not match “12% each hour” exactly.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+A car purchased for $24,000 depreciates by 15% each year. What is its value after 6 years? (Round to the nearest dollar.)
+A) 24000(0.85)^6 ≈ $9,052
+B) 24000(1.15)^6 ≈ $55,626
+C) 24000 − 0.15·6 ≈ $23,100
+D) 24000(0.15)^6 ≈ $0
+Correct Answer: A
+
+Solution:
+Depreciation by 15% per year means multiply by 1−0.15=0.85 each year.
+V(6)=24000(0.85)^6.
+Compute: (0.85)^6 ≈ 0.3771495.
+V(6) ≈ 24000·0.3771495 ≈ 9051.59 → $9,052.
+
+Explanation:
+Exponential decay with constant percentage decrease uses V(t)=V0(1−r)^t. The factor 0.85 is applied repeatedly for each year.
+
+Common mistake note:
+Choosing C treats depreciation as linear (subtracting the same amount each year). Percentage depreciation is applied to the current value, so the dollar decrease changes over time.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+A radioactive substance has a half-life of 10 days. If the initial mass is 80 grams, how many grams remain after 35 days? (Round to the nearest tenth.)
+A) 80(1/2)^{3.5} ≈ 7.1 g
+B) 80(1/2)^{35} ≈ 0.0 g
+C) 80(1/2)^{0.35} ≈ 62.7 g
+D) 80(2)^{3.5} ≈ 905.1 g
+Correct Answer: A
+
+Solution:
+Half-life model: M(t)=M0(1/2)^{t/10}.
+Here M0=80, t=35:
+M(35)=80(1/2)^{35/10}=80(1/2)^{3.5}.
+(1/2)^{3.5}=2^{-3.5}=1/(2^{3.5})≈1/11.3137≈0.08839.
+M≈80·0.08839≈7.07 → 7.1 g.
+
+Explanation:
+Each 10 days the mass halves, so after t days the number of half-lives is t/10. Fractional exponents handle partial half-lives.
+
+Common mistake note:
+Choosing C uses t/100 instead of t/10 (mixing up the half-life length). The exponent must be the number of half-life periods, 35/10=3.5.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+A population is modeled by P(t)=1200e^{0.06t}, where t is in years. Which statement best interprets the parameter 0.06?
+A) The population increases at a continuous rate of 6% per year.
+B) The population increases by 6 people per year.
+C) The population is multiplied by 0.06 each year.
+D) The population increases by 60% per year.
+Correct Answer: A
+
+Solution:
+In P(t)=P0e^{kt}, k is the continuous growth rate per unit time.
+Here k=0.06, meaning continuous growth rate 6% per year.
+
+Explanation:
+The model e^{kt} corresponds to continuous exponential change. A value of k=0.06 means the instantaneous proportional rate of change is 0.06 per year.
+
+Common mistake note:
+Choosing B confuses a proportional (percent) rate with an additive (people per year) rate. Exponential models describe multiplicative change, not constant additions.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+A town’s population was 50,000 in 2015 and grew to 58,000 by 2020. Assuming exponential growth with a constant annual rate, what is the annual growth rate r? (Give r as a decimal.)
+A) r≈0.0300
+B) r≈0.0160
+C) r≈0.1600
+D) r≈0.3000
+Correct Answer: A
+
+Solution:
+Use P(t)=P0(1+r)^t with t in years.
+58000=50000(1+r)^5
+(1+r)^5=58000/50000=1.16
+1+r=1.16^{1/5}
+r=1.16^{0.2}−1
+Compute: 1.16^{0.2}≈e^{0.2\ln(1.16)} with ln(1.16)≈0.14842
+So 0.2·0.14842≈0.029684; e^{0.029684}≈1.03013
+r≈0.03013≈0.0300.
+
+Explanation:
+In exponential growth, the same percentage increase applies each year, so the factor (1+r) is found by taking the appropriate root of the overall growth factor 1.16 over 5 years.
+
+Common mistake note:
+Choosing C incorrectly treats 16% total growth over 5 years as 16% per year. Exponential rates require distributing growth across years using a 5th root.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+A medication amount in the bloodstream is modeled by A(t)=A0(0.8)^{t/3}, where t is in hours. Which statement is correct?
+A) The amount decreases by 20% every 3 hours.
+B) The amount decreases by 80% every hour.
+C) The amount increases by 20% every 3 hours.
+D) The half-life is 3 hours.
+Correct Answer: A
+
+Solution:
+A(t)=A0(0.8)^{t/3} means that when t increases by 3, the exponent increases by 1, so the amount is multiplied by 0.8.
+Multiplying by 0.8 corresponds to a 20% decrease every 3 hours.
+
+Explanation:
+The exponent t/3 encodes the time step: each 3 hours is one decay step. The base 0.8 is the remaining fraction after each step.
+
+Common mistake note:
+Choosing D assumes the base must be 1/2 for a half-life. Here the amount becomes 0.8 of its previous value every 3 hours, not half.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+A bank account has $2,000 and earns 5% interest compounded monthly. Which model gives the balance B(t) after t years?
+A) B(t)=2000(1+0.05/12)^{12t}
+B) B(t)=2000(1.05)^{t/12}
+C) B(t)=2000e^{0.05t}
+D) B(t)=2000(1+12·0.05)^t
+Correct Answer: A
+
+Solution:
+Monthly compounding means the periodic rate is 0.05/12 and there are 12t periods in t years.
+So B(t)=2000(1+0.05/12)^{12t}.
+
+Explanation:
+Exponential growth with compounding uses B=P(1+r/n)^{nt}, where r is annual rate and n is number of compounding periods per year.
+
+Common mistake note:
+Choosing C uses continuous compounding (e^{rt}), which is a different model than monthly compounding and gives a different balance.
+------------------------------------------------------------------------------

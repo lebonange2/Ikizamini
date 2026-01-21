@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.1.11 Identify and eliminate extraneous solutions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.1 Radicals and Rational Expressions
+------------------------------------------------------------------------------
+Difficulty profile: moderate
+------------------------------------------------------------------------------
+Problem 1 (q1):
+Solve the equation \(x^2 = 4x\), and identify any extraneous solutions.
+A) 0, 4
+B) Only 4
+C) 4, -4
+D) Only 0
+Correct Answer: A
+
+Solution:
+Rearrange the equation: \(x^2 - 4x = 0\). Factor to get \(x(x-4) = 0\). Solutions are \(x = 0\) and \(x = 4\). Both satisfy the original equation, thus no extraneous solutions exist.
+
+Explanation:
+Both solutions \(x = 0\) and \(x = 4\) satisfy the rearranged equation and the original equation \(x^2 = 4x\).
+
+Common mistake note:
+Choosing B assumes \(x = 0\) is extraneous, possibly due to misunderstanding how to check solutions.
+------------------------------------------------------------------------------
+
+Problem 2 (q2):
+Solve \(\frac{x+2}{x-2} = 1\), and identify any extraneous solutions.
+A) x = 4
+B) x = 3
+C) x = 0, x = 4
+D) x = 2
+Correct Answer: A
+
+Solution:
+Multiply both sides by \(x-2\), resulting in \(x + 2 = x - 2\), adjust to find \(x = 4\). \(x = 2\) is not valid, it would be a division by zero.
+
+Explanation:
+Substituting \(x = 4\) back into the original equation verifies the solution is correct, as it does not create division by zero whereas \(x = 2\) would.
+
+Common mistake note:
+Selecting D indicates confusion, overlooking restrictions posed by \(x-2 \neq 0\) in the denominator.
+------------------------------------------------------------------------------
+
+Problem 3 (q3):
+Determine the solutions for \(|x| = x^2 - 2x - 3\) and identify which are extraneous.
+A) x = 1 is valid, x = 3 is extraneous
+B) x = 1 is extraneous, x = 3 is valid
+C) x = 1 and x = 3 are valid
+D) x = 0 is extraneous
+Correct Answer: A
+
+Solution:
+Rewrite as \(|x| = (x-3)(x+1)\). Test: \(x = 1\) holds as \(|1| = 0\), while \(x = 3\) does not satisfy \(3 = 0\).
+
+Explanation:
+Verification shows \(x = 1\) satisfies \(|x| = x^2 - 2x - 3\) while \(x = 3\) results in false statements.
+
+Common mistake note:
+Choosing C ignores validating each solution against the absolute value condition.
+------------------------------------------------------------------------------
+
+Problem 4 (q4):
+Given \(\sqrt{x+2} = x - 4\), find any extraneous solutions.
+A) x = 2
+B) No extraneous solutions
+C) x = 3
+D) x = 14
+Correct Answer: A
+
+Solution:
+Square both sides to get \(x + 2 = x^2 - 8x + 16\). Solve for \(x\): \(x = 2\) is extraneous because \(\sqrt{4} \neq -2\).
+
+Explanation:
+Substitution shows \(x = 2\) does not satisfy the original equation, hence is extraneous.
+
+Common mistake note:
+Assuming all algebraically derived solutions are valid without checked substitution.
+------------------------------------------------------------------------------
+
+Problem 5 (q5):
+Find the solutions to \(3x + 4 = \sqrt{x + 10}\) and identify any extraneous ones.
+A) x = 2 is valid, x = 6 is extraneous
+B) x = 6 is valid, x = 2 is extraneous
+C) x = 6, x = 2 (both valid)
+D) x = 4
+Correct Answer: A
+
+Solution:
+Square both sides: \((3x + 4)^2 = x + 10\) gives \(9x^2 + 24x + 16 = x + 10\). Solving produces \(x = 2\) and \(x = 6\). Verify: \(x = 6\) does not satisfy the original equation.
+
+Explanation:
+\(x = 6\) produces an invalid statement upon substitution, while \(x = 2\) is correct.
+
+Common mistake note:
+Failure to verify results against the initial equation can lead to accepting extraneous solutions.
+------------------------------------------------------------------------------
+
+Problem 6 (q6):
+Solve \(x^2 = 2x + 8\), and determine if any solutions are extraneous.
+A) x = 4, no extraneous solutions
+B) x = -2, extraneous
+C) x = 4, x = -2 with -2 extraneous
+D) No valid solution
+Correct Answer: C
+
+Solution:
+Re-arrange to \(x^2 - 2x - 8 = 0\), factor to find \((x-4)(x+2)=0\). Verify: \(x = 4\) satisfies the original equation while \(x = -2\) does not.
+
+Explanation:
+Solving and verifying with the original equation shows \(x = 4\) alone satisfies \(x^2 = 2x + 8\). Verification confirms \(x = -2\) does not satisfy.
+
+Common mistake note:
+Misapplying verification leads to considering \(x = -2\) as valid.
+------------------------------------------------------------------------------
+
+Problem 7 (q7):
+Identify any extraneous solutions for \(\sqrt{x+5} = x - 5\), given the equation.
+A) x = 10, no extraneous
+B) x = 10, x = 5 with 5 extraneous
+C) x = 0
+D) No solution is extraneous
+Correct Answer: B
+
+Solution:
+Square both sides to obtain \(x + 5 = (x - 5)^2\). Solve to find \(x = 10\) and verify. \(x = 5\) introduces inconsistencies upon substitution, hence extraneous.
+
+Explanation:
+Substituting \(x = 10\) and \(x = 5\) shows only \(x = 10\) satisfies the initial equation; \(x = 5\) is extraneous.
+
+Common mistake note:
+Failing to perform both squaring and verification properly can lead to accepting false solutions.
+------------------------------------------------------------------------------

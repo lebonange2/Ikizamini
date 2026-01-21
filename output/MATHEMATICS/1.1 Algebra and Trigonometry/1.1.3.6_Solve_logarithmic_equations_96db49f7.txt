@@ -1,0 +1,145 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.3.6 Solve logarithmic equations
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.3 Exponential and Logarithmic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Solve for x:  log_2(x) = 5
+A) x = 10
+B) x = 32
+C) x = 7
+D) x = 25
+Correct Answer: B
+
+Solution:
+Rewrite in exponential form: x = 2^5 = 32.
+
+Explanation:
+A logarithmic equation log_b(x)=c is equivalent to x=b^c (with x>0 and b>0, b≠1). Here b=2 and c=5, so x=32.
+
+Common mistake note:
+A common mistake is to multiply 2·5 and claim x=10. Logs convert to exponentials; they do not turn into multiplication.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Solve for x:  ln(x) = 3
+A) x = e^3
+B) x = 3e
+C) x = \ln(3)
+D) x = e/3
+Correct Answer: A
+
+Solution:
+Exponentiate both sides with base e: x = e^3.
+
+Explanation:
+Since ln is log base e, ln(x)=3 means x is the number whose natural log is 3, i.e., x=e^3.
+
+Common mistake note:
+A common mistake is to think ln(x)=3 implies x=3. ln is not the identity function; you must exponentiate to undo it.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Solve for x:  log_10(x) + log_10(4) = 2
+A) x = 50
+B) x = 25
+C) x = 100
+D) x = 4
+Correct Answer: B
+
+Solution:
+Use log addition: log_10(x)+log_10(4)=log_10(4x).
+So log_10(4x)=2.
+Convert to exponential form: 4x=10^2=100.
+Thus x=25.
+
+Explanation:
+Combine logs with the same base using log(a)+log(b)=log(ab), then rewrite as an exponential equation and solve.
+
+Common mistake note:
+A common mistake is to add inside the log: log(x)+log(4)=log(x+4). That property is false; logs combine by multiplication, not addition.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Solve for x:  log_3(x - 1) = log_3(2x - 7)
+A) x = 4
+B) x = 6
+C) x = 3
+D) x = 2
+Correct Answer: B
+
+Solution:
+Set arguments equal (and enforce domains): x-1 = 2x-7.
+Solve: x = 6.
+Domain check: x-1>0 ⇒ x>1; 2x-7>0 ⇒ x>3.5. x=6 is valid.
+
+Explanation:
+For b>0, b≠1, log_b(A)=log_b(B) implies A=B provided A>0 and B>0. Solve the resulting linear equation and verify the domain.
+
+Common mistake note:
+A common mistake is to forget domain restrictions and accept an extraneous solution when an argument is ≤0. Always check that each log’s argument is positive.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Solve for x:  log_5(x) = -2
+A) x = -25
+B) x = 1/25
+C) x = -1/25
+D) x = 25
+Correct Answer: B
+
+Solution:
+Rewrite in exponential form: x = 5^{-2} = 1/5^2 = 1/25.
+
+Explanation:
+A negative logarithm value means the argument is a positive fraction. Converting to exponential form gives x=5^{-2}.
+
+Common mistake note:
+A common mistake is to think a negative log output means x is negative (e.g., x=-25). Log arguments must be positive, so x cannot be negative.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Solve for x:  log_2(x) + log_2(x - 2) = 3
+A) x = 4
+B) x = -2
+C) x = 2 + \sqrt{12}
+D) x = 6
+Correct Answer: A
+
+Solution:
+Domain: x>0 and x-2>0 ⇒ x>2.
+Combine logs: log_2(x) + log_2(x-2) = log_2(x(x-2)) = 3.
+Convert to exponential form: x(x-2)=2^3=8.
+Solve: x^2-2x-8=0 ⇒ (x-4)(x+2)=0.
+So x=4 or x=-2. Domain x>2 ⇒ x=4.
+
+Explanation:
+Use log addition to combine into one logarithm, rewrite as an exponential equation, solve the quadratic, then discard any root that makes a log argument nonpositive.
+
+Common mistake note:
+A common mistake is to keep both quadratic roots without checking the domain. Here x=-2 must be rejected because log_2(x) is undefined for x≤0 and also x-2 must be positive.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Solve for x:  log_3(x + 4) - log_3(x - 2) = 1
+A) x = 1
+B) x = 2
+C) x = 5
+D) x = 7
+Correct Answer: C
+
+Solution:
+Domain: x+4>0 and x-2>0 ⇒ x>2.
+Use subtraction rule: log_3((x+4)/(x-2))=1.
+Convert to exponential form: (x+4)/(x-2)=3.
+Solve: x+4=3x-6 ⇒ 10=2x ⇒ x=5.
+Check domain: 5>2, valid.
+
+Explanation:
+Use log(a)-log(b)=log(a/b) for the same base, convert to exponential form, solve the resulting linear equation, and verify the domain.
+
+Common mistake note:
+A common mistake is to subtract inside incorrectly as log(x+4-(x-2)). Logs do not distribute over subtraction; you must form a quotient.
+------------------------------------------------------------------------------

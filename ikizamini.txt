@@ -1,0 +1,1907 @@
+IKIZAMINI MASTER OUTPUT
+Source file: Uru.txt
+Model: gpt-5.2
+Generated at (unix): 1769032207
+Objectives completed: 14 / 15
+
+##############################################################################
+
+1.1 Algebra and Trigonometry
+   1.1.3 Exponential and Logarithmic Functions
+      1.1.3.1 Apply laws of exponents
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Simplify: \(x^3 \cdot x^5\).
+      A) \(x^8\)
+      B) \(x^{15}\)
+      C) \(x^2\)
+      D) \(2x^8\)
+      Correct Answer: A
+      
+      Solution:
+      \(x^3 \cdot x^5 = x^{3+5} = x^8\).
+      
+      Explanation:
+      Product rule: when multiplying powers with the same base, add exponents: \(x^a x^b = x^{a+b}\).
+      
+      Common mistake note:
+      A common error is multiplying exponents (getting \(x^{15}\)) instead of adding them.
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Simplify: \(\dfrac{a^9}{a^4}\).
+      A) \(a^{13}\)
+      B) \(a^5\)
+      C) \(a^{-5}\)
+      D) \(\dfrac{1}{a^5}\)
+      Correct Answer: B
+      
+      Solution:
+      \(\dfrac{a^9}{a^4}=a^{9-4}=a^5\) (for \(a\neq 0\)).
+      
+      Explanation:
+      Quotient rule: when dividing same bases, subtract exponents: \(a^m/a^n=a^{m-n}\).
+      
+      Common mistake note:
+      Adding exponents (\(a^{13}\)) is incorrect for division; division corresponds to subtracting exponents.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Simplify: \((2x^3)^2\).
+      A) \(2x^6\)
+      B) \(4x^5\)
+      C) \(4x^6\)
+      D) \(8x^6\)
+      Correct Answer: C
+      
+      Solution:
+      \((2x^3)^2 = 2^2\,(x^3)^2 = 4x^{3\cdot 2} = 4x^6\).
+      
+      Explanation:
+      Power of a product: \((ab)^n=a^n b^n\); power of a power: \((x^m)^n=x^{mn}\).
+      
+      Common mistake note:
+      Forgetting to square the 2 (writing \(2x^6\)) is a common mistake.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Simplify and write with positive exponents: \(x^{-4}\).
+      A) \(-x^4\)
+      B) \(\dfrac{1}{x^4}\)
+      C) \(\dfrac{1}{x^{-4}}\)
+      D) \(x^4\)
+      Correct Answer: B
+      
+      Solution:
+      \(x^{-4}=\dfrac{1}{x^4}\) (for \(x\neq 0\)).
+      
+      Explanation:
+      Negative exponent rule: \(x^{-n}=\dfrac{1}{x^n}\).
+      
+      Common mistake note:
+      Confusing \(x^{-4}\) with \(-x^4\) is incorrect; the negative sign is in the exponent, not in front of the base.
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Simplify: \(\dfrac{3^5\cdot 3^{-2}}{3^1}\).
+      A) \(3^2\)
+      B) \(3^4\)
+      C) \(9\)
+      D) \(\dfrac{1}{9}\)
+      Correct Answer: C
+      
+      Solution:
+      Numerator: \(3^5\cdot 3^{-2}=3^{5+(-2)}=3^3\). Then \(\dfrac{3^3}{3^1}=3^{3-1}=3^2=9\).
+      
+      Explanation:
+      Use product rule to add exponents in the numerator, then quotient rule to subtract exponents when dividing by \(3^1\).
+      
+      Common mistake note:
+      A common error is subtracting in the multiplication step (treating \(3^5\cdot 3^{-2}\) as \(3^{5-(-2)}\)); multiplication requires adding exponents.
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Simplify: \(\left(\dfrac{x^4 y^{-2}}{x^{-1} y^3}\right)^2\).
+      A) \(x^{10}y^{-10}\)
+      B) \(x^{10}y^{10}\)
+      C) \(x^{5}y^{-5}\)
+      D) \(x^{-10}y^{10}\)
+      Correct Answer: A
+      
+      Solution:
+      Inside the parentheses: \(\dfrac{x^4}{x^{-1}}=x^{4-(-1)}=x^5\) and \(\dfrac{y^{-2}}{y^3}=y^{-2-3}=y^{-5}\), so the inside is \(x^5y^{-5}\). Squaring gives \((x^5y^{-5})^2=x^{10}y^{-10}\).
+      
+      Explanation:
+      Apply the quotient rule for each base when dividing, then apply the power rule to multiply each exponent by 2.
+      
+      Common mistake note:
+      Common slips: using \(4-1\) instead of \(4-(-1)\), or failing to square both factors (squaring only \(x\) or only \(y\)).
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Simplify completely with positive exponents: \(\dfrac{(x^2 y^{-3})^3}{x^{-1} y^2}\).
+      A) \(\dfrac{x^7}{y^{11}}\)
+      B) \(\dfrac{x^5}{y^7}\)
+      C) \(x^7 y^{11}\)
+      D) \(\dfrac{y^{11}}{x^7}\)
+      Correct Answer: A
+      
+      Solution:
+      \((x^2 y^{-3})^3 = x^{2\cdot 3} y^{-3\cdot 3} = x^6 y^{-9}\). Then \(\dfrac{x^6 y^{-9}}{x^{-1}y^2}=x^{6-(-1)}y^{-9-2}=x^7 y^{-11}=\dfrac{x^7}{y^{11}}\).
+      
+      Explanation:
+      Use power rule to multiply exponents in the numerator, quotient rule to subtract exponents when dividing, then rewrite negative exponents as reciprocals.
+      
+      Common mistake note:
+      Mistakes include not distributing the exponent 3 to both factors (forgetting \(x^{2\cdot 3}\)), or adding exponents during division instead of subtracting.
+      ------------------------------------------------------------------------------
+      1.1.3.2 Solve exponential equations
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Solve for x: 2^(x+1) = 16.
+      A) x = 2
+      B) x = 3
+      C) x = 4
+      D) x = 5
+      Correct Answer: B
+      
+      Solution:
+      2^(x+1) = 16. Since 16 = 2^4, we have 2^(x+1) = 2^4, so x+1 = 4 and x = 3.
+      
+      Explanation:
+      Rewrite the number on the right as a power of 2, then equate exponents (valid because the base 2 is positive and not 1).
+      
+      Common mistake note:
+      Forgetting the exponent is x+1 and answering x=4 just because 16=2^4.
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Solve for x: 5^(2x−1) = 125.
+      A) x = 1
+      B) x = 2
+      C) x = 3
+      D) x = 4
+      Correct Answer: B
+      
+      Solution:
+      125 = 5^3, so 5^(2x−1) = 5^3. Equate exponents: 2x−1 = 3 ⇒ 2x = 4 ⇒ x = 2.
+      
+      Explanation:
+      Convert 125 to a power of 5 so the bases match, then solve the linear equation in the exponent.
+      
+      Common mistake note:
+      Trying to manipulate exponents incorrectly (e.g., “divide exponents”) instead of solving 2x−1=3.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Solve for x: 3^(x+2) = 27.
+      A) x = 0
+      B) x = 1
+      C) x = 2
+      D) x = 3
+      Correct Answer: B
+      
+      Solution:
+      27 = 3^3, so 3^(x+2) = 3^3. Then x+2 = 3 ⇒ x = 1.
+      
+      Explanation:
+      Rewrite 27 as a power of 3, then equate exponents and solve.
+      
+      Common mistake note:
+      Subtracting incorrectly after x+2=3; check by substitution: 3^(1+2)=3^3=27.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Solve for x: 2^x = 8^3.
+      A) x = 3
+      B) x = 6
+      C) x = 9
+      D) x = 12
+      Correct Answer: C
+      
+      Solution:
+      Rewrite 8 as 2^3: 8^3 = (2^3)^3 = 2^9. Then 2^x = 2^9, so x = 9.
+      
+      Explanation:
+      Use exponent rules to express both sides with base 2, then equate exponents.
+      
+      Common mistake note:
+      Confusing 8^3 with 8·3; it means 8·8·8, and (2^3)^3 = 2^(3·3), not 2^(3+3).
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Solve for x: 4^(x−1) = 8.
+      A) x = 1/2
+      B) x = 3/2
+      C) x = 2
+      D) x = 5/2
+      Correct Answer: D
+      
+      Solution:
+      Write everything in base 2: 4 = 2^2 and 8 = 2^3. Then 4^(x−1) = (2^2)^(x−1) = 2^(2x−2). So 2^(2x−2) = 2^3 ⇒ 2x−2 = 3 ⇒ 2x = 5 ⇒ x = 5/2.
+      
+      Explanation:
+      Convert both sides to the same base (2), then set exponents equal and solve the resulting linear equation.
+      
+      Common mistake note:
+      Setting x−1=3 directly without matching bases first; 4^(x−1)=8 does not imply x−1=3.
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Solve for x: 3^x = 7.
+      A) x = log_3(7)
+      B) x = log_7(3)
+      C) x = 7^3
+      D) x = 3^7
+      Correct Answer: A
+      
+      Solution:
+      Take logarithms: 3^x = 7 ⇒ x = log_3(7) = (ln 7)/(ln 3).
+      
+      Explanation:
+      When the right-hand side is not a convenient power of 3, use logarithms to isolate the exponent.
+      
+      Common mistake note:
+      Mixing up the base in the log: log_7(3) would solve 7^x=3, not 3^x=7.
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Solve for x: 2^(x+2) − 5·2^x = 0.
+      A) x = 0
+      B) x = 1
+      C) x = 2
+      D) No real solution
+      Correct Answer: D
+      
+      Solution:
+      Factor out 2^x: 2^(x+2) = 2^x·2^2 = 4·2^x. So 2^(x+2) − 5·2^x = 4·2^x − 5·2^x = (4−5)2^x = −2^x. Setting −2^x = 0 gives 2^x = 0, which has no real solution because 2^x > 0 for all real x.
+      
+      Explanation:
+      After factoring out the common exponential term, the equation reduces to 2^x=0, which is impossible over the reals since exponential functions with base > 1 are always positive.
+      
+      Common mistake note:
+      After factoring, incorrectly assuming 2^x can be 0, or mistakenly setting 4−5=0.
+      ------------------------------------------------------------------------------
+      1.1.3.3 Evaluate logarithms
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Evaluate: \(\log_{10}(0.01)\).
+      A) -2
+      B) -1
+      C) 2
+      D) 0.1
+      Correct Answer: A
+      
+      Solution:
+      Let \(x=\log_{10}(0.01)\). Then \(10^x=0.01\).
+      Since \(0.01=10^{-2}\), we have \(10^x=10^{-2}\) so \(x=-2\).
+      
+      Explanation:
+      A base-10 logarithm asks for the exponent on 10 that produces the given number. Because \(10^{-2}=0.01\), the value is \(-2\).
+      
+      Common mistake note:
+      Choosing \(2\) by ignoring that the number is less than 1. Logs of numbers between 0 and 1 are negative.
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Evaluate: \(\log_{2}(32)\).
+      A) 4
+      B) 5
+      C) 6
+      D) 32
+      Correct Answer: B
+      
+      Solution:
+      Let \(x=\log_{2}(32)\). Then \(2^x=32\).
+      Because \(2^5=32\), \(x=5\).
+      
+      Explanation:
+      \(\log_2(32)\) is the exponent on 2 needed to get 32, which is 5.
+      
+      Common mistake note:
+      Answering 32 by confusing \(\log_b(a)\) with \(a\). The logarithm returns an exponent, not the original number.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Evaluate: \(\log_{3}\left(\frac{1}{27}\right)\).
+      A) -3
+      B) -1
+      C) 1
+      D) 3
+      Correct Answer: A
+      
+      Solution:
+      Let \(x=\log_{3}(\tfrac{1}{27})\). Then \(3^x=\tfrac{1}{27}\).
+      Since \(27=3^3\), we have \(\tfrac{1}{27}=3^{-3}\). Thus \(3^x=3^{-3}\) so \(x=-3\).
+      
+      Explanation:
+      Rewrite the argument as a power of the base: \(\tfrac{1}{27}=3^{-3}\). The logarithm then returns the exponent \(-3\).
+      
+      Common mistake note:
+      Choosing \(3\) by using \(\log_3(27)=3\) and forgetting the reciprocal makes the exponent negative.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Evaluate: \(\log_{5}(125)\).
+      A) 2
+      B) 3
+      C) 5
+      D) 25
+      Correct Answer: B
+      
+      Solution:
+      Let \(x=\log_{5}(125)\). Then \(5^x=125\).
+      Because \(125=5^3\), we get \(x=3\).
+      
+      Explanation:
+      Identify 125 as a power of 5: \(5^3=125\). Therefore the log equals 3.
+      
+      Common mistake note:
+      Choosing 25 by confusing exponentiation with logarithms (thinking \(\log_5(125)=125/5\)). Logs are not division; they represent exponents.
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Evaluate: \(\log_{4}(\sqrt{2})\).
+      A) \(\tfrac{1}{8}\)
+      B) \(\tfrac{1}{4}\)
+      C) \(\tfrac{1}{2}\)
+      D) \(2\)
+      Correct Answer: B
+      
+      Solution:
+      Let \(x=\log_{4}(\sqrt{2})\). Then \(4^x=\sqrt{2}\).
+      Write everything as powers of 2: \(4=2^2\) and \(\sqrt{2}=2^{1/2}\).
+      So \((2^2)^x=2^{1/2}\Rightarrow 2^{2x}=2^{1/2}\Rightarrow 2x=\tfrac{1}{2}\Rightarrow x=\tfrac{1}{4}.\)
+      
+      Explanation:
+      Converting to a common base (2) allows matching exponents directly, giving \(x=\tfrac{1}{4}\).
+      
+      Common mistake note:
+      Choosing \(\tfrac{1}{2}\) by incorrectly assuming \(\log_4(\sqrt{2})=\sqrt{\log_4(2)}\). Logarithms do not distribute over roots that way.
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Evaluate: \(\log_{3}(81) + \log_{3}(\tfrac{1}{9})\).
+      A) 0
+      B) 1
+      C) 2
+      D) 3
+      Correct Answer: C
+      
+      Solution:
+      Compute each term:
+      \(\log_3(81)=\log_3(3^4)=4\).
+      \(\log_3(\tfrac{1}{9})=\log_3(3^{-2})=-2\).
+      Sum: \(4+(-2)=2\).
+      
+      Explanation:
+      Evaluating each logarithm by rewriting as powers of 3 gives 4 and −2, so the total is 2.
+      
+      Common mistake note:
+      Adding the arguments instead (e.g., trying \(\log_3(81+1/9)\)). Log properties combine sums of logs as a product inside a single log, not as a sum of arguments.
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Evaluate: \(\log_{1/2}(8)\).
+      A) -3
+      B) -2
+      C) 2
+      D) 3
+      Correct Answer: A
+      
+      Solution:
+      Let \(x=\log_{1/2}(8)\). Then \((\tfrac{1}{2})^x=8\).
+      Rewrite in base 2: \((\tfrac{1}{2})^x=2^{-x}\) and \(8=2^3\).
+      So \(2^{-x}=2^3\Rightarrow -x=3\Rightarrow x=-3\).
+      
+      Explanation:
+      Because the base is \(\tfrac12\), positive results require negative exponents to produce a number greater than 1. Solving \((1/2)^x=8\) gives \(x=-3\).
+      
+      Common mistake note:
+      Choosing \(3\) by treating the base as 2 (confusing \(\log_{1/2}(8)\) with \(\log_2(8)\)). The reciprocal base flips the sign of the exponent.
+      ------------------------------------------------------------------------------
+      1.1.3.4 Apply properties of logarithms
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Simplify the expression: \(\log_{2}(8x)\).
+      A) \(3+\log_{2}x\)
+      B) \(\log_{2}8+\log_{2}x\)
+      C) \(\log_{2}(8)+\log_{2}(x)\)
+      D) \(\log_{2}(8x)\) cannot be simplified
+      Correct Answer: A
+      
+      Solution:
+      Use the product rule: \(\log_b(MN)=\log_b M+\log_b N\).
+      
+      \(\log_{2}(8x)=\log_{2}8+\log_{2}x\).
+      
+      Since \(2^3=8\), \(\log_{2}8=3\). Therefore \(\log_{2}(8x)=3+\log_{2}x\).
+      
+      Explanation:
+      Apply the product property to split the log of a product into a sum of logs with the same base, then evaluate \(\log_2 8\) as 3.
+      
+      Common mistake note:
+      Do not change bases within an expression (e.g., mixing \(\log_2\) and \(\log_{10}\)). Also note that choices like \(\log_{2}8+\log_{2}x\) are equivalent to the simplified result, but the simplest form evaluates \(\log_2 8\) to 3.
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Expand the expression: \(\log_{5}\left(\frac{x^3}{\sqrt{y}}\right)\).
+      A) \(3\log_{5}x-\tfrac{1}{2}\log_{5}y\)
+      B) \(\tfrac{3}{2}\log_{5}(xy)\)
+      C) \(3\log_{5}x-\log_{5}y\)
+      D) \(\log_{5}x-\tfrac{1}{2}\log_{5}(y^3)\)
+      Correct Answer: A
+      
+      Solution:
+      Use quotient and power rules:
+      
+      \(\log_5\left(\frac{x^3}{\sqrt{y}}\right)=\log_5(x^3)-\log_5(y^{1/2})\).
+      
+      Power rule gives \(\log_5(x^3)=3\log_5 x\) and \(\log_5(y^{1/2})=\tfrac12\log_5 y\).
+      
+      So the expansion is \(3\log_5 x-\tfrac12\log_5 y\).
+      
+      Explanation:
+      The quotient rule turns division into subtraction, and the power rule brings exponents (including fractional exponents from radicals) down as coefficients.
+      
+      Common mistake note:
+      A frequent error is treating \(\sqrt{y}\) as \(y\) instead of \(y^{1/2}\), which makes the coefficient \(\tfrac12\) disappear.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Condense into a single logarithm: \(2\log_{3}x-\log_{3}y+\tfrac{1}{2}\log_{3}z\).
+      A) \(\log_{3}\left(\frac{x^{2}\sqrt{z}}{y}\right)\)
+      B) \(\log_{3}\left(\frac{2x-z}{y}\right)\)
+      C) \(\log_{3}\left(\frac{x^{2}}{y\sqrt{z}}\right)\)
+      D) \(\log_{3}\left(\frac{x^{2}y}{\sqrt{z}}\right)\)
+      Correct Answer: A
+      
+      Solution:
+      Use the power rule in reverse:
+      
+      \(2\log_3 x=\log_3(x^2)\), and \(\tfrac12\log_3 z=\log_3(z^{1/2})\).
+      
+      So the expression is \(\log_3(x^2)-\log_3(y)+\log_3(z^{1/2})\).
+      
+      Combine addition: \(\log_3(x^2)+\log_3(z^{1/2})=\log_3(x^2 z^{1/2})\).
+      
+      Then subtract: \(\log_3(x^2 z^{1/2})-\log_3(y)=\log_3\left(\frac{x^2 z^{1/2}}{y}\right)=\log_3\left(\frac{x^2\sqrt{z}}{y}\right)\).
+      
+      Explanation:
+      Coefficients become exponents (power rule). Adding logs corresponds to multiplying arguments; subtracting logs corresponds to dividing arguments (all with the same base).
+      
+      Common mistake note:
+      Only the subtracted term \(\log_3 y\) goes to the denominator. The \(\tfrac12\log_3 z\) term is added, so \(\sqrt{z}\) stays in the numerator.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Solve for \(x\): \(\log_{7}(x-2)=2\).
+      A) \(x=9\)
+      B) \(x=49\)
+      C) \(x=51\)
+      D) \(x=5\)
+      Correct Answer: C
+      
+      Solution:
+      Convert to exponential form:
+      
+      \(\log_7(x-2)=2\Rightarrow x-2=7^2=49\).
+      
+      Thus \(x=51\).
+      
+      Explanation:
+      By definition, \(\log_b(A)=c\iff b^c=A\). Here the log argument is \(x-2\), so solve \(x-2=49\) and then add 2.
+      
+      Common mistake note:
+      A common mistake is answering \(x=49\) by forgetting that the argument is \(x-2\), not \(x\).
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Evaluate: \(\log_{4}(\tfrac{1}{8})\).
+      A) \(-\tfrac{3}{2}\)
+      B) \(-3\)
+      C) \(\tfrac{3}{2}\)
+      D) \(\tfrac{1}{2}\)
+      Correct Answer: A
+      
+      Solution:
+      Rewrite base and argument as powers of 2:
+      
+      \(4=2^2\), \(\tfrac18=2^{-3}\).
+      
+      Let \(\log_4(1/8)=k\). Then \(4^k=1/8\Rightarrow (2^2)^k=2^{-3}\Rightarrow 2^{2k}=2^{-3}\).
+      
+      So \(2k=-3\Rightarrow k=-\tfrac32\).
+      
+      Explanation:
+      Use \(\log_b(a)=k\iff b^k=a\), then express both sides with a common base and equate exponents.
+      
+      Common mistake note:
+      Do not assume \(1/8=4^{-3}\). In fact \(4^{-3}=1/64\), so that leads to an incorrect value.
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Simplify: \(\log_{10}(1000)-\log_{10}(0.1)\).
+      A) \(2\)
+      B) \(3\)
+      C) \(4\)
+      D) \(\tfrac{3}{10}\)
+      Correct Answer: C
+      
+      Solution:
+      \(\log_{10}(1000)=3\) because \(10^3=1000\).
+      
+      \(\log_{10}(0.1)=\log_{10}(10^{-1})=-1\).
+      
+      So \(3-(-1)=4\).
+      
+      Explanation:
+      Base-10 logs of powers of 10 evaluate to their exponents, and subtracting a negative adds.
+      
+      Common mistake note:
+      Remember \(0.1=10^{-1}\), so its logarithm is \(-1\), not \(1\).
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Solve for \(x\): \(\log_{2}x+\log_{2}(x-2)=3\).
+      A) \(x=1\)
+      B) \(x=2\)
+      C) \(x=-2\)
+      D) \(x=4\)
+      Correct Answer: D
+      
+      Solution:
+      Domain: need \(x>0\) and \(x-2>0\Rightarrow x>2\).
+      
+      Combine logs: \(\log_2 x+\log_2(x-2)=\log_2(x(x-2))=3\).
+      
+      Convert to exponential form: \(x(x-2)=2^3=8\).
+      
+      So \(x^2-2x-8=0\Rightarrow (x-4)(x+2)=0\).
+      
+      Thus \(x=4\) or \(x=-2\). Apply domain \(x>2\): keep \(x=4\).
+      
+      Explanation:
+      Use the product property to combine the two logs into one, convert to an exponential equation, solve the resulting quadratic, then check solutions against the log domain restrictions.
+      
+      Common mistake note:
+      It’s not enough to solve the quadratic; you must also enforce \(x>2\) so that both \(x\) and \(x-2\) are positive. This eliminates \(x=-2\).
+      ------------------------------------------------------------------------------
+      1.1.3.5 Convert between exponential and logarithmic forms
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Convert the exponential equation to logarithmic form: 3^4 = 81.
+      A) log_3(81) = 4
+      B) log_4(3) = 81
+      C) log_81(3) = 4
+      D) log_3(4) = 81
+      Correct Answer: A
+      
+      Solution:
+      Use a^b = c ⇔ log_a(c) = b. Here 3^4 = 81, so log_3(81) = 4.
+      
+      Explanation:
+      In exponential form, the base is 3, the result is 81, and the exponent is 4. The logarithmic form keeps base 3 and sets the logarithm equal to the exponent: log_3(81) = 4.
+      
+      Common mistake note:
+      A common mistake is swapping the base and the result (e.g., writing log_81(3) = 4). That would correspond to 81^4 = 3, which is false.
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Convert the logarithmic equation to exponential form: log_5(125) = 3.
+      A) 3^5 = 125
+      B) 5^3 = 125
+      C) 125^3 = 5
+      D) 5^125 = 3
+      Correct Answer: B
+      
+      Solution:
+      Use log_a(c) = b ⇔ a^b = c. Here a = 5, b = 3, c = 125, so 5^3 = 125.
+      
+      Explanation:
+      The base of the log is 5 and the log equals 3, meaning 5 raised to 3 gives 125.
+      
+      Common mistake note:
+      A common mistake is reversing the exponent and base to get 3^5 = 125; this misreads the meaning of log_5(125) = 3.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Which logarithmic equation is equivalent to 10^(-2) = 0.01?
+      A) log_10(0.01) = -2
+      B) log_0.01(10) = -2
+      C) log_-2(10) = 0.01
+      D) log_10(-2) = 0.01
+      Correct Answer: A
+      
+      Solution:
+      Use a^b = c ⇔ log_a(c) = b. Here 10^(-2) = 0.01, so log_10(0.01) = -2.
+      
+      Explanation:
+      The base is 10, the result is 0.01, and the exponent is -2; the logarithmic form keeps base 10 and equals the exponent.
+      
+      Common mistake note:
+      A common mistake is to swap base and argument and write log_0.01(10) = -2; that would mean 0.01^(-2) = 10, but 0.01^(-2) = 10000, not 10.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Convert the equation log_2(1/8) = -3 to exponential form.
+      A) 2^(1/8) = -3
+      B) (-3)^2 = 1/8
+      C) 2^(-3) = 1/8
+      D) (1/8)^2 = -3
+      Correct Answer: C
+      
+      Solution:
+      Use log_a(c) = b ⇔ a^b = c. Here a = 2, b = -3, c = 1/8, so 2^(-3) = 1/8.
+      
+      Explanation:
+      A logarithm equal to -3 indicates a negative exponent on base 2, producing the fraction 1/8.
+      
+      Common mistake note:
+      A common mistake is to place the fraction as the exponent (2^(1/8) = -3), confusing the log argument with the exponent; the argument corresponds to the result, not the power.
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Which exponential equation is equivalent to log_7(49) = 2?
+      A) 7^49 = 2
+      B) 49^7 = 2
+      C) 7^2 = 49
+      D) 2^7 = 49
+      Correct Answer: C
+      
+      Solution:
+      Use log_a(c) = b ⇔ a^b = c. Here a = 7, b = 2, c = 49, so 7^2 = 49.
+      
+      Explanation:
+      The base of the logarithm becomes the base of the exponential, and the logarithm value becomes the exponent.
+      
+      Common mistake note:
+      A common mistake is to treat the log argument (49) as the exponent and write 7^49 = 2; that does not match the definition of logarithms.
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Convert the exponential equation (1/3)^(-2) = 9 to logarithmic form.
+      A) log_(1/3)(9) = -2
+      B) log_9(1/3) = -2
+      C) log_(1/3)(-2) = 9
+      D) log_(-2)(1/3) = 9
+      Correct Answer: A
+      
+      Solution:
+      Use a^b = c ⇔ log_a(c) = b. Here a = 1/3, b = -2, c = 9, so log_(1/3)(9) = -2.
+      
+      Explanation:
+      Even with fractions and negative exponents, the conversion rule is the same: the log base is 1/3, the log argument is 9, and the log equals -2.
+      
+      Common mistake note:
+      A common mistake is to swap base and argument (log_9(1/3) = -2). That would mean 9^(-2) = 1/3, but 9^(-2) = 1/81.
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      A student writes: log_4(64) = 4. Which exponential equation matches the student's statement?
+      A) 4^64 = 4
+      B) 4^4 = 64
+      C) 64^4 = 4
+      D) 64^4 = 16
+      Correct Answer: B
+      
+      Solution:
+      Use log_a(c) = b ⇔ a^b = c. Here a = 4, c = 64, b = 4, so 4^4 = 64.
+      
+      Explanation:
+      The logarithmic equation says the exponent needed on base 4 to get 64 is 4; that translates directly to 4^4 = 64.
+      
+      Common mistake note:
+      A common mistake is to put the argument as the exponent (4^64 = 4), confusing c with b. In log form, the argument is the result, not the exponent.
+      ------------------------------------------------------------------------------
+      1.1.3.6 Solve logarithmic equations
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Solve for x:  log_2(x) = 5
+      A) x = 10
+      B) x = 32
+      C) x = 7
+      D) x = 25
+      Correct Answer: B
+      
+      Solution:
+      Rewrite in exponential form: x = 2^5 = 32.
+      
+      Explanation:
+      A logarithmic equation log_b(x)=c is equivalent to x=b^c (with x>0 and b>0, b≠1). Here b=2 and c=5, so x=32.
+      
+      Common mistake note:
+      A common mistake is to multiply 2·5 and claim x=10. Logs convert to exponentials; they do not turn into multiplication.
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Solve for x:  ln(x) = 3
+      A) x = e^3
+      B) x = 3e
+      C) x = \ln(3)
+      D) x = e/3
+      Correct Answer: A
+      
+      Solution:
+      Exponentiate both sides with base e: x = e^3.
+      
+      Explanation:
+      Since ln is log base e, ln(x)=3 means x is the number whose natural log is 3, i.e., x=e^3.
+      
+      Common mistake note:
+      A common mistake is to think ln(x)=3 implies x=3. ln is not the identity function; you must exponentiate to undo it.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Solve for x:  log_10(x) + log_10(4) = 2
+      A) x = 50
+      B) x = 25
+      C) x = 100
+      D) x = 4
+      Correct Answer: B
+      
+      Solution:
+      Use log addition: log_10(x)+log_10(4)=log_10(4x).
+      So log_10(4x)=2.
+      Convert to exponential form: 4x=10^2=100.
+      Thus x=25.
+      
+      Explanation:
+      Combine logs with the same base using log(a)+log(b)=log(ab), then rewrite as an exponential equation and solve.
+      
+      Common mistake note:
+      A common mistake is to add inside the log: log(x)+log(4)=log(x+4). That property is false; logs combine by multiplication, not addition.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Solve for x:  log_3(x - 1) = log_3(2x - 7)
+      A) x = 4
+      B) x = 6
+      C) x = 3
+      D) x = 2
+      Correct Answer: B
+      
+      Solution:
+      Set arguments equal (and enforce domains): x-1 = 2x-7.
+      Solve: x = 6.
+      Domain check: x-1>0 ⇒ x>1; 2x-7>0 ⇒ x>3.5. x=6 is valid.
+      
+      Explanation:
+      For b>0, b≠1, log_b(A)=log_b(B) implies A=B provided A>0 and B>0. Solve the resulting linear equation and verify the domain.
+      
+      Common mistake note:
+      A common mistake is to forget domain restrictions and accept an extraneous solution when an argument is ≤0. Always check that each log’s argument is positive.
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Solve for x:  log_5(x) = -2
+      A) x = -25
+      B) x = 1/25
+      C) x = -1/25
+      D) x = 25
+      Correct Answer: B
+      
+      Solution:
+      Rewrite in exponential form: x = 5^{-2} = 1/5^2 = 1/25.
+      
+      Explanation:
+      A negative logarithm value means the argument is a positive fraction. Converting to exponential form gives x=5^{-2}.
+      
+      Common mistake note:
+      A common mistake is to think a negative log output means x is negative (e.g., x=-25). Log arguments must be positive, so x cannot be negative.
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Solve for x:  log_2(x) + log_2(x - 2) = 3
+      A) x = 4
+      B) x = -2
+      C) x = 2 + \sqrt{12}
+      D) x = 6
+      Correct Answer: A
+      
+      Solution:
+      Domain: x>0 and x-2>0 ⇒ x>2.
+      Combine logs: log_2(x) + log_2(x-2) = log_2(x(x-2)) = 3.
+      Convert to exponential form: x(x-2)=2^3=8.
+      Solve: x^2-2x-8=0 ⇒ (x-4)(x+2)=0.
+      So x=4 or x=-2. Domain x>2 ⇒ x=4.
+      
+      Explanation:
+      Use log addition to combine into one logarithm, rewrite as an exponential equation, solve the quadratic, then discard any root that makes a log argument nonpositive.
+      
+      Common mistake note:
+      A common mistake is to keep both quadratic roots without checking the domain. Here x=-2 must be rejected because log_2(x) is undefined for x≤0 and also x-2 must be positive.
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Solve for x:  log_3(x + 4) - log_3(x - 2) = 1
+      A) x = 1
+      B) x = 2
+      C) x = 5
+      D) x = 7
+      Correct Answer: C
+      
+      Solution:
+      Domain: x+4>0 and x-2>0 ⇒ x>2.
+      Use subtraction rule: log_3((x+4)/(x-2))=1.
+      Convert to exponential form: (x+4)/(x-2)=3.
+      Solve: x+4=3x-6 ⇒ 10=2x ⇒ x=5.
+      Check domain: 5>2, valid.
+      
+      Explanation:
+      Use log(a)-log(b)=log(a/b) for the same base, convert to exponential form, solve the resulting linear equation, and verify the domain.
+      
+      Common mistake note:
+      A common mistake is to subtract inside incorrectly as log(x+4-(x-2)). Logs do not distribute over subtraction; you must form a quotient.
+      ------------------------------------------------------------------------------
+      1.1.3.7 Apply the change-of-base formula
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Use the change-of-base formula to evaluate \(\log_2(32)\) using common logarithms (base 10).
+      A) 5
+      B) 4
+      C) \(\dfrac{\log 32}{\log 2}\) and it equals 6
+      D) \(\dfrac{\log 2}{\log 32}\) and it equals 5
+      Correct Answer: A
+      
+      Solution:
+      \(\log_2(32)=\dfrac{\log(32)}{\log(2)}\). Since \(32=2^5\), \(\log_2(32)=5\).
+      
+      Explanation:
+      By change of base, \(\log_b(a)=\dfrac{\log(a)}{\log(b)}\). Here, \(\log_2(32)=\dfrac{\log(32)}{\log(2)}\), and because \(32=2^5\), the logarithm equals 5.
+      
+      Common mistake note:
+      Flipping the fraction gives \(\dfrac{\log 2}{\log 32}=\log_{32}(2)\), not \(\log_2(32)\).
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Write \(\log_5(12)\) using natural logarithms (\(\ln\)) via change of base.
+      A) \(\dfrac{\ln 12}{\ln 5}\)
+      B) \(\dfrac{\ln 5}{\ln 12}\)
+      C) \(\ln(12\cdot 5)\)
+      D) \(\ln(12-5)\)
+      Correct Answer: A
+      
+      Solution:
+      \(\log_5(12)=\dfrac{\ln 12}{\ln 5}\).
+      
+      Explanation:
+      The change-of-base formula rewrites \(\log_b(a)\) as \(\dfrac{\ln a}{\ln b}\). Substituting \(a=12\), \(b=5\) gives \(\dfrac{\ln 12}{\ln 5}\).
+      
+      Common mistake note:
+      \(\dfrac{\ln 5}{\ln 12}\) equals \(\log_{12}(5)\), not \(\log_5(12)\).
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Given \(\log_{10}(2)\approx 0.3010\), approximate \(\log_2(10)\) using change of base. Round to 3 decimal places.
+      A) 3.322
+      B) 0.301
+      C) 2.000
+      D) 0.500
+      Correct Answer: A
+      
+      Solution:
+      \(\log_2(10)=\dfrac{\log_{10}(10)}{\log_{10}(2)}=\dfrac{1}{0.3010}\approx 3.322\).
+      
+      Explanation:
+      Using base-10 change of base, \(\log_2(10)=\dfrac{\log(10)}{\log(2)}\). Since \(\log(10)=1\), compute \(1/0.3010\approx 3.322\).
+      
+      Common mistake note:
+      Using \(\dfrac{\log(2)}{\log(10)}\) gives \(\log_{10}(2)\), not \(\log_2(10)\).
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Solve for \(x\): \(\log_3(x)=4\). Use change of base to justify your steps.
+      A) 81
+      B) 64
+      C) 12
+      D) 16
+      Correct Answer: A
+      
+      Solution:
+      \(\log_3(x)=\dfrac{\ln x}{\ln 3}=4\Rightarrow \ln x=4\ln 3\Rightarrow x=e^{4\ln 3}=3^4=81\).
+      
+      Explanation:
+      Change of base converts \(\log_3(x)\) to \(\dfrac{\ln x}{\ln 3}\). Multiply both sides by \(\ln 3\): \(\ln x=4\ln 3\). Exponentiate to get \(x=e^{4\ln 3}=3^4=81\).
+      
+      Common mistake note:
+      Don’t treat \(\log_3(x)=4\) as linear (e.g., \(x=4\cdot 3\)). It means \(x\) is the value of \(3^4\).
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Which expression is obtained by applying ONLY the change-of-base formula to rewrite \(\log_7(\sqrt{5})\) in terms of common logarithms (base 10)? (Do not apply any other log properties.)
+      A) \(\dfrac{\log(\sqrt{5})}{\log 7}\)
+      B) \(\dfrac{\log 7}{\log(\sqrt{5})}\)
+      C) \(\dfrac{\log(5^{1/2})}{\log 7}\)
+      D) \(\dfrac{\log 5}{\log 49}\)
+      Correct Answer: A
+      
+      Solution:
+      \(\log_7(\sqrt{5})=\dfrac{\log(\sqrt{5})}{\log 7}\).
+      
+      Explanation:
+      Using change of base with common logs: \(\log_b(a)=\dfrac{\log(a)}{\log(b)}\). With \(a=\sqrt{5}\) and \(b=7\), this becomes \(\dfrac{\log(\sqrt{5})}{\log 7}\).
+      
+      Common mistake note:
+      Choice B is the reciprocal (\(\log_{\sqrt{5}}(7)\)). Choices C and D rewrite the argument/base beyond a direct single application of change of base as stated.
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Use change of base to solve for \(x\): \(\log_4(x)=\dfrac{1}{2}\).
+      A) 2
+      B) 8
+      C) 16
+      D) 4
+      Correct Answer: A
+      
+      Solution:
+      \(\log_4(x)=\dfrac{\ln x}{\ln 4}=\dfrac{1}{2}\Rightarrow \ln x=\dfrac{1}{2}\ln 4\Rightarrow x=e^{(1/2)\ln 4}=4^{1/2}=2\).
+      
+      Explanation:
+      Rewrite with change of base: \(\log_4(x)=\dfrac{\ln x}{\ln 4}\). Solve for \(\ln x\) and exponentiate to obtain \(x\).
+      
+      Common mistake note:
+      A common error is to treat \(\log_4(x)=\tfrac12\) as \(x=4/2\). It instead means \(x=4^{1/2}\).
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      A student writes: \(\log_3(7)=\dfrac{\ln 3}{\ln 7}\). Which statement best describes the error?
+      A) The numerator and denominator are reversed; it should be \(\dfrac{\ln 7}{\ln 3}\).
+      B) Natural logs cannot be used in change of base; only base 10 logs work.
+      C) Change of base requires multiplying: \(\log_3(7)=\ln 3\cdot \ln 7\).
+      D) The expression is correct as written.
+      Correct Answer: A
+      
+      Solution:
+      Correct change-of-base: \(\log_3(7)=\dfrac{\ln 7}{\ln 3}\). The student inverted the fraction.
+      
+      Explanation:
+      By change of base, \(\log_b(a)=\dfrac{\ln a}{\ln b}\). Here \(a=7\), \(b=3\), so it must be \(\dfrac{\ln 7}{\ln 3}\). The student wrote the reciprocal, which equals \(\log_7(3)\).
+      
+      Common mistake note:
+      Swapping numerator and denominator changes the value to a different logarithm (base and argument swapped), not the original.
+      ------------------------------------------------------------------------------
+      1.1.3.8 Graph exponential functions
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Which graph best represents the function f(x)=2^x ?
+      A) Passes through (0,1), increases as x increases, and has horizontal asymptote y=0.
+      B) Passes through (0,0), increases as x increases, and has vertical asymptote x=0.
+      C) Passes through (0,1), decreases as x increases, and has horizontal asymptote y=0.
+      D) Passes through (1,0), increases as x increases, and has horizontal asymptote y=1.
+      Correct Answer: A
+      
+      Solution:
+      For f(x)=2^x: f(0)=2^0=1 so it passes through (0,1). Since base 2>1, it is increasing. As x→−∞, 2^x→0, so the horizontal asymptote is y=0. Therefore choice A.
+      
+      Explanation:
+      An exponential with base greater than 1 grows to the right, crosses the y-axis at 1, and approaches 0 on the left, giving asymptote y=0.
+      
+      Common mistake note:
+      Choosing C by thinking all exponentials “decay.” Decay happens when 0<b<1, not when b>1.
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      A graph is decreasing, has y-intercept 1, and approaches y=0 as x increases. Which function matches this graph?
+      A) f(x)=2^x
+      B) f(x)=(1/2)^x
+      C) f(x)=2^x+1
+      D) f(x)=(1/2)^x+3
+      Correct Answer: B
+      
+      Solution:
+      A decreasing exponential with y-intercept 1 and horizontal asymptote y=0 must be of the form b^x with 0<b<1 and no vertical shift. (1/2)^x fits: f(0)=1 and it decreases to 0 as x→∞. So B.
+      
+      Explanation:
+      For b^x, the y-intercept is always 1 (since b^0=1). Decreasing behavior indicates 0<b<1; no vertical shift keeps asymptote at y=0.
+      
+      Common mistake note:
+      Picking C because it still has y-intercept 2^0+1=2 (not 1) and asymptote y=1 (not 0).
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Graph g(x)=3^(x−2). Which statement is correct?
+      A) It is the graph of 3^x shifted 2 units left.
+      B) It is the graph of 3^x shifted 2 units right.
+      C) It is the graph of 3^x shifted 2 units up.
+      D) It is the graph of 3^x reflected across the x-axis.
+      Correct Answer: B
+      
+      Solution:
+      Replacing x by (x−2) shifts the graph right 2 units. Thus g(x)=3^(x−2) is 3^x shifted 2 units right → B.
+      
+      Explanation:
+      Horizontal shifts: f(x−h) moves right by h; f(x+h) moves left by h. Here h=2.
+      
+      Common mistake note:
+      Choosing A by confusing the sign inside the input. The minus sign causes a shift to the right, not left.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      For the function h(x)=2^x+5, what is the horizontal asymptote?
+      A) y=0
+      B) y=5
+      C) x=0
+      D) x=5
+      Correct Answer: B
+      
+      Solution:
+      The parent function 2^x has horizontal asymptote y=0. Adding +5 shifts the graph up 5 units, so the asymptote becomes y=5. Answer: B.
+      
+      Explanation:
+      A vertical shift f(x)+k moves all y-values (including the asymptote) up by k.
+      
+      Common mistake note:
+      Choosing A because you remember 2^x has asymptote y=0, but forgetting that the +5 shifts the entire graph upward.
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      A function has horizontal asymptote y=−3 and passes through the point (0,−2). It is an increasing exponential. Which function could it be?
+      A) f(x)=2^x−3
+      B) f(x)=(1/2)^x−3
+      C) f(x)=2^x+3
+      D) f(x)=−2^x−3
+      Correct Answer: A
+      
+      Solution:
+      Asymptote y=−3 suggests a vertical shift down 3: f(x)=b^x−3. Passing through (0,−2) gives f(0)=1−3=−2, which works. Increasing requires b>1, so choose b=2. Thus A.
+      
+      Explanation:
+      An exponential of the form b^x+k has asymptote y=k and y-intercept 1+k. With k=−3, the y-intercept is −2, matching the point.
+      
+      Common mistake note:
+      Choosing B because it matches the asymptote and point, but (1/2)^x is decreasing (since 0<b<1), contradicting “increasing.”
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Which table of values could come from an exponential function of the form f(x)=a·b^x with a>0 and b>1?
+      A) x: 0,1,2,3  | f(x): 2,4,6,8
+      B) x: 0,1,2,3  | f(x): 3,6,12,24
+      C) x: 0,1,2,3  | f(x): 5,4,3,2
+      D) x: 0,1,2,3  | f(x): 1,1,1,1
+      Correct Answer: B
+      
+      Solution:
+      For f(x)=a·b^x, the ratio f(x+1)/f(x) is constant and equals b. In B, ratios are 6/3=2, 12/6=2, 24/12=2, constant with b=2>1 and a=f(0)=3>0. So B.
+      
+      Explanation:
+      Exponential growth shows a constant multiplicative factor between consecutive outputs. Linear patterns (constant difference) are not exponential.
+      
+      Common mistake note:
+      Choosing A because it “increases,” but A has constant differences (+2) rather than constant ratios, so it’s linear, not exponential.
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Graph y=−(1/3)^x. Which description is correct?
+      A) Always positive, decreasing, with asymptote y=0.
+      B) Always negative, increasing, with asymptote y=0.
+      C) Always negative, decreasing, with asymptote y=1.
+      D) Crosses the x-axis at x=0 and has asymptote y=0.
+      Correct Answer: B
+      
+      Solution:
+      (1/3)^x is always positive and decreasing (since 0<b<1). Multiplying by −1 makes all values negative and reflects across the x-axis, which turns a decreasing curve into an increasing one. The horizontal asymptote remains y=0. Therefore: always negative, increasing, asymptote y=0 → B.
+      
+      Explanation:
+      Reflection across the x-axis changes the sign of y-values and reverses monotonicity: if a positive function decreases, its negative increases.
+      
+      Common mistake note:
+      Choosing A by ignoring the leading negative sign. The negative makes the entire graph lie below the x-axis (never positive).
+      ------------------------------------------------------------------------------
+      1.1.3.9 Graph logarithmic functions
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Which statement correctly describes the graph of \(y=\log_2(x)\)?
+      A) Vertical asymptote at \(x=0\); passes through \((1,0)\); increasing for \(x>0\).
+      B) Horizontal asymptote at \(y=0\); passes through \((0,1)\); increasing for all real \(x\).
+      C) Vertical asymptote at \(x=1\); passes through \((0,0)\); decreasing for \(x>0\).
+      D) Horizontal asymptote at \(y=1\); passes through \((2,0)\); decreasing for \(x>0\).
+      Correct Answer: A
+      
+      Solution:
+      For \(y=\log_2(x)\): the domain is \(x>0\), so there is a vertical asymptote at \(x=0\). Also \(\log_2(1)=0\), so it passes through \((1,0)\). Since the base \(2>1\), the function is increasing on \((0,\infty)\).
+      
+      Explanation:
+      A basic logarithm \(y=\log_b(x)\) has vertical asymptote \(x=0\), x-intercept at \((1,0)\), and is increasing when \(b>1\) (decreasing when \(0<b<1\)).
+      
+      Common mistake note:
+      Mixing up logarithms with exponentials: choosing a horizontal asymptote at \(y=0\) (that’s typical for \(b^x\), not \(\log_b x\)).
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Consider \(f(x)=\ln(x-3)+2\). Which option gives the vertical asymptote and the domain?
+      A) Asymptote: \(x=3\); Domain: \((3,\infty)\).
+      B) Asymptote: \(y=2\); Domain: \(( -\infty,\infty)\).
+      C) Asymptote: \(x=-3\); Domain: \((-3,\infty)\).
+      D) Asymptote: \(x=0\); Domain: \((0,\infty)\).
+      Correct Answer: A
+      
+      Solution:
+      Require the log argument to be positive: \(x-3>0\Rightarrow x>3\). So the domain is \((3,\infty)\). The vertical asymptote occurs where the argument is 0: \(x-3=0\Rightarrow x=3\).
+      
+      Explanation:
+      For \(\ln(x-h)+k\), shifting right by \(h\) moves the vertical asymptote from \(x=0\) to \(x=h\), and the domain becomes \((h,\infty)\). The \(+2\) shifts the graph up but does not create a horizontal asymptote.
+      
+      Common mistake note:
+      Confusing the vertical shift \(+2\) with an asymptote location. Logarithmic graphs have vertical asymptotes where the argument is 0, not horizontal asymptotes.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Which point lies on the graph of \(y=\log_3(x)+1\)?
+      A) \((3,2)\)
+      B) \((1,2)\)
+      C) \((0,1)\)
+      D) \((9,1)\)
+      Correct Answer: A
+      
+      Solution:
+      Test \((3,2)\): \(y=\log_3(3)+1=1+1=2\), which matches the given y-value. So \((3,2)\) lies on the graph.
+      
+      Explanation:
+      To check a point \((x,y)\), substitute into the function. Here, adding 1 shifts the basic \(\log_3(x)\) graph up by 1, so points like \((3,1)\) become \((3,2)\).
+      
+      Common mistake note:
+      Forgetting the +1 vertical shift and choosing outputs as if \(y=\log_3(x)\) (e.g., thinking \(\log_3(3)=1\) is the final y-value).
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Which transformation describes the change from \(y=\log_{10}(x)\) to \(y=\log_{10}(x+5)\)?
+      A) Shift left 5 units.
+      B) Shift right 5 units.
+      C) Shift up 5 units.
+      D) Shift down 5 units.
+      Correct Answer: A
+      
+      Solution:
+      Replacing \(x\) by \(x+5\) shifts the graph left by 5 units. Therefore the correct transformation is a left shift of 5 units.
+      
+      Explanation:
+      In general, \(f(x+c)\) shifts the graph of \(f\) left by \(c\). Thus \(\log_{10}(x+5)\) moves the vertical asymptote from \(x=0\) to \(x=-5\).
+      
+      Common mistake note:
+      Reversing the direction of horizontal shifts: many mistakenly say “right 5” because they see +5, but inside-the-function shifts go opposite the sign.
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      For \(g(x)=-\log_2(x)\), which description is correct?
+      A) Vertical reflection of \(y=\log_2(x)\); decreasing on \((0,\infty)\).
+      B) Horizontal reflection of \(y=\log_2(x)\); increasing on \((0,\infty)\).
+      C) Shift of \(y=\log_2(x)\) up by 2; increasing on \((0,\infty)\).
+      D) Shift of \(y=\log_2(x)\) right by 2; decreasing on \((0,\infty)\).
+      Correct Answer: A
+      
+      Solution:
+      Multiplying a function by \(-1\) reflects its graph across the x-axis. Since \(\log_2(x)\) is increasing on \((0,\infty)\), \(-\log_2(x)\) is decreasing on \((0,\infty)\).
+      
+      Explanation:
+      A negative sign in front of a function, \(-f(x)\), is a vertical reflection. For logarithms with base \(>1\), the original is increasing; the reflection becomes decreasing while keeping the same domain and asymptote at \(x=0\).
+      
+      Common mistake note:
+      Confusing vertical vs. horizontal reflection: reflection across the y-axis would be \(f(-x)\), not \(-f(x)\).
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Find the x-intercept of \(y=\log_5(x-4)\).
+      A) \((5,0)\)
+      B) \((4,0)\)
+      C) \((9,0)\)
+      D) \((0,9)\)
+      Correct Answer: A
+      
+      Solution:
+      Set \(y=0\): \(0=\log_5(x-4)\Rightarrow x-4=5^0=1\Rightarrow x=5\). Therefore the x-intercept is \((5,0)\).
+      
+      Explanation:
+      The x-intercept occurs where \(y=0\). For any base \(b\), \(\log_b(1)=0\). So set the inside equal to 1: \(x-4=1\Rightarrow x=5\), giving \((5,0)\).
+      
+      Common mistake note:
+      Setting the log argument to 0 (which finds the vertical asymptote \(x=4\)) instead of setting the function value to 0.
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      A logarithmic function has the form \(y=\log_3(x+2)-1\). Which option correctly gives (i) the vertical asymptote, (ii) the point obtained from the parent point \((1,0)\) after transformations, and (iii) whether the function is increasing or decreasing?
+      A) (i) \(x=-2\); (ii) \((-1,-1)\); (iii) increasing.
+      B) (i) \(x=2\); (ii) \((3,-1)\); (iii) increasing.
+      C) (i) \(x=-2\); (ii) \((1,-1)\); (iii) decreasing.
+      D) (i) \(x=0\); (ii) \((-1,1)\); (iii) decreasing.
+      Correct Answer: A
+      
+      Solution:
+      (i) The vertical asymptote occurs when the log argument is 0: \(x+2=0\Rightarrow x=-2\).
+      (ii) Start from the parent point \((1,0)\) on \(y=\log_3(x)\). The \(x+2\) shifts left 2: \((1,0)\to(-1,0)\). Then \(-1\) shifts down 1: \((-1,0)\to(-1,-1)\).
+      (iii) Since base \(3>1\), the function is increasing.
+      
+      Explanation:
+      Horizontal shifts change x-values and move the vertical asymptote; vertical shifts change y-values. The monotonicity of \(\log_b(x)\) depends on the base: increasing for \(b>1\), decreasing for \(0<b<1\).
+      
+      Common mistake note:
+      Applying the +2 shift as a right shift instead of left, which would incorrectly place the asymptote at \(x=2\) and move points in the wrong direction.
+      ------------------------------------------------------------------------------
+      1.1.3.10 Identify asymptotes of logarithmic functions
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Identify the vertical asymptote of the function \(f(x)=\log_2(x-5)\).
+      A) \(x=0\)
+      B) \(x=5\)
+      C) \(y=5\)
+      D) \(y=0\)
+      Correct Answer: B
+      
+      Solution:
+      Set the logarithm’s argument to 0: \(x-5=0\Rightarrow x=5\).
+      
+      Explanation:
+      A logarithmic function has a vertical asymptote where its argument approaches \(0^+\). Here, as \(x\to 5^+\), \(x-5\to 0^+\) and \(\log_2(x-5)\to -\infty\), so the vertical asymptote is \(x=5\).
+      
+      Common mistake note:
+      Forgetting the horizontal shift and choosing \(x=0\). The parent \(\log_2(x)\) has asymptote \(x=0\), but \(x-5\) shifts it to \(x=5\).
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Find the vertical asymptote of \(g(x)=\ln(3x+6)\).
+      A) \(x=-2\)
+      B) \(x=2\)
+      C) \(y=-2\)
+      D) \(y=0\)
+      Correct Answer: A
+      
+      Solution:
+      Set the argument to 0: \(3x+6=0\Rightarrow x=-2\).
+      
+      Explanation:
+      The domain requires \(3x+6>0\). The boundary occurs at \(x=-2\). As \(x\to -2^+\), \(3x+6\to 0^+\) and \(\ln(3x+6)\to -\infty\), giving a vertical asymptote at \(x=-2\).
+      
+      Common mistake note:
+      Sign errors when solving \(3x+6=0\). Also, the asymptote is vertical (an \(x=\) line), not horizontal.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Determine the vertical asymptote of \(h(x)=\log_{10}(7-2x)\).
+      A) \(x=\tfrac{7}{2}\)
+      B) \(x=-\tfrac{7}{2}\)
+      C) \(y=\tfrac{7}{2}\)
+      D) No asymptote
+      Correct Answer: A
+      
+      Solution:
+      Set the argument to 0: \(7-2x=0\Rightarrow x=\tfrac{7}{2}\).
+      
+      Explanation:
+      Logs are defined only when the argument is positive. Here the domain is \(7-2x>0\Rightarrow x<\tfrac{7}{2}\). As \(x\to (7/2)^-\), \(7-2x\to 0^+\) and \(\log_{10}(7-2x)\to -\infty\), so the vertical asymptote is \(x=\tfrac{7}{2}\).
+      
+      Common mistake note:
+      Choosing \(-\tfrac{7}{2}\) due to moving terms incorrectly. Solve \(7=2x\) to get \(x=\tfrac{7}{2}\).
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Identify the vertical asymptote of \(p(x)=\log_5\big((x+1)^2\big)\).
+      A) \(x=-1\)
+      B) \(x=1\)
+      C) \(y=-1\)
+      D) There is no vertical asymptote because the square makes the argument nonnegative.
+      Correct Answer: A
+      
+      Solution:
+      Set the argument to 0: \((x+1)^2=0\Rightarrow x=-1\).
+      
+      Explanation:
+      Even though \((x+1)^2\ge 0\), a logarithm requires the argument be strictly positive, not merely nonnegative. As \(x\to -1\) (from either side), \((x+1)^2\to 0^+\) and \(\log_5((x+1)^2)\to -\infty\), so there is a vertical asymptote at \(x=-1\).
+      
+      Common mistake note:
+      Thinking the square removes the issue. Squaring prevents negative values but still allows 0, and \(\log(0)\) is undefined (tends to \(-\infty\)).
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Find the vertical asymptote of \(f(x)=2-\ln(x-4)\).
+      A) \(x=4\)
+      B) \(x=-4\)
+      C) \(y=2\)
+      D) \(y=-\infty\)
+      Correct Answer: A
+      
+      Solution:
+      Set the ln argument to 0: \(x-4=0\Rightarrow x=4\).
+      
+      Explanation:
+      Vertical asymptotes for logarithmic functions come from where the argument approaches \(0^+\). Adding/subtracting outside the log (like the \(+2\)) or multiplying by \(-1\) does not change the input value where the log’s argument is 0. Thus the vertical asymptote is \(x=4\).
+      
+      Common mistake note:
+      Choosing \(y=2\) due to the vertical shift. Logarithmic asymptotes here are vertical lines determined by the log’s argument, not by outside shifts.
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Determine the vertical asymptote(s) of \(q(x)=\log_3\left(\dfrac{x+2}{x-1}\right)\).
+      A) \(x=-2\) only
+      B) \(x=1\) only
+      C) \(x=-2\) and \(x=1\)
+      D) No vertical asymptote
+      Correct Answer: C
+      
+      Solution:
+      First find where the log argument is positive: \(\frac{x+2}{x-1}>0\) gives intervals \(( -\infty,-2)\cup(1,\infty)\). Vertical asymptotes occur at domain boundaries where the argument \(\to 0^+\) or \(\to +\infty\) when approached from within the domain. As \(x\to -2^-\), \(\frac{x+2}{x-1}\to 0^+\) so \(\log_3\to -\infty\), giving \(x=-2\). As \(x\to 1^+\), \(\frac{x+2}{x-1}\to +\infty\) so \(\log_3\to +\infty\), giving \(x=1\).
+      
+      Explanation:
+      A vertical asymptote can occur even if the function is only defined on one side of the boundary: it is enough that, from within the domain, the function values grow without bound. Here the domain is \(( -\infty,-2)\cup(1,\infty)\). Approaching \(x=-2\) from the left stays in the domain and forces the argument to \(0^+\), while approaching \(x=1\) from the right stays in the domain and forces the argument to \(+\infty\). Both produce unbounded logarithm values, so both \(x=-2\) and \(x=1\) are vertical asymptotes.
+      
+      Common mistake note:
+      Requiring a two-sided approach for a vertical asymptote. For restricted domains (like rational expressions inside logs), one-sided approach from within the domain is sufficient (here, \(-2\) from the left and \(1\) from the right).
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Identify the vertical asymptote(s) of \(r(x)=\log_2\big(x^2-9\big)\).
+      A) \(x=0\)
+      B) \(x=3\) only
+      C) \(x=-3\) and \(x=3\)
+      D) No vertical asymptotes
+      Correct Answer: C
+      
+      Solution:
+      Set the argument to 0: \(x^2-9=0\Rightarrow (x-3)(x+3)=0\Rightarrow x=3\) or \(x=-3\).
+      
+      Explanation:
+      The domain is \(x^2-9>0\Rightarrow |x|>3\). As \(x\to 3^+\) or \(x\to (-3)^-\) (approaching from within the domain), \(x^2-9\to 0^+\) and \(\log_2(x^2-9)\to -\infty\). Therefore, there are vertical asymptotes at \(x=-3\) and \(x=3\).
+      
+      Common mistake note:
+      Keeping only \(x=3\) and forgetting \(x=-3\). Both zeros of the log’s argument create vertical asymptotes when they can be approached from within the domain.
+      ------------------------------------------------------------------------------
+      1.1.3.11 Model exponential growth and decay
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      A bacteria culture starts with 500 cells and grows by 12% each hour. Which model gives the number of cells N(t) after t hours?
+      A) N(t)=500(1.12)^t
+      B) N(t)=500(0.88)^t
+      C) N(t)=500+1.12t
+      D) N(t)=500e^{0.12t}
+      Correct Answer: A
+      
+      Solution:
+      Growth by a fixed percent per hour uses N(t)=N0(1+r)^t.
+      Here N0=500 and r=0.12, so N(t)=500(1.12)^t.
+      
+      Explanation:
+      Discrete exponential growth with rate r per time step is modeled by multiplying by (1+r) each step: 500, 500(1.12), 500(1.12)^2, ... giving 500(1.12)^t.
+      
+      Common mistake note:
+      Choosing D confuses 12% per hour (a discrete factor 1.12) with a continuous growth rate of 0.12 in e^{kt}. Continuous rate k=0.12 would not match “12% each hour” exactly.
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      A car purchased for $24,000 depreciates by 15% each year. What is its value after 6 years? (Round to the nearest dollar.)
+      A) 24000(0.85)^6 ≈ $9,052
+      B) 24000(1.15)^6 ≈ $55,626
+      C) 24000 − 0.15·6 ≈ $23,100
+      D) 24000(0.15)^6 ≈ $0
+      Correct Answer: A
+      
+      Solution:
+      Depreciation by 15% per year means multiply by 1−0.15=0.85 each year.
+      V(6)=24000(0.85)^6.
+      Compute: (0.85)^6 ≈ 0.3771495.
+      V(6) ≈ 24000·0.3771495 ≈ 9051.59 → $9,052.
+      
+      Explanation:
+      Exponential decay with constant percentage decrease uses V(t)=V0(1−r)^t. The factor 0.85 is applied repeatedly for each year.
+      
+      Common mistake note:
+      Choosing C treats depreciation as linear (subtracting the same amount each year). Percentage depreciation is applied to the current value, so the dollar decrease changes over time.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      A radioactive substance has a half-life of 10 days. If the initial mass is 80 grams, how many grams remain after 35 days? (Round to the nearest tenth.)
+      A) 80(1/2)^{3.5} ≈ 7.1 g
+      B) 80(1/2)^{35} ≈ 0.0 g
+      C) 80(1/2)^{0.35} ≈ 62.7 g
+      D) 80(2)^{3.5} ≈ 905.1 g
+      Correct Answer: A
+      
+      Solution:
+      Half-life model: M(t)=M0(1/2)^{t/10}.
+      Here M0=80, t=35:
+      M(35)=80(1/2)^{35/10}=80(1/2)^{3.5}.
+      (1/2)^{3.5}=2^{-3.5}=1/(2^{3.5})≈1/11.3137≈0.08839.
+      M≈80·0.08839≈7.07 → 7.1 g.
+      
+      Explanation:
+      Each 10 days the mass halves, so after t days the number of half-lives is t/10. Fractional exponents handle partial half-lives.
+      
+      Common mistake note:
+      Choosing C uses t/100 instead of t/10 (mixing up the half-life length). The exponent must be the number of half-life periods, 35/10=3.5.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      A population is modeled by P(t)=1200e^{0.06t}, where t is in years. Which statement best interprets the parameter 0.06?
+      A) The population increases at a continuous rate of 6% per year.
+      B) The population increases by 6 people per year.
+      C) The population is multiplied by 0.06 each year.
+      D) The population increases by 60% per year.
+      Correct Answer: A
+      
+      Solution:
+      In P(t)=P0e^{kt}, k is the continuous growth rate per unit time.
+      Here k=0.06, meaning continuous growth rate 6% per year.
+      
+      Explanation:
+      The model e^{kt} corresponds to continuous exponential change. A value of k=0.06 means the instantaneous proportional rate of change is 0.06 per year.
+      
+      Common mistake note:
+      Choosing B confuses a proportional (percent) rate with an additive (people per year) rate. Exponential models describe multiplicative change, not constant additions.
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      A town’s population was 50,000 in 2015 and grew to 58,000 by 2020. Assuming exponential growth with a constant annual rate, what is the annual growth rate r? (Give r as a decimal.)
+      A) r≈0.0300
+      B) r≈0.0160
+      C) r≈0.1600
+      D) r≈0.3000
+      Correct Answer: A
+      
+      Solution:
+      Use P(t)=P0(1+r)^t with t in years.
+      58000=50000(1+r)^5
+      (1+r)^5=58000/50000=1.16
+      1+r=1.16^{1/5}
+      r=1.16^{0.2}−1
+      Compute: 1.16^{0.2}≈e^{0.2\ln(1.16)} with ln(1.16)≈0.14842
+      So 0.2·0.14842≈0.029684; e^{0.029684}≈1.03013
+      r≈0.03013≈0.0300.
+      
+      Explanation:
+      In exponential growth, the same percentage increase applies each year, so the factor (1+r) is found by taking the appropriate root of the overall growth factor 1.16 over 5 years.
+      
+      Common mistake note:
+      Choosing C incorrectly treats 16% total growth over 5 years as 16% per year. Exponential rates require distributing growth across years using a 5th root.
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      A medication amount in the bloodstream is modeled by A(t)=A0(0.8)^{t/3}, where t is in hours. Which statement is correct?
+      A) The amount decreases by 20% every 3 hours.
+      B) The amount decreases by 80% every hour.
+      C) The amount increases by 20% every 3 hours.
+      D) The half-life is 3 hours.
+      Correct Answer: A
+      
+      Solution:
+      A(t)=A0(0.8)^{t/3} means that when t increases by 3, the exponent increases by 1, so the amount is multiplied by 0.8.
+      Multiplying by 0.8 corresponds to a 20% decrease every 3 hours.
+      
+      Explanation:
+      The exponent t/3 encodes the time step: each 3 hours is one decay step. The base 0.8 is the remaining fraction after each step.
+      
+      Common mistake note:
+      Choosing D assumes the base must be 1/2 for a half-life. Here the amount becomes 0.8 of its previous value every 3 hours, not half.
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      A bank account has $2,000 and earns 5% interest compounded monthly. Which model gives the balance B(t) after t years?
+      A) B(t)=2000(1+0.05/12)^{12t}
+      B) B(t)=2000(1.05)^{t/12}
+      C) B(t)=2000e^{0.05t}
+      D) B(t)=2000(1+12·0.05)^t
+      Correct Answer: A
+      
+      Solution:
+      Monthly compounding means the periodic rate is 0.05/12 and there are 12t periods in t years.
+      So B(t)=2000(1+0.05/12)^{12t}.
+      
+      Explanation:
+      Exponential growth with compounding uses B=P(1+r/n)^{nt}, where r is annual rate and n is number of compounding periods per year.
+      
+      Common mistake note:
+      Choosing C uses continuous compounding (e^{rt}), which is a different model than monthly compounding and gives a different balance.
+      ------------------------------------------------------------------------------
+      1.1.3.12 Calculate compound interest using exponentials
+      (No generated output for this objective.)
+      1.1.3.13 Use (e) and the natural logarithm (\ln)
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Solve for \(x\): \(e^{x}=12\). Give the exact answer in terms of \(\ln\).
+      A) \(x=\ln(12)\)
+      B) \(x=\dfrac{1}{\ln(12)}\)
+      C) \(x=\ln\!\left(\tfrac{1}{12}\right)\)
+      D) \(x=12\ln(e)\)
+      Correct Answer: A
+      
+      Solution:
+      \(\ln(e^x)=\ln(12)\Rightarrow x=\ln(12).\)
+      
+      Explanation:
+      Apply the natural log to both sides. Since \(\ln\) is the inverse of \(e^x\), \(\ln(e^x)=x\).
+      
+      Common mistake note:
+      Choosing C: \(\ln(1/12)=-\ln(12)\), which would make \(x<0\), contradicting \(e^x=12>1\) (so \(x>0\)).
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Simplify the expression: \(\ln(e^{5})\).
+      A) \(5\)
+      B) \(e^{5}\)
+      C) \(\ln(5e)\)
+      D) \(\dfrac{1}{5}\)
+      Correct Answer: A
+      
+      Solution:
+      \(\ln(e^5)=5.\)
+      
+      Explanation:
+      Use the inverse property \(\ln(e^{u})=u\) for any real \(u\).
+      
+      Common mistake note:
+      Answering B by dropping \(\ln\) without evaluating it. The logarithm returns the exponent, not the exponential expression.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Solve for \(x\): \(\ln(x)=3\).
+      A) \(x=e^{3}\)
+      B) \(x=3e\)
+      C) \(x=\ln(3)\)
+      D) \(x=\dfrac{1}{3}\)
+      Correct Answer: A
+      
+      Solution:
+      Exponentiate both sides with base \(e\): \(e^{\ln(x)}=e^3\Rightarrow x=e^3.\)
+      
+      Explanation:
+      Since \(e^x\) is the inverse of \(\ln(x)\), applying \(e^{\cdot}\) to both sides isolates \(x\).
+      
+      Common mistake note:
+      Treating \(\ln(x)=3\) as if it were linear and trying to “divide by \(\ln\)”. You must exponentiate to undo the log.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Rewrite as a single logarithm: \(\ln(8)+\ln(5)\).
+      A) \(\ln(40)\)
+      B) \(\ln(13)\)
+      C) \(\ln\!\left(\dfrac{8}{5}\right)\)
+      D) \(\ln(8^5)\)
+      Correct Answer: A
+      
+      Solution:
+      \(\ln(8)+\ln(5)=\ln(8\cdot 5)=\ln(40).\)
+      
+      Explanation:
+      Use the product rule: \(\ln a+\ln b=\ln(ab)\).
+      
+      Common mistake note:
+      Choosing B by adding inside the log: \(\ln(8)+\ln(5)\neq\ln(8+5)\).
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Simplify: \(\ln(e^{x})+\ln(e^{2})\).
+      A) \(x+2\)
+      B) \(e^{x+2}\)
+      C) \(\ln(e^{x+2})\)
+      D) \(\ln(x+2)\)
+      Correct Answer: A
+      
+      Solution:
+      \(\ln(e^{x})=x\) and \(\ln(e^{2})=2\), so \(\ln(e^{x})+\ln(e^{2})=x+2.\)
+      
+      Explanation:
+      Use \(\ln(e^u)=u\) on each term (equivalently, combine first: \(\ln(e^x)+\ln(e^2)=\ln(e^{x}e^{2})=\ln(e^{x+2})=x+2\)).
+      
+      Common mistake note:
+      Choosing B by mistakenly thinking logs “disappear” leaving exponentials. Also, D is wrong because logs do not distribute over addition: \(\ln(a)+\ln(b)\neq\ln(a+b)\).
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Solve for \(x\): \(e^{3x}=7\).
+      A) \(x=\dfrac{\ln 7}{3}\)
+      B) \(x=\ln(21)\)
+      C) \(x=3\ln 7\)
+      D) \(x=\dfrac{3}{\ln 7}\)
+      Correct Answer: A
+      
+      Solution:
+      Take \(\ln\) of both sides: \(\ln(e^{3x})=\ln 7\Rightarrow 3x=\ln 7\Rightarrow x=\dfrac{\ln 7}{3}.\)
+      
+      Explanation:
+      Taking \(\ln\) brings the exponent down: \(\ln(e^{3x})=3x\). Then solve the resulting linear equation.
+      
+      Common mistake note:
+      Forgetting to divide by 3 after taking logs, leading to \(x=\ln 7\) or \(x=3\ln 7\).
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Solve for \(x\) (give an exact value): \(\ln(x-2)=\ln(5)\).
+      A) \(x=7\)
+      B) \(x=3\)
+      C) \(x=\ln(7)\)
+      D) \(x=\dfrac{5}{2}\)
+      Correct Answer: A
+      
+      Solution:
+      Since \(\ln\) is one-to-one (for positive inputs), \(\ln(x-2)=\ln(5)\Rightarrow x-2=5\Rightarrow x=7\). Check domain: \(x-2>0\Rightarrow x>2\), and \(7>2\).
+      
+      Explanation:
+      Equal natural logs imply their arguments are equal, provided the log inputs are valid (positive).
+      
+      Common mistake note:
+      Using an incorrect rule like \(\ln(x-2)=\ln x-\ln 2\). Log rules apply to products/quotients/powers, not differences.
+      ------------------------------------------------------------------------------
+      1.1.3.14 Solve exponential inequalities
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Solve the inequality: \(2^{x} > 16\).
+      A) \(x > 4\)
+      B) \(x \ge 4\)
+      C) \(x < 4\)
+      D) \(x \le 4\)
+      Correct Answer: A
+      
+      Solution:
+      \(2^x > 16 = 2^4\). Since the base \(2>1\), \(2^x\) is increasing, so compare exponents: \(x>4\).
+      
+      Explanation:
+      For \(a>1\), the function \(a^x\) is increasing, so \(a^u>a^v\iff u>v\).
+      
+      Common mistake note:
+      Choosing \(x\ge 4\) by treating \(>\) as \(\ge\). But \(x=4\) gives \(2^4=16\), which is not strictly greater.
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Solve the inequality: \(3^{x-2} \le 27\).
+      A) \(x \le 5\)
+      B) \(x \ge 5\)
+      C) \(x \le 3\)
+      D) \(x \ge 3\)
+      Correct Answer: A
+      
+      Solution:
+      Rewrite \(27\) as \(3^3\). Then \(3^{x-2} \le 3^3\). Since \(3>1\), compare exponents: \(x-2 \le 3\), so \(x \le 5\).
+      
+      Explanation:
+      When the base is the same and greater than 1, \(3^u \le 3^v\) is equivalent to \(u\le v\).
+      
+      Common mistake note:
+      Answering \(x\ge 5\) by incorrectly flipping the inequality sign. The inequality direction is preserved here because the base is \(>1\) and we are comparing exponents.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Solve the inequality: \((1/2)^{x} > 8\).
+      A) \(x > -3\)
+      B) \(x < -3\)
+      C) \(x > 3\)
+      D) \(x < 3\)
+      Correct Answer: B
+      
+      Solution:
+      Rewrite in base 2: \((1/2)^x = 2^{-x}\) and \(8=2^3\). So \(2^{-x} > 2^3\). Since base \(2>1\), compare exponents: \(-x > 3\). Multiply by \(-1\) and flip the inequality: \(x < -3\).
+      
+      Explanation:
+      Rewriting with base \(2\) avoids confusion about a base between 0 and 1; the inequality flips only when multiplying by a negative number (here, \(-1\)).
+      
+      Common mistake note:
+      Forgetting to flip the inequality when multiplying by \(-1\), leading to \(x>-3\). Check: \(x=-2\) gives \((1/2)^{-2}=4\), not greater than 8.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Solve the inequality: \(e^{2x+1} \ge e^{5}\).
+      A) \(x \ge 2\)
+      B) \(x \le 2\)
+      C) \(x \ge 3\)
+      D) \(x \le 3\)
+      Correct Answer: A
+      
+      Solution:
+      Since \(e^t\) is increasing, compare exponents: \(2x+1 \ge 5\). Then \(2x\ge 4\), so \(x\ge 2\).
+      
+      Explanation:
+      For any base \(a>1\) (including \(e\)), \(a^u\ge a^v\iff u\ge v\).
+      
+      Common mistake note:
+      Arithmetic slip after subtracting 1 or dividing by 2 (e.g., concluding \(x\ge 4\) instead of \(x\ge 2\)).
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Solve the inequality: \(5^{x} < 2\).
+      A) \(x < \log_{5}(2)\)
+      B) \(x > \log_{5}(2)\)
+      C) \(x < \log_{2}(5)\)
+      D) \(x > \log_{2}(5)\)
+      Correct Answer: A
+      
+      Solution:
+      Take \(\log_5\) of both sides (monotonic since base \(5>1\)): \(\log_5(5^x) < \log_5(2)\). Thus \(x < \log_5(2)\).
+      
+      Explanation:
+      Because \(5^x\) is increasing, applying \(\log_5\) preserves the inequality direction and simplifies \(\log_5(5^x)=x\).
+      
+      Common mistake note:
+      Using the wrong log base and writing \(x<\log_2(5)\); that is a different number and does not solve \(5^x<2\).
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Solve the inequality: \(2^{x+1} \le 3\cdot 2^{x-2}\).
+      A) All real numbers \(x\)
+      B) No real solutions
+      C) \(x \le 3\)
+      D) \(x \ge 3\)
+      Correct Answer: B
+      
+      Solution:
+      Divide both sides by \(2^{x-2}\) (which is always positive):
+      \[\frac{2^{x+1}}{2^{x-2}} \le 3.\]
+      Then \(2^{(x+1)-(x-2)}=2^3=8\), so the inequality becomes \(8\le 3\), which is false. Therefore, there are no real solutions.
+      
+      Explanation:
+      Since \(2^{x-2}>0\) for all real \(x\), dividing by it is valid and does not reverse the inequality. The variable cancels, leaving a statement that is never true.
+      
+      Common mistake note:
+      Canceling exponents incorrectly (e.g., thinking \(2^{x+1}/2^{x-2}=2\)). The correct exponent difference is \((x+1)-(x-2)=3\), so the quotient is \(2^3=8\).
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Solve the inequality: \(4^{x} > 2^{x+3}\).
+      A) \(x > 3\)
+      B) \(x < 3\)
+      C) \(x > -3\)
+      D) \(x < -3\)
+      Correct Answer: A
+      
+      Solution:
+      Rewrite \(4^x\) as \((2^2)^x=2^{2x}\). Then \(2^{2x} > 2^{x+3}\). Since base \(2>1\), compare exponents: \(2x > x+3\), hence \(x>3\).
+      
+      Explanation:
+      Express both sides with the same base so the inequality reduces to a linear inequality in the exponent.
+      
+      Common mistake note:
+      Forgetting that \((2^2)^x=2^{2x}\) (not \(2^{x^2}\)). Alternatively, mishandling subtraction: \(2^{2x}/2^{x+3}=2^{x-3}>1\Rightarrow x-3>0\Rightarrow x>3\).
+      ------------------------------------------------------------------------------
+      1.1.3.15 Solve logarithmic inequalities
+      ------------------------------------------------------------------------------
+      Problem 1 (Q1):
+      Solve the inequality: \(\log_2(x) \ge 3\).
+      A) \(x \ge 6\)
+      B) \(x \ge 8\)
+      C) \(0 < x \le 8\)
+      D) \(x > 8\)
+      Correct Answer: B
+      
+      Solution:
+      Domain: \(x>0\). Since base \(2>1\), \(\log_2(x)\) is increasing, so exponentiating preserves the inequality:
+      \[\log_2(x) \ge 3 \iff x \ge 2^3 = 8.\]
+      Thus \(x\ge 8\).
+      
+      Explanation:
+      For logarithms with base greater than 1, the function is increasing, so \(\log_b(x)\ge c\) is equivalent to \(x\ge b^c\), provided \(x>0\).
+      
+      Common mistake note:
+      Forgetting the domain restriction \(x>0\), or using \(x>8\) instead of \(x\ge 8\).
+      ------------------------------------------------------------------------------
+      
+      Problem 2 (Q2):
+      Solve the inequality: \(\log_{1/3}(x) < 2\).
+      A) \(0<x<\tfrac{1}{9}\)
+      B) \(x>\tfrac{1}{9}\)
+      C) \(x\ge \tfrac{1}{9}\)
+      D) \(0<x<9\)
+      Correct Answer: B
+      
+      Solution:
+      Domain: \(x>0\). Because the base satisfies \(0<\tfrac13<1\), \(\log_{1/3}(x)\) is decreasing, so the inequality reverses when converting to exponential form:
+      \[\log_{1/3}(x) < 2 \iff x > \left(\tfrac13\right)^2 = \tfrac19.\]
+      Therefore, \(x>\tfrac19\).
+      
+      Explanation:
+      When \(0<b<1\), \(\log_b(x)\) is decreasing. Applying \(b^{(\cdot)}\) to both sides flips the inequality sign.
+      
+      Common mistake note:
+      Not reversing the inequality (leading to \(0<x<1/9\)), or including the endpoint \(x=1/9\) even though the inequality is strict.
+      ------------------------------------------------------------------------------
+      
+      Problem 3 (Q3):
+      Solve the inequality: \(\ln(x-1) \le 0\).
+      A) \(x \le 2\)
+      B) \(1 < x \le 2\)
+      C) \(x \ge 2\)
+      D) \(0 < x \le 2\)
+      Correct Answer: B
+      
+      Solution:
+      Domain: \(x-1>0\Rightarrow x>1\).
+      Since \(\ln\) is increasing,
+      \[\ln(x-1)\le 0 \iff x-1 \le e^0=1.\]
+      So \(x\le 2\). Intersect with the domain gives \(1<x\le 2\).
+      
+      Explanation:
+      First enforce the log domain (argument positive). Then use monotonicity of \(\ln\) (increasing) to move from a log inequality to an inequality in the argument.
+      
+      Common mistake note:
+      Including \(x=1\) (where \(\ln(0)\) is undefined) or forgetting to apply the domain restriction.
+      ------------------------------------------------------------------------------
+      
+      Problem 4 (Q4):
+      Solve the inequality: \(\log_{5}(2x+1) > \log_{5}(x+4)\).
+      A) \(x > 3\)
+      B) \(-\tfrac{1}{2} < x \le 3\)
+      C) \(x < -\tfrac{1}{2}\)
+      D) \(x > -\tfrac{1}{2}\)
+      Correct Answer: A
+      
+      Solution:
+      Domain: \(2x+1>0\Rightarrow x>-\tfrac12\) and \(x+4>0\Rightarrow x>-4\). Combined domain: \(x>-\tfrac12\).
+      Because base \(5>1\), \(\log_5\) is increasing, so compare arguments:
+      \[2x+1 > x+4 \Rightarrow x>3.\]
+      Intersecting with the domain leaves \(x>3\).
+      
+      Explanation:
+      With the same base \(b>1\), \(\log_b(A) > \log_b(B)\) is equivalent to \(A>B\) as long as both arguments are positive.
+      
+      Common mistake note:
+      Ignoring domain restrictions or trying to subtract logs without ensuring both arguments are valid.
+      ------------------------------------------------------------------------------
+      
+      Problem 5 (Q5):
+      Solve the inequality: \(\log_2(x+3) + \log_2(x-1) \ge 3\).
+      A) \(x \ge 1\)
+      B) \(x \ge 3\)
+      C) \(x \ge -1+2\sqrt{3}\)
+      D) \(x \le -1-2\sqrt{3}\)
+      Correct Answer: C
+      
+      Solution:
+      Domain: \(x+3>0\Rightarrow x>-3\) and \(x-1>0\Rightarrow x>1\). So domain: \(x>1\).
+      Combine logs:
+      \[\log_2((x+3)(x-1))\ge 3.\]
+      Since base \(2>1\), exponentiate:
+      \[(x+3)(x-1)\ge 8.\]
+      Expand and solve:
+      \[x^2+2x-3\ge 8 \Rightarrow x^2+2x-11\ge 0.\]
+      Roots: \(x=\frac{-2\pm\sqrt{48}}{2}=-1\pm 2\sqrt3\).
+      Thus \(x\le -1-2\sqrt3\) or \(x\ge -1+2\sqrt3\).
+      Intersect with \(x>1\) gives \(x\ge -1+2\sqrt3\).
+      
+      Explanation:
+      Use the product rule \(\log_b A+\log_b B=\log_b(AB)\) (valid only when both arguments are positive), then solve the resulting quadratic inequality and apply the domain.
+      
+      Common mistake note:
+      Combining logs without enforcing \(x>1\), which can lead to incorrectly including the left-branch solution \(x\le -1-2\sqrt3\).
+      ------------------------------------------------------------------------------
+      
+      Problem 6 (Q6):
+      Solve the inequality: \(\log_3(x^2-4) \le 1\).
+      A) \(-\sqrt{7} \le x \le \sqrt{7}\)
+      B) \(-\sqrt{7} \le x < -2\) or \(2 < x \le \sqrt{7}\)
+      C) \(x < -\sqrt{7}\) or \(x > \sqrt{7}\)
+      D) \(-2 < x < 2\)
+      Correct Answer: B
+      
+      Solution:
+      Domain: \(x^2-4>0\Rightarrow x^2>4\Rightarrow x<-2\) or \(x>2\).
+      Since base \(3>1\), exponentiate without flipping:
+      \[x^2-4 \le 3^1=3 \Rightarrow x^2 \le 7.\]
+      So \(-\sqrt7 \le x \le \sqrt7\). Intersect with the domain gives
+      \[[-\sqrt7,\sqrt7]\cap\big(( -\infty,-2)\cup(2,\infty)\big)= [-\sqrt7,-2)\cup(2,\sqrt7].\]
+      Thus \(-\sqrt7 \le x < -2\) or \(2 < x \le \sqrt7\).
+      
+      Explanation:
+      Solve the inequality from exponentiating (since the base is >1) and intersect with the necessary domain condition that the log argument is positive.
+      
+      Common mistake note:
+      Including \(x=\pm2\) (argument becomes 0, log undefined) or forgetting to intersect with the domain \(|x|>2\).
+      ------------------------------------------------------------------------------
+      
+      Problem 7 (Q7):
+      Solve the inequality: \(\log_2(x) - \log_2(x-2) \ge 1\).
+      A) \(x \ge 4\)
+      B) \(2 < x \le 4\)
+      C) \(x>2\)
+      D) \(0<x\le 4\)
+      Correct Answer: B
+      
+      Solution:
+      Domain: \(x>0\) and \(x-2>0\Rightarrow x>2\). So domain: \(x>2\).
+      Combine logs:
+      \[\log_2\left(\frac{x}{x-2}\right)\ge 1.\]
+      Since base \(2>1\), exponentiate:
+      \[\frac{x}{x-2} \ge 2.\]
+      On the domain, \(x-2>0\), so multiply both sides by \(x-2\) without flipping:
+      \[x \ge 2(x-2)=2x-4 \Rightarrow x\le 4.\]
+      Intersect with \(x>2\) gives \(2<x\le 4\).
+      
+      Explanation:
+      After combining logs into a single log, exponentiate (base >1) and solve the resulting rational inequality, using the domain to determine the sign of \(x-2\).
+      
+      Common mistake note:
+      Multiplying by \(x-2\) without noting it must be positive (from the domain), or allowing \(x\le 2\) where the expression is undefined.
+      ------------------------------------------------------------------------------

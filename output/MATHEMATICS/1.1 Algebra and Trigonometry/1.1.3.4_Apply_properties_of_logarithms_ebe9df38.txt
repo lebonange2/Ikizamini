@@ -1,0 +1,172 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.3.4 Apply properties of logarithms
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.3 Exponential and Logarithmic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Simplify the expression: \(\log_{2}(8x)\).
+A) \(3+\log_{2}x\)
+B) \(\log_{2}8+\log_{2}x\)
+C) \(\log_{2}(8)+\log_{2}(x)\)
+D) \(\log_{2}(8x)\) cannot be simplified
+Correct Answer: A
+
+Solution:
+Use the product rule: \(\log_b(MN)=\log_b M+\log_b N\).
+
+\(\log_{2}(8x)=\log_{2}8+\log_{2}x\).
+
+Since \(2^3=8\), \(\log_{2}8=3\). Therefore \(\log_{2}(8x)=3+\log_{2}x\).
+
+Explanation:
+Apply the product property to split the log of a product into a sum of logs with the same base, then evaluate \(\log_2 8\) as 3.
+
+Common mistake note:
+Do not change bases within an expression (e.g., mixing \(\log_2\) and \(\log_{10}\)). Also note that choices like \(\log_{2}8+\log_{2}x\) are equivalent to the simplified result, but the simplest form evaluates \(\log_2 8\) to 3.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Expand the expression: \(\log_{5}\left(\frac{x^3}{\sqrt{y}}\right)\).
+A) \(3\log_{5}x-\tfrac{1}{2}\log_{5}y\)
+B) \(\tfrac{3}{2}\log_{5}(xy)\)
+C) \(3\log_{5}x-\log_{5}y\)
+D) \(\log_{5}x-\tfrac{1}{2}\log_{5}(y^3)\)
+Correct Answer: A
+
+Solution:
+Use quotient and power rules:
+
+\(\log_5\left(\frac{x^3}{\sqrt{y}}\right)=\log_5(x^3)-\log_5(y^{1/2})\).
+
+Power rule gives \(\log_5(x^3)=3\log_5 x\) and \(\log_5(y^{1/2})=\tfrac12\log_5 y\).
+
+So the expansion is \(3\log_5 x-\tfrac12\log_5 y\).
+
+Explanation:
+The quotient rule turns division into subtraction, and the power rule brings exponents (including fractional exponents from radicals) down as coefficients.
+
+Common mistake note:
+A frequent error is treating \(\sqrt{y}\) as \(y\) instead of \(y^{1/2}\), which makes the coefficient \(\tfrac12\) disappear.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Condense into a single logarithm: \(2\log_{3}x-\log_{3}y+\tfrac{1}{2}\log_{3}z\).
+A) \(\log_{3}\left(\frac{x^{2}\sqrt{z}}{y}\right)\)
+B) \(\log_{3}\left(\frac{2x-z}{y}\right)\)
+C) \(\log_{3}\left(\frac{x^{2}}{y\sqrt{z}}\right)\)
+D) \(\log_{3}\left(\frac{x^{2}y}{\sqrt{z}}\right)\)
+Correct Answer: A
+
+Solution:
+Use the power rule in reverse:
+
+\(2\log_3 x=\log_3(x^2)\), and \(\tfrac12\log_3 z=\log_3(z^{1/2})\).
+
+So the expression is \(\log_3(x^2)-\log_3(y)+\log_3(z^{1/2})\).
+
+Combine addition: \(\log_3(x^2)+\log_3(z^{1/2})=\log_3(x^2 z^{1/2})\).
+
+Then subtract: \(\log_3(x^2 z^{1/2})-\log_3(y)=\log_3\left(\frac{x^2 z^{1/2}}{y}\right)=\log_3\left(\frac{x^2\sqrt{z}}{y}\right)\).
+
+Explanation:
+Coefficients become exponents (power rule). Adding logs corresponds to multiplying arguments; subtracting logs corresponds to dividing arguments (all with the same base).
+
+Common mistake note:
+Only the subtracted term \(\log_3 y\) goes to the denominator. The \(\tfrac12\log_3 z\) term is added, so \(\sqrt{z}\) stays in the numerator.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Solve for \(x\): \(\log_{7}(x-2)=2\).
+A) \(x=9\)
+B) \(x=49\)
+C) \(x=51\)
+D) \(x=5\)
+Correct Answer: C
+
+Solution:
+Convert to exponential form:
+
+\(\log_7(x-2)=2\Rightarrow x-2=7^2=49\).
+
+Thus \(x=51\).
+
+Explanation:
+By definition, \(\log_b(A)=c\iff b^c=A\). Here the log argument is \(x-2\), so solve \(x-2=49\) and then add 2.
+
+Common mistake note:
+A common mistake is answering \(x=49\) by forgetting that the argument is \(x-2\), not \(x\).
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Evaluate: \(\log_{4}(\tfrac{1}{8})\).
+A) \(-\tfrac{3}{2}\)
+B) \(-3\)
+C) \(\tfrac{3}{2}\)
+D) \(\tfrac{1}{2}\)
+Correct Answer: A
+
+Solution:
+Rewrite base and argument as powers of 2:
+
+\(4=2^2\), \(\tfrac18=2^{-3}\).
+
+Let \(\log_4(1/8)=k\). Then \(4^k=1/8\Rightarrow (2^2)^k=2^{-3}\Rightarrow 2^{2k}=2^{-3}\).
+
+So \(2k=-3\Rightarrow k=-\tfrac32\).
+
+Explanation:
+Use \(\log_b(a)=k\iff b^k=a\), then express both sides with a common base and equate exponents.
+
+Common mistake note:
+Do not assume \(1/8=4^{-3}\). In fact \(4^{-3}=1/64\), so that leads to an incorrect value.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Simplify: \(\log_{10}(1000)-\log_{10}(0.1)\).
+A) \(2\)
+B) \(3\)
+C) \(4\)
+D) \(\tfrac{3}{10}\)
+Correct Answer: C
+
+Solution:
+\(\log_{10}(1000)=3\) because \(10^3=1000\).
+
+\(\log_{10}(0.1)=\log_{10}(10^{-1})=-1\).
+
+So \(3-(-1)=4\).
+
+Explanation:
+Base-10 logs of powers of 10 evaluate to their exponents, and subtracting a negative adds.
+
+Common mistake note:
+Remember \(0.1=10^{-1}\), so its logarithm is \(-1\), not \(1\).
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Solve for \(x\): \(\log_{2}x+\log_{2}(x-2)=3\).
+A) \(x=1\)
+B) \(x=2\)
+C) \(x=-2\)
+D) \(x=4\)
+Correct Answer: D
+
+Solution:
+Domain: need \(x>0\) and \(x-2>0\Rightarrow x>2\).
+
+Combine logs: \(\log_2 x+\log_2(x-2)=\log_2(x(x-2))=3\).
+
+Convert to exponential form: \(x(x-2)=2^3=8\).
+
+So \(x^2-2x-8=0\Rightarrow (x-4)(x+2)=0\).
+
+Thus \(x=4\) or \(x=-2\). Apply domain \(x>2\): keep \(x=4\).
+
+Explanation:
+Use the product property to combine the two logs into one, convert to an exponential equation, solve the resulting quadratic, then check solutions against the log domain restrictions.
+
+Common mistake note:
+It’s not enough to solve the quadratic; you must also enforce \(x>2\) so that both \(x\) and \(x-2\) are positive. This eliminates \(x=-2\).
+------------------------------------------------------------------------------

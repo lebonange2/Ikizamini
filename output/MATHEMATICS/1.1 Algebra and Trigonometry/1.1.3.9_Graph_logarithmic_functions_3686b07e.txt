@@ -1,0 +1,134 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.3.9 Graph logarithmic functions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.3 Exponential and Logarithmic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Which statement correctly describes the graph of \(y=\log_2(x)\)?
+A) Vertical asymptote at \(x=0\); passes through \((1,0)\); increasing for \(x>0\).
+B) Horizontal asymptote at \(y=0\); passes through \((0,1)\); increasing for all real \(x\).
+C) Vertical asymptote at \(x=1\); passes through \((0,0)\); decreasing for \(x>0\).
+D) Horizontal asymptote at \(y=1\); passes through \((2,0)\); decreasing for \(x>0\).
+Correct Answer: A
+
+Solution:
+For \(y=\log_2(x)\): the domain is \(x>0\), so there is a vertical asymptote at \(x=0\). Also \(\log_2(1)=0\), so it passes through \((1,0)\). Since the base \(2>1\), the function is increasing on \((0,\infty)\).
+
+Explanation:
+A basic logarithm \(y=\log_b(x)\) has vertical asymptote \(x=0\), x-intercept at \((1,0)\), and is increasing when \(b>1\) (decreasing when \(0<b<1\)).
+
+Common mistake note:
+Mixing up logarithms with exponentials: choosing a horizontal asymptote at \(y=0\) (that’s typical for \(b^x\), not \(\log_b x\)).
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Consider \(f(x)=\ln(x-3)+2\). Which option gives the vertical asymptote and the domain?
+A) Asymptote: \(x=3\); Domain: \((3,\infty)\).
+B) Asymptote: \(y=2\); Domain: \(( -\infty,\infty)\).
+C) Asymptote: \(x=-3\); Domain: \((-3,\infty)\).
+D) Asymptote: \(x=0\); Domain: \((0,\infty)\).
+Correct Answer: A
+
+Solution:
+Require the log argument to be positive: \(x-3>0\Rightarrow x>3\). So the domain is \((3,\infty)\). The vertical asymptote occurs where the argument is 0: \(x-3=0\Rightarrow x=3\).
+
+Explanation:
+For \(\ln(x-h)+k\), shifting right by \(h\) moves the vertical asymptote from \(x=0\) to \(x=h\), and the domain becomes \((h,\infty)\). The \(+2\) shifts the graph up but does not create a horizontal asymptote.
+
+Common mistake note:
+Confusing the vertical shift \(+2\) with an asymptote location. Logarithmic graphs have vertical asymptotes where the argument is 0, not horizontal asymptotes.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Which point lies on the graph of \(y=\log_3(x)+1\)?
+A) \((3,2)\)
+B) \((1,2)\)
+C) \((0,1)\)
+D) \((9,1)\)
+Correct Answer: A
+
+Solution:
+Test \((3,2)\): \(y=\log_3(3)+1=1+1=2\), which matches the given y-value. So \((3,2)\) lies on the graph.
+
+Explanation:
+To check a point \((x,y)\), substitute into the function. Here, adding 1 shifts the basic \(\log_3(x)\) graph up by 1, so points like \((3,1)\) become \((3,2)\).
+
+Common mistake note:
+Forgetting the +1 vertical shift and choosing outputs as if \(y=\log_3(x)\) (e.g., thinking \(\log_3(3)=1\) is the final y-value).
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Which transformation describes the change from \(y=\log_{10}(x)\) to \(y=\log_{10}(x+5)\)?
+A) Shift left 5 units.
+B) Shift right 5 units.
+C) Shift up 5 units.
+D) Shift down 5 units.
+Correct Answer: A
+
+Solution:
+Replacing \(x\) by \(x+5\) shifts the graph left by 5 units. Therefore the correct transformation is a left shift of 5 units.
+
+Explanation:
+In general, \(f(x+c)\) shifts the graph of \(f\) left by \(c\). Thus \(\log_{10}(x+5)\) moves the vertical asymptote from \(x=0\) to \(x=-5\).
+
+Common mistake note:
+Reversing the direction of horizontal shifts: many mistakenly say “right 5” because they see +5, but inside-the-function shifts go opposite the sign.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+For \(g(x)=-\log_2(x)\), which description is correct?
+A) Vertical reflection of \(y=\log_2(x)\); decreasing on \((0,\infty)\).
+B) Horizontal reflection of \(y=\log_2(x)\); increasing on \((0,\infty)\).
+C) Shift of \(y=\log_2(x)\) up by 2; increasing on \((0,\infty)\).
+D) Shift of \(y=\log_2(x)\) right by 2; decreasing on \((0,\infty)\).
+Correct Answer: A
+
+Solution:
+Multiplying a function by \(-1\) reflects its graph across the x-axis. Since \(\log_2(x)\) is increasing on \((0,\infty)\), \(-\log_2(x)\) is decreasing on \((0,\infty)\).
+
+Explanation:
+A negative sign in front of a function, \(-f(x)\), is a vertical reflection. For logarithms with base \(>1\), the original is increasing; the reflection becomes decreasing while keeping the same domain and asymptote at \(x=0\).
+
+Common mistake note:
+Confusing vertical vs. horizontal reflection: reflection across the y-axis would be \(f(-x)\), not \(-f(x)\).
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Find the x-intercept of \(y=\log_5(x-4)\).
+A) \((5,0)\)
+B) \((4,0)\)
+C) \((9,0)\)
+D) \((0,9)\)
+Correct Answer: A
+
+Solution:
+Set \(y=0\): \(0=\log_5(x-4)\Rightarrow x-4=5^0=1\Rightarrow x=5\). Therefore the x-intercept is \((5,0)\).
+
+Explanation:
+The x-intercept occurs where \(y=0\). For any base \(b\), \(\log_b(1)=0\). So set the inside equal to 1: \(x-4=1\Rightarrow x=5\), giving \((5,0)\).
+
+Common mistake note:
+Setting the log argument to 0 (which finds the vertical asymptote \(x=4\)) instead of setting the function value to 0.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+A logarithmic function has the form \(y=\log_3(x+2)-1\). Which option correctly gives (i) the vertical asymptote, (ii) the point obtained from the parent point \((1,0)\) after transformations, and (iii) whether the function is increasing or decreasing?
+A) (i) \(x=-2\); (ii) \((-1,-1)\); (iii) increasing.
+B) (i) \(x=2\); (ii) \((3,-1)\); (iii) increasing.
+C) (i) \(x=-2\); (ii) \((1,-1)\); (iii) decreasing.
+D) (i) \(x=0\); (ii) \((-1,1)\); (iii) decreasing.
+Correct Answer: A
+
+Solution:
+(i) The vertical asymptote occurs when the log argument is 0: \(x+2=0\Rightarrow x=-2\).
+(ii) Start from the parent point \((1,0)\) on \(y=\log_3(x)\). The \(x+2\) shifts left 2: \((1,0)\to(-1,0)\). Then \(-1\) shifts down 1: \((-1,0)\to(-1,-1)\).
+(iii) Since base \(3>1\), the function is increasing.
+
+Explanation:
+Horizontal shifts change x-values and move the vertical asymptote; vertical shifts change y-values. The monotonicity of \(\log_b(x)\) depends on the base: increasing for \(b>1\), decreasing for \(0<b<1\).
+
+Common mistake note:
+Applying the +2 shift as a right shift instead of left, which would incorrectly place the asymptote at \(x=2\) and move points in the wrong direction.
+------------------------------------------------------------------------------
