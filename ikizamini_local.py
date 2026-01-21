@@ -131,6 +131,9 @@ def ollama_chat(base_url: str, model: str, system: str, user: str,
         "model": model,
         "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
         "stream": False,
+        # Ask Ollama to return strict JSON when possible. (Some models still add prose;
+        # we defensively parse/repair below.)
+        "format": "json",
         "options": {"temperature": temperature, "num_ctx": num_ctx},
     }
     r = requests.post(url, json=payload, timeout=timeout_s)
@@ -140,8 +143,14 @@ def ollama_chat(base_url: str, model: str, system: str, user: str,
 
 JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.DOTALL)
 
-def extract_json_object(text: str) -> Dict[str, Any]:
-    """Extract JSON object from text, handling various formats and extra data."""
+def extract_json_value(text: str) -> Any:
+    """Extract the first JSON value (object or array) from model output.
+
+    Handles:
+    - ```json fenced blocks
+    - extra text before/after JSON
+    - the model returning a list of questions instead of the full object
+    """
     # First try to find JSON in code fences
     m = JSON_FENCE_RE.search(text)
     if m:
@@ -149,48 +158,118 @@ def extract_json_object(text: str) -> Dict[str, Any]:
             return json.loads(m.group(1))
         except json.JSONDecodeError:
             pass
-    
-    # Try to find the first complete JSON object by finding matching braces
-    # Start from the first '{' and find the matching '}'
-    start_idx = text.find('{')
-    if start_idx == -1:
-        raise ValueError("No JSON object found in model output (no opening brace).")
-    
-    # Find the matching closing brace by counting braces
-    brace_count = 0
-    end_idx = start_idx
-    for i in range(start_idx, len(text)):
-        if text[i] == '{':
-            brace_count += 1
-        elif text[i] == '}':
-            brace_count -= 1
-            if brace_count == 0:
-                end_idx = i + 1
-                break
-    
-    if brace_count != 0:
-        raise ValueError("No complete JSON object found (unmatched braces).")
-    
-    # Extract the JSON substring
-    json_str = text[start_idx:end_idx]
-    
-    # Try to parse it
-    try:
-        return json.loads(json_str)
-    except json.JSONDecodeError as e:
-        # If parsing fails, try to clean up common issues
-        # Remove any trailing commas before closing braces/brackets
-        cleaned = re.sub(r',(\s*[}\]])', r'\1', json_str)
+
+    decoder = json.JSONDecoder()
+    # Find the first plausible JSON start and raw-decode from there.
+    for i, ch in enumerate(text):
+        if ch not in "{[":
+            continue
         try:
-            return json.loads(cleaned)
+            val, _end = decoder.raw_decode(text[i:])
+            return val
         except json.JSONDecodeError:
-            # Log the problematic JSON for debugging
-            log_progress(f"JSON extraction failed. First 500 chars: {json_str[:500]}")
-            raise ValueError(f"Failed to parse JSON object: {e}")
+            continue
+
+    raise ValueError("No JSON value found in model output.")
+
+
+def _normalize_choice_letter(x: Any) -> str:
+    s = str(x or "").strip().upper()
+    if s in {"A", "B", "C", "D"}:
+        return s
+    # Sometimes returns "Answer: A" or similar
+    m = re.search(r"\b([ABCD])\b", s)
+    return (m.group(1) if m else "A")
+
+
+def coerce_ikizamini(value: Any, objective_id: str, objective_text: str) -> Dict[str, Any]:
+    """Coerce common Ollama/Qwen output formats into the strict IKIZAMINI schema."""
+    # If already looks like the correct shape, just enforce objective fields.
+    if isinstance(value, dict) and isinstance(value.get("questions"), list):
+        out = dict(value)
+        out["objective_id"] = objective_id
+        out["objective_text"] = objective_text
+        out["difficulty_profile"] = out.get("difficulty_profile", "mixed") or "mixed"
+        return out
+
+    # Many models return a bare list of question objects.
+    questions_in: Any = value
+    if isinstance(value, dict):
+        # Some variants may wrap the questions under another key
+        for k in ("questions", "items", "data", "revised_questions"):
+            if isinstance(value.get(k), list):
+                questions_in = value[k]
+                break
+
+    if not isinstance(questions_in, list):
+        raise ValueError("Model output was not an object with questions nor a list of questions.")
+
+    if len(questions_in) < 7:
+        raise ValueError(f"Expected at least 7 questions; got {len(questions_in)}.")
+
+    questions_out: List[Dict[str, Any]] = []
+    for idx, q in enumerate(questions_in[:7], start=1):
+        if not isinstance(q, dict):
+            raise ValueError(f"Question {idx} is not an object.")
+
+        stem = (q.get("stem") or q.get("question") or q.get("prompt") or "").strip()
+
+        # Choices: can be dict with A-D OR list of 4 strings.
+        ch_raw = (
+            q.get("choices")
+            or q.get("answer choices")
+            or q.get("answer_choices")
+            or q.get("answers")
+            or q.get("options")
+        )
+        choices: Dict[str, str] = {"A": "", "B": "", "C": "", "D": ""}
+        if isinstance(ch_raw, dict):
+            for k in ["A", "B", "C", "D"]:
+                choices[k] = str(ch_raw.get(k, "")).strip()
+        elif isinstance(ch_raw, list) and len(ch_raw) >= 4:
+            choices["A"] = str(ch_raw[0]).strip()
+            choices["B"] = str(ch_raw[1]).strip()
+            choices["C"] = str(ch_raw[2]).strip()
+            choices["D"] = str(ch_raw[3]).strip()
+
+        correct_choice = _normalize_choice_letter(
+            q.get("correct_choice")
+            or q.get("correct answer")
+            or q.get("correct_answer")
+            or q.get("correctAnswer")
+        )
+        solution = str(q.get("solution") or q.get("worked_solution") or q.get("worked solution") or "").strip()
+        explanation = str(q.get("explanation") or q.get("rationale") or "").strip()
+        common_mistake_notes = str(
+            q.get("common_mistake_notes")
+            or q.get("common mistake notes")
+            or q.get("common_mistake")
+            or ""
+        ).strip()
+
+        questions_out.append(
+            {
+                "id": str(q.get("id") or f"Q{idx}").strip(),
+                "stem": stem,
+                "choices": choices,
+                "correct_choice": correct_choice,
+                "solution": solution,
+                "explanation": explanation,
+                "common_mistake_notes": common_mistake_notes,
+            }
+        )
+
+    return {
+        "objective_id": objective_id,
+        "objective_text": objective_text,
+        "difficulty_profile": "mixed",
+        "questions": questions_out,
+    }
 
 def call_ollama_json(base_url: str, model: str, system: str, user: str,
                      validate_fn, temperature: float = 0.2, num_ctx: int = 8192,
-                     timeout_s: int = 180, max_retries: int = 4) -> Dict[str, Any]:
+                     timeout_s: int = 180, max_retries: int = 4,
+                     coerce_fn=None) -> Dict[str, Any]:
     last_err: Optional[Exception] = None
     for attempt in range(max_retries):
         try:
@@ -198,9 +277,11 @@ def call_ollama_json(base_url: str, model: str, system: str, user: str,
             # Log raw response for debugging (first 500 chars)
             if attempt > 0:
                 log_progress(f"  Retry {attempt + 1}/{max_retries}: Raw response preview: {raw[:500]}...")
-            obj = extract_json_object(raw)
-            validate_fn(obj)
-            return obj
+            val = extract_json_value(raw)
+            if coerce_fn is not None:
+                val = coerce_fn(val)
+            validate_fn(val)
+            return val
         except Exception as e:
             last_err = e
             if attempt < max_retries - 1:
@@ -342,8 +423,34 @@ def worker_generate(base_url: str, model: str, objective_id: str, objective_text
 - text: {objective_text}
 
 Generate 7 exam questions that directly assess this objective.
-Return ONLY a JSON object (no markdown)."""
-    return call_ollama_json(base_url, model, WORKER_SYSTEM, user, validate_ikizamini, temperature=0.25, num_ctx=num_ctx)
+Return ONLY JSON matching this shape exactly:
+{{
+  "objective_id": "{objective_id}",
+  "objective_text": "{objective_text}",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {{
+      "id": "Q1",
+      "stem": "...",
+      "choices": {{"A":"...","B":"...","C":"...","D":"..."}},
+      "correct_choice": "A",
+      "solution": "...",
+      "explanation": "...",
+      "common_mistake_notes": "..."
+    }}
+  ]
+}}
+No extra keys. No markdown."""
+    return call_ollama_json(
+        base_url,
+        model,
+        WORKER_SYSTEM,
+        user,
+        validate_ikizamini,
+        temperature=0.25,
+        num_ctx=num_ctx,
+        coerce_fn=lambda v: coerce_ikizamini(v, objective_id, objective_text),
+    )
 
 def worker_repair(base_url: str, model: str, objective_id: str, objective_text: str,
                   candidate: Dict[str, Any], issues: List[str], num_ctx: int) -> Dict[str, Any]:
@@ -358,7 +465,16 @@ Current JSON:
 {json.dumps(candidate, ensure_ascii=False)}
 
 Return ONLY a corrected JSON object (no markdown)."""
-    return call_ollama_json(base_url, model, WORKER_REPAIR_SYSTEM, user, validate_ikizamini, temperature=0.2, num_ctx=num_ctx)
+    return call_ollama_json(
+        base_url,
+        model,
+        WORKER_REPAIR_SYSTEM,
+        user,
+        validate_ikizamini,
+        temperature=0.2,
+        num_ctx=num_ctx,
+        coerce_fn=lambda v: coerce_ikizamini(v, objective_id, objective_text),
+    )
 
 def manager_review(base_url: str, model: str, objective_id: str, objective_text: str,
                    candidate: Dict[str, Any], num_ctx: int) -> Dict[str, Any]:
