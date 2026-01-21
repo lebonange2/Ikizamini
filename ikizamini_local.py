@@ -495,12 +495,12 @@ PAGE = """
 
     <div class="row">
       <label>Worker model</label>
-      <input type="text" name="worker_model" value="llama3.1:8b" />
+      <input type="text" name="worker_model" value="qwen:32b" />
     </div>
 
     <div class="row">
       <label>Manager model</label>
-      <input type="text" name="manager_model" value="llama3.1:8b" />
+      <input type="text" name="manager_model" value="qwen:32b" />
     </div>
 
     <div class="row">
@@ -565,8 +565,8 @@ def generate():
     content = up.read().decode("utf-8", errors="replace")
 
     ollama_url = request.form.get("ollama_url", "http://localhost:11434").strip()
-    worker_model = request.form.get("worker_model", "llama3.1:8b").strip()
-    manager_model = request.form.get("manager_model", "llama3.1:8b").strip()
+    worker_model = request.form.get("worker_model", "qwen:32b").strip()
+    manager_model = request.form.get("manager_model", "qwen:32b").strip()
     max_rounds = int(request.form.get("max_rounds", "6"))
     num_ctx = int(request.form.get("num_ctx", "8192"))
     limit = int(request.form.get("limit", "0"))
@@ -699,5 +699,9 @@ def download_zip(job_id: str):
     )
 
 if __name__ == "__main__":
-    # Flask dev server for local use
-    app.run(host="127.0.0.1", port=5000, debug=False)
+    # Flask dev server
+    # For Runpod: use 0.0.0.0 and port 8000 (or from RUNPOD_PORT env var)
+    # For local: use 127.0.0.1 and port 5000
+    host = os.environ.get("FLASK_HOST", "0.0.0.0")
+    port = int(os.environ.get("RUNPOD_PORT", os.environ.get("FLASK_PORT", "8000")))
+    app.run(host=host, port=port, debug=False)

@@ -357,6 +357,80 @@ verify_installation() {
     fi
 }
 
+# Start the UI application
+start_ui() {
+    echo ""
+    echo "Step 7: Starting IKIZAMINI UI..."
+    
+    # Get the script directory
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+    cd "$SCRIPT_DIR" || exit 1
+    
+    # Ensure Ollama is running
+    if ! pgrep -x "ollama" > /dev/null; then
+        print_info "Starting Ollama service..."
+        ollama serve > /dev/null 2>&1 &
+        sleep 3
+        
+        # Wait for Ollama to be ready
+        for i in {1..15}; do
+            if curl -s http://localhost:11434/api/tags > /dev/null 2>&1; then
+                print_success "Ollama service is running"
+                break
+            fi
+            if [ $i -eq 15 ]; then
+                print_error "Ollama service failed to start. Please start it manually: ollama serve"
+                exit 1
+            fi
+            sleep 1
+        done
+    else
+        # Verify Ollama is responding
+        if ! curl -s http://localhost:11434/api/tags > /dev/null 2>&1; then
+            print_info "Ollama process found but not responding. Restarting..."
+            pkill -x ollama 2>/dev/null || true
+            sleep 2
+            ollama serve > /dev/null 2>&1 &
+            sleep 3
+            for i in {1..10}; do
+                if curl -s http://localhost:11434/api/tags > /dev/null 2>&1; then
+                    print_success "Ollama service is running"
+                    break
+                fi
+                sleep 1
+            done
+        fi
+    fi
+    
+    # Get the qwen model that was installed
+    QWEN_MODEL=$(ollama list 2>/dev/null | grep -E "qwen.*:32b|qwen.*:30b|qwen2" | head -n1 | awk '{print $1}' || echo "qwen:32b")
+    
+    # Activate virtual environment
+    if [ -d "venv" ]; then
+        source venv/bin/activate
+    else
+        print_error "Virtual environment not found. Please run setup again."
+        exit 1
+    fi
+    
+    # Get port from environment or use default
+    PORT=${RUNPOD_PORT:-8000}
+    
+    print_info "Starting IKIZAMINI UI on port $PORT..."
+    print_info "Default model: $QWEN_MODEL (update in UI if different)"
+    print_info ""
+    print_success "UI will be available at: http://0.0.0.0:$PORT"
+    print_info "For Runpod, use the provided public URL"
+    print_info ""
+    print_info "Press Ctrl+C to stop the server"
+    echo ""
+    
+    # Start the Flask app (this will run in foreground)
+    export RUNPOD_PORT=$PORT
+    export FLASK_HOST="0.0.0.0"
+    python3 ikizamini_local.py
+}
+
 # Main execution
 main() {
     check_root
@@ -372,18 +446,9 @@ main() {
     echo -e "${GREEN}Setup completed successfully!${NC}"
     echo "=========================================="
     echo ""
-    echo "To use the application:"
-    echo "  1. Activate the virtual environment:"
-    echo "     source venv/bin/activate"
-    echo ""
-    echo "  2. Run the local UI:"
-    echo "     python3 ikizamini_local.py"
-    echo ""
-    echo "  3. Or run the CLI version:"
-    echo "     python3 ikizamini_app.py --input Uru.txt --output ikizamini.txt --output-dir \"output/MATHEMATICS/1.1 Algebra and Trigonometry\""
-    echo ""
-    echo "Note: Make sure Ollama is running (ollama serve) before using the application."
-    echo ""
+    
+    # Automatically start the UI
+    start_ui
 }
 
 # Run main function
