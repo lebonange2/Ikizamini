@@ -139,16 +139,54 @@ def ollama_chat(base_url: str, model: str, system: str, user: str,
     return (data.get("message", {}) or {}).get("content", "").strip()
 
 JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.DOTALL)
-JSON_OBJECT_RE = re.compile(r"(\{.*\})", re.DOTALL)
 
 def extract_json_object(text: str) -> Dict[str, Any]:
+    """Extract JSON object from text, handling various formats and extra data."""
+    # First try to find JSON in code fences
     m = JSON_FENCE_RE.search(text)
     if m:
-        return json.loads(m.group(1))
-    m2 = JSON_OBJECT_RE.search(text)
-    if m2:
-        return json.loads(m2.group(1))
-    raise ValueError("No JSON object found in model output.")
+        try:
+            return json.loads(m.group(1))
+        except json.JSONDecodeError:
+            pass
+    
+    # Try to find the first complete JSON object by finding matching braces
+    # Start from the first '{' and find the matching '}'
+    start_idx = text.find('{')
+    if start_idx == -1:
+        raise ValueError("No JSON object found in model output (no opening brace).")
+    
+    # Find the matching closing brace by counting braces
+    brace_count = 0
+    end_idx = start_idx
+    for i in range(start_idx, len(text)):
+        if text[i] == '{':
+            brace_count += 1
+        elif text[i] == '}':
+            brace_count -= 1
+            if brace_count == 0:
+                end_idx = i + 1
+                break
+    
+    if brace_count != 0:
+        raise ValueError("No complete JSON object found (unmatched braces).")
+    
+    # Extract the JSON substring
+    json_str = text[start_idx:end_idx]
+    
+    # Try to parse it
+    try:
+        return json.loads(json_str)
+    except json.JSONDecodeError as e:
+        # If parsing fails, try to clean up common issues
+        # Remove any trailing commas before closing braces/brackets
+        cleaned = re.sub(r',(\s*[}\]])', r'\1', json_str)
+        try:
+            return json.loads(cleaned)
+        except json.JSONDecodeError:
+            # Log the problematic JSON for debugging
+            log_progress(f"JSON extraction failed. First 500 chars: {json_str[:500]}")
+            raise ValueError(f"Failed to parse JSON object: {e}")
 
 def call_ollama_json(base_url: str, model: str, system: str, user: str,
                      validate_fn, temperature: float = 0.2, num_ctx: int = 8192,
@@ -157,11 +195,16 @@ def call_ollama_json(base_url: str, model: str, system: str, user: str,
     for attempt in range(max_retries):
         try:
             raw = ollama_chat(base_url, model, system, user, temperature, num_ctx, timeout_s)
+            # Log raw response for debugging (first 500 chars)
+            if attempt > 0:
+                log_progress(f"  Retry {attempt + 1}/{max_retries}: Raw response preview: {raw[:500]}...")
             obj = extract_json_object(raw)
             validate_fn(obj)
             return obj
         except Exception as e:
             last_err = e
+            if attempt < max_retries - 1:
+                log_progress(f"  Attempt {attempt + 1} failed: {str(e)[:200]}")
             backoff_sleep(attempt)
     raise RuntimeError(f"Ollama call failed after retries. Last error: {last_err}")
 
