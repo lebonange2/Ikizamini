@@ -95,17 +95,62 @@ install_zstd() {
         print_info "Installing zstd..."
         detect_package_manager
         
+        # Update package lists for apt-based systems
+        if [ "$PKG_MANAGER" = "apt-get" ]; then
+            print_info "Updating package lists..."
+            if [ -n "$SUDO_CMD" ]; then
+                $SUDO_CMD apt-get update -qq
+            else
+                apt-get update -qq
+            fi
+        elif [ "$PKG_MANAGER" = "yum" ] || [ "$PKG_MANAGER" = "dnf" ]; then
+            print_info "Updating package lists..."
+            if [ -n "$SUDO_CMD" ]; then
+                $SUDO_CMD $PKG_MANAGER check-update -q || true
+            else
+                $PKG_MANAGER check-update -q || true
+            fi
+        fi
+        
+        # Try to install zstd with different package names
         if [ "$PKG_MANAGER" = "brew" ]; then
             $INSTALL_CMD zstd
-        else
-            $INSTALL_CMD zstd libzstd-dev 2>/dev/null || $INSTALL_CMD zstd zstd-devel 2>/dev/null || $INSTALL_CMD zstd
+        elif [ "$PKG_MANAGER" = "apt-get" ]; then
+            # Try different package names for Debian/Ubuntu
+            if [ -n "$SUDO_CMD" ]; then
+                $SUDO_CMD apt-get install -y zstd 2>/dev/null || \
+                $SUDO_CMD apt-get install -y libzstd1 2>/dev/null || \
+                $SUDO_CMD apt-get install -y libzstd-dev 2>/dev/null || {
+                    print_error "Failed to install zstd. Trying alternative methods..."
+                    # Try installing from source or skip if not critical
+                    print_info "zstd may not be available in this repository. You can install it manually or continue without it."
+                    print_info "To install manually: apt-get install -y zstd"
+                }
+            else
+                apt-get install -y zstd 2>/dev/null || \
+                apt-get install -y libzstd1 2>/dev/null || \
+                apt-get install -y libzstd-dev 2>/dev/null || {
+                    print_error "Failed to install zstd. Trying alternative methods..."
+                    print_info "zstd may not be available in this repository. You can install it manually or continue without it."
+                    print_info "To install manually: apt-get install -y zstd"
+                }
+            fi
+        elif [ "$PKG_MANAGER" = "yum" ] || [ "$PKG_MANAGER" = "dnf" ]; then
+            $INSTALL_CMD zstd 2>/dev/null || $INSTALL_CMD zstd-devel 2>/dev/null || {
+                print_error "Failed to install zstd. You may need to install it manually."
+            }
+        elif [ "$PKG_MANAGER" = "pacman" ]; then
+            $INSTALL_CMD zstd 2>/dev/null || {
+                print_error "Failed to install zstd. You may need to install it manually."
+            }
         fi
         
         if command -v zstd &> /dev/null; then
             print_success "zstd installed successfully: $(zstd --version | head -n1)"
         else
-            print_error "Failed to install zstd. Please install it manually."
-            exit 1
+            print_error "zstd installation failed. The application may still work, but zstd features will be unavailable."
+            print_info "Continuing setup without zstd. You can install it manually later if needed."
+            print_info "To install manually: apt-get install -y zstd (or your package manager equivalent)"
         fi
     fi
 }
