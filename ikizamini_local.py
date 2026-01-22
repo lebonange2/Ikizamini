@@ -1655,14 +1655,14 @@ pre{
 }
 """
 
-PAGE_HOME = f"""
+PAGE_HOME = """
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>IKIZAMINI · Durable Ollama UI</title>
-  <style>{UI_BASE_CSS}</style>
+  <style>{{ ui_css }}</style>
 </head>
 <body>
 <div class="container">
@@ -1676,8 +1676,8 @@ PAGE_HOME = f"""
         </div>
       </div>
       <div class="pills">
-        <div class="pill">DB: <span style="font-family:var(--mono)">{DB_PATH}</span></div>
-        <div class="pill">Data: <span style="font-family:var(--mono)">{DATA_DIR}</span></div>
+        <div class="pill">DB: <span style="font-family:var(--mono)">{{ db_path }}</span></div>
+        <div class="pill">Data: <span style="font-family:var(--mono)">{{ data_dir }}</span></div>
       </div>
     </div>
 
@@ -1783,7 +1783,7 @@ PAGE_HOME = f"""
           {% endif %}
           <div class="hr"></div>
           <div class="small">
-            Files are stored under <span style="font-family:var(--mono)">{os.path.abspath(DATA_DIR)}</span>.
+            Files are stored under <span style="font-family:var(--mono)">{{ abs_data_dir }}</span>.
           </div>
         </div>
       </div>
@@ -1795,14 +1795,15 @@ PAGE_HOME = f"""
 </html>
 """
 
-PAGE_JOB = f"""
+
+PAGE_JOB = """
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>IKIZAMINI · Job {{ job_id }}</title>
-  <style>{UI_BASE_CSS}</style>
+  <style>{{ ui_css }}</style>
 </head>
 <body>
 <div class="container">
@@ -1815,8 +1816,8 @@ PAGE_JOB = f"""
         </div>
       </div>
       <div class="pills">
-        <div class="pill">DB: <span style="font-family:var(--mono)">{DB_PATH}</span></div>
-        <div class="pill">Data: <span style="font-family:var(--mono)">{DATA_DIR}</span></div>
+        <div class="pill">DB: <span style="font-family:var(--mono)">{{ db_path }}</span></div>
+        <div class="pill">Data: <span style="font-family:var(--mono)">{{ data_dir }}</span></div>
       </div>
     </div>
 
@@ -1889,67 +1890,40 @@ PAGE_JOB = f"""
 <script>
   const jobId = "{{ job_id }}";
 
-  function setStatusClass(el, status) {{
-    el.className = "v";
-    el.style.borderColor = "rgba(255,255,255,.12)";
-    el.style.background = "rgba(0,0,0,.18)";
-    if (status === "running") {{
-      el.style.borderColor = "rgba(55,209,255,.35)";
-      el.style.background = "rgba(55,209,255,.08)";
-    }} else if (status === "done") {{
-      el.style.borderColor = "rgba(55,214,122,.35)";
-      el.style.background = "rgba(55,214,122,.08)";
-    }} else if (status === "error") {{
-      el.style.borderColor = "rgba(255,92,119,.35)";
-      el.style.background = "rgba(255,92,119,.08)";
-    }} else if (status === "queued" || status === "interrupted") {{
-      el.style.borderColor = "rgba(255,204,102,.35)";
-      el.style.background = "rgba(255,204,102,.08)";
-    }}
-  }}
-
-  async function poll() {{
-    try {{
-      const res = await fetch(`/api/job/${{jobId}}`, {{ cache: "no-store" }});
-      if (!res.ok) {{
-        document.getElementById("status").textContent = "error";
-        return;
-      }}
+  async function poll() {
+    try {
+      const res = await fetch(`/api/job/${jobId}`, { cache: "no-store" });
+      if (!res.ok) return setTimeout(poll, 4000);
       const data = await res.json();
 
-      const statusEl = document.getElementById("status");
-      statusEl.textContent = data.status;
-      setStatusClass(statusEl, data.status);
-
-      const progressText = `${{data.completed}}/${{data.requested}}`;
-      document.getElementById("progress").textContent = progressText;
+      document.getElementById("status").textContent = data.status;
+      document.getElementById("progress").textContent = `${data.completed}/${data.requested}`;
       document.getElementById("heartbeat").textContent = data.heartbeat_unix || "-";
 
       const pct = (data.requested > 0) ? Math.min(100, Math.floor((data.completed / data.requested) * 100)) : 0;
       document.getElementById("pbar").style.width = pct + "%";
 
-      const failures = (data.failures && data.failures.length) ? data.failures.join("\\n") : "(none)";
-      document.getElementById("failures").textContent = failures;
+      document.getElementById("failures").textContent =
+        (data.failures && data.failures.length) ? data.failures.join("\\n") : "(none)";
 
-      document.getElementById("logs").textContent = (data.logs_tail && data.logs_tail.length)
-        ? data.logs_tail.join("\\n")
-        : "(no logs yet)";
+      document.getElementById("logs").textContent =
+        (data.logs_tail && data.logs_tail.length) ? data.logs_tail.join("\\n") : "(no logs yet)";
 
-      document.getElementById("objectives").textContent = (data.objectives_preview && data.objectives_preview.length)
-        ? data.objectives_preview.join("\\n")
-        : "(no objectives yet)";
+      document.getElementById("objectives").textContent =
+        (data.objectives_preview && data.objectives_preview.length) ? data.objectives_preview.join("\\n") : "(no objectives yet)";
 
       setTimeout(poll, 2000);
-    }} catch (e) {{
+    } catch (e) {
       setTimeout(poll, 4000);
-    }}
-  }}
+    }
+  }
 
   poll();
 </script>
 </body>
 </html>
 """
+
 
 
 # =============================================================================
@@ -1963,7 +1937,15 @@ def home():
     cur.execute("SELECT job_id, status, requested, completed, created_at_unix FROM jobs ORDER BY created_at_unix DESC LIMIT 50")
     jobs = cur.fetchall()
     conn.close()
-    return render_template_string(PAGE_HOME, jobs=jobs)
+
+    return render_template_string(
+        PAGE_HOME,
+        jobs=jobs,
+        ui_css=UI_BASE_CSS,
+        db_path=DB_PATH,
+        data_dir=DATA_DIR,
+        abs_data_dir=os.path.abspath(DATA_DIR),
+    )
 
 
 @app.get("/job/<job_id>")
@@ -1975,7 +1957,15 @@ def job_view(job_id: str):
     conn.close()
     if not row:
         abort(404)
-    return render_template_string(PAGE_JOB, job_id=job_id)
+
+    return render_template_string(
+        PAGE_JOB,
+        job_id=job_id,
+        ui_css=UI_BASE_CSS,
+        db_path=DB_PATH,
+        data_dir=DATA_DIR,
+    )
+
 
 
 @app.get("/api/job/<job_id>")
