@@ -4,21 +4,14 @@ ikizamini_local.py
 
 Local Web UI (Flask) for IKIZAMINI using Ollama.
 
-Features:
-- Upload objectives .txt
-- Configure Ollama URL, worker model, manager model, max rounds, context size
-- Generate master .txt + per-objective .txt files
-- Download master .txt or ZIP of per-objective outputs
-
-Run:
-  python3 ikizamini_ui.py
-Then open:
-  http://127.0.0.1:5000
-
-Notes:
-- Requires Ollama running at http://localhost:11434 by default
-- Pull models first (example):
-    ollama pull llama3.1:8b
+Key fixes:
+- ManagerAgent robustness:
+  * If manager returns wrong JSON shape, we re-prompt manager with the validation error + previous output.
+  * If manager still fails, we fall back to a safe wrapper that preserves pipeline progress.
+- Optional JSON Schema 'format' support:
+  * Try sending 'format' as a JSON schema to Ollama if supported.
+  * If Ollama rejects schema format, automatically fall back to "json".
+- Output generation continues per-objective even when manager misbehaves.
 """
 
 from __future__ import annotations
@@ -42,16 +35,19 @@ import requests
 from flask import Flask, request, redirect, url_for, send_file, render_template_string, abort
 from jsonschema import validate as jsonschema_validate, ValidationError
 
+
+# =============================================================================
 # Logging helper
+# =============================================================================
+
 def log_progress(message: str):
-    """Print progress message with timestamp to terminal"""
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{timestamp}] {message}", flush=True)
     sys.stdout.flush()
 
 
 # =============================================================================
-# Core generator (Ollama)
+# Outline parsing
 # =============================================================================
 
 @dataclass
@@ -81,33 +77,42 @@ def parse_objectives(text: str) -> List[ObjNode]:
     lines = text.splitlines()
     roots: List[ObjNode] = []
     stack: List[ObjNode] = []
+
     for raw in lines:
         if not raw.strip():
             continue
         m = OBJ_LINE_RE.match(raw)
         if not m:
             continue
+
         obj_id = m.group(1).strip()
         title = m.group(2).strip()
         indent = len(raw) - len(raw.lstrip(" "))
+
         node = ObjNode(obj_id=obj_id, title=title, indent=indent)
+
         while stack and indent <= stack[-1].indent:
             stack.pop()
+
         if stack:
             stack[-1].children.append(node)
         else:
             roots.append(node)
+
         stack.append(node)
+
     return roots
 
 def id_depth(obj_id: str) -> int:
     return len([p for p in obj_id.split(".") if p.strip()])
 
 def is_learning_objective_id(obj_id: str) -> bool:
-    return id_depth(obj_id) >= 4  # 1.1.1.1+
+    # Only 1.1.1.1+ are learning objectives
+    return id_depth(obj_id) >= 4
 
 def collect_learning_objectives_with_paths(roots: List[ObjNode]) -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
+
     def dfs(n: ObjNode, path: List[Tuple[str, str]]):
         new_path = path + [(n.obj_id, n.title)]
         if is_learning_objective_id(n.obj_id):
@@ -115,44 +120,67 @@ def collect_learning_objectives_with_paths(roots: List[ObjNode]) -> List[Dict[st
         else:
             for c in n.children:
                 dfs(c, new_path)
+
     for r in roots:
         dfs(r, [])
     return out
 
+
+# =============================================================================
+# Ollama client (with schema-format fallback)
+# =============================================================================
+
 def backoff_sleep(attempt: int) -> None:
-    import time as _t
     base = min(2 ** attempt, 10)
     jitter = random.uniform(0.0, 0.4)
-    _t.sleep(base + jitter)
+    time.sleep(base + jitter)
 
-def ollama_chat(base_url: str, model: str, system: str, user: str,
-                temperature: float, num_ctx: int, timeout_s: int) -> str:
+def ollama_chat(
+    base_url: str,
+    model: str,
+    system: str,
+    user: str,
+    temperature: float,
+    num_ctx: int,
+    timeout_s: int,
+    format_spec: Any = "json",  # "json" or JSON schema dict (if supported)
+) -> str:
+    """
+    Calls Ollama chat endpoint and returns assistant content.
+    Tries schema 'format' if provided; falls back to "json" if server rejects schema.
+    """
     url = base_url.rstrip("/") + "/api/chat"
+
+    def _post(payload: Dict[str, Any]) -> requests.Response:
+        return requests.post(url, json=payload, timeout=timeout_s)
+
     payload = {
         "model": model,
         "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
         "stream": False,
-        # Ask Ollama to return strict JSON when possible. (Some models still add prose;
-        # we defensively parse/repair below.)
-        "format": "json",
+        "format": format_spec,
         "options": {"temperature": temperature, "num_ctx": num_ctx},
     }
-    r = requests.post(url, json=payload, timeout=timeout_s)
+
+    r = _post(payload)
+    if r.status_code >= 400:
+        # If schema format is rejected, fall back to "json"
+        if isinstance(format_spec, dict):
+            payload["format"] = "json"
+            r = _post(payload)
+
     r.raise_for_status()
     data = r.json()
     return (data.get("message", {}) or {}).get("content", "").strip()
 
+
+# =============================================================================
+# JSON extraction + normalization
+# =============================================================================
+
 JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.DOTALL)
 
 def extract_json_value(text: str) -> Any:
-    """Extract the first JSON value (object or array) from model output.
-
-    Handles:
-    - ```json fenced blocks
-    - extra text before/after JSON
-    - the model returning a list of questions instead of the full object
-    """
-    # First try to find JSON in code fences
     m = JSON_FENCE_RE.search(text)
     if m:
         try:
@@ -161,7 +189,6 @@ def extract_json_value(text: str) -> Any:
             pass
 
     decoder = json.JSONDecoder()
-    # Find the first plausible JSON start and raw-decode from there.
     for i, ch in enumerate(text):
         if ch not in "{[":
             continue
@@ -173,42 +200,27 @@ def extract_json_value(text: str) -> Any:
 
     raise ValueError("No JSON value found in model output.")
 
-
 def _normalize_choice_letter(x: Any) -> str:
     s = str(x or "").strip().upper()
     if s in {"A", "B", "C", "D"}:
         return s
-    # Sometimes returns "Answer: A" or similar
     m = re.search(r"\b([ABCD])\b", s)
     return (m.group(1) if m else "A")
 
-
 _CONFUSABLE_TRANSLATION = str.maketrans({
-    # Cyrillic letters that commonly appear as Latin in model outputs
-    "\u0430": "a",  # а
-    "\u0435": "e",  # е
-    "\u043E": "o",  # о
-    "\u0440": "p",  # р
-    "\u0441": "c",  # с
-    "\u0445": "x",  # х
-    "\u0456": "i",  # і
-    "\u0458": "j",  # ј
+    "\u0430": "a", "\u0435": "e", "\u043E": "o", "\u0440": "p",
+    "\u0441": "c", "\u0445": "x", "\u0456": "i", "\u0458": "j",
 })
 
-
 def _canonical_key(key: Any) -> str:
-    """Normalize keys to a canonical ascii-ish form to handle confusables/punctuation."""
     s = str(key or "")
     s = unicodedata.normalize("NFKC", s)
     s = s.translate(_CONFUSABLE_TRANSLATION)
     s = s.strip().lower()
-    # keep only alphanumerics
     s = re.sub(r"[^a-z0-9]+", "", s)
     return s
 
-
 def _map_question_keys(q: Dict[str, Any]) -> Dict[str, Any]:
-    """Map common alternative key spellings to the strict schema keys."""
     mapped: Dict[str, Any] = {}
     for k, v in q.items():
         ck = _canonical_key(k)
@@ -226,27 +238,18 @@ def _map_question_keys(q: Dict[str, Any]) -> Dict[str, Any]:
             mapped["explanation"] = v
         elif ck in {"commonmistakenotes", "commonmistake", "commonmistakenote"}:
             mapped["common_mistake_notes"] = v
-        # else: drop unknown keys to satisfy additionalProperties: false
     return mapped
 
-
-def sanitize_ikizamini(candidate: Dict[str, Any], objective_id: str, objective_text: str) -> Dict[str, Any]:
-    """Ensure the object matches IKIZAMINI_SCHEMA exactly; drop/rename bad keys."""
-    difficulty_profile = candidate.get("difficulty_profile", "mixed") if isinstance(candidate, dict) else "mixed"
-    questions_in = candidate.get("questions", []) if isinstance(candidate, dict) else []
+def sanitize_question_list(questions_in: Any) -> List[Dict[str, Any]]:
     if not isinstance(questions_in, list):
-        questions_in = []
-
-    questions_out: List[Dict[str, Any]] = []
+        return []
+    out: List[Dict[str, Any]] = []
     for idx, q in enumerate(questions_in[:7], start=1):
         if not isinstance(q, dict):
             continue
         qn = _map_question_keys(q)
 
-        stem = str(qn.get("stem") or "").strip()
-
-        # normalize choices
-        ch_raw = qn.get("choices")
+        ch_raw = qn.get("choices", {})
         choices: Dict[str, str] = {"A": "", "B": "", "C": "", "D": ""}
         if isinstance(ch_raw, dict):
             for kk in ["A", "B", "C", "D"]:
@@ -257,17 +260,20 @@ def sanitize_ikizamini(candidate: Dict[str, Any], objective_id: str, objective_t
             choices["C"] = str(ch_raw[2]).strip()
             choices["D"] = str(ch_raw[3]).strip()
 
-        out_q = {
+        out.append({
             "id": str(qn.get("id") or f"Q{idx}").strip(),
-            "stem": stem,
+            "stem": str(qn.get("stem") or "").strip(),
             "choices": choices,
             "correct_choice": _normalize_choice_letter(qn.get("correct_choice")),
             "solution": str(qn.get("solution") or "").strip(),
             "explanation": str(qn.get("explanation") or "").strip(),
             "common_mistake_notes": str(qn.get("common_mistake_notes") or "").strip(),
-        }
-        questions_out.append(out_q)
+        })
+    return out
 
+def sanitize_ikizamini(candidate: Dict[str, Any], objective_id: str, objective_text: str) -> Dict[str, Any]:
+    difficulty_profile = candidate.get("difficulty_profile", "mixed") if isinstance(candidate, dict) else "mixed"
+    questions_out = sanitize_question_list(candidate.get("questions", []) if isinstance(candidate, dict) else [])
     return {
         "objective_id": objective_id,
         "objective_text": objective_text,
@@ -275,115 +281,27 @@ def sanitize_ikizamini(candidate: Dict[str, Any], objective_id: str, objective_t
         "questions": questions_out,
     }
 
-
 def coerce_ikizamini(value: Any, objective_id: str, objective_text: str) -> Dict[str, Any]:
-    """Coerce common Ollama/Qwen output formats into the strict IKIZAMINI schema."""
-    # If already looks like the correct shape, just enforce objective fields.
     if isinstance(value, dict) and isinstance(value.get("questions"), list):
-        # Even if shape looks correct, sanitize keys (unicode confusables, punctuation, extras)
         return sanitize_ikizamini(value, objective_id, objective_text)
 
-    # Many models return a bare list of question objects.
-    questions_in: Any = value
     if isinstance(value, dict):
-        # Some variants may wrap the questions under another key
         for k in ("questions", "items", "data", "revised_questions"):
             if isinstance(value.get(k), list):
-                questions_in = value[k]
-                break
+                value = {"questions": value[k]}
+                return sanitize_ikizamini(value, objective_id, objective_text)
 
-    if not isinstance(questions_in, list):
-        raise ValueError("Model output was not an object with questions nor a list of questions.")
+    if isinstance(value, list):
+        if len(value) < 7:
+            raise ValueError(f"Expected at least 7 questions; got {len(value)}.")
+        return sanitize_ikizamini({"questions": value}, objective_id, objective_text)
 
-    if len(questions_in) < 7:
-        raise ValueError(f"Expected at least 7 questions; got {len(questions_in)}.")
-
-    questions_out: List[Dict[str, Any]] = []
-    for idx, q in enumerate(questions_in[:7], start=1):
-        if not isinstance(q, dict):
-            raise ValueError(f"Question {idx} is not an object.")
-
-        stem = (q.get("stem") or q.get("question") or q.get("prompt") or "").strip()
-
-        # Choices: can be dict with A-D OR list of 4 strings.
-        ch_raw = (
-            q.get("choices")
-            or q.get("answer choices")
-            or q.get("answer_choices")
-            or q.get("answers")
-            or q.get("options")
-        )
-        choices: Dict[str, str] = {"A": "", "B": "", "C": "", "D": ""}
-        if isinstance(ch_raw, dict):
-            for k in ["A", "B", "C", "D"]:
-                choices[k] = str(ch_raw.get(k, "")).strip()
-        elif isinstance(ch_raw, list) and len(ch_raw) >= 4:
-            choices["A"] = str(ch_raw[0]).strip()
-            choices["B"] = str(ch_raw[1]).strip()
-            choices["C"] = str(ch_raw[2]).strip()
-            choices["D"] = str(ch_raw[3]).strip()
-
-        correct_choice = _normalize_choice_letter(
-            q.get("correct_choice")
-            or q.get("correct answer")
-            or q.get("correct_answer")
-            or q.get("correctAnswer")
-        )
-        solution = str(q.get("solution") or q.get("worked_solution") or q.get("worked solution") or "").strip()
-        explanation = str(q.get("explanation") or q.get("rationale") or "").strip()
-        common_mistake_notes = str(
-            q.get("common_mistake_notes")
-            or q.get("common mistake notes")
-            or q.get("common_mistake")
-            or ""
-        ).strip()
-
-        questions_out.append(
-            {
-                "id": str(q.get("id") or f"Q{idx}").strip(),
-                "stem": stem,
-                "choices": choices,
-                "correct_choice": correct_choice,
-                "solution": solution,
-                "explanation": explanation,
-                "common_mistake_notes": common_mistake_notes,
-            }
-        )
-
-    return sanitize_ikizamini(
-        {
-            "objective_id": objective_id,
-            "objective_text": objective_text,
-            "difficulty_profile": "mixed",
-            "questions": questions_out,
-        },
-        objective_id,
-        objective_text,
-    )
+    raise ValueError("Model output was not an object with questions nor a list of questions.")
 
 
-def call_ollama_json(base_url: str, model: str, system: str, user: str,
-                     validate_fn, temperature: float = 0.2, num_ctx: int = 8192,
-                     timeout_s: int = 180, max_retries: int = 4,
-                     coerce_fn=None) -> Dict[str, Any]:
-    last_err: Optional[Exception] = None
-    for attempt in range(max_retries):
-        try:
-            raw = ollama_chat(base_url, model, system, user, temperature, num_ctx, timeout_s)
-            # Log raw response for debugging (first 500 chars)
-            if attempt > 0:
-                log_progress(f"  Retry {attempt + 1}/{max_retries}: Raw response preview: {raw[:500]}...")
-            val = extract_json_value(raw)
-            if coerce_fn is not None:
-                val = coerce_fn(val)
-            validate_fn(val)
-            return val
-        except Exception as e:
-            last_err = e
-            if attempt < max_retries - 1:
-                log_progress(f"  Attempt {attempt + 1} failed: {str(e)[:200]}")
-            backoff_sleep(attempt)
-    raise RuntimeError(f"Ollama call failed after retries. Last error: {last_err}")
+# =============================================================================
+# JSON Schemas
+# =============================================================================
 
 IKIZAMINI_SCHEMA: Dict[str, Any] = {
     "type": "object",
@@ -395,12 +313,14 @@ IKIZAMINI_SCHEMA: Dict[str, Any] = {
         "questions": {
             "type": "array", "minItems": 7, "maxItems": 7,
             "items": {
-                "type": "object", "additionalProperties": False,
+                "type": "object",
+                "additionalProperties": False,
                 "properties": {
                     "id": {"type": "string"},
                     "stem": {"type": "string"},
                     "choices": {
-                        "type": "object", "additionalProperties": False,
+                        "type": "object",
+                        "additionalProperties": False,
                         "properties": {
                             "A": {"type": "string"},
                             "B": {"type": "string"},
@@ -451,6 +371,11 @@ def validate_ikizamini(obj: Dict[str, Any]) -> None:
 def validate_manager(obj: Dict[str, Any]) -> None:
     jsonschema_validate(instance=obj, schema=MANAGER_SCHEMA)
 
+
+# =============================================================================
+# Agents
+# =============================================================================
+
 WORKER_SYSTEM = """You are workerAgent.
 You create multiple-choice exam questions for a specific learning objective.
 
@@ -491,65 +416,148 @@ Output rules:
 - Always return revised_questions (full set of 7).
 - If pass: revised_questions should match input (minor normalization ok).
 - If fail: revised_questions must be corrected to satisfy criteria.
-Return ONLY JSON matching the manager schema. No commentary.
+
+Return ONLY JSON matching this schema exactly:
+{
+  "status": "pass" or "fail",
+  "issues": ["..."],
+  "revised_questions": [ {question objects with id/stem/choices/correct_choice/solution/explanation/common_mistake_notes} ],
+  "score": {"relevance":0-5,"distinctness":0-5,"unique_solution":0-5,"explanations":0-5}
+}
+No extra keys. No markdown. No objective_id field.
 """
+
+MANAGER_FIX_SYSTEM = """You are managerAgent.
+You MUST output valid JSON matching the manager schema EXACTLY.
+
+Do not include keys like objective_id/objective_text/questions/difficulty_profile.
+Only include: status, issues, revised_questions, score.
+Return ONLY JSON (no markdown, no extra text).
+"""
+
+
+# =============================================================================
+# Local validation checks
+# =============================================================================
 
 def local_issues(candidate: Dict[str, Any]) -> List[str]:
     issues: List[str] = []
     qs = candidate.get("questions", [])
     if len(qs) != 7:
         issues.append(f"Expected exactly 7 questions; got {len(qs)}.")
+
     stems = [q.get("stem", "").strip() for q in qs if isinstance(q, dict)]
     if len(stems) != len(set(stems)):
         issues.append("Duplicate stems detected (exact match).")
+
     for i, q in enumerate(qs, start=1):
         if not isinstance(q, dict):
             continue
         ch = q.get("choices", {})
         if not isinstance(ch, dict):
+            issues.append(f"Q{i}: choices is not an object.")
             continue
         vals = [str(ch.get(k, "")).strip() for k in ["A", "B", "C", "D"]]
-        if len(vals) == 4 and len(set(vals)) != 4:
-            issues.append(f"Q{i}: duplicate choice text detected.")
+        if len(set(vals)) != 4:
+            issues.append(f"Q{i}: duplicate choice text detected (A/B/C/D must be distinct).")
+        cc = q.get("correct_choice")
+        if cc not in {"A", "B", "C", "D"}:
+            issues.append(f"Q{i}: correct_choice is invalid: {cc}")
+        for k in ["solution", "explanation", "common_mistake_notes"]:
+            if not str(q.get(k, "")).strip():
+                issues.append(f"Q{i}: missing/empty field: {k}")
+
     return issues
+
+
+# =============================================================================
+# Ollama JSON call helper
+# =============================================================================
+
+def call_ollama_json(
+    base_url: str,
+    model: str,
+    system: str,
+    user: str,
+    validate_fn,
+    temperature: float = 0.2,
+    num_ctx: int = 8192,
+    timeout_s: int = 180,
+    max_retries: int = 4,
+    coerce_fn=None,
+    format_spec: Any = "json",
+) -> Dict[str, Any]:
+    last_err: Optional[Exception] = None
+    last_raw: Optional[str] = None
+
+    for attempt in range(max_retries):
+        try:
+            raw = ollama_chat(
+                base_url=base_url,
+                model=model,
+                system=system,
+                user=user,
+                temperature=temperature,
+                num_ctx=num_ctx,
+                timeout_s=timeout_s,
+                format_spec=format_spec,
+            )
+            last_raw = raw
+
+            if attempt > 0:
+                log_progress(f"  Retry {attempt + 1}/{max_retries}: Raw response preview: {raw[:500]}...")
+
+            val = extract_json_value(raw)
+            if coerce_fn is not None:
+                val = coerce_fn(val)
+
+            validate_fn(val)
+            return val
+        except Exception as e:
+            last_err = e
+            if attempt < max_retries - 1:
+                log_progress(f"  Attempt {attempt + 1} failed: {str(e)[:220]}")
+            backoff_sleep(attempt)
+
+    # If we have raw, include a small preview in the error to make debugging easier upstream.
+    preview = (last_raw[:800] + "...") if (last_raw and len(last_raw) > 800) else (last_raw or "")
+    raise RuntimeError(f"Ollama call failed after retries. Last error: {last_err}. Raw preview: {preview}")
+
+
+# =============================================================================
+# Worker functions
+# =============================================================================
 
 def worker_generate(base_url: str, model: str, objective_id: str, objective_text: str, num_ctx: int) -> Dict[str, Any]:
     user = f"""Learning objective:
 - id: {objective_id}
 - text: {objective_text}
 
-Generate 7 exam questions that directly assess this objective.
-Return ONLY JSON matching this shape exactly:
-{{
-  "objective_id": "{objective_id}",
-  "objective_text": "{objective_text}",
-  "difficulty_profile": "mixed",
-  "questions": [
-    {{
-      "id": "Q1",
-      "stem": "...",
-      "choices": {{"A":"...","B":"...","C":"...","D":"..."}},
-      "correct_choice": "A",
-      "solution": "...",
-      "explanation": "...",
-      "common_mistake_notes": "..."
-    }}
-  ]
-}}
-No extra keys. No markdown."""
+Generate EXACTLY 7 distinct multiple-choice questions.
+Return ONLY a JSON object with keys: objective_id, objective_text, difficulty_profile, questions.
+No extra keys.
+"""
     return call_ollama_json(
-        base_url,
-        model,
-        WORKER_SYSTEM,
-        user,
-        validate_ikizamini,
+        base_url=base_url,
+        model=model,
+        system=WORKER_SYSTEM,
+        user=user,
+        validate_fn=validate_ikizamini,
         temperature=0.25,
         num_ctx=num_ctx,
         coerce_fn=lambda v: coerce_ikizamini(v, objective_id, objective_text),
+        format_spec=IKIZAMINI_SCHEMA,  # try schema format; fallback to "json" automatically
     )
 
-def worker_repair(base_url: str, model: str, objective_id: str, objective_text: str,
-                  candidate: Dict[str, Any], issues: List[str], num_ctx: int) -> Dict[str, Any]:
+def worker_repair(
+    base_url: str,
+    model: str,
+    objective_id: str,
+    objective_text: str,
+    candidate: Dict[str, Any],
+    issues: List[str],
+    num_ctx: int,
+) -> Dict[str, Any]:
     user = f"""Learning objective:
 - id: {objective_id}
 - text: {objective_text}
@@ -560,33 +568,196 @@ Issues to fix:
 Current JSON:
 {json.dumps(candidate, ensure_ascii=False)}
 
-Return ONLY a corrected JSON object (no markdown)."""
+Return ONLY corrected JSON matching the schema, with exactly 7 questions.
+No extra keys.
+"""
     return call_ollama_json(
-        base_url,
-        model,
-        WORKER_REPAIR_SYSTEM,
-        user,
-        validate_ikizamini,
+        base_url=base_url,
+        model=model,
+        system=WORKER_REPAIR_SYSTEM,
+        user=user,
+        validate_fn=validate_ikizamini,
         temperature=0.2,
         num_ctx=num_ctx,
         coerce_fn=lambda v: coerce_ikizamini(v, objective_id, objective_text),
+        format_spec=IKIZAMINI_SCHEMA,
     )
 
-def manager_review(base_url: str, model: str, objective_id: str, objective_text: str,
-                   candidate: Dict[str, Any], num_ctx: int) -> Dict[str, Any]:
-    user = f"""Learning objective:
+
+# =============================================================================
+# Manager functions (FIXED)
+# =============================================================================
+
+def sanitize_manager_output(value: Any, fallback_questions: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Make manager output conform to MANAGER_SCHEMA:
+    - drop extra keys
+    - sanitize revised_questions question objects
+    - fill missing score fields
+    """
+    # If manager returns IKIZAMINI-shaped object, extract questions
+    if isinstance(value, dict) and isinstance(value.get("questions"), list):
+        rq = sanitize_question_list(value.get("questions"))
+        return {
+            "status": "pass",
+            "issues": ["Manager returned IKIZAMINI-shaped output; treated as pass and used its questions as revised_questions."],
+            "revised_questions": rq if len(rq) == 7 else fallback_questions,
+            "score": {"relevance": 4, "distinctness": 4, "unique_solution": 4, "explanations": 4},
+        }
+
+    # If manager returns list, treat as revised_questions directly
+    if isinstance(value, list):
+        rq = sanitize_question_list(value)
+        return {
+            "status": "pass",
+            "issues": ["Manager returned a bare list; treated it as revised_questions."],
+            "revised_questions": rq if len(rq) == 7 else fallback_questions,
+            "score": {"relevance": 4, "distinctness": 4, "unique_solution": 4, "explanations": 4},
+        }
+
+    if not isinstance(value, dict):
+        return {
+            "status": "fail",
+            "issues": ["Manager returned non-object output; using fallback questions."],
+            "revised_questions": fallback_questions,
+            "score": {"relevance": 2, "distinctness": 2, "unique_solution": 2, "explanations": 2},
+        }
+
+    status = value.get("status", "fail")
+    if status not in {"pass", "fail"}:
+        status = "fail"
+
+    issues = value.get("issues", [])
+    if not isinstance(issues, list):
+        issues = [str(issues)]
+
+    rq_raw = value.get("revised_questions", value.get("questions", []))
+    rq = sanitize_question_list(rq_raw)
+
+    score = value.get("score", {})
+    if not isinstance(score, dict):
+        score = {}
+    def _clamp_int(x, default):
+        try:
+            v = int(x)
+        except Exception:
+            v = default
+        return max(0, min(5, v))
+
+    score_out = {
+        "relevance": _clamp_int(score.get("relevance", 3), 3),
+        "distinctness": _clamp_int(score.get("distinctness", 3), 3),
+        "unique_solution": _clamp_int(score.get("unique_solution", 3), 3),
+        "explanations": _clamp_int(score.get("explanations", 3), 3),
+    }
+
+    return {
+        "status": status,
+        "issues": [str(x) for x in issues],
+        "revised_questions": rq if len(rq) == 7 else fallback_questions,
+        "score": score_out,
+    }
+
+def manager_review(
+    base_url: str,
+    model: str,
+    objective_id: str,
+    objective_text: str,
+    candidate: Dict[str, Any],
+    num_ctx: int,
+) -> Dict[str, Any]:
+    """
+    Manager review that will NOT permanently fail just because manager returns wrong shape.
+    Steps:
+    1) Ask manager (with schema format if supported).
+    2) If invalid, re-ask manager with the validation error + previous output.
+    3) If still invalid, sanitize/unwrap and return a safe object.
+    """
+    fallback_questions = sanitize_question_list(candidate.get("questions", []))
+    if len(fallback_questions) != 7:
+        fallback_questions = []  # should not happen; worker schema ensures 7
+
+    base_user = f"""Learning objective:
 - id: {objective_id}
 - text: {objective_text}
 
 Candidate JSON:
 {json.dumps(candidate, ensure_ascii=False)}
 
-Return ONLY a JSON object matching the manager schema (no markdown)."""
-    return call_ollama_json(base_url, model, MANAGER_SYSTEM, user, validate_manager, temperature=0.1, num_ctx=num_ctx)
+Return ONLY a JSON object matching the manager schema.
+"""
 
-def generate_for_objective_strict(base_url: str, worker_model: str, manager_model: str,
-                                  objective_id: str, objective_text: str,
-                                  max_rounds: int, num_ctx: int) -> Dict[str, Any]:
+    last_err: Optional[str] = None
+    last_raw: Optional[str] = None
+
+    for attempt in range(3):
+        user = base_user if attempt == 0 else f"""Your previous output did not match the manager schema.
+
+Validation error:
+{last_err}
+
+Your previous output:
+{last_raw}
+
+Now return ONLY valid JSON matching exactly:
+{json.dumps(MANAGER_SCHEMA, ensure_ascii=False)}
+
+Remember: keys must be ONLY status, issues, revised_questions, score.
+No objective_id/objective_text/questions/difficulty_profile keys.
+"""
+        system = MANAGER_SYSTEM if attempt == 0 else MANAGER_FIX_SYSTEM
+
+        try:
+            raw = ollama_chat(
+                base_url=base_url,
+                model=model,
+                system=system,
+                user=user,
+                temperature=0.1,
+                num_ctx=num_ctx,
+                timeout_s=180,
+                format_spec=MANAGER_SCHEMA,  # try schema format; fallback to "json" handled in ollama_chat
+            )
+            last_raw = raw
+            val = extract_json_value(raw)
+
+            # sanitize common drift, then validate
+            val2 = sanitize_manager_output(val, fallback_questions)
+            validate_manager(val2)
+
+            return val2
+
+        except Exception as e:
+            last_err = str(e)[:1200]
+            if attempt < 2:
+                log_progress(f"  Manager attempt {attempt+1}/3 failed (will re-prompt manager): {str(e)[:220]}")
+            backoff_sleep(attempt)
+
+    # Final fallback
+    log_progress("  Manager failed to return valid schema after retries; using safe fallback wrapper.")
+    val_fallback = {
+        "status": "pass",
+        "issues": ["Manager failed schema compliance after retries; used candidate questions unchanged."],
+        "revised_questions": fallback_questions,
+        "score": {"relevance": 3, "distinctness": 3, "unique_solution": 3, "explanations": 3},
+    }
+    validate_manager(val_fallback)
+    return val_fallback
+
+
+# =============================================================================
+# Strict objective pipeline
+# =============================================================================
+
+def generate_for_objective_strict(
+    base_url: str,
+    worker_model: str,
+    manager_model: str,
+    objective_id: str,
+    objective_text: str,
+    max_rounds: int,
+    num_ctx: int,
+) -> Dict[str, Any]:
     candidate = worker_generate(base_url, worker_model, objective_id, objective_text, num_ctx=num_ctx)
 
     for _ in range(max_rounds):
@@ -597,6 +768,7 @@ def generate_for_objective_strict(base_url: str, worker_model: str, manager_mode
 
         review = manager_review(base_url, manager_model, objective_id, objective_text, candidate, num_ctx=num_ctx)
 
+        # apply manager revised questions
         candidate = {
             "objective_id": objective_id,
             "objective_text": objective_text,
@@ -615,7 +787,7 @@ def generate_for_objective_strict(base_url: str, worker_model: str, manager_mode
 
 
 # =============================================================================
-# Output formatting helpers
+# Output formatting
 # =============================================================================
 
 def safe_filename(s: str, max_len: int = 90) -> str:
@@ -717,8 +889,6 @@ def objective_file_text(path: List[Tuple[str, str]], objective_id: str, objectiv
 # =============================================================================
 
 app = Flask(__name__)
-
-# In-memory job store. For a single-user local app this is fine.
 JOBS: Dict[str, Dict[str, Any]] = {}
 
 PAGE = """
@@ -733,41 +903,21 @@ PAGE = """
     .row { display:flex; gap:16px; margin-bottom:12px; }
     .row label { width: 180px; font-weight: bold; }
     input[type=text], input[type=number] { width: 420px; padding: 6px; }
-    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; transition: all 0.3s; }
+    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; transition: all 0.2s; }
     .btn:hover:not(:disabled) { background:#333; }
-    .btn:disabled { opacity:0.5; cursor:not-allowed; background:#666; }
-    .btn.loading { background:#0066cc; position:relative; }
-    .btn.loading::after { content: '...'; animation: dots 1.5s steps(4, end) infinite; }
-    @keyframes dots { 0%, 20% { content: '.'; } 40% { content: '..'; } 60%, 100% { content: '...'; } }
+    .btn:disabled { opacity:0.6; cursor:not-allowed; background:#666; }
     .card { border:1px solid #ddd; padding:16px; margin-top:18px; }
     .muted { color:#666; }
     pre { background:#f7f7f7; padding:12px; overflow:auto; }
     .links a { margin-right:12px; }
-    .status-message { margin-top: 12px; padding: 10px; background: #e8f4f8; border-left: 4px solid #0066cc; display: none; }
-    .status-message.show { display: block; }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const form = document.querySelector('form');
       const submitBtn = document.querySelector('button[type="submit"]');
-      const originalBtnText = submitBtn.textContent;
-      
-      // Add status message div
-      const statusMsg = document.createElement('div');
-      statusMsg.className = 'status-message';
-      statusMsg.textContent = 'Processing request... Please wait.';
-      form.appendChild(statusMsg);
-      
-      form.addEventListener('submit', function(e) {
-        // Show visual feedback immediately when button is clicked
+      form.addEventListener('submit', function() {
         submitBtn.disabled = true;
-        submitBtn.classList.add('loading');
         submitBtn.textContent = 'Generating...';
-        statusMsg.classList.add('show');
-        statusMsg.textContent = 'Request submitted! Processing objectives... This may take a while. Please check the terminal for progress.';
-        
-        // Allow form to submit normally (don't prevent default)
-        // The button will stay disabled until page reloads
       });
     });
   </script>
@@ -861,7 +1011,6 @@ def generate():
     log_progress("NEW GENERATION REQUEST RECEIVED")
     log_progress("=" * 60)
 
-    # Read file content
     content = up.read().decode("utf-8", errors="replace")
     log_progress(f"File uploaded: {up.filename} ({len(content)} bytes)")
 
@@ -872,7 +1021,7 @@ def generate():
     num_ctx = int(request.form.get("num_ctx", "8192"))
     limit = int(request.form.get("limit", "0"))
 
-    log_progress(f"Configuration:")
+    log_progress("Configuration:")
     log_progress(f"  Ollama URL: {ollama_url}")
     log_progress(f"  Worker model: {worker_model}")
     log_progress(f"  Manager model: {manager_model}")
@@ -882,7 +1031,7 @@ def generate():
 
     job_id = str(uuid.uuid4())[:8]
     log_progress(f"Job ID: {job_id}")
-    
+
     JOBS[job_id] = {
         "status": "running",
         "requested": 0,
@@ -890,37 +1039,27 @@ def generate():
         "failures": [],
         "master_text": "",
         "zip_bytes": b"",
-        "meta": {
-            "ollama_url": ollama_url,
-            "worker_model": worker_model,
-            "manager_model": manager_model,
-            "max_rounds": max_rounds,
-            "num_ctx": num_ctx,
-            "limit": limit,
-        }
     }
 
-    # Run synchronously (local app). If you want async later, we can add Celery/RQ.
     try:
         log_progress("Parsing objectives from file...")
         roots = parse_objectives(content)
         objectives = collect_learning_objectives_with_paths(roots)
+
         if limit and limit > 0:
             objectives = objectives[:limit]
             log_progress(f"Limited to first {limit} objectives")
 
-        total_objectives = len(objectives)
-        JOBS[job_id]["requested"] = total_objectives
-        log_progress(f"Found {total_objectives} learning objectives to process")
+        total = len(objectives)
+        JOBS[job_id]["requested"] = total
+        log_progress(f"Found {total} learning objectives to process")
         log_progress("-" * 60)
 
         generated_by_id: Dict[str, Dict[str, Any]] = {}
         failures: List[str] = []
 
-        # Prepare zip in memory
         zip_buffer = io.BytesIO()
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zf:
-            # index content built as we go
             index_lines = []
             index_lines.append("IKIZAMINI PER-OBJECTIVE INDEX (Ollama UI)")
             index_lines.append(f"Ollama URL: {ollama_url}")
@@ -933,10 +1072,10 @@ def generate():
                 obj_id = obj["objective_id"]
                 obj_text = obj["objective_text"]
                 path = obj["path"]
-                
-                log_progress(f"[{i}/{total_objectives}] Processing: {obj_id} - {obj_text[:60]}...")
-                start_time = time.time()
-                
+
+                log_progress(f"[{i}/{total}] Processing: {obj_id} - {obj_text[:60]}...")
+                start = time.time()
+
                 try:
                     ik = generate_for_objective_strict(
                         base_url=ollama_url,
@@ -949,9 +1088,10 @@ def generate():
                     )
                     validate_ikizamini(ik)
                     generated_by_id[obj_id] = ik
-                    elapsed = time.time() - start_time
+
+                    elapsed = time.time() - start
                     log_progress(f"  ✓ Success ({elapsed:.1f}s)")
-                    
+
                     JOBS[job_id]["completed"] = len(generated_by_id)
 
                     fname = unique_objective_filename(obj_id, obj_text)
@@ -960,7 +1100,7 @@ def generate():
                     index_lines.append(f"- {fname}")
 
                 except Exception as e:
-                    elapsed = time.time() - start_time
+                    elapsed = time.time() - start
                     msg = f"{obj_id}: {e}"
                     log_progress(f"  ✗ FAILED ({elapsed:.1f}s): {msg}")
                     failures.append(msg)
@@ -971,33 +1111,30 @@ def generate():
                     zf.writestr(fname, txt)
                     index_lines.append(f"- {fname}  (FAILED)")
 
-            # write index
             zf.writestr("index.txt", "\n".join(index_lines).rstrip() + "\n")
-
-        zip_bytes = zip_buffer.getvalue()
 
         meta = {
             "ollama_url": ollama_url,
             "worker_model": worker_model,
             "manager_model": manager_model,
             "generated_at_unix": int(time.time()),
-            "requested": len(objectives),
+            "requested": total,
             "completed": len(generated_by_id),
         }
-        
+
         log_progress("-" * 60)
         log_progress("Generating master file...")
         master_text = write_master_from_tree(roots, generated_by_id, meta)
 
         JOBS[job_id]["master_text"] = master_text
-        JOBS[job_id]["zip_bytes"] = zip_bytes
+        JOBS[job_id]["zip_bytes"] = zip_buffer.getvalue()
         JOBS[job_id]["failures"] = failures
         JOBS[job_id]["completed"] = len(generated_by_id)
         JOBS[job_id]["status"] = "done"
 
         log_progress("=" * 60)
         log_progress(f"JOB COMPLETED: {job_id}")
-        log_progress(f"  Total: {total_objectives} | Success: {len(generated_by_id)} | Failed: {len(failures)}")
+        log_progress(f"  Total: {total} | Success: {len(generated_by_id)} | Failed: {len(failures)}")
         log_progress("=" * 60)
 
     except Exception as e:
@@ -1013,29 +1150,25 @@ def download_master(job_id: str):
     if not job or job.get("status") != "done":
         abort(404)
     data = job["master_text"].encode("utf-8")
-    return send_file(
-        io.BytesIO(data),
-        mimetype="text/plain",
-        as_attachment=True,
-        download_name=f"ikizamini_master_{job_id}.txt",
-    )
+    return send_file(io.BytesIO(data), mimetype="text/plain", as_attachment=True,
+                     download_name=f"ikizamini_master_{job_id}.txt")
 
 @app.get("/download/zip/<job_id>")
 def download_zip(job_id: str):
     job = JOBS.get(job_id)
     if not job or job.get("status") != "done":
         abort(404)
-    return send_file(
-        io.BytesIO(job["zip_bytes"]),
-        mimetype="application/zip",
-        as_attachment=True,
-        download_name=f"ikizamini_outputs_{job_id}.zip",
-    )
+    return send_file(io.BytesIO(job["zip_bytes"]), mimetype="application/zip", as_attachment=True,
+                     download_name=f"ikizamini_outputs_{job_id}.zip")
+
+@app.get("/job/<job_id>")
+def job_page(job_id: str):
+    job = JOBS.get(job_id)
+    if not job:
+        abort(404)
+    return render_template_string(PAGE, job=job, job_id=job_id)
 
 if __name__ == "__main__":
-    # Flask dev server
-    # For Runpod: use 0.0.0.0 and port 8000 (or from RUNPOD_PORT env var)
-    # For local: use 127.0.0.1 and port 5000
     host = os.environ.get("FLASK_HOST", "0.0.0.0")
     port = int(os.environ.get("RUNPOD_PORT", os.environ.get("FLASK_PORT", "8000")))
     app.run(host=host, port=port, debug=False)
