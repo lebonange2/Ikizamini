@@ -33,6 +33,7 @@ import hashlib
 import random
 import zipfile
 import sys
+import unicodedata
 from datetime import datetime
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple
@@ -182,15 +183,105 @@ def _normalize_choice_letter(x: Any) -> str:
     return (m.group(1) if m else "A")
 
 
+_CONFUSABLE_TRANSLATION = str.maketrans({
+    # Cyrillic letters that commonly appear as Latin in model outputs
+    "\u0430": "a",  # а
+    "\u0435": "e",  # е
+    "\u043E": "o",  # о
+    "\u0440": "p",  # р
+    "\u0441": "c",  # с
+    "\u0445": "x",  # х
+    "\u0456": "i",  # і
+    "\u0458": "j",  # ј
+})
+
+
+def _canonical_key(key: Any) -> str:
+    """Normalize keys to a canonical ascii-ish form to handle confusables/punctuation."""
+    s = str(key or "")
+    s = unicodedata.normalize("NFKC", s)
+    s = s.translate(_CONFUSABLE_TRANSLATION)
+    s = s.strip().lower()
+    # keep only alphanumerics
+    s = re.sub(r"[^a-z0-9]+", "", s)
+    return s
+
+
+def _map_question_keys(q: Dict[str, Any]) -> Dict[str, Any]:
+    """Map common alternative key spellings to the strict schema keys."""
+    mapped: Dict[str, Any] = {}
+    for k, v in q.items():
+        ck = _canonical_key(k)
+        if ck in {"id", "qid", "questionid"}:
+            mapped["id"] = v
+        elif ck in {"stem", "question", "prompt"}:
+            mapped["stem"] = v
+        elif ck in {"choices", "answerchoices", "answerchoice", "options", "answers"}:
+            mapped["choices"] = v
+        elif ck in {"correctchoice", "correctanswer", "correct"}:
+            mapped["correct_choice"] = v
+        elif ck in {"solution", "workedsolution", "worked"}:
+            mapped["solution"] = v
+        elif ck in {"explanation", "rationale"}:
+            mapped["explanation"] = v
+        elif ck in {"commonmistakenotes", "commonmistake", "commonmistakenote"}:
+            mapped["common_mistake_notes"] = v
+        # else: drop unknown keys to satisfy additionalProperties: false
+    return mapped
+
+
+def sanitize_ikizamini(candidate: Dict[str, Any], objective_id: str, objective_text: str) -> Dict[str, Any]:
+    """Ensure the object matches IKIZAMINI_SCHEMA exactly; drop/rename bad keys."""
+    difficulty_profile = candidate.get("difficulty_profile", "mixed") if isinstance(candidate, dict) else "mixed"
+    questions_in = candidate.get("questions", []) if isinstance(candidate, dict) else []
+    if not isinstance(questions_in, list):
+        questions_in = []
+
+    questions_out: List[Dict[str, Any]] = []
+    for idx, q in enumerate(questions_in[:7], start=1):
+        if not isinstance(q, dict):
+            continue
+        qn = _map_question_keys(q)
+
+        stem = str(qn.get("stem") or "").strip()
+
+        # normalize choices
+        ch_raw = qn.get("choices")
+        choices: Dict[str, str] = {"A": "", "B": "", "C": "", "D": ""}
+        if isinstance(ch_raw, dict):
+            for kk in ["A", "B", "C", "D"]:
+                choices[kk] = str(ch_raw.get(kk, "")).strip()
+        elif isinstance(ch_raw, list) and len(ch_raw) >= 4:
+            choices["A"] = str(ch_raw[0]).strip()
+            choices["B"] = str(ch_raw[1]).strip()
+            choices["C"] = str(ch_raw[2]).strip()
+            choices["D"] = str(ch_raw[3]).strip()
+
+        out_q = {
+            "id": str(qn.get("id") or f"Q{idx}").strip(),
+            "stem": stem,
+            "choices": choices,
+            "correct_choice": _normalize_choice_letter(qn.get("correct_choice")),
+            "solution": str(qn.get("solution") or "").strip(),
+            "explanation": str(qn.get("explanation") or "").strip(),
+            "common_mistake_notes": str(qn.get("common_mistake_notes") or "").strip(),
+        }
+        questions_out.append(out_q)
+
+    return {
+        "objective_id": objective_id,
+        "objective_text": objective_text,
+        "difficulty_profile": str(difficulty_profile or "mixed"),
+        "questions": questions_out,
+    }
+
+
 def coerce_ikizamini(value: Any, objective_id: str, objective_text: str) -> Dict[str, Any]:
     """Coerce common Ollama/Qwen output formats into the strict IKIZAMINI schema."""
     # If already looks like the correct shape, just enforce objective fields.
     if isinstance(value, dict) and isinstance(value.get("questions"), list):
-        out = dict(value)
-        out["objective_id"] = objective_id
-        out["objective_text"] = objective_text
-        out["difficulty_profile"] = out.get("difficulty_profile", "mixed") or "mixed"
-        return out
+        # Even if shape looks correct, sanitize keys (unicode confusables, punctuation, extras)
+        return sanitize_ikizamini(value, objective_id, objective_text)
 
     # Many models return a bare list of question objects.
     questions_in: Any = value
@@ -259,12 +350,17 @@ def coerce_ikizamini(value: Any, objective_id: str, objective_text: str) -> Dict
             }
         )
 
-    return {
-        "objective_id": objective_id,
-        "objective_text": objective_text,
-        "difficulty_profile": "mixed",
-        "questions": questions_out,
-    }
+    return sanitize_ikizamini(
+        {
+            "objective_id": objective_id,
+            "objective_text": objective_text,
+            "difficulty_profile": "mixed",
+            "questions": questions_out,
+        },
+        objective_id,
+        objective_text,
+    )
+
 
 def call_ollama_json(base_url: str, model: str, system: str, user: str,
                      validate_fn, temperature: float = 0.2, num_ctx: int = 8192,
