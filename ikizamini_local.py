@@ -2,18 +2,18 @@
 """
 ikizamini_local.py
 
-Local Web UI (Flask) for IKIZAMINI using Ollama.
+IKIZAMINI Local Web UI (Flask) + Ollama with long-running stability + persistence.
 
-Fixes:
-- Avoid UI timeouts: generation runs in a background thread.
-- UI stays responsive and shows progress via polling /api/job/<job_id>.
-- Download buttons for master .txt and per-objective ZIP.
-- ManagerAgent schema robustness (re-prompt + safe fallback).
+Key properties:
+- Runs generation in background thread (UI doesn't timeout).
+- Persists job state and objective outputs to SQLite + disk as it runs.
+- Partial recovery: even if process crashes, already-written outputs remain downloadable.
+- Avoids BrokenPipe crashes by logging to files and catching stdout errors.
 
 Run:
   python3 ikizamini_local.py
 Open:
-  http://127.0.0.1:8000   (or Runpod public URL)
+  http://127.0.0.1:8000  (or Runpod public URL)
 """
 
 from __future__ import annotations
@@ -30,6 +30,7 @@ import zipfile
 import sys
 import unicodedata
 import threading
+import sqlite3
 from datetime import datetime
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple
@@ -40,35 +41,173 @@ from jsonschema import validate as jsonschema_validate
 
 
 # =============================================================================
-# Thread-safe job store
+# Config
 # =============================================================================
+
+DATA_DIR = os.environ.get("IKIZAMINI_DATA_DIR", "./ikizamini_data")
+DB_PATH = os.path.join(DATA_DIR, "ikizamini.db")
+JOBS_DIR = os.path.join(DATA_DIR, "jobs")
+
+DEFAULT_TIMEOUT_S = int(os.environ.get("IKIZAMINI_OLLAMA_TIMEOUT", "600"))  # long default
+DEFAULT_MAX_RETRIES = int(os.environ.get("IKIZAMINI_OLLAMA_RETRIES", "4"))
+HEARTBEAT_EVERY_SEC = 10
+
+os.makedirs(DATA_DIR, exist_ok=True)
+os.makedirs(JOBS_DIR, exist_ok=True)
 
 app = Flask(__name__)
 
-JOBS: Dict[str, Dict[str, Any]] = {}
-JOBS_LOCK = threading.Lock()
+# Background thread coordination
+RUNNER_LOCK = threading.Lock()  # prevents accidentally starting multiple runners for same job concurrently
 
-MAX_LOG_LINES_PER_JOB = 800
 
+# =============================================================================
+# DB Helpers
+# =============================================================================
+
+def db_connect() -> sqlite3.Connection:
+    conn = sqlite3.connect(DB_PATH, check_same_thread=False)
+    conn.row_factory = sqlite3.Row
+    conn.execute("PRAGMA journal_mode=WAL;")
+    conn.execute("PRAGMA synchronous=NORMAL;")
+    conn.execute("PRAGMA busy_timeout=5000;")
+    return conn
+
+
+def db_init() -> None:
+    conn = db_connect()
+    cur = conn.cursor()
+
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS jobs (
+      job_id TEXT PRIMARY KEY,
+      status TEXT NOT NULL,
+      created_at_unix INTEGER NOT NULL,
+      started_at_unix INTEGER,
+      finished_at_unix INTEGER,
+      heartbeat_unix INTEGER,
+      input_filename TEXT,
+      input_path TEXT,
+      config_json TEXT NOT NULL,
+      requested INTEGER DEFAULT 0,
+      completed INTEGER DEFAULT 0,
+      failures_json TEXT DEFAULT '[]',
+      master_path TEXT,
+      log_path TEXT
+    );
+    """)
+
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS objectives (
+      job_id TEXT NOT NULL,
+      objective_id TEXT NOT NULL,
+      objective_text TEXT NOT NULL,
+      path_json TEXT NOT NULL,
+      status TEXT NOT NULL,
+      started_at_unix INTEGER,
+      finished_at_unix INTEGER,
+      error_text TEXT,
+      output_txt_path TEXT,
+      output_json_path TEXT,
+      PRIMARY KEY(job_id, objective_id),
+      FOREIGN KEY(job_id) REFERENCES jobs(job_id)
+    );
+    """)
+
+    conn.commit()
+    conn.close()
+
+
+def db_mark_stale_jobs_as_interrupted(stale_after_sec: int = 3600) -> None:
+    """If server crashed, jobs may be stuck in running/queued. Mark as interrupted if heartbeat is old."""
+    now = int(time.time())
+    conn = db_connect()
+    cur = conn.cursor()
+
+    cur.execute("""
+      SELECT job_id, status, heartbeat_unix
+      FROM jobs
+      WHERE status IN ('queued','running')
+    """)
+    rows = cur.fetchall()
+
+    for r in rows:
+        hb = r["heartbeat_unix"] or 0
+        if hb and (now - hb) > stale_after_sec:
+            cur.execute("UPDATE jobs SET status=? WHERE job_id=?", ("interrupted", r["job_id"]))
+        elif not hb and (now - (r["created_at_unix"] or now)) > stale_after_sec:
+            cur.execute("UPDATE jobs SET status=? WHERE job_id=?", ("interrupted", r["job_id"]))
+
+    conn.commit()
+    conn.close()
+
+
+# =============================================================================
+# Logging (file-based + safe stdout)
+# =============================================================================
 
 def _now_ts() -> str:
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
-def log_progress(message: str, job_id: Optional[str] = None):
-    """Print to terminal and (optionally) append to job logs."""
-    line = f"[{_now_ts()}] {message}"
-    print(line, flush=True)
-    sys.stdout.flush()
+def safe_print(line: str) -> None:
+    """Print without crashing if stdout is closed (BrokenPipe)."""
+    try:
+        print(line, flush=True)
+    except BrokenPipeError:
+        # stdout closed (SSH disconnect); ignore
+        pass
+    except Exception:
+        pass
 
-    if job_id:
-        with JOBS_LOCK:
-            job = JOBS.get(job_id)
-            if job is not None:
-                logs = job.setdefault("logs", [])
-                logs.append(line)
-                if len(logs) > MAX_LOG_LINES_PER_JOB:
-                    del logs[: len(logs) - MAX_LOG_LINES_PER_JOB]
+
+def append_job_log(job_id: str, message: str) -> None:
+    """Append line to job log file and try to print to stdout safely."""
+    conn = db_connect()
+    cur = conn.cursor()
+    cur.execute("SELECT log_path FROM jobs WHERE job_id=?", (job_id,))
+    row = cur.fetchone()
+    conn.close()
+
+    if not row:
+        return
+
+    log_path = row["log_path"]
+    if not log_path:
+        return
+
+    line = f"[{_now_ts()}] {message}"
+    # Write to file (durable)
+    try:
+        with open(log_path, "a", encoding="utf-8") as f:
+            f.write(line + "\n")
+    except Exception:
+        # If file writing fails, we still try stdout
+        pass
+
+    safe_print(line)
+
+
+def read_log_tail(log_path: str, max_lines: int = 120) -> List[str]:
+    """Read last N lines from a potentially large file efficiently."""
+    if not log_path or not os.path.exists(log_path):
+        return []
+    try:
+        # Simple approach: read from end in chunks
+        with open(log_path, "rb") as f:
+            f.seek(0, os.SEEK_END)
+            size = f.tell()
+            block = 4096
+            data = b""
+            while size > 0 and data.count(b"\n") <= max_lines:
+                step = min(block, size)
+                f.seek(size - step)
+                data = f.read(step) + data
+                size -= step
+            lines = data.splitlines()[-max_lines:]
+            return [ln.decode("utf-8", errors="replace") for ln in lines]
+    except Exception:
+        return []
 
 
 # =============================================================================
@@ -158,50 +297,10 @@ def collect_learning_objectives_with_paths(roots: List[ObjNode]) -> List[Dict[st
 
 
 # =============================================================================
-# Ollama client + JSON extraction
+# JSON extraction + normalization helpers
 # =============================================================================
 
-def backoff_sleep(attempt: int) -> None:
-    base = min(2 ** attempt, 10)
-    jitter = random.uniform(0.0, 0.4)
-    time.sleep(base + jitter)
-
-
-def ollama_chat(
-    base_url: str,
-    model: str,
-    system: str,
-    user: str,
-    temperature: float,
-    num_ctx: int,
-    timeout_s: int,
-    format_spec: Any = "json",  # "json" or a schema dict (if supported)
-) -> str:
-    url = base_url.rstrip("/") + "/api/chat"
-
-    def _post(payload: Dict[str, Any]) -> requests.Response:
-        return requests.post(url, json=payload, timeout=timeout_s)
-
-    payload = {
-        "model": model,
-        "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
-        "stream": False,
-        "format": format_spec,
-        "options": {"temperature": temperature, "num_ctx": num_ctx},
-    }
-
-    r = _post(payload)
-    if r.status_code >= 400 and isinstance(format_spec, dict):
-        # Some Ollama builds/models reject schema dict; fall back to "json"
-        payload["format"] = "json"
-        r = _post(payload)
-
-    r.raise_for_status()
-    data = r.json()
-    return (data.get("message", {}) or {}).get("content", "").strip()
-
-
-JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.DOTALL)
+JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\}|\[.*?\])\s*```", re.DOTALL)
 
 
 def extract_json_value(text: str) -> Any:
@@ -224,10 +323,6 @@ def extract_json_value(text: str) -> Any:
 
     raise ValueError("No JSON value found in model output.")
 
-
-# =============================================================================
-# Normalization helpers (confusables + key mapping)
-# =============================================================================
 
 def _normalize_choice_letter(x: Any) -> str:
     s = str(x or "").strip().upper()
@@ -334,7 +429,7 @@ def coerce_ikizamini(value: Any, objective_id: str, objective_text: str) -> Dict
 
 
 # =============================================================================
-# JSON Schemas
+# Schemas
 # =============================================================================
 
 IKIZAMINI_SCHEMA: Dict[str, Any] = {
@@ -409,7 +504,7 @@ def validate_manager(obj: Dict[str, Any]) -> None:
 
 
 # =============================================================================
-# Agent prompts
+# Prompts
 # =============================================================================
 
 WORKER_SYSTEM = """You are workerAgent.
@@ -453,18 +548,11 @@ Output rules:
 - If pass: revised_questions should match input (minor normalization ok).
 - If fail: revised_questions must be corrected to satisfy criteria.
 
-Return ONLY JSON matching this schema exactly:
-{
-  "status": "pass" or "fail",
-  "issues": ["..."],
-  "revised_questions": [ {question objects with id/stem/choices/correct_choice/solution/explanation/common_mistake_notes} ],
-  "score": {"relevance":0-5,"distinctness":0-5,"unique_solution":0-5,"explanations":0-5}
-}
-No extra keys. No markdown. No objective_id/objective_text/questions/difficulty_profile keys.
+Return ONLY JSON with keys: status, issues, revised_questions, score.
+No objective_id/objective_text/questions/difficulty_profile keys.
 """
 
-MANAGER_FIX_SYSTEM = """You are managerAgent.
-You MUST output valid JSON matching the manager schema EXACTLY.
+MANAGER_FIX_SYSTEM = """You MUST output valid JSON matching the manager schema EXACTLY.
 
 Do not include keys like objective_id/objective_text/questions/difficulty_profile.
 Only include: status, issues, revised_questions, score.
@@ -473,47 +561,49 @@ Return ONLY JSON (no markdown, no extra text).
 
 
 # =============================================================================
-# Local validation checks
+# Ollama calls (robust)
 # =============================================================================
 
-def local_issues(candidate: Dict[str, Any]) -> List[str]:
-    issues: List[str] = []
-    qs = candidate.get("questions", [])
-    if len(qs) != 7:
-        issues.append(f"Expected exactly 7 questions; got {len(qs)}.")
-
-    stems = [q.get("stem", "").strip() for q in qs if isinstance(q, dict)]
-    if len(stems) != len(set(stems)):
-        issues.append("Duplicate stems detected (exact match).")
-
-    for i, q in enumerate(qs, start=1):
-        if not isinstance(q, dict):
-            issues.append(f"Q{i}: not an object.")
-            continue
-
-        ch = q.get("choices", {})
-        if not isinstance(ch, dict):
-            issues.append(f"Q{i}: choices is not an object.")
-            continue
-
-        vals = [str(ch.get(k, "")).strip() for k in ["A", "B", "C", "D"]]
-        if len(set(vals)) != 4:
-            issues.append(f"Q{i}: duplicate choice text detected (A/B/C/D must be distinct).")
-
-        cc = q.get("correct_choice")
-        if cc not in {"A", "B", "C", "D"}:
-            issues.append(f"Q{i}: correct_choice is invalid: {cc}")
-
-        for k in ["solution", "explanation", "common_mistake_notes"]:
-            if not str(q.get(k, "")).strip():
-                issues.append(f"Q{i}: missing/empty field: {k}")
-
-    return issues
+def backoff_sleep(attempt: int) -> None:
+    base = min(2 ** attempt, 30)
+    jitter = random.uniform(0.0, 0.8)
+    time.sleep(base + jitter)
 
 
-# =============================================================================
-# Ollama JSON call helper
-# =============================================================================
+def ollama_chat(
+    base_url: str,
+    model: str,
+    system: str,
+    user: str,
+    temperature: float,
+    num_ctx: int,
+    timeout_s: int,
+    format_spec: Any = "json",
+) -> str:
+    url = base_url.rstrip("/") + "/api/chat"
+
+    payload = {
+        "model": model,
+        "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
+        "stream": False,
+        "format": format_spec,
+        "options": {"temperature": temperature, "num_ctx": num_ctx},
+    }
+
+    # Important: use a tuple timeout to avoid stalls (connect, read)
+    # connect timeout shorter, read timeout long
+    timeout = (10, timeout_s)
+
+    r = requests.post(url, json=payload, timeout=timeout)
+    if r.status_code >= 400 and isinstance(format_spec, dict):
+        # Some setups reject schema dict; fallback to "json"
+        payload["format"] = "json"
+        r = requests.post(url, json=payload, timeout=timeout)
+
+    r.raise_for_status()
+    data = r.json()
+    return (data.get("message", {}) or {}).get("content", "").strip()
+
 
 def call_ollama_json(
     base_url: str,
@@ -521,10 +611,10 @@ def call_ollama_json(
     system: str,
     user: str,
     validate_fn,
-    temperature: float = 0.2,
-    num_ctx: int = 8192,
-    timeout_s: int = 180,
-    max_retries: int = 4,
+    temperature: float,
+    num_ctx: int,
+    timeout_s: int,
+    max_retries: int,
     coerce_fn=None,
     format_spec: Any = "json",
 ) -> Dict[str, Any]:
@@ -544,35 +634,76 @@ def call_ollama_json(
                 format_spec=format_spec,
             )
             last_raw = raw
-
             val = extract_json_value(raw)
             if coerce_fn is not None:
                 val = coerce_fn(val)
-
             validate_fn(val)
             return val
+        except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectTimeout) as e:
+            last_err = e
+            backoff_sleep(attempt)
+        except requests.exceptions.ConnectionError as e:
+            last_err = e
+            backoff_sleep(attempt)
         except Exception as e:
             last_err = e
-            if attempt < max_retries - 1:
-                # keep it short
-                pass
             backoff_sleep(attempt)
 
-    preview = (last_raw[:800] + "...") if (last_raw and len(last_raw) > 800) else (last_raw or "")
+    preview = ""
+    if last_raw:
+        preview = last_raw[:800] + ("..." if len(last_raw) > 800 else "")
     raise RuntimeError(f"Ollama call failed after retries. Last error: {last_err}. Raw preview: {preview}")
 
 
 # =============================================================================
-# Worker / Manager functions
+# Quality checks
 # =============================================================================
 
-def worker_generate(base_url: str, model: str, objective_id: str, objective_text: str, num_ctx: int) -> Dict[str, Any]:
+def local_issues(candidate: Dict[str, Any]) -> List[str]:
+    issues: List[str] = []
+    qs = candidate.get("questions", [])
+    if len(qs) != 7:
+        issues.append(f"Expected exactly 7 questions; got {len(qs)}.")
+
+    stems = [q.get("stem", "").strip() for q in qs if isinstance(q, dict)]
+    if len(stems) != len(set(stems)):
+        issues.append("Duplicate stems detected (exact match).")
+
+    for i, q in enumerate(qs, start=1):
+        if not isinstance(q, dict):
+            issues.append(f"Q{i}: not an object.")
+            continue
+        ch = q.get("choices", {})
+        if not isinstance(ch, dict):
+            issues.append(f"Q{i}: choices is not an object.")
+            continue
+        vals = [str(ch.get(k, "")).strip() for k in ["A", "B", "C", "D"]]
+        if len(set(vals)) != 4:
+            issues.append(f"Q{i}: duplicate choice text detected (A/B/C/D must be distinct).")
+        cc = q.get("correct_choice")
+        if cc not in {"A", "B", "C", "D"}:
+            issues.append(f"Q{i}: correct_choice is invalid: {cc}")
+        for k in ["solution", "explanation", "common_mistake_notes"]:
+            if not str(q.get(k, "")).strip():
+                issues.append(f"Q{i}: missing/empty field: {k}")
+    return issues
+
+
+# =============================================================================
+# Worker/Manager orchestration
+# =============================================================================
+
+def worker_generate(base_url: str, model: str, objective_id: str, objective_text: str, num_ctx: int,
+                    timeout_s: int, max_retries: int) -> Dict[str, Any]:
     user = f"""Learning objective:
 - id: {objective_id}
 - text: {objective_text}
 
 Generate EXACTLY 7 distinct multiple-choice questions.
-Return ONLY a JSON object with keys: objective_id, objective_text, difficulty_profile, questions.
+
+Return ONLY a JSON object with keys:
+objective_id, objective_text, difficulty_profile, questions
+
 No extra keys.
 """
     return call_ollama_json(
@@ -583,20 +714,16 @@ No extra keys.
         validate_fn=validate_ikizamini,
         temperature=0.25,
         num_ctx=num_ctx,
+        timeout_s=timeout_s,
+        max_retries=max_retries,
         coerce_fn=lambda v: coerce_ikizamini(v, objective_id, objective_text),
         format_spec=IKIZAMINI_SCHEMA,
     )
 
 
-def worker_repair(
-    base_url: str,
-    model: str,
-    objective_id: str,
-    objective_text: str,
-    candidate: Dict[str, Any],
-    issues: List[str],
-    num_ctx: int,
-) -> Dict[str, Any]:
+def worker_repair(base_url: str, model: str, objective_id: str, objective_text: str,
+                  candidate: Dict[str, Any], issues: List[str], num_ctx: int,
+                  timeout_s: int, max_retries: int) -> Dict[str, Any]:
     user = f"""Learning objective:
 - id: {objective_id}
 - text: {objective_text}
@@ -618,18 +745,19 @@ No extra keys.
         validate_fn=validate_ikizamini,
         temperature=0.2,
         num_ctx=num_ctx,
+        timeout_s=timeout_s,
+        max_retries=max_retries,
         coerce_fn=lambda v: coerce_ikizamini(v, objective_id, objective_text),
         format_spec=IKIZAMINI_SCHEMA,
     )
 
 
 def sanitize_manager_output(value: Any, fallback_questions: List[Dict[str, Any]]) -> Dict[str, Any]:
-    # Manager returns IKIZAMINI-shaped output sometimes
     if isinstance(value, dict) and isinstance(value.get("questions"), list):
         rq = sanitize_question_list(value.get("questions"))
         return {
             "status": "pass",
-            "issues": ["Manager returned IKIZAMINI-shaped output; treated as pass and used its questions."],
+            "issues": ["Manager returned IKIZAMINI-shaped output; treated as pass."],
             "revised_questions": rq if len(rq) == 7 else fallback_questions,
             "score": {"relevance": 4, "distinctness": 4, "unique_solution": 4, "explanations": 4},
         }
@@ -638,7 +766,7 @@ def sanitize_manager_output(value: Any, fallback_questions: List[Dict[str, Any]]
         rq = sanitize_question_list(value)
         return {
             "status": "pass",
-            "issues": ["Manager returned a bare list; treated it as revised_questions."],
+            "issues": ["Manager returned bare list; treated as revised_questions."],
             "revised_questions": rq if len(rq) == 7 else fallback_questions,
             "score": {"relevance": 4, "distinctness": 4, "unique_solution": 4, "explanations": 4},
         }
@@ -688,14 +816,8 @@ def sanitize_manager_output(value: Any, fallback_questions: List[Dict[str, Any]]
     }
 
 
-def manager_review(
-    base_url: str,
-    model: str,
-    objective_id: str,
-    objective_text: str,
-    candidate: Dict[str, Any],
-    num_ctx: int,
-) -> Dict[str, Any]:
+def manager_review(base_url: str, model: str, objective_id: str, objective_text: str,
+                   candidate: Dict[str, Any], num_ctx: int, timeout_s: int, max_retries: int) -> Dict[str, Any]:
     fallback_questions = sanitize_question_list(candidate.get("questions", []))
 
     base_user = f"""Learning objective:
@@ -705,7 +827,7 @@ def manager_review(
 Candidate JSON:
 {json.dumps(candidate, ensure_ascii=False)}
 
-Return ONLY a JSON object matching the manager schema.
+Return ONLY JSON with keys: status, issues, revised_questions, score.
 """
 
     last_err: Optional[str] = None
@@ -736,21 +858,19 @@ No objective_id/objective_text/questions/difficulty_profile keys.
                 user=user,
                 temperature=0.1,
                 num_ctx=num_ctx,
-                timeout_s=180,
+                timeout_s=timeout_s,
                 format_spec=MANAGER_SCHEMA,
             )
             last_raw = raw
             val = extract_json_value(raw)
-
             val2 = sanitize_manager_output(val, fallback_questions)
             validate_manager(val2)
             return val2
-
         except Exception as e:
             last_err = str(e)[:1200]
             backoff_sleep(attempt)
 
-    # Final safe fallback
+    # Safe fallback
     val_fallback = {
         "status": "pass",
         "issues": ["Manager failed schema compliance after retries; used candidate questions unchanged."],
@@ -769,16 +889,27 @@ def generate_for_objective_strict(
     objective_text: str,
     max_rounds: int,
     num_ctx: int,
+    timeout_s: int,
+    max_retries: int,
 ) -> Dict[str, Any]:
-    candidate = worker_generate(base_url, worker_model, objective_id, objective_text, num_ctx=num_ctx)
+    candidate = worker_generate(
+        base_url, worker_model, objective_id, objective_text,
+        num_ctx=num_ctx, timeout_s=timeout_s, max_retries=max_retries
+    )
 
     for _ in range(max_rounds):
         issues = local_issues(candidate)
         if issues:
-            candidate = worker_repair(base_url, worker_model, objective_id, objective_text, candidate, issues, num_ctx=num_ctx)
+            candidate = worker_repair(
+                base_url, worker_model, objective_id, objective_text,
+                candidate, issues, num_ctx=num_ctx, timeout_s=timeout_s, max_retries=max_retries
+            )
             continue
 
-        review = manager_review(base_url, manager_model, objective_id, objective_text, candidate, num_ctx=num_ctx)
+        review = manager_review(
+            base_url, manager_model, objective_id, objective_text,
+            candidate, num_ctx=num_ctx, timeout_s=timeout_s, max_retries=max_retries
+        )
 
         candidate = {
             "objective_id": objective_id,
@@ -792,7 +923,10 @@ def generate_for_objective_strict(
             return candidate
 
         mgr_issues = review.get("issues", []) or ["Manager marked fail without detailed issues."]
-        candidate = worker_repair(base_url, worker_model, objective_id, objective_text, candidate, mgr_issues, num_ctx=num_ctx)
+        candidate = worker_repair(
+            base_url, worker_model, objective_id, objective_text,
+            candidate, mgr_issues, num_ctx=num_ctx, timeout_s=timeout_s, max_retries=max_retries
+        )
 
     raise RuntimeError(f"Could not reach manager approval after {max_rounds} rounds for objective {objective_id}.")
 
@@ -814,7 +948,7 @@ def safe_filename(s: str, max_len: int = 90) -> str:
 def unique_objective_filename(objective_id: str, objective_text: str) -> str:
     base = f"{objective_id}|{objective_text}".encode("utf-8")
     suffix = hashlib.sha256(base).hexdigest()[:8]
-    return f"{objective_id}_{safe_filename(objective_text)}_{suffix}.txt"
+    return f"{objective_id}_{safe_filename(objective_text)}_{suffix}"
 
 
 def format_questions_block(ikizamini_set: Dict[str, Any]) -> str:
@@ -838,42 +972,6 @@ def format_questions_block(ikizamini_set: Dict[str, Any]) -> str:
     return "\n".join(lines).strip() + "\n"
 
 
-def write_master_from_tree(roots: List[ObjNode], generated_by_id: Dict[str, Dict[str, Any]], meta: Dict[str, Any]) -> str:
-    def heading_line(node: ObjNode) -> str:
-        return f"{node.obj_id} {node.title}"
-
-    def render(node: ObjNode, level: int) -> List[str]:
-        indent = "   " * max(level - 1, 0)
-        out: List[str] = [f"{indent}{heading_line(node)}"]
-
-        if is_learning_objective_id(node.obj_id):
-            ik = generated_by_id.get(node.obj_id)
-            if ik:
-                out.append(f"{indent}{'-' * 78}")
-                block = format_questions_block(ik).replace("\n", "\n" + indent)
-                out.append(indent + block.rstrip())
-            else:
-                out.append(f"{indent}(No generated output for this objective.)")
-        else:
-            for c in node.children:
-                out.extend(render(c, level + 1))
-        return out
-
-    lines: List[str] = []
-    lines.append("IKIZAMINI MASTER OUTPUT (Ollama UI)")
-    lines.append(f"Worker model: {meta.get('worker_model','')}")
-    lines.append(f"Manager model: {meta.get('manager_model','')}")
-    lines.append(f"Ollama URL: {meta.get('ollama_url','')}")
-    lines.append(f"Generated at (unix): {meta.get('generated_at_unix','')}")
-    lines.append(f"Objectives completed: {meta.get('completed',0)} / {meta.get('requested',0)}")
-    lines.append("\n" + "#" * 78 + "\n")
-
-    for r in roots:
-        lines.extend(render(r, 1))
-        lines.append("")
-    return "\n".join(lines).rstrip() + "\n"
-
-
 def objective_file_text(path: List[Tuple[str, str]], objective_id: str, objective_text: str,
                         ikizamini_set: Optional[Dict[str, Any]], error: Optional[str]) -> str:
     lines: List[str] = []
@@ -894,151 +992,407 @@ def objective_file_text(path: List[Tuple[str, str]], objective_id: str, objectiv
         lines.append("STATUS: FAILED TO GENERATE QUESTIONS FOR THIS OBJECTIVE")
         lines.append("-" * 78)
         lines.append((error or "Unknown error.").strip())
-        lines.append("\nSuggested action: increase max rounds or switch models.\n")
+        lines.append("\nSuggested action: increase max rounds / timeout or switch models.\n")
 
     return "\n".join(lines).rstrip() + "\n"
 
 
+def write_master_incremental(input_text: str, roots: List[ObjNode], outputs_by_id: Dict[str, str], meta: Dict[str, Any]) -> str:
+    """Build a master file from the outline tree and any available per-objective .txt blocks."""
+    def heading_line(node: ObjNode) -> str:
+        return f"{node.obj_id} {node.title}"
+
+    def render(node: ObjNode, level: int) -> List[str]:
+        indent = "   " * max(level - 1, 0)
+        out: List[str] = [f"{indent}{heading_line(node)}"]
+
+        if is_learning_objective_id(node.obj_id):
+            block = outputs_by_id.get(node.obj_id)
+            if block:
+                # indent the block
+                out.append(f"{indent}{'-' * 78}")
+                out.append(block.replace("\n", "\n" + indent).rstrip())
+            else:
+                out.append(f"{indent}(No generated output for this objective yet.)")
+        else:
+            for c in node.children:
+                out.extend(render(c, level + 1))
+        return out
+
+    lines: List[str] = []
+    lines.append("IKIZAMINI MASTER OUTPUT (Durable)")
+    lines.append(f"Worker model: {meta.get('worker_model','')}")
+    lines.append(f"Manager model: {meta.get('manager_model','')}")
+    lines.append(f"Ollama URL: {meta.get('ollama_url','')}")
+    lines.append(f"Generated at (unix): {meta.get('generated_at_unix','')}")
+    lines.append(f"Objectives completed: {meta.get('completed',0)} / {meta.get('requested',0)}")
+    lines.append("\n" + "#" * 78 + "\n")
+
+    for r in roots:
+        lines.extend(render(r, 1))
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
 # =============================================================================
-# Background job runner (prevents UI timeout)
+# Persistence: job dir layout
 # =============================================================================
 
-def run_generation_job(job_id: str, content: str, config: Dict[str, Any]) -> None:
-    """
-    Runs in a background thread. Updates JOBS[job_id] as it progresses.
-    """
-    try:
-        with JOBS_LOCK:
-            JOBS[job_id]["status"] = "running"
-            JOBS[job_id]["started_at_unix"] = int(time.time())
+def job_dir(job_id: str) -> str:
+    p = os.path.join(JOBS_DIR, job_id)
+    os.makedirs(p, exist_ok=True)
+    return p
 
-        log_progress("============================================================", job_id)
-        log_progress("BACKGROUND GENERATION STARTED", job_id)
-        log_progress("============================================================", job_id)
 
-        ollama_url = config["ollama_url"]
-        worker_model = config["worker_model"]
-        manager_model = config["manager_model"]
-        max_rounds = config["max_rounds"]
-        num_ctx = config["num_ctx"]
-        limit = config["limit"]
+def outputs_dir(job_id: str) -> str:
+    p = os.path.join(job_dir(job_id), "outputs")
+    os.makedirs(p, exist_ok=True)
+    return p
 
-        log_progress("Parsing objectives from file...", job_id)
+
+def ensure_job_files(job_id: str) -> Tuple[str, str]:
+    """Return (input_path, log_path). Create log file if missing."""
+    jd = job_dir(job_id)
+    inp = os.path.join(jd, "input.txt")
+    logp = os.path.join(jd, "job.log")
+    if not os.path.exists(logp):
+        with open(logp, "a", encoding="utf-8") as f:
+            f.write(f"[{_now_ts()}] Log created for job {job_id}\n")
+    return inp, logp
+
+
+def write_output_files(job_id: str, obj_id: str, obj_text: str, path: List[Tuple[str, str]],
+                       ik_set: Optional[Dict[str, Any]], error: Optional[str]) -> Tuple[str, str]:
+    """Write per-objective .txt and .json (if present). Return (txt_path, json_path_or_empty)."""
+    base = unique_objective_filename(obj_id, obj_text)
+    od = outputs_dir(job_id)
+    txt_path = os.path.join(od, base + ".txt")
+    json_path = os.path.join(od, base + ".json")
+
+    txt = objective_file_text(path, obj_id, obj_text, ik_set, error)
+    with open(txt_path, "w", encoding="utf-8") as f:
+        f.write(txt)
+
+    if ik_set is not None:
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(ik_set, f, ensure_ascii=False, indent=2)
+        return txt_path, json_path
+
+    # If failed, still write a json file? Keep empty to indicate none.
+    return txt_path, ""
+
+
+def build_zip_from_outputs(job_id: str) -> bytes:
+    """Zip whatever outputs exist right now (partial allowed)."""
+    od = outputs_dir(job_id)
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
+        # include outputs directory contents
+        for root, _dirs, files in os.walk(od):
+            for fn in files:
+                full = os.path.join(root, fn)
+                arc = os.path.relpath(full, job_dir(job_id))
+                zf.write(full, arcname=arc)
+
+        # include index.txt built from DB
+        index = build_index_text(job_id)
+        zf.writestr("outputs/index.txt", index)
+
+        # include master if exists or build partial master
+        master = build_master_text(job_id)
+        zf.writestr("master_partial.txt", master)
+
+    return buf.getvalue()
+
+
+def build_index_text(job_id: str) -> str:
+    conn = db_connect()
+    cur = conn.cursor()
+
+    cur.execute("SELECT * FROM jobs WHERE job_id=?", (job_id,))
+    job = cur.fetchone()
+
+    cur.execute("""
+      SELECT objective_id, objective_text, status, output_txt_path
+      FROM objectives
+      WHERE job_id=?
+      ORDER BY objective_id
+    """, (job_id,))
+    objs = cur.fetchall()
+    conn.close()
+
+    if not job:
+        return "Job not found.\n"
+
+    cfg = json.loads(job["config_json"])
+    lines: List[str] = []
+    lines.append("IKIZAMINI PER-OBJECTIVE INDEX (Durable)")
+    lines.append(f"Job: {job_id}")
+    lines.append(f"Status: {job['status']}")
+    lines.append(f"Ollama URL: {cfg.get('ollama_url','')}")
+    lines.append(f"Worker model: {cfg.get('worker_model','')}")
+    lines.append(f"Manager model: {cfg.get('manager_model','')}")
+    lines.append(f"Created at (unix): {job['created_at_unix']}")
+    lines.append(f"Requested: {job['requested']}  Completed: {job['completed']}")
+    lines.append("")
+    for r in objs:
+        st = r["status"]
+        p = r["output_txt_path"] or ""
+        lines.append(f"- {r['objective_id']} {r['objective_text']} [{st}] {p}")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def build_master_text(job_id: str) -> str:
+    """Build partial or full master from input outline + per-objective txt content from disk."""
+    conn = db_connect()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM jobs WHERE job_id=?", (job_id,))
+    job = cur.fetchone()
+    conn.close()
+    if not job:
+        return "Job not found.\n"
+
+    input_path = job["input_path"]
+    if not input_path or not os.path.exists(input_path):
+        return "Input file missing; cannot build master.\n"
+
+    with open(input_path, "r", encoding="utf-8", errors="replace") as f:
+        input_text = f.read()
+
+    roots = parse_objectives(input_text)
+
+    # Load any available objective outputs: map objective_id -> txt content
+    conn = db_connect()
+    cur = conn.cursor()
+    cur.execute("""
+      SELECT objective_id, output_txt_path
+      FROM objectives
+      WHERE job_id=? AND output_txt_path IS NOT NULL
+    """, (job_id,))
+    rows = cur.fetchall()
+    conn.close()
+
+    outputs_by_id: Dict[str, str] = {}
+    for r in rows:
+        p = r["output_txt_path"]
+        if p and os.path.exists(p):
+            try:
+                with open(p, "r", encoding="utf-8", errors="replace") as f:
+                    outputs_by_id[r["objective_id"]] = f.read()
+            except Exception:
+                pass
+
+    cfg = json.loads(job["config_json"])
+    meta = {
+        "ollama_url": cfg.get("ollama_url", ""),
+        "worker_model": cfg.get("worker_model", ""),
+        "manager_model": cfg.get("manager_model", ""),
+        "generated_at_unix": int(time.time()),
+        "requested": job["requested"],
+        "completed": job["completed"],
+    }
+    return write_master_incremental(input_text, roots, outputs_by_id, meta)
+
+
+# =============================================================================
+# Job runner (background)
+# =============================================================================
+
+def update_job_heartbeat(job_id: str) -> None:
+    conn = db_connect()
+    conn.execute("UPDATE jobs SET heartbeat_unix=? WHERE job_id=?", (int(time.time()), job_id))
+    conn.commit()
+    conn.close()
+
+
+def run_job(job_id: str, resume: bool = False) -> None:
+    """Background worker: generate objectives, persist after each objective."""
+    with RUNNER_LOCK:
+        conn = db_connect()
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM jobs WHERE job_id=?", (job_id,))
+        job = cur.fetchone()
+        conn.close()
+
+        if not job:
+            return
+
+        cfg = json.loads(job["config_json"])
+        ollama_url = cfg["ollama_url"]
+        worker_model = cfg["worker_model"]
+        manager_model = cfg["manager_model"]
+        max_rounds = int(cfg["max_rounds"])
+        num_ctx = int(cfg["num_ctx"])
+        limit = int(cfg.get("limit", 0))
+        timeout_s = int(cfg.get("timeout_s", DEFAULT_TIMEOUT_S))
+        max_retries = int(cfg.get("max_retries", DEFAULT_MAX_RETRIES))
+
+        input_path = job["input_path"]
+        if not input_path or not os.path.exists(input_path):
+            append_job_log(job_id, "ERROR: input file missing; cannot start.")
+            conn = db_connect()
+            conn.execute("UPDATE jobs SET status=?, finished_at_unix=? WHERE job_id=?",
+                         ("error", int(time.time()), job_id))
+            conn.commit()
+            conn.close()
+            return
+
+        # Mark running
+        conn = db_connect()
+        conn.execute("UPDATE jobs SET status=?, started_at_unix=?, heartbeat_unix=? WHERE job_id=?",
+                     ("running", job["started_at_unix"] or int(time.time()), int(time.time()), job_id))
+        conn.commit()
+        conn.close()
+
+        append_job_log(job_id, "============================================================")
+        append_job_log(job_id, "BACKGROUND GENERATION STARTED")
+        append_job_log(job_id, f"Ollama URL: {ollama_url}")
+        append_job_log(job_id, f"Worker model: {worker_model}")
+        append_job_log(job_id, f"Manager model: {manager_model}")
+        append_job_log(job_id, f"Max rounds: {max_rounds}  num_ctx: {num_ctx}")
+        append_job_log(job_id, f"Timeout: {timeout_s}s  Retries: {max_retries}")
+        append_job_log(job_id, "============================================================")
+
+        with open(input_path, "r", encoding="utf-8", errors="replace") as f:
+            content = f.read()
+
         roots = parse_objectives(content)
         objectives = collect_learning_objectives_with_paths(roots)
-
         if limit and limit > 0:
             objectives = objectives[:limit]
-            log_progress(f"Limited to first {limit} objectives", job_id)
 
-        total = len(objectives)
-        with JOBS_LOCK:
-            JOBS[job_id]["requested"] = total
+        # Ensure objectives exist in DB (idempotent)
+        conn = db_connect()
+        cur = conn.cursor()
+        for obj in objectives:
+            cur.execute("""
+              INSERT OR IGNORE INTO objectives
+              (job_id, objective_id, objective_text, path_json, status)
+              VALUES (?, ?, ?, ?, ?)
+            """, (job_id, obj["objective_id"], obj["objective_text"],
+                  json.dumps(obj["path"], ensure_ascii=False), "pending"))
+        conn.commit()
+        conn.close()
 
-        log_progress(f"Found {total} learning objectives to process", job_id)
-        log_progress("------------------------------------------------------------", job_id)
+        # Set requested if needed
+        conn = db_connect()
+        conn.execute("UPDATE jobs SET requested=? WHERE job_id=?", (len(objectives), job_id))
+        conn.commit()
+        conn.close()
 
-        generated_by_id: Dict[str, Dict[str, Any]] = {}
-        failures: List[str] = []
+        failures: List[str] = json.loads(job["failures_json"] or "[]")
 
-        zip_buffer = io.BytesIO()
-        with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zf:
-            index_lines = []
-            index_lines.append("IKIZAMINI PER-OBJECTIVE INDEX (Ollama UI)")
-            index_lines.append(f"Ollama URL: {ollama_url}")
-            index_lines.append(f"Worker model: {worker_model}")
-            index_lines.append(f"Manager model: {manager_model}")
-            index_lines.append(f"Generated at (unix): {int(time.time())}")
-            index_lines.append("")
+        last_hb = time.time()
 
-            for i, obj in enumerate(objectives, start=1):
-                obj_id = obj["objective_id"]
-                obj_text = obj["objective_text"]
-                path = obj["path"]
+        for idx, obj in enumerate(objectives, start=1):
+            # heartbeat
+            if time.time() - last_hb >= HEARTBEAT_EVERY_SEC:
+                update_job_heartbeat(job_id)
+                last_hb = time.time()
 
-                log_progress(f"[{i}/{total}] Processing: {obj_id} - {obj_text[:60]}...", job_id)
-                start = time.time()
+            obj_id = obj["objective_id"]
+            obj_text = obj["objective_text"]
+            path = obj["path"]
 
-                with JOBS_LOCK:
-                    JOBS[job_id]["current_objective"] = f"{obj_id} {obj_text}"
+            # If resuming, skip completed objectives
+            if resume:
+                conn = db_connect()
+                cur = conn.cursor()
+                cur.execute("""
+                  SELECT status FROM objectives WHERE job_id=? AND objective_id=?
+                """, (job_id, obj_id))
+                row = cur.fetchone()
+                conn.close()
+                if row and row["status"] in ("done", "failed"):
+                    # still count completion in job.completed later
+                    continue
 
-                try:
-                    ik = generate_for_objective_strict(
-                        base_url=ollama_url,
-                        worker_model=worker_model,
-                        manager_model=manager_model,
-                        objective_id=obj_id,
-                        objective_text=obj_text,
-                        max_rounds=max_rounds,
-                        num_ctx=num_ctx,
-                    )
-                    validate_ikizamini(ik)
-                    generated_by_id[obj_id] = ik
+            append_job_log(job_id, f"[{idx}/{len(objectives)}] Processing: {obj_id} - {obj_text[:70]}...")
 
-                    elapsed = time.time() - start
-                    log_progress(f"  ✓ Success ({elapsed:.1f}s)", job_id)
+            conn = db_connect()
+            conn.execute("""
+              UPDATE objectives
+              SET status=?, started_at_unix=?, error_text=NULL
+              WHERE job_id=? AND objective_id=?
+            """, ("running", int(time.time()), job_id, obj_id))
+            conn.commit()
+            conn.close()
 
-                    with JOBS_LOCK:
-                        JOBS[job_id]["completed"] = len(generated_by_id)
+            start = time.time()
+            ik: Optional[Dict[str, Any]] = None
+            err: Optional[str] = None
 
-                    fname = unique_objective_filename(obj_id, obj_text)
-                    txt = objective_file_text(path, obj_id, obj_text, ik, None)
-                    zf.writestr(fname, txt)
-                    index_lines.append(f"- {fname}")
+            try:
+                ik = generate_for_objective_strict(
+                    base_url=ollama_url,
+                    worker_model=worker_model,
+                    manager_model=manager_model,
+                    objective_id=obj_id,
+                    objective_text=obj_text,
+                    max_rounds=max_rounds,
+                    num_ctx=num_ctx,
+                    timeout_s=timeout_s,
+                    max_retries=max_retries,
+                )
+                validate_ikizamini(ik)
+                elapsed = time.time() - start
+                append_job_log(job_id, f"  ✓ Success ({elapsed:.1f}s)")
+            except Exception as e:
+                elapsed = time.time() - start
+                err = str(e)
+                append_job_log(job_id, f"  ✗ FAILED ({elapsed:.1f}s): {obj_id}: {err}")
+                failures.append(f"{obj_id}: {err}")
 
-                except Exception as e:
-                    elapsed = time.time() - start
-                    msg = f"{obj_id}: {e}"
-                    log_progress(f"  ✗ FAILED ({elapsed:.1f}s): {msg}", job_id)
-                    failures.append(msg)
+            # Persist outputs immediately (TXT always; JSON only on success)
+            txt_path, json_path = write_output_files(job_id, obj_id, obj_text, path, ik, err)
 
-                    with JOBS_LOCK:
-                        JOBS[job_id]["failures"] = failures
+            # Update objective row
+            conn = db_connect()
+            conn.execute("""
+              UPDATE objectives
+              SET status=?, finished_at_unix=?, error_text=?, output_txt_path=?, output_json_path=?
+              WHERE job_id=? AND objective_id=?
+            """, (
+                "done" if ik is not None else "failed",
+                int(time.time()),
+                err,
+                txt_path,
+                json_path or None,
+                job_id,
+                obj_id,
+            ))
+            conn.commit()
+            conn.close()
 
-                    fname = unique_objective_filename(obj_id, obj_text)
-                    txt = objective_file_text(path, obj_id, obj_text, None, str(e))
-                    zf.writestr(fname, txt)
-                    index_lines.append(f"- {fname}  (FAILED)")
+            # Update job completion counts
+            conn = db_connect()
+            cur = conn.cursor()
+            cur.execute("SELECT COUNT(*) AS n FROM objectives WHERE job_id=? AND status IN ('done','failed')", (job_id,))
+            done_count = cur.fetchone()["n"]
+            cur.execute("UPDATE jobs SET completed=?, failures_json=?, heartbeat_unix=? WHERE job_id=?",
+                        (done_count, json.dumps(failures, ensure_ascii=False), int(time.time()), job_id))
+            conn.commit()
+            conn.close()
 
-            zf.writestr("index.txt", "\n".join(index_lines).rstrip() + "\n")
+        # Finish job (even with failures)
+        conn = db_connect()
+        conn.execute("UPDATE jobs SET status=?, finished_at_unix=?, heartbeat_unix=? WHERE job_id=?",
+                     ("done", int(time.time()), int(time.time()), job_id))
+        conn.commit()
+        conn.close()
 
-        meta = {
-            "ollama_url": ollama_url,
-            "worker_model": worker_model,
-            "manager_model": manager_model,
-            "generated_at_unix": int(time.time()),
-            "requested": total,
-            "completed": len(generated_by_id),
-        }
+        append_job_log(job_id, "============================================================")
+        append_job_log(job_id, f"JOB COMPLETED: {job_id}  (outputs persisted to disk + DB)")
+        append_job_log(job_id, "============================================================")
 
-        log_progress("------------------------------------------------------------", job_id)
-        log_progress("Generating master file...", job_id)
-        master_text = write_master_from_tree(roots, generated_by_id, meta)
 
-        with JOBS_LOCK:
-            JOBS[job_id]["master_text"] = master_text
-            JOBS[job_id]["zip_bytes"] = zip_buffer.getvalue()
-            JOBS[job_id]["failures"] = failures
-            JOBS[job_id]["completed"] = len(generated_by_id)
-            JOBS[job_id]["status"] = "done"
-            JOBS[job_id]["finished_at_unix"] = int(time.time())
-            JOBS[job_id]["current_objective"] = ""
-
-        log_progress("============================================================", job_id)
-        log_progress(f"JOB COMPLETED: {job_id} | Success: {len(generated_by_id)} | Failed: {len(failures)}", job_id)
-        log_progress("============================================================", job_id)
-
-    except Exception as e:
-        with JOBS_LOCK:
-            JOBS[job_id]["status"] = "error"
-            JOBS[job_id]["failures"] = [str(e)]
-            JOBS[job_id]["finished_at_unix"] = int(time.time())
-            JOBS[job_id]["current_objective"] = ""
-        log_progress(f"FATAL JOB ERROR: {e}", job_id)
+def start_job_thread(job_id: str, resume: bool = False) -> None:
+    t = threading.Thread(target=run_job, args=(job_id, resume), daemon=True)
+    t.start()
 
 
 # =============================================================================
-# UI templates (polling)
+# UI Templates
 # =============================================================================
 
 PAGE_HOME = """
@@ -1049,68 +1403,112 @@ PAGE_HOME = """
   <title>IKIZAMINI (Ollama) UI</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 32px; }
-    .box { max-width: 980px; }
-    .row { display:flex; gap:16px; margin-bottom:12px; }
+    .box { max-width: 1100px; }
+    .row { display:flex; gap:16px; margin-bottom:12px; flex-wrap: wrap; }
     .row label { width: 180px; font-weight: bold; }
     input[type=text], input[type=number] { width: 420px; padding: 6px; }
-    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; }
+    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; text-decoration:none; display:inline-block;}
     .btn:hover:not(:disabled) { background:#333; }
-    .btn:disabled { opacity:0.6; cursor:not-allowed; background:#666; }
     .muted { color:#666; }
     .card { border:1px solid #ddd; padding:16px; margin-top:18px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border:1px solid #eee; padding:8px; text-align:left; }
+    th { background:#fafafa; }
+    .pill { display:inline-block; padding:4px 10px; border-radius:999px; background:#eee; }
   </style>
 </head>
 <body>
 <div class="box">
   <h1>IKIZAMINI (Local Ollama)</h1>
   <p class="muted">
-    Upload objectives .txt. Generation runs in the background, so the UI will not time out.
+    Durable mode: outputs are saved to disk + SQLite as the job runs.
+    You can recover partial results after a crash.
   </p>
 
-  <form method="post" action="/generate" enctype="multipart/form-data">
-    <div class="row">
-      <label>Objectives .txt</label>
-      <input type="file" name="input_file" accept=".txt" required />
-    </div>
+  <div class="card">
+    <h2>Start New Job</h2>
+    <form method="post" action="/generate" enctype="multipart/form-data">
+      <div class="row">
+        <label>Objectives .txt</label>
+        <input type="file" name="input_file" accept=".txt" required />
+      </div>
 
-    <div class="row">
-      <label>Ollama URL</label>
-      <input type="text" name="ollama_url" value="http://localhost:11434" />
-    </div>
+      <div class="row">
+        <label>Ollama URL</label>
+        <input type="text" name="ollama_url" value="http://localhost:11434" />
+      </div>
 
-    <div class="row">
-      <label>Worker model</label>
-      <input type="text" name="worker_model" value="qwen:32b" />
-    </div>
+      <div class="row">
+        <label>Worker model</label>
+        <input type="text" name="worker_model" value="qwen:32b" />
+      </div>
 
-    <div class="row">
-      <label>Manager model</label>
-      <input type="text" name="manager_model" value="qwen:32b" />
-    </div>
+      <div class="row">
+        <label>Manager model</label>
+        <input type="text" name="manager_model" value="qwen:32b" />
+      </div>
 
-    <div class="row">
-      <label>Max rounds</label>
-      <input type="number" name="max_rounds" value="6" min="1" max="20" />
-    </div>
+      <div class="row">
+        <label>Max rounds</label>
+        <input type="number" name="max_rounds" value="6" min="1" max="30" />
+      </div>
 
-    <div class="row">
-      <label>Context size (num_ctx)</label>
-      <input type="number" name="num_ctx" value="8192" min="1024" max="65536" step="256" />
-    </div>
+      <div class="row">
+        <label>Context size (num_ctx)</label>
+        <input type="number" name="num_ctx" value="8192" min="1024" max="65536" step="256" />
+      </div>
 
-    <div class="row">
-      <label>Limit objectives</label>
-      <input type="number" name="limit" value="0" min="0" max="9999" />
-    </div>
+      <div class="row">
+        <label>Ollama timeout (sec)</label>
+        <input type="number" name="timeout_s" value="600" min="60" max="7200" />
+      </div>
 
-    <button class="btn" type="submit">Start Generation</button>
-  </form>
+      <div class="row">
+        <label>Retries</label>
+        <input type="number" name="max_retries" value="4" min="1" max="20" />
+      </div>
+
+      <div class="row">
+        <label>Limit objectives</label>
+        <input type="number" name="limit" value="0" min="0" max="999999" />
+      </div>
+
+      <button class="btn" type="submit">Start Generation</button>
+    </form>
+  </div>
 
   <div class="card">
-    <div class="muted">
-      After you start a job, you will be redirected to a live status page with download buttons.
-    </div>
+    <h2>Existing Jobs</h2>
+    {% if jobs|length == 0 %}
+      <p class="muted">(No jobs yet.)</p>
+    {% else %}
+      <table>
+        <thead>
+          <tr>
+            <th>Job ID</th>
+            <th>Status</th>
+            <th>Progress</th>
+            <th>Created</th>
+            <th>Open</th>
+            <th>Download ZIP</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for j in jobs %}
+          <tr>
+            <td><span class="pill">{{ j.job_id }}</span></td>
+            <td>{{ j.status }}</td>
+            <td>{{ j.completed }}/{{ j.requested }}</td>
+            <td>{{ j.created_at_unix }}</td>
+            <td><a class="btn" href="/job/{{ j.job_id }}">View</a></td>
+            <td><a class="btn" href="/download/zip/{{ j.job_id }}">ZIP (partial ok)</a></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
   </div>
+
 </div>
 </body>
 </html>
@@ -1134,38 +1532,48 @@ PAGE_JOB = """
     pre { background:#f7f7f7; padding:12px; overflow:auto; max-height: 420px; }
     .kv { margin: 6px 0; }
     .pill { display:inline-block; padding:4px 10px; border-radius: 999px; background:#eee; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border:1px solid #eee; padding:8px; text-align:left; }
+    th { background:#fafafa; }
   </style>
 </head>
 <body>
 <div class="box">
   <h1>IKIZAMINI Job</h1>
-  <p class="muted">This page updates automatically. Keep it open while the terminal keeps running.</p>
+  <p class="muted">This page polls the server. Downloads work even while running (partial ZIP/master).</p>
 
   <div class="row">
     <div class="kv"><b>Job ID:</b> <span class="pill">{{ job_id }}</span></div>
     <div class="kv"><b>Status:</b> <span id="status" class="pill">loading...</span></div>
     <div class="kv"><b>Progress:</b> <span id="progress" class="pill">0/0</span></div>
-    <div class="kv"><b>Current:</b> <span id="current" class="pill">-</span></div>
+    <div class="kv"><b>Heartbeat:</b> <span id="heartbeat" class="pill">-</span></div>
   </div>
 
   <div class="card">
     <div class="row" style="justify-content: space-between;">
       <div>
-        <a id="btn-master" class="btn disabled" href="#">Download Master .txt</a>
-        <a id="btn-zip" class="btn disabled" href="#">Download Output Files (ZIP)</a>
+        <a class="btn" href="/download/master/{{ job_id }}">Download Master .txt (partial ok)</a>
+        <a class="btn" href="/download/zip/{{ job_id }}">Download ZIP (partial ok)</a>
       </div>
       <div>
-        <a class="btn" href="/">Start New Job</a>
+        <a class="btn" href="/">Home</a>
+        <a id="resumeBtn" class="btn" href="/resume/{{ job_id }}">Resume (skip done/failed)</a>
       </div>
     </div>
     <p class="muted" style="margin-top:10px;">
-      Download buttons will enable automatically when the job reaches <b>done</b>.
+      “Resume” is useful after a crash or interruption. It will continue pending objectives.
     </p>
   </div>
 
   <div class="card">
     <h3>Failures</h3>
     <pre id="failures">(none)</pre>
+  </div>
+
+  <div class="card">
+    <h3>Objectives</h3>
+    <div class="muted">Shows latest 30 objectives by status (server-side).</div>
+    <pre id="objectives">Loading...</pre>
   </div>
 
   <div class="card">
@@ -1176,16 +1584,6 @@ PAGE_JOB = """
 
 <script>
   const jobId = "{{ job_id }}";
-
-  function setButtonEnabled(el, enabled, href) {
-    if (enabled) {
-      el.classList.remove("disabled");
-      el.href = href;
-    } else {
-      el.classList.add("disabled");
-      el.href = "#";
-    }
-  }
 
   async function poll() {
     try {
@@ -1198,24 +1596,23 @@ PAGE_JOB = """
 
       document.getElementById("status").textContent = data.status;
       document.getElementById("progress").textContent = `${data.completed}/${data.requested}`;
-      document.getElementById("current").textContent = data.current_objective || "-";
+      document.getElementById("heartbeat").textContent = data.heartbeat_unix || "-";
 
       const failures = (data.failures && data.failures.length) ? data.failures.join("\\n") : "(none)";
       document.getElementById("failures").textContent = failures;
 
-      const logs = (data.logs_tail && data.logs_tail.length) ? data.logs_tail.join("\\n") : "(no logs yet)";
-      document.getElementById("logs").textContent = logs;
+      document.getElementById("logs").textContent = (data.logs_tail && data.logs_tail.length)
+        ? data.logs_tail.join("\\n")
+        : "(no logs yet)";
 
-      const done = (data.status === "done");
-      setButtonEnabled(document.getElementById("btn-master"), done, `/download/master/${jobId}`);
-      setButtonEnabled(document.getElementById("btn-zip"), done, `/download/zip/${jobId}`);
+      document.getElementById("objectives").textContent = (data.objectives_preview && data.objectives_preview.length)
+        ? data.objectives_preview.join("\\n")
+        : "(no objectives yet)";
 
-      // keep polling until done/error
-      if (data.status === "running" || data.status === "queued") {
-        setTimeout(poll, 2000);
-      }
+      // Poll continuously for long runs
+      setTimeout(poll, 2000);
     } catch (e) {
-      setTimeout(poll, 3000);
+      setTimeout(poll, 4000);
     }
   }
 
@@ -1232,36 +1629,63 @@ PAGE_JOB = """
 
 @app.get("/")
 def home():
-    return render_template_string(PAGE_HOME)
+    conn = db_connect()
+    cur = conn.cursor()
+    cur.execute("SELECT job_id, status, requested, completed, created_at_unix FROM jobs ORDER BY created_at_unix DESC LIMIT 50")
+    jobs = cur.fetchall()
+    conn.close()
+    return render_template_string(PAGE_HOME, jobs=jobs)
 
 
 @app.get("/job/<job_id>")
 def job_view(job_id: str):
-    with JOBS_LOCK:
-        if job_id not in JOBS:
-            abort(404)
+    conn = db_connect()
+    cur = conn.cursor()
+    cur.execute("SELECT job_id FROM jobs WHERE job_id=?", (job_id,))
+    row = cur.fetchone()
+    conn.close()
+    if not row:
+        abort(404)
     return render_template_string(PAGE_JOB, job_id=job_id)
 
 
 @app.get("/api/job/<job_id>")
 def api_job(job_id: str):
-    with JOBS_LOCK:
-        job = JOBS.get(job_id)
-        if not job:
-            return jsonify({"error": "not_found"}), 404
+    conn = db_connect()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM jobs WHERE job_id=?", (job_id,))
+    job = cur.fetchone()
+    if not job:
+        conn.close()
+        return jsonify({"error": "not_found"}), 404
 
-        logs = job.get("logs", [])
-        logs_tail = logs[-120:] if isinstance(logs, list) else []
+    failures = json.loads(job["failures_json"] or "[]")
 
-        return jsonify({
-            "job_id": job_id,
-            "status": job.get("status", "unknown"),
-            "requested": job.get("requested", 0),
-            "completed": job.get("completed", 0),
-            "current_objective": job.get("current_objective", ""),
-            "failures": job.get("failures", []),
-            "logs_tail": logs_tail,
-        })
+    # Tail of objectives (preview)
+    cur.execute("""
+      SELECT objective_id, objective_text, status
+      FROM objectives
+      WHERE job_id=?
+      ORDER BY objective_id
+      LIMIT 30
+    """, (job_id,))
+    objs = cur.fetchall()
+
+    conn.close()
+
+    logs_tail = read_log_tail(job["log_path"] or "", max_lines=120)
+    obj_preview = [f"{r['objective_id']} - {r['objective_text']} [{r['status']}]" for r in objs]
+
+    return jsonify({
+        "job_id": job_id,
+        "status": job["status"],
+        "requested": job["requested"],
+        "completed": job["completed"],
+        "heartbeat_unix": job["heartbeat_unix"],
+        "failures": failures,
+        "logs_tail": logs_tail,
+        "objectives_preview": obj_preview,
+    })
 
 
 @app.post("/generate")
@@ -1277,9 +1701,16 @@ def generate():
     manager_model = request.form.get("manager_model", "qwen:32b").strip()
     max_rounds = int(request.form.get("max_rounds", "6"))
     num_ctx = int(request.form.get("num_ctx", "8192"))
+    timeout_s = int(request.form.get("timeout_s", str(DEFAULT_TIMEOUT_S)))
+    max_retries = int(request.form.get("max_retries", str(DEFAULT_MAX_RETRIES)))
     limit = int(request.form.get("limit", "0"))
 
     job_id = str(uuid.uuid4())[:8]
+    inp_path, log_path = ensure_job_files(job_id)
+
+    # Save input to disk immediately (recoverable)
+    with open(inp_path, "w", encoding="utf-8") as f:
+        f.write(content)
 
     config = {
         "ollama_url": ollama_url,
@@ -1287,51 +1718,56 @@ def generate():
         "manager_model": manager_model,
         "max_rounds": max_rounds,
         "num_ctx": num_ctx,
+        "timeout_s": timeout_s,
+        "max_retries": max_retries,
         "limit": limit,
-        "input_filename": up.filename,
     }
 
-    with JOBS_LOCK:
-        JOBS[job_id] = {
-            "status": "queued",
-            "requested": 0,
-            "completed": 0,
-            "failures": [],
-            "master_text": "",
-            "zip_bytes": b"",
-            "current_objective": "",
-            "logs": [],
-            "config": config,
-            "created_at_unix": int(time.time()),
-        }
+    # Create job in DB
+    conn = db_connect()
+    conn.execute("""
+      INSERT INTO jobs (job_id, status, created_at_unix, heartbeat_unix, input_filename, input_path, config_json, requested, completed, failures_json, master_path, log_path)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (
+        job_id, "queued", int(time.time()), int(time.time()),
+        up.filename, inp_path, json.dumps(config, ensure_ascii=False),
+        0, 0, "[]", None, log_path
+    ))
+    conn.commit()
+    conn.close()
 
-    log_progress("============================================================", job_id)
-    log_progress("NEW GENERATION REQUEST RECEIVED", job_id)
-    log_progress("============================================================", job_id)
-    log_progress(f"File uploaded: {up.filename} ({len(content)} bytes)", job_id)
-    log_progress("Configuration:", job_id)
-    log_progress(f"  Ollama URL: {ollama_url}", job_id)
-    log_progress(f"  Worker model: {worker_model}", job_id)
-    log_progress(f"  Manager model: {manager_model}", job_id)
-    log_progress(f"  Max rounds: {max_rounds}", job_id)
-    log_progress(f"  Context size: {num_ctx}", job_id)
-    log_progress(f"  Limit: {limit if limit > 0 else 'None'}", job_id)
-    log_progress(f"Job ID: {job_id}", job_id)
+    append_job_log(job_id, "NEW JOB CREATED (durable mode).")
+    append_job_log(job_id, f"Input saved to: {inp_path}")
+    append_job_log(job_id, f"Logs saved to: {log_path}")
 
-    # Start background thread (daemon so server can exit cleanly if needed)
-    t = threading.Thread(target=run_generation_job, args=(job_id, content, config), daemon=True)
-    t.start()
+    # Start background processing
+    start_job_thread(job_id, resume=False)
+
+    return redirect(url_for("job_view", job_id=job_id))
+
+
+@app.get("/resume/<job_id>")
+def resume(job_id: str):
+    conn = db_connect()
+    cur = conn.cursor()
+    cur.execute("SELECT status FROM jobs WHERE job_id=?", (job_id,))
+    row = cur.fetchone()
+    conn.close()
+    if not row:
+        abort(404)
+
+    # Start resume thread (skip done/failed)
+    append_job_log(job_id, "RESUME requested from UI. Will skip done/failed objectives.")
+    start_job_thread(job_id, resume=True)
 
     return redirect(url_for("job_view", job_id=job_id))
 
 
 @app.get("/download/master/<job_id>")
 def download_master(job_id: str):
-    with JOBS_LOCK:
-        job = JOBS.get(job_id)
-        if not job or job.get("status") != "done":
-            abort(404)
-        data = job.get("master_text", "").encode("utf-8")
+    # Build partial master at request time (works even mid-run or after crash)
+    text = build_master_text(job_id)
+    data = text.encode("utf-8", errors="replace")
     return send_file(
         io.BytesIO(data),
         mimetype="text/plain",
@@ -1342,13 +1778,10 @@ def download_master(job_id: str):
 
 @app.get("/download/zip/<job_id>")
 def download_zip(job_id: str):
-    with JOBS_LOCK:
-        job = JOBS.get(job_id)
-        if not job or job.get("status") != "done":
-            abort(404)
-        zb = job.get("zip_bytes", b"")
+    # Always allow partial ZIP
+    z = build_zip_from_outputs(job_id)
     return send_file(
-        io.BytesIO(zb),
+        io.BytesIO(z),
         mimetype="application/zip",
         as_attachment=True,
         download_name=f"ikizamini_outputs_{job_id}.zip",
@@ -1356,12 +1789,20 @@ def download_zip(job_id: str):
 
 
 # =============================================================================
-# Main
+# Startup
 # =============================================================================
 
+def startup() -> None:
+    db_init()
+    db_mark_stale_jobs_as_interrupted(stale_after_sec=3600)
+    safe_print(f"[{_now_ts()}] IKIZAMINI durable DB: {DB_PATH}")
+    safe_print(f"[{_now_ts()}] IKIZAMINI data dir: {DATA_DIR}")
+
+
 if __name__ == "__main__":
+    startup()
     host = os.environ.get("FLASK_HOST", "0.0.0.0")
     port = int(os.environ.get("RUNPOD_PORT", os.environ.get("FLASK_PORT", "8000")))
-    log_progress(f"Starting IKIZAMINI UI on {host}:{port} ...")
-    # threaded=True helps with concurrent polling + background work
+    safe_print(f"[{_now_ts()}] Starting IKIZAMINI UI on {host}:{port} ...")
+    # threaded=True enables concurrent polling while background thread runs
     app.run(host=host, port=port, debug=False, threaded=True)
