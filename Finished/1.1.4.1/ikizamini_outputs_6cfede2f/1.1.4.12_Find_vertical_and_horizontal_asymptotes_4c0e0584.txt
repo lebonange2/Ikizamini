@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.4.12 Find vertical and horizontal asymptotes
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.4 Polynomial and Rational Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (AsymptoteTypes-01):
+Given the function f(x) = (x^2 - 4)/(x - 2), identify its vertical and horizontal asymptotes.
+A) Vertical: x = 2, Horizontal: y = 0
+B) Vertical: x = -2, Horizontal: y = 0
+C) Vertical: x = 2, Horizontal: y = 1
+D) Vertical: x = -2, Horizontal: y = 1
+Correct Answer: A
+
+Solution:
+The function has a vertical asymptote where the denominator is zero. Here, the denominator is (x - 2), so the vertical asymptote is at x = 2. The horizontal asymptote occurs when the degrees of the numerator and denominator are equal or the degree of the denominator is greater. Since both the numerator and denominator have degree 2, the leading coefficients determine the horizontal asymptote: y = (1/1)x^0 = y = 0. So, the correct answer is A.
+
+Explanation:
+Vertical asymptotes occur where the function's domain is restricted due to division by zero, while horizontal asymptotes represent the long-term behavior of the function as x approaches infinity or negative infinity.
+
+Common mistake note:
+A common mistake is to confuse the vertical asymptote with x = -2, which is a root of the numerator. However, it's not an asymptote because the denominator does not contain (x + 2).
+------------------------------------------------------------------------------
+
+Problem 2 (AsymptoteTypes-02):
+Find the horizontal asymptote for the function g(x) = 3x^3 / (2x^2 + 1).
+A) y = 3/2
+B) y = 2
+C) y = 3
+D) y does not have a horizontal asymptote
+Correct Answer: A
+
+Solution:
+The function has a horizontal asymptote when the degree of the numerator is less than or equal to the degree of the denominator. Here, the degree of the numerator (3) is greater than the degree of the denominator (2). Therefore, g(x) approaches zero as x approaches infinity, and there's no horizontal asymptote. The correct answer is D.
+
+Explanation:
+Horizontal asymptotes can only exist when the degree of the numerator is less than or equal to the degree of the denominator. If they're equal, the ratio of leading coefficients determines the horizontal asymptote; if the degree of the denominator is greater, there's a horizontal asymptote at y = 0.
+
+Common mistake note:
+A common mistake would be to choose C (y = 3), which is the coefficient of the highest power in the numerator. However, this is not correct because the degree of the numerator is higher than the denominator.
+------------------------------------------------------------------------------
+
+Problem 3 (AsymptoteTypes-03):
+Find the vertical and horizontal asymptotes for h(x) = (x + 1)/(x^2 + 4).
+A) Vertical: x = -2, Horizontal: y = 1
+B) Vertical: x = 2, Horizontal: y = 0
+C) Vertical: none, Horizontal: y = 0
+D) Vertical: x = -1, Horizontal: y = 0
+Correct Answer: C
+
+Solution:
+The function h(x) has no vertical asymptote because the denominator is a sum of squares, which never equals zero. The horizontal asymptote occurs when the degree of the numerator is less than or equal to the degree of the denominator. Here, both have degree 1, so the leading coefficients determine the horizontal asymptote: y = (1/2)x^0 = y = 0. Thus, the correct answer is C.
+
+Explanation:
+Vertical asymptotes can be found by looking for values that make the denominator zero, while horizontal asymptotes are determined by comparing the degrees of the numerator and denominator. If the degree of the numerator is less than or equal to the degree of the denominator, the horizontal asymptote is found by dividing leading coefficients.
+
+Common mistake note:
+A common mistake would be to think that x = -2 is a vertical asymptote because it makes the denominator zero. However, since (x^2 + 4) is always positive, there's no vertical asymptote at x = -2.
+------------------------------------------------------------------------------
+
+Problem 4 (AsymptoteTypes-04):
+Find the vertical and horizontal asymptotes for the function j(x) = (3x - 6)/(x - 3).
+A) Vertical: x = 3, Horizontal: y = 3
+B) Vertical: none, Horizontal: y = 0
+C) Vertical: x = -3, Horizontal: y = 1
+D) Vertical: x = 3, Horizontal: none
+Correct Answer: D
+
+Solution:
+The function j(x) has a vertical asymptote at x = 3 because the denominator becomes zero when x = 3. There is no horizontal asymptote because the degree of the numerator (1) is equal to the degree of the denominator (1), and the leading coefficients are different (3 ≠ 1). The correct answer is D.
+
+Explanation:
+Vertical asymptotes occur where the denominator equals zero, while horizontal asymptotes exist when the degrees of the numerator and denominator are equal. If they're not equal, there's no horizontal asymptote; if they are, the ratio of leading coefficients determines the horizontal asymptote.
+
+Common mistake note:
+A common mistake would be to choose A (Vertical: x = 3, Horizontal: y = 3), which is incorrect because the horizontal asymptote does not exist due to different leading coefficients.
+------------------------------------------------------------------------------
+
+Problem 5 (AsymptoteTypes-05):
+Find the vertical and horizontal asymptotes for k(x) = (2x^2 + 4x - 6)/(x^2 + 1).
+A) Vertical: x = 0, Horizontal: y = 2
+B) Vertical: none, Horizontal: y = 2
+C) Vertical: x = -2, Horizontal: y = 0
+D) Vertical: x = 0, Horizontal: none
+Correct Answer: B
+
+Solution:
+The function k(x) has no vertical asymptote because the denominator (x^2 + 1) is always positive. The horizontal asymptote occurs when the degrees of the numerator and denominator are equal. Here, both have degree 2, so the ratio of leading coefficients determines the horizontal asymptote: y = (2/1)x^0 = y = 2. Therefore, the correct answer is B.
+
+Explanation:
+Vertical asymptotes occur where the denominator equals zero, which does not happen in this case. Horizontal asymptotes exist when the degrees of the numerator and denominator are equal; if they're not equal, there's no horizontal asymptote; if they are, the ratio of leading coefficients determines the horizontal asymptote.
+
+Common mistake note:
+A common mistake would be to think that x = 0 is a vertical asymptote because it appears in the numerator. However, since (x^2 + 1) is always positive, there's no vertical asymptote at x = 0.
+------------------------------------------------------------------------------
+
+Problem 6 (AsymptoteTypes-06):
+Find the horizontal asymptote for l(x) = (4x^3 - 8x)/(3x^2 + 6).
+A) y = 4/3
+B) y = 1
+C) y = 2
+D) y does not have a horizontal asymptote
+Correct Answer: D
+
+Solution:
+The function l(x) has no horizontal asymptote because the degree of the numerator (3) is greater than the degree of the denominator (2). As x approaches infinity, the higher-degree terms dominate and the function grows without bound. The correct answer is D.
+
+Explanation:
+Horizontal asymptotes can only exist when the degree of the numerator is less than or equal to the degree of the denominator. If they're equal, the ratio of leading coefficients determines the horizontal asymptote; if the degree of the denominator is smaller, there's no horizontal asymptote.
+
+Common mistake note:
+A common mistake would be to choose C (y = 2), which is the coefficient of the highest power in the numerator. However, this is not correct because the degree of the numerator is higher than the denominator.
+------------------------------------------------------------------------------
+
+Problem 7 (AsymptoteTypes-07):
+Find the vertical and horizontal asymptotes for m(x) = (x^3 - 8)/(x - 2).
+A) Vertical: x = 2, Horizontal: y = 1
+B) Vertical: none, Horizontal: y = 0
+C) Vertical: x = -2, Horizontal: y = 0
+D) Vertical: x = 2, Horizontal: none
+Correct Answer: D
+
+Solution:
+The function m(x) has a vertical asymptote at x = 2 because the denominator becomes zero when x = 2. There is no horizontal asymptote because the degree of the numerator (3) is greater than the degree of the denominator (1). The correct answer is D.
+
+Explanation:
+Vertical asymptotes occur where the denominator equals zero, while horizontal asymptotes exist when the degrees of the numerator and denominator are equal or the degree of the denominator is greater. If they're not equal and the degree of the numerator is greater, there's no horizontal asymptote.
+
+Common mistake note:
+A common mistake would be to choose A (Vertical: x = 2, Horizontal: y = 1), which is incorrect because the horizontal asymptote does not exist due to a higher-degree numerator.
+------------------------------------------------------------------------------
