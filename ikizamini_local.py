@@ -4,14 +4,16 @@ ikizamini_local.py
 
 Local Web UI (Flask) for IKIZAMINI using Ollama.
 
-Key fixes:
-- ManagerAgent robustness:
-  * If manager returns wrong JSON shape, we re-prompt manager with the validation error + previous output.
-  * If manager still fails, we fall back to a safe wrapper that preserves pipeline progress.
-- Optional JSON Schema 'format' support:
-  * Try sending 'format' as a JSON schema to Ollama if supported.
-  * If Ollama rejects schema format, automatically fall back to "json".
-- Output generation continues per-objective even when manager misbehaves.
+Fixes:
+- Avoid UI timeouts: generation runs in a background thread.
+- UI stays responsive and shows progress via polling /api/job/<job_id>.
+- Download buttons for master .txt and per-objective ZIP.
+- ManagerAgent schema robustness (re-prompt + safe fallback).
+
+Run:
+  python3 ikizamini_local.py
+Open:
+  http://127.0.0.1:8000   (or Runpod public URL)
 """
 
 from __future__ import annotations
@@ -27,23 +29,46 @@ import random
 import zipfile
 import sys
 import unicodedata
+import threading
 from datetime import datetime
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
-from flask import Flask, request, redirect, url_for, send_file, render_template_string, abort
-from jsonschema import validate as jsonschema_validate, ValidationError
+from flask import Flask, request, redirect, url_for, send_file, render_template_string, abort, jsonify
+from jsonschema import validate as jsonschema_validate
 
 
 # =============================================================================
-# Logging helper
+# Thread-safe job store
 # =============================================================================
 
-def log_progress(message: str):
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"[{timestamp}] {message}", flush=True)
+app = Flask(__name__)
+
+JOBS: Dict[str, Dict[str, Any]] = {}
+JOBS_LOCK = threading.Lock()
+
+MAX_LOG_LINES_PER_JOB = 800
+
+
+def _now_ts() -> str:
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+
+def log_progress(message: str, job_id: Optional[str] = None):
+    """Print to terminal and (optionally) append to job logs."""
+    line = f"[{_now_ts()}] {message}"
+    print(line, flush=True)
     sys.stdout.flush()
+
+    if job_id:
+        with JOBS_LOCK:
+            job = JOBS.get(job_id)
+            if job is not None:
+                logs = job.setdefault("logs", [])
+                logs.append(line)
+                if len(logs) > MAX_LOG_LINES_PER_JOB:
+                    del logs[: len(logs) - MAX_LOG_LINES_PER_JOB]
 
 
 # =============================================================================
@@ -57,6 +82,7 @@ class ObjNode:
     indent: int
     children: List["ObjNode"] = field(default_factory=list)
 
+
 OBJ_LINE_RE = re.compile(r"^\s*(\d+(?:\.\d+)*)\s+(.*\S)\s*$")
 
 UNICODE_SPACES = [
@@ -65,12 +91,14 @@ UNICODE_SPACES = [
     "\u2006", "\u2008", "\u2009", "\u200A",
 ]
 
+
 def normalize_outline_text(text: str) -> str:
     for sp in UNICODE_SPACES:
         text = text.replace(sp, " ")
     text = text.replace("\t", "    ")
     text = "\n".join([ln.rstrip() for ln in text.splitlines()])
     return text
+
 
 def parse_objectives(text: str) -> List[ObjNode]:
     text = normalize_outline_text(text)
@@ -103,12 +131,15 @@ def parse_objectives(text: str) -> List[ObjNode]:
 
     return roots
 
+
 def id_depth(obj_id: str) -> int:
     return len([p for p in obj_id.split(".") if p.strip()])
 
+
 def is_learning_objective_id(obj_id: str) -> bool:
-    # Only 1.1.1.1+ are learning objectives
+    # Only IDs like 1.1.1.1+ are learning objectives
     return id_depth(obj_id) >= 4
+
 
 def collect_learning_objectives_with_paths(roots: List[ObjNode]) -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
@@ -127,13 +158,14 @@ def collect_learning_objectives_with_paths(roots: List[ObjNode]) -> List[Dict[st
 
 
 # =============================================================================
-# Ollama client (with schema-format fallback)
+# Ollama client + JSON extraction
 # =============================================================================
 
 def backoff_sleep(attempt: int) -> None:
     base = min(2 ** attempt, 10)
     jitter = random.uniform(0.0, 0.4)
     time.sleep(base + jitter)
+
 
 def ollama_chat(
     base_url: str,
@@ -143,12 +175,8 @@ def ollama_chat(
     temperature: float,
     num_ctx: int,
     timeout_s: int,
-    format_spec: Any = "json",  # "json" or JSON schema dict (if supported)
+    format_spec: Any = "json",  # "json" or a schema dict (if supported)
 ) -> str:
-    """
-    Calls Ollama chat endpoint and returns assistant content.
-    Tries schema 'format' if provided; falls back to "json" if server rejects schema.
-    """
     url = base_url.rstrip("/") + "/api/chat"
 
     def _post(payload: Dict[str, Any]) -> requests.Response:
@@ -163,22 +191,18 @@ def ollama_chat(
     }
 
     r = _post(payload)
-    if r.status_code >= 400:
-        # If schema format is rejected, fall back to "json"
-        if isinstance(format_spec, dict):
-            payload["format"] = "json"
-            r = _post(payload)
+    if r.status_code >= 400 and isinstance(format_spec, dict):
+        # Some Ollama builds/models reject schema dict; fall back to "json"
+        payload["format"] = "json"
+        r = _post(payload)
 
     r.raise_for_status()
     data = r.json()
     return (data.get("message", {}) or {}).get("content", "").strip()
 
 
-# =============================================================================
-# JSON extraction + normalization
-# =============================================================================
-
 JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.DOTALL)
+
 
 def extract_json_value(text: str) -> Any:
     m = JSON_FENCE_RE.search(text)
@@ -200,6 +224,11 @@ def extract_json_value(text: str) -> Any:
 
     raise ValueError("No JSON value found in model output.")
 
+
+# =============================================================================
+# Normalization helpers (confusables + key mapping)
+# =============================================================================
+
 def _normalize_choice_letter(x: Any) -> str:
     s = str(x or "").strip().upper()
     if s in {"A", "B", "C", "D"}:
@@ -207,10 +236,12 @@ def _normalize_choice_letter(x: Any) -> str:
     m = re.search(r"\b([ABCD])\b", s)
     return (m.group(1) if m else "A")
 
+
 _CONFUSABLE_TRANSLATION = str.maketrans({
     "\u0430": "a", "\u0435": "e", "\u043E": "o", "\u0440": "p",
     "\u0441": "c", "\u0445": "x", "\u0456": "i", "\u0458": "j",
 })
+
 
 def _canonical_key(key: Any) -> str:
     s = str(key or "")
@@ -219,6 +250,7 @@ def _canonical_key(key: Any) -> str:
     s = s.strip().lower()
     s = re.sub(r"[^a-z0-9]+", "", s)
     return s
+
 
 def _map_question_keys(q: Dict[str, Any]) -> Dict[str, Any]:
     mapped: Dict[str, Any] = {}
@@ -239,6 +271,7 @@ def _map_question_keys(q: Dict[str, Any]) -> Dict[str, Any]:
         elif ck in {"commonmistakenotes", "commonmistake", "commonmistakenote"}:
             mapped["common_mistake_notes"] = v
     return mapped
+
 
 def sanitize_question_list(questions_in: Any) -> List[Dict[str, Any]]:
     if not isinstance(questions_in, list):
@@ -271,6 +304,7 @@ def sanitize_question_list(questions_in: Any) -> List[Dict[str, Any]]:
         })
     return out
 
+
 def sanitize_ikizamini(candidate: Dict[str, Any], objective_id: str, objective_text: str) -> Dict[str, Any]:
     difficulty_profile = candidate.get("difficulty_profile", "mixed") if isinstance(candidate, dict) else "mixed"
     questions_out = sanitize_question_list(candidate.get("questions", []) if isinstance(candidate, dict) else [])
@@ -281,6 +315,7 @@ def sanitize_ikizamini(candidate: Dict[str, Any], objective_id: str, objective_t
         "questions": questions_out,
     }
 
+
 def coerce_ikizamini(value: Any, objective_id: str, objective_text: str) -> Dict[str, Any]:
     if isinstance(value, dict) and isinstance(value.get("questions"), list):
         return sanitize_ikizamini(value, objective_id, objective_text)
@@ -288,8 +323,7 @@ def coerce_ikizamini(value: Any, objective_id: str, objective_text: str) -> Dict
     if isinstance(value, dict):
         for k in ("questions", "items", "data", "revised_questions"):
             if isinstance(value.get(k), list):
-                value = {"questions": value[k]}
-                return sanitize_ikizamini(value, objective_id, objective_text)
+                return sanitize_ikizamini({"questions": value[k]}, objective_id, objective_text)
 
     if isinstance(value, list):
         if len(value) < 7:
@@ -365,15 +399,17 @@ MANAGER_SCHEMA: Dict[str, Any] = {
     "required": ["status", "issues", "revised_questions", "score"],
 }
 
+
 def validate_ikizamini(obj: Dict[str, Any]) -> None:
     jsonschema_validate(instance=obj, schema=IKIZAMINI_SCHEMA)
+
 
 def validate_manager(obj: Dict[str, Any]) -> None:
     jsonschema_validate(instance=obj, schema=MANAGER_SCHEMA)
 
 
 # =============================================================================
-# Agents
+# Agent prompts
 # =============================================================================
 
 WORKER_SYSTEM = """You are workerAgent.
@@ -424,7 +460,7 @@ Return ONLY JSON matching this schema exactly:
   "revised_questions": [ {question objects with id/stem/choices/correct_choice/solution/explanation/common_mistake_notes} ],
   "score": {"relevance":0-5,"distinctness":0-5,"unique_solution":0-5,"explanations":0-5}
 }
-No extra keys. No markdown. No objective_id field.
+No extra keys. No markdown. No objective_id/objective_text/questions/difficulty_profile keys.
 """
 
 MANAGER_FIX_SYSTEM = """You are managerAgent.
@@ -452,17 +488,22 @@ def local_issues(candidate: Dict[str, Any]) -> List[str]:
 
     for i, q in enumerate(qs, start=1):
         if not isinstance(q, dict):
+            issues.append(f"Q{i}: not an object.")
             continue
+
         ch = q.get("choices", {})
         if not isinstance(ch, dict):
             issues.append(f"Q{i}: choices is not an object.")
             continue
+
         vals = [str(ch.get(k, "")).strip() for k in ["A", "B", "C", "D"]]
         if len(set(vals)) != 4:
             issues.append(f"Q{i}: duplicate choice text detected (A/B/C/D must be distinct).")
+
         cc = q.get("correct_choice")
         if cc not in {"A", "B", "C", "D"}:
             issues.append(f"Q{i}: correct_choice is invalid: {cc}")
+
         for k in ["solution", "explanation", "common_mistake_notes"]:
             if not str(q.get(k, "")).strip():
                 issues.append(f"Q{i}: missing/empty field: {k}")
@@ -504,9 +545,6 @@ def call_ollama_json(
             )
             last_raw = raw
 
-            if attempt > 0:
-                log_progress(f"  Retry {attempt + 1}/{max_retries}: Raw response preview: {raw[:500]}...")
-
             val = extract_json_value(raw)
             if coerce_fn is not None:
                 val = coerce_fn(val)
@@ -516,16 +554,16 @@ def call_ollama_json(
         except Exception as e:
             last_err = e
             if attempt < max_retries - 1:
-                log_progress(f"  Attempt {attempt + 1} failed: {str(e)[:220]}")
+                # keep it short
+                pass
             backoff_sleep(attempt)
 
-    # If we have raw, include a small preview in the error to make debugging easier upstream.
     preview = (last_raw[:800] + "...") if (last_raw and len(last_raw) > 800) else (last_raw or "")
     raise RuntimeError(f"Ollama call failed after retries. Last error: {last_err}. Raw preview: {preview}")
 
 
 # =============================================================================
-# Worker functions
+# Worker / Manager functions
 # =============================================================================
 
 def worker_generate(base_url: str, model: str, objective_id: str, objective_text: str, num_ctx: int) -> Dict[str, Any]:
@@ -546,8 +584,9 @@ No extra keys.
         temperature=0.25,
         num_ctx=num_ctx,
         coerce_fn=lambda v: coerce_ikizamini(v, objective_id, objective_text),
-        format_spec=IKIZAMINI_SCHEMA,  # try schema format; fallback to "json" automatically
+        format_spec=IKIZAMINI_SCHEMA,
     )
+
 
 def worker_repair(
     base_url: str,
@@ -584,28 +623,17 @@ No extra keys.
     )
 
 
-# =============================================================================
-# Manager functions (FIXED)
-# =============================================================================
-
 def sanitize_manager_output(value: Any, fallback_questions: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """
-    Make manager output conform to MANAGER_SCHEMA:
-    - drop extra keys
-    - sanitize revised_questions question objects
-    - fill missing score fields
-    """
-    # If manager returns IKIZAMINI-shaped object, extract questions
+    # Manager returns IKIZAMINI-shaped output sometimes
     if isinstance(value, dict) and isinstance(value.get("questions"), list):
         rq = sanitize_question_list(value.get("questions"))
         return {
             "status": "pass",
-            "issues": ["Manager returned IKIZAMINI-shaped output; treated as pass and used its questions as revised_questions."],
+            "issues": ["Manager returned IKIZAMINI-shaped output; treated as pass and used its questions."],
             "revised_questions": rq if len(rq) == 7 else fallback_questions,
             "score": {"relevance": 4, "distinctness": 4, "unique_solution": 4, "explanations": 4},
         }
 
-    # If manager returns list, treat as revised_questions directly
     if isinstance(value, list):
         rq = sanitize_question_list(value)
         return {
@@ -637,6 +665,7 @@ def sanitize_manager_output(value: Any, fallback_questions: List[Dict[str, Any]]
     score = value.get("score", {})
     if not isinstance(score, dict):
         score = {}
+
     def _clamp_int(x, default):
         try:
             v = int(x)
@@ -658,6 +687,7 @@ def sanitize_manager_output(value: Any, fallback_questions: List[Dict[str, Any]]
         "score": score_out,
     }
 
+
 def manager_review(
     base_url: str,
     model: str,
@@ -666,16 +696,7 @@ def manager_review(
     candidate: Dict[str, Any],
     num_ctx: int,
 ) -> Dict[str, Any]:
-    """
-    Manager review that will NOT permanently fail just because manager returns wrong shape.
-    Steps:
-    1) Ask manager (with schema format if supported).
-    2) If invalid, re-ask manager with the validation error + previous output.
-    3) If still invalid, sanitize/unwrap and return a safe object.
-    """
     fallback_questions = sanitize_question_list(candidate.get("questions", []))
-    if len(fallback_questions) != 7:
-        fallback_questions = []  # should not happen; worker schema ensures 7
 
     base_user = f"""Learning objective:
 - id: {objective_id}
@@ -716,25 +737,20 @@ No objective_id/objective_text/questions/difficulty_profile keys.
                 temperature=0.1,
                 num_ctx=num_ctx,
                 timeout_s=180,
-                format_spec=MANAGER_SCHEMA,  # try schema format; fallback to "json" handled in ollama_chat
+                format_spec=MANAGER_SCHEMA,
             )
             last_raw = raw
             val = extract_json_value(raw)
 
-            # sanitize common drift, then validate
             val2 = sanitize_manager_output(val, fallback_questions)
             validate_manager(val2)
-
             return val2
 
         except Exception as e:
             last_err = str(e)[:1200]
-            if attempt < 2:
-                log_progress(f"  Manager attempt {attempt+1}/3 failed (will re-prompt manager): {str(e)[:220]}")
             backoff_sleep(attempt)
 
-    # Final fallback
-    log_progress("  Manager failed to return valid schema after retries; using safe fallback wrapper.")
+    # Final safe fallback
     val_fallback = {
         "status": "pass",
         "issues": ["Manager failed schema compliance after retries; used candidate questions unchanged."],
@@ -744,10 +760,6 @@ No objective_id/objective_text/questions/difficulty_profile keys.
     validate_manager(val_fallback)
     return val_fallback
 
-
-# =============================================================================
-# Strict objective pipeline
-# =============================================================================
 
 def generate_for_objective_strict(
     base_url: str,
@@ -768,7 +780,6 @@ def generate_for_objective_strict(
 
         review = manager_review(base_url, manager_model, objective_id, objective_text, candidate, num_ctx=num_ctx)
 
-        # apply manager revised questions
         candidate = {
             "objective_id": objective_id,
             "objective_text": objective_text,
@@ -799,10 +810,12 @@ def safe_filename(s: str, max_len: int = 90) -> str:
         s = s[:max_len].rstrip("_")
     return s or "objective"
 
+
 def unique_objective_filename(objective_id: str, objective_text: str) -> str:
     base = f"{objective_id}|{objective_text}".encode("utf-8")
     suffix = hashlib.sha256(base).hexdigest()[:8]
     return f"{objective_id}_{safe_filename(objective_text)}_{suffix}.txt"
+
 
 def format_questions_block(ikizamini_set: Dict[str, Any]) -> str:
     lines: List[str] = []
@@ -823,6 +836,7 @@ def format_questions_block(ikizamini_set: Dict[str, Any]) -> str:
         lines.append(q["common_mistake_notes"].strip())
         lines.append("-" * 78)
     return "\n".join(lines).strip() + "\n"
+
 
 def write_master_from_tree(roots: List[ObjNode], generated_by_id: Dict[str, Dict[str, Any]], meta: Dict[str, Any]) -> str:
     def heading_line(node: ObjNode) -> str:
@@ -859,6 +873,7 @@ def write_master_from_tree(roots: List[ObjNode], generated_by_id: Dict[str, Dict
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
+
 def objective_file_text(path: List[Tuple[str, str]], objective_id: str, objective_text: str,
                         ikizamini_set: Optional[Dict[str, Any]], error: Optional[str]) -> str:
     lines: List[str] = []
@@ -885,13 +900,148 @@ def objective_file_text(path: List[Tuple[str, str]], objective_id: str, objectiv
 
 
 # =============================================================================
-# Flask UI
+# Background job runner (prevents UI timeout)
 # =============================================================================
 
-app = Flask(__name__)
-JOBS: Dict[str, Dict[str, Any]] = {}
+def run_generation_job(job_id: str, content: str, config: Dict[str, Any]) -> None:
+    """
+    Runs in a background thread. Updates JOBS[job_id] as it progresses.
+    """
+    try:
+        with JOBS_LOCK:
+            JOBS[job_id]["status"] = "running"
+            JOBS[job_id]["started_at_unix"] = int(time.time())
 
-PAGE = """
+        log_progress("============================================================", job_id)
+        log_progress("BACKGROUND GENERATION STARTED", job_id)
+        log_progress("============================================================", job_id)
+
+        ollama_url = config["ollama_url"]
+        worker_model = config["worker_model"]
+        manager_model = config["manager_model"]
+        max_rounds = config["max_rounds"]
+        num_ctx = config["num_ctx"]
+        limit = config["limit"]
+
+        log_progress("Parsing objectives from file...", job_id)
+        roots = parse_objectives(content)
+        objectives = collect_learning_objectives_with_paths(roots)
+
+        if limit and limit > 0:
+            objectives = objectives[:limit]
+            log_progress(f"Limited to first {limit} objectives", job_id)
+
+        total = len(objectives)
+        with JOBS_LOCK:
+            JOBS[job_id]["requested"] = total
+
+        log_progress(f"Found {total} learning objectives to process", job_id)
+        log_progress("------------------------------------------------------------", job_id)
+
+        generated_by_id: Dict[str, Dict[str, Any]] = {}
+        failures: List[str] = []
+
+        zip_buffer = io.BytesIO()
+        with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zf:
+            index_lines = []
+            index_lines.append("IKIZAMINI PER-OBJECTIVE INDEX (Ollama UI)")
+            index_lines.append(f"Ollama URL: {ollama_url}")
+            index_lines.append(f"Worker model: {worker_model}")
+            index_lines.append(f"Manager model: {manager_model}")
+            index_lines.append(f"Generated at (unix): {int(time.time())}")
+            index_lines.append("")
+
+            for i, obj in enumerate(objectives, start=1):
+                obj_id = obj["objective_id"]
+                obj_text = obj["objective_text"]
+                path = obj["path"]
+
+                log_progress(f"[{i}/{total}] Processing: {obj_id} - {obj_text[:60]}...", job_id)
+                start = time.time()
+
+                with JOBS_LOCK:
+                    JOBS[job_id]["current_objective"] = f"{obj_id} {obj_text}"
+
+                try:
+                    ik = generate_for_objective_strict(
+                        base_url=ollama_url,
+                        worker_model=worker_model,
+                        manager_model=manager_model,
+                        objective_id=obj_id,
+                        objective_text=obj_text,
+                        max_rounds=max_rounds,
+                        num_ctx=num_ctx,
+                    )
+                    validate_ikizamini(ik)
+                    generated_by_id[obj_id] = ik
+
+                    elapsed = time.time() - start
+                    log_progress(f"  ✓ Success ({elapsed:.1f}s)", job_id)
+
+                    with JOBS_LOCK:
+                        JOBS[job_id]["completed"] = len(generated_by_id)
+
+                    fname = unique_objective_filename(obj_id, obj_text)
+                    txt = objective_file_text(path, obj_id, obj_text, ik, None)
+                    zf.writestr(fname, txt)
+                    index_lines.append(f"- {fname}")
+
+                except Exception as e:
+                    elapsed = time.time() - start
+                    msg = f"{obj_id}: {e}"
+                    log_progress(f"  ✗ FAILED ({elapsed:.1f}s): {msg}", job_id)
+                    failures.append(msg)
+
+                    with JOBS_LOCK:
+                        JOBS[job_id]["failures"] = failures
+
+                    fname = unique_objective_filename(obj_id, obj_text)
+                    txt = objective_file_text(path, obj_id, obj_text, None, str(e))
+                    zf.writestr(fname, txt)
+                    index_lines.append(f"- {fname}  (FAILED)")
+
+            zf.writestr("index.txt", "\n".join(index_lines).rstrip() + "\n")
+
+        meta = {
+            "ollama_url": ollama_url,
+            "worker_model": worker_model,
+            "manager_model": manager_model,
+            "generated_at_unix": int(time.time()),
+            "requested": total,
+            "completed": len(generated_by_id),
+        }
+
+        log_progress("------------------------------------------------------------", job_id)
+        log_progress("Generating master file...", job_id)
+        master_text = write_master_from_tree(roots, generated_by_id, meta)
+
+        with JOBS_LOCK:
+            JOBS[job_id]["master_text"] = master_text
+            JOBS[job_id]["zip_bytes"] = zip_buffer.getvalue()
+            JOBS[job_id]["failures"] = failures
+            JOBS[job_id]["completed"] = len(generated_by_id)
+            JOBS[job_id]["status"] = "done"
+            JOBS[job_id]["finished_at_unix"] = int(time.time())
+            JOBS[job_id]["current_objective"] = ""
+
+        log_progress("============================================================", job_id)
+        log_progress(f"JOB COMPLETED: {job_id} | Success: {len(generated_by_id)} | Failed: {len(failures)}", job_id)
+        log_progress("============================================================", job_id)
+
+    except Exception as e:
+        with JOBS_LOCK:
+            JOBS[job_id]["status"] = "error"
+            JOBS[job_id]["failures"] = [str(e)]
+            JOBS[job_id]["finished_at_unix"] = int(time.time())
+            JOBS[job_id]["current_objective"] = ""
+        log_progress(f"FATAL JOB ERROR: {e}", job_id)
+
+
+# =============================================================================
+# UI templates (polling)
+# =============================================================================
+
+PAGE_HOME = """
 <!doctype html>
 <html>
 <head>
@@ -903,29 +1053,19 @@ PAGE = """
     .row { display:flex; gap:16px; margin-bottom:12px; }
     .row label { width: 180px; font-weight: bold; }
     input[type=text], input[type=number] { width: 420px; padding: 6px; }
-    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; transition: all 0.2s; }
+    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; }
     .btn:hover:not(:disabled) { background:#333; }
     .btn:disabled { opacity:0.6; cursor:not-allowed; background:#666; }
-    .card { border:1px solid #ddd; padding:16px; margin-top:18px; }
     .muted { color:#666; }
-    pre { background:#f7f7f7; padding:12px; overflow:auto; }
-    .links a { margin-right:12px; }
+    .card { border:1px solid #ddd; padding:16px; margin-top:18px; }
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const form = document.querySelector('form');
-      const submitBtn = document.querySelector('button[type="submit"]');
-      form.addEventListener('submit', function() {
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Generating...';
-      });
-    });
-  </script>
 </head>
 <body>
 <div class="box">
   <h1>IKIZAMINI (Local Ollama)</h1>
-  <p class="muted">Upload objectives .txt, generate master output and a ZIP of per-objective files.</p>
+  <p class="muted">
+    Upload objectives .txt. Generation runs in the background, so the UI will not time out.
+  </p>
 
   <form method="post" action="/generate" enctype="multipart/form-data">
     <div class="row">
@@ -963,56 +1103,174 @@ PAGE = """
       <input type="number" name="limit" value="0" min="0" max="9999" />
     </div>
 
-    <button class="btn" type="submit">Generate</button>
+    <button class="btn" type="submit">Start Generation</button>
   </form>
 
-  {% if job %}
-    <div class="card">
-      <h2>Job: {{ job_id }}</h2>
-      <p><b>Status:</b> {{ job.status }}</p>
-      <p><b>Requested:</b> {{ job.requested }} | <b>Completed:</b> {{ job.completed }} | <b>Failures:</b> {{ job.failures|length }}</p>
-      <div class="links">
-        {% if job.status == 'done' %}
-          <a href="/download/master/{{ job_id }}">Download master .txt</a>
-          <a href="/download/zip/{{ job_id }}">Download per-objective ZIP</a>
-        {% endif %}
-      </div>
-
-      {% if job.failures|length > 0 %}
-        <h3>Failures</h3>
-        <pre>{{ job.failures | join('\\n') }}</pre>
-      {% endif %}
+  <div class="card">
+    <div class="muted">
+      After you start a job, you will be redirected to a live status page with download buttons.
     </div>
-  {% endif %}
+  </div>
 </div>
 </body>
 </html>
 """
 
+PAGE_JOB = """
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>IKIZAMINI Job {{ job_id }}</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; }
+    .box { max-width: 1100px; }
+    .muted { color:#666; }
+    .row { display:flex; gap:18px; flex-wrap: wrap; align-items: center; }
+    .card { border:1px solid #ddd; padding:16px; margin-top:18px; }
+    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; text-decoration: none; display:inline-block; }
+    .btn:hover:not(.disabled) { background:#333; }
+    .btn.disabled { opacity:0.5; cursor:not-allowed; background:#666; pointer-events: none; }
+    pre { background:#f7f7f7; padding:12px; overflow:auto; max-height: 420px; }
+    .kv { margin: 6px 0; }
+    .pill { display:inline-block; padding:4px 10px; border-radius: 999px; background:#eee; }
+  </style>
+</head>
+<body>
+<div class="box">
+  <h1>IKIZAMINI Job</h1>
+  <p class="muted">This page updates automatically. Keep it open while the terminal keeps running.</p>
+
+  <div class="row">
+    <div class="kv"><b>Job ID:</b> <span class="pill">{{ job_id }}</span></div>
+    <div class="kv"><b>Status:</b> <span id="status" class="pill">loading...</span></div>
+    <div class="kv"><b>Progress:</b> <span id="progress" class="pill">0/0</span></div>
+    <div class="kv"><b>Current:</b> <span id="current" class="pill">-</span></div>
+  </div>
+
+  <div class="card">
+    <div class="row" style="justify-content: space-between;">
+      <div>
+        <a id="btn-master" class="btn disabled" href="#">Download Master .txt</a>
+        <a id="btn-zip" class="btn disabled" href="#">Download Output Files (ZIP)</a>
+      </div>
+      <div>
+        <a class="btn" href="/">Start New Job</a>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:10px;">
+      Download buttons will enable automatically when the job reaches <b>done</b>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Failures</h3>
+    <pre id="failures">(none)</pre>
+  </div>
+
+  <div class="card">
+    <h3>Live Log (tail)</h3>
+    <pre id="logs">Loading...</pre>
+  </div>
+</div>
+
+<script>
+  const jobId = "{{ job_id }}";
+
+  function setButtonEnabled(el, enabled, href) {
+    if (enabled) {
+      el.classList.remove("disabled");
+      el.href = href;
+    } else {
+      el.classList.add("disabled");
+      el.href = "#";
+    }
+  }
+
+  async function poll() {
+    try {
+      const res = await fetch(`/api/job/${jobId}`, { cache: "no-store" });
+      if (!res.ok) {
+        document.getElementById("status").textContent = "error";
+        return;
+      }
+      const data = await res.json();
+
+      document.getElementById("status").textContent = data.status;
+      document.getElementById("progress").textContent = `${data.completed}/${data.requested}`;
+      document.getElementById("current").textContent = data.current_objective || "-";
+
+      const failures = (data.failures && data.failures.length) ? data.failures.join("\\n") : "(none)";
+      document.getElementById("failures").textContent = failures;
+
+      const logs = (data.logs_tail && data.logs_tail.length) ? data.logs_tail.join("\\n") : "(no logs yet)";
+      document.getElementById("logs").textContent = logs;
+
+      const done = (data.status === "done");
+      setButtonEnabled(document.getElementById("btn-master"), done, `/download/master/${jobId}`);
+      setButtonEnabled(document.getElementById("btn-zip"), done, `/download/zip/${jobId}`);
+
+      // keep polling until done/error
+      if (data.status === "running" || data.status === "queued") {
+        setTimeout(poll, 2000);
+      }
+    } catch (e) {
+      setTimeout(poll, 3000);
+    }
+  }
+
+  poll();
+</script>
+</body>
+</html>
+"""
+
+
+# =============================================================================
+# Routes
+# =============================================================================
+
 @app.get("/")
 def home():
-    return render_template_string(PAGE, job=None, job_id=None)
+    return render_template_string(PAGE_HOME)
+
 
 @app.get("/job/<job_id>")
 def job_view(job_id: str):
-    job = JOBS.get(job_id)
-    if not job:
-        abort(404)
-    return render_template_string(PAGE, job=job, job_id=job_id)
+    with JOBS_LOCK:
+        if job_id not in JOBS:
+            abort(404)
+    return render_template_string(PAGE_JOB, job_id=job_id)
+
+
+@app.get("/api/job/<job_id>")
+def api_job(job_id: str):
+    with JOBS_LOCK:
+        job = JOBS.get(job_id)
+        if not job:
+            return jsonify({"error": "not_found"}), 404
+
+        logs = job.get("logs", [])
+        logs_tail = logs[-120:] if isinstance(logs, list) else []
+
+        return jsonify({
+            "job_id": job_id,
+            "status": job.get("status", "unknown"),
+            "requested": job.get("requested", 0),
+            "completed": job.get("completed", 0),
+            "current_objective": job.get("current_objective", ""),
+            "failures": job.get("failures", []),
+            "logs_tail": logs_tail,
+        })
+
 
 @app.post("/generate")
 def generate():
     up = request.files.get("input_file")
     if not up or up.filename == "":
-        log_progress("ERROR: No file uploaded")
         return "No file uploaded", 400
 
-    log_progress("=" * 60)
-    log_progress("NEW GENERATION REQUEST RECEIVED")
-    log_progress("=" * 60)
-
     content = up.read().decode("utf-8", errors="replace")
-    log_progress(f"File uploaded: {up.filename} ({len(content)} bytes)")
 
     ollama_url = request.form.get("ollama_url", "http://localhost:11434").strip()
     worker_model = request.form.get("worker_model", "qwen:32b").strip()
@@ -1021,154 +1279,89 @@ def generate():
     num_ctx = int(request.form.get("num_ctx", "8192"))
     limit = int(request.form.get("limit", "0"))
 
-    log_progress("Configuration:")
-    log_progress(f"  Ollama URL: {ollama_url}")
-    log_progress(f"  Worker model: {worker_model}")
-    log_progress(f"  Manager model: {manager_model}")
-    log_progress(f"  Max rounds: {max_rounds}")
-    log_progress(f"  Context size: {num_ctx}")
-    log_progress(f"  Limit: {limit if limit > 0 else 'None'}")
-
     job_id = str(uuid.uuid4())[:8]
-    log_progress(f"Job ID: {job_id}")
 
-    JOBS[job_id] = {
-        "status": "running",
-        "requested": 0,
-        "completed": 0,
-        "failures": [],
-        "master_text": "",
-        "zip_bytes": b"",
+    config = {
+        "ollama_url": ollama_url,
+        "worker_model": worker_model,
+        "manager_model": manager_model,
+        "max_rounds": max_rounds,
+        "num_ctx": num_ctx,
+        "limit": limit,
+        "input_filename": up.filename,
     }
 
-    try:
-        log_progress("Parsing objectives from file...")
-        roots = parse_objectives(content)
-        objectives = collect_learning_objectives_with_paths(roots)
-
-        if limit and limit > 0:
-            objectives = objectives[:limit]
-            log_progress(f"Limited to first {limit} objectives")
-
-        total = len(objectives)
-        JOBS[job_id]["requested"] = total
-        log_progress(f"Found {total} learning objectives to process")
-        log_progress("-" * 60)
-
-        generated_by_id: Dict[str, Dict[str, Any]] = {}
-        failures: List[str] = []
-
-        zip_buffer = io.BytesIO()
-        with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zf:
-            index_lines = []
-            index_lines.append("IKIZAMINI PER-OBJECTIVE INDEX (Ollama UI)")
-            index_lines.append(f"Ollama URL: {ollama_url}")
-            index_lines.append(f"Worker model: {worker_model}")
-            index_lines.append(f"Manager model: {manager_model}")
-            index_lines.append(f"Generated at (unix): {int(time.time())}")
-            index_lines.append("")
-
-            for i, obj in enumerate(objectives, start=1):
-                obj_id = obj["objective_id"]
-                obj_text = obj["objective_text"]
-                path = obj["path"]
-
-                log_progress(f"[{i}/{total}] Processing: {obj_id} - {obj_text[:60]}...")
-                start = time.time()
-
-                try:
-                    ik = generate_for_objective_strict(
-                        base_url=ollama_url,
-                        worker_model=worker_model,
-                        manager_model=manager_model,
-                        objective_id=obj_id,
-                        objective_text=obj_text,
-                        max_rounds=max_rounds,
-                        num_ctx=num_ctx,
-                    )
-                    validate_ikizamini(ik)
-                    generated_by_id[obj_id] = ik
-
-                    elapsed = time.time() - start
-                    log_progress(f"  ✓ Success ({elapsed:.1f}s)")
-
-                    JOBS[job_id]["completed"] = len(generated_by_id)
-
-                    fname = unique_objective_filename(obj_id, obj_text)
-                    txt = objective_file_text(path, obj_id, obj_text, ik, None)
-                    zf.writestr(fname, txt)
-                    index_lines.append(f"- {fname}")
-
-                except Exception as e:
-                    elapsed = time.time() - start
-                    msg = f"{obj_id}: {e}"
-                    log_progress(f"  ✗ FAILED ({elapsed:.1f}s): {msg}")
-                    failures.append(msg)
-                    JOBS[job_id]["failures"] = failures
-
-                    fname = unique_objective_filename(obj_id, obj_text)
-                    txt = objective_file_text(path, obj_id, obj_text, None, str(e))
-                    zf.writestr(fname, txt)
-                    index_lines.append(f"- {fname}  (FAILED)")
-
-            zf.writestr("index.txt", "\n".join(index_lines).rstrip() + "\n")
-
-        meta = {
-            "ollama_url": ollama_url,
-            "worker_model": worker_model,
-            "manager_model": manager_model,
-            "generated_at_unix": int(time.time()),
-            "requested": total,
-            "completed": len(generated_by_id),
+    with JOBS_LOCK:
+        JOBS[job_id] = {
+            "status": "queued",
+            "requested": 0,
+            "completed": 0,
+            "failures": [],
+            "master_text": "",
+            "zip_bytes": b"",
+            "current_objective": "",
+            "logs": [],
+            "config": config,
+            "created_at_unix": int(time.time()),
         }
 
-        log_progress("-" * 60)
-        log_progress("Generating master file...")
-        master_text = write_master_from_tree(roots, generated_by_id, meta)
+    log_progress("============================================================", job_id)
+    log_progress("NEW GENERATION REQUEST RECEIVED", job_id)
+    log_progress("============================================================", job_id)
+    log_progress(f"File uploaded: {up.filename} ({len(content)} bytes)", job_id)
+    log_progress("Configuration:", job_id)
+    log_progress(f"  Ollama URL: {ollama_url}", job_id)
+    log_progress(f"  Worker model: {worker_model}", job_id)
+    log_progress(f"  Manager model: {manager_model}", job_id)
+    log_progress(f"  Max rounds: {max_rounds}", job_id)
+    log_progress(f"  Context size: {num_ctx}", job_id)
+    log_progress(f"  Limit: {limit if limit > 0 else 'None'}", job_id)
+    log_progress(f"Job ID: {job_id}", job_id)
 
-        JOBS[job_id]["master_text"] = master_text
-        JOBS[job_id]["zip_bytes"] = zip_buffer.getvalue()
-        JOBS[job_id]["failures"] = failures
-        JOBS[job_id]["completed"] = len(generated_by_id)
-        JOBS[job_id]["status"] = "done"
-
-        log_progress("=" * 60)
-        log_progress(f"JOB COMPLETED: {job_id}")
-        log_progress(f"  Total: {total} | Success: {len(generated_by_id)} | Failed: {len(failures)}")
-        log_progress("=" * 60)
-
-    except Exception as e:
-        log_progress(f"ERROR: {str(e)}")
-        JOBS[job_id]["status"] = "error"
-        JOBS[job_id]["failures"] = [str(e)]
+    # Start background thread (daemon so server can exit cleanly if needed)
+    t = threading.Thread(target=run_generation_job, args=(job_id, content, config), daemon=True)
+    t.start()
 
     return redirect(url_for("job_view", job_id=job_id))
 
+
 @app.get("/download/master/<job_id>")
 def download_master(job_id: str):
-    job = JOBS.get(job_id)
-    if not job or job.get("status") != "done":
-        abort(404)
-    data = job["master_text"].encode("utf-8")
-    return send_file(io.BytesIO(data), mimetype="text/plain", as_attachment=True,
-                     download_name=f"ikizamini_master_{job_id}.txt")
+    with JOBS_LOCK:
+        job = JOBS.get(job_id)
+        if not job or job.get("status") != "done":
+            abort(404)
+        data = job.get("master_text", "").encode("utf-8")
+    return send_file(
+        io.BytesIO(data),
+        mimetype="text/plain",
+        as_attachment=True,
+        download_name=f"ikizamini_master_{job_id}.txt",
+    )
+
 
 @app.get("/download/zip/<job_id>")
 def download_zip(job_id: str):
-    job = JOBS.get(job_id)
-    if not job or job.get("status") != "done":
-        abort(404)
-    return send_file(io.BytesIO(job["zip_bytes"]), mimetype="application/zip", as_attachment=True,
-                     download_name=f"ikizamini_outputs_{job_id}.zip")
+    with JOBS_LOCK:
+        job = JOBS.get(job_id)
+        if not job or job.get("status") != "done":
+            abort(404)
+        zb = job.get("zip_bytes", b"")
+    return send_file(
+        io.BytesIO(zb),
+        mimetype="application/zip",
+        as_attachment=True,
+        download_name=f"ikizamini_outputs_{job_id}.zip",
+    )
 
-@app.get("/job/<job_id>")
-def job_page(job_id: str):
-    job = JOBS.get(job_id)
-    if not job:
-        abort(404)
-    return render_template_string(PAGE, job=job, job_id=job_id)
+
+# =============================================================================
+# Main
+# =============================================================================
 
 if __name__ == "__main__":
     host = os.environ.get("FLASK_HOST", "0.0.0.0")
     port = int(os.environ.get("RUNPOD_PORT", os.environ.get("FLASK_PORT", "8000")))
-    app.run(host=host, port=port, debug=False)
+    log_progress(f"Starting IKIZAMINI UI on {host}:{port} ...")
+    # threaded=True helps with concurrent polling + background work
+    app.run(host=host, port=port, debug=False, threaded=True)
