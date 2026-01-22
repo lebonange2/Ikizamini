@@ -10,8 +10,14 @@ Key properties:
 - Partial recovery: even if process crashes, already-written outputs remain downloadable.
 - Avoids BrokenPipe crashes by logging to files and catching stdout errors.
 
+What this version focuses on:
+- Same durable backend (SQLite + on-disk outputs, resumable jobs, partial downloads).
+- Modern, centered UI with responsive layout, improved typography, progress bar,
+  log viewer, and clear download controls.
+
 Run:
   python3 ikizamini_local.py
+
 Open:
   http://127.0.0.1:8000  (or Runpod public URL)
 """
@@ -36,7 +42,16 @@ from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
-from flask import Flask, request, redirect, url_for, send_file, render_template_string, abort, jsonify
+from flask import (
+    Flask,
+    request,
+    redirect,
+    url_for,
+    send_file,
+    render_template_string,
+    abort,
+    jsonify,
+)
 from jsonschema import validate as jsonschema_validate
 
 
@@ -125,7 +140,7 @@ def db_mark_stale_jobs_as_interrupted(stale_after_sec: int = 3600) -> None:
     cur = conn.cursor()
 
     cur.execute("""
-      SELECT job_id, status, heartbeat_unix
+      SELECT job_id, status, heartbeat_unix, created_at_unix
       FROM jobs
       WHERE status IN ('queued','running')
     """)
@@ -133,9 +148,10 @@ def db_mark_stale_jobs_as_interrupted(stale_after_sec: int = 3600) -> None:
 
     for r in rows:
         hb = r["heartbeat_unix"] or 0
+        created = r["created_at_unix"] or now
         if hb and (now - hb) > stale_after_sec:
             cur.execute("UPDATE jobs SET status=? WHERE job_id=?", ("interrupted", r["job_id"]))
-        elif not hb and (now - (r["created_at_unix"] or now)) > stale_after_sec:
+        elif (now - created) > stale_after_sec:
             cur.execute("UPDATE jobs SET status=? WHERE job_id=?", ("interrupted", r["job_id"]))
 
     conn.commit()
@@ -155,7 +171,6 @@ def safe_print(line: str) -> None:
     try:
         print(line, flush=True)
     except BrokenPipeError:
-        # stdout closed (SSH disconnect); ignore
         pass
     except Exception:
         pass
@@ -177,23 +192,20 @@ def append_job_log(job_id: str, message: str) -> None:
         return
 
     line = f"[{_now_ts()}] {message}"
-    # Write to file (durable)
     try:
         with open(log_path, "a", encoding="utf-8") as f:
             f.write(line + "\n")
     except Exception:
-        # If file writing fails, we still try stdout
         pass
 
     safe_print(line)
 
 
-def read_log_tail(log_path: str, max_lines: int = 120) -> List[str]:
+def read_log_tail(log_path: str, max_lines: int = 200) -> List[str]:
     """Read last N lines from a potentially large file efficiently."""
     if not log_path or not os.path.exists(log_path):
         return []
     try:
-        # Simple approach: read from end in chunks
         with open(log_path, "rb") as f:
             f.seek(0, os.SEEK_END)
             size = f.tell()
@@ -276,8 +288,7 @@ def id_depth(obj_id: str) -> int:
 
 
 def is_learning_objective_id(obj_id: str) -> bool:
-    # Only IDs like 1.1.1.1+ are learning objectives
-    return id_depth(obj_id) >= 4
+    return id_depth(obj_id) >= 4  # 1.1.1.1+
 
 
 def collect_learning_objectives_with_paths(roots: List[ObjNode]) -> List[Dict[str, Any]]:
@@ -581,7 +592,6 @@ def ollama_chat(
     format_spec: Any = "json",
 ) -> str:
     url = base_url.rstrip("/") + "/api/chat"
-
     payload = {
         "model": model,
         "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
@@ -590,11 +600,9 @@ def ollama_chat(
         "options": {"temperature": temperature, "num_ctx": num_ctx},
     }
 
-    # Important: use a tuple timeout to avoid stalls (connect, read)
-    # connect timeout shorter, read timeout long
-    timeout = (10, timeout_s)
-
+    timeout = (10, timeout_s)  # (connect, read)
     r = requests.post(url, json=payload, timeout=timeout)
+
     if r.status_code >= 400 and isinstance(format_spec, dict):
         # Some setups reject schema dict; fallback to "json"
         payload["format"] = "json"
@@ -870,7 +878,6 @@ No objective_id/objective_text/questions/difficulty_profile keys.
             last_err = str(e)[:1200]
             backoff_sleep(attempt)
 
-    # Safe fallback
     val_fallback = {
         "status": "pass",
         "issues": ["Manager failed schema compliance after retries; used candidate questions unchanged."],
@@ -997,8 +1004,7 @@ def objective_file_text(path: List[Tuple[str, str]], objective_id: str, objectiv
     return "\n".join(lines).rstrip() + "\n"
 
 
-def write_master_incremental(input_text: str, roots: List[ObjNode], outputs_by_id: Dict[str, str], meta: Dict[str, Any]) -> str:
-    """Build a master file from the outline tree and any available per-objective .txt blocks."""
+def write_master_incremental(roots: List[ObjNode], outputs_by_id: Dict[str, str], meta: Dict[str, Any]) -> str:
     def heading_line(node: ObjNode) -> str:
         return f"{node.obj_id} {node.title}"
 
@@ -1009,7 +1015,6 @@ def write_master_incremental(input_text: str, roots: List[ObjNode], outputs_by_i
         if is_learning_objective_id(node.obj_id):
             block = outputs_by_id.get(node.obj_id)
             if block:
-                # indent the block
                 out.append(f"{indent}{'-' * 78}")
                 out.append(block.replace("\n", "\n" + indent).rstrip())
             else:
@@ -1051,7 +1056,6 @@ def outputs_dir(job_id: str) -> str:
 
 
 def ensure_job_files(job_id: str) -> Tuple[str, str]:
-    """Return (input_path, log_path). Create log file if missing."""
     jd = job_dir(job_id)
     inp = os.path.join(jd, "input.txt")
     logp = os.path.join(jd, "job.log")
@@ -1063,7 +1067,6 @@ def ensure_job_files(job_id: str) -> Tuple[str, str]:
 
 def write_output_files(job_id: str, obj_id: str, obj_text: str, path: List[Tuple[str, str]],
                        ik_set: Optional[Dict[str, Any]], error: Optional[str]) -> Tuple[str, str]:
-    """Write per-objective .txt and .json (if present). Return (txt_path, json_path_or_empty)."""
     base = unique_objective_filename(obj_id, obj_text)
     od = outputs_dir(job_id)
     txt_path = os.path.join(od, base + ".txt")
@@ -1078,31 +1081,7 @@ def write_output_files(job_id: str, obj_id: str, obj_text: str, path: List[Tuple
             json.dump(ik_set, f, ensure_ascii=False, indent=2)
         return txt_path, json_path
 
-    # If failed, still write a json file? Keep empty to indicate none.
     return txt_path, ""
-
-
-def build_zip_from_outputs(job_id: str) -> bytes:
-    """Zip whatever outputs exist right now (partial allowed)."""
-    od = outputs_dir(job_id)
-    buf = io.BytesIO()
-    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
-        # include outputs directory contents
-        for root, _dirs, files in os.walk(od):
-            for fn in files:
-                full = os.path.join(root, fn)
-                arc = os.path.relpath(full, job_dir(job_id))
-                zf.write(full, arcname=arc)
-
-        # include index.txt built from DB
-        index = build_index_text(job_id)
-        zf.writestr("outputs/index.txt", index)
-
-        # include master if exists or build partial master
-        master = build_master_text(job_id)
-        zf.writestr("master_partial.txt", master)
-
-    return buf.getvalue()
 
 
 def build_index_text(job_id: str) -> str:
@@ -1143,7 +1122,6 @@ def build_index_text(job_id: str) -> str:
 
 
 def build_master_text(job_id: str) -> str:
-    """Build partial or full master from input outline + per-objective txt content from disk."""
     conn = db_connect()
     cur = conn.cursor()
     cur.execute("SELECT * FROM jobs WHERE job_id=?", (job_id,))
@@ -1161,7 +1139,6 @@ def build_master_text(job_id: str) -> str:
 
     roots = parse_objectives(input_text)
 
-    # Load any available objective outputs: map objective_id -> txt content
     conn = db_connect()
     cur = conn.cursor()
     cur.execute("""
@@ -1191,7 +1168,23 @@ def build_master_text(job_id: str) -> str:
         "requested": job["requested"],
         "completed": job["completed"],
     }
-    return write_master_incremental(input_text, roots, outputs_by_id, meta)
+    return write_master_incremental(roots, outputs_by_id, meta)
+
+
+def build_zip_from_outputs(job_id: str) -> bytes:
+    od = outputs_dir(job_id)
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
+        for root, _dirs, files in os.walk(od):
+            for fn in files:
+                full = os.path.join(root, fn)
+                arc = os.path.relpath(full, job_dir(job_id))
+                zf.write(full, arcname=arc)
+
+        zf.writestr("outputs/index.txt", build_index_text(job_id))
+        zf.writestr("master_partial.txt", build_master_text(job_id))
+
+    return buf.getvalue()
 
 
 # =============================================================================
@@ -1206,7 +1199,6 @@ def update_job_heartbeat(job_id: str) -> None:
 
 
 def run_job(job_id: str, resume: bool = False) -> None:
-    """Background worker: generate objectives, persist after each objective."""
     with RUNNER_LOCK:
         conn = db_connect()
         cur = conn.cursor()
@@ -1237,7 +1229,6 @@ def run_job(job_id: str, resume: bool = False) -> None:
             conn.close()
             return
 
-        # Mark running
         conn = db_connect()
         conn.execute("UPDATE jobs SET status=?, started_at_unix=?, heartbeat_unix=? WHERE job_id=?",
                      ("running", job["started_at_unix"] or int(time.time()), int(time.time()), job_id))
@@ -1261,7 +1252,6 @@ def run_job(job_id: str, resume: bool = False) -> None:
         if limit and limit > 0:
             objectives = objectives[:limit]
 
-        # Ensure objectives exist in DB (idempotent)
         conn = db_connect()
         cur = conn.cursor()
         for obj in objectives:
@@ -1274,18 +1264,15 @@ def run_job(job_id: str, resume: bool = False) -> None:
         conn.commit()
         conn.close()
 
-        # Set requested if needed
         conn = db_connect()
         conn.execute("UPDATE jobs SET requested=? WHERE job_id=?", (len(objectives), job_id))
         conn.commit()
         conn.close()
 
         failures: List[str] = json.loads(job["failures_json"] or "[]")
-
         last_hb = time.time()
 
         for idx, obj in enumerate(objectives, start=1):
-            # heartbeat
             if time.time() - last_hb >= HEARTBEAT_EVERY_SEC:
                 update_job_heartbeat(job_id)
                 last_hb = time.time()
@@ -1294,17 +1281,13 @@ def run_job(job_id: str, resume: bool = False) -> None:
             obj_text = obj["objective_text"]
             path = obj["path"]
 
-            # If resuming, skip completed objectives
             if resume:
                 conn = db_connect()
                 cur = conn.cursor()
-                cur.execute("""
-                  SELECT status FROM objectives WHERE job_id=? AND objective_id=?
-                """, (job_id, obj_id))
+                cur.execute("SELECT status FROM objectives WHERE job_id=? AND objective_id=?", (job_id, obj_id))
                 row = cur.fetchone()
                 conn.close()
                 if row and row["status"] in ("done", "failed"):
-                    # still count completion in job.completed later
                     continue
 
             append_job_log(job_id, f"[{idx}/{len(objectives)}] Processing: {obj_id} - {obj_text[:70]}...")
@@ -1343,10 +1326,8 @@ def run_job(job_id: str, resume: bool = False) -> None:
                 append_job_log(job_id, f"  ✗ FAILED ({elapsed:.1f}s): {obj_id}: {err}")
                 failures.append(f"{obj_id}: {err}")
 
-            # Persist outputs immediately (TXT always; JSON only on success)
             txt_path, json_path = write_output_files(job_id, obj_id, obj_text, path, ik, err)
 
-            # Update objective row
             conn = db_connect()
             conn.execute("""
               UPDATE objectives
@@ -1364,7 +1345,6 @@ def run_job(job_id: str, resume: bool = False) -> None:
             conn.commit()
             conn.close()
 
-            # Update job completion counts
             conn = db_connect()
             cur = conn.cursor()
             cur.execute("SELECT COUNT(*) AS n FROM objectives WHERE job_id=? AND status IN ('done','failed')", (job_id,))
@@ -1374,7 +1354,6 @@ def run_job(job_id: str, resume: bool = False) -> None:
             conn.commit()
             conn.close()
 
-        # Finish job (even with failures)
         conn = db_connect()
         conn.execute("UPDATE jobs SET status=?, finished_at_unix=?, heartbeat_unix=? WHERE job_id=?",
                      ("done", int(time.time()), int(time.time()), job_id))
@@ -1392,211 +1371,562 @@ def start_job_thread(job_id: str, resume: bool = False) -> None:
 
 
 # =============================================================================
-# UI Templates
+# Modern centered UI templates
 # =============================================================================
 
-PAGE_HOME = """
+UI_BASE_CSS = r"""
+:root{
+  --bg0:#0b1020;
+  --bg1:#0e1630;
+  --card:rgba(255,255,255,.06);
+  --card2:rgba(255,255,255,.08);
+  --stroke:rgba(255,255,255,.10);
+  --stroke2:rgba(255,255,255,.16);
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.68);
+  --faint:rgba(255,255,255,.50);
+  --brand:#7c5cff;
+  --brand2:#37d1ff;
+  --good:#37d67a;
+  --warn:#ffcc66;
+  --bad:#ff5c77;
+  --shadow: 0 18px 60px rgba(0,0,0,.45);
+  --radius: 18px;
+  --radius2: 12px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--sans);
+  color:var(--text);
+  background:
+    radial-gradient(1200px 800px at 10% 10%, rgba(124,92,255,.20), transparent 55%),
+    radial-gradient(1000px 700px at 90% 20%, rgba(55,209,255,.18), transparent 55%),
+    radial-gradient(900px 650px at 40% 100%, rgba(55,214,122,.10), transparent 55%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+
+a{color:inherit}
+.container{
+  min-height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:28px 18px;
+}
+
+.shell{
+  width:min(1100px, 100%);
+}
+
+.topbar{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.brand{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.brand h1{
+  margin:0;
+  letter-spacing:.2px;
+  font-size: 28px;
+  line-height:1.12;
+}
+.brand .sub{
+  color:var(--muted);
+  font-size:14px;
+  max-width: 72ch;
+}
+
+.pills{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.pill{
+  border:1px solid var(--stroke);
+  background: rgba(255,255,255,.04);
+  padding:8px 10px;
+  border-radius:999px;
+  font-size:12px;
+  color:var(--muted);
+  backdrop-filter: blur(8px);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap:16px;
+}
+@media (max-width: 980px){
+  .grid{grid-template-columns: 1fr;}
+  .pills{justify-content:flex-start;}
+}
+
+.card{
+  border:1px solid var(--stroke);
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+
+.card header{
+  padding:14px 16px;
+  border-bottom:1px solid var(--stroke);
+  background: rgba(255,255,255,.03);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.card header h2{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.2px;
+  color: rgba(255,255,255,.86);
+}
+.card header .hint{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.card .body{
+  padding:16px;
+}
+
+.formgrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px;
+}
+@media (max-width: 700px){
+  .formgrid{grid-template-columns: 1fr;}
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+label{
+  font-size:12px;
+  color: var(--muted);
+}
+input[type=text], input[type=number], input[type=file]{
+  width:100%;
+  padding:11px 12px;
+  border-radius: 12px;
+  border:1px solid var(--stroke2);
+  background: rgba(0,0,0,.24);
+  color: var(--text);
+  outline:none;
+}
+input[type=text]:focus, input[type=number]:focus, input[type=file]:focus{
+  border-color: rgba(124,92,255,.65);
+  box-shadow: 0 0 0 4px rgba(124,92,255,.18);
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+
+.btn{
+  appearance:none;
+  border:1px solid var(--stroke2);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  padding:10px 12px;
+  border-radius: 12px;
+  cursor:pointer;
+  font-weight:600;
+  font-size:13px;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  transition: transform .08s ease, background .2s ease, border-color .2s ease;
+}
+.btn:hover{ background: rgba(255,255,255,.10); }
+.btn:active{ transform: translateY(1px); }
+.btn.primary{
+  border-color: rgba(124,92,255,.55);
+  background: linear-gradient(135deg, rgba(124,92,255,.38), rgba(55,209,255,.22));
+}
+.btn.primary:hover{ background: linear-gradient(135deg, rgba(124,92,255,.48), rgba(55,209,255,.30)); }
+.btn.good{
+  border-color: rgba(55,214,122,.55);
+  background: rgba(55,214,122,.10);
+}
+.btn.bad{
+  border-color: rgba(255,92,119,.55);
+  background: rgba(255,92,119,.10);
+}
+
+.small{
+  font-size:12px;
+  color: var(--muted);
+}
+
+.jobs{
+  width:100%;
+  border-collapse: collapse;
+}
+.jobs th, .jobs td{
+  padding:10px 10px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+  font-size:13px;
+}
+.jobs th{color: var(--muted); font-weight:600; text-align:left;}
+.jobs td{color: rgba(255,255,255,.86);}
+.tag{
+  font-family: var(--mono);
+  font-size:12px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.22);
+  padding:4px 8px;
+  border-radius:999px;
+  display:inline-block;
+}
+.status{
+  font-size:12px;
+  padding:4px 8px;
+  border-radius:999px;
+  display:inline-block;
+  border:1px solid rgba(255,255,255,.12);
+}
+.status.running{ color: rgba(55,209,255,.95); border-color: rgba(55,209,255,.35); background: rgba(55,209,255,.08); }
+.status.done{ color: rgba(55,214,122,.95); border-color: rgba(55,214,122,.35); background: rgba(55,214,122,.08); }
+.status.error{ color: rgba(255,92,119,.95); border-color: rgba(255,92,119,.35); background: rgba(255,92,119,.08); }
+.status.queued{ color: rgba(255,204,102,.95); border-color: rgba(255,204,102,.35); background: rgba(255,204,102,.08); }
+.status.interrupted{ color: rgba(255,204,102,.95); border-color: rgba(255,204,102,.35); background: rgba(255,204,102,.08); }
+
+.hr{height:1px; background: rgba(255,255,255,.08); margin:12px 0;}
+
+.kv{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.kv .k{color: var(--muted); font-size:12px;}
+.kv .v{font-family: var(--mono); font-size:12px; color: rgba(255,255,255,.86); padding:4px 8px; border:1px solid rgba(255,255,255,.12); border-radius:10px; background: rgba(0,0,0,.18);}
+
+.progressWrap{
+  width:100%;
+  height:10px;
+  border-radius:999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.22);
+  overflow:hidden;
+}
+.progressBar{
+  height:100%;
+  width:0%;
+  background: linear-gradient(90deg, rgba(124,92,255,.9), rgba(55,209,255,.8));
+}
+
+pre{
+  margin:0;
+  font-family: var(--mono);
+  font-size:12px;
+  line-height: 1.4;
+  color: rgba(255,255,255,.84);
+  background: rgba(0,0,0,.28);
+  border:1px solid rgba(255,255,255,.10);
+  border-radius: 14px;
+  padding:12px;
+  max-height: 420px;
+  overflow:auto;
+}
+"""
+
+PAGE_HOME = f"""
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>IKIZAMINI (Ollama) UI</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 32px; }
-    .box { max-width: 1100px; }
-    .row { display:flex; gap:16px; margin-bottom:12px; flex-wrap: wrap; }
-    .row label { width: 180px; font-weight: bold; }
-    input[type=text], input[type=number] { width: 420px; padding: 6px; }
-    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; text-decoration:none; display:inline-block;}
-    .btn:hover:not(:disabled) { background:#333; }
-    .muted { color:#666; }
-    .card { border:1px solid #ddd; padding:16px; margin-top:18px; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border:1px solid #eee; padding:8px; text-align:left; }
-    th { background:#fafafa; }
-    .pill { display:inline-block; padding:4px 10px; border-radius:999px; background:#eee; }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>IKIZAMINI · Durable Ollama UI</title>
+  <style>{UI_BASE_CSS}</style>
 </head>
 <body>
-<div class="box">
-  <h1>IKIZAMINI (Local Ollama)</h1>
-  <p class="muted">
-    Durable mode: outputs are saved to disk + SQLite as the job runs.
-    You can recover partial results after a crash.
-  </p>
+<div class="container">
+  <div class="shell">
+    <div class="topbar">
+      <div class="brand">
+        <h1>IKIZAMINI</h1>
+        <div class="sub">
+          Durable Ollama generator. Outputs are written to disk and indexed in SQLite as the job runs,
+          so you can recover and download partial results even after a crash.
+        </div>
+      </div>
+      <div class="pills">
+        <div class="pill">DB: <span style="font-family:var(--mono)">{DB_PATH}</span></div>
+        <div class="pill">Data: <span style="font-family:var(--mono)">{DATA_DIR}</span></div>
+      </div>
+    </div>
 
-  <div class="card">
-    <h2>Start New Job</h2>
-    <form method="post" action="/generate" enctype="multipart/form-data">
-      <div class="row">
-        <label>Objectives .txt</label>
-        <input type="file" name="input_file" accept=".txt" required />
+    <div class="grid">
+      <div class="card">
+        <header>
+          <h2>Start a new job</h2>
+          <div class="hint">Runs in the background. UI stays responsive.</div>
+        </header>
+        <div class="body">
+          <form method="post" action="/generate" enctype="multipart/form-data">
+            <div class="formgrid">
+              <div class="field">
+                <label>Objectives (.txt)</label>
+                <input type="file" name="input_file" accept=".txt" required />
+              </div>
+
+              <div class="field">
+                <label>Ollama URL</label>
+                <input type="text" name="ollama_url" value="http://localhost:11434" />
+              </div>
+
+              <div class="field">
+                <label>Worker model</label>
+                <input type="text" name="worker_model" value="qwen:32b" />
+              </div>
+
+              <div class="field">
+                <label>Manager model</label>
+                <input type="text" name="manager_model" value="qwen:32b" />
+              </div>
+
+              <div class="field">
+                <label>Max rounds</label>
+                <input type="number" name="max_rounds" value="6" min="1" max="30" />
+              </div>
+
+              <div class="field">
+                <label>Context size (num_ctx)</label>
+                <input type="number" name="num_ctx" value="8192" min="1024" max="65536" step="256" />
+              </div>
+
+              <div class="field">
+                <label>Ollama timeout (sec)</label>
+                <input type="number" name="timeout_s" value="600" min="60" max="7200" />
+              </div>
+
+              <div class="field">
+                <label>Retries</label>
+                <input type="number" name="max_retries" value="4" min="1" max="20" />
+              </div>
+
+              <div class="field">
+                <label>Limit objectives (0 = no limit)</label>
+                <input type="number" name="limit" value="0" min="0" max="999999" />
+              </div>
+
+              <div class="field">
+                <label>Notes</label>
+                <input type="text" value="Downloads remain available while running (partial ok)." readonly />
+              </div>
+            </div>
+
+            <div class="actions">
+              <button class="btn primary" type="submit">Start generation</button>
+              <span class="small">Tip: For very large jobs, increase timeout to 900–1800s.</span>
+            </div>
+          </form>
+        </div>
       </div>
 
-      <div class="row">
-        <label>Ollama URL</label>
-        <input type="text" name="ollama_url" value="http://localhost:11434" />
+      <div class="card">
+        <header>
+          <h2>Recent jobs</h2>
+          <div class="hint">Open a job to view live logs and downloads.</div>
+        </header>
+        <div class="body">
+          {% if jobs|length == 0 %}
+            <div class="small">(No jobs yet.)</div>
+          {% else %}
+            <table class="jobs">
+              <thead>
+                <tr>
+                  <th>Job</th>
+                  <th>Status</th>
+                  <th>Progress</th>
+                  <th>Open</th>
+                  <th>ZIP</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for j in jobs %}
+                <tr>
+                  <td><span class="tag">{{ j.job_id }}</span></td>
+                  <td><span class="status {{ j.status }}">{{ j.status }}</span></td>
+                  <td>{{ j.completed }}/{{ j.requested }}</td>
+                  <td><a class="btn" href="/job/{{ j.job_id }}">View</a></td>
+                  <td><a class="btn" href="/download/zip/{{ j.job_id }}">Download</a></td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          {% endif %}
+          <div class="hr"></div>
+          <div class="small">
+            Files are stored under <span style="font-family:var(--mono)">{os.path.abspath(DATA_DIR)}</span>.
+          </div>
+        </div>
       </div>
+    </div>
 
-      <div class="row">
-        <label>Worker model</label>
-        <input type="text" name="worker_model" value="qwen:32b" />
-      </div>
-
-      <div class="row">
-        <label>Manager model</label>
-        <input type="text" name="manager_model" value="qwen:32b" />
-      </div>
-
-      <div class="row">
-        <label>Max rounds</label>
-        <input type="number" name="max_rounds" value="6" min="1" max="30" />
-      </div>
-
-      <div class="row">
-        <label>Context size (num_ctx)</label>
-        <input type="number" name="num_ctx" value="8192" min="1024" max="65536" step="256" />
-      </div>
-
-      <div class="row">
-        <label>Ollama timeout (sec)</label>
-        <input type="number" name="timeout_s" value="600" min="60" max="7200" />
-      </div>
-
-      <div class="row">
-        <label>Retries</label>
-        <input type="number" name="max_retries" value="4" min="1" max="20" />
-      </div>
-
-      <div class="row">
-        <label>Limit objectives</label>
-        <input type="number" name="limit" value="0" min="0" max="999999" />
-      </div>
-
-      <button class="btn" type="submit">Start Generation</button>
-    </form>
   </div>
-
-  <div class="card">
-    <h2>Existing Jobs</h2>
-    {% if jobs|length == 0 %}
-      <p class="muted">(No jobs yet.)</p>
-    {% else %}
-      <table>
-        <thead>
-          <tr>
-            <th>Job ID</th>
-            <th>Status</th>
-            <th>Progress</th>
-            <th>Created</th>
-            <th>Open</th>
-            <th>Download ZIP</th>
-          </tr>
-        </thead>
-        <tbody>
-        {% for j in jobs %}
-          <tr>
-            <td><span class="pill">{{ j.job_id }}</span></td>
-            <td>{{ j.status }}</td>
-            <td>{{ j.completed }}/{{ j.requested }}</td>
-            <td>{{ j.created_at_unix }}</td>
-            <td><a class="btn" href="/job/{{ j.job_id }}">View</a></td>
-            <td><a class="btn" href="/download/zip/{{ j.job_id }}">ZIP (partial ok)</a></td>
-          </tr>
-        {% endfor %}
-        </tbody>
-      </table>
-    {% endif %}
-  </div>
-
 </div>
 </body>
 </html>
 """
 
-PAGE_JOB = """
+PAGE_JOB = f"""
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>IKIZAMINI Job {{ job_id }}</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 32px; }
-    .box { max-width: 1100px; }
-    .muted { color:#666; }
-    .row { display:flex; gap:18px; flex-wrap: wrap; align-items: center; }
-    .card { border:1px solid #ddd; padding:16px; margin-top:18px; }
-    .btn { padding: 10px 14px; background:#111; color:#fff; border:0; cursor:pointer; text-decoration: none; display:inline-block; }
-    .btn:hover:not(.disabled) { background:#333; }
-    .btn.disabled { opacity:0.5; cursor:not-allowed; background:#666; pointer-events: none; }
-    pre { background:#f7f7f7; padding:12px; overflow:auto; max-height: 420px; }
-    .kv { margin: 6px 0; }
-    .pill { display:inline-block; padding:4px 10px; border-radius: 999px; background:#eee; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border:1px solid #eee; padding:8px; text-align:left; }
-    th { background:#fafafa; }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>IKIZAMINI · Job {{ job_id }}</title>
+  <style>{UI_BASE_CSS}</style>
 </head>
 <body>
-<div class="box">
-  <h1>IKIZAMINI Job</h1>
-  <p class="muted">This page polls the server. Downloads work even while running (partial ZIP/master).</p>
-
-  <div class="row">
-    <div class="kv"><b>Job ID:</b> <span class="pill">{{ job_id }}</span></div>
-    <div class="kv"><b>Status:</b> <span id="status" class="pill">loading...</span></div>
-    <div class="kv"><b>Progress:</b> <span id="progress" class="pill">0/0</span></div>
-    <div class="kv"><b>Heartbeat:</b> <span id="heartbeat" class="pill">-</span></div>
-  </div>
-
-  <div class="card">
-    <div class="row" style="justify-content: space-between;">
-      <div>
-        <a class="btn" href="/download/master/{{ job_id }}">Download Master .txt (partial ok)</a>
-        <a class="btn" href="/download/zip/{{ job_id }}">Download ZIP (partial ok)</a>
+<div class="container">
+  <div class="shell">
+    <div class="topbar">
+      <div class="brand">
+        <h1>Job <span style="font-family:var(--mono); font-weight:700;">{{ job_id }}</span></h1>
+        <div class="sub">
+          Live status updates, log tail, and downloads. Partial downloads work during execution.
+        </div>
       </div>
-      <div>
-        <a class="btn" href="/">Home</a>
-        <a id="resumeBtn" class="btn" href="/resume/{{ job_id }}">Resume (skip done/failed)</a>
+      <div class="pills">
+        <div class="pill">DB: <span style="font-family:var(--mono)">{DB_PATH}</span></div>
+        <div class="pill">Data: <span style="font-family:var(--mono)">{DATA_DIR}</span></div>
       </div>
     </div>
-    <p class="muted" style="margin-top:10px;">
-      “Resume” is useful after a crash or interruption. It will continue pending objectives.
-    </p>
-  </div>
 
-  <div class="card">
-    <h3>Failures</h3>
-    <pre id="failures">(none)</pre>
-  </div>
+    <div class="grid">
+      <div class="card">
+        <header>
+          <h2>Status</h2>
+          <div class="hint">Polls every 2 seconds.</div>
+        </header>
+        <div class="body">
+          <div class="kv" style="margin-bottom:10px;">
+            <div class="k">Status</div><div class="v" id="status">loading</div>
+            <div class="k">Progress</div><div class="v" id="progress">0/0</div>
+            <div class="k">Heartbeat</div><div class="v" id="heartbeat">-</div>
+          </div>
 
-  <div class="card">
-    <h3>Objectives</h3>
-    <div class="muted">Shows latest 30 objectives by status (server-side).</div>
-    <pre id="objectives">Loading...</pre>
-  </div>
+          <div class="progressWrap" aria-label="progress">
+            <div class="progressBar" id="pbar"></div>
+          </div>
 
-  <div class="card">
-    <h3>Live Log (tail)</h3>
-    <pre id="logs">Loading...</pre>
+          <div class="actions" style="margin-top:14px;">
+            <a class="btn primary" href="/download/master/{{ job_id }}">Download master (.txt)</a>
+            <a class="btn" href="/download/zip/{{ job_id }}">Download ZIP (partial ok)</a>
+            <a class="btn good" href="/resume/{{ job_id }}" title="Resume skips done/failed objectives">Resume</a>
+            <a class="btn" href="/">Home</a>
+          </div>
+
+          <div class="hr"></div>
+          <div class="small">
+            If the server restarts, jobs in running/queued with a stale heartbeat become <b>interrupted</b>.
+            You can press <b>Resume</b> to continue pending objectives.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <header>
+          <h2>Failures</h2>
+          <div class="hint">Aggregated from DB.</div>
+        </header>
+        <div class="body">
+          <pre id="failures">(none)</pre>
+        </div>
+      </div>
+
+      <div class="card" style="grid-column: 1 / -1;">
+        <header>
+          <h2>Objectives (preview)</h2>
+          <div class="hint">First 30 objectives ordered by ID.</div>
+        </header>
+        <div class="body">
+          <pre id="objectives">Loading…</pre>
+        </div>
+      </div>
+
+      <div class="card" style="grid-column: 1 / -1;">
+        <header>
+          <h2>Live log (tail)</h2>
+          <div class="hint">Last ~200 lines from job.log.</div>
+        </header>
+        <div class="body">
+          <pre id="logs">Loading…</pre>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
 <script>
   const jobId = "{{ job_id }}";
 
-  async function poll() {
-    try {
-      const res = await fetch(`/api/job/${jobId}`, { cache: "no-store" });
-      if (!res.ok) {
+  function setStatusClass(el, status) {{
+    el.className = "v";
+    el.style.borderColor = "rgba(255,255,255,.12)";
+    el.style.background = "rgba(0,0,0,.18)";
+    if (status === "running") {{
+      el.style.borderColor = "rgba(55,209,255,.35)";
+      el.style.background = "rgba(55,209,255,.08)";
+    }} else if (status === "done") {{
+      el.style.borderColor = "rgba(55,214,122,.35)";
+      el.style.background = "rgba(55,214,122,.08)";
+    }} else if (status === "error") {{
+      el.style.borderColor = "rgba(255,92,119,.35)";
+      el.style.background = "rgba(255,92,119,.08)";
+    }} else if (status === "queued" || status === "interrupted") {{
+      el.style.borderColor = "rgba(255,204,102,.35)";
+      el.style.background = "rgba(255,204,102,.08)";
+    }}
+  }}
+
+  async function poll() {{
+    try {{
+      const res = await fetch(`/api/job/${{jobId}}`, {{ cache: "no-store" }});
+      if (!res.ok) {{
         document.getElementById("status").textContent = "error";
         return;
-      }
+      }}
       const data = await res.json();
 
-      document.getElementById("status").textContent = data.status;
-      document.getElementById("progress").textContent = `${data.completed}/${data.requested}`;
+      const statusEl = document.getElementById("status");
+      statusEl.textContent = data.status;
+      setStatusClass(statusEl, data.status);
+
+      const progressText = `${{data.completed}}/${{data.requested}}`;
+      document.getElementById("progress").textContent = progressText;
       document.getElementById("heartbeat").textContent = data.heartbeat_unix || "-";
+
+      const pct = (data.requested > 0) ? Math.min(100, Math.floor((data.completed / data.requested) * 100)) : 0;
+      document.getElementById("pbar").style.width = pct + "%";
 
       const failures = (data.failures && data.failures.length) ? data.failures.join("\\n") : "(none)";
       document.getElementById("failures").textContent = failures;
@@ -1609,12 +1939,11 @@ PAGE_JOB = """
         ? data.objectives_preview.join("\\n")
         : "(no objectives yet)";
 
-      // Poll continuously for long runs
       setTimeout(poll, 2000);
-    } catch (e) {
+    }} catch (e) {{
       setTimeout(poll, 4000);
-    }
-  }
+    }}
+  }}
 
   poll();
 </script>
@@ -1661,7 +1990,6 @@ def api_job(job_id: str):
 
     failures = json.loads(job["failures_json"] or "[]")
 
-    # Tail of objectives (preview)
     cur.execute("""
       SELECT objective_id, objective_text, status
       FROM objectives
@@ -1670,10 +1998,9 @@ def api_job(job_id: str):
       LIMIT 30
     """, (job_id,))
     objs = cur.fetchall()
-
     conn.close()
 
-    logs_tail = read_log_tail(job["log_path"] or "", max_lines=120)
+    logs_tail = read_log_tail(job["log_path"] or "", max_lines=200)
     obj_preview = [f"{r['objective_id']} - {r['objective_text']} [{r['status']}]" for r in objs]
 
     return jsonify({
@@ -1708,7 +2035,6 @@ def generate():
     job_id = str(uuid.uuid4())[:8]
     inp_path, log_path = ensure_job_files(job_id)
 
-    # Save input to disk immediately (recoverable)
     with open(inp_path, "w", encoding="utf-8") as f:
         f.write(content)
 
@@ -1723,7 +2049,6 @@ def generate():
         "limit": limit,
     }
 
-    # Create job in DB
     conn = db_connect()
     conn.execute("""
       INSERT INTO jobs (job_id, status, created_at_unix, heartbeat_unix, input_filename, input_path, config_json, requested, completed, failures_json, master_path, log_path)
@@ -1740,9 +2065,7 @@ def generate():
     append_job_log(job_id, f"Input saved to: {inp_path}")
     append_job_log(job_id, f"Logs saved to: {log_path}")
 
-    # Start background processing
     start_job_thread(job_id, resume=False)
-
     return redirect(url_for("job_view", job_id=job_id))
 
 
@@ -1756,16 +2079,13 @@ def resume(job_id: str):
     if not row:
         abort(404)
 
-    # Start resume thread (skip done/failed)
     append_job_log(job_id, "RESUME requested from UI. Will skip done/failed objectives.")
     start_job_thread(job_id, resume=True)
-
     return redirect(url_for("job_view", job_id=job_id))
 
 
 @app.get("/download/master/<job_id>")
 def download_master(job_id: str):
-    # Build partial master at request time (works even mid-run or after crash)
     text = build_master_text(job_id)
     data = text.encode("utf-8", errors="replace")
     return send_file(
@@ -1778,7 +2098,6 @@ def download_master(job_id: str):
 
 @app.get("/download/zip/<job_id>")
 def download_zip(job_id: str):
-    # Always allow partial ZIP
     z = build_zip_from_outputs(job_id)
     return send_file(
         io.BytesIO(z),
@@ -1804,5 +2123,4 @@ if __name__ == "__main__":
     host = os.environ.get("FLASK_HOST", "0.0.0.0")
     port = int(os.environ.get("RUNPOD_PORT", os.environ.get("FLASK_PORT", "8000")))
     safe_print(f"[{_now_ts()}] Starting IKIZAMINI UI on {host}:{port} ...")
-    # threaded=True enables concurrent polling while background thread runs
     app.run(host=host, port=port, debug=False, threaded=True)
