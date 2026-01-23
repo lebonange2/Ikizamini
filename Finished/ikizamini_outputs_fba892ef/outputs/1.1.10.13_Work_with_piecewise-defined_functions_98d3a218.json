@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.10.13",
+  "objective_text": "Work with piecewise-defined functions",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Find the value of the function f(x) = \n-2x + 3 for x = -1\n-5x^2 + 2 for x > 0",
+      "choices": {
+        "A": "-5",
+        "B": "1",
+        "C": "5",
+        "D": "-1"
+      },
+      "correct_choice": "B",
+      "solution": "f(-1) = -2(-1) + 3 = 2 + 3 = 5\nSince x = -1 is not greater than 0, we use the first part of the piecewise function (-2x + 3). The correct answer is 5, which corresponds to choice B.",
+      "explanation": "Piecewise functions are defined by separate parts that apply in different intervals. For this problem, we need to use the first part of the function because x = -1 is within its interval.",
+      "common_mistake_notes": "A common mistake would be to use the second part of the function (-5x^2 + 2) for x = -1, which would lead to an incorrect answer. Remember that each part of a piecewise function applies only in its specified interval."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Simplify the piecewise function g(x) = \n|2x - 3| for x ≤ 3\n-x + 5 for x > 3",
+      "choices": {
+        "A": "x + 1",
+        "B": "x - 1",
+        "C": "2x - 8",
+        "D": "|x - 3|"
+      },
+      "correct_choice": "D",
+      "solution": "For x ≤ 3, g(x) = |2x - 3| which is already simplified. For x > 3, g(x) = -x + 5. Since the two parts are defined separately and do not overlap, we can combine them into one piecewise function: g(x) = \n|x - 3|",
+      "explanation": "When simplifying a piecewise function, we look for any common forms or operations that can be applied to both parts. In this case, the absolute value of 2x - 3 simplifies to |x - 3| because x is subtracted from 3.",
+      "common_mistake_notes": "A common mistake would be to incorrectly simplify the first part of the function (e.g., by assuming that x must be positive) or to combine the two parts without considering their separate intervals."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Sketch the graph of h(x) = \n-4 for x < -2\nx^2 + 1 for -2 ≤ x ≤ 2\n3x - 5 for x > 2",
+      "choices": {
+        "A": "A continuous curve with a sharp corner at x = -2 and x = 2, and a horizontal line segment from x = -2 to x = 2.",
+        "B": "A continuous curve with a sharp corner at x = -2, a parabola for x ≤ 2, and a straight line for x > 2.",
+        "C": "A horizontal line from x = -∞ to x = -2, a parabola for x between -2 and 2, and a straight line for x > 2.",
+        "D": "A straight line from x = -∞ to x = -2, a parabola for x between -2 and 2, and a straight line for x > 2."
+      },
+      "correct_choice": "D",
+      "solution": "The graph of h(x) consists of three distinct parts: a horizontal line segment from x = -∞ to x = -2 (with a value of -4), a parabola defined by x^2 + 1 for x between -2 and 2, and a straight line with the equation 3x - 5 for x > 2. The graph has no sharp corners.",
+      "explanation": "When sketching piecewise functions, it's important to consider the intervals where each part of the function applies and how they connect visually on the graph.",
+      "common_mistake_notes": "A common mistake would be to incorrectly draw the connection between the horizontal line segment and the parabola or to assume that the parabola continues beyond x = 2."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Find the domain of the function j(x) = \n(3x - 1)/(x + 2)\nfor x ≠ -2",
+      "choices": {
+        "A": "(-∞, ∞)",
+        "B": "[-2, ∞)",
+        "C": "(∞, -2)",
+        "D": "(-∞, -2) U (-2, ∞)"
+      },
+      "correct_choice": "D",
+      "solution": "The domain of j(x) is all real numbers except for x = -2 because the function is undefined at that point due to a zero in the denominator. The correct answer is D: (-∞, -2) U (-2, ∞).",
+      "explanation": "When finding the domain of a rational function, we exclude any values of x that would make the denominator equal to zero.",
+      "common_mistake_notes": "A common mistake would be to include x = -2 in the domain or to mistakenly think that the domain is all real numbers without considering the restriction due to the denominator."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Evaluate k(3) where k(x) = \n-1 for x < 0\nx + 4 for x ≥ 0.",
+      "choices": {
+        "A": "-1",
+        "B": "2",
+        "C": "4",
+        "D": "7"
+      },
+      "correct_choice": "D",
+      "solution": "k(3) = 3 + 4 = 7 because x = 3 is greater than or equal to 0, so we use the second part of the piecewise function (x + 4). The correct answer is D: 7.",
+      "explanation": "When evaluating a piecewise function at a specific value, we must determine which part of the function applies for that value based on its interval.",
+      "common_mistake_notes": "A common mistake would be to use the first part of the function (-1) for x = 3, which is not in its interval. Remember to consider the intervals when evaluating piecewise functions."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Find m(-1) where m(x) = \n2x - 5 for x ≤ 0\n-3x + 7 for x > 0.",
+      "choices": {
+        "A": "-7",
+        "B": "3",
+        "C": "4",
+        "D": "6"
+      },
+      "correct_choice": "A",
+      "solution": "m(-1) = 2(-1) - 5 = -2 - 5 = -7 because x = -1 is less than or equal to 0, so we use the first part of the piecewise function (2x - 5). The correct answer is A: -7.",
+      "explanation": "When evaluating a piecewise function at a specific value, we must determine which part of the function applies for that value based on its interval.",
+      "common_mistake_notes": "A common mistake would be to use the second part of the function (-3x + 7) for x = -1, which is not in its interval. Remember to consider the intervals when evaluating piecewise functions."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Solve p(3) where p(x) = \n2x - 1 = 5\nfor x > 0.",
+      "choices": {
+        "A": "3",
+        "B": "-5",
+        "C": "-3",
+        "D": "5"
+      },
+      "correct_choice": "A",
+      "solution": "p(3) = 2(3) - 1 = 6 - 1 = 5 because x = 3 is greater than 0, so we use the equation provided for x > 0. The correct answer is A: 5.",
+      "explanation": "When solving piecewise-defined equations, we must consider the intervals for each part of the function separately.",
+      "common_mistake_notes": "A common mistake would be to solve the equation without considering its respective interval or to mix up solutions between different parts."
+    }
+  ]
+}

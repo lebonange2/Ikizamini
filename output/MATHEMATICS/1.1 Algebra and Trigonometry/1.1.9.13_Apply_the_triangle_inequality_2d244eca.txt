@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.9.13 Apply the triangle inequality
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.9 Inequalities
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Given the lengths of sides a = 4, b = 6, and c = 8 in a triangle, which inequality demonstrates the triangle inequality?
+A) a + b < c
+B) a + c < b
+C) b + c > a
+D) a + b > c
+Correct Answer: D
+
+Solution:
+The triangle inequality states that the sum of any two sides must be greater than the third side. Here, 4 (a) + 6 (b) = 10 is greater than 8 (c). So, option D is correct.
+
+Explanation:
+The triangle inequality ensures a valid triangle with given side lengths. In this case, all three sides form a triangle.
+
+Common mistake note:
+A common mistake is to choose A or B, which violate the triangle inequality by having the sum of two sides less than the third.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+In triangle ABC, AB = 7, BC = 9, and AC = 11. Does this satisfy the triangle inequality?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) The triangle inequality doesn't apply to equilateral triangles
+Correct Answer: A
+
+Solution:
+The triangle inequality requires that the sum of any two sides is greater than the third. For ABC: 7 + 9 > 11, 7 + 11 > 9, and 9 + 11 > 7 hold true. Thus, the side lengths satisfy the inequality.
+
+Explanation:
+The triangle inequality ensures that a valid triangle can be formed with the given side lengths.
+
+Common mistake note:
+A common mistake is to choose C, but we have enough information to apply the triangle inequality directly.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Which set of side lengths cannot form a triangle according to the triangle inequality?
+A) 5, 7, 12
+B) 6, 8, 10
+C) 3, 4, 5
+D) 9, 12, 15
+Correct Answer: A
+
+Solution:
+To check if the sides form a triangle, apply the inequality: 5 + 7 = 12 doesn't satisfy 12 > 5. Sets B, C, and D all meet the condition.
+
+Explanation:
+The triangle inequality helps determine whether three side lengths can create a valid triangle.
+
+Common mistake note:
+A common mistake is overlooking one of the inequalities (sum of two sides > third side) when checking sets.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+In triangle XYZ, X = 3, Y = 4, and Z = 5. Can a similar triangle with doubled side lengths be formed?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) The triangle inequality doesn't apply to similar triangles
+Correct Answer: A
+
+Solution:
+Doubling the sides gives 6, 8, and 10. Each sum is greater than the third side, satisfying the triangle inequality. A similar triangle can be formed.
+
+Explanation:
+Similar triangles have proportional side lengths; if one set satisfies the triangle inequality, so will its scaled version.
+
+Common mistake note:
+A common mistake is to choose C, but we can apply the triangle inequality directly to the scaled sides.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Given a right-angled triangle with side lengths a = 3, b = 4, and c = 5, which inequality represents the longest side?
+A) a < c < b
+B) b < a < c
+C) c < b < a
+D) c < a < b
+Correct Answer: D
+
+Solution:
+In a right triangle, the longest side (c) is the hypotenuse. By Pythagorean theorem, c^2 = a^2 + b^2, so c > a and c > b. Option D represents the longest side.
+
+Explanation:
+The longest side in a right-angled triangle is always opposite the right angle.
+
+Common mistake note:
+A common mistake is to choose A or B, which represent incorrect orderings of the side lengths.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+In triangle ABC, AB = 10, BC = 15, and AC = x. If the triangle is obtuse, what's the minimum value for x that satisfies the triangle inequality?
+A) x > 25
+B) x > 35
+C) x > 45
+D) x > 55
+Correct Answer: B
+
+Solution:
+An obtuse triangle has one angle > 90°. For x, x < AB + BC (sum) and x > BC - AB (difference), so x > 5 and x < 25. As it's obtuse, x must be greater than the sum of other sides for the longest side to be opposite the obtuse angle. The minimum value is just above 25. So, B is correct.
+
+Explanation:
+In an obtuse triangle, the longest side (opposite the obtuse angle) must satisfy additional constraints beyond the basic inequality.
+
+Common mistake note:
+A common mistake is to choose A or C, which don't ensure x as the longest side in an obtuse triangle.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Given a triangle with sides a = 6, b = 8, and c = y. If the triangle is acute, what's the maximum value for y that satisfies the triangle inequality?
+A) y < 14
+B) y < 12
+C) y < 10
+D) y < 8
+Correct Answer: A
+
+Solution:
+An acute triangle has all angles < 90°. For y, y < a + b (sum) and y > b - a (difference), so y > 2 and y < 14. As it's acute, y must be less than the sum of other sides to ensure no angle is > 90°. The maximum value for y is just below 14. So, A is correct.
+
+Explanation:
+In an acute triangle, the longest side (opposite the largest angle) must satisfy additional constraints beyond the basic inequality.
+
+Common mistake note:
+A common mistake is to choose B or C, which don't ensure y is less than the sum of other sides in an acute triangle.
+------------------------------------------------------------------------------

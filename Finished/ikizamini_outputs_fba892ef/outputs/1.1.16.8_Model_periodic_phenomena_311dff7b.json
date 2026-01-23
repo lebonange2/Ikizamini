@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.16.8",
+  "objective_text": "Model periodic phenomena",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Increased Frequency",
+      "stem": "A wave with a frequency of 2 Hz completes one cycle in 0.5 seconds. If the frequency is increased to 4 Hz, how long will it take for the wave to complete one cycle?",
+      "choices": {
+        "A": "0.25 seconds",
+        "B": "1 second",
+        "C": "0.5 seconds",
+        "D": "2 seconds"
+      },
+      "correct_choice": "A",
+      "solution": "The time taken to complete one cycle is inversely proportional to the frequency. So, if the frequency doubles, the time taken for one cycle halves. Therefore, with a frequency of 4 Hz, it will take 0.5 / 2 = 0.25 seconds.",
+      "explanation": "Frequency represents cycles per second, and time period is the reciprocal of frequency. An increase in frequency means less time for each cycle.",
+      "common_mistake_notes": "A common mistake would be to think that increasing the frequency would not change the time taken for one cycle, which is incorrect."
+    },
+    {
+      "id": "Wave Length vs Frequency",
+      "stem": "Two waves have the same speed. Wave A has a wavelength of 2 meters and wave B has a wavelength of 4 meters. Which wave has a higher frequency?",
+      "choices": {
+        "A": "Wave A",
+        "B": "Wave B",
+        "C": "Both have the same frequency",
+        "D": "Insufficient information"
+      },
+      "correct_choice": "A",
+      "solution": "The speed of a wave is equal to its wavelength multiplied by its frequency. Since both waves have the same speed, the wave with the shorter wavelength must have a higher frequency to maintain that speed.",
+      "explanation": "Speed = Wavelength × Frequency; if speed is constant, a shorter wavelength requires a higher frequency.",
+      "common_mistake_notes": "A common mistake would be assuming that longer wavelengths always correspond to higher frequencies, which is not true when the speed of the wave is held constant."
+    },
+    {
+      "id": "Periodic Motion Graph",
+      "stem": "Which graph best represents periodic motion?",
+      "choices": {
+        "A": "[Graph A: straight line from left to right]",
+        "B": "[Graph B: sine curve oscillating around a horizontal axis]",
+        "C": "[Graph C: parabola opening upwards]",
+        "D": "[Graph D: exponential growth]"
+      },
+      "correct_choice": "B",
+      "solution": "Periodic motion is characterized by repetitive oscillations. A sine curve, which represents smooth and periodic oscillations around a central value, best fits this description.",
+      "explanation": "A sine wave models periodic phenomena like sound waves or pendulum swings that oscillate smoothly between two extremes.",
+      "common_mistake_notes": "A common mistake would be to choose Graph A, which represents linear motion without any oscillation."
+    },
+    {
+      "id": "Tuning Forks",
+      "stem": "Two tuning forks produce the same pitch. One has a frequency of 256 Hz and the other has a wavelength of 0.79 meters in air. Which tuning fork is producing the sound?",
+      "choices": {
+        "A": "Both tuning forks",
+        "B": "The one with 256 Hz",
+        "C": "The one with a wavelength of 0.79 meters",
+        "D": "Insufficient information"
+      },
+      "correct_choice": "A",
+      "solution": "The pitch of a sound is determined by its frequency, not its wavelength. Since both tuning forks produce the same pitch, they must have the same frequency.",
+      "explanation": "Pitch is related to frequency and not wavelength; two tuning forks with the same pitch can have different wavelengths depending on the medium they vibrate in.",
+      "common_mistake_notes": "A common mistake would be to think that the wavelength determines the pitch, which is incorrect. The pitch is determined by the frequency of vibration."
+    },
+    {
+      "id": "Beat Frequency",
+      "stem": "Two tuning forks with frequencies of 440 Hz and 442 Hz are struck simultaneously. How many beats per second will be heard?",
+      "choices": {
+        "A": "1 Hz",
+        "B": "2 Hz",
+        "C": "440 Hz",
+        "D": "442 Hz"
+      },
+      "correct_choice": "B",
+      "solution": "The beat frequency is the difference between the two frequencies. In this case, 442 Hz - 440 Hz = 2 Hz.",
+      "explanation": "When two slightly different frequencies are played together, beats are heard due to the constructive and destructive interference of the waves. The number of beats per second is equal to the absolute value of the difference between the two frequencies.",
+      "common_mistake_notes": "A common mistake would be to add the two frequencies instead of finding the difference, which would lead to an incorrect answer."
+    },
+    {
+      "id": "Angular Frequency",
+      "stem": "An object completes 6 rotations in 3 seconds. What is its angular frequency?",
+      "choices": {
+        "A": "2π rad/s",
+        "B": "4π rad/s",
+        "C": "12π rad/s",
+        "D": "24π rad/s"
+      },
+      "correct_choice": "B",
+      "solution": "Angular frequency (ω) is calculated as 2π times the frequency. Given a frequency of 6 rotations per 3 seconds, or 2 rotations per second, ω = 2π × 2 = 4π rad/second.",
+      "explanation": "Angular frequency measures the rate at which an object rotates and is related to linear frequency by the factor 2π.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply by 2π when converting from linear frequency to angular frequency."
+    },
+    {
+      "id": "Resonance",
+      "stem": "A tuning fork with a frequency of 440 Hz is struck and placed near a metal rod. The metal rod starts vibrating at the same frequency as the tuning fork. What phenomenon is observed?",
+      "choices": {
+        "A": "Diffraction",
+        "B": "Interference",
+        "C": "Reflection",
+        "D": "Resonance"
+      },
+      "correct_choice": "D",
+      "solution": "Resonance occurs when an object vibrates with greater amplitude in response to a frequency that matches its natural frequency. In this case, the metal rod vibrating at 440 Hz indicates resonance with the tuning fork.",
+      "explanation": "Resonance is characterized by an increase in amplitude due to matching frequencies; it's commonly observed when two objects vibrate at the same frequency.",
+      "common_mistake_notes": "A common mistake would be to confuse resonance with other wave phenomena like diffraction, interference, or reflection."
+    }
+  ]
+}

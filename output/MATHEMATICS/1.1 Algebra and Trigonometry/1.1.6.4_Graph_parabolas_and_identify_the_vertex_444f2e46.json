@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.6.4",
+  "objective_text": "Graph parabolas and identify the vertex",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the vertex of the parabola given by the equation y = (x - 2)^2 + 3?",
+      "choices": {
+        "A": "(0, 3)",
+        "B": "(2, 0)",
+        "C": "(2, 3)",
+        "D": "(3, 2)"
+      },
+      "correct_choice": "C",
+      "solution": "The vertex form of a parabola is y = (x - h)^2 + k, where (h, k) is the vertex. Comparing this to the given equation y = (x - 2)^2 + 3, we can see that h = 2 and k = 3. Therefore, the vertex is at the point (2, 3).",
+      "explanation": "The vertex of a parabola in standard form is directly related to the values of h and k.",
+      "common_mistake_notes": "A common mistake is to confuse the coordinates with those of a different point on the parabola. Remember that the vertex is always given by (h, k) in the equation."
+    },
+    {
+      "id": "2",
+      "stem": "The vertex of the parabola y = -3(x + 4)^2 - 1 is at which point?",
+      "choices": {
+        "A": "(4, -1)",
+        "B": "(-4, 1)",
+        "C": "(-4, -1)",
+        "D": "(1, -4)"
+      },
+      "correct_choice": "C",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k. Comparing this to the given equation y = -3(x + 4)^2 - 1, we can see that h = -4 and k = -1. Therefore, the vertex is at the point (-4, -1).",
+      "explanation": "The vertex of a parabola in standard form is directly related to the values of h and k.",
+      "common_mistake_notes": "A common mistake is to forget the negative sign when calculating h or k. The direction of the parabola depends on the sign of 'a'."
+    },
+    {
+      "id": "3",
+      "stem": "What is the vertex of the parabola y = 2(x - 1)^2 + 5?",
+      "choices": {
+        "A": "(0, 5)",
+        "B": "(1, 0)",
+        "C": "(1, 5)",
+        "D": "(5, 1)"
+      },
+      "correct_choice": "C",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k. Comparing this to the given equation y = 2(x - 1)^2 + 5, we can see that h = 1 and k = 5. Therefore, the vertex is at the point (1, 5).",
+      "explanation": "The vertex of a parabola in standard form is directly related to the values of h and k.",
+      "common_mistake_notes": "A common mistake is to mix up the coordinates when copying from the equation. Make sure to double-check your work."
+    },
+    {
+      "id": "4",
+      "stem": "Given the vertex (3, -2) and the parabola equation y = ax^2 + bx + c, what is the value of a?",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "C",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k, where (h, k) is the vertex. Given the vertex (3, -2), we have h = 3 and k = -2. The equation can be rewritten as y = a(x - 3)^2 - 2. To find 'a', we need to expand the equation and match it with the standard form y = ax^2 + bx + c. However, since we are only asked for 'a' and not 'b' or 'c', we can infer that 'a' must be 1 because the coefficient of x^2 is 1 in the vertex form.",
+      "explanation": "The value of 'a' in the vertex form directly corresponds to the coefficient of x^2 in the standard form.",
+      "common_mistake_notes": "A common mistake is to try to solve for all coefficients, which isn't necessary given the question's scope. Focus on what information is asked for."
+    },
+    {
+      "id": "5",
+      "stem": "The equation y = 4(x - 2)^2 - 7 represents a parabola with vertex at which point?",
+      "choices": {
+        "A": "(0, -7)",
+        "B": "(2, 0)",
+        "C": "(2, -7)",
+        "D": "(-2, 7)"
+      },
+      "correct_choice": "C",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k. Comparing this to the given equation y = 4(x - 2)^2 - 7, we can see that h = 2 and k = -7. Therefore, the vertex is at the point (2, -7).",
+      "explanation": "The vertex of a parabola in standard form is directly related to the values of h and k.",
+      "common_mistake_notes": "A common mistake is to forget the coefficient 'a' when calculating the vertex coordinates. The value of 'a' affects the shape but not the position of the vertex."
+    },
+    {
+      "id": "6",
+      "stem": "The parabola with equation y = (x + 1)^2 - 4 has its vertex at which point?",
+      "choices": {
+        "A": "(-1, 4)",
+        "B": "(1, -4)",
+        "C": "(-1, -4)",
+        "D": "(4, -1)"
+      },
+      "correct_choice": "C",
+      "solution": "The vertex form of a parabola is y = (x - h)^2 + k. Comparing this to the given equation y = (x + 1)^2 - 4, we can see that h = -1 and k = -4. Therefore, the vertex is at the point (-1, -4).",
+      "explanation": "The vertex of a parabola in standard form is directly related to the values of h and k.",
+      "common_mistake_notes": "A common mistake is to misinterpret the negative sign in front of 'x' as part of the vertex coordinates. Remember that it affects the direction of the parabola, not the vertex position."
+    },
+    {
+      "id": "7",
+      "stem": "Given a parabola with vertex (0, 0) and equation y = ax^2 + bx + c, which of the following must be true?",
+      "choices": {
+        "A": "a = 1",
+        "B": "b = 0",
+        "C": "c = 1",
+        "D": "a = 0"
+      },
+      "correct_choice": "B",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k, where (h, k) is the vertex. Given the vertex (0, 0), we have h = 0 and k = 0. This means that the equation simplifies to y = ax^2 + bx + c. Since there's no linear term (x), the coefficient 'b' must be 0.",
+      "explanation": "When the vertex of a parabola is at the origin, the linear term in the standard form disappears.",
+      "common_mistake_notes": "A common mistake is to assume that 'a' or 'c' must be zero. However, only the coefficient 'b' is affected by the vertex being at the origin."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.4.6 Apply the Factor Theorem
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.4 Polynomial and Rational Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (OneVariableLinearFactor):
+Given the polynomial function f(x) = x^3 - 2x^2 - 5x + 6, use the Factor Theorem to determine if x - 1 is a factor of f(x).
+A) Yes, because f(1) = 0
+B) No, because f(1) = 4
+C) No, because f(-1) = 0
+D) Yes, because f(-1) = 4
+Correct Answer: A
+
+Solution:
+To apply the Factor Theorem, we evaluate the polynomial function at x - 1. If f(1) = 0, then x - 1 is a factor of f(x). Let's calculate f(1): f(1) = (1)^3 - 2(1)^2 - 5(1) + 6 = 1 - 2 - 5 + 6 = 0. Since f(1) = 0, x - 1 is a factor.
+
+Explanation:
+The Factor Theorem states that if a polynomial function has a root at x = c, then (x - c) is a factor of the polynomial.
+
+Common mistake note:
+A common mistake would be to choose option D because it calculates f(-1), which is not relevant to determining if x - 1 is a factor.
+------------------------------------------------------------------------------
+
+Problem 2 (TwoVariableQuadraticFactor):
+Given the quadratic function g(x) = 2x^2 + 5x - 3, use the Factor Theorem to determine if x + 3 is a factor of g(x).
+A) Yes, because g(-3) = 0
+B) No, because g(-3) = 18
+C) No, because g(3) = 24
+D) Yes, because g(3) = 24
+Correct Answer: A
+
+Solution:
+We apply the Factor Theorem by evaluating g(-3): g(-3) = 2(-3)^2 + 5(-3) - 3 = 18 - 15 - 3 = 0. Since g(-3) = 0, x + 3 is a factor of g(x).
+
+Explanation:
+The Factor Theorem applies to any polynomial function and its roots. If g(c) = 0 for some value c, then (x - c) is a factor.
+
+Common mistake note:
+A common mistake would be to choose option B because it calculates the value of g(-3), but incorrectly interprets it as evidence against x + 3 being a factor.
+------------------------------------------------------------------------------
+
+Problem 3 (ZeroPolynomialFactor):
+For the zero polynomial function h(x) = 0, use the Factor Theorem to determine if x - 2 is a factor of h(x).
+A) Yes, because h(2) = 0
+B) No, because h(2) = undefined
+C) No, because h(-2) = 0
+D) Yes, because h(-2) = 0
+Correct Answer: A
+
+Solution:
+The Factor Theorem states that any polynomial function has a root at x = c if f(c) = 0. Since the zero polynomial function is identically zero, h(2) = 0 for all values of x, including x = 2. Thus, x - 2 is a factor of h(x).
+
+Explanation:
+The zero polynomial function is a special case where every value is a root and every linear factor is a factor.
+
+Common mistake note:
+A common mistake would be to choose option B because the term 'undefined' can be confusing, but it does not apply here since h(x) = 0 for all x.
+------------------------------------------------------------------------------
+
+Problem 4 (NonZeroPolynomialNoFactor):
+Given the polynomial function j(x) = x^3 + 2x^2 - 3x + 1, use the Factor Theorem to determine if x + 4 is a factor of j(x).
+A) Yes, because j(-4) = 0
+B) No, because j(-4) = 65
+C) No, because j(4) = 81
+D) Yes, because j(4) = 81
+Correct Answer: B
+
+Solution:
+We apply the Factor Theorem by evaluating j(-4): j(-4) = (-4)^3 + 2(-4)^2 - 3(-4) + 1 = -64 + 32 + 12 + 1 = -19. Since j(-4) ≠ 0, x + 4 is not a factor of j(x).
+
+Explanation:
+If the function value at a given x-value is not zero, then that linear factor is not a factor of the polynomial.
+
+Common mistake note:
+A common mistake would be to choose option A because it calculates the value of j(-4) but incorrectly interprets it as evidence for x + 4 being a factor.
+------------------------------------------------------------------------------
+
+Problem 5 (MultipleFactors):
+Given the polynomial function k(x) = (x - 2)(x + 3)(x - 1), use the Factor Theorem to determine which of the following is NOT a factor of k(x):
+A) x - 2
+B) x + 3
+C) x + 4
+D) x - 1
+Correct Answer: C
+
+Solution:
+The Factor Theorem states that if a polynomial function has a root at x = c, then (x - c) is a factor. k(x) has roots at x = 2, x = -3, and x = 1, corresponding to factors (x - 2), (x + 3), and (x - 1). x + 4 is not one of these factors.
+
+Explanation:
+The Factor Theorem helps identify the linear factors of a polynomial by finding its roots. In this case, we can see the factors directly from the given form of k(x).
+
+Common mistake note:
+A common mistake would be to choose option D because it is one of the correct factors, but the question asks for a factor that is NOT present.
+------------------------------------------------------------------------------
+
+Problem 6 (PolynomialWithConstantTerm):
+Given the polynomial function l(x) = 2x^3 - x^2 + 4x + 6, use the Factor Theorem to determine if x - 1 is a factor of l(x).
+A) Yes, because l(1) = 0
+B) No, because l(1) = 11
+C) No, because l(-1) = 2
+D) Yes, because l(-1) = 2
+Correct Answer: B
+
+Solution:
+We apply the Factor Theorem by evaluating l(1): l(1) = 2(1)^3 - (1)^2 + 4(1) + 6 = 2 - 1 + 4 + 6 = 11. Since l(1) ≠ 0, x - 1 is not a factor of l(x).
+
+Explanation:
+The presence of a constant term does not affect the application of the Factor Theorem; we still look for roots by setting the polynomial equal to zero.
+
+Common mistake note:
+A common mistake would be to choose option A because it calculates the value of l(1) but incorrectly interprets it as evidence for x - 1 being a factor.
+------------------------------------------------------------------------------
+
+Problem 7 (PolynomialWithFractionalCoefficient):
+Given the polynomial function m(x) = (x + 2)/(x - 3), use the Factor Theorem to determine if x - 4 is a factor of m(x).
+A) Yes, because m(4) = 0
+B) No, because m(4) = undefined
+C) No, because m(-4) = 0
+D) Yes, because m(-4) = 0
+Correct Answer: B
+
+Solution:
+The Factor Theorem applies to polynomial functions, but not rational functions like m(x). Since x - 3 is a factor of the denominator and x ≠ 3, m(x) is undefined at x = 4. Thus, we cannot apply the Factor Theorem directly. However, since m(4) is undefined, it does not mean that x - 4 is a factor.
+
+Explanation:
+The Factor Theorem only applies to polynomial functions with real number coefficients; rational functions require different techniques for determining factors.
+
+Common mistake note:
+A common mistake would be to choose option A because it attempts to apply the Factor Theorem to a rational function, which is not applicable.
+------------------------------------------------------------------------------

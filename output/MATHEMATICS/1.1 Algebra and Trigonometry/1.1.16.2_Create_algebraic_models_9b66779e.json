@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.16.2",
+  "objective_text": "Create algebraic models",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "A store sells apples at $0.50 per pound and oranges at $0.75 per pound. If a customer buys 4 pounds of apples and 3 pounds of oranges, what is the total cost in dollars? Express your answer as an algebraic expression.",
+      "choices": {
+        "A": "2.25 + 2.25",
+        "B": "0.5(4) + 0.75(3)",
+        "C": "2(0.5) + 3(0.75)",
+        "D": "4(0.5) + 3(0.75)"
+      },
+      "correct_choice": "D",
+      "solution": "The total cost can be calculated by multiplying the price per pound of each fruit by the quantity bought and then adding the two amounts together. So, for apples: 4 pounds * $0.50/pound = $2, and for oranges: 3 pounds * $0.75/pound = $2.25. Adding these gives a total cost of $2 + $2.25 = $4.25. The algebraic expression for this is D: 4(0.5) + 3(0.75).",
+      "explanation": "This question tests the ability to create an algebraic model representing the relationship between quantities and their costs.",
+      "common_mistake_notes": "A common mistake would be to multiply the total quantity of fruits by the sum of the prices per pound (choice A), which does not correctly represent the individual contributions of apples and oranges to the total cost."
+    },
+    {
+      "id": ":Q2",
+      "stem": "A rectangle has a width that is 3 units less than its length. If the area of the rectangle is represented by the expression 4x^2 - 18x + 9, what is the length of the rectangle in terms of x? Choose the correct expression.",
+      "choices": {
+        "A": "x - 3",
+        "B": "x + 3",
+        "C": "2x - 9",
+        "D": "2x + 3"
+      },
+      "correct_choice": "B",
+      "solution": "The area of a rectangle is given by length times width. If the width is represented as (x - 3), then the area can be expressed as x(x - 3) = x^2 - 3x. The given area expression, 4x^2 - 18x + 9, must be equivalent to x^2 - 3x after simplification. To match the terms, we need to factor out 4 from the quadratic part: (2x - 3)(2x - 3) = 4x^2 - 12x + 9. Comparing this with the given expression, we see that x must be equal to 2x - 6 or x + 3. Since width is less than length, the correct choice is B: x + 3.",
+      "explanation": "This question assesses the understanding of creating an algebraic model for a geometric shape and simplifying expressions to find relationships between variables.",
+      "common_mistake_notes": "A common mistake would be to assume that the width is simply 'x' (choice A), which does not account for the difference specified in the problem."
+    },
+    {
+      "id": ":Q3",
+      "stem": "The volume of a cube is given by V = x^3. If the volume increases by 27 cubic units, what is the new length of an edge in terms of x? Choose the correct expression.",
+      "choices": {
+        "A": "x + 3",
+        "B": "x - 3",
+        "C": "3x",
+        "D": "φsqrt{x} + 3"
+      },
+      "correct_choice": "A",
+      "solution": "The volume of a cube is given by V = x^3. If the volume increases by 27 cubic units, we can write it as (x^3 + 27). To find the new length of an edge, we take the cube root of this expression: φsqrt{x^3 + 27}. Since x is under the cube root, it remains unchanged; only the constant term inside the root affects the edge length. The cube root of 27 is 3, so the new edge length is x + 3. Therefore, the correct choice is A: x + 3.",
+      "explanation": "This question tests the ability to create an algebraic model for a geometric change and apply operations on exponents.",
+      "common_mistake_notes": "A common mistake would be to assume that the edge length simply increases by 3 (choice B), which does not account for the cube root operation."
+    },
+    {
+      "id": ":Q4",
+      "stem": "The cost of producing y widgets is given by C(y) = 200 + 15y. If the production cost increases by $60 per widget, what is the new cost function in terms of y? Choose the correct expression.",
+      "choices": {
+        "A": "200 + 21y",
+        "B": "200 + 75y",
+        "C": "360 + 15y",
+        "D": "200 + 60y"
+      },
+      "correct_choice": "A",
+      "solution": "The original cost function is C(y) = 200 + 15y. If the production cost increases by $60 per widget, we add this to the existing cost per widget: 15y + 60. The new cost function becomes C'(y) = 200 + (15y + 60) = 200 + 15y + 60 = 200 + 21y. Therefore, the correct choice is A: 200 + 21y.",
+      "explanation": "This question assesses the ability to modify an algebraic model for a change in cost and combine like terms.",
+      "common_mistake_notes": "A common mistake would be to multiply the original cost per widget by the increase (choice D), which does not account for the fixed cost component."
+    },
+    {
+      "id": ":Q5",
+      "stem": "The distance between two cities is represented by d = 2t + 3, where d is in miles and t is time in hours. If the distance increases by 10 miles per hour, what is the new distance function in terms of t? Choose the correct expression.",
+      "choices": {
+        "A": "2t + 13",
+        "B": "10t + 3",
+        "C": "2(t + 5) + 3",
+        "D": "2t + 4"
+      },
+      "correct_choice": "C",
+      "solution": "The original distance function is d = 2t + 3. If the distance increases by 10 miles per hour, we add this rate to the existing rate: 2t + 10t = 12t. The new distance function becomes d'(t) = 2(t + 5) + 3, since t is now t + 5 hours due to the increased speed. Therefore, the correct choice is C: 2(t + 5) + 3.",
+      "explanation": "This question tests the ability to create an algebraic model for a change in distance and incorporate the new rate into the equation.",
+      "common_mistake_notes": "A common mistake would be to multiply the original time by the increase (choice B), which does not account for the linear relationship between distance and time."
+    },
+    {
+      "id": ":Q6",
+      "stem": "The height of a triangle is represented by h = 2x, where x is the length of the base. If the base increases by 3 units, what is the new height function in terms of x? Choose the correct expression.",
+      "choices": {
+        "A": "2(x + 3)",
+        "B": "4x",
+        "C": "6x",
+        "D": "h = 2x + 3"
+      },
+      "correct_choice": "A",
+      "solution": "The original height function is h = 2x. If the base increases by 3 units, the new base will be x + 3. The height remains directly proportional to the base, so the new height function becomes h'(x) = 2(x + 3). Therefore, the correct choice is A: 2(x + 3).",
+      "explanation": "This question assesses the understanding of creating an algebraic model for a geometric shape and adjusting it when one variable changes.",
+      "common_mistake_notes": "A common mistake would be to multiply the original height by the increase (choice C), which does not account for the linear relationship between height and base."
+    },
+    {
+      "id": ":Q7",
+      "stem": "The volume of a cylinder is given by V = πr^2h, where r is the radius and h is the height. If both the radius and height are doubled, what is the new volume function in terms of r and h? Choose the correct expression.",
+      "choices": {
+        "A": "4πr^2h",
+        "B": "π(2r)^2(2h)",
+        "C": "πr^2(2h)",
+        "D": "8πr^2h"
+      },
+      "correct_choice": "B",
+      "solution": "The original volume function is V = πr^2h. If both the radius (r) and height (h) are doubled, we can write the new volume as V' = π(2r)^2(2h). Doubling both variables multiplies the volume by 4, since each of r and h is squared in the original formula. Therefore, the correct choice is B: π(2r)^2(2h).",
+      "explanation": "This question tests the ability to create an algebraic model for a geometric change involving multiple variables and apply power rules.",
+      "common_mistake_notes": "A common mistake would be to multiply the original volume by 8 (choice D), which does not account for the squaring of both radius and height in the formula."
+    }
+  ]
+}

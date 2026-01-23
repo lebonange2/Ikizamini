@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.9.7",
+  "objective_text": "Solve rational inequalities",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Solve the inequality: (2x + 3)/(x - 4) > 0",
+      "choices": {
+        "A": "-3 < x < 4",
+        "B": "x < -3 or x > 4",
+        "C": "x > -3 and x ≠ 4",
+        "D": "x < -3 and x ≠ 4"
+      },
+      "correct_choice": "C",
+      "solution": "To solve the inequality (2x + 3)/(x - 4) > 0, we need to find where the expression is positive. First, we look for any values that make the denominator zero (this will give us vertical asymptotes), so x ≠ 4. Next, we set up intervals based on the roots of the numerator (2x + 3 = 0 gives x = -3/2) and test signs within each interval to determine where the expression is positive. Testing values, we find that the inequality holds true for x > -3/2 and x ≠ 4. Therefore, the correct answer is C: x > -3 and x ≠ 4.",
+      "explanation": "The common mistake would be to forget about the restriction x ≠ 4 (when the denominator equals zero), which leads to choice A or D. This is incorrect because division by zero is undefined.",
+      "common_mistake_notes": "Forgetting to exclude values that make the denominator zero."
+    },
+    {
+      "id": "Two",
+      "stem": "Solve the inequality: (3x - 1)/(2x + 5) < 0",
+      "choices": {
+        "A": "-5/2 < x < 1/3",
+        "B": "x < -5/2 or x > 1/3",
+        "C": "x > -5/2 and x ≠ 1/3",
+        "D": "x < -5/2 and x ≠ 1/3"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the inequality (3x - 1)/(2x + 5) < 0, we need to find where the expression is negative. First, we look for any values that make the denominator zero (this will give us vertical asymptotes), so x ≠ -5/2. Next, we set up intervals based on the roots of the numerator (3x - 1 = 0 gives x = 1/3) and test signs within each interval to determine where the expression is negative. Testing values, we find that the inequality holds true for -5/2 < x < 1/3. Therefore, the correct answer is A: -5/2 < x < 1/3.",
+      "explanation": "The common mistake would be to include x = 1/3 in the solution set, which leads to choice B or C. This is incorrect because the inequality does not hold true at x = 1/3 (it equals zero there).",
+      "common_mistake_notes": "Including values where the expression equals zero."
+    },
+    {
+      "id": "Three",
+      "stem": "Solve the inequality: (4x + 2)/(5x - 3) ≥ 0",
+      "choices": {
+        "A": "-1/2 ≤ x < 3/5",
+        "B": "x ≤ -1/2 or x ≥ 3/5",
+        "C": "x > -1/2 and x ≠ 3/5",
+        "D": "x ≤ -1/2 and x ≠ 3/5"
+      },
+      "correct_choice": "B",
+      "solution": "To solve the inequality (4x + 2)/(5x - 3) ≥ 0, we need to find where the expression is non-negative (zero or positive). First, we look for any values that make the denominator zero (this will give us vertical asymptotes), so x ≠ 3/5. Next, we set up intervals based on the roots of the numerator (4x + 2 = 0 gives x = -1/2) and test signs within each interval to determine where the expression is non-negative. Testing values, we find that the inequality holds true for x ≤ -1/2 or x ≥ 3/5. Therefore, the correct answer is B: x ≤ -1/2 or x ≥ 3/5.",
+      "explanation": "The common mistake would be to exclude x = 3/5 from the solution set, which leads to choice A or C. This is incorrect because the inequality holds true at x = 3/5 (it equals zero there).",
+      "common_mistake_notes": "Excluding values where the expression equals zero."
+    },
+    {
+      "id": "Four",
+      "stem": "Solve the inequality: (x^2 - 4)/(x + 2) < 0",
+      "choices": {
+        "A": "-2 < x < 2",
+        "B": "x < -2 or x > 2",
+        "C": "x > -2 and x ≠ 2",
+        "D": "x < -2 and x ≠ 2"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the inequality (x^2 - 4)/(x + 2) < 0, we first factor the numerator: (x - 2)(x + 2)/(x + 2). Since the denominator is never zero, we can ignore it for determining where the expression changes signs. The only root to consider is x = 2. Testing values, we find that the inequality holds true for -2 < x < 2. Therefore, the correct answer is A: -2 < x < 2.",
+      "explanation": "The common mistake would be to forget about the restriction x ≠ -2 (which is not applicable in this case), which leads to choice B or C. This is incorrect because it creates an unnecessary restriction on the solution set.",
+      "common_mistake_notes": "Including a restriction that isn't needed."
+    },
+    {
+      "id": "Five",
+      "stem": "Solve the inequality: (2x^2 + 3x - 2)/(x - 1) > 0",
+      "choices": {
+        "A": "x < -2 or x > 1/2",
+        "B": "-2 < x < 1/2 and x ≠ 1",
+        "C": "x > -2 and x ≠ 1/2",
+        "D": "x < -2 and x ≠ 1/2"
+      },
+      "correct_choice": "B",
+      "solution": "To solve the inequality (2x^2 + 3x - 2)/(x - 1) > 0, we first factor the numerator: (2x - 1)(x + 2)/(x - 1). We have two roots to consider: x = 1/2 and x = -2. Testing values, we find that the inequality holds true for -2 < x < 1/2 and x ≠ 1 (since x = 1 makes the denominator zero). Therefore, the correct answer is B: -2 < x < 1/2 and x ≠ 1.",
+      "explanation": "The common mistake would be to include x = 1 in the solution set, which leads to choice A or C. This is incorrect because the inequality does not hold true at x = 1 (it equals zero there).",
+      "common_mistake_notes": "Including values where the expression equals zero."
+    },
+    {
+      "id": "Six",
+      "stem": "Solve the inequality: (x^3 - 2x^2 - 3x + 6)/(x - 2) ≥ 0",
+      "choices": {
+        "A": "x ≤ -1 or x ≥ 2",
+        "B": "x < -1 or x > 2",
+        "C": "x > -1 and x ≠ 2",
+        "D": "x ≤ -1 and x ≠ 2"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the inequality (x^3 - 2x^2 - 3x + 6)/(x - 2) ≥ 0, we first factor the numerator: (x - 2)(x^2 + 1). Since x = 2 makes the denominator zero, we exclude it from our solution set. The only root to consider is x = 2. Testing values, we find that the inequality holds true for x ≤ -1 or x ≥ 2. Therefore, the correct answer is A: x ≤ -1 or x ≥ 2.",
+      "explanation": "The common mistake would be to include x = 2 in the solution set, which leads to choice B or C. This is incorrect because the inequality does not hold true at x = 2 (it equals zero there).",
+      "common_mistake_notes": "Including values where the expression equals zero."
+    },
+    {
+      "id": "Seven",
+      "stem": "Solve the inequality: (x^4 - 1)/(x + 1) < 0",
+      "choices": {
+        "A": "-1 < x < 1",
+        "B": "x < -1 or x > 1",
+        "C": "x > -1 and x ≠ 1",
+        "D": "x < -1 and x ≠ 1"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the inequality (x^4 - 1)/(x + 1) < 0, we first factor the numerator: (x^2 + 1)(x + 1)(x - 1)/(x + 1). Since x = -1 makes the denominator zero, it is not a valid solution. The only root to consider is x = 1. Testing values, we find that the inequality holds true for -1 < x < 1. Therefore, the correct answer is A: -1 < x < 1.",
+      "explanation": "The common mistake would be to exclude x = -1 from the solution set, which leads to choice B or C. This is incorrect because the inequality does not hold true at x = -1 (it equals zero there).",
+      "common_mistake_notes": "Excluding values where the expression equals zero."
+    }
+  ]
+}

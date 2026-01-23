@@ -1,0 +1,177 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.10.11 Identify even and odd functions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.10 Functions and Relations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Inverse_ Symmetry):
+Which of the following functions is an even function?
+a. f(x) = x^2
+b. f(x) = x^3
+c. f(x) = |x|
+d. f(x) = sin(x)
+A) a
+B) b
+C) c
+D) d
+Correct Answer: A
+
+Solution:
+An even function satisfies the property f(-x) = f(x). For option A, (x^2)^{-1} = (x^{-1})^2 = x^{-2} = (x^2), which is true.
+For B, (x^3)^{-1} = x^{-3} ≠ x^3.
+For C, |-(-x)| = |x| = |x|.
+For D, sin(-x) = -sin(x). Thus, only A is an even function.
+
+Explanation:
+An even function has symmetry about the y-axis, meaning its graph remains unchanged when reflected across it. The key property of even functions is that f(-x) = f(x).
+
+Common mistake note:
+A common mistake is to confuse even functions with odd functions, which satisfy f(-x) = -f(x).
+------------------------------------------------------------------------------
+
+Problem 2 (Odd_ Symmetry):
+Which of the following functions is an odd function?
+a. f(x) = x^2
+b. f(x) = x^3
+c. f(x) = |x|
+d. f(x) = cos(x)
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+An odd function satisfies the property f(-x) = -f(x). For option B, (x^3)^{-1} = x^{-3} = -(x^3), which is true.
+For A, (x^2)^{-1} = x^{-2} ≠ -x^2.
+For C, |-(-x)| = |x| = |x|.
+For D, cos(-x) = cos(x). Thus, only B is an odd function.
+
+Explanation:
+An odd function has symmetry about the origin, meaning its graph remains unchanged when reflected across both axes. The key property of odd functions is that f(-x) = -f(x).
+
+Common mistake note:
+A common mistake is to confuse even functions with odd functions, as they have different reflection properties.
+------------------------------------------------------------------------------
+
+Problem 3 (Even_ Odd_ Mix):
+Which of the following functions is neither even nor odd?
+a. f(x) = x^4 - 2x^2 + 1
+b. f(x) = x^5 - 3x
+c. f(x) = x^6
+d. f(x) = x sin(x)
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+An even function satisfies f(-x) = f(x), and an odd function satisfies f(-x) = -f(x). For option A, (x^4 - 2x^2 + 1)^{-1} = x^{-4} - 2x^{-2} + 1 = x^4 - 2x^2 + 1.
+For B, (x^5 - 3x)^{-1} = (-x)^5 - 3(-x) = -x^5 + 3x ≠ 3x. Since it doesn't satisfy either property, the function is neither even nor odd.
+
+Explanation:
+A function that is not both even and odd will not satisfy either the even or odd symmetry properties. To determine if a function is neither even nor odd, check its reflection properties.
+
+Common mistake note:
+A common mistake is to assume that all polynomials are even or odd, but it depends on the powers of x.
+------------------------------------------------------------------------------
+
+Problem 4 (Even_ Odd_ Identification):
+Identify whether the function f(x) = 2x^3 + 4x is even, odd, or neither.
+a. Even
+b. Odd
+c. Neither
+A) a
+B) b
+C) c
+D) 
+Correct Answer: C
+
+Solution:
+To determine if f(x) = 2x^3 + 4x is even, odd, or neither, we need to check the reflection properties.
+For an even function: f(-x) = 2(-x)^3 + 4(-x) = -8x^3 - 4x ≠ f(x).
+For an odd function: f(-x) = 2(-x)^3 + 4(-x) = -8x^3 - 4x ≠ -f(x). Since it doesn't satisfy either property, the function is neither even nor odd.
+
+Explanation:
+By checking the reflection properties of the function, we can classify it as even, odd, or neither. If f(-x) = f(x), it's even; if f(-x) = -f(x), it's odd; otherwise, it's neither.
+
+Common mistake note:
+A common mistake is to overlook the 4x term when checking for symmetry, which affects the overall classification.
+------------------------------------------------------------------------------
+
+Problem 5 (Even_ Odd_ Composition):
+If g(x) = x^2 and h(x) = sin(x), which of the following compositions will result in an even function?
+a. g(h(x))
+b. h(g(x))
+c. g(-h(x))
+d. -g(h(x))
+A) a
+B) b
+C) c
+D) d
+Correct Answer: C
+
+Solution:
+An even function satisfies f(-x) = f(x). For option A, g(h( x)) = (sin(x))^2. Since sin(-x) = -sin(x), this is not an even function.
+For B, h(g( x)) = sin(x^2). This is also not an even function because it does not satisfy the property for even functions.
+For C, g(-h( x)) = (-sin(x))^2 = sin^2(x) which is an even function since (sin^2(-x)) = sin^2(x).
+For D, -g(h( x)) = -(sin(x))^2 which is not an even function. Thus, only C results in an even function.
+
+Explanation:
+When composing functions, the resulting function's symmetry properties depend on the individual functions involved. To determine if a composition is even, check the reflection property of the composed function.
+
+Common mistake note:
+A common mistake is to assume that if one function is even or odd, their composition will have the same symmetry. This is not always true.
+------------------------------------------------------------------------------
+
+Problem 6 (Even_ Odd/ Product):
+Which of the following products results in an even function?
+a. f(x) = x^2 * cos(x)
+b. g( x) = x^3 * sin(x)
+c. h( x) = x^4 * cos(2x)
+d. j( x) = x^5 * sin(2x)
+A) a
+B) b
+C) c
+D) d
+Correct Answer: C
+
+Solution:
+An even function satisfies f(-x) = f(x). For option A, (x^2 * cos(x))^{-1} = (-x)^2 * cos(-x) = x^2 * cos(x), which is true.
+For B, (x^3 * sin(x))^{-1} = (-x)^3 * sin(-x) = -x^3 * -sin(x) ≠ f(x).
+For C, (x^4 * cos(2x))^{-1} = (-x)^4 * cos(-2x) = x^4 * cos(2x), which is true.
+For D, (x^5 * sin(2x))^{-1} = (-x)^5 * sin(-2x) = -x^5 * -sin(2x) ≠ f(x). Thus, only C results in an even function.
+
+Explanation:
+When multiplying functions, the resulting function's symmetry properties depend on the individual functions involved. To determine if a product is even, check the reflection property of the composed function.
+
+Common mistake note:
+A common mistake is to assume that if one function is even or odd, their product will have the same symmetry. This is not always true.
+------------------------------------------------------------------------------
+
+Problem 7 (Even_ Odd/Quotient):
+Which of the following quotients results in an odd function?
+a. f(x) = x^2 / sin(x)
+b. g( x) = x^3 / cos(x)
+c. h( x) = x^4 / sin(2x)
+d. j( x) = x^5 / cos(2x)
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+An odd function satisfies f(-x) = -f(x). For option A, (x^2 / sin(x))^{-1} = (-x)^2 / sin(-x) = x^2 / -sin(x) ≠ -f(x).
+For B, (x^3 / cos(x))^{-1} = (-x)^3 / cos(-x) = -x^3 / cos(x), which is true.
+For C, (x^4 / sin(2x))^{-1} = (-x)^4 / sin(-2x) = x^4 / sin(2x) ≠ -f(x).
+For D, (x^5 / cos(2x))^{-1} = (-x)^5 / cos(-2x) = -x^5 / cos(2x) ≠ -f(x). Thus, only B results in an odd function.
+
+Explanation:
+When dividing functions, the resulting function's symmetry properties depend on the individual functions involved. To determine if a quotient is odd, check the reflection property of the composed function.
+
+Common mistake note:
+A common mistake is to assume that if one function is even or odd, their quotient will have the same symmetry. This is not always true.
+------------------------------------------------------------------------------

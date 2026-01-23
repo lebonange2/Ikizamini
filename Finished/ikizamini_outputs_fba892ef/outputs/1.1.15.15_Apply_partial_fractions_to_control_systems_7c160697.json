@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.15.15",
+  "objective_text": "Apply partial fractions to control systems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Inverse Laplace Transform of Partial Fractions A",
+      "stem": "Find the inverse Laplace transform of the following function using partial fractions: F(s) = (s + 3)/(s^2 + 4s + 5)",
+      "choices": {
+        "A": "e^{-2t}cos(t)",
+        "B": "e^{-2t}sin(t)",
+        "C": "e^{-t}cos(2t)",
+        "D": "e^{-t}sin(2t)"
+      },
+      "correct_choice": "C",
+      "solution": "The denominator factors as (s + 2)^2 + 1, which is a sum of squares. The partial fractions decomposition is F(s) = A/(s + 2) + B/((s + 2)^2 + 1). Solving for A and B gives A = -1, B = 1/2. Inverse Laplace transform: e^{-t}(-cos(2t) + (1/2)sin(2t)) = e^{-t}sin(2t)",
+      "explanation": "Recognize the sum of squares in the denominator and decompose accordingly.",
+      "common_mistake_notes": "Not recognizing that (s + 2)^2 + 1 is a sum of squares leads to incorrect partial fraction decomposition."
+    },
+    {
+      "id": "Inverse Laplace Transform of Partial Fractions B",
+      "stem": "Find the inverse Laplace transform of the following function using partial fractions: G(s) = (3s - 1)/(s^2 + 5)",
+      "choices": {
+        "A": "3e^{-\frac{5}{2}t}cos(\frac{\text{sqrt}(19)}{2}t) - \frac{1}{\text{sqrt}(19)}e^{-\frac{5}{2}t}sin(\frac{\text{sqrt}(19)}{2}t)",
+        "B": "3e^{-\frac{5}{2}t}sin(\frac{\text{sqrt}(19)}{2}t) + \frac{1}{\text{sqrt}(19)}e^{-\frac{5}{2}t}cos(\frac{\text{sqrt}(19)}{2}t)",
+        "C": "3e^{\frac{5}{2}t}cos(\frac{\text{sqrt}(19)}{2}t) - \frac{1}{\text{sqrt}(19)}e^{\frac{5}{2}t}sin(\frac{\text{sqrt}(19)}{2}t)",
+        "D": "3e^{\frac{5}{2}t}sin(\frac{\text{sqrt}(19)}{2}t) + \frac{1}{\text{sqrt}(19)}e^{\frac{5}{2}t}cos(\frac{\text{sqrt}(19)}{2}t)"
+      },
+      "correct_choice": "A",
+      "solution": "The denominator is a quadratic with no real roots, so it factors as (s - \frac{-5 + i\text{sqrt}(19)}{2})(s - \frac{-5 - i\text{sqrt}(19)}{2}). The partial fractions decomposition gives G(s) = 3/(s + \frac{5}{2}) - \frac{1}{2\text{sqrt}(19)(s + \frac{5}{2} - i\text{sqrt}(19))}. Inverse Laplace transform: 3e^{-\frac{5}{2}t}cos(\frac{\text{sqrt}(19)}{2}t) - \frac{1}{\text{sqrt}(19)}e^{-\frac{5}{2}t}sin(\frac{\text{sqrt}(19)}{2}t)",
+      "explanation": "Correctly factor the quadratic denominator into complex conjugates and solve for coefficients.",
+      "common_mistake_notes": "Not recognizing that the denominator factors into complex conjugates leads to incorrect partial fraction decomposition."
+    },
+    {
+      "id": "Partial Fractions with Constants C",
+      "stem": "Find the partial fractions decomposition of the following function: H(s) = 4s/(s^2 + 4)",
+      "choices": {
+        "A": "A/s + B/(s^2 + 4)",
+        "B": "(2s - A)/(s^2 + 4) + B/s",
+        "C": "(2s + A)/(s^2 + 4) + B/s",
+        "D": "A/(s^2 + 4) + B/ s"
+      },
+      "correct_choice": "D",
+      "solution": "The denominator is a quadratic with no real roots, so it cannot be factored into linear terms. The decomposition is H(s) = A/(s^2 + 4) + B/s. Solving for A and B gives A = 0, B = 2.",
+      "explanation": "Recognize the irreducible quadratic denominator and decompose accordingly.",
+      "common_mistake_notes": "Attempting to factor the quadratic denominator into linear terms, which is not possible."
+    },
+    {
+      "id": "Partial Fractions with Repeated Roots D",
+      "stem": "Find the partial fractions decomposition of the following function: I(s) = (s + 2)/(s^3 + 6s^2 + 11s + 6)",
+      "choices": {
+        "A": "(A/s + B/(s + 1) + C/(s + 2))^2",
+        "B": "A/(s + 1)^2 + B/(s + 2)",
+        "C": "A/(s + 1) + B/(s + 1)^2 + C/(s + 2)",
+        "D": "A/(s + 1) + B/(s + 2)^2"
+      },
+      "correct_choice": "C",
+      "solution": "The denominator factors as (s + 1)(s^2 + 5s + 6), which has a repeated root at s = -1. The decomposition is I(s) = A/(s + 1) + B/(s + 1)^2 + C/(s + 2). Solving for A, B, and C gives A = 1, B = -1, C = 0.",
+      "explanation": "Account for the repeated root in the decomposition.",
+      "common_mistake_notes": "Not accounting for the repeated root leads to incorrect partial fraction decomposition."
+    },
+    {
+      "id": "Partial Fractions with Linear Factors E",
+      "stem": "Find the partial fractions decomposition of the following function: J(s) = (s + 1)/(s(s - 3)(s + 2))",
+      "choices": {
+        "A": "A/s + B/(s - 3) + C/(s + 2)",
+        "B": "(s + 1)/s + A/(s - 3) + B/(s + 2)",
+        "C": "A/(s - 3)^2 + B/(s + 2)^2",
+        "D": "A/ s + B/(s - 3)^2 + C/(s + 2)"
+      },
+      "correct_choice": "A",
+      "solution": "The denominator is a product of linear factors, so the decomposition is J(s) = A/s + B/(s - 3) + C/(s + 2). Solving for A, B, and C gives A = -1, B = 1, C = -1.",
+      "explanation": "Include all linear factors in the decomposition.",
+      "common_mistake_notes": "Not including all linear factors leads to incorrect partial fraction decomposition."
+    },
+    {
+      "id": "Partial Fractions with Complex Roots F",
+      "stem": "Find the partial fractions decomposition of the following function: K(s) = (s^2 + 1)/(s^3 - s)",
+      "choices": {
+        "A": "(As + B)/(s - 1) + C/(s^2 + 1)",
+        "B": "A/(s - 1)^2 + B/(s^2 + 1)",
+        "C": "A/(s - 1) + (B + Cs)/(s^2 + 1)",
+        "D": "(As + B)/(s - 1) + C/(s - i)(s + i)"
+      },
+      "correct_choice": "D",
+      "solution": "The denominator factors as (s - 1)(s^2 + 1), where s^2 + 1 has complex roots. The decomposition is K(s) = (As + B)/(s - 1) + C/(s - i)(s + i). Solving for A, B, and C gives A = 0, B = 1, C = 1.",
+      "explanation": "Account for the complex roots in the denominator.",
+      "common_mistake_notes": "Not accounting for the complex roots leads to incorrect partial fraction decomposition."
+    },
+    {
+      "id": "Partial Fractions with Irreducible Quadratic G",
+      "stem": "Find the partial fractions decomposition of the following function: L(s) = (s^2 + 1)/(s^3 + s)",
+      "choices": {
+        "A": "(As + B)/(s - 1) + C/(s^2 + 1)",
+        "B": "A/(s - 1)^2 + B/(s^2 + 1)",
+        "C": "A/(s - 1) + (B + Cs)/(s^2 + 1)",
+        "D": "(As + B)/(s - 1) + C/(s^2 + s + 1)"
+      },
+      "correct_choice": "D",
+      "solution": "The denominator factors as (s - 1)(s^2 + s + 1), where the quadratic factor is irreducible. The decomposition is L(s) = (As + B)/(s - 1) + C/(s^2 + s + 1). Solving for A, B, and C gives A = 0, B = 1, C = 1.",
+      "explanation": "Recognize the irreducible quadratic factor in the denominator and decompose accordingly.",
+      "common_mistake_notes": "Attempting to factor the quadratic factor leads to incorrect partial fraction decomposition."
+    }
+  ]
+}

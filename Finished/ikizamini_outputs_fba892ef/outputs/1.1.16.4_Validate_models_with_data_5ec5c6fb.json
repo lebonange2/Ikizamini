@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.16.4",
+  "objective_text": "Validate models with data",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "What is the primary purpose of model validation?",
+      "stem": "The primary purpose of model validation is to:",
+      "choices": {
+        "A": "Create a more accurate model by adding new features.",
+        "B": "Ensure the model's predictions align with real-world data.",
+        "C": "Compare different models to select the most performant one.",
+        "D": "Reduce overfitting by tuning hyperparameters."
+      },
+      "correct_choice": "B",
+      "solution": "The primary purpose of model validation is to ensure that a model's predictions are consistent with real-world data, assessing its generalization ability and identifying potential issues like underfitting or overfitting.",
+      "explanation": "A: Adding new features is part of feature engineering. C: Model comparison is for model selection. D: Hyperparameter tuning improves performance but isn't the primary purpose.",
+      "common_mistake_notes": "Choosing A or C may happen due to task confusion, and choosing D when conflating it with hyperparameter tuning."
+    },
+    {
+      "id": "How is model validation typically done?",
+      "stem": "Model validation is typically performed by:",
+      "choices": {
+        "A": "Using the same dataset for both training and testing.",
+        "B": "Dividing the data into training, validation, and test sets.",
+        "C": "Applying the model to new, unseen data from a different distribution.",
+        "D": "Evaluating the model's performance on a single large dataset."
+      },
+      "correct_choice": "B",
+      "solution": "Validation typically involves dividing data into training, validation, and test sets. Training set trains the model, validation set tunes hyperparameters and prevents overfitting, while the test set evaluates the model's performance on unseen data.",
+      "explanation": "A: Leads to overfitting. C: Related to domain adaptation or transfer learning. D: Doesn't provide an unbiased estimate.",
+      "common_mistake_notes": "Choosing A due to lack of understanding about separate datasets; choosing C when thinking about out-of-distribution generalization; choosing D for a single dataset's limitations."
+    },
+    {
+      "id": "What metric is commonly used for validating a binary classification model?",
+      "stem": "When evaluating a binary classification model, a common metric for validation is:",
+      "choices": {
+        "A": "Mean Absolute Error (MAE)",
+        "B": "Root Mean Squared Error (RMSE)",
+        "C": "Confusion Matrix",
+        "D": "Accuracy"
+      },
+      "correct_choice": "C",
+      "solution": "A confusion matrix provides true positives, false positives, true negatives, and false negatives for binary classification models. It helps assess performance and select metrics like precision, recall, or F1 score.",
+      "explanation": "A, B: Regression metrics; D: Can be misleading with class imbalance.",
+      "common_mistake_notes": "Choosing A or B due to confusion with regression metrics; choosing D when overlooking issues with accuracy in imbalanced datasets."
+    },
+    {
+      "id": "How does cross-validation help in model validation?",
+      "stem": "Cross-validation aids model validation by:",
+      "choices": {
+        "A": "Reducing the impact of random fluctuations during training.",
+        "B": "Creating a more diverse dataset by generating synthetic data.",
+        "C": "Validating the model on multiple subsets of data for a reliable estimate.",
+        "D": "Improving the model's performance with ensemble methods."
+      },
+      "correct_choice": "C",
+      "solution": "Cross-validation divides data into folds, trains on different subsets and validates on remaining parts. This provides a more robust estimate of model performance by averaging out random fluctuations.",
+      "explanation": "A: Doesn't reduce fluctuations directly; B: Synthetic data unrelated to cross-validation; D: Ensemble methods can be used with CV but are separate.",
+      "common_mistake_notes": "Choosing A due to confusion with regularization or batch size; choosing B when thinking of data augmentation; choosing D when conflating ensemble techniques with CV."
+    },
+    {
+      "id": "What is the main advantage of k-fold cross-validation over holdout validation?",
+      "stem": "The main advantage of k-fold cross-validation over holdout validation is:",
+      "choices": {
+        "A": "Reducing the computational cost of model training.",
+        "B": "Allowing for more complex models to be trained on smaller datasets.",
+        "C": "Providing a more robust estimate of model performance using all data for both training and validation.",
+        "D": "Evaluating the model's performance under different parameter settings."
+      },
+      "correct_choice": "C",
+      "solution": "K-fold cross-validation offers a more reliable estimate of model performance by using all available data, compared to holdout validation which uses fixed portions. This reduces variability in estimated performance.",
+      "explanation": "A: CV may increase cost; B: Neither affects model complexity; D: Both methods can handle parameter settings.",
+      "common_mistake_notes": "Choosing A due to misunderstanding of trade-offs between cost and accuracy; choosing B when thinking about model selection, not validation; choosing D when conflating hyperparameter tuning with validation choice."
+    },
+    {
+      "id": "Which of the following is an appropriate way to validate a time-series forecasting model?",
+      "stem": "An appropriate method for validating a time-series forecasting model is:",
+      "choices": {
+        "A": "Using a rolling forecast origin, adding new data points one at a time.",
+        "B": "Splitting the dataset based on random sampling into training and test sets.",
+        "C": "Applying the model to future data available during training.",
+        "D": "Evaluating performance using in-sample error metrics."
+      },
+      "correct_choice": "A",
+      "solution": "A rolling forecast origin, adding new data points sequentially, ensures testing on unseen data. This assesses a time-series forecasting model's ability to generalize to future data.",
+      "explanation": "B: Random sampling doesn't preserve temporal order; C: Leads to overfitting; D: In-sample metrics don't provide unbiased out-of-sample evaluation.",
+      "common_mistake_notes": "Choosing B due to lack of understanding time-series data characteristics; choosing C when conflating validation with testing on future training data; choosing D when overlooking the need for out-of-sample evaluation in forecasting."
+    },
+    {
+      "id": "What is the main difference between model validation and model testing?",
+      "stem": "The main distinction between model validation and model testing lies in:",
+      "choices": {
+        "A": "Validation uses a subset of training data, while testing uses an independent dataset.",
+        "B": "Validation focuses on improving the model, while testing assesses deployment readiness.",
+        "C": "Validation is done using cross-validation, while testing uses a single split.",
+        "D": "Validation checks generalization, while testing detects overfitting."
+      },
+      "correct_choice": "B",
+      "solution": "Validation aims to improve the model by tuning hyperparameters and assessing its ability to generalize. Testing focuses on determining if the model is ready for deployment without further changes.",
+      "explanation": "A: Both use subsets; validation often uses k-fold. C: Cross-validation can be used in both, not exclusive. D: Both assess generalization and overfitting but with different objectives.",
+      "common_mistake_notes": "Choosing A due to confusion about data split roles; choosing C when thinking cross-validation is specific to validation (it isn't); choosing D when overlooking primary objectives."
+    }
+  ]
+}

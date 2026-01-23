@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.10.3 Apply the vertical line test
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.10 Functions and Relations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (InfiniteLines):
+Which graph represents a function according to the vertical line test?
+A) [Graph with a curve that passes the vertical line test]
+B) [Graph with a parabola shape, not passing the vertical line test]
+C) [Graph with a straight line, crossing the vertical line multiple times]
+D) [Scatter plot with no clear pattern]
+Correct Answer: A
+
+Solution:
+A function has one output for each input. The vertical line test helps identify functions by checking if any vertical line intersects the graph at most once. Graph A passes as no vertical line intersects it more than once.
+
+Explanation:
+For a graph to represent a function, every x-value must correspond to exactly one y-value. Graph B fails due to multiple y-values for some x-values (parabola), and Graph C fails because the straight line crosses the vertical line multiple times. Graph D is not a function as it's a scatter plot without a clear pattern.
+
+Common mistake note:
+Common mistake: Choosing B, thinking parabolas always represent functions. While parabolas can be functions, this one doesn't pass the test due to multiple y-values for some x-values.
+------------------------------------------------------------------------------
+
+Problem 2 (NoIntersection):
+Does the graph of a circle [insert a graph] represent a function?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) Depends on the specific equation for the circle
+Correct Answer: B
+
+Solution:
+The vertical line test states that if any vertical line intersects the graph at more than one point, it's not a function. A circle has two intersections with every vertical line (except tangents), so it fails the test.
+
+Explanation:
+A circle's equation typically involves x and y squared terms, creating two intersections with most vertical lines. This means multiple y-values for some x-values, failing the test. Exceptions are when the line is tangent to the circle.
+
+Common mistake note:
+Common mistake: Choosing A, thinking circles can always be functions. While some curves like parabolas and straight lines can represent functions, a typical circle fails the vertical line test due to two intersections.
+------------------------------------------------------------------------------
+
+Problem 3 (VerticalLine):
+What happens when you apply the vertical line test to a vertical line graph?
+A) Passes
+B) Fails
+C) Inconclusive
+D) Depends on slope
+Correct Answer: B
+
+Solution:
+A vertical line has undefined slope and is represented as x = constant. It fails the test because every vertical line intersects it at its single point, violating the function definition.
+
+Explanation:
+The test requires no more than one intersection per vertical line. A vertical line intersects itself, failing as it doesn't meet the function criteria of one output for each input.
+
+Common mistake note:
+Common mistake: Choosing A, thinking a vertical line is a function. While simple, it fails the test because every vertical line intersects at its single point, not meeting the definition.
+------------------------------------------------------------------------------
+
+Problem 4 (HorizontalLine):
+Does the graph of a horizontal line [insert a graph] represent a function?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) Depends on the specific equation for the line
+Correct Answer: A
+
+Solution:
+The vertical line test states that if any vertical line intersects the graph at exactly one point, it represents a function. A horizontal line does this, so it's a function.
+
+Explanation:
+A horizontal line has slope 0 and is represented as y = constant. Each vertical line intersects it once, satisfying the definition of a function: each x-value corresponds to exactly one y-value.
+
+Common mistake note:
+Common mistake: Choosing B, thinking horizontal lines can't be functions. While simple, they pass the test because every vertical line intersects them at one point, fulfilling the function criteria.
+------------------------------------------------------------------------------
+
+Problem 5 (QuadraticFunction):
+Which graph represents a quadratic function [insert a graph]?
+A) [Graph with a curve that passes the vertical line test]
+B) [Graph with a straight line, not passing the vertical line test]
+C) [Scatter plot with no clear pattern]
+D) [Graph with multiple disconnected curves]
+Correct Answer: A
+
+Solution:
+A quadratic function is degree 2 and has a parabolic shape. Graph A passes the test, meaning each x-value corresponds to exactly one y-value.
+
+Explanation:
+Quadratic functions have an equation f(x) = ax^2 + bx + c, producing a parabola. If it doesn't cross any vertical line more than once, it's a function. Graph B is not quadratic and fails; C isn't a function graph; D has disconnected curves violating the definition.
+
+Common mistake note:
+Common mistake: Choosing B, thinking all parabolic graphs represent quadratic functions. While parabolas can be quadratic, they must pass the test to be functions. Graph A is correct as it passes.
+------------------------------------------------------------------------------
+
+Problem 6 (PiecewiseFunction):
+Does a piecewise function graph [insert a graph] represent a function?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) Depends on the number of pieces
+Correct Answer: A
+
+Solution:
+Each piece of a piecewise function must pass the test individually. Graph A has two linear segments that do not cross vertical lines more than once in their domains, so it's a function.
+
+Explanation:
+A piecewise function is made up of multiple pieces with separate domains and ranges. If each piece passes the test, the whole is a function. Graph A has two linear segments that pass for their respective domains.
+
+Common mistake note:
+Common mistake: Choosing B, thinking piecewise functions can't be functions. While care must be taken, piecewise functions can represent functions if all pieces pass the test.
+------------------------------------------------------------------------------
+
+Problem 7 (FunctionComposition):
+Does the graph of two composed functions [insert a graph] represent a function?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) Depends on the specific functions
+Correct Answer: A
+
+Solution:
+If each individual function passes, their composition can still be a function. Graph A represents two composed functions that individually pass, so it's a function.
+
+Explanation:
+Function composition involves applying one function's output to another as input. If both original functions pass, their result is a function if no new intersections occur. Graph A shows the result of composing two functions without introducing new violations.
+
+Common mistake note:
+Common mistake: Choosing B, thinking composing functions always results in non-function graphs. While possible for compositions to create non-functions, it's also possible for them to be valid as long as each step passes the test.
+------------------------------------------------------------------------------

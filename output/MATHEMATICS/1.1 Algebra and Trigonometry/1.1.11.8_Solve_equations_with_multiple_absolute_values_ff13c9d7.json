@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.11.8",
+  "objective_text": "Solve equations with multiple absolute values",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {
+      "id": "One Absolute Value Equation",
+      "stem": "Solve the equation: |3x - 5| = 7.",
+      "choices": {
+        "A": "-4",
+        "B": "2",
+        "C": "4/3",
+        "D": "12"
+      },
+      "correct_choice": "B",
+      "solution": "To solve an absolute value equation, consider two cases: one where the expression inside is positive and another where it's negative. For |3x - 5| = 7:\n\n1) 3x - 5 = 7\n2) 3x - 5 = -7\n\nSolving case 1: x = 4 (not a valid solution)\nSolving case 2: x = -2 (not a valid solution)\n\nThe correct solution is x = 2, as it satisfies |3(2) - 5| = 7.\nThe common mistake is assuming both solutions are correct.",
+      "explanation": "We considered two cases and chose the valid solution.",
+      "common_mistake_notes": "Assuming both solutions are correct."
+    },
+    {
+      "id": "Two Absolute Value Equations",
+      "stem": "Solve the system of equations: |x - 1| = 3, |y + 2| = 4.",
+      "choices": {
+        "A": "(1, 2)",
+        "B": "(-2, -6)",
+        "C": "(2, -2)",
+        "D": "(-1, 6)"
+      },
+      "correct_choice": "C",
+      "solution": "Solve each equation separately:\n\nFor |x - 1| = 3: x = 4 or x = -2\nFor |y + 2| = 4: y = 2 or y = -6\n\nThe solution that satisfies both equations is (2, -2). The common mistake is considering only one pair of solutions.",
+      "explanation": "We solved each equation and found the simultaneous solution.",
+      "common_mistake_notes": "Considering only one pair of solutions."
+    },
+    {
+      "id": "Three Absolute Value Equations",
+      "stem": "Solve the system of equations: |2x - 1| = 5, |3y + 4| = 8, |5z - 7| = 12.",
+      "choices": {
+        "A": "(3, -4, 5)",
+        "B": "(-3, 0, -1)",
+        "C": "(1, -4/3, 11/5)",
+        "D": "(-1, 4/3, -11/5)"
+      },
+      "correct_choice": "A",
+      "solution": "Solve each equation separately:\n\nFor |2x - 1| = 5: x = 3 or x = -2\nFor |3y + 4| = 8: y = 4/3 or y = -4\nFor |5z - 7| = 12: z = 5 or z = -1\n\nThe solution that satisfies all three equations is (3, 4/3, 5). The common mistake is overlooking the requirement for a simultaneous solution.",
+      "explanation": "We solved each equation and found the solution valid for all three.",
+      "common_mistake_notes": "Overlooking the need for a solution in all equations."
+    },
+    {
+      "id": "Absolute Value Inequality",
+      "stem": "Solve the inequality: |2x - 3| < 5.",
+      "choices": {
+        "A": "(1, 4)",
+        "B": "(-∞, -1) U (4, ∞)",
+        "C": "[-1, 4]",
+        "D": "(-∞, -4) U (1, ∞)"
+      },
+      "correct_choice": "A",
+      "solution": "For |2x - 3| < 5, consider two cases:\n\n1) 2x - 3 < 5 => x < 4\n2) -(2x - 3) < 5 => x > -1\n\nThe solution is x ∈ (-1, 4). The common mistake is not considering the strict inequality.",
+      "explanation": "We considered two cases and combined the solutions.",
+      "common_mistake_notes": "Not considering the strict inequality '<'."
+    },
+    {
+      "id": "Absolute Value Equation with Variables on Both Sides",
+      "stem": "Solve the equation: |2x - 3| = |4 - x|.",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "5/3",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "Square both sides to eliminate absolute values:\n\n(2x - 3)^2 = (4 - x)^2\nSolve for x: x = 7 or x = -1/3\nCheck solutions in the original equation: x = 7 is valid, x = -1/3 is not.\nThe common mistake is assuming both solutions are valid.",
+      "explanation": "We squared both sides, solved for x, and checked solutions.",
+      "common_mistake_notes": "Assuming both solutions are valid."
+    },
+    {
+      "id": "Absolute Value Equation with Multiple Variables",
+      "stem": "Solve the equation: |x + y| = 5, |x - y| = 3.",
+      "choices": {
+        "A": "(2, 3)",
+        "B": "(-2, -3)",
+        "C": "(1, 4)",
+        "D": "(-1, -4)"
+      },
+      "correct_choice": "C",
+      "solution": "Consider cases for each absolute value equation:\n\nFor |x + y| = 5: x = 5 - y or x = -5 + y\nFor |x - y| = 3: y = x - 3 or y = x + 3\n\nThe solution that satisfies both equations is (1, 4). The common mistake is overlooking the requirement for a simultaneous solution.",
+      "explanation": "We considered cases and found the simultaneous solution.",
+      "common_mistake_notes": "Overlooking the need for a solution in all equations."
+    },
+    {
+      "id": "Absolute Value Equation with Fractions",
+      "stem": "Solve the equation: |(x - 1)/2| = 3/2.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "-1"
+      },
+      "correct_choice": "B",
+      "solution": "Multiply both sides by 2 to eliminate the fraction:\n\n|x - 1| = 3\nSolve for x: x = 4 or x = -2\nCheck solutions in the original equation: x = 1 is valid, x = 4 and x = -2 are not.\nThe common mistake is forgetting to check both solutions.",
+      "explanation": "We multiplied by 2, solved for x, and checked solutions.",
+      "common_mistake_notes": "Forgetting to check both solutions."
+    }
+  ]
+}

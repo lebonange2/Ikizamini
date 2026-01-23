@@ -1,0 +1,130 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.10.7 Verify inverse functions
+==============================================================================
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+If \( f(x) = 3x + 2 \), which of the following functions is the inverse of \( f(x) \)?
+A) \( f^{-1}(x) = \frac{x - 2}{3} \)
+B) \( f^{-1}(x) = 3x - 2 \)
+C) \( f^{-1}(x) = \frac{x + 2}{3} \)
+D) \( f^{-1}(x) = \frac{3x-2}{x} \)
+Correct Answer: A
+
+Solution:
+To find the inverse, swap \( x \) and \( y \) in \( y = 3x + 2 \) to get \( x = 3y + 2 \). Solving for \( y \), we obtain \( y = \frac{x - 2}{3} \).
+
+Explanation:
+The inverse of a function \( f \) must satisfy \( f(f^{-1}(x)) = x \) and \( f^{-1}(f(x)) = x \). \( f^{-1}(x) = \frac{x - 2}{3} \) meets this condition.
+
+Common mistake note:
+A common mistake is choosing option B, confusing function reversal with operations inversion.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Given \( f(x) = \frac{x - 1}{x + 1} \), which function is verified as the inverse of \( f(x) \)?
+A) \( f^{-1}(x) = \frac{x + 1}{x - 1} \)
+B) \( f^{-1}(x) = \frac{1 - x}{1 + x} \)
+C) \( f^{-1}(x) = \frac{1 + x}{1 - x} \)
+D) \( f^{-1}(x) = \frac{x - 1}{x + 1} \)
+Correct Answer: C
+
+Solution:
+Swapping \( x \) and \( y \) in \( y = \frac{x - 1}{x + 1} \), solve \( x = \frac{y - 1}{y + 1} \). Cross-multiply to get \( x(y + 1) = y - 1 \), which simplifies to \( y = \frac{1 + x}{1 - x} \).
+
+Explanation:
+To verify, calculate \( f(f^{-1}(x)) = x \) and \( f^{-1}(f(x)) = x \). \( f^{-1}(x) = \frac{1 + x}{1 - x} \) satisfies both.
+
+Common mistake note:
+A mistake may arise from choosing option A due to incorrect variable treatment during inversion.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+For \( f(x) = x^2 \) restricted to \( x \geq 0 \), which of the following is its inverse?
+A) \( f^{-1}(x) = x^2 \)
+B) \( f^{-1}(x) = \sqrt{x} \)
+C) \( f^{-1}(x) = -\sqrt{x} \)
+D) \( f^{-1}(x) = x^{\frac{1}{2}} \)
+Correct Answer: B
+
+Solution:
+The function is restricted to non-negative \( x \). So the inverse is \( f^{-1}(x) = \sqrt{x} \), ensuring \( f(f^{-1}(x)) = x \) and \( f^{-1}(f(x)) = x \).
+
+Explanation:
+The restriction to \( x \geq 0 \) ensures that the inverse is the positive square root.
+
+Common mistake note:
+Option D may mislead if students forget that square roots imply non-negative values only.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+If \( g(x) = 2x^3 + 1 \), verify the inverse function among the following options.
+A) \( g^{-1}(x) = \sqrt[3]{x - 1} \)
+B) \( g^{-1}(x) = \sqrt[3]{\frac{x-1}{2}} \)
+C) \( g^{-1}(x) = \sqrt[3]{\frac{x+1}{2}} \)
+D) \( g^{-1}(x) = \left(\frac{x-1}{2}\right)^{3} \)
+Correct Answer: B
+
+Solution:
+Set \( y = 2x^3 + 1 \). Swap \( x \) and \( y \) to solve \( x = 2y^3 + 1 \). Solving for \( y \), we get \( y = \sqrt[3]{\frac{x-1}{2}} \).
+
+Explanation:
+After swapping and solving, the function \( g^{-1}(x) = \sqrt[3]{\frac{x-1}{2}} \) correctly undoes \( g(x) \).
+
+Common mistake note:
+The mistake of choosing option A is common by overlooking the division by 2.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Consider \( h(x) = \log_3(x) \). What is the inverse of \( h(x) \)?
+A) \( h^{-1}(x) = 10^x \)
+B) \( h^{-1}(x) = e^x \)
+C) \( h^{-1}(x) = x \ln 3 \)
+D) \( h^{-1}(x) = 3^x \)
+Correct Answer: D
+
+Solution:
+The inverse of \( h(x) = \log_3(x) \) is \( h^{-1}(x) = 3^x \) because logarithms and exponentials with the same base cancel each other out.
+
+Explanation:
+The operations of logarithm base 3 and exponentiation with base 3 are inverses.
+
+Common mistake note:
+Choosing A or B could arise from incorrect assumptions about the base of the exponential or logarithm.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Find the inverse of \( k(x) = \frac{1}{x} \).
+A) \( k^{-1}(x) = x \)
+B) \( k^{-1}(x) = -x \)
+C) \( k^{-1}(x) = \frac{1}{x} \)
+D) \( k^{-1}(x) = -\frac{1}{x} \)
+Correct Answer: C
+
+Solution:
+For \( k(x) = \frac{1}{x} \), swapping \( x \) and \( y \) gives \( x = \frac{1}{y} \), leading to \( y = \frac{1}{x} \). Thus, the inverse is \( k^{-1}(x) = \frac{1}{x} \).
+
+Explanation:
+The reciprocal function is self-inverse, meaning \( k(k^{-1}(x)) = x \).
+
+Common mistake note:
+Confusing reciprocal with its negative (option D) is a typical error.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+If \( m(x) = 5 - x^4 \) for \( 0 \leq x \leq \sqrt[4]{5} \), what is the inverse of \( m(x) \)?
+A) \( m^{-1}(x) = (5-x)^{\frac{1}{4}} \)
+B) \( m^{-1}(x) = \sqrt[4]{5-x} \)
+C) None: further restrictions needed
+D) None
+Correct Answer: B
+
+Solution:
+By setting \( y = 5 - x^4 \), solve for \( x \) to find \( x = \sqrt[4]{5-y} \). This solution is valid within the given range.
+
+Explanation:
+The function is decreasing, and the range is correctly determined as \( m^{-1}(x) = \sqrt[4]{5-x} \), accommodating the domain \( 0 \leq x \leq \sqrt[4]{5} \).
+
+Common mistake note:
+Mistakes may involve ignoring the domain restrictions leading to wrong choice C or D.
+------------------------------------------------------------------------------

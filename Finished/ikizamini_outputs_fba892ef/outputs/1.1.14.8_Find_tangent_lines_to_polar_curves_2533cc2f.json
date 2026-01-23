@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.14.8",
+  "objective_text": "Find tangent lines to polar curves",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the slope of the tangent line to the curve r = 2θ at θ = π/4.",
+      "choices": {
+        "A": "-√2",
+        "B": "0",
+        "C": "1",
+        "D": "√2"
+      },
+      "correct_choice": "D",
+      "solution": "The formula for finding the slope of a tangent line to a polar curve is m = (r'(θ)) / r, where r'(θ) is the derivative of r with respect to θ. For the given curve r = 2θ, we first find its derivative: r'(θ) = 2. Now we plug in the value of θ: m = (2) / (2π/4) = 4 / π. To compare this with the answer choices, we can approximate 4 / π ≈ √2. Therefore, the correct choice is D.",
+      "explanation": "The slope of a tangent line to a polar curve at a given point is found using the formula provided. The common mistake would be not differentiating r with respect to θ or incorrectly applying the formula.",
+      "common_mistake_notes": "Common mistake: Not recognizing that the slope formula involves the derivative of r with respect to θ."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the equation of the tangent line to the curve r = 3sin(2θ) at θ = π/4.",
+      "choices": {
+        "A": "y - √2 = √2(x - √2)",
+        "B": "y - √2 = 2(x - √2)",
+        "C": "y - 1 = 2(x - 1)",
+        "D": "y - 3√2 = 3(x - π/4)"
+      },
+      "correct_choice": "B",
+      "solution": "First, we find the slope of the tangent line using the formula m = (r'(θ)) / r. The derivative of r with respect to θ is r'(θ) = 6cos(2θ). At θ = π/4, cos(2θ) = 0, so m = 0. Now we need to find a point on the curve at this angle: r = 3sin(π/2) = 3. So the point is (3, π/4). The equation of the tangent line in slope-intercept form is y - y1 = m(x - x1), where (x1, y1) is the point on the curve. Plugging in m = 0 and the coordinates from the point, we get y - √2 = 0(x - √2). Simplifying gives y - √2 = 2(x - √2).",
+      "explanation": "The equation of a tangent line is found using the slope-intercept form after calculating the slope at the given angle and finding a point on the curve.",
+      "common_mistake_notes": "Common mistake: Not converting θ to its sine or cosine equivalent when evaluating the derivative."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the equation of the tangent line to the curve r = 4θ^2 at θ = π/3.",
+      "choices": {
+        "A": "y - √3 = 8(x - √3)",
+        "B": "y - 1 = 8√3(x - π/3)",
+        "C": "y - 4π/9 = 8(π/3)(x - π/3)",
+        "D": "y - 2√3 = 4√3(x - π/3)"
+      },
+      "correct_choice": "A",
+      "solution": "First, we find the slope of the tangent line using the formula m = (r'(θ)) / r. The derivative of r with respect to θ is r'(θ) = 8θ. At θ = π/3, m = 8π/3. Next, we need a point on the curve: r = 4(π/3)^2 = 4π^2 / 9. The point is (4π^2 / 9, π/3). The equation of the tangent line in slope-intercept form is y - y1 = m(x - x1), where (x1, y1) is the point on the curve. Plugging in m = 8π/3 and the coordinates from the point, we get y - √3 = (8π/3)(x - √3). Simplifying gives y - √3 = 8(x - √3).",
+      "explanation": "The equation of a tangent line is found using the slope-intercept form after calculating the slope at the given angle and finding a point on the curve.",
+      "common_mistake_notes": "Common mistake: Not simplifying the coordinates or the slope to their simplest forms."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the equation of the tangent line to the curve r = 5sin(θ)cos(θ) at θ = π/4.",
+      "choices": {
+        "A": "y - √2 = √2(x - √2)",
+        "B": "y - 1 = 0(x - π/4)",
+        "C": "y - √2 = 1(x - √2)",
+        "D": "y - 5√2 / 4 = 5/4(x - π/4)"
+      },
+      "correct_choice": "D",
+      "solution": "First, we find the slope of the tangent line using the formula m = (r'(θ)) / r. The derivative of r with respect to θ is r'(θ) = 5cos^2(θ) - 5sin^2(θ). At θ = π/4, cos(θ) = sin(θ), so m = 0. Now we need a point on the curve: r = 5sin(π/4)cos(π/4) = 5√2 / 4. The point is (5√2 / 4, π/4). The equation of the tangent line in slope-intercept form is y - y1 = m(x - x1), where (x1, y1) is the point on the curve. Plugging in m = 0 and the coordinates from the point, we get y - 5√2 / 4 = 0(x - π/4). Simplifying gives y - 5√2 / 4 = 5/4(x - π/4).",
+      "explanation": "The equation of a tangent line is found using the slope-intercept form after calculating the slope at the given angle and finding a point on the curve.",
+      "common_mistake_notes": "Common mistake: Not simplifying the derivative or not recognizing that cos(θ) = sin(θ) at θ = π/4."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the equation of the tangent line to the curve r = 2θ + sin(θ) at θ = π.",
+      "choices": {
+        "A": "y - 0 = 2(x - π)",
+        "B": "y - 1 = 3π(x - π)",
+        "C": "y - 2π = 2(x - π)",
+        "D": "y - 2π + 1 = (π + 1)(x - π)"
+      },
+      "correct_choice": "C",
+      "solution": "First, we find the slope of the tangent line using the formula m = (r'(θ)) / r. The derivative of r with respect to θ is r'(θ) = 2 + cos(θ). At θ = π, cos(π) = -1, so m = 1. Next, we need a point on the curve: r = 2π + sin(π) = 2π. The point is (2π, π). The equation of the tangent line in slope-intercept form is y - y1 = m(x - x1), where (x1, y1) is the point on the curve. Plugging in m = 1 and the coordinates from the point, we get y - 2π = 1(π - π). Simplifying gives y - 2π = 2(x - π).",
+      "explanation": "The equation of a tangent line is found using the slope-intercept form after calculating the slope at the given angle and finding a point on the curve.",
+      "common_mistake_notes": "Common mistake: Not simplifying the derivative or not recognizing that sin(π) = 0."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the equation of the tangent line to the curve r = 3e^θ at θ = ln(2).",
+      "choices": {
+        "A": "y - 6 = 3(x - 2)",
+        "B": "y - 3 = 3ln(2)(x - ln(2))",
+        "C": "y - 3 = 3(x - ln(2))",
+        "D": "y - 3e^{ln(2)} = 3e^{ln(2)}(x - ln(2))"
+      },
+      "correct_choice": "C",
+      "solution": "First, we find the slope of the tangent line using the formula m = (r'(θ)) / r. The derivative of r with respect to θ is r'(θ) = 3e^θ. At θ = ln(2), m = 3e^{ln(2)} = 6. Next, we need a point on the curve: r = 3e^{ln(2)} = 6. The point is (6, ln(2)). The equation of the tangent line in slope-intercept form is y - y1 = m(x - x1), where (x1, y1) is the point on the curve. Plugging in m = 6 and the coordinates from the point, we get y - 3 = 6(x - ln(2)).",
+      "explanation": "The equation of a tangent line is found using the slope-intercept form after calculating the slope at the given angle and finding a point on the curve.",
+      "common_mistake_notes": "Common mistake: Not simplifying the derivative or not recognizing that e^{ln(a)} = a."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the equation of the tangent line to the curve r = 2θ + sin(θ) at θ = π/2.",
+      "choices": {
+        "A": "y - 1 = (π + 1)(x - π/2)",
+        "B": "y - π/2 = 0(x - π/2)",
+        "C": "y - π/2 = 2(x - π/2)",
+        "D": "y - 2π/2 = 2(x - π/2)"
+      },
+      "correct_choice": "B",
+      "solution": "First, we find the slope of the tangent line using the formula m = (r'(θ)) / r. The derivative of r with respect to θ is r'(θ) = 2 + cos(θ). At θ = π/2, cos(π/2) = 0, so m = 2. Next, we need a point on the curve: r = 2π/2 + sin(π/2) = π. The point is (π, π/2). The equation of the tangent line in slope-intercept form is y - y1 = m(x - x1), where (x1, y1) is the point on the curve. Plugging in m = 2 and the coordinates from the point, we get y - π/2 = 2(π/2 - π/2). Simplifying gives y - π/2 = 0(x - π/2).",
+      "explanation": "The equation of a tangent line is found using the slope-intercept form after calculating the slope at the given angle and finding a point on the curve.",
+      "common_mistake_notes": "Common mistake: Not simplifying the derivative or not recognizing that sin(π/2) = 1."
+    }
+  ]
+}

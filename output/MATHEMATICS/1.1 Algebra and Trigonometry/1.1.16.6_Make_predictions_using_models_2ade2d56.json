@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.16.6",
+  "objective_text": "Make predictions using models",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "A machine learning model has been trained on a dataset of customer information to predict whether they will churn or not. Which of the following steps is required to make a prediction for a new customer using this model?",
+      "choices": {
+        "A": "Collect more data on the new customer.",
+        "B": "Train the model on additional data.",
+        "C": "Use the trained model to input the new customer's information and obtain a prediction.",
+        "D": "Manually analyze the new customer's information."
+      },
+      "correct_choice": "C",
+      "solution": "To make a prediction for a new customer using a pre-trained machine learning model, you need to input the customer's data into the model, which will then output a prediction based on its learned patterns from the training dataset. Choice A is not needed since we already have a trained model; choice B is incorrect because the model is already trained and doesn't require more training for new predictions; choice D is not appropriate as the purpose of the model is to automate predictions, not rely on manual analysis.",
+      "explanation": "This question assesses understanding of how to use a pre-trained machine learning model for making predictions on unseen data.",
+      "common_mistake_notes": "A common mistake might be selecting choice A, assuming that more data collection is necessary even though the model has already been trained."
+    },
+    {
+      "id": "Xcv987",
+      "stem": "You have built a regression model to predict housing prices based on features like square footage and number of bedrooms. To make a prediction for a new house, which of the following steps is NOT needed?",
+      "choices": {
+        "A": "Calculate the mean squared error of the model.",
+        "B": "Input the features (square footage and number of bedrooms) of the new house into the model.",
+        "C": "Obtain the predicted housing price from the model's output.",
+        "D": "Pass the new house data through any preprocessing steps used during training."
+      },
+      "correct_choice": "A",
+      "solution": "Calculating the mean squared error (MSE) is a step in evaluating the performance of a model, not making a prediction. After training, you would input the features of the new house, preprocess it if needed, and then use the model to generate a prediction. Choices B, C, and D are all necessary steps for making a prediction.",
+      "explanation": "This question tests understanding of the process involved in using a regression model to make predictions on new data.",
+      "common_mistake_notes": "A common mistake might be selecting choice A, thinking that it's part of the prediction process, but it is actually used for evaluating model performance."
+    },
+    {
+      "id": "Zxc456",
+      "stem": "You have a binary classification model trained to predict whether an email is spam or not. What should you do with a new incoming email to determine if it's spam?",
+      "choices": {
+        "A": "Manually check the content of the email.",
+        "B": "Train the model on the new email data.",
+        "C": "Use the trained model to classify the email as spam or not-spam.",
+        "D": "Ignore the email since you don't have a model for this task."
+      },
+      "correct_choice": "C",
+      "solution": "To determine if a new incoming email is spam using a pre-trained binary classification model, you should input the email's content into the model, which will classify it as either spam or not-spam. Choice A is not efficient and defeats the purpose of having a machine learning model; choice B is unnecessary since the model is already trained; choice D is incorrect because we have a suitable model for this task.",
+      "explanation": "This question assesses understanding of how to apply a binary classification model to make predictions on new data points.",
+      "common_mistake_notes": "A common mistake might be selecting choice A, assuming that manual checking is the only way to determine if an email is spam."
+    },
+    {
+      "id": "Qwe789",
+      "stem": "You have developed a decision tree model for predicting customer churn. What is the first step when using this model to make predictions on new customers?",
+      "choices": {
+        "A": "Train the decision tree on additional data.",
+        "B": "Calculate the entropy of the dataset.",
+        "C": "Input the new customer's data into the decision tree.",
+        "D": "Use a different machine learning algorithm."
+      },
+      "correct_choice": "C",
+      "solution": "The first step in using a pre-trained decision tree model for making predictions is to input the new customer's data into the tree. Choice A is unnecessary since the model is already trained; choice B is part of the training process, not prediction; choice D is incorrect as it suggests changing the algorithm when we are asked to use a decision tree.",
+      "explanation": "This question tests knowledge of how to apply a decision tree model for making predictions on unseen data.",
+      "common_mistake_notes": "A common mistake might be selecting choice B, thinking that entropy calculation is needed for every prediction, but it's actually part of the training process."
+    },
+    {
+      "id": "Rty321",
+      "stem": "You have a deep learning model trained to classify images into different categories. How do you use this model to predict the category of a new image?",
+      "choices": {
+        "A": "Train the model on similar images.",
+        "B": "Resize the new image to match the input size used during training.",
+        "C": "Manually label the new image and compare it with the dataset.",
+        "D": "Skip any preprocessing steps, as deep learning models don't require them."
+      },
+      "correct_choice": "B",
+      "solution": "To predict the category of a new image using a pre-trained deep learning model, you should resize the image to match the input size used during training and then feed it into the model for classification. Choice A is unnecessary since the model is already trained; choice C defeats the purpose of having a machine learning model; choice D is incorrect as deep learning models often require preprocessing steps like resizing and normalization.",
+      "explanation": "This question evaluates understanding of how to apply a deep learning model to make predictions on new images.",
+      "common_mistake_notes": "A common mistake might be selecting choice C, thinking that manual labeling is needed for every prediction, but it's the goal of the model to automate this process."
+    },
+    {
+      "id": "Ghi654",
+      "stem": "You have a k-Nearest Neighbors (k-NN) algorithm trained on customer data to predict their likelihood of purchasing a product. What is the last step in using this model to make a prediction for a new customer?",
+      "choices": {
+        "A": "Calculate the distance between the new customer and all training samples.",
+        "B": "Select k closest neighbors based on calculated distances.",
+        "C": "Take the average of the target values from the k nearest neighbors.",
+        "D": "Use the majority vote of the k nearest neighbors' target values."
+      },
+      "correct_choice": "D",
+      "solution": "The last step in using a k-NN model for prediction is to use the majority vote of the target values from the k nearest neighbors. Choices A, B, and C are part of the process but not the final step; choice D provides the actual prediction.",
+      "explanation": "This question tests knowledge of how to make predictions with a k-Nearest Neighbors algorithm.",
+      "common_mistake_notes": "A common mistake might be selecting choices A, B, or C, thinking they are the final steps, but they are part of the process leading up to making the prediction."
+    },
+    {
+      "id": "Jkl987",
+      "stem": "You have a random forest model that predicts house prices based on features like location and number of rooms. What is an important step when using this model to make predictions for new houses?",
+      "choices": {
+        "A": "Train the random forest on additional data.",
+        "B": "Calculate the accuracy of the model on the training dataset.",
+        "C": "Input the features (location, number of rooms) of the new house into the model.",
+        "D": "Use a single decision tree from the random forest to make predictions."
+      },
+      "correct_choice": "C",
+      "solution": "An important step when using a random forest model for making predictions is to input the new house's features (like location and number of rooms) into the model. Choice A is unnecessary since the model is already trained; choice B is relevant for evaluating performance, not prediction; choice D is incorrect as random forests use an ensemble of trees, not just one.",
+      "explanation": "This question assesses understanding of how to apply a random forest model for making predictions on new data points.",
+      "common_mistake_notes": "A common mistake might be selecting choice B, thinking that accuracy calculation is part of the prediction process, but it's used for evaluating model performance."
+    }
+  ]
+}

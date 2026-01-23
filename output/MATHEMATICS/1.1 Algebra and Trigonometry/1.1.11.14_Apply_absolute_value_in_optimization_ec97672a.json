@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.11.14",
+  "objective_text": "Apply absolute value in optimization",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "What is the minimum value of |x - 3|?",
+      "stem": "What is the minimum value of |x - 3|?",
+      "choices": {
+        "A": "-3",
+        "B": "0",
+        "C": "3",
+        "D": "6"
+      },
+      "correct_choice": "B",
+      "solution": "The absolute value function, |x|, returns the non-negative value of x. For the expression |x - 3|, the minimum value occurs when the expression inside the absolute value is closest to zero. This happens when x = 3, making the expression equal to 0. Thus, the minimum value of |x - 3| is 0.",
+      "explanation": "The minimum value of an absolute value function is reached when the expression inside the bars is closest to zero.",
+      "common_mistake_notes": "A common mistake would be selecting C (3), which is the distance from x = 3 to x = 0, but not the actual minimum value of the absolute function."
+    },
+    {
+      "id": "What is the range of |2x + 1|?",
+      "stem": "What is the range of |2x + 1|?",
+      "choices": {
+        "A": "[-1, ∞)",
+        "B": "[0, ∞)",
+        "C": "[-∞, ∞)",
+        "D": "[-3, 3]"
+      },
+      "correct_choice": "B",
+      "solution": "The range of an absolute value function is all non-negative values because the absolute value always returns a non-negative result. For the expression |2x + 1|, regardless of the value of x, the result will be greater than or equal to zero. Therefore, the range is [0, ∞).",
+      "explanation": "The range of an absolute value function depends on the linearity of the expression inside the bars, but since it's non-negative, the range starts at 0 and extends indefinitely.",
+      "common_mistake_notes": "A common mistake would be selecting C ([-∞, ∞)), which is the domain of a linear function, not its range."
+    },
+    {
+      "id": "What is the value of x that minimizes |2x - 5|?",
+      "stem": "What is the value of x that minimizes |2x - 5|?",
+      "choices": {
+        "A": "0",
+        "B": "1.25",
+        "C": "2.5",
+        "D": "5"
+      },
+      "correct_choice": "C",
+      "solution": "The minimum value of an absolute value function occurs when the expression inside the bars is equal to zero. To find x that minimizes |2x - 5|, set the expression inside the absolute value to zero: 2x - 5 = 0. Solving for x gives x = 2.5.",
+      "explanation": "The minimum point of an absolute value function is found by setting the expression inside the bars equal to zero and solving for the variable.",
+      "common_mistake_notes": "A common mistake would be selecting D (5), which is the value that makes the expression inside the bars zero, but not the value of x."
+    },
+    {
+      "id": "What is the minimum value of |3 - 2|x||?",
+      "stem": "What is the minimum value of |3 - 2|x||?",
+      "choices": {
+        "A": "-3",
+        "B": "0",
+        "C": "1.5",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "The expression inside the absolute values, 3 - 2|x|, can be positive or negative depending on the value of x. However, since it's subtracted from a positive number (3), the minimum value will occur when the expression inside is as close to zero as possible without being negative. This happens when |x| = 1.5, making the entire expression equal to 0. Thus, the minimum value of |3 - 2|x|| is 1.5.",
+      "explanation": "The minimum value of an absolute value function with another absolute value inside depends on balancing the two parts so that they are as close to zero as possible without being negative.",
+      "common_mistake_notes": "A common mistake would be selecting B (0), which assumes that |x| is always 0, but it can also be positive or negative depending on x."
+    },
+    {
+      "id": "What is the domain of f(x) = |x^2 - 4|?",
+      "stem": "What is the domain of f(x) = |x^2 - 4|?",
+      "choices": {
+        "A": "[-2, 2]",
+        "B": "[0, ∞)",
+        "C": "(-∞, -2] U [2, ∞)",
+        "D": "(-∞, ∞)"
+      },
+      "correct_choice": "D",
+      "solution": "The domain of a function is the set of all possible input values (x) for which the function is defined. The expression inside the absolute value, x^2 - 4, is always non-negative because it's the difference of two squares, and the square of any number is non-negative. Therefore, the domain of f(x) = |x^2 - 4| is all real numbers, or (-∞, ∞).",
+      "explanation": "The domain of an absolute value function depends on the expression inside the bars; if it's always non-negative, the domain is all real numbers.",
+      "common_mistake_notes": "A common mistake would be selecting C ([-2, 2]), which is the range of x^2 - 4, not its domain."
+    },
+    {
+      "id": "What is the vertex of the graph of y = |x - 1|?",
+      "stem": "What is the vertex of the graph of y = |x - 1|?",
+      "choices": {
+        "A": "(0, 1)",
+        "B": "(1, 0)",
+        "C": "(1, 1)",
+        "D": "(2, 0)"
+      },
+      "correct_choice": "B",
+      "solution": "The vertex of an absolute value function in the form y = |x - h| + k is at the point (h, k). For the given function y = |x - 1|, h = 1 and k = 0. Thus, the vertex is at the point (1, 0).",
+      "explanation": "The vertex of an absolute value function in standard form represents the minimum or maximum point, which occurs when the expression inside the bars is zero.",
+      "common_mistake_notes": "A common mistake would be selecting D (2, 0), which might be confused with the x- intercept, but it's not the vertex."
+    },
+    {
+      "id": "What is the solution to the inequality |x - 4| < 3?",
+      "stem": "What is the solution to the inequality |x - 4| < 3?",
+      "choices": {
+        "A": "(1, 7)",
+        "B": "[1, 7]",
+        "C": "(-∞, 1) U (7, ∞)",
+        "D": "[-1, 7]"
+      },
+      "correct_choice": "A",
+      "solution": "To solve an inequality involving an absolute value, we split it into two cases: x - 4 > -3 and x - 4 < 3. Solving these inequalities gives us x > 1 and x < 7. Combining the solutions, we get the interval (1, 7).",
+      "explanation": "When solving an inequality with an absolute value, consider both cases where the expression inside the bars is positive and negative.",
+      "common_mistake_notes": "A common mistake would be selecting B ([1, 7]), which represents a closed interval, but inequalities involving '<' typically have open intervals."
+    }
+  ]
+}

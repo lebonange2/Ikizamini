@@ -1,0 +1,227 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.12.7 Apply inverse hyperbolic functions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.12 Hyperbolic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asin hx):
+Find the value of x for which αsinh(αx) = 2, where α is the inverse hyperbolic sine function.
+A) ln(2 + sqrt(5))
+B) ln(sqrt(5) - 1)
+C) ln(1 + sqrt(5))
+D) ln(sqrt(5) + 1)
+Correct Answer: D
+
+Solution:
+The inverse hyperbolic sine function, αsinh(x), is defined as x = sinh^(-1)(y) if and only if sinh(x) = y. Given that sinh(αx) = 2, we need to find the value of x such that sinh(x) = 2/α. Since sinh(x) = (e^x - e^(-x))/2, we can set up the equation and solve for x.
+
+Explanation:
+Solving sinh(x) = 2/α gives us:
+(e^x - e^(-x)) / 2 = 2 / α
+(e^x - e^(-x)) = 4 / α
+(e^x)^2 - 2 * e^x * e^(-x) + (e^(-x))^2 = (4/α)^2
+(e^(2x) - 1) = (4/α)^2
+Now, let y = e^x, so the equation becomes:
+(y^2 - 1) = (4/α)^2
+y^2 = (4/α)^2 + 1
+y = sqrt((4/α)^2 + 1)
+Since sinh(x) = y, we have x = ln(y), so:
+x = ln(sqrt((4/α)^2 + 1))
+This simplifies to x = ln(sqrt(5) + 1), which corresponds to choice D.
+
+Common mistake note:
+A common mistake is to assume that sinh^(-1)(y) = ln(y), but this is incorrect. The correct relationship is sinh^(-1)(y) = ln(sqrt(y^2 + 1) + y). Another mistake might be to forget the factor of α in front of sinh(x), leading to an incorrect equation.
+------------------------------------------------------------------------------
+
+Problem 2 (Acos hx):
+Find the value of x for which αcosh(αx) = 3, where α is the inverse hyperbolic cosine function.
+A) ln(2 + sqrt(5))
+B) ln(sqrt(5) - 1)
+C) ln(1 + sqrt(5))
+D) ln(sqrt(5) - 2)
+Correct Answer: C
+
+Solution:
+The inverse hyperbolic cosine function, αcosh(x), is defined as x = cosh^(-1)(y) if and only if cosh(x) = y. Given that cosh(αx) = 3, we need to find the value of x such that cosh(x) = 3/α. Since cosh(x) = (e^x + e^(-x))/2, we can set up the equation and solve for x.
+
+Explanation:
+Solving cosh(x) = 3/α gives us:
+(e^x + e^(-x)) / 2 = 3 / α
+(e^x + e^(-x)) = 6 / α
+(e^(2x) + 2 * e^x * e^(-x) + (e^(-x))^2) = (6/α)^2
+(e^(2x) + 1) = (6/α)^2
+Now, let y = e^x, so the equation becomes:
+(y^2 + 1) = (6/α)^2
+y^2 = (6/α)^2 - 1
+y = sqrt((6/α)^2 - 1)
+Since cosh(x) = y, we have x = ln(y), so:
+x = ln(sqrt((6/α)^2 - 1))
+This simplifies to x = ln(1 + sqrt(5)), which corresponds to choice C.
+
+Common mistake note:
+A common mistake is to assume that cosh^(-1)(y) = ln(y), but this is incorrect. The correct relationship is cosh^(-1)(y) = ln(sqrt(y^2 - 1) + y). Another mistake might be to forget the factor of α in front of cosh(x), leading to an incorrect equation.
+------------------------------------------------------------------------------
+
+Problem 3 (Atanh hx):
+Find the value of x for which αtanh(αx) = 2/3, where α is the inverse hyperbolic tangent function.
+A) arctan(2/3)
+B) ln((sqrt(5) + 1)/2)
+C) ln((sqrt(5) - 1)/2)
+D) ln(sqrt(5) + 1)
+Correct Answer: B
+
+Solution:
+The inverse hyperbolic tangent function, αtanh(x), is defined as x = tanh^(-1)(y) if and only if tanh(x) = y. Given that tanh(αx) = 2/3, we need to find the value of x such that tanh(x) = (2/α)/3. Since tanh(x) = sinh(x)/cosh(x), we can set up the equation and solve for x.
+
+Explanation:
+Solving tanh(x) = (2/α)/3 gives us:
+(sinh(αx)/cosh(αx)) = (2/α)/3
+Let sinh(αx) = y, then cosh(αx) = sqrt(1 + sinh^2(αx)). The equation becomes:
+y / sqrt(1 + sinh^2(αx)) = (2/α)/3
+Squaring both sides to eliminate the square root:
+(y^2) / (1 + sinh^2(αx)) = (4/α)^2 / 9
+9y^2 = 4(α^2 + αsinh^2(αx))
+9y^2 - 4αy^2 = 4α^2
+(5α - 9)y^2 = 4α^2
+y^2 = (4/α)^2 / (5α - 9)
+Since sinh(αx) = y, we have x = sinh^(-1)(y), so:
+x = sinh^(-1)(sqrt((4/α)^2 / (5α - 9)))
+This simplifies to x = arctan(2/3), which corresponds to choice A. However, the problem asks for the natural logarithm form, so we convert arctan(2/3) into its equivalent natural logarithm form:
+x = ln((sqrt(5) + 1)/2)
+This is choice B.
+
+Common mistake note:
+A common mistake is to assume that tanh^(-1)(y) = arctan(y), which is correct for the regular tangent function but not for hyperbolic functions. Another mistake might be to forget the factor of α in front of tanh(x), leading to an incorrect equation.
+------------------------------------------------------------------------------
+
+Problem 4 (Asinh ex):
+Find the value of x for which sinh(ex) = 2, where e is the base of natural logarithms.
+A) ln(2 + sqrt(5)) / e
+B) ln(sqrt(5) - 1) / e
+C) ln(1 + sqrt(5)) / e
+D) ln(sqrt(5) + 1) / e
+Correct Answer: D
+
+Solution:
+Given sinh(ex) = 2, we can solve for x by applying the definition of sinh and then taking the inverse hyperbolic sine function.
+
+Explanation:
+Sinh(x) is defined as (e^x - e^(-x))/2. So, we have:
+(e^(ex) - e^(-ex)) / 2 = 2
+Now, let y = e^x, so the equation becomes:
+(y^e - 1/y^e) / 2 = 2
+y^e - 1/y^e = 4
+y^{2e} - 4y^e - 1 = 0
+This is a quadratic equation in y^e. Let z = y^e, so the equation becomes:
+z^2 - 4z - 1 = 0
+Solving for z using the quadratic formula:
+z = (4 ± sqrt(16 + 4))/2 = 2 ± sqrt(5)
+Since z = y^e, we have y = e^(ln(z)/e) = e^(ln(2±sqrt(5))/e)
+Now, since sinh(ex) = y and x = ln(y), we get:
+x = ln(e^(ln(2±sqrt(5))/e)) = ln(2±sqrt(5)) / e
+This simplifies to x = ln(sqrt(5) + 1) / e, which corresponds to choice D.
+
+Common mistake note:
+A common mistake is to assume that sinh^(-1)(y) = ln(y), but this is incorrect. The correct relationship is sinh^(-1)(y) = ln(sqrt(y^2 + 1) + y). Another mistake might be to forget the base e in the exponent, leading to an incorrect equation.
+------------------------------------------------------------------------------
+
+Problem 5 (Acosh ex):
+Find the value of x for which cosh(ex) = 3, where e is the base of natural logarithms.
+A) ln(2 + sqrt(5)) / e
+B) ln(sqrt(5) - 1) / e
+C) ln(1 + sqrt(5)) / e
+D) ln(sqrt(5) - 2) / e
+Correct Answer: C
+
+Solution:
+Given cosh(ex) = 3, we can solve for x by applying the definition of cosh and then taking the inverse hyperbolic cosine function.
+
+Explanation:
+Cosh(x) is defined as (e^x + e^(-x))/2. So, we have:
+(e^(ex) + e^(-ex)) / 2 = 3
+Now, let y = e^x, so the equation becomes:
+(y^e + 1/y^e) / 2 = 3
+y^e + 1/y^e = 6
+y^{2e} - 6y^e + 1 = 0
+This is a quadratic equation in y^e. Let z = y^e, so the equation becomes:
+z^2 - 6z + 1 = 0
+Solving for z using the quadratic formula:
+z = (6 ± sqrt(36 - 4))/2 = 3 ± sqrt(5)
+Since z = y^e, we have y = e^(ln(z)/e) = e^(ln(3±sqrt(5))/e)
+Now, since cosh(ex) = y and x = ln(y), we get:
+x = ln(e^(ln(3±sqrt(5))/e)) = ln(3±sqrt(5)) / e
+This simplifies to x = ln(1 + sqrt(5)) / e, which corresponds to choice C.
+
+Common mistake note:
+A common mistake is to assume that cosh^(-1)(y) = ln(y), but this is incorrect. The correct relationship is cosh^(-1)(y) = ln(sqrt(y^2 - 1) + y). Another mistake might be to forget the base e in the exponent, leading to an incorrect equation.
+------------------------------------------------------------------------------
+
+Problem 6 (Atanh ex):
+Find the value of x for which tanh(ex) = 2/3, where e is the base of natural logarithms.
+A) arctan(2/3) / e
+B) ln((sqrt(5) + 1)/2) / e
+C) ln((sqrt(5) - 1)/2) / e
+D) ln(sqrt(5) + 1) / e
+Correct Answer: B
+
+Solution:
+Given tanh(ex) = 2/3, we can solve for x by applying the definition of tanh and then taking the inverse hyperbolic tangent function.
+
+Explanation:
+Tanh(x) is defined as sinh(x)/cosh(x). So, we have:
+(sinh(ex) / cosh(ex)) = 2/3
+Let sinh(ex) = y and cosh(ex) = z, so the equation becomes:
+y/z = 2/3
+Now, recall that sinh^2(x) + cosh^2(x) = 1. Substituting sinh(ex) = y and cosh(ex) = z gives us:
+(y^2 / z^2) + 1 = 1
+y^2 = 2z^2
+Since sinh(ex) = y and cosh(ex) = z, we have y = e^(ex - ln(z)) = z * e^(ex - ln(z)). Now, let u = ex - ln(z), so y = ze^u. The equation becomes:
+(ze^u)^2 = 2z^2
+z^2e^(2u) = 2z^2
+e^(2u) = 2
+u = ln(2)/2
+Now, since sinh(ex) = y and cosh(ex) = z, we have ex - ln(z) = ln(2)/2. Solving for x:
+x = (ln(2) + ln(z))/2e
+Since z = csch(ex), we can express z in terms of sinh(ex): z = 1/sinh(ex) = sqrt(cosh^2(ex) - 1) / sinh(ex). Substituting sinh(ex) = y gives us:
+z = sqrt(1 + y^2) / y
+Now, x becomes:
+x = (ln(2) + ln(sqrt(1 + y^2)/y))/2e
+Since sinh(ex) = y and x = ln(y), we get:
+x = (ln(2) + ln(sqrt(1 + sinh^2(ex))/sinh(ex)))/2e
+This simplifies to x = arctan(2/3) / e, which corresponds to choice A. However, the problem asks for the natural logarithm form, so we convert arctan(2/3) into its equivalent natural logarithm form:
+x = ln((sqrt(5) + 1)/2) / e
+This is choice B.
+
+Common mistake note:
+A common mistake is to assume that tanh^(-1)(y) = arctan(y), which is correct for the regular tangent function but not for hyperbolic functions. Another mistake might be to forget the base e in the exponent, leading to an incorrect equation.
+------------------------------------------------------------------------------
+
+Problem 7 (Asinh 2x):
+Find the value of x for which sinh(2x) = 3, where sinh is the hyperbolic sine function.
+A) ln(3 + sqrt(10)) / 2
+B) ln(sqrt(10) - 3)
+C) ln(3 + sqrt(9 + 4φ)) / 2
+D) ln(sqrt(9 + 4φ) - 3)
+Correct Answer: A
+
+Solution:
+Given sinh(2x) = 3, we can solve for x by applying the double angle identity for sinh and then taking the inverse hyperbolic sine function.
+
+Explanation:
+The double angle identity for sinh is sinh(2x) = 2sinh(x)cosh(x). So, we have:
+2sinh(x)cosh(x) = 3
+Since cosh^2(x) - sinh^2(x) = 1, we can express cosh(x) in terms of sinh(x): cosh(x) = sqrt(1 + sinh^2(x)). Substituting this into the equation gives us:
+2sinh(x)sqrt(1 + sinh^2(x)) = 3
+Let sinh(x) = y, so the equation becomes:
+2y * sqrt(1 + y^2) = 3
+4y^2 + 4y^3 = 9
+4y^3 + 4y^2 - 9 = 0
+This is a cubic equation in y. We can try to factor it or use numerical methods to find the solution, but for simplicity, we'll use numerical methods and find that sinh(x) = y ≈ 0.7651.
+Now, since sinh(x) = y and x = sinh^(-1)(y), we get:
+x ≈ sinh^(-1)(0.7651)
+This simplifies to x ≈ ln(3 + sqrt(10)) / 2, which corresponds to choice A.
+
+Common mistake note:
+A common mistake is to forget the double angle identity for sinh or to misapply it, leading to an incorrect equation. Another mistake might be to assume that sinh^(-1)(y) = ln(y), but this is incorrect. The correct relationship is sinh^(-1)(y) = ln(sqrt(y^2 + 1) + y).
+------------------------------------------------------------------------------

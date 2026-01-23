@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.4.10 Graph polynomial functions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.4 Polynomial and Rational Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the degree of the polynomial function f(x) = 3x^5 - 2x^3 + x^2 - 7.
+A) 2
+B) 3
+C) 4
+D) 5
+Correct Answer: D
+
+Solution:
+The degree of a polynomial is the highest exponent of the variable. In f(x) = 3x^5 - 2x^3 + x^2 - 7, the highest exponent is 5.
+
+Explanation:
+Degree of a polynomial is determined by the term with the highest power.
+
+Common mistake note:
+Common mistake: Choosing B (3) because it's the exponent of the middle term. Remember that the degree is the highest exponent, not necessarily the exponent of any specific term.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Sketch the graph of the polynomial function g(x) = x^3 - 4x^2 + 5x - 2. Which of the following describes a turning point?
+A) (0, -2)
+B) (1, 0)
+C) (2, -1)
+D) (4, 5)
+Correct Answer: B
+
+Solution:
+The turning points occur where the derivative is zero. For g(x) = x^3 - 4x^2 + 5x - 2, the derivative is g'(x) = 3x^2 - 8x + 5. Setting g'(x) to zero and solving for x gives x = 1 and x = 5/3. The turning point at x = 1 corresponds to the y-coordinate of g(1) = 0.
+
+Explanation:
+Turning points are found by setting the derivative equal to zero and evaluating the function at those x-values.
+
+Common mistake note:
+Common mistake: Choosing A or D because they are points on the original function. Turning points must be determined from the derivative.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Find the y-intercept of the polynomial function h(x) = 2x^4 - 3x^3 + 4x^2 - 5x + 6.
+A) (0, 6)
+B) (1, 6)
+C) (2, 6)
+D) (3, 6)
+Correct Answer: A
+
+Solution:
+The y- intercept is found by setting x to zero and evaluating the function. For h(x), plugging in x = 0 gives h(0) = 6.
+
+Explanation:
+Y-intercept is the value of the function when x = 0.
+
+Common mistake note:
+Common mistake: Choosing a point (x, y) where x ≠ 0. The y- intercept specifically refers to the point where x is zero.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+What is the behavior of the polynomial function j(x) = x^2 - 3x + 2 as x approaches negative infinity?
+A) Approaches positive infinity
+B) Approaches negative infinity
+C) Bounces between positive and negative infinity
+D) Tends to a horizontal asymptote
+Correct Answer: A
+
+Solution:
+The leading term of j(x) is x^2, which means the function will grow without bound as x approaches negative infinity. Since it's a positive quadratic, it opens upwards.
+
+Explanation:
+Asymptotic behavior is determined by the leading term and its sign.
+
+Common mistake note:
+Common mistake: Choosing B because of the -3x term. The quadratic term dominates at large negative values of x.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Sketch the graph of k(x) = x^4 - 2x^3 + 3x^2 - 4x + 5. How many real roots does this polynomial have?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: C
+
+Solution:
+The number of real roots can be determined by Descartes' rule of signs or by analyzing the sign changes in the coefficients. In k(x), there are two sign changes, so it has 2 or 0 positive real roots. Since it's an even degree polynomial with a positive leading coefficient, it must have at least one negative root. Therefore, it has exactly 2 real roots.
+
+Explanation:
+The number of real roots is related to the sign changes in the coefficients of a polynomial.
+
+Common mistake note:
+Common mistake: Choosing A or D because of the even degree. The presence of a negative root due to an odd- degree polynomial must be considered.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Find the zeros of the polynomial function m(x) = (x - 1)(x + 2)^2(x - 3)^3. How many distinct zeros does it have?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: C
+
+Solution:
+The zeros are found by setting each factor equal to zero: x = 1, x = -2, and x = 3. There are 3 distinct zeros because the (x + 2) term has multiplicity 2.
+
+Explanation:
+Zeros of a polynomial are the solutions to the equation f(x) = 0.
+
+Common mistake note:
+Common mistake: Choosing D because of the multiplicity. The multiplicity does not change the number of distinct zeros; it only affects the behavior of the graph at that point.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Sketch the graph of n(x) = x^3 - 2x^2 + x - 1. How many critical points does this polynomial have?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: C
+
+Solution:
+The critical points occur where the derivative is zero or undefined. For n(x) = x^3 - 2x^2 + x - 1, the derivative is n'(x) = 3x^2 - 4x + 1. Setting n'(x) to zero gives x = 1/3 and x = 1, so there are 2 critical points.
+
+Explanation:
+Critical points are found by setting the derivative equal to zero or undefined.
+
+Common mistake note:
+Common mistake: Choosing A because of the odd degree. Even though it's an odd-degree polynomial, it can still have multiple critical points.
+------------------------------------------------------------------------------

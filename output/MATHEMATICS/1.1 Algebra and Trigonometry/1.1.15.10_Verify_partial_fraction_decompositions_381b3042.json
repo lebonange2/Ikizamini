@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.15.10",
+  "objective_text": "Verify partial fraction decompositions",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Given the function f(x) = (2x + 3)/(x^2 - 4), find the correct partial fraction decomposition.",
+      "choices": {
+        "A": "(1/(x+2)) + (1/(x-2))",
+        "B": "(1/(x+2))^2 + (1/(x-2))",
+        "C": "(2/(x+2)) + (3/(x-2))",
+        "D": "(x/(x+2)) + (x/(x-2))"
+      },
+      "correct_choice": "A",
+      "solution": "The denominator factors into (x-2)(x+2), suggesting the decomposition should be A/(x-2) + B/(x+2). Solving for A and B gives A=1, B=1.",
+      "explanation": "To verify a partial fraction decomposition, equate it to the original function and solve for constants. Here: f(x) = (A/(x-2)) + (B/(x+2)). Multiply both sides by x^2 - 4: 2x + 3 = A(x+2) + B(x-2). Expand and equate coefficients: A=1, B=1.",
+      "common_mistake_notes": "Forget to multiply decomposition by original denominator or incorrect expansion."
+    },
+    {
+      "id": "Two",
+      "stem": "Decompose the function g(x) = (4x + 1)/(x^2 + 3x + 2) into partial fractions.",
+      "choices": {
+        "A": "(2/(x+1)) + (2/(x+2))",
+        "B": "(4/(x+1))^2 + (1/(x+2))",
+        "C": "(4/(x+1)) + (1/(x+2))",
+        "D": "(x/(x+1)) + (x/(x+2))"
+      },
+      "correct_choice": "C",
+      "solution": "The denominator factors into (x+1)(x+2), so the decomposition is A/(x+1) + B/(x+2). Solving for A and B gives A=4, B=1.",
+      "explanation": "Find partial fraction decomposition by setting up a system: 4x + 1 = A(x+2) + B(x+1). Expand and solve: A=4, B=1.",
+      "common_mistake_notes": "Misidentify factors or incorrect expansion."
+    },
+    {
+      "id": "Three",
+      "stem": "The function h(x) = (6x^2 + 15x + 8)/(x(x+1)(x+3)) has a partial fraction decomposition of which form?",
+      "choices": {
+        "A": "(A/x) + (B/(x+1)) + (C/(x+3))",
+        "B": "(Ax+B)/(x(x+1)) + (C/(x+3))",
+        "C": "(6/(x+1)) + (5/(x+3))",
+        "D": "(2x+3)/(x(x+1)(x+3))"
+      },
+      "correct_choice": "A",
+      "solution": "The denominator factors into x(x+1)(x+3), so the decomposition is A/‌​x + B/(x+1) + C/(x+3).",
+      "explanation": "Match form to factors in the denominator. No calculations needed.",
+      "common_mistake_notes": "Forget constant term不影响decomposition形式, or incorrect distribution."
+    },
+    {
+      "id": "Four",
+      "stem": "Verify the partial fraction decomposition of f(x) = (5x - 7)/(x^2 - 4x + 3): A/(x-1) + B/(x-3).",
+      "choices": {
+        "A": "True",
+        "B": "False, constant terms don't match",
+        "C": "False, linear terms don't match",
+        "D": "False, incorrect decomposition form"
+      },
+      "correct_choice": "A",
+      "solution": "Multiply both sides by x^2 - 4x + 3: 5x - 7 = A(x-3) + B(x-1). Expand and solve for A, B: A=2, B=3. The decomposition is correct.",
+      "explanation": "Multiply decomposition by original denominator and compare to function. Here: A=2, B=3 matches the original function.",
+      "common_mistake_notes": "Forget to multiply decomposition or incorrect expansion."
+    },
+    {
+      "id": "Five",
+      "stem": "The partial fraction decomposition of g(x) = (4x^2 + 16)/(x(x+2)^2) has a term involving which factor?",
+      "choices": {
+        "A": "x",
+        "B": "(x+2)",
+        "C": "(x+2)^2",
+        "D": "Both A and B"
+      },
+      "correct_choice": "D",
+      "solution": "The decomposition will have terms involving x and (x+2), as the denominator factors into x(x+2)(x+2).",
+      "explanation": "Look at unique factors in the denominator: x, (x+2)^2.",
+      "common_mistake_notes": "Overlook repeated factors."
+    },
+    {
+      "id": "Six",
+      "stem": "The function h(x) = (3x^2 + 6x - 5)/(x(x-1)(x+2)) has a constant term in its partial fraction decomposition. True or False?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Cannot determine without solving",
+        "D": "Depends on the values of x"
+      },
+      "correct_choice": "B",
+      "solution": "No, since the numerator is quadratic and the denominator has no repeated linear factors, there will be no constant term in the decomposition.",
+      "explanation": "A constant term requires a linear factor in the numerator not dividing the denominator. Here, it doesn't occur.",
+      "common_mistake_notes": "Assume quadratic numerator always leads to a constant term."
+    },
+    {
+      "id": "Seven",
+      "stem": "The partial fraction decomposition of f(x) = (5x^3 + 10x^2 - 7x + 4)/(x(x+1)^2(x-2)) has how many terms?",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_choice": "D",
+      "solution": "The decomposition will have one term for each unique factor: x, (x+1)^2, and (x-2). So, 4 terms.",
+      "explanation": "Count distinct factors in the denominator: x, (x+1)^2, (x-2), giving 4 terms.",
+      "common_mistake_notes": "Miscount or overlook repeated factors."
+    }
+  ]
+}

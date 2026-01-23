@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.16.14",
+  "objective_text": "Communicate model findings",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "IncorrectDataFormat",
+      "stem": "A data scientist presents the results of a linear regression model to stakeholders. The model's R-squared value is presented as '0.73'. Which of the following formats is most appropriate for communicating this finding?",
+      "choices": {
+        "A": "73%",
+        "B": "0.73",
+        "C": "73",
+        "D": "Seventy-three percent"
+      },
+      "correct_choice": "B",
+      "solution": "The R-squared value is a statistical measure that ranges from 0 to 1, representing the proportion of variance explained by a model. Presenting it as a percentage may be more intuitive for stakeholders, but the most precise and unambiguous format is to express it as a decimal (0.73).",
+      "explanation": "Expressing R-squared as a decimal avoids any confusion about whether it's a percentage or a whole number.",
+      "common_mistake_notes": "A common mistake would be selecting option A, which presents the value as a percentage without explicitly stating so, potentially causing confusion."
+    },
+    {
+      "id": "ConfusingMetrics",
+      "stem": "A machine learning model is evaluated using two metrics: accuracy and F1 score. Which metric should be emphasized when the goal is to minimize false positives?",
+      "choices": {
+        "A": "Accuracy",
+        "B": "F1 Score",
+        "C": "Both, as they provide a balanced view",
+        "D": "It depends on the specific application context"
+      },
+      "correct_choice": "D",
+      "solution": "The choice of metric depends on the problem context. In cases where minimizing false positives is crucial, precision or F1 score would be more relevant. However, without knowing the specifics, it's not possible to definitively choose one.",
+      "explanation": "Accuracy can sometimes mask high rates of false positives if there are class imbalances. F1 score balances precision and recall, making it a better choice for situations where minimizing false positives is important.",
+      "common_mistake_notes": "A common mistake would be selecting option B without considering the context, assuming that F1 score always addresses false positive concerns."
+    },
+    {
+      "id": "MisrepresentedData",
+      "stem": "A data visualization shows the distribution of customer ages for a company's product. Which chart type best represents this data?",
+      "choices": {
+        "A": "Pie Chart",
+        "B": "Bar Chart",
+        "C": "Histogram",
+        "D": "Scatterplot"
+      },
+      "correct_choice": "C",
+      "solution": "A histogram is the most appropriate choice for showing the distribution of continuous data like customer ages. It clearly displays the frequency distribution across different age ranges.",
+      "explanation": "Pie charts are used for comparing proportions, bar charts for categorical data, and scatterplots for relationships between two variables. Histograms are ideal for visualizing distributions.",
+      "common_mistake_notes": "A common mistake would be selecting option A, as pie charts can mislead when comparing absolute frequencies rather than proportions."
+    },
+    {
+      "id": "InadequateExplanation",
+      "stem": "A data scientist presents a recommendation based on a clustering analysis. Which of the following statements best explains the significance of the clusters?",
+      "choices": {
+        "A": "The clusters are perfect, with no overlap between them.",
+        "B": "The number of clusters was determined by maximizing silhouette scores.",
+        "C": "Each cluster represents a distinct group in the data with meaningful characteristics.",
+        "D": "The clusters have equal sizes to ensure balance"
+      },
+      "correct_choice": "C",
+      "solution": "Explaining the clusters in terms of meaningful characteristics helps stakeholders understand the practical implications of the analysis. The other options focus on technical aspects that may not be relevant for communication.",
+      "explanation": "While details like cluster overlap, selection criteria, and size distribution are important for internal validation, they do not convey the business value directly. Focusing on meaningful characteristics is more useful for stakeholders.",
+      "common_mistake_notes": "A common mistake would be selecting option A or D, which focus on technical aspects that may not be relevant to the audience."
+    },
+    {
+      "id": "MisleadingVisuals",
+      "stem": "When presenting a time-series analysis of website traffic, which chart type should be avoided?",
+      "choices": {
+        "A": "Line Chart",
+        "B": "Area Chart",
+        "C": "Scatterplot",
+        "D": "Heatmap"
+      },
+      "correct_choice": "B",
+      "solution": "An area chart can create visual distortion by exaggerating changes in data due to the filled area, making it less suitable for time-series analysis where clarity and accuracy are crucial.",
+      "explanation": "Line charts are the standard choice for time-series data as they clearly show trends over time. Scatterplots and heatmaps serve different purposes and are not inherently misleading for time-series data.",
+      "common_mistake_notes": "A common mistake would be selecting option C or D, which might be suitable for other types of analyses but do not have inherent issues with time-series data."
+    },
+    {
+      "id": "AmbiguousModelAssumptions",
+      "stem": "A logistic regression model is used to predict customer churn. Which of the following statements accurately communicates an assumption made by this model?",
+      "choices": {
+        "A": "The relationship between features and churn is linear.",
+        "B": "All features have a significant impact on churn.",
+        "C": "Churn probabilities sum up to 100% for each customer.",
+        "D": "There is no correlation between the features"
+      },
+      "correct_choice": "C",
+      "solution": "Logistic regression models the probability of an event (churn) as a logistic function of the input variables, and these probabilities must sum to 1 for each observation. This is an inherent assumption of the model.",
+      "explanation": "Option A refers to linear regression, option B is not an explicit assumption, and option D assumes independence between features which may or may not be true. Option C is a direct consequence of using logistic regression.",
+      "common_mistake_notes": "A common mistake would be selecting option A,混淆了逻辑回归和线性回归的特性。"
+    },
+    {
+      "id": "ComplexModelInterpretation",
+      "stem": "When communicating the results of a deep learning model, which aspect should be emphasized to ensure stakeholders understand its limitations?",
+      "choices": {
+        "A": "The number of layers in the neural network.",
+        "B": "Accuracy on the validation set.",
+        "C": "The interpretability of individual neurons.",
+        "D": "The model's ability to generalize to unseen data."
+      },
+      "correct_choice": "D",
+      "solution": "Emphasizing a model's ability to generalize is crucial for stakeholders, as it indicates how well the model will perform in real-world scenarios. Interpretability and accuracy are important, but understanding generalization helps set realistic expectations.",
+      "explanation": "Stakeholders need to know if the model can handle new data effectively, not just how complex or accurate it is on known data. Option C may be interesting for technical audiences, but it's not a primary concern for communication.",
+      "common_mistake_notes": "A common mistake would be selecting option B, focusing too much on accuracy without considering whether the model can generalize well."
+    }
+  ]
+}

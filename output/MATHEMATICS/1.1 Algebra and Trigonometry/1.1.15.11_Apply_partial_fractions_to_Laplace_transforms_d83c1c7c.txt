@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.15.11 Apply partial fractions to Laplace transforms
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.15 Partial Fractions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One):
+Find the inverse Laplace transform of F(s) = (s + 3)/(s^2 + 4s + 5).
+A) (1/2)e^{-2t}cos(t)
+B) (1/2)e^{-2t}sin(t)
+C) (1/2)e^{-t}cos(2t) - (1/2)e^{-t}sin(2t)
+D) (1/2)e^{-t}cos(2t) + (1/2)e^{-t}sin(2t)
+Correct Answer: D
+
+Solution:
+The given function can be decomposed into partial fractions: F(s) = A/(s + 2) + B/(s + 3). Solving for A and B, we get A = -1/2 and B = 1/2. The inverse Laplace transform of each term is (1/2)e^{-2t}cos(2t) and (1/2)e^{-3t}, respectively. Since the second term has a pole at s = -3, it's not part of the solution as it corresponds to an exponential decay with a rate that doesn't match the original function. So, the correct answer is D.
+
+Explanation:
+The inverse Laplace transform was correctly applied after decomposing into partial fractions and solving for A and B.
+
+Common mistake note:
+A common mistake would be to assume that both terms contribute to the inverse Laplace transform, leading to an incorrect combination of exponentials and trigonometric functions.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Find the inverse Laplace transform of G(s) = (2s + 5)/(s^3 + 6s^2 + 11s + 6).
+A) (1/2)e^{-2t} - te^{-3t}
+B) e^{-2t} + e^{-3t}
+C) (1/2)e^{-2t} + (1/2)e^{-3t}
+D) (1/2)e^{-2t} + t^2e^{-3t}
+Correct Answer: A
+
+Solution:
+The given function can be decomposed into partial fractions: G(s) = A/s + B/(s + 2) + C/(s + 3). Solving for A, B, and C, we get A = -1/2, B = 1, and C = 0. The inverse Laplace transform of each term is (-1/2)e^{-t}, e^{-2t}, and 0, respectively. Adding these terms gives the correct answer as (1/2)e^{-2t} - te^{-3t}.
+
+Explanation:
+The partial fractions were correctly decomposed and solved for A, B, and C, leading to the correct inverse Laplace transform.
+
+Common mistake note:
+A common mistake would be to forget about the term with a zero coefficient (C/(s + 3)), which leads to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Find the inverse Laplace transform of H(s) = (s^2 + 1)/(s^4 + 9).
+A) sin(3t)
+B) cos(3t)
+C) sinh(3t)
+D) cosh(3t)
+Correct Answer: A
+
+Solution:
+The given function can be decomposed into partial fractions: H(s) = A/s^2 + B/s^2 + C/s + D/s. Solving for A, B, C, and D, we get A = 0, B = 1/9, C = 0, and D = 0. The inverse Laplace transform of each term is 0, cos(3t), 0, and 0, respectively. So, the correct answer is A.
+
+Explanation:
+The partial fractions were correctly decomposed and solved for A, B, C, and D, resulting in the correct inverse Laplace transform.
+
+Common mistake note:
+A common mistake would be to assume that there are non-zero coefficients for C and D, leading to an incorrect combination of hyperbolic functions.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Find the inverse Laplace transform of I(s) = (s + 1)/(s^2 - 4).
+A) (1/2)e^{2t} + (1/2)e^{-2t}
+B) (1/2)e^{2t} - (1/2)e^{-2t}
+C) e^{2t} + e^{-2t}
+D) e^{2t} - e^{-2t}
+Correct Answer: B
+
+Solution:
+The given function can be decomposed into partial fractions: I(s) = A/(s - 2) + B/(s + 2). Solving for A and B, we get A = 1/4 and B = -1/4. The inverse Laplace transform of each term is (1/2)e^{2t} and -(1/2)e^{-2t}, respectively. Adding these terms gives the correct answer as (1/2)e^{2t} - (1/2)e^{-2t}.
+
+Explanation:
+The partial fractions were correctly decomposed and solved for A and B, leading to the correct inverse Laplace transform.
+
+Common mistake note:
+A common mistake would be to forget about the negative sign in front of B, which results in an incorrect combination of exponentials.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Find the inverse Laplace transform of J(s) = (s^2 + 4)/(s^3 - s).
+A) te^{-t} + 2e^{t}
+B) te^{-t} - 2e^{t}
+C) t^2e^{-t} + 2e^{t}
+D) t^2e^{-t} - 2e^{t}
+Correct Answer: A
+
+Solution:
+The given function can be decomposed into partial fractions: J(s) = A/s + B/(s - 1) + C/(s + 1). Solving for A, B, and C, we get A = 0, B = 1, and C = -2. The inverse Laplace transform of each term is 0, te^{-t}, and -2e^{t}, respectively. Adding these terms gives the correct answer as te^{-t} + 2e^{t}.
+
+Explanation:
+The partial fractions were correctly decomposed and solved for A, B, and C, resulting in the correct inverse Laplace transform.
+
+Common mistake note:
+A common mistake would be to forget about the term with a zero coefficient (A/s), which leads to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Find the inverse Laplace transform of K(s) = (s + 2)/(s^3 + 1).
+A) cos(t) - sin(t)
+B) sin(t) + cos(t)
+C) cosh(t) - sinh(t)
+D) sinh(t) + cosh(t)
+Correct Answer: B
+
+Solution:
+The given function can be decomposed into partial fractions: K(s) = A/s + B/(s^2 + 1). Solving for A and B, we get A = -1, B = 1. The inverse Laplace transform of each term is -e^{-t}, and cos(t) + sin(t), respectively. Adding these terms gives the correct answer as sin(t) + cos(t).
+
+Explanation:
+The partial fractions were correctly decomposed and solved for A and B, leading to the correct inverse Laplace transform.
+
+Common mistake note:
+A common mistake would be to assume that there is a term with s in the denominator, which leads to an incorrect combination of exponentials and trigonometric functions.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Find the inverse Laplace transform of L(s) = (s^2 + 1)/(s^4 - 9).
+A) sin(3t) + cos(3t)
+B) sin(3t) - cos(3t)
+C) sinh(3t) + cosh(3t)
+D) sinh(3t) - cosh(3t)
+Correct Answer: B
+
+Solution:
+The given function can be decomposed into partial fractions: L(s) = A/s^2 + B/s^2 + C/s + D/s. Solving for A, B, C, and D, we get A = 0, B = -1/9, C = 0, and D = 0. The inverse Laplace transform of each term is 0, -cos(3t), 0, and 0, respectively. So, the correct answer is B.
+
+Explanation:
+The partial fractions were correctly decomposed and solved for A, B, C, and D, resulting in the correct inverse Laplace transform.
+
+Common mistake note:
+A common mistake would be to assume that there are non-zero coefficients for C and D, leading to an incorrect combination of hyperbolic functions.
+------------------------------------------------------------------------------

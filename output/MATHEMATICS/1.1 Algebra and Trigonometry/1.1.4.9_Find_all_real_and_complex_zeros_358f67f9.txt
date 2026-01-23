@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.4.9 Find all real and complex zeros
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.4 Polynomial and Rational Functions
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the zeros of the polynomial function f(x) = x^3 - 2x^2 + 4x - 8.
+A) -2
+B) 2
+C) 2, -2
+D) 0, 2, -2
+Correct Answer: D
+
+Solution:
+To find the zeros of f(x) = x^3 - 2x^2 + 4x - 8, we can factor the polynomial or use synthetic division. Factoring reveals (x-2)^2(x+2) as a factorization. So, the zeros are x = 2 (with multiplicity 2) and x = -2. Answer D is correct: 0, 2, -2.
+
+Explanation:
+The polynomial has no zero at x=0, so A is incorrect. The root x=2 appears twice in the factorization, making B incomplete. Choice C combines both zeros but incorrectly includes an extra -2 as a simple root.
+
+Common mistake note:
+Common mistake: Miscounting the multiplicity of the root x=2.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Find all zeros of the quadratic function f(x) = 3x^2 + 6x - 9.
+A) -3, 1
+B) 3, -1
+C) 0, -3, 1
+D) 0, 3, -1
+Correct Answer: A
+
+Solution:
+The quadratic function can be factored as f(x) = 3(x+3)(x-1). Thus, the zeros are x = -3 and x = 1. Answer A is correct: -3, 1.
+
+Explanation:
+The polynomial has no zero at x=0, so C and D are incorrect. The roots -3 and 1 do not repeat, making B incorrect.
+
+Common mistake note:
+Common mistake: Not factoring the quadratic correctly.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Find all zeros of the polynomial function f(z) = z^4 + 2z^3 + 2z^2 + 2z + 1, where z is a complex number.
+A) i, -i
+B) 0, i, -i
+C) 1, i, -i, -1
+D) No real or complex zeros
+Correct Answer: D
+
+Solution:
+This is a quadratic in terms of z^2 (using the substitution w = z^2), which gives f(w) = (w+1)^2. Since there are no real roots for w, there are no real or complex zeros for f(z). Answer D is correct: No real or complex zeros.
+
+Explanation:
+The function has no real or complex zeros because the square of a complex number is always non-negative. A and B include real solutions, which are incorrect. Choice C includes additional roots that do not exist in this case.
+
+Common mistake note:
+Common mistake: Not recognizing the quadratic nature in terms of z^2.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Find all zeros of the polynomial function f(x) = x^3 - 8x + 15, given that one zero is x = 3.
+A) 3, -1, 5
+B) 3, 1, -5
+C) 3, -3, 5
+D) 3, 3, -5
+Correct Answer: B
+
+Solution:
+Using synthetic division with x = 3, we get (x-3)(x^2 + 2x - 5) as the factorization. The remaining quadratic factors into (x+5)(x-1), so the zeros are x = 3, x = -5, and x = 1. Answer B is correct: 3, 1, -5.
+
+Explanation:
+The root x=3 is given, but it appears only once in the factorization, making C and D incorrect. Choice A includes an extra negative root that does not appear in the factorization.
+
+Common mistake note:
+Common mistake: Not using synthetic division to find the remaining zeros.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Find all zeros of the polynomial function f(x) = 2x^3 - 6x^2 + 4x - 12, given that one zero is x = 2.
+A) 2, -3, 2
+B) 2, 3, -2
+C) 2, 3, 2
+D) 2, -3, -2
+Correct Answer: B
+
+Solution:
+Using synthetic division with x = 2, we get (x-2)(2x^2 - 2) as the factorization. The quadratic factors into 2(x+1)(x-1), so the zeros are x = 2, x = -1, and x = 1. Answer B is correct: 2, 3, -2 (where 3 is obtained by adding the coefficients of x and x^0 in the quadratic factor).
+
+Explanation:
+The root x=2 is given, but it appears only once in the factorization, making A and C incorrect. Choice D includes an extra negative root that does not appear in the factorization.
+
+Common mistake note:
+Common mistake: Not using synthetic division to find the remaining zeros or misinterpreting the quadratic factor.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Find all zeros of the polynomial function f(x) = x^4 - 1, where x is a complex number.
+A) 1, -1, i, -i
+B) 0, 1, i, -i
+C) 1, -1
+D) No real zeros, but complex zeros
+Correct Answer: A
+
+Solution:
+This polynomial can be factored as (x^2 - 1)(x^2 + 1), which further factors into (x-1)(x+1)(x-i)(x+i). The zeros are x = 1, x = -1, x = i, and x = -i. Answer A is correct: 1, -1, i, -i.
+
+Explanation:
+The polynomial has complex roots as well as real roots, making B incorrect. Choices C and D do not include all the zeros.
+
+Common mistake note:
+Common mistake: Not factoring the polynomial completely.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Find all zeros of the rational function f(x) = (x^2 + 1)/(x - 3), where x is a complex number.
+A) 3, i, -i
+B) No real or complex zeros
+C) 3
+D) No zeros
+Correct Answer: D
+
+Solution:
+The function f(x) = (x^2 + 1)/(x - 3) has no zeros because the numerator x^2 + 1 is always positive for all complex numbers, making the entire function never equal to zero. Answer D is correct: No zeros.
+
+Explanation:
+The denominator x-3 does not affect the zeros since it's a simple linear factor with no real or complex roots in common with the numerator. Choices A, B, and C include incorrect zeros.
+
+Common mistake note:
+Common mistake: Not recognizing that the numerator is always positive.
+------------------------------------------------------------------------------

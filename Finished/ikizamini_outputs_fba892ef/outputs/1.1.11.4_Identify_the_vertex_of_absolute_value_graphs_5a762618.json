@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.11.4",
+  "objective_text": "Identify the vertex of absolute value graphs",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "x1",
+      "stem": "What is the vertex of the graph of |x - 3|?",
+      "choices": {
+        "A": "(0, 3)",
+        "B": "(3, 0)",
+        "C": "(0, 0)",
+        "D": "(-3, 0)"
+      },
+      "correct_choice": "B",
+      "solution": "The vertex form of an absolute value equation is |x - h| = k, where (h, k) is the vertex. In this case, h = 3, so the vertex is at (3, 0).",
+      "explanation": "The vertex is the point where the graph changes direction. Since the equation involves x - 3, the vertex occurs when the expression inside the absolute value is zero.",
+      "common_mistake_notes": "A common mistake is to confuse the vertex with a point on the graph. Choice A represents a point on the graph but not the vertex."
+    },
+    {
+      "id": "x2",
+      "stem": "What is the vertex of the graph of |2x + 4|?",
+      "choices": {
+        "A": "(-2, 0)",
+        "B": "(0, -2)",
+        "C": "(0, 0)",
+        "D": "(-1, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "To find the vertex, set the expression inside the absolute value to zero: 2x + 4 = 0. Solving for x gives x = -2, so the vertex is at (-2, 0).",
+      "explanation": "Divide by the coefficient of x (2) to isolate x before finding the vertex.",
+      "common_mistake_notes": "A common mistake is to forget to divide by the coefficient of x when solving for the value of x that makes the expression inside the absolute value zero."
+    },
+    {
+      "id": "x3",
+      "stem": "What is the vertex of the graph of |x| + 5?",
+      "choices": {
+        "A": "(0, -5)",
+        "B": "(0, 5)",
+        "C": "(-5, 0)",
+        "D": "(5, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The vertex form is |x - h| = k. In this case, there's no x inside the absolute value, so h = 0. The constant k is 5, which shifts the graph vertically. Thus, the vertex is at (0, -5).",
+      "explanation": "When there's no linear term in the absolute value equation, the vertex lies on the y-axis.",
+      "common_mistake_notes": "A common mistake is to assume that the vertex will be at (0, 0) when there's no x inside the absolute value. However, the constant term outside influences the position of the vertex."
+    },
+    {
+      "id": "x4",
+      "stem": "What is the vertex of the graph of |3 - x|?",
+      "choices": {
+        "A": "(3, 0)",
+        "B": "(0, 3)",
+        "C": "(3, 3)",
+        "D": "(-3, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The vertex form is |x - h| = k. In this case, h = 3, so the vertex is at (3, 0). The value inside the absolute value is subtracted from x, but it doesn't change the position of the vertex.",
+      "explanation": "The vertex remains at the same horizontal position even if you switch x with a constant in the equation.",
+      "common_mistake_notes": "A common mistake is to think that switching x with 3 inside the absolute value would change the vertex. However, it only affects the way the graph looks but not its position."
+    },
+    {
+      "id": "x5",
+      "stem": "What is the vertex of the graph of |2|x - 1||?",
+      "choices": {
+        "A": "(1, 0)",
+        "B": "(0, 1)",
+        "C": "(1, 1)",
+        "D": "(-1, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The vertex form is |x - h| = k. In this case, h = 1. However, the presence of 2|x - 1| means that the graph will be compressed by a factor of 2 and reflected across the x-axi...}, ... (remaining questions truncated for brevity)}]},",
+      "explanation": "The absolute value inside another absolute value does not change the position of the vertex; it only affects the shape of the graph.",
+      "common_mistake_notes": "A common mistake is to think that the presence of two absolute values would change the vertex. However, the vertex remains at the same position as in the basic form."
+    },
+    {
+      "id": "x6",
+      "stem": "What is the vertex of the graph of |x + 2| - 3?",
+      "choices": {
+        "A": "(2, -3)",
+        "B": "(-2, -3)",
+        "C": "(-2, 0)",
+        "D": "(2, 0)"
+      },
+      "correct_choice": "B",
+      "solution": "The vertex form is |x - h| = k. In this case, h = -2. The equation also shifts the graph vertically by subtracting 3, so the vertex is at (-2, -3).",
+      "explanation": "When there's a constant term outside the absolute value, it shifts the graph vertically.",
+      "common_mistake_notes": "A common mistake is to forget that the vertical shift affects the y-coordinate of the vertex. Choice A neglects this shift."
+    },
+    {
+      "id": "x7",
+      "stem": "What is the vertex of the graph of |-2(x + 1)|?",
+      "choices": {
+        "A": "(1, 0)",
+        "B": "(-1, 0)",
+        "C": "(-1, -2)",
+        "D": "(1, -2)"
+      },
+      "correct_choice": "C",
+      "solution": "The vertex form is |x - h| = k. In this case, setting the expression inside the absolute value to zero gives x = -1, so h = -1. The presence of -2 outside the absolute value compresses and reflects the graph across the y-axis. Thus, the vertex is at (-1, -2).",
+      "explanation": "The negative sign outside the absolute value changes the direction of the graph but does not affect the position of the vertex.",
+      "common_mistake_notes": "A common mistake is to think that the negative sign would change the x-coordinate of the vertex. However, it only affects the shape of the graph."
+    }
+  ]
+}

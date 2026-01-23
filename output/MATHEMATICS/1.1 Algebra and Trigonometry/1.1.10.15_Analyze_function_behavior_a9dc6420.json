@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.10.15",
+  "objective_text": "Analyze function behavior",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asymptote_behavior",
+      "stem": "What is the behavior of the function f(x) = 1/x near x=0?",
+      "choices": {
+        "A": "It approaches infinity.",
+        "B": "It approaches negative infinity.",
+        "C": "It approaches zero.",
+        "D": "The function is undefined at x=0."
+      },
+      "correct_choice": "A",
+      "solution": "As x approaches 0 from the positive side, f(x) increases without bound (approaches infinity). Similarly, as x approaches 0 from the negative side, f(x) also increases without bound. Therefore, the function has a vertical asymptote at x=0.",
+      "explanation": "An asymptote is a line that the graph of a function approaches but never touches. In this case, the function gets infinitely large near x=0, indicating an asymptote.",
+      "common_mistake_notes": "A common mistake would be to choose C (approaches zero), which is incorrect because the function value increases without bound as x approaches 0."
+    },
+    {
+      "id": "Zeroes_and_intercepts",
+      "stem": "What is the x-intercept of the quadratic function f(x) = x^2 - 4x + 3?",
+      "choices": {
+        "A": "1 and 3",
+        "B": "1 only",
+        "C": "3 only",
+        "D": "No real roots"
+      },
+      "correct_choice": "A",
+      "solution": "To find the x-intercepts, we set f(x) = 0 and solve for x. Factoring the quadratic gives us (x-1)(x-3) = 0, which implies x = 1 or x = 3.",
+      "explanation": "The x-intercepts are points where the graph of a function crosses the x-axis, meaning the y-value is zero. In this case, we found two such values for x.",
+      "common_mistake_notes": "A common mistake would be to choose D (no real roots) if the quadratic formula was used and resulted in imaginary solutions, but that applies only to complex roots, not real zeroes."
+    },
+    {
+      "id": "Domain_and_range",
+      "stem": "What is the range of the absolute value function f(x) = |x|?",
+      "choices": {
+        "A": "All real numbers",
+        "B": "Positive real numbers only",
+        "C": "Non-negative real numbers",
+        "D": "Zero and positive real numbers"
+      },
+      "correct_choice": "C",
+      "solution": "The absolute value function returns the non-negative value of its input. Thus, for any x in the domain (-∞, ∞), f(x) will be greater than or equal to zero.",
+      "explanation": "The range of a function is the set of all possible output values. The absolute value ensures that the output is always non-negative.",
+      "common_mistake_notes": "A common mistake would be to choose B (positive real numbers only), but this neglects the possibility of f(x) being zero when x is zero."
+    },
+    {
+      "id": "Increasing_decreasing",
+      "stem": "Is the function f(x) = 2x^3 - 6x^2 + 4x increasing or decreasing at x=1?",
+      "choices": {
+        "A": "Increasing",
+        "B": "Decreasing",
+        "C": "Neither, it's a critical point",
+        "D": "Cannot determine without more information"
+      },
+      "correct_choice": "A",
+      "solution": "To determine the monotonicity at x=1, we need to look at the sign of the first derivative. f'(x) = 6x^2 - 12x + 4. Evaluating at x=1, we get f'(1) = 8, which is positive. This means the function is increasing at x=1.",
+      "explanation": "The first derivative of a function gives information about its slope and thus its monotonicity (increasing or decreasing).",
+      "common_mistake_notes": "A common mistake would be to choose B (decreasing) without calculating the derivative or evaluating it at x=1."
+    },
+    {
+      "id": "Horizontal_asymptote",
+      "stem": "What is the horizontal asymptote of the function f(x) = (3x^2 + 5x - 2)/(x - 1)?",
+      "choices": {
+        "A": "y = 0",
+        "B": "y = 1",
+        "C": "y = 3",
+        "D": "There is no horizontal asymptote."
+      },
+      "correct_choice": "C",
+      "solution": "To find the horizontal asymptote, we look at the degrees of the numerator and denominator. Since both are quadratic (degree 2), we divide the leading coefficients: 3/1 = 3. Thus, as x approaches infinity or negative infinity, f(x) approaches 3.",
+      "explanation": "A horizontal asymptote is a line that the graph of a function approaches as the input grows without bound in either direction.",
+      "common_mistake_notes": "A common mistake would be to choose D (no horizontal asymptote) if one only considered the behavior at x=1, but not for very large or small x values."
+    },
+    {
+      "id": "End_behavior",
+      "stem": "What is the end behavior of the function f(x) = 2^x?",
+      "choices": {
+        "A": "(−∞, ∞), increasing without bound",
+        "B": "[0, ∞), increasing without bound",
+        "C": "(−∞, ∞), decreasing without bound",
+        "D": "[0, ∞), decreasing without bound"
+      },
+      "correct_choice": "B",
+      "solution": "The function f(x) = 2^x is an exponential function with a base greater than 1. This means it increases without bound as x approaches infinity and approaches zero (but never reaches it) as x approaches negative infinity.",
+      "explanation": "End behavior describes the behavior of a function as x approaches positive or negative infinity.",
+      "common_mistake_notes": "A common mistake would be to choose A (increasing without bound in both directions), but exponential functions with bases greater than 1 do not decrease as x becomes more negative."
+    },
+    {
+      "id": "Periodicity",
+      "stem": "What is the period of the trigonometric function f(x) = cos(2x)?",
+      "choices": {
+        "A": "π",
+        "B": "2π",
+        "C": "1/2",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "The period of a cosine function is determined by the coefficient inside the parentheses. For f(x) = cos(bx), the period is 2π/b. In this case, b = 2, so the period is π.",
+      "explanation": "The period of a trigonometric function is the distance over which it repeats itself.",
+      "common_mistake_notes": "A common mistake would be to choose B (2π), which is the period of the basic cosine function without a coefficient."
+    }
+  ]
+}

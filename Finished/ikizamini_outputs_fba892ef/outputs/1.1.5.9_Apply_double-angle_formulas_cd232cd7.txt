@@ -1,0 +1,198 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.5.9 Apply double-angle formulas
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.5 Trigonometric Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Find the exact value of cos(2θ) if sin(θ) = √3/2 and θ is in quadrant II.
+A) 1/4
+B) -1/2
+C) 1/2
+D) -√3/2
+Correct Answer: B
+
+Solution:
+Since θ is in quadrant II, cos(θ) is negative. We can use the double-angle formula for cosine: cos(2θ) = 1 - 2sin²(θ). Given sin(θ) = √3/2, we substitute and solve:
+cos(2θ) = 1 - 2(√3/2)²
+cos(2θ) = 1 - 2 * (3/4)
+cos(2θ) = 1 - 3/2
+cos(2θ) = -1/2
+
+Explanation:
+The double-angle formula for cosine was applied correctly, and the correct value for sin(θ) in quadrant II was used.
+
+Common mistake note:
+A common mistake is to forget that cos(θ) is negative in quadrant II. If students assume cos(θ) is positive, they will likely choose an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Find the exact value of sin(2α) if cos(α) = 1/3 and α is in quadrant I.
+A) 2√2/9
+B) -4√2/9
+C) 4√2/9
+D) 2√5/9
+Correct Answer: C
+
+Solution:
+Since α is in quadrant I, both sin(α) and cos(α) are positive. We can use the double-angle formula for sine: sin(2α) = 2sin(α)cos(α). Given cos(α) = 1/3, we need to find sin(α) using Pythagorean identity: sin²(α) + cos²(α) = 1.
+We have:
+sin²(α) + (1/3)² = 1
+sin²(α) = 1 - 1/9
+sin(α) = √(8/9)
+Now, we can find sin(2α):
+sin(2α) = 2 * (√(8/9)) * (1/3)
+sin(2α) = 4√2/9
+
+Explanation:
+The double-angle formula for sine was applied correctly, and the correct values for cos(α) and sin²(α) in quadrant I were used.
+
+Common mistake note:
+A common mistake is to forget that both sin(α) and cos(α) are positive in quadrant I. If students assume one of them is negative, they will likely choose an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Find the exact value of tan(2β) if cot(β) = √3 and β is in quadrant IV.
+A) -√3/3
+B) 1
+C) √3
+D) 2√3
+Correct Answer: B
+
+Solution:
+Since β is in quadrant IV, both tan(β) and cot(β) are negative. We can use the double-angle formula for tangent: tan(2β) = 2tan(β)/(1 - tan²(β)). Given cot(β) = √3, we can find tan(β):
+cot(β) = 1/tan(β)
+√3 = 1/(tan(β))
+tan(β) = 1/√3
+Now, we can find tan(2β):
+tan(2β) = 2 * (1/√3) / (1 - (1/√3)²)
+tan(2β) = 2 * (1/√3) / (1 - 1/3)
+tan(2β) = 2 * (1/√3) / (2/3)
+tan(2β) = 1
+
+Explanation:
+The double-angle formula for tangent was applied correctly, and the correct values for cot(β) and tan(β) in quadrant IV were used.
+
+Common mistake note:
+A common mistake is to forget that both tan(β) and cot(β) are negative in quadrant IV. If students assume one of them is positive, they will likely choose an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Find the exact value of sin(2γ) if cos(γ) = √2/2 and γ is in quadrant I.
+A) 1
+B) √3/2
+C) 0
+D) 1/2
+Correct Answer: C
+
+Solution:
+Since γ is in quadrant I, both sin(γ) and cos(γ) are positive. We can use the double-angle formula for sine: sin(2γ) = 2sin(γ)cos(γ). Given cos(γ) = √2/2, we need to find sin(γ) using Pythagorean identity: sin²(γ) + cos²(γ) = 1.
+We have:
+sin²(γ) + (√2/2)² = 1
+sin²(γ) = 1 - (2/4)
+sin(γ) = √(1/2)
+Now, we can find sin(2γ):
+sin(2γ) = 2 * (√(1/2)) * (√2/2)
+sin(2γ) = 2 * (1/√2) * (√2/2)
+sin(2γ) = 1 * (1/2)
+sin(2γ) = 0
+
+Explanation:
+The double-angle formula for sine was applied correctly, and the correct values for cos(γ) and sin²(γ) in quadrant I were used.
+
+Common mistake note:
+A common mistake is to forget that both sin(γ) and cos(γ) are positive in quadrant I. If students assume one of them is negative, they will likely choose an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Find the exact value of cos(2δ) if tan(δ) = 1 and δ is in quadrant I.
+A) 0
+B) 1/2
+C) √3/2
+D) 1
+Correct Answer: D
+
+Solution:
+Since δ is in quadrant I, both sin(δ) and cos(δ) are positive. We can use the double-angle formula for cosine: cos(2δ) = 1 - 2sin²(δ). To find sin(δ), we can use the identity tan(δ) = sin(δ)/cos(δ):
+tan(δ) = 1 = sin(δ)/cos(δ)
+cos(δ) = sin(δ)
+Now, we can find sin²(δ):
+sin²(δ) = cos²(δ) = (sin(δ))²
+Since δ is in quadrant I, sin(δ) and cos(δ) are both positive, so sin(δ) = cos(δ) = 1.
+Now, we can find cos(2δ):
+cos(2δ) = 1 - 2 * (1)²
+cos(2δ) = 1 - 2
+cos(2δ) = 1
+
+Explanation:
+The double-angle formula for cosine was applied correctly, and the correct values for tan(δ), sin(δ), and cos(δ) in quadrant I were used.
+
+Common mistake note:
+A common mistake is to forget that both sin(δ) and cos(δ) are positive in quadrant I. If students assume one of them is negative, they will likely choose an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Find the exact value of tan(2ε) if sec(ε) = 2 and ε is in quadrant II.
+A) -√3/3
+B) 1
+C) √3
+D) 2√3
+Correct Answer: A
+
+Solution:
+Since ε is in quadrant II, both tan(ε) and sec(ε) are negative. We can use the double-angle formula for tangent: tan(2ε) = 2tan(ε)/(1 - tan²(ε)). Given sec(ε) = 2, we can find cos(ε):
+sec(ε) = 1/cos(ε)
+2 = 1/cos(ε)
+cos(ε) = 1/2
+Now, we can find sin(ε) using Pythagorean identity: sin²(ε) + cos²(ε) = 1.
+We have:
+sin²(ε) + (1/2)² = 1
+sin²(ε) = 1 - (1/4)
+sin(ε) = √(3/4)
+Now, we can find tan(ε):
+tan(ε) = sin(ε)/cos(ε) = (√3/4)/(1/2) = √3/2
+Finally, we can find tan(2ε):
+tan(2ε) = 2 * (√3/2) / (1 - (√3/2)²)
+tan(2ε) = 2 * (√3/2) / (1 - 3/4)
+tan(2ε) = 2 * (√3/2) / (1/4)
+tan(2ε) = 2√3 / (1/2)
+tan(2ε) = -√3
+
+Explanation:
+The double-angle formula for tangent was applied correctly, and the correct values for sec(ε), cos(ε), sin(ε), and tan(ε) in quadrant II were used.
+
+Common mistake note:
+A common mistake is to forget that both tan(ε) and sec(ε) are negative in quadrant II. If students assume one of them is positive, they will likely choose an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Find the exact value of sin(2ζ) if csc(ζ) = 2√3 and ζ is in quadrant III.
+A) -1/4
+B) 1/2
+C) 1
+D) √3/2
+Correct Answer: B
+
+Solution:
+Since ζ is in quadrant III, both sin(ζ) and csc(ζ) are negative. We can use the double-angle formula for sine: sin(2ζ) = 2sin(ζ)cos(ζ). To find cos(ζ), we can use the identity csc(ζ) = 1/sin(ζ):
+csc(ζ) = 2√3 = 1/sin(ζ)
+sin(ζ) = 1/(2√3)
+Now, we can find cos(ζ) using Pythagorean identity: sin²(ζ) + cos²(ζ) = 1.
+We have:
+(1/(2√3))² + cos²(ζ) = 1
+cos²(ζ) = 1 - (1/12)
+cos(ζ) = √(11/12)
+Now, we can find sin(2ζ):
+sin(2ζ) = 2 * (1/(2√3)) * (√(11/12))
+sin(2ζ) = (1/√3) * (√(11/12))
+sin(2ζ) = √(11/36)
+Since ζ is in quadrant III, sin(2ζ) must be negative:
+sin(2ζ) = -√(11/36)
+
+Explanation:
+The double-angle formula for sine was applied correctly, and the correct values for csc(ζ), sin(ζ), and cos(ζ) in quadrant III were used.
+
+Common mistake note:
+A common mistake is to forget that both sin(ζ) and csc(ζ) are negative in quadrant III. If students assume one of them is positive, they will likely choose an incorrect answer.
+------------------------------------------------------------------------------

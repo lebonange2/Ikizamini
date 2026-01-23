@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.9.14 Solve optimization problems with constraints
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.9 Inequalities
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A company wants to maximize its profit by producing two products, A and B. The production of each product requires resources (labor and materials) and has a selling price. Product A requires 2 units of labor and 3 units of materials, while product B requires 4 units of labor and 1 unit of material. The company has 20 units of labor and 15 units of materials available. Product A sells for $6 per unit, and product B sells for $8 per unit. What is the maximum profit the company can make?
+A) $96
+B) $104
+C) $112
+D) $120
+Correct Answer: B
+
+Solution:
+To maximize profit, we need to set up a linear programming problem. Let x be the number of units of product A and y be the number of units of product B. The constraints are given by the resources available: 2x + 4y ≤ 20 (labor constraint) 3x + y ≤ 15 (material constraint) x ≥ 0, y ≥ 0 (non-negativity constraints) The objective function to maximize is the profit: P = 6x + 8y We can solve this problem graphically or algebraically. Solving it algebraically, we find the feasible region and then evaluate the objective function at the vertices of the feasible region. The vertices are (0, 0), (0, 3.75), (5, 0), and (4, 2). Evaluating P at these points: P(0, 0) = $0 P(0, 3.75) = $30 P(5, 0) = $30 P(4, 2) = $104 The maximum profit is $104 when producing 4 units of product A and 2 units of product B.
+
+Explanation:
+The company should produce 4 units of product A and 2 units of product B to maximize its profit. This choice gives the highest profit among the options provided.
+
+Common mistake note:
+A common mistake is not considering both constraints simultaneously, leading to an incorrect maximum profit calculation. Another mistake might be overlooking the non-negativity constraints for x and y.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+A farmer has 100 acres of land to cultivate corn and wheat. Each acre of corn requires 5 hours of labor and yields a profit of $300, while each acre of wheat requires 7 hours of labor and yields a profit of $400. The farmer has 500 hours of labor available. How many acres of each crop should the farmer plant to maximize their profit?
+A) 62.5 acres corn, 37.5 acres wheat
+B) 71.4 acres corn, 28.6 acres wheat
+C) 80 acres corn, 20 acres wheat
+D) 90 acres corn, 10 acres wheat
+Correct Answer: B
+
+Solution:
+Let x be the number of acres of corn and y be the number of acres of wheat. The constraints are given by the available land and labor: x + y ≤ 100 (land constraint) 5x + 7y ≤ 500 (labor constraint) x ≥ 0, y ≥ 0 (non-negativity constraints) The objective function to maximize is the profit: P = 300x + 400y We can solve this problem graphically or algebraically. Solving it algebraically, we find the feasible region and then evaluate the objective function at the vertices of the feasible region. The vertices are (0, 100), (71.4, 28.6), and (100, 0). Evaluating P at these points: P(0, 100) = $0 P(71.4, 28.6) = $35000 P(100, 0) = $30000 The maximum profit is $35,000 when planting 71.4 acres of corn and 28.6 acres of wheat.
+
+Explanation:
+The farmer should plant 71.4 acres of corn and 28.6 acres of wheat to maximize their profit. This choice gives the highest profit among the options provided.
+
+Common mistake note:
+A common mistake is not considering both constraints simultaneously, leading to an incorrect maximum profit calculation. Another mistake might be overlooking the non-negativity constraints for x and y.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+An ice cream shop sells two flavors, vanilla and chocolate. Each scoop of vanilla requires 2 ounces of milk and costs $1 to make, while each scoop of chocolate requires 3 ounces of milk and costs $1.50 to make. The shop has 40 ounces of milk available and wants to maximize its profit by selling as many scoops as possible. If the shop sells vanilla for $2 per scoop and chocolate for $2.50 per scoop, how many scoops of each flavor should it sell?
+A) 16 vanilla, 8 chocolate
+B) 20 vanilla, 6 chocolate
+C) 24 vanilla, 4 chocolate
+D) 30 vanilla, 0 chocolate
+Correct Answer: C
+
+Solution:
+Let x be the number of scoops of vanilla and y be the number of scoops of chocolate. The constraints are given by the available milk: 2x + 3y ≤ 40 (milk constraint) x ≥ 0, y ≥ 0 (non-negativity constraints) Since the shop wants to sell as many scoops as possible, we don't need an objective function; instead, we'll solve for the maximum number of scoops within the constraints. Solving it algebraically, we find that the maximum number of scoops is when x = 24 and y = 4, which satisfies both constraints. The shop should sell 24 scoops of vanilla and 4 scoops of chocolate.
+
+Explanation:
+The ice cream shop should sell 24 scoops of vanilla and 4 scoops of chocolate to maximize its profit while using all the available milk. This choice uses all the milk without exceeding the constraint.
+
+Common mistake note:
+A common mistake is not considering the non-negativity constraints, which could lead to a solution with negative scoops. Another mistake might be trying to maximize profit directly, but since the cost of production is given, it's more straightforward to maximize the number of scoops within the milk constraint.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+A furniture manufacturer produces chairs and tables. Each chair requires 3 hours of labor and $50 in materials, while each table requires 5 hours of labor and $75 in materials. The company has 200 hours of labor and $1000 in materials available. A chair sells for $150, and a table sells for $250. How many chairs and tables should the manufacturer produce to maximize profit?
+A) 4 chairs, 6 tables
+B) 6 chairs, 4 tables
+C) 8 chairs, 3 tables
+D) 10 chairs, 2 tables
+Correct Answer: C
+
+Solution:
+Let x be the number of chairs and y be the number of tables. The constraints are given by the available labor and materials: 3x + 5y ≤ 200 (labor constraint) 50x + 75y ≤ 1000 (materials constraint) x ≥ 0, y ≥ 0 (non-negativity constraints) The objective function to maximize is the profit: P = 150x + 250y We can solve this problem graphically or algebraically. Solving it algebraically, we find the feasible region and then evaluate the objective function at the vertices of the feasible region. The vertices are (0, 20), (8, 3), and (16, 0). Evaluating P at these points: P(0, 20) = $5000 P(8, 3) = $4750 P(16, 0) = $4000 The maximum profit is $5,000 when producing 8 chairs and 3 tables.
+
+Explanation:
+The furniture manufacturer should produce 8 chairs and 3 tables to maximize its profit. This choice gives the highest profit among the options provided.
+
+Common mistake note:
+A common mistake is not considering both constraints simultaneously, leading to an incorrect maximum profit calculation. Another mistake might be overlooking the non-negativity constraints for x and y.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+An electronics store has a limited stock of laptops and smartphones. Each laptop costs $800 to purchase and sells for $1200, while each smartphone costs $400 to purchase and sells for $600. The store has $12,000 to spend on inventory and wants to maximize its profit. How many laptops and smartphones should the store buy?
+A) 5 laptops, 10 smartphones
+B) 6 laptops, 8 smartphones
+C) 7 laptops, 6 smartphones
+D) 8 laptops, 4 smartphones
+Correct Answer: B
+
+Solution:
+Let x be the number of laptops and y be the number of smartphones. The constraints are given by the available budget: 800x + 400y ≤ 12000 (budget constraint) x ≥ 0, y ≥ 0 (non-negativity constraints) The objective function to maximize is the profit: P = 1200x + 600y We can solve this problem graphically or algebraically. Solving it algebraically, we find the feasible region and then evaluate the objective function at the vertices of the feasible region. The vertices are (0, 30), (6, 8), and (15, 0). Evaluating P at these points: P(0, 30) = $0 P(6, 8) = $9600 P(15, 0) = $9000 The maximum profit is $9,600 when buying 6 laptops and 8 smartphones.
+
+Explanation:
+The electronics store should buy 6 laptops and 8 smartphones to maximize its profit. This choice gives the highest profit among the options provided.
+
+Common mistake note:
+A common mistake is not considering both constraints simultaneously, leading to an incorrect maximum profit calculation. Another mistake might be overlooking the non-negativity constraints for x and y.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+An online retailer sells two products, X and Y. Product X has a fixed cost of $10 per unit and a variable cost of $5 per unit. Product Y has a fixed cost of $15 per unit and a variable cost of $3 per unit. The retailer can sell up to 200 units in total, with a maximum of 120 units of product X. Each unit of X sells for $20, and each unit of Y sells for $18. How many units of X and Y should the retailer produce to maximize profit?
+A) 120 units X, 80 units Y
+B) 115 units X, 85 units Y
+C) 110 units X, 90 units Y
+D) 105 units X, 95 units Y
+Correct Answer: A
+
+Solution:
+Let x be the number of units of product X and y be the number of units of product Y. The constraints are given by the total unit limit and the maximum units of product X: x + y ≤ 200 (total unit constraint) x ≤ 120 (product X constraint) x ≥ 0, y ≥ 0 (non-negativity constraints) The profit function to maximize is P = (20 - 5)x + (18 - 3)y = 15x + 15y We can solve this problem graphically or algebraically. Solving it algebraically, we find the feasible region and then evaluate the profit at the vertices of the feasible region. The vertices are (0, 200), (120, 80), and (120, 0). Evaluating P at these points: P(0, 200) = $0 P(120, 80) = $3600 P(120, 0) = $1800 The maximum profit is $3,600 when producing 120 units of product X and 80 units of product Y.
+
+Explanation:
+The retailer should produce 120 units of product X and 80 units of product Y to maximize its profit. This choice gives the highest profit among the options provided.
+
+Common mistake note:
+A common mistake is not considering both constraints simultaneously, leading to an incorrect maximum profit calculation. Another mistake might be overlooking the non-negativity constraints for x and y.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+An agricultural cooperative produces apples and oranges. Each apple tree requires 20 square feet of space and yields 100 apples, while each orange tree requires 30 square feet of space and yields 80 oranges. The cooperative has 400 square feet available for planting trees. Apples sell for $0.50 per pound, and oranges sell for $0.75 per pound. Each apple weighs 0.25 pounds, and each orange weighs 0.35 pounds. How many trees of each type should the cooperative plant to maximize revenue?
+A) 16 apple trees, 8 orange trees
+B) 18 apple trees, 6 orange trees
+C) 20 apple trees, 4 orange trees
+D) 22 apple trees, 2 orange trees
+Correct Answer: C
+
+Solution:
+Let x be the number of apple trees and y be the number of orange trees. The constraints are given by the available space: 20x + 30y ≤ 400 (space constraint) x ≥ 0, y ≥ 0 (non-negativity constraints) The revenue function to maximize is R = 0.50(100/0.25)x + 0.75(80/0.35)y = 200x + 214.29y We can solve this problem graphically or algebraically. Solving it algebraically, we find the feasible region and then evaluate the revenue at the vertices of the feasible region. The vertices are (0, 13.33), (20, 4), and (26.67, 0). Evaluating R at these points: R(0, 13.33) = $0 R(20, 4) = $5285.71 R(26.67, 0) = $5333.33 Since the number of trees must be an integer, we choose the closest integer to 26.67 for apples and the closest integer to 13.33 for oranges. The cooperative should plant 20 apple trees and 4 orange trees to maximize its revenue.
+
+Explanation:
+The agricultural cooperative should plant 20 apple trees and 4 orange trees to maximize its revenue. This choice gives the highest revenue among the options provided, considering integer values of trees.
+
+Common mistake note:
+A common mistake is not considering both constraints simultaneously, leading to an incorrect maximum revenue calculation. Another mistake might be overlooking the non-negativity constraints for x and y or assuming that the number of trees can be a decimal value.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.6.6",
+  "objective_text": "Use the discriminant to determine the nature of roots",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Given the quadratic equation: x^2 + 4x + 3 = 0, what is the nature of its roots?",
+      "choices": {
+        "A": "Two distinct real roots",
+        "B": "One repeated real root",
+        "C": "Two imaginary roots",
+        "D": "No solution"
+      },
+      "correct_choice": "B",
+      "solution": "The discriminant (b^2 - 4ac) for the quadratic equation is given by (4)^2 - 4(1)(3) = 16 - 12 = 4. Since the discriminant is positive, the roots are two distinct real numbers. However, since the sum of the roots (-b/a) is -4/1 = -4 and the product of the roots (c/a) is 3/1 = 3, which means one root must be -3 (to have a product of 3) and the other root must be -1 (to add up to -4), these roots are actually repeated.",
+      "explanation": "The discriminant helps determine the nature of roots: positive discriminant indicates two distinct real roots, zero discriminant indicates one repeated real root, and negative discriminant indicates two complex conjugate roots.",
+      "common_mistake_notes": "A common mistake is to assume that a positive discriminant always means two different roots. In this case, although the discriminant is positive, the roots are actually repeated."
+    },
+    {
+      "id": "Two",
+      "stem": "For the quadratic equation: 2x^2 + 5x + 3 = 0, what can be said about its roots?",
+      "choices": {
+        "A": "One real root and one imaginary root",
+        "B": "Two distinct real roots",
+        "C": "No real roots",
+        "D": "One repeated real root"
+      },
+      "correct_choice": "D",
+      "solution": "The discriminant (b^2 - 4ac) for the quadratic equation is given by (5)^2 - 4(2)(3) = 25 - 24 = 1. Since the discriminant is positive, there are two real roots. However, since the sum of the roots (-b/a) is -5/2 and the product of the roots (c/a) is 3/2, which means both roots must be -3/2 to have a product and sum that equal zero, these roots are actually repeated.",
+      "explanation": "The discriminant helps determine the nature of roots: positive discriminant indicates two distinct real roots, zero discriminant indicates one repeated real root, and negative discriminant indicates two complex conjugate roots.",
+      "common_mistake_notes": "A common mistake is to assume that a positive discriminant always means two different roots. In this case, although the discriminant is positive, the roots are actually repeated."
+    },
+    {
+      "id": "Three",
+      "stem": "What is the nature of the roots for the quadratic equation: x^2 - 6x + 9 = 0?",
+      "choices": {
+        "A": "Two distinct real roots",
+        "B": "One repeated real root",
+        "C": "Two imaginary roots",
+        "D": "No solution"
+      },
+      "correct_choice": "B",
+      "solution": "The discriminant (b^2 - 4ac) for the quadratic equation is given by (-6)^2 - 4(1)(9) = 36 - 36 = 0. Since the discriminant is zero, the roots are one repeated real root.",
+      "explanation": "The discriminant helps determine the nature of roots: positive discriminant indicates two distinct real roots, zero discriminant indicates one repeated real root, and negative discriminant indicates two complex conjugate roots.",
+      "common_mistake_notes": "A common mistake is to think that a zero discriminant means there are no roots. In this case, the root is simply repeated."
+    },
+    {
+      "id": "Four",
+      "stem": "For the quadratic equation: 3x^2 + 6x + 4 = 0, what can be said about its roots?",
+      "choices": {
+        "A": "Two distinct real roots",
+        "B": "One repeated real root",
+        "C": "Two imaginary roots",
+        "D": "No solution"
+      },
+      "correct_choice": "C",
+      "solution": "The discriminant (b^2 - 4ac) for the quadratic equation is given by (6)^2 - 4(3)(4) = 36 - 48 = -12. Since the discriminant is negative, the roots are two complex conjugate roots.",
+      "explanation": "The discriminant helps determine the nature of roots: positive discriminant indicates two distinct real roots, zero discriminant indicates one repeated real root, and negative discriminant indicates two complex conjugate roots.",
+      "common_mistake_notes": "A common mistake is to think that a negative discriminant means there are no real roots. In this case, the roots are imaginary but still exist."
+    },
+    {
+      "id": "Five",
+      "stem": "The quadratic equation 2x^2 + 7x + 6 = 0 has roots x1 and x2. What is the relationship between x1 and x2?",
+      "choices": {
+        "A": "x1 = x2",
+        "B": "x1 + x2 = -7/2",
+        "C": "x1 * x2 = 3",
+        "D": "x1 * x2 = -7"
+      },
+      "correct_choice": "B",
+      "solution": "The sum of the roots for a quadratic equation is given by (-b/a) which in this case is (-7/2). The product of the roots is given by (c/a) which in this case is 3. Thus, x1 + x2 = -7/2 and x1 * x2 = 3.",
+      "explanation": "The sum of the roots can be found using the formula -b/a, and the product of the roots can be found using c/a. These relationships hold true regardless of the nature of the roots.",
+      "common_mistake_notes": "A common mistake is to confuse the sum of the roots with their product. In this case, x1 + x2 is not equal to 3."
+    },
+    {
+      "id": "Six",
+      "stem": "Given the quadratic equation: 4x^2 - 8x + 5 = 0, what can be said about its discriminant?",
+      "choices": {
+        "A": "Positive",
+        "B": "Zero",
+        "C": "Negative",
+        "D": "Cannot be determined without solving for roots"
+      },
+      "correct_choice": "C",
+      "solution": "The discriminant (b^2 - 4ac) for the quadratic equation is given by (-8)^2 - 4(4)(5) = 64 - 80 = -16. Since the discriminant is negative, it indicates two complex conjugate roots.",
+      "explanation": "The discriminant helps determine the nature of roots: positive discriminant indicates two distinct real roots, zero discriminant indicates one repeated real root, and negative discriminant indicates two complex conjugate roots. The discriminant can be calculated without solving for the roots.",
+      "common_mistake_notes": "A common mistake is to think that a quadratic equation with integer coefficients must have real roots. In this case, the discriminant being negative means the roots are imaginary."
+    },
+    {
+      "id": "Seven",
+      "stem": "The quadratic equation x^2 + 8x + 16 = 0 has roots x1 and x2. What is the relationship between x1 and x2?",
+      "choices": {
+        "A": "x1 = x2",
+        "B": "x1 + x2 = -8",
+        "C": "x1 * x2 = 8",
+        "D": "x1 * x2 = 16"
+      },
+      "correct_choice": "A",
+      "solution": "The sum of the roots for a quadratic equation is given by (-b/a) which in this case is -8. The product of the roots is given by (c/a) which in this case is 16. Thus, x1 = x2 since they both equal -8.",
+      "explanation": "The sum of the roots can be found using the formula -b/a, and the product of the roots can be found using c/a. These relationships hold true regardless of the nature of the roots.",
+      "common_mistake_notes": "A common mistake is to think that x1 + x2 = 0 when the roots are repeated. In this case, x1 + x2 = -8."
+    }
+  ]
+}

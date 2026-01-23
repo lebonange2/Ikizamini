@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.12.4",
+  "objective_text": "Graph hyperbolic functions",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Sketch the graph of f(x) = cosh(x). Which of the following is true about the graph?",
+      "choices": {
+        "A": "It has a horizontal asymptote at y = -1.",
+        "B": "It decreases for all x values.",
+        "C": "It passes through the origin (0, 0).",
+        "D": "It approaches infinity as x approaches infinity."
+      },
+      "correct_choice": "D",
+      "solution": "The hyperbolic cosine function, cosh(x), has a graph resembling an exponential growth function. It is always positive and approaches infinity as x increases. Therefore, option D is correct.",
+      "explanation": "Cosh(x) does not have a horizontal asymptote at y = -1 (A) or pass through the origin (B). It also does not decrease for all x values (C); it grows without bound in both directions.",
+      "common_mistake_notes": "Common mistake is to confuse cosh(x) with sinh(x), which has a horizontal asymptote at y = 0."
+    },
+    {
+      "id": "Two",
+      "stem": "Sketch the graph of g(x) = sinh(x). Which of the following is true about the graph?",
+      "choices": {
+        "A": "It has two vertical asymptotes.",
+        "B": "It approaches zero as x approaches infinity.",
+        "C": "It is an odd function.",
+        "D": "Its range is from -1 to 1."
+      },
+      "correct_choice": "C",
+      "solution": "The hyperbolic sine function, sinh(x), is an odd function, meaning sinh(-x) = -sinh(x). This property makes option C correct.",
+      "explanation": "Sinh(x) does not have vertical asymptotes (A) or approach zero as x approaches infinity (B). Its range is all real numbers, not limited to -1 and 1 (D).",
+      "common_mistake_notes": "Common mistake is to think that sinh(x) behaves like the regular sine function, which has a limited range."
+    },
+    {
+      "id": "Three",
+      "stem": "Sketch the graph of h(x) = tanh(x). Which of the following is true about the graph?",
+      "choices": {
+        "A": "It has no vertical asymptotes.",
+        "B": "Its domain is all real numbers.",
+        "C": "It approaches 1 as x approaches infinity.",
+        "D": "It has a range from -1 to 1."
+      },
+      "correct_choice": "D",
+      "solution": "The hyperbolic tangent function, tanh(x), has a range of -1 to 1 and is defined for all real numbers. This makes option D correct.",
+      "explanation": "Tanh(x) does have vertical asymptotes at x = kπ (where k is an integer) (A). Its domain is indeed all real numbers (B), but it approaches infinity, not 1, as x approaches infinity (C).",
+      "common_mistake_notes": "Common mistake is to confuse tanh(x) with the regular tangent function, which has a range of (-∞, ∞)."
+    },
+    {
+      "id": "Four",
+      "stem": "Sketch the graph of j(x) = sech(x). Which of the following is true about the graph?",
+      "choices": {
+        "A": "It approaches 1 as x approaches infinity.",
+        "B": "Its domain is all real numbers except for odd integer multiples of π/2.",
+        "C": "It has a horizontal asymptote at y = 0.",
+        "D": "It is an even function."
+      },
+      "correct_choice": "A",
+      "solution": "The hyperbolic secant function, sech(x), approaches 1 as x approaches infinity. This makes option A correct.",
+      "explanation": "Sech(x) has a domain of all real numbers (B), no horizontal asymptote at y = 0 (C), and is not an even function (D).",
+      "common_mistake_notes": "Common mistake is to think that sech(x) behaves like the regular secant function, which approaches zero as x approaches infinity."
+    },
+    {
+      "id": "Five",
+      "stem": "Sketch the graph of k(x) = csch(x). Which of the following is true about the graph?",
+      "choices": {
+        "A": "It has no vertical asymptotes.",
+        "B": "Its range is all real numbers except for zero.",
+        "C": "It approaches 0 as x approaches 0.",
+        "D": "It is an odd function."
+      },
+      "correct_choice": "B",
+      "solution": "The hyperbolic cosecant function, csch(x), has a range of all real numbers except for zero and is defined for all real numbers except for odd integer multiples of π. This makes option B correct.",
+      "explanation": "Csch(x) does have vertical asymptotes at x = kπ (where k is an integer) (A). It approaches infinity, not zero, as x approaches 0 (C). It is not an odd function (D).",
+      "common_mistake_notes": "Common mistake is to think that csch(x) behaves like the regular cosecant function, which has a range of all real numbers except for zero."
+    },
+    {
+      "id": "Six",
+      "stem": "Sketch the graph of l(x) = coth(x). Which of the following is true about the graph?",
+      "choices": {
+        "A": "It approaches 1 as x approaches infinity.",
+        "B": "Its domain is all real numbers except for odd integer multiples of π/2.",
+        "C": "It has no horizontal asymptotes.",
+        "D": "It is an even function."
+      },
+      "correct_choice": "B",
+      "solution": "The hyperbolic cotangent function, coth(x), has a domain of all real numbers except for odd integer multiples of π/2. This makes option B correct.",
+      "explanation": "Coth(x) approaches 1 as x approaches infinity (A), has horizontal asymptotes at y = ±1 (C), and is not an even function (D).",
+      "common_mistake_notes": "Common mistake is to think that coth(x) behaves differently from the regular cotangent function, which has a limited domain."
+    },
+    {
+      "id": "Seven",
+      "stem": "Sketch the graph of m(x) = sinh(x)/cosh(x). Which of the following is true about the graph?",
+      "choices": {
+        "A": "It approaches 1 as x approaches infinity.",
+        "B": "Its range is all real numbers.",
+        "C": "It has a vertical asymptote at x = 0.",
+        "D": "It is an odd function."
+      },
+      "correct_choice": "A",
+      "solution": "The hyperbolic tangent function, tanh(x), can be rewritten as sinh(x)/cosh(x). It approaches 1 as x approaches infinity. This makes option A correct.",
+      "explanation": "Tanh(x) has a range of all real numbers (B), no vertical asymptote at x = 0 (C), and is an odd function, which is true for m(x) as well (D).",
+      "common_mistake_notes": "Common mistake is to think that sinh(x)/cosh(x) behaves differently from tanh(x), even though they are the same function."
+    }
+  ]
+}

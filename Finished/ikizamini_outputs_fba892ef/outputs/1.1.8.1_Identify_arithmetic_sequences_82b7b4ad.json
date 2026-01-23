@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.8.1",
+  "objective_text": "Identify arithmetic sequences",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Which sequence is an arithmetic sequence with a common difference of 3?",
+      "choices": {
+        "A": "[2, 5, 8, 11]",
+        "B": "[4, 7, 10, 15]",
+        "C": "[6, 9, 15, 21]",
+        "D": "[8, 11, 14, 17]"
+      },
+      "correct_choice": "D",
+      "solution": "The common difference in an arithmetic sequence is the difference between consecutive terms. In option D, the difference between each pair of consecutive terms is 3: 11 - 8 = 3, 14 - 11 = 3, and 17 - 14 = 3. Therefore, option D represents an arithmetic sequence with a common difference of 3.",
+      "explanation": "An arithmetic sequence is a sequence of numbers in which each term after the first is obtained by adding a constant, called the common difference, to the previous term.",
+      "common_mistake_notes": "A common mistake would be to choose option C, as it has a consistent increase, but the increase is not by a fixed number (3 and then 6). The correct sequence should have a constant difference between each pair of consecutive terms."
+    },
+    {
+      "id": "?",
+      "stem": "Identify which sequence is arithmetic with a common difference of -2.",
+      "choices": {
+        "A": "[1, 3, 5, 7]",
+        "B": "[4, 2, 0, -2]",
+        "C": "[6, 4, 2, 0]",
+        "D": "[8, 6, 4, 2]"
+      },
+      "correct_choice": "B",
+      "solution": "In option B, the difference between each pair of consecutive terms is -2: 2 - 4 = -2, 0 - 2 = -2, and -2 - 0 = -2. Thus, it represents an arithmetic sequence with a common difference of -2.",
+      "explanation": "An arithmetic sequence can have a negative common difference as well. The key is the consistent change between terms.",
+      "common_mistake_notes": "A common mistake would be to choose option A, which is an increasing sequence but not an arithmetic one because it does not have a constant decrease."
+    },
+    {
+      "id": "?",
+      "stem": "Which of the following sequences is NOT arithmetic?",
+      "choices": {
+        "A": "[1, 3, 5, 7]",
+        "B": "[2, 4, 8, 16]",
+        "C": "[5, 9, 13, 17]",
+        "D": "[7, 10, 13, 16]"
+      },
+      "correct_choice": "B",
+      "solution": "Option B is not arithmetic because the common difference between consecutive terms changes: 4 - 2 = 2 and 8 - 4 = 4. An arithmetic sequence requires a constant difference.",
+      "explanation": "An arithmetic sequence has a consistent change between each pair of consecutive terms, which is not the case in option B.",
+      "common_mistake_notes": "A common mistake would be to choose option A, but it's an arithmetic sequence with a common difference of 2."
+    },
+    {
+      "id": "?",
+      "stem": "Identify the next term in the arithmetic sequence: [1, 4, 7, 10]?",
+      "choices": {
+        "A": "13",
+        "B": "15",
+        "C": "16",
+        "D": "19"
+      },
+      "correct_choice": "A",
+      "solution": "The common difference is 3 (4 - 1 = 3). To find the next term, add the common difference to the last term: 10 + 3 = 13.",
+      "explanation": "To find the next term in an arithmetic sequence, you add the common difference to the previous term.",
+      "common_mistake_notes": "A common mistake would be to choose option C, which is the sum of the first two terms rather than adding the common difference."
+    },
+    {
+      "id": "?",
+      "stem": "Which sequence continues the arithmetic progression: [3, 6, 9]?",
+      "choices": {
+        "A": "[12, 15, 18]",
+        "B": "[6, 12, 18]",
+        "C": "[9, 18, 27]",
+        "D": "[15, 20, 25]"
+      },
+      "correct_choice": "A",
+      "solution": "The common difference is 3 (6 - 3 = 3). The next term in the sequence would be 12 (9 + 3), followed by 15 (12 + 3). So, the continuation is [12, 15, 18].",
+      "explanation": "To find the next terms in an arithmetic sequence, you add the common difference to each term.",
+      "common_mistake_notes": "A common mistake would be to choose option B, which has a different common difference (6)."
+    },
+    {
+      "id": "?",
+      "stem": "Which of the following is an arithmetic sequence with a common ratio of 2?",
+      "choices": {
+        "A": "[1, 3, 5, 7]",
+        "B": "[2, 4, 8, 16]",
+        "C": "[3, 6, 9, 12]",
+        "D": "[4, 6, 8, 10]"
+      },
+      "correct_choice": "B",
+      "solution": "An arithmetic sequence refers to a sequence with a constant difference between terms, not a constant ratio. Option B represents a geometric sequence, where each term is obtained by multiplying the previous term by 2.",
+      "explanation": "The question asks for an arithmetic sequence, but option B describes a geometric sequence because the common ratio (the factor by which each term multiplies) is 2.",
+      "common_mistake_notes": "A common mistake would be to choose option C, thinking it's an arithmetic sequence with a common difference of 3. However, the question asks for a common ratio."
+    },
+    {
+      "id": "?",
+      "stem": "Identify the next term in the arithmetic sequence: [-2, -5, -8]?",
+      "choices": {
+        "A": "-10",
+        "B": "-11",
+        "C": "-13",
+        "D": "-16"
+      },
+      "correct_choice": "C",
+      "solution": "The common difference is -3 (-5 - (-2) = -3). The next term in the sequence would be -11 (-8 - 3), followed by -14 (-11 - 3). So, the next term is -13.",
+      "explanation": "To find the next terms in an arithmetic sequence, you add the common difference to each term. In this case, since the common difference is negative, subtract it from the last term.",
+      "common_mistake_notes": "A common mistake would be to choose option A, which adds 3 instead of subtracting it."
+    }
+  ]
+}

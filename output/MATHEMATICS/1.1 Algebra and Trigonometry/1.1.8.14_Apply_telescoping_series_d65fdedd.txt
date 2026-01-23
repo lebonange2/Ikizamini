@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.8.14 Apply telescoping series
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.8 Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the sum of the telescoping series: 1 - 1/2 + 1/4 - 1/8 + ...
+A) 0.5
+B) 1.0
+C) 1.5
+D) 2.0
+Correct Answer: B
+
+Solution:
+The series is a geometric series with first term a = 1 and common ratio r = -1/2. Since |r| < 1, the series converges. The sum of an infinite geometric series is given by S = a / (1 - r). Plugging in the values, we get S = 1 / (1 - (-1/2)) = 1 / (3/2) = 2/3. However, since this is a telescoping series, we can see that every other term cancels out starting from the second term. The sum will be just the first term: 1.
+
+Explanation:
+The telescoping property allows us to simplify the calculation by recognizing that all terms but the first and last (or some subset) cancel each other out.
+
+Common mistake note:
+A common mistake is to apply the formula for an infinite geometric series without considering that this series is telescoping. Choosing A (0.5) would be a result of applying the formula with the wrong value for r.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Evaluate the sum of the telescoping series: 1 + 2(1/3) - 3(1/9) + 4(1/27) - ...
+A) 2
+B) 3
+C) 4
+D) 5
+Correct Answer: A
+
+Solution:
+This is a series with terms that can be written as n * (1/n^3), where n starts from 1. We can rewrite this as n / n^3 = 1 / n^2. The sum of the series can then be expressed as the sum of reciprocals of squares, which is known to converge to a constant value called the Basel problem's limit (approximately 1.6449). However, for this telescoping series, we can see that every term cancels out except for the first and last terms. The sum will be 1 + 2(1/3) = 1 + 2/3 = 5/3.
+
+Explanation:
+The telescoping property allows us to simplify the calculation by recognizing that all terms but the first and last (or some subset) cancel each other out.
+
+Common mistake note:
+A common mistake is to try to find a general term for the series and apply a standard test for convergence, like the ratio test. Choosing C (4) or D (5) would be a result of this approach.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Find the sum of the telescoping series: 1 - 2(1/4) + 3(1/16) - 4(1/64) + ...
+A) 1/2
+B) 1
+C) 3/2
+D) 2
+Correct Answer: C
+
+Solution:
+The series can be rewritten as n * (1/n^4), where n starts from 1. This simplifies to 1 / n^3. The sum of this series is a telescoping one, with all terms canceling out except for the first and last terms. The sum will be 1 - 2(1/4) + 3(1/16) = 1 - 1/2 + 3/16 = 8/16 - 8/16 + 3/16 = 3/16.
+
+Explanation:
+The telescoping property allows us to simplify the calculation by recognizing that all terms but the first and last (or some subset) cancel each other out.
+
+Common mistake note:
+A common mistake is to try to find a closed-form expression for the sum, which would be difficult for this series. Choosing A (1/2) or B (1) would be a result of this approach.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Evaluate the sum of the telescoping series: 1 - 3(1/9) + 5(1/25) - 7(1/49) + ...
+A) 1/2
+B) 1
+C) 3/2
+D) 2
+Correct Answer: C
+
+Solution:
+This series can be written as n * (1/n^4), where n starts from 1 and alternates between odd numbers. The terms simplify to 1 / n^3, which is a telescoping series. All terms cancel out except for the first and last terms. The sum will be 1 - 3(1/9) + 5(1/25) = 1 - 1/3 + 1/5 = 5/5 - 3/3 + 1/5 = 2/5.
+
+Explanation:
+The telescoping property allows us to simplify the calculation by recognizing that all terms but the first and last (or some subset) cancel each other out.
+
+Common mistake note:
+A common mistake is to try to find a general term for the series and apply a standard test for convergence, like the ratio test. Choosing A (1/2) or B (1) would be a result of this approach.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Find the sum of the telescoping series: 1 - 3(1/6) + 5(1/10) - 7(1/14) + ...
+A) 1/2
+B) 1
+C) 3/2
+D) 2
+Correct Answer: C
+
+Solution:
+The series can be rewritten as n * (1/(n(n+2))), where n starts from 1 and alternates between odd numbers. The terms simplify to (n+2 - n) / (n(n+2)) = 1/n - 1/(n+2). This is a telescoping series, with all terms cancel out except for the first and last terms. The sum will be 1 - 3(1/6) + 5(1/10) = 1 - 1/2 + 1/3 = 3/3 - 2/2 + 1/3 = 2/3.
+
+Explanation:
+The telescoping property allows us to simplify the calculation by recognizing that all terms but the first and last (or some subset) cancel each other out.
+
+Common mistake note:
+A common mistake is to try to find a closed-form expression for the sum, which would be difficult for this series. Choosing A (1/2) or B (1) would be a result of this approach.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Evaluate the sum of the telescoping series: 1 + 1/(1+1) - 1/(1+1)(1+2) + 1/(1+1)(1+2)(1+3) - ...
+A) 1/2
+B) 1
+C) 3/2
+D) 2
+Correct Answer: B
+
+Solution:
+This is a series with terms that can be written as (n+1)! / n!, where n starts from 0. Simplifying, we get the series 1 + 2 - 6 + 24 - ... which telescopes. All terms cancel out except for the first and last. The sum will be 1 + 2 = 3.
+
+Explanation:
+The telescoping property allows us to simplify the calculation by recognizing that all terms but the first and last (or some subset) cancel each other out.
+
+Common mistake note:
+A common mistake is to try to find a general term for the series and apply a standard test for convergence, like the ratio test. Choosing A (1/2) or C (3/2) would be a result of this approach.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Find the sum of the telescoping series: 1 - 2(1/(1+1)^2) + 3(1/(1+1)(1+2)^2) - 4(1/(1+1)(1+2)(1+3)^2) + ...
+A) 1/2
+B) 1
+C) 3/2
+D) 2
+Correct Answer: C
+
+Solution:
+The series can be rewritten as n * (1/(n(n+1))^2), where n starts from 1. This simplifies to (n+1 - n) / (n(n+1))^2 = 1/n^2 - 1/(n+1)^2, which is a telescoping series. All terms cancel out except for the first and last terms. The sum will be 1 - 2(1/4) + 3(1/9) - ... = 1 - 1/2 + 1/3 - ... = 1.
+
+Explanation:
+The telescoping property allows us to simplify the calculation by recognizing that all terms but the first and last (or some subset) cancel each other out.
+
+Common mistake note:
+A common mistake is to try to find a closed-form expression for the sum, which would be difficult for this series. Choosing A (1/2) or B (1) would be a result of this approach.
+------------------------------------------------------------------------------

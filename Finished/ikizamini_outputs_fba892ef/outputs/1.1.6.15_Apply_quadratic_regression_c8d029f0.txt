@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.6.15 Apply quadratic regression
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.6 Quadratic Functions and Equations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+A dataset shows the relationship between hours of studying and test scores for a group of students. Which type of regression model would be appropriate to analyze this data?
+A) Linear Regression
+B) Quadratic Regression
+C) Logistic Regression
+D) Exponential Regression
+Correct Answer: B
+
+Solution:
+The relationship between hours of studying and test scores is expected to exhibit curvature, suggesting a non-linear pattern. Quadratic regression models this relationship using a second-degree polynomial, making it suitable for this scenario.
+
+Explanation:
+Linear regression assumes a straight-line relationship, logistic regression is used for binary classification problems, and exponential regression models growth or decay over time.
+
+Common mistake note:
+A common mistake would be to choose A (Linear Regression), as it's simpler and more straightforward. However, it might not accurately capture the curvature in the data.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+A dataset contains the distance traveled by a car versus the time taken. Which type of regression should be used to analyze this relationship?
+A) Polynomial Regression (degree 3)
+B) Linear Regression
+C) Quadratic Regression
+D) Cubic Regression
+Correct Answer: B
+
+Solution:
+The relationship between distance and time is expected to be linear, as distance increases at a constant rate with time. Linear regression models this type of relationship.
+
+Explanation:
+Polynomial (degree 3) and cubic regression introduce unnecessary complexity for a straight-line relationship. Quadratic regression models curvature, which is not present in this case.
+
+Common mistake note:
+A common mistake might be to choose C (Quadratic Regression) or D (Cubic Regression), assuming that higher-degree polynomials would fit the data better. However, simplicity and interpretability are crucial in regression analysis.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+A dataset shows the relationship between age and height for a group of adults. Which type of regression would best analyze this data?
+A) Quadratic Regression
+B) Logistic Regression
+C) Linear Regression
+D) Exponential Regression
+Correct Answer: C
+
+Solution:
+The relationship between age and height is expected to be linear, with a gradual increase in height until adulthood. Linear regression models this type of relationship.
+
+Explanation:
+Quadratic regression introduces curvature, logistic regression is for classification tasks, and exponential regression models growth or decay, none of which are suitable for the given scenario.
+
+Common mistake note:
+A common mistake could be to choose A (Quadratic Regression), assuming that there might be some curvature due to aging effects. However, in this case, linear regression is more appropriate.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+A dataset contains information about the number of hours spent on a project and the cost incurred. Which type of regression should be used to analyze the relationship?
+A) Polynomial Regression (degree 2)
+B) Linear Regression
+C) Quadratic Regression
+D) Cubic Regression
+Correct Answer: A
+
+Solution:
+The relationship between hours and cost might not be linear, as costs could increase at a faster rate as more hours are spent. A polynomial regression (degree 2) can capture this curvature.
+
+Explanation:
+Linear regression assumes a straight-line relationship, quadratic regression is suitable for a parabolic curve, and cubic regression models a curved relationship with three turning points. Polynomial regression of degree 2 is the most appropriate choice here.
+
+Common mistake note:
+A common mistake would be to choose B (Linear Regression), assuming that cost increases linearly with time. However, in many cases, costs increase at a faster rate as more hours are spent.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+A dataset illustrates the relationship between temperature and plant growth rate. Which type of regression should be used to analyze this data?
+A) Quadratic Regression
+B) Linear Regression
+C) Logistic Regression
+D) Exponential Regression
+Correct Answer: A
+
+Solution:
+The relationship between temperature and plant growth might not be linear, as there could be an optimal temperature range for growth. Quadratic regression can capture this curvature.
+
+Explanation:
+Linear regression assumes a straight-line relationship, logistic regression is used for classification tasks, and exponential regression models growth or decay, none of which are suitable for the given scenario.
+
+Common mistake note:
+A common mistake could be to choose B (Linear Regression), assuming that plant growth increases linearly with temperature. However, in reality, there may be an optimal temperature range where growth is highest.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+A dataset shows the relationship between the number of products sold and the advertising budget spent. Which type of regression would best analyze this data?
+A) Quadratic Regression
+B) Linear Regression
+C) Logistic Regression
+D) Exponential Regression
+Correct Answer: B
+
+Solution:
+The relationship between sales and advertising budget is expected to be linear, with an increase in sales as the budget increases. Linear regression models this type of relationship.
+
+Explanation:
+Quadratic regression introduces curvature, logistic regression is for classification tasks, and exponential regression models growth or decay, none of which are suitable for the given scenario.
+
+Common mistake note:
+A common mistake might be to choose A (Quadratic Regression), assuming that there might be some curvature due to diminishing returns. However, in this case, linear regression is more appropriate.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+A dataset contains information about the distance between two cities and the travel time by car. Which type of regression should be used to analyze the relationship?
+A) Linear Regression
+B) Quadratic Regression
+C) Logistic Regression
+D) Exponential Regression
+Correct Answer: A
+
+Solution:
+The relationship between distance and travel time is expected to be linear, as travel time increases at a constant rate with distance. Linear regression models this type of relationship.
+
+Explanation:
+Quadratic regression introduces curvature, logistic regression is for classification tasks, and exponential regression models growth or decay, none of which are suitable for the given scenario.
+
+Common mistake note:
+A common mistake could be to choose B (Quadratic Regression), assuming that there might be some curvature due to factors like traffic or road conditions. However, in this case, linear regression is more appropriate.
+------------------------------------------------------------------------------

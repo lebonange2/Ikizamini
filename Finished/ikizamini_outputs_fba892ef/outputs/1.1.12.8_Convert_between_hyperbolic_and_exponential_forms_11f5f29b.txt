@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.12.8 Convert between hyperbolic and exponential forms
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.12 Hyperbolic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Express the hyperbolic function in exponential form:
+A) e^x - e^{-x}
+B) e^x + e^{-x}
+C) 1/2(e^x - e^{-x})
+D) 1/2(e^x + e^{-x})
+Correct Answer: C
+
+Solution:
+sinh(x) = (e^x - e^{-x})/2, so the correct conversion is C.
+
+Explanation:
+The hyperbolic sine function sinh(x) is defined as the difference of two exponentials divided by 2.
+
+Common mistake note:
+Common mistake: Choosing B, which is the exponential form of cosh(x), not sinh(x).
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Express the exponential function in hyperbolic form:
+A) cosh(2x)
+B) sinh(2x)
+C) 2 sinh(x) cosh(x)
+D) sinh^2(x) + cosh^2(x)
+Correct Answer: C
+
+Solution:
+e^{2x} = (e^x)^2 = (cosh(x) + sinh(x))^2 = cosh^2(x) + 2 sinh(x)cosh(x) + sinh^2(x). The hyperbolic form is C.
+
+Explanation:
+The exponential function raised to a power can be expanded using the power rule for exponentials.
+
+Common mistake note:
+Common mistake: Choosing A, which represents cosh(2x), not e^{2x}.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Express the hyperbolic function in exponential form:
+A) e^y + e^{-y}
+B) e^y - e^{-y}
+C) 1/2(e^y + e^{-y})
+D) 1/2(e^y - e^{-y})
+Correct Answer: A
+
+Solution:
+cosh(y) = (e^y + e^{-y})/2, so the correct conversion is A.
+
+Explanation:
+The hyperbolic cosine function cosh(y) is defined as the sum of two exponentials divided by 2.
+
+Common mistake note:
+Common mistake: Choosing D, which is the exponential form of sinh(y), not cosh(y).
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Express the exponential function in hyperbolic form:
+A) cosh(3x)
+B) sinh(3x)
+C) 2 sinh(x) cosh(x)
+D) cosh^2(x) - sinh^2(x)
+Correct Answer: D
+
+Solution:
+e^{-3x} = (e^{-x})^3 = (cosh(x) - sinh(x))^3 = cosh^3(x) - 3 sinh(x)cosh^2(x) + 3 sinh^2(x)cosh( x) - sinh^3(x). The hyperbolic form is D.
+
+Explanation:
+The exponential function raised to a negative power can be expanded using the power rule for exponentials.
+
+Common mistake note:
+Common mistake: Choosing B, which represents sinh(3x), not e^{-3x}.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Express the hyperbolic function in exponential form:
+A) (e^z - e^{-z})/(e^z + e^{-z})
+B) (e^z + e^{-z})/(e^z - e^{-z})
+C) (1/2)(e^z - e^{-z})/(1/2)(e^z + e^{-z})
+D) e^{2z} - 1/e^{2z}
+Correct Answer: A
+
+Solution:
+tanh(z) = sinh(z)/cosh(z) = (e^z - e^{-z})/(e^z + e^{-z}), so the correct conversion is A.
+
+Explanation:
+The hyperbolic tangent function can be expressed as a ratio of sinh and cosh.
+
+Common mistake note:
+Common mistake: Choosing B, which represents coth(z), not tanh(z).
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Express the exponential function in hyperbolic form:
+A) 2 cosh(4x)
+B) 2 sinh(4x)
+C) cosh^2(2x) - sinh^2(2x)
+D) sinh^2(2x) + cosh^2(2x)
+Correct Answer: A
+
+Solution:
+e^{4x} + e^{-4x} = 2(e^{2x} + e^{-2x}) = 2(cosh(2x) + sinh(2x)) = 2cosh(4x), so the correct conversion is A.
+
+Explanation:
+The sum of two exponentials raised to the same power can be expressed as a hyperbolic cosine.
+
+Common mistake note:
+Common mistake: Choosing B, which represents twice sinh(4x), not the sum of exponentials.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Express the hyperbolic function in exponential form:
+A) (e^x + e^{-x})/(e^x - e^{-x})
+B) (e^x - e^{-x})/(e^x + e^{-x})
+C) 1/2(e^x + e^{-x})
+D) 1/2(e^x - e^{-x})
+Correct Answer: B
+
+Solution:
+sech(x) = 1/cosh(x) = (e^x + e^{-x})/(e^x - e^{-x}), so the correct conversion is B.
+
+Explanation:
+The hyperbolic secant function can be expressed as the reciprocal of cosh.
+
+Common mistake note:
+Common mistake: Choosing A, which represents csch(x), not sech(x).
+------------------------------------------------------------------------------

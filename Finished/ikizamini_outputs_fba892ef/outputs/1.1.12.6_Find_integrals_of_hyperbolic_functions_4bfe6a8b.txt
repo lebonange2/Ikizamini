@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.12.6 Find integrals of hyperbolic functions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.12 Hyperbolic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Evaluate the integral ∫cosh(x) dx from x=0 to x=a.
+A) sinh(a)
+B) cosh(a) - 1
+C) sinh(a) - cosh(0)
+D) cosh(a) - cosh(0)
+Correct Answer: A
+
+Solution:
+The integral of cosh(x) is sinh(x). Using the fundamental theorem of calculus, we evaluate the definite integral by plugging in the limits: sinh(a) - sinh(0). Since sinh(0) = 0, the answer simplifies to sinh(a).
+
+Explanation:
+Cosh(x) is an even function, and its derivative is sinh(x). Thus, integrating cosh(x) gives sinh(x), which can be evaluated at the limits.
+
+Common mistake note:
+A common mistake would be to forget that the integral of cosh(x) is sinh(x) or to confuse it with the integral of sinh(x), which is cosh(x).
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+Evaluate ∫sinh(3x) dx.
+A) 1/3cosh(3x)
+B) cosh(3x)
+C) 1/3sinh(3x)
+D) sinh(3x)
+Correct Answer: A
+
+Solution:
+The integral of sinh(ax) is (1/a)cosh(ax). So, for ∫sinh(3x) dx, we have 1/3cosh(3x).
+
+Explanation:
+When integrating a multiple of sinh(x), the coefficient 'a' is factored out and applied to cosh(ax).
+
+Common mistake note:
+A common mistake would be to forget the factor (1/a) or to integrate sinh(x) instead of sinh(3x), which would lead to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+Find ∫tanh(x) dx.
+A) ln(cosh(x))
+B) cosh(x)
+C) sinh(x)
+D) ln(sinh(x))
+Correct Answer: A
+
+Solution:
+The integral of tanh(x) is ln(cosh(x)). This comes from the derivative of arctanh(x), which is 1/(1 - x^2), and setting x = sinh(x)/cosh(x).
+
+Explanation:
+Tanh(x) is the hyperbolic tangent, and its antiderivative involves the natural logarithm of cosh(x).
+
+Common mistake note:
+A common mistake would be to confuse tanh(x) with sinh(x) or cosh(x), which have different antiderivatives.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+Evaluate ∫sech^2(x) dx.
+A) tanh(x)
+B) cosh(x)
+C) sinh(x)
+D) coth(x)
+Correct Answer: A
+
+Solution:
+The integral of sech^2(x) is tanh(x). This is a well-known identity in hyperbolic functions, related to the derivative of arctanh(x).
+
+Explanation:
+Secant hyperbolic squared is the derivative of tanh(x), so its antiderivative is simply tanh(x).
+
+Common mistake note:
+A common mistake would be to forget this specific identity or to confuse sech^2(x) with cosh^2(x) - 1, which is csch^2(x).
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+Find the integral of csch(x)cot(x) dx.
+A) -csch(x)
+B) coth(x)
+C) csc(x)
+D) sec(x)
+Correct Answer: A
+
+Solution:
+The integral of csch(x)cot(x) is -csch(x). This can be derived from the derivative of sinh(x) and cosh(x), or by recognizing that csch(x)cot(x) is the derivative of -csch(x).
+
+Explanation:
+Csch(x)cot(x) is the derivative of -csch(x), so its antiderivative is negative csch(x).
+
+Common mistake note:
+A common mistake would be to forget this specific identity or to integrate it as if it were a trigonometric function, which would lead to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+Evaluate the definite integral ∫from 0 to π/2 of sinh(x) dx.
+A) 1
+B) e - 1
+C) ln(e + 1)
+D) π/2
+Correct Answer: A
+
+Solution:
+The definite integral ∫from 0 to π/2 of sinh(x) dx can be evaluated by recognizing that sinh is an odd function. The integral of an odd function over a symmetric interval around zero is zero. Thus, the answer is 1.
+
+Explanation:
+Since sinh(x) is an odd function, its definite integral from -a to a will always be zero. In this case, we have a = π/2, so the integral from 0 to π/2 is equal to the negative of the integral from -π/2 to 0, which cancels out.
+
+Common mistake note:
+A common mistake would be to forget that sinh(x) is an odd function or to integrate it as if it were even, leading to a non-zero result.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+Find ∫cosh(2x) dx.
+A) (1/2)sinh(2x)
+B) sinh(x)
+C) (1/2)cosh(2x)
+D) cosh(x)
+Correct Answer: C
+
+Solution:
+The integral of cosh(ax) is (1/a)cosh(ax). So, for ∫cosh(2x) dx, we have (1/2)cosh(2x).
+
+Explanation:
+When integrating a multiple of cosh(x), the coefficient 'a' is factored out and applied to cosh(ax). In this case, a = 2.
+
+Common mistake note:
+A common mistake would be to forget the factor (1/a) or to integrate sinh(2x) instead of cosh(2x), which would lead to an incorrect answer.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.13.10 Find velocity and acceleration vectors
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.13 Parametric Equations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A particle moves along the curve y = x^2 with a constant speed of 5 m/s. What is its velocity vector at the point (2, 4)?
+A) [5i + 20j]
+B) [5i + 4j]
+C) [10i + 4j]
+D) [5i]
+Correct Answer: A
+
+Solution:
+The velocity vector is given by the derivative of the position vector with respect to time. The position vector for a particle on the curve y = x^2 is r(t) = <t, t^2>. Taking the derivative with respect to time gives the velocity vector v(t) = <1, 2t>. At the point (2, 4), which corresponds to t=2, we substitute t into the velocity vector: v(2) = <1, 4*2> = <1, 8>. To match the given speed of 5 m/s, we normalize the velocity vector by dividing it by its magnitude. The magnitude is sqrt(1^2 + 8^2) = sqrt(65), so the normalized velocity vector is (1/√65)i + (8/√65)j ≈ (0.2i + 2.0j). Multiplying by the speed of 5 m/s gives the final answer: [5i + 20j].
+
+Explanation:
+The velocity vector at any point on a curve is found by taking the derivative of the position function with respect to time, then evaluating it at the given point. The acceleration is not needed for this problem.
+
+Common mistake note:
+A common mistake is to forget to normalize the velocity vector by dividing it by its magnitude to match the given speed.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+An object moves in a circular path of radius 3 meters with a constant angular velocity of 4 rad/s. What is its acceleration vector at the point (3, 0) on the circle?
+A) [16i + 9j]
+B) [0i - 12j]
+C) [-12i + 0j]
+D) [0i + 16j]
+Correct Answer: B
+
+Solution:
+The acceleration of an object moving in a circular path is the centripetal acceleration, which is given by a = v^2 / r, where v is the tangential velocity and r is the radius. First, we need to find the tangential velocity using the angular velocity: v = ω * r = 4 rad/s * 3 m = 12 m/s. Now we can calculate the centripetal acceleration: a = (12 m/s)^2 / 3 m = 48 m^2/ s^2 / 3 m = 16 m/s^2. The acceleration is always directed towards the center of the circle, which means it has only a negative y-component. Therefore, the acceleration vector at the point (3, 0) is [0i - 12j].
+
+Explanation:
+The problem asks for the acceleration vector, not just its magnitude. The direction of the acceleration in this case is crucial and determined by the circular motion.
+
+Common mistake note:
+A common mistake is to forget that the acceleration is always directed towards the center of the circle and thus has only a y-component.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+A car starts from rest and accelerates at 2 m/s^2. What is its velocity vector after 5 seconds?
+A) [10i]
+B) [25i]
+C) [50i]
+D) [100i]
+Correct Answer: B
+
+Solution:
+The velocity of an object that accelerates at a constant rate can be found using the formula v = u + a*t, where v is the final velocity, u is the initial velocity (which is 0 for this problem), a is the acceleration, and t is the time. Plugging in the values given: v = 0 + 2 m/s^2 * 5 s = 10 m/s. The velocity vector is in the direction of motion, which we'll assume to be along the x-axis. Therefore, the velocity vector after 5 seconds is [10i].
+
+Explanation:
+The problem asks for the velocity vector, not just its magnitude. Since the car starts from rest and accelerates in a straight line, the velocity will only have an x-component.
+
+Common mistake note:
+A common mistake is to forget that the initial velocity is 0 when starting from rest.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+An electron moving in a uniform electric field experiences an acceleration of 5e6 m/s^2. If its initial velocity is 3e5 m/s, what is the acceleration vector after 2 seconds?
+A) [11e5i + 10e5j]
+B) [8e5i + 5e5j]
+C) [14e5i + 2e5j]
+D) [16e5i - 2e5j]
+Correct Answer: C
+
+Solution:
+The acceleration of the electron is constant, so we can use the formula a = (v_f - v_i) / t to find the final velocity after 2 seconds. First, calculate the change in velocity: Δv = a*t = 5e6 m/s^2 * 2 s = 10e6 m/s. Now add this to the initial velocity to get the final velocity: v_f = v_i + Δv = 3e5 m/s + 10e6 m/s = 13e6 m/s. The acceleration vector remains constant, so it is [5e6i + 0j].
+
+Explanation:
+The problem asks for the acceleration vector, which remains constant in this case. The final velocity vector can be calculated using the change in velocity and initial velocity.
+
+Common mistake note:
+A common mistake is to assume that the acceleration changes over time, when it actually remains constant.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+A satellite orbits Earth at a distance of 4000 km from its center with an orbital period of 8 hours. What is the velocity vector of the satellite at its highest point in the orbit?
+A) [7960i + 0j]
+B) [0i - 7960j]
+C) [-7960i + 0j]
+D) [0i + 7960j]
+Correct Answer: A
+
+Solution:
+The velocity of a satellite in a circular orbit around Earth can be found using the formula v = 2πr/T, where v is the velocity, r is the radius of the orbit, and T is the orbital period. Plugging in the values given: v = (2π * 4000 km) / (8 hours * 3600 s/hour) ≈ 7960 m/s. The satellite's highest point in the orbit, called apogee, has a velocity vector that is tangential to the Earth's surface and points along the x-axis. Therefore, the velocity vector at this point is [7960i].
+
+Explanation:
+The problem asks for the velocity vector at the satellite's highest point, which is when it is farthest from Earth and moving horizontally.
+
+Common mistake note:
+A common mistake is to assume that the velocity vector points directly away from or towards Earth, but in a circular orbit, the velocity is always tangential to the orbit.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+An object slides down a frictionless inclined plane with an angle of 30°. If its initial velocity is 0 m/s and it accelerates at 2 m/s^2, what is its acceleration vector after 3 seconds?
+A) [18i + 9j]
+B) [6i + 3j]
+C) [6i - 3j]
+D) [18i - 9j]
+Correct Answer: C
+
+Solution:
+The acceleration of the object down the inclined plane is the sum of its acceleration due to gravity along the incline and its acceleration perpendicular to the incline. The acceleration due to gravity along the incline is given by a = g * sin(θ), where g is the acceleration due to gravity (9.81 m/s^2) and θ is the angle of inclination (30°). The acceleration perpendicular to the incline is 0 since there's no friction. First, calculate the acceleration along the incline: a = 9.81 m/s^2 * sin(30°) ≈ 4.91 m/s^2. Since the object accelerates at a constant rate of 2 m/s^2 in addition to this, its total acceleration is a_total = a + 2 m/s^2 = 4.91 m/s^2 + 2 m/s^2 ≈ 6.91 m/s^2. The acceleration vector has components along and perpendicular to the incline: [a_total * cos(30°), a_total * sin(30°)] ≈ [6i, 3j]. However, since the problem asks for the acceleration after 3 seconds, we need to calculate the final acceleration using the constant additional acceleration of 2 m/s^2: a_final = a + 2 m/s^2 * 3 s ≈ 18.91 m/s^2. The final acceleration vector is [a_final * cos(30°), a_final * sin(30°)] ≈ [6i - 3j].
+
+Explanation:
+The problem asks for the acceleration vector after 3 seconds, which requires calculating the total acceleration due to gravity and the constant additional acceleration.
+
+Common mistake note:
+A common mistake is to forget to consider the acceleration perpendicular to the incline, which is zero in this case.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+A pendulum swings back and forth with a period of 2 seconds. At its lowest point, the bob has a velocity of 3 m/s. What is the acceleration vector of the bob at this point?
+A) [0i - 19.6j]
+B) [0i + 19.6j]
+C) [19.6i + 0j]
+D) [-19.6i + 0j]
+Correct Answer: A
+
+Solution:
+The acceleration of a pendulum at its lowest point is the acceleration due to gravity, which acts vertically downward. Since the bob has reached its lowest point, its velocity vector is horizontal and perpendicular to the acceleration vector. Therefore, the acceleration vector is [0i - 9.8m/s^2 * 2] ≈ [0i - 19.6j].
+
+Explanation:
+The problem asks for the acceleration vector at the lowest point of the pendulum's swing, where it experiences only vertical acceleration due to gravity.
+
+Common mistake note:
+A common mistake is to assume that the acceleration vector has a horizontal component, but at the lowest point, it is purely vertical.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.10.2 Identify domain and range
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.10 Functions and Relations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One-to-One Function Domain):
+What is the domain of the function f(x) = x?
+A) [1, ∞)
+B) (-∞, 0]
+C) (-∞, ∞)
+D) (0, 1]
+Correct Answer: C
+
+Solution:
+The domain of a simple linear function like f(x) = x is all real numbers. Therefore, the correct answer is C: (-∞, ∞).
+
+Explanation:
+In this case, there are no restrictions on the input (x), so any value can be plugged into the function.
+
+Common mistake note:
+A common mistake would be to choose an interval that restricts the domain unnecessarily, like A or B. This happens when students forget that a simple linear function has no limitations on its inputs.
+------------------------------------------------------------------------------
+
+Problem 2 (Quadratic Function Range):
+What is the range of the quadratic function f(x) = x^2 - 3?
+A) [0, ∞)
+B) [-3, ∞)
+C) (-∞, ∞)
+D) [-3, 0]
+Correct Answer: B
+
+Solution:
+The range of a quadratic function in the form f(x) = x^2 + k (where k is a constant), is all values greater than or equal to the minimum point. The minimum point occurs at x = 0, so the range starts from the y-value at that point: f(0) = -3. Thus, the correct answer is B: [-3, ∞).
+
+Explanation:
+The graph of a quadratic function opens upwards, meaning it has a minimum value. The range represents all possible output values, which in this case starts from the minimum y-value and extends to infinity.
+
+Common mistake note:
+A common mistake would be to choose A: [0, ∞), as some students might forget that the quadratic function can take on negative values before reaching its minimum.
+------------------------------------------------------------------------------
+
+Problem 3 (Absolute Value Function Domain):
+What is the domain of the absolute value function f(x) = |x|?
+A) [0, ∞)
+B) [-1, 1]
+C) (-∞, ∞)
+D) [-∞, ∞]
+Correct Answer: C
+
+Solution:
+The domain of the absolute value function f(x) = |x| is all real numbers because the absolute value operation applies to any input. The correct answer is C: (-∞, ∞).
+
+Explanation:
+The absolute value function does not restrict inputs; it simply returns the non-negative value of its argument.
+
+Common mistake note:
+A common mistake would be to choose A or B, which represent intervals that limit the domain unnecessarily. This might happen when students misunderstand the nature of the absolute value operation.
+------------------------------------------------------------------------------
+
+Problem 4 (Piecewise Function Domain):
+What is the domain of the piecewise function f(x) = {x^2 if x < 0; x + 1 if x >= 0}?
+A) [0, ∞)
+B) (-∞, 0)
+C) [-1, ∞)
+D) (-∞, ∞)
+Correct Answer: D
+
+Solution:
+The domain of a piecewise function is the union of the domains of its individual pieces. For this function, the first piece has domain x < 0 and the second piece has domain x >= 0, which together cover all real numbers. The correct answer is D: (-∞, ∞).
+
+Explanation:
+The domain of a piecewise function is determined by considering where each piece is defined.
+
+Common mistake note:
+A common mistake would be to choose A or B, which represent intervals that only cover part of the domain. This might happen when students forget to consider both pieces of the piecewise function.
+------------------------------------------------------------------------------
+
+Problem 5 (Function with a Hole Domain):
+What is the domain of the function f(x) = (x^2 - 1)/(x - 1)?
+A) (-∞, 1) U (1, ∞)
+B) [0, ∞)
+C) [-1, ∞)
+D) (-∞, ∞)
+Correct Answer: A
+
+Solution:
+The domain of a rational function is all real numbers except those that make the denominator zero. In this case, x - 1 = 0 when x = 1, so the domain excludes x = 1. The correct answer is A: (-∞, 1) U (1, ∞).
+
+Explanation:
+A hole in a function's graph occurs at values that make both the numerator and denominator zero. Here, there's only a single value (x = 1) that makes the denominator zero, so it's the only restriction on the domain.
+
+Common mistake note:
+A common mistake would be to choose D: (-∞, ∞), which assumes that there are no restrictions on the input. This happens when students forget to check for values that make the denominator zero.
+------------------------------------------------------------------------------
+
+Problem 6 (Function with a Vertical Asymptote Range):
+What is the range of the function f(x) = 1/x?
+A) [-1, 1]
+B) (-∞, ∞)
+C) [0, ∞)
+D) (-∞, 0)
+Correct Answer: B
+
+Solution:
+The range of a rational function like f(x) = 1/x is all real numbers except for the value that makes the denominator zero. In this case, there are no such restrictions on the output, so the range is all real numbers. The correct answer is B: (-∞, ∞).
+
+Explanation:
+The range of a function with a vertical asymptote does not include the value at which the function approaches infinity or negative infinity; it includes all other values.
+
+Common mistake note:
+A common mistake would be to choose A, C, or D, which represent intervals that do not account for the full range of possible output values. This might happen when students focus on the behavior of the function near its asymptote and forget that it can take on any other value.
+------------------------------------------------------------------------------
+
+Problem 7 (Function with a Hole Range):
+What is the range of the function f(x) = (x^2 - 1)/(x - 1)?
+A) [0, ∞)
+B) [-1, 1]
+C) (-∞, ∞)
+D) (-∞, 0)
+Correct Answer: C
+
+Solution:
+The range of a rational function is determined by the behavior of its numerator and denominator. In this case, f(x) approaches infinity as x approaches 1 from either side (due to the hole in the graph), so there are no restrictions on the output other than that it cannot be zero (since the numerator never equals zero). The correct answer is C: (-∞, ∞).
+
+Explanation:
+The range of a function with a removable discontinuity does not include the value at which the function has a hole; it includes all other values.
+
+Common mistake note:
+A common mistake would be to choose A, B, or D, which represent intervals that do not account for the full range of possible output values. This might happen when students focus on the behavior of the function near its discontinuity and forget that it can take on any other value.
+------------------------------------------------------------------------------

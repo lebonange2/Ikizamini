@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.13.1",
+  "objective_text": "Define parametric equations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the definition of parametric equations?",
+      "choices": {
+        "A": "A set of functions that describe a curve in terms of one or more variables called parameters.",
+        "B": "Linear systems with two or more unknowns.",
+        "C": "Functions relating multiple variables to a single variable.",
+        "D": "Equations where the dependent variable is raised to a power of the independent variable."
+      },
+      "correct_choice": "A",
+      "solution": "Parametric equations are functions that represent a curve using one or more parameters. They describe relationships between variables using an additional parameter.",
+      "explanation": "Option A accurately defines parametric equations. Option B refers to linear systems, option C describes a different type of function, and option D is about power functions.",
+      "common_mistake_notes": "Common mistake: Choosing B, which is related to linear systems rather than parametric equations."
+    },
+    {
+      "id": "Qwerty",
+      "stem": "Which set of parametric equations represents a circle with radius r?",
+      "choices": {
+        "A": "(x = cos(t), y = sin(t))",
+        "B": "(x = t^2, y = 2t)",
+        "C": "(x = r*cos(θ), y = r*sin(θ))",
+        "D": "(x = e^t, y = ln(t))"
+      },
+      "correct_choice": "C",
+      "solution": "The parametric equations for a circle with radius r are (x = r*cos(θ), y = r*sin(θ)), where θ is the parameter representing angles in radians.",
+      "explanation": "Option C correctly represents a circle. Option A represents a unit circle, option B describes a parabola, and option D represents an exponential and logarithmic relationship.",
+      "common_mistake_notes": "Common mistake: Choosing A, which represents a unit circle rather than a circle with arbitrary radius."
+    },
+    {
+      "id": "Zxcv",
+      "stem": "What is the main purpose of using parametric equations?",
+      "choices": {
+        "A": "Simplifying complex functions into simpler forms.",
+        "B": "Representing curves that cannot be expressed as explicit functions.",
+        "C": "Efficiently solving systems of linear equations.",
+        "D": "Modeling discrete data points in statistical analyses."
+      },
+      "correct_choice": "B",
+      "solution": "Parametric equations are used to represent curves or surfaces that cannot be easily represented by explicit functions (y = f(x)). They offer greater flexibility for describing complex shapes.",
+      "explanation": "Option B accurately describes the primary purpose of parametric equations. Option A is not a main goal, option C refers to linear systems, and option D is related to statistics, not parametric equations.",
+      "common_mistake_notes": "Common mistake: Choosing A, which might be a side effect but not the primary reason for using parametric equations."
+    },
+    {
+      "id": "Sdfgh",
+      "stem": "In the parametric equation (x = t^2, y = t^3), what is the parameter?",
+      "choices": {
+        "A": "x",
+        "B": "y",
+        "C": "t",
+        "D": "r"
+      },
+      "correct_choice": "C",
+      "solution": "The parameter in this parametric equation is 't'. It varies to generate points on the curve.",
+      "explanation": "Option C is correct. Options A and B are dependent variables, option D is not used in these equations.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which are the dependent variables rather than the parameter."
+    },
+    {
+      "id": "Bnmj",
+      "stem": "Which of the following represents a parametric equation for a line?",
+      "choices": {
+        "A": "(x = 2t, y = 3t)",
+        "B": "(x = t^2, y = t^3)",
+        "C": "(x = e^t, y = ln(t))",
+        "D": "(x = cos(θ), y = sin(θ))"
+      },
+      "correct_choice": "A",
+      "solution": "The parametric equations for a line can be written as (x = at + b, y = ct + d) with constants a, b, c, and d. Option A fits this form with a = 2, b = 0, c = 3, and d = 0.",
+      "explanation": "Option A correctly represents a line. Option B describes a parabola, option C is an exponential and logarithmic relationship, and option D represents a circle.",
+      "common_mistake_notes": "Common mistake: Choosing B, which describes a parabola rather than a line."
+    },
+    {
+      "id": "Ghjk",
+      "stem": "What advantage do parametric equations have over explicit forms?",
+      "choices": {
+        "A": "Easier integration for arc length calculations.",
+        "B": "Simpler expressions for derivatives in all cases.",
+        "C": "Straightforward solutions to systems of equations.",
+        "D": "Single equation describing multiple variables."
+      },
+      "correct_choice": "A",
+      "solution": "Parametric equations can make integration easier, particularly for finding arc length or surface area, when explicit forms are not available.",
+      "explanation": "Option A accurately describes an advantage. Options B and C are not unique advantages of parametric equations, option D is a general property but not specific to parametric ones.",
+      "common_mistake_notes": "Common mistake: Choosing B, which might be true in some cases but is not a primary advantage of parametric equations."
+    },
+    {
+      "id": "Bvnm",
+      "stem": "The parametric equation (x = 2cos(t), y = 3sin(t)) describes which type of curve?",
+      "choices": {
+        "A": "Circle",
+        "B": "Parabola",
+        "C": "Ellipse",
+        "D": "Hyperbola"
+      },
+      "correct_choice": "A",
+      "solution": "The equations (x = a*cos(t), y = b*sin(t)) describe a circle with radius sqrt(a^2 + b^2). In this case, the curve is a circle since a = 2 and b = 3.",
+      "explanation": "Option A correctly identifies the curve. Option B describes a parabola, option C represents an ellipse, and option D refers to a hyperbola.",
+      "common_mistake_notes": "Common mistake: Choosing C, which would require different coefficients for x and y (unequal a and b) to form an ellipse."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.14.14 Find intersections of polar curves
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.14 Polar Coordinates
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Find the points of intersection between the polar curves r = 2cosθ and r = 3sinθ. Which of the following is a correct point of intersection?
+A) (0, 0)
+B) (1, π/4)
+C) (sqrt(5), π/6)
+D) (sqrt(6)/2, π/3)
+Correct Answer: D
+
+Solution:
+To find the points of intersection between two polar curves, set their equations equal to each other. 2cosθ = 3sinθ. Rewrite as 2cosθ = 3√(1-cos²θ) using sin²θ + cos²θ = 1. Solve for cosθ: cosθ = 0 or √(3/5). For cosθ = 0, θ = π/2; for cosθ = √(3/5), θ = arccos(√(3/5)). Plug values back into equations to find corresponding r values. Correct point: (r, θ) = (√6/2, π/3).
+
+Explanation:
+Common mistake: Assuming only one value for θ leads to a single intersection when there are actually two.
+
+Common mistake note:
+Misinterpreting the range of θ can lead to considering points outside valid interval.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Find the points of intersection between r = 4sinθ and r = 2 + 2cosθ. Which is NOT a correct point of intersection?
+A) (0, π)
+B) (2√3, π/6)
+C) (2, π/2)
+D) (2, 5π/6)
+Correct Answer: B
+
+Solution:
+Set r = 4sinθ equal to r = 2 + 2cosθ: 4sinθ = 2 + 2cosθ. Rearrange: 4sinθ - 2cosθ = 2. Rewrite as √16(1-cos²θ) - 2cosθ = 2, simplify: 4√(1-cos²θ) = 2 + 2cosθ. Square both sides, solve for cosθ: cosθ = -1/2 or 0. For cosθ = -1/2, θ = 2π/3 or 4π/3; for cosθ = 0, θ = π/2. Plug values back into equations to find corresponding r values. Correct points: (r, θ) = (2√3, 2π/3), (2, π/2), and (2, 4π/3). Incorrect point: (2√3, π/6).
+
+Explanation:
+Common mistake: Misinterpreting the range of θ or mixing up cosθ values.
+
+Common mistake note:
+Misinterpreting the range of θ can lead to considering points outside valid interval.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Find the intersection(s) between r = 1 + sinθ and r = 2cosθ. Which point is NOT an intersection?
+A) (0, π/2)
+B) (1, 0)
+C) (sqrt(3)/2, π/6)
+D) (sqrt(5)/2, π/3)
+Correct Answer: D
+
+Solution:
+Set r = 1 + sinθ equal to r = 2cosθ: 1 + sinθ = 2cosθ. Rearrange: sinθ - 2cosθ = -1. Rewrite as √(1-cos²θ) - 2cosθ = -1, simplify: √(1-cos²θ) = -1 + 2cosθ. Square both sides, solve for cosθ: cosθ = 0 or 1/4. For cosθ = 0, θ = π/2; for cosθ = 1/4, θ = arccos(1/4). Plug values back into equations to find corresponding r values. Correct points: (r, θ) = (0, π/2) and (√(15)/4, arccos(1/4)). Incorrect point: (√(5)/2, π/3).
+
+Explanation:
+Common mistake: Misinterpreting the range of θ or mixing up cosθ values.
+
+Common mistake note:
+Misinterpreting the range of θ can lead to considering points outside valid interval.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Find the intersection(s) between r = 3sinθ and r = 2 + 4cosθ. Which point is NOT an intersection?
+A) (0, π)
+B) (6, 0)
+C) (2√5, π/3)
+D) (2, π/2)
+Correct Answer: C
+
+Solution:
+Set r = 3sinθ equal to r = 2 + 4cosθ: 3sinθ = 2 + 4cosθ. Rearrange: 3sinθ - 4cosθ = 2. Rewrite as √9(1-cos²θ) - 4cosθ = 2, simplify: 3√(1-cos²θ) = 2 + 4cosθ. Square both sides, solve for cosθ: cosθ = -1 or 1/5. For cosθ = -1, θ = π; for cosθ = 1/5, θ = arccos(1/5). Plug values back into equations to find corresponding r values. Correct points: (r, θ) = (0, π) and (6, arccos(1/5)). Incorrect point: (2√5, π/3).
+
+Explanation:
+Common mistake: Misinterpreting the range of θ or mixing up cosθ values.
+
+Common mistake note:
+Misinterpreting the range of θ can lead to considering points outside valid interval.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Find the intersection( ) between r = 2sin(2θ) and r = 4cosθ. Which point is NOT an intersection?
+A) (0, π/2)
+B) (2, 0)
+C) (sqrt(3), π/6)
+D) (2√2, π/4)
+Correct Answer: C
+
+Solution:
+Set r = 2sin(2θ) equal to r = 4cosθ: 2sin(2θ) = 4cosθ. Divide by 2: sin(2θ) = 2cosθ. Simplify: 2sinθcosθ = 2cosθ, implying sinθ = 1 (since cosθ ≠ 0). Thus, θ = π/2. Plug θ = π/2 into equations to find corresponding r value: r = 4cos(π/2) = 0. Correct point: (r, θ) = (0, π/2). Incorrect point: (√3, π/6).
+
+Explanation:
+Common mistake: Assuming multiple intersection points or misapplying trigonometric identities.
+
+Common mistake note:
+Assuming multiple intersections can result from overlooking sinθ = 1 has only one solution.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Find the intersection( ) between r = 5sin(3θ) and r = 3cos(2θ). Which point is NOT an intersection?
+A) (0, π/6)
+B) (15/4, 0)
+C) (3√3, π/4)
+D) (9/2, π/3)
+Correct Answer: C
+
+Solution:
+Set r = 5sin(3θ) equal to r = 3cos(2θ): 5sin(3θ) = 3cos(2θ). Rewrite as 5√(1-cos²(3θ)) = 3√(1 + cos(4θ)). Square both sides, simplify: 25 - 25cos²(3θ) = 9 - 9cos(4θ). Solve for cos(4θ): cos(4θ) = 8/9. For cos(4θ) = 8/9, θ = arccos(8√(1-cos²(3θ))/27)/4. Plug θ into equations to find corresponding r values. Correct points: (r, θ) = (0, π/6) and (15/4, arccos(8√(1-cos²(3θ))/27)/4). Incorrect point: (3√3, π/4).
+
+Explanation:
+Common mistake: Misapplying trigonometric identities or overlooking simplification steps.
+
+Common mistake note:
+Misapplying trigonometric identities can lead to incorrect solutions.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Find the intersection( ) between r = 2sinθ + 3cosθ and r = 4sinθ - cosθ. Which point is NOT an intersection?
+A) (0, π/2)
+B) (5, 0)
+C) (2√2, π/4)
+D) (1, π/6)
+Correct Answer: D
+
+Solution:
+Set r = 2sinθ + 3cosθ equal to r = 4sinθ - cosθ: 2sinθ + 3cosθ = 4sinθ - cosθ. Rearrange: 4sinθ - 2sinθ - 3cosθ + cosθ = 0, simplify: 2sinθ - 2cosθ = 0. Divide by 2: sinθ - cosθ = 0. Thus, θ = π/4. Plug θ = π/4 into equations to find corresponding r value: r = 2sin(π/4) + 3cos(π/4) = 2√2. Correct point: (r, θ) = (2√2, π/4). Incorrect point: (1, π/6).
+
+Explanation:
+Common mistake: Assuming multiple intersection points or misapplying trigonometric identities.
+
+Common mistake note:
+Assuming multiple intersections can result from overlooking sinθ - cosθ = 0 has only one solution.
+------------------------------------------------------------------------------

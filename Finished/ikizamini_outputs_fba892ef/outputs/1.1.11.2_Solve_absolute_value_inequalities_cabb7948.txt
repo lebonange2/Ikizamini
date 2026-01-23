@@ -1,0 +1,290 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.11.2 Solve absolute value inequalities
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.11 Absolute Value Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Ineq1):
+Solve the inequality: |3x - 4| < 7.
+A) -∞ < x < ∞
+B) -< x < 5
+C) &frac{3}{7} < x < &frac{11}{3}
+D) x < -&frac{1}{3} or x > 5
+Correct Answer: C
+
+Solution:
+To solve the inequality |3x - 4| < 7, we consider two cases: when 3x - 4 is positive and when it's negative.
+
+Case 1: 3x - 4 ≥ 0
+3x ≥ 4
+x ≥ &frac{4}{3}
+
+Case 2: 3x - 4 < 0
+3x < 4
+x < &frac{4}{3}
+
+Now, solve for each case:
+
+For Case 1: |3x - 4| < 7 becomes 3x - 4 < 7
+3x < 11
+x < &frac{11}{3}
+Combining with x ≥ &frac{4}{3}, we get &frac{4}{3} ≤ x < &frac{11}{3}
+
+For Case 2: |3x - 4| < 7 becomes -(3x - 4) < 7
+-3x + 4 < 7
+-3x < 3
+x > -&frac{3}{3}
+Combining with x < &frac{4}{3}, we get -&frac{3}{3} < x < &frac{4}{3}
+
+The combined solution is: -&frac{1}{3} < x < &frac{11}{3}
+
+Explanation:
+Choice C correctly represents the interval where the inequality holds true.
+
+Common mistake note:
+A common mistake is to forget to consider both cases (when 3x - 4 is positive and negative), which leads to an incomplete or incorrect solution.
+------------------------------------------------------------------------------
+
+Problem 2 (Ineq2):
+Solve the inequality: |5x + 7| ≥ 12.
+A) x ≥ -&frac{5}{3} or x ≤ -&frac{19}{5}
+B) x < -&frac{5}{3} or x > -&frac{19}{5}
+C) x ≥ -&frac{19}{5} or x ≤ -&frac{5}{3}
+D) x < -&frac{19}{5} or x > -&frac{5}{3}
+Correct Answer: C
+
+Solution:
+To solve the inequality |5x + 7| ≥ 12, we consider two cases: when 5x + 7 is non-negative and when it's negative.
+
+Case 1: 5x + 7 ≤ 0
+5x ≤ -7
+x ≤ -&frac{7}{5}
+
+Case 2: 5x + 7 > 0
+5x > -7
+x > -&frac{7}{5}
+
+Now, solve for each case:
+
+For Case 1: |5x + 7| ≥ 12 becomes 5x + 7 ≥ 12
+5x ≥ 5
+x ≥ 1
+Since x must also be less than or equal to -&frac{7}{5}, the solution for this case is x = 1 (only one value)
+
+For Case 2: |5x + 7| ≥ 12 becomes -(5x + 7) ≥ 12
+-5x - 7 ≥ 12
+-5x ≥ 19
+x ≤ -&frac{19}{5}
+Since x must also be greater than -&frac{7}{5}, the solution for this case is -&frac{7}{5} < x ≤ -&frac{19}{5}
+
+The combined solution is: x = 1 or -&frac{7}{5} < x ≤ -&frac{19}{5}
+
+Explanation:
+Choice C correctly represents the interval where the inequality holds true, including the single value solution at x = 1.
+
+Common mistake note:
+A common mistake is to forget that when solving for a non-negative case, there might be only one specific value (in this case, x = 1) instead of an interval.
+------------------------------------------------------------------------------
+
+Problem 3 (Ineq3):
+Solve the inequality: |2x - 6| < 4.
+A) &frac{5}{2} < x < &frac{7}{2}
+B) &frac{1}{2} < x < &frac{3}{2}
+C) x < -&frac{5}{2} or x > &frac{7}{2}
+D) x < -&frac{1}{2} or x > &frac{3}{2}
+Correct Answer: A
+
+Solution:
+To solve the inequality |2x - 6| < 4, we consider two cases: when 2x - 6 is positive and when it's negative.
+
+Case 1: 2x - 6 ≥ 0
+2x ≥ 6
+x ≥ 3
+
+Case 2: 2x - 6 < 0
+2x < 6
+x < 3
+
+Now, solve for each case:
+
+For Case 1: |2x - 6| < 4 becomes 2x - 6 < 4
+2x < 10
+x < 5
+Combining with x ≥ 3, we get 3 ≤ x < 5
+
+For Case 2: |2x - 6| < 4 becomes -(2x - 6) < 4
+-2x + 6 < 4
+-2x < -2
+x > 1
+Combining with x < 3, we get 1 < x < 3
+
+The combined solution is: 1 < x < 5, which simplifies to &frac{1}{2} < x < &frac{5}{2}
+
+Explanation:
+Choice A correctly represents the interval where the inequality holds true.
+
+Common mistake note:
+A common mistake is to forget that when combining solutions from both cases, we must keep the smaller upper bound and the larger lower bound.
+------------------------------------------------------------------------------
+
+Problem 4 (Ineq4):
+Solve the inequality: |3x + 1| ≥ 9.
+A) x ≥ -&frac{8}{3} or x ≤ -&frac{10}{3}
+B) x < -&frac{8}{3} or x > -&frac{10}{3}
+C) x ≥ -&frac{10}{3} or x ≤ -&frac{8}{3}
+D) x < -&frac{10}{3} or x > -&frac{8}{3}
+Correct Answer: C
+
+Solution:
+To solve the inequality |3x + 1| ≥ 9, we consider two cases: when 3x + 1 is non-negative and when it's negative.
+
+Case 1: 3x + 1 ≤ 0
+3x ≤ -1
+x ≤ -&frac{1}{3}
+
+Case 2: 3x + 1 > 0
+3x > -1
+x > -&frac{1}{3}
+
+Now, solve for each case:
+
+For Case 1: |3x + 1| ≥ 9 becomes 3x + 1 ≥ 9
+3x ≥ 8
+x ≥ &frac{8}{3}
+Since x must also be less than or equal to -&frac{1}{3}, the solution for this case is x = -&frac{1}{3} (only one value)
+
+For Case 2: |3x + 1| ≥ 9 becomes -(3x + 1) ≥ 9
+-3x - 1 ≥ 9
+-3x ≥ 10
+x ≤ -&frac{10}{3}
+Since x must also be greater than -&frac{1}{3}, the solution for this case is -&frac{1}{3} < x ≤ -&frac{10}{3}
+
+The combined solution is: x = -&frac{1}{3} or -&frac{1}{3} < x ≤ -&frac{10}{3}
+
+Explanation:
+Choice C correctly represents the interval where the inequality holds true, including the single value solution at x = -&frac{1}{3}.
+
+Common mistake note:
+A common mistake is to forget that when solving for a non-negative case, there might be only one specific value (in this case, x = -&frac{1}{3}) instead of an interval.
+------------------------------------------------------------------------------
+
+Problem 5 (Ineq5):
+Solve the inequality: |4x - 8| < 6.
+A) &frac{1}{2} < x < &frac{7}{2}
+B) &frac{-1}{2} < x < &frac{5}{2}
+C) x < -&frac{1}{2} or x > &frac{5}{2}
+D) x < -&frac{-1}{2} or x > &frac{7}{2}
+Correct Answer: A
+
+Solution:
+To solve the inequality |4x - 8| < 6, we consider two cases: when 4x - 8 is positive and when it's negative.
+
+Case 1: 4x - 8 ≥ 0
+4x ≥ 8
+x ≥ 2
+
+Case 2: 4x - 8 < 0
+4x < 8
+x < 2
+
+Now, solve for each case:
+
+For Case 1: |4x - 8| < 6 becomes 4x - 8 < 6
+4x < 14
+x < &frac{7}{2}
+Combining with x ≥ 2, we get 2 ≤ x < &frac{7}{2}
+
+For Case 2: |4x - 8| < 6 becomes -(4x - 8) < 6
+-4x + 8 < 6
+-4x < -2
+x > &frac{1}{2}
+Combining with x < 2, we get &frac{1}{2} < x < 2
+
+The combined solution is: &frac{1}{2} < x < &frac{7}{2}
+
+Explanation:
+Choice A correctly represents the interval where the inequality holds true.
+
+Common mistake note:
+A common mistake is to forget that when combining solutions from both cases, we must keep the smaller upper bound and the larger lower bound.
+------------------------------------------------------------------------------
+
+Problem 6 (Ineq6):
+Solve the inequality: |x + 5| ≥ 10.
+A) x ≥ -5 or x ≤ -15
+B) x < -5 or x > -15
+C) x ≥ -15 or x ≤ -5
+D) x < -15 or x > -5
+Correct Answer: C
+
+Solution:
+To solve the inequality |x + 5| ≥ 10, we consider two cases: when x + 5 is non-negative and when it's negative.
+
+Case 1: x + 5 ≤ 0
+x ≤ -5
+
+Case 2: x + 5 > 0
+x > -5
+
+Now, solve for each case:
+
+For Case 1: |x + 5| ≥ 10 becomes x + 5 ≥ 10
+x ≥ 5
+Since x must also be less than or equal to -5, the solution for this case is x = -5 (only one value)
+
+For Case 2: |x + 5| ≥ 10 becomes -(x + 5) ≥ 10
+-x - 5 ≥ 10
+-x ≥ 15
+x ≤ -15
+Since x must also be greater than -5, the solution for this case is -5 < x ≤ -15
+
+The combined solution is: x = -5 or -5 < x ≤ -15
+
+Explanation:
+Choice C correctly represents the interval where the inequality holds true, including the single value solution at x = -5.
+
+Common mistake note:
+A common mistake is to forget that when solving for a non-negative case, there might be only one specific value (in this case, x = -5) instead of an interval.
+------------------------------------------------------------------------------
+
+Problem 7 (Ineq7):
+Solve the inequality: |2x - 3| < 9.
+A) &frac{-3}{2} < x < &frac{15}{2}
+B) &frac{-15}{2} < x < &frac{3}{2}
+C) x < -&frac{15}{2} or x > &frac{3}{2}
+D) x < -&frac{-3}{2} or x > &frac{15}{2}
+Correct Answer: A
+
+Solution:
+To solve the inequality |2x - 3| < 9, we consider two cases: when 2x - 3 is positive and when it's negative.
+
+Case 1: 2x - 3 ≥ 0
+2x ≥ 3
+x ≥ &frac{3}{2}
+
+Case 2: 2x - 3 < 0
+2x < 3
+x < &frac{3}{2}
+
+Now, solve for each case:
+
+For Case 1: |2x - 3| < 9 becomes 2x - 3 < 9
+2x < 12
+x < 6
+Combining with x ≥ &frac{3}{2}, we get &frac{3}{2} ≤ x < 6
+
+For Case 2: |2x - 3| < 9 becomes -(2x - 3) < 9
+-2x + 3 < 9
+-2x < 6
+x > -3
+Combining with x < &frac{3}{2}, we get -3 < x < &frac{3}{2}
+
+The combined solution is: -3 < x < 6, which simplifies to &frac{-3}{2} < x < &frac{15}{2}
+
+Explanation:
+Choice A correctly represents the interval where the inequality holds true.
+
+Common mistake note:
+A common mistake is to forget that when combining solutions from both cases, we must keep the smaller upper bound and the larger lower bound.
+------------------------------------------------------------------------------

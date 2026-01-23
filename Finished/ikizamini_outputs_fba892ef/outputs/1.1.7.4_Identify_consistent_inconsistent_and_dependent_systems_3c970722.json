@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.7.4",
+  "objective_text": "Identify consistent, inconsistent, and dependent systems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Q1",
+      "stem": "What is the difference between a consistent, inconsistent, and dependent system?",
+      "choices": {
+        "A": "Consistent systems have exactly one solution. Inconsistent systems have no solutions. Dependent systems have infinitely many solutions.",
+        "B": "Dependent systems have exactly one solution. Inconsistent systems have no solutions. Consistent systems have infinitely many solutions.",
+        "C": "Inconsistent systems have no solutions. Consistent systems have exactly one solution. Dependent systems have infinitely many solutions.",
+        "D": "Consistent systems have at least one solution. Inconsistent systems have no solutions. Dependent systems have exactly one solution."
+      },
+      "correct_choice": "C",
+      "solution": "A consistent system has exactly one solution, an inconsistent system has no solutions, and a dependent system has infinitely many solutions because the equations are redundant.",
+      "explanation": "The key to understanding this concept is recognizing that dependent systems behave like consistent systems when solving for one variable, but they actually represent the same line and thus have infinitely many solutions.",
+      "common_mistake_notes": "Common mistake: Confusing dependent systems with consistent systems. Dependent systems are not consistent because they represent the same line."
+    },
+    {
+      "id": "Q2",
+      "stem": "[1]: 2x + 3y = 7\n[2]: 4x + 6y = 14",
+      "choices": {
+        "A": "[1] only",
+        "B": "[2] only",
+        "C": "Both [1] and [2]",
+        "D": "None of the systems are consistent."
+      },
+      "correct_choice": "A",
+      "solution": "System [1] has a unique solution (x = 1, y = 1), while system [2] is just twice equation [1], making it dependent. Therefore, only system [1] is consistent.",
+      "explanation": "To check for consistency, we can try to solve the systems. System [1] has a unique solution, while system [2] is dependent because it represents the same line as [1].",
+      "common_mistake_notes": "Common mistake: Assuming that having similar equations means they are either both consistent or both inconsistent. It's possible for one to be consistent and the other dependent."
+    },
+    {
+      "id": "Q3",
+      "stem": "[1]: 3x - 2y = 5\n[2]: 6x - 4y = 10",
+      "choices": {
+        "A": "[1] only",
+        "B": "[2] only",
+        "C": "Both [1] and [2]",
+        "D": "None of the systems are inconsistent."
+      },
+      "correct_choice": "C",
+      "solution": "Both equations in the system represent parallel lines, so they have no solutions. Thus, the system is inconsistent.",
+      "explanation": "To identify an inconsistent system, we can check if the lines represented by the equations are parallel. In this case, the slopes of both lines are equal but the y-intercepts differ, making them parallel and having no intersection point.",
+      "common_mistake_notes": "Common mistake: Assuming that having different constants means the system is independent. The key is to check if the lines are parallel or not."
+    },
+    {
+      "id": "Q4",
+      "stem": "[1]: 5x - 3y = 7\n[2]: 10x - 6y = 14",
+      "choices": {
+        "A": "[1] only",
+        "B": "[2] only",
+        "C": "Both [1] and [2]",
+        "D": "None of the systems are dependent."
+      },
+      "correct_choice": "C",
+      "solution": "Both equations in the system represent the same line, so they are dependent (infinitely many solutions).",
+      "explanation": "To identify a dependent system, we can check if one equation is a multiple of the other. In this case, [2] is twice equation [1], making them dependent.",
+      "common_mistake_notes": "Common mistake: Assuming that having different constants means the system is independent. The key is to check for linear dependence between the equations."
+    },
+    {
+      "id": "Q5",
+      "stem": "What does it mean when a system of linear equations has no solution?",
+      "choices": {
+        "A": "The system is inconsistent",
+        "B": "The system is consistent",
+        "C": "The system is dependent",
+        "D": "There is not enough information to determine"
+      },
+      "correct_choice": "A",
+      "solution": "A system with no solution is called inconsistent, meaning the lines represented by the equations do not intersect.",
+      "explanation": "An inconsistent system occurs when the lines are parallel and never intersect. This results in no common point of intersection, hence no solution.",
+      "common_mistake_notes": "Common mistake: Confusing dependent systems with inconsistent ones. Dependent systems have infinitely many solutions, while inconsistent systems have none."
+    },
+    {
+      "id": "Q6",
+      "stem": "If a system of linear equations has infinitely many solutions, what does this indicate?",
+      "choices": {
+        "A": "The system is inconsistent",
+        "B": "The system is consistent",
+        "C": "The system is dependent",
+        "D": "There is not enough information to determine"
+      },
+      "correct_choice": "C",
+      "solution": "A system with infinitely many solutions is called dependent, meaning the lines represented by the equations are identical or overlap.",
+      "explanation": "Dependent systems occur when one equation can be derived from another, resulting in multiple points of intersection (infinitely many).",
+      "common_mistake_notes": "Common mistake: Confusing consistent systems with dependent ones. Consistent systems have exactly one solution, while dependent systems have infinitely many."
+    },
+    {
+      "id": "Q7",
+      "stem": "What does it mean when a system of linear equations has exactly one solution?",
+      "choices": {
+        "A": "The system is inconsistent",
+        "B": "The system is consistent",
+        "C": "The system is dependent",
+        "D": "There is not enough information to determine"
+      },
+      "correct_choice": "B",
+      "solution": "A system with exactly one solution is called consistent, meaning the lines represented by the equations intersect at a single point.",
+      "explanation": "Consistent systems occur when the lines represented by the equations intersect at a single point, resulting in a unique solution for x and y.",
+      "common_mistake_notes": "Common mistake: Confusing dependent systems with consistent ones. Dependent systems have infinitely many solutions, while consistent systems have exactly one."
+    }
+  ]
+}

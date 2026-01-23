@@ -13,7 +13,8 @@ Requirements:
   pip install openai jsonschema
 
 Usage:
-    python3 ikizamini_app.py --input Uru.txt --output ikizamini.txt --output-dir "output/MATHEMATICS/1.1 Algebra and Trigonometry"
+    python3 ikizamini_app.py --input Uru.txt --output ikizamini.txt --output-dir out_ikizamini
+
 """
 
 from __future__ import annotations
@@ -618,7 +619,7 @@ def main() -> int:
     ap.add_argument("--output", required=True, help="Path to master .txt output file (contains ALL objectives)")
     ap.add_argument("--output-dir", default="", help="Optional: directory for per-objective .txt files")
     ap.add_argument("--index-file", default="index.txt", help="Index filename inside --output-dir (only if output-dir is used)")
-    ap.add_argument("--model", default="gpt-5.2", help="OpenAI model (default: gpt-5.2)")
+    ap.add_argument("--model", default="gpt-4o", help="OpenAI model (default: gpt-4o)")
     ap.add_argument("--max-rounds", type=int, default=5, help="Max repair/review rounds per objective (default: 5)")
     ap.add_argument("--limit", type=int, default=0, help="Only process first N learning objectives (0 = all)")
     args = ap.parse_args()

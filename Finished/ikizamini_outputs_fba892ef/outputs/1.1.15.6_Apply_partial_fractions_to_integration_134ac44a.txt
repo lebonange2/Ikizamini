@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.15.6 Apply partial fractions to integration
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.15 Partial Fractions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Integrate the function: ∫(2x + 3)/(x^2 + 4) dx
+A) (2ln|x| - 1/(x+2)) + C
+B) (2ln|x| - 1/(x-2)) + C
+C) (ln|x^2 + 4| - 1/(x+2)) + C
+D) (ln|x^2 + 4| - 1/(x-2)) + C
+Correct Answer: C
+
+Solution:
+The given function can be decomposed into partial fractions as A/(x+2) + B/(x-2). Solving for A and B, we get A = 1, B = -1. The integral becomes ∫(1/(x+2) - 1/(x-2)) dx which simplifies to ln|x+2| - ln|x-2| + C. Converting this to a single logarithm gives us ln|(x+2)/(x-2)| + C, which is equivalent to ln|x^2 + 4| - ln|x^2 - 4| + C. Since x^2 - 4 can be factored into (x-2)(x+2), the second term simplifies to -ln|(x-2)(x+2)| = -ln|x-2| - ln|x+2|. Adding these together gives us the correct answer: (ln|x^2 + 4| - 1/(x-2)) + C.
+
+Explanation:
+The key step is correctly decomposing the fraction into partial fractions and integrating each part separately.
+
+Common mistake note:
+A common mistake is to forget to simplify the logarithms after integration, leading to an incorrect answer with ln|x+2| - ln|x-2| + C instead of the simplified form.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Integrate the function: ∫(4x^2 + 3x - 1)/(x^3 + x) dx
+A) (4/3)ln|x| + (3/2)x^2 - x + C
+B) (4/3)ln|x| + (3/2)x^2 + x + C
+C) (4/3)ln|x+1| + (3/2)x^2 - x + C
+D) (4/3)ln|x+1| + (3/2)x^2 + x + C
+Correct Answer: C
+
+Solution:
+The given function can be factored as 4x^2 + 3x - 1 = (x^2 + x)(4x - 1), and the denominator is x(x^2 + 1). The partial fraction decomposition is A/x + B/(x+1) + C/(4x-1). Solving for A, B, and C, we get A = 4/3, B = -1/3, and C = 1/3. Integrating each part gives us (4/3)ln|x| - (1/3)ln|x+1| + (1/3)ln|4x-1| + C. Since ln|4x-1| can be rewritten as ln|2(2x-1)| = ln|2| + ln|x+1|, the simplified integral is (4/3)ln|x+1| + (3/2)x^2 - x + C.
+
+Explanation:
+The key step is to correctly factor the numerator and denominator and solve for the coefficients in the partial fraction decomposition.
+
+Common mistake note:
+A common mistake is to forget to simplify the logarithms after combining them, leading to an incorrect answer with (4/3)ln|x| - (1/3)ln|x+1| + (1/3)ln|4x-1| + C instead of the simplified form.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Integrate the function: ∫(5x^2 + 7x + 9)/(x(x^2 + 1)) dx
+A) (5/3)x^2 + (7/4)ln|x| + 9x + C
+B) (5/3)x^2 - (7/4)ln|x| + 9x + C
+C) (5/3)x^2 + (7/4)ln|x+1| + 9x + C
+D) (5/3)x^2 - (7/4)ln|x+1| + 9x + C
+Correct Answer: A
+
+Solution:
+The given function can be decomposed into partial fractions as A/x + B/(x^2 + 1). Solving for A and B, we get A = 5/3, B = -7/4. Integrating each part gives us (5/3)x^2 - (7/4)ln|x^2 + 1| + C. Since ln|x^2 + 1| cannot be simplified further, this is the final answer.
+
+Explanation:
+The key step is to correctly decompose the fraction and integrate each part separately.
+
+Common mistake note:
+A common mistake is to try to simplify ln|x^2 + 1| further, which is not possible without using more advanced techniques like trigonometric substitution.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Integrate the function: ∫(3x - 5)/(x(x-1)(x+2)) dx
+A) (1/2)ln|x| + (1/3)ln|x-1| - (1/5)ln|x+2| + C
+B) (1/2)ln|x| - (1/3)ln|x-1| - (1/5)ln|x+2| + C
+C) (1/2)ln|x| + (1/3)ln|x-1| + (1/5)ln|x+2| + C
+D) (1/2)ln|x| - (1/3)ln|x-1| + (1/5)ln|x+2| + C
+Correct Answer: A
+
+Solution:
+The given function can be decomposed into partial fractions as A/x + B/(x-1) + C/(x+2). Solving for A, B, and C, we get A = 5/6, B = -7/6, and C = 1/3. Integrating each part gives us (5/6)ln|x| - (7/6)ln|x-1| + (1/3)ln|x+2| + C.
+
+Explanation:
+The key step is to correctly decompose the fraction and integrate each part separately.
+
+Common mistake note:
+A common mistake is to forget to multiply the constants by the respective denominators when solving for A, B, and C, leading to incorrect coefficients in the partial fractions.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Integrate the function: ∫(2x^3 + 4x^2 - 6)/(x^4 + 1) dx
+A) (2/5)x^4 - (8/7)arctan(x) - (6/5)x + C
+B) (2/5)x^4 + (8/7)arctan(x) - (6/5)x + C
+C) (2/5)x^4 - (8/7)arctan(x) + (6/5)x + C
+D) (2/5)x^4 + (8/7)arctan(x) + (6/5)x + C
+Correct Answer: A
+
+Solution:
+The given function has a denominator that cannot be factored further, so we use partial fractions with trigonometric substitution. Let x = tan(θ), dx = sec^2(θ)dθ. The integral becomes ∫((2tan^3(θ) + 4tan^2(θ) - 6)/(sec^4(θ)))sec^2(θ)dθ = ∫(2sin^3(θ) + 4sin^2(θ) - 6cos^2(θ))dθ. Integrating each term gives us (2/5)sin^4(θ) - (8/7)arctan(sin(θ)) - (6/5)cos(θ)dθ. Substituting back x = tan(θ), we get (2/5)x^4 - (8/7)arctan(x) - (6/5)x + C.
+
+Explanation:
+The key step is to recognize that the denominator cannot be factored and use a trigonometric substitution.
+
+Common mistake note:
+A common mistake is to try to decompose the fraction into partial fractions without realizing that it requires a trigonometric substitution, leading to an incorrect integral.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Integrate the function: ∫(x^2 + 3)/(x(x^2 + 1)) dx
+A) (1/3)x^3 - (1/2)ln|x| + (1/2)arctan(x) + C
+B) (1/3)x^3 + (1/2)ln|x| + (1/2)arctan(x) + C
+C) (1/3)x^3 - (1/2)ln|x| - (1/2)arctan(x) + C
+D) (1/3)x^3 + (1/2)ln|x| - (1/2)arctan(x) + C
+Correct Answer: B
+
+Solution:
+The given function can be decomposed into partial fractions as A/x + B/(x^2 + 1). Solving for A and B, we get A = 1/3, B = -1/2. Integrating each part gives us (1/3)x^3 - (1/2)ln|x^2 + 1| + C. Since ln|x^2 + 1| cannot be simplified further, this is the final answer.
+
+Explanation:
+The key step is to correctly decompose the fraction and integrate each part separately.
+
+Common mistake note:
+A common mistake is to try to simplify ln|x^2 + 1| further, which is not possible without using more advanced techniques like trigonometric substitution.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Integrate the function: ∫(6x - 9)/(x(x-3)^2) dx
+A) (6/5)x^2 + (9/4)(ln|x| - ln|x-3|) - (9/2)(1/(x-3)) + C
+B) (6/5)x^2 - (9/4)(ln|x| - ln|x-3|) - (9/2)(1/(x-3)) + C
+C) (6/5)x^2 + (9/4)(ln|x| - ln|x-3|) + (9/2)(1/(x-3)) + C
+D) (6/5)x^2 - (9/4)(ln|x| - ln|x-3|) + (9/2)(1/(x-3)) + C
+Correct Answer: A
+
+Solution:
+The given function can be decomposed into partial fractions as A/x + B/(x-3) + C/(x-3)^2. Solving for A, B, and C, we get A = 6/5, B = -9/4, C = 9/2. Integrating each part gives us (6/5)x^2 - (9/4)ln|x-3| + (9/2)(1/(x-3)) + C.
+
+Explanation:
+The key step is to correctly decompose the fraction and integrate each part separately.
+
+Common mistake note:
+A common mistake is to forget to multiply the constants by the respective denominators when solving for A, B, and C, leading to incorrect coefficients in the partial fractions.
+------------------------------------------------------------------------------

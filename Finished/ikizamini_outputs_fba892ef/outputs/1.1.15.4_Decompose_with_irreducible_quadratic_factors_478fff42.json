@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.15.4",
+  "objective_text": "Decompose with irreducible quadratic factors",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Factor the expression: x^3 - 6x^2 + 9x",
+      "choices": {
+        "A": "(x - 3)^3",
+        "B": "(x - 3)(x^2 - 3)",
+        "C": "(x - 3)(x - 1)^2",
+        "D": "(x - 3)^2(x + 1)"
+      },
+      "correct_choice": "B",
+      "solution": "The expression can be factored by taking out the greatest common factor (GCF) of x from each term. So we get: x(x^2 - 6x + 9). The remaining part is a perfect square trinomial, which factors as (x - 3)^2. Therefore, the correct factorization is (x - 3)(x^2 - 3).",
+      "explanation": "The key to this problem is recognizing that x^2 - 6x + 9 is a perfect square trinomial and factoring it accordingly.",
+      "common_mistake_notes": "A common mistake would be to incorrectly factor the quadratic part as (x - 1)(x - 3), which would lead to choice C. This fails because the correct factorization must have an irreducible quadratic factor."
+    },
+    {
+      "id": "Two",
+      "stem": "Factor the expression: 4y^2 + 12y + 9",
+      "choices": {
+        "A": "(2y - 3)^2",
+        "B": "(2y + 3)(2y + 3)",
+        "C": "(2y + 3)^3",
+        "D": "(2y + 6)^2"
+      },
+      "correct_choice": "B",
+      "solution": "The expression is a perfect square trinomial, which can be factored directly as (2y + 3)(2y + 3).",
+      "explanation": "Perfect square trinomials have the form (ax ± b)^2. In this case, a = 2 and b = 3.",
+      "common_mistake_notes": "A common mistake would be to try to factor it as (4y + 9)(y + 1), which is incorrect because it does not follow the pattern of a perfect square trinomial."
+    },
+    {
+      "id": "Three",
+      "stem": "Factor the expression: x^3 - 8x",
+      "choices": {
+        "A": "(x - 2)^3",
+        "B": "(x - 2)(x^2 + 4)",
+        "C": "(x - 2)(x + 2)^2",
+        "D": "(x - 2)^2(x - 4)"
+      },
+      "correct_choice": "B",
+      "solution": "First, factor out the GCF of x from each term: x(x^2 - 8). The remaining part is x^2 - 4, which factors as (x + 2)(x - 2) because it's a difference of squares. So the correct factorization is (x - 2)(x^2 + 4).",
+      "explanation": "The key here is recognizing that x^2 - 8 can be factored further into a difference of squares.",
+      "common_mistake_notes": "A common mistake would be to incorrectly factor x^2 - 8 as (x - 4)(x + 2), which would lead to choice D. This fails because the correct factorization must have an irreducible quadratic factor."
+    },
+    {
+      "id": "Four",
+      "stem": "Factor the expression: 9z^2 - 16",
+      "choices": {
+        "A": "(3z - 4)^2",
+        "B": "(3z + 4)(3z - 4)",
+        "C": "(3z + 4)^3",
+        "D": "(3z + 8)^2"
+      },
+      "correct_choice": "B",
+      "solution": "The expression is a difference of squares, which can be factored directly as (3z + 4)(3z - 4).",
+      "explanation": "A difference of squares factors as (a + b)(a - b), where a and b are the square roots of each term. In this case, a = 3z and b = 4.",
+      "common_mistake_notes": "A common mistake would be to try to factor it as (9z + 16)(9z - 16), which is incorrect because it does not follow the pattern of a difference of squares."
+    },
+    {
+      "id": "Five",
+      "stem": "Factor the expression: x^3 - 27x",
+      "choices": {
+        "A": "(x - 3)^3",
+        "B": "(x - 3)(x^2 + 9)",
+        "C": "(x - 3)(x + 3)^2",
+        "D": "(x - 3)^2(x - 9)"
+      },
+      "correct_choice": "B",
+      "solution": "First, factor out the GCF of x from each term: x(x^2 - 27). The remaining part is x^2 - 27, which factors as (x + 3)(x - 3) because it's a difference of squares. So the correct factorization is (x - 3)(x^2 + 9).",
+      "explanation": "The key here is recognizing that x^2 - 27 can be factored further into a difference of squares.",
+      "common_mistake_notes": "A common mistake would be to incorrectly factor x^2 - 27 as (x - 9)(x + 3), which would lead to choice D. This fails because the correct factorization must have an irreducible quadratic factor."
+    },
+    {
+      "id": "Six",
+      "stem": "Factor the expression: 16a^2 - 81b^2",
+      "choices": {
+        "A": "(4a - 9b)^2",
+        "B": "(4a + 9b)(4a - 9b)",
+        "C": "(4a + 9b)^3",
+        "D": "(4a + 18b)^2"
+      },
+      "correct_choice": "B",
+      "solution": "The expression is a difference of squares, which can be factored directly as (4a + 9b)(4a - 9b).",
+      "explanation": "A difference of squares factors as (a + b)(a - b), where a and b are the square roots of each term. In this case, a = 4a and b = 9b.",
+      "common_mistake_notes": "A common mistake would be to try to factor it as (16a + 81b)(16a - 81b), which is incorrect because it does not follow the pattern of a difference of squares."
+    },
+    {
+      "id": "Seven",
+      "stem": "Factor the expression: x^3 - 27x^2 + 189x - 405",
+      "choices": {
+        "A": "(x - 9)^3",
+        "B": "(x - 9)(x^2 - 18)",
+        "C": "(x - 9)(x - 3)^2",
+        "D": "(x - 9)^2(x + 5)"
+      },
+      "correct_choice": "C",
+      "solution": "First, factor out the GCF of x from each term: x(x^2 - 27x + 189). The remaining part is a quadratic trinomial that can be factored by grouping: (x^2 - 27x + 189) = (x^2 - 27x + 81) + (108 - 81) = (x - 9)^2 + 27. Since the second term is a constant, it cannot be factored further and must remain as part of the irreducible quadratic factor. So the correct factorization is (x - 9)(x - 3)^2.",
+      "explanation": "The key here is recognizing that x^2 - 27x + 189 can be factored by grouping into a perfect square trinomial and a constant term.",
+      "common_mistake_notes": "A common mistake would be to incorrectly factor (x^2 - 27x + 189) as (x - 9)(x - 21), which would lead to choice D. This fails because the correct factorization must have an irreducible quadratic factor."
+    }
+  ]
+}

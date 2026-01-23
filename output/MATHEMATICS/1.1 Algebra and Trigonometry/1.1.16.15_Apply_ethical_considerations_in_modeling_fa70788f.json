@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.16.15",
+  "objective_text": "Apply ethical considerations in modeling",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asymmetry_info_leakage",
+      "stem": "A data scientist is working on a predictive model for loan approvals. They notice that the dataset contains zip codes, which could reveal sensitive information about an individual's socio-economic status. What should the data scientist do to address this ethical concern?",
+      "choices": {
+        "A": "Keep the zip codes in the dataset as they are important features for the model.",
+        "B": "Replace zip codes with average income data for each region.",
+        "C": "Remove zip codes from the dataset and use proxy variables like city or state instead.",
+        "D": "Anonymize zip codes by replacing them with random numbers."
+      },
+      "correct_choice": "B",
+      "solution": "The correct action is to replace zip codes with average income data (Choice B). This way, the model can still consider geographical factors without directly exposing sensitive personal information. Keeping zip codes (Choice A) violates privacy and could lead to discrimination. Removing zip codes completely (Choice C) might result in less accurate predictions if location is a relevant factor. Anonymizing zip codes with random numbers (Choice D) does not address the ethical concern as it still reveals geographical information.",
+      "explanation": "This question assesses understanding of ethical considerations in modeling, specifically regarding data privacy and avoiding unintentional discrimination.",
+      "common_mistake_notes": "A common mistake is to choose Choice A, which demonstrates a lack of awareness about the potential risks associated with sensitive personal data. Another mistake might be selecting Choice D, which may seem like a solution but still maintains geographical information that could lead to similar ethical concerns."
+    },
+    {
+      "id": "Model_bias",
+      "stem": "A company releases a facial recognition system that consistently misidentifies darker-skinned individuals. The developers claim that the model was trained on a diverse dataset. What is a possible reason for this issue?",
+      "choices": {
+        "A": "The model was not properly fine-tuned.",
+        "B": "The dataset used for training had an imbalance in representation of skin tones.",
+        "C": "The hardware used for testing the system was faulty.",
+        "D": "The developers did not include enough positive examples of darker-skinned individuals."
+      },
+      "correct_choice": "B",
+      "solution": "The correct answer is that the dataset used for training had an imbalance in representation of skin tones (Choice B). This can lead to bias in the model, as it may not have learned to accurately recognize faces with darker skin tones. Choice A refers to a technical issue unrelated to ethics. Choice C involves hardware and not data or modeling. Choice D is incorrect because including more positive examples alone might not solve the problem if there's an underlying imbalance.",
+      "explanation": "This question tests understanding of ethical issues related to bias in machine learning models, specifically how dataset composition can impact model performance.",
+      "common_mistake_notes": "A common mistake could be selecting Choice A or C, which are technical issues rather than ethical concerns. Another potential error is picking Choice D, which might not address the root cause of bias if the training data still lacks diversity."
+    },
+    {
+      "id": "Data_",
+      "stem": "A researcher wants to use a publicly available dataset for a study on mental health. Before using the data, what should they check?",
+      "choices": {
+        "A": "The size of the dataset.",
+        "B": "Whether the dataset is labeled with appropriate tags.",
+        "C": "If the dataset was collected ethically and consensually.",
+        "D": "The accuracy of the data points."
+      },
+      "correct_choice": "C",
+      "solution": "The correct action is to ensure that the dataset was collected ethically and consensually (Choice C). This is an important ethical consideration when using personal data. The size, labeling, and accuracy are relevant but not primarily related to ethics.",
+      "explanation": "This question evaluates knowledge of ethical principles in data collection and usage for research purposes.",
+      "common_mistake_notes": "A common mistake could be selecting Choice A or D, which focus on technical aspects rather than ethical concerns. Choice B is important but secondary to ensuring ethical data collection."
+    },
+    {
+      "id": "Privacy_",
+      "stem": "A company wants to use customer browsing history to personalize product recommendations. What should they do to ensure ethical handling of this data?",
+      "choices": {
+        "A": "Anonymize the browsing history by removing personal identifiers.",
+        "B": "Store the browsing history indefinitely for future analysis.",
+        "C": "Share the browsing history with third-party partners for targeted advertising.",
+        "D": "Notify customers and obtain explicit consent before using their browsing history."
+      },
+      "correct_choice": "D",
+      "solution": "The correct action is to notify customers and obtain explicit consent (Choice D) before using their browsing history. This respects user privacy and adheres to ethical data handling practices. Anonymizing the data (Choice A) may not be enough to protect privacy, storing indefinitely (Choice B) could raise concerns about retention, and sharing with third parties (Choice C) violates privacy without consent.",
+      "explanation": "This question assesses understanding of customer privacy rights and how they should be respected in data- driven decision-making.",
+      "common_mistake_notes": "A common mistake might be selecting Choice A or B, which do not fully address the ethical concerns. Another error could be picking Choice C, which misunderstands the importance of user consent."
+    },
+    {
+      "id": "Fairness_",
+      "stem": "A bank is developing a credit scoring model that consistently assigns lower scores to women compared to men with similar financial profiles. What should the bank do to address this issue?",
+      "choices": {
+        "A": "Ignore the issue as it might be due to inherent differences in financial behavior between genders.",
+        "B": "Tune the model parameters to ensure equal acceptance rates for both men and women.",
+        "C": "Collect more data specifically on women's credit history to improve accuracy.",
+        "D": "Review the model's features and decision-making process for potential gender bias."
+      },
+      "correct_choice": "D",
+      "solution": "The correct action is to review the model's features and decision-making process (Choice D) for potential gender bias. This helps identify and address unfair treatment in the model. Ignoring the issue (Choice A) perpetuates discrimination. Tuning parameters to equal acceptance rates (Choice B) might lead to reverse discrimination or underestimating risk. Collecting more data (Choice C) is a long-term solution but does not immediately fix the bias.",
+      "explanation": "This question tests knowledge of fairness in machine learning models and how to identify and address biases.",
+      "common_mistake_notes": "A common mistake could be selecting Choice A, which demonstrates an insufficient understanding of ethical concerns. Another error might be picking Choice B, which overlooks the root cause of bias."
+    },
+    {
+      "id": "Data_",
+      "stem": "A company collects personal data from users for a mobile app. After updating their privacy policy, they decide to delete all user data that is no longer needed for providing the service. What ethical principle does this action align with?",
+      "choices": {
+        "A": "Transparency",
+        "B": "Data minimization",
+        "C": "Accountability",
+        "D": "Informed consent"
+      },
+      "correct_choice": "B",
+      "solution": "The correct answer is data minimization (Choice B). Deleting unnecessary personal data reduces the risk of privacy breaches and aligns with ethical principles for handling user information. Transparency, accountability, and informed consent are important but not directly related to this specific action.",
+      "explanation": "This question evaluates understanding of ethical principles in data management, particularly data minimization.",
+      "common_mistake_notes": "A common mistake might be selecting Choice A or C, which are relevant but not the primary focus of this scenario. Another error could be picking Choice D, which is important but does not directly address data deletion."
+    },
+    {
+      "id": "Confidentiality",
+      "stem": "A healthcare provider wants to share patient data with a research institution for a study on disease treatment. What should they do to ensure ethical handling of the data?",
+      "choices": {
+        "A": "Anonymize the patient data by removing all personal identifiers.",
+        "B": "Encrypt the data and provide access only to authorized researchers.",
+        "C": "Share the raw data without any modifications or restrictions.",
+        "D": "Obtain explicit consent from each patient before sharing their data."
+      },
+      "correct_choice": "D",
+      "solution": "The correct action is to obtain explicit consent from each patient (Choice D) before sharing their data. This ensures that patients' privacy rights are respected and follows ethical guidelines for handling sensitive health information. Anonymizing the data (Choice A) may not be enough, encryption and access control (Choice B) are important but secondary, and sharing raw data without restrictions (Choice C) violates confidentiality.",
+      "explanation": "This question assesses understanding of patient privacy in healthcare data sharing and how to adhere to ethical principles.",
+      "common_mistake_notes": "A common mistake might be selecting Choice A or B, which do not fully address the ethical concerns. Another error could be picking Choice C, which misunderstands the importance of individual consent."
+    }
+  ]
+}

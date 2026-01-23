@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.16.11",
+  "objective_text": "Apply sensitivity analysis",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "IncreaseInput",
+      "stem": "A company's profit function is P(x) = 20x - x^2, where x represents the number of units produced. If the cost to produce each unit increases by 5%, what is the new maximum profit?",
+      "choices": {
+        "A": "148.75",
+        "B": "150.00",
+        "C": "151.25",
+        "D": "152.50"
+      },
+      "correct_choice": "C",
+      "solution": "The original profit function is P(x) = 20x - x^2. To account for a 5% increase in cost, we multiply the coefficient of x by 1.05: P'(x) = 20 * 1.05x - (1.05x)^2. Now we find the maximum profit by taking the derivative and setting it to zero: dP'/dx = 20 * 1.05 - 2 * 1.05x = 0. Solving for x, we get x ≈ 19.87. Plugging this value back into the new profit function, we find P'(19.87) ≈ 151.2475, which rounds to 151.25.",
+      "explanation": "The sensitivity analysis is done by adjusting the cost coefficient and finding the new maximum profit using calculus.",
+      "common_mistake_notes": "A common mistake would be forgetting to adjust the entire function for the increased cost (i.e., multiplying both terms by 1.05). Choosing option A or B could result from this oversight."
+    },
+    {
+      "id": "DecreaseDemand",
+      "stem": "The demand function for a product is Q(p) = 200 - 4p, where p represents the price per unit. If there's a 10% decrease in consumer demand, what is the new equilibrium quantity?",
+      "choices": {
+        "A": "160",
+        "B": "170",
+        "C": "180",
+        "D": "190"
+      },
+      "correct_choice": "C",
+      "solution": "The original demand function is Q(p) = 200 - 4p. To account for a 10% decrease in demand, we multiply the entire function by 0.9: Q'(p) = 0.9(200 - 4p). The equilibrium quantity occurs when supply equals demand; however, since this question only asks for the change in demand, we don't need to consider the supply function. Setting Q'(p) to zero and solving for p gives us p ≈ 50. Plugging this value back into the new demand function, we find Q'(50) = 180.",
+      "explanation": "The sensitivity analysis is done by adjusting the entire demand function for the decreased demand and finding the new equilibrium quantity.",
+      "common_mistake_notes": "A common mistake would be trying to decrease only one term in the demand function (i.e., multiplying just 200 by 0.9). Choosing option A, B, or D could result from this oversight."
+    },
+    {
+      "id": "ChangeInputCost",
+      "stem": "An agricultural business has a cost function C(q) = 15q + q^2, where q represents the quantity of produce harvested. If the price per unit increases by 20%, what is the new break-even point?",
+      "choices": {
+        "A": "10",
+        "B": "15",
+        "C": "20",
+        "D": "25"
+      },
+      "correct_choice": "C",
+      "solution": "The original cost function is C(q) = 15q + q^2. To account for a 20% increase in revenue, we multiply the price per unit by 1.2: R(q) = 1.2(15q + q^2). The break-even point occurs when revenue equals cost, so we set R(q) = C(q): 1.2(15q + q^2) = 15q + q^2. Solving for q gives us q ≈ 19.68. Since the break-even point is usually rounded to the nearest whole number in this context, we choose q = 20.",
+      "explanation": "The sensitivity analysis is done by adjusting the revenue function and finding the new break-even point where cost equals revenue.",
+      "common_mistake_notes": "A common mistake would be trying to adjust only the cost function. Choosing option A, B, or D could result from this oversight."
+    },
+    {
+      "id": "PriceElasticity",
+      "stem": "The demand function for a good is Q(p) = 500 - 2p, where p represents the price per unit. Calculate the price elasticity of demand when the price is $100.",
+      "choices": {
+        "A": "-2.5",
+        "B": "-2",
+        "C": "-1.5",
+        "D": "-1"
+      },
+      "correct_choice": "B",
+      "solution": "The price elasticity of demand (PED) is calculated as PED = (% change in quantity demanded) / (% change in price). First, find the original quantity demanded at p = $100: Q(100) = 500 - 2 * 100 = 300. Next, calculate the percentage change in quantity demanded when the price increases by 1% (an increase of $1): new Q ≈ 300 - 2 * 1.01 * 100 ≈ 294. To find the PED, we use the percentage changes: PED = ((Q(new) - Q(original)) / Q(original)) / ((p(new) - p(original)) / p(original)). Plugging in the values gives us PED = (-6 / 300) / (1 / 100) = -2.",
+      "explanation": "The sensitivity analysis is done by calculating the price elasticity of demand, which measures how sensitive quantity demanded is to a change in price.",
+      "common_mistake_notes": "A common mistake would be using the wrong formula or forgetting to convert percentage changes. Choosing option A, C, or D could result from this oversight."
+    },
+    {
+      "id": "SupplyElasticity",
+      "stem": "The supply function for a product is S(p) = 2p + p^2, where p represents the price per unit. Calculate the elasticity of supply when the price is $50.",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_choice": "B",
+      "solution": "The elasticity of supply (ES) is calculated as ES = (% change in quantity supplied) / (% change in price). First, find the original quantity supplied at p = $50: S(50) = 2 * 50 + 50^2 = 2750. Next, calculate the percentage change in quantity supplied when the price increases by 1% (an increase of $0.5): new S ≈ 2 * (50 + 0.5) + (50 + 0.5)^2 ≈ 2760. To find the ES, we use the percentage changes: ES = ((S(new) - S(original)) / S(original)) / ((p(new) - p(original)) / p(original)). Plugging in the values gives us ES = (10 / 2750) / (0.5 / 50) = 2.",
+      "explanation": "The sensitivity analysis is done by calculating the elasticity of supply, which measures how sensitive quantity supplied is to a change in price.",
+      "common_mistake_notes": "A common mistake would be using the wrong formula or forgetting to convert percentage changes. Choosing option A, C, or D could result from this oversight."
+    },
+    {
+      "id": "SensitivityBudget",
+      "stem": "A non-profit organization has a budget function B(x) = 10x - x^2, where x represents the number of events organized. If the cost to organize each event increases by 15%, what is the new maximum budget?",
+      "choices": {
+        "A": "97.5",
+        "B": "98.75",
+        "C": "99.25",
+        "D": "100"
+      },
+      "correct_choice": "B",
+      "solution": "The original budget function is B(x) = 10x - x^2. To account for a 15% increase in cost, we multiply the coefficient of x by 1.15: B'(x) = 10 * 1.15x - (1.15x)^2. Now we find the maximum budget by taking the derivative and setting it to zero: dB'/dx = 10 * 1.15 - 2 * 1.15x = 0. Solving for x, we get x ≈ 8.69. Plugging this value back into the new budget function, we find B'(8.69) ≈ 98.7475, which rounds to 98.75.",
+      "explanation": "The sensitivity analysis is done by adjusting the cost coefficient and finding the new maximum budget using calculus.",
+      "common_mistake_notes": "A common mistake would be forgetting to adjust the entire function for the increased cost (i.e., multiplying both terms by 1.15). Choosing option A, C, or D could result from this oversight."
+    },
+    {
+      "id": "SensitivityInvestment",
+      "stem": "An investor has a return function R(x) = 0.1x - x^2/100, where x represents the investment amount in thousands of dollars. If the interest rate increases by 5%, what is the new maximum return?",
+      "choices": {
+        "A": "9.75",
+        "B": "9.875",
+        "C": "9.925",
+        "D": "10"
+      },
+      "correct_choice": "C",
+      "solution": "The original return function is R(x) = 0.1x - x^2/100. To account for a 5% increase in the interest rate, we multiply the coefficient of x by 1.05: R'(x) = 0.1 * 1.05x - (1.05x)^2/100. Now we find the maximum return by taking the derivative and setting it to zero: dR'/dx = 0.1 * 1.05 - 2 * x * 1.05/100 = 0. Solving for x, we get x ≈ 9.876. Plugging this value back into the new return function, we find R'(9.876) ≈ 9.92475, which rounds to 9.925.",
+      "explanation": "The sensitivity analysis is done by adjusting the interest rate coefficient and finding the new maximum return using calculus.",
+      "common_mistake_notes": "A common mistake would be forgetting to adjust the entire function for the increased interest rate (i.e., multiplying both terms by 1.05). Choosing option A, B, or D could result from this oversight."
+    }
+  ]
+}

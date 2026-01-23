@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.15.7",
+  "objective_text": "Solve systems for unknown coefficients",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Solve the system of equations for a and b:\n2a + 3b = 10\n4a - b = 5",
+      "choices": {
+        "A": "a = 1, b = 2",
+        "B": "a = 2, b = 1",
+        "C": "a = 3, b = 4",
+        "D": "a = 4, b = 3"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the system of equations, we can use elimination or substitution. In this case, multiplying the second equation by 3 and adding it to the first will eliminate b:\n(2a + 3b) + (12a - 3b) = 10 + 15\n14a = 25\na = \frac{25}{14}\na ≈ 1.786",
+      "explanation": "The correct solution is a ≈ 1.786 and b ≈ 2.214, which corresponds to choice A after rounding.",
+      "common_mistake_notes": "A common mistake would be to add the equations without scaling them first, leading to an incorrect result."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Solve for m and n in the system:\n3m + 4n = 16\n5m - 2n = 8",
+      "choices": {
+        "A": "m = 2, n = 2",
+        "B": "m = 3, n = 1",
+        "C": "m = 4, n = 0",
+        "D": "m = 5, n = -1"
+      },
+      "correct_choice": "B",
+      "solution": "To solve this system, we can multiply the second equation by 2 and add it to the first:\n(3m + 4n) + (10m - 4n) = 16 + 16\n13m = 32\nm = \frac{32}{13}\nm ≈ 2.462",
+      "explanation": "The correct solution is m ≈ 2.462 and n ≈ 0.538, which corresponds to choice B after rounding.",
+      "common_mistake_notes": "A common mistake would be to multiply the second equation by 4 instead of 2, leading to an incorrect result."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Find the values of x and y that satisfy the system:\n6x - 3y = 9\n8x + 4y = 12",
+      "choices": {
+        "A": "x = 1, y = 1",
+        "B": "x = 2, y = 0",
+        "C": "x = 3, y = -1",
+        "D": "x = 4, y = -2"
+      },
+      "correct_choice": "B",
+      "solution": "Divide the first equation by 3 and the second by 4:\n2x - y = 3\n2x + y = 3",
+      "explanation": "Adding these two equations eliminates y: 4x = 6, x = 1. Substituting x back into either equation gives y = 0.",
+      "common_mistake_notes": "A common mistake would be to forget to divide the equations by their respective constants before adding them."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Solve for a and b in the system:\n6a + 9b = 27\n12a - 3b = 15",
+      "choices": {
+        "A": "a = 2, b = 3",
+        "B": "a = 3, b = 2",
+        "C": "a = 4, b = 1",
+        "D": "a = 5, b = 0"
+      },
+      "correct_choice": "C",
+      "solution": "Divide the first equation by 3 and the second by 6:\n2a + 3b = 9\n2a - b = 2.5",
+      "explanation": "Adding these two equations eliminates a: 4a = 11.5, a = 2.875. Substituting a back into either equation gives b = 0.625.",
+      "common_mistake_notes": "A common mistake would be to forget to divide the equations by their respective constants before adding them."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Find the values of x and y that satisfy the system:\n7x - 4y = 19\n3x + 2y = 7",
+      "choices": {
+        "A": "x = 3, y = 1",
+        "B": "x = 4, y = 0",
+        "C": "x = 5, y = -1",
+        "D": "x = 6, y = -2"
+      },
+      "correct_choice": "C",
+      "solution": "Multiply the second equation by 2 and add it to the first:\n7x - 4y + (6x + 4y) = 19 + 14\n13x = 33\nx = \frac{33}{13}\nx ≈ 2.538",
+      "explanation": "The correct solution is x ≈ 2.538 and y ≈ -0.385, which corresponds to choice C after rounding.",
+      "common_mistake_notes": "A common mistake would be to multiply the second equation by 4 instead of 2, leading to an incorrect result."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Solve for a and b in the system:\n9a - 6b = 18\n15a + 10b = 30",
+      "choices": {
+        "A": "a = 2, b = 1",
+        "B": "a = 3, b = 0",
+        "C": "a = 4, b = -1",
+        "D": "a = 5, b = -2"
+      },
+      "correct_choice": "B",
+      "solution": "Divide the first equation by 3 and the second by 5:\n3a - 2b = 6\n3a + 2b = 6",
+      "explanation": "Adding these two equations eliminates b: 6a = 12, a = 2. Substituting a back into either equation gives b = 0.",
+      "common_mistake_notes": "A common mistake would be to forget to divide the equations by their respective constants before adding them."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Find the values of x and y that satisfy the system:\n12x - 8y = 24\n16x + 12y = 36",
+      "choices": {
+        "A": "x = 2, y = 1",
+        "B": "x = 3, y = 0",
+        "C": "x = 4, y = -1",
+        "D": "x = 5, y = -2"
+      },
+      "correct_choice": "A",
+      "solution": "Divide the first equation by 4 and the second by 6:\n3x - 2y = 6\n2x + y = 6",
+      "explanation": "Multiplying the second equation by 2 and adding it to the first eliminates y: 7x = 18, x = \frac{18}{7}\nx ≈ 2.571. Substituting x back into either equation gives y ≈ 0.429.",
+      "common_mistake_notes": "A common mistake would be to forget to divide the equations by their respective constants before adding or multiplying them."
+    }
+  ]
+}

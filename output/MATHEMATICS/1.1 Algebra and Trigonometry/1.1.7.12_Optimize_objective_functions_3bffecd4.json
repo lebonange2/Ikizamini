@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.7.12",
+  "objective_text": "Optimize objective functions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "A company wants to maximize its profit function P(x) = 5x - x^2, where x is the number of units produced. What is the optimal production level?",
+      "choices": {
+        "A": "0 units",
+        "B": "2 units",
+        "C": "5 units",
+        "D": "10 units"
+      },
+      "correct_choice": "B",
+      "solution": "To optimize the profit function P(x) = 5x - x^2, we need to find the value of x that maximizes this quadratic function. Since it's a downward parabola (negative coefficient on x^2), the maximum will occur at the vertex. The x-coordinate of the vertex can be found using the formula x = -b / (2 * a), where a and b are the coefficients of x^2 and x respectively. In this case, a = -1 and b = 5. Plugging these values into the formula gives us x = -5 / (2 * -1) = 2.5. Since we can't produce a fraction of a unit, we round down to 2 units as the optimal production level.",
+      "explanation": "The quadratic function P(x) has a maximum value at its vertex. Rounding the exact x-coordinate of the vertex is necessary because production levels must be integers.",
+      "common_mistake_notes": "A common mistake would be to choose the x-intercept (where profit equals zero), which is not necessarily the point that maximizes profit."
+    },
+    {
+      "id": ":2",
+      "stem": "Minimize the cost function C(x) = 3x^2 + 6x + 9, where x represents the number of units. What is the minimum cost?",
+      "choices": {
+        "A": "0 units",
+        "B": "1 unit",
+        "C": "2 units",
+        "D": "3 units"
+      },
+      "correct_choice": "B",
+      "solution": "To minimize the quadratic cost function C(x) = 3x^2 + 6x + 9, we need to find the value of x that minimizes this parabola. Since it's an upward parabola (positive coefficient on x^2), the minimum will occur at the vertex. The x-coordinate of the vertex can be found using the formula x = -b / (2 * a), where a and b are the coefficients of x^2 and x respectively. In this case, a = 3 and b = 6. Plugging these values into the formula gives us x = -6 / (2 * 3) = -1. Thus, the minimum cost occurs at x = -1. However, since x represents units and cannot be negative, we choose the nearest non-negative value, which is x = 0.",
+      "explanation": "The quadratic function C(x) has a minimum value at its vertex. Since x must be non-negative in this context, we select the smallest non-negative x-value that gives a valid solution.",
+      "common_mistake_notes": "A common mistake would be to choose x = -1 as the minimum cost point, which is mathematically correct but not applicable in this context where x represents units."
+    },
+    {
+      "id": ":3",
+      "stem": "Maximize the revenue function R(x) = 20x - 0.5x^2, where x is the number of items sold at a certain price. What is the optimal selling price?",
+      "choices": {
+        "A": "$10 per item",
+        "B": "$20 per item",
+        "C": "$30 per item",
+        "D": "$40 per item"
+      },
+      "correct_choice": "B",
+      "solution": "To maximize the revenue function R(x) = 20x - 0.5x^2, we need to find the value of x that maximizes this quadratic function. Since it's a downward parabola (negative coefficient on x^2), the maximum will occur at the vertex. The x-coordinate of the vertex can be found using the formula x = -b / (2 * a), where a and b are the coefficients of x^2 and x respectively. In this case, a = -0.5 and b = 20. Plugging these values into the formula gives us x = -20 / (2 * -0.5) = 20. The optimal selling price is thus $20 per item.",
+      "explanation": "The quadratic function R(x) has a maximum value at its vertex, which corresponds to the optimal number of items sold. From there, we can calculate the revenue by plugging x back into the function or multiplying the optimal quantity by the price.",
+      "common_mistake_notes": "A common mistake would be to choose the x-intercept (where revenue equals zero), which is not necessarily the point that maximizes revenue."
+    },
+    {
+      "id": ":4",
+      "stem": "Minimize the error function E(w) = w^2 + 10, where w represents a weight parameter in a machine learning model. What is the minimum error?",
+      "choices": {
+        "A": "w = 0",
+        "B": "w = -1",
+        "C": "w = 1",
+        "D": "w = 2"
+      },
+      "correct_choice": "A",
+      "solution": "To minimize the quadratic error function E(w) = w^2 + 10, we need to find the value of w that minimizes this parabola. Since it's an upward parabola (positive coefficient on w^2), the minimum will occur at the vertex. The x-coordinate of the vertex is always zero for a quadratic function in the form E(w) = aw^2 + c, where a and c are constants. Thus, the minimum error occurs when w = 0.",
+      "explanation": "The quadratic function E(w) has a minimum value at its vertex, which is always at w = 0 for this specific form of the equation. This corresponds to the smallest possible error in the context of machine learning model optimization.",
+      "common_mistake_notes": "A common mistake would be to choose w = -1 or w = 1 as the minimum error point, but those values do not minimize the function E(w)."
+    },
+    {
+      "id": ":5",
+      "stem": "Maximize the utility function U(x, y) = x + y, subject to a budget constraint of 10 units. If x costs $2 and y costs $3, what is the optimal allocation?",
+      "choices": {
+        "A": "x = 5, y = 5",
+        "B": "x = 4, y = 6",
+        "C": "x = 3, y = 7",
+        "D": "x = 2, y = 8"
+      },
+      "correct_choice": "A",
+      "solution": "To maximize the utility function U(x, y) = x + y subject to a budget constraint of 10 units, we need to find the values of x and y that satisfy the constraint while maximizing the sum. Since x costs $2 and y costs $3, we can set up the equation 2x + 3y = 10. Solving for one variable in terms of the other, we get y = (10 - 2x) / 3. To maximize U(x, y), we should allocate as many units to x as possible while still satisfying the budget constraint. This occurs when x is maximized, which happens at x = 5 (since x must be an integer). Then, y will be 10 - 2 * 5 = 0. The optimal allocation is thus x = 5 and y = 0.",
+      "explanation": "The utility function is linear and the budget constraint is a straight line. To maximize the utility, we allocate resources to the cheaper item until it reaches its maximum possible value within the budget constraint.",
+      "common_mistake_notes": "A common mistake would be to choose an allocation where both x and y are non-zero, but this does not result in the highest possible utility given the budget constraint."
+    },
+    {
+      "id": ":6",
+      "stem": "Minimize the cost function C(x, y) = 2x^2 + 3y^2, subject to a production constraint of 10 units. If x represents item A and y represents item B, with total production constraints of 5 for item A and 4 for item B, what is the minimum cost?",
+      "choices": {
+        "A": "x = 2, y = 3",
+        "B": "x = 3, y = 2",
+        "C": "x = 0, y = 4",
+        "D": "x = 1, y = 3"
+      },
+      "correct_choice": "C",
+      "solution": "To minimize the cost function C(x, y) = 2x^2 + 3y^2 subject to production constraints, we need to find the values of x and y that satisfy both constraints while minimizing the sum. The constraints are x ≤ 5 and y ≤ 4. Since we want to minimize the quadratic cost function, it's best to produce as little as possible of each item (subject to the constraints). This occurs when x = 0 and y = 4, resulting in a minimum cost of C(0, 4) = 2 * 0^2 + 3 * 4^2 = 48.",
+      "explanation": "The cost function is quadratic and the production constraints are linear. To minimize the cost, we produce as little as possible of each item while still satisfying the production constraints.",
+      "common_mistake_notes": "A common mistake would be to choose an allocation where both x and y are positive, but this does not result in the minimum cost given the production constraints."
+    },
+    {
+      "id": ":7",
+      "stem": "Maximize the profit function P(q) = 10q - q^2 - 5q log(q), where q is the quantity of a product sold. What is the optimal quantity?",
+      "choices": {
+        "A": "q = 1",
+        "B": "q = 2",
+        "C": "q = 3",
+        "D": "q = 4"
+      },
+      "correct_choice": "B",
+      "solution": "To maximize the profit function P(q) = 10q - q^2 - 5q log(q), we need to find the value of q that maximizes this non-quadratic function. We can take the derivative of P(q) with respect to q and set it equal to zero to find critical points: dP/dq = 10 - 2q - 5log(q). Solving for dP/dq = 0 is challenging analytically, so we'll use numerical methods. By testing values close to the roots or using a calculator, we find that q ≈ 2 maximizes the profit function. The exact value of q may vary slightly due to rounding errors in numerical methods.",
+      "explanation": "The profit function is not a standard quadratic form, so we need to use calculus to find the maximum point by setting the derivative equal to zero and solving for q. Since this is a non-quadratic function, an exact solution may be difficult or involve numerical methods.",
+      "common_mistake_notes": "A common mistake would be to assume that the optimal quantity occurs at a simple integer value without considering the specific form of the profit function."
+    }
+  ]
+}

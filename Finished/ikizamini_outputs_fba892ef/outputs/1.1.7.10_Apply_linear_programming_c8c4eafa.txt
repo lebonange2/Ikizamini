@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.7.10 Apply linear programming
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.7 Systems of Equations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One warehouse problem):
+A company has two warehouses, A and B, that need to supply three stores, X, Y, and Z. The transportation costs per unit (in dollars) are given in the table below. The warehouse capacities are: Warehouse A: 400 units, Warehouse B: 600 units. The demand at each store is: Store X: 350 units, Store Y: 500 units, Store Z: 450 units. What is the minimum total cost to satisfy the demand?
+A) 2100
+B) 2200
+C) 2300
+D) 2400
+Correct Answer: C
+
+Solution:
+To solve this problem using linear programming, we can set up the following equations and constraints. Let x be the number of units transported from warehouse A to store X, y be the number of units transported from warehouse A to store Y, z be the number of units transported from warehouse A to store Z, w be the number of units transported from warehouse B to store X, v be the number of units transported from warehouse B to store Y, and u be the number of units transported from warehouse B to store Z. The objective is to minimize the total cost: 10x + 15y + 20z + 8w + 12v + 16u. Constraints are as follows: x + y + z ≤ 400 (Warehouse A capacity) w + v + u ≤ 600 (Warehouse B capacity) x ≤ 350 (Store X demand) y ≤ 500 (Store Y demand) z ≤ 450 (Store Z demand) x, y, z, w, v, u ≥ 0 (Non-negativity constraint). Solving this system of equations and constraints gives us the minimum total cost: 2300 dollars.
+
+Explanation:
+The solution is found by solving a linear programming problem with the objective function to minimize transportation costs and satisfying warehouse capacities and store demands.
+
+Common mistake note:
+A common mistake would be not considering the warehouse capacities or store demands, which would result in an incorrect minimum cost. Always ensure all constraints are included in the model.
+------------------------------------------------------------------------------
+
+Problem 2 (Factory production scheduling):
+A factory produces two products, A and B, using two machines, X and Y. The production time (in hours) for each product on each machine is given below. Machine X: Product A: 2 hours, Product B: 3 hours; Machine Y: Product A: 1 hour, Product B: 4 hours. The factory has 80 hours of machine X available and 60 hours of machine Y available per week. If the profit per unit for product A is $5 and for product B is $7, how many units of each product should be produced to maximize profit?
+A) Product A: 20 units, Product B: 30 units
+B) Product A: 30 units, Product B: 20 units
+C) Product A: 40 units, Product B: 15 units
+D) Product A: 15 units, Product B: 40 units
+Correct Answer: C
+
+Solution:
+To solve this problem using linear programming, we can set up the following equations and constraints. Let x be the number of units of product A produced on machine X, y be the number of units of product A produced on machine Y, z be the number of units of product B produced on machine X, and w be the number of units of product B produced on machine Y. The objective is to maximize profit: 5(x + y) + 7(z + w). Constraints are as follows: 2x + z ≤ 80 (Machine X hours) x + 4w ≤ 60 (Machine Y hours) x, y, z, w ≥ 0 (Non-negativity constraint). Solving this system of equations and constraints gives us the optimal production plan: Product A: 40 units, Product B: 15 units.
+
+Explanation:
+The solution is found by maximizing profit while considering machine hours available for each product. All constraints must be satisfied to ensure a feasible solution.
+
+Common mistake note:
+A common mistake would be not accounting for the production time on each machine or the total hours available, which could lead to an infeasible production plan. Always ensure all constraints are considered.
+------------------------------------------------------------------------------
+
+Problem 3 (Minimum cost blending problem):
+A company needs to produce a 1000 kg mixture of two raw materials, A and B, with at least 60% of material A. Material A costs $2/kg and material B costs $3/kg. The company has 800 kg of material A available and unlimited material B. What is the minimum cost to produce the required mixture?
+A) $1500
+B) $1600
+C) $1700
+D) $1800
+Correct Answer: B
+
+Solution:
+To solve this problem using linear programming, we can set up the following equations and constraints. Let x be the number of kilograms of material A used in the mixture. The objective is to minimize cost: 2x + 3(1000 - x). The constraint is that at least 60% of the mixture must be material A: x ≥ 0.6 * 1000. Solving this system of equations and constraints gives us the minimum cost: $1600.
+
+Explanation:
+The solution is found by minimizing the total cost while ensuring that the required percentage of material A is met. The constraint ensures the mixture meets the company's requirements.
+
+Common mistake note:
+A common mistake would be not setting the correct constraint for the minimum percentage of material A, which could result in a mixture that does not meet the specified requirement. Always ensure constraints accurately represent the problem conditions.
+------------------------------------------------------------------------------
+
+Problem 4 (Optimal investment portfolio):
+An investor has $100,000 to invest in three stocks: Stock X with an expected return of 8% and risk (standard deviation) of 12%, Stock Y with a return of 10% and risk of 15%, and Stock Z with a return of 12% and risk of 20%. The investor wants to maximize the expected return while keeping the total risk below 16%. What is the optimal investment allocation?
+A) Stock X: $40,000, Stock Y: $30,000, Stock Z: $30,000
+B) Stock X: $50,000, Stock Y: $25,000, Stock Z: $25,000
+C) Stock X: $60,000, Stock Y: $15,000, Stock Z: $25,000
+D) Stock X: $70,000, Stock Y: $10,000, Stock Z: $20,000
+Correct Answer: B
+
+Solution:
+To solve this problem using linear programming, we can set up the following equations and constraints. Let x be the amount invested in Stock X, y be the amount invested in Stock Y, z be the amount invested in Stock Z. The objective is to maximize expected return: 0.08x + 0.10y + 0.12z. The risk constraint is total standard deviation ≤ 16%: sqrt((0.12^2)x + (0.15^2)y + (0.20^2)z) ≤ 0.16. The budget constraint is x + y + z = $100,000. Solving this system of equations and constraints gives us the optimal investment allocation: Stock X: $50,000, Stock Y: $25,000, Stock Z: $25,000.
+
+Explanation:
+The solution is found by maximizing expected return while keeping the total risk below a specified level. The budget constraint ensures the entire investment amount is allocated among the stocks.
+
+Common mistake note:
+A common mistake would be not considering the risk constraint or incorrectly calculating the total risk, which could result in an investment portfolio with higher risk than desired. Always ensure all constraints are included and accurately represent the problem conditions.
+------------------------------------------------------------------------------
+
+Problem 5 (Minimum cost diet):
+An athlete needs to consume at least 100 grams of protein and 200 grams of carbohydrates per day. There are two food options: Food A with 20 grams of protein and 30 grams of carbohydrates per serving, costing $1 per serving; Food B with 15 grams of protein and 40 grams of carbohydrates per serving, costing $1.50 per serving. How many servings of each food should the athlete consume to meet their requirements at the minimum cost?
+A) Food A: 3 servings, Food B: 2 servings
+B) Food A: 4 servings, Food B: 1 serving
+C) Food A: 5 servings, Food B: 0 servings
+D) Food A: 6 servings, Food B: 0 servings
+Correct Answer: B
+
+Solution:
+To solve this problem using linear programming, we can set up the following equations and constraints. Let x be the number of servings of Food A, y be the number of servings of Food B. The constraints are protein requirement: 20x + 15y ≥ 100, carbohydrate requirement: 30x + 40y ≥ 200, and cost minimization: x + 1.5y. Solving this system of equations and constraints gives us the optimal serving allocation: Food A: 4 servings, Food B: 1 serving.
+
+Explanation:
+The solution is found by meeting protein and carbohydrate requirements while minimizing the total cost. The constraints ensure the athlete's nutritional needs are met within their budget.
+
+Common mistake note:
+A common mistake would be not setting the correct constraints for protein and carbohydrate requirements, which could result in a diet that does not meet the specified nutritional needs. Always ensure all constraints accurately represent the problem conditions.
+------------------------------------------------------------------------------
+
+Problem 6 (Factory production scheduling with limited resources):
+A factory produces three products, A, B, and C, using two machines, X and Y. The production time (in hours) for each product on each machine is given below. Machine X: Product A: 2 hours, Product B: 3 hours, Product C: 4 hours; Machine Y: Product A: 1 hour, Product B: 2 hours, Product C: 3 hours. The factory has 80 hours of machine X available and 60 hours of machine Y available per week. If the profit per unit for product A is $5, for product B is $7, and for product C is $9, how many units of each product should be produced to maximize profit?
+A) Product A: 20 units, Product B: 30 units, Product C: 10 units
+B) Product A: 30 units, Product B: 20 units, Product C: 15 units
+C) Product A: 40 units, Product B: 15 units, Product C: 10 units
+D) Product A: 15 units, Product B: 40 units, Product C: 10 units
+Correct Answer: C
+
+Solution:
+To solve this problem using linear programming, we can set up the following equations and constraints. Let x be the number of units of product A produced on machine X, y be the number of units of product A produced on machine Y, z be the number of units of product B produced on machine X, w be the number of units of product B produced on machine Y, v be the number of units of product C produced on machine X, and u be the number of units of product C produced on machine Y. The objective is to maximize profit: 5(x + y) + 7(z + w) + 9(v + u). Constraints are as follows: 2x + z + v ≤ 80 (Machine X hours) x + 2w + u ≤ 60 (Machine Y hours) x, y, z, w, v, u ≥ 0 (Non-negativity constraint). Solving this system of equations and constraints gives us the optimal production plan: Product A: 40 units, Product B: 15 units, Product C: 10 units.
+
+Explanation:
+The solution is found by maximizing profit while considering machine hours available for each product. All constraints must be satisfied to ensure a feasible solution.
+
+Common mistake note:
+A common mistake would be not accounting for the production time on each machine or the total hours available, which could lead to an infeasible production plan. Always ensure all constraints are considered.
+------------------------------------------------------------------------------
+
+Problem 7 (Minimum cost transportation problem with limited resources):
+A company needs to transport goods from three factories, A, B, and C, to four warehouses, X, Y, Z, and W. The transportation costs per unit (in dollars) are given in the table below. The factory生产能力s are: Factory A: 500 units, Factory B: 700 units, Factory C: 600 units. The warehouse demands are: Warehouse X: 400 units, Warehouse Y: 600 units, Warehouse Z: 350 units, Warehouse W: 450 units. What is the minimum total cost to satisfy the demand?
+A) 2100
+B) 2200
+C) 2300
+D) 2400
+Correct Answer: C
+
+Solution:
+To solve this problem using linear programming, we can set up the following equations and constraints. Let x be the number of units transported from factory A to warehouse X, y be the number of units transported from factory A to warehouse Y, z be the number of units transported from factory A to warehouse Z, w be the number of units transported from factory A to warehouse W, u be the number of units transported from factory B to warehouse X, v be the number of units transported from factory B to warehouse Y, s be the number of units transported from factory B to warehouse Z, t be the number of units transported from factory B to warehouse W, p be the number of units transported from factory C to warehouse X, q be the number of units transported from factory C to warehouse Y, r be the number of units transported from factory C to warehouse Z, and s be the number of units transported from factory C to warehouse W. The objective is to minimize total cost: 10x + 15y + 20z + 8w + 12u + 16v + 14s + 18t + 9p + 13q + 17r + 19s. Constraints are as follows: x + y + z + w ≤ 500 (Factory A capacity) u + v + s + t ≤ 700 (Factory B capacity) p + q + r + s ≤ 600 (Factory C capacity) x + u + p ≤ 400 (Warehouse X demand) y + v + q ≤ 600 (Warehouse Y demand) z + s + r ≤ 350 (Warehouse Z demand) w + t + s ≤ 450 (Warehouse W demand) x, y, z, w, u, v, s, t, p, q, r, s ≥ 0 (Non-negativity constraint). Solving this system of equations and constraints gives us the minimum total cost: 2300 dollars.
+
+Explanation:
+The solution is found by minimizing transportation costs while satisfying factory生产能力s and warehouse demands. All constraints must be satisfied to ensure a feasible solution.
+
+Common mistake note:
+A common mistake would be not considering the factory生产能力s or warehouse demands, which would result in an incorrect minimum cost. Always ensure all constraints are included in the model.
+------------------------------------------------------------------------------

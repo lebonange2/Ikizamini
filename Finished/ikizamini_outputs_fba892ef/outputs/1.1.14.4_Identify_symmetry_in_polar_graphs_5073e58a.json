@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.14.4",
+  "objective_text": "Identify symmetry in polar graphs",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "InscribedCircle",
+      "stem": "The polar graph of r = cos(θ) is inscribed within a circle with radius 2. Which statement best describes the symmetry of the graph?",
+      "choices": {
+        "A": "It has no symmetry.",
+        "B": "It is symmetric about the horizontal axis only.",
+        "C": "It is symmetric about the vertical axis only.",
+        "D": "It is symmetric about both axes."
+      },
+      "correct_choice": "D",
+      "solution": "The polar equation r = cos(θ) describes a cardioid, which has symmetry about both the horizontal (x-axis) and vertical (y-axis) lines due to the even nature of cosine. Since it's inscribed in a circle with radius 2, the entire graph will be contained within these symmetrical axes.",
+      "explanation": "Cardioids have reflective symmetry along both axes because cosine is an even function.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, thinking that the symmetry is only along one axis. However, cosine's even nature ensures symmetry in both directions."
+    },
+    {
+      "id": "Rose petals",
+      "stem": "The polar equation r = 2sin(3θ) creates a rose petal graph. Which of the following statements best describes its symmetry?",
+      "choices": {
+        "A": "It has no symmetry.",
+        "B": "It is symmetric about the horizontal axis only.",
+        "C": "It is symmetric about the vertical axis only.",
+        "D": "It has 6-rotational symmetry."
+      },
+      "correct_choice": "D",
+      "solution": "The polar equation r = a*sin(bθ) creates a rose petal graph with b petals. Since b = 3 in this case, the graph will have 3 * 2 = 6-fold rotational symmetry around the origin.",
+      "explanation": "Roses graphs created by r = a*sin(bθ) have rotational symmetry equal to 2b.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, assuming that there is linear symmetry. However, rose petals only exhibit rotational symmetry."
+    },
+    {
+      "id": "Circle",
+      "stem": "The polar equation r = 1 creates a circle with radius 1. What type of symmetry does this graph have?",
+      "choices": {
+        "A": "It has no symmetry.",
+        "B": "It is symmetric about the horizontal axis only.",
+        "C": "It is symmetric about the vertical axis only.",
+        "D": "It has infinite rotational symmetry."
+      },
+      "correct_choice": "D",
+      "solution": "A circle has infinite rotational symmetry around its center. In this case, the origin acts as the center.",
+      "explanation": "Circles have infinite rotational symmetry, meaning they can be rotated any angle and still align perfectly with their original position.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, thinking that there is linear symmetry. However, circles only exhibit rotational symmetry."
+    },
+    {
+      "id": "Five-Pointed Star",
+      "stem": "The polar equation r = 2sin(4θ) creates a five-pointed star graph. Which statement best describes its symmetry?",
+      "choices": {
+        "A": "It has no symmetry.",
+        "B": "It is symmetric about the horizontal axis only.",
+        "C": "It is symmetric about the vertical axis only.",
+        "D": "It has 4-rotational symmetry."
+      },
+      "correct_choice": "D",
+      "solution": "The polar equation r = a*sin(bθ) creates a star graph with b petals. Since b = 4 in this case, the graph will have 2b = 8-fold rotational symmetry around the origin, but only 4 of those are distinct due to symmetry.",
+      "explanation": "Star graphs created by r = a*sin(bθ) have rotational symmetry equal to 2b, with some symmetries overlapping.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, assuming that there is linear symmetry. However, star graphs only exhibit rotational symmetry."
+    },
+    {
+      "id": "Vertical Line",
+      "stem": "The polar equation r = 2cos(θ) creates a cardioid graph. Which of the following lines will NOT pass through the center of symmetry for this graph?",
+      "choices": {
+        "A": "x = 0",
+        "B": "y = 0",
+        "C": "y = x",
+        "D": "y = -x"
+      },
+      "correct_choice": "C",
+      "solution": "The cardioid created by r = 2cos(θ) has symmetry about both the horizontal and vertical axes. The lines y = x and y = -x are not axes of symmetry.",
+      "explanation": "Cardioids have reflective symmetry along both the x-axis and y-axis, but not along oblique lines like y = x or y = -x.",
+      "common_mistake_notes": "A common mistake would be to choose A or B, thinking that they represent the axes of symmetry. However, those choices are correct; the incorrect choice is C, which represents a line perpendicular to the axes of symmetry."
+    },
+    {
+      "id": "Horizontal Line",
+      "stem": "The polar equation r = 1 + cos(θ) creates a limaçon graph. Which of the following lines will pass through the center of symmetry for this graph?",
+      "choices": {
+        "A": "x = 0",
+        "B": "y = 0",
+        "C": "y = x",
+        "D": "y = -x"
+      },
+      "correct_choice": "A",
+      "solution": "The limaçon created by r = 1 + cos(θ) has symmetry about the horizontal axis. The line y = 0 represents the x-axis, which is an axis of symmetry.",
+      "explanation": "Limaçons with equations like r = a + bcos(θ) or r = a + bsin(θ), where a > |b|, have symmetry along the horizontal (x-axis).",
+      "common_mistake_notes": "A common mistake would be to choose B, C, or D, thinking that they represent axes of symmetry. However, only A is correct as it represents the x-axis."
+    },
+    {
+      "id": "No Symmetry",
+      "stem": "The polar equation r = 2sin(θ)cos(θ) creates a lemniscate graph. Which statement best describes its symmetry?",
+      "choices": {
+        "A": "It has no symmetry.",
+        "B": "It is symmetric about the horizontal axis only.",
+        "C": "It is symmetric about the vertical axis only.",
+        "D": "It has 2-rotational symmetry."
+      },
+      "correct_choice": "D",
+      "solution": "The polar equation r^2 = a^2sin(2θ) creates a lemniscate graph, which has 2-fold rotational symmetry around the origin. In this case, r = 2sin(θ)cos(θ) simplifies to r^2 = 4sin^2(θ)cos^2(θ), which is equivalent to the standard form.",
+      "explanation": "Lemniscates have 2-fold rotational symmetry around their center.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, assuming that there is linear symmetry. However, lemniscates only exhibit rotational symmetry."
+    }
+  ]
+}

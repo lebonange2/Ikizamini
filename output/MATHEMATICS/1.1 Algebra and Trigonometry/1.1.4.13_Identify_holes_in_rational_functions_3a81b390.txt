@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.4.13 Identify holes in rational functions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.4 Polynomial and Rational Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+The function f(x) = (x^2 - 9)/(x - 3) has a hole at what value of x?
+A) -3
+B) 0
+C) 3
+D) 9
+Correct Answer: C
+
+Solution:
+To find the hole in the rational function f(x) = (x^2 - 9)/(x - 3), we first factor the numerator: x^2 - 9 = (x + 3)(x - 3). Since there is a common factor (x - 3) in both the numerator and the denominator, we can cancel it out, assuming x ≠ 3 to avoid division by zero. After cancellation, we get f(x) = (x + 3). The hole occurs at the value of x where the cancelled factor would make the denominator zero, which is x = 3. Therefore, the function has a hole at x = 3.
+
+Explanation:
+Holes occur in rational functions when there's a common factor that can be cancelled between the numerator and the denominator, resulting in a removable discontinuity. In this case, we cancelled (x - 3) because it was a factor in both parts of the function.
+
+Common mistake note:
+A common mistake is to choose -3 as the answer, which is one of the roots of the quadratic term in the numerator. However, since x cannot be equal to -3 for the hole (as that would make the denominator zero), it's not the correct value for the hole.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+The function g(x) = (x^3 - 6x^2 + 9x)/(x - 1) has a hole at what value of x?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: B
+
+Solution:
+To find the hole in g(x) = (x^3 - 6x^2 + 9x)/(x - 1), we first factor the numerator: x^3 - 6x^2 + 9x = x(x - 3)^2. There is no common factor between the numerator and the denominator, so there is no hole in this function. The function g(x) is continuous for all x except when x = 1 (to avoid division by zero).
+
+Explanation:
+If a rational function has no common factors between its numerator and denominator, it does not have any holes. In this case, the factorization of the numerator shows that there's no removable discontinuity.
+
+Common mistake note:
+A common mistake might be to think that x = 3 is the hole because it's a root in the numerator. However, since there's no corresponding factor in the denominator, it does not create a hole.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+The function h(x) = (2x^2 + 8x)/(x^2 + 4x + 4) has a hole at what value of x?
+A) -2
+B) 0
+C) 1
+D) 2
+Correct Answer: A
+
+Solution:
+To find the hole in h(x) = (2x^2 + 8x)/(x^2 + 4x + 4), we first factor both parts of the function: 2x^2 + 8x = 2x(x + 4) and x^2 + 4x + 4 = (x + 2)^2. The common factor is x + 2, which can be cancelled out if x ≠ -2 to avoid division by zero. After cancellation, we get h(x) = 2x/(x + 2). The hole occurs at x = -2. Therefore, the function has a hole at x = -2.
+
+Explanation:
+The hole in this rational function is created by the common factor (x + 2), which can be cancelled between the numerator and the denominator. Once cancelled, we see that x = -2 is where the hole would occur if it weren't for the restriction x ≠ -2 to avoid division by zero.
+
+Common mistake note:
+A common mistake might be to choose x = 0 as the hole because it's a root in the numerator. However, since there's no corresponding factor in the denominator, it does not create a hole.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+The function j(x) = (x^3 - 27)/(x - 3) has a hole at what value of x?
+A) -3
+B) 0
+C) 1
+D) 3
+Correct Answer: A
+
+Solution:
+To find the hole in j(x) = (x^3 - 27)/(x - 3), we first factor the numerator: x^3 - 27 = (x - 3)(x + 3)^2. There is a common factor (x - 3) that can be cancelled out, assuming x ≠ 3 to avoid division by zero. After cancellation, we get j(x) = (x + 3)^2. The hole occurs at x = 3. Therefore, the function has a hole at x = 3.
+
+Explanation:
+The hole in this rational function is created by the common factor (x - 3), which can be cancelled between the numerator and the denominator. Once cancelled, we see that x = 3 is where the hole would occur if it weren't for the restriction x ≠ 3 to avoid division by zero.
+
+Common mistake note:
+A common mistake might be to choose x = -3 as the hole because it's a root in the numerator. However, since there's no corresponding factor in the denominator, it does not create a hole.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+The function k(x) = (x^2 + 4)/(x^2 + 2x) has a hole at what value of x?
+A) 0
+B) 1
+C) 2
+D) None, there is no hole
+Correct Answer: D
+
+Solution:
+To find the hole in k(x) = (x^2 + 4)/(x^2 + 2x), we factor the denominator: x^2 + 2x = x(x + 2). There is no common factor between the numerator and the denominator that can be cancelled, so there is no hole in this function. The function k(x) is continuous for all x except when x = 0 or x = -2 (to avoid division by zero).
+
+Explanation:
+If a rational function has no common factors between its numerator and denominator, it does not have any holes. In this case, there's no removable discontinuity.
+
+Common mistake note:
+A common mistake might be to think that x = 0 is the hole because it's a root in the denominator. However, since there's no corresponding factor in the numerator, it does not create a hole.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+The function l(x) = (x^3 - 27)/(x + 3) has a hole at what value of x?
+A) -3
+B) 0
+C) 1
+D) None, there is no hole
+Correct Answer: D
+
+Solution:
+To find the hole in l(x) = (x^3 - 27)/(x + 3), we factor the numerator: x^3 - 27 = (x - 3)(x + 3)^2. There is no common factor between the numerator and the denominator that can be cancelled, so there is no hole in this function. The function l(x) is continuous for all x except when x = -3 (to avoid division by zero).
+
+Explanation:
+If a rational function has no common factors between its numerator and denominator, it does not have any holes. In this case, the factorization of the numerator shows that there's no removable discontinuity.
+
+Common mistake note:
+A common mistake might be to think that x = 3 is the hole because it's a root in the numerator. However, since there's no corresponding factor in the denominator, it does not create a hole.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+The function m(x) = (x^2 - 1)/(x + 1) has a hole at what value of x?
+A) -1
+B) 0
+C) 1
+D) None, there is no hole
+Correct Answer: A
+
+Solution:
+To find the hole in m(x) = (x^2 - 1)/(x + 1), we factor the numerator: x^2 - 1 = (x - 1)(x + 1). There is a common factor (x + 1) that can be cancelled out, assuming x ≠ -1 to avoid division by zero. After cancellation, we get m(x) = x - 1. The hole occurs at x = -1. Therefore, the function has a hole at x = -1.
+
+Explanation:
+The hole in this rational function is created by the common factor (x + 1), which can be cancelled between the numerator and the denominator. Once cancelled, we see that x = -1 is where the hole would occur if it weren't for the restriction x ≠ -1 to avoid division by zero.
+
+Common mistake note:
+A common mistake might be to choose x = 1 as the hole because it's a root in the numerator. However, since there's no corresponding factor in the denominator, it does not create a hole.
+------------------------------------------------------------------------------

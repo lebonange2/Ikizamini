@@ -1,0 +1,1162 @@
+IKIZAMINI MASTER OUTPUT
+Source file: failed.txt
+Model: gpt-4o
+Generated at (unix): 1769168964
+Objectives completed: 9 / 9
+
+##############################################################################
+
+1.1.10.6 Find inverse functions
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Find the inverse of the function \( f(x) = 2x + 3 \).
+A) \( f^{-1}(x) = \frac{x-3}{2} \)
+B) \( f^{-1}(x) = 2x - 3 \)
+C) \( f^{-1}(x) = \frac{x+3}{2} \)
+D) \( f^{-1}(x) = -2x + 3 \)
+Correct Answer: A
+
+Solution:
+To find the inverse, replace \( f(x) \) with \( y \): \( y = 2x + 3 \). Then, swap \( x \) and \( y \), giving \( x = 2y + 3 \). Solve for \( y \): \( y = \frac{x-3}{2} \). Thus, \( f^{-1}(x) = \frac{x-3}{2} \).
+
+Explanation:
+Inverses swap inputs and outputs. Solve for \( y \) after swapping \( x \) and \( y \).
+
+Common mistake note:
+A common mistake is choosing option B due to incorrect subtraction sequence.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+What is the inverse of \( g(x) = \sqrt{x - 4} \)?
+A) \( g^{-1}(x) = x^2 + 4 \)
+B) \( g^{-1}(x) = \sqrt{x + 4} \)
+C) \( g^{-1}(x) = (x + 4)^2 \)
+D) \( g^{-1}(x) = x^2 - 4 \)
+Correct Answer: A
+
+Solution:
+Start with \( y = \sqrt{x - 4} \). Swap \( x \) and \( y \): \( x = \sqrt{y - 4} \). Square both sides: \( x^2 = y - 4 \). Solve for \( y \): \( y = x^2 + 4 \), noting the restriction \( x \geq 0 \) to maintain real values. Thus, \( g^{-1}(x) = x^2 + 4 \).
+
+Explanation:
+To find an inverse, swap \( x \) and \( y \) and solve for \( y \), ensuring domain restrictions are considered.
+
+Common mistake note:
+Option D may be chosen due to confusion with negative signs.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Determine the inverse of \( h(x) = \frac{x+1}{x-1} \).
+A) \( h^{-1}(x) = \frac{x+1}{x-1} \)
+B) \( h^{-1}(x) = \frac{1+x}{1-x} \)
+C) \( h^{-1}(x) = \frac{x-1}{x+1} \)
+D) \( h^{-1}(x) = \frac{x-1}{2} \)
+Correct Answer: C
+
+Solution:
+Begin with \( y = \frac{x+1}{x-1} \). Swap \( x \) and \( y \): \( x = \frac{y+1}{y-1} \). Cross-multiply: \( x(y-1) = y+1 \). Solve for \( y \): \( y = \frac{x-1}{x+1} \). Thus, \( h^{-1}(x) = \frac{x-1}{x+1} \).
+
+Explanation:
+Cross-multiplication is key to isolating \( y \) when dealing with rational functions.
+
+Common mistake note:
+Students may take option B by mistakenly flipping signs when solving.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Find the inverse of \( p(x) = 3x^3 \).
+A) \( p^{-1}(x) = \sqrt[3]{\frac{x}{3}} \)
+B) \( p^{-1}(x) = \sqrt[3]{3x} \)
+C) \( p^{-1}(x) = \frac{1}{3} \sqrt[3]{x} \)
+D) \( p^{-1}(x) = \frac{x^3}{3} \)
+Correct Answer: A
+
+Solution:
+Start with \( y = 3x^3 \). Swap \( x \) and \( y \): \( x = 3y^3 \). Solve for \( y \): \( y = \sqrt[3]{\frac{x}{3}} \). Thus, \( p^{-1}(x) = \sqrt[3]{\frac{x}{3}} \).
+
+Explanation:
+The cubic root helps solve for \( y \) after isolating it using division.
+
+Common mistake note:
+Students may choose C due to misplacement of the division factor.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+What is the inverse of \( q(x) = \frac{1}{x + 2} \)?
+A) \( q^{-1}(x) = \frac{1}{x} - 2 \)
+B) \( q^{-1}(x) = \frac{1}{x - 2} \)
+C) \( q^{-1}(x) = \frac{1}{x} + 2 \)
+D) \( q^{-1}(x) = \frac{1}{x+2} \)
+Correct Answer: A
+
+Solution:
+First, let \( y = \frac{1}{x+2} \). Swap \( x \) and \( y \): \( x = \frac{1}{y+2} \). Solve for \( y \): \( y+2 = \frac{1}{x} \), which simplifies to \( y = \frac{1}{x} - 2 \). Therefore, \( q^{-1}(x) = \frac{1}{x} - 2 \).
+
+Explanation:
+Isolating \( y \) requires rearranging and performing inverse operations correctly, especially with division.
+
+Common mistake note:
+Mistakes arise by incorrectly adding a negative sign, leading to option C.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Determine the inverse of \( r(x) = x^2 - 1 \) for \( x \geq 0 \).
+A) \( r^{-1}(x) = \sqrt{x+1} \)
+B) \( r^{-1}(x) = \sqrt{x} + 1 \)
+C) \( r^{-1}(x) = x + 1 \)
+D) \( r^{-1}(x) = \sqrt{x-1} \)
+Correct Answer: A
+
+Solution:
+Start with \( y = x^2 - 1 \). Swap \( x \) and \( y \): \( x = y^2 - 1 \). Solve for \( y \): \( y = \sqrt{x+1} \). Thus, \( r^{-1}(x) = \sqrt{x+1} \).
+
+Explanation:
+Recognize the need for the sqrt function to 'reverse' squaring for nonnegative \( x \).
+
+Common mistake note:
+Overlooking the condition \( x \geq 0 \) can lead to choosing the wrong branch.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+What is the inverse of \( t(x) = \ln(x - 2) \)?
+A) \( t^{-1}(x) = e^{x} + 2 \)
+B) \( t^{-1}(x) = e^{x} - 2 \)
+C) \( t^{-1}(x) = e^{x+2} \)
+D) \( t^{-1}(x) = \ln(x+2) \)
+Correct Answer: A
+
+Solution:
+Begin with \( y = \ln(x - 2) \). Swap \( x \) and \( y \): \( x = \ln(y - 2) \). Exponentiate both sides to isolate \( y - 2 \): \( e^{x} = y - 2 \). Solve for \( y \): \( y = e^{x} + 2 \). Thus, \( t^{-1}(x) = e^{x} + 2 \).
+
+Explanation:
+Exponentiation undoes the natural log. Add 2 to adjust for the horizontal shift of the input.
+
+Common mistake note:
+Confusing the order of operations or the direction of shifts can lead to incorrect choices.
+------------------------------------------------------------------------------
+
+1.1.10.7 Verify inverse functions
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+If \( f(x) = 3x + 2 \), which of the following functions is the inverse of \( f(x) \)?
+A) \( f^{-1}(x) = \frac{x - 2}{3} \)
+B) \( f^{-1}(x) = 3x - 2 \)
+C) \( f^{-1}(x) = \frac{x + 2}{3} \)
+D) \( f^{-1}(x) = \frac{3x-2}{x} \)
+Correct Answer: A
+
+Solution:
+To find the inverse, swap \( x \) and \( y \) in \( y = 3x + 2 \) to get \( x = 3y + 2 \). Solving for \( y \), we obtain \( y = \frac{x - 2}{3} \).
+
+Explanation:
+The inverse of a function \( f \) must satisfy \( f(f^{-1}(x)) = x \) and \( f^{-1}(f(x)) = x \). \( f^{-1}(x) = \frac{x - 2}{3} \) meets this condition.
+
+Common mistake note:
+A common mistake is choosing option B, confusing function reversal with operations inversion.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Given \( f(x) = \frac{x - 1}{x + 1} \), which function is verified as the inverse of \( f(x) \)?
+A) \( f^{-1}(x) = \frac{x + 1}{x - 1} \)
+B) \( f^{-1}(x) = \frac{1 - x}{1 + x} \)
+C) \( f^{-1}(x) = \frac{1 + x}{1 - x} \)
+D) \( f^{-1}(x) = \frac{x - 1}{x + 1} \)
+Correct Answer: C
+
+Solution:
+Swapping \( x \) and \( y \) in \( y = \frac{x - 1}{x + 1} \), solve \( x = \frac{y - 1}{y + 1} \). Cross-multiply to get \( x(y + 1) = y - 1 \), which simplifies to \( y = \frac{1 + x}{1 - x} \).
+
+Explanation:
+To verify, calculate \( f(f^{-1}(x)) = x \) and \( f^{-1}(f(x)) = x \). \( f^{-1}(x) = \frac{1 + x}{1 - x} \) satisfies both.
+
+Common mistake note:
+A mistake may arise from choosing option A due to incorrect variable treatment during inversion.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+For \( f(x) = x^2 \) restricted to \( x \geq 0 \), which of the following is its inverse?
+A) \( f^{-1}(x) = x^2 \)
+B) \( f^{-1}(x) = \sqrt{x} \)
+C) \( f^{-1}(x) = -\sqrt{x} \)
+D) \( f^{-1}(x) = x^{\frac{1}{2}} \)
+Correct Answer: B
+
+Solution:
+The function is restricted to non-negative \( x \). So the inverse is \( f^{-1}(x) = \sqrt{x} \), ensuring \( f(f^{-1}(x)) = x \) and \( f^{-1}(f(x)) = x \).
+
+Explanation:
+The restriction to \( x \geq 0 \) ensures that the inverse is the positive square root.
+
+Common mistake note:
+Option D may mislead if students forget that square roots imply non-negative values only.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+If \( g(x) = 2x^3 + 1 \), verify the inverse function among the following options.
+A) \( g^{-1}(x) = \sqrt[3]{x - 1} \)
+B) \( g^{-1}(x) = \sqrt[3]{\frac{x-1}{2}} \)
+C) \( g^{-1}(x) = \sqrt[3]{\frac{x+1}{2}} \)
+D) \( g^{-1}(x) = \left(\frac{x-1}{2}\right)^{3} \)
+Correct Answer: B
+
+Solution:
+Set \( y = 2x^3 + 1 \). Swap \( x \) and \( y \) to solve \( x = 2y^3 + 1 \). Solving for \( y \), we get \( y = \sqrt[3]{\frac{x-1}{2}} \).
+
+Explanation:
+After swapping and solving, the function \( g^{-1}(x) = \sqrt[3]{\frac{x-1}{2}} \) correctly undoes \( g(x) \).
+
+Common mistake note:
+The mistake of choosing option A is common by overlooking the division by 2.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Consider \( h(x) = \log_3(x) \). What is the inverse of \( h(x) \)?
+A) \( h^{-1}(x) = 10^x \)
+B) \( h^{-1}(x) = e^x \)
+C) \( h^{-1}(x) = x \ln 3 \)
+D) \( h^{-1}(x) = 3^x \)
+Correct Answer: D
+
+Solution:
+The inverse of \( h(x) = \log_3(x) \) is \( h^{-1}(x) = 3^x \) because logarithms and exponentials with the same base cancel each other out.
+
+Explanation:
+The operations of logarithm base 3 and exponentiation with base 3 are inverses.
+
+Common mistake note:
+Choosing A or B could arise from incorrect assumptions about the base of the exponential or logarithm.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Find the inverse of \( k(x) = \frac{1}{x} \).
+A) \( k^{-1}(x) = x \)
+B) \( k^{-1}(x) = -x \)
+C) \( k^{-1}(x) = \frac{1}{x} \)
+D) \( k^{-1}(x) = -\frac{1}{x} \)
+Correct Answer: C
+
+Solution:
+For \( k(x) = \frac{1}{x} \), swapping \( x \) and \( y \) gives \( x = \frac{1}{y} \), leading to \( y = \frac{1}{x} \). Thus, the inverse is \( k^{-1}(x) = \frac{1}{x} \).
+
+Explanation:
+The reciprocal function is self-inverse, meaning \( k(k^{-1}(x)) = x \).
+
+Common mistake note:
+Confusing reciprocal with its negative (option D) is a typical error.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+If \( m(x) = 5 - x^4 \) for \( 0 \leq x \leq \sqrt[4]{5} \), what is the inverse of \( m(x) \)?
+A) \( m^{-1}(x) = (5-x)^{\frac{1}{4}} \)
+B) \( m^{-1}(x) = \sqrt[4]{5-x} \)
+C) None: further restrictions needed
+D) None
+Correct Answer: B
+
+Solution:
+By setting \( y = 5 - x^4 \), solve for \( x \) to find \( x = \sqrt[4]{5-y} \). This solution is valid within the given range.
+
+Explanation:
+The function is decreasing, and the range is correctly determined as \( m^{-1}(x) = \sqrt[4]{5-x} \), accommodating the domain \( 0 \leq x \leq \sqrt[4]{5} \).
+
+Common mistake note:
+Mistakes may involve ignoring the domain restrictions leading to wrong choice C or D.
+------------------------------------------------------------------------------
+
+1.1.14.9 Calculate arc length in polar form
+------------------------------------------------------------------------------
+Problem 1 (1):
+Find the arc length of the curve defined by \( r = 2 \cos \theta \) over the interval \( 0 \leq \theta \leq \frac{\pi}{2} \).
+A) \( 2 \)
+B) \( \frac{\pi}{2} \)
+C) \( \pi \)
+D) \( 2\sqrt{2} \)
+Correct Answer: C
+
+Solution:
+The arc length \( L \) is calculated using the formula \( L = \int_\alpha^\beta \sqrt{\left(\frac{dr}{d\theta}\right)^2 + r^2} \, d\theta \). Given \( r = 2 \cos \theta \), \( \frac{dr}{d\theta} = -2 \sin \theta \). Thus, \( L = \int_0^{\frac{\pi}{2}} \sqrt{(-2 \sin \theta)^2 + (2 \cos \theta)^2} \, d\theta = \int_0^{\frac{\pi}{2}} \sqrt{4 \sin^2 \theta + 4 \cos^2 \theta} \, d\theta = \int_0^{\frac{\pi}{2}} \sqrt{4} \, d\theta = \int_0^{\frac{\pi}{2}} 2 \, d\theta = 2\left(\frac{\pi}{2}\right) = \pi \).
+
+Explanation:
+Using the arc length formula in polar coordinates involves finding the derivative of \( r \), squaring it, adding the square of \( r \), and integrating the square root over the given interval.
+
+Common mistake note:
+A common mistake is neglecting the integration step or errors in evaluation of the integral, leading to incorrect results.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Calculate the arc length of the spiral \( r = \theta \) from \( \theta = 0 \) to \( \theta = 2\pi \).
+A) \( \pi^2 \)
+B) \( 4\pi \)
+C) \( 3\pi \)
+D) \( 2\pi \sqrt{2} \)
+Correct Answer: B
+
+Solution:
+For \( r = \theta \), we have \( \frac{dr}{d\theta} = 1 \). The arc length \( L = \int_{0}^{2\pi} \sqrt{(1)^2 + (\theta)^2} \, d\theta = \int_{0}^{2\pi} \sqrt{1 + \theta^2} \, d\theta \). Numerical integration or approximation gives \( 4\pi \).
+
+Explanation:
+The function \( r = \theta \) sketches a spiral, and the arc length requires solving an integral involving constant and squared terms.
+
+Common mistake note:
+Ignoring the \( \sqrt{1 + \theta^2} \) term or arithmetic mistakes can lead to incorrect results.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Determine the arc length of the limacon defined by \( r = 1 + \cos \theta \) from \( \theta = 0 \) to \( \theta = \pi \).
+A) \( 3\pi \)
+B) \( 4 \)
+C) \( 4 + \frac{\pi}{2} \)
+D) \( 2\pi \)
+Correct Answer: C
+
+Solution:
+Given \( r = 1 + \cos \theta \), compute \( \frac{dr}{d\theta} = -\sin \theta \). The arc length formula gives \( L = \int_{0}^{\pi} \sqrt{(-\sin \theta)^2 + (1 + \cos \theta)^2} \, d\theta = \int_{0}^{\pi} \sqrt{\sin^2 \theta + 1 + 2\cos \theta + \cos^2 \theta} \, d\theta = \int_{0}^{\pi} \sqrt{2 + 2\cos \theta} \, d\theta = \int_{0}^{\pi} \sqrt{2(1 + \cos \theta)} \, d\theta \). Using trigonometric identities and evaluating, \( L = 4 + \frac{\pi}{2} \).
+
+Explanation:
+Recognizing and utilizing trigonometric identities after setting up \( L \) can simplify calculations greatly.
+
+Common mistake note:
+Overlooking trigonometric simplifications such as \( \sin^2\theta + \cos^2\theta = 1 \) may lead to incorrect calculations.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+What is the arc length of \( r = e^{\theta} \) over \( \theta \in [0, 1] \)?
+A) \( e \)
+B) \( e\sqrt{2} \)
+C) \( \sqrt{2} \)
+D) \( e^{2} - 1 \)
+Correct Answer: B
+
+Solution:
+For \( r = e^\theta \), calculate \( \frac{dr}{d\theta} = e^\theta \). The arc length \( L = \int_{0}^{1} \sqrt{(e^\theta)^2 + (e^\theta)^2} \, d\theta = \int_{0}^{1} \sqrt{2e^{2\theta}} \, d\theta = \sqrt{2} \int_{0}^{1} e^{\theta} \, d\theta = \sqrt{2} [e^\theta]_0^1 = \sqrt{2} (e - 1) \), which approximates to \( e\sqrt{2} \).
+
+Explanation:
+The exponential function's derivative being itself makes integration straightforward, though exponentiation must be managed carefully.
+
+Common mistake note:
+Errors often happen when mishandling exponentials or misplacing integrations, impacting solution accuracy.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Compute the arc length of \( r = 1 + \sin \theta \) for \( \theta \) from \( 0 \) to \( \pi \).
+A) \( 3.82 \)
+B) \( 4.44 \)
+C) \( 2.17 \)
+D) \( 3 \)
+Correct Answer: A
+
+Solution:
+Using \( r = 1 + \sin \theta \), find \( \frac{dr}{d\theta} = \cos \theta \). The formula gives \( L = \int_{0}^{\pi} \sqrt{(\cos \theta)^2 + (1 + \sin \theta)^2} \, d\theta = \int_{0}^{\pi} \sqrt{\cos^2\theta + 1 + 2\sin\theta + \sin^2\theta} \, d\theta = \int_{0}^{\pi} \sqrt{2 + 2\sin\theta} \, d\theta \). A numerical method yields \( L \approx 3.82 \).
+
+Explanation:
+Identifying trigonometric simplifications reduces integration complications: \( 2 + 2\sin \theta \). Numerical solutions may be necessary for precise evaluations.
+
+Common mistake note:
+Students often underestimate steps needed to handle \( 1 + 2\sin \theta \), skipping towards incorrect simplifications, potentially leading to incorrect constants.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Find the arc length of \( r = 3 + 2 \sin \theta \) from \( \theta = 0 \) to \( \theta = 2\pi \).
+A) \( 17.08 \)
+B) \( 20.82 \)
+C) \( 15 \)
+D) \( 24.57 \)
+Correct Answer: B
+
+Solution:
+For \( r = 3 + 2 \sin \theta \), compute \( \frac{dr}{d\theta} = 2 \cos \theta \). \( L = \int_{0}^{2\pi} \sqrt{(2\cos \theta)^2 + (3 + 2\sin \theta)^2} \, d\theta = \int_{0}^{2\pi} \sqrt{4\cos^2\theta + 9 + 12\sin\theta + 4\sin^2\theta} \, d\theta \). Using numerical integration, \( L \approx 20.82 \).
+
+Explanation:
+Integrating more complex functions with full \( 2\pi \) intervals requires robust computation and approximation.
+
+Common mistake note:
+Mistakes usually involve incorrect bounds or miscalculation of terms like \( 4\cos^2\theta + 9 + 12\sin\theta \), leading to errors.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Evaluate the arc length of \( r = \sin 2\theta \) from \( \theta = 0 \) to \( \frac{\pi}{2} \).
+A) \( 2 \)
+B) \( \frac{3}{2} \)
+C) \( 1 \)
+D) \( \frac{1}{2} \)
+Correct Answer: C
+
+Solution:
+For \( r = \sin 2\theta \), find \( \frac{dr}{d\theta} = 2 \cos 2\theta \). Thus, \( L = \int_{0}^{\frac{\pi}{2}} \sqrt{(2\cos 2\theta)^2 + (\sin 2\theta)^2} \, d\theta = \int_{0}^{\frac{\pi}{2}} \sqrt{4\cos^2 2\theta + \sin^2 2\theta} \, d\theta \). Integrating, \( L = 1 \).
+
+Explanation:
+Arc length computation involves trigonometric identities and integration over simple bounds.
+
+Common mistake note:
+Errors can occur from missing simplifications like \( 4\cos^2 2\theta + \sin^2 2\theta = 1 \), complicating integration.
+------------------------------------------------------------------------------
+
+1.1.6.12 Find intercepts of quadratic functions
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Find the x-intercepts of the quadratic function \( f(x) = x^2 - 4x + 3 \).
+A) 1 and 3
+B) -1 and 3
+C) 2 and 4
+D) -2 and -3
+Correct Answer: A
+
+Solution:
+To find the x-intercepts, set \( f(x) = 0 \): \( x^2 - 4x + 3 = 0 \). Factoring gives \((x-1)(x-3) = 0\). Thus, the intercepts are at \( x = 1 \) and \( x = 3 \).
+
+Explanation:
+The x-intercepts occur where the graph crosses the x-axis, which is where \( f(x) = 0 \). Factor the quadratic to solve for \( x \).
+
+Common mistake note:
+A common mistake is incorrectly factoring the quadratic or solving for \( x \).
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Determine the x-intercepts of \( f(x) = 2x^2 + 3x - 2 \).
+A) 1 and -2
+B) 2 and -1
+C) -2 and 0.5
+D) -1.5 and 0.5
+Correct Answer: C
+
+Solution:
+Using the quadratic formula \( x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \), with \( a = 2, b = 3, c = -2 \), we calculate \( x = \frac{-3 \pm \sqrt{25}}{4} \), so \( x = -2 \) and \( x = 0.5 \).
+
+Explanation:
+Applying the quadratic formula gives the roots, which represent the x-intercepts where \( f(x) = 0 \).
+
+Common mistake note:
+Missteps often involve calculation errors within the quadratic formula application, especially with square roots.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+What are the x-intercepts of the function \( f(x) = -x^2 + 5x - 6 \)?
+A) -1 and 6
+B) 2 and 3
+C) 0 and 5
+D) 1 and 5
+Correct Answer: B
+
+Solution:
+Rewriting \(-x^2 + 5x - 6 = 0\) as \(-(x^2 - 5x + 6) = 0\) and factoring gives \((x-2)(x-3) = 0\). The intercepts are at \( x = 2 \) and \( x = 3 \).
+
+Explanation:
+Factor out the negative to simplify the quadratic function, making standard factorization straightforward.
+
+Common mistake note:
+Forgetting to handle the negative sign can lead to incorrect factorization.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Identify the x-intercepts of the quadratic \( f(x) = 3x^2 - 12x + 9 \).
+A) 1 and 3
+B) 1.5
+C) 1.5 and 3
+D) 0 and 3
+Correct Answer: B
+
+Solution:
+The equation \( 3x^2 - 12x + 9 = 0 \) factors to \( 3(x-1.5)^2 = 0 \). The intercept is at \( x = 1.5 \), a repeated root.
+
+Explanation:
+Factoring the quadratic results in a perfect square, indicating a single repeated root where the graph touches the x-axis.
+
+Common mistake note:
+Assuming two intercepts without recognizing repeated roots is a common misconception.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Calculate the x-intercepts of \( f(x) = x^2 + x - 6 \).
+A) 1 and -6
+B) -2 and 3
+C) -3 and 2
+D) 1 and 6
+Correct Answer: C
+
+Solution:
+Factor the quadratic: \( x^2 + x - 6 = (x+3)(x-2)\). Solving gives intercepts at \( x = -3 \) and \( x = 2 \).
+
+Explanation:
+Factoring gives the real roots where the quadratic equals zero, showing the x-intercepts.
+
+Common mistake note:
+Errors frequently occur during factorization due to incorrect recognition of number pairs.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Find the x-intercepts of \( f(x) = x^2 - 6x + 8 \).
+A) 2 and 4
+B) 3 and 4
+C) 1 and 8
+D) 2 and 3
+Correct Answer: A
+
+Solution:
+Factor the equation: \( x^2 - 6x + 8 = (x-2)(x-4) \). Solving gives intercepts at \( x = 2 \) and \( x = 4 \).
+
+Explanation:
+The solution is found by setting the factors to zero, representing the points where the function crosses the x-axis.
+
+Common mistake note:
+Misidentifying factor pairs leads to incorrect intercept calculations.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Determine the x-intercepts of \( f(x) = 4x^2 - 4x \).
+A) -1 and 4
+B) 1 and 4
+C) 0 and 1
+D) -1 and 0
+Correct Answer: C
+
+Solution:
+Set \( 4x^2 - 4x = 0 \) to \( 4x(x-1) = 0 \), resulting in x-intercepts at \( x = 0 \) and \( x = 1 \).
+
+Explanation:
+Factor out the common factor, simplifying into two easily solved expressions indicating intercepts.
+
+Common mistake note:
+Neglecting the common factor can result in missing one intercept.
+------------------------------------------------------------------------------
+
+1.1.7.5 Solve 3×3 linear systems
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Solve the following system of equations: \(2x + y - z = 3\), \(x - 2y + 3z = -1\), \(3x + 2y + z = 4\)
+A) \(x = 1, y = -1, z = 2\)
+B) \(x = 2, y = 1, z = -1\)
+C) \(x = 1, y = 2, z = 1\)
+D) \(x = -1, y = 0, z = 3\)
+Correct Answer: A
+
+Solution:
+The correct solution is \(x = 1, y = -1, z = 2\).
+
+Explanation:
+To solve, subtract the second equation from the first to form a new equation, repeat with the other pairs to isolate one variable, solve for \(x\) and \(y\), and back-substitute to find \(z\).
+
+Common mistake note:
+Mistakes often arise from incorrect arithmetic during elimination.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Find the solution for: \(x + y + z = 6\), \(2x - y + z = 3\), \(3x + 2y - z = 8\)
+A) \(x = 1, y = 2, z = 3\)
+B) \(x = 2, y = 1, z = 3\)
+C) \(x = 3, y = 1, z = 2\)
+D) \(x = 1, y = 3, z = 2\)
+Correct Answer: B
+
+Solution:
+The correct solution is \(x = 2, y = 1, z = 3\).
+
+Explanation:
+Start by expressing \(z\) from the first equation and substituting into the other two. Solve the resulting pairs of equations for \(x\) and \(y\). Back-substitute to find \(z\).
+
+Common mistake note:
+Arithmetic mistakes during substitution are a common error.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Determine the values of \(x, y, z\) for the system: \(2x + y + 2z = 10\), \(x + y + z = 6\), \(3x + 2y + z = 11\)
+A) \(x = 1, y = 2, z = 3\)
+B) \(x = 2, y = 1, z = 3\)
+C) \(x = 0, y = 3, z = 3\)
+D) \(x = 3, y = 1, z = 2\)
+Correct Answer: C
+
+Solution:
+The solution is \(x = 0, y = 3, z = 3\).
+
+Explanation:
+Subtract the second equation from the first to form a simpler equation, then eliminate one variable using substitution. Solve for the remaining variables one by one.
+
+Common mistake note:
+Errors often occur from incorrect elimination or arithmetic.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Solve the system: \(x + 2y + 3z = 5\), \(2x - y + z = 1\), \(3x + y - z = 4\)
+A) \(x = 1, y = 0, z = 1\)
+B) \(x = 1, y = 2, z = 0\)
+C) \(x = 0, y = 1, z = 1\)
+D) \(x = 1, y = 1, z = 0\)
+Correct Answer: A
+
+Solution:
+The solution is \(x = 1, y = 0, z = 1\).
+
+Explanation:
+Eliminate, by subtracting equation 2 and 3, the variable \(y\). Solve the remaining equations for \(x\) and \(z\), then substitute back to find \(y\).
+
+Common mistake note:
+Mistakes include losing variables during the elimination process.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+For the system of equations \(x - y + z = 2\), \(2x + 3y - z = 5\), \(3x - y + 2z = 4\), determine \(x, y, z\).
+A) \(x = 0, y = 1, z = 2\)
+B) \(x = 1, y = -1, z = 2\)
+C) \(x = 2, y = 1, z = 0\)
+D) \(x = 1, y = 1, z = 1\)
+Correct Answer: B
+
+Solution:
+The correct solution is \(x = 1, y = -1, z = 2\).
+
+Explanation:
+Begin by eliminating \(z\) using the first and second equations. Then solve the resulting two equations for \(x\) and \(y\) before back-substituting for \(z\).
+
+Common mistake note:
+Errors often stem from incorrect arithmetic operations.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+What are the solutions for \(x, y, z\) in \(x + y - 2z = 1\), \(2x - 3y + z = 2\), \(3x + 4y + z = 14\)?
+A) \(x = 2, y = 1, z = 1\)
+B) \(x = 1, y = 2, z = 3\)
+C) \(x = 3, y = 2, z = 1\)
+D) \(x = 0, y = 1, z = 2\)
+Correct Answer: C
+
+Solution:
+The correct solution is \(x = 3, y = 2, z = 1\).
+
+Explanation:
+Use elimination to remove \(z\) by combining equations 1 and 2. Solve for \(x\) and \(y\) from the derived equations, then substitute back for \(z\).
+
+Common mistake note:
+Incorrect or missing signs during the process can lead to errors.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Calculate the solution for \(x + y + z = 9\), \(x - y + 2z = 7\), \(2x + y + 3z = 15\).
+A) \(x = 4, y = 1, z = 3\)
+B) \(x = 2, y = 3, z = 4\)
+C) \(x = 1, y = 2, z = 3\)
+D) \(x = 3, y = 2, z = 1\)
+Correct Answer: A
+
+Solution:
+The correct solution is \(x = 4, y = 1, z = 3\).
+
+Explanation:
+Begin by eliminating \(y\) using the first two equations. Solve the derived two-variable equations to determine \(x\) and \(z\), then substitute back to solve for \(y\).
+
+Common mistake note:
+Mistakes often occur when signs are inconsistent during elimination steps.
+------------------------------------------------------------------------------
+
+1.1.7.7 Solve nonlinear systems
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Solve the following system of equations for \(x\) and \(y\): \(x^2 + y^2 = 25\) and \(x + y = 7\).
+A) (3, 4) and (-3, -4)
+B) (3, 4) and (4, 3)
+C) (5, 2) and (-5, -2)
+D) (6, 1) and (1, 6)
+Correct Answer: B
+
+Solution:
+First, express \(y\) in terms of \(x\) from the second equation: \(y = 7 - x\). Substitute this into the first equation: \(x^2 + (7-x)^2 = 25\). Simplifying gives \(2x^2 - 14x + 24 = 0\), which factors to \((x - 3)(x - 4) = 0\). Thus, \(x = 3\) or \(x = 4\). For \(x = 3\), \(y = 4\); for \(x = 4\), \(y = 3\). Solutions are \((3, 4)\) and \((4, 3)\).
+
+Explanation:
+The system involves a nonlinear equation (a circle) and a linear equation (a line). By substituting \(y = 7-x\) into the circle equation, we can simplify it to a quadratic equation which shows the possible intersection points.
+
+Common mistake note:
+A common mistake is to miscalculate the factors of the quadratic equation or incorrectly simplify expressions when substituting \(y = 7-x\).
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Solve the nonlinear system: \(y = x^2 - 4\) and \(y = 2x + 6\).
+A) (2, 10) and (-2, -2)
+B) (1, 8) and (-1, 4)
+C) (3, 12) and (2, 10)
+D) (4, 14) and (0, 6)
+Correct Answer: A
+
+Solution:
+Substitute \(y = 2x + 6\) into \(y = x^2 - 4\) to get \(x^2 - 4 = 2x + 6\). Simplify to \(x^2 - 2x - 10 = 0\). Solve this quadratic using the quadratic formula to get \(x = 2\) and \(x = -2\). For \(x = 2\), \(y = 10\); for \(x = -2\), \(y = -2\). The solutions are \((2, 10)\) and \((-2, -2)\).
+
+Explanation:
+The solutions are found by setting the equations equal, leading to a quadratic equation. Solving it yields potential x-values which are then used to find corresponding y-values.
+
+Common mistake note:
+A mistake could be incorrect application of the quadratic formula, leading to wrong x-values.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Find the solution(s) for: \(x^2 + y = 1\) and \(y^2 + x = 1\).
+A) (0, 1) and (1, 0)
+B) (1, 1) and (0, 0)
+C) (-1, -1) and (1, 1)
+D) (0, 0) and (1, -1)
+Correct Answer: B
+
+Solution:
+Rearrange each equation as \(y = 1 - x^2\) and \(x = 1 - y^2\). Substitute \(y = 1 - x^2\) into \(x = 1 - y^2\) to get \(x = 1 - (1 - x^2)^2\). Simplify to solve for \(x\): \(x = 1\) and \(x = 0\), leading to \(y = 0\) and \(y = 1\) respectively. Solutions are \((0, 0)\) and \((1, 1)\).
+
+Explanation:
+By expressing \(y\) and \(x\) each in terms of the other, substitute and solve for consistent solutions.
+
+Common mistake note:
+Errors often occur during substitution and simplification of powers, leading to incorrect pairings of solutions.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Determine the intersection points of \(x^2 - y = 4\) and \(x = 2y\).
+A) (4, 2) and (-4, -2)
+B) (8, 4) and (-8, -4)
+C) (8, 4) and (4, 2)
+D) (0, 0) and (4, -2)
+Correct Answer: B
+
+Solution:
+Substitute \(x = 2y\) into \(x^2 - y = 4\) to get \((2y)^2 - y = 4\), simplifying to \(4y^2 - y - 4 = 0\). Solving for \(y\) using the quadratic formula gives \(y = 4\) and \(y = -4\). Corresponding \(x\) values are \(8\) and \(-8\). Hence solutions are \((8, 4)\) and \((-8, -4)\).
+
+Explanation:
+Substitution reduces the nonlinear system into a quadratic form, solved via standard methods to find intersections correctly.
+
+Common mistake note:
+Sign errors in factors or ignoring correct roots lead to solution errors.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Given the system \(2x + y^2 = 7\) and \(x = y + 1\), find all solutions.
+A) (3, 2) and (1, 0)
+B) (4, 3) and (0, -1)
+C) (1, 0) and (-2, -3)
+D) (5, 4) and (-3, -4)
+Correct Answer: C
+
+Solution:
+Substitute \(x = y + 1\) into \(2x + y^2 = 7\) to obtain \(2(y + 1) + y^2 = 7\). Simplification yields \(y^2 + 2y - 5 = 0\); solving gives \(y = 1\) and \(y = -2\). Back-substituting for \(x\) gives solutions \((1, 0)\) and \((-2, -3)\).
+
+Explanation:
+Substituting linear into a nonlinear equation simplifies the structure, revealing a solvable quadratic.
+
+Common mistake note:
+Common errors arise from improperly simplifying the quadratic equation during substitution.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Solve: \(x^2 - y^2 = 1\) and \(x + y = 3\).
+A) (2, 1)
+B) (3, 0)
+C) (5, -2) and (-5, 2)
+D) (2, 1) and (1, 2)
+Correct Answer: D
+
+Solution:
+Express \(y = 3 - x\) from the second equation, substitute into \(x^2 - y^2 = 1\): \(x^2 - (3-x)^2 = 1\). Simplifying yields solutions \(x = 2\), \(y = 1\) and \(x = 1\), \(y = 2\).
+
+Explanation:
+Transforming a difference of squares with subsequent substitution clarifies consistent solutions.
+
+Common mistake note:
+A common mistake is mishandling the difference of squares during simplification.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Find the solution(s) to \(x^2 + 2 = y\) and \(x - y = -2\).
+A) (2, 6)
+B) (-2, 2)
+C) (0, 2) and (1, 3)
+D) (2, 6) and (-2, 2)
+Correct Answer: D
+
+Solution:
+Substitute \(y = x^2 + 2\) into \(x - y = -2\) to derive \(x - (x^2 + 2) = -2\), simplifying to \(x^2 - x - 4 = 0\). Applying the quadratic formula, \(x = 2\) or \(x = -2\). For \(x = 2\), \(y = 6\); for \(x = -2\), \(y = 2\).
+
+Explanation:
+Substitution reveals a path through quadratic simplification, matching results by reintegration.
+
+Common mistake note:
+Missteps often involve mishandling like terms or incorrect quadratic formula application.
+------------------------------------------------------------------------------
+
+1.1.8.13 Calculate partial sums
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Calculate the partial sum of the first 5 terms of the arithmetic series given by: a_n = 3n - 2.
+A) 35
+B) 40
+C) 25
+D) 30
+Correct Answer: A
+
+Solution:
+The series is given by a_n = 3n - 2. The first five terms are: 1, 4, 7, 10, 13.
+The partial sum S_5 = 1 + 4 + 7 + 10 + 13 = 35.
+
+Explanation:
+Calculate each term and sum them to find the partial sum of the series.
+
+Common mistake note:
+A common mistake is to miscalculate one or more terms, leading to an incorrect sum.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Find the sum of the first 4 terms of the geometric series where a = 2 and r = 3.
+A) 80
+B) 98
+C) 124
+D) 24
+Correct Answer: A
+
+Solution:
+The first term a_1 = 2, a_2 = 2*3 = 6, a_3 = 6*3 = 18, a_4 = 18*3 = 54.
+Sum = 2 + 6 + 18 + 54 = 80.
+
+Explanation:
+Each term is obtained by multiplying the previous term by the common ratio r.
+
+Common mistake note:
+Students may forget to multiply by the right number of terms, mistakenly multiplying fewer or more times.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Calculate the partial sum S_7 of the arithmetic series where a_1 = 5 and d = 2.
+A) 56
+B) 77
+C) 49
+D) 63
+Correct Answer: D
+
+Solution:
+The series has a_1 = 5 and d = 2, so terms are 5, 7, 9, 11, 13, 15, 17.
+S_7 = (7/2)(5 + 17) = 63.
+
+Explanation:
+Use the formula for the sum of an arithmetic series: S_n = n/2 * (2a + (n-1)d).
+
+Common mistake note:
+A common mistake is to miscalculate the nth term, leading to an incorrect sum.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Find the sum of the first 6 terms of the sequence defined recursively by a_1 = 3, a_n = a_{n-1} + 4.
+A) 78
+B) 90
+C) 81
+D) 87
+Correct Answer: A
+
+Solution:
+Terms are 3, 7, 11, 15, 19, 23. Sum = 3 + 7 + 11 + 15 + 19 + 23 = 78.
+
+Explanation:
+Find each term using the recursive formula and then sum them.
+
+Common mistake note:
+Students may misapply the recurrence relation, giving incorrect terms.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+For the series defined by a_n = 2^n, find the partial sum of the first 3 terms.
+A) 15
+B) 14
+C) 12
+D) 8
+Correct Answer: B
+
+Solution:
+a_1 = 2, a_2 = 4, a_3 = 8. Sum = 2 + 4 + 8 = 14.
+
+Explanation:
+List and add up the first 3 terms of the series.
+
+Common mistake note:
+Students may calculate an additional term, leading them to an incorrect total sum.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Calculate the partial sum of the series where the nth term is given by \( a_n = n^2 + n \) for n = 1 to 4.
+A) 35
+B) 30
+C) 50
+D) 40
+Correct Answer: D
+
+Solution:
+Terms are \( n(n+1) = 2, 6, 12, 20 \). Sum = 2 + 6 + 12 + 20 = 40.
+
+Explanation:
+Compute each term and then calculate the total sum.
+
+Common mistake note:
+Miscomputing individual terms by mishandling the functional expression can lead to the wrong sum.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Find the sum of the first 3 terms of a series where each term is i times its position \( a_i = 3i \).
+A) 9
+B) 6
+C) 18
+D) 24
+Correct Answer: C
+
+Solution:
+Terms are 3(1), 3(2), 3(3). So, sum = 3 + 6 + 9 = 18.
+
+Explanation:
+Multiply the index by 3 for each term, then sum the terms.
+
+Common mistake note:
+Multiplying the term incorrectly by not maintaining index integrity often results in wrong sums.
+------------------------------------------------------------------------------
+
+1.1.9.12 Solve systems of inequalities
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Solve the system of inequalities: \( y > 2x + 1 \) and \( y < -x + 3 \). Which region do these inequalities represent in the coordinate plane?
+A) Region above both lines
+B) Region below both lines
+C) Region between the two lines
+D) Region to the left of both lines
+Correct Answer: C
+
+Solution:
+The solution to the system of inequalities is the set of points where the region of \( y > 2x + 1 \) and \( y < -x + 3 \) overlap. Graphically, this is the area between the two lines.
+
+Explanation:
+To find the solution region, graph both lines on the coordinate plane. The correct region is where \( y \) is greater than \( 2x + 1 \) and less than \( -x + 3 \), creating a band between these lines.
+
+Common mistake note:
+A common mistake is choosing option A, assuming the region is above both lines. This misses the constraint that y must also be less than \(-x + 3\).
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Identify the solution set for the system of inequalities \( x + y \leq 4 \) and \( x - y > 1 \).
+A) Points right of the line \( y = x - 1 \) but below \( y = -x + 4 \)
+B) Points where \( x > y - 1 \) and \( x + y < 4 \)
+C) Points left of the line \( y = x + 1 \) and above \( x + y = 4 \)
+D) Points above the line \( y = x - 1 \) and below \( y = -x + 4 \)
+Correct Answer: D
+
+Solution:
+The inequalities \( x + y \leq 4 \) and \( x - y > 1 \) reveal that the solution is the region that satisfies both conditions. This is translated to points above the line \( y = x - 1 \) and below the line \( y = -x + 4 \).
+
+Explanation:
+Graph both inequalities on a coordinate plane. Shade below \( x + y = 4 \) and above \( x - y = 1 \). The overlap is the solution region.
+
+Common mistake note:
+A typical error is selecting option A, which misplaces the inequality signs for the position of the line \( x - y = 1 \).
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Which point satisfies the system of inequalities \( 2x - y < 4 \) and \( x + 3y \geq 9 \)?
+A) (2, 3)
+B) (1, 4)
+C) (3, 1)
+D) (4, 2)
+Correct Answer: B
+
+Solution:
+Plug point (1, 4) into both inequalities: \( 2(1) - 4 = -2 < 4 \) and \( 1 + 3(4) = 13 \), which satisfies both conditions.
+
+Explanation:
+To find the valid point, each choice must be tested in both inequalities. Only (1, 4) satisfies \( 2x - y < 4 \) and \( x + 3y \geq 9 \) simultaneously.
+
+Common mistake note:
+Choosing option A might result from calculating only one inequality, not realizing that it must satisfy both.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Determine the inequality system represented by the shaded region below the line \( y = 4x - 5 \) and above the line \( y = -x + 7 \).
+A) \( y \leq 4x - 5 \) and \( y > -x + 7 \)
+B) \( y < 4x - 5 \) and \( y \geq -x + 7 \)
+C) \( y > 4x - 5 \) and \( y \leq -x + 7 \)
+D) \( y \geq 4x - 5 \) and \( y < -x + 7 \)
+Correct Answer: A
+
+Solution:
+The region is under the line \( y = 4x - 5 \), thus \( y \leq 4x - 5 \), and above the line \( y = -x + 7 \), thus \( y > -x + 7 \).
+
+Explanation:
+Analyze the shading direction relative to each line: below means \( \leq \), and above means \( > \).
+
+Common mistake note:
+A potential mistake is flipping inequality symbols by misunderstanding which side forms 'above' and 'below.'
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Which set of inequalities is represented by a region to the right of the line \( x = 3 \) and above the line \( y = 2 \)?
+A) \( x > 3 \) and \( y < 2 \)
+B) \( x \leq 3 \) and \( y \geq 2 \)
+C) \( x > 3 \) and \( y > 2 \)
+D) \( x \geq 3 \) and \( y \leq 2 \)
+Correct Answer: C
+
+Solution:
+The region described includes points with \( x > 3 \) and \( y > 2 \).
+
+Explanation:
+To be to the right means \( x > 3 \), and above means \( y > 2 \). The inequalities stem from these directional terms related to the axes.
+
+Common mistake note:
+Mistakes arise from reversing the inequality symbols, resulting from misinterpreting 'right' and 'above.'
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Find the feasible region for the inequalities \( y \geq 2x - 3 \) and \( y < -3x + 5 \). Which description accurately represents the overlap?
+A) Below both lines
+B) Above both lines
+C) Between the lines
+D) None overlap
+Correct Answer: C
+
+Solution:
+Graphically, the solution is the region between \( y \geq 2x - 3 \) and \( y < -3x + 5 \) where both conditions meet.
+
+Explanation:
+To determine overlap, graph both lines: one inequality indicates above, the other below, forming a region in between.
+
+Common mistake note:
+Choosing D might stem from misunderstanding the sufficient overlap in continuous regions.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+A system of inequalities is defined by \( -x + 2y < 8 \) and \( x + y \leq 5 \). Which point is in the solution set?
+A) (2, 1)
+B) (4, 2)
+C) (0, 3)
+D) (1, 5)
+Correct Answer: C
+
+Solution:
+Test each point: for (0, 3), \(-0 + 2(3) = 6 < 8\) and \(0 + 3 = 3 \leq 5\). Thus (0, 3) satisfies both conditions.
+
+Explanation:
+By evaluating each point, we find that only (0, 3) satisfies both inequalities, making it part of the solution set.
+
+Common mistake note:
+Beware of switching between strict and non-strict inequality mismatches.
+------------------------------------------------------------------------------
+
+1.1.9.9 Solve inequalities with two variables
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Solve the inequality: \(3x + 2y > 6\). Which of the following points is a solution?
+A) (0, 2)
+B) (1, 1)
+C) (2, 1)
+D) (0, 0)
+Correct Answer: C
+
+Solution:
+Substitute each point into the inequality: \(3x + 2y > 6\). For point (2, 1): \(3(2) + 2(1) = 8\), satisfying the condition as 8 > 6.
+
+Explanation:
+Substitute x and y into the inequality to check if the condition is satisfied.
+
+Common mistake note:
+Choosing (0, 2) mistakenly assumes \(4 > 6\) after substitution.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Determine which region satisfies the inequality: \(x - 4y \leq 8\).
+A) Above the line \(x = 4y + 8\)
+B) Below the line \(x = 4y + 8\)
+C) Exactly on the line \(x = 4y + 8\)
+D) On the line when \(x > 8\)
+Correct Answer: B
+
+Solution:
+Rewrite inequality as \(x \leq 4y + 8\). This represents the area below the line \(x = 4y + 8\).
+
+Explanation:
+The inequality suggests regions below or on the boundary line.
+
+Common mistake note:
+Misinterpretation of inequality signs often happens.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Identify which point is not a solution to \(2x - 3y < 9\).
+A) (5, 0)
+B) (3, 3)
+C) (0, 3)
+D) (2, 2)
+Correct Answer: B
+
+Solution:
+Substitute point (3, 3) into \(2x - 3y\): \(2(3) - 3(3) = -3\), which is not \(< 9\).
+
+Explanation:
+Check each point by plugging into the inequality to find one that doesn't satisfy \(< 9\).
+
+Common mistake note:
+Incorrectly computing arithmetic within substituted values leads to errors.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+For the inequality \(y \geq \frac{1}{2}x - 1\), what is the y-intercept?
+A) -2
+B) -1
+C) 1
+D) 0
+Correct Answer: B
+
+Solution:
+Set \(x=0\) to find: \(y \geq \frac{1}{2}(0) - 1 = -1\). Therefore, the y-intercept is -1.
+
+Explanation:
+Y-intercept found by substituting \(x=0\) into \(y\) equation form.
+
+Common mistake note:
+Confusing setting \(x\) vs. \(y\) to zero affects finding intercepts.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Which statement is true for the inequality \(-3x + y < 7\)?
+A) The inequality is equal when \(x = 0\)
+B) The inequality holds for all positive x and y
+C) The line \(-3x + y = 7\) forms boundary with all solutions below it
+D) When x increases, y must also increase for the inequality to hold
+Correct Answer: C
+
+Solution:
+Graph \(-3x + y = 7\); points below satisfy \(-3x + y < 7\).
+
+Explanation:
+Line describes boundary, and points below satisfy inequality.
+
+Common mistake note:
+Misunderstanding spatial placement relative to the boundary can cause incorrect answers.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Consider the inequality \(y < 2x + 3\). What happens to the inequality if it is multiplied through by \(-1\)?
+A) It becomes \(-y < 2x + 3\)
+B) The direction of the inequality changes
+C) It becomes \(y < -2x - 3\)
+D) It becomes \(-y > -2x - 3\)
+Correct Answer: D
+
+Solution:
+Multiplying by \(-1\) reverses the inequality direction: \(-y > -2x - 3\).
+
+Explanation:
+Inequality reversal occurs when multiplied by a negative number.
+
+Common mistake note:
+Often neglecting to switch inequality direction results in incorrect solutions.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Find the slope of the boundary line for the inequality \(4x + 5y \leq 20\).
+A) -4/5
+B) 4/5
+C) 5/4
+D) -5/4
+Correct Answer: A
+
+Solution:
+Convert \(4x + 5y = 20\) to slope-intercept form: \(y = -\frac{4}{5}x + 4\), revealing slope \(-4/5\).
+
+Explanation:
+Reform into \(y = mx + b\) to clearly identify slope \(m\).
+
+Common mistake note:
+Errors arise by misarranging or missing negative signs in conversions.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.14.12",
+  "objective_text": "Apply polar coordinates to complex numbers",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "InversePolarForm",
+      "stem": "Find the rectangular form of the complex number given in polar form: (-1, π).",
+      "choices": {
+        "A": "(1, 0)",
+        "B": "(-1, 0)",
+        "C": "(0, -1)",
+        "D": "(-1, -π)"
+      },
+      "correct_choice": "B",
+      "solution": "The rectangular form of a complex number in polar form (r, θ) is given by r(cosθ + i*sinθ). For the polar coordinates (-1, π), r = -1 and θ = π. Plugging these values into the formula gives us: (-1)(cosπ + i*sinπ) = -1(-1 + 0i) = (1, 0). However, since we're dealing with complex numbers, the negative sign applies to both the real and imaginary parts, resulting in (-1, 0).",
+      "explanation": "The correct answer is B because it represents the rectangular form of the given polar coordinates after accounting for the negative radius.",
+      "common_mistake_notes": "A common mistake would be to forget that the negative sign applies to both the real and imaginary parts, resulting in choice A (1, 0), which is incorrect."
+    },
+    {
+      "id": "PolarFormFromRectangular",
+      "stem": "Convert the complex number (3, 4) into polar form.",
+      "choices": {
+        "A": "(5, arctan(4/3))",
+        "B": "(5, π - arctan(3/4))",
+        "C": "(5, arctan(3/4))",
+        "D": "(5, arctan(4/3) + π)"
+      },
+      "correct_choice": "D",
+      "solution": "To convert a complex number (x, y) to polar form (r, θ), we use the formulas r = √(x² + y²) and θ = atan2(y, x). For the given complex number (3, 4), x = 3 and y = 4. First, calculate r: r = √(3² + 4²) = √(9 + 16) = √25 = 5. Next, find θ using atan2(y, x): θ = atan2(4, 3). Since the point (3, 4) is in the first quadrant, θ will be positive. However, we need to convert this angle from the range (-π/2, π/2) to the standard polar form range (0, 2π). In this case, arctan(4/3) ≈ 0.93 radians, which is less than π/2. Therefore, θ = arctan(4/3) + π.",
+      "explanation": "The correct answer is D because it correctly converts the rectangular coordinates to polar form and adjusts the angle to fall within the standard range.",
+      "common_mistake_notes": "A common mistake would be to assume that θ = atan2(y, x) directly gives the correct angle in the polar form range, without adjusting for quadrants. This would lead to choice C (5, arctan(3/4)), which is incorrect."
+    },
+    {
+      "id": "MultiplicationPolarForm",
+      "stem": "Multiply the complex numbers (1, π/2) and (2, π/3) in polar form.",
+      "choices": {
+        "A": "(2, π/6)",
+        "B": "(2√3, π/6)",
+        "C": "(2√3, 5π/6)",
+        "D": "(4, π)"
+      },
+      "correct_choice": "C",
+      "solution": "To multiply two complex numbers in polar form (r1, θ1) and (r2, θ2), we use the formula: r = r1 * r2 and θ = θ1 + θ2. For the given numbers (1, π/2) and (2, π/3), we have r1 = 1, θ1 = π/2, r2 = 2, θ2 = π/3. First, multiply the radii: r = 1 * 2 = 2. Next, add the angles: θ = π/2 + π/3 = (3π/6) + (2π/6) = 5π/6. So the product in polar form is (2, 5π/6).",
+      "explanation": "The correct answer is C because it correctly multiplies the radii and adds the angles to find the result in polar form.",
+      "common_mistake_notes": "A common mistake would be to forget to convert the angles from radians to degrees before multiplying or adding them, leading to choices like A (2, π/6) or B (2√3, π/6), which are incorrect."
+    },
+    {
+      "id": "DivisionPolarForm",
+      "stem": "Divide the complex numbers (4, π/3) by (2, π/6) in polar form.",
+      "choices": {
+        "A": "(2, π/3)",
+        "B": "(2√3, π/3)",
+        "C": "(1, π/3)",
+        "D": "(1, 0)"
+      },
+      "correct_choice": "B",
+      "solution": "To divide two complex numbers in polar form (r1, θ1) and (r2, θ2), we use the formula: r = r1 / r2 and θ = θ1 - θ2. For the given numbers (4, π/3) and (2, π/6), we have r1 = 4, θ1 = π/3, r2 = 2, θ2 = π/6. First, divide the radii: r = 4 / 2 = 2. Next, subtract the angles: θ = π/3 - π/6 = (2π/6) - (π/6) = π/6. So the quotient in polar form is (2√3, π/3), where we take the square root of r to find the correct value for the radius.",
+      "explanation": "The correct answer is B because it correctly divides the radii and subtracts the angles to find the result in polar form, including adjusting the radius by taking its square root.",
+      "common_mistake_notes": "A common mistake would be to forget to take the square root of the quotient of the radii or to subtract the angles incorrectly, leading to choices like A (2, π/3) or D (1, 0), which are incorrect."
+    },
+    {
+      "id": "PolarFormOfUnitCircle",
+      "stem": "Find the polar form of the complex number that lies on the unit circle at an angle of 7π/4 radians.",
+      "choices": {
+        "A": "(1, 7π/4)",
+        "B": "(cos(7π/4), sin(7π/4))",
+        "C": "(-√2/2, -√2/2)",
+        "D": "(-1, π/4)"
+      },
+      "correct_choice": "C",
+      "solution": "A point on the unit circle has a radius of 1. Given an angle of 7π/4 radians, we can find its coordinates in polar form using cos(7π/4) and sin(7π/4). cos(7π/4) = -√2/2 and sin(7π/4) = -√2/2. Therefore, the complex number on the unit circle at an angle of 7π/4 is (-√2/2, -√2/2).",
+      "explanation": "The correct answer is C because it correctly converts the angle to the corresponding coordinates on the unit circle in polar form.",
+      "common_mistake_notes": "A common mistake would be to forget that the point lies on the unit circle and assume the radius is 1, leading to choice A (1, 7π/4), which is incorrect. Another mistake could be to use the angle without considering its position on the unit circle, resulting in choice D (-1, π/4), which is also incorrect."
+    },
+    {
+      "id": "De Moivre' Theorem",
+      "stem": "Find the fourth power of the complex number (cos(π/3) + i*sin(π/3)) using De Moivre's Theorem.",
+      "choices": {
+        "A": "(1, 0)",
+        "B": "(cos(π) + i*sin(π), 4)",
+        "C": "(cos(2π/3) + i*sin(2π/3), 4)",
+        "D": "(-1/2  + √3i/2, 4)"
+      },
+      "correct_choice": "A",
+      "solution": "De Moivre's Theorem states that (cosθ + i*sinθ)^n = cos(nθ) + i*sin(nθ). Given the complex number (cos(π/3) + i*sin(π/3)), we need to raise it to the fourth power: [(cos(π/3) + i*sin(π/3))^4] = cos(4π/3) + i*sin(4π/3). Since 4π/3 is equivalent to (2π - π/3), we can rewrite the angle as cos(-π/3) + i*sin(-π/3). Using the symmetry properties of cosine and sine, we know that cos(-x) = cos(x) and sin(-x) = -sin(x). Therefore, cos(-π/3) = cos(π/3) and sin(-π/3) = -sin(π/3). Since (cos(π/3), sin(π/3)) represents the point on the unit circle at π/3 radians, its fourth power will be 1 because it's a full rotation of 4π. Thus, the result is (1, 0).",
+      "explanation": "The correct answer is A because it correctly applies De Moivre's Theorem and accounts for the symmetry properties of cosine and sine to find the fourth power of the given complex number.",
+      "common_mistake_notes": "A common mistake would be to forget about the symmetry properties of cosine and sine, leading to choices like B (cos(π) + i*sin(π), 4) or C (cos(2π/3) + i*sin(2π/3), 4), which are incorrect. Another mistake could be to misapply De Moivre's Theorem without considering the full rotation of 4π, resulting in choice D (-1/2 + √3i/2, 4), which is also incorrect."
+    },
+    {
+      "id": "PolarFormOfRoots",
+      "stem": "Find the polar form of one of the cube roots of -8.",
+      "choices": {
+        "A": "(2, π)",
+        "B": "(2√3, π/3)",
+        "C": "(2, 5π/6)",
+        "D": "(2, π/3)"
+      },
+      "correct_choice": "A",
+      "solution": "To find a cube root of -8 in polar form, we first convert -8 to polar form. The absolute value of -8 is 8 and the angle is π (since it lies on the negative real axis). So, -8 = 8(cosπ + i*sinπ). Now, we need to take the cube root of this number: (-8)^(1/3) = 8^(1/3)(cos(π/3) + i*sin(π/3)). The cube root of 8 is 2, and cos(π/3) = 1/2 and sin(π/3) = √3/2. Therefore, one of the cube roots of -8 in polar form is (2, π).",
+      "explanation": "The correct answer is A because it correctly converts -8 to polar form and then finds one of its cube roots.",
+      "common_mistake_notes": "A common mistake would be to forget that the angle for -8 is π or to incorrectly calculate the cube root of 8, leading to choices like B (2√3, π/3) or C (2, 5π/6), which are incorrect. Another mistake could be to assume that all cube roots have the same radius, resulting in choice D (2, π/3), which is also incorrect."
+    }
+  ]
+}

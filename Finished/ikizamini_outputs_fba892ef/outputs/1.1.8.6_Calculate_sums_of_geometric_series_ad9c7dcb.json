@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.8.6",
+  "objective_text": "Calculate sums of geometric series",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the sum of the infinite geometric series with first term a = 3 and common ratio r = 0.5.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for an infinite geometric series is S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. Plugging in a = 3 and r = 0.5, we get S = 3 / (1 - 0.5) = 6.",
+      "explanation": "The sum of an infinite geometric series converges if |r| < 1. Since |0.5| < 1, the series converges to 6.",
+      "common_mistake_notes": "A common mistake is to think that because the terms decrease, the sum must also decrease. However, in this case, the sum approaches a finite value due to the convergence condition."
+    },
+    {
+      "id": "2",
+      "stem": "Find the sum of the first 5 terms of the geometric series with first term a = 1 and common ratio r = 4.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the sum of 'n' terms of a geometric series is S_n = a * (1 - r^n) / (1 - r). Plugging in a = 1, r = 4, and n = 5, we get S_5 = 1 * (1 - 4^5) / (1 - 4) = 63.",
+      "explanation": "The sum of the first 'n' terms is calculated differently from the sum of an infinite series. Here, we use the formula for a finite geometric series.",
+      "common_mistake_notes": "A common mistake is to use the formula for an infinite series instead of the one for a finite number of terms."
+    },
+    {
+      "id": "3",
+      "stem": "Find the sum of the first 10 terms of the geometric series with first term a = 2 and common ratio r = -1/2.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "A",
+      "solution": "Using the formula for the sum of 'n' terms, S_n = a * (1 - r^n) / (1 - r), with a = 2, r = -1/2, and n = 10, we get S_10 = 2 * (1 - (-1/2)^10) / (1 - (-1/2)) = -61.",
+      "explanation": "The sum of the first 'n' terms is calculated differently from the sum of an infinite series. Here, we use the formula for a finite geometric series with a negative common ratio.",
+      "common_mistake_notes": "A common mistake is to forget that when dealing with negative common ratios, the sign of each term alternates."
+    },
+    {
+      "id": "4",
+      "stem": "Find the sum of the first 3 terms of the geometric series with first term a = 5 and common ratio r = 2/3.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "B",
+      "solution": "Using the formula for the sum of 'n' terms, S_n = a * (1 - r^n) / (1 - r), with a = 5, r = 2/3, and n = 3, we get S_3 = 5 * (1 - (2/3)^3) / (1 - 2/3) = 15.",
+      "explanation": "The sum of the first 'n' terms is calculated differently from the sum of an infinite series. Here, we use the formula for a finite geometric series.",
+      "common_mistake_notes": "A common mistake is to forget to raise the common ratio to the power of 'n' when calculating the sum."
+    },
+    {
+      "id": "5",
+      "stem": "Find the sum of the first 4 terms of the geometric series with first term a = -1 and common ratio r = 3.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "C",
+      "solution": "Using the formula for the sum of 'n' terms, S_n = a * (1 - r^n) / (1 - r), with a = -1, r = 3, and n = 4, we get S_4 = (-1) * (1 - 3^4) / (1 - 3) = -22.",
+      "explanation": "The sum of the first 'n' terms is calculated differently from the sum of an infinite series. Here, we use the formula for a finite geometric series with a negative first term and common ratio.",
+      "common_mistake_notes": "A common mistake is to forget that when dealing with negative terms, the sign alternates."
+    },
+    {
+      "id": "6",
+      "stem": "Find the sum of the infinite geometric series with first term a = 1/2 and common ratio r = 1/4.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for an infinite geometric series is S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. Plugging in a = 1/2 and r = 1/4, we get S = (1/2) / (1 - 1/4) = 2.",
+      "explanation": "The sum of an infinite geometric series converges if |r| < 1. Since |1/4| < 1, the series converges to 2.",
+      "common_mistake_notes": "A common mistake is to think that because the terms decrease, the sum must also decrease. However, in this case, the sum approaches a finite value due to the convergence condition."
+    },
+    {
+      "id": "7",
+      "stem": "Find the sum of the first 6 terms of the geometric series with first term a = 4 and common ratio r = -1/3.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "A",
+      "solution": "Using the formula for the sum of 'n' terms, S_n = a * (1 - r^n) / (1 - r), with a = 4, r = -1/3, and n = 6, we get S_6 = 4 * (1 - (-1/3)^6) / (1 - (-1/3)) = -52.",
+      "explanation": "The sum of the first 'n' terms is calculated differently from the sum of an infinite series. Here, we use the formula for a finite geometric series with a negative common ratio.",
+      "common_mistake_notes": "A common mistake is to forget that when dealing with negative common ratios, the sign of each term alternates."
+    }
+  ]
+}

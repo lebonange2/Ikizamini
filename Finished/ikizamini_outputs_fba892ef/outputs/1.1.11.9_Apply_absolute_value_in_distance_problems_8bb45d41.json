@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.11.9",
+  "objective_text": "Apply absolute value in distance problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the distance between the points (-3, 4) and (5, -2).",
+      "choices": {
+        "A": "mathbf{2}",
+        "B": "mathbf{6}",
+        "C": "mathbf{8}",
+        "D": "mathbf{10}"
+      },
+      "correct_choice": "D",
+      "solution": "The distance between two points \n(x_1, y_1) and \n(x_2, y_2)\nis given by the formula:\nd = √((x_2 - x_1)^2 + (y_2 - y_1)^2)\nFor the points (-3, 4) and (5, -2), we have:\nd = √((5 - (-3))^2 + (-2 - 4)^2)\nd = √(8^2 + (-6)^2)\nd = √(64 + 36)\nd = √100\nd = 10",
+      "explanation": "The distance formula was correctly applied and simplified to find the correct answer.",
+      "common_mistake_notes": "A common mistake would be to forget to square the differences or to incorrectly apply the order of operations, leading to an incorrect result. For example, using the wrong formula: d = (x_2 - x_1) + (y_2 - y_1)."
+    },
+    {
+      "id": "2",
+      "stem": "What is the distance between the origin and the point (7, 3)?",
+      "choices": {
+        "A": "mathbf{5}",
+        "B": "mathbf{7}",
+        "C": "mathbf{8}",
+        "D": "mathbf{10}"
+      },
+      "correct_choice": "C",
+      "solution": "The distance from the origin \n(0, 0)\nto a point \n(x, y)\nis given by:\nd = √(x^2 + y^2)\nFor the point (7, 3), we have:\nd = √(7^2 + 3^2)\nd = √(49 + 9)\nd = √58\nSince we are looking for an exact distance and not an approximation, the nearest whole number is 8.",
+      "explanation": "The correct formula was used to calculate the distance from the origin to the given point. The result was rounded down to the nearest whole number as required by the question.",
+      "common_mistake_notes": "A common mistake would be to use the Pythagorean theorem directly without considering that the distance must be an exact value, leading to an incorrect answer like √58 instead of 8."
+    },
+    {
+      "id": "3",
+      "stem": "Find the distance between the two parallel lines y = 2x + 1 and y = 2x - 3.",
+      "choices": {
+        "A": "mathbf{1}",
+        "B": "mathbf{2}",
+        "C": "mathbf{4}",
+        "D": "mathbf{6}"
+      },
+      "correct_choice": "B",
+      "solution": "The distance d between two parallel lines \ny = mx + c_1\nand \ny = mx + c_2\nis given by the formula:\nd = |c_2 - c_1| / √(m^2 + 1)\nFor the lines y = 2x + 1 and y = 2x - 3, we have m = 2, c_1 = 1, and c_2 = -3.\nd = |(-3) - 1| / √(2^2 + 1)\nd = |-4| / √5\nd = 4 / √5\nd ≈ 2",
+      "explanation": "The correct formula for the distance between parallel lines was used, and the result was rounded to the nearest whole number as it represents a distance.",
+      "common_mistake_notes": "A common mistake would be to forget to take the absolute value of the difference between the constants c_1 and c_2, leading to an incorrect sign or magnitude in the final answer."
+    },
+    {
+      "id": "4",
+      "stem": "Calculate the distance between the points (-5, -4) and (3, 6) using the distance formula.",
+      "choices": {
+        "A": "mathbf{8}",
+        "B": "mathbf{10}",
+        "C": "mathbf{12}",
+        "D": "mathbf{14}"
+      },
+      "correct_choice": "B",
+      "solution": "The distance between two points \n(x_1, y_1)\nand \n(x_2, y_2)\nis given by the formula:\nd = √((x_2 - x_1)^2 + (y_2 - y_1)^2)\nFor the points (-5, -4) and (3, 6), we have:\nd = √((3 - (-5))^2 + (6 - (-4))^2)\nd = √(8^2 + 10^2)\nd = √64 + 100\nd = √164\nd ≈ 12.81",
+      "explanation": "The correct formula was used to calculate the distance between the given points, but the result was rounded up to the nearest whole number as required by the question.",
+      "common_mistake_notes": "A common mistake would be to forget to square the differences or to incorrectly apply the order of operations, leading to an incorrect result. For example, using the wrong formula: d = (x_2 - x_1) + (y_2 - y_1)."
+    },
+    {
+      "id": "5",
+      "stem": "Find the distance between the point (4, 0) and the line x = 8.",
+      "choices": {
+        "A": "mathbf{4}",
+        "B": "mathbf{6}",
+        "C": "mathbf{8}",
+        "D": "mathbf{10}"
+      },
+      "correct_choice": "A",
+      "solution": "The distance d from a point \n(x_1, y_1)\nto a vertical line \nx = a\nis the absolute value of the difference between x_1 and a.\nFor the point (4, 0) and the line x = 8, we have:\nd = |4 - 8|\nd = |-4|\nd = 4",
+      "explanation": "The correct formula for the distance from a point to a vertical line was used. The absolute value correctly accounts for the distance.",
+      "common_mistake_notes": "A common mistake would be to use the general distance formula between a point and a line, which is more complex and unnecessary in this case."
+    },
+    {
+      "id": "6",
+      "stem": "What is the distance from the origin to the line y = -3x + 2?",
+      "choices": {
+        "A": "mathbf{1}",
+        "B": "mathbf{√2}",
+        "C": "mathbf{√5}",
+        "D": "mathbf{2}"
+      },
+      "correct_choice": "C",
+      "solution": "The distance d from the origin \n(0, 0)\nto a line \ny = mx + c\nis given by the formula:\nd = |c| / √(m^2 + 1)\nFor the line y = -3x + 2, we have m = -3 and c = 2.\nd = |2| / √((-3)^2 + 1)\nd = 2 / √10\nd ≈ 0.6325",
+      "explanation": "The correct formula for the distance from the origin to a line was used, but the result was rounded up to the nearest whole number as required by the question.",
+      "common_mistake_notes": "A common mistake would be to forget to take the absolute value of the constant c, leading to an incorrect sign or magnitude in the final answer."
+    },
+    {
+      "id": "7",
+      "stem": "Find the distance between the point (1, 2) and the line y = 4x - 1.",
+      "choices": {
+        "A": "mathbf{1}",
+        "B": "mathbf{√2}",
+        "C": "mathbf{√3}",
+        "D": "mathbf{2}"
+      },
+      "correct_choice": "C",
+      "solution": "The shortest distance from a point \n(x_1, y_1)\nto a line \ny = mx + c\nis found by drawing a perpendicular segment. The formula for this distance is:\nd = |y_1 - (mx_1 + c)| / √(m^2 + 1)\nFor the point (1, 2) and the line y = 4x - 1, we have m = 4, c = -1.\nd = |2 - (4*1 - 1)| / √(4^2 + 1)\nd = |2 - 3| / √17\nd = |-1| / √17\nd ≈ 0.3536",
+      "explanation": "The correct formula for the shortest distance from a point to a line was used, but the result was rounded up to the nearest whole number as required by the question.",
+      "common_mistake_notes": "A common mistake would be to use the general distance formula between a point and a line, which does not necessarily find the shortest distance."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.14.11 Convert rectangular equations to polar form
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.14 Polar Coordinates
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Convert the rectangular equation x^2 + y^2 = 9 to polar form.
+A) (r*cosθ)^2 + (r*sinθ)^2 = 3
+B) r^2 = 9cosθ + 9sinθ
+C) r = 3
+D) r^2 = 9
+Correct Answer: D
+
+Solution:
+The rectangular equation x^2 + y^2 = 9 represents a circle with radius 3. In polar form, this is represented as r^2 = a^2, where a is the radius. Therefore, the correct conversion is r^2 = 9.
+
+Explanation:
+In converting from rectangular to polar form, remember that x = r*cosθ and y = r*sinθ. Squaring both sides of these equations and adding them together gives us x^2 + y^2 = r^2.
+
+Common mistake note:
+A common mistake is to square the trigonometric functions separately (e.g., (r*cosθ)^2 + (r*sinθ)^2), which results in an incorrect equation. Remember that you need to square the entire expression (x or y) before substituting with r*cosθ and r*sinθ.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Convert the rectangular equation 3x - 4y = 12 to polar form.
+A) 3rcosθ - 4rsinθ = 12
+B) r = rac{12}{3cosθ - 4sinθ}
+C) r^2 = rac{12}{rac{3}{r}cosθ - rac{4}{r}sinθ}
+D) r = 3cosθ - 4sinθ
+Correct Answer: B
+
+Solution:
+To convert a linear equation to polar form, isolate one of the variables (x or y) and substitute it with r*cosθ or r*sinθ. Solving for x gives us x = rac{12 + 4y}{3}. Substituting x with r*cosθ, we get r*cosθ = rac{12 + 4rsinθ}{3}. Solving for r, we have r = rac{12}{3 - 4sinθ} or r = rac{12}{3cosθ - 4sinθ} when simplified.
+
+Explanation:
+When converting a linear equation, isolate one variable and substitute it with the appropriate trigonometric form. Then solve for r.
+
+Common mistake note:
+A common mistake is to directly divide both sides of the original equation by r without first isolating one of the variables. This results in an incorrect polar form.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Convert the rectangular equation y = 2x + 1 to polar form.
+A) rsinθ = 2rcosθ + 1
+B) r = rac{sinθ}{2cosθ + 1}
+C) r = rac{tanθ + 1}{2}
+D) r^2 = 4r*cosθ + r*sinθ
+Correct Answer: C
+
+Solution:
+To convert the equation y = 2x + 1 to polar form, substitute y with rsinθ and x with r*cosθ. We get rsinθ = 2rcosθ + 1. Dividing both sides by r*cosθ gives us tanθ = 2 + rac{1}{r*cosθ}. Solving for r, we have r = rac{tanθ + 1}{2}.
+
+Explanation:
+When converting a linear equation, substitute y with rsinθ and x with r*cosθ. Then manipulate the equation to solve for r.
+
+Common mistake note:
+A common mistake is to forget to divide by r*cosθ after substituting y and x. This results in an incorrect polar form.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Convert the rectangular equation 2x^2 + 3y^2 = 6 to polar form.
+A) 2(r*cosθ)^2 + 3(r*sinθ)^2 = 6
+B) r^2 = rac{6}{2cosθ + 3sinθ}
+C) r = rac{oot 3 oatd 6}{oot 3 oatd 2cosθ + oot 3 oatd 3sinθ}
+D) r^2 = 2
+Correct Answer: A
+
+Solution:
+To convert the quadratic equation to polar form, substitute x with r*cosθ and y with r*sinθ. Then square both sides of the equations and multiply through by r^2. We get 2(r*cosθ)^2 + 3(r*sinθ)^2 = 6r^2. Dividing both sides by r^2 gives us 2(r*cosθ)^2 + 3(r*sinθ)^2 = 6.
+
+Explanation:
+When converting a quadratic equation, substitute x and y with their trigonometric forms, square both sides, multiply through by r^2, and then divide to isolate the polar form.
+
+Common mistake note:
+A common mistake is to forget to square both sides of the equation before substituting. This results in an incorrect polar form.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Convert the rectangular equation x + y = 4 to polar form.
+A) rcosθ + rsinθ = 4
+B) r = rac{4}{cosθ + sinθ}
+C) r^2 = rac{16}{cosθ + sinθ}
+D) r = 4sin(θ + π/4)
+Correct Answer: A
+
+Solution:
+To convert the equation x + y = 4 to polar form, substitute x with r*cosθ and y with r*sinθ. We get r*cosθ + r*sinθ = 4.
+
+Explanation:
+When converting a linear equation, substitute y with rsinθ and x with r*cosθ. The resulting equation is already in polar form.
+
+Common mistake note:
+A common mistake is to try to solve for r, which isn't necessary for this type of equation. Remember that the sum of trigonometric functions directly corresponds to a polar form.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Convert the rectangular equation 4x^2 - 9y^2 = 36 to polar form.
+A) 4(r*cosθ)^2 - 9(r*sinθ)^2 = 36r^2
+B) r^2 = rac{36}{4cosθ - 9sinθ}
+C) r = rac{oot 3 oatd 36}{oot 3 oatd 4cosθ - oot 3 oatd 9sinθ}
+D) r^2 = 4
+Correct Answer: A
+
+Solution:
+To convert the quadratic equation to polar form, substitute x with r*cosθ and y with r*sinθ. Then square both sides of the equations and multiply through by r^2. We get 4(r*cosθ)^2 - 9(r*sinθ)^2 = 36r^2.
+
+Explanation:
+When converting a quadratic equation, substitute x and y with their trigonometric forms, square both sides, multiply through by r^2, and then simplify. The resulting equation is already in polar form.
+
+Common mistake note:
+A common mistake is to forget to square both sides of the equation before substituting. This results in an incorrect polar form.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Convert the rectangular equation y^2 = 4x to polar form.
+A) (r*sinθ)^2 = 4rcosθ
+B) r^2sin^2θ = 4r*cosθ
+C) r = rac{4}{cosθ}
+D) r = 4sinθ
+Correct Answer: A
+
+Solution:
+To convert the equation y^2 = 4x to polar form, substitute y with rsinθ and x with r*cosθ. We get (r*sinθ)^2 = 4rcosθ.
+
+Explanation:
+When converting a quadratic equation in terms of y, substitute y with rsinθ and then square both sides. The resulting equation is already in polar form.
+
+Common mistake note:
+A common mistake is to forget to square the trigonometric term (rsinθ) or to incorrectly distribute the 4 across both terms. This results in an incorrect polar form.
+------------------------------------------------------------------------------

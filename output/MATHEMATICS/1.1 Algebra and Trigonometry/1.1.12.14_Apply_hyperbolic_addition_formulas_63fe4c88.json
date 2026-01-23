@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.12.14",
+  "objective_text": "Apply hyperbolic addition formulas",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Find the value of $\text{sinh}(a + b)$ given that $\text{sinh}(a) = 3$ and $\text{cosh}(b) = 4$.",
+      "choices": {
+        "A": "-12",
+        "B": "7",
+        "C": "12",
+        "D": "5"
+      },
+      "correct_choice": "C",
+      "solution": "Using the hyperbolic addition formula for sinh: $\text{sinh}(a + b) = \text{sinh}(a)\text{cosh}(b) + \text{cosh}(a)\text{sinh}(b)$, we can substitute the given values. However, we need to find $\text{cosh}(a)$ and $\text{sinh}(b)$ first. Since $\text{cosh}^2(x) - \text{sinh}^2(x) = 1$, we have two equations: $\text{cosh}^2(a) - 3^2 = 1$ and $4^2 - \text{sinh}^2(b) = 1$. Solving for $\text{cosh}(a)$ gives us $\text{cosh}(a) = 5$, and for $\text{sinh}(b)$, we get $\text{sinh}(b) = 3$. Now we can calculate sinh(a + b): $\text{sinh}(a + b) = 3 \times 4 + 5 \times 3 = 12$.",
+      "explanation": "The correct answer is found by applying the hyperbolic addition formula and solving for the missing values using the given information. Common mistake: Using the wrong formula or not accounting for the signs of sinh and cosh.",
+      "common_mistake_notes": "A common mistake is to use the wrong formula (such as the circular trigonometric addition formulas) or to forget that sinh and cosh are always positive in this context, leading to an incorrect calculation of $\text{cosh}(a)$ or $\text{sinh}(b)$."
+    },
+    {
+      "id": "?",
+      "stem": "Given $\text{cosh}(a) = 2$ and $\text{cosh}(b) = 3$, find the value of $\text{cosh}(a + b)$.",
+      "choices": {
+        "A": "1",
+        "B": "5",
+        "C": "6",
+        "D": "8"
+      },
+      "correct_choice": "C",
+      "solution": "Using the hyperbolic addition formula for cosh: $\text{cosh}(a + b) = \text{cosh}(a)\text{cosh}(b) - \text{sinh}(a)\text{sinh}(b)$, we can substitute the given values. However, we need to find $\text{sinh}(a)$ and $\text{sinh}(b)$ first. Since $\text{cosh}^2(x) - \text{sinh}^2(x) = 1$, we have two equations: $2^2 - \text{sinh}^2(a) = 1$ and $3^2 - \text{sinh}^2(b) = 1$. Solving for $\text{sinh}(a)$ gives us $\text{sinh}(a) = \frac{\text{sqrt}(3)}{2}$, and for $\text{sinh}(b)$, we get $\text{sinh}(b) = \frac{\text{sqrt}(8)}{2}$. Now we can calculate cosh(a + b): $\text{cosh}(a + b) = 2 \times 3 - (\frac{\text{sqrt}(3)}{2}) \times (\frac{\text{sqrt}(8)}}{2}) = 6$.",
+      "explanation": "The correct answer is found by applying the hyperbolic addition formula and solving for the missing values using the given information. Common mistake: Using the wrong formula or not accounting for the signs of sinh and cosh.",
+      "common_mistake_notes": "A common mistake is to use the wrong formula (such as the circular trigonometric addition formulas) or to forget that sinh and cosh can have either sign, leading to an incorrect calculation of $\text{sinh}(a)$ or $\text{sinh}(b)$."
+    },
+    {
+      "id": "?",
+      "stem": "Find the value of $\tanh(a + b)$ given that $\tanh(a) = \frac{1}{2}$ and $\tanh(b) = \frac{1}{3}$.",
+      "choices": {
+        "A": "rac{5}{7}",
+        "B": "rac{1}{6}",
+        "C": "rac{7}{11}",
+        "D": "rac{4}{5}"
+      },
+      "correct_choice": "C",
+      "solution": "Using the hyperbolic addition formula for tanh: $\tanh(a + b) = \frac{\tanh(a) + \tanh(b)}{1 + \tanh(a)\tanh(b)}$, we can substitute the given values. Now we calculate: $\tanh(a + b) = \frac{\frac{1}{2} + \frac{1}{3}}{1 + (\frac{1}{2}) \times (\frac{1}{3})} = \frac{\frac{5}{6}}{1 + \frac{1}{6}} = \frac{5}{7}$. However, we need to convert this to the hyperbolic tangent form: $\tanh(a + b) = \frac{5 - 7}{5 + 7} = \frac{-2}{12} = \frac{-1}{6}$.",
+      "explanation": "The correct answer is found by applying the hyperbolic addition formula and simplifying. Common mistake: Not converting the result to the hyperbolic tangent form.",
+      "common_mistake_notes": "A common mistake is to forget that the final answer should be in terms of tanh, which requires dividing the numerator and denominator by the same value (in this case, 6) to get the simplified form."
+    },
+    {
+      "id": "?",
+      "stem": "Given $\text{sinh}(a) = 5$ and $\text{cosh}(b) = -3$, find the value of $\tanh(a + b)$.",
+      "choices": {
+        "A": "rac{8}{7}",
+        "B": "rac{-1}{2}",
+        "C": "rac{-4}{3}",
+        "D": "rac{1}{4}"
+      },
+      "correct_choice": "B",
+      "solution": "Using the hyperbolic addition formula for tanh: $\tanh(a + b) = \frac{\tanh(a) + \tanh(b)}{1 + \tanh(a)\tanh(b)}$, we can substitute the given values. However, we need to find $\tanh(b)$ first. Since $\tanh(x) = \frac{\text{sinh}(x)}{\text{cosh}(x)}$, we have $\tanh(b) = \frac{\text{sinh}(b)}{-3}$. But since sinh is positive, tanh must be negative, so $\tanh(b) = -\frac{5}{3}$. Now we can calculate $\tanh(a + b)$: $\tanh(a + b) = \frac{\frac{5}{1} + (-\frac{5}{3})}{1 + (\frac{5}{1})  \times (-\frac{5}{3})} = \frac{5 - \frac{5}{3}}{1 - \frac{25}{3}} = \frac{\frac{10}{3}}{-\frac{22}{3}} = \frac{-10}{22} = \frac{-1}{2}$.",
+      "explanation": "The correct answer is found by applying the hyperbolic addition formula and solving for the missing values using the given information. Common mistake: Not accounting for the signs of sinh and cosh.",
+      "common_mistake_notes": "A common mistake is to forget that tanh is negative when cosh is negative, leading to an incorrect calculation of $\tanh(b)$."
+    },
+    {
+      "id": "?",
+      "stem": "Find the value of $\text{sinh}^{-1}(x)$ if $x = \text{csch}(a + b)$ given that $\text{csch}(a) = 2$ and $\text{sech}(b) = 3$.",
+      "choices": {
+        "A": "-a - b",
+        "B": "a + b",
+        "C": "a - b",
+        "D": "-a + b"
+      },
+      "correct_choice": "B",
+      "solution": "Given $x = \text{csch}(a + b)$, we can rewrite it as $\text{sinh}^{-1}(x) = a + b$. Since $\text{csch}(x) = 1/\text{sinh}(x)$ and $\text{sech}(x) = 1/\text{cosh}(x)$, we have $2 = 1/\text{sinh}(a)$ and $3 = 1/\text{cosh}(b)$. Solving for sinh(a) and cosh(b), we get $\text{sinh}(a) = \frac{1}{2}$ and $\text{cosh}(b) = \frac{1}{3}$. However, since sinh and cosh are positive in this context, the inverse hyperbolic functions will give us the correct values for a and b. Therefore, $\text{sinh}^{-1}(x) = a + b$.",
+      "explanation": "The correct answer is found by using the relationship between csch and sinh, and sech and cosh, to determine the inverse hyperbolic sine of x in terms of a and b. Common mistake: Not understanding the relationship between hyperbolic functions and their inverses.",
+      "common_mistake_notes": "A common mistake is to confuse the inverse hyperbolic functions with the regular hyperbolic functions, leading to an incorrect interpretation of $x = \text{csch}(a + b)$ as a product or sum rather than a composition of functions."
+    },
+    {
+      "id": "?",
+      "stem": "Find the value of $\text{cosh}^{-1}(x)$ if $x = \text{sech}(a + b)$ given that $\tanh(a) = 2$ and $\tanh(b) = 3$.",
+      "choices": {
+        "A": "-a - b",
+        "B": "a + b",
+        "C": "a - b",
+        "D": "-a + b"
+      },
+      "correct_choice": "B",
+      "solution": "Given $x = \text{sech}(a + b)$, we can rewrite it as $\text{cosh}^{-1}(x) = a + b$. Since $\tanh(x) = \frac{\text{sinh}(x)}{\text{cosh}(x)}$, we have $2 = \frac{\text{sinh}(a)}{\text{cosh}(a)}$ and $3 = \frac{\text{sinh}(b)}{\text{cosh}(b)}$. Solving for sinh(a) and cosh(a), we get $\text{sinh}(a) = 2\text{cosh}(a)$ and $\text{sinh}(b) = 3\text{cosh}(b)$. Using the hyperbolic identity $\text{cosh}^2(x) - \text{sinh}^2(x) = 1$, we find that $\text{cosh}(a) = \frac{\text{sqrt}(5)}}{2}$ and $\text{cosh}(b) = \frac{\text{sqrt}(10)}}{3}$. Now, since sinh(a) and sinh(b) are positive, cosh(а) and cosh(b) must also be positive. Therefore, $\text{cosh}^{-1}(x) = a + b$.",
+      "explanation": "The correct answer is found by using the relationship between sech and cosh, and tanh and sinh, to determine the inverse hyperbolic cosine of x in terms of a and b. Common mistake: Not understanding the relationship between hyperbolic functions and their inverses.",
+      "common_mistake_notes": "A common mistake is to confuse the inverse hyperbolic functions with the regular hyperbolic functions, leading to an incorrect interpretation of $x = \text{sech}(a + b)$ as a product or sum rather than a composition of functions."
+    },
+    {
+      "id": "?",
+      "stem": "Find the value of $\tanh^{-1}(x)$ if $x = \text{coth}(a + b)$ given that $\text{sinh}(a) = 2$ and $\text{cosh}(b) = 3$.",
+      "choices": {
+        "A": "-a - b",
+        "B": "a + b",
+        "C": "a - b",
+        "D": "-a + b"
+      },
+      "correct_choice": "B",
+      "solution": "Given $x = \text{coth}(a + b)$, we can rewrite it as $\tanh^{-1}(x) = a + b$. Since $\text{coth}(x) = 1/\text{tanh}(x)$ and $\text{sinh}(x) = \frac{e^x - e^{-x}}{2}$, we have $x = \frac{\text{cosh}(a + b)}{\text{sinh}(a + b)}$. To find sinh(a + b) and cosh(a + b), we use the hyperbolic addition formulas: $\text{sinh}(a + b) = \text{sinh}(a)\text{cosh}(b) + \text{cosh}(a)\text{sinh}(b)$ and $\text{cosh}(a + b) = \text{cosh}(a)\text{cosh}(b) - \text{sinh}(a)\text{sinh}(b)$. Substituting the given values, we get sinh(a + b) = 2  \times 3 + 1 and cosh(a + b) = 5  \times 3 - 6. Now, $\tanh^{-1}(x) = a + b$ can be calculated using these values and the relationship between tanh and sinh/сosh.",
+      "explanation": "The correct answer is found by using the relationship between coth and tanh, and sinh and cosh, to determine the inverse hyperbolic tangent of x in terms of a and b. Common mistake: Not understanding the relationship between hyperbolic functions and their inverses.",
+      "common_mistake_notes": "A common mistake is to confuse the inverse hyperbolic functions with the regular hyperbolic functions, leading to an incorrect interpretation of $x = \text{coth}(a + b)$ as a product or sum rather than a composition of functions."
+    }
+  ]
+}

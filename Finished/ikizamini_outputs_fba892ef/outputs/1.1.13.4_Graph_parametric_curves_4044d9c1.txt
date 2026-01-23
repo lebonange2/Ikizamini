@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.13.4 Graph parametric curves
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.13 Parametric Equations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Which parametric equations represent a parabola opening upwards, passing through (-3, -3) and (3, 3)?
+A) [Graph: A parabola opening upwards, with vertex at (0,0)]
+B) [Graph: A straight line from (-9, -3) to (9, 3)]
+C) [Graph: A circle centered at (0,0) with radius 3]
+D) [Graph: An ellipse centered at (0,0) with semi-major axis 3 and semi-minor axis 1]
+Correct Answer: A
+
+Solution:
+The correct parametric equations form a parabolic shape where x is the square of y. The limits ensure the graph stays within -3 ≤ t ≤ 3.
+
+Explanation:
+The parabola forms because x is quadratic in y, and choices B, C, and D do not match this relationship.
+
+Common mistake note:
+Common mistake: Choosing B, which represents a straight line instead of a parabola.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+At what value of t does the parametric curve defined by x(t) = 2cos(t) and y(t) = 2sin(t), π ≤ t ≤ 3π/2, intersect the x-axis?
+A) 0
+B) 1
+C) -2
+D) 2
+Correct Answer: C
+
+Solution:
+The curve represents a circle in the third quadrant where x is negative. At y = 0, t = π, and x = -2.
+
+Explanation:
+The intersection occurs when y = 0, which corresponds to t = π in the given range.
+
+Common mistake note:
+Common mistake: Choosing A or B, corresponding to points on the y-axis or first quadrant.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+What shape does the parametric equations x(t) = 3sin(2t) and y(t) = 4cos(2t) describe?
+A) Circle
+B) Ellipse
+C) Parabola
+D) Hyperbola
+Correct Answer: B
+
+Solution:
+The equations resemble a circle but with different coefficients, forming an ellipse.
+
+Explanation:
+Recognizing the form of the parametric equations reveals it represents an ellipse.
+
+Common mistake note:
+Common mistake: Choosing C or D, representing parabolas and hyperbolas.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+At what value of t does the parametric curve x(t) = t^3 - 2t, y(t) = t^2 + 1, 0 ≤ t ≤ 2, have a local minimum?
+A) 0
+B) 1
+C) sqrt(2)
+D) 2
+Correct Answer: B
+
+Solution:
+The local minimum occurs at t = 1, where dy/dt = 0 and d^2y/dt^2 > 0.
+
+Explanation:
+Local minima occur when dy/dt = 0 and d^2y/dt^2 > 0. In this case, only t = 1 satisfies the condition.
+
+Common mistake note:
+Common mistake: Choosing A or D, corresponding to interval endpoints instead of interior minimum.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+What is the slope of the tangent line at t = 2 for the parametric curve x(t) = 2t + 1, y(t) = t^2 - 3?
+A) -4
+B) 0
+C) 2
+D) 5
+Correct Answer: A
+
+Solution:
+The slope is dy/dt(2) = 4, which can also be found using the change in y and x at t = 2.
+
+Explanation:
+The slope of a tangent line at a specific point on a parametric curve is given by dy/dt or (y'(2) - y'(0)) / (x'(2) - x'(0)).
+
+Common mistake note:
+Common mistake: Choosing C or D, based on x'(t), instead of considering dy/dt.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+What is the length of the major axis for the parametric equations x(t) = 3cos(2t) and y(t) = 4sin(2t)?
+A) 3
+B) 4
+C) 5
+D) 6
+Correct Answer: D
+
+Solution:
+The major axis length is 2a, where a is the semi-major axis (3 in this case).
+
+Explanation:
+For an ellipse given by parametric equations x(t) = a*cos(θ) and y(t) = b*sin(θ), the major axis length is 2a.
+
+Common mistake note:
+Common mistake: Choosing A or B, corresponding to semi-axes instead of the major axis.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+At what value of t does the parametric curve x(t) = t^2 - 1, y(t) = t + 3 have a vertical tangent?
+A) -1
+B) 0
+C) 1
+D) sqrt(2)
+Correct Answer: C
+
+Solution:
+A vertical tangent occurs at t = 1, where dx/dt = 0 and dy/dt ≠ 0.
+
+Explanation:
+Vertical tangents happen when dx/dt = 0 and dy/dt ≠ 0. In this case, only t = 1 satisfies the condition.
+
+Common mistake note:
+Common mistake: Choosing A or B, corresponding to values where dx/dt = 0 but not vertical tangents.
+------------------------------------------------------------------------------

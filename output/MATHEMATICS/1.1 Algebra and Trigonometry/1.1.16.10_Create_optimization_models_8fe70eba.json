@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.16.10",
+  "objective_text": "Create optimization models",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "A company wants to maximize profit by producing two products, A and B. The production of each product requires resources (labor and materials) and has a selling price. Which of the following is an appropriate way to create an optimization model for this problem?",
+      "choices": {
+        "A": "Minimize the total cost of labor and materials.",
+        "B": "Maximize the sum of the selling prices of products A and B.",
+        "C": "Minimize the difference between the production quantities of products A and B.",
+        "D": "Maximize the product of the profit per unit for products A and B."
+      },
+      "correct_choice": "B",
+      "solution": "The objective of the company is to maximize profit, which means maximizing the total revenue from selling both products minus the total cost. Maximizing the sum of the selling prices directly relates to the total revenue.",
+      "explanation": "In an optimization problem, we aim to find the best solution among all possible solutions. In this case, maximizing profit aligns with maximizing the total revenue.",
+      "common_mistake_notes": "Common mistake: Choosing A, which minimizes costs instead of maximizing profits."
+    },
+    {
+      "id": ":2",
+      "stem": "A transportation company needs to determine the most efficient routes for its delivery trucks to minimize fuel consumption and travel time. Which type of optimization model should they use?",
+      "choices": {
+        "A": "Linear Programming (LP)",
+        "B": "Nonlinear Programming (NLP)",
+        "C": "Integer Programming (IP)",
+        "D": "Dynamic Programming"
+      },
+      "correct_choice": "A",
+      "solution": "Linear Programming is suitable for problems with linear relationships between variables and constraints, such as minimizing fuel consumption and travel time.",
+      "explanation": "Linear Programming deals with optimizing a linear objective function subject to linear constraints. The problem described involves both linear objectives (minimizing fuel consumption and travel time) and can be modeled using linear equations or inequalities.",
+      "common_mistake_notes": "Common mistake: Choosing B, which is used for problems with nonlinear relationships that cannot be expressed as linear functions."
+    },
+    {
+      "id": ":3",
+      "stem": "A manufacturing company wants to produce three products (X, Y, and Z) using two machines (M1 and M2). Each product has a production rate on each machine and a profit per unit. Which type of optimization model should they use?",
+      "choices": {
+        "A": "Linear Programming (LP)",
+        "B": "Nonlinear Programming (NLP)",
+        "C": "Integer Programming (IP)",
+        "D": "Stochastic Programming"
+      },
+      "correct_choice": "A",
+      "solution": "The problem involves linear relationships between production rates, machine usage, and profits, which can be modeled using Linear Programming.",
+      "explanation": "Linear Programming is appropriate when the objective function and constraints are linear. In this case, the profit per unit is a linear relationship with the production quantities, and the availability of machines can also be represented linearly.",
+      "common_mistake_notes": "Common mistake: Choosing C, which is used for problems where variables must take integer values (e.g., number of products produced), but not for continuous decisions like production rates."
+    },
+    {
+      "id": ":4",
+      "stem": "A hospital wants to schedule appointments for patients with different doctors while minimizing wait times and ensuring each doctor's workload is balanced. Which type of optimization model should they use?",
+      "choices": {
+        "A": "Linear Programming (LP)",
+        "B": "Nonlinear Programming (NLP)",
+        "C": "Integer Programming (IP)",
+        "D": "Resource-Consstrained Project Scheduling Problem (RCPSP)"
+      },
+      "correct_choice": "D",
+      "solution": "The problem involves scheduling appointments, which is a resource-constrained project scheduling problem that can be modeled using Integer Programming.",
+      "explanation": "Resource-Constrained Project Scheduling Problem (RCPSP) deals with scheduling tasks while considering constraints on resources like doctors' availability. This problem requires integer decisions for appointment times and can be modeled as an IP problem.",
+      "common_mistake_notes": "Common mistake: Choosing C, which is a more general category that includes RCPSP but might not be the most specific or efficient approach."
+    },
+    {
+      "id": ":5",
+      "stem": "A retailer wants to determine the optimal order quantities for different products to minimize inventory costs and stockouts. Which optimization model should they use?",
+      "choices": {
+        "A": "Linear Programming (LP)",
+        "B": "Nonlinear Programming (NLP)",
+        "C": "Economic Order Quantity (EOQ) Model",
+        "D": "Reorder Point Model"
+      },
+      "correct_choice": "C",
+      "solution": "The Economic Order Quantity (EOQ) model is specifically designed to minimize inventory costs and stockouts by determining the optimal order quantity for each product.",
+      "explanation": "The EOQ model is a classical inventory management technique that balances ordering and holding costs. It assumes a constant demand rate, fixed lead time, and no backorders. The problem described aligns with the assumptions of the EOQ model.",
+      "common_mistake_notes": "Common mistake: Choosing A, which could be used for more complex inventory problems but is not as specialized as the EOQ model."
+    },
+    {
+      "id": ":6",
+      "stem": "A university wants to assign students to dorm rooms while ensuring fairness and minimizing conflicts. Which type of optimization model should they use?",
+      "choices": {
+        "A": "Linear Programming (LP)",
+        "B": "Nonlinear Programming (NLP)",
+        "C": "Assignment Problem",
+        "D": "Network Flow Problem"
+      },
+      "correct_choice": "C",
+      "solution": "The Assignment Problem is specifically designed to assign resources (students) to tasks (dorm rooms) while optimizing a certain objective, such as minimizing conflicts.",
+      "explanation": "The Assignment Problem deals with allocating resources to tasks in a way that optimizes an objective function, often subject to constraints like fairness or preferences. Assigning students to dorm rooms can be modeled as an assignment problem.",
+      "common_mistake_notes": "Common mistake: Choosing A, which could be used for more complex resource allocation problems but is not as specialized as the Assignment Problem."
+    },
+    {
+      "id": ":7",
+      "stem": "A shipping company needs to determine the optimal routes for a fleet of delivery trucks given multiple pick-up and drop-off locations. Which optimization model should they use?",
+      "choices": {
+        "A": "Linear Programming (LP)",
+        "B": "Nonlinear Programming (NLP)",
+        "C": "Traveling Salesman Problem (TSP)",
+        "D": "Vehicle Routing Problem (VRP)"
+      },
+      "correct_choice": "D",
+      "solution": "The Vehicle Routing Problem (VRP) is specifically designed to optimize routes for a fleet of vehicles visiting multiple locations, which fits the problem description.",
+      "explanation": "The Vehicle Routing Problem deals with assigning delivery trucks to pick-up and drop-off locations while minimizing travel costs or other objectives. The given problem involves routing multiple trucks, making VRP the most suitable model.",
+      "common_mistake_notes": "Common mistake: Choosing C, which is a special case of VRP where only one vehicle visits all locations exactly once."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.7.3",
+  "objective_text": "Solve systems by elimination",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of equations:\n5x - 2y = 11\n-3x + y = -6",
+      "choices": {
+        "A": "[1, 2]",
+        "B": "[-2, 1]",
+        "C": "[2, -1]",
+        "D": "[0, 5]"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the system by elimination, we can multiply the second equation by 2 to match the coefficients of y. This gives us:\n-6x + 2y = -12\nNow add the two equations together to eliminate y:\n(5x - 2y) + (-6x + 2y) = 11 - 12\n-x = -1\nSolving for x, we get x = 1. Now substitute x back into one of the original equations to find y. Using the first equation:\n5(1) - 2y = 11\n5 - 2y = 11\n-2y = 6\ny = -3\nSo, the solution is (x, y) = (1, -3), which corresponds to answer A.",
+      "explanation": "We used elimination by making the coefficients of y equal in both equations and then adding them together. The common mistake is not properly multiplying one equation or incorrectly combining the equations, leading to a different solution.",
+      "common_mistake_notes": "Multiplying the second equation by 2 before adding is crucial for eliminating y."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of equations:\n4x + 3y = 15\n-8x - 6y = -30",
+      "choices": {
+        "A": "[3, 1]",
+        "B": "[-3, -1]",
+        "C": "[0, 5]",
+        "D": "[2, 3]"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the system by elimination, we can multiply the first equation by 2 to match the coefficients of x in the second equation. This gives us:\n8x + 6y = 30\nNow add the two equations together to eliminate x:\n(8x + 6y) + (-8x - 6y) = 30 - 30\n0 = 0\nThis is a true statement, which means that any value of x will satisfy the system. To find y, we can substitute an arbitrary value for x into one of the original equations. Let's use x = 1 from the first equation:\n4(1) + 3y = 15\n4 + 3y = 15\n3y = 11\ny = \frac{11}{3}\nHowever, since we're looking for an exact integer solution, this system has no unique solution. Therefore, there is no correct answer among the choices provided.",
+      "explanation": "We attempted elimination but ended up with a tautology (0 = 0), indicating that the system has infinitely many solutions or no solution at all. The common mistake would be to assume there's an error in the problem and select one of the choices, not realizing that the system doesn't have a unique integer solution.",
+      "common_mistake_notes": "Not recognizing that the system has infinitely many solutions due to a contradiction after elimination."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of equations:\n7x - 4y = 16\n-21x + 12y = -48",
+      "choices": {
+        "A": "[2, 0]",
+        "B": "[0, 2]",
+        "C": "[1, 3]",
+        "D": "[3, 1]"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the system by elimination, we can multiply the second equation by \n\frac{1}{3} to match the coefficients of x in the first equation. This gives us:\n-7x + 4y = -16\nNow add the two equations together to eliminate x:\n(7x - 4y) + (-7x + 4y) = 16 - 16\n0 = 0\nThis is a true statement, which means that any value of x will satisfy the system. To find y, we can substitute an arbitrary value for x into one of the original equations. Let's use x = 0 from the second equation:\n-21(0) + 12y = -48\n12y = -48\ny = -4\nNow that we have y, we can substitute it back into one of the original equations to find x. Using the first equation:\n7x - 4(-4) = 16\n7x + 16 = 16\n7x = 0\nx = 0\nSo, the solution is (x, y) = (0, -4), which corresponds to answer B.",
+      "explanation": "We attempted elimination but ended up with a tautology (0 = 0), indicating that the system has infinitely many solutions or no solution at all. The common mistake would be to assume there's an error in the problem and select one of the choices, not realizing that the system doesn't have a unique integer solution.",
+      "common_mistake_notes": "Not recognizing that the system has infinitely many solutions due to a contradiction after elimination."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of equations:\n9x - 6y = 18\n-18x + 12y = -36",
+      "choices": {
+        "A": "[2, 0]",
+        "B": "[0, 2]",
+        "C": "[1, 3]",
+        "D": "[3, 1]"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the system by elimination, we can multiply the second equation by \n\frac{1}{2} to match the coefficients of x in the first equation. This gives us:\n-9x + 6y = -18\nNow add the two equations together to eliminate x:\n(9x - 6y) + (-9x + 6y) = 18 - 18\n0 = 0\nThis is a true statement, which means that any value of x will satisfy the system. To find y, we can substitute an arbitrary value for x into one of the original equations. Let's use x = 0 from the second equation:\n-18(0) + 12y = -36\n12y = -36\ny = -3\nNow that we have y, we can substitute it back into one of the original equations to find x. Using the first equation:\n9x - 6(-3) = 18\n9x + 18 = 18\n9x = 0\nx = 0\nSo, the solution is (x, y) = (0, -3), which corresponds to answer B.",
+      "explanation": "We attempted elimination but ended up with a tautology (0 = 0), indicating that the system has infinitely many solutions or no solution at all. The common mistake would be to assume there's an error in the problem and select one of the choices, not realizing that the system doesn't have a unique integer solution.",
+      "common_mistake_notes": "Not recognizing that the system has infinitely many solutions due to a contradiction after elimination."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of equations:\n12x - 8y = 24\n-6x + 4y = -12",
+      "choices": {
+        "A": "[2, 0]",
+        "B": "[0, 2]",
+        "C": "[1, 3]",
+        "D": "[3, 1]"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the system by elimination, we can multiply the second equation by 2 to match the coefficients of x in the first equation. This gives us:\n-12x + 8y = -24\nNow add the two equations together to eliminate x:\n(12x - 8y) + (-12x + 8y) = 24 - 24\n0 = 0\nThis is a true statement, which means that any value of x will satisfy the system. To find y, we can substitute an arbitrary value for x into one of the original equations. Let's use x = 0 from the second equation:\n-6(0) + 4y = -12\n4y = -12\ny = -3\nNow that we have y, we can substitute it back into one of the original equations to find x. Using the first equation:\n12x - 8(-3) = 24\n12x + 24 = 24\n12x = 0\nx = 0\nSo, the solution is (x, y) = (0, -3), which corresponds to answer B.",
+      "explanation": "We attempted elimination but ended up with a tautology (0 = 0), indicating that the system has infinitely many solutions or no solution at all. The common mistake would be to assume there's an error in the problem and select one of the choices, not realizing that the system doesn't have a unique integer solution.",
+      "common_mistake_notes": "Not recognizing that the system has infinitely many solutions due to a contradiction after elimination."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of equations:\n15x - 10y = 30\n-30x + 20y = -60",
+      "choices": {
+        "A": "[2, 0]",
+        "B": "[0, 2]",
+        "C": "[1, 3]",
+        "D": "[3, 1]"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the system by elimination, we can multiply the second equation by \n\frac{1}{2} to match the coefficients of x in the first equation. This gives us:\n-15x + 10y = -30\nNow add the two equations together to eliminate x:\n(15x - 10y) + (-15x + 10y) = 30 - 30\n0 = 0\nThis is a true statement, which means that any value of x will satisfy the system. To find y, we can substitute an arbitrary value for x into one of the original equations. Let's use x = 0 from the second equation:\n-30(0) + 20y = -60\n20y = -60\ny = -3\nNow that we have y, we can substitute it back into one of the original equations to find x. Using the first equation:\n15x - 10(-3) = 30\n15x + 30 = 30\n15x = 0\nx = 0\nSo, the solution is (x, y) = (0, -3), which corresponds to answer B.",
+      "explanation": "We attempted elimination but ended up with a tautology (0 = 0), indicating that the system has infinitely many solutions or no solution at all. The common mistake would be to assume there's an error in the problem and select one of the choices, not realizing that the system doesn't have a unique integer solution.",
+      "common_mistake_notes": "Not recognizing that the system has infinitely many solutions due to a contradiction after elimination."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of equations:\n21x - 14y = 42\n-14x + 9y = -28",
+      "choices": {
+        "A": "[2, 0]",
+        "B": "[0, 2]",
+        "C": "[1, 3]",
+        "D": "[3, 1]"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the system by elimination, we can multiply the second equation by \n\frac{3}{2} to match the coefficients of x in the first equation. This gives us:\n-21x + 21y = -42\nNow add the two equations together to eliminate x:\n(21x - 14y) + (-21x + 21y) = 42 - 42\n7y = 0\nSolving for y, we get y = 0. Now substitute y back into one of the original equations to find x. Using the first equation:\n21x - 14(0) = 42\n21x = 42\nx = 2\nSo, the solution is (x, y) = (2, 0), which corresponds to answer A.",
+      "explanation": "We used elimination by making the coefficients of x equal in both equations and then adding them together. The common mistake would be to multiply one equation incorrectly or combine the equations with errors, leading to a different solution.",
+      "common_mistake_notes": "Multiplying the second equation by \n\frac{3}{2} before adding is crucial for eliminating x."
+    }
+  ]
+}

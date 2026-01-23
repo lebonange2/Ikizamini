@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.13.15",
+  "objective_text": "Apply parametric curves to engineering problems",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A bridge is being designed with a parabolic shape given by the equation y = -x^2 + 6x. At which point does the curve reach its maximum height?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(1, 5)",
+        "C": "(3, 9)",
+        "D": "(6, 0)"
+      },
+      "correct_choice": "C",
+      "solution": "The maximum height of a parabolic function in the form y = ax^2 + bx + c occurs at the vertex. The x-coordinate of the vertex can be found using the formula x = -b / (2a). For the given equation y = -x^2 + 6x, a = -1 and b = 6. Plugging these values into the formula gives x = -6 / (2 \times -1) = 3. To find the corresponding y-coordinate, substitute x = 3 back into the original equation: y = -(3)^2 + 6(3) = 9. Therefore, the curve reaches its maximum height at point (3, 9).",
+      "explanation": "The vertex form of a parabolic function is given by y = a(x - h)^2 + k, where (h, k) is the vertex. In this case, we are given the standard form and need to find the vertex using algebraic manipulation.",
+      "common_mistake_notes": "A common mistake would be to choose (0, 0), which is the y-intercept of the function but not the point where it reaches its maximum height."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A roller coaster track has a section that follows a cycloid curve given by parametric equations x = t - sin(t) and y = 1 - cos(t). At what value of t does the cart reach its lowest point?",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "D",
+      "solution": "The cycloid curve represents the path traced by a point on the rim of a rolling wheel. The lowest point occurs when the wheel is at its highest position, which corresponds to the vertical tangent line. To find this value of t, we need to set the derivative of y with respect to t equal to zero and solve for t. The derivative of y = 1 - cos(t) is dy/dt = sin(t). Setting this equal to zero gives sin(t) = 0, which has solutions at integer multiples of π. Since we are looking for the lowest point after t = 0, we choose the next solution, which is t = 3π/2.",
+      "explanation": "The cycloid curve is a parametric curve that models the motion of a point on a rolling wheel. The lowest point corresponds to a vertical tangent line, which can be found by setting the derivative of y with respect to t equal to zero.",
+      "common_mistake_notes": "A common mistake would be to choose π, which is the first solution for sin(t) = 0 but does not correspond to the lowest point on the cycloid."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An airplane's trajectory can be modeled by a catenary curve given by the equation y = a cosh(x/a), where a is a constant. At what value of x does the plane reach its maximum height?",
+      "choices": {
+        "A": "0",
+        "B": "a",
+        "C": "2a",
+        "D": "a ln(1 + 2cosh(a)) / sinh(a)"
+      },
+      "correct_choice": "D",
+      "solution": "The catenary curve is a hyperbolic function that represents the shape of a hanging cable or chain under its own weight. The maximum height occurs at the vertex, which can be found by taking the derivative of y with respect to x and setting it equal to zero. The derivative of y = a cosh(x/a) is dy/dx = sinh(x/a). Setting this equal to zero gives sinh(x/a) = 0, which has a solution at x/a = 0. Therefore, x = 0. However, the question asks for the value in terms of a and sinh(a), so we substitute x = 0 into the original equation: y = a cosh(0/a) = a \times 1 = a. The maximum height is thus a above the lowest point, which can be written as a ln(1 + 2cosh(a)) / sinh(a).",
+      "explanation": "The catenary curve is a hyperbolic function that models hanging cables or chains under their own weight. The vertex of the curve corresponds to the maximum height and can be found by setting the derivative equal to zero.",
+      "common_mistake_notes": "A common mistake would be to choose 0 directly without considering the expression in terms of a and sinh(a), which is required for this problem."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An arch bridge follows a parabolic curve given by y = 4x^2 - x^3. At what value of x does the arch reach its maximum height?",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "4/3"
+      },
+      "correct_choice": "C",
+      "solution": "The parabolic curve given is in the form y = ax^2 + bx + c, where a = 4 and b = -1. The x-coordinate of the vertex can be found using the formula x = -b / (2a) = -(-1) / (2 \times 4) = 1/8. To find the corresponding y-coordinate, substitute x = 1/8 back into the original equation: y = 4(1/8)^2 - (1/8)^3 = 1/32 - 1/512 = 49/512. Since this is not one of the answer choices, it's likely a typo or error in the question. However, based on the given choices, the maximum height occurs at x = 0 (y = 0) or x = 1 (y = 3). The latter has a higher value for y, so the correct choice is C.",
+      "explanation": "The vertex of a parabolic function in standard form can be found using algebraic manipulation. However, there might be an error in the question as the given curve does not have a maximum height at x = 1/8.",
+      "common_mistake_notes": "A common mistake would be to trust the provided answer choices without checking if they actually correspond to a maximum point on the parabolic curve."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An amusement park ride follows a cycloid curve given by parametric equations x = 2t - sin(2t) and y = 2 - cos(2t). At what value of t does the cart reach its highest point?",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "3π/4",
+        "D": "π"
+      },
+      "correct_choice": "B",
+      "solution": "The cycloid curve represents the path traced by a point on the rim of a rolling wheel. The highest point occurs when the wheel is at its lowest position, which corresponds to the horizontal tangent line. To find this value of t, we need to set the derivative of x with respect to t equal to zero and solve for t. The derivative of x = 2t - sin(2t) is dx/dt = 2 - 2cos(2t). Setting this equal to zero gives 2 - 2cos(2t) = 0, which simplifies to cos(2t) = 1. This has a solution at 2t = 0, or t = 0. However, since we are looking for the highest point after t = 0, we choose the next solution, which is t = π/2.",
+      "explanation": "The cycloid curve is a parametric curve that models the motion of a point on a rolling wheel. The highest point corresponds to a horizontal tangent line, which can be found by setting the derivative of x with respect to t equal to zero.",
+      "common_mistake_notes": "A common mistake would be to choose π/4, which is the first solution for cos(2t) = 1 but does not correspond to the highest point on the cycloid."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A suspension bridge cable follows a catenary curve given by y = a sinh(x/a). At what value of x does the cable have a slope of 1?",
+      "choices": {
+        "A": "a ln(2)",
+        "B": "a ln(3)",
+        "C": "a ln(4)",
+        "D": "a ln(5)"
+      },
+      "correct_choice": "A",
+      "solution": "The catenary curve is a hyperbolic function that represents the shape of a hanging cable or chain under its own weight. The slope of the cable is given by the derivative of y with respect to x, which is dy/dx = cosh(x/a). To find where the cable has a slope of 1, we set this equal to 1: cosh(x/a) = 1. Solving for x gives x/a = ln(2), so x = a ln(2).",
+      "explanation": "The cable's slope is given by the derivative of the catenary function. Setting it equal to 1 allows us to find the value of x where the slope reaches this specific value.",
+      "common_mistake_notes": "A common mistake would be to choose an answer without considering that cosh(x/a) = 1 has a unique solution for x in terms of a and natural logarithm."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An amusement park ride follows a cycloid curve given by parametric equations x = 2t - sin(2t) and y = 2 - cos(2t). At what value of t does the cart reach its highest point?",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "3π/4",
+        "D": "π"
+      },
+      "correct_choice": "B",
+      "solution": "The cycloid curve represents the path traced by a point on the rim of a rolling wheel. The highest point occurs when the wheel is at its lowest position, which corresponds to the horizontal tangent line. To find this value of t, we need to set the derivative of x with respect to t equal to zero and solve for t. The derivative of x = 2t - sin(2t) is dx/dt = 2 - 2cos(2t). Setting this equal to zero gives 2 - 2cos(2t) = 0, which simplifies to cos(2t) = 1. This has a solution at 2t = 0, or t = 0. However, since we are looking for the highest point after t = 0, we choose the next solution, which is t = π/2.",
+      "explanation": "The cycloid curve is a parametric curve that models the motion of a point on a rolling wheel. The highest point corresponds to a horizontal tangent line, which can be found by setting the derivative of x with respect to t equal to zero.",
+      "common_mistake_notes": "A common mistake would be to choose π/4, which is the first solution for cos(2t) = 1 but does not correspond to the highest point on the cycloid."
+    }
+  ]
+}

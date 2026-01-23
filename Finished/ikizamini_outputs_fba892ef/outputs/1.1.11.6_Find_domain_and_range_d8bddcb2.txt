@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.11.6 Find domain and range
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.11 Absolute Value Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+What is the domain of the function f(x) = √(x + 4)?
+A) -∞ < x ≤ -4
+B) x ≥ -4
+C) x > -4
+D) x ≠ -4
+Correct Answer: B
+
+Solution:
+The domain of a function involving a square root is determined by the values for which the expression inside the root is non-negative. For f(x) = √(x + 4), x + 4 must be greater than or equal to zero. Solving x + 4 ≥ 0 gives x ≥ -4. Therefore, the domain is all real numbers greater than or equal to -4.
+
+Explanation:
+The square root function is defined only for non-negative values. Choice A is incorrect because it excludes the value x = -4 which is in the domain. Choice C omits the endpoint -4, making it too restrictive. Choice D is incorrect because there's no reason to exclude x = -4.
+
+Common mistake note:
+Common mistake: Not considering the endpoint of the inequality when dealing with square roots.
+------------------------------------------------------------------------------
+
+Problem 2 (Xcv456):
+What is the range of the function g(x) = 2x + 1 for x in the interval [-3, 5]?
+A) -8 ≤ y ≤ 11
+B) -7 ≤ y < 11
+C) -7 < y ≤ 11
+D) y ∈ R
+Correct Answer: A
+
+Solution:
+The range of a linear function is determined by plugging in the minimum and maximum values from the given interval into the function. For g(x) = 2x + 1, when x = -3, y = -5; when x = 5, y = 11. The smallest possible value for y is thus -5 (from -3), and the largest is 11 (from 5). Since we're considering a closed interval, we include both endpoints.
+
+Explanation:
+Choice B omits the upper endpoint of 11, while choice C omits the lower endpoint of -5. Choice D is incorrect because it suggests that the range includes all real numbers, which is not true for a function defined over a finite interval.
+
+Common mistake note:
+Common mistake: Not considering the endpoints when finding the range on a bounded interval.
+------------------------------------------------------------------------------
+
+Problem 3 (Zxc789):
+What is the domain of the function h(x) = 1 / (x - 2)?
+A) x ≠ 0
+B) x ≠ 2
+C) x ≤ 2
+D) x ≥ 2
+Correct Answer: B
+
+Solution:
+The domain of a function involving a denominator is determined by the values for which the denominator is not zero. For h(x) = 1 / (x - 2), x - 2 must be non-zero. Solving x - 2 ≠ 0 gives x ≠ 2. Therefore, the domain excludes only the value x = 2.
+
+Explanation:
+The function has a singularity at x = 2 because division by zero is undefined. Choice A is incorrect because it excludes the wrong value (x = 0). Choices C and D are incorrect because they restrict the domain to specific intervals rather than just one point.
+
+Common mistake note:
+Common mistake: Confusing the restriction caused by a denominator with other types of inequalities.
+------------------------------------------------------------------------------
+
+Problem 4 (Qwe123):
+What is the range of the function j(x) = x^2 - 4x + 5 for all real numbers?
+A) y ≥ 0
+B) y > 0
+C) -∞ < y < ∞
+D) y ∈ R
+Correct Answer: A
+
+Solution:
+The range of a quadratic function in the form f(x) = ax^2 + bx + c, where a > 0, is determined by finding the vertex and noting that the parabola opens upwards. For j(x) = x^2 - 4x + 5, the vertex occurs at x = -(-4) / (2 * 1) = 2. Plugging x = 2 into the function gives y = 0. The range is all values greater than or equal to this minimum value.
+
+Explanation:
+Choice B omits the endpoint of 0, while choice C suggests that the range includes negative numbers (which is not true for a parabola opening upwards). Choice D is incorrect because it suggests that the range includes all real numbers, which is too broad for a quadratic function with a minimum.
+
+Common mistake note:
+Common mistake: Not recognizing that a parabola with a positive leading coefficient has a minimum value.
+------------------------------------------------------------------------------
+
+Problem 5 (Asd456):
+What is the domain of the function k(x) = ln(x - 3)?
+A) x > 0
+B) x ≥ 3
+C) x > 3
+D) x ≠ 3
+Correct Answer: C
+
+Solution:
+The domain of a natural logarithm function is determined by the values for which the argument inside the logarithm is greater than zero. For k(x) = ln(x - 3), x - 3 must be greater than zero. Solving x - 3 > 0 gives x > 3. Therefore, the domain excludes all values less than or equal to 3.
+
+Explanation:
+The natural logarithm is defined only for positive numbers. Choice A omits the restriction at x = 3, while choice B includes values that are not in the domain (x ≤ 3). Choice D is incorrect because it suggests that there's a single point excluded from the domain, which is not true.
+
+Common mistake note:
+Common mistake: Not considering the strict inequality for natural logarithms.
+------------------------------------------------------------------------------
+
+Problem 6 (Qwe789):
+What is the range of the function m(x) = 3sin(x) - 2 for all real numbers?
+A) -5 ≤ y ≤ 1
+B) -2 ≤ y < 2
+C) -∞ < y < ∞
+D) y ∈ R
+Correct Answer: A
+
+Solution:
+The range of a sine function is [-1, 1]. Multiplying the sine by 3 scales the graph vertically, and adding -2 shifts it downwards. Therefore, the new range is [3 * (-1) - 2, 3 * 1 - 2], which simplifies to [-5, 1].
+
+Explanation:
+Choice B omits the upper endpoint of 1, while choice C suggests that the range includes negative and positive infinity (which is not true for a sine function). Choice D is incorrect because it suggests that the range includes all real numbers, which is too broad for this transformed sine function.
+
+Common mistake note:
+Common mistake: Not understanding how scaling and shifting affect the range of trigonometric functions.
+------------------------------------------------------------------------------
+
+Problem 7 (Zxc123):
+What is the domain of the function n(x) = √(x^2 - 9)?
+A) -∞ < x ≤ -3 or x ≥ 3
+B) x ≠ ±3
+C) x ≤ -3 or x ≥ 3
+D) x ∈ R
+Correct Answer: A
+
+Solution:
+The domain of a function involving a square root is determined by the values for which the expression inside the root is non-negative. For n(x) = √(x^2 - 9), x^2 - 9 must be greater than or equal to zero. Factoring gives (x + 3)(x - 3) ≥ 0, which has solutions x ≤ -3 and x ≥ 3. However, since the square root function is defined only for non-negative values, we exclude any values that make x^2 - 9 negative within the solution set. Therefore, the domain is all real numbers less than or equal to -3 or greater than or equal to 3.
+
+Explanation:
+Choice B omits the correct interval and suggests a different type of restriction. Choice C omits the endpoint values, making it too restrictive. Choice D is incorrect because it includes values where x^2 - 9 is negative, which are not in the domain.
+
+Common mistake note:
+Common mistake: Not considering the intervals created by factoring and excluding values that make the expression inside the root negative.
+------------------------------------------------------------------------------

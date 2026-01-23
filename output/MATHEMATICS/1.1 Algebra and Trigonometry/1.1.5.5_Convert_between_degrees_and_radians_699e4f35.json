@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.5.5",
+  "objective_text": "Convert between degrees and radians",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One degree to radians",
+      "stem": "What is 1 degree in radians?",
+      "choices": {
+        "A": "0.0174533",
+        "B": "0.174533",
+        "C": "1.74533",
+        "D": "17.4533"
+      },
+      "correct_choice": "B",
+      "solution": "1 degree is equal to π/180 radians. So, 1 degree = (π/180) radians ≈ 0.0174533 radians.",
+      "explanation": "The conversion factor from degrees to radians is π/180 or 0.0174533 per degree.",
+      "common_mistake_notes": "A common mistake is not using the correct conversion factor, which results in an incorrect value."
+    },
+    {
+      "id": "60 degrees to radians",
+      "stem": "What is 60 degrees in radians?",
+      "choices": {
+        "A": "1.0472",
+        "B": "3.14159",
+        "C": "6.28319",
+        "D": "0.314159"
+      },
+      "correct_choice": "A",
+      "solution": "60 degrees is equal to π/3 radians. So, 60 degrees = (π/3) radians ≈ 1.0472 radians.",
+      "explanation": "The conversion from degrees to radians can be done by multiplying the number of degrees by π/180.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by π or using the wrong value for π."
+    },
+    {
+      "id": "Radians to degrees",
+      "stem": "What is 3.14159 radians in degrees?",
+      "choices": {
+        "A": "180°",
+        "B": "90°",
+        "C": "60°",
+        "D": "360°"
+      },
+      "correct_choice": "A",
+      "solution": "To convert from radians to degrees, multiply the number of radians by 180/π. So, 3.14159 radians = (3.14159 × 180) / π ≈ 180°.",
+      "explanation": "The conversion factor from radians to degrees is 180/π or approximately 57.296 degrees per radian.",
+      "common_mistake_notes": "A common mistake is using the wrong conversion factor, which results in an incorrect value."
+    },
+    {
+      "id": "π/4 radians to degrees",
+      "stem": "What is π/4 radians in degrees?",
+      "choices": {
+        "A": "30°",
+        "B": "45°",
+        "C": "60°",
+        "D": "90°"
+      },
+      "correct_choice": "B",
+      "solution": "π/4 radians is equal to 45 degrees. So, π/4 radians = (π/4 × 180) / π = 45°.",
+      "explanation": "π/4 radians corresponds to a quarter of a full rotation, which is 90° divided by 2.",
+      "common_mistake_notes": "A common mistake is not dividing the result by π when converting from radians to degrees."
+    },
+    {
+      "id": "π radians to degrees",
+      "stem": "What is π radians in degrees?",
+      "choices": {
+        "A": "180°",
+        "B": "90°",
+        "C": "360°",
+        "D": "270°"
+      },
+      "correct_choice": "A",
+      "solution": "π radians is equal to 180 degrees. So, π radians = (π × 180) / π = 180°.",
+      "explanation": "π radians corresponds to half a full rotation, which is 180°.",
+      "common_mistake_notes": "A common mistake is not recognizing that π radians represents half a circle."
+    },
+    {
+      "id": "2π radians to degrees",
+      "stem": "What is 2π radians in degrees?",
+      "choices": {
+        "A": "360°",
+        "B": "720°",
+        "C": "180°",
+        "D": "90°"
+      },
+      "correct_choice": "A",
+      "solution": "2π radians is equal to 360 degrees. So, 2π radians = (2π × 180) / π = 360°.",
+      "explanation": "2π radians corresponds to a full rotation around a circle, which is 360°.",
+      "common_mistake_notes": "A common mistake is not recognizing that 2π radians represents a complete revolution."
+    },
+    {
+      "id": "5π/3 radians to degrees",
+      "stem": "What is 5π/3 radians in degrees?",
+      "choices": {
+        "A": "300°",
+        "B": "180°",
+        "C": "270°",
+        "D": "90°"
+      },
+      "correct_choice": "A",
+      "solution": "5π/3 radians is equal to 300 degrees. So, 5π/3 radians = (5π/3 × 180) / π = 300°.",
+      "explanation": "To convert from radians to degrees, multiply the number of radians by 180/π and then divide by π if necessary to get a value between 0 and 360°.",
+      "common_mistake_notes": "A common mistake is not dividing the result by π when converting from radians to degrees."
+    }
+  ]
+}

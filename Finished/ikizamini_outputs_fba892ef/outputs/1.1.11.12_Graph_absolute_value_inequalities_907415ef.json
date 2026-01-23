@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.11.12",
+  "objective_text": "Graph absolute value inequalities",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsVjx7cN",
+      "stem": "Solve and graph the inequality: |x - 3| < 4.",
+      "choices": {
+        "A": "-1 < x < 7",
+        "B": "x > 7 or x < -1",
+        "C": "x = 3",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the inequality |x - 3| < 4, consider two cases: when (x - 3) is positive and when it's negative.\n\nCase 1: x - 3 ≥ 0\n(x - 3) < 4\nx < 7\nCombine with x ≥ 3 to get [3, 7).\n\nCase 2: x - 3 < 0\n-(x - 3) < 4\n-x + 3 < 4\nx > -1\nCombine with x < 3 to get (-∞, 3).\n\nThe solution is -1 < x < 7.",
+      "explanation": "Account for both cases where the absolute value expression can be positive or negative. Choice B assumes OR (incorrect), C only considers equality, and D misses the solution.",
+      "common_mistake_notes": "Not considering both cases in absolute value inequality."
+    },
+    {
+      "id": "LXz2fTqP",
+      "stem": "Solve and graph the inequality: |2x + 5| ≤ 10.",
+      "choices": {
+        "A": "-7.5 ≤ x ≤ 2.5",
+        "B": "x = -7.5 or x = 2.5",
+        "C": "-∞ < x < ∞",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "Consider two cases: when (2x + 5) is positive and when it's negative.\n\nCase 1: 2x + 5 ≥ 0\n2x + 5 ≤ 10\n2x ≤ 5\nx ≤ 2.5\nCombine with x ≥ -2.5 to get [-2.5, 2.5].\n\nCase 2: 2x + 5 < 0\n-(2x + 5) ≤ 10\n-2x - 5 ≤ 10\n-2x ≤ 15\nx ≥ -7.5\nCombine with x < -2.5 to get [-7.5, ∞).\n\nThe solution is -7.5 ≤ x ≤ 2.5.",
+      "explanation": "Account for both cases and find the intersection of ranges. Choice B only considers equality, C misunderstands ≤, D misses solution.",
+      "common_mistake_notes": "Not considering both cases in absolute value inequality."
+    },
+    {
+      "id": "nXN8KJZt",
+      "stem": "Solve and graph the inequality: |3x - 1| > 7.",
+      "choices": {
+        "A": "x < -2 or x > 8",
+        "B": "x = -2 or x = 8",
+        "C": "-∞ < x < ∞",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "For |3x - 1| > 7, only one case: 3x - 1 > 7 or 3x - 1 < -7.\n\n3x > 8 or 3x < -6\nx > 8/3 or x < -2.\nSolution is x < -2 or x > 8.",
+      "explanation": "Recognize one case for inequality >. Choice B only considers equality, C misunderstands strict inequality, D misses solution.",
+      "common_mistake_notes": "Assuming two cases in absolute value inequality when only one is needed."
+    },
+    {
+      "id": "tJL9KZuX",
+      "stem": "Solve and graph the inequality: |4x - 6| ≥ 10.",
+      "choices": {
+        "A": "x ≤ -1 or x ≥ 4",
+        "B": "x = -1 or x = 4",
+        "C": "-∞ < x < ∞",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "Two cases: when (4x - 6) is positive and when it's negative.\n\nCase 1: 4x - 6 ≥ 0\n4x - 6 ≥ 10\n4x ≥ 16\nx ≥ 4\nCombine with x ≥ 1.5 to get [4, ∞).\n\nCase 2: 4x - 6 < 0\n-(4x - 6) ≥ 10\n-4x + 6 ≥ 10\n-4x ≥ 4\nx ≤ -1\nCombine with x < 1.5 to get (-∞, -1].\n\nSolution is x ≤ -1 or x ≥ 4.",
+      "explanation": "Account for both cases and find union of ranges. Choice B only considers equality, C misunderstands inequality symbol, D misses solution.",
+      "common_mistake_notes": "Not considering both cases in absolute value inequality."
+    },
+    {
+      "id": "z2nXKZuX",
+      "stem": "Solve and graph the inequality: |x| < 3.",
+      "choices": {
+        "A": "-3 < x < 3",
+        "B": "x = -3 or x = 3",
+        "C": "-∞ < x < ∞",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "|x| < 3 represents all x where |x| < 3. Range: (-3, 3).",
+      "explanation": "Recognize numbers within 3 units of zero. Choice B only considers equality, C misunderstands strict inequality symbol, D misses solution.",
+      "common_mistake_notes": "Including endpoints in absolute value inequality with '<'."
+    },
+    {
+      "id": "x2nXKZuX",
+      "stem": "Solve and graph the inequality: |x| > 5.",
+      "choices": {
+        "A": "x < -5 or x > 5",
+        "B": "x = -5 or x = 5",
+        "C": "-∞ < x < ∞",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "|x| > 5 represents all x where |x| > 5. Range: (-∞, -5) ∪ (5, ∞).",
+      "explanation": "Recognize numbers outside 5 units of zero. Choice B only considers equality, C misunderstands strict inequality symbol, D misses solution.",
+      "common_mistake_notes": "Including endpoints in absolute value inequality with '>'."
+    },
+    {
+      "id": "y2nXKZuX",
+      "stem": "Solve and graph the inequality: |2x - 1| = 7.",
+      "choices": {
+        "A": "x = 4 or x = -3",
+        "B": "-7 < x < 8",
+        "C": "x = -7 or x = 8",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "Two cases for equality: 2x - 1 = 7 and 2x - 1 = -7.\n\nSolutions are x = 4 and x = -3.",
+      "explanation": "Consider both positive and negative versions inside absolute value. Choice B misunderstands equality, C includes incorrect endpoints, D misses solutions.",
+      "common_mistake_notes": "Not considering both cases in equation with absolute value."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.6.3",
+  "objective_text": "Complete the square",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "What is the value of x in the equation (x - 2)^2 = 9?",
+      "stem": "(x - 2)^2 = 9",
+      "choices": {
+        "A": "1",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correct_choice": "B",
+      "solution": "To solve the equation (x - 2)^2 = 9, we take the square root of both sides. The square roots of 9 are +3 and -3. So, x - 2 can be either 3 or -3. Solving for x in each case gives us x = 5 or x = -1. However, since only one correct answer is required, we choose the positive value: x = 3.",
+      "explanation": "The correct choice is (B) because it represents the positive root of the equation when completing the square.",
+      "common_mistake_notes": "A common mistake would be to select (A) or (D), which are the results of only taking one square root (+3) and not considering both possibilities (±3)."
+    },
+    {
+      "id": "What is the value of y in the equation (y + 1)^2 = 16?",
+      "stem": "(y + 1)^2 = 16",
+      "choices": {
+        "A": "-5",
+        "B": "-3",
+        "C": "3",
+        "D": "5"
+      },
+      "correct_choice": "D",
+      "solution": "To solve the equation (y + 1)^2 = 16, we take the square root of both sides. The square roots of 16 are +4 and -4. So, y + 1 can be either 4 or -4. Solving for y in each case gives us y = 3 or y = -5. However, since only one correct answer is required, we choose the positive value: y = 5.",
+      "explanation": "The correct choice is (D) because it represents the positive root of the equation when completing the square.",
+      "common_mistake_notes": "A common mistake would be to select (B) or (C), which are the results of only taking one square root (+4) and not considering both possibilities (±4)."
+    },
+    {
+      "id": "What is the value of z in the equation (z - 3)^2 = 1?",
+      "stem": "(z - 3)^2 = 1",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correct_choice": "B",
+      "solution": "To solve the equation (z - 3)^2 = 1, we take the square root of both sides. The square roots of 1 are +1 and -1. So, z - 3 can be either 1 or -1. Solving for z in each case gives us z = 4 or z = 2. However, since only one correct answer is required, we choose the value that keeps z - 3 positive: z = 4.",
+      "explanation": "The correct choice is (B) because it represents the value of z that maintains a positive difference when completing the square.",
+      "common_mistake_notes": "A common mistake would be to select (A) or (D), which are the results of only taking one square root (+1) and not considering both possibilities (±1)."
+    },
+    {
+      "id": "What is the vertex of the parabola defined by the equation y = x^2 - 6x + 8?",
+      "stem": "y = x^2 - 6x + 8",
+      "choices": {
+        "A": "(3, -1)",
+        "B": "(2, -1)",
+        "C": "(3, 1)",
+        "D": "(2, 1)"
+      },
+      "correct_choice": "A",
+      "solution": "To find the vertex of a parabola in the form y = ax^2 + bx + c, we use the formula for the x-coordinate of the vertex: h = -b/(2a). For the equation y = x^2 - 6x + 8, a = 1, b = -6. Plugging these values into the formula gives us h = 3. To find the corresponding y-value, we substitute h back into the original equation: y = (3)^2 - 6(3) + 8 = -1. So, the vertex is at (3, -1).",
+      "explanation": "The correct choice is (A) because it represents the coordinates of the vertex when completing the square for the given parabola.",
+      "common_mistake_notes": "A common mistake would be to select (B), which is the result of not correctly applying the formula for the x-coordinate of the vertex or making an arithmetic error in calculating h."
+    },
+    {
+      "id": "What is the vertex of the parabola defined by the equation y = 2x^2 + 8x + 5?",
+      "stem": "y = 2x^2 + 8x + 5",
+      "choices": {
+        "A": "(4, -3)",
+        "B": "(2, -3)",
+        "C": "(4, 3)",
+        "D": "(2, 3)"
+      },
+      "correct_choice": "B",
+      "solution": "To find the vertex of a parabola in the form y = ax^2 + bx + c, we use the formula for the x-coordinate of the vertex: h = -b/(2a). For the equation y = 2x^2 + 8x + 5, a = 2, b = 8. Plugging these values into the formula gives us h = -4. To find the corresponding y-value, we substitute h back into the original equation: y = 2(-4)^2 + 8(-4) + 5 = -3. So, the vertex is at (2, -3).",
+      "explanation": "The correct choice is (B) because it represents the coordinates of the vertex when completing the square for the given parabola.",
+      "common_mistake_notes": "A common mistake would be to select (C), which is the result of not correctly applying the formula for the x-coordinate of the vertex or making an arithmetic error in calculating h."
+    },
+    {
+      "id": "What is the standard form equation of a parabola with vertex (1, 2) and opens downward?",
+      "stem": "Vertex: (1, 2), Opens Downward",
+      "choices": {
+        "A": "y = -(x - 1)^2 + 2",
+        "B": "y = (x - 1)^2 + 2",
+        "C": "y = -(x + 1)^2 + 2",
+        "D": "y = (x + 1)^2 + 2"
+      },
+      "correct_choice": "A",
+      "solution": "The standard form of a parabola with vertex (h, k) and opening downward is y = -a(x - h)^2 + k. Given the vertex (1, 2), we can plug in h = 1 and k = 2: y = -(x - 1)^2 + 2. The negative sign before the squared term indicates that the parabola opens downward.",
+      "explanation": "The correct choice is (A) because it represents the standard form equation of a parabola with the given vertex and opening direction.",
+      "common_mistake_notes": "A common mistake would be to select (B), which represents a parabola opening upward instead of downward."
+    },
+    {
+      "id": "What is the standard form equation of a parabola with vertex (-2, 3) and opens upward?",
+      "stem": "Vertex: (-2, 3), Opens Upward",
+      "choices": {
+        "A": "y = -(x + 2)^2 + 3",
+        "B": "y = (x + 2)^2 + 3",
+        "C": "y = -(x - 2)^2 + 3",
+        "D": "y = (x - 2)^2 + 3"
+      },
+      "correct_choice": "B",
+      "solution": "The standard form of a parabola with vertex (h, k) and opening upward is y = a(x - h)^2 + k. Given the vertex (-2, 3), we can plug in h = -2 and k = 3: y = (x + 2)^2 + 3. The positive sign before the squared term indicates that the parabola opens upward.",
+      "explanation": "The correct choice is (B) because it represents the standard form equation of a parabola with the given vertex and opening direction.",
+      "common_mistake_notes": "A common mistake would be to select (A), which represents a parabola opening downward instead of upward."
+    }
+  ]
+}

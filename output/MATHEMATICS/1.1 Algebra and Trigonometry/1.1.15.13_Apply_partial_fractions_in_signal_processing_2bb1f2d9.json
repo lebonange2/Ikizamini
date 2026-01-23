@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.15.13",
+  "objective_text": "Apply partial fractions in signal processing",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Decompose the following rational function into partial fractions: (s + 2)/(s^2 + 4s + 5)",
+      "choices": {
+        "A": "(s - 1)/(s + 2) + (1)/(s + 3)",
+        "B": "(s + 1)/(s + 2) - (1)/(s + 3)",
+        "C": "(-s - 1)/(s + 2) + (1)/(s + 3)",
+        "D": "(s + 1)/(s + 2) + (1)/(s + 3)"
+      },
+      "correct_choice": "D",
+      "solution": "The denominator factors into (s + 2)(s + 3), so we set up the partial fractions as A/(s + 2) + B/(s + 3). Solving for A and B, we get A = s + 1 and B = 1. The correct decomposition is (s + 1)/(s + 2) + (1)/(s + 3).",
+      "explanation": "The key to this problem is recognizing that the denominator factors into linear terms and setting up the partial fractions accordingly.",
+      "common_mistake_notes": "A common mistake is not factoring the denominator correctly, leading to incorrect coefficients for A and B."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the inverse Laplace transform of (s + 3)/(s^2 + 9) using partial fractions:",
+      "choices": {
+        "A": "e^{-3t} \text{cos}(3t)",
+        "B": "e^{3t} \text{sin}(3t)",
+        "C": "e^{-3t} \text{sin}(3t)",
+        "D": "e^{3t} \text{cos}(3t)"
+      },
+      "correct_choice": "A",
+      "solution": "The denominator factors into (s + 3i)(s - 3i), so the partial fractions are A/(s + 3i) + B/(s - 3i). Solving for A and B, we get A = B = 1/6. The inverse Laplace transform of each term gives e^{-3t} \text{cos}(3t).",
+      "explanation": "The key is to recognize that the denominator factors into complex conjugates and use the appropriate partial fraction setup.",
+      "common_mistake_notes": "A common mistake is not recognizing the complex conjugate nature of the denominator, leading to incorrect coefficients for A and B."
+    },
+    {
+      "id": ":3",
+      "stem": "Decompose the following rational function into partial fractions: (2s + 1)/(s^3 + 8)",
+      "choices": {
+        "A": "(1/(s + 2)) + (s - 1)/(s^2 - 4s + 4)",
+        "B": "(1/(s + 2)) + (s + 1)/(s^2 + 4s + 4)",
+        "C": "(1/(s + 2)) + (s - 1)/(s^2 + 4s + 4)",
+        "D": "(1/(s + 2)) + (s + 1)/(s^2 - 4s + 4)"
+      },
+      "correct_choice": "B",
+      "solution": "The denominator is a cubic, but it does not factor easily. We use the cover-up method to find the partial fraction decomposition: A/(s + 2) + B/(s^2 + 4s + 4). Plugging in s = -2, we get A = 1. Solving for B, we get B = (s + 1)/(s^2 + 4s + 4).",
+      "explanation": "The key is to use the cover-up method when the denominator does not factor easily.",
+      "common_mistake_notes": "A common mistake is attempting to factor the cubic polynomial, which may lead to incorrect coefficients for A and B."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the transfer function H(s) of a system with impulse response h(t) = e^{-2t} u(t):",
+      "choices": {
+        "A": "(s + 2)/(s^2 + 4s + 5)",
+        "B": "(s - 2)/(s^2 + 4s + 5)",
+        "C": "(s + 2)/(s^2 + 4s + 4)",
+        "D": "(s - 2)/(s^2 + 4s + 4)"
+      },
+      "correct_choice": "B",
+      "solution": "The transfer function H(s) is the Laplace transform of h(t), which is (s + 2)/(s^2 + 4s + 5). However, we need to use partial fractions to simplify it: A/(s + 2) + B/(s + 3). Solving for A and B, we get A = -1, B = 1. The simplified form is (s - 2)/(s^2 + 4s + 5).",
+      "explanation": "The key is to find the Laplace transform of the impulse response and then apply partial fractions.",
+      "common_mistake_notes": "A common mistake is not simplifying the transfer function after taking the Laplace transform."
+    },
+    {
+      "id": ":5",
+      "stem": "Decompose the following rational function into partial fractions: (s^2 + 1)/(s(s^2 + 4))",
+      "choices": {
+        "A": "(s - 2)/(s^2 + 4) + (1/s)",
+        "B": "(s + 2)/(s^2 + 4) + (1/s)",
+        "C": "(s - 2)/(s^2 + 4) - (1/s)",
+        "D": "(s + 2)/(s^2 + 4) - (1/s)"
+      },
+      "correct_choice": "A",
+      "solution": "The denominator factors into s(s + 2i)(s - 2i), so we set up the partial fractions as A/s + B/(s + 2i) + C/(s - 2i). Solving for A, B, and C, we get A = 1, B = C = 0. The correct decomposition is (s - 2)/(s^2 + 4) + (1/s).",
+      "explanation": "The key is to recognize that the denominator factors into a linear term and complex conjugates.",
+      "common_mistake_notes": "A common mistake is not recognizing the complex conjugate nature of part of the denominator, leading to incorrect coefficients for B and C."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the inverse Fourier transform of (s + 1)/(s^2 + 2s + 2) using partial fractions:",
+      "choices": {
+        "A": "e^{-t} \text{cos}(t)",
+        "B": "e^{-t} \text{sin}(t)",
+        "C": "e^{t} \text{cos}(t)",
+        "D": "e^{t} \text{sin}(t)"
+      },
+      "correct_choice": "A",
+      "solution": "The denominator factors into (s + 1 + i)(s + 1 - i), so we set up the partial fractions as A/(s + 1 + i) + B/(s + 1 - i). Solving for A and B, we get A = B = 0.5. The inverse Fourier transform of each term gives e^{-t} \text{cos}(t).",
+      "explanation": "The key is to recognize that the denominator factors into complex conjugates and use the appropriate partial fraction setup.",
+      "common_mistake_notes": "A common mistake is not recognizing the complex conjugate nature of the denominator, leading to incorrect coefficients for A and B."
+    },
+    {
+      "id": ":7",
+      "stem": "Decompose the following rational function into partial fractions: (s^2 + 3)/(s^3 - 1)",
+      "choices": {
+        "A": "(s + 1)/(s - 1) + (s + 2)/(s^2 + s + 1)",
+        "B": "(s - 1)/(s - 1) + (s - 2)/(s^2 + s + 1)",
+        "C": "(s + 1)/(s - 1) + (s - 2)/(s^2 - s + 1)",
+        "D": "(s - 1)/(s - 1) + (s + 2)/(s^2 - s + 1)"
+      },
+      "correct_choice": "A",
+      "solution": "The denominator factors into (s - 1)(s^2 + s + 1), so we set up the partial fractions as A/(s - 1) + B/(s^2 + s + 1). Solving for A and B, we get A = s + 1, B = s + 2. The correct decomposition is (s + 1)/(s - 1) + (s + 2)/(s^2 + s + 1).",
+      "explanation": "The key is to factor the denominator into linear and quadratic terms and set up the partial fractions accordingly.",
+      "common_mistake_notes": "A common mistake is not factoring the cubic polynomial correctly, leading to incorrect coefficients for A and B."
+    }
+  ]
+}

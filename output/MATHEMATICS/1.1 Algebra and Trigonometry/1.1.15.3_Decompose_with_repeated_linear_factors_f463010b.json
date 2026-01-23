@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.15.3",
+  "objective_text": "Decompose with repeated linear factors",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Factor the expression: x^3 - 6x^2 + 9x",
+      "choices": {
+        "A": "(x - 3)^3",
+        "B": "x(x - 3)(x + 3)",
+        "C": "x(x - 9)^2",
+        "D": "(x - 3)^2(x)"
+      },
+      "correct_choice": "A",
+      "solution": "The expression can be factored by recognizing the common factor of each term, which is x, and then factoring out a perfect square trinomial (x - 3)^2. The correct decomposition is (x - 3)^3.",
+      "explanation": "This question tests the ability to identify repeated linear factors and apply the difference of squares pattern to factor the expression.",
+      "common_mistake_notes": "A common mistake would be to incorrectly factor out x^2 instead of x, leading to choice B. This fails because it does not result in a perfect square trinomial inside the parentheses."
+    },
+    {
+      "id": "Two",
+      "stem": "Factor the expression: 16a^3 - 81b^3",
+      "choices": {
+        "A": "(4a - 9b)(4a + 9b)^2",
+        "B": "(4a - 9b)^3",
+        "C": "(4a + 9b)^3",
+        "D": "4a(4a - 9b)(4a + 9b)"
+      },
+      "correct_choice": "D",
+      "solution": "The expression is a difference of cubes, which can be factored using the identity a^3 - b^3 = (a - b)(a^2 + ab + b^2). The correct decomposition is 4a(4a - 9b)(4a + 9b).",
+      "explanation": "This question tests the ability to recognize and factor a difference of cubes.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the sum of cubes identity, leading to choice A. This fails because the expression is a difference, not a sum, of cubes."
+    },
+    {
+      "id": "Three",
+      "stem": "Factor the expression: 27y^4 - 8z^4",
+      "choices": {
+        "A": "(3y^2 + 2z^2)(9y^2 - 6yz + 4z^2)",
+        "B": "(3y^2 - 2z^2)^2",
+        "C": "3y^2(3y^2 - 2z^2)(3y^2 + 2z^2)",
+        "D": "(3y^2 + 2z^2)^3"
+      },
+      "correct_choice": "C",
+      "solution": "The expression is a difference of fourth powers, which can be factored by separating the terms and using the difference of squares twice. The correct decomposition is 3y^2(3y^2 - 2z^2)(3y^2 + 2z^2).",
+      "explanation": "This question tests the ability to recognize and factor a difference of fourth powers.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the sum of fourth powers identity, leading to choice D. This fails because the expression is a difference, not a sum, of fourth powers."
+    },
+    {
+      "id": "Four",
+      "stem": "Factor the expression: 125x^6 - 64y^3",
+      "choices": {
+        "A": "(5x^3 + 4y)^3",
+        "B": "(5x^3 - 4y)^3",
+        "C": "5x^3(5x^3 - 4y)(5x^3 + 4y)",
+        "D": "5x^3(25x^6 - 16y^3)"
+      },
+      "correct_choice": "C",
+      "solution": "The expression is a difference of cubes, which can be factored using the identity a^3 - b^3 = (a - b)(a^2 + ab + b^2). The correct decomposition is 5x^3(5x^3 - 4y)(5x^3 + 4y).",
+      "explanation": "This question tests the ability to recognize and factor a difference of cubes.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the sum of cubes identity, leading to choice A. This fails because the expression is a difference, not a sum, of cubes."
+    },
+    {
+      "id": "Five",
+      "stem": "Factor the expression: 64x^3 - y^3",
+      "choices": {
+        "A": "(8x - y)(64x^2 + 8xy + y^2)",
+        "B": "(8x + y)^3",
+        "C": "8x(8x - y)(8x + y)",
+        "D": "8x(64x^2 - 8xy + y^2)"
+      },
+      "correct_choice": "C",
+      "solution": "The expression is a difference of cubes, which can be factored using the identity a^3 - b^3 = (a - b)(a^2 + ab + b^2). The correct decomposition is 8x(8x - y)(8x + y).",
+      "explanation": "This question tests the ability to recognize and factor a difference of cubes.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the sum of cubes identity, leading to choice B. This fails because the expression is a difference, not a sum, of cubes."
+    },
+    {
+      "id": "Six",
+      "stem": "Factor the expression: 81a^4 - b^4",
+      "choices": {
+        "A": "(9a^2 + b)^2(9a^2 - b)",
+        "B": "(9a^2 - b)^3",
+        "C": "9a^2(9a^2 - b)(9a^2 + b)",
+        "D": "(9a^2 + b)^4"
+      },
+      "correct_choice": "C",
+      "solution": "The expression is a difference of fourth powers, which can be factored by separating the terms and using the difference of squares twice. The correct decomposition is 9a^2(9a^2 - b)(9a^2 + b).",
+      "explanation": "This question tests the ability to recognize and factor a difference of fourth powers.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the sum of fourth powers identity, leading to choice D. This fails because the expression is a difference, not a sum, of fourth powers."
+    },
+    {
+      "id": "Seven",
+      "stem": "Factor the expression: 243a^9 - 64b^9",
+      "choices": {
+        "A": "(3a^3 + 4b^3)^3",
+        "B": "(3a^3 - 4b^3)(9a^6 + 12a^3b^3 + 16b^6)",
+        "C": "3a^3(3a^3 - 4b^3)(9a^6 + 12a^3b^3 + 16b^6)",
+        "D": "3a^3(81a^{12} - 72a^9b^3 + 24a^6b^6)"
+      },
+      "correct_choice": "C",
+      "solution": "The expression is a difference of ninth powers, which can be factored by separating the terms and using the difference of cubes twice. The correct decomposition is 3a^3(3a^3 - 4b^3)(9a^6 + 12a^3b^3 + 16b^6).",
+      "explanation": "This question tests the ability to recognize and factor a difference of ninth powers.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the sum of ninth powers identity, leading to choice A. This fails because the expression is a difference, not a sum, of ninth powers."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.16.5 Interpret model parameters
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.16 Mathematical Modeling with Algebra
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (AsdFgHjK):
+In a linear regression model, what does the 'intercept' parameter represent?
+A) The slope of the line
+B) The y-axis intercept of the line
+C) The correlation coefficient between the variables
+D) The standard deviation of the residuals
+Correct Answer: B
+
+Solution:
+In a linear regression model, the 'intercept' parameter represents the value of the dependent variable when all independent variables are equal to zero. This is equivalent to the y-axis intercept of the line.
+
+Explanation:
+The slope represents how much the dependent variable changes with respect to one unit change in the independent variable, the correlation coefficient measures the linear relationship between two variables, and the standard deviation of residuals shows the variability around the fitted line.
+
+Common mistake note:
+Common mistake is choosing 'slope' as it's another important parameter in a linear regression model but different from the intercept.
+------------------------------------------------------------------------------
+
+Problem 2 (XyzPqRsT):
+In a logistic regression model, what does the 'odds ratio' associated with a predictor variable represent?
+A) The probability of the event occurring
+B) The change in odds for a one-unit increase in the predictor
+C) The correlation between the predictor and the response
+D) The standard error of the estimate
+Correct Answer: B
+
+Solution:
+In logistic regression, the odds ratio associated with a predictor variable represents the change in odds of the event occurring for a one-unit increase in that predictor, assuming all other predictors remain constant.
+
+Explanation:
+The probability of the event is given by the predicted value from the model, correlation measures linear association, and standard error quantifies the variability of an estimate.
+
+Common mistake note:
+Common mistake is choosing 'probability' as it's related to logistic regression output but not directly tied to the odds ratio.
+------------------------------------------------------------------------------
+
+Problem 3 (BvnCmDlE):
+In a multiple linear regression model, what does the R-squared value indicate?
+A) The proportion of variance in the dependent variable explained by the independent variables
+B) The number of predictor variables included in the model
+C) The significance level of each individual predictor
+D) The standard deviation of the residuals
+Correct Answer: A
+
+Solution:
+R-squared, or coefficient of determination, measures the proportion of variance in the dependent variable that is explained by the independent variables in a multiple linear regression model.
+
+Explanation:
+It does not indicate the number of predictor variables, significance level of individual predictors, or residual standard deviation.
+
+Common mistake note:
+Common mistake is confusing R-squared with other statistics like adjusted R-squared, which adjusts for the number of predictors.
+------------------------------------------------------------------------------
+
+Problem 4 (QweRtyUi):
+In a Poisson regression model, what does the 'mean' parameter represent?
+A) The variance of the response variable
+B) The expected count of events in a given time interval
+C) The correlation between the predictor and the response
+D) The standard error of the estimate
+Correct Answer: B
+
+Solution:
+In Poisson regression, the 'mean' parameter represents the expected count of events per unit of time or space, given the values of the predictor variables.
+
+Explanation:
+It does not represent variance, correlation, or standard error in this context.
+
+Common mistake note:
+Common mistake is choosing 'variance' as it's related to Poisson distribution but not directly tied to the model parameter.
+------------------------------------------------------------------------------
+
+Problem 5 (ZxcVbnMm):
+In a time series analysis, what does the 'autocorrelation coefficient' measure?
+A) The linear relationship between two variables at different time steps
+B) The standard deviation of the residuals from a fitted trend line
+C) The proportion of variance explained by the independent variable
+D) The significance level of each individual predictor
+Correct Answer: A
+
+Solution:
+The autocorrelation coefficient measures the linear relationship between a time series and its lagged version, indicating how similar values at different time steps are.
+
+Explanation:
+It does not measure residual standard deviation, proportion of variance explained, or significance level of predictors.
+
+Common mistake note:
+Common mistake is confusing autocorrelation with other correlation measures like cross-correlation.
+------------------------------------------------------------------------------
+
+Problem 6 (JklLmnOp):
+In a decision tree model, what does the 'entropy' measure at a split node?
+A) The purity of the classes in that node
+B) The number of predictor variables considered for splitting
+C) The standard deviation of the response variable
+D) The significance level of each individual predictor
+Correct Answer: A
+
+Solution:
+Entropy measures the impurity or randomness of the classes at a split node in a decision tree model. It helps determine the best feature to split on for better classification.
+
+Explanation:
+It does not indicate the number of predictor variables, response variable standard deviation, or significance level of predictors.
+
+Common mistake note:
+Common mistake is choosing 'number of predictor variables' as it's related to decision tree construction but not directly tied to entropy.
+------------------------------------------------------------------------------
+
+Problem 7 (BvcXzYwQ):
+In a support vector machine (SVM) model, what does the 'kernel function' do?
+A) Transforms the input data into a higher-dimensional space for better separation
+B) Calculates the distance between two points in the feature space
+C) Determines the number of support vectors used in the model
+D) Controls the trade-off between model complexity and accuracy
+Correct Answer: A
+
+Solution:
+The kernel function transforms the input data into a higher-dimensional space, allowing for non-linear separation of classes in SVM.
+
+Explanation:
+It does not calculate distances, determine support vector count, or control model complexity directly.
+
+Common mistake note:
+Common mistake is choosing 'distance calculation' as it's related to SVM but not the primary function of kernel.
+------------------------------------------------------------------------------

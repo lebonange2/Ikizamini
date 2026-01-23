@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.13.3 Convert Cartesian equations to parametric form
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.13 Parametric Equations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IncrementalID_1):
+Convert the Cartesian equation y = 2x + 4 to parametric form.
+A) (x, y) = (t, 2t + 4)
+B) (x, y) = (2t, t + 4)
+C) (x, y) = (t, 4t + 2)
+D) (x, y) = (t + 2, 2t)
+Correct Answer: A
+
+Solution:
+The parametric form is given by x = t and y = f(t). In the Cartesian equation y = 2x + 4, we can set y = f(t) and solve for x. Setting y = t, we get x = (y - 4)/2. So, the parametric equations are x = t/2 and y = t. The correct answer is (A).
+
+Explanation:
+The parametric form expresses both x and y as functions of a single variable t. In this case, we express x in terms of t by solving for x from the Cartesian equation.
+
+Common mistake note:
+Common mistake: Choosing (B) because it's a rearrangement of the original equation but does not follow the parametric form where both x and y are functions of t.
+------------------------------------------------------------------------------
+
+Problem 2 (IncrementalID_2):
+Convert the Cartesian equation x^2 + y^2 = 16 to parametric form.
+A) (x, y) = (4cos(t), 4sin(t))
+B) (x, y) = (cos(t), sin(t))
+C) (x, y) = (4t, 4cos(t))
+D) (x, y) = (4cos(t), t)
+Correct Answer: A
+
+Solution:
+The Cartesian equation represents a circle with radius 4. In parametric form for a circle, x = r*cos(t) and y = r*sin(t). So, the parametric equations are x = 4*cos(t) and y = 4*sin(t). The correct answer is (A).
+
+Explanation:
+The equation of a circle in Cartesian form can be converted to polar coordinates, where x = r*cos(t) and y = r*sin(t), with r as the radius.
+
+Common mistake note:
+Common mistake: Choosing (B) because it's the parametric form for a unit circle, but not for the given circle with radius 4.
+------------------------------------------------------------------------------
+
+Problem 3 (IncrementalID_3):
+Convert the Cartesian equation y = x^2 - 1 to parametric form.
+A) (x, y) = (t, t^2 - 1)
+B) (x, y) = (t^2, t - 1)
+C) (x, y) = (cos(t), sin(t))
+D) (x, y) = (t + 1, t^2)
+Correct Answer: A
+
+Solution:
+To convert the Cartesian equation to parametric form, set y = f(t) and solve for x. In this case, let y = t, so x = sqrt(t + 1). The parametric equations are x = sqrt(t + 1) and y = t. The correct answer is (A).
+
+Explanation:
+The parametric form expresses both x and y as functions of a single variable t. Here, we express x in terms of t by solving for x from the Cartesian equation.
+
+Common mistake note:
+Common mistake: Choosing (B) because it's a rearrangement of the original equation but does not follow the parametric form where both x and y are functions of t.
+------------------------------------------------------------------------------
+
+Problem 4 (IncrementalID_4):
+Convert the Cartesian equation 2x + 3y = 6 to parametric form.
+A) (x, y) = (3t, 2 - 2t)
+B) (x, y) = (2t, 3 - 3t)
+C) (x, y) = (t, 2t + 3)
+D) (x, y) = (t + 3, 2t)
+Correct Answer: A
+
+Solution:
+To convert the Cartesian equation to parametric form, we can solve for one variable in terms of the other. Let x = t, then 2t + 3y = 6, which gives y = (6 - 2t)/3. The parametric equations are x = t and y = (6 - 2t)/3, or equivalently x = t and y = 2 - 2t/3. The correct answer is (A).
+
+Explanation:
+The parametric form expresses both x and y as functions of a single variable t. Here, we express y in terms of t by solving for y from the Cartesian equation.
+
+Common mistake note:
+Common mistake: Choosing (B) because it's a rearrangement of the original equation but does not follow the parametric form where both x and y are functions of t.
+------------------------------------------------------------------------------
+
+Problem 5 (IncrementalID_5):
+Convert the Cartesian equation x + 2y = 4 to parametric form.
+A) (x, y) = (4 - 2t, t)
+B) (x, y) = (t, 4 - t)
+C) (x, y) = (2t, 2t + 1)
+D) (x, y) = (t + 2, t)
+Correct Answer: A
+
+Solution:
+To convert the Cartesian equation to parametric form, we can solve for one variable in terms of the other. Let x = t, then t + 2y = 4, which gives y = (4 - t)/2. The parametric equations are x = t and y = (4 - t)/2, or equivalently x = t and y = 2 - t/2. The correct answer is (A).
+
+Explanation:
+The parametric form expresses both x and y as functions of a single variable t. Here, we express y in terms of t by solving for y from the Cartesian equation.
+
+Common mistake note:
+Common mistake: Choosing (B) because it's a rearrangement of the original equation but does not follow the parametric form where both x and y are functions of t.
+------------------------------------------------------------------------------
+
+Problem 6 (IncrementalID_6):
+Convert the Cartesian equation y = 3x^2 - 1 to parametric form.
+A) (x, y) = (t, 3t^2 - 1)
+B) (x, y) = (cos(t), 3cos^2(t) - 1)
+C) (x, y) = (t + 1, 3t^2)
+D) (x, y) = (t, t^3 - 1)
+Correct Answer: A
+
+Solution:
+To convert the Cartesian equation to parametric form, set y = f(t) and solve for x. In this case, let y = 3t^2 - 1, so x = t. The parametric equations are x = t and y = 3t^2 - 1. The correct answer is (A).
+
+Explanation:
+The parametric form expresses both x and y as functions of a single variable t. Here, we express x in terms of t by solving for x from the Cartesian equation.
+
+Common mistake note:
+Common mistake: Choosing (B) because it's a rearrangement of the original equation but does not follow the parametric form where both x and y are functions of t.
+------------------------------------------------------------------------------
+
+Problem 7 (IncrementalID_7):
+Convert the Cartesian equation 4x^2 + 9y^2 = 36 to parametric form.
+A) (x, y) = (3cos(t), 2cos(t))
+B) (x, y) = (2cos(t), 3cos(t))
+C) (x, y) = (2cos(t), 3cos^2(t))
+D) (x, y) = (3t, 2t)
+Correct Answer: B
+
+Solution:
+The Cartesian equation represents an ellipse with semi-major axis 3 and semi-minor axis 2. In parametric form for an ellipse, x = a*cos(t) and y = b*sin(t). So, the parametric equations are x = 2*cos(t) and y = 3*sin(t). The correct answer is (B).
+
+Explanation:
+The equation of an ellipse in Cartesian form can be converted to polar coordinates, where x = a*cos(t) and y = b*sin(t), with a and b as the semi-major and semi-minor axes.
+
+Common mistake note:
+Common mistake: Choosing (A) because it's a rearrangement of the original equation but does not follow the parametric form where both x and y are functions of t, or choosing (C) because it uses cos(t) twice but does not express y correctly.
+------------------------------------------------------------------------------

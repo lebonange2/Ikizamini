@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.10.5",
+  "objective_text": "Find composite functions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Given the functions f(x) = x^2 + 3 and g(x) = 2x - 1, find (f ∘ g)(x).",
+      "choices": {
+        "A": "4x^2 - 5x + 2",
+        "B": "2x^2 + 5x - 1",
+        "C": "2x^2 + x - 1",
+        "D": "4x^2 + 6x"
+      },
+      "correct_choice": "A",
+      "solution": "(f ∘ g)(x) means to plug the function g(x) into the function f(x). So, we substitute g(x) for every x in f(x): f(g(x)) = (2x - 1)^2 + 3. Expanding and simplifying gives us 4x^2 - 4x + 1 + 3 = 4x^2 - 4x + 4, which simplifies further to 4x^2 - 5x + 2.",
+      "explanation": "The correct answer is obtained by substituting g(x) into f(x) and then expanding and simplifying the expression.",
+      "common_mistake_notes": "A common mistake would be forgetting to square both terms inside the parentheses when expanding (2x - 1)^2, leading to an incorrect result."
+    },
+    {
+      "id": "?",
+      "stem": "Find (g ∘ f)(2) if f(x) = x + 3 and g(x) = 5x - 4.",
+      "choices": {
+        "A": "6",
+        "B": "28",
+        "C": "17",
+        "D": "30"
+      },
+      "correct_choice": "B",
+      "solution": "(g ∘ f)(2) means to first evaluate f(2), then plug the result into g(x). So, f(2) = 2 + 3 = 5. Now, we substitute 5 for x in g(x): g(f(2)) = 5 * 5 - 4 = 25 - 4 = 21.",
+      "explanation": "The correct answer is found by first evaluating f at the given input and then plugging that result into g.",
+      "common_mistake_notes": "A common mistake would be to multiply f(2) directly with 5, instead of substituting f(2) = 5 into g(x)."
+    },
+    {
+      "id": "?",
+      "stem": "Given f(x) = x^3 and g(x) = √x, find (f ∘ g)(8).",
+      "choices": {
+        "A": "4",
+        "B": "16",
+        "C": "2",
+        "D": "64"
+      },
+      "correct_choice": "A",
+      "solution": "(f ∘ g)(8) means to first evaluate g(8), then plug the result into f(x). So, g(8) = √8 = 2√2. Now, we substitute 2√2 for x in f(x): f(g(8)) = (2√2)^3 = 8 * (√2)^2 = 8 * 2 = 16.",
+      "explanation": "The correct answer is found by first evaluating g at the given input and then plugging that result into f.",
+      "common_mistake_notes": "A common mistake would be to cube only one of the terms in (2√2)^3, instead of squaring the entire term (√2)^2."
+    },
+    {
+      "id": "?",
+      "stem": "Find (h ∘ k)(x) if h(x) = x^2 - 1 and k(x) = 3x + 2.",
+      "choices": {
+        "A": "9x^2 + 12x + 3",
+        "B": "9x^2 + 6x + 1",
+        "C": "9x^2 + 15x + 7",
+        "D": "9x^2 + 9x + 4"
+      },
+      "correct_choice": "D",
+      "solution": "(h ∘ k)(x) means to first evaluate k(x), then plug the result into h(x). So, k(x) = 3x + 2. Now, we substitute 3x + 2 for x in h(x): h(k(x)) = (3x + 2)^2 - 1. Expanding and simplifying gives us 9x^2 + 12x + 4 - 1 = 9x^2 + 12x + 3, which simplifies further to 9x^2 + 9x + 4.",
+      "explanation": "The correct answer is obtained by substituting k(x) into h(x) and then expanding and simplifying the expression.",
+      "common_mistake_notes": "A common mistake would be forgetting to square both terms inside the parentheses when expanding (3x + 2)^2, leading to an incorrect result."
+    },
+    {
+      "id": "?",
+      "stem": "Given f(x) = x - 5 and g(x) = x^2 + 1, find (g ∘ f)(-3).",
+      "choices": {
+        "A": "4",
+        "B": "16",
+        "C": "20",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "(g ∘ f)(-3) means to first evaluate f(-3), then plug the result into g(x). So, f(-3) = -3 - 5 = -8. Now, we substitute -8 for x in g(x): g(f(-3)) = (-8)^2 + 1 = 64 + 1 = 65.",
+      "explanation": "The correct answer is found by first evaluating f at the given input and then plugging that result into g.",
+      "common_mistake_notes": "A common mistake would be to square -3 directly in g(f(-3)), instead of substituting f(-3) = -8 into g(x)."
+    },
+    {
+      "id": "?",
+      "stem": "Find (h ∘ k)(-2) if h(x) = 2x + 1 and k(x) = x^3 - 4.",
+      "choices": {
+        "A": "-15",
+        "B": "9",
+        "C": "17",
+        "D": "1"
+      },
+      "correct_choice": "C",
+      "solution": "(h ∘ k)(-2) means to first evaluate k(-2), then plug the result into h(x). So, k(-2) = (-2)^3 - 4 = -8 - 4 = -12. Now, we substitute -12 for x in h(x): h(k(-2)) = 2(-12) + 1 = -24 + 1 = -23.",
+      "explanation": "The correct answer is obtained by substituting k(-2) into h(x).",
+      "common_mistake_notes": "A common mistake would be to multiply -2 directly with 2 in h(k(-2)), instead of substituting k(-2) = -12 into h(x)."
+    },
+    {
+      "id": "?",
+      "stem": "Given f(x) = x^2 + 4x and g(x) = x - 3, find (f ∘ g)(-5).",
+      "choices": {
+        "A": "0",
+        "B": "9",
+        "C": "16",
+        "D": "25"
+      },
+      "correct_choice": "B",
+      "solution": "(f ∘ g)(-5) means to first evaluate g(-5), then plug the result into f(x). So, g(-5) = -5 - 3 = -8. Now, we substitute -8 for x in f(x): f(g(-5)) = (-8)^2 + 4(-8) = 64 - 32 = 32.",
+      "explanation": "The correct answer is found by first evaluating g at the given input and then plugging that result into f.",
+      "common_mistake_notes": "A common mistake would be to square only one of the terms in (f ∘ g)(-5), instead of considering both x^2 and 4x when substituting -8 for x."
+    }
+  ]
+}

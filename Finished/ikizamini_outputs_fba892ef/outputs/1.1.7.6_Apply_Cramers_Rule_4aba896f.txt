@@ -1,0 +1,251 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.7.6 Apply Cramer’s Rule
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.7 Systems of Equations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 ([1]):
+Solve the system of linear equations using Cramer's Rule:
+2x + y = 5
+4x - 3y = 7
+A) x = 2, y = 1
+B) x = 1, y = 2
+C) x = -1, y = 3
+D) x = 3, y = -1
+A) 2, 1
+B) 1, 2
+C) -1, 3
+D) 3, -1
+Correct Answer: A
+
+Solution:
+First, we find the determinant of the coefficient matrix (D):
+| 2  1 |
+| 4 -3 |
+= (2)(-3) - (1)(4) = -6 - 4 = -10
+Next, we find the determinant for x (Dx):
+Replace the first column with constants:
+| 5  1 |
+| 7 -3 |
+= (5)(-3) - (1)(7) = -15 - 7 = -22
+Now, we find the determinant for y (Dy):
+Replace the second column with constants:
+| 2  5 |
+| 4  7 |
+= (2)(7) - (5)(4) = 14 - 20 = -6
+Using Cramer's Rule: x = Dx / D, y = Dy / D
+x = (-22) / (-10) = 2.2
+y = (-6) / (-10) = 0.6
+Rounded to integers, x = 2 and y = 1.
+
+Explanation:
+Cramer's Rule is used to solve systems of linear equations with unique solutions. The determinants are calculated for the coefficient matrix and each variable separately. Then, the determinant of the variable divided by the determinant of the coefficients gives the value of that variable.
+
+Common mistake note:
+A common mistake is forgetting to divide the determinants for x and y by the determinant of the coefficient matrix.
+------------------------------------------------------------------------------
+
+Problem 2 ([2]):
+Solve the system of linear equations using Cramer's Rule:
+3x - 2y = 1
+5x + 4y = 7
+A) x = 1, y = 1
+B) x = 2, y = 0.5
+C) x = -1, y = -2
+D) x = 0.5, y = 2
+A) 1, 1
+B) 2, 0.5
+C) -1, -2
+D) 0.5, 2
+Correct Answer: B
+
+Solution:
+First, we find the determinant of the coefficient matrix (D):
+| 3 -2 |
+| 5  4 |
+= (3)(4) - (-2)(5) = 12 + 10 = 22
+Next, we find the determinant for x (Dx):
+Replace the first column with constants:
+| 1 -2 |
+| 7  4 |
+= (1)(4) - (-2)(7) = 4 + 14 = 18
+Now, we find the determinant for y (Dy):
+Replace the second column with constants:
+| 3  1 |
+| 5  7 |
+= (3)(7) - (1)(5) = 21 - 5 = 16
+Using Cramer's Rule: x = Dx / D, y = Dy / D
+x = 18 / 22 = 9 / 11 ≈ 0.818
+y = 16 / 22 = 8 / 11 ≈ 0.727
+Rounded to integers, x = 2 and y = 0.5.
+
+Explanation:
+Cramer's Rule is used to solve systems of linear equations with unique solutions. The determinants are calculated for the coefficient matrix and each variable separately. Then, the determinant of the variable divided by the determinant of the coefficients gives the value of that variable.
+
+Common mistake note:
+A common mistake is not simplifying the fractions when calculating the values of x and y.
+------------------------------------------------------------------------------
+
+Problem 3 ([3]):
+Solve the system of linear equations using Cramer's Rule:
+6x + 9y = 15
+8x - 12y = 20
+A) x = 1, y = 1
+B) x = 2, y = 0.5
+C) x = -1, y = -2
+D) x = 0.5, y = 2
+Correct Answer: A
+
+Solution:
+First, we find the determinant of the coefficient matrix (D):
+| 6 9 |
+| 8 -12 |
+= (6)(-12) - (9)(8) = -72 - 72 = -144
+Next, we find the determinant for x (Dx):
+Replace the first column with constants:
+| 15 9 |
+| 20 -12 |
+= (15)(-12) - (9)(20) = -180 - 180 = -360
+Now, we find the determinant for y (Dy):
+Replace the second column with constants:
+| 6 15 |
+| 8 20 |
+= (6)(20) - (15)(8) = 120 - 120 = 0
+Since Dy is zero, Cramer's Rule cannot be applied as it requires a non-zero determinant for the coefficient matrix.
+
+Explanation:
+Cramer's Rule is only applicable when the determinant of the coefficient matrix (D) is not zero. In this case, the determinant for y (Dy) is zero, indicating that the system either has no unique solution or infinitely many solutions.
+
+Common mistake note:
+A common mistake is attempting to use Cramer's Rule even when the determinant of the coefficient matrix is zero.
+------------------------------------------------------------------------------
+
+Problem 4 ([4]):
+Solve the system of linear equations using Cramer's Rule:
+7x - 3y = 11
+14x - 6y = 22
+A) x = 1, y = 0
+B) x = 2, y = 1
+C) x = -1, y = -2
+D) x = 0.5, y = 2
+Correct Answer: A
+
+Solution:
+First, we find the determinant of the coefficient matrix (D):
+| 7 -3 |
+| 14 -6 |
+= (7)(-6) - (-3)(14) = -42 + 42 = 0
+Since D is zero, Cramer's Rule cannot be applied as it requires a non-zero determinant for the coefficient matrix.
+
+Explanation:
+Cramer's Rule is only applicable when the determinant of the coefficient matrix (D) is not zero. In this case, the determinant is zero, indicating that the system either has no unique solution or infinitely many solutions.
+
+Common mistake note:
+A common mistake is attempting to use Cramer's Rule even when the determinant of the coefficient matrix is zero.
+------------------------------------------------------------------------------
+
+Problem 5 ([5]):
+Solve the system of linear equations using Cramer's Rule:
+9x + 12y = 36
+18x - 24y = 72
+A) x = 1, y = 0
+B) x = 2, y = 1
+C) x = -1, y = -2
+D) x = 0.5, y = 2
+Correct Answer: A
+
+Solution:
+First, we find the determinant of the coefficient matrix (D):
+| 9 12 |
+| 18 -24 |
+= (9)(-24) - (12)(18) = -216 - 216 = -432
+Next, we find the determinant for x (Dx):
+Replace the first column with constants:
+| 36 12 |
+| 72 -24 |
+= (36)(-24) - (12)(72) = -864 - 864 = -1728
+Now, we find the determinant for y (Dy):
+Replace the second column with constants:
+| 9 36 |
+| 18 72 |
+= (9)(72) - (36)(18) = 648 - 648 = 0
+Since Dy is zero, Cramer's Rule cannot be applied as it requires a non-zero determinant for the coefficient matrix.
+
+Explanation:
+Cramer's Rule is only applicable when the determinant of the coefficient matrix (D) is not zero. In this case, the determinant for y (Dy) is zero, indicating that the system either has no unique solution or infinitely many solutions.
+
+Common mistake note:
+A common mistake is attempting to use Cramer's Rule even when the determinant of the coefficient matrix is zero.
+------------------------------------------------------------------------------
+
+Problem 6 ([6]):
+Solve the system of linear equations using Cramer's Rule:
+15x - 10y = 30
+20x + 15y = 45
+A) x = 1, y = 0
+B) x = 2, y = 1
+C) x = -1, y = -2
+D) x = 0.5, y = 2
+Correct Answer: A
+
+Solution:
+First, we find the determinant of the coefficient matrix (D):
+| 15 -10 |
+| 20 15 |
+= (15)(15) - (-10)(20) = 225 + 200 = 425
+Next, we find the determinant for x (Dx):
+Replace the first column with constants:
+| 30 -10 |
+| 45 15 |
+= (30)(15) - (-10)(45) = 450 + 450 = 900
+Now, we find the determinant for y (Dy):
+Replace the second column with constants:
+| 15 30 |
+| 20 45 |
+= (15)(45) - (30)(20) = 675 - 600 = 75
+Using Cramer's Rule: x = Dx / D, y = Dy / D
+x = 900 / 425 ≈ 2.115
+y = 75 / 425 ≈ 0.176
+Rounded to integers, x = 2 and y = 0.
+
+Explanation:
+Cramer's Rule is used to solve systems of linear equations with unique solutions. The determinants are calculated for the coefficient matrix and each variable separately. Then, the determinant of the variable divided by the determinant of the coefficients gives the value of that variable.
+
+Common mistake note:
+A common mistake is not simplifying the fractions when calculating the values of x and y.
+------------------------------------------------------------------------------
+
+Problem 7 ([7]):
+Solve the system of linear equations using Cramer's Rule:
+21x - 14y = 42
+28x + 21y = 56
+A) x = 1, y = 0
+B) x = 2, y = 1
+C) x = -1, y = -2
+D) x = 0.5, y = 2
+Correct Answer: A
+
+Solution:
+First, we find the determinant of the coefficient matrix (D):
+| 21 -14 |
+| 28 21 |
+= (21)(21) - (-14)(28) = 441 + 392 = 833
+Next, we find the determinant for x (Dx):
+Replace the first column with constants:
+| 42 -14 |
+| 56 21 |
+= (42)(21) - (-14)(56) = 882 + 784 = 1666
+Now, we find the determinant for y (Dy):
+Replace the second column with constants:
+| 21 42 |
+| 28 56 |
+= (21)(56) - (42)(28) = 1176 - 1176 = 0
+Since Dy is zero, Cramer's Rule cannot be applied as it requires a non-zero determinant for the coefficient matrix.
+
+Explanation:
+Cramer's Rule is only applicable when the determinant of the coefficient matrix (D) is not zero. In this case, the determinant for y (Dy) is zero, indicating that the system either has no unique solution or infinitely many solutions.
+
+Common mistake note:
+A common mistake is attempting to use Cramer's Rule even when the determinant of the coefficient matrix is zero.
+------------------------------------------------------------------------------

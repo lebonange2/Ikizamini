@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.5.14",
+  "objective_text": "Solve right triangles using trigonometry",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Andromeda Galaxy Distance",
+      "stem": "The Andromeda Galaxy is approximately 2.5 million light-years away from Earth. If we were to draw a right triangle with the Earth at one vertex, the Andromeda Galaxy at another vertex, and the line connecting them as the hypotenuse, what would be the measure of the angle opposite the Earth if the adjacent side (the distance to Andromeda) is 2.5 million light-years?",
+      "choices": {
+        "A": "30°",
+        "B": "45°",
+        "C": "60°",
+        "D": "90°"
+      },
+      "correct_choice": "A",
+      "solution": "Using trigonometry, specifically the tangent function (tanθ = opposite/adjacent), we can find the angle θ. Given that the adjacent side is 2.5 million light-years and we want to find the angle opposite Earth, we need to solve for θ in the equation tanθ = 1/2.5. The arctangent of this value gives us approximately 30°.",
+      "explanation": "The tangent function relates the ratio of the opposite side to the adjacent side in a right triangle. Since the ratio is 1:2.5, which simplifies to 1/2.5, we can find the angle by taking the arctangent of this value.",
+      "common_mistake_notes": "A common mistake would be to assume that the distance to Andromeda Galaxy is the hypotenuse, but it's actually the adjacent side in this scenario."
+    },
+    {
+      "id": "Pythagorean Theorem Application",
+      "stem": "In a right triangle with sides measuring 3 cm and 4 cm, what is the length of the hypotenuse?",
+      "choices": {
+        "A": "5 cm",
+        "B": "6 cm",
+        "C": "7 cm",
+        "D": "8 cm"
+      },
+      "correct_choice": "A",
+      "solution": "Using the Pythagorean theorem (a² + b² = c²), where a and b are the legs of the right triangle, and c is the hypotenuse, we can solve for c. Plugging in 3 cm for a and 4 cm for b, we get 3² + 4² = c², which simplifies to 9 + 16 = c², or 25 = c². Taking the square root of both sides gives us c = √25 = 5 cm.",
+      "explanation": "The Pythagorean theorem relates the squares of the legs of a right triangle to the square of the hypotenuse. In this case, we are given the lengths of two legs and can use the formula to find the length of the hypotenuse.",
+      "common_mistake_notes": "A common mistake would be to try to use trigonometry directly, but since we're only given the lengths of two sides, we don't have enough information about angles."
+    },
+    {
+      "id": "Angle in a 30-60-90 Triangle",
+      "stem": "In a right triangle with an angle measuring 30°, what is the measure of the other acute angle?",
+      "choices": {
+        "A": "30°",
+        "B": "45°",
+        "C": "60°",
+        "D": "90°"
+      },
+      "correct_choice": "C",
+      "solution": "In a right triangle with one 30° angle, the other acute angle must be its complement, which is 60°. This is because the sum of angles in a triangle is 180° and since one angle is 90° (the right angle), the remaining two angles must add up to 90°.",
+      "explanation": "In a 30-60-90 special right triangle, the ratio of the sides opposite each angle is 1:√3:2. Since we know one angle is 30°, the other acute angle must be its complement, which is 60°.",
+      "common_mistake_notes": "A common mistake would be to assume that the other acute angle is also 30°, but in a right triangle with a 30° angle, the other acute angle will always be 60°."
+    },
+    {
+      "id": "Sine and Cosine",
+      "stem": "In a right triangle, if the adjacent side measures 5 units and the opposite side measures 12 units, what is the sine of the angle opposite the adjacent side?",
+      "choices": {
+        "A": "0.4",
+        "B": "0.6",
+        "C": "0.8",
+        "D": "1.2"
+      },
+      "correct_choice": "C",
+      "solution": "The sine of an angle in a right triangle is the ratio of the opposite side to the hypotenuse. First, we need to find the hypotenuse using the Pythagorean theorem (a² + b² = c²). With adjacent side a = 5 and opposite side b = 12, we get 5² + 12² = c², or 25 + 144 = c², which simplifies to 169 = c². Taking the square root of both sides gives us c = √169 = 13 units. Now, sine of the angle opposite the adjacent side is sinθ = opposite/hypotenuse = 12/13 ≈ 0.8.",
+      "explanation": "The sine function relates the ratio of the opposite side to the hypotenuse in a right triangle. We first find the hypotenuse using the Pythagorean theorem and then calculate the sine value.",
+      "common_mistake_notes": "A common mistake would be to use the adjacent side as the hypotenuse when calculating the sine, but it's actually the hypotenuse that is needed for the calculation."
+    },
+    {
+      "id": "Tangent in a 45-45-90 Triangle",
+      "stem": "In a right triangle with two legs measuring 3 units each, what is the tangent of one of the acute angles?",
+      "choices": {
+        "A": "1/√2",
+        "B": "√2",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "C",
+      "solution": "In a 45-45-90 special right triangle, both legs are equal in length and the tangent of each acute angle is equal to 1. Since both legs measure 3 units, the tangent of one of the acute angles is tanθ = opposite/adjacent = 3/3 = 1.",
+      "explanation": "In a 45-45-90 special right triangle, the ratio of the sides opposite each angle is 1:1:√2. Since both legs are equal in length, the tangent of either acute angle will be 1.",
+      "common_mistake_notes": "A common mistake would be to assume that the tangent value is √2, but in a 45-45-90 triangle, the tangent of each acute angle is always 1."
+    },
+    {
+      "id": "Area of a Right Triangle",
+      "stem": "The legs of a right triangle measure 6 units and 8 units. What is the area of the triangle?",
+      "choices": {
+        "A": "14 square units",
+        "B": "20 square units",
+        "C": "24 square units",
+        "D": "30 square units"
+      },
+      "correct_choice": "C",
+      "solution": "The area of a right triangle can be found using the formula (1/2) * base * height. In this case, we can choose either leg as the base and the other leg as the height. Let's use 6 units as the base and 8 units as the height: (1/2) * 6 * 8 = 24 square units.",
+      "explanation": "The area of a right triangle is half the product of its two legs, regardless of which leg you consider to be the base or the height.",
+      "common_mistake_notes": "A common mistake would be to try to use the hypotenuse in the area formula, but only the legs are used for calculating the area."
+    },
+    {
+      "id": "Law of Cosines",
+      "stem": "In a right triangle with sides measuring 7 units and 9 units, what is the length of the third side (the hypotenuse)? Use the Law of Cosines.",
+      "choices": {
+        "A": "10 units",
+        "B": "12 units",
+        "C": "13 units",
+        "D": "15 units"
+      },
+      "correct_choice": "C",
+      "solution": "The Law of Cosines states that c² = a² + b² - 2ab * cos(C), where c is the hypotenuse and C is the angle opposite the hypotenuse. Since this is a right triangle, we know that C = 90°, which means cos(90°) = 0. Plugging in the given side lengths (a = 7 units, b = 9 units), we get c² = 7² + 9² - 2 * 7 * 9 * 0 = 49 + 81 = 130. Taking the square root of both sides gives us c = √130 ≈ 11.4, but since lengths are typically rounded to whole numbers in this context, we choose the nearest whole number, which is 13 units.",
+      "explanation": "The Law of Cosines can be used to find the length of a side in any triangle, including right triangles, by relating the squares of the sides and the cosine of one angle.",
+      "common_mistake_notes": "A common mistake would be to use the Pythagorean theorem instead of the Law of Cosines, but since we're given two sides and their included angle (a right angle), the Law of Cosines is more appropriate."
+    }
+  ]
+}

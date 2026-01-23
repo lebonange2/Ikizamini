@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.10.8",
+  "objective_text": "Apply the horizontal line test",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which function's graph passes the horizontal line test?",
+      "choices": {
+        "A": "y = x^2 + 3x",
+        "B": "y = |x| - 2",
+        "C": "y = 5e^x",
+        "D": "y = sin(x)"
+      },
+      "correct_choice": "C",
+      "solution": "The horizontal line test determines if a function is one-to-one. An exponential function like y = 5e^x never intersects a horizontal line more than once, indicating it's one- to-one.",
+      "explanation": "Function C (y = 5e^x) has a strictly increasing curve that doesn't intersect a horizontal line multiple times, making it pass the test. Functions A, B, and D can be intersected by a horizontal line more than once.",
+      "common_mistake_notes": "Common mistake: choosing functions with curves or symmetry (A, B, or D) which intersect horizontal lines multiple times."
+    },
+    {
+      "id": ":2",
+      "stem": "Which graph fails the horizontal line test?",
+      "choices": {
+        "A": "[Graph of y = x^3 - 1]",
+        "B": "[Graph of y = sqrt(x)]",
+        "C": "[Graph of y = ln(x)]",
+        "D": "[Graph of y = x^2 + 1]"
+      },
+      "correct_choice": "D",
+      "solution": "The graph of y = x^2 + 1 fails the test as it's a parabola intersecting a horizontal line at two points (e.g., when y = 0).",
+      "explanation": "A parabolic function like y = x^2 + 1 has a U-shape and intersects a horizontal line twice if placed below the vertex, failing the test.",
+      "common_mistake_notes": "Common mistake: choosing graphs representing inverse functions (like C) that visually appear to pass but are actually one-to-one."
+    },
+    {
+      "id": ":3",
+      "stem": "Which relation's graph passes the horizontal line test?",
+      "choices": {
+        "A": "x^2 + y^2 = 1",
+        "B": "y = arctan(x)",
+        "C": "y = x^2 - x",
+        "D": "y = 2^x"
+      },
+      "correct_choice": "D",
+      "solution": "The relation represented by y = 2^x passes the test as it's a one-to-one exponential function.",
+      "explanation": "An exponential function like y = 2^x has a strictly increasing curve that doesn't intersect a horizontal line more than once, making it pass the test. Relations A, B, and C do not pass.",
+      "common_mistake_notes": "Common mistake: choosing relations with curves or symmetry (A, B, or C) which intersect horizontal lines multiple times."
+    },
+    {
+      "id": ":4",
+      "stem": "If a function passes the horizontal line test, does it have an inverse?",
+      "choices": {
+        "A": "Yes, because all such functions have inverses.",
+        "B": "No, some functions may not be defined for all real numbers.",
+        "C": "Yes, and the inverse is also a function.",
+        "D": "No, the function might not be continuous."
+      },
+      "correct_choice": "C",
+      "solution": "A one-to-one function (horizontal line test passed) has an inverse, which is also a function. Continuity and domain considerations apply.",
+      "explanation": "A function passing the test is one-to-one; each input corresponds to a unique output, allowing it to have an inverse. Other conditions like continuity must be met.",
+      "common_mistake_notes": "Common mistake: choosing 'Yes, because all such functions have inverses.' which ignores continuity and domain constraints."
+    },
+    {
+      "id": ":5",
+      "stem": "Which function has a graph that passes the horizontal line test and is continuous for all real numbers?",
+      "choices": {
+        "A": "y = 1/x",
+        "B": "y = cos(x)",
+        "C": "y = x^3 - 2x",
+        "D": "y = e^(-x)"
+      },
+      "correct_choice": "D",
+      "solution": "The function y = e^(-x) passes the test and is continuous for all real numbers as it's an exponential decay function.",
+      "explanation": "An exponential decay function like y = e^(-x) has a strictly decreasing curve that doesn't intersect a horizontal line more than once, making it one-to-one and continuous everywhere.",
+      "common_mistake_notes": "Common mistake: choosing A (y = 1/x), which is not continuous at x = 0, or B (y = cos(x)), which is periodic."
+    },
+    {
+      "id": ":6",
+      "stem": "Which function fails the horizontal line test but has a removable discontinuity?",
+      "choices": {
+        "A": "y = x^2 / (x - 1)",
+        "B": "y = tan(x)",
+        "C": "y = |x| + 3",
+        "D": "y = ln|x|"
+      },
+      "correct_choice": "A",
+      "solution": "Function y = x^2 / (x - 1) fails the test due to a removable discontinuity at x = 1.",
+      "explanation": "Function A has a removable discontinuity at x = 1 because of the factor (x - 1), making it undefined. Simplifying removes that point where the test fails.",
+      "common_mistake_notes": "Common mistake: choosing B (y = tan(x)), which has infinite discontinuities, or C (y = |x| + 3) and D (y = ln|x|), which don't have removable discontinuities."
+    },
+    {
+      "id": ":7",
+      "stem": "If a function fails the horizontal line test, is it non-differentiable?",
+      "choices": {
+        "A": "Yes, all such functions are not differentiable.",
+        "B": "No, some functions may be differentiable despite failing.",
+        "C": "Yes, and the derivative is always zero.",
+        "D": "No, but the derivative might exist only at certain points."
+      },
+      "correct_choice": "B",
+      "solution": "Failing the test doesn't imply non-differentiability. It just means it's not one-to-one. Differentiability depends on continuity and smoothness.",
+      "explanation": "A function failing the test isn't necessarily non-differentiable; differentiability requires continuity and smoothness, which can be true even if not one-to-one.",
+      "common_mistake_notes": "Common mistake: choosing 'Yes, all such functions are not differentiable.' Some functions can be differentiable despite failing the test."
+    }
+  ]
+}

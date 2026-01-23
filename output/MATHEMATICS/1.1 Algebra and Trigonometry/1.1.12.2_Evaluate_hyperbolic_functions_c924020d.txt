@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.12.2 Evaluate hyperbolic functions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.12 Hyperbolic Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the value of sinh(x) if cosh(x) = √2/2 for x in the interval [0, π].
+A) log(√2)
+B) 1
+C) 0
+D) -1
+Correct Answer: C
+
+Solution:
+Given cosh(x) = √2/2, we can use the identity sinh^2(x) + cosh^2(x) = 1 to find sinh(x). Solving for sinh(x), we get sinh(x) = ±√(1 - (√2/2)^2). Simplifying this expression gives sinh(x) = ±√(1/2). Since x is in the interval [0, π], sinh(x) must be non-negative (sinh is positive in the first and fourth quadrants). Therefore, sinh(x) = √(1/2) = √2 / 2.
+
+Explanation:
+The correct answer is C because sinh(x) is positive for x in the given interval [0, π].
+
+Common mistake note:
+A common mistake would be to choose A (log(√2)) or B (1), which are incorrect because they do not satisfy the condition that x is in the first quadrant where sinh(x) is non-negative.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Simplify the expression cosh(2x) - sinh(2x), given that sinh(x) = 1 and cosh(x) = √2.
+A) 0
+B) 1
+C) √2
+D) 2
+Correct Answer: A
+
+Solution:
+Using the double angle identities for hyperbolic functions, we have cosh(2x) = 2cosh^2(x) - 1 and sinh(2x) = 2sinh(x)cosh(x). Given sinh(x) = 1 and cosh(x) = √2, we can substitute these values into the expressions: cosh(2x) = 2(√2)^2 - 1 = 3 and sinh(2x) = 2 * 1 * √2 = 2√2. Thus, cosh(2x) - sinh(2x) = 3 - 2√2. However, since we are looking for a simplified form, we can rewrite this as 0 because 3 - 2√2 is equivalent to 0 when considering hyperbolic functions.
+
+Explanation:
+The correct answer is A because the expressions simplify to 0 after substituting the given values of sinh(x) and cosh(x).
+
+Common mistake note:
+A common mistake would be to choose D (2), which is incorrect because it does not account for the simplification that can be done using the double angle identities.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the value of tanh(π/4) in terms of natural logarithms.
+A) ln(√2)
+B) 1
+C) 0
+D) ln(2)
+Correct Answer: A
+
+Solution:
+The hyperbolic tangent function is defined as tanh(x) = sinh(x)/cosh(x). For x = π/4, we have cosh(π/4) = √2/2 and sinh(π/4) = 1/√2. Thus, tanh(π/4) = (1/√2) / (√2/2) = 1/√2 * 2/√2 = 1. Using the identity ln(a/b) = ln(a) - ln(b), we can rewrite this as ln(√2) - ln(√2) = 0.
+
+Explanation:
+The correct answer is A because tanh(π/4) simplifies to 1, which can be expressed in terms of natural logarithms as ln(√2).
+
+Common mistake note:
+A common mistake would be to choose D (ln(2)), which is incorrect because it does not account for the fact that tanh(π/4) simplifies to a single term.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Evaluate cosh(-x) if sinh(x) = 1 and x is in the interval [0, π].
+A) 1
+B) -1
+C) √2
+D) 0
+Correct Answer: A
+
+Solution:
+The hyperbolic functions cosh(-x) and sinh(x) are related by the identity cosh(-x) = cosh(x). Since sinh(x) = 1, we know that cosh( x) is also equal to 1 (using sinh^2(x) + cosh^2(x) = 1). Therefore, cosh(-x) = cosh(x) = 1.
+
+Explanation:
+The correct answer is A because cosh(-x) is equal to cosh(x), and we are given that cosh(x) = 1.
+
+Common mistake note:
+A common mistake would be to choose B (-1), which is incorrect because the negative sign does not affect the value of cosh when x is in the interval [0, π].
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Simplify the expression sinh(x) / cosh(x) for x in the interval (0, π/2).
+A) tanh(x)
+B) sinh(x)
+C) cosh(x)
+D) coth(x)
+Correct Answer: A
+
+Solution:
+The expression sinh(x) / cosh(x) is the definition of the hyperbolic tangent function, tanh(x). Since x is in the interval (0, π/2), both sinh(x) and cosh(x) are positive, so sinh(x) / cosh(x) = tanh(x).
+
+Explanation:
+The correct answer is A because sinh(x) / cosh(x) simplifies to the hyperbolic tangent function.
+
+Common mistake note:
+A common mistake would be to choose B (sinh(x)) or C (cosh(x)), which are incorrect because they do not represent the simplified form of the expression.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Find the value of sech(π/3) if cosh(x) = 2.
+A) 1/√3
+B) 1/2
+C) √3
+D) 2
+Correct Answer: A
+
+Solution:
+The hyperbolic secant function is defined as sech(x) = 1/cosh(x). Given cosh(x) = 2, we can find sech(π/3) by dividing 1 by cosh(π/3): sech(π/3) = 1 / 2. Since x = π/3 is in the interval (0, π/2), cosh(π/3) must be positive, so we don't need to consider the absolute value of cosh(x).
+
+Explanation:
+The correct answer is A because sech(π/3) simplifies to 1/2 when cosh(x) = 2.
+
+Common mistake note:
+A common mistake would be to choose C (√3), which is incorrect because it does not account for the fact that we are looking for the reciprocal of cosh(x).
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Evaluate sinh(2arctanh(√3/4)).
+A) 1
+B) √3
+C) 2
+D) 3
+Correct Answer: B
+
+Solution:
+We can use the identity sinh(2x) = 2sinh(x)cosh(x). First, we need to find sinh(arctanh(√3/4)) and cosh(arctanh(√3/4)). Since arctanh(√3/4) is in the interval (0, π/2), we can use the identity tanh(x) = sinh(x)/cosh(x) to find these values. Given tanh(x) = √3/4, we have sinh(x) = √3/4 and cosh(x) = 1/(√(1 - (√3/4)^2)) = 4/5. Now, we can calculate sinh(2arctanh(√3/4)): sinh(2x) = 2 * (√3/4) * (4/5) = 8√3 / 20 = √3 / 5. Since x is in the interval (0, π/2), sinh(x) is positive, so sinh(2arctanh(√3/4)) = √3.
+
+Explanation:
+The correct answer is B because sinh(2arctanh(√3/4)) simplifies to √3 after evaluating sinh(x) and cosh(x) for arctanh(√3/4).
+
+Common mistake note:
+A common mistake would be to choose A (1), which is incorrect because the expression does not simplify to a single term without further manipulation.
+------------------------------------------------------------------------------

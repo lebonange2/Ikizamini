@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.12.5 Find derivatives of hyperbolic functions
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.12 Hyperbolic Functions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One):
+What is the derivative of f(x) = sinh(x)?
+A) cosh(x)
+B) sinh(x)
+C) cosh(2x)
+D) 2sinh(x)
+Correct Answer: A
+
+Solution:
+The derivative of sinh(x) is cosh(x). This is a basic property of hyperbolic functions.
+
+Explanation:
+Recall that the derivative of sinh(x) is given by cosh(x), which is the hyperbolic cosine function. The other choices are not correct derivatives of sinh(x).
+
+Common mistake note:
+A common mistake would be to choose B, thinking it's the original function instead of its derivative.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Find the derivative of g(x) = cosh(3x).
+A) 3sinh(3x)
+B) sinh(3x)
+C) cosh(x)
+D) 3cosh(3x)
+Correct Answer: A
+
+Solution:
+The derivative of cosh(3x) is 3sinh(3x). Use the chain rule and the derivative of cosh.
+
+Explanation:
+To find the derivative, apply the chain rule: (f(g(x)))' = f'(g(x)) × g'(x), where f(u) = cosh(u) and g(x) = 3x. The derivative of cosh(u) is sinh(u), so we get 3sinh(3x).
+
+Common mistake note:
+A common mistake would be to forget the chain rule and multiply by the outer derivative (3), resulting in choice D.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+What is the derivative of h(x) = tanh(x)?
+A) sech^2(x)
+B) tanh(x)
+C) sech(x)
+D) 1 - tanh^2(x)
+Correct Answer: A
+
+Solution:
+The derivative of tanh(x) is sech^2(x). This is a property of the hyperbolic tangent.
+
+Explanation:
+The derivative of tanh(x) can be found using the identity tanh(x) = sinh(x)/cosh(x), then differentiating and simplifying. The result is sech^2(x), which is the square of the hyperbolic secant function.
+
+Common mistake note:
+A common mistake would be to choose D,混淆了tanh的导数和它的平方减一（即sech^2(x)）
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Find the derivative of j(x) = csch(x).
+A) -coth(x)csc(x)
+B) csch(x)
+C) csc(x)
+D) -csch(x)cot(x)
+Correct Answer: A
+
+Solution:
+The derivative of csch(x) is -coth(x)csch(x). Use the quotient rule and derivatives of sinh and cosh.
+
+Explanation:
+To find the derivative, use the quotient rule: (u/v)' = (v × u' - u × v') / v^2. Here, u = 1 and v = sinh(x), so u' = 0 and v' = cosh(x). The result is -coth(x)csch(x).
+
+Common mistake note:
+A common mistake would be to forget the negative sign or mix up coth and cot functions.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+What is the derivative of k(x) = sech(x)?
+A) -sech(x)tanh(x)
+B) sech(x)
+C) tanh(x)
+D) 1 - sech^2(x)
+Correct Answer: A
+
+Solution:
+The derivative of sech(x) is -sech(x)tanh(x). This can be derived from the derivative of cosh.
+
+Explanation:
+To find the derivative, use the chain rule: (f(g(x)))' = f'(g(x)) × g'(x), where f(u) = 1/cosh(u) and g(x) = x. The derivative of 1/cosh(u) is -tanh(u)/cosh^2(u), so we get -sech(x)tanh(x).
+
+Common mistake note:
+A common mistake would be to choose D,混淆了sech的导数和它的平方减一（即tanh^2(x)）
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Find the derivative of l(x) = cotanh(x).
+A) csch^2(x)
+B) cosh(x)
+C) sinh(x)
+D) -csch(x)
+Correct Answer: A
+
+Solution:
+The derivative of cotanh(x) is csch^2(x). This can be derived from the derivative of tanh.
+
+Explanation:
+To find the derivative, use the chain rule: (f(g(x)))' = f'(g(x)) × g'(x), where f(u) = 1/tanh(u) and g(x) = x. The derivative of 1/tanh(u) is -sech^2(u)/tanh(u), so we get csch^2(x).
+
+Common mistake note:
+A common mistake would be to choose D,混淆了cotanh的导数和它的负csch函数
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Find the derivative of m(x) = sinh(5x^2 + 2x).
+A) 10xcosh(5x^2 + 2x) + cosh(5x^2 + 2x)
+B) cosh(5x^2 + 2x)
+C) sinh(x)
+D) 5x sinh(5x^2 + 2x)
+Correct Answer: A
+
+Solution:
+The derivative of sinh(5x^2 + 2x) is 10xcosh(5x^2 + 2x) + cosh(5x^2 + 2x). Use the chain rule.
+
+Explanation:
+To find the derivative, apply the chain rule: (f(g(x)))' = f'(g(x)) × g'(x), where f(u) = sinh(u) and g(x) = 5x^2 + 2x. The derivative of sinh(u) is cosh(u), so we get 10xcosh(5x^2 + 2x) + cosh(5x^2 + 2x).
+
+Common mistake note:
+A common mistake would be to forget the chain rule and multiply by only one of the derivatives, resulting in choice D.
+------------------------------------------------------------------------------

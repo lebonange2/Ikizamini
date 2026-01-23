@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.12.14 Apply hyperbolic addition formulas
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.12 Hyperbolic Functions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (?):
+Find the value of $	ext{sinh}(a + b)$ given that $	ext{sinh}(a) = 3$ and $	ext{cosh}(b) = 4$.
+A) -12
+B) 7
+C) 12
+D) 5
+Correct Answer: C
+
+Solution:
+Using the hyperbolic addition formula for sinh: $	ext{sinh}(a + b) = 	ext{sinh}(a)	ext{cosh}(b) + 	ext{cosh}(a)	ext{sinh}(b)$, we can substitute the given values. However, we need to find $	ext{cosh}(a)$ and $	ext{sinh}(b)$ first. Since $	ext{cosh}^2(x) - 	ext{sinh}^2(x) = 1$, we have two equations: $	ext{cosh}^2(a) - 3^2 = 1$ and $4^2 - 	ext{sinh}^2(b) = 1$. Solving for $	ext{cosh}(a)$ gives us $	ext{cosh}(a) = 5$, and for $	ext{sinh}(b)$, we get $	ext{sinh}(b) = 3$. Now we can calculate sinh(a + b): $	ext{sinh}(a + b) = 3 	imes 4 + 5 	imes 3 = 12$.
+
+Explanation:
+The correct answer is found by applying the hyperbolic addition formula and solving for the missing values using the given information. Common mistake: Using the wrong formula or not accounting for the signs of sinh and cosh.
+
+Common mistake note:
+A common mistake is to use the wrong formula (such as the circular trigonometric addition formulas) or to forget that sinh and cosh are always positive in this context, leading to an incorrect calculation of $	ext{cosh}(a)$ or $	ext{sinh}(b)$.
+------------------------------------------------------------------------------
+
+Problem 2 (?):
+Given $	ext{cosh}(a) = 2$ and $	ext{cosh}(b) = 3$, find the value of $	ext{cosh}(a + b)$.
+A) 1
+B) 5
+C) 6
+D) 8
+Correct Answer: C
+
+Solution:
+Using the hyperbolic addition formula for cosh: $	ext{cosh}(a + b) = 	ext{cosh}(a)	ext{cosh}(b) - 	ext{sinh}(a)	ext{sinh}(b)$, we can substitute the given values. However, we need to find $	ext{sinh}(a)$ and $	ext{sinh}(b)$ first. Since $	ext{cosh}^2(x) - 	ext{sinh}^2(x) = 1$, we have two equations: $2^2 - 	ext{sinh}^2(a) = 1$ and $3^2 - 	ext{sinh}^2(b) = 1$. Solving for $	ext{sinh}(a)$ gives us $	ext{sinh}(a) = rac{	ext{sqrt}(3)}{2}$, and for $	ext{sinh}(b)$, we get $	ext{sinh}(b) = rac{	ext{sqrt}(8)}{2}$. Now we can calculate cosh(a + b): $	ext{cosh}(a + b) = 2 	imes 3 - (rac{	ext{sqrt}(3)}{2}) 	imes (rac{	ext{sqrt}(8)}}{2}) = 6$.
+
+Explanation:
+The correct answer is found by applying the hyperbolic addition formula and solving for the missing values using the given information. Common mistake: Using the wrong formula or not accounting for the signs of sinh and cosh.
+
+Common mistake note:
+A common mistake is to use the wrong formula (such as the circular trigonometric addition formulas) or to forget that sinh and cosh can have either sign, leading to an incorrect calculation of $	ext{sinh}(a)$ or $	ext{sinh}(b)$.
+------------------------------------------------------------------------------
+
+Problem 3 (?):
+Find the value of $	anh(a + b)$ given that $	anh(a) = rac{1}{2}$ and $	anh(b) = rac{1}{3}$.
+A) rac{5}{7}
+B) rac{1}{6}
+C) rac{7}{11}
+D) rac{4}{5}
+Correct Answer: C
+
+Solution:
+Using the hyperbolic addition formula for tanh: $	anh(a + b) = rac{	anh(a) + 	anh(b)}{1 + 	anh(a)	anh(b)}$, we can substitute the given values. Now we calculate: $	anh(a + b) = rac{rac{1}{2} + rac{1}{3}}{1 + (rac{1}{2}) 	imes (rac{1}{3})} = rac{rac{5}{6}}{1 + rac{1}{6}} = rac{5}{7}$. However, we need to convert this to the hyperbolic tangent form: $	anh(a + b) = rac{5 - 7}{5 + 7} = rac{-2}{12} = rac{-1}{6}$.
+
+Explanation:
+The correct answer is found by applying the hyperbolic addition formula and simplifying. Common mistake: Not converting the result to the hyperbolic tangent form.
+
+Common mistake note:
+A common mistake is to forget that the final answer should be in terms of tanh, which requires dividing the numerator and denominator by the same value (in this case, 6) to get the simplified form.
+------------------------------------------------------------------------------
+
+Problem 4 (?):
+Given $	ext{sinh}(a) = 5$ and $	ext{cosh}(b) = -3$, find the value of $	anh(a + b)$.
+A) rac{8}{7}
+B) rac{-1}{2}
+C) rac{-4}{3}
+D) rac{1}{4}
+Correct Answer: B
+
+Solution:
+Using the hyperbolic addition formula for tanh: $	anh(a + b) = rac{	anh(a) + 	anh(b)}{1 + 	anh(a)	anh(b)}$, we can substitute the given values. However, we need to find $	anh(b)$ first. Since $	anh(x) = rac{	ext{sinh}(x)}{	ext{cosh}(x)}$, we have $	anh(b) = rac{	ext{sinh}(b)}{-3}$. But since sinh is positive, tanh must be negative, so $	anh(b) = -rac{5}{3}$. Now we can calculate $	anh(a + b)$: $	anh(a + b) = rac{rac{5}{1} + (-rac{5}{3})}{1 + (rac{5}{1})  	imes (-rac{5}{3})} = rac{5 - rac{5}{3}}{1 - rac{25}{3}} = rac{rac{10}{3}}{-rac{22}{3}} = rac{-10}{22} = rac{-1}{2}$.
+
+Explanation:
+The correct answer is found by applying the hyperbolic addition formula and solving for the missing values using the given information. Common mistake: Not accounting for the signs of sinh and cosh.
+
+Common mistake note:
+A common mistake is to forget that tanh is negative when cosh is negative, leading to an incorrect calculation of $	anh(b)$.
+------------------------------------------------------------------------------
+
+Problem 5 (?):
+Find the value of $	ext{sinh}^{-1}(x)$ if $x = 	ext{csch}(a + b)$ given that $	ext{csch}(a) = 2$ and $	ext{sech}(b) = 3$.
+A) -a - b
+B) a + b
+C) a - b
+D) -a + b
+Correct Answer: B
+
+Solution:
+Given $x = 	ext{csch}(a + b)$, we can rewrite it as $	ext{sinh}^{-1}(x) = a + b$. Since $	ext{csch}(x) = 1/	ext{sinh}(x)$ and $	ext{sech}(x) = 1/	ext{cosh}(x)$, we have $2 = 1/	ext{sinh}(a)$ and $3 = 1/	ext{cosh}(b)$. Solving for sinh(a) and cosh(b), we get $	ext{sinh}(a) = rac{1}{2}$ and $	ext{cosh}(b) = rac{1}{3}$. However, since sinh and cosh are positive in this context, the inverse hyperbolic functions will give us the correct values for a and b. Therefore, $	ext{sinh}^{-1}(x) = a + b$.
+
+Explanation:
+The correct answer is found by using the relationship between csch and sinh, and sech and cosh, to determine the inverse hyperbolic sine of x in terms of a and b. Common mistake: Not understanding the relationship between hyperbolic functions and their inverses.
+
+Common mistake note:
+A common mistake is to confuse the inverse hyperbolic functions with the regular hyperbolic functions, leading to an incorrect interpretation of $x = 	ext{csch}(a + b)$ as a product or sum rather than a composition of functions.
+------------------------------------------------------------------------------
+
+Problem 6 (?):
+Find the value of $	ext{cosh}^{-1}(x)$ if $x = 	ext{sech}(a + b)$ given that $	anh(a) = 2$ and $	anh(b) = 3$.
+A) -a - b
+B) a + b
+C) a - b
+D) -a + b
+Correct Answer: B
+
+Solution:
+Given $x = 	ext{sech}(a + b)$, we can rewrite it as $	ext{cosh}^{-1}(x) = a + b$. Since $	anh(x) = rac{	ext{sinh}(x)}{	ext{cosh}(x)}$, we have $2 = rac{	ext{sinh}(a)}{	ext{cosh}(a)}$ and $3 = rac{	ext{sinh}(b)}{	ext{cosh}(b)}$. Solving for sinh(a) and cosh(a), we get $	ext{sinh}(a) = 2	ext{cosh}(a)$ and $	ext{sinh}(b) = 3	ext{cosh}(b)$. Using the hyperbolic identity $	ext{cosh}^2(x) - 	ext{sinh}^2(x) = 1$, we find that $	ext{cosh}(a) = rac{	ext{sqrt}(5)}}{2}$ and $	ext{cosh}(b) = rac{	ext{sqrt}(10)}}{3}$. Now, since sinh(a) and sinh(b) are positive, cosh(а) and cosh(b) must also be positive. Therefore, $	ext{cosh}^{-1}(x) = a + b$.
+
+Explanation:
+The correct answer is found by using the relationship between sech and cosh, and tanh and sinh, to determine the inverse hyperbolic cosine of x in terms of a and b. Common mistake: Not understanding the relationship between hyperbolic functions and their inverses.
+
+Common mistake note:
+A common mistake is to confuse the inverse hyperbolic functions with the regular hyperbolic functions, leading to an incorrect interpretation of $x = 	ext{sech}(a + b)$ as a product or sum rather than a composition of functions.
+------------------------------------------------------------------------------
+
+Problem 7 (?):
+Find the value of $	anh^{-1}(x)$ if $x = 	ext{coth}(a + b)$ given that $	ext{sinh}(a) = 2$ and $	ext{cosh}(b) = 3$.
+A) -a - b
+B) a + b
+C) a - b
+D) -a + b
+Correct Answer: B
+
+Solution:
+Given $x = 	ext{coth}(a + b)$, we can rewrite it as $	anh^{-1}(x) = a + b$. Since $	ext{coth}(x) = 1/	ext{tanh}(x)$ and $	ext{sinh}(x) = rac{e^x - e^{-x}}{2}$, we have $x = rac{	ext{cosh}(a + b)}{	ext{sinh}(a + b)}$. To find sinh(a + b) and cosh(a + b), we use the hyperbolic addition formulas: $	ext{sinh}(a + b) = 	ext{sinh}(a)	ext{cosh}(b) + 	ext{cosh}(a)	ext{sinh}(b)$ and $	ext{cosh}(a + b) = 	ext{cosh}(a)	ext{cosh}(b) - 	ext{sinh}(a)	ext{sinh}(b)$. Substituting the given values, we get sinh(a + b) = 2  	imes 3 + 1 and cosh(a + b) = 5  	imes 3 - 6. Now, $	anh^{-1}(x) = a + b$ can be calculated using these values and the relationship between tanh and sinh/сosh.
+
+Explanation:
+The correct answer is found by using the relationship between coth and tanh, and sinh and cosh, to determine the inverse hyperbolic tangent of x in terms of a and b. Common mistake: Not understanding the relationship between hyperbolic functions and their inverses.
+
+Common mistake note:
+A common mistake is to confuse the inverse hyperbolic functions with the regular hyperbolic functions, leading to an incorrect interpretation of $x = 	ext{coth}(a + b)$ as a product or sum rather than a composition of functions.
+------------------------------------------------------------------------------

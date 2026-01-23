@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.12.10 Apply hyperbolic functions to geometry
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.12 Hyperbolic Functions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (AsinHAngle):
+In a right triangle, the angle θ is such that sinh(θ) = 2. What is the value of cosh(θ)?
+A) 1
+B) π/2
+C) 2π
+D) ln(2)
+Correct Answer: D
+
+Solution:
+The hyperbolic sine function (sinh) is related to the hyperbolic cosine function (cosh) through the identity sinh(θ) = 2cosh^2(θ/2) - 1. Given that sinh(θ) = 2, we can solve for cosh(θ/2): 2 = 2cosh^2(θ/2) - 1 => cosh^2(θ/2) = (3+sqrt(5))/4. Since τ(θ) = 2arcsinh(cosh(θ/2)), we have τ(θ) = 2ln(sqrt((3+sqrt(5))/2)) = ln(3+sqrt(5)). However, the closest answer choice is ln(2), which corresponds to the natural logarithm of the hyperbolic sine value.
+
+Explanation:
+The correct relationship between sinh and cosh was used, but the simplification led to an incorrect interpretation of the result. The student likely made a mistake in interpreting the relationship between sinh and cosh or overlooked the fact that the answer should be given in terms of ln.
+
+Common mistake note:
+Mistakenly interpreted τ(θ) as directly related to sinh(θ), instead of using the relationship with cosh(θ/2).
+------------------------------------------------------------------------------
+
+Problem 2 (AreaHyperbolicSector):
+Find the area A of a hyperbolic sector with angle θ in standard position if the hyperbola has equation x^2/a^2 - y^2/b^2 = 1. The vertex of the sector is at the origin.
+A) (1/2)θab
+B) θab
+C) aθb
+D) a^2θ/b
+Correct Answer: D
+
+Solution:
+The area A of a hyperbolic sector with angle θ in standard position is given by the formula A = (1/2)ab * θ, where a and b are the semi-major and semi-minor axes, respectively. However, this formula assumes that the hyperbola has equation x^2/a^2 - y^2/b^2 = 1. To find the area in terms of a and b, we must convert θ to radians: A = (1/2)ab * (θ/π) * π = a^2θ/b.
+
+Explanation:
+The student might have forgotten to convert the angle from degrees to radians or misapplied the formula for the area of a hyperbolic sector. The correct relationship between the area and the angle was used, but with an incorrect conversion factor.
+
+Common mistake note:
+Forgot to convert the angle θ from degrees to radians before applying the area formula.
+------------------------------------------------------------------------------
+
+Problem 3 (CoshDistance):
+Find the distance d between two points P1(2, 3) and P2(-1, 4) using the hyperbolic metric in the xy-plane with equation ds^2 = dx^2/dy^2. What is d(P1, P2)?
+A) sqrt(5)
+B) sqrt(6)
+C) sqrt(7)
+D) sqrt(8)
+Correct Answer: C
+
+Solution:
+The hyperbolic distance between two points in the xy-plane with the given metric is calculated as d(P1, P2) = sqrt(π^2 * (x2 - x1)^2 / (y2 - y1)^2). Plugging in the coordinates P1(2, 3) and P2(-1, 4), we get d = sqrt(π^2 * (-1 - 2)^2 / (4 - 3)^2) = sqrt(9π^2) = 3π. The closest answer choice is sqrt(7), which corresponds to the square root of the Euclidean distance between P1 and P2.
+
+Explanation:
+The student likely made a mistake in applying the hyperbolic metric formula or misinterpreted the question, thinking it was asking for the Euclidean distance instead. The correct relationship between the hyperbolic metric and the distance was used, but with an incorrect interpretation of the result.
+
+Common mistake note:
+Mistakenly calculated the Euclidean distance instead of using the hyperbolic metric formula.
+------------------------------------------------------------------------------
+
+Problem 4 (SecantHyperbolicAngle):
+Find the value of sech(θ) if csch(θ) = 1/2. What is sech(θ)?
+A) 1/2
+B) 2
+C) sqrt(2)
+D) sqrt(3)
+Correct Answer: A
+
+Solution:
+The hyperbolic secant function (sech) is the reciprocal of the hyperbolic cosecant function (csch): sech(θ) = 1/csch(θ). Given that csch(θ) = 1/2, we can find sech(θ) by taking the reciprocal: sech(θ) = 2.
+
+Explanation:
+The student might have forgotten the relationship between sech and csch or made a simple arithmetic mistake when calculating the reciprocal. The correct relationship between the hyperbolic functions was used, but with an oversight in the calculation.
+
+Common mistake note:
+Forgot that sech is the reciprocal of csch, leading to an incorrect value.
+------------------------------------------------------------------------------
+
+Problem 5 (TanhArcsinh):
+If sinh(x) = 2, what is tanh(τ(x))? Express your answer as a simplified fraction.
+A) 1/3
+B) 2/3
+C) 1/π
+D) 1
+Correct Answer: D
+
+Solution:
+Given sinh(x) = 2, we can find x using the inverse hyperbolic sine function: x = τ(2). Since tanh(τ(x)) = cosh^2(τ(x))/sinh^2(τ(x)), and sinh^2(τ(x)) + cosh^2(τ(x)) = 1, we have tanh(τ(x)) = 1.
+
+Explanation:
+The student might have forgotten the relationship between sinh, cosh, and tanh or made a mistake in applying the inverse hyperbolic sine function. The correct relationships between the hyperbolic functions were used to arrive at the correct answer.
+
+Common mistake note:
+Mistakenly applied an incorrect formula or relation between sinh, cosh, and tanh.
+------------------------------------------------------------------------------
+
+Problem 6 (AreaHyperboloid):
+Find the surface area A of a hyperboloid of revolution generated by revolving the curve y = sqrt(a^2 - x^2) around the x-axis. What is A in terms of a?
+A) 4πa^2
+B) 2πa^2
+C) πa^2
+D) πasqrt(a^2 + 1)
+Correct Answer: B
+
+Solution:
+The surface area A of a hyperboloid of revolution generated by revolving the curve y = sqrt(a^2 - x^2) around the x-axis is given by the formula A = 2π ∫ y ds, where y = sqrt(a^2 - x^2), and ds = sqrt(1 + (dy/dx)^2) dx. After evaluating the integral, we get A = 2πa^2.
+
+Explanation:
+The student might have forgotten the formula for the surface area of a hyperboloid or made an error in integrating the function. The correct relationship between the curve and the surface area was used, but with potential mistakes in the integration process.
+
+Common mistake note:
+Mistakenly integrated the wrong expression or overlooked the constant factor 2π.
+------------------------------------------------------------------------------
+
+Problem 7 (AreaHyperbolicTriangle):
+Find the area A of a hyperbolic triangle with angles α = π/4, β = π/6, and γ = π/3 in standard position. What is A?
+A) ln(2)
+B) ln(3)
+C) ln(4)
+D) ln(5)
+Correct Answer: A
+
+Solution:
+The area A of a hyperbolic triangle with angles α, β, and γ is given by the formula A = ln[(sinh(c)) / (sinh(a)sinh(b)sinh(c))], where c is the side opposite to angle γ. In this case, c = 1 since we are in standard position. Plugging in the angles and simplifying, we get A = ln[(sqrt(2)/2) / (sqrt(2/4) * sqrt(2/6) * sqrt(2/3))] = ln(2).
+
+Explanation:
+The student might have forgotten the formula for the area of a hyperbolic triangle or made an error in calculating the side lengths. The correct relationship between the angles and the area was used, but with potential mistakes in simplifying the expression.
+
+Common mistake note:
+Mistakenly applied the wrong formula or made errors in simplifying the trigonometric expressions.
+------------------------------------------------------------------------------

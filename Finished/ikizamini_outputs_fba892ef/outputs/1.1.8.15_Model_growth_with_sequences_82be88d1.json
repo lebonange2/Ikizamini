@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.8.15",
+  "objective_text": "Model growth with sequences",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which of the following best models a sequence where each term is twice the previous term?",
+      "choices": {
+        "A": "2n",
+        "B": "n^2",
+        "C": "2^n",
+        "D": "n + 2"
+      },
+      "correct_choice": "C",
+      "solution": "The sequence where each term is twice the previous term is an example of exponential growth, which can be modeled using the formula 2^n. This means that each term (n) is multiplied by 2 to get the next term.",
+      "explanation": "A: The formula 2n represents a linear sequence where each term increases by 2. B: n^2 models quadratic growth, where terms increase by squares. D: n + 2 describes a linear sequence with a constant increment of 2.",
+      "common_mistake_notes": "Common mistake is to choose A or D, which represent linear sequences rather than exponential growth."
+    },
+    {
+      "id": ":2",
+      "stem": "What term in the geometric sequence 3, 6, 12, ... represents n = 4?",
+      "choices": {
+        "A": "9",
+        "B": "15",
+        "C": "24",
+        "D": "48"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for finding the nth term in a geometric sequence is a_1 * r^(n-1), where a_1 is the first term and r is the common ratio. For this sequence, a_1 = 3 and r = 6/3 = 2. Plugging n=4 into the formula gives us 3 * 2^(4-1) = 3 * 8 = 24.",
+      "explanation": "A: The first term multiplied by 3 would be 9, but that's not correct for n=4. B: The sequence doesn't follow a simple addition pattern like this. D: This is the result of multiplying the fourth term by 2, which isn't how geometric sequences work.",
+      "common_mistake_notes": "Common mistake is to multiply the first term by the common ratio directly (3 * 2 = 6), not accounting for the exponent."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the next term in the sequence 1, 4, 7, 10, ... if it follows arithmetic growth?",
+      "choices": {
+        "A": "11",
+        "B": "12",
+        "C": "13",
+        "D": "14"
+      },
+      "correct_choice": "C",
+      "solution": "An arithmetic sequence has a constant difference between consecutive terms. The difference between 1 and 4 is 3, so the next term in the sequence would be 10 + 3 = 13.",
+      "explanation": "A: This choice doesn't follow the pattern of adding 3 to each term. B: Adding 2 to 10 gives us 12, but that's not the correct common difference. D: Adding 4 to 10 would be incorrect for arithmetic growth.",
+      "common_mistake_notes": "Common mistake is to add a different number than the established common difference (3 in this case)."
+    },
+    {
+      "id": ":4",
+      "stem": "What is the value of n when the term in the geometric sequence 2, 6, 18, ... equals 5832?",
+      "choices": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "correct_choice": "C",
+      "solution": "To find the value of n when the term is 5832, we can use the formula a_1 * r^(n-1) and solve for n. Given a_1 = 2 and r = 6/2 = 3, we have 2 * 3^(n-1) = 5832. Solving for n gives us 3^(n-1) = 2916, which can be simplified to 3^6 = 2916. Therefore, n - 1 = 6 and n = 7.",
+      "explanation": "A: 4 doesn't result in 5832 when multiplying by the common ratio. B: 5 would give us a term less than 5832. D: This choice is correct as it results in the given term after applying the geometric sequence formula.",
+      "common_mistake_notes": "Common mistake is to misapply the geometric sequence formula or solve for n incorrectly."
+    },
+    {
+      "id": ":5",
+      "stem": "Which of the following sequences models a Fibonacci sequence with the first two terms being 1 and 2?",
+      "choices": {
+        "A": "1, 2, 3, 4, 5, ...",
+        "B": "1, 2, 4, 8, 16, ...",
+        "C": "1, 2, 3, 5, 8, ...",
+        "D": "1, 2, 5, 10, 20, ..."
+      },
+      "correct_choice": "C",
+      "solution": "A Fibonacci sequence is a sequence where each term is the sum of the two preceding ones. For the given first two terms (1 and 2), the next term would be 1 + 2 = 3, then 2 + 3 = 5, and so on. This matches the sequence 1, 2, 3, 5, 8, ...",
+      "explanation": "A: This is a simple arithmetic sequence, not Fibonacci. B: This is a geometric sequence where each term is multiplied by 2. D: This sequence does not follow the sum rule of Fibonacci.",
+      "common_mistake_notes": "Common mistake is to confuse Fibonacci sequences with arithmetic or geometric sequences."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the common ratio in the geometric sequence 1, 0.5, 0.25, ...?",
+      "choices": {
+        "A": "0.5",
+        "B": "1",
+        "C": "2",
+        "D": "4"
+      },
+      "correct_choice": "A",
+      "solution": "The common ratio (r) in a geometric sequence is found by dividing any term by the previous term. In this case, 0.5 / 1 = 0.5, so the common ratio is 0.5.",
+      "explanation": "A: This is correct as it shows the ratio between consecutive terms. B: A common ratio of 1 would result in a constant sequence, not growth or decay. C and D: These values do not align with the given sequence.",
+      "common_mistake_notes": "Common mistake is to choose a ratio that does not maintain the pattern (e.g., 2 or 4)."
+    },
+    {
+      "id": ":7",
+      "stem": "What term in the arithmetic sequence -3, -1, 1, ... represents n = 6?",
+      "choices": {
+        "A": "-5",
+        "B": "0",
+        "C": "3",
+        "D": "5"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for finding the nth term in an arithmetic sequence is a_n = a_1 + (n-1)d, where a_1 is the first term and d is the common difference. For this sequence, a_1 = -3 and d = (-1) - (-3) = 2. Plugging n=6 into the formula gives us -3 + (6-1)*2 = -3 + 10 = 7.",
+      "explanation": "A: This choice doesn't follow the pattern of adding 2 to each term. B: Adding 5 to -3 would give us 2, not 0. D: Adding 6 to -3 gives us a value greater than 5, which is incorrect for n=6.",
+      "common_mistake_notes": "Common mistake is to add the wrong common difference or misapply the arithmetic sequence formula."
+    }
+  ]
+}

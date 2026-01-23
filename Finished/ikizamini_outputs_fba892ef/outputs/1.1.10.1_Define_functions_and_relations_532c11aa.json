@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.10.1",
+  "objective_text": "Define functions and relations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "What is a function in mathematics?",
+      "choices": {
+        "A": "A set of numbers with no specific relationship between them.",
+        "B": "A rule that assigns exactly one output to each input from a given domain.",
+        "C": "A graph representing the relationship between two variables.",
+        "D": "A table showing all possible inputs and their corresponding outputs."
+      },
+      "correct_choice": "B",
+      "solution": "A function in mathematics is a rule that assigns exactly one output to each input from a given domain. This means that for every unique input, there should be only one corresponding output.",
+      "explanation": "Option A describes a set of numbers without any specific relationship, which does not define a function. Option C represents a visual representation of a relation but doesn't define the rule itself. Option D is an example of tabular representation of a function but not the definition.",
+      "common_mistake_notes": "Common mistake: Choosing option A or C, as students might confuse these with the graphical representation or a collection of numbers without understanding the key aspect of assigning exactly one output to each input."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Which of the following is an example of a relation that is NOT a function?",
+      "choices": {
+        "A": "{(1, 2), (2, 3), (3, 4)}",
+        "B": "{(a, b), (b, c), (c, d)}",
+        "C": "{(x, y) | x < y}",
+        "D": "{(x, y) | x = y}"
+      },
+      "correct_choice": "C",
+      "solution": "A relation that is NOT a function would have at least one input with multiple outputs. Option C represents a set of ordered pairs where x is less than y, which can result in multiple outputs for some inputs, making it not a function.",
+      "explanation": "Option A and B are functions because each input has only one corresponding output. Option D is also a function as it defines a rule that assigns the same value to both variables (x = y).",
+      "common_mistake_notes": "Common mistake: Choosing option A or B, as students might overlook the fact that these relations still assign exactly one output to each input."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Which of the following is a function if we consider 'x' as the domain and 'y' as the codomain?",
+      "choices": {
+        "A": "{(1, 2), (2, 2), (3, 2)}",
+        "B": "{(a, b), (b, c), (c, d)}",
+        "C": "{(x, x^2)}",
+        "D": "{(x, x + 1), (x, x - 1)}"
+      },
+      "correct_choice": "C",
+      "solution": "A function requires that for each input in the domain, there is exactly one output in the codomain. Option C satisfies this condition as it assigns the square of 'x' to each value of 'x'.",
+      "explanation": "Option A violates the function definition because the same output (2) is assigned to multiple inputs. Option B does not define a clear relationship between x and y. Option D has two outputs for each input, which makes it a relation but not a function.",
+      "common_mistake_notes": "Common mistake: Choosing option A or D, as students might overlook the rule that each input should have only one corresponding output."
+    },
+    {
+      "id": ":Q4",
+      "stem": "What is the difference between a function and a relation?",
+      "choices": {
+        "A": "A function has to be continuous while a relation does not.",
+        "B": "A function can have multiple inputs for a single output, but a relation cannot.",
+        "C": "In a function, each input corresponds to exactly one output; in a relation, there may be more than one output for an input.",
+        "D": "A function is always represented by a graph, while a relation is not."
+      },
+      "correct_choice": "C",
+      "solution": "The main difference between a function and a relation is that in a function, each input corresponds to exactly one output. In contrast, a relation may have more than one output for an input.",
+      "explanation": "Option A is incorrect because continuity is not a defining characteristic of functions or relations. Option B reverses the relationship between functions and relations. Option D is wrong as both can be represented graphically.",
+      "common_mistake_notes": "Common mistake: Choosing option B, as students might混淆the roles of functions and relations in terms of input-ouput relationships."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Which of the following sets represents a function if 'x' is the domain and 'y' is the codomain?",
+      "choices": {
+        "A": "{(1, 2), (2, 3), (3, 4)}",
+        "B": "{(a, b), (b, c), (c, d)}",
+        "C": "{(x, x^2), (x, x^3)}",
+        "D": "{(x, sin(x)), (x, cos(x))}"
+      },
+      "correct_choice": "A",
+      "solution": "Option A represents a function because each input 'x' has only one corresponding output in the codomain. There are no repeated outputs for different inputs.",
+      "explanation": "Option B does not define a clear relationship between x and y. Option C violates the function definition as it assigns two outputs (x^2 and x^3) to each value of 'x'. Option D has multiple outputs (sin(x) and cos(x)) for each input, making it a relation but not a function.",
+      "common_mistake_notes": "Common mistake: Choosing option C or D, as students might overlook the rule that each input should have only one corresponding output."
+    },
+    {
+      "id": ":Q6",
+      "stem": "What is the domain of the function f(x) = sqrt(x - 1)?",
+      "choices": {
+        "A": "{x | x >= 0}",
+        "B": "{x | x >= 1}",
+        "C": "{x | x > 1}",
+        "D": "{x | x < 1}"
+      },
+      "correct_choice": "B",
+      "solution": "The domain of a function involving square root is all values for which the expression inside the square root is non-negative. In this case, x - 1 must be greater than or equal to zero, so x >= 1.",
+      "explanation": "Option A allows negative numbers, which would result in an imaginary number when taking the square root. Option C excludes 'x = 1' even though it's a valid input for the function. Option D includes values that make the expression inside the square root negative.",
+      "common_mistake_notes": "Common mistake: Choosing option A or D, as students might forget to consider the non-negative requirement for square roots."
+    },
+    {
+      "id": ":Q7",
+      "stem": "What is the range of the relation R = {(x, y) | x + y = 5}? (Assume 'x' and 'y' are real numbers.)",
+      "choices": {
+        "A": "{y | y >= 0}",
+        "B": "{y | y <= 5}",
+        "C": "{y | -∞ < y < ∞}",
+        "D": "{y | 0 ≤ y ≤ 5}"
+      },
+      "correct_choice": "D",
+      "solution": "The range of the relation R is determined by all possible values of 'y' given any value of 'x'. Since x + y = 5, for any real number 'x', 'y' will be between 0 (when x = 5) and 5 (when x = 0).",
+      "explanation": "Option A does not include the lower bound when x is equal to 5. Option B excludes values greater than 5, which are possible for some 'x'. Option C suggests that any real number can be a value of 'y', but this relation restricts 'y' to a specific range.",
+      "common_mistake_notes": "Common mistake: Choosing option A or C, as students might not consider the constraints imposed by the equation x + y = 5."
+    }
+  ]
+}

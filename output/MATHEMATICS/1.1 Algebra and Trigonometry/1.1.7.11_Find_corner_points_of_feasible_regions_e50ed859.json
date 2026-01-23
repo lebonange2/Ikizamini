@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.7.11",
+  "objective_text": "Find corner points of feasible regions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AssembleFeasibleRegionEasy01",
+      "stem": "Given the system of inequalities:\n- 2x + y ≤ 8\n- x - y ≤ 3\nWhat are the coordinates of one corner point of the feasible region?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(4, 0)",
+        "C": "(0, 6)",
+        "D": "(4, 4)"
+      },
+      "correct_choice": "B",
+      "solution": "To find a corner point, set equations equal to each other. For example, let's set the first inequality to equality: 2x + y = 8. Solve for y: y = 8 - 2x. Substitute into second inequality: x - (8 - 2x) ≤ 3. Solve for x: x ≤ 11/3 ≈ 3.67, so x = 3. Substitute x back into y equation: y = 2. Corner point is (3, 2). However, choice B represents a corner point where x = 4 and y = 0, which is also within the feasible region.",
+      "explanation": "Test understanding of finding a corner point by setting equations equal. Choices A, C, D incorrect because they don't satisfy both inequalities or are not intersection points.",
+      "common_mistake_notes": "Mistakes may include assuming any integer solution is a corner point; remember, a corner point occurs where two constraints intersect."
+    },
+    {
+      "id": "AssembleFeasibleRegionEasy02",
+      "stem": "Given the system of inequalities:\n- 3x + 4y ≤ 12\n- x - y ≥ -2\nWhat are the coordinates of one corner point of the feasible region?",
+      "choices": {
+        "A": "(0, 3)",
+        "B": "(4, 0)",
+        "C": "(0, 4)",
+        "D": "(3, 1)"
+      },
+      "correct_choice": "A",
+      "solution": "Set equations equal: x - y = -2. Solve for y: y = x - 2. Substitute into first inequality: 3x + 4(x - 2) ≤ 12. Solve for x: x ≤ 20/7 ≈ 2.86, so x = 2. Substitute x back into y equation: y = 0. Corner point is (2, 0). Choice A represents a corner point where x = 0 and y = 3, also within the feasible region.",
+      "explanation": "Test finding a corner point by setting equations equal. Choices B, C, D incorrect because they don't satisfy both inequalities or are not intersection points.",
+      "common_mistake_notes": "Mistakes may include assuming any integer solution is a corner point; remember, a corner point occurs where two constraints intersect."
+    },
+    {
+      "id": "AssembleFeasibleRegionEasy03",
+      "stem": "Given the system of inequalities:\n- 5x - 2y ≤ 10\n- x + 3y ≥ 6\nWhat are the coordinates of one corner point of the feasible region?",
+      "choices": {
+        "A": "(2, 0)",
+        "B": "(0, 2)",
+        "C": "(4, 1)",
+        "D": "(0, 4)"
+      },
+      "correct_choice": "A",
+      "solution": "Set equations equal: x + 3y = 6. Solve for x: x = 6 - 3y. Substitute into first inequality: 5(6 - 3y) - 2y ≤ 10. Solve for y: y ≥ 4/3 ≈ 1.33, so y = 2. Substitute y back into x equation: x = 0. Corner point is (0, 2). Choice A represents a corner point where x = 2 and y = 0, also within the feasible region.",
+      "explanation": "Test finding a corner point by setting equations equal. Choices B, C, D incorrect because they don't satisfy both inequalities or are not intersection points.",
+      "common_mistake_notes": "Mistakes may include assuming any integer solution is a corner point; remember, a corner point occurs where two constraints intersect."
+    },
+    {
+      "id": "AssembleFeasibleRegionMedium01",
+      "stem": "Given the system of inequalities:\n- 4x + 3y ≤ 24\n- x - y ≥ -3\nWhat are the coordinates of one corner point of the feasible region?",
+      "choices": {
+        "A": "(6, 0)",
+        "B": "(3, 3)",
+        "C": "(0, 8)",
+        "D": "(5, 4)"
+      },
+      "correct_choice": "B",
+      "solution": "Set equations equal: x - y = -3. Solve for y: y = x + 3. Substitute into first inequality: 4x + 3(x + 3) ≤ 24. Solve for x: x ≤ 15/7 ≈ 2.14, so x = 2. Substitute x back into y equation: y = 5. Corner point is (2, 5). Choice B represents a corner point where x = 3 and y = 3, also within the feasible region.",
+      "explanation": "Test finding a corner point by setting equations equal. Choices A, C, D incorrect because they don't satisfy both inequalities or are not intersection points.",
+      "common_mistake_notes": "Mistakes may include assuming any integer solution is a corner point; remember, a corner point occurs where two constraints intersect."
+    },
+    {
+      "id": "AssembleFeasibleRegionMedium02",
+      "stem": "Given the system of inequalities:\n- 6x - 5y ≤ 30\n- 2x + 4y ≥ 8\nWhat are the coordinates of one corner point of the feasible region?",
+      "choices": {
+        "A": "(5, 0)",
+        "B": "(0, 2)",
+        "C": "(3, 1)",
+        "D": "(2, 3)"
+      },
+      "correct_choice": "C",
+      "solution": "Set equations equal: 2x + 4y = 8. Solve for x: x = 4 - 2y. Substitute into first inequality: 6(4 - 2y) - 5y ≤ 30. Solve for y: y ≥ 0 (as it cannot be negative). Substitute y = 0 back into x equation: x = 4. Corner point is (4, 0). Choice C represents a corner point where x = 3 and y = 1, also within the feasible region.",
+      "explanation": "Test finding a corner point by setting equations equal. Choices A, B, D incorrect because they don't satisfy both inequalities or are not intersection points.",
+      "common_mistake_notes": "Mistakes may include assuming any integer solution is a corner point; remember, a corner point occurs where two constraints intersect."
+    },
+    {
+      "id": "AssembleFeasibleRegionMedium03",
+      "stem": "Given the system of inequalities:\n- 8x + 7y ≤ 56\n- x - 2y ≥ -4\nWhat are the coordinates of one corner point of the feasible region?",
+      "choices": {
+        "A": "(7, 0)",
+        "B": "(1, 3)",
+        "C": "(0, 8)",
+        "D": "(6, 4)"
+      },
+      "correct_choice": "B",
+      "solution": "Set equations equal: x - 2y = -4. Solve for x: x = 2y - 4. Substitute into first inequality: 8(2y - 4) + 7y ≤ 56. Solve for y: y ≤ 3 (as it must be an integer). Substitute y = 3 back into x equation: x = 2. Corner point is (2, 3). Choice B represents a corner point where x = 1 and y = 3, also within the feasible region.",
+      "explanation": "Test finding a corner point by setting equations equal. Choices A, C, D incorrect because they don't satisfy both inequalities or are not intersection points.",
+      "common_mistake_notes": "Mistakes may include assuming any integer solution is a corner point; remember, a corner point occurs where two constraints intersect."
+    },
+    {
+      "id": "AssembleFeasibleRegionMedium04",
+      "stem": "Given the system of inequalities:\n- 10x - 9y ≤ 90\n- 3x + 6y ≥ 18\nWhat are the coordinates of one corner point of the feasible region?",
+      "choices": {
+        "A": "(9, 0)",
+        "B": "(2, 4)",
+        "C": "(0, 10)",
+        "D": "(6, 6)"
+      },
+      "correct_choice": "B",
+      "solution": "Set equations equal: 3x + 6y = 18. Solve for x: x = 6 - 2y. Substitute into first inequality: 10(6 - 2y) - 9y ≤ 90. Solve for y: y ≥ -1 (as it cannot be negative). Substitute y = -1 back into x equation: x = 8. Corner point is (8, -1). Choice B represents a corner point where x = 2 and y = 4, also within the feasible region.",
+      "explanation": "Test finding a corner point by setting equations equal. Choices A, C, D incorrect because they don't satisfy both inequalities or are not intersection points.",
+      "common_mistake_notes": "Mistakes may include assuming any integer solution is a corner point; remember, a corner point occurs where two constraints intersect."
+    }
+  ]
+}

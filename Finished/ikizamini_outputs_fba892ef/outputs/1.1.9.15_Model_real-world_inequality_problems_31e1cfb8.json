@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.9.15",
+  "objective_text": "Model real-world inequality problems",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "InequalityProblem1",
+      "stem": "A store is having a sale where all items are 20% off. If a shirt originally costs $45, what is the sale price?",
+      "choices": {
+        "A": "$36",
+        "B": "$38",
+        "C": "$39.60",
+        "D": "$40"
+      },
+      "correct_choice": "C",
+      "solution": "To find the sale price of the shirt, we first calculate 20% of $45 and then subtract that from the original price. 20% of $45 is $9 (0.20 * $45), so we subtract $9 from $45 to get the sale price: $45 - $9 = $36.",
+      "explanation": "The correct answer is C, as it represents the result of applying a 20% discount to the original price of $45.",
+      "common_mistake_notes": "A common mistake would be to choose A ($36), which might come from simply dividing the original price by 2. However, this method does not accurately calculate a 20% discount."
+    },
+    {
+      "id": "InequalityProblem2",
+      "stem": "There are 18 students in a class, with 4 boys and 3 times as many girls. How many girls are there?",
+      "choices": {
+        "A": "6",
+        "B": "9",
+        "C": "12",
+        "D": "15"
+      },
+      "correct_choice": "C",
+      "solution": "To find the number of girls, we multiply the number of boys by 3 since there are three times as many girls. So, 4 boys * 3 = 12 girls.",
+      "explanation": "The correct answer is C, as it represents the correct calculation based on the given information about the ratio of boys to girls.",
+      "common_mistake_notes": "A common mistake would be to choose A (6), which might come from simply adding the number of boys and girls without considering the 3:1 ratio. However, this method does not account for the fact that there are three times as many girls as boys."
+    },
+    {
+      "id": "InequalityProblem3",
+      "stem": "A bag contains 5 red marbles, 7 blue marbles, and an unknown number of green marbles. If the probability of picking a green marble is twice that of picking a red one, how many green marbles are there?",
+      "choices": {
+        "A": "6",
+        "B": "9",
+        "C": "14",
+        "D": "28"
+      },
+      "correct_choice": "C",
+      "solution": "Let G be the number of green marbles. The probability of picking a red marble is 5/(5+7+G) and the probability of picking a green one is G/(5+7+G). According to the problem, G/(5+7+G) = 2 * (5/(5+7+G)). Solving for G gives us G = 14.",
+      "explanation": "The correct answer is C, as it satisfies the given condition that the probability of picking a green marble is twice that of picking a red one.",
+      "common_mistake_notes": "A common mistake would be to choose B (9), which might come from assuming that the ratio of green marbles to red ones is 2:1. However, this method does not account for the total number of marbles in the bag."
+    },
+    {
+      "id": "InequalityProblem4",
+      "stem": "A company pays its employees $15 per hour plus a 10% commission on sales. If an employee makes $800 in sales in one shift, what is their total earnings for that shift?",
+      "choices": {
+        "A": "$320",
+        "B": "$400",
+        "C": "$430",
+        "D": "$560"
+      },
+      "correct_choice": "C",
+      "solution": "The employee earns a commission of 10% on $800, which is $80 (0.10 * $800). Adding the base pay for one hour to the commission, we get: $15/hour * 8 hours + $80 = $120 + $80 = $200. So, their total earnings for that shift are $200 + $800 = $1000.",
+      "explanation": "The correct answer is C, as it correctly calculates the employee's total earnings by adding their base pay and commission.",
+      "common_mistake_notes": "A common mistake would be to choose D ($560), which might come from simply multiplying the sales by 10% without considering the base pay. However, this method does not account for the employee's hourly wage."
+    },
+    {
+      "id": "InequalityProblem5",
+      "stem": "A recipe calls for 3 cups of flour and 2 cups of sugar. If you want to double the recipe, how many total cups of ingredients will you need?",
+      "choices": {
+        "A": "8",
+        "B": "10",
+        "C": "14",
+        "D": "16"
+      },
+      "correct_choice": "C",
+      "solution": "To double the recipe, we multiply both the flour and sugar by 2. So, (3 cups * 2) + (2 cups * 2) = 6 cups + 4 cups = 10 cups. However, since the question asks for the total cups of ingredients, we need to add the original 5 cups (3 + 2) to get 15 cups. Doubling this gives us 30 cups.",
+      "explanation": "The correct answer is C, as it correctly doubles both the flour and sugar amounts and then adds them together to find the total amount of ingredients needed for double the recipe.",
+      "common_mistake_notes": "A common mistake would be to choose D (16), which might come from simply adding 2 to each ingredient quantity without considering that the final result should be doubled again. However, this method does not account for doubling the entire recipe."
+    },
+    {
+      "id": "InequalityProblem6",
+      "stem": "An apartment building has 4 floors with 6 apartments on each floor. If every second apartment is occupied and each occupied apartment pays $1000 per month in rent, what is the total monthly rent collected?",
+      "choices": {
+        "A": "$24,000",
+        "B": "$30,000",
+        "C": "$36,000",
+        "D": "$48,000"
+      },
+      "correct_choice": "B",
+      "solution": "There are 6 apartments on each floor, so every second apartment means 3 out of 6 apartments are occupied. Since there are 4 floors, the total number of occupied apartments is 3 * 4 = 12. The total monthly rent collected is $1000 * 12 = $12,000 per floor. As there are 4 floors, the total is $12,000 * 4 = $48,000.",
+      "explanation": "The correct answer is B, as it correctly calculates the number of occupied apartments and multiplies by the monthly rent to find the total collected rent.",
+      "common_mistake_notes": "A common mistake would be to choose A ($24,000), which might come from multiplying the number of floors by the number of apartments per floor without considering that only every second apartment is occupied. However, this method does not account for the occupancy rate."
+    },
+    {
+      "id": "InequalityProblem7",
+      "stem": "A library has 3 sections: fiction (40%), non-fiction (35%), and reference (25%). If there are 1200 books in total, how many more fiction books are there than non-fiction?",
+      "choices": {
+        "A": "40",
+        "B": "60",
+        "C": "80",
+        "D": "100"
+      },
+      "correct_choice": "B",
+      "solution": "First, we calculate the number of books in each section: Fiction = 40% * 1200 = 480, Non-fiction = 35% * 1200 = 420, Reference = 25% * 1200 = 300. The difference between fiction and non-fiction books is 480 - 420 = 60.",
+      "explanation": "The correct answer is B, as it correctly calculates the number of books in each section and then finds the difference between fiction and non-fiction.",
+      "common_mistake_notes": "A common mistake would be to choose A (40), which might come from subtracting the total number of non-fiction books from fiction without considering that the percentages represent proportions, not absolute numbers. However, this method does not account for the different sizes of each section."
+    }
+  ]
+}

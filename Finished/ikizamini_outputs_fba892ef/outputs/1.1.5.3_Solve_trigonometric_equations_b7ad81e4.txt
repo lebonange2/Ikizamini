@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.5.3 Solve trigonometric equations
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.5 Trigonometric Functions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One):
+Find the solution to the equation cos(x) = 0.5 in the interval [0, 2π]:
+A) π/3
+B) π/6
+C) 2π/3
+D) 4π/3
+Correct Answer: A
+
+Solution:
+The cosine function equals 0.5 at π/3 and 5π/3 in the interval [0, 2π]. Since we're looking for solutions within the specified interval, the correct answer is π/3.
+
+Explanation:
+The cosine function has a period of 2π, so any solution can be shifted by multiples of 2π without changing its value. We only consider the principal value in the given interval.
+
+Common mistake note:
+A common mistake would be to choose B (π/6), which is the first positive solution for cos(x) = 0.5, but it's not within the specified interval [0, 2π].
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Solve the equation sin(2x) = -1 in the interval [-π, π]:
+A) -π/4
+B) π/4
+C) -3π/4
+D) 5π/4
+Correct Answer: C
+
+Solution:
+The sine function equals -1 at -3π/2 and 3π/2 in the interval [-π, π]. Since we're looking for solutions within the specified interval and considering that we have sin(2x), we divide these values by 2 to find x: -3π/4 and π/4. However, only -3π/4 is a solution in the given interval.
+
+Explanation:
+When solving equations involving sin(2x), it's important to remember that the period of sin(2x) is π, so we divide the solutions by 2 to find x within the specified interval.
+
+Common mistake note:
+A common mistake would be to choose B (π/4), which is a solution for sin(x) = -1 but not for sin(2x) in the given interval.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Solve the equation tan(x) + 1 = 0 in the interval [0, π]:
+A) π/4
+B) π/2
+C) 3π/4
+D) π
+Correct Answer: C
+
+Solution:
+The equation becomes tan(x) = -1, which occurs at π/4 and 3π/4 in the interval [0, 2π]. Since we're looking for solutions within the specified interval, the correct answer is 3π/4.
+
+Explanation:
+The tangent function equals -1 at π/4 and 5π/4. However, only 3π/4 falls within the given interval [0, π].
+
+Common mistake note:
+A common mistake would be to choose A (π/4), which is a solution for tan(x) = -1 but not in the specified interval.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Find the solution to the equation 2cos^2(x) - 1 = 0 in the interval [0, π]:
+A) π/6
+B) π/3
+C) π/2
+D) 2π/3
+Correct Answer: B
+
+Solution:
+The equation simplifies to cos(x) = ±1. The cosine function equals 1 at 0 and π, and -1 at π within the interval [0, 2π]. Since we're looking for solutions within the specified interval, the correct answer is π/3.
+
+Explanation:
+When solving equations involving cos^2(x), remember that cos^2(x) = (cos(x))^2, which can take on values between 0 and 1. We need to consider both positive and negative solutions for cos(x).
+
+Common mistake note:
+A common mistake would be to choose C (π/2), which is a solution for cos(x) = -1 but not in the given interval.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Solve the equation 3sin(x) + 4cos(x) = 0 in the interval [0, 2π]:
+A) π/6
+B) π/3
+C) π/2
+D) 5π/6
+Correct Answer: A
+
+Solution:
+To solve this equation, we can use the identity sin(x) = cos(90° - x) or cos(x) = sin(90° - x). Let y = 90° - x, then 3sin(y) + 4cos(y) = 0. This is equivalent to 5sin(y + α) = 0, where sin(α) = 4/5 and cos(α) = 3/5. The solutions for sin(y + α) = 0 are y + α = kπ, where k is an integer. Solving for x gives us x = π/6.
+
+Explanation:
+Using trigonometric identities can help simplify the equation and make it easier to solve. In this case, converting sine and cosine functions into a single trigonometric function with a phase shift was helpful.
+
+Common mistake note:
+A common mistake would be to try solving for x directly without using an identity, which may lead to more complex algebraic manipulations.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Find the solution to the equation 2sin(x)cos(x) - 1 = 0 in the interval [0, π]:
+A) π/4
+B) π/3
+C) π/2
+D) 3π/4
+Correct Answer: A
+
+Solution:
+The equation simplifies to sin(2x) = 1. The sine function equals 1 at π/2 within the interval [0, 2π]. Since we're looking for solutions within the specified interval, the correct answer is π/4.
+
+Explanation:
+When solving equations involving 2sin(x)cos(x), remember that it can be rewritten as sin(2x), which simplifies the problem. The sine function equals 1 at π/2 and 3π/2 in the interval [0, 2π], but only π/4 falls within the given interval.
+
+Common mistake note:
+A common mistake would be to choose D (3π/4), which is a solution for sin(2x) = 1 but not in the specified interval.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Solve the equation cot(x) - 1 = 0 in the interval [0, π]:
+A) π/4
+B) π/3
+C) π/2
+D) π
+Correct Answer: A
+
+Solution:
+The equation becomes cot(x) = 1, which occurs at π/4 and 5π/4 in the interval [0, 2π]. Since we're looking for solutions within the specified interval, the correct answer is π/4.
+
+Explanation:
+The cotangent function equals 1 at π/4 and 3π/4. However, only π/4 falls within the given interval [0, π].
+
+Common mistake note:
+A common mistake would be to choose B (π/3), which is not a solution for cot(x) = 1 in the specified interval.
+------------------------------------------------------------------------------

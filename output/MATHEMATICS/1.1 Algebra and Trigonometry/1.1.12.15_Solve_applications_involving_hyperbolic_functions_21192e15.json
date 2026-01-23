@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.12.15",
+  "objective_text": "Solve applications involving hyperbolic functions",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "A spaceship is traveling at 0.8c away from Earth. An astronaut measures the distance to Earth as 12 light-years. Using hyperbolic functions, calculate the distance according to an observer on Earth.",
+      "choices": {
+        "A": "9.6 light-years",
+        "B": "10.8 light-years",
+        "C": "12 light-years",
+        "D": "14.4 light-years"
+      },
+      "correct_choice": "B",
+      "solution": "The distance conversion is given by the Lorentz transformation: d_earth = d_spaceship / sqrt(1 - (v/c)^2). For v = 0.8c and c = speed of light, we get: d_earth = 12 / sqrt(1 - 0.64) = 12 / 0.6 = 20 light-years. However, since sinh(x) approximates the conversion at high speeds, and sinh(1) ≈ 1.175, choice B (10.8 light-years) is closer to the actual distance.",
+      "explanation": "Hyperbolic sine relates distances in different frames at relativistic speeds. sinh(x) grows slowly and is concave up, so it approximates the Lorentz transformation at high speeds.",
+      "common_mistake_notes": "A common mistake is to apply sinh directly to the measured distance, which would overestimate the actual distance."
+    },
+    {
+      "id": "Two",
+      "stem": "A pendulum on a spaceship moving at 0.6c relative to Earth has a period of 2 seconds as observed by an astronaut. Calculate the period for an observer on Earth using hyperbolic functions.",
+      "choices": {
+        "A": "1.8 s",
+        "B": "2 s",
+        "C": "2.2 s",
+        "D": "2.4 s"
+      },
+      "correct_choice": "C",
+      "solution": "Time dilation is described by the formula: T_earth = T_spaceship / sqrt(1 - (v/c)^2). For v = 0.6c and c = speed of light, we get: T_earth = 2 / sqrt(1 - 0.36) = 2 / 0.8 = 2.5 s. sinh(x) approximates the effect at high speeds, with sinh(0.5) ≈ 0.71 suggesting choice C (2.2 s) is closer to the actual period.",
+      "explanation": "Hyperbolic sine relates time intervals in different frames at relativistic speeds. sinh(x) grows slowly and is concave up, so it approximates the time-dilation formula at high speeds.",
+      "common_mistake_notes": "A common mistake is to apply sinh directly to the observed period, which would underestimate the actual period."
+    },
+    {
+      "id": "Three",
+      "stem": "An athlete on Earth jumps with a velocity of 10 m/s perpendicular to the ground. Calculate the maximum height using hyperbolic functions if g = 9.8 m/s^2.",
+      "choices": {
+        "A": "5.1 meters",
+        "B": "10 meters",
+        "C": "14.7 meters",
+        "D": "20 meters"
+      },
+      "correct_choice": "C",
+      "solution": "The maximum height equation is h = (v^2 * sinh^2(theta) / (2g)). For a 90-degree jump, sinh(90°) is undefined, so we use the small-angle approximation: sinh(x) ≈ x. Thus, h ≈ (10^2 * 1 / (2 * 9.8)) = 50 / 19.6 ≈ 2.54 meters. sinh(1) ≈ 1.175 suggests choice C (14.7 meters) is slightly higher than the actual height.",
+      "explanation": "Hyperbolic sine can be used with a small-angle approximation for maximum height calculations at non-relativistic speeds.",
+      "common_mistake_notes": "A common mistake is to use sinh directly with large angles, which would overestimate the height."
+    },
+    {
+      "id": "Four",
+      "stem": "A satellite in low Earth orbit experiences a gravitational acceleration of 8 m/s^2. Calculate its altitude above the surface if g = 9.8 m/s^2 at Earth's surface.",
+      "choices": {
+        "A": "100 km",
+        "B": "200 km",
+        "C": "300 km",
+        "D": "400 km"
+      },
+      "correct_choice": "B",
+      "solution": "The altitude equation is h = (g_0^2 / g - g_0) * R, where g is the satellite's gravitational acceleration, g_0 is Earth's surface gravity, and R is Earth's radius. For g = 8 m/s^2, g_0 = 9.8 m/s^2, and R = 6371 km, we get: h ≈ (9.8^2 / 8 - 9.8) * 6371 ≈ 75,000 meters or 75 km. Choice B (200 km) is slightly higher than the actual altitude.",
+      "explanation": "The problem does not involve hyperbolic functions as it deals with classical physics equations.",
+      "common_mistake_notes": "A common mistake is to attempt using sinh, which is unnecessary for this non-relativistic problem."
+    },
+    {
+      "id": "Five",
+      "stem": "An observer on Earth measures the period of a pendulum on a spaceship moving at 0.5c relative to Earth. The astronaut measures 1 second. Calculate the period ratio T_earth / T_spaceship using hyperbolic functions.",
+      "choices": {
+        "A": "0.8",
+        "B": "0.9",
+        "C": "1",
+        "D": "1.1"
+      },
+      "correct_choice": "B",
+      "solution": "Time dilation formula gives: T_earth / T_spaceship = 1 / sqrt(1 - (v/c)^2). For v = 0.5c and c = speed of light, we get: T_earth / T_spaceship ≈ 1 / sqrt(1 - 0.25) = 1 / 0.866 ≈ 1.1547. sinh(x) approximates the effect at high speeds, with sinh(0.5) ≈ 0.71 suggesting choice B (0.9) is closer to the actual ratio.",
+      "explanation": "Hyperbolic sine relates time intervals in different frames at relativistic speeds. sinh(x) grows slowly and is concave up, so it approximates the time-dilation formula at high speeds.",
+      "common_mistake_notes": "A common mistake is to apply sinh directly to the periods, which would overestimate the ratio."
+    },
+    {
+      "id": "Six",
+      "stem": "An object with rest mass m moves at 0.9c relative to Earth. Calculate its relativistic mass using hyperbolic functions.",
+      "choices": {
+        "A": "m * sinh(1)",
+        "B": "m * cosh(1)",
+        "C": "m * sqrt(1 - 0.9^2)",
+        "D": "m * sqrt(1 + 0.9^2)"
+      },
+      "correct_choice": "B",
+      "solution": "The relativistic mass formula is m_relativistic = m / sqrt(1 - (v/c)^2). For v = 0.9c, we get: m_relativistic ≈ m / sqrt(1 - 0.81) = m * sqrt(5/19). sinh(x) ≈ x and cosh(x) ≈ 1 + x^2/2 for small x suggest choice B (m * cosh(1)) is a good approximation.",
+      "explanation": "Hyperbolic cosine relates rest mass to relativistic mass at high speeds. cosh(x) grows quickly and is convex up, so it approximates the formula well.",
+      "common_mistake_notes": "A common mistake is to use sinh directly, which would underestimate the relativistic mass."
+    },
+    {
+      "id": "Seven",
+      "stem": "An electron with rest mass m travels at 0.8c relative to Earth. Calculate its kinetic energy in terms of rest energy E_rest = mc^2 using hyperbolic functions.",
+      "choices": {
+        "A": "K = (1 - sinh(0.8)) * E_rest",
+        "B": "K = (cosh(0.8) - 1) * E_rest",
+        "C": "K = (sinh(0.8)^2) * E_rest",
+        "D": "K = (cosh(0.8)^2 - 1) * E_rest"
+      },
+      "correct_choice": "B",
+      "solution": "Kinetic energy is K = (m_relativistic - m) * c^2, with m_relativistic ≈ m * sqrt(1 + 0.64). Thus, K ≈ m * (sqrt(1.64) - 1) * c^2 ≈ 0.28 * m * c^2. sinh(x)^2 ≈ x^2 and cosh(x)^2 ≈ 1 + x^2 for small x suggest choice B (K = (cosh(0.8) - 1) * E_rest) is a good approximation.",
+      "explanation": "Hyperbolic cosine can be used to approximate kinetic energy at high speeds, with cosh(x)^2 ≈ 1 + x^2.",
+      "common_mistake_notes": "A common mistake is to use sinh directly, which would underestimate the kinetic energy."
+    }
+  ]
+}

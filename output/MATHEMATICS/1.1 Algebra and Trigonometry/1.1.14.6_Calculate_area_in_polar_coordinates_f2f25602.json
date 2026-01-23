@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.14.6",
+  "objective_text": "Calculate area in polar coordinates",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "AsdFgHjK",
+      "stem": "Find the area of the region enclosed by the polar curve r = 2sin(θ) from θ = π/6 to θ = π/3.",
+      "choices": {
+        "A": "π/4",
+        "B": "π/3",
+        "C": "π/2",
+        "D": "3π/4"
+      },
+      "correct_choice": "C",
+      "solution": "The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 2sin(θ), we have A = ∫[0 to π/3] (1/2)(2sin(θ))^2 dθ = ∫[0 to π/3] 2sin^2(θ) dθ.",
+      "explanation": "Using the identity sin^2(θ) = (1 - cos(2θ))/2, we get A = ∫[0 to π/3] (1 - cos(2θ)) dθ = [θ - (sin(2θ)/2)]|[0 to π/3].",
+      "common_mistake_notes": "A common mistake is forgetting to square r in the integral or misapplying the double angle identity for sin^2(θ)."
+    },
+    {
+      "id": "XyzWvBnM",
+      "stem": "Find the area of the sector defined by the polar equation r = 3θ from θ = 0 to θ = π/3.",
+      "choices": {
+        "A": "π/6",
+        "B": "π/4",
+        "C": "π/3",
+        "D": "π/2"
+      },
+      "correct_choice": "B",
+      "solution": "The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 3θ, we have A = ∫[0 to π/3] (1/2)(3θ)^2 dθ = ∫[0 to π/3] (9/2)θ^2 dθ.",
+      "explanation": "Integrating, we get A = [3θ^3/2]|[0 to π/3] = (3π^3)/6 - 0 = π^3/4. Converting to decimal form, A ≈ π/4.",
+      "common_mistake_notes": "A common mistake is not recognizing that the area of a sector in polar coordinates is still given by (1/2)r^2 dθ, even though r varies with θ."
+    },
+    {
+      "id": "QweRtYui",
+      "stem": "Find the area of the region enclosed by the cardioid r = 1 + cos(θ).",
+      "choices": {
+        "A": "π",
+        "B": "3π/2",
+        "C": "2π",
+        "D": "5π/2"
+      },
+      "correct_choice": "A",
+      "solution": "The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 1 + cos(θ), we have A = ∫[0 to 2π] (1/2)(1 + cos(θ))^2 dθ.",
+      "explanation": "Expanding and integrating, we get A = ∫[0 to 2π] (1/2)(1 + 2cos(θ) + cos^2(θ)) dθ = π + 0 + ∫[0 to 2π] (1/4)sin(2θ) dθ.",
+      "common_mistake_notes": "A common mistake is not simplifying the integral of sin(2θ)/2, which equals 0 because it's an odd function integrated over a symmetric interval."
+    },
+    {
+      "id": "ZxcVbnMm",
+      "stem": "Find the area of the region bounded by the polar equation r = 4sin(2θ) from θ = π/8 to θ = 3π/8.",
+      "choices": {
+        "A": "π/2",
+        "B": "π",
+        "C": "3π/2",
+        "D": "2π"
+      },
+      "correct_choice": "C",
+      "solution": "The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 4sin(2θ), we have A = ∫[π/8 to 3π/8] (1/2)(4sin(2θ))^2 dθ.",
+      "explanation": "Simplifying and integrating, we get A = ∫[π/8 to 3π/8] 8sin^2(2θ) dθ = 4∫[π/8 to 3π/8] (1 - cos(4θ))/2 dθ.",
+      "common_mistake_notes": "A common mistake is not simplifying sin^2(2θ) using the double angle identity or integrating over the wrong interval."
+    },
+    {
+      "id": "BvnCmNjK",
+      "stem": "Find the area of the region enclosed by the polar equation r = 5 - 5cos(θ) from θ = 0 to θ = π.",
+      "choices": {
+        "A": "π/2",
+        "B": "π",
+        "C": "3π/2",
+        "D": "2π"
+      },
+      "correct_choice": "D",
+      "solution": "The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 5 - 5cos(θ), we have A = ∫[0 to π] (1/2)(5 - 5cos(θ))^2 dθ.",
+      "explanation": "Expanding and integrating, we get A = ∫[0 to π] (1/2)(25 - 50cos(θ) + 25cos^2(θ)) dθ = 25π/2 + 0 + ∫[0 to π] (25/4)sin^2(θ) dθ.",
+      "common_mistake_notes": "A common mistake is not simplifying the integral of sin^2(θ)/2, which equals π because it's an even function integrated over a symmetric interval."
+    },
+    {
+      "id": "JklLmnOp",
+      "stem": "Find the area of the region enclosed by the polar equation r = 3sin(2θ) from θ = π/12 to θ = 5π/12.",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "3π/4",
+        "D": "π"
+      },
+      "correct_choice": "C",
+      "solution": "The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 3sin(2θ), we have A = ∫[π/12 to 5π/12] (1/2)(3sin(2θ))^2 dθ.",
+      "explanation": "Simplifying and integrating, we get A = ∫[π/12 to 5π/12] 9sin^2(2θ) dθ = 9∫[π/12 to 5π/12] (1 - cos(4θ))/2 dθ.",
+      "common_mistake_notes": "A common mistake is not simplifying sin^2(2θ) using the double angle identity or integrating over the wrong interval."
+    },
+    {
+      "id": "PoiUytFr",
+      "stem": "Find the area of the region enclosed by the polar equation r = 2 + cos(θ) from θ = 0 to θ = π.",
+      "choices": {
+        "A": "π",
+        "B": "3π/2",
+        "C": "2π",
+        "D": "5π/2"
+      },
+      "correct_choice": "B",
+      "solution": "The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 2 + cos(θ), we have A = ∫[0 to π] (1/2)(2 + cos(θ))^2 dθ.",
+      "explanation": "Expanding and integrating, we get A = ∫[0 to π] (1/2)(4 + 4cos(θ) + cos^2(θ)) dθ = 3π/2 + 0 + ∫[0 to π] (1/4)sin(2θ) dθ.",
+      "common_mistake_notes": "A common mistake is not simplifying the integral of sin(2θ)/2, which equals 0 because it's an odd function integrated over a symmetric interval."
+    }
+  ]
+}

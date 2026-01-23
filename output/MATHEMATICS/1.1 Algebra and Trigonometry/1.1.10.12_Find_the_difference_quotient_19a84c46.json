@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.10.12",
+  "objective_text": "Find the difference quotient",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "IncrementalChange",
+      "stem": "Find the difference quotient of f(x) = x^2 at x=3 with a small change h.",
+      "choices": {
+        "A": "(3+h)^2 - 9 / h",
+        "B": "6h + 9",
+        "C": "6",
+        "D": "18/h"
+      },
+      "correct_choice": "A",
+      "solution": "The difference quotient is given by (f(x+h) - f(x)) / h. For f(x) = x^2 at x=3, substitute x with 3 and then add h to both x terms inside the square.",
+      "explanation": "(3+h)^2 - 9 / h",
+      "common_mistake_notes": "Common mistakes include forgetting to square (3+h), resulting in B. Another mistake is considering only the derivative at x=3, which gives C."
+    },
+    {
+      "id": "NegativeChange",
+      "stem": "Find the difference quotient of f(x) = 2x - 1 at x=4 with a negative change -2.",
+      "choices": {
+        "A": "(2(4-2) - 1) - (7 - 1) / -2",
+        "B": "-6",
+        "C": "3",
+        "D": "8"
+      },
+      "correct_choice": "A",
+      "solution": "The difference quotient is given by (f(x+h) - f(x)) / h. For f(x) = 2x - 1 at x=4 and h=-2, substitute x with 4 and then add -2.",
+      "explanation": "(2(4-2) - 1) - (7 - 1) / -2",
+      "common_mistake_notes": "Common mistakes include forgetting that h is negative, leading to B. Another mistake is calculating the derivative directly, which gives C."
+    },
+    {
+      "id": "FractionalChange",
+      "stem": "Find the difference quotient of f(x) = x^3 at x=2 with a fractional change 1/2.",
+      "choices": {
+        "A": "(2^(3/2) - 8) / (1/2)",
+        "B": "6",
+        "C": "4.5",
+        "D": "16"
+      },
+      "correct_choice": "A",
+      "solution": "The difference quotient is given by (f(x+h) - f(x)) / h. For f(x) = x^3 at x=2 and h=1/2, substitute x with 2 and then add 1/2 to the power.",
+      "explanation": "(2^(3/2) - 8) / (1/2)",
+      "common_mistake_notes": "Common mistakes include raising 2 directly to the power of 1/2 instead of using the fractional exponent, which gives B. Another mistake is forgetting to divide by h, resulting in C."
+    },
+    {
+      "id": "QuadraticFunction",
+      "stem": "Find the difference quotient of f(x) = x^2 - 4x + 3 at x=5 with a change 1.",
+      "choices": {
+        "A": "(6 - 11) / 1",
+        "B": "10",
+        "C": "9",
+        "D": "2"
+      },
+      "correct_choice": "B",
+      "solution": "The difference quotient is given by (f(x+h) - f(x)) / h. For f(x) = x^2 - 4x + 3 at x=5 and h=1, substitute x with 5 and then add 1.",
+      "explanation": "(6 - 11) / 1",
+      "common_mistake_notes": "Common mistakes include forgetting the coefficient of x when expanding (x+1)^2, which gives A. Another mistake is subtracting f(x+h) from f(x) instead of taking their difference, resulting in C."
+    },
+    {
+      "id": "LinearFunction",
+      "stem": "Find the difference quotient of f(x) = 3x - 5 at x=2 with a change h.",
+      "choices": {
+        "A": "(3(2+h) - 5) - (1 - 5) / h",
+        "B": "3",
+        "C": "6h + 8",
+        "D": "9"
+      },
+      "correct_choice": "B",
+      "solution": "The difference quotient is given by (f(x+h) - f(x)) / h. For f(x) = 3x - 5 at x=2, substitute x with 2 and then add h.",
+      "explanation": "(3(2+h) - 5) - (1 - 5) / h",
+      "common_mistake_notes": "Common mistakes include forgetting the coefficient of x when expanding f(x+h), which gives A. Another mistake is calculating the derivative directly, which gives C."
+    },
+    {
+      "id": "ZeroChange",
+      "stem": "Find the difference quotient of f(x) = x^2 + 1 at x=0 with a change h.",
+      "choices": {
+        "A": "(h^2 + 1) - (1) / h",
+        "B": "0",
+        "C": "2h",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "The difference quotient is given by (f(x+h) - f(x)) / h. For f(x) = x^2 + 1 at x=0, substitute x with 0 and then add h.",
+      "explanation": "(h^2 + 1) - (1) / h",
+      "common_mistake_notes": "Common mistakes include thinking that the derivative at x=0 is zero, which gives B. Another mistake is forgetting to square h when expanding f(x+h), resulting in C."
+    },
+    {
+      "id": "ConstantFunction",
+      "stem": "Find the difference quotient of f(x) = 7 at x=3 with a change h.",
+      "choices": {
+        "A": "(7 - 7) / h",
+        "B": "0",
+        "C": "14/h",
+        "D": "h"
+      },
+      "correct_choice": "B",
+      "solution": "The difference quotient is given by (f(x+h) - f(x)) / h. For a constant function like f(x) = 7, the value does not change with x.",
+      "explanation": "(7 - 7) / h",
+      "common_mistake_notes": "Common mistakes include thinking that there's some change in the function, leading to C or D. Another mistake is dividing by zero (h), which gives A."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.14.1 Convert between rectangular and polar coordinates
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.14 Polar Coordinates
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Convert the rectangular coordinate (3, 4) to polar form.
+A) (5, π/4)
+B) (5, π/3)
+C) (7, π/2)
+D) (5, π/6)
+Correct Answer: A
+
+Solution:
+(3, 4) in polar form is (r, θ), where r is the distance from the origin and θ is the angle with the positive x-axis. Using Pythagorean theorem, we find r = √(3^2 + 4^2) = 5. The angle θ can be found using arctan(y/x) or inverse tangent: θ = arctan(4/3). Converting to degrees and simplifying, we get π/4. So the correct polar form is (5, π/4).
+
+Explanation:
+The distance from the origin (r) was calculated correctly using Pythagorean theorem. The angle θ was found using arctan and converted to radians.
+
+Common mistake note:
+A common mistake would be to use the wrong quadrant for θ when converting from rectangular to polar coordinates.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Convert the polar coordinate (2, π/3) to rectangular form.
+A) (1, 1)
+B) (2π, 2π)
+C) (1+π, 1+π)
+D) (1+π/3, π/3)
+Correct Answer: A
+
+Solution:
+(2, π/3) in rectangular form is (x, y), where x is the horizontal component and y is the vertical component. Using trigonometry, we find x = r * cos(θ) = 2 * cos(π/3) = 1 and y = r * sin(θ) = 2 * sin(π/3) = 1. So the correct rectangular form is (1, 1).
+
+Explanation:
+The horizontal component (x) was calculated using cos(π/3), and the vertical component (y) was found using sin(π/3). Both were correctly evaluated.
+
+Common mistake note:
+A common mistake would be to use the wrong trigonometric function when converting from polar to rectangular coordinates.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Convert the rectangular coordinate (-4, 3) to polar form.
+A) (5, π)
+B) (5, 2π)
+C) (5, 3π)
+D) (7, 4π)
+Correct Answer: B
+
+Solution:
+The rectangular coordinate (-4, 3) in polar form is (r, θ), where r is the distance from the origin and θ is the angle with the positive x-axis. Using Pythagorean theorem, we find r = √((-4)^2 + 3^2) = 5. The angle θ can be found using arctan(y/x) or inverse tangent: θ = arctan(3/-4). Since the point is in the second quadrant, we need to add π to the acute angle found: θ = arctan(3/-4) + π. So the correct polar form is (5, 2π).
+
+Explanation:
+The distance from the origin (r) was calculated correctly using Pythagorean theorem. The angle θ was found by considering the quadrant and adding π to the acute angle.
+
+Common mistake note:
+A common mistake would be to forget to adjust the angle for the correct quadrant when converting from rectangular to polar coordinates.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Convert the polar coordinate (1, 2π) to rectangular form.
+A) (1, 0)
+B) (-1, -1)
+C) (-1, 1)
+D) (0, 1)
+Correct Answer: A
+
+Solution:
+The polar coordinate (1, 2π) in rectangular form is (x, y), where x is the horizontal component and y is the vertical component. Since multiplying by 2π brings us back to the same point on the unit circle, we have x = 1 * cos(2π) = 1 and y = 1 * sin(2π) = 0. So the correct rectangular form is (1, 0).
+
+Explanation:
+The horizontal component (x) was calculated using cos(2π), which is 1 for any multiple of π, and the vertical component (y) was found using sin(2π), which is 0 for any multiple of π.
+
+Common mistake note:
+A common mistake would be to assume that the rectangular coordinates will change when multiplying by a full revolution in polar form.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Convert the polar coordinate (5, -π/2) to rectangular form.
+A) (0, -5)
+B) (-5, 0)
+C) (-5, -5)
+D) (5, 5)
+Correct Answer: B
+
+Solution:
+The polar coordinate (5, -π/2) in rectangular form is (x, y), where x is the horizontal component and y is the vertical component. Using trigonometry, we find x = r * cos(-π/2) = 5 * cos(π/2) = -5 and y = r * sin(-π/2) = 5 * sin(π/2) = 0. So the correct rectangular form is (-5, 0).
+
+Explanation:
+The horizontal component (x) was calculated using cos(-π/2), which is -1 for any negative acute angle, and the vertical component (y) was found using sin(-π/2), which is 0 for π/2 or its negative equivalent.
+
+Common mistake note:
+A common mistake would be to forget to adjust the sign of the trigonometric functions when converting from polar coordinates with a negative angle.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Convert the rectangular coordinate (0, -5) to polar form.
+A) (5, π/2)
+B) (5, 3π/2)
+C) (5, 5π)
+D) (0, 0)
+Correct Answer: B
+
+Solution:
+The rectangular coordinate (0, -5) in polar form is (r, θ), where r is the distance from the origin and θ is the angle with the positive x-axis. The distance from the origin (r) is simply the absolute value of y: r = |-5| = 5. Since the point lies on the negative y-axis, the angle θ is π + π/2 = 3π/2. So the correct polar form is (5, 3π/2).
+
+Explanation:
+The distance from the origin (r) was correctly calculated as the absolute value of y. The angle θ was found by considering the quadrant and adding π to the acute angle.
+
+Common mistake note:
+A common mistake would be to forget that the angle for a point on the negative y-axis is in the third quadrant.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Convert the polar coordinate (2π, 4) to rectangular form.
+A) (4, 0)
+B) (-4, -4)
+C) (-4, 4)
+D) (0, 8)
+Correct Answer: D
+
+Solution:
+The polar coordinate (2π, 4) in rectangular form is (x, y), where x is the horizontal component and y is the vertical component. Since multiplying by 2π brings us back to the same point on the unit circle, we have x = 2π * cos(2π) = 0 and y = 2π * sin(2π) = 8. So the correct rectangular form is (0, 8).
+
+Explanation:
+The horizontal component (x) was calculated using cos(2π), which is 1 for any multiple of π, and then multiplied by 2π to get 0. The vertical component (y) was found using sin(2π), which is 0 for any multiple of π, and then multiplied by 2π to get 8.
+
+Common mistake note:
+A common mistake would be to assume that the rectangular coordinates will change when multiplying by a full revolution in polar form.
+------------------------------------------------------------------------------

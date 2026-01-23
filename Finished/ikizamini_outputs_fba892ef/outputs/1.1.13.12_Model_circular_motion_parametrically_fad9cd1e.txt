@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.13.12 Model circular motion parametrically
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.13 Parametric Equations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+A particle moves in a circle of radius 5 units with a period of 2 seconds. Which of the following is a possible set of parametric equations for its motion?
+A) [x = 5cos(t), y = 5sin(t)]
+B) [x = 10cos(πt), y = 10sin(πt)]
+C) [x = 2.5cos(2πt), y = 2.5sin(2πt)]
+D) [x = 10sin(t), y = 10cos(t)]
+Correct Answer: C
+
+Solution:
+The particle moves in a circle with radius 5 units, so the x and y components of its position should be multiples of cosine and sine functions with amplitude 5. The period is given as 2 seconds, which means the angular velocity ω = 2π/T = 2π/2 = π radians per second. Therefore, a valid set of parametric equations would have a coefficient of π in the trigonometric functions. Choice C has x = 2.5cos(2πt) and y = 2.5sin(2πt), which corresponds to a circle with radius 2.5 (half the given radius) but with the correct angular velocity. The other choices either have incorrect amplitudes or angular velocities.
+
+Explanation:
+The key is to match the parametric equations with the given radius and period of circular motion.
+
+Common mistake note:
+A common mistake would be to choose option A, which has the correct amplitude but an angular velocity that's too slow (π instead of 2π radians per second). This would result in a circle with twice the given period.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+The position of a particle moving along a circular path is given by the parametric equations x = 3cos(t) and y = 3sin(t), where t is measured in seconds. What is the speed of the particle at t = π/2?
+A) 0 units/s
+B) 1.5 units/s
+C) 3 units/s
+D) 6 units/s
+Correct Answer: C
+
+Solution:
+The speed v of a particle moving along a curve given by parametric equations x = f(t) and y = g(t) is calculated as the magnitude of the derivative vector, v = √((dx/dt)^2 + (dy/dt)^2). For the given equations x = 3cos(t) and y = 3sin(t), we first find dx/dt and dy/dt: dx/dt = -3sin(t) dy/dt = 3cos(t) At t = π/2, sin(π/2) = 1 and cos(π/2) = 0. So, at this point, dx/dt = -3 and dy/dt = 0. The speed is then v = √((-3)^2 + (0)^2) = √9 = 3 units/s.
+
+Explanation:
+The key is to use the parametric equations to find the derivatives with respect to time, and then calculate the speed using the magnitude of the derivative vector.
+
+Common mistake note:
+A common mistake would be to forget to take the square root when calculating the speed. Some students might also mistakenly think that the particle's speed is zero at t = π/2 because one component (dy/dt) is zero, but they忽略了 dx/dt is non-zero and contributes to the total speed.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+A car travels along a circular track with radius 100 meters. The parametric equations for its position are x = 100cos(ωt) and y = 100sin(ωt), where ω is the angular velocity in radians per second. If the car completes one full revolution in 25 seconds, what is the value of ω?
+A) π/5
+B) 2π/5
+C) 4π/5
+D) 6π/5
+Correct Answer: B
+
+Solution:
+The period T for one revolution is given as 25 seconds. The angular velocity ω is related to the period by ω = 2π/T. Plugging in the given value, we get ω = 2π/(25) = 2π/5 radians per second.
+
+Explanation:
+The key is to use the relationship between angular velocity and period to find the value of ω.
+
+Common mistake note:
+A common mistake would be to forget to divide by 2π when calculating ω, or to multiply instead of dividing in the equation for ω. This would result in an incorrect value.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+The position of a point on the rim of a wheel rotating counterclockwise is given by the parametric equations x = 12sin(t) and y = 12cos(t), where t is measured in radians. At what time does the point first reach its starting position?
+A) 0
+B) π/2
+C) π
+D) 2π
+Correct Answer: D
+
+Solution:
+The parametric equations describe a point on the rim of a wheel, which completes one full revolution when it returns to its starting position. Since the wheel is rotating counterclockwise, the angle t will increase from 0 to 2π radians as the point moves around the circle once. Therefore, the point first reaches its starting position at t = 2π.
+
+Explanation:
+The key is to understand that one full revolution corresponds to an angular displacement of 2π radians for a point on the rim of a wheel rotating counterclockwise.
+
+Common mistake note:
+A common mistake would be to choose option B, which represents half a revolution. However, the question asks for the first time the point reaches its starting position, which is after one full revolution.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+A satellite moves in a circular orbit around Earth with a period of 90 minutes. If the radius of the orbit is 7,200 kilometers, what are the parametric equations for the satellite's position in terms of time t measured in seconds?
+A) [x = 3600cos(πt), y = 3600sin(πt)]
+B) [x = 7200cos(2πt/90), y = 7200sin(2πt/90)]
+C) [x = 14,400cos(πt/90), y = 14,400sin(πt/90)]
+D) [x = 14,400cos(2πt/90), y = 14,400sin(2πt/90)]
+Correct Answer: D
+
+Solution:
+The satellite's position can be modeled using parametric equations x = r cos(ωt) and y = r sin(ωt), where r is the radius of the orbit (7,200 km) and ω is the angular velocity in radians per second. The period T is given as 90 minutes or 5400 seconds. The angular velocity is ω = 2π/T = 2π/5400 ≈ 0.1256 rad/s. Plugging these values into the parametric equations, we get x = 7,200 cos(0.1256t) and y = 7,200 sin(0.1256t). To convert t from minutes to seconds, multiply by 60: x = 7,200 cos(0.1256 × 60t) and y = 7,200 sin(0.1256 × 60t). Simplifying, we get x = 14,400 cos(2πt/90) and y = 14,400 sin(2πt/90).
+
+Explanation:
+The key is to use the given period to find the angular velocity, then plug it into the parametric equations for circular motion.
+
+Common mistake note:
+A common mistake would be to forget to convert the period from minutes to seconds when calculating the angular velocity. Some students might also choose option B, which has the correct radius but an angular velocity that's too slow (π instead of 2π radians per second).
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+A Ferris wheel with a diameter of 30 meters rotates at a constant rate, completing one revolution every 60 seconds. If a passenger gets on the wheel at its lowest point and starts counting time t from there, what are the parametric equations for the passenger's position in terms of t measured in seconds?
+A) [x = 15cos(πt), y = 15sin(πt)]
+B) [x = 30cos(2πt/60), y = 30sin(2πt/60)]
+C) [x = 45cos(πt/60), y = 45sin(πt/60)]
+D) [x = 45cos(2πt/60), y = 45sin(2πt/60)]
+Correct Answer: D
+
+Solution:
+The passenger's position can be modeled using parametric equations x = r cos(ωt) and y = r sin(ωt), where r is half the diameter of the Ferris wheel (15 meters) and ω is the angular velocity in radians per second. The period T is given as 60 seconds, so the angular velocity is ω = 2π/T = 2π/60 ≈ 0.1047 rad/s. Plugging these values into the parametric equations, we get x = 15 cos(0.1047t) and y = 15 sin(0.1047t). To account for the passenger starting at the lowest point, we need to shift the y-coordinate by half the diameter of the wheel: y = 30 - 15 sin(0.1047t). Converting t from seconds to radians per revolution (2π), we get x = 15 cos(0.1047 × 2πt) and y = 30 - 15 sin(0.1047 × 2πt). Simplifying, we get x = 45 cos(2πt/60) and y = 45 sin(2πt/60).
+
+Explanation:
+The key is to use the given period to find the angular velocity, then plug it into the parametric equations for circular motion, accounting for the starting position of the passenger.
+
+Common mistake note:
+A common mistake would be to forget to shift the y-coordinate by half the diameter of the wheel to account for the passenger starting at the lowest point. Some students might also choose option B, which has the correct radius but an angular velocity that's too slow (π instead of 2π radians per second).
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+A point moves along a circle with a center at the origin and radius 4 units. Its position is given by the parametric equations x = 4cos(t) and y = 4sin(t), where t is measured in radians. At what time does the point have its maximum y-coordinate?
+A) π/2
+B) π
+C) 3π/2
+D) 2π
+Correct Answer: A
+
+Solution:
+The parametric equations describe a point moving along a circle with radius 4 units. The y-coordinate of the point is given by y = 4sin(t). The maximum value for sin(t) occurs at t = π/2, which corresponds to the topmost point on the circle.
+
+Explanation:
+The key is to recognize that the sine function reaches its maximum value of 1 when its argument is equal to π/2 radians.
+
+Common mistake note:
+A common mistake would be to choose option B or C, which represent points where the y-coordinate is zero (not the maximum). Some students might also forget that the circle has a radius of 4 units and think the point with the maximum y-coordinate is at t = π/4.
+------------------------------------------------------------------------------

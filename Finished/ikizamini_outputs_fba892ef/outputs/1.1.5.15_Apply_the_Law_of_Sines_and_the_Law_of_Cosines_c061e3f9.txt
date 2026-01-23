@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.5.15 Apply the Law of Sines and the Law of Cosines
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.5 Trigonometric Functions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+In triangle ABC, angle A measures 60°, side a is 8 units, and side b is 12 units. What is the length of side c?
+A) 4√3
+B) 6√3
+C) 8√3
+D) 10√3
+Correct Answer: B
+
+Solution:
+Using the Law of Cosines, we have: c² = a² + b² - 2ab cos(A). Plugging in the values given: c² = (8)² + (12)² - 2(8)(12)cos(60°). Simplify: c² = 64 + 144 - 96 = 208. Taking the square root of both sides, we get c = √208 ≈ 6√3.
+
+Explanation:
+The Law of Cosines is used to find side lengths in non-right triangles when two angles and a side are known or when three sides are known.
+
+Common mistake note:
+A common mistake would be using the Law of Sines instead of the Law of Cosines. The Law of Sines is for finding angles when两边和一个角are given, not side lengths.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+In triangle PQR, angle P measures 45°, side p is 10 units, and side q is 10√2 units. What is the measure of angle R?
+A) 30°
+B) 45°
+C) 60°
+D) 90°
+Correct Answer: C
+
+Solution:
+Using the Law of Sines, we have: θ / sin(θ) = p / sin(P). We want to find angle R, so let's call it θ. Plugging in the values given: R / sin(R) = 10 / sin(45°). Since sin(45°) = √2/2, we have: R / sin(R) = 10√2. Now solve for sin(R): sin(R) = R / (10√2). Since p = q, triangle PQR is an isosceles right triangle, so angle R must be the other acute angle. In a 45-45-90 triangle, both acute angles are 45°. Therefore, sin(45°) = √2/2. Thus, R = 45°.
+
+Explanation:
+The Law of Sines is used to find angles when两边和一个角are given. In this case, we can use it to verify that the triangle is a right-angled isosceles triangle.
+
+Common mistake note:
+A common mistake would be assuming that angle R is equal to 45° without considering the properties of an isosceles triangle.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+In triangle XYZ, side x is 15 units, side y is 20 units, and the angle between them, Z, measures 120°. What is the length of side z?
+A) 15√3
+B) 20√3
+C) 25√3
+D) 30√3
+Correct Answer: C
+
+Solution:
+Using the Law of Cosines, we have: z² = x² + y² - 2xy cos(Z). Plugging in the values given: z² = (15)² + (20)² - 2(15)(20)cos(120°). Simplify: z² = 225 + 400 - 600(-1/2) = 625 + 300 = 925. Taking the square root of both sides, we get z = √925 ≈ 25√3.
+
+Explanation:
+The Law of Cosines is used to find side lengths in non-right triangles when two angles and a side are known or when three sides are known.
+
+Common mistake note:
+A common mistake would be using the Law of Sines instead of the Law of Cosines. The Law of Sines is for finding angles when两边和一个角are given, not side lengths.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+In triangle ABC, angle A measures 75°, side a is 12 units, and side b is 9 units. What is the measure of angle C?
+A) 30°
+B) 45°
+C) 60°
+D) 75°
+Correct Answer: A
+
+Solution:
+Using the Law of Sines, we have: θ / sin(θ) = b / sin(B). We want to find angle C, so let's call it θ. Plugging in the values given: C / sin(C) = 9 / sin(75°). Since we don't have an exact value for sin(75°), we can use the sum of angles formula (sin(A + B) = sinAcosB + cosAsinB) to find sin(75°): sin(75°) = sin(30° + 45°) = sin(30°)cos(45°) + cos(30°)sin(45°). Simplify: sin(75°) = 1/2 × √2/2 + √3/2 × √2/2 = √6/4 + √2/4. Now solve for sin(C): C / sin(C) = 9 / (√6/4 + √2/4). Since the triangle has three angles, we know that A + B + C = 180°. Plugging in A and B: 75° + B + C = 180°, so C = 180° - 75° - B. We can substitute this into our equation: (180° - 75° - B) / sin(180° - 75° - B) = 9 / (√6/4 + √2/4). Since we know that sin(180° - θ) = sin(θ), the equation simplifies to: (105° - B) / sin(B) = 9 / (√6/4 + √2/4). Solving for B, we find that B ≈ 45°. Therefore, C = 180° - 75° - 45° = 60°.
+
+Explanation:
+The Law of Sines is used to find angles when两边和一个角are given. In this case, we can use it to verify the angle relationships within the triangle.
+
+Common mistake note:
+A common mistake would be assuming that angle C is equal to 75° without considering the sum of angles in a triangle.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+In triangle LMN, side l is 10 units, side m is 8 units, and the angle between them, N, measures 60°. What is the measure of angle M?
+A) 30°
+B) 45°
+C) 60°
+D) 90°
+Correct Answer: A
+
+Solution:
+Using the Law of Sines, we have: θ / sin(θ) = m / sin(M). We want to find angle M, so let's call it θ. Plugging in the values given: M / sin(M) = 8 / sin(60°). Since sin(60°) = √3/2, we have: M / sin(M) = 16√3. Now solve for sin(M): sin(M) = M / (16√3). Since l < m and N is between the two sides, triangle LMN must be an acute-angled triangle. Therefore, angle M must be less than 90°. In a triangle with angles A, B, and C adding up to 180°, if one angle (N) is 60°, the other acute angle (M) must be half of the remaining 120°, so M = 120° / 2 = 60°. However, since we're looking for an acute angle, M must be less than 60°. The only option that is less than 60° and consistent with our calculations is 30°.
+
+Explanation:
+The Law of Sines is used to find angles when两边和一个角are given. In this case, we can use it to verify the angle relationships within the triangle and consider the properties of an acute-angled triangle.
+
+Common mistake note:
+A common mistake would be assuming that angle M is equal to 60° without considering the sum of angles in a triangle or the fact that M must be acute.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+In triangle ABC, side a is 15 units, side b is 20 units, and the angle between them, C, measures 90°. What is the measure of angle A?
+A) 30°
+B) 45°
+C) 60°
+D) 90°
+Correct Answer: B
+
+Solution:
+Since triangle ABC has a right angle (C = 90°), it is a right-angled triangle. In a right-angled triangle, the other two angles must add up to 90°. Therefore, A + B = 90°. Given that side a is opposite angle A and side b is opposite angle B, we can use the properties of a right-angled triangle to determine the angles: if one leg (a) is half the length of the hypotenuse (b), then the corresponding angle (A) is 45°. Since side a is half of side b (15 units vs. 20 units), angle A must be 45°.
+
+Explanation:
+The properties of right-angled triangles are used to determine angles when one angle and two sides are given.
+
+Common mistake note:
+A common mistake would be using the Law of Sines or Law of Cosines, which are not necessary for a right-angled triangle. The properties of right triangles should be applied instead.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+In triangle XYZ, side x is 12 units, side y is 15 units, and the angle between them, Z, measures 135°. What is the measure of angle Y?
+A) 30°
+B) 45°
+C) 60°
+D) 90°
+Correct Answer: D
+
+Solution:
+Since triangle XYZ has an obtuse angle (Z = 135°), it is not a right-angled triangle. However, we can use the Law of Cosines to find one of the acute angles and then determine the third angle using the sum of angles in a triangle. Let's call the other acute angle A. Using the Law of Cosines: y² = x² + z² - 2xz cos(Z). We don't have the length of side z, but we can express it in terms of sides x and y using the Pythagorean theorem (since Z is obtuse, Y must be acute): z² = y² - x². Now plug this into our equation: y² = x² + (y² - x²) cos(135°). Simplify: y² = 2x²(-1/2) = x². Taking the square root of both sides, we get y = x = 12 units. Now that we know y and x are equal, triangle XYZ is an isosceles triangle with two equal acute angles (A and Y). Since A + B + C = 180° and Z = 135°, the sum of the other two angles must be 45°: A + Y = 45°. Since A and Y are equal, A = Y = 22.5°. Therefore, angle Y is 90° - 22.5° = 67.5°.
+
+Explanation:
+The Law of Cosines is used to find side lengths in non-right triangles when two angles and a side are known or when three sides are known. The properties of isosceles triangles are then applied to determine the acute angles.
+
+Common mistake note:
+A common mistake would be assuming that angle Y is equal to 45° without considering the obtuse angle in the triangle or the fact that it's an isosceles triangle.
+------------------------------------------------------------------------------

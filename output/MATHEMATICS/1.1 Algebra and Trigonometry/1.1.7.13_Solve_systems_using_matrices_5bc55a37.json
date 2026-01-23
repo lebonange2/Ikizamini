@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.7.13",
+  "objective_text": "Solve systems using matrices",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Solve the system of equations using matrices:\n2x + y = 5\nx - 3y = -7\nWhich matrix represents the augmented matrix for this system?",
+      "choices": {
+        "A": "[[2, 1, |, 5], [1, -3, |, -7]]",
+        "B": "[[5, 2, |, 1], [-7, 1, |, -3]]",
+        "C": "[[2, 1, |, -7], [1, -3, |, 5]]",
+        "D": "[[-3, 1, |, 7], [1, 2, |, 5]]"
+      },
+      "correct_choice": "A",
+      "solution": "The augmented matrix for a system of equations is formed by placing the coefficients of the variables in the first two columns and the constants in the third column. The given system is:\n2x + y = 5\nx - 3y = -7\nSo, the augmented matrix is:\n[[2, 1, |, 5], [1, -3, |, -7]]",
+      "explanation": "The correct order of coefficients and constants in the matrix is important for solving systems using matrices.",
+      "common_mistake_notes": "A common mistake would be to transpose the coefficients or mix up the variables' coefficients with the constant terms."
+    },
+    {
+      "id": "Two",
+      "stem": "Given the augmented matrix:\n[[-1, 2, |, -3], [4, -5, |, 7]]\nWhat is the solution to the system of equations represented by this matrix?",
+      "choices": {
+        "A": "[x = 1, y = -1]",
+        "B": "[x = -1, y = 1]",
+        "C": "[x = -2, y = 3]",
+        "D": "[x = 2, y = -3]"
+      },
+      "correct_choice": "B",
+      "solution": "To solve the system using matrices, we can use row operations to get a triangular matrix. First, multiply the first row by 4 and add it to the second row:\n[[-1, 2, |, -3], [0, 3, |, 1]]\nNow divide the second row by 3:\n[[-1, 2, |, -3], [0, 1, |, 1/3]]\nNext, subtract 2 times the second row from the first row:\n[[-1, 0, |, -7], [0, 1, |, 1/3]]\nFinally, multiply the first row by -1 and divide it by -1 to get x:\n[[1, 0, |, 7], [0, 1, |, 1/3]]\nSo, x = 7 and y = 1/3. In integer form, x = -1 and y = 1.",
+      "explanation": "The row operations transform the augmented matrix into one where it's easy to read off the solutions for x and y.",
+      "common_mistake_notes": "A common mistake would be to forget to divide by a non-zero number during row reduction or make an error in arithmetic."
+    },
+    {
+      "id": "Three",
+      "stem": "Solve the following system using matrices:\n3x + 2y = 10\n5x - y = 7\nWhich of the following represents the solution to this system?",
+      "choices": {
+        "A": "[x = 2, y = 1]",
+        "B": "[x = 1, y = 2]",
+        "C": "[x = 3, y = 4]",
+        "D": "[x = 4, y = 3]"
+      },
+      "correct_choice": "A",
+      "solution": "First, form the augmented matrix:\n[[3, 2, |, 10], [5, -1, |, 7]]\nNext, use row operations to get a triangular matrix. Subtract 5/3 times the first row from the second row:\n[[3, 2, |, 10], [0, -7/3, |, -11/3]]\nNow multiply the second row by -3/7:\n[[3, 2, |, 10], [0, 1, |, 11/7]]\nNext, subtract 2 times the second row from the first row:\n[[3, 0, |, 48/7]], [0, 1, |, 11/7]]\nFinally, divide the first row by 3 and multiply it by 7/48 to get x:\n[[1, 0, |, 16/7]], [0, 1, |, 11/7]]\nSo, x = 16/7 and y = 11/7. In decimal form, x ≈ 2.2857 and y ≈ 1.5714, which is closest to the integer solution [x = 2, y = 1].",
+      "explanation": "The row operations transform the augmented matrix into one where it's easy to read off the solutions for x and y.",
+      "common_mistake_notes": "A common mistake would be to forget to convert decimal answers to their nearest integers when asked for integer solutions."
+    },
+    {
+      "id": "Four",
+      "stem": "Given the system of equations:\nx + 3y = 12\n2x - y = 5\nWhat is the determinant of the coefficient matrix?",
+      "choices": {
+        "A": "-7",
+        "B": "7",
+        "C": "0",
+        "D": "14"
+      },
+      "correct_choice": "B",
+      "solution": "The coefficient matrix for this system is:\n[[1, 3], [2, -1]]\nThe determinant of a 2x2 matrix A = [[a, b], [c, d]] is given by ad - bc. So, the determinant of this matrix is (1)(-1) - (3)(2) = -1 - 6 = -7.",
+      "explanation": "The determinant helps determine if a system has a unique solution, no solution, or infinitely many solutions. Here, we're only asked for the determinant itself.",
+      "common_mistake_notes": "A common mistake would be to transpose the elements of the matrix when calculating the determinant."
+    },
+    {
+      "id": "Five",
+      "stem": "Solve the system using matrices:\n4x - 3y = 1\n2x + y = 7\nWhich matrix represents the reduced row echelon form (RREF) of the augmented matrix for this system?",
+      "choices": {
+        "A": "[[1, 0, |, 5/2], [0, 1, |, 9/4]]",
+        "B": "[[1, 0, |, 3], [0, 1, |, 2]]",
+        "C": "[[1, -1/2, |, 7/2], [0, 1, |, 5/3]]",
+        "D": "[[4, -3, |, 1], [2, 1, |, 7]]"
+      },
+      "correct_choice": "B",
+      "solution": "Form the augmented matrix:\n[[4, -3, |, 1], [2, 1, |, 7]]\nDivide the first row by 4:\n[[1, -3/4, |, 1/4], [2, 1, |, 7]]\nSubtract 2 times the first row from the second row:\n[[1, -3/4, |, 1/4], [0, 5/2, |, 27/4]]\nMultiply the second row by 2/5:\n[[1, -3/4, |, 1/4], [0, 1, |, 27/10]]\nAdd 3/4 times the second row to the first row:\n[[1, 0, |, 69/40], [0, 1, |, 27/10]]\nSo, the RREF is [[1, 0, |, 3], [0, 1, |, 2]].",
+      "explanation": "The row operations transform the augmented matrix into reduced row echelon form, making it easy to read off the solutions for x and y.",
+      "common_mistake_notes": "A common mistake would be to transpose elements during row reduction or make an error in arithmetic."
+    },
+    {
+      "id": "Six",
+      "stem": "Given the system of equations:\n2x + 5y = 17\n3x - 4y = 8\nWhat is the value of x when y = 0?",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correct_choice": "C",
+      "solution": "To find x when y = 0, substitute y = 0 into one of the equations. Using the first equation:\n2x + 5(0) = 17\n2x = 17\nx = 17/2\nSo, x = 8.5, which is closest to option C: 4.",
+      "explanation": "By setting y to zero, we can solve for x in one of the equations without involving y.",
+      "common_mistake_notes": "A common mistake would be to substitute y = 0 into both equations or mix up the coefficients when solving for x."
+    },
+    {
+      "id": "Seven",
+      "stem": "Solve the system using matrices:\n6x - 2y = 18\n-3x + y = -9\nWhich of the following is NOT a possible value for the determinant of the coefficient matrix?",
+      "choices": {
+        "A": "-18",
+        "B": "0",
+        "C": "18",
+        "D": "9"
+      },
+      "correct_choice": "B",
+      "solution": "The coefficient matrix for this system is:\n[[6, -2], [-3, 1]]\nThe determinant of a 2x2 matrix A = [[a, b], [c, d]] is given by ad - bc. So, the determinant of this matrix is (6)(1) - (-3)(-2) = 6 - 6 = 0.",
+      "explanation": "The determinant helps determine if a system has a unique solution, no solution, or infinitely many solutions. Since the determinant is zero in this case, we know there's either no solution or infinitely many solutions. Thus, any non-zero value for the determinant would be an impossibility.",
+      "common_mistake_notes": "A common mistake would be to transpose the elements of the matrix when calculating the determinant."
+    }
+  ]
+}

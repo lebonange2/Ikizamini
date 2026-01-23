@@ -1,0 +1,151 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.5.8 Apply sum and difference formulas
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.5 Trigonometric Functions
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 ([1]):
+Find the exact value of cos(75°) using the sum formula for cosine.
+A) sqrt(6)/4 + sqrt(2)/4
+B) sqrt(6)/4 - sqrt(2)/4
+C) sqrt(3)/2 + 1/2
+D) sqrt(3)/2 - 1/2
+Correct Answer: A
+
+Solution:
+cos(75°) = cos(30° + 45°) = cos(30°)cos(45°) - sin(30°)sin(45°)
+= (sqrt(3)/2)(sqrt(2)/2) - (1/2)(sqrt(2)/2)
+= sqrt(6)/4 - sqrt(2)/4
+
+Explanation:
+The sum formula for cosine is used to express the cosine of the sum of two angles as a combination of cosines and sines of those angles.
+
+Common mistake note:
+A common mistake would be to mix up the signs in the formula, resulting in choice B. Remember that when subtracting sines, there's a negative sign.
+------------------------------------------------------------------------------
+
+Problem 2 ([2]):
+Find the exact value of sin(105°) using the sum formula for sine.
+A) sqrt(6)/4 + sqrt(2)/4
+B) sqrt(6)/4 - sqrt(2)/4
+C) sqrt(3)/2 + 1/2
+D) sqrt(3)/2 - 1/2
+Correct Answer: A
+
+Solution:
+sin(105°) = sin(60° + 45°) = sin(60°)cos(45°) + cos(60°)sin(45°)
+= (sqrt(3)/2)(sqrt(2)/2) + (1/2)(sqrt(2)/2)
+= sqrt(6)/4 + sqrt(2)/4
+
+Explanation:
+The sum formula for sine is used to express the sine of the sum of two angles as a combination of sines and cosines of those angles.
+
+Common mistake note:
+A common mistake would be to mix up the signs in the formula, resulting in choice B. Remember that when adding sines, there's no negative sign.
+------------------------------------------------------------------------------
+
+Problem 3 ([3]):
+Find the exact value of cos(165°) using the difference formula for cosine.
+A) sqrt(6)/4 + sqrt(2)/4
+B) sqrt(6)/4 - sqrt(2)/4
+C) sqrt(3)/2 + 1/2
+D) -sqrt(3)/2 + 1/2
+Correct Answer: D
+
+Solution:
+cos(165°) = cos(180° - 15°) = -cos(15°)
+Using the sum formula for cosine, we have cos(15°) = cos(45° - 30°) = (sqrt(2)/2)(sqrt(3)/2) + (sqrt(2)/2)(1/2)
+= sqrt(6)/4 + sqrt(2)/4
+So, cos(165°) = -(sqrt(6)/4 + sqrt(2)/4)
+
+Explanation:
+The difference formula for cosine is used to express the cosine of the difference between two angles as a combination of cosines and sines of those angles.
+
+Common mistake note:
+A common mistake would be to forget the negative sign when applying the difference formula, resulting in choice A.
+------------------------------------------------------------------------------
+
+Problem 4 ([4]):
+Find the exact value of sin(195°) using the difference formula for sine.
+A) sqrt(6)/4 + sqrt(2)/4
+B) sqrt(6)/4 - sqrt(2)/4
+C) sqrt(3)/2 + 1/2
+D) -sqrt(3)/2 + 1/2
+Correct Answer: B
+
+Solution:
+sin(195°) = sin(180° + 15°) = -sin(15°)
+Using the sum formula for sine, we have sin(15°) = sin(45° - 30°) = (sqrt(3)/2)(sqrt(2)/2) - (1/2)(sqrt(2)/2)
+= sqrt(6)/4 - sqrt(2)/4
+So, sin(195°) = -(sqrt(6)/4 - sqrt(2)/4)
+
+Explanation:
+The difference formula for sine is used to express the sine of the difference between two angles as a combination of sines and cosines of those angles.
+
+Common mistake note:
+A common mistake would be to forget the negative sign when applying the difference formula, resulting in choice A.
+------------------------------------------------------------------------------
+
+Problem 5 ([5]):
+Find the exact value of sin(135°) using the sum formula for sine and a Pythagorean identity.
+A) sqrt(2)/2
+B) sqrt(3)/2
+C) 1/2
+D) -1/2
+Correct Answer: A
+
+Solution:
+sin(135°) = sin(90° + 45°) = cos(45°)
+Using the Pythagorean identity, we have sin^2(θ) + cos^2(θ) = 1.
+For θ = 45°, sin(45°) = cos(45°) = sqrt(2)/2
+So, sin(135°) = sqrt(2)/2
+
+Explanation:
+The sum formula for sine can be combined with a Pythagorean identity to find the exact value of an angle.
+
+Common mistake note:
+A common mistake would be to use the wrong Pythagorean identity or to mix up the angles, resulting in choice B.
+------------------------------------------------------------------------------
+
+Problem 6 ([6]):
+Find the exact value of cos(150°) using the difference formula for cosine and a Pythagorean identity.
+A) sqrt(3)/2
+B) 1/2
+C) -1/2
+D) -sqrt(3)/2
+Correct Answer: D
+
+Solution:
+cos(150°) = cos(180° - 30°) = -cos(30°)
+Using the Pythagorean identity, we have sin^2(θ) + cos^2(θ) = 1.
+For θ = 30°, cos(30°) = sqrt(3)/2
+So, cos(150°) = -sqrt(3)/2
+
+Explanation:
+The difference formula for cosine can be combined with a Pythagorean identity to find the exact value of an angle.
+
+Common mistake note:
+A common mistake would be to forget the negative sign when applying the difference formula or to mix up the angles, resulting in choice A.
+------------------------------------------------------------------------------
+
+Problem 7 ([7]):
+Find the exact value of sin(225°) using the sum formula for sine and a Pythagorean identity.
+A) sqrt(2)/2
+B) sqrt(3)/2
+C) 1/2
+D) -1/2
+Correct Answer: D
+
+Solution:
+sin(225°) = sin(180° + 45°) = -sin(45°)
+Using the Pythagorean identity, we have sin^2(θ) + cos^2(θ) = 1.
+For θ = 45°, sin(45°) = sqrt(2)/2
+So, sin(225°) = -sqrt(2)/2
+
+Explanation:
+The sum formula for sine can be combined with a Pythagorean identity to find the exact value of an angle.
+
+Common mistake note:
+A common mistake would be to forget the negative sign when applying the difference formula or to mix up the angles, resulting in choice A.
+------------------------------------------------------------------------------

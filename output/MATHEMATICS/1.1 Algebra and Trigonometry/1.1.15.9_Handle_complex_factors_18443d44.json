@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.1.15.9",
+  "objective_text": "Handle complex factors",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Inequality with Complex Factors",
+      "stem": "Solve for x: (2x + 3)(x - 4) > 0",
+      "choices": {
+        "A": "x > -1.5 or x < 4",
+        "B": "x > 4 or x < -3",
+        "C": "x > -3 or x < 1.5",
+        "D": "x > 1.5 or x < -4"
+      },
+      "correct_choice": "A",
+      "solution": "(2x + 3)(x - 4) > 0\n分解因式：\n(x + 1.5)(x - 4) > 0\n解不等式得：\nx > -1.5 或 x < 4",
+      "explanation": "要找到不等式的解，首先需要分解因式，然后确定每个因子的符号变化点，根据符号判断不等式的解集。",
+      "common_mistake_notes": "常见的错误是直接尝试求根，而不是先分解因式。这会导致无法正确识别不等式的解集。"
+    },
+    {
+      "id": "Fractional Equation with Complex Factors",
+      "stem": "Solve for x: \frac{(x + 2)(x - 3)}{(x - 1)(x + 4)} = 0",
+      "choices": {
+        "A": "x = -2 or x = 3",
+        "B": "x = 1 or x = -4",
+        "C": "x = -2 or x = -4",
+        "D": "No solution"
+      },
+      "correct_choice": "D",
+      "solution": "rac{(x + 2)(x - 3)}{(x - 1)(x + 4)} = 0\n令分子为零：\n(x + 2)(x - 3) = 0\n解得：x = -2 或 x = 3\n但分母不能为零，因此排除 x = -2 和 x = 3。\n无解",
+      "explanation": "解决分数方程时，不仅要找到分子的根，还要确保分母不为零。在这个例子中，x = -2 和 x = 3 都会导致分母为零，因此都不是有效解。",
+      "common_mistake_notes": "常见的错误是只考虑分子为零的情况，而忽视了分母不能为零的要求。"
+    },
+    {
+      "id": "Quadratic Inequality with Complex Factors",
+      "stem": "Solve for x: (x - 1)(2x + 3) < 0",
+      "choices": {
+        "A": "x > 1 or x < -1.5",
+        "B": "x < 1 or x > -1.5",
+        "C": "-1.5 < x < 1",
+        "D": "No solution"
+      },
+      "correct_choice": "C",
+      "solution": "(x - 1)(2x + 3) < 0\n分解因式：\n(2x + 3)(x - 1) < 0\n解不等式得：-1.5 < x < 1",
+      "explanation": "首先分解因式，然后确定每个因子的符号变化点，根据符号判断不等式的解集。在这个例子中，两个因子的符号在 x = -1.5 和 x = 1 处改变。",
+      "common_mistake_notes": "常见的错误是误判了因子的符号，导致选择错误的解集范围。"
+    },
+    {
+      "id": "System of Equations with Complex Factors",
+      "stem": "Solve the system of equations: \n(x + 2)(y - 3) = 5\n(x - 1)(y + 4) = 7",
+      "choices": {
+        "A": "x = 2, y = 0",
+        "B": "x = -1, y = 2",
+        "C": "x = 1, y = -1",
+        "D": "x = -2, y = 3"
+      },
+      "correct_choice": "C",
+      "solution": "(x + 2)(y - 3) = 5\n(x - 1)(y + 4) = 7\n分别解得：\nx = 1, y = -1",
+      "explanation": "先将方程组中的每个方程展开，然后用代入法或消元法求解。在这个例子中，可以使用代入法来找到 x 和 y 的值。",
+      "common_mistake_notes": "常见的错误是误操作导致计算错误，或者在解方程时没有注意到因式结构。"
+    },
+    {
+      "id": "Complex Factor in a Limit",
+      "stem": "Find the limit as x approaches 0: \nlim (x → 0) \frac{(x + 1)^2(x - 2)}{x(x + 3)}",
+      "choices": {
+        "A": "undefined",
+        "B": "0",
+        "C": "1",
+        "D": "-2"
+      },
+      "correct_choice": "C",
+      "solution": "lim (x → 0) \frac{(x + 1)^2(x - 2)}{x(x + 3)}\n先简化分子和分母：\nlim (x → 0) \frac{x^2 + 2x + 1}{x + 3}\n将 x = 0 代入简化后的表达式：\n1 / 3",
+      "explanation": "In calculating the limit, first try to simplify the expression and then directly substitute x's value. In this example, both the numerator and denominator have common factors that can be simplified.",
+      "common_mistake_notes": "Common mistakes include not correctly simplifying the expression or not simplifying before substituting x = 0."
+    },
+    {
+      "id": "Complex Factor in a Function",
+      "stem": "Find the domain of the function: f(x) = \frac{1}{(x + 2)(x - 3)}",
+      "choices": {
+        "A": "All real numbers",
+        "B": "x ≠ -2, x ≠ 3",
+        "C": "x < -2 or x > 3",
+        "D": "x > -2 and x < 3"
+      },
+      "correct_choice": "B",
+      "solution": "f(x) = \frac{1}{(x + 2)(x - 3)}\nThe denominator cannot be zero, so: x ≠ -2, x ≠ 3",
+      "explanation": "The domain of the function is all x values that do not make the denominator zero. In this example, there are two factors, each of which restricts the x value.",
+      "common_mistake_notes": "Common mistakes include considering only one factor's restriction and ignoring the other factor's impact."
+    },
+    {
+      "id": "Complex Factor in a Complex Number",
+      "stem": "Find the conjugate of the complex number: z = (1 + 2i)(3 - 4i)",
+      "choices": {
+        "A": "(1 + 2i)(3 + 4i)",
+        "B": "(1 - 2i)(3 - 4i)",
+        "C": "(1 - 2i)(3 + 4i)",
+        "D": "(1 + 2i)(-3 + 4i)"
+      },
+      "correct_choice": "C",
+      "solution": "z = (1 + 2i)(3 - 4i)\nExpand and find the conjugate:\nz = 5 - 2i\nThe conjugate is: (1 - 2i)(3 + 4i)",
+      "explanation": "To find the conjugate of a complex number, negate the imaginary part. In this example, first expand the expression and then perform the conjugation operation.",
+      "common_mistake_notes": "Common mistakes include calculation errors or not following the rules for conjugating complex numbers."
+    }
+  ]
+}

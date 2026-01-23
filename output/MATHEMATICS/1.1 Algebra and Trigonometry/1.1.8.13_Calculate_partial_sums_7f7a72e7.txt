@@ -1,0 +1,133 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.8.13 Calculate partial sums
+==============================================================================
+Difficulty profile: easy→moderate mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Calculate the partial sum of the first 5 terms of the arithmetic series given by: a_n = 3n - 2.
+A) 35
+B) 40
+C) 25
+D) 30
+Correct Answer: A
+
+Solution:
+The series is given by a_n = 3n - 2. The first five terms are: 1, 4, 7, 10, 13.
+The partial sum S_5 = 1 + 4 + 7 + 10 + 13 = 35.
+
+Explanation:
+Calculate each term and sum them to find the partial sum of the series.
+
+Common mistake note:
+A common mistake is to miscalculate one or more terms, leading to an incorrect sum.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Find the sum of the first 4 terms of the geometric series where a = 2 and r = 3.
+A) 80
+B) 98
+C) 124
+D) 24
+Correct Answer: A
+
+Solution:
+The first term a_1 = 2, a_2 = 2*3 = 6, a_3 = 6*3 = 18, a_4 = 18*3 = 54.
+Sum = 2 + 6 + 18 + 54 = 80.
+
+Explanation:
+Each term is obtained by multiplying the previous term by the common ratio r.
+
+Common mistake note:
+Students may forget to multiply by the right number of terms, mistakenly multiplying fewer or more times.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Calculate the partial sum S_7 of the arithmetic series where a_1 = 5 and d = 2.
+A) 56
+B) 77
+C) 49
+D) 63
+Correct Answer: D
+
+Solution:
+The series has a_1 = 5 and d = 2, so terms are 5, 7, 9, 11, 13, 15, 17.
+S_7 = (7/2)(5 + 17) = 63.
+
+Explanation:
+Use the formula for the sum of an arithmetic series: S_n = n/2 * (2a + (n-1)d).
+
+Common mistake note:
+A common mistake is to miscalculate the nth term, leading to an incorrect sum.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Find the sum of the first 6 terms of the sequence defined recursively by a_1 = 3, a_n = a_{n-1} + 4.
+A) 78
+B) 90
+C) 81
+D) 87
+Correct Answer: A
+
+Solution:
+Terms are 3, 7, 11, 15, 19, 23. Sum = 3 + 7 + 11 + 15 + 19 + 23 = 78.
+
+Explanation:
+Find each term using the recursive formula and then sum them.
+
+Common mistake note:
+Students may misapply the recurrence relation, giving incorrect terms.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+For the series defined by a_n = 2^n, find the partial sum of the first 3 terms.
+A) 15
+B) 14
+C) 12
+D) 8
+Correct Answer: B
+
+Solution:
+a_1 = 2, a_2 = 4, a_3 = 8. Sum = 2 + 4 + 8 = 14.
+
+Explanation:
+List and add up the first 3 terms of the series.
+
+Common mistake note:
+Students may calculate an additional term, leading them to an incorrect total sum.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Calculate the partial sum of the series where the nth term is given by \( a_n = n^2 + n \) for n = 1 to 4.
+A) 35
+B) 30
+C) 50
+D) 40
+Correct Answer: D
+
+Solution:
+Terms are \( n(n+1) = 2, 6, 12, 20 \). Sum = 2 + 6 + 12 + 20 = 40.
+
+Explanation:
+Compute each term and then calculate the total sum.
+
+Common mistake note:
+Miscomputing individual terms by mishandling the functional expression can lead to the wrong sum.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Find the sum of the first 3 terms of a series where each term is i times its position \( a_i = 3i \).
+A) 9
+B) 6
+C) 18
+D) 24
+Correct Answer: C
+
+Solution:
+Terms are 3(1), 3(2), 3(3). So, sum = 3 + 6 + 9 = 18.
+
+Explanation:
+Multiply the index by 3 for each term, then sum the terms.
+
+Common mistake note:
+Multiplying the term incorrectly by not maintaining index integrity often results in wrong sums.
+------------------------------------------------------------------------------

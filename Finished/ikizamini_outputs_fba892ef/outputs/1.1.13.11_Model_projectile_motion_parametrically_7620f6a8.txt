@@ -1,0 +1,147 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.1.13.11 Model projectile motion parametrically
+==============================================================================
+Context: 1.1 Algebra and Trigonometry > 1.1.13 Parametric Equations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (InitalVelocityAndAngle):
+A ball is thrown with an initial velocity of 20 m/s at a 45-degree angle from the ground. What is the horizontal distance (in meters) it travels before hitting the ground?
+A) 10
+distance = (initial velocity x time) x cos(angle)
+B) 20
+distance = (initial velocity x time) x sin(angle)
+C) 28.3
+distance = (initial velocity x time)^2 / (2 x gravity)
+D) 40
+distance = (initial velocity x time) x tan(angle)
+Correct Answer: C
+
+Solution:
+The horizontal distance traveled by a projectile can be calculated using the formula: distance = initial_velocity * time * cos(angle). Given an initial velocity of 20 m/s and a 45-degree angle, we first need to find the time it takes for the ball to hit the ground. Since the vertical motion is independent of horizontal motion, we can use the equation for time in free fall: t = sqrt(2 * height / gravity). However, we don't have information about the height here. Instead, we can use the fact that at 45 degrees, the horizontal and vertical components of velocity are equal (v_x = v_y), so the time is also the same for both directions. The formula for range in projectile motion with no air resistance is: range = (initial_velocity^2 * sin(2*angle)) / gravity. Plugging in 45 degrees, we get range = (20^2 * sin(90)) / gravity. Since sin(90) = 1 and gravity ≈ 9.8 m/s^2, the range is approximately 28.3 meters.
+
+Explanation:
+This question tests understanding of projectile motion and the use of trigonometric functions to calculate horizontal distance. Common mistake: Using the wrong formula for distance or mixing up sine and cosine.
+
+Common mistake note:
+Common mistake: Mixing up sine (vertical component) with cosine (horizontal component). The correct formula uses cosine because we are interested in the horizontal distance, which is unaffected by gravity at a 45-degree angle.
+------------------------------------------------------------------------------
+
+Problem 2 (DifferentInitialVelocity):
+A projectile is launched from ground level with an initial velocity of 30 m/s at an angle of 60 degrees. Another projectile is launched with an initial velocity of 40 m/ s at the same angle. Which projectile will travel a greater horizontal distance before hitting the ground?
+A) The first projectile
+distance = (initial velocity x time) x cos(angle)
+B) The second projectile
+distance = (initial velocity x time) x cos(angle)
+C) Both projectiles will have the same horizontal distance
+D) Insufficient information given
+Correct Answer: B
+
+Solution:
+The horizontal distance traveled by a projectile is determined by its initial velocity and angle. Given that both projectiles are launched at the same angle, the one with the greater initial velocity will travel farther horizontally before hitting the ground. In this case, the second projectile has an initial velocity of 40 m/s, which is greater than the first projectile's 30 m/s.
+
+Explanation:
+This question tests understanding of how initial velocity affects horizontal distance in projectile motion. Common mistake: Not considering the effect of different initial velocities on range.
+
+Common mistake note:
+Common mistake: Assuming that the angle alone determines the horizontal distance, neglecting the role of initial velocity.
+------------------------------------------------------------------------------
+
+Problem 3 (AirResistance):
+A projectile is launched horizontally with an initial velocity of 25 m/s from a height of 10 meters. If air resistance is taken into account, which of the following statements is true about its motion?
+A) The horizontal distance will be greater than if there were no air resistance
+B) The time to reach the ground will be less than if there were no air resistance
+C) The vertical velocity at the highest point will be the same as if there were no air resistance
+D) The final velocity will have a smaller horizontal component than if there were no air resistance
+Correct Answer: D
+
+Solution:
+Air resistance affects the motion of a projectile by slowing it down in both horizontal and vertical directions. Since air resistance acts against the direction of motion, the horizontal distance traveled will be less than if there were no air resistance (A is incorrect). The time to reach the ground will also be greater due to the increased deceleration caused by air resistance (B is incorrect). At the highest point, the vertical velocity will momentarily be zero regardless of air resistance (C is incorrect). As air resistance reduces the horizontal component of velocity, the final velocity will have a smaller horizontal component than if there were no air resistance (D is correct).
+
+Explanation:
+This question tests understanding of how air resistance impacts projectile motion. Common mistake: Underestimating the effect of air resistance on horizontal and vertical components.
+
+Common mistake note:
+Common mistake: Assuming that air resistance only affects the vertical velocity, neglecting its impact on the horizontal component.
+------------------------------------------------------------------------------
+
+Problem 4 (DifferentAngle):
+A projectile is launched with an initial velocity of 15 m/s at a 30-degree angle. Another projectile is launched with the same initial velocity but at a 60-degree angle. Which projectile will have a greater maximum height?
+A) The first projectile
+distance = (initial velocity x time) x cos(angle)
+B) The second projectile
+distance = (initial velocity x time) x cos(angle)
+C) Both projectiles will reach the same maximum height
+D) Insufficient information given
+Correct Answer: B
+
+Solution:
+The maximum height of a projectile can be calculated using the formula: max_height = (initial_velocity^2 * sin^2(angle)) / (2 * gravity). Given that both projectiles have the same initial velocity, the one launched at a higher angle will reach a greater maximum height because the sine of 60 degrees is larger than the sine of 30 degrees. Therefore, the second projectile with a 60-degree angle will have a greater maximum height.
+
+Explanation:
+This question tests understanding of how launch angle affects the maximum height in projectile motion. Common mistake: Not considering the effect of different angles on max_height.
+
+Common mistake note:
+Common mistake: Assuming that initial velocity alone determines the maximum height, neglecting the role of the launch angle.
+------------------------------------------------------------------------------
+
+Problem 5 (ProjectileWithInitialHeight):
+A projectile is launched from an initial height of 5 meters with an initial velocity of 20 m/s at a 30-degree angle. How long (in seconds) will it take for the projectile to hit the ground?
+A) 1
+distance = (initial velocity x time) x cos(angle)
+B) 2
+distance = (initial velocity x time) x sin(angle)
+C) 3
+distance = (initial velocity x time)^2 / (2 x gravity)
+D) 4
+distance = (initial velocity x time) x tan(angle)
+Correct Answer: C
+
+Solution:
+To find the time it takes for the projectile to hit the ground, we need to consider both horizontal and vertical motion. The horizontal distance is given by: horizontal_distance = initial_velocity * time * cos(angle). Since there's no information about the horizontal distance in the question, we can focus on the vertical motion. Using the equation for time in free fall: t = sqrt(2 * (initial_height + max_height) / gravity), where max_height is the maximum height reached by the projectile. We need to calculate max_height first using the formula: max_height = (initial_velocity^2 * sin^2(angle)) / (2 * gravity). Plugging in values, we get max_height ≈ 4.33 meters. Now, we can find the total time as t = sqrt(2 * (5 + 4.33) / 9.8), which is approximately 1.7 seconds.
+
+Explanation:
+This question tests understanding of projectile motion with an initial height and combining horizontal and vertical components. Common mistake: Not accounting for the initial height when calculating time to hit the ground.
+
+Common mistake note:
+Common mistake: Assuming that only the launch angle and initial velocity affect the time to hit the ground, neglecting the initial height.
+------------------------------------------------------------------------------
+
+Problem 6 (NoGravity):
+A projectile is launched with an initial velocity of 10 m/s at a 45-degree angle in a hypothetical environment with no gravity. Which statement best describes its motion?
+A) The projectile will travel in a straight line horizontally forever
+B) The projectile will rise to a maximum height and then fall back to the ground
+C) The projectile will move in a parabolic path
+D) The projectile's motion cannot be determined without more information
+Correct Answer: A
+
+Solution:
+In an environment with no gravity, there would be no force acting against the vertical component of the projectile's velocity. As a result, the projectile would continue to move horizontally at a constant speed indefinitely, as if it were in free space.
+
+Explanation:
+This question tests understanding of how gravity affects projectile motion and what happens when it is removed. Common mistake: Assuming that projectiles always follow parabolic paths due to gravity.
+
+Common mistake note:
+Common mistake: Not considering the absence of gravity and assuming that a parabolic path would still be followed.
+------------------------------------------------------------------------------
+
+Problem 7 (MultipleLaunchAngles):
+A cannon fires three identical projectiles with an initial velocity of 50 m/s at angles of 30 degrees, 45 degrees, and 60 degrees. Which projectile will have the greatest range (horizontal distance traveled before hitting the ground)?
+A) The first projectile
+distance = (initial velocity x time) x cos(angle)
+B) The second projectile
+distance = (initial velocity x time) x cos(angle)
+C) The third projectile
+distance = (initial velocity x time) x cos(angle)
+D) Insufficient information given
+Correct Answer: B
+
+Solution:
+The range of a projectile can be calculated using the formula: range = (initial_velocity^2 * sin(2*angle)) / gravity. Comparing the ranges for angles 30, 45, and 60 degrees, we find that sin(2*45) is the largest value among them (sin(90) = 1). Therefore, the second projectile launched at a 45-degree angle will have the greatest range.
+
+Explanation:
+This question tests understanding of how launch angles affect range in projectile motion. Common mistake: Not recognizing that the sine function peaks at 90 degrees and assuming that a higher angle always results in greater range.
+
+Common mistake note:
+Common mistake: Assuming that launching at a higher angle will always result in a longer range, neglecting the relationship between sin(2*angle) and the maximum value of 1.
+------------------------------------------------------------------------------
