@@ -35,8 +35,10 @@ import random
 import zipfile
 import sys
 import unicodedata
+import math
 import threading
 import sqlite3
+from difflib import SequenceMatcher
 from datetime import datetime
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple
@@ -667,6 +669,104 @@ def call_ollama_json(
 # Quality checks
 # =============================================================================
 
+_STOPWORDS = {
+    "the", "a", "an", "and", "or", "to", "of", "in", "on", "for", "with", "by",
+    "is", "are", "was", "were", "be", "being", "been", "as", "at", "from",
+    "find", "solve", "compute", "determine", "evaluate", "simplify", "factor",
+    "given", "let", "if", "then", "which", "what",
+}
+
+
+def _normalize_text(s: str) -> str:
+    s = unicodedata.normalize("NFKC", str(s or ""))
+    s = s.lower()
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def _tokenize(s: str) -> set[str]:
+    s = _normalize_text(s)
+    toks = re.findall(r"[a-z0-9]+", s)
+    return {t for t in toks if len(t) >= 3 and t not in _STOPWORDS}
+
+
+def _jaccard(a: set[str], b: set[str]) -> float:
+    if not a and not b:
+        return 1.0
+    if not a or not b:
+        return 0.0
+    inter = len(a & b)
+    union = len(a | b)
+    return inter / union if union else 0.0
+
+
+def _seq_ratio(a: str, b: str) -> float:
+    return SequenceMatcher(None, _normalize_text(a), _normalize_text(b)).ratio()
+
+
+def _question_signature(q: Dict[str, Any]) -> str:
+    stem = str(q.get("stem", "")).strip()
+    ch = q.get("choices", {}) if isinstance(q.get("choices"), dict) else {}
+    choices = " | ".join([str(ch.get(k, "")).strip() for k in ["A", "B", "C", "D"]])
+    return f"{stem}\n{choices}"
+
+
+def _pairwise_distinctness_issues(qs: List[Dict[str, Any]]) -> List[str]:
+    """Flag near-duplicate questions using a 3σ rule + hard ceiling.
+
+    We compute pairwise similarity on stem and (stem+choices). If any pair is an
+    unusually high-similarity outlier (>= mean + 3*std) OR exceeds a hard ceiling,
+    we treat it as "not distinct" and force repair.
+    """
+    issues: List[str] = []
+    if len(qs) < 2:
+        return issues
+
+    pairs: List[tuple[int, int, float]] = []
+    scores: List[float] = []
+
+    for i in range(len(qs)):
+        for j in range(i + 1, len(qs)):
+            qi = qs[i]
+            qj = qs[j]
+
+            sig_i = _question_signature(qi)
+            sig_j = _question_signature(qj)
+
+            sim_stem = max(
+                _seq_ratio(qi.get("stem", ""), qj.get("stem", "")),
+                _jaccard(_tokenize(qi.get("stem", "")), _tokenize(qj.get("stem", ""))),
+            )
+            sim_sig = max(
+                _seq_ratio(sig_i, sig_j),
+                _jaccard(_tokenize(sig_i), _tokenize(sig_j)),
+            )
+
+            sim = max(sim_stem, sim_sig)
+            pairs.append((i, j, sim))
+            scores.append(sim)
+
+    if not scores:
+        return issues
+
+    mean = sum(scores) / len(scores)
+    var = sum((x - mean) ** 2 for x in scores) / len(scores)
+    std = math.sqrt(var)
+
+    hard_ceiling = 0.80
+    sigma_ceiling = mean + 3.0 * std
+    threshold = max(hard_ceiling, sigma_ceiling)
+
+    for i, j, sim in pairs:
+        if sim >= threshold:
+            issues.append(
+                f"Q{i+1} and Q{j+1} are too similar (similarity={sim:.2f}, threshold={threshold:.2f}). "
+                "Regenerate at least one so they test a different sub-skill/representation."
+            )
+
+    return issues
+
+
 def local_issues(candidate: Dict[str, Any]) -> List[str]:
     issues: List[str] = []
     qs = candidate.get("questions", [])
@@ -694,6 +794,10 @@ def local_issues(candidate: Dict[str, Any]) -> List[str]:
         for k in ["solution", "explanation", "common_mistake_notes"]:
             if not str(q.get(k, "")).strip():
                 issues.append(f"Q{i}: missing/empty field: {k}")
+
+    # Near-duplicate detection (3σ distinctness rule)
+    dict_qs = [q for q in qs if isinstance(q, dict)]
+    issues.extend(_pairwise_distinctness_issues(dict_qs))
     return issues
 
 
@@ -708,6 +812,11 @@ def worker_generate(base_url: str, model: str, objective_id: str, objective_text
 - text: {objective_text}
 
 Generate EXACTLY 7 distinct multiple-choice questions.
+
+Distinctness requirement (3σ rule):
+- No two questions may be "near-duplicates". Treat two questions as duplicates if they are very similar in
+  wording/structure OR only differ by numbers. Each question must assess a different sub-skill or representation
+  (e.g., factoring by GCF vs factoring trinomials vs factor theorem vs synthetic division, etc.).
 
 Return ONLY a JSON object with keys:
 objective_id, objective_text, difficulty_profile, questions

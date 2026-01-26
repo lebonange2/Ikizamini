@@ -13,7 +13,7 @@ Requirements:
   pip install openai jsonschema
 
 Usage:
-    python3 ikizamini_app.py --input Uru.txt --output ikizamini.txt --output-dir out_ikizamini
+    python3 ikizamini_app.py --input Uru.txt --output fixed_questions.txt --output-dir failed_fixed
 
 """
 
@@ -27,6 +27,8 @@ import random
 import re
 import sys
 import time
+import math
+from difflib import SequenceMatcher
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -417,6 +419,66 @@ def local_issues(candidate: Dict[str, Any]) -> List[str]:
     stems = [q.get("stem", "").strip() for q in qs if isinstance(q, dict)]
     if len(stems) != len(set(stems)):
         issues.append("Duplicate stems detected (exact match).")
+
+    # Near-duplicate detection (3σ + hard ceiling)
+    stopwords = {
+        "the", "a", "an", "and", "or", "to", "of", "in", "on", "for", "with", "by",
+        "is", "are", "was", "were", "be", "being", "been", "as", "at", "from",
+        "find", "solve", "compute", "determine", "evaluate", "simplify", "factor",
+        "given", "let", "if", "then", "which", "what",
+    }
+
+    def norm(s: str) -> str:
+        s = str(s or "").lower()
+        s = re.sub(r"\s+", " ", s).strip()
+        return s
+
+    def tok(s: str) -> set[str]:
+        ts = re.findall(r"[a-z0-9]+", norm(s))
+        return {t for t in ts if len(t) >= 3 and t not in stopwords}
+
+    def jacc(a: set[str], b: set[str]) -> float:
+        if not a and not b:
+            return 1.0
+        if not a or not b:
+            return 0.0
+        return len(a & b) / len(a | b)
+
+    def ratio(a: str, b: str) -> float:
+        return SequenceMatcher(None, norm(a), norm(b)).ratio()
+
+    def sig(q: Dict[str, Any]) -> str:
+        ch = q.get("choices", {}) if isinstance(q.get("choices"), dict) else {}
+        return f"{q.get('stem','')}\n" + " | ".join([str(ch.get(k, '')).strip() for k in ['A','B','C','D']])
+
+    dict_qs = [q for q in qs if isinstance(q, dict)]
+    scores: List[float] = []
+    pairs: List[tuple[int, int, float]] = []
+    for i in range(len(dict_qs)):
+        for j in range(i + 1, len(dict_qs)):
+            si = sig(dict_qs[i])
+            sj = sig(dict_qs[j])
+            sim = max(
+                ratio(dict_qs[i].get("stem", ""), dict_qs[j].get("stem", "")),
+                jacc(tok(dict_qs[i].get("stem", "")), tok(dict_qs[j].get("stem", ""))),
+                ratio(si, sj),
+                jacc(tok(si), tok(sj)),
+            )
+            scores.append(sim)
+            pairs.append((i, j, sim))
+
+    if scores:
+        mean = sum(scores) / len(scores)
+        var = sum((x - mean) ** 2 for x in scores) / len(scores)
+        std = math.sqrt(var)
+        threshold = max(0.80, mean + 3.0 * std)
+        for i, j, sim in pairs:
+            if sim >= threshold:
+                issues.append(
+                    f"Q{i+1} and Q{j+1} are too similar (similarity={sim:.2f}, threshold={threshold:.2f}). "
+                    "Regenerate at least one so it tests a different sub-skill/representation."
+                )
+
     for i, q in enumerate(qs, start=1):
         if not isinstance(q, dict):
             continue
