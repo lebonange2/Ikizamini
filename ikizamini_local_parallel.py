@@ -44,6 +44,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
 import requests
+import subprocess
 
 # Reuse generator + parsing/formatting from the UI module
 from ikizamini_local import (  # type: ignore
@@ -148,6 +149,54 @@ def ollama_smoke_check(base_url: str, model: str, timeout_s: int = 20) -> None:
         raise RuntimeError(f"Smoke check failed: unexpected JSON: {obj}")
 
 
+def is_ollama_ready(base_url: str, timeout_s: int = 5) -> bool:
+    try:
+        tags_url = base_url.rstrip("/") + "/api/tags"
+        r = requests.get(tags_url, timeout=timeout_s)
+        return r.status_code == 200
+    except Exception:
+        return False
+
+
+def wait_for_ollama(base_url: str, wait_s: int = 60) -> None:
+    deadline = time.time() + wait_s
+    while time.time() < deadline:
+        if is_ollama_ready(base_url, timeout_s=5):
+            return
+        time.sleep(1)
+    raise RuntimeError(f"Ollama did not become ready at {base_url} within {wait_s}s")
+
+
+def ensure_model_pulled(model: str) -> None:
+    """Best-effort: if model isn't present, pull it."""
+    try:
+        out = subprocess.check_output(["ollama", "list"], text=True)
+        if model in out:
+            return
+    except Exception:
+        # If ollama list fails, we still try pull.
+        pass
+
+    print(f"[MODEL] Pulling {model} ... (this can take a while)", flush=True)
+    subprocess.check_call(["ollama", "pull", model])
+
+
+def start_ollama_serve_if_needed(base_url: str, wait_s: int = 60) -> Optional[subprocess.Popen]:
+    """Start `ollama serve` if Ollama isn't responding. Returns the Popen if started."""
+    if is_ollama_ready(base_url):
+        return None
+
+    print("[OLLAMA] Not responding; starting `ollama serve` ...", flush=True)
+    # Run in background; inherit env so GPU is used automatically when available.
+    proc = subprocess.Popen(
+        ["ollama", "serve"],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    wait_for_ollama(base_url, wait_s=wait_s)
+    return proc
+
+
 def _safe_mkdir(p: str) -> None:
     os.makedirs(p, exist_ok=True)
 
@@ -165,6 +214,9 @@ def main() -> int:
     ap.add_argument("--max-retries", type=int, default=int(os.environ.get("IKIZAMINI_OLLAMA_RETRIES", "4")), help="Retries per Ollama call")
     ap.add_argument("--limit", type=int, default=0, help="Limit number of learning objectives (0 = all)")
     ap.add_argument("--smoke-check", action="store_true", help="Quick check that Ollama + model work, then exit.")
+    ap.add_argument("--start-ollama", action="store_true", help="If Ollama isn't responding, start `ollama serve`.")
+    ap.add_argument("--pull-model", action="store_true", help="If model isn't present locally, run `ollama pull`.")
+    ap.add_argument("--wait-ollama", type=int, default=60, help="Seconds to wait for Ollama to become ready (default: 60)")
     ap.add_argument(
         "--workers",
         type=int,
@@ -172,6 +224,18 @@ def main() -> int:
         help="Concurrent in-flight requests (threads, single process). Default: env IKIZAMINI_PARALLEL_WORKERS or 2",
     )
     args = ap.parse_args()
+
+    # Runpod tip: you can set RUNPOD_PORT for web apps; for this CLI runner,
+    # the important service is Ollama at --ollama-url (default localhost:11434).
+    if args.start_ollama:
+        _ = start_ollama_serve_if_needed(args.ollama_url, wait_s=args.wait_ollama)
+
+    if args.pull_model:
+        # Make sure Ollama is up before pulling.
+        wait_for_ollama(args.ollama_url, wait_s=args.wait_ollama)
+        ensure_model_pulled(args.worker_model)
+        if args.manager_model != args.worker_model:
+            ensure_model_pulled(args.manager_model)
 
     if args.smoke_check:
         print(f"[SMOKE] Checking Ollama at {args.ollama_url} with model {args.worker_model} ...", flush=True)
