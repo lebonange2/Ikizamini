@@ -4,8 +4,11 @@ ikizamini_local_parallel.py
 
 Parallel CLI runner for IKIZAMINI using Ollama (e.g. gemma3).
 
-It processes learning objectives in parallel to reduce wall-clock time and saves
-outputs under the folder:
+This version uses **single-process concurrency** (threads) to run multiple
+in-flight Ollama requests at once (better for GPU utilization than CPU
+multiprocessing overhead, since the heavy compute happens inside Ollama).
+
+Outputs are saved under the folder:
   Parallely_Processed/
 
 This script reuses the core generator/formatting logic from `ikizamini_local.py`.
@@ -16,8 +19,20 @@ Examples:
   python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3
 
 Notes:
-- Too much parallelism can overload Ollama/GPU VRAM. Start with 2–4 workers.
-- Outputs are written by the parent process to avoid file-write races.
+- Too much concurrency can overload Ollama/GPU VRAM. Start with 2–4.
+- Outputs are written by the main thread to avoid file-write races.
+
+How to run:
+  python3 ikizamini_local_parallel.py --input Uru.txt --workers 4
+  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3
+  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4
+  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10
+  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output
+  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434
+  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434 --max-rounds 6
+  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434 --max-rounds 6 --num-ctx 8192
+  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434 --max-rounds 6 --num-ctx 8192 --timeout-s 600
+  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434 --max-rounds 6 --num-ctx 8192 --timeout-s 600 --max-retries 4
 """
 
 from __future__ import annotations
@@ -26,7 +41,7 @@ import argparse
 import json
 import os
 import time
-from concurrent.futures import ProcessPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -123,7 +138,7 @@ def main() -> int:
         "--workers",
         type=int,
         default=int(os.environ.get("IKIZAMINI_PARALLEL_WORKERS", "2")),
-        help="Parallel worker processes (default: env IKIZAMINI_PARALLEL_WORKERS or 2)",
+        help="Concurrent in-flight requests (threads, single process). Default: env IKIZAMINI_PARALLEL_WORKERS or 2",
     )
     args = ap.parse_args()
 
@@ -147,10 +162,10 @@ def main() -> int:
     _safe_mkdir(args.output_dir)
 
     total = len(objectives)
-    print(f"[START] Objectives: {total} | workers={args.workers} | model={args.worker_model}/{args.manager_model}")
+    print(f"[START] Objectives: {total} | concurrency={args.workers} | model={args.worker_model}/{args.manager_model}")
     print(f"[OUT] {os.path.abspath(args.output_dir)}")
 
-    # Run in parallel
+    # Run concurrently (single-process threads)
     futures = []
     completed = 0
     ok_count = 0
@@ -165,7 +180,7 @@ def main() -> int:
     index_lines.append(f"Generated at (unix): {int(time.time())}")
     index_lines.append("")
 
-    with ProcessPoolExecutor(max_workers=max(1, args.workers)) as ex:
+    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as ex:
         for obj in objectives:
             futures.append(
                 ex.submit(
