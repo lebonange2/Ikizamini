@@ -38,6 +38,7 @@ import unicodedata
 import math
 import threading
 import sqlite3
+import socket
 from difflib import SequenceMatcher
 from datetime import datetime
 from dataclasses import dataclass, field
@@ -2217,9 +2218,31 @@ def startup() -> None:
     safe_print(f"[{_now_ts()}] IKIZAMINI data dir: {DATA_DIR}")
 
 
+def _is_port_free(host: str, port: int) -> bool:
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            s.bind((host, port))
+        return True
+    except OSError:
+        return False
+
+
+def _pick_free_port(host: str, preferred_ports: List[int]) -> int:
+    for p in preferred_ports:
+        if _is_port_free(host, p):
+            return p
+    raise RuntimeError(f"No free port found among: {preferred_ports}")
+
+
 if __name__ == "__main__":
     startup()
     host = os.environ.get("FLASK_HOST", "0.0.0.0")
-    port = int(os.environ.get("RUNPOD_PORT", os.environ.get("FLASK_PORT", "8000")))
+    port_env = os.environ.get("RUNPOD_PORT") or os.environ.get("FLASK_PORT")
+    if port_env:
+        port = int(port_env)
+    else:
+        # Avoid collisions on shared environments (e.g., port 8000 in use).
+        port = _pick_free_port(host, [8000, 8001, 5000, 5001, 8080, 8081])
     safe_print(f"[{_now_ts()}] Starting IKIZAMINI UI on {host}:{port} ...")
     app.run(host=host, port=port, debug=False, threaded=True)

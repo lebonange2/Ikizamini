@@ -23,16 +23,15 @@ Notes:
 - Outputs are written by the main thread to avoid file-write races.
 
 How to run:
-  python3 ikizamini_local_parallel.py --input Uru.txt --workers 4
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434 --max-rounds 6
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434 --max-rounds 6 --num-ctx 8192
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434 --max-rounds 6 --num-ctx 8192 --timeout-s 600
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4 --limit 10 --output-dir output --ollama-url http://localhost:11434 --max-rounds 6 --num-ctx 8192 --timeout-s 600 --max-retries 4
+    # Use gemma3 explicitly
+    python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4
+
+    # Limit objectives + custom output folder
+    python3 ikizamini_local_parallel.py --input Uru.txt --limit 10 --output-dir Parallely_Processed --workers 4
+
+    # Custom Ollama URL / context / timeout
+    python3 ikizamini_local_parallel.py --input Uru.txt --ollama-url http://localhost:11434 --num-ctx 8192 --timeout-s 600 --workers 4
+  
 """
 
 from __future__ import annotations
@@ -44,6 +43,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
+import requests
 
 # Reuse generator + parsing/formatting from the UI module
 from ikizamini_local import (  # type: ignore
@@ -88,6 +88,7 @@ def _process_one(
 ) -> Result:
     start = time.time()
     try:
+        print(f"[START-OBJ] {obj.objective_id} - {obj.objective_text}", flush=True)
         out = generate_for_objective_strict(
             base_url=base_url,
             worker_model=worker_model,
@@ -118,13 +119,42 @@ def _process_one(
         )
 
 
+def ollama_smoke_check(base_url: str, model: str, timeout_s: int = 20) -> None:
+    """Quick CPU/GPU-agnostic check that Ollama is reachable and model runs."""
+    tags_url = base_url.rstrip("/") + "/api/tags"
+    r = requests.get(tags_url, timeout=timeout_s)
+    r.raise_for_status()
+
+    chat_url = base_url.rstrip("/") + "/api/chat"
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": "Return only JSON: {\"ok\": true}"},
+            {"role": "user", "content": "Return only JSON: {\"ok\": true}"},
+        ],
+        "stream": False,
+        "format": "json",
+        "options": {"temperature": 0},
+    }
+    r2 = requests.post(chat_url, json=payload, timeout=(5, timeout_s))
+    r2.raise_for_status()
+    data = r2.json()
+    content = ((data.get("message") or {}) or {}).get("content", "").strip()
+    try:
+        obj = json.loads(content)
+    except Exception:
+        raise RuntimeError(f"Smoke check failed: model did not return JSON. Content preview: {content[:200]}")
+    if not isinstance(obj, dict) or obj.get("ok") is not True:
+        raise RuntimeError(f"Smoke check failed: unexpected JSON: {obj}")
+
+
 def _safe_mkdir(p: str) -> None:
     os.makedirs(p, exist_ok=True)
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Parallel IKIZAMINI runner (Ollama).")
-    ap.add_argument("--input", required=True, help="Path to objectives outline .txt (e.g. Uru.txt)")
+    ap.add_argument("--input", help="Path to objectives outline .txt (e.g. Uru.txt). Required unless --smoke-check.")
     ap.add_argument("--output-dir", default=DEFAULT_OUTPUT_DIR, help=f"Output directory (default: {DEFAULT_OUTPUT_DIR})")
     ap.add_argument("--ollama-url", default="http://localhost:11434", help="Ollama base URL")
     ap.add_argument("--worker-model", default="gemma3", help="Ollama worker model (default: gemma3)")
@@ -134,6 +164,7 @@ def main() -> int:
     ap.add_argument("--timeout-s", type=int, default=int(os.environ.get("IKIZAMINI_OLLAMA_TIMEOUT", "600")), help="Ollama request timeout seconds")
     ap.add_argument("--max-retries", type=int, default=int(os.environ.get("IKIZAMINI_OLLAMA_RETRIES", "4")), help="Retries per Ollama call")
     ap.add_argument("--limit", type=int, default=0, help="Limit number of learning objectives (0 = all)")
+    ap.add_argument("--smoke-check", action="store_true", help="Quick check that Ollama + model work, then exit.")
     ap.add_argument(
         "--workers",
         type=int,
@@ -141,6 +172,15 @@ def main() -> int:
         help="Concurrent in-flight requests (threads, single process). Default: env IKIZAMINI_PARALLEL_WORKERS or 2",
     )
     args = ap.parse_args()
+
+    if args.smoke_check:
+        print(f"[SMOKE] Checking Ollama at {args.ollama_url} with model {args.worker_model} ...", flush=True)
+        ollama_smoke_check(args.ollama_url, args.worker_model)
+        print("[SMOKE] OK", flush=True)
+        return 0
+
+    if not args.input:
+        ap.error("--input is required unless --smoke-check is provided.")
 
     with open(args.input, "r", encoding="utf-8", errors="replace") as f:
         content = f.read()
