@@ -129,6 +129,8 @@ IK_MAX_RETRIES="${IK_MAX_RETRIES:-4}"
 IK_PULL_MODEL="${IK_PULL_MODEL:-1}"
 IK_START_OLLAMA="${IK_START_OLLAMA:-1}"
 IK_WAIT_OLLAMA="${IK_WAIT_OLLAMA:-60}"
+IK_MULTI_GPU="${IK_MULTI_GPU:-1}"          # 1 to start one Ollama server per GPU and distribute work across them
+IK_OLLAMA_BASE_PORT="${IK_OLLAMA_BASE_PORT:-11434}"
 
 echo "=========================================="
 echo "IKIZAMINI Parallel Setup + Run"
@@ -164,20 +166,60 @@ if [ "$IK_START_OLLAMA" = "1" ]; then
 fi
 
 if [ "$IK_START_OLLAMA" = "1" ]; then
-  log_info "Ensuring Ollama is running ..."
-  # Start in background if not already responding (non-fatal if already running)
-  if ! curl -fsS "$IK_OLLAMA_URL/api/tags" >/dev/null 2>&1; then
-    ollama serve >/dev/null 2>&1 &
-    # Wait until ready (max IK_WAIT_OLLAMA seconds)
-    for i in $(seq 1 "$IK_WAIT_OLLAMA"); do
-      if curl -fsS "$IK_OLLAMA_URL/api/tags" >/dev/null 2>&1; then
-        break
+  # Multi-GPU: start one ollama server per GPU on consecutive ports and pin each to a GPU.
+  GPU_COUNT=1
+  if command -v nvidia-smi >/dev/null 2>&1; then
+    GPU_COUNT="$(nvidia-smi -L 2>/dev/null | wc -l | tr -d ' ')"
+    if [ -z "$GPU_COUNT" ] || [ "$GPU_COUNT" -lt 1 ]; then GPU_COUNT=1; fi
+  fi
+
+  if [ "$IK_MULTI_GPU" = "1" ] && [ "$GPU_COUNT" -gt 1 ]; then
+    log_info "Multi-GPU detected: $GPU_COUNT GPUs. Starting one Ollama server per GPU ..."
+    OLLAMA_URLS=()
+    for idx in $(seq 0 $((GPU_COUNT - 1))); do
+      PORT=$((IK_OLLAMA_BASE_PORT + idx))
+      URL="http://127.0.0.1:${PORT}"
+      OLLAMA_URLS+=("$URL")
+      if curl -fsS "${URL}/api/tags" >/dev/null 2>&1; then
+        continue
       fi
-      sleep 1
+      (CUDA_VISIBLE_DEVICES="$idx" OLLAMA_HOST="127.0.0.1:${PORT}" ollama serve >/dev/null 2>&1 &) || true
     done
+
+    # Wait for all to become ready
+    for URL in "${OLLAMA_URLS[@]}"; do
+      for i in $(seq 1 "$IK_WAIT_OLLAMA"); do
+        if curl -fsS "${URL}/api/tags" >/dev/null 2>&1; then
+          break
+        fi
+        sleep 1
+      done
+      if ! curl -fsS "${URL}/api/tags" >/dev/null 2>&1; then
+        log_err "Ollama did not become ready at ${URL} after ${IK_WAIT_OLLAMA}s"
+        exit 1
+      fi
+    done
+
+    export IKIZAMINI_OLLAMA_URLS="$(IFS=,; echo "${OLLAMA_URLS[*]}")"
+    log_ok "Multi-GPU Ollama endpoints: $IKIZAMINI_OLLAMA_URLS"
+    # UI field still shows a single URL; the runner will use IKIZAMINI_OLLAMA_URLS when enabled.
+    IK_OLLAMA_URL="${OLLAMA_URLS[0]}"
+  else
+    log_info "Ensuring Ollama is running ..."
+    # Start in background if not already responding (non-fatal if already running)
     if ! curl -fsS "$IK_OLLAMA_URL/api/tags" >/dev/null 2>&1; then
-      log_err "Ollama did not become ready at $IK_OLLAMA_URL after ${IK_WAIT_OLLAMA}s"
-      exit 1
+      ollama serve >/dev/null 2>&1 &
+      # Wait until ready (max IK_WAIT_OLLAMA seconds)
+      for i in $(seq 1 "$IK_WAIT_OLLAMA"); do
+        if curl -fsS "$IK_OLLAMA_URL/api/tags" >/dev/null 2>&1; then
+          break
+        fi
+        sleep 1
+      done
+      if ! curl -fsS "$IK_OLLAMA_URL/api/tags" >/dev/null 2>&1; then
+        log_err "Ollama did not become ready at $IK_OLLAMA_URL after ${IK_WAIT_OLLAMA}s"
+        exit 1
+      fi
     fi
   fi
 fi
@@ -195,6 +237,7 @@ export IKIZAMINI_OLLAMA_TIMEOUT="$IK_TIMEOUT_S"
 export IKIZAMINI_OLLAMA_RETRIES="$IK_MAX_RETRIES"
 export IKIZAMINI_DEFAULT_WORKER_MODEL="$IK_WORKER_MODEL"
 export IKIZAMINI_DEFAULT_MANAGER_MODEL="$IK_MANAGER_MODEL"
+export IKIZAMINI_DEFAULT_OLLAMA_URL="$IK_OLLAMA_URL"
 
 log_info "Starting IKIZAMINI Parallel UI ..."
 python3 -u ikizamini_local_parallel.py

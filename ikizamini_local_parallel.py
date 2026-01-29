@@ -162,6 +162,12 @@ def run_job(job_id: str, resume: bool = False) -> None:
 
             cfg = json.loads(job["config_json"])
             ollama_url = cfg["ollama_url"]
+            use_multi_gpu = bool(cfg.get("use_multi_gpu", False))
+            ollama_urls = [ollama_url]
+            if use_multi_gpu and os.environ.get("IKIZAMINI_OLLAMA_URLS"):
+                ollama_urls = [u.strip() for u in os.environ.get("IKIZAMINI_OLLAMA_URLS", "").split(",") if u.strip()]
+                if not ollama_urls:
+                    ollama_urls = [ollama_url]
             worker_model = cfg["worker_model"]
             manager_model = cfg["manager_model"]
             max_rounds = int(cfg["max_rounds"])
@@ -202,6 +208,9 @@ def run_job(job_id: str, resume: bool = False) -> None:
             _log(job_id, "============================================================")
             _log(job_id, "BACKGROUND GENERATION STARTED (PARALLEL)")
             _log(job_id, f"Ollama URL: {ollama_url}")
+            if use_multi_gpu and len(ollama_urls) > 1:
+                _log(job_id, f"Multi-GPU enabled: distributing across {len(ollama_urls)} Ollama endpoints")
+                _log(job_id, f"Ollama URLs: {', '.join(ollama_urls)}")
             _log(job_id, f"Worker model: {worker_model}")
             _log(job_id, f"Manager model: {manager_model}")
             _log(job_id, f"Max rounds: {max_rounds}  num_ctx: {num_ctx}")
@@ -291,13 +300,14 @@ def run_job(job_id: str, resume: bool = False) -> None:
                     i, obj = next(it)
                 except StopIteration:
                     return False
+                chosen_url = ollama_urls[(i - 1) % len(ollama_urls)]
                 fut = ex.submit(
                     _process_objective,
                     job_id,
                     obj,
                     i,
                     total,
-                    ollama_url,
+                    chosen_url,
                     worker_model,
                     manager_model,
                     max_rounds,

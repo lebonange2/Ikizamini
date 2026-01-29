@@ -1374,6 +1374,12 @@ def run_job(job_id: str, resume: bool = False) -> None:
 
         cfg = json.loads(job["config_json"])
         ollama_url = cfg["ollama_url"]
+        use_multi_gpu = bool(cfg.get("use_multi_gpu", False))
+        ollama_urls = [ollama_url]
+        if use_multi_gpu and os.environ.get("IKIZAMINI_OLLAMA_URLS"):
+            ollama_urls = [u.strip() for u in os.environ.get("IKIZAMINI_OLLAMA_URLS", "").split(",") if u.strip()]
+            if not ollama_urls:
+                ollama_urls = [ollama_url]
         worker_model = cfg["worker_model"]
         manager_model = cfg["manager_model"]
         max_rounds = int(cfg["max_rounds"])
@@ -1401,6 +1407,9 @@ def run_job(job_id: str, resume: bool = False) -> None:
         append_job_log(job_id, "============================================================")
         append_job_log(job_id, "BACKGROUND GENERATION STARTED")
         append_job_log(job_id, f"Ollama URL: {ollama_url}")
+        if use_multi_gpu and len(ollama_urls) > 1:
+            append_job_log(job_id, f"Multi-GPU enabled: distributing across {len(ollama_urls)} Ollama endpoints")
+            append_job_log(job_id, f"Ollama URLs: {', '.join(ollama_urls)}")
         append_job_log(job_id, f"Worker model: {worker_model}")
         append_job_log(job_id, f"Manager model: {manager_model}")
         append_job_log(job_id, f"Max rounds: {max_rounds}  num_ctx: {num_ctx}")
@@ -1478,8 +1487,9 @@ def run_job(job_id: str, resume: bool = False) -> None:
             err: Optional[str] = None
 
             try:
+                chosen_url = ollama_urls[(idx - 1) % len(ollama_urls)]
                 ik = generate_for_objective_strict(
-                    base_url=ollama_url,
+                    base_url=chosen_url,
                     worker_model=worker_model,
                     manager_model=manager_model,
                     objective_id=obj_id,
@@ -1909,6 +1919,16 @@ PAGE_HOME = """
               </div>
 
               <div class="field">
+                <label>Use all GPUs (multi-Ollama)</label>
+                <div class="small">
+                  <label style="display:flex; gap:10px; align-items:center; cursor:pointer;">
+                    <input type="checkbox" name="use_multi_gpu" value="1" {% if multi_gpu_available %}checked{% endif %} />
+                    Distribute objectives across all available GPUs (requires multi-Ollama endpoints)
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
                 <label>Worker model</label>
                 <input type="text" id="worker_model" name="worker_model" list="model_choices" value="{{ default_worker_model }}" />
               </div>
@@ -2259,6 +2279,7 @@ def home():
         default_ollama_url=DEFAULT_OLLAMA_URL,
         default_worker_model=DEFAULT_WORKER_MODEL,
         default_manager_model=DEFAULT_MANAGER_MODEL,
+        multi_gpu_available=bool(os.environ.get("IKIZAMINI_OLLAMA_URLS")),
         db_path=DB_PATH,
         data_dir=DATA_DIR,
         abs_data_dir=os.path.abspath(DATA_DIR),
@@ -2406,6 +2427,7 @@ def generate():
     ollama_url = request.form.get("ollama_url", DEFAULT_OLLAMA_URL).strip()
     worker_model = request.form.get("worker_model", DEFAULT_WORKER_MODEL).strip()
     manager_model = request.form.get("manager_model", DEFAULT_MANAGER_MODEL).strip()
+    use_multi_gpu = request.form.get("use_multi_gpu", "0") in ("1", "on", "true", "yes")
     max_rounds = int(request.form.get("max_rounds", "6"))
     num_ctx = int(request.form.get("num_ctx", "8192"))
     timeout_s = int(request.form.get("timeout_s", str(DEFAULT_TIMEOUT_S)))
@@ -2427,6 +2449,7 @@ def generate():
         "timeout_s": timeout_s,
         "max_retries": max_retries,
         "limit": limit,
+        "use_multi_gpu": bool(use_multi_gpu),
     }
 
     conn = db_connect()
