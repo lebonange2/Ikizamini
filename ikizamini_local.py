@@ -2317,6 +2317,7 @@ def _pick_free_port(host: str, preferred_ports: List[int]) -> int:
 
 
 if __name__ == "__main__":
+    os.environ.setdefault("IKIZAMINI_UI_TITLE", "Ikizamini Sequential Processor")
     startup()
     host = os.environ.get("FLASK_HOST", "0.0.0.0")
     port_env = os.environ.get("RUNPOD_PORT") or os.environ.get("FLASK_PORT")
