@@ -316,6 +316,7 @@ startup = base.startup
 
 
 if __name__ == "__main__":
+    os.environ.setdefault("IKIZAMINI_UI_TITLE", "IKIZAMINI Parallel Processor")
     startup()
     host = os.environ.get("FLASK_HOST", "0.0.0.0")
     port_env = os.environ.get("RUNPOD_PORT") or os.environ.get("FLASK_PORT")

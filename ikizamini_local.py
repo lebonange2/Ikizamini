@@ -1601,6 +1601,27 @@ a{color:inherit}
   justify-content:space-between;
   gap:12px;
 }
+.hdrLeft{display:flex; flex-direction:column; gap:4px; min-width:0;}
+.hdrRight{display:flex; align-items:center; gap:10px;}
+
+.collapseBtn{
+  appearance:none;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  color: rgba(255,255,255,.86);
+  border-radius: 10px;
+  width: 34px;
+  height: 34px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+  flex: 0 0 auto;
+}
+.collapseBtn:hover{ background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.22); }
+.card.collapsed .body{ display:none; }
+.card.collapsed .collapseBtn{ transform: rotate(-90deg); }
 .card header h2{
   margin:0;
   font-size:14px;
@@ -1771,7 +1792,7 @@ PAGE_HOME = """
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>IKIZAMINI · Durable Ollama UI</title>
+  <title>{{ ui_title }} · Durable Ollama UI</title>
   <style>{{ ui_css }}</style>
 </head>
 <body>
@@ -1779,7 +1800,7 @@ PAGE_HOME = """
   <div class="shell">
     <div class="topbar">
       <div class="brand">
-        <h1>IKIZAMINI</h1>
+        <h1>{{ ui_title }}</h1>
         <div class="sub">
           Durable Ollama generator. Outputs are written to disk and indexed in SQLite as the job runs,
           so you can recover and download partial results even after a crash.
@@ -1794,8 +1815,13 @@ PAGE_HOME = """
     <div class="grid">
       <div class="card">
         <header>
-          <h2>Start a new job</h2>
-          <div class="hint">Runs in the background. UI stays responsive.</div>
+          <div class="hdrLeft">
+            <h2>Start a new job</h2>
+            <div class="hint">Runs in the background. UI stays responsive.</div>
+          </div>
+          <div class="hdrRight">
+            <button class="collapseBtn" type="button" data-collapse aria-label="Collapse/expand">▾</button>
+          </div>
         </header>
         <div class="body">
           <form method="post" action="/generate" enctype="multipart/form-data">
@@ -1861,8 +1887,13 @@ PAGE_HOME = """
 
       <div class="card">
         <header>
-          <h2>Recent jobs</h2>
-          <div class="hint">Open a job to view live logs and downloads.</div>
+          <div class="hdrLeft">
+            <h2>Recent jobs</h2>
+            <div class="hint">Open a job to view live logs and downloads.</div>
+          </div>
+          <div class="hdrRight">
+            <button class="collapseBtn" type="button" data-collapse aria-label="Collapse/expand">▾</button>
+          </div>
         </header>
         <div class="body">
           {% if jobs|length == 0 %}
@@ -1901,6 +1932,21 @@ PAGE_HOME = """
 
   </div>
 </div>
+
+<script>
+  // Collapsible panels
+  (function () {
+    const btns = document.querySelectorAll("[data-collapse]");
+    btns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const card = btn.closest(".card");
+        if (!card) return;
+        card.classList.toggle("collapsed");
+      });
+    });
+  })();
+</script>
 </body>
 </html>
 """
@@ -1912,7 +1958,7 @@ PAGE_JOB = """
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>IKIZAMINI · Job {{ job_id }}</title>
+  <title>{{ ui_title }} · Job {{ job_id }}</title>
   <style>{{ ui_css }}</style>
 </head>
 <body>
@@ -1920,7 +1966,7 @@ PAGE_JOB = """
   <div class="shell">
     <div class="topbar">
       <div class="brand">
-        <h1>Job <span style="font-family:var(--mono); font-weight:700;">{{ job_id }}</span></h1>
+        <h1>{{ ui_title }} · <span style="font-family:var(--mono); font-weight:700;">{{ job_id }}</span></h1>
         <div class="sub">
           Live status updates, log tail, and downloads. Partial downloads work during execution.
         </div>
@@ -1934,8 +1980,13 @@ PAGE_JOB = """
     <div class="grid">
       <div class="card">
         <header>
-          <h2>Status</h2>
-          <div class="hint">Polls every 2 seconds.</div>
+          <div class="hdrLeft">
+            <h2>Status</h2>
+            <div class="hint">Polls every 2 seconds.</div>
+          </div>
+          <div class="hdrRight">
+            <button class="collapseBtn" type="button" data-collapse aria-label="Collapse/expand">▾</button>
+          </div>
         </header>
         <div class="body">
           <div class="kv" style="margin-bottom:10px;">
@@ -1965,8 +2016,13 @@ PAGE_JOB = """
 
       <div class="card">
         <header>
-          <h2>Failures</h2>
-          <div class="hint">Aggregated from DB.</div>
+          <div class="hdrLeft">
+            <h2>Failures</h2>
+            <div class="hint">Aggregated from DB.</div>
+          </div>
+          <div class="hdrRight">
+            <button class="collapseBtn" type="button" data-collapse aria-label="Collapse/expand">▾</button>
+          </div>
         </header>
         <div class="body">
           <pre id="failures">(none)</pre>
@@ -1975,8 +2031,13 @@ PAGE_JOB = """
 
       <div class="card" style="grid-column: 1 / -1;">
         <header>
-          <h2>Objectives (preview)</h2>
-          <div class="hint">First 30 objectives ordered by ID.</div>
+          <div class="hdrLeft">
+            <h2>Objectives (preview)</h2>
+            <div class="hint">First 30 objectives ordered by ID.</div>
+          </div>
+          <div class="hdrRight">
+            <button class="collapseBtn" type="button" data-collapse aria-label="Collapse/expand">▾</button>
+          </div>
         </header>
         <div class="body">
           <pre id="objectives">Loading…</pre>
@@ -1985,8 +2046,13 @@ PAGE_JOB = """
 
       <div class="card" style="grid-column: 1 / -1;">
         <header>
-          <h2>Live log (tail)</h2>
-          <div class="hint">Last ~200 lines from job.log.</div>
+          <div class="hdrLeft">
+            <h2>Live log (tail)</h2>
+            <div class="hint">Last ~200 lines from job.log.</div>
+          </div>
+          <div class="hdrRight">
+            <button class="collapseBtn" type="button" data-collapse aria-label="Collapse/expand">▾</button>
+          </div>
         </header>
         <div class="body">
           <pre id="logs">Loading…</pre>
@@ -1998,6 +2064,19 @@ PAGE_JOB = """
 </div>
 
 <script>
+  // Collapsible panels
+  (function () {
+    const btns = document.querySelectorAll("[data-collapse]");
+    btns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const card = btn.closest(".card");
+        if (!card) return;
+        card.classList.toggle("collapsed");
+      });
+    });
+  })();
+
   const jobId = "{{ job_id }}";
 
   async function poll() {
@@ -2052,6 +2131,7 @@ def home():
         PAGE_HOME,
         jobs=jobs,
         ui_css=UI_BASE_CSS,
+        ui_title=os.environ.get("IKIZAMINI_UI_TITLE", "IKIZAMINI"),
         db_path=DB_PATH,
         data_dir=DATA_DIR,
         abs_data_dir=os.path.abspath(DATA_DIR),
@@ -2072,6 +2152,7 @@ def job_view(job_id: str):
         PAGE_JOB,
         job_id=job_id,
         ui_css=UI_BASE_CSS,
+        ui_title=os.environ.get("IKIZAMINI_UI_TITLE", "IKIZAMINI"),
         db_path=DB_PATH,
         data_dir=DATA_DIR,
     )
