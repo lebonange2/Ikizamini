@@ -39,6 +39,7 @@ import math
 import threading
 import sqlite3
 import socket
+from urllib.parse import urlparse
 from difflib import SequenceMatcher
 from datetime import datetime
 from dataclasses import dataclass, field
@@ -66,6 +67,7 @@ DATA_DIR = os.environ.get("IKIZAMINI_DATA_DIR", "./ikizamini_data")
 DB_PATH = os.path.join(DATA_DIR, "ikizamini.db")
 JOBS_DIR = os.path.join(DATA_DIR, "jobs")
 
+DEFAULT_OLLAMA_URL = os.environ.get("IKIZAMINI_DEFAULT_OLLAMA_URL", "http://localhost:11434")
 DEFAULT_TIMEOUT_S = int(os.environ.get("IKIZAMINI_OLLAMA_TIMEOUT", "600"))  # long default
 DEFAULT_MAX_RETRIES = int(os.environ.get("IKIZAMINI_OLLAMA_RETRIES", "4"))
 HEARTBEAT_EVERY_SEC = 10
@@ -1903,17 +1905,17 @@ PAGE_HOME = """
 
               <div class="field">
                 <label>Ollama URL</label>
-                <input type="text" name="ollama_url" value="http://localhost:11434" />
+                <input type="text" id="ollama_url" name="ollama_url" value="{{ default_ollama_url }}" />
               </div>
 
               <div class="field">
                 <label>Worker model</label>
-                <input type="text" name="worker_model" value="{{ default_worker_model }}" />
+                <input type="text" id="worker_model" name="worker_model" list="model_choices" value="{{ default_worker_model }}" />
               </div>
 
               <div class="field">
                 <label>Manager model</label>
-                <input type="text" name="manager_model" value="{{ default_manager_model }}" />
+                <input type="text" id="manager_model" name="manager_model" list="model_choices" value="{{ default_manager_model }}" />
               </div>
 
               <div class="field">
@@ -1945,6 +1947,14 @@ PAGE_HOME = """
                 <label>Notes</label>
                 <input type="text" value="Downloads remain available while running (partial ok)." readonly />
               </div>
+            </div>
+
+            <datalist id="model_choices"></datalist>
+            <div class="kv" style="margin-top:10px; align-items:center;">
+              <div class="k">Models</div>
+              <div class="v" id="modelsStatus">Loading…</div>
+              <button class="btn" type="button" id="refreshModelsBtn">Refresh</button>
+              <div class="small">Tip: choose from the dropdown or type a custom model name.</div>
             </div>
 
             <div class="actions">
@@ -2015,6 +2025,43 @@ PAGE_HOME = """
         card.classList.toggle("collapsed");
       });
     });
+  })();
+
+  // Model dropdown population (Ollama /api/tags → datalist)
+  async function refreshModels() {
+    const statusEl = document.getElementById("modelsStatus");
+    const listEl = document.getElementById("model_choices");
+    const urlEl = document.getElementById("ollama_url");
+    if (!statusEl || !listEl || !urlEl) return;
+
+    const base = (urlEl.value || "").trim();
+    if (!base) {
+      statusEl.textContent = "Enter Ollama URL";
+      return;
+    }
+
+    statusEl.textContent = "Loading…";
+    try {
+      const res = await fetch(`/api/models?ollama_url=${encodeURIComponent(base)}`, { cache: "no-store" });
+      const data = await res.json();
+      const models = (data.models || []).slice().sort();
+      listEl.innerHTML = models.map((m) => `<option value="${m}"></option>`).join("");
+      if (data.error) {
+        statusEl.textContent = `Error: ${data.error}`;
+      } else {
+        statusEl.textContent = models.length ? `${models.length} models loaded` : "No models found";
+      }
+    } catch (e) {
+      statusEl.textContent = "Error loading models";
+    }
+  }
+
+  (function () {
+    const btn = document.getElementById("refreshModelsBtn");
+    const urlEl = document.getElementById("ollama_url");
+    if (btn) btn.addEventListener("click", refreshModels);
+    if (urlEl) urlEl.addEventListener("change", refreshModels);
+    refreshModels();
   })();
 </script>
 </body>
@@ -2209,6 +2256,7 @@ def home():
         jobs=jobs,
         ui_css=UI_BASE_CSS,
         ui_title=os.environ.get("IKIZAMINI_UI_TITLE", "IKIZAMINI"),
+        default_ollama_url=DEFAULT_OLLAMA_URL,
         default_worker_model=DEFAULT_WORKER_MODEL,
         default_manager_model=DEFAULT_MANAGER_MODEL,
         db_path=DB_PATH,
@@ -2299,6 +2347,54 @@ def api_job(job_id: str):
     })
 
 
+@app.get("/api/models")
+def api_models():
+    """Return model names from Ollama /api/tags for populating the UI dropdown."""
+    base_url = (request.args.get("ollama_url") or DEFAULT_OLLAMA_URL).strip()
+    if not base_url:
+        return jsonify({"models": [], "error": "missing_ollama_url"})
+
+    try:
+        u = urlparse(base_url)
+        if u.scheme not in ("http", "https"):
+            return jsonify({"models": [], "error": "invalid_url_scheme"})
+    except Exception:
+        return jsonify({"models": [], "error": "invalid_url"})
+
+    try:
+        url = base_url.rstrip("/") + "/api/tags"
+        r = requests.get(url, timeout=6)
+        r.raise_for_status()
+        data = r.json() or {}
+        models_raw = data.get("models") or []
+        names: List[str] = []
+        for m in models_raw:
+            if isinstance(m, dict) and m.get("name"):
+                names.append(str(m["name"]))
+            elif isinstance(m, str):
+                names.append(m)
+        # Ensure defaults appear even if /api/tags is empty
+        for d in (DEFAULT_WORKER_MODEL, DEFAULT_MANAGER_MODEL):
+            if d and d not in names:
+                names.append(d)
+        # uniq preserve order
+        seen = set()
+        out = []
+        for n in names:
+            if n in seen:
+                continue
+            seen.add(n)
+            out.append(n)
+        return jsonify({"models": out})
+    except Exception as e:
+        # still return defaults so dropdown is useful
+        defaults = []
+        for d in (DEFAULT_WORKER_MODEL, DEFAULT_MANAGER_MODEL):
+            if d and d not in defaults:
+                defaults.append(d)
+        return jsonify({"models": defaults, "error": str(e)})
+
+
 @app.post("/generate")
 def generate():
     up = request.files.get("input_file")
@@ -2307,7 +2403,7 @@ def generate():
 
     content = up.read().decode("utf-8", errors="replace")
 
-    ollama_url = request.form.get("ollama_url", "http://localhost:11434").strip()
+    ollama_url = request.form.get("ollama_url", DEFAULT_OLLAMA_URL).strip()
     worker_model = request.form.get("worker_model", DEFAULT_WORKER_MODEL).strip()
     manager_model = request.form.get("manager_model", DEFAULT_MANAGER_MODEL).strip()
     max_rounds = int(request.form.get("max_rounds", "6"))
