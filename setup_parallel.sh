@@ -118,8 +118,8 @@ install_ollama_if_needed() {
 }
 
 IK_OLLAMA_URL="${IK_OLLAMA_URL:-http://localhost:11434}"
-IK_WORKER_MODEL="${IK_WORKER_MODEL:-gemma3:latest}"
-IK_MANAGER_MODEL="${IK_MANAGER_MODEL:-gemma3:latest}"
+IK_WORKER_MODEL="${IK_WORKER_MODEL:-qwen:32b}"
+IK_MANAGER_MODEL="${IK_MANAGER_MODEL:-qwen:32b}"
 IK_WORKERS="${IK_WORKERS:-4}"
 IK_LIMIT="${IK_LIMIT:-0}"
 IK_MAX_ROUNDS="${IK_MAX_ROUNDS:-6}"
