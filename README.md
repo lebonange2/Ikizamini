@@ -7,7 +7,8 @@ This repo includes:
 - `ikizamini_local.py`: Flask UI that talks to **Ollama**
 - `ikizamini_app.py`: CLI version (OpenAI Responses API client)
 - `setup.sh`: Runpod-friendly setup (installs deps, installs Ollama, pulls Qwen model, starts UI)
-- `ikizamini_local_parallel.py`: parallel/concurrent CLI runner for Ollama (saves to `Parallely_Processed/`)
+- `ikizamini_local_parallel.py`: Flask UI (same UI as `ikizamini_local.py`) but jobs process objectives concurrently
+- `ikizamini_local_parallel_cli.py`: parallel/concurrent CLI runner for Ollama (saves to `Parallely_Processed/`)
 - `remove_json_files.py`: cleanup utility to remove `*.json` files from the output folder
 
 ## Quick start (Runpod / cloud)
@@ -53,7 +54,17 @@ python3 ikizamini_app.py \
   --output-dir "output/MATHEMATICS/1.1 Algebra and Trigonometry"
 ```
 
-## Running the parallel/concurrent CLI (Ollama) — `ikizamini_local_parallel.py`
+## Running the parallel UI (Ollama) — `ikizamini_local_parallel.py`
+
+This starts the same UI as `ikizamini_local.py`, but each job processes objectives concurrently.
+
+```bash
+source venv/bin/activate
+export IKIZAMINI_PARALLEL_WORKERS=4
+python3 ikizamini_local_parallel.py
+```
+
+## Running the parallel CLI (Ollama) — `ikizamini_local_parallel_cli.py`
 
 This runner processes learning objectives concurrently (single-process threads) while Ollama does the heavy work.
 
@@ -63,14 +74,14 @@ Checks that Ollama is reachable and the model can respond with JSON (no `--input
 
 ```bash
 source venv/bin/activate
-python3 ikizamini_local_parallel.py --smoke-check --ollama-url http://localhost:11434 --worker-model gemma2:2b
+python3 ikizamini_local_parallel_cli.py --smoke-check --ollama-url http://localhost:11434 --worker-model gemma2:2b
 ```
 
 ### Generate outputs
 
 ```bash
 source venv/bin/activate
-python3 ikizamini_local_parallel.py \
+python3 ikizamini_local_parallel_cli.py \
   --input Uru.txt \
   --ollama-url http://localhost:11434 \
   --worker-model gemma3:latest \

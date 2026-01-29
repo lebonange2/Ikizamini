@@ -2,337 +2,327 @@
 """
 ikizamini_local_parallel.py
 
-Parallel CLI runner for IKIZAMINI using Ollama (e.g. gemma3).
+IKIZAMINI Local Web UI (Flask) + Ollama (PARALLEL objective processing).
 
-This version uses **single-process concurrency** (threads) to run multiple
-in-flight Ollama requests at once (better for GPU utilization than CPU
-multiprocessing overhead, since the heavy compute happens inside Ollama).
+This file provides the SAME durable UI as `ikizamini_local.py` (same routes, same
+templates, same config fields, same defaults), but the background job runner
+processes learning objectives concurrently to reduce wall-clock time.
 
-Outputs are saved under the folder:
-  Parallely_Processed/
+How it works:
+- We import `ikizamini_local` and reuse its `app`, routes, DB schema, templates, etc.
+- We override the background `run_job()` implementation to process objectives in parallel.
 
-This script reuses the core generator/formatting logic from `ikizamini_local.py`.
+Tuning:
+- Set `IKIZAMINI_PARALLEL_WORKERS` to control objective concurrency per job (default: 4).
 
-Examples:
-  python3 ikizamini_local_parallel.py --input Uru.txt
-  python3 ikizamini_local_parallel.py --input Uru.txt --workers 4
-  python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3
-
-Notes:
-- Too much concurrency can overload Ollama/GPU VRAM. Start with 2–4.
-- Outputs are written by the main thread to avoid file-write races.
-
-How to run:
-    # Use gemma3 explicitly
-    python3 ikizamini_local_parallel.py --input Uru.txt --worker-model gemma3 --manager-model gemma3 --workers 4
-
-    # Limit objectives + custom output folder
-    python3 ikizamini_local_parallel.py --input Uru.txt --limit 10 --output-dir Parallely_Processed --workers 4
-
-    # Custom Ollama URL / context / timeout
-    python3 ikizamini_local_parallel.py --input Uru.txt --ollama-url http://localhost:11434 --num-ctx 8192 --timeout-s 600 --workers 4
-  
+Run:
+  python3 ikizamini_local_parallel.py
 """
 
 from __future__ import annotations
 
-import argparse
-import json
 import os
+import json
 import time
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
-import requests
-import subprocess
 
-# Reuse generator + parsing/formatting from the UI module
-from ikizamini_local import (  # type: ignore
-    parse_objectives,
-    collect_learning_objectives_with_paths,
-    generate_for_objective_strict,
-    objective_file_text,
-    unique_objective_filename,
-)
+import ikizamini_local as base  # reuse the full UI + persistence
 
 
-DEFAULT_OUTPUT_DIR = "Parallely_Processed"
+PARALLEL_WORKERS = int(os.environ.get("IKIZAMINI_PARALLEL_WORKERS", "4"))
+LOG_LOCK = threading.Lock()
 
 
-@dataclass(frozen=True)
-class Objective:
-    objective_id: str
-    objective_text: str
-    path: List[Tuple[str, str]]
+def _log(job_id: str, message: str) -> None:
+    # Avoid interleaving when many objectives finish at once.
+    with LOG_LOCK:
+        base.append_job_log(job_id, message)
 
 
-@dataclass(frozen=True)
-class Result:
-    objective_id: str
-    objective_text: str
-    path: List[Tuple[str, str]]
-    ok: bool
-    elapsed_s: float
-    data: Optional[Dict[str, Any]] = None
-    error: Optional[str] = None
+def _update_job_progress(job_id: str, failures: List[str]) -> None:
+    conn = base.db_connect()
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT COUNT(*) AS n FROM objectives WHERE job_id=? AND status IN ('done','failed')",
+        (job_id,),
+    )
+    done_count = cur.fetchone()["n"]
+    cur.execute(
+        "UPDATE jobs SET completed=?, failures_json=?, heartbeat_unix=? WHERE job_id=?",
+        (done_count, json.dumps(failures, ensure_ascii=False), int(time.time()), job_id),
+    )
+    conn.commit()
+    conn.close()
 
 
-def _process_one(
-    base_url: str,
+def _process_objective(
+    job_id: str,
+    obj: Dict[str, Any],
+    idx: int,
+    total: int,
+    ollama_url: str,
     worker_model: str,
     manager_model: str,
     max_rounds: int,
     num_ctx: int,
     timeout_s: int,
     max_retries: int,
-    obj: Objective,
-) -> Result:
+    failures: List[str],
+    failures_lock: threading.Lock,
+) -> None:
+    obj_id = obj["objective_id"]
+    obj_text = obj["objective_text"]
+    path = obj["path"]
+
+    _log(job_id, f"[{idx}/{total}] Processing: {obj_id} - {obj_text[:70]}...")
+
+    conn = base.db_connect()
+    conn.execute(
+        """
+        UPDATE objectives
+        SET status=?, started_at_unix=?, error_text=NULL
+        WHERE job_id=? AND objective_id=?
+        """,
+        ("running", int(time.time()), job_id, obj_id),
+    )
+    conn.commit()
+    conn.close()
+
     start = time.time()
+    ik: Optional[Dict[str, Any]] = None
+    err: Optional[str] = None
+
     try:
-        print(f"[START-OBJ] {obj.objective_id} - {obj.objective_text}", flush=True)
-        out = generate_for_objective_strict(
-            base_url=base_url,
+        ik = base.generate_for_objective_strict(
+            base_url=ollama_url,
             worker_model=worker_model,
             manager_model=manager_model,
-            objective_id=obj.objective_id,
-            objective_text=obj.objective_text,
+            objective_id=obj_id,
+            objective_text=obj_text,
             max_rounds=max_rounds,
             num_ctx=num_ctx,
             timeout_s=timeout_s,
             max_retries=max_retries,
         )
-        return Result(
-            objective_id=obj.objective_id,
-            objective_text=obj.objective_text,
-            path=obj.path,
-            ok=True,
-            elapsed_s=time.time() - start,
-            data=out,
-        )
+        base.validate_ikizamini(ik)
+        elapsed = time.time() - start
+        _log(job_id, f"  ✓ Success ({elapsed:.1f}s)")
     except Exception as e:
-        return Result(
-            objective_id=obj.objective_id,
-            objective_text=obj.objective_text,
-            path=obj.path,
-            ok=False,
-            elapsed_s=time.time() - start,
-            error=str(e),
-        )
+        elapsed = time.time() - start
+        err = str(e)
+        _log(job_id, f"  ✗ FAILED ({elapsed:.1f}s): {obj_id}: {err}")
+        with failures_lock:
+            failures.append(f"{obj_id}: {err}")
 
+    txt_path, json_path = base.write_output_files(job_id, obj_id, obj_text, path, ik, err)
 
-def ollama_smoke_check(base_url: str, model: str, timeout_s: int = 20) -> None:
-    """Quick CPU/GPU-agnostic check that Ollama is reachable and model runs."""
-    tags_url = base_url.rstrip("/") + "/api/tags"
-    r = requests.get(tags_url, timeout=timeout_s)
-    r.raise_for_status()
-
-    chat_url = base_url.rstrip("/") + "/api/chat"
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": "Return only JSON: {\"ok\": true}"},
-            {"role": "user", "content": "Return only JSON: {\"ok\": true}"},
-        ],
-        "stream": False,
-        "format": "json",
-        "options": {"temperature": 0},
-    }
-    r2 = requests.post(chat_url, json=payload, timeout=(5, timeout_s))
-    r2.raise_for_status()
-    data = r2.json()
-    content = ((data.get("message") or {}) or {}).get("content", "").strip()
-    try:
-        obj = json.loads(content)
-    except Exception:
-        raise RuntimeError(f"Smoke check failed: model did not return JSON. Content preview: {content[:200]}")
-    if not isinstance(obj, dict) or obj.get("ok") is not True:
-        raise RuntimeError(f"Smoke check failed: unexpected JSON: {obj}")
-
-
-def is_ollama_ready(base_url: str, timeout_s: int = 5) -> bool:
-    try:
-        tags_url = base_url.rstrip("/") + "/api/tags"
-        r = requests.get(tags_url, timeout=timeout_s)
-        return r.status_code == 200
-    except Exception:
-        return False
-
-
-def wait_for_ollama(base_url: str, wait_s: int = 60) -> None:
-    deadline = time.time() + wait_s
-    while time.time() < deadline:
-        if is_ollama_ready(base_url, timeout_s=5):
-            return
-        time.sleep(1)
-    raise RuntimeError(f"Ollama did not become ready at {base_url} within {wait_s}s")
-
-
-def ensure_model_pulled(model: str) -> None:
-    """Best-effort: if model isn't present, pull it."""
-    try:
-        out = subprocess.check_output(["ollama", "list"], text=True)
-        if model in out:
-            return
-    except Exception:
-        # If ollama list fails, we still try pull.
-        pass
-
-    print(f"[MODEL] Pulling {model} ... (this can take a while)", flush=True)
-    subprocess.check_call(["ollama", "pull", model])
-
-
-def start_ollama_serve_if_needed(base_url: str, wait_s: int = 60) -> Optional[subprocess.Popen]:
-    """Start `ollama serve` if Ollama isn't responding. Returns the Popen if started."""
-    if is_ollama_ready(base_url):
-        return None
-
-    print("[OLLAMA] Not responding; starting `ollama serve` ...", flush=True)
-    # Run in background; inherit env so GPU is used automatically when available.
-    proc = subprocess.Popen(
-        ["ollama", "serve"],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+    conn = base.db_connect()
+    conn.execute(
+        """
+        UPDATE objectives
+        SET status=?, finished_at_unix=?, error_text=?, output_txt_path=?, output_json_path=?
+        WHERE job_id=? AND objective_id=?
+        """,
+        (
+            "done" if ik is not None else "failed",
+            int(time.time()),
+            err,
+            txt_path,
+            json_path or None,
+            job_id,
+            obj_id,
+        ),
     )
-    wait_for_ollama(base_url, wait_s=wait_s)
-    return proc
+    conn.commit()
+    conn.close()
+
+    with failures_lock:
+        _update_job_progress(job_id, failures)
 
 
-def _safe_mkdir(p: str) -> None:
-    os.makedirs(p, exist_ok=True)
+def run_job(job_id: str, resume: bool = False) -> None:
+    """Parallel objective processing version of ikizamini_local.run_job()."""
+    with base.RUNNER_LOCK:
+        conn = base.db_connect()
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM jobs WHERE job_id=?", (job_id,))
+        job = cur.fetchone()
+        conn.close()
 
+        if not job:
+            return
 
-def main() -> int:
-    ap = argparse.ArgumentParser(description="Parallel IKIZAMINI runner (Ollama).")
-    ap.add_argument("--input", help="Path to objectives outline .txt (e.g. Uru.txt). Required unless --smoke-check.")
-    ap.add_argument("--output-dir", default=DEFAULT_OUTPUT_DIR, help=f"Output directory (default: {DEFAULT_OUTPUT_DIR})")
-    ap.add_argument("--ollama-url", default="http://localhost:11434", help="Ollama base URL")
-    ap.add_argument("--worker-model", default="gemma3", help="Ollama worker model (default: gemma3)")
-    ap.add_argument("--manager-model", default="gemma3", help="Ollama manager model (default: gemma3)")
-    ap.add_argument("--max-rounds", type=int, default=6, help="Max repair/review rounds per objective")
-    ap.add_argument("--num-ctx", type=int, default=8192, help="Ollama context size (num_ctx)")
-    ap.add_argument("--timeout-s", type=int, default=int(os.environ.get("IKIZAMINI_OLLAMA_TIMEOUT", "600")), help="Ollama request timeout seconds")
-    ap.add_argument("--max-retries", type=int, default=int(os.environ.get("IKIZAMINI_OLLAMA_RETRIES", "4")), help="Retries per Ollama call")
-    ap.add_argument("--limit", type=int, default=0, help="Limit number of learning objectives (0 = all)")
-    ap.add_argument("--smoke-check", action="store_true", help="Quick check that Ollama + model work, then exit.")
-    ap.add_argument("--start-ollama", action="store_true", help="If Ollama isn't responding, start `ollama serve`.")
-    ap.add_argument("--pull-model", action="store_true", help="If model isn't present locally, run `ollama pull`.")
-    ap.add_argument("--wait-ollama", type=int, default=60, help="Seconds to wait for Ollama to become ready (default: 60)")
-    ap.add_argument(
-        "--workers",
-        type=int,
-        default=int(os.environ.get("IKIZAMINI_PARALLEL_WORKERS", "2")),
-        help="Concurrent in-flight requests (threads, single process). Default: env IKIZAMINI_PARALLEL_WORKERS or 2",
-    )
-    args = ap.parse_args()
+        cfg = json.loads(job["config_json"])
+        ollama_url = cfg["ollama_url"]
+        worker_model = cfg["worker_model"]
+        manager_model = cfg["manager_model"]
+        max_rounds = int(cfg["max_rounds"])
+        num_ctx = int(cfg["num_ctx"])
+        limit = int(cfg.get("limit", 0))
+        timeout_s = int(cfg.get("timeout_s", base.DEFAULT_TIMEOUT_S))
+        max_retries = int(cfg.get("max_retries", base.DEFAULT_MAX_RETRIES))
 
-    # Runpod tip: you can set RUNPOD_PORT for web apps; for this CLI runner,
-    # the important service is Ollama at --ollama-url (default localhost:11434).
-    if args.start_ollama:
-        _ = start_ollama_serve_if_needed(args.ollama_url, wait_s=args.wait_ollama)
-
-    if args.pull_model:
-        # Make sure Ollama is up before pulling.
-        wait_for_ollama(args.ollama_url, wait_s=args.wait_ollama)
-        ensure_model_pulled(args.worker_model)
-        if args.manager_model != args.worker_model:
-            ensure_model_pulled(args.manager_model)
-
-    if args.smoke_check:
-        print(f"[SMOKE] Checking Ollama at {args.ollama_url} with model {args.worker_model} ...", flush=True)
-        ollama_smoke_check(args.ollama_url, args.worker_model)
-        print("[SMOKE] OK", flush=True)
-        return 0
-
-    if not args.input:
-        ap.error("--input is required unless --smoke-check is provided.")
-
-    with open(args.input, "r", encoding="utf-8", errors="replace") as f:
-        content = f.read()
-
-    roots = parse_objectives(content)
-    objs_raw = collect_learning_objectives_with_paths(roots)
-    if args.limit and args.limit > 0:
-        objs_raw = objs_raw[: args.limit]
-
-    objectives: List[Objective] = [
-        Objective(o["objective_id"], o["objective_text"], o["path"])
-        for o in objs_raw
-    ]
-
-    if not objectives:
-        print("[OK] No learning objectives found.")
-        return 0
-
-    _safe_mkdir(args.output_dir)
-
-    total = len(objectives)
-    print(f"[START] Objectives: {total} | concurrency={args.workers} | model={args.worker_model}/{args.manager_model}")
-    print(f"[OUT] {os.path.abspath(args.output_dir)}")
-
-    # Run concurrently (single-process threads)
-    futures = []
-    completed = 0
-    ok_count = 0
-    fail_count = 0
-
-    # We'll write files as results complete (parent process only)
-    index_lines: List[str] = []
-    index_lines.append("IKIZAMINI PARALLELY_PROCESSED INDEX (Ollama)")
-    index_lines.append(f"Ollama URL: {args.ollama_url}")
-    index_lines.append(f"Worker model: {args.worker_model}")
-    index_lines.append(f"Manager model: {args.manager_model}")
-    index_lines.append(f"Generated at (unix): {int(time.time())}")
-    index_lines.append("")
-
-    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as ex:
-        for obj in objectives:
-            futures.append(
-                ex.submit(
-                    _process_one,
-                    args.ollama_url,
-                    args.worker_model,
-                    args.manager_model,
-                    args.max_rounds,
-                    args.num_ctx,
-                    args.timeout_s,
-                    args.max_retries,
-                    obj,
-                )
+        input_path = job["input_path"]
+        if not input_path or not os.path.exists(input_path):
+            _log(job_id, "ERROR: input file missing; cannot start.")
+            conn = base.db_connect()
+            conn.execute(
+                "UPDATE jobs SET status=?, finished_at_unix=? WHERE job_id=?",
+                ("error", int(time.time()), job_id),
             )
+            conn.commit()
+            conn.close()
+            return
 
-        for fut in as_completed(futures):
-            res: Result = fut.result()
-            completed += 1
-            base = unique_objective_filename(res.objective_id, res.objective_text)
-            json_path = os.path.join(args.output_dir, f"{base}.json")
-            txt_path = os.path.join(args.output_dir, f"{base}.txt")
+        conn = base.db_connect()
+        conn.execute(
+            "UPDATE jobs SET status=?, started_at_unix=?, heartbeat_unix=? WHERE job_id=?",
+            ("running", job["started_at_unix"] or int(time.time()), int(time.time()), job_id),
+        )
+        conn.commit()
+        conn.close()
 
-            if res.ok and res.data is not None:
-                ok_count += 1
-                with open(json_path, "w", encoding="utf-8") as jf:
-                    json.dump(res.data, jf, ensure_ascii=False, indent=2)
-                txt = objective_file_text(res.path, res.objective_id, res.objective_text, res.data, None)
-                with open(txt_path, "w", encoding="utf-8") as tf:
-                    tf.write(txt)
-                index_lines.append(f"- {os.path.basename(txt_path)}")
-                print(f"[{completed}/{total}] OK   {res.objective_id} ({res.elapsed_s:.1f}s)")
-            else:
-                fail_count += 1
-                err = res.error or "Unknown error"
-                txt = objective_file_text(res.path, res.objective_id, res.objective_text, None, err)
-                with open(txt_path, "w", encoding="utf-8") as tf:
-                    tf.write(txt)
-                index_lines.append(f"- {os.path.basename(txt_path)}  (FAILED)")
-                print(f"[{completed}/{total}] FAIL {res.objective_id} ({res.elapsed_s:.1f}s): {err[:140]}")
+        _log(job_id, "============================================================")
+        _log(job_id, "BACKGROUND GENERATION STARTED (PARALLEL)")
+        _log(job_id, f"Ollama URL: {ollama_url}")
+        _log(job_id, f"Worker model: {worker_model}")
+        _log(job_id, f"Manager model: {manager_model}")
+        _log(job_id, f"Max rounds: {max_rounds}  num_ctx: {num_ctx}")
+        _log(job_id, f"Timeout: {timeout_s}s  Retries: {max_retries}")
+        _log(job_id, f"Objective concurrency: {PARALLEL_WORKERS}")
+        _log(job_id, "============================================================")
 
-    # Write index
-    with open(os.path.join(args.output_dir, "index.txt"), "w", encoding="utf-8") as f:
-        f.write("\n".join(index_lines).rstrip() + "\n")
+        with open(input_path, "r", encoding="utf-8", errors="replace") as f:
+            content = f.read()
 
-    print(f"[DONE] Success={ok_count} Failed={fail_count} Total={total}")
-    return 0 if fail_count == 0 else 1
+        roots = base.parse_objectives(content)
+        objectives = base.collect_learning_objectives_with_paths(roots)
+        if limit and limit > 0:
+            objectives = objectives[:limit]
+
+        # Ensure objective rows exist
+        conn = base.db_connect()
+        cur = conn.cursor()
+        for obj in objectives:
+            cur.execute(
+                """
+                INSERT OR IGNORE INTO objectives
+                (job_id, objective_id, objective_text, path_json, status)
+                VALUES (?, ?, ?, ?, ?)
+                """,
+                (
+                    job_id,
+                    obj["objective_id"],
+                    obj["objective_text"],
+                    json.dumps(obj["path"], ensure_ascii=False),
+                    "pending",
+                ),
+            )
+        conn.commit()
+        conn.close()
+
+        conn = base.db_connect()
+        conn.execute("UPDATE jobs SET requested=? WHERE job_id=?", (len(objectives), job_id))
+        conn.commit()
+        conn.close()
+
+        failures: List[str] = json.loads(job["failures_json"] or "[]")
+        failures_lock = threading.Lock()
+
+        # Filter objectives if resuming
+        to_run: List[Dict[str, Any]] = []
+        if resume:
+            conn = base.db_connect()
+            cur = conn.cursor()
+            for obj in objectives:
+                cur.execute(
+                    "SELECT status FROM objectives WHERE job_id=? AND objective_id=?",
+                    (job_id, obj["objective_id"]),
+                )
+                row = cur.fetchone()
+                if row and row["status"] in ("done", "failed"):
+                    continue
+                to_run.append(obj)
+            conn.close()
+        else:
+            to_run = list(objectives)
+
+        # Heartbeat thread
+        stop_hb = threading.Event()
+
+        def _hb_loop():
+            while not stop_hb.is_set():
+                base.update_job_heartbeat(job_id)
+                stop_hb.wait(base.HEARTBEAT_EVERY_SEC)
+
+        hb_thread = threading.Thread(target=_hb_loop, daemon=True)
+        hb_thread.start()
+
+        # Parallel objective execution
+        total = len(to_run)
+        with ThreadPoolExecutor(max_workers=max(1, PARALLEL_WORKERS)) as ex:
+            futures = []
+            for i, obj in enumerate(to_run, start=1):
+                futures.append(
+                    ex.submit(
+                        _process_objective,
+                        job_id,
+                        obj,
+                        i,
+                        total,
+                        ollama_url,
+                        worker_model,
+                        manager_model,
+                        max_rounds,
+                        num_ctx,
+                        timeout_s,
+                        max_retries,
+                        failures,
+                        failures_lock,
+                    )
+                )
+            # Ensure exceptions propagate into logs
+            for fut in as_completed(futures):
+                try:
+                    fut.result()
+                except Exception as e:
+                    _log(job_id, f"INTERNAL ERROR in worker thread: {e}")
+                    with failures_lock:
+                        failures.append(f"internal: {e}")
+
+        stop_hb.set()
+
+        conn = base.db_connect()
+        conn.execute(
+            "UPDATE jobs SET status=?, finished_at_unix=?, heartbeat_unix=? WHERE job_id=?",
+            ("done", int(time.time()), int(time.time()), job_id),
+        )
+        conn.commit()
+        conn.close()
+
+        _log(job_id, "============================================================")
+        _log(job_id, f"JOB COMPLETED: {job_id}  (outputs persisted to disk + DB)")
+        _log(job_id, "============================================================")
+
+
+# Override the base runner used by the existing UI routes.
+base.run_job = run_job  # type: ignore
+
+# Re-export app and startup so running this file behaves like ikizamini_local.py
+app = base.app
+startup = base.startup
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    startup()
+    host = os.environ.get("FLASK_HOST", "0.0.0.0")
+    port_env = os.environ.get("RUNPOD_PORT") or os.environ.get("FLASK_PORT")
+    if port_env:
+        port = int(port_env)
+    else:
+        port = base._pick_free_port(host, [8000, 8001, 5000, 5001, 8080, 8081])  # type: ignore
+    base.safe_print(f"[{base._now_ts()}] Starting IKIZAMINI UI (PARALLEL) on {host}:{port} ...")  # type: ignore
+    app.run(host=host, port=port, debug=False, threaded=True)
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # setup_parallel.sh
 #
-# Setup + run IKIZAMINI parallel runner (Ollama) in one command.
+# Setup + run IKIZAMINI parallel UI (Ollama) in one command.
 # - Creates/uses venv/
 # - Installs Python deps
 # - Optionally starts Ollama and pulls models
-# - Runs ikizamini_local_parallel.py
+# - Runs ikizamini_local_parallel.py (Flask UI with parallel objective processing)
 #
 # Defaults are Runpod-friendly (Ollama at localhost:11434, output to Parallely_Processed/).
 #
@@ -13,8 +13,7 @@
 #   ./setup_parallel.sh
 #
 # Optional environment variables:
-#   IK_INPUT="Uru.txt"
-#   IK_OUTPUT_DIR="Parallely_Processed"
+#   (UI runs; uploads happen in browser. These vars mainly tune models/timeouts.)
 #   IK_OLLAMA_URL="http://localhost:11434"
 #   IK_WORKER_MODEL="gemma3:latest"
 #   IK_MANAGER_MODEL="gemma3:latest"
@@ -118,8 +117,6 @@ install_ollama_if_needed() {
   log_ok "Ollama installed: $(ollama --version 2>/dev/null || echo installed)"
 }
 
-IK_INPUT="${IK_INPUT:-Uru.txt}"
-IK_OUTPUT_DIR="${IK_OUTPUT_DIR:-Parallely_Processed}"
 IK_OLLAMA_URL="${IK_OLLAMA_URL:-http://localhost:11434}"
 IK_WORKER_MODEL="${IK_WORKER_MODEL:-gemma3:latest}"
 IK_MANAGER_MODEL="${IK_MANAGER_MODEL:-gemma3:latest}"
@@ -140,7 +137,7 @@ echo "Input:       $IK_INPUT"
 echo "Output dir:  $IK_OUTPUT_DIR"
 echo "Ollama URL:  $IK_OLLAMA_URL"
 echo "Models:      worker=$IK_WORKER_MODEL manager=$IK_MANAGER_MODEL"
-echo "Concurrency: $IK_WORKERS"
+echo "Objective concurrency: $IK_WORKERS"
 echo ""
 
 if ! command -v python3 >/dev/null 2>&1; then
@@ -164,32 +161,31 @@ python -m pip install -q flask requests jsonschema openai
 
 START_FLAGS=()
 if [ "$IK_START_OLLAMA" = "1" ]; then
-  START_FLAGS+=(--start-ollama --wait-ollama "$IK_WAIT_OLLAMA")
+  # start Ollama server if needed
+  : # handled below
 fi
 
-PULL_FLAGS=()
+if [ "$IK_START_OLLAMA" = "1" ]; then
+  log_info "Ensuring Ollama is running ..."
+  # Start in background if not already responding (non-fatal if already running)
+  if ! curl -fsS "$IK_OLLAMA_URL/api/tags" >/dev/null 2>&1; then
+    ollama serve >/dev/null 2>&1 &
+    sleep 2
+  fi
+fi
+
 if [ "$IK_PULL_MODEL" = "1" ]; then
-  PULL_FLAGS+=(--pull-model)
+  log_info "Ensuring models are available (ollama pull if missing) ..."
+  ollama pull "$IK_WORKER_MODEL" >/dev/null
+  if [ "$IK_MANAGER_MODEL" != "$IK_WORKER_MODEL" ]; then
+    ollama pull "$IK_MANAGER_MODEL" >/dev/null
+  fi
 fi
 
-LIMIT_FLAGS=()
-if [ "${IK_LIMIT}" != "0" ]; then
-  LIMIT_FLAGS+=(--limit "$IK_LIMIT")
-fi
+export IKIZAMINI_PARALLEL_WORKERS="$IK_WORKERS"
+export IKIZAMINI_OLLAMA_TIMEOUT="$IK_TIMEOUT_S"
+export IKIZAMINI_OLLAMA_RETRIES="$IK_MAX_RETRIES"
 
-log_info "Starting parallel runner ..."
-python3 -u ikizamini_local_parallel.py \
-  --input "$IK_INPUT" \
-  --output-dir "$IK_OUTPUT_DIR" \
-  --ollama-url "$IK_OLLAMA_URL" \
-  --worker-model "$IK_WORKER_MODEL" \
-  --manager-model "$IK_MANAGER_MODEL" \
-  --workers "$IK_WORKERS" \
-  --max-rounds "$IK_MAX_ROUNDS" \
-  --num-ctx "$IK_NUM_CTX" \
-  --timeout-s "$IK_TIMEOUT_S" \
-  --max-retries "$IK_MAX_RETRIES" \
-  "${START_FLAGS[@]}" \
-  "${PULL_FLAGS[@]}" \
-  "${LIMIT_FLAGS[@]}"
+log_info "Starting IKIZAMINI Parallel UI ..."
+python3 -u ikizamini_local_parallel.py
 
