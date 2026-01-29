@@ -1,0 +1,138 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.3.14 Differentiate absolute value functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.3 Derivatives - Advanced Rules
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One- sided absolute value derivative):
+Find the derivative of the function f(x) = |x - 2| at x = 3.
+A) -1
+B) 0
+C) 1
+D) undefined
+Correct Answer: C
+
+Solution:
+The absolute value function has a kink at x = 2, so we need to consider the left and right-hand derivatives. For x < 2, f(x) = -x + 2, and for x > 2, f(x) = x - 2. At x = 3, which is on the right side of the kink, f'(x) = 1.
+
+Explanation:
+The derivative of an absolute value function changes at the point where it transitions from negative to positive. Since we're looking at x = 3, which is to the right of the transition point (x = 2), the derivative is positive.
+
+Common mistake note:
+A common mistake would be to choose A (-1) or B (0), assuming that the absolute value function has a constant slope. However, it's important to recognize that the slope changes at x = 2.
+------------------------------------------------------------------------------
+
+Problem 2 (Two-piece absolute value derivative):
+Find the derivative of the piecewise function f(x) = 
+|x| for x < 0
+-3x + 4 for x ≥ 0
+at x = 0.
+A) -1
+B) 0
+C) undefined
+D) 3
+Correct Answer: C
+
+Solution:
+At x = 0, the function changes from f(x) = |x| to f(x) = -3x + 4. Since the left- and right-hand limits of the derivative do not equal (lim x→0^- f'(x) = undefined and lim x→0^+ f'(x) = -3), the derivative is undefined at x = 0.
+
+Explanation:
+The absolute value function has a sharp corner at x = 0, which makes the derivative undefined at that point. The piecewise nature of the function does not change this fact.
+
+Common mistake note:
+A common mistake would be to choose A (-1) or D (3), assuming that the derivative is continuous across the entire domain. However, the sharp corner at x = 0 causes the derivative to be undefined.
+------------------------------------------------------------------------------
+
+Problem 3 (Absolute value with constant):
+Find the derivative of f(x) = 2|x|.
+A) 2
+B) 4x
+C) 2sgn(x)
+D) undefined
+Correct Answer: C
+
+Solution:
+The derivative of 2|x| is 2 times the sign function, denoted as 2sgn(x). The sign function gives +1 for x > 0, -1 for x < 0, and 0 for x = 0.
+
+Explanation:
+When differentiating an absolute value function with a constant coefficient, the derivative remains piecewise but with a constant multiplier. The sign function helps capture this behavior.
+
+Common mistake note:
+A common mistake would be to choose A (2) or B (4x), assuming that the derivative is linear like the original function. However, the absolute value function's derivative changes at x = 0.
+------------------------------------------------------------------------------
+
+Problem 4 (Absolute value with variable inside):
+Find the derivative of f(x) = |3x - 1|.
+A) 3
+B) 9x - 3
+C) 3sgn(3x - 1)
+D) undefined
+Correct Answer: C
+
+Solution:
+The derivative of |3x - 1| is 3 times the sign function applied to 3x - 1, denoted as 3sgn(3x - 1). The sign function gives +1 for x > 1/3, -1 for x < 1/3, and 0 for x = 1/3.
+
+Explanation:
+When differentiating an absolute value function with a variable inside, the derivative remains piecewise but with a coefficient related to the variable. The sign function helps capture this behavior.
+
+Common mistake note:
+A common mistake would be to choose A (3) or B (9x - 3), assuming that the derivative is linear like the original function. However, the absolute value function's derivative changes at x = 1/3.
+------------------------------------------------------------------------------
+
+Problem 5 (Absolute value with square root):
+Find the derivative of f(x) = 
+sqrt|x| for x < 0
+-3x + 4 for x ≥ 0
+at x = 0.
+A) undefined
+B) 1/2
+C) 0
+D) -3
+Correct Answer: A
+
+Solution:
+At x = 0, the function changes from f(x) = sqrt| x | to f(x) = -3x + 4. Since the left- and right-hand limits of the derivative do not equal (lim x→0^- f'(x) is undefined and lim x→0^+ f'(x) = -3), the derivative is undefined at x = 0.
+
+Explanation:
+The square root inside the absolute value function does not change the fact that there's a sharp corner at x = 0, which makes the derivative undefined at that point. The piecewise nature of the function does not change this fact either.
+
+Common mistake note:
+A common mistake would be to choose B (1/2) or D (-3), assuming that the derivative is continuous across the entire domain. However, the sharp corner at x = 0 causes the derivative to be undefined.
+------------------------------------------------------------------------------
+
+Problem 6 (Absolute value with square):
+Find the derivative of f(x) = |x^2 - 4|.
+A) 2x
+B) 2(x^2 - 4)
+C) 2xsgn(x^2 - 4)
+D) undefined
+Correct Answer: C
+
+Solution:
+The derivative of |x^2 - 4| is 2x times the sign function applied to x^2 - 4, denoted as 2xsgn(x^2 - 4). The sign function gives +1 for x > 2 or x < -2, and -1 for -2 < x < 2.
+
+Explanation:
+When differentiating an absolute value function with a variable expression inside, the derivative remains piecewise but with a coefficient related to the variable. The sign function helps capture this behavior.
+
+Common mistake note:
+A common mistake would be to choose A (2x) or B (2(x^2 - 4)), assuming that the derivative is linear like the original function. However, the absolute value function's derivative changes at x = -2 and x = 2.
+------------------------------------------------------------------------------
+
+Problem 7 (Absolute value with variable inside and constant outside):
+Find the derivative of f(x) = 5|x + 1|.
+A) 5
+B) 5sgn(x + 1)
+C) 10x + 5
+D) undefined
+Correct Answer: B
+
+Solution:
+The derivative of 5|x + 1| is 5 times the sign function applied to x + 1, denoted as 5sgn(x + 1). The sign function gives +1 for x > -1 and -1 for x < -1.
+
+Explanation:
+When differentiating an absolute value function with a constant multiplier outside and a variable inside, the derivative remains piecewise but with a constant multiplier. The sign function helps capture this behavior.
+
+Common mistake note:
+A common mistake would be to choose A (5) or C (10x + 5), assuming that the derivative is linear like the original function. However, the absolute value function's derivative changes at x = -1.
+------------------------------------------------------------------------------

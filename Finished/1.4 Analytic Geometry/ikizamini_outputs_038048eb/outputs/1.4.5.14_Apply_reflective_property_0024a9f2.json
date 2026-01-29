@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.5.14",
+  "objective_text": "Apply reflective property",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A light ray hits a mirror at an angle of 30 degrees to the normal. What is the angle of reflection?",
+      "choices": {
+        "A": "15 degrees",
+        "B": "30 degrees",
+        "C": "60 degrees",
+        "D": "90 degrees"
+      },
+      "correct_choice": "B",
+      "solution": "The reflective property states that the angle of incidence equals the angle of reflection. In this case, the angle of incidence is 30 degrees, so the angle of reflection is also 30 degrees.",
+      "explanation": "The angles are related due to the law of reflection, which says that light rays bouncing off a surface maintain equal angles with the normal line.",
+      "common_mistake_notes": "A common mistake would be choosing 'A' or 'C', assuming that the angle is halved or doubled. However, this is not correct; the angles remain equal."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "A light ray reflects off a smooth surface such that its incident and reflected angles are equal. What is the angle between the incident ray and the normal?",
+      "choices": {
+        "A": "0 degrees",
+        "B": "30 degrees",
+        "C": "45 degrees",
+        "D": "90 degrees"
+      },
+      "correct_choice": "C",
+      "solution": "Since the incident and reflected angles are equal, they must both be 45 degrees to satisfy the reflective property.",
+      "explanation": "The law of reflection states that the angle between the incident ray and the normal is equal to the angle between the reflected ray and the normal.",
+      "common_mistake_notes": "A common mistake would be choosing 'D', assuming that the angles must add up to 90 degrees. However, this is not correct for a situation where both angles are equal."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "An object is placed in front of a plane mirror. The image formed by the mirror appears inverted. What is the relationship between the angle of incidence and reflection?",
+      "choices": {
+        "A": "Opposite angles",
+        "B": "Equal angles",
+        "C": "Sum of 90 degrees",
+        "D": "Sum of 180 degrees"
+      },
+      "correct_choice": "B",
+      "solution": "The angle of incidence is always equal to the angle of reflection, regardless of whether the image appears inverted or not.",
+      "explanation": "The reflective property holds true for all mirrors and regardless of the orientation of the image formed.",
+      "common_mistake_notes": "A common mistake would be choosing 'A', assuming that inversion implies opposite angles. However, this is not correct; the angles remain equal."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "A light ray bounces off a concave mirror at an angle of 20 degrees to the normal. What happens to the incident and reflected rays?",
+      "choices": {
+        "A": "Parallel rays",
+        "B": "Perpendicular rays",
+        "C": "Intersecting rays",
+        "D": "Opposite rays"
+      },
+      "correct_choice": "C",
+      "solution": "The incident and reflected rays will intersect at the focus of a concave mirror, but they are not parallel or perpendicular. The angle of incidence is not equal to the angle of reflection in this case.",
+      "explanation": "Concave mirrors reflect light inward, focusing it at a single point (the focal point).",
+      "common_mistake_notes": "A common mistake would be choosing 'B' or 'D', assuming that the angles must be perpendicular or opposite. However, this is not correct for a concave mirror."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "A light ray hits a convex mirror at an angle of 45 degrees to the normal. How does the reflected ray compare to the incident ray?",
+      "choices": {
+        "A": "Parallel to the incident ray",
+        "B": "Behind the incident ray",
+        "C": "In front of the incident ray, but not parallel",
+        "D": "At a right angle to the incident ray"
+      },
+      "correct_choice": "C",
+      "solution": "The reflected ray will be in front of the incident ray and not parallel, as convex mirrors diverge light rays.",
+      "explanation": "Convex mirrors reflect light outward, creating a virtual, diminished image that appears behind the mirror.",
+      "common_mistake_notes": "A common mistake would be choosing 'A', assuming that the angles must be equal. However, this is not correct for a convex mirror."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "An object is placed between the focus and pole of a concave mirror. According to the reflective property, what will happen to the image formed?",
+      "choices": {
+        "A": "Real, inverted, and缩小的",
+        "B": "Virtual, upright, and缩小的",
+        "C": "Virtual, upright, and放大的",
+        "D": "Real, inverted, and放大的"
+      },
+      "correct_choice": "C",
+      "solution": "The image will be virtual, upright (not inverted), and放大 because the object is between the focus and pole of a concave mirror.",
+      "explanation": "Concave mirrors form virtual images when the object is closer to the mirror than the focal point.",
+      "common_mistake_notes": "A common mistake would be choosing 'D', assuming that the image must be real and inverted. However, this is not correct for an object between the focus and pole."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "An object is placed at infinity in front of a concave mirror. According to the reflective property, what will happen to the image formed?",
+      "choices": {
+        "A": "Real, inverted, and缩小的",
+        "B": "Virtual, upright, and缩小的",
+        "C": "Virtual, upright, and放大的",
+        "D": "At the focus"
+      },
+      "correct_choice": "D",
+      "solution": "The image will be at the focal point of the concave mirror because an object at infinity produces a real, inverted image that appears to form there.",
+      "explanation": "When an object is placed at infinity in front of a concave mirror, its image forms at the focus due to the reflective property.",
+      "common_mistake_notes": "A common mistake would be choosing 'C', assuming that the image must be virtual and upright. However, this is not correct for an object at infinity."
+    }
+  ]
+}

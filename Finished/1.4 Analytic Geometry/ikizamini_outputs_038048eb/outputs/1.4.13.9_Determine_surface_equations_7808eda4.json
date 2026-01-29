@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.13.9",
+  "objective_text": "Determine surface equations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the equation of the surface defined by the function f(x, y) = x^2 + y^2 at point (3, 4).",
+      "choices": {
+        "A": "(x - 3)^2 + (y - 4)^2 = 0",
+        "B": "(x - 9)^2 + (y - 16)^2 = 25",
+        "C": "x^2 + y^2 = 9",
+        "D": "x^2 + y^2 = 16"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of the surface at a specific point is found by plugging in the coordinates of that point into the function. So, we substitute x with 3 and y with 4 in f(x, y) = x^2 + y^2: (3)^2 + (4)^2 = 9 + 16 = 25. The equation becomes (x - 3)^2 + (y - 4)^2 = 25.",
+      "explanation": "The correct answer represents the surface equation evaluated at the point (3, 4).",
+      "common_mistake_notes": "A common mistake is to forget to square the differences in the resulting equation. Answer A lacks this step and thus gives an incorrect result."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the equation of the surface z = x^2 + y^2 at point (1, 2).",
+      "choices": {
+        "A": "z = 5",
+        "B": "z - 5 = 0",
+        "C": "x^2 + y^2 = 3",
+        "D": "x + y = 3"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of the surface at a specific point is found by plugging in the coordinates of that point into the function. So, we substitute x with 1 and y with 2 in z = x^2 + y^2: z = (1)^2 + (2)^2 = 5. The equation becomes z - 5 = 0.",
+      "explanation": "The correct answer represents the surface equation evaluated at the point (1, 2).",
+      "common_mistake_notes": "A common mistake is to write only the value of z instead of setting it equal to zero as an implicit equation. Answer A does this and gives a different type of equation."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the equation of the surface defined by f(x, y) = x^2 - 2xy + y^2 at point (1, 1).",
+      "choices": {
+        "A": "(x - 1)^2 - 2(x - 1)(y - 1) + (y - 1)^2 = 0",
+        "B": "x^2 - 2xy + y^2 = 0",
+        "C": "x^2 - 2xy + y^2 = 2",
+        "D": "x^2 - 2xy + y^2 = 1"
+      },
+      "correct_choice": "A",
+      "solution": "The equation of the surface at a specific point is found by plugging in the coordinates of that point into the function. So, we substitute x with 1 and y with 1 in f(x, y) = x^2 - 2xy + y^2: (1)^2 - 2(1)(1) + (1)^2 = 0. The equation becomes (x - 1)^2 - 2(x - 1)(y - 1) + (y - 1)^2 = 0.",
+      "explanation": "The correct answer represents the surface equation evaluated at the point (1, 1).",
+      "common_mistake_notes": "A common mistake is to forget to subtract the products of the differences. Answer B omits this step and gives an incorrect result."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the equation of the surface z = x^3 + y^3 at point (2, 1).",
+      "choices": {
+        "A": "z - 9 = 0",
+        "B": "z = 8",
+        "C": "x^3 + y^3 = 7",
+        "D": "x^3 + y^3 = 9"
+      },
+      "correct_choice": "A",
+      "solution": "The equation of the surface at a specific point is found by plugging in the coordinates of that point into the function. So, we substitute x with 2 and y with 1 in z = x^3 + y^3: z = (2)^3 + (1)^3 = 8. The equation becomes z - 9 = 0.",
+      "explanation": "The correct answer represents the surface equation evaluated at the point (2, 1).",
+      "common_mistake_notes": "A common mistake is to write only the value of z instead of setting it equal to zero as an implicit equation. Answer B does this and gives a different type of equation."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the equation of the surface defined by f(x, y) = x^2 + 3xy + 2y^2 at point (1, -1).",
+      "choices": {
+        "A": "(x - 1)^2 + 3(x - 1)(y + 1) + 2(y + 1)^2 = 0",
+        "B": "x^2 + 3xy + 2y^2 = 0",
+        "C": "x^2 + 3xy + 2y^2 = 5",
+        "D": "x^2 + 3xy + 2y^2 = -1"
+      },
+      "correct_choice": "A",
+      "solution": "The equation of the surface at a specific point is found by plugging in the coordinates of that point into the function. So, we substitute x with 1 and y with -1 in f(x, y) = x^2 + 3xy + 2y^2: (1)^2 + 3(1)(-1) + 2(-1)^2 = 0. The equation becomes (x - 1)^2 + 3(x - 1)(y + 1) + 2(y + 1)^2 = 0.",
+      "explanation": "The correct answer represents the surface equation evaluated at the point (1, -1).",
+      "common_mistake_notes": "A common mistake is to forget to multiply the differences correctly. Answer B omits this step and gives an incorrect result."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the equation of the surface z = x^2 + 4y^2 at point (0, 1).",
+      "choices": {
+        "A": "z - 4 = 0",
+        "B": "z = 4",
+        "C": "x^2 + 4y^2 = 3",
+        "D": "x^2 + 4y^2 = 4"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of the surface at a specific point is found by plugging in the coordinates of that point into the function. So, we substitute x with 0 and y with 1 in z = x^2 + 4y^2: z = (0)^2 + 4(1)^2 = 4. The equation becomes z - 4 = 0.",
+      "explanation": "The correct answer represents the surface equation evaluated at the point (0, 1).",
+      "common_mistake_notes": "A common mistake is to write only the value of z instead of setting it equal to zero as an implicit equation. Answer C does this and gives a different type of equation."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the equation of the surface defined by f(x, y) = 2x^2 - y^2 at point (1, 0).",
+      "choices": {
+        "A": "2(x - 1)^2 - (y - 0)^2 = 0",
+        "B": "2x^2 - y^2 = 0",
+        "C": "2x^2 - y^2 = 2",
+        "D": "2x^2 - y^2 = 1"
+      },
+      "correct_choice": "A",
+      "solution": "The equation of the surface at a specific point is found by plugging in the coordinates of that point into the function. So, we substitute x with 1 and y with 0 in f(x, y) = 2x^2 - y^2: 2(1)^2 - (0)^2 = 2. The equation becomes 2(x - 1)^2 - (y - 0)^2 = 0.",
+      "explanation": "The correct answer represents the surface equation evaluated at the point (1, 0).",
+      "common_mistake_notes": "A common mistake is to forget to multiply the differences correctly. Answer B omits this step and gives an incorrect result."
+    }
+  ]
+}

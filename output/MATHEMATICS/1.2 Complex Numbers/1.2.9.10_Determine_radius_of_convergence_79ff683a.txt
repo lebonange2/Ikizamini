@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.9.10 Determine radius of convergence
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.9 Complex Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the radius of convergence for the series: ∑(n=1 to infinity) (x^n)/(n^2)
+A) 0
+B) 1
+C) 2
+D) ∞
+Correct Answer: B
+
+Solution:
+The ratio test is used to find the radius of convergence. The limit formula is lim (n→∞) |a_n+1/a_n|, where a_n is x^n/n^2. For this problem: lim (n→∞) |(x^(n+1)/(n+1)^2) / (x^n/n^2)| = |x| * lim (n→∞) (n^2/(n+1)^2). As n approaches infinity, the limit becomes 1. The radius of convergence R is |x| < 1, so R = 1.
+
+Explanation:
+The ratio test determines the interval of convergence. Here, it shows that the series converges when |x| < 1.
+
+Common mistake note:
+A common mistake is to set the limit directly to x without applying the ratio test.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the radius of convergence for the series: ∑(n=1 to infinity) (-3)^n * (x-4)^n
+A) 1
+B) 3
+C) 5
+D) ∞
+Correct Answer: B
+
+Solution:
+The ratio test is applied. a_n = (-3)^n * (x-4)^n. The limit formula gives: lim (n→∞) |(-3)^(n+1) * (x-4)^(n+1)/(-3)^n * (x-4)^n| = |-3| * |x-4|. For convergence, this limit must be less than 1: |-3| * |x-4| < 1. Simplifying gives |x-4| < 1/3. The radius of convergence is R = 1/3.
+
+Explanation:
+The ratio test helps determine the interval of convergence. Here, it shows that the series converges within a range around x=4.
+
+Common mistake note:
+A common mistake is to assume the base -3 affects the sign of the radius.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the radius of convergence for the series: ∑(n=1 to infinity) (2^(n^2)) * x^n
+A) 0
+B) 1/2
+C) 1
+D) ∞
+Correct Answer: D
+
+Solution:
+The root test is more appropriate. a_n = 2^(n^2) * x^n. The limit formula gives: lim (n→∞) |2^(n^2) * x^n|^(1/n) = lim (n→∞) 2^(n^2/n) * |x|. As n approaches infinity, 2^(n^2/n) → 1. Thus, the limit is |x| * 1 = |x|. Since no value of x makes this limit ≥ 1, R = ∞.
+
+Explanation:
+The root test is useful for rapidly growing terms. Here, it shows that the series converges for all x.
+
+Common mistake note:
+A common mistake is to use the ratio test instead.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the radius of convergence for the series: ∑(n=1 to infinity) (x^n/n!)
+A) 0
+B) 1
+C) e
+D) ∞
+Correct Answer: D
+
+Solution:
+The ratio test is applied. a_n = x^n/n!. The limit formula gives: lim (n→∞) |(x^(n+1)/(n+1)!) / (x^n/n!)| = |x| * lim (n→∞) 1/(n+1). As n approaches infinity, the limit becomes 0. R = ∞ since any x satisfies this condition.
+
+Explanation:
+The ratio test helps with factorial terms. Here, it shows that the series converges for all x.
+
+Common mistake note:
+A common mistake is to assume a finite radius due to n!.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the radius of convergence for the series: ∑(n=1 to infinity) (x^(3n))/n^3
+A) 0
+B) 1
+C) √3
+D) ∞
+Correct Answer: C
+
+Solution:
+The ratio test is used. a_n = x^(3n)/n^3. The limit formula gives: lim (n→∞) |x^3 * (n^3/(n+1)^3)| = |x|^3 * lim (n→∞) 1/(n+1)^2. As n approaches infinity, the limit becomes 1. R = √3 since |x|^3 < 1.
+
+Explanation:
+The ratio test helps with variable exponents. Here, it shows convergence for |x| < √3.
+
+Common mistake note:
+A common mistake is to set the limit directly to |x|^3.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the radius of convergence for the series: ∑(n=1 to infinity) (sin(n))^n * x^n
+A) 0
+B) π/2
+C) π
+D) ∞
+Correct Answer: A
+
+Solution:
+The root test is more appropriate. a_n = (sin(n))^n * x^n. The limit formula gives: lim (n→∞) |(sin(n))^n * x^n|^(1/n) = |x| * lim (n→∞) |sin(n)|. Since sin(n) oscillates, the limit doesn't exist. R = 0.
+
+Explanation:
+The root test helps with trigonometric terms. Here, it shows that the series diverges for all x.
+
+Common mistake note:
+A common mistake is to assume convergence based on the sine function.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the radius of convergence for the series: ∑(n=1 to infinity) (x^(2n))/n^4
+A) 0
+B) 1
+C) √2
+D) ∞
+Correct Answer: C
+
+Solution:
+The ratio test is used. a_n = x^(2n)/n^4. The limit formula gives: lim (n→∞) |x^2 * (n^4/(n+1)^4)| = |x|^2 * lim (n→∞) 1/(n+1)^2. As n approaches infinity, the limit becomes 1. R = √2 since |x|^2 < 1.
+
+Explanation:
+The ratio test helps with variable exponents. Here, it shows convergence for |x| < √2.
+
+Common mistake note:
+A common mistake is to set the limit directly to |x|^2.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.14.14 Apply to engineering applications
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.14 Applications of Integrals - Arc Length and Surface Area
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One-way ANOVA for fatigue life data):
+A materials engineer tests the fatigue life of three different types of metal under varying stress conditions. She collects the following data in hours: Type A (50, 60, 70, 80, 90), Type B (45, 55, 65, 75, 85), and Type C (40, 50, 60, 70, 80). Which statistical test should she use to determine if there is a significant difference in fatigue life among the three types of metal?
+A) t-test
+B) Mann-Whitney U test
+C) ANOVA
+D) Kruskal-Wallis H test
+Correct Answer: C
+
+Solution:
+The engineer should use ANOVA (Analysis of Variance) because she is comparing the fatigue life of three different types of metal, which involves multiple groups. ANOVA is appropriate for comparing means across more than two groups.
+
+Explanation:
+ANOVA tests for differences in means between three or more groups, while a t-test compares only two groups. The Mann-Whitney U test and Kruskal-Wallis H test are non-parametric tests used when the data does not meet normality assumptions, but ANOVA assumes normal distribution.
+
+Common mistake note:
+A common mistake would be to choose the t-test or a non-parametric test like the Mann-Whitney U test or Kruskal-Wallis H test. The t-test is not suitable for more than two groups, and the non-parametric tests are used when data does not meet normality assumptions.
+------------------------------------------------------------------------------
+
+Problem 2 (Bridge stress analysis):
+A civil engineer is designing a bridge with a steel beam that must support a maximum load of 100 kN. The beam has a rectangular cross-section with a width of 20 cm and a height of 5 cm. What is the minimum required yield strength (in MPa) for the steel to ensure it does not fail under the given load?
+A) 40
+B) 80
+C) 160
+D) 320
+Correct Answer: B
+
+Solution:
+The stress on the beam can be calculated using the formula: Stress = Force / (Area * Safety factor). Given a safety factor of 2, the required stress is half of the maximum load divided by the cross-sectional area. Stress = (100 kN / 2) / (0.2 m * 0.05 m) = 80 MPa.
+
+Explanation:
+The yield strength should be at least twice the calculated stress to ensure safety in engineering applications. The beam's cross-sectional area is calculated as width times height, converted from cm to meters for consistency with force in kN and stress in MPa.
+
+Common mistake note:
+A common mistake would be to forget to include the safety factor of 2, which is a standard practice in engineering design to ensure that materials do not fail under normal operating conditions.
+------------------------------------------------------------------------------
+
+Problem 3 (Heat transfer coefficient calculation):
+An aerospace engineer needs to calculate the heat transfer coefficient for a spacecraft re-entering Earth's atmosphere at an altitude of 100 km. The spacecraft has a surface temperature of 500°C and the surrounding air temperature is -180°C. The air density at this altitude is 0.007 kg/ m³. Assuming laminar flow, which formula should the engineer use for calculating the heat transfer coefficient?
+A) Nu = 0.3 + 0.6 * Re^(1/2) * Pr^(1/3)
+B) Nu = 0.5 * Re^(1/2) * Pr
+C) Nu = 0.023 * Re^(4/5) * Pr^(1/3)
+D) Nu = 0.005 * Re^(2/3) * Pr
+Correct Answer: A
+
+Solution:
+The engineer should use the Nusselt number (Nu) formula for natural convection in laminar flow, which is Nu = 0.3 + 0.6 × Re^(1/2) × Pr^(1/3). The Reynolds number (Re) and Prandtl number (Pr) must be calculated using the appropriate values for this scenario.
+
+Explanation:
+The Nusselt number formula for natural convection in laminar flow is given by Nu = 0.3 + 0.6 × Re^(1/2) × Pr^(1/3). The Reynolds number (Re) and Prandtl number (Pr) are specific to the fluid dynamics of the problem, which in this case involve air at a given altitude.
+
+Common mistake note:
+A common mistake would be to use the wrong formula for heat transfer coefficient calculation. For laminar flow, the engineer should use the Nusselt number formula provided, while for turbulent flow, they would use Nu = 0.023 × Re^(4/5) × Pr^(1/3).
+------------------------------------------------------------------------------
+
+Problem 4 (Circuit analysis with Thévenin's theorem):
+An electrical engineer is analyzing a complex circuit and wants to simplify it for easier calculation. The circuit contains a voltage source of 12 V, two resistors (R1 = 5 Ω and R2 = 3 Ω), and a load resistor (RL). Using Thévenin's theorem, what is the equivalent voltage (Vth) and resistance (Rth) of the simplified circuit?
+A) Vth = 6 V, Rth = 4 Ω
+B) Vth = 12 V, Rth = 8 Ω
+C) Vth = 9 V, Rth = 2 Ω
+D) Vth = 3 V, Rth = 7 Ω
+Correct Answer: A
+
+Solution:
+The engineer should calculate the Thévenin voltage (Vth) by shorting all voltage sources and measuring the open-circuit voltage across the load resistor. The Thévenin resistance (Rth) is calculated by removing all current sources and finding the equivalent resistance between the same points where Vth was measured. In this case, Vth = 12 V × (3 Ω / (5 Ω + 3 Ω)) = 6 V and Rth = 5 Ω || 3 Ω = 4 Ω.
+
+Explanation:
+Thévenin's theorem simplifies a circuit by replacing voltage sources and resistors with an equivalent voltage source in series with a resistor. The engineer must apply the appropriate circuit analysis techniques to find the Thévenin parameters.
+
+Common mistake note:
+A common mistake would be to calculate Vth incorrectly, either by not shorting the voltage sources or by measuring the voltage across the wrong resistors. Similarly, Rth may be calculated incorrectly if the engineer does not use the correct method for finding the equivalent resistance of parallel resistors.
+------------------------------------------------------------------------------
+
+Problem 5 (Structural analysis with Euler's formula):
+A mechanical engineer is designing a cylindrical compression column with a diameter of 10 cm and a length of 2 m. The material has an elastic modulus of 200 GPa and a yield strength of 350 MPa. Using Euler's formula, what is the critical buckling load (Pcr) for the column?
+A) 784 N
+B) 1569 N
+C) 3138 N
+D) 6276 N
+Correct Answer: B
+
+Solution:
+The engineer should use Euler's formula for critical buckling load: Pcr = (π^2 * E * I) / (KL)^2, where E is the elastic modulus, I is the area moment of inertia, K is a factor related to boundary conditions, and L is the column length. For a simply supported column, K = 1. The area moment of inertia for a cylindrical column is I = π * d^4 / 64, where d is the diameter. Plugging in the values gives Pcr = (π^2 × 200 GPa × (π × 10 cm^4 / 64)) / (1 × 2 m)^2 ≈ 1569 N.
+
+Explanation:
+Euler's formula is used to determine the critical buckling load of a column under compression. The engineer must calculate the area moment of inertia for the given cross-section and apply the appropriate boundary condition factor (K) for the problem scenario.
+
+Common mistake note:
+A common mistake would be to use the wrong value for K or to incorrectly convert units between meters and centimeters. Additionally, using the wrong formula for the area moment of inertia could lead to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 6 (Control system design with Bode plots):
+An electronics engineer is designing a control system for a motor with a transfer function G(s) = (s + 2) / (s^2 + 4s + 5). To ensure stability, the engineer needs to adjust the gain and phase margins. Which of the following adjustments will improve both the gain margin and phase margin?
+A) Increase the numerator
+B) Decrease the denominator
+C) Multiply the entire transfer function by a constant
+D) Shift the poles closer to the origin
+Correct Answer: D
+
+Solution:
+The engineer should shift the poles closer to the origin. This will increase both the gain margin and phase margin, ensuring better stability for the control system.
+
+Explanation:
+In control systems, shifting the poles closer to the origin in the s-plane (i.e., reducing their real parts) increases both the gain margin and phase margin, which are measures of stability. Adjusting only the numerator or denominator may not necessarily improve both margins simultaneously.
+
+Common mistake note:
+A common mistake would be to choose option C, multiplying the entire transfer function by a constant, as this only scales the magnitude response but does not affect the stability margins. Options A and B may also lead to incorrect adjustments that do not necessarily improve both margins.
+------------------------------------------------------------------------------
+
+Problem 7 (Optimal design with Pareto frontier):
+An industrial engineer is tasked with optimizing a product's weight and cost simultaneously. The current design has a weight of 10 kg and a cost of $500. The engineer generates multiple design alternatives, each with different weight and cost combinations, and plots them on a Pareto Frontier graph. Which of the following actions should the engineer take to improve the design?
+A) Select the design with the lowest weight
+B) Select the design with the lowest cost
+C) Choose a design point along the Pareto frontier that balances weight and cost
+D) Ignore the Pareto frontier and focus on individual performance metrics
+Correct Answer: C
+
+Solution:
+The engineer should choose a design point along the Pareto frontier that balances weight and cost. This approach allows for an optimal trade-off between the two conflicting objectives.
+
+Explanation:
+In multi-objective optimization, the Pareto frontier represents the set of non-dominated solutions. The engineer should select a point on this frontier that best meets their requirements, balancing weight and cost in this case. Focusing on only one metric or ignoring the Pareto frontier would not result in an optimal solution.
+
+Common mistake note:
+A common mistake would be to choose option A or B, focusing on only one performance metric without considering the trade-offs with the other objective. Ignoring the Pareto frontier (option D) would also lead to suboptimal design choices.
+------------------------------------------------------------------------------

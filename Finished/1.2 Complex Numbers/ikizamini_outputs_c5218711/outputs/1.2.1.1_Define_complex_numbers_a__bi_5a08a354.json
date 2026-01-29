@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.1.1",
+  "objective_text": "Define complex numbers (a + bi)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the standard form of a complex number?",
+      "choices": {
+        "A": "(b + ai)",
+        "B": "(a - bi)",
+        "C": "(a + bi)",
+        "D": "(bi - a)"
+      },
+      "correct_choice": "C",
+      "solution": "The standard form of a complex number is (a + bi), where 'a' represents the real part and 'b' represents the imaginary part with the imaginary unit i.",
+      "explanation": "Complex numbers are written in the form (a + bi) to clearly distinguish the real and imaginary parts. The other options either have the terms reversed or use incorrect signs, which is not in accordance with the standard form.",
+      "common_mistake_notes": "Common mistake: Reversing the order of 'a' and 'b', or using a negative sign before 'bi'. This confusion arises from misunderstanding the structure of complex numbers."
+    },
+    {
+      "id": ":2",
+      "stem": "What is the real part of the complex number 3 + 4i?",
+      "choices": {
+        "A": "7",
+        "B": "4",
+        "C": "3",
+        "D": "0"
+      },
+      "correct_choice": "C",
+      "solution": "The real part of a complex number (a + bi) is 'a'. In the given complex number 3 + 4i, 'a' is 3.",
+      "explanation": "To find the real part of a complex number, you look at the coefficient of the real term without the imaginary unit i. The other choices do not correspond to the correct value for the real part.",
+      "common_mistake_notes": "Common mistake: Choosing the coefficient of 'i' (4) as the real part. This confusion comes from misunderstanding the distinction between the real and imaginary parts."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the imaginary part of the complex number -2 + 5i?",
+      "choices": {
+        "A": "7",
+        "B": "5",
+        "C": "-2",
+        "D": "0"
+      },
+      "correct_choice": "B",
+      "solution": "The imaginary part of a complex number (a + bi) is 'b'. In the given complex number -2 + 5i, 'b' is 5.",
+      "explanation": "To find the imaginary part of a complex number, you look at the coefficient of the imaginary term with i. The other choices do not correspond to the correct value for the imaginary part.",
+      "common_mistake_notes": "Common mistake: Choosing the first term (-2) as the imaginary part. This confusion arises from misunderstanding the roles of 'a' and 'b' in a complex number."
+    },
+    {
+      "id": ":4",
+      "stem": "Which of the following is an example of a pure imaginary number?",
+      "choices": {
+        "A": "3 + 0i",
+        "B": "2i",
+        "C": "0 + 5i",
+        "D": "-7 - 4i"
+      },
+      "correct_choice": "C",
+      "solution": "A pure imaginary number has no real part and only an imaginary part. In the options, 0 + 5i fits this description.",
+      "explanation": "A pure imaginary number is of the form bi, where 'b' is a non-zero real number. The other choices either have a non-zero real part or are not in the correct format.",
+      "common_mistake_notes": "Common mistake: Choosing numbers with both real and imaginary parts (like 3 + 0i or -7 - 4i). This confusion comes from not recognizing the specific characteristics of pure imaginary numbers."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the complex conjugate of the number 4 - 6i?",
+      "choices": {
+        "A": "-4 + 6i",
+        "B": "4 + 6i",
+        "C": "6 - 4i",
+        "D": "6 + 4i"
+      },
+      "correct_choice": "B",
+      "solution": "The complex conjugate of a number (a + bi) is (a - bi). For the given number 4 - 6i, its conjugate is 4 + 6i.",
+      "explanation": "The complex conjugate switches the sign of the imaginary part. The other choices do not follow this rule or have incorrect real parts.",
+      "common_mistake_notes": "Common mistake: Switching both the signs of 'a' and 'b'. This confusion occurs when not understanding that only the sign of the imaginary term changes in a complex conjugate."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the result of multiplying (2 + 3i) by (1 - i)?",
+      "choices": {
+        "A": "5 + i",
+        "B": "5 - i",
+        "C": "-1 - 5i",
+        "D": "1 + 5i"
+      },
+      "correct_choice": "A",
+      "solution": "(2 + 3i)(1 - i) = (2 \times 1) + (2 \times -i) + (3i \times 1) + (3i \times -i) = 2 - 2i + 3i - 3i^2 = 5 + i",
+      "explanation": "To multiply complex numbers, use the distributive property and remember that i^2 = -1. The other choices do not result from the correct multiplication.",
+      "common_mistake_notes": "Common mistake: Incorrectly multiplying the imaginary parts or forgetting to substitute i^2 with -1. This error occurs when not applying the rules of complex number arithmetic."
+    },
+    {
+      "id": ":7",
+      "stem": "Which of the following is equivalent to the complex number (5 + 3i)^2?",
+      "choices": {
+        "A": "28 + 6i",
+        "B": "28 - 6i",
+        "C": "32 + 10i",
+        "D": "32 - 10i"
+      },
+      "correct_choice": "C",
+      "solution": "(5 + 3i)^2 = (5^2) + (2 \times 5 \times 3i) + (3i)^2 = 25 + 30i + 9i^2 = 32 + 10i",
+      "explanation": "To square a complex number, apply the binomial theorem or FOIL method and remember that i^2 = -1. The other choices do not result from the correct squaring process.",
+      "common_mistake_notes": "Common mistake: Incorrectly multiplying the terms or forgetting to substitute i^2 with -1. This confusion arises from not applying the rules of complex number arithmetic when squaring."
+    }
+  ]
+}

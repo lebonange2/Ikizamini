@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.7.4 Integrate trigonometric functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.7 Indefinite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asin(BC)+D):
+Find the antiderivative of the function: f(x) = A\sin(Bx + C) + D
+A) \(-A\cos(Bx + C) + Dx + E\)
+B) \(A\cos(Bx + C) + Dx + E\)
+C) \(-A\cos(Bx + C) + E\)
+D) \(A\cos(Bx + C) + E\)
+Correct Answer: B
+
+Solution:
+The antiderivative of A\sin(Bx + C) is -A\cos(Bx + C) because the derivative of \cos(Bx + C) is -B\sin(Bx + C), and multiplying by A gives us -A\cos(Bx + C). The constant D does not affect the integration process, so it remains as a constant term in the antiderivative: -A\cos(Bx + C) + Dx + E.
+
+Explanation:
+The integral of a sine function is the negative cosine function times the coefficient and加上一次常数项
+
+Common mistake note:
+Common mistake: Forgetting to multiply by the coefficient A. The correct answer should have -A instead of just -1.
+------------------------------------------------------------------------------
+
+Problem 2 (Bcos(Cx+D)+E):
+Find the antiderivative of the function: f(x) = B\cos(Cx + D) + E
+A) \(-B\sin(Cx + D) + Ex + F\)
+B) \(B\sin(Cx + D) + Ex + F\)
+C) \(-B\sin(Cx + D) + F\)
+D) \(B\sin(Cx + D) + F\)
+Correct Answer: A
+
+Solution:
+The antiderivative of B\cos(Cx + D) is -B\sin(Cx + D) because the derivative of \sin(Cx + D) is C\cos(Cx + D), and multiplying by B gives us -B\sin(Cx + D). The constant E does not affect the integration process, so it remains as a constant term in the antiderivative: -B\sin(Cx + D) + Ex + F.
+
+Explanation:
+The integral of a cosine function is the sine function times the coefficient and加上一次常数项
+
+Common mistake note:
+Common mistake: Forgetting to multiply by the coefficient B. The correct answer should have -B instead of just -1.
+------------------------------------------------------------------------------
+
+Problem 3 (sin(x)/x):
+Find the antiderivative of the function: f(x) = \frac{\sin(x)}{x}
+A) \(-\cos(x) + C\)
+B) \(-\cos(x) + x + C\)
+C) \(-\cos(x) + \\ln|x| + C\)
+D) \(\cos(x) + \\ln|x| + C\)
+Correct Answer: C
+
+Solution:
+The antiderivative of \frac{\sin(x)}{x} can be found using substitution, letting u = x and du/dx = 1. The integral becomes: \(rac{-θ(u)}{u}du\), which simplifies to -θ(u) + C. Substituting back in x for u gives us -θ(x) + C = -Κ(x) + C = -φ(1/x) + C = \\ln|x| + C.
+
+Explanation:
+Use substitution to find the antiderivative of sin(x)/x
+
+Common mistake note:
+Common mistake: Not recognizing that the integral requires a substitution or not correctly applying the substitution method.
+------------------------------------------------------------------------------
+
+Problem 4 (cos(2x)):
+Find the antiderivative of the function: f(x) = \\cos(2x)
+A) \(-rac{1}{2}θ(2x) + C\)
+B) \(rac{1}{2}θ(2x) + C\)
+C) \(-rac{1}{2}φ(2x) + C\)
+D) \(rac{1}{2}φ(2x) + C\)
+Correct Answer: A
+
+Solution:
+The antiderivative of \\cos(2x) is -rac{1}{2}θ(2x) = -rac{1}{2}Κ(2x) = -rac{1}{2}φ(rac{1}{2}x) + C.
+
+Explanation:
+Use the chain rule to find the antiderivative of cos(2x)
+
+Common mistake note:
+Common mistake: Not applying the chain rule correctly or forgetting to divide by the derivative of 2x.
+------------------------------------------------------------------------------
+
+Problem 5 (sec^2(x)):
+Find the antiderivative of the function: f(x) = \\sec^2(x)
+A) \(	an(x) + C\)
+B) \(-	an(x) + C\)
+C) \(rac{1}{2}θ(	an(x)) + C\)
+D) \(rac{1}{2}φ(	an(x)) + C\)
+Correct Answer: A
+
+Solution:
+The antiderivative of \\sec^2(x) is 	an(x) + C. This is a standard result from trigonometric integration.
+
+Explanation:
+Use the identity for the derivative of tan(x) to find the antiderivative of sec^2(x)
+
+Common mistake note:
+Common mistake: Not recognizing the standard result or applying the wrong identity.
+------------------------------------------------------------------------------
+
+Problem 6 (csc(x)cot(x)):
+Find the antiderivative of the function: f(x) = \\csc(x)θ(x)
+A) \(-φ(	an(x)) + C\)
+B) \(φ(	an(x)) + C\)
+C) \(-rac{1}{2}φ(	an(x)) + C\)
+D) \(rac{1}{2}θ(	an(x)) + C\)
+Correct Answer: A
+
+Solution:
+The antiderivative of \\csc(x)θ(x) is -φ(	an(x)) + C. This can be derived from the identity \(rac{d}{dx}φ(	an(x)) = \\csc^2(x)\), and then using substitution.
+
+Explanation:
+Use the derivative of arccotangent to find the antiderivative of csc(x)cot(x)
+
+Common mistake note:
+Common mistake: Not recognizing the relationship between the derivative of arccotangent and csc(x)cot(x).
+------------------------------------------------------------------------------
+
+Problem 7 (sec(x)tan(x)):
+Find the antiderivative of the function: f(x) = \\sec(x)θ(x)
+A) \(	an(x) + C\)
+B) \(-	an(x) + C\)
+C) \(rac{1}{2}φ(	an(x)) + C\)
+D) \(-rac{1}{2}θ(	an(x)) + C\)
+Correct Answer: A
+
+Solution:
+The antiderivative of \\sec(x)θ(x) is 	an(x) + C. This can be derived from the identity \(rac{d}{dx}	an(x) = \\sec^2(x)\), and then recognizing that \\sec(x)θ(x) is the derivative of tan(x).
+
+Explanation:
+Use the derivative of tangent to find the antiderivative of sec(x)tan(x)
+
+Common mistake note:
+Common mistake: Not recognizing that sec(x)tan(x) is the derivative of tan(x).
+------------------------------------------------------------------------------

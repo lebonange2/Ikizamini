@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.9",
+  "objective_text": "Apply Rouché's theorem",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Let f(z) = z^3 + 2z^2 - 3z + 1 and g(z) = z^2 + 4. Use Rouché's theorem to determine how many zeros of the function f(z) - g(z) are inside the circle |z| = 2.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "To apply Rouché's theorem, we need to find two functions f and g such that |f(z) - g(z)| > 0 on the boundary of a domain. We want to determine the number of zeros inside the circle |z| = 2 for the function h(z) = f(z) - g(z), where f(z) = z^3 + 2z^2 - 3z + 1 and g(z) = z^2 + 4.",
+      "explanation": "Let's consider h(z) = f(z) - g(z) = z^3 + 2z^2 - 3z + 1 - (z^2 + 4) = z^3 - z^2 - 3z - 3. On the circle |z| = 2, we have |z| = 2 and |z^2| = 4.",
+      "common_mistake_notes": "A common mistake is to directly compare f(z) with g(z) instead of considering their difference h(z). Rouché's theorem requires comparing the magnitudes of f(z) - g(z) on the boundary, not just f and g individually. This would lead to an incorrect conclusion about the number of zeros inside the circle."
+    },
+    {
+      "id": "2",
+      "stem": "Let f(z) = z^4 + 3z^3 + 5z^2 + 7z + 1 and g(z) = z^3 + 2z. Apply Rouché's theorem to determine how many zeros of the function f(z) - g(z) are inside the circle |z| = 1.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "B",
+      "solution": "We want to find the number of zeros inside the circle |z| = 1 for h(z) = f(z) - g(z), where f(z) = z^4 + 3z^3 + 5z^2 + 7z + 1 and g(z) = z^3 + 2z.",
+      "explanation": "On the circle |z| = 1, we have |z| = 1 and |z^3| = 1. We need to compare |f(z)| with |g(z)| on this circle. Let's calculate the maximum values of these functions on the boundary.",
+      "common_mistake_notes": "A common mistake is to assume that because f(z) has a higher degree than g(z), it must have more zeros inside the circle. Rouché's theorem does not consider degrees; it compares the magnitudes of the functions directly."
+    },
+    {
+      "id": "3",
+      "stem": "Consider the function f(z) = z^5 - 4z^4 + 6z^3 - 8z^2 + 10z - 12 and g(z) = z^4 - 3z^3. Use Rouché's theorem to determine how many zeros of the function f(z) - g(z) are inside the circle |z| = 3.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "D",
+      "solution": "We need to find the number of zeros inside the circle |z| = 3 for h(z) = f(z) - g(z), where f(z) = z^5 - 4z^4 + 6z^3 - 8z^2 + 10z - 12 and g(z) = z^4 - 3z^3.",
+      "explanation": "On the circle |z| = 3, we have |z| = 3 and |z^4| = 81. We'll compare |f(z)| with |g(z)| on this circle to apply Rouché's theorem.",
+      "common_mistake_notes": "A common mistake is to overlook the effect of higher-degree terms in f(z) when comparing with g(z). It's essential to consider the magnitudes of both functions on the boundary."
+    },
+    {
+      "id": "4",
+      "stem": "Let f(z) = z^6 - 5z^3 + 7 and g(z) = z^3 - 2. Apply Rouché's theorem to determine how many zeros of the function f(z) - g(z) are inside the circle |z| = 2.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "A",
+      "solution": "We want to find the number of zeros inside the circle |z| = 2 for h(z) = f(z) - g(z), where f(z) = z^6 - 5z^3 + 7 and g(z) = z^3 - 2.",
+      "explanation": "On the circle |z| = 2, we have |z| = 2 and |z^3| = 8. We'll compare |f(z)| with |g(z)| on this circle to apply Rouché's theorem.",
+      "common_mistake_notes": "A common mistake is to assume that because f(z) has a higher degree than g(z), it must have more zeros inside the circle. Rouché's theorem does not consider degrees; it compares the magnitudes of the functions directly."
+    },
+    {
+      "id": "5",
+      "stem": "Consider the function f(z) = z^7 + 4z^6 - 9z^5 + 16z^4 - 25z^3 + 36z^2 - 49z + 64 and g(z) = z^6 - 3z^5. Use Rouché's theorem to determine how many zeros of the function f(z) - g(z) are inside the circle |z| = 1.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "We need to find the number of zeros inside the circle |z| = 1 for h(z) = f(z) - g(z), where f(z) = z^7 + 4z^6 - 9z^5 + 16z^4 - 25z^3 + 36z^2 - 49z + 64 and g(z) = z^6 - 3z^5.",
+      "explanation": "On the circle |z| = 1, we have |z| = 1 and |z^6| = 1. We'll compare |f(z)| with |g(z)| on this circle to apply Rouché's theorem.",
+      "common_mistake_notes": "A common mistake is to overlook the effect of higher-degree terms in f(z) when comparing with g(z). It's essential to consider the magnitudes of both functions on the boundary."
+    },
+    {
+      "id": "6",
+      "stem": "Let f(z) = z^8 - 7z^4 + 10 and g(z) = z^4 - 3. Apply Rouché's theorem to determine how many zeros of the function f(z) - g(z) are inside the circle |z| = 2.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "B",
+      "solution": "We want to find the number of zeros inside the circle |z| = 2 for h(z) = f(z) - g(z), where f(z) = z^8 - 7z^4 + 10 and g(z) = z^4 - 3.",
+      "explanation": "On the circle |z| = 2, we have |z| = 2 and |z^4| = 16. We'll compare |f(z)| with |g(z)| on this circle to apply Rouché's theorem.",
+      "common_mistake_notes": "A common mistake is to assume that because f(z) has a higher degree than g(z), it must have more zeros inside the circle. Rouché's theorem does not consider degrees; it compares the magnitudes of the functions directly."
+    },
+    {
+      "id": "7",
+      "stem": "Consider the function f(z) = z^9 + 5z^8 - 16z^7 + 36z^6 - 64z^5 + 100z^4 - 144z^3 + 196z^2 - 256z + 343 and g(z) = z^8 - 4z^7. Use Rouché's theorem to determine how many zeros of the function f(z) - g(z) are inside the circle |z| = 1.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "A",
+      "solution": "We need to find the number of zeros inside the circle |z| = 1 for h(z) = f(z) - g(z), where f(z) = z^9 + 5z^8 - 16z^7 + 36z^6 - 64z^5 + 100z^4 - 144z^3 + 196z^2 - 256z + 343 and g(z) = z^8 - 4z^7.",
+      "explanation": "On the circle |z| = 1, we have |z| = 1 and |z^8| = 1. We'll compare |f(z)| with |g(z)| on this circle to apply Rouché's theorem.",
+      "common_mistake_notes": "A common mistake is to overlook the effect of higher-degree terms in f(z) when comparing with g(z). It's essential to consider the magnitudes of both functions on the boundary."
+    }
+  ]
+}

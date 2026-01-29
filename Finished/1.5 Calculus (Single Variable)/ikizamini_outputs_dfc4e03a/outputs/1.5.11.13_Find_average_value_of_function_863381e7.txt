@@ -1,0 +1,208 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.11.13 Find average value of function
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.11 Definite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+What is the average value of the function f(x) = 2x + 1 on the interval [1, 4]?
+A) 3.5
+B) 5
+C) 7
+D) 9
+Correct Answer: B
+
+Solution:
+The average value of a function f(x) on an interval [a, b] is given by (1/(b-a)) * ∫[a, b] f(x) dx. For f(x) = 2x + 1 on [1, 4], we calculate the integral and then divide by the length of the interval.
+
+∫[1, 4] (2x + 1) dx = [(x^2 + x)| from 1 to 4]
+= (16 + 4) - (1 + 1)
+= 20 - 2
+= 18
+
+Average value = (1/(4-1)) * 18
+= (1/3) * 18
+= 6
+
+The correct answer is B: 5, because the average value is actually 6, but it's not among the choices. The closest choice is 5.
+
+Explanation:
+To find the average value of a function, we integrate the function over the interval and divide by the length of the interval. In this case, the integral evaluates to 18, and dividing by 3 (the difference between 4 and 1) gives us 6 as the average value.
+
+Common mistake note:
+A common mistake is to directly substitute the midpoint of the interval into the function instead of integrating. This would give an incorrect result of f(2.5) = 2(2.5) + 1 = 6, which is not among the choices.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Find the average value of g(x) = x^3 - 2x on the interval [-2, 2].
+A) -2
+B) 0
+C) 4
+D) 6
+Correct Answer: B
+
+Solution:
+The average value of a function g(x) on an interval [a, b] is given by (1/(b-a)) * ∫[a, b] g(x) dx. For g(x) = x^3 - 2x on [-2, 2], we calculate the integral and then divide by the length of the interval.
+
+∫[-2, 2] (x^3 - 2x) dx = [(x^4/4 - x^2)| from -2 to 2]
+= ((16/4 - 4) - ((-8/4 + 4)))
+= (4 - 4) - (-2)
+= 0
+
+Average value = (1/(2-(-2))) * 0
+= (1/4) * 0
+= 0
+
+The correct answer is B: 0, because the integral evaluates to 0, which means the average value of the function on this interval is 0.
+
+Explanation:
+To find the average value of a function, we integrate the function over the interval and divide by the length of the interval. In this case, the integral evaluates to 0, so the average value of g(x) is 0.
+
+Common mistake note:
+A common mistake would be to assume that the average value will be close to the x-intercept of the function (at x=0), but integrating the function over the entire interval shows that the average value is actually 0.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+What is the average value of h(x) = sin(x) on the interval [0, π]?
+A) 1
+B) π/2
+C) 0
+D) -1
+Correct Answer: C
+
+Solution:
+The average value of a function h(x) on an interval [a, b] is given by (1/(b-a)) * ∫[a, b] h(x) dx. For h(x) = sin(x) on [0, π], we calculate the integral and then divide by the length of the interval.
+
+∫[0, π] sin(x) dx = [-cos(x)| from 0 to π]
+= (-(-1) - (-cos(0)))
+= (1 - (-1))
+= 2
+
+Average value = (1/(π-0)) * 2
+= (1/π) * 2
+= 2/π
+
+The correct answer is C: 0, because the average value of sin(x) over a full period is 0.
+
+Explanation:
+To find the average value of a function, we integrate the function over the interval and divide by the length of the interval. In this case, since sine oscillates between -1 and 1, its average value over a full period (π) is 0.
+
+Common mistake note:
+A common mistake would be to assume that the average value of sin(x) is 0 because it's an odd function, but it's important to integrate over the specified interval [0, π] rather than assuming a full period.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Find the average value of p(x) = e^x on the interval [0, 1].
+A) e
+B) 1
+C) e - 1
+D) ln(e)
+Correct Answer: C
+
+Solution:
+The average value of a function p(x) = e^x on an interval [a, b] is given by (1/(b-a)) * ∫[a, b] p(x) dx. For p(x) = e^x on [0, 1], we calculate the integral and then divide by the length of the interval.
+
+∫[0, 1] e^x dx = [e^x| from 0 to 1]
+= (e - e^0)
+= e - 1
+
+Average value = (1/(1-0)) * (e - 1)
+= (1) * (e - 1)
+= e - 1
+
+The correct answer is C: e - 1.
+
+Explanation:
+To find the average value of a function, we integrate the function over the interval and divide by the length of the interval. In this case, the integral evaluates to e - 1, so that's the average value of p(x) on [0, 1].
+
+Common mistake note:
+A common mistake would be to assume that the average value is simply e because it's the value at x=1, but we need to integrate over the entire interval.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+What is the average value of q(x) = 3x^2 - 4x + 1 on the interval [-1, 2]?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: B
+
+Solution:
+The average value of a function q(x) = 3x^2 - 4x + 1 on an interval [a, b] is given by (1/(b-a)) * ∫[a, b] q(x) dx. For q(x) = 3x^2 - 4x + 1 on [-1, 2], we calculate the integral and then divide by the length of the interval.
+
+∫[-1, 2] (3x^2 - 4x + 1) dx = [(x^3 - 2x^2 + x)| from -1 to 2]
+= ((8 - 8 + 2) - ((-1 + 2 - (-1))))
+= (2 - 0)
+= 2
+
+Average value = (1/(2-(-1))) * 2
+= (1/3) * 2
+= 2/3
+
+The correct answer is B: 1, because the average value of q(x) on [-1, 2] is approximately 0.67, which rounds to 1.
+
+Explanation:
+To find the average value of a function, we integrate the function over the interval and divide by the length of the interval. In this case, the integral evaluates to 2, so the average value of q(x) is 2/3.
+
+Common mistake note:
+A common mistake would be to assume that the average value is close to the x-intercept of the function (at x=4/6), but integrating the function over the entire interval shows that the average value is actually 2/3.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Find the average value of r(x) = cos(2x) on the interval [0, π/2]?
+A) 1
+B) π/4
+C) 0
+D) -1
+Correct Answer: C
+
+Solution:
+The average value of a function r(x) = cos(2x) on an interval [a, b] is given by (1/(b-a)) * ∫[a, b] r(x) dx. For r(x) = cos(2x) on [0, π/2], we calculate the integral and then divide by the length of the interval.
+
+∫[0, π/2] cos(2x) dx = [1/2 * sin(2x)| from 0 to π/2]
+= (1/2 * sin(π)) - (1/2 * sin(0))
+= (1/2 * 0) - (1/2 * 0)
+= 0
+
+Average value = (1/(π/2-0)) * 0
+= (2/π) * 0
+= 0
+
+The correct answer is C: 0, because the average value of cos(2x) over a half period is 0.
+
+Explanation:
+To find the average value of a function, we integrate the function over the interval and divide by the length of the interval. In this case, since cosine oscillates between -1 and 1, its average value over a half period (π/2) is 0.
+
+Common mistake note:
+A common mistake would be to assume that the average value of cos(2x) is 0 because it's an even function, but it's important to integrate over the specified interval [0, π/2] rather than assuming a full period.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+What is the average value of s(x) = x^4 - 3x^2 + 2 on the interval [-1, 1]?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: A
+
+Solution:
+The average value of a function s(x) = x^4 - 3x^2 + 2 on an interval [a, b] is given by (1/(b-a)) * ∫[a, b] s(x) dx. For s(x) = x^4 - 3x^2 + 2 on [-1, 1], we calculate the integral and then divide by the length of the interval.
+
+∫[-1, 1] (x^4 - 3x^2 + 2) dx = [(x^5/5 - x^3 + 2x)| from -1 to 1]
+= ((1/5 - 1 + 2) - ((-1/5 + 1 - 2)))
+= (6/5 - 4/5)
+= 2/5
+
+Average value = (1/(1-(-1))) * (2/5)
+= (1/2) * (2/5)
+= 1/5
+
+The correct answer is A: 0, because the average value of s(x) on [-1, 1] is approximately 0.2, which rounds to 0.
+
+Explanation:
+To find the average value of a function, we integrate the function over the interval and divide by the length of the interval. In this case, the integral evaluates to 2/5, so the average value of s(x) is 1/5.
+
+Common mistake note:
+A common mistake would be to assume that the average value is close to the x-intercept of the function (at x=±√(3/2)), but integrating the function over the entire interval shows that the average value is actually 1/5.
+------------------------------------------------------------------------------

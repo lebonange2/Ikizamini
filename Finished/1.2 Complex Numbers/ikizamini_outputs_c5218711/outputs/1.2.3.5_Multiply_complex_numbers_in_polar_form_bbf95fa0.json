@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.5",
+  "objective_text": "Multiply complex numbers in polar form",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the product of the complex numbers in polar form: (2cis(60°)) × (3cis(30°)).",
+      "choices": {
+        "A": "(5cis(90°))",
+        "B": "(6cis(90°))",
+        "C": "(6cis(120°))",
+        "D": "(5cis(120°))"
+      },
+      "correct_choice": "C",
+      "solution": "To multiply complex numbers in polar form, you multiply their magnitudes and add their angles. For (2cis(60°)) × (3cis(30°)), the product of the magnitudes is 2 × 3 = 6, and the sum of the angles is 60° + 30° = 90°. So, the result in polar form is (6cis(90°)).",
+      "explanation": "The correct answer is C because it correctly represents the product of the magnitudes (6) and the sum of the angles (90°).",
+      "common_mistake_notes": "A common mistake would be to add the magnitudes instead of multiplying them, which would lead to choice A. Another possible mistake is to misunderstand how to combine the angles, which could result in choice D."
+    },
+    {
+      "id": "2",
+      "stem": "Find the product of the complex numbers in polar form: (4cis(-45°)) × (2cis(135°)).",
+      "choices": {
+        "A": "(6cis(90°))",
+        "B": "(8cis(90°))",
+        "C": "(8cis(180°))",
+        "D": "(6cis(180°))"
+      },
+      "correct_choice": "C",
+      "solution": "To multiply complex numbers in polar form, you multiply their magnitudes and add their angles. For (4cis(-45°)) × (2cis(135°)), the product of the magnitudes is 4 × 2 = 8, and the sum of the angles is -45° + 135° = 90°. Since we're adding angles in different quadrants, we need to adjust the result to be within the range of -180° to 180°, which gives us -90°. However, since we're working with complex numbers, we add 360° to get a positive angle: -90° + 360° = 270°. So, the result in polar form is (8cis(270°)), which simplifies to (8cis(-90°)).",
+      "explanation": "The correct answer is C because it correctly represents the product of the magnitudes (8) and the adjusted sum of the angles (-90°).",
+      "common_mistake_notes": "A common mistake would be to overlook the need to adjust the angle within the range -180° to 180°, which could lead to choice A or D. Another possible mistake is to add the angles without considering their quadrants, resulting in choice B."
+    },
+    {
+      "id": "3",
+      "stem": "Find the product of the complex numbers in polar form: (5cis(270°)) × (6cis(-180°)).",
+      "choices": {
+        "A": "(30cis(90°))",
+        "B": "(30cis(450°))",
+        "C": "(30cis(0°))",
+        "D": "(30cis(-90°))"
+      },
+      "correct_choice": "D",
+      "solution": "To multiply complex numbers in polar form, you multiply their magnitudes and add their angles. For (5cis(270°)) × (6cis(-180°)), the product of the magnitudes is 5 × 6 = 30, and the sum of the angles is 270° + (-180°) = 90°. Since we're adding angles in different quadrants, we need to adjust the result to be within the range of -180° to 180°, which gives us -90°. However, since we're working with complex numbers, we add 360° to get a positive angle: -90° + 360° = 270°. So, the result in polar form is (30cis(270°)), which simplifies to (30cis(-90°)).",
+      "explanation": "The correct answer is D because it correctly represents the product of the magnitudes (30) and the adjusted sum of the angles (-90°).",
+      "common_mistake_notes": "A common mistake would be to overlook the need to adjust the angle within the range -180° to 180°, which could lead to choice A or B. Another possible mistake is to add the angles without considering their quadrants, resulting in choice C."
+    },
+    {
+      "id": "4",
+      "stem": "Find the product of the complex numbers in polar form: (7cis(120°)) × (8cis(-60°)).",
+      "choices": {
+        "A": "(56cis(60°))",
+        "B": "(56cis(180°))",
+        "C": "(56cis(120°))",
+        "D": "(56cis(0°))"
+      },
+      "correct_choice": "A",
+      "solution": "To multiply complex numbers in polar form, you multiply their magnitudes and add their angles. For (7cis(120°)) × (8cis(-60°)), the product of the magnitudes is 7 × 8 = 56, and the sum of the angles is 120° + (-60°) = 60°. So, the result in polar form is (56cis(60°)).",
+      "explanation": "The correct answer is A because it correctly represents the product of the magnitudes (56) and the sum of the angles (60°).",
+      "common_mistake_notes": "A common mistake would be to add the magnitudes instead of multiplying them, which could lead to an incorrect result. Another possible mistake is to overlook the negative angle in the second complex number, resulting in choice C."
+    },
+    {
+      "id": "5",
+      "stem": "Find the product of the complex numbers in polar form: (9cis(315°)) × (2cis(-45°)).",
+      "choices": {
+        "A": "(18cis(270°))",
+        "B": "(18cis(225°))",
+        "C": "(18cis(135°))",
+        "D": "(18cis(90°))"
+      },
+      "correct_choice": "B",
+      "solution": "To multiply complex numbers in polar form, you multiply their magnitudes and add their angles. For (9cis(315°)) × (2cis(-45°)), the product of the magnitudes is 9 × 2 = 18, and the sum of the angles is 315° + (-45°) = 270°. Since we're adding angles in different quadrants, we need to adjust the result to be within the range of -180° to 180°, which gives us -90°. However, since we're working with complex numbers, we add 360° to get a positive angle: -90° + 360° = 270°. So, the result in polar form is (18cis(270°)), which simplifies to (18cis(-90°)).",
+      "explanation": "The correct answer is B because it correctly represents the product of the magnitudes (18) and the adjusted sum of the angles (-90°).",
+      "common_mistake_notes": "A common mistake would be to overlook the need to adjust the angle within the range -180° to 180°, which could lead to choice A. Another possible mistake is to add the angles without considering their quadrants, resulting in choice C."
+    },
+    {
+      "id": "6",
+      "stem": "Find the product of the complex numbers in polar form: (4cis(45°)) × (6cis(-135°)).",
+      "choices": {
+        "A": "(24cis(90°))",
+        "B": "(24cis(270°))",
+        "C": "(24cis(180°))",
+        "D": "(24cis(0°))"
+      },
+      "correct_choice": "B",
+      "solution": "To multiply complex numbers in polar form, you multiply their magnitudes and add their angles. For (4cis(45°)) × (6cis(-135°)), the product of the magnitudes is 4 × 6 = 24, and the sum of the angles is 45° + (-135°) = -90°. Since we're working with complex numbers, we add 360° to get a positive angle: -90° + 360° = 270°. So, the result in polar form is (24cis(270°)).",
+      "explanation": "The correct answer is B because it correctly represents the product of the magnitudes (24) and the adjusted sum of the angles (270°).",
+      "common_mistake_notes": "A common mistake would be to overlook the negative angle in the second complex number, which could lead to choice A. Another possible mistake is to add the angles without considering their quadrants, resulting in choice C."
+    },
+    {
+      "id": "7",
+      "stem": "Find the product of the complex numbers in polar form: (8cis(210°)) × (5cis(-30°)).",
+      "choices": {
+        "A": "(40cis(180°))",
+        "B": "(40cis(150°))",
+        "C": "(40cis(90°))",
+        "D": "(40cis(270°))"
+      },
+      "correct_choice": "A",
+      "solution": "To multiply complex numbers in polar form, you multiply their magnitudes and add their angles. For (8cis(210°)) × (5cis(-30°)), the product of the magnitudes is 8 × 5 = 40, and the sum of the angles is 210° + (-30°) = 180°. So, the result in polar form is (40cis(180°)).",
+      "explanation": "The correct answer is A because it correctly represents the product of the magnitudes (40) and the sum of the angles (180°).",
+      "common_mistake_notes": "A common mistake would be to overlook the negative angle in the second complex number, which could lead to choice C. Another possible mistake is to add the angles without considering their quadrants, resulting in choice B."
+    }
+  ]
+}

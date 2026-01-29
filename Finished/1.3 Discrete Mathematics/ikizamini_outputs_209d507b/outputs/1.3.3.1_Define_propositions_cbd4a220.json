@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.3.1",
+  "objective_text": "Define propositions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is a proposition in logic?",
+      "choices": {
+        "A": "A statement that can be either true or false.",
+        "B": "A question that requires a yes or no answer.",
+        "C": "A collection of related ideas or concepts.",
+        "D": "An argument consisting of multiple premises and a conclusion."
+      },
+      "correct_choice": "A",
+      "solution": "A proposition is a declarative sentence (a statement) that can be either true or false. It is not a question, a collection of ideas, or an argument.",
+      "explanation": "Propositions are the building blocks of logical arguments and serve as the basis for deductive reasoning.",
+      "common_mistake_notes": "Common mistake: Choosing B (a question) - Propositions are statements, not questions. Choosing C (a collection of ideas) - Propositions are single statements, not a group of concepts. Choosing D (an argument) - Propositions can be part of an argument, but they are not arguments themselves."
+    },
+    {
+      "id": "2",
+      "stem": "Which of the following is an example of a proposition?",
+      "choices": {
+        "A": "The sky is usually blue.",
+        "B": "What time is it?",
+        "C": "Apples and oranges are both fruits.",
+        "D": "I want to go for a walk."
+      },
+      "correct_choice": "A",
+      "solution": "The statement 'The sky is usually blue.' is a proposition because it can be either true or false. The other choices are not propositions: B is a question, C is an argument with multiple premises (apples and oranges being fruits), and D expresses a desire rather than making a truth claim.",
+      "explanation": "Propositions must be declarative statements that can be evaluated for truth or falsity.",
+      "common_mistake_notes": "Common mistake: Choosing B (a question) - Propositions are not questions. Choosing C (an argument) - While the statement contains true propositions, it is an argument rather than a single proposition. Choosing D (expression of desire) - This is not a truth claim and therefore not a proposition."
+    },
+    {
+      "id": "3",
+      "stem": "In propositional logic, what does 'p' typically represent?",
+      "choices": {
+        "A": "A conclusion.",
+        "B": "A true statement.",
+        "C": "Any arbitrary proposition.",
+        "D": "The negation of another proposition."
+      },
+      "correct_choice": "C",
+      "solution": "In propositional logic, 'p' is often used as a placeholder to represent any arbitrary proposition that can be either true or false.",
+      "explanation": "Variables like 'p' are used to generalize statements and make logical arguments more concise.",
+      "common_mistake_notes": "Common mistake: Choosing B (a true statement) - 'p' can represent any proposition, not just a true one. Choosing A (a conclusion) - Conclusions are part of an argument, not individual propositions. Choosing D (the negation of another proposition) - Variables like 'p' do not inherently denote negation; they can represent any proposition."
+    },
+    {
+      "id": "4",
+      "stem": "What is the relationship between the propositions 'All birds can fly' and 'Penguins are birds'?",
+      "choices": {
+        "A": "They are equivalent.",
+        "B": "They are contradictory.",
+        "C": "They are independent.",
+        "D": "They are contrapositional."
+      },
+      "correct_choice": "C",
+      "solution": "The two propositions are independent because they can be true or false separately. 'All birds can fly' is a general statement about birds, while 'Penguins are birds' is a specific fact about penguins. Together, they do not necessarily determine the truth value of each other.",
+      "explanation": "Independence means that one proposition does not affect the truth or falsity of the other.",
+      "common_mistake_notes": "Common mistake: Choosing A (equivalent) - These propositions are not equivalent because 'Penguins are birds' does not guarantee that all birds can fly. Choosing B (contradictory) - They are not contradictory either, as it is possible for both to be true or false. Choosing D (contrapositional) - Contraposition involves negating one proposition and inverting the relationship; these propositions do not have a contrapositional relationship."
+    },
+    {
+      "id": "5",
+      "stem": "Which of the following is an example of a compound proposition?",
+      "choices": {
+        "A": "The sky is blue.",
+        "B": "It's raining or I'll go for a run.",
+        "C": "Apples are fruits and oranges are fruits.",
+        "D": "I want to eat pizza, but I'm on a diet."
+      },
+      "correct_choice": "B",
+      "solution": "The compound proposition 'It's raining or I'll go for a run.' combines two simpler propositions ('It's raining' and 'I'll go for a run') using the logical operator 'or'.",
+      "explanation": "Compound propositions are formed by combining simpler propositions using logical operators like 'and', 'or', and 'not'.",
+      "common_mistake_notes": "Common mistake: Choosing A (a simple proposition) - This is not a compound proposition. Choosing C (an argument with multiple premises) - While it contains two true propositions, it is an argument rather than a single compound proposition. Choosing D (expression of desire and a statement) - This combines a desire and a statement, but does not use logical operators to form a compound proposition."
+    },
+    {
+      "id": "6",
+      "stem": "In propositional logic, what does 'p ∧ q' mean?",
+      "choices": {
+        "A": "The conjunction of p and q.",
+        "B": "The disjunction of p and q.",
+        "C": "The negation of both p and q.",
+        "D": "The conditional relationship between p and q."
+      },
+      "correct_choice": "A",
+      "solution": "In propositional logic, 'p ∧ q' represents the conjunction (and) of two propositions, meaning that both 'p' and 'q' must be true for the compound proposition to be true.",
+      "explanation": "The symbol '∧' denotes logical conjunction or 'and'.",
+      "common_mistake_notes": "Common mistake: Choosing B (disjunction) - The symbol '∨' represents disjunction, not '∧'. Choosing C (negation of both) - The negation symbol is '~', and it applies to a single proposition. Choosing D (conditional relationship) - Conditional relationships are represented by '→' or '_iff_' in propositional logic."
+    },
+    {
+      "id": "7",
+      "stem": "What is the truth value of the proposition '(p → q) ∧ ¬q' if p is true?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Indeterminate",
+        "D": "Depends on the truth value of q"
+      },
+      "correct_choice": "B",
+      "solution": "Given that 'p' is true and '(p → q)' means 'if p, then q', if 'p' is true and the compound proposition is true, then 'q' must also be true. However, we are told that ¬q (not q) is true, which contradicts the truth of 'q'. Therefore, the entire compound proposition '(p → q) ∧ ¬q' is false.",
+      "explanation": "In this case, the truth value of 'p' does not matter because the contradiction between 'q' and ¬q makes the compound proposition false.",
+      "common_mistake_notes": "Common mistake: Choosing A (true) - The contradiction between 'q' and ¬q makes the entire compound proposition false. Choosing C (indeterminate) - There is enough information to determine the truth value of the proposition. Choosing D (depends on q) - The truth value of 'p' being true already determines that the compound proposition is false, regardless of the truth value of 'q'."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.1.4 Represent sets using set-builder notation
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.1 Set Theory Fundamentals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Which set-builder notation represents the set of all even integers greater than or equal to 0?
+A) [0, ∞)
+B) {x | x ∈ Z, x ≥ 0, x is even}
+C) {x | x > 0, x is even}
+D) {0, 2, 4, 6, ...}
+Correct Answer: B
+
+Solution:
+The set-builder notation {x | x ∈ Z, x ≥ 0, x is even} correctly represents the set of all even integers greater than or equal to 0. It specifies that x must be an element of the integers (Z), have a value greater than or equal to 0, and be even.
+
+Explanation:
+The other choices are incorrect because they either include non-even numbers (A and C) or do not specify that the set starts from 0 (D).
+
+Common mistake note:
+Common mistake: Choosing A or C because they don't require x to be even. Choosing D because it doesn't start with 0.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is the set-builder notation for the set of all prime numbers less than 15?
+A) {x | x ∈ N, 2 ≤ x < 15, x is prime}
+B) [2, 3, 5, 7, 11, 13]
+C) {x | x > 1, x has no divisors other than 1 and itself, x < 15}
+D) {2, 3, 5, 7, 11}
+Correct Answer: A
+
+Solution:
+The set-builder notation {x | x ∈ N, 2 ≤ x < 15, x is prime} correctly represents the set of all prime numbers less than 15. It specifies that x must be a natural number (N), have a value between 2 and 14 (inclusive), and be prime.
+
+Explanation:
+The other choices are incorrect because they either use interval notation (B) which is not set-builder notation, do not specify the range of values for x (C), or exclude the upper bound (D).
+
+Common mistake note:
+Common mistake: Choosing B because it uses interval notation instead of set-builder. Choosing C because it doesn't specify the exact range of numbers. Choosing D because it omits 13.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Which set-builder notation represents the set containing all integers divisible by 4?
+A) {x | x ∈ Z, x = 4k for some integer k}
+B) [0, 4, 8, 12, ...]
+C) {x | x > 0, x is a multiple of 4}
+D) {4, 8, 12, 16, ...}
+Correct Answer: A
+
+Solution:
+The set-builder notation {x | x ∈ Z, x = 4k for some integer k} correctly represents the set of all integers divisible by 4. It specifies that x must be an element of the integers (Z) and can be expressed as 4 times some integer k.
+
+Explanation:
+The other choices are incorrect because they either use interval notation (B), do not include negative numbers (C), or only include positive numbers (D).
+
+Common mistake note:
+Common mistake: Choosing B because it uses interval notation instead of set-builder. Choosing C because it excludes negative numbers. Choosing D because it only includes positive numbers.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the set-builder notation for the set containing all real numbers between -2 and 5, inclusive?
+A) {x | x ∈ R, -2 ≤ x < 5}
+B) [0, 1, 2, 3, 4, 5]
+C) {x | x ∈ R, x > -2 and x < 5}
+D) {x | x ∈ R, -2 ≤ x ≤ 5}
+Correct Answer: D
+
+Solution:
+The set-builder notation {x | x ∈ R, -2 ≤ x ≤ 5} correctly represents the set of all real numbers between -2 and 5, inclusive. It specifies that x must be a real number (R) and have a value between -2 and 5 (inclusive).
+
+Explanation:
+The other choices are incorrect because they either exclude one or both endpoints (A, C), use interval notation with only some elements listed (B), or do not specify the set is inclusive of the endpoints (D without ≤).
+
+Common mistake note:
+Common mistake: Choosing A or C because they don't include the endpoints. Choosing B because it uses interval notation and lists only some elements.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Which set-builder notation represents the set of all odd integers less than 10?
+A) {x | x ∈ Z, x < 10, x is odd}
+B) [1, 3, 5, 7, 9]
+C) {x | x > -10, x has no even divisors, x < 10}
+D) {1, 3, 5, 7}
+Correct Answer: A
+
+Solution:
+The set-builder notation {x | x ∈ Z, x < 10, x is odd} correctly represents the set of all odd integers less than 10. It specifies that x must be an element of the integers (Z), have a value less than 10, and be odd.
+
+Explanation:
+The other choices are incorrect because they either use interval notation (B) which is not set-builder notation, do not specify the range of values for x (C), or exclude the upper bound (D).
+
+Common mistake note:
+Common mistake: Choosing B because it uses interval notation instead of set-builder. Choosing C because it doesn't specify the exact range of numbers. Choosing D because it omits 9.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the set-builder notation for the set containing all even integers from -10 to 10?
+A) {x | x ∈ Z, -10 ≤ x < 10, x is even}
+B) [0, 2, 4, 6, 8]
+C) {x | x ∈ Z, x = 2k for some integer k, -10 ≤ k ≤ 10}
+D) {-10, -8, -6, ..., 10}
+Correct Answer: C
+
+Solution:
+The set-builder notation {x | x ∈ Z, x = 2k for some integer k, -10 ≤ k ≤ 10} correctly represents the set of all even integers from -10 to 10. It specifies that x must be an element of the integers (Z), can be expressed as 2 times some integer k, and k must be between -10 and 10 (inclusive).
+
+Explanation:
+The other choices are incorrect because they either exclude one or both endpoints (A, B), do not specify that x is even using set-builder notation (D), or use interval notation with only some elements listed (B).
+
+Common mistake note:
+Common mistake: Choosing A or B because they don't include the endpoints. Choosing D because it doesn't specify x is even using set-builder notation.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Which set-builder notation represents the set of all real numbers that are not rational?
+A) {x | x ∈ R, x is irrational}
+B) [π, √2, e, ...]
+C) {x | x > 0 and x is not a ratio of two integers}
+D) {x | x ≠ p/q for any integers p and q}
+Correct Answer: A
+
+Solution:
+The set-builder notation {x | x ∈ R, x is irrational} correctly represents the set of all real numbers that are not rational. It specifies that x must be a real number (R) and cannot be expressed as a ratio of two integers.
+
+Explanation:
+The other choices are incorrect because they either use interval notation (B) which is not set-builder notation, do not exclude rational numbers (C), or use an ambiguous statement (D) that could be interpreted as including all real numbers.
+
+Common mistake note:
+Common mistake: Choosing B because it uses interval notation instead of set-builder. Choosing C because it doesn't exclude rational numbers. Choosing D because the statement is ambiguous.
+------------------------------------------------------------------------------

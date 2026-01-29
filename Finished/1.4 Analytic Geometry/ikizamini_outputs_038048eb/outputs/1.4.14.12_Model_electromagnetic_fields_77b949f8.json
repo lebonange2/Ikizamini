@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.14.12",
+  "objective_text": "Model electromagnetic fields",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "A parallel-plate capacitor has two plates with a voltage difference of 50 V and a plate separation of 0.01 m. What is the magnitude of the electric field between the plates?",
+      "choices": {
+        "A": "5 N/ C",
+        "B": "500 N/ C",
+        "C": "5,000 N/ C",
+        "D": "50,000 N/ C"
+      },
+      "correct_choice": "C",
+      "solution": "The electric field between the plates of a parallel-plate capacitor is given by E = V/d. With V = 50 V and d = 0.01 m, we calculate: E = 50 V / 0.01 m = 5,000 N/ C.",
+      "explanation": "The correct answer is obtained using the formula for electric field in a parallel-plate capacitor.",
+      "common_mistake_notes": "A common mistake would be to forget to divide by the plate separation or use incorrect units."
+    },
+    {
+      "id": ":Q2",
+      "stem": "An electromagnetic wave has a frequency of 5 GHz. What is its wavelength in meters?",
+      "choices": {
+        "A": "0.6 m",
+        "B": "0.06 m",
+        "C": "0.006 m",
+        "D": "0.0006 m"
+      },
+      "correct_choice": "B",
+      "solution": "The relationship between frequency (f) and wavelength (λ) of an electromagnetic wave is given by c = fλ, where c is the speed of light (approximately 3 x 10^8 m/s). Rearranging to solve for λ: λ = c/f. With c = 3 x 10^8 m/s and f = 5 x 10^9 Hz, we calculate: λ = (3 x 10^8 m/ s) / (5 x 10^9 Hz) = 0.06 m.",
+      "explanation": "The correct answer is found using the speed of light and frequency to determine the wavelength.",
+      "common_mistake_notes": "A common mistake would be to forget to use the speed of light or convert units incorrectly."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Which of the following best describes the behavior of electromagnetic waves in a vacuum?",
+      "choices": {
+        "A": "They are absorbed by matter.",
+        "B": "They travel at different speeds depending on their frequency.",
+        "C": "They travel at the speed of light.",
+        "D": "They cannot propagate through a vacuum."
+      },
+      "correct_choice": "C",
+      "solution": "In a vacuum, electromagnetic waves travel at the constant speed of light, approximately 3 x 10^8 m/s. They are not absorbed by matter and their speed is independent of frequency.",
+      "explanation": "The correct answer reflects the fundamental property of electromagnetic waves in a vacuum.",
+      "common_mistake_notes": "A common mistake would be to assume that light slows down or is absorbed when traveling through a vacuum."
+    },
+    {
+      "id": ":Q4",
+      "stem": "What is the relationship between electric field and magnetic field in an electromagnetic wave?",
+      "choices": {
+        "A": "The electric field and magnetic field are perpendicular to each other and the direction of propagation.",
+        "B": "The electric field and magnetic field are parallel to each other and the direction of propagation.",
+        "C": "The electric field is always zero when the magnetic field is at its maximum value.",
+        "D": "The electric field and magnetic field have no specific relationship."
+      },
+      "correct_choice": "A",
+      "solution": "In an electromagnetic wave, the electric field and magnetic field oscillate perpendicular to each other and also to the direction of propagation. This configuration is known as transverse polarization.",
+      "explanation": "The correct answer describes the characteristic arrangement of fields in an electromagnetic wave.",
+      "common_mistake_notes": "A common mistake would be to think that the fields are parallel or have no specific relationship."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Which of the following best describes the behavior of a charged particle moving in a uniform magnetic field?",
+      "choices": {
+        "A": "The particle moves in a straight line.",
+        "B": "The particle moves in a circular orbit perpendicular to the magnetic field.",
+        "C": "The particle moves in a helical path along the direction of the magnetic field.",
+        "D": "The particle remains stationary."
+      },
+      "correct_choice": "B",
+      "solution": "A charged particle moving in a uniform magnetic field experiences a force that causes it to move in a circular orbit perpendicular to both the magnetic field and its initial velocity.",
+      "explanation": "The correct answer describes the motion of a charged particle in a magnetic field, known as cyclotron motion.",
+      "common_mistake_notes": "A common mistake would be to think that the particle moves along the direction of the magnetic field or remains stationary."
+    },
+    {
+      "id": ":Q6",
+      "stem": "What is the primary difference between an electromagnetic wave and a sound wave?",
+      "choices": {
+        "A": "Electromagnetic waves require a medium to propagate, while sound waves do not.",
+        "B": "Sound waves can travel through a vacuum, while electromagnetic waves cannot.",
+        "C": "Electromagnetic waves have electric and magnetic fields, while sound waves have pressure variations.",
+        "D": "Sound waves are mechanical waves, while electromagnetic waves are not."
+      },
+      "correct_choice": "C",
+      "solution": "The primary difference between electromagnetic waves and sound waves is that electromagnetic waves consist of oscillating electric and magnetic fields, whereas sound waves involve oscillations in air pressure or other media.",
+      "explanation": "The correct answer highlights the fundamental differences between these two types of waves.",
+      "common_mistake_notes": "A common mistake would be to confuse the requirements for propagation or the nature of the wave itself."
+    },
+    {
+      "id": ":Q7",
+      "stem": "What is the primary source of electromagnetic radiation in visible light?",
+      "choices": {
+        "A": "Atoms and molecules absorbing and emitting photons.",
+        "B": "Nuclear fusion reactions in stars.",
+        "C": "Thermal energy from hot objects.",
+        "D": "Electric currents flowing through conductors."
+      },
+      "correct_choice": "A",
+      "solution": "Visible light, a part of the electromagnetic spectrum, is primarily produced by the absorption and emission of photons by atoms and molecules, often due to electronic transitions within these particles.",
+      "explanation": "The correct answer explains the origin of visible light in terms of atomic and molecular processes.",
+      "common_mistake_notes": "A common mistake would be to associate visible light with nuclear reactions or thermal energy sources."
+    }
+  ]
+}

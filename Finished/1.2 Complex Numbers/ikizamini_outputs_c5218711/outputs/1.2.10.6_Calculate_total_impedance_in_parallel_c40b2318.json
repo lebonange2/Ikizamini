@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.10.6",
+  "objective_text": "Calculate total impedance in parallel",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the total impedance of two components connected in parallel: a 5 Ω resistor and a 3亨利电感.",
+      "choices": {
+        "A": "2 Ω",
+        "B": "8 Ω",
+        "C": "7.07 Ω",
+        "D": "6 Ω"
+      },
+      "correct_choice": "C",
+      "solution": "When components are connected in parallel, the total impedance (Z_total) is found using the formula: 1/Z_total = 1/Z1 + 1/Z2. For a resistor (R) and an inductive reactance (XL), Z = R + jXL. Given Z1 = 5 Ω (resistor) and Z2 = j3亨利, we can calculate Z_total as follows: 1/Z_total = 1/5 + 1/(j3) = (1/5) - (j/3). To find the total impedance, we take the reciprocal of this complex number: Z_total = 1 / (1/5 - j/3) = 7.07 Ω.",
+      "explanation": "The correct answer is found by applying the formula for parallel impedances and converting the inductive reactance to its imaginary form. Choice A is too low, choice B is too high, and choice D does not follow the correct calculation method.",
+      "common_mistake_notes": "A common mistake is forgetting to convert the inductive reactance (XL) to an imaginary number (jXL) before calculating the reciprocal."
+    },
+    {
+      "id": ":2",
+      "stem": "Calculate the total impedance of a parallel circuit with a 10 Ω resistor, a 4亨利电感, and a 6 μF capacitor. The frequency is 50 Hz.",
+      "choices": {
+        "A": "3.7 Ω",
+        "B": "8.9 Ω",
+        "C": "2.8 Ω",
+        "D": "6.7 Ω"
+      },
+      "correct_choice": "B",
+      "solution": "The total impedance in parallel for a resistor, an inductive reactance (XL), and a capacitive reactance (XC) is given by: 1/Z_total = 1/R + 1/XL - 1/XC. Given R = 10 Ω, XL = 2πfL = 2π(50)(4亨利) = 125.66 Ω, and XC = 1/(2πfC) = 1/(2π(50)(6 μF)) = 0.057 Ω, we can calculate Z_total as follows: 1/Z_total = 1/10 + 1/125.66 - 1/0.057 = (0.1) + (0.0079) - (18.5185). Taking the reciprocal gives Z_total ≈ 8.9 Ω.",
+      "explanation": "The correct answer is found by applying the formula for parallel impedances with all three components and using the given frequency to calculate the reactances. Choice A is too low, choice C is too low, and choice D does not follow the correct calculation method.",
+      "common_mistake_notes": "A common mistake is forgetting to include the capacitive reactance (XC) in the calculation or misusing the formula for capacitance."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the total impedance of a parallel circuit consisting of a 6 Ω resistor, a 2亨利电感, and a 4 μF capacitor at 100 Hz.",
+      "choices": {
+        "A": "3.5 Ω",
+        "B": "9.7 Ω",
+        "C": "4.8 Ω",
+        "D": "7.1 Ω"
+      },
+      "correct_choice": "C",
+      "solution": "The total impedance in parallel for a resistor, an inductive reactance (XL), and a capacitive reactance (XC) is given by: 1/Z_total = 1/R + 1/XL - 1/XC. Given R = 6 Ω, XL = 2πfL = 2π(100)(2亨利) = 400 Ω, and XC = 1/(2πfC) = 1/(2π(100)(4 μF)) = 0.039 Ω, we can calculate Z_total as follows: 1/Z_total = 1/6 + 1/400 - 1/0.039 = (0.167) + (0.0025) - (25.641). Taking the reciprocal gives Z_total ≈ 4.8 Ω.",
+      "explanation": "The correct answer is found by applying the formula for parallel impedances with all three components and using the given frequency to calculate the reactances. Choice A is too low, choice B is too high, and choice D does not follow the correct calculation method.",
+      "common_mistake_notes": "A common mistake is forgetting to include the capacitive reactance (XC) in the calculation or misusing the formula for capacitance."
+    },
+    {
+      "id": ":4",
+      "stem": "Calculate the total impedance of a parallel circuit with a 2 Ω resistor, a 3亨利电感, and a capacitor with a reactance of -6 Ω at 1 kHz.",
+      "choices": {
+        "A": "1.5 Ω",
+        "B": "4.5 Ω",
+        "C": "3 Ω",
+        "D": "2.8 Ω"
+      },
+      "correct_choice": "C",
+      "solution": "The total impedance in parallel for a resistor, an inductive reactance (XL), and a capacitive reactance (XC) is given by: 1/Z_total = 1/R + 1/XL - 1/XC. Given R = 2 Ω, XL = 2πfL = 2π(1000)(3亨利) = 1884.96 Ω, and XC = -6 Ω (capacitive reactance is negative), we can calculate Z_total as follows: 1/Z_total = 1/2 + 1/1884.96 - 1/-6 = (0.5) + (0.00053) + (0.1667). Taking the reciprocal gives Z_total ≈ 3 Ω.",
+      "explanation": "The correct answer is found by applying the formula for parallel impedances with all three components and considering the negative capacitive reactance. Choice A is too low, choice B is too high, and choice D does not follow the correct calculation method.",
+      "common_mistake_notes": "A common mistake is forgetting to include the capacitive reactance (XC) in the calculation or misinterpreting the negative sign for capacitive reactance."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the total impedance of a parallel circuit with a 4 Ω resistor, a 6亨利电感, and a capacitor with a reactance of 8 Ω at 200 Hz.",
+      "choices": {
+        "A": "3.2 Ω",
+        "B": "5.6 Ω",
+        "C": "2.5 Ω",
+        "D": "4.1 Ω"
+      },
+      "correct_choice": "B",
+      "solution": "The total impedance in parallel for a resistor, an inductive reactance (XL), and a capacitive reactance (XC) is given by: 1/Z_total = 1/R + 1/XL - 1/XC. Given R = 4 Ω, XL = 2πfL = 2π(200)(6亨利) = 753.98 Ω, and XC = 8 Ω (capacitive reactance), we can calculate Z_total as follows: 1/Z_total = 1/4 + 1/753.98 - 1/8 = (0.25) + (0.00133) - (0.125). Taking the reciprocal gives Z_total ≈ 5.6 Ω.",
+      "explanation": "The correct answer is found by applying the formula for parallel impedances with all three components and considering the capacitive reactance. Choice A is too low, choice C is too low, and choice D does not follow the correct calculation method.",
+      "common_mistake_notes": "A common mistake is forgetting to include the capacitive reactance (XC) in the calculation or misinterpreting its value."
+    },
+    {
+      "id": ":6",
+      "stem": "Calculate the total impedance of a parallel circuit with a 3 Ω resistor, a 4亨利电感, and a capacitor with a reactance of -5 Ω at 10 kHz.",
+      "choices": {
+        "A": "1.8 Ω",
+        "B": "4.2 Ω",
+        "C": "2.6 Ω",
+        "D": "3.4 Ω"
+      },
+      "correct_choice": "C",
+      "solution": "The total impedance in parallel for a resistor, an inductive reactance (XL), and a capacitive reactance (XC) is given by: 1/Z_total = 1/R + 1/XL - 1/XC. Given R = 3 Ω, XL = 2πfL = 2π(10000)(4亨利) = 25132.74 Ω, and XC = -5 Ω (capacitive reactance is negative), we can calculate Z_total as follows: 1/Z_total = 1/3 + 1/25132.74 - 1/-5 = (0.333) + (0.00004) + (0.2). Taking the reciprocal gives Z_total ≈ 2.6 Ω.",
+      "explanation": "The correct answer is found by applying the formula for parallel impedances with all three components and considering the negative capacitive reactance. Choice A is too low, choice B is too high, and choice D does not follow the correct calculation method.",
+      "common_mistake_notes": "A common mistake is forgetting to include the capacitive reactance (XC) in the calculation or misinterpreting the negative sign for capacitive reactance."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the total impedance of a parallel circuit with a 5 Ω resistor, a 2亨利电感, and a capacitor with a reactance of 3 Ω at 400 Hz.",
+      "choices": {
+        "A": "2.8 Ω",
+        "B": "4.6 Ω",
+        "C": "3.5 Ω",
+        "D": "1.9 Ω"
+      },
+      "correct_choice": "C",
+      "solution": "The total impedance in parallel for a resistor, an inductive reactance (XL), and a capacitive reactance (XC) is given by: 1/Z_total = 1/R + 1/XL - 1/XC. Given R = 5 Ω, XL = 2πfL = 2π(400)(2亨利) = 5026.55 Ω, and XC = 3 Ω (capacitive reactance), we can calculate Z_total as follows: 1/Z_total = 1/5 + 1/5026.55 - 1/3 = (0.2) + (0.000198) - (0.333). Taking the reciprocal gives Z_total ≈ 3.5 Ω.",
+      "explanation": "The correct answer is found by applying the formula for parallel impedances with all three components and considering the capacitive reactance. Choice A is too low, choice B is too high, and choice D does not follow the correct calculation method.",
+      "common_mistake_notes": "A common mistake is forgetting to include the capacitive reactance (XC) in the calculation or misinterpreting its value."
+    }
+  ]
+}

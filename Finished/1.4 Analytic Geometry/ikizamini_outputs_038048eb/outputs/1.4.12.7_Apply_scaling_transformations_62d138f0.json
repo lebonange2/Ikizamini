@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.12.7",
+  "objective_text": "Apply scaling transformations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "A shape is transformed by scaling with a factor of 2. How does the area change?",
+      "choices": {
+        "A": "Stays the same",
+        "B": "Increases by a factor of 2",
+        "C": "Increases by a factor of 4",
+        "D": "Decreases by a factor of 1/2"
+      },
+      "correct_choice": "C",
+      "solution": "When scaling a shape with a factor of 2, each dimension is multiplied by 2. Area is calculated as length times width, so multiplying both dimensions by 2 results in an area increase of 4 (2^2). Therefore, the correct answer is C: Increases by a factor of 4.",
+      "explanation": "Scaling affects area differently than it does perimeter or shape; remember that area scales with the square of the scaling factor.",
+      "common_mistake_notes": "Common mistake: Choosing A, thinking that area would stay the same. This is incorrect because area increases proportionally to the square of the scale factor."
+    },
+    {
+      "id": ":2",
+      "stem": "A rectangle has a length of 6 units and width of 3 units. After scaling by a factor of 1/3, what is its new area?",
+      "choices": {
+        "A": "54 units^2",
+        "B": "18 units^2",
+        "C": "6 units^2",
+        "D": "2 units^2"
+      },
+      "correct_choice": "D",
+      "solution": "The new length after scaling by 1/3 is 6 / 3 = 2 units, and the new width is 3 / 3 = 1 unit. The new area is 2 * 1 = 2 units^2. So, the correct answer is D: 2 units^2.",
+      "explanation": "Scaling reduces both dimensions proportionally; calculate the new dimensions and multiply them to find the new area.",
+      "common_mistake_notes": "Common mistake: Multiplying the original area by 1/3. This would be correct for perimeter, but not for area which scales with the square of the scale factor."
+    },
+    {
+      "id": ":3",
+      "stem": "A triangle has an area of 24 square units. If it is scaled up by a factor of 5, what will its new area be?",
+      "choices": {
+        "A": "120 square units",
+        "B": "600 square units",
+        "C": "1200 square units",
+        "D": "300 square units"
+      },
+      "correct_choice": "B",
+      "solution": "The new area after scaling by a factor of 5 is 24 * (5^2) = 24 * 25 = 600 square units. So, the correct answer is B: 600 square units.",
+      "explanation": "Area scales with the square of the scale factor; multiply the original area by the square of the scaling factor.",
+      "common_mistake_notes": "Common mistake: Multiplying the original area by 5. This would be correct for linear dimensions, but not for area which scales with the square of the scale factor."
+    },
+    {
+      "id": ":4",
+      "stem": "A circle has a radius of 4 units. If it is scaled down by a factor of 2, what will its new circumference be?",
+      "choices": {
+        "A": "8π units",
+        "B": "16π units",
+        "C": "32π units",
+        "D": "64π units"
+      },
+      "correct_choice": "A",
+      "solution": "The new radius after scaling by a factor of 2 is 4 / 2 = 2 units. The circumference of a circle is 2πr, so the new circumference is 2π * 2 = 8π units. So, the correct answer is A: 8π units.",
+      "explanation": "Circumference scales linearly with the scale factor; calculate the new radius and multiply by 2π.",
+      "common_mistake_notes": "Common mistake: Multiplying the original circumference by 1/2. This would be correct for area, but not for circumference which scales linearly with the scale factor."
+    },
+    {
+      "id": ":5",
+      "stem": "A square has an area of 36 square units. If it is scaled up by a factor of 4, what will its new perimeter be?",
+      "choices": {
+        "A": "12 units",
+        "B": "24 units",
+        "C": "48 units",
+        "D": "96 units"
+      },
+      "correct_choice": "C",
+      "solution": "The new side length after scaling by a factor of 4 is \textsqrt{36 * 4} = 12 units. The perimeter of a square is 4s, so the new perimeter is 4 * 12 = 48 units. So, the correct answer is C: 48 units.",
+      "explanation": "Perimeter scales linearly with the scale factor; calculate the new side length and multiply by 4.",
+      "common_mistake_notes": "Common mistake: Multiplying the original perimeter by 4. This would be correct for area, but not for perimeter which scales linearly with the scale factor."
+    },
+    {
+      "id": ":6",
+      "stem": "A cube has a volume of 64 cubic units. If it is scaled down by a factor of 3, what will its new volume be?",
+      "choices": {
+        "A": "216 cubic units",
+        "B": "72 cubic units",
+        "C": "27 cubic units",
+        "D": "8 cubic units"
+      },
+      "correct_choice": "D",
+      "solution": "The new side length after scaling by a factor of 3 is \textsqrt[3]{64 / 3} = 4/3 units. The volume of a cube is s^3, so the new volume is (4/3)^3 = 8 cubic units. So, the correct answer is D: 8 cubic units.",
+      "explanation": "Volume scales with the cube of the scale factor; calculate the new side length and raise it to the power of 3.",
+      "common_mistake_notes": "Common mistake: Multiplying the original volume by 1/3. This would be correct for linear dimensions, but not for volume which scales with the cube of the scale factor."
+    },
+    {
+      "id": ":7",
+      "stem": "A parallelogram has a base of 8 units and height of 6 units. If it is scaled up by a factor of 2, what will its new area be?",
+      "choices": {
+        "A": "96 square units",
+        "B": "48 square units",
+        "C": "24 square units",
+        "D": "12 square units"
+      },
+      "correct_choice": "B",
+      "solution": "The new base after scaling by a factor of 2 is 8 * (1/2) = 4 units, and the new height is 6 * (1/2) = 3 units. The new area is 4 * 3 = 12 square units. So, the correct answer is B: 12 square units.",
+      "explanation": "Area scales with the product of scaling factors for base and height; calculate the new dimensions and multiply them.",
+      "common_mistake_notes": "Common mistake: Multiplying the original area by 2. This would be correct if only one dimension was scaled, but not when both are scaled independently."
+    }
+  ]
+}

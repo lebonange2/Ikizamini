@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.9.14",
+  "objective_text": "Apply to algorithm design",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "Which of the following is an appropriate approach for designing a sorting algorithm that minimizes time complexity?",
+      "choices": {
+        "A": "Linear search",
+        "B": "Bubble sort",
+        "C": "Quicksort",
+        "D": "Selection sort"
+      },
+      "correct_choice": "C",
+      "solution": "Quicksort has an average-case time complexity of O(n log n), making it a more efficient choice for sorting large datasets compared to linear search (O(n)), bubble sort (O(n^2)), and selection sort (O(n^2)).",
+      "explanation": "Efficient algorithm design involves selecting algorithms with good time complexity for the given problem.",
+      "common_mistake_notes": "Common mistake: Choosing B or D, which are less efficient sorting algorithms."
+    },
+    {
+      "id": "Xyz456",
+      "stem": "What is a common strategy in dynamic programming to solve optimization problems?",
+      "choices": {
+        "A": "Divide and conquer",
+        "B": "Backtracking",
+        "C": "Greedy approach",
+        "D": "Top-down with memoization"
+      },
+      "correct_choice": "D",
+      "solution": "Dynamic programming often employs a top-down approach with memoization to avoid redundant calculations and solve optimization problems efficiently.",
+      "explanation": "Memoization helps store previously computed results, reducing the time complexity of dynamic programming algorithms.",
+      "common_mistake_notes": "Common mistake: Choosing C, which is more suitable for solving problems where making the best choice at each step leads to an optimal solution."
+    },
+    {
+      "id": "Mnb789",
+      "stem": "Which algorithm design paradigm is used in Dijkstra's shortest path algorithm?",
+      "choices": {
+        "A": "Divide and conquer",
+        "B": "Greedy approach",
+        "C": "Brute force",
+        "D": "Graph traversal"
+      },
+      "correct_choice": "B",
+      "solution": "Dijkstra's algorithm follows a greedy approach, always selecting the closest unvisited vertex to expand the shortest path.",
+      "explanation": "The greedy strategy makes decisions based on the best immediate choice without considering future consequences.",
+      "common_mistake_notes": "Common mistake: Choosing A, which is more commonly associated with algorithms like merge sort or quicksort."
+    },
+    {
+      "id": "Qwe101",
+      "stem": "Which of the following is an example of a divide-and-conquer algorithm?",
+      "choices": {
+        "A": "Binary search",
+        "B": "Merge sort",
+        "C": "Prim's minimum spanning tree",
+        "D": "Floyd-Warshall shortest paths"
+      },
+      "correct_choice": "B",
+      "solution": "Merge sort divides the input array into smaller subarrays, sorts them recursively, and then merges them back together.",
+      "explanation": "Divide-and-conquer algorithms break a problem into smaller instances of the same problem.",
+      "common_mistake_notes": "Common mistake: Choosing C or D, which are based on different strategies (greedy for Prim's and dynamic programming for Floyd-Warshall)."
+    },
+    {
+      "id": "Rty202",
+      "stem": "What is a key aspect of the greedy algorithm used in the activity selection problem?",
+      "choices": {
+        "A": "Sorting activities by their finish times",
+        "B": "Picking the longest activity first",
+        "C": "Minimizing the total duration",
+        "D": "Maximizing the number of non-overlapping activities"
+      },
+      "correct_choice": "D",
+      "solution": "In the activity selection problem, the greedy strategy is to pick the next activity that doesn't overlap with any previously selected ones.",
+      "explanation": "The goal of the activity selection problem is to maximize the number of non-overlapping activities.",
+      "common_mistake_notes": "Common mistake: Choosing C, which is not the primary objective of the algorithm."
+    },
+    {
+      "id": "Uij303",
+      "stem": "Which algorithm design paradigm is used in the knapsack problem?",
+      "choices": {
+        "A": "Dynamic programming",
+        "B": "Greedy approach",
+        "C": "Divide and conquer",
+        "D": "Backtracking"
+      },
+      "correct_choice": "A",
+      "solution": "The knapsack problem often uses dynamic programming to find the maximum value that can be obtained within a given weight limit.",
+      "explanation": "Dynamic programming is suitable for optimization problems with overlapping subproblems, like the knapsack problem.",
+      "common_mistake_notes": "Common mistake: Choosing B, which might not guarantee an optimal solution in this case."
+    },
+    {
+      "id": "Kol404",
+      "stem": "What algorithm design paradigm is used in the A* search algorithm?",
+      "choices": {
+        "A": "Divide and conquer",
+        "B": "Greedy approach",
+        "C": "Dynamic programming",
+        "D": "Heuristics-based search"
+      },
+      "correct_choice": "D",
+      "solution": "A* search uses heuristics to guide its search towards the goal, making it a more efficient pathfinding algorithm.",
+      "explanation": "Heuristics-based algorithms use an estimate of the remaining cost to reach the solution.",
+      "common_mistake_notes": "Common mistake: Choosing B, which does not take advantage of heuristic information."
+    }
+  ]
+}

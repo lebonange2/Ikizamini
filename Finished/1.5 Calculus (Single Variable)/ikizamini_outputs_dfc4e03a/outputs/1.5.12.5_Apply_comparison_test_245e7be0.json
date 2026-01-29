@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.12.5",
+  "objective_text": "Apply comparison test",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":question_1",
+      "stem": "Determine if the series converges or diverges using the Comparison Test: ∑(n=1 to infinity) (3^n)/(2^(n+1))",
+      "choices": {
+        "A": "Convergent by Direct Comparison Test with 1/(n^2).",
+        "B": "Divergent by Limit Comparison Test with 1/n.",
+        "C": "Divergent by p-series test.",
+        "D": "Incorrect choice."
+      },
+      "correct_choice": "B",
+      "solution": "To apply the comparison test, we need to find another series whose convergence or divergence is known and compare it with our given series. The given series is ∑(3^n)/(2^(n+1)). We can rewrite this as ∑((3/2)^n). Since (3/2) > 1, the series diverges by itself. However, we are asked to use comparison test, so let's compare it with another series that diverges. A good choice would be 1/n: ((3/2)^n) / [1/n] = (3/2)^n * n. As n approaches infinity, this ratio goes to infinity because the polynomial growth of n dominates the exponential growth of (3/2)^n. Since our series is eventually larger than a divergent series, it also diverges by the Limit Comparison Test.",
+      "explanation": "The Limit Comparison Test states that if lim (n→∞) [a_n / b_n] exists and is greater than 0 but finite, and ∑b_n diverges, then ∑a_n also diverges. In this case, we found that the limit goes to infinity, which implies our series grows faster than a divergent series.",
+      "common_mistake_notes": "A common mistake would be to choose A, thinking that the given series is eventually smaller than 1/(n^2). However, the Limit Comparison Test is more appropriate here because it compares growth rates. Another mistake could be choosing C, but comparing with a p-series wouldn't help since our series doesn't have a standard form."
+    },
+    {
+      "id": ":question_2",
+      "stem": "Determine if the series converges or diverges using the Comparison Test: ∑(n=1 to infinity) (ln(n))/n^3",
+      "choices": {
+        "A": "Convergent by Direct Comparison Test with 1/n.",
+        "B": "Divergent by Limit Comparison Test with 1/√n.",
+        "C": "Incorrect choice.",
+        "D": "Incorrect choice."
+      },
+      "correct_choice": "A",
+      "solution": "To apply the comparison test, we need to find another series whose convergence or divergence is known and compare it with our given series. The given series is ∑(ln(n))/n^3. We know that ln(n) grows much slower than n^3 as n approaches infinity. Let's compare this series with 1/n: (ln(n))/n^3 < 1/n for large enough n, because the growth of n^3 dominates the logarithmic growth of ln(n). Since 1/n converges by p-series test (p > 1), our series also converges by the Direct Comparison Test.",
+      "explanation": "The Direct Comparison Test states that if 0 ≤ a_n ≤ b_n for all n greater than some N and ∑b_n converges, then ∑a_n also converges. In this case, we found that (ln(n))/n^3 < 1/n for large enough n, which implies our series is eventually smaller than the convergent p-series.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that 1/√n might be a better comparison series. However, 1/√n has a p-value of 0.5, which is less than 1, and thus it converges by the p-series test. Another mistake could be choosing C or D, but they are not valid choices for this question."
+    },
+    {
+      "id": ":question_3",
+      "stem": "Determine if the series converges or diverges using the Comparison Test: ∑(n=1 to infinity) (2^... [truncated]...}]},",
+      "choices": {
+        "A": "Convergent by Direct Comparison Test with 1/(n^2).",
+        "B": "Divergent by Limit Comparison Test with 1/n.",
+        "C": "Incorrect choice.",
+        "D": "Incorrect choice."
+      },
+      "correct_choice": "B",
+      "solution": "To apply the comparison test, we need to find another series whose convergence or divergence is known and compare it with our given series. The given series is ∑(2^... [truncated]...}]},",
+      "explanation": "The Direct Comparison Test states that if 0 ≤ a_n ≤ b_n for all n greater than some N and ∑b_n converges, then ∑a_n also converges. In this case, we found that (ln(n))/n^3 < 1/n for large enough n, which implies our series is eventually smaller than the convergent p-series.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that 1/√n might be a better comparison series. However, 1/√n has a p-value of 0.5, which is less than 1, and thus it converges by the p-series test. Another mistake could be choosing C or D, but they are not valid choices for this question."
+    },
+    {
+      "id": ":question_3",
+      "stem": "Determine if the series converges or diverges using the Comparison Test: ∑(n=1 to infinity) (2^... [truncated]...}]},",
+      "choices": {
+        "A": "Convergent by Direct Comparison Test with 1/(n^2).",
+        "B": "Divergent by Limit Comparison Test with 1/n.",
+        "C": "Incorrect choice.",
+        "D": "Incorrect choice."
+      },
+      "correct_choice": "B",
+      "solution": "To apply the comparison test, we need to find another series whose convergence or divergence is known and compare it with our given series. The given series is ∑(2^... [truncated]...}]},",
+      "explanation": "The Direct Comparison Test states that if 0 ≤ a_n ≤ b_n for all n greater than some N and ∑b_n converges, then ∑a_n also converges. In this case, we found that (ln(n))/n^3 < 1/n for large enough n, which implies our series is eventually smaller than the convergent p-series.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that 1/√n might be a better comparison series. However, 1/√n has a p-value of 0.5, which is less than 1, and thus it converges by the p-series test. Another mistake could be choosing C or D, but they are not valid choices for this question."
+    },
+    {
+      "id": ":question_4",
+      "stem": "Determine if the series converges or diverges using the Comparison Test: ∑(n=1 to infinity) (sin(n))/n^2",
+      "choices": {
+        "A": "Convergent by Direct Comparison Test with 1/n.",
+        "B": "Divergent by Limit Comparison Test with 1/√n.",
+        "C": "Incorrect choice.",
+        "D": "Incorrect choice."
+      },
+      "correct_choice": "A",
+      "solution": "To apply the comparison test, we need to find another series whose convergence or divergence is known and compare it with our given series. The given series is ∑(sin(n))/n^2. We know that |sin(n)| ≤ 1 for all n, so (sin(n))/n^2 is bounded by 1/n^2. Since 1/n^2 converges by p-series test (p = 2 > 1), our series also converges by the Direct Comparison Test.",
+      "explanation": "The Direct Comparison Test states that if 0 ≤ a_n ≤ b_n for all n greater than some N and ∑b_n converges, then ∑a_n also converges. In this case, we found that |sin(n)|/n^2 ≤ 1/n^2 for all n, which implies our series is eventually smaller than the convergent p-series.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that 1/√n might be a better comparison series. However, 1/√n has a p-value of 0.5, which is less than 1, and thus it converges by the p-series test. Another mistake could be choosing C or D, but they are not valid choices for this question."
+    },
+    {
+      "id": ":question_5",
+      "stem": "Determine if the series converges or diverges using the Comparison Test: ∑(n=1 to infinity) (cos(n))/√n",
+      "choices": {
+        "A": "Convergent by Direct Comparison Test with 1/n.",
+        "B": "Divergent by Limit Comparison Test with 1/√n.",
+        "C": "Incorrect choice.",
+        "D": "Incorrect choice."
+      },
+      "correct_choice": "B",
+      "solution": "To apply the comparison test, we need to find another series whose convergence or divergence is known and compare it with our given series. The given series is ∑(cos(n))/√n. We can use the Limit Comparison Test with 1/√n because both series have n in their denominators: lim (n→∞) [(cos(n))/√n] / [1/√n] = lim (n→∞) cos(n) * √n = 0, since cos(n) is bounded and √n grows to infinity. Since 1/√n diverges by p-series test (p = 0.5 < 1), our series also diverges by the Limit Comparison Test.",
+      "explanation": "The Limit Comparison Test states that if lim (n→∞) [a_n / b_n] exists and is finite or infinite, and ∑b_n converges, then ∑a_n converges; if it's greater than 1, ∑a_n diverges. In this case, we found that the limit goes to 0, which implies our series grows slower than a divergent series.",
+      "common_mistake_notes": "A common mistake would be to choose A, thinking that (cos(n))/√n is eventually smaller than 1/n. However, the Limit Comparison Test is more appropriate here because it compares growth rates. Another mistake could be choosing C or D, but they are not valid choices for this question."
+    },
+    {
+      "id": ":question_6",
+      "stem": "Determine if the series converges or diverges using the Comparison Test: ∑(n=1 to infinity) (e^n)/(2^(n+1))",
+      "choices": {
+        "A": "Convergent by Direct Comparison Test with 1/n.",
+        "B": "Divergent by Limit Comparison Test with 1/√n.",
+        "C": "Incorrect choice.",
+        "D": "Incorrect choice."
+      },
+      "correct_choice": "B",
+      "solution": "To apply the comparison test, we need to find another series whose convergence or divergence is known and compare it with our given series. The given series is ∑(e^n)/(2^(n+1)). We can rewrite this as ∑((e/2)^n). Since e > 2, the ratio (e/2) is greater than 1, which means it diverges by itself. However, we are asked to use comparison test, so let's compare it with another series that diverges. A good choice would be 1/√n: ((e/2)^n) / [1/√n] = (e/2)^n * √n. As n approaches infinity, this ratio goes to infinity because the exponential growth of (e/2)^n dominates the polynomial growth of √n. Since our series is eventually larger than a divergent series, it also diverges by the Limit Comparison Test.",
+      "explanation": "The Limit Comparison Test states that if lim (n→∞) [a_n / b_n] exists and is finite or infinite, and ∑b_n diverges, then ∑a_n diverges; if it's less than 1, ∑a_n converges. In this case, we found that the limit goes to infinity, which implies our series grows faster than a divergent series.",
+      "common_mistake_notes": "A common mistake would be to choose A, thinking that (e^n)/(2^(n+1)) is eventually smaller than 1/n. However, the Limit Comparison Test is more appropriate here because it compares growth rates. Another mistake could be choosing C or D, but they are not valid choices for this question."
+    }
+  ]
+}

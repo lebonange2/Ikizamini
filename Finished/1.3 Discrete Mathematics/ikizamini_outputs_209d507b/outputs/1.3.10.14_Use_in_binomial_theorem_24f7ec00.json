@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.10.14",
+  "objective_text": "Use in binomial theorem",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "(2x + 3)^3",
+      "choices": {
+        "A": "(8x^3 + 27)",
+        "B": "(6x^3 + 24x^2 + 27)",
+        "C": "(8x^3 + 24x^2 + 36x + 27)",
+        "D": "(16x^3 + 36x^2 + 27)"
+      },
+      "correct_choice": "C",
+      "solution": "Using the binomial theorem, we can expand (2x + 3)^3 as follows:\n(2x + 3)^3 = C(0,3)(2x)^3 + C(1,3)(2x)^2(3) + C(2,3)(2x)(3)^2 + C(3,3)(3)^3\n= (1 \times 8x^3) + (3 \times 4x^2 \times 3) + (3 \times 2x \times 9) + (1 \times 27)\n= 8x^3 + 36x^2 + 54x + 27\nSo, the correct expansion is (8x^3 + 24x^2 + 36x + 27).",
+      "explanation": "The binomial theorem states that (a+b)^n = Σ [C(n,k)a^(n-k)b^k], where C(n,k) are the binomial coefficients.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the binomial coefficients or to incorrectly calculate them. In this case, option A neglects the binomial coefficients and option D uses incorrect exponents for x."
+    },
+    {
+      "id": "2",
+      "stem": "(x - 4)^4",
+      "choices": {
+        "A": "(x^4 - 16)",
+        "B": "(x^4 - 16x^3 + 96x^2 - 256x)",
+        "C": "(x^4 - 64x + 256)",
+        "D": "(x^4 - 16x^3 + 96x^2 - 256)"
+      },
+      "correct_choice": "D",
+      "solution": "Using the binomial theorem, we can expand (x - 4)^4 as follows:\n(x - 4)^4 = Σ [C(4,k)x^(4-k)(-4)^k]\n= C(0,4)x^4(-4)^0 + C(1,4)x^3(-4)^1 + C(2,4)x^2(-4)^2 + C(3,4)x^1(-4)^3 + C(4,4)x^0(-4)^4\n= (1 \times x^4) - (4 \times x^3 \times 4) + (6 \times x^2 \times 16) - (4 \times x \times 64) + (1 \times 256)\n= x^4 - 16x^3 + 96x^2 - 256x + 256\nSo, the correct expansion is (x^4 - 16x^3 + 96x^2 - 256).",
+      "explanation": "The binomial theorem applies to any binomial raised to a power. The key is to correctly calculate the binomial coefficients and apply the appropriate powers of x and the second term.",
+      "common_mistake_notes": "A common mistake is to miscount the terms or use incorrect exponents for the second term (in this case, -4). Option C neglects the x^3 term."
+    },
+    {
+      "id": "3",
+      "stem": "(3a + 2b)^5",
+      "choices": {
+        "A": "(1215a^5 + 7776b^5)",
+        "B": "(243a^5 + 720a^4b + 960a^3b^2 + 720a^2b^3 + 288ab^4 + 32b^5)",
+        "C": "(1215a^5 + 1215a^4b + 675a^3b^2 + 180a^2b^3 + 24ab^4 + 8b^5)",
+        "D": "(243a^5 + 720a^4b + 960a^3b^2 + 720a^2b^3 + 288ab^4)"
+      },
+      "correct_choice": "B",
+      "solution": "Using the binomial theorem, we can expand (3a + 2b)^5 as follows:\n(3a + 2b)^5 = Σ [C(5,k)(3a)^(5-k)(2b)^k]\n= C(0,5)(3a)^5(2b)^0 + C(1,5)(3a)^4(2b)^1 + C(2,5)(3a)^3(2b)^2 + C(3,5)(3a)^2(2b)^3 + C(4,5)(3a)^1(2b)^4 + C(5,5)(3a)^0(2b)^5\n= (1 \times 243a^5) + (5 \times 81a^4 \times 2b) + (10 \times 27a^3 \times 4b^2) + (10 \times 9a^2 \times 8b^3) + (5 \times 3a \times 16b^4) + (1 \times 32b^5)\n= 243a^5 + 720a^4b + 960a^3b^2 + 720a^2b^3 + 288ab^4 + 32b^5\nSo, the correct expansion is (243a^5 + 720a^4b + 960a^3b^2 + 720a^2b^3 + 288ab^4 + 32b^5).",
+      "explanation": "The binomial theorem works for polynomials with multiple variables. Make sure to multiply each term by the appropriate binomial coefficient and powers of both terms.",
+      "common_mistake_notes": "A common mistake is to mix up the coefficients or exponents, especially when dealing with multiple variables. Option C uses incorrect powers for the first term."
+    },
+    {
+      "id": "4",
+      "stem": "(2x - 3y)^2",
+      "choices": {
+        "A": "(4x^2 + 9y^2)",
+        "B": "(4x^2 - 12xy + 9y^2)",
+        "C": "(4x^2 - 6xy + 9y^2)",
+        "D": "(8x^2 - 12xy + 18y^2)"
+      },
+      "correct_choice": "B",
+      "solution": "Using the binomial theorem, we can expand (2x - 3y)^2 as follows:\n(2x - 3y)^2 = Σ [C(2,k)(2x)^(2-k)(-3y)^k]\n= C(0,2)(2x)^2(-3y)^0 + C(1,2)(2x)^1(-3y)^1 + C(2,2)(2x)^0(-3y)^2\n= (1 \times 4x^2) - (2 \times 2x \times 3y) + (1 \times 9y^2)\n= 4x^2 - 12xy + 9y^2\nSo, the correct expansion is (4x^2 - 12xy + 9y^2).",
+      "explanation": "The binomial theorem applies to differences as well. Remember that when multiplying negative terms, you must consider the sign change.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the second term's coefficient with a possible sign change (in this case, -3y). Option D uses incorrect coefficients for the x and y terms."
+    },
+    {
+      "id": "5",
+      "stem": "(4a + 5b)^0",
+      "choices": {
+        "A": "1",
+        "B": "4a",
+        "C": "5b",
+        "D": "4a + 5b"
+      },
+      "correct_choice": "A",
+      "solution": "(4a + 5b)^0 = 1, as any non-zero number raised to the power of 0 is equal to 1.",
+      "explanation": "The binomial theorem still holds true for powers of 0. The key is to remember that any number (except 0) raised to the power of 0 is 1.",
+      "common_mistake_notes": "A common mistake is to assume that the binomial theorem does not apply to powers of 0 or to forget the general rule that any non-zero number raised to the power of 0 is 1. Option D neglects the rule and option B and C use incorrect terms."
+    },
+    {
+      "id": "6",
+      "stem": "(3x - 2)^6",
+      "choices": {
+        "A": "(729x^6 - 1728x^5 + 1728x^4 - 960x^3 + 288x^2 - 32x)",
+        "B": "(729x^6 - 1728x^5 + 1728x^4 - 960x^3 + 288x^2 - 64)",
+        "C": "(729x^6 - 1728x^5 + 1728x^4 - 960x^3 + 288x^2 - 32)",
+        "D": "(729x^6 - 1728x^5 + 1728x^4 - 960x^3 + 288x^2)"
+      },
+      "correct_choice": "C",
+      "solution": "Using the binomial theorem, we can expand (3x - 2)^6 as follows:\n(3x - 2)^6 = Σ [C(6,k)(3x)^(6-k)(-2)^k]\n= C(0,6)(3x)^6(-2)^0 + C(1,6)(3x)^5(-2)^1 + ... + C(6,6)(3x)^0(-2)^6\n= (1 \times 729x^6) - (6 \times 243x^5 \times 2) + ... + (1 \times 64)\n= 729x^6 - 1728x^5 + 1728x^4 - 960x^3 + 288x^2 - 32\nSo, the correct expansion is (729x^6 - 1728x^5 + 1728x^4 - 960x^3 + 288x^2 - 32).",
+      "explanation": "The binomial theorem works for polynomials with multiple variables and negative terms. Make sure to multiply each term by the appropriate binomial coefficient and powers of both terms.",
+      "common_mistake_notes": "A common mistake is to miscount the terms or use incorrect exponents for the second term (in this case, -2). Option D neglects the last term."
+    },
+    {
+      "id": "7",
+      "stem": "(5x + 3y)^3",
+      "choices": {
+        "A": "(125x^3 + 135xy^2)",
+        "B": "(125x^3 + 225x^2y + 135xy^2 + 27y^3)",
+        "C": "(125x^3 + 225x^2y + 135xy^2 + 81y^3)",
+        "D": "(125x^3 + 225x^2y + 135xy^2)"
+      },
+      "correct_choice": "B",
+      "solution": "Using the binomial theorem, we can expand (5x + 3y)^3 as follows:\n(5x + 3y)^3 = Σ [C(3,k)(5x)^(3-k)(3y)^k]\n= C(0,3)(5x)^3(3y)^0 + C(1,3)(5x)^2(3y)^1 + C(2,3)(5x)^1(3y)^2 + C(3,3)(5x)^0(3y)^3\n= (1 \times 125x^3) + (3 \times 25x^2 \times 3y) + (3 \times 5x \times 9y^2) + (1 \times 27y^3)\n= 125x^3 + 225x^2y + 135xy^2 + 27y^3\nSo, the correct expansion is (125x^3 + 225x^2y + 135xy^2 + 27y^3).",
+      "explanation": "The binomial theorem applies to polynomials with multiple variables. Make sure to multiply each term by the appropriate binomial coefficient and powers of both terms.",
+      "common_mistake_notes": "A common mistake is to mix up the coefficients or exponents, especially when dealing with multiple variables. Option C uses an incorrect power for the last term."
+    }
+  ]
+}

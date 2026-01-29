@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.3.7",
+  "objective_text": "Apply logical biconditional (↔)",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Which of the following statements is logically equivalent to the biconditional: 'p if and only if q'?",
+      "choices": {
+        "A": "p → q and q → p",
+        "B": "p ∧ q",
+        "C": "p ∨ q",
+        "D": "¬p ↔ ¬q"
+      },
+      "correct_choice": "A",
+      "solution": "The biconditional 'p if and only if q' is logically equivalent to the conjunction of two conditional statements: 'If p, then q' (p → q) and 'If q, then p' (q → p). Therefore, option A is correct.",
+      "explanation": "The biconditional states that both p and q are true simultaneously or both are false. Options B and C represent conjunction (both true) and disjunction (at least one true), respectively, which do not capture the 'if and only if' relationship. Option D represents the negation of the biconditional, which is not equivalent.",
+      "common_mistake_notes": "A common mistake would be to choose option B, thinking that both p and q must be true at the same time, but this does not account for the case when both are false, which is also allowed by the biconditional."
+    },
+    {
+      "id": "Two",
+      "stem": "Given the biconditional statement 'x > 0 if and only if x^2 > 0', which of the following is true?",
+      "choices": {
+        "A": "x = 0",
+        "B": "x < 0",
+        "C": "x ≥ 0",
+        "D": "x ≤ 0"
+      },
+      "correct_choice": "C",
+      "solution": "The biconditional statement implies that x must be greater than or equal to zero (x ≥ 0) for the inequality x^2 > 0 to hold true, as the square of any number is always non-negative.",
+      "explanation": "Option A and D are incorrect because they violate the condition x^2 > 0. Option B is also wrong because it makes x^2 negative, which is not allowed by the biconditional. Only option C correctly represents the range for x that satisfies the biconditional statement.",
+      "common_mistake_notes": "A common mistake would be to choose option A or D, assuming that x can only be positive, but the biconditional allows for x to be zero as well."
+    },
+    {
+      "id": "Three",
+      "stem": "Which of the following is a true biconditional statement?",
+      "choices": {
+        "A": "2n + 1 = odd number ↔ n is an integer",
+        "B": "x > y ↔ x^2 > y^2",
+        "C": "A triangle has three sides ↔ The sum of its interior angles is 180°",
+        "D": "A number is prime ↔ It has exactly two factors"
+      },
+      "correct_choice": "C",
+      "solution": "The biconditional statement 'A triangle has three sides if and only if the sum of its interior angles is 180°' is true because it accurately captures the relationship between the number of sides and the angle sum in a triangle.",
+      "explanation": "Option A is incorrect because an odd number can be represented as 2n + 1, but n does not have to be an integer (e.g., n = 0.5). Option B is false because x > y does not necessarily imply x^2 > y^2 (e.g., x = 2 and y = -3). Option D is incorrect because a prime number has exactly two factors (1 and itself), but having only two factors does not make a number prime (e.g., 1).",
+      "common_mistake_notes": "A common mistake would be to choose option B, overlooking counterexamples where x^2 is not greater than y^2."
+    },
+    {
+      "id": "Four",
+      "stem": "Which of the following biconditionals is equivalent to 'x is even if and only if x can be divided by 2 without remainder'?",
+      "choices": {
+        "A": "x % 2 = 0 ↔ x is a multiple of 2",
+        "B": "x % 2 ≠ 0 ↔ x is not a multiple of 3",
+        "C": "x % 2 = 1 ↔ x can be divided by 2",
+        "D": "x % 2 ≠ 1 ↔ x cannot be divided by 2"
+      },
+      "correct_choice": "A",
+      "solution": "The biconditional 'x is even if and only if x can be divided by 2 without remainder' is equivalent to 'x % 2 = 0 if and only if x is a multiple of 2'. The modulo operator gives the remainder when dividing by 2, so x % 2 = 0 indicates an even number.",
+      "explanation": "Option B checks for non-multiples of 3, not 2. Option C checks for odd numbers (x % 2 = 1), and option D checks for numbers that cannot be divided by 2 without a remainder. Only option A correctly represents the biconditional statement.",
+      "common_mistake_notes": "A common mistake would be to choose option C, confusing it with the condition for an odd number."
+    },
+    {
+      "id": "Five",
+      "stem": "The biconditional 'a is parallel to b if and only if a and b have the same slope' can be written as:",
+      "choices": {
+        "A": "m_a = m_b ↔ a ∥ b",
+        "B": "m_a ≠ m_b ↔ a ∥ b",
+        "C": "m_a + m_b = 0 ↔ a ∥ b",
+        "D": "m_a - m_b = 1 ↔ a ∥ b"
+      },
+      "correct_choice": "A",
+      "solution": "The biconditional statement 'a is parallel to b if and only if a and b have the same slope' can be written as 'm_a = m_b ↔ a ∥ b', where m_a and m_b represent the slopes of lines a and b.",
+      "explanation": "Option B checks for different slopes, which means the lines are not parallel. Option C checks for perpendicular lines (slope product is -1), and option D has no clear relationship to parallel lines. Only option A correctly represents the biconditional statement.",
+      "common_mistake_notes": "A common mistake would be to choose option B, thinking that different slopes imply parallel lines, but this is incorrect."
+    },
+    {
+      "id": "Six",
+      "stem": "The logical biconditional 'x > 1 if and only if x^3 > 1' can be simplified as:",
+      "choices": {
+        "A": "x ≠ 0 ↔ x^3 ≠ 0",
+        "B": "x ≠ 1 ↔ x^3 ≠ 1",
+        "C": "x < 0 ↔ x^3 < 0",
+        "D": "x ≥ 0 ↔ x^3 ≥ 0"
+      },
+      "correct_choice": "B",
+      "solution": "The biconditional statement 'x > 1 if and only if x^3 > 1' can be simplified as 'x ≠ 1 ↔ x^3 ≠ 1', because x = 1 is the only value that makes both sides of the original inequality equal.",
+      "explanation": "Option A checks for non-zero values, which does not capture the specific relationship between x and x^3. Option C checks for negative numbers, and option D checks for non-negative numbers, but these do not match the original biconditional. Only option B correctly represents the simplified statement.",
+      "common_mistake_notes": "A common mistake would be to choose option A, assuming that both sides of the inequality must be non-zero, but this does not account for x = 1."
+    },
+    {
+      "id": "Seven",
+      "stem": "The biconditional 'a is a perfect square if and only if its square root is an integer' can be expressed as:",
+      "choices": {
+        "A": "(√a) ∈ Z ↔ a ∈ N^2",
+        "B": "(√a) ∉ Z ↔ a ∉ N^2",
+        "C": "a % (√a) = 0 ↔ (√a) ∈ Q",
+        "D": "a % (√a) ≠ 0 ↔ (√a) ∉ R"
+      },
+      "correct_choice": "A",
+      "solution": "The biconditional statement 'a is a perfect square if and only if its square root is an integer' can be expressed as '(√a) ∈ Z ↔ a ∈ N^2', where √a represents the square root of a, and Z and N^2 represent the set of integers and non-negative integers squared, respectively.",
+      "explanation": "Option B checks for non-integer square roots, which means a is not a perfect square. Option C checks for divisibility by the square root, and option D uses real numbers, but these do not match the original biconditional. Only option A correctly represents the statement.",
+      "common_mistake_notes": "A common mistake would be to choose option C, thinking that divisibility by the square root implies an integer square root, but this is not always true."
+    }
+  ]
+}

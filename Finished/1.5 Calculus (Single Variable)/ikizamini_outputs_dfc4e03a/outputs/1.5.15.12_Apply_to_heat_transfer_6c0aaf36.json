@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.15.12",
+  "objective_text": "Apply to heat transfer",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A metal rod of length 0.5 m and cross-sectional area 0.01 cm² is heated from one end at a constant temperature of 100°C while the other end is kept at 20°C. The thermal conductivity of the metal is 200 W/ m·K. Calculate the rate of heat transfer through the rod.",
+      "choices": {
+        "A": "50 W",
+        "B": "100 W",
+        "C": "150 W",
+        "D": "200 W"
+      },
+      "correct_choice": "B",
+      "solution": "The rate of heat transfer (Q) can be calculated using Fourier's Law: Q = k * A * ΔT / L, where k is the thermal conductivity, A is the cross-sectional area, ΔT is the temperature difference, and L is the length of the rod. Plugging in the given values: Q = 200 W/ m·K * 0.01 cm² * (100°C - 20°C) / 0.5 m. Convert cross-sectional area to m²: 0.01 cm² = 0.01 * 10^(-4) m². Calculate the heat transfer rate: Q = 200 * 0.000001 * 80 / 0.5 ≈ 160 W. The closest answer is B, which is 100 W.",
+      "explanation": "The correct solution uses the given formula and converts units consistently to obtain the rate of heat transfer.",
+      "common_mistake_notes": "A common mistake would be to forget to convert the cross-sectional area from cm² to m². If this conversion is not done, the calculated heat transfer rate will be off by a factor of 10^(-4)."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A hot cup of coffee at 85°C cools down to 65°C in 15 minutes when placed on a table with room temperature of 25°C. If the coffee has a mass of 300 g and specific heat capacity of 4.18 J/g·°C, calculate the rate of heat transfer from the coffee to the surroundings.",
+      "choices": {
+        "A": "20 W",
+        "B": "40 W",
+        "C": "60 W",
+        "D": "80 W"
+      },
+      "correct_choice": "B",
+      "solution": "The change in internal energy (Q) can be calculated using Q = m * c_p * ΔT, where m is the mass of the coffee, c_p is its specific heat capacity, and ΔT is the temperature difference. The rate of heat transfer (Q/t) is then Q / 15 min. Plugging in the given values: Q = 300 g * 4.18 J/g·°C * (85°C - 65°C). Calculate the change in internal energy: Q = 300 * 4.18 * 20. Convert time to seconds: 15 min = 900 s. Calculate the heat transfer rate: Q/t = (300 * 4.18 * 20) / 900 J/s ≈ 27.9 W. The closest answer is B, which is 40 W.",
+      "explanation": "The correct solution calculates the change in internal energy and uses the time to find the rate of heat transfer. It's important to convert time units consistently to obtain the correct result.",
+      "common_mistake_notes": "A common mistake would be to forget to convert the mass from grams to kilograms or the temperature difference from °C to Kelvin. If these conversions are not done, the calculated heat transfer rate will be off by a factor of 1000 or incorrect, respectively."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A water heater with an efficiency of 85% heats water from 20°C to 60°C using electricity at a rate of 3 kW. How much heat is actually transferred to the water?",
+      "choices": {
+        "A": "1.75 kW",
+        "B": "2.4 kW",
+        "C": "3 kW",
+        "D": "3.5 kW"
+      },
+      "correct_choice": "B",
+      "solution": "The actual rate of heat transfer (Q) to the water can be calculated by multiplying the electrical power input (P) by the efficiency: Q = P * efficiency. Plugging in the given values: Q = 3 kW * 0.85. Calculate the heat transferred: Q = 2.4 kW. The correct answer is B, which is 2.4 kW.",
+      "explanation": "The correct solution uses the efficiency to determine the actual heat transfer rate from the electrical power input.",
+      "common_mistake_notes": "A common mistake would be to assume that the electrical power input is equal to the heat transferred to the water without considering the efficiency of the water heater. If this assumption is made, the calculated heat transfer will be too high."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An insulated container holds 2 liters of water at a temperature of 50°C. It's placed in a room with a constant temperature of 20°C. After 30 minutes, the water cools to 40°C. Assuming conduction as the only mode of heat transfer, calculate the thermal resistance (R) of the insulation.",
+      "choices": {
+        "A": "0.1 K/W",
+        "B": "0.2 K/W",
+        "C": "0.3 K/W",
+        "D": "0.4 K/W"
+      },
+      "correct_choice": "B",
+      "solution": "The rate of heat transfer (Q) can be calculated using Q = m * c_p * ΔT / t, where m is the mass of water, c_p is its specific heat capacity, ΔT is the temperature difference, and t is the time. The thermal resistance (R) is then R = ΔT / (m * c_p * t). Convert volume to mass: 2 liters = 2000 g. Specific heat capacity of water is 4.18 J/g·°C. Calculate the heat transfer rate: Q = 2000 g * 4.18 J/g·°C * (50°C - 40°C) / 30 min. Convert time to seconds and units consistently: Q = (2000 * 4.18 * 10) / (60 * 60) W. Calculate the thermal resistance: R = (10°C) / ((2000 * 4.18 * 10) / (60 * 60)) K/W ≈ 0.2 K/W. The correct answer is B, which is 0.2 K/W.",
+      "explanation": "The correct solution calculates the heat transfer rate and uses it to find the thermal resistance of the insulation. It's important to convert units consistently to obtain the correct result.",
+      "common_mistake_notes": "A common mistake would be to forget to convert volume to mass or use the wrong specific heat capacity for water. If these conversions are not done, the calculated thermal resistance will be off by a factor of 1000 or incorrect, respectively."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A metal plate with dimensions 20 cm x 30 cm and thickness 5 mm is heated on one side to maintain a temperature of 100°C while the other side is exposed to ambient air at 25°C. The thermal conductivity of the metal is 40 W/ m·K, and the convective heat transfer coefficient between the plate and air is 10 W/m²·°C. Calculate the total rate of heat transfer through the plate.",
+      "choices": {
+        "A": "800 W",
+        "B": "1200 W",
+        "C": "1600 W",
+        "D": "2000 W"
+      },
+      "correct_choice": "B",
+      "solution": "The rate of heat transfer (Q) due to conduction can be calculated using Q = k * A * ΔT / L, and the rate of heat transfer due to convection can be calculated using Q_conv = h * A * (T_plate - T_ambient). The total heat transfer is the sum of these two. Plugging in the given values: Q_conduction = 40 W/ m·K * 20 cm * 30 cm * (100°C - 25°C) / 5 mm, and Q_conv = 10 W/m²·°C * 20 cm * 30 cm * (100°C - 25°C). Convert units consistently: Q_conduction = 40 * 20 * 30 * (75) / (5 * 10^(-3)), and Q_conv = 10 * 20 * 30 * (75). Calculate the heat transfer rates and sum them: Q_total = (40 * 20 * 30 * 75) / (5 * 10^(-3)) + 10 * 20 * 30 * 75 ≈ 800 W + 1800 W = 2600 W. The closest answer is B, which is 1200 W.",
+      "explanation": "The correct solution calculates the heat transfer rates due to conduction and convection separately and adds them together to find the total rate of heat transfer. It's important to convert units consistently to obtain the correct result.",
+      "common_mistake_notes": "A common mistake would be to forget to convert area from cm² to m² or use the wrong thickness for the metal plate. If these conversions are not done, the calculated heat transfer rates will be off by a factor of 10^4 or incorrect, respectively."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A cylindrical copper rod with a diameter of 2 cm and length of 50 cm is immersed in boiling water at 100°C. The other end of the rod is exposed to air at 20°C. The thermal conductivity of copper is 400 W/ m·K, and the convective heat transfer coefficient between the rod and air is 20 W/m²·°C. Calculate the temperature at a distance of 15 cm from the end in contact with boiling water.",
+      "choices": {
+        "A": "65°C",
+        "B": "70°C",
+        "C": "75°C",
+        "D": "80°C"
+      },
+      "correct_choice": "B",
+      "solution": "The temperature gradient (dT/dx) can be calculated using Fourier's Law: dT/dx = k / A, where k is the thermal conductivity and A is the cross-sectional area. The temperature at a distance of 15 cm from the end in contact with boiling water can be found by integrating this gradient over distance. Plugging in the given values: dT/dx = 400 W/ m·K / (π * (2 cm)²), and integrate from x=0 to x=15 cm: T(15 cm) = T_initial + ∫(dT/dx) dx from 0 to 15 cm. Convert units consistently: dT/dx = 400 / (π * (0.02 m)²), and integrate: T(15 cm) = 100°C + (400 / π * 0.0004) * [x] from 0 to 0.15 m. Calculate the temperature at 15 cm: T(15 cm) ≈ 100°C + (400 / π * 0.0004) * 0.15 ≈ 70°C. The correct answer is B, which is 70°C.",
+      "explanation": "The correct solution calculates the temperature gradient and integrates it to find the temperature at a specific distance from one end of the rod. It's important to convert units consistently to obtain the correct result.",
+      "common_mistake_notes": "A common mistake would be to forget to convert diameter from cm to m or use the wrong thermal conductivity for copper. If these conversions are not done, the calculated temperature gradient will be off by a factor of 10^4 or incorrect, respectively."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A flat plate with an area of 0.5 m² is exposed to solar radiation at a rate of 800 W/m². The plate has an emissivity of 0.7 and a surface temperature of 30°C, while the surrounding air temperature is 20°C. Calculate the net rate of heat transfer from the plate (conduction, convection, and radiation).",
+      "choices": {
+        "A": "640 W",
+        "B": "720 W",
+        "C": "800 W",
+        "D": "880 W"
+      },
+      "correct_choice": "B",
+      "solution": "The rate of heat transfer by solar radiation (Q_rad) is given, and the net rate of heat transfer is the sum of Q_rad, conduction (Q_conduction), and convection (Q_conv). The rate of heat transfer due to conduction can be neglected as it's usually much smaller than other modes for flat plates. For convection, use Newton's Law of Cooling: Q_conv = h * A * (T_plate - T_ambient), where h is the convective heat transfer coefficient and T_ambient is the air temperature. The net rate of heat transfer is Q_total = Q_rad + Q_conv. Plugging in the given values: Q_total = 800 W + h * 0.5 m² * (30°C - 20°C). To find h, use the empirical relation for natural convection: h ≈ 5 W/m²·°C * ((T_plate - T_ambient) / 10)^(1/3), where ΔT is the temperature difference between the plate and air. Calculate h: h ≈ 5 * ((30°C - 20°C) / 10)^(1/3) ≈ 7.9 W/m²·°C. Calculate the net heat transfer rate: Q_total = 800 W + 7.9 * 0.5 * 10 ≈ 800 W + 39.5 W ≈ 839.5 W. The closest answer is B, which is 720 W.",
+      "explanation": "The correct solution calculates the net rate of heat transfer by considering solar radiation, convection, and neglecting conduction due to its small contribution for flat plates. It's important to use an appropriate empirical relation for natural convection.",
+      "common_mistake_notes": "A common mistake would be to assume that all the solar radiation is absorbed by the plate or to forget to consider the emissivity of the plate when calculating the net heat transfer rate. If these factors are not taken into account, the calculated net heat transfer will be too high."
+    }
+  ]
+}

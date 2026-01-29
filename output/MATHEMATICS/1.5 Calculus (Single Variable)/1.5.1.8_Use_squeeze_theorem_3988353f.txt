@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.1.8 Use squeeze theorem
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.1 Limits and Continuity
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Evaluate the limit using the Squeeze Theorem: lim x → ∞ (sin(x) / x)
+A) 0
+B) 1
+C) π/2
+D) ∞
+Correct Answer: A
+
+Solution:
+The function sin(x)/x oscillates between -1 and 1 as x approaches infinity. Since the absolute value of sin(x)/x is always less than or equal to 1, we can use the Squeeze Theorem. Thus, lim x → ∞ (sin(x) / x) = 0.
+
+Explanation:
+The Squeeze Theorem states that if a function f(x) is squeezed between two functions g(x) and h(x), where g(x) ≤ f(x) ≤ h(x) for all x in an interval containing a, then if the limits of g(x) and h(x) at a are equal, the limit of f(x) at a also exists and is equal to that limit.
+
+Common mistake note:
+A common mistake would be to assume that the limit is 1 because sin(x) oscillates between -1 and 1. However, the Squeeze Theorem requires that the function is squeezed _between_ two bounding functions, not just oscillating within a range.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Evaluate the limit using the Squeeze Theorem: lim x → 0 (x / |x|)
+A) -1
+B) 0
+C) 1
+D) Does not exist
+Correct Answer: D
+
+Solution:
+The function x/|x| is undefined at x = 0, but we can analyze the limit as x approaches 0 from both sides. As x approaches 0 from the right (x > 0), the function equals 1; as x approaches 0 from the left (x < 0), it equals -1. Since the limit does not approach a single value, it does not exist.
+
+Explanation:
+The Squeeze Theorem cannot be applied here because there are no bounding functions that sandwich x/|x| for all x close to 0. The function is undefined at x = 0 and has different limits from the left and right.
+
+Common mistake note:
+A common mistake would be to assume that the limit exists based on the behavior of the function for non-zero values of x. However, the Squeeze Theorem requires continuity around the point in question, which is not the case here.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Evaluate the limit using the Squeeze Theorem: lim x → 0 (tan(x) / x)
+A) 0
+B) π/2
+C) 1
+D) ∞
+Correct Answer: C
+
+Solution:
+The function tan(x)/x approaches 1 as x approaches 0. This is because tan(x) behaves like sin(x) and cos(x) behaves like 1 for small values of x, so tan(x)/x simplifies to sin(x)/x, which approaches 1 by the Squeeze Theorem.
+
+Explanation:
+The Squeeze Theorem can be applied here because tan(x)/x is well-defined near x = 0 and its behavior is similar to that of sin(x)/x. As x approaches 0, both sine and tangent approach zero, but cosine approaches 1, so the ratio approaches 1.
+
+Common mistake note:
+A common mistake would be to think that the limit is 0 because both tan(x) and x approach 0 as x approaches 0. However, this does not account for the fact that the ratio of these functions approaches a non-zero value.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Evaluate the limit using the Squeeze Theorem: lim x → ∞ (e^x / x)
+A) 0
+B) 1
+C) ∞
+D) Does not exist
+Correct Answer: C
+
+Solution:
+The function e^x grows much faster than x as x approaches infinity. Therefore, the ratio e^x/x approaches infinity. However, we can use L'Hopital's Rule to confirm this result: lim x → ∞ (e^x / x) = lim x → ∞ (e^x / 1) = ∞.
+
+Explanation:
+The Squeeze Theorem is not applicable here because there are no bounding functions that sandwich e^x/x for all large values of x. However, the limit can be determined by comparing the rates of growth of e^x and x.
+
+Common mistake note:
+A common mistake would be to assume that the limit is 1 based on the intuition that 'large' numbers divided by 'very large' numbers approach zero. This reasoning does not account for the exponential growth of e^x.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Evaluate the limit using the Squeeze Theorem: lim x → π (sin(x) / (x - π))
+A) -1
+B) 0
+C) π/2
+D) Does not exist
+Correct Answer: D
+
+Solution:
+The function sin(x)/(x - π) approaches ∞ as x approaches π from the left and approaches -∞ as x approaches π from the right. Since the limit does not approach a single value, it does not exist.
+
+Explanation:
+The Squeeze Theorem cannot be applied here because there are no bounding functions that sandwich sin(x)/(x - π) for all x close to π. The function has different limits from the left and right of π.
+
+Common mistake note:
+A common mistake would be to think that the limit exists based on the behavior of the function for non-π values of x. However, the Squeeze Theorem requires continuity around the point in question, which is not the case here.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Evaluate the limit using the Squeeze Theorem: lim x → 0 (x^2 / sin(x))
+A) 0
+B) 1
+C) π/2
+D) ∞
+Correct Answer: B
+
+Solution:
+The function x^2/sin(x) approaches 1 as x approaches 0. This is because x^2 grows quadratically while sin(x) grows linearly, so the ratio approaches 1 as x approaches 0.
+
+Explanation:
+The Squeeze Theorem can be applied here because x^2/sin(x) is well-defined near x = 0 and its behavior is similar to that of x/x. As x approaches 0, both x^2 and sin(x) approach zero, but the ratio approaches 1.
+
+Common mistake note:
+A common mistake would be to think that the limit is 0 because both x^2 and sin(x) approach 0 as x approaches 0. However, this does not account for the fact that the ratio of these functions approaches a non-zero value.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Evaluate the limit using the Squeeze Theorem: lim x → ∞ (sqrt(x^2 + 1) - x)
+A) 0
+B) 1
+C) π/2
+D) ∞
+Correct Answer: B
+
+Solution:
+The function sqrt(x^2 + 1) - x approaches 1 as x approaches infinity. We can use the difference of squares identity to rewrite the expression: (sqrt(x^2 + 1) - x)(sqrt(x^2 + 1) + x) = x^2 + 1 - x^2 = 1. Thus, sqrt(x^2 + 1) - x approaches 1.
+
+Explanation:
+The Squeeze Theorem can be applied here because the expression is well-defined for all positive values of x and its behavior can be analyzed using algebraic manipulation. As x grows large, the difference between sqrt(x^2 + 1) and x becomes negligible compared to x itself.
+
+Common mistake note:
+A common mistake would be to think that the limit is 0 because the square root function approaches x as x gets very large. However, this does not account for the fact that the expression involves a subtraction which causes it to approach a non-zero value.
+------------------------------------------------------------------------------

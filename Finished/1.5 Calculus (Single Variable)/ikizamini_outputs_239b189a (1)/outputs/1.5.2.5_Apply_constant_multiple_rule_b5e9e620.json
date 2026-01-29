@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.2.5",
+  "objective_text": "Apply constant multiple rule",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFgHjKlMnO",
+      "stem": "Simplify the expression: 4(x + 3)",
+      "choices": {
+        "A": "12x + 12",
+        "B": "4x + 12",
+        "C": "16x + 12",
+        "D": "4x + 9"
+      },
+      "correct_choice": "B",
+      "solution": "To apply the constant multiple rule, multiply each term inside the parentheses by the constant outside: 4 * x = 4x and 4 * 3 = 12. The simplified expression is 4x + 12.",
+      "explanation": "The constant multiple rule states that when a constant multiplies a polynomial, distribute the constant to each term in the parentheses.",
+      "common_mistake_notes": "A common mistake is to multiply only one term (e.g., 4 * x) and forget the other (4 * 3), resulting in an incorrect expression like 12x + 3."
+    },
+    {
+      "id": "BvnCxmDyEzF",
+      "stem": "Simplify the expression: -5(2y - 7)",
+      "choices": {
+        "A": "-10y + 35",
+        "B": "10y - 35",
+        "C": "-10y - 35",
+        "D": "10y + 35"
+      },
+      "correct_choice": "A",
+      "solution": "Apply the constant multiple rule: -5 * 2y = -10y and -5 * (-7) = 35. The simplified expression is -10y + 35.",
+      "explanation": "The constant multiple rule applies to negative constants, distributing the negative sign to each term in the parentheses.",
+      "common_mistake_notes": "A common mistake is to distribute only the negative sign to one term (e.g., -10y) and forget the other (-35), resulting in an incorrect expression like -20y + 7."
+    },
+    {
+      "id": "CwoDxpEzFyG",
+      "stem": "Simplify the expression: 6(4a^2 - 2ab + 1)",
+      "choices": {
+        "A": "24a^2 - 12ab + 6",
+        "B": "24a^2 + 12ab + 6",
+        "C": "18a^2 - 12ab + 6",
+        "D": "18a^2 + 12ab + 6"
+      },
+      "correct_choice": "A",
+      "solution": "Use the constant multiple rule: 6 * 4a^2 = 24a^2, 6 * (-2ab) = -12ab, and 6 * 1 = 6. The simplified expression is 24a^2 - 12ab + 6.",
+      "explanation": "The constant multiple rule works with polynomials involving variables, distributing the constant to each term including variable parts.",
+      "common_mistake_notes": "A common mistake is to multiply only one term (e.g., 6 * 4a^2) and forget others (-12ab and 6), resulting in an incorrect expression like 24a^2 - 12ab."
+    },
+    {
+      "id": "DxpEzFyGhiJ",
+      "stem": "Simplify the expression: -7(-3x + 5)",
+      "choices": {
+        "A": "21x - 35",
+        "B": "-21x - 35",
+        "C": "21x + 35",
+        "D": "-21x + 35"
+      },
+      "correct_choice": "A",
+      "solution": "Apply the constant multiple rule with a negative constant: -7 * (-3x) = 21x and -7 * 5 = -35. The simplified expression is 21x - 35.",
+      "explanation": "When multiplying by a negative constant, distribute the negative sign to each term in the parentheses, including if it's already negative.",
+      "common_mistake_notes": "A common mistake is to multiply only one term with the negative sign (e.g., 21x) and forget the other (-35), resulting in an incorrect expression like -21x + 35."
+    },
+    {
+      "id": "EzFyGhiJklM",
+      "stem": "Simplify the expression: 9(7m - 4n + 2)",
+      "choices": {
+        "A": "63m - 36n + 18",
+        "B": "63m + 36n + 18",
+        "C": "54m - 36n + 18",
+        "D": "54m + 36n + 18"
+      },
+      "correct_choice": "A",
+      "solution": "Use the constant multiple rule: 9 * 7m = 63m, 9 * (-4n) = -36n, and 9 * 2 = 18. The simplified expression is 63m - 36n + 18.",
+      "explanation": "The constant multiple rule applies to polynomials with multiple variables, distributing the constant to each term.",
+      "common_mistake_notes": "A common mistake is to multiply only one term (e.g., 9 * 7m) and forget others (-36n and 18), resulting in an incorrect expression like 63m - 36n."
+    },
+    {
+      "id": "FyGhiJklMNp",
+      "stem": "Simplify the expression: -4(5x^2 + 3x - 1)",
+      "choices": {
+        "A": "-20x^2 - 12x + 4",
+        "B": "-20x^2 + 12x + 4",
+        "C": "-20x^2 - 12x - 4",
+        "D": "20x^2 + 12x - 4"
+      },
+      "correct_choice": "A",
+      "solution": "Apply the constant multiple rule with a negative constant: -4 * 5x^2 = -20x^2, -4 * 3x = -12x, and -4 * (-1) = 4. The simplified expression is -20x^2 - 12x + 4.",
+      "explanation": "When multiplying by a negative constant, distribute the negative sign to each term in the parentheses.",
+      "common_mistake_notes": "A common mistake is to multiply only one term with the negative sign (e.g., -20x^2) and forget others (-12x and 4), resulting in an incorrect expression like -20x^2 + 12x."
+    },
+    {
+      "id": "GhiJklMNpoQ",
+      "stem": "Simplify the expression: 2(9y^3 - 6y^2 + 4y)",
+      "choices": {
+        "A": "18y^3 - 12y^2 + 8y",
+        "B": "18y^3 + 12y^2 + 8y",
+        "C": "12y^3 - 12y^2 + 8y",
+        "D": "12y^3 + 12y^2 + 8y"
+      },
+      "correct_choice": "A",
+      "solution": "Use the constant multiple rule: 2 * 9y^3 = 18y^3, 2 * (-6y^2) = -12y^2, and 2 * 4y = 8y. The simplified expression is 18y^3 - 12y^2 + 8y.",
+      "explanation": "The constant multiple rule works with polynomials involving higher powers of variables, distributing the constant to each term.",
+      "common_mistake_notes": "A common mistake is to multiply only one term (e.g., 2 * 9y^3) and forget others (-12y^2 and 8y), resulting in an incorrect expression like 18y^3 - 12y^2."
+    }
+  ]
+}

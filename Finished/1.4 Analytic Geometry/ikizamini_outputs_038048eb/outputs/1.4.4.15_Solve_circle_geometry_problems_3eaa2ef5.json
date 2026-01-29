@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.4.15",
+  "objective_text": "Solve circle geometry problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ": 1",
+      "stem": "What is the area of a circle with radius 5 cm?",
+      "choices": {
+        "A": "25π cm²",
+        "B": "50π cm²",
+        "C": "75π cm²",
+        "D": "100π cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for the area of a circle is A = πr², where r is the radius. Given a radius of 5 cm, we calculate the area as follows: A = π(5 cm)² = 25π cm².",
+      "explanation": "The correct answer uses the correct formula and calculates the area with the given radius.",
+      "common_mistake_notes": "A common mistake is to forget to square the radius or to use the wrong value for π (e.g., using 3.14 instead of π)."
+    },
+    {
+      "id": ": 2",
+      "stem": "What is the circumference of a circle with diameter 10 inches?",
+      "choices": {
+        "A": "31.4 inches",
+        "B": "62.8 inches",
+        "C": "78.5 inches",
+        "D": "100 inches"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the circumference of a circle is C = πd, where d is the diameter. Given a diameter of 10 inches, we calculate the circumference as follows: C = π(10 inches) = 31.4π inches or approximately 62.8 inches.",
+      "explanation": "The correct answer uses the correct formula and calculates the circumference with the given diameter.",
+      "common_mistake_notes": "A common mistake is to use the radius instead of the diameter, or to forget to multiply by π."
+    },
+    {
+      "id": ": 3",
+      "stem": "In a circle, if the central angle measures 60°, what fraction of the circle does it represent?",
+      "choices": {
+        "A": "1/6",
+        "B": "1/4",
+        "C": "1/3",
+        "D": "1/2"
+      },
+      "correct_choice": "A",
+      "solution": "The total angle in a circle is 360°. To find the fraction of the circle represented by a 60° central angle, we divide the central angle by 360°: (60° / 360°) = 1/6.",
+      "explanation": "The correct answer correctly calculates the fraction of the circle corresponding to the given central angle.",
+      "common_mistake_notes": "A common mistake is to confuse the central angle with the arc length or sector area, rather than considering it as a fraction of the total angle in the circle."
+    },
+    {
+      "id": ": 4",
+      "stem": "Find the radius of a circle if its circumference is 28.27 meters.",
+      "choices": {
+        "A": "2 meters",
+        "B": "3 meters",
+        "C": "4 meters",
+        "D": "5 meters"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for the circumference of a circle is C = 2πr, where r is the radius. Given a circumference of 28.27 meters, we can solve for the radius: 28.27 m = 2πr. Divide both sides by 2π to find r: r = (28.27 m) / (2π) ≈ 4 meters.",
+      "explanation": "The correct answer uses the correct formula and solves for the radius with the given circumference.",
+      "common_mistake_notes": "A common mistake is to forget to divide by 2π or to use an incorrect value for π."
+    },
+    {
+      "id": ": 5",
+      "stem": "What is the area of a sector with a central angle of 90° and radius 8 cm?",
+      "choices": {
+        "A": "16π cm²",
+        "B": "32π cm²",
+        "C": "64π cm²",
+        "D": "128π cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The area of a sector is given by A = (θ/360°)πr², where θ is the central angle in degrees and r is the radius. Given a 90° central angle and a radius of 8 cm, we calculate the area as follows: A = (90°/360°)π(8 cm)² = (1/4)π(64 cm²) = 16π cm².",
+      "explanation": "The correct answer uses the correct formula and calculates the area of the sector with the given central angle and radius.",
+      "common_mistake_notes": "A common mistake is to use the entire circle's area formula or to forget to multiply by the fraction of the circle represented by the central angle."
+    },
+    {
+      "id": ": 6",
+      "stem": "Find the diameter of a circle if its area is 25π square centimeters.",
+      "choices": {
+        "A": "3 cm",
+        "B": "4 cm",
+        "C": "5 cm",
+        "D": "10 cm"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for the area of a circle is A = πr², where r is the radius. Given an area of 25π square centimeters, we can solve for the radius: 25π cm² = πr². Divide both sides by π to find r²: r² = 25 cm². Take the square root to find r: r = √25 cm = 5 cm. The diameter is twice the radius, so the diameter is 10 cm.",
+      "explanation": "The correct answer uses the correct formula and solves for the radius with the given area, then calculates the diameter.",
+      "common_mistake_notes": "A common mistake is to forget to take the square root of r² or to divide by π when solving for r."
+    },
+    {
+      "id": ": 7",
+      "stem": "In a circle, if two chords are equal in length, what can be concluded about their central angles?",
+      "choices": {
+        "A": "The central angles must be equal.",
+        "B": "The central angles must be supplementary (add up to 180°).",
+        "C": "The central angles must be complementary (add up to 90°).",
+        "D": "No conclusion can be made about the central angles."
+      },
+      "correct_choice": "A",
+      "solution": "In a circle, two chords being equal in length does not provide any information about their central angles. The central angles could be equal, supplementary, complementary, or have any other relationship. Therefore, no conclusion can be made.",
+      "explanation": "The correct answer recognizes that the equality of chord lengths does not determine anything about the corresponding central angles.",
+      "common_mistake_notes": "A common mistake is to assume that equal chords imply equal central angles, which is not necessarily true."
+    }
+  ]
+}

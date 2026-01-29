@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.1.11",
+  "objective_text": "Calculate cardinality of sets",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "InfiniteSetCardinality",
+      "stem": "What is the cardinality of the set of all natural numbers?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "∞",
+        "D": "42"
+      },
+      "correct_choice": "C",
+      "solution": "The set of all natural numbers is infinite, so its cardinality is ∞.",
+      "explanation": "Cardinality refers to the number of elements in a set. The natural numbers (1, 2, 3, ...) are countably infinite, meaning they can be put into a one-to-one correspondence with the set of all integers.",
+      "common_mistake_notes": "A common mistake is to choose '0' or '1', which would imply that the set has no elements or only one element, respectively. These choices do not represent the infinite nature of the natural numbers."
+    },
+    {
+      "id": "FiniteSetCardinality",
+      "stem": "What is the cardinality of the set {2, 4, 6, 8, 10}?",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "10"
+      },
+      "correct_choice": "C",
+      "solution": "The set has five elements: 2, 4, 6, 8, and 10.",
+      "explanation": "To find the cardinality of a finite set, count the number of distinct elements it contains. In this case, there are exactly five different numbers in the set.",
+      "common_mistake_notes": "A common mistake might be to miscount the elements or confuse the value of an element with its position in the set."
+    },
+    {
+      "id": "EmptySetCardinality",
+      "stem": "What is the cardinality of the empty set?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "5",
+        "D": "∞"
+      },
+      "correct_choice": "A",
+      "solution": "The empty set has no elements, so its cardinality is 0.",
+      "explanation": "The empty set, denoted by {} or ∅, contains no elements. By definition, the cardinality of an empty set is zero.",
+      "common_mistake_notes": "A common mistake might be to choose '1' because some people associate the term 'cardinal' with a single element, but in this context, 'cardinality' refers to the count of all elements."
+    },
+    {
+      "id": "UnionCardinality",
+      "stem": "What is the cardinality of the union of sets A = {1, 2, 3} and B = {2, 3, 4}? Assume no common elements.",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correct_choice": "C",
+      "solution": "The union of A and B is {1, 2, 3, 4}, which has four distinct elements.",
+      "explanation": "The cardinality of the union (A ∪ B) is the number of unique elements in both sets combined. Since there are no common elements between A and B, we simply combine all elements without duplication.",
+      "common_mistake_notes": "A common mistake might be to double-count elements that appear in both sets or not include all distinct elements from either set."
+    },
+    {
+      "id": "IntersectionCardinality",
+      "stem": "What is the cardinality of the intersection of sets C = {1, 2, 3, 4} and D = {3, 4, 5, 6}? Assume no other common elements.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "The intersection of C and D is {3, 4}, which has two distinct elements.",
+      "explanation": "The cardinality of the intersection (C ∩ D) is the number of elements that are common to both sets. In this case, only 3 and 4 are shared between C and D.",
+      "common_mistake_notes": "A common mistake might be to include elements that are not in both sets or to count duplicates."
+    },
+    {
+      "id": "CartesianProductCardinality",
+      "stem": "What is the cardinality of the Cartesian product of sets E = {a, b} and F = {1, 2}? Assume no other common elements.",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_choice": "D",
+      "solution": "The Cartesian product (E × F) is {(a, 1), (a, 2), (b, 1), (b, 2)}, which has four distinct pairs.",
+      "explanation": "The cardinality of the Cartesian product is found by multiplying the cardinalities of the two sets. In this case, E has 2 elements and F has 2 elements, so their product is 4.",
+      "common_mistake_notes": "A common mistake might be to add the number of elements from each set instead of multiplying them."
+    },
+    {
+      "id": "SetDifferenceCardinality",
+      "stem": "What is the cardinality of the difference between sets G = {1, 2, 3, 4} and H = {3, 4, 5}? Assume no other common elements.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "The difference of G and H (G - H) is {1, 2}, which has two distinct elements.",
+      "explanation": "The cardinality of the set difference is the number of elements in G that are not in H. Here, only 1 and 2 are unique to G.",
+      "common_mistake_notes": "A common mistake might be to include elements that are in both sets or to count duplicates."
+    }
+  ]
+}

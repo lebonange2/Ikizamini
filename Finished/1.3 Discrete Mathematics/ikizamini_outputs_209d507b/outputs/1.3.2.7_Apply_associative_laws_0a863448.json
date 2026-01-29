@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.2.7",
+  "objective_text": "Apply associative laws",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Simplify the expression: (2 + 3) + 4",
+      "choices": {
+        "A": "(5 + 4)",
+        "B": "2 + (3 + 4)",
+        "C": "9",
+        "D": "14"
+      },
+      "correct_choice": "B",
+      "solution": "Using the associative law of addition, we can rearrange the terms without changing the value: (2 + 3) + 4 = 2 + (3 + 4). The correct simplified expression is B. The other choices either do not use the associative property or result in an incorrect sum.",
+      "explanation": "The associative law states that when adding three or more numbers, the order of addition can be rearranged without changing the sum.",
+      "common_mistake_notes": "A common mistake would be to choose A, which is the result of simply adding the first two numbers and then adding 4, rather than applying the associative property. Choice C adds all the numbers together directly, which does not demonstrate the application of the associative law. Choice D results from an incorrect sum."
+    },
+    {
+      "id": "?",
+      "stem": "Simplify the expression: (5 \times 3) \times 2",
+      "choices": {
+        "A": "5 \times (3 \times 2)",
+        "B": "10 \times 3",
+        "C": "30",
+        "D": "15"
+      },
+      "correct_choice": "A",
+      "solution": "Using the associative law of multiplication, we can rearrange the terms without changing the value: (5 \times 3) \times 2 = 5 \times (3 \times 2). The correct simplified expression is A. The other choices either do not use the associative property or result in an incorrect product.",
+      "explanation": "The associative law states that when multiplying three or more numbers, the order of multiplication can be rearranged without changing the product.",
+      "common_mistake_notes": "A common mistake would be to choose B, which is the result of multiplying 5 and 10 (the product of 5 \times 2) and then multiplying by 3. Choice C directly multiplies all numbers together, not demonstrating the associative property. Choice D results from an incorrect product."
+    },
+    {
+      "id": "?",
+      "stem": "Simplify the expression: [(x + y) + z] + w",
+      "choices": {
+        "A": "x + (y + z) + w",
+        "B": "x + y + z + w",
+        "C": "2x + 2y + 2z + w",
+        "D": "x + y + zw"
+      },
+      "correct_choice": "A",
+      "solution": "Using the associative law of addition, we can rearrange the terms without changing the value: [(x + y) + z] + w = x + (y + z) + w. The correct simplified expression is A. The other choices either do not use the associative property or result in an incorrect sum.",
+      "explanation": "The associative law applies to adding three or more terms, allowing us to group them differently without altering the sum.",
+      "common_mistake_notes": "A common mistake would be to choose B, which is the result of assuming that the grouping parentheses are unnecessary and simply adding all variables together. Choice C doubles each variable, not applying the associative property correctly. Choice D combines z and w incorrectly."
+    },
+    {
+      "id": "?",
+      "stem": "Simplify the expression: [(a \times b) \times c] \times d",
+      "choices": {
+        "A": "a \times (b \times c) \times d",
+        "B": "abcd",
+        "C": "2abc + d",
+        "D": "ab + cd"
+      },
+      "correct_choice": "A",
+      "solution": "Using the associative law of multiplication, we can rearrange the terms without changing the value: [(a \times b) \times c] \times d = a \times (b \times c) \times d. The correct simplified expression is A. The other choices either do not use the associative property or result in an incorrect product.",
+      "explanation": "The associative law applies to multiplying three or more terms, allowing us to group them differently without altering the product.",
+      "common_mistake_notes": "A common mistake would be to choose B, which is the result of assuming that the grouping parentheses are unnecessary and simply multiplying all variables together. Choice C combines terms in an incorrect manner, not applying the associative property correctly. Choice D separates the variables incorrectly."
+    },
+    {
+      "id": "?",
+      "stem": "Simplify the expression: (x + 2) \times (y + 3)",
+      "choices": {
+        "A": "xy + 5x + 6",
+        "B": "(x + y) + (2 \times 3)",
+        "C": "x(y + 3) + 2(y + 3)",
+        "D": "x + 2y + 6"
+      },
+      "correct_choice": "C",
+      "solution": "Using the distributive property and not the associative law, we can expand the expression: (x + 2) \times (y + 3) = x(y + 3) + 2(y + 3). The correct simplified expression is C. The other choices either use the wrong property or result in an incorrect product.",
+      "explanation": "The distributive property is used here, not the associative law, to multiply each term of one binomial by each term of the other.",
+      "common_mistake_notes": "A common mistake would be to choose A, which results from distributing only one factor (x) and not both. Choice B applies the associative law incorrectly, treating addition and multiplication as if they were commutative. Choice D attempts to add the terms directly without multiplying them first."
+    },
+    {
+      "id": "?",
+      "stem": "Simplify the expression: (2a + 3b) + (4a + 5b)",
+      "choices": {
+        "A": "6a + 8b",
+        "B": "2(2a + 3b) + 5b",
+        "C": "6a + 15b",
+        "D": "2a + 7b"
+      },
+      "correct_choice": "A",
+      "solution": "Using the distributive property and not the associative law, we can combine like terms: (2a + 3b) + (4a + 5b) = 6a + 8b. The correct simplified expression is A. The other choices either do not combine like terms or result in an incorrect sum.",
+      "explanation": "The distributive property is used here, not the associative law, to add the coefficients of the same variables.",
+      "common_mistake_notes": "A common mistake would be to choose B, which incorrectly distributes 2 only to the first term. Choice C adds the coefficients of a and b without combining them. Choice D combines the a terms but does not combine the b terms correctly."
+    },
+    {
+      "id": "?",
+      "stem": "Simplify the expression: (3x \times 4y) \times 5z",
+      "choices": {
+        "A": "12xy \times 5z",
+        "B": "3x \times (4y \times 5z)",
+        "C": "15xyz",
+        "D": "60xyz"
+      },
+      "correct_choice": "B",
+      "solution": "Using the distributive property and not the associative law, we can multiply the coefficients first: (3x \times 4y) \times 5z = 3x \times (4y \times 5z). The correct simplified expression is B. The other choices either do not distribute correctly or result in an incorrect product.",
+      "explanation": "The distributive property is used here, not the associative law, to multiply the coefficients before multiplying the variables.",
+      "common_mistake_notes": "A common mistake would be to choose A, which incorrectly distributes 5z only to one of the terms. Choice C combines the variables without distributing the coefficient correctly. Choice D multiplies all numbers together directly, not applying the distributive property."
+    }
+  ]
+}

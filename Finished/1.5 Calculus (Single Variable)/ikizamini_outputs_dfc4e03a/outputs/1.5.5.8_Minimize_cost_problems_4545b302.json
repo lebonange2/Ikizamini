@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.8",
+  "objective_text": "Minimize cost problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A company produces two products, A and B. The production cost for each unit of product A is $5 and for product B is $7. The company has a daily production capacity of 200 units. Product A sells for $10 per unit and product B sells for $12 per unit. To maximize profit, how many units of each product should the company produce?",
+      "choices": {
+        "A": "50 units of A and 150 units of B",
+        "B": "100 units of A and 100 units of B",
+        "C": "150 units of A and 50 units of B",
+        "D": "200 units of A and 0 units of B"
+      },
+      "correct_choice": "B",
+      "solution": "To maximize profit, the company should produce as many units as possible of the product with the higher profit margin. The profit per unit for product A is $10 - $5 = $5, and for product B it's $12 - $7 = $5. Since both products have the same profit margin, the company can produce any combination that utilizes their full capacity to maximize profits. However, to fully utilize their capacity, they should produce an equal number of units for each product. Therefore, producing 100 units of A and 100 units of B will result in maximum profit without exceeding production capacity.",
+      "explanation": "The key here is understanding that both products have the same profit margin, so it doesn't matter which one is produced more as long as they utilize their full capacity. The common mistake would be to assume that producing only one product with a higher selling price (e.g., 200 units of B) would maximize profits, but this would exceed the production capacity and result in lower overall profit.",
+      "common_mistake_notes": "Assuming that producing more of the higher- priced product automatically maximizes profit without considering production capacity."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A store is trying to minimize the cost of packaging materials for two types of products, X and Y. Product X requires 3 square feet of cardboard per package, while product Y requires 2 square feet. The store has a total of 180 square feet of cardboard available. Each unit of product X sells for $15 and each unit of product Y sells for $10. To minimize cost, how many units of each product should the store package?",
+      "choices": {
+        "A": "60 units of X and 30 units of Y",
+        "B": "45 units of X and 45 units of Y",
+        "C": "30 units of X and 60 units of Y",
+        "D": "20 units of X and 80 units of Y"
+      },
+      "correct_choice": "C",
+      "solution": "To minimize cost, the store should package as many units as possible with the least amount of cardboard. Since product Y requires less cardboard per unit (2 square feet vs 3 for X), it's more cost-effective to package more units of Y. With 180 square feet available, the store can package 180 / 2 = 90 units of product Y. The remaining cardboard is then used for product X: 180 - (90 \times 2) = 60 square feet, which allows packaging 60 / 3 = 20 units of product X. Therefore, the store should package 20 units of X and 90 units of Y.",
+      "explanation": "The key to this problem is understanding that minimizing cost means using fewer materials while still packaging as many products as possible. The common mistake would be to focus on maximizing profit per unit without considering the cost of packaging materials, which could lead to a higher overall cost if more expensive materials are used.",
+      "common_mistake_notes": "Focusing solely on maximizing profit per unit without considering the cost of packaging materials."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A farmer has 40 acres of land to plant two crops, corn and wheat. Corn requires 2 acres per plot and yields a profit of $300 per plot. Wheat requires 1 acre per plot and yields a profit of $250 per plot. To minimize the cost of land usage, how many plots of each crop should the farmer plant?",
+      "choices": {
+        "A": "20 plots of corn and 20 plots of wheat",
+        "B": "16 plots of corn and 24 plots of wheat",
+        "C": "12 plots of corn and 28 plots of wheat",
+        "D": "8 plots of corn and 32 plots of wheat"
+      },
+      "correct_choice": "D",
+      "solution": "To minimize the cost of land usage, the farmer should plant more plots of the crop that requires less land per plot. Since wheat requires only 1 acre per plot compared to 2 for corn, it's more efficient in terms of land usage. With 40 acres available, the farmer can plant 40 / 1 = 40 plots of wheat. The remaining land is then used for corn: 40 - 40 = 0 plots. Therefore, the farmer should plant 0 plots of corn and 40 plots of wheat to minimize land usage.",
+      "explanation": "The key here is understanding that minimizing cost in terms of land usage means planting more of the crop with a lower land requirement per plot. The common mistake would be to focus on maximizing profit without considering the land usage cost, which could lead to overusing land and higher costs.",
+      "common_mistake_notes": "Focusing solely on maximizing profit without considering the cost of land usage."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A construction company needs to build a retaining wall using two types of bricks: Type A (costing $2 per brick) and Type B (costing $3 per brick). The wall must be 10 feet long, 5 feet high, and 1 foot thick. Type A bricks measure 6 inches by 3 inches, while Type B bricks measure 4 inches by 8 inches. To minimize the total cost of bricks, how many of each type should the company use?",
+      "choices": {
+        "A": "200 Type A bricks and 100 Type B bricks",
+        "B": "150 Type A bricks and 75 Type B bricks",
+        "C": "100 Type A bricks and 50 Type B bricks",
+        "D": "50 Type A bricks and 25 Type B bricks"
+      },
+      "correct_choice": "A",
+      "solution": "To minimize the cost, the company should use more of the cheaper brick type (Type A) while still meeting the wall dimensions. First, calculate the total volume of the wall: 10 ft \times 5 ft \times 1 ft = 50 cubic feet. Since 1 cubic foot is equivalent to 1728 cubic inches, we have 50 \times 1728 = 86400 cubic inches. Now, convert the brick dimensions to cubic inches: Type A (6 in \times 3 in \times 1 in) = 18 cu in and Type B (4 in \times 8 in \times 1 in) = 32 cu in. The number of bricks needed for each type is then: Type A: 86400 / 18 = 4800, Type B: 86400 / 32 = 2700. Since the company has to use whole bricks, they can only use a maximum of 2000 Type A bricks (since 4800 - 2800 = 2000) and 100 Type B bricks (since 2700 - 1700 = 100). Therefore, the company should use 2000 Type A bricks and 100 Type B bricks.",
+      "explanation": "The key to this problem is understanding that minimizing cost means using more of the cheaper brick type while still meeting the wall dimensions. The common mistake would be to focus on using only one type of brick without considering the total volume required, which could lead to higher costs due to wasted space or not enough bricks.",
+      "common_mistake_notes": "Focusing solely on one type of brick without considering the total volume required."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A factory produces two types of products: Product C and Product D. The production cost for each unit of Product C is $10, while for Product D it's $12. The factory has a monthly budget of $50,000 for production costs. Each unit of Product C sells for $20 and each unit of Product D sells for $25. To minimize the cost per unit sold, how many units of each product should the factory produce?",
+      "choices": {
+        "A": "2,500 units of C and 1,667 units of D",
+        "B": "2,000 units of C and 2,000 units of D",
+        "C": "1,500 units of C and 2,500 units of D",
+        "D": "1,000 units of C and 3,000 units of D"
+      },
+      "correct_choice": "A",
+      "solution": "To minimize the cost per unit sold, the factory should produce more units of the product with a lower production cost per unit. Since Product C has a lower production cost ($10 vs $12 for D), it's more cost-effective to produce more units of C. With a budget of $50,000, the factory can produce 50,000 / 10 = 5,000 units of Product C or 50,000 / 12 ≈ 4,167 units of Product D. To use up the budget fully, they should produce 1,667 units of Product D (since 5,000 - 3,333 = 1,667). Therefore, the factory should produce 5,000 units of C and 1,667 units of D.",
+      "explanation": "The key here is understanding that minimizing cost per unit sold means producing more of the product with a lower production cost. The common mistake would be to focus on maximizing profit without considering the total production costs, which could lead to higher costs per unit sold if more expensive products are produced.",
+      "common_mistake_notes": "Focusing solely on maximizing profit without considering the total production costs."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A shipping company needs to transport packages between two cities using two types of trucks: Truck A and Truck B. Truck A has a capacity of 10 tons and costs $500 per trip, while Truck B has a capacity of 8 tons and costs $400 per trip. The company has 120 tons of cargo to transport and a budget of $3,000 for transportation costs. To minimize the cost per ton shipped, how many trips of each truck should the company make?",
+      "choices": {
+        "A": "6 trips of Truck A and 5 trips of Truck B",
+        "B": "4 trips of Truck A and 7 trips of Truck B",
+        "C": "3 trips of Truck A and 9 trips of Truck B",
+        "D": "2 trips of Truck A and 11 trips of Truck B"
+      },
+      "correct_choice": "C",
+      "solution": "To minimize the cost per ton shipped, the company should use more trips of the truck with a lower cost per ton. Since Truck B has a lower cost per trip ($400 vs $500 for A) and is only slightly less efficient (8 tons vs 10 tons), it's more cost-effective to use more trips of Truck B. With 120 tons of cargo, the company needs 120 / 10 = 12 trips with Truck A or 120 / 8 = 15 trips with Truck B. To stay within the budget of $3,000, they can make 3 trips of Truck A (since 3 \times $500 = $1,500) and 9 trips of Truck B (since 9 \times $400 = $3,600, which is within the budget). Therefore, the company should make 3 trips of Truck A and 9 trips of Truck B.",
+      "explanation": "The key to this problem is understanding that minimizing cost per ton shipped means using more trips of the truck with a lower cost per trip. The common mistake would be to focus on maximizing capacity without considering the total transportation costs, which could lead to higher costs per ton shipped if less efficient trucks are used.",
+      "common_mistake_notes": "Focusing solely on maximizing capacity without considering the total transportation costs."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A software company needs to develop two features for their product: Feature X and Feature Y. Developing Feature X requires 10 developer-weeks of work, while Feature Y requires 8 developer-weeks. The company has a budget of 40 developer-weeks for new feature development. Each developer works 40 hours per week and earns $50 per hour. To minimize the cost of feature development, how many developers should be assigned to each feature?",
+      "choices": {
+        "A": "2 developers on Feature X and 3 developers on Feature Y",
+        "B": "3 developers on Feature X and 2 developers on Feature Y",
+        "C": "4 developers on Feature X and 1 developer on Feature Y",
+        "D": "5 developers on Feature X and 0 developers on Feature Y"
+      },
+      "correct_choice": "A",
+      "solution": "To minimize the cost of feature development, the company should assign more developers to the feature with a lower cost per developer-week. Since both features have the same number of developer-weeks required but Feature Y requires fewer hours (8 \times 40 = 320 hours vs 10 \times 40 = 400 hours for X), it's more cost-effective to assign more developers to Feature Y. With a budget of 40 developer-weeks, the company can assign 40 / 10 = 4 developers to Feature X or 40 / 8 = 5 developers to Feature Y. To minimize costs, they should assign 2 developers to Feature X (since 4 - 2 = 2) and 3 developers to Feature Y (since 5 - 2 = 3). Therefore, the company should assign 2 developers to Feature X and 3 developers to Feature Y.",
+      "explanation": "The key here is understanding that minimizing cost means assigning more developers to the feature with a lower cost per developer-week. The common mistake would be to focus on completing one feature faster without considering the total development costs, which could lead to higher costs if fewer developers are assigned to a more efficient feature.",
+      "common_mistake_notes": "Focusing solely on completing one feature faster without considering the total development costs."
+    }
+  ]
+}

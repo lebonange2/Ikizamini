@@ -1,0 +1,203 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.1.10 Evaluate limits with exponential functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.1 Limits and Continuity
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (What is the limit of (2^x - 4) / x as x approaches 0?):
+(A) -4
+(B) 0
+(C) 2
+(D) ∞
+(E) Does not exist
+A) -4
+B) 0
+C) 2
+D) ∞ (infinity)
+Correct Answer: C
+
+Solution:
+The limit can be evaluated by applying L'Hôpital's rule, which states that if the limit of the ratio of the derivatives is finite and non-zero, then the original limit is also equal to that value. The derivative of 2^x is ln(2) 	imes 2^x, and the derivative of x is 1. Thus, we have the following:
+
+lim (x→0) [(2^x - 4) / x] = lim (x→0) [ln(2) 	imes 2^x / 1]
+= ln(2) 	imes 2^0
+= ln(2) 	imes 1
+= ln(2)
+
+Since ln(2) is a finite, non-zero value, the limit of (2^x - 4) / x as x approaches 0 is ln(2), which is approximately 0.69315.
+
+Explanation:
+The correct answer is C because L'Hôpital's rule simplifies the limit to a finite value.
+
+Common mistake note:
+A common mistake would be to assume that since 2^x approaches 1 and x approaches 0, the entire fraction approaches 0/0, which would lead to an indeterminate form. However, L'Hôpital's rule allows us to evaluate this limit by differentiating both the numerator and denominator.
+------------------------------------------------------------------------------
+
+Problem 2 (What is the limit of (3^(2x) - 9) / x as x approaches 0?):
+(A) 6
+(B) 18
+(C) 4.5
+(D) ∞
+(E) Does not exist
+A) 6
+B) 18
+C) 4.5
+D) ∞ (infinity)
+Correct Answer: A
+
+Solution:
+Again, we can use L'Hôpital's rule to evaluate the limit. The derivative of 3^(2x) is ln(3) 	imes 2 	imes 3^(2x), and the derivative of x is 1. So we have:
+
+lim (x→0) [(3^(2x) - 9) / x] = lim (x→0) [ln(3) 	imes 2 	imes 3^(2x) / 1]
+= ln(3) 	imes 2 	imes 3^0
+= ln(3) 	imes 2 	imes 1
+= 2ln(3)
+
+Since ln(3) is approximately 1.0986, the limit of (3^(2x) - 9) / x as x approaches 0 is 2ln(3), which is approximately 2.1973.
+
+Explanation:
+The correct answer is A because L'Hôpital's rule simplifies the limit to a finite value.
+
+Common mistake note:
+A common mistake would be to try to simplify the expression by dividing both parts of the numerator by x, which would lead to an indeterminate form. However, this approach does not account for the change in the exponent when dividing 3^(2x) by x.
+------------------------------------------------------------------------------
+
+Problem 3 (What is the limit of (e^x - 1) / x as x approaches 0?):
+(A) 1
+(B) 0.5
+(C) 2
+(D) ∞
+(E) Does not exist
+A) 1
+B) 0.5
+C) 2
+D) ∞ (infinity)
+Correct Answer: A
+
+Solution:
+This limit is a well-known limit that represents the derivative of e^x at x = 0, which is equal to the base e itself. By L'Hôpital's rule or by recognizing this special case, we know that:
+
+lim (x→0) [(e^x - 1) / x] = e^(0) 	imes 1
+= 1 	imes 1
+= 1
+
+Explanation:
+The correct answer is A because the limit represents the derivative of e^x evaluated at x = 0.
+
+Common mistake note:
+A common mistake would be to try to use a numerical approach or graphing method, which might give an approximate value close to 1 but not the exact value. The limit is exact and can be found using L'Hôpital's rule or recognizing the special case.
+------------------------------------------------------------------------------
+
+Problem 4 (What is the limit of (5^x - 25) / x as x approaches 0?):
+(A) 4
+(B) 10
+(C) 2
+(D) ∞
+(E) Does not exist
+A) 4
+B) 10
+C) 2
+D) ∞ (infinity)
+Correct Answer: C
+
+Solution:
+We can use L'Hôpital's rule again. The derivative of 5^x is ln(5) 	imes 5^x, and the derivative of x is 1. Applying L'Hpital's rule gives us:
+
+lim (x→0) [(5^x - 25) / x] = lim (x→0) [ln(5) 	imes 5^x / 1]
+= ln(5) 	imes 5^0
+= ln(5) 	imes 1
+= ln(5)
+
+Since ln(5) is approximately 1.6094, the limit of (5^x - 25) / x as x approaches 0 is ln(5), which is approximately 1.6094.
+
+Explanation:
+The correct answer is C because L'Hôpital's rule simplifies the limit to a finite value.
+
+Common mistake note:
+A common mistake would be to try to simplify the expression by dividing both parts of the numerator by x, which would lead to an indeterminate form. However, this approach does not account for the change in the exponent when dividing 5^x by x.
+------------------------------------------------------------------------------
+
+Problem 5 (What is the limit of (7^(3x) - 343) / x as x approaches 0?):
+(A) 63
+(B) 189
+(C) 21
+(D) ∞
+(E) Does not exist
+A) 63
+B) 189
+C) 21
+D) ∞ (infinity)
+Correct Answer: C
+
+Solution:
+Using L'Hôpital's rule, the derivative of 7^(3x) is ln(7) 	imes 3 	imes 7^(3x), and the derivative of x is 1. Applying L'Hpital's rule gives us:
+
+lim (x→0) [(7^(3x) - 343) / x] = lim (x→0) [ln(7) 	imes 3 	imes 7^(3x) / 1]
+= ln(7) 	imes 3 	imes 7^0
+= ln(7) 	imes 3 	imes 1
+= 3ln(7)
+
+Since ln(7) is approximately 1.9459, the limit of (7^(3x) - 343) / x as x approaches 0 is 3ln(7), which is approximately 5.8377.
+
+Explanation:
+The correct answer is C because L'Hôpital's rule simplifies the limit to a finite value.
+
+Common mistake note:
+A common mistake would be to try to simplify the expression by dividing both parts of the numerator by x, which would lead to an indeterminate form. However, this approach does not account for the change in the exponent when dividing 7^(3x) by x.
+------------------------------------------------------------------------------
+
+Problem 6 (What is the limit of (e^(2x) - 1) / x as x approaches 0?):
+(A) 2
+(B) 1
+(C) 4
+(D) ∞
+(E) Does not exist
+A) 2
+B) 1
+C) 4
+D) ∞ (infinity)
+Correct Answer: B
+
+Solution:
+This limit is a special case that represents the derivative of e^(2x) at x = 0, which is equal to twice the base e. By L'Hôpital's rule or recognizing this special case, we know that:
+
+lim (x→0) [(e^(2x) - 1) / x] = 2 	imes e^(0) 	imes 1
+= 2 	imes 1 	imes 1
+= 2
+
+Explanation:
+The correct answer is B because the limit represents the derivative of e^(2x) evaluated at x = 0.
+
+Common mistake note:
+A common mistake would be to try to use a numerical approach or graphing method, which might give an approximate value close to 2 but not the exact value. The limit is exact and can be found using L'Hôpital's rule or recognizing the special case.
+------------------------------------------------------------------------------
+
+Problem 7 (What is the limit of (9^(4x) - 6561) / x as x approaches 0?):
+(A) 27
+(B) 81
+(C) 36
+(D) ∞
+(E) Does not exist
+A) 27
+B) 81
+C) 36
+D) ∞ (infinity)
+Correct Answer: C
+
+Solution:
+Using L'Hôpital's rule, the derivative of 9^(4x) is ln(9) 	imes 4 	imes 9^(4x), and the derivative of x is 1. Applying L'Hpital's rule gives us:
+
+lim (x→0) [(9^(4x) - 6561) / x] = lim (x→0) [ln(9) 	imes 4 	imes 9^(4x) / 1]
+= ln(9) 	imes 4 	imes 9^0
+= ln(9) 	imes 4 	imes 1
+= 4ln(9)
+
+Since ln(9) is approximately 2.1973, the limit of (9^(4x) - 6561) / x as x approaches 0 is 4ln(9), which is approximately 8.7892.
+
+Explanation:
+The correct answer is C because L'Hôpital's rule simplifies the limit to a finite value.
+
+Common mistake note:
+A common mistake would be to try to simplify the expression by dividing both parts of the numerator by x, which would lead to an indeterminate form. However, this approach does not account for the change in the exponent when dividing 9^(4x) by x.
+------------------------------------------------------------------------------

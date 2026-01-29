@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.10.10",
+  "objective_text": "Calculate complex power S = P + jQ",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the complex power if the active power (P) is 100 W and the reactive power (Q) is 50 VAR?",
+      "choices": {
+        "A": "50 + j100",
+        "B": "100 - j50",
+        "C": "150 + j50",
+        "D": "100 + j50"
+      },
+      "correct_choice": "D",
+      "solution": "The formula for complex power is S = P + jQ. Given P = 100 W and Q = 50 VAR, we substitute these values into the formula: S = 100 + j(50) = 100 + j50.",
+      "explanation": "Complex power combines active (real) power with reactive power using the imaginary unit j. The correct answer uses the given values for P and Q in the formula.",
+      "common_mistake_notes": "A common mistake is to reverse the sign of the reactive power term, which results in choice B. This error occurs when混淆了active and reactive power terms."
+    },
+    {
+      "id": ":2",
+      "stem": "Calculate the complex power if an AC circuit has 75 VAR of reactive power and no active power (P = 0).",
+      "choices": {
+        "A": "0 + j75",
+        "B": "75 + j0",
+        "C": "75 - j0",
+        "D": "0 - j75"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for complex power is S = P + jQ. Given P = 0 W and Q = 75 VAR, we substitute these values into the formula: S = 0 + j(75) = 0 + j75.",
+      "explanation": "When there's no active power (P), the complex power is purely reactive and has a positive imaginary part. Choice A correctly represents this scenario.",
+      "common_mistake_notes": "A common mistake is to choose choice B, which assumes that the reactive power term should be positive even though there is no active power. This error occurs when混淆了active and reactive power terms."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the complex power if an AC circuit has 150 W of active power and 200 VAR of reactive power?",
+      "choices": {
+        "A": "150 + j200",
+        "B": "200 - j150",
+        "C": "350 + j50",
+        "D": "350 - j50"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for complex power is S = P + jQ. Given P = 150 W and Q = 200 VAR, we substitute these values into the formula: S = 150 + j(200) = 150 + j200.",
+      "explanation": "The complex power is the sum of active (real) power and reactive power. Choice A correctly calculates the complex power using the given values for P and Q.",
+      "common_mistake_notes": "A common mistake is to reverse the sign of the reactive power term, which results in choice B. This error occurs when混淆了active and reactive power terms."
+    },
+    {
+      "id": ":4",
+      "stem": "An AC circuit has a complex power of 120 + j60. What is the reactive power (Q) in VAR?",
+      "choices": {
+        "A": "60",
+        "B": "120",
+        "C": "180",
+        "D": "75"
+      },
+      "correct_choice": "A",
+      "solution": "The complex power is given as S = 120 + j60. To find the reactive power (Q), we look at the imaginary part of the complex number: Q = Im(S) = 60.",
+      "explanation": "To find reactive power from complex power, we only consider the imaginary part of the complex number. Choice A correctly extracts the reactive power from the given complex power.",
+      "common_mistake_notes": "A common mistake is to choose choice B, which represents the active power (P) instead of reactive power. This error occurs when混淆了active and reactive power terms."
+    },
+    {
+      "id": ":5",
+      "stem": "Calculate the complex power if an AC circuit has 200 W of active power and no reactive power (Q = 0).",
+      "choices": {
+        "A": "200 + j0",
+        "B": "200 - j0",
+        "C": "0 + j200",
+        "D": "0 - j200"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for complex power is S = P + jQ. Given P = 200 W and Q = 0 VAR, we substitute these values into the formula: S = 200 + j(0) = 200 + j0.",
+      "explanation": "When there's no reactive power (Q), the complex power is purely active and has a positive real part. Choice A correctly represents this scenario.",
+      "common_mistake_notes": "A common mistake is to choose choice C, which assumes that the reactive power term should be positive even though there is no reactive power. This error occurs when混淆了active和reactive power terms."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the complex power if an AC circuit has 100 VAR of reactive power and 50 W of active power?",
+      "choices": {
+        "A": "50 + j100",
+        "B": "100 - j50",
+        "C": "150 + j50",
+        "D": "50 - j100"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for complex power is S = P + jQ. Given P = 50 W and Q = 100 VAR, we substitute these values into the formula: S = 50 + j(100) = 50 + j100.",
+      "explanation": "The complex power is the sum of active (real) power and reactive power. Choice A correctly calculates the complex power using the given values for P and Q.",
+      "common_mistake_notes": "A common mistake is to reverse the sign of the reactive power term, which results in choice B. This error occurs when混淆了active和reactive power terms."
+    },
+    {
+      "id": ":7",
+      "stem": "An AC circuit has a complex power of 100 + j150. What is the active power (P) in W?",
+      "choices": {
+        "A": "100",
+        "B": "150",
+        "C": "250",
+        "D": "75"
+      },
+      "correct_choice": "A",
+      "solution": "The complex power is given as S = 100 + j150. To find the active power (P), we look at the real part of the complex number: P = Re(S) = 100.",
+      "explanation": "To find active power from complex power, we only consider the real part of the complex number. Choice A correctly extracts the active power from the given complex power.",
+      "common_mistake_notes": "A common mistake is to choose choice B, which represents the reactive power (Q) instead of active power. This error occurs when混淆了active和reactive power terms."
+    }
+  ]
+}

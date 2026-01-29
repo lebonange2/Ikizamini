@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.14.15",
+  "objective_text": "Use in control system design",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "What is the primary purpose of a feedback controller in a control system?",
+      "choices": {
+        "A": "To increase output variability",
+        "B": "To maintain stability and desired performance",
+        "C": "To reduce the system's response time",
+        "D": "To eliminate the need for human intervention"
+      },
+      "correct_choice": "B",
+      "solution": "A feedback controller is used to maintain stability and desired performance by adjusting the system's inputs based on output measurements, ensuring it behaves as intended.",
+      "explanation": "Stability and desired performance are key aspects of control system design. Controllers help achieve these goals by comparing the actual output with the reference input and making necessary adjustments.",
+      "common_mistake_notes": "Common mistake: Choosing A or D could indicate a misunderstanding of the controller's role; it doesn't increase variability or replace human intervention entirely."
+    },
+    {
+      "id": "Xyz456",
+      "stem": "In a control system, what does a proportional-integral-derivative (PID) controller primarily control?",
+      "choices": {
+        "A": "System bandwidth",
+        "B": "Setpoint tracking accuracy",
+        "C": "Input signal amplitude",
+        "D": "Output signal noise"
+      },
+      "correct_choice": "B",
+      "solution": "A PID controller primarily controls setpoint tracking accuracy, ensuring the system output closely follows the desired reference input.",
+      "explanation": "PID controllers adjust inputs based on error (proportional term), past errors (integral term), and rate of change of error (derivative term). This combination helps achieve accurate setpoint tracking.",
+      "common_mistake_notes": "Common mistake: Choosing A or C could result from confusion with other control system parameters; PID doesn't directly affect bandwidth or input signal amplitude."
+    },
+    {
+      "id": "Qwe789",
+      "stem": "What is the role of a lead compensator in control system design?",
+      "choices": {
+        "A": "To increase overshoot and settling time",
+        "B": "To improve stability by reducing phase lag",
+        "C": "To reduce steady-state error without affecting rise time",
+        "D": "To minimize input signal noise"
+      },
+      "correct_choice": "B",
+      "solution": "A lead compensator is used to improve stability in control systems by reducing phase lag, which helps prevent instability caused by excessive delay.",
+      "explanation": "Lead compensators introduce a controlled amount of phase lead at higher frequencies, counteracting the inherent phase lag in the system and improving its stability margins.",
+      "common_mistake_notes": "Common mistake: Choosing A or D could result from misunderstanding compensator effects; they don't increase overshoot or handle input noise."
+    },
+    {
+      "id": "Rty012",
+      "stem": "In a control system, what is the primary function of a PI controller when compared to a P-only controller?",
+      "choices": {
+        "A": "It eliminates steady-state error but increases settling time",
+        "B": "It improves rise time and overshoot",
+        "C": "It reduces steady-state error without affecting rise time",
+        "D": "It maintains the same performance as a P-only controller"
+      },
+      "correct_choice": "C",
+      "solution": "A PI controller, compared to a P-only controller, reduces steady-state error by incorporating an integral term that accounts for past errors.",
+      "explanation": "The integral term in a PI controller helps eliminate steady-state error, which is not possible with a P-only (proportional) controller.",
+      "common_mistake_notes": "Common mistake: Choosing A or B could result from confusion about the role of an integral term; it doesn't affect rise time or increase overshoot."
+    },
+    {
+      "id": "Ghi345",
+      "stem": "Which type of control system is best suited for systems with slow dynamics and a need for precise tracking?",
+      "choices": {
+        "A": "Open-loop control",
+        "B": "On-off control",
+        "C": "PID control",
+        "D": "Bang-bang control"
+      },
+      "correct_choice": "C",
+      "solution": "A PID control system is well-suited for systems with slow dynamics and the requirement of precise tracking, as it combines proportional, integral, and derivative actions to achieve accurate control.",
+      "explanation": "PID controllers are designed to handle systems with varying dynamics and can provide good performance in terms of setpoint tracking accuracy.",
+      "common_mistake_notes": "Common mistake: Choosing A or B could result from not understanding the need for feedback in systems requiring precise tracking; open-loop and on-off controls don't offer this."
+    },
+    {
+      "id": "Jkl678",
+      "stem": "In a control system, what is the primary advantage of using feedforward control?",
+      "choices": {
+        "A": "Reducing steady-state error due to constant disturbances",
+        "B": "Improving system stability by reducing phase lag",
+        "C": "Increasing the bandwidth of the system",
+        "D": "Minimizing the effect of unmodeled dynamics"
+      },
+      "correct_choice": "A",
+      "solution": "The primary advantage of feedforward control is that it reduces steady-state error caused by constant disturbances, without affecting other performance metrics like rise time or overshoot.",
+      "explanation": "Feedforward control uses a copy of the disturbance signal to create a compensation signal, which helps抵消 the effect of the disturbance on the system output.",
+      "common_mistake_notes": "Common mistake: Choosing B or C could result from confusion with other control techniques; feedforward doesn't directly affect stability or bandwidth."
+    },
+    {
+      "id": "Mno901",
+      "stem": "What is the main difference between a unity feedback control system and an open-loop control system?",
+      "choices": {
+        "A": "Unity feedback systems have no input/output relationship, while open-loop systems do.",
+        "B": "Open-loop systems have no feedback, while unity feedback systems have perfect feedback.",
+        "C": "Unity feedback systems are always stable, while open-loop systems can be unstable.",
+        "D": "Open-loop systems require manual adjustments, while unity feedback systems are automatic."
+      },
+      "correct_choice": "B",
+      "solution": "The main difference between a unity feedback control system and an open-loop system is that the former has perfect feedback, whereas the latter has no feedback at all.",
+      "explanation": "In a unity feedback system, the output is fed back to the input with a gain of 1, forming a closed loop. In contrast, an open-loop system operates without any feedback from the output.",
+      "common_mistake_notes": "Common mistake: Choosing A or C could result from misconceptions about control system behavior; both types can have input/output relationships and stability depends on design."
+    }
+  ]
+}

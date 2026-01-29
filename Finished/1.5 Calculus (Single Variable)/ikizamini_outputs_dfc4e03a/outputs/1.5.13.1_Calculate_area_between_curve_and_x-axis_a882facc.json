@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.13.1",
+  "objective_text": "Calculate area between curve and x-axis",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AswJ8f0gQcSsYm9",
+      "stem": "Find the area between the curve y = x^2 + 1 and the x-axis from x = -2 to x = 2.",
+      "choices": {
+        "A": "4π",
+        "B": "16",
+        "C": "7/3",
+        "D": "10"
+      },
+      "correct_choice": "B",
+      "solution": "To find the area between the curve y = x^2 + 1 and the x-axis, integrate the function from -2 to 2. The integral of x^2 + 1 is (x^3/3) + x evaluated at the limits: (8/3) + 2 - (-8/3) - (-2) = 4(2/3) + 4 = 16/3 + 4 = 10.",
+      "explanation": "The area under a curve is found by integrating the function and evaluating it at the limits. A common mistake is forgetting to evaluate the integral at both limits or misapplying the power rule for integration.",
+      "common_mistake_notes": "Misapplication of the power rule may lead to an incorrect antiderivative, resulting in a wrong area value."
+    },
+    {
+      "id": "cP2ZqLXtQfOoWz4",
+      "stem": "Calculate the area between the curve y = 3sin(x) and the x-axis from x = π/6 to x = 5π/6.",
+      "choices": {
+        "A": "1",
+        "B": "3/2",
+        "C": "9/4",
+        "D": "5/2"
+      },
+      "correct_choice": "B",
+      "solution": "The area between y = 3sin(x) and the x-axis is found by integrating abs(3sin(x)) from π/6 to 5π/6. Since sin(x) is positive in this interval, integrate 3sin(x). The integral of 3sin(x) is -3cos(x) evaluated at the limits: (-3cos(5π/6)) - (-3cos(π/6)) = (3√3/2) - (-3/2) = 3(√3 + 1)/2 ≈ 2.67, which is closest to 3/2.",
+      "explanation": "When integrating an absolute value function, consider the sign of the function within the interval. In this case, sin(x) is positive, so integrate without the absolute value. A common mistake would be to integrate abs(3sin(x)) directly, leading to a more complex integral.",
+      "common_mistake_notes": "Integrating abs(3sin(x)) directly would involve splitting the interval into parts where sin(x) is positive and negative, which complicates the problem."
+    },
+    {
+      "id": "dL7jXN5tQpOoWz4",
+      "stem": "Find the area between y = |2x - 1| and the x-axis from x = -1 to x = 2.",
+      "choices": {
+        "A": "9/2",
+        "B": "13/2",
+        "C": "7",
+        "D": "5"
+      },
+      "correct_choice": "A",
+      "solution": "The area between y = |2x - 1| and the x-axis is found by integrating abs(2x - 1) from -1 to 2. For x in [-1, 1/2), 2x - 1 is negative, so integrate -(2x - 1). For x in [1/2, 2], 2x - 1 is positive, so integrate (2x - 1). The integral of -(2x - 1) is -x^2 + x evaluated from -1 to 1/2 and the integral of (2x - 1) is x^2 - x evaluated from 1/2 to 2. Adding these gives us 0 - 1 + 1/4 + 4 - 2 = 9/4.",
+      "explanation": "When dealing with absolute value functions, split the interval into parts where the function is positive and negative. Integrating each part separately and summing the results gives the correct area.",
+      "common_mistake_notes": "Failing to split the interval based on the sign of 2x - 1 would lead to an incorrect integration, resulting in a wrong area value."
+    },
+    {
+      "id": "eN9kYR5tQrOoWz4",
+      "stem": "Calculate the area between y = x^3 - 2x and the x-axis from x = -2 to x = 1.",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "7/2",
+        "D": "9/2"
+      },
+      "correct_choice": "C",
+      "solution": "The area between y = x^3 - 2x and the x-axis is found by integrating abs(x^3 - 2x) from -2 to 1. For x in [-2, 0), x^3 - 2x is negative, so integrate -(x^3 - 2x). For x in [0, 1], x^3 - 2x is positive, so integrate (x^3 - 2x). The integral of -(x^3 - 2x) is -x^4/4 + x^2 evaluated from -2 to 0 and the integral of (x^3 - 2x) is x^4/4 - x^2 evaluated from 0 to 1. Adding these gives us -8 - 4 + 1/4 - 1 = -43/4.",
+      "explanation": "When integrating an absolute value function, split the interval into parts where the function is positive and negative. Integrating each part separately and summing the results gives the correct area.",
+      "common_mistake_notes": "Failing to split the interval based on the sign of x^3 - 2x would lead to an incorrect integration, resulting in a wrong area value."
+    },
+    {
+      "id": "fP1mZS5tQsOoWz4",
+      "stem": "Find the area between y = 4cos(x) and the x-axis from x = π/3 to x = 2π.",
+      "choices": {
+        "A": "2",
+        "B": "4",
+        "C": "6",
+        "D": "8"
+      },
+      "correct_choice": "B",
+      "solution": "The area between y = 4cos(x) and the x-axis is found by integrating abs(4cos(x)) from π/3 to 2π. Since cos(x) is positive in this interval, integrate 4cos(x). The integral of 4cos(x) is 4sin(x) evaluated at the limits: (4sin(2π)) - (4sin(π/3)) = 0 - 2√3 ≈ -2.83, which is closest to -2.",
+      "explanation": "When integrating an absolute value function, consider the sign of the function within the interval. In this case, cos(x) is positive, so integrate without the absolute value. A common mistake would be to integrate abs(4cos(x)) directly, leading to a more complex integral.",
+      "common_mistake_notes": "Integrating abs(4cos(x)) directly would involve splitting the interval into parts where cos(x) is positive and negative, which complicates the problem."
+    },
+    {
+      "id": "gR3nba5tQpOoWz4",
+      "stem": "Calculate the area between y = x^2 - 3x + 2 and the x-axis from x = 1 to x = 3.",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "3"
+      },
+      "correct_choice": "D",
+      "solution": "The area between y = x^2 - 3x + 2 and the x-axis is found by integrating abs(x^2 - 3x + 2) from 1 to 3. The function has roots at x = 1 and x = 2, so split the interval into [1, 2] and [2, 3]. For x in [1, 2], x^2 - 3x + 2 is negative, so integrate -(x^2 - 3x + 2). For x in [2, 3], x^2 - 3x + 2 is positive, so integrate (x^2 - 3x + 2). The integral of -(x^2 - 3x + 2) is -x^3/3 + 3x^2/2 - 2x evaluated from 1 to 2 and the integral of (x^2 - 3x + 2) is x^3/3 - 3x^2/2 + 2x evaluated from 2 to 3. Adding these gives us 0 - (1/3) + 9/2 + 9 - 9 = 27/6.",
+      "explanation": "When integrating an absolute value function, split the interval into parts where the function is positive and negative. Integrating each part separately and summing the results gives the correct area.",
+      "common_mistake_notes": "Failing to split the interval based on the roots of x^2 - 3x + 2 would lead to an incorrect integration, resulting in a wrong area value."
+    },
+    {
+      "id": "hT5oZb5tQrOoWz4",
+      "stem": "Find the area between y = 2sin(x) and the x-axis from x = π/6 to x = 7π/6.",
+      "choices": {
+        "A": "1",
+        "B": "√3",
+        "C": "2",
+        "D": "2√3"
+      },
+      "correct_choice": "C",
+      "solution": "The area between y = 2sin(x) and the x-axis is found by integrating abs(2sin(x)) from π/6 to 7π/6. For x in [π/6, π/2), 2sin(x) is positive, so integrate 2sin(x). For x in [π/2, 5π/6], 2sin(x) is negative, so integrate -(2sin(x)). Finally, for x in [5π/6, 7π/6], 2sin(x) is positive again, so integrate 2sin(x). The integral of 2sin(x) is -2cos(x) and the integral of -2sin(x) is 2cos(x). Evaluating these at the limits gives us 0 - √3 + (1) = 1 - √3 ≈ 0.27, which is closest to 1.",
+      "explanation": "When integrating an absolute value function, consider the sign of the function within the interval. In this case, sin(x) changes signs, so integrate each part separately and sum the results for the correct area.",
+      "common_mistake_notes": "Failing to split the interval based on the sign of 2sin(x) would lead to an incorrect integration, resulting in a wrong area value."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.4.15 Verify circuit equivalence
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.4 Truth Tables
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (InverterEquivalence):
+Determine if the two circuits below are equivalent, where A and B represent ideal NOT gates.
+A) [Circuit with input X and output Y where X is inverted to give Y using only one NOT gate A]
+B) [Circuit with input X and output Y where X is inverted twice using two NOT gates A and B in series]
+C) [Circuit with input X and output Y where X is inverted and then fed back into the same NOT gate A twice]
+D) [Circuit with input X and output Y where X is split, inverted by NOT gate A, and rejoined to form Y]
+Correct Answer: A
+
+Solution:
+The correct circuit is A because a single NOT gate inverts its input. Circuits B and C both invert the signal twice, resulting in no change (a double inversion returns the original signal). Circuit D splits the input and applies the NOT gate to one part, which does not result in an equivalent circuit.
+
+Explanation:
+The goal is to verify if the circuits produce the same output for all possible inputs. In this case, a single NOT gate inverts its input, so circuits with multiple inversions or split inputs are not equivalent.
+
+Common mistake note:
+Common mistake: Choosing B because it has two NOT gates like the original problem description. However, double inversion does not change the signal.
+------------------------------------------------------------------------------
+
+Problem 2 (SeriesResistors):
+Determine if the two circuits below are equivalent in terms of voltage drop across R1 and R2 when connected in series.
+A) [Circuit with two resistors R1 and R2 in series, total resistance is R1 + R2]
+B) [Circuit with two resistors R1 and R2 in parallel, total resistance is (R1 * R2) / (R1 + R2)]
+C) [Circuit with a single resistor (R1 + R2) replacing both R1 and R2]
+D) [Circuit with a voltage divider formed by R1 and R2, output voltage depends on R1/ R2 ratio]
+Correct Answer: A
+
+Solution:
+The correct circuit is A because when resistors are connected in series, the total resistance is the sum of individual resistances. Circuits B and D involve parallel connections or voltage division, which do not result in equivalent voltage drops across R1 and R2. Circuit C represents a single resistor but does not show how it's connected to the rest of the circuit.
+
+Explanation:
+The objective is to verify if the circuits have the same voltage drop across R1 and R2 when connected in series. In series connections, voltage drops are additive, so total resistance is the sum of individual resistances.
+
+Common mistake note:
+Common mistake: Choosing B because it involves two resistors, but parallel connections change the overall resistance and voltage distribution.
+------------------------------------------------------------------------------
+
+Problem 3 (ParallelCapacitors):
+Determine if the two circuits below are equivalent in terms of total capacitance when capacitors C1 and C2 are connected in parallel.
+A) [Circuit with two capacitors C1 and C2 connected in parallel, total capacitance is C1 + C2]
+B) [Circuit with two capacitors C1 and C2 connected in series, total capacitance is (C1 * C2) / (C1 + C2)]
+C) [Circuit with a single capacitor (C1 + C2) replacing both C1 and C2]
+D) [Circuit with a voltage divider formed by C1 and C2, output voltage depends on C1/ C2 ratio]
+Correct Answer: A
+
+Solution:
+The correct circuit is A because when capacitors are connected in parallel, the total capacitance is the sum of individual capacitances. Circuits B and D involve series connections or voltage division, which do not result in equivalent total capacitance. Circuit C represents a single capacitor but does not show how it's connected to the rest of the circuit.
+
+Explanation:
+The objective is to verify if the circuits have the same total capacitance when capacitors are connected in parallel. In parallel connections, capacitances add together, so total capacitance is the sum of individual capacitances.
+
+Common mistake note:
+Common mistake: Choosing B because it involves two capacitors, but series connections change the overall capacitance and voltage distribution.
+------------------------------------------------------------------------------
+
+Problem 4 (HalfAdder):
+Determine if the two circuits below are equivalent in terms of producing sum (S) and carry (C) outputs for binary inputs A and B.
+A) [A half-adder circuit with two inputs A and B, producing sum S = A XOR B and carry C = A AND B]
+B) [A half-adder circuit with two inputs A and B, producing sum S = A OR B and carry C = A AND B]
+C) [A full adder circuit with three inputs A, B, and Cin, producing sum S and carry Cout]
+D) [A half-adder circuit with two inputs A and B, producing sum S = (A + B) % 2 and carry C = A XOR B]
+Correct Answer: A
+
+Solution:
+The correct circuit is A because a half-adder produces the sum as the exclusive OR of its inputs and the carry as the AND of its inputs. Circuits B and D use different logic for the sum, which changes the output behavior. Circuit C is a full adder with an extra input Cin, making it not equivalent to a standard half-adder.
+
+Explanation:
+The objective is to verify if the circuits produce the same sum (S) and carry (C) outputs for binary inputs A and B. A half-adder follows specific logic rules: S = A XOR B and C = A AND B.
+
+Common mistake note:
+Common mistake: Choosing B because it uses OR instead of XOR, which changes the behavior of the sum output.
+------------------------------------------------------------------------------
+
+Problem 5 (Comparator):
+Determine if the two circuits below are equivalent in terms of producing an output (Y) when comparing inputs Vin1 and Vin2.
+A) [A voltage comparator circuit with inputs Vin1 and Vin2, producing output Y = 1 if Vin1 > Vin2, and Y = 0 otherwise]
+B) [A voltage summer circuit with inputs Vin1 and Vin2, producing output Y = Vin1 + Vin2]
+C) [A voltage divider circuit with inputs Vin1 and Vin2, producing output Y = Vin1 / Vin2]
+D) [A voltage follower circuit with input Vin1, producing output Y = Vin1]
+Correct Answer: A
+
+Solution:
+The correct circuit is A because a voltage comparator compares two input voltages and produces an output indicating which is greater. Circuits B, C, and D perform different operations: B adds the inputs, C divides one input by another, and D simply passes the input through without comparison.
+
+Explanation:
+The objective is to verify if the circuits produce the same output when comparing input voltages Vin1 and Vin2. A voltage comparator outputs a logic level based on the relative magnitudes of its inputs.
+
+Common mistake note:
+Common mistake: Choosing B because it involves adding two inputs, which is not the function of a voltage comparator.
+------------------------------------------------------------------------------
+
+Problem 6 (DiodeBridge):
+Determine if the two circuits below are equivalent in terms of producing a full-wave rectified output from an AC input.
+A) [A bridge rectifier circuit with four diodes, converting AC to pulsating DC]
+B) [A half-wave rectifier circuit with one diode, converting AC to pulsating DC]
+C) [A single-phase transformer circuit, stepping up or down the AC voltage]
+D) [An AC voltage source connected directly to a load resistor, without any rectification]
+Correct Answer: A
+
+Solution:
+The correct circuit is A because a bridge rectifier uses four diodes to convert an AC input into pulsating DC. Circuits B and D produce only half-wave rectified output or no rectification at all. Circuit C involves a transformer, which changes the voltage but does not rectify the signal.
+
+Explanation:
+The objective is to verify if the circuits produce full-wave rectified output from an AC input. A bridge rectifier uses four diodes to convert both positive and negative half-cycles of the AC waveform into pulsating DC.
+
+Common mistake note:
+Common mistake: Choosing B because it involves a diode, but a half-wave rectifier only converts one half of the AC cycle.
+------------------------------------------------------------------------------
+
+Problem 7 (LCFilter):
+Determine if the two circuits below are equivalent in terms of filtering an electrical signal at a specific frequency.
+A) [An LC filter circuit with an inductor (L) and capacitor (C), designed to pass signals near its resonant frequency]
+B) [A RC filter circuit with a resistor (R) and capacitor (C), designed to pass low-frequency signals better than high-frequency signals]
+C) [A single-stage voltage amplifier circuit, amplifying the input signal by a certain gain factor]
+D) [A voltage divider circuit with two resistors, dividing the input voltage based on their values]
+Correct Answer: A
+
+Solution:
+The correct circuit is A because an LC filter uses an inductor and capacitor to pass signals near its resonant frequency. Circuits B, C, and D perform different functions: B is a RC filter, C amplifies the signal, and D divides the voltage.
+
+Explanation:
+The objective is to verify if the circuits are equivalent in filtering electrical signals at specific frequencies. An LC filter is designed to pass signals around its resonant frequency while attenuating other frequencies.
+
+Common mistake note:
+Common mistake: Choosing B because it involves a capacitor, but an RC filter has different characteristics than an LC filter.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.14.4 Apply Boolean identities
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.14 Boolean Algebra
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+What is the result of (A AND B) OR (NOT A AND NOT B)?
+A) A
+B) B
+C) False
+D) True
+Correct Answer: C
+
+Solution:
+(A AND B) OR (NOT A AND NOT B) can be simplified using De Morgan's law: NOT(A AND B) is equivalent to (NOT A OR NOT B). So the expression becomes (A AND B) OR (NOT A OR NOT B). Since one of the terms, A AND B, cannot be true at the same time as NOT A OR NOT B (as it would require both A and NOT A to be true), the overall result is False.
+
+Explanation:
+De Morgan's law states that the negation of a conjunction is equivalent to the disjunction of the negations, and vice versa. This identity was applied to simplify the expression.
+
+Common mistake note:
+A common mistake would be to assume that (A AND B) OR (NOT A AND NOT B) is True because at least one term in the disjunction is true. However, this neglects the fact that A and NOT A cannot both be true simultaneously.
+------------------------------------------------------------------------------
+
+Problem 2 (Asd456):
+What is the result of (X OR Y) AND (NOT X AND NOT Y)?
+A) X
+B) Y
+C) False
+D) True
+Correct Answer: C
+
+Solution:
+(X OR Y) AND (NOT X AND NOT Y) can be simplified using De Morgan's law: NOT(X OR Y) is equivalent to (NOT X AND NOT Y). Since the second term of both expressions is identical, and it represents a contradiction (NOT X and NOT Y cannot both be true), the overall result is False.
+
+Explanation:
+De Morgan's law was applied to simplify the expression. The key here is recognizing that the second term in both parts of the AND operation is contradictory, leading to an overall False result.
+
+Common mistake note:
+A common mistake would be to think that (X OR Y) AND (NOT X AND NOT Y) could be True if X and Y are different variables. However, the presence of NOT X AND NOT Y ensures a contradiction regardless of the values of X and Y.
+------------------------------------------------------------------------------
+
+Problem 3 (Asd789):
+What is the result of ((P AND Q) OR R) AND (NOT P AND NOT Q)?
+A) R
+B) False
+C) True
+D) Cannot be determined without knowing the value of R
+Correct Answer: B
+
+Solution:
+((P AND Q) OR R) AND (NOT P AND NOT Q) can be simplified by applying distributivity: A AND (B OR C) is equivalent to (A AND B) OR (A AND C). We get (P AND Q AND NOT P AND NOT Q) OR (R AND NOT P AND NOT Q). Since P AND NOT P and Q AND NOT Q are contradictions, the entire expression evaluates to False.
+
+Explanation:
+Distributivity was used to simplify the expression. The presence of contradictory terms within the AND operation ensures an overall False result.
+
+Common mistake note:
+A common mistake would be to assume that the value of R determines the outcome. However, even if R is True, the contradictions in P AND NOT P and Q AND NOT Q still lead to a False result.
+------------------------------------------------------------------------------
+
+Problem 4 (Asd012):
+What is the result of (A OR B) AND (NOT A OR NOT B)?
+A) A
+B) B
+C) False
+D) True
+Correct Answer: D
+
+Solution:
+(A OR B) AND (NOT A OR NOT B) is an example of the identity known as 'absorption law': A AND (A OR B) is equivalent to A. Here, we can think of it as (A OR B) being absorbed by the AND operation with its own terms. The result is True if either A or B is true.
+
+Explanation:
+The absorption law was applied to simplify the expression. This identity shows that when one term is present in both parts of the AND operation, it 'absorbs' the other term and the overall result remains True.
+
+Common mistake note:
+A common mistake would be to think that (A OR B) AND (NOT A OR NOT B) could be False if both A and B are false. However, this identity holds true regardless of the values of A and B; at least one term in the OR operation must be True for the overall result to be True.
+------------------------------------------------------------------------------
+
+Problem 5 (Asd345):
+What is the result of (X AND Y) OR (NOT X AND NOT Y)?
+A) X
+B) Y
+C) False
+D) True
+Correct Answer: D
+
+Solution:
+(X AND Y) OR (NOT X AND NOT Y) is an example of the identity known as 'complement law': A OR NOT A is equivalent to True. Here, both terms in the OR operation are complements of each other, so the result is True.
+
+Explanation:
+The complement law was applied to simplify the expression. This identity states that a variable combined with its negation will always result in True.
+
+Common mistake note:
+A common mistake would be to think that (X AND Y) OR (NOT X AND NOT Y) could be False if both X and Y are false. However, the complement law ensures that at least one term in the OR operation is True, resulting in an overall True result.
+------------------------------------------------------------------------------
+
+Problem 6 (Asd678):
+What is the result of ((P OR Q) AND R) OR (NOT P AND NOT Q)?
+A) R
+B) False
+C) True
+D) Cannot be determined without knowing the value of R
+Correct Answer: C
+
+Solution:
+((P OR Q) AND R) OR (NOT P AND NOT Q) can be simplified by applying distributivity: A OR (B AND C) is equivalent to (A OR B) AND (A OR C). We get ((P OR Q) AND R) OR (NOT P AND NOT Q) = (R OR NOT P) AND (R OR NOT Q). Since at least one of NOT P or NOT Q must be true, the overall result is True.
+
+Explanation:
+Distributivity was used to simplify the expression. The presence of at least one True term in the OR operation with NOT P and NOT Q ensures an overall True result.
+
+Common mistake note:
+A common mistake would be to think that the value of R determines the outcome. However, even if R is False, the presence of either NOT P or NOT Q guarantees a True result.
+------------------------------------------------------------------------------
+
+Problem 7 (Asd901):
+What is the result of (X OR Y) AND (NOT X OR NOT Y)?
+A) X
+B) Y
+C) False
+D) True
+Correct Answer: D
+
+Solution:
+(X OR Y) AND (NOT X OR NOT Y) is an example of the identity known as 'identity law': A AND True is equivalent to A, and A OR False is equivalent to A. Here, both parts of the AND operation are complements, resulting in True.
+
+Explanation:
+The identity law was applied to simplify the expression. This identity states that any variable combined with True remains unchanged, and any variable combined with False also remains unchanged.
+
+Common mistake note:
+A common mistake would be to think that (X OR Y) AND (NOT X OR NOT Y) could be False if both X and Y are false. However, the identity law ensures that at least one term in the AND operation is True, resulting in an overall True result.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.10.1 Define combinations
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.10 Combinations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+What is the definition of a combination in combinatorics?
+A) The number of ways to arrange objects without regard for order or repetition.
+B) The number of unique subsets that can be formed from a given set, considering both order and repetition.
+C) The number of ways to choose k items from n distinct items, where order does not matter.
+D) The probability of selecting a specific item from a group.
+Correct Answer: C
+
+Solution:
+A combination is the number of ways to choose k items from n distinct items, where order does not matter. This is represented by the combination formula C(n, k) or "n choose k".
+
+Explanation:
+Option A describes permutations, which take into account the order of arrangement. Option B includes repetition, which is part of combinations with repetitions (not regular combinations). Option D refers to probability and not combinatorics directly.
+
+Common mistake note:
+Common mistake: Choosing A instead of C, as students might混淆combinations和permutations.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+How many combinations are there for choosing 3 distinct numbers from the set {1, 2, 3, 4, 5}?
+A) 10
+B) 15
+C) 20
+D) 30
+Correct Answer: B
+
+Solution:
+The number of combinations is calculated using the combination formula C(5, 3) = 5! / [3!(5-3)!] = (5 × 4) / (2 × 1) = 15.
+
+Explanation:
+Option A is the result of a permutation calculation. Option C and D are incorrect because they do not follow the combination formula correctly.
+
+Common mistake note:
+Common mistake: Applying permutations formula instead of combinations.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer):
+In how many ways can you select 2 different fruits from an apple, a banana, an orange, and a pineapple?
+A) 4
+B) 6
+C) 8
+D) 12
+Correct Answer: B
+
+Solution:
+Using the combination formula C(4, 2) = 4! / [2!(4-2)!] = (4 × 3) / (2 × 1) = 6.
+
+Explanation:
+Option A represents the number of individual fruits, not combinations. Option C and D are incorrect because they do not follow the combination formula correctly.
+
+Common mistake note:
+Common mistake: Counting each fruit individually instead of selecting pairs.
+------------------------------------------------------------------------------
+
+Problem 4 (Yuiop):
+What is the difference between combinations and permutations when choosing 3 items from a set of 5?
+A) Combinations consider order, while permutations do not.
+B) Permutations have more possibilities than combinations for the same n and k values.
+C) Both combinations and permutations are equal when n=k.
+D) Combinations count repeated selections, while permutations do not.
+Correct Answer: B
+
+Solution:
+The difference between combinations and permutations is that permutations consider order, while combinations do not. For the same n and k values, permutations have more possibilities than combinations because they account for different arrangements of the chosen items.
+
+Explanation:
+Option A is incorrect as permutations consider order, not combinations. Option C is false; it's true only when n= k=1. Option D refers to combinations with repetitions, which is not standard combinations.
+
+Common mistake note:
+Common mistake: Confusing permutations and combinations due to similarity in the number of items chosen.
+------------------------------------------------------------------------------
+
+Problem 5 (Jkl):
+How many ways can you choose 4 students out of a class of 15, where order does not matter?
+A) 210
+B) 315
+C) 630
+D) 945
+Correct Answer: A
+
+Solution:
+Using the combination formula C(15, 4) = 15! / [4!(15-4)!] = (15 × 14 × 13 × 12) / (4 × 3 × 2 × 1) = 210.
+
+Explanation:
+Options B, C, and D are incorrect because they do not follow the combination formula correctly.
+
+Common mistake note:
+Common mistake: Applying permutations formula instead of combinations.
+------------------------------------------------------------------------------
+
+Problem 6 (Mnbvc):
+In how many ways can you select a committee of 3 members from a group of 7 people, where repetition is allowed?
+A) 21
+B) 35
+C) 49
+D) 343
+Correct Answer: C
+
+Solution:
+When repetition is allowed, this becomes a problem of combinations with repetitions. The formula for this case is (n+r-1)! / [r!(n-1)!], where n is the number of items and r is the number to choose. For this problem, n=7 and r=3. So, C(9, 3) = 9! / [3!6!] = 49.
+
+Explanation:
+Option A is the result of standard combinations without repetition. Option B and D are incorrect because they do not follow the combination with repetitions formula correctly.
+
+Common mistake note:
+Common mistake: Applying standard combinations formula instead of combinations with repetitions.
+------------------------------------------------------------------------------
+
+Problem 7 (Xcvbn):
+What is the relationship between combinations C(n, k) and permutations P(n, k)?
+A) C(n, k) = n! / k!
+B) P(n, k) = n! / (n-k)!
+C) C(n, k) × k! = P(n, k)
+D) P(n, k) × k! = C(n, k)
+Correct Answer: C
+
+Solution:
+The relationship between combinations and permutations is that combinations multiplied by the factorial of the number chosen gives the corresponding permutation. C( n, k) × k! = P(n, k).
+
+Explanation:
+Option A and B are formulas for combinations and permutations separately, not their relationship. Option D is incorrect because it reverses the relationship.
+
+Common mistake note:
+Common mistake: Confusing the formula for permutations with combinations.
+------------------------------------------------------------------------------

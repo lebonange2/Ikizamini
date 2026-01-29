@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.7.9",
+  "objective_text": "Apply existence proofs",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Prove the existence of a number x such that x^2 = 4.",
+      "choices": {
+        "A": "Let x = 2, then x^2 = 4. Thus, there exists an x such that x^2 = 4.",
+        "B": "Let x = -2, then x^2 = 4. Thus, there exists an x such that x^2 = 4.",
+        "C": "Let x = 0, then x^2 = 0. This does not satisfy the condition x^2 = 4.",
+        "D": "There is no such number x because x^2 can never be equal to 4."
+      },
+      "correct_choice": "A",
+      "solution": "The correct proof is given by choice A: If we let x = 2, then x^2 = 2*2 = 4. This demonstrates that there exists a number (x = 2) whose square equals 4.",
+      "explanation": "Existence proofs require showing that at least one solution to a problem or statement exists. In this case, we found a single value for x that satisfies the equation x^2 = 4.",
+      "common_mistake_notes": "A common mistake would be to choose D, thinking that because there are multiple solutions (x can also be -2), it means no such number exists. However, existence proofs only require showing one valid example."
+    },
+    {
+      "id": "Two",
+      "stem": "Prove the existence of a right triangle with sides measuring 3 units, 4 units, and 5 units.",
+      "choices": {
+        "A": "Let a = 3, b = 4, c = 5. By Pythagorean theorem: a^2 + b^2 = c^2 (9 + 16 = 25), so it's a right triangle.",
+        "B": "No such triangle exists because the sum of the lengths of two sides must be greater than the third side.",
+        "C": "Let a = 3, b = 4, c = 2. This does not form a right triangle as a^2 + b^2 ≠ c^2.",
+        "D": "The only right triangles have sides in the ratio 1:2:√5."
+      },
+      "correct_choice": "A",
+      "solution": "Choice A correctly demonstrates that there exists a right triangle with sides measuring 3, 4, and 5 units by applying the Pythagorean theorem (a^2 + b^2 = c^2).",
+      "explanation": "Existence proofs in geometry often involve demonstrating that specific geometric figures or configurations can be constructed. In this case, we showed a specific example of a right triangle with the given side lengths.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that the triangle inequality theorem applies here. However, the question asks for a right triangle, not just any triangle."
+    },
+    {
+      "id": "Three",
+      "stem": "Prove the existence of two irrational numbers whose product is rational.",
+      "choices": {
+        "A": "Let x = √2 and y = √3. Both are irrational, but xy = √6 which is also irrational.",
+        "B": "Let x = √2 and y = 1/√2. Both are irrational, but xy = 1, which is rational.",
+        "C": "There are no two irrational numbers whose product can be rational because the product of two irrational numbers must be irrational.",
+        "D": "No such pair exists because the product of any two real numbers is always a real number."
+      },
+      "correct_choice": "B",
+      "solution": "Choice B demonstrates that there exist two irrational numbers (x = √2 and y = 1/√2) whose product, xy = 1, is rational.",
+      "explanation": "Existence proofs in algebra often involve finding specific examples of numbers or expressions with certain properties. In this case, we found a pair of irrational numbers that produce a rational product.",
+      "common_mistake_notes": "A common mistake would be to choose C, thinking that the product of two irrational numbers must always be irrational. However, this is not true as shown by the example in choice B."
+    },
+    {
+      "id": "Four",
+      "stem": "Prove the existence of a continuous function f(x) on the interval [0, 1] that has no maximum value.",
+      "choices": {
+        "A": "Let f(x) = x^2. It's continuous on [0, 1], but it doesn't have a maximum as f(x) approaches 1 from below but never reaches it.",
+        "B": "No such function exists because every continuous function on a closed interval attains its maximum value at least once.",
+        "C": "Let f(x) = sin(πx). It's continuous on [0, 1] and oscillates between -1 and 1, so no maximum is reached.",
+        "D": "The function f(x) = e^(-x) is continuous on [0, 1], but it approaches 0 as x approaches 1, never reaching a maximum."
+      },
+      "correct_choice": "C",
+      "solution": "Choice C correctly demonstrates the existence of a continuous function (f(x) = sin(πx)) on the interval [0, 1] that does not attain a maximum value.",
+      "explanation": "Existence proofs in calculus often involve finding functions with specific properties. In this case, we showed an example of a continuous function that oscillates between two values and never reaches a maximum within the given interval.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that the Extreme Value Theorem applies here. However, the theorem states that a continuous function on a closed interval attains its maximum value at least once, not necessarily within the interval."
+    },
+    {
+      "id": "Five",
+      "stem": "Prove the existence of a non-constant polynomial with real coefficients that has no real roots.",
+      "choices": {
+        "A": "Let f(x) = x^2 + 1. It's a non-constant polynomial with no real roots since it's always positive.",
+        "B": "No such polynomial exists because every non-constant polynomial with real coefficients has at least one real root by the Fundamental Theorem of Algebra.",
+        "C": "Let f(x) = (x - 1)(x + 1). This is a non-constant polynomial with two real roots, x = 1 and x = -1.",
+        "D": "The function f(x) = x^3 - 2x^2 + x - 1 has no real roots because it's always positive for x > 0."
+      },
+      "correct_choice": "A",
+      "solution": "Choice A demonstrates the existence of a non-constant polynomial (f(x) = x^2 + 1) with no real roots, as its values are always positive.",
+      "explanation": "Existence proofs in algebra can involve finding polynomials with specific characteristics. In this case, we showed an example of a non-constant polynomial that does not have any real solutions.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that the Fundamental Theorem of Algebra requires at least one real root for every non-constant polynomial. However, the theorem only applies to polynomials with complex coefficients."
+    },
+    {
+      "id": "Six",
+      "stem": "Prove the existence of a prime number between any two consecutive perfect squares.",
+      "choices": {
+        "A": "Let n be an integer greater than 1. The difference between (n+1)^2 and n^2 is 2n + 1, which is odd and greater than 1, so there must be at least one prime in that interval.",
+        "B": "No such prime number exists because perfect squares are always separated by composite numbers only.",
+        "C": "Let n = 2. The difference between (n+1)^2 and n^2 is 9 - 4 = 5, which is not a prime number.",
+        "D": "The primes between consecutive perfect squares can be found using the formula (n^2 + n) + 1."
+      },
+      "correct_choice": "A",
+      "solution": "Choice A correctly demonstrates that there exists a prime number between any two consecutive perfect squares by showing that the difference between them is an odd integer greater than 1, which must contain at least one prime.",
+      "explanation": "Existence proofs in number theory often involve demonstrating properties of integers or sequences. In this case, we showed that for any integer n > 1, there will be a prime number between n^2 and (n+1)^2.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that perfect squares are always separated by composite numbers only. However, the difference between consecutive perfect squares is an odd integer greater than 1, which guarantees at least one prime factor."
+    },
+    {
+      "id": "Seven",
+      "stem": "Prove the existence of a non-trivial solution for the equation x + y = z, where x, y, and z are positive integers.",
+      "choices": {
+        "A": "Let x = 2, y = 1, and z = 3. This is a non-trivial solution because x ≠ y ≠ z.",
+        "B": "No such solution exists because if x, y, and z are positive integers, they must all be equal to find a solution.",
+        "C": "Let x = 0, y = 2, and z = 2. This is not a valid solution since x must be a positive integer.",
+        "D": "The equation x + y = z has no non-trivial solutions because it reduces to the identity (x + y) - z = 0."
+      },
+      "correct_choice": "A",
+      "solution": "Choice A demonstrates the existence of a non-trivial solution for the equation (x = 2, y = 1, z = 3), where x, y, and z are positive integers.",
+      "explanation": "Existence proofs in number theory can involve finding specific integer solutions to equations. In this case, we showed an example of a solution where x, y, and z are distinct positive integers that sum up to another positive integer.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that all positive integers in the equation must be equal. However, non-trivial solutions involve finding different values for x, y, and z that still satisfy the equation."
+    }
+  ]
+}

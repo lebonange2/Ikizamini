@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.2.10",
+  "objective_text": "Differentiate logarithmic functions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "InverseDerivative",
+      "stem": "Find the derivative of f(x) = ln(3x).",
+      "choices": {
+        "A": "1/3x",
+        "B": "1/(3x)",
+        "C": "3/2x",
+        "D": "3ln(3x)"
+      },
+      "correct_choice": "B",
+      "solution": "The derivative of ln(u) is 1/u, where u is the argument inside the logarithm. In this case, u = 3x. So, the derivative of f(x) = ln(3x) is 1/(3x).",
+      "explanation": "To differentiate a logarithmic function, use the chain rule and remember that the derivative of ln(u) is 1/u.",
+      "common_mistake_notes": "A common mistake is to forget to apply the chain rule and divide by the argument inside the logarithm. Choice A (1/3x) is incorrect because it lacks the division by 3x."
+    },
+    {
+      "id": "LogBaseChange",
+      "stem": "Find the derivative of f(x) = log base 2 (5x).",
+      "choices": {
+        "A": "1/(5ln(2)x)",
+        "B": "1/5ln(2)",
+        "C": "ln(5)/ln(2)",
+        "D": "5/ln(2)x"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of log base b (u) is 1/(u ln(b)). In this case, u = 5x. So, the derivative of f(x) = log base 2 (5x) is 1/(5x ln(2)).",
+      "explanation": "To differentiate a logarithm with a different base, use the change-of-base formula and then apply the chain rule.",
+      "common_mistake_notes": "A common mistake is to forget that the derivative involves both u and the natural logarithm of the base. Choice D (5/ln(2)x) is incorrect because it does not include ln(2)."
+    },
+    {
+      "id": "LogProduct",
+      "stem": "Find the derivative of f(x) = 2ln(x) + ln(3x^2).",
+      "choices": {
+        "A": "2/x + 6/x",
+        "B": "2/x + 3/2x",
+        "C": "4/x + 6",
+        "D": "2 + 3"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of a sum of logarithms is the sum of their derivatives. So, the derivative of f(x) = 2ln(x) + ln(3x^2) is (2/x) + (1/(3x^2)) * 6 = 2/x + 6/2x.",
+      "explanation": "When differentiating a sum of logarithms, apply the chain rule to each term separately and then add them together.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the coefficient inside the second logarithm or to incorrectly distribute the derivative. Choice B (2/x + 3/2x) is incorrect because it does not account for the coefficient 6."
+    },
+    {
+      "id": "LogQuotient",
+      "stem": "Find the derivative of f(x) = ln(x/4).",
+      "choices": {
+        "A": "1/(x/4)",
+        "B": "1/x - 1/4",
+        "C": "4/x",
+        "D": "1/x"
+      },
+      "correct_choice": "B",
+      "solution": "The derivative of ln(u/v) is (v/u)/(u/v) = v/u. In this case, u = x and v = 4. So, the derivative of f(x) = ln(x/4) is 4/x - 1/4.",
+      "explanation": "To differentiate a logarithm of a quotient, use the quotient rule and then simplify the result.",
+      "common_mistake_notes": "A common mistake is to forget to subtract the derivative of the denominator from the derivative of the numerator. Choice A (1/(x/4)) is incorrect because it does not properly handle the quotient."
+    },
+    {
+      "id": "LogBasee",
+      "stem": "Find the derivative of f(x) = ln(e^3x).",
+      "choices": {
+        "A": "3e^3x",
+        "B": "3/x",
+        "C": "e^(3x)",
+        "D": "1/e^3x"
+      },
+      "correct_choice": "A",
+      "solution": "The logarithm of e raised to a power is equal to the power itself. So, f(x) = ln(e^3x) simplifies to 3x, and its derivative is 3e^3x.",
+      "explanation": "When the argument inside the logarithm is e raised to a power, you can simplify it before differentiating.",
+      "common_mistake_notes": "A common mistake is to apply the chain rule to ln(e^3x) directly, which would lead to an incorrect result. Choice D (1/e^3x) is incorrect because it assumes the logarithm has base e."
+    },
+    {
+      "id": "LogNatural",
+      "stem": "Find the derivative of f(x) = 4ln(x).",
+      "choices": {
+        "A": "4/x",
+        "B": "4ln(x)",
+        "C": "1/(x ln(10))",
+        "D": "1/x"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of a logarithm with base e (natural logarithm) is 1/x. So, the derivative of f(x) = 4ln(x) is 4/x.",
+      "explanation": "Remember that the derivative of ln(x) is 1/x, regardless of whether it's written as loge(x) or ln(x).",
+      "common_mistake_notes": "A common mistake is to confuse natural logarithms with other bases. Choice C (1/(x ln(10))) is incorrect because it assumes a base-10 logarithm."
+    },
+    {
+      "id": "LogSumOfLogs",
+      "stem": "Find the derivative of f(x) = ln(ln(x)) + ln(2).",
+      "choices": {
+        "A": "(1/ln(x))/x",
+        "B": "1/(ln(x))^2",
+        "C": "1/x * 1/ln(x)",
+        "D": "1/(ln(x))"
+      },
+      "correct_choice": "B",
+      "solution": "The derivative of ln(ln(x)) is (1/ln(x)) * (1/x) = 1/(x ln(x)). So, the derivative of f(x) = ln(ln(x)) + ln(2) is 1/(x ln(x)), which simplifies to 1/(ln(x))^2.",
+      "explanation": "When differentiating a logarithm of another logarithm, apply the chain rule twice. Remember to simplify the result.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the derivative of the inner logarithm or to incorrectly distribute the derivative. Choice A (1/ln(x))/x is incorrect because it does not handle the outer logarithm correctly."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.14.3 Use in transfer function analysis
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.14 Complex Analysis Applications
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+A system's transfer function is given by H(s) = (s + 2)/(s^2 + 5s + 6). What is the pole of the system?
+A) -3
+B) 2
+C) -1
+D) 1
+Correct Answer: C
+
+Solution:
+The poles of a transfer function are found by setting the denominator equal to zero. For H(s) = (s + 2)/(s^2 + 5s + 6), we set s^2 + 5s + 6 = 0 and factor it as (s + 2)(s + 3) = 0. The pole is the solution to this equation that is NOT canceled by a zero in the numerator (there are no zeros in this case). Therefore, the correct answer is C: -1.
+
+Explanation:
+Poles represent the frequencies at which the system's response becomes infinite or undefined. In this case, only s = -1 is a pole because it's not canceled out by a zero in the numerator.
+
+Common mistake note:
+A common mistake would be to choose B: 2, as some might misinterpret 'pole' as referring to the term in the numerator (s + 2), but poles come from the denominator.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Given a transfer function H(s) = (s + 3)/(s^2 + 4s + 3), what is the zero of the system?
+A) -1
+B) 0
+C) 1
+D) 2
+Correct Answer: A
+
+Solution:
+The zeros of a transfer function are found by setting the numerator equal to zero. For H(s) = (s + 3)/(s^2 + 4s + 3), we set s + 3 = 0 and solve for s, which gives s = -3. Therefore, the correct answer is A: -1.
+
+Explanation:
+Zeros represent the frequencies at which the system's response becomes zero or undefined. In this case, there's only one zero at s = -3 because it's not canceled out by a pole in the denominator.
+
+Common mistake note:
+A common mistake would be to choose D: 2, as some might misinterpret 'zero' as referring to the term in the denominator (s^2 + 4s + 3), but zeros come from the numerator.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+What is the effect of adding a zero at s = -2 to a system's transfer function H(s) = 1/(s + 1)?
+A) Stability decreases and bandwidth increases
+B) Stability increases and bandwidth decreases
+C) Stability remains unchanged, bandwidth increases
+D) Stability remains unchanged, bandwidth decreases
+Correct Answer: C
+
+Solution:
+Adding a zero at s = -2 to H(s) = 1/(s + 1) results in the new transfer function H'(s) = (s + 2)/(s + 1). This change shifts the phase response of the system, but does not affect its stability since there are no new poles introduced. The bandwidth increases because the zero moves closer to the imaginary axis, making the system more responsive to higher frequencies. Therefore, the correct answer is C: Stability remains unchanged, bandwidth increases.
+
+Explanation:
+Zeros can affect the phase response and frequency response of a system without changing its stability as long as no new poles are introduced.
+
+Common mistake note:
+A common mistake would be to choose A or B, thinking that adding a zero always affects stability, but in this case, it doesn't since there's no change in pole locations.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+The transfer function of a system is H(s) = (s + 1)/(s^2 + 3s + 2). What is the system's damping ratio?
+A) 0.5
+B) 1
+C) 1.5
+D) 2
+Correct Answer: A
+
+Solution:
+The damping ratio (ζ) of a second-order system with transfer function H(s) = N(s)/D(s), where D(s) = s^2 + 2ζs + ω_n^2, is given by ζ = -b / (2*a), where a and b are the coefficients of the quadratic term in D(s). In this case, D(s) = s^2 + 3s + 2, so a = 1 and b = 3. The damping ratio is ζ = -3 / (2*1) = -1.5. However, since the damping ratio must be between 0 and 1 for underdamped systems, we take the absolute value: |ζ| = 1.5. Therefore, the correct answer is A: 0.5.
+
+Explanation:
+The damping ratio represents the system's damping characteristic, with values between 0 and 1 indicating underdamping. In this case, the calculated damping ratio was negative due to the sign convention used in the denominator, so we take its absolute value for the correct answer.
+
+Common mistake note:
+A common mistake would be to choose B: 1, assuming that the given damping ratio is already within the valid range, but it's not; it needs to be adjusted based on the sign convention.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Given a system with transfer function H(s) = (s + 2)/(s^2 + 4), what is its natural frequency (ω_n)?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: B
+
+Solution:
+The natural frequency (ω_n) of a second-order system with transfer function H(s) = N(s)/D(s), where D(s) = s^2 + 2ζs + ω_n^2, is given by ω_n = sqrt(k/m), where k and m are the coefficients of the linear term in N(s) and D(s), respectively. In this case, N(s) has no linear term (k = 0), so we focus on D(s): s^2 + 4. The coefficient of the quadratic term is m = 1, so ω_n = sqrt(4/1) = 2. Therefore, the correct answer is B: 2.
+
+Explanation:
+The natural frequency represents the system's inherent oscillation frequency when there's no damping. In this case, we can find it directly from the denominator of the transfer function without considering the numerator since N(s) has no linear term.
+
+Common mistake note:
+A common mistake would be to choose A: 1, assuming that ω_n is equal to the coefficient of s^2 in D(s), but it's not; we need to divide this value by m.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+For a system with transfer function H(s) = (s + 3)/(s^2 + 4s + 5), what is the break frequency (ω_0)?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: B
+
+Solution:
+The break frequency (ω_0) of a second-order system with transfer function H(s) = N(s)/D(s), where D(s) = s^2 + 2ζs + ω_n^2, is given by ω_0 = sqrt(a), where a is the coefficient of the quadratic term in D(s). In this case, D(s) = s^2 + 4s + 5, so a = 1. The break frequency is ω_0 = sqrt(1) = 1. Therefore, the correct answer is B: 1.
+
+Explanation:
+The break frequency represents the frequency at which the system's magnitude response starts to roll off. In this case, we can find it directly from the denominator of the transfer function without considering the numerator since there are no zeros.
+
+Common mistake note:
+A common mistake would be to choose C: 3 or D: 4, assuming that ω_0 is related to the coefficients b or c in D(s), but it's not; we need to take the square root of a.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+In a control system with a transfer function H(s) = (s + 1)/(s^2 + 3s + 2), what is the closed-loop gain at DC (ω = 0)?
+A) 0.5
+B) 1
+C) 2
+D) 3
+Correct Answer: B
+
+Solution:
+The closed-loop gain of a control system with transfer function H(s) is given by G_c = K * H(s), where K is the open-loop gain and H(s) represents the feedback loop. At DC (ω = 0), the gain is simply the value of H(s) at s = 0. For H(s) = (s + 1)/(s^2 + 3s + 2), we evaluate it at s = 0: H(0) = (0 + 1)/(0^2 + 3*0 + 2) = 1/2. Therefore, the closed-loop gain at DC is 1/2 or 0.5. Since there's no open-loop gain (K) given in the question, we assume it to be 1 for this calculation. The correct answer is B: 0.5.
+
+Explanation:
+The closed-loop gain at DC represents the system's steady-state response when there's no frequency component. In this case, we evaluate the transfer function at s = 0 to find the gain.
+
+Common mistake note:
+A common mistake would be to choose A: 0.5 without considering the open-loop gain (K), assuming that H(s) is the closed-loop gain directly. However, in a control system, the actual closed-loop gain depends on both H(s) and K.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.11.4",
+  "objective_text": "Evaluate definite integrals by substitution",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf1",
+      "stem": "Evaluate the integral Φ(x) = ∫(2x^3 + 5x^2 - 7) dx from x=1 to x=4 using substitution. Let u = 2x^3.",
+      "choices": {
+        "A": "(8/4) + (20/5) - 7",
+        "B": "(64/4) + (80/5) - 7",
+        "C": "(64/12) + (80/10) - 7",
+        "D": "(64/3) + (80/4) - 7"
+      },
+      "correct_choice": "C",
+      "solution": "u = 2x^3, du = 6x^2 dx. To find dx, we divide both sides by 6x^2: dx = du / (6x^2). Now substitute u and dx into the integral:\n∫(u + 5(u^(1/3)) - 7) * (du / (6u^(2/3)))\n= ∫(u^(1/3) + 5/6 - 7u^(-2/3)) du\nNow integrate with respect to u:\n(2/3)u^(4/3) + (5/6)u - 21u^(1/3)| from 1 to 4\n= [(2/3)(64)^(4/3) + (5/6)(64) - 21(64)^(1/3)] - [(2/3)(1)^(4/3) + (5/6)(1) - 21(1)^(1/3)]\n= [(2/3)(128) + (5/6)(64) - 21(4)] - [(2/3)(1) + (5/6)(1) - 21(1)]\n= 85.333... - 84\n= 1.333...\nSo, the correct answer is C: (64/12) + (80/10) - 7.",
+      "explanation": "The integral was correctly transformed using substitution and integrated. The limits of integration were also correctly applied after substituting back in x.",
+      "common_mistake_notes": "A common mistake would be to forget to adjust the limits of integration when substituting back in x, or not simplifying the final expression properly."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Evaluate the integral Φ(x) = ∫(sin(x)cos(x)) dx from x=0 to x=π/4 using substitution. Let u = sin(x).",
+      "choices": {
+        "A": "(1 - 0)",
+        "B": "(cos(π/2) - cos(0))",
+        "C": "(sin(π/2) - sin(0))",
+        "D": "(tan(π/4) - tan(0))"
+      },
+      "correct_choice": "C",
+      "solution": "u = sin(x), du = cos(x) dx. Since we have sin(x)cos(x), we can multiply and divide by 2 to make the substitution easier: (2sin(x)cos(x)) / 2 = u * du / 2.\nNow substitute u and du into the integral:\n∫(u/2) du\n= (1/2)u^2| from 0 to sin(π/4)\n= [(1/2)(sin(π/4))^2] - [(1/2)(0)^2]\n= (1/2)(1/2) - 0\n= 1/4\nSo, the correct answer is C: (sin(π/2) - sin(0)).",
+      "explanation": "The integral was correctly transformed using substitution and integrated. The limits of integration were also correctly applied after substituting back in x.",
+      "common_mistake_notes": "A common mistake would be to forget to square u when integrating (u/2) du, or not simplifying the final expression properly."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Evaluate the integral Φ(x) = ∫(x^2 + 1/x) dx from x=1 to x=2 using substitution. Let u = x^2.",
+      "choices": {
+        "A": "(4/3 - 1/2) + (ln(4) - ln(1))",
+        "B": "(8/3 - 2/2) + (ln(8) - ln(2))",
+        "C": "(8/3 - 1/2) + (ln(2) - ln(1))",
+        "D": "(6/3 - 2/2) + (ln(4) - ln(2))"
+      },
+      "correct_choice": "A",
+      "solution": "u = x^2, du = 2x dx. To find dx, we divide both sides by 2x: dx = du / (2x). Now substitute u and dx into the integral:\n∫((u + 1) / (2√u)) du\n= ∫(u^(1/2) + u^(-1/2)) du\nNow integrate with respect to u:\n(2/3)u^(3/2) + 2u^(1/2)| from 1 to 4\n= [(2/3)(4)^(3/2) + 2(4)^(1/2)] - [(2/3)(1)^(3/2) + 2(1)^(1/2)]\n= (16/3 + 4) - (2/3 + 2)\n= 8/3\nFor the natural logarithm term, we have ln(u)| from 1 to 4:\nln(4) - ln(1)\nSince ln(1) = 0, this simplifies to ln(4).\nThe final answer is (8/3) + ln(4), which corresponds to A.",
+      "explanation": "The integral was correctly transformed using substitution and integrated. The limits of integration were also correctly applied after substituting back in x.",
+      "common_mistake_notes": "A common mistake would be to forget to take the square root when integrating u^(1/2) or to integrate u^(-1/2) incorrectly as ln(u)."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Evaluate the integral Φ(x) = ∫(e^(2x)) dx from x=0 to x=π using substitution. Let u = 2x.",
+      "choices": {
+        "A": "(e^π - e^0)",
+        "B": "(e^(2π) - e^0)/2",
+        "C": "(e^(2π) - e^π)/2",
+        "D": "(e^(2π) - 1)/4"
+      },
+      "correct_choice": "B",
+      "solution": "u = 2x, du = 2 dx. To find dx, we divide both sides by 2: dx = du / 2. Now substitute u and dx into the integral:\n∫(e^u) * (du / 2)\n= (1/2)e^u| from 0 to 2π\n= [(1/2)e^(2π)] - [(1/2)e^0]\n= (e^(2π)/2) - (1/2)\nSo, the correct answer is B: (e^(2π) - e^0)/2.",
+      "explanation": "The integral was correctly transformed using substitution and integrated. The limits of integration were also correctly applied after substituting back in x.",
+      "common_mistake_notes": "A common mistake would be to forget to divide by 2 when integrating (e^u) * (du / 2), or not simplifying the final expression properly."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Evaluate the integral Φ(x) = ∫(x^3 + x^(-1)) dx from x=1 to x=2 using substitution. Let u = x.",
+      "choices": {
+        "A": "(8/4 - 1/2) + (ln(2) - ln(1))",
+        "B": "(8/5 - 2/2) + (ln(2) - ln(1))",
+        "C": "(8/4 - 2/2) + (ln(8) - ln(2))",
+        "D": "(6/5 - 1/2) + (ln(4) - ln(1))"
+      },
+      "correct_choice": "B",
+      "solution": "u = x, du = dx. Now substitute u and dx into the integral:\n∫((u^3 + 1/u) du)\n= ∫(u^3 + u^(-1)) du\nNow integrate with respect to u:\n(1/4)u^4 + ln|u|| from 1 to 2\n= [(1/4)(2)^4 + ln|2|] - [(1/4)(1)^4 + ln|1|]\n= (4 + ln(2)) - (1/4)\nSo, the correct answer is B: (8/5 - 2/2) + (ln(2) - ln(1)).",
+      "explanation": "The integral was correctly transformed using substitution and integrated. The limits of integration were also correctly applied after substituting back in x.",
+      "common_mistake_notes": "A common mistake would be to forget the absolute value signs when integrating ln|u| or to integrate u^3 incorrectly as 1/4u^4."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Evaluate the integral Φ(x) = ∫(x^2sin(x)) dx from x=0 to x=π using substitution. Let u = cos(x).",
+      "choices": {
+        "A": "(1 - 0)",
+        "B": "(cos(π) - cos(0))",
+        "C": "(-sin(π) + sin(0))",
+        "D": "(-cos(π/2) + cos(0))"
+      },
+      "correct_choice": "C",
+      "solution": "u = cos(x), du = -sin(x) dx. To find sin(x), we divide both sides by -1: sin(x) = -du / u. Now substitute u and sin(x) into the integral:\n∫(-x^2 * (-du / u))\n= ∫(x^2 / u) du\nNow integrate with respect to u:\n-∫(u^(-1) * x^2) du\nSince we have a product of two functions, we can use integration by parts: let v = x^2, dv = 2x dx, dw = u^(-1) du, and dw/u = -du / u.\n∫v * dw = uv - ∫u * dv\n= (-x^2u + ∫(2x * -du / u))| from 0 to cos(π)\n= [-(cos(π))^2 * cos(π) - 2∫(x * du / u)]| from 0 to π\nNow integrate x with respect to u:\n-2∫(x * du / u) = -2∫(cos^(-1)(u) * du)\n= -2[-cos^(-1)(u)]| from 0 to cos(π)\n= 2cos^(-1)(cos(π)) - 2cos^(-1)(0)\n= 2π - 2(0)\n= 2π\nThe final answer is -[(cos(π))^2 * cos(π) + 2π], which corresponds to C.",
+      "explanation": "The integral was correctly transformed using substitution and integrated. The limits of integration were also correctly applied after substituting back in x.",
+      "common_mistake_notes": "A common mistake would be to forget the negative sign when integrating -sin(x) or to integrate cos^(-1)(u) incorrectly as -cos^(-1)(u)."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Evaluate the integral Φ(x) = ∫(x^4e^(2x)) dx from x=0 to x=1 using substitution. Let u = 2x.",
+      "choices": {
+        "A": "(e^2 - e^0)",
+        "B": "(e^2 - e)/2",
+        "C": "(e^(2/3) - e^0)/2",
+        "D": "(e^(4/3) - e)/2"
+      },
+      "correct_choice": "B",
+      "solution": "u = 2x, du = 2 dx. To find dx, we divide both sides by 2: dx = du / 2. Now substitute u and dx into the integral:\n∫((u^(1/2) * e^u) * (du / 2))\n= (1/2)∫(u^(1/2) * e^u) du\nNow integrate with respect to u using integration by parts: let v = u^(1/2), dv = (1/2)u^(-1/2) du, dw = e^u du, and dw/u = e^u.\n∫v * dw = uv - ∫u * dv\n= [(1/2)u^(3/2) * e^u - ∫(1/2)u^(-1/2) * e^u du]| from 0 to 2\nFor the second integral, we can use substitution again: let s = u^(-1/2), ds = -1/2u^(-3/2) du.\n∫s * e^(s^2) * (-2ds)\n= -∫se^(s^2) ds\nNow integrate with respect to s using integration by parts: let v = s, dv = ds, dw = e^(s^2) ds, and dw/s = 2e^(s^2).\n∫v * dw = vs - ∫v * dw\n= -s^2e^(s^2) + 2∫se^(s^2) ds| from 1 to 0\nThe integral on the right side is the same as our original integral, so we can substitute it back in:\n-(-s^2e^(s^2) + 2∫se^(s^2) ds)| from 1 to 0\n= s^2e^(s^2)| from 1 to 0\n= (1 * e) - (0 * e^0)\n= e\nThe final answer is [(1/2)(2)^(3/2) * e^2 - e] - [0], which simplifies to (e^2 - e)/2, corresponding to B.",
+      "explanation": "The integral was correctly transformed using substitution and integrated. The limits of integration were also correctly applied after substituting back in x.",
+      "common_mistake_notes": "A common mistake would be to forget the negative sign when integrating -1/2u^(-3/2) * e^(s^2) or to integrate s^2e^(s^2) incorrectly as s^2e^(s^2)."
+    }
+  ]
+}

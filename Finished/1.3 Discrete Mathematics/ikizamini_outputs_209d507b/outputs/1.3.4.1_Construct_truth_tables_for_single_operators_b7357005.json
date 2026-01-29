@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.4.1",
+  "objective_text": "Construct truth tables for single operators",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "not_true_output",
+      "stem": "What is the output of the NOT operator when the input is True?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Unknown",
+        "D": "Depends on other inputs"
+      },
+      "correct_choice": "B",
+      "solution": "The NOT operator inverts the truth value of its input. If the input is True, the output will be False.",
+      "explanation": "In a truth table for a single NOT operator, there are two rows: one with the input as True and another with the input as False. For the row with True input, the NOT operator produces False as the output.",
+      "common_mistake_notes": "A common mistake is to assume that the NOT operator always produces the opposite of any input, but it only inverts the truth value."
+    },
+    {
+      "id": "and_both_true_output",
+      "stem": "What is the output of the AND operator when both inputs are True?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Unknown",
+        "D": "Depends on other inputs"
+      },
+      "correct_choice": "A",
+      "solution": "The AND operator produces True only if both its inputs are True.",
+      "explanation": "In a truth table for a single AND operator, there are four rows: one with both inputs as True, another with both inputs as False, and two with one input as True and the other as False. For the row with both inputs as True, the AND operator produces True as the output.",
+      "common_mistake_notes": "A common mistake is to think that the AND operator simply combines the inputs without considering their truth values."
+    },
+    {
+      "id": "or_one_true_output",
+      "stem": "What is the output of the OR operator when one input is True and the other is False?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Unknown",
+        "D": "Depends on other inputs"
+      },
+      "correct_choice": "A",
+      "solution": "The OR operator produces True if at least one of its inputs is True.",
+      "explanation": "In a truth table for a single OR operator, there are four rows: one with both inputs as True, another with both inputs as False, and two with one input as True and the other as False. For the row with one input as True and the other as False, the OR operator produces True as the output.",
+      "common_mistake_notes": "A common mistake is to think that the OR operator requires both inputs to be True for a True output."
+    },
+    {
+      "id": "xor_both_true_ouput",
+      "stem": "What is the output of the XOR (exclusive OR) operator when both inputs are True?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Unknown",
+        "D": "Depends on other inputs"
+      },
+      "correct_choice": "B",
+      "solution": "The XOR operator produces True if exactly one of its inputs is True.",
+      "explanation": "In a truth table for a single XOR operator, there are four rows: one with both inputs as True, another with both inputs as False, and two with one input as True and the other as False. For the row with both inputs as True, the XOR operator produces False as the output.",
+      "common_mistake_notes": "A common mistake is to confuse XOR with OR, thinking that if any input is True, the output will be True."
+    },
+    {
+      "id": "not_and_expression",
+      "stem": "What is the truth value of the expression NOT (A AND B) when A is False and B is True?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Unknown",
+        "D": "Depends on other inputs"
+      },
+      "correct_choice": "A",
+      "solution": "The NOT operator inverts the truth value of its input. Since A AND B is False, NOT (A AND B) is True.",
+      "explanation": "First, evaluate the AND operator: A is False and B is True, so A AND B is False. Then apply the NOT operator to the result: NOT False is True.",
+      "common_mistake_notes": "A common mistake is to forget to evaluate the expression inside the NOT operator before applying the NOT operation."
+    },
+    {
+      "id": "or_and_not_expression",
+      "stem": "What is the truth value of the expression (A OR B) AND NOT A when A is True and B is False?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Unknown",
+        "D": "Depends on other inputs"
+      },
+      "correct_choice": "B",
+      "solution": "First, evaluate the OR operator: A is True, so A OR B is True. Then apply the NOT operator to A: NOT A is False. Finally, evaluate the AND operator: True AND False is False.",
+      "explanation": "The order of operations requires evaluating parentheses first, then applying operators from left to right. In this case, A OR B is evaluated first, followed by NOT A, and finally the AND operation.",
+      "common_mistake_notes": "A common mistake is to evaluate the expressions in the wrong order or to forget about operator precedence."
+    },
+    {
+      "id": "not_and_or_expression",
+      "stem": "What is the truth value of the expression (NOT A) OR (B AND C) when A is False, B is True, and C is False?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Unknown",
+        "D": "Depends on other inputs"
+      },
+      "correct_choice": "A",
+      "solution": "First, evaluate the NOT operator: A is False, so NOT A is True. Then evaluate the AND operator: B is True and C is False, so B AND C is False. Finally, evaluate the OR operator: True OR False is True.",
+      "explanation": "The order of operations requires evaluating parentheses first, then applying operators from left to right. In this case, NOT A is evaluated first, followed by B AND C, and finally the OR operation.",
+      "common_mistake_notes": "A common mistake is to evaluate the expressions in the wrong order or to forget about operator precedence."
+    }
+  ]
+}

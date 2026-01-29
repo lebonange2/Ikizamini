@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.15.3 Apply multivalued functions
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.15 Advanced Complex Topics
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Given the function f(x) = {1, -1} for all x, what is the value of f(2)?
+A) {3}
+B) {0}
+C) {1, -1}
+D) {2}
+Correct Answer: C
+
+Solution:
+The function f(x) assigns two values to each input: 1 and -1. For the input x = 2, the value of f(2) is the set {1, -1}, since both 1 and -1 are valid outputs.
+
+Explanation:
+Multivalued functions can have more than one output for a given input. In this case, f(2) has two outputs: 1 and -1.
+
+Common mistake note:
+A common mistake would be to choose the single value 1 or -1 as the answer, not understanding that a multivalued function may have multiple correct outputs.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Evaluate g(x) = {x^2, x^3} at x = 4. What is g(4)?
+A) {16, 64}
+B) {16}
+C) {64}
+D) {2}
+Correct Answer: A
+
+Solution:
+The function g(x) assigns two values to each input: x^2 and x^3. For the input x = 4, the value of g(4) is the set {16, 64}, since both 16 (from x^2) and 64 (from x^3) are valid outputs.
+
+Explanation:
+When applying a multivalued function to an input, we consider all possible outputs for that input. In this case, g(4) has two outputs: 16 and 64.
+
+Common mistake note:
+A common mistake would be to choose only one of the powers (x^2 or x^3) as the answer, not considering both possibilities.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+The function h(x) = {sin(x), cos(x)} returns both sine and cosine values for a given input. What is h(π/4)?
+A) {1, 0}
+B) {√2/2, √2/2}
+C) {-1, 1}
+D) {π/4}
+Correct Answer: B
+
+Solution:
+The function h(x) assigns two values to each input: sine and cosine. At x = π/4, sin(π/4) = cos(π/4) = √2/2. Therefore, the value of h(π/4) is the set {√2/2, √2/2}.
+
+Explanation:
+Multivalued functions can involve trigonometric functions like sine and cosine. In this case, both sine and cosine have the same value at x = π/4.
+
+Common mistake note:
+A common mistake would be to choose only one of the trigonometric values (sin or cos) as the answer, not considering both.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Given the function j(x) = {x + 1, x - 1} for all real numbers x, what is j(3)?
+A) {2, 4}
+B) {6}
+C) {5}
+D) {1}
+Correct Answer: A
+
+Solution:
+The function j(x) assigns two values to each input: x + 1 and x - 1. For the input x = 3, the value of j(3) is the set {4, 2}, since both 4 (from x + 1) and 2 (from x - 1) are valid outputs.
+
+Explanation:
+When applying a multivalued function to an input, we consider all possible outputs for that input. In this case, j(3) has two outputs: 4 and 2.
+
+Common mistake note:
+A common mistake would be to choose only one of the operations (x + 1 or x - 1) as the answer, not considering both possibilities.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+The function k(x) = {x^2 - 1, x^2 + 1} returns two quadratic expressions for a given input. What is k(-2)?
+A) {3, 5}
+B) {-3, -5}
+C) {4, 8}
+D) 0
+Correct Answer: A
+
+Solution:
+The function k(x) assigns two values to each input: x^2 - 1 and x^2 + 1. For the input x = -2, k(-2) is the set {3, 5}, since (x^2 - 1) at x = -2 is 3 and (x^2 + 1) at x = -2 is 5.
+
+Explanation:
+When applying a multivalued function to an input, we consider all possible outputs for that input. In this case, k(-2) has two outputs: 3 and 5.
+
+Common mistake note:
+A common mistake would be to choose only one of the quadratic expressions (x^2 - 1 or x^2 + 1) as the answer, not considering both possibilities.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+The function l(x) = {√x, -√x} returns both positive and negative square roots for a given input. What is l(9)?
+A) {3, 9}
+B) {-3, 3}
+C) {0, 6}
+D) {±3}
+Correct Answer: B
+
+Solution:
+The function l(x) assigns two values to each input: the positive and negative square roots. For the input x = 9, l(9) is the set {-3, 3}, since √9 = 3 and -√9 = -3.
+
+Explanation:
+When applying a multivalued function to an input, we consider all possible outputs for that input. In this case, l(9) has two outputs: -3 and 3.
+
+Common mistake note:
+A common mistake would be to choose only the positive square root as the answer, forgetting that there is also a negative square root.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Given the function m(x) = {x^3 - x, x^3 + x} for all real numbers x, what is m(2)?
+A) {-2, 10}
+B) {6, 10}
+C) {4, 8}
+D) 1
+Correct Answer: B
+
+Solution:
+The function m(x) assigns two values to each input: x^3 - x and x^3 + x. For the input x = 2, m(2) is the set {6, 10}, since (x^3 - x) at x = 2 is 6 and (x^3 + x) at x = 2 is 10.
+
+Explanation:
+When applying a multivalued function to an input, we consider all possible outputs for that input. In this case, m(2) has two outputs: 6 and 10.
+
+Common mistake note:
+A common mistake would be to choose only one of the cubic expressions (x^3 - x or x^3 + x) as the answer, not considering both possibilities.
+------------------------------------------------------------------------------

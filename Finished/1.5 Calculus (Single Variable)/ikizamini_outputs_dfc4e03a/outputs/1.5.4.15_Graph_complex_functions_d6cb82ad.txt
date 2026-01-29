@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.4.15 Graph complex functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable)
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (AsinB):
+Find the domain of the function f(z) = √(z - i)
+A) (0, ∞)
+B) (-∞, ∞)
+C) i < z < ∞
+D) [-1, 1]
+Correct Answer: B
+
+Solution:
+The domain of a square root function is all real numbers greater than or equal to zero. Since the argument inside the square root (z - i) can be any complex number, the domain of f(z) is all complex numbers, which is represented as (-∞, ∞).
+
+Explanation:
+The square root function extends to the entire complex plane because every non-zero complex number has two square roots. There are no restrictions on z in this case.
+
+Common mistake note:
+A common mistake would be to think that the domain is limited by the imaginary part (i), but since we're dealing with complex numbers, there's no such restriction.
+------------------------------------------------------------------------------
+
+Problem 2 (Logz):
+Evaluate the logarithm of the complex number z = 3 + 4i.
+A) ln(5) + iπ
+B) ln(5) + i(π/2)
+C) ln(3 + 4i)
+D) ln(5) - iπ
+Correct Answer: B
+
+Solution:
+The logarithm of a complex number in rectangular form can be found using Euler's formula: z = r(cosθ + isinθ), where r is the modulus and θ is the argument. For z = 3 + 4i, we have r = √(3² + 4²) = 5 and θ = arctan(4/3). The logarithm is then ln(r) + iθ = ln(5) + i(arctan(4/3)). Since arctan(4/3) is in the first quadrant, it's equivalent to π/2. Therefore, the answer is ln(5) + iπ/2.
+
+Explanation:
+The logarithm of a complex number involves converting the number into polar form and applying Euler's formula. It's essential to remember that the argument is in radians and should be converted to degrees if needed.
+
+Common mistake note:
+A common mistake would be to forget to convert the angle from arctan(4/3) to π/2 or to use the wrong quadrant for the angle.
+------------------------------------------------------------------------------
+
+Problem 3 (ComplexExp):
+Find the value of e^(iπ)
+A) -1
+B) 0
+C) 1
+D) i
+Correct Answer: A
+
+Solution:
+Using Euler's formula, e^(ix) = cos(x) + isin(x), we can evaluate e^(iπ): e^(iπ) = cos(π) + isin(π) = -1 + 0i = -1. Thus, the value of e^(iπ) is -1.
+
+Explanation:
+Euler's formula connects exponential functions with trigonometric functions. In this case, we use it to evaluate the complex exponential function at iπ.
+
+Common mistake note:
+A common mistake would be to forget the connection between eiπ and trigonometry, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 4 (ComplexRoots):
+Find all the solutions for the equation z^3 + 8 = 0.
+A) -2, 1 - i√3, 1 + i√3
+B) 2, -1 - i√3, -1 + i√3
+C) 4, -2 - i√3, -2 + i√3
+D) 0, -2, -4
+Correct Answer: A
+
+Solution:
+The given equation is a cubic equation with the form z^3 + 8 = 0. We can factor it as (z + 2)(z^2 - 2z + 4) = 0. The solutions are z = -2 and the roots of the quadratic equation z^2 - 2z + 4 = 0. Using the quadratic formula, we get z = 1 ± i√3. Therefore, the solutions are -2, 1 - i√3, and 1 + i√3.
+
+Explanation:
+The problem involves factoring a cubic equation and solving for its roots. It's crucial to recognize that one root is immediately given by the linear factor and then solve the quadratic equation resulting from the other factor.
+
+Common mistake note:
+A common mistake would be to forget to consider the imaginary solutions when solving the quadratic equation.
+------------------------------------------------------------------------------
+
+Problem 5 (ComplexConjugate):
+Find the conjugate of the complex function f(z) = z^2 + 3z + i.
+A) f(z*) = z*^2 + 3z* - i
+B) f(z*) = z*^2 - 3z* + i
+C) f(z*) = z*^2 + 3z* + i
+D) f(z*) = z*^2 - 3z* - i
+Correct Answer: A
+
+Solution:
+The conjugate of a complex function f(z) is found by taking the conjugate of each term. For f(z) = z^2 + 3z + i, the conjugate function f(z*) would be f(z*) = (z*)^2 + 3(z*) - i.
+
+Explanation:
+The conjugate of a complex function involves taking the conjugate of each individual term in the function. It's important to remember that the imaginary part changes its sign when taking the conjugate.
+
+Common mistake note:
+A common mistake would be to forget to change the sign of the imaginary part when finding the conjugate.
+------------------------------------------------------------------------------
+
+Problem 6 (ComplexDerivative):
+Find the derivative of the complex function f(z) = z^3 + 2z^2 - 5z.
+A) f'(z) = 3z^2 + 4z - 5
+B) f'(z) = 3z^2 + 4i
+C) f'(z) = z^2 + 4z - 5i
+D) f'(z) = 3z^2 + 4z
+Correct Answer: A
+
+Solution:
+The derivative of a complex function is found by differentiating each term with respect to z. For f(z) = z^3 + 2z^2 - 5z, the derivative is f'(z) = 3z^2 + 4z - 5.
+
+Explanation:
+When differentiating a polynomial function of complex variables, we treat the imaginary unit i as a constant and apply standard differentiation rules. There's no change in the imaginary part when differentiating.
+
+Common mistake note:
+A common mistake would be to include an imaginary term in the derivative or forget to multiply the coefficients by the appropriate power.
+------------------------------------------------------------------------------
+
+Problem 7 (ComplexIntegration):
+Evaluate the definite integral of f(z) = z^2 dz from 1 to i.
+A) (i - 1)^3/3
+B) (i + 1)^3/3
+C) i^3/3 - 1^3/3
+D) i^2/3 - 1^2/3
+Correct Answer: C
+
+Solution:
+The definite integral of f(z) = z^2 dz from 1 to i can be evaluated by finding the antiderivative F(z) and then applying the fundamental theorem of calculus. The antiderivative is F(z) = (z^3)/3 + C. Evaluating at the limits, we get F(i) - F(1) = (i^3)/3 - (1^3)/3 = i^3/3 - 1/3. Since i^3 = -i, the final answer is (-i - 1)/3.
+
+Explanation:
+When integrating complex functions, we follow standard integration techniques and then evaluate at the limits of integration. It's important to remember that i^2 = -1 and i^3 = -i when simplifying the result.
+
+Common mistake note:
+A common mistake would be to forget the negative sign associated with i^3 or to apply incorrect rules for integrating complex powers.
+------------------------------------------------------------------------------

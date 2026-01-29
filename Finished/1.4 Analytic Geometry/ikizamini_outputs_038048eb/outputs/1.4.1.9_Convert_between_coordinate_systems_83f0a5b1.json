@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.1.9",
+  "objective_text": "Convert between coordinate systems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Android coordinates to Cartesian",
+      "stem": "An Android app uses a custom coordinate system where the origin is at the top-left corner of the screen and x-axis increases to the right, while y-axis increases downward. Given an Android coordinate (x=300, y=400), what are its equivalent Cartesian coordinates?",
+      "choices": {
+        "A": "(300, 400)",
+        "B": "(400, 300)",
+        "C": "(300, -400)",
+        "D": "(-300, 400)"
+      },
+      "correct_choice": "C",
+      "solution": "In the Android coordinate system, y-axis increases downward from the top. To convert to Cartesian coordinates, where y-axis increases upward from the origin, we need to negate the y-value. Thus, (x=300, y=-400) is the correct conversion.",
+      "explanation": "The key mistake here is not considering the difference in the direction of the y-axis between Android and Cartesian coordinate systems.",
+      "common_mistake_notes": "Common mistake: Not negating the y-coordinate."
+    },
+    {
+      "id": "Polar to Cartesian",
+      "stem": "Convert the polar coordinates (r=5, θ=π/3) into Cartesian coordinates.",
+      "choices": {
+        "A": "(2.5, 4.33)",
+        "B": "(4.33, 2.5)",
+        "C": "(4.33, -2.5)",
+        "D": "(-4.33, 2.5)"
+      },
+      "correct_choice": "B",
+      "solution": "Using the formulas x = r * cos(θ) and y = r * sin(θ), we get x = 5 * cos(π/3) = 2.5 and y = 5 * sin(π/3) ≈ 4.33. So, the Cartesian coordinates are approximately (4.33, 2.5).",
+      "explanation": "The key is to remember the conversion formulas between polar and Cartesian coordinates.",
+      "common_mistake_notes": "Common mistake: Mixing up the trigonometric functions or using the wrong angle."
+    },
+    {
+      "id": "Cartesian to Cylindrical",
+      "stem": "Convert the Cartesian coordinates (x=3, y=4, z=5) into cylindrical coordinates.",
+      "choices": {
+        "A": "(5, π/4, 7)",
+        "B": "(5, 0.88, 3)",
+        "C": "(7, π/4, 5)",
+        "D": "(3, 0.88, 5)"
+      },
+      "correct_choice": "C",
+      "solution": "The cylindrical coordinates are given by (ρ, φ, z), where ρ = √(x² + y²), φ = arctan(y/x) (in radians), and z remains the same. For x=3, y=4, and z=5, we get ρ = √(9+16) = 5, φ = arctan(4/3) ≈ π/4, and z = 5. So, the cylindrical coordinates are (5, π/4, 5).",
+      "explanation": "The key is to remember the formulas for converting from Cartesian to cylindrical coordinates.",
+      "common_mistake_notes": "Common mistake: Using degrees instead of radians for φ."
+    },
+    {
+      "id": "Cylindrical to Spherical",
+      "stem": "Convert the cylindrical coordinates (ρ=5, φ=π/3, z=4) into spherical coordinates.",
+      "choices": {
+        "A": "(7, π/6, π/3)",
+        "B": "(7, π/3, π/6)",
+        "C": "(12, π/6, π/3)",
+        "D": "(12, π/3, π/6)"
+      },
+      "correct_choice": "A",
+      "solution": "The spherical coordinates are given by (r, θ, φ), where r = √(ρ² + z²), θ = arctan(z/ρ) (in radians), and φ remains the same. For ρ=5, φ=π/3, and z=4, we get r = √(25+16) = 7, θ = arctan(4/5) ≈ π/6, and φ = π/3. So, the spherical coordinates are (7, π/6, π/3).",
+      "explanation": "The key is to remember the formulas for converting from cylindrical to spherical coordinates.",
+      "common_mistake_notes": "Common mistake: Mixing up θ and φ or using degrees instead of radians."
+    },
+    {
+      "id": "Spherical to Cartesian",
+      "stem": "Convert the spherical coordinates (r=10, θ=π/4, φ=π/6) into Cartesian coordinates.",
+      "choices": {
+        "A": "(5√2, 5√2, 5)",
+        "B": "(5√3, 5, 5√3)",
+        "C": "(5, 5√3, 5√3)",
+        "D": "(5√3, 5√3, 5)"
+      },
+      "correct_choice": "A",
+      "solution": "The Cartesian coordinates are given by (x=r * sin(θ) * cos(φ), y=r * sin(θ) * sin(φ), z=r * cos(θ)). For r=10, θ=π/4, and φ=π/6, we get x = 10 * sin(π/4) * cos(π/6) = 5√2, y = 10 * sin(π/4) * sin(π/6) = 5√2, and z = 10 * cos(π/4) = 5. So, the Cartesian coordinates are (5√2, 5√2, 5).",
+      "explanation": "The key is to remember the formulas for converting from spherical to Cartesian coordinates.",
+      "common_mistake_notes": "Common mistake: Mixing up trigonometric functions or using the wrong angles."
+    },
+    {
+      "id": "Rectangular to Polar",
+      "stem": "Convert the rectangular coordinates (x=4, y=3) into polar coordinates.",
+      "choices": {
+        "A": "(5, π/6)",
+        "B": "(5, π/3)",
+        "C": "(7, π/6)",
+        "D": "(7, π/3)"
+      },
+      "correct_choice": "A",
+      "solution": "The polar coordinates are given by (ρ=√(x²+y²), φ=arctan(y/x) (in radians)). For x=4 and y=3, we get ρ = √(16+9) = 5, and φ = arctan(3/4) ≈ π/6. So, the polar coordinates are (5, π/6).",
+      "explanation": "The key is to remember the formulas for converting from rectangular to polar coordinates.",
+      "common_mistake_notes": "Common mistake: Using degrees instead of radians for φ."
+    },
+    {
+      "id": "Cylindrical to Cartesian",
+      "stem": "Convert the cylindrical coordinates (ρ=4, φ=π/2, z=3) into Cartesian coordinates.",
+      "choices": {
+        "A": "(0, 4, 3)",
+        "B": "(4, 0, 3)",
+        "C": "(3, 4, 0)",
+        "D": "(4, 3, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The cylindrical coordinates are given by (ρ=√(x²+y²), φ=arctan(y/x) (in radians)), and z remains the same. For ρ=4, φ=π/2, and z=3, we get x = 0 (since φ=π/2 means y is positive and x is zero), y = 4 * sin(π/2) = 4, and z = 3. So, the Cartesian coordinates are (0, 4, 3).",
+      "explanation": "The key is to remember the formulas for converting from cylindrical to Cartesian coordinates.",
+      "common_mistake_notes": "Common mistake: Mixing up x and y based on φ value."
+    }
+  ]
+}

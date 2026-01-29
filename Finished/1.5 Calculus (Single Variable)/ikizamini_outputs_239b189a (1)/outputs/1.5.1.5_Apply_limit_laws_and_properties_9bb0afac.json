@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.1.5",
+  "objective_text": "Apply limit laws and properties",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf1",
+      "stem": "Evaluate the limit: lim x → 2 (3x - 6)",
+      "choices": {
+        "A": "(3 \times 2) - 6 = 0",
+        "B": "3(2) - 6 = 0",
+        "C": "3(x - 2) = 0",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "The limit is evaluated by plugging in the value x approaches. lim x → 2 (3x - 6) = 3(2) - 6 = 0.",
+      "explanation": "This question tests understanding of evaluating a simple linear function's limit as x approaches a constant.",
+      "common_mistake_notes": "A common mistake is to forget to substitute x with the given value, resulting in option A. Another possible mistake is not recognizing that the limit exists for this polynomial function."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Evaluate the limit: lim x → ∞ (5x^2 + 3x - 7)",
+      "choices": {
+        "A": "∞",
+        "B": "-7",
+        "C": "0",
+        "D": "Does not exist"
+      },
+      "correct_choice": "A",
+      "solution": "As x approaches infinity, the highest power term dominates. lim x → ∞ (5x^2 + 3x - 7) = lim x → ∞ (5x^2) = ∞.",
+      "explanation": "This question tests understanding of evaluating limits with polynomial functions where the degree of the leading term is greater than 1.",
+      "common_mistake_notes": "A common mistake is to focus on the lower-degree terms, like -7 or 3x, which become insignificant compared to the dominant x^2 term."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Evaluate the limit: lim x → 0 (sin(x) / x)",
+      "choices": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "Does not exist"
+      },
+      "correct_choice": "A",
+      "solution": "This is a famous limit that evaluates to 1, based on the limit definition of the derivative of sin(x) at x=0. lim x → 0 (sin(x) / x) = 1.",
+      "explanation": "The question tests understanding of special limits related to trigonometric functions and their derivatives.",
+      "common_mistake_notes": "A common mistake is to assume that the limit is 0/0, which would require L'Hopital's rule. However, this specific limit has a known value."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Evaluate the limit: lim x → π (tan(x))",
+      "choices": {
+        "A": "∞",
+        "B": "π",
+        "C": "0",
+        "D": "Does not exist"
+      },
+      "correct_choice": "D",
+      "solution": "The tangent function is undefined at π, so the limit does not exist. lim x → π (tan(x)) = DNE.",
+      "explanation": "This question tests understanding of evaluating limits at points where the function is undefined.",
+      "common_mistake_notes": "A common mistake is to assume that the limit exists and try to evaluate it, which would lead to incorrect conclusions."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Evaluate the limit: lim x → 1 (x^3 - 1) / (x - 1)",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "D",
+      "solution": "The limit can be simplified using the difference of cubes formula: x^3 - 1 = (x - 1)(x^2 + x + 1). lim x → 1 (x^3 - 1) / (x - 1) = lim x → 1 (x^2 + x + 1) = 3.",
+      "explanation": "The question tests understanding of applying limit laws to factor and simplify the function.",
+      "common_mistake_notes": "A common mistake is to forget to factor the numerator, leading to an indeterminate form or incorrect simplification."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Evaluate the limit: lim h → 0 (f(2+h) - f(2)) / h, if f(x) = x^2",
+      "choices": {
+        "A": "4",
+        "B": "8",
+        "C": "16",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "The limit represents the derivative of f(x) at x=2. Using the power rule, f'(x) = 2x. So, f'(2) = 2 \times 2 = 4. The limit evaluates to 8. lim h → 0 (f(2+h) - f(2)) / h = 8.",
+      "explanation": "The question tests understanding of evaluating the derivative of a function using limits.",
+      "common_mistake_notes": "A common mistake is to apply the limit directly to f(x), without realizing it represents the derivative."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Evaluate the limit: lim x → 3 (x^2 - 9) / (x - 3)",
+      "choices": {
+        "A": "0",
+        "B": "3",
+        "C": "6",
+        "D": "∞"
+      },
+      "correct_choice": "C",
+      "solution": "The numerator can be factored as a difference of squares: x^2 - 9 = (x + 3)(x - 3). The limit evaluates to the coefficient of (x - 3), which is 6. lim x → 3 (x^2 - 9) / (x - 3) = 6.",
+      "explanation": "The question tests understanding of applying limit laws to factor and simplify rational functions.",
+      "common_mistake_notes": "A common mistake is to cancel out the (x - 3) terms, which would be incorrect because it leads to division by zero."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.1.2",
+  "objective_text": "Identify real and imaginary parts",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1]",
+      "stem": "What are the real and imaginary parts of the complex number 3 + 4i?",
+      "choices": {
+        "A": "(3, 0)",
+        "B": "(4, 3)",
+        "C": "(3, 4)",
+        "D": "(0, 4)"
+      },
+      "correct_choice": "C",
+      "solution": "The real part is the coefficient of the real unit (1) and the imaginary part is the coefficient of the imaginary unit (i). For the complex number 3 + 4i, the real part is 3 and the imaginary part is 4. Therefore, the correct answer is C: (3, 4).",
+      "explanation": "Complex numbers are written in the form a + bi, where 'a' is the real part and 'b' is the coefficient of i, which represents the imaginary part.",
+      "common_mistake_notes": "A common mistake would be to mix up the real and imaginary parts. Choice A has the correct imaginary part but assigns it as the real part, while choice B mixes the numbers from both parts."
+    },
+    {
+      "id": "[2]",
+      "stem": "What are the real and imaginary parts of the complex number -2i?",
+      "choices": {
+        "A": "(0, 2)",
+        "B": "(2, 0)",
+        "C": "(-2, 0)",
+        "D": "(0, -2)"
+      },
+      "correct_choice": "D",
+      "solution": "The complex number -2i has no real part (the coefficient of the real unit is 0) and an imaginary part of -2 (the coefficient of i). Therefore, the correct answer is D: (0, -2).",
+      "explanation": "When a complex number only has an imaginary term, its real part is zero.",
+      "common_mistake_notes": "A common mistake would be to assign the -2 as the real part instead of the imaginary part. Choice A and B both make this mistake by assigning the -2 as the real part."
+    },
+    {
+      "id": "[3]",
+      "stem": "What are the real and imaginary parts of the complex number 5?",
+      "choices": {
+        "A": "(5, 0)",
+        "B": "(0, 5)",
+        "C": "(5, 1)",
+        "D": "(-5, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The complex number 5 can be written as 5 + 0i. The real part is 5 and the imaginary part is 0 (since there's no i term). Therefore, the correct answer is A: (5, 0).",
+      "explanation": "When a complex number has no imaginary term, its imaginary part is zero.",
+      "common_mistake_notes": "A common mistake would be to assign 1 as the imaginary part or to assign -5 as the real part. Choices C and D make these mistakes."
+    },
+    {
+      "id": "[4]",
+      "stem": "What are the real and imaginary parts of the complex number 7i?",
+      "choices": {
+        "A": "(0, 7)",
+        "B": "(7, 0)",
+        "C": "(0, -7)",
+        "D": "(-7, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The complex number 7i has no real part (the coefficient of the real unit is 0) and an imaginary part of 7 (the coefficient of i). Therefore, the correct answer is A: (0, 7).",
+      "explanation": "When a complex number only has an imaginary term, its real part is zero.",
+      "common_mistake_notes": "A common mistake would be to assign 7 as the real part instead of the imaginary part. Choice B makes this mistake by assigning 7 as the real part."
+    },
+    {
+      "id": "[5]",
+      "stem": "What are the real and imaginary parts of the complex number -4 + 6i?",
+      "choices": {
+        "A": "(4, 6)",
+        "B": "(-4, -6)",
+        "C": "(-4, 6)",
+        "D": "(6, -4)"
+      },
+      "correct_choice": "C",
+      "solution": "The real part of the complex number -4 + 6i is -4 and the imaginary part is 6. Therefore, the correct answer is C: (-4, 6).",
+      "explanation": "When writing a complex number in standard form (a + bi), the first term represents the real part and the second term (with i) represents the imaginary part.",
+      "common_mistake_notes": "A common mistake would be to mix up the signs of the real and imaginary parts. Choice B has the correct absolute values but with opposite signs."
+    },
+    {
+      "id": "[6]",
+      "stem": "What are the real and imaginary parts of the complex number 2 - 3i?",
+      "choices": {
+        "A": "(2, 3)",
+        "B": "(-2, -3)",
+        "C": "(2, -3)",
+        "D": "(-3, 2)"
+      },
+      "correct_choice": "C",
+      "solution": "The real part of the complex number 2 - 3i is 2 and the imaginary part is -3. Therefore, the correct answer is C: (2, -3).",
+      "explanation": "When writing a complex number in standard form (a + bi), the first term represents the real part and the second term (with i) represents the imaginary part.",
+      "common_mistake_notes": "A common mistake would be to mix up the signs of the real and imaginary parts. Choice A has the correct absolute values but with opposite signs."
+    },
+    {
+      "id": "[7]",
+      "stem": "What are the real and imaginary parts of the complex number 0 + 8i?",
+      "choices": {
+        "A": "(8, 0)",
+        "B": "(0, 8)",
+        "C": "(8, -1)",
+        "D": "(-8, 0)"
+      },
+      "correct_choice": "B",
+      "solution": "The real part of the complex number 0 + 8i is 0 and the imaginary part is 8. Therefore, the correct answer is B: (0, 8).",
+      "explanation": "When a complex number has no real term, its real part is zero.",
+      "common_mistake_notes": "A common mistake would be to assign 8 as the real part instead of the imaginary part. Choice A makes this mistake by assigning 8 as the real part."
+    }
+  ]
+}

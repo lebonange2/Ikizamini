@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.15.9",
+  "objective_text": "Apply implicit function theorem",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the partial derivative of z with respect to x for the equation x^2 + y^2 + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (1, 1).",
+      "choices": {
+        "A": "0",
+        "B": "1/3",
+        "C": "-1/3",
+        "D": "1"
+      },
+      "correct_choice": "C",
+      "solution": "Using the implicit function theorem, we can find \frac{\text{∂}z}{\text{∂}x} by taking the partial derivative of both sides of the equation with respect to x and then solving for \frac{\text{∂}z}{\text{∂}x}. The left side becomes 2x + 2yz\frac{\text{∂}z}{\text{∂}x}, and since we assume (x, y) = (1, 1), the equation becomes: 2(1) + 2(1)z\frac{\text{∂}z}{\text{∂}x} = 0. Solving for \frac{\text{∂}z}{\text{∂}x}, we get -1/3.",
+      "explanation": "The implicit function theorem helps to find partial derivatives when the function is defined implicitly.",
+      "common_mistake_notes": "A common mistake would be to forget to apply the chain rule for z, resulting in an incorrect derivative."
+    },
+    {
+      "id": ":2",
+      "stem": "Find dz/dx for the equation x^3 + y^3 = 6xyz, where z is a function of x and y. Assume that (x, y) = (1, 1).",
+      "choices": {
+        "A": "1/2",
+        "B": "1/4",
+        "C": "1/6",
+        "D": "1"
+      },
+      "correct_choice": "C",
+      "solution": "Using the implicit function theorem, we differentiate both sides with respect to x: 3x^2 + 3y^2\frac{\text{∂}y}{\text{∂}x} = 6yz + 6xy\frac{\text{∂}z}{\text{∂}x}. Since (x, y) = (1, 1), the equation simplifies to: 3 + 3\frac{\text{∂}y}{\text{∂}x} = 6\frac{\text{∂}z}{\text{∂}x}. Solving for \frac{\text{∂}z}{\text{∂}x}, we get \frac{\text{∂}z}{\text{∂}x} = 1/6.",
+      "explanation": "The implicit function theorem helps to find partial derivatives when the function is defined implicitly.",
+      "common_mistake_notes": "A common mistake would be to assume that y and z are independent variables, leading to an incorrect derivative."
+    },
+    {
+      "id": ":3",
+      "stem": "Find dz/dy for the equation x^2 + y^2 + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (1, 1).",
+      "choices": {
+        "A": "0",
+        "B": "1/3",
+        "C": "-1/3",
+        "D": "1"
+      },
+      "correct_choice": "B",
+      "solution": "Using the implicit function theorem, we differentiate both sides with respect to y: 2x\frac{\text{∂}x}{\text{∂}y} + 2y + 2z\frac{\text{∂}z}{\text{∂}y} = 0. Since (x, y) = (1, 1), the equation simplifies to: 2\frac{\text{∂}x}{\text{∂}y} + 2 + 2\frac{\text{∂}z}{\text{∂}y} = 0. Solving for \frac{\text{∂}z}{\text{∂}y}, we get \frac{\text{∂}z}{\text{∂}y} = -1/3.",
+      "explanation": "The implicit function theorem helps to find partial derivatives when the function is defined implicitly.",
+      "common_mistake_notes": "A common mistake would be to forget to apply the chain rule for z, resulting in an incorrect derivative."
+    },
+    {
+      "id": ":4",
+      "stem": "Find dz/dx for the equation xy + yz + xz = 1, where z is a function of x and y. Assume that (x, y) = (1, 1).",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "-1/2",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "Using the implicit function theorem, we differentiate both sides with respect to x: y + z\frac{\text{∂}z}{\text{∂}x} + z = 0. Since (x, y) = (1, 1), the equation simplifies to: 1 + \frac{\text{∂}z}{\text{∂}x} + 1 = 0. Solving for \frac{\text{∂}z}{\text{∂}x}, we get \frac{\text{∂}z}{\text{∂}x} = 0.",
+      "explanation": "The implicit function theorem helps to find partial derivatives when the function is defined implicitly.",
+      "common_mistake_notes": "A common mistake would be to assume that z is independent of x, leading to an incorrect derivative."
+    },
+    {
+      "id": ":5",
+      "stem": "Find dz/dx for the equation e^(xy) + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (0, 0).",
+      "choices": {
+        "A": "1",
+        "B": "e^0",
+        "C": "0",
+        "D": "undefined"
+      },
+      "correct_choice": "C",
+      "solution": "Using the implicit function theorem, we differentiate both sides with respect to x: y e^(xy) + 2z\frac{\text{∂}z}{\text{∂}x} = 0. Since (x, y) = (0, 0), the equation simplifies to: 0 + 2z\frac{\text{∂}z}{\text{∂}x} = 0. Solving for \frac{\text{∂}z}{\text{∂}x}, we get \frac{\text{∂}z}{\text{∂}x} = 0.",
+      "explanation": "The implicit function theorem helps to find partial derivatives when the function is defined implicitly.",
+      "common_mistake_notes": "A common mistake would be to forget to apply the chain rule for z, resulting in an incorrect derivative."
+    },
+    {
+      "id": ":6",
+      "stem": "Find dz/dy for the equation sin(xy) + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (π/2, π/2).",
+      "choices": {
+        "A": "cos(π^2)",
+        "B": "0",
+        "C": "undefined",
+        "D": "sin(π^2)"
+      },
+      "correct_choice": "A",
+      "solution": "Using the implicit function theorem, we differentiate both sides with respect to y: x cos(xy) + 2z\frac{\text{∂}z}{\text{∂}y} = 0. Since (x, y) = (π/2, π/2), the equation simplifies to: π/2 cos(π^2) + 2z\frac{\text{∂}z}{\text{∂}y} = 0. Solving for \frac{\text{∂}z}{\text{∂}y}, we get \frac{\text{∂}z}{\text{∂}y} = -π/4 cos(π^2).",
+      "explanation": "The implicit function theorem helps to find partial derivatives when the function is defined implicitly.",
+      "common_mistake_notes": "A common mistake would be to forget to apply the chain rule for z, resulting in an incorrect derivative."
+    },
+    {
+      "id": ":7",
+      "stem": "Find dz/dx for the equation ln(xy) + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (e, e).",
+      "choices": {
+        "A": "1/e",
+        "B": "0",
+        "C": "undefined",
+        "D": "e"
+      },
+      "correct_choice": "A",
+      "solution": "Using the implicit function theorem, we differentiate both sides with respect to x: 1/x + y\frac{\text{∂}y}{\text{∂}x} + 2z\frac{\text{∂}z}{\text{∂}x} = 0. Since (x, y) = (e, e), the equation simplifies to: 1/e + e\frac{\text{∂}y}{\text{∂}x} + 2z\frac{\text{∂}z}{\text{∂}x} = 0. Solving for \frac{\text{∂}z}{\text{∂}x}, we get \frac{\text{∂}z}{\text{∂}x} = -1/(2e).",
+      "explanation": "The implicit function theorem helps to find partial derivatives when the function is defined implicitly.",
+      "common_mistake_notes": "A common mistake would be to assume that y and z are independent variables, leading to an incorrect derivative."
+    }
+  ]
+}

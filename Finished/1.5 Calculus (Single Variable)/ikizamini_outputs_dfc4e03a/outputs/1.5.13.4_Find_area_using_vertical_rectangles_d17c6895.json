@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.13.4",
+  "objective_text": "Find area using vertical rectangles",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "OneRectEasy",
+      "stem": "Find the area of the rectangle with a base of 6 units and a height of 4 units.",
+      "choices": {
+        "A": "10 square units",
+        "B": "20 square units",
+        "C": "24 square units",
+        "D": "30 square units"
+      },
+      "correct_choice": "C",
+      "solution": "The area of the rectangle is found by multiplying the base and height: 6 units * 4 units = 24 square units.",
+      "explanation": "Area calculations involve multiplying the dimensions of the shape.",
+      "common_mistake_notes": "A common mistake would be to multiply the lengths of two sides that are not the base and height."
+    },
+    {
+      "id": "TwoRectsDifficult",
+      "stem": "Find the total area of the two rectangles combined. The first rectangle has a base of 8 units and a height of 5 units, while the second rectangle has a base of 4 units and a height of 7 units.",
+      "choices": {
+        "A": "60 square units",
+        "B": "62 square units",
+        "C": "66 square units",
+        "D": "70 square units"
+      },
+      "correct_choice": "C",
+      "solution": "The combined area is found by adding the areas of the individual rectangles: (8 units * 5 units) + (4 units * 7 units) = 40 square units + 28 square units = 68 square units.",
+      "explanation": "The areas of separate rectangles can be added to find the combined area.",
+      "common_mistake_notes": "A common mistake would be to add the bases and heights instead of multiplying each pair, then summing the results."
+    },
+    {
+      "id": "RectWithHoleEasy",
+      "stem": "Find the area of the rectangle with a missing corner. The outer dimensions are 10 units by 8 units, and there is a small rectangle removed from the center that measures 2 units by 3 units.",
+      "choices": {
+        "A": "64 square units",
+        "B": "70 square units",
+        "C": "74 square units",
+        "D": "80 square units"
+      },
+      "correct_choice": "B",
+      "solution": "The total area is the outer rectangle's area minus the inner rectangle's area: (10 units * 8 units) - (2 units * 3 units) = 80 square units - 6 square units = 74 square units.",
+      "explanation": "When removing a shape from another, subtract its area from the larger shape's area.",
+      "common_mistake_notes": "A common mistake would be to forget to subtract the inner rectangle's area or to subtract it twice."
+    },
+    {
+      "id": "RectWithDiagonalEasy",
+      "stem": "Find the area of the rectangle with a diagonal. The length is 10 units and the width is 6 units.",
+      "choices": {
+        "A": "30 square units",
+        "B": "42 square units",
+        "C": "50 square units",
+        "D": "60 square units"
+      },
+      "correct_choice": "A",
+      "solution": "The area of a rectangle can be found by multiplying the length and width: 10 units * 6 units = 60 square units, regardless of the presence of a diagonal.",
+      "explanation": "The area of a rectangle does not depend on its diagonals; only its base and height matter.",
+      "common_mistake_notes": "A common mistake would be to try using the Pythagorean theorem instead of multiplying the length and width."
+    },
+    {
+      "id": "RectWithUnevenSidesEasy",
+      "stem": "Find the area of the rectangle with uneven sides. The longer side is 9 units and the shorter side is 5 units.",
+      "choices": {
+        "A": "14 square units",
+        "B": "20 square units",
+        "C": "45 square units",
+        "D": "75 square units"
+      },
+      "correct_choice": "C",
+      "solution": "The area of a rectangle is found by multiplying the length and width: 9 units * 5 units = 45 square units, regardless of their relative sizes.",
+      "explanation": "Uneven sides do not affect the area calculation method.",
+      "common_mistake_notes": "A common mistake would be to assume that one side must be the base and the other the height."
+    },
+    {
+      "id": "RectWithFractionalSidesEasy",
+      "stem": "Find the area of the rectangle with fractional sides. The base is 3/2 units and the height is 5/4 units.",
+      "choices": {
+        "A": "7 square units",
+        "B": "10 square units",
+        "C": "14 square units",
+        "D": "15 square units"
+      },
+      "correct_choice": "A",
+      "solution": "To find the area, multiply the base and height: (3/2) * (5/4) = 1.875 square units, which is approximately 1.9 square units when rounded.",
+      "explanation": "Fractions can be multiplied like whole numbers and decimals.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply the numerators and denominators separately."
+    },
+    {
+      "id": "RectWithNegativeSidesEasy",
+      "stem": "Find the area of the rectangle with negative sides. The base is -6 units and the height is -4 units.",
+      "choices": {
+        "A": "24 square units",
+        "B": "-24 square units",
+        "C": "30 square units",
+        "D": "-30 square units"
+      },
+      "correct_choice": "A",
+      "solution": "When multiplying two negative numbers, the result is positive: (-6) * (-4) = 24 square units.",
+      "explanation": "Multiplying negative numbers follows specific rules; in this case, a positive area results.",
+      "common_mistake_notes": "A common mistake would be to assume that the product of two negative numbers is negative."
+    }
+  ]
+}

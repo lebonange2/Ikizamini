@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.9.7",
+  "objective_text": "Count permutations with repetition",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "OneBallMulticolored",
+      "stem": "How many ways are there to arrange 5 balls of different colors in a row if we have 3 red, 2 blue, and 1 green ball?",
+      "choices": {
+        "A": "60",
+        "B": "30",
+        "C": "15",
+        "D": "120"
+      },
+      "correct_choice": "A",
+      "solution": "To find the number of permutations with repetition, multiply the number of choices for each position: 3 (red) × 2 (blue) × 1 (green) = 6. There are 6 ways to arrange the balls.",
+      "explanation": "The order matters as it's a permutation, not a combination. Repetition comes from multiple balls of the same color.",
+      "common_mistake_notes": "A common mistake is treating this as a combination problem and dividing by the factorial of the number of balls (e.g., 5! / (3! × 2!)), which gives an incorrect result."
+    },
+    {
+      "id": "ThreeBooksDifferent",
+      "stem": "How many ways can you arrange 3 different books on a shelf?",
+      "choices": {
+        "A": "6",
+        "B": "12",
+        "C": "18",
+        "D": "24"
+      },
+      "correct_choice": "A",
+      "solution": "With 3 distinct books, the first book has 3 choices, the second has 2, and the third has 1. Total arrangements: 3 × 2 × 1 = 6.",
+      "explanation": "This is a simple permutation problem without repetition since each book is unique.",
+      "common_mistake_notes": "A common mistake is multiplying by the number of books (e.g., 3!) again, which results in an incorrect count."
+    },
+    {
+      "id": "TwoPencilsThreeMarkers",
+      "stem": "You have 2 identical pencils and 3 different markers. How many ways can you arrange them on a desk if you place all the pencils together?",
+      "choices": {
+        "A": "6",
+        "B": "12",
+        "C": "18",
+        "D": "24"
+      },
+      "correct_choice": "A",
+      "solution": "Considering the pencils as one group, we have 4 items (pencils + markers). First position: 4 ways, second: 3, third: 2. Dividing by 2! for identical pencils: arrangements = (4 × 3 × 2) / 2! = 6.",
+      "explanation": "Problem involves repetition and indistinguishable items; treat pencils as one group to avoid overcounting.",
+      "common_mistake_notes": "A common mistake is forgetting to divide by the factorial of identical items (e.g., 2!) when grouping, which gives an incorrect result."
+    },
+    {
+      "id": "FourFruitsTwoEach",
+      "stem": "You have 4 different fruits: apples, oranges, bananas, and pears. You want to pick two of each fruit. How many ways can you choose the fruits?",
+      "choices": {
+        "A": "64",
+        "B": "32",
+        "C": "16",
+        "D": "96"
+      },
+      "correct_choice": "A",
+      "solution": "With 4 different fruits, pick 2 of each: 4 × 3 × (2!)^2 = 24. Multiply by factorials for identical pairs within kinds: total arrangements = 24 × 2! × 2! = 64.",
+      "explanation": "Problem involves repetition and indistinguishable items within groups; multiply by factorial of identical items per group.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by factorials of identical items (e.g., 2!) for each group, which gives an incorrect result."
+    },
+    {
+      "id": "FiveStudentsTeams",
+      "stem": "In a class with 5 students, how many ways can they form two teams of 2 and 3 students if all students are distinct?",
+      "choices": {
+        "A": "10",
+        "B": "20",
+        "C": "30",
+        "D": "40"
+      },
+      "correct_choice": "B",
+      "solution": "Choose 2 out of 5 for team of 2: C(5,2) = (5!)/(2!(5-2)!) = 10. The remaining students form the other team automatically. Total arrangements = 10.",
+      "explanation": "Combination followed by permutation; teams are distinguishable but order within each doesn't matter.",
+      "common_mistake_notes": "A common mistake is treating the entire process as a single permutation problem, which results in overcounting."
+    },
+    {
+      "id": "SixColorsTwoEach",
+      "stem": "You have 6 different colors of marbles: red, blue, green, yellow, purple, and orange. You want to pick two marbles of each color. How many ways can you choose the marbles?",
+      "choices": {
+        "A": "864",
+        "B": "432",
+        "C": "216",
+        "D": "1728"
+      },
+      "correct_choice": "A",
+      "solution": "With 6 different colors, pick 2 of each: 6 × 5 × (2!)^3 = 864. Multiply by factorials for identical pairs within kinds: total arrangements = 864.",
+      "explanation": "Problem involves repetition and indistinguishable items within groups; multiply by factorial of identical items per group.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by factorials of identical items (e.g., 2!) for each group, which gives an incorrect result."
+    },
+    {
+      "id": "SevenFlowersBouquet",
+      "stem": "You have 7 different flowers: roses, daisies, lilies, tulips, sunflowers, violets, and carnations. You want to make a bouquet with 3 of each flower. How many ways can you choose the flowers?",
+      "choices": {
+        "A": "2016",
+        "B": "1008",
+        "C": "504",
+        "D": "4032"
+      },
+      "correct_choice": "A",
+      "solution": "With 7 different flowers, pick 3 of each: 7 × 6 × 5 × (3!)^3 = 2016. Multiply by factorials for identical groups within kinds: total arrangements = 2016.",
+      "explanation": "Problem involves repetition and indistinguishable items within groups; multiply by factorial of identical items per group.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by factorials of identical items (e.g., 3!) for each group, which gives an incorrect result."
+    }
+  ]
+}

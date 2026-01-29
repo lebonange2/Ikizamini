@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.13.6",
+  "objective_text": "Solve non-homogeneous recurrence relations",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the particular solution for the recurrence relation: a_n = 2a_{n-1} + 4^n, with initial condition a_0 = 1.",
+      "choices": {
+        "A": "a_n = 2 \times 4^n",
+        "B": "a_n = (1/3) \times 4^n",
+        "C": "a_n = (1 - 2^(-n))/3",
+        "D": "a_n = 4^n"
+      },
+      "correct_choice": "D",
+      "solution": "The particular solution for a non-homogeneous recurrence relation is often found by assuming a form that matches the non-homogeneous term. In this case, the non-homogeneous term is 4^n, which suggests we try an exponential form like A \times 4^n. Plugging this into the equation gives us: A \times 4^n = 2A \times 4^{n-1} + 4^n. Simplifying, we get (A - 2A) \times 4^{n-1} = 4^n, or -A \times 4^{n-1} = 4^n. Dividing by 4^{n-1}, we find A = 4. Therefore, the particular solution is a_n = 4^n.",
+      "explanation": "The correct choice matches the form of the non-homogeneous term and satisfies the equation.",
+      "common_mistake_notes": "A common mistake is to forget to include the initial condition in the general solution. In this case, not including the homogeneous solution would result in an incomplete answer."
+    },
+    {
+      "id": ":2",
+      "stem": "Solve the recurrence relation: a_n = 3a_{n-1} + n^2, with initial conditions a_0 = 1 and a_1 = 4.",
+      "choices": {
+        "A": "a_n = (3^n - 1)/2 + n(n+1)",
+        "B": "a_n = (3^{n-1} + n^2)/2",
+        "C": "a_n = 3 \times 3^{n-1} + n^2",
+        "D": "a_n = 3^n + (n^2 - 1)/2"
+      },
+      "correct_choice": "D",
+      "solution": "The homogeneous solution for a linear non-homogeneous recurrence relation is typically of the form A \times r^n, where r is a root of the characteristic equation. For this problem, the characteristic equation is r - 3 = 0, which gives us r = 3. The homogeneous solution is thus a_n = 3^n. To find the particular solution, we try an ansatz like An^2 + Bn + C. Plugging it into the equation and solving for A, B, and C, we get A = 1. So, the particular solution is a_n = n^2. Combining both solutions, we have a_n = 3^n + n^2. Using the initial conditions, we find that a_0 = 1 and a_1 = 4 are satisfied by this solution.",
+      "explanation": "The correct choice combines the homogeneous and particular solutions correctly.",
+      "common_mistake_notes": "A common mistake is to misapply the initial conditions or forget to include them in the final solution. In this case, not considering the initial conditions would lead to an incorrect answer."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the closed-form solution for the recurrence relation: a_n = 2a_{n-1} + 6, with initial condition a_0 = 5.",
+      "choices": {
+        "A": "a_n = 2^(-n) \times (5 - 6n) + 6",
+        "B": "a_n = 2^n \times (5 + 3n) + 6",
+        "C": "a_n = 2^n \times (5 + 6n) + 12",
+        "D": "a_n = 2^n \times (5 - 3n) + 6"
+      },
+      "correct_choice": "B",
+      "solution": "The homogeneous solution for a linear non-homogeneous recurrence relation is typically of the form A \times r^n, where r is a root of the characteristic equation. For this problem, the characteristic equation is r - 2 = 0, which gives us r = 2. The homogeneous solution is thus a_n = 2^n. To find the particular solution, we try an ansatz like An + B. Plugging it into the equation and solving for A and B, we get A = 3 and B = 6. So, the particular solution is a_n = 3n + 6. Combining both solutions, we have a_n = 2^n \times (5 + 3n) + 6. Using the initial condition, we find that a_0 = 5 is satisfied by this solution.",
+      "explanation": "The correct choice combines the homogeneous and particular solutions correctly.",
+      "common_mistake_notes": "A common mistake is to misapply the initial conditions or forget to include them in the final solution. In this case, not considering the initial condition would lead to an incorrect answer."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the closed-form solution for the recurrence relation: a_n = 5a_{n-1} - 6a_{n-2}, with initial conditions a_0 = 1 and a_1 = 2.",
+      "choices": {
+        "A": "a_n = (3^n + 2^n)/4",
+        "B": "a_n = (3^n - 2^n)/4",
+        "C": "a_n = (3^{n-1} + 2^{n-1})/4",
+        "D": "a_n = (3^{n+1} + 2^{n+1})/4"
+      },
+      "correct_choice": "A",
+      "solution": "The homogeneous solution for a linear non-homogeneous recurrence relation is typically of the form A \times r^n + B \times s^n, where r and s are roots of the characteristic equation. For this problem, the characteristic equation is r^2 - 5r + 6 = 0, which gives us r = 2 and r = 3. The homogeneous solution is thus a_n = A \times 2^n + B \times 3^n. To find the particular solution, we try an ansatz like An + B. Plugging it into the equation and solving for A and B, we get A = -1 and B = 2. So, the particular solution is a_n = -n + 2. Combining both solutions, we have a_n = (A \times 2^n + B \times 3^n) - n + 2. Using the initial conditions, we find that A = 1/4 and B = 1/4, resulting in a_n = (3^n + 2^n)/4.",
+      "explanation": "The correct choice combines the homogeneous and particular solutions correctly.",
+      "common_mistake_notes": "A common mistake is to misapply the initial conditions or forget to include them in the final solution. In this case, not considering the initial conditions would lead to an incorrect answer."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the closed-form solution for the recurrence relation: a_n = 4a_{n-1} - 3a_{n-2}, with initial conditions a_0 = 2 and a_1 = 4.",
+      "choices": {
+        "A": "a_n = (2 \times 4^n + 3 \times 3^n)/7",
+        "B": "a_n = (2 \times 4^n - 3 \times 3^n)/7",
+        "C": "a_n = (2 \times 4^{n-1} + 3 \times 3^{n-1})/7",
+        "D": "a_n = (2 \times 4^{n+1} + 3 \times 3^{n+1})/7"
+      },
+      "correct_choice": "A",
+      "solution": "The homogeneous solution for a linear non-homogeneous recurrence relation is typically of the form A \times r^n + B \times s^n, where r and s are roots of the characteristic equation. For this problem, the characteristic equation is r^2 - 4r + 3 = 0, which gives us r = 1 and r = 3. The homogeneous solution is thus a_n = A \times 1^n + B \times 3^n. To find the particular solution, we try an ansatz like An + B. Plugging it into the equation and solving for A and B, we get A = -2 and B = 4. So, the particular solution is a_n = -2n + 4. Combining both solutions, we have a_n = (A \times 1^n + B \times 3^n) - 2n + 4. Using the initial conditions, we find that A = 2/7 and B = 3/7, resulting in a_n = (2 \times 4^n + 3 \times 3^n)/7.",
+      "explanation": "The correct choice combines the homogeneous and particular solutions correctly.",
+      "common_mistake_notes": "A common mistake is to misapply the initial conditions or forget to include them in the final solution. In this case, not considering the initial conditions would lead to an incorrect answer."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the closed-form solution for the recurrence relation: a_n = 2a_{n-1} + n, with initial condition a_0 = 0.",
+      "choices": {
+        "A": "a_n = (n^2 - n)/2",
+        "B": "a_n = (n^2 + n)/2",
+        "C": "a_n = (n^2 - n) \times 2^n",
+        "D": "a_n = (n^2 + n) \times 2^n"
+      },
+      "correct_choice": "B",
+      "solution": "The homogeneous solution for a linear non-homogeneous recurrence relation is typically of the form A \times r^n, where r is a root of the characteristic equation. For this problem, the characteristic equation is r - 2 = 0, which gives us r = 2. The homogeneous solution is thus a_n = 2^n. To find the particular solution, we try an ansatz like An^2 + Bn + C. Plugging it into the equation and solving for A, B, and C, we get A = 1/2, B = 1/2, and C = 0. So, the particular solution is a_n = (n^2 + n)/2. Combining both solutions, we have a_n = 2^n \times (A \times r^n) + (n^2 + n)/2. Using the initial condition, we find that A = 0, resulting in a_n = (n^2 + n)/2.",
+      "explanation": "The correct choice combines the homogeneous and particular solutions correctly.",
+      "common_mistake_notes": "A common mistake is to misapply the initial conditions or forget to include them in the final solution. In this case, not considering the initial condition would lead to an incorrect answer."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the closed-form solution for the recurrence relation: a_n = 3a_{n-1} - 2a_{n-2}, with initial conditions a_0 = 1 and a_1 = 4.",
+      "choices": {
+        "A": "a_n = (2 \times 3^n + 3 \times 2^n)/5",
+        "B": "a_n = (2 \times 3^n - 3 \times 2^n)/5",
+        "C": "a_n = (2 \times 3^{n-1} + 3 \times 2^{n-1})/5",
+        "D": "a_n = (2 \times 3^{n+1} + 3 \times 2^{n+1})/5"
+      },
+      "correct_choice": "A",
+      "solution": "The homogeneous solution for a linear non-homogeneous recurrence relation is typically of the form A \times r^n + B \times s^n, where r and s are roots of the characteristic equation. For this problem, the characteristic equation is r^2 - 3r + 2 = 0, which gives us r = 1 and r = 2. The homogeneous solution is thus a_n = A \times 1^n + B \times 2^n. To find the particular solution, we try an ansatz like An + B. Plugging it into the equation and solving for A and B, we get A = -3 and B = 4. So, the particular solution is a_n = -3n + 4. Combining both solutions, we have a_n = (A \times 1^n + B \times 2^n) - 3n + 4. Using the initial conditions, we find that A = 1/5 and B = 3/5, resulting in a_n = (2 \times 3^n + 3 \times 2^n)/5.",
+      "explanation": "The correct choice combines the homogeneous and particular solutions correctly.",
+      "common_mistake_notes": "A common mistake is to misapply the initial conditions or forget to include them in the final solution. In this case, not considering the initial conditions would lead to an incorrect answer."
+    }
+  ]
+}

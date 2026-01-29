@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.10.1",
+  "objective_text": "Define parametric equations x = f(t), y = g(t)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What do parametric equations represent in mathematics?",
+      "choices": {
+        "A": "A straight line in the coordinate plane.",
+        "B": "A curve in the coordinate plane.",
+        "C": "A system of linear equations.",
+        "D": "The volume of a 3D shape."
+      },
+      "correct_choice": "B",
+      "solution": "Parametric equations represent curves in the coordinate plane by defining x and y as functions of a third variable, t. Answer A represents straight lines, which can be represented by simple algebraic expressions. Answer C refers to systems of linear equations solved simultaneously for multiple variables, not parametric form. Answer D is related to 3D shape volumes calculated using calculus or geometry, not parametric equations.",
+      "explanation": "Parametric equations describe complex curves that may not have simple algebraic representations.",
+      "common_mistake_notes": "Students might confuse parametric equations with linear equations (A) or systems of linear equations (C). They may also associate parametric equations with 3D volume calculations (D)."
+    },
+    {
+      "id": "Asdf",
+      "stem": "In the parametric equation x = 2t + 1 and y = t^2 - 3, which variable represents time?",
+      "choices": {
+        "A": "x",
+        "B": "y",
+        "C": "t",
+        "D": "Both x and y"
+      },
+      "correct_choice": "C",
+      "solution": "In parametric equations, the independent variable that generates different points on a curve is typically represented by 't'. In this case, both x and y are functions of t.",
+      "explanation": "The variable 't' in parametric equations varies to create a sequence of points defining a curve.",
+      "common_mistake_notes": "Students might mistake 'time variable' for x or y (A or B), not realizing that t is the one that changes over time, while x and y are dependent on t."
+    },
+    {
+      "id": "Asdf",
+      "stem": "For the parametric equations x = 3t + 2 and y = t + 4, what value of 't' corresponds to (x, y) = (5, 1)?",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_choice": "B",
+      "solution": "To find 't', solve the system: 5 = 3t + 2 and 1 = t + 4. Solving gives t = 2.",
+      "explanation": "Set x and y from the parametric equations equal to their given values and solve for 't'.",
+      "common_mistake_notes": "Students might make errors in solving the system of equations, leading them to choose A, C, or D."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which set of parametric equations represents a circle with radius 3 centered at (2, 1)?",
+      "choices": {
+        "A": "x = 3cos(t) + 2, y = 3sin(t) + 1",
+        "B": "x = 2cos(t), y = 1sin(t)",
+        "C": "x = 3cos(t), y = 3sin(t) + 5",
+        "D": "x = 2t + 2, y = t^2 + 1"
+      },
+      "correct_choice": "A",
+      "solution": "The standard form for a circle with radius r centered at (h, k) is x = h + rcos(t), y = k + rsin(t). For a circle with radius 3 and center (2, 1), the correct equations are x = 2 + 3cos(t), y = 1 + 3sin(t). Answer A matches this form.",
+      "explanation": "Parametric equations for a circle include the radius and center coordinates in their form.",
+      "common_mistake_notes": "Students might forget to include the center point (h, k) or use incorrect trigonometric functions, leading them to choose B, C, or D."
+    },
+    {
+      "id": "Asdf",
+      "stem": "In parametric equations x = 4sin(t) and y = 3cos(t), what is the period of the curve?",
+      "choices": {
+        "A": "π",
+        "B": "2π",
+        "C": "π/2",
+        "D": "π/4"
+      },
+      "correct_choice": "B",
+      "solution": "The periods for sine and cosine are both 2π. Since x and y are based on these functions, the curve's period is also 2π.",
+      "explanation": "The period of a parametric equation depends on the periods of its trigonometric functions.",
+      "common_mistake_notes": "Students might混淆individual trigonometric function periods with the curve's period. They may choose A, C, or D, not realizing that the curve's period is usually determined by the longest trigonometric function period."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What relationship exists between dx/dt and dy/dt in parametric equations?",
+      "choices": {
+        "A": "dx/dt = dy/dt",
+        "B": "dx/dt ∙ dy/dt = 1",
+        "C": "dy/dt = -dx/dt",
+        "D": "The relationship depends on f'(t) and g'(t)"
+      },
+      "correct_choice": "D",
+      "solution": "The relationship between dx/dt and dy/dt is determined by the derivatives of f(t) and g(t), which define x and y. The equation dx/dt ∙ dy/dt = [f'(t)]^2 + [g'(t)]^2 represents the speed or magnitude of the curve's velocity vector.",
+      "explanation": "The relationship between dx/dt and dy/dt is specific to f(t) and g(t), not a general rule.",
+      "common_mistake_notes": "Students might混淆derivatives in parametric equations with simple algebraic relationships, leading them to choose A, B, or C."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Given the parametric equations x = 2t^2 and y = t^3 - 1, what values does (x, y) take at t = 0?",
+      "choices": {
+        "A": "x = 0 and y = -1",
+        "B": "x = 2 and y = 0",
+        "C": "x = 0 and y = 0",
+        "D": "x = 2 and y = -1"
+      },
+      "correct_choice": "A",
+      "solution": "At t = 0, x = 2(0)^2 = 0 and y = (0)^3 - 1 = -1. So, x = 0 and y = -1.",
+      "explanation": "Substitute t = 0 into the parametric equations to find the corresponding point on the curve.",
+      "common_mistake_notes": "Students might make errors substituting t = 0, leading them to choose B, C, or D. Double-check calculations when working with parametric equations."
+    }
+  ]
+}

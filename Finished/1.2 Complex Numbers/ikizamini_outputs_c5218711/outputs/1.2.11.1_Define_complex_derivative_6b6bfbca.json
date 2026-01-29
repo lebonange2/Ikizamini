@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.11.1",
+  "objective_text": "Define complex derivative",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "What is the definition of the derivative of a complex function f(z) at a point z₀?",
+      "choices": {
+        "A": "lim (h → 0) [f(z₀ + ih) - f(z₀)] / h",
+        "B": "lim (h → 0) [f(z₀ + h) - f(z₀)] / h",
+        "C": "lim (h → 0) [f(z₀ + ih) - f(z₀)] / ih",
+        "D": "lim (h → 0) [f(z₀ + ih) + f(z₀)] / ih"
+      },
+      "correct_choice": "C",
+      "solution": "The correct definition of the complex derivative is the limit where both the real and imaginary parts are considered. Hence, we use 'ih' in the denominator to account for the complex nature of the function. The formula is lim (h → 0) [f(z₀ + ih) - f(z₀)] / ih.",
+      "explanation": "The derivative of a complex function involves considering both real and imaginary parts simultaneously. Options A, B, and D are incorrect because: A uses 'h' in the denominator, which leads to a real derivative; B does not account for the complex nature of the problem; and D adds the function values instead of subtracting them.",
+      "common_mistake_notes": "Common mistakes include choosing A or B, which apply to real derivatives rather than complex ones. Choosing D, which uses addition instead of subtraction in the numerator."
+    },
+    {
+      "id": "Two",
+      "stem": "What is the derivative of f(z) = z² at z₀ = 2?",
+      "choices": {
+        "A": "4i",
+        "B": "8",
+        "C": "4",
+        "D": "2i"
+      },
+      "correct_choice": "B",
+      "solution": "The derivative of f(z) = z² is f'(z) = 2z. At z₀ = 2, the derivative becomes f'(2) = 2 * 2 = 4.",
+      "explanation": "To find the derivative of a complex function, apply differentiation rules as for real functions. In this case, we use the power rule: f'(z) = 2z, and substitute z₀ = 2.",
+      "common_mistake_notes": "Common mistakes include applying the imaginary unit 'i' directly to the result (e.g., choosing A or D), which is not correct for complex derivatives. Not applying derivative rules correctly."
+    },
+    {
+      "id": "Three",
+      "stem": "Find the derivative of f(z) = e^(iz) at z₀ = π/2.",
+      "choices": {
+        "A": "-i",
+        "B": "1",
+        "C": "i",
+        "D": "0"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of f(z) = e^(iz) is f'(z) = i * e^(iz). At z₀ = π/2, the derivative becomes f'(π/2) = i * e^(iπ/2) = -i.",
+      "explanation": "For exponential functions with a complex base, differentiate using the chain rule: f'(z) = i * e^(iz). Substituting z₀ = π/2 gives f'(π/2) = -i, as e^(iπ/2) = i.",
+      "common_mistake_notes": "Common mistakes include forgetting to multiply by 'i' in the derivative (e.g., choosing B or D), which is essential for complex derivatives. Not simplifying the result correctly."
+    },
+    {
+      "id": "Four",
+      "stem": "What is the derivative of f(z) = sin(z) at z₀ = 3?",
+      "choices": {
+        "A": "cos(3)",
+        "B": "cos(3i)",
+        "C": "icos(3)",
+        "D": "sin(3)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of f(z) = sin(z) is f'(z) = cos(z). At z₀ = 3, the derivative becomes f'(3) = cos(3).",
+      "explanation": "For trigonometric functions with a complex argument, differentiate as for real functions. In this case, we use the chain rule: f'(z) = cos(z), and substitute z₀ = 3.",
+      "common_mistake_notes": "Common mistakes include applying the imaginary unit 'i' directly to the result (e.g., choosing C or D), which is not correct for complex derivatives. Not applying derivative rules correctly."
+    },
+    {
+      "id": "Five",
+      "stem": "Find the derivative of f(z) = ln(1+2z) at z₀ = 1+i.",
+      "choices": {
+        "A": "(1-i)/(2(1+i))",
+        "B": "1/(1+2i)",
+        "C": "1/(1+i)",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of f(z) = ln(1+2z) is f'(z) = 2 / (1+2z). At z₀ = 1+i, the derivative becomes f'(1+i) = 2 / (1+2(1+i)). To rationalize the denominator, multiply by the complex conjugate: (1-i)/(2(1+i)).",
+      "explanation": "The derivative of ln(1+2z) is 2 / (1+2z). When evaluating at a complex point like z₀ = 1+i, we need to simplify the result by multiplying by the complex conjugate to eliminate the imaginary part from the denominator.",
+      "common_mistake_notes": "Common mistakes include not rationalizing the denominator (e.g., choosing B or C), which is necessary for simplifying complex derivatives. Applying incorrect algebraic manipulation."
+    },
+    {
+      "id": "Six",
+      "stem": "What is the derivative of f(z) = z³ - 2z² + 3z - 4 at z₀ = 1?",
+      "choices": {
+        "A": "6i",
+        "B": "6",
+        "C": "8",
+        "D": "4"
+      },
+      "correct_choice": "B",
+      "solution": "The derivative of f(z) = z³ - 2z² + 3z - 4 is f'(z) = 3z² - 4z + 3. At z₀ = 1, the derivative becomes f'(1) = 3(1)² - 4(1) + 3 = 6.",
+      "explanation": "To find the derivative of a polynomial function with complex coefficients, apply power and sum/difference rules as for real polynomials. In this case, we get f'(z) = 3z² - 4z + 3, and then substitute z₀ = 1.",
+      "common_mistake_notes": "Common mistakes include applying imaginary units to the coefficients (e.g., choosing A), which is not correct for complex derivatives. Not applying derivative rules correctly."
+    },
+    {
+      "id": "Seven",
+      "stem": "Find the derivative of f(z) = z / (z - i) at z₀ = 2+i.",
+      "choices": {
+        "A": "(3-2i)/(5-2i)",
+        "B": "(1-i)/(4+2i)",
+        "C": "(1+i)/(4+2i)",
+        "D": "(1-i)/(5-2i)"
+      },
+      "correct_choice": "B",
+      "solution": "The derivative of f(z) = z / (z - i) can be found using the quotient rule: f'(z) = [(z - i) * 1 - z * 1] / (z - i)². At z₀ = 2+i, the derivative becomes f'(2+i) = [(2+i - i) * 1 - (2+i) * 1] / ((2+i) - i)² = (1-i)/(4+2i).",
+      "explanation": "To differentiate a complex function in quotient form, use the quotient rule. After simplifying, substitute z₀ = 2+i to find the derivative at that point.",
+      "common_mistake_notes": "Common mistakes include not applying the quotient rule correctly (e.g., choosing A or C). Not simplifying the result after substitution (e.g., choosing D)."
+    }
+  ]
+}

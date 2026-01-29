@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.9.6 Apply circular permutations
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.9 Permutations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Given a circular arrangement of 5 distinct objects A, B, C, D, and E, where A is adjacent to both B and E, how many unique arrangements are possible?
+A) 10
+B) 12
+C) 24
+D) 60
+Correct Answer: C
+
+Solution:
+In a circular permutation, we fix one object (to break symmetry) and arrange the remaining objects around it. Since A is already adjacent to both B and E, we fix A in place. This leaves 4 objects (B, C, D, and E) to be arranged around A. The first object can be placed in 3 positions relative to A (clockwise or counterclockwise), and once that's done, the remaining three objects can be arranged among themselves in 3! ways (3 factorial). So, the total number of arrangements is 3 	imes 3! = 3 	imes 6 = 18. However, since we fixed A but didn't specify its orientation, we've counted each unique arrangement twice (clockwise and counterclockwise). To correct for this overcounting, we divide by 2: 18 / 2 = 9 unique arrangements. But the question asks for arrangements of all 5 objects, so we multiply our result by 5! / (5-3)! to account for A's original neighbors: 9 	imes 5! / 2! = 9 	imes 120 / 2 = 9 	imes 60 = 540.
+
+Explanation:
+The correct arrangement count is obtained by considering the symmetry and dividing by 2 to avoid overcounting.
+
+Common mistake note:
+A common mistake is not accounting for the symmetry of the circular arrangement, which results in double-counting each unique arrangement. Dividing by 2 corrects this issue.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+In a circular permutation of 6 distinct objects A, B, C, D, E, and F, how many arrangements are possible if B must be adjacent to both A and C?
+A) 10
+B) 20
+C) 30
+D) 40
+Correct Answer: D
+
+Solution:
+We fix B in place between A and C. This leaves 4 objects (D, E, F, and the empty spot created by fixing B) to be arranged around B. The first object can be placed in 3 positions relative to B, and once that's done, the remaining three objects can be arranged among themselves in 3! ways. So, there are initially 3 	imes 3! = 3 	imes 6 = 18 arrangements. However, since we fixed B but didn't specify its orientation, we've counted each unique arrangement twice (clockwise and counterclockwise). To correct for this overcounting, we divide by 2: 18 / 2 = 9 unique arrangements with A, B, C in that order. Now, we multiply by the number of ways to arrange the remaining three objects D, E, and F (3!) around A, B, and C: 9 	imes 3! = 9 	imes 6 = 54. Finally, since there are 6 total objects, we multiply our result by 6! / (6-3)! to account for the original neighbors of A, B, and C: 54 	imes 6! / 3! = 54 	imes 720 / 6 = 54 	imes 120 = 6480.
+
+Explanation:
+The correct arrangement count is obtained by considering the symmetry of the circular arrangement, fixing A, B, and C in place, and accounting for all possible arrangements of the remaining objects.
+
+Common mistake note:
+A common mistake is not accounting for the fixed positions of A, B, and C or not dividing by 2 to avoid overcounting. Additionally, some might forget to multiply by the number of ways to arrange the remaining objects around the fixed group.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+In a circular arrangement of 7 distinct objects, how many arrangements are possible if no two specific objects (X and Y) can be adjacent?
+A) 2520
+B) 3600
+C) 4320
+D) 5040
+Correct Answer: C
+
+Solution:
+First, we calculate the total number of arrangements for 7 distinct objects in a circle, which is (7-1)! = 6! = 720. Now, let's consider the number of arrangements where X and Y are adjacent. We can treat X and Y as a single object (XY), so we have 6 objects to arrange, giving us (6-1)! = 5! = 120 arrangements. However, since X and Y can be arranged in two ways (X before Y or Y before X), we must multiply this by 2: 120 	imes 2 = 240. Subtracting these arrangements where X and Y are adjacent from the total arrangements gives us the number of arrangements where X and Y are not adjacent: 720 - 240 = 480. To account for the fact that we fixed the order of X and Y in our calculation, we divide by 2 to avoid overcounting: 480 / 2 = 240 unique arrangements where X and Y are not adjacent.
+
+Explanation:
+The correct arrangement count is obtained by subtracting the number of arrangements with X and Y adjacent from the total arrangements and dividing by 2 to account for the symmetry and avoid overcounting.
+
+Common mistake note:
+A common mistake is either not considering the symmetry when X and Y are treated as a single object or not dividing by 2 to correct for overcounting.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+In a circular arrangement of 8 distinct objects, how many arrangements are possible if two specific objects (X and Y) must be adjacent but never next to a third object (Z)?
+A) 1440
+B) 2160
+C) 2880
+D) 3600
+Correct Answer: C
+
+Solution:
+First, we treat X and Y as a single object (XY) to find the number of arrangements for 7 objects in a circle, which is (7-1)! = 6! = 720. Now, let's consider the number of arrangements where XY is adjacent to Z. We can fix Z in place and arrange the remaining 6 objects around it, giving us (6-1)! = 5! = 120 arrangements. However, since X and Y can be arranged in two ways (X before Y or Y before X), we must multiply this by 2: 120 	imes 2 = 240. Subtracting these arrangements where XY is adjacent to Z from the total arrangements gives us the number of arrangements where XY is not adjacent to Z: 720 - 240 = 480. To account for the fact that we fixed the order of X and Y in our calculation, we divide by 2 to avoid overcounting: 480 / 2 = 240 unique arrangements where XY is not adjacent to Z. Finally, multiply this by 2 to account for the two possible positions of Z relative to XY (clockwise or counterclockwise): 240 	imes 2 = 480.
+
+Explanation:
+The correct arrangement count is obtained by first treating X and Y as a single object, then subtracting arrangements where they are adjacent to Z, dividing by 2 for symmetry, and multiplying by 2 to account for the two possible positions of Z relative to XY.
+
+Common mistake note:
+A common mistake is either not considering the symmetry when X and Y are treated as a single object or not accounting for the two possible positions of Z relative to XY.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+In a circular arrangement of 9 distinct objects, how many arrangements are possible if three specific objects (X, Y, and Z) must be adjacent but never next to each other?
+A) 2880
+B) 3456
+C) 4140
+D) 4752
+Correct Answer: B
+
+Solution:
+First, we treat X, Y, and Z as a single object (XYZ) to find the number of arrangements for 8 objects in a circle, which is (8-1)! = 7! = 5040. Now, let's consider the number of arrangements where XYZ is together but not next to each other. We can fix XYZ in a specific order and arrange the remaining 6 objects around them, giving us (6-1)! = 5! = 120 arrangements. However, since X, Y, and Z can be arranged among themselves in 3! ways, we must multiply this by 6: 120 	imes 6 = 720. Subtracting these arrangements where XYZ is together but not next to each other from the total arrangements gives us the number of arrangements where XYZ is either together or next to each other: 5040 - 720 = 4320. To account for the fact that we fixed the order of X, Y, and Z in our calculation, we divide by 6 to avoid overcounting: 4320 / 6 = 720 unique arrangements where XYZ is either together or next to each other. Finally, multiply this by 2 to account for the two possible positions of XYZ relative to the other objects (clockwise or counterclockwise): 720 	imes 2 = 1440.
+
+Explanation:
+The correct arrangement count is obtained by first treating X, Y, and Z as a single object, then subtracting arrangements where they are together but not next to each other, dividing by 6 for symmetry, and multiplying by 2 to account for the two possible positions of XYZ relative to the other objects.
+
+Common mistake note:
+A common mistake is either not considering the symmetry when X, Y, and Z are treated as a single object or not accounting for the two possible positions of XYZ relative to the other objects.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+In a circular arrangement of 10 distinct objects, how many arrangements are possible if four specific objects (X, Y, Z, and W) must be adjacent but never next to each other?
+A) 5760
+B) 6912
+C) 8064
+D) 9216
+Correct Answer: C
+
+Solution:
+First, we treat X, Y, Z, and W as a single object (XYZW) to find the number of arrangements for 9 objects in a circle, which is (9-1)! = 8! = 40320. Now, let's consider the number of arrangements where XYZW is together but not next to each other. We can fix XYZW in a specific order and arrange the remaining 5 objects around them, giving us (5-1)! = 4! = 24 arrangements. However, since X, Y, Z, and W can be arranged among themselves in 4! ways, we must multiply this by 24: 24 	imes 24 = 576. Subtracting these arrangements where XYZW is together but not next to each other from the total arrangements gives us the number of arrangements where XYZW is either together or next to each other: 40320 - 576 = 39744. To account for the fact that we fixed the order of X, Y, Z, and W in our calculation, we divide by 24 to avoid overcounting: 39744 / 24 = 1656 unique arrangements where XYZW is either together or next to each other. Finally, multiply this by 2 to account for the two possible positions of XYZW relative to the other objects (clockwise or counterclockwise): 1656 	imes 2 = 3312.
+
+Explanation:
+The correct arrangement count is obtained by first treating X, Y, Z, and W as a single object, then subtracting arrangements where they are together but not next to each other, dividing by 24 for symmetry, and multiplying by 2 to account for the two possible positions of XYZW relative to the other objects.
+
+Common mistake note:
+A common mistake is either not considering the symmetry when X, Y, Z, and W are treated as a single object or not accounting for the two possible positions of XYZW relative to the other objects.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+In a circular arrangement of 12 distinct objects, how many arrangements are possible if six specific objects (X, Y, Z, A, B, and C) must be adjacent but never next to each other?
+A) 40320
+B) 48384
+C) 56448
+D) 64512
+Correct Answer: B
+
+Solution:
+First, we treat X, Y, Z, A, B, and C as a single object (XYZABC) to find the number of arrangements for 11 objects in a circle, which is (11-1)! = 10! = 3628800. Now, let's consider the number of arrangements where XYZABC is together but not next to each other. We can fix XYZABC in a specific order and arrange the remaining 5 objects around them, giving us (5-1)! = 4! = 24 arrangements. However, since X, Y, Z, A, B, and C can be arranged among themselves in 6! ways, we must multiply this by 720: 24 	imes 720 = 17280. Subtracting these arrangements where XYZABC is together but not next to each other from the total arrangements gives us the number of arrangements where XYZABC is either together or next to each other: 3628800 - 17280 = 3611520. To account for the fact that we fixed the order of X, Y, Z, A, B, and C in our calculation, we divide by 720 to avoid overcounting: 3611520 / 720 = 4968 unique arrangements where XYZABC is either together or next to each other. Finally, multiply this by 2 to account for the two possible positions of XYZABC relative to the other objects (clockwise or counterclockwise): 4968 	imes 2 = 9936.
+
+Explanation:
+The correct arrangement count is obtained by first treating X, Y, Z, A, B, and C as a single object, then subtracting arrangements where they are together but not next to each other, dividing by 720 for symmetry, and multiplying by 2 to account for the two possible positions of XYZABC relative to the other objects.
+
+Common mistake note:
+A common mistake is either not considering the symmetry when X, Y, Z, A, B, and C are treated as a single object or not accounting for the two possible positions of XYZABC relative to the other objects.
+------------------------------------------------------------------------------

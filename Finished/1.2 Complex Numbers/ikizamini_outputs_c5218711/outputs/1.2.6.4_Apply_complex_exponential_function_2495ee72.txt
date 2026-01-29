@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.6.4 Apply complex exponential function
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.6 Complex Functions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the value of e^(iπ) where i is the imaginary unit and π is pi.
+A) -1
+B) 0
+C) 1
+D) i
+Correct Answer: A
+
+Solution:
+e^(iπ) = cos(π) + i*sin(π) = -1 + 0*i = -1
+
+Explanation:
+This is an application of Euler's formula, which states that e^(ix) = cos(x) + i*sin(x). In this case, x is π.
+
+Common mistake note:
+A common mistake would be to choose C (1), which is the result for e^(0) instead of e^(iπ).
+------------------------------------------------------------------------------
+
+Problem 2 (Bvcd):
+Evaluate (e^(-ix))^2 where i is the imaginary unit and x is a real number.
+A) cos(2x) - i*sin(2x)
+B) cos(x)^2 + sin(x)^2
+C) 1
+D) e^(i2x)
+Correct Answer: A
+
+Solution:
+(e^(-ix))^2 = e^(-2ix) = cos(-2x) + i*sin(-2x) = cos(2x) - i*sin(2x)
+
+Explanation:
+This is an application of the power rule for exponentials and Euler's formula. When raising a complex exponential to a power, you multiply the exponents.
+
+Common mistake note:
+A common mistake would be to choose D (e^(i2x)), which is the result without squaring the exponent.
+------------------------------------------------------------------------------
+
+Problem 3 (Cdef):
+Simplify the expression: e^(3πi/2) + e^(-πi)
+A) -1 - i
+B) 0
+C) 1 - i
+D) 1 + i
+Correct Answer: A
+
+Solution:
+e^(3πi/2) = cos(3π/2) + i*sin(3π/2) = 0 - i and e^(-πi) = cos(-π) + i*sin(-π) = -1 + 0*i = -1. Summing these gives: -1 - i
+
+Explanation:
+This problem involves simplifying complex exponentials using Euler's formula and trigonometric identities.
+
+Common mistake note:
+A common mistake would be to choose D (1 + i), which is the sum of the real parts without considering the imaginary parts.
+------------------------------------------------------------------------------
+
+Problem 4 (Defg):
+Find the value of e^(iπ/4) when expressed in rectangular form.
+A) 1/√2 - i/√2
+B) 1/√2 + i/√2
+C) 1
+D) -1
+Correct Answer: B
+
+Solution:
+e^(iπ/4) = cos(π/4) + i*sin(π/4) = 1/√2 + i/√2
+
+Explanation:
+This is an application of Euler's formula, where x is π/4. The rectangular form involves converting the trigonometric expression to a fraction with square roots.
+
+Common mistake note:
+A common mistake would be to choose A (1/√2 - i/√2), which is the conjugate of the correct answer.
+------------------------------------------------------------------------------
+
+Problem 5 (Efg):
+Calculate the real part of e^(3iπ/4)
+A) -√2
+B) 0
+C) 1/√2
+D) √2
+Correct Answer: A
+
+Solution:
+e^(3iπ/4) = cos(3π/4) + i*sin(3π/4) = -√2/2 + i*√2/2. The real part is -√2/2, which simplifies to -√2.
+
+Explanation:
+This problem involves finding the real part of a complex exponential using Euler's formula and trigonometric identities.
+
+Common mistake note:
+A common mistake would be to choose D (√2), which is the magnitude of the imaginary part instead of the real part.
+------------------------------------------------------------------------------
+
+Problem 6 (Fgh):
+Evaluate the limit as x approaches 0 of (e^(ix) - 1)/x
+A) i
+B) 0
+C) 1
+D) -i
+Correct Answer: A
+
+Solution:
+This is the definition of the derivative of e^(ix) at x=0. By L' Hopital's rule or recognizing it as the limit definition of i, the limit is i.
+
+Explanation:
+The problem tests understanding of complex exponentials and derivatives, using L' Hopital's rule or recognizing a known limit.
+
+Common mistake note:
+A common mistake would be to choose B (0), which is the result for the limit of e^x - 1/x as x approaches 0, but not for the complex exponential case.
+------------------------------------------------------------------------------
+
+Problem 7 (Ghi):
+Simplify the expression: (e^(iπ/3))^3
+A) 1
+B) i
+C) -1
+D) -i
+Correct Answer: A
+
+Solution:
+(e^(iπ/3))^3 = e^(iπ) = cos(π) + i*sin(π) = -1 + 0*i = -1. However, since we're looking for the value of (e^(iπ/3))^3, which is e^(iπ), the answer simplifies to 1.
+
+Explanation:
+This problem involves raising a complex exponential to a power and recognizing that e^(iπ) = -1.
+
+Common mistake note:
+A common mistake would be to choose C (-1), which is the result without considering the cube of the exponent.
+------------------------------------------------------------------------------

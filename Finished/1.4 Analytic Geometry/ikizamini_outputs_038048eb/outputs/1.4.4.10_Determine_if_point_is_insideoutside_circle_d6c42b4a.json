@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.4.10",
+  "objective_text": "Determine if point is inside/outside circle",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "1.4.4.10-1",
+      "stem": "Is the point (3, 4) inside, outside, or on the circle with center (0, 0) and radius 5?",
+      "choices": {
+        "A": "Inside",
+        "B": "Outside",
+        "C": "On the circle",
+        "D": "Cannot be determined"
+      },
+      "correct_choice": "C",
+      "solution": "(3, 4) is a distance of π√10 from the origin (0, 0), which is less than the radius of 5. Therefore, the point is on the circle.",
+      "explanation": "The distance between the center and the point can be calculated using the distance formula: sqrt((x2-x1)^2 + (y2-y1)^2).",
+      "common_mistake_notes": "A common mistake is to assume that because the coordinates of the point are less than the radius, the point must be inside the circle. This is not true; the point could also lie on the circle if its distance from the center equals the radius."
+    },
+    {
+      "id": "1.4.4.10-2",
+      "stem": "Is the point (-6, -8) inside, outside, or on the circle with center (2, 3) and radius 5?",
+      "choices": {
+        "A": "Inside",
+        "B": "Outside",
+        "C": "On the circle",
+        "D": "Cannot be determined"
+      },
+      "correct_choice": "B",
+      "solution": "(-6, -8) is a distance of 10 from the center (2, 3), which is greater than the radius of 5. Therefore, the point is outside the circle.",
+      "explanation": "The distance between the center and the point can be calculated using the distance formula: sqrt((x2-x1)^2 + (y2-y1)^2).",
+      "common_mistake_notes": "A common mistake is to subtract the radius from the distance, rather than comparing the distance directly to the radius. This method would lead to an incorrect conclusion about whether the point is inside or outside the circle."
+    },
+    {
+      "id": "1.4.4.10-3",
+      "stem": "Is the point (0, 7) inside, outside, or on the circle with center (-3, -4) and radius 9?",
+      "choices": {
+        "A": "Inside",
+        "B": "Outside",
+        "C": "On the circle",
+        "D": "Cannot be determined"
+      },
+      "correct_choice": "C",
+      "solution": "(0, 7) is a distance of 5√2 from the center (-3, -4), which is equal to the radius of 9. Therefore, the point is on the circle.",
+      "explanation": "The distance between the center and the point can be calculated using the distance formula: sqrt((x2-x1)^2 + (y2-y1)^2).",
+      "common_mistake_notes": "A common mistake is to compare the y-coordinates of the point and the center, assuming that if they are different, the point must not be on the circle. This is incorrect; only the distance matters."
+    },
+    {
+      "id": "1.4.4.10-4",
+      "stem": "Is the point (8, -1) inside, outside, or on the circle with center (4, 2) and radius 3?",
+      "choices": {
+        "A": "Inside",
+        "B": "Outside",
+        "C": "On the circle",
+        "D": "Cannot be determined"
+      },
+      "correct_choice": "A",
+      "solution": "(8, -1) is a distance of √65 from the center (4, 2), which is less than the radius of 3. Therefore, the point is inside the circle.",
+      "explanation": "The distance between the center and the point can be calculated using the distance formula: sqrt((x2-x1)^2 + (y2-y1)^2).",
+      "common_mistake_notes": "A common mistake is to compare the x-coordinates of the point and the center, thinking that if they are far apart, the point must be outside the circle. This is incorrect; only the distance matters."
+    },
+    {
+      "id": "1.4.4.10-5",
+      "stem": "Is the point (-4, -5) inside, outside, or on the circle with center (0, 0) and radius 7?",
+      "choices": {
+        "A": "Inside",
+        "B": "Outside",
+        "C": "On the circle",
+        "D": "Cannot be determined"
+      },
+      "correct_choice": "A",
+      "solution": "(4, 5) is a distance of √41 from the origin (0, 0), which is less than the radius of 7. Therefore, the point is inside the circle.",
+      "explanation": "The distance between the center and the point can be calculated using the distance formula: sqrt((x2-x1)^2 + (y2-y1)^2).",
+      "common_mistake_notes": "A common mistake is to compare the absolute values of the coordinates to the radius, rather than calculating the actual distance. This method would lead to an incorrect conclusion about whether the point is inside or outside the circle."
+    },
+    {
+      "id": "1.4.4.10-6",
+      "stem": "Is the point (12, 0) inside, outside, or on the circle with center (6, 3) and radius 5?",
+      "choices": {
+        "A": "Inside",
+        "B": "Outside",
+        "C": "On the circle",
+        "D": "Cannot be determined"
+      },
+      "correct_choice": "B",
+      "solution": "(12, 0) is a distance of 9 from the center (6, 3), which is greater than the radius of 5. Therefore, the point is outside the circle.",
+      "explanation": "The distance between the center and the point can be calculated using the distance formula: sqrt((x2-x1)^2 + (y2-y1)^2).",
+      "common_mistake_notes": "A common mistake is to assume that because the x-coordinate of the point is greater than the x-coordinate of the center, the point must be outside the circle. This is not true; only the distance matters."
+    },
+    {
+      "id": "1.4.4.10-7",
+      "stem": "Is the point (0, -12) inside, outside, or on the circle with center (-3, 4) and radius 8?",
+      "choices": {
+        "A": "Inside",
+        "B": "Outside",
+        "C": "On the circle",
+        "D": "Cannot be determined"
+      },
+      "correct_choice": "C",
+      "solution": "(0, -12) is a distance of √145 from the center (-3, 4), which is equal to the radius of 8. Therefore, the point is on the circle.",
+      "explanation": "The distance between the center and the point can be calculated using the distance formula: sqrt((x2-x1)^2 + (y2-y1)^2).",
+      "common_mistake_notes": "A common mistake is to compare the signs of the coordinates, thinking that if they are different, the point must not be on the circle. This is incorrect; only the distance matters."
+    }
+  ]
+}

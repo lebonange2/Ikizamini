@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.14.6",
+  "objective_text": "Apply consensus theorem",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "AssembleConsensusEasy1",
+      "stem": "Given the following truth table for a Boolean function f(a, b, c):",
+      "choices": {
+        "A": "[A] 01111110",
+        "B": "[B] 10111011",
+        "C": "[C] 11111111",
+        "D": "[D] 11011010"
+      },
+      "correct_choice": "C",
+      "solution": "The consensus theorem states that if a Boolean function is true for all input combinations except when all inputs are 1, then the function can be represented by the logical expression 'A AND B AND C'. In this truth table, f(a, b, c) is true in all cases except when a, b, and c are all 1. Therefore, the consensus theorem applies, and the simplified form of the function is ABC, which corresponds to choice C.",
+      "explanation": "The consensus theorem helps simplify a Boolean function by identifying patterns in its truth table. In this case, it indicates that the function is true when all input variables are true.",
+      "common_mistake_notes": "A common mistake would be to choose an answer that represents a different pattern in the truth table, such as one where f(a, b, c) is false for all inputs or has other specific patterns. The consensus theorem specifically applies to functions that are true for all combinations except when all inputs are 1."
+    },
+    {
+      "id": "AssembleConsensusEasy2",
+      "stem": "For the truth table of a Boolean function g( x, y, z):",
+      "choices": {
+        "A": "[A] 00011111",
+        "B": "[B] 11100000",
+        "C": "[C] 11111111",
+        "D": "[D] 11110000"
+      },
+      "correct_choice": "B",
+      "solution": "The consensus theorem does not apply to g(x, y, z), as it is false for all input combinations except when x, y, and z are all 0. The simplified form of this function would be 'NOT (X AND Y AND Z)', which corresponds to choice B.",
+      "explanation": "In this case, the consensus theorem does not apply because the function is false for all inputs except when all inputs are 0. Instead, we can represent the function as the negation of the situation where all inputs are true.",
+      "common_mistake_notes": "A common mistake would be to choose an answer that represents a pattern where g(x, y, z) is true for all or most input combinations, which does not match the given truth table. The consensus theorem only applies when the function is true for all but one specific combination."
+    },
+    {
+      "id": "AssembleConsensusMedium1",
+      "stem": "Simplify the Boolean function h(a, b, c):",
+      "choices": {
+        "A": "[A] (a' + b + c')(b' + c)(c' + a)",
+        "B": "[B] (a + b' + c')(b + c')(c + a')",
+        "C": "[C] (a + b + c')(b + c)(c + a)",
+        "D": "[D] (a + b' + c')(b + c)(c + a')"
+      },
+      "correct_choice": "B",
+      "solution": "The truth table for h(a, b, c) shows that it is true for all input combinations except when a, b, and c are all 1. Using the consensus theorem, we can represent this function as 'NOT (A AND B AND C)', which simplifies to choice B.",
+      "explanation": "The truth table indicates that the consensus theorem applies to h(a, b, c). By negating the condition where all inputs are true, we get the simplified form of the function.",
+      "common_mistake_notes": "A common mistake would be to choose an answer that represents a different pattern in the truth table or does not apply the consensus theorem correctly. For example, choosing A or C would result in a function that is either too simple or too complex for the given truth table."
+    },
+    {
+      "id": "AssembleConsensusMedium2",
+      "stem": "Simplify the Boolean function k(x, y, z):",
+      "choices": {
+        "A": "[A] (x' + y + z')(y' + z)(z' + x)",
+        "B": "[B] (x + y' + z')(y + z')(z + x')",
+        "C": "[C] (x + y + z')(y + z)(z + x)",
+        "D": "[D] (x + y' + z')(y + z)(z + x')"
+      },
+      "correct_choice": "A",
+      "solution": "The truth table for k(x, y, z) shows that it is true for all input combinations except when x, y, and z are all 0. Using De Morgan's laws and the consensus theorem, we can represent this function as 'X' OR 'Y' OR 'Z', which simplifies to choice A.",
+      "explanation": "The consensus theorem does not apply directly here, but by recognizing that the given truth table is the complement of a function where all inputs are true for all combinations, we can use De Morgan's laws to simplify it. The simplified form represents the disjunction (OR) of the negated input variables.",
+      "common_mistake_notes": "A common mistake would be to choose an answer that does not correctly apply De Morgan's laws or misinterpret the consensus theorem. For instance, choosing B or C would result in a function that is either too simple or too complex for the given truth table."
+    },
+    {
+      "id": "AssembleConsensusHard1",
+      "stem": "Simplify the Boolean function l(a, b, c, d):",
+      "choices": {
+        "A": "[A] (a' + b + c + d')(b' + c + d)(c' + a + d')(d' + a + b)",
+        "B": "[B] (a + b' + c + d')(b + c' + d)(c + a' + d')(d + a + b')",
+        "C": "[C] (a + b + c + d')(b + c + d)(c + a + d')(d + a + b)",
+        "D": "[D] (a + b' + c + d')(b + c' + d)(c + a' + d')(d + a + b')"
+      },
+      "correct_choice": "B",
+      "solution": "The truth table for l(a, b, c, d) shows that it is true for all input combinations except when a, b, c, and d are 1. Using the consensus theorem, we can represent this function as 'NOT (A AND B AND C AND D)', which simplifies to choice B.",
+      "explanation": "The consensus theorem applies here because the function is true for all but one specific combination where all inputs are 1. By negating that condition, we get the simplified form of the function.",
+      "common_mistake_notes": "A common mistake would be to choose an answer that represents a different pattern in the truth table or does not apply the consensus theorem correctly. For example, choosing A or C would result in a function that is either too simple or too complex for the given truth table."
+    },
+    {
+      "id": "AssembleConsensusHard2",
+      "stem": "Simplify the Boolean function m(x, y, z, w):",
+      "choices": {
+        "A": "[A] (x' + y + z + w')(y' + z + w)(z' + x + w')(w' + x + y)",
+        "B": "[B] (x + y' + z + w')(y + z' + w)(z + x' + w')(w  + x + y')",
+        "C": "[C] (x + y + z + w')(y + z + w)(z + x + w')(w  + x + y)",
+        "D": "[D] (x + y' + z + w')(y + z' + w)(z + x' + w')(w  + x + y')"
+      },
+      "correct_choice": "A",
+      "solution": "The truth table for m(x, y, z, w) shows that it is true for all input combinations except when x, y, z, and w are 0. Using De Morgan's laws and the consensus theorem, we can represent this function as 'X' OR 'Y' OR 'Z' OR 'W', which simplifies to choice A.",
+      "explanation": "The consensus theorem does not apply directly here, but by recognizing that the given truth table is the complement of a function where all inputs are true for all combinations, we can use De Morgan's laws to simplify it. The simplified form represents the disjunction (OR) of the negated input variables.",
+      "common_mistake_notes": "A common mistake would be to choose an answer that does not correctly apply De Morgan's laws or misinterpret the consensus theorem. For instance, choosing B or C would result in a function that is either too simple or too complex for the given truth table."
+    },
+    {
+      "id": "AssembleConsensusHard3",
+      "stem": "Simplify the Boolean function n(a, b, c, d, e):",
+      "choices": {
+        "A": "[A] (a' + b + c + d + e')(b' + c + d + e)(c' + a + d + e')(d' + a + b  + e')(e' + a + b + c)",
+        "B": "[B] (a + b' + c + d + e')(b + c' + d + e)(c + a' + d + e')(d + a + b' + e')(e + a + b + c')",
+        "C": "[C] (a + b + c + d + e')(b + c + d + e)(c + a + d + e')(d + a + b  + e')(e + a + b + c)",
+        "D": "[D] (a + b' + c + d + e')(b + c' + d + e)(c + a' + d + e')(d + a + b' + e')(e + a + b + c')"
+      },
+      "correct_choice": "B",
+      "solution": "The truth table for n(a, b, c, d, e) shows that it is true for all input combinations except when a, b, c, d, and e are 1. Using the consensus theorem, we can represent this function as 'NOT (A AND B AND C AND D AND E)', which simplifies to choice B.",
+      "explanation": "The consensus theorem applies here because the function is true for all but one specific combination where all inputs are 1. By negating that condition, we get the simplified form of the function.",
+      "common_mistake_notes": "A common mistake would be to choose an answer that represents a different pattern in the truth table or does not apply the consensus theorem correctly. For example, choosing A or C would result in a function that is either too simple or too complex for the given truth table."
+    }
+  ]
+}

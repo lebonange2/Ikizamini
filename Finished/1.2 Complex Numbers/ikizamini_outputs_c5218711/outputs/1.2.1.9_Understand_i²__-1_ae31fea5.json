@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.1.9",
+  "objective_text": "Understand i² = -1",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the value of i²?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "i"
+      },
+      "correct_choice": "C",
+      "solution": "The square of the imaginary unit i is -1. Thus, i² = -1.",
+      "explanation": "This question tests understanding of a basic property of complex numbers.",
+      "common_mistake_notes": "A common mistake would be to select '0' or '1', which are incorrect because they do not satisfy the fundamental property of i."
+    },
+    {
+      "id": ":2",
+      "stem": "If z = 3 + 4i, what is the value of z²?",
+      "choices": {
+        "A": "9 - 16",
+        "B": "7 + 24i",
+        "C": "-7 + 24i",
+        "D": "-5 - 24i"
+      },
+      "correct_choice": "D",
+      "solution": "z² = (3 + 4i)(3 + 4i) = 9 + 12i + 12i + 16i² = 9 + 24i - 16 = -7 - 24i.",
+      "explanation": "This question tests the application of i² = -1 in a complex number multiplication problem.",
+      "common_mistake_notes": "A common mistake would be to forget to apply i² = -1, leading to an incorrect result."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the square root of -9?",
+      "choices": {
+        "A": "3",
+        "B": "-3",
+        "C": "3i",
+        "D": "-3i"
+      },
+      "correct_choice": "C",
+      "solution": "The square root of -9 can be written as √(-1 * 9) = √(-1) * √(9) = i * 3 = 3i.",
+      "explanation": "This question tests understanding of taking the square root of a negative number using imaginary numbers.",
+      "common_mistake_notes": "A common mistake would be to select '-3', which is the square root of 9 but not -9. Another mistake could be forgetting to include i."
+    },
+    {
+      "id": ":4",
+      "stem": "If w = 2i, what is the value of w³?",
+      "choices": {
+        "A": "-8",
+        "B": "8",
+        "C": "6i",
+        "D": "-6i"
+      },
+      "correct_choice": "A",
+      "solution": "w³ = (2i)(2i)(2i) = 4i²(2i) = -4 * 2i = -8.",
+      "explanation": "This question tests understanding of multiplying complex numbers and applying i² = -1.",
+      "common_mistake_notes": "A common mistake would be to forget to apply i² = -1, leading to an incorrect result."
+    },
+    {
+      "id": ":5",
+      "stem": "Simplify the expression (2i)(-3i):",
+      "choices": {
+        "A": "-6",
+        "B": "6",
+        "C": "6i",
+        "D": "-6i"
+      },
+      "correct_choice": "A",
+      "solution": "(2i)(-3i) = -6i² = -6(-1) = 6.",
+      "explanation": "This question tests the ability to multiply complex numbers and apply i² = -1.",
+      "common_mistake_notes": "A common mistake would be to forget to apply i² = -1, leading to an incorrect result."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the value of (2 + 3i)(2 - 3i)?",
+      "choices": {
+        "A": "13",
+        "B": "-13",
+        "C": "1",
+        "D": "-1"
+      },
+      "correct_choice": "A",
+      "solution": "(2 + 3i)(2 - 3i) = 4 - 6i + 6i - 9i² = 4 + 9(-1) = 13.",
+      "explanation": "This question tests understanding of the difference of squares formula and applying i² = -1.",
+      "common_mistake_notes": "A common mistake would be to forget to apply i² = -1 or to misapply the difference of squares formula."
+    },
+    {
+      "id": ":7",
+      "stem": "If x = 5i, what is the value of x²?",
+      "choices": {
+        "A": "-25",
+        "B": "25",
+        "C": "10i",
+        "D": "-10i"
+      },
+      "correct_choice": "A",
+      "solution": "x² = (5i)(5i) = 25i² = 25(-1) = -25.",
+      "explanation": "This question tests the ability to square a complex number and apply i² = -1.",
+      "common_mistake_notes": "A common mistake would be to forget to apply i² = -1, leading to an incorrect result."
+    }
+  ]
+}

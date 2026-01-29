@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.1.2 Evaluate limits at infinity
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.1 Limits and Continuity
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (InfinityQuestion1):
+What is the limit as x approaches infinity of the function f(x) = 3x^2 + 5x - 7?
+A) -∞
+B) 0
+C) 5
+D) +∞
+Correct Answer: D
+
+Solution:
+As x approaches infinity, the term with the highest degree (3x^2) dominates the others. The limit is +∞.
+
+Explanation:
+The limit of a polynomial function as x approaches infinity is determined by the coefficient and exponent of the term with the highest degree. Since the highest degree term here is 3x^2 with a positive coefficient, the limit goes to +∞.
+
+Common mistake note:
+A common mistake would be to focus on the lower-degree terms (5x and -7) instead of the dominant term (3x^2). This would lead to incorrect conclusions about the limit.
+------------------------------------------------------------------------------
+
+Problem 2 (InfinityQuestion2):
+Evaluate the limit as x approaches infinity for the function g(x) = (4x + 1)/(2x - 3)
+A) -∞
+B) 0
+C) 1/2
+D) +∞
+Correct Answer: D
+
+Solution:
+The limit is +∞ because the degrees of both numerator and denominator are equal (1), but the coefficient of the numerator's term is greater.
+
+Explanation:
+When comparing the degree of the numerator and denominator, if they're equal, the limit will be determined by their leading coefficients. Here, the leading coefficient in the numerator (4) is greater than that in the denominator (2), so the limit goes to +∞.
+
+Common mistake note:
+A common mistake would be to cancel out x from both terms, thinking they have the same degree. However, this is not allowed when evaluating limits at infinity.
+------------------------------------------------------------------------------
+
+Problem 3 (InfinityQuestion3):
+Find the limit as x approaches infinity for h(x) = (2x^3 - 5x^2 + 7)/(3x^3 + 4)
+A) -∞
+B) 0
+C) 1/3
+D) +∞
+Correct Answer: D
+
+Solution:
+The limit is +∞ because the degree of the numerator (3) is equal to the degree of the denominator (3), but the coefficient of the numerator's term is greater.
+
+Explanation:
+When both the numerator and denominator have the same highest degree, the limit will be determined by their leading coefficients. In this case, the leading coefficient in the numerator (2) is greater than that in the denominator (3), so the limit goes to +∞.
+
+Common mistake note:
+A common mistake would be to cancel out x^3 terms without considering the coefficients. This is incorrect because it disregards the actual values of the leading terms.
+------------------------------------------------------------------------------
+
+Problem 4 (InfinityQuestion4):
+Evaluate the limit as x approaches negative infinity for the function j(x) = (x^2 + 5)/(x - 1)
+A) -∞
+B) 0
+C) 1
+D) +∞
+Correct Answer: A
+
+Solution:
+The limit is -∞ because the degree of the numerator (2) is greater than the degree of the denominator (1), and the coefficient of x in the numerator is negative.
+
+Explanation:
+When the degree of the numerator is greater than the degree of the denominator, the limit will be either +∞ or -∞ depending on the signs of the leading coefficients. Here, since the leading term in the numerator (x^2) has a positive coefficient and x is approaching negative infinity, the overall sign is negative, resulting in a limit of -∞.
+
+Common mistake note:
+A common mistake would be to focus only on the degree difference without considering the signs of the coefficients. This can lead to an incorrect conclusion about the direction of the limit.
+------------------------------------------------------------------------------
+
+Problem 5 (InfinityQuestion5):
+Find the limit as x approaches infinity for k(x) = (4x^2 - 3)/(7x^2 + 9)
+A) -∞
+B) 0
+C) 4/7
+D) +∞
+Correct Answer: C
+
+Solution:
+The limit is 4/7 because the degrees of both numerator and denominator are equal (2), and we can divide each term by x^2.
+
+Explanation:
+When both the numerator and denominator have the same highest degree, we can divide each term by the highest power of x to find the limit. Here, dividing by x^2 gives us 4/7 as the limit.
+
+Common mistake note:
+A common mistake would be to cancel out x^2 terms without considering the coefficients. This is incorrect because it disregards the actual values of the leading terms.
+------------------------------------------------------------------------------
+
+Problem 6 (InfinityQuestion6):
+Evaluate the limit as x approaches negative infinity for the function l(x) = (x^3 - 2)/(3x^3 + 1)
+A) -∞
+B) 0
+C) 1/3
+D) +∞
+Correct Answer: A
+
+Solution:
+The limit is -∞ because the degree of the numerator (3) is equal to the degree of the denominator (3), and the coefficient of x^3 in the numerator is negative.
+
+Explanation:
+When both the numerator and denominator have the same highest degree, the limit will be determined by their leading coefficients. In this case, since the leading term in the numerator (x^3) has a negative coefficient and x is approaching negative infinity, the overall sign is negative, resulting in a limit of -∞.
+
+Common mistake note:
+A common mistake would be to cancel out x^3 terms without considering the coefficients. This is incorrect because it disregards the actual values of the leading terms.
+------------------------------------------------------------------------------
+
+Problem 7 (InfinityQuestion7):
+Find the limit as x approaches infinity for m(x) = (x^4 - 2x^2 + 1)/(5x^4 + 3)
+A) -∞
+B) 0
+C) 1/5
+D) +∞
+Correct Answer: C
+
+Solution:
+The limit is 1/5 because the degrees of both numerator and denominator are equal (4), and we can divide each term by x^4.
+
+Explanation:
+When both the numerator and denominator have the same highest degree, we can divide each term by the highest power of x to find the limit. Here, dividing by x^4 gives us 1/5 as the limit.
+
+Common mistake note:
+A common mistake would be to cancel out x^4 terms without considering the coefficients. This is incorrect because it disregards the actual values of the leading terms.
+------------------------------------------------------------------------------

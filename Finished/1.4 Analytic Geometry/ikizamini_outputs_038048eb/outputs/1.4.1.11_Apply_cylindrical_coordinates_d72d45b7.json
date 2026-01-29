@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.1.11",
+  "objective_text": "Apply cylindrical coordinates",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Convert the point (2, π/3, 4) in Cartesian coordinates to cylindrical coordinates.",
+      "choices": {
+        "A": "(2\ncos(π/3), 2\ncos(π/3), 4)",
+        "B": "(2\ncos(π/3), 2\nsin(π/3), 4)",
+        "C": "(2, π/3, 4)",
+        "D": "(4\ncos(π/3), 4\ncos(π/3), 4)"
+      },
+      "correct_choice": "B",
+      "solution": "(r, θ, z) = (2\ncos(π/3), 2\nsin(π/3), 4)",
+      "explanation": "In cylindrical coordinates, a point is represented by (r, θ, z), where r is the distance from the origin to the point in the xy-plane, θ is the angle between the positive x-axis and the line segment connecting the origin to the point, and z is the height of the point above or below the xy-plane. The given point has x = 2\ncos(π/3), y = 2\nsin(π/3), and z = 4.",
+      "common_mistake_notes": "Common mistake is to mix up the trigonometric functions, using cos for both r and θ. Remember that r uses cosine while θ uses sine."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the cylindrical coordinates of a point with Cartesian coordinates (3\ncos(π/4), 3\ncos(π/4), 5).",
+      "choices": {
+        "A": "(3, π/2, 5)",
+        "B": "(3\ncos(π/4), π/4, 5)",
+        "C": "(3\ncos^2(π/4), π/4, 5)",
+        "D": "(3\ncos(π/4), π/8, 5)"
+      },
+      "correct_choice": "B",
+      "solution": "(r, θ, z) = (3\ncos(π/4), π/4, 5)",
+      "explanation": "Given the Cartesian coordinates x = 3\ncos(π/4) and y = 3\ncos(π/4), we can find r by taking the square root of x^2 + y^2. Since x = y, r = √(3\ncos(π/4))^2 = 3\ncos(π/4). The angle θ is given by π/4 because the point lies on the line where x = y. z remains unchanged at 5.",
+      "common_mistake_notes": "Common mistake is to assume that r is equal to 3, but since x and y are both cos(π/4), their sum under the square root gives r as 3\ncos(π/4)."
+    },
+    {
+      "id": ":3",
+      "stem": "Convert the cylindrical coordinates (5, π, 2) to Cartesian coordinates.",
+      "choices": {
+        "A": "(5, -5, 2)",
+        "B": "(5\ncos(π), 5\ncos(π), 2)",
+        "C": "(5\ncos(π), 5\ncos(π), -2)",
+        "D": "(0, -5, 2)"
+      },
+      "correct_choice": "D",
+      "solution": "(x, y, z) = (0, -5, 2)",
+      "explanation": "In cylindrical coordinates, x = r\ncos(θ), y = r\ncos(θ), and z remains the same. For the given point with θ = π, cos(π) is equal to -1. Therefore, x = 5\ncos(π) = 0 and y = 5\ncos(π) = -5.",
+      "common_mistake_notes": "Common mistake is to use sin instead of cos for x and y, but since θ is π, cos(π) is the correct trigonometric function to use."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the volume of a right circular cylinder with radius 2 and height 6 in cylindrical coordinates.",
+      "choices": {
+        "A": "24\ncos^2(θ)",
+        "B": "24\ncos(θ)",
+        "C": "24\ncos(2θ)",
+        "D": "24\ncos^2(θ)dzdrdθ"
+      },
+      "correct_choice": "D",
+      "solution": "V = πr^2dzdrdθ = 24\ncos^2(θ)dzdrdθ",
+      "explanation": "The volume of a right circular cylinder in cylindrical coordinates is given by V = πr^2dzdrdθ. Since the radius is constant at 2, we substitute r^2 with 4 and integrate over the appropriate ranges for z, r, and θ.",
+      "common_mistake_notes": "Common mistake is to forget the factor of π or to integrate only over one variable instead of all three (z, r, and θ). Remember that volume in cylindrical coordinates involves integrating over all three variables."
+    },
+    {
+      "id": ":5",
+      "stem": "Express the surface area of a right circular cylinder with radius 4 and height 8 as an integral in cylindrical coordinates.",
+      "choices": {
+        "A": "32\ncos(θ)dθ dz",
+        "B": "128\ncos^2(θ)dθ dz",
+        "C": "128\ncos(2θ)dθ dz",
+        "D": "128\ncos^2(θ)dzdrdθ"
+      },
+      "correct_choice": "B",
+      "solution": "A = 2πrh + 2πr^2 = 128\ncos^2(θ)dθ dz",
+      "explanation": "The surface area of a right circular cylinder in cylindrical coordinates is given by A = 2πrh + 2πr^2, where r is the radius and h is the height. Since the radius is constant at 4 and the height is 8, we substitute r with 4 and h with 8 and integrate over the appropriate ranges for z and θ.",
+      "common_mistake_notes": "Common mistake is to forget the factor of 2π or to integrate only over one variable instead of both (z and θ). Remember that surface area in cylindrical coordinates involves integrating over two variables."
+    },
+    {
+      "id": ":6",
+      "stem": "Evaluate the integral π ∫_0^1 ∫_0^√(1 - x^2) xy dz dr dx, which represents the volume of a solid in cylindrical coordinates.",
+      "choices": {
+        "A": "√3/8",
+        "B": "1/4",
+        "C": "1/2",
+        "D": "3/4"
+      },
+      "correct_choice": "A",
+      "solution": "π ∫_0^1 ∫_0^√(1 - x^2) xy dz dr dx = √3/8",
+      "explanation": "The integral represents the volume of a solid in cylindrical coordinates with r = √(1 - x^2). We can convert this to Cartesian coordinates by substituting x = r\ncos(θ) and y = r\ncos(θ), then integrating over the appropriate ranges for z, r, and θ. After simplifying, we get V = √3/8.",
+      "common_mistake_notes": "Common mistake is to integrate with respect to x and y directly without converting to cylindrical coordinates first. Remember that the integral is given in cylindrical coordinates, so it must be integrated accordingly."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the distance between the points (2, π/4, 1) and (3, π/6, 2) in cylindrical coordinates.",
+      "choices": {
+        "A": "√(5 + 2\ncos(π/12))",
+        "B": "√(5 - 2\ncos(π/12))",
+        "C": "√(5 + 2\ncos(π/6))",
+        "D": "√(5 - 2\ncos(π/6))"
+      },
+      "correct_choice": "A",
+      "solution": "d = √((r_2 - r_1)^2 + (z_2 - z_1)^2) = √(5 + 2\ncos(π/12))",
+      "explanation": "The distance between two points in cylindrical coordinates is given by d = √((r_2 - r_1)^2 + (z_2 - z_1)^2). For the given points, we have r_1 = 2, r_2 = 3, z_1 = 1, and z_2 = 2. Substituting these values gives d = √(5 + 2\ncos(π/12))",
+      "common_mistake_notes": "Common mistake is to use the distance formula in Cartesian coordinates without considering the change of variables. Remember that cylindrical coordinates have a different distance formula."
+    }
+  ]
+}

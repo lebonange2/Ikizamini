@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.15.11 Apply curvature and torsion
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.15 Advanced Analytic Geometry
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+A curve in 3D space is given by the vector function r(t) = <t^2, t^3, t^4>. Calculate the curvature at t=1.
+A) 5/6
+B) 6/5
+C) 7/8
+D) 8/7
+Correct Answer: B
+
+Solution:
+The formula for curvature is k(t) = ||r'(t) x r''(t)|| / ||r'(t)||^3. First, we find the derivatives: r'(t) = <2t, 3t^2, 4t^3>, r''(t) = <2, 6t, 12t^2>. At t=1, these become r'(1) = <2, 3, 4> and r''(1) = <2, 6, 12>. Now we calculate the cross product of r'(1) and r''(1): r'(1) x r''(1) = <-18, -8, 0>. Next, find the magnitudes: ||r'(1)|| ≈ 5.39, ||r'(1) x r''(1)|| ≈ 18. Now apply the curvature formula: k(1) = (18) / (5.39)^3 ≈ 6/5.
+
+Explanation:
+Curvature is a measure of how sharply a curve bends at a given point. The cross product and magnitudes are used to compute it accurately.
+
+Common mistake note:
+A common mistake would be to forget to normalize the cross product when calculating the curvature.
+------------------------------------------------------------------------------
+
+Problem 2 (Bndf):
+Find the torsion of the space curve r(t) = <t, t^2, t^3> at t=0.
+A) 1/6
+B) 0
+C) 1/3
+D) 1
+Correct Answer: B
+
+Solution:
+The formula for torsion is τ(t) = (r'(t) x r''(t)) • r'''(t) / ||r'(t) x r''(t)||^2. First, we find the derivatives: r'(t) = <1, 2t, 3t^2>, r''(t) = <0, 2, 6t>, r'''(t) = <0, 0, 6>. At t=0, these become r'(0) = <1, 0, 0>, r''(0) = <0, 2, 0>, and r'''(0) = <0, 0, 6>. Now we calculate the cross product of r'(0) and r''(0): r'(0) x r''(0) = <-2, 0, 0>. The dot product with r'''(0) is <-2, 0, 0> • <0, 0, 6> = 0. Since the cross product is zero at t=0, the torsion is also zero.
+
+Explanation:
+Torsion measures how much a curve twists around its tangent line. At t=0, the curve does not twist since it's along the x-axis, hence the torsion is zero.
+
+Common mistake note:
+A common mistake would be to forget that the cross product of r'(0) and r''(0) is zero, leading to an incorrect conclusion about the torsion.
+------------------------------------------------------------------------------
+
+Problem 3 (Cghj):
+Given a curve r(t) = <cos(t), sin(t), t>, calculate the curvature at t=π/2.
+A) 1
+B) sqrt(2)
+C) sqrt(3)
+D) 2
+Correct Answer: A
+
+Solution:
+The formula for curvature is k(t) = ||r'(t) x r''(t)|| / ||r'(t)||^3. First, we find the derivatives: r'(t) = <-sin(t), cos(t), 1>, r''(t) = <-cos(t), -sin(t), 0>. At t=π/2, these become r'(π/2) = <0, 1, 1> and r''(π/2) = <-1, 0, 0>. Now we calculate the cross product of r'(π/2) and r''(π/2): r'(π/2) x r''(π/2) = <0, 0, 1>. Next, find the magnitudes: ||r'(π/2)|| = sqrt(2), ||r'(π/2) x r''(π/2)|| = 1. Now apply the curvature formula: k(π/2) = 1 / (sqrt(2))^3 = 1.
+
+Explanation:
+Curvature measures how sharply a curve bends at a given point. The cross product and magnitudes are used to compute it accurately.
+
+Common mistake note:
+A common mistake would be to forget the square root when calculating the magnitude of r'(π/2).
+------------------------------------------------------------------------------
+
+Problem 4 (Eklm):
+Calculate the curvature of a circle with radius 3 at the point (3, 0).
+A) 1/3
+B) 3
+C) π
+D) 9
+Correct Answer: B
+
+Solution:
+The formula for curvature is k(t) = 1 / r, where r is the radius of the circle. Since we are given a circle with radius 3 at the point (3, 0), which is on the circumference, the curvature k is simply 1/3.
+
+Explanation:
+Curvature of a circle is inversely proportional to its radius. At any point on the circle, the curvature will be equal to 1 divided by the radius.
+
+Common mistake note:
+A common mistake would be to confuse the curvature with the radius itself or use an incorrect formula.
+------------------------------------------------------------------------------
+
+Problem 5 (Fpqr):
+Find the torsion of a straight line given by r(t) = <t, 2t, 3t>.
+A) 0
+B) 1/6
+C) 1/3
+D) 1
+Correct Answer: A
+
+Solution:
+The formula for torsion is τ(t) = (r'(t) x r''(t)) • r'''(t) / ||r'(t) x r''(t)||^2. For a straight line, all higher-order derivatives are zero after the first derivative. Thus, r'(t) = <1, 2, 3>, r''(t) = <0, 0, 0>, and r'''(t) = <0, 0, 0>. The cross product of r'(t) and r''(t) is zero, making the torsion τ(t) also zero.
+
+Explanation:
+Torsion measures how much a curve twists around its tangent line. A straight line does not twist at all, so its torsion is zero.
+
+Common mistake note:
+A common mistake would be to assume that a straight line has some non-zero torsion due to misunderstanding the concept.
+------------------------------------------------------------------------------
+
+Problem 6 (Gstu):
+Determine the curvature of the helix r(t) = <cos(t), sin(t), t> at t=π.
+A) 1
+B) sqrt(2)
+C) sqrt(3)
+D) 2
+Correct Answer: A
+
+Solution:
+The formula for curvature is k(t) = ||r'(t) x r''(t)|| / ||r'(t)||^3. First, we find the derivatives: r'(t) = <-sin(t), cos(t), 1>, r''(t) = <-cos(t), -sin(t), 0>. At t=π, these become r'(π) = <0, -1, 1> and r''(π) = <1, 0, 0>. Now we calculate the cross product of r'(π) and r''(π): r'(π) x r''(π) = <-1, 0, 0>. Next, find the magnitudes: ||r'(π)|| = sqrt(2), ||r'(π) x r''(π)|| = 1. Now apply the curvature formula: k(π) = 1 / (sqrt(2))^3 = 1.
+
+Explanation:
+Curvature measures how sharply a curve bends at a given point. The cross product and magnitudes are used to compute it accurately.
+
+Common mistake note:
+A common mistake would be to forget the square root when calculating the magnitude of r'(π).
+------------------------------------------------------------------------------
+
+Problem 7 (Dhij):
+Find the torsion of the curve r(t) = <t^2, t^3, t^4> at t=1.
+A) 1/5
+B) 0
+C) 1/2
+D) 1
+Correct Answer: B
+
+Solution:
+The formula for torsion is τ(t) = (r'(t) x r''(t)) • r'''(t) / ||r'(t) x r''(t)||^2. First, we find the derivatives: r'(t) = <2t, 3t^2, 4t^3>, r''(t) = <2, 6t, 12t^2>, r'''(t) = <0, 6, 36t>. At t=1, these become r'(1) = <2, 3, 4>, r''(1) = <2, 6, 12>, and r'''(1) = <0, 0, 36>. Now we calculate the cross product of r'(1) and r''(1): r'(1) x r''(1) = <-18, -8, 0>. The dot product with r'''(1) is <-18, -8, 0> • <0, 0, 36>  = 0. Since the cross product is zero at t=1, the torsion is also zero.
+
+Explanation:
+Torsion measures how much a curve twists around its tangent line. At t=1, the curve does not twist since it's along the x-axis, hence the torsion is zero.
+
+Common mistake note:
+A common mistake would be to forget that the cross product of r'(1) and r''(1) is zero, leading to an incorrect conclusion about the torsion.
+------------------------------------------------------------------------------

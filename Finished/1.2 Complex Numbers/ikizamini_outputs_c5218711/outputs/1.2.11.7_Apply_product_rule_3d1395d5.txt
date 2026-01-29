@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.11.7 Apply product rule
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.11 Complex Differentiation
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Find the derivative of f(x) = x^2 * sin(x).
+A) 2x * cos(x)
+B) x^2 * cos(x) + 2x * sin(x)
+C) 2x * sin(x)
+D) x * cos(x)
+Correct Answer: B
+
+Solution:
+Using the product rule, we have f'(x) = u'v + uv', where u = x^2 and v = sin(x). The derivatives are u' = 2x and v' = cos(x). So, f'(x) = (2x)(sin(x)) + (x^2)(cos(x)).
+
+Explanation:
+The product rule combines the derivative of one function multiplied by the original second function and adds it to the derivative of the second function multiplied by the original first function.
+
+Common mistake note:
+A common mistake is to forget to multiply u' by v or v' by u, resulting in answer A (2x * cos(x)) or D (x * cos(x)).
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Find the derivative of g(t) = e^t * ln(t).
+A) e^t * (1/t) + ln(t)
+B) e^t * ln(t) + t * e^t / t
+C) e^t * ln(t) + e^t / t
+D) e^t
+Correct Answer: C
+
+Solution:
+Using the product rule, we have g'(t) = u'v + uv', where u = e^t and v = ln(t). The derivatives are u' = e^t and v' = 1/t. So, g'(t) = (e^t)(ln(t)) + (e^t)(1/t).
+
+Explanation:
+The product rule combines the derivative of one function multiplied by the original second function and adds it to the derivative of the second function multiplied by the original first function.
+
+Common mistake note:
+A common mistake is to forget to multiply u' by v or to incorrectly apply the chain rule, resulting in answer B (t * e^t / t).
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Find the derivative of h(z) = z^3 * cos(2z).
+A) 3z^2 * sin(2z)
+B) z^3 * (-sin(2z)) + 6z^2 * cos(2z)
+C) 3z^2 * cos(2z) - 2z * sin(z^3)
+D) z^2 * cos(2z)
+Correct Answer: B
+
+Solution:
+Using the product rule, we have h'(z) = u'v + uv', where u = z^3 and v = cos(2z). The derivatives are u' = 3z^2 and v' = -2sin(2z). So, h'(z) = (3z^2)(cos(2z)) + (z^3)(-2sin(2z)).
+
+Explanation:
+The product rule combines the derivative of one function multiplied by the original second function and adds it to the derivative of the second function multiplied by the original first function.
+
+Common mistake note:
+A common mistake is to mix up the derivatives or forget to multiply u' by v, resulting in answer A (3z^2 * sin(2z)) or C (3z^2 * cos(2z) - 2z * sin(z^3)).
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Find the derivative of p(x) = x * e^(2x).
+A) e^(2x) + 2x * e^(2x)
+B) e^(2x) + x * e^(2x)
+C) 2x * e^(2x)
+D) x * e^(2x)
+Correct Answer: A
+
+Solution:
+Using the product rule, we have p'(x) = u'v + uv', where u = x and v = e^(2x). The derivatives are u' = 1 and v' = 2e^(2x). So, p'(x) = (1)(e^(2x)) + (x)(2e^(2x)).
+
+Explanation:
+The product rule combines the derivative of one function multiplied by the original second function and adds it to the derivative of the second function multiplied by the original first function.
+
+Common mistake note:
+A common mistake is to forget to multiply v' by u or to incorrectly apply the chain rule, resulting in answer C (2x * e^(2x)).
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Find the derivative of q(w) = w^4 * sinh(w).
+A) 4w^3 * cosh(w)
+B) w^4 * cosh(w) + 4w^3 * sinh(w)
+C) 4w^3 * sinh(w) + w^4 * cosh(w)
+D) w^3 * cosh(w)
+Correct Answer: C
+
+Solution:
+Using the product rule, we have q'(w) = u'v + uv', where u = w^4 and v = sinh(w). The derivatives are u' = 4w^3 and v' = cosh(w). So, q'(w) = (4w^3)(sinh(w)) + (w^4)(cosh(w)).
+
+Explanation:
+The product rule combines the derivative of one function multiplied by the original second function and adds it to the derivative of the second function multiplied by the original first function.
+
+Common mistake note:
+A common mistake is to mix up the derivatives or forget to multiply u' by v, resulting in answer A (4w^3 * cosh(w)) or D (w^3 * cosh(w)).
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Find the derivative of r(y) = y^2 * sinh(3y).
+A) 2y * cosh(3y)
+B) y^2 * cosh(3y) + 6y * sinh(3y)
+C) 2y * sinh(3y) + 3y^2 * cosh(3y)
+D) y * cosh(3y)
+Correct Answer: C
+
+Solution:
+Using the product rule, we have r'(y) = u'v + uv', where u = y^2 and v = sinh(3y). The derivatives are u' = 2y and v' = 3cosh(3y). So, r'(y) = (2y)(sinh(3y)) + (y^2)(3cosh(3y)).
+
+Explanation:
+The product rule combines the derivative of one function multiplied by the original second function and adds it to the derivative of the second function multiplied by the original first function.
+
+Common mistake note:
+A common mistake is to mix up the derivatives or forget to multiply u' by v, resulting in answer A (2y * cosh(3y)) or D (y * cosh(3y)).
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Find the derivative of s(u) = u^5 * e^(u^2).
+A) 5u^4 * e^(u^2) + 2u * u^5 * e^(u^2)
+B) 5u^4 * e^(u^2) + u^5 * e^(u^2)
+C) u^5 * e^(u^2) + 2u * e^(u^2)
+D) u^4 * e^(u^2)
+Correct Answer: A
+
+Solution:
+Using the product rule, we have s'(u) = u'v + uv', where u = u^5 and v = e^(u^2). The derivatives are u' = 5u^4 and v' = 2ue^(u^2). So, s'(u) = (5u^4)(e^(u^2)) + (u^5)(2ue^(u^2)).
+
+Explanation:
+The product rule combines the derivative of one function multiplied by the original second function and adds it to the derivative of the second function multiplied by the original first function.
+
+Common mistake note:
+A common mistake is to forget to multiply v' by u or to incorrectly apply the chain rule, resulting in answer B (5u^4 * e^(u^2) + u^5 * e^(u^2)).
+------------------------------------------------------------------------------

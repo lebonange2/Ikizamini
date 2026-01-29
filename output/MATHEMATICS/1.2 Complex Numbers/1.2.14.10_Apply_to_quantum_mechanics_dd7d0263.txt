@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.14.10 Apply to quantum mechanics
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.14 Complex Analysis Applications
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One-dimensional particle in a box):
+A one-dimensional particle is trapped in an infinite potential well of width L. What is the energy of the first excited state?
+A) (h^2)/(8mL^2)
+B) (3h^2)/(8mL^2)
+C) (h^2)/(4mL^2)
+D) (5h^2)/(8mL^2)
+Correct Answer: B
+
+Solution:
+The energy levels for a particle in an infinite potential well are given by E_n = (n^2 * h^2) / (8 * m * L^2), where n is the quantum number and h is Planck's constant. For the first excited state, n = 2. Plugging this into the equation gives us E_1 = (4h^2)/(8mL^2) = (3h^2)/(8mL^2).
+
+Explanation:
+The energy of the ground state is zero, and each higher energy level is obtained by increasing n by 1. The first excited state has n = 2.
+
+Common mistake note:
+A common mistake is to choose the ground state energy (n=1), which is zero in an infinite potential well.
+------------------------------------------------------------------------------
+
+Problem 2 (Particle in a double-well):
+A particle of mass m is trapped in a one-dimensional double-well potential with minima at x = -L/2 and x = L/2. The barrier between the wells has height V_0. Which of the following is the approximate energy splitting between the first excited state and the ground state?
+A) h^2/(8mL^2)
+B) V_0
+C) (h^2)/(4mL^2)
+D) (V_0)^2/(h^2)
+Correct Answer: D
+
+Solution:
+The energy splitting between the states in a double-well potential can be approximated using perturbation theory when the barrier is high (V_0 >> h^2/(mL^2)). The first-order correction to the ground state energy is given by the matrix element of the perturbation (the potential difference) between the ground and first excited states. In this case, it's approximately V_0 times the integral of the wavefunction squared over the barrier region. Since the wavefunctions are symmetric and antisymmetric, their product is zero in the barrier region, leading to a small energy splitting proportional to (V_0)^2/(h^2).
+
+Explanation:
+The energy splitting is small compared to V_0 when the barrier is high.
+
+Common mistake note:
+A common mistake is to choose the ground state energy or the height of the barrier, which do not account for the small correction due to tunneling.
+------------------------------------------------------------------------------
+
+Problem 3 (Spin-1/2 particle):
+A spin-1/2 particle has two possible states: spin up (|+⟩) and spin down (|-⟩). What is the probability of measuring the spin along the z-axis as 'up' if the particle is in a superposition state |ψ⟩ = (1/sqrt(3))|+⟩ + (sqrt(2)/sqrt(3))|-⟩?
+A) 1/3
+B) 2/3
+C) 1/2
+D) 1
+Correct Answer: B
+
+Solution:
+The probability of measuring a spin-1/2 particle in the 'up' state along the z-axis is given by the square of the coefficient of |+⟩ in the superposition state. In this case, it's (1/sqrt(3))^2 = 1/3. The probability of measuring the 'down' state is (sqrt(2)/sqrt(3))^2 = 2/3.
+
+Explanation:
+The probabilities are calculated by squaring the coefficients of the basis states in the superposition.
+
+Common mistake note:
+A common mistake is to confuse the coefficients with the actual probabilities, without squaring them.
+------------------------------------------------------------------------------
+
+Problem 4 (Particle tunneling):
+A particle of mass m and energy E is incident on a rectangular potential barrier of height V_0 and width L. Which of the following conditions must be met for tunneling to occur?
+A) E > V_0
+B) E < V_0
+C) E = V_0
+D) No specific condition; tunneling always occurs
+Correct Answer: B
+
+Solution:
+Tunneling occurs when a particle with energy less than the barrier height (E < V_0) is able to penetrate the barrier due to wave-like properties. If E > V_0, the particle can simply pass over the barrier without tunneling.
+
+Explanation:
+Tunneling relies on quantum mechanics and is not possible classically when a particle's energy is insufficient to overcome a potential barrier.
+
+Common mistake note:
+A common mistake is to choose 'E > V_0', which describes classical behavior where the particle can pass over the barrier.
+------------------------------------------------------------------------------
+
+Problem 5 (Harmonic oscillator):
+The wavefunction of a quantum harmonic oscillator in its ground state is given by ψ(x) = (1/(sqrt(πα))) * e^(-x^2/2α^2), where α is related to the mass m and spring constant k. What is the probability density at x = 0?
+A) e^(-α^2)
+B) (1/(πα))
+C) (1/(sqrt(πα)))
+D) α
+Correct Answer: C
+
+Solution:
+The probability density at a specific point is given by the square of the wavefunction. At x = 0, ψ(x=0) = (1/(sqrt(πα))). Squaring this gives us the probability density: P(x=0) = (1/(πα)).
+
+Explanation:
+The probability density is a measure of the likelihood of finding the particle at a particular position.
+
+Common mistake note:
+A common mistake is to forget to square the wavefunction when calculating the probability density.
+------------------------------------------------------------------------------
+
+Problem 6 (Angular momentum quantization):
+An electron in an atom has an orbital angular momentum quantum number l = 2. How many possible values of the magnetic quantum number m_l can this electron have?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: C
+
+Solution:
+The magnetic quantum number m_ l takes on integer values from -l to +l, including zero. For l = 2, the possible values are m_ l = -2, -1, 0, 1, 2. There are thus 3 distinct values.
+
+Explanation:
+The magnetic quantum number determines the orientation of the electron's orbital angular momentum with respect to an external field.
+
+Common mistake note:
+A common mistake is to forget that m_ l can be positive, negative, or zero.
+------------------------------------------------------------------------------
+
+Problem 7 (Quantum superposition):
+Which of the following statements best describes quantum superposition?
+A) Particles always exist in a single definite state.
+B) Particles can be in multiple states simultaneously with definite probabilities.
+C) Particles randomly switch between different states without any underlying probability.
+D) Particles are influenced by future events in their wavefunction.
+Correct Answer: B
+
+Solution:
+Quantum superposition states that a particle can exist in multiple states simultaneously, represented as a linear combination of those states. Each state has an associated probability determined by the coefficients in the superposition.
+
+Explanation:
+Superposition is a fundamental concept in quantum mechanics and leads to phenomena like interference and entanglement.
+
+Common mistake note:
+A common mistake is to think that particles either always exist in one state or randomly switch between states, which ignores the probabilistic nature of quantum mechanics.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.1.1",
+  "objective_text": "Evaluate limits using direct substitution",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Infinite limit with direct substitution",
+      "stem": "Find the limit as x approaches 3 of the function f(x) = (x^2 - 9)/(x - 3).",
+      "choices": {
+        "A": "-6",
+        "B": "0",
+        "C": "∞",
+        "D": "Does not exist"
+      },
+      "correct_choice": "C",
+      "solution": "f(x) = (x+3)(x-3)/(x-3) = x+3. As x approaches 3, f(x) approaches 3+3 = 6. Since the limit becomes unbounded as x gets closer to 3, the limit is infinity.",
+      "explanation": "Direct substitution shows that the function simplifies to x+3, and since x approaches 3, the limit becomes unbounded.",
+      "common_mistake_notes": "A common mistake would be to cancel out (x-3) in the numerator and denominator, which is not allowed when x = 3."
+    },
+    {
+      "id": "Zero in the denominator",
+      "stem": "Evaluate the limit as x approaches 0 of the function g(x) = (2x^2 + x)/x.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "Does not exist"
+      },
+      "correct_choice": "D",
+      "solution": "The function simplifies to g(x) = 2x + 1. As x approaches 0, the limit becomes 2(0) + 1 = 1. However, since there is a hole at x=0 (due to division by zero), the limit does not exist.",
+      "explanation": "Direct substitution shows that the function simplifies to 2x+1, but there's a discontinuity at x=0 due to division by zero.",
+      "common_mistake_notes": "A common mistake would be to cancel out x in the numerator and denominator, which is only valid if x≠0. Since the limit involves x approaching 0, this method leads to an incorrect conclusion."
+    },
+    {
+      "id": "Polynomial with removable discontinuity",
+      "stem": "Find the limit as x approaches -2 of the function h(x) = (x^3 + 8)/(x+2).",
+      "choices": {
+        "A": "-16",
+        "B": "0",
+        "C": "4",
+        "D": "Does not exist"
+      },
+      "correct_choice": "A",
+      "solution": "The function can be factored as h(x) = (x+2)(x^2 - 2x + 4)/(x+2), which simplifies to x^2 - 2x + 4 when x≠-2. As x approaches -2, the limit becomes (-2)^2 - 2(-2) + 4 = 16.",
+      "explanation": "Direct substitution after factoring shows that there's a removable discontinuity at x=-2, and the limit is found by evaluating the simplified function at x=-2.",
+      "common_mistake_notes": "A common mistake would be to cancel out (x+2) in the numerator and denominator without considering the discontinuity at x=-2. This leads to an incorrect conclusion."
+    },
+    {
+      "id": "Quotient of linear functions",
+      "stem": "Evaluate the limit as x approaches 1 of the function j(x) = (3x - 2)/(5x - 4).",
+      "choices": {
+        "A": "0.6",
+        "B": "0.8",
+        "C": "1",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "The limit is found by direct substitution: j(1) = (3(1) - 2)/(5(1) - 4) = 1/1 = 1. However, the limit exists even though the function is undefined at x=1.",
+      "explanation": "Direct substitution shows that the limit is 1, and it's important to remember that limits can exist even when the function is undefined at a specific point.",
+      "common_mistake_notes": "A common mistake would be to think that because the function is undefined at x=1, the limit does not exist. This is incorrect; the limit can still be found by evaluating the function as x approaches 1."
+    },
+    {
+      "id": "Rational function with a hole",
+      "stem": "Find the limit as x approaches 2 of the function k(x) = (x^2 - 4)/(x - 2).",
+      "choices": {
+        "A": "0",
+        "B": "2",
+        "C": "4",
+        "D": "Does not exist"
+      },
+      "correct_choice": "C",
+      "solution": "The function can be factored as k(x) = (x-2)(x+2)/(x-2), which simplifies to x+2 when x≠2. As x approaches 2, the limit becomes 2+2 = 4.",
+      "explanation": "Direct substitution after factoring shows that there's a removable discontinuity at x=2, and the limit is found by evaluating the simplified function at x=2.",
+      "common_mistake_notes": "A common mistake would be to cancel out (x-2) in the numerator and denominator without considering the discontinuity at x=2. This leads to an incorrect conclusion."
+    },
+    {
+      "id": "Limit of a constant",
+      "stem": "Find the limit as x approaches 4 of the function l(x) = 7.",
+      "choices": {
+        "A": "0",
+        "B": "3",
+        "C": "7",
+        "D": "10"
+      },
+      "correct_choice": "C",
+      "solution": "The limit is found by direct substitution: l(4) = 7. Since the function is constant, its value does not change as x approaches any point.",
+      "explanation": "Direct substitution shows that the limit is equal to the constant value of the function, regardless of the input value.",
+      "common_mistake_notes": "A common mistake would be to think that the limit depends on the behavior of x as it approaches 4. However, since the function is a constant, its limit is simply the value of the function."
+    },
+    {
+      "id": "Limit of a trigonometric function",
+      "stem": "Find the limit as x approaches 0 of the function m(x) = sin(x)/x.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "π/2",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "The limit is found using L'Hopital's rule or by recognizing the limit as x approaches 0 of sin(x)/x is equal to the derivative of sine evaluated at 0, which is cos(0) = 1.",
+      "explanation": "Direct substitution does not work here because it leads to an indeterminate form (0/0). However, the limit can be found using other techniques like L'Hopital's rule or recognizing a known limit.",
+      "common_mistake_notes": "A common mistake would be to attempt direct substitution and conclude that the limit does not exist. This is incorrect; the limit exists and can be found using alternative methods."
+    }
+  ]
+}

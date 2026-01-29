@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.14.5",
+  "objective_text": "Simplify Boolean expressions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Simplify the expression: (A AND B) OR (NOT A)",
+      "choices": {
+        "A": "(B)",
+        "B": "(NOT B)",
+        "C": "(A OR B)",
+        "D": "(A AND NOT B)"
+      },
+      "correct_choice": "C",
+      "solution": "The expression simplifies as follows:\n(A AND B) OR (NOT A)\n=  (B AND A) OR (NOT A)   // Association law\n= B OR (A AND NOT A)   // Distribution law\n= B OR FALSE   // Identity law for 'AND'\n= B   // Absorption law",
+      "explanation": "The key steps in simplifying this expression are using the association and distribution laws to rearrange terms, followed by applying the identity and absorption laws for Boolean algebra.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the distributive law, resulting in (B OR NOT A) instead of (B AND A). This fails because it neglects that 'AND' has higher precedence than 'OR'."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Simplify the expression: (X OR Y) AND (NOT X)",
+      "choices": {
+        "A": "(Y)",
+        "B": "(NOT Y)",
+        "C": "(X OR NOT Y)",
+        "D": "(X AND NOT Y)"
+      },
+      "correct_choice": "A",
+      "solution": "The expression simplifies as follows:\n(X OR Y) AND (NOT X)\n=  (Y OR X) AND (NOT X)   // Association law\n= Y AND (X AND NOT X)   // Distribution law\n= Y AND FALSE   // Identity law for 'AND'\n= Y   // Absorption law",
+      "explanation": "The simplification process involves using the association and distribution laws, followed by applying the identity and absorption laws. The key is understanding that 'OR' does not change when its operands are swapped due to commutativity.",
+      "common_mistake_notes": "A common mistake would be to mistakenly simplify (X AND NOT X) as X instead of FALSE. This error occurs because it overlooks the fact that 'AND' with opposite terms results in FALSE."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Simplify the expression: ((NOT P) OR Q) AND (P OR R)",
+      "choices": {
+        "A": "(Q AND R)",
+        "B": "(NOT Q AND NOT R)",
+        "C": "(Q OR R)",
+        "D": "(NOT Q OR NOT R)"
+      },
+      "correct_choice": "C",
+      "solution": "The expression simplifies as follows:\n((NOT P) OR Q) AND (P OR R)\n=  ((NOT P) AND (P OR R)) OR (Q AND (P OR R))   // Distributive law\n=  ((NOT P) AND TRUE) OR (Q AND (P OR R))   // Identity law for 'OR'\n=  (NOT P) OR (Q AND (P OR R))\nThis expression cannot be simplified further without additional information about the values of P and R.",
+      "explanation": "In this case, we applied the distributive law but couldn't simplify it further due to the presence of two different variables (P and R) without specific truth values. The key here is understanding that 'OR' with a true term does not change the outcome.",
+      "common_mistake_notes": "A common mistake would be to assume that (NOT P) AND TRUE simplifies to P, which is incorrect. This confusion arises from not recognizing that 'AND' with a true term preserves the other operand."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Simplify the expression: ((P AND Q) OR NOT Q) AND NOT P",
+      "choices": {
+        "A": "(NOT P)",
+        "B": "(P AND NOT Q)",
+        "C": "(NOT P AND Q)",
+        "D": "(P OR NOT Q)"
+      },
+      "correct_choice": "A",
+      "solution": "The expression simplifies as follows:\n((P AND Q) OR NOT Q) AND NOT P\n=  ((Q AND P) OR (NOT Q)) AND NOT P   // Association law\n=  (Q OR (NOT Q)) AND (P AND NOT P)   // Distribution law\n= TRUE AND FALSE   // Identity and complement laws for 'AND'\n= FALSE   // Absorption law",
+      "explanation": "We used the association and distribution laws, followed by applying the identity, complement, and absorption laws. The key step is understanding that 'OR' with opposite terms results in TRUE and 'AND' with opposite terms results in FALSE.",
+      "common_mistake_notes": "A common mistake would be to simplify (Q OR NOT Q) as Q without considering that it's a tautology (always true). This error occurs due to overlooking the fact that 'OR' connects two different possibilities."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Simplify the expression: ((NOT X AND Y) OR (X AND NOT Y)) AND Z",
+      "choices": {
+        "A": "(Z)",
+        "B": "(NOT Z)",
+        "C": "(X OR Y)",
+        "D": "(X AND Y)"
+      },
+      "correct_choice": "A",
+      "solution": "The expression simplifies as follows:\n((NOT X AND Y) OR (X AND NOT Y)) AND Z\n=  ((Y AND NOT X) OR (X AND NOT Y)) AND Z   // Commutative law for 'AND'\n=  (Z AND (Y AND NOT X) OR (X AND NOT Y))   // Distribution law\n=  (Z AND (NOT(X AND Y)))   // De Morgan's law",
+      "explanation": "We applied the commutative law for 'AND', distribution law, and De Morgan's law. However, we couldn't simplify it further due to the presence of two different variables (X and Y) without specific truth values.",
+      "common_mistake_notes": "A common mistake would be to assume that (NOT X AND NOT Y) simplifies to (X OR Y), which is incorrect. This confusion arises from not recognizing that De Morgan's law reverses both the operands and the operator."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Simplify the expression: ((A OR B) AND NOT A) OR NOT B",
+      "choices": {
+        "A": "(NOT B)",
+        "B": "(B)",
+        "C": "(A OR NOT B)",
+        "D": "(A AND NOT B)"
+      },
+      "correct_choice": "A",
+      "solution": "The expression simplifies as follows:\n((A OR B) AND NOT A) OR NOT B\n=  ((NOT A OR B) AND NOT A) OR NOT B   // De Morgan's law\n=  (B AND NOT A) OR NOT B   // Association law\n=  (FALSE OR NOT B)   // Identity law for 'AND'\n= NOT B   // Absorption law",
+      "explanation": "We applied De Morgan's law, association law, and then used identity and absorption laws. The key step is understanding that 'AND' with a false term results in FALSE.",
+      "common_mistake_notes": "A common mistake would be to simplify (B AND NOT A) as B without considering the effect of 'AND' with a false term. This error occurs due to overlooking the fact that 'AND' with a false term always produces a false result."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Simplify the expression: ((NOT P OR Q) AND NOT Q) OR (P AND R)",
+      "choices": {
+        "A": "(P AND R)",
+        "B": "(NOT P AND NOT Q)",
+        "C": "(P OR R)",
+        "D": "(NOT P OR NOT Q)"
+      },
+      "correct_choice": "C",
+      "solution": "The expression simplifies as follows:\n((NOT P OR Q) AND NOT Q) OR (P AND R)\n=  ((Q OR NOT P) AND NOT Q) OR (P AND R)   // De Morgan's law\n=  (FALSE OR (NOT P AND NOT Q)) OR (P AND R)   // Identity law for 'AND'\n=  (NOT P AND NOT Q) OR (P AND R)",
+      "explanation": "We applied De Morgan's law, followed by identity law for 'AND'. However, we couldn't simplify it further due to the presence of two different variables (P and R) without specific truth values.",
+      "common_mistake_notes": "A common mistake would be to assume that (NOT P OR Q) simplifies to P AND Q without considering De Morgan's law. This error occurs from not recognizing that De Morgan's law reverses both the operands and the operator."
+    }
+  ]
+}

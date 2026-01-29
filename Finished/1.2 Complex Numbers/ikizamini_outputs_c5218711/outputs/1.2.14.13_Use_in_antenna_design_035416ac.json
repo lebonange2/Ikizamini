@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.14.13",
+  "objective_text": "Use in antenna design",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd1e8f90",
+      "stem": "What is the primary function of an antenna in a communication system?",
+      "choices": {
+        "A": "To receive audio signals",
+        "B": "To convert electrical energy into radio waves",
+        "C": "To amplify signal strength",
+        "D": "To store data for transmission"
+      },
+      "correct_choice": "B",
+      "solution": "The primary function of an antenna is to convert electrical energy into radio waves, allowing the communication system to transmit and receive signals. Choice A refers to a receiver's function, choice C is related to amplifiers, and choice D is not the role of an antenna.",
+      "explanation": "Antennas are essential components in wireless communication systems as they facilitate the transmission and reception of electromagnetic waves.",
+      "common_mistake_notes": "Choosing A or C might happen when混淆 the roles of different components in a communication system."
+    },
+    {
+      "id": "Asd1e8f91",
+      "stem": "Which type of antenna is commonly used for long-range radio transmission?",
+      "choices": {
+        "A": "Dipole antenna",
+        "B": "Loop antenna",
+        "C": "Yagi- Uda antenna",
+        "D": "Helical antenna"
+      },
+      "correct_choice": "C",
+      "solution": "A Yagi- Uda antenna is designed specifically for long-range radio transmission due to its high gain and directionality. Dipole antennas are basic but not as directional, loop antennas are used for receiving specific frequencies, and helical antennas are more suitable for satellite communication.",
+      "explanation": "Yagi- Uda antennas, also known as Yagi antennas, are popular in television and radio broadcast applications because of their ability to focus energy in a particular direction.",
+      "common_mistake_notes": "Choosing A might happen when混淆 the performance of dipole and Yagi- Uda antennas."
+    },
+    {
+      "id": "Asd1e8f92",
+      "stem": "In an antenna, what role does the feedline play?",
+      "choices": {
+        "A": "Converts radio waves into electrical energy",
+        "B": "Connects the antenna to the transmitter or receiver",
+        "C": "Increases the frequency of the transmitted signal",
+        "D": "Stabilizes the voltage in the antenna"
+      },
+      "correct_choice": "B",
+      "solution": "The feedline connects the antenna to the transmitter or receiver, allowing the transmission and reception of signals. Choice A refers to a tuner's function, choice C is not related to feedlines, and choice D is not directly associated with feedlines.",
+      "explanation": "Feedlines are essential in antenna systems as they facilitate the transfer of electrical energy between the antenna and the transmitter or receiver.",
+      "common_mistake_notes": "Choosing A might happen when混淆 the roles of a tuner and a feedline."
+    },
+    {
+      "id": "Asd1e8f93",
+      "stem": "Which material is commonly used in the construction of antennas due to its electrical conductivity?",
+      "choices": {
+        "A": "Wood",
+        "B": "Plastic",
+        "C": "Copper",
+        "D": "Glass"
+      },
+      "correct_choice": "C",
+      "solution": "Copper is a common material for antenna construction because of its high electrical conductivity, which allows efficient transmission and reception of signals. Wood, plastic, and glass are insulators and not suitable.",
+      "explanation": "The choice of materials in antenna design plays a crucial role in determining the performance of the antenna.",
+      "common_mistake_notes": "Choosing A or B might occur when混淆 insulating and conducting materials."
+    },
+    {
+      "id": "Asd1e8f94",
+      "stem": "What is the relationship between an antenna's frequency and its length?",
+      "choices": {
+        "A": "Frequency is directly proportional to length",
+        "B": "Frequency is inversely proportional to length",
+        "C": "Frequency is independent of length",
+        "D": "Frequency is equal to length in meters"
+      },
+      "correct_choice": "B",
+      "solution": "The relationship between an antenna's frequency and its length is inverse; as the frequency increases, the optimal length for efficient operation decreases. This is based on the resonance principle.",
+      "explanation": "Antenna design often involves finding the right length to achieve resonance at a specific frequency.",
+      "common_mistake_notes": "Choosing A might happen when混淆 direct and inverse relationships."
+    },
+    {
+      "id": "Asd1e8f95",
+      "stem": "In an antenna, what determines the directionality or 'beamwidth'?",
+      "choices": {
+        "A": "Frequency of the signal",
+        "B": "Material used in construction",
+        "C": "Shape and size of the antenna elements",
+        "D": "Distance between the transmitter and receiver"
+      },
+      "correct_choice": "C",
+      "solution": "The shape and size of the antenna elements determine its directionality or beamwidth. Different designs, such as dipole, Yagi- Uda, or parabolic antennas, have different beamwidths based on their structure.",
+      "explanation": "Directional antennas are designed to focus energy in a specific direction, which is influenced by their physical design.",
+      "common_mistake_notes": "Choosing A might happen when混淆 the role of frequency and beamwidth."
+    },
+    {
+      "id": "Asd1e8f96",
+      "stem": "What type of antenna would you use for a mobile device like a smartphone?",
+      "choices": {
+        "A": "Parabolic antenna",
+        "B": "Log- periodic antenna",
+        "C": "Omni-directional antenna",
+        "D": "Helical antenna"
+      },
+      "correct_choice": "C",
+      "solution": "An omni-directional antenna is suitable for a mobile device like a smartphone because it transmits and receives signals in all directions, providing coverage without the need to align with a specific direction. Other choices are more specialized.",
+      "explanation": "Omni-directional antennas are commonly used in portable devices where ease of use and broad coverage are important.",
+      "common_mistake_notes": "Choosing A or B might occur when selecting antennas designed for more specialized applications."
+    }
+  ]
+}

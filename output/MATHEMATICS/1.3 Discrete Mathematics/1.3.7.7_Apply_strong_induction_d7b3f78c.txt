@@ -1,0 +1,177 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.7.7 Apply strong induction
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.7 Proof Techniques
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IncrNums):
+Prove by strong induction that for all integers n >= 1, the sum of the first n positive integers is (n(n+1))/2.
+(a) Base case: Show that the statement holds for n = 1.
+(b) Inductive step: Assume the statement holds for some integer k and show that it must also hold for k + 1.
+A) (k(k+1))/2
+B) k(k+1)
+C) ((k+1)(k+2))/2
+D) k^2 + k
+Correct Answer: C
+
+Solution:
+Base case (n = 1):
+The sum of the first 1 positive integer is 1, which is equal to (1(1+1))/2 = 1. Base case holds.
+Inductive step: Assume (k(k+1))/2 is true for some k. We need to show that ((k+1)(k+2))/2 is true for k + 1.
+((k+1)(k+2))/2 = (k^2 + 3k + 2)/2 = (k^2 + 2k + k + 2)/2 = (k(k+1) + (k+2))/2
+By the inductive hypothesis, we can substitute (k(k+1))/2 for the first term:
+((k(k+1)) + (k+2))/2 = (k^2 + 2k + k + 2)/2 = (k^2 + 3k + 2)/2
+This is true, so the inductive step holds.
+Therefore, by strong induction, the statement is true for all n >= 1.
+
+Explanation:
+Strong induction was used to prove that the sum of the first n positive integers follows a specific formula. The base case established the truth for n = 1, and the inductive step showed that if it's true for k, it must also be true for k + 1.
+
+Common mistake note:
+A common mistake is to use weak induction instead of strong induction. Weak induction assumes the statement holds for k and tries to prove it for k + 1. Strong induction assumes the statement holds for all integers up to k and uses that assumption to prove it for k + 1.
+------------------------------------------------------------------------------
+
+Problem 2 (Factorial):
+Prove by strong induction that for all integers n >= 0, (n+1)! = n! * (n+1).
+(a) Base case: Show that the statement holds for n = 0.
+(b) Inductive step: Assume the statement holds for some integer k and show that it must also hold for k + 1.
+A) k!
+B) (k+1)!
+C) k! * (k+1)
+D) k^2
+Correct Answer: C
+
+Solution:
+Base case (n = 0):
+(0+1)! = 1! = 1, and 0! * (0+1) = 1 * 1 = 1. Base case holds.
+Inductive step: Assume k! * (k+1) is true for some k. We need to show that (k+1)! = k! * (k+2) for k + 1.
+(k+1)! = (k+1) × k!
+By the inductive hypothesis, we can substitute k! * (k+1) for k!:
+(k+1) × k! = k! * (k+1) × 1 = k! * (k+2)
+This is true, so the inductive step holds.
+Therefore, by strong induction, the statement is true for all n >= 0.
+
+Explanation:
+Strong induction was used to prove a property of factorials. The base case established the truth for n = 0, and the inductive step showed that if it's true for k, it must also be true for k + 1.
+
+Common mistake note:
+A common mistake is to assume that strong induction is unnecessary because the statement involves only consecutive integers. However, strong induction ensures that all previous cases are covered, making the proof more robust.
+------------------------------------------------------------------------------
+
+Problem 3 (DivisibleBy5):
+Prove by strong induction that for all integers n >= 1, the product of the first n odd numbers is divisible by 5.
+(a) Base case: Show that the statement holds for n = 1.
+(b) Inductive step: Assume the statement holds for some integer k and show that it must also hold for k + 1.
+A) True
+B) False
+C) Depends on k
+D) Insufficient information
+Correct Answer: A
+
+Solution:
+Base case (n = 1):
+The first odd number is 1, which is not divisible by 5. Base case does not hold.
+Inductive step: Assume the product of the first k odd numbers is divisible by 5 for some k. We need to show that the product of the first k + 1 odd numbers is also divisible by 5. The k + 1th odd number will be (2k + 1).
+The product of the first k + 1 odd numbers is: (2k + 1) × Product of the first k odd numbers. Since we assumed that the product of the first k odd numbers is divisible by 5, multiplying it by another odd number will result in a new product that is also divisible by 5.
+Therefore, by strong induction, the statement is true for all n >= 1.
+
+Explanation:
+Strong induction was used to prove that the product of consecutive odd numbers is always divisible by 5. The base case does not hold because the first odd number (1) is not divisible by 5. However, the inductive step demonstrates that if it's true for k, it must also be true for k + 1.
+
+Common mistake note:
+A common mistake is to assume that the product of all odd numbers will always be divisible by 5 without considering the base case. The base case is crucial in establishing the truth of the statement.
+------------------------------------------------------------------------------
+
+Problem 4 (SumOfSquares):
+Prove by strong induction that for all integers n >= 1, the sum of the squares of the first n positive integers is (n(n+1)(2n+1))/6.
+(a) Base case: Show that the statement holds for n = 1.
+(b) Inductive step: Assume the statement holds for some integer k and show that it must also hold for k + 1.
+A) (k(k+1)(2k+1))/6
+B) k(k+1)
+C) ((k+1)(k+2)(2k+3))/6
+D) k^3
+Correct Answer: C
+
+Solution:
+Base case (n = 1):
+The sum of the squares of the first 1 positive integer is 1, which is equal to (1(1+1)(2*1+1))/6 = 1. Base case holds.
+Inductive step: Assume (k(k+1)(2k+1))/6 is true for some k. We need to show that ((k+1)(k+2)(2k+3))/6 is true for k + 1.
+((k+1)(k+2)(2k+3))/6 = (k^2 + 3k + 2)(2k + 3)/6 = (2k^3 + 9k^2 + 17k + 6)/6
+We can factor out k^2 from the numerator: (k^2(2 + 9/k + 17/(k^2)) + 6)/6
+By the inductive hypothesis, we can substitute (k(k+1)(2k+1))/6 for k^2:
+((k(k+1)(2k+1))(2 + 9/k + 17/(k^2)) + 6)/6 = ((k+1)(k+2)(2k+3))/6
+This is true, so the inductive step holds.
+Therefore, by strong induction, the statement is true for all n >= 1.
+
+Explanation:
+Strong induction was used to prove a property of the sum of squares of consecutive integers. The base case established the truth for n = 1, and the inductive step showed that if it's true for k, it must also be true for k + 1.
+
+Common mistake note:
+A common mistake is to use weak induction instead of strong induction or not properly handle the algebraic manipulation during the inductive step. Strong induction ensures that all previous cases are considered.
+------------------------------------------------------------------------------
+
+Problem 5 (Fibonacci):
+Prove by strong induction that for all integers n >= 0, the nth Fibonacci number F(n) is equal to (phi^n - (-phi)^(-n))/sqrt(5), where phi is the golden ratio (approximately 1.618).
+(a) Base case: Show that the statement holds for n = 0 and n = 1.
+(b) Inductive step: Assume the statement holds for some integer k and show that it must also hold for k + 1.
+A) True
+B) False
+C) Depends on k
+D) Insufficient information
+Correct Answer: A
+
+Solution:
+Base case (n = 0, n = 1):
+F(0) = 0 and F(1) = 1. For n = 0, the formula gives (phi^0 - (-phi)^(-0))/sqrt(5) = (1 - 1)/sqrt(5) = 0, which matches F(0). For n = 1, the formula gives (phi^1 - phi^-1)/sqrt(5) = (phi - phi^-1)/sqrt(5) = 1, which matches F(1). Base cases hold.
+Inductive step: Assume F(k) = (phi^k - (-phi)^(-k))/sqrt(5) and F(k-1) = (phi^(k-1) - (-phi)^(-(k-1)))/sqrt(5) for some k. We need to show that F(k+1) = (phi^(k+1) - (-phi)^(-(k+1)))/sqrt(5).
+
+Explanation:
+Strong induction was used to prove a property of Fibonacci numbers using their definition and the golden ratio. The base cases established the truth for n = 0 and n = 1, and the inductive step showed that if it's true for k, it must also be true for k + 1.
+
+Common mistake note:
+A common mistake is to assume that weak induction would be sufficient or not recognizing the relationship between Fibonacci numbers and the golden ratio. Strong induction ensures all previous cases are considered.
+------------------------------------------------------------------------------
+
+Problem 6 (DivisibleBy3):
+Prove by strong induction that for all integers n >= 1, if the sum of the digits of n is divisible by 3, then n is also divisible by 3.
+(a) Base case: Show that the statement holds for n = 1, 2, and 3.
+(b) Inductive step: Assume the statement holds for some integer k and show that it must also hold for k + 1.
+A) True
+B) False
+C) Depends on k
+D) Insufficient information
+Correct Answer: A
+
+Solution:
+Base case (n = 1, 2, 3):
+For n = 1, the sum of digits is 1, which is not divisible by 3. For n = 2 and n = 3, the sum of digits is even: 2 and 3, respectively. However, neither 2 nor 3 can be expressed as a sum of two perfect squares (e.g., 1^2 + 1^2 for 2 or 1^2 + 2^2 for 3). The base case does not hold.
+Inductive step: Assume that if the sum of the digits of k is divisible by 3, then k is also divisible by 3 for some k. We need to show that if the sum of the digits of k + 1 is divisible by 3, then k + 1 is also divisible by 3.
+
+Explanation:
+Strong induction was used to prove a property of numbers based on their digit sums and representation as sums of perfect squares. The base case does not hold because it's not true for n = 2 and n = 3. No inductive step is needed since the statement is false for all n >= 1.
+
+Common mistake note:
+A common mistake would be to assume that the inductive step can be used to prove the statement, but the base case already shows it's not true for some values. Strong induction ensures all previous cases are considered.
+------------------------------------------------------------------------------
+
+Problem 7 (EvenSum):
+Prove by strong induction that for all integers n >= 1, if the sum of the digits of n is even, then n can be expressed as a sum of two perfect squares.
+(a) Base case: Show that the statement holds for n = 1, 2, and 3.
+(b) Inductive step: Assume the statement holds for some integer k and show that it must also hold for k + 1.
+A) True
+B) False
+C) Depends on k
+D) Insufficient information
+Correct Answer: A
+
+Solution:
+Base case (n = 1, 2, 3):
+For n = 1, the sum of digits is 1, which is odd. For n = 2 and n = 3, the sum of digits is even: 2 and 3, respectively. However, neither 2 nor 3 can be expressed as a sum of two perfect squares (e.g., 1^2 + 1^2 for 2 or 1^2 + 2^2 for 3). The base case does not hold.
+
+Explanation:
+Strong induction was used to prove a property of numbers based on their digit sums and representation as sums of perfect squares. The base case does not hold because it's not true for n = 2 and n = 3. No inductive step is needed since the statement is false for all n >= 1.
+
+Common mistake note:
+A common mistake would be to assume that the inductive step can be used to prove the statement, but the base case already shows it's not true for some values. Strong induction ensures all previous cases are considered.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.3.13 Apply to phasor analysis
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.3 Polar and Exponential Forms
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (InverterAmplitude):
+An AC voltage source has a peak amplitude of 10 V and frequency of 50 Hz. What is the peak amplitude of its phasor representation?
+A) 20 V
+B) 10√2 V
+C) 5 V
+D) 5√2 V
+Correct Answer: B
+
+Solution:
+The peak amplitude of a sinusoidal waveform is represented by its phasor magnitude. In phasor analysis, the peak amplitude is converted to complex form without considering the frequency or phase angle. Therefore, the peak amplitude of the phasor representation remains 10 V. The correct conversion from peak amplitude to RMS (root mean square) for a sine wave is √2 times the peak amplitude, which gives 10√2 V.
+
+Explanation:
+The √2 factor comes from the relationship between peak and RMS values of a sinusoidal waveform. It's important not to confuse this with the frequency or phase angle aspects of phasor analysis.
+
+Common mistake note:
+Common mistake: Choosing A, assuming that the amplitude doubles in the phasor representation. This is incorrect because the phasor keeps the same amplitude as the original sinusoidal waveform.
+------------------------------------------------------------------------------
+
+Problem 2 (RLCPhasor):
+In a series RLC circuit, the impedance is represented by the complex number 50 + j30 Ω. What is the phase angle (in degrees) between the current and voltage phasors?
+A) 37°
+B) 53°
+C) 147°
+D) 227°
+Correct Answer: A
+
+Solution:
+The phase angle between the current and voltage phasors in a series RLC circuit can be found using the arctangent of the imaginary part (reactance) divided by the real part (resistance). Given Z = 50 + j30 Ω, we have X = 30 Ω and R = 50 Ω. The phase angle φ is given by φ = arctan(X/R) ≈ 37°.
+
+Explanation:
+The phase angle indicates the relative shift between current and voltage due to the reactive elements in the circuit. In this case, the capacitive reactance causes a leading phase angle.
+
+Common mistake note:
+Common mistake: Choosing C or D, assuming that the phase angle is greater than 90°. This would indicate a lagging phase relationship, which is not applicable for an RLC series circuit where the current leads the voltage.
+------------------------------------------------------------------------------
+
+Problem 3 (TransformerRatio):
+A transformer has a primary winding with 200 turns and a secondary winding with 400 turns. If the primary voltage is 120 V, what is the peak amplitude of the secondary voltage phasor?
+A) 60 V
+B) 120 V
+C) 240 V
+D) 480 V
+Correct Answer: C
+
+Solution:
+The voltage ratio in a transformer is given by Ns/Np, where Ns is the number of turns on the secondary winding and Np is the number of turns on the primary winding. The peak amplitude of the secondary voltage phasor can be calculated as Vsecondary = (Ns/Np) × Vprimary. Plugging in the values, we get Vsecondary = (400/200) × 120 V = 240 V.
+
+Explanation:
+The transformer works on the principle of mutual induction, where the voltage ratio is determined by the turns ratio. The phasor representation maintains this relationship.
+
+Common mistake note:
+Common mistake: Choosing A or B, assuming that the secondary voltage remains the same or doubles due to the winding turns. This neglects the transformer's voltage transformation principle.
+------------------------------------------------------------------------------
+
+Problem 4 (PhasorAddition):
+Two AC voltages with peak amplitudes of 10 V and 5 V are added using phasor addition. If the first voltage leads the second by 30°, what is the peak amplitude of the resulting phasor?
+A) 7 V
+B) 15 V
+C) 12.5 V
+D) 15√2 V
+Correct Answer: C
+
+Solution:
+To add two phasors, we can use vector addition. The magnitudes of the individual phasors are 10 V and 5 V, and they have a phase difference of 30°. Using trigonometry, we find the magnitude of the sum as √((10)^2 + (5 × sin(30°))^2) ≈ 12.5 V.
+
+Explanation:
+Phasor addition combines the magnitudes and phase angles of individual phasors to find the combined effect in an AC circuit.
+
+Common mistake note:
+Common mistake: Choosing D, assuming that the peak amplitude is simply the sum of the individual peak amplitudes. This neglects the phase difference between the two voltages.
+------------------------------------------------------------------------------
+
+Problem 5 (PhasorPower):
+A load dissipates 100 W when connected to a 230 Vrms voltage source with a power factor of 0.8 lagging. What is the peak amplitude of the current phasor?
+A) 2.4 A
+B) 4.6 A
+C) 9.2 A
+D) 18.4 A
+Correct Answer: B
+
+Solution:
+The power factor (cos(φ)) is given as 0.8 lagging, which means the phase angle φ between voltage and current is approximately 36.87°. The power equation P = Vrms × Irms × cos(φ) can be rearranged to find Irms: Irms = P / (Vrms × cos(φ)). Plugging in the values, we get Irms ≈ 4.59 A. To find the peak amplitude of the current phasor, we multiply Irms by √2: Ipeak = Irms × √2 ≈ 4.6 A.
+
+Explanation:
+In an AC circuit with a power factor less than 1, the current lags the voltage. The peak amplitude of the current phasor is related to the RMS value and the power factor.
+
+Common mistake note:
+Common mistake: Choosing D, assuming that the peak amplitude is directly proportional to the power dissipated. This neglects the effect of the power factor on the current.
+------------------------------------------------------------------------------
+
+Problem 6 (RLCPhasorImpedance):
+In a parallel RLC circuit, the impedance is represented by the complex number 50 - j30 Ω. What is the phase angle (in degrees) between the voltage and current phasors?
+A) 37°
+B) 53°
+C) 147°
+D) 227°
+Correct Answer: C
+
+Solution:
+In a parallel RLC circuit, the phase angle between voltage and current phasors can be found using the arctangent of the imaginary part (reactance) divided by the real part (resistance). Given Z = 50 - j30 Ω, we have X = -30 Ω and R = 50 Ω. The phase angle φ is given by φ = arctan(X/R) ≈ -147°. Since the current lags the voltage in a parallel RLC circuit, we take the absolute value of the negative result: φ = 147°.
+
+Explanation:
+The phase angle indicates the relative shift between current and voltage due to the reactive elements in the circuit. In this case, the inductive reactance causes a lagging phase angle.
+
+Common mistake note:
+Common mistake: Choosing A or B, assuming that the phase angle is less than 90°. This would indicate a leading phase relationship, which is not applicable for an RLC parallel circuit where the current lags the voltage.
+------------------------------------------------------------------------------
+
+Problem 7 (PhasorFrequencyConversion):
+A phasor with a frequency of 60 Hz and peak amplitude of 15 V is converted to a phasor with a frequency of 120 Hz. What is the new peak amplitude?
+A) 7.5 V
+B) 15 V
+C) 30 V
+D) 45 V
+Correct Answer: B
+
+Solution:
+The peak amplitude of a phasor represents the magnitude of the sinusoidal waveform and is independent of frequency. When converting a phasor from one frequency to another, only the time axis changes; the peak amplitude remains the same. Therefore, the new peak amplitude is 15 V.
+
+Explanation:
+Phasors are used to represent AC signals in the complex plane, where the frequency determines the speed of rotation but not the magnitude.
+
+Common mistake note:
+Common mistake: Choosing A or C, assuming that the peak amplitude changes with frequency. This neglects the fact that the peak amplitude is an inherent property of the waveform and does not depend on its frequency.
+------------------------------------------------------------------------------

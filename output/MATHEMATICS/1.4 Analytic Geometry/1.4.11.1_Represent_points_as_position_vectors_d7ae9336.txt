@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.11.1 Represent points as position vectors
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.11 Vectors in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (InitalPointVector):
+What is the position vector representing point A(3, 4) in a Cartesian coordinate system?
+A) [4i + 3j]
+B) [3i + 4j]
+C) [4i - 3j]
+D) [-3i + 4j]
+Correct Answer: B
+
+Solution:
+The position vector for a point in the Cartesian coordinate system is given by its x and y coordinates, multiplied by the unit vectors i (for the x-axis) and j (for the y-axis). For point A(3, 4), the position vector is [3i + 4j].
+
+Explanation:
+The correct answer represents the x-coordinate with the unit vector i and the y-coordinate with the unit vector j. Choice A has the coordinates switched, choice C uses a negative sign on the x-component, and choice D uses a negative sign on both components.
+
+Common mistake note:
+Common mistake is swapping the order of the x and y components or applying incorrect signs.
+------------------------------------------------------------------------------
+
+Problem 2 (VectorTranslation):
+What is the position vector representing point B(6, 8) after translating it by 2 units along the positive x-axis and 1 unit along the negative y-axis?
+A) [8i + 7j]
+B) [4i + 9j]
+C) [6i + 7j]
+D) [8i - 7j]
+Correct Answer: A
+
+Solution:
+To translate a point, add the corresponding displacement vectors to its original position vector. The translation is 2 units right (positive x-axis) and 1 unit down (negative y-axis), which corresponds to [2i - j]. Adding this to the original vector [6i + 8j] gives [8i + 7j].
+
+Explanation:
+The correct answer adds the translation vectors to the starting point's position vector. Choice B does not account for the negative displacement in the y-direction, choice C uses the wrong x-displacement, and choice D has the wrong signs on both components.
+
+Common mistake note:
+Common mistake is applying the translations to the wrong axis or using incorrect signs.
+------------------------------------------------------------------------------
+
+Problem 3 (VectorReflection):
+What is the position vector representing the reflection of point C(-2, 5) across the x-axis?
+A) [2i + 5j]
+B) [-2i - 5j]
+C) [2i - 5j]
+D) [-2i + 5j]
+Correct Answer: B
+
+Solution:
+Reflecting a point across the x-axis negates its y-coordinate while keeping the x-coordinate unchanged. So, for point C(-2, 5), the reflected position vector is [-2i - 5j].
+
+Explanation:
+The correct answer reflects the point by negating the y-coordinate. Choice A keeps the original y-coordinate, choice C uses a negative sign on both components (which would be reflection across the origin), and choice D does not negate the y-coordinate.
+
+Common mistake note:
+Common mistake is forgetting to change the sign of the y-coordinate.
+------------------------------------------------------------------------------
+
+Problem 4 (VectorScaling):
+What is the position vector representing 3 times the point D(1, 2)?
+A) [3i + 6j]
+B) [3i + 2j]
+C) [6i + 4j]
+D) [2i + 3j]
+Correct Answer: A
+
+Solution:
+To scale a position vector, multiply both its components by the scaling factor. For point D(1, 2) and a scaling factor of 3, the new vector is [3i + 6j].
+
+Explanation:
+The correct answer multiplies both coordinates by the scaling factor. Choice B does not scale the y-coordinate enough, choice C uses incorrect multiplication factors, and choice D scales the components incorrectly.
+
+Common mistake note:
+Common mistake is applying the scaling factor to only one component or using the wrong arithmetic operation.
+------------------------------------------------------------------------------
+
+Problem 5 (VectorSum):
+What is the position vector representing the sum of vectors E(2i + 3j) and F(-1i + 4j)?
+A) [i + 7j]
+B) [-1i + 1j]
+C) [3i + 7j]
+D) [-3i + 7j]
+Correct Answer: A
+
+Solution:
+To add two vectors, add their corresponding components. For vectors E(2i + 3j) and F(-1i + 4j), the sum is [2i - 1i + 3j + 4j] = [i + 7j].
+
+Explanation:
+The correct answer adds the i-components and j-components separately. Choice B subtracts instead of adding, choice C does not combine like terms correctly, and choice D uses incorrect signs.
+
+Common mistake note:
+Common mistake is combining components incorrectly or mixing up addition with subtraction.
+------------------------------------------------------------------------------
+
+Problem 6 (VectorDifference):
+What is the position vector representing the difference between vectors G(4i + 6j) and H(2i + 3j)?
+A) [2i + 3j]
+B) [-2i - 3j]
+C) [6i + 9j]
+D) [-6i - 9j]
+Correct Answer: A
+
+Solution:
+To find the difference between two vectors, subtract the second vector's components from the first. For vectors G(4i + 6j) and H(2i + 3j), the difference is [4i - 2i + 6j - 3j] = [2i + 3j].
+
+Explanation:
+The correct answer subtracts the j-components from the i-components. Choice B has the wrong signs, choice C adds instead of subtracting, and choice D uses incorrect arithmetic.
+
+Common mistake note:
+Common mistake is mixing up subtraction with addition or applying the wrong signs.
+------------------------------------------------------------------------------
+
+Problem 7 (VectorMagnitude):
+What is the magnitude (length) of vector I(5i + 12j)?
+A) 13
+B) 17
+C) 14
+D) 15
+Correct Answer: C
+
+Solution:
+The magnitude of a vector can be found using the Pythagorean theorem: |v| = √(x^2 + y^2). For vector I(5i + 12j), the magnitude is √(5^2 + 12^2) = √(25 + 144) = √169 = 13.
+
+Explanation:
+The correct answer calculates the square root of the sum of squares of components. Choice A uses the wrong operation, choice B has an incorrect calculation, and choice D does not apply the Pythagorean theorem correctly.
+
+Common mistake note:
+Common mistake is using the wrong formula or forgetting to take the square root.
+------------------------------------------------------------------------------

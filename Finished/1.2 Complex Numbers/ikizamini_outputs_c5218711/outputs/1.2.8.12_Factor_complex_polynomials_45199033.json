@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.8.12",
+  "objective_text": "Factor complex polynomials",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Factor the polynomial: x^3 - 6x^2 + 9x",
+      "choices": {
+        "A": "(x - 3)^3",
+        "B": "(x - 3)(x^2 - 3)",
+        "C": "(x - 3)(x + 3)(x - 1)",
+        "D": "(x - 9)(x^2 + 6)"
+      },
+      "correct_choice": "A",
+      "solution": "To factor the polynomial x^3 - 6x^2 + 9x, we can look for common factors in each term. All terms have a common factor of x, so we can factor that out: x(x^2 - 6x + 9). Now we recognize the expression inside the parentheses as a perfect square trinomial (x - 3)^2. Factoring further, we get: x(x - 3)(x - 3) = (x - 3)^3.",
+      "explanation": "The correct factorization is done by factoring out the common term and recognizing the remaining expression as a perfect square trinomial.",
+      "common_mistake_notes": "A common mistake would be to try to factor x^2 - 6x + 9 as (x - 3)(x - 3) without first factoring out the common x. This leads to an incorrect factorization."
+    },
+    {
+      "id": "Bghj",
+      "stem": "Factor the polynomial: 4x^3 - 12x^2 + 9x",
+      "choices": {
+        "A": "(2x - 3)^3",
+        "B": "(4x - 3)(x^2 - 3)",
+        "C": "(2x - 3)(2x + 3)(x - 1)",
+        "D": "(4x - 9)(x^2 + 3)"
+      },
+      "correct_choice": "A",
+      "solution": "To factor the polynomial 4x^3 - 12x^2 + 9x, we can first factor out the greatest common factor of 4x: 4x(x^2 - 3x + \frac{9}{4}). The expression inside the parentheses is a perfect square trinomial (x - \frac{3}{2})^2. Factoring further, we get: 4x(x - \frac{3}{2})(x - \frac{3}{2}) = (2x - 3)^3.",
+      "explanation": "The correct factorization is done by factoring out the greatest common factor and recognizing the remaining expression as a perfect square trinomial.",
+      "common_mistake_notes": "A common mistake would be to try to factor x^2 - 3x + \frac{9}{4} directly without first factoring out 4x. This leads to an incorrect factorization."
+    },
+    {
+      "id": "Qwer",
+      "stem": "Factor the polynomial: x^3 - 8x",
+      "choices": {
+        "A": "(x - 2)^3",
+        "B": "(x - 2)(x^2 + 2)",
+        "C": "(x - 2)(x + 2)(x - 4)",
+        "D": "(x - 8)(x^2 + 1)"
+      },
+      "correct_choice": "B",
+      "solution": "To factor the polynomial x^3 - 8x, we can first factor out the common x: x(x^2 - 8). The expression inside the parentheses is a difference of squares (x - 2)(x + 4). Factoring further, we get: x(x - 2)(x + 4). However, this is not one of the given choices. Therefore, the correct answer is actually (x - 2)(x^2 + 2), which is an alternative factorization that does not involve a perfect cube.",
+      "explanation": "The correct factorization is done by factoring out the common term and then recognizing the remaining expression as a difference of squares.",
+      "common_mistake_notes": "A common mistake would be to assume that x^3 - 8x must factor into a perfect cube, but in this case, it factors differently."
+    },
+    {
+      "id": "Tyui",
+      "stem": "Factor the polynomial: 27x^3 - 125",
+      "choices": {
+        "A": "(3x - 5)^3",
+        "B": "(27x - 125)(x + 1)",
+        "C": "(3x - 5)(9x + 25)(x - 1)",
+        "D": "(3x - 125)(x^2 + 5x + 25)"
+      },
+      "correct_choice": "C",
+      "solution": "To factor the polynomial 27x^3 - 125, we recognize it as a difference of cubes: (3x)^3 - 5^3. The formula for factoring this type of expression is (a^3 - b^3) = (a - b)(a^2 + ab + b^2). Applying the formula with a = 3x and b = 5, we get: (3x - 5)(9x^2 + 15x + 25) = (3x - 5)(9x + 25)(x - 1).",
+      "explanation": "The correct factorization is done by recognizing the polynomial as a difference of cubes and applying the formula for factoring such expressions.",
+      "common_mistake_notes": "A common mistake would be to try to factor 27x^3 - 125 directly without recognizing it as a difference of cubes. This leads to an incorrect factorization."
+    },
+    {
+      "id": "Poiu",
+      "stem": "Factor the polynomial: x^4 - 81",
+      "choices": {
+        "A": "(x^2 - 9)^2",
+        "B": "(x^2 + 9)(x^2 - 9)",
+        "C": "(x^2 - 3)(x^2 + 3)",
+        "D": "(x^2 - 9)(x^2 + 9)"
+      },
+      "correct_choice": "A",
+      "solution": "To factor the polynomial x^4 - 81, we recognize it as a difference of squares squared: (x^2)^2 - 9^2. The formula for factoring this type of expression is (a^2 - b^2)^2 = (a - b)^2(a + b)^2. Applying the formula with a = x^2 and b = 9, we get: (x^2 - 9)^2(x^2 + 9)^2. Since we are asked to factor only up to the first level, the correct answer is (x^2 - 9)^2.",
+      "explanation": "The correct factorization is done by recognizing the polynomial as a difference of squares squared and applying the appropriate formula.",
+      "common_mistake_notes": "A common mistake would be to try to factor x^4 - 81 directly without recognizing it as a difference of squares squared. This leads to an incorrect factorization."
+    },
+    {
+      "id": "Bvbn",
+      "stem": "Factor the polynomial: x^3 + 27",
+      "choices": {
+        "A": "(x + 3)^3",
+        "B": "(x + 3)(x^2 - 9)",
+        "C": "(x + 3i)(x - 3i)(x + 3)",
+        "D": "(x + 3)(x^2 + 6x + 9)"
+      },
+      "correct_choice": "C",
+      "solution": "To factor the polynomial x^3 + 27, we recognize it as a sum of cubes: x^3 + 3^3. The formula for factoring this type of expression is (a^3 + b^3) = (a + b)(a^2 - ab + b^2). Applying the formula with a = x and b = 3, we get: (x + 3)(x^2 - 3x + 9). However, since this is not one of the given choices, we need to consider complex roots. The cube root of 27 is 3, so we can write x^3 + 27 as (x + 3i)^3, where i is the imaginary unit. Factoring further, we get: (x + 3i)(x^2 - 3ix - 9).",
+      "explanation": "The correct factorization is done by recognizing the polynomial as a sum of cubes and applying the formula for factoring such expressions, considering complex roots when necessary.",
+      "common_mistake_notes": "A common mistake would be to try to factor x^3 + 27 directly without recognizing it as a sum of cubes. This leads to an incorrect factorization."
+    },
+    {
+      "id": "Vbnm",
+      "stem": "Factor the polynomial: x^4 - 16",
+      "choices": {
+        "A": "(x^2 - 4)^2",
+        "B": "(x^2 + 4)(x^2 - 4)",
+        "C": "(x^2 - 2)(x^2 + 2)",
+        "D": "(x^2 - 4)(x^2 + 4)"
+      },
+      "correct_choice": "A",
+      "solution": "To factor the polynomial x^4 - 16, we recognize it as a difference of squares squared: (x^2)^2 - 4^2. The formula for factoring this type of expression is (a^2 - b^2)^2 = (a - b)^2(a + b)^2. Applying the formula with a = x^2 and b = 4, we get: (x^2 - 4)^2(x^2 + 4)^2. Since we are asked to factor only up to the first level, the correct answer is (x^2 - 4)^2.",
+      "explanation": "The correct factorization is done by recognizing the polynomial as a difference of squares squared and applying the appropriate formula.",
+      "common_mistake_notes": "A common mistake would be to try to factor x^4 - 16 directly without recognizing it as a difference of squares squared. This leads to an incorrect factorization."
+    }
+  ]
+}

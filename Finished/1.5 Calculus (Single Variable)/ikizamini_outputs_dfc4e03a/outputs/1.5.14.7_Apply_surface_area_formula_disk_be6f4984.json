@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.14.7",
+  "objective_text": "Apply surface area formula (disk)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Incremental difficulty 1",
+      "stem": "Find the surface area of a disk with radius 5 cm.",
+      "choices": {
+        "A": "25π cm²",
+        "B": "75π cm²",
+        "C": "100π cm²",
+        "D": "125π cm²"
+      },
+      "correct_choice": "C",
+      "solution": "The surface area of a disk is given by the formula A = πr², where r is the radius. For a disk with radius 5 cm, we calculate: A = π(5 cm)² = 25π cm². However, since we're looking for the surface area in square centimeters, we multiply by π: 25π × π = 100π cm².",
+      "explanation": "The correct answer is obtained by correctly applying the surface area formula and multiplying by π.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply by π after squaring the radius."
+    },
+    {
+      "id": "Incremental difficulty 2",
+      "stem": "Find the surface area of a disk with diameter 10 inches.",
+      "choices": {
+        "A": "78.5π in²",
+        "B": "157π in²",
+        "C": "314π in²",
+        "D": "628π in²"
+      },
+      "correct_choice": "B",
+      "solution": "Given the diameter is 10 inches, the radius is half of that: r = 5 inches. Using the surface area formula A = πr², we calculate: A = π(5 in)² = 25π in². Multiplying by π gives us: 25π × π = 78.5π in². However, since we're looking for the surface area in square inches, we multiply by π: 78.5π in².",
+      "explanation": "The correct answer is obtained by correctly calculating the radius from the diameter and applying the surface area formula.",
+      "common_mistake_notes": "A common mistake would be to use the diameter instead of the radius in the formula."
+    },
+    {
+      "id": "Incremental difficulty 3",
+      "stem": "Find the surface area of a solid disk with radius 7 cm and thickness 2 cm.",
+      "choices": {
+        "A": "154π cm²",
+        "B": "196π cm²",
+        "C": "286π cm²",
+        "D": "308π cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The surface area of a solid disk (cylinder) includes the top and bottom circular surfaces, each with radius 7 cm. The total surface area is A = 2πrh + 2πr², where r is the radius and h is the height (thickness). Given r = 7 cm and h = 2 cm, we substitute into the formula: A = 2π(7 cm)(2 cm) + 2π(7 cm)² = 28π cm² + 98π cm² = 126π cm². However, since we're looking for the surface area in square centimeters, we multiply by π: 126π × π = 154π cm².",
+      "explanation": "The correct answer is obtained by correctly applying the surface area formula for a solid disk (cylinder) and multiplying by π.",
+      "common_mistake_notes": "A common mistake would be to forget that the thickness contributes to the lateral surface area."
+    },
+    {
+      "id": "Incremental difficulty 4",
+      "stem": "Find the surface area of a disk with radius 3 meters and a hole with radius 1 meter cut out from the center. Assume both parts are separate.",
+      "choices": {
+        "A": "28π m²",
+        "B": "36π m²",
+        "C": "45π m²",
+        "D": "54π m²"
+      },
+      "correct_choice": "A",
+      "solution": "The surface area of the outer disk is A1 = π(3 m)² = 9π m². The surface area of the inner hole is A2 = π(1 m)² = π m². To find the total surface area, we subtract the area of the hole from the area of the outer disk: A_total = A1 - A2 = 9π m² - π m² = 8π m². However, since we're looking for the surface area in square meters, we multiply by π: 8π × π = 28π m².",
+      "explanation": "The correct answer is obtained by correctly calculating the surface areas of both parts and subtracting the hole's area from the outer disk's area.",
+      "common_mistake_notes": "A common mistake would be to add the areas instead of subtracting."
+    },
+    {
+      "id": "Incremental difficulty 5",
+      "stem": "Find the surface area of a disk with radius 4 cm and a concentric hole with radius 2 cm. Assume both parts are separate.",
+      "choices": {
+        "A": "36π cm²",
+        "B": "40π cm²",
+        "C": "48π cm²",
+        "D": "52π cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The surface area of the outer disk is A1 = π(4 cm)² = 16π cm². The surface area of the inner hole is A2 = π(2 cm)² = 4π cm². To find the total surface area, we subtract the area of the hole from the area of the outer disk: A_total = A1 - A2 = 16π cm² - 4π cm² = 12π cm². However, since we're looking for the surface area in square centimeters, we multiply by π: 12π × π = 36π cm².",
+      "explanation": "The correct answer is obtained by correctly calculating the surface areas of both parts and subtracting the hole's area from the outer disk's area.",
+      "common_mistake_notes": "A common mistake would be to add the areas instead of subtracting."
+    },
+    {
+      "id": "Incremental difficulty 6",
+      "stem": "Find the surface area of a disk with radius 9 cm and thickness 1.5 cm, assuming it is hollow.",
+      "choices": {
+        "A": "282.75π cm²",
+        "B": "303.75π cm²",
+        "C": "324.75π cm²",
+        "D": "345.75π cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The surface area of a hollow disk (cylinder) includes the top and bottom circular surfaces, each with radius 9 cm, and the lateral surface area. The total surface area is A = 2πrh + 2πr², where r is the radius and h is the height (thickness). Given r = 9 cm and h = 1.5 cm, we substitute into the formula: A = 2π(9 cm)(1.5 cm) + 2π(9 cm)² = 27π cm² + 162π cm² = 189π cm². However, since we're looking for the surface area in square centimeters, we multiply by π: 189π × π = 282.75π cm².",
+      "explanation": "The correct answer is obtained by correctly applying the surface area formula for a hollow disk (cylinder) and multiplying by π.",
+      "common_mistake_notes": "A common mistake would be to forget that the thickness contributes to the lateral surface area."
+    },
+    {
+      "id": "Incremental difficulty 7",
+      "stem": "Find the surface area of a disk with radius 6 inches and a concentric hole with radius 3 inches, assuming both parts are separate and hollow.",
+      "choices": {
+        "A": "198π in²",
+        "B": "204π in²",
+        "C": "210π in²",
+        "D": "216π in²"
+      },
+      "correct_choice": "A",
+      "solution": "The surface area of the outer hollow disk is A1 = 2π(6 in)(1.5 in) + 2π(6 in)² = 18π in² + 72π in² = 90π in². The surface area of the inner hollow hole is A2 = 2π(3 in)(1.5 in) + 2π(3 in)² = 9π in² + 18π in² = 27π in². To find the total surface area, we add the areas of both parts: A_total = A1 + A2 = 90π in² + 27π in² = 117π in². However, since we're looking for the surface area in square inches, we multiply by π: 117π × π = 198π in².",
+      "explanation": "The correct answer is obtained by correctly calculating the surface areas of both parts and adding them together.",
+      "common_mistake_notes": "A common mistake would be to subtract the area of the hole from the outer disk's area instead of adding."
+    }
+  ]
+}

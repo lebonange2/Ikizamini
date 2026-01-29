@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.13.6",
+  "objective_text": "Preserve angles under conformal maps",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which transformation preserves angles?",
+      "choices": {
+        "A": "Translation",
+        "B": "Dilation",
+        "C": "Rotation",
+        "D": "Shear"
+      },
+      "correct_choice": "C",
+      "solution": "Conformal maps preserve angles. Among the given options, only a rotation is conformal. Translation, dilation, and shear do not generally preserve angles.",
+      "explanation": "In complex analysis, conformal mappings are transformations that preserve angles locally. Rotations are conformal because they preserve both angles and shapes of small figures. The other choices distort either angles or shapes, hence they are not conformal.",
+      "common_mistake_notes": "Students may confuse dilation with rotation, as dilation preserves shapes but not necessarily angles."
+    },
+    {
+      "id": "2",
+      "stem": "Does the measure of an angle at a point change under a conformal map?",
+      "choices": {
+        "A": "Yes, it changes",
+        "B": "No, it doesn't change",
+        "C": "It depends on the specific map",
+        "D": "Only if the point is a critical point"
+      },
+      "correct_choice": "B",
+      "solution": "By definition, conformal maps preserve angles. The measure of an angle at any point remains unchanged under such a transformation.",
+      "explanation": "A conformal map is a bijective function that preserves angles locally. This means that the angle between any two curves meeting at a point is preserved by the mapping, regardless of the location of the point or the specific map.",
+      "common_mistake_notes": "Students might confuse conformal maps with dilations, which can change the measure of an angle."
+    },
+    {
+      "id": "3",
+      "stem": "Which transformation preserves both angles and the ratio of distances?",
+      "choices": {
+        "A": "Translation",
+        "B": "Dilation",
+        "C": "Rotation",
+        "D": "Reflection"
+      },
+      "correct_choice": "B",
+      "solution": "A dilation is a conformal map that preserves angles and scales all distances by a constant factor, thus preserving the ratio of distances.",
+      "explanation": "While rotations and reflections preserve angles, they do not necessarily preserve the ratio of distances. Translations do not affect angles or distance ratios either. Dilation is the only choice here that satisfies both conditions.",
+      "common_mistake_notes": "Students might choose rotation or reflection, forgetting that these transformations do not preserve the ratio of distances."
+    },
+    {
+      "id": "4",
+      "stem": "Which statement about conformal maps is true?",
+      "choices": {
+        "A": "They always preserve the orientation of figures",
+        "B": "They can reverse the orientation of figures",
+        "C": "They only preserve angles in the first quadrant",
+        "D": "They are always linear transformations"
+      },
+      "correct_choice": "A",
+      "solution": "Conformal maps do not change the orientation of figures. They preserve both local angles and the sense of orientation.",
+      "explanation": "In complex analysis, conformal mappings are invertible functions that preserve angles and orientation. Orientation is preserved because they map small circles to small circles or lines. Conformal maps can be nonlinear, so options B, C, and D are incorrect.",
+      "common_mistake_notes": "Students might confuse conformality with other properties like orientation-reversing transformations."
+    },
+    {
+      "id": "5",
+      "stem": "For a function f(z) = u(x,y) + iv(x,y) to be conformal, which condition must hold?",
+      "choices": {
+        "A": "u_xv_y - u_yv_x = 0",
+        "B": "u_xv_y + u_yv_x = 1",
+        "C": "u_x^2 + v_y^2 = 1",
+        "D": "u_y^2 + v_x^2 = 0"
+      },
+      "correct_choice": "A",
+      "solution": "The Cauchy-Riemann equations state that a function f(z) is conformal if its partial derivatives satisfy u_xv_y - u_yv_x = 0. This condition ensures the preservation of angles.",
+      "explanation": "In complex analysis, a function f(z) is conformal if it satisfies the Cauchy- Riemann equations. These equations relate the partial derivatives of the real and imaginary parts of the function, ensuring that the mapping preserves angles locally. Options B, C, and D do not correspond to these conditions.",
+      "common_mistake_notes": "Students might confuse the Cauchy-Riemann equations with other derivative relationships."
+    },
+    {
+      "id": "6",
+      "stem": "Which transformation is NOT conformal?",
+      "choices": {
+        "A": "Reflection across the x-axis",
+        "B": "Translation by 2 units to the right",
+        "C": "Rotation by 90 degrees counterclockwise",
+        "D": "Scaling by a factor of 3"
+      },
+      "correct_choice": "B",
+      "solution": "A translation by a fixed distance does not preserve angles, making it non-conformal. The other choices are conformal transformations.",
+      "explanation": "Translation changes the position of points but does not affect their relative angles. This means that translations do not preserve angles and are thus not conformal. Reflections, rotations, and scalings all preserve angles locally, making them conformal.",
+      "common_mistake_notes": "Students might overlook the fact that translation affects only position and not angles."
+    },
+    {
+      "id": "7",
+      "stem": "What property of a map ensures angle preservation?",
+      "choices": {
+        "A": "It is continuous",
+        "B": "It is bijective",
+        "C": "Its derivative exists everywhere",
+        "D": "Its partial derivatives satisfy the Cauchy-Riemann equations"
+      },
+      "correct_choice": "D",
+      "solution": "For a function to be conformal and preserve angles, its partial derivatives must satisfy the Cauchy-Riemann equations. Continuity, bijectivity, and existence of the derivative are necessary conditions but not sufficient for angle preservation.",
+      "explanation": "In complex analysis, conformality is defined by the satisfaction of the Cauchy-Riemann equations. These equations ensure that angles are preserved locally under the transformation. While continuity, bijectivity, and existence of the derivative are important properties, they do not guarantee angle preservation alone.",
+      "common_mistake_notes": "Students might confuse these conditions with conformality, thinking that one or more of them is sufficient."
+    }
+  ]
+}

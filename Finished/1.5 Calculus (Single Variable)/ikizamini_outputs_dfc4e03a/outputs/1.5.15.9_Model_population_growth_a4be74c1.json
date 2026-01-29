@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.15.9",
+  "objective_text": "Model population growth",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A certain species of bacteria has a doubling time of 2 hours. If the initial population is 500, how many bacteria will there be after 8 hours?",
+      "choices": {
+        "A": "1000",
+        "B": "2000",
+        "C": "4000",
+        "D": "8000"
+      },
+      "correct_choice": "C",
+      "solution": "The population doubles every 2 hours, so after 8 hours it will have doubled 4 times. Starting with 500 bacteria and doubling 4 times gives: 500 × 2^4 = 500 × 16 = 8000 bacteria.",
+      "explanation": "The question tests the understanding of exponential growth using a doubling time formula. To find the population after a certain number of doubling periods, you multiply the initial population by 2 raised to the power of that number of periods.",
+      "common_mistake_notes": "A common mistake would be to multiply the initial population by the total number of hours (8) instead of considering the number of doubling periods (4)."
+    },
+    {
+      "id": "Bghj",
+      "stem": "The rabbit population in a forest increases at a rate proportional to its size. If there are initially 100 rabbits and after 6 months, there are 200 rabbits, what will be the population after 1 year?",
+      "choices": {
+        "A": "300",
+        "B": "400",
+        "C": "500",
+        "D": "600"
+      },
+      "correct_choice": "B",
+      "solution": "This is an example of exponential growth with a constant rate. We can use the formula P = P_0 × e^(rt), where P is the final population, P_0 is the initial population, r is the growth rate, and t is time in hours (converted to match the rate). Since the rate is proportional to size, we don't have a specific number for r, but we can use the information from the first 6 months to find it. After 6 months (180 days), the population doubles, so r = ln(2) / 180. For 1 year (365 days), P = 100 × e^(ln(2) × 365 / 180) × 2 × 2 ≈ 400 rabbits.",
+      "explanation": "The question tests understanding of exponential growth with a proportional rate. The solution uses the natural logarithm to find the rate and then applies it to predict future population size.",
+      "common_mistake_notes": "A common mistake would be to assume linear growth, where the population increases by a fixed number each month, rather than exponentially."
+    },
+    {
+      "id": "Qwer",
+      "stem": "The human population of a city grows at a rate of 2% per year. If the current population is 50,000, what will be the population after 10 years?",
+      "choices": {
+        "A": "60,000",
+        "B": "70,000",
+        "C": "80,000",
+        "D": "90,000"
+      },
+      "correct_choice": "C",
+      "solution": "To find the population after 10 years with a constant growth rate, we can use the formula P = P_0 × (1 + r)^t, where P is the final population, P_0 is the initial population, r is the growth rate as a decimal, and t is time in years. For this problem, P = 50,000 × (1 + 0.02)^10 ≈ 80,000 people.",
+      "explanation": "The question tests understanding of exponential growth with a fixed annual rate. The solution uses the compound interest formula to calculate future population size.",
+      "common_mistake_notes": "A common mistake would be to multiply the initial population by the growth rate (2%) directly, instead of using the exponentiation with (1 + r)."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "A fish farm starts with 500 fish and adds 100 new fish every month. How many fish will there be after 1 year?",
+      "choices": {
+        "A": "600",
+        "B": "1200",
+        "C": "1800",
+        "D": "2400"
+      },
+      "correct_choice": "C",
+      "solution": "This is an example of arithmetic growth, where the population increases by a fixed number each month. After 1 year (12 months), there will be 500 + 100 × 12 = 1800 fish.",
+      "explanation": "The question tests understanding of arithmetic growth with a constant monthly increase. The solution adds the fixed monthly increase to the initial population for each month.",
+      "common_mistake_notes": "A common mistake would be to assume exponential growth, where the number added each month increases, rather than staying constant."
+    },
+    {
+      "id": "Bnm",
+      "stem": "The deer population in a park doubles every 5 years. If there are currently 200 deer, how many will there be after 15 years?",
+      "choices": {
+        "A": "400",
+        "B": "800",
+        "C": "1600",
+        "D": "3200"
+      },
+      "correct_choice": "C",
+      "solution": "The population doubles every 5 years, so after 15 years it will have doubled 3 times. Starting with 200 deer and doubling 3 times gives: 200 × 2^3 = 200 × 8 = 1600 deer.",
+      "explanation": "The question tests the understanding of exponential growth using a doubling time formula. To find the population after a certain number of doubling periods, you multiply the initial population by 2 raised to the power of that number of periods.",
+      "common_mistake_notes": "A common mistake would be to multiply the initial population by the total number of years (15) instead of considering the number of doubling periods (3)."
+    },
+    {
+      "id": "Vbnm",
+      "stem": "The bacteria in a petri dish grow exponentially, with a growth rate proportional to their current population. If there are 200 bacteria at time t=0 and 800 bacteria after 4 hours, how many will there be after 8 hours?",
+      "choices": {
+        "A": "1600",
+        "B": "3200",
+        "C": "6400",
+        "D": "12800"
+      },
+      "correct_choice": "B",
+      "solution": "This is an example of exponential growth with a proportional rate. We can use the formula P = P_0 × e^(rt), where P is the final population, P_0 is the initial population, r is the growth rate, and t is time in hours (converted to match the rate). Since the rate is proportional to size, we don't have a specific number for r, but we can use the information from the first 4 hours to find it. After 4 hours, the population quadruples, so r = ln(4) / 4. For 8 hours, P = 200 × e^(ln(4) × 8 / 4) ≈ 3200 bacteria.",
+      "explanation": "The question tests understanding of exponential growth with a proportional rate. The solution uses the natural logarithm to find the rate and then applies it to predict future population size.",
+      "common_mistake_notes": "A common mistake would be to assume linear growth, where the population increases by a fixed number each hour, rather than exponentially."
+    },
+    {
+      "id": "Xzcv",
+      "stem": "The bacteria in a lab experiment grow at a rate of 1.5% per hour. If there are initially 1000 bacteria, how many will there be after 6 hours?",
+      "choices": {
+        "A": "1090",
+        "B": "1170",
+        "C": "1260",
+        "D": "1350"
+      },
+      "correct_choice": "C",
+      "solution": "To find the population after 6 hours with a constant growth rate, we can use the formula P = P_0 × (1 + r)^t, where P is the final population, P_0 is the initial population, r is the growth rate as a decimal, and t is time in hours. For this problem, P = 1000 × (1 + 0.015)^6 ≈ 1260 bacteria.",
+      "explanation": "The question tests understanding of exponential growth with a fixed hourly rate. The solution uses the compound interest formula to calculate future population size.",
+      "common_mistake_notes": "A common mistake would be to multiply the initial population by the growth rate (1.5%) directly, instead of using the exponentiation with (1 + r)."
+    }
+  ]
+}

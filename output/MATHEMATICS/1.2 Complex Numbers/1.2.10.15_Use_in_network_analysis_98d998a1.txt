@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.10.15 Use in network analysis
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.10 Applications to AC Circuits
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Assemble a graph from node and edge lists):
+Given a list of nodes and a list of edges, which method best describes how to assemble a graph?
+A) Create an empty graph and add each node and edge manually.
+B) Combine the node and edge lists into a single list of tuples.
+C) Use the nodes as keys and edges as values in a dictionary.
+D) Sort the nodes and edges lists, then pair them based on position.
+Correct Answer: A
+
+Solution:
+To assemble a graph from node and edge lists, create an empty graph and add each node and edge manually. This ensures proper representation of connections between nodes.
+
+Explanation:
+Option B combines node and edge data into a single list, losing the distinction between nodes and edges. Option C uses a dictionary,不适合表示可能包含多条边的图。Option D依赖排序，可能不反映图中实际连接。
+
+Common mistake note:
+常见错误：选择B，因为它看起来更紧凑；但它不保持节点-边的区别。
+------------------------------------------------------------------------------
+
+Problem 2 (Calculate shortest path using Dijkstra's algorithm):
+Which method best describes calculating the shortest path between two nodes in a weighted graph using Dijkstra's algorithm?
+A) Start at the destination node and traverse back to the source, always choosing the neighbor with the smallest weight.
+B) Start at any random node and keep track of the minimum distance from the starting point.
+C) Start at the source node and iteratively update distances to neighboring nodes, only considering unvisited nodes with smaller weights.
+D) Use a breadth-first search, selecting the path with the smallest sum of edge weights.
+Correct Answer: C
+
+Solution:
+Dijkstra's algorithm starts at the source node, updating distances to neighboring nodes and choosing the unvisited neighbor with the smallest weight. This continues until the destination is reached or all reachable nodes are visited.
+
+Explanation:
+Option A describes a backward traversal, which isn't how Dijkstra's algorithm works. Option B doesn't specify the starting point and may yield incorrect results. Option D refers to breadth-first search, not specific to weighted graph shortest paths.
+
+Common mistake note:
+常见错误：选择B，因为它没有涉及特定算法；但Dijkstra的算法从源节点开始。
+------------------------------------------------------------------------------
+
+Problem 3 (Identify connected components):
+What method would you use to identify all connected components in an undirected graph?
+A) Perform a depth-first search starting from each unvisited node.
+B) Use Dijkstra's algorithm to find shortest paths between all pairs of nodes.
+C) Implement a breadth-first search, marking visited nodes as they are explored.
+D) Calculate the transitive closure of the adjacency matrix.
+Correct Answer: A
+
+Solution:
+To identify connected components in an undirected graph, perform a depth-first search from each unvisited node. This ensures all nodes within a component are discovered and marked visited.
+
+Explanation:
+Option B is for shortest path calculations, not connected components. Option C only finds one component if started from a single node. Option D calculates transitive closure but doesn't directly reveal individual components。
+
+Common mistake note:
+常见错误：选择C；它可能找到一个组件，但不是所有。
+------------------------------------------------------------------------------
+
+Problem 4 (Analyze community structure):
+Which algorithm is commonly used to identify communities or clusters of densely connected nodes in a graph?
+A) PageRank
+B) K-means clustering
+C) Minimum Spanning Tree (MST)
+D) Community Detection Algorithm (such as Louvain or Girvan-Neu... [truncated]...}]}
+Correct Answer: D
+
+Solution:
+To analyze community structure in a graph, algorithms like Louvain or Girvan-Neu... [truncated]...}]}
+
+Explanation:
+Option A ranks web pages, not clusters. Option B is general clustering, not tailored for graph communities. Option C finds minimum spanning tree, unrelated to community structure.
+
+Common mistake note:
+常见错误：选择B；它是一种通用聚类方法，但不适合图社区。
+------------------------------------------------------------------------------
+
+Problem 5 (Calculate node centrality):
+Which measure of centrality would you use to determine the relative importance of a node in a network?
+A) Degree Centrality
+B) Betweenness Centrality
+C) Closeness Centrality
+D) Eigenvector Centrality
+Correct Answer: D
+
+Solution:
+To assess a node's relative importance in a network, use Eigenvector Centrality. It considers not only direct connections but also the influence of neighboring nodes.
+
+Explanation:
+Option A counts direct connections; it doesn't account for indirect influence. Option B measures shortest path frequency, different from importance. Option C measures how quickly a node reaches others, not overall importance.
+
+Common mistake note:
+常见错误：选择A；它仅考虑直接连接。
+------------------------------------------------------------------------------
+
+Problem 6 (Visualize a graph):
+Which software or library is commonly used for visualizing graphs and networks?
+A) Matplotlib
+B) Seaborn
+C) NetworkX
+D) TensorFlow
+Correct Answer: C
+
+Solution:
+NetworkX is a popular Python library for creating, manipulating, and visualizing graphs and networks.
+
+Explanation:
+Options A and B are data visualization libraries, not specialized for graph visualization. Option D is a deep learning framework, unsuitable for this purpose.
+
+Common mistake note:
+常见错误：选择A或B；它们是通用可视化工具。
+------------------------------------------------------------------------------
+
+Problem 7 (Find cliques in a graph):
+What algorithm would you use to find all the cliques (fully connected subgraphs) in an undirected graph?
+A) Depth-First Search (DFS)
+B) Bron-... [truncated]...}]}
+C) Bellman-Ford Algorithm
+D) Kruskal's Algorithm
+Correct Answer: B
+
+Solution:
+Use the Bron-Kerbosch algorithm to find all cliques in an undirected graph. It efficiently explores subgraph space by pruning branches that cannot lead to new cliques.
+
+Explanation:
+Option A traverses graphs, not for clique detection. Option C finds shortest paths in weighted graphs, and Option D constructs minimum spanning trees, none suitable for clique detection.
+
+Common mistake note:
+常见错误：选择A；它是一种遍历方法，不适合检测 clic... [truncated]...}]}
+------------------------------------------------------------------------------

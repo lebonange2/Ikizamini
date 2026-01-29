@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.15",
+  "objective_text": "Apply to research problems",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "A researcher is studying the effect of temperature on a chemical reaction rate. They measure the reaction rate at different temperatures and plots the data. What type of analysis should they perform to determine if there is a correlation between temperature and reaction rate?",
+      "choices": {
+        "A": "Regression analysis",
+        "B": "Hypothesis testing",
+        "C": "Cluster analysis",
+        "D": "Principal component analysis"
+      },
+      "correct_choice": "A",
+      "solution": "The researcher wants to find the relationship (correlation) between two continuous variables: temperature and reaction rate. Regression analysis is used for this purpose, as it models the relationship between a dependent variable and one or more independent variables.",
+      "explanation": "Regression helps determine the strength and direction of the relationship, while hypothesis testing is used to test a specific claim about the population. Cluster analysis groups similar data points together, and principal component analysis reduces the dimensionality of the data.",
+      "common_mistake_notes": "Common mistake: Choosing B (Hypothesis testing) instead of A. Hypothesis testing is used for making decisions about populations based on sample data, not for finding relationships between variables."
+    },
+    {
+      "id": ":Q2",
+      "stem": "A psychologist wants to identify different personality traits in a group of participants. They administer a survey with multiple-choice questions. Which statistical method should they use to analyze the data?",
+      "choices": {
+        "A": "ANOVA",
+        "B": "Factor analysis",
+        "C": "T-test",
+        "D": "Chi-square test"
+      },
+      "correct_choice": "B",
+      "solution": "The psychologist is interested in identifying underlying factors (personality traits) that explain the patterns of responses on the survey. Factor analysis is a technique used to identify these hidden factors from observed variables.",
+      "explanation": "ANOVA is for comparing means across groups, T-test compares means between two groups, and Chi-square test is used for testing independence in categorical data. None of these directly address the identification of underlying factors.",
+      "common_mistake_notes": "Common mistake: Choosing A (ANOVA) or C (T-test). These methods are more suitable when comparing mean differences between groups, not for identifying hidden factors."
+    },
+    {
+      "id": ":Q3",
+      "stem": "A sociologist is studying the relationship between education level and income. They collected data from a large sample of individuals. Which statistical method should they use to analyze this relationship?",
+      "choices": {
+        "A": "Correlation analysis",
+        "B": "Cohort analysis",
+        "C": "Time-series analysis",
+        "D": "Multivariate regression"
+      },
+      "correct_choice": "D",
+      "solution": "The sociologist is interested in understanding the relationship between two continuous variables (education level and income) while controlling for other factors that might influence income. Multivariate regression is appropriate for this purpose.",
+      "explanation": "Correlation analysis measures only the strength of association, cohort analysis examines patterns over time within groups born at similar times, and time-series analysis tracks changes in a single variable over time. None of these directly control for confounding variables like multivariate regression does.",
+      "common_mistake_notes": "Common mistake: Choosing A (Correlation) instead of D. Correlation does not account for other factors that may influence income."
+    },
+    {
+      "id": ":Q4",
+      "stem": "A biologist is studying the effect of a new drug on plant growth. They grow plants with and without the drug and measure their heights. Which statistical test should they use to determine if there is a significant difference in plant height between the two groups?",
+      "choices": {
+        "A": "Paired t-test",
+        "B": "One-sample t-test",
+        "C": "Two-sample t-test",
+        "D": "Mann-Whitney U test"
+      },
+      "correct_choice": "C",
+      "solution": "The biologist is comparing the means of plant heights between two independent groups (with and without the drug). A two-sample t-test is used to determine if there is a significant difference between these means.",
+      "explanation": "Paired t-test compares means within the same group before and after an intervention, one-sample t-test compares a sample mean to a known population mean, and Mann-Whitney U test compares medians of two independent groups. None of these directly compare means across two separate groups like the two-sample t-test does.",
+      "common_mistake_notes": "Common mistake: Choosing A (Paired t-test) instead of C. Paired t-test is used when comparing before-and-after data, not for comparing two independent groups."
+    },
+    {
+      "id": ":Q5",
+      "stem": "A market researcher wants to understand customer preferences between two competing products. They conduct a survey with a large number of participants and collect their responses. Which statistical method should they use to analyze the data?",
+      "choices": {
+        "A": "Logistic regression",
+        "B": "Chi-square test of independence",
+        "C": "K-means clustering",
+        "D": "Multinomial logistic regression"
+      },
+      "correct_choice": "B",
+      "solution": "The market researcher is interested in understanding if there is a significant association between customer preferences for the two products. The Chi-square test of independence is used to determine if there is a relationship between two categorical variables.",
+      "explanation": "Logistic regression predicts probabilities of binary outcomes, K-means clustering groups similar data points, and multinomial logistic regression predicts one of multiple categories. None of these directly assesses the association between two categorical variables like Chi-square does.",
+      "common_mistake_notes": "Common mistake: Choosing A (Logistic regression) instead of B. Logistic regression is used for predicting probabilities, not for testing associations."
+    },
+    {
+      "id": ":Q6",
+      "stem": "A meteorologist is analyzing temperature data from multiple weather stations across a region. They want to identify any spatial patterns in the data. Which statistical technique should they use?",
+      "choices": {
+        "A": "Spatial autocorrelation analysis",
+        "B": "Principal component analysis",
+        "C": "Survival analysis",
+        "D": "Multivariate linear regression"
+      },
+      "correct_choice": "A",
+      "solution": "The meteorologist is interested in understanding if temperature measurements at different stations are correlated based on their geographical proximity. Spatial autocorrelation analysis helps identify such patterns.",
+      "explanation": "Principal component analysis reduces dimensionality, survival analysis models time to an event, and multivariate linear regression examines relationships between multiple variables. None of these directly analyze spatial patterns like spatial autocorrelation does.",
+      "common_mistake_notes": "Common mistake: Choosing B (Principal component analysis) instead of A. PCA is used for data reduction, not for analyzing spatial patterns."
+    },
+    {
+      "id": ":Q7",
+      "stem": "A physicist is studying the effect of magnetic field strength on the resistance of a material. They vary the magnetic field and measure the resistance at each setting. Which statistical model should they use to describe this relationship?",
+      "choices": {
+        "A": "Linear regression",
+        "B": "Polynomial regression",
+        "C": "Logistic regression",
+        "D": "Random forest"
+      },
+      "correct_choice": "B",
+      "solution": "The physicist is studying a nonlinear relationship between magnetic field strength (independent variable) and resistance (dependent variable). Polynomial regression can model such non-linear relationships by including higher-order terms of the independent variable.",
+      "explanation": "Linear regression assumes a linear relationship, logistic regression models binary outcomes, and random forest is an ensemble method for classification or regression. None of these directly handle non-linear relationships like polynomial regression does.",
+      "common_mistake_notes": "Common mistake: Choosing A (Linear regression) instead of B. Linear regression cannot capture the curvature in the data."
+    }
+  ]
+}

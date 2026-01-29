@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.7.10 Apply uniqueness proofs
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.7 Proof Techniques
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (OneToOneFunctionUniqueness):
+Given a function f: A → B, if for every element a in A there is exactly one corresponding element b in B, prove that f is a one-to-one (injective) function. Which of the following statements can be used as part of the proof?
+A) For all a1, a2 in A, if f(a1) = f(a2), then a1 = a2.
+B) There exists an element b in B such that multiple elements in A map to it.
+C) The domain and codomain of f have the same cardinality.
+D) f is continuous on the interval [a, b].
+Correct Answer: A
+
+Solution:
+Statement A directly shows that each element in the domain (A) maps to a unique element in the codomain (B), which is the definition of an injective function. Statement B contradicts the requirement for a one-to-one function. Statement C might be true, but it's not enough to prove injectivity; it only implies that the sets have equal sizes. Statement D is irrelevant since continuity has no bearing on uniqueness.
+
+Explanation:
+The proof should focus on demonstrating that each element in the domain maps uniquely to an element in the codomain.
+
+Common mistake note:
+Common mistake: Choosing B, which would be true for a many-to-one function but not for a one-to-one function.
+------------------------------------------------------------------------------
+
+Problem 2 (UniqueSolutionEquation):
+Prove that the equation 2x + 3 = 7 has a unique solution. Which of the following steps in a proof is most relevant?
+A) Check if the equation represents a linear function.
+B) Solve for x: x = (7 - 3) / 2.
+C) Assume two solutions, x1 and x2, and show that they must be equal.
+D) Verify that the equation has no extraneous solutions.
+Correct Answer: C
+
+Solution:
+To prove uniqueness, we need to demonstrate that if there are two solutions (x1 and x2), they must be identical. Solving the equation directly or verifying linearity is not enough; it's essential to show that any solution found will be the only one. Checking for extraneous solutions is relevant but not necessary for proving uniqueness.
+
+Explanation:
+The proof should focus on eliminating the possibility of multiple distinct solutions.
+
+Common mistake note:
+Common mistake: Choosing B, which solves the equation but does not prove uniqueness.
+------------------------------------------------------------------------------
+
+Problem 3 (UniqueRootsQuadratic):
+Prove that a quadratic function f(x) = ax^2 + bx + c has at most two unique roots. Which part of the Fundamental Theorem of Algebra is relevant?
+A) Every non-constant polynomial has at least one root.
+B) The number of roots, including multiplicity, equals the degree of the polynomial.
+C) Roots come in conjugate pairs for polynomials with real coefficients.
+D) If a polynomial has complex roots, they appear in complex conjugate pairs.
+Correct Answer: B
+
+Solution:
+The Fundamental Theorem of Algebra states that a polynomial of degree n has exactly n roots, counting multiplicities. For a quadratic function (degree 2), this means it can have at most two roots, which may be repeated if they are not unique. The other choices deal with different aspects of polynomials and their roots.
+
+Explanation:
+The proof should connect the number of roots to the degree of the polynomial.
+
+Common mistake note:
+Common mistake: Choosing A, which is true but does not directly address the uniqueness of quadratic roots.
+------------------------------------------------------------------------------
+
+Problem 4 (UniqueLimitFunction):
+Prove that the limit lim x→c f(x) exists and is unique. Which property of limits is crucial?
+A) The limit of a sum is equal to the sum of the limits.
+B) If f(x) approaches L as x approaches c, then f(c) = L.
+C) The limit of a product is equal to the product of the limits.
+D) The limit of a continuous function at a point exists and is equal to the value of the function at that point.
+Correct Answer: B
+
+Solution:
+To prove uniqueness, we must show that the limit does not depend on the approach to c. Property B ensures that if the limit exists as x approaches c from any direction, it will be equal to f(c), which makes the limit unique. The other choices deal with different properties of limits.
+
+Explanation:
+The proof should focus on demonstrating that the limit value is independent of the approach to c.
+
+Common mistake note:
+Common mistake: Choosing D, which is true for continuous functions but not necessary for proving uniqueness of a limit.
+------------------------------------------------------------------------------
+
+Problem 5 (UniqueSolutionSystem):
+Prove that a system of linear equations has at most one unique solution. Which method would be best to demonstrate this?
+A) Use Cramer's rule.
+B) Express the system as an augmented matrix and row-reduce it.
+C) Check if the coefficient matrix is singular.
+D) Verify that the system does not have any free variables.
+Correct Answer: B
+
+Solution:
+Row reduction of the augmented matrix reveals the nature of the solution: no solutions, one unique solution, or infinitely many solutions. If the row-reduced form has a pivot in every row and column, it indicates a unique solution. The other choices may be useful for solving systems but do not directly prove uniqueness.
+
+Explanation:
+The proof should involve analyzing the row- reduction process to ensure there is only one solution vector.
+
+Common mistake note:
+Common mistake: Choosing A, which can find solutions but does not guarantee uniqueness.
+------------------------------------------------------------------------------
+
+Problem 6 (UniqueRootsPolynomial):
+Prove that a polynomial function of degree n has at most n unique roots. Which part of the Factor Theorem is relevant?
+A) If f(a) = 0, then (x - a) is a factor of f(x).
+B) The product of the roots, including multiplicity, equals the constant term divided by the leading coefficient.
+C) The sum of the roots, including multiplicity, equals the negative of the coefficient of x^(n-1).
+D) If f(a) = 0 and (x - a) is not a factor, then there must be another root.
+Correct Answer: A
+
+Solution:
+The Factor Theorem states that if a polynomial has a root at x = a, then (x - a) is a factor. By considering all possible roots, we can factor the polynomial into linear and/ or quadratic factors, which implies there are at most n unique roots for a degree n polynomial. The other choices deal with relationships between roots and coefficients.
+
+Explanation:
+The proof should involve factoring the polynomial based on its roots.
+
+Common mistake note:
+Common mistake: Choosing B or C, which describe relationships between roots and coefficients but do not directly prove uniqueness.
+------------------------------------------------------------------------------
+
+Problem 7 (UniqueSolutionExponential):
+Prove that an exponential equation of the form a^x = b has a unique solution for x. Which property of logarithms is crucial?
+A) The logarithm of a product is equal to the sum of the logarithms.
+B) The logarithm of a quotient is equal to the difference of the logarithms.
+C) The logarithm of 1 is zero.
+D) If log_b(a) = c, then b^c = a.
+Correct Answer: D
+
+Solution:
+Property D states that taking the logarithm of both sides of an exponential equation allows us to solve for x directly. This property ensures that there will be exactly one value for x that satisfies the equation. The other choices describe different properties of logarithms but do not guarantee uniqueness.
+
+Explanation:
+The proof should involve applying logarithms to both sides of the equation and demonstrating that it leads to a unique solution for x.
+
+Common mistake note:
+Common mistake: Choosing A or B, which are useful for simplifying logarithmic expressions but do not prove uniqueness.
+------------------------------------------------------------------------------

@@ -1,0 +1,147 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.12.9 Compose multiple transformations
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.12 Transformations in the Plane
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IncrementAndSquare):
+Given the function `f(x) = x + 1`, compose it with itself to create a new function `g(x)` that first increments and then squares its input. What is the value of `g(2)`?
+A) 4
+B) 5
+C) 9
+D) 10
+Correct Answer: C
+
+Solution:
+To find `g(x)`, we apply `f(x)` twice: first, we increment `x` by 1, and then we square the result. So, `g(x) = (x + 1)^2`. Now let's evaluate `g(2)` using this new function:
+g(2) = (2 + 1)^2 = 3^2 = 9
+
+Explanation:
+The correct answer is obtained by first incrementing the input by 1 and then squaring the result.
+
+Common mistake note:
+A common mistake would be to square the input before incrementing it, which would lead to an incorrect result of (2)^2 = 4.
+------------------------------------------------------------------------------
+
+Problem 2 (RotateAndTranslate):
+Consider a function `f(x) = x + 3` that translates points along the x-axis by 3 units. If we compose this function with another function `g(x) = -x`, which reflects points across the y-axis, what is the result of `g(f(2))`?
+A) 5
+B) -1
+C) 1
+D) -5
+Correct Answer: B
+
+Solution:
+First, we apply `f(x)` to 2:
+f(2) = 2 + 3 = 5
+Next, we apply `g(x)` to the result of `f(2)`:
+g(f(2)) = g(5) = -5
+
+Explanation:
+The correct answer is obtained by first translating the input along the x-axis and then reflecting it across the y-axis.
+
+Common mistake note:
+A common mistake would be to reflect the input before translating it, which would lead to an incorrect result of -2.
+------------------------------------------------------------------------------
+
+Problem 3 (MultiplyAndCube):
+Given the functions `f(x) = 2x` and `g(x) = x^3`, compose them to create a new function `h(x)` that multiplies and then cubes its input. What is the value of `h(3)`?
+A) 108
+B) 54
+C) 36
+D) 27
+Correct Answer: A
+
+Solution:
+To find `h(x)`, we apply `f(x)` first, then `g(x)`: 
+h(x) = (2x)^3. Now let's evaluate `h(3)` using this new function:
+h(3) = (2 × 3)^3 = 6^3 = 108
+
+Explanation:
+The correct answer is obtained by first multiplying the input by 2 and then cubing the result.
+
+Common mistake note:
+A common mistake would be to cube the input before multiplying it, which would lead to an incorrect result of (3)^3 = 27.
+------------------------------------------------------------------------------
+
+Problem 4 (RotateAndTranslate逆):
+Consider a function `f(x) = x + 3` that translates points along the x-axis by 3 units. If we compose this function with another function `g(x) = -x`, which reflects points across the y-axis, what is the result of `f(g(-2))`?
+A) 1
+B) -1
+C) 5
+D) -5
+Correct Answer: C
+
+Solution:
+First, we apply `g(x)` to -2:
+g(-2) = -(-2) = 2
+Next, we apply `f(x)` to the result of `g(-2)`:
+f(g(-2)) = f(2) = 2 + 3 = 5
+
+Explanation:
+The correct answer is obtained by first reflecting the input across the y-axis and then translating it along the x-axis.
+
+Common mistake note:
+A common mistake would be to translate the input before reflecting it, which would lead to an incorrect result of f(-2) = -2 + 3 = 1.
+------------------------------------------------------------------------------
+
+Problem 5 (幂と平方根):
+Given the functions `f(x) = x^2` and `g(x) = sqrt(x)` (where `sqrt(x)` is the square root function), compose them to create a new function `h(x)` that squares and then takes the square root of its input. What is the value of `h(9)`?
+A) 3
+B) 6
+C) 8
+D) 9
+Correct Answer: A
+
+Solution:
+To find `h(x)`, we apply `f(x)` first, then `g(x)`: 
+h(x) = sqrt(x^2). Now let's evaluate `h(9)` using this new function:
+h(9) = sqrt(9^2) = sqrt(81) = 9
+
+Explanation:
+The correct answer is obtained by first squaring the input and then taking the square root of the result. Since squaring and then taking the square root cancels each other out for non-negative inputs, h(x) will always return x for non-negative x.
+
+Common mistake note:
+A common mistake would be to think that the composition results in x (i.e., h(9) = 9), without considering that squaring and taking the square root cancel each other out.
+------------------------------------------------------------------------------
+
+Problem 6 (三角関数の変換):
+Given the functions `f(x) = sin(x)` and `g(x) = 2x`, compose them to create a new function `h(x)` that takes the sine of its input and then doubles it. What is the value of `h(pi/6)`?
+A) 1
+B) sqrt(3)/2
+C) 1/sqrt(2)
+D) sqrt(2)
+Correct Answer: C
+
+Solution:
+To find `h(x)`, we apply `f(x)` first, then `g(x)`: 
+h(x) = 2sin(x). Now let's evaluate `h(pi/6)` using this new function:
+h(pi/6) = 2sin(pi/6) = 2 × (1/2) = 1
+
+Explanation:
+The correct answer is obtained by first taking the sine of the input and then doubling the result.
+
+Common mistake note:
+A common mistake would be to double the input before taking the sine, which would lead to an incorrect result of 2 × (pi/6) = pi/3.
+------------------------------------------------------------------------------
+
+Problem 7 (指数関数と対数):
+Given the functions `f(x) = 2^x` and `g(x) = log_2(x)` (where `log_2(x)` is the base-2 logarithm function), compose them to create a new function `h(x)` that takes an exponential of its input and then finds the logarithm. What is the value of `h(4)`?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: D
+
+Solution:
+To find `h(x)`, we apply `f(x)` first, then `g(x)`: 
+h(x) = log_2(2^x). Now let's evaluate `h(4)` using this new function:
+h(4) = log_2(2^4) = log_2(16) = 4
+
+Explanation:
+The correct answer is obtained by first taking the exponential of the input and then finding its base-2 logarithm. Since raising to a power and taking the logarithm with the same base cancel each other out, h(x) will always return x for positive x.
+
+Common mistake note:
+A common mistake would be to think that the composition results in 1 (i.e., h(4) = 1), without considering that raising to a power and taking the logarithm with the same base cancel each other out.
+------------------------------------------------------------------------------

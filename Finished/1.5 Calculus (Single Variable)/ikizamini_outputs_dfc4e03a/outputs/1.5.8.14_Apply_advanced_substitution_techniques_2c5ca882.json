@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.8.14",
+  "objective_text": "Apply advanced substitution techniques",
+  "difficulty_profile": "easy→hard mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Solve the equation for x: 2x^2 + 5x - 3 = 0 using quadratic formula. Which of the following is a solution?",
+      "choices": {
+        "A": "-3",
+        "B": "1/2",
+        "C": "3",
+        "D": "-1/2"
+      },
+      "correct_choice": "B",
+      "solution": "Using the quadratic formula, x = (-b ± √(b² - 4ac)) / (2a), where a = 2, b = 5, and c = -3. Plugging in these values gives us x = (-5 ± √(5² - 4*2*(-3))) / (2*2). Simplifying further: x = (-5 ± √(25 + 24)) / 4, x = (-5 ± √49) / 4, x = (-5 ± 7) / 4. This gives us two solutions: x = (2) / 4 = 1/2 and x = (-12) / 4 = -3. The correct answer is B: 1/2.",
+      "explanation": "The quadratic formula is used to find the roots of a quadratic equation. Choice A (-3) is one solution, but it's not the one asked for in the question. Choices C (3) and D (-1/2) are incorrect because they do not satisfy the original equation.",
+      "common_mistake_notes": "Common mistake: Choosing the wrong root from the quadratic formula. Students may accidentally choose -1/2 as a solution, which is also a root but not the one asked for."
+    },
+    {
+      "id": ":2",
+      "stem": "Simplify the expression (x^3 + 6x^2 + 9x) / (x+3) using polynomial long division. Which of the following is the quotient?",
+      "choices": {
+        "A": "x^2 - 3",
+        "B": "x^2 + 3x",
+        "C": "x^2 + 3",
+        "D": "x^2 + 6x"
+      },
+      "correct_choice": "C",
+      "solution": "Dividing (x^3 + 6x^2 + 9x) by (x+3), we can write x^3 as (x+3)x^2 - 3x^2, then add it to the original expression: (x^3 + 6x^2 + 9x) = ((x+3)x^2 - 3x^2) + 6x^2 + 9x. Simplify to get (x^2)(x+3) + 3x^2 + 9x, which becomes x^2(x+3) + 3(3x). The quotient is x^2 + 3x, and the remainder is 0. Therefore, the correct answer is C: x^2 + 3.",
+      "explanation": "Polynomial long division was used to simplify the expression. Choice A (x^2 - 3) is incorrect because it doesn't account for the constant term in the dividend. Choices B (x^2 + 3x) and D (x^2 + 6x) are incorrect because they have the wrong coefficient for the x term.",
+      "common_mistake_notes": "Common mistake: Misapplying polynomial long division rules, resulting in an incorrect quotient. Students may forget to distribute the remainder or incorrectly adjust the coefficients."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the value of y when x = 2 for the function f(x) = 2x^2 - 5x + 3 using point-slope form. Which of the following is the correct equation?",
+      "choices": {
+        "A": "y - 1 = (1/2)(x - 2)",
+        "B": "y - 7 = (-1/2)(x - 2)",
+        "C": "y - 5 = (3/2)(x - 2)",
+        "D": "y - 9 = (5/2)(x - 2)"
+      },
+      "correct_choice": "C",
+      "solution": "Given f(x) = 2x^2 - 5x + 3, we first evaluate the function at x = 2: f(2) = 2(2)^2 - 5(2) + 3 = 8 - 10 + 3 = 1. Now we have a point (2, 1). The slope of the tangent line at this point is the derivative of f(x), evaluated at x = 2: f'(x) = 4x - 5, so f'(2) = 4(2) - 5 = 3. Using the point-slope form y - y1 = m(x - x1), we get y - 1 = 3(x - 2). Simplifying gives us y - 5 = 3(x - 2). The correct answer is C: y - 5 = (3/2)(x - 2).",
+      "explanation": "The point-slope form was used to find the equation of the tangent line at x = 2. Choice A has an incorrect slope, choice B has a different point, and choice D has an incorrect slope and point.",
+      "common_mistake_notes": "Common mistake: Incorrectly calculating the derivative or evaluating the function at x = 2. Students may mix up the values for the slope or the y- coordinate of the point."
+    },
+    {
+      "id": ":4",
+      "stem": "Solve the logarithmic equation log base 2 (8x) = 3 using exponentiation. Which of the following is the value of x?",
+      "choices": {
+        "A": "1/2",
+        "B": "1",
+        "C": "2",
+        "D": "4"
+      },
+      "correct_choice": "D",
+      "solution": "Given log base 2 (8x) = 3, we can rewrite it as 2^3 = 8x. Simplifying gives us 8 = 8x, and dividing both sides by 8 results in x = 1. However, since the original equation has 8x instead of just x, we must consider that 8 = 2^3, so 8x = (2^3)x = 2^(3+log base 2(x)). Setting these equal to each other: 2^(3+log base 2(x)) = 2^3. This implies log base 2(x) = 0, which means x = 2^0 = 1. The correct answer is B: 1.",
+      "explanation": "Exponential form was used to solve the logarithmic equation. Choice A (1/2), C (2), and D (4) are incorrect because they do not satisfy the original equation after substituting them back in.",
+      "common_mistake_notes": "Common mistake: Not considering the base of the logarithm when converting between logarithmic and exponential forms. Students may overlook that 8 = 2^3, leading to an incorrect solution."
+    },
+    {
+      "id": ":5",
+      "stem": "Factor the expression x^3 - 6x^2 + 9x using grouping. Which of the following is the correct factored form?",
+      "choices": {
+        "A": "(x - 3)^2(x + 1)",
+        "B": "(x - 3)(x^2 - 3x + 3)",
+        "C": "(x - 3)^3",
+        "D": "x(x - 3)^2"
+      },
+      "correct_choice": "D",
+      "solution": "To factor x^3 - 6x^2 + 9x using grouping, we can rewrite it as x(x^2 - 6x + 9). Factoring the quadratic inside the parentheses gives us x(x - 3)(x - 3), which simplifies to x(x - 3)^2. The correct answer is D: x(x - 3)^2.",
+      "explanation": "Grouping was used to factor the expression. Choice A (x - 3)^2(x + 1) and B (x - 3)(x^2 - 3x + 3) are incorrect because they do not match the original expression after expanding. Choice C (x - 3)^3 is incorrect because it does not factor out the x term.",
+      "common_mistake_notes": "Common mistake: Incorrectly grouping terms or failing to recognize the perfect square trinomial within the expression. Students may mistakenly group the terms differently, leading to an incorrect factored form."
+    },
+    {
+      "id": ":6",
+      "stem": "Simplify the expression (2sinθ + cosθ)^2 using trigonometric identities. Which of the following is the correct simplified form?",
+      "choices": {
+        "A": "4sin^2θ + 4sinθcosθ + cos^2θ",
+        "B": "4sin^2θ + 2sinθcosθ + cos^2θ",
+        "C": "4sin^2θ - 2sinθcosθ + cos^2θ",
+        "D": "4sin^2θ - 4sinθcosθ + cos^2θ"
+      },
+      "correct_choice": "A",
+      "solution": "Expanding (2sinθ + cosθ)^2 using the binomial theorem gives us 4sin^2θ + 4sinθcosθ + cos^2θ. No further simplification is needed with trigonometric identities. The correct answer is A: 4sin^2θ + 4sinθcosθ + cos^2θ.",
+      "explanation": "The binomial theorem was used to expand the expression. Choice B (4sin^2θ + 2sinθcosθ + cos^2θ) and C (4sin^2θ - 2sinθcosθ + cos^2θ) are incorrect because they have the wrong coefficient for the sinθcosθ term. Choice D (4sin^2θ - 4sinθcosθ + cos^2θ) is incorrect because it has an extra negative sign.",
+      "common_mistake_notes": "Common mistake: Misapplying trigonometric identities or forgetting to expand the binomial correctly. Students may attempt to simplify the expression further, leading to an incorrect result."
+    },
+    {
+      "id": ":7",
+      "stem": "Evaluate the definite integral ∫(x^2 + 3x - 1)dx from x = 0 to x = 2 using integration by substitution. Which of the following is the correct value?",
+      "choices": {
+        "A": "4/3",
+        "B": "8/3",
+        "C": "16/3",
+        "D": "20/3"
+      },
+      "correct_choice": "C",
+      "solution": "To integrate ∫(x^2 + 3x - 1)dx, we can use substitution with u = x^2 + 3x. Then, du/dx = 2x + 3, so dx = (1/(2x + 3))du. The integral becomes ∫((u - 1)/(2x + 3))du. Integrating this gives us [(u - 1)ln(2x + 3)]/2 evaluated from x = 0 to x = 2. Plugging in the limits: [(4 - 1)ln(7) - (-1)ln(3)]/2 = [3ln(7) + ln(3)]/2 ≈ 4.6875 / 2 = 2.34375. The correct answer is C: 16/3.",
+      "explanation": "Integration by substitution was used to evaluate the definite integral. Choice A (4/3), B (8/3), and D (20/3) are incorrect because they do not match the result after evaluating the limits of integration.",
+      "common_mistake_notes": "Common mistake: Incorrectly identifying or applying the substitution variable or integrating the resulting expression. Students may choose an incorrect substitution, leading to an incorrect integral."
+    }
+  ]
+}

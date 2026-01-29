@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.1.12 Apply spherical coordinates
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.1 Coordinate Systems
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (OneSphereRadius):
+Find the radius of a sphere with spherical coordinates (2, π/3, √3).
+A) 1
+B) √3
+C) 2
+D) 2√3
+Correct Answer: C
+
+Solution:
+The radius in spherical coordinates is given by the first value, which is 2.
+
+Explanation:
+In spherical coordinates (r, θ, φ), r represents the distance from the origin to a point on the surface of a sphere. Given (r, θ, φ) = (2, π/3, √3), the radius r is 2.
+
+Common mistake note:
+A common mistake would be to choose option A or B, which are the values for θ and φ respectively, instead of choosing the correct value for r.
+------------------------------------------------------------------------------
+
+Problem 2 (TwoSphereVolume):
+Calculate the volume of a sphere with spherical coordinates (3, π/4, 2π/3).
+A) 9π
+B) 18π
+C) 27π
+D) 54π
+Correct Answer: C
+
+Solution:
+The volume of a sphere is given by (4/3)πr^3. Plugging in r = 3, we get (4/3)π(3)^3 = 27π.
+
+Explanation:
+The formula for the volume V of a sphere with radius r is V = (4/3)πr^3. Given r = 3 from the spherical coordinates, we can calculate the volume as V = (4/3)π(3)^3 = 27π.
+
+Common mistake note:
+A common mistake would be to forget to cube the radius or to use the wrong formula for the sphere's surface area instead of its volume.
+------------------------------------------------------------------------------
+
+Problem 3 (SphereToCartesian):
+Convert the spherical coordinates (4, π/2, 5π/3) into Cartesian coordinates.
+A) (2√3, -2, 0)
+B) (-2√3, 2, 0)
+C) (2, 0, -2√3)
+D) (2, 0, 2√3)
+Correct Answer: A
+
+Solution:
+Using the conversion formulas x = r*sin(θ)*cos(φ), y = r*sin(θ)*sin(φ), and z = r*cos(θ), we get (x, y, z) = (4*sin(π/2)*cos(5π/3), 4*sin(π/2)*sin(5π/3), 4*cos(π/2)) = (2√3, -2, 0).
+
+Explanation:
+To convert spherical coordinates to Cartesian coordinates, we use the formulas x = r*sin(θ)*cos(φ), y = r*sin(θ)*sin(φ), and z = r*cos(θ). Given (r, θ, φ) = (4, π/2, 5π/3), we can calculate the Cartesian coordinates as follows: x = 4*sin(π/2)*cos(5π/3) = 2√3, y = 4*sin(π/2)*sin(5π/3) = -2, and z = 4*cos(π/2) = 0.
+
+Common mistake note:
+A common mistake would be to mix up the angles or use incorrect trigonometric values for sin and cos.
+------------------------------------------------------------------------------
+
+Problem 4 (SphereToCylindrical):
+Convert the spherical coordinates (5, π/3, π/6) into cylindrical coordinates.
+A) (2√3, π/3, 5)
+B) (2√3, π/6, 5)
+C) (5, π/3, √3)
+D) (5, π/6, √3)
+Correct Answer: C
+
+Solution:
+Using the conversion formulas r = √(x^2 + y^2), θ = arctan(y/x) (or θ = π - arctan(x/y) if x < 0), and z = z, we get (r, θ, z) = (√(5^2), π/3, √3).
+
+Explanation:
+To convert spherical coordinates to cylindrical coordinates, we use the formulas r = √(x^2 + y^2), θ = arctan(y/x) (or θ = π - arctan(x/y) if x < 0), and z = z. Given (r, θ, φ) = (5, π/3, π/6), we can calculate the cylindrical coordinates as follows: r = √(x^2 + y^2) = √((r*sin(θ)*cos(φ))^2 + (r*sin(θ)*sin(φ))^2) = √(5^2), θ = π/3, and z = √3.
+
+Common mistake note:
+A common mistake would be to use the wrong conversion formula or to mix up the angles.
+------------------------------------------------------------------------------
+
+Problem 5 (SphericalArea):
+Find the surface area of a sphere with spherical coordinates (6, π/6, 2π/5).
+A) 9π
+B) 36π
+C) 72π
+D) 108π
+Correct Answer: B
+
+Solution:
+The surface area of a sphere is given by 4πr^2. Plugging in r = 6, we get 4π(6)^2 = 36π.
+
+Explanation:
+The formula for the surface area A of a sphere with radius r is A = 4πr^2. Given r = 6 from the spherical coordinates, we can calculate the surface area as A = 4π(6)^2 = 36π.
+
+Common mistake note:
+A common mistake would be to forget to square the radius or to use the wrong formula for the sphere's volume instead of its surface area.
+------------------------------------------------------------------------------
+
+Problem 6 (SphereIntersection):
+Find the intersection points between two spheres with spherical coordinates (2, π/4, π/3) and (1, 3π/4, π/6). Assume they intersect at exactly two points.
+A) (±√(3/2), π/4, π/3)
+B) (±√(3/2), 3π/4, π/6)
+C) (±1, π/4, π/3)
+D) (±1, 3π/4, π/6)
+Correct Answer: A
+
+Solution:
+The intersection points can be found by equating the corresponding spherical coordinates. For r, we have 2 = √(1^2 + (r*sin(3π/4)*cos(π/6))^2 + (r*sin(3π/4)*sin(π/6))^2), which simplifies to r = √(3/2). The intersection points are thus (±√(3/2), π/4, π/3).
+
+Explanation:
+To find the intersection points between two spheres with spherical coordinates, we equate the corresponding coordinates. Given (r1, θ1, φ1) = (2, π/4, π/3) and (r2, θ2, φ2) = (1, 3π/4, π/6), we can solve for r by setting r1 equal to the square root of the sum of squares of the Cartesian coordinates corresponding to r2. This gives us 2 = √(1^2 + (r*sin(3π/4)*cos(π/6))^2 + (r*sin(3π/4)*sin(π/6))^2), which simplifies to r = √(3/2). The intersection points are thus (±√(3/2), π/4, π/3).
+
+Common mistake note:
+A common mistake would be to assume that the intersection points can be found simply by equating θ and φ without considering the radii of the spheres.
+------------------------------------------------------------------------------
+
+Problem 7 (SphereDistance):
+Find the distance between two points with spherical coordinates (4, π/3, π/2) and (6, 5π/3, π).
+A) 2√7
+B) 2√10
+C) 2√13
+D) 2√19
+Correct Answer: B
+
+Solution:
+The distance between two points in spherical coordinates can be calculated using the law of cosines: d = √(r1^2 + r2^2 - 2r1r2*cos(Δθ)*cos(Δφ)). Given (r1, θ1, φ1) = (4, π/3, π/2) and (r2, θ2, φ2) = (6, 5π/3, π), we have d = √(4^2 + 6^2 - 2*4*6*cos(π/3)*cos(π)) = 2√10.
+
+Explanation:
+To find the distance between two points with spherical coordinates, we use the law of cosines in spherical coordinates: d = √(r1^2 + r2^2 - 2r1r2*cos(Δθ)*cos(Δφ)), where Δθ is the difference between θ values and Δφ is the difference between φ values. Given (r1, θ1, φ1) = (4, π/3, π/2) and (r2, θ2, φ2) = (6, 5π/3, π), we can calculate the distance as d = √(4^2 + 6^2 - 2*4*6*cos(π/3)*cos(π)) = 2√10.
+
+Common mistake note:
+A common mistake would be to use the wrong formula or to mix up the angles when calculating the difference between θ and φ.
+------------------------------------------------------------------------------

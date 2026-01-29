@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.14.10",
+  "objective_text": "Design mechanical linkages",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Inclined Plane Mechanism",
+      "stem": "An inclined plane is a simple machine that converts vertical force into horizontal motion. How can an inclined plane be used in a mechanical linkage?",
+      "choices": {
+        "A": "As a lever to increase torque.",
+        "B": "As a wheel and axle to reduce friction.",
+        "C": "As a pulley system to change the direction of force.",
+        "D": "As a sliding surface to convert vertical into horizontal motion."
+      },
+      "correct_choice": "D",
+      "solution": "An inclined plane is used as a sliding surface that converts vertical force into horizontal motion. Choices A (lever) and C (pulley system) are incorrect because they involve different mechanisms, while choice B (wheel and axle) does not convert forces between vertical and horizontal directions.",
+      "explanation": "Inclined planes are one of the six classical simple machines that help in performing tasks more efficiently by changing the direction or magnitude of force applied.",
+      "common_mistake_notes": "Common mistake is to confuse an inclined plane with other simple machines like levers, pulleys, or wheels and axles."
+    },
+    {
+      "id": "Gearing Mechanism",
+      "stem": "A gear train consists of two gears connected by teeth, allowing the transfer of rotational motion between them. How can a gear train be used in a mechanical linkage?",
+      "choices": {
+        "A": "To increase torque and speed.",
+        "B": "To decrease torque and maintain same speed.",
+        "C": "To maintain torque and change speed.",
+        "D": "To decrease both torque and speed."
+      },
+      "correct_choice": "C",
+      "solution": "A gear train is used to maintain torque while changing the speed of rotation. Choices A (increase torque and speed) and B (decrease torque) are incorrect because gears do not change torque, and choice D (decrease both torque and speed) is also incorrect.",
+      "explanation": "Gears work together to transmit power from one shaft to another, allowing for adjustments in speed and torque ratios between input and output.",
+      "common_mistake_notes": "Common mistake is to assume that gears increase or decrease torque without considering their primary function of changing speed."
+    },
+    {
+      "id": "Cam Mechanism",
+      "stem": "A cam mechanism uses a rotating wheel with a protruding shape (cam) to control the motion of a follower. What is the purpose of a cam mechanism in a mechanical linkage?",
+      "choices": {
+        "A": "To convert reciprocating motion into rotary motion.",
+        "B": "To convert rotary motion into reciprocating motion.",
+        "C": "To amplify force applied to the cam.",
+        "D": "To change the direction of rotation."
+      },
+      "correct_choice": "B",
+      "solution": "A cam mechanism is used to convert rotary motion into reciprocating motion. Choices A (convert reciprocating to rotary) describes a different type of mechanism, choice C (amplify force) is not its primary function, and choice D (change direction of rotation) does not accurately describe the purpose of a cam.",
+      "explanation": "Cams are used in various applications such as engines, pumps, and纺织 machines to control the movement of mechanical components based on the rotation of the cam.",
+      "common_mistake_notes": "Common mistake is to confuse the function of a cam mechanism with other mechanisms that convert motion between different forms."
+    },
+    {
+      "id": "Pendulum Mechanism",
+      "stem": "A pendulum is a weight suspended from a pivot, which swings back and forth under the influence of gravity. How can a pendulum be used in a mechanical linkage?",
+      "choices": {
+        "A": "To measure time in a clock.",
+        "B": "To generate electricity through oscillation.",
+        "C": "To lift heavy objects using gravitational potential energy.",
+        "D": "To transmit torque between two shafts."
+      },
+      "correct_choice": "A",
+      "solution": "A pendulum can be used to measure time in a clock. Choices B (generate electricity) and C (lift heavy objects) are incorrect as they're not common applications, and choice D (transmit torque) is not the primary purpose of a pendulum.",
+      "explanation": "Pendulums are known for their regular oscillations, which can be used to regulate timekeeping devices like clocks.",
+      "common_mistake_notes": "Common mistake is to associate pendulums with energy generation or mechanical power transmission."
+    },
+    {
+      "id": "Linkage Mechanism",
+      "stem": "A four-bar linkage consists of four bars connected by铰接 points, allowing relative motion between them. What type of movement can a four-bar linkage produce?",
+      "choices": {
+        "A": "Linear motion only.",
+        "B": "Rotary motion only.",
+        "C": "Both linear and rotary motion depending on the configuration.",
+        "D": "No motion at all."
+      },
+      "correct_choice": "C",
+      "solution": "A four-bar linkage can produce both linear and rotary motion, depending on its configuration. Choices A (linear motion only) and B (rotary motion only) are incorrect because it can create a combination of both, and choice D (no motion at all) is not true for a functional four-bar linkage.",
+      "explanation": "Four-bar linkages are widely used in various mechanisms such as steering systems, robotic arms, and mechanical toys to produce different types of motion.",
+      "common_mistake_notes": "Common mistake is to assume that a four-bar linkage can only produce one type of motion without considering its configuration."
+    },
+    {
+      "id": "Ratchet Mechanism",
+      "stem": "A ratchet mechanism consists of a toothed wheel (ratchet) and a pawl, allowing movement in one direction only. How does a ratchet mechanism work in a mechanical linkage?",
+      "choices": {
+        "A": "To lock the motion in both directions.",
+        "B": "To allow motion in both directions with reduced friction.",
+        "C": "To permit motion in one direction while preventing reverse motion.",
+        "D": "To amplify force applied to the pawl."
+      },
+      "correct_choice": "C",
+      "solution": "A ratchet mechanism permits motion in one direction while preventing reverse motion. Choices A (lock motion in both directions) and B (reduce friction) are incorrect, and choice D (amplify force) is not the main purpose of a ratchet.",
+      "explanation": "Ratchets are commonly used in tools like wrenches and socket sets to allow tightening or loosening of bolts without constant manual adjustments.",
+      "common_mistake_notes": "Common mistake is to confuse the function of a ratchet mechanism with other mechanisms that lock or amplify force."
+    },
+    {
+      "id": "Screw Mechanism",
+      "stem": "A screw mechanism consists of a helical groove (thread) on a shaft, allowing linear motion when rotated. How can a screw mechanism be used in a mechanical linkage?",
+      "choices": {
+        "A": "To convert rotary motion into reciprocating motion.",
+        "B": "To transmit torque between two shafts at different angles.",
+        "C": "To lift heavy objects using rotational force.",
+        "D": "To change the speed and direction of rotation."
+      },
+      "correct_choice": "C",
+      "solution": "A screw mechanism can be used to lift heavy objects using rotational force. Choices A (convert rotary to reciprocating) describes a cam, choice B (transmit torque at different angles) is not its primary function, and choice D (change speed and direction of rotation) does not accurately describe the purpose of a screw.",
+      "explanation": "Screws are widely used in various applications like nuts and bolts, jacks, and elevators to convert rotational motion into linear force.",
+      "common_mistake_notes": "Common mistake is to associate screws with other mechanisms that perform different functions."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.9.7",
+  "objective_text": "Apply ratio test for complex series",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Determine the convergence of the series ∑(zn), where zn = (3i)^n.",
+      "choices": {
+        "A": "Convergent by Ratio Test",
+        "B": "Divergent by Ratio Test",
+        "C": "Inconclusive by Ratio Test",
+        "D": "Absolutely Convergent"
+      },
+      "correct_choice": "B",
+      "solution": "The ratio test states that if |zn+1/zn| < 1, the series converges. Let's apply it to zn = (3i)^n.",
+      "explanation": "Ratio Test: lim (n→∞) |(3i)^(n+1)/(3i)^n| = lim (n→∞) |3i| = 3 > 1, which means the series diverges by the ratio test.",
+      "common_mistake_notes": "A common mistake is to assume that since zn approaches zero as n increases, the series converges. However, this is not sufficient; we must consider the absolute value of the ratio."
+    },
+    {
+      "id": "?",
+      "stem": "Evaluate the convergence of the series ∑(n^2/(3+4i)^n).",
+      "choices": {
+        "A": "Convergent by Ratio Test",
+        "B": "Divergent by Ratio Test",
+        "C": "Inconclusive by Ratio Test",
+        "D": "Absolutely Convergent"
+      },
+      "correct_choice": "A",
+      "solution": "Applying the ratio test, we have |(n+1)^2/(3+4i)^(n+1)/(n^2/(3+4i)^n)| = (n+1)^2 / |(3+4i)|^2.",
+      "explanation": "lim (n→∞) [(n+1)^2 / |(3+4i)|^2] = lim (n→∞) [n^2/(9 + 16)] = 0 < 1, which means the series converges by the ratio test.",
+      "common_mistake_notes": "A common mistake is to forget that we must take the absolute value of the complex number in the denominator. Without it, the limit would be infinity and lead to a wrong conclusion."
+    },
+    {
+      "id": "?",
+      "stem": "Determine if the series ∑(e^(niπ)) converges using the ratio test.",
+      "choices": {
+        "A": "Convergent by Ratio Test",
+        "B": "Divergent by Ratio Test",
+        "C": "Inconclusive by Ratio Test",
+        "D": "Absolutely Convergent"
+      },
+      "correct_choice": "C",
+      "solution": "The ratio test is inconclusive because the limit of |e^(n(iπ) + iπ)/e^(niπ)| does not exist.",
+      "explanation": "lim (n→∞) |e^(n(iπ) + iπ)/e^(niπ)| = lim (n→∞) |e^(iπ)| = 1, but the limit does not provide enough information to determine convergence or divergence. The ratio test is inconclusive.",
+      "common_mistake_notes": "A common mistake is to assume that since e^(iπ) = -1 and the series seems to oscillate, it must converge. However, this is not sufficient; we need a limit strictly less than 1 for convergence."
+    },
+    {
+      "id": "?",
+      "stem": "Test the convergence of the series ∑((-2i)^n/ n).",
+      "choices": {
+        "A": "Convergent by Ratio Test",
+        "B": "Divergent by Ratio Test",
+        "C": "Inconclusive by Ratio Test",
+        "D": "Absolutely Convergent"
+      },
+      "correct_choice": "A",
+      "solution": "The ratio test gives |((-2i)^(n+1)/(n+1))/((-2i)^n/ n)| = |-2i| < 1, which implies convergence.",
+      "explanation": "lim (n→∞) |-2i| = 2 < 1, so the series converges by the ratio test. Since the terms are not all non-negative, we cannot conclude absolute convergence without further analysis.",
+      "common_mistake_notes": "A common mistake is to overlook that the limit of the ratio must be less than 1 for convergence; here, it's just 2, which is not enough."
+    },
+    {
+      "id": "?",
+      "stem": "Analyze the convergence of the series ∑((-3)^n/(4+5i)^n).",
+      "choices": {
+        "A": "Convergent by Ratio Test",
+        "B": "Divergent by Ratio Test",
+        "C": "Inconclusive by Ratio Test",
+        "D": "Absolutely Convergent"
+      },
+      "correct_choice": "B",
+      "solution": "The ratio test gives |((-3)^(n+1)/(4+5i)^(n+1))/((-3)^n/(4+5i)^n)| = |-3| > 1, which implies divergence.",
+      "explanation": "lim (n→∞) |-3| = 3 > 1, so the series diverges by the ratio test. No further analysis is needed for this conclusion.",
+      "common_mistake_notes": "A common mistake is to forget that we must take the absolute value of both the numerator and denominator in the ratio test."
+    },
+    {
+      "id": "?",
+      "stem": "Determine the convergence of the series ∑((-1)^(n+1)/(2+3i)^n).",
+      "choices": {
+        "A": "Convergent by Ratio Test",
+        "B": "Divergent by Ratio Test",
+        "C": "Inconclusive by Ratio Test",
+        "D": "Absolutely Convergent"
+      },
+      "correct_choice": "A",
+      "solution": "The ratio test gives |((-1)^(n+2)/(2+3i)^(n+1))/((-1)^(n+1)/(2+3i)^n)| = |-1| < 1, which implies convergence.",
+      "explanation": "lim (n→∞) |-1| = 1 < 1, so the series converges by the ratio test. Since the terms are not all non-negative, we cannot conclude absolute convergence without further analysis.",
+      "common_mistake_notes": "A common mistake is to overlook that the limit of the ratio must be less than 1 for convergence; here, it's just 1, which is not enough."
+    },
+    {
+      "id": "?",
+      "stem": "Use the ratio test to determine the convergence of the series ∑((-4i)^n/(n^3)).",
+      "choices": {
+        "A": "Convergent by Ratio Test",
+        "B": "Divergent by Ratio Test",
+        "C": "Inconclusive by Ratio Test",
+        "D": "Absolutely Convergent"
+      },
+      "correct_choice": "A",
+      "solution": "The ratio test gives |((-4i)^(n+1)/(n+1)^3)/((-4i)^n/ n^3)| = |-4i| < 1, which implies convergence.",
+      "explanation": "lim (n→∞) |-4i| = 4 < 1, so the series converges by the ratio test. Since the terms are not all non-negative, we cannot conclude absolute convergence without further analysis.",
+      "common_mistake_notes": "A common mistake is to forget that we must take the absolute value of both the numerator and denominator in the ratio test."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.10.8",
+  "objective_text": "Parametrize circles",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the standard form equation of a circle with center (h, k) and radius r?",
+      "choices": {
+        "A": "(x - h)^2 + (y - k)^2 = r^2",
+        "B": "(x + h)^2 + (y + k)^2 = r^2",
+        "C": "x^2 + y^2 = r^2",
+        "D": "(h - x)^2 + (k - y)^2 = r^2"
+      },
+      "correct_choice": "A",
+      "solution": "The standard form equation of a circle with center (h, k) and radius r is (x - h)^2 + (y - k)^2 = r^2. This equation represents the set of all points that are equidistant from the center.",
+      "explanation": "The standard form helps to identify the center and radius directly from the equation.",
+      "common_mistake_notes": "A common mistake is to reverse the signs in the center coordinates, which would result in choice B. This form does not represent a circle with the given center."
+    },
+    {
+      "id": ":2",
+      "stem": "What are the parametric equations for a circle with radius 3 and center at the origin?",
+      "choices": {
+        "A": "x = 3π, y = 3π",
+        "B": "x = 3θ cos(θ), y = 3θ sin(θ)",
+        "C": "x = 3cos(θ), y = 3sin(θ)",
+        "D": "x = 3sin(θ), y = 3cos(θ)"
+      },
+      "correct_choice": "C",
+      "solution": "The parametric equations for a circle with radius r and center at the origin are x = r cos(θ) and y = r sin(θ). For a circle with radius 3, these equations become x = 3cos(θ) and y = 3sin(θ).",
+      "explanation": "Parametric equations describe the coordinates of points on a curve as functions of a single variable (θ). In this case, θ ranges from 0 to 2π to cover the entire circle.",
+      "common_mistake_notes": "A common mistake is to use θ instead of cos(θ) and sin(θ), which would result in choice A. This form does not represent a circle."
+    },
+    {
+      "id": ":3",
+      "stem": "What are the parametric equations for a circle with center (2, 1) and radius 4?",
+      "choices": {
+        "A": "x = 2 + 4cos(θ), y = 1 + 4sin(θ)",
+        "B": "x = 2 - 4cos(θ), y = 1 - 4sin(θ)",
+        "C": "x = 4cos(θ) + 2, y = 4sin(θ) + 1",
+        "D": "x = 4cos(θ) - 2, y = 4sin(θ) - 1"
+      },
+      "correct_choice": "A",
+      "solution": "The parametric equations for a circle with center (h, k) and radius r are x = h + r cos(θ) and y = k + r sin(θ). For a circle with center (2, 1) and radius 4, these equations become x = 2 + 4cos(θ) and y = 1 + 4sin(θ).",
+      "explanation": "The parametric equations for a shifted circle include the coordinates of the center in the equation.",
+      "common_mistake_notes": "A common mistake is to reverse the signs in the center coordinates, which would result in choice B. This form does not represent a circle with the given center."
+    },
+    {
+      "id": ":4",
+      "stem": "What is the value of θ when the parametric point (x, y) = (5, 3) on a circle with radius 6 and center at the origin corresponds to the quarter where cos(θ) > 0 and sin(θ) > 0?",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "3π/4",
+        "D": "π"
+      },
+      "correct_choice": "A",
+      "solution": "The point (5, 3) lies in the first quadrant where both cos(θ) and sin(θ) are positive. The angle π/4 corresponds to this quadrant because cos(π/4) = √2/2 and sin(π/4) = √2/2.",
+      "explanation": "The first quadrant is where both cosine and sine are positive. The angle that corresponds to this quadrant is π/4.",
+      "common_mistake_notes": "A common mistake is to choose B, which represents the second quadrant where cos(θ) < 0 and sin(θ) > 0."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the value of r when the parametric equations for a circle are x = 4cos(θ) - 3 and y = 4sin(θ) + 2?",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_choice": "D",
+      "solution": "The parametric equations for a circle with center (h, k) and radius r are x = h + r cos(θ) and y = k + r sin(θ). Comparing the given equations to this form, we see that r is equal to 4.",
+      "explanation": "The coefficient of cos(θ) and sin(θ) in the parametric equations represents the radius of the circle.",
+      "common_mistake_notes": "A common mistake is to choose C or B, which would be the distance between the origin and the center (3 or 2), not the actual radius."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the value of θ when the parametric point (x, y) = (-5, -3) on a circle with center at (1, 2) and radius 6 corresponds to the quarter where cos(θ) < 0 and sin(θ) < 0?",
+      "choices": {
+        "A": "π",
+        "B": "3π/2",
+        "C": "5π/4",
+        "D": "7π/4"
+      },
+      "correct_choice": "B",
+      "solution": "The point (-5, -3) lies in the third quadrant where both cos(θ) and sin(θ) are negative. The angle 3π/2 corresponds to this quadrant because cos(3π/2) = -√2/2 and sin(3π/2) = -√2/2.",
+      "explanation": "The third quadrant is where both cosine and sine are negative. The angle that corresponds to this quadrant is 3π/2.",
+      "common_mistake_notes": "A common mistake is to choose A, which represents the fourth quadrant where cos(θ) > 0 and sin(θ) < 0."
+    },
+    {
+      "id": ":7",
+      "stem": "What are the parametric equations for a circle with center at (-2, 3) and radius 5?",
+      "choices": {
+        "A": "x = -2 + 5cos(θ), y = 3 + 5sin(θ)",
+        "B": "x = -2 - 5cos(θ), y = 3 - 5sin(θ)",
+        "C": "x = 5cos(θ) - 2, y = 5sin(θ) + 3",
+        "D": "x = 5cos(θ) + 2, y = 5sin(θ) - 3"
+      },
+      "correct_choice": "C",
+      "solution": "The parametric equations for a circle with center (h, k) and radius r are x = h + r cos(θ) and y = k + r sin(θ). For a circle with center (-2, 3) and radius 5, these equations become x = -2 + 5cos(θ) and y = 3 + 5sin(θ).",
+      "explanation": "The parametric equations for a shifted circle include the coordinates of the center in the equation.",
+      "common_mistake_notes": "A common mistake is to reverse the signs in the center coordinates, which would result in choice B. This form does not represent a circle with the given center."
+    }
+  ]
+}

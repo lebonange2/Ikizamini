@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.8.4",
+  "objective_text": "Change limits for definite integrals",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFg67h",
+      "stem": "Evaluate the definite integral Ω(x) from -2 to 1 by changing the limits of integration: Ω(x) = x^2 + 1",
+      "choices": {
+        "A": "-π(1)^2 - π(-2)^2",
+        "B": "π(1)^2 - π(-2)^2",
+        "C": "3π + 4π",
+        "D": "-3π + 4π"
+      },
+      "correct_choice": "D",
+      "solution": "To change the limits of integration, multiply the integrand by -1 and flip the limits. The new integral is Ω(-x) from 1 to -2:\n-π(-x)^2 dx = -π(x^2 + 1) dx.\nIntegrate and evaluate: \n-[π(x^3/3 + x)|_{-2}^{1}] = -[π(1/3 + 1) - π(-8/3 - 2)]\n= -[4π/3] + [14π/3]\n= -3π + 4π",
+      "explanation": "The correct answer is obtained by flipping the limits and multiplying the integrand by -1.",
+      "common_mistake_notes": "A common mistake is to forget to multiply the integrand by -1 when changing the limits. Choice A neglects this step."
+    },
+    {
+      "id": "BvnMj9kl",
+      "stem": "Evaluate Ω(x) from 4 to 7, given that Ω(x) = π(2x - 5)^2 dx by changing the limits of integration.",
+      "choices": {
+        "A": "π(16 - 5)^2 - π(28 - 5)^2",
+        "B": "π(7 - 5)^2 - π(4 - 5)^2",
+        "C": "π(9)^2 - π(13)^2",
+        "D": "π(13)^2 - π(9)^2"
+      },
+      "correct_choice": "C",
+      "solution": "To change the limits, find a substitution that maps 4 to 7 and vice versa. Let u = 2x - 5. Then x = (u + 5)/2. The new limits are from 3 to 11 (when x = 4, u = 3; when x = 7, u = 11). The integral becomes:\nπ(u^2) * (1/2) du = π(u^2/2) du.\nIntegrate and evaluate: \n[π(u^3/6)|_3^{11}] = π(11^3/6) - π(3^3/6)\n= π(2475/6) - π(27/2)\n= π(412.5) - π(13.5)",
+      "explanation": "The correct answer is obtained by finding the appropriate substitution and evaluating the new integral.",
+      "common_mistake_notes": "A common mistake is to forget to adjust the coefficient of u in the integrand after substituting. Choice B neglects this step."
+    },
+    {
+      "id": "CzqXe4rt",
+      "stem": "Evaluate Ω(x) from 1 to 2 by changing the limits of integration: Ω(x) = x^3 dx",
+      "choices": {
+        "A": "π(1)^3 - π(2)^3",
+        "B": "-π(1)^3 + π(2)^3",
+        "C": "7π/4",
+        "D": "9π/4"
+      },
+      "correct_choice": "C",
+      "solution": "To change the limits, integrate from 2 to 1 and multiply by -1. The new integral is:\n-π(x^3) dx from 2 to 1.\nIntegrate and evaluate: \n-[π(x^4/4)|_2^{1}] = -[-3π/4]\n= 7π/4",
+      "explanation": "The correct answer is obtained by integrating from the larger limit to the smaller and multiplying by -1.",
+      "common_mistake_notes": "A common mistake is to integrate directly from 1 to 2 without flipping the limits. Choice A neglects this step."
+    },
+    {
+      "id": "Dwertyui",
+      "stem": "Evaluate Ω(x) from -3 to 0 by changing the limits of integration: Ω(x) = x^4 dx",
+      "choices": {
+        "A": "π(0)^4 - π(-3)^4",
+        "B": "-π(0)^4 + π(-3)^4",
+        "C": "27π/5",
+        "D": "81π/5"
+      },
+      "correct_choice": "C",
+      "solution": "To change the limits, integrate from 0 to -3 and multiply by -1. The new integral is:\n-π(x^4) dx from 0 to -3.\nIntegrate and evaluate: \n-[π(x^5/5)|_0^{-3}] = 27π/5",
+      "explanation": "The correct answer is obtained by integrating from the larger limit to the smaller and multiplying by -1.",
+      "common_mistake_notes": "A common mistake is to integrate directly from -3 to 0 without flipping the limits. Choice A neglects this step."
+    },
+    {
+      "id": "ErtYuiop",
+      "stem": "Evaluate Ω(x) from 2 to 5 by changing the limits of integration: Ω(x) = e^x dx",
+      "choices": {
+        "A": "π(e^5) - π(e^2)",
+        "B": "-π(e^5) + π(e^2)",
+        "C": "e^7/7 - e^4/4",
+        "D": "e^4/4 - e^7/7"
+      },
+      "correct_choice": "C",
+      "solution": "To change the limits, integrate from 5 to 2 and multiply by -1. The new integral is:\n-π(e^x) dx from 5 to 2.\nIntegrate and evaluate: \n-[π(e^x/x)|_5^{2}] = e^7/7 - e^4/4",
+      "explanation": "The correct answer is obtained by integrating from the larger limit to the smaller and multiplying by -1.",
+      "common_mistake_notes": "A common mistake is to integrate directly from 2 to 5 without flipping the limits. Choice A neglects this step."
+    },
+    {
+      "id": "FghJklmn",
+      "stem": "Evaluate Ω(x) from -4 to 1 by changing the limits of integration: Ω(x) = sin(x) dx",
+      "choices": {
+        "A": "π(sin(1)) - π(sin(-4))",
+        "B": "-π(sin(1)) + π(sin(-4))",
+        "C": "2π",
+        "D": "-2π"
+      },
+      "correct_choice": "C",
+      "solution": "To change the limits, integrate from 1 to -4 and multiply by -1. Since sine is an odd function, its definite integral over a symmetric interval around zero is zero. Therefore, the answer is 0.",
+      "explanation": "The correct answer is obtained by recognizing that the integral of an odd function over a symmetric interval around zero is zero.",
+      "common_mistake_notes": "A common mistake is to integrate directly from -4 to 1 without flipping the limits or considering the symmetry of the sine function. Choice A neglects these steps."
+    },
+    {
+      "id": "GhiKlMno",
+      "stem": "Evaluate Ω(x) from 6 to 8 by changing the limits of integration: Ω(x) = cos(x) dx",
+      "choices": {
+        "A": "π(cos(8)) - π(cos(6))",
+        "B": "-π(cos(8)) + π(cos(6))",
+        "C": "2π",
+        "D": "-2π"
+      },
+      "correct_choice": "B",
+      "solution": "To change the limits, integrate from 8 to 6 and multiply by -1. Since cosine is an even function, its definite integral over any interval is unchanged when the limits are flipped. Therefore, the answer is -2π.",
+      "explanation": "The correct answer is obtained by recognizing that the integral of an even function is unchanged when the limits are flipped.",
+      "common_mistake_notes": "A common mistake is to integrate directly from 6 to 8 without flipping the limits or considering the symmetry of the cosine function. Choice A neglects these steps."
+    }
+  ]
+}

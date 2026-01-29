@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.12.6",
+  "objective_text": "Identify bipartite graphs",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Which of the following graphs is a bipartite graph? A bipartite graph has two sets of vertices such that every edge connects a vertex from one set to a vertex from the other set.",
+      "choices": {
+        "A": "[A picture of a complete graph with all nodes connected]",
+        "B": "[A picture of a cycle graph with an even number of nodes, like C6]",
+        "C": "[A picture of a star graph with one central node and several outer nodes connected only to the central node]",
+        "D": "[A picture of a grid graph with rows and columns of nodes, where each row is connected to each column]"
+      },
+      "correct_choice": "D",
+      "solution": "A bipartite graph must have two sets of vertices with no edges connecting vertices within the same set. The correct answer is D because it shows a grid graph where nodes in one dimension (rows) are only connected to nodes in the other dimension (columns), ensuring that no edges connect nodes within the same dimension.",
+      "explanation": "A complete graph (A) has edges between all pairs of vertices, which violates the bipartite property. A cycle graph with an even number of nodes (B) can be made bipartite by assigning alternating colors to the nodes, but this is not always possible for odd cycles. A star graph (C) does not have two separate sets of vertices; it has a central node connected to all other nodes.",
+      "common_mistake_notes": "Common mistake: Choosing A or B because they might appear simple or familiar. Remember that bipartite graphs require a clear separation of vertex sets with no edges within those sets."
+    },
+    {
+      "id": "?",
+      "stem": "In the following graph, identify which set belongs to X and which to Y in a bipartite representation: [A picture of a graph where nodes are labeled A, B, C, D for X and E, F, G, H for Y, with edges connecting A- E, B-F, C-G, D-H].",
+      "choices": {
+        "A": "X: {A, B, C, D}, Y: {E, F, G, H}",
+        "B": "X: {A, C, E, G}, Y: {B, D, F, H}",
+        "C": "X: {A, B, E, F}, Y: {C, D, G, H}",
+        "D": "X: {A, D, E, H}, Y: {B, C, F, G}"
+      },
+      "correct_choice": "A",
+      "solution": "The bipartite representation should have edges connecting nodes from set X to set Y but not within the same set. In this graph, A connects to E, B to F, C to G, and D to H, indicating that sets X and Y are as given in choice A.",
+      "explanation": "In a bipartite graph, there should be no edges connecting nodes from the same set. The given graph follows this rule with connections between A- E, B- F, C- G, and D- H.",
+      "common_mistake_notes": "Common mistake: Misinterpreting the connection pattern; make sure to match each node in X with a node in Y."
+    },
+    {
+      "id": "?",
+      "stem": "Which of the following statements is true about a bipartite graph? A. It has an odd number of vertices. B. It has no edges within the same set of vertices. C. It always has a perfect matching. D. It is a tree.",
+      "choices": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "correct_choice": "B",
+      "solution": "Bipartite graphs have no edges connecting vertices within the same set of vertices. This property is described in choice B.",
+      "explanation": "A bipartite graph does not necessarily have an odd number of vertices (A), may or may not have a perfect matching (C) depending on its structure, and is not limited to being a tree (D).",
+      "common_mistake_notes": "Common mistake: Confusing bipartite properties with other graph concepts like trees or matchings."
+    },
+    {
+      "id": "?",
+      "stem": "In the following bipartite graph [A picture of a bipartite graph with sets X and Y], how many edges would be removed to disconnect node A from set Y?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "B",
+      "solution": "To disconnect node A from set Y, only 1 edge (the one connecting A and its neighboring node in set Y) needs to be removed.",
+      "explanation": "In a bipartite graph, removing an edge between a node in set X and its neighbor in set Y will disconnect that node from the other set. In this case, removing the edge between A and its Y-set neighbor is sufficient.",
+      "common_mistake_notes": "Common mistake: Overestimating the number of edges needed to be removed; focus on the direct connection between the node and the opposite set."
+    },
+    {
+      "id": "?",
+      "stem": "Which of the following graphs cannot be represented as a bipartite graph? A. A tree with 10 nodes. B. A cycle graph with 6 nodes. C. A complete graph with 4 nodes. D. A grid graph with 3 rows and 4 columns.",
+      "choices": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "correct_choice": "C",
+      "solution": "A complete graph with 4 nodes (K4) has edges connecting every pair of vertices, making it impossible to separate the vertices into two sets without having edges within those sets. This violates the bipartite property.",
+      "explanation": "Bipartite graphs cannot have edges within the same set; a complete graph with 4 nodes (K4) has an edge between every pair of nodes, violating this rule.",
+      "common_mistake_notes": "Common mistake: Assuming that any simple graph can be represented as a bipartite graph; remember the requirement for no edges within sets."
+    },
+    {
+      "id": "?",
+      "stem": "In a bipartite graph with sets X and Y, what is the maximum number of edges if there are 5 nodes in set X and 3 nodes in set Y?",
+      "choices": {
+        "A": "7",
+        "B": "10",
+        "C": "12",
+        "D": "15"
+      },
+      "correct_choice": "B",
+      "solution": "The maximum number of edges in a bipartite graph is the product of the number of nodes in each set. In this case, 5 nodes in X can connect to each of the 3 nodes in Y, resulting in a total of 5 * 3 = 15 possible connections. However, since we are looking for the maximum number of edges without any within-set connections, we subtract the number of edges that would form if set X was fully connected (which is 0 because it's not allowed), giving us 15 - 0 = 10.",
+      "explanation": "The maximum possible edges in a bipartite graph are found by multiplying the number of nodes in one set by the number of nodes in the other set, then subtracting any within-set connections (which should be zero).",
+      "common_mistake_notes": "Common mistake: Including within-set connections; remember that bipartite graphs have no edges connecting vertices within the same set."
+    },
+    {
+      "id": "?",
+      "stem": "Which of the following is NOT a characteristic of a bipartite graph? A. Vertices can be separated into two sets with no edges within those sets. B. It may contain isolated nodes. C. The degree of each node in one set equals the number of nodes in the other set. D. It can have multiple connected components.",
+      "choices": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "correct_choice": "C",
+      "solution": "In a bipartite graph, the degree of each node in one set does not necessarily equal the number of nodes in the other set. This is not a characteristic of bipartite graphs.",
+      "explanation": "Bipartite graphs separate vertices into two sets with no edges within those sets (A), may have isolated nodes (B) that are not connected to any other node, and can have multiple connected components (D). However, the degree of nodes in one set does not necessarily correspond to the number of nodes in the other set.",
+      "common_mistake_notes": "Common mistake: Assuming a specific relationship between degrees and sets; remember that there is no direct correspondence."
+    }
+  ]
+}

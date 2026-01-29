@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.15.1",
+  "objective_text": "Apply to algorithm design",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "Which of the following is an appropriate step in designing a sorting algorithm?",
+      "choices": {
+        "A": "Guessing the correct order of elements",
+        "B": "Implementing the algorithm using pseudocode",
+        "C": "Comparing your solution with bubble sort only",
+        "D": "Randomly shuffling the input array"
+      },
+      "correct_choice": "B",
+      "solution": "B is the correct choice because it describes a logical step in designing an algorithm, which involves writing pseudocode to outline the steps of the algorithm before implementing it. Guessing the order (A) and comparing with only one sorting method (C) are not reliable approaches, while randomly shuffling the input array (D) is unrelated to designing the algorithm itself.",
+      "explanation": "In algorithm design, it's essential to have a clear plan or pseudocode that outlines how the algorithm will work before implementing it in code. Guessing or comparing with a single method can lead to suboptimal solutions, and shuffling the input array is not part of the algorithm design process.",
+      "common_mistake_notes": "Common mistake: Choosing A (guessing the correct order) or C (comparing with only one sorting method), which shows a lack of understanding of the structured approach required in algorithm design."
+    },
+    {
+      "id": "Xyz456",
+      "stem": "Which of the following best describes the role of Big O notation in algorithm analysis?",
+      "choices": {
+        "A": "Measuring the number of lines of code",
+        "B": "Determining the program's memory usage",
+        "C": "Estimating worst-case time complexity",
+        "D": "Comparing performance of different algorithms"
+      },
+      "correct_choice": "C",
+      "solution": "C is the correct choice because Big O notation is used to estimate the worst-case time complexity of an algorithm, which helps in understanding how the algorithm's efficiency scales with input size. The other options do not accurately describe the role of Big O notation.",
+      "explanation": "Big O notation is a mathematical tool that provides an upper bound on the growth rate of an algorithm's running time as the input size increases. It does not measure lines of code (A), memory usage (B), or directly compare different algorithms' performance (D).",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which are related to other aspects of program analysis but not Big O notation's primary purpose. Choosing D might be a mistake if the learner misunderstands that Big O can indirectly help in comparing algorithms by providing scalability information."
+    },
+    {
+      "id": "Qwe789",
+      "stem": "Which algorithm design technique involves breaking down a problem into smaller subproblems until they become simple enough to solve directly?",
+      "choices": {
+        "A": "Dynamic programming",
+        "B": "Divide and conquer",
+        "C": "Backtracking",
+        "D": "Greedy method"
+      },
+      "correct_choice": "B",
+      "solution": "B is the correct choice because divide and conquer involves dividing a problem into smaller subproblems, solving them recursively, and combining the results. The other techniques do not match this description.",
+      "explanation": "Divide and conquer algorithms are characterized by their approach to split a complex problem into simpler instances of the same or related problems, solve these instances independently, and then combine the solutions to obtain the final result. Dynamic programming (A), backtracking (C), and greedy method (D) have different characteristics.",
+      "common_mistake_notes": "Common mistake: Confusing divide and conquer with other techniques like dynamic programming, which also uses recursion but focuses on reusing subproblem solutions, or backtracking, which explores all possible paths in a problem space."
+    },
+    {
+      "id": "Rty123",
+      "stem": "In the context of algorithm design, what is memoization?",
+      "choices": {
+        "A": "A technique to reduce time complexity by storing and reusing intermediate results",
+        "B": "An optimization method that eliminates redundant function calls",
+        "C": "A process of simplifying a problem by ignoring its constraints",
+        "D": "A strategy for solving problems with an exhaustive search"
+      },
+      "correct_choice": "A",
+      "solution": "A is the correct choice because memoization is a technique in which intermediate results are stored and reused to avoid redundant calculations, reducing time complexity. The other options do not accurately describe memoization.",
+      "explanation": "Memoization is a specific optimization technique used in dynamic programming where previously computed values are stored in a lookup table (usually a hash map) to avoid repeating expensive computations for the same input. It does not eliminate function calls (B), simplify problems by ignoring constraints (C), or use exhaustive search (D).",
+      "common_mistake_notes": "Common mistake: Confusing memoization with other optimization techniques like caching, which can also store results but is not specific to dynamic programming, or with general problem-solving strategies."
+    },
+    {
+      "id": "Uij456",
+      "stem": "Which of the following best describes the role of a hash function in hashing algorithms?",
+      "choices": {
+        "A": "Sorting input elements based on their values",
+        "B": "Generating a unique identifier for each element in the dataset",
+        "C": "Comparing elements to determine their relative order",
+        "D": "Encrypting data to ensure its security"
+      },
+      "correct_choice": "B",
+      "solution": "B is the correct choice because a hash function in hashing algorithms generates a unique identifier (hash value) for each input element, allowing efficient storage and retrieval of data. The other options do not accurately describe the role of a hash function.",
+      "explanation": "A hash function takes an input (usually a string or a set of values) and produces a fixed-size output, called a hash value, which is unique to that input. It does not sort elements (A), compare them for relative order (C), or encrypt data for security purposes (D). Hashing is used in data structures like hash tables for fast lookups.",
+      "common_mistake_notes": "Common mistake: Confusing the role of a hash function with sorting algorithms, comparison operations, or encryption functions."
+    },
+    {
+      "id": "Kol789",
+      "stem": "Which algorithm design paradigm focuses on making locally optimal choices without considering the entire problem?",
+      "choices": {
+        "A": "Divide and conquer",
+        "B": "Greedy method",
+        "C": "Dynamic programming",
+        "D": "Backtracking"
+      },
+      "correct_choice": "B",
+      "solution": "B is the correct choice because the greedy method makes locally optimal choices at each step without considering the overall problem, whereas other paradigms may involve considering multiple steps or backtracking. The other options do not match this description.",
+      "explanation": "The greedy method is a problem-solving strategy that always chooses the most immediate and seemingly best option available at each step, hoping that these local optima will lead to a global optimum solution. Divide and conquer (A), dynamic programming (C), and backtracking (D) all have different characteristics and do not necessarily focus on locally optimal choices.",
+      "common_mistake_notes": "Common mistake: Confusing the greedy method with other paradigms, such as dynamic programming, which often involves considering multiple steps or trade-offs between short-term and long-term gains."
+    },
+    {
+      "id": "Poi123",
+      "stem": "In graph traversal algorithms, what does 'BFS' stand for?",
+      "choices": {
+        "A": "Best First Search",
+        "B": "Brute Force Search",
+        "C": "Bidirectional Search",
+        "D": "Breadth-First Search"
+      },
+      "correct_choice": "D",
+      "solution": "D is the correct choice because BFS (Breadth-First Search) is a graph traversal algorithm that explores all adjacent nodes of a node before moving to the next level. The other options do not match this description.",
+      "explanation": "BFS is a graph traversal technique where nodes are visited in layers, starting from the source node and expanding outward layer by layer. It does not refer to best-first search (A), brute force search (B), or bidirectional search (C).",
+      "common_mistake_notes": "Common mistake: Confusing BFS with other graph traversal algorithms like DFS (Depth-First Search) or A* (best-first search algorithm that uses heuristics), which have different exploration strategies."
+    }
+  ]
+}

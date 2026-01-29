@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.3.4 Differentiate trigonometric functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.3 Derivatives - Advanced Rules
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the derivative of f(x) = 3sin(x). Which of the following is correct?
+A) 3cos(x)
+B) 6sin(x)
+C) 9cos(x)
+D) 0
+Correct Answer: A
+
+Solution:
+The derivative of sin(x) is cos(x). Since there's a constant multiplier (3), the derivative will be 3cos(x). So, the correct answer is A.
+
+Explanation:
+When differentiating a function with a constant coefficient, multiply the coefficient to the derivative of the function.
+
+Common mistake note:
+A common mistake would be to differentiate the constant (3) as well, leading to choice B. However, constants do not affect the differentiation process.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Find the derivative of g(x) = 5cos(2x). Which one is correct?
+A) -10sin(2x)
+B) 10sin(2x)
+C) 10cos(2x)
+D) 20cos(2x)
+Correct Answer: A
+
+Solution:
+The derivative of cos(u) is -sin(u). Here, u = 2x. So, the derivative will be -sin(2x) multiplied by the derivative of 2x (which is 2). Thus, the correct answer is A.
+
+Explanation:
+When differentiating a composite function like cos(2x), use the chain rule: differentiate the outer function and multiply it by the derivative of the inner function.
+
+Common mistake note:
+A common mistake would be to forget the negative sign in front of sin(2x) or to not multiply by the derivative of 2x (2), leading to choices B, C, or D.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the derivative of h(x) = tan(x). Which one is correct?
+A) sec^2(x)
+B) csc^2(x)
+C) cot^2(x)
+D) 1
+Correct Answer: A
+
+Solution:
+The derivative of tan(x) is sec^2(x). So, the correct answer is A.
+
+Explanation:
+The differentiation rule for tangent is straightforward: d/dx(tan(x)) = sec^2(x).
+
+Common mistake note:
+A common mistake would be to confuse the derivatives of tan(x), cot(x), or sec(x) with each other, leading to choices B, C, or D.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Find the derivative of j(x) = 2csc(3x). Which one is correct?
+A) -6cot(3x)csc(3x)
+B) 6cot(3x)csc^2(3x)
+C) 6csc(3x)
+D) 12csc^2(3x)
+Correct Answer: B
+
+Solution:
+The derivative of csc(u) is -csc(u)cot(u). Here, u = 3x. So, the derivative will be -csc(3x)cot(3x) multiplied by the derivative of 3x (which is 3). Thus, the correct answer is B.
+
+Explanation:
+When differentiating a composite function like csc(3x), use the chain rule: differentiate the outer function and multiply it by the derivative of the inner function. Also, remember to apply the product rule for -csc(u)cot(u).
+
+Common mistake note:
+A common mistake would be to forget the negative sign or to not multiply by the derivative of 3x (3), leading to choices A, C, or D.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Find the derivative of k(x) = sec(4x). Which one is correct?
+A) 4sec^2(4x)
+B) 4tan(4x)csc(4x)
+C) 4csc^2(4x)
+D) 16sec^3(4x)
+Correct Answer: D
+
+Solution:
+The derivative of sec(u) is sec(u)tan(u). Here, u = 4x. So, the derivative will be sec(4x)tan(4x) multiplied by the derivative of 4x (which is 4). Thus, the correct answer is D.
+
+Explanation:
+When differentiating a composite function like sec(4x), use the chain rule: differentiate the outer function and multiply it by the derivative of the inner function. Also, remember to apply the product rule for sec(u)tan(u).
+
+Common mistake note:
+A common mistake would be to forget the power rule (sec^3(4x)) or to not multiply by the derivative of 4x (4), leading to choices A, B, or C.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Find the derivative of l(x) = cot(x). Which one is correct?
+A) -csc^2(x)
+B) csc^2(x)
+C) sec^2(x)
+D) cot^2(x)
+Correct Answer: A
+
+Solution:
+The derivative of cot(x) is -csc^2(x). So, the correct answer is A.
+
+Explanation:
+The differentiation rule for cotangent is straightforward: d/dx(cot(x)) = -csc^2(x).
+
+Common mistake note:
+A common mistake would be to confuse the derivatives of tan(x) or cot(x), leading to choices B or C.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Find the derivative of m(x) = sin(5x)^3. Which one is correct?
+A) 15sin^2(5x)
+B) 15cos(5x)^2
+C) 15sin(5x)^2cos(5x)
+D) 3sin(5x)^2
+Correct Answer: C
+
+Solution:
+To differentiate sin(u)^n, use the chain rule and power rule: d/dx(sin(u)^n) = n*sin^(n-1)(u)*cos(u). Here, u = 5x. So, the derivative will be 3*sin^2(5x)*cos(5x), multiplied by the derivative of 5x (which is 5). Thus, the correct answer is C.
+
+Explanation:
+When differentiating a composite function like sin(5x)^3, use both the chain rule and power rule. First, differentiate sin(u)^n, then multiply by the derivative of the inner function (5x).
+
+Common mistake note:
+A common mistake would be to forget the power rule (sin^2(5x)) or to not multiply by the derivative of 5x (5), leading to choices A, B, or D.
+------------------------------------------------------------------------------

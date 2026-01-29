@@ -1,0 +1,176 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.9.6 Test convergence of complex series
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.9 Complex Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Determine the convergence of the complex series: Σ (n=1 to ∞) (3i)^n/n
+A) Converges absolutely
+B) Converges conditionally
+C) Diverges
+D) Cannot be determined with given information
+Correct Answer: C
+
+Solution:
+The ratio test is applicable here. Let's apply it to the series: a_n = (3i)^n/n. The limit as n approaches infinity of |a_n / a_{n+1}| is the absolute value of the ratio of consecutive terms. Let's compute this limit:
+
+lim (n→∞) |(3i)^n/n / (3i)^(n+1)/(n+1)|
+= lim (n→∞) |(3i)^n * (n+1) / (3i)^(n+1) * n|
+= lim (n→∞) |(1 + 1/n) / 3i|
+As n approaches infinity, 1/n approaches 0, so the limit becomes:
+|1/3i|
+This limit is equal to |1/sqrt(-9)| = |1/3i| = 1/3.
+
+Since this limit is greater than 1, the series diverges according to the ratio test.
+
+Explanation:
+The ratio test helps determine if a series converges absolutely or diverges. If the limit of the absolute value of the ratio of consecutive terms is less than 1, the series converges absolutely; if it's greater than 1, the series diverges; and if it's equal to 1, the test is inconclusive.
+
+Common mistake note:
+A common mistake would be to assume that because the series involves complex numbers, the result might be different. However, convergence tests like the ratio test apply equally to complex series as they do to real number series.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Evaluate the convergence of the complex series: Σ (n=1 to ∞) (-4i)^{-n}/sqrt(n)
+A) Converges absolutely
+B) Converges conditionally
+C) Diverges
+D) Cannot be determined with given information
+Correct Answer: A
+
+Solution:
+We can apply the root test to this series. The root test compares the limit of the nth root of the absolute value of the terms to 1. Let's compute the limit for a_n = (-4i)^{-n}/sqrt(n):
+
+lim (n→∞) |a_n|^(1/ n)
+= lim (n→∞) |(-4i)^{-n} / sqrt(n)|^(1/ n)
+= lim (n→∞) |(1/(-4i))^n * (1/sqrt(n))|^(1/ n)
+= lim (n→∞) |(1/4)^n * (1/sqrt(n))|
+As n approaches infinity, (1/4)^n approaches 0 and (1/sqrt(n)) approaches 0. Thus, the entire product approaches 0.
+
+Since the limit is less than 1, the series converges absolutely.
+
+Explanation:
+The root test helps determine if a series converges absolutely or diverges based on the limit of the nth root of the absolute value of the terms. If this limit is less than 1, the series converges absolutely; if it's greater than 1, the series diverges; and if it's equal to 1, the test is inconclusive.
+
+Common mistake note:
+A common mistake would be to forget that when taking the nth root of a product, each factor must also have its nth root taken. In this case, both (1/4)^n and (1/sqrt(n)) contribute to the limit.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Determine if the complex series: Σ (n=1 to ∞) (2e^(iπn))/n^2 converges
+A) Converges absolutely
+B) Converges conditionally
+C) Diverges
+D) Cannot be determined with given information
+Correct Answer: A
+
+Solution:
+We can apply the p-series test, which states that a series of the form Σ (n=1 to ∞) 1/n^p converges if p > 1 and diverges if p ≤ 1. In this case, we have a_n = (2e^(iπn))/n^2, so the power of n is 2, which is greater than 1.
+
+Since p > 1, the series converges absolutely.
+
+Explanation:
+The p-series test helps determine the convergence of series of the form Σ (n=1 to ∞) 1/n^p. If p > 1, the series converges; if p ≤ 1, it diverges.
+
+Common mistake note:
+A common mistake would be to try to use other tests like the ratio or root test, which are not directly applicable here. The p-series test specifically deals with series of the form 1/n^p.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Evaluate the convergence of the complex series: Σ (n=1 to ∞) (e^(iπ/2n))/ln(n)
+A) Converges absolutely
+B) Converges conditionally
+C) Diverges
+D) Cannot be determined with given information
+Correct Answer: C
+
+Solution:
+We can apply the limit comparison test, comparing this series to 1/n. Let's compute the limit of |a_n / (1/ n)| as n approaches infinity, where a_n = (e^(iπ/2n))/ln(n):
+
+lim (n→∞) |(e^(iπ/2n)) / ln(n) * n|
+= lim (n→∞) |e^(iπ/2n) * n / ln(n)|
+As n approaches infinity, e^(iπ/2n) oscillates between 1 and -1, while n grows without bound and ln(n) increases slowly. The limit does not converge to a finite value.
+
+Since the limit is not equal to 0 or a finite number, and since 1/n diverges (p-series with p = 1), our series also diverges by the limit comparison test.
+
+Explanation:
+The limit comparison test compares the convergence of two series. If the limit of |a_n / b_ n| as n approaches infinity is a finite non-zero number, and b_n converges or diverges, then a_n also converges or diverges accordingly.
+
+Common mistake note:
+A common mistake would be to assume that because e^(iπ/2n) oscillates between 1 and -1, the series might converge. However, it's essential to consider the entire term (e^(iπ/2n))/ln(n), including ln(n), which grows slowly compared to n.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Determine if the complex series: Σ (n=1 to ∞) (3 + 4i)^{-n} converges conditionally or absolutely
+A) Converges absolutely
+B) Converges conditionally
+C) Diverges
+D) Cannot be determined with given information
+Correct Answer: A
+
+Solution:
+We can apply the ratio test to this series. Let's compute the limit for a_n = (3 + 4i)^{-n}:
+
+lim (n→∞) |a_n / a_{n+1}|
+= lim (n→∞) |(3 + 4i)^{-n} / (3 + 4i)^{-(n+1)}|
+= lim (n→∞) |(3 + 4i)^{-n} * (3 + 4i)|
+As n approaches infinity, the term (3 + 4i)^{-n} approaches 0 because the magnitude of 3 + 4i is greater than 1. Thus, the entire product approaches 0.
+
+Since the limit is less than 1, the series converges absolutely.
+
+Explanation:
+The ratio test helps determine if a series converges absolutely or diverges based on the limit of the absolute value of the ratio of consecutive terms. If this limit is less than 1, the series converges absolutely; if it's greater than 1, the series diverges; and if it's equal to 1, the test is inconclusive.
+
+Common mistake note:
+A common mistake would be to think that since the complex number (3 + 4i) has an imaginary part, the series might not converge. However, convergence tests apply equally to complex numbers as they do to real numbers.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Evaluate the convergence of the complex series: Σ (n=1 to ∞) (2 - i)^{n}/n^3
+A) Converges absolutely
+B) Converges conditionally
+C) Diverges
+D) Cannot be determined with given information
+Correct Answer: A
+
+Solution:
+We can apply the ratio test to this series. Let's compute the limit for a_n = (2 - i)^{n}/n^3:
+
+lim (n→∞) |a_n / a_{n+1}|
+= lim (n→∞) |(2 - i)^{n} * n^3 / (2 - i)^{n+1} * (n+1)^3|
+As n approaches infinity, the term (2 - i)^{n} grows exponentially because the magnitude of 2 - i is greater than 1. Thus, the entire product approaches ∞.
+
+Since the limit is greater than 1, the series diverges according to the ratio test.
+
+Explanation:
+The ratio test helps determine if a series converges absolutely or diverges based on the limit of the absolute value of the ratio of consecutive terms. If this limit is less than 1, the series converges absolutely; if it's greater than 1, the series diverges; and if it's equal to 1, the test is inconclusive.
+
+Common mistake note:
+A common mistake would be to assume that because the series involves complex numbers, the result might be different. However, convergence tests like the ratio test apply equally to complex series as they do to real number series.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Determine if the complex series: Σ (n=1 to ∞) (2 - 3i)^{-n} / n^2 converges
+A) Converges absolutely
+B) Converges conditionally
+C) Diverges
+D) Cannot be determined with given information
+Correct Answer: A
+
+Solution:
+We can apply the ratio test to this series. Let's compute the limit for a_n = (2 - 3i)^{-n} / n^2:
+
+lim (n→∞) |a_n / a_{n+1}|
+= lim (n→∞) |(2 - 3i)^{-n} * n^2 / (2 - 3i)^{-(n+1)} * (n+1)^2|
+As n approaches infinity, the term (2 - 3i)^{-n} approaches 0 because the magnitude of 2 - 3i is greater than 1. Thus, the entire product approaches 0.
+
+Since the limit is less than 1, the series converges absolutely.
+
+Explanation:
+The ratio test helps determine if a series converges absolutely or diverges based on the limit of the absolute value of the ratio of consecutive terms. If this limit is less than 1, the series converges absolutely; if it's greater than 1, the series diverges; and if it's equal to 1, the test is inconclusive.
+
+Common mistake note:
+A common mistake would be to think that because the complex number (2 - 3i) has an imaginary part, the series might not converge. However, convergence tests apply equally to complex numbers as they do to real numbers.
+------------------------------------------------------------------------------

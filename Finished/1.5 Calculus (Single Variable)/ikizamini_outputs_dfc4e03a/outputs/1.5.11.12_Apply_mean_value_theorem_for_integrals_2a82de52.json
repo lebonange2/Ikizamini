@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.11.12",
+  "objective_text": "Apply mean value theorem for integrals",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "IncreasingFunctionMVT",
+      "stem": "Find the value of c that satisfies the Mean Value Theorem for the function f(x) = x^2 + 3x on the interval [1, 4].",
+      "choices": {
+        "A": "2.5",
+        "B": "3",
+        "C": "2",
+        "D": "1.5"
+      },
+      "correct_choice": "A",
+      "solution": "The Mean Value Theorem states that for a continuous function f(x) on an interval [a, b], there exists at least one point c in the interval such that the derivative of the function at that point is equal to the average rate of change of the function over the interval. First, we find the derivative of f(x): f'(x) = 2x + 3. Next, we calculate the average rate of change: (f(4) - f(1)) / (4 - 1). Now we solve for c using the equation: (f(b) - f(a)) / (b - a) = f'(c). Plugging in the values, we get: (16 - 4) / 3 = 2c + 3. Solving for c gives us c = 2.5.",
+      "explanation": "The Mean Value Theorem connects the derivative of a function at a point to its average rate of change over an interval. In this case, we found that the value c where the derivative equals the average rate of change is 2.5.",
+      "common_mistake_notes": "A common mistake would be to assume that c is the midpoint of the interval (in this case, 2.5), without actually calculating it using the theorem. The midpoint does not guarantee satisfaction of the Mean Value Theorem."
+    },
+    {
+      "id": "DecreasingIntervalMVT",
+      "stem": "Determine if there exists a value c in the interval [0, π] that satisfies the Mean Value Theorem for the function f(x) = cos(x). If yes, find c. If no, explain why.",
+      "choices": {
+        "A": "Yes, c = π/2",
+        "B": "Yes, c = 0",
+        "C": "No, because the function is decreasing on the interval",
+        "D": "No, because the function is not continuous"
+      },
+      "correct_choice": "C",
+      "solution": "The Mean Value Theorem applies to continuous functions on an interval. Since f(x) = cos(x) is continuous on [0, π], we can apply it. However, we need to check if there's a point c where the derivative of the function equals zero (since the average rate of change is zero for a decreasing function). The derivative of f(x) is -sin(x), and at x = 0 or x = π, the derivative is not zero. Since the derivative does not equal zero anywhere on the interval, there is no c that satisfies the theorem.",
+      "explanation": "The Mean Value Theorem requires the average rate of change to be equal to the derivative at some point in the interval. For a decreasing function like cos(x), the average rate of change is negative, but the derivative is never zero on [0, π], so there's no c that satisfies the theorem.",
+      "common_mistake_notes": "A common mistake would be to assume that since the function is continuous and differentiable, it must satisfy the Mean Value Theorem. However, the theorem specifically requires the average rate of change to equal the derivative at some point."
+    },
+    {
+      "id": "IntervalEndpointsMVT",
+      "stem": "Find the value(s) of c in the interval [0, 2] that satisfy the Mean Value Theorem for the function f(x) = x^3 - 6x^2 + 9x. There may be more than one correct answer.",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "1 and 2",
+        "D": "No such c exists"
+      },
+      "correct_choice": "C",
+      "solution": "The Mean Value Theorem states that for a continuous function f(x) on an interval [a, b], there exists at least one point c in the interval such that the derivative of the function at that point is equal to the average rate of change of the function over the interval. First, we find the derivative of f(x): f'(x) = 3x^2 - 12x + 9. Next, we calculate the average rate of change: (f(2) - f(0)) / (2 - 0). Now we solve for c using the equation: (f(b) - f(a)) / (b - a) = f'(c). Plugging in the values, we get: (8 - 0) / 2 = 3c^2 - 12c + 9. Solving this quadratic equation gives us c = 1 and c = 2.",
+      "explanation": "The Mean Value Theorem can have multiple points c within an interval if the derivative is equal to the average rate of change at those points. In this case, we found two values of c where the theorem holds: c = 1 and c = 2.",
+      "common_mistake_notes": "A common mistake would be to assume that there can only be one value of c for a given interval. The Mean Value Theorem allows for multiple points as long as they satisfy the condition."
+    },
+    {
+      "id": "ImproperIntervalMVT",
+      "stem": "Does the Mean Value Theorem apply to the function f(x) = 1/x on the interval [-2, 2]? Explain your answer.",
+      "choices": {
+        "A": "Yes, because the function is continuous and differentiable on the interval",
+        "B": "No, because the function is not continuous at x = 0",
+        "C": "No, because the function is not differentiable at x = 0",
+        "D": "No, because the interval is improper"
+      },
+      "correct_choice": "B",
+      "solution": "The Mean Value Theorem requires a continuous function on a closed interval. While f(x) = 1/x is differentiable everywhere except at x = 0, it is not continuous at that point since it approaches infinity as x approaches 0 from the left and negative infinity as x approaches 0 from the right. Therefore, the theorem does not apply to this function on the given interval.",
+      "explanation": "The Mean Value Theorem requires a continuous function, which means the function must have no breaks or jumps in its graph. In this case, f(x) = 1/x is discontinuous at x = 0 due to the infinite limits, making it unsuitable for application of the theorem.",
+      "common_mistake_notes": "A common mistake would be to focus only on differentiability and overlook continuity as a requirement for the Mean Value Theorem. Both conditions must be met."
+    },
+    {
+      "id": "ZeroDerivativeMVT",
+      "stem": "Find the value(s) of c in the interval [0, 1] that satisfy the Mean Value Theorem for the function f(x) = x^3 - 3x^2 + 2x. There may be more than one correct answer.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "0 and 1",
+        "D": "No such c exists"
+      },
+      "correct_choice": "D",
+      "solution": "The Mean Value Theorem states that for a continuous function f(x) on an interval [a, b], there exists at least one point c in the interval such that the derivative of the function at that point is equal to the average rate of change of the function over the interval. First, we find the derivative of f(x): f'(x) = 3x^2 - 6x + 2. Next, we calculate the average rate of change: (f(1) - f(0)) / (1 - 0). Now we solve for c using the equation: (f(b) - f(a)) / (b - a) = f'(c). Plugging in the values, we get: (2 - 0) / 1 = 3c^2 - 6c + 2. However, this equation has no real solutions for c within the interval [0, 1]. Thus, there is no such c that satisfies the theorem.",
+      "explanation": "The Mean Value Theorem requires a non-zero average rate of change for a function to have a point c where the derivative equals it. In this case, the average rate of change is zero, and since the derivative never reaches zero on [0, 1], there's no c that satisfies the theorem.",
+      "common_mistake_notes": "A common mistake would be to assume that the Mean Value Theorem always applies, regardless of the function's behavior. If the average rate of change is zero or the derivative does not equal it at any point, the theorem does not guarantee a suitable c."
+    },
+    {
+      "id": "OpenIntervalMVT",
+      "stem": "Does the Mean Value Theorem apply to the function f(x) = x^2 on the interval (0, 1)? Explain your answer.",
+      "choices": {
+        "A": "Yes, because the function is continuous and differentiable on the interval",
+        "B": "No, because the interval is open and does not include its endpoints",
+        "C": "No, because the function is not continuous at x = 0",
+        "D": "No, because the function is not differentiable at x = 0"
+      },
+      "correct_choice": "B",
+      "solution": "The Mean Value Theorem requires a continuous function on a closed interval. Since the interval (0, 1) is open and does not include its endpoints, it does not meet the requirement for the theorem to apply.",
+      "explanation": "The Mean Value Theorem demands that the interval be closed, meaning it includes both its starting and ending points. In this case, the interval (0, 1) does not include 0 or 1, making it unsuitable for application of the theorem.",
+      "common_mistake_notes": "A common mistake would be to overlook the requirement for a closed interval and focus only on continuity and differentiability. Both conditions must be met with an additional requirement that the interval is closed."
+    },
+    {
+      "id": "NonDifferentiableFunctionMVT",
+      "stem": "Does the Mean Value Theorem apply to the function f(x) = |x| on the interval [-1, 1]? Explain your answer.",
+      "choices": {
+        "A": "Yes, because the function is continuous and differentiable on the interval",
+        "B": "No, because the function is not continuous at x = 0",
+        "C": "No, because the function is not differentiable at x = 0",
+        "D": "No, because the function is not differentiable within the interval"
+      },
+      "correct_choice": "C",
+      "solution": "The Mean Value Theorem requires a continuous and differentiable function on an interval. While f(x) = |x| is continuous everywhere, it is not differentiable at x = 0 due to the sharp corner in its graph. Therefore, the theorem does not apply to this function on the given interval.",
+      "explanation": "The Mean Value Theorem requires a function that is both continuous and differentiable throughout the entire interval. In this case, f(x) = |x| is not differentiable at x = 0 due to its non-smooth nature, making it unsuitable for application of the theorem.",
+      "common_mistake_notes": "A common mistake would be to focus only on continuity and overlook differentiability as a requirement for the Mean Value Theorem. Both conditions must be met."
+    }
+  ]
+}

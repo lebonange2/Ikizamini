@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.8.6",
+  "objective_text": "Integrate rational functions with substitution",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Evaluate the definite integral ∫[-2, 1] (x+3)/(x^2+4) dx using substitution. Let u = x^2 + 4.",
+      "choices": {
+        "A": "(π/2)",
+        "B": "ln(5) - π/2",
+        "C": "ln(5) - ln(2)",
+        "D": "ln(3) - π/4"
+      },
+      "correct_choice": "C",
+      "solution": "Let u = x^2 + 4, then du = 2x dx. To solve for x in terms of u, we take the square root of both sides: √u = x. Thus, dx = (1/2π)du. The integral becomes ∫[-2, 1] (x+3)/(x^2+4) dx = ∫[12, 5] (√u + 3)/u * (1/2π) du. Simplify and integrate:\n\n(1/2π) ∫[12, 5] ((1/√u) + 3/u) du = (1/2π) ∫[12, 5] (1/u + 3) du = (1/2π) [(2π(u^(1/2)) + 3u)|[12, 5]\n\nEvaluating at the limits:\n\n(2π(π/4) + 15) - (2π(π/6) + 36)\n\n= π/2 + 15 - π/3 - 36 = π/6 - 21 = -2π/6\n\nSince we're looking for a positive value, we take the absolute value: |-2π/6| = π/3. Convert to natural logarithms:\n\nπ/3 = ln(e^(π/3)) = ln(e^(ln(5) - ln(4)))\n\n= ln(5/4)\nThe correct answer is ln(5) - ln(4), which corresponds to option C.",
+      "explanation": "This question tests the ability to use substitution to integrate a rational function. A common mistake would be not correctly transforming the limits of integration or forgetting to adjust dx when substituting.",
+      "common_mistake_notes": "A common mistake is to forget to change the limits of integration after making the substitution. Another mistake could be integrating the new integrand incorrectly, such as not simplifying before integrating or applying the wrong power rule."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Evaluate ∫ (2x)/(x^2+1) dx using the substitution u = x^2 + 1.",
+      "choices": {
+        "A": "ln|x| + C",
+        "B": "2ln|x^2+1| + C",
+        "C": "2arctan(x) + C",
+        "D": "arcsin(x) + C"
+      },
+      "correct_choice": "C",
+      "solution": "Let u = x^2 + 1, then du = 2x dx. To solve for x in terms of u, we take the square root of both sides: √u - 1 = x. Thus, dx = (1/2π)du. The integral becomes ∫ (2x)/(x^2+1) dx = ∫ (1/u) * (1/2π) du. Simplify and integrate:\n\n(1/2π) ∫ 1/u du = (1/2π) ln|u|\n\nSubstitute back u = x^2 + 1: \n\n= (1/2π) ln|x^2+1|\n\nTo convert to standard trigonometric form, recall that arctan'(x) = 1/(1+x^2). Thus, the integral is equivalent to 2arctan(x) + C. The correct answer is 2arctan(x) + C, which corresponds to option C.",
+      "explanation": "This question assesses the ability to use substitution and recognize the connection between the natural logarithm and inverse trigonometric functions. A common mistake would be to integrate ln|x^2+1| as ln|x| instead of keeping it in terms of u.",
+      "common_mistake_notes": "A common mistake is to forget to include the absolute value signs when integrating ln|x^2+1|, or to incorrectly simplify the integral by integrating ln|x| instead of keeping it in terms of u."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Evaluate ∫ (3)/(x^3 - 1) dx using substitution. Let u = x^3 - 1.",
+      "choices": {
+        "A": "-π/2(u^((-2/3))) + C",
+        "B": "π/2(u^((-2/3))) + C",
+        "C": "3arctan(√[3]u) + C",
+        "D": "ln|x^3 - 1| + C"
+      },
+      "correct_choice": "B",
+      "solution": "Let u = x^3 - 1, then du = 3x^2 dx. To solve for x in terms of u, we add 1 to both sides: u + 1 = x^3. Thus, dx = (1/3π)du/u^(2/3). The integral becomes ∫ (3)/(x^3 - 1) dx = ∫ (1/u) * (1/3π) * (1/u^(2/3)) du. Simplify and integrate:\n\n(1/3π) ∫ u^(-2/3) du = (1/3π) (u^((-2/3)+1))/((-2/3)+1)\n\n= (1/3π) (u^(1/3))/(1/3)\n\n= π/2 u^(1/3) = π/2(u^(-2/3))\nThe correct answer is π/2(u^(-2/3)) + C, which corresponds to option B.",
+      "explanation": "This question tests the ability to use substitution with a different power of x and recognize the correct power rule for integration. A common mistake would be integrating u^(-2/3) incorrectly or not adjusting dx properly.",
+      "common_mistake_notes": "A common mistake is to integrate u^(-2/3) as -u^(1/3) instead of the correct form, which is u^((-2/3)+1)/((-2/3)+1). Another mistake could be forgetting to multiply by the reciprocal of the exponent when adjusting dx."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Evaluate ∫ (x^2)/(x^4 + 9) dx using substitution. Let u = x^4 + 9.",
+      "choices": {
+        "A": "(1/6)arctan(√[x^2]) + C",
+        "B": "(1/3)arcsin(√[4]x^2) + C",
+        "C": "(1/6)ln|x^4 + 9| + C",
+        "D": "(1/3)arctan(x) + C"
+      },
+      "correct_choice": "C",
+      "solution": "Let u = x^4 + 9, then du = 4x^3 dx. To solve for x in terms of u, we take the fourth root of both sides: (u - 9)^(1/4) = x. Thus, dx = (1/4π)du/u^(3/4). The integral becomes ∫ (x^2)/(x^4 + 9) dx = ∫ ((u - 9)^(1/2))/u * (1/4π) * (1/u^(3/4)) du. Simplify and integrate:\n\n(1/4π) ∫ u^(-3/4)(u - 9)^{1/2} du = (1/4π) ∫ (u^(-1/4) - 9^(1/2)u^(-5/4)) du\n\nIntegrate each term separately:\n\n= (1/4π) (u^(-1/4+1)/((-1/4)+1) - 9^(1/2)u^(-5/4+1)/((-5/4)+1))\n\n= (1/4π) (u^(3/4)/(3/4) - 9^(1/2)u^(-1/4)/(-1/4))\n\n= π/6 u^(3/4) + 3π/4 * 9^(1/2)u^(-1/4)\n\n= π/6(x^4 + 9)^(3/4) + 3π/4 * 3(x^4 + 9)^(-1/4)\n\n= (1/6)ln|x^4 + 9| + C\n\nThe correct answer is (1/6)ln|x^4 + 9| + C, which corresponds to option C.",
+      "explanation": "This question assesses the ability to use substitution with a higher power of x and integrate a sum of terms. A common mistake would be integrating each term separately incorrectly or not adjusting dx properly.",
+      "common_mistake_notes": "A common mistake is to integrate (u - 9)^(1/2) incorrectly, either by treating it as u^(1/2) - 9^(1/2) or integrating each term separately with different exponents. Another mistake could be forgetting to multiply by the reciprocal of the exponent when adjusting dx."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Evaluate ∫ (x^3)/(x^5 + 8) dx using substitution. Let u = x^5 + 8.",
+      "choices": {
+        "A": "(1/4)(u^(-4/5)) + C",
+        "B": "(1/5)(u^(-4/5)) + C",
+        "C": "(1/4)arctan(√[5]x) + C",
+        "D": "(1/5)arcsin(√x^5) + C"
+      },
+      "correct_choice": "B",
+      "solution": "Let u = x^5 + 8, then du = 5x^4 dx. To solve for x in terms of u, we take the fifth root of both sides: (u - 8)^(1/5) = x. Thus, dx = (1/5π)du/u^(4/5). The integral becomes ∫ (x^3)/(x^5 + 8) dx = ∫ ((u - 8)^(3/5))/u * (1/5π) * (1/u^(4/5)) du. Simplify and integrate:\n\n(1/5π) ∫ u^(-4/5)(u - 8)^{3/5} du = (1/5π) ∫ (u^(-1/5) - 8^(3/5)u^(-9/5)) du\n\nIntegrate each term separately:\n\n= (1/5π) (u^(-1/5+1)/((-1/5)+1) - 8^(3/5)u^(-9/5+1)/((-9/5)+1))\n\n= (1/5π) (u^(4/5)/(4/5) - 8^(3/5)u^(-4/5)/(-4/5))\n\n= π/5 u^(4/5) + 5π/4 * 8^(3/5)u^(-4/5)\n\n= π/5(x^5 + 8)^(4/5) + 5π/4 * 2√2(x^5 + 8)^(-4/5)\n\n= (1/5)u^(-4/5) + C\n\nThe correct answer is (1/5)(u^(-4/5)) + C, which corresponds to option B.",
+      "explanation": "This question assesses the ability to use substitution with a higher power of x and integrate a sum of terms. A common mistake would be integrating each term separately incorrectly or not adjusting dx properly.",
+      "common_mistake_notes": "A common mistake is to integrate (u - 8)^(3/5) incorrectly, either by treating it as u^(3/5) - 8^(3/5) or integrating each term separately with different exponents. Another mistake could be forgetting to multiply by the reciprocal of the exponent when adjusting dx."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Evaluate ∫ (x^4)/(x^6 + 1) dx using substitution. Let u = x^6 + 1.",
+      "choices": {
+        "A": "(1/6)(u^(-5/6)) + C",
+        "B": "(1/7)(u^(-5/6)) + C",
+        "C": "arctan(x^(1/3)) + C",
+        "D": "arcsin(x^(1/2)) + C"
+      },
+      "correct_choice": "B",
+      "solution": "Let u = x^6 + 1, then du = 6x^5 dx. To solve for x in terms of u, we take the sixth root of both sides: (u - 1)^(1/6) = x. Thus, dx = (1/6π)du/u^(5/6). The integral becomes ∫ (x^4)/(x^6 + 1) dx = ∫ ((u - 1)^(2/3))/u * (1/6π) * (1/u^(5/6)) du. Simplify and integrate:\n\n(1/6π) ∫ u^(-5/6)(u - 1)^{2/3} du = (1/6π) ∫ (u^(-1/6) - 1^(2/3)u^(-7/6)) du\n\nIntegrate each term separately:\n\n= (1/6π) (u^(-1/6+1)/((-1/6)+1) - 1^(2/3)u^(-7/6+1)/((-7/6)+1))\n\n= (1/6π) (u^(5/6)/(5/6) - 1^(2/3)u^(-1/6)/(-1/6))\n\n= π/6 u^(5/6) + 6π * 1^(2/3)u^(-1/6)\n\n= π/6(x^6 + 1)^(5/6) + 6π * (x^6 + 1)^(-1/6)\n\n= (1/6)u^(-5/6) + C\n\nThe correct answer is (1/6)(u^(-5/6)) + C, which corresponds to option B.",
+      "explanation": "This question assesses the ability to use substitution with a higher power of x and integrate a sum of terms. A common mistake would be integrating each term separately incorrectly or not adjusting dx properly.",
+      "common_mistake_notes": "A common mistake is to integrate (u - 1)^(2/3) incorrectly, either by treating it as u^(2/3) - 1^(2/3) or integrating each term separately with different exponents. Another mistake could be forgetting to multiply by the reciprocal of the exponent when adjusting dx."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Evaluate ∫ (x^5)/(x^7 + 4) dx using substitution. Let u = x^7 + 4.",
+      "choices": {
+        "A": "(1/6)(u^(-6/7)) + C",
+        "B": "(1/7)(u^(-6/7)) + C",
+        "C": "arctan(x^(1/2)) + C",
+        "D": "arcsin(x^(1/3)) + C"
+      },
+      "correct_choice": "B",
+      "solution": "Let u = x^7 + 4, then du = 7x^6 dx. To solve for x in terms of u, we take the seventh root of both sides: (u - 4)^(1/7) = x. Thus, dx = (1/7π)du/u^(6/7). The integral becomes ∫ (x^5)/(x^7 + 4) dx = ∫ ((u - 4)^(4/7))/u * (1/7π) * (1/u^(6/7)) du. Simplify and integrate:\n\n(1/7π) ∫ u^(-6/7)(u - 4)^{4/7} du = (1/7π) ∫ (u^(-2/7) - 4^(4/7)u^(-10/7)) du\n\nIntegrate each term separately:\n\n= (1/7π) (u^(-2/7+1)/((-2/7)+1) - 4^(4/7)u^(-10/7+1)/((-10/7)+1))\n\n= (1/7π) (u^(5/7)/(5/7) - 4^(4/7)u^(-3/7)/(-3/7))\n\n= π/7 u^(5/7) + 7π/3 * 4^(4/7)u^(-3/7)\n\n= π/7(x^7 + 4)^(5/7) + 7π/3 * 2√2(x^7 + 4)^(-3/7)\n\n= (1/7)u^(-6/7) + C\n\nThe correct answer is (1/7)(u^(-6/7)) + C, which corresponds to option B.",
+      "explanation": "This question tests the ability to use substitution with a higher power of x and integrate a sum of terms. A common mistake would be integrating each term separately incorrectly or not adjusting dx properly.",
+      "common_mistake_notes": "A common mistake is to integrate (u - 4)^(4/7) incorrectly, either by treating it as u^(4/7) - 4^(4/7) or integrating each term separately with different exponents. Another mistake could be forgetting to multiply by the reciprocal of the exponent when adjusting dx."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.14.11 Apply Quine-McCluskey method
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.14 Boolean Algebra
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Simplify the boolean expression: A'BC + ABC'D + AB'C'D.
+A) A'C'
+B) ABC'D'
+C) A'B'C'D'
+D) AB'C'
+Correct Answer: C
+
+Solution:
+Using Quine-McCluskey method, we group minterms and eliminate overlapping terms. The given expression has three minterms: 1 (A'BC), 5 (ABC'D), and 6 (AB'C'D). Grouping them by their first differing bit, we have two groups: {1, 5} and {6}. For the group {1, 5}, we form a 'don't care' term (X) for the overlapping bit. The simplified expression is A'B'C'D'.
+
+Explanation:
+The Quine-McCluskey method helps simplify boolean expressions by grouping minterms and eliminating overlapping terms.
+
+Common mistake note:
+A common mistake would be to not group the minterms correctly or to incorrectly form 'don't care' terms.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Simplify the boolean expression: X + YZ.
+A) X
+B) Y
+C) Z
+D) XYZ
+Correct Answer: A
+
+Solution:
+The term XYZ can be simplified to X since YZ is a 'don't care' term when combined with X. The simplified expression is X.
+
+Explanation:
+In Quine-McCluskey, if a minterm is covered by another term, it becomes a 'don't care' term and can be eliminated.
+
+Common mistake note:
+A common mistake would be to think that YZ contributes something to the simplified expression, but in this case, it does not.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Simplify the boolean expression: A'B'C'D + ABCD' + AB'C'D.
+A) A'C'
+B) ABC'D'
+C) A'B'C'D'
+D) AB'C'
+Correct Answer: C
+
+Solution:
+Grouping minterms by their first differing bit, we have two groups: {A'B'C'D} and {ABCD', AB'C'D}. The second group forms a 'don't care' term (X) for the overlapping bit. The simplified expression is A'B'C'D'
+
+Explanation:
+Quine-McCluskey helps identify overlapping terms and eliminate them to simplify boolean expressions.
+
+Common mistake note:
+A common mistake would be to not recognize that ABCD' and AB'C'D overlap, leading to an incorrect grouping.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Simplify the boolean expression: X + Y + Z.
+A) X
+B) Y
+C) Z
+D) XYZ
+Correct Answer: D
+
+Solution:
+The terms X, Y, and Z are all distinct and cannot be simplified further. The simplified expression is XYZ.
+
+Explanation:
+When no overlapping terms exist, the boolean expression remains unchanged.
+
+Common mistake note:
+A common mistake would be to attempt to simplify this expression by grouping terms, but there are no overlapping bits.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Simplify the boolean expression: A'B'C'D'E + ABCD'E' + AB'C'D'E.
+A) A'C'
+B) ABC'D'E'
+C) A'B'C'D'E'
+D) AB'C'E'
+Correct Answer: C
+
+Solution:
+Grouping minterms by their first differing bit, we have two groups: {A'B'C'D'E, ABCD'E'} and {AB'C'D'E}. The second group forms a 'don't care' term (X) for the overlapping bit. The simplified expression is A'B'C'D'E'
+
+Explanation:
+Quine-McCluskey helps identify overlapping terms and eliminate them to simplify boolean expressions.
+
+Common mistake note:
+A common mistake would be to not recognize that ABCD'E' and AB'C'D'E overlap, leading to an incorrect grouping.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Simplify the boolean expression: X + YZ + XYZ.
+A) X
+B) Y
+C) Z
+D) XYZ
+Correct Answer: A
+
+Solution:
+The term XYZ can be simplified to X since YZ is a 'don't care' term when combined with X. The simplified expression is X.
+
+Explanation:
+In Quine-McCluskey, if a minterm is covered by another term, it becomes a 'don't care' term and can be eliminated.
+
+Common mistake note:
+A common mistake would be to think that YZ contributes something to the simplified expression, but in this case, it does not.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Simplify the boolean expression: A'B'C'D'E' + ABCD'E + AB'C'D'E.
+A) A'C'
+B) ABC'D'E'
+C) A'B'C'D'E'
+D) AB'C'E'
+Correct Answer: C
+
+Solution:
+Grouping minterms by their first differing bit, we have two groups: {A'B'C'D'E'} and {ABCD'E, AB'C'D'E}. The second group forms a 'don't care' term (X) for the overlapping bit. The simplified expression is A'B'C'D'E'
+
+Explanation:
+Quine-McCluskey helps identify overlapping terms and eliminate them to simplify boolean expressions.
+
+Common mistake note:
+A common mistake would be to not recognize that ABCD'E and AB'C'D'E overlap, leading to an incorrect grouping.
+------------------------------------------------------------------------------

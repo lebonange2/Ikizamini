@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.13.8",
+  "objective_text": "Solve Fibonacci recurrence",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the value of the 5th term in the Fibonacci sequence?",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "8"
+      },
+      "correct_choice": "D",
+      "solution": "The Fibonacci sequence starts with 0 and 1, and each subsequent term is the sum of the previous two terms. The first few terms are: 0, 1, 1, 2, 3, 5, 8, 13... So, the 5th term is 5.",
+      "explanation": "The Fibonacci sequence follows a specific pattern where each number is the sum of the two preceding ones. To find the 5th term, we add the 3rd and 4th terms: 2 + 3 = 5.",
+      "common_mistake_notes": "A common mistake would be to choose 'B' (3), which is the 4th term in the sequence, instead of the correct answer 'D' (5)."
+    },
+    {
+      "id": "2",
+      "stem": "What is the value of F(7) in the Fibonacci sequence, where F(n) represents the nth term?",
+      "choices": {
+        "A": "8",
+        "B": "13",
+        "C": "21",
+        "D": "34"
+      },
+      "correct_choice": "C",
+      "solution": "Using the Fibonacci sequence formula, we can calculate F(7): F(7) = F(6) + F(5). Given that F(6) = 8 and F(5) = 5, we have F(7) = 8 + 5 = 13.",
+      "explanation": "The nth term of the Fibonacci sequence can be calculated using the previous two terms: F(n) = F(n-1) + F(n-2). For F(7), we use F(6) and F(5).",
+      "common_mistake_notes": "A common mistake would be to add the 4th and 3rd terms instead of the 6th and 5th terms, which would result in an incorrect answer."
+    },
+    {
+      "id": "3",
+      "stem": "What is the value of F(9) - F(8), where F(n) represents the nth term in the Fibonacci sequence?",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "5"
+      },
+      "correct_choice": "C",
+      "solution": "F(9) = F(8) + F(7) and F(8) = F(7) + F(6). So, F(9) - F(8) = F(7) + F(6) - (F(7) + F(6)) = 0.",
+      "explanation": "The difference between two consecutive terms in the Fibonacci sequence is equal to the previous term. In this case, F(9) minus F(8) equals F(7).",
+      "common_mistake_notes": "A common mistake would be to assume that the difference is simply F(7), without considering the cancellation of terms when subtracting."
+    },
+    {
+      "id": "4",
+      "stem": "What is the value of the 10th term in the Fibonacci sequence if F(6) = 8 and F(7) = 13?",
+      "choices": {
+        "A": "21",
+        "B": "34",
+        "C": "55",
+        "D": "89"
+      },
+      "correct_choice": "C",
+      "solution": "Using the given values, we can calculate the 10th term: F(10) = F(9) + F(8). To find F(9), we add F(7) and F(8): F(9) = 13 + 21 = 34. Then, F(10) = 34 + 13 = 55.",
+      "explanation": "The Fibonacci sequence can be calculated by summing the previous two terms. Given F(6), F(7), we can find subsequent terms and eventually F(10).",
+      "common_mistake_notes": "A common mistake would be to stop after calculating F(9) and not continue to add it with F(8) to get F(10)."
+    },
+    {
+      "id": "5",
+      "stem": "What is the simplified form of the recursive formula for the Fibonacci sequence, F(n) = F(n-1) + F(n-2), when n > 1?",
+      "choices": {
+        "A": "F(n) = 2F(n-1)",
+        "B": "F(n) = 2F(n-2)",
+        "C": "F(n) = F(n-1) + 2F(n-2)",
+        "D": "F(n) = F(n-1) λ F(n-2)"
+      },
+      "correct_choice": "D",
+      "solution": "The simplified form of the recursive formula for the Fibonacci sequence is not given in terms of arithmetic operations. Instead, it's usually represented using a matrix or iterative method.",
+      "explanation": "The recursive formula cannot be simplified to an arithmetic expression like A, B, or C. The sequence is typically defined recursively or with matrix exponentiation.",
+      "common_mistake_notes": "A common mistake would be to attempt to simplify the recursion into an arithmetic form, which is not possible for this specific sequence."
+    },
+    {
+      "id": "6",
+      "stem": "What is the value of F(0) in the Fibonacci sequence?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "None, as F(n) is defined for n > 0"
+      },
+      "correct_choice": "A",
+      "solution": "The Fibonacci sequence starts with 0 and 1. So, F(0) = 0.",
+      "explanation": "The Fibonacci sequence has a starting point of 0, making F(0) the first term in the sequence.",
+      "common_mistake_notes": "A common mistake would be to choose 'B' (1), which is the second term in the sequence, or 'C' (2), which is not part of the standard Fibonacci sequence definition."
+    },
+    {
+      "id": "7",
+      "stem": "What is the value of F(10) if the Fibonacci sequence starts with 1 and 2 instead of 0 and 1?",
+      "choices": {
+        "A": "55",
+        "B": "89",
+        "C": "144",
+        "D": "233"
+      },
+      "correct_choice": "C",
+      "solution": "With a starting point of 1 and 2, the sequence would be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89. So, F(10) = 89.",
+      "explanation": "The Fibonacci sequence can have different starting points, which would change the values of subsequent terms. Here, we start with 1 and 2 instead of 0 and 1.",
+      "common_mistake_notes": "A common mistake would be to assume that F(10) remains at 55, as in the standard Fibonacci sequence, without considering the changed starting point."
+    }
+  ]
+}

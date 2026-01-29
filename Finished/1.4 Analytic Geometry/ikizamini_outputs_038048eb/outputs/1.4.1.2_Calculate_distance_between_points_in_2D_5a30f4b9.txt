@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.1.2 Calculate distance between points in 2D
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.1 Coordinate Systems
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Incremental increase):
+Find the distance between point A(3, 4) and point B(6, 8).
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+The distance between two points (x1, y1) and (x2, y2) in a 2D plane can be calculated using the distance formula: sqrt((x2-x1)^2 + (y2-y1)^2). For point A(3, 4) and point B(6, 8), we have x1=3, y1=4, x2=6, and y2=8. Plugging these values into the formula gives us sqrt((6-3)^2 + (8-4)^2) = sqrt(9+16) = sqrt(25) = 5.
+
+Explanation:
+The correct calculation uses the distance formula correctly.
+
+Common mistake note:
+A common mistake is to simply subtract the x- and y-coordinates without squaring and summing them, which would result in choice A (a). This approach only works for horizontal or vertical distances, not for diagonal distances like in this case.
+------------------------------------------------------------------------------
+
+Problem 2 (Negative coordinates):
+Find the distance between point C(-2, 1) and point D(1, -3).
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+Using the distance formula: sqrt((-1-(-2))^2 + (-3-1)^2) = sqrt(1^2 + (-4)^2) = sqrt(1+16) = sqrt(17). However, since we're looking for an integer answer among the choices and sqrt(17) is not a perfect square, the closest integer distance is 5 (choice B).
+
+Explanation:
+The correct calculation uses the distance formula correctly, but recognizes that the exact decimal result does not match any of the given choices, so the nearest integer should be selected.
+
+Common mistake note:
+A common mistake would be to choose C (c) or D (d), assuming that the square root operation gives an exact match with one of the provided options. This is incorrect because sqrt(17) is not a perfect square and does not yield an integer result.
+------------------------------------------------------------------------------
+
+Problem 3 (Zero coordinates):
+Find the distance between point E(0, 5) and point F(0, -3).
+A) a
+B) b
+C) c
+D) d
+Correct Answer: C
+
+Solution:
+Since both points have the same x-coordinate, the distance is simply the difference between their y-coordinates: |5-(-3)| = |5+3| = 8. However, since we're looking for an integer answer among the choices and only one choice (D) has the correct value, that is the correct answer.
+
+Explanation:
+The correct calculation uses the fact that the distance between two points with the same x-coordinate is the absolute difference of their y-coordinates.
+
+Common mistake note:
+A common mistake would be to choose A (a), B (b), or D (d) based on subtracting the y-coordinates directly without taking the absolute value, which would result in a negative distance. This is incorrect because distances are always non-negative.
+------------------------------------------------------------------------------
+
+Problem 4 (Fractional coordinates):
+Find the distance between point G(1/2, 3/4) and point H(5/2, 7/4).
+A) a
+B) b
+C) c
+D) d
+Correct Answer: A
+
+Solution:
+First, convert the fractions to decimals: G约等于(0.5, 0.75), H约等于(2.5, 1.75). Then use the distance formula: sqrt((2.5-0.5)^2 + (1.75-0.75)^2) = sqrt(2^2 + 1^2) = sqrt(4+1) = sqrt(5). However, since we're looking for an integer answer among the choices and sqrt(5) is not a perfect square, the nearest integer distance is 2 (choice A).
+
+Explanation:
+The correct calculation uses the distance formula correctly, but recognizes that the exact decimal result does not match any of the given choices, so the nearest integer should be selected.
+
+Common mistake note:
+A common mistake would be to choose B (b), C (c), or D (d), assuming that the square root operation gives an exact match with one of the provided options. This is incorrect because sqrt(5) is not a perfect square and does not yield an integer result.
+------------------------------------------------------------------------------
+
+Problem 5 (Negative distance):
+Find the distance between point I(-1, -2) and point J(3, 4).
+A) a
+B) b
+C) c
+D) d
+Correct Answer: C
+
+Solution:
+Using the distance formula: sqrt((3-(-1))^2 + (4-(-2))^2) = sqrt(4^2 + 6^2) = sqrt(16+36) = sqrt(52). However, since we're looking for an integer answer among the choices and sqrt(52) is not a perfect square, the nearest integer distance is 7 (choice D).
+
+Explanation:
+The correct calculation uses the distance formula correctly, but recognizes that the exact decimal result does not match any of the given choices, so the nearest integer should be selected.
+
+Common mistake note:
+A common mistake would be to choose A (a), B (b), or C (c), assuming that the square root operation gives an exact match with one of the provided options. This is incorrect because sqrt(52) is not a perfect square and does not yield an integer result.
+------------------------------------------------------------------------------
+
+Problem 6 (Zero distance):
+Find the distance between point K(4, 7) and point L(4, 7).
+A) a
+B) b
+C) c
+D) d
+Correct Answer: A
+
+Solution:
+The distance between two points with the same x- and y-coordinates is zero because they are the same point. Therefore, the correct answer is A (0).
+
+Explanation:
+The correct calculation recognizes that the distance between identical points is zero.
+
+Common mistake note:
+A common mistake would be to choose B (b), C (c), or D (d) based on a misunderstanding of what it means for two points to be the same. This is incorrect because the distance between identical points should always be zero.
+------------------------------------------------------------------------------
+
+Problem 7 (Diagonal line):
+Find the distance between point M(0, 0) and point N(5, 5).
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+This is a diagonal line forming a right-angled triangle with sides of length 5. The distance between the points can be found using Pythagorean theorem: sqrt(5^2 + 5^2) = sqrt(25+25) = sqrt(50) = sqrt(25 * 2) = 5sqrt(2). However, since we're looking for an integer answer among the choices and sqrt(2) is irrational, the correct choice is B (b).
+
+Explanation:
+The correct calculation recognizes that this forms a right-angled triangle with side lengths of 5, allowing application of the Pythagorean theorem.
+
+Common mistake note:
+A common mistake would be to choose A (a), C (c), or D (d), assuming that the distance is simply one of the sides. This is incorrect because the diagonal distance between two points forms a right triangle, and the Pythagorean theorem should be used.
+------------------------------------------------------------------------------

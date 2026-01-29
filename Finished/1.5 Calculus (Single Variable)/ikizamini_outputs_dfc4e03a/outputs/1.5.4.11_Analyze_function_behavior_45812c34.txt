@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.4.11 Analyze function behavior
+==============================================================================
+Context: 1.5 Calculus (Single Variable)
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asymptotes of Logarithmic Functions):
+What is the vertical asymptote of the function f(x) = ln(x - 3)?
+A) x = 0
+B) x = 1
+C) x = 2
+D) x = 3
+Correct Answer: D
+
+Solution:
+The vertical asymptote of a logarithmic function occurs where the argument inside the logarithm is zero. For f(x) = ln(x - 3), set x - 3 = 0 to find the vertical asymptote: x = 3.
+
+Explanation:
+A logarithm is undefined when its argument is less than or equal to zero. Since the domain of the natural logarithm (ln) includes only positive numbers, x - 3 must be greater than zero for f(x) to be defined. Thus, x = 3 is the vertical asymptote.
+
+Common mistake note:
+A common mistake is to choose A or B because they are closer to zero, but those values do not represent where the function becomes undefined due to the logarithm.
+------------------------------------------------------------------------------
+
+Problem 2 (Domain of Square Root Function):
+What is the domain of the function g(x) = √(2x + 5)?
+A) x ≤ -2.5
+B) x ≥ -2.5
+C) x < -2.5
+D) x > -2.5
+Correct Answer: B
+
+Solution:
+The domain of a square root function includes all real numbers greater than or equal to the value inside the square root. For g(x) = √(2x + 5), set 2x + 5 ≥ 0 and solve for x: x ≥ -2.5.
+
+Explanation:
+A square root function is defined only for non-negative values. To find the domain of g(x), we set 2x + 5 ≥ 0, which results in x ≥ -2.5, the domain of the function.
+
+Common mistake note:
+A common mistake would be to choose A or C because they represent inequalities with '<', but those do not encompass the non-negative values required for a square root function.
+------------------------------------------------------------------------------
+
+Problem 3 (End Behavior of Quadratic Functions):
+What is the end behavior of the quadratic function h(x) = x^2 - 4x + 3?
+A) (−∞, ∞)
+B) (−∞, −∞)
+C) [−∞, ∞)
+D) [−∞, −∞)
+Correct Answer: A
+
+Solution:
+The end behavior of a quadratic function is determined by the sign of the leading coefficient. For h(x) = x^2 - 4x + 3 with a positive leading coefficient (1), the parabola opens upwards and the end behavior is (−∞, ∞).
+
+Explanation:
+A quadratic function in standard form f(x) = ax^2 + bx + c has an upward opening parabola if a > 0 and a downward opening parabola if a < 0. The end behavior of an upward opening parabola is (−∞, ∞), meaning the graph approaches positive infinity as x goes to both positive and negative infinity.
+
+Common mistake note:
+A common mistake would be to choose B or D because they represent downward opening parabolas, but this function has a positive leading coefficient, indicating an upward opening.
+------------------------------------------------------------------------------
+
+Problem 4 (Intercepts of Linear Functions):
+Find the x-intercept of the linear function j(x) = 3x - 6.
+A) (0, -2)
+B) (2, 0)
+C) (0, 2)
+D) (1, 0)
+Correct Answer: B
+
+Solution:
+The x-intercept of a linear function occurs where the graph crosses the x-axis. For j(x) = 3x - 6, set y = 0 and solve for x: x = 2.
+
+Explanation:
+The x-intercept is found by setting the function value equal to zero and solving for x. In this case, 3x - 6 = 0 when x = 2, so the x-intercept is (2, 0).
+
+Common mistake note:
+A common mistake would be to choose A or C because they represent points on the line but not the x-intercept, which occurs where y = 0.
+------------------------------------------------------------------------------
+
+Problem 5 (Increasing and Decreasing Intervals of a Cubic Function):
+On what interval is the cubic function k(x) = x^3 - 6x^2 + 9x increasing?
+A) (−∞, 3)
+B) (0, 3)
+C) (1, 3)
+D) (3, ∞)
+Correct Answer: C
+
+Solution:
+To determine the intervals where k(x) is increasing or decreasing, find its critical points by setting the first derivative equal to zero. For k(x), the first derivative is k'(x) = 3x^2 - 12x + 9. Setting this equal to zero gives x = 1 and x = 3. Since k'(x) is positive between these values, k(x) is increasing on (1, 3).
+
+Explanation:
+The intervals of increase or decrease for a cubic function are determined by its first derivative. By finding the critical points where the first derivative is zero, we can determine that k'(x) changes sign at x = 1 and x = 3. Since k'(x) is positive between these values, k(x) is increasing on (1, 3).
+
+Common mistake note:
+A common mistake would be to choose A or D because they represent intervals where the function may appear to be increasing, but those intervals include critical points where the function changes direction.
+------------------------------------------------------------------------------
+
+Problem 6 (Zeros of a Polynomial Function):
+Find one zero of the polynomial function m(x) = 2x^3 - x^2 - 5x + 2.
+A) x = 1
+B) x = -1
+C) x = 2
+D) x = -2
+Correct Answer: A
+
+Solution:
+To find a zero of m(x), factor the polynomial: (x - 1)(2x^2 + x - 2) = 0. Setting each factor equal to zero, we find that one zero is x = 1.
+
+Explanation:
+The zeros of a polynomial function are found by setting the function equal to zero and solving for x. Factoring m(x) reveals (x - 1)(2x^2 + x - 2) = 0, which gives us x = 1 as one zero.
+
+Common mistake note:
+A common mistake would be to choose B, C, or D because they may appear to be zeros based on the factors but do not result in a true statement when plugged back into the original polynomial.
+------------------------------------------------------------------------------
+
+Problem 7 (Horizontal Asymptote of Rational Function):
+What is the horizontal asymptote of the rational function n(x) = (3x + 1)/(2x - 4)?
+A) y = 0
+B) y = 1/2
+C) y = 1
+D) y = 2
+Correct Answer: B
+
+Solution:
+The horizontal asymptote of a rational function is determined by the degrees of the numerator and denominator. If they are equal, the ratio of the leading coefficients gives the horizontal asymptote. For n(x), both the numerator and denominator have degree 1, so the horizontal asymptote is y = (3/2)/(2/1) = 1/2.
+
+Explanation:
+The horizontal asymptote of a rational function is found by comparing the degrees of the polynomial terms in the numerator and denominator. If they are equal, the ratio of the leading coefficients gives the horizontal asymptote. Here, both the numerator and denominator have degree 1, so the horizontal asymptote is y = (3/2)/(2/1) = 1/2.
+
+Common mistake note:
+A common mistake would be to choose A or D because they represent horizontal asymptotes for functions with different degrees in the numerator and denominator, but this function has equal degree polynomials.
+------------------------------------------------------------------------------

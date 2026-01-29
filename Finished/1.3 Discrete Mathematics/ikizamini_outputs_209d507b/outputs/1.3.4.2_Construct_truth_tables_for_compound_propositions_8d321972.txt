@@ -1,0 +1,203 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.4.2 Construct truth tables for compound propositions
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.4 Truth Tables
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Create a truth table for the proposition (P ∧ Q) → R.
+A) [T, T, F, F]
+B) [F, T, T, F]
+C) [F, T, F, T]
+D) [T, F, T, F]
+Correct Answer: A
+
+Solution:
+The truth table for (P ∧ Q) → R is as follows:
+
+P  | Q  |  (P ∧ Q)  |  (P ∧ Q) → R
+---|---|---------|----------------
+T   | T  |   T     |      T          
+T   | F  |   F     |      F          
+F   | T  |   F     |      T          
+F   | F  |   F     |      T          
+
+So the correct answer is [T, T, F, F].
+
+Explanation:
+This truth table shows that (P ∧ Q) → R is true when (P ∧ Q) is false or R is true.
+
+Common mistake note:
+A common mistake is to assume that (P ∧ Q) → R is always true, which is incorrect. It's only true when the antecedent (P ∧ Q) is false or the consequent (R) is true.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Construct a truth table for the proposition P ↔ (Q ∨ ¬S).
+A) [T, T, F, T],  [F, F, T, F]
+B) [T, F, T, F],  [F, T, F, T]
+C) [T, T, F, F],  [F, F, T, T]
+D) [T, F, T, T],  [F, T, F, F]
+Correct Answer: B
+
+Solution:
+The truth table for P ↔ (Q ∨ ¬S) is as follows:
+
+P  | Q  | S  | Q ∨ ¬S  | P ↔ (Q ∨ ¬S)
+---|---|---|--------|----------------
+T   | T  | T  |   T     |      F          
+T   | T  | F  |   T     |      T          
+T   | F  | T  |   T     |      T          
+T   | F  | F  |   F     |      F          
+F   | T  | T  |   T     |      T          
+F   | T  | F  |   T     |      F          
+F   | F  | T  |   F     |      T          
+F   | F  | F  |   F     |      T          
+
+So the correct answer is [T, F, T, F],  [F, T, F, T].
+
+Explanation:
+This truth table shows that P ↔ (Q ∨ ¬S) is true when P and (Q ∨ ¬S) have the same truth value.
+
+Common mistake note:
+A common mistake is to mix up the order of the biconditional operator, which would result in a different truth table. Remember that P ↔ Q is equivalent to (P → Q) ∧ (Q → P).
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Write a truth table for the proposition (¬P ∨ Q) ∧  (R ∨ S).
+A) [T, T, T, F],  [T, F, T, F],  [F, T, T, T],  [F, F, T, T]
+B) [T, T, T, T],  [T, F, T, T],  [F, T, T, F],  [F, F, T, F]
+C) [T, T, F, T],  [T, F, F, T],  [F, T, F, F],  [F, F, F, F]
+D) [T, T, T, F],  [T, F, T, F],  [F, T, T, F],  [F, F, T, F]
+Correct Answer: A
+
+Solution:
+The truth table for (¬P ∨ Q) ∧  (R ∨ S) is as follows:
+
+P  | Q  | R  | S  | ¬P ∨ Q  | R ∨ S  |  (¬P ∨ Q) ∧  (R ∨ S)
+---|---|---|---|---------|--------|----------------------
+T   | T  | T  | T  |    F     |   T     |        F              
+T   | F  | T  | T  |    T     |   T     |        T              
+F   | T  | T  | T  |    T     |   T     |        T              
+F   | F  | T  | T  |    T     |   T     |        T              
+T   | T  | F  | T  |    F     |   T     |        F              
+T   | F  | F  | T  |    T     |   T     |        T              
+F   | T  | F  | T  |    T     |   T     |        T              
+F   | F  | F  | T  |    T     |   T     |        T              
+
+So the correct answer is [T, T, T, F],  [T, F, T, F],  [F, T, T, T],  [F, F, T, T].
+
+Explanation:
+This truth table shows that (¬P ∨ Q) ∧  (R ∨ S) is true when both (¬P ∨ Q) and (R ∨ S) are true.
+
+Common mistake note:
+A common mistake is to forget to apply the distributive law, which would result in an incorrect truth table. Remember that (A ∧ B) ∨ C is equivalent to (A ∨ C) ∧ (B ∨ C).
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Create a truth table for the proposition (P → Q) ↔  (¬Q → ¬P).
+A) [T, T, F],  [F, F, T]
+B) [T, F, T],  [F, T, F]
+C) [T, T, T],  [F, F, F]
+D) [T, F, F],  [F, T, T]
+Correct Answer: A
+
+Solution:
+The truth table for (P → Q) ↔  (¬Q → ¬P) is as follows:
+
+P  | Q  | P → Q  | ¬Q  | ¬Q → ¬P  |  (P → Q) ↔  (¬Q → ¬P)
+---|---|-------|----|---------|------------------------
+T   | T  |   T    | F   |    T     |        T                
+T   | F  |   F    | T   |    T     |        F                
+F   | T  |   T    | F   |    T     |        T                
+F   | F  |   T    | T   |    T     |        T                
+
+So the correct answer is [T, T, F],  [F, F, T].
+
+Explanation:
+This truth table shows that (P → Q) ↔  (¬Q → ¬P) is true when both conditional statements have the same truth value.
+
+Common mistake note:
+A common mistake is to assume that (P → Q) ↔  (¬Q → ¬P) is always true, which is incorrect. It's only true when P and Q are logically equivalent.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Construct a truth table for the proposition (P ∧ R) ∨  (Q ∧ ¬R).
+A) [T, T, T, F],  [T, F, T, F],  [F, T, T, T],  [F, F, T, T]
+B) [T, T, T, T],  [T, F, T, T],  [F, T, T, F],  [F, F, T, F]
+C) [T, T, F, T],  [T, F, F, T],  [F, T, F, F],  [F, F, F, F]
+D) [T, T, T, F],  [T, F, T, F],  [F, T, T, F],  [F, F, T, F]
+Correct Answer: A
+
+Solution:
+The truth table for (P ∧ R) ∨  (Q ∧ ¬R) is as follows:
+
+P  | R  | Q  | ¬R  | P ∧ R  | Q ∧ ¬R  |  (P ∧ R) ∨  (Q ∧ ¬R)
+---|---|---|----|-------|---------|----------------------
+T   | T  | T  | F   |   T    |    F     |        T              
+T   | F  | T  | T   |   F    |    T     |        T              
+F   | T  | T  | F   |   F    |    F     |        F              
+F   | F  | T  | T   |   F    |    T     |        T              
+
+So the correct answer is [T, T, T, F],  [T, F, T, F],  [F, T, T, T],  [F, F, T, T].
+
+Explanation:
+This truth table shows that (P ∧ R) ∨  (Q ∧ ¬R) is true when either (P ∧ R) or (Q ∧ ¬R) is true.
+
+Common mistake note:
+A common mistake is to forget to apply the distributive law, which would result in an incorrect truth table. Remember that A ∨ (B ∧ C) is equivalent to (A ∨ B) ∧ (A ∨ C).
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Write a truth table for the proposition P →  (Q ∨ R) ↔  (¬P ∨ Q) ∧  (¬P ∨ R).
+A) [T, T, F],  [F, F, T]
+B) [T, F, T],  [F, T, F]
+C) [T, T, T],  [F, F, F]
+D) [T, F, F],  [F, T, T]
+Correct Answer: A
+
+Solution:
+The truth table for P →  (Q ∨ R) ↔  (¬P ∨ Q) ∧  (¬P ∨ R) is as follows:
+
+P  | Q  | R  | P →  (Q ∨ R)  | ¬P  | ¬P ∨ Q  | ¬P ∨ R  |  (¬P ∨ Q) ∧  (¬P ∨ R)  | P →  (Q ∨ R) ↔  (¬P ∨ Q) ∧  (¬P ∨ R)
+---|---|---|-------------|----|--------|--------|---------------------|---------------------------------
+T   | T  | T  |      T       | F   |   T     |   T     |        T            |            T                    
+T   | T  | F  |      T       | F   |   T     |   F     |        T            |            T                    
+T   | F  | T  |      T       | F   |   F     |   T     |        T            |            T                    
+F   | T  | T  |      T       | T   |   T     |   T     |        T            |            T                    
+
+So the correct answer is [T, T, F],  [F, F, T].
+
+Explanation:
+This truth table shows that P →  (Q ∨ R) ↔  (¬P ∨ Q) ∧  (¬P ∨ R) is true when both conditional statements have the same truth value.
+
+Common mistake note:
+A common mistake is to assume that P →  (Q ∨ R) ↔  (¬P ∨ Q) ∧  (¬P ∨ R) is always true, which is incorrect. It's only true when P and (Q ∨ R) are logically equivalent.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Construct a truth table for the proposition (P ∨ Q) → R ↔  (¬R → ¬P) ∧  (¬R → ¬Q).
+A) [T, T, F],  [F, F, T]
+B) [T, F, T],  [F, T, F]
+C) [T, T, T],  [F, F, F]
+D) [T, F, F],  [F, T, T]
+Correct Answer: A
+
+Solution:
+The truth table for (P ∨ Q) → R ↔  (¬R → ¬P) ∧  (¬R → ¬Q) is as follows:
+
+P  | Q  | R  | P ∨ Q  | ¬R  | ¬R → ¬P  | ¬R → ¬Q  |  (¬R → ¬P) ∧  (¬R → ¬Q)  |  (P ∨ Q) → R ↔  (¬R → ¬P) ∧  (¬R → ¬Q)
+---|---|---|-------|----|---------|---------|---------------------|---------------------------------
+T   | T  | T  |   T    | F   |    T     |    T     |        T            |            T                    
+T   | T  | F  |   T    | T   |    F     |    F     |        F            |            T                    
+T   | F  | T  |   T    | F   |    T     |    F     |        T            |            T                    
+F   | T  | T  |   T    | F   |    T     |    T     |        T            |            T                    
+
+So the correct answer is [T, T, F],  [F, F, T].
+
+Explanation:
+This truth table shows that (P ∨ Q) → R ↔  (¬R → ¬P) ∧  (¬R → ¬Q) is true when both conditional statements have the same truth value.
+
+Common mistake note:
+A common mistake is to assume that (P ∨ Q) → R ↔  (¬R → ¬P) ∧  (¬R → ¬Q) is always true, which is incorrect. It's only true when P ∨ Q and R are logically equivalent.
+------------------------------------------------------------------------------

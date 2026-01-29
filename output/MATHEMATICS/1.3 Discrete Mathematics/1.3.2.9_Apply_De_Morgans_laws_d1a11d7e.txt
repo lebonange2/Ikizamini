@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.2.9 Apply De Morgan's laws
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.2 Set Operations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (?):
+Given the statement: (A ∪ B)', which of the following is its equivalent using De Morgan's laws?
+A) (A' ∩ B')
+B) (A' ∪ B)
+C) (A ∩ B')'
+D) (A ∩ B)'
+Correct Answer: A
+
+Solution:
+De Morgan's law states that the complement of a union is equal to the intersection of the complements. Therefore, (A ∪ B)' is equivalent to (A' ∩ B')
+
+Explanation:
+De Morgan's laws are used to manipulate logical expressions involving negation, union, and intersection.
+
+Common mistake note:
+Common mistake: Choosing option B, which represents the complement of one set without applying it to both sets in the union. The law requires the complement to be applied to each set within the union.
+------------------------------------------------------------------------------
+
+Problem 2 (?):
+Given the statement: (A' ∩ B') , which of the following is its equivalent using De Morgan's laws?
+A) (A ∪ B)'
+B) (A ∪ B)
+C) (A' ∩ B)
+D) (A ∩ B)'
+Correct Answer: A
+
+Solution:
+De Morgan's law states that the complement of an intersection is equal to the union of the complements. Therefore, (A' ∩ B') is equivalent to (A ∪ B)'
+
+Explanation:
+Applying De Morgan's laws correctly negates and switches the operation between sets.
+
+Common mistake note:
+Common mistake: Choosing option D, which represents the complement of an intersection without applying it to both sets. The law requires the complement to be applied to each set within the intersection.
+------------------------------------------------------------------------------
+
+Problem 3 (?):
+Given the statement: (¬X ∧ ¬Y) , which of the following is its equivalent using De Morgan's laws?
+A) (X ∨ Y)'
+B) (X ∨ Y)
+C) (¬X ∨ ¬Y)'
+D) (¬X ∨ ¬Y)
+Correct Answer: A
+
+Solution:
+De Morgan's law states that the negation of 'and' (conjunction) is equivalent to 'or' (disjunction) with negated terms. Therefore, (¬X ∧ ¬Y) is equivalent to (X ∨ Y)'
+
+Explanation:
+Applying De Morgan's laws correctly negates and switches between conjunction and disjunction.
+
+Common mistake note:
+Common mistake: Choosing option B, which represents the original statement without applying De Morgan's laws. The law requires negation and a change in operation.
+------------------------------------------------------------------------------
+
+Problem 4 (?):
+Given the statement: (¬X ∨ ¬Y) , which of the following is its equivalent using De Morgan's laws?
+A) (X ∧ Y)'
+B) (X ∧ Y)
+C) (¬X ∨ ¬Y)'
+D) (¬X ∧ ¬Y)
+Correct Answer: A
+
+Solution:
+De Morgan's law states that the negation of 'or' (disjunction) is equivalent to 'and' (conjunction) with negated terms. Therefore, (¬X ∨ ¬Y) is equivalent to (X ∧ Y)'
+
+Explanation:
+Applying De Morgan's laws correctly negates and switches between disjunction and conjunction.
+
+Common mistake note:
+Common mistake: Choosing option B, which represents the original statement without applying De Morgan's laws. The law requires negation and a change in operation.
+------------------------------------------------------------------------------
+
+Problem 5 (?):
+Given the statement: (¬(A ∪ B)) , which of the following is its equivalent using De Morgan's laws?
+A) (A' ∩ B')
+B) (A' ∪ B)
+C) (A ∩ B)'
+D) (A ∩ B)
+Correct Answer: A
+
+Solution:
+De Morgan's law states that the negation of a union is equal to the intersection of the complements. Therefore, (¬(A ∪ B)) is equivalent to (A' ∩ B')
+
+Explanation:
+Applying De Morgan's laws correctly negates and switches between union and intersection.
+
+Common mistake note:
+Common mistake: Choosing option C, which represents the complement of an intersection without applying it to both sets. The law requires the complement to be applied to each set within the union.
+------------------------------------------------------------------------------
+
+Problem 6 (?):
+Given the statement: (¬(A ∩ B)) , which of the following is its equivalent using De Morgan's laws?
+A) (A' ∪ B')
+B) (A' ∩ B)
+C) (A ∪ B)'
+D) (A ∪ B)
+Correct Answer: C
+
+Solution:
+De Morgan's law states that the negation of an intersection is equal to the union of the complements. Therefore, (¬(A ∩ B)) is equivalent to (A' ∪ B')
+
+Explanation:
+Applying De Morgan's laws correctly negates and switches between intersection and union.
+
+Common mistake note:
+Common mistake: Choosing option A, which represents the complement of a union without applying it to both sets. The law requires the complement to be applied to each set within the intersection.
+------------------------------------------------------------------------------
+
+Problem 7 (?):
+Given the statement: (¬(X ∨ Y)) , which of the following is its equivalent using De Morgan's laws?
+A) (X ∧ Y)'
+B) (X ∧ Y)
+C) (¬X ∨ ¬Y)'
+D) (¬X ∧ ¬Y)
+Correct Answer: D
+
+Solution:
+De Morgan's law states that the negation of 'or' (disjunction) is equivalent to 'and' (conjunction) with negated terms. Therefore, (¬(X ∨ Y)) is equivalent to (¬X ∧ ¬Y)
+
+Explanation:
+Applying De Morgan's laws correctly negates and switches between disjunction and conjunction.
+
+Common mistake note:
+Common mistake: Choosing option A, which represents the complement of an 'and' statement without negating the terms. The law requires negation and a change in operation.
+------------------------------------------------------------------------------

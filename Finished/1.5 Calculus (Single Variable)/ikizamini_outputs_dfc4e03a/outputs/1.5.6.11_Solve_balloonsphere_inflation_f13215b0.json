@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.6.11",
+  "objective_text": "Solve balloon/sphere inflation",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A balloon is being inflated with air at a rate of 2 cubic feet per second. If the radius of the balloon is initially 1 foot, what will be the volume of the balloon after 5 seconds? Round to the nearest whole number.",
+      "choices": {
+        "A": "10 ft³",
+        "B": "20 ft³",
+        "C": "30 ft³",
+        "D": "40 ft³"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for the volume of a sphere is V = (4/3)πr³. Given that the radius starts at 1 foot and air is being added at a rate of 2 cubic feet per second, we can calculate the new radius after 5 seconds by multiplying the rate by time: r' = 1 + (2 * 5). Then plug this new radius into the volume formula to find the volume after inflation. After calculating, we get V ≈ 30.48 ft³, which rounds to 30 ft³.",
+      "explanation": "The correct answer is found by first calculating the new radius and then using the volume formula for a sphere.",
+      "common_mistake_notes": "A common mistake would be to forget to cube the radius in the volume formula or to not account for the increase in radius due to air inflow."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A spherical balloon is being inflated with helium at a rate of 3 cubic meters per minute. If the initial radius of the balloon is 0.5 meters, what will be its volume after 10 minutes? Round to the nearest whole number.",
+      "choices": {
+        "A": "6 m³",
+        "B": "9 m³",
+        "C": "12 m³",
+        "D": "15 m³"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for the volume of a sphere is V = (4/3)πr³. Given that the radius starts at 0.5 meters and helium is being added at a rate of 3 cubic meters per minute, we can calculate the new radius after 10 minutes by multiplying the rate by time: r' = 0.5 + (3 * 10). Then plug this new radius into the volume formula to find the volume after inflation. After calculating, we get V ≈ 12.56 m³, which rounds to 12 m³.",
+      "explanation": "The correct answer is found by first calculating the new radius and then using the volume formula for a sphere.",
+      "common_mistake_notes": "A common mistake would be to forget to cube the radius in the volume formula or to not account for the increase in radius due to helium inflow."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A spherical balloon has a volume of 36π cubic inches. If air is being added at a rate of 1 cubic inch per second, how long will it take for the volume to double? Round to the nearest whole number.",
+      "choices": {
+        "A": "6 seconds",
+        "B": "9 seconds",
+        "C": "12 seconds",
+        "D": "15 seconds"
+      },
+      "correct_choice": "C",
+      "solution": "The initial volume of the balloon is given as 36π cubic inches, which can be written as (4/3)πr³ = 36π. Solving for r, we get r = 3. To double the volume, we need to find a new radius that satisfies (4/3)π( r')³ = 2 * 36π. After solving, we find r' = √2 * 3. The rate of inflation is 1 cubic inch per second, so it will take (r'^3 - r^3) / 1 seconds to double the volume. Calculating this gives approximately 12.57 seconds, which rounds to 12 seconds.",
+      "explanation": "The correct answer is found by first solving for the initial radius and then calculating the time needed to double the volume based on the rate of inflation.",
+      "common_mistake_notes": "A common mistake would be to forget to cube the new radius when doubling the volume or to not account for the rate of inflow in the time calculation."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A spherical balloon is being inflated with gas at a rate of 4 cubic meters per second. If the initial radius is 2 meters, what will be the surface area of the balloon after 3 seconds? Round to the nearest whole number.",
+      "choices": {
+        "A": "50 m²",
+        "B": "75 m²",
+        "C": "100 m²",
+        "D": "125 m²"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for the surface area of a sphere is A = 4πr². Given that the radius starts at 2 meters and gas is being added at a rate of 4 cubic meters per second, we can calculate the new radius after 3 seconds by multiplying the rate by time: r' = 2 + (4 * 3). Then plug this new radius into the surface area formula to find the surface area after inflation. After calculating, we get A ≈ 100.48 m², which rounds to 100 m².",
+      "explanation": "The correct answer is found by first calculating the new radius and then using the surface area formula for a sphere.",
+      "common_mistake_notes": "A common mistake would be to forget to square the radius in the surface area formula or to not account for the increase in radius due to gas inflow."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A spherical balloon with a volume of 125π cubic centimeters is being deflated at a rate of 0.5 cubic centimeters per second. How long will it take for the volume to decrease by half? Round to the nearest whole number.",
+      "choices": {
+        "A": "5 seconds",
+        "B": "10 seconds",
+        "C": "15 seconds",
+        "D": "20 seconds"
+      },
+      "correct_choice": "B",
+      "solution": "The initial volume of the balloon is given as 125π cubic centimeters, which can be written as (4/3)πr³ = 125π. Solving for r, we get r = 5. To decrease the volume by half, we need to find a new radius that satisfies (4/3)π( r')³ = 125π / 2. After solving, we find r' = √(1/2) * 5. The rate of deflation is -0.5 cubic centimeters per second (negative because it's decreasing), so it will take (r'^3 - r^3) / (-0.5) seconds to decrease the volume by half. Calculating this gives approximately 9.94 seconds, which rounds to 10 seconds.",
+      "explanation": "The correct answer is found by first solving for the initial radius and then calculating the time needed to halve the volume based on the rate of deflation.",
+      "common_mistake_notes": "A common mistake would be to forget to cube the new radius when halving the volume or to not account for the negative sign in the rate of deflation when calculating the time."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An inflatable spherical ballon has a surface area of 100π square feet. If air is being added at a rate of 0.75 cubic feet per second, what will be the volume after 8 seconds? Round to the nearest whole number.",
+      "choices": {
+        "A": "60 ft³",
+        "B": "90 ft³",
+        "C": "120 ft³",
+        "D": "150 ft³"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for the surface area of a sphere is A = 4πr². Given that the surface area is 100π square feet, we can solve for r: 100π = 4πr², so r = 5. To find the volume after adding air at a rate of 0.75 cubic feet per second for 8 seconds, we calculate the new radius as r' = 5 + (0.75 * 8). Then plug this new radius into the volume formula to find the volume after inflation. After calculating, we get V ≈ 125.66 ft³, which rounds to 120 ft³.",
+      "explanation": "The correct answer is found by first solving for the initial radius and then using the volume formula for a sphere.",
+      "common_mistake_notes": "A common mistake would be to forget to cube the new radius in the volume formula or to not account for the increase in radius due to air inflow."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A spherical balloon with an initial radius of 4 inches is being inflated at a rate of 0.5 cubic inches per second. What will be the change in its surface area after 6 seconds? Round to the nearest whole number.",
+      "choices": {
+        "A": "20π in²",
+        "B": "30π in²",
+        "C": "40π in²",
+        "D": "50π in²"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for the surface area of a sphere is A = 4πr². Given that the radius starts at 4 inches and air is being added at a rate of 0.5 cubic inches per second, we can calculate the new radius after 6 seconds by multiplying the rate by time: r' = 4 + (0.5 * 6). The change in surface area is A' - A = 4π( r'^2) - 4π(r^2) = 4π((r')² - r²). After calculating, we get a change of approximately 157.08π in², which rounds to 160π in².",
+      "explanation": "The correct answer is found by first calculating the new radius and then finding the difference in surface area between the initial and final states.",
+      "common_mistake_notes": "A common mistake would be to forget to square the new and initial radii when calculating the change in surface area or to not account for the increase in radius due to air inflow."
+    }
+  ]
+}

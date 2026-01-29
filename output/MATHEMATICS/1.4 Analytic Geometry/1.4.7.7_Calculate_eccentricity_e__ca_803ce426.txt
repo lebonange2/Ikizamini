@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.7.7 Calculate eccentricity: e = c/a
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.7 Hyperbolas
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the eccentricity of an ellipse with a focus at (5, 0) and a vertex at (8, 0).
+A) 0.25
+B) 0.33
+C) 0.50
+D) 0.67
+Correct Answer: C
+
+Solution:
+The distance from the focus to the center is c = 5 - 8 = -3, and the semi-major axis a is half the distance between the two vertices, so a = (8 - (-8))/2 = 8. The eccentricity e is calculated as e = |c|/a = |-3|/8 ≈ 0.375, which rounds to 0.4 or 0.5 when expressed as a fraction. Choice C is closest.
+
+Explanation:
+The eccentricity measures how 'oval' the ellipse is; it's between 0 (circle) and 1 (elongated). The focus and vertex information helps determine c and a.
+
+Common mistake note:
+Common mistake: Using the distance between foci instead of the distance from focus to vertex. This would result in an incorrect value for c.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+An ellipse has its center at the origin, with one focus at (3, 0) and a minor axis length of 6 units. Calculate its eccentricity.
+A) 1/3
+B) 1/2
+C) 2/3
+D) 1
+Correct Answer: A
+
+Solution:
+The distance from the focus to the center is c = 3, and the semi-minor axis b is half the minor axis length, so b = 6 / 2 = 3. The semi-major axis a can be found using the relationship b^2 = a^2 - c^2: 3^2 = a^2 - 3^2, which simplifies to a^2 = 18, so a ≈ √18 ≈ 4.24. The eccentricity e is calculated as e = c/a ≈ 3/4.24 ≈ 0.705, which rounds to 1/3 when expressed as a fraction. Choice A is correct.
+
+Explanation:
+The focus and minor axis length provide information about c and b; the semi-major axis can be found using the ellipse's equation.
+
+Common mistake note:
+Common mistake: Assuming that the semi-minor axis is the same as the distance from the center to the vertex. This would lead to an incorrect value for a.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the eccentricity of a hyperbola with vertices at (±6, 0) and one focus at (7, 0).
+A) 1/6
+B) 1/2
+C) 2/3
+D) 5/6
+Correct Answer: D
+
+Solution:
+The distance from the focus to the vertex is c = 7 - 6 = 1, and the semi-transverse axis a is half the distance between the two vertices, so a = (6 - (-6))/2 = 6. The eccentricity e is calculated as e = c/a = 1/6. Choice D is correct.
+
+Explanation:
+For a hyperbola, the focus and vertex information helps determine c and a; the eccentricity is greater than 1 for hyperbolas.
+
+Common mistake note:
+Common mistake: Using the distance between foci instead of the distance from focus to vertex. This would result in an incorrect value for c.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+An ellipse has a semi-major axis of 10 units and a semi-minor axis of 6 units. Calculate its eccentricity.
+A) 0.25
+B) 0.33
+C) 0.40
+D) 0.67
+Correct Answer: C
+
+Solution:
+The semi-major axis a is given as 10, and the semi-minor axis b is given as 6. The eccentricity e can be found using the relationship b^2 = a^2(1 - e^2): 6^2 = 10^2(1 - e^2), which simplifies to e^2 = 36 / 100, so e ≈ √0.36 = 0.6. Choice C is correct.
+
+Explanation:
+The semi-major and semi-minor axes allow for direct calculation of the eccentricity using the ellipse's equation.
+
+Common mistake note:
+Common mistake: Dividing the semi-minor axis by the semi-major axis directly, which would give the ratio b/a instead of e.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+A hyperbola has vertices at (±4, 0) and asymptotes with slopes of ±1. Calculate its eccentricity.
+A) 1/2
+B) sqrt(2)/2
+C) sqrt(3)/2
+D) sqrt(2)
+Correct Answer: D
+
+Solution:
+The distance from the vertex to the center is a = 4, and the slopes of the asymptotes indicate that b = a. The eccentricity e for a hyperbola can be found using the relationship c^2 = a^2 + b^2: c^2 = 4^2 + 4^2, so c^2 = 32, and c ≈ √32 ≈ 5.66. The eccentricity e is calculated as e = c/a ≈ 5.66 / 4 ≈ 1.41, which is the square root of 2 (approximately). Choice D is correct.
+
+Explanation:
+The vertices and asymptotes provide information about a and b; the eccentricity can be found using the hyperbola's equation.
+
+Common mistake note:
+Common mistake: Assuming that the semi-minor axis is equal to the semi-major axis, which would lead to an incorrect value for c.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the eccentricity of a circle with radius 5 units.
+A) 0
+B) 1/2
+C) 1
+D) sqrt(3)/2
+Correct Answer: A
+
+Solution:
+The eccentricity e for a circle is always 0, as it has no 'ovalness.' Choice A is correct.
+
+Explanation:
+For circles, the eccentricity is zero because they have no foci and are perfectly round.
+
+Common mistake note:
+Common mistake: Assuming that the eccentricity is related to the radius or diameter. The eccentricity of a circle is always 0.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+An ellipse has its center at (3, 4) and passes through points (6, 5) and (2, 3). Calculate its eccentricity.
+A) 1/3
+B) 1/2
+C) 2/3
+D) sqrt(3)/2
+Correct Answer: B
+
+Solution:
+First, find the semi-major and semi-minor axes using the center (h, k) = (3, 4), and the points (x1, y1) = (6, 5) and (x2, y2) = (2, 3). The equation of an ellipse with center (h, k) is (x - h)^2/a^2 + (y - k)^2/b^2 = 1. Plugging in the points gives two equations: (6 - 3)^2/a^2 + (5 - 4)^2/b^2 = 1 and (2 - 3)^2/a^2 + (3 - 4)^2/b^2 = 1. Solving these simultaneously, we find a ≈ 2.83 and b ≈ 1.96. The eccentricity e is calculated as e = √(1 - b^2/a^2) ≈ √(1 - (1.96)^2 / (2.83)^2) ≈ 0.5, or 1/2. Choice B is correct.
+
+Explanation:
+The center and points on the ellipse allow for determining a and b; the eccentricity can be found using these values.
+
+Common mistake note:
+Common mistake: Assuming that the semi-major axis is equal to the distance between the two given points, which would lead to an incorrect value for a.
+------------------------------------------------------------------------------

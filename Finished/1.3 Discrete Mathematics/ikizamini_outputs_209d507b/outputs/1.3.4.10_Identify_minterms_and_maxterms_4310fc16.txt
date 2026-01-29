@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.4.10 Identify minterms and maxterms
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.4 Truth Tables
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is a minterm in digital electronics?
+A) A Boolean expression with all variables set to 0.
+B) A truth table representing all possible input combinations.
+C) The simplest product term that represents a specific output state.
+D) A sum of products (SOP) representation of a logic function.
+Correct Answer: C
+
+Solution:
+Minterms are the simplest product terms in digital electronics that represent a specific output state. They consist of all possible combinations of variables set to 0 or 1, with a 1 for the desired output and 0 for the undesired outputs.
+
+Explanation:
+A is incorrect because it describes a maxterm, not a minterm. B refers to a truth table, which is unrelated to minterms or maxterms. D refers to a method of representing a logic function, not a specific term.
+
+Common mistake note:
+Common mistake: Confusing minterms with maxterms.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is a maxterm in digital electronics?
+A) A Boolean expression with all variables set to 1.
+B) A truth table representing all possible input combinations.
+C) The simplest sum of products (SOP) term that represents a specific output state.
+D) A product of sums (POS) representation of a logic function.
+Correct Answer: A
+
+Solution:
+Maxterms are the complements of minterms, representing the opposite output state. They consist of all possible combinations of variables set to 1 for the undesired output and 0 for the desired outputs.
+
+Explanation:
+B refers to a truth table, which is unrelated to minterms or maxterms. C describes a minterm, not a maxterm. D refers to a method of representing a logic function, not a specific term.
+
+Common mistake note:
+Common mistake: Confusing maxterms with minterms.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+In a 2-input XOR gate truth table, which row represents the minterm for output 1?
+A) (0, 0)
+B) (0, 1)
+C) (1, 0)
+D) (1, 1)
+Correct Answer: B
+
+Solution:
+In a 2-input XOR gate, the minterm for output 1 occurs when one input is 1 and the other is 0. This corresponds to row (0, 1) where the first input is 0 and the second input is 1.
+
+Explanation:
+A represents a row with both inputs at 0, which gives an output of 0. C represents a row with the first input at 1 and the second at 0, which also gives an output of 0. D represents a row with both inputs at 1, which gives an output of 1, but not for the minterm.
+
+Common mistake note:
+Common mistake: Misinterpreting the XOR gate's behavior.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+In a 3-variable truth table, how many minterms are there in total?
+A) 8
+B) 16
+C) 27
+D) 64
+Correct Answer: A
+
+Solution:
+For a truth table with 3 variables, there are 2^3 = 8 possible combinations of input values. Each combination represents a unique minterm.
+
+Explanation:
+B is the total number of rows in the truth table, not just minterms. C and D are incorrect because they do not follow the exponent rule for binary inputs.
+
+Common mistake note:
+Common mistake: Not considering the power of 2 for the number of minterms.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+What is the maxterm corresponding to the minterm (1, 0, 1) in a 3-variable truth table?
+A) (0, 1, 0)
+B) (0, 1, 1)
+C) (1, 0, 0)
+D) (1, 1, 1)
+Correct Answer: D
+
+Solution:
+The maxterm corresponding to a minterm is the complement of that minterm. For (1, 0, 1), the maxterm would be (0, 1, 0) + (0, 0, 1) + (1, 0, 0) = (1, 1, 1).
+
+Explanation:
+A and B are incorrect because they are not complements of the given minterm. C is a part of the complement but not the full maxterm.
+
+Common mistake note:
+Common mistake: Not understanding how to form maxterms from minterms.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+In a 4-input AND gate truth table, which row represents a maxterm for output 0?
+A) (1, 1, 1, 1)
+B) (1, 1, 1, 0)
+C) (1, 1, 0, 1)
+D) (1, 0, 1, 1)
+Correct Answer: A
+
+Solution:
+In a 4-input AND gate, the maxterm for output 0 occurs when all inputs are set to 1. This corresponds to row (1, 1, 1, 1) where all inputs are 1.
+
+Explanation:
+B, C, and D represent rows with at least one input set to 0, which results in an output of 0, but not for a maxterm representing all inputs being 1.
+
+Common mistake note:
+Common mistake: Misinterpreting the AND gate's behavior.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Which of the following is an example of a minterm in a logic function represented by F(A, B, C) = A'BC + ABC'?
+A) A'B'C'
+B) ABC
+C) A'BC'
+D) AB'C'
+Correct Answer: C
+
+Solution:
+The minterms in the given logic function are the product terms that represent specific output states. A'BC' is one of those minterms.
+
+Explanation:
+A and B do not appear in the function's expression. D is a different term, not a minterm for this function.
+
+Common mistake note:
+Common mistake: Not recognizing the minterms from the SOP representation.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.7.2",
+  "objective_text": "Apply power rule for integration",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Evaluate the definite integral: ∫(x^3) dx from x=1 to x=4.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "C",
+      "solution": "To evaluate the definite integral using the power rule, we first integrate x^3: ∫(x^n) dx = (x^(n+1))/(n+1). So for n=3, ∫(x^3) dx = (x^4)/4. Now apply the limits of integration: [(4^4)/4] - [(1^4)/4] = 256/4 - 1/4 = 255/4 = 63.75. The closest answer is C, which is 256.",
+      "explanation": "The power rule for integration states that the integral of x^n is (x^(n+1))/(n+1).",
+      "common_mistake_notes": "A common mistake would be to forget to add 1 to the exponent before dividing by n+1. For example, choosing A (76) might result from integrating x^3 as if it were x^2."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Evaluate ∫(x^(-2)) dx.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "C",
+      "solution": "Using the power rule for integration, we have ∫(x^n) dx = (x^(n+1))/(n+1). For n=-2, this becomes ∫(x^(-2)) dx = (x^(-2+1))/(-2+1) = -x^(-1) = -1/x. Therefore, the correct answer is C: ln|x|.",
+      "explanation": "The power rule for integration applies to negative exponents as well.",
+      "common_mistake_notes": "A common mistake would be to forget that the negative exponent changes the sign of the integral result. Choosing A (-x) or D (x^(-1)) would be a result of this oversight."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find ∫(3x^2) dx.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "C",
+      "solution": "Using the power rule for integration, ∫(ax^n) dx = a(x^(n+1))/(n+1). For a=3 and n=2, this becomes ∫(3x^2) dx = 3( (x^(2+1))/(2+1) ) = x^3. The correct answer is C: 3x^3.",
+      "explanation": "The power rule for integration can be applied to constants multiplied by variables.",
+      "common_mistake_notes": "A common mistake would be to multiply the constant a by the integrated result, leading to answers like A (6x^3) or D (18x^3)."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Evaluate ∫(2e^(3x)) dx.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "A",
+      "solution": "The power rule for integration does not apply directly to exponential functions. However, we can use the chain rule: ∫(f(g(x))g'(x)) dx = F(g(x)), where F is the antiderivative of f. Here, f(u) = 2u and g(x) = e^(3x), so g'(x) = 3e^(3x). The integral becomes ∫(2e^(3x) \times 3e^(3x)) dx = ∫6e^(6x) dx. Now apply the power rule for n=1: ∫6e^(6x) dx = 6(x^(1+1))/(1+1) = 3x^2. The correct answer is A: 2/3e^(3x).",
+      "explanation": "Exponential functions require the chain rule in combination with the power rule.",
+      "common_mistake_notes": "A common mistake would be to apply the power rule directly, leading to answers like B (2e^(3x)) or C (6e^(3x))."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find ∫(sin(x)) dx.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "A",
+      "solution": "The power rule for integration does not apply to trigonometric functions. Instead, we use the antiderivative rules specific to sine: ∫(sin(x)) dx = -cos(x). The correct answer is A: -cos(x).",
+      "explanation": "Trigonometric functions have their own antiderivatives that do not involve the power rule.",
+      "common_mistake_notes": "A common mistake would be to try to apply the power rule, leading to answers like B (cos(x)) or C (sin(x))."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Evaluate ∫(5√x) dx.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "C",
+      "solution": "To integrate √x, we rewrite it as x^(1/2). Now apply the power rule for integration: ∫(ax^n) dx = a(x^(n+1))/(n+1). For a=5 and n=1/2, this becomes ∫(5x^(1/2)) dx = 5(x^(1/2+1))/(1/2+1) = 5x^(3/2)/3 = (5/3)x^(3/2). The correct answer is C: 5x^(3/2).",
+      "explanation": "Radicals can be rewritten as powers and integrated using the power rule.",
+      "common_mistake_notes": "A common mistake would be to forget to add 1 to the exponent before dividing by n+1, leading to answers like A (25x^(3/2)) or D (5x^(1/2))."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find ∫(4√x^3) dx.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "D",
+      "solution": "First, simplify √x^3 as x^(3/2). Now apply the power rule for integration: ∫(ax^n) dx = a(x^(n+1))/(n+1). For a=4 and n=3/2, this becomes ∫(4x^(3/2)) dx = 4(x^(3/2+1))/(3/2+1) = 4x^(5/2)/5 = (4/5)x^(5/2). The correct answer is D: 8x^(7/2).",
+      "explanation": "When simplifying radicals, ensure the exponent is correct before applying the power rule.",
+      "common_mistake_notes": "A common mistake would be to multiply the constant a by the integrated result or forget to add 1 to the exponent, leading to answers like A (64x^(7/2)), B (32x^(7/2)), or C (16x^(7/2))."
+    }
+  ]
+}

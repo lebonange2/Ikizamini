@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.2.8 Apply quotient rule
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.2 Derivatives - Basic Rules
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the derivative of f(x) = (3x^2 + 5x - 7)/(x^3 - 4x). Which of the following is correct?
+A) (6x + 5)(x^3 - 4x) - (3x^2 + 5x - 7)(3x^2 - 4)
+B) (6x + 5)/(x^3 - 4x) - (3x^2 + 5x - 7)/(3x^2 - 4)
+C) (18x + 10 - 7x)/(x^3 - 4x)^2
+D) (6x + 5)(3x^2 - 4) - (3x^2 + 5x - 7)(3x^2 - 4)/(x^3 - 4x)^2
+Correct Answer: D
+
+Solution:
+Using the quotient rule, f'(x) = [u'v - uv']/(v^2), where u = 3x^2 + 5x - 7 and v = x^3 - 4x. Then, u' = 6x + 5 and v' = 3x^2 - 4. Plugging these into the quotient rule formula gives f'(x) = [(6x + 5)(x^3 - 4x) - (3x^2 + 5x - 7)(3x^2 - 4)]/(x^3 - 4x)^2, which simplifies to D.
+
+Explanation:
+The quotient rule is used to differentiate a function that is the ratio of two other functions. The formula is f'(x) = [u'v - uv']/(v^2), where u and v are the numerator and denominator functions respectively, and u' and v' are their derivatives.
+
+Common mistake note:
+A common mistake is to forget to square the denominator in the denominator of the quotient rule formula. Answer A forgets to square (x^3 - 4x), while B does not apply the product rule correctly.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+Find the derivative of g(x) = (e^x + sin(x))/(cos(x)). Which is the correct answer?
+A) (e^x - cos(x)) / (cos(x))^2
+B) (e^x + cos(x)) / (sin(x))^2
+C) (e^x + cos(x) - sin(x)) / (cos(x))^2
+D) (e^x + cos(x) - e^x * sin(x) - cos(x) * cos(x)) / (cos(x))^2
+Correct Answer: D
+
+Solution:
+Using the quotient rule, g'(x) = [u'v - uv']/(v^2), where u = e^x + sin(x) and v = cos(x). Then, u' = e^x + cos(x) and v' = -sin(x). Plugging these into the formula gives g'(x) = [(e^x + cos(x))cos(x) - (e^x + sin(x))(-sin(x))]/(cos(x))^2, simplifying to D.
+
+Explanation:
+The quotient rule is applied here to differentiate a function with exponential and trigonometric components. The formula remains the same as in the previous question.
+
+Common mistake note:
+A common mistake is to forget that the derivative of sin(x) is cos(x), which leads to Answer A using -cos(x) instead. B混淆了分子和分母的函数，而C没有正确处理u'v和uv'项。
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+Find the derivative of h(x) = (x^4 - 2x^2 + 1)/(x^5 + 3). Which is the correct derivative?
+A) (4x^3 - 4x)(x^5 + 3) - (x^4 - 2x^2 + 1)(5x^4)
+B) (4x^3 - 4x)/(x^5 + 3) - (x^4 - 2x^2 + 1)/(5x^4)
+C) (4x^3 - 8x)/(x^5 + 3)^2
+D) (4x^3 - 4x)(x^5 + 3) - (x^4 - 2x^2 + 1)(5x^4)/(x^5 + 3)^2
+Correct Answer: D
+
+Solution:
+Using the quotient rule, h'(x) = [u'v - uv']/(v^2), where u = x^4 - 2x^2 + 1 and v = x^5 + 3. Then, u' = 4x^3 - 8x and v' = 5x^4. Applying the formula gives h'(x) = [(4x^3 - 8x)(x^5 + 3) - (x^4 - 2x^2 + 1)(5x^4)]/(x^5 + 3)^2, which simplifies to D.
+
+Explanation:
+The quotient rule is applied here with polynomial functions. The formula remains consistent across all questions in this set.
+
+Common mistake note:
+A common mistake is to forget to multiply the derivative of the numerator by the original denominator, leading to A not multiplying by (x^5 + 3). B混淆了分子和分母的函数项，而C忘记将整个分子除以平方分母。
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+Find the derivative of p(x) = (ln(x) + x^2)/(x^3 - 1). Which is the correct derivative?
+A) ((1/x) + 2x)(x^3 - 1) - (ln(x) + x^2)(3x^2)
+B) ((1/x) + 2x)/(x^3 - 1) - (ln(x) + x^2)/(3x^2)
+C) ((1/x) + 2x)/(x^3 - 1)^2
+D) ((1/x) + 2x)(x^3 - 1) - (ln(x) + x^2)(3x^2)/(x^3 - 1)^2
+Correct Answer: D
+
+Solution:
+Using the quotient rule, p'(x) = [u'v - uv']/(v^2), where u = ln(x) + x^2 and v = x^3 - 1. Then, u' = 1/x + 2x and v' = 3x^2. Plugging these into the formula gives p'(x) = [((1/x) + 2x)(x^3 - 1) - (ln(x) + x^2)(3x^2)]/(x^3 - 1)^2, simplifying to D.
+
+Explanation:
+The quotient rule is applied here with a logarithmic and polynomial function. The formula remains consistent across all questions in this set.
+
+Common mistake note:
+A common mistake is to forget to multiply the derivative of the numerator by the original denominator, leading to A not multiplying by (x^3 - 1). B混淆了分子和分母的函数项，而C忘记将整个分子除以平方分母。
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+Find the derivative of q(x) = (x^(1/2) + x^(-1/2))/(x - 1). Which is the correct derivative?
+A) ((1/(2x^{1/2})) + (-1/(2x^{3/2}))(x - 1) - (x^(1/2) + x^(-1/2))(1)
+B) ((1/(2x^{1/2})) + (-1/(2x^{3/2}))) / (x - 1) - (x^(1/2) + x^(-1/2)) / 1
+C) ((1/(2x^{1/2})) + (-1/(2x^{3/2}))) / (x - 1)^2
+D) ((1/(2x^{1/2})) + (-1/(2x^{3/2}))(x - 1) - (x^(1/2) + x^(-1/2))(1)/(x - 1)^2
+Correct Answer: D
+
+Solution:
+Using the quotient rule, q'(x) = [u'v - uv']/(v^2), where u = x^(1/2) + x^(-1/2) and v = x - 1. Then, u' = (1/(2x^{1/2})) + (-1/(2x^{3/2})) and v' = 1. Applying the formula gives q'(x) = [((1/(2x^{1/2})) + (-1/(2x^{3/2}))(x - 1) - (x^(1/2) + x^(-1/2))(1)]/(x - 1)^2, simplifying to D.
+
+Explanation:
+The quotient rule is applied here with power functions. The formula remains consistent across all questions in this set.
+
+Common mistake note:
+A common mistake is to forget to multiply the derivative of the numerator by the original denominator, leading to A not multiplying by (x - 1). B混淆了分子和分母的函数项，而C忘记将整个分子除以平方分母。
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+Find the derivative of r(x) = (sin(2x) + cos(3x))/(e^x - 1). Which is the correct derivative?
+A) cos(2x) - 3sin(3x))(e^x - 1) - (sin(2x) + cos(3x))(e^x)
+B) (cos(2x) - 3sin(3x))/(e^x - 1) - (sin(2x) + cos(3x))/(e^x)
+C) (cos(2x) - 3sin(3x))/(e^x - 1)^2
+D) ((cos(2x) - 3sin(3x))(e^x - 1) - (sin(2x) + cos(3x))(e^x)/(e^x - 1)^2
+Correct Answer: D
+
+Solution:
+Using the quotient rule, r'(x) = [u'v - uv']/(v^2), where u = sin(2x) + cos(3x) and v = e^x - 1. Then, u' = 2cos(2x) - 3sin(3x) and v' = e^x. Plugging these into the formula gives r'(x) = [(cos(2x) - 3sin(3x))(e^x - 1) - (sin(2x) + cos(3x))(e^x)]/(e^x - 1)^2, simplifying to D.
+
+Explanation:
+The quotient rule is applied here with trigonometric and exponential functions. The formula remains consistent across all questions in this set.
+
+Common mistake note:
+A common mistake is to forget to multiply the derivative of the numerator by the original denominator, leading to A not multiplying by (e^x - 1). B混淆了分子和分母的函数项，而C忘记将整个分子除以平方分母。
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+Find the derivative of s(x) = (tan(4x) + cot(5x))/(2x^2 - 3). Which is the correct derivative?
+A) (sec^2(4x) - cosec^2(5x))(2x^2 - 3) - (tan(4x) + cot(5x))(4x)
+B) (sec^2(4x) - cosec^2(5x))/(2x^2 - 3) - (tan(4x) + cot(5x))/4
+C) (sec^2(4x) - cosec^2(5x))/(2x^2 - 3)^2
+D) ((sec^2(4x) - cosec^2(5x))(2x^2 - 3) - (tan(4x) + cot(5x))(4x)/(2x^2 - 3)^2
+Correct Answer: D
+
+Solution:
+Using the quotient rule, s'(x) = [u'v - uv']/(v^2), where u = tan(4x) + cot(5x) and v = 2x^2 - 3. Then, u' = 4sec^2(4x) - 5cosec^2(5x) and v' = 4x. Plugging these into the formula gives s'(x) = [(sec^2(4x) - cosec^2(5x))(2x^2 - 3) - (tan(4x) + cot(5x))(4x)]/(2x^2 - 3)^2, simplifying to D.
+
+Explanation:
+The quotient rule is applied here with tangent and cotangent functions. The formula remains consistent across all questions in this set.
+
+Common mistake note:
+A common mistake is to forget to multiply the derivative of the numerator by the original denominator, leading to A not multiplying by (2x^2 - 3). B混淆了分子和分母的函数项，而C忘记将整个分子除以平方分母。
+------------------------------------------------------------------------------

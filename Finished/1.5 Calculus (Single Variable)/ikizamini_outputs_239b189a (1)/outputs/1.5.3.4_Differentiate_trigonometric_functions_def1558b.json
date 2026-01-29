@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.3.4",
+  "objective_text": "Differentiate trigonometric functions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Find the derivative of f(x) = 3sin(x). Which of the following is correct?",
+      "choices": {
+        "A": "3cos(x)",
+        "B": "6sin(x)",
+        "C": "9cos(x)",
+        "D": "0"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of sin(x) is cos(x). Since there's a constant multiplier (3), the derivative will be 3cos(x). So, the correct answer is A.",
+      "explanation": "When differentiating a function with a constant coefficient, multiply the coefficient to the derivative of the function.",
+      "common_mistake_notes": "A common mistake would be to differentiate the constant (3) as well, leading to choice B. However, constants do not affect the differentiation process."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Find the derivative of g(x) = 5cos(2x). Which one is correct?",
+      "choices": {
+        "A": "-10sin(2x)",
+        "B": "10sin(2x)",
+        "C": "10cos(2x)",
+        "D": "20cos(2x)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of cos(u) is -sin(u). Here, u = 2x. So, the derivative will be -sin(2x) multiplied by the derivative of 2x (which is 2). Thus, the correct answer is A.",
+      "explanation": "When differentiating a composite function like cos(2x), use the chain rule: differentiate the outer function and multiply it by the derivative of the inner function.",
+      "common_mistake_notes": "A common mistake would be to forget the negative sign in front of sin(2x) or to not multiply by the derivative of 2x (2), leading to choices B, C, or D."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Find the derivative of h(x) = tan(x). Which one is correct?",
+      "choices": {
+        "A": "sec^2(x)",
+        "B": "csc^2(x)",
+        "C": "cot^2(x)",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of tan(x) is sec^2(x). So, the correct answer is A.",
+      "explanation": "The differentiation rule for tangent is straightforward: d/dx(tan(x)) = sec^2(x).",
+      "common_mistake_notes": "A common mistake would be to confuse the derivatives of tan(x), cot(x), or sec(x) with each other, leading to choices B, C, or D."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Find the derivative of j(x) = 2csc(3x). Which one is correct?",
+      "choices": {
+        "A": "-6cot(3x)csc(3x)",
+        "B": "6cot(3x)csc^2(3x)",
+        "C": "6csc(3x)",
+        "D": "12csc^2(3x)"
+      },
+      "correct_choice": "B",
+      "solution": "The derivative of csc(u) is -csc(u)cot(u). Here, u = 3x. So, the derivative will be -csc(3x)cot(3x) multiplied by the derivative of 3x (which is 3). Thus, the correct answer is B.",
+      "explanation": "When differentiating a composite function like csc(3x), use the chain rule: differentiate the outer function and multiply it by the derivative of the inner function. Also, remember to apply the product rule for -csc(u)cot(u).",
+      "common_mistake_notes": "A common mistake would be to forget the negative sign or to not multiply by the derivative of 3x (3), leading to choices A, C, or D."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Find the derivative of k(x) = sec(4x). Which one is correct?",
+      "choices": {
+        "A": "4sec^2(4x)",
+        "B": "4tan(4x)csc(4x)",
+        "C": "4csc^2(4x)",
+        "D": "16sec^3(4x)"
+      },
+      "correct_choice": "D",
+      "solution": "The derivative of sec(u) is sec(u)tan(u). Here, u = 4x. So, the derivative will be sec(4x)tan(4x) multiplied by the derivative of 4x (which is 4). Thus, the correct answer is D.",
+      "explanation": "When differentiating a composite function like sec(4x), use the chain rule: differentiate the outer function and multiply it by the derivative of the inner function. Also, remember to apply the product rule for sec(u)tan(u).",
+      "common_mistake_notes": "A common mistake would be to forget the power rule (sec^3(4x)) or to not multiply by the derivative of 4x (4), leading to choices A, B, or C."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Find the derivative of l(x) = cot(x). Which one is correct?",
+      "choices": {
+        "A": "-csc^2(x)",
+        "B": "csc^2(x)",
+        "C": "sec^2(x)",
+        "D": "cot^2(x)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of cot(x) is -csc^2(x). So, the correct answer is A.",
+      "explanation": "The differentiation rule for cotangent is straightforward: d/dx(cot(x)) = -csc^2(x).",
+      "common_mistake_notes": "A common mistake would be to confuse the derivatives of tan(x) or cot(x), leading to choices B or C."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Find the derivative of m(x) = sin(5x)^3. Which one is correct?",
+      "choices": {
+        "A": "15sin^2(5x)",
+        "B": "15cos(5x)^2",
+        "C": "15sin(5x)^2cos(5x)",
+        "D": "3sin(5x)^2"
+      },
+      "correct_choice": "C",
+      "solution": "To differentiate sin(u)^n, use the chain rule and power rule: d/dx(sin(u)^n) = n*sin^(n-1)(u)*cos(u). Here, u = 5x. So, the derivative will be 3*sin^2(5x)*cos(5x), multiplied by the derivative of 5x (which is 5). Thus, the correct answer is C.",
+      "explanation": "When differentiating a composite function like sin(5x)^3, use both the chain rule and power rule. First, differentiate sin(u)^n, then multiply by the derivative of the inner function (5x).",
+      "common_mistake_notes": "A common mistake would be to forget the power rule (sin^2(5x)) or to not multiply by the derivative of 5x (5), leading to choices A, B, or D."
+    }
+  ]
+}

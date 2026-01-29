@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.6.6",
+  "objective_text": "Negate quantified statements",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Negate1",
+      "stem": "Negate the following statement: For all integers x, x^2 is greater than or equal to 0.",
+      "choices": {
+        "A": "There exists an integer x such that x^2 is less than 0.",
+        "B": "For some integers x, x^2 is not greater than or equal to 0.",
+        "C": "No integer x satisfies x^2 being greater than or equal to 0.",
+        "D": "All integers x have x^2 less than 0."
+      },
+      "correct_choice": "A",
+      "solution": "The negation of 'for all' is 'there exists,' and the negation of 'greater than or equal to' is 'less than.' So, the correct negation is 'There exists an integer x such that x^2 is less than 0.'",
+      "explanation": "In this case, option A correctly negates the original statement by changing 'for all' to 'there exists' and 'greater than or equal to' to 'less than.' The other options either use incorrect quantifiers or do not properly negate the inequality.",
+      "common_mistake_notes": "Common mistake: Not flipping the quantifier (e.g., using 'no integers' instead of 'there exists an integer') or not negating the statement inside the quantifier (e.g., saying 'x^2 is greater than 0' instead of 'x^2 is less than 0')."
+    },
+    {
+      "id": "Negate2",
+      "stem": "Negate the following statement: There exists a real number x such that for all y, xy = 1.",
+      "choices": {
+        "A": "For all real numbers x, there exists a y such that xy ≠ 1.",
+        "B": "No real number x satisfies xy = 1 for all y.",
+        "C": "There are no real numbers x and y such that xy = 1.",
+        "D": "All real numbers x have xy ≠ 1 for some y."
+      },
+      "correct_choice": "D",
+      "solution": "The negation of 'there exists' is 'for all,' and the negation of 'for all' is 'there exists.' So, the correct negation is 'All real numbers x have xy ≠ 1 for some y.'",
+      "explanation": "In this case, option D correctly negates both quantifiers. Option A incorrectly flips only one quantifier, while options B and C use too strong a negation by eliminating all instances of xy = 1.",
+      "common_mistake_notes": "Common mistake: Not flipping both quantifiers or using too strong a negation (eliminating all instances instead of just showing a counterexample)."
+    },
+    {
+      "id": "Negate3",
+      "stem": "Negate the following statement: No even integer is prime.",
+      "choices": {
+        "A": "All even integers are prime.",
+        "B": "Some even integers are not prime.",
+        "C": "There exists an even integer that is prime.",
+        "D": "Every odd integer is prime."
+      },
+      "correct_choice": "C",
+      "solution": "The negation of 'no' is 'there exists,' so the correct negation is 'There exists an even integer that is prime.'",
+      "explanation": "In this case, option C correctly negates the statement by changing 'no' to 'there exists' and keeping the property (being prime) unchanged. The other options either use incorrect quantifiers or change the property inside the quantifier.",
+      "common_mistake_notes": "Common mistake: Not flipping the quantifier from 'no' to 'there exists' or changing the property inside the quantifier (e.g., saying 'every even integer is not prime')."
+    },
+    {
+      "id": "Negate4",
+      "stem": "Negate the following statement: For some real numbers x and y, x > y implies x^2 > y^2.",
+      "choices": {
+        "A": "All real numbers x and y satisfy x > y and x^2 ≤ y^2.",
+        "B": "There exist real numbers x and y such that x > y but x^2 ≤ y^2.",
+        "C": "No real numbers x and y have x > y or x^2 > y^2.",
+        "D": "Every pair of real numbers x and y has x ≤ y and x^2 < y^2."
+      },
+      "correct_choice": "B",
+      "solution": "The negation of 'for some' is 'there exist,' so the correct negation is 'There exist real numbers x and y such that x > y but x^2 ≤ y^2.'",
+      "explanation": "In this case, option B correctly negates the statement by changing 'for some' to 'there exist' and showing a counterexample where the implication does not hold. The other options either use incorrect quantifiers or change the relationship between x and y inside the quantifier.",
+      "common_mistake_notes": "Common mistake: Not flipping the quantifier from 'for some' to 'there exist' or changing the relationship between x and y (e.g., saying 'every pair of real numbers has x ≤ y')."
+    },
+    {
+      "id": "Negate5",
+      "stem": "Negate the following statement: All circles have a circumference that is three times their diameter.",
+      "choices": {
+        "A": "No circle has a circumference that is three times its diameter.",
+        "B": "Some circles do not have a circumference that is three times their diameter.",
+        "C": "Every circle has a circumference that is not three times their diameter.",
+        "D": "There exists a circle with a circumference less than or equal to three times its diameter."
+      },
+      "correct_choice": "B",
+      "solution": "The negation of 'all' is 'some,' so the correct negation is 'Some circles do not have a circumference that is three times their diameter.'",
+      "explanation": "In this case, option B correctly negates the statement by changing 'all' to 'some.' The other options either use incorrect quantifiers or change the property inside the quantifier.",
+      "common_mistake_notes": "Common mistake: Not flipping the quantifier from 'all' to 'some' or changing the property inside the quantifier (e.g., saying 'every circle has a circumference that is not three times its diameter')."
+    },
+    {
+      "id": "Negate6",
+      "stem": "Negate the following statement: No triangle can have two right angles.",
+      "choices": {
+        "A": "All triangles have exactly two right angles.",
+        "B": "Some triangles do not have two right angles.",
+        "C": "There exists a triangle with exactly two right angles.",
+        "D": "Every triangle has at least three right angles."
+      },
+      "correct_choice": "C",
+      "solution": "The negation of 'no' is 'there exists,' so the correct negation is 'There exists a triangle with exactly two right angles.'",
+      "explanation": "In this case, option C correctly negates the statement by changing 'no' to 'there exists' and keeping the property (having two right angles) unchanged. The other options either use incorrect quantifiers or change the property inside the quantifier.",
+      "common_mistake_notes": "Common mistake: Not flipping the quantifier from 'no' to 'there exists' or changing the property inside the quantifier (e.g., saying 'every triangle has exactly two right angles')."
+    },
+    {
+      "id": "Negate7",
+      "stem": "Negate the following statement: For all real numbers x, if x is rational, then 2x is irrational.",
+      "choices": {
+        "A": "There exists a real number x such that x is rational and 2x is rational.",
+        "B": "Some real numbers x have 2x being rational when x is rational.",
+        "C": "No real numbers x satisfy x being rational implies 2x is irrational.",
+        "D": "Every real number x has 2x being irrational if x is irrational."
+      },
+      "correct_choice": "A",
+      "solution": "The negation of 'for all' is 'there exists,' and the negation of an implication (if...then) flips both conditions. So, the correct negation is 'There exists a real number x such that x is rational and 2x is rational.'",
+      "explanation": "In this case, option A correctly negates both quantifiers and the implication by changing 'for all' to 'there exists' and keeping the properties (being rational and being irrational) unchanged. The other options either use incorrect quantifiers or change the properties inside the quantifier.",
+      "common_mistake_notes": "Common mistake: Not flipping the quantifier from 'for all' to 'there exists' or changing the properties inside the quantifier (e.g., saying 'every real number x has 2x being rational if x is irrational')."
+    }
+  ]
+}

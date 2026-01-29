@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.1",
+  "objective_text": "Convert rectangular to polar form (r∠θ)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Convert the rectangular coordinates (-3, 4) into polar form.",
+      "choices": {
+        "A": "(5, π/4)",
+        "B": "(5, -π/4)",
+        "C": "(5, 3π/4)",
+        "D": "(5, -3π/4)"
+      },
+      "correct_choice": "C",
+      "solution": "(r, θ) = √((-3)^2 + 4^2), arctan(4/-3) = 5, -π/4. The correct answer is (5, -3π/4).",
+      "explanation": "The polar form (r∠θ) represents the same point as rectangular coordinates (x, y), where r is the distance from the origin and θ is the angle formed with the positive x-axis. To convert (-3, 4) to polar form, we calculate r using the Pythagorean theorem: r = √(x^2 + y^2) and find θ using arctan(y/x).",
+      "common_mistake_notes": "A common mistake is to use the wrong quadrant for θ when calculating the arctangent. Since x < 0 and y > 0, we need to adjust the angle to account for the correct quadrant."
+    },
+    {
+      "id": "Bghj",
+      "stem": "Convert the rectangular coordinates (4, -3) into polar form.",
+      "choices": {
+        "A": "(5, π/2)",
+        "B": "(5, 3π/2)",
+        "C": "(5, 5π/6)",
+        "D": "(5, 7π/6)"
+      },
+      "correct_choice": "B",
+      "solution": "(r, θ) = √(4^2 + (-3)^2), arctan(-3/4) = 5, 3π/2. The correct answer is (5, 3π/2).",
+      "explanation": "The polar form (r∠θ) represents the same point as rectangular coordinates (x, y), where r is the distance from the origin and θ is the angle formed with the positive x-axis. To convert (4, -3) to polar form, we calculate r using the Pythagorean theorem: r = √(x^2 + y^2) and find θ using arctan(y/x).",
+      "common_mistake_notes": "A common mistake is to forget to adjust the angle for the correct quadrant when calculating the arctangent. Since x > 0 and y < 0, we need to add π (or π radians) to the result of the arctangent."
+    },
+    {
+      "id": "Qwer",
+      "stem": "Convert the rectangular coordinates (0, 5) into polar form.",
+      "choices": {
+        "A": "(5, 0)",
+        "B": "(5, π/2)",
+        "C": "(5, π)",
+        "D": "(5, 3π/2)"
+      },
+      "correct_choice": "A",
+      "solution": "(r, θ) = √(0^2 + 5^2), arctan(5/0) = undefined, 0. The correct answer is (5, 0).",
+      "explanation": "The polar form (r∠θ) represents the same point as rectangular coordinates (x, y), where r is the distance from the origin and θ is the angle formed with the positive x-axis. To convert (0, 5) to polar form, we calculate r using the Pythagorean theorem: r = √(x^2 + y^2) and find θ using arctan(y/x). Since x is zero, the angle θ becomes undefined. However, in this case, we know that the point lies on the positive y-axis, so θ is 0.",
+      "common_mistake_notes": "A common mistake is to assume that an undefined arctangent means there's no solution or to choose a random angle. In this case, the correct angle is 0 because the point lies on the positive y-axis."
+    },
+    {
+      "id": "Tyui",
+      "stem": "Convert the rectangular coordinates (-5, -5) into polar form.",
+      "choices": {
+        "A": "(5π, π/4)",
+        "B": "(5π, -π/4)",
+        "C": "(5π, 3π/4)",
+        "D": "(5π, -3π/4)"
+      },
+      "correct_choice": "D",
+      "solution": "(r, θ) = √((-5)^2 + (-5)^2), arctan(-5/-5) = π, -3π/4. The correct answer is (5π, -3π/4).",
+      "explanation": "The polar form (r∠θ) represents the same point as rectangular coordinates (x, y), where r is the distance from the origin and θ is the angle formed with the positive x-axis. To convert (-5, -5) to polar form, we calculate r using the Pythagorean theorem: r = √(x^2 + y^2) and find θ using arctan(y/x). Since x and y are both negative, the angle will be in the third quadrant. However, we need to express the angle in radians with a multiple of π.",
+      "common_mistake_notes": "A common mistake is to forget to convert the angle from degrees to radians or not using multiples of π when expressing the angle in radians."
+    },
+    {
+      "id": "Bnml",
+      "stem": "Convert the rectangular coordinates (3, 4π) into polar form.",
+      "choices": {
+        "A": "(5, π/2)",
+        "B": "(5, π)",
+        "C": "(5, 3π/2)",
+        "D": "(5, 5π/2)"
+      },
+      "correct_choice": "D",
+      "solution": "(r, θ) = √(3^2 + (4π)^2), arctan(4π/3) = 4π, 5π/2. The correct answer is (5, 5π/2).",
+      "explanation": "The polar form (r∠θ) represents the same point as rectangular coordinates (x, y), where r is the distance from the origin and θ is the angle formed with the positive x-axis. To convert (3, 4π) to polar form, we calculate r using the Pythagorean theorem: r = √(x^2 + y^2) and find θ using arctan(y/x). Since y is a multiple of π, it does not affect the calculation of the angle. The angle remains 4π, which can be simplified to π.",
+      "common_mistake_notes": "A common mistake is to think that the angle should be calculated from the arctangent function, but in this case, y is a multiple of π and does not contribute to the angle calculation. The angle remains 4π."
+    },
+    {
+      "id": "Vbnm",
+      "stem": "Convert the rectangular coordinates (7π, -2) into polar form.",
+      "choices": {
+        "A": "(5, π/6)",
+        "B": "(5, 5π/6)",
+        "C": "(5, 7π/6)",
+        "D": "(5, 11π/6)"
+      },
+      "correct_choice": "D",
+      "solution": "(r, θ) = √((7π)^2 + (-2)^2), arctan(-2/(7π)) = π, 11π/6. The correct answer is (5, 11π/6).",
+      "explanation": "The polar form (r∠θ) represents the same point as rectangular coordinates (x, y), where r is the distance from the origin and θ is the angle formed with the positive x-axis. To convert (7π, -2) to polar form, we calculate r using the Pythagorean theorem: r = √(x^2 + y^2) and find θ using arctan(y/x). Since x is a multiple of π, it does not affect the calculation of the angle. The angle will be in the fourth quadrant, so we need to adjust the angle accordingly.",
+      "common_mistake_notes": "A common mistake is to forget that the arctangent function returns angles between -π/2 and π/2, so when converting to polar form, you must adjust the angle for the correct quadrant. In this case, we add π (or π radians) to the result of the arctangent."
+    },
+    {
+      "id": "Xzas",
+      "stem": "Convert the rectangular coordinates (-4π, 3π) into polar form.",
+      "choices": {
+        "A": "(5, π/2)",
+        "B": "(5, -π/2)",
+        "C": "(5, 3π/2)",
+        "D": "(5, -3π/2)"
+      },
+      "correct_choice": "B",
+      "solution": "(r, θ) = √((-4π)^2 + (3π)^2), arctan(3π/(-4π)) = π, -π/2. The correct answer is (5, -π/2).",
+      "explanation": "The polar form (r∠θ) represents the same point as rectangular coordinates (x, y), where r is the distance from the origin and θ is the angle formed with the positive x-axis. To convert (-4π, 3π) to polar form, we calculate r using the Pythagorean theorem: r = √(x^2 + y^2) and find θ using arctan(y/x). Since both x and y are multiples of π, they do not affect the calculation of the angle. The angle remains -π/2.",
+      "common_mistake_notes": "A common mistake is to think that the angle should be calculated from the arctangent function, but in this case, both x and y are multiples of π and do not contribute to the angle calculation. The angle remains -π/2."
+    }
+  ]
+}

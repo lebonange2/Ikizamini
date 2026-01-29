@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.14.15",
+  "objective_text": "Use in computer architecture",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asynchronous vs Synchronous",
+      "stem": "What is the main difference between asynchronous and synchronous communication in computer architecture?",
+      "choices": {
+        "A": "Asynchronous communication does not require a clock signal, while synchronous does.",
+        "B": "Synchronous communication has variable time intervals between data transfers, while asynchronous uses fixed time intervals.",
+        "C": "Asynchronous communication can be faster than synchronous due to lack of clock synchronization overhead.",
+        "D": "Both asynchronous and synchronous communication can use handshaking for data integrity, but synchronous typically relies on it more."
+      },
+      "correct_choice": "B",
+      "solution": "The main difference between asynchronous and synchronous communication is that synchronous uses a common clock signal to synchronize data transfer, while asynchronous relies on fixed time intervals (e.g., start and stop bits) for reliable data transmission.",
+      "explanation": "Option A is correct but can be rephrased. Option C is true but not as clear as the original choice B. Option D is partially correct but misleading; both methods can use handshaking, but synchronous communication often relies on it more consistently.",
+      "common_mistake_notes": "Common mistake: Confusing clock synchronization with timing in communication. Asynchronous does not need a global clock but still has well-defined timing."
+    },
+    {
+      "id": "CPU Cache vs RAM",
+      "stem": "In computer architecture, what is the primary difference between CPU cache and RAM?",
+      "choices": {
+        "A": "Cache is faster and smaller than RAM.",
+        "B": "RAM is slower and holds more data than cache.",
+        "C": "Cache is volatile memory, while RAM can be volatile or non-volatile.",
+        "D": "Cache is directly connected to the CPU core, whereas RAM is part of main memory."
+      },
+      "correct_choice": "A",
+      "solution": "The primary difference between CPU cache and RAM is that cache is faster but has a smaller capacity compared to RAM. Cache serves as a high-speed buffer for frequently accessed data by the CPU.",
+      "explanation": "Option B is correct but can be rephrased. Option C is incorrect because RAM can be volatile or non-volatile, while cache is always volatile. Option D is true but not directly related to the primary difference.",
+      "common_mistake_notes": "Common mistake: Assuming that RAM is always faster or has more capacity than cache."
+    },
+    {
+      "id": "buses",
+      "stem": "What is the primary function of a bus in computer architecture?",
+      "choices": {
+        "A": "Connecting multiple CPUs within a system.",
+        "B": "Transferring data, control signals, and addresses between different components.",
+        "C": "Providing power to various components of a computer system.",
+        "D": "Managing input/output operations with external devices."
+      },
+      "correct_choice": "B",
+      "solution": "The primary function of a bus in computer architecture is to transfer data, control signals, and addresses between different hardware components within a system.",
+      "explanation": "Option A refers to multi-core CPU interconnects. Option C describes power delivery, which is unrelated to buses. Option D pertains to I/O controllers rather than buses themselves.",
+      "common_mistake_notes": "Common mistake: Confusing buses with other system components or functions."
+    },
+    {
+      "id": "Memory Hierarchy",
+      "stem": "In computer architecture, what is the order of the memory hierarchy from fastest to slowest?",
+      "choices": {
+        "A": "Registers, Cache, Main Memory, Secondary Storage",
+        "B": "Cache, Registers, Main Memory, Secondary Storage",
+        "C": "Secondary Storage, Main Memory, Cache, Registers",
+        "D": "Registers, Main Memory, Cache, Secondary Storage"
+      },
+      "correct_choice": "A",
+      "solution": "The order of the memory hierarchy from fastest to slowest is: Registers, Cache, Main Memory, and Secondary Storage.",
+      "explanation": "The correct order is Registers, followed by Cache, Main Memory (RAM), and finally Secondary Storage like hard drives or SSDs. Options B, C, and D have incorrect orders.",
+      "common_mistake_notes": "Common mistake: Misordering the hierarchy or forgetting about registers."
+    },
+    {
+      "id": "buses",
+      "stem": "What type of bus is typically used for communication between a microprocessor and attached devices in a computer system?",
+      "choices": {
+        "A": "Parallel Bus",
+        "B": "Serial Bus",
+        "C": "USB (Universal Serial Bus)",
+        "D": "PCIe (Peripheral Component Interconnect Express)"
+      },
+      "correct_choice": "A",
+      "solution": "In computer architecture, a parallel bus is commonly used for communication between a microprocessor and attached devices due to its ability to transfer multiple bits of data simultaneously.",
+      "explanation": "Option B refers to serial communication, which transfers one bit at a time. Options C (USB) and D (PCIe) are specific interface standards that may use either parallel or serial signaling, but the general term for microprocessor-attached device communication is a parallel bus.",
+      "common_mistake_notes": "Common mistake: Associating specific interfaces with parallel or serial buses."
+    },
+    {
+      "id": "Computer arithmetic",
+      "stem": "In computer architecture, which type of arithmetic operation can result in an overflow?",
+      "choices": {
+        "A": "Addition and Subtraction",
+        "B": "Multiplication and Division",
+        "C": "Increment and Decrement",
+        "D": "Bitwise AND and OR"
+      },
+      "correct_choice": "A",
+      "solution": "Overflow can occur in both addition and subtraction operations when the result exceeds the maximum value that can be represented by the available number of bits.",
+      "explanation": "Overflow is primarily a concern for arithmetic operations involving addition and subtraction. It does not typically happen in multiplication, division, increment, decrement, bitwise AND, or bitwise OR operations.",
+      "common_mistake_notes": "Common mistake: Assuming that overflow only occurs in certain types of operations."
+    },
+    {
+      "id": "buses",
+      "stem": "Which bus architecture allows multiple devices to initiate data transfers simultaneously?",
+      "choices": {
+        "A": "Master-slave Bus",
+        "B": "Single-master Multi-slave Bus",
+        "C": "Multiple-master Bus",
+        "D": "Bus Matrix"
+      },
+      "correct_choice": "C",
+      "solution": "A multiple-master bus architecture enables multiple devices to initiate data transfers simultaneously, unlike single-master architectures where only one device controls the bus.",
+      "explanation": "Option A (master-slave) and B (single-master multi-slave) have a single controlling device. Option D (bus matrix) is a high-performance interconnection network but does not inherently support multiple initiators.",
+      "common_mistake_notes": "Common mistake: Confusing bus architectures with their capabilities."
+    }
+  ]
+}

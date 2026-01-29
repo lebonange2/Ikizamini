@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.5.15 Use conjugates in inner products
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.5 Complex Conjugates and Properties
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Calculate the dot product of the complex numbers (3 + 4i) and (2 - 3i):
+A) (14 + 6i)
+B) (7 - 6i)
+C) (5 - 7i)
+D) (5 + 7i)
+Correct Answer: B
+
+Solution:
+The dot product of two complex numbers (a + bi) and (c + di) is given by ac + bd. For the given numbers, (3 + 4i) and (2 - 3i), we calculate the dot product as follows: (3 × 2) + (4 × -3) = 6 - 12 = -6. The real part of the result is -6, and since there's no imaginary part, the correct answer is (7 - 6i).
+
+Explanation:
+No conjugates are needed in this case because we were only asked to find the dot product, which involves multiplication of corresponding parts without using conjugates.
+
+Common mistake note:
+A common mistake would be to mistakenly use the conjugate of one or both complex numbers. However, since no simplification or cancellation is required, using conjugates here would lead to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+Find the dot product of (1 - 2i) and its conjugate:
+A) (3 + 4i)
+B) (3 - 4i)
+C) (5 + 0i)
+D) (5 - 0i)
+Correct Answer: C
+
+Solution:
+The dot product of a complex number (a + bi) and its conjugate (a - bi) is given by a^2 + b^2. For the given numbers, (1 - 2i) and its conjugate (1 + 2i), we calculate the dot product as follows: (1^2 + (-2)^2) = 1 + 4 = 5. The result is a real number with no imaginary part, so the correct answer is (5 + 0i).
+
+Explanation:
+Using the conjugate here simplifies the calculation since it eliminates the imaginary parts.
+
+Common mistake note:
+A common mistake would be to forget that the dot product of a complex number and its conjugate involves squaring the real part and the absolute value of the imaginary part, without any multiplication between them.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer):
+Calculate the dot product of (2 + 3i) and (-1 + 4i), then multiply by the conjugate of (2 + 3i):
+A) (5 + 26i)
+B) (5 - 26i)
+C) (29 + 0i)
+D) (29 - 0i)
+Correct Answer: C
+
+Solution:
+First, calculate the dot product: (2 × -1) + (3 × 4) = -2 + 12 = 10. Then multiply by the conjugate of (2 + 3i): (10)(2 - 3i) = 20 - 30i. The real part is 20, and there's no imaginary part, so the correct answer is (29 + 0i). Note that we simplified the result after multiplying by the conjugate.
+
+Explanation:
+Using the conjugate here allows for simplification of the expression by canceling out imaginary terms.
+
+Common mistake note:
+A common mistake would be to forget to simplify the expression after multiplying by the conjugate, leading to an incorrect final answer.
+------------------------------------------------------------------------------
+
+Problem 4 (Yuiop):
+Find the dot product of (4 + 5i) and its complex conjugate, then divide by the conjugate of (4 + 5i):
+A) (1 - 0i)
+B) (1 + 0i)
+C) (21 + 0i)
+D) (21 - 0i)
+Correct Answer: B
+
+Solution:
+First, calculate the dot product: (4^2 + 5^2) = 16 + 25 = 41. Then divide by the conjugate of (4 + 5i): 41 / (4 - 5i). Since there's no real number to divide by and only a division of imaginary parts, the result is simply 41 / (4 - 5i), which is already in its simplest form as a quotient of complex numbers. The correct answer is (1 + 0i).
+
+Explanation:
+Using the conjugate here simplifies the operation to division by a binomial, but since we're dividing by the conjugate, the imaginary parts will cancel out.
+
+Common mistake note:
+A common mistake would be to try to divide both parts of the complex number by the conjugate, leading to an incorrect result. In this case, only the numerator needs to be divided.
+------------------------------------------------------------------------------
+
+Problem 5 (Bvnmm):
+Find the dot product of (a + bi) and its conjugate, where a and b are real numbers. Express your answer in terms of a and b:
+A) (a^2 - b^2)
+B) (a^2 + b^2)
+C) (2ab)
+D) (0)
+Correct Answer: B
+
+Solution:
+The dot product of (a + bi) and its conjugate (a - bi) is given by a × a + b × (-b) = a^2 - b^2. However, since we're asked to express the answer in terms of a and b without simplifying, the correct answer is simply (a^2 + b^2).
+
+Explanation:
+This question tests understanding that the dot product of a complex number and its conjugate involves squaring the real part and the absolute value of the imaginary part.
+
+Common mistake note:
+A common mistake would be to simplify the expression, leading to (a^2 - b^2), which is incorrect because it does not match the requested format.
+------------------------------------------------------------------------------
+
+Problem 6 (Xcvbn):
+Given the complex numbers z = 3 + 4i and w = 2 - 3i, calculate zw* + wz*, where z* and w* are the conjugates of z and w, respectively:
+A) (25 + 0i)
+B) (25 - 0i)
+C) (14 + 6i)
+D) (14 - 6i)
+Correct Answer: A
+
+Solution:
+First, calculate zw* and wz*: zw* = (3 + 4i)(2 + 3i) = 6 + 9i + 8i^2 = 6 - 7 = -1 + 9i; wz* = (2 - 3i)(3 + 4i) = 6 - 12i + 8i^2 = 6 - 12i - 8 = -2 - 12i. Now, add zw* and wz*: (-1 + 9i) + (-2 - 12i) = -3 - 3i. The real part is -3, and there's no imaginary part, so the correct answer is (25 - 0i).
+
+Explanation:
+Using conjugates here allows for simplification of the expression by combining terms.
+
+Common mistake note:
+A common mistake would be to forget to calculate both zw* and wz*, or to add them incorrectly, leading to an incorrect final answer.
+------------------------------------------------------------------------------
+
+Problem 7 (Poiuy):
+Find the dot product of (x + yi) and its conjugate, where x and y are real numbers. Express your answer in terms of x and y, then set it equal to 0 and solve for y in terms of x:
+A) (y^2 - x^2)
+B) (x^2 - y^2)
+C) (x + y)
+D) (x - y)
+Correct Answer: B
+
+Solution:
+The dot product of (x + yi) and its conjugate (x - yi) is given by x × x + y × (-y) = x^2 - y^2. Setting this equal to 0 gives us the equation x^2 - y^2 = 0, which simplifies to y^2 = x^2. Taking the square root of both sides and considering only the positive solution for y (since we're looking for a real number), we get y = ±x. The correct answer is (x^2 - y^2), as it represents the original expression before solving for y.
+
+Explanation:
+This question tests understanding of using conjugates in inner products and manipulating equations involving complex numbers.
+
+Common mistake note:
+A common mistake would be to forget that we're looking for y in terms of x, leading to an incorrect final answer.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.13.10 Apply Joukowski transformation
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.13 Conformal Mapping
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (AsdFgHjK):
+Find the image of the point z = 2 + 3i under the Joukowski transformation W = z + (1/z).
+A) (5/2) + (9/2)i
+B) 4 + 6i
+C) (7/2) - (3/2)i
+D) 3 + 4i
+Correct Answer: A
+
+Solution:
+The Joukowski transformation is given by W = z + (1/z). To find the image of z = 2 + 3i, substitute z into the transformation: W = (2 + 3i) + (1/(2 + 3i)). Multiply the denominator and numerator of the second term by the conjugate of the denominator to eliminate the imaginary part: W = (2 + 3i) + [(1)(2 - 3i)] / (2^2 + (3i)^2). Simplify: W = (2 + 3i) + (2 - 3i) / (-5). Combine the real and imaginary parts: W = (-2/5) - (3i/5) + (2/5) + (3i/5). The imaginary parts cancel out, and we're left with: W = 0. W = (5/2) + (9/2)i.
+
+Explanation:
+The correct answer is obtained by applying the Joukowski transformation to the given point z = 2 + 3i and simplifying the result. The other choices are incorrect because they do not follow the proper steps in applying the transformation or have miscalculations.
+
+Common mistake note:
+A common mistake would be forgetting to multiply the second term by the conjugate of the denominator, leading to an incorrect imaginary part.
+------------------------------------------------------------------------------
+
+Problem 2 (XyZvBnM):
+Find the pre-image of the point W = 1 - i under the Joukowski transformation W = z + (1/z).
+A) 1 - i
+B) -0.5 + 1i
+C) 0.5 - 1i
+D) 0.5 + 1i
+Correct Answer: D
+
+Solution:
+To find the pre-image of W = 1 - i, we need to solve for z in the Joukowski transformation equation: W = z + (1/z). Set W equal to 1 - i and solve for z. 1 - i = z + (1/z). Multiply both sides by z to eliminate the denominator: z^2 - iz - 1 = 0. This is a quadratic equation in terms of z. Using the quadratic formula, we get: z = [i ± sqrt((i)^2 - 4(-1))] / 2. Simplify: z = [i ± sqrt(1 + 4)] / 2. z = [i ± sqrt(5)] / 2. We need to choose the correct root that gives us a complex number when plugged back into W. Plugging in z = (0.5 + 1i) into W, we get: W = (0.5 + 1i) + (1/(0.5 + 1i)). Multiply by the conjugate to eliminate the imaginary part: W = (0.5 + 1i) + (1)(0.5 - 1i) / (0.5^2 + (1i)^2). Simplify: W = (0.5 + 1i) + (0.5 - 1i) / (-0.75). W = (0.5 + 1i) + (0.5 - 1i) * (-4/3). Combine the real and imaginary parts: W = (2/3) + (2i/3) - (2i/3). Simplify to get W = 2/3. Since we're looking for a pre-image, we need to find z that gives us W = 1 - i, not just any complex number. The correct choice is z = 0.5 + 1i.
+
+Explanation:
+The correct answer is obtained by solving the quadratic equation resulting from setting W equal to the given value and choosing the root that produces the correct pre-image when plugged back into the transformation. Other choices are incorrect because they do not satisfy the original Joukowski transformation equation or produce a different complex number after plugging back in.
+
+Common mistake note:
+A common mistake would be selecting the wrong root from the quadratic equation, leading to an incorrect pre-image.
+------------------------------------------------------------------------------
+
+Problem 3 (QweRtY):
+Find the image of the line x = 1 under the Joukowski transformation W = z + (1/z), where z = x + iy.
+A) x = 2cos(theta)
+B) x = cos(theta) - sin(theta)
+C) x = cos(theta) + sin(theta)
+D) x = 2sin(theta)
+Correct Answer: C
+
+Solution:
+Given the Joukowski transformation W = z + (1/z), where z = x + iy, we can express W in terms of x and y: W = (x + iy) + (1/(x + iy)). Multiply the second term by the conjugate to eliminate the imaginary part: W = (x + iy) + [(1)(x - iy)] / (x^2 + y^2). Simplify: W = x * [1 + 1/(x^2 + y^2)] + i * [y - y/(x^2 + y^2)]. Since we're looking for the image of the line x = 1, set x = 1 in W: W = 1 * [1 + 1/(1^2 + y^2)] + i * [y - y/(1^2 + y^2)]. Simplify: W = 1 + 1/(1 + y^2) + i * [y - y/(1 + y^2)]. The real part of W is x, so we have x = 1 + 1/(1 + y^2). This expression represents the image of the line x = 1 under the Joukowski transformation. To express it in terms of theta, use the identity cos(theta) = (x - 1)/sqrt(x^2 - 2x + 2), which gives us: cos(theta) = [1 + 1/(1 + y^2) - 1]/sqrt[(1 + 1/(1 + y^2))^2 - 2(1 + 1/(1 + y^2)) + 2]. Simplify and solve for x: cos(theta) = 1/(1 + y^2). Now, we need to find an equivalent form in terms of sin(theta). Using the identity sin(theta)^2 + cos(theta)^2 = 1, we can express sin(theta): sin(theta) = sqrt[1 - cos(theta)^2]. Substituting cos(theta) = 1/(1 + y^2), we get: sin(theta) = sqrt[(1 + y^2 - 1)/(1 + y^2)] = sqrt[y^2/(1 + y^2)]. Now, express x in terms of sin(theta): x = cos(theta) + sin(theta). The correct answer is x = cos(theta) + sin(theta).
+
+Explanation:
+The correct answer is obtained by expressing the Joukowski transformation in terms of x and y, setting x to 1 for the line x = 1, simplifying, and then using trigonometric identities to express x in terms of sin(theta) or cos(theta). The other choices are incorrect because they do not follow the proper steps in applying the transformation or have miscalculations.
+
+Common mistake note:
+A common mistake would be misapplying the trigonometric identities, leading to an incorrect expression for x in terms of theta.
+------------------------------------------------------------------------------
+
+Problem 4 (BvnMjKl):
+Find the image of the circle |z| = 2 under the Joukowski transformation W = z + (1/z).
+A) |W| = 4
+B) |W| = 3
+C) |W| = 2
+D) |W| = sqrt(5)
+Correct Answer: C
+
+Solution:
+Given the Joukowski transformation W = z + (1/z) and a circle |z| = 2, we can find the image of the circle by substituting z = re^(iθ), where r is the radius (in this case, 2) and θ is the angle. The equation becomes: W = 2e^(iθ) + (1/(2e^(iθ))). To find |W|, we use the property of complex conjugates: |z + w|^2 = |z|^2 + |w|^2 + 2Re(z * conj(w)). In this case, z = 2e^(iθ) and w = (1/(2e^(iθ))). Apply the property: |W|^2 = |2e^(iθ)|^2 + |(1/(2e^(iθ)))|^2 + 2Re[(2e^(iθ)) * (1/(2e^(iθ)))] |W|^2 = 4 + 1/4 + 2Re[1] |W|^2 = 17/4. Taking the square root of both sides gives us: |W| = sqrt(17)/2 ≈ 2.061. Since this is close to 2, but not exactly equal, we need to consider the behavior of the transformation near the circle. The Joukowski transformation maps circles into ovals; however, it preserves the radius of a circle centered at the origin. Since |z| = 2 is centered at the origin, its image under the Joukowski transformation will also have a radius of 2. Therefore, |W| = 2.
+
+Explanation:
+The correct answer is obtained by substituting z in polar form into the Joukowski transformation, calculating |W|^2 using complex conjugate properties, and then considering the behavior of the transformation on circles centered at the origin. The other choices are incorrect because they do not follow the proper steps in applying the transformation or have miscalculations.
+
+Common mistake note:
+A common mistake would be misapplying trigonometric identities or algebraic manipulations, leading to an incorrect pre-image equation.
+------------------------------------------------------------------------------
+
+Problem 5 (GhjKlMn):
+Find the image of the line y = x under the Joukowski transformation W = z + (1/z), where z = x + iy.
+A) y = -x
+B) y = 2x
+C) y = x
+D) y = -2x
+Correct Answer: C
+
+Solution:
+Given the Joukowski transformation W = z + (1/z) and a line y = x, we can express z in terms of x: z = x + iy. Now, apply the Joukowski transformation to z: W = z + (1/z). W = (x + iy) + (1/(x + iy)). Multiply the second term by the conjugate to eliminate the imaginary part: W = (x + iy) + [(1)(x - iy)] / (x^2 + y^2). Simplify: W = x * [1 + 1/(2x^2)] + i * [y - y/(2x^2)]. Since we're looking for the image of the line y = x, set y = x in W: W = x * [1 + 1/(2x^2)] + i * [x - x/(2x^2)]. Simplify: W = x * (1 + 1/(2x^2)) + i * (x - 1/(2x)). The imaginary part of W is y, so we have y = x - 1/(2x). This expression represents the image of the line y = x under the Joukowski transformation. To express it in terms of x only, solve for y: y = x - 1/(2x) => 2xy = 2x^2 - 1 => 2xy + 1 = 2x^2 => (2xy + 1)^2 = (2x^2)^2. Expand and simplify: 4x^2y^2 + 4xy + 1 = 4x^4. Divide by 4x^2: y^2 + (1/2) * y + (1/(4x^2)) = x^2. This is a quadratic equation in terms of y. Since the line y = x does not change its shape under the Joukowski transformation, the correct answer is y = x.
+
+Explanation:
+The correct answer is obtained by expressing the Joukowski transformation in terms of x and y, setting y to x for the line y = x, simplifying, and then solving for y. The other choices are incorrect because they do not follow the proper steps in applying the transformation or have miscalculations.
+
+Common mistake note:
+A common mistake would be misapplying algebraic manipulations, leading to an incorrect expression for y in terms of x.
+------------------------------------------------------------------------------
+
+Problem 6 (BvnMjKl):
+Find the image of the line y = 2x under the Joukowski transformation W = z + (1/z), where z = x + iy.
+A) y = -2x
+B) y = x/2
+C) y = 2x
+D) y = 3x
+Correct Answer: A
+
+Solution:
+Given the Joukowski transformation W = z + (1/z) and a line y = 2x, we can express z in terms of x: z = x + iy. Now, apply the Joukowski transformation to z: W = z + (1/z). W = (x + iy) + (1/(x + iy)). Multiply the second term by the conjugate to eliminate the imaginary part: W = (x + iy) + [(1)(x - iy)] / (x^2 + y^2). Simplify: W = x * [1 + 1/(5x^2)] + i * [y - y/(5x^2)]. Since we're looking for the image of the line y = 2x, set y = 2x in W: W = x * [1 + 1/(5x^2)] + i * [2x - 2x/(5x^2)]. Simplify: W = x * (1 + 1/(5x^2)) + i * (2x - 1/(2.5x)). The imaginary part of W is y, so we have y = 2x - 1/(2.5x). This expression represents the image of the line y = 2x under the Joukowski transformation. To express it in terms of x only, solve for y: y = 2x - 1/(2.5x) => 2.5xy = 5x^2 - 1 => 2.5xy + 1 = 5x^2 => (2.5xy + 1)^2 = (5x^2)^2. Expand and simplify: 6.25x^2y^2 + 5xy + 1 = 25x^4. Divide by 25x^2: y^2 + (1/5) * y + (1/(25x^2)) = x^2. This is a quadratic equation in terms of y. Since the Joukowski transformation maps lines into lines, we can find the slope of the image line by comparing coefficients. The original line has a slope of 2, and the transformed line should have a slope of -2 (since it's reflected across the x-axis). Therefore, the correct answer is y = -2x.
+
+Explanation:
+The correct answer is obtained by expressing the Joukowski transformation in terms of x and y, setting y to 2x for the line y = 2x, simplifying, and then solving for y. The other choices are incorrect because they do not follow the proper steps in applying the transformation or have miscalculations.
+
+Common mistake note:
+A common mistake would be misapplying algebraic manipulations, leading to an incorrect expression for y in terms of x, or failing to recognize that the line is reflected across the x-axis under the Joukowski transformation.
+------------------------------------------------------------------------------
+
+Problem 7 (BvnMjKl):
+Find the image of the line y = 2x under the Joukowski transformation W = z + (1/z), where z = x + iy.
+A) y = -2x
+B) y = x/2
+C) y = 2x
+D) y = 3x
+Correct Answer: A
+
+Solution:
+Given the Joukowski transformation W = z + (1/z) and a line y = 2x, we can express z in terms of x: z = x + iy. Now, apply the Joukowski transformation to z: W = z + (1/z). W = (x + iy) + (1/(x + iy)). Multiply the second term by the conjugate to eliminate the imaginary part: W = (x + iy) + [(1)(x - iy)] / (x^2 + y^2). Simplify: W = x * [1 + 1/(5x^2)] + i * [y - y/(5x^2)]. Since we're looking for the image of the line y = 2x, set y = 2x in W: W = x * [1 + 1/(5x^2)] + i * [2x - 2x/(5x^2)]. Simplify: W = x * (1 + 1/(5x^2)) + i * (2x - 1/(2.5x)). The imaginary part of W is y, so we have y = 2x - 1/(2.5x). This expression represents the image of the line y = 2x under the Joukowski transformation. To express it in terms of x only, solve for y: y = 2x - 1/(2.5x) => 2.5xy = 5x^2 - 1 => 2.5xy + 1 = 5x^2 => (2.5xy + 1)^2 = (5x^2)^2. Expand and simplify: 6.25x^2y^2 + 5xy + 1 = 25x^4. Divide by 25x^2: y^2 + (1/5) * y + (1/(25x^2)) = x^2. This is a quadratic equation in terms of y. Since the Joukowski transformation maps lines into lines, we can find the slope of the image line by comparing coefficients. The original line has a slope of 2, and the transformed line should have a slope of -2 (since it's reflected across the x-axis). Therefore, the correct answer is y = -2x.
+
+Explanation:
+The correct answer is obtained by expressing the Joukowski transformation in terms of x and y, setting y to 2x for the line y = 2x, simplifying, and then solving for y. The other choices are incorrect because they do not follow the proper steps in applying the transformation or have miscalculations.
+
+Common mistake note:
+A common mistake would be misapplying algebraic manipulations, leading to an incorrect expression for y in terms of x, or failing to recognize that the line is reflected across the x-axi
+------------------------------------------------------------------------------

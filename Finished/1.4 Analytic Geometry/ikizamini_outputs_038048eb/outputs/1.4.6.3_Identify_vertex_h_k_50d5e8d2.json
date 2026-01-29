@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.6.3",
+  "objective_text": "Identify vertex (h, k)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "What are the coordinates of the vertex for the parabola given by the equation y = 2(x - 3)^2 + 4?",
+      "choices": {
+        "A": "(0, 4)",
+        "B": "(3, 0)",
+        "C": "(3, 4)",
+        "D": "(4, 3)"
+      },
+      "correct_choice": "C",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k, where (h, k) represents the vertex. Comparing this to the given equation y = 2(x - 3)^2 + 4, we can see that h = 3 and k = 4. Therefore, the vertex is at (3, 4).",
+      "explanation": "The vertex form directly provides the coordinates of the vertex.",
+      "common_mistake_notes": "A common mistake would be to choose (0, 4) because it's the y-intercept, but the vertex is not necessarily the y-intercept."
+    },
+    {
+      "id": ":Q2",
+      "stem": "What are the coordinates of the vertex in the equation y = -3(x + 2)^2 - 1?",
+      "choices": {
+        "A": "(2, -1)",
+        "B": "(-2, -1)",
+        "C": "(-1, 2)",
+        "D": "(-1, -2)"
+      },
+      "correct_choice": "B",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k. Comparing this to the given equation y = -3(x + 2)^2 - 1, we can see that h = -2 and k = -1. Therefore, the vertex is at (-2, -1).",
+      "explanation": "The coefficient of x^2 determines whether the parabola opens up or down, but does not affect the h value.",
+      "common_mistake_notes": "A common mistake would be to choose (2, -1) because it's the opposite of h, but remember that the vertex is at (-h, k)."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Find the coordinates of the vertex for the parabola defined by y = 4(x - 5)^2 + 7.",
+      "choices": {
+        "A": "(5, 7)",
+        "B": "(7, 5)",
+        "C": "(-5, 7)",
+        "D": "(-7, 5)"
+      },
+      "correct_choice": "A",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k. Comparing this to the given equation y = 4(x - 5)^2 + 7, we can see that h = 5 and k = 7. Therefore, the vertex is at (5, 7).",
+      "explanation": "The vertex form directly gives us the coordinates of the vertex.",
+      "common_mistake_notes": "A common mistake would be to choose (-5, 7) because it's the negative of h, but remember that the vertex is at (h, k)."
+    },
+    {
+      "id": ":Q4",
+      "stem": "What are the coordinates of the vertex in the equation y = x^2 - 6x + 13?",
+      "choices": {
+        "A": "(0, 13)",
+        "B": "(3, 4)",
+        "C": "(3, -4)",
+        "D": "(-3, 4)"
+      },
+      "correct_choice": "B",
+      "solution": "The standard form of a parabola is y = ax^2 + bx + c. To find the vertex, we need to use the formula h = -b/(2a) and k = c - b^2/(4a). For the given equation, a = 1, b = -6, and c = 13. Plugging these values into the formulas, we get h = 3 and k = 4. Therefore, the vertex is at (3, 4).",
+      "explanation": "We need to convert the standard form to find the vertex coordinates.",
+      "common_mistake_notes": "A common mistake would be to choose (0, 13) because it's the y-intercept, but the vertex is not necessarily the y-intercept."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Find the coordinates of the vertex for the parabola given by y = -2(x + 4)^2 - 8.",
+      "choices": {
+        "A": "(4, -8)",
+        "B": "(-4, -8)",
+        "C": "(-4, 8)",
+        "D": "(8, -4)"
+      },
+      "correct_choice": "B",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k. Comparing this to the given equation y = -2(x + 4)^2 - 8, we can see that h = -4 and k = -8. Therefore, the vertex is at (-4, -8).",
+      "explanation": "The vertex form directly gives us the coordinates of the vertex.",
+      "common_mistake_notes": "A common mistake would be to choose (4, -8) because it's the opposite of h, but remember that the vertex is at (-h, k)."
+    },
+    {
+      "id": ":Q6",
+      "stem": "What are the coordinates of the vertex in the equation y = 5(x - 1)^2 + 9?",
+      "choices": {
+        "A": "(1, 9)",
+        "B": "(9, 1)",
+        "C": "(-1, 9)",
+        "D": "(-9, 1)"
+      },
+      "correct_choice": "A",
+      "solution": "The vertex form of a parabola is y = a(x - h)^2 + k. Comparing this to the given equation y = 5(x - 1)^2 + 9, we can see that h = 1 and k = 9. Therefore, the vertex is at (1, 9).",
+      "explanation": "The vertex form directly gives us the coordinates of the vertex.",
+      "common_mistake_notes": "A common mistake would be to choose (-1, 9) because it's the negative of h, but remember that the vertex is at (h, k)."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Find the coordinates of the vertex for the parabola defined by y = -x^2 + 8x - 15.",
+      "choices": {
+        "A": "(0, -15)",
+        "B": "(4, -1)",
+        "C": "(4, 1)",
+        "D": "(-4, -1)"
+      },
+      "correct_choice": "B",
+      "solution": "The standard form of a parabola is y = ax^2 + bx + c. To find the vertex, we need to use the formula h = -b/(2a) and k = c - b^2/(4a). For the given equation, a = -1, b = 8, and c = -15. Plugging these values into the formulas, we get h = 4 and k = -1. Therefore, the vertex is at (4, -1).",
+      "explanation": "We need to convert the standard form to find the vertex coordinates.",
+      "common_mistake_notes": "A common mistake would be to choose (0, -15) because it's the y-intercept, but the vertex is not necessarily the y-intercept."
+    }
+  ]
+}

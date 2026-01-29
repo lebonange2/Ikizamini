@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.11.15",
+  "objective_text": "Apply to physical applications",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Inclined Plane Force",
+      "stem": "A box of mass 10 kg is pushed up a frictionless inclined plane at a 30° angle with the horizontal. What force maintains its constant velocity?",
+      "choices": {
+        "A": "50 N",
+        "B": "75 N",
+        "C": "98 N",
+        "D": "150 N"
+      },
+      "correct_choice": "A",
+      "solution": "The required force equals m*g*sin(30°), where m = 10 kg and g ≈ 9.8 m/s². F ≈ 10 kg * 9.8 m/s² * sin(30°) ≈ 50 N.",
+      "explanation": "Balancing forces on an inclined plane; using trigonometry to find the force needed for constant velocity.",
+      "common_mistake_notes": "Forgetting sine function or using wrong angle."
+    },
+    {
+      "id": "Spring Potential Energy",
+      "stem": "A spring with k = 10 N/m is stretched from equilibrium by 0.2 m. What potential energy does it store?",
+      "choices": {
+        "A": "0.2 J",
+        "B": "0.4 J",
+        "C": "0.6 J",
+        "D": "0.8 J"
+      },
+      "correct_choice": "B",
+      "solution": "Potential energy U = 1/2 * k * x², where k = 10 N/m and x = 0.2 m. U = 1/2 * 10 N/m * (0.2 m)² ≈ 0.4 J.",
+      "explanation": "Spring potential energy formula; relating force to displacement from equilibrium.",
+      "common_mistake_notes": "Forgetting the factor of 1/2 or using wrong units."
+    },
+    {
+      "id": "Simple Pendulum Period",
+      "stem": "A 0.5 m long simple pendulum oscillates with a 30° amplitude and g = 9.8 m/s². What's its period?",
+      "choices": {
+        "A": "1 s",
+        "B": "1.4 s",
+        "C": "1.7 s",
+        "D": "2 s"
+      },
+      "correct_choice": "C",
+      "solution": "Period T = 2π√(L/g), where L = 0.5 m and g = 9.8 m/s². T ≈ 2π√((0.5 m) / (9.8 m/s²)) ≈ 1.7 s.",
+      "explanation": "Simple pendulum period formula; considering length and gravity's effect.",
+      "common_mistake_notes": "Forgetting π or using wrong units."
+    },
+    {
+      "id": "Work Done by Friction",
+      "stem": "A 2 kg object slides across a surface at constant velocity. μ = 0.5, speed = 1 m/s, distance = 4 m. What work does friction do?",
+      "choices": {
+        "A": "4 J",
+        "B": "8 J",
+        "C": "12 J",
+        "D": "16 J"
+      },
+      "correct_choice": "B",
+      "solution": "Work W = Ff * d, where Ff = μ*N and N = mg. Ff ≈ 0.5 * 2 kg * 9.8 m/s² = 9.8 N. W ≈ 9.8 N * 4 m ≈ 39.2 J.",
+      "explanation": "Work by friction; constant velocity, force of friction and distance traveled.",
+      "common_mistake_notes": "Forgetting to multiply Ff by d or using wrong units."
+    },
+    {
+      "id": "Buoyancy Force",
+      "stem": "An object (0.1 m³) floats in water displacing 75% of its volume. ρ_water = 1000 kg/m³. What's the buoyancy force?",
+      "choices": {
+        "A": "750 N",
+        "B": "980 N",
+        "C": "1225 N",
+        "D": "1470 N"
+      },
+      "correct_choice": "C",
+      "solution": "Buoyancy Fb = ρ * V * g, where ρ = 1000 kg/m³, V = 0.1 m³ * 0.75, and g ≈ 9.8 m/s². Fb ≈ 1000 kg/m³ * 0.075 m³ * 9.8 m/s² ≈ 1225 N.",
+      "explanation": "Buoyancy principle; volume displaced, water density, and gravity.",
+      "common_mistake_notes": "Forgetting to multiply ρ, V, and g or using wrong units."
+    },
+    {
+      "id": "Power in Electrical Circuit",
+      "stem": "A circuit with 12 V and 2 A operates for 5 s. What power does it consume?",
+      "choices": {
+        "A": "6 W",
+        "B": "12 W",
+        "C": "30 W",
+        "D": "60 W"
+      },
+      "correct_choice": "B",
+      "solution": "Power P = V * I, where V = 12 V and I = 2 A. P = 12 V * 2 A = 24 W. Energy W = P * t = 24 W * 5 s = 120 J.",
+      "explanation": "Electrical power formula; calculating energy over a given time.",
+      "common_mistake_notes": "Forgetting to multiply power by time or using wrong units."
+    },
+    {
+      "id": "Conservation of Momentum",
+      "stem": "Objects A (2 kg, 5 m/s) and B (3 kg, at rest) collide. A ends with 1 m/s. What's B's final velocity?",
+      "choices": {
+        "A": "2 m/s",
+        "B": "3 m/‌s",
+        "C": "4 m/s",
+        "D": "5 m/s"
+      },
+      "correct_choice": "C",
+      "solution": "Conservation of momentum: 10 kg*m/s = 2 kg * 1 m/s + 3 kg * v_B. v_B ≈ (10 - 2) / 3 ≈ 4 m/s.",
+      "explanation": "Momentum conservation; setting up and solving the equation.",
+      "common_mistake_notes": "Forgetting direction or incorrect signs in momentum equation."
+    }
+  ]
+}

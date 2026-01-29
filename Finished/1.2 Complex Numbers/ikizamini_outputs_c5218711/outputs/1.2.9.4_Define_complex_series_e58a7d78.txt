@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.9.4 Define complex series
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.9 Complex Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is a complex series in mathematics?
+A) A sequence of imaginary numbers.
+B) A series with both real and imaginary parts.
+C) A series whose terms are powers of a complex number.
+D) A series that does not converge.
+Correct Answer: B
+
+Solution:
+A complex series refers to a series in which the terms consist of both real and imaginary parts. This is different from a purely real sequence or one involving only imaginary numbers.
+
+Explanation:
+In mathematics, complex numbers are numbers that have both a real part and an imaginary part. A complex series extends this concept by combining these numbers into a sum.
+
+Common mistake note:
+Choosing A would be incorrect because it does not account for the presence of real parts in the terms of the series.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Which of the following represents a complex series?
+A) 1, 3, 5, 7, ...
+B) i, -i, i, -i, ...
+C) 2 + 3i, 4 - 5i, 6 + 7i, ...
+D) e^x, e^{2x}, e^{3x}, ...
+Correct Answer: C
+
+Solution:
+The series C (2 + 3i, 4 - 5i, 6 + 7i, ...) represents a complex series because each term consists of both a real and an imaginary part.
+
+Explanation:
+In this case, the terms are combinations of real numbers (2, 4, 6, etc.) and imaginary units (3i, -5i, 7i, etc.). Series A, B, and D do not meet the definition of a complex series as they either lack imaginary parts or involve only powers of a variable.
+
+Common mistake note:
+Choosing D would be incorrect because it is an example of a real power series, not a complex series.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+What is the general form of a complex geometric series?
+A) a + ar + ar^2 + ...
+B) z_1 + z_2 + z_3 + ...
+C) r^n + r^{n+1} + r^{n+2} + ...
+D) z_1 * z_2 * z_3 * ...
+Correct Answer: B
+
+Solution:
+A complex geometric series has the general form B (z_1 + z_2 + z_3 + ...) where each term is a complex number.
+
+Explanation:
+In a complex geometric series, the terms are not powers of a single variable but rather individual complex numbers. The real geometric series (option A) and the real exponential series (option D) do not apply to complex series. Option C represents a real geometric progression with a common ratio.
+
+Common mistake note:
+Choosing A would be incorrect because it is the general form of a real geometric series, not a complex one.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the sum of the first n terms of the complex series 1 + (2i) + (3i)^2 + (4i)^3 + ...?
+A) -n/2 - (n^2 - 1)i/2
+B) (n^2 - 1)/2 + ni/2
+C) n/2 - (n^2 - 1)i/2
+D) (n^2 - 1)/2 - ni/2
+Correct Answer: B
+
+Solution:
+The sum of the first n terms of the given complex series can be calculated using the formula for a geometric series with real coefficients. The correct answer is B.
+
+Explanation:
+This series does not follow the standard form of a geometric series, but we can separate the real and imaginary parts to find the sum. However, this question goes beyond the scope of simply defining complex series and might be considered more difficult than the other questions in this set.
+
+Common mistake note:
+Applying the formula for a real geometric series without considering the imaginary terms would lead to incorrect results.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+In a complex Fourier series, what do the coefficients represent?
+A) The frequency components of a periodic function.
+B) The amplitude and phase shift of sine and cosine waves.
+C) The real and imaginary parts of a complex number.
+D) The derivatives of a periodic function.
+Correct Answer: B
+
+Solution:
+In a complex Fourier series, the coefficients represent the amplitude and phase shift of sine and cosine waves that make up the periodic function.
+
+Explanation:
+A Fourier series decomposes a periodic function into a sum of simple sinusoidal functions. The coefficients are used to describe how much each sine or cosine wave contributes to the overall function. Options A, C, and D do not accurately describe the role of coefficients in a complex Fourier series.
+
+Common mistake note:
+Choosing A would be incorrect because it describes the frequency domain representation, not the coefficients themselves.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Which of the following is an example of a complex Fourier series?
+A) f(x) = 3sin(x) + 2cos(2x)
+B) g(t) = e^{ixt}
+C) h(z) = z^2 + 1
+D) j(w) = πδ(w - 5)
+Correct Answer: B
+
+Solution:
+The function g(t) = e^{ixt} is an example of a complex Fourier series because it involves complex exponentials, which are the building blocks of Fourier series.
+
+Explanation:
+A Fourier series typically uses sine and cosine functions. However, in some cases, complex exponentials (e.g., eiwt) can be used as well. Option A is a real function, C is a polynomial, and D represents a Dirac delta function, none of which are examples of complex Fourier series.
+
+Common mistake note:
+Choosing A would be incorrect because it uses sine and cosine functions, not complex exponentials.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the relationship between a complex Fourier series and its coefficients?
+A) The coefficients are the imaginary parts of the function.
+B) The coefficients are the real parts of the function.
+C) The coefficients are the amplitudes and phases of sine and cosine components.
+D) The coefficients are the derivatives of the function.
+Correct Answer: C
+
+Solution:
+In a complex Fourier series, the coefficients represent the amplitudes and phases of the sine and cosine components that make up the original function.
+
+Explanation:
+The relationship between a complex Fourier series and its coefficients is that the coefficients determine the contribution of each sinusoidal component to the overall function. Options A, B, and D do not accurately describe this relationship.
+
+Common mistake note:
+Choosing A or B would be incorrect because they focus on the imaginary or real parts of the function itself, rather than the components that make up the series.
+------------------------------------------------------------------------------

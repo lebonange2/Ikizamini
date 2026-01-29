@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.12.9",
+  "objective_text": "Handle integrals with vertical asymptotes",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":question_1",
+      "stem": "Evaluate the definite integral π∫(x/(x^2 - 4))dx from -3 to 5.",
+      "choices": {
+        "A": "-π/2",
+        "B": "π/2",
+        "C": "0",
+        "D": "Does not converge"
+      },
+      "correct_choice": "D",
+      "solution": "The integrand has a vertical asymptote at x = 2, which is within the integration interval. The integral does not converge due to the singularity.",
+      "explanation": "Vertical asymptotes in integrands require splitting the interval and checking convergence separately on each part.",
+      "common_mistake_notes": "A common mistake is to integrate without considering the vertical asymptote."
+    },
+    {
+      "id": ":question_2",
+      "stem": "Evaluate the definite integral π∫((x^2 + 1)/(x - 5))dx from -3 to 4.",
+      "choices": {
+        "A": "6π",
+        "B": "-6π",
+        "C": "Does not converge",
+        "D": "Indeterminate"
+      },
+      "correct_choice": "C",
+      "solution": "The integrand has a removable singularity at x = 5, but no vertical asymptote. Integrating: π∫((x + 5)(x - 4)/(x - 5))dx from -3 to 4 simplifies to π∫((x + 5)dx) from -3 to 4, which evaluates to 6π. However, since the integrand has a vertical asymptote at x = 5 within the integration interval, the integral does not converge.",
+      "explanation": "Removable singularities do not affect convergence; we can integrate as if the singularity were not there. But the presence of a vertical asymptote at x = 5 causes the integral to diverge.",
+      "common_mistake_notes": "A common mistake is to overlook the vertical asymptote at x = 5 and think that the removable singularity is the only factor affecting convergence."
+    },
+    {
+      "id": ":question_3",
+      "stem": "Evaluate the definite integral π∫((x^2 + 1)/(x - 6))dx from -4 to 3.",
+      "choices": {
+        "A": "8π",
+        "B": "-8π",
+        "C": "Does not converge",
+        "D": "Indeterminate"
+      },
+      "correct_choice": "C",
+      "solution": "The integrand has a removable singularity at x = 6, but no vertical asymptote. Integrating: π∫((x + 2)(x - 5)/(x - 6))dx from -4 to 3 simplifies to π∫((x + 2)dx) from -4 to 3, which evaluates to 8π. However, since the integrand has a vertical asymptote at x = 6 within the integration interval, the integral does not converge.",
+      "explanation": "Removable singularities do not affect convergence; we can integrate as if the singularity were not there. But the presence of a vertical asymptote at x = 6 causes the integral to diverge.",
+      "common_mistake_notes": "A common mistake is to overlook the vertical asymptote at x = 6 and think that the removable singularity is the only factor affecting convergence."
+    },
+    {
+      "id": ":question_4",
+      "stem": "Evaluate the definite integral π∫((x^2 - 9)/(x + 5))dx from -6 to 0.",
+      "choices": {
+        "A": "0",
+        "B": "Does not converge",
+        "C": "Indeterminate",
+        "D": "Vertical asymptote"
+      },
+      "correct_choice": "B",
+      "solution": "The integrand has a vertical asymptote at x = -5, which is within the integration interval. The integral does not converge.",
+      "explanation": "Vertical asymptotes cause integrals to diverge; thus, the definite integral from -6 to 0 does not have a finite value.",
+      "common_mistake_notes": "A common mistake is to integrate as if there were no singularity at x = -5."
+    },
+    {
+      "id": ":question_5",
+      "stem": "Evaluate the definite integral π∫((x^2 + 4)/(x + 3))dx from -5 to 2.",
+      "choices": {
+        "A": "π/2",
+        "B": "-π/2",
+        "C": "Does not converge",
+        "D": "Indeterminate"
+      },
+      "correct_choice": "C",
+      "solution": "The integrand has a removable singularity at x = -3, but no vertical asymptote. Integrating: π∫((x + 3)(x - 1)/(x + 3))dx from -5 to 2 simplifies to π∫((x - 1)dx) from -5 to 2, which evaluates to -π/2. However, since the integrand has a vertical asymptote at x = -3 within the integration interval, the integral does not converge.",
+      "explanation": "Removable singularities do not affect convergence; we can integrate as if the singularity were not there. But the presence of a vertical asymptote at x = -3 causes the integral to diverge.",
+      "common_mistake_notes": "A common mistake is to overlook the vertical asymptote at x = -3 and think that the removable singularity is the only factor affecting convergence."
+    },
+    {
+      "id": ":question_6",
+      "stem": "Evaluate the definite integral π∫((x^3 + 1)/(x - 2))dx from -4 to 1.",
+      "choices": {
+        "A": "9π",
+        "B": "-9π",
+        "C": "Does not converge",
+        "D": "Indeterminate"
+      },
+      "correct_choice": "A",
+      "solution": "The integrand has a removable singularity at x = 2, but no vertical asymptote. Integrating: π∫((x - 2)(x^2 + 2x + 1)/(x - 2))dx from -4 to 1 simplifies to π∫((x^2 + 2x + 1)dx) from -4 to 1, which evaluates to 9π.",
+      "explanation": "Removable singularities do not affect convergence; we can integrate as if the singularity were not there.",
+      "common_mistake_notes": "A common mistake is to think that the removable singularity at x = 2 causes the integral to diverge."
+    },
+    {
+      "id": ":question_7",
+      "stem": "Evaluate the definite integral π∫((x^3 - 125)/(x + 4))dx from -6 to -1.",
+      "choices": {
+        "A": "π/2",
+        "B": "-π/2",
+        "C": "Does not converge",
+        "D": "Indeterminate"
+      },
+      "correct_choice": "C",
+      "solution": "The integrand has a removable singularity at x = -4, but no vertical asymptote. Integrating: π∫((x + 4)(x^2 - 4x + 16)/(x + 4))dx from -6 to -1 simplifies to π∫((x^2 - 4x + 16)dx) from -6 to -1, which evaluates to π/2. However, since the integrand has a vertical asymptote at x = -4 within the integration interval, the integral does not converge.",
+      "explanation": "Removable singularities do not affect convergence; we can integrate as if the singularity were not there. But the presence of a vertical asymptote at x = -4 causes the integral to diverge.",
+      "common_mistake_notes": "A common mistake is to overlook the vertical asymptote at x = -4 and think that the removable singularity is the only factor affecting convergence."
+    }
+  ]
+}

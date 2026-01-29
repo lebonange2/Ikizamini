@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.14.11",
+  "objective_text": "Analyze structural elements",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "InquiryBasedDesign",
+      "stem": "Which of the following best describes the role of columns in a building's structure?",
+      "choices": {
+        "A": "To provide aesthetic appeal only.",
+        "B": "To distribute weight evenly and support the roof.",
+        "C": "To separate interior spaces from each other.",
+        "D": "To create additional living space on upper levels."
+      },
+      "correct_choice": "B",
+      "solution": "Columns in a building's structure are primarily used to distribute weight evenly and support the roof. They help transfer the load from the roof or floors above down to the foundation. While columns may contribute to aesthetic appeal or separate spaces, their primary function is structural.",
+      "explanation": "Columns play a crucial role in architectural design by providing structural stability. Answer A focuses only on aesthetics, neglecting the structure's primary function. Answer C describes room division, which is more related to walls than columns. Answer D discusses creating living space, which is not the柱子的主要功能，尽管它可能是附加效果。",
+      "common_mistake_notes": "Common mistake: Choosing A or C, as people might associate columns with aesthetics or room separation rather than their structural role."
+    },
+    {
+      "id": "LoadBearingBeams",
+      "stem": "What is the primary function of load-bearing beams in a building?",
+      "choices": {
+        "A": "To hold up the walls.",
+        "B": "To transfer weight from the roof to the foundation.",
+        "C": "To provide insulation against temperature changes.",
+        "D": "To create an open floor plan."
+      },
+      "correct_choice": "B",
+      "solution": "Load-bearing beams in a building are primarily responsible for transferring weight from the roof down to the supporting columns or walls, and ultimately to the foundation. They ensure that the structural load is distributed evenly throughout the structure.",
+      "explanation": "Beams distribute weight; holding up walls (A) and creating an open floor plan (D) are functions of walls or design choices. Providing temperature change insulation (C) is the role of materials like insulation boards, not beams.",
+      "common_mistake_notes": "Common mistake: Choosing A, as some might think that beams only support the walls directly above them. However, their primary function is to transfer weight."
+    },
+    {
+      "id": "FoundationTypes",
+      "stem": "What type of foundation is typically used for houses in areas with clay soil?",
+      "choices": {
+        "A": "Pier and beam foundation.",
+        "B": "Concrete slab foundation.",
+        "C": "Trench fill foundation.",
+        "D": "Raft foundation."
+      },
+      "correct_choice": "A",
+      "solution": "In areas with clay soil, which tends to expand and contract due to moisture changes, pier and beam foundations are commonly used. This type of foundation allows for some movement without damaging the structure.",
+      "explanation": "Concrete slab foundations (B) can be used in most soil types but may not be ideal for clay soil conditions. Trench fill foundations (C) are more suitable for light structures or temporary installations. Raft foundations (D) are typically employed in earthquake-prone areas or on soft ground.",
+      "common_mistake_notes": "Common mistake: Choosing B, as concrete slab foundations are common, but pier and beam is better suited for clay soil conditions."
+    },
+    {
+      "id": "RoofShapes",
+      "stem": "What type of roof shape provides the most structural stability in high wind areas?",
+      "choices": {
+        "A": "Flat roof.",
+        "B": "Gable roof.",
+        "C": "Buttress roof.",
+        "D": "Mansard roof."
+      },
+      "correct_choice": "C",
+      "solution": "A buttress roof, characterized by its thick walls and small overhangs, provides the most structural stability in high wind areas. The added mass and reduced surface area reduce wind uplift.",
+      "explanation": "Flat roofs (A) and gable roofs (B) can be less stable in strong winds. Mansard roofs (D), while visually appealing, have multiple slopes that may not offer as much resistance to high winds as a buttress roof.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, as people might think that simpler roof shapes are more stable. However, buttress roofs offer better wind resistance."
+    },
+    {
+      "id": "FoundationDepth",
+      "stem": "In which of the following situations would a deeper foundation be required?",
+      "choices": {
+        "A": "Building on sandy soil.",
+        "B": "Constructing a one-story house.",
+        "C": "When the ground water table is close to the surface.",
+        "D": "When using lightweight building materials."
+      },
+      "correct_choice": "C",
+      "solution": "A deeper foundation would typically be required when the ground water table is close to the surface, as it helps prevent moisture damage and ensures better stability for the structure.",
+      "explanation": "Sandy soil (A) and lightweight building materials (D) may sometimes require deeper foundations, but these conditions are not always definitive. A one-story house (B) usually doesn't need a particularly deep foundation. When the groundwater table is close to the surface (C), this is a common reason for needing a deeper foundation.",
+      "common_mistake_notes": "Common mistake: Choosing A or D, as people might associate these conditions with deeper foundations, but they are not always necessary."
+    },
+    {
+      "id": "StructuralInsulatedPanel",
+      "stem": "What is the primary advantage of using structural insulated panels (SIPs) in construction?",
+      "choices": {
+        "A": "Reduced labor costs.",
+        "B": "Improved energy efficiency.",
+        "C": "Quicker construction time.",
+        "D": "Greater resistance to fire."
+      },
+      "correct_choice": "B",
+      "solution": "Structural insulated panels offer improved energy efficiency due to their high insulation value. This results in better temperature regulation and reduced heating and cooling costs for the building.",
+      "explanation": "SIPs can indeed reduce labor costs (C) and construction time (A), but their primary advantage is enhanced energy efficiency (B). Although they may have better fire resistance than some traditional materials, this is not their main selling point.",
+      "common_mistake_notes": "Common mistake: Choosing A or C, as people might focus on cost and time savings, but energy efficiency is the primary advantage of SIPs."
+    },
+    {
+      "id": "ColumnSpacing",
+      "stem": "What is the recommended minimum spacing between columns in a building to ensure structural integrity?",
+      "choices": {
+        "A": "1 meter.",
+        "B": "2 meters.",
+        "C": "3 meters.",
+        "D": "4 meters."
+      },
+      "correct_choice": "B",
+      "solution": "The recommended minimum spacing between columns in a building to maintain structural integrity is typically 2 meters. This allows for proper load distribution and prevents excessive stress on individual columns.",
+      "explanation": "1 meter (A) spacing may be too close, but it generally won't cause significant structural issues. 3 meters (C) and 4 meters (D) spacing could lead to instability or the need for thicker beams.",
+      "common_mistake_notes": "Common mistake: Choosing A or D, as people might think that closer spacing is better for stability. However, 2 meters is a standard recommendation to balance load distribution and column stress."
+    }
+  ]
+}

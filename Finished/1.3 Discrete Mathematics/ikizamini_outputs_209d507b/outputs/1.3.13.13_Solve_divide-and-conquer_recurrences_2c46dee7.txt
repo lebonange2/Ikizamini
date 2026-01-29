@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.13.13 Solve divide-and-conquer recurrences
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.13 Recurrence Relations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (?):
+The recurrence relation for the number of operations performed by a divide-and-conquer algorithm that divides an array into two halves, sorts them separately, and then merges them is given by T(n) = 2T(n/2) + O(n). What is the solution to this recurrence in Big O notation?
+A) O(n)
+B) O(n log n)
+C) O(n^2)
+D) O(log n)
+Correct Answer: B
+
+Solution:
+The merge sort algorithm follows a divide-and-conquer strategy, where the time complexity for dividing and merging is O(n). The recurrence relation T(n) = 2T(n/2) + O(n) corresponds to the Master Theorem case 1 (a=2, b=2, c=1). Using the Master Theorem, we get a solution of O(n log n).
+
+Explanation:
+The Master Theorem helps us analyze divide-and-conquer recurrences. In this case, since a = 2 and b = 2, the dominant term is n^(log_2(2))/log_2(2) = n, which gives O(n log n) as the solution.
+
+Common mistake note:
+A common mistake would be to choose A (O(n)), which only accounts for the merging step and not the recursive calls. C (O(n^2)) is incorrect because it doesn't capture the logarithmic growth of the divide-and-conquer approach.
+------------------------------------------------------------------------------
+
+Problem 2 (?):
+Given the recurrence relation T(n) = 3T(n/4) + O(1), where T(1) = O(1), what is the solution to this recurrence in Big O notation?
+A) O(log n)
+B) O(n)
+C) O(n log n)
+D) O(n^2)
+Correct Answer: A
+
+Solution:
+The recurrence relation T(n) = 3T(n/4) + O(1) corresponds to the Master Theorem case 3 (a=3, b=4, c<log_4(3)). Using the Master Theorem, we get a solution of O(log n).
+
+Explanation:
+In this case, since a = 3 and b = 4, the dominant term is log_b(n) = log_4(3n/4), which becomes O(log n) as n approaches infinity. T(1) = O(1) ensures that the constant factor does not affect the overall time complexity.
+
+Common mistake note:
+A common mistake would be to choose B (O(n)), which is incorrect because it doesn't account for the decrease in problem size with each recursive call. C and D are wrong because they overestimate the growth rate of the recurrence.
+------------------------------------------------------------------------------
+
+Problem 3 (?):
+Solve the recurrence relation T(n) = 4T(n/2) + O(1), where T(1) = O(1), in Big O notation.
+A) O(n)
+B) O(n log n)
+C) O(n^2)
+D) O(2^n)
+Correct Answer: D
+
+Solution:
+The recurrence relation T(n) = 4T(n/2) + O(1) corresponds to the Master Theorem case 3 (a=4, b=2, c<log_2(4)). Using the Master Theorem, we get a solution of O(2^n).
+
+Explanation:
+In this case, since a = 4 and b = 2, the dominant term is 2^(log_2(4))/log_2(2) = 2^n, which gives O(2^n) as the solution. T(1) = O(1) ensures that the constant factor does not affect the overall time complexity.
+
+Common mistake note:
+A common mistake would be to choose A (O(n)), which is incorrect because it doesn't account for the exponential growth of the recurrence. B and C are wrong because they underestimate the growth rate.
+------------------------------------------------------------------------------
+
+Problem 4 (?):
+The recurrence relation for a divide-and-conquer algorithm that recursively divides an array into three equal parts, sorts them separately, and then combines them is given by T(n) = 3T(n/3) + O(1). What is the solution to this recurrence in Big O notation?
+A) O(log n)
+B) O(n)
+C) O(n log n)
+D) O(n^2)
+Correct Answer: C
+
+Solution:
+The recurrence relation T(n) = 3T(n/3) + O(1) corresponds to the Master Theorem case 1 (a=3, b=3, c<log_3(3)). Using the Master Theorem, we get a solution of O(n log n).
+
+Explanation:
+In this case, since a = 3 and b = 3, the dominant term is n^(log_3(3))/log_3(3) = n, which gives O(n log n) as the solution. T(1) = O(1) ensures that the constant factor does not affect the overall time complexity.
+
+Common mistake note:
+A common mistake would be to choose A (O(log n)), which is incorrect because it doesn't account for the logarithmic growth of the divide-and-conquer approach. B and D are wrong because they underestimate or overestimate the growth rate.
+------------------------------------------------------------------------------
+
+Problem 5 (?):
+Given the recurrence relation T(n) = 2T(n/3) + O(1), where T(1) = O(1), what is the solution to this recurrence in Big O notation?
+A) O(log n)
+B) O(n)
+C) O(n log n)
+D) O(n^2)
+Correct Answer: A
+
+Solution:
+The recurrence relation T(n) = 2T(n/3) + O(1) corresponds to the Master Theorem case 3 (a=2, b=3, c<log_3(2)). Using the Master Theorem, we get a solution of O(log n).
+
+Explanation:
+In this case, since a = 2 and b = 3, the dominant term is log_b(n) = log_3(2n/3), which becomes O(log n) as n approaches infinity. T(1) = O(1) ensures that the constant factor does not affect the overall time complexity.
+
+Common mistake note:
+A common mistake would be to choose B (O(n)), which is incorrect because it doesn't account for the decrease in problem size with each recursive call. C and D are wrong because they overestimate or underestimate the growth rate.
+------------------------------------------------------------------------------
+
+Problem 6 (?):
+Solve the recurrence relation T(n) = 5T(n/5) + O(1), where T(1) = O(1), in Big O notation.
+A) O(log n)
+B) O(n)
+C) O(n log n)
+D) O(n^2)
+Correct Answer: A
+
+Solution:
+The recurrence relation T(n) = 5T(n/5) + O(1) corresponds to the Master Theorem case 3 (a=5, b=5, c<log_5(5)). Using the Master Theorem, we get a solution of O(log n).
+
+Explanation:
+In this case, since a = 5 and b = 5, the dominant term is log_b(n) = log_5(5n/5), which becomes O(log n) as n approaches infinity. T(1) = O(1) ensures that the constant factor does not affect the overall time complexity.
+
+Common mistake note:
+A common mistake would be to choose B (O(n)), which is incorrect because it doesn't account for the decrease in problem size with each recursive call. C and D are wrong because they overestimate or underestimate the growth rate.
+------------------------------------------------------------------------------
+
+Problem 7 (?):
+The recurrence relation T(n) = 2T(n/4) + O(1), where T(1) = O(1), represents a divide-and-conquer algorithm with a constant merge step. What is the solution to this recurrence in Big O notation?
+A) O(log n)
+B) O(n)
+C) O(n log n)
+D) O(n^2)
+Correct Answer: A
+
+Solution:
+The recurrence relation T(n) = 2T(n/4) + O(1) corresponds to the Master Theorem case 3 (a=2, b=4, c<log_4(2)). Using the Master Theorem, we get a solution of O(log n).
+
+Explanation:
+In this case, since a = 2 and b = 4, the dominant term is log_b(n) = log_4(2n/4), which becomes O(log n) as n approaches infinity. T(1) = O(1) ensures that the constant factor does not affect the overall time complexity.
+
+Common mistake note:
+A common mistake would be to choose B (O(n)), which is incorrect because it doesn't account for the decrease in problem size with each recursive call. C and D are wrong because they overestimate or underestimate the growth rate.
+------------------------------------------------------------------------------

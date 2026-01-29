@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.9.3",
+  "objective_text": "Test convergence of complex sequences",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Determine the convergence of the sequence: z_n = (-1)^n + i^n, where n is a positive integer.",
+      "choices": {
+        "A": "Converges to 0",
+        "B": "Converges to 2",
+        "C": "Converges to (1+i)",
+        "D": "Does not converge"
+      },
+      "correct_choice": "D",
+      "solution": "The sequence z_n = (-1)^n + i^n has two components: the real part (-1)^n and the imaginary part i^n. The real part alternates between -1 and 1, so it does not converge to a single value. The imaginary part also alternates between 1, -i, 1, -i, ..., which does not converge either. Since neither component converges, the entire sequence does not converge.",
+      "explanation": "The convergence of a complex sequence depends on both its real and imaginary parts. If either part does not converge, the whole sequence does not converge.",
+      "common_mistake_notes": "A common mistake is to assume that because (-1)^n and i^n are periodic, they might converge to some periodic value. However, this is not the case; a sequence must approach a single value for it to be considered convergent."
+    },
+    {
+      "id": "2",
+      "stem": "Evaluate the limit of the complex sequence: z_n = (1 + i/√n)^n as n approaches infinity.",
+      "choices": {
+        "A": "e",
+        "B": "0",
+        "C": "1",
+        "D": "Does not exist"
+      },
+      "correct_choice": "A",
+      "solution": "This is a special case of the limit that defines e: lim (n→∞) (1 + 1/n)^n. By replacing 1 with i/√n, we get the desired sequence. As n approaches infinity, the term i/√n approaches 0, so the limit becomes e^(i*0) = e^0 = 1.",
+      "explanation": "The limit of (1 + x/n)^n as n approaches infinity is a well-known result that equals e when x = 1. When x = i/√n, it represents a rotation in the complex plane by an angle proportional to √n, which becomes negligible as n grows large.",
+      "common_mistake_notes": "A common mistake would be to assume that (1 + i/√n)^n simplifies directly to something like e^i without considering the limit. The correct approach is to recognize the similarity with the limit for e and apply the same reasoning."
+    },
+    {
+      "id": "3",
+      "stem": "Determine if the sequence: z_n = n + i^n converges or diverges.",
+      "choices": {
+        "A": "Converges",
+        "B": "Diverges",
+        "C": "Converges to 1",
+        "D": "Converges to i"
+      },
+      "correct_choice": "B",
+      "solution": "The real part of z_n, n, increases without bound as n grows, so the sequence diverges. The imaginary part, i^n, alternates between 1 and -1, which does not converge either. Therefore, the entire sequence diverges.",
+      "explanation": "A sequence diverges if at least one component diverges. In this case, the real part's unbounded growth is enough to conclude that the sequence diverges, regardless of the imaginary part's behavior.",
+      "common_mistake_notes": "A common mistake would be to focus only on the imaginary part and overlook the real part's impact on convergence. Remember that both parts must converge for the entire sequence to converge."
+    },
+    {
+      "id": "4",
+      "stem": "Find the limit of the complex sequence: z_n = (2 + 3i)^n as n approaches infinity.",
+      "choices": {
+        "A": "Does not exist",
+        "B": "5^n",
+        "C": "(2+3i)",
+        "D": "(-1+i)"
+      },
+      "correct_choice": "A",
+      "solution": "The limit of (a + bi)^n as n approaches infinity depends on the argument (angle) and magnitude of the complex number a + bi. If the magnitude is greater than 1, the sequence diverges to infinity. For (2+3i), the magnitude is √(2^2 + 3^2) = √13 > 1, so the limit does not exist.",
+      "explanation": "The behavior of a complex number raised to a high power depends on its position in the complex plane relative to the unit circle. If the number is inside the unit circle, the sequence converges; if it's outside, it diverges; and if it's on the unit circle, it may oscillate between a finite set of values.",
+      "common_mistake_notes": "A common mistake would be to assume that raising a complex number to a high power always leads to convergence or oscillation. It is crucial to consider the magnitude of the number in relation to 1."
+    },
+    {
+      "id": "5",
+      "stem": "Determine if the sequence: z_n = (cos(n) + i*sin(n))^n converges or diverges.",
+      "choices": {
+        "A": "Converges",
+        "B": "Diverges",
+        "C": "Does not converge due to oscillation",
+        "D": "Does not converge due to unbounded growth"
+      },
+      "correct_choice": "C",
+      "solution": "The sequence z_n represents a point on the unit circle in the complex plane, where cos(n) and sin(n) are the real and imaginary parts, respectively. Since n ranges over all integers, the point rotates around the circle indefinitely. Thus, the sequence does not converge due to oscillation.",
+      "explanation": "A sequence that traces out a continuous path on the complex plane, like points on a unit circle, will not converge because it never settles on a single value. Instead, it oscillates between multiple values.",
+      "common_mistake_notes": "A common mistake would be to think that since cos(n) and sin(n) are periodic functions, they might converge to some periodic behavior. However, this is not the case for their product raised to a power; the sequence diverges due to oscillation."
+    },
+    {
+      "id": "6",
+      "stem": "Find the limit of the complex sequence: z_n = (1 + i/√n)^n as n approaches infinity, if i is replaced by -i.",
+      "choices": {
+        "A": "e",
+        "B": "-e",
+        "C": "0",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "When i is replaced by -i in the sequence z_n = (1 + (-i)/√n)^n, it becomes equivalent to (1 - i/√n)^n. As n approaches infinity, the term -i/√n approaches 0, so the limit becomes e^(-i*0) = e^0 = 1. However, since we started with -i instead of i, the overall result is -e.",
+      "explanation": "The change from i to -i simply reflects the complex number across the real axis. The same reasoning as in the previous question applies, but with a negative sign introduced due to the change in direction.",
+      "common_mistake_notes": "A common mistake would be to overlook the effect of replacing i with -i and assume that the limit remains e. Remember that this change impacts the overall result."
+    },
+    {
+      "id": "7",
+      "stem": "Evaluate the limit of the complex sequence: z_n = (1 + 2i/√n)^n as n approaches infinity.",
+      "choices": {
+        "A": "Does not exist",
+        "B": "e^2",
+        "C": "(1+2i)",
+        "D": "(-1+i)"
+      },
+      "correct_choice": "B",
+      "solution": "The limit of (1 + x/√n)^n as n approaches infinity is e^x, where x is a constant. In this case, x = 2i, so the limit becomes e^(2i). This can be rewritten in polar form as e^(2i) = cos(2) + i*sin(2), which represents a point on the unit circle with an angle of 2 radians from the positive real axis.",
+      "explanation": "The limit of (1 + x/√n)^n is a generalization that works for any constant x. By substituting x = 2i, we can apply the same reasoning as in the case where x = 1 or -1, but with a complex value instead.",
+      "common_mistake_notes": "A common mistake would be to assume that raising (1 + 2i/√n) to a high power leads to divergence or oscillation. However, since x is a constant, the limit exists and can be evaluated using the generalization of e."
+    }
+  ]
+}

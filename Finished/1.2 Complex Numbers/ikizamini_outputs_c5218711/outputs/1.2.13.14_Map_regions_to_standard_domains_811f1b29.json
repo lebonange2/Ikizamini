@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.13.14",
+  "objective_text": "Map regions to standard domains",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Which standard domain is used for representing geographical locations?",
+      "choices": {
+        "A": "RGB color space",
+        "B": "Mercator projection",
+        "C": "Longitudinal-latitude coordinates",
+        "D": "HSL color space"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, Longitudinal-latitude coordinates. This system uses pairs of longitude and latitude values to represent locations on Earth's surface, making it a standard for geographical mapping.",
+      "explanation": "A and D are color spaces used in image processing, not geographical mapping. B, Mercator projection, is a specific map projection that distorts the size and shape of regions near the poles; it is not a standard domain for representing locations per se.",
+      "common_mistake_notes": "Common mistake: Choosing B (Mercator projection) because it's a familiar map type. However, remember that Mercator projection is a mapping technique, not a standard domain for geographical locations."
+    },
+    {
+      "id": "Two",
+      "stem": "In which standard domain are web pages typically organized?",
+      "choices": {
+        "A": "URLs and HTML tags",
+        "B": "RGB color space",
+        "C": "Longitudinal-latitude coordinates",
+        "D": "HSL color space"
+      },
+      "correct_choice": "A",
+      "solution": "The correct answer is A, URLs and HTML tags. Web pages are organized using URLs to identify their location on the internet and HTML tags to structure the content.",
+      "explanation": "B, D, and C are related to image processing or geographical mapping, not web page organization. URLs and HTML tags form the backbone of how information is structured and accessed online.",
+      "common_mistake_notes": "Common mistake: Choosing B (RGB color space) or D (HSL color space) because they might think it's about webpage design. However, these are color spaces used in graphics, not for organizing web pages."
+    },
+    {
+      "id": "Three",
+      "stem": "Which standard domain is typically used to represent a user's location within a geographic information system (GIS)?",
+      "choices": {
+        "A": "RGB color space",
+        "B": "Mercator projection",
+        "C": "Longitudinal-latitude coordinates",
+        "D": "HSL color space"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, Longitudinal-latitude coordinates. GIS systems use this coordinate system to represent spatial locations accurately.",
+      "explanation": "A, B, and D are unrelated to geographic information systems. They are either color spaces or a specific map projection that distorts certain regions.",
+      "common_mistake_notes": "Common mistake: Choosing B (Mercator projection) because it's a familiar map type. However, GIS systems often use multiple projections for different purposes, but the underlying representation of locations remains longitudinal-latitude coordinates."
+    },
+    {
+      "id": "Four",
+      "stem": "What standard domain is used to classify regions based on their elevation above sea level?",
+      "choices": {
+        "A": "RGB color space",
+        "B": "Mercator projection",
+        "C": "Elevation bands (e.g., low, mid, high)",
+        "D": "HSL color space"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, Elevation bands. Regions can be classified into categories based on their elevation, such as low, medium, or high.",
+      "explanation": "A, B, and D are unrelated to elevation classification. They are either color spaces or a map projection technique.",
+      "common_mistake_notes": "Common mistake: Choosing A (RGB color space) or D (HSL color space) because they might think it's related to visual representation. However, these are color systems and not used for elevation classification."
+    },
+    {
+      "id": "Five",
+      "stem": "In a climate database, how are regions typically represented?",
+      "choices": {
+        "A": "RGB color space",
+        "B": "Mercator projection",
+        "C": "Climate zones (e.g., tropical, temperate, polar)",
+        "D": "HSL color space"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, Climate zones. A climate database would categorize regions based on their typical weather patterns and temperatures.",
+      "explanation": "A, B, and D are unrelated to climate classification. They are either color spaces or a map projection technique.",
+      "common_mistake_notes": "Common mistake: Choosing B (Mercator projection) because it's related to mapping. However, in the context of a climate database, regions are classified based on their climate characteristics rather than physical location."
+    },
+    {
+      "id": "Six",
+      "stem": "What standard domain is used for representing political boundaries between countries?",
+      "choices": {
+        "A": "RGB color space",
+        "B": "Mercator projection",
+        "C": "Political divisions (e.g., countries, states, cities)",
+        "D": "HSL color space"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, Political divisions. Boundaries between countries, states, and cities are standard domains for representing political geography.",
+      "explanation": "A, B, and D are unrelated to political boundaries. They are either color spaces or a map projection technique.",
+      "common_mistake_notes": "Common mistake: Choosing A (RGB color space) or D (HSL color space) because they might think it's related to visual representation. However, these are color systems and not used for representing political boundaries."
+    },
+    {
+      "id": "Seven",
+      "stem": "Which standard domain is typically used in a geographic tagging system for social media posts?",
+      "choices": {
+        "A": "RGB color space",
+        "B": "Mercator projection",
+        "C": "GPS coordinates (latitude and longitude)",
+        "D": "HSL color space"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, GPS coordinates. Geotagging systems use latitude and longitude values to associate social media posts with specific locations.",
+      "explanation": "A, B, and D are unrelated to geotagging. They are either color spaces or a map projection technique.",
+      "common_mistake_notes": "Common mistake: Choosing B (Mercator projection) because it's a familiar map type. However, in the context of social media geotagging, GPS coordinates provide the most accurate representation of location."
+    }
+  ]
+}

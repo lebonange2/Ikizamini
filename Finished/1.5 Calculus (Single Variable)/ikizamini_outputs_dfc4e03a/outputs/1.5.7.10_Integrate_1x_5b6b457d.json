@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.7.10",
+  "objective_text": "Integrate 1/x",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "IndefiniteIntegral_1",
+      "stem": "Find the indefinite integral of 1/x: ∫(1/xdx) = ?",
+      "choices": {
+        "A": "ln|x| + C",
+        "B": "x ln|x| + C",
+        "C": "x^2 ln|x| + C",
+        "D": "x^3 ln|x| + C"
+      },
+      "correct_choice": "A",
+      "solution": "∫(1/x) dx = ln|x| + C",
+      "explanation": "The integral of 1/x is the natural logarithm function, ln|x|, plus a constant of integration, C.",
+      "common_mistake_notes": "Common mistake: Some students may forget to include the absolute value signs around x in the natural logarithm function, which can lead to an incorrect answer."
+    },
+    {
+      "id": "DefiniteIntegral_2",
+      "stem": "Evaluate the definite integral from 1 to e of 1/x: ∫(1/xdx) from 1 to e = ?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "ln(e)",
+        "D": "ln(e^2)"
+      },
+      "correct_choice": "C",
+      "solution": "∫(1/x) dx from 1 to e = [ln|x|]_1^e = ln(e) - ln(1) = ln(e)",
+      "explanation": "The definite integral of 1/x from a to b is evaluated by finding the antiderivative and evaluating it at the limits of integration: F(b) - F(a). Here, F(x) = ln|x|.",
+      "common_mistake_notes": "Common mistake: Students may forget to evaluate the antiderivative at both limits or may confuse the natural logarithm base with a different base."
+    },
+    {
+      "id": "IntegrationByParts_3",
+      "stem": "Integrate 1/x using integration by parts: ∫(1/xdx) = ?",
+      "choices": {
+        "A": "x ln|x| + C",
+        "B": "ln|x| - x",
+        "C": "x^2 ln|x| + C",
+        "D": "x^3 ln|x| + C"
+      },
+      "correct_choice": "A",
+      "solution": "∫(1/x) dx = x ln|x| - ∫(ln|x|) dx = x ln|x| - [x ln|x| - x] + C = x ln|x| + C",
+      "explanation": "Integration by parts is not necessary for this integral, as it can be directly evaluated using the natural logarithm rule. However, if attempted, the correct result is obtained after integrating the remaining term.",
+      "common_mistake_notes": "Common mistake: Students may incorrectly apply integration by parts twice, leading to an incorrect result."
+    },
+    {
+      "id": "IntegrationWithConstant_4",
+      "stem": "Evaluate the integral of 2/ x: ∫(2/xdx) = ?",
+      "choices": {
+        "A": "2ln|x| + C",
+        "B": "x^2 ln|x| + C",
+        "C": "2x ln|x| + C",
+        "D": "x^3 ln|x| + C"
+      },
+      "correct_choice": "A",
+      "solution": "∫(2/xdx) = 2 ∫(1/x) dx = 2ln|x| + C",
+      "explanation": "The integral of a constant multiple is found by multiplying the constant outside the integral and integrating the remaining function.",
+      "common_mistake_notes": "Common mistake: Students may forget to multiply the constant 2 before integrating 1/x, resulting in an incorrect answer."
+    },
+    {
+      "id": "IntegrationWithVariableBase_5",
+      "stem": "Find the indefinite integral of 1/(2x): ∫(1/(2x)dx) = ?",
+      "choices": {
+        "A": "ln|2x| + C",
+        "B": "x ln|2x| + C",
+        "C": "x^2 ln|2x| + C",
+        "D": "(1/2)ln|x| + C"
+      },
+      "correct_choice": "D",
+      "solution": "∫(1/(2x)dx) = (1/2) ∫(1/x) dx = (1/2)ln|x| + C",
+      "explanation": "The integral of a function with a variable base can be simplified by factoring out constants before integrating.",
+      "common_mistake_notes": "Common mistake: Students may not factor out the constant 1/2, leading to an incorrect antiderivative."
+    },
+    {
+      "id": "IntegrationWithTrigonometricFunction_6",
+      "stem": "Find the integral of sin(x)/x: ∫(sin(x)/xdx) = ?",
+      "choices": {
+        "A": "cos|x| + C",
+        "B": "x cos|x| + C",
+        "C": "x^2 cos|x| + C",
+        "D": "x sin|x| - cos|x| + C"
+      },
+      "correct_choice": "D",
+      "solution": "∫(sin(x)/xdx) = x sin(x) - ∫(sin(x)) dx = x sin(x) + cos(x) + C",
+      "explanation": "The integral of sin(x)/x cannot be directly evaluated using the natural logarithm rule. Instead, it can be solved by integration by parts or recognizing it as a special function (which is not part of this objective). The correct answer is obtained after integrating the remaining term.",
+      "common_mistake_notes": "Common mistake: Students may attempt to use the natural logarithm rule, which does not apply here."
+    },
+    {
+      "id": "IntegrationWithExponentialFunction_7",
+      "stem": "Find the integral of e^(-x)/x: ∫(e^(-x)/xdx) = ?",
+      "choices": {
+        "A": "-e^(-x) ln|x| + C",
+        "B": "e^(-x) ln|x| + C",
+        "C": "xe^(-x) ln|x| + C",
+        "D": "x^2 e^(-x) ln|x| + C"
+      },
+      "correct_choice": "A",
+      "solution": "∫(e^(-x)/xdx) = -e^(-x) ln|x| + ∫(e^(-x)) dx = -e^(-x) ln|x| - e^(-x) + C",
+      "explanation": "The integral of an exponential function divided by x can be solved using integration by parts. The correct answer is obtained after integrating the remaining term.",
+      "common_mistake_notes": "Common mistake: Students may not recognize that integration by parts is needed and attempt to use the natural logarithm rule, which does not apply here."
+    }
+  ]
+}

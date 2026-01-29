@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.2",
+  "objective_text": "Convert polar to rectangular form",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Convert the polar coordinate (5, 60°) to rectangular form.",
+      "choices": {
+        "A": "(4.33, 2.5)",
+        "B": "(5\ncos(60), 5\nsin(60))",
+        "C": "(2.5, 4.33)",
+        "D": "(5\ncos(30), 5\ncos(30))"
+      },
+      "correct_choice": "B",
+      "solution": "(5cos(60°), 5sin(60°)) = (2.5, 4.33)",
+      "explanation": "In polar coordinates, (r, θ) represents the distance r from the origin and the angle θ measured counterclockwise from the positive x-axis. To convert to rectangular form (x, y), use the formulas x = rcos(θ) and y = rsin(θ).",
+      "common_mistake_notes": "A common mistake is to confuse sine with cosine or to apply the wrong angle (e.g., using θ instead of 60°)."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Convert the polar coordinate (3, -45°) to rectangular form.",
+      "choices": {
+        "A": "(1.5\ncos(-45), 1.5\ncos(-45))",
+        "B": "(3\ncos(-45), 3\ncos(-45))",
+        "C": "(\n-1.5\ncos(45), -1.5\ncos(45))",
+        "D": "((3cos(45), -3cos(45))"
+      },
+      "correct_choice": "D",
+      "solution": "(3cos(-45°), -3cos(-45°)) = (2.12, -2.12)",
+      "explanation": "When the angle is negative, remember to adjust the cosine and sine accordingly. In this case, cos(-45°) = cos(45°) and sin(-45°) = -sin(45°).",
+      "common_mistake_notes": "A common mistake is to forget that only the sine changes sign when the angle is negative."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Convert the polar coordinate (7, 210°) to rectangular form.",
+      "choices": {
+        "A": "(\n-7\ncos(150), -7\ncos(150))",
+        "B": "(7\ncos(330), 7\ncos(330))",
+        "C": "(\n-7\ncos(150), 7\ncos(150))",
+        "D": "(\n-7\ncos(30), -7\ncos(30))"
+      },
+      "correct_choice": "A",
+      "solution": "(-7cos(210°), -7cos(210°)) = (-2.45, 6.08)",
+      "explanation": "When converting to rectangular form, consider the quadrant in which the angle lies and adjust the cosine accordingly. In this case, cos(210°) = -cos(30°).",
+      "common_mistake_notes": "A common mistake is to forget that the cosine function changes sign when the angle moves from the first to the second or third quadrant."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Convert the polar coordinate (8, 270°) to rectangular form.",
+      "choices": {
+        "A": "(8\ncos(270), 8\ncos(270))",
+        "B": "(8\ncos(90), 8\ncos(90))",
+        "C": "(\n-8\ncos(180), -8\ncos(180))",
+        "D": "((8cos(0), 8cos(0))"
+      },
+      "correct_choice": "B",
+      "solution": "(8cos(90°), 8cos(90°)) = (0, 8)",
+      "explanation": "At 270°, the angle is in the third quadrant where the cosine is negative and sine is positive. However, cos(90°) = 0, so the x-coordinate will be zero.",
+      "common_mistake_notes": "A common mistake is to forget that cos(90°) is zero."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Convert the polar coordinate (2, π/3) to rectangular form.  (Note: π = 3.14159...)",
+      "choices": {
+        "A": "(2\ncos(π/3), 2\ncos(π/3))",
+        "B": "(2\ncos(π/6), 2\ncos(π/6))",
+        "C": "(\n-2\ncos(π/4), -2\ncos(π/4))",
+        "D": "((2cos(2π/3), 2cos(2π/3))"
+      },
+      "correct_choice": "A",
+      "solution": "(2cos(π/3)), 2cos(π/3)) = (1, √3)",
+      "explanation": "When working with radians, remember to use the appropriate trigonometric values. In this case, cos(π/3) = 1/2 and sin(π/3) = √3/2.",
+      "common_mistake_notes": "A common mistake is to confuse sine and cosine or to apply the wrong value for π."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Convert the polar coordinate (4, -π/4) to rectangular form.  (Note: π = 3.14159...)",
+      "choices": {
+        "A": "(4\ncos(-π/4), 4\ncos(-π/4))",
+        "B": "(4\ncos(π/4), 4\ncos(π/4))",
+        "C": "(\n-4\ncos(3π/4), -4\ncos(3π/4))",
+        "D": "((4cos(5π/4), 4cos(5π/4))"
+      },
+      "correct_choice": "C",
+      "solution": "(-4cos(3π/4)), -4cos(3π/4)) = (-2√2, -2√2)",
+      "explanation": "When converting from radians and the angle is negative, remember to adjust the cosine accordingly. In this case, cos(-π/4) = cos(π/4).",
+      "common_mistake_notes": "A common mistake is to forget that the cosine function changes sign when the angle moves from the first to the second or third quadrant."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Convert the polar coordinate (6, 5π/2) to rectangular form.  (Note: π = 3.14159...)",
+      "choices": {
+        "A": "(6\ncos(5π/2), 6\ncos(5π/2))",
+        "B": "(6\ncos(π/2), 6\ncos(π/2))",
+        "C": "(\n-6\ncos(3π/2), -6\ncos(3π/2))",
+        "D": "((6cos(7π/2), 6cos(7π/2))"
+      },
+      "correct_choice": "B",
+      "solution": "(6cos(π/2)), 6cos(π/2)) = (0, -6)",
+      "explanation": "At 5π/2 radians, the angle is in the fourth quadrant where the cosine is positive and sine is negative. However, cos(π/2) = 0, so the x-ordinate will be zero.",
+      "common_mistake_notes": "A common mistake is to forget that cos(π/2) is zero."
+    }
+  ]
+}

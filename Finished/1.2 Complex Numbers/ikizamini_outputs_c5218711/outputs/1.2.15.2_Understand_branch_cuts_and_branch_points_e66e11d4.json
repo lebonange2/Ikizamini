@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.2",
+  "objective_text": "Understand branch cuts and branch points",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is a branch point in the context of complex analysis?",
+      "choices": {
+        "A": "A location where a function's value changes discontinuously.",
+        "B": "A point on the real axis where a logarithm is undefined.",
+        "C": "A point in the complex plane where a multivalued function has multiple branches.",
+        "D": "The starting point for defining a contour integral."
+      },
+      "correct_choice": "C",
+      "solution": "A branch point is a point in the complex plane where a multi-valued function, such as the logarithm or square root, has multiple branches. The other options describe different concepts: (A) refers to a discontinuity, which is not specific to branch points; (B) describes a pole, not a branch point specifically; and (D) refers to a contour integral's starting point, which is unrelated.",
+      "explanation": "Branch points are important in understanding the behavior of multivalued functions and defining consistent branches for calculations.",
+      "common_mistake_notes": "Common mistake: Choosing B,混淆了极点（pole）和分支点。虽然在实轴上的某些点，如0对于对数函数来说是未定义的，但这不是严格意义上的分支点。分支点是指函数值因选取不同分支而变化的点。"
+    },
+    {
+      "id": "2",
+      "stem": "Which of the following functions has a branch point at z = 1?",
+      "choices": {
+        "A": "f(z) = √(z - 1)",
+        "B": "g(z) = ln(|z - 1|)",
+        "C": "h(z) = (z - 1)^3",
+        "D": "j(z) = e^(2πiz)"
+      },
+      "correct_choice": "A",
+      "solution": "The function f(z) = √(z - 1) has a branch point at z = 1 because the square root function is multi-valued and its value changes depending on which branch you choose. The other functions do not have branch points at z = 1: (B) is real-va",
+      "explanation": "To identify branch points, look for multi-valued functions like roots or logarithms that may change value based on the chosen branch.",
+      "common_mistake_notes": "Common mistake: Choosing B,混淆了对数函数的定义域限制和分支点。虽然g(z)在z=1处的值依赖于绝对值，但这并不意味着它有分支点。分支点是由于函数本身的多值性引起的，而不仅仅是函数定义域的问题。"
+    },
+    {
+      "id": "3",
+      "stem": "What is the purpose of a branch cut?",
+      "choices": {
+        "A": "To avoid discontinuities in a function's derivative.",
+        "B": "To connect different branches of a multi-valued function smoothly.",
+        "C": "To simplify the calculation of definite integrals along a contour.",
+        "D": "To ensure that a function is holomorphic everywhere on the complex plane."
+      },
+      "correct_choice": "B",
+      "solution": "The purpose of a branch cut is to connect different branches of a multi-valued function smoothly, allowing for a continuous and well-defined function. (A) and (D) are related to other properties of functions but not directly to branch cuts; (C) may be an advantage of choosing a specific branch cut, but it's not the primary purpose.",
+      "explanation": "Branch cuts help us define a single-va",
+      "common_mistake_notes": "Common mistake: Choosing C,混淆了分支切割与路径积分的关系。虽然选择适当的分支切口可能简化某些路径积分的计算，但这不是分支切口的主要目的。分支切口主要是为了确保函数在多值区域之间的连续性。"
+    },
+    {
+      "id": "4",
+      "stem": "What is the branch cut for the function f(z) = √(z^2 - 1)?",
+      "choices": {
+        "A": "[-1, 1]",
+        "B": "[0, ∞)",
+        "C": "(-∞, -1] U [1, ∞)",
+        "D": "No branch cut is needed."
+      },
+      "correct_choice": "C",
+      "solution": "The function f(z) = √(z^2 - 1) has a branch point at z = ±1. To avoid discontinuities in the function, we place a branch cut along the interval (-∞, -1] U [1, ∞). The other options either do not encompass both branch points or unnecessarily include additional intervals.",
+      "explanation": "When determining branch cuts for functions like this square root, consider where the radicand changes sign and causes discontinuities in the function's branches.",
+      "common_mistake_notes": "Common mistake: Choosing A,忽略了函数在两个点z=±1都有分支点。正确的分支切口需要包括这两个点，因此是(-∞, -1] U [1, ∞)。"
+    },
+    {
+      "id": "5",
+      "stem": "The function f(z) = ln(2i + z) has a branch point at which complex number?",
+      "choices": {
+        "A": "z = -2i",
+        "B": "z = 0",
+        "C": "z = 2i",
+        "D": "No branch point exists."
+      },
+      "correct_choice": "A",
+      "solution": "The function f(z) = ln(2i + z) has a branch point at z = -2i because the logarithm is undefined for complex numbers with zero real part. The other options do not represent points where the function becomes multi-va",
+      "explanation": "When looking for branch points in logarithmic functions, consider the domain of the logarithm: it must have a positive real part. If the argument of the logarithm can be zero, that's a potential branch point.",
+      "common_mistake_notes": "Common mistake: Choosing D,忽略了复数对数函数的定义域。对于复数对数，实部必须为正，因此当z + 2i的实部为零时（即z = -2i），存在分支点。"
+    },
+    {
+      "id": "6",
+      "stem": "What is the effect of changing the branch cut for a function?",
+      "choices": {
+        "A": "It changes the domain of the function.",
+        "B": "It alters the range of values the function can take.",
+        "C": "It determines which branch of the function is used in different regions of the complex plane.",
+        "D": "It affects the convergence of series expansions of the function."
+      },
+      "correct_choice": "C",
+      "solution": "Changing the branch cut for a function determines which branch of the function is used in different regions of the complex plane. This choice does not affect the domain, range, or convergence properties of the function.",
+      "explanation": "Branch cuts are essential for defining consistent branches of multi-valued functions; they do not alter fundamental aspects like the domain or range.",
+      "common_mistake_notes": "Common mistake: Choosing A,混淆了分支切口与函数定义域的关系。分支切口不会改变函数的定义域，它只是决定了在不同区域使用哪个分支。"
+    },
+    {
+      "id": "7",
+      "stem": "Which of the following statements about branch cuts is false?",
+      "choices": {
+        "A": "Branch cuts are usually chosen to be straight lines for simplicity.",
+        "B": "The choice of branch cut is not unique; different choices can lead to equivalent functions.",
+        "C": "A function with a branch point must have a branch cut somewhere in the complex plane.",
+        "D": "The principal value of a multi-valued function corresponds to one specific branch."
+      },
+      "correct_choice": "C",
+      "solution": "Not all functions with branch points require a branch cut. For example, f(z) = e^(2πiz) has a branch point at z = ∞ but no branch cut is needed because it can be defined continuously across the entire complex plane. The other statements are true.",
+      "explanation": "Some multi-valued functions may not need branch cuts if they can be defined consistently without them, like exponential functions with integer exponents.",
+      "common_mistake_notes": "Common mistake: Choosing A,虽然直线分支切口通常是出于简单考虑，但这并不是绝对的。分支切口可以是任何不包含分支点且连接不同分支的路径。"
+    }
+  ]
+}

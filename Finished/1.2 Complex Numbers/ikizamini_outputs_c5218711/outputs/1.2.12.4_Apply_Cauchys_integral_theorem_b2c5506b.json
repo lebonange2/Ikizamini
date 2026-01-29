@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.12.4",
+  "objective_text": "Apply Cauchy's integral theorem",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Evaluate the integral of f(z) = z^2 dz around a circle C with center at origin and radius 3, using Cauchy's integral theorem.",
+      "choices": {
+        "A": "0",
+        "B": "18π",
+        "C": "27π",
+        "D": "54π"
+      },
+      "correct_choice": "A",
+      "solution": "Using Cauchy's integral theorem, the integral of a holomorphic function (analytic with no singularities) around a closed curve is zero. Since f(z) = z^2 is analytic everywhere in the complex plane, the integral around the circle C is 0.",
+      "explanation": "Cauchy's integral theorem states that if a function is holomorphic within and on a simple closed contour, then the integral of the function over the contour is zero. In this case, f(z) = z^2 has no singularities within or on the circle C, so the integral evaluates to 0.",
+      "common_mistake_notes": "A common mistake would be attempting to directly compute the integral without considering the theorem. This would lead to a wrong answer as it overlooks the fact that Cauchy's integral theorem applies."
+    },
+    {
+      "id": "Bghj",
+      "stem": "Calculate the integral of f(z) = 1/(z^3 + 1) dz around a circle C with center at origin and radius 2, using Cauchy's integral theorem.",
+      "choices": {
+        "A": "0",
+        "B": "π/6",
+        "C": "π/3",
+        "D": "π"
+      },
+      "correct_choice": "A",
+      "solution": "The function f(z) has singularities at z = -1, e^(2πi/3), and e^(-2πi/3). None of these singularities are within the circle C with radius 2. Therefore, by Cauchy's integral theorem, the integral is zero.",
+      "explanation": "Cauchy's integral theorem states that if a function is holomorphic within and on a simple closed contour, then the integral of the function over the contour is zero. Since there are no singularities of f(z) = 1/(z^3 + 1) inside or on the circle C, the integral evaluates to 0.",
+      "common_mistake_notes": "A common mistake would be attempting to use partial fraction decomposition and then integrate, which would lead to a non-zero result. This approach is incorrect because it does not account for the fact that Cauchy's integral theorem applies."
+    },
+    {
+      "id": "Qwer",
+      "stem": "Evaluate ∫(C) (z^2 + 1)/(z - i)^3 dz where C is a circle with center at origin and radius 4, using Cauchy's integral theorem.",
+      "choices": {
+        "A": "0",
+        "B": "-2πi",
+        "C": "4πi",
+        "D": "8πi"
+      },
+      "correct_choice": "A",
+      "solution": "The function has a pole of order 3 at z = i, which is not within the circle C. By Cauchy's integral theorem, the integral is zero.",
+      "explanation": "Cauchy's integral theorem applies only to holomorphic functions within and on the contour. Since there are no singularities of f(z) = (z^2 + 1)/(z - i)^3 inside or on the circle C, the integral evaluates to 0.",
+      "common_mistake_notes": "A common mistake would be attempting to use Cauchy's residue theorem, which is applicable for functions with poles. In this case, the function has a pole of order 3, but it is not within the contour, so the integral is zero by Cauchy's integral theorem."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "Calculate ∫(C) (e^z)/(z - 2πi)^2 dz where C is a circle with center at origin and radius 5, using Cauchy's integral theorem.",
+      "choices": {
+        "A": "0",
+        "B": "-2πie^(2πi)",
+        "C": "4πie^(2πi)",
+        "D": "8πie^(2πi)"
+      },
+      "correct_choice": "A",
+      "solution": "The function has a pole of order 2 at z = 2πi, which is not within the circle C. By Cauchy's integral theorem, the integral is zero.",
+      "explanation": "Cauchy's integral theorem applies only to holomorphic functions within and on the contour. Since there are no singularities of f(z) = (e^z)/(z - 2πi)^2 inside or on the circle C, the integral evaluates to 0.",
+      "common_mistake_notes": "A common mistake would be attempting to use Cauchy's residue theorem, which is applicable for functions with poles. In this case, the function has a pole of order 2, but it is not within the contour, so the integral is zero by Cauchy's integral theorem."
+    },
+    {
+      "id": "Bvnmm",
+      "stem": "Evaluate ∫(C) (sin(z))/z dz where C is a circle with center at origin and radius 6, using Cauchy's integral theorem.",
+      "choices": {
+        "A": "0",
+        "B": "π",
+        "C": "2π",
+        "D": "3π"
+      },
+      "correct_choice": "A",
+      "solution": "The function has a removable singularity at z = 0. By Cauchy's integral theorem, the integral is equal to 2πi times the residue of f(z) at z = 0, which is 1. Thus, the integral evaluates to π.",
+      "explanation": "Cauchy's integral theorem applies to holomorphic functions within and on the contour. However, in this case, sin(z)/z has a removable singularity at z = 0. The residue theorem can be used to evaluate the integral around such a singularity. The residue of f(z) at z = 0 is 1, so the integral evaluates to π.",
+      "common_mistake_notes": "A common mistake would be assuming that the function is holomorphic everywhere and applying Cauchy's integral theorem directly, which would lead to an incorrect result of 0. It's important to recognize the removable singularity at z = 0."
+    },
+    {
+      "id": "Xcvbn",
+      "stem": "Calculate ∫(C) (cos(z))/z dz where C is a circle with center at origin and radius 7, using Cauchy's integral theorem.",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "A",
+      "solution": "The function has a removable singularity at z = 0. By Cauchy's integral theorem, the integral is equal to 2πi times the residue of f(z) at z = 0, which is 0. Thus, the integral evaluates to 0.",
+      "explanation": "Cauchy's integral theorem applies to holomorphic functions within and on the contour. However, in this case, cos(z)/z has a removable singularity at z = 0. The residue of f(z) at z = 0 is 0, so the integral evaluates to 0.",
+      "common_mistake_notes": "A common mistake would be assuming that the function is holomorphic everywhere and applying Cauchy's integral theorem directly, which would lead to an incorrect result of 0. It's important to recognize the removable singularity at z = 0."
+    },
+    {
+      "id": "Zxcvb",
+      "stem": "Evaluate ∫(C) (tan(z))/z dz where C is a circle with center at origin and radius 8, using Cauchy's integral theorem.",
+      "choices": {
+        "A": "0",
+        "B": "π/4",
+        "C": "π/2",
+        "D": "π"
+      },
+      "correct_choice": "A",
+      "solution": "The function has a simple pole at z = 0. By Cauchy's integral theorem, the integral is equal to 2πi times the residue of f(z) at z = 0, which is -1/2. Thus, the integral evaluates to 0.",
+      "explanation": "Cauchy's integral theorem applies to holomorphic functions within and on the contour. However, in this case, tan(z)/z has a simple pole at z = 0. The residue of f(z) at z = 0 is -1/2, so the integral evaluates to 0.",
+      "common_mistake_notes": "A common mistake would be attempting to integrate the function directly without considering the singularity at z = 0. This would lead to an incorrect result as it overlooks the role of the residue theorem."
+    }
+  ]
+}

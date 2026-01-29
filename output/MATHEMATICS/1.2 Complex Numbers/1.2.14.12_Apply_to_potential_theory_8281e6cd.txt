@@ -1,0 +1,217 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.14.12 Apply to potential theory
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.14 Complex Analysis Applications
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the electric potential at point P due to a positive charge of 5 microcoulombs located at point A (-3, 0) and a negative charge of 2 microcoulombs located at point B (3, 0) in a Cartesian coordinate system. Assume the electric constant ε₀ = 8.85 × 10⁻¹² F/m.
+A) 6 V
+B) 9 V
+C) 11 V
+D) 15 V
+Correct Answer: C
+
+Solution:
+The potential at point P due to a charge is given by the formula: V = k θ / r, where k is Coulomb's constant (1/(4πε₀)), θ is the charge, and r is the distance from the charge. For both charges, we'll calculate their individual contributions to the potential at P and then sum them up.
+
+For the positive charge at A (-3, 0):
+r₁ = sqrt((x₂ - x₁)² + (y₂ - y₁)²) = sqrt((-3 - 0)² + (0 - 0)²) = 3 m
+V₁ = k θ₁ / r₁ = (1/(4πε₀)) * 5 × 10⁻⁶ C / 3 m
+
+For the negative charge at B (3, 0):
+r₂ = sqrt((x₂ - x₁)² + (y₂ - y₁)²) = sqrt((3 - 0)² + (0 - 0)²) = 3 m
+V₂ = k θ₂ / r₂ = (1/(4πε₀)) * (-2 × 10⁻⁶ C) / 3 m
+
+Total potential V_total = V₁ + V₂
+Substituting the given ε₀ value:
+V_total = [(1/(4π(8.85 × 10⁻¹²))) * (5 × 10⁻⁶)] / 3 - [(1/(4π(8.85 × 10⁻¹²))) * (2 × 10⁻⁶)] / 3
+V_total ≈ 11 V
+
+Explanation:
+The correct answer is obtained by summing the individual potentials due to each charge, taking into account their signs and distances from point P. The common mistake would be to add the charges themselves instead of their potentials.
+
+Common mistake note:
+Common mistake: Adding the charges directly instead of their potentials. This would result in a net charge calculation rather than finding the potential at the given point.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the gravitational potential at point P due to two planets, Planet A with mass 5 Earth masses and located 3 astronomical units (AU) away from P, and Planet B with mass 2 Earth masses and located 4 AU away from P. Assume G, the gravitational constant, is 6.67 × 10⁻¹¹ m³ kg⁻¹ s⁻².
+A) 1.5 × 10² J/kg
+B) 2.0 × 10² J/kg
+C) 2.5 × 10² J/kg
+D) 3.0 × 10² J/ kg
+Correct Answer: B
+
+Solution:
+The gravitational potential at point P due to a mass is given by the formula: V = -G ω / r, where G is the gravitational constant, ω is the mass, and r is the distance from the mass. For both planets, we'll calculate their individual contributions to the potential at P and then sum them up.
+
+For Planet A:
+r₁ = 3 AU = 3 × (149.6 × 10⁶ m) ≈ 448.8 × 10⁶ m
+V₁ = -G ω₁ / r₁ = -(6.67 × 10⁻¹¹ m³ kg⁻¹ s⁻²) * (5 * Earth mass) / 448.8 × 10⁶ m
+
+For Planet B:
+r₂ = 4 AU = 4 × (149.6 × 10⁶ m) ≈ 598.4 × 10⁶ m
+V₂ = -G ω₂ / r₂ = -(6.67 × 10⁻¹¹ m³ kg⁻¹ s⁻²) * (2 * Earth mass) / 598.4 × 10⁶ m
+
+Total potential V_total = V₁ + V₂
+Substituting the given Earth mass and AU conversion:
+V_total ≈ -(6.67 × 10⁻¹¹) * (5 * 5.972 × 10²⁴ kg) / 448.8 × 10⁶ + (6.67 × 10⁻¹¹) * (2 * 5.972 × 10²⁴ kg) / 598.4 × 10⁶
+V_total ≈ 2.0 × 10² J/ kg
+
+Explanation:
+The correct answer is obtained by summing the individual gravitational potentials due to each planet, taking into account their masses and distances from point P. The common mistake would be to add the masses directly instead of their potentials.
+
+Common mistake note:
+Common mistake: Adding the masses directly instead of their gravitational potentials. This would result in a net mass calculation rather than finding the potential at the given point.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the electric field at point P located at (1, 2) in a Cartesian coordinate system due to a positive charge of 4 microcoulombs located at the origin and a negative charge of 6 microcoulombs located at (3, 0). Assume the electric constant ε₀ = 8.85 × 10⁻¹² F/m.
+A) (2i + 3j) N/ C
+B) (3i - j) N/ C
+C) (-2i + 3j) N/ C
+D) (-3i + j) N/ C
+Correct Answer: A
+
+Solution:
+The electric field at point P due to a charge is given by the formula: E = k θ / r² Δr, where k is Coulomb's constant (1/(4πε₀)), θ is the charge, r is the distance from the charge, and Δr is the unit vector pointing from the charge to P. We'll calculate the electric field due to each charge and then sum them up.
+
+For the positive charge at origin (0, 0):
+r₁ = sqrt((x₂ - x₁)² + (y₂ - y₁)²) = sqrt((1 - 0)² + (2 - 0)²) = sqrt(5) m
+Δr₁ = (1i + 2j) / sqrt(5)
+E₁ = k θ₁ / r₁² Δr₁ = [(1/(4πε₀)) * 4 × 10⁻⁶ C] / (sqrt(5))^2 * (1i + 2j) / sqrt(5)
+
+For the negative charge at (3, 0):
+r₂ = sqrt((x₂ - x₁)² + (y₂ - y₁)²) = sqrt((1 - 3)² + (2 - 0)²) = 2√2 m
+Δr₂ = (-2i + 0j) / 2√2
+E₂ = k θ₂ / r₂² Δr₂ = [(1/(4πε₀)) * (-6 × 10⁻⁶ C)] / (2√2)^2 * (-2i + 0j) / 2√2
+
+Total electric field E_total = E₁ + E₂
+Substituting the given ε₀ value:
+E_total ≈ [(1/(4π(8.85 × 10⁻¹²))) * (4 × 10⁻⁶)] / 5 * (1i + 2j) - [(1/(4π(8.85 × 10⁻¹²))) * (-6 × 10⁻⁶)] / 8 * (-2i)
+E_total ≈ (2i + 3j) N/ C
+
+Explanation:
+The correct answer is obtained by summing the individual electric fields due to each charge, taking into account their charges, distances from point P, and directions. The common mistake would be to add the charges directly instead of their fields.
+
+Common mistake note:
+Common mistake: Adding the charges directly instead of their electric fields. This would result in a net charge calculation rather than finding the field at the given point.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the gravitational field at point P located at (1, 0) in a Cartesian coordinate system due to two masses, Mass A with 2 kg and located at (-2, 0), and Mass B with 3 kg and located at (4, 0). Assume G, the gravitational constant, is 6.67 × 10⁻¹¹ m³ kg⁻¹ s⁻².
+A) (-2i + 0j) N/ kg
+B) (2i + 0j) N/ kg
+C) (-3i + 0j) N/ kg
+D) (3i + 0j) N/ kg
+Correct Answer: A
+
+Solution:
+The gravitational field at point P due to a mass is given by the formula: E = -G ω / r² Δr, where G is the gravitational constant, ω is the mass, r is the distance from the mass, and Δr is the unit vector pointing from the mass to P. We'll calculate the gravitational field due to each mass and then sum them up.
+
+For Mass A at (-2, 0):
+r₁ = sqrt((x₂ - x₁)² + (y₂ - y₁)²) = sqrt((1 - (-2))^2 + (0 - 0)^2) = 3 m
+Δr₁ = (1i + 0j) / 3
+E₁ = -G ω₁ / r₁² Δr₁ = -(6.67 × 10⁻¹¹ m³ kg⁻¹ s⁻²) * 2 kg / 3^2 * (1i + 0j) / 3
+
+For Mass B at (4, 0):
+r₂ = sqrt((x₂ - x₁)² + (y₂ - y₁)²) = sqrt((1 - 4)^2 + (0 - 0)^2) = 3 m
+Δr₂ = (-1i + 0j) / 3
+E₂ = -G ω₂ / r₂² Δr₂ = -(6.67 × 10⁻¹¹ m³ kg⁻¹ s⁻²) * 3 kg / 3^2 * (-1i + 0j) / 3
+
+Total gravitational field E_total = E₁ + E₂
+E_total ≈ -(6.67 × 10⁻¹¹) * (2 kg / 9) * (1i) - (6.67 × 10⁻¹¹) * (3 kg / 9) * (-1i)
+E_total ≈ (-2i + 0j) N/ kg
+
+Explanation:
+The correct answer is obtained by summing the individual gravitational fields due to each mass, taking into account their masses, distances from point P, and directions. The common mistake would be to add the masses directly instead of their fields.
+
+Common mistake note:
+Common mistake: Adding the masses directly instead of their gravitational fields. This would result in a net mass calculation rather than finding the field at the given point.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the electric potential difference between points A and B, where A is located at (0, 0) with a charge of -2 microcoulombs, and B is located at (3, 0) with a charge of 4 microcoulombs. Assume the electric constant ε₀ = 8.85 × 10⁻¹² F/m.
+A) 6 V
+B) 9 V
+C) 12 V
+D) 15 V
+Correct Answer: C
+
+Solution:
+The potential difference between two points due to a charge is given by the formula: ΔV = k θ / r, where k is Coulomb's constant (1/(4πε₀)), θ is the charge, and r is the distance from the charge. We'll calculate the potential at A due to B and then subtract the potential at A due to A.
+
+Potential at A due to B:
+r = sqrt((x₂ - x₁)² + (y₂ - y₁)²) = sqrt((3 - 0)^2 + (0 - 0)^2) = 3 m
+V_B_at_A = k θ_B / r = (1/(4πε₀)) * 4 × 10⁻⁶ C / 3 m
+
+Potential at A due to A:
+Since the potential at a point due to its own charge is zero, V_A_at_A = 0
+
+Total potential difference ΔV_total = V_B_at_A - V_A_at_A
+Substituting the given ε₀ value:
+ΔV_total ≈ (1/(4π(8.85 × 10⁻¹²))) * (4 × 10⁻⁶) / 3
+ΔV_total ≈ 12 V
+
+Explanation:
+The correct answer is obtained by calculating the potential at A due to B and then subtracting the potential at A due to its own charge, which is zero. The common mistake would be to neglect the contribution of the charge at point A.
+
+Common mistake note:
+Common mistake: Neglecting the potential contribution from the charge at point A. This would result in an incorrect potential difference calculation.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the gravitational potential difference between points C and D, where C is located at (0, 0) with a mass of 3 Earth masses, and D is located at (2, 0) with a mass of 5 Earth masses. Assume G, the gravitational constant, is 6.67 × 10⁻¹¹ m³ kg⁻¹ s⁻².
+A) 1.5 × 10² J/ kg
+B) 2.0 × 10² J/ kg
+C) 2.5 × 10² J/ kg
+D) 3.0 × 10² J/ kg
+Correct Answer: B
+
+Solution:
+The potential difference between two points due to a mass is given by the formula: ΔV = -G ω / r, where G is the gravitational constant, ω is the mass, and r is the distance from the mass. We'll calculate the potential at C due to D and then subtract the potential at C due to C.
+
+Potential at C due to D:
+r = sqrt((x₂ - x₁)² + (y₂ - y₁)²) = sqrt((2 - 0)^2 + (0 - 0)^2) = 2 m
+V_D_at_C = -G ω_D / r = -(6.67 × 10⁻¹¹ m³ kg⁻¹ s⁻²) * (5 * Earth mass) / 2 m
+
+Potential at C due to C:
+Since the potential at a point due to its own mass is zero, V_C_at_C = 0
+
+Total potential difference ΔV_total = V_D_at_C - V_C_at_C
+Substituting the given Earth mass and AU conversion:
+ΔV_total ≈ -(6.67 × 10⁻¹¹) * (5 * 5.972 × 10²⁴ kg) / 2
+ΔV_total ≈ 2.0 × 10² J/ kg
+
+Explanation:
+The correct answer is obtained by calculating the potential at C due to D and then subtracting the potential at C due to its own mass, which is zero. The common mistake would be to neglect the contribution of the mass at point C.
+
+Common mistake note:
+Common mistake: Neglecting the potential contribution from the mass at point C. This would result in an incorrect potential difference calculation.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the electric field at point P located at (0, 1) in a Cartesian coordinate system due to a uniform electric field of 2 N/ C pointing in the positive x-direction and another uniform electric field of 3 N/ C pointing in the negative y-direction.
+A) (2i - 3j) N/ C
+B) (-2i + 3j) N/ C
+C) (5i - 3j) N/ C
+D) (-5i + 3j) N/ C
+Correct Answer: A
+
+Solution:
+The electric field at point P is the vector sum of the two uniform fields. Since they are in different directions, we'll add them component-wise.
+
+Electric field due to positive x-direction: E_x = 2i N/ C
+Electric field due to negative y-direction: E_y = -3j N/ C
+Total electric field at P: E_total = E_x + E_y
+E_total = (2i) + (-3j)
+E_total = (2i - 3j) N/ C
+
+Explanation:
+The correct answer is obtained by adding the two uniform electric fields component-wise, considering their directions. The common mistake would be to try to combine the magnitudes without taking into account the vector nature of the fields.
+
+Common mistake note:
+Common mistake: Adding the magnitudes of the electric fields directly without considering their vectors. This would result in an incorrect total field calculation.
+------------------------------------------------------------------------------

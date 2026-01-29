@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.10.7",
+  "objective_text": "Find magnitude and phase of impedance",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Given the impedance Z = 3 + 4j, find its magnitude.",
+      "choices": {
+        "A": "2",
+        "B": "5",
+        "C": "7",
+        "D": "sqrt(25)"
+      },
+      "correct_choice": "D",
+      "solution": "The magnitude of a complex number (a + bj) is calculated by the formula |Z| = sqrt(a^2 + b^2). For Z = 3 + 4j, we have a = 3 and b = 4. Plugging these values into the formula gives us |Z| = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5.",
+      "explanation": "The magnitude of impedance is important in understanding its effect on AC circuits and signal processing. This question tests the basic understanding of complex number operations.",
+      "common_mistake_notes": "A common mistake would be to simply add the real and imaginary parts, which would result in choice A (2) or choice C (7). However, this is not how the magnitude of a complex number is calculated."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the phase angle (in degrees) of the impedance Z = -4 + 3j.",
+      "choices": {
+        "A": "-36.87°",
+        "B": "36.87°",
+        "C": "143.13°",
+        "D": "-143.13°"
+      },
+      "correct_choice": "C",
+      "solution": "The phase angle (θ) of a complex number (a + bj) is calculated by the formula θ = arctan(b/a). For Z = -4 + 3j, we have a = -4 and b = 3. Plugging these values into the formula gives us θ = arctan(3/-4) = -arctan(3/4). Since arctan returns an angle in radians, we convert it to degrees: θ ≈ -arctan(3/4) * (180° / π) ≈ -36.87°. However, the phase angle is usually given as a positive value between 0° and 360°, so we add 360° to get the correct answer: θ ≈ -36.87° + 360° = 143.13°.",
+      "explanation": "The phase angle of impedance is crucial for understanding how a circuit element (like a resistor, capacitor, or inductor) affects the phase shift of an AC signal passing through it. This question tests the ability to calculate and convert angles from radians to degrees.",
+      "common_mistake_notes": "A common mistake would be to use arctan(4/3) instead of arctan(-3/-4), which would result in choice B (36.87°). However, this is not the correct phase angle for the given complex number."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the magnitude and phase angle (in radians) of the impedance Z = 5∠-30°.",
+      "choices": {
+        "A": "5, -π/6",
+        "B": "sqrt(25), π/6",
+        "C": "sqrt(25), -π/6",
+        "D": "5, π/6"
+      },
+      "correct_choice": "A",
+      "solution": "The magnitude of a complex number in polar form (R∠θ) is simply the value R. For Z = 5∠-30°, the magnitude is |Z| = 5. The phase angle remains as given: θ = -30° * (π/180°) = -π/6 radians.",
+      "explanation": "Impedances can also be represented in polar form, which makes it easier to perform calculations involving multiplication and division. This question tests the understanding of converting between rectangular and polar forms.",
+      "common_mistake_notes": "A common mistake would be to convert the phase angle from degrees to radians incorrectly (e.g., choice D), or to mix up the magnitude calculation with the phase conversion, leading to choices B and C."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the impedance Z if its magnitude is 10 Ω and phase angle is 60°.",
+      "choices": {
+        "A": "10∠-60°",
+        "B": "10∠60°",
+        "C": "sqrt(3) + sqrt(2)j",
+        "D": "sqrt(3) - sqrt(2)j"
+      },
+      "correct_choice": "B",
+      "solution": "The impedance Z in rectangular form can be found using the formula: Z = |Z| * (cos(θ) + jsin(θ)). For a magnitude of 10 Ω and phase angle of 60°, we have |Z| = 10 and θ = 60° * (π/180°) = π/3 radians. Plugging these values into the formula gives us Z = 10 * (cos(π/3) + jsin(π/3)) = 10∠60°.",
+      "explanation": "This question tests the ability to convert from magnitude and phase angle in polar form to rectangular form, which is useful for analyzing AC circuits.",
+      "common_mistake_notes": "A common mistake would be to use a negative phase angle (choice A), or to mix up the trigonometric functions, leading to choices C and D."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the magnitude of the impedance Z if its rectangular form is 2∠(π/3) Ω.",
+      "choices": {
+        "A": "sqrt(3)",
+        "B": "2",
+        "C": "4",
+        "D": "sqrt(13)"
+      },
+      "correct_choice": "A",
+      "solution": "The magnitude of a complex number in polar form (R∠θ) is simply the value R. For Z = 2∠(π/3) Ω, the magnitude is |Z| = 2.",
+      "explanation": "This question tests the understanding of converting between rectangular and polar forms for impedance calculations.",
+      "common_mistake_notes": "A common mistake would be to use the phase angle in the calculation (e.g., choice D), or to misinterpret the units, leading to choices B and C."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the phase angle (in degrees) of the impedance Z = 4∠(-π/2) Ω.",
+      "choices": {
+        "A": "-90°",
+        "B": "90°",
+        "C": "180°",
+        "D": "270°"
+      },
+      "correct_choice": "A",
+      "solution": "The phase angle of a complex number in polar form (R∠θ) is θ. For Z = 4∠(-π/2) Ω, the phase angle is θ = -π/2 * (180° / π) = -90°.",
+      "explanation": "This question tests the ability to read and interpret phase angles in polar form for impedance calculations.",
+      "common_mistake_notes": "A common mistake would be to use a positive phase angle (e.g., choice B), or to misinterpret the units, leading to choices C and D."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the magnitude and phase angle of the impedance Z = 2 + 2j if it is converted to polar form.",
+      "choices": {
+        "A": "2√2, π/4",
+        "B": "2, π/4",
+        "C": "2√2, -π/4",
+        "D": "2, -π/4"
+      },
+      "correct_choice": "A",
+      "solution": "The magnitude of a complex number (a + bj) is calculated by the formula |Z| = sqrt(a^2 + b^2). For Z = 2 + 2j, we have a = 2 and b = 2. Plugging these values into the formula gives us |Z| = sqrt(2^2 + 2^2) = sqrt(4 + 4) = 2√2. The phase angle is calculated by θ = arctan(b/a), which for Z = 2 + 2j gives us θ = arctan(2/2) = π/4 radians.",
+      "explanation": "This question tests the ability to convert rectangular form impedances to polar form, which simplifies calculations in AC circuits.",
+      "common_mistake_notes": "A common mistake would be to use a negative phase angle (choice C), or to mix up the magnitude calculation with the phase conversion, leading to choices B and D."
+    }
+  ]
+}

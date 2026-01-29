@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.11.8 Apply quotient rule
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.11 Complex Differentiation
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Find the derivative of f(x) = (3x^2 + 5x - 7)/(4x - 2).
+A) (6x + 5)(4x - 2) / (4x - 2)^2
+B) (18x + 10 - 7)/(4x - 2)
+C) [(3x^2 + 5x - 7)(4) - (6x + 5)(-2)] / (4x - 2)^2
+D) 3x^2 + 5x - 7
+Correct Answer: C
+
+Solution:
+Using the quotient rule, f'(x) = [(u(4x - 2))v'(3x^2 + 5x - 7) - u'(3x^2 + 5x - 7)v(4x - 2)] / v(4x - 2)^2, where u(x) = 3x^2 + 5x - 7 and v(x) = 4x - 2. So, u'(x) = 6x + 5 and v'(x) = 4. Plugging these into the formula gives us f'(x) = [(6x + 5)(4) - (3x^2 + 5x - 7)(-2)] / (4x - 2)^2.
+
+Explanation:
+The quotient rule is used to differentiate functions that are in the form of a ratio of two functions. The common mistake is forgetting to square the denominator in the denominator of the fraction.
+
+Common mistake note:
+Forgetting to square the denominator (4x - 2)^2 leads to choice A.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Find the derivative of g(x) = (e^x + sin(x))/(cos(x)).
+A) (e^x cos(x) + cos(x) cos(x)) / (cos(x))^2
+B) (e^x - cos(x)) / cos(x)
+C) (e^x + cos(x) - sin(x)(-sin(x))) / (cos(x))^2
+D) e^x + sin(x)
+Correct Answer: C
+
+Solution:
+Using the quotient rule, g'(x) = [(u(cos(x))v'(e^x + sin(x)) - u'(e^x + sin(x))v(cos(x))) / v(cos(x))^2], where u(x) = e^x + sin(x) and v(x) = cos(x). So, u'(x) = e^x + cos(x) and v'(x) = -sin(x). Plugging these into the formula gives us g'(x) = [(e^x + cos(x)(-sin(x)) - (e^x + sin(x))(-sin(x))) / (cos(x))^2].
+
+Explanation:
+The quotient rule is applied to functions in the form of a ratio. A common mistake would be to forget that the derivative of sine is cosine and the derivative of cosine is negative sine, leading to choice B.
+
+Common mistake note:
+Forgetting the derivatives of sine and cosine leads to choice B.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Find the derivative of h(x) = (x^3 + 2x)/(5x^2 - 1).
+A) (3x^2 + 2)(5x^2 - 1) / (5x^2 - 1)^2
+B) (...)
+C) ...},
+D) x^3 + 2x
+Correct Answer: C
+
+Solution:
+Using the quotient rule, h'(x) = [(u(5x^2 - 1))v'(x^3 + 2x) - u'(x^3 + 2x)v(5x^2 - 1)] / v(5x^2 - 1)^2, where u(x) = x^3 + 2x and v(x) = 5x^2 - 1. So, u'(x) = 3x^2 + 2 and v'(x) = 10x. Plugging these into the formula gives us h'(x) = [(x^3 + 2x)(10x) - (3x^2 + 2)(10x)] / (5x^2 - 1)^2.
+
+Explanation:
+The quotient rule is applied to functions in the form of a ratio. A common mistake would be to forget to multiply u(x) by v'(x), leading to choice B.
+
+Common mistake note:
+Forgetting to multiply u(x) by v'(x) leads to choice B.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Find the derivative of p(x) = (2sin(x))/(2cos(x)).
+A) (2cos(x))^2
+B) 4cos(x)
+C) 4sin(x)
+D) 2sin(x)
+Correct Answer: A
+
+Solution:
+Using the quotient rule, p'(x) = [(u(2cos(x))v'(2sin(x)) - u'(2sin(x))v(2cos(x))) / v(2cos(x))^2], where u(x) = 2sin(x) and v(x) = 2cos(x). So, u'(x) = 2cos(x) and v'(x) = -4sin(x). Plugging these into the formula gives us p'(x) = [(2cos(x)(-4sin(x)) - (2sin(x))(-4sin(x))) / (2cos(x))^2].
+
+Explanation:
+The quotient rule is applied to functions in the form of a ratio. A common mistake would be to forget that the derivative of sine is cosine and the derivative of cosine is negative sine, leading to choice B.
+
+Common mistake note:
+Forgetting the derivatives of sine and cosine leads to choice B.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Find the derivative of q(x) = (x^4 - 3)/(x^2 + 1).
+A) (4x^3)(x^2 + 1) / (x^2 + 1)^2
+B) (4x^3 - 6x)/(x^2 + 1)
+C) [(x^4 - 3)(2x) - (4x^3)(x^2 + 1)] / (x^2 + 1)^2
+D) x^4 - 3
+Correct Answer: C
+
+Solution:
+Using the quotient rule, q'(x) = [(u(x^2 + 1))v'(x^4 - 3) - u'(x^4 - 3)v(x^2 + 1)] / v(x^2 + 1)^2, where u(x) = x^4 - 3 and v(x) = x^2 + 1. So, u'(x) = 4x^3 and v'(x) = 2x. Plugging these into the formula gives us q'(x) = [(x^4 - 3)(2x) - (4x^3)(x^2 + 1)] / (x^2 + 1)^2.
+
+Explanation:
+The quotient rule is applied to functions in the form of a ratio. A common mistake would be to forget to multiply u(x) by v'(x), leading to choice B.
+
+Common mistake note:
+Forgetting to multiply u(x) by v'(x) leads to choice B.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Find the derivative of r(x) = (5e^x)/(3sin(x)).
+A) (5e^x(3cos(x)) + 5e^x(-3sin(x))) / (3sin(x))^2
+B) 15e^x/(3sin(x))
+C) 5e^x - 15e^x sin(x) / (3sin(x))^2
+D) 5e^x
+Correct Answer: A
+
+Solution:
+Using the quotient rule, r'(x) = [(u(3sin(x))v'(5e^x) - u'(5e^x)v(3sin(x))) / v(3sin(x))^2], where u(x) = 5e^x and v(x) = 3sin(x). So, u'(x) = 5e^x and v'(x) = 3cos(x) - 3sin(x) = 3(cos(x) - sin(x)). Plugging these into the formula gives us r'(x) = [(5e^x(3cos(x)) + 5e^x(-3sin(x))) / (3sin(x))^2].
+
+Explanation:
+The quotient rule is applied to functions in the form of a ratio. A common mistake would be to forget that the derivative of sine is cosine and the derivative of cosine is negative sine, leading to choice B.
+
+Common mistake note:
+Forgetting the derivatives of sine and cosine leads to choice B.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Find the derivative of s(x) = (x^2 + 1)/(sqrt(3x)).
+A) (2x)(sqrt(3x)) / (sqrt(3x))^2
+B) (2x - 3x^(1/2))/(sqrt(3x))
+C) [((x^2 + 1)(1/(2*sqrt(3x))) - (2x)(sqrt(3x))) / (sqrt(3x))^2]
+D) x^2 + 1
+Correct Answer: C
+
+Solution:
+Using the quotient rule, s'(x) = [(u(sqrt(3x))v'(x^2 + 1) - u'(x^2 + 1)v(sqrt(3x))) / v(sqrt(3x))^2], where u(x) = x^2 + 1 and v(x) = sqrt(3x) = 3x^(1/2). So, u'(x) = 2x and v'(x) = (1/2)(3x)^(-1/2) = 3/(2sqrt(3x)). Plugging these into the formula gives us s'(x) = [((x^2 + 1)(3/(2sqrt(3x))) - (2x)(sqrt(3x))) / (sqrt(3x))^2].
+
+Explanation:
+The quotient rule is applied to functions in the form of a ratio. A common mistake would be to forget to multiply u(x) by v'(x), leading to choice B.
+
+Common mistake note:
+Forgetting to multiply u(x) by v'(x) leads to choice B.
+------------------------------------------------------------------------------

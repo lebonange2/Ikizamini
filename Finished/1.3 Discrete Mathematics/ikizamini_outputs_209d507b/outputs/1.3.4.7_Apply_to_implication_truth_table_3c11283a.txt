@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.4.7 Apply to implication truth table
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.4 Truth Tables
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+If P represents 'It is raining' and Q represents 'I will stay at home', which truth value corresponds to the statement 'If it is not raining, then I will not stay at home'? Use the implication truth table.
+A) T
+B) F
+C) 1
+D) 0
+Correct Answer: B
+
+Solution:
+The given statement can be written in symbolic form as P → ¬Q. Using the implication truth table, we find that when P is F (it is not raining) and Q is T (I stay at home), the truth value of P → ¬Q is F. Therefore, the correct answer is B: F.
+
+Explanation:
+The implication truth table shows that for an implication to be false, the antecedent must be true and the consequent must be false. In this case, since it's not raining (P is F), but I still stay at home (Q is T), the implication is false.
+
+Common mistake note:
+A common mistake would be to choose A: T, assuming that if it's not raining, then the statement is true. However, the truth table shows that only when it's raining and I don't stay at home is the implication true.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Given P represents 'I will go for a walk' and Q represents 'It is sunny', which truth value corresponds to the statement 'If I won't go for a walk, then it isn't sunny'? Use the implication truth table.
+A) 1
+B) 0
+C) T
+D) F
+Correct Answer: A
+
+Solution:
+The given statement can be written as ¬P → ¬Q. Using the implication truth table, we find that when P is F (I won't go for a walk) and Q is T (it is sunny), the truth value of ¬P → ¬Q is 1 (true). Therefore, the correct answer is A: 1.
+
+Explanation:
+The implication is true when either the antecedent is false or both the antecedent and consequent are true. In this case, since I won't go for a walk (P is F), the statement is considered true regardless of whether it's sunny or not (Q).
+
+Common mistake note:
+A common mistake would be to choose D: F, assuming that if I don't go for a walk, then the statement must be false. However, as per the truth table, when the antecedent is false, the implication is considered true.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+If R represents 'I will eat breakfast' and S represents 'It's morning', which truth value corresponds to the statement 'If I don't eat breakfast, then it isn't morning'? Use the implication truth table.
+A) T
+B) F
+C) 1
+D) 0
+Correct Answer: D
+
+Solution:
+The given statement can be written as ¬R → ¬S. Using the implication truth table, we find that when R is T (I eat breakfast) and S is F (it's not morning), the truth value of ¬R → ¬S is 0 (false). Therefore, the correct answer is D: 0.
+
+Explanation:
+The implication is false only when the antecedent is true and the consequent is false. In this case, since I eat breakfast (R is T) but it's not morning (S is F), the implication is false.
+
+Common mistake note:
+A common mistake would be to choose C: 1, assuming that if I don't eat breakfast, then the statement must be true. However, as per the truth table, when both the antecedent and consequent are false, the implication is considered false.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Given M represents 'I study for an exam' and N represents 'I pass the exam', which truth value corresponds to the statement 'If I don't study for an exam, then I won't pass the exam'? Use the implication truth table.
+A) T
+B) F
+C) 1
+D) 0
+Correct Answer: A
+
+Solution:
+The given statement can be written as ¬M → ¬N. Using the implication truth table, we find that when M is F (I don't study) and N is T (I pass), the truth value of ¬M → ¬N is T (true). Therefore, the correct answer is A: T.
+
+Explanation:
+The implication is true when either the antecedent is false or both the antecedent and consequent are true. In this case, since I don't study for an exam (M is F), the statement is considered true regardless of whether I pass or not (N).
+
+Common mistake note:
+A common mistake would be to choose B: F, assuming that if I don't study, then I must fail. However, as per the truth table, when the antecedent is false, the implication is considered true.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+If X represents 'I go to the gym' and Y represents 'I feel energized', which truth value corresponds to the statement 'If I don't go to the gym, then I won't feel energized'? Use the implication truth table.
+A) 1
+B) 0
+C) T
+D) F
+Correct Answer: C
+
+Solution:
+The given statement can be written as ¬X → ¬Y. Using the implication truth table, we find that when X is T (I go to the gym) and Y is F (I don't feel energized), the truth value of ¬X → ¬Y is T (true). Therefore, the correct answer is C: T.
+
+Explanation:
+The implication is true when either the antecedent is false or both the antecedent and consequent are true. In this case, since I go to the gym (X is T) but don't feel energized (Y is F), the implication is considered true.
+
+Common mistake note:
+A common mistake would be to choose D: F, assuming that if I don't go to the gym, then I must not feel energized. However, as per the truth table, when both the antecedent and consequent are false, the implication is considered true.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Given Z represents 'It's raining' and W represents 'I carry an umbrella', which truth value corresponds to the statement 'If it isn't raining, then I don't carry an umbrella'? Use the implication truth table.
+A) T
+B) F
+C) 1
+D) 0
+Correct Answer: B
+
+Solution:
+The given statement can be written as ¬Z → ¬W. Using the implication truth table, we find that when Z is F (it's not raining) and W is T (I carry an umbrella), the truth value of ¬Z → ¬W is F (false). Therefore, the correct answer is B: F.
+
+Explanation:
+The implication is false only when the antecedent is true and the consequent is false. In this case, since it's not raining (Z is F) but I carry an umbrella (W is T), the implication is false.
+
+Common mistake note:
+A common mistake would be to choose A: T, assuming that if it's not raining, then I must not carry an umbrella. However, as per the truth table, when the antecedent is false and the consequent is true, the implication is considered false.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+If V represents 'I finish my homework' and U represents 'I can watch TV', which truth value corresponds to the statement 'If I don't finish my homework, then I can't watch TV'? Use the implication truth table.
+A) 1
+B) 0
+C) T
+D) F
+Correct Answer: A
+
+Solution:
+The given statement can be written as ¬V → ¬U. Using the implication truth table, we find that when V is F (I don't finish homework) and U is T (I watch TV), the truth value of ¬V → ¬U is 1 (true). Therefore, the correct answer is A: 1.
+
+Explanation:
+The implication is true when either the antecedent is false or both the antecedent and consequent are true. In this case, since I don't finish my homework (V is F), the statement is considered true regardless of whether I watch TV or not (U).
+
+Common mistake note:
+A common mistake would be to choose D: 0, assuming that if I don't finish my homework, then I must not be able to watch TV. However, as per the truth table, when both the antecedent and consequent are false, the implication is considered true.
+------------------------------------------------------------------------------

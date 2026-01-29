@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.14.4",
+  "objective_text": "Analyze antenna radiation patterns",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "What is the primary factor determining an omnidirectional antenna's radiation pattern?",
+      "choices": {
+        "A": "Frequency",
+        "B": "Polarization",
+        "C": "Antenna gain",
+        "D": "Number of elements"
+      },
+      "correct_choice": "D",
+      "solution": "An omnidirectional antenna has a radiation pattern that is uniform in all directions, typically achieved by using multiple elements arranged in a specific configuration. The number of elements is the primary factor determining its omnidirectional nature.",
+      "explanation": "Frequency affects range, polarization determines field orientation, and antenna gain influences directivity but does not guarantee omnidirectionality.",
+      "common_mistake_notes": "Choosing C (antenna gain) is a common mistake as it can affect directivity but doesn't make an antenna omnidirectional."
+    },
+    {
+      "id": "Xyz456",
+      "stem": "In a dipole antenna, what part of the radiation pattern typically experiences maximum radiation?",
+      "choices": {
+        "A": "Ends",
+        "B": "Center",
+        "C": "Both ends and center",
+        "D": "None of these"
+      },
+      "correct_choice": "A",
+      "solution": "In a dipole antenna, maximum radiation occurs at the ends due to constructive interference of electromagnetic waves. The center experiences minimum radiation.",
+      "explanation": "The radiation pattern of a dipole is characterized by two main lobes along its axis, with maxima at the ends where voltage is highest. This contrasts with a monopole antenna.",
+      "common_mistake_notes": "Choosing B (center) is a common mistake, as it would be correct for a monopole but not a dipole."
+    },
+    {
+      "id": "Qwe789",
+      "stem": "Which type of radiation pattern is typically associated with a Yagi- Uda antenna?",
+      "choices": {
+        "A": "Omnidirectional",
+        "B": "Cardioid",
+        "C": "Figure-8",
+        "D": "Directional"
+      },
+      "correct_choice": "D",
+      "solution": "A Yagi- Uda antenna, also known as a beam antenna, is designed for highly directional radiation, focusing energy in a specific direction.",
+      "explanation": "Yagi- Uda antennas are used for receiving and transmitting signals in a particular direction with reduced interference. Figure-8 (C) may be associated with circular polarization, not Yagi- Uda.",
+      "common_mistake_notes": "Choosing A (omnidirectional) is common as it describes an antenna radiating equally in all directions, not a Yagi- Uda."
+    },
+    {
+      "id": "Rty098",
+      "stem": "What does the null in a radiation pattern of an antenna represent?",
+      "choices": {
+        "A": "Maximum radiation intensity",
+        "B": "No radiation at all",
+        "C": "Minimum radiation intensity",
+        "D": "Random fluctuations"
+      },
+      "correct_choice": "C",
+      "solution": "In an antenna's radiation pattern, a null refers to the direction(s) where radiation intensity is at its minimum or close to zero.",
+      "explanation": "Nils define beamwidth and directivity. They occur due to destructive interference of electromagnetic waves.",
+      "common_mistake_notes": "Choosing A (maximum radiation intensity) is common as it would be a peak, not a null."
+    },
+    {
+      "id": "Ghj567",
+      "stem": "In a horn antenna, how does the size of the aperture affect the radiation pattern?",
+      "choices": {
+        "A": "Larger apertures result in a wider beamwidth",
+        "B": "Larger apertures result in a narrower beamwidth",
+        "C": "No effect on beamwidth",
+        "D": "Depends on frequency"
+      },
+      "correct_choice": "B",
+      "solution": "The size of a horn antenna's aperture influences its radiation pattern; larger apertures typically produce a narrower beamwidth, while smaller ones result in a wider one.",
+      "explanation": "Aperture size and beamwidth are related by diffraction principles. A larger aperture allows for more precise focusing, narrowing the beam.",
+      "common_mistake_notes": "Choosing A (larger apertures result in wider beamwidth) is common, but it's incorrect based on diffraction."
+    },
+    {
+      "id": "Bvn890",
+      "stem": "What type of radiation pattern results when two identical, closely spaced antennas are fed with a 180-degree phase difference?",
+      "choices": {
+        "A": "Omnidirectional",
+        "B": "Cardioid",
+        "C": "Figure-8",
+        "D": "Null in the direction between the antennas"
+      },
+      "correct_choice": "D",
+      "solution": "Two identical, closely spaced antennas with a 180-degree phase difference create a radiation pattern with a null (minimum radiation) in the direction between them due to destructive interference.",
+      "explanation": "This arrangement forms a dipole array that reduces or eliminates interference in specific directions. A figure-8 (C) describes circular polarization, not this antenna configuration.",
+      "common_mistake_notes": "Choosing C (figure-8) is common as it's related to circular polarization, not the pattern from two antennas with 180-degree phase difference."
+    },
+    {
+      "id": "Uij789",
+      "stem": "Which best describes the radiation pattern of a helical antenna?",
+      "choices": {
+        "A": "Omnidirectional",
+        "B": "Circularly polarized",
+        "C": "Sectoral",
+        "D": "Bi-directional"
+      },
+      "correct_choice": "B",
+      "solution": "A helical antenna typically generates a circularly polarized radiation pattern, with polarization direction depending on the helix's handedness.",
+      "explanation": "Helical antennas are known for producing circular polarization, useful in applications like satellite communications that require polarization diversity.",
+      "common_mistake_notes": "Choosing A (omnidirectional) is common as it describes an antenna radiating equally in all directions, not a helical antenna."
+    }
+  ]
+}

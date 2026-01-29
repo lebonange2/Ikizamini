@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.12.9",
+  "objective_text": "Integrate around closed contours",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Evaluate the integral \\\\oint_C (x^2 + y^2) dx + xy dy, where C is the circle of radius 3 centered at the origin, traversed counterclockwise.",
+      "choices": {
+        "A": "9π",
+        "B": "27π",
+        "C": "54π",
+        "D": "81π"
+      },
+      "correct_choice": "B",
+      "solution": "To evaluate this integral using Green's theorem, we convert it to a double integral. The given integral is \\\\oint_C M dx + N dy, where M = x^2 + y^2 and N = xy. According to Green's theorem, this is equivalent to \\\\iint_D (\\frac{∂N}{∂x} - \\frac{∂M}{∂y}) dA, where D is the region enclosed by C.",
+      "explanation": "First, we find the partial derivatives: ∂N/∂x = y and ∂M/∂y = x. Now we compute the double integral: \\\\iint_D (y - x) dA. Since C is a circle of radius 3, the region D is a disk with radius 3. We can use polar coordinates to evaluate this integral: r ranges from 0 to 3 and θ ranges from 0 to 2π.",
+      "common_mistake_notes": "A common mistake is not converting the line integral to a double integral using Green's theorem, which would lead to an incorrect result. Another mistake might be integrating over the wrong region or using the wrong bounds in polar coordinates."
+    },
+    {
+      "id": "2",
+      "stem": "Evaluate \\\\oint_C (y^3 dx + x^3 dy), where C is the ellipse defined by 9x^2 + y^2 = 1, traversed once counterclockwise.",
+      "choices": {
+        "A": "0",
+        "B": "π/4",
+        "C": "π/2",
+        "D": "π"
+      },
+      "correct_choice": "A",
+      "solution": "This integral can be evaluated using the fact that if C is a simple closed curve, and M(x, y) dx + N(x, y) dy is a conservative vector field (i.e., ∂N/∂x = ∂M/∂y), then \\\\oint_C M dx + N dy = 0.",
+      "explanation": "The given integral represents the circulation of the vector field F = <y^3, x^3> around C. To check if F is conservative, we compute the partial derivatives: ∂N/∂x = 3x^2 and ∂M/∂y = 3y^2. Since ∂N/∂x ≠ ∂M/∂y, the vector field is not conservative. However, since C is a simple closed curve (an ellipse), Green's theorem cannot be applied directly.",
+      "common_mistake_notes": "A common mistake would be assuming that the integral is zero because the curve is closed, without considering whether the vector field is conservative or not. Another mistake might be attempting to use Green's theorem despite the vector field not being conservative."
+    },
+    {
+      "id": "3",
+      "stem": "Find \\\\oint_C xy dx + x^2 dy, where C is the boundary of the region bounded by y = x and y = x^2, traversed counterclockwise.",
+      "choices": {
+        "A": "1/6",
+        "B": "1/3",
+        "C": "1/2",
+        "D": "5/6"
+      },
+      "correct_choice": "D",
+      "solution": "We can use Green's theorem to convert the line integral to a double integral. The given integral is \\\\oint_C M dx + N dy, where M = xy and N = x^2. We need to find ∂N/∂x - ∂M/∂y = 2x - y.",
+      "explanation": "The region D enclosed by the curves y = x and y = x^2 is a triangle with vertices at (0, 0), (1, 1), and (0, 1). We can use Green's theorem: \\\\iint_D (2x - y) dA. To evaluate this integral in rectangular coordinates, we integrate over the interval [0, 1] for both x and y.",
+      "common_mistake_notes": "A common mistake would be integrating over the wrong region or using incorrect bounds for the double integral. Another mistake might be forgetting to subtract ∂M/∂y from ∂N/∂x when applying Green's theorem."
+    },
+    {
+      "id": "4",
+      "stem": "Evaluate \\\\oint_C (e^x dx + e^y dy), where C is the boundary of the unit square [0, 1] x [0, 1], traversed counterclockwise.",
+      "choices": {
+        "A": "2(e - 1)",
+        "B": "e^2 - 1",
+        "C": "e - e^{-1}",
+        "D": "e + e^{-1}"
+      },
+      "correct_choice": "A",
+      "solution": "Since the vector field F = <e^x, e^y> is not conservative, we can't use Green's theorem directly. Instead, we'll parameterize C and evaluate the line integral directly.",
+      "explanation": "C consists of four segments: x = 0, y = 0, x = 1, and y = 1. Parameterizing these segments gives us the following integrals: ∫_0^1 e^x dx + ∫_0^1 e^y dy + ∫_1^0 e^x dx + ∫_1^0 e^y dy.",
+      "common_mistake_notes": "A common mistake would be attempting to use Green's theorem, which is not applicable because the vector field is not conservative. Another mistake might be integrating over the wrong intervals for each segment of C."
+    },
+    {
+      "id": "5",
+      "stem": "Calculate \\\\oint_C (x dy - y dx), where C is the circle x^2 + y^2 = 1, traversed twice counterclockwise.",
+      "choices": {
+        "A": "0",
+        "B": "π",
+        "C": "2π",
+        "D": "4π"
+      },
+      "correct_choice": "D",
+      "solution": "The given integral represents the circulation of the vector field F = <y, -x> around C. Since this is a conservative vector field (as ∂N/∂x = ∂M/∂y), we can use Green's theorem to convert it to a double integral.",
+      "explanation": "However, since C is traversed twice counterclockwise, the total circulation will be twice that of a single traversal. The double integral using Green's theorem would be \\\\iint_D (0) dA = 0, but we must multiply this by 2 to account for the two traversals.",
+      "common_mistake_notes": "A common mistake would be assuming that the circulation is zero because the vector field is conservative, without considering the number of times C is traversed. Another mistake might be forgetting to multiply the result by 2."
+    },
+    {
+      "id": "6",
+      "stem": "Evaluate \\\\oint_C (x^3 dx + y^3 dy), where C is the boundary of the region enclosed by the cardioid r = 1 + cos(θ), traversed counterclockwise.",
+      "choices": {
+        "A": "π/2",
+        "B": "π",
+        "C": "3π/2",
+        "D": "2π"
+      },
+      "correct_choice": "B",
+      "solution": "We can use Green's theorem to convert the line integral to a double integral. The given integral is \\\\oint_C M dx + N dy, where M = x^3 and N = y^3. We need to find ∂N/∂x - ∂M/∂y = 3y^2 - 3x^2.",
+      "explanation": "The region D enclosed by the cardioid r = 1 + cos(θ) is a heart-shaped region. To evaluate the double integral in polar coordinates, we integrate over θ from 0 to 2π and r from 0 to 1 + cos(θ).",
+      "common_mistake_notes": "A common mistake would be integrating over the wrong region or using incorrect bounds for the double integral. Another mistake might be forgetting to subtract ∂M/∂y from ∂N/∂x when applying Green's theorem."
+    },
+    {
+      "id": "7",
+      "stem": "Calculate \\\\oint_C (cos(x) dx + sin(y) dy), where C is the boundary of the region between the curves y = x and y = x^2, traversed counterclockwise.",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "3/2"
+      },
+      "correct_choice": "A",
+      "solution": "The given integral represents the circulation of the vector field F = <cos(x), sin(y)> around C. Since this is not a conservative vector field, we can't use Green's theorem directly. Instead, we'll parameterize C and evaluate the line integral directly.",
+      "explanation": "C consists of four segments: x = 0, y = 0, x = 1, and y = 1. Parameterizing these segments gives us the following integrals: ∫_0^1 cos(x) dx + ∫_0^1 sin(y) dy + ∫_1^0 cos(x) dx + ∫_1^0 sin(y) dy.",
+      "common_mistake_notes": "A common mistake would be attempting to use Green's theorem, which is not applicable because the vector field is not conservative. Another mistake might be integrating over the wrong intervals for each segment of C."
+    }
+  ]
+}

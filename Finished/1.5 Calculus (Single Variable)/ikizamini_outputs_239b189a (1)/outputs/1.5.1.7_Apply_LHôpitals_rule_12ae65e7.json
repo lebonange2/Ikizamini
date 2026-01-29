@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.1.7",
+  "objective_text": "Apply L'Hôpital's rule",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Evaluate the limit as x approaches 0 for the function: (x^2 - 4)/(x - 2)",
+      "choices": {
+        "A": "(0)^2 - 4 = -4",
+        "B": "(0) - 2 = -2",
+        "C": "lim(x->0)[(2x)/(1)] = 0",
+        "D": "lim(x->0)[(2x)/(1)] = 0"
+      },
+      "correct_choice": "D",
+      "solution": "L'Hôpital's rule is applicable because the limit results in the indeterminate form 0/0. Differentiating both the numerator and denominator, we get (2x)/(1). Evaluating this at x=0 gives us 0.",
+      "explanation": "Choice A is incorrect because it evaluates the function at x=0 without applying L'Hôpital's rule. Choice B incorrectly applies the limit to the original function instead of differentiating.",
+      "common_mistake_notes": "A common mistake is to apply the limit directly to the original function without recognizing that L'Hôpital's rule is needed."
+    },
+    {
+      "id": ":2",
+      "stem": "Evaluate the limit as x approaches infinity for the function: (3x^2 + 5)/(7x^2 - 4)",
+      "choices": {
+        "A": "(3∞^2 + 5)/(7∞^2 - 4) = ∞/∞",
+        "B": "lim(x->∞)[(3/(7))] = 3/7",
+        "C": "lim(x->∞)[(6x)/(14x)] = 6/14",
+        "D": "lim(x->∞)[(3/(7))] = 0"
+      },
+      "correct_choice": "B",
+      "solution": "The limit results in the indeterminate form ∞/∞, so L'Hôpital's rule applies. Differentiating both numerator and denominator, we get (6x)/(14x), which simplifies to 3/7 as x approaches infinity.",
+      "explanation": "Choice A correctly identifies the indeterminate form but does not apply L'Hôpital's rule. Choice C incorrectly simplifies the fraction before applying L'Hôpital's rule, while choice D incorrectly sets the limit to zero without considering the correct application of L'Hôpital's rule.",
+      "common_mistake_notes": "A common mistake is to simplify the function before applying L'Hôpital's rule or not recognizing that ∞/∞ is an indeterminate form."
+    },
+    {
+      "id": ":3",
+      "stem": "Evaluate the limit as x approaches 2 for the function: (x^3 - 8)/(x - 2)",
+      "choices": {
+        "A": "(2)^3 - 8 = 0",
+        "B": "(2) - 2 = 0",
+        "C": "lim(x->2)[(3x^2)/(1)] = 12",
+        "D": "lim(x->2)[(3x^2)/(1)] = 6"
+      },
+      "correct_choice": "C",
+      "solution": "The limit results in the indeterminate form 0/0, so L'Hôpital's rule applies. Differentiating both numerator and denominator, we get (3x^2)/(1). Evaluating this at x=2 gives us 12.",
+      "explanation": "Choice A evaluates the function at x=2 without applying L'Hôpital's rule. Choice B incorrectly applies the limit to the original function instead of differentiating. Choice D has a calculation error, as it should be 3x^2, not 6x^2.",
+      "common_mistake_notes": "A common mistake is to apply the limit directly to the original function or incorrect differentiation."
+    },
+    {
+      "id": ":4",
+      "stem": "Evaluate the limit as x approaches infinity for the function: (e^x - 1)/(x)",
+      "choices": {
+        "A": "(e^∞ - 1)/∞ = ∞/∞",
+        "B": "lim(x->∞)[(e^x)/(x)] = 0",
+        "C": "lim(x->∞)[(e^(x-1))/1] = ∞",
+        "D": "lim(x->∞)[(e^x)/(x)] = ∞"
+      },
+      "correct_choice": "D",
+      "solution": "The limit results in the indeterminate form ∞/∞, so L'Hôpital's rule applies. Differentiating both numerator and denominator, we get (e^x)/(1), which approaches infinity as x approaches infinity.",
+      "explanation": "Choice A correctly identifies the indeterminate form but does not apply L'Hôpital's rule. Choice B incorrectly sets the limit to zero without considering the correct application of L'Hôpital's rule. Choice C simplifies the fraction before applying L'Hôpital's rule, which is incorrect.",
+      "common_mistake_notes": "A common mistake is to simplify the function or set the limit to an incorrect value without recognizing that ∞/∞ is an indeterminate form."
+    },
+    {
+      "id": ":5",
+      "stem": "Evaluate the limit as x approaches 0 for the function: (sin(x))/x",
+      "choices": {
+        "A": "(sin(0))/0 = 0/0",
+        "B": "lim(x->0)[(cos(x))/(1)] = 1",
+        "C": "lim(x->0)[(1/cos(x))]",
+        "D": "lim(x->0)[(cos(x))/(1)] = 0"
+      },
+      "correct_choice": "B",
+      "solution": "The limit results in the indeterminate form 0/0, so L'Hôpital's rule applies. Differentiating both numerator and denominator, we get (cos(x))/(1). Evaluating this at x=0 gives us 1.",
+      "explanation": "Choice A correctly identifies the indeterminate form but does not apply L'Hôpital's rule. Choice C incorrectly simplifies the fraction before applying L'Hôpital's rule. Choice D has a calculation error, as it should be cos(x), not sin(x).",
+      "common_mistake_notes": "A common mistake is to apply the limit directly to the original function or incorrect differentiation."
+    },
+    {
+      "id": ":6",
+      "stem": "Evaluate the limit as x approaches 1 for the function: (x^3 - 1)/(x - 1)",
+      "choices": {
+        "A": "(1)^3 - 1 = 0",
+        "B": "(1) - 1 = 0",
+        "C": "lim(x->1)[(3x^2)/(1)] = 3",
+        "D": "lim(x->1)[(3x^2)/(1)] = 0"
+      },
+      "correct_choice": "C",
+      "solution": "The limit results in the indeterminate form 0/0, so L'Hôpital's rule applies. Differentiating both numerator and denominator, we get (3x^2)/(1). Evaluating this at x=1 gives us 3.",
+      "explanation": "Choice A evaluates the function at x=1 without applying L'Hôpital's rule. Choice B incorrectly applies the limit to the original function instead of differentiating. Choice D has a calculation error, as it should be 3x^2, not 0.",
+      "common_mistake_notes": "A common mistake is to apply the limit directly to the original function or incorrect differentiation."
+    },
+    {
+      "id": ":7",
+      "stem": "Evaluate the limit as x approaches infinity for the function: (ln(x))/x",
+      "choices": {
+        "A": "(ln(∞))/∞ = ∞/∞",
+        "B": "lim(x->∞)[(1/x)] = 0",
+        "C": "lim(x->∞)[(1/(e^x))] = 0",
+        "D": "lim(x->∞)[(1/x)] = ∞"
+      },
+      "correct_choice": "B",
+      "solution": "The limit results in the indeterminate form ∞/∞, so L'Hôpital's rule applies. Differentiating both numerator and denominator, we get (1)/(x), which approaches 0 as x approaches infinity.",
+      "explanation": "Choice A correctly identifies the indeterminate form but does not apply L'Hôpital's rule. Choice C incorrectly simplifies the fraction before applying L'Hôpital's rule. Choice D sets the limit to an incorrect value without considering the correct application of L'Hôpital's rule.",
+      "common_mistake_notes": "A common mistake is to simplify the function or set the limit to an incorrect value without recognizing that ∞/∞ is an indeterminate form."
+    }
+  ]
+}

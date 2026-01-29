@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.12.11 Apply matrix representation
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.12 Transformations in the Plane
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Given the matrix A = [1, 2; 3, 4], what is the result of multiplying it by the scalar 5?
+A) [5, 10; 15, 20]
+B) [5, 10; 5, 10]
+C) [15, 20; 3, 4]
+D) [5, 2; 15, 8]
+Correct Answer: A
+
+Solution:
+To multiply a matrix by a scalar, you simply multiply each element of the matrix by that scalar. So for A * 5: [1*5, 2*5; 3*5, 4*5] = [5, 10; 15, 20].
+
+Explanation:
+Multiplying a matrix by a scalar is a basic operation in linear algebra and involves multiplying each element of the matrix by the given scalar.
+
+Common mistake note:
+A common mistake would be to multiply only one row or column of the matrix by the scalar. This is incorrect; every element must be multiplied.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is the result of multiplying matrices A = [1, 2; 3, 4] and B = [5, 6; 7, 8]?
+A) [19, 22; 43, 50]
+B) [15, 24; 21, 32]
+C) [5, 6; 7, 8]
+D) [1, 2; 3, 4]
+Correct Answer: A
+
+Solution:
+To multiply two matrices, the number of columns in the first matrix must be equal to the number of rows in the second matrix. The result is a new matrix where each element is computed as the dot product of a row from the first matrix and a column from the second matrix. For AB: [1*5 + 2*7, 1*6 + 2*8; 3*5 + 4*7, 3*6 + 4*8] = [19, 22; 43, 50].
+
+Explanation:
+Matrix multiplication is a fundamental operation in linear algebra and follows specific rules involving dot products. It's not the same as multiplying each element of one matrix by another.
+
+Common mistake note:
+A common mistake would be to multiply elements directly without following the row-column rule for matrix multiplication, resulting in an incorrect product.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Given the identity matrix I = [1, 0; 0, 1], what is the result of multiplying it by any matrix X?
+A) X
+B) I * X
+C) X * I
+D) 2X
+Correct Answer: A
+
+Solution:
+The identity matrix has the property that when multiplied with any other matrix, it returns the original matrix. So for IX or XI: X.
+
+Explanation:
+The identity matrix is a special matrix that acts as the multiplicative identity in matrix algebra. It preserves the structure of any matrix it multiplies.
+
+Common mistake note:
+A common mistake would be to think that multiplying by the identity matrix changes the original matrix, but it doesn't; it simply keeps the original unchanged.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the result of multiplying matrices A = [1, 2; 3, 4] and B = [5, 6; 7, 8], where B is transposed (B')?
+A) [19, 22; 43, 50]
+B) [15, 24; 21, 32]
+C) [10, 16; 21, 28]
+D) [5, 7; 6, 8]
+Correct Answer: C
+
+Solution:
+When multiplying AB', the number of columns in A must be equal to the number of rows in B'. The result is a new matrix where each element is computed as the dot product of a row from A and a column from B'. For AB': [1*5 + 3*7, 2*5 + 4*7; 1*6 + 3*8, 2*6 + 4*8] = [10, 16; 21, 28].
+
+Explanation:
+Matrix multiplication with a transposed matrix follows the same rules as regular matrix multiplication but with the order of matrices changed. It's important to remember that when multiplying AB', B must be transposed.
+
+Common mistake note:
+A common mistake would be to forget to transpose B or to multiply without considering the change in order, leading to an incorrect product.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Given the matrix A = [1, 2; 3, 4], what is the result of finding its transpose (A')?
+A) [1, 3; 2, 4]
+B) [1, 2; 3, 4]
+C) [5, 6; 7, 8]
+D) [1, 2]
+Correct Answer: A
+
+Solution:
+The transpose of a matrix is obtained by swapping the rows with columns. For A': [1, 3; 2, 4].
+
+Explanation:
+Matrix transposition is a simple operation that involves flipping a matrix over its diagonal, switching the row and column indices of each element.
+
+Common mistake note:
+A common mistake would be to transpose only one row or column, or to mix up elements when swapping rows with columns.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the result of finding the determinant of the matrix A = [1, 2; 3, 4]?
+A) 2
+B) -2
+C) 5
+D) -5
+Correct Answer: B
+
+Solution:
+The determinant of a 2x2 matrix is calculated as (a*d) - (b*c), where a, b, c, and d are the elements in the matrix. For A: det(A) = (1*4) - (2*3) = -2.
+
+Explanation:
+The determinant is a scalar value that can be computed for square matrices. It provides information about the invertibility of the matrix and is used in various linear algebra operations.
+
+Common mistake note:
+A common mistake would be to swap the order of multiplication when calculating the determinant, or to forget to subtract one term from the other.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Given the matrix A = [1, 2; 3, 4], what is the result of finding its inverse (A^(-1))?
+A) [1/6, -1/6; -1/2, 1/2]
+B) [1, 0; 0, 1]
+C) [4, -2; -3, 1]
+D) Does not exist
+Correct Answer: A
+
+Solution:
+The inverse of a matrix is found using the formula A^(-1) = (1/det(A)) * adj(A), where det(A) is the determinant and adj(A) is the adjugate. For A: det(A) = -2, adj(A) = [4, -3; -2, 1], so A^(-1) = (-1/2) * [4, -3; -2, 1] = [1/6, -1/6; -1/2, 1/2].
+
+Explanation:
+The inverse of a matrix is only defined for square matrices with non-zero determinants. It's used to solve systems of linear equations and perform other operations in linear algebra.
+
+Common mistake note:
+A common mistake would be to try to find the inverse of a non-square or singular (zero determinant) matrix, which doesn't have an inverse.
+------------------------------------------------------------------------------

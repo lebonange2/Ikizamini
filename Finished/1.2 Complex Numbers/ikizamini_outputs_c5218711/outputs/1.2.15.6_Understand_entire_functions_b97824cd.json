@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.6",
+  "objective_text": "Understand entire functions",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Which of the following is an example of an entire function?",
+      "choices": {
+        "A": "sin(z)",
+        "B": "e^z",
+        "C": "ln|z|",
+        "D": "z^2 + 3"
+      },
+      "correct_choice": "B",
+      "solution": "An entire function is a complex function that is holomorphic (analytic) on the whole complex plane. Among the choices, only 'e^z' is an entire function because it is analytic everywhere in the complex plane. The other options have some restrictions: sin(z) and ln|z| are not defined at certain points (e.g., ln|z| is undefined for z ≤ 0), and z^2 + 3 is a polynomial, which by definition does not include complex values.",
+      "explanation": "The key to this question is understanding the definition of an entire function and recognizing which functions meet that criteria. The common mistake would be to choose 'z^2 + 3' because it seems simple and continuous in the real domain, but it doesn't extend to the complex plane.",
+      "common_mistake_notes": "Common mistake: Choosing D (z^2 + 3) because it appears to be a continuous function. However, entire functions must also be defined for all complex numbers, which is not the case for polynomials like z^2 + 3."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Which of the following operations on an entire function will result in another entire function?",
+      "choices": {
+        "A": "Differentiation",
+        "B": "Integration",
+        "C": "Multiplication by a constant",
+        "D": "Composition with a non-entire function"
+      },
+      "correct_choice": "A",
+      "solution": "Applying differentiation to an entire function results in another entire function because differentiation preserves the property of being analytic. Integration, multiplication by a constant, and composition with a non-entire function may produce functions that are not entire.",
+      "explanation": "The key here is understanding how operations affect the analytic nature of a function. Common mistakes include thinking that integration or multiplication by a constant would preserve entireness, but these operations can introduce singularities or discontinuities. Composition with a non-entire function will also lead to a non-entire result.",
+      "common_mistake_notes": "Common mistake: Choosing B (Integration) or C (Multiplication by a constant), assuming that these operations do not affect the entireness of a function. However, integration can introduce singularities and multiplication by a constant does not guarantee an entire result if the original function is not entire."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Which of the following functions is NOT an entire function?",
+      "choices": {
+        "A": "cos(z)",
+        "B": "tan(z)",
+        "C": "cosh(z)",
+        "D": "sech(z)"
+      },
+      "correct_choice": "B",
+      "solution": "The tangent function, 'tan(z)', is not an entire function because it has infinite discontinuities at multiples of π/2. The other functions are entire: cos(z), cosh(z), and sech(z) have no such issues.",
+      "explanation": "This question tests the understanding of which trigonometric functions are entire. Common mistakes include selecting 'cos(z)' or 'cosh(z)', but these functions are entire because they are periodic and do not have singularities in the complex plane. The issue with 'sech(z)' is that it's the hyperbolic secant function, which is the reciprocal of cosh(z) and thus inherits its entireness.",
+      "common_mistake_notes": "Common mistake: Choosing A (cos(z)) or C (cosh(z)), assuming they are not entire because of their periodicity. However, periodic functions can still be entire if they do not have singularities in the complex plane."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Which of the following is an example of a non-entire function that can be extended to an entire function by removing a single point?",
+      "choices": {
+        "A": "1/(z^2 + 1)",
+        "B": "ln(z)",
+        "C": "e^(1/z)",
+        "D": "sin(1/z)"
+      },
+      "correct_choice": "B",
+      "solution": "The natural logarithm function, 'ln(z)', is not entire because it is undefined at z = 0. However, if we remove this single point, it can be extended to an entire function by considering the complex logarithm.",
+      "explanation": "This question asks for a function that has a single removable singularity. Common mistakes include selecting 'e^(1/z)' or 'sin(1/z)', which have essential singularities at z = 0 and cannot be made entire by removing a single point. The function '1/(z^2 + 1)' is an entire function as it's the reciprocal of a sum of squares, which never equals zero.",
+      "common_mistake_notes": "Common mistake: Choosing C (e^(1/z)) or D (sin(1/z)), assuming they can be made entire by removing a single point. However, these functions have essential singularities that cannot be removed."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Which of the following is an entire function with a period of 2π?",
+      "choices": {
+        "A": "cos(z)",
+        "B": "sinh(z)",
+        "C": "exp(2iz)",
+        "D": "tan(z)"
+      },
+      "correct_choice": "A",
+      "solution": "The cosine function, 'cos(z)', has a period of 2π and is an entire function because it's the even part of the complex exponential function.",
+      "explanation": "This question tests the understanding of periodic entire functions. Common mistakes include selecting 'sinh(z)' or 'exp(2iz)', which are not periodic with a period of 2π, or 'tan(z)', which is not an entire function due to its infinite discontinuities at multiples of π/2.",
+      "common_mistake_notes": "Common mistake: Choosing B (sinh(z)) or C (exp(2iz)), assuming they have a period of 2π. However, sinh(z) has a period of 2πi and exp(2iz) is not periodic with respect to z but rather with respect to its argument. D (tan(z)) is not entire due to its singularities."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Which of the following functions is an entire function that grows without bound as |z| approaches infinity?",
+      "choices": {
+        "A": "sin(z)",
+        "B": "exp(-z)",
+        "C": "z^2 + 1",
+        "D": "log(|z|)"
+      },
+      "correct_choice": "A",
+      "solution": "The sine function, 'sin(z)', is an entire function that oscillates between -1 and 1 as |z| approaches infinity. The other choices either decay to zero (exp(-z)) or have a bounded behavior (z^2 + 1, log(|z|)).",
+      "explanation": "This question asks for an entire function with unbounded growth at infinity. Common mistakes include selecting 'exp(-z)', which decays exponentially, or 'z^2 + 1' and 'log(|z|)', which are bounded by the square and logarithmic functions respectively.",
+      "common_mistake_notes": "Common mistake: Choosing B (exp(-z)), assuming it grows without bound. However, exp(-z) actually decays to zero as |z| approaches infinity. C (z^2 + 1) and D (log(|z|)) are bounded by the square and logarithmic functions, respectively."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Which of the following is an entire function that has a Taylor series expansion with only odd powers of z?",
+      "choices": {
+        "A": "cos(z)",
+        "B": "sinh(z)",
+        "C": "exp(-z)",
+        "D": "tan(z)"
+      },
+      "correct_choice": "B",
+      "solution": "The hyperbolic sine function, 'sinh(z)', has a Taylor series expansion with only odd powers of z because sinh(z) is an odd function. The other choices have even or mixed powers in their Taylor series.",
+      "explanation": "This question tests the understanding of Taylor series expansions for entire functions. Common mistakes include selecting 'cos(z)' (even powers), 'exp(-z)' (mixed powers), or 'tan(z)' (not an entire function due to its singularities).",
+      "common_mistake_notes": "Common mistake: Choosing A (cos(z)) or C (exp(-z)), assuming they have Taylor series with only odd powers. However, cos(z) has even powers and exp(-z) has mixed powers. D (tan(z)) is not entire due to its singularities."
+    }
+  ]
+}

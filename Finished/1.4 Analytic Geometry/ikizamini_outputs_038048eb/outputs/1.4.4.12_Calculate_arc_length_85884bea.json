@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.4.12",
+  "objective_text": "Calculate arc length",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Q1",
+      "stem": "Find the arc length of a circle with radius 5 units and central angle of 60 degrees.",
+      "choices": {
+        "A": "2.5π units",
+        "B": "π units",
+        "C": "1.5π units",
+        "D": "0.5π units"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for arc length is L = rθ, where L is the arc length, r is the radius of the circle, and θ is the central angle in radians. First, convert the angle from degrees to radians: 60° * (π/180) = π/3 radians. Then plug into the formula: L = 5 * (π/3) = 5π/3 units. Simplify by multiplying by 3/3: L = 1.5π units.",
+      "explanation": "The correct answer is obtained by using the arc length formula and converting the angle to radians.",
+      "common_mistake_notes": "A common mistake is not converting the central angle from degrees to radians before plugging it into the formula."
+    },
+    {
+      "id": "Q2",
+      "stem": "What is the arc length of a sector with radius 7 units and a central angle of 240°?",
+      "choices": {
+        "A": "14π units",
+        "B": "8π units",
+        "C": "16π/3 units",
+        "D": "7π/3 units"
+      },
+      "correct_choice": "C",
+      "solution": "First, convert the angle from degrees to radians: 240° * (π/180) = 4π/3 radians. The formula for arc length is L = rθ. Plugging in the values gives us L = 7 * (4π/3) = 28π/3 units. Simplify by dividing by 3: L = 16π/3 units.",
+      "explanation": "The correct answer uses the arc length formula and converts the angle to radians.",
+      "common_mistake_notes": "A common mistake is forgetting to convert the central angle from degrees to radians."
+    },
+    {
+      "id": "Q3",
+      "stem": "Find the arc length of a sector with radius 9 units subtended by an angle of 120° in a circle.",
+      "choices": {
+        "A": "6π units",
+        "B": "3π units",
+        "C": "18π/5 units",
+        "D": "9π/4 units"
+      },
+      "correct_choice": "A",
+      "solution": "Convert the angle to radians: 120° * (π/180) = 2π/3 radians. The formula for arc length is L = rθ. Plugging in the values gives us L = 9 * (2π/3) = 6π units.",
+      "explanation": "The correct answer uses the arc length formula and converts the angle to radians.",
+      "common_mistake_notes": "A common mistake is not converting the central angle from degrees to radians."
+    },
+    {
+      "id": "Q4",
+      "stem": "Calculate the arc length of a sector with radius 4 units and central angle of 150° in a circle.",
+      "choices": {
+        "A": "2π units",
+        "B": "3π/2 units",
+        "C": "8π/3 units",
+        "D": "5π/3 units"
+      },
+      "correct_choice": "D",
+      "solution": "Convert the angle to radians: 150° * (π/180) = 5π/6 radians. The formula for arc length is L = rθ. Plugging in the values gives us L = 4 * (5π/6) = 10π/3 units. Simplify by dividing by 2: L = 5π/3 units.",
+      "explanation": "The correct answer uses the arc length formula and converts the angle to radians.",
+      "common_mistake_notes": "A common mistake is not converting the central angle from degrees to radians."
+    },
+    {
+      "id": "Q5",
+      "stem": "Find the arc length of a circle with radius 12 units subtended by an angle of π/6 radians.",
+      "choices": {
+        "A": "4π units",
+        "B": "2π units",
+        "C": "6π units",
+        "D": "3π units"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for arc length is L = rθ. Plugging in the values gives us L = 12 * (π/6) = 2π units.",
+      "explanation": "The correct answer uses the arc length formula without needing to convert the angle, as it's already in radians.",
+      "common_mistake_notes": "A common mistake is converting the angle to degrees even though it's already given in radians."
+    },
+    {
+      "id": "Q6",
+      "stem": "Calculate the arc length of a sector with radius 6 units and central angle of π/3 radians.",
+      "choices": {
+        "A": "4π units",
+        "B": "2π units",
+        "C": "3π units",
+        "D": "6π units"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for arc length is L = rθ. Plugging in the values gives us L = 6 * (π/3) = 2π units.",
+      "explanation": "The correct answer uses the arc length formula without needing to convert the angle, as it's already in radians.",
+      "common_mistake_notes": "A common mistake is converting the angle to degrees even though it's already given in radians."
+    },
+    {
+      "id": "Q7",
+      "stem": "Find the arc length of a circle with radius 8 units subtended by an angle of 3π/4 radians.",
+      "choices": {
+        "A": "6π units",
+        "B": "12π units",
+        "C": "16π units",
+        "D": "8π units"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for arc length is L = rθ. Plugging in the values gives us L = 8 * (3π/4) = 6π units.",
+      "explanation": "The correct answer uses the arc length formula without needing to convert the angle, as it's already in radians.",
+      "common_mistake_notes": "A common mistake is converting the angle to degrees even though it's already given in radians."
+    }
+  ]
+}

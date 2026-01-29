@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.9.12",
+  "objective_text": "Find slope of polar curve",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Given the polar equation r = 2θ, find the slope of the tangent line at θ = π/4. Round to two decimal places.",
+      "choices": {
+        "A": "0.50",
+        "B": "0.71",
+        "C": "1.00",
+        "D": "1.41"
+      },
+      "correct_choice": "B",
+      "solution": "The slope of the tangent line at a point on a polar curve is given by the derivative of r with respect to θ, multiplied by r. For the equation r = 2θ, we first find dr/dθ: dr/dθ = 2. Then multiply this by r: (dr/dθ) * r = 2 * 2θ = 4θ. At θ = π/4, the slope is 4(π/4) = π. Since we need to round to two decimal places, the answer is approximately 0.71.",
+      "explanation": "The derivative of r with respect to θ gives the rate of change of the radius with respect to the angle. Multiplying this by r gives the slope of the tangent line.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply the derivative of r by r, which results in an incorrect slope."
+    },
+    {
+      "id": "2",
+      "stem": "Find the slope of the polar curve r = 3sin(2θ) at θ = π/6. Round your answer to two decimal places.",
+      "choices": {
+        "A": "0.50",
+        "B": "1.00",
+        "C": "1.73",
+        "D": "2.00"
+      },
+      "correct_choice": "C",
+      "solution": "The slope of the tangent line is given by (dr/dθ) * r. For r = 3sin(2θ), we find dr/dθ: dr/dθ = 6cos(2θ). At θ = π/6, this becomes 6cos(π/3) = 6 * 0.5 = 3. Now multiply by r: (dr/dθ) * r = 3 * 3sin(π/3) = 3 * 3 * 0.5 = 4.5. Rounding to two decimal places, the slope is approximately 1.73.",
+      "explanation": "We use the same formula as before: (dr/dθ) * r, where dr/dθ is found by differentiating r with respect to θ.",
+      "common_mistake_notes": "A common mistake would be to mix up the values of sin(π/6) and cos(π/3), leading to an incorrect slope."
+    },
+    {
+      "id": "3",
+      "stem": "Find the slope of the polar curve r = 4e^(θ) at θ = ln(2). Round your answer to two decimal places.",
+      "choices": {
+        "A": "1.00",
+        "B": "2.00",
+        "C": "3.00",
+        "D": "4.00"
+      },
+      "correct_choice": "B",
+      "solution": "The slope is given by (dr/dθ) * r, where dr/dθ = e^θ. At θ = ln(2), this becomes e^(ln(2)) = 2. Now multiply by r: (dr/dθ) * r = 2 * 4e^(ln(2)) = 8. Rounding to two decimal places, the slope is approximately 2.00.",
+      "explanation": "We differentiate r with respect to θ and evaluate at the given angle, then multiply by r.",
+      "common_mistake_notes": "A common mistake would be to forget to use the chain rule when differentiating e^(θ), which would result in an incorrect derivative."
+    },
+    {
+      "id": "4",
+      "stem": "Given the polar equation r = 5θ^2, find the slope of the tangent line at θ = π/3. Round your answer to two decimal places.",
+      "choices": {
+        "A": "1.00",
+        "B": "1.73",
+        "C": "2.62",
+        "D": "3.46"
+      },
+      "correct_choice": "C",
+      "solution": "The slope is (dr/dθ) * r, where dr/dθ = 10θ. At θ = π/3, this becomes 10(π/3). Now multiply by r: (dr/dθ) * r = 10(π/3) * 5(π/3)^2 ≈ 26.18. Rounding to two decimal places, the slope is approximately 2.62.",
+      "explanation": "We differentiate r with respect to θ and evaluate at the given angle, then multiply by r.",
+      "common_mistake_notes": "A common mistake would be to forget to square the value of θ when calculating r, which would lead to an incorrect slope."
+    },
+    {
+      "id": "5",
+      "stem": "Find the slope of the polar curve r = 2cos(3θ) at θ = π/9. Round your answer to two decimal places.",
+      "choices": {
+        "A": "-1.00",
+        "B": "0.00",
+        "C": "1.00",
+        "D": "2.00"
+      },
+      "correct_choice": "B",
+      "solution": "The slope is (dr/dθ) * r, where dr/dθ = -6sin(3θ). At θ = π/9, this becomes -6sin(π/3) = -6 * 0.5 = -3. Now multiply by r: (dr/dθ) * r = -3 * 2cos(π/3) = -3 * 2 * 0.5 = -3. Since the product is zero, the slope is 0.",
+      "explanation": "We differentiate r with respect to θ and evaluate at the given angle, then multiply by r. The slope is zero when the product of these values is zero.",
+      "common_mistake_notes": "A common mistake would be to forget that sin(π/3) = 0.5, which could lead to an incorrect derivative."
+    },
+    {
+      "id": "6",
+      "stem": "Given the polar equation r = 7sin(θ)cos(θ), find the slope of the tangent line at θ = π/4. Round your answer to two decimal places.",
+      "choices": {
+        "A": "-1.00",
+        "B": "0.00",
+        "C": "1.00",
+        "D": "2.00"
+      },
+      "correct_choice": "C",
+      "solution": "The slope is (dr/dθ) * r, where dr/dθ = 7cos^2(θ) - 7sin^2(θ). At θ = π/4, this becomes 7(1/2)^2 - 7(1/2)^2 = 0. Now multiply by r: (dr/dθ) * r = 0 * 7sin(π/4)cos(π/4) = 0. Since the product is zero, the slope is 0.",
+      "explanation": "We differentiate r with respect to θ and evaluate at the given angle, then multiply by r. The slope is zero when the product of these values is zero.",
+      "common_mistake_notes": "A common mistake would be to forget that sin(π/4) = cos(π/4) = 1/√2, which could lead to an incorrect derivative."
+    },
+    {
+      "id": "7",
+      "stem": "Find the slope of the polar curve r = 9e^(-θ) at θ = ln(3). Round your answer to two decimal places.",
+      "choices": {
+        "A": "-1.00",
+        "B": "0.00",
+        "C": "1.00",
+        "D": "2.00"
+      },
+      "correct_choice": "A",
+      "solution": "The slope is (dr/dθ) * r, where dr/dθ = -9e^(-θ). At θ = ln(3), this becomes -9e^(-ln(3)) = -9 * 1/3 = -3. Now multiply by r: (dr/dθ) * r = -3 * 9e^(-ln(3)) = -27. Rounding to two decimal places, the slope is approximately -1.00.",
+      "explanation": "We differentiate r with respect to θ and evaluate at the given angle, then multiply by r.",
+      "common_mistake_notes": "A common mistake would be to forget to use the chain rule when differentiating e^(-θ), which would result in an incorrect derivative."
+    }
+  ]
+}

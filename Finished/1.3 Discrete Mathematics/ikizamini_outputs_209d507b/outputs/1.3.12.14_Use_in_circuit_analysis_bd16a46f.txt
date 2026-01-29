@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.12.14 Use in circuit analysis
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.12 Graph Theory Basics
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Assemble a voltage divider circuit with two resistors and a battery, calculate the output voltage given the input voltage and resistor values.):
+A voltage divider circuit consists of two resistors, R1 = 1 kΩ and R2 = 2 kΩ, connected in series to a 9 V battery. What is the voltage drop across R2?
+A) 3 V
+B) 4.5 V
+C) 6 V
+D) 9 V
+Correct Answer: B
+
+Solution:
+The voltage divider formula states that the output voltage (Vout) is equal to the input voltage (Vin) times the ratio of the lower resistor (R2) to the total resistance (R1 + R2). In this case, Vin = 9 V, R1 = 1 kΩ, and R2 = 2 kΩ. So, Vout = 9 V * (2 kΩ / (1 kΩ + 2 kΩ)) = 4.5 V.
+
+Explanation:
+Ohm's Law is not directly applicable here since we are dealing with a voltage divider circuit, which involves dividing the input voltage based on the ratio of resistors.
+
+Common mistake note:
+A common mistake would be to apply Ohm's Law (V = IR) directly, assuming that the current through both resistors is the same. However, in a voltage divider, current divides between the two resistors, and Ohm's Law alone does not give the correct output voltage.
+------------------------------------------------------------------------------
+
+Problem 2 (Calculate the current flowing through a resistor using Ohm's Law given voltage and resistance.):
+A 5 V battery is connected to a resistor with a resistance of 10 Ω. What is the current (I) flowing through the resistor?
+A) 0.2 A
+B) 0.5 A
+C) 1 A
+D) 5 A
+Correct Answer: A
+
+Solution:
+Ohm's Law states that I = V / R, where I is current, V is voltage, and R is resistance. Given a voltage of 5 V and a resistance of 10 Ω, the current can be calculated as I = 5 V / 10 Ω = 0.5 A.
+
+Explanation:
+Ohm's Law directly relates voltage, current, and resistance in a simple circuit.
+
+Common mistake note:
+A common mistake might be to reverse the formula, thinking that voltage is equal to current times resistance (V = IR), which would lead to an incorrect answer of 5 A.
+------------------------------------------------------------------------------
+
+Problem 3 (Determine the equivalent resistance of two resistors connected in parallel.):
+Two resistors, R1 = 3 Ω and R2 = 6 Ω, are connected in parallel. What is their equivalent resistance?
+A) 1 Ω
+B) 2 Ω
+C) 4 Ω
+D) 9 Ω
+Correct Answer: B
+
+Solution:
+The equivalent resistance (Req) of two resistors in parallel can be calculated using the formula 1/Req = 1/R1 + 1/R2. For R1 = 3 Ω and R2 = 6 Ω, we get 1/Req = 1/3 + 1/6 = 0.5, so Req = 2 Ω.
+
+Explanation:
+The question is about parallel resistors, not Ohm's Law.
+
+Common mistake note:
+A common mistake would be to try using Ohm's Law to find the equivalent resistance, which is incorrect since it only applies to a single resistor in a simple circuit.
+------------------------------------------------------------------------------
+
+Problem 4 (Find the voltage drop across a resistor in a parallel circuit given total voltage and current.):
+In a parallel circuit with a 12 V battery, two resistors (R1 = 4 Ω and R2 = 6 Ω), and a total current of 3 A, what is the voltage drop across R1?
+A) 3 V
+B) 4 V
+C) 6 V
+D) 12 V
+Correct Answer: B
+
+Solution:
+The voltage drop (V) across a resistor can be calculated using Ohm's Law: V = I * R. Given a current of 3 A and a resistance of 4 Ω for R1, the voltage drop is V = 3 A * 4 Ω = 12 V / 2 = 6 V.
+
+Explanation:
+Ohm's Law can be used to find the voltage drop across a single resistor in a parallel circuit, even though the total current and battery voltage are given for the entire circuit.
+
+Common mistake note:
+A common mistake would be to assume that the voltage drop across each resistor is equal to the total voltage (12 V), which is not true in a parallel circuit.
+------------------------------------------------------------------------------
+
+Problem 5 (Calculate the power dissipated by a resistor using Ohm's Law given current and resistance.):
+In a simple circuit with a 6 V battery and a resistor of 5 Ω, what is the power (P) dissipated by the resistor?
+A) 1 W
+B) 2 W
+C) 3 W
+D) 6 W
+Correct Answer: B
+
+Solution:
+The power dissipated by a resistor can be calculated using Ohm's Law: P = I^2 * R, where I is current and R is resistance. Given a voltage of 6 V and a resistance of 5 Ω, the current is I = V / R = 6 V / 5 Ω = 1.2 A. The power dissipated is P = (1.2 A)^2 * 5 Ω = 1.44 W.
+
+Explanation:
+Ohm's Law can be used to find the power dissipated by a resistor in a simple circuit.
+
+Common mistake note:
+A common mistake would be to use the formula P = V^2 / R, which is for voltage divider circuits and not applicable here.
+------------------------------------------------------------------------------
+
+Problem 6 (Determine the resistance needed to limit current through a circuit element to a specific value given voltage.):
+To limit the current through an LED to 10 mA when connected to a 5 V power supply, what should the series resistor value be?
+A) 470 Ω
+B) 560 Ω
+C) 680 Ω
+D) 1 kΩ
+Correct Answer: B
+
+Solution:
+Ohm's Law states that I = V / R, where I is current, V is voltage, and R is resistance. Given a desired current of 10 mA (0.01 A) and a power supply voltage of 5 V, the required resistance is R = V / I = 5 V / 0.01 A = 500 Ω. The closest option is 560 Ω.
+
+Explanation:
+Ohm's Law can be used to find the necessary resistor value for current limiting in a simple circuit.
+
+Common mistake note:
+A common mistake would be to assume that the LED resistance itself limits the current, but in this case, we are looking for an external series resistor.
+------------------------------------------------------------------------------
+
+Problem 7 (Calculate the total resistance of multiple resistors connected in series and parallel.):
+In a circuit with two 10 Ω resistors connected in series and another pair of 5 Ω resistors connected in parallel, what is the total resistance?
+A) 20 Ω
+B) 25 Ω
+C) 30 Ω
+D) 40 Ω
+Correct Answer: B
+
+Solution:
+The total resistance of two resistors connected in series (Rtotal_series) is R1 + R2 = 10 Ω + 10 Ω = 20 Ω. The equivalent resistance of two parallel resistors (Req_parallel) is 1/(1/5 Ω + 1/5 Ω) = 1/((1/5 Ω) + (1/5 Ω)) = 2.5 Ω. The total resistance in the circuit is then Rtotal_total = Rtotal_series + Req_parallel = 20 Ω + 2.5 Ω = 22.5 Ω, which rounds to 25 Ω.
+
+Explanation:
+Ohm's Law does not directly apply here since we are dealing with both series and parallel connections of resistors.
+
+Common mistake note:
+A common mistake would be to try using Ohm's Law to find the total resistance, which is incorrect since it only applies to a single resistor in a simple circuit.
+------------------------------------------------------------------------------

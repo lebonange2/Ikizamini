@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.11.10 Evaluate even/odd function integrals
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.11 Definite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 ([1-7]):
+Evaluate the integral of an odd function f(x) from -a to a: ∫(-a)^a f(x) dx
+A) -2∫(0)^a f(x) dx
+B) 0
+C) 2∫(0)^a f(x) dx
+D) 4∫(0)^a f(x) dx
+Correct Answer: B
+
+Solution:
+The integral of an odd function from -a to a is zero because the function values above and below the x-axis cancel each other out. Thus, ∫(-a)^a f(x) dx = 0.
+
+Explanation:
+Odd functions have the property that f(-x) = -f(x). When integrated over a symmetric interval around zero, their areas above and below the x-axis cancel out.
+
+Common mistake note:
+A common mistake is to think that since the function is odd, its integral must be zero. While this is true for the entire interval, we are asked to evaluate the integral of f(x), not just its value at a specific point.
+------------------------------------------------------------------------------
+
+Problem 2 ([1-7]):
+Evaluate the integral of an even function g(x) from -a to a: ∫(-a)^a g(x) dx
+A) 2∫(0)^a g(x) dx
+B) 4∫(0)^a g(x) dx
+C) 0
+D) ∫(-a)^a g(x) dx
+Correct Answer: A
+
+Solution:
+The integral of an even function from -a to a is twice the integral from 0 to a, because the function values above and below the x-axis are identical. Thus, ∫(-a)^a g(x) dx = 2∫(0)^a g(x) dx.
+
+Explanation:
+Even functions have the property that f(-x) = f(x). When integrated over a symmetric interval around zero, their areas above and below the x-axis are identical, so we can double the integral from 0 to a.
+
+Common mistake note:
+A common mistake is to think that since the function is even, its integral must be zero. This is not true; an even function integrated over a symmetric interval will have a non-zero value.
+------------------------------------------------------------------------------
+
+Problem 3 ([1-7]):
+Evaluate the integral of f(x) = x^3 from -2 to 2, where f(x) is an odd function.
+A) -8
+B) 0
+C) 16
+D) 32
+Correct Answer: B
+
+Solution:
+Since f(x) = x^3 is an odd function, its integral from -2 to 2 will be zero. ∫(-2)^2 x^3 dx = 0.
+
+Explanation:
+The integral of an odd function over a symmetric interval around zero is zero because the areas above and below the x-axis cancel each other out.
+
+Common mistake note:
+A common mistake is to evaluate the integral without considering that f(x) is odd. If students forget that x^3 is an odd function, they may calculate 16 (the result of integrating x^3 from -2 to 2 without considering symmetry).
+------------------------------------------------------------------------------
+
+Problem 4 ([1-7]):
+Evaluate the integral of g(x) = x^4 from -2 to 2, where g(x) is an even function.
+A) -32
+B) 0
+C) 64
+D) 128
+Correct Answer: C
+
+Solution:
+Since g(x) = x^4 is an even function, its integral from -2 to 2 is twice the integral from 0 to 2. ∫(-2)^2 x^4 dx = 2∫(0)^2 x^4 dx = 64.
+
+Explanation:
+The integral of an even function over a symmetric interval around zero is twice the integral from 0 to the midpoint. In this case, we double the integral from 0 to 2 because x^4 is an even function.
+
+Common mistake note:
+A common mistake is to forget to multiply the integral from 0 to 2 by 2 when considering that g(x) is an even function. Students might calculate 32 (the result of integrating x^4 from 0 to 2), forgetting to account for symmetry.
+------------------------------------------------------------------------------
+
+Problem 5 ([1-7]):
+Evaluate the integral of h(x) = sin(x) from -π to π, where sin(x) is an odd function.
+A) 0
+B) π
+C) -2π
+D) 2π
+Correct Answer: A
+
+Solution:
+The integral of an odd function like sin(x) over a symmetric interval around zero is zero. ∫(-π)^π sin(x) dx = 0.
+
+Explanation:
+Sin(x) is an odd function, so its integral from -π to π will be zero due to symmetry.
+
+Common mistake note:
+A common mistake is to integrate sin(x) without considering that it's an odd function. If students forget the property of odd functions, they may calculate 0 (the result of integrating sin(x) over a full period), which would be correct for any interval but not specifically for this symmetric case.
+------------------------------------------------------------------------------
+
+Problem 6 ([1-7]):
+Evaluate the integral of j(x) = cos(x) from -π to π, where cos(x) is an even function.
+A) 0
+B) π
+C) -2π
+D) 2π
+Correct Answer: D
+
+Solution:
+The integral of an even function like cos(x) over a symmetric interval around zero is twice the integral from 0 to π. ∫(-π)^π cos(x) dx = 2∫(0)^π cos(x) dx = 2π.
+
+Explanation:
+Cos(x) is an even function, so its integral from -π to π is twice the integral from 0 to π. In this case, we double the integral from 0 to π because cos(x) is an even function.
+
+Common mistake note:
+A common mistake is to forget to multiply the integral from 0 to π by 2 when considering that cos(x) is an even function. Students might calculate π (the result of integrating cos(x) from 0 to π), forgetting to account for symmetry.
+------------------------------------------------------------------------------
+
+Problem 7 ([1-7]):
+Evaluate the integral of k(x) = |x| from -3 to 3, where |x| is an even function.
+A) -18
+B) 0
+C) 9
+D) 18
+Correct Answer: D
+
+Solution:
+The integral of an even function like |x| over a symmetric interval around zero is twice the integral from 0 to 3. ∫(-3)^3 |x| dx = 2∫(0)^3 x dx = 18.
+
+Explanation:
+The absolute value function |x| is an even function, so its integral from -3 to 3 is twice the integral from 0 to 3. In this case, we double the integral from 0 to 3 because |x| is an even function and x is positive within that interval.
+
+Common mistake note:
+A common mistake is to integrate |x| without considering that it's an even function or that x is non-negative within the given interval. Students might calculate 9 (the result of integrating x from 0 to 3), forgetting to account for symmetry and the absolute value.
+------------------------------------------------------------------------------

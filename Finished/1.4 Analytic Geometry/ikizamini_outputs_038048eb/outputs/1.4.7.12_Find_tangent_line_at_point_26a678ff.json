@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.7.12",
+  "objective_text": "Find tangent line at point",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the equation of the tangent line to the curve f(x) = x^2 + 3x - 4 at the point (1, 0):",
+      "choices": {
+        "A": "(x - 1) = 6(y - 0)",
+        "B": "(x - 1) = 4(y - 0)",
+        "C": "(x - 1) = 2(y - 0)",
+        "D": "(x - 1) = (y - 0)"
+      },
+      "correct_choice": "C",
+      "solution": "The slope of the tangent line at a point is given by the derivative of the function evaluated at that point. The derivative of f(x) = x^2 + 3x - 4 is f'(x) = 2x + 3. To find the slope at x=1, we evaluate f'(1): f'(1) = 2(1) + 3 = 5. The equation of the tangent line is y - y1 = m(x - x1), where m is the slope and (x1, y1) is the point on the curve. Plugging in m=5 and (x1, y1) = (1, 0): y - 0 = 5(x - 1), which simplifies to (x - 1) = 5(y - 0). The correct answer is C.",
+      "explanation": "The tangent line's slope at a given point is the derivative of the function evaluated at that point. Choice A has an incorrect slope, choice B has a smaller slope than the correct value, and choice D has a slope that does not match the derivative.",
+      "common_mistake_notes": "Common mistake: Using the wrong formula for the tangent line equation or forgetting to evaluate the derivative at the given point."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the equation of the tangent line to the curve g(x) = x^3 - 4x at the point (2, 0):",
+      "choices": {
+        "A": "(x - 2) = 12(y - 0)",
+        "B": "(x - 2) = 8(y - 0)",
+        "C": "(x - 2) = 4(y - 0)",
+        "D": "(x - 2) = (y - 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of g(x) = x^3 - 4x is g'(x) = 3x^2 - 4. To find the slope at x=2, we evaluate g'(2): g'(2) = 3(2)^2 - 4 = 12. The equation of the tangent line is y - y1 = m(x - x1), where m is the slope and (x1, y1) = (2, 0). Plugging in m=12 and (x1, y1) = (2, 0): y - 0 = 12(x - 2), which simplifies to (x - 2) = 12(y - 0). The correct answer is A.",
+      "explanation": "The tangent line's slope at a given point is the derivative of the function evaluated at that point. Choice B has a smaller slope than the correct value, choice C has an even smaller slope, and choice D has a slope that does not match the derivative.",
+      "common_mistake_notes": "Common mistake: Using the wrong formula for the tangent line equation or forgetting to evaluate the derivative at the given point."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the equation of the tangent line to the curve h(x) = 2sin(x) at the point (π/2, 2):",
+      "choices": {
+        "A": "(x - π/2) = 0(y - 2)",
+        "B": "(x - π/2) = 1(y - 2)",
+        "C": "(x - π/2) = 2( y - 2)",
+        "D": "(x - π/2) = (y - 2)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of h(x) = 2sin(x) is h'(x) = 2cos(x). To find the slope at x=π/2, we evaluate h'(π/2): h'(π/2) = 2cos(π/2) = 0. The equation of the tangent line is y - y1 = m(x - x1), where m is the slope and (x1, y1) = (π/2, 2). Plugging in m=0 and (x1, y1) = (π/2, 2): y - 2 = 0(x - π/2), which simplifies to (x - π/2) = 0(y - 2). The correct answer is A.",
+      "explanation": "The tangent line's slope at a given point is the derivative of the function evaluated at that point. Choice B has a non-zero slope, choice C has an incorrect slope, and choice D has a slope that does not match the derivative.",
+      "common_mistake_notes": "Common mistake: Using the wrong formula for the tangent line equation or forgetting to evaluate the derivative at the given point."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the equation of the tangent line to the curve j(x) = e^x at the point (0, 1):",
+      "choices": {
+        "A": "(x - 0) = e(y - 1)",
+        "B": "(x - 0) = 2e(y - 1)",
+        "C": "(x - 0) = e^(y - 1)",
+        "D": "(x - 0) = (y - 1)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of j(x) = e^x is j'(x) = e^x. To find the slope at x=0, we evaluate j'(0): j'(0) = e^0 = 1. The equation of the tangent line is y - y1 = m(x - x1), where m is the slope and (x1, y1) = (0, 1). Plugging in m=1 and (x1, y1) = (0, 1): y - 1 = 1(x - 0), which simplifies to (x - 0) = (y - 1). The correct answer is A.",
+      "explanation": "The tangent line's slope at a given point is the derivative of the function evaluated at that point. Choice B has an incorrect slope, choice C uses the wrong variable for the exponent, and choice D does not match the derivative.",
+      "common_mistake_notes": "Common mistake: Using the wrong formula for the tangent line equation or forgetting to evaluate the derivative at the given point."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the equation of the tangent line to the curve k(x) = ln(x) at the point (1, 0):",
+      "choices": {
+        "A": "(x - 1) = 1(y - 0)",
+        "B": "(x - 1) = 2(y - 0)",
+        "C": "(x - 1) = (y - 0)",
+        "D": "(x - 1) = ln(y - 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of k(x) = ln(x) is k'(x) = 1/x. To find the slope at x=1, we evaluate k'(1): k'(1) = 1/1 = 1. The equation of the tangent line is y - y1 = m(x - x1), where m is the slope and (x1, y1) = (1, 0). Plugging in m=1 and (x1, y1) = (1, 0): y - 0 = 1(x - 1), which simplifies to (x - 1) = (y - 0). The correct answer is A.",
+      "explanation": "The tangent line's slope at a given point is the derivative of the function evaluated at that point. Choice B has an incorrect slope, choice C uses the wrong variable for the logarithm, and choice D does not match the derivative.",
+      "common_mistake_notes": "Common mistake: Using the wrong formula for the tangent line equation or forgetting to evaluate the derivative at the given point."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the equation of the tangent line to the curve l(x) = x^3 - 2x^2 + x at the point (1, 0):",
+      "choices": {
+        "A": "(x - 1) = (y - 0)",
+        "B": "(x - 1) = 4(y - 0)",
+        "C": "(x - 1) = 6(y - 0)",
+        "D": "(x - 1) = 2( y - 0)"
+      },
+      "correct_choice": "B",
+      "solution": "The derivative of l(x) = x^3 - 2x^2 + x is l'(x) = 3x^2 - 4x + 1. To find the slope at x=1, we evaluate l'(1): l'(1) = 3(1)^2 - 4(1) + 1 = 0. The equation of the tangent line is y - y1 = m(x - x1), where m is the slope and (x1, y1) = (1, 0). Plugging in m=0 and (x1, y1) = (1, 0): y - 0 = 0(x - 1), which simplifies to (x - 1) = (y - 0). The correct answer is B.",
+      "explanation": "The tangent line's slope at a given point is the derivative of the function evaluated at that point. Choice A has an incorrect slope, choice C has an even smaller slope, and choice D uses the wrong variable for the exponent.",
+      "common_mistake_notes": "Common mistake: Using the wrong formula for the tangent line equation or forgetting to evaluate the derivative at the given point."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the equation of the tangent line to the curve m(x) = 2cos(3x) at the point (π/6, 1):",
+      "choices": {
+        "A": "(x - π/6) = -3(y - 1)",
+        "B": "(x - π/6) = 0(y - 1)",
+        "C": "(x - π/6) = 3(y - 1)",
+        "D": "(x - π/6) = (y - 1)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of m(x) = 2cos(3x) is m'(x) = -6sin(3x). To find the slope at x=π/6, we evaluate m'(π/6): m'(π/6) = -6sin(3(π/6)) = -6sin(π/2) = -6. The equation of the tangent line is y - y1 = m(x - x1), where m is the slope and (x1, y1) = (π/6, 1). Plugging in m=-6 and (x1, y1) = (π/6, 1): y - 1 = -6(x - π/6), which simplifies to (x - π/6) = -3(y - 1). The correct answer is A.",
+      "explanation": "The tangent line's slope at a given point is the derivative of the function evaluated at that point. Choice B has a zero slope, choice C has an incorrect slope, and choice D does not match the derivative.",
+      "common_mistake_notes": "Common mistake: Using the wrong formula for the tangent line equation or forgetting to evaluate the derivative at the given point."
+    }
+  ]
+}

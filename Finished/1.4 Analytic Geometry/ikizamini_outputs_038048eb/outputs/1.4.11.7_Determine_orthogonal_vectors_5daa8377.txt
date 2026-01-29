@@ -1,0 +1,223 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.11.7 Determine orthogonal vectors
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.11 Vectors in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Which pair of vectors is orthogonal?
+A) [2, 3]
+B) [-1, -1]
+C) [4, 0]
+D) [3, 4]
+Correct Answer: C
+
+Solution:
+Two vectors are orthogonal if their dot product is zero. Let's calculate the dot products for each pair of vectors:
+
+A: [2, 3] . [-1, -1] = 2*(-1) + 3*(-1) = -5
+B: [2, 3] . [4, 0] = 2*4 + 3*0 = 8
+C: [4, 0] . [3, 4] = 4*3 + 0*4 = 12
+D: [2, 3] . [3, 4] = 2*3 + 3*4 = 6
+
+The only pair with a dot product of zero is C: [4, 0] and [3, 4].
+
+Explanation:
+Orthogonal vectors have a dot product of zero. The correct choice has no scalar multiple in common with the other vector, making their dot product zero.
+
+Common mistake note:
+A common mistake would be to choose A or D because they seem similar to each other, but their dot products are not zero.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+Find a vector orthogonal to [1, 2] that has a magnitude of 5.
+A) [5, -10]
+B) [-10, 5]
+C) [10, -5]
+D) [-5, 10]
+Correct Answer: D
+
+Solution:
+To find an orthogonal vector to [1, 2], we can use the fact that their dot product must be zero. Let's call the orthogonal vector [x, y]. The equation for orthogonality is:
+
+[1, 2] . [x, y] = x + 2y = 0
+To find a vector with magnitude 5, we can use the Pythagorean theorem: x^2 + y^2 = 5^2 = 25. We'll solve these equations simultaneously.
+
+From the first equation, we get y = -x/2. Substituting this into the second equation:
+
+x^2 + (-x/2)^2 = 25
+x^2 + x^2/4 = 25
+5/4 * x^2 = 25
+x^2 = 25 * 4 / 5
+x^2 = 20
+x = ±√20
+Since we're looking for a vector with magnitude 5, we can choose the positive value of x and solve for y:
+
+x = √20
+y = -x/2 = -(√20)/2 = -√5
+The orthogonal vector is [√20, -√5]. To match the choices, we can multiply both components by 10 to get an integer solution: [10√20, -10√5] or [-10√20, 10√5]. The latter choice has positive components and matches one of the options.
+
+The correct vector is [10√5, -5], which simplifies to [-5, 10].
+
+Explanation:
+We found an orthogonal vector by solving for x and y in the dot product equation and then adjusting the magnitude to match the given value.
+
+Common mistake note:
+A common mistake would be to forget that the magnitude must be 5, leading to a solution with the correct orthogonality but incorrect magnitude.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer):
+Which of the following vectors is orthogonal to both [1, 0] and [0, 1]?
+A) [1, 1]
+B) [-1, -1]
+C) [1, -1]
+D) [-1, 1]
+Correct Answer: C
+
+Solution:
+To be orthogonal to both [1, 0] and [0, 1], a vector must have a dot product of zero with each. Let's check the dot products:
+
+A: [1, 1] . [1, 0] = 1*1 + 1*0 = 1
+B: [-1, -1] . [1, 0] = -1*1 + (-1)*0 = -1
+C: [1, -1] . [1, 0] = 1*1 + (-1)*0 = 1
+D: [-1, 1] . [1, 0] = -1*1 + 1*0 = -1
+
+For the dot product with [0, 1]:
+
+A: [1, 1] . [0, 1] = 1*0 + 1*1 = 1
+B: [-1, -1] . [0, 1] = -1*0 + (-1)*1 = -1
+C: [1, -1] . [0, 1] = 1*0 + (-1)*1 = -1
+D: [-1, 1] . [0, 1] = -1*0 + 1*1 = 1
+
+The only vector that has a dot product of zero with both [1, 0] and [0, 1] is C: [1, -1].
+
+Explanation:
+A vector is orthogonal to two other vectors if it has a dot product of zero with each. We checked the dot products for all choices.
+
+Common mistake note:
+A common mistake would be to choose A or D because they seem similar, but their dot products are not zero with both given vectors.
+------------------------------------------------------------------------------
+
+Problem 4 (Yuiop):
+Find a vector orthogonal to [3, 4] that has the same direction as [5, 7].
+A) [15, 21]
+B) [-15, -21]
+C) [10, 14]
+D) [-10, -14]
+Correct Answer: A
+
+Solution:
+To find a vector orthogonal to [3, 4] with the same direction as [5, 7], we first need to normalize [5, 7] (get a unit vector in that direction) and then multiply it by the magnitude of [3, 4]. The normalized vector is:
+
+Normalized [5, 7] = [5/sqrt(5^2 + 7^2), 7/sqrt(5^2 + 7^2)]
+Normalized [5, 7] = [5/sqrt(74), 7/sqrt(74)]
+
+Now we multiply this normalized vector by the magnitude of [3, 4]:
+
+Magnitude of [3, 4] = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5
+Orthogonal vector = 5 * [5/sqrt(74), 7/sqrt(74)]
+Orthogonal vector = [25/sqrt(74), 35/sqrt(74)]
+
+To match the choices, we can multiply both components by sqrt(74) to get rid of the square root:
+
+Orthogonal vector = [25, 35]
+This is equivalent to multiplying by -sqrt(74) for a negative solution: [-25, -35].
+
+The correct choice is A: [15, 21], which simplifies to [25, 35].
+
+Explanation:
+We found an orthogonal vector by normalizing the given direction vector and multiplying it by the magnitude of the orthogonal vector.
+
+Common mistake note:
+A common mistake would be to forget to normalize the direction vector first, leading to a vector that is not in the same direction as [5, 7].
+------------------------------------------------------------------------------
+
+Problem 5 (Bnm):
+Which pair of vectors below are NOT orthogonal?
+A) [1, 0] and [0, 1]
+B) [-2, 3] and [2, -3]
+C) [4, 6] and [6, -4]
+D) [-5, 7] and [-7, 5]
+Correct Answer: C
+
+Solution:
+To check if two vectors are orthogonal, we calculate their dot product. If the dot product is zero, they are orthogonal.
+
+A: [1, 0] . [0, 1] = 1*0 + 0*1 = 0 (orthogonal)
+B: [-2, 3] . [2, -3] = -2*2 + 3*(-3) = -4 - 9 = -13 (not orthogonal)
+C: [4, 6] . [6, -4] = 4*6 + 6*(-4) = 24 - 24 = 0 (orthogonal)
+D: [-5, 7] . [-7, 5] = -5*(-7) + 7*(-5) = 35 - 35 = 0 (orthogonal)
+
+The pair that is NOT orthogonal is B: [-2, 3] and [2, -3].
+
+Explanation:
+We calculated the dot products for each pair to determine which ones are not orthogonal.
+
+Common mistake note:
+A common mistake would be to overlook the fact that the dot product must be zero for vectors to be orthogonal, leading to a wrong choice.
+------------------------------------------------------------------------------
+
+Problem 6 (Vbnm):
+Given vector [a, b], what is an equation for a vector that is orthogonal to it?
+A) [b, -a]
+B) [-b, a]
+C) [-a, -b]
+D) [a, b]
+Correct Answer: A
+
+Solution:
+The dot product of two vectors [a, b] and [x, y] is given by a*x + b*y. To find a vector that is orthogonal to [a, b], we need the dot product to be zero:
+
+a*x + b*y = 0
+To solve for y, we get:
+
+y = -ax/b
+An equation for an orthogonal vector would be [x, -ax/b]. We can simplify this by multiplying both components by b to eliminate the fraction:
+
+[x*b, -ax]
+This simplifies to [bx, -ab], which matches choice A when we switch the order of the components: [b, -a].
+
+Explanation:
+We derived an equation for a vector orthogonal to [a, b] by setting their dot product to zero and solving for one component in terms of the other.
+
+Common mistake note:
+A common mistake would be to choose B or C because they seem similar but have different signs. The correct choice has the negative sign applied only to the first vector's component.
+------------------------------------------------------------------------------
+
+Problem 7 (Xcvbn):
+Find a vector orthogonal to [2, 1] with a magnitude of 3.
+A) [6, -3]
+B) [-6, 3]
+C) [9, -3]
+D) [-9, 3]
+Correct Answer: A
+
+Solution:
+To find an orthogonal vector to [2, 1], we can use the fact that their dot product must be zero. Let's call the orthogonal vector [x, y]. The equation for orthogonality is:
+
+[2, 1] . [x, y] = 2*x + 1*y = 0
+To find a vector with magnitude 3, we can use the Pythagorean theorem: x^2 + y^2 = 3^2 = 9. We'll solve these equations simultaneously.
+
+From the first equation, we get y = -2x. Substituting this into the second equation:
+
+x^2 + (-2x)^2 = 9
+x^2 + 4x^2 = 9
+5x^2 = 9
+x^2 = 9/5
+x = ±√(9/5)
+Since we're looking for a vector with magnitude 3, we can choose the positive value of x and solve for y:
+
+x = √(9/5)
+y = -2x = -2√(9/5)
+The orthogonal vector is [√(9/5), -2√(9/5)]. To match the given magnitude, we multiply both components by 3:
+
+Orthogonal vector = [3√(9/5), -6√(9/5)]
+This simplifies to [6, -3].
+
+Explanation:
+We found an orthogonal vector by solving for x and y in the dot product equation and then adjusting the magnitude to match the given value.
+
+Common mistake note:
+A common mistake would be to forget that the magnitude must be 3, leading to a solution with the correct orthogonality but incorrect magnitude.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.7.1",
+  "objective_text": "Plot complex numbers on Argand diagram",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "x1",
+      "stem": "Plot the complex number -3 + 4i on the Argand diagram.",
+      "choices": {
+        "A": "[2, 3]",
+        "B": "[-3, 4]",
+        "C": "[-3, -4]",
+        "D": "[3, -4]"
+      },
+      "correct_choice": "B",
+      "solution": "The complex number is in the form of a + bi. The real part (-3) corresponds to the x-coordinate and the imaginary part (4) corresponds to the y-coordinate on the Argand diagram. So, the correct plot is at the point [-3, 4].",
+      "explanation": "An Argand diagram plots complex numbers as points in the Cartesian plane, with the real part on the horizontal axis and the imaginary part on the vertical axis.",
+      "common_mistake_notes": "A common mistake is to mix up the real and imaginary parts. Remember that -3 is the x-coordinate and 4 is the y-coordinate."
+    },
+    {
+      "id": "x2",
+      "stem": "Find the coordinates of the point representing the complex number 5 - 6i on the Argand diagram.",
+      "choices": {
+        "A": "[6, -5]",
+        "B": "[5, -6]",
+        "C": "[-5, 6]",
+        "D": "[-6, 5]"
+      },
+      "correct_choice": "B",
+      "solution": "The complex number is in the form of a + bi. The real part (5) corresponds to the x-coordinate and the imaginary part (-6) corresponds to the y-coordinate on the Argand diagram. So, the correct coordinates are [5, -6].",
+      "explanation": "In an Argand diagram, the real part determines the horizontal position and the imaginary part determines the vertical position.",
+      "common_mistake_notes": "A common mistake is to reverse the signs of the real and imaginary parts. Ensure that you plot the correct sign for each component."
+    },
+    {
+      "id": "x3",
+      "stem": "Plot the complex number 2i on the Argand diagram.",
+      "choices": {
+        "A": "[0, 2]",
+        "B": "[2, 0]",
+        "C": "[-2, 0]",
+        "D": "[0, -2]"
+      },
+      "correct_choice": "A",
+      "solution": "The complex number is in the form of a + bi. Since there is no real part (a = 0), the point will be on the imaginary axis. The imaginary part (b = 2) determines the y-coordinate. So, the correct plot is at [0, 2].",
+      "explanation": "When the real part is zero, the complex number lies solely on the imaginary axis.",
+      "common_mistake_notes": "A common mistake is to assume that the point would be at [2, 0], but remember that when there's no real part, the x-coordinate should be zero."
+    },
+    {
+      "id": "x4",
+      "stem": "Find the coordinates of the point representing the complex number -4 + 0i on the Argand diagram.",
+      "choices": {
+        "A": "[4, 0]",
+        "B": "[-4, 0]",
+        "C": "[0, -4]",
+        "D": "[0, 4]"
+      },
+      "correct_choice": "B",
+      "solution": "The complex number is in the form of a + bi. The real part (-4) corresponds to the x-coordinate and the imaginary part (0) means it lies on the horizontal axis. So, the correct coordinates are [-4, 0].",
+      "explanation": "When the imaginary part is zero, the complex number lies solely on the real axis.",
+      "common_mistake_notes": "A common mistake is to assume that the point would be at [0, -4], but remember that when there's no imaginary part, the y-coordinate should be zero."
+    },
+    {
+      "id": "x5",
+      "stem": "Plot the complex number 3 + 3i on the Argand diagram.",
+      "choices": {
+        "A": "[6, 0]",
+        "B": "[3, -3]",
+        "C": "[3, 3]",
+        "D": "[-3, 3]"
+      },
+      "correct_choice": "C",
+      "solution": "The complex number is in the form of a + bi. The real part (3) corresponds to the x-coordinate and the imaginary part (3) corresponds to the y-coordinate on the Argand diagram. So, the correct plot is at [3, 3].",
+      "explanation": "In this case, both the real and imaginary parts are equal, resulting in a point that lies along the line y = x.",
+      "common_mistake_notes": "A common mistake is to mix up the signs of the coordinates. Ensure that you plot the correct values for each component."
+    },
+    {
+      "id": "x6",
+      "stem": "Find the coordinates of the point representing the complex number -2 - 3i on the Argand diagram.",
+      "choices": {
+        "A": "[2, 3]",
+        "B": "[-2, -3]",
+        "C": "[2, -3]",
+        "D": "[-2, 3]"
+      },
+      "correct_choice": "B",
+      "solution": "The complex number is in the form of a + bi. The real part (-2) corresponds to the x-coordinate and the imaginary part (-3) corresponds to the y-coordinate on the Argand diagram. So, the correct coordinates are [-2, -3].",
+      "explanation": "When both parts have negative signs, they represent a point in the third quadrant of the Argand diagram.",
+      "common_mistake_notes": "A common mistake is to forget the negative sign for one or both components. Remember that both the real and imaginary parts should retain their signs."
+    },
+    {
+      "id": "x7",
+      "stem": "Plot the complex number -1 + √3i on the Argand diagram.",
+      "choices": {
+        "A": "[1, √3]",
+        "B": "[-1, -√3]",
+        "C": "[-1, √3]",
+        "D": "[1, -√3]"
+      },
+      "correct_choice": "C",
+      "solution": "The complex number is in the form of a + bi. The real part (-1) corresponds to the x-coordinate and the imaginary part (√3) corresponds to the y-coordinate on the Argand diagram. So, the correct plot is at [-1, √3].",
+      "explanation": "When plotting irrational numbers like √3i, it's important to retain the exact form.",
+      "common_mistake_notes": "A common mistake is to try to simplify √3i or convert it to a decimal. In this case, it should be plotted as is."
+    }
+  ]
+}

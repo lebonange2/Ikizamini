@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.5.5 Prove z - z̄ = 2i·Im(z)
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.5 Complex Conjugates and Properties
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Given a complex number z = a + bi, where a is the real part and b is the imaginary part, prove that z - z̄ = 2i·Im(z)
+A) (a + b) + (a - b)i
+B) (a + b) - (a - b)i
+C) 2bi
+D) 2ai
+Correct Answer: C
+
+Solution:
+z = a + bi and z̄ = a - bi. So, z - z̄ = (a + bi) - (a - bi) = 2bi.
+
+Explanation:
+The correct solution subtracts the complex conjugate of z from z to obtain twice the imaginary part.
+
+Common mistake note:
+A common mistake is to add the real parts instead of subtracting them, resulting in answer A. Another mistake might be multiplying b by i twice, leading to D.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Given z = 3 + 4i, prove that z - z̄ = 2i·Im(z)
+A) -8i
+B) 8i
+C) 6
+D) 10
+Correct Answer: B
+
+Solution:
+Given z = 3 + 4i, z̄ = 3 - 4i. So, z - z̄ = (3 + 4i) - (3 - 4i) = 8i.
+
+Explanation:
+The correct solution substitutes the given values for z and its conjugate into the formula and calculates the difference.
+
+Common mistake note:
+A common mistake is to subtract the real parts, leading to C. Another might be not recognizing that only the imaginary part contributes to the result.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Prove that for any complex number z = x + yi, z - z̄ = 2i·Im(z)
+A) True
+B) False
+C) Cannot be determined without specific values for x and y
+D) Depends on the value of x
+Correct Answer: A
+
+Solution:
+Let z = x + yi. Then, z̄ = x - yi. So, z - z̄ = (x + yi) - (x - yi) = 2yi. Since this is twice the imaginary part (y), the statement is true.
+
+Explanation:
+The correct solution demonstrates that the difference between a complex number and its conjugate always equals twice the imaginary part, regardless of x and y.
+
+Common mistake note:
+A common mistake might be thinking that the result depends on x or specific values for x and y.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Given z = 2i, prove that z - z̄ = 2i·Im(z)
+A) 0
+B) 4i
+C) -4i
+D) 2
+Correct Answer: A
+
+Solution:
+Given z = 2i, z̄ = -2i. So, z - z̄ = 2i - (-2i) = 0.
+
+Explanation:
+The correct solution substitutes the given value for z and its conjugate into the formula and calculates the difference.
+
+Common mistake note:
+A common mistake is to think that the real part of z is zero, leading to D. Another might be not recognizing that the imaginary parts cancel each other out.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Given z = 1 + 3i and w = 4 - 2i, prove that (z - z̄) + (w - w̄) = 2i·Im(z) + 2i·Im(w)
+A) -6i
+B) 6i
+C) 0
+D) 12
+Correct Answer: B
+
+Solution:
+Given z = 1 + 3i, z̄ = 1 - 3i and w = 4 - 2i, w̄ = 4 + 2i. So, (z - z̄) + (w - w̄) = (1 + 3i - (1 - 3i)) + (4 - 2i - (4 + 2i)) = 6i.
+
+Explanation:
+The correct solution substitutes the given values for z, w, and their conjugates into the formula and calculates the sum.
+
+Common mistake note:
+A common mistake is to add or subtract the real parts incorrectly, leading to C. Another might be not recognizing that only the imaginary parts contribute to the result.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Given z = a + bi, prove that z - z̄ = 2i·Im(z) using the definition of conjugate: z̄ = a - bi.
+A) True
+B) False
+C) Cannot be determined without specific values for a and b
+D) Depends on the value of a
+Correct Answer: A
+
+Solution:
+Given z = a + bi, z̄ = a - bi. So, z - z̄ = (a + bi) - (a - bi) = 2bi. Since this is twice the imaginary part (b), the statement is true.
+
+Explanation:
+The correct solution demonstrates that the difference between a complex number and its conjugate always equals twice the imaginary part, regardless of a and b.
+
+Common mistake note:
+A common mistake might be thinking that the result depends on a or specific values for a and b.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Given z = -2 + 5i, prove that (z - z̄)^2 = (2i·Im(z))^2
+A) -144
+B) 144
+C) 0
+D) 9
+Correct Answer: B
+
+Solution:
+Given z = -2 + 5i, z̄ = -2 - 5i. So, z - z̄ = (-2 + 5i) - (-2 - 5i) = 10i. Thus, (z - z̄)^2 = (10i)^2 = -100, which simplifies to 144.
+
+Explanation:
+The correct solution substitutes the given value for z and its conjugate into the formula, calculates the difference, and squares it.
+
+Common mistake note:
+A common mistake is to square the imaginary part without accounting for the negative sign, leading to D. Another might be not recognizing that squaring an imaginary number results in a negative real number.
+------------------------------------------------------------------------------

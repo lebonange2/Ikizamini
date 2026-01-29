@@ -1,0 +1,243 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.10.8 Apply phasor notation
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.10 Applications to AC Circuits
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (AsdFgHjK):
+Find the phasor representation of a sinusoidal voltage with an amplitude of 5V and a frequency of 60 Hz. The phase angle is 30 degrees.
+A) (5
+cos(2
+cpi
+  
+60t + 30^	extdegree))
+B) (5
+cos(2
+cpi
+  
+60t - 30^	extdegree))
+C) (5
+e^{j(2
+cpi
+  
+60t + 30)})
+D) (5
+e^{j(2
+cpi
+  
+60t - 30)})
+Correct Answer: C
+
+Solution:
+The phasor representation of a sinusoidal voltage is given by V(t) = A * e^(j(w*t + phi)), where A is the amplitude, w is the angular frequency (2
+cpi
+  
+frequency), and phi is the phase angle. For this problem, A = 5V, frequency = 60 Hz, and phi = 30 degrees. Converting the phase angle to radians, we get phi = 30^	extdegree * pi/180 = pi/6. So the phasor representation is V(t) = 5e^(j(2
+cpi
+  
+60t + pi/6)).
+
+Explanation:
+The correct choice uses the exponential form of complex numbers with the phase angle in radians, which is standard for phasor notation.
+
+Common mistake note:
+Common mistake: Choosing B or A because they use the cosine function instead of the exponential function. The cosine function represents the real part of the phasor, but phasor notation typically uses the exponential form to represent both the real and imaginary parts together.
+------------------------------------------------------------------------------
+
+Problem 2 (BnOpQrSt):
+A current source has a phasor representation of 10
+e^{j(45^	extdegree)}. What is the amplitude and phase angle of the sinusoidal current it represents?
+A) Amplitude: 10V, Phase Angle: 45^	extdegree
+B) Amplitude: 10A, Phase Angle: -45^	extdegree
+C) Amplitude: 10
+cos(45^	extdegree), Phase Angle: 45^	extdegree
+D) Amplitude: 10
+e^{j(45^	extdegree)}, Phase Angle: 90^	extdegree
+Correct Answer: A
+
+Solution:
+The phasor representation 10
+e^{j(45^	extdegree)} directly gives the amplitude and phase angle of the sinusoidal current. The amplitude is the real part of the complex number, which is 10 in this case. The phase angle is given by the argument of the exponential function, which is 45 degrees.
+
+Explanation:
+The phasor notation already provides the amplitude and phase angle; no further calculations are needed.
+
+Common mistake note:
+Common mistake: Choosing B because they interpret the 'j' as imaginary part and convert it to a negative phase angle. The 'j' in phasor notation represents the imaginary unit, not an indication of a negative phase angle.
+------------------------------------------------------------------------------
+
+Problem 3 (CvWxYzAb):
+A voltage source has a sinusoidal waveform with an amplitude of 12V and a frequency of 50 Hz. If its phase angle is -90^	extdegree, what is the phasor representation?
+A) (12
+cos(2
+cpi
+  
+50t + 90^	extdegree))
+B) (12
+e^{j(2
+cpi
+  
+50t - 90)})
+C) (12
+cos(2
+cpi
+  
+50t - 90^	extdegree))
+D) (12
+e^{j(2
+cpi
+  
+50t + 90)})
+Correct Answer: B
+
+Solution:
+The phasor representation of the sinusoidal voltage is V(t) = A * e^(j(w*t + phi)), where A is the amplitude, w is the angular frequency (2
+cpi
+  
+frequency), and phi is the phase angle. For this problem, A = 12V, frequency = 50 Hz, and phi = -90 degrees. Converting the phase angle to radians, we get phi = -90^	extdegree * pi/180 = -pi/2. So the phasor representation is V(t) = 12e^(j(2
+cpi
+  
+50t - pi/2)).
+
+Explanation:
+The correct choice uses the exponential form of complex numbers with the phase angle in radians, which is standard for phasor notation.
+
+Common mistake note:
+Common mistake: Choosing C or A because they use the cosine function instead of the exponential function. The cosine function represents the real part of the phasor, but phasor notation typically uses the exponential form to represent both the real and imaginary parts together.
+------------------------------------------------------------------------------
+
+Problem 4 (DxYzAbCv):
+A resistor has a voltage across it given by V(t) = 8
+cos(2
+cpi
+  
+100t + 60^	extdegree). What is the phasor representation of this voltage?
+A) (8
+e^{j(2
+cpi
+  
+100t + 60)})
+B) (8
+cos(2
+cpi
+  
+100t - 60^	extdegree))
+C) (8
+e^{j(2
+cpi
+  
+100t - 60)})
+D) (8
+cos(2
+cpi
+  
+100t + 60^	extdegree))
+Correct Answer: A
+
+Solution:
+The phasor representation of a sinusoidal voltage is given by V(t) = A * e^(j(w*t + phi)), where A is the amplitude, w is the angular frequency (2
+cpi
+  
+frequency), and phi is the phase angle. For this problem, we can directly convert the cosine function to its exponential form: 8
+cos(2
+cpi
+  
+100t + 60^	extdegree) = 8
+e^(j(2
+cpi
+t + 60^	extdegree)).
+
+Explanation:
+The correct choice converts the cosine function to its equivalent exponential form, which is standard for phasor notation.
+
+Common mistake note:
+Common mistake: Choosing D because they think that the phasor representation should be identical to the given voltage waveform. The phasor representation uses the exponential form, not the cosine form.
+------------------------------------------------------------------------------
+
+Problem 5 (EfGhIjKl):
+A capacitor has a current through it given by I(t) = 6
+e^{j(30^	extdegree)}. What is the amplitude and phase angle of this sinusoidal current?
+A) Amplitude: 6V, Phase Angle: 30^	extdegree
+B) Amplitude: 6A, Phase Angle: -30^	extdegree
+C) Amplitude: 6
+cos(30^	extdegree), Phase Angle: 30^	extdegree
+D) Amplitude: 6
+e^{j(30^	extdegree)}, Phase Angle: 90^	extdegree
+Correct Answer: B
+
+Solution:
+The phasor representation 6
+e^{j(30^	extdegree)} directly gives the amplitude and phase angle of the sinusoidal current. The amplitude is the real part of the complex number, which is 6 in this case. The phase angle is given by the argument of the exponential function, which is -30 degrees (since it's a capacitive element, the phase angle will be negative).
+
+Explanation:
+The phasor notation already provides the amplitude and phase angle; no further calculations are needed.
+
+Common mistake note:
+Common mistake: Choosing A because they interpret the 'e' as exponential part and convert it to a positive phase angle. The 'j' in phasor notation represents the imaginary unit, not an indication of a positive phase angle.
+------------------------------------------------------------------------------
+
+Problem 6 (JkLmNoPq):
+A transformer has a voltage ratio of 1:2 and a current ratio of 2:1. If the primary side voltage is given by V(t) = 10
+e^{j(45^	extdegree)}, what is the phasor representation of the secondary side voltage?
+A) (20
+cos(2
+cpi
+  
+frequency + 45^	extdegree))
+B) (5
+e^{j(45^	extdegree)})
+C) (5
+e^{j(90^	extdegree)})
+D) (20
+e^{j(45^	extdegree)})
+Correct Answer: B
+
+Solution:
+The transformer voltage ratio is 1:2, so the secondary side voltage will be half of the primary side voltage. The phase angle remains the same since transformers don't change the phase relationship between voltages or currents. So the secondary side voltage is V(t) = (10/2)
+e^{j(45^	extdegree)} = 5
+e^{j(45^	extdegree)}.
+
+Explanation:
+The correct choice calculates the secondary side voltage using the transformer voltage ratio and keeps the phase angle unchanged.
+
+Common mistake note:
+Common mistake: Choosing A or D because they multiply both the amplitude and phase angle by the voltage ratio. The phase angle remains the same, only the amplitude changes.
+------------------------------------------------------------------------------
+
+Problem 7 (RtSvUwXy):
+A phasor is given as 4
+e^{j(-120^	extdegree)}. What is the equivalent sinusoidal waveform in terms of cosine?
+A) 4
+cos(2
+cpi
+  
+frequency - 120^	extdegree)
+B) 4
+cos(2
+cpi
+t + 120^	extdegree)
+C) 4
+cos(2
+cpi
+t - 60^	extdegree)
+D) 4
+cos(2
+cpi
+t + 60^	extdegree)
+Correct Answer: A
+
+Solution:
+To convert the phasor representation 4
+e^{j(-120^	extdegree)} to cosine form, we use the Euler's formula: e^(j	heta) = cos(	heta) + j*sin(	heta). Since we want the cosine part only, we take the real part of the expression: 4
+cos(-120^	extdegree) = 4
+cos(2
+cpi
+t - 120^	extdegree), where frequency is the angular frequency corresponding to the sinusoidal waveform.
+
+Explanation:
+The correct choice uses Euler's formula to convert the exponential form of the phasor to cosine form.
+
+Common mistake note:
+Common mistake: Choosing B because they think that the phase angle should be positive. The negative sign in the exponent indicates a phase shift in the opposite direction, so the cosine function should also have a negative phase angle.
+------------------------------------------------------------------------------

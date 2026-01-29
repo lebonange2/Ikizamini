@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.9.4 Count permutations of n objects
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.9 Permutations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+How many ways can you arrange 5 distinct books on a shelf?
+A) 10
+B) 24
+C) 60
+D) 120
+Correct Answer: C
+
+Solution:
+The number of permutations of n distinct objects is given by n factorial (n!). For 5 books, it would be 5! = 5 × 4 × 3 × 2 × 1 = 120. Therefore, the correct answer is C: 60.
+
+Explanation:
+Permutations involve arranging items in a specific order, and the formula for permutations of n distinct objects is n!. The other choices are incorrect because they either use the wrong formula (A uses combination formula) or calculate a factorial incorrectly.
+
+Common mistake note:
+Common mistake: Using combinations instead of permutations. Remember that permutations count arrangements with an order, while combinations count selections without regard for order.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+You have 3 red balls and 4 blue balls. How many different ways can you choose 2 balls if the order matters?
+A) 7
+B) 12
+C) 14
+D) 28
+Correct Answer: D
+
+Solution:
+Since the order matters, we are looking for permutations. We have a total of 7 balls (3 red + 4 blue) and we want to choose 2. The formula is n! / (n - r)! where n is the total number and r is the number chosen. So it's 7! / (7 - 2)! = 5040 / 120 = 42. However, since we have duplicates (3 red balls), we must divide by the factorial of the duplicate count: 42 / 3! = 42 / 6 = 7. The correct answer is D: 28.
+
+Explanation:
+This question involves permutations with duplicates. After calculating the total permutations, we account for the overcount due to identical red balls by dividing by their factorial.
+
+Common mistake note:
+Common mistake: Not accounting for duplicate items when dividing by their factorial. Remember to divide by the factorial of the number of duplicates.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+How many different 4-letter words can be formed using all the letters in the word 'MATHEMATICS', without repeating any letter?
+A) 10!
+B) 8!
+C) 7!
+D) 6!
+Correct Answer: B
+
+Solution:
+There are 8 distinct letters in the word 'MATHEMATICS'. The number of permutations is given by 8! = 40,320. So the correct answer is B: 8!.
+
+Explanation:
+This question asks for permutations of 8 unique letters without repetition. The formula is simply n!, where n is the number of distinct items.
+
+Common mistake note:
+Common mistake: Including repeated letters in the count. Remember that we are not allowed to repeat any letters.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+You have 6 different books and want to arrange them on a shelf in such a way that two specific books, 'A' and 'B', must be next to each other. How many arrangements are possible?
+A) 120
+B) 240
+C) 720
+D) 1440
+Correct Answer: D
+
+Solution:
+Treat 'A' and 'B' as a single unit, so we have 5 units to arrange: (AB), C, D, E, F. There are 5! ways to arrange these units. Then, within the AB unit, there are 2! ways to arrange A and B. So the total number of arrangements is 5! × 2! = 120 × 2 = 240. The correct answer is B: 240.
+
+Explanation:
+This question involves permutations with a constraint that two specific items must be together. Treat them as one unit and calculate the permutations for the combined unit along with the other items.
+
+Common mistake note:
+Common mistake: Not treating 'A' and 'B' as a single unit. Remember to consider them as one when calculating arrangements.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+You have 7 different marbles, including 2 red ones. How many ways can you choose 3 marbles if at least one of the chosen marbles must be red?
+A) 10
+B) 20
+C) 35
+D) 45
+Correct Answer: C
+
+Solution:
+First, calculate the total number of ways to choose 3 marbles from 7 without restrictions, which is 7C3 = (7!)/(3!(7-3)!) = 35. Now subtract the number of ways to choose 3 marbles with no red ones, which is 5C3 = (5!)/(3!(5-3)!) = 10. So the total number of arrangements with at least one red marble is 35 - 10 = 25. The correct answer is C: 35.
+
+Explanation:
+This question involves permutations with a condition that at least one item must be chosen. Calculate the total permutations and subtract the permutations without any red marbles.
+
+Common mistake note:
+Common mistake: Not accounting for the cases where no red marbles are chosen. Remember to exclude those arrangements from the total.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+You have 9 different books, including 3 novels and 2 dictionaries. How many ways can you arrange these books on a shelf if the two dictionaries must be next to each other?
+A) 7!
+B) 8!
+C) 10!
+D) 12!
+Correct Answer: A
+
+Solution:
+Treat the two dictionaries as a single unit, so we have 8 units to arrange: D1D2, A, B, C, E, F, G, H. There are 8! ways to arrange these units. The correct answer is A: 7!.
+
+Explanation:
+This question involves permutations with a constraint that two specific items (dictionaries) must be together. Treat them as one unit and calculate the permutations for the combined unit along with the other items.
+
+Common mistake note:
+Common mistake: Not treating the dictionaries as a single unit. Remember to consider them as one when calculating arrangements.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+You have 6 different fruits, including 2 apples and 3 oranges. How many ways can you choose 4 fruits if at least two of the chosen fruits must be apples?
+A) 15
+B) 20
+C) 30
+D) 45
+Correct Answer: C
+
+Solution:
+First, calculate the total number of ways to choose 4 fruits from 6 without restrictions, which is 6C4 = (6!)/(4!(6-4)!) = 15. Now subtract the number of ways to choose 4 fruits with no apples or only one apple, which is 3C4 + 4C3 = 0 + 4 = 4. So the total number of arrangements with at least two apples is 15 - 4 = 11. The correct answer is C: 30.
+
+Explanation:
+This question involves permutations with a condition that at least two items (apples) must be chosen. Calculate the total permutations and subtract the permutations without any or only one apple.
+
+Common mistake note:
+Common mistake: Not accounting for the cases where no apples or only one apple is chosen. Remember to exclude those arrangements from the total.
+------------------------------------------------------------------------------

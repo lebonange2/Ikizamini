@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.7.12 Find general antiderivatives
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.7 Indefinite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 ([1]):
+Find the antiderivative of f(x) = 3x^2.
+A) x^3 + C
+B) 9x^3 + C
+C) 6x + C
+D) 1/3x^3 + C
+Correct Answer: A
+
+Solution:
+The antiderivative of 3x^2 is found by applying the power rule, which states that the antiderivative of x^n is (x^(n+1))/(n+1). For 3x^2, n = 2, so the antiderivative is (3x^(2+1))/(2+1) = x^3. Adding the constant of integration C gives us x^3 + C.
+
+Explanation:
+The power rule is used to find antiderivatives of polynomial functions.
+
+Common mistake note:
+A common mistake would be forgetting to add the constant of integration C, which is essential in finding a general antiderivative.
+------------------------------------------------------------------------------
+
+Problem 2 ([2]):
+Find the antiderivative of g(t) = e^t.
+A) e^(t+1)
+B) e^t + C
+C) ln(e^t) + C
+D) t * e^t + C
+Correct Answer: B
+
+Solution:
+The antiderivative of e^x is simply e^x itself, since the derivative of e^x is also e^x. Adding the constant of integration C gives us e^t + C.
+
+Explanation:
+The exponential function has a simple antiderivative form.
+
+Common mistake note:
+A common mistake would be trying to apply logarithmic rules, which are not applicable here.
+------------------------------------------------------------------------------
+
+Problem 3 ([3]):
+Find the antiderivative of h(z) = 5z^(-2).
+A) -5/zt + C
+B) 1/(5z) + C
+C) 5/zt^2 + C
+D) 1/(5zt^2) + C
+Correct Answer: A
+
+Solution:
+The antiderivative of z^n when n ≠ -1 is z^(n+1)/(n+1). For 5z^(-2), n = -2, so the antiderivative is 5z^((-2)+1)/((-2)+1) = -5/zt. Adding the constant of integration C gives us -5/zt + C.
+
+Explanation:
+The power rule with a negative exponent can be used here.
+
+Common mistake note:
+A common mistake would be forgetting to adjust the exponent when applying the power rule.
+------------------------------------------------------------------------------
+
+Problem 4 ([4]):
+Find the antiderivative of j(x) = sin(x).
+A) -cos(x) + C
+B) cos(x) + C
+C) sin(x)
+D) tan(x) + C
+Correct Answer: A
+
+Solution:
+The antiderivative of sin(x) is -cos(x), as the derivative of cos(x) is -sin(x). Adding the constant of integration C gives us -cos(x) + C.
+
+Explanation:
+The sine function has a well-known antiderivative form when paired with cosine.
+
+Common mistake note:
+A common mistake would be forgetting to include the negative sign in front of cos(x).
+------------------------------------------------------------------------------
+
+Problem 5 ([5]):
+Find the antiderivative of k(w) = 2cos(3w).
+A) -1/3sin(3w) + C
+B) 1/3sin(3w) + C
+C) 2sin(3w)
+D) 2cos(3w) + C
+Correct Answer: B
+
+Solution:
+The antiderivative of cos(ax) is (1/a)sin(ax), where a is a constant. For 2cos(3w), a = 3, so the antiderivative is (1/3)sin(3w). Adding the constant of integration C gives us 1/3sin(3w) + C.
+
+Explanation:
+The cosine function with a coefficient and variable inside the argument requires adjusting the coefficient in the antiderivative formula.
+
+Common mistake note:
+A common mistake would be forgetting to divide by the coefficient outside the trigonometric function.
+------------------------------------------------------------------------------
+
+Problem 6 ([6]):
+Find the antiderivative of m(p) = p^(1/2).
+A) 2p^(3/2) + C
+B) p^(3/2)/3 + C
+C) p^(1/2)/2 + C
+D) p^(1/2)/3
+Correct Answer: C
+
+Solution:
+The antiderivative of p^n when n ≠ -1 is p^(n+1)/(n+1). For p^(1/2), n = 1/2, so the antiderivative is p^((1/2)+1)/((1/2)+1) = p^(3/2)/3/2 = p^(1/2)/2. Adding the constant of integration C gives us p^(1/2)/2 + C.
+
+Explanation:
+The power rule with a fractional exponent can be used here.
+
+Common mistake note:
+A common mistake would be forgetting to simplify the fraction in the denominator after applying the power rule.
+------------------------------------------------------------------------------
+
+Problem 7 ([7]):
+Find the antiderivative of n(q) = 4e^(2q).
+A) -2e^(2q) + C
+B) 1/8e^(2q) + C
+C) 2e^(2q)
+D) 4e^(2q)/2 + C
+Correct Answer: B
+
+Solution:
+The antiderivative of e^(ax) is (1/a)e^(ax), where a is a constant. For 4e^(2q), a = 2, so the antiderivative is (1/2)e^(2q). Adding the constant of integration C gives us 1/2e^(2q) + C. To simplify, we can multiply by 1/2 to get 1/8e^(2q) + C.
+
+Explanation:
+The exponential function with a coefficient inside requires adjusting the coefficient in the antiderivative formula.
+
+Common mistake note:
+A common mistake would be forgetting to divide by the coefficient outside the exponential function.
+------------------------------------------------------------------------------

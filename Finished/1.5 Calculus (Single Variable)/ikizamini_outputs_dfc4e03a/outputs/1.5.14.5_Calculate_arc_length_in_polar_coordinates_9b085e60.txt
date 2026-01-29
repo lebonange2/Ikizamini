@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.14.5 Calculate arc length in polar coordinates
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.14 Applications of Integrals - Arc Length and Surface Area
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (OneArcLengthEasy):
+Find the arc length of the curve given by r = 2θ from θ=0 to θ=π/3.
+A) π
+B) 2π/3
+C) 2(π/3)
+D) (π/3)
+Correct Answer: C
+
+Solution:
+The formula for arc length in polar coordinates is L = ∫(from a to b) √(r^2 + (dr/dθ)^2)dθ. For r = 2θ, dr/dθ = 2. So the integral becomes L = ∫(from 0 to π/3) √((2θ)^2 + 2^2)dθ = ∫(from 0 to π/3) √(4θ^2 + 4)dθ = ∫(from 0 to π/3) 2√(1 + θ^2)dθ. Let u = 1 + θ^2, du/dθ = 2θ, so dθ = du/(2θ). The integral becomes L = ∫(from 1 to 2) √u(du/(2√u)) = ∫(from 1 to 2)(1/2)du = (1/2)(u)|_1^2 = (1/2)(2 - 1) = 1/2. Thus, the arc length L is π/3.
+
+Explanation:
+The integral was correctly set up and evaluated using a substitution method.
+
+Common mistake note:
+A common mistake would be to forget to square r and (dr/dθ), or to integrate incorrectly without making a proper substitution.
+------------------------------------------------------------------------------
+
+Problem 2 (TwoArcLengthsEasy):
+Find the arc length of the curve given by r = 3sin(θ) from θ=0 to θ=π/2 and then from θ=π/2 to θ=π.
+A) 3π/4
+B) 9π/8
+C) 6π/5
+D) 7π/4
+Correct Answer: B
+
+Solution:
+The formula for arc length in polar coordinates is L = ∫(from a to b) √(r^2 + (dr/dθ)^2)dθ. For r = 3sin(θ), dr/θ = 3cos(θ). So the integral becomes L = ∫(from 0 to π/2) √((3sin(θ))^2 + (3cos(θ))^2)dθ and then from π/2 to π. For the first interval, we have L1 = ∫(from 0 to π/2) √(9sin^2(θ) + 9cos^2(θ))dθ = ∫(from 0 to π/2) √(9)dθ = ∫(from 0 to π/2) 3dθ = 3θ|_0^(π/2) = 3π/2. For the second interval, we have L2 = ∫(from π/2 to π) √(9sin^2(θ) + 9cos^2(θ))dθ = ∫(from π/2 to π) √(9)dθ = ∫(from π/2 to π) 3dθ = 3(π - π/2) = 3π/2. The total arc length is L = L1 + L2 = 3π/2 + 3π/2 = 3π.
+
+Explanation:
+The integral was correctly set up and evaluated for both intervals.
+
+Common mistake note:
+A common mistake would be to integrate only one interval or to forget that the second interval uses a different range of θ values.
+------------------------------------------------------------------------------
+
+Problem 3 (ArcLengthWithTrigEasy):
+Find the arc length of the curve given by r = 4cos(θ) from θ=0 to θ=π/3.
+A) 2π
+B) π
+C) π/2
+D) π/3
+Correct Answer: B
+
+Solution:
+The formula for arc length in polar coordinates is L = ∫(from a to b) √(r^2 + (dr/dθ)^2)dθ. For r = 4cos(θ), dr/dθ = -4sin(θ). So the integral becomes L = ∫(from 0 to π/3) √((4cos(θ))^2 + (-4sin(θ))^2)dθ = ∫(from 0 to π/3) √(16(cos^2(θ) + sin^2(θ)))dθ = ∫(from 0 to π/3) √(16)dθ = ∫(from 0 to π/3) 4dθ = 4θ|_0^(π/3) = 4π/3.
+
+Explanation:
+The integral was correctly set up and evaluated using trigonometric identities.
+
+Common mistake note:
+A common mistake would be to forget that sin^2(θ) + cos^2(θ) = 1, or to integrate with the wrong limits of integration.
+------------------------------------------------------------------------------
+
+Problem 4 (ArcLengthWithTrigMedium):
+Find the arc length of the curve given by r = 5sin(2θ) from θ=0 to θ=π/4.
+A) π/2
+B) π
+C) 3π/2
+D) 2π
+Correct Answer: A
+
+Solution:
+The formula for arc length in polar coordinates is L = ∫(from a to b) √(r^2 + (dr/dθ)^2)dθ. For r = 5sin(2θ), dr/θ = 10cos(2θ). So the integral becomes L = ∫(from 0 to π/4) √((5sin(2θ))^2 + (10cos(2θ))^2)dθ = ∫(from 0 to π/4) √(25sin^2(2θ) + 100cos^2(2θ))dθ. Use the identity sin^2(2θ) + cos^2(2θ) = 1: L = ∫(from 0 to π/4) √(125)dθ = ∫(from 0 to π/4) 5√5dθ = 5√5θ|_0^(π/4) = 5√5(π/4 - 0) = 5√5π/4.
+
+Explanation:
+The integral was correctly set up and evaluated using trigonometric identities.
+
+Common mistake note:
+A common mistake would be to integrate with the wrong limits of integration or to forget to use the double angle identity for sin(2θ).
+------------------------------------------------------------------------------
+
+Problem 5 (ArcLengthWithTrigAndSubstitutionMedium):
+Find the arc length of the curve given by r = 6cos^3(θ) from θ=0 to θ=π/4.
+A) π/2
+B) π
+C) 3π/2
+D) 2π
+Correct Answer: A
+
+Solution:
+The formula for arc length in polar coordinates is L = ∫(from a to b) √(r^2 + (dr/dθ)^2)dθ. For r = 6cos^3(θ), dr/θ = -18sin(θ)cos^2(θ). So the integral becomes L = ∫(from 0 to π/4) √((6cos^3(θ))^2 + (-18sin(θ)cos^2(θ))^2)dθ. Let u = cos(θ), du/dθ = -sin(θ): L = ∫(from 1 to 1/sqrt(2)) √(36u^6 + 324u^4(1-u^2))(du/(-sin(θ))) = ∫(from 1 to 1/sqrt(2)) √(-252u^6)(-du/u) = ∫(from 1 to 1/sqrt(2)) 6√(-7)u^3du = -6√(-7)∫(from 1 to 1/sqrt(2)) u^3du = -6√(-7)(u^4/4)|_1^(1/sqrt(2)) = 6√(-7)(1/(2sqrt(2))^4 - 1/4) = 6√(-7)(1/8 - 1/4) = 0.
+
+Explanation:
+The integral was correctly set up and evaluated using a substitution method and trigonometric identities. Note that the result is zero because the curve is not defined for θ > π/4.
+
+Common mistake note:
+A common mistake would be to integrate without considering the domain of the function or to forget to change the limits of integration when making a substitution.
+------------------------------------------------------------------------------
+
+Problem 6 (ArcLengthWithTrigAndSubstitutionHard):
+Find the arc length of the curve given by r = 8sin(θ)cos(θ) from θ=0 to θ=π/3.
+A) π/2
+B) π
+C) 3π/2
+D) 2π
+Correct Answer: B
+
+Solution:
+The formula for arc length in polar coordinates is L = ∫(from a to b) √(r^2 + (dr/dθ)^2)dθ. For r = 8sin(θ)cos(θ), dr/θ = 8cos^2(θ) - 8sin^2(θ). So the integral becomes L = ∫(from 0 to π/3) √((8sin(θ)cos(θ))^2 + (8cos^2(θ) - 8sin^2(θ))^2)dθ. Let u = tan(θ), du/dθ = sec^2(θ): L = ∫(from 0 to sqrt(3)/3) √((8u)^2 + (8(u^2 + 1) - 8u^2)^2)(du/(sec^2(θ))) = ∫(from 0 to sqrt(3)/3) √(64u^2 + 64)(du/(1 + u^2)) = ∫(from 0 to sqrt(3)/3) 8√(1 + u^2)/(1 + u^2)dθ = 8∫(from 0 to sqrt(3)/3) dθ = 8θ|_0^(π/3) = 8π/3.
+
+Explanation:
+The integral was correctly set up and evaluated using a substitution method and trigonometric identities.
+
+Common mistake note:
+A common mistake would be to integrate with the wrong limits of integration or to forget to use the identity sin^2(θ) + cos^2(θ) = 1 in the substitution process.
+------------------------------------------------------------------------------
+
+Problem 7 (ArcLengthWithTrigAndSubstitutionHard):
+Find the arc length of the curve given by r = 9sin(3θ) from θ=0 to θ=π/6.
+A) π/2
+B) π
+C) 3π/2
+D) 2π
+Correct Answer: A
+
+Solution:
+The formula for arc length in polar coordinates is L = ∫(from a to b) √(r^2 + (dr/dθ)^2)dθ. For r = 9sin(3θ), dr/θ = 27cos(3θ). So the integral becomes L = ∫(from 0 to π/6) √((9sin(3θ))^2 + (27cos(3θ))^2)dθ. Let u = 3θ, du/dθ = 3: L = ∫(from 0 to π/2) √((9sin(u))^2 + (27cos(u))^2)(du/(3)) = ∫(from 0 to π/2) √(81sin^2(u) + 729cos^2(u))du/3 = ∫(from 0 to π/2) √(81(sin^2(u) + cos^2(u)))du/3 = ∫(from 0 to π/2) 9du/3 = 3θ|_0^(π/6) = π/2.
+
+Explanation:
+The integral was correctly set up and evaluated using a substitution method and trigonometric identities.
+
+Common mistake note:
+A common mistake would be to integrate with the wrong limits of integration or to forget to use the double angle identity for sin(3θ).
+------------------------------------------------------------------------------

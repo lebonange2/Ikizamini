@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.3.4 Apply logical AND (∧)
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.3 Logic and Propositions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+What is the result of the following logical AND operation (∧) when A is true and B is false?
+A) True
+B) False
+C) Undefined
+D) Both A and B
+Correct Answer: B
+
+Solution:
+In a logical AND operation (∧), both operands must be true for the result to be true. Since A is true and B is false, the overall result is false.
+
+Explanation:
+Logical AND combines two boolean values and returns true only if both are true; otherwise, it returns false.
+
+Common mistake note:
+A common mistake would be to choose 'A' because A is true, but忽略了B是假的。逻辑AND需要两个条件都为真，所以结果是假的。
+------------------------------------------------------------------------------
+
+Problem 2 (Zxcv):
+What happens when you perform a logical AND operation on two false values?
+A) True
+B) False
+C) Both values are combined
+D) An error occurs
+Correct Answer: B
+
+Solution:
+When performing a logical AND operation (∧) on two false values, the result is always false.
+
+Explanation:
+In logic, the conjunction 'and' requires both operands to be true for the overall statement to be true. If either or both are false, the result is false.
+
+Common mistake note:
+A common mistake would be to choose 'A' because some people might think that combining two values always results in a truth value, but with logical AND, it's specifically about requiring both to be true.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer):
+What is the output of the expression (True ∧ True)?
+A) False
+B) True
+C) Undefined
+D) Both values are equal
+Correct Answer: B
+
+Solution:
+The logical AND operation (∧) on two true values results in true.
+
+Explanation:
+In boolean logic, when both operands of an AND operation are true, the result is true. In this case, both 'True' and 'True' are true, so the output is true.
+
+Common mistake note:
+A common mistake would be to choose 'C' because some might think that there's no defined value for two true values combined, but logical AND specifically combines truth values.
+------------------------------------------------------------------------------
+
+Problem 4 (Sdfg):
+What happens when you perform a logical AND operation on a true value and an undefined value?
+A) True
+B) False
+C) Undefined
+D) An error occurs
+Correct Answer: C
+
+Solution:
+When performing a logical AND operation (∧) with one operand being undefined, the result is also undefined.
+
+Explanation:
+In boolean logic, when an operation involves an undefined value, the overall result is undefined because there's no clear truth value for 'undefined'.
+
+Common mistake note:
+A common mistake would be to choose 'A' or 'B', assuming that the true value would somehow determine the outcome, but with an undefined value, the result is indeterminate.
+------------------------------------------------------------------------------
+
+Problem 5 (Xsda):
+What is the output of the expression (False ∧ 0)?
+A) True
+B) False
+C) Zero
+D) One
+Correct Answer: B
+
+Solution:
+The logical AND operation (∧) on a false value and a numeric zero results in false.
+
+Explanation:
+In boolean logic, the truth value of a non-boolean value like 0 is determined by whether it's considered 'truthy' or 'falsy'. In many programming languages, 0 is considered falsy. When combined with a false value using logical AND, the result is false.
+
+Common mistake note:
+A common mistake would be to choose 'C' or 'D', assuming that the numeric values themselves determine the outcome, but in boolean logic, truthiness/‌falsiness matters.
+------------------------------------------------------------------------------
+
+Problem 6 (Bvcx):
+What happens when you perform a logical AND operation on two different truthy numbers?
+A) True
+B) False
+C) The smaller number
+D) The larger number
+Correct Answer: A
+
+Solution:
+When performing a logical AND operation (∧) on two truthy numbers, the result is true as long as both are truthy.
+
+Explanation:
+In boolean logic, truth values of non-boolean values like numbers depend on whether they're considered 'truthy' or 'falsy'. If both numbers are truthy (non-zero), the logical AND operation will return true.
+
+Common mistake note:
+A common mistake would be to choose 'B', assuming that combining two different numbers results in a falsy value, but with logical AND and truthy numbers, it's about checking if they're both truthy.
+------------------------------------------------------------------------------
+
+Problem 7 (Nmlk):
+What is the result of the expression (True ∧ 3.14)?
+A) True
+B) False
+C) 3.14
+D) A floating-point number
+Correct Answer: A
+
+Solution:
+The logical AND operation (∧) on a true value and a non-zero numeric value results in true.
+
+Explanation:
+In boolean logic, truth values of non-boolean values like numbers depend on whether they're considered 'truthy' or 'falsy'. A non-zero number like 3.14 is considered truthy, so when combined with a true value using logical AND, the result is true.
+
+Common mistake note:
+A common mistake would be to choose 'C' or 'D', assuming that the numeric value itself determines the outcome, but in boolean logic, truthiness/‌falsiness matters.
+------------------------------------------------------------------------------

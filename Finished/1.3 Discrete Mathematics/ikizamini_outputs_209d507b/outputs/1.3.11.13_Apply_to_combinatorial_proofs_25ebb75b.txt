@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.11.13 Apply to combinatorial proofs
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.11 Binomial Theorem
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (OneToOneCorrespondence):
+Prove that the number of ways to choose 3 distinct items from a set of 5 is equal to the number of ways to partition the set into three non-empty subsets.
+A) Use a bijection between choosing 3 items and partitioning. For each choice, create a unique subset by assigning one item to each part.
+B) Count the number of combinations directly: C(5,3) = 10 for choosing items and count partitions manually: (3-1)! * 2^2 = 8.
+C) Use stars and bars to represent choosing items and then show that it can be mapped to a partition problem.
+D) Prove by contradiction: Assume the counts are different, then derive a contradiction from the fact that both count subsets of size 3.
+Correct Answer: A
+
+Solution:
+We can prove this by establishing a one-to-one correspondence between choosing 3 items and partitioning the set. For each choice of 3 items, we create a unique partition by assigning one item to each part (one part for each chosen item and one part for the remaining two). This shows that both counts are equal, as each method gives rise to distinct outcomes.
+
+Explanation:
+A bijection is a function that maps elements from one set to another in such a way that each element in the first set has exactly one corresponding element in the second set. In this case, the bijection establishes an equality between the two counts.
+
+Common mistake note:
+Common mistake: Choosing B. While it's correct to calculate the number of combinations directly and count partitions manually, this approach does not demonstrate a combinatorial proof. A combinatorial proof requires showing that the two counts are equal by establishing a correspondence or bijection between them.
+------------------------------------------------------------------------------
+
+Problem 2 (InclusionExclusion):
+Prove that the number of ways to choose 3 items from a set of 7, where order doesn't matter and repetitions are allowed, is equal to the sum of the number of ways to choose 0, 1, 2, or 3 items without repetition.
+A) Use the Inclusion-Exclusion Principle: C(7,3) = C(7,0) + C(7,1) + C(7,2) - C(7,3).
+B) Count the number of ways directly: C(7+3-1, 3) = C(9,3), which is equal to the sum of combinations without repetition.
+C) Use stars and bars with repetition: (7+3-1) choose (3-1). This equals the sum of combinations without repetition.
+D) Prove by contradiction: Assume the counts are different, then show that it leads to a contradiction in the total number of possible selections.
+Correct Answer: B
+
+Solution:
+We can prove this using the stars and bars method with repetition. The number of ways to choose 3 items from a set of 7 with repetitions is given by C(7+3-1, 3) = C(9,3). This is equivalent to the sum of combinations without repetition: C(7,0) + C(7,1) + C(7,2) + C(7,3), as each term represents the number of ways to choose a specific number of items (from 0 to 3) without repetition.
+
+Explanation:
+The stars and bars method with repetition counts the number of ways to distribute 'stars' (items) into 'bars' (positions). In this case, we have 7 items and 3 positions, so we need to count the arrangements of stars and bars, which is C(9,3). This is equivalent to summing combinations without repetition because each term represents a different number of items chosen.
+
+Common mistake note:
+Common mistake: Choosing A. The Inclusion-Exclusion Principle is used for counting subsets with restrictions, but in this case, there are no restrictions on repetitions. Thus, it's not applicable here.
+------------------------------------------------------------------------------
+
+Problem 3 (DoubleCounting):
+Prove that the number of ways to choose 2 distinct items from a set of 6, where order matters, is equal to the number of ways to arrange these 2 chosen items.
+A) Use double counting: count the number of ways to choose 2 items and then arrange them, which gives 6C2 * 2! = 30. This equals the number of permutations of 2 items from 6, P(6,2) = 30.
+B) Count the number of ways directly: C(6,2) = 15 for choosing items and P(2,2) = 2 for arranging them. The product is 30, which matches the permutations of 2 items from 6.
+C) Use a bijection between choosing items and arranging them by considering each arrangement as a choice followed by an ordering within that choice.
+D) Prove by contradiction: Assume the counts are different, then show that it leads to a contradiction in the total number of possible selections.
+Correct Answer: A
+
+Solution:
+We can prove this using double counting. First, we count the number of ways to choose 2 items from a set of 6, which is C(6,2) = 15. Then, we arrange these 2 chosen items, which gives 2! = 2 arrangements. The product of these counts, 15 * 2 = 30, equals the number of permutations of 2 items from 6, P(6,2) = 30.
+
+Explanation:
+Double counting involves counting the same set in two different ways to establish an equality. In this case, we count the combinations of choosing 2 items and the arrangements of those items, which both give us the total number of permutations for selecting 2 items from a set of 6.
+
+Common mistake note:
+Common mistake: Choosing B. While it's correct to calculate the number of choices and arrangements separately, this approach does not demonstrate a combinatorial proof. A combinatorial proof requires showing that the two counts are equal by using double counting or establishing a correspondence.
+------------------------------------------------------------------------------
+
+Problem 4 (PartitioningSets):
+Prove that the number of ways to partition a set of 8 elements into 3 non-empty subsets is equal to the number of ways to arrange these 8 elements into a row with no restrictions.
+A) Use a bijection: for each partition, create an arrangement by placing the smallest element from each subset first, followed by the remaining elements in any order.
+B) Count the number of partitions directly using Stirling numbers of the second kind and count arrangements using permutations: P(8,8) = 40320.
+C) Use stars and bars to represent both partitioning and arranging, then show that they are equivalent.
+D) Prove by contradiction: Assume the counts are different, then show that it leads to a contradiction in the total number of possible arrangements.
+Correct Answer: A
+
+Solution:
+We can prove this by establishing a bijection between partitions and arrangements. For each partition of 8 elements into 3 non-empty subsets, we create an arrangement by placing the smallest element from each subset first, followed by the remaining elements in any order. This ensures that each partition corresponds to a unique arrangement and vice versa.
+
+Explanation:
+A bijection is a function that maps elements from one set to another in such a way that each element in the first set has exactly one corresponding element in the second set. In this case, the bijection demonstrates an equality between the counts of partitions and arrangements by showing how each partition can be uniquely represented as an arrangement.
+
+Common mistake note:
+Common mistake: Choosing B. While it's correct to calculate the number of partitions using Stirling numbers of the second kind and count arrangements using permutations, this approach does not demonstrate a combinatorial proof. A combinatorial proof requires showing that the two counts are equal by establishing a correspondence or bijection between them.
+------------------------------------------------------------------------------
+
+Problem 5 (StarsAndBars):
+Prove that the number of ways to distribute 5 identical balls into 3 distinct boxes is equal to the number of non-negative integer solutions to the equation x + y + z = 5.
+A) Use stars and bars: C(5+3-1, 3) = C(7,3) represents the number of ways to distribute balls into boxes. This equals the number of solutions using stars and bars for the equation.
+B) Count the number of ways directly: There are 6 possible configurations (0,5), (1,4), (2,3), (3,2), (4,1), (5,0) for distributing balls into boxes. This equals the number of solutions to the equation.
+C) Use generating functions: The coefficient of x^5 in (1+x+x^2+x^3+x^4+x^5)^3 is C(5+3-1, 3) = C(7,3), which represents both counts.
+D) Prove by contradiction: Assume the counts are different, then show that it leads to a contradiction in the total number of possible distributions.
+Correct Answer: A
+
+Solution:
+We can prove this using stars and bars. The number of ways to distribute 5 identical balls into 3 distinct boxes is represented by C(5+3-1, 3) = C(7,3). This is equivalent to the number of non-negative integer solutions to the equation x + y + z = 5, as each solution can be visualized as placing 'stars' for balls and 'bars' for dividing boxes in a row.
+
+Explanation:
+Stars and bars is a combinatorial technique that counts the number of ways to distribute objects into bins by treating identical objects as indistinguishable. In this case, we have 5 stars (balls) and 2 bars (dividing lines), which gives C(7,3) arrangements, corresponding to the number of solutions for x + y + z = 5.
+
+Common mistake note:
+Common mistake: Choosing B. While it's correct to count the configurations directly, this approach does not demonstrate a combinatorial proof. A combinatorial proof requires showing that the two counts are equal by using stars and bars or another technique.
+------------------------------------------------------------------------------
+
+Problem 6 (CombinatorialIdentity):
+Prove that C(n+r-1,n) = C(r+n-1,r), where C(n,k) represents combinations.
+A) Use a bijection: for each combination of n items from a set of n+r-1, create another combination by swapping the positions of an item and one of the 'r' placeholders.
+B) Count the number of combinations directly using two different methods and show that they are equal: C(n+r-1,n) = (n+r-1)! / [n!(r-1)!] and C(r+n-1,r) = (r+n-1)! / [r!(n-1)!].
+C) Use the identity C(n,k) = C(n-1,k-1) + C(n-1,k), then apply it recursively to both sides until one side reduces to C(0,0).
+D) Prove by contradiction: Assume the counts are different, then show that it leads to a contradiction in the total number of possible combinations.
+Correct Answer: A
+
+Solution:
+We can prove this identity using a bijection. For each combination of n items from a set of n+r-1, we create another combination by swapping the positions of an item and one of the 'r' placeholders (treated as distinct). This bijection ensures that both counts are equal.
+
+Explanation:
+A bijection is a function that maps elements from one set to another in such a way that each element in the first set has exactly one corresponding element in the second set. In this case, the bijection demonstrates an equality between C(n+r-1,n) and C(r+n-1,r) by showing how each combination can be uniquely mapped to another combination.
+
+Common mistake note:
+Common mistake: Choosing B. While it's correct to count combinations directly using factorials, this approach does not demonstrate a combinatorial proof. A combinatorial proof requires showing that the two counts are equal by establishing a correspondence or bijection between them.
+------------------------------------------------------------------------------
+
+Problem 7 (InclusionExclusionPrinciple):
+Prove that C(n+r,k) = sum over i from 0 to k of (-1)^(k-i) * C(r,i) * C(n+i,k-i), where C(n, k) represents combinations.
+A) Use the Inclusion-Exclusion Principle: count the number of ways to choose k items from n+r, considering cases with different numbers of r items chosen (0 to k).
+B) Count the number of combinations directly using two different methods and show that they are equal: C(n+r,k) = (n+r)! / [k!(n+r-k)!] and the sum over i.
+C) Use generating functions: The coefficient of x^k in (1+x)^r * (1+x)^n is C(r+n, k), which can be expanded using the binomial theorem to match the given identity.
+D) Prove by contradiction: Assume the counts are different, then show that it leads to a contradiction in the total number of possible combinations.
+Correct Answer: A
+
+Solution:
+We can prove this identity using the Inclusion-Exclusion Principle. We count the number of ways to choose k items from n+r by considering cases where 0 to k items are chosen from the r items, then applying the principle to eliminate overcounting and undercounting.
+
+Explanation:
+The Inclusion-Exclusion Principle is used for counting subsets with restrictions or overlapping categories. In this case, it helps us count combinations of k items from n+r by considering all possible combinations of choosing r items and subtracting or adding back the overcounted cases.
+
+Common mistake note:
+Common mistake: Choosing B. While it's correct to count combinations directly using factorials, this approach does not demonstrate a combinatorial proof using the Inclusion-Exclusion Principle. A combinatorial proof requires showing that the two counts are equal by applying the principle.
+------------------------------------------------------------------------------

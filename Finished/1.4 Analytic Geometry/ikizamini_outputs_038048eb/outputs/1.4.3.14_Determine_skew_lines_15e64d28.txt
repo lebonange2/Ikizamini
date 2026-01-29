@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.3.14 Determine skew lines
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.3 Lines and Planes in 3D
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Infinite_Parallel_Planes):
+Which of the following best describes two skew lines?
+A) They intersect at a single point.
+B) They lie on the same plane.
+C) They are parallel and have different slopes.
+D) They never intersect and do not lie on the same plane.
+Correct Answer: D
+
+Solution:
+Skew lines are两条永不相交且不在同一平面内的直线。选项A描述的是相交线，B描述的是共面线，C描述的可能是平行线（但没有说明是否在同一平面内），而D准确地描述了 skew lines 的特征。
+
+Explanation:
+Skew lines never intersect and do not lie in the same plane, making option D the correct choice.
+
+Common mistake note:
+A common mistake would be to choose C, assuming that parallel lines must always be coplanar. However, this is not true for skew lines, which are parallel but exist in separate planes.
+------------------------------------------------------------------------------
+
+Problem 2 (Intersection_and_Skew):
+If two lines intersect at a single point and another pair of lines do not intersect and are not coplanar, what can be said about the relationship between these two pairs of lines?
+A) They are all skew.
+B) The intersecting lines are skew to the non-intersecting lines.
+C) The non-intersecting lines are skew to each other.
+D) None of the above.
+Correct Answer: C
+
+Solution:
+Since the two pairs of lines have different characteristics, we can analyze them separately. The intersecting lines form a single point of intersection and do not affect the relationship between the non-intersecting lines. The non-_intersecting and non-coplanar lines are skew to each other.
+
+Explanation:
+The key information is that the non-intersecting lines are not coplanar, which means they must be skew regardless of the intersection status of the other pair.
+
+Common mistake note:
+A common mistake would be to choose A, assuming that all lines involved must be skew. However, the intersecting lines do not affect the skew relationship between the non-intersecting lines.
+------------------------------------------------------------------------------
+
+Problem 3 (Skew_and_Coplanar):
+Which of the following statements is true about skew and coplanar lines?
+A) All skew lines are also coplanar.
+B) No two skew lines can be in the same plane.
+C) Coplanar lines cannot be skew.
+D) Some skew lines may be coplanar if they are part of a complex 3D figure.
+Correct Answer: B
+
+Solution:
+Skew lines are by definition not coplanar, meaning they do not lie in the same plane. Therefore, no two skew lines can be coplanar.
+
+Explanation:
+The defining characteristic of skew lines is that they never intersect and do not share a common plane.
+
+Common mistake note:
+A common mistake would be to choose A or D, confusing skew lines with parallel lines in 3D space. Skew lines are specifically defined as being non-intersecting and non-coplanar.
+------------------------------------------------------------------------------
+
+Problem 4 (Skew_in_3D_Space):
+In a 3D coordinate system, two lines have the equations: Line 1: x = 2t, y = t, z = 3t and Line 2: x = s + 1, y = 2s - 1, z = 4s + 2. Are these lines skew?
+A) Yes
+B) No
+C) Cannot be determined with the given information.
+D) Depends on the values of t and s.
+Correct Answer: A
+
+Solution:
+To determine if the lines are skew, we need to check if they intersect or are coplanar. The direction vectors for both lines (Line 1: <2, 1, 3>, Line 2: <1, 2, 4>) are not parallel since their cross product is <-5, -5, -5>, which is non-zero. Since they have different directions and do not share a point in common, the lines must be skew.
+
+Explanation:
+The cross product of the direction vectors being non-zero indicates that the lines are not parallel, and thus, if they don't intersect, they must be skew.
+
+Common mistake note:
+A common mistake would be to assume that since we have parametric equations, it's impossible to determine if the lines are skew without knowing specific values for t and s. However, analyzing their direction vectors is sufficient.
+------------------------------------------------------------------------------
+
+Problem 5 (Skew_and_Plane):
+Given a plane defined by the equation 2x + 3y - z = 5, which of the following lines would be skew to this plane?
+A) x = 1, y = t, z = 2t
+B) x = s, y = s, z = s
+C) x = 2s + 1, y = 3s - 1, z = s
+D) x = t, y = 2t, z = 3t
+Correct Answer: C
+
+Solution:
+A line is skew to a plane if it does not intersect or lie in the plane. To check this, we can substitute each line's equation into the plane equation and see if it has a solution for t or s that makes the equation true. Line C does not have a solution (since 2(2s + 1) + 3(3s - 1) - s ≠ 5), indicating that it is skew to the given plane.
+
+Explanation:
+Substituting line equations into the plane equation helps determine if they intersect or are coplanar. If there's no solution, the line is skew to the plane.
+
+Common mistake note:
+A common mistake would be to choose a line that intersects or lies in the plane by finding a value for t or s that satisfies the plane equation.
+------------------------------------------------------------------------------
+
+Problem 6 (Skew_and_Coordinates):
+Consider two lines with the following points: Line 1: (1, 2, 3), (4, 5, 6) and Line 2: (7, 8, 9), (10, 11, 12). Are these lines skew?
+A) Yes
+B) No
+C) Cannot be determined with the given information.
+D) Depends on the coordinates of other points on the lines.
+Correct Answer: C
+
+Solution:
+To determine if two lines are skew, we need to know their equations or at least whether they intersect at a point. With only two points from each line, it's not possible to determine if they are skew or coplanar.
+
+Explanation:
+Knowing just two points on each line is insufficient to conclude anything about the skewness of the lines; more information is needed.
+
+Common mistake note:
+A common mistake would be to assume that since we have coordinates, it's possible to determine if the lines are skew. However, without equations or additional points, we cannot make a conclusion.
+------------------------------------------------------------------------------
+
+Problem 7 (Skew_and_Coplanar_Example):
+In the following 3D figure, which pair of lines is skew?
+A) Line AB and Line CD
+B) Line EF and Line GH
+C) Line AB and Line EF
+D) Line CD and Line GH
+Correct Answer: B
+
+Solution:
+By observing the 3D figure, we can see that lines EF and GH do not intersect and are not coplanar with each other. They must be skew.
+
+Explanation:
+Visual inspection of a 3D figure can help identify skew lines if they don't intersect and are in different planes.
+
+Common mistake note:
+A common mistake would be to choose A, C, or D based on the appearance of the lines in the figure. However, it's essential to ensure that the lines do not share a plane as well as not intersecting.
+------------------------------------------------------------------------------

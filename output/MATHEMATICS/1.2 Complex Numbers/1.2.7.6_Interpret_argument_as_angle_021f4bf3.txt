@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.7.6 Interpret argument as angle
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.7 Argand Diagrams and Geometric Interpretation
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the angle, in radians, between the hands of a clock at 3:00 PM?
+A) π/2
+B) π
+C) 3π/4
+D) 5π/6
+Correct Answer: C
+
+Solution:
+At 3:00 PM, the hour hand is at 3 and the minute hand is at 12. The angle difference is 3 full rotations (180°) plus half a rotation for the hour hand. In radians: (3 * π/2) + (π/4) = 7π/4. Adjusting for angles between 0 and 2π: 7π/4 - 2π = 3π/4.
+
+Explanation:
+The correct answer is C because it represents the angle formed by the hands after converting degrees to radians and adjusting for angles in [0, 2π].
+
+Common mistake note:
+A common mistake is to choose A (π/2) which applies at 12:00 or 6:00, not 3:00. Another error might be forgetting to convert from degrees to radians.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is the argument of the complex number -4i in radians?
+A) -π/2
+B) π/2
+C) π
+D) 3π/2
+Correct Answer: A
+
+Solution:
+For a purely imaginary number like -4i, its real part is 0 and the imaginary part is -4. The argument in radians is -π/2 since it lies on the negative imaginary axis.
+
+Explanation:
+The correct answer is A because -4i lies on the negative imaginary axis with an argument of -π/2. Positive imaginary numbers have an argument of π/2.
+
+Common mistake note:
+A common mistake is to choose B (π/2) for positive imaginary numbers like 4i. Another error might be forgetting that the argument is in radians.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+What is the angle between the vectors θ = <1, 2> and ι = <-2, 1> in radians?
+A) π/4
+B) π/3
+C) π/2
+D) 3π/4
+Correct Answer: D
+
+Solution:
+The angle θ between two vectors can be found using the dot product: cos(θ) = (θ·ι) / (||θ|| ||ι||). For θ = <1, 2> and ι = <-2, 1>, cos(θ) = (-2 + 2) / (√5 √5) = 0. The angle is π/2 or 3π/4. Since the vectors aren't parallel, choose the acute angle: 3π/4.
+
+Explanation:
+The correct answer is D because the dot product gives a cosine of 0, indicating an angle of π/2 or 3π/4. Choose 3π/4 since they're not parallel.
+
+Common mistake note:
+A common mistake is to choose C (π/2) for orthogonal vectors, but this question asks for the actual angle. Another error might be forgetting magnitudes in the dot product.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Given a complex number with argument 3π/2, what's its real part in rectangular form?
+A) 0
+B) 1
+C) -1
+D) ±1
+Correct Answer: A
+
+Solution:
+At an argument of 3π/2, a complex number lies on the negative imaginary axis. In rectangular form (a + bi), 'a' is always 0.
+
+Explanation:
+The correct answer is A because at an argument of 3π/2, the real part is 0 for numbers on the imaginary axis.
+
+Common mistake note:
+A common mistake is to choose B (1) or C (-1), which applies to other angles. Another error might be assuming a positive real part.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the angle between the x-axis and the line through points (1, 0) and (4, 3) in radians.
+A) π/6
+B) π/4
+C) π/3
+D) π/2
+Correct Answer: B
+
+Solution:
+The slope is m = (3 - 0) / (4 - 1) = 1. The angle θ with the x-axis is arctan(m) = π/4.
+
+Explanation:
+The correct answer is B because a slope of 1 corresponds to an angle of π/4 with the x-axis.
+
+Common mistake note:
+A common mistake is to choose A (π/6) or C (π/3), which match other slopes. Another error might be forgetting arctan's range.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the argument of the complex number 3√3 + 3i in radians.
+A) π/6
+B) π/4
+C) π/3
+D) π/2
+Correct Answer: C
+
+Solution:
+The magnitude is r = √((3√3)² + 3²) = 6. The argument is arctan(1/√3) = π/6, so the principal value is 11π/6.
+
+Explanation:
+The correct answer is C because the polar form has magnitude 6 and angle π/6. The principal value is 11π/6.
+
+Common mistake note:
+A common mistake is to choose A (π/6) without considering the principal value. Another error might be using incorrect conversion formulas.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the angle between vectors θ = <2, 1> and ι = <-1, 2> in degrees.
+A) 45°
+B) 60°
+C) 90°
+D) 120°
+Correct Answer: C
+
+Solution:
+The dot product gives a cosine of 0, indicating an angle of π/2 or 90° in radians. In degrees: 90°.
+
+Explanation:
+The correct answer is C because the vectors are orthogonal, corresponding to a 90° angle in degrees.
+
+Common mistake note:
+A common mistake is to choose B (60°) for an acute angle. Another error might be forgetting to convert from radians to degrees.
+------------------------------------------------------------------------------

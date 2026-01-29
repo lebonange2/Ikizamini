@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.15.8",
+  "objective_text": "Apply to circuit analysis (RC, RL circuits)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "A simple RC circuit has a resistance of 100 ohms and a capacitance of 1 microfarad. What is the time constant of the circuit in seconds?",
+      "choices": {
+        "A": "0.1",
+        "B": "1",
+        "C": "10",
+        "D": "100"
+      },
+      "correct_choice": "B",
+      "solution": "The time constant (τ) of an RC circuit is given by τ = RC. Plugging in the values, we get τ = 100 ohms * 1 microfarad = 100 * 10^-6 seconds = 0.001 seconds or 1 millisecond.",
+      "explanation": "The time constant determines how quickly the capacitor charges or discharges through the resistor.",
+      "common_mistake_notes": "A common mistake is to forget to convert the capacitance from microfarads to farads (1 microfarad = 10^-6 farads)."
+    },
+    {
+      "id": ":Q2",
+      "stem": "In an RL circuit, a coil with an inductance of 5 H and a resistance of 2 ohms is connected to a voltage source. What is the time constant of the circuit in seconds?",
+      "choices": {
+        "A": "10",
+        "B": "2",
+        "C": "2.5",
+        "D": "0.5"
+      },
+      "correct_choice": "A",
+      "solution": "The time constant (τ) of an RL circuit is given by τ = L/R, where L is the inductance and R is the resistance. Plugging in the values, we get τ = 5 H * 2 ohms = 10 seconds.",
+      "explanation": "The time constant determines how quickly the current builds up or decays through the inductor.",
+      "common_mistake_notes": "A common mistake is to confuse the units of inductance (Henry) with resistance (ohm)."
+    },
+    {
+      "id": ":Q3",
+      "stem": "An RC circuit has a time constant of 0.5 seconds. If the capacitance is doubled, what will be the new time constant?",
+      "choices": {
+        "A": "1",
+        "B": "0.25",
+        "C": "2",
+        "D": "0.1"
+      },
+      "correct_choice": "A",
+      "solution": "The time constant (τ) of an RC circuit is given by τ = RC. If the capacitance (C) is doubled, the new time constant will be τ' = 2C * R = 2τ.",
+      "explanation": "Doubling the capacitance doubles the time it takes for the capacitor to charge or discharge through the resistor.",
+      "common_mistake_notes": "A common mistake is to think that doubling the capacitance would have no effect on the time constant, which is not true."
+    },
+    {
+      "id": ":Q4",
+      "stem": "An RL circuit has a time constant of 10 milliseconds. If the inductance is halved, what will be the new time constant?",
+      "choices": {
+        "A": "20",
+        "B": "5",
+        "C": "0.5",
+        "D": "0.05"
+      },
+      "correct_choice": "B",
+      "solution": "The time constant (τ) of an RL circuit is given by τ = L/R, where L is the inductance. If the inductance (L) is halved, the new time constant will be τ' = (L/2)/R = 0.5τ.",
+      "explanation": "Halving the inductance halves the time it takes for the current to build up or decay through the inductor.",
+      "common_mistake_notes": "A common mistake is to think that halving the inductance would have no effect on the time constant, which is not true."
+    },
+    {
+      "id": ":Q5",
+      "stem": "An RC circuit has a resistance of 10 ohms and a capacitance of 2 microfarads. If a voltage of 5 volts is applied to the circuit, what will be the charge on the capacitor after one time constant?",
+      "choices": {
+        "A": "5 coulombs",
+        "B": "0.5 coulombs",
+        "C": "1 coulomb",
+        "D": "0.25 coulombs"
+      },
+      "correct_choice": "C",
+      "solution": "The charge (Q) on the capacitor after time t is given by Q = V(1 - e^(-t/τ)), where V is the voltage, τ is the time constant, and e is the base of the natural logarithm. For one time constant (t = τ), we have Q = V(1 - e^(-1)). Plugging in the values, we get Q = 5V * (1 - e^(-0.5)) ≈ 5V * (1 - 0.607) ≈ 1 coulomb.",
+      "explanation": "The charge on the capacitor approaches the applied voltage as time passes, but never reaches it exactly due to the exponential decay.",
+      "common_mistake_notes": "A common mistake is to assume that the charge would be equal to the applied voltage after one time constant, which is not true."
+    },
+    {
+      "id": ":Q6",
+      "stem": "An RL circuit has a resistance of 5 ohms and an inductance of 1 H. If a current of 2 amperes flows through the circuit at t=0, what will be the current after one time constant?",
+      "choices": {
+        "A": "0 amperes",
+        "B": "2 amperes",
+        "C": "1 amperes",
+        "D": "4 amperes"
+      },
+      "correct_choice": "C",
+      "solution": "The current (I) in an RL circuit at time t is given by I = I_0 * e^(-t/τ), where I_0 is the initial current, τ is the time constant, and e is the base of the natural logarithm. For one time constant (t = τ), we have I = I_0 * e^(-1). Plugging in the values, we get I = 2A * e^(-1) ≈ 2A * 0.368 ≈ 0.736A ≈ 1A.",
+      "explanation": "The current decreases exponentially from its initial value as time passes, but never reaches zero exactly due to the exponential decay.",
+      "common_mistake_notes": "A common mistake is to assume that the current would be equal to zero after one time constant, which is not true."
+    },
+    {
+      "id": ":Q7",
+      "stem": "An RC circuit has a time constant of 2 seconds. If the voltage across the capacitor reaches 80% of its final value after t seconds, what is the approximate value of t?",
+      "choices": {
+        "A": "1.5",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_choice": "A",
+      "solution": "The charge on the capacitor as a percentage of its final value (V/V_f) after time t is given by (V/V_f) = 1 - e^(-t/τ). To find t when the voltage reaches 80% of its final value, we set up the equation 0.8 = 1 - e^(-t/2), which simplifies to e^(-t/2) = 0.2. Taking natural logarithms on both sides gives us -t/2 = ln(0.2). Solving for t, we get t ≈ 2 * ln(0.2) ≈ 1.5 seconds.",
+      "explanation": "The voltage across the capacitor approaches its final value exponentially, so we can use the natural logarithm to solve for the time when it reaches a certain percentage.",
+      "common_mistake_notes": "A common mistake is to assume that the time would be directly proportional to the percentage reached, which is not true due to the exponential nature of the decay."
+    }
+  ]
+}

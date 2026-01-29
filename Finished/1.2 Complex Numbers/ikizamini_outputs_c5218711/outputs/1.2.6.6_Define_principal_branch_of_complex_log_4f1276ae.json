@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.6.6",
+  "objective_text": "Define principal branch of complex log",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the principal branch of the complex logarithm function?",
+      "choices": {
+        "A": "log(z) for all z in C",
+        "B": "ln(|z|) + arg(z), where arg(z) is in [0, 2π)",
+        "C": "ln(|z|) + i(arg(z)), where arg(z) is in [-π, π)",
+        "D": "ln(|z|) + i(arg(z)), where arg(z) is in (-π, π]"
+      },
+      "correct_choice": "C",
+      "solution": "The principal branch of the complex logarithm function, denoted as ln(z), has a range of (-π, π] for the imaginary part (argument) to ensure it's single-valued. Therefore, option C is correct.",
+      "explanation": "The principal branch of the complex log function selects one value from the infinite set of values that satisfy the logarithm property.",
+      "common_mistake_notes": "A common mistake is to choose option A, which represents the natural logarithm for all complex numbers without considering the single-valued nature of the principal branch. Option B omits the imaginary part of the complex log, and option D uses an incorrect range for the argument."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which of the following expressions represents the principal value of the logarithm of z = 2 + 3i?",
+      "choices": {
+        "A": "ln(2 + 3i)",
+        "B": "ln(sqrt(13)) + i(arctan(3/2))",
+        "C": "ln(sqrt(13)) + i(pi/4)",
+        "D": "ln(sqrt(13)) + i(-pi/4)"
+      },
+      "correct_choice": "B",
+      "solution": "The principal value of the logarithm of z = 2 + 3i can be found by calculating the modulus and argument. The modulus is sqrt(2^2 + 3^2) = sqrt(13), and the argument is arctan(3/2). Using option B with ln(sqrt(13)) + i(arctan(3/2)), we get the principal value.",
+      "explanation": "The principal branch of the complex log function requires both modulus and argument to be within their respective ranges. In this case, the argument is in (-π, π].",
+      "common_mistake_notes": "A common mistake would be to choose option C or D, which represent other possible values for the logarithm but not the principal value."
+    },
+    {
+      "id": "Asdf",
+      "stem": "The principal branch of the complex logarithm function is denoted by which symbol?",
+      "choices": {
+        "A": "ln(z)",
+        "B": "log(z)",
+        "C": "Log(z)",
+        "D": "Log<sub>π</sub>(z)"
+      },
+      "correct_choice": "A",
+      "solution": "The principal branch of the complex logarithm function is typically denoted as ln(z). This symbol distinguishes it from other branches and natural logarithms.",
+      "explanation": "In complex analysis, the principal branch is often represented with a lowercase 'ln' to emphasize its single-valued nature.",
+      "common_mistake_notes": "A common mistake would be to choose option B (log(z)), which could refer to the natural logarithm in some contexts or other branches of the complex logarithm. Option C and D are not standard notations for the principal branch."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the value of the principal logarithm of -1?",
+      "choices": {
+        "A": "0",
+        "B": "iπ",
+        "C": "-iπ",
+        "D": "ln(1) + i(π/2)"
+      },
+      "correct_choice": "B",
+      "solution": "The principal logarithm of -1 can be found using Euler's formula, e^(iπ) = -1. Taking the logarithm of both sides gives us ln(-1) = iπ.",
+      "explanation": "The principal branch ensures a single-valued result by restricting the argument to the range (-π, π]. In this case, the argument is π.",
+      "common_mistake_notes": "A common mistake would be to choose option C (-iπ), which is one of the many possible values for the logarithm of -1 but not the principal value. Option A and D represent other logarithmic expressions that do not correspond to the principal branch."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which of the following represents the principal logarithm of 1?",
+      "choices": {
+        "A": "ln(1) + i(2πk), k ∈ Z",
+        "B": "ln(1) + i(0)",
+        "C": "ln(|1|) + i(arg(1))",
+        "D": "ln(|1|) + i(2π)"
+      },
+      "correct_choice": "B",
+      "solution": "The principal logarithm of 1 is ln(1) + i(0), as the modulus of 1 is 1 and its argument is 0. Option B represents this value correctly.",
+      "explanation": "The principal branch selects a single value for the logarithm, in this case, where the argument is 0.",
+      "common_mistake_notes": "A common mistake would be to choose option A, which represents an infinite set of values for the logarithm but not the principal value. Option C and D use incorrect ranges or values for the argument."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the relationship between the principal logarithm of a complex number z and its polar form?",
+      "choices": {
+        "A": "ln(z) = ln(|z|) + i(arg(z)), where arg(z) is in (-π, π]",
+        "B": "ln(z) = ln(|z|) + i(2arg(z)), where arg(z) is in [0, 2π)",
+        "C": "ln(z) = ln(|z|) + i(arg(z) + 2πk), k ∈ Z",
+        "D": "ln(z) = ln(|z|) + i(arg(z) - π)"
+      },
+      "correct_choice": "A",
+      "solution": "The relationship between the principal logarithm of a complex number z and its polar form is given by ln(z) = ln(|z|) + i(arg(z)), where arg(z) is in (-π, π]. Option A represents this relationship correctly.",
+      "explanation": "In polar form, a complex number can be written as r(cosθ + i sinθ), where r is the modulus and θ is the argument. The principal logarithm uses the natural logarithm of the modulus and the restricted argument.",
+      "common_mistake_notes": "A common mistake would be to choose option C, which represents one of the many possible values for the logarithm but not the principal value. Options B and D use incorrect forms or ranges for the argument."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Given a complex number z = re^(iθ), what is the principal logarithm of z?",
+      "choices": {
+        "A": "ln(r) + i(θ)",
+        "B": "ln(r) + i(θ + 2πk), k ∈ Z",
+        "C": "ln(r) + i(θ - π)",
+        "D": "ln(r) + i(θ), θ in (-π, π]"
+      },
+      "correct_choice": "D",
+      "solution": "The principal logarithm of a complex number z = re^(iθ) is ln(r) + i(θ), where θ is in the range (-π, π]. Option D represents this value correctly.",
+      "explanation": "When a complex number is given in polar form, its principal logarithm can be found by taking the natural logarithm of the modulus and using the restricted argument within the principal branch.",
+      "common_mistake_notes": "A common mistake would be to choose option B, which represents an infinite set of values for the logarithm but not the principal value. Options A, C use incorrect ranges or forms for the argument."
+    }
+  ]
+}

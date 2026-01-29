@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.14.13",
+  "objective_text": "Apply to navigation systems",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "A user is navigating a map application and wants to find the fastest route from their current location to a destination. Which algorithm would be best suited for this task?",
+      "choices": {
+        "A": "Depth-First Search",
+        "B": "Breadth-First Search",
+        "C": "Dijkstra's Algorithm",
+        "D": "A* Search"
+      },
+      "correct_choice": "D",
+      "solution": "A* Search is designed to find the shortest or fastest path between two points, making it suitable for navigation systems. It uses heuristics to guide its search and often outperforms Dijkstra's Algorithm in terms of efficiency.",
+      "explanation": "Depth-First Search and Breadth-First Search are not optimized for finding the shortest path. Dijkstra's Algorithm is a good option but A* Search is typically faster due to its use of heuristics.",
+      "common_mistake_notes": "Choosing B or A, which don't guarantee the fastest route. Choosing C without considering efficiency for real-time navigation."
+    },
+    {
+      "id": "?",
+      "stem": "A navigation system needs to calculate the distance between two points on a map using their latitude and longitude coordinates. Which formula should be used?",
+      "choices": {
+        "A": "Euclidean Distance",
+        "B": "Manhattan Distance",
+        "C": "Great Circle Distance",
+        "D": "Haversine Formula"
+      },
+      "correct_choice": "D",
+      "solution": "The Haversine Formula is specifically designed to calculate the distance between two points on a sphere, like the Earth's surface. It gives accurate results for navigation purposes.",
+      "explanation": "Euclidean Distance and Manhattan Distance are flat surface calculations that don't account for the curvature of the Earth. Great Circle Distance is also suitable but computationally more complex than Haversine Formula.",
+      "common_mistake_notes": "Choosing A or B, which underestimate distance on a spherical surface. Choosing C without considering computational efficiency."
+    },
+    {
+      "id": "?",
+      "stem": "A navigation system is displaying real-time traffic updates to users. Which data source would be most appropriate?",
+      "choices": {
+        "A": "Static map data",
+        "B": "GPS signals from satellites",
+        "C": "User- generated reports via the app",
+        "D": "Data from traffic cameras and sensors"
+      },
+      "correct_choice": "D",
+      "solution": "Data from traffic cameras and sensors provides real-time updates on traffic conditions, making it ideal for navigation systems to give accurate information.",
+      "explanation": "Static map data doesn't change. GPS signals don't provide traffic information. User-generated reports may not be comprehensive or timely enough.",
+      "common_mistake_notes": "Choosing A, which doesn't offer real-time updates. Choosing B without considering lack of traffic data in GPS. Choosing C without acknowledging inconsistency in user-generated data."
+    },
+    {
+      "id": "?",
+      "stem": "A navigation system needs to estimate the arrival time at a destination based on current traffic conditions. Which factor should be considered in addition to distance?",
+      "choices": {
+        "A": "Average speed limit",
+        "B": "Road surface condition",
+        "C": "Weather forecast",
+        "D": "Current traffic flow"
+      },
+      "correct_choice": "D",
+      "solution": "Current traffic flow is crucial for estimating arrival times accurately, as it takes into account the actual speed of travel on the road at a given time.",
+      "explanation": "Average speed limit, road surface condition, and weather forecast can affect travel time but don't directly consider real-time traffic conditions.",
+      "common_mistake_notes": "Choosing A, which assumes constant speed. Choosing B or C without considering their indirect impact compared to real-time data."
+    },
+    {
+      "id": "?",
+      "stem": "A navigation system wants to suggest alternative routes in case of heavy traffic. Which strategy should it use?",
+      "choices": {
+        "A": "Randomly generate new paths",
+        "B": "Use Dijkstra's Algorithm with a high weight for traffic",
+        "C": "Implement A* Search with a low heuristic value",
+        "D": "Calculate the average speed on each road and choose the fastest"
+      },
+      "correct_choice": "B",
+      "solution": "Using Dijkstra's Algorithm with a high weight for traffic allows the system to consider alternative routes with less congestion, providing better suggestions.",
+      "explanation": "Randomly generating paths is not efficient or reliable. A* Search with a low heuristic may not find optimal alternatives. Calculating average speed doesn't account for real-time changes.",
+      "common_mistake_notes": "Choosing A, which doesn't guarantee good route suggestions. Choosing C without prioritizing less congested routes. Choosing D without considering real-time traffic data."
+    },
+    {
+      "id": "?",
+      "stem": "A navigation system is designing a user interface for voice commands. Which command would be most intuitive for changing the destination?",
+      "choices": {
+        "A": "Set new origin",
+        "B": "Change starting point",
+        "C": "Update my destination",
+        "D": "Move the map"
+      },
+      "correct_choice": "C",
+      "solution": "Updating the destination directly is a clear and straightforward command for users to understand when using voice commands in a navigation system.",
+      "explanation": "Set new origin, Change starting point, and Move the map can be ambiguous or refer to different actions.",
+      "common_mistake_notes": "Choosing A or B, which may confuse users as they relate to the starting location. Choosing D without considering it refers to a different action."
+    },
+    {
+      "id": "?",
+      "stem": "A navigation system needs to handle multiple destinations in a route planning scenario. Which algorithm would be efficient for this purpose?",
+      "choices": {
+        "A": "Depth-First Search",
+        "B": "Breadth-First Search",
+        "C": "Dijkstra's Algorithm",
+        "D": "Viterbi Algorithm"
+      },
+      "correct_choice": "B",
+      "solution": "Breadth-First Search is well-suited for finding the shortest path between multiple destinations, as it explores all possible routes efficiently.",
+      "explanation": "Depth-First Search can get stuck in loops. Dijkstra's Algorithm works for single destination problems. Viterbi Algorithm is used for probabilistic models and doesn't apply here.",
+      "common_mistake_notes": "Choosing A or C, which are not designed for multiple destinations. Choosing D without considering its relevance to probabilistic models."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.13.10",
+  "objective_text": "Apply cylindrical coordinates to surfaces",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the lateral surface area of a cylinder with radius 2 units and height 5 units using cylindrical coordinates.",
+      "choices": {
+        "A": "4π \n(2)(5) = 40π",
+        "B": "16π \n(2)^2(5) = 160π",
+        "C": "40π \n(2)(5) = 40π",
+        "D": "80π \n(2)^2(5) = 160π"
+      },
+      "correct_choice": "C",
+      "solution": "The lateral surface area of a cylinder is given by the formula A = 2πrh. Plugging in r = 2 units and h = 5 units gives us A = 2π(2)(5) = 40π square units.",
+      "explanation": "The lateral surface area of a cylinder is the part that wraps around it, not including the top and bottom circles. Choice A is incorrect because it uses the wrong formula (it's for the total surface area). Choices B and D are incorrect because they use the radius squared in the formula, which is unnecessary when calculating only the lateral surface area.",
+      "common_mistake_notes": "Common mistake: Using the total surface area formula instead of the lateral surface area formula."
+    },
+    {
+      "id": ":2",
+      "stem": "Calculate the volume of a right circular cone with height 6 units and base radius 3 units using cylindrical coordinates.",
+      "choices": {
+        "A": "18π \n\frac{1}{3}π(3)^2(6)",
+        "B": "18π \n\frac{1}{3}π(3)(6)",
+        "C": "54π \n\frac{1}{3}π(3)^2(6)",
+        "D": "72π \n\frac{1}{3}π(3)(6)"
+      },
+      "correct_choice": "A",
+      "solution": "The volume of a right circular cone is given by the formula V = \frac{1}{3}πr^2h. Plugging in r = 3 units and h = 6 units gives us V = \frac{1}{3}π(3)^2(6) = 18π cubic units.",
+      "explanation": "The volume of a cone is calculated using the formula provided, not the volume of a cylinder. Choice B is incorrect because it multiplies the radius by the height instead of squaring the radius. Choices C and D are incorrect because they use the wrong values for either the radius or the height.",
+      "common_mistake_notes": "Common mistake: Using the volume formula for a cylinder instead of a cone."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the lateral surface area of a right circular cylinder with base radius 4 units and height 7 units using cylindrical coordinates.",
+      "choices": {
+        "A": "56π \n(4)(7)",
+        "B": "112π \n(4)^2(7)",
+        "C": "168π \n(4)^2(7)",
+        "D": "224π \n(4)^2(7)"
+      },
+      "correct_choice": "B",
+      "solution": "The lateral surface area of a right circular cylinder is given by the formula A = 2πrh. Plugging in r = 4 units and h = 7 units gives us A = 2π(4)(7) = 56π square units.",
+      "explanation": "The lateral surface area of a cylinder does not include the top and bottom circles. Choice A is incorrect because it uses the wrong formula (it's for the total surface area). Choices C and D are incorrect because they use the radius squared in the formula, which is unnecessary when calculating only the lateral surface area.",
+      "common_mistake_notes": "Common mistake: Using the total surface area formula instead of the lateral surface area formula."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the volume of a right circular cone with base radius 5 units and height 8 units using cylindrical coordinates.",
+      "choices": {
+        "A": "100π \n\frac{1}{3}π(5)^2(8)",
+        "B": "200π \n\frac{1}{3}π(5)(8)",
+        "C": "400π \n\frac{1}{3}π(5)^2(8)",
+        "D": "600π \n\frac{1}{3}π(5)(8)"
+      },
+      "correct_choice": "A",
+      "solution": "The volume of a right circular cone is given by the formula V = \frac{1}{3}πr^2h. Plugging in r = 5 units and h = 8 units gives us V = \frac{1}{3}π(5)^2(8) = 100π cubic units.",
+      "explanation": "The volume of a cone is calculated using the formula provided, not the volume of a cylinder. Choice B is incorrect because it multiplies the radius by the height instead of squaring the radius. Choices C and D are incorrect because they use the wrong values for either the radius or the height.",
+      "common_mistake_notes": "Common mistake: Using the volume formula for a cylinder instead of a cone."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the curved surface area of a right circular cylinder with base radius 6 units and height 9 units using cylindrical coordinates.",
+      "choices": {
+        "A": "108π \n(6)(9)",
+        "B": "216π \n(6)^2(9)",
+        "C": "324π \n(6)^2(9)",
+        "D": "432π \n(6)^2(9)"
+      },
+      "correct_choice": "B",
+      "solution": "The curved surface area of a right circular cylinder is given by the formula A = 2πrh. Plugging in r = 6 units and h = 9 units gives us A = 2π(6)(9) = 108π square units.",
+      "explanation": "The curved surface area of a cylinder refers to the part that wraps around it, not including the top and bottom circles. Choice A is incorrect because it uses the wrong formula (it's for the total surface area). Choices C and D are incorrect because they use the radius squared in the formula, which is unnecessary when calculating only the curved surface area.",
+      "common_mistake_notes": "Common mistake: Using the total surface area formula instead of the curved surface area formula."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the volume of a right circular cone with base radius 7 units and height 10 units using cylindrical coordinates.",
+      "choices": {
+        "A": "245π \n\frac{1}{3}π(7)^2(10)",
+        "B": "490π \n\frac{1}{3}π(7)(10)",
+        "C": "735π \n\frac{1}{3}π(7)^2(10)",
+        "D": "980π \n\frac{1}{3}π(7)(10)"
+      },
+      "correct_choice": "A",
+      "solution": "The volume of a right circular cone is given by the formula V = \frac{1}{3}πr^2h. Plugging in r = 7 units and h = 10 units gives us V = \frac{1}{3}π(7)^2(10) = 245π cubic units.",
+      "explanation": "The volume of a cone is calculated using the formula provided, not the volume of a cylinder. Choice B is incorrect because it multiplies the radius by the height instead of squaring the radius. Choices C and D are incorrect because they use the wrong values for either the radius or the height.",
+      "common_mistake_notes": "Common mistake: Using the volume formula for a cylinder instead of a cone."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the lateral surface area of a right circular cylinder with base radius 8 units and height 12 units using cylindrical coordinates.",
+      "choices": {
+        "A": "192π \n(8)(12)",
+        "B": "384π \n(8)^2(12)",
+        "C": "576π \n(8)^2(12)",
+        "D": "768π \n(8)^2(12)"
+      },
+      "correct_choice": "B",
+      "solution": "The lateral surface area of a right circular cylinder is given by the formula A = 2πrh. Plugging in r = 8 units and h = 12 units gives us A = 2π(8)(12) = 192π square units.",
+      "explanation": "The lateral surface area of a cylinder does not include the top and bottom circles. Choice A is incorrect because it uses the wrong formula (it's for the total surface area). Choices C and D are incorrect because they use the radius squared in the formula, which is unnecessary when calculating only the lateral surface area.",
+      "common_mistake_notes": "Common mistake: Using the total surface area formula instead of the lateral surface area formula."
+    }
+  ]
+}

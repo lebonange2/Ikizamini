@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.10.11",
+  "objective_text": "Apply to definite integrals",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Evaluate the definite integral of f(x) = 2x + 3 from x=1 to x=4.",
+      "choices": {
+        "A": "17",
+        "B": "20",
+        "C": "26",
+        "D": "34"
+      },
+      "correct_choice": "C",
+      "solution": "To evaluate the definite integral of f(x) = 2x + 3 from x=1 to x=4, we first find the antiderivative F(x): F'(x) = 2x + 3 => F(x) = x^2 + 3x. Then, apply the Fundamental Theorem of Calculus: ∫[1, 4] (2x + 3) dx = F(4) - F(1) = (4^2 + 3\time4) - (1^2 + 3\time1) = 26 - 4 = 22.",
+      "explanation": "The correct answer is obtained by finding the antiderivative and evaluating it at the limits of integration.",
+      "common_mistake_notes": "A common mistake would be to forget to evaluate the antiderivative at both limits, which would result in an incorrect area under the curve."
+    },
+    {
+      "id": "2",
+      "stem": "Evaluate ∫[0, π/2] sin(x) dx.",
+      "choices": {
+        "A": "1",
+        "B": "π",
+        "C": "π/2",
+        "D": "-cos(π/2)"
+      },
+      "correct_choice": "A",
+      "solution": "The integral of sin(x) is -cos(x). So ∫[0, π/2] sin(x) dx = [-cos(π/2)] - [-cos(0)] = 1.",
+      "explanation": "This problem tests the ability to integrate sine and apply the limits of integration correctly.",
+      "common_mistake_notes": "A common mistake would be to forget to evaluate the antiderivative at both limits or to mix up the signs when applying the Fundamental Theorem of Calculus."
+    },
+    {
+      "id": "3",
+      "stem": "Find the area under the curve y = 4x^2 from x=0 to x=2.",
+      "choices": {
+        "A": "16",
+        "B": "32",
+        "C": "64",
+        "D": "128"
+      },
+      "correct_choice": "B",
+      "solution": "To find the area, we integrate y = 4x^2 and evaluate from x=0 to x=2: ∫[0, 2] 4x^2 dx = [x^3]_0^2 = 8 - 0 = 8. The area is thus 8 \times 2 = 16.",
+      "explanation": "This question tests the ability to integrate a quadratic function and apply it to find an area.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply the result of the integration by the width (2) when finding the area."
+    },
+    {
+      "id": "4",
+      "stem": "Evaluate ∫[-1, 1] |x| dx.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "4"
+      },
+      "correct_choice": "C",
+      "solution": "The absolute value function changes sign at x=0. We integrate separately for x < 0 and x > 0: ∫[-1, 0] -x dx + ∫[0, 1] x dx = [x^2/2]_{-1}^{0} + [x^2/2]_0^1 = 0 - (-1/2) + 1/2 = 1. The total is 2.",
+      "explanation": "This question tests the ability to integrate a piecewise function and apply limits accordingly.",
+      "common_mistake_notes": "A common mistake would be to integrate |x| as x without considering its sign, leading to an incorrect result."
+    },
+    {
+      "id": "5",
+      "stem": "Find the average value of f(x) = 3sin(2x) + 1 on the interval [0, π/2].",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correct_choice": "A",
+      "solution": "The average value of a function is given by (1/(b-a)) \times ∫[a, b] f(x) dx. For f(x) = 3sin(2x) + 1 on [0, π/2], the average value is (1/(π/2 - 0)) \times ∫[0, π/2] (3sin(2x) + 1) dx = 2 \times [(e^(-cos(2x))/4) + x]_0^{π/2} = 2.",
+      "explanation": "This question tests the ability to find the average value of a function using integration.",
+      "common_mistake_notes": "A common mistake would be to integrate the entire function without accounting for the factor (1/(b-a))."
+    },
+    {
+      "id": "6",
+      "stem": "Evaluate ∫[0, 2] e^x dx.",
+      "choices": {
+        "A": "e - 1",
+        "B": "e^2 - 1",
+        "C": "e^3 - 1",
+        "D": "e^4 - 1"
+      },
+      "correct_choice": "B",
+      "solution": "The integral of e^x is e^x. So ∫[0, 2] e^x dx = [e^x]_0^2 = e^2 - e^0 = e^2 - 1.",
+      "explanation": "This question tests the ability to integrate an exponential function and apply limits correctly.",
+      "common_mistake_notes": "A common mistake would be to forget to evaluate the antiderivative at both limits or to mix up the signs when applying the Fundamental Theorem of Calculus."
+    },
+    {
+      "id": "7",
+      "stem": "Find the volume of the solid formed by revolving the region bounded by y = x^2 and y = 4x around the line x = 3.",
+      "choices": {
+        "A": "π/6",
+        "B": "π/3",
+        "C": "π",
+        "D": "2π"
+      },
+      "correct_choice": "C",
+      "solution": "The volume is found using the disk method: V = π \times ∫[0, 4] (3 - x)^2 dx = π \times [x^3/3 - 2x^2 + 3x]_0^4 = π \times (64/3 - 32 + 12) = 2π.",
+      "explanation": "This question tests the ability to find volumes of solids of revolution using integration.",
+      "common_mistake_notes": "A common mistake would be to integrate with respect to y instead of x, or to use the wrong limits for the integral."
+    }
+  ]
+}

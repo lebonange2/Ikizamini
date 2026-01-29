@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.9.7",
+  "objective_text": "Graph cardioids: r = a(1 ± cosθ)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "1.4.9.7-1",
+      "stem": "Which equation represents a cardioid with a horizontal diameter of 8 units?",
+      "choices": {
+        "A": "r = 4(1 + cosθ)",
+        "B": "r = 2(1 - cosθ)",
+        "C": "r = 8(1 - cosθ)",
+        "D": "r = 4(1 - cosθ)"
+      },
+      "correct_choice": "D",
+      "solution": "The horizontal diameter of a cardioid is twice the value of 'a' in the equation r = a(1 ± cosθ). Given that the diameter is 8 units, we can set up the following equation: 2a = 8. Solving for 'a', we get a = 4. The correct equation with 'a' as 4 and the minus sign (which corresponds to a cardioid) is r = 4(1 - cosθ).",
+      "explanation": "Cardioids have a distinctive heart-shaped curve, and their equations involve cosine functions. In this case, we're looking for an equation where 'a' is 4 and the cosine term has a negative sign.",
+      "common_mistake_notes": "A common mistake would be to choose option A, which has a positive cosine term. This would result in a lemniscate shape instead of a cardioid."
+    },
+    {
+      "id": "1.4.9.7-2",
+      "stem": "What is the value of 'a' in the equation r = 6(1 - cosθ) that represents a cardioid with its center at the origin?",
+      "choices": {
+        "A": "3",
+        "B": "6",
+        "C": "9",
+        "D": "12"
+      },
+      "correct_choice": "B",
+      "solution": "The value of 'a' in the equation r = a(1 - cosθ) represents the scaling factor for the cardioid. Since the center is at the origin, there's no horizontal or vertical shift. Therefore, the given equation directly corresponds to a cardioid with 'a' as 6.",
+      "explanation": "The value of 'a' in the cardioid equation determines the size of the heart shape. If the center is at the origin and there are no shifts, 'a' should match the coefficient of (1 - cosθ).",
+      "common_mistake_notes": "A common mistake would be to choose option A or C, assuming that 'a' might be a different value due to some misunderstanding about the graph's properties. However, the center at the origin indicates no shifts and thus 'a' remains unchanged."
+    },
+    {
+      "id": "1.4.9.7-3",
+      "stem": "Which equation represents a cardioid with its vertical diameter passing through the pole?",
+      "choices": {
+        "A": "r = 5(1 + cosθ)",
+        "B": "r = 5(1 - cosθ)",
+        "C": "r = 5(1 + sinθ)",
+        "D": "r = 5(1 - sinθ)"
+      },
+      "correct_choice": "B",
+      "solution": "A cardioid with its vertical diameter passing through the pole means that the graph touches the polar axis. This occurs when r reaches its maximum value, which is 'a'. In the equation r = a(1 - cosθ), the maximum value of r is reached when cosθ = 0 (at θ = π/2 or 3π/2). Thus, we have r = a(1) = a. Setting 'a' to 5 gives us the correct equation.",
+      "explanation": "When the vertical diameter passes through the pole, the cardioid touches the polar axis at its maximum radius. This condition is met when cosθ is 0 in the given equation.",
+      "common_mistake_notes": "A common mistake would be to choose option A, which has a positive cosine term and results in a lemniscate shape rather than a cardioid touching the pole."
+    },
+    {
+      "id": "1.4.9.7-4",
+      "stem": "What transformation changes the graph of r = 3(1 + cosθ) into a cardioid with its center shifted two units to the right?",
+      "choices": {
+        "A": "r = 3(1 + cos(θ - π/2))",
+        "B": "r = 3(1 + cos(θ + π/2))",
+        "C": "r = 3(1 + cos(θ + 2))",
+        "D": "r = 3(1 + cos(θ - 2))"
+      },
+      "correct_choice": "D",
+      "solution": "To shift the center of a cardioid two units to the right, we need to apply a negative horizontal shift in the angle. This is done by adding 2 to θ (since the polar coordinate system has a counterclockwise orientation). The correct transformation is thus r = 3(1 + cos(θ - 2)).",
+      "explanation": "Horizontal shifts in polar graphs are achieved by adding or subtracting values from the angle. A shift to the right corresponds to a negative value.",
+      "common_mistake_notes": "A common mistake would be to choose option C, which adds 2 directly to θ without considering the direction of the shift. This would result in a shift to the left instead of the right."
+    },
+    {
+      "id": "1.4.9.7-5",
+      "stem": "The equation r = 2(1 + cosθ) represents a cardioid with its vertical diameter passing through the pole. Which equation reflects this cardioid across the horizontal axis?",
+      "choices": {
+        "A": "r = -2(1 + cosθ)",
+        "B": "r = 2(1 - cosθ)",
+        "C": "r = -2(1 - cosθ)",
+        "D": "r = 2(1 + sinθ)"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting a cardioid across the horizontal axis changes the sign of r. Since the original equation is r = 2(1 + cosθ), reflecting it will result in r = -2(1 + cosθ).",
+      "explanation": "Reflections in polar graphs are achieved by changing the sign of r. Reflecting across the horizontal axis only affects r, not the angle term.",
+      "common_mistake_notes": "A common mistake would be to choose option B, which reflects both r and the cosine term. However, reflecting across the horizontal axis does not affect the cosine function."
+    },
+    {
+      "id": "1.4.9.7-6",
+      "stem": "The equation r = 4(1 - cosθ) represents a cardioid with its center at the origin. What is the equation of the cardioid if we stretch it vertically by a factor of 3?",
+      "choices": {
+        "A": "r = 12(1 - cosθ)",
+        "B": "r = 12(1 + cosθ)",
+        "C": "r = 4(1 - 3cosθ)",
+        "D": "r = 4(1 + 3cosθ)"
+      },
+      "correct_choice": "A",
+      "solution": "Stretching a polar graph vertically by a factor of 'k' multiplies r by that factor. In this case, we multiply r = 4(1 - cosθ) by 3 to get r = 12(1 - cosθ).",
+      "explanation": "Vertical stretching in polar graphs is done by multiplying the entire equation (including r and the cosine term) by a constant factor.",
+      "common_mistake_notes": "A common mistake would be to choose option C, which multiplies only 'a' by 3. However, stretching vertically affects both 'a' and the cosine function."
+    },
+    {
+      "id": "1.4.9.7-7",
+      "stem": "The equation r = 6(1 - cosθ) represents a cardioid with its center at the origin. Which equation represents the rotation of this cardioid by π/2 counterclockwise?",
+      "choices": {
+        "A": "r = 6(1 + sinθ)",
+        "B": "r = 6(1 - sinθ)",
+        "C": "r = 6(1 - cos(θ - π/2))",
+        "D": "r = 6(1 + cos(θ - π/2))"
+      },
+      "correct_choice": "A",
+      "solution": "Rotating a polar graph counterclockwise by π/2 changes the cosine term to sine. In this case, we replace cosθ with sinθ in r = 6(1 - cosθ) to get r = 6(1 + sinθ).",
+      "explanation": "Rotation in polar graphs is achieved by replacing trigonometric functions accordingly. Counterclockwise rotation of π/2 changes cosθ to sinθ.",
+      "common_mistake_notes": "A common mistake would be to choose option B, which uses the negative sine term instead of the positive one. This would result in a clockwise rotation rather than counterclockwise."
+    }
+  ]
+}

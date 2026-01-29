@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.6.10",
+  "objective_text": "Find tangent line at point",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Inverse Tangent Function",
+      "stem": "Find the equation of the tangent line to the function f(x) = √(x + 4) at the point (1, 2).",
+      "choices": {
+        "A": "(x - 1) - 2√5 = 0",
+        "B": "(x - 1) + 2/3√5 = 0",
+        "C": "(x - 1) + 2√5 = 0",
+        "D": "(x - 1) - 2/3√5 = 0"
+      },
+      "correct_choice": "B",
+      "solution": "The derivative of f(x) = √(x + 4) is f'(x) = 1/(2√(x + 4)). At x = 1, the slope of the tangent line is m = f'(1) = 1/(2√5). The equation of the tangent line at (1, 2) is y - 2 = m(x - 1), so y = 2 + (1/(2√5))(x - 1). Simplifying gives y = (x - 1) + 2/3√5.",
+      "explanation": "The derivative of the function was found and evaluated at x = 1 to determine the slope. The point-slope form was used to find the equation of the tangent line.",
+      "common_mistake_notes": "A common mistake is to forget to evaluate the derivative at x = 1, which would result in an incorrect slope."
+    },
+    {
+      "id": "Quadratic Function",
+      "stem": "Find the equation of the tangent line to the function f(x) = x^2 - 3x + 2 at the point (2, 0).",
+      "choices": {
+        "A": "(x - 2) + 4 = 0",
+        "B": "(x - 2) - 1 = 0",
+        "C": "(x - 2) + 1 = 0",
+        "D": "(x - 2) - 4 = 0"
+      },
+      "correct_choice": "C",
+      "solution": "The derivative of f(x) = x^2 - 3x + 2 is f'(x) = 2x - 3. At x = 2, the slope of the tangent line is m = f'(2) = 1. The equation of the tangent line at (2, 0) is y - 0 = m(x - 2), so y = 1(x - 2). Simplifying gives y = x - 2.",
+      "explanation": "The derivative of the function was found and evaluated at x = 2 to determine the slope. The point-slope form was used to find the equation of the tangent line.",
+      "common_mistake_notes": "A common mistake is to forget to subtract the original y-value (0) from the slope times the change in x, which would result in an incorrect y-intercept."
+    },
+    {
+      "id": "Rational Function",
+      "stem": "Find the equation of the tangent line to the function f(x) = 2x / (x + 1) at the point (1, 1).",
+      "choices": {
+        "A": "(x - 1) - 1/3 = 0",
+        "B": "(x - 1) + 1/3 = 0",
+        "C": "(x - 1) - 1 = 0",
+        "D": "(x - 1) + 1 = 0"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of f(x) = 2x / (x + 1) is f'(x) = (2(x + 1) - 2x) / (x + 1)^2 = 2 / (x + 1)^2. At x = 1, the slope of the tangent line is m = f'(1) = 2 / 4 = 1/2. The equation of the tangent line at (1, 1) is y - 1 = m(x - 1), so y = 1 + (1/2)(x - 1). Simplifying gives y = (x - 1)/2 + 1 = x/2 + 1/2.",
+      "explanation": "The derivative of the function was found and evaluated at x = 1 to determine the slope. The point-slope form was used to find the equation of the tangent line.",
+      "common_mistake_notes": "A common mistake is to forget to simplify the derivative before evaluating it, which would result in an incorrect slope."
+    },
+    {
+      "id": "Logarithmic Function",
+      "stem": "Find the equation of the tangent line to the function f(x) = ln(x + 3) at the point (1, ln(4)).",
+      "choices": {
+        "A": "(x - 1) - 1/4 = 0",
+        "B": "(x - 1) + 1/4 = 0",
+        "C": "(x - 1) - 1 = 0",
+        "D": "(x - 1) + 1 = 0"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of f(x) = ln(x + 3) is f'(x) = 1 / (x + 3). At x = 1, the slope of the tangent line is m = f'(1) = 1/4. The equation of the tangent line at (1, ln(4)) is y - ln(4) = m(x - 1), so y = ln(4) + (1/4)(x - 1). Simplifying gives y = x/4 + ln(4) - 1/4.",
+      "explanation": "The derivative of the function was found and evaluated at x = 1 to determine the slope. The point-slope form was used to find the equation of the tangent line.",
+      "common_mistake_notes": "A common mistake is to forget to subtract the original y-value (ln(4)) from the slope times the change in x, which would result in an incorrect y-intercept."
+    },
+    {
+      "id": "Exponential Function",
+      "stem": "Find the equation of the tangent line to the function f(x) = 3^x at the point (0, 1).",
+      "choices": {
+        "A": "(x - 0) + 1 = 0",
+        "B": "(x - 0) - 1 = 0",
+        "C": "(x - 0) + 3 = 0",
+        "D": "(x - 0) - 3 = 0"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of f(x) = 3^x is f'(x) = ln(3) \times 3^x. At x = 0, the slope of the tangent line is m = f'(0) = ln(3). The equation of the tangent line at (0, 1) is y - 1 = m(x - 0), so y = 1 + ln(3)x. Simplifying gives y = ln(3)x + 1.",
+      "explanation": "The derivative of the function was found and evaluated at x = 0 to determine the slope. The point-slope form was used to find the equation of the tangent line.",
+      "common_mistake_notes": "A common mistake is to forget that the base of the exponential function affects the derivative, which would result in an incorrect slope."
+    },
+    {
+      "id": "Trigonometric Function",
+      "stem": "Find the equation of the tangent line to the function f(x) = sin(x) at the point (π/2, 1).",
+      "choices": {
+        "A": "(x - π/2) + 0 = 0",
+        "B": "(x - π/2) - 1 = 0",
+        "C": "(x - π/2) + 1 = 0",
+        "D": "(x - π/2) - sin(π/2) = 0"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of f(x) = sin(x) is f'(x) = cos(x). At x = π/2, the slope of the tangent line is m = f'(π/2) = 0. The equation of the tangent line at (π/2, 1) is y - 1 = m(x - π/2), so y = 1. This is a horizontal line.",
+      "explanation": "The derivative of the function was found and evaluated at x = π/2 to determine the slope. The point-slope form was used to find the equation of the tangent line.",
+      "common_mistake_notes": "A common mistake is to forget that the derivative of sin(x) is cos(x), which would result in an incorrect slope."
+    },
+    {
+      "id": "Hyperbolic Function",
+      "stem": "Find the equation of the tangent line to the function f(x) = sinh(x) at the point (0, 0).",
+      "choices": {
+        "A": "(x - 0) + 1 = 0",
+        "B": "(x - 0) - 1 = 0",
+        "C": "(x - 0) + sinh(0) = 0",
+        "D": "(x - 0) - sinh(0) = 0"
+      },
+      "correct_choice": "C",
+      "solution": "The derivative of f(x) = sinh(x) is f'(x) = cosh(x). At x = 0, the slope of the tangent line is m = f'(0) = 1. The equation of the tangent line at (0, 0) is y - 0 = m(x - 0), so y = x. Simplifying gives y = x.",
+      "explanation": "The derivative of the function was found and evaluated at x = 0 to determine the slope. The point-slope form was used to find the equation of the tangent line.",
+      "common_mistake_notes": "A common mistake is to forget that the derivative of sinh(x) is cosh(x), which would result in an incorrect slope."
+    }
+  ]
+}

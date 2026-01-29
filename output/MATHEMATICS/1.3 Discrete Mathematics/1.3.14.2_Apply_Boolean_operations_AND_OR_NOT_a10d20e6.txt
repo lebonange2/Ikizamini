@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.14.2 Apply Boolean operations (AND, OR, NOT)
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.14 Boolean Algebra
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (One AND Two):
+What is the result of the expression: True AND False?
+A) True
+B) False
+C) Unknown
+D) Both A and B
+Correct Answer: B
+
+Solution:
+The AND operation requires both operands to be true for the overall expression to be true. In this case, since one operand is True and the other is False, the result is False.
+
+Explanation:
+Boolean AND combines two conditions and returns True only if both conditions are True.
+
+Common mistake note:
+A common mistake would be selecting A, which assumes that at least one True value is enough for the overall expression to be true. However, in Boolean logic, both operands must be True for AND to return True.
+------------------------------------------------------------------------------
+
+Problem 2 (One OR Two):
+What is the result of the expression: True OR False?
+A) True
+B) False
+C) Unknown
+D) Both A and B
+Correct Answer: A
+
+Solution:
+The OR operation returns True if at least one operand is true. In this case, since one operand is True, the result is True.
+
+Explanation:
+Boolean OR combines two conditions and returns True as soon as one of them is True.
+
+Common mistake note:
+A common mistake would be selecting B, which assumes that both operands must be True for the overall expression to be true. However, in Boolean logic, only one True operand is enough for OR to return True.
+------------------------------------------------------------------------------
+
+Problem 3 (NOT One):
+What is the result of the expression: NOT True?
+A) True
+B) False
+C) Unknown
+D) Both A and B
+Correct Answer: B
+
+Solution:
+The NOT operation inverts the truth value of its operand. In this case, since the operand is True, the result is False.
+
+Explanation:
+Boolean NOT flips the truth value of a condition; if it's True, it becomes False, and vice versa.
+
+Common mistake note:
+A common mistake would be selecting A, which assumes that NOT does nothing to the operand. However, in Boolean logic, NOT always inverts the truth value.
+------------------------------------------------------------------------------
+
+Problem 4 (One AND Three):
+What is the result of the expression: True AND (True OR False)?
+A) True
+B) False
+C) Unknown
+D) Both A and B
+Correct Answer: A
+
+Solution:
+First, evaluate the expression inside the parentheses (True OR False) which is True. Then, apply AND with the outer operand (True), resulting in True.
+
+Explanation:
+Boolean operations follow a specific order of precedence: NOT first, then AND, and finally OR.
+
+Common mistake note:
+A common mistake would be selecting B, which assumes that the overall expression is False because of the False inside the parentheses. However, the outer AND operation requires both operands to be True, which they are in this case.
+------------------------------------------------------------------------------
+
+Problem 5 (One OR Three):
+What is the result of the expression: True OR (True AND False)?
+A) True
+B) False
+C) Unknown
+D) Both A and B
+Correct Answer: A
+
+Solution:
+First, evaluate the expression inside the parentheses (True AND False) which is False. Then, apply OR with the outer operand (True), resulting in True.
+
+Explanation:
+Boolean operations follow a specific order of precedence: NOT first, then AND, and finally OR.
+
+Common mistake note:
+A common mistake would be selecting B, which assumes that the overall expression is False because of the False inside the parentheses. However, the outer OR operation returns True as soon as one operand is True, which it is in this case.
+------------------------------------------------------------------------------
+
+Problem 6 (NOT Two AND NOT Three):
+What is the result of the expression: NOT False AND NOT True?
+A) True
+B) False
+C) Unknown
+D) Both A and B
+Correct Answer: B
+
+Solution:
+The NOT operation inverts its operand. So, NOT False is True and NOT True is False. Applying AND to these results in False.
+
+Explanation:
+Boolean NOT flips the truth value of a condition; if it's True, it becomes False, and vice versa. The overall expression uses AND, which requires both operands to be True for the result to be True.
+
+Common mistake note:
+A common mistake would be selecting A, which assumes that both NOT operations cancel each other out. However, in Boolean logic, NOT always inverts the truth value.
+------------------------------------------------------------------------------
+
+Problem 7 (NOT Two OR NOT Three):
+What is the result of the expression: NOT False OR NOT True?
+A) True
+B) False
+C) Unknown
+D) Both A and B
+Correct Answer: A
+
+Solution:
+The NOT operation inverts its operand. So, NOT False is True and NOT True is False. Applying OR to these results in True.
+
+Explanation:
+Boolean NOT flips the truth value of a condition; if it's True, it becomes False, and vice versa. The overall expression uses OR, which returns True as soon as one operand is True.
+
+Common mistake note:
+A common mistake would be selecting B, which assumes that both NOT operations make the entire expression False. However, in Boolean logic, only one True operand is enough for OR to return True.
+------------------------------------------------------------------------------

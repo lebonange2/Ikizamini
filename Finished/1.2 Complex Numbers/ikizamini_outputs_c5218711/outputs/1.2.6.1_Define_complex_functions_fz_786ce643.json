@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.6.1",
+  "objective_text": "Define complex functions f(z)",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the definition of a complex function f(z)?",
+      "choices": {
+        "A": "A function that maps real numbers to imaginary numbers.",
+        "B": "A function that maps two-dimensional points (x, y) to a single complex number z = x + iy.",
+        "C": "A function that only takes integer inputs and outputs complex numbers.",
+        "D": "A function that maps complex numbers to real numbers."
+      },
+      "correct_choice": "B",
+      "solution": "A complex function f(z) is a function that maps two-dimensional points (x, y), where x and y are real numbers, to a single complex number z = x + iy. This choice accurately defines the concept of a complex function.",
+      "explanation": "Complex functions deal with the domain and range of complex numbers, which consist of both real and imaginary parts. Choice A is incorrect because it only considers mapping real numbers to imaginary numbers. Choice C is wrong as there are no restrictions on inputs being integers in complex functions. Choice D maps complex numbers to real numbers, which is not the general definition of a complex function.",
+      "common_mistake_notes": "Common mistake: Confusing complex functions with functions that map only real or imaginary numbers."
+    },
+    {
+      "id": ":2",
+      "stem": "Which of the following is an example of a complex function f(z)?",
+      "choices": {
+        "A": "f(x) = x^2 + 1",
+        "B": "g(y) = 3yi",
+        "C": "h(z) = z^2",
+        "D": "p(w) = w / (w - i)"
+      },
+      "correct_choice": "C",
+      "solution": "The function h(z) = z^2 takes a complex number z as input and returns its square, which is also a complex number. This example demonstrates the mapping of two-dimensional points to another point in the complex plane.",
+      "explanation": "Choice A maps real numbers to real numbers (quadratic function). Choice B only deals with imaginary part of the input. Choice D involves division by a complex number, but it's not explicitly stated that z is not equal to i, which could lead to undefined behavior.",
+      "common_mistake_notes": "Common mistake: Not recognizing that h(z) = z^2 operates on complex numbers."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the domain of the complex function f(z) = √z?",
+      "choices": {
+        "A": "All real numbers",
+        "B": "All non-negative real numbers",
+        "C": "The set of all complex numbers",
+        "D": "The set of all complex numbers except for zero"
+      },
+      "correct_choice": "C",
+      "solution": "The domain of a complex function is typically the set of all complex numbers, unless specified otherwise. The square root function can be defined for all complex numbers.",
+      "explanation": "Choice A and B are incorrect because they only consider real domains, which is not specific to complex functions. Choice D excludes zero, but √z can still be defined for z = 0 in the context of complex analysis.",
+      "common_mistake_notes": "Common mistake: Limiting the domain to real numbers or excluding zero without considering complex extensions."
+    },
+    {
+      "id": ":4",
+      "stem": "Which of the following is a valid complex function f(z) that uses trigonometric functions?",
+      "choices": {
+        "A": "f(z) = sin(2z)",
+        "B": "g(z) = cosh(z)",
+        "C": "h(z) = tan(z) / z",
+        "D": "p(z) = 2sin(z) + cosh(z)"
+      },
+      "correct_choice": "B",
+      "solution": "The function g(z) = cosh(z) is a valid complex function because it uses the hyperbolic cosine, which is defined for all complex numbers.",
+      "explanation": "Choice A and D involve multiplying trigonometric functions, which can lead to undefined values when dealing with complex numbers. Choice C has a singularity at z = 0, making it invalid as a general complex function.",
+      "common_mistake_notes": "Common mistake: Not considering the domain of trigonometric functions in the context of complex analysis."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the conjugate of the complex function f(z) = z^2 + 3z + 4?",
+      "choices": {
+        "A": "f(z*) = z*^2 + 3z* + 4",
+        "B": "f(z*) = (z^2 + 3z + 4)*",
+        "C": "f(z*) = z*^2 - 3z* + 4",
+        "D": "f(z*) = (z^2 - 3z + 4)*"
+      },
+      "correct_choice": "B",
+      "solution": "The conjugate of a complex function f(z) is obtained by taking the conjugate of each term in the function. Thus, f(z*) = (z^2 + 3z + 4)*.",
+      "explanation": "Choice A and C do not take the conjugate of the entire expression. Choice D negates the linear term, which is incorrect.",
+      "common_mistake_notes": "Common mistake: Applying conjugation to individual terms instead of the entire function."
+    },
+    {
+      "id": ":6",
+      "stem": "Which of the following operations preserves the property of being a complex function?",
+      "choices": {
+        "A": "Differentiation",
+        "B": "Integration",
+        "C": "Multiplication by a real constant",
+        "D": "Composition with another complex function"
+      },
+      "correct_choice": "C",
+      "solution": "Multiplying a complex function by a real constant results in another complex function. Differentiation and integration may change the nature of the function, while composition can lead to more complex relationships.",
+      "explanation": "Choice A and B can result in functions that are not necessarily complex if the derivative or integral involves complex numbers. Choice D may produce non-linear relationships between input and output, potentially leading to a non-complex function.",
+      "common_mistake_notes": "Common mistake: Assuming differentiation or integration maintains the property of being a complex function."
+    },
+    {
+      "id": ":7",
+      "stem": "What is the relationship between the real part Re(f(z)) and imaginary part Im(f(z)) for a complex function f(z) = u(x, y) + iv(x, y)?",
+      "choices": {
+        "A": "Re(f(z)) = u(x, y), Im(f(z)) = v(x, y)",
+        "B": "Re(f(z)) = v(x, y), Im(f(z)) = u(x, y)",
+        "C": "Re(f(z)) = x^2 - y^2, Im(f(z)) = 2xy",
+        "D": "Re(f(z)) = x, Im(f(z)) = y"
+      },
+      "correct_choice": "A",
+      "solution": "In the representation f(z) = u(x, y) + iv(x, y), u(x, y) represents the real part Re(f(z)), and v(x, y) represents the imaginary part Im(f(z)).",
+      "explanation": "Choice B swaps the roles of u and v. Choice C and D represent specific cases of a complex function but do not generalize the relationship between Re(f(z)) and Im(f(z)).",
+      "common_mistake_notes": "Common mistake: Misinterpreting the role of u(x, y) and v(x, y) in the representation of f(z)."
+    }
+  ]
+}

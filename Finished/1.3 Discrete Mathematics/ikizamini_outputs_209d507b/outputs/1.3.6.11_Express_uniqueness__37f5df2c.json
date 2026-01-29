@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.6.11",
+  "objective_text": "Express uniqueness (∃!)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which of the following statements expresses that there is exactly one student in the class with blue eyes?",
+      "choices": {
+        "A": "∀x (Student(x) → BlueEyes(x))",
+        "B": "∃!x (Student(x) ∧ BlueEyes(x))",
+        "C": "¬∃x ¬y (Student(x) ∧ Student(y) ∧ BlueEyes(x) ∧ BlueEyes(y))",
+        "D": "∃x ∀y (Student(x) ∧ BlueEyes(x) → ¬Student(y))"
+      },
+      "correct_choice": "B",
+      "solution": "The uniqueness quantifier (∃!) states that there exists exactly one element with a certain property. Choice B expresses this by saying 'there exists a unique x such that x is a student and has blue eyes.' The other choices either express different properties or are logically incorrect.",
+      "explanation": "Choice A says all students have blue eyes, not just one. Choice C negates the possibility of two students having blue eyes but doesn't guarantee uniqueness. Choice D states that if someone has blue eyes, there can be no other student, which is too restrictive.",
+      "common_mistake_notes": "Common mistake: Choosing A because it seems to imply that all students have blue eyes, but it does not express the uniqueness of a single student with blue eyes."
+    },
+    {
+      "id": ":2",
+      "stem": "Which formula expresses that there is exactly one prime number between 10 and 20?",
+      "choices": {
+        "A": "∀x (10 < x < 20 → Prime(x))",
+        "B": "∃!x (10 < x < 20 ∧ Prime(x))",
+        "C": "¬∃x ¬y (10 < x < 20 ∧ 10 < y < 20 ∧ Prime(x) ∧ Prime(y))",
+        "D": "∃x ∀y (10 < x < 20 ∧ Prime(x) → ¬(10 < y < 20))"
+      },
+      "correct_choice": "B",
+      "solution": "Choice B correctly expresses that there exists exactly one number between 10 and 20 which is prime. The other choices either express different properties or are logically incorrect.",
+      "explanation": "Choice A implies all numbers between 10 and 20 are primes, not just one. Choice C negates the possibility of two prime numbers but doesn't guarantee uniqueness. Choice D states that if a number is prime, there can be no other prime in the range, which is too restrictive.",
+      "common_mistake_notes": "Common mistake: Choosing A because it seems to imply all numbers are primes, but it does not express the uniqueness of a single prime."
+    },
+    {
+      "id": ":3",
+      "stem": "Which statement expresses that there is exactly one planet in our solar system with rings?",
+      "choices": {
+        "A": "∀x (Planet(x) → Rings(x))",
+        "B": "∃!x (Planet(x) ∧ Rings(x))",
+        "C": "¬∃x ¬y (Planet(x) ∧ Planet(y) ∧ Rings(x) ∧ Rings(y))",
+        "D": "∃x ∀y (Planet(x) ∧ Rings(x) → ¬Planet(y))"
+      },
+      "correct_choice": "B",
+      "solution": "Choice B correctly states that there exists exactly one planet with rings in our solar system. The other choices either express different properties or are logically incorrect.",
+      "explanation": "Choice A implies all planets have rings, not just one. Choice C negates the possibility of two planets having rings but doesn't guarantee uniqueness. Choice D states that if a planet has rings, there can be no other planet, which is too restrictive.",
+      "common_mistake_notes": "Common mistake: Choosing A because it seems to imply all planets have rings, but it does not express the uniqueness of a single planet with rings."
+    },
+    {
+      "id": ":4",
+      "stem": "Which formula expresses that there is exactly one integer solution for x in the equation 2x + 3 = 7?",
+      "choices": {
+        "A": "∀x (2x + 3 = 7 → Integer(x))",
+        "B": "∃!x (2x + 3 = 7 ∧ Integer(x))",
+        "C": "¬∃x ¬y (2x + 3 = 7 ∧ 2y + 3 = 7 ∧ Integer(    x) ∧ Integer(y))",
+        "D": "∃x ∀y (2x + 3 = 7 ∧ Integer(x) → ¬(2y + 3 = 7))"
+      },
+      "correct_choice": "B",
+      "solution": "Choice B correctly states that there exists exactly one integer solution for x in the given equation. The other choices either express different properties or are logically incorrect.",
+      "explanation": "Choice A implies all solutions to the equation are integers, not just one. Choice C negates the possibility of two integer solutions but doesn't guarantee uniqueness. Choice D states that if a solution is an integer, there can be no other integer solution, which is too restrictive.",
+      "common_mistake_notes": "Common mistake: Choosing A because it seems to imply all solutions are integers, but it does not express the uniqueness of a single integer solution."
+    },
+    {
+      "id": ":5",
+      "stem": "Which statement expresses that there is exactly one mammal in the zoo with spots?",
+      "choices": {
+        "A": "∀x (Mammal(x) → Spots(x))",
+        "B": "∃!x (Mammal(x) ∧ Spots(x))",
+        "C": "¬∃x ¬y (Mammal(x) ∧ Mammal(y) ∧ Spots(x) ∧ Spots(y))",
+        "D": "∃x ∀y (Mammal(x) ∧ Spots(x) → ¬Mammal(y))"
+      },
+      "correct_choice": "B",
+      "solution": "Choice B correctly states that there exists exactly one mammal with spots in the zoo. The other choices either express different properties or are logically incorrect.",
+      "explanation": "Choice A implies all mammals have spots, not just one. Choice C negates the possibility of two mammals having spots but doesn't guarantee uniqueness. Choice D states that if a mammal has spots, there can be no other mammal, which is too restrictive.",
+      "common_mistake_notes": "Common mistake: Choosing A because it seems to imply all mammals have spots, but it does not express the uniqueness of a single mammal with spots."
+    },
+    {
+      "id": ":6",
+      "stem": "Which formula expresses that there is exactly one positive integer less than 10 that is divisible by both 2 and 3?",
+      "choices": {
+        "A": "∀x (0 < x < 10 → Divisible(x, 2) ∧ Divisible(x, 3))",
+        "B": "∃!x (0 < x < 10 ∧ Divisible(x, 2) ∧ Divisible(x, 3))",
+        "C": "¬∃x ¬y (0 < x < 10 ∧ 0 < y < 10 ∧ Divisible(x, 2) ∧ Divisible(x, 3) ∧ Divisible(y, 2) ∧ Divisible(y, 3))",
+        "D": "∃x ∀y (0 < x < 10 ∧ Divisible(x, 2) ∧ Divisible(x, 3) → ¬(0 < y < 10))"
+      },
+      "correct_choice": "B",
+      "solution": "Choice B correctly states that there exists exactly one positive integer less than 10 that is divisible by both 2 and 3. The other choices either express different properties or are logically incorrect.",
+      "explanation": "Choice A implies all numbers less than 10 are divisible by 2 and 3, not just one. Choice C negates the possibility of two such integers but doesn't guarantee uniqueness. Choice D states that if a number is divisible by 2 and 3, there can be no other number in the range, which is too restrictive.",
+      "common_mistake_notes": "Common mistake: Choosing A because it seems to imply all numbers are divisible by both 2 and 3, but it does not express the uniqueness of a single integer with this property."
+    },
+    {
+      "id": ":7",
+      "stem": "Which statement expresses that there is exactly one country in the world with the capital city of Rome?",
+      "choices": {
+        "A": "∀x (Country(x) → CapitalCity(x, 'Rome'))",
+        "B": "∃!x (Country(x) ∧ CapitalCity(x, 'Rome'))",
+        "C": "¬∃x ¬y (Country(x) ∧ Country(y) ∧ CapitalCity(x, 'Rome') ∧ CapitalCity(y, 'Rome'))",
+        "D": "∃x ∀y (Country(x) ∧ CapitalCity(x, 'Rome') → ¬Country(y))"
+      },
+      "correct_choice": "B",
+      "solution": "Choice B correctly states that there exists exactly one country with Rome as its capital city. The other choices either express different properties or are logically incorrect.",
+      "explanation": "Choice A implies all countries have Rome as their capital, not just one. Choice C negates the possibility of two countries having Rome as their capital but doesn't guarantee uniqueness. Choice D states that if a country has Rome as its capital, there can be no other country, which is too restrictive.",
+      "common_mistake_notes": "Common mistake: Choosing A because it seems to imply all countries have Rome as their capital, but it does not express the uniqueness of a single country with this property."
+    }
+  ]
+}

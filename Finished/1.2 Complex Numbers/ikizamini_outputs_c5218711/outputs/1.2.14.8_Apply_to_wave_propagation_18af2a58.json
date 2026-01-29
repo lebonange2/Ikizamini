@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.14.8",
+  "objective_text": "Apply to wave propagation",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A sound wave with a frequency of 500 Hz travels through air at a speed of 343 m/s. What is the wavelength of this wave?",
+      "choices": {
+        "A": "0.686 m",
+        "B": "1.71 m",
+        "C": "2.74 m",
+        "D": "3.76 m"
+      },
+      "correct_choice": "A",
+      "solution": "The formula to find the wavelength of a wave is given by λ = v/f, where λ is the wavelength, v is the speed of the wave, and f is the frequency. Given that v = 343 m/s and f = 500 Hz, we can calculate the wavelength as follows: λ = 343 m/s / 500 Hz = 0.686 m.",
+      "explanation": "The correct answer is found by plugging the given values into the formula for wavelength.",
+      "common_mistake_notes": "A common mistake would be to divide speed by frequency incorrectly, or using the wrong units for speed or frequency."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An electromagnetic wave with a frequency of 2.5 GHz travels through a vacuum at the speed of light (c = 3 x 10^8 m/s). What is the wavelength of this wave?",
+      "choices": {
+        "A": "1.2 x 10^-6 m",
+        "B": "1.2 x 10^-4 m",
+        "C": "1.2 x 10^-3 m",
+        "D": "1.2 x 10^-2 m"
+      },
+      "correct_choice": "B",
+      "solution": "The formula to find the wavelength of an electromagnetic wave in a vacuum is given by λ = c/f, where λ is the wavelength, c is the speed of light (approximately 3 x 10^8 m/s), and f is the frequency. Given that f = 2.5 GHz, we can calculate the wavelength as follows: λ = (3 x 10^8 m/s) / (2.5 x 10^9 Hz) = 0.12 m = 1.2 x 10^-4 m.",
+      "explanation": "The correct answer is found by plugging the given values into the formula for wavelength in a vacuum.",
+      "common_mistake_notes": "A common mistake would be to forget that the speed of light is used for electromagnetic waves in a vacuum, or using the wrong units for frequency."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A transverse wave on a string has a wavelength of 0.5 m and a frequency of 4 Hz. If the string is stretched to double its original length, what will be the new frequency of the wave?",
+      "choices": {
+        "A": "2 Hz",
+        "B": "4 Hz",
+        "C": "8 Hz",
+        "D": "16 Hz"
+      },
+      "correct_choice": "A",
+      "solution": "The speed of a transverse wave on a string is given by v = fλ. When the length of the string is doubled, the tension in the string usually remains constant, so the speed of the wave will also remain constant. Since v and λ are both unchanged, the frequency must be halved to maintain the same product: f' = v / (2λ) = 4 Hz / (2 x 0.5 m) = 2 Hz.",
+      "explanation": "The correct answer is found by considering that the speed of the wave remains constant when the length of the string is changed, and adjusting the frequency accordingly.",
+      "common_mistake_notes": "A common mistake would be to assume that the frequency remains unchanged or doubles, not realizing that the wavelength must also change."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A longitudinal wave in a spring has a wavelength of 0.3 m and a speed of 15 m/second. What is the frequency of this wave?",
+      "choices": {
+        "A": "5 Hz",
+        "B": "10 Hz",
+        "C": "15 Hz",
+        "D": "20 Hz"
+      },
+      "correct_choice": "B",
+      "solution": "The formula to find the frequency of a longitudinal wave in a medium is given by f = v/λ, where λ is the wavelength and v is the speed. Given that λ = 0.3 m and v = 15 m/s, we can calculate the frequency as follows: f = 15 m/s / 0.3 m = 50 Hz.",
+      "explanation": "The correct answer is found by plugging the given values into the formula for frequency of a longitudinal wave.",
+      "common_mistake_notes": "A common mistake would be to divide speed by wavelength incorrectly, or using the wrong units for speed or wavelength."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A pulse travels along a stretched rope with a velocity of 20 m/s. If the distance between two successive crests is 1 meter, what is the frequency of the pulse?",
+      "choices": {
+        "A": "0.5 Hz",
+        "B": "1 Hz",
+        "C": "2 Hz",
+        "D": "4 Hz"
+      },
+      "correct_choice": "B",
+      "solution": "The frequency of a wave is the number of crests (or troughs) that pass a point in unit time. Given that the distance between two successive crests is 1 meter, and the velocity of the pulse is 20 m/s, we can calculate the time it takes for one crest to pass: t = 1 m / 20 m/second = 0.05 s. The frequency is then f = 1/t = 1/0.05 Hz = 20 Hz.",
+      "explanation": "The correct answer is found by calculating the time it takes for one crest to pass and using that to find the frequency.",
+      "common_mistake_notes": "A common mistake would be to divide the distance between crests by velocity, which gives a quantity in units of s^-1 but not Hz."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A water wave with a wavelength of 2 meters and a frequency of 0.5 Hz is encountering a beach with a gradual slope. As the wave approaches the shore, what happens to its wavelength?",
+      "choices": {
+        "A": "Increases",
+        "B": "Remains constant",
+        "C": "Decreases",
+        "D": "Cannot be determined without more information"
+      },
+      "correct_choice": "C",
+      "solution": "As water waves approach a beach and encounter a gradual slope, the wave slows down due to the increasing depth of the water. This causes the wavelength to decrease while the frequency remains constant.",
+      "explanation": "The correct answer is found by considering the effect of changing water depth on wave properties.",
+      "common_mistake_notes": "A common mistake would be to assume that the wavelength remains constant or increases, not realizing that it decreases due to the change in water depth."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A sound wave with a frequency of 1000 Hz is traveling through two different materials: Material A with an index of refraction of 1.5 and Material B with the same index of refraction as air (approximately 1). If the speed of sound in Material A is 343 m/s, what is the ratio of wavelengths for this wave in Material A compared to Material B?",
+      "choices": {
+        "A": "0.67",
+        "B": "1",
+        "C": "1.5",
+        "D": "2"
+      },
+      "correct_choice": "C",
+      "solution": "The speed of a wave in a medium is given by v = fλ, where v is the speed, f is the frequency, and λ is the wavelength. The index of refraction (n) affects the speed of light or sound waves but not their frequency. Since the frequency remains constant, we can use the ratio of speeds to find the ratio of wavelengths: (λ_A / λ_B) = (v_B / v_A) = (c / 343 m/s) ≈ 1 / 0.97 ≈ 1.03. However, since the index of refraction for Material B is approximately equal to that of air, we can assume the speed of sound in both materials is similar and thus the wavelengths are also similar.",
+      "explanation": "The correct answer is found by considering that the frequency remains constant across different media but the speed changes, which affects the wavelength.",
+      "common_mistake_notes": "A common mistake would be to assume that the ratio of wavelengths is equal to the ratio of indices of refraction, not realizing that the frequency stays constant."
+    }
+  ]
+}

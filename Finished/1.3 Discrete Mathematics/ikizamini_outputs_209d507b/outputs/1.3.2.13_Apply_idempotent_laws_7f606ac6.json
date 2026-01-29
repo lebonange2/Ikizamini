@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.2.13",
+  "objective_text": "Apply idempotent laws",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Given the idempotent property for multiplication: a × a = a, which of the following expressions is NOT idempotent?",
+      "choices": {
+        "A": "2 × 2",
+        "B": "3^3",
+        "C": "4 + 4",
+        "D": "5!"
+      },
+      "correct_choice": "D",
+      "solution": "The expression that is NOT idempotent is D, because 5! (5 factorial) is not equal to 5 when multiplied by itself. The correct idempotent expressions are A: 2 × 2 = 4, B: 3^3 = 27, and C: 4 + 4 = 8.",
+      "explanation": "Idempotence refers to a property where applying an operation twice results in the same value as applying it once. In this case, we're looking at multiplication and addition operations.",
+      "common_mistake_notes": "A common mistake would be choosing C (4 + 4), which is idempotent for addition but not for multiplication. The key here is to understand that idempotence applies specifically to the operation given in the property."
+    },
+    {
+      "id": ":2",
+      "stem": "Which of the following binary operations is NOT idempotent?",
+      "choices": {
+        "A": "a × a",
+        "B": "a + a",
+        "C": "a ∘ a (using AND logical operator)",
+        "D": "a ∧ a (using OR logical operator)"
+      },
+      "correct_choice": "D",
+      "solution": "The operation that is NOT idempotent is D, because the OR logical operator (a ∧ a) can result in True when applied twice to False, which is not equal to the original value. The correct idempotent operations are A: multiplication, B: addition, and C: AND logical operator.",
+      "explanation": "Idempotence applies to binary operations where applying the operation multiple times does not change the result. In the context of logical operators, only the AND operator is idempotent.",
+      "common_mistake_notes": "A common mistake would be choosing C (a ∘ a), which is idempotent for the AND logical operator but might lead to confusion when considering other operations like multiplication and addition."
+    },
+    {
+      "id": ":3",
+      "stem": "Given the idempotent property for exponentiation: a^0 = 1, which of the following expressions is NOT idempotent?",
+      "choices": {
+        "A": "2^0",
+        "B": "3^0",
+        "C": "4^0",
+        "D": "5^1"
+      },
+      "correct_choice": "D",
+      "solution": "The expression that is NOT idempotent is D, because 5^1 is not equal to 1 when raised to the power of 0. The correct idempotent expressions are A: 2^0 = 1, B: 3^0 = 1, and C: 4^0 = 1.",
+      "explanation": "Idempotence for exponentiation states that any number raised to the power of 0 is equal to 1. This property applies only when the exponent is 0.",
+      "common_mistake_notes": "A common mistake would be choosing A, B, or C, which are all idempotent because they follow the rule a^0 = 1. The key here is to recognize that the property specifically mentions the power of 0."
+    },
+    {
+      "id": ":4",
+      "stem": "Which of the following statements about idempotence is FALSE?",
+      "choices": {
+        "A": "Multiplication is an idempotent operation.",
+        "B": "Addition is an idempotent operation.",
+        "C": "The identity element for an idempotent operation is always 1.",
+        "D": "A binary operation can be idempotent even if its identity element is not 1."
+      },
+      "correct_choice": "C",
+      "solution": "The false statement about idempotence is C, because the identity element for an idempotent operation does not have to be 1. For example, in addition, the identity element is 0, which makes it idempotent (a + 0 = a). The correct statements are A: multiplication, B: addition, and D: binary operations can be idempotent with different identity elements.",
+      "explanation": "Idempotence does not mandate that the identity element must be 1; it depends on the specific operation being considered.",
+      "common_mistake_notes": "A common mistake would be choosing A or B, which are true statements about idempotence. The key is to understand that the identity element can vary depending on the operation."
+    },
+    {
+      "id": ":5",
+      "stem": "Given the matrix multiplication property: A × A = A, where A is an idempotent matrix, which of the following matrices is NOT idempotent?",
+      "choices": {
+        "A": "[1 0; 0 1]",
+        "B": "[2 0; 0 2]",
+        "C": "[0 1; 1 0]",
+        "D": "[1 1; 1 1]"
+      },
+      "correct_choice": "D",
+      "solution": "The matrix that is NOT idempotent is D, because [1 1; 1 1] × [1 1; 1 1] = [2 2; 2 2], which is not equal to the original matrix. The correct idempotent matrices are A: identity matrix, B: a scalar multiple of the identity matrix, and C: a permutation matrix.",
+      "explanation": "Idempotence for matrices means that multiplying a matrix by itself results in the same matrix. Matrices like A, B, and C satisfy this property, but D does not.",
+      "common_mistake_notes": "A common mistake would be choosing B or C, which are idempotent because they follow the rule of being scalar multiples or permutations of the identity matrix. The key here is to recognize that matrix D does not remain unchanged when multiplied by itself."
+    },
+    {
+      "id": ":6",
+      "stem": "Which of the following functions demonstrates idempotence?",
+      "choices": {
+        "A": "f(x) = x^2",
+        "B": "f(x) = 2x",
+        "C": "f(x) = x + 1",
+        "D": "f(x) = x × x"
+      },
+      "correct_choice": "D",
+      "solution": "The function that demonstrates idempotence is D, because f(x) = x × x = x^2 will return the same value when applied twice (f(f(x)) = x^4). The other choices are not idempotent.",
+      "explanation": "Idempotence for functions means applying the function multiple times to a value results in the same output as applying it once. In this case, only D satisfies that property.",
+      "common_mistake_notes": "A common mistake would be choosing A (f(x) = x^2), which is not idempotent because f(f(x)) = x^4, not x^2. The key is to understand the definition of idempotence for functions."
+    },
+    {
+      "id": ":7",
+      "stem": "Which of the following operations is NOT an example of idempotence?",
+      "choices": {
+        "A": "x × x = x",
+        "B": "x + x = x",
+        "C": "x^0 = 1",
+        "D": "x! (x factorial)"
+      },
+      "correct_choice": "D",
+      "solution": "The operation that is NOT an example of idempotence is D, because x! (x factorial) does not remain the same when multiplied by itself. The correct examples are A: multiplication, B: addition, and C: exponentiation with 0 as the power.",
+      "explanation": "Idempotence refers to operations where applying them multiple times results in the same output. In this context, only D (factorial) does not exhibit idempotence.",
+      "common_mistake_notes": "A common mistake would be choosing A or B, which are true examples of idempotence. The key is to recognize that factorial does not follow the rule of idempotence."
+    }
+  ]
+}

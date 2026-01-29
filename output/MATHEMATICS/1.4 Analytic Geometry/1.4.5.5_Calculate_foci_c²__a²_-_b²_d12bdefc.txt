@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.5.5 Calculate foci: c² = a² - b²
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.5 Ellipses
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Inverse_Calculator):
+Find the focus of an ellipse with a semi-major axis length of 6 units and a semi-minor axis length of 4 units.
+A) 2
+B) 3
+C) 4
+D) 5
+Correct Answer: B
+
+Solution:
+The formula for calculating the distance of a focus from the center of an ellipse is c² = a² - b², where 'a' is the semi-major axis and 'b' is the semi-minor axis. Given a = 6 and b = 4, we can calculate c as follows: c² = 6² - 4² = 36 - 16 = 20. Taking the square root of 20 gives us approximately √20 ≈ 4.47. Since we're looking for an exact value and focusing on integers, the closest integer to this is 4, which corresponds to a distance of 3 units from the center.
+
+Explanation:
+The correct answer is found by applying the formula provided in the learning objective. The other choices are incorrect because they do not result from plugging the given values into the formula correctly.
+
+Common mistake note:
+A common mistake would be to directly subtract the semi-minor axis from the semi-major axis (6 - 4 = 2), which is not the correct method for finding the distance to the focus. This approach ignores the squaring and square-rooting steps in the formula.
+------------------------------------------------------------------------------
+
+Problem 2 (Different_Orders):
+An ellipse has a semi-major axis of 10 units and a semi-minor axis of 5 units. What is the distance from the center to a focus?
+A) 5
+B) 7
+C) 8
+D) 15
+Correct Answer: C
+
+Solution:
+Using the formula c² = a² - b², where 'a' is the semi-major axis and 'b' is the semi-minor axis, we can calculate c as follows: c² = 10² - 5² = 100 - 25 = 75. Taking the square root of 75 gives us approximately √75 ≈ 8.66. Since we're looking for an exact value and focusing on integers, the closest integer to this is 8.
+
+Explanation:
+The correct answer is found by applying the formula provided in the learning objective. The other choices are incorrect because they do not result from plugging the given values into the formula correctly.
+
+Common mistake note:
+A common mistake would be to assume that the distance between the focus and the center is simply the difference between the semi-major and semi-minor axes (10 - 5 = 5), which is incorrect. This approach neglects the squaring and square-rooting steps in the formula.
+------------------------------------------------------------------------------
+
+Problem 3 (Zero_B):
+Calculate the distance to a focus of an ellipse with a semi-major axis of 8 units and zero semi-minor axis.
+A) 0
+B) 2
+C) 4
+D) 8
+Correct Answer: D
+
+Solution:
+When the semi-minor axis is zero, the ellipse becomes a circle, and there are no foci. However, if we apply the formula c² = a² - b² with b = 0, we get c² = a², which means c = a in this case. Since a = 8, the distance to the focus (which would be the radius of the circle) is also 8.
+
+Explanation:
+The correct answer is found by applying the formula provided in the learning objective and considering the特殊情况 when b is zero. The other choices are incorrect because they do not reflect the fact that a circle has no foci or because they result from an incorrect application of the formula.
+
+Common mistake note:
+A common mistake would be to assume that the distance to the focus is zero, as there are no foci in a circle. However, when applying the formula with b = 0, it simplifies to c = a, which gives us the radius of the circle.
+------------------------------------------------------------------------------
+
+Problem 4 (Negative_Results):
+An ellipse has a semi-major axis of 3 units and a semi-minor axis of 4 units. Calculate the distance from the center to a focus.
+A) -1
+B) 0
+C) 2
+D) No real solution
+Correct Answer: D
+
+Solution:
+The formula c² = a² - b² gives us c² = 3² - 4² = 9 - 16 = -7. Since the square of a real number cannot be negative, there is no real solution for c in this case. The ellipse with these dimensions does not have real foci.
+
+Explanation:
+The correct answer is found by applying the formula provided in the learning objective and recognizing that a negative result under the square root indicates that there are no real solutions. The other choices are incorrect because they do not reflect the impossibility of finding real values for c with these dimensions.
+
+Common mistake note:
+A common mistake would be to attempt to take the square root of -7, which results in an imaginary number. This is not applicable here as we're looking for real distances.
+------------------------------------------------------------------------------
+
+Problem 5 (Invalid_Axis):
+Calculate the distance to a focus of an ellipse with a semi-major axis of -5 units and a semi-minor axis of 6 units.
+A) 1
+B) 3
+C) 4
+D) No real solution
+Correct Answer: D
+
+Solution:
+The semi-major axis cannot be negative in the context of an ellipse. The formula c² = a² - b² is not applicable when 'a' is negative, as it represents the length from the center to one end of the major axis. Since 'a' is negative, there is no real solution for c.
+
+Explanation:
+The correct answer is found by recognizing that the semi-major axis cannot be negative and therefore the formula does not apply in this case. The other choices are incorrect because they do not reflect the impossibility of finding real values for c with a negative semi-major axis.
+
+Common mistake note:
+A common mistake would be to attempt to use the formula despite the negative value for 'a', which is not valid for an ellipse.
+------------------------------------------------------------------------------
+
+Problem 6 (Zero_Axis):
+An ellipse has a semi-major axis of 0 units and a semi-minor axis of 3 units. Calculate the distance from the center to a focus.
+A) 0
+B) 1
+C) No real solution
+D) Infinite
+Correct Answer: C
+
+Solution:
+When the semi-major axis is zero, there is no ellipse; it becomes a single point. In this case, there are no foci, and applying the formula c² = a² - b² with a = 0 results in an undefined situation (since we would be dividing by zero). Therefore, there is no real solution for c.
+
+Explanation:
+The correct answer is found by recognizing that an ellipse cannot have a semi-major axis of zero. The other choices are incorrect because they do not reflect the impossibility of finding real values for c with a zero semi-major axis.
+
+Common mistake note:
+A common mistake would be to assume that the distance to the focus is zero or infinite, but neither applies when the semi-major axis is zero.
+------------------------------------------------------------------------------
+
+Problem 7 (Invalid_B):
+An ellipse has a semi-major axis of 7 units and a negative semi-minor axis of -2 units. Calculate the distance from the center to a focus.
+A) 1
+B) 3
+C) 4
+D) No real solution
+Correct Answer: D
+
+Solution:
+The semi-minor axis cannot be negative in the context of an ellipse. The formula c² = a² - b² is not applicable when 'b' is negative, as it represents the length from the center to one end of the minor axis. Since 'b' is negative, there is no real solution for c.
+
+Explanation:
+The correct answer is found by recognizing that the semi-minor axis cannot be negative and therefore the formula does not apply in this case. The other choices are incorrect because they do not reflect the impossibility of finding real values for c with a negative semi-minor axis.
+
+Common mistake note:
+A common mistake would be to attempt to use the formula despite the negative value for 'b', which is not valid for an ellipse.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.5.12",
+  "objective_text": "Simplify logical expressions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Inequality_Simplification_1",
+      "stem": "Simplify the expression: (x > 3) AND (x < 7)",
+      "choices": {
+        "A": "(x >= 3) OR (x <= 7)",
+        "B": "(x >= 3) AND (x <= 7)",
+        "C": "(3 < x < 7)",
+        "D": "False"
+      },
+      "correct_choice": "C",
+      "solution": "The simplified form of the expression is (3 < x < 7), which means x is greater than 3 and less than 7. Options A, B, and D are incorrect because they either allow for x to be equal to 3 or 7, or they represent a different relationship.",
+      "explanation": "When simplifying logical expressions involving inequalities, we keep the strict inequality (>) and (<) signs intact.",
+      "common_mistake_notes": "A common mistake is to mistakenly include 'equal to' in the simplified form, which would make it less precise."
+    },
+    {
+      "id": "Conjunction_ Simplification_2",
+      "stem": "Simplify the expression: ((p AND q) OR (r AND s))",
+      "choices": {
+        "A": "(p OR r) AND (q OR s)",
+        "B": "p OR q OR r OR s",
+        "C": "p AND q AND r AND s",
+        "D": "False"
+      },
+      "correct_choice": "A",
+      "solution": "The expression simplifies to (p OR r) AND (q OR s), using the distributive property of logical operators. Options B, C, and D are incorrect because they either represent a different relationship or do not follow the correct operator precedence.",
+      "explanation": "When simplifying expressions with conjunctions (AND) and disjunctions (OR), we can use the distributive property to group terms.",
+      "common_mistake_notes": "A common mistake is to forget the distributive property, leading to an incorrect simplification."
+    },
+    {
+      "id": "Disjunction_Simplification_3",
+      "stem": "Simplify the expression: NOT ((NOT p) AND (NOT q))",
+      "choices": {
+        "A": "p OR q",
+        "B": "NOT(p OR q)",
+        "C": "p AND q",
+        "D": "False"
+      },
+      "correct_choice": "A",
+      "solution": "The expression simplifies to p OR q, using De Morgan's laws for negation. Options B, C, and D are incorrect because they represent a different relationship or do not follow the correct operator precedence.",
+      "explanation": "When simplifying expressions involving negations, we can use De Morgan's laws to transform the expression.",
+      "common_mistake_notes": "A common mistake is to misapply De Morgan's laws, leading to an incorrect simplification."
+    },
+    {
+      "id": "Identity_Laws_4",
+      "stem": "Simplify the expression: p AND True",
+      "choices": {
+        "A": "False",
+        "B": "p",
+        "C": "True",
+        "D": "p OR True"
+      },
+      "correct_choice": "C",
+      "solution": "The expression simplifies to True, as any value ANDed with True results in True. Options A, B, and D are incorrect because they represent a different relationship.",
+      "explanation": "In logical expressions, the identity laws state that any value ANDed with True or ORed with False results in the other value.",
+      "common_mistake_notes": "A common mistake is to forget the identity laws, leading to an incorrect simplification."
+    },
+    {
+      "id": "Implication_Simplification_5",
+      "stem": "Simplify the expression: NOT(p) OR q",
+      "choices": {
+        "A": "p AND NOT(q)",
+        "B": "NOT( p) AND q",
+        "C": "p OR NOT(q)",
+        "D": "False"
+      },
+      "correct_choice": "B",
+      "solution": "The expression simplifies to NOT(p) AND q, which is equivalent to the original expression due to the material implication rule. Options A, C, and D are incorrect because they represent a different relationship.",
+      "explanation": "In logical expressions, the material implication (p implies q) can be represented as NOT(p) OR q, and vice versa.",
+      "common_mistake_notes": "A common mistake is to confuse the material implication with other logical relationships, leading to an incorrect simplification."
+    },
+    {
+      "id": "Exclusive_Or_Simplification_6",
+      "stem": "Simplify the expression: (p XOR q) AND NOT(p)",
+      "choices": {
+        "A": "q",
+        "B": "NOT(q)",
+        "C": "False",
+        "D": "p"
+      },
+      "correct_choice": "A",
+      "solution": "The expression simplifies to q, as p XOR q AND NOT(p) means either p is false and q is true (exclusive OR), and since we know NOT(p) is true, q must be true. Options B, C, and D are incorrect because they represent a different relationship.",
+      "explanation": "When simplifying expressions involving exclusive OR (XOR), we consider the truth table for XOR to determine the simplified form.",
+      "common_mistake_notes": "A common mistake is to misinterpret the exclusive OR, leading to an incorrect simplification."
+    },
+    {
+      "id": "Converse_Implies_Biconditional_7",
+      "stem": "Simplify the expression: (p implies q) AND (q implies p)",
+      "choices": {
+        "A": "p XOR q",
+        "B": "p AND q",
+        "C": "p OR q",
+        "D": "False"
+      },
+      "correct_choice": "B",
+      "solution": "The expression simplifies to p AND q, as both implications imply a biconditional relationship (p if and only if q). Options A, C, and D are incorrect because they represent different relationships.",
+      "explanation": "When combining two implications in opposite directions, the result is a biconditional statement (p AND q) or (q AND p), depending on the order of the variables.",
+      "common_mistake_notes": "A common mistake is to overlook the relationship between converse implications and biconditionals, leading to an incorrect simplification."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.7.4",
+  "objective_text": "Identify transverse and conjugate axes",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "In a hyperbola, which axis is perpendicular to the line passing through the foci?",
+      "choices": {
+        "A": "Conjugate axis",
+        "B": "Transverse axis",
+        "C": "Major axis",
+        "D": "Minor axis"
+      },
+      "correct_choice": "B",
+      "solution": "The transverse axis of a hyperbola is the line that passes through the center and intersects both vertices, while the conjugate axis is perpendicular to it and connects the two co-vertices. The major axis includes the foci but isn't perpendicular to the line connecting them. The minor axis is shorter than the transverse axis.",
+      "explanation": "The transverse axis' orientation relative to the foci makes it the correct answer.",
+      "common_mistake_notes": "Common mistake: Choosing 'Major axis' because it includes the foci, but it's not perpendicular to the line connecting them."
+    },
+    {
+      "id": "Asd456",
+      "stem": "In a hyperbola, which axis connects the vertices and is parallel to the directrix?",
+      "choices": {
+        "A": "Conjugate axis",
+        "B": "Transverse axis",
+        "C": "Major axis",
+        "D": "Minor axis"
+      },
+      "correct_choice": "C",
+      "solution": "The major axis of a hyperbola is the longest diameter, connecting the vertices and parallel to the directrix. The transverse axis is perpendicular to the major axis.",
+      "explanation": "The term 'major axis' refers to the axis that aligns with the directrix and contains the foci.",
+      "common_mistake_notes": "Common mistake: Choosing 'Transverse axis' because it connects the vertices, but it's not parallel to the directrix."
+    },
+    {
+      "id": "Asd789",
+      "stem": "In the equation of a hyperbola β = 1/a^2 - 1/b^2, which axis is represented by 'a'?",
+      "choices": {
+        "A": "Conjugate axis",
+        "B": "Transverse axis",
+        "C": "Major axis",
+        "D": "Minor axis"
+      },
+      "correct_choice": "C",
+      "solution": "In the standard form of a hyperbola equation, β = 1/a^2 - 1/b^2, 'a' represents the semi-major axis, which is half the length of the major axis. The major axis is parallel to the transverse axis.",
+      "explanation": "The term 'a' in this context refers to a component of the major axis length.",
+      "common_mistake_notes": "Common mistake: Choosing 'Transverse axis', but 'a' represents the semi-major axis, not the transverse axis."
+    },
+    {
+      "id": "Asd012",
+      "stem": "In an ellipse, which axis is parallel to the directrix and passes through the center?",
+      "choices": {
+        "A": "Conjugate axis",
+        "B": "Transverse axis",
+        "C": "Major axis",
+        "D": "Minor axis"
+      },
+      "correct_choice": "C",
+      "solution": "The major axis of an ellipse is the longest diameter, parallel to the directrix and passing through the center. The minor axis is perpendicular to the major axis.",
+      "explanation": "The term 'major axis' refers to the axis that aligns with the directrix and contains the foci, in the case of an ellipse as well.",
+      "common_mistake_notes": "Common mistake: Choosing 'Transverse axis', but it's not parallel to the directrix."
+    },
+    {
+      "id": "Asd345",
+      "stem": "In a hyperbola, which axis divides the shape into two congruent halves?",
+      "choices": {
+        "A": "Conjugate axis",
+        "B": "Transverse axis",
+        "C": "Major axis",
+        "D": "Minor axis"
+      },
+      "correct_choice": "A",
+      "solution": "The conjugate axis of a hyperbola is the line perpendicular to the transverse axis and divides the hyperbola into two congruent halves.",
+      "explanation": "The conjugate axis creates symmetry by dividing the hyperbola into mirror images.",
+      "common_mistake_notes": "Common mistake: Choosing 'Transverse axis', but it doesn't divide the hyperbola into congruent halves."
+    },
+    {
+      "id": "Asd678",
+      "stem": "In a parabola, which axis is perpendicular to the directrix and contains the focus?",
+      "choices": {
+        "A": "Conjugate axis",
+        "B": "Transverse axis",
+        "C": "Major axis",
+        "D": "Minor axis"
+      },
+      "correct_choice": "B",
+      "solution": "In a parabola, there is no concept of conjugate or major/minor axes. The directrix and the focus are related to the transverse axis, which is perpendicular to the directrix and contains the focus.",
+      "explanation": "A parabola has only one axis, the transverse axis, which connects the vertex with the focus.",
+      "common_mistake_notes": "Common mistake: Choosing 'Conjugate axis' or 'Major axis', but these terms don't apply to a parabola."
+    },
+    {
+      "id": "Asd901",
+      "stem": "In the equation of an ellipse, y^2/a^2 + x^2/b^2 = 1, which axis is represented by 'b'?",
+      "choices": {
+        "A": "Conjugate axis",
+        "B": "Transverse axis",
+        "C": "Major axis",
+        "D": "Minor axis"
+      },
+      "correct_choice": "D",
+      "solution": "In the standard form of an ellipse equation, y^2/a^2 + x^2/b^2 = 1, 'b' represents the semi-minor axis, which is half the length of the minor axis. The minor axis is perpendicular to the major axis.",
+      "explanation": "The term 'b' in this context refers to a component of the minor axis length.",
+      "common_mistake_notes": "Common mistake: Choosing 'Major axis', but 'b' represents the semi-minor axis, not the major axis."
+    }
+  ]
+}

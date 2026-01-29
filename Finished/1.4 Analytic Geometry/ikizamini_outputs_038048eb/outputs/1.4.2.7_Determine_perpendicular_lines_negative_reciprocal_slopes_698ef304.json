@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.2.7",
+  "objective_text": "Determine perpendicular lines (negative reciprocal slopes)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which line is perpendicular to the line with equation y = 3x + 2?",
+      "choices": {
+        "A": "y = -1/3x + 4",
+        "B": "y = 3x - 5",
+        "C": "y = -3x + 2",
+        "D": "y = x + 3"
+      },
+      "correct_choice": "A",
+      "solution": "The slope of the given line is 3. The negative reciprocal of 3 is -1/3, which means the perpendicular line will have a slope of -1/3. Therefore, option A is the correct answer.",
+      "explanation": "Perpendicular lines have slopes that are negative reciprocals of each other.",
+      "common_mistake_notes": "A common mistake would be to choose an option with the same slope or no slope (a vertical line), which are not perpendicular to the given line."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the equation of a line that is perpendicular to y = -4x + 1 and passes through the point (3, 5).",
+      "choices": {
+        "A": "y = 1/4x - 7",
+        "B": "y = -1/4x + 9",
+        "C": "y = 4x - 7",
+        "D": "y = -4x + 13"
+      },
+      "correct_choice": "B",
+      "solution": "The slope of the given line is -4. The negative reciprocal of -4 is 1/4, which will be the slope of the perpendicular line. Using the point-slope form (y - y1 = m(x - x1)), we can find the equation with the point (3, 5) and slope 1/4: y - 5 = 1/4(x - 3). Solving for y gives us option B.",
+      "explanation": "To find the perpendicular line passing through a specific point, use the negative reciprocal of the original slope and plug in the coordinates of the point into the point-slope form.",
+      "common_mistake_notes": "A common mistake would be to forget to apply the negative reciprocal when finding the slope of the perpendicular line."
+    },
+    {
+      "id": ":3",
+      "stem": "Which pair of lines are perpendicular?",
+      "choices": {
+        "A": "(y = 2x + 1) and (y = -1/2x - 3)",
+        "B": "(y = x - 5) and (y = x + 7)",
+        "C": "(y = -3x + 4) and (y = 3x - 8)",
+        "D": "(y = 5x - 2) and (y = 1/5x + 6)"
+      },
+      "correct_choice": "A",
+      "solution": "The slopes of the lines in option A are 2 and -1/2, which are negative reciprocals. Therefore, they are perpendicular. The other options do not have negative reciprocal slopes.",
+      "explanation": "Two lines are perpendicular if their slopes are negative reciprocals of each other.",
+      "common_mistake_notes": "A common mistake would be to overlook the requirement that both lines must have negative reciprocal slopes."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the slope of a line perpendicular to the line passing through the points (2, 3) and (5, -1).",
+      "choices": {
+        "A": "-2/3",
+        "B": "2/3",
+        "C": "-3/2",
+        "D": "3/2"
+      },
+      "correct_choice": "C",
+      "solution": "First, find the slope of the given line using the formula (y2 - y1) / (x2 - x1): (-1 - 3) / (5 - 2) = -4 / 3. The negative reciprocal of this slope is -3/2, which is option C.",
+      "explanation": "To find the slope of a line perpendicular to another line, take the negative reciprocal of the original line's slope.",
+      "common_mistake_notes": "A common mistake would be to forget to take the negative reciprocal when finding the slope of the perpendicular line."
+    },
+    {
+      "id": ":5",
+      "stem": "Which equation represents a line that is perpendicular to y = -x + 7 and has the same y-intercept?",
+      "choices": {
+        "A": "y = x - 7",
+        "B": "y = -1/2x + 7",
+        "C": "y = -x + 7",
+        "D": "y = 1/2x + 7"
+      },
+      "correct_choice": "D",
+      "solution": "The slope of the given line is -1. The negative reciprocal of -1 is 1/2, which will be the slope of the perpendicular line. Since both lines have the same y-intercept (7), option D is correct.",
+      "explanation": "To find a line perpendicular to another with the same y-intercept, use the negative reciprocal of the original slope and keep the y-intercept unchanged.",
+      "common_mistake_notes": "A common mistake would be to choose an option with a different y-intercept, which would not result in two lines with the same starting point."
+    },
+    {
+      "id": ":6",
+      "stem": "The line with equation y = 5x - 3 is perpendicular to which of the following lines?",
+      "choices": {
+        "A": "y = -1/5x + 2",
+        "B": "y = 5x + 8",
+        "C": "y = -3x + 5",
+        "D": "y = x - 7"
+      },
+      "correct_choice": "A",
+      "solution": "The slope of the given line is 5. The negative reciprocal of 5 is -1/5, which means the perpendicular line will have a slope of -1/5. Therefore, option A is the correct answer.",
+      "explanation": "Perpendicular lines have slopes that are negative reciprocals of each other.",
+      "common_mistake_notes": "A common mistake would be to choose an option with the same slope or no slope (a vertical line), which are not perpendicular to the given line."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the equation of a line that is perpendicular to y = 1/3x - 4 and passes through the point (-2, 5).",
+      "choices": {
+        "A": "y = -3x + 11",
+        "B": "y = 3x - 7",
+        "C": "y = -1/3x + 1",
+        "D": "y = 1/3x - 9"
+      },
+      "correct_choice": "A",
+      "solution": "The slope of the given line is 1/3. The negative reciprocal of 1/3 is -3, which will be the slope of the perpendicular line. Using the point-slope form (y - y1 = m(x - x1)), we can find the equation with the point (-2, 5) and slope -3: y - 5 = -3(x + 2). Solving for y gives us option A.",
+      "explanation": "To find the perpendicular line passing through a specific point, use the negative reciprocal of the original slope and plug in the coordinates of the point into the point-slope form.",
+      "common_mistake_notes": "A common mistake would be to forget to apply the negative reciprocal when finding the slope of the perpendicular line."
+    }
+  ]
+}

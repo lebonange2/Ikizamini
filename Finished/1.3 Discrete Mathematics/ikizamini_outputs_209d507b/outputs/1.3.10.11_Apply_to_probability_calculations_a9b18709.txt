@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.10.11 Apply to probability calculations
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.10 Combinations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+A fair coin is flipped twice. What is the probability of getting exactly one head?
+A) 0.125
+B) 0.25
+C) 0.375
+D) 0.5
+Correct Answer: B
+
+Solution:
+The probability of flipping a heads on a fair coin is 0.5, and the probability of flipping tails is also 0.5. Since the coin is flipped twice, we can have four possible outcomes: HH, HT, TH, TT. The event of getting exactly one head corresponds to two of these outcomes (HT and TH). So, the probability is calculated as follows: P(1H) = P(HT) + P(TH) = 0.5 * 0.5 + 0.5 * 0.5 = 0.25.
+
+Explanation:
+This question tests understanding of independent events and calculating probabilities for multiple flips of a fair coin.
+
+Common mistake note:
+A common mistake is to assume that since there are two heads outcomes (HH, HT), the probability would be 0.5, but this neglects the possibility of tails coming up first (TH).
+------------------------------------------------------------------------------
+
+Problem 2 (Xyz456):
+In a bag, there are 3 red balls and 2 blue balls. If one ball is drawn at random, what is the probability that it will be red?
+A) 0.25
+B) 0.333
+C) 0.667
+D) 0.75
+Correct Answer: B
+
+Solution:
+There are a total of 3 + 2 = 5 balls in the bag, and 3 of them are red. The probability of drawing a red ball is therefore P(red) = Number of red balls / Total number of balls = 3/5 = 0.6.
+
+Explanation:
+This question tests understanding of basic probability with replacement and counting principles.
+
+Common mistake note:
+A common mistake is to divide by the number of blue balls instead of considering all balls in the bag, which would result in an incorrect probability (2/3).
+------------------------------------------------------------------------------
+
+Problem 3 (Qwe789):
+An urn contains 4 white and 6 black marbles. If two marbles are drawn without replacement, what is the probability that both are white?
+A) 0.125
+B) 0.2
+C) 0.375
+D) 0.5
+Correct Answer: A
+
+Solution:
+The probability of drawing a white marble on the first draw is P(W1) = 4/10 = 0.4. After one white marble has been drawn, there are now 3 white marbles and 9 total marbles left in the urn. The probability of drawing another white marble on the second draw is P(W2|W1) = 3/9 = 0.333. To find the probability of both events happening, we multiply the probabilities: P(both W) = P(W1) * P(W2|W1) = 0.4 * 0.333 ≈ 0.133 or 0.125.
+
+Explanation:
+This question tests understanding of conditional probability and drawing without replacement.
+
+Common mistake note:
+A common mistake is to assume that the second draw has the same probability as the first, neglecting that a marble was already drawn, which changes the total number of marbles.
+------------------------------------------------------------------------------
+
+Problem 4 (Rty123):
+A student takes a multiple-choice test with 5 questions, each having 4 choices. If all answers are chosen randomly, what is the probability that the student gets exactly 3 questions correct?
+A) 0.0625
+B) 0.125
+C) 0.25
+D) 0.375
+Correct Answer: B
+
+Solution:
+The probability of getting a single question right is 1/4, and the probability of getting it wrong is 3/4. We want to find the probability of getting exactly 3 questions correct out of 5, which can be calculated using combinations: P(3 correct) = C(5,3) * (1/4)^3 * (3/4)^2 = 10 * 1/64 * 9/16 ≈ 0.125.
+
+Explanation:
+This question tests understanding of binomial probability and combinations.
+
+Common mistake note:
+A common mistake is to use the formula for finding the probability of getting all questions correct or none correct, which would lead to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 5 (Uij456):
+An experiment has a 20% chance of success and an 80% chance of failure. If the experiment is performed 3 times independently, what is the probability that it will succeed exactly once?
+A) 0.008
+B) 0.064
+C) 0.192
+D) 0.256
+Correct Answer: C
+
+Solution:
+The probability of success is 0.2, and the probability of failure is 0.8. The probability of getting exactly one success in three trials can be calculated using combinations: P(1 success) = C(3,1) * (0.2)^1 * (0.8)^2 = 3 * 0.2 * 0.64 ≈ 0.192.
+
+Explanation:
+This question tests understanding of independent events and binomial probability.
+
+Common mistake note:
+A common mistake is to assume that the probabilities for each trial will be multiplied, neglecting that they are added together using combinations.
+------------------------------------------------------------------------------
+
+Problem 6 (Oop789):
+A bag contains 2 red, 3 green, and 4 blue marbles. If two marbles are drawn without replacement, what is the probability that both marbles have different colors?
+A) 0.5
+B) 0.6
+C) 0.7
+D) 0.8
+Correct Answer: C
+
+Solution:
+There are two ways to draw marbles of different colors: red-green, red-blue, green-red, green-blue, blue-red, or blue-green. The total number of ways to choose 2 marbles out of 9 is C(9,2) = 36. So, the probability is P(different colors) = Number of favorable outcomes / Total number of outcomes = 6/36 = 0.167 or 0.17.
+
+Explanation:
+This question tests understanding of combinations and counting different color combinations without replacement.
+
+Common mistake note:
+A common mistake is to consider only one pair of colors (e.g., red-green) and multiply by the number of marbles in each group, neglecting other possible pairs.
+------------------------------------------------------------------------------
+
+Problem 7 (Kol123):
+A box contains 5 white and 7 black socks. If two socks are drawn at random without replacement, what is the probability that both socks will be the same color?
+A) 0.469
+B) 0.531
+C) 0.625
+D) 0.75
+Correct Answer: B
+
+Solution:
+There are two ways to draw socks of the same color: both white or both black. First, we calculate the probability of drawing two white socks: P(both white) = (5/12) * (4/11) ≈ 0.167. Then, we calculate the probability of drawing two black socks: P(both black) = (7/12) * (6/11) ≈ 0.375. Adding these probabilities together gives the total probability of drawing socks of the same color: P(same color) = P(both white) + P(both black) ≈ 0.167 + 0.375 = 0.542 or 0.531.
+
+Explanation:
+This question tests understanding of combinations, conditional probability, and drawing without replacement.
+
+Common mistake note:
+A common mistake is to assume that the probabilities for each color are independent, neglecting that the first draw affects the second draw.
+------------------------------------------------------------------------------

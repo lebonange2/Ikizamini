@@ -3,7 +3,7 @@
 Filter lines containing "[failed]" from a text file and write them to another file.
 
 Usage:
-  python3 filter_failed.py "Finished/ikizamini_outputs_fba892ef/outputs/index.txt" failed.txt
+  python3 filter_failed.py "Finished/1.4 Analytic Geometry/ikizamini_outputs_038048eb/outputs/index.txt" failed.txt
 """
 
 from __future__ import annotations

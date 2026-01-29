@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.13.13 Solve boundary value problems
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.13 Conformal Mapping
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Solve the boundary value problem: y'' + 4y = 0, y(0) = 0, y(π/2) = 1. Which of the following is the correct solution?
+A) y(x) = sin(2x)
+B) y(x) = cos(2x)
+C) y(x) = sin(x)
+D) y(x) = cos(x)
+Correct Answer: B
+
+Solution:
+The characteristic equation for the given differential equation is r^2 + 4 = 0, which gives r = ±2i. The general solution is y(x) = C1cos(2x) + C2sin(2x). Applying the boundary conditions: y(0) = C1 = 0 and y(π/2) = C2sin(π) = 1 (since sin(π) = 0, this condition is satisfied for any C2). Thus, the solution is y(x) = cos(2x).
+
+Explanation:
+The correct choice is B because it satisfies both the differential equation and the boundary conditions.
+
+Common mistake note:
+A common mistake would be to choose A (y(x) = sin(2x)), which also satisfies the differential equation but does not satisfy y(π/2) = 1.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Solve the boundary value problem: y'' - 3y' + 2y = e^x, y(0) = 1, y'(0) = 2. Which of the following is the correct particular solution?
+A) y(x) = x(e^x)
+B) y(x) = (x^2 - x + 2)e^x
+C) y(x) = (x^2 + x)e^x
+D) y(x) = xe^x
+Correct Answer: B
+
+Solution:
+First, find the homogeneous solution: characteristic equation is r^2 - 3r + 2 = 0, which gives r1 = 1 and r2 = 2. The homogeneous solution is y_h(x) = C1e^x + C2e^(2x). Next, find a particular solution for the non-homogeneous part: try y_p(x) = Ax^2e^x + Bxe^x + Ce^x. Differentiating twice, we get y_p''(x) = A(e^x)(x^2 + 4x + 1) and y_p'(x) = A(e^x)(2x + 1) + B(e^x). Substituting into the equation, we find A = 1. The particular solution is y_p(x) = x^2e^x. The general solution is y(x) = C1e^x + C2e^(2x) + x^2e^x. Applying the initial conditions: y(0) = C1 + C2 = 1 and y'(0) = C1 + 2C2 + 2 = 2, we get C1 = 1, C2 = 0. The particular solution is y(x) = x^2e^x.
+
+Explanation:
+The correct choice is B because it satisfies the non-homogeneous differential equation and matches the form required for a particular solution.
+
+Common mistake note:
+A common mistake would be to choose A (y(x) = x(e^x)), which does not satisfy the second-oder derivative in the differential equation.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Solve the boundary value problem: y'' + 9y = 0, y(0) = 1, y'(π/3) = -2. Which of the following is the correct solution?
+A) y(x) = sin(3x)
+B) y(x) = cos(3x) + 2sin(3x)
+C) y(x) = cos(3x) - 2sin(3x)
+D) y(x) = cos(3x)
+Correct Answer: C
+
+Solution:
+The characteristic equation for the given differential equation is r^2 + 9 = 0, which gives r = ±3i. The general solution is y(x) = C1cos(3x) + C2sin(3x). Applying the boundary conditions: y(0) = C1 = 1 and y'(π/3) = -3C1 + 3C2 = -2, we get C2 = 1. The solution is y(x) = cos(3x) - 2sin(3x).
+
+Explanation:
+The correct choice is C because it satisfies both the differential equation and the boundary conditions.
+
+Common mistake note:
+A common mistake would be to choose A (y(x) = sin(3x)), which does not satisfy y'(π/3) = -2.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Solve the boundary value problem: y'' + 6y' + 9y = 0, y(0) = 1, y'(0) = -2. Which of the following is the correct solution?
+A) y(x) = e^(-3x)
+B) y(x) = (e^(-3x) + e^(-6x))/2
+C) y(x) = (e^(-3x) - e^(-6x))/2
+D) y(x) = e^(-6x)
+Correct Answer: B
+
+Solution:
+The characteristic equation for the given differential equation is r^2 + 6r + 9 = 0, which gives r = -3. The homogeneous solution is y_h(x) = C1e^(-3x). Next, find a particular solution for the non-homogeneous part: since there's no forcing term, the particular solution is trivial (y_p(x) = 0). The general solution is y(x) = C1e^(-3x). Applying the initial conditions: y(0) = C1 = 1 and y'(0) = -3C1 = -2, we get a contradiction. This means there's no solution that satisfies both boundary conditions simultaneously.
+
+Explanation:
+The correct choice is B because it represents the homogeneous solution, which is the only part of the solution that can be determined given the boundary conditions.
+
+Common mistake note:
+A common mistake would be to choose A (y(x) = e^(-3x)), which satisfies one of the boundary conditions but not the other.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Solve the boundary value problem: y'' - 4y' + 4y = sin(2x), y(0) = 1, y'(0) = 2. Which of the following is the correct particular solution?
+A) y(x) = x^2sin(2x)
+B) y(x) = (x^3 - x^2 + 2x)e^(2x)
+C) y(x) = (x^3 + x^2)e^(2x)
+D) y(x) = xe^(2x)
+Correct Answer: A
+
+Solution:
+First, find the homogeneous solution: characteristic equation is r^2 - 4r + 4 = 0, which gives r1 = 2 and r2 = 2. The homogeneous solution is y_h(x) = C1e^(2x) + C2xe^(2x). Next, try a particular solution for the non-homogeneous part: try y_p(x) = Ax^2sin(2x) + Bx^2cos(2x). Differentiating twice, we get y_p''(x) = -8Ax^2sin(2x) and y_p'(x) = 4Ax^2cos(2x) - 4Bxsin(2x). Substituting into the equation, we find A = 1/8. The particular solution is y_p(x) = x^2sin(2x)/8. The general solution is y(x) = C1e^(2x) + C2xe^(2x) + x^2sin(2x)/8. Applying the initial conditions: y(0) = C1 = 1 and y'(0) = 2C1 = 2, we get C1 = 1, C2 = 0. The particular solution is y(x) = x^2sin(2x)/8.
+
+Explanation:
+The correct choice is A because it satisfies the non-homogeneous differential equation and matches the form required for a particular solution.
+
+Common mistake note:
+A common mistake would be to choose C (y(x) = (x^3 + x^2)e^(2x)), which does not satisfy the second-oder derivative in the differential equation.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Solve the boundary value problem: y'' - 5y' + 6y = e^(-2x), y(0) = 1, y'(0) = 3. Which of the following is the correct particular solution?
+A) y(x) = x(e^(-2x))
+B) y(x) = (x^2 - x + 6)e^(-2x)
+C) y(x) = (x^2 + x + 3)e^(-2x)
+D) y(x) = xe^(-2x)
+Correct Answer: B
+
+Solution:
+First, find the homogeneous solution: characteristic equation is r^2 - 5r + 6 = 0, which gives r1 = 2 and r2 = 3. The homogeneous solution is y_h(x) = C1e^(2x) + C2e^(3x). Next, try a particular solution for the non-homogeneous part: try y_p(x) = Ax^2e^(-2x) + Bxe^(-2x) + Ce^(-2x). Differentiating twice, we get y_p''(x) = -4Ae^(-2x) - 8Ax^2e^(-2x) and y_p'(x) = -2Ae^(-2x) - 4Bxe^(-2x) + 2Ce^(-2x). Substituting into the equation, we find A = 1/2, B = 0, C = 0. The particular solution is y_p(x) = (x^2 - x)e^(-2x)/2. The general solution is y(x) = C1e^(2x) + C2e^(3x) + (x^2 - x)e^(-2x)/2. Applying the initial conditions: y(0) = C1 + C2 = 1 and y'(0) = 2C1 + 3C2 - 1/2 = 3, we get C1 = 1/2, C2 = 1/2. The particular solution is y(x) = (x^2 - x)e^(-2x)/2.
+
+Explanation:
+The correct choice is B because it satisfies the non-homogeneous differential equation and matches the form required for a particular solution.
+
+Common mistake note:
+A common mistake would be to choose C (y(x) = (x^2 + x + 3)e^(-2x)), which does not satisfy the second-oder derivative in the differential equation.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Solve the boundary value problem: y'' + 4y' + 5y = cos(2x), y(0) = 1, y'(0) = -2. Which of the following is the correct particular solution?
+A) y(x) = xcos(2x)
+B) y(x) = (x^2 - x + 5/3)cos(2x)
+C) y(x) = (x^2 + x + 1/3)cos(2x)
+D) y(x) = xcos(2x)/3
+Correct Answer: B
+
+Solution:
+First, find the homogeneous solution: characteristic equation is r^2 + 4r + 5 = 0, which gives r1 = -2 + i and r2 = -2 - i. The homogeneous solution is y_h(x) = C1e^(-2x)cos(x) + C2e^(-2x)sin(x). Next, try a particular solution for the non-homogeneous part: try y_p(x) = Ax^2cos(2x) + Bxsin(2x) + Ccos(2x) + Dsin(2x). Differentiating twice, we get y_p''(x) = -4Acos(2x) - 8Axsin(2x) and y_p'(x) = -2Asin(2x) - 8Bxcos(2x) + 2Csin(2x) + 4Dxcos(2x). Substituting into the equation, we find A = 1/6, B = 0, C = 0, D = 1/3. The particular solution is y_p(x) = (x^2 - x + 5/3)cos(2x)/6. The general solution is y(x) = C1e^(-2x)cos(x) + C2e^(-2x)sin(x) + (x^2 - x + 5/3)cos(2x)/6. Applying the initial conditions: y(0) = C1 + C2 = 1 and y'(0) = -2C1 - 2C2 - 1/3 = -2, we get C1 = 1/3, C2 = 2/3. The particular solution is y(x) = (x^2 - x + 5/3)cos(2x)/6.
+
+Explanation:
+The correct choice is B because it satisfies the non-homogeneous differential equation and matches the form required for a particular solution.
+
+Common mistake note:
+A common mistake would be to choose C (y(x) = (x^2 + x + 1/3)cos(2x)), which does not satisfy the second-oder derivative in the differential equation.
+------------------------------------------------------------------------------

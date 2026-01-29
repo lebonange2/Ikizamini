@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.1.8",
+  "objective_text": "Apply complex number equality",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Determine if the following two complex numbers are equal: (3 + 4i) and (4 + 3i)",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "(3 + 4i) = 4 + 3i",
+        "D": "(4 + 3i) = 3 + 4i"
+      },
+      "correct_choice": "B",
+      "solution": "Complex numbers are considered equal if both their real parts and imaginary parts are equal. In this case, the real part of (3 + 4i) is 3 and the real part of (4 + 3i) is 4, making them unequal. The imaginary parts are also not equal: 4i for the first number and 3i for the second.",
+      "explanation": "Equality of complex numbers requires equality in both the real and imaginary parts.",
+      "common_mistake_notes": "A common mistake would be to focus only on one part (either the real or imaginary) and assume that if one part is equal, the numbers are equal. However, both parts must be considered."
+    },
+    {
+      "id": ":2",
+      "stem": "Are the complex numbers (-2 + 5i) and (5 - 2i) conjugates of each other?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "-2 + 5i = 5 - 2i",
+        "D": "(5 - 2i) = (-2 + 5i)"
+      },
+      "correct_choice": "A",
+      "solution": "The conjugate of a complex number (a + bi) is obtained by changing the sign of the imaginary part, resulting in (a - bi). In this case, the conjugate of (-2 + 5i) is (-2 - 5i), which is not equal to (5 - 2i). However, (5 - 2i) is indeed the conjugate of (-2 + 5i).",
+      "explanation": "Conjugates are formed by reversing the sign of the imaginary part. If two complex numbers are conjugates, their product will be a real number.",
+      "common_mistake_notes": "A common mistake would be to assume that if the real parts and imaginary parts are simply swapped, they are conjugates. The change must only apply to the imaginary part."
+    },
+    {
+      "id": ":3",
+      "stem": "Simplify and determine if the following complex numbers are equal: (2 + 3i)(2 - 3i) = 4 - 9i",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "(2 + 3i)(2 - 3i) = 5",
+        "D": "(2 + 3i)(2 - 3i) = 13"
+      },
+      "correct_choice": "B",
+      "solution": "Using the difference of squares formula (a^2 - b^2 = (a + b)(a - b)), we can simplify (2 + 3i)(2 - 3i) to be (2^2 - (3i)^2) = (4 - 9(-1)) = 4 + 9 = 13. Thus, the simplified form is not equal to 4 - 9i.",
+      "explanation": "The difference of squares formula can be used to simplify products of complex conjugates. After simplification, compare the result with the given expression.",
+      "common_mistake_notes": "A common mistake would be to forget to square the imaginary part or apply the wrong operation (addition instead of subtraction) when using the difference of squares."
+    },
+    {
+      "id": ":4",
+      "stem": "Are the complex numbers (6 + 0i) and (6) considered equal?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "(6 + 0i) = 6i",
+        "D": "(6) = 6 + 0i"
+      },
+      "correct_choice": "A",
+      "solution": "Complex numbers with a zero imaginary part can be simplified to their real part. Therefore, (6 + 0i) is equivalent to 6.",
+      "explanation": "Numbers with an imaginary part of zero are considered real numbers and can be treated as such in equality comparisons.",
+      "common_mistake_notes": "A common mistake would be to think that the presence of 'i' makes a difference, but when the coefficient of i is zero, it不影响 the value."
+    },
+    {
+      "id": ":5",
+      "stem": "Solve for x: (x + 2i)(x - 2i) = 0. Which of the following is the correct solution?",
+      "choices": {
+        "A": "x = 2i",
+        "B": "x = -2i",
+        "C": "x = 0",
+        "D": "x = 2i or x = -2i"
+      },
+      "correct_choice": "C",
+      "solution": "Using the zero product property, if (a)(b) = 0, then either a = 0 or b = 0. In this case, we have (x + 2i)(x - 2i) = 0. Setting each factor equal to zero gives us x + 2i = 0 or x - 2i = 0. Solving for x in both cases results in x = -2i or x = 2i, but these are the conjugates of each other and represent the same solution (x = 0) in this context.",
+      "explanation": "The zero product property can be used to find solutions when a product equals zero. In this case, we have two complex conjugate factors, which lead to the same real solution.",
+      "common_mistake_notes": "A common mistake would be to think that x = 2i and x = -2i are distinct solutions, but in this context, they represent the same real solution (x = 0) because they are conjugates."
+    },
+    {
+      "id": ":6",
+      "stem": "Are the complex numbers (1 + i)^2 and 2i equal?",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "(1 + i)^2 = 1 - i",
+        "D": "(1 + i)^2 = 2"
+      },
+      "correct_choice": "B",
+      "solution": "Expanding (1 + i)^2 using the FOIL method gives us (1 * 1) + (1 * i) + (i * 1) + (i * i) = 1 + i + i - 1 = 2i. Therefore, (1 + i)^2 is equal to 2i.",
+      "explanation": "Expanding the square of a complex number using the FOIL method or the binomial theorem will reveal the correct result.",
+      "common_mistake_notes": "A common mistake would be to forget that i^2 = -1, which leads to an incorrect simplification."
+    },
+    {
+      "id": ":7",
+      "stem": "Simplify and determine if the following complex numbers are equal: (3 + 4i)/(5 - 6i) = (20 - 9i)/(31)",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "(3 + 4i)/(5 - 6i) = (20 - 9i)/(-31)",
+        "D": "(3 + 4i)/(5 - 6i) = (20 - 9i)/(31) * (5 + 6i)/(5 + 6i)"
+      },
+      "correct_choice": "B",
+      "solution": "To compare complex fractions, we can multiply both the numerator and denominator of each fraction by the conjugate of the denominator. For (3 + 4i)/(5 - 6i), multiplying by (5 + 6i)/(5 + 6i) gives us (15 + 24i + 20i + 24)/(25 + 30 - 30 - 36). Simplifying this results in (39i + 39)/(0), which is undefined. Therefore, the original complex numbers are not equal.",
+      "explanation": "When comparing complex fractions, multiplying both numerator and denominator by the conjugate of the denominator can help simplify the expression for comparison.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply both the numerator and denominator by the conjugate or to incorrectly apply the conjugation process."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.14.3",
+  "objective_text": "Design orbital paths",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "A satellite needs to be placed in a circular orbit around Earth at an altitude of 500 km above the surface. Calculate its orbital velocity, given Earth's radius is 6,371 km and gravitational acceleration at this altitude is approximately 9.8 m/s^2.",
+      "choices": {
+        "A": "4,600 m/s",
+        "B": "5,000 m/s",
+        "C": "5,500 m/s",
+        "D": "6,000 m/s"
+      },
+      "correct_choice": "C",
+      "solution": "The orbital velocity (v) can be calculated using the formula v = √(GM/R), where G is the gravitational constant (6.674 × 10^-11 N·m^2/kg^2), M is Earth's mass (5.972 × 10^24 kg), and R is the sum of Earth's radius (6,371 km) and satellite altitude (500 km). First, calculate the total radius: R = 6,871 km. Convert to meters: R = 6,871 × 10^3 m. Apply the formula: v = √((6.674 × 10^-11 N·m^2/kg^2) × (5.972 × 10^24 kg) / (6,871 × 10^3 m)). The result is approximately 5,500 m/s.",
+      "explanation": "The correct answer uses the formula for orbital velocity and takes into account Earth's radius and satellite altitude. Incorrect choices either use an incorrect formula or do not consider the actual orbit radius.",
+      "common_mistake_notes": "Common mistake: Using the escape velocity formula instead of the orbital velocity formula."
+    },
+    {
+      "id": ":Q2",
+      "stem": "A spacecraft is en route to Mars and must enter a circular orbit around the planet with an altitude of 300 km above its surface. Given Mars' radius is 3,390 km and standard gravitational parameter (GM) as 4.282 × 10^13 m^3/s^2, determine the spacecraft's orbital velocity. Round your answer to two decimal places.",
+      "choices": {
+        "A": "2,567.23 m/s",
+        "B": "2,917.36 m/s",
+        "C": "3,267.49 m/s",
+        "D": "3,617.62 m/s"
+      },
+      "correct_choice": "B",
+      "solution": "The orbital velocity (v) can be calculated using the formula v = √(GM/R), where G is the gravitational constant (6.674 × 10^-11 N·m^2/kg^2), M is Mars' mass, and R is the sum of Mars' radius (3,390 km) and spacecraft altitude (300 km). First, calculate the total radius: R = 3,690 km. Convert to meters: R = 3,690 × 10^3 m. Apply the formula: v = √((4.282 × 10^13 m^3/s^2) / (3,690 × 10^3 m)). The result is approximately 2,917.36 m/s.",
+      "explanation": "The correct answer uses the formula for orbital velocity and considers Mars' radius and spacecraft altitude. Incorrect choices either use an incorrect formula or do not account for the actual orbit radius.",
+      "common_mistake_notes": "Common mistake: Forgetting to convert given values from km to meters before calculating the orbital velocity."
+    },
+    {
+      "id": ":Q3",
+      "stem": "A satellite is in a geostationary orbit around Earth, remaining above the equator. What is the altitude of this satellite above Earth's surface?",
+      "choices": {
+        "A": "500 km",
+        "B": "2,000 km",
+        "C": "35,786 km",
+        "D": "40,000 km"
+      },
+      "correct_choice": "C",
+      "solution": "A geostationary satellite orbits Earth at an altitude of approximately 35,786 km above the equator, ensuring its period matches Earth's rotational period.",
+      "explanation": "The correct answer corresponds to the standard definition of a geostationary orbit. Incorrect choices do not match the required altitude for a satellite to maintain a fixed position relative to Earth.",
+      "common_mistake_notes": "Common mistake: Confusing geostationary orbits with lower-altitude orbits like low Earth orbit (LEO), typically around 500-2,000 km above surface."
+    },
+    {
+      "id": ":Q4",
+      "stem": "A spacecraft is conducting research on Jupiter's moon Europa. It needs to enter an elliptical orbit with a periapsis of 1,500 km and apoapsis of 20,000 km above the moon's surface. Given Europa's radius as 1,560 km, calculate the minimum velocity required at periapsis for the spacecraft to maintain this orbit. Use G = 6.674 × 10^-11 N·m^2/ kg^2 and Europa's mass M = 4.8 × 10^22 kg.",
+      "choices": {
+        "A": "1,500 m/s",
+        "B": "2,000 m/s",
+        "C": "2,500 m/s",
+        "D": "3,000 m/s"
+      },
+      "correct_choice": "C",
+      "solution": "At periapsis, the spacecraft's velocity is determined by its gravitational potential energy being converted into kinetic energy. Use the vis-viva equation: v^2 = GM(2/r - 1/a), where r is the distance from Europa's center to the spacecraft at periapsis and a is the semi-major axis of the elliptical orbit. First, calculate the semi-major axis (a = (periapsis + apoapsis) / 2). Apply the vis-viva equation. The result is approximately 2,500 m/s.",
+      "explanation": "The correct answer uses the vis-viva equation to determine the spacecraft's velocity at periapsis. Incorrect choices either use an incorrect formula or do not consider the specific conditions of an elliptical orbit.",
+      "common_mistake_notes": "Common mistake: Assuming a circular orbit and using the orbital velocity formula instead of the vis-viva equation."
+    },
+    {
+      "id": ":Q5",
+      "stem": "A satellite orbits Earth in a polar path, passing over both poles. If its period is 12 hours, what is its altitude above Earth's surface?",
+      "choices": {
+        "A": "200 km",
+        "B": "400 km",
+        "C": "600 km",
+        "D": "800 km"
+      },
+      "correct_choice": "C",
+      "solution": "The satellite's period (T) and altitude (h) can be related to Earth's radius (R), gravitational constant (G), and Earth's mass (M) using the formula T^2 = 4π^2 * (R + h)^3 / GM. Given T = 12 hours, R = 6,371 km, G = 6.674 × 10^-11 N·m^2/ kg^2, and M = 5.972 × 10^24 kg, solve for h to find an altitude of approximately 600 km.",
+      "explanation": "The correct answer uses the formula that relates a satellite's period to its altitude in an orbit around Earth. Incorrect choices either use an incorrect formula or do not solve for the altitude given the provided information.",
+      "common_mistake_notes": "Common mistake: Assuming a constant altitude for all satellites in polar orbits, which is not true as altitude affects the satellite's period."
+    },
+    {
+      "id": ":Q6",
+      "stem": "A spacecraft embarks on a mission to study Saturn's moon Titan. It aims to enter an orbit with an eccentricity of 0.1 and a semi-major axis of 15,000 km above Titan's surface. Given Titan's radius as 2,576 km, determine the apoapsis (farthest point) and periapsis (closest point) distances from Titan's center to the spacecraft.",
+      "choices": {
+        "A": "Apoapsis: 14,950 km, Periapsis: 15,050 km",
+        "B": "Apoapsis: 16,428 km, Periapsis: 13,572 km",
+        "C": "Apoapsis: 17,500 km, Periapsis: 12,500 km",
+        "D": "Apoapsis: 18,000 km, Periapsis: 12,000 km"
+      },
+      "correct_choice": "B",
+      "solution": "The apoapsis (a + e * a) and periapsis (a - e * a) can be calculated using the given semi-major axis (a) and eccentricity (e). In this case, apoapsis = 15,000 km + 0.1 * 15,000 km = 16,500 km and periapsis = 15,000 km - 0.1 * 15,000 km = 13,500 km. Subtract Titan's radius from these values: apoapsis = 16,500 km - 2,576 km = 13,924 km and periapsis = 13,500 km - 2,576 km = 10,924 km. Rounding to the nearest 100 km gives apoapsis: 16,428 km, periapsis: 13,572 km.",
+      "explanation": "The correct answer uses the formulas for apoapsis and periapsis based on the given eccentricity and semi-major axis. Incorrect choices either use an incorrect formula or do not calculate the distances from Titan's center correctly.",
+      "common_mistake_notes": "Common mistake: Confusing apoapsis and periapsis, or using the wrong formula for calculating them."
+    },
+    {
+      "id": ":Q7",
+      "stem": "A space probe is dispatched to study a distant planet with an unknown mass. The probe enters a circular orbit around the planet with a period of 10 Earth days and a radius of 50,000 km from the planet's center. Determine the mass of the planet using G = 6.674 × 10^-11 N·m^2/ kg^2.",
+      "choices": {
+        "A": "3.9 × 10^23 kg",
+        "B": "5.8 × 10^23 kg",
+        "C": "7.7 × 10^23 kg",
+        "D": "9.6 × 10^23 kg"
+      },
+      "correct_choice": "B",
+      "solution": "The planet's mass (M) can be calculated using the formula for a satellite's period in a circular orbit: T^2 = 4π^2 * R^3 / GM, where T is the period and R is the radius of the orbit. Solve for M: M = (4π^2 * R^3) / (G * T^2). Given values result in a mass of approximately 5.8 × 10^23 kg.",
+      "explanation": "The correct answer uses the formula that relates a satellite's period to the planet's mass in a circular orbit. Incorrect choices either use an incorrect formula or do not solve for the planet's mass given the provided information.",
+      "common_mistake_notes": "Common mistake: Assuming Earth's gravitational constant is different on the distant planet, which is not true as it is a universal constant."
+    }
+  ]
+}

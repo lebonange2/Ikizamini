@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.6.5",
+  "objective_text": "Determine axis of symmetry",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Find the axis of symmetry for the quadratic equation: f(x) = x^2 + 4x + 3.",
+      "choices": {
+        "A": "(1, 0)",
+        "B": "(-2, 0)",
+        "C": "(0, -2)",
+        "D": "(-1, 0)"
+      },
+      "correct_choice": "B",
+      "solution": "The axis of symmetry for a quadratic equation in the form f(x) = ax^2 + bx + c is given by x = -b / (2a). For the equation f(x) = x^2 + 4x + 3, a = 1 and b = 4. Plugging these values into the formula gives us x = -4 / (2 * 1) = -2. Therefore, the axis of symmetry is at x = -2, which corresponds to the line x = -2 or (x - (-2))^2 = 0, or B: (-2, 0).",
+      "explanation": "The axis of symmetry divides the parabola into two mirror images and can be found using the formula. The common mistake is not applying the formula correctly.",
+      "common_mistake_notes": "Common mistake: Forgetting to divide by 2 when calculating x = -b / (2a)."
+    },
+    {
+      "id": "Two",
+      "stem": "Find the axis of symmetry for the quadratic function graphed below: [insert image of a parabola opening upwards with vertex at (-3, 1)].",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(-6, 0)",
+        "C": "(-3, 0)",
+        "D": "(3, 0)"
+      },
+      "correct_choice": "C",
+      "solution": "The axis of symmetry for a parabola is the vertical line passing through its vertex. The given graph has a vertex at (-3, 1), which means the axis of symmetry is x = -3. This corresponds to choice C: (-3, 0).",
+      "explanation": "In this case, we can visually determine the axis of symmetry from the graph. The common mistake would be misidentifying the vertex.",
+      "common_mistake_notes": "Common mistake: Misinterpreting the vertex as a point on the parabola instead of the line of symmetry."
+    },
+    {
+      "id": "Three",
+      "stem": "Find the axis of symmetry for the quadratic equation: f(x) = 2x^2 - 12x + 9.",
+      "choices": {
+        "A": "(3, 0)",
+        "B": "(-3, 0)",
+        "C": "(6, 0)",
+        "D": "(-6, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "Using the formula x = -b / (2a), for f(x) = 2x^2 - 12x + 9, a = 2 and b = -12. Plugging these values gives us x = -(-12) / (2 * 2) = 3. Therefore, the axis of symmetry is at x = 3, which corresponds to choice A: (3, 0).",
+      "explanation": "The formula for the axis of symmetry applies regardless of the coefficient of x^2. The common mistake would be not accounting for the different coefficient.",
+      "common_mistake_notes": "Common mistake: Dividing by 1 instead of 2 when calculating x = -b / (2a) due to a misunderstanding of the formula."
+    },
+    {
+      "id": "Four",
+      "stem": "Find the axis of symmetry for the quadratic equation: f(x) = -3x^2 + 6x - 2.",
+      "choices": {
+        "A": "(1, 0)",
+        "B": "(-1, 0)",
+        "C": "(2, 0)",
+        "D": "(-2, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "Using the formula x = -b / (2a), for f(x) = -3x^2 + 6x - 2, a = -3 and b = 6. Plugging these values gives us x = -6 / (2 * -3) = 1. Therefore, the axis of symmetry is at x = 1, which corresponds to choice A: (1, 0).",
+      "explanation": "The formula remains valid even when a is negative. The common mistake would be not considering the sign of a.",
+      "common_mistake_notes": "Common mistake: Neglecting the negative sign in front of b when calculating x = -b / (2a) due to oversight."
+    },
+    {
+      "id": "Five",
+      "stem": "Find the axis of symmetry for the quadratic function graphed below: [insert image of a parabola opening downwards with vertex at (4, -5)].",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(2, 0)",
+        "C": "(4, 0)",
+        "D": "(8, 0)"
+      },
+      "correct_choice": "C",
+      "solution": "The axis of symmetry for a parabola is the vertical line passing through its vertex. The given graph has a vertex at (4, -5), which means the axis of symmetry is x = 4. This corresponds to choice C: (4, 0).",
+      "explanation": "In this case, we can visually determine the axis of symmetry from the graph. The common mistake would be misidentifying the vertex.",
+      "common_mistake_notes": "Common mistake: Misinterpreting the vertex as a point on the parabola instead of the line of symmetry."
+    },
+    {
+      "id": "Six",
+      "stem": "Find the axis of symmetry for the quadratic equation: f(x) = x^2 - 8x + 15.",
+      "choices": {
+        "A": "(4, 0)",
+        "B": "(-4, 0)",
+        "C": "(-2, 0)",
+        "D": "(2, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "Using the formula x = -b / (2a), for f(x) = x^2 - 8x + 15, a = 1 and b = -8. Plugging these values gives us x = -(-8) / (2 * 1) = 4. Therefore, the axis of symmetry is at x = 4, which corresponds to choice A: (4, 0).",
+      "explanation": "The formula for the axis of symmetry applies regardless of the constant term. The common mistake would be trying to factor out a coefficient from the equation.",
+      "common_mistake_notes": "Common mistake: Attempting to factor the quadratic equation instead of using the formula."
+    },
+    {
+      "id": "Seven",
+      "stem": "Find the axis of symmetry for the quadratic function graphed below: [insert image of a parabola opening upwards with vertex at (-2, 9)].",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(-4, 0)",
+        "C": "(-2, 0)",
+        "D": "(2, 0)"
+      },
+      "correct_choice": "C",
+      "solution": "The axis of symmetry for a parabola is the vertical line passing through its vertex. The given graph has a vertex at (-2, 9), which means the axis of symmetry is x = -2. This corresponds to choice C: (-2, 0).",
+      "explanation": "In this case, we can visually determine the axis of symmetry from the graph. The common mistake would be misidentifying the vertex.",
+      "common_mistake_notes": "Common mistake: Misinterpreting the vertex as a point on the parabola instead of the line of symmetry."
+    }
+  ]
+}

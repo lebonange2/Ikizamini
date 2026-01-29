@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.11.4 Differentiate e^z
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.11 Complex Differentiation
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the derivative of f(z) = e^(-3z).
+A) e^(2z)
+B) -3e^(-3z)
+C) e^(4z)
+D) 3e^(3z)
+Correct Answer: B
+
+Solution:
+The derivative of e^(-3z) is -3 * e^(-3z) using the chain rule. Therefore, the correct answer is B.
+
+Explanation:
+When differentiating e raised to a function, use the chain rule where you multiply by the derivative of the inner function.
+
+Common mistake note:
+A common mistake would be forgetting to multiply by the derivative of -3z (-3) when applying the chain rule.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Find the derivative of f(z) = e^(2iz).
+A) -2ie^(2iz)
+B) 2e^(2iz)
+C) 4ie^(2iz)
+D) e^(-2iz)
+Correct Answer: A
+
+Solution:
+The derivative of e^(2iz) is i * 2 * e^(2iz) using the chain rule. Simplifying, we get -2ie^(2iz). So, the correct answer is A.
+
+Explanation:
+When differentiating e raised to a complex function, remember to apply the chain rule and include the imaginary unit (i) in your result.
+
+Common mistake note:
+A common mistake would be forgetting to multiply by i when applying the chain rule for a complex exponential.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Find the derivative of f(z) = e^(z^2).
+A) e^(z^2)
+B) 2ze^(z^2)
+C) 2e^(z^2)
+D) e^(2z)
+Correct Answer: B
+
+Solution:
+The derivative of e^(z^2) is 2z * e^(z^2) using the chain rule. So, the correct answer is B.
+
+Explanation:
+When differentiating e raised to a quadratic function, remember to multiply by the derivative of z^2 (2z) when applying the chain rule.
+
+Common mistake note:
+A common mistake would be forgetting to multiply by 2z when applying the chain rule for a quadratic exponent.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Find the derivative of f(z) = e^(sin(z)).
+A) e^(cos(z))
+B) cos(z)e^(sin(z))
+C) sin(z)e^(cos(z))
+D) e^(sin(z)) * cos^2(z)
+Correct Answer: B
+
+Solution:
+The derivative of e^(sin(z)) is cos(z) * e^(sin(z)) using the chain rule. So, the correct answer is B.
+
+Explanation:
+When differentiating e raised to a trigonometric function, multiply by the derivative of that function (cos(z) for sin(z)).
+
+Common mistake note:
+A common mistake would be forgetting to multiply by cos(z) when applying the chain rule for sine.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Find the derivative of f(z) = e^(ln(z)).
+A) e^(z)
+B) 1/z
+C) ze^(z)
+D) e^(ln(z))/z
+Correct Answer: D
+
+Solution:
+The derivative of e^(ln(z)) is (e^(ln(z)))' = 1 * e^(ln(z))/z = e^(ln(z))/z. So, the correct answer is D.
+
+Explanation:
+When differentiating e raised to a logarithmic function, use the chain rule and the fact that (e^u)' = e^u * u'. In this case, u = ln(z).
+
+Common mistake note:
+A common mistake would be forgetting to divide by z after applying the chain rule.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Find the derivative of f(z) = e^(z^3).
+A) 3e^(z^3)
+B) 3z^2e^(z^3)
+C) 9z^2e^(z^3)
+D) e^(3z^2)
+Correct Answer: B
+
+Solution:
+The derivative of e^(z^3) is 3z^2 * e^(z^3) using the chain rule. So, the correct answer is B.
+
+Explanation:
+When differentiating e raised to a cubic function, remember to multiply by the derivative of z^3 (3z^2) when applying the chain rule.
+
+Common mistake note:
+A common mistake would be forgetting to multiply by 3z^2 when applying the chain rule for a cubic exponent.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Find the derivative of f(z) = e^(e^z).
+A) e^(e^z)
+B) e^(z)e^(e^z)
+C) e^(2e^z)
+D) e^(e^z) + e^(z)
+Correct Answer: B
+
+Solution:
+The derivative of e^(e^z) is e^(z) * e^(e^z) using the chain rule. So, the correct answer is B.
+
+Explanation:
+When differentiating e raised to an exponential function, multiply by the derivative of that function (e^z for e^z).
+
+Common mistake note:
+A common mistake would be forgetting to multiply by e^z when applying the chain rule for e^z.
+------------------------------------------------------------------------------

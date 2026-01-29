@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.5.10",
+  "objective_text": "Use conjugates to solve equations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "x1",
+      "stem": "Solve the equation: (x + 3)(x - 4) = 0",
+      "choices": {
+        "A": "x = 3",
+        "B": "x = -3",
+        "C": "x = 4",
+        "D": "x = -4"
+      },
+      "correct_choice": "B",
+      "solution": "The equation can be solved by setting each factor equal to zero: x + 3 = 0 or x - 4 = 0. Solving these equations gives x = -3 and x = 4, respectively. However, since we're looking for the value that makes both factors zero (as they are multiplied together), we only consider x = -3 as the correct solution.",
+      "explanation": "The conjugate method is not directly applicable here; factoring the equation reveals the roots.",
+      "common_mistake_notes": "A common mistake would be to choose 'x = 4' because it's one of the factors, but that only makes one factor zero, not both. The correct solution requires setting the entire product equal to zero."
+    },
+    {
+      "id": "x2",
+      "stem": "Solve the equation: \frac{(2x - 1)(3x + 5)}{6} = 0",
+      "choices": {
+        "A": "x = \frac{1}{2}",
+        "B": "x = -\frac{5}{3}",
+        "C": "x = \frac{1}{2}, x = -\frac{5}{3}",
+        "D": "No solution"
+      },
+      "correct_choice": "C",
+      "solution": "To solve the equation, set the numerator equal to zero: (2x - 1)(3x + 5) = 0. Solving these equations gives x = \frac{1}{2} and x = -\frac{5}{3}. Since the fraction is only zero when the numerator is zero, both values are solutions.",
+      "explanation": "The conjugate method is not used here; instead, we set the rational expression equal to zero by setting its numerator to zero.",
+      "common_mistake_notes": "A common mistake would be to think that because the denominator is non-zero, there's no solution. However, in a rational equation, only the numerator needs to be zero for the entire fraction to be zero."
+    },
+    {
+      "id": "x3",
+      "stem": "Solve the equation: \frac{(x + 2)^2}{(x - 1)(x + 3)} = 0",
+      "choices": {
+        "A": "x = -2",
+        "B": "x = 1, x = -3",
+        "C": "x = -2, x = 1, x = -3",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "Set the numerator equal to zero: (x + 2)^2 = 0. This gives x = -2 as the only solution. The denominator does not affect the value for which the fraction is zero.",
+      "explanation": "The conjugate method is not applicable here; we set the rational expression's numerator to zero and solve for x.",
+      "common_mistake_notes": "A common mistake would be to include x = 1 or x = -3, thinking they make the entire fraction zero. However, these values only affect the denominator, which does not determine if the fraction is zero."
+    },
+    {
+      "id": "x4",
+      "stem": "Solve the equation: \frac{(2x + 3)(x - 4)}{2x + 3} = 0",
+      "choices": {
+        "A": "x = -\frac{3}{2}, x = 4",
+        "B": "x = -\frac{3}{2}",
+        "C": "x = 4",
+        "D": "No solution"
+      },
+      "correct_choice": "C",
+      "solution": "Simplify the equation by canceling out the common factor (2x + 3): x - 4 = 0. Solving this equation gives x = 4 as the only solution.",
+      "explanation": "The conjugate method is not used here; we simplify the expression and set it equal to zero.",
+      "common_mistake_notes": "A common mistake would be to choose 'x = -\frac{3}{2}' because it's a root of one factor, but that value cancels out in the equation. The correct solution comes from setting the simplified expression equal to zero."
+    },
+    {
+      "id": "x5",
+      "stem": "Solve the equation: (x + 1)(x - 2) = (x + 3)^2",
+      "choices": {
+        "A": "x = -1, x = 2",
+        "B": "x = -3",
+        "C": "x = 0, x = 5",
+        "D": "No solution"
+      },
+      "correct_choice": "C",
+      "solution": "Use the conjugate method by expanding both sides: x^2 - x - 2 = x^2 + 6x + 9. Move all terms to one side and factor: 7x + 11 = 0, which gives x = -\frac{11}{7}. However, this is not a valid solution since it makes the original equation's left side negative while the right side is positive. The correct solution is no solution.",
+      "explanation": "The conjugate method is used here to expand and solve the equation.",
+      "common_mistake_notes": "A common mistake would be to think that x = -1 or x = 2 are solutions because they make one factor zero, but these values do not satisfy the original equation."
+    },
+    {
+      "id": "x6",
+      "stem": "Solve the equation: \frac{(x + 4)(x - 3)}{(x + 4)^2} = 1",
+      "choices": {
+        "A": "x = 3",
+        "B": "x = -4",
+        "C": "No solution",
+        "D": "x = 3, x = -4"
+      },
+      "correct_choice": "A",
+      "solution": "Simplify the equation by canceling out the common factor (x + 4): x - 3 = x + 4. Subtract x from both sides: -3 = 4, which is a contradiction. The correct solution is no solution.",
+      "explanation": "The conjugate method is not used here; we simplify and find a contradiction.",
+      "common_mistake_notes": "A common mistake would be to think that x = -4 is a solution because it cancels out in the equation, but doing so leads to a false statement (-3 = 4)."
+    },
+    {
+      "id": "x7",
+      "stem": "Solve the equation: \frac{(2x + 1)(x - 5)}{(2x + 1)^2} = \frac{1}{2}",
+      "choices": {
+        "A": "x = -\frac{1}{2}, x = 5",
+        "B": "x = -\frac{1}{2}",
+        "C": "x = 5",
+        "D": "No solution"
+      },
+      "correct_choice": "C",
+      "solution": "Simplify the equation by canceling out the common factor (2x + 1): x - 5 = \frac{x - 5}{2}. Multiply both sides by 2: 2x - 10 = x - 5. Solve for x: x = 5.",
+      "explanation": "The conjugate method is not used here; we simplify and solve the equation.",
+      "common_mistake_notes": "A common mistake would be to choose 'x = -\frac{1}{2}' because it's a root of one factor, but that value cancels out in the equation. The correct solution comes from simplifying and solving the simplified expression."
+    }
+  ]
+}

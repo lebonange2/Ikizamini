@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.13.10",
+  "objective_text": "Apply to algorithm analysis",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the time complexity of calculating the sum of numbers in a list using Python?",
+      "choices": {
+        "A": "O(1)",
+        "B": "O(n)",
+        "C": "O(n^2)",
+        "D": "O(log n)"
+      },
+      "correct_choice": "B",
+      "solution": "The time complexity is O(n) because the code iterates through each element in the list once. Option A (O(1)) is incorrect as it doesn't grow with the input size. Option C (O(n^2)) is wrong since there's no nested loop. Option D (O(log n)) is incorrect as it doesn't involve a logarithmic operation.",
+      "explanation": "The code snippet calculates the sum of numbers in a list by iterating through each element once. Therefore, the time complexity is linear with respect to the size of the input list.",
+      "common_mistake_notes": "A common mistake would be to assume that a simple loop has a lower complexity than O(n), but basic loops contribute linearly to the overall time complexity."
+    },
+    {
+      "id": ":2",
+      "stem": "What is the space complexity of the following recursive function in Python?",
+      "choices": {
+        "A": "O(1)",
+        "B": "O(n)",
+        "C": "O(n^2)",
+        "D": "O(log n)"
+      },
+      "correct_choice": "B",
+      "solution": "The space complexity is O(n) because each recursive call adds a new stack frame, proportional to the input size. Option A (O(1)) is incorrect as recursion uses additional memory for function calls. Option C (O(n^2)) and D (O(log n)) are wrong as they don't match this specific recursive function's behavior.",
+      "explanation": "The recursive function has a linear relationship with the input size, as each call to the function adds a new stack frame until it reaches the base case. This results in space complexity proportional to the maximum depth of the recursion.",
+      "common_mistake_notes": "A common mistake would be to overlook the impact of the function call stack on memory usage when analyzing recursive functions."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the time complexity of sorting an array using Bubble Sort?",
+      "choices": {
+        "A": "O(n)",
+        "B": "O(n log n)",
+        "C": "O(n^2)",
+        "D": "O(log n)"
+      },
+      "correct_choice": "C",
+      "solution": "The time complexity of Bubble Sort is O(n^2) due to the nested loops that compare and swap elements. Option A (O(n)) and D (O(log n)) are incorrect as they represent faster sorting algorithms. Option B (O(n log n)) refers to more efficient sorting algorithms like Merge Sort or Quick Sort.",
+      "explanation": "Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if needed. In the worst case, when the input is reverse sorted, it has quadratic time complexity.",
+      "common_mistake_notes": "A common mistake would be to confuse Bubble Sort's time complexity with that of other sorting algorithms like Merge Sort or Quick Sort."
+    },
+    {
+      "id": ":4",
+      "stem": "What is the time complexity of searching for an element in a sorted array using Binary Search?",
+      "choices": {
+        "A": "O(n)",
+        "B": "O(n log n)",
+        "C": "O(log n)",
+        "D": "O(1)"
+      },
+      "correct_choice": "C",
+      "solution": "The time complexity of Binary Search is O(log n) as it repeatedly divides the search space in half. Option A (O(n)) and B (O(n log n)) are incorrect for slower searching algorithms. Option D (O(1)) is wrong since constant-time search only applies to certain data structures like hash tables.",
+      "explanation": "Binary Search starts by comparing the target value with the middle element of a sorted array. If found, it's returned; if not, the half containing the target is searched further. This process continues recursively until the target is found or the search space is empty. The algorithm halves the search space in each step, resulting in logarithmic time complexity.",
+      "common_mistake_notes": "A common mistake would be to assume Binary Search has linear time complexity like a simple sequential search, which is not the case due to its divide- and-conquer approach."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the space complexity of the following iterative function in Python?",
+      "choices": {
+        "A": "O(1)",
+        "B": "O(n)",
+        "C": "O(n^2)",
+        "D": "O(log n)"
+      },
+      "correct_choice": "A",
+      "solution": "The space complexity is O(1) as no additional memory proportional to the input size is used. Option B (O(n)) and C (O(n^2)) are incorrect as they imply a relationship with the input size, which isn't the case here. Option D (O(log n)) doesn't match the function's behavior.",
+      "explanation": "The iterative function uses only a fixed amount of memory for its variables, regardless of the input size. This results in constant space complexity, independent of the number of elements processed by the function.",
+      "common_mistake_notes": "A common mistake would be to overlook that the space complexity is determined by the additional memory used, not the variables or operations performed."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the time complexity of multiplying two n x n matrices using a naive algorithm?",
+      "choices": {
+        "A": "O(n)",
+        "B": "O(n log n)",
+        "C": "O(n^2)",
+        "D": "O(n^3)"
+      },
+      "correct_choice": "D",
+      "solution": "The time complexity of multiplying two matrices using a naive algorithm is O(n^3) as it involves multiplying each element in one matrix with the corresponding elements in the other. Option A (O(n)) and B (O(n log n)) are incorrect for faster algorithms. Option C (O(n^2)) refers to operations like matrix addition, not multiplication.",
+      "explanation": "Naive matrix multiplication requires multiplying each element of one matrix with the corresponding elements in the other matrix, resulting in a new matrix. This process requires n x n operations for each element in the output matrix, leading to cubic time complexity.",
+      "common_mistake_notes": "A common mistake would be to underestimate the number of multiplications required for matrix multiplication and assume it has quadratic time complexity like simpler operations."
+    },
+    {
+      "id": ":7",
+      "stem": "What is the time complexity of finding the maximum value in an unsorted array using a linear search?",
+      "choices": {
+        "A": "O(n)",
+        "B": "O(n log n)",
+        "C": "O(log n)",
+        "D": "O(1)"
+      },
+      "correct_choice": "A",
+      "solution": "The time complexity of finding the maximum value in an unsorted array using a linear search is O(n) as it needs to traverse all elements. Option B (O(n log n)) and C (O(log n)) are incorrect for faster algorithms or sorted data. Option D (O(1)) is wrong since constant-time search only applies to certain situations like having a precomputed maximum value.",
+      "explanation": "Linear search compares each element in the array with the current maximum value found so far. It must examine every element to ensure no larger value was missed, resulting in linear time complexity.",
+      "common_mistake_notes": "A common mistake would be to assume that finding the maximum value in an unsorted array can be done faster than a simple sequential search, which is not the case without additional information or structure."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.4.13",
+  "objective_text": "Use in Fourier analysis",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the primary use of Fourier analysis in signal processing?",
+      "choices": {
+        "A": "Filtering out noise",
+        "B": "Converting signals to frequency domain",
+        "C": "Increasing signal amplitude",
+        "D": "Reducing the number of data points"
+      },
+      "correct_choice": "B",
+      "solution": "Fourier analysis is used to convert signals from the time domain into the frequency domain, allowing for easier analysis and manipulation of the signal's frequency components.",
+      "explanation": "Filtering out noise can be done using Fourier analysis but it's not its primary use. Increasing signal amplitude and reducing the number of data points are not related to Fourier analysis.",
+      "common_mistake_notes": "Users might associate filtering with Fourier analysis, but it's not its main purpose."
+    },
+    {
+      "id": "Qwerty",
+      "stem": "Which of the following statements about Fourier series is true?",
+      "choices": {
+        "A": "It can only be applied to periodic signals.",
+        "B": "It represents a signal as a sum of sine waves with integer frequencies.",
+        "C": "It always results in an exact representation of the original signal.",
+        "D": "It's only useful for analyzing audio signals."
+      },
+      "correct_choice": "B",
+      "solution": "Fourier series represents a periodic function as a sum of sine and cosine functions with integer multiples of the fundamental frequency.",
+      "explanation": "Fourier series can be applied to non-periodic signals using Fourier transform. It doesn't always result in an exact representation, especially for non-periodic or discontinuous signals. It's not limited to audio signals and is widely used in various fields.",
+      "common_mistake_notes": "Users might forget that Fourier series can handle periodic signals only."
+    },
+    {
+      "id": "Zxcvb",
+      "stem": "What does the magnitude of a Fourier coefficient represent?",
+      "choices": {
+        "A": "The phase shift of the corresponding sine wave.",
+        "B": "The frequency of the corresponding sine wave.",
+        "C": "The energy contribution of the corresponding sine wave.",
+        "D": "The time delay of the corresponding sine wave."
+      },
+      "correct_choice": "C",
+      "solution": "The magnitude of a Fourier coefficient represents the energy contribution of the corresponding sine or cosine wave in the signal's decomposition.",
+      "explanation": "Phase shift and frequency are represented by the angle (or phase) of the complex Fourier coefficients, not their magnitudes. Time delay is not related to Fourier analysis.",
+      "common_mistake_notes": "Users might混淆the role of magnitude and angle in Fourier coefficients."
+    },
+    {
+      "id": "Bnmgh",
+      "stem": "In which field is the Fast Fourier Transform (FFT) commonly used?",
+      "choices": {
+        "A": "Graphics rendering",
+        "B": "Database indexing",
+        "C": "Machine learning",
+        "D": "Digital signal processing"
+      },
+      "correct_choice": "D",
+      "solution": "The Fast Fourier Transform is a widely used algorithm for efficiently computing the discrete Fourier transform, primarily in digital signal processing.",
+      "explanation": "FFT is not directly related to graphics rendering, database indexing, or machine learning. It's specifically designed for signal processing tasks.",
+      "common_mistake_notes": "Users might associate FFT with more general computational tasks."
+    },
+    {
+      "id": "Gfddc",
+      "stem": "What does the Fourier transform of a continuous-time signal give us?",
+      "choices": {
+        "A": "The time-domain representation of the signal.",
+        "B": "The frequency content of the signal at each instant in time.",
+        "C": "The average power of the signal over time.",
+        "D": "The complex exponentials that make up the signal."
+      },
+      "correct_choice": "D",
+      "solution": "The Fourier transform of a continuous-time signal gives us the complex exponentials (sine and cosine waves) that make up the signal in the frequency domain.",
+      "explanation": "Time-domain representation is given by the original signal, not its Fourier transform. The frequency content at each instant is represented by the short-time Fourier transform, not the standard Fourier transform. Average power can be calculated from the square of the signal's amplitude, not directly from the Fourier transform.",
+      "common_mistake_notes": "Users might混淆the role of short-time Fourier transform and standard Fourier transform."
+    },
+    {
+      "id": "Sdfgh",
+      "stem": "What is the relationship between the continuous-time Fourier transform and the discrete-time Fourier transform?",
+      "choices": {
+        "A": "They are identical formulas with different domains.",
+        "B": "The discrete- time version is a sampled version of the continuous-time one.",
+        "C": "The continuous-time version is a limiting case of the discrete-time one as the sampling rate approaches infinity.",
+        "D": "They have no relationship; they serve different purposes."
+      },
+      "correct_choice": "C",
+      "solution": "The continuous-time Fourier transform can be considered the limit of the discrete-time Fourier transform as the sampling rate increases without bound (approaches infinity).",
+      "explanation": "The formulas for both transforms are similar but not identical, and they operate on different domains. The relationship between them is through sampling theory.",
+      "common_mistake_notes": "Users might混淆the connection between continuous-time and discrete-time Fourier transforms."
+    },
+    {
+      "id": "Jkl;",
+      "stem": "What is the main advantage of using the Discrete Fourier Transform (DFT) over the Fast Fourier Transform (FFT)?",
+      "choices": {
+        "A": "It can handle non-periodic signals.",
+        "B": "It's computationally more efficient.",
+        "C": "It provides a more accurate representation of the signal.",
+        "D": "It's easier to implement."
+      },
+      "correct_choice": "A",
+      "solution": "The Discrete Fourier Transform is used for analyzing non-periodic discrete signals, whereas the Fast Fourier Transform assumes periodicity in the sampled data.",
+      "explanation": "FFT is computationally more efficient than DFT, provides a similar representation of the signal, and its implementation is generally not significantly harder. The main advantage of DFT over FFT is handling non-periodic signals.",
+      "common_mistake_notes": "Users might混淆the roles of DFT and FFT in terms of efficiency and accuracy."
+    }
+  ]
+}

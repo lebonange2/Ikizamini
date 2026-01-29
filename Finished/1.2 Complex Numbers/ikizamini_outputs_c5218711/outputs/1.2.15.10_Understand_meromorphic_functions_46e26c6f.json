@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.10",
+  "objective_text": "Understand meromorphic functions",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which of the following statements is true about a meromorphic function f(z)?",
+      "choices": {
+        "A": "f(z) has no zeros or poles.",
+        "B": "f(z) is holomorphic everywhere except at isolated points where it has removable singularities.",
+        "C": "f(z) is holomorphic everywhere except at isolated points where it has essential singularities.",
+        "D": "f(z) is continuous everywhere."
+      },
+      "correct_choice": "C",
+      "solution": "A meromorphic function f(z) is holomorphic (analytic) everywhere except at a finite number of isolated points, where it has poles. Therefore, option C is correct. Option A is incorrect because meromorphic functions can have zeros. Option B refers to removable singularities, which are not part of the definition of meromorphic functions. Option D is incorrect because continuity is not guaranteed outside the domain of holomorphy.",
+      "explanation": "Meromorphic functions are defined as functions that are holomorphic everywhere except for a finite number of isolated points where they have poles. Poles are essential singularities, meaning the function's behavior near those points cannot be analytically continued.",
+      "common_mistake_notes": "Confusing meromorphic functions with holomorphic functions. Holomorphic functions are analytic everywhere, while meromorphic functions can have isolated singularities."
+    },
+    {
+      "id": ":2",
+      "stem": "What is the order of a pole at z = c for a meromorphic function f(z) if\nf(z) = (z-c)^(-3) + 2(z-c)^(-2) + 3?",
+      "choices": {
+        "A": "-3",
+        "B": "-2",
+        "C": "0",
+        "D": "3"
+      },
+      "correct_choice": "B",
+      "solution": "The order of a pole is determined by the exponent of the term with the lowest power that contributes to the singularity. In this case, the term (z-c)^(-2) has the lowest exponent (-2), so the order of the pole at z = c is -2. Therefore, option B is correct.",
+      "explanation": "The order of a pole for a meromorphic function f(z) at z = c is given by the exponent n in the Laurent series expansion around that point, where f(z) can be written as\nf(z) = (z-c)^(-n) * g(z), with g(z) holomorphic and g(c) ≠ 0 near z = c. In this problem, the pole has order -2 because of the term (z-c)^(-2).",
+      "common_mistake_notes": "Confusing the order of a zero with the order of a pole. A zero's order is positive and indicates how many times the function crosses the x-axis, while a pole's order is negative and reflects the singularity."
+    },
+    {
+      "id": ":3",
+      "stem": "Which of the following functions is meromorphic on the entire complex plane?",
+      "choices": {
+        "A": "e^z",
+        "B": "sin(z)",
+        "C": "1/z",
+        "D": "cos(1/z)"
+      },
+      "correct_choice": "C",
+      "solution": "The function 1/z has a simple pole at z = 0 but is holomorphic everywhere else in the complex plane. Therefore, it is meromorphic on the entire complex plane. Option C is correct. Options A and B are entire functions (holomorphic everywhere), and option D has an essential singularity at z = 0.",
+      "explanation": "An entire function is a function that is holomorphic on the entire complex plane. Meromorphic functions, by definition, have isolated singularities. The function 1/z has a simple pole at z = 0, making it meromorphic on C. The other options do not have any poles within the complex plane.",
+      "common_mistake_notes": "Not recognizing that entire functions are not meromorphic on the entire complex plane because they lack singularities."
+    },
+    {
+      "id": ":4",
+      "stem": "Given a meromorphic function f(z) with a pole at z = i, which of the following could be its Laurent series expansion around z = i?",
+      "choices": {
+        "A": "(z-i)^(-1)",
+        "B": "(z-i)^(-2) + 3(z-i)^(-1) + 5",
+        "C": "2 - (z-i) + (z-i)^2",
+        "D": "-4(z-i)^(-1) - 6(z-i)^(-2)"
+      },
+      "correct_choice": "B",
+      "solution": "The Laurent series expansion around a pole must include negative powers of the form (z-z_0)^(-n), where n is the order of the pole. For a pole at z = i, option B has a term with (z-i)^(-2), indicating a pole of order 2, which is consistent with being meromorphic. Therefore, option B is correct.",
+      "explanation": "The Laurent series expansion for a meromorphic function around a pole z_0 includes terms with negative powers up to the order of the pole and possibly positive powers if the function has a removable singularity or is analytic at z_0. In this case, option B has a term (z-i)^(-2), suggesting a pole of order 2.",
+      "common_mistake_notes": "Not including negative powers in the Laurent series expansion for a meromorphic function with a pole."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the residue of the meromorphic function f(z) = (z^2 + 1)/(z^3 - 1) at z = 1?",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "The residue of a meromorphic function f(z) at a simple pole z_0 is given by the limit as z approaches z_0 of (z-z_0) * f(z). For f(z) = (z^2 + 1)/(z^3 - 1), the pole at z = 1 is simple. The residue is thus lim (z→1) [(z-1)(z^2 + 1)/(z^3 - 1)]. This limit evaluates to 0, so option A is correct.",
+      "explanation": "The residue of a meromorphic function at a simple pole z_0 is found by evaluating the limit as z approaches z_0 of (z-z_0) * f(z). In this case, the pole at z = 1 is simple, and the residue calculation results in 0.",
+      "common_mistake_notes": "Not recognizing that a simple pole requires the use of the residue formula with (z-z_0) multiplied by the function."
+    },
+    {
+      "id": ":6",
+      "stem": "Which of the following functions is NOT meromorphic?",
+      "choices": {
+        "A": "f(z) = 1/(z^2 + 1)",
+        "B": "g(z) = tan(z)",
+        "C": "h(z) = cot(z)",
+        "D": "j(z) = sec(z)"
+      },
+      "correct_choice": "D",
+      "solution": "The function j(z) = sec(z) has an infinite number of poles along the imaginary axis, which means it is not meromorphic. Option D is correct. The other options are all meromorphic functions: f(z), g(z), and h(z) have isolated singularities.",
+      "explanation": "Meromorphic functions have only a finite number of isolated singularities. Function j(z) = sec(z) has poles at z = (n + 1/2)iπ for every integer n, which is an infinite set along the imaginary axis, making it non-meromorphic.",
+      "common_mistake_notes": "Not recognizing that an infinite number of singularities disqualifies a function from being meromorphic."
+    },
+    {
+      "id": ":7",
+      "stem": "What is the behavior of a meromorphic function f(z) near an essential singularity at z = c?",
+      "choices": {
+        "A": "f(z) approaches a finite value.",
+        "B": "f(z) oscillates between two values.",
+        "C": "f(z) grows without bound.",
+        "D": "f(z) has a removable singularity."
+      },
+      "correct_choice": "C",
+      "solution": "At an essential singularity, the function f(z) does not approach any finite value, nor does it oscillate or have a removable singularity. Instead, it grows without bound or exhibits other complex behavior. Therefore, option C is correct.",
+      "explanation": "An essential singularity is a type of singularity where the function's behavior near the point cannot be analytically continued. This means that f(z) does not approach any finite value, oscillate, or have a removable singularity; it either grows without bound or exhibits other complex behaviors like spiraling.",
+      "common_mistake_notes": "Confusing essential singularities with removable or pole singularities, which have different characteristics."
+    }
+  ]
+}

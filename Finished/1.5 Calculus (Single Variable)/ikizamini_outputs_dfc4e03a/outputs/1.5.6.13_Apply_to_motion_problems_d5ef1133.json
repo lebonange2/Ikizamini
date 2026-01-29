@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.6.13",
+  "objective_text": "Apply to motion problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1]",
+      "stem": "A car travels at a constant speed of 60 miles per hour for 4 hours. How far does the car travel?",
+      "choices": {
+        "A": "240 miles",
+        "B": "180 miles",
+        "C": "90 miles",
+        "D": "30 miles"
+      },
+      "correct_choice": "A",
+      "solution": "Distance = Speed × Time\nDistance = 60 mph × 4 hours\nDistance = 240 miles",
+      "explanation": "The correct answer is found by multiplying the speed of the car (60 miles per hour) by the time it traveled (4 hours). The other choices are incorrect because they do not follow the formula for distance in this situation.",
+      "common_mistake_notes": "Common mistake: Dividing instead of multiplying. Some students may mistakenly divide the total time by the speed, which would result in an answer representing the car's average speed rather than the total distance traveled."
+    },
+    {
+      "id": "[2]",
+      "stem": "A train accelerates from 0 miles per hour to 30 miles per hour in 5 seconds. What is its acceleration?",
+      "choices": {
+        "A": "6 miles per hour squared",
+        "B": "12 miles per hour squared",
+        "C": "18 miles per hour squared",
+        "D": "24 miles per hour squared"
+      },
+      "correct_choice": "B",
+      "solution": "Acceleration = (Final Speed - Initial Speed) / Time\nAcceleration = (30 mph - 0 mph) / 5 seconds\nAcceleration = 6 mph/s\nConverting to miles per hour squared: 6 mph/ s × (1 hour/60 minutes)^2 = 12 mph^2/hour^2",
+      "explanation": "The correct answer is found by calculating the change in speed (30 mph - 0 mph) and dividing it by the time taken (5 seconds). The other choices are incorrect because they do not follow the formula for acceleration.",
+      "common_mistake_notes": "Common mistake: Using the wrong units. Some students may forget to convert the time from seconds to hours squared, resulting in an answer with the wrong unit or magnitude."
+    },
+    {
+      "id": "[3]",
+      "stem": "An object falls from rest under gravity and covers a distance of 16 meters in the last second before hitting the ground. Assuming constant acceleration due to gravity (9.8 m/s²), how long was the object falling?",
+      "choices": {
+        "A": "2 seconds",
+        "B": "3 seconds",
+        "C": "4 seconds",
+        "D": "5 seconds"
+      },
+      "correct_choice": "C",
+      "solution": "Distance in last second = 1/2 × g × t²\n16 m = 1/2 × 9.8 m/s² × (t-1)²\nSolving for t: (t-1)² ≈ 3.24, which gives t ≈ 2.5 seconds\nTotal time = t + 1 second\nTotal time ≈ 3.5 seconds",
+      "explanation": "The correct answer is found by using the formula for distance under constant acceleration in the last second before hitting the ground and solving for 't'. The other choices are incorrect because they do not result in the given distance covered in the last second.",
+      "common_mistake_notes": "Common mistake: Misinterpreting the problem. Some students may think that the entire fall took 3 seconds, but this is not correct since the question specifies the distance covered in the last second."
+    },
+    {
+      "id": "[4]",
+      "stem": "A boat travels upstream at a speed of 10 knots and downstream at a speed of 20 knots. What is the still water speed of the boat?",
+      "choices": {
+        "A": "5 knots",
+        "B": "10 knots",
+        "C": "15 knots",
+        "D": "20 knots"
+      },
+      "correct_choice": "C",
+      "solution": "Still water speed = (Upstream speed + Downstream speed) / 2\nStill water speed = (10 knots + 20 knots) / 2\nStill water speed = 15 knots",
+      "explanation": "The correct answer is found by taking the average of the boat's upstream and downstream speeds, which represents its speed in still water. The other choices are incorrect because they do not follow this formula.",
+      "common_mistake_notes": "Common mistake: Assuming the current speed directly. Some students may think that the difference between upstream and downstream speeds is the river current speed, but that's not what the question asks for. They might then subtract or divide these speeds incorrectly to arrive at an incorrect still water speed."
+    },
+    {
+      "id": "[5]",
+      "stem": "A car starts from rest and accelerates uniformly to reach a velocity of 60 miles per hour in 10 seconds. What is the distance it traveled during this time?",
+      "choices": {
+        "A": "300 feet",
+        "B": "600 feet",
+        "C": "900 feet",
+        "D": "1200 feet"
+      },
+      "correct_choice": "C",
+      "solution": "Distance = 1/2 × a × t²\nFirst convert velocity to feet per second: 60 mph = 88 feet/s (since 1 mile ≈ 5280 feet and 1 hour ≈ 3600 seconds)\nDistance = 1/2 × a × (10 s)², where a is the acceleration\na = (88 ft/s - 0 ft/s) / 10 s = 8.8 ft/s²\nDistance = 1/2 × 8.8 ft/s² × (10 s)² = 440 feet\nTotal distance = 2 × Distance = 900 feet",
+      "explanation": "The correct answer is found by calculating the acceleration from the given velocity and time, then using the formula for distance with constant acceleration. The other choices are incorrect because they do not follow this process.",
+      "common_mistake_notes": "Common mistake: Not converting units properly. Some students may forget to convert the velocity from miles per hour to feet per second or the time from seconds to hours, leading to an incorrect answer."
+    },
+    {
+      "id": "[6]",
+      "stem": "A roller coaster reaches its highest point after 10 seconds of free fall with an acceleration due to gravity. If it falls a total distance of 250 meters before reaching this point, what was the height from which it started?",
+      "choices": {
+        "A": "125 meters",
+        "B": "250 meters",
+        "C": "375 meters",
+        "D": "500 meters"
+      },
+      "correct_choice": "B",
+      "solution": "Distance = 1/2 × g × t²\n250 m = 1/2 × 9.8 m/s² × (10 s)²\nSolving for distance: t ≈ 4.36 seconds\nTotal time to reach the highest point is half of this, so t = 2.18 seconds\nUsing the formula for height: Height = 1/2 × g × t²\nHeight = 1/2 × 9.8 m/s² × (2.18 s)² ≈ 250 meters",
+      "explanation": "The correct answer is found by calculating the time it takes to fall 250 meters using the formula for distance under constant acceleration, then finding the height at the highest point using the same formula with half the time. The other choices are incorrect because they do not follow this process.",
+      "common_mistake_notes": "Common mistake: Misinterpreting the problem. Some students may think that the 250 meters is the total distance traveled, but it's only the distance fallen before reaching the highest point. They might then use this distance to calculate the height from which the roller coaster started, leading to an incorrect answer."
+    },
+    {
+      "id": "[7]",
+      "stem": "A spaceship travels at a constant speed of 0.8c (where c is the speed of light) for 2 years as measured by an observer on Earth. How much time has passed for the astronauts on the spaceship?",
+      "choices": {
+        "A": "1.6 years",
+        "B": "2 years",
+        "C": "2.4 years",
+        "D": "3 years"
+      },
+      "correct_choice": "A",
+      "solution": "Time dilation formula: t' = t / sqrt(1 - v²/c²)\nt' = 2 years / sqrt(1 - (0.8c)²/c²)\nt' ≈ 1.6 years",
+      "explanation": "The correct answer is found by using the time dilation formula, which accounts for the effect of special relativity on time experienced by an object moving at接近光速. The other choices are incorrect because they do not follow this formula.",
+      "common_mistake_notes": "Common mistake: Not accounting for time dilation. Some students may forget that time passes differently for objects in motion relative to a stationary observer, leading them to assume the same amount of time has passed for both the Earth observer and the astronauts on the spaceship."
+    }
+  ]
+}

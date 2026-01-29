@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.10.15",
+  "objective_text": "Use in computer graphics",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the primary use of shaders in computer graphics?",
+      "choices": {
+        "A": "To create realistic lighting effects",
+        "B": "To model 3D objects",
+        "C": "To optimize game performance",
+        "D": "To handle user input"
+      },
+      "correct_choice": "A",
+      "solution": "Shaders are used in computer graphics to calculate and manipulate the appearance of objects on a rendered scene, such as lighting, textures, and colors. Thus, option A is correct.",
+      "explanation": "B is incorrect because modeling 3D objects is typically done with 3D modeling software before shaders come into play. C is wrong because while shaders can contribute to performance optimization, their primary purpose is graphical rendering. D is unrelated as handling user input is a separate aspect of game programming.",
+      "common_mistake_notes": "Confusing the role of shaders with other aspects of game development."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Which programming language is commonly used for writing shaders in computer graphics?",
+      "choices": {
+        "A": "C#",
+        "B": "GLSL",
+        "C": "Python",
+        "D": "Java"
+      },
+      "correct_choice": "B",
+      "solution": "GLSL (OpenGL Shading Language) is the most widely used programming language for writing shaders in computer graphics.",
+      "explanation": "A, C, and D are popular programming languages but not specifically designed or commonly used for shader development. GLSL, on the other hand, is tailored for GPU programming and shader authoring.",
+      "common_mistake_notes": "Assuming a more general-purpose language like C# or Python would be used."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "In computer graphics, what does a vertex shader primarily do?",
+      "choices": {
+        "A": "Applies textures to surfaces",
+        "B": "Calculates the final color of a pixel",
+        "C": "Transforms vertices into screen space",
+        "D": "Performs collision detection"
+      },
+      "correct_choice": "C",
+      "solution": "Vertex shaders are responsible for transforming vertex positions from model space to clip space and then to screen space, preparing them for rasterization.",
+      "explanation": "A is the job of a fragment shader. B is also related to fragment shaders, which calculate pixel colors. D is part of physics engines, not vertex shaders.",
+      "common_mistake_notes": "Mixing up the responsibilities of vertex and fragment shaders."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Which of the following is a type of shader used to simulate reflection in computer graphics?",
+      "choices": {
+        "A": "Normal map shader",
+        "B": "Shadow shader",
+        "C": "Reflection shader",
+        "D": "Bloom shader"
+      },
+      "correct_choice": "C",
+      "solution": "A reflection shader is specifically designed to create realistic reflections on surfaces in a 3D scene.",
+      "explanation": "A normal map shader helps with surface detail, shadow shaders handle shadows, and bloom shaders are used for over-exposure effects.",
+      "common_mistake_notes": "Confusing different types of shaders based on their names."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "In computer graphics, what does a fragment shader do after the rasterization process?",
+      "choices": {
+        "A": "Transforms vertices into screen space",
+        "B": "Calculates the final color of a pixel",
+        "C": "Applies textures to surfaces",
+        "D": "Performs collision detection"
+      },
+      "correct_choice": "B",
+      "solution": "Fragment shaders calculate and set the final color of each pixel in a rendered image, based on the data provided by vertex shaders.",
+      "explanation": "A is done by vertex shaders. C can be part of fragment shaders but not their primary function. D is unrelated to fragment shaders' role.",
+      "common_mistake_notes": "Overlooking the specific task of fragment shaders."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "What does a shader program typically consist of in computer graphics?",
+      "choices": {
+        "A": "A single vertex shader",
+        "B": "A single fragment shader",
+        "C": "Both vertex and fragment shaders",
+        "D": "A physics engine"
+      },
+      "correct_choice": "C",
+      "solution": "Shader programs usually contain both vertex and fragment shaders to handle different stages of the graphics pipeline.",
+      "explanation": "Vertex shaders work on vertices, while fragment shaders work on pixels. A physics engine is a separate component in game development.",
+      "common_mistake_notes": "Assuming that a shader program only contains one type of shader."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Which part of the graphics pipeline does a tessellation shader intervene in?",
+      "choices": {
+        "A": "Vertex processing",
+        "B": "Rasterization",
+        "C": "Geometry processing",
+        "D": "Pixel processing"
+      },
+      "correct_choice": "C",
+      "solution": "Tessellation shaders are used to refine the geometry of a mesh during the geometry processing stage, before rasterization.",
+      "explanation": "A is done by vertex shaders. B happens after tessellation. D is related to fragment shaders.",
+      "common_mistake_notes": "Misunderstanding the role of tessellation in the graphics pipeline."
+    }
+  ]
+}

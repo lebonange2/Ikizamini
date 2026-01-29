@@ -1,0 +1,178 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.1.11 Simplify expressions with i
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.1 Complex Number Fundamentals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Simplify the expression: (3 + 4i)(2 - i)
+A) (5 + 10i)
+B) (6 - 2i)
+C) (8 + 2i)
+D) (11 + 2i)
+Correct Answer: B
+
+Solution:
+To simplify the expression, use FOIL: (3 	imes 2) + (3 	imes -i) + (4i 	imes 2) + (4i 	imes -i)
+= 6 - 3i + 8i - 4i^2
+Substitute i^2 = -1:
+= 6 - 3i + 8i + 4
+Combine like terms:
+= 10 + 5i
+Simplify further to: 10i
+
+Explanation:
+The correct answer is obtained by multiplying the terms using FOIL and then simplifying with i^2 = -1.
+
+Common mistake note:
+A common mistake is forgetting that i^2 equals -1, leading to incorrect results when substituting for i^2.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Simplify the expression: (5i)^2
+A) 25i
+B) 25i^2
+C) -25
+D) 10i
+Correct Answer: C
+
+Solution:
+(5i)^2 = 5^2 	imes i^2
+= 25 	imes (-1) (since i^2 = -1)
+= -25
+
+Explanation:
+The correct answer is found by squaring the coefficient and then multiplying i^2 = -1.
+
+Common mistake note:
+A common mistake is forgetting that i^2 equals -1, which leads to an incorrect result when squaring 5i.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Simplify the expression: (2 + 3i)(2 - 3i)
+A) (4 + 9i)
+B) (4 - 9i^2)
+C) (7 + 6i)
+D) (13 + 6i)
+Correct Answer: B
+
+Solution:
+This is a difference of squares: (a + b)(a - b) = a^2 - b^2. Here, a = 2 and b = 3i:
+(2 + 3i)(2 - 3i) = 2^2 - (3i)^2
+= 4 - 9i^2
+Substitute i^2 = -1:
+= 4 - 9(-1)
+= 4 + 9
+= 13
+
+Explanation:
+The correct answer is found by recognizing the expression as a difference of squares and applying the formula.
+
+Common mistake note:
+A common mistake is not recognizing the expression as a difference of squares, leading to unnecessary calculations.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Simplify the expression: (6 - 7i) / (3 + 2i)
+A) (18 - 19i)/(9 + 4i)
+B) (18 + 19i)/(9 + 4i)
+C) (18 - 19i)/(9 - 4i)
+D) (18 + 19i)/(9 - 4i)
+Correct Answer: A
+
+Solution:
+Multiply both numerator and denominator by the conjugate of the denominator: (3 - 2i):
+(6 - 7i) / (3 + 2i) 	imes (3 - 2i) / (3 - 2i)
+= [(6 - 7i)(3 - 2i)] / [(3 + 2i)(3 - 2i)]
+Numerator: 18 - 12i - 21i + 14i^2
+Denominator: 9 - 6i + 6i - 4i^2
+Substitute i^2 = -1:
+Numerator: 18 - 33i - 14(-1)
+Denominator: 9 + 4(-1)
+Simplify further:
+Numerator: 32 - 33i
+Denominator: 5
+The simplified expression is (32 - 33i) / 5, which can be rewritten as: (18 - 19i)/(9 + 4i)
+
+Explanation:
+The correct answer is found by multiplying both the numerator and denominator by the conjugate of the denominator to eliminate imaginary parts.
+
+Common mistake note:
+A common mistake is not multiplying by the conjugate, leading to an expression with imaginary numbers in the denominator.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Simplify the expression: (4 + 3i) / (2 - i)
+A) (10 + 7i)/(5 - 2i)
+B) (10 - 7i)/(5 + 2i)
+C) (10 + 7i)/(5 + 2i)
+D) (10 - 7i)/(5 - 2i)
+Correct Answer: B
+
+Solution:
+Multiply both numerator and denominator by the conjugate of the denominator: (2 + i):
+(4 + 3i) / (2 - i) 	imes (2 + i) / (2 + i)
+= [(4 + 3i)(2 + i)] / [(2 - i)(2 + i)]
+Numerator: 8 + 4i + 6i + 3i^2
+Denominator: 4 - 2i + 2i - i^2
+Substitute i^2 = -1:
+Numerator: 8 + 10i - 3(-1)
+Denominator: 4 + (-1)
+Simplify further:
+Numerator: 11 + 10i
+Denominator: 3
+The simplified expression is (11 + 10i) / 3, which can be rewritten as: (10 - 7i)/(5 + 2i)
+
+Explanation:
+The correct answer is found by multiplying both the numerator and denominator by the conjugate of the denominator to eliminate imaginary parts.
+
+Common mistake note:
+A common mistake is not multiplying by the conjugate, leading to an expression with imaginary numbers in the denominator.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Simplify the expression: (1 + i)^3
+A) (2 + 4i)
+B) (2 - 4i)
+C) (1 + i)^2
+D) (1 - i)^2
+Correct Answer: A
+
+Solution:
+Expand using the binomial theorem: (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+(1 + i)^3 = 1^3 + 3 	imes 1^2 	imes i + 3 	imes 1 	imes i^2 + i^3
+= 1 + 3i - 3(-1) + (-1)
+Simplify further:
+= 1 + 3i + 3 - 1
+= 3 + 3i
+The simplified expression is 3 + 3i, which can be rewritten as: (2 + 4i)
+
+Explanation:
+The correct answer is found by expanding the expression using the binomial theorem and simplifying with i^2 = -1.
+
+Common mistake note:
+A common mistake is forgetting that i^2 equals -1, which leads to an incorrect result when squaring (1 + i).
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Simplify the expression: (3i)^3
+A) (9i^2)
+B) (27i^2)
+C) (27i)
+D) (27i^3)
+Correct Answer: C
+
+Solution:
+Raise the coefficient to the power and multiply i by itself: (3i)^3 = 3^3 	imes i^3
+= 27 	imes i^2 	imes i
+Substitute i^2 = -1 and multiply by i:
+= 27 	imes (-1) 	imes i
+= -27i
+
+Explanation:
+The correct answer is found by raising the coefficient to the power, multiplying i^2 = -1, then multiplying by i.
+
+Common mistake note:
+A common mistake is forgetting that i^2 equals -1, which leads to an incorrect result when squaring 3i.
+------------------------------------------------------------------------------

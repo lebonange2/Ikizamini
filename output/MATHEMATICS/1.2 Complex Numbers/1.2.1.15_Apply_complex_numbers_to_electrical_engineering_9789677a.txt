@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.1.15 Apply complex numbers to electrical engineering
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.1 Complex Number Fundamentals
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One-Phase AC Voltage Calculation):
+A single-phase AC voltage source has a peak voltage of 240 V and a frequency of 60 Hz. Calculate the RMS (root mean square) voltage.
+A) 192 V
+B) 208 V
+C) 240 V
+D) 347 V
+Correct Answer: B
+
+Solution:
+The formula for calculating the RMS voltage of a sine wave is Vrms = Vpeak / sqrt(2). Given Vpeak = 240 V, we can calculate Vrms as follows: Vrms = 240 / sqrt(2) ≈ 208 V.
+
+Explanation:
+The correct answer uses the formula for converting peak voltage to RMS voltage. The other choices either use the peak voltage directly (C), apply no conversion (A), or use the formula for calculating the peak voltage from an RMS value with a factor of sqrt(3) instead of sqrt(2) (D).
+
+Common mistake note:
+Common mistake is using the wrong formula: some students might confuse the RMS calculation for AC with the peak-to-peak calculation, which uses sqrt(3), or use the peak voltage directly without conversion.
+------------------------------------------------------------------------------
+
+Problem 2 (Impedance Calculation):
+A circuit has a resistance of 10 Ω and a reactance of 15 Ω at a frequency of 60 Hz. Calculate the impedance (Z) in ohms.
+A) 25 Ω
+B) 25 j Ω
+C) 25 √3 Ω
+D) 25 √2 Ω
+Correct Answer: D
+
+Solution:
+The impedance Z of a circuit with resistance R and reactance X is given by Z = √(R^2 + X^2). Given R = 10 Ω and X = 15 Ω, we can calculate Z as follows: Z = √((10)^2 + (15)^2) ≈ 25 √2 Ω.
+
+Explanation:
+The correct answer uses the formula for calculating impedance in a series RLC circuit. The other choices either use only resistance or reactance (A), assume the reactance is imaginary and not real (B), or use the wrong relationship between resistance, reactance, and impedance (C).
+
+Common mistake note:
+Common mistake is treating reactance as imaginary: some students might forget that in electrical engineering, reactance is considered a real quantity and should be squared along with resistance when calculating impedance.
+------------------------------------------------------------------------------
+
+Problem 3 (Power Factor Correction):
+A load has a power factor of 0.6 and consumes 1 kW at 230 V. Calculate the reactive power (Q) in VAR.
+A) 460 VAR
+B) 690 VAR
+C) 866 VAR
+D) 1,433 VAR
+Correct Answer: B
+
+Solution:
+The reactive power Q is calculated as Q = P * PF, where P is the active power and PF is the power factor. Given P = 1 kW and PF = 0.6, we can calculate Q as follows: Q = 1000 W * 0.6 = 600 VAR.
+
+Explanation:
+The correct answer uses the formula for calculating reactive power based on active power and power factor. The other choices either use the wrong relationship between power and power factor (A, C), or use an incorrect conversion from kW to W (D).
+
+Common mistake note:
+Common mistake is using the wrong formula: some students might confuse reactive power with apparent power, which is calculated as P * sqrt(1 - PF^2) but not for this specific question.
+------------------------------------------------------------------------------
+
+Problem 4 (RL Circuit Analysis):
+In an RL circuit with a voltage source of 12 V and a time constant of 0.5 s, what is the current after 1 second?
+A) 6 A
+B) 4 A
+C) 3 A
+D) 2 A
+Correct Answer: C
+
+Solution:
+The current i in an RL circuit at time t is given by i = V / R * (1 - e^(-t/τ)), where V is the voltage, R is the resistance, τ is the time constant, and e is the base of the natural logarithm. Given V = 12 V, τ = 0.5 s, and t = 1 s, we can calculate i as follows: i = 12 / R * (1 - e^(-1/0.5)) ≈ 3 A.
+
+Explanation:
+The correct answer uses the formula for calculating current in an RL circuit at a given time. The other choices either use the wrong formula or incorrect values for V, τ, or t (A, B, D).
+
+Common mistake note:
+Common mistake is forgetting to account for the exponential decay: some students might forget that the current decays over time in an RL circuit, leading to an overestimated value.
+------------------------------------------------------------------------------
+
+Problem 5 (Capacitive Reactance Calculation):
+A capacitor has a capacitance of 10 μF and operates at a frequency of 1 kHz. Calculate the capacitive reactance (Xc) in ohms.
+A) 159 Ω
+B) 159 j Ω
+C) 159 √3 Ω
+D) 159 √2 Ω
+Correct Answer: A
+
+Solution:
+The capacitive reactance Xc is calculated as Xc = 1 / (2 * π * f * C), where f is the frequency and C is the capacitance. Given f = 1 kHz and C = 10 μF, we can calculate Xc as follows: Xc = 1 / (2 * π * 1000 * 10^-6) ≈ 159 Ω.
+
+Explanation:
+The correct answer uses the formula for calculating capacitive reactance. The other choices either use an imaginary value for reactance (B), use the wrong relationship between frequency, capacitance, and reactance (C), or use the wrong conversion from μF to F (D).
+
+Common mistake note:
+Common mistake is treating reactance as imaginary: some students might forget that in electrical engineering, capacitive reactance is considered a real quantity and should not be treated as imaginary.
+------------------------------------------------------------------------------
+
+Problem 6 (RL Circuit Impedance Calculation):
+An RL circuit has a resistance of 10 Ω and an inductive reactance of 20 Ω at a frequency of 50 Hz. Calculate the total impedance (Z) in ohms.
+A) 30 Ω
+B) 30 j Ω
+C) 30 √3 Ω
+D) 30 √2 Ω
+Correct Answer: D
+
+Solution:
+The total impedance Z of an RL circuit is given by Z = √(R^2 + Xl^2), where R is the resistance and Xl is the inductive reactance. Given R = 10 Ω and Xl = 20 Ω, we can calculate Z as follows: Z = √((10)^2 + (20)^2) ≈ 30 √2 Ω.
+
+Explanation:
+The correct answer uses the formula for calculating total impedance in an RL circuit. The other choices either use only resistance or reactance (A), assume the reactance is imaginary and not real (B), or use the wrong relationship between resistance, reactance, and impedance (C).
+
+Common mistake note:
+Common mistake is treating reactance as imaginary: some students might forget that in electrical engineering, inductive reactance is considered a real quantity and should be squared along with resistance when calculating impedance.
+------------------------------------------------------------------------------
+
+Problem 7 (Transformer Voltage Transformation):
+A transformer has a primary winding with 200 turns and a secondary winding with 400 turns. If the primary voltage is 120 V, what is the secondary voltage?
+A) 60 V
+B) 120 V
+C) 240 V
+D) 480 V
+Correct Answer: C
+
+Solution:
+The voltage transformation ratio (k) of a transformer is given by k = Ns / Np, where Ns is the number of turns in the secondary winding and Np is the number of turns in the primary winding. Given Np = 200 turns, Ns = 400 turns, and Vp = 120 V, we can calculate Vk as follows: Vk = Vp * (Ns / Np) = 120 * (400 / 200) = 240 V.
+
+Explanation:
+The correct answer uses the voltage transformation ratio formula. The other choices either use the wrong relationship between primary and secondary voltages (A, B), or assume a linear increase in voltage without considering the transformer's winding ratio (D).
+
+Common mistake note:
+Common mistake is neglecting the winding ratio: some students might forget that the transformer's voltage transformation depends on the ratio of turns in the primary and secondary windings.
+------------------------------------------------------------------------------

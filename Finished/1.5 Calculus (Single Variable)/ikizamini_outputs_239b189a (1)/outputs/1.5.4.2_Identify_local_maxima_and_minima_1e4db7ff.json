@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.4.2",
+  "objective_text": "Identify local maxima and minima",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Consider the function f(x) = x^3 - 6x^2 + 9x. Identify the local maximum or minimum at x=2.",
+      "choices": {
+        "A": "Local minimum",
+        "B": "Local maximum",
+        "C": "Inflection point",
+        "D": "Neither a minimum nor a maximum"
+      },
+      "correct_choice": "A",
+      "solution": "To identify if x=2 is a local maximum or minimum, we need to find the derivative of f(x) and evaluate it at x=2. The derivative of f(x) is f'(x) = 3x^2 - 12x + 9. Now let's plug in x=2 into the derivative: f'(2) = 3(2)^2 - 12(2) + 9 = 12 - 24 + 9 = -3. Since f'(2) < 0, this indicates that there is a local maximum at x=2 because the function is decreasing on one side and increasing on the other.",
+      "explanation": "A local minimum occurs where the derivative changes from negative to positive, while a local maximum occurs when the derivative changes from positive to negative. In this case, since f'(2) < 0, we know that the function was previously increasing (positive derivative) and will now decrease (negative derivative), hence it's a local maximum.",
+      "common_mistake_notes": "A common mistake is to assume that x=2 must be an inflection point because it's a critical point (where the derivative equals zero). However, since f'(2) does not equal zero, it is not an inflection point. Also, it's important to remember that only critical points can potentially be inflection points."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Given the graph of function g(x), which of the following points represents a local minimum?",
+      "choices": {
+        "A": "(1, 3)",
+        "B": "(2, -4)",
+        "C": "(3, 0)",
+        "D": "(4, 5)"
+      },
+      "correct_choice": "B",
+      "solution": "To identify a local minimum from a graph, we look for the point where the curve changes direction from decreasing to increasing. From the given graph, it's clear that point (2, -4) is where the curve goes from being below the x-axis to above it, indicating a change in concavity and thus a local minimum.",
+      "explanation": "A local minimum on a graph appears as a 'valley' where the function dips lowest before rising again. In this case, point (2, -4) meets that criteria. The other points do not exhibit a similar change in direction.",
+      "common_mistake_notes": "A common mistake would be to choose (1, 3) or (4, 5), which are the highest points on the graph, but those represent local maxima rather than minima."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the local minimum of the function h(x) = x^4 - 8x^3 + 18x^2 - 16x + 5.",
+      "choices": {
+        "A": "(0, 5)",
+        "B": "(1, 0)",
+        "C": "(2, -7)",
+        "D": "(3, 2)"
+      },
+      "correct_choice": "C",
+      "solution": "To find the local minimum, we need to take the derivative of h(x) and set it equal to zero. The derivative is h'(x) = 4x^3 - 24x^2 + 36x - 16. Setting this equal to zero gives us a cubic equation: 4x^3 - 24x^2 + 36x - 16 = 0. Factoring, we find that x=2 is one of the roots. To determine if it's a minimum, we can check the second derivative at x=2: h''(x) = 12x^2 - 48x + 36. Plugging in x=2, we get h''(2) = 12(2)^2 - 48(2) + 36 = 48 - 96 + 36 = 0. Since the second derivative is zero at x=2, it's an inflection point and not a minimum or maximum.",
+      "explanation": "However, we can use the First Derivative Test to check for local minima or maxima in intervals where the sign of the first derivative changes. In this case, h'(x) changes from negative to positive around x=2, indicating that x=2 is a local minimum. The function value at x=2 is h(2) = 2^4 - 8(2)^3 + 18(2)^2 - 16(2) + 5 = -7.",
+      "common_mistake_notes": "A common mistake would be to assume that since the second derivative is zero, it must be a minimum or maximum. However, in this case, the second derivative being zero indicates an inflection point, not necessarily a local extremum."
+    },
+    {
+      "id": "Asdf",
+      "stem": "The function p(x) = 2x^3 - 9x^2 + 12x has a critical point at x=c. Determine if x=c is a local minimum or maximum.",
+      "choices": {
+        "A": "Local minimum",
+        "B": "Local maximum",
+        "C": "Cannot determine without knowing the value of c",
+        "D": "Neither a minimum nor a maximum"
+      },
+      "correct_choice": "C",
+      "solution": "To determine if x=c is a local minimum or maximum, we need to analyze the second derivative of p(x) at that point. However, since we don't have the specific value of c, we cannot directly calculate the second derivative at x=c. Therefore, it's not possible to determine whether x=c corresponds to a minimum or maximum without more information.",
+      "explanation": "The critical points are where the first derivative equals zero, but to classify them as local extrema, we need to look at the sign of the second derivative in intervals around the critical point. Without knowing c, we cannot perform this analysis.",
+      "common_mistake_notes": "A common mistake would be to assume that x=c must be a minimum or maximum because it's a critical point. However, without additional information about c, we cannot make that determination."
+    },
+    {
+      "id": "Asdf",
+      "stem": "The graph of function q(x) has a horizontal tangent at x=d. What can we say about the behavior of q(x) at x=d?",
+      "choices": {
+        "A": "Local minimum",
+        "B": "Local maximum",
+        "C": "Inflection point",
+        "D": "Cannot determine without knowing more about q(x)"
+      },
+      "correct_choice": "C",
+      "solution": "A horizontal tangent on a graph indicates that the derivative of the function is zero at that point. For an inflection point, both the first and second derivatives must change sign. Since we only know that the first derivative is zero (from the horizontal tangent), but not the second derivative, we can't determine if x=d is a local minimum or maximum. However, it's clear that the concavity changes at x=d, which means it's an inflection point.",
+      "explanation": "The horizontal tangent suggests a change in concavity, which typically occurs at inflection points. Without more information about q(x), we cannot determine if there is a local minimum or maximum at x=d.",
+      "common_mistake_notes": "A common mistake would be to assume that x=d must be a minimum or maximum because of the horizontal tangent. However, a horizontal tangent only indicates an inflection point, not necessarily a local extremum."
+    },
+    {
+      "id": "Asdf",
+      "stem": "The function r(x) = 3x^5 - 20x^4 + 35x^3 - 21x^2 has two critical points. Which of the following statements is true?",
+      "choices": {
+        "A": "Both critical points are local minima.",
+        "B": "Both critical points are local maxima.",
+        "C": "One is a local minimum and one is a local maximum.",
+        "D": "It's impossible to determine without more information."
+      },
+      "correct_choice": "C",
+      "solution": "To find the critical points, we need to set the first derivative of r(x) equal to zero. The derivative is r'(x) = 15x^4 - 80x^3 + 105x^2 - 42x. Setting this equal to zero gives us a quartic equation: 15x^4 - 80x^3 + 105x^2 - 42x = 0. Solving for x, we find two critical points. Since there are two distinct critical points on a polynomial function of odd degree, one must be a local minimum and the other a local maximum by the Intermediate Value Theorem.",
+      "explanation": "The IVT states that if a continuous function changes sign over an interval, it must cross the x-axis at least once within that interval. Since r(x) is continuous and has two critical points (where the derivative crosses the x-axis), there must be one change in concavity between them, indicating a minimum and maximum.",
+      "common_mistake_notes": "A common mistake would be to assume that both critical points have the same nature without considering the degree of the polynomial or the IVT. In this case, since it's an odd-degree polynomial, the number of local extrema is determined by the number of critical points."
+    },
+    {
+      "id": "Asdf",
+      "stem": "The function s(x) = x^6 - 12x^5 + 48x^4 - 72x^3 has a local minimum at x=a. Which of the following must be true?",
+      "choices": {
+        "A": "s'(a) = 0",
+        "B": "s''(a) < 0",
+        "C": "s''(a) > 0",
+        "D": "Both A and B"
+      },
+      "correct_choice": "C",
+      "solution": "Since x=a is a local minimum, the function s(x) must change from decreasing to increasing at that point. This means the first derivative s'(x) changes from negative to positive around x=a. To ensure this, the second derivative s''(a) must be positive because it describes the rate of change of the slope (first derivative). Therefore, s''(a) > 0.",
+      "explanation": "At a local minimum, the function goes from decreasing to increasing, so the first derivative changes sign. The second derivative being positive indicates that the slope is increasing, which supports the transition from negative to positive slope.",
+      "common_mistake_notes": "A common mistake would be to choose D, assuming both A and B must be true. However, while A is correct (the first derivative must equal zero at a critical point), B is not necessarily true because it depends on whether the minimum or maximum is being considered. For a local minimum, B should be s''(a) > 0."
+    }
+  ]
+}

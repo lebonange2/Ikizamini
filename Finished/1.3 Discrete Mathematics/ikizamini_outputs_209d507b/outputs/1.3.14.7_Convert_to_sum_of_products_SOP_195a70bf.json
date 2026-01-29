@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.14.7",
+  "objective_text": "Convert to sum of products (SOP)",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Convert the truth table for the function F(A,B,C) into sum of products (SOP) form.",
+      "choices": {
+        "A": "(A'+B'C')'(A+BC)'",
+        "B": "(A'+B')(C+A'B)'",
+        "C": "(A'+B+C')(A+B+C)'",
+        "D": "(A'+B+C)(A+B'+C)"
+      },
+      "correct_choice": "D",
+      "solution": "The SOP form of F(A, B, C) is (A'+B+C)(A+B'+C). This expression represents all input combinations that result in an output of 1.",
+      "explanation": "To convert a truth table to SOP, identify groups of inputs that produce 0 and negate them. The negated groups are then ANDed together. In this case, the groups producing 0 are A=0, B=0, C=1 and A=0, B=1, C=0. Negating these groups gives us (A'+B+C) and (A+B'+C), which when ANDed give the SOP form.",
+      "common_mistake_notes": "Common mistake: Not negating the input combinations that produce 0. This results in an incorrect SOP form."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Express the function G(X, Y, Z) = XYZ + X'YZ' + XY'Z using sum of products (SOP).",
+      "choices": {
+        "A": "(X+Y+Z')(X'+Y+Z)",
+        "B": "(X+Y+Z)(X'+Y+Z')",
+        "C": "(X+Y+Z')(X+Y'+Z)",
+        "D": "(X+Y+Z)(X+Y'+Z')"
+      },
+      "correct_choice": "C",
+      "solution": "The SOP form of G(X, Y, Z) is (X+Y+Z')(X+Y'+Z). This expression represents all the input combinations that result in an output of 1.",
+      "explanation": "To convert a given product of sums to SOP, distribute each term over the other terms. In this case, we have XYZ + X'YZ' + XY'Z = (X(YZ) + X'(YZ')) + XY'(Z) = (X+Y'+Z')(X+Y+Z)",
+      "common_mistake_notes": "Common mistake: Incorrect distribution of terms. This leads to extra or missing terms in the SOP form."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Convert the function H(A, B, C, D) = ABC'D + A'BCD into sum of products (SOP).",
+      "choices": {
+        "A": "(A'+B+C+D')(A+B+CD)",
+        "B": "(A'+B+CD)(A+BD')",
+        "C": "(A'+B+CD')(A+B'D)",
+        "D": "(A'+B+CD)(A+B'D')"
+      },
+      "correct_choice": "C",
+      "solution": "The SOP form of H(A, B, C, D) is (A'+B+CD')(A+B'D). This expression represents all the input combinations that result in an output of 1.",
+      "explanation": "To convert a given function to SOP, distribute each term over the other terms. In this case, we have ABC'D + A'BCD = (A(BC'D) + A'(BCD)) = (A'+B+CD')(A+B'D)",
+      "common_mistake_notes": "Common mistake: Not distributing all terms properly. This results in an incorrect SOP form."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Express the truth table for the function I(W, X, Y) using sum of products (SOP).",
+      "choices": {
+        "A": "(W+X'+Y')(W+X+Y)",
+        "B": "(W+X'+Y)(W+X+Y')",
+        "C": "(W+X+Y')(W+X'+Y)",
+        "D": "(W+X+Y)(W+X'+Y')"
+      },
+      "correct_choice": "A",
+      "solution": "The SOP form of I(W, X, Y) is (W+X'+Y')(W+X+Y). This expression represents all the input combinations that result in an output of 1.",
+      "explanation": "To convert a truth table to SOP, identify groups of inputs that produce 0 and negate them. The negated groups are then ANDed together. In this case, the group producing 0 is W=0, X=1, Y=0. Negating this group gives us (W+X'+Y'), which when combined with all other input combinations in SOP form gives (W+X+Y)(W+X'+Y')",
+      "common_mistake_notes": "Common mistake: Not considering all input combinations that produce 0. This leads to an incomplete SOP form."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Convert the function J(U, V, W) = U'VW + UV'W into sum of products (SOP).",
+      "choices": {
+        "A": "(U+V+W')(U'+V+W)",
+        "B": "(U+V+W)(U'+V+W')",
+        "C": "(U+V+W')(U+V'+W)",
+        "D": "(U+V+W)(U+V'+W')"
+      },
+      "correct_choice": "C",
+      "solution": "The SOP form of J(U, V, W) is (U+V+W')(U+V'+W). This expression represents all the input combinations that result in an output of 1.",
+      "explanation": "To convert a given product of sums to SOP, distribute each term over the other terms. In this case, we have U'VW + UV'W = (U'(VW) + U(V'W)) = (U+V+W')(U+V'+W)",
+      "common_mistake_notes": "Common mistake: Incorrect distribution of terms. This leads to extra or missing terms in the SOP form."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Express the truth table for the function K(M, N, O) using sum of products (SOP).",
+      "choices": {
+        "A": "(M+N+O')(M+N'+O)",
+        "B": "(M+N+O)(M+N'+O')",
+        "C": "(M+N+O')(M+N+O)",
+        "D": "(M+N+O)(M+N+O')"
+      },
+      "correct_choice": "A",
+      "solution": "The SOP form of K(M, N, O) is (M+N+O')(M+N'+O). This expression represents all the input combinations that result in an output of 1.",
+      "explanation": "To convert a truth table to SOP, identify groups of inputs that produce 0 and negate them. The negated groups are then ANDed together. In this case, there is no group producing 0, so the SOP form is simply (M+N+O')(M+N'+O)",
+      "common_mistake_notes": "Common mistake: Assuming a group with all inputs set to 0 exists when it does not. This results in an unnecessary negation and incorrect SOP form."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Convert the function L(P, Q, R) = PQR + P'QR' into sum of products (SOP).",
+      "choices": {
+        "A": "(P+Q+R')(P'+Q+R)",
+        "B": "(P+Q+R)(P'+Q+R')",
+        "C": "(P+Q+R')(P+Q'+R)",
+        "D": "(P+Q+R)(P+Q'+R')"
+      },
+      "correct_choice": "C",
+      "solution": "The SOP form of L(P, Q, R) is (P+Q+R')(P+Q'+R). This expression represents all the input combinations that result in an output of 1.",
+      "explanation": "To convert a given product of sums to SOP, distribute each term over the other terms. In this case, we have PQR + P'QR' = (P(QR) + P'(QR')) = (P+Q+R')(P+Q'+R)",
+      "common_mistake_notes": "Common mistake: Incorrect distribution of terms. This leads to extra or missing terms in the SOP form."
+    }
+  ]
+}

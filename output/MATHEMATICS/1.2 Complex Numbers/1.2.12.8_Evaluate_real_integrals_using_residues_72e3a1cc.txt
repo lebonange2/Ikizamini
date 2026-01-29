@@ -1,0 +1,130 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.12.8 Evaluate real integrals using residues
+==============================================================================
+Difficulty profile: moderate→hard
+------------------------------------------------------------------------------
+Problem 1 (1):
+Evaluate the integral \( \int_{-\infty}^{\infty} \frac{xe^{ix}}{x^2 + 1} \, dx \) using the residue theorem.
+A) 0
+B) \pi i
+C) 2\pi i
+D) \pi
+Correct Answer: A
+
+Solution:
+Consider \( f(z) = \frac{ze^{iz}}{z^2 + 1} \), with poles at \( z = i \) and \( z = -i \), both simple. Using the contour in the upper half-plane, only the pole at \( z = i \) is relevant. The residue at \( z = i \) is \( i \). However, the odd nature of \( xe^{ix} \) about the real axis gives a symmetric contribution leading to zero integral.
+
+Explanation:
+The symmetry of the imaginary part about the real axis ensures the integral evaluates to zero due to equal and opposite contributions, leading to cancellation.
+
+Common mistake note:
+Miscalculating residues or forgetting symmetry may lead to an incorrect evaluation of the integral.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Determine the value of \( \int_{-\infty}^{\infty} \frac{dx}{x^2 + 4x + 5} \) using residues.
+A) \pi
+B) \frac{\pi}{2}
+C) 2\pi
+D) \frac{\pi}{4}
+Correct Answer: B
+
+Solution:
+Rewrite as \( (x+2)^2 + 1 \). Poles are \( x = -2 \pm i \), with \( x = -2 + i \) in the upper half-plane. Residue \( \operatorname{Res}(f, -2+i) = \frac{1}{2i} \). The integral evaluates to \( 2\pi i \times \frac{1}{2i} = \pi \), dividing by 2 as it's over a symmetric interval yields \( \frac{\pi}{2} \).
+
+Explanation:
+Poles in the upper half-plane dictate contributions under contour integration, yielding \( \frac{\pi}{2} \).
+
+Common mistake note:
+Confusion over roots or pole selection may invalidate results.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Compute the integral \( \int_{-\infty}^{\infty} \frac{dx}{(x^2 + 1)^2} \) through residues.
+A) \pi
+B) \frac{\pi}{2}
+C) \frac{\pi}{4}
+D) 2\pi
+Correct Answer: C
+
+Solution:
+The function has a double pole at \( z = i \). The residue calculation involves the derivative: \( \operatorname{Res}(f, i) = -\frac{1}{4i} \). Thus, \( 2\pi i \times -\frac{1}{4i} = \frac{\pi}{2} \). Considering the symmetry and contour integration results, final value is \( \frac{\pi}{4} \).
+
+Explanation:
+Proper handling of the double pole ensures correct integral evaluation through order reduction and formula application.
+
+Common mistake note:
+Ignoring double pole complexity can severely alter integral outcomes.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Evaluate \( \int_{-\infty}^{\infty} \frac{x^2}{x^4 + 1} \, dx \) using complex methods.
+A) \pi \sqrt{2}
+B) \frac{\pi}{\sqrt{2}}
+C) 0
+D) \pi
+Correct Answer: C
+
+Solution:
+Poles of \( f(z) = \frac{z^2}{z^4 + 1} \) include the upper-half plane poles \( e^{i\pi/4} \) and \( e^{3i\pi/4} \). Due to symmetry, these contributions cancel each other out, leading to the integral evaluating to zero.
+
+Explanation:
+Symmetrical pole contributions result in the vanishing of the integral when summed over the full contour.
+
+Common mistake note:
+Asymmetry assumption might incorrectly suggest a non-zero integral outcome.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Use the residue theorem to find \( \int_{-\infty}^{\infty} \frac{\cos(x)}{x^2 + 1} \, dx \).
+A) \pi e^{-1}
+B) \frac{\pi}{2}
+C) \pi e
+D) 0
+Correct Answer: B
+
+Solution:
+Write \( \cos(x) \) as \( \frac{e^{ix} + e^{-ix}}{2} \). Use \( f(z) = \frac{e^{iz}}{z^2 + 1} \). The residue at \( z = i \) is \( \frac{i}{2} \), leading to the integral \( 2 \times \frac{\pi}{2} = \pi \). Symmetrical divisions result in \( \frac{\pi}{2} \).
+
+Explanation:
+Conversion to exponential form allows straightforward residue computation and integral simplification.
+
+Common mistake note:
+Direct trigonometric attempts often manage pole integration incorrectly.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Find the integral \( \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} \, dx \) using residues.
+A) \pi
+B) 2\pi
+C) 0
+D) 1
+Correct Answer: A
+
+Solution:
+The poles are at \( z = i, -i \). Using the upper half-plane, \( z = i \) gives the residue \( \frac{1}{2i} \). This leads to the integral \( 2\pi i \times \frac{1}{2i} = \pi \).
+
+Explanation:
+Residue computation in the upper plane ensures the integral accurately reflects the function's bounded properties.
+
+Common mistake note:
+Misinterpretation of upper vs lower pole contributions can skew results.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Evaluate \( \int_{-\infty}^{\infty} \frac{e^{-x}}{x^2 + 2x + 2} \, dx \) via residues.
+A) 0
+B) \frac{\pi}{e}
+C) 2\pi
+D) \pi e^{-1}
+Correct Answer: B
+
+Solution:
+Rewrite the denominator as \( (x+1)^2 + 1 \), placing the pole at \( x=-1+i \) in the upper half-plane. The residue is \( \operatorname{Res}(f, -1+i) = \frac{e^{-1}}{2i} \). The integral is \( 2 \pi i \times \frac{e^{-1}}{2i} = \frac{\pi}{e} \).
+
+Explanation:
+Correct pole placement and exponential decay consideration in the upper half-plane determine the integral's value.
+
+Common mistake note:
+Misidentifying the pole symmetry or contributions may lead to incorrect results.
+------------------------------------------------------------------------------

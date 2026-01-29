@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.13",
+  "objective_text": "Solve box/container problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A rectangular container measuring 8 cm by 6 cm by 4 cm is filled with water. When a cube with sides of 3 cm is submerged, how much does the water level rise?",
+      "choices": {
+        "A": "1 cm",
+        "B": "1.5 cm",
+        "C": "2 cm",
+        "D": "2.5 cm"
+      },
+      "correct_choice": "B",
+      "solution": "The cube's volume is 3^3 = 27 cubic cm. The water level rises by the volume of the submerged cube divided by the base area: (27 cm^3) / (8 cm * 6 cm) = 1.5 cm.",
+      "explanation": "Remember that the water level rise equals the volume of the submerged cube divided by the container's base area.",
+      "common_mistake_notes": "A common mistake is to divide the cube's volume by the total container volume, instead of just the base area where the cube is submerged."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A cylindrical tank with a radius of 5 cm and height of 10 cm contains oil. When a sphere with a diameter of 6 cm sinks, how much does the oil level rise?",
+      "choices": {
+        "A": "1.2 cm",
+        "B": "1.8 cm",
+        "C": "2.4 cm",
+        "D": "3.0 cm"
+      },
+      "correct_choice": "A",
+      "solution": "The sphere's volume is (4/3) * π * (3 cm)^3 = 36π cubic cm. The oil level rises by the volume of the submerged sphere divided by the tank's cross-sectional area: (36π cm^3) / (π * (5 cm)^2) = 1.2 cm.",
+      "explanation": "Calculate the volume of the submerged sphere and divide it by the container's cross-sectional area to find the oil level rise.",
+      "common_mistake_notes": "A common error is to forget to convert the sphere's diameter to radius when calculating its volume."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An aquarium with dimensions 1 m by 0.5 m by 0.8 m has water up to 0.6 m. When a fishnet with volume 0.3 m^3 is submerged, how does the water level rise?",
+      "choices": {
+        "A": "0.1 m",
+        "B": "0.2 m",
+        "C": "0.3 m",
+        "D": "0.4 m"
+      },
+      "correct_choice": "A",
+      "solution": "The fishnet displaces 0.3 m^3 of water. The water level rises by the volume of the fishnet divided by the aquarium's base area: (0.3 m^3) / (1 m * 0.5 m) = 0.6 m or 0.1 m.",
+      "explanation": "Understand that the water level rise equals the displaced fishnet volume divided by the aquarium's base area.",
+      "common_mistake_notes": "A common mistake is to add the fishnet's volume to the existing water volume, rather than considering only the displaced volume."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A tank with a diameter of 2 m and height of 3 m filled with sand up to 1.5 m. When a cube box with sides of 0.5 m sinks, how does the sand level rise?",
+      "choices": {
+        "A": "0.05 m",
+        "B": "0.1 m",
+        "C": "0.15 m",
+        "D": "0.2 m"
+      },
+      "correct_choice": "B",
+      "solution": "The cube box has a volume of 0.5^3 = 0.125 cubic meters. The sand level rises by the volume of the submerged box divided by the tank's cross-sectional area: (0.125 m^3) / (π * (1 m)^2) = 0.1 m.",
+      "explanation": "Calculate the cube box's volume and divide it by the tank's cross-sectional area to find the sand level rise.",
+      "common_mistake_notes": "A common error is to forget to convert the tank's diameter to radius when calculating its cross-sectional area."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A shipping container with dimensions 4 m by 2 m by 3 m contains boxes. When a box measuring 1 m by 0.5 m by 0.75 m is removed, how much does the overall height of remaining boxes decrease?",
+      "choices": {
+        "A": "0.125 m",
+        "B": "0.25 m",
+        "C": "0.375 m",
+        "D": "0.5 m"
+      },
+      "correct_choice": "C",
+      "solution": "The removed box has a volume of 1 * 0.5 * 0.75 = 0.375 cubic meters. The height decreases by the volume of the removed box divided by the area of one layer: (0.375 m^3) / (4 m * 2 m) = 0.375 m.",
+      "explanation": "Recognize that removing a box causes an equal decrease in height for all remaining boxes, and calculate this decrease using the removed box's volume divided by the area of one layer.",
+      "common_mistake_notes": "A common mistake is to assume the decrease in height is proportional to the removed box dimensions, rather than considering the total area occupied by all boxes."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A cylindrical water tank with a radius of 1 m and height of 2 m holds water at 80% capacity. When a sphere with a diameter of 0.5 m sinks, how does the water level rise?",
+      "choices": {
+        "A": "0.03125 m",
+        "B": "0.0625 m",
+        "C": "0.125 m",
+        "D": "0.25 m"
+      },
+      "correct_choice": "B",
+      "solution": "The tank holds 1.6π cubic meters of water. The sphere has a volume of (4/3) * π * (0.25 m)^3 = 0.125π cubic meters. Adding the sphere's volume to the existing water and dividing by the cross-sectional area gives: ((1.6 + 0.125)π m^3) / (π * (1 m)^2) = 0.0625 m.",
+      "explanation": "Calculate the total water volume, add the sphere's volume, then divide by the tank's cross-sectional area to find the water level rise.",
+      "common_mistake_notes": "A common error is to forget to account for the existing water when calculating the rise in water level."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A pool with dimensions 10 m by 5 m and depth of 1.5 m is filled with water. When a raft with a surface area of 2 square meters sinks, how does the water level rise?",
+      "choices": {
+        "A": "0.1 m",
+        "B": "0.2 m",
+        "C": "0.3 m",
+        "D": "0.4 m"
+      },
+      "correct_choice": "A",
+      "solution": "The raft displaces an amount of water equal to its weight, which is 2 m^2 * (1.5 - x) meters, where x is the rise in water level. Since the raft floats, this volume equals the raft's volume: 2 * (1.5 - x) = 2x. Solving for x gives x = 0.1 m.",
+      "explanation": "Understand that a sinking object displaces an amount of water equal to its own weight and set up an equation relating the raft's area to the change in water level.",
+      "common_mistake_notes": "A common mistake is to assume the water level rises by the raft's volume without considering the surface area and how it affects displaced water."
+    }
+  ]
+}

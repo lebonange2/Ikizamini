@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.7.9 Sketch hyperbola with asymptotes
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.7 Hyperbolas
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asymptotes1):
+Sketch the hyperbola with the given asymptotes: y = x and y = -x.
+A) [asy] unitsize(1cm); real f(real x)  { return sqrt(x^2 + 1); } real g(real x)  { return -sqrt(x^2 + 1); } draw(clip((0,-4)--(0,4)--(-4,4)--(-4,-4)--cycle),graph(f,-3,3),blue); draw(clip((0,-4)--(0,4)--(-4,4)--(-4,-4)--cycle),graph(g,-3,3),blue); draw((-4,0)--(4,0)); draw((0,-4)--(0,4));[/asy]
+B) [asy] unitsize(1cm); real f(real x)  { return sqrt(x^2 + 1); } real g(real x)  { return -sqrt(x^2 + 1); } draw(clip((0,-4)--(0,4)--(-4,4)--(-4,-4)--cycle),graph(f,-3,3),blue); draw(clip((0,-4)--(0,4)--(-4,4)--(-4,-4)--cycle),graph(g,-3,3),blue); draw((-4,-4)--(4,4)); draw((4,-4)--(-4,4));[/asy]
+C) [asy] unitsize(1cm); real f(real x)  { return sqrt(x^2 + 1); } real g(real x)  { return -sqrt(x^2 + 1); } draw(clip((0,-4)--(0,4)--(-4,4)--(-4,-4)--cycle),graph(f,-3,3),blue); draw(clip((0,-4)--(0,4)--(-4,4)--(-4,-4)--cycle),graph(g,-3,3),blue); draw((-4,0)--(4,0)); draw((0,-4)--(0,4)); filldraw(clip((0,-2)--(0,2)--(-2,2)--(-2,-2)--cycle),Arc((0,0),2,-45,45)^^(0,0)--(-2,0)^^(0,0)--(0,-2),white,black);[/asy]
+D) [asy] unitsize(1cm); real f(real x)  { return sqrt(x^2 + 1); } real g(real x)  { return -sqrt(x^2 + 1); } draw(clip((0,-4)--(0,4)--(-4,4)--(-4,-4)--cycle),graph(f,-3,3),blue); draw(clip((0,-4)--(0,4)--(-4,4)--(-4,-4)--cycle),graph(g,-3,3),blue); draw((-4,0)--(4,0)); draw((0,-4)--(0,4)); filldraw(clip((0,-2)--(0,2)--(-2,2)--(-2,-2)--cycle),Arc((0,0),2,-45,45)^^(0,0)--(-2,0)^^(0,0)--(0,-2),gray,black);[/asy]
+Correct Answer: A
+
+Solution:
+The hyperbola with asymptotes y = x and y = -x has its transverse axis along the line y = x. The correct graph is option A, which shows the hyperbola centered at the origin with vertices on the axes.
+
+Explanation:
+Option B has the asymptotes correctly drawn but the hyperbola is not centered at the origin. Option C has a filled-ined region inside the hyperbola, which is incorrect for a hyperbola. Option D has a gray-shaded region inside the hyperbola, which is also incorrect.
+
+Common mistake note:
+A common mistake is to confuse the asymptotes with the actual branches of the hyperbola. The asymptotes are not part of the hyperbola but indicate its shape.
+------------------------------------------------------------------------------
+
+Problem 2 (CenterShift1):
+Sketch the hyperbola with center at (2, -3) and asymptotes y = 2x + 5 and y = -2x - 1.
+A) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+3)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+3)^2 - 4); } draw(clip((-1,-6)--(5,0)--(1,-8)--(3,0)--cycle),graph(f,-3,5),blue); draw(clip((-1,-6)--(5,0)--(1,-8)--(3,0)--cycle),graph(g,-3,5),blue); draw((-1,-6)--(5,0)); draw((1,-8)--(3,0));[/asy]
+B) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+3)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+3)^2 - 4); } draw(clip((-1,-6)--(5,0)--(1,-8)--(3,0)--cycle),graph(f,-3,5),blue); draw(clip((-1,-6)--(5,0)--(1,-8)--(3,0)--cycle),graph(g,-3,5),blue); draw((-1,-6)--(5,0)); draw((1,-8)--(3,0)); filldraw(clip((-2,-4)--(-2,4)--(0,4)--(0,-4)--cycle),Arc((2,-3),2,-45,45)^^(2,-3)--(0,-1)^^(2,-3)--(4,-5),white,black);[/asy]
+C) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+3)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+3)^2 - 4); } draw(clip((-1,-6)--(5,0)--(1,-8)--(3,0)--cycle),graph(f,-3,5),blue); draw(clip((-1,-6)--(5,0)--(1,-8)--(3,0)--cycle),graph(g,-3,5),blue); draw((-1,-6)--(5,0)); draw((1,-8)--(3,0)); filldraw(clip((-2,-4)--(-2,4)--(0,4)--(0,-4)--cycle),Arc((2,-3),2,-45,45)^^(2,-3)--(0,-1)^^(2,-3)--(4,-5),gray,black);[/asy]
+D) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+3)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+3)^2 - 4); } draw(clip((-1,-6)--(5,0)--(1,-8)--(3,0)--cycle),graph(f,-3,5),blue); draw(clip((-1,-6)--(5,0)--(1,-8)--(3,0)--cycle),graph(g,-3,5),blue); draw((-1,-6)--(5,0)); draw((1,-8)--(3,0)); filldraw(clip((-2,-4)--(-2,4)--(0,4)--(0,-4)--cycle),Arc((2,-3),2,-45,45)^^(2,-3)--(0,-1)^^(2,-3)--(4,-5),red,black);[/asy]
+Correct Answer: A
+
+Solution:
+The hyperbola with center at (2, -3) and asymptotes y = 2x + 5 and y = -2x - 1 has its transverse axis parallel to the line y = 2x + 5. The correct graph is option A, which shows the hyperbola centered at (2, -3) with asymptotes y = 2x + 5 and y = -2x - 1.
+
+Explanation:
+Option B has the asymptotes correctly drawn but the hyperbola is not centered at (2, -3). Option C and D have shaded regions in different colors, but they are still incorrect as they do not represent the correct shape of the hyperbola.
+
+Common mistake note:
+A common mistake is to forget to shift the center of the hyperbola when given a non-origin center point. The coordinates (2, -3) should be used for the function definition.
+------------------------------------------------------------------------------
+
+Problem 3 (CenterVerticesAsymptotesShift1):
+Sketch the hyperbola with center at (-4, 5), vertices at (-6, 5) and (-2, 5), and asymptotes y = 3x + 7 and y = -3x - 1.
+A) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11));[/asy]
+B) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11)); filldraw(clip((-4,-2)--(-4,2)--(-2,2)--(-2,-2)--cycle),Arc((-4,5),2,-45,45)^^(2,5)--(-6,5)^^(-4,5)--(-2,5),white,black);[/asy]
+C) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11)); filldraw(clip((-4,-2)--(-4,2)--(-2,2)--(-2,-2)--cycle),Arc((-4,5),2,-45,45)^^(2,5)--(-6,5)^^(-4,5)--(-2,5),gray,black);[/asy]
+D) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11)); filldraw(clip((-4,-2)--(-4,2)--(-2,2)--(-2,-2)--cycle),Arc((-4,5),2,-45,45)^^(2,5)--(-6,5)^^(-4,5)--(-2,5),red,black);[/asy]
+Correct Answer: A
+
+Solution:
+The hyperbola with center at (-4, 5) and vertices at (-6, 5) and (-2, 5) has its transverse axis parallel to the line y = 3x + 7. The correct graph is option A, which shows the hyperbola centered at (-4, 5) with asymptotes y = 3x + 7 and y = -3x - 1.
+
+Explanation:
+Option B has the asymptotes correctly drawn but the hyperbola is not centered at (-4, 5). Option C and D have shaded regions in different colors, but they are still incorrect as they do not represent the correct shape of the hyperbola.
+
+Common mistake note:
+A common mistake is to forget to shift the center of the hyperbola when given a non-origin center point. The coordinates (-4, 5) should be used for the function definition.
+------------------------------------------------------------------------------
+
+Problem 4 (CenterVerticesAsymptotes1):
+Sketch the hyperbola with center at (2, -1), vertices at (0, -1) and (4, -1), and asymptotes y = x + 3 and y = -x - 5.
+A) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+1)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+1)^2 - 4); } draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(f,0,4),blue); draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(g,0,4),blue); draw((-1,-2)--(5,0)); draw((0,-6)--(0,1));[/asy]
+B) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+1)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+1)^2 - 4); } draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(f,0,4),blue); draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(g,0,4),blue); draw((-1,-2)--(5,0)); draw((0,-6)--(0,1)); filldraw(clip((0,-2)--(0,2)--(-2,2)--(-2,-2)--cycle),Arc((2,-1),2,-45,45)^^(2,-1)--(0,-1)^^(2,-1)--(4,-1),white,black);[/asy]
+C) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+1)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+1)^2 - 4); } draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(f,0,4),blue); draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(g,0,4),blue); draw((-1,-2)--(5,0)); draw((0,-6)--(0,1)); filldraw(clip((0,-2)--(0,2)--(-2,2)--(-2,-2)--cycle),Arc((2,-1),2,-45,45)^^(2,-1)--(0,-1)^^(2,-1)--(4,-1),gray,black);[/asy]
+D) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+1)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+1)^2 - 4); } draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(f,0,4),blue); draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(g,0,4),blue); draw((-1,-2)--(5,0)); draw((0,-6)--(0,1)); filldraw(clip((0,-2)--(0,2)--(-2,2)--(-2,-2)--cycle),Arc((2,-1),2,-45,45)^^(2,-1)--(0,-1)^^(2,-1)--(4,-1),red,black);[/asy]
+Correct Answer: A
+
+Solution:
+The hyperbola with center at (2, -1) and vertices at (0, -1) and (4, -1) has its transverse axis parallel to the line y = x + 3. The correct graph is option A, which shows the hyperbola centered at (2, -1) with asymptotes y = x + 3 and y = -x - 5.
+
+Explanation:
+Option B has the asymptotes correctly drawn but the hyperbola is not centered at (2, -1). Option C and D have shaded regions in different colors, but they are still incorrect as they do not represent the correct shape of the hyperbola.
+
+Common mistake note:
+A common mistake is to forget to shift the center of the hyperbola when given a non-origin center point. The coordinates (2, -1) should be used for the function definition.
+------------------------------------------------------------------------------
+
+Problem 5 (CenterVerticesAsymptotesShift1):
+Sketch the hyperbola with center at (-4, 5), vertices at (-6, 5) and (-2, 5), and asymptotes y = 3x + 7 and y = -3x - 1.
+A) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11));[/asy]
+B) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11)); filldraw(clip((-4,-2)--(-4,2)--(-2,2)--(-2,-2)--cycle),Arc((-4,5),2,-45,45)^^(2,5)--(-6,5)^^(-4,5)--(-2,5),white,black);[/asy]
+C) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11)); filldraw(clip((-4,-2)--(-4,2)--(-2,2)--(-2,-2)--cycle),Arc((-4,5),2,-45,45)^^(2,5)--(-6,5)^^(-4,5)--(-2,5),gray,black);[/asy]
+D) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11)); filldraw(clip((-4,-2)--(-4,2)--(-2,2)--(-2,-2)--cycle),Arc((-4,5),2,-45,45)^^(2,5)--(-6,5)^^(-4,5)--(-2,5),red,black);[/asy]
+Correct Answer: A
+
+Solution:
+The hyperbola with center at (-4, 5) and vertices at (-6, 5) and (-2, 5) has its transverse axis parallel to the line y = 3x + 7. The correct graph is option A, which shows the hyperbola centered at (-4, 5) with asymptotes y = 3x + 7 and y = -3x - 1.
+
+Explanation:
+Option B has the asymptotes correctly drawn but the hyperbola is not centered at (-4, 5). Option C and D have shaded regions in different colors, but they are still incorrect as they do not represent the correct shape of the hyperbola.
+
+Common mistake note:
+A common mistake is to forget to shift the center of the hyperbola when given a non-origin center point. The coordinates (-4, 5) should be used for the function definition.
+------------------------------------------------------------------------------
+
+Problem 6 (CenterVerticesAsymptotes1):
+Sketch the hyperbola with center at (2, -1), vertices at (0, -1) and (4, -1), and asymptotes y = x + 3 and y = -x - 5.
+A) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+1)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+1)^2 - 4); } draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(f,0,4),blue); draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(g,0,4),blue); draw((-1,-2)--(5,0)); draw((0,-6)--(0,1));[/asy]
+B) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+1)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+1)^2 - 4); } draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(f,0,4),blue); draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(g,0,4),blue); draw((-1,-2)--(5,0)); draw((0,-6)--(0,1)); filldraw(clip((0,-2)--(0,2)--(-2,2)--(-2,-2)--cycle),Arc((2,-1),2,-45,45)^^(2,-1)--(0,-1)^^(2,-1)--(4,-1),white,black);[/asy]
+C) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+1)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+1)^2 - 4); } draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(f,0,4),blue); draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(g,0,4),blue); draw((-1,-2)--(5,0)); draw((0,-6)--(0,1)); filldraw(clip((0,-2)--(0,2)--(-2,2)--(-2,-2)--cycle),Arc((2,-1),2,-45,45)^^(2,-1)--(0,-1)^^(2,-1)--(4,-1),gray,black);[/asy]
+D) [asy] unitsize(1cm); real f(real x)  { return sqrt((x-2)^2 + (y+1)^2 - 4); } real g(real x)  { return -sqrt((x-2)^2 + (y+1)^2 - 4); } draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(f,0,4),blue); draw(clip((0,-6)--(0,1)--(-2,1)--(-2,-6)--cycle),graph(g,0,4),blue); draw((-1,-2)--(5,0)); draw((0,-6)--(0,1)); filldraw(clip((0,-2)--(0,2)--(-2,2)--(-2,-2)--cycle),Arc((2,-1),2,-45,45)^^(2,-1)--(0,-1)^^(2,-1)--(4,-1),red,black);[/asy]
+Correct Answer: A
+
+Solution:
+The hyperbola with center at (2, -1) and vertices at (0, -1) and (4, -1) has its transverse axis parallel to the line y = x + 3. The correct graph is option A, which shows the hyperbola centered at (2, -1) with asymptotes y = x + 3 and y = -x - 5.
+
+Explanation:
+Option B has the asymptotes correctly drawn but the hyperbola is not centered at (2, -1). Option C and D have shaded regions in different colors, but they are still incorrect as they do not represent the correct shape of the hyperbola.
+
+Common mistake note:
+A common mistake is to forget to shift the center of the hyperbola when given a non-origin center point. The coordinates (2, -1) should be used for the function definition.
+------------------------------------------------------------------------------
+
+Problem 7 (CenterVerticesAsymptotesShift1):
+Sketch the hyperbola with center at (-4, 5), vertices at (-6, 5) and (-2, 5), and asymptotes y = 3x + 7 and y = -3x - 1.
+A) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11));[/asy]
+B) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11)); filldraw(clip((-4,-2)--(-4,2)--(-2,2)--(-2,-2)--cycle),Arc((-4,5),2,-45,45)^^(2,5)--(-6,5)^^(-4,5)--(-2,5),white,black);[/asy]
+C) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11)); filldraw(clip((-4,-2)--(-4,2)--(-2,2)--(-2,-2)--cycle),Arc((-4,5),2,-45,45)^^(2,5)--(-6,5)^^(-4,5)--(-2,5),gray,black);[/asy]
+D) [asy] unitsize(1cm); real f(real x)  { return sqrt((x+4)^2 + (y-5)^2 - 4); } real g(real x)  { return -sqrt((x+4)^2 + (y-5)^2 - 4); } draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(f,-7,-1),blue); draw(clip((-8,0)--(-0,0)--(0,-6)--(0,11)--cycle),graph(g,-7,-1),blue); draw((-8,0)--(-0,0)); draw((0,-6)--(0,11)); filldraw(clip((-4,-2)--(-4,2)--(-2,2)--(-2,-2)--cycle),Arc((-4,5),2,-45,45)^^(2,5)--(-6,5)^^(-4,5)--(-2,5),red,black);[/asy]
+Correct Answer: A
+
+Solution:
+The hyperbola with center at (-4, 5) and vertices at (-6, 5) and (-2, 5) has its transverse axis parallel to the line y = 3x + 7. The correct graph is option A, which shows the hyperbola centered at (-4, 5) with asymptotes y = 3x + 7 and y = -3x - 1.
+
+Explanation:
+Option B has the asymptotes correctly drawn but the hyperbola is not centered at (-4, 5). Option C and D have shaded regions in different colors, but they are still incorrect as they do not represent the correct shape of the hyperbola.
+
+Common mistake note:
+A common mistake is to forget to shift the center of the hyperbola when given a non-origin center point. The coordinates (-4, 5) should be used for the function definition.
+------------------------------------------------------------------------------

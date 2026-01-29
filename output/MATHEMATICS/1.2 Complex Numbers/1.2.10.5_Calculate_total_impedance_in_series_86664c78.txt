@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.10.5 Calculate total impedance in series
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.10 Applications to AC Circuits
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (InSeries1):
+Find the total impedance of a circuit with two resistors in series, R1 = 3 Ω and R2 = 6 Ω.
+A) 5 Ω
+B) 8 Ω
+C) 9 Ω
+D) 12 Ω
+Correct Answer: C
+
+Solution:
+The total impedance (Z_total) in a series circuit is the sum of individual impedances. For resistors, impedance equals resistance (since there's no reactance in this case). So Z_total = R1 + R2 = 3 Ω + 6 Ω = 9 Ω.
+
+Explanation:
+The correct answer is found by adding the two resistances together since they are in series.
+
+Common mistake note:
+A common mistake would be to multiply the resistances, which would be incorrect because impedances (or resistances) in series are added, not multiplied.
+------------------------------------------------------------------------------
+
+Problem 2 (InSeries2):
+Calculate the total impedance of a circuit with a resistor R1 = 5 Ω and an inductor L2 with XL = 4 Ω in series.
+A) 9 Ω
+B) 7 Ω
+C) 13 Ω
+D) 1 Ω
+Correct Answer: A
+
+Solution:
+The total impedance (Z_total) in a series circuit is the sum of individual impedances. For resistors, Z = R; for inductors, Z = jXL (where j is the imaginary unit). So Z_total = R1 + XL = 5 Ω + 4 Ωj = 9 Ω.
+
+Explanation:
+The correct answer combines the resistance and reactance using complex numbers. Since there's no resistance from L2, only its reactance contributes to the total impedance.
+
+Common mistake note:
+A common mistake would be to add the resistances and reactances separately without considering the imaginary component of the inductor's impedance.
+------------------------------------------------------------------------------
+
+Problem 3 (InSeries3):
+Find the total impedance of a circuit with two capacitors C1 = 2 μF and C2 = 4 μF in series. Assume Xc is negative for capacitors.
+A) -6 μF
+B) 2 μF
+C) 6 μF
+D) 0 μF
+Correct Answer: C
+
+Solution:
+The total impedance (Z_total) in a series circuit with capacitors is the sum of individual impedances. For capacitors, Z = -1/(jωC), where ω is the angular frequency and C is capacitance. Since we are only comparing magnitudes, we can ignore the negative sign. So |Z_total| = 1/|jωC1| + 1/|jωC2| = 6 μF.
+
+Explanation:
+The correct answer combines the capacitive reactances by adding their reciprocals. Since we are only interested in magnitude, the negative signs cancel out.
+
+Common mistake note:
+A common mistake would be to add capacitance values directly, which does not give the total impedance.
+------------------------------------------------------------------------------
+
+Problem 4 (InSeries4):
+Calculate the total impedance of a circuit with a resistor R1 = 8 Ω and an inductor L2 with XL = -3 Ω in series. Assume negative reactance for inductors.
+A) 5 Ω
+B) 11 Ω
+C) 1 Ω
+D) 14 Ω
+Correct Answer: B
+
+Solution:
+The total impedance (Z_total) in a series circuit is the sum of individual impedances. For resistors, Z = R; for inductors, Z = jXL (where j is the imaginary unit). Since XL is negative, we consider its absolute value. So Z_total = R1 + |XL| = 8 Ω + 3 Ω = 11 Ω.
+
+Explanation:
+The correct answer combines the resistance and reactance using complex numbers, considering the absolute value of the inductor's reactance.
+
+Common mistake note:
+A common mistake would be to add the resistances and reactances directly without accounting for the negative reactance.
+------------------------------------------------------------------------------
+
+Problem 5 (InSeries5):
+Find the total impedance of a circuit with two impedances Z1 = 4 Ω + j3 Ω and Z2 = 2 Ω - j2 Ω in series.
+A) 6 Ω + j Ω
+B) 6 Ω + j5 Ω
+C) 8 Ω + j1 Ω
+D) 8 Ω + j5 Ω
+Correct Answer: D
+
+Solution:
+The total impedance (Z_total) in a series circuit is the sum of individual impedances. So Z_total = Z1 + Z2 = (4 Ω + j3 Ω) + (2 Ω - j2 Ω) = 8 Ω + j(3 Ω - 2 Ω) = 8 Ω + j1 Ω.
+
+Explanation:
+The correct answer adds the real and imaginary parts of each impedance separately.
+
+Common mistake note:
+A common mistake would be to add the real parts and the imaginary parts together without considering them separately.
+------------------------------------------------------------------------------
+
+Problem 6 (InSeries6):
+Calculate the total impedance of a circuit with a resistor R1 = 6 Ω and a capacitor C2 with Xc = -8 Ω in series. Assume negative reactance for capacitors.
+A) 2 Ω
+B) 14 Ω
+C) 10 Ω
+D) 0 Ω
+Correct Answer: C
+
+Solution:
+The total impedance (Z_total) in a series circuit is the sum of individual impedances. For resistors, Z = R; for capacitors, Z = -1/(jωC), where ω is the angular frequency and C is capacitance. Since we are only comparing magnitudes, we can ignore the negative sign. So |Z_total| = 6 Ω + |Xc| = 10 Ω.
+
+Explanation:
+The correct answer combines the resistance and capacitive reactance by adding their magnitudes.
+
+Common mistake note:
+A common mistake would be to add capacitance values directly, which does not give the total impedance.
+------------------------------------------------------------------------------
+
+Problem 7 (InSeries7):
+Find the total impedance of a circuit with three impedances Z1 = 3 Ω + j2 Ω, Z2 = 4 Ω - j3 Ω, and Z3 = 5 Ω in series.
+A) 12 Ω + j Ω
+B) 12 Ω + j7 Ω
+C) 10 Ω + j5 Ω
+D) 10 Ω + j Ω
+Correct Answer: C
+
+Solution:
+The total impedance (Z_total) in a series circuit is the sum of individual impedances. So Z_total = Z1 + Z2 + Z3 = (3 Ω + j2 Ω) + (4 Ω - j3 Ω) + 5 Ω = 10 Ω + j(2 Ω - 3 Ω) = 10 Ω - j1 Ω.
+
+Explanation:
+The correct answer adds the real and imaginary parts of each impedance separately, then combines them to find the total impedance.
+
+Common mistake note:
+A common mistake would be to add the real parts and the imaginary parts together without considering them separately.
+------------------------------------------------------------------------------

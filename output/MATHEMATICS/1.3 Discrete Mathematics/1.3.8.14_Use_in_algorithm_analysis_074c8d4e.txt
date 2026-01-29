@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.8.14 Use in algorithm analysis
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.8 Counting Principles
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the time complexity of the following code snippet in terms of Big O notation, assuming n is the size of the input array?
+A) O(1)
+B) O(n)
+C) O(n^2)
+D) O(log n)
+Correct Answer: B
+
+Solution:
+The code snippet iterates through each element in the input array once, performing a constant amount of work for each iteration. Therefore, the time complexity is linear and can be expressed as O(n).
+
+Explanation:
+In Big O notation, we focus on the dominant term that affects the growth rate of an algorithm's time or space complexity. In this case, the loop iterating over n elements dominates.
+
+Common mistake note:
+A common mistake would be to select A (O(1)), which represents constant time complexity. However, since the code snippet has a loop that runs n times, it is not constant time.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is the time complexity of the following recursive function in terms of Big O notation?
+A) O(n)
+B) O(n^2)
+C) O(2^n)
+D) O(log n)
+Correct Answer: C
+
+Solution:
+The function calls itself twice for each input value, resulting in an exponential growth. The time complexity is thus O(2^n), as the number of function calls doubles with each recursive call.
+
+Explanation:
+In this case, the function's time complexity grows exponentially because it has a recursive structure that duplicates its work at each level.
+
+Common mistake note:
+A common mistake would be to select B (O(n^2)), which might be considered if there were nested loops. However, since there is only recursion involved and no nested loops, the growth rate is exponential.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+What is the time complexity of the following code snippet that performs a linear search through an array of size n?
+A) O(1)
+B) O(n)
+C) O(n^2)
+D) O(log n)
+Correct Answer: B
+
+Solution:
+A linear search iterates through each element in the array until it finds a match or reaches the end. Thus, the time complexity is O(n), as it may need to check all elements in the worst case.
+
+Explanation:
+Linear search has a linear time complexity because its runtime increases proportionally with the size of the input.
+
+Common mistake note:
+A common mistake would be to select A (O(1)), which represents constant time complexity. However, since the search may need to examine all elements in the array, it is not constant time.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the space complexity of the following code snippet that uses a single variable and an array of size n?
+A) O(1)
+B) O(n)
+C) O(n^2)
+D) O(log n)
+Correct Answer: A
+
+Solution:
+The space complexity is O(1) because it only uses a constant amount of memory, regardless of the size of the input array.
+
+Explanation:
+Space complexity measures the amount of memory an algorithm requires. In this case, the code uses a single variable and an array of size n, but the additional space required by the array is considered constant in terms of the input size.
+
+Common mistake note:
+A common mistake would be to select B (O(n)), which might be considered if multiple arrays or data structures were used. However, since only a single variable and an array are used, the space complexity remains constant.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+What is the time complexity of the following code snippet that performs a binary search through a sorted array of size n?
+A) O(1)
+B) O(n)
+C) O(n^2)
+D) O(log n)
+Correct Answer: D
+
+Solution:
+Binary search divides the search space in half at each step, resulting in a logarithmic time complexity. In terms of Big O notation, it can be expressed as O(log n).
+
+Explanation:
+Binary search has a logarithmic time complexity because its runtime increases logarithmically with the size of the input (the number of comparisons reduces by half at each step).
+
+Common mistake note:
+A common mistake would be to select B (O(n)), which might be considered if a linear search was performed. However, binary search's divide-and-conquer approach leads to logarithmic time complexity.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the time complexity of the following code snippet that performs a bubble sort on an array of size n?
+A) O(1)
+B) O(n)
+C) O(n^2)
+D) O(log n)
+Correct Answer: C
+
+Solution:
+Bubble sort compares adjacent elements and swaps them if they are in the wrong order. In the worst case, it may need to iterate through the array n times, resulting in a quadratic time complexity of O(n^2).
+
+Explanation:
+Bubble sort has a quadratic time complexity because its runtime increases quadratically with the size of the input (the number of comparisons and swaps grows with n^2).
+
+Common mistake note:
+A common mistake would be to select B (O(n)), which might be considered if the array was already sorted. However, bubble sort's worst-case scenario is when the array is in reverse order.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the time complexity of the following code snippet that uses a hash table with constant time insertion and retrieval for n elements?
+A) O(1)
+B) O(n)
+C) O(n^2)
+D) O(log n)
+Correct Answer: B
+
+Solution:
+Using a hash table with constant time complexity for insertion and retrieval, the total time complexity for inserting n elements is O(n), as each operation takes constant time.
+
+Explanation:
+Hash tables provide constant-time (amortized) operations on average. Therefore, inserting n elements into a hash table will take linear time proportional to the number of elements inserted.
+
+Common mistake note:
+A common mistake would be to select A (O(1)), which represents constant time complexity for individual hash table operations. However, when considering the total time for n operations, it becomes O(n).
+------------------------------------------------------------------------------

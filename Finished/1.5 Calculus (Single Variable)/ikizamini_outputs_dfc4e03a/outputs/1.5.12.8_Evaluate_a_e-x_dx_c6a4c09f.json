@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.12.8",
+  "objective_text": "Evaluate ∫[a,∞] e^(-x) dx",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Calculate the definite integral ∫[2,∞] e^(-x) dx.",
+      "choices": {
+        "A": "e^{-2}",
+        "B": "1 - e^{-2}",
+        "C": "e^{-∞} - e^{-2}",
+        "D": "0"
+      },
+      "correct_choice": "B",
+      "solution": "∫[2,∞] e^(-x) dx = [-e^{-x}]_{2}^{∞} = -e^{-∞} + e^{-2} = 1 - e^{-2}",
+      "explanation": "The integral of e^(-x) is -e^{-x}. Evaluate at the limits of integration and subtract.",
+      "common_mistake_notes": "A common mistake is to forget to evaluate the antiderivative at infinity, which results in -e^{-∞} = 0."
+    },
+    {
+      "id": "2",
+      "stem": "Evaluate ∫[1,∞] e^(-x) dx.",
+      "choices": {
+        "A": "e^{-1}",
+        "B": "1 - e^{-1}",
+        "C": "e^{-∞} - e^{-1}",
+        "D": "0"
+      },
+      "correct_choice": "B",
+      "solution": "∫[1,∞] e^(-x) dx = [-e^{-x}]_{1}^{∞} = -e^{-∞} + e^{-1} = 1 - e^{-1}",
+      "explanation": "The integral of e^(-x) is -e^{-x}. Evaluate at the limits of integration and subtract.",
+      "common_mistake_notes": "A common mistake is to forget that infinity is approached from the right, which results in -e^{-∞} = 0."
+    },
+    {
+      "id": "3",
+      "stem": "Find the value of ∫[0,∞] e^(-x) dx.",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "e^{-∞}",
+        "D": "0"
+      },
+      "correct_choice": "A",
+      "solution": "∫[0,∞] e^(-x) dx = [-e^{-x}]_{0}^{∞} = -e^{-∞} + e^{0} = 1 - 0 = 1",
+      "explanation": "The integral of e^(-x) is -e^{-x}. Evaluate at the limits of integration and subtract.",
+      "common_mistake_notes": "A common mistake is to think that ∫[0,∞] e^(-x) dx diverges, but it actually converges to 1."
+    },
+    {
+      "id": "4",
+      "stem": "Evaluate ∫[-3,∞] e^(-x) dx.",
+      "choices": {
+        "A": "e^{3}",
+        "B": "1 - e^{-3}",
+        "C": "e^{-∞} - e^{-3}",
+        "D": "0"
+      },
+      "correct_choice": "B",
+      "solution": "∫[-3,∞] e^(-x) dx = [-e^{-x}]_{-3}^{∞} = -e^{-∞} + e^{-(-3)} = 1 - e^{-3}",
+      "explanation": "The integral of e^(-x) is -e^{-x}. Evaluate at the limits of integration and subtract.",
+      "common_mistake_notes": "A common mistake is to forget that the limit of integration is negative, which results in e^{-(-3)} = e^{3}."
+    },
+    {
+      "id": "5",
+      "stem": "Calculate the definite integral ∫[1,∞] 2e^(-x) dx.",
+      "choices": {
+        "A": "2 - 2e^{-1}",
+        "B": "2e^{-1}",
+        "C": "2(e^{-∞} - e^{-1})",
+        "D": "0"
+      },
+      "correct_choice": "A",
+      "solution": "∫[1,∞] 2e^(-x) dx = [2(-e^{-x})]_{1}^{∞} = -2e^{-∞} + 2e^{-1} = 2(1 - e^{-1})",
+      "explanation": "The integral of 2e^(-x) is -2e^{-x}. Evaluate at the limits of integration and subtract.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the coefficient 2 when finding the antiderivative."
+    },
+    {
+      "id": "6",
+      "stem": "Find the value of ∫[0,∞] 3e^(-x) dx.",
+      "choices": {
+        "A": "3",
+        "B": "4",
+        "C": "3e^{-∞}",
+        "D": "0"
+      },
+      "correct_choice": "A",
+      "solution": "∫[0,∞] 3e^(-x) dx = [3(-e^{-x})]_{0}^{∞} = -3e^{-∞} + 3e^{0} = 3(1 - 0) = 3",
+      "explanation": "The integral of 3e^(-x) is -3e^{-x}. Evaluate at the limits of integration and subtract.",
+      "common_mistake_notes": "A common mistake is to think that ∫[0,∞] 3e^(-x) dx diverges, but it actually converges to 3."
+    },
+    {
+      "id": "7",
+      "stem": "Evaluate ∫[-2,∞] 4e^(-x) dx.",
+      "choices": {
+        "A": "4 - 4e^{-2}",
+        "B": "4e^{-2}",
+        "C": "4(e^{-∞} - e^{-2})",
+        "D": "0"
+      },
+      "correct_choice": "A",
+      "solution": "∫[-2,∞] 4e^(-x) dx = [4(-e^{-x})]_{-2}^{∞} = -4e^{-∞} + 4e^{-(-2)} = 4(1 - e^{-2})",
+      "explanation": "The integral of 4e^(-x) is -4e^{-x}. Evaluate at the limits of integration and subtract.",
+      "common_mistake_notes": "A common mistake is to forget that the limit of integration is negative, which results in e^{-(-2)} = e^{2}."
+    }
+  ]
+}

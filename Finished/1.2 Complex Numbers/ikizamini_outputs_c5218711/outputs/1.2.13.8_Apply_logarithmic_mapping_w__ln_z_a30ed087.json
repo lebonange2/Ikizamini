@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.13.8",
+  "objective_text": "Apply logarithmic mapping w = ln z",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Find the value of w if z = e^4.",
+      "choices": {
+        "A": "w = 2",
+        "B": "w = 3",
+        "C": "w = 4",
+        "D": "w = 5"
+      },
+      "correct_choice": "C",
+      "solution": "The logarithmic mapping is given by w = ln z. To find the value of w when z = e^4, substitute z into the equation: w = ln(e^4). Using ln(a^b) = b * ln(a), we get w = 4 * ln(e). Since ln(e) = 1, w = 4 * 1 = 4. Answer: C.",
+      "explanation": "ln(e^x) = x is a property of natural logarithms used to solve the problem.",
+      "common_mistake_notes": "A common mistake is choosing A: w = 2,混淆properties with ln(x^e) ≠ x."
+    },
+    {
+      "id": "Bvbn",
+      "stem": "Evaluate w: w = ln(100).",
+      "choices": {
+        "A": "w = 2",
+        "B": "w = 3",
+        "C": "w = 4",
+        "D": "w = 5"
+      },
+      "correct_choice": "A",
+      "solution": "To find w, recognize that e^2 ≈ 7.39 and e^3 ≈ 20.08; thus, e^2 < 100 and e^3 > 100. So, w = ln(100) = ln(10^2) = 2 * ln(10). Since ln(10) is approximately 2.30, the exact value doesn't change the result when multiplied by 2. Answer: A.",
+      "explanation": "ln(a^b) = b * ln(a) simplifies w = ln(100) to w = 2 * ln(10).",
+      "common_mistake_notes": "A common mistake is choosing B: w = 3, confusing with ln(e^3) = 3."
+    },
+    {
+      "id": "Cvbn",
+      "stem": "Solve for w: ln(w) = 2.",
+      "choices": {
+        "A": "w = e^2",
+        "B": "w = e",
+        "C": "w = 2e",
+        "D": "w = 1/e"
+      },
+      "correct_choice": "A",
+      "solution": "Exponentiate both sides with base e: e^(ln(w)) = e^2. By definition, e^(ln(x)) = x. So, w = e^2. Answer: A.",
+      "explanation": "The property e^(ln(x)) = x undoes the logarithmic operation to find w.",
+      "common_mistake_notes": "A common mistake is choosing B: w = e, forgetting to exponentiate after taking ln(w)."
+    },
+    {
+      "id": "Dvbn",
+      "stem": "Find w if z = 1/e.",
+      "choices": {
+        "A": "w = -1",
+        "B": "w = 0",
+        "C": "w = 1",
+        "D": "w = 2"
+      },
+      "correct_choice": "A",
+      "solution": "Substitute z into the equation: w = ln(1/e). Using ln(a/b) = ln(a) - ln(b), we get w = ln(1) - ln(e). Since ln(1) = 0 and ln(e) = 1, w = -1. Answer: A.",
+      "explanation": "ln(a/b) = ln(a) - ln(b) separates the logarithm of a quotient into simpler terms.",
+      "common_mistake_notes": "A common mistake is choosing C: w = 1,混淆with ln(e) = 1."
+    },
+    {
+      "id": "Evbn",
+      "stem": "Evaluate w: w = ln(e^(-3)).",
+      "choices": {
+        "A": "w = -3",
+        "B": "w = 0",
+        "C": "w = 1",
+        "D": "w = 2"
+      },
+      "correct_choice": "A",
+      "solution": "Use ln(a^b) = b * ln(a): w = -3 * ln(e). Since ln(e) = 1, w = -3. Answer: A.",
+      "explanation": "ln(a^b) simplifies the expression to w = -3 * ln(e).",
+      "common_mistake_notes": "A common mistake is choosing B: w = 0, confusing with ln(1) = 0."
+    },
+    {
+      "id": "Fvbn",
+      "stem": "Solve for w: ln(w^2) = 4.",
+      "choices": {
+        "A": "w = e^2",
+        "B": "w = ±e^2",
+        "C": "w = 2e^2",
+        "D": "w = ±2e^2"
+      },
+      "correct_choice": "B",
+      "solution": "Exponentiate both sides: w^2 = e^4. Take square root: w = ±√(e^4) = ±e^2. Answer: B.",
+      "explanation": "ln(a^b) and √(a^b) = (√a)^b lead to two solutions, positive and negative.",
+      "common_mistake_notes": "A common mistake is choosing A: w = e^2, forgetting that ln(w^2) affects the solution."
+    },
+    {
+      "id": "Gvbn",
+      "stem": "Find w if z = e^(π/2).",
+      "choices": {
+        "A": "w = π/2",
+        "B": "w = π",
+        "C": "w = 2π",
+        "D": "w = 3π"
+      },
+      "correct_choice": "A",
+      "solution": "Substitute into the equation: w = ln(e^(π/2)). Using ln(a^b) = b * ln(a), we get w = (π/2) * ln(e). Since ln(e) = 1, w = π/2. Answer: A.",
+      "explanation": "ln(a^b) simplifies to w = (π/2) * ln(e).",
+      "common_mistake_notes": "A common mistake is choosing B: w = π,混淆with ln(e^π) = π."
+    }
+  ]
+}

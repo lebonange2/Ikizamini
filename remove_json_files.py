@@ -12,7 +12,7 @@ Safety:
 Examples:
   python3 remove_json_files.py
   python3 remove_json_files.py --yes
-  python3 remove_json_files.py --dir "output/MATHEMATICS/1.1 Algebra and Trigonometry" --yes
+  python3 remove_json_files.py --dir "output/MATHEMATICS/1.5 Calculus (Single Variable)" --yes
 """
 
 from __future__ import annotations

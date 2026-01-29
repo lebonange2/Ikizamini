@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.10.13 Handle cubic denominators
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.10 Integration Techniques - Partial Fractions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Simplify the expression: (x^3 + 2x^2 - x) / (x^3 - 1)
+A) (x + 1)/(x - 1)
+B) (x^2 + x - 1)/(x - 1)^2
+C) (x^2 + x - 1)/(x + 1)
+D) (x + 1)/(x - 1)^3
+Correct Answer: B
+
+Solution:
+Factor both the numerator and the denominator by grouping. For the denominator, factor (x^3 - 1) as (x - 1)(x^2 + x + 1). The correct simplified form is (x^2 + x - 1)/(x - 1)^2.
+
+Explanation:
+The key to simplifying this expression is recognizing that both the numerator and denominator can be factored using polynomial identities. In the denominator, we use the difference of cubes formula: a^3 - b^3 = (a - b)(a^2 + ab + b^2).
+
+Common mistake note:
+A common mistake is to incorrectly factor the denominator or not recognize that both numerator and denominator can be factored.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Evaluate the limit: lim (x→1) [(x^3 - 1)/(x - 1)]
+A) -3
+B) 0
+C) 1
+D) ∞
+Correct Answer: C
+
+Solution:
+Apply L'Hôpital's rule, differentiate the numerator and denominator, then evaluate at x = 1. The limit is 1.
+
+Explanation:
+The limit has an indeterminate form (0/0) when x approaches 1. To solve it, apply L'Hôpital's rule, which states that if the limit of the ratio of the derivatives exists, then the original limit also exists and has the same value.
+
+Common mistake note:
+A common mistake is to try to substitute x = 1 directly into the expression without first simplifying or applying L'Hôpital's rule.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Simplify the rational function: (2x^3 - 6x)/(x^3 + 8)
+A) 2(x - 2)/(x + 2)
+B) (2x - 6)/(x + 2)
+C) 2(x^2 - 3)/(x + 2)
+D) 2(x^2 - 3)/(x^2 + 8)
+Correct Answer: C
+
+Solution:
+Factor out the greatest common factor (GCF) from both the numerator and denominator. The simplified form is 2(x^2 - 3)/(x + 2).
+
+Explanation:
+To simplify this rational function, first identify the GCF in both the numerator and denominator. Then divide each term by the GCF.
+
+Common mistake note:
+A common mistake is to incorrectly factor the polynomial or not recognize that a GCF exists.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Factor the cubic expression: x^3 - 6x^2 + 9x
+A) x(x - 3)^2
+B) (x - 3)(x^2 - 3)
+C) (x - 3)^3
+D) x(x - 3)(x + 3)
+Correct Answer: A
+
+Solution:
+Factor by grouping: x(x^2 - 6x + 9) = x(x - 3)^2.
+
+Explanation:
+To factor this cubic expression, use the grouping method. Group the first two terms and the last two terms separately, then factor each group as a perfect square trinomial.
+
+Common mistake note:
+A common mistake is to forget to group the terms or not recognize that a perfect square trinomial exists.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Solve the equation: (x - 2)^3 = 64
+A) x = 0, x = 4
+B) x = 2, x = 6
+C) x = 1, x = 3
+D) x = -2, x = 6
+Correct Answer: D
+
+Solution:
+Take the cube root of both sides and solve for x: x - 2 = 4 => x = 6; x - 2 = -4 => x = -2.
+
+Explanation:
+To solve this equation, take the cube root of both sides to isolate (x - 2), then solve for x. Be careful with the two possible cube roots: +2 and -2.
+
+Common mistake note:
+A common mistake is to forget that there are two cube roots or to misinterpret the solution set.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Simplify the rational expression: (x^3 - 1)/(x^2 + x + 1)
+A) (x - 1)(x^2 + x + 1)
+B) (x - 1)/(x + 1)
+C) (x + 1)/(x - 1)
+D) x(x - 1)/(x + 1)
+Correct Answer: B
+
+Solution:
+Factor the numerator as a difference of cubes and cancel out with the denominator. The simplified form is (x - 1)/(x + 1).
+
+Explanation:
+The numerator can be factored using the difference of cubes formula, which allows for cancellation with the denominator.
+
+Common mistake note:
+A common mistake is to not recognize that the numerator is a difference of cubes or to incorrectly factor it.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the domain of the function: f(x) = (x^3 - 8)/(x - 2)
+A) (-∞, ∞)
+B) (2, ∞)
+C) (-∞, 2)
+D) (-∞, 2) U (2, ∞)
+Correct Answer: D
+
+Solution:
+The domain excludes values that make the denominator zero: x ≠ 2. So, the domain is all real numbers except x = 2.
+
+Explanation:
+To find the domain of a rational function, exclude any values that would make the denominator equal to zero. In this case, x = 2 is not in the domain.
+
+Common mistake note:
+A common mistake is to forget to exclude the value that makes the denominator zero.
+------------------------------------------------------------------------------

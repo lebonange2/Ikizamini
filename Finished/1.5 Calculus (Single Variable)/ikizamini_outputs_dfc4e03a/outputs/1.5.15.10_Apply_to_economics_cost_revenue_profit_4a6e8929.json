@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.15.10",
+  "objective_text": "Apply to economics (cost, revenue, profit)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "A company produces and sells widgets at a cost of $5 per widget. If they sell each widget for $8, what is their profit if they sell 100 widgets?",
+      "choices": {
+        "A": "$250",
+        "B": "$300",
+        "C": "$400",
+        "D": "$500"
+      },
+      "correct_choice": "B",
+      "solution": "Profit = Revenue - Cost. Total cost = 100 widgets * $5/widget = $500. Total revenue = 100 widgets * $8/widget = $800. Profit = $800 - $500 = $300.",
+      "explanation": "Profit is the difference between total revenue and total cost. In this case, the company makes a profit of $300 on 100 widgets sold.",
+      "common_mistake_notes": "A common mistake would be to multiply the profit per widget ($8 - $5 = $3) by the number of widgets (100), which would result in $300 instead of calculating total revenue and subtracting total cost."
+    },
+    {
+      "id": "Xyz456",
+      "stem": "A bakery sells cupcakes for $2 each. If the bakery spends $0.50 on ingredients to make each cupcake, how many cupcakes must they sell to break even?",
+      "choices": {
+        "A": "10 cupcakes",
+        "B": "20 cupcakes",
+        "C": "30 cupcakes",
+        "D": "40 cupcakes"
+      },
+      "correct_choice": "B",
+      "solution": "To break even, revenue equals cost. Profit per cupcake = Selling price - Cost per cupcake = $2 - $0.50 = $1.50. Total cost to break even = Ingredient cost per cupcake * x cupcakes, where x is the number of cupcakes needed. x = Total cost / Profit per cupcake = $0.50 / $1.50 = 20 cupcakes.",
+      "explanation": "Breaking even means that revenue equals costs. The bakery needs to sell enough cupcakes to cover their ingredient costs of $0.50 per cupcake.",
+      "common_mistake_notes": "A common mistake would be to divide the total cost by the selling price instead of calculating the profit per cupcake and then dividing by that amount."
+    },
+    {
+      "id": "Qwe789",
+      "stem": "A clothing store has a sale where they sell all items at a 20% discount. If an item originally costs $60, what is the revenue from selling 5 of these items during the sale?",
+      "choices": {
+        "A": "$240",
+        "B": "$300",
+        "C": "$360",
+        "D": "$480"
+      },
+      "correct_choice": "A",
+      "solution": "Revenue = Number of items sold * Discounted price per item. Discounted price = Original price - (Discount percentage * Original price) = $60 - (20% of $60) = $48. Total revenue = 5 items * $48/item = $240.",
+      "explanation": "Revenue is calculated by multiplying the number of items sold by their discounted price. In this case, the store sells 5 items at a 20% discount off the original price of $60.",
+      "common_mistake_notes": "A common mistake would be to apply the discount directly to the total cost instead of calculating the discounted price per item and then multiplying by the number of items sold."
+    },
+    {
+      "id": "Rty101",
+      "stem": "An electronics store sells a television for $800 with a 15% markup on its cost. If the store offers an additional 10% discount during a sale, what is the final selling price?",
+      "choices": {
+        "A": "$640",
+        "B": "$720",
+        "C": "$760",
+        "D": "$800"
+      },
+      "correct_choice": "C",
+      "solution": "First, calculate the cost of the television: Cost = Marked-up price / (1 + Markup percentage) = $800 / 1.15 ≈ $695.71. Next, apply the additional discount: Final selling price = Cost + (Original markup * Cost) - (Discount percentage * Original marked-up price) = $695.71 + ($800 - $695.71) - (10% of $800) ≈ $760.",
+      "explanation": "The final selling price is calculated by applying the initial markup to the cost and then offering an additional discount on the marked-up price.",
+      "common_mistake_notes": "A common mistake would be to apply both discounts consecutively without first calculating the marked-up price, which would result in a lower final selling price than the correct answer."
+    },
+    {
+      "id": "Uij112",
+      "stem": "A florist sells bouquets for $30 each. The cost of flowers and other materials to make each bouquet is $15. If the florist sells 75 bouquets, what is their total profit?",
+      "choices": {
+        "A": "$900",
+        "B": "$1,200",
+        "C": "$1,800",
+        "D": "$2,250"
+      },
+      "correct_choice": "A",
+      "solution": "Profit = Total revenue - Total cost. Total cost = Number of bouquets * Cost per bouquet = 75 bouquets * $15/bouquet = $1,125. Total revenue = Number of bouquets * Selling price per bouquet = 75 bouquets * $30/bouquet = $2,250. Profit = $2,250 - $1,125 = $900.",
+      "explanation": "Profit is calculated by subtracting the total cost from the total revenue. In this case, the florist makes a profit of $900 on 75 bouquets sold.",
+      "common_mistake_notes": "A common mistake would be to multiply the profit per bouquet ($30 - $15 = $15) by the number of bouquets (75), which would result in $1,125 instead of calculating total revenue and subtracting total cost."
+    },
+    {
+      "id": "Kol113",
+      "stem": "A furniture store buys a table for $200 and sells it with a 40% markup. If the customer uses a 10% off coupon, what is the final selling price?",
+      "choices": {
+        "A": "$280",
+        "B": "$294",
+        "C": "$300",
+        "D": "$320"
+      },
+      "correct_choice": "B",
+      "solution": "First, calculate the marked-up price: Marked-up price = Cost + (Markup percentage * Cost) = $200 + 0.40 * $200 = $280. Next, apply the discount: Final selling price = Marked-up price - (Discount percentage * Marked-up price) = $280 - 0.10 * $280 = $252.",
+      "explanation": "The final selling price is calculated by applying the initial markup to the cost and then offering a discount on the marked-up price.",
+      "common_mistake_notes": "A common mistake would be to apply both the markup and the discount directly to the original cost, which would result in a different final selling price than the correct answer."
+    },
+    {
+      "id": "Mno114",
+      "stem": "An online retailer sells a book for $25 with a 30% profit margin. If they decide to lower the price by 20%, what is the new selling price?",
+      "choices": {
+        "A": "$20",
+        "B": "$24",
+        "C": "$28",
+        "D": "$30"
+      },
+      "correct_choice": "C",
+      "solution": "First, calculate the cost of the book: Cost = Selling price / (1 + Profit margin percentage) = $25 / 1.3 ≈ $19.23. Next, lower the price: New selling price = Original selling price - (Discount percentage * Original selling price) = $25 - 0.20 * $25 = $20. Then, add the original profit margin to get the new selling price: New selling price + (Original profit margin * Cost) ≈ $28.",
+      "explanation": "The new selling price is calculated by finding the cost of the book based on the given profit margin and then reducing the original price by 20%.",
+      "common_mistake_notes": "A common mistake would be to apply the 20% discount directly to the original selling price without first calculating the cost, which would result in a lower new selling price than the correct answer."
+    }
+  ]
+}

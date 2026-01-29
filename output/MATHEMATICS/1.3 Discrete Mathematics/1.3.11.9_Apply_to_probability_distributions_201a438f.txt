@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.11.9 Apply to probability distributions
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.11 Binomial Theorem
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A fair coin is flipped 5 times. What is the probability of getting exactly 3 heads?
+A) 0.3125
+B) 0.1875
+C) 0.375
+D) 0.25
+Correct Answer: A
+
+Solution:
+The probability of flipping a head on a fair coin is 0.5, and the probability of flipping a tail is also 0.5. Since the coin is flipped 5 times, we can use the binomial distribution to calculate the probability of getting exactly 3 heads out of 5 flips. The formula for the binomial distribution is P(X=k) = (n choose k) * p^k * (1-p)^(n-k), where n is the number of trials, k is the number of successes, and p is the probability of success on a single trial. In this case, n=5, k=3, and p=0.5. Plugging these values into the formula gives us P(3 heads) = (5 choose 3) * 0.5^3 * 0.5^(5-3) = 10 * 0.125 * 0.125 = 0.3125.
+
+Explanation:
+The binomial distribution is used to calculate the probability of a specific number of successes in a fixed number of independent trials with constant probability of success.
+
+Common mistake note:
+A common mistake would be using the wrong formula or plugging in incorrect values for n, k, or p. For example, some might mistakenly use the formula for the geometric distribution, which is not applicable here since we're looking at a fixed number of trials.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+A bag contains 3 red balls and 4 blue balls. If two balls are drawn without replacement, what is the probability that both balls are red?
+A) 0.15
+B) 0.25
+C) 0.375
+D) 0.6
+Correct Answer: A
+
+Solution:
+To find the probability of drawing two red balls without replacement, we first calculate the probability of drawing a red ball on the first draw and then multiply it by the probability of drawing another red ball given that one red ball has already been drawn. The probability of drawing a red ball on the first draw is 3/7 (since there are 3 red balls out of 7 total). After drawing one red ball, there will be 2 red balls left and 6 total balls remaining, so the probability of drawing another red ball is 2/6. The overall probability is thus (3/7) * (2/6) = 0.15 or 15%.
+
+Explanation:
+When drawing without replacement, the probabilities change after each draw due to the reduction in the total number of balls available.
+
+Common mistake note:
+A common mistake would be assuming that the probability remains constant across both draws (i.e., using (3/7) * (3/7)), which is incorrect because it does not account for the reduced number of red balls after the first draw.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+An investor has a portfolio consisting of two stocks: Stock A with a 20% probability of a 15% return and Stock B with an 80% probability of a 5% return. What is the expected return on the portfolio?
+A) 7%
+B) 9%
+C) 11%
+D) 13%
+Correct Answer: B
+
+Solution:
+The expected return on the portfolio can be calculated by multiplying each stock's probability of a return by its corresponding return and summing these values. For Stock A: 0.20 * 15% = 3%. For Stock B: 0.80 * 5% = 4%. Adding the two expected returns gives us an overall expected return of 3% + 4% = 7%.
+
+Explanation:
+Expected return is calculated by multiplying each possible outcome by its probability and summing these products.
+
+Common mistake note:
+A common mistake would be adding the probabilities of the stocks (20% + 80%) and multiplying that by the average return, which does not account for the different returns of each stock.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+A standard six-...
+A) 1/2
+B) 2/3
+C) 5/6
+D) 7/8
+Correct Answer: B
+
+Solution:
+There are two events here: rolling an even number and rolling a number greater than 3. To find the probability of either event occurring, we can add the probabilities of each event, as they are mutually exclusive (i.e., they do not overlap). There are 3 even numbers on a six-...
+
+Explanation:
+When adding probabilities of mutually exclusive events, we can sum them directly since they do not overlap.
+
+Common mistake note:
+A common mistake would be assuming that the two events are independent and multiplying their probabilities (1/2 * 1/2), which is incorrect because it does not account for the fact that they are mutually exclusive.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+A store has a 10% discount on all items. If a customer buys an item originally priced at $50, what is the probability that the discounted price will be exactly $45?
+A) 0%
+B) 20%
+C) 50%
+D) 100%
+Correct Answer: A
+
+Solution:
+The discount on a $50 item at 10% would be $50 * 0.10 = $5, so the discounted price would be $50 - $5 = $45. Since the discount is applied to the exact original price and there are no other conditions or probabilities involved, the probability that the discounted price will be exactly $45 is 100%.
+
+Explanation:
+The problem states a fixed discount rate, so there's no randomness involved in determining the discounted price.
+
+Common mistake note:
+A common mistake would be thinking that there's some uncertainty or randomness in the discount application, leading to an incorrect probability estimate.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+A fair 12-...
+A) 1/4
+B) 1/3
+C) 5/12
+D) 7/12
+Correct Answer: C
+
+Solution:
+There are 12 sides on the die, and 4 of them (3, 6, 9, 12) are divisible by 3. The probability of rolling a number divisible by 3 is thus 4/12 = 1/3. However, since we're looking for the probability of an event that includes multiple outcomes, we need to multiply this probability by 2 (since there's also a 1/3 chance of rolling a number not divisible by 3 and then rolling one that is). So, the overall probability is (1/3) * 2 = 5/12.
+
+Explanation:
+When considering multiple outcomes that lead to the same event (rolling a number divisible by 3), we must account for all possibilities.
+
+Common mistake note:
+A common mistake would be stopping after calculating the probability of rolling one of the four numbers divisible by 3, without realizing that there's an additional chance of rolling a non-...
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+An experiment has two possible outcomes: success (S) with a probability of 0.6 and failure (F) with a probability of 0.4. If the experiment is repeated twice, what is the probability that both trials result in success?
+A) 0.24
+B) 0.36
+C) 0.48
+D) 0.6
+Correct Answer: B
+
+Solution:
+Since each trial is independent and has a constant probability of success, we can multiply the probabilities of success for both trials to find the overall probability of two successes in a row. The probability of success on any single trial is 0.6, so the probability of two consecutive successes is (0.6) * (0.6) = 0.36.
+
+Explanation:
+When events are independent and have constant probabilities, we can multiply their individual probabilities to find the combined probability.
+
+Common mistake note:
+A common mistake would be assuming that the probability of success changes after the first trial or not multiplying the probabilities correctly.
+------------------------------------------------------------------------------

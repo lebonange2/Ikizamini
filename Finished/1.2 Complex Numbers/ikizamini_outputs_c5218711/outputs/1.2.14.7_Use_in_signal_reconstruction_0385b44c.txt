@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.14.7 Use in signal reconstruction
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.14 Complex Analysis Applications
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Which method is commonly used for signal reconstruction from its samples?
+A) Nearest neighbor interpolation
+B) Decimation followed by filtering
+C) Zero-padding and inverse Fourier transform
+D) Periodic repetition of samples
+Correct Answer: C
+
+Solution:
+Signal reconstruction often employs the inverse Fourier transform after zero-padding to prevent aliasing. Nearest neighbor interpolation can result in jagged signals, decimation reduces information, and periodic repetition yields a different signal.
+
+Explanation:
+Zero-padding enhances frequency resolution in the Fourier transform, leading to a more accurate reconstructed signal.
+
+Common mistake note:
+Students may choose A due to its simplicity. However, it does not accurately represent continuous-time signals.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+In digital signal processing, which technique reconstructs a continuous- time signal from discrete samples?
+A) Linear regression
+B) Polynomial fitting
+C) Discrete Fourier transform (DFT)
+D) Inverse discrete Fourier transform (IDFT)
+Correct Answer: D
+
+Solution:
+The inverse discrete Fourier transform converts the frequency-domain representation back to the time domain, reconstructing the original continuous-time signal.
+
+Explanation:
+Linear regression and polynomial fitting are unrelated to signal reconstruction. DFT analyzes signals in the frequency domain while IDFT reconstructs them from spectral data.
+
+Common mistake note:
+Students might choose C if they混淆 confuse DFT and IDFT roles. Remember that DFT works in the frequency domain, whereas IDFT reconstructs signals.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+What is the primary purpose of zero-padding when reconstructing a signal from samples?
+A) Reduce computational complexity
+B) Increase sampling rate
+C) Prevent aliasing in the reconstructed signal
+D) Eliminate high-frequency components
+Correct Answer: C
+
+Solution:
+Zero-padding adds zeros, increasing frequency resolution. This helps prevent aliasing during signal reconstruction.
+
+Explanation:
+Zero-padding does not directly affect computational complexity or sampling rate and is not meant to remove high frequencies; it improves frequency representation accuracy.
+
+Common mistake note:
+Students may choose B if they think more samples imply a higher sampling rate. However, zero-padding only extends the signal length without changing the interval.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Which statement about reconstructing a continuous-time signal from discrete samples is true?
+A) The reconstructed signal will always match the original, regardless of method.
+B) Perfect reconstruction occurs if the signal is band-limited and satisfies Nyquist-Shannon sampling theorem.
+C) The number of samples needed for perfect reconstruction depends on the signal's frequency content.
+D) Higher sampling rates always lead to more accurate reconstructions.
+Correct Answer: B
+
+Solution:
+If a continuous-time signal is band-limited and meets Nyquist-Shannon, it can be perfectly reconstructed from samples. However, perfect reconstruction in practice may not be identical.
+
+Explanation:
+The number of samples depends on bandwidth, not frequency content. Higher sampling rates can improve accuracy but do not guarantee perfection.
+
+Common mistake note:
+Students might choose A if they overlook aliasing and non-ideal methods. Perfect reconstruction requires ideal conditions.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+What is the relationship between sampling rate and accurate signal reconstruction?
+A) Higher rates lead to more accurate reconstructions.
+B) No direct relationship exists between rate and accuracy.
+C) The rate must be at least twice the highest frequency for accurate reconstruction.
+D) Lower sampling rates result in better reconstructed signals due to fewer artifacts.
+Correct Answer: C
+
+Solution:
+According to Nyquist-Shannon, the sampling rate must be at least twice the highest signal frequency to avoid aliasing and ensure accuracy.
+
+Explanation:
+A higher rate can provide detail but does not guarantee better accuracy if the signal is band-limited. Lower rates introduce artifacts like aliasing.
+
+Common mistake note:
+Students may choose D, thinking fewer samples mean fewer errors. However, meeting Nyquist-Shannon is crucial for accurate reconstruction.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+What role do window functions play in signal reconstruction?
+A) Remove high-frequency noise from the reconstructed signal.
+B) Improve frequency-domain analysis accuracy.
+C) Reduce spectral leakage during time-frequency conversions.
+D) Increase effective sampling rate for better resolution.
+Correct Answer: C
+
+Solution:
+Window functions taper signals at their edges before Fourier transforms, reducing spectral leakage and improving frequency domain reconstruction accuracy.
+
+Explanation:
+Window functions do not directly remove noise or increase the sampling rate; they address leakage caused by finite-length signals in time domain.
+
+Common mistake note:
+Students may choose A if混淆 window functions with filters for noise reduction. Window functions focus on frequency-domain improvement.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+What potential issue can arise when reconstructing a signal using inverse Fourier transform?
+A) Incorrect phase relationships in the reconstructed signal.
+B) The reconstructed signal will always match the original, regardless of method.
+C) Perfect reconstruction with more samples.
+D) Zero-padding reduces accuracy.
+Correct Answer: A
+
+Solution:
+Inverse Fourier transform may not preserve phase relationships accurately, causing distortions in the reconstructed signal.
+
+Explanation:
+Other choices describe misconceptions. The answer highlights a potential issue during reconstruction.
+
+Common mistake note:
+Students might choose B if overlooking reconstruction limitations. Perfect reconstruction requires ideal conditions.
+------------------------------------------------------------------------------

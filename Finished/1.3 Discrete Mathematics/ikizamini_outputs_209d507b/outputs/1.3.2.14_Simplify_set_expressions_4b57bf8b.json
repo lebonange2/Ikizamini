@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.2.14",
+  "objective_text": "Simplify set expressions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd1",
+      "stem": "Given the sets A = {1, 2, 3} and B = {2, 3, 4}, what is the simplified form of (A ∪ B) - A?",
+      "choices": {
+        "A": "{1}",
+        "B": "{2, 3}",
+        "C": "{4}",
+        "D": "Ø"
+      },
+      "correct_choice": "C",
+      "solution": "The union of sets A and B (A ∪ B) is {1, 2, 3, 4}. When we subtract set A from this union ((A ∪ B) - A), we remove all elements that are in both A and the union. Since all elements of A are also in the union, we are left with just the element that is in the union but not in A, which is {4}.",
+      "explanation": "The key here is understanding that subtracting a set from its own union results in removing only the elements that are exclusively from the original set.",
+      "common_mistake_notes": "A common mistake would be to choose B, thinking that it's the intersection of A and B. However, we're looking for elements in the union but not in A."
+    },
+    {
+      "id": "Asd2",
+      "stem": "Simplify the expression (B ∩ C) ∪ (C ∪ D), where B = {1, 2}, C = {2, 3}, and D = {3, 4}.",
+      "choices": {
+        "A": "{2, 3}",
+        "B": "{1, 2, 3}",
+        "C": "{2, 3, 4}",
+        "D": "{1, 2, 3, 4}"
+      },
+      "correct_choice": "C",
+      "solution": "First, find the intersection of B and C (B ∩ C), which is {2}. Then, find the union of C and D (C ∪ D), which is {2, 3, 4}. Finally, combine these two sets by taking their union ((B ∩ C) ∪ (C ∪ D)). The result is {2, 3, 4}.",
+      "explanation": "The intersection gives us the common elements of B and C, while the second union expands the set. Combining them with another union results in all unique elements from both sets.",
+      "common_mistake_notes": "A common mistake would be to choose A or B, assuming that the intersection is enough. However, we need to consider the expanded set after taking the second union."
+    },
+    {
+      "id": "Asd3",
+      "stem": "Simplify the expression (X ∪ Y) - (X ∩ Y), where X = {1, 2, 3} and Y = {2, 3, 4}.",
+      "choices": {
+        "A": "{1}",
+        "B": "{1, 2, 3, 4}",
+        "C": "{2, 3}",
+        "D": "{4}"
+      },
+      "correct_choice": "B",
+      "solution": "The union of X and Y (X ∪ Y) is {1, 2, 3, 4}. The intersection of X and Y (X ∩ Y) is {2, 3}. Subtracting the intersection from the union removes all elements that are common to both sets. Since there are no elements in X and Y that are not in both, we retain all elements in the original union, which results in {1, 2, 3, 4}.",
+      "explanation": "Subtracting the intersection of two sets from their union leaves only the unique elements from each set.",
+      "common_mistake_notes": "A common mistake would be to choose A or C, assuming that we are removing all elements in both sets. However, since there is no element exclusive to X or Y, we retain all elements."
+    },
+    {
+      "id": "Asd4",
+      "stem": "Given the sets P = {x | x is a prime number less than 10} and Q = {2, 3, 5}, what is the simplified form of (P ∪ Q) - Q?",
+      "choices": {
+        "A": "{2, 3, 5}",
+        "B": "{7, 9}",
+        "C": "{2, 3, 5, 7, 9}",
+        "D": "Ø"
+      },
+      "correct_choice": "B",
+      "solution": "The set P consists of prime numbers less than 10, which are {2, 3, 5, 7}. The union of P and Q (P ∪ Q) is {2, 3, 5, 7}. Subtracting Q from this union ((P ∪ Q) - Q) removes all elements that are in both P and Q. This leaves us with the prime number 7, which is {7, 9}.",
+      "explanation": "We're looking for numbers that are prime and less than 10 but not in set Q.",
+      "common_mistake_notes": "A common mistake would be to choose A or C, thinking that we should retain all elements from the union. However, we need to remove elements that are exclusively from set Q."
+    },
+    {
+      "id": "Asd5",
+      "stem": "Simplify the expression (U ∩ V) ∪ (V ∩ W), where U = {1, 2, 3}, V = {2, 3, 4}, and W = {3, 4, 5}.",
+      "choices": {
+        "A": "{2, 3}",
+        "B": "{2, 3, 4}",
+        "C": "{2, 3, 4, 5}",
+        "D": "{1, 2, 3, 4, 5}"
+      },
+      "correct_choice": "B",
+      "solution": "The intersection of U and V (U ∩ V) is {2, 3}. The intersection of V and W (V ∩ W) is {3, 4}. Taking the union of these two intersections gives us {2, 3, 4}.",
+      "explanation": "We're finding common elements between pairs of sets and then combining those common elements.",
+      "common_mistake_notes": "A common mistake would be to choose A or D, assuming that we are considering all elements from the original sets. However, we are only considering elements that are common in both intersections."
+    },
+    {
+      "id": "Asd6",
+      "stem": "Given the sets X = {a, b, c} and Y = {b, c, d}, what is the simplified form of (X ∪ Y) - (X ∩ Y)?",
+      "choices": {
+        "A": "{a, b, c, d}",
+        "B": "{a, d}",
+        "C": "{a}",
+        "D": "Ø"
+      },
+      "correct_choice": "B",
+      "solution": "The union of X and Y (X ∪ Y) is {a, b, c, d}. The intersection of X and Y (X ∩ Y) is {b, c}. Subtracting the intersection from the union removes all elements that are common to both sets. This leaves us with a and d, which is {a, d}.",
+      "explanation": "We're looking for elements that are in either X or Y but not in both.",
+      "common_mistake_notes": "A common mistake would be to choose A or C, thinking that we should retain all elements from the union. However, we need to remove elements that are exclusively from the intersection."
+    },
+    {
+      "id": "Asd7",
+      "stem": "Simplify the expression (Z ∪ W) - Z, where Z = {x | x is an even number less than 6} and W = {1, 2, 3, 4, 5}.",
+      "choices": {
+        "A": "{1, 3, 5}",
+        "B": "{2, 4}",
+        "C": "{1, 2, 3, 4, 5}",
+        "D": "Ø"
+      },
+      "correct_choice": "A",
+      "solution": "The set Z consists of even numbers less than 6, which are {2, 4}. The union of Z and W (Z ∪ W) is {1, 2, 3, 4, 5}. Subtracting Z from this union ((Z ∪ W) - Z) removes all elements that are in both Z and the union. This leaves us with the odd numbers from set W, which is {1, 3, 5}.",
+      "explanation": "We're looking for numbers that are in set W but not even.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, thinking that we should retain all elements from the union. However, we need to remove elements that are exclusively from set Z."
+    }
+  ]
+}

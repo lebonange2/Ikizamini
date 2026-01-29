@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.12.3",
+  "objective_text": "Define degree of a vertex",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "In a graph, what is the degree of a vertex?",
+      "choices": {
+        "A": "The number of edges connected to it.",
+        "B": "The number of vertices in the graph.",
+        "C": "The sum of the degrees of all vertices.",
+        "D": "The number of cycles in the graph."
+      },
+      "correct_choice": "A",
+      "solution": "The degree of a vertex in a graph is the number of edges incident to that vertex. Answer A accurately defines this concept. Answers B, C, and D refer to different properties: B is the total count of vertices, C is the sum of degrees for all vertices, and D refers to cycles, which are unrelated to individual vertex degree.",
+      "explanation": "Understanding the degree of a vertex is fundamental in graph theory as it describes the connectivity of nodes within a network.",
+      "common_mistake_notes": "A common misconception is to confuse the degree with the number of vertices (B), the sum of all degrees (C), or cycles (D)."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "What is the degree of an isolated vertex in a graph?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "The total number of edges in the graph.",
+        "D": "The number of vertices in the graph minus 1."
+      },
+      "correct_choice": "A",
+      "solution": "An isolated vertex has no connections to other vertices. Its degree is 0, as there are no incident edges. Answer A correctly reflects this. Answers B, C, and D pertain to vertices with at least one edge.",
+      "explanation": "Isolated vertices play a role in understanding graph structure and connectivity patterns.",
+      "common_mistake_notes": "A common error is to select B, assuming that every vertex has at least one connection. However, isolated vertices have none."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "In a complete graph with 5 vertices, what is the degree of each vertex?",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "5"
+      },
+      "correct_choice": "C",
+      "solution": "In a complete graph, every pair of distinct vertices is connected. In a 5-vertex complete graph, each vertex connects to all other 4 vertices, giving a degree of 4. Answer C is correct. Answers A, B, and D represent incorrect degrees.",
+      "explanation": "Complete graphs are used to study connectivity and edge properties in graph theory.",
+      "common_mistake_notes": "A common mistake might be choosing D, assuming the degree equals the total number of vertices. However, this would only hold if each vertex had exactly one connection."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "What is the sum of degrees for all vertices in a simple undirected graph with 6 edges?",
+      "choices": {
+        "A": "6",
+        "B": "12",
+        "C": "18",
+        "D": "24"
+      },
+      "correct_choice": "B",
+      "solution": "In a simple undirected graph, the sum of vertex degrees equals twice the number of edges (Handshaking Theorem). With 6 edges, the sum is 2 * 6 = 12. Answer B is correct. Answers A, C, and D do not follow the theorem.",
+      "explanation": "The Handshaking Theorem reveals a fundamental relationship between edge counts and vertex degrees.",
+      "common_mistake_notes": "A common error might be to choose A or D, assuming that the sum equals the number of edges or twice the number of vertices. This is incorrect."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "In a directed graph with 8 vertices, where each vertex has exactly one outgoing edge, what is the maximum possible degree for any vertex?",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "7",
+        "D": "8"
+      },
+      "correct_choice": "C",
+      "solution": "In a directed graph, degree includes in-degree (incoming edges) and out-degree (outgoing edges). With one outgoing edge per vertex, the maximum in-degree is 7 (all other vertices minus self). Total degree is thus 1 + 7 = 8. Answer C is correct. Answers A, B, and D represent incorrect degrees.",
+      "explanation": "Directed graphs have unique properties; understanding in- and out-degrees is crucial for analysis.",
+      "common_mistake_notes": "A common mistake might be to choose A or B, assuming the maximum degree is limited by outgoing edges. However, incoming edges also contribute."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "In a tree with 10 vertices, what is the sum of degrees for all vertices?",
+      "choices": {
+        "A": "18",
+        "B": "20",
+        "C": "24",
+        "D": "30"
+      },
+      "correct_choice": "A",
+      "solution": "In a tree (a connected graph with no cycles), the Handshaking Theorem applies. With 10 vertices and n-1 edges, the sum of degrees is 2 * (n-1) = 18. Answer A is correct. Answers B, C, and D do not follow the relationship between edges and vertex degrees in a tree.",
+      "explanation": "Trees have specific properties related to connectivity and degree distribution.",
+      "common_mistake_notes": "A common error might be to choose B or D, assuming that the sum equals twice the number of vertices or edges. This is incorrect for trees."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "What is the degree of a vertex in a cycle graph with 6 vertices?",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_choice": "B",
+      "solution": "In a cycle graph, each vertex is connected to exactly two others. Thus, the degree of each vertex in a 6-vertex cycle is 2. Answer B is correct. Answers A, C, and D represent incorrect degrees.",
+      "explanation": "Cycle graphs are examples of simple undirected graphs where all vertices have equal degree forming a closed loop.",
+      "common_mistake_notes": "A common mistake might be to choose A or C, assuming the degree is limited by outgoing edges or increases with vertices. In cycle graphs, each vertex has exactly two connections."
+    }
+  ]
+}

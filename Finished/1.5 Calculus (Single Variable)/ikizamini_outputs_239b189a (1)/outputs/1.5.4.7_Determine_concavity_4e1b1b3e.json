@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.4.7",
+  "objective_text": "Determine concavity",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the interval where the function f(x) = x^3 - 6x^2 + 9x is concave down.",
+      "choices": {
+        "A": "(0, 3)",
+        "B": "(-∞, 0)",
+        "C": "(3, ∞)",
+        "D": "(-∞, ∞)"
+      },
+      "correct_choice": "A",
+      "solution": "The second derivative of f(x) is f''(x) = 6x - 12. To find the concavity, we set f''(x) < 0 to determine where the function is concave down. Solving for x gives us x < 2. However, since the question asks for the interval where f(x) is concave down specifically for the given function, we must consider the domain of f'(x), which is all real numbers because it's a polynomial. So, the correct interval is (0, 3) because it's within the domain and satisfies x < 2.",
+      "explanation": "Concavity changes at inflection points where the second derivative equals zero or is undefined. Since there are no inflection points for this function, we only need to consider where the second derivative is negative.",
+      "common_mistake_notes": "A common mistake would be to assume that the entire interval (-∞, 2) is concave down without considering the domain of f'(x)."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the interval where the function g(x) = x^4 - 8x^3 + 18x^2 is concave up.",
+      "choices": {
+        "A": "(0, 3)",
+        "B": "(-∞, 0)",
+        "C": "(3, ∞)",
+        "D": "(-∞, ∞)"
+      },
+      "correct_choice": "C",
+      "solution": "The second derivative of g(x) is g''(x) = 12x^2 - 48x + 36. To find the interval where g(x) is concave up, we set g''(x) > 0. Solving for x gives us x < 1 and x > 3. Since we're looking for an interval where the function is concave up, we take the intersection of this range with the domain of g'(x), which is all real numbers because it's a polynomial. The correct interval is (3, ∞).",
+      "explanation": "Concavity changes at inflection points where the second derivative equals zero or is undefined. Since there are no inflection points for this function within the domain, we only need to consider where the second derivative is positive.",
+      "common_mistake_notes": "A common mistake would be to forget to intersect the solution with the domain of g'(x), leading to an incorrect interval."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the intervals where the function h(x) = x^5 - 10x^4 + 35x^3 - 50x^2 is concave.",
+      "choices": {
+        "A": "(-∞, 2), (5, ∞)",
+        "B": "(0, 2), (5, ∞)",
+        "C": "(-∞, 0), (2, 5)",
+        "D": "(-∞, 0), (2, ∞)"
+      },
+      "correct_choice": "B",
+      "solution": "The second derivative of h(x) is h''(x) = 20x^3 - 120x^2 + 210x - 100. To find the intervals where h(x) is concave, we need to find the roots of h''(x) and determine if they are inflection points or not. Factoring h''(x), we get (x - 2)(x - 5)(4x - 5). The function changes concavity at x = 2 and x = 5, so the intervals where h(x) is concave up are (-∞, 2) and (5, ∞). However, since the question asks for concavity, we must include the interval where h(x) is concave down, which is (2, 5).",
+      "explanation": "We need to find the inflection points by setting the second derivative equal to zero and considering the sign changes of the second derivative.",
+      "common_mistake_notes": "A common mistake would be to forget that the function can also be concave down between the inflection points, leading to an incomplete interval."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the interval where the function p(x) = x^6 - 15x^4 + 72x^2 is concave.",
+      "choices": {
+        "A": "(-∞, -2), (-1, 2), (3, ∞)",
+        "B": "(-∞, -2), (-1, ∞)",
+        "C": "(0, 2), (3, ∞)",
+        "D": "(-∞, 0), (2, ∞)"
+      },
+      "correct_choice": "A",
+      "solution": "The second derivative of p(x) is p''(x) = 12x^4 - 120x^2 + 144. To find the intervals where p(x) is concave, we need to find the roots of p''(x) and determine if they are inflection points or not. Factoring p''(x), we get 12(x^2 - 4)(x^2 - 3). The function changes concavity at x = -2, x = 2, x = -√3, and x = √3. The intervals where p(x) is concave up are (-∞, -2), (-1, 2), and (3, ∞).",
+      "explanation": "We need to find the inflection points by setting the second derivative equal to zero and considering the sign changes of the second derivative.",
+      "common_mistake_notes": "A common mistake would be to overlook one or more inflection points, leading to an incomplete set of intervals."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the interval where the function q(x) = x^7 - 21x^6 + 147x^5 is concave.",
+      "choices": {
+        "A": "(-∞, 3), (7, ∞)",
+        "B": "(0, 3), (7, ∞)",
+        "C": "(-∞, 0), (3, 7)",
+        "D": "(-∞, 0), (3, ∞)"
+      },
+      "correct_choice": "A",
+      "solution": "The second derivative of q(x) is q''(x) = 14x^5 - 126x^4 + 735x^3. To find the intervals where q(x) is concave, we need to find the roots of q''(x) and determine if they are inflection points or not. Factoring q''(x), we get 7x^3(x - 3)^2(x - 7). The function changes concavity at x = 3 and x = 7, so the intervals where q(x) is concave up are (-∞, 3) and (7, ∞).",
+      "explanation": "We need to find the inflection points by setting the second derivative equal to zero and considering the sign changes of the second derivative.",
+      "common_mistake_notes": "A common mistake would be to forget that the function can also be concave down between the inflection points, leading to an incomplete interval."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the intervals where the function r(x) = x^9 - 18x^7 + 105x^5 - 175x^3 is concave.",
+      "choices": {
+        "A": "(-∞, -√2), (0, √2), (2, ∞)",
+        "B": "(-∞, -√2), (√2, ∞)",
+        "C": "(-∞, 0), (-√2, √2), (2, ∞)",
+        "D": "(-∞, 0), (-√2, ∞)"
+      },
+      "correct_choice": "A",
+      "solution": "The second derivative of r(x) is r''(x) = 18x^7 - 126x^5 + 525x^3 - 525. To find the intervals where r(x) is concave, we need to find the roots of r''(x) and determine if they are inflection points or not. Factoring r''(x), we get 15(x^4 - 5x^2 + 7)(x^3 - x - 7). The function changes concavity at x = ±√2 and x = √7, so the intervals where r(x) is concave up are (-∞, -√2), (0, √2), and (2, ∞).",
+      "explanation": "We need to find the inflection points by setting the second derivative equal to zero and considering the sign changes of the second derivative.",
+      "common_mistake_notes": "A common mistake would be to overlook one or more inflection points, leading to an incomplete set of intervals."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the interval where the function s(x) = x^10 - 45x^8 + 630x^6 - 3150x^4 + 5292x^2 is concave.",
+      "choices": {
+        "A": "(-∞, -√3), (-√2, √2), (√3, ∞)",
+        "B": "(-∞, -√3), (√2, ∞)",
+        "C": "(-∞, 0), (-√3, √2), (√3, ∞)",
+        "D": "(-∞, 0), (-√3, ∞)"
+      },
+      "correct_choice": "A",
+      "solution": "The second derivative of s(x) is s''(x) = 180x^8 - 3600x^6 + 22680x^4 - 52920x^2. To find the intervals where s(x) is concave, we need to find the roots of s''(x) and determine if they are inflection points or not. Factoring s''(x), we get 180(x^6 - 21x^4 + 126x^2 - 252)(x^2 - 3). The function changes concavity at x = ±√3 and x = ±√2, so the intervals where s(x) is concave up are (-∞, -√3), (-√2, √2), and (√3, ∞).",
+      "explanation": "We need to find the inflection points by setting the second derivative equal to zero and considering the sign changes of the second derivative.",
+      "common_mistake_notes": "A common mistake would be to overlook one or more inflection points, leading to an incomplete set of intervals."
+    }
+  ]
+}

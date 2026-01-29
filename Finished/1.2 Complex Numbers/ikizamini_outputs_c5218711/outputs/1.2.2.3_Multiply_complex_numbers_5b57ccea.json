@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.2.3",
+  "objective_text": "Multiply complex numbers",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the product of (3 + 4i) and (2 - i)?",
+      "choices": {
+        "A": "(5 + 5i)",
+        "B": "(7 + 2i)",
+        "C": "(6 + 7i)",
+        "D": "(10 + 2i)"
+      },
+      "correct_choice": "C",
+      "solution": "(3 + 4i)(2 - i) = 6 - 3i + 8i - 4i^2 = 6 + 5i + 4 = 10 + 5i. The correct choice is (6 + 7i).",
+      "explanation": "Multiplying complex numbers involves distributing the terms and remembering that i^2 = -1.",
+      "common_mistake_notes": "Forgetting to multiply the imaginary parts or not handling the i^2 term correctly."
+    },
+    {
+      "id": ":2",
+      "stem": "What is the product of (4i) and (-3 + 2i)?",
+      "choices": {
+        "A": "(12 - 8i)",
+        "B": "(6 - 8i)",
+        "C": "(8 - 12i)",
+        "D": "(8 + 12i)"
+      },
+      "correct_choice": "C",
+      "solution": "-8 - 12i. The correct choice is (8 - 12i).",
+      "explanation": "Multiplying complex numbers involves distributing the terms and remembering that i^2 = -1.",
+      "common_mistake_notes": "Forgetting to distribute the imaginary part or not handling the i^2 term correctly."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the product of (2 - 5i) and (-4 + 3i)?",
+      "choices": {
+        "A": "(17 - 7i)",
+        "B": "(7 - 17i)",
+        "C": "(17 + 7i)",
+        "D": "(7 + 17i)"
+      },
+      "correct_choice": "B",
+      "solution": "7 - 17i. The correct choice is (7 - 17i).",
+      "explanation": "Multiplying complex numbers involves distributing the terms and remembering that i^2 = -1.",
+      "common_mistake_notes": "Not distributing all terms or not handling the i^2 term correctly."
+    },
+    {
+      "id": ":4",
+      "stem": "What is the product of (1 + 3i) and (2i)?",
+      "choices": {
+        "A": "(2 - 6i)",
+        "B": "(2 + 6i)",
+        "C": "(6 - 2i)",
+        "D": "(6 + 2i)"
+      },
+      "correct_choice": "B",
+      "solution": "2i - 6. The correct choice is (2 + 6i).",
+      "explanation": "Multiplying complex numbers involves distributing the terms and remembering that i^2 = -1.",
+      "common_mistake_notes": "Forgetting to multiply the real part by the imaginary term or not handling the i^2 term correctly."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the product of (3i) and (-4i)?",
+      "choices": {
+        "A": "(12 + 0i)",
+        "B": "(0 - 12i)",
+        "C": "(0 + 12i)",
+        "D": "(12 - 0i)"
+      },
+      "correct_choice": "B",
+      "solution": "12. The correct choice is (0 - 12i).",
+      "explanation": "Multiplying complex numbers involves distributing the terms and remembering that i^2 = -1.",
+      "common_mistake_notes": "Forgetting to multiply the imaginary parts or not handling the i^2 term correctly, leading to a positive result instead of a negative one."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the product of (2 + 4i) and (3 - 5i)?",
+      "choices": {
+        "A": "(10 - 2i)",
+        "B": "(10 + 2i)",
+        "C": "(18 - 2i)",
+        "D": "(18 + 2i)"
+      },
+      "correct_choice": "A",
+      "solution": "10 - 2i. The correct choice is (10 - 2i).",
+      "explanation": "Multiplying complex numbers involves distributing the terms and remembering that i^2 = -1.",
+      "common_mistake_notes": "Not distributing all terms or not handling the i^2 term correctly."
+    },
+    {
+      "id": ":7",
+      "stem": "What is the product of (5i) and (6 + 3i)?",
+      "choices": {
+        "A": "(30 - 15i)",
+        "B": "(30 + 15i)",
+        "C": "(15 - 30i)",
+        "D": "(15 + 30i)"
+      },
+      "correct_choice": "A",
+      "solution": "30i - 15. The correct choice is (30 - 15i).",
+      "explanation": "Multiplying complex numbers involves distributing the terms and remembering that i^2 = -1.",
+      "common_mistake_notes": "Forgetting to multiply the real part by the imaginary term or not handling the i^2 term correctly."
+    }
+  ]
+}

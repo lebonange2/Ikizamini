@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.6.9 Find zeros of complex functions
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.6 Complex Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the zeros of the function f(z) = z^2 + 4i.
+A) -2i
+B) 2i
+C) 2
+D) -2
+Correct Answer: A
+
+Solution:
+To find the zeros of a quadratic complex function, set it equal to zero and solve for z. For f(z) = z^2 + 4i = 0, use the quadratic formula: z = (-b ± √(b² - 4ac)) / (2a). Here, a = 1, b = 0, c = 4i. Plugging these values gives z = ±√(-4)i = ±2i.
+
+Explanation:
+The quadratic formula applies to complex numbers. Since the discriminant is negative, expect two complex roots.
+
+Common mistake note:
+Overlook real solutions or forget imaginary part in the quadratic formula.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the zeros of the function g(z) = 3z^3 - 6iz^2 + 9.
+A) i√3
+B) -i√3
+C) 0
+D) i
+Correct Answer: C
+
+Solution:
+For g(z) = 3z^3 - 6iz^2 + 9 = 0, if z = 0, the equation is satisfied. Thus, z = 0 is a zero. Factor out z and solve the remaining quadratic: 3z^2 - 6iz + 9 = 0, which has no real or complex solutions.
+
+Explanation:
+A linear term with zero coefficient indicates an immediate zero. Factoring simplifies to solving a quadratic with no additional zeros.
+
+Common mistake note:
+Overlook the linear term and assume all zeros from cubic equation.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the zeros of the function h(z) = z^4 + 2z^2 + 1.
+A) ±i
+B) ±√(−1)
+C) ±√(−2)
+D) 0
+Correct Answer: A
+
+Solution:
+Rewrite as (z^2 + 1)^2 = 0. Taking the square root gives z^2 + 1 = 0, and solving for z results in z = ±√(-1) = ±i.
+
+Explanation:
+Recognize a perfect square; factor and solve the quadratic inside the square root.
+
+Common mistake note:
+Try to solve directly leading to a complex quartic equation.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the zeros of the function j(z) = z^3 - 2z + i.
+A) 1 + √(−1)
+B) 1 - √(−1)
+C) 1 + √(2)i
+D) 1 - √(2)i
+Correct Answer: B
+
+Solution:
+j(1) = i, so z - 1 is a factor. Divide by (z - 1): (z^2 + z - 1). Factoring gives (z + 1)(z - √(-1)). One zero is z = 1 - √(−1).
+
+Explanation:
+Simple value reveals a linear factor. Divide and factor quadratic for zeros.
+
+Common mistake note:
+Assume real roots or overlook complex roots when testing values.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the zeros of the function k(z) = z^2 + 4z + 5.
+A) i, -i
+B) 2, -3
+C) 1 + i, 1 - i
+D) −2 + √(−1), −2 - √(−1)
+Correct Answer: D
+
+Solution:
+Quadratic equation. Using the quadratic formula: z = (-b ± √(b² - 4ac)) / (2a) with a = 1, b = 4, c = 5 gives z = (-4 ± √(-16)) / 2 = (-4 ± 4i) / 2 = -2 ± 2i.
+
+Explanation:
+Quadratic formula; roots are complex conjugates due to real coefficients.
+
+Common mistake note:
+Forget negative discriminant or mix up signs in the quadratic formula.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the zeros of the function l(z) = z^3 + 2z^2 + 4z + 8.
+A) −2, i√(−1), -i√(−1)
+B) 0, √(−2), -√(−2)
+C) −2, 2i, -2i
+D) −2, 2, 4
+Correct Answer: A
+
+Solution:
+l(-2) = 0; z + 2 is a factor. Divide: (z^2 - 2). Factoring gives (z - √(−2))(z + √(−2)). Zeros are z = -2, i√(−1), and -i√(−1).
+
+Explanation:
+Simple value reveals linear factor. Divide and factor quadratic for zeros.
+
+Common mistake note:
+Overlook complex roots when testing values or assume all real roots.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the zeros of the function m(z) = z^4 - 16.
+A) ±2, ±2i
+B) ±√(−1), ±√(−1)
+C) ±√(2), ±√(2)i
+D) 0, ±2, ±2i
+Correct Answer: A
+
+Solution:
+Factor as (z^2 - 4)(z^2 + 4) = (z - 2)(z + 2)(z - 2i)(z + 2i). Zeros are z = ±2 and z = ±2i.
+
+Explanation:
+Recognize difference of squares; factor for four zeros.
+
+Common mistake note:
+Try to solve directly without factoring or overlook complex roots.
+------------------------------------------------------------------------------

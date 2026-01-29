@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.4.3",
+  "objective_text": "Identify tautologies",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Q1",
+      "stem": "Which of the following statements is a tautology?",
+      "choices": {
+        "A": "A implies B and not A",
+        "B": "A or not A",
+        "C": "Not (A and not A)",
+        "D": "(A and B) implies C"
+      },
+      "correct_choice": "C",
+      "solution": "A tautology is a statement that is always true. In this case, choice C represents the law of excluded middle, which states that either a proposition or its negation must be true. This makes it a tautology. The other choices are not necessarily true in all cases: A can be false if B is also false; B is a tautology (also known as the principle of explosion), but it's not the one asked for; and D does not guarantee that C is true.",
+      "explanation": "The law of excluded middle is a fundamental concept in logic, making this question of medium difficulty.",
+      "common_mistake_notes": "A common mistake would be to choose B, as it is also a tautology (the principle of explosion). However, the question asks specifically for a different tautology."
+    },
+    {
+      "id": "Q2",
+      "stem": "Which of the following statements is NOT a tautology?",
+      "choices": {
+        "A": "A implies A",
+        "B": "Not (A and B) or (not A and not B)",
+        "C": "A if and only if A",
+        "D": "(A or B) and (not A or C)"
+      },
+      "correct_choice": "D",
+      "solution": "Choice D is not a tautology because it can be false in some cases. For example, if A is true and B and C are both false, the statement becomes (True or False) and (False or False), which simplifies to True and False, making the overall statement false. The other choices are all tautologies: A implies A is true because a statement implies itself; Not (A and B) or (not A and not B) represents De Morgan's law, which is always true; and A if and only if A means that A is true exactly when A is true.",
+      "explanation": "This question tests the understanding of tautologies by presenting a false example. It is slightly more difficult than the previous one.",
+      "common_mistake_notes": "A common mistake would be to choose B, as it might appear similar to De Morgan's law. However, choice D contains additional terms that make it not a tautology."
+    },
+    {
+      "id": "Q3",
+      "stem": "Which of the following represents a tautology when using logical connectives?",
+      "choices": {
+        "A": "A and (B or C)",
+        "B": "Not A implies B",
+        "C": "(A and B) if and only if (C and D)",
+        "D": "((A and B) or (not A and not B))"
+      },
+      "correct_choice": "D",
+      "solution": "Choice D represents the tautology known as the law of double negation elimination, which states that a statement is true if its double negative is false. When we simplify ((A and B) or (not A and not B)), it becomes True because at least one of the two disjuncts must be true: either A and B are both true, making the first part true, or A and B are both false, making the second part true. The other choices do not guarantee truth in all cases.",
+      "explanation": "This question tests the ability to recognize tautologies within compound statements using logical connectives. It is of medium difficulty.",
+      "common_mistake_notes": "A common mistake would be to choose A, as it might appear to be a true statement. However, it does not guarantee truth in all cases; for example, if B and C are both false, the overall statement becomes False."
+    },
+    {
+      "id": "Q4",
+      "stem": "Which of the following is an example of a tautology when using quantifiers?",
+      "choices": {
+        "A": "For all x, (x is even implies x is divisible by 2)",
+        "B": "There exists x such that x is both prime and composite",
+        "C": "For all x, there exists y such that x = y",
+        "D": "There exists x such that for all y, x ≠ y"
+      },
+      "correct_choice": "A",
+      "solution": "Choice A represents a tautology because it states that if a number is even, then it must be divisible by 2, which is always true. The other choices are not tautologies: B is false because no number can be both prime and composite; C is true for some cases but not all (e.g., when x = y = 0); D is also true for some cases but not all.",
+      "explanation": "This question tests the understanding of tautologies in the context of quantifiers. It is slightly more difficult due to the use of quantifiers.",
+      "common_mistake_notes": "A common mistake would be to choose C, as it might seem like a true statement for some cases. However, it does not hold universally; for example, when x = 0 and y = 1."
+    },
+    {
+      "id": "Q5",
+      "stem": "Which of the following statements is logically equivalent to a tautology?",
+      "choices": {
+        "A": "A or (B and C)",
+        "B": "Not A if and only if B",
+        "C": "(A implies B) and (B implies A)",
+        "D": "((A and B) or not A)"
+      },
+      "correct_choice": "C",
+      "solution": "Choice C is logically equivalent to a tautology, as it represents the biconditional statement 'A if and only if B', which is true when A and B have the same truth value. This makes it equivalent to a tautology (true in all cases). The other choices are not necessarily equivalent to a tautology: A can be false if both B and C are false; B does not guarantee truth in all cases; and D represents a disjunction that is true when either A or B is true.",
+      "explanation": "This question tests the understanding of logical equivalence with respect to tautologies. It is of medium difficulty.",
+      "common_mistake_notes": "A common mistake would be to choose D, as it might appear to be true in some cases. However, it does not guarantee truth universally; for example, if A and B are both false."
+    },
+    {
+      "id": "Q6",
+      "stem": "Which of the following statements is a tautology when using modal operators?",
+      "choices": {
+        "A": "It is necessary that A implies B",
+        "B": "It is possible that A and not A",
+        "C": "If it is impossible for A, then it is necessary that not A",
+        "D": "It is both necessary and possible that A"
+      },
+      "correct_choice": "C",
+      "solution": "Choice C represents a tautology because if it is impossible for A to be true, then it must be necessarily false (not A). The other choices are not tautologies: A does not guarantee truth universally; B contradicts the law of non-contradiction; and D is ambiguous as it might imply a contradiction.",
+      "explanation": "This question tests the understanding of tautologies in the context of modal logic. It is more difficult due to the use of modal operators.",
+      "common_mistake_notes": "A common mistake would be to choose A, as it might seem like a true statement. However, it does not hold universally; for example, if B is false even when A is true."
+    },
+    {
+      "id": "Q7",
+      "stem": "Which of the following statements is NOT logically equivalent to a tautology?",
+      "choices": {
+        "A": "A implies (B or C)",
+        "B": "Not (A and B) implies Not A",
+        "C": "(A if and only if B) implies (C if and only if D)",
+        "D": "((A and B) or not B)"
+      },
+      "correct_choice": "C",
+      "solution": "Choice C is not logically equivalent to a tautology because it does not guarantee truth universally. The truth of 'A if and only if B' does not imply the truth of 'C if and only if D'. The other choices are either equivalent to or represent tautologies: A represents a conditional statement that can be true; B is a valid contrapositive; and D simplifies to (A or True), which is always true.",
+      "explanation": "This question tests the understanding of logical equivalence with respect to tautologies, using compound statements. It is of medium difficulty.",
+      "common_mistake_notes": "A common mistake would be to choose A, as it might appear to be a true statement. However, it does not guarantee truth universally; for example, if B and C are both false."
+    }
+  ]
+}

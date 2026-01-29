@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.6.3",
+  "objective_text": "Evaluate complex rational functions",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Simplify the expression: (4x^2 - 9) / (2x + 3)",
+      "choices": {
+        "A": "(2x - 3)(2x + 3) / (2x + 3)",
+        "B": "2x - 3",
+        "C": "2x + 3",
+        "D": "4x - 6"
+      },
+      "correct_choice": "B",
+      "solution": "The expression can be factored as a difference of squares: (2x + 3)(2x - 3) / (2x + 3). We can then cancel out the (2x + 3) term in the numerator and denominator, leaving us with 2x - 3.",
+      "explanation": "Factoring the numerator as a difference of squares allows us to simplify the expression by canceling common factors.",
+      "common_mistake_notes": "A common mistake is not factoring the numerator or incorrectly factoring it. This would result in an incorrect simplified form."
+    },
+    {
+      "id": "2",
+      "stem": "Evaluate the rational function at x = 1: (3x^3 - 6x^2 + 9) / (x^2 - 4)",
+      "choices": {
+        "A": "-3",
+        "B": "0",
+        "C": "3",
+        "D": "6"
+      },
+      "correct_choice": "C",
+      "solution": "First, simplify the function by factoring the numerator and denominator: (3x^2)(x - 1) / ((x + 2)(x - 2)). At x = 1, the expression becomes (3 * 1)(1 - 1) / ((1 + 2)(1 - 2)) = 0 / (-1) = 3.",
+      "explanation": "Factoring and plugging in the value for x simplifies the calculation.",
+      "common_mistake_notes": "A common mistake is not factoring the numerator or denominator, leading to a more complicated expression that may be difficult to evaluate at x = 1."
+    },
+    {
+      "id": "3",
+      "stem": "Simplify: (x^2 + 5x + 6) / (x^2 - 4)",
+      "choices": {
+        "A": "(x + 2)(x + 3) / (x + 2)(x - 2)",
+        "B": "(x + 2)(x + 3) / (x - 2)",
+        "C": "x + 3",
+        "D": "x - 2"
+      },
+      "correct_choice": "C",
+      "solution": "Factor both the numerator and denominator: (x + 2)(x + 3) / ((x + 2)(x - 2)). The (x + 2) term can be cancelled, leaving us with x + 3.",
+      "explanation": "Factoring helps to simplify the rational function by canceling common factors.",
+      "common_mistake_notes": "A common mistake is not factoring correctly or forgetting to cancel out the common factor."
+    },
+    {
+      "id": "4",
+      "stem": "Find the vertical asymptote of the function: f(x) = (2x + 1) / (x^2 - 9)",
+      "choices": {
+        "A": "x = -3",
+        "B": "x = 3",
+        "C": "x = -sqrt(3)",
+        "D": "x = sqrt(3)"
+      },
+      "correct_choice": "B",
+      "solution": "The vertical asymptote occurs where the denominator is equal to zero: x^2 - 9 = 0, which gives us (x + 3)(x - 3) = 0. Thus, x = -3 and x = 3. However, since the degree of the numerator is less than the degree of the denominator, only x = 3 is a vertical asymptote.",
+      "explanation": "Vertical asymptotes occur where the denominator equals zero, but we must consider the relative degrees of the numerator and denominator to determine which roots are actual asymptotes.",
+      "common_mistake_notes": "A common mistake is assuming that both roots of the denominator create vertical asymptotes. Only roots with a higher degree in the denominator lead to an actual asymptote."
+    },
+    {
+      "id": "5",
+      "stem": "Simplify: (4x^3 - 12x^2) / (2x^2 - 6x)",
+      "choices": {
+        "A": "2x(x - 3)",
+        "B": "2x(x + 3)",
+        "C": "2(x - 3)",
+        "D": "2(x + 3)"
+      },
+      "correct_choice": "A",
+      "solution": "Factor out the greatest common factor from both the numerator and denominator: 4x^2(x - 3) / 2x(x - 3). The (x - 3) term can be cancelled, leaving us with 2x.",
+      "explanation": "Factoring out the greatest common factor simplifies the rational function by canceling common factors.",
+      "common_mistake_notes": "A common mistake is not factoring out the greatest common factor or forgetting to cancel out the common factor."
+    },
+    {
+      "id": "6",
+      "stem": "Find the horizontal asymptote of the function: g(x) = (3x^2 + 4x - 5) / (2x^2 + x)",
+      "choices": {
+        "A": "y = 0",
+        "B": "y = 1/2",
+        "C": "y = 3/2",
+        "D": "y does not have a horizontal asymptote"
+      },
+      "correct_choice": "C",
+      "solution": "The degree of the numerator and denominator is the same (2), so we can determine the horizontal asymptote by dividing the leading coefficients: 3 / 2 = 3/2. Thus, the horizontal asymptote is y = 3/2.",
+      "explanation": "Horizontal asymptotes for functions with equal-degree polynomials in the numerator and denominator are determined by the ratio of their leading coefficients.",
+      "common_mistake_notes": "A common mistake is assuming that there is no horizontal asymptote because the degrees are different, or incorrectly calculating the ratio of leading coefficients."
+    },
+    {
+      "id": "7",
+      "stem": "Evaluate the limit: lim (x -> ∞) [(5x^2 + 3x - 1) / (2x^2 + x)]",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "3/2",
+        "D": "∞"
+      },
+      "correct_choice": "C",
+      "solution": "As x approaches infinity, the highest degree terms dominate the limit: lim (x -> ∞) [(5x^2 / 2x^2) + (3x / x) - (1 / x^2)] = lim (x -> ∞) [5/2 + 3 - 0] = 3.5, or 7/2.",
+      "explanation": "When evaluating limits with polynomials, focus on the terms with the highest degree and ignore lower-degree terms as x approaches infinity.",
+      "common_mistake_notes": "A common mistake is not recognizing that lower-degree terms become insignificant compared to higher-degree terms as x approaches infinity."
+    }
+  ]
+}

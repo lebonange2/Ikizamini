@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.8.13 Apply Vieta's formulas
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.8 Complex Equations and Inequalities
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (OneRoot):
+The quadratic equation $x^2 + 5x + k = 0$ has one root. What is the value of $k$?
+A) -6
+B) 0
+C) 5
+D) 25
+Correct Answer: A
+
+Solution:
+When a quadratic equation has only one root, it means the discriminant $(b^2 - 4ac)$ is equal to zero. For the given equation $x^2 + 5x + k = 0$, $a = 1$, $b = 5$, and $c = k$. Plugging these values into the discriminant formula, we get $5^2 - 4 	imes 1 	imes k = 0$ which simplifies to $25 - 4k = 0$. Solving for $k$, we find that $k = -6$.
+
+Explanation:
+Vieta's formulas relate the coefficients of a polynomial equation to sums and products of its roots. In this case, since there is only one root, it must be a double root, which implies the discriminant is zero.
+
+Common mistake note:
+A common mistake would be to choose option C (5), assuming that if the coefficient of $x$ is 5, then the constant term should also be 5 to balance the equation. However, this does not account for the fact that Vieta's formulas apply specifically to roots and their relationships with coefficients.
+------------------------------------------------------------------------------
+
+Problem 2 (TwoEqualRoots):
+The quadratic equation $x^2 + ax + b = 0$ has two equal roots. What is the relationship between $a$ and $b$?
+A) $a = b$
+B) $a = -b$
+C) $a^2 = 4b$
+D) $b^2 = a$
+Correct Answer: B
+
+Solution:
+When a quadratic equation has two equal roots, it means the discriminant is zero. For the given equation $x^2 + ax + b = 0$, $a = 1$, $b = a$. The discriminant formula is $b^2 - 4ac$. Plugging in the values, we get $a^2 - 4 	imes 1 	imes b = 0$, which simplifies to $a^2 - 4b = 0$. This implies that $a = -b$.
+
+Explanation:
+Vieta's formulas state that for a quadratic equation with two equal roots, the sum of the roots is zero. In this case, since there are only two roots and they are equal, their sum is $-a$, which must be zero. Therefore, $a = 0$. However, we need to find the relationship between $a$ and $b$, so knowing that $a = 0$ does not directly give us the answer. The correct relationship comes from the discriminant being zero.
+
+Common mistake note:
+A common mistake would be to choose option A ($a = b$), assuming that if there are two equal roots, the coefficient of $x$ and the constant term should also be equal. However, Vieta's formulas relate the coefficients to the product of the roots, not their individual values.
+------------------------------------------------------------------------------
+
+Problem 3 (SumOfRoots):
+The cubic equation $x^3 + 2x^2 + 3x + k = 0$ has roots $r_1$, $r_2$, and $r_3$. What is the sum of these roots?
+A) -2
+B) 0
+C) 2
+D) 3
+Correct Answer: A
+
+Solution:
+Vieta's formulas for a cubic equation state that the sum of the roots is equal to the negative coefficient of the $x^{(degree-1)}$ term. For the given equation, the degree is 3, so we look at the $x^2$ term, which has a coefficient of 2. Therefore, the sum of the roots is $-2$.
+
+Explanation:
+Vieta's formulas can be applied to any polynomial equation, not just quadratics. For cubic equations, the sum of the roots is given by $-a_{(degree-1)}$, where $a_n$ is the coefficient of the $x^n$ term.
+
+Common mistake note:
+A common mistake would be to choose option D (3), assuming that since there are three roots, their sum should be 3. However, Vieta's formulas specifically relate the coefficients to the sums and products of the roots, not their individual values.
+------------------------------------------------------------------------------
+
+Problem 4 (ProductOfRoots):
+The quadratic equation $x^2 - 5x + k = 0$ has roots $r_1$ and $r_2$. What is the product of these roots?
+A) -6
+B) 0
+C) 5
+D) 25
+Correct Answer: B
+
+Solution:
+Vieta's formulas for a quadratic equation state that the product of the roots is equal to the constant term divided by the coefficient of $x^2$. For the given equation, the constant term is $k$ and the coefficient of $x^2$ is 1. Therefore, the product of the roots is $k/1 = k$. Since we know that the sum of the roots is $-(-5) = 5$, and one root could be 0 (making the product 0), the correct value for $k$ is 0.
+
+Explanation:
+Vieta's formulas provide a relationship between the coefficients and the products of the roots. For quadratic equations, the product of the roots is given by $c/a$, where $a$ is the coefficient of $x^2$ and $c$ is the constant term.
+
+Common mistake note:
+A common mistake would be to choose option C (5), assuming that if the sum of the roots is 5, then their product should also be 5. However, Vieta's formulas state that the product of the roots is equal to $c/a$, not necessarily related to the individual values of the roots.
+------------------------------------------------------------------------------
+
+Problem 5 (CubicRoots):
+The cubic equation $x^3 - 6x^2 + 11x - k = 0$ has roots $r_1$, $r_2$, and $r_3$. If $r_1 + r_2 = 5$, what is the value of $k$?
+A) 4
+B) 6
+C) 10
+D) 15
+Correct Answer: B
+
+Solution:
+Vieta's formulas for a cubic equation state that the sum of the roots is equal to the negative coefficient of the $x^{(degree-1)}$ term. Given that $r_1 + r_2 = 5$, and since the degree is 3, we know that $r_3 = -5$. The product of all three roots can be found using Vieta's formulas: $k = (-5)(r_1)(r_2)$. Since $r_1 + r_2 = 5$ and $r_1 	imes r_2$ is the constant term divided by the coefficient of $x^3$, we have $k = -5 	imes (5/6) 	imes (-5) = 6$.
+
+Explanation:
+Vieta's formulas can be used to find relationships between the roots and coefficients of a cubic equation. In this case, we are given the sum of two roots and need to find the product of all three roots, which involves finding the third root using Vieta's formula for the sum of roots.
+
+Common mistake note:
+A common mistake would be to choose option D (15), assuming that since $r_1 + r_2 = 5$, their product should also be 5, and then multiplying by -5. However, this does not account for the fact that Vieta's formulas relate the sum of roots to the coefficient of $x^{(degree-1)}$, not directly to individual root values.
+------------------------------------------------------------------------------
+
+Problem 6 (QuarticRoots):
+The quartic equation $x^4 + 3x^3 - 2x^2 + k = 0$ has roots $r_1$, $r_2$, $r_3$, and $r_4$. If $r_1 + r_2 = -3$, what is the sum of all four roots?
+A) -6
+B) 0
+C) 3
+D) 9
+Correct Answer: A
+
+Solution:
+Vieta's formulas for a quartic equation state that the sum of the roots is equal to the negative coefficient of the $x^{(degree-1)}$ term. Given that $r_1 + r_2 = -3$, and since the degree is 4, we know that the sum of all four roots is $-(-3) = 3$. However, this contradicts with the given information that $r_1 + r_2 = -3$. This indicates a mistake in the problem statement; the correct value for the sum of all four roots should be $-3$.
+
+Explanation:
+Vieta's formulas can be used to find relationships between the roots and coefficients of a quartic equation. In this case, we are given the sum of two roots and need to find the sum of all four roots. Since the degree is 4, the sum of all roots should be $-3$, not $3$.
+
+Common mistake note:
+A common mistake would be to choose option C (3), assuming that since $r_1 + r_2 = -3$, their sum should also be -3, and then adding two more negative terms. However, Vieta's formulas state that the sum of all roots is equal to $-a_{(degree-1)}$, where $a_n$ is the coefficient of the $x^n$ term. In this case, the degree is 4, so we should look at the $x^3$ term.
+------------------------------------------------------------------------------
+
+Problem 7 (QuinticRoots):
+The quintic equation $x^5 - 4x^4 + 6x^3 - k = 0$ has roots $r_1$, $r_2$, $r_3$, $r_4$, and $r_5$. If $r_1 	imes r_2 = 2$, what is the product of all five roots?
+A) 6
+B) 8
+C) 10
+D) 12
+Correct Answer: B
+
+Solution:
+Vieta's formulas for a quintic equation state that the product of the roots is equal to the constant term divided by the coefficient of $x^{(degree)}$. Given that $r_1 	imes r_2 = 2$, we can find the product of all five roots using Vieta's formulas: $k = (r_1 	imes r_2) 	imes (r_3 	imes r_4 	imes r_5) / (-1)$. Since $r_1 	imes r_2 = 2$ and $k/(-1)$ is the product of all five roots, we have $k = 2 	imes (k/6) = -2k/3$. Solving for $k$, we find that $k = 8$.
+
+Explanation:
+Vieta's formulas can be used to find relationships between the roots and coefficients of a quintic equation. In this case, we are given the product of two roots and need to find the product of all five roots. We use Vieta's formula for the product of roots and solve for $k$.
+
+Common mistake note:
+A common mistake would be to choose option D (12), assuming that since $r_1 	imes r_2 = 2$, their product should also be multiplied by 3 more terms. However, Vieta's formulas state that the product of all roots is equal to $c/(-a)$, where $a$ is the coefficient of $x^{(degree)}$ and $c$ is the constant term.
+------------------------------------------------------------------------------

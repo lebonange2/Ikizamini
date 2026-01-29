@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.15.5 Apply to error detection/correction
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.15 Applications of Discrete Mathematics
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf1234):
+A communication system uses a Hamming code for error correction. The received message is '1010110'. If there is only one bit error, which of the following could be the original message?
+A) 1010101
+B) 1010111
+C) 1011110
+D) 1110110
+Correct Answer: A
+
+Solution:
+The Hamming code is used for error detection and correction by adding parity bits. To correct a single- bit error, we can compare the received message with its syndrome (the result of XORing each bit with its parity bits). If there's only one error, the syndrome will be the position of the incorrect bit. In this case, the syndrome is 100 (for positions 2 and 3), indicating an error in the second bit. So we flip the second bit to get the original message: '1010101'.
+
+Explanation:
+Hamming codes are designed to detect and correct single-bit errors by using parity bits. By comparing the received message with its syndrome, we can identify the position of the error and correct it.
+
+Common mistake note:
+A common mistake is assuming that any one-bit change in the received message would be a valid original message. However, Hamming codes are designed to specifically correct single-bit errors, not arbitrary changes.
+------------------------------------------------------------------------------
+
+Problem 2 (Bvgh5678):
+In an error-correcting code with 4 data bits and 2 parity bits, how many bit errors can the code detect and correct?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: B
+
+Solution:
+A Hamming code with 4 data bits and 2 parity bits can detect up to 2 errors, but it's designed to correct only a single error. Therefore, it can detect and correct 1 bit error.
+
+Explanation:
+Hamming codes provide a specific number of error detection and correction capabilities based on the number of data and parity bits used. In this case, with 4 data bits and 2 parity bits, we have enough information to detect up to 2 errors but can only correct one.
+
+Common mistake note:
+A common mistake is thinking that because the code can detect up to 2 errors, it can also correct 2 errors. However, Hamming codes are designed to correct only a single error while detecting more.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer9012):
+Which of the following error- correcting codes has the highest error correction capability for a given number of data bits?
+A) Reed-Solomon code
+B) Parity bit
+C) CRC (Cyclic Redundancy Check)
+D) Hamming code
+Correct Answer: A
+
+Solution:
+Reed-Solomon codes are known for their ability to correct multiple errors, making them the most efficient error-correcting code when considering error correction capability per data bit. However, they are computationally more complex than other options.
+
+Explanation:
+Reed-Solomon codes provide a higher error correction capability compared to parity bits, CRC, and basic Hamming codes for a given number of data bits. They can correct up to half the number of parity bits in the code, making them suitable for applications with high error rates.
+
+Common mistake note:
+A common mistake is selecting a simpler or more familiar error-correcting code like parity bits or CRC, which have lower error correction capabilities compared to Reed-Solomon codes.
+------------------------------------------------------------------------------
+
+Problem 4 (Zxcv3456):
+In an (7, 4) Hamming code, how many check bits are used?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: B
+
+Solution:
+An (n, k) Hamming code uses n - k parity bits. In a (7, 4) code, there are 7 total bits and 4 data bits, so 7 - 4 = 3 parity bits. However, only 2 of these are used for error correction, as the third is used for error detection.
+
+Explanation:
+The number of check bits in a Hamming code can be calculated by subtracting the number of data bits (k) from the total number of bits (n). In this case, n = 7 and k = 4, so there are 3 parity bits. But only 2 of them are used for error correction.
+
+Common mistake note:
+A common mistake is confusing the total number of parity bits with those specifically used for error correction. In a (7, 4) Hamming code, there are 3 parity bits, but only 2 are used to correct errors.
+------------------------------------------------------------------------------
+
+Problem 5 (Sdfg6789):
+What is the main advantage of using forward error correction (FEC) over backward error correction (BEC)?
+A) FEC requires less bandwidth
+B) BEC is more efficient in correcting errors
+C) FEC can correct errors before they occur
+D) Both FEC and BEC have the same advantage
+Correct Answer: C
+
+Solution:
+Forward error correction (FEC) encodes data with additional redundancy that allows the receiver to detect and correct errors without needing feedback from the sender. This enables error correction in real-time, before the errors can affect the received data.
+
+Explanation:
+The main advantage of FEC over BEC is its proactive nature: it corrects errors as they occur, whereas BEC relies on detecting errors after transmission and requesting retransmission of the affected data. FEC is particularly useful in situations where feedback is not possible or delays are undesirable.
+
+Common mistake note:
+A common mistake is thinking that BEC is more efficient in correcting errors, but it actually operates reactively and may require additional communication overhead for error recovery.
+------------------------------------------------------------------------------
+
+Problem 6 (Xyza0123):
+In a convolutional code with a constraint length of 7, what is the maximum number of consecutive bit errors that can be corrected?
+A) 1
+B) 3
+C) 6
+D) 7
+Correct Answer: B
+
+Solution:
+The maximum number of consecutive bit errors that a convolutional code can correct is determined by its constraint length (K). In this case, with a constraint length of 7, the code can correct up to K - 1 = 6 - 1 = 5 consecutive errors. However, since we're looking for the maximum number of errors that can be corrected, which includes non-consecutive errors as well, the answer is one less than this value: 4.
+
+Explanation:
+The constraint length of a convolutional code determines its error correction capability. It can correct up to K - 1 consecutive errors, where K is the constraint length. However, when considering all types of errors (not just consecutive), the maximum number of errors that can be corrected is one less than this value.
+
+Common mistake note:
+A common mistake is confusing the constraint length with the actual error correction capability for non-consecutive errors. The correct answer takes into account that non-consecutive errors can also be corrected, reducing the maximum count by 1.
+------------------------------------------------------------------------------
+
+Problem 7 (Bnmh4567):
+Which of the following techniques is used to detect but not correct errors in data transmission?
+A) Parity check
+B) Error-correcting codes (ECC)
+C) Cyclic Redundancy Check (CRC)
+D) Forward Error Correction (FEC)
+Correct Answer: A
+
+Solution:
+Parity checks are simple techniques that add a single bit to a data word, ensuring the total number of 1s is even or odd. This allows detecting an odd number of errors but does not provide enough information to correct them.
+
+Explanation:
+Parity checks are used for error detection only and do not have the capability to correct errors. They are less complex than other techniques like ECC, CRC, or FEC, which can both detect and correct errors.
+
+Common mistake note:
+A common mistake is selecting a technique that provides both error detection and correction, such as CRC or ECC. Parity checks are specifically designed for detecting errors without correcting them.
+------------------------------------------------------------------------------

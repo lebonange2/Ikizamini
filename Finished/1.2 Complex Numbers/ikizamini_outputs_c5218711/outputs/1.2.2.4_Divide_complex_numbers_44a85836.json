@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.2.4",
+  "objective_text": "Divide complex numbers",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the result of dividing (3 + 4i) by (1 + 2i)?",
+      "choices": {
+        "A": "(5 - 2i)",
+        "B": "(7 + i)",
+        "C": "(1 - 2i)",
+        "D": "(5 + 2i)"
+      },
+      "correct_choice": "D",
+      "solution": "(3 + 4i) / (1 + 2i) = (3 + 4i)(1 - 2i) / (1 + 2i)(1 - 2i) = (3 - 6i + 4i - 8i^2) / (1 - 4i^2) = (3 - 2i - 8(-1)) / (1 + 4) = (5 - 2i) / 5 = (5 + 2i)",
+      "explanation": "We used the conjugate of the denominator to rationalize the expression and then simplified.",
+      "common_mistake_notes": "A common mistake is to forget to multiply both terms in the numerator by the conjugate, leading to an incorrect result."
+    },
+    {
+      "id": "2",
+      "stem": "What is the quotient when (8 - 5i) is divided by (4 + i)?",
+      "choices": {
+        "A": "(3 - 7i)",
+        "B": "(1 - 3i)",
+        "C": "(3 + 7i)",
+        "D": "(1 + 3i)"
+      },
+      "correct_choice": "A",
+      "solution": "(8 - 5i) / (4 + i) = (8 - 5i)(4 - i) / (4 + i)(4 - i) = (32 - 8i - 20i + 5i^2) / (16 - 4i^2) = (32 - 28i - 5(-1)) / (16 + 4) = (27 - 28i) / 20 = (3 - 7i)",
+      "explanation": "We used the conjugate of the denominator to rationalize the expression and then simplified.",
+      "common_mistake_notes": "A common mistake is to incorrectly distribute the terms in the numerator, resulting in a different answer."
+    },
+    {
+      "id": "3",
+      "stem": "Divide (2 + 3i) by (1 - i). What is the result?",
+      "choices": {
+        "A": "(5 + i)",
+        "B": "(1 + 5i)",
+        "C": "(5 - i)",
+        "D": "(1 - 5i)"
+      },
+      "correct_choice": "A",
+      "solution": "(2 + 3i) / (1 - i) = (2 + 3i)(1 + i) / (1 - i)(1 + i) = (2 + 2i + 3i + 3i^2) / (1 - i^2) = (2 + 5i - 3(-1)) / (1 + 1) = (5 + 5i) / 2 = (5 + i)",
+      "explanation": "We used the conjugate of the denominator to rationalize the expression and then simplified.",
+      "common_mistake_notes": "A common mistake is to forget to multiply both terms in the numerator by the conjugate, leading to an incorrect result."
+    },
+    {
+      "id": "4",
+      "stem": "Find the quotient when (6 - 8i) is divided by (2 + 3i):",
+      "choices": {
+        "A": "(10 + 2i)",
+        "B": "(2 + 10i)",
+        "C": "(10 - 2i)",
+        "D": "(2 - 10i)"
+      },
+      "correct_choice": "B",
+      "solution": "(6 - 8i) / (2 + 3i) = (6 - 8i)(2 - 3i) / (2 + 3i)(2 - 3i) = (12 - 16i - 18i + 24i^2) / (4 - 9i^2) = (12 - 34i - 24(-1)) / (4 + 9) = (-12 - 34i) / 13 = (2 + 10i)",
+      "explanation": "We used the conjugate of the denominator to rationalize the expression and then simplified.",
+      "common_mistake_notes": "A common mistake is to incorrectly distribute the terms in the numerator, resulting in a different answer."
+    },
+    {
+      "id": "5",
+      "stem": "What is the quotient when (4 + 7i) is divided by (1 + i)?",
+      "choices": {
+        "A": "(3 - 4i)",
+        "B": "(3 + 4i)",
+        "C": "(1 - 3i)",
+        "D": "(1 + 3i)"
+      },
+      "correct_choice": "B",
+      "solution": "(4 + 7i) / (1 + i) = (4 + 7i)(1 - i) / (1 + i)(1 - i) = (4 - 4i + 7i - 7i^2) / (1 - i^2) = (4 + 3i - 7(-1)) / (1 + 1) = (11 + 3i) / 2 = (3 + 4i)",
+      "explanation": "We used the conjugate of the denominator to rationalize the expression and then simplified.",
+      "common_mistake_notes": "A common mistake is to forget to multiply both terms in the numerator by the conjugate, leading to an incorrect result."
+    },
+    {
+      "id": "6",
+      "stem": "Divide (7 - 3i) by (2 + i). What is the result?",
+      "choices": {
+        "A": "(10 - 5i)",
+        "B": "(5 - 10i)",
+        "C": "(10 + 5i)",
+        "D": "(5 + 10i)"
+      },
+      "correct_choice": "A",
+      "solution": "(7 - 3i) / (2 + i) = (7 - 3i)(2 - i) / (2 + i)(2 - i) = (14 - 7i - 6i + 3i^2) / (4 - i^2) = (14 - 13i - 3(-1)) / (4 + 1) = (17 - 13i) / 5 = (10 - 5i)",
+      "explanation": "We used the conjugate of the denominator to rationalize the expression and then simplified.",
+      "common_mistake_notes": "A common mistake is to incorrectly distribute the terms in the numerator, resulting in a different answer."
+    },
+    {
+      "id": "7",
+      "stem": "Find the quotient when (9 - 4i) is divided by (3 + i):",
+      "choices": {
+        "A": "(5 - 2i)",
+        "B": "(5 + 2i)",
+        "C": "(2 - 5i)",
+        "D": "(2 + 5i)"
+      },
+      "correct_choice": "B",
+      "solution": "(9 - 4i) / (3 + i) = (9 - 4i)(3 - i) / (3 + i)(3 - i) = (27 - 9i - 12i + 4i^2) / (9 - i^2) = (27 - 21i - 4(-1)) / (9 + 1) = (31 - 21i) / 10 = (5 + 2i)",
+      "explanation": "We used the conjugate of the denominator to rationalize the expression and then simplified.",
+      "common_mistake_notes": "A common mistake is to forget to multiply both terms in the numerator by the conjugate, leading to an incorrect result."
+    }
+  ]
+}

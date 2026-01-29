@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.13.2",
+  "objective_text": "Identify spheres: x² + y² + z² = r²",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the equation of a sphere with radius 5 centered at the origin?",
+      "choices": {
+        "A": "(x - 5)² + (y - 5)² + (z - 5)² = 25",
+        "B": "x² + y² + z² = 25",
+        "C": "(x + 5)² + (y + 5)² + (z + 5)² = 25",
+        "D": "x² + y² + z² = 5"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a sphere centered at the origin with radius r is x² + y² + z² = r². In this case, r = 5.",
+      "explanation": "This question tests understanding of the standard form of a sphere's equation.",
+      "common_mistake_notes": "Common mistake: Choosing A or C because they include the center (0, 0, 0) but have an incorrect radius. Remember that the origin has coordinates (0, 0, 0), not (5, 5, 5)."
+    },
+    {
+      "id": "2",
+      "stem": "Find the radius of a sphere given by the equation x² + y² + z² = 36.",
+      "choices": {
+        "A": "9",
+        "B": "6",
+        "C": "18",
+        "D": "3"
+      },
+      "correct_choice": "B",
+      "solution": "The radius r can be found by taking the square root of both sides of the equation: √(x² + y² + z²) = √36, which gives us r = 6.",
+      "explanation": "This question tests the ability to extract the radius from a sphere's equation.",
+      "common_mistake_notes": "Common mistake: Choosing A or C because they are multiples of 36 but do not represent the square root. Remember that the radius is the value inside the square root."
+    },
+    {
+      "id": "3",
+      "stem": "Which of the following represents a sphere with radius 4 and centered at (2, 3, -1)?",
+      "choices": {
+        "A": "(x + 2)² + (y + 3)² + (z - 1)² = 16",
+        "B": "(x - 2)² + (y - 3)² + (z + 1)² = 16",
+        "C": "x² + y² + z² = 4",
+        "D": "(x - 2)² + (y - 3)² + (z - 1)² = 16"
+      },
+      "correct_choice": "D",
+      "solution": "The sphere is centered at (2, 3, -1), so the equation should have x - 2, y - 3, and z - 1 in it. The radius is given as 4, so r² = 16.",
+      "explanation": "This question tests the application of the sphere's equation to a specific center point.",
+      "common_mistake_notes": "Common mistake: Choosing A or B because they have the incorrect signs for the center coordinates. Remember that subtracting the center coordinates from x, y, and z is used in the equation."
+    },
+    {
+      "id": "4",
+      "stem": "What is the standard form of a sphere's equation?",
+      "choices": {
+        "A": "(x - h)² + (y - k)² + (z - l)² = r²",
+        "B": "x² + y² + z² = r",
+        "C": "r = √(x² + y² + z²)",
+        "D": "h² + k² + l² = r²"
+      },
+      "correct_choice": "A",
+      "solution": "The standard form of a sphere's equation is (x - h)² + (y - k)² + (z - l)² = r², where (h, k, l) is the center and r is the radius.",
+      "explanation": "This question tests knowledge of the general form of a sphere's equation.",
+      "common_mistake_notes": "Common mistake: Choosing B because it omits the center coordinates. Remember that the standard form includes the center point (h, k, l)."
+    },
+    {
+      "id": "5",
+      "stem": "Find the center and radius of the sphere given by the equation 9(x - 1)² + 25(y + 3)² + 4(z - 2)² = 100.",
+      "choices": {
+        "A": "Center: (1, -3, 2), Radius: 10",
+        "B": "Center: (-1, 3, -2), Radius: 10",
+        "C": "Center: (1, -3, 2), Radius: √(9 + 25 + 4)",
+        "D": "Center: (1, -3, 2), Radius: 5"
+      },
+      "correct_choice": "D",
+      "solution": "Divide both sides by the coefficients to get standard form: (x - 1)² + (y + 3)² + (z - 2)² = 10/9 + 4/25 + 1/4. The center is (1, -3, 2), and the radius is √(10/9 + 4/25 + 1/4) = 5.",
+      "explanation": "This question tests the ability to rearrange a sphere's equation into standard form.",
+      "common_mistake_notes": "Common mistake: Choosing A or B because they have the incorrect center coordinates. Remember to divide by the coefficients to isolate (x - h), (y - k), and (z - l)."
+    },
+    {
+      "id": "6",
+      "stem": "Which of the following equations represents a sphere that does not intersect the xy-plane?",
+      "choices": {
+        "A": "x² + y² + z² = 1",
+        "B": "x² + y² + z = 1",
+        "C": "x² + y² = 1",
+        "D": "x² + z² = 1"
+      },
+      "correct_choice": "C",
+      "solution": "A sphere that does not intersect the xy-plane must have z ≠ 0. The equation x² + y² = 1 represents a circle in the xy-plane, and thus does not intersect it.",
+      "explanation": "This question tests understanding of how a sphere's intersection with planes affects its equation.",
+      "common_mistake_notes": "Common mistake: Choosing A because it might seem like a valid sphere. However, it still intersects the xy-plane at z = 0. Remember that if z² is not present in the equation, there is no intersection."
+    },
+    {
+      "id": "7",
+      "stem": "Find the equation of a sphere with center (3, -2, 1) and passing through the point (5, -4, 2).",
+      "choices": {
+        "A": "(x - 3)² + (y + 2)² + (z - 1)² = 2",
+        "B": "x² + y² + z² = 2",
+        "C": "(x - 3)² + (y + 2)² + (z - 1)² = 6",
+        "D": "(x - 5)² + (y + 4)² + (z - 2)² = 6"
+      },
+      "correct_choice": "C",
+      "solution": "The distance from the center to a point on the sphere is equal to the radius. Using the distance formula, we get √((5 - 3)² + (-4 + 2)² + (2 - 1)²) = √(4 + 4 + 1) = √9 = 3. The equation of the sphere is thus (x - 3)² + (y + 2)² + (z - 1)² = 3².",
+      "explanation": "This question tests finding a sphere's equation given its center and a point it passes through.",
+      "common_mistake_notes": "Common mistake: Choosing A because it has the correct center but an incorrect radius. Remember to calculate the distance from the center to the point, which gives the radius."
+    }
+  ]
+}

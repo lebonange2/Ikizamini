@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.7.1",
+  "objective_text": "Understand antiderivatives",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "The Basics of Antiderivatives",
+      "stem": "Find the antiderivative of f(x) = 3x^2.",
+      "choices": {
+        "A": "x^3 + C",
+        "B": "6x + C",
+        "C": "9x^3 + C",
+        "D": "1/3x^3 + C"
+      },
+      "correct_choice": "A",
+      "solution": "The antiderivative of 3x^2 is found by applying the power rule: (x^(n+1))/(n+1). For n=2, this gives us x^3/3. Adding the constant of integration C, we get x^3 + C.",
+      "explanation": "The power rule for antiderivatives states that the antiderivative of x^n is x^(n+1)/(n+1), with a constant of integration C.",
+      "common_mistake_notes": "A common mistake is to forget the constant of integration (C) or apply the power rule incorrectly."
+    },
+    {
+      "id": "Combining Antiderivatives",
+      "stem": "Find the antiderivative of f(x) = 2x + 5.",
+      "choices": {
+        "A": "x^2 + 5x + C",
+        "B": "x^2 + 5C",
+        "C": "2x^2 + 5x + C",
+        "D": "2x^2 + 5C"
+      },
+      "correct_choice": "A",
+      "solution": "The antiderivative of a sum is the sum of the antiderivatives. For f(x) = 2x + 5, we get x^2 for 2x and 5x for the constant term. Adding C gives us x^2 + 5x + C.",
+      "explanation": "This question tests combining antiderivatives of multiple terms in a function.",
+      "common_mistake_notes": "A common mistake is to apply the power rule incorrectly to the constant or forget that the constant multiplier affects only the first term."
+    },
+    {
+      "id": "Antiderivative of Trigonometric Functions",
+      "stem": "Find the antiderivative of f(x) = sin(x).",
+      "choices": {
+        "A": "-cos(x) + C",
+        "B": "cos(x) + C",
+        "C": "sin(x) + C",
+        "D": "tan(x) + C"
+      },
+      "correct_choice": "A",
+      "solution": "The antiderivative of sin(x) is -cos(x), using the fundamental theorem of calculus and the derivative of cos(x). Adding C gives us -cos(x) + C.",
+      "explanation": "This question assesses knowledge of antiderivatives for trigonometric functions.",
+      "common_mistake_notes": "A common mistake is to forget the negative sign from the derivative of cosine."
+    },
+    {
+      "id": "Antiderivative of Exponential Functions",
+      "stem": "Find the antiderivative of f(x) = e^x.",
+      "choices": {
+        "A": "e^x + C",
+        "B": "ln(e^x) + C",
+        "C": "1/e^x + C",
+        "D": "xe^x + C"
+      },
+      "correct_choice": "A",
+      "solution": "The antiderivative of e^x is simply e^x, multiplied by the constant of integration C.",
+      "explanation": "This question tests understanding of antiderivatives for exponential functions.",
+      "common_mistake_notes": "A common mistake is to apply logarithmic rules or multiply by x unnecessarily."
+    },
+    {
+      "id": "Antiderivative of a Polynomial with Multiple Variables",
+      "stem": "Find the antiderivative of f(x) = 4x^3 + 2x^2 - 7x + 1.",
+      "choices": {
+        "A": "x^4 + x^3 - 7/2x^2 + x + C",
+        "B": "4x^4 + 2x^3 - 7x^2 + x + C",
+        "C": "x^4 + x^3 - 7/2x^2 + C",
+        "D": "4x^4 + 2x^3 - 7x^2 + C"
+      },
+      "correct_choice": "A",
+      "solution": "Applying the power rule to each term: (4/4)x^(3+1) + (2/3)x^(2+1) - (7/2)x^(1+1) + x + C = x^4 + x^3 - 7/2x^2 + x + C.",
+      "explanation": "This question tests handling multiple variables and exponents in a polynomial antiderivative.",
+      "common_mistake_notes": "A common mistake is to forget to divide by the exponent plus one."
+    },
+    {
+      "id": "Antiderivative of a Rational Function",
+      "stem": "Find the antiderivative of f(x) = 1/(x^2 + 1).",
+      "choices": {
+        "A": "arctan(x) + C",
+        "B": "tan^-1(x) + C",
+        "C": "ln|x^2 + 1| + C",
+        "D": "x/(x^2 + 1) + C"
+      },
+      "correct_choice": "A",
+      "solution": "The antiderivative of 1/(x^2 + 1) is arctan(x) or tan^-1(x), multiplied by dx, plus C.",
+      "explanation": "This question assesses knowledge of antiderivatives for rational functions involving x^2 + 1.",
+      "common_mistake_notes": "A common mistake is to confuse the derivative and antiderivative of arctan(x)."
+    },
+    {
+      "id": "Antiderivative of a Logarithmic Function",
+      "stem": "Find the antiderivative of f(x) = ln(x).",
+      "choices": {
+        "A": "xln(x) - x + C",
+        "B": "x(ln(x) - 1) + C",
+        "C": "x(ln(x) + 1) + C",
+        "D": "x(ln(x)) + C"
+      },
+      "correct_choice": "B",
+      "solution": "Integrating xln(x) gives us x(ln(x) - 1) + C, using integration by substitution or the derivative rule.",
+      "explanation": "This question tests understanding of antiderivatives for logarithmic functions.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by x before applying the derivative rule."
+    }
+  ]
+}

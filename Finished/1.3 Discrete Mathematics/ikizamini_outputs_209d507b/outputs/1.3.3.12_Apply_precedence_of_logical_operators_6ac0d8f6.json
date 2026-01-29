@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.3.12",
+  "objective_text": "Apply precedence of logical operators",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "InfixOrder1",
+      "stem": "What is the result of the expression `true && false || true`?",
+      "choices": {
+        "A": "false",
+        "B": "true",
+        "C": "null",
+        "D": "undefined"
+      },
+      "correct_choice": "B",
+      "solution": "The logical AND operator (`&&`) has higher precedence than the logical OR operator (`||`). First, `true && false` evaluates to `false`, then `false || true` evaluates to `true`. So the result is `true`.",
+      "explanation": "Precedence rules determine the order of evaluation in an expression. In this case, the AND operation is performed before the OR operation.",
+      "common_mistake_notes": "A common mistake would be to evaluate left-to-right without considering operator precedence, which would lead to selecting 'A: false'."
+    },
+    {
+      "id": "InfixOrder2",
+      "stem": "What is the result of the expression `false || true && false`?",
+      "choices": {
+        "A": "true",
+        "B": "false",
+        "C": "null",
+        "D": "undefined"
+      },
+      "correct_choice": "B",
+      "solution": "The logical OR operator (`||`) has lower precedence than the logical AND operator (`&&`). First, `true && false` evaluates to `false`, then `false || false` evaluates to `false`. So the result is `false`.",
+      "explanation": "Operator precedence governs the sequence of operations. In this case, the OR operation happens after the AND operation.",
+      "common_mistake_notes": "A common mistake would be to evaluate right-to-left without considering operator precedence, which would lead to selecting 'A: true'."
+    },
+    {
+      "id": "ParenthesesOrder",
+      "stem": "What is the result of the expression `(true && false) || true`?",
+      "choices": {
+        "A": "false",
+        "B": "true",
+        "C": "null",
+        "D": "undefined"
+      },
+      "correct_choice": "B",
+      "solution": "The parentheses group the `true && false` part, so it's evaluated first as `false`. Then `false || true` evaluates to `true`. So the result is `true`.",
+      "explanation": "Parentheses can be used to override operator precedence and force specific parts of an expression to be evaluated first.",
+      "common_mistake_notes": "A common mistake would be to assume that the parentheses don't change the order of evaluation, which would lead to selecting 'A: false'."
+    },
+    {
+      "id": "PrefixOrder1",
+      "stem": "What is the result of the expression `!true && !false`?",
+      "choices": {
+        "A": "true",
+        "B": "false",
+        "C": "null",
+        "D": "undefined"
+      },
+      "correct_choice": "B",
+      "solution": "The logical NOT operator (`!`) has higher precedence than the logical AND operator (`&&`). First, `!true` evaluates to `false`, then `false && !false` evaluates to `false`. So the result is `false`.",
+      "explanation": "Operator precedence applies to both prefix and infix operators. In this case, the NOT operation happens before the AND operation.",
+      "common_mistake_notes": "A common mistake would be to evaluate left-to-right without considering operator precedence, which would lead to selecting 'A: true'."
+    },
+    {
+      "id": "PrefixOrder2",
+      "stem": "What is the result of the expression `!false || !true`?",
+      "choices": {
+        "A": "true",
+        "B": "false",
+        "C": "null",
+        "D": "undefined"
+      },
+      "correct_choice": "A",
+      "solution": "The logical NOT operator (`!`) has higher precedence than the logical OR operator (`||`). First, `!false` evaluates to `true`, then `true || !true` evaluates to `true`. So the result is `true`.",
+      "explanation": "Operator precedence applies to both prefix and infix operators. In this case, the NOT operation happens before the OR operation.",
+      "common_mistake_notes": "A common mistake would be to evaluate right-to-left without considering operator precedence, which would lead to selecting 'B: false'."
+    },
+    {
+      "id": "MixedOrder",
+      "stem": "What is the result of the expression `!true && (false || true)`?",
+      "choices": {
+        "A": "true",
+        "B": "false",
+        "C": "null",
+        "D": "undefined"
+      },
+      "correct_choice": "B",
+      "solution": "The logical NOT operator (`!`) has higher precedence than the logical AND operator (`&&`). First, `!true` evaluates to `false`. The parentheses group the `false || true` part, which evaluates to `true`. Then `false && true` evaluates to `false`. So the result is `false`.",
+      "explanation": "Operator precedence and parentheses can be combined in expressions. In this case, the NOT operation happens first, followed by the OR within parentheses, and finally the AND operation.",
+      "common_mistake_notes": "A common mistake would be to evaluate without considering operator precedence or the effect of parentheses, which could lead to selecting 'A: true'."
+    },
+    {
+      "id": "MixedOrder2",
+      "stem": "What is the result of the expression `(true && !false) || (false && !true)`?",
+      "choices": {
+        "A": "true",
+        "B": "false",
+        "C": "null",
+        "D": "undefined"
+      },
+      "correct_choice": "A",
+      "solution": "The parentheses group the expressions, and within each group, the NOT operator has higher precedence than the AND operator. The first group evaluates to `true`, and the second group evaluates to `false`. Then `true || false` evaluates to `true`. So the result is `true`.",
+      "explanation": "Operator precedence and parentheses can be combined in expressions. In this case, each set of parentheses contains a NOT operation followed by an AND operation, with the OR operation happening last.",
+      "common_mistake_notes": "A common mistake would be to evaluate without considering operator precedence or the effect of parentheses, which could lead to selecting 'B: false'."
+    }
+  ]
+}

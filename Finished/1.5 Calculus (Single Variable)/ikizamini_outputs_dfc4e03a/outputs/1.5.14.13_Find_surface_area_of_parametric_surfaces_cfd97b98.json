@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.14.13",
+  "objective_text": "Find surface area of parametric surfaces",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "What is the surface area of a sphere with radius 3 units?",
+      "stem": "The surface area A of a sphere can be found using the formula: A = 4 πr^2, where r is the radius. Given a sphere with radius 3 units, what is its surface area? Choose the correct answer.",
+      "choices": {
+        "A": "36π",
+        "B": "18π",
+        "C": "54π",
+        "D": "72π"
+      },
+      "correct_choice": "A",
+      "solution": "The surface area of a sphere with radius 3 units is calculated as A = 4 π(3)^2 = 36π.",
+      "explanation": "To find the surface area, substitute the given radius into the formula and calculate the result.",
+      "common_mistake_notes": "A common mistake would be to forget to square the radius or to use the wrong value for π."
+    },
+    {
+      "id": "Find the surface area of a parametric surface",
+      "stem": "The parametric equations for a surface are x = t^2, y = 2t, z = t. What is the surface area when t ranges from 1 to 3? Choose the correct answer.",
+      "choices": {
+        "A": "4π",
+        "B": "8π",
+        "C": "16π",
+        "D": "24π"
+      },
+      "correct_choice": "B",
+      "solution": "The surface area of a parametric surface can be found using the formula: dS = π雯(xyz')dt. For x = t^2, y = 2t, and z = t, we have xyz' = 6t^2. Integrating from t=1 to t=3 gives the surface area: A = π雯(6t^2)dt|_1^3 = 8π.",
+      "explanation": "Calculate the product of x, y, and z derivatives with respect to t, then integrate over the given range.",
+      "common_mistake_notes": "A common mistake would be to integrate the wrong function or not apply the correct limits."
+    },
+    {
+      "id": "Surface area of a cylinder",
+      "stem": "Find the surface area of a right circular cylinder with radius 2 units and height 5 units. Choose the correct answer.",
+      "choices": {
+        "A": "40π",
+        "B": "64π",
+        "C": "80π",
+        "D": "96π"
+      },
+      "correct_choice": "A",
+      "solution": "The surface area A of a cylinder is given by: A = 2πrh + 2πr^2, where r is the radius and h is the height. For a cylinder with radius 2 units and height 5 units, we have A = 2π(2)(5) + 2π(2)^2 = 40π.",
+      "explanation": "Use the formula for the surface area of a cylinder, substituting the given radius and height.",
+      "common_mistake_notes": "A common mistake would be to forget to add the areas of the two circular ends."
+    },
+    {
+      "id": "Surface area of a cone",
+      "stem": "Find the surface area of a right circular cone with radius 4 units and slant height 5 units. Choose the correct answer.",
+      "choices": {
+        "A": "24π",
+        "B": "32π",
+        "C": "48π",
+        "D": "64π"
+      },
+      "correct_choice": "B",
+      "solution": "The surface area A of a cone is given by: A = πrl + πr^2, where r is the radius and l is the slant height. For a cone with radius 4 units and slant height 5 units, we have A = π(4)(5) + π(4)^2 = 32π.",
+      "explanation": "Use the formula for the surface area of a cone, substituting the given radius and slant height.",
+      "common_mistake_notes": "A common mistake would be to use the wrong formula or not include the lateral area."
+    },
+    {
+      "id": "Surface area of a torus",
+      "stem": "Find the surface area of a torus with major radius 6 units and minor radius 2 units. Choose the correct answer.",
+      "choices": {
+        "A": "48π^2",
+        "B": "96π^2",
+        "C": "144π^2",
+        "D": "192π^2"
+      },
+      "correct_choice": "B",
+      "solution": "The surface area A of a torus is given by: A = 4π^2(r^2 + R^2), where r is the minor radius and R is the major radius. For a torus with major radius 6 units and minor radius 2 units, we have A = 4π^2(2^2 + 6^2) = 96π^2.",
+      "explanation": "Use the formula for the surface area of a torus, substituting the given major and minor radii.",
+      "common_mistake_notes": "A common mistake would be to forget to square the radii or use the wrong formula."
+    },
+    {
+      "id": "Surface area of a rectangular prism",
+      "stem": "Find the surface area of a rectangular prism with length 8 units, width 4 units, and height 3 units. Choose the correct answer.",
+      "choices": {
+        "A": "96",
+        "B": "120",
+        "C": "144",
+        "D": "168"
+      },
+      "correct_choice": "C",
+      "solution": "The surface area A of a rectangular prism is given by: A = 2(lw + lh + wh), where l is the length, w is the width, and h is the height. For a prism with length 8 units, width 4 units, and height 3 units, we have A = 2(8 × 4 + 8 × 3 + 4 × 3) = 144.",
+      "explanation": "Use the formula for the surface area of a rectangular prism, substituting the given dimensions.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply by 2 when summing the areas of the faces."
+    },
+    {
+      "id": "Surface area of a triangular prism",
+      "stem": "Find the surface area of a triangular prism with base length 6 units, height 4 units, and slant height 5 units. Choose the correct answer.",
+      "choices": {
+        "A": "72",
+        "B": "96",
+        "C": "120",
+        "D": "144"
+      },
+      "correct_choice": "C",
+      "solution": "The surface area A of a triangular prism is given by: A = 2B + Ph, where B is the base area, P is the perimeter of the base, and h is the height. For a triangular base with length 6 units, height 4 units, and slant height 5 units, we have B = π(6)(4)/2 = 12, P = 6 + 6 + 5 = 17, and A = 2(12) + 17(4) = 120.",
+      "explanation": "Calculate the base area, perimeter, then use the formula for the surface area of a triangular prism.",
+      "common_mistake_notes": "A common mistake would be to forget to add the areas of the two triangular faces or use the wrong height."
+    }
+  ]
+}

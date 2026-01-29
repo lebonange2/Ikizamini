@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.5.1",
+  "objective_text": "Define complex conjugate (a - bi)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the complex conjugate of the number 3 + 4i?",
+      "choices": {
+        "A": "2 + 4i",
+        "B": "3 - 4i",
+        "C": "4 - 3i",
+        "D": "7 + 0i"
+      },
+      "correct_choice": "B",
+      "solution": "The complex conjugate of a complex number (a + bi) is obtained by changing the sign of the imaginary part. So for the number 3 + 4i, the complex conjugate is 3 - 4i.",
+      "explanation": "The complex conjugate operation only affects the imaginary part, not the real part.",
+      "common_mistake_notes": "A common mistake would be to change both parts of the complex number, which results in an incorrect conjugate."
+    },
+    {
+      "id": "Bghj",
+      "stem": "What is the product of a complex number and its complex conjugate?",
+      "choices": {
+        "A": "a^2 + b^2",
+        "B": "a^2 - b^2",
+        "C": "2ab",
+        "D": "0"
+      },
+      "correct_choice": "A",
+      "solution": "The product of a complex number (a + bi) and its conjugate (a - bi) is (a + bi)(a - bi) = a^2 - (bi)^2 = a^2 - b^2i^2. Since i^2 = -1, the result simplifies to a^2 + b^2.",
+      "explanation": "The product of a complex number and its conjugate is always a real number.",
+      "common_mistake_notes": "A common mistake would be to forget that i^2 = -1, leading to an incorrect product."
+    },
+    {
+      "id": "Qwer",
+      "stem": "What is the complex conjugate of the number -2i?",
+      "choices": {
+        "A": "2i",
+        "B": "-2i",
+        "C": "0",
+        "D": "-2"
+      },
+      "correct_choice": "A",
+      "solution": "The complex conjugate of a pure imaginary number bi is simply -bi. So for the number -2i, the complex conjugate is 2i.",
+      "explanation": "For a pure imaginary number, the conjugate only changes the sign of the coefficient.",
+      "common_mistake_notes": "A common mistake would be to think that the conjugate should be positive, which is not correct for negative coefficients."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "What is the complex conjugate of the number 5?",
+      "choices": {
+        "A": "5i",
+        "B": "-5",
+        "C": "0",
+        "D": "5"
+      },
+      "correct_choice": "D",
+      "solution": "The complex conjugate of a real number is the number itself. So for the number 5, the complex conjugate is also 5.",
+      "explanation": "A real number has no imaginary part, so its conjugate remains unchanged.",
+      "common_mistake_notes": "A common mistake would be to think that the conjugate should have an imaginary part, but this is not true for real numbers."
+    },
+    {
+      "id": "Tokyo",
+      "stem": "What is the complex conjugate of the number 7 + 0i?",
+      "choices": {
+        "A": "7 - 0i",
+        "B": "-7 + 0i",
+        "C": "0 + 7i",
+        "D": "0 - 7i"
+      },
+      "correct_choice": "A",
+      "solution": "The complex conjugate of a real number with no imaginary part is the same number. So for the number 7 + 0i, the complex conjugate is 7 - 0i.",
+      "explanation": "When there's no imaginary part, the conjugate operation doesn't change anything.",
+      "common_mistake_notes": "A common mistake would be to think that the conjugate should have an imaginary part, but this is not true for numbers with zero imaginary parts."
+    },
+    {
+      "id": "Poiuy",
+      "stem": "What is the complex conjugate of the number -4 + 6i?",
+      "choices": {
+        "A": "-4 - 6i",
+        "B": "4 + 6i",
+        "C": "6 - 4i",
+        "D": "10 + 0i"
+      },
+      "correct_choice": "A",
+      "solution": "The complex conjugate of a complex number (a + bi) is obtained by changing the sign of the imaginary part. So for the number -4 + 6i, the complex conjugate is -4 - 6i.",
+      "explanation": "Remember to only change the sign of the imaginary term when finding the conjugate.",
+      "common_mistake_notes": "A common mistake would be to change both parts of the complex number, which results in an incorrect conjugate."
+    },
+    {
+      "id": "Bvnmm",
+      "stem": "What is the complex conjugate of the number 2i - 1?",
+      "choices": {
+        "A": "-2i + 1",
+        "B": "2i - 1",
+        "C": "1 - 2i",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "The complex conjugate of a complex number (a + bi) is obtained by changing the sign of the imaginary part. So for the number 2i - 1, the complex conjugate is -2i - 1.",
+      "explanation": "When finding the conjugate, only change the sign of the imaginary term and leave the real term unchanged.",
+      "common_mistake_notes": "A common mistake would be to change both parts of the complex number, which results in an incorrect conjugate."
+    }
+  ]
+}

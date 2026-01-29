@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.15",
+  "objective_text": "Apply to signal processing",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFgHjK",
+      "stem": "A continuous-time signal x(t) is sampled at a rate of fs = 8 kHz and then passed through an ideal low-pass filter with a cutoff frequency of fc = 3 kHz. What is the maximum frequency component in the filtered signal?",
+      "choices": {
+        "A": "1 kHz",
+        "B": "3 kHz",
+        "C": "4 kHz",
+        "D": "8 kHz"
+      },
+      "correct_choice": "B",
+      "solution": "The Nyquist-Shannon sampling theorem states that a continuous-time signal must be sampled at least twice as fast as its highest frequency component to avoid aliasing. In this case, the maximum frequency in the original signal before filtering should not exceed fs/2 = 4 kHz. Since the low-pass filter has a cutoff frequency of fc = 3 kHz, any frequency components above 3 kHz will be attenuated or removed. Therefore, the maximum frequency component in the filtered signal is 3 kHz.",
+      "explanation": "The Nyquist-Shannon sampling theorem is crucial for understanding the relationship between the sampling rate and the frequency content of a signal. Choice A (1 kHz) is too low, choice C (4 kHz) would be aliased to below the cutoff frequency, and choice D (8 kHz) exceeds the Nyquist limit.",
+      "common_mistake_notes": "A common mistake is to choose option C, assuming that the filter will preserve all frequencies up to its cutoff. However, a low-pass filter removes or attenuates any frequency components above its cutoff frequency."
+    },
+    {
+      "id": "XyZvBnCm",
+      "stem": "A discrete- time signal x[n] with N = 10 samples is given by x[n] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. What is the DFT (Discrete Fourier Transform) coefficient X[k] for k = 2?",
+      "choices": {
+        "A": "11",
+        "B": "21",
+        "C": "33",
+        "D": "45"
+      },
+      "correct_choice": "C",
+      "solution": "The DFT of a discrete-time signal x[n] is given by X[k] = Σ(x[n] × e^(-j * 2πkn/N)), where the summation is from n=0 to N-1. For k = 2 and N = 10, we have X[2] = Σ(1 to 9) (n × e^(-j * πn/5)). By evaluating this sum, we get X[2] = 33.",
+      "explanation": "The DFT computes the frequency domain representation of a discrete-time signal. In this case, we are asked to find the coefficient for k = 2. The correct calculation involves multiplying each sample by its corresponding complex exponential term and summing them up.",
+      "common_mistake_notes": "A common mistake is to forget the complex exponential term e^(-j * πn/5) or to use an incorrect formula for the DFT. Another possible error is to calculate the sum incorrectly, leading to answers like A (11), B (21), or D (45)."
+    },
+    {
+      "id": "QweRtYui",
+      "stem": "A band-limited analog signal with a maximum frequency of 3 kHz is sampled at fs = 6 kHz and passed through an ideal brickwall filter with a passband from 0 to 2 kHz. What is the output signal's maximum frequency?",
+      "choices": {
+        "A": "0 kHz",
+        "B": "1 kHz",
+        "C": "2 kHz",
+        "D": "3 kHz"
+      },
+      "correct_choice": "C",
+      "solution": "The input signal has a maximum frequency of 3 kHz, which is below the Nyquist rate (6 kHz). After sampling, aliasing does not occur. The brickwall filter removes all frequencies above 2 kHz. Thus, the output signal's maximum frequency is 2 kHz.",
+      "explanation": "This question tests understanding of both the Nyquist-Shannon sampling theorem and the effect of a bandpass filter. Choice A (0 kHz) and D (3 kHz) are incorrect because they do not account for the passband of the filter, while choice B (1 kHz) is too low.",
+      "common_mistake_notes": "A common mistake is to choose option D, assuming that the original signal's maximum frequency would be preserved. However, the brickwall filter removes any frequencies above its upper limit."
+    },
+    {
+      "id": "BvnCmXyz",
+      "stem": "Given a continuous-time LTI system with impulse response h(t) = e^(-2t) u(t), what is the output y(t) when the input x(t) is a unit step function, u(t)?",
+      "choices": {
+        "A": "1 - e^(-2t)",
+        "B": "e^(-2t)",
+        "C": "u(t) - e^(-2t)",
+        "D": "u(t)"
+      },
+      "correct_choice": "A",
+      "solution": "The output of an LTI system with impulse response h(t) and input x(t) is given by convolution: y(t) = (x(t) * h(t)). For a unit step function u(t), the convolution results in y(t) = ∫(0 to t) e^(-2τ)dτ = 1 - e^(-2t).",
+      "explanation": "This question tests understanding of LTI systems and convolution. The correct answer is found by evaluating the convolution integral.",
+      "common_mistake_notes": "A common mistake is to choose option B, which represents only the impulse response without considering the input signal's effect. Option C includes an extra term (u(t)), which is not part of the convolution result for a unit step function."
+    },
+    {
+      "id": "PoiUjKl",
+      "stem": "In a digital communication system, the transmitted signal s[n] is passed through a channel with impulse response h[n] = [1, 0.5, 0.25]. The received signal r[ n] is corrupted by white Gaussian noise with variance σ^2 = 4. What is the minimum mean squared error (MMSE) estimate of s[n] given r[n]?",
+      "choices": {
+        "A": "r[n]",
+        "B": "h[n] × r[n]",
+        "C": "(h[n])^H × (h[n])^(-1) × r[n]",
+        "D": "σ^2 × h[n]"
+      },
+      "correct_choice": "C",
+      "solution": "The MMSE estimate of s[n] given r[n] is given by w[n] = E[s[n]|r[n]] = (h[n])^H × (R_n)^(-1) × r[n], where .^H denotes conjugate transpose, and R_n is the autocorrelation matrix of h[n]. Since we only have a single impulse response h[n], the autocorrelation matrix is just |h[0]|^2 = 1. Thus, the MMSE estimate simplifies to w[n] = h[n]^H × r[n].",
+      "explanation": "This question tests understanding of minimum mean squared error estimation in digital communication systems. The correct answer involves multiplying the conjugate transpose of the channel impulse response with the received signal.",
+      "common_mistake_notes": "A common mistake is to choose option A, assuming that the received signal is the best estimate. However, this does not account for noise reduction or channel effects. Option B neglects the need for noise correction, while option D uses an incorrect scaling factor."
+    },
+    {
+      "id": "LkmNvbC",
+      "stem": "A discrete-time signal x[n] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] is passed through a linear shift register with feedback polynomial x(z) = z^3 + z^2 + 1. What is the output sequence y[n], where n >= 0?",
+      "choices": {
+        "A": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+        "B": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 9, 8, 7, 6, 5, 4, 3, 2]",
+        "C": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 18, 21, 24, 27, 30, 33, 36]",
+        "D": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]"
+      },
+      "correct_choice": "B",
+      "solution": "The linear shift register with feedback polynomial x(z) = z^3 + z^2 + 1 generates an output sequence y[n] based on the previous three input values. For n >= 0, we have: y[0] = x[0], y[1] = x[1], y[2] = x[2], and for n > 2, y[n] = x[n] + x[n-1] + x[n-2]. Thus, the output sequence is [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 9, 8, 7, 6, 5, 4, 3, 2].",
+      "explanation": "This question tests understanding of linear shift registers and their operation. The correct answer is found by applying the feedback polynomial to the input sequence.",
+      "common_mistake_notes": "A common mistake is to choose option A, assuming that the output remains unchanged. However, a linear shift register modifies the signal based on its feedback polynomial. Option C adds incorrect values due to an error in the feedback polynomial application, and option D uses an incorrect arithmetic operation."
+    },
+    {
+      "id": "GhjKlMn",
+      "stem": "A continuous-time signal x(t) is passed through a Hilbert transformer, which produces an analytic signal y(t) = x(t) + j × H[x(t)], where H denotes the Hilbert transform. What is the real part of y(t) when x(t) = cos(2πft)?",
+      "choices": {
+        "A": "cos(2πft)",
+        "B": "sin(2πft)",
+        "C": "cos(4πft)",
+        "D": "sin(4πft)"
+      },
+      "correct_choice": "A",
+      "solution": "The Hilbert transform of a cosine function is a sine function with a phase shift. For x(t) = cos(2πft), the Hilbert transform H[x(t)] is -sin(2πft). The analytic signal y(t) is then y(t) = cos(2πft) + j × (-sin(2πft)). The real part of y(t) is thus cos(2πft).",
+      "explanation": "This question tests understanding of the Hilbert transform and its effect on a cosine function. The correct answer involves recognizing that the real part of the analytic signal remains unchanged.",
+      "common_mistake_notes": "A common mistake is to choose option B, assuming that the sine function is the real part of the analytic signal. However, the Hilbert transform only affects the imaginary part. Option C and D involve incorrect frequency doubling."
+    }
+  ]
+}

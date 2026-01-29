@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.15.10",
+  "objective_text": "Use differential geometry concepts",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Intrinsic_Curvature",
+      "stem": "A surface has an intrinsic curvature of -1 at a particular point. Which of the following best describes this curvature?",
+      "choices": {
+        "A": "The surface is locally like a plane.",
+        "B": "The surface is locally like a sphere.",
+        "C": "The surface is locally like a hyperbolic plane.",
+        "D": "The surface is locally like a cylinder."
+      },
+      "correct_choice": "C",
+      "solution": "Intrinsic curvature of -1 indicates that the surface is negatively curved, which means it is locally similar to a hyperbolic plane. A sphere has positive curvature, a plane has zero curvature, and a cylinder does not have intrinsic curvature since it is a flat surface along one direction.",
+      "explanation": "Differential geometry studies properties of surfaces independent of their embedding in higher-dimensional spaces. Intrinsic curvature refers to how much the surface bends or curves at a given point without considering external factors.",
+      "common_mistake_notes": "Common mistake: Choosing B (sphere) because it is curved, but forgetting that intrinsic curvature distinguishes between positive and negative curvatures."
+    },
+    {
+      "id": "Geodesic_Between_Points",
+      "stem": "Find the geodesic between two points A(1,0,0) and B(0,2,0) on a sphere of radius 3 in Euclidean space. Which of the following equations best describes this shortest path?",
+      "choices": {
+        "A": "x = 3sin(t), y = 3cos(t), z = 0",
+        "B": "x = 3t, y = 3(1-t), z = 0",
+        "C": "x = 3cos(t), y = 3sin(t), z = 0",
+        "D": "x = 3sqrt(t), y = 3sqrt(1-t), z = 0"
+      },
+      "correct_choice": "C",
+      "solution": "The geodesic on a sphere is the shortest path between two points, which corresponds to a great circle. The parametric equation of a great circle on a sphere with radius r passing through points (x1, y1, z1) and (x2, y2, z2) can be expressed as x = r cos(t) * (x1 - x2) + r sin(t) * sqrt(1 - ((x1 - x2)^2 + (y1 - y2)^2) / 4r^2), y = r cos(t) * (y1 - y2) + r sin(t) * sqrt(1 - ((x1 - x2)^2 + (y1 - y2)^2) / 4r^2), z = r cos(t) * (z1 - z2). For A(1,0,0) and B(0,2,0), the equation simplifies to x = 3cos(t), y = 3sin(t), z = 0.",
+      "explanation": "Geodesics in differential geometry are paths that locally minimize distance. On a sphere, they are great circles.",
+      "common_mistake_notes": "Common mistake: Choosing A or D because of the use of sin(t) and sqrt(t), which might be associated with parametric equations for circles, but forgetting to consider the specific form required for a geodesic on a sphere."
+    },
+    {
+      "id": "Parallel_Transport",
+      "stem": "When parallel transporting a vector along a curve on a surface, which of the following statements is true?",
+      "choices": {
+        "A": "The vector's magnitude and direction both change.",
+        "B": "The vector's magnitude changes but its direction remains constant.",
+        "C": "The vector's direction changes but its magnitude remains constant.",
+        "D": "The vector's magnitude and direction both remain constant."
+      },
+      "correct_choice": "D",
+      "solution": "Parallel transport is the process of moving a vector along a curve on a surface while keeping it tangent to the surface at each point. This preserves both the magnitude and direction of the vector.",
+      "explanation": "In differential geometry, parallel transport is used to study how vectors behave as they are moved along curves on curved surfaces without changing their intrinsic properties.",
+      "common_mistake_notes": "Common mistake: Choosing C or B because of misconceptions about how vectors might change when transported along a curve, forgetting that the key requirement of parallel transport is preserving the vector's intrinsic properties."
+    },
+    {
+      "id": "Christoffel_Symbols",
+      "stem": "Calculate the Christoffel symbol Γ<sup>1</sup><sub>21</sub> for the 2D metric g = dx^2 + dy^2. Which of the following is the correct value?",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "dy/dx",
+        "D": "dx/dy"
+      },
+      "correct_choice": "A",
+      "solution": "The Christoffel symbols are defined as Γ<sup>μ</sup><sub>αβ</sub> = (1/2) g<sup>μν</sup>(∂g<sub>να</sub>/∂x<sup>β</sup> + ∂g<sub>νβ</sub>/∂x<sup>α</sup> - ∂g<sub>αβ</sub>/∂x<sup>ν</sup>). For the metric g = dx^2 + dy^2, all partial derivatives of g are zero, so all Christoffel symbols are also zero.",
+      "explanation": "Christoffel symbols are used in differential geometry to describe how the coordinate system behaves on a curved surface and play a crucial role in tensor calculus.",
+      "common_mistake_notes": "Common mistake: Choosing C or D because of confusion with derivatives, but forgetting that for this specific metric, all partial derivatives are zero."
+    },
+    {
+      "id": "Riemann_Curvature_Tensor",
+      "stem": "Calculate the Riemann curvature tensor R<sup>μν</sup><sub>αβ</sub> for a 2D Euclidean space with metric g = dx^2 + dy^2. Which of the following is the correct value?",
+      "choices": {
+        "A": "0",
+        "B": "g<sup>μν</sup>",
+        "C": "g<sub>αβ</sub>",
+        "D": "g<sup>μν</sup>g<sub>αβ</sub>"
+      },
+      "correct_choice": "A",
+      "solution": "The Riemann curvature tensor is given by R<sup>μν</sup><sub>αβ</sub> = ∂Γ<sup>μ</sup><sub>αβ</sub>/∂x<sup>ν</sup> - ∂Γ<sup>μ</sup><sub>αν</sub>/∂x<sup>β</sup> + Γ<sup>λ</sup><sub>αβ</sub>Γ<sup>μ</sup><sub>λν</sub> - Γ<sup>λ</sup><sub>αν</sub>Γ<sup>μ</sup><sub>λβ</sub>. In a 2D Euclidean space, all Christoffel symbols are zero, so the Riemann curvature tensor is also identically zero.",
+      "explanation": "The Riemann curvature tensor describes the curvature of a manifold at a given point and how it affects parallel transport. In flat spaces like 2D Euclidean space, the curvature tensor vanishes.",
+      "common_mistake_notes": "Common mistake: Choosing B or C because of confusion with metric tensors, but forgetting that in a flat space, the Riemann curvature tensor is zero."
+    },
+    {
+      "id": "Geodesic_Flow",
+      "stem": "In a 2D Euclidean space, consider a geodesic flow starting from point P(1,0) along the positive x-axis. Which of the following best describes the velocity vector field of this flow at time t?",
+      "choices": {
+        "A": "v(x,y,t) = (cos(t), sin(t))",
+        "B": "v(x,y,t) = (x, y)",
+        "C": "v(x,y,t) = (1, 0)",
+        "D": "v(x,y,t) = (t, 0)"
+      },
+      "correct_choice": "C",
+      "solution": "In a 2D Euclidean space, the geodesic flow along the positive x-axi... [truncated]...s; then return JSON with keys: status, issues, revised_questions, score. No objective_id/objective_text/questions/difficulty_profile keys.",
+      "explanation": "Geodesic flow describes how points on a curve move over time while staying on the geodesic.",
+      "common_mistake_notes": "Common mistake: Choosing A or B because of confusion with polar coordinates or parametric equations for curves, but forgetting that in this case, the velocity vector should be constant along the x-axis."
+    },
+    {
+      "id": "Tensor_Calculus",
+      "stem": "Given a 2D tensor field T = (x^2 + y^2)dx^2 - xy dy^2, calculate its divergence ∇·T. Which of the following is the correct value?",
+      "choices": {
+        "A": "0",
+        "B": "x + y",
+        "C": "2x + 2y",
+        "D": "x^2 + y^2"
+      },
+      "correct_choice": "B",
+      "solution": "The divergence of a tensor field T<sup>μν</sup> is given by ∇·T = ∂T<sup>μν</sup>/∂x<sup>μ</sup>. For T = (x^2 + y^2)dx^2 - xy dy^2, the divergence is ∂(x^2 + y^2)/∂x - ∂(xy)/∂y = 2x + 0 = x + y.",
+      "explanation": "Tensor calculus is an extension of vector calculus to higher-dimensional spaces and curved manifolds. The divergence measures the change in density or flux through a surface element.",
+      "common_mistake_notes": "Common mistake: Choosing C because of confusion with the gradient operator, but forgetting that for a 2D tensor field, only one partial derivative is involved."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.12.5",
+  "objective_text": "Apply rotation about origin",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What are the new coordinates of point (3, 4) after a counterclockwise rotation of 90 degrees around the origin?",
+      "choices": {
+        "A": "(4, -3)",
+        "B": "(-4, 3)",
+        "C": "(-3, -4)",
+        "D": "(3, 4)"
+      },
+      "correct_choice": "A",
+      "solution": "When a point is rotated counterclockwise by 90 degrees around the origin, its x-coordinate becomes the negative of the y-coordinate and its y-coordinate becomes the x-coordinate. So (3, 4) becomes (-4, 3).",
+      "explanation": "This question tests understanding of rotating points about the origin.",
+      "common_mistake_notes": "A common mistake is to forget that the x-ordinate becomes the negative of the y-ordinate and vice versa."
+    },
+    {
+      "id": "Bghj",
+      "stem": "What are the new coordinates of point (5, -2) after a clockwise rotation of 180 degrees around the origin?",
+      "choices": {
+        "A": "(5, 2)",
+        "B": "(-5, -2)",
+        "C": "(-5, 2)",
+        "D": "(5, -2)"
+      },
+      "correct_choice": "B",
+      "solution": "A rotation of 180 degrees around the origin flips the point across the origin, so (x, y) becomes (-x, -y). Thus, (5, -2) becomes (-5, 2).",
+      "explanation": "This question assesses knowledge of rotating points by a full turn.",
+      "common_mistake_notes": "Students might accidentally apply a counterclockwise rotation instead of clockwise, leading to the incorrect answer A."
+    },
+    {
+      "id": "Qwer",
+      "stem": "What are the new coordinates of point (-1, 3) after a rotation of 270 degrees counterclockwise around the origin?",
+      "choices": {
+        "A": "(3, -1)",
+        "B": "(-3, 1)",
+        "C": "(1, 3)",
+        "D": "(-1, 3)"
+      },
+      "correct_choice": "A",
+      "solution": "A rotation of 270 degrees counterclockwise around the origin is equivalent to a clockwise rotation of 90 degrees. The x-coordinate becomes the negative of the y-coordinate and the y-coordinate remains unchanged. So (-1, 3) becomes (3, -1).",
+      "explanation": "This question tests understanding of rotating points by different angles.",
+      "common_mistake_notes": "Students might confuse the clockwise and counterclockwise rotations, leading to an incorrect choice."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "What are the new coordinates of point (6, -8) after a rotation of 135 degrees counterclockwise around the origin?",
+      "choices": {
+        "A": "(4\begin{math}\frac{\text{sqrt(2)}}{2}, -6\begin{math}\frac{\text{sqrt(2)}}{2})",
+        "B": "(-8, 6)",
+        "C": "(6\begin{math}\frac{\text{sqrt(2)}}{2}, 4\begin{math}\frac{\text{sqrt(2)}}{2})",
+        "D": "(-4\begin{math}\frac{\text{sqrt(2)}}{2}, -6\begin{math}\frac{\text{sqrt(2)}}{2})"
+      },
+      "correct_choice": "A",
+      "solution": "The angle 135 degrees can be split into 90 degrees and 45 degrees. After a 90-degree rotation, the point becomes (0, -8). A 45-degree counterclockwise rotation around the origin results in a scaling by \begin{math}\frac{\text{sqrt(2)}}{2}\begin{math} and a shift to the right. So, the new coordinates are (4\begin{math}\frac{\text{sqrt(2)}}{2}, -6\begin{math}\frac{\text{sqrt(2)}}{2}).",
+      "explanation": "This question challenges students to handle rotations by non-standard angles.",
+      "common_mistake_notes": "Students might forget to account for the 45-degree rotation after the 90-degree rotation, leading to incorrect scaling."
+    },
+    {
+      "id": "Zxcv",
+      "stem": "What are the new coordinates of point (2\begin{math}\frac{\text{sqrt(3)}}{2}, 1) after a rotation of 60 degrees counterclockwise around the origin?",
+      "choices": {
+        "A": "(1, 2\begin{math}\frac{\text{sqrt(3)}}{2})",
+        "B": "(-2\begin{math}\frac{\text{sqrt(3)}}{2}, -1)",
+        "C": "(-1, 2\begin{math}\frac{\text{sqrt(3)}}{2})",
+        "D": "(2\begin{math}\frac{\text{sqrt(3)}}{2}, 1)"
+      },
+      "correct_choice": "A",
+      "solution": "The point (2\begin{math}\frac{\text{sqrt(3)}}{2}, 1) is on the unit circle at an angle of 60 degrees. Rotating it counterclockwise by 60 degrees around the origin leaves it in its original position, so the coordinates remain unchanged.",
+      "explanation": "This question tests understanding of rotating points that are already at specific angles.",
+      "common_mistake_notes": "Students might误算旋转角度，导致选择错误的答案。"
+    },
+    {
+      "id": "Bnml",
+      "stem": "What are the new coordinates of a point P with coordinates (x, y) after a rotation of 90 degrees counterclockwise around the origin?",
+      "choices": {
+        "A": "(-y, x)",
+        "B": "(y, -x)",
+        "C": "(-x, -y)",
+        "D": "(x, y)"
+      },
+      "correct_choice": "A",
+      "solution": "When a point is rotated counterclockwise by 90 degrees around the origin, its x-coordinate becomes the negative of the y-coordinate and its y-coordinate becomes the x-coordinate. So (x, y) becomes (-y, x).",
+      "explanation": "This question tests the ability to generalize rotation rules.",
+      "common_mistake_notes": "Students might apply a clockwise rotation instead of counterclockwise, leading to an incorrect choice."
+    },
+    {
+      "id": "Vbnm",
+      "stem": "What are the new coordinates of point (8, -6) after a rotation of 240 degrees counterclockwise around the origin?",
+      "choices": {
+        "A": "(6\begin{math}\frac{\text{sqrt(3)}}{2}, -2\begin{math}\frac{\text{sqrt(3)}}{2})",
+        "B": "(-8, 6)",
+        "C": "(6\begin{math}\frac{\text{sqrt(3)}}{2}, 2\begin{math}\frac{\text{sqrt(3)}}{2})",
+        "D": "(-6\begin{math}\frac{\text{sqrt(3)}}{2}, -2\begin{math}\frac{\text{sqrt(3)}}{2})"
+      },
+      "correct_choice": "A",
+      "solution": "The angle 240 degrees can be split into 180 degrees and 60 degrees. After a 180-degree rotation, the point becomes (-8, 6). A 60-degree counterclockwise rotation around the origin results in a scaling by \begin{math}\frac{\text{sqrt(3)}}{2}\begin{math} and a shift to the right. So, the new coordinates are (6\begin{math}\frac{\text{sqrt(3)}}{2}, -2\begin{math}\frac{\text{sqrt(3)}}{2}).",
+      "explanation": "This question challenges students to handle rotations by non-standard angles.",
+      "common_mistake_notes": "Students might forget to account for the 60-degree rotation after the 180-degree rotation, leading to incorrect scaling."
+    }
+  ]
+}

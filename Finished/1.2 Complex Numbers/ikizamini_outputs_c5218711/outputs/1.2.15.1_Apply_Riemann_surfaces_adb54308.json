@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.1",
+  "objective_text": "Apply Riemann surfaces",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "AsdFgHjK",
+      "stem": "Which function has a branch point at z=0?",
+      "choices": {
+        "A": "f(z) = \frac{1}{z}",
+        "B": "f(z) = e^z",
+        "C": "f(z) = \tan(z)",
+        "D": "f(z) = \frac{\text{sin}(z)}{z}"
+      },
+      "correct_choice": "A",
+      "solution": "The function f(z) = 1/z has a singularity at z=0, which is a branch point because it cannot be continuously extended to a single-valued function in any neighborhood of z=0. Functions B and D are analytic everywhere, while C has a discontinuity along the imaginary axis but no branch point at z=0.",
+      "explanation": "Branch points occur where a function fails to be single-valued due to multivaluedness of its underlying functions (e.g., logarithms or square roots).",
+      "common_mistake_notes": "Common mistake is to choose C, which has a discontinuity but no branch point at z=0."
+    },
+    {
+      "id": "XyzPqRsT",
+      "stem": "What is the genus of the Riemann surface for f(z) = \frac{1}{\text{sin}(z)}?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "B",
+      "solution": "The function f(z) = 1/sin(z) has a simple pole at z=0, which contributes one handle to the Riemann surface. Since there are no other singularities or branch points, the genus of the surface is 1.",
+      "explanation": "Genus of a Riemann surface is determined by the number of handles it has. For functions with isolated singularities, the genus can be found by counting the number of poles and branch points.",
+      "common_mistake_notes": "Common mistake is to choose A (genus 0), assuming that since sin(z) is periodic, the surface would be simply connected. However, the pole at z=0 creates a handle."
+    },
+    {
+      "id": "BnmLkjI",
+      "stem": "Which function has a Riemann surface with two sheets?",
+      "choices": {
+        "A": "f(z) = \frac{1}{z}",
+        "B": "f(z) = \text{sqrt}(z)",
+        "C": "f(z) = \tan(z)",
+        "D": "f(z) = e^z"
+      },
+      "correct_choice": "B",
+      "solution": "The function f(z) = sqrt(z) has two branches, corresponding to the positive and negative square roots. This creates a Riemann surface with two sheets that are glued together along the real axis.",
+      "explanation": "Functions with multivalued inverses, like square roots or logarithms, often produce Riemann surfaces with multiple sheets.",
+      "common_mistake_notes": "Common mistake is to choose A (1/z), which has a branch point but does not create two separate sheets."
+    },
+    {
+      "id": "QweRtyU",
+      "stem": "How many zeros does f(z) = z^3 - 1 have on its Riemann surface?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "D",
+      "solution": "The function f(z) = z^3 - 1 has three zeros: z=1, z=-1/2 + i√3/2, and z=-1/2 - i√3/2. These zeros are distinct on the Riemann surface, even though two of them are complex conjugates.",
+      "explanation": "Zeros of a function on its Riemann surface are found by considering all possible values of the function due to multivaluedness.",
+      "common_mistake_notes": "Common mistake is to choose C (2), assuming that only one of the complex conjugate zeros would be counted."
+    },
+    {
+      "id": "ZxcVbnM",
+      "stem": "Which function has a Riemann surface with a single pole and no branch points?",
+      "choices": {
+        "A": "f(z) = \frac{1}{z^2}",
+        "B": "f(z) = \text{cosh}(z)",
+        "C": "f(z) = \frac{\text{sinh}(z)}{z}",
+        "D": "f(z) = e^{1/z}"
+      },
+      "correct_choice": "C",
+      "solution": "The function f(z) = sinh(z)/z has a simple pole at z=0, but no branch points since sinh(z) is an entire function. The other choices either have multiple poles or branch points.",
+      "explanation": "A Riemann surface with a single pole and no branch points can be created by functions that have only one isolated singularity and are analytic elsewhere.",
+      "common_mistake_notes": "Common mistake is to choose D (e^(1/z)), which has an essential singularity at z=0, not a simple pole."
+    },
+    {
+      "id": "SdfGhiJ",
+      "stem": "What is the Riemann surface for f(z) = \text{log}(z + i)?",
+      "choices": {
+        "A": "A single sheet covering the entire complex plane",
+        "B": "Two sheets glued along the imaginary axis",
+        "C": "Three sheets glued along the real and imaginary axes",
+        "D": "Four sheets glued along four rays emanating from z=-i"
+      },
+      "correct_choice": "B",
+      "solution": "The function f(z) = log(z+i) has a branch cut along the negative real axis, which extends to -∞. The Riemann surface consists of two sheets that are glued together along this branch cut.",
+      "explanation": "Logarithmic functions typically have a branch cut along a ray from the branch point to infinity. In this case, the branch cut is along the imaginary axis because z=-i is the branch point.",
+      "common_mistake_notes": "Common mistake is to choose A (single sheet), assuming that the logarithm would be single-valued everywhere except at z=-i. However, the branch cut creates two sheets."
+    },
+    {
+      "id": "XcvBnmL",
+      "stem": "Which function has a Riemann surface with genus 0?",
+      "choices": {
+        "A": "f(z) = \frac{1}{\text{sin}(z)}",
+        "B": "f(z) = \tan(z)",
+        "C": "f(z) = z^2 - 1",
+        "D": "f(z) = e^{1/(z-1)}"
+      },
+      "correct_choice": "C",
+      "solution": "The function f(z) = z^2 - 1 has two simple poles at z=±i, but no branch points. The genus of the Riemann surface is 0 because there are an even number of isolated singularities.",
+      "explanation": "Genus can be determined by counting isolated singularities and considering their type (poles or branch points). For functions with an even number of poles, the genus is 0.",
+      "common_mistake_notes": "Common mistake is to choose A (1/sin(z)), which has a pole at z=0 and thus a genus of 1."
+    }
+  ]
+}

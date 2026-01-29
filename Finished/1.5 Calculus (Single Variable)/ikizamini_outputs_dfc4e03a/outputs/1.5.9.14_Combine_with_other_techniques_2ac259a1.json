@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.9.14",
+  "objective_text": "Combine with other techniques",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFgHjKlMn",
+      "stem": "Solve the equation: 3x + 2 = 17\nA) x = 5\nB) x = 6\nC) x = 7\nD) x = 8",
+      "choices": {
+        "A": "Correct. By subtracting 2 from both sides and then dividing by 3, we get x = (17 - 2)/3 = 15/3 = 5.",
+        "B": "Incorrect. This is the result of adding 2 to both sides instead of subtracting it.",
+        "C": "Incorrect. This is the result of dividing by 3 before subtracting 2.",
+        "D": "Incorrect. This is the result of overcorrecting when solving for x."
+      },
+      "correct_choice": "A",
+      "solution": "3x + 2 = 17\nSubtract 2 from both sides: 3x = 15\nDivide by 3: x = 5",
+      "explanation": "This question assesses combining the techniques of simplifying an equation and solving for a variable.",
+      "common_mistake_notes": "A common mistake is to add 2 to both sides instead of subtracting it, which leads to choice B. This happens when students forget that the goal is to isolate the variable x."
+    },
+    {
+      "id": "BvnCmLpOqRs",
+      "stem": "Factor the expression: x^2 - 5x + 6\nA) (x - 3)(x - 2)\nB) (x + 3)(x - 2)\nC) (x + 3)(x + 2)\nD) (x - 4)(x + 1)",
+      "choices": {
+        "A": "Correct. This is the correct factorization using the AC method or by grouping.",
+        "B": "Incorrect. This results from multiplying (x + 3) and (x - 2), which does not give x^2 - 5x + 6.",
+        "C": "Incorrect. This results from multiplying (x + 3) and (x + 2), which does not give x^2 - 5x + 6.",
+        "D": "Incorrect. This results from multiplying (x - 4) and (x + 1), which does not give x^2 - 5x + 6."
+      },
+      "correct_choice": "A",
+      "solution": "x^2 - 5x + 6 = (x - 3)(x - 2)",
+      "explanation": "This question assesses combining the techniques of factoring by grouping and recognizing common factors.",
+      "common_mistake_notes": "A common mistake is to use incorrect factors, such as (x + 3) and (x - 2), which leads to choice B. This happens when students misidentify the correct numbers to multiply to get the constant term."
+    },
+    {
+      "id": "CdeFgHiJkLm",
+      "stem": "Simplify the expression: (4a^2b)^3\nA) 64a^5b^3\nB) 64a^6b^3\nC) 128a^5b^3\nD) 128a^6b^3",
+      "choices": {
+        "A": "Incorrect. This is the result of multiplying the exponents without considering the power rule for a product.",
+        "B": "Correct. This is the correct simplification using the power rule (m^n * m^p = m^(n+p)).",
+        "C": "Incorrect. This results from multiplying the coefficients and adding the exponents, which is not valid for powers.",
+        "D": "Incorrect. This results from multiplying the coefficients without considering the power rule for a product."
+      },
+      "correct_choice": "B",
+      "solution": "(4a^2b)^3 = 4^3 * (a^2)^3 * b^3 = 64a^6b^3",
+      "explanation": "This question assesses combining the techniques of power rule for a product and simplifying powers.",
+      "common_mistake_notes": "A common mistake is to multiply the coefficients and add the exponents, which leads to choice C. This happens when students forget the specific rules for raising a product to a power."
+    },
+    {
+      "id": "DfeGhIjKlMn",
+      "stem": "Solve the system of equations:\nx + y = 5\n2x - y = 7\nA) x = 3, y = 2\nB) x = 4, y = 1\nC) x = 5, y = 0\nD) x = 6, y = -1",
+      "choices": {
+        "A": "Correct. This is the result of solving the system using elimination or substitution.",
+        "B": "Incorrect. This results from a calculation error when solving for one variable and substituting it into the other equation.",
+        "C": "Incorrect. This results from another calculation error when solving for one variable and substituting it into the other equation.",
+        "D": "Incorrect. This results from yet another calculation error when solving for one variable and substituting it into the other equation."
+      },
+      "correct_choice": "A",
+      "solution": "Solve by elimination: Add both equations: 3x = 12\nDivide by 3: x = 4\nSubstitute x into x + y = 5: 4 + y = 5\nSolve for y: y = 1",
+      "explanation": "This question assesses combining the techniques of solving systems of equations using elimination and substitution.",
+      "common_mistake_notes": "A common mistake is to make an error in calculation when substituting one variable into another equation, leading to incorrect solutions like choice B."
+    },
+    {
+      "id": "EfgHjIkJlMn",
+      "stem": "Find the derivative of f(x) = 3x^2 + 5x - 7\nA) f'(x) = 6x + 5\nB) f'(x) = 6x + 10\nC) f'(x) = 9x + 5\nD) f'(x) = 9x + 10",
+      "choices": {
+        "A": "Correct. This is the result of applying the power rule (f(x) = x^n → f'(x) = nx^(n-1)) and sum/difference rule.",
+        "B": "Incorrect. This results from a calculation error when finding the derivative of the linear term.",
+        "C": "Incorrect. This results from a calculation error when finding the derivative of the quadratic term.",
+        "D": "Incorrect. This results from combining the errors in both terms."
+      },
+      "correct_choice": "A",
+      "solution": "f'(x) = (3x^2)' + (5x)' - (7)' = 6x + 5",
+      "explanation": "This question assesses combining the techniques of differentiating polynomials using the power rule and sum/difference rule.",
+      "common_mistake_notes": "A common mistake is to forget the coefficient when differentiating the linear term, leading to choice B."
+    },
+    {
+      "id": "FghIjKlMnOp",
+      "stem": "Evaluate the integral: ∫(2x + 3)dx\nA) x^2 + 3x + C\nB) x^2 + 6x + C\nC) 2x^2 + 3x + C\nD) 2x^2 + 6x + C",
+      "choices": {
+        "A": "Correct. This is the result of integrating each term separately and applying the power rule for integration (∫x^n dx = x^(n+1)/(n+1)).",
+        "B": "Incorrect. This results from a calculation error when integrating the linear term.",
+        "C": "Incorrect. This results from a calculation error when integrating the constant term.",
+        "D": "Incorrect. This results from combining the errors in both terms."
+      },
+      "correct_choice": "A",
+      "solution": "∫(2x + 3)dx = ∫2xdx + ∫3dx = x^2 + 3x + C",
+      "explanation": "This question assesses combining the techniques of integrating polynomials using the power rule and constant multiple rule.",
+      "common_mistake_notes": "A common mistake is to forget the coefficient when integrating the constant term, leading to choice D."
+    },
+    {
+      "id": "GhiJkLmNOpq",
+      "stem": "Solve for x in the logarithmic equation: log base 2 (8x) = 3\nA) x = 1\nB) x = 2\nC) x = 4\nd) x = 8",
+      "choices": {
+        "A": "Incorrect. This results from applying the power rule to the logarithm without considering the base.",
+        "B": "Incorrect. This results from a calculation error when evaluating the logarithm or exponentiation.",
+        "C": "Correct. This is the result of applying the definition of logarithms and solving for x: 2^3 = 8x → x = 8/8 = 1.",
+        "D": "Incorrect. This results from another calculation error when evaluating the logarithm or exponentiation."
+      },
+      "correct_choice": "C",
+      "solution": "log base 2 (8x) = 3 → 2^3 = 8x → x = 8/8 = 1",
+      "explanation": "This question assesses combining the techniques of logarithmic properties and solving exponential equations.",
+      "common_mistake_notes": "A common mistake is to apply the power rule directly to the logarithm, leading to choice A. This happens when students forget that the base must match for logarithms to be equivalent."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.11.11",
+  "objective_text": "Apply to polynomial expansions",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Expand the binomial (x + 2)^3.",
+      "choices": {
+        "A": "(x^3) + (6x^2) + (12x) + 4",
+        "B": "(x^3) + (2x^2) + (4x) + 8",
+        "C": "(x^3) + (3x^2) + (6x) + 12",
+        "D": "(x^3) + (9x^2) + (18x) + 27"
+      },
+      "correct_choice": "A",
+      "solution": "(x + 2)^3 = x^3 + 3(x^2 \times 2) + 3(x \times 2^2) + 2^3 = x^3 + 6x^2 + 12x + 8",
+      "explanation": "The binomial expansion of (a + b)^n is given by the formula: a^n + n*a^(n-1)*b + ... + n*a*b^(n-1) + b^n. In this case, a = x, b = 2, and n = 3.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply the coefficients by the binomial coefficient (in this case, 3). For example, choosing B would be incorrect because it doesn't account for the correct coefficients."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Expand the polynomial (x - 1)^4.",
+      "choices": {
+        "A": "(x^4) - (4x^3) + (6x^2) - (4x) + 1",
+        "B": "(x^4) - (4x^3) + (8x^2) - (12x) + 8",
+        "C": "(x^4) - (6x^3) + (12x^2) - (8x) + 4",
+        "D": "(x^4) - (8x^3) + (24x^2) - (32x) + 16"
+      },
+      "correct_choice": "A",
+      "solution": "(x - 1)^4 = x^4 - 4(x^3 \times 1) + 6(x^2 \times 1^2) - 4(x \times 1^3) + 1^4 = x^4 - 4x^3 + 6x^2 - 4x + 1",
+      "explanation": "The binomial expansion of (a - b)^n is similar to the one for positive exponents, but with alternating signs: a^n - n*a^(n-1)*b + ... + (-1)^(n-1)n*a*b^(n-1) + (-1)^n*b^n. In this case, a = x, b = 1, and n = 4.",
+      "common_mistake_notes": "A common mistake would be to forget the alternating signs in the expansion. For example, choosing B would be incorrect because it doesn't follow the correct pattern."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Expand the trinomial (x + y - 1)^2.",
+      "choices": {
+        "A": "(x^2) + (2xy) + (y^2) - (2x) - (2y) + 1",
+        "B": "(x^2) + (2xy) + (y^2) + (2x) + (2y) - 2",
+        "C": "(x^2) + (4xy) + (2y^2) - (2x) - (2y) + 1",
+        "D": "(x^2) + (4xy) + (2y^2) + (2x) + (2y) - 2"
+      },
+      "correct_choice": "A",
+      "solution": "(x + y - 1)^2 = (x + y - 1)(x + y - 1) = x^2 + xy + yx + y^2 - x - y - x - y + 1 = x^2 + 2xy + y^2 - 2x - 2y + 1",
+      "explanation": "The expansion of a trinomial (a + b + c)^n can be done by multiplying the binomials formed by each pair of terms. In this case, we have (x + y - 1)(x + y - 1).",
+      "common_mistake_notes": "A common mistake would be to forget to multiply all pairs of terms or to incorrectly distribute the negative sign. For example, choosing C would be incorrect because it doubles the xy term and doesn't account for the correct distribution of signs."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Expand the polynomial (2x - 3)^5.",
+      "choices": {
+        "A": "(32x^5) - (160x^4) + (360x^3) - (432x^2) + (243x) - 243",
+        "B": "(32x^5) - (160x^4) + (360x^3) - (432x^2) + (243x) + 243",
+        "C": "(32x^5) - (160x^4) + (360x^3) - (432x^2) - (243x) - 243",
+        "D": "(32x^5) - (160x^4) + (360x^3) - (432x^2) - (243x) + 243"
+      },
+      "correct_choice": "A",
+      "solution": "(2x - 3)^5 = (2x)^5 - 5(2x)^4 \times (-3) + ... + 5(2x)(-3)^4 - (-3)^5 = 32x^5 - 160x^4 + 360x^3 - 432x^2 + 243x - 243",
+      "explanation": "The binomial expansion of (a - b)^n can be expanded using the same formula as for positive exponents, but with alternating signs. In this case, a = 2x and b = -3.",
+      "common_mistake_notes": "A common mistake would be to forget the alternating signs or to misapply them in the expansion. For example, choosing B would be incorrect because it doesn't follow the correct pattern."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Expand the polynomial (x + 3)^2 - (x - 1)^2.",
+      "choices": {
+        "A": "(2x^2) + (4x) + 8",
+        "B": "(2x^2) + (4x) + 6",
+        "C": "(2x^2) + (4x) + 4",
+        "D": "(2x^2) - (4x) + 4"
+      },
+      "correct_choice": "C",
+      "solution": "(x + 3)^2 - (x - 1)^2 = (x^2 + 6x + 9) - (x^2 - 2x + 1) = x^2 + 6x + 9 - x^2 + 2x - 1 = 8x + 8",
+      "explanation": "To expand the difference of squares, we can use the identity: (a^2 - b^2) = (a + b)(a - b). In this case, a = x + 3 and b = x - 1.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the difference of squares formula or to forget to distribute the negative sign in the subtraction. For example, choosing D would be incorrect because it doesn't follow the correct pattern."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Expand the polynomial (x + 2)(x - 3)^3.",
+      "choices": {
+        "A": "(x^4) - (5x^3) + (12x^2) - (18x) + 27",
+        "B": "(x^4) - (9x^3) + (27x^2) - (54x) + 81",
+        "C": "(x^4) - (6x^3) + (15x^2) - (24x) + 24",
+        "D": "(x^4) - (12x^3) + (54x^2) - (90x) + 81"
+      },
+      "correct_choice": "A",
+      "solution": "(x + 2)(x - 3)^3 = x(x - 3)^3 + 2(x - 3)^3 = x(x^2 - 6x + 9) + 2(x^2 - 6x + 9) = x^3 - 6x^2 + 9x + 2x^2 - 12x + 18 = x^4 - 5x^3 + 12x^2 - 18x + 27",
+      "explanation": "To expand the product of two polynomials, we can use the distributive property: (a \times b) + (c \times d). In this case, a = x, b = (x - 3)^3, c = 2, and d = (x - 3)^3.",
+      "common_mistake_notes": "A common mistake would be to forget to distribute one or both of the factors or to incorrectly expand the power. For example, choosing B would be incorrect because it doesn't account for the correct distribution of terms."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Expand the polynomial (x - 1)(2x + 3)^2.",
+      "choices": {
+        "A": "(2x^3) + (9x^2) - (4x) - 6",
+        "B": "(2x^3) + (8x^2) - (5x) - 6",
+        "C": "(2x^3) + (7x^2) - (6x) - 6",
+        "D": "(2x^3) + (6x^2) - (7x) - 6"
+      },
+      "correct_choice": "C",
+      "solution": "(x - 1)(2x + 3)^2 = (x - 1)(4x^2 + 12x + 9) = 4x^3 + 12x^2 + 9x - 4x^2 - 12x - 9 = 2x^3 + 7x^2 - 6x - 6",
+      "explanation": "To expand the product of two polynomials, we can use the distributive property: (a \times b) + (c \times d). In this case, a = x - 1, b = (2x + 3)^2, and c = d = 1.",
+      "common_mistake_notes": "A common mistake would be to forget to distribute one or both of the factors or to incorrectly expand the power. For example, choosing B would be incorrect because it doesn't account for the correct distribution of terms."
+    }
+  ]
+}

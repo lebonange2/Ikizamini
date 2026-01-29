@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.7.4 Apply proof by cases
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.7 Proof Techniques
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Prove that the sum of two even integers is always an even integer.
+A) Let x and y be odd integers. Then, x + y = 2k + 2m = 2(k+m), where k and m are integers. Thus, the sum of two even integers is even.
+B) Let x and y be even integers. Then, x + y = 2k + 2m = 2(k+1) + 2(m+1), where k and m are integers. This is incorrect because it uses odd integers instead of even integers in the proof.
+C) Let x and y be odd integers. Then, x + y = 2k + 2m = 2(k+m) + 1, where k and m are integers. Thus, the sum of two odd integers is odd.
+D) Let x and y be even integers. Then, x + y = 2k + 2m + 1, where k and m are integers. This is incorrect because it incorrectly concludes that the sum of two even integers is odd.
+Correct Answer: B
+
+Solution:
+The correct proof uses even integers (not odd) for x and y. The sum of two even integers will always result in an even number because you can factor out a 2 from their sum. Choice A uses odd integers, which does not prove the statement. Choice C is about the sum of two odd integers, and choice D incorrectly concludes that the sum of two even integers is odd.
+
+Explanation:
+This question tests the understanding of proof by cases and how to correctly apply it to demonstrate that the sum of two even integers is always an even integer.
+
+Common mistake note:
+Common mistake: Choosing A or D, which use odd integers instead of even integers in the proof.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Prove that if a number n is divisible by 6, then it is also divisible by both 2 and 3.
+A) Let n be an integer. If n is divisible by 6, then there exists an integer k such that n = 6k. Since 6 = 2 × 3, n must also be divisible by 2 and 3.
+B) Let n be an integer. If n is divisible by 6, then there exists an integer k such that n = 2k + 3k. Since 2k is divisible by 2 and 3k is divisible by 3, n must also be divisible by 2 and 3.
+C) Let n be an integer. If n is divisible by 6, then there exists an integer k such that n = 3k + 2k. Since 3k is divisible by 3 and 2k is divisible by 2, n must also be divisible by 5.
+D) Let n be an integer. If n is divisible by 6, then there exists an integer k such that n = 4k + 1k. Since 4k is divisible by 4 and 1k is divisible by 1, n must also be divisible by 4.
+Correct Answer: A
+
+Solution:
+The correct proof uses the fact that 6 is a product of 2 and 3 (6 = 2 × 3). If n is divisible by 6, it means it can be written as 6k for some integer k. Choice B uses an incorrect representation of n, choice C incorrectly concludes divisibility by 5, and choice D uses unrelated numbers.
+
+Explanation:
+This question assesses the understanding of proof by cases in demonstrating that if a number is divisible by a product of two numbers, it must be divisible by those individual numbers as well.
+
+Common mistake note:
+Common mistake: Choosing B or C, which use incorrect representations or conclusions about n's divisibility.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Prove that if a triangle has two sides with lengths 5 and 7 units, the third side must be shorter than 12 units.
+A) Let x be the length of the third side. By the Triangle Inequality Theorem, x < 5 + 7 = 12. Thus, the third side is always shorter than 12 units.
+B) Let x be the length of the third side. By the Pythagorean Theorem, x^2 < 5^2 + 7^2, which simplifies to x < 12. However, this only holds for right triangles.
+C) Let x be the length of the third side. If x = 12, then the triangle would be degenerate and not a proper triangle, so x must be shorter than 12 units.
+D) Let x be the length of the third side. Since the sum of any two sides of a triangle must be greater than the third side, x < 5 + 7 = 12. Thus, the third side is always shorter than 12 units.
+Correct Answer: D
+
+Solution:
+The correct proof uses the Triangle Inequality Theorem, which states that the sum of any two sides of a triangle must be greater than the third side. Choice A omits the word 'sum' and choice B applies the Pythagorean Theorem, which is not relevant to this problem. Choice C discusses degenerate triangles but does not provide a formal proof.
+
+Explanation:
+This question tests the application of proof by cases in demonstrating constraints on the length of the third side based on the lengths of two other sides in a triangle.
+
+Common mistake note:
+Common mistake: Choosing A or B, which use incorrect or irrelevant theorems.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Prove that if a number is divisible by 9, it ends with either 0 or 9 in its units place.
+A) Let n be an integer. If n is divisible by 9, then there exists an integer k such that n = 9k. The units digit of 9k will always be 0 or 9, depending on the value of k mod 10.
+B) Let n be an integer. If n is divisible by 9, then there exists an integer k such that n = 3k + 6k. The units digit of 3k will always be 3 or 6 and 6k will always be 6 or 3, so the sum's units digit can never be 0 or 9.
+C) Let n be an integer. If n is divisible by 9, then there exists an integer k such that n = 4k + 5k. The units digit of 4k will always be 4 or 8 and 5k will always be 5, so the sum's units digit can never be 0 or 9.
+D) Let n be an integer. If n is divisible by 9, then there exists an integer k such that n = 7k + 2k. The units digit of 7k will always be 7 or 4 and 2k will always be 2, so the sum's units digit can never be 0 or 9.
+Correct Answer: A
+
+Solution:
+The correct proof uses the fact that a number divisible by 9 has a units digit that is the result of multiplying 9 by an integer k. Choice B and C use incorrect representations of n, and choice D incorrectly concludes that the sum's units digit can never be 0 or 9.
+
+Explanation:
+This question assesses the understanding of proof by cases in demonstrating the relationship between a number's divisibility by 9 and its units digit.
+
+Common mistake note:
+Common mistake: Choosing B, C, or D, which use incorrect representations or conclusions about n's units digit.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Prove that if a positive integer is divisible by both 4 and 6, it must also be divisible by 12.
+A) Let n be an integer. If n is divisible by both 4 and 6, then there exist integers k and m such that n = 4k and n = 6m. Since 4 and 6 have no common factors other than 2, the least common multiple of 4 and 6 is 12, so n must be divisible by 12.
+B) Let n be an integer. If n is divisible by both 4 and 6, then there exist integers k and m such that n = 2k + 3m. Since 2k is divisible by 4 and 3m is divisible by 6, n must also be divisible by 18.
+C) Let n be an integer. If n is divisible by both 4 and 6, then there exist integers k and m such that n = 5k + 7m. Since 5k is divisible by 5 and 7m is divisible by 7, n must also be divisible by 12.
+D) Let n be an integer. If n is divisible by both 4 and 6, then there exist integers k and m such that n = 8k + 12m. Since 8k is divisible by 8 and 12m is divisible by 12, n must also be divisible by 20.
+Correct Answer: A
+
+Solution:
+The correct proof uses the fact that if a number is divisible by two numbers with no common factors other than 1, its least common multiple is their product. Choice B, C, and D use incorrect representations of n or incorrect conclusions about divisibility.
+
+Explanation:
+This question tests the application of proof by cases in demonstrating that if a number is divisible by two numbers, it must also be divisible by their least common multiple.
+
+Common mistake note:
+Common mistake: Choosing B, C, or D, which use incorrect representations or conclusions about n's divisibility.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Prove that if a triangle has two angles measuring 30° and 60°, the third angle must measure 90°.
+A) Let A, B, and C be the angles of the triangle. If A = 30° and B = 60°, then C = 180° - (A + B) = 180° - 90° = 90°. Thus, the third angle is always 90°.
+B) Let A, B, and C be the angles of the triangle. If A = 30° and B = 60°, then C = 2 × (A + B) = 2 × 90° = 180°. This is not possible for a triangle.
+C) Let A, B, and C be the angles of the triangle. If A = 30° and B = 60°, then C = A + B = 30° + 60° = 90°. However, this only holds if A and B are adjacent angles.
+D) Let A, B, and C be the angles of the triangle. If A = 30° and B = 60°, then C = 180° - (A ≈ B) = 180° - 90° = 90°. This is not a valid way to calculate the third angle.
+Correct Answer: A
+
+Solution:
+The correct proof uses the fact that the sum of angles in a triangle must be 180°. Choice B calculates an impossible total for a triangle, choice C assumes adjacent angles without proof, and choice D uses an incorrect method to calculate the third angle.
+
+Explanation:
+This question assesses the application of proof by cases in demonstrating constraints on the angles of a triangle based on given angle measurements.
+
+Common mistake note:
+Common mistake: Choosing B, C, or D, which use incorrect calculations or assumptions.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Prove that if a number is divisible by 15, it must also be divisible by both 3 and 5.
+A) Let n be an integer. If n is divisible by 15, then there exists an integer k such that n = 15k. Since 15 = 3 × 5, n must also be divisible by 3 and 5.
+B) Let n be an integer. If n is divisible by 15, then there exists an integer k such that n = 2k + 8k. Since 2k is divisible by 2 and 8k is divisible by 4, n must also be divisible by 6.
+C) Let n be an integer. If n is divisible by 15, then there exists an integer k such that n = 7k + 8k. Since 7k is divisible by 7 and 8k is divisible by 8, n must also be divisible by 15.
+D) Let n be an integer. If n is divisible by 15, then there exists an integer k such that n = 4k + 6k. Since 4k is divisible by 4 and 6k is divisible by 6, n must also be divisible by 10.
+Correct Answer: A
+
+Solution:
+The correct proof uses the fact that a number divisible by 15 can be represented as a product of 3 and 5. Choice B, C, and D use incorrect representations of n or incorrect conclusions about divisibility.
+
+Explanation:
+This question tests the application of proof by cases in demonstrating that if a number is divisible by a multiple of two numbers, it must also be divisible by those individual numbers.
+
+Common mistake note:
+Common mistake: Choosing B, C, or D, which use incorrect representations or conclusions about n's divisibility.
+------------------------------------------------------------------------------

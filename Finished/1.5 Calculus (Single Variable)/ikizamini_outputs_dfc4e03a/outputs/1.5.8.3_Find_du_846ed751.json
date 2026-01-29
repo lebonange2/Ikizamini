@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.8.3",
+  "objective_text": "Find du",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1.5.8.3]Q1",
+      "stem": "Find the derivative of f(x) = x^2 with respect to x.",
+      "choices": {
+        "A": "2x",
+        "B": "x^2",
+        "C": "2",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of x^n is nx^(n-1). So, the derivative of f(x) = x^2 is 2x.",
+      "explanation": "This question tests basic understanding of differentiation rules for simple polynomials.",
+      "common_mistake_notes": "Common mistake: Choosing B (x^2), which is the original function and not its derivative."
+    },
+    {
+      "id": "[1.5.8.3]Q2",
+      "stem": "Find du if u = 3sin(x) + 4cos(x).",
+      "choices": {
+        "A": "3cos(x) - 4sin(x)",
+        "B": "3sin(x) + 4cos(x)",
+        "C": "0",
+        "D": "du/dx"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of u = a*sin(x) + b*cos(x) is du/dx = a*cos(x) - b*sin(x). So, du/dx = 3cos(x) - 4sin(x).",
+      "explanation": "This question tests the chain rule and differentiation of trigonometric functions.",
+      "common_mistake_notes": "Common mistake: Choosing B (3sin(x) + 4cos(x)), which is the original function u, not its derivative."
+    },
+    {
+      "id": "[1.5.8.3]Q3",
+      "stem": "Find du if u = e^(2x) - ln(3x).",
+      "choices": {
+        "A": "2e^(2x) - 1/(3x)",
+        "B": "e^(2x) + 1/3x",
+        "C": "e^(2x) - 3",
+        "D": "ln(3x)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of u = a*e^(bx) is du/dx = ab*e^(bx), and the derivative of ln(ax) is du/dx = 1/(ax). So, du/dx = 2e^(2x) - 1/(3x).",
+      "explanation": "This question tests differentiation rules for exponential and logarithmic functions.",
+      "common_mistake_notes": "Common mistake: Choosing B (e^(2x) + 1/3x), which combines the derivatives incorrectly."
+    },
+    {
+      "id": "[1.5.8.3]Q4",
+      "stem": "Find du if u = √(x^2 + 1).",
+      "choices": {
+        "A": "(2x)/(2√(x^2 + 1))",
+        "B": "x/(x^2 + 1)",
+        "C": "1/2",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of u = √(f(x)) is du/dx = (1/2) * f'(x) / √(f(x)). So, du/dx = (1/2) * 2x / √(x^2 + 1) = (2x)/(2√(x^2 + 1)).",
+      "explanation": "This question tests the chain rule and differentiation of a composite function involving a square root.",
+      "common_mistake_notes": "Common mistake: Choosing B (x/(x^2 + 1)), which is the derivative of x inside the square root, not the entire function."
+    },
+    {
+      "id": "[1.5.8.3]Q5",
+      "stem": "Find du if u = sin(x)cos(x).",
+      "choices": {
+        "A": "cos^2(x) - sin^2(x)",
+        "B": "sin(x)cos(x)",
+        "C": "sin(x)",
+        "D": "cos(x)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of u = sin(x)cos(x) can be found using the product rule: du/dx = cos(x)d/dx(sin(x)) + sin(x)d/dx(cos(x)). This simplifies to cos^2(x) - sin^2(x).",
+      "explanation": "This question tests the product rule and trigonometric identities.",
+      "common_mistake_notes": "Common mistake: Choosing B (sin(x)cos(x)), which is the original function, not its derivative."
+    },
+    {
+      "id": "[1.5.8.3]Q6",
+      "stem": "Find du if u = x^3e^(2x).",
+      "choices": {
+        "A": "3x^2e^(2x) + 2x^3e^(2x)",
+        "B": "x^3e^(2x)",
+        "C": "3x^2e^(2x)",
+        "D": "2x^3e^(2x)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of u = a*x^n*e^(bx) is du/dx = na*x^(n-1)e^(bx) + bax^ne^(bx). So, du/dx = 3x^2e^(2x) + 2x^3e^(2x).",
+      "explanation": "This question tests the product rule and differentiation of a composite function involving an exponential function.",
+      "common_mistake_notes": "Common mistake: Choosing B (x^3e^(2x)), which is the original function, not its derivative."
+    },
+    {
+      "id": "[1.5.8.3]Q7",
+      "stem": "Find du if u = ln(4x^2 + 1).",
+      "choices": {
+        "A": "(8x)/(4x^2 + 1)",
+        "B": "ln(4x^2 + 1)",
+        "C": "1/(4x^2 + 1)",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of u = ln(f(x)) is du/dx = f'(x) / f(x). So, du/dx = (8x)/(4x^2 + 1).",
+      "explanation": "This question tests the chain rule and differentiation of a composite function involving a logarithm.",
+      "common_mistake_notes": "Common mistake: Choosing B (ln(4x^2 + 1)), which is the original function, not its derivative."
+    }
+  ]
+}

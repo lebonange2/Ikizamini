@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.4.12 Apply to polynomial factorization
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.4 Powers and Roots of Complex Numbers
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Factor the polynomial: x^3 - 6x^2 + 9x
+A) (x - 3)^3
+B) x(x - 3)(x + 3)
+C) x(x - 9)^2
+D) (x - 3)(x^2 - 3)
+Correct Answer: A
+
+Solution:
+The polynomial can be factored by recognizing the common factor of each term, which is x. Then we can factor out x and use the difference of cubes formula on the remaining binomial: (x - 3)^3. So, the correct factorization is (x - 3)^3.
+
+Explanation:
+The difference of cubes formula states that a^3 - b^3 = (a - b)(a^2 + ab + b^2). In this case, x^3 - 3^3 can be factored using the formula with a = x and b = 3.
+
+Common mistake note:
+A common mistake is to try to factor the polynomial as x(x^2 - 6x + 9), which would result in x(x - 3)^2. This is incorrect because it does not fully factor the quadratic inside the parentheses.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Factor the polynomial: 4x^2 + 12xy + 9y^2
+A) (2x + 3y)(2x - 3y)
+B) (4x + 3y)^2
+C) (2x + 3y)^3
+D) (2x + 3y)(x + 3y)
+Correct Answer: D
+
+Solution:
+The polynomial is a perfect square trinomial, which can be factored as (2x + 3y)^2. To see this, notice that the first and last terms are both perfect squares of binomials: (2x)^2 = 4x^2 and (3y)^2 = 9y^2. The middle term is twice the product of the square roots of the first and last terms: 2 * 2x * 3y = 12xy.
+
+Explanation:
+Perfect square trinomials have the form a^2 + 2ab + b^2, which factors to (a + b)^2. In this case, a = 2x and b = 3y.
+
+Common mistake note:
+A common mistake is to try to factor it as (4x + 9y)(x + y), but the middle term does not match the product of the outer terms' coefficients.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Factor the polynomial: x^2 - 5x + 6
+A) (x - 1)(x - 6)
+B) (x - 2)(x - 3)
+C) (x + 1)(x + 6)
+D) (x + 2)(x + 3)
+Correct Answer: B
+
+Solution:
+The polynomial can be factored by finding two numbers that multiply to the constant term (6) and add up to the coefficient of x (-5). These numbers are -2 and -3. So, the factorization is (x - 2)(x - 3).
+
+Explanation:
+To factor a quadratic trinomial of the form ax^2 + bx + c, we need to find two numbers that multiply to ac and add up to b.
+
+Common mistake note:
+A common mistake is to try to factor it as (x - 6)(x + 1) or (x + 6)(x - 1), which would result in incorrect factors.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Factor the polynomial: 27x^3 - 18x^2 + 3x
+A) 3x(9x - 6)^2
+B) 3x(3x - 1)^2
+C) 9x(3x - 1)(x - 1)
+D) 9x(3x - 1)^2
+Correct Answer: C
+
+Solution:
+The polynomial can be factored by first dividing all terms by the greatest common factor, which is 3x. Then we have x^2 - 2x + 1, which is a perfect square trinomial that factors to (x - 1)^2. So, the complete factorization is 9x(3x - 1)(x - 1).
+
+Explanation:
+We first simplify by dividing all terms by the common factor, then recognize the remaining trinomial as a perfect square.
+
+Common mistake note:
+A common mistake is to not divide by the GCF and try to factor the polynomial as (27x^2 - 18x + 3)(x), which would result in an incorrect factorization.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Factor the polynomial: x^4 - 16
+A) (x^2 - 4)(x^2 + 4)
+B) $(x^2 + 4)^2$
+C) $(x - 2)(x + 2)^3$
+D) $(x - 2)^2(x + 2)^2$
+Correct Answer: D
+
+Solution:
+The polynomial is the difference of squares, which can be factored as (a^2 - b^2) = (a - b)(a + b). In this case, a = x^2 and b = 4. So, we have (x^2 - 4)(x^2 - 4), which simplifies to $(x - 2)^2(x + 2)^2$ because (x^2 - 4) is a difference of squares itself.
+
+Explanation:
+The difference of squares can be factored as (a - b)(a + b). In this case, we have two differences of squares: x^4 - 16 = (x^2)^2 - 4^2.
+
+Common mistake note:
+A common mistake is to factor it as $(x - 2)(x + 2)^2$, which would result in an incorrect factorization because the middle term does not match.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Factor the polynomial: 16x^4 - 81y^4
+A) $(4x^2 - 9y^2)(4x^2 + 9y^2)$
+B) $(4x^2 - 9y^2)^2$
+C) $(4x - 9y)(4x + 9y)^3$
+D) $(4x - 9y)^2(4x + 9y)^2$
+Correct Answer: A
+
+Solution:
+The polynomial is the difference of squares, which can be factored as (a^2 - b^2) = (a - b)(a + b). In this case, a = 4x^2 and b = 9y^2. So, we have $(4x^2 - 9y^2)(4x^2 + 9y^2)$.
+
+Explanation:
+The difference of squares can be factored as (a - b)(a + b). In this case, a and b are both binomials: a = 4x^2 and b = 9y^2.
+
+Common mistake note:
+A common mistake is to try to factor it as $(4x - 9y)^2(4x + 9y)$, which would result in an incorrect factorization because the middle term does not match.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Factor the polynomial: x^3y - 6x^2y^2 + 9xy^3
+A) xy(x - 3)^3
+B) $xy(x - 3)(x^2 - 3)$
+C) $xy(x - 3)^2(x + 3)$
+D) $xy(x - 3)^2(x - 3)$
+Correct Answer: A
+
+Solution:
+The polynomial can be factored by recognizing the common factor of each term, which is xy. Then we can use the difference of cubes formula on the remaining binomial: (x - 3)^3. So, the correct factorization is xy(x - 3)^3.
+
+Explanation:
+The difference of cubes formula states that a^3 - b^3 = (a - b)(a^2 + ab + b^2). In this case, x^3 - 3^3 can be factored using the formula with a = x and b = 3. The common factor xy is factored out.
+
+Common mistake note:
+A common mistake is to try to factor it as $xy(x - 3)(x^2 - 9)$, which would result in an incorrect factorization because it does not fully factor the quadratic inside the parentheses.
+------------------------------------------------------------------------------

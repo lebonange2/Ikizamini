@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.9.9",
+  "objective_text": "Graph rose curves: r = a cos(nθ)",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Sketch the graph of the polar equation r = 2 cos(3θ). Which of the following best describes the curve?",
+      "choices": {
+        "A": "A circle with radius 2.",
+        "B": "A cardioid.",
+        "C": "A three-leafed rose curve.",
+        "D": "A six-leafed rose curve."
+      },
+      "correct_choice": "C",
+      "solution": "The equation r = 2 cos(3θ) represents a rose curve with n = 3, which means it will have 3 petals. Thus, the correct answer is C: A three-leafed rose curve.",
+      "explanation": "Rose curves are formed when n is an odd number; they have n petals. When n is even, the graph forms a petal-reflected curve (like a circle or cardioid). In this case, n = 3, which is odd.",
+      "common_mistake_notes": "Common mistake: Choosing A (circle) because of the radius 2. The presence of 'cos(3θ)' indicates that it's not a simple circle but a more complex rose curve."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Sketch the graph of r = 4 sin(6θ). Which type of polar curve does this equation represent?",
+      "choices": {
+        "A": "A cardioid.",
+        "B": "A six-leafed rose curve.",
+        "C": "An Archimedean spiral.",
+        "D": "A circle."
+      },
+      "correct_choice": "B",
+      "solution": "The equation r = 4 sin(6θ) represents a rose curve with n = 6, which means it will have 6 petals. Therefore, the correct answer is B: A six-leafed rose curve.",
+      "explanation": "Rose curves are formed when n is an odd number for cos or even for sin; they have n petals. In this case, n = 6, which is even, and since it's 'sin', it forms a rose curve.",
+      "common_mistake_notes": "Common mistake: Choosing A (cardioid) because of the sine function. The presence of '6θ' indicates that it's not a cardioid but a six-leafed rose curve."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Sketch the graph of r = 3 cos(4θ). Which of the following best describes the symmetry of the curve?",
+      "choices": {
+        "A": "Symmetric about both the polar axis and the vertical line θ = π/2.",
+        "B": "Symmetric only about the polar axis.",
+        "C": "Symmetric only about the vertical line θ = π/2.",
+        "D": "No symmetry."
+      },
+      "correct_choice": "B",
+      "solution": "The equation r = 3 cos(4θ) represents a rose curve with n = 4, which is even. Even values of n result in symmetry only about the polar axis (θ-axis). So, the correct answer is B: Symmetric only about the polar axis.",
+      "explanation": "Rose curves with even n are symmetric about the polar axis but not about any vertical line. In this case, n = 4, which is even.",
+      "common_mistake_notes": "Common mistake: Choosing C (symmetric about θ = π/2) because of the cosine function. Even values of n for cos or odd values of n for sin result in symmetry only about the polar axis."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Sketch the graph of r = 5 sin(7θ). Which of the following best describes the number of petals?",
+      "choices": {
+        "A": "One petal.",
+        "B": "Two petals.",
+        "C": "Seven petals.",
+        "D": "No petals (a point)."
+      },
+      "correct_choice": "C",
+      "solution": "The equation r = 5 sin(7θ) represents a rose curve with n = 7, which means it will have 7 petals. So, the correct answer is C: Seven petals.",
+      "explanation": "Rose curves are formed when n is an odd number for sin; they have n petals. In this case, n = 7, which is odd.",
+      "common_mistake_notes": "Common mistake: Choosing A (one petal) because of the sine function. The presence of '7θ' indicates that it's not a single petal but a seven-leafed rose curve."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Sketch the graph of r = 6 cos(8θ). Which type of polar curve does this equation represent?",
+      "choices": {
+        "A": "A circle.",
+        "B": "An Archimedean spiral.",
+        "C": "A cardioid.",
+        "D": "A four-leafed rose curve."
+      },
+      "correct_choice": "D",
+      "solution": "The equation r = 6 cos(8θ) represents a rose curve with n = 8, which means it will have 4 petals (since 8 is even). So, the correct answer is D: A four-leafed rose curve.",
+      "explanation": "Rose curves are formed when n is an odd number for cos or even for sin; they have n/2 petals. In this case, n = 8, which is even, and since it's 'cos', it forms a four-leafed rose curve.",
+      "common_mistake_notes": "Common mistake: Choosing A (circle) because of the cosine function. The presence of '8θ' indicates that it's not a circle but a four-leafed rose curve."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Sketch the graph of r = 7 sin(9θ). Which of the following best describes the symmetry of the curve?",
+      "choices": {
+        "A": "Symmetric about both the polar axis and the vertical line θ = π/2.",
+        "B": "No symmetry.",
+        "C": "Symmetric only about the polar axis.",
+        "D": "Symmetric only about the vertical line θ = π/2."
+      },
+      "correct_choice": "B",
+      "solution": "The equation r = 7 sin(9θ) represents a rose curve with n = 9, which is odd. Odd values of n result in no symmetry. So, the correct answer is B: No symmetry.",
+      "explanation": "Rose curves with odd n have no symmetry about either the polar axis or any vertical line. In this case, n = 9, which is odd.",
+      "common_mistake_notes": "Common mistake: Choosing C (symmetric about θ = π/2) because of the sine function. Odd values of n for sin result in no symmetry."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Sketch the graph of r = 8 cos(10θ). Which of the following best describes the number of petals?",
+      "choices": {
+        "A": "Ten petals.",
+        "B": "No petals (a point).",
+        "C": "Five petals.",
+        "D": "One petal."
+      },
+      "correct_choice": "C",
+      "solution": "The equation r = 8 cos(10θ) represents a rose curve with n = 10, which means it will have 5 petals (since 10 is even). So, the correct answer is C: Five petals.",
+      "explanation": "Rose curves are formed when n is an odd number for cos or even for sin; they have n/2 petals. In this case, n = 10, which is even, and since it's 'cos', it forms a five-leafed rose curve.",
+      "common_mistake_notes": "Common mistake: Choosing A (ten petals) because of the cosine function. The presence of '10θ' indicates that it's not ten petals but a five-leafed rose curve."
+    }
+  ]
+}

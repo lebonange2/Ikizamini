@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.5.6",
+  "objective_text": "Prove z·z̄ = |z|²",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Given a complex number z = a + bi, where a and b are real numbers, what is the result of multiplying z by its conjugate z̄?",
+      "choices": {
+        "A": "(a - bi)(a + bi)",
+        "B": "a² + b²",
+        "C": "2ab",
+        "D": "a² - b²"
+      },
+      "correct_choice": "B",
+      "solution": "The conjugate of z = a + bi is z̄ = a - bi. When we multiply z by its conjugate, we get (a + bi)(a - bi). Expanding this product using the difference of squares formula gives us a² - (bi)². Since (bi)² = b²i² and i² = -1, we have a² - b²(-1), which simplifies to a² + b². Therefore, z·z̄ = |z|².",
+      "explanation": "This is the fundamental property of complex numbers that relates the product of a number and its conjugate to the square of its modulus.",
+      "common_mistake_notes": "A common mistake would be to choose (A), which is the product before simplification. Students might forget to apply the difference of squares formula or miss the fact that i² = -1."
+    },
+    {
+      "id": "Qwerty",
+      "stem": "Given z = 3 + 4i, what is the value of |z|²?",
+      "choices": {
+        "A": "25",
+        "B": "9",
+        "C": "7",
+        "D": "16"
+      },
+      "correct_choice": "A",
+      "solution": "Given z = 3 + 4i, we first find the conjugate z̄ = 3 - 4i. Then we calculate z·z̄ by multiplying z and its conjugate: (3 + 4i)(3 - 4i) = 9 - 16i². Since i² = -1, we have 9 - 16(-1) = 9 + 16 = 25. Now we find |z|² by squaring the modulus of z: |z|² = (sqrt(3^2 + 4^2))^2 = sqrt(9 + 16)^2 = 5^2 = 25.",
+      "explanation": "This question tests the understanding of applying the formula z·z̄ = |z|² to a specific complex number.",
+      "common_mistake_notes": "Students might forget to square the modulus after finding z·z̄ or make an arithmetic error in calculating the modulus."
+    },
+    {
+      "id": "Zxcvb",
+      "stem": "Given z = -2 + 3i, what is the value of |z|²?",
+      "choices": {
+        "A": "13",
+        "B": "4",
+        "C": "9",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "Given z = -2 + 3i, we first find the conjugate z̄ = -2 - 3i. Then we calculate z·z̄ by multiplying z and its conjugate: (-2 + 3i)(-2 - 3i) = 4 - 9i². Since i² = -1, we have 4 - 9(-1) = 4 + 9 = 13. Now we find |z|² by squaring the modulus of z: |z|² = (sqrt((-2)^2 + 3^2))^2 = sqrt(4 + 9)^2 = sqrt(13)^2 = 13.",
+      "explanation": "This question tests the application of the formula to a complex number with negative real and imaginary parts.",
+      "common_mistake_notes": "Students might mix up the signs when calculating z·z̄ or make an error in finding the modulus."
+    },
+    {
+      "id": "Bnm",
+      "stem": "What is the relationship between |z|² and the sum of the squares of the real and imaginary parts of z?",
+      "choices": {
+        "A": "They are equal.",
+        "B": "They differ by a factor of 2.",
+        "C": "They differ by a factor of i.",
+        "D": "They have no specific relationship."
+      },
+      "correct_choice": "A",
+      "solution": "The modulus of a complex number z = a + bi is given by |z| = sqrt(a² + b²). Squaring this gives us |z|² = (sqrt(a² + b²))^2 = a² + b². Therefore, |z|² is equal to the sum of the squares of the real and imaginary parts of z.",
+      "explanation": "This question tests the understanding of the definition of modulus and its connection to the formula z·z̄ = |z|².",
+      "common_mistake_notes": "Students might think that there's a scaling factor involved or混淆 the concept with other operations on complex numbers."
+    },
+    {
+      "id": "Ghj",
+      "stem": "Given z = 2i, what is the value of z·z̄?",
+      "choices": {
+        "A": "4",
+        "B": "0",
+        "C": "8",
+        "D": "-4"
+      },
+      "correct_choice": "A",
+      "solution": "Given z = 2i, its conjugate is z̄ = -2i. The product z·z̄ is (2i)(-2i) = -4i². Since i² = -1, we have -4(-1) = 4. Therefore, z·z̄ = |z|² = 4.",
+      "explanation": "This question tests the application of the formula to a complex number with zero real part.",
+      "common_mistake_notes": "Students might forget that i² = -1 or make an arithmetic error when calculating the product."
+    },
+    {
+      "id": "Hjk",
+      "stem": "Given z·z̄ = 25, what is the value of |z|?",
+      "choices": {
+        "A": "±5",
+        "B": "±sqrt(5)",
+        "C": "5",
+        "D": "sqrt(5)"
+      },
+      "correct_choice": "C",
+      "solution": "Given z·z̄ = 25, we know that |z|² = 25. Taking the square root of both sides gives us |z| = ±sqrt(25). Since the modulus of a complex number is always non-negative, we take only the positive value: |z| = 5.",
+      "explanation": "This question tests the understanding of how to find the modulus given z·z̄.",
+      "common_mistake_notes": "Students might forget that the modulus is always non-negative and include both positive and negative solutions."
+    },
+    {
+      "id": "Uyt",
+      "stem": "Given z = -1 + 2i, what is the value of |z|²?",
+      "choices": {
+        "A": "5",
+        "B": "9",
+        "C": "3",
+        "D": "7"
+      },
+      "correct_choice": "A",
+      "solution": "Given z = -1 + 2i, we first find the conjugate z̄ = -1 - 2i. Then we calculate z·z̄ by multiplying z and its conjugate: (-1 + 2i)(-1 - 2i) = 1 - 4i². Since i² = -1, we have 1 - 4(-1) = 1 + 4 = 5. Now we find |z|² by squaring the modulus of z: |z|² = (sqrt((-1)^2 + 2^2))^2 = sqrt(1 + 4)^2 = sqrt(5)^2 = 5.",
+      "explanation": "This question tests the application of the formula to a complex number with both negative real and imaginary parts.",
+      "common_mistake_notes": "Students might make errors when calculating z·z̄ or finding the modulus."
+    }
+  ]
+}

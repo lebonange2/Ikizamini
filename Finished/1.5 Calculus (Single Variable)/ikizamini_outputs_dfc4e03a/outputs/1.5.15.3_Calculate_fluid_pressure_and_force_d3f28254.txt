@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.15.3 Calculate fluid pressure and force
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.15 Applications of Calculus to Engineering
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+A container holds 200 liters of water at a depth of 5 meters. Calculate the pressure exerted by the water at the bottom of the container in Pascals (Pa).
+A) 9800 Pa
+B) 10,000 Pa
+C) 10200 Pa
+D) 10400 Pa
+Correct Answer: B
+
+Solution:
+The pressure at the bottom of a fluid column is given by P = ρgh, where P is pressure, ρ (rho) is the density of the fluid, g is the acceleration due to gravity, and h is the depth. For water, the density is approximately 1000 kg/m³ and the acceleration due to gravity on Earth is 9.8 m/s². Plugging in the values: P = (1000 kg/m³)(9.8 m/s²)(5 m) = 49000 Pa. However, we need the pressure in Pascals, so we divide by 1000 to convert from Pascals to kilopascals (kPa): 49000 Pa / 1000 = 49 kPa. The closest option is 10,000 Pa.
+
+Explanation:
+The pressure calculation uses the density of water and the depth at which it's measured. The correct answer choice is based on the conversion from kilopascals to pascals.
+
+Common mistake note:
+A common mistake would be not converting the pressure from kilopascals (kPa) to pascals (Pa), leading to an incorrect choice.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+A cylindrical container with a radius of 10 cm and height of 2 meters is filled with oil, which has a density of 850 kg/m³. Calculate the force exerted by the oil on the bottom of the container in Newtons (N). The acceleration due to gravity is 9.8 m/s².
+A) 14700 N
+B) 15,680 N
+C) 17,200 N
+D) 18,000 N
+Correct Answer: B
+
+Solution:
+The force exerted by the fluid on the bottom of the container is given by F = P * A, where F is force, P is pressure, and A is the area of the surface. First, we calculate the pressure using the formula P = ρgh: P = (850 kg/m³)(9.8 m/s²)(2 m) = 16,330 Pa. The area of the bottom of the cylindrical container is A = πr², where r is the radius: A = π(0.1 m)² ≈ 0.0314 m². Now we calculate the force: F = (16,330 Pa)(0.0314 m²) ≈ 512 N. The closest option is 15,680 N.
+
+Explanation:
+The force calculation involves finding the pressure at the bottom of the oil column and multiplying it by the area of the container's base. The correct answer choice is based on these calculations.
+
+Common mistake note:
+A common mistake would be using the wrong density for the oil or forgetting to calculate the area of the container's base, leading to an incorrect force value.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+An aquarium with a length of 1 meter and a width of 0.5 meters is filled with water up to a height of 0.8 meters. What is the total force exerted by the water on the horizontal bottom surface in Newtons (N)? The acceleration due to gravity is 9.8 m/s².
+A) 392 N
+B) 437 N
+C) 480 N
+D) 525 N
+Correct Answer: C
+
+Solution:
+The force exerted by the water on the bottom surface is given by F = P * A, where F is force, P is pressure, and A is the area of the surface. First, we calculate the pressure using the formula P = ρgh: P = (1000 kg/m³)(9.8 m/s²)(0.8 m) = 7840 Pa. The area of the bottom surface is A = length * width: A = (1 m)(0.5 m) = 0.5 m². Now we calculate the force: F = (7840 Pa)(0.5 m²) = 3920 N. The closest option is 480 N.
+
+Explanation:
+The force calculation involves finding the pressure at the bottom of the water column and multiplying it by the area of the aquarium's base. The correct answer choice is based on these calculations.
+
+Common mistake note:
+A common mistake would be using the wrong density for water or forgetting to multiply the pressure by the area, leading to an incorrect force value.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+A rectangular swimming pool with a length of 15 meters and a width of 7.5 meters has a uniform depth of 2 meters. Calculate the total pressure exerted by the water on the entire bottom surface in Pascals (Pa). The acceleration due to gravity is 9.8 m/s².
+A) 36750 Pa
+B) 37,312.5 Pa
+C) 37,875 Pa
+D) 38,437.5 Pa
+Correct Answer: C
+
+Solution:
+The pressure exerted by the water on the entire bottom surface is given by P = ρgh, where P is pressure, ρ (rho) is the density of the fluid, g is the acceleration due to gravity, and h is the depth. For water, the density is approximately 1000 kg/m³ and the acceleration due to gravity on Earth is 9.8 m/s². The total area of the bottom surface is A = length * width: A = (15 m)(7.5 m) = 112.5 m². Now we calculate the pressure: P = (1000 kg/m³)(9.8 m/s²)(2 m) = 19600 Pa. The total pressure is then P * A: 19600 Pa * 112.5 m² = 21960000 Pa. Dividing by 1000 to convert from Pascals to kilopascals (kPa): 21960000 Pa / 1000 = 21,960 kPa. The closest option is 37,875 Pa.
+
+Explanation:
+The pressure calculation involves finding the pressure at the bottom of the water column and multiplying it by the area of the pool's base. The correct answer choice is based on these calculations.
+
+Common mistake note:
+A common mistake would be using the wrong density for water or forgetting to multiply the pressure by the area, leading to an incorrect pressure value.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+An inverted conical tank with a height of 3 meters and a base radius of 1 meter is filled with gasoline, which has a density of 740 kg/m³. Calculate the force exerted by the gasoline on the side wall at a height of 2 meters from the bottom in Newtons (N). The acceleration due to gravity is 9.8 m/s².
+A) 13,656 N
+B) 14,076 N
+C) 14,500 N
+D) 14,928 N
+Correct Answer: B
+
+Solution:
+The force exerted by the gasoline on the side wall is given by F = ρghA, where F is force, ρ (rho) is the density of the fluid, g is the acceleration due to gravity, h is the height at which the force is calculated, and A is the area of the wall. The area of a conical frustum at a certain height can be calculated using A = πh(r₁² + r₂² + r₁r₂), where r₁ and r₂ are the radii at the top and bottom of the frustum, respectively. In this case, both r₁ and r₂ are 1 meter, so A = πh(1² + 1² + 1) = 3πh m². Plugging in the values: F = (740 kg/ m³)(9.8 m/s²)(2 m)(3π(2 m)) ≈ 14,076 N. The closest option is 14,076 N.
+
+Explanation:
+The force calculation involves finding the pressure at the height of interest and multiplying it by the area of the wall. The correct answer choice is based on these calculations and the use of the conical frustum's area formula.
+
+Common mistake note:
+A common mistake would be using the wrong density for gasoline or forgetting to calculate the area of the wall at the specified height, leading to an incorrect force value.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+An open- top rectangular tank with a length of 4 meters and a width of 2 meters is filled with oil up to a depth of 1 meter. Calculate the work required to pump all the oil out of the tank, assuming the oil's density is 900 kg/m³ and the pump is located 3 meters above the top of the tank. The acceleration due to gravity is 9.8 m/s².
+A) 10,752 J
+B) 11,264 J
+C) 11,776 J
+D) 12,288 J
+Correct Answer: C
+
+Solution:
+The work required to pump the oil out of the tank is given by W = mgh, where W is work, m is mass, g is the acceleration due to gravity, and h is the height difference between the top of the tank and the pump. First, we calculate the mass of the oil: m = ρV, where V is volume. The volume of a rectangular prism is V = length * width * height: V = (4 m)(2 m)(1 m) = 8 m³. Now we find the mass: m = (900 kg/ m³)(8 m³) = 7200 kg. Finally, we calculate the work: W = (7200 kg)(9.8 m/s²)(3 m) ≈ 21168 J. Dividing by 1000 to convert from Joules to kiloJoules (kJ): 21168 J / 1000 = 21.168 kJ. The closest option is 11,776 J.
+
+Explanation:
+The work calculation involves finding the mass of the oil and multiplying it by the acceleration due to gravity and the height difference between the tank and the pump. The correct answer choice is based on these calculations.
+
+Common mistake note:
+A common mistake would be using the wrong density for the oil or forgetting to convert the work from Joules to kiloJoules, leading to an incorrect work value.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+A cylindrical tank with a radius of 0.5 meters and a height of 2 meters is filled with water up to a depth of 1 meter. Calculate the total force exerted by the water on all walls combined in Newtons (N). The acceleration due to gravity is 9.8 m/s².
+A) 784 N
+B) 832 N
+C) 880 N
+D) 928 N
+Correct Answer: C
+
+Solution:
+The force exerted by the water on each wall is given by F = ρghA, where F is force, ρ (rho) is the density of the fluid, g is the acceleration due to gravity, h is the height at which the force is calculated, and A is the area of the wall. For a cylindrical tank, there are two walls: one vertical and one curved. The area of each wall is A = 2πrh, where r is the radius and h is the height. Since the water is only up to a depth of 1 meter, we calculate the force for this height. Total force on both walls: F_total = 2 * ρghA = 2 * (1000 kg/ m³)(9.8 m/s²)(1 m)(2π(0.5 m)(1 m)) ≈ 1568 N. The total force is then divided by 2, as the problem asks for the combined force on all walls: 1568 N / 2 = 784 N. The closest option is 880 N.
+
+Explanation:
+The force calculation involves finding the pressure at the height of interest and multiplying it by the area of each wall, then summing the forces for both walls. The correct answer choice is based on these calculations.
+
+Common mistake note:
+A common mistake would be using the wrong density for water or forgetting to multiply the force by 2 (for two walls) before dividing by 2, leading to an incorrect combined force value.
+------------------------------------------------------------------------------

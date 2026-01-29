@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.10.13 Apply to committee selection
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.10 Combinations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A school is selecting a student council committee of 5 members from a group of 8 candidates. How many different committees can be formed?
+A) 12
+B) 28
+C) 35
+D) 56
+Correct Answer: C
+
+Solution:
+To find the number of ways to choose 5 members from a group of 8, we use combinations. The formula for combinations is C(n, k) = n! / (k!(n-k)!), where n is the total number of items and k is the number of items chosen. In this case, n = 8 and k = 5.
+
+Explanation:
+C(8, 5) = 8! / (5!(8-5)!) = (8 × 7 × 6) / (3 × 2 × 1) = 56 / 6 = 9.6 ≈ 35
+
+Common mistake note:
+A common mistake is to use permutations instead of combinations, which would result in 8! / 5! = 8 × 7 × 6 = 336, but this overcounts because it considers different orderings of the same committee as distinct.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+A company is forming a task force with 4 members from a pool of 10 employees. How many ways can the task force be chosen if one specific employee must be included?
+A) 9
+B) 36
+C) 45
+D) 120
+Correct Answer: C
+
+Solution:
+Since one specific employee must be on the task force, we only need to choose 3 more members from the remaining 9 employees. The number of ways to do this is C(9, 3).
+
+Explanation:
+C(9, 3) = 9! / (3!(9-3)!) = (9 × 8 × 7) / (3 × 2 × 1) = 504 / 6 = 84
+
+Common mistake note:
+A common mistake is to forget that one employee is already chosen, leading to C(10, 4) = 210, which overcounts by including combinations where the specific employee is not included.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+A committee of 6 members is to be formed from a group of 9 candidates. If two specific individuals cannot serve together, how many different committees can be formed?
+A) 72
+B) 84
+C) 120
+D) 168
+Correct Answer: B
+
+Solution:
+First, we calculate the total number of ways to form a committee without restrictions: C(9, 6). Then, we subtract the number of committees where the two individuals serve together, which is C(7, 4).
+
+Explanation:
+Total combinations = C(9, 6) - C(7, 4) = (9! / (6!(9-6)!)) - (7! / (4!(7-4)!)) = 84 - 35 = 49
+
+Common mistake note:
+A common mistake is to subtract the number of committees with both individuals serving as a single case, which would lead to C(9, 6) - C(9, 2) = 84 - 36 = 48. This undercounts because it doesn't account for the different ways the remaining members can be chosen.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+A club is selecting a president, vice president, and secretary from a group of 10 members. How many distinct officer combinations are possible?
+A) 720
+B) 900
+C) 1,260
+D) 1,440
+Correct Answer: C
+
+Solution:
+For the president position, there are 10 choices. Once the president is chosen, there are 9 choices for the vice president, and then 8 choices for the secretary. Multiply these together to get the total number of combinations.
+
+Explanation:
+Total combinations = 10 × 9 × 8 = 720
+
+Common mistake note:
+A common mistake is to use combinations instead of permutations, which would result in C(10, 3) = 120, but this undercounts because it doesn't account for the different roles each person can have.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+In a chess club with 8 members, a team of 4 players is to be selected for a tournament. How many different teams can be formed if two specific members must play together?
+A) 12
+B) 20
+C) 30
+D) 60
+Correct Answer: C
+
+Solution:
+First, consider the two specific members as a single unit. There are now 7 units to choose from, and we need to select 3 more players. This gives us C(7, 2) ways to form the team. Then, multiply by 2 to account for the different orderings of the two specific members.
+
+Explanation:
+Total combinations = 2 × C(7, 2) = 2 × (7! / (2!(7-2)!)) = 2 × 21 = 42
+
+Common mistake note:
+A common mistake is to forget that the two specific members can be arranged in two ways, leading to C(7, 2) = 21, which undercounts by not accounting for both orderings.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+An organization is forming a board of directors with 3 members from a pool of 5 candidates. If one candidate must be the chairperson and another cannot serve as the chairperson, how many different boards can be formed?
+A) 4
+B) 6
+C) 8
+D) 10
+Correct Answer: C
+
+Solution:
+There are 5 choices for the chairperson. Once the chairperson is chosen, there are 3 remaining candidates who can serve as the other two members (excluding the chairperson and the one who cannot be chair). This gives us C(3, 2) ways to choose the remaining members.
+
+Explanation:
+Total combinations = 5 × C(3, 2) = 5 × (3! / (2!(3-2)!)) = 5 × 3 = 15
+
+Common mistake note:
+A common mistake is to forget that one candidate cannot serve as the chairperson, leading to 5 × C(4, 2) = 5 × 6 = 30, which overcounts by including boards where the forbidden candidate serves as the chairperson.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+A group of 12 students is organizing a study group with 3 members. If two specific students cannot be in the same study group, how many different groups can be formed?
+A) 96
+B) 108
+C) 120
+D) 144
+Correct Answer: B
+
+Solution:
+First, we calculate the total number of ways to form a study group without restrictions: C(12, 3). Then, we subtract the number of groups where the two specific students are together, which is C(10, 1).
+
+Explanation:
+Total combinations = C(12, 3) - C(10, 1) = (12! / (3!(12-3)!)) - (10! / (1!(10-1)!)) = 220 - 10 = 210
+
+Common mistake note:
+A common mistake is to subtract the number of groups with both students together as a single case, which would lead to C(12, 3) - C(12, 2) = 220 - 66 = 154. This undercounts because it doesn't account for the different ways the remaining members can be chosen.
+------------------------------------------------------------------------------

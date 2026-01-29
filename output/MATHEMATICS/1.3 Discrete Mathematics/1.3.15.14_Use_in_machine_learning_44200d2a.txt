@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.15.14 Use in machine learning
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.15 Applications of Discrete Mathematics
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the primary use of machine learning in data analysis?
+A) Creating visualizations
+B) Predicting future outcomes based on patterns
+C) Sorting and filtering data
+D) Cleaning and formatting datasets
+Correct Answer: B
+
+Solution:
+Machine learning is primarily used for predicting future outcomes based on patterns found in data. It employs algorithms that learn from data to make predictions or recommendations.
+
+Explanation:
+Creating visualizations (A) helps interpret data, sorting and filtering data (C) is part of data preprocessing, and cleaning and formatting datasets (D) is essential for data analysis but not the primary use of machine learning.
+
+Common mistake note:
+Choosing A or C may result from confusion between data analysis tasks. Choosing D could be due to underestimating prediction's role in machine learning.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Which of the following is an example of supervised machine learning?
+A) Clustering similar customer profiles
+B) Classifying emails as spam or not spam
+C) Finding patterns in stock market data
+D) Generating recommendations based on user behavior
+Correct Answer: B
+
+Solution:
+Supervised learning involves training a model with labeled data. Classifying emails as spam or not spam (B) is an example, as the algorithm learns from examples marked as spam or not spam.
+
+Explanation:
+Clustering similar customer profiles (A) and finding patterns in stock market data (C) are unsupervised learning tasks. Generating recommendations based on user behavior (D) can use supervised or reinforcement learning methods.
+
+Common mistake note:
+Choosing A or C might be due to confusion between unsupervised and supervised learning. Choosing D could result from混淆不同学习方法在推荐系统中的应用。
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+In unsupervised machine learning, what is the primary goal?
+A) To make predictions based on input data
+B) To group similar data points together
+C) To find relationships between variables
+D) To minimize error during training
+Correct Answer: B
+
+Solution:
+Unsupervised learning aims to discover hidden patterns or cluster similar data points without prior knowledge of output labels. Clustering (B) is a common task.
+
+Explanation:
+Making predictions (A) is the focus of supervised and reinforcement learning. Finding relationships between variables (C) can be done with correlation analysis, not exclusive to unsupervised learning. Minimizing error (D) is a goal in all machine learning but not unsupervised learning's primary focus.
+
+Common mistake note:
+Choosing A or C may result from混淆不同机器学习类型的任务。选择D可能是因为对减少训练误差在所有学习中的普遍性理解不足。
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the role of feature engineering in machine learning?
+A) To reduce the size of the dataset
+B) To improve model performance by selecting relevant variables
+C) To convert categorical data into numerical data
+D) To create new features using mathematical operations
+Correct Answer: B
+
+Solution:
+Feature engineering selects, creates, and transforms variables to enhance a machine learning model's performance. It focuses on relevant information (B) for predictions.
+
+Explanation:
+Reducing dataset size (A) is part of data preprocessing. Converting categorical data (C) and creating new features (D) are parts of feature engineering but not its primary role.
+
+Common mistake note:
+Choosing A, C, or D may result from混淆数据预处理和特征工程的任务。
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Which machine learning algorithm is suitable for regression tasks?
+A) K-means clustering
+B) Naive Bayes classifier
+C) Random Forest
+D) Linear Regression
+Correct Answer: D
+
+Solution:
+Linear Regression (D) is a supervised learning algorithm designed for predicting continuous values, suitable for regression tasks.
+
+Explanation:
+K-means clustering (A) is unsupervised. Naive Bayes classifier (B) and Random Forest (C) are classification algorithms, not suited for regression.
+
+Common mistake note:
+Choosing A, B, or C may result from混淆不同机器学习算法的适用范围。
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the main difference between deep learning and traditional machine learning?
+A) Deep learning uses neural networks, while traditional ML doesn't
+B) Traditional ML requires more feature engineering than deep learning
+C) Deep learning models are less accurate than traditional ML models
+D) Traditional ML can handle only linear relationships, but deep learning is nonlinear
+Correct Answer: A
+
+Solution:
+The main difference is that deep learning relies on neural networks (A) with multiple layers for complex pattern recognition, while traditional ML algorithms typically have fewer or no hidden layers.
+
+Explanation:
+Traditional ML may require less feature engineering than deep learning. Deep learning can be more accurate in complex tasks. Traditional ML handles both linear and nonlinear relationships, but deep learning excels at nonlinearity.
+
+Common mistake note:
+Choosing B, C, or D may result from混淆两种学习方法的特点。选择B可能是因为对特征工程需求的误解，选择C可能低估了深度学习的优势，选择D可能忽视了传统ML处理非线性关系的能力。
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Which of the following is an example of reinforcement learning?
+A) Personalizing product recommendations based on user behavior
+B) Classifying images of cats and dogs
+C) Predicting stock prices for next week
+D) Sorting customer data into different segments
+Correct Answer: A
+
+Solution:
+Reinforcement learning trains an agent to make decisions through feedback. Personalizing recommendations (A) based on user behavior is an example, as the algorithm learns by interacting with users.
+
+Explanation:
+Classifying images (B) is supervised, stock price prediction (C) may use regression or time-series methods, and customer segmentation (D) is unsupervised clustering.
+
+Common mistake note:
+Choosing B, C, or D may result from混淆不同机器学习类型的任务。选择B可能混淆了监督学习和强化学习，选择C可能未理解预测问题的多样性，选择D可能混淆了聚类与强化学习。
+------------------------------------------------------------------------------

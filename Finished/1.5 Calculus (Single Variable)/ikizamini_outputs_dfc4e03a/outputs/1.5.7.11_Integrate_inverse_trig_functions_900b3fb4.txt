@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.7.11 Integrate inverse trig functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.7 Indefinite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Justifying domain restrictions for arctan):
+Find the correct domain restriction for the function f(x) = ∫arctan(2x) dx.
+A) (−∞, ∞)
+B) (−1/2, 1/2)
+C) (−∞, −1/2) ∪ (1/2, ∞)
+D) none needed; the domain is  (−∞, ∞)
+Correct Answer: C
+
+Solution:
+The derivative of arctan(x) is 1/(1 + x^2), which is undefined when 1 + x^2 = 0. This occurs at x = ±1/√2. Since the integral of arctan(2x) will have a similar domain restriction, we need to divide by 2: x = ±1/2. Thus, the correct domain for f(x) is (−∞, −1/2) ∪ (1/2, ∞).
+
+Explanation:
+The domain of an inverse trig function's integral is determined by where its derivative is undefined.
+
+Common mistake note:
+A common mistake is to assume that the domain of arctan(2x) is the same as arctan(x), which would lead to answer A. However, since we are integrating a scaled version of arctan, the domain restriction changes accordingly.
+------------------------------------------------------------------------------
+
+Problem 2 (Inverse trig function with absolute value):
+Evaluate ∫arcsin(|x|) dx from x = 0 to x = 2.
+A) π/2
+B) π
+C) 2π
+D) 3π/2
+Correct Answer: B
+
+Solution:
+The absolute value function makes the integrand positive for all values of x. So, we can integrate arcsin(x) directly from 0 to 2. ∫arcsin(x) dx = x * arcsin(x) - √(1 - x^2) evaluated from 0 to 2.
+
+Explanation:
+When integrating an inverse trig function with an absolute value, the integral is positive over the entire interval since the absolute value makes it non-negative.
+
+Common mistake note:
+A common mistake would be to integrate arcsin(|x|) as if x could be negative, leading to an incorrect antiderivative. Remember that the absolute value ensures a non-negative input for the inverse trig function.
+------------------------------------------------------------------------------
+
+Problem 3 (Inverse trig function with quadratic):
+Evaluate ∫arccos(x^2) dx from x = -1 to x = 1.
+A) 0
+B) π/2
+C) π
+D) 3π/2
+Correct Answer: A
+
+Solution:
+The range of arccosine is [0, π]. Since x^2 is non-negative, the input to arccosine will be in the range [0, 1], which means the output will always be 0. Thus, ∫arccos(x^2) dx = 0.
+
+Explanation:
+When integrating an inverse trig function with a quadratic, consider the range of the inverse trig function and how the quadratic affects its input.
+
+Common mistake note:
+A common mistake would be to integrate arccos(x^2) as if x could be outside the [-1, 1] interval, leading to an incorrect antiderivative. Remember that x^2 is always non-negative.
+------------------------------------------------------------------------------
+
+Problem 4 (Inverse trig function with rational function):
+Find ∫arctan(3x/(1 + 9x^2)) dx.
+A) x * arctan(3x) - 3/2 ln(1 + 9x^2) + C
+B) x * arctan(3x) + 3/2 ln(1 + 9x^2) + C
+C) x * arctan(3x) - 3/4 ln(1 + 9x^2) + C
+D) x * arctan(3x) + 3/4 ln(1 + 9x^2) + C
+Correct Answer: A
+
+Solution:
+Use a substitution: let u = 1 + 9x^2, du = 18x dx. Then x dx = du/18. The integral becomes ∫arctan(3 * (du/18)) / 18 dx = ∫(u - 1) arctan(3/√u) * (1/18) du.
+
+Explanation:
+When integrating an inverse trig function with a rational function, use substitution to simplify the integrand.
+
+Common mistake note:
+A common mistake would be to forget to adjust the derivative of the substitution in the integral or misapply the chain rule when differentiating arctan(3x).
+------------------------------------------------------------------------------
+
+Problem 5 (Inverse trig function with a constant multiple):
+Evaluate ∫2arcsin(x/2) dx from x = 0 to x = 1.
+A) π/2
+B) π
+C) 2π
+D) 3π/2
+Correct Answer: B
+
+Solution:
+The constant multiple rule allows us to pull the 2 out of the integral: ∫2arcsin(x/2) dx = 2∫arcsin(x/2) dx. Now integrate and evaluate from 0 to 1: x * arcsin(x/2) - √(4 - x^2)/2 evaluated at 1 and 0.
+
+Explanation:
+When integrating an inverse trig function with a constant multiple, apply the constant multiple rule before integrating.
+
+Common mistake note:
+A common mistake would be to integrate 2arcsin(x/2) without pulling out the constant first, leading to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 6 (Inverse trig function with a shifted argument):
+Find ∫arcsin(1 - x^2) dx from x = 0 to x = 1.
+A) π/4
+B) π/2
+C) π
+D) 3π/2
+Correct Answer: A
+
+Solution:
+Let u = 1 - x^2, du = -2x dx. The integral becomes ∫-arcsin(u) * (-1/2) du = 1/2∫arcsin(u) du. Now integrate and evaluate from 0 to 1: x * arcsin(1 - x^2) + √(1 - (1 - x^2)^2)/2 evaluated at 1 and 0.
+
+Explanation:
+When integrating an inverse trig function with a shifted argument, use substitution to simplify the integrand.
+
+Common mistake note:
+A common mistake would be to forget to adjust the derivative of the substitution in the integral or misapply the chain rule when differentiating arcsin(1 - x^2).
+------------------------------------------------------------------------------
+
+Problem 7 (Inverse trig function with a quadratic and constant):
+Evaluate ∫arccos(x^2 + 1) dx from x = -1 to x = 1.
+A) 0
+B) π/2
+C) π
+D) 3π/2
+Correct Answer: A
+
+Solution:
+The range of arccosine is [0, π]. Since x^2 + 1 is always greater than or equal to 1, the input to arccosine will be outside its range, resulting in an antiderivative that evaluates to zero over the given interval.
+
+Explanation:
+When integrating an inverse trig function with a quadratic and constant, consider the range of the inverse trig function and how the quadratic affects its input.
+
+Common mistake note:
+A common mistake would be to attempt to integrate arccos(x^2 + 1) without considering the domain restrictions, leading to an incorrect antiderivative. Remember that x^2 + 1 is always greater than or equal to 1.
+------------------------------------------------------------------------------

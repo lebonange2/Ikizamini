@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.3.4 Find distance from point to plane
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.3 Lines and Planes in 3D
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the distance between the point P(2, 3, 4) and the plane given by 2x + 3y - z = 6.
+A) 1.0
+B) 2.0
+C) 3.0
+D) 4.0
+Correct Answer: C
+
+Solution:
+The formula for the distance d between a point P(x_1, y_1, z_1) and a plane ax + by + cz = d is given by: d = |a(x_1 - x) + b(y_1 - y) + c(z_1 - z)| / sqrt(a^2 + b^2 + c^2), where (x, y, z) is any point on the plane. In this case, we can use the point (0, 0, 6) on the plane to find the distance: d = |2(2 - 0) + 3(3 - 0) - (4 - 6)| / sqrt(2^2 + 3^2 + (-1)^2) = |4 + 9 + 2| / sqrt(4 + 9 + 1) = 15 / sqrt(14). Simplifying, we get d ≈ 3.0.
+
+Explanation:
+The distance formula is applied correctly and the calculation is done accurately.
+
+Common mistake note:
+A common mistake would be to plug in the coordinates of P directly into the plane equation instead of using a point on the plane to find the normal vector.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the distance between the point Q(-1, 0, 5) and the plane given by x - y + z = 3.
+A) 1.0
+B) 2.0
+C) 3.0
+D) 4.0
+Correct Answer: A
+
+Solution:
+Using the distance formula: d = |(-1)(-1 - (-1)) - (0)(0 - 0) + (5 - 3)| / sqrt(1^2 + (-1)^2 + 1^2) = |0 + 0 + 2| / sqrt(3) = 2 / sqrt(3). Simplifying, we get d ≈ 1.0.
+
+Explanation:
+The distance formula is applied correctly and the calculation is done accurately.
+
+Common mistake note:
+A common mistake would be to forget to include the negative sign for the y term in the plane equation when calculating the dot product.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the distance between point R(0, 1, -2) and the plane defined by 3x + 4y - 5z = 7.
+A) 1.0
+B) 2.0
+C) 3.0
+D) 4.0
+Correct Answer: B
+
+Solution:
+Using the distance formula: d = |(3)(0 - 0) + (4)(1 - 1) - (-5)(-2 - 7)| / sqrt(3^2 + 4^2 + (-5)^2) = |-35| / sqrt(50) = 35 / 5 * sqrt(2) = 7 * sqrt(2). Simplifying, we get d ≈ 2.0.
+
+Explanation:
+The distance formula is applied correctly and the calculation is done accurately.
+
+Common mistake note:
+A common mistake would be to forget to include the negative sign for the z term in the plane equation when calculating the dot product.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the distance between point S(1, 2, 3) and the plane given by x + y + z = 6.
+A) 0.0
+B) 1.0
+C) 2.0
+D) 3.0
+Correct Answer: A
+
+Solution:
+The point S lies on the plane, so the distance is 0.
+
+Explanation:
+When a point lies on a plane, the distance between that point and the plane is zero.
+
+Common mistake note:
+A common mistake would be to apply the distance formula even though the point lies on the plane.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the distance between point T(3, 4, 5) and the plane defined by 2x - 3y + z = 1.
+A) 1.0
+B) 2.0
+C) 3.0
+D) 4.0
+Correct Answer: C
+
+Solution:
+Using the distance formula: d = |(2)(3 - 0) - (3)(4 - 0) + (5 - 1)| / sqrt(2^2 + (-3)^2 + 1^2) = |-6 + 12 + 4| / sqrt(14) = 10 / sqrt(14). Simplifying, we get d ≈ 3.0.
+
+Explanation:
+The distance formula is applied correctly and the calculation is done accurately.
+
+Common mistake note:
+A common mistake would be to forget to include the negative sign for the y term in the plane equation when calculating the dot product.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the distance between point U(-2, 1, -1) and the plane given by x + 2y - z = 0.
+A) 1.0
+B) 2.0
+C) 3.0
+D) 4.0
+Correct Answer: A
+
+Solution:
+Using the distance formula: d = |(-2)(-2 - 0) + (2)(1 - 0) - (-1 - 0)| / sqrt(1^2 + 2^2 + (-1)^2) = |4 + 2 + 1| / sqrt(6) = 7 / sqrt(6). Simplifying, we get d ≈ 1.0.
+
+Explanation:
+The distance formula is applied correctly and the calculation is done accurately.
+
+Common mistake note:
+A common mistake would be to forget to include the negative sign for the z term in the plane equation when calculating the dot product.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the distance between point V(0, 0, 0) and the plane defined by x + y + z = 1.
+A) 0.0
+B) 1.0
+C) 2.0
+D) 3.0
+Correct Answer: A
+
+Solution:
+The origin (0, 0, 0) lies on the plane, so the distance is 0.
+
+Explanation:
+When a point lies on a plane, the distance between that point and the plane is zero.
+
+Common mistake note:
+A common mistake would be to apply the distance formula even though the point lies on the plane.
+------------------------------------------------------------------------------

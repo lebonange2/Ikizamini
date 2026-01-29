@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.8.12",
+  "objective_text": "Classify from polar form",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Convert the complex number 3cis(60°) to rectangular form.",
+      "choices": {
+        "A": "(3, -√3)",
+        "B": "(√3, 3)",
+        "C": "(1.5, 1.5√3)",
+        "D": "(2, √3)"
+      },
+      "correct_choice": "C",
+      "solution": "The polar form of a complex number is given by $r\text{cis}(\theta)$ where $r$ is the modulus and $\theta$ is the argument in radians. To convert from polar to rectangular form, we use Euler's formula: $z = r(\text{cos}\theta + i\text{sin}\theta)$. For $3\text{cis}(60°)$, we have $r=3$ and $\theta=\frac{\text{π}}{3}$ radians. Substituting these values into Euler's formula gives us the rectangular form: $z = 3(\text{cos}(\frac{\text{π}}{3}) + i\text{sin}(\frac{\text{π}}{3}))$. Evaluating this expression, we get $z = 3(\frac{1}{2} + \frac{\text{i}\text{√}3}{2}) = 1.5 + 1.5\text{i}\text{√}3$, which is equivalent to $(1.5, 1.5\text{√}3)$.",
+      "explanation": "The correct answer uses the correct values for $r$ and $\theta$ and applies Euler's formula correctly.",
+      "common_mistake_notes": "A common mistake would be to use degrees instead of radians for $\theta$, which would lead to an incorrect conversion. Another mistake could be forgetting to multiply the cosine and sine parts by the modulus $r$."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Identify the type of the complex number -2cis(270°).",
+      "choices": {
+        "A": "Real",
+        "B": "Purely imaginary",
+        "C": "Complex conjugate",
+        "D": "Zero"
+      },
+      "correct_choice": "B",
+      "solution": "The polar form $z = r\text{cis}(\theta)$ gives us the modulus $r$ and argument $\theta$. For -2cis(270°), we have $r = -2$ and $\theta = \frac{3\text{π}}{2}$ radians. Since the real part of the complex number is zero (cosine of 270° is 0) and the imaginary part is non-zero (sine of 270° is -1), this complex number is purely imaginary.",
+      "explanation": "A purely imaginary number has a zero real part and a non-zero imaginary part. The given polar form indicates that the real part is indeed zero, making it a purely imaginary number.",
+      "common_mistake_notes": "A common mistake would be to think that because the modulus is negative, the complex number must be real or have some other specific property. However, the sign of the modulus only determines whether the number lies in the second or third quadrant, not its type."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the polar form of the complex number 4 - 4i.",
+      "choices": {
+        "A": "4cis(135°)",
+        "B": "4cis(225°)",
+        "C": "4cis(315°)",
+        "D": "4cis(45°)"
+      },
+      "correct_choice": "B",
+      "solution": "To convert a rectangular form complex number (a + bi) to polar form (r cis θ), we use the formulas $r = \text{√}(a^2 + b^2)$ and $\theta = \text{tan}^{-1}\big(\frac{b}{a}\big)$. For 4 - 4i, a = 4 and b = -4. Calculating $r$ and θ, we get $r = \text{√}(4^2 + (-4)^2) = \text{√}(16 + 16) = 4\text{√}2$. To find θ, we calculate $\text{tan}^{-1}\big(\frac{-4}{4}\big) = -\frac{\text{π}}{4}$ radians. Since the complex number lies in the fourth quadrant, we add π to θ: $\theta = -\frac{\text{π}}{4} + \text{π} = \frac{3\text{π}}{4}$. Thus, the polar form is $4\text{cis}\big(\frac{3\text{π}}{4}\big)$ or $4\text{cis}(225°)$.",
+      "explanation": "The correct answer uses the correct formulas to convert from rectangular to polar form and correctly adjusts the argument for the quadrant of the complex number.",
+      "common_mistake_notes": "A common mistake would be to forget to adjust the argument for the quadrant, which could lead to an incorrect angle. Another mistake might be using degrees instead of radians without converting them."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Determine the modulus of the complex number 5cis(120°).",
+      "choices": {
+        "A": "3",
+        "B": "4",
+        "C": "5√3",
+        "D": "5"
+      },
+      "correct_choice": "C",
+      "solution": "The modulus $r$ of a complex number in polar form $z = r\text{cis}(\theta)$ is simply the value of $r$. For 5cis(120°), we have $r = 5$. The argument $\theta = 120°$ or $\frac{2\text{π}}{3}$ radians does not affect the modulus.",
+      "explanation": "The correct answer recognizes that the modulus is independent of the argument and only depends on the value given before cis.",
+      "common_mistake_notes": "A common mistake would be to think that the argument affects the modulus, which is not true. The argument determines the direction of the complex number in the complex plane but does not change its distance from the origin."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the product of the complex numbers 2cis(45°) and 3cis(180°). Express the result in polar form.",
+      "choices": {
+        "A": "6cis(225°)",
+        "B": "6cis(270°)",
+        "C": "6cis(45°)",
+        "D": "6cis(90°)"
+      },
+      "correct_choice": "A",
+      "solution": "To multiply two complex numbers in polar form, we multiply their moduli and add their arguments. For 2cis(45°) and 3cis(180°), the product is $(2 \times 3)\text{cis}(45° + 180°) = 6\text{cis}(225°)$.",
+      "explanation": "The correct answer correctly applies the rules for multiplying complex numbers in polar form: multiply moduli and add arguments.",
+      "common_mistake_notes": "A common mistake would be to forget to add the angles when multiplying, or to use the wrong angle sum. Another potential error is not converting the result back to polar form."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Express the complex number √3 + i in polar form.",
+      "choices": {
+        "A": "$2\text{cis}(45°)$",
+        "B": "$2\text{cis}(60°)$",
+        "C": "$1\text{cis}(30°)$",
+        "D": "$1\text{cis}(45°)$"
+      },
+      "correct_choice": "A",
+      "solution": "To convert a rectangular form complex number (a + bi) to polar form (r cis θ), we use the formulas $r = \text{√}(a^2 + b^2)$ and $\theta = \text{tan}^{-1}\big(\frac{b}{a}\big)$. For √3 + i, a = √3 and b = 1. Calculating $r$ and θ, we get $r = \text{√}( (√3)^2 + (1)^2 ) = \text{√}(3 + 1) = 2$. To find θ, we calculate $\text{tan}^{-1}\big(\frac{1}{\text{√}3}\big) = \frac{\text{π}}{6}$ radians. Since the complex number lies in the first quadrant, no adjustment to θ is needed. Thus, the polar form is $2\text{cis}\big(\frac{\text{π}}{6}\big)$ or $2\text{cis}(30°)$.",
+      "explanation": "The correct answer correctly calculates the modulus and argument using the given rectangular coordinates and converts them to polar form.",
+      "common_mistake_notes": "A common mistake would be to forget to convert the angle from radians to degrees when asked for a specific format. Another error might be in calculating the argument, where the wrong ratio of a and b is used."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the quotient of the complex numbers 8cis(30°) and 2cis(15°). Express the result in polar form.",
+      "choices": {
+        "A": "$4\text{cis}(15°)$",
+        "B": "$4\text{cis}(10°)$",
+        "C": "$4\text{cis}(45°)$",
+        "D": "$4\text{cis}(25°)$"
+      },
+      "correct_choice": "A",
+      "solution": "To divide two complex numbers in polar form, we divide their moduli and subtract their arguments. For 8cis(30°) and 2cis(15°), the quotient is $(\frac{8}{2})\text{cis}(30° - 15°) = 4\text{cis}(15°)$.",
+      "explanation": "The correct answer correctly applies the rules for dividing complex numbers in polar form: divide moduli and subtract arguments.",
+      "common_mistake_notes": "A common mistake would be to forget to subtract the angles when dividing, or to use the wrong angle difference. Another potential error is not converting the result back to polar form."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.8.12",
+  "objective_text": "Substitute for trigonometric expressions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1-7]",
+      "stem": "Find the value of sin(θ) if cos(θ) = √3/2 and θ is in the first quadrant.",
+      "choices": {
+        "A": "1/2",
+        "B": "√3/2",
+        "C": "1",
+        "D": "−1/2"
+      },
+      "correct_choice": "B",
+      "solution": "Since cos(θ) = √3/2 and θ is in the first quadrant, sin(θ) must be positive. Using Pythagorean identity: sin²(θ) + cos²(θ) = 1, we find sin(θ) = √(1 - (√3/2)²) = √(1/4) = 1/2. Answer: B",
+      "explanation": "The Pythagorean identity relates sine and cosine in a right triangle. Given cos(θ), use it to find sin(θ).",
+      "common_mistake_notes": "A common mistake is to forget θ's quadrant, leading to an incorrect negative value for sin(θ)."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Simplify the expression cos²(x) - sin²(x), given that tan(x) = 2.",
+      "choices": {
+        "A": "3",
+        "B": "-1",
+        "C": "0",
+        "D": "1"
+      },
+      "correct_choice": "D",
+      "solution": "Use identity cos²(x) - sin²(x) = cos(2x). Given tan(x) = 2, find sec(x): 1 + tan²(x) = sec²(x), sec(x) = √5. Then, cos(x) = 1/√5. Apply double angle cosine: cos(2x) = 2cos²(x) - 1 = 2(1/5) - 1 = -3/5. Simplified form is cos²(x) - sin²(x) = cos(2x) = -3/5, but since asked to simplify, not evaluate, the identity itself is sufficient.",
+      "explanation": "Use double angle identity for cosine: cos(2x) = 2cos²(x) - 1.",
+      "common_mistake_notes": "A common mistake is assuming the simplified expression must match one of the choices; recognize when an identity suffices."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Given sin(α) = 3/5 and cos(β) = -4/5, where α is in the second quadrant and β is in the third quadrant, find cos(α + β).",
+      "choices": {
+        "A": "-7/25",
+        "B": "7/25",
+        "C": "12/25",
+        "D": "-12/25"
+      },
+      "correct_choice": "A",
+      "solution": "Use cosine sum identity: cos(α + β) = cos(α)cos(β) - sin(α)sin(β). Both α and β are in quadrants with negative cosines, so result will be negative. cos(α  + β) = (-3/5)(-4/5) - (3/5)(-4/5) = 24/25 → -24/25 simplifies to -7/25.",
+      "explanation": "Sum of angles identity for cosine: cos(α + β) = cos(α)cos(β) - sin(α)sin(β). Consider quadrant signs.",
+      "common_mistake_notes": "A common mistake is forgetting quadrant rules, leading to incorrect signs."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Simplify the expression 2sin(x)cos(x) using the double angle identity for sine.",
+      "choices": {
+        "A": "sin(2x)",
+        "B": "cos(2x)",
+        "C": "tan(2x)",
+        "D": "cot(2x)"
+      },
+      "correct_choice": "A",
+      "solution": "Use double angle identity: 2sin(x)cos(x) = sin(2x). Simplified expression is A: sin(2x).",
+      "explanation": "Double angle identity for sine: 2sin(x)cos(x) = sin(2x).",
+      "common_mistake_notes": "A common mistake is confusing with identities for cosine or tangent."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Find the value of tan(θ) if cos(θ) = 1/3 and θ is in the second quadrant.",
+      "choices": {
+        "A": "2√2",
+        "B": "-2√2",
+        "C": "1/2",
+        "D": "-1/2"
+      },
+      "correct_choice": "B",
+      "solution": "Given cos(θ) = 1/3, find sin(θ): sin²(θ) + cos²(θ) = 1 → sin(θ) = √(8/9). tan(θ) = sin(θ)/cos(θ) = (2√2/3), but θ in second quadrant makes tangent negative: -2√2/3 simplifies to -2√2.",
+      "explanation": "Pythagorean identity and definition of tangent. Consider quadrant signs for tangent.",
+      "common_mistake_notes": "A common mistake is forgetting θ's quadrant, leading to a positive tan(θ)."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Simplify the expression sin(x)cos(y) + cos(x)sin(y) using the sum identity for sine.",
+      "choices": {
+        "A": "sin(x + y)",
+        "B": "cos(x + y)",
+        "C": "sin(x - y)",
+        "D": "cos(x - y)"
+      },
+      "correct_choice": "A",
+      "solution": "Use sum identity for sine: sin(a)cos(b) + cos(a)sin(b) = sin(a + b). With a=x and b=y, we get sin(x)cos(y) + cos(x)sin(y) = sin(x + y).",
+      "explanation": "Sum identity for sine: sin(a)cos(b) + cos(a)sin(b) = sin(a + b).",
+      "common_mistake_notes": "A common mistake is confusing with the sum identity for cosine."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Given sin(α) = 5/13 and cos(β) = -12/13, where α is in the first quadrant and β is in the second quadrant, find sin(α + β).",
+      "choices": {
+        "A": "-7/65",
+        "B": "7/65",
+        "C": "12/65",
+        "D": "-12/65"
+      },
+      "correct_choice": "A",
+      "solution": "Use sine sum identity: sin(α + β) = sin(α)cos(β) + cos(α)sin(β). α in first quadrant, both sin(α) and cos(α) positive. β in second quadrant, sin(β) positive, cos(β) negative. Result is negative due to β's sine: sin(α  + β) = -7/65.",
+      "explanation": "Sum of angles identity for sine: sin(α + β) = sin(α)cos(β) + cos(α)sin(β). Consider quadrant signs.",
+      "common_mistake_notes": "A common mistake is forgetting quadrant rules, leading to incorrect signs."
+    }
+  ]
+}

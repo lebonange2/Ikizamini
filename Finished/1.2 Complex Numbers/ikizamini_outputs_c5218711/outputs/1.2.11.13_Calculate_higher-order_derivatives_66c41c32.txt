@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.11.13 Calculate higher-order derivatives
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.11 Complex Differentiation
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the second derivative of f(x) = x^3.
+A) 6x
+B) 3x^2
+C) 9x
+D) 2x^4
+Correct Answer: A
+
+Solution:
+The first derivative of f(x) is f'(x) = 3x^2. Taking the derivative again, we get the second derivative: f''(x) = 6x.
+
+Explanation:
+To find higher-order derivatives, differentiate the function successively. In this case, we differentiated the cubic function twice to obtain the second derivative.
+
+Common mistake note:
+A common mistake is forgetting to multiply by the exponent when applying the power rule for differentiation.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+What is the third derivative of g(x) = e^x?
+A) e^x
+B) 0
+C) 3e^x
+D) e^{3x}
+Correct Answer: A
+
+Solution:
+The first derivative of g(x) is g'(x) = e^x. Differentiating again, we get g''(x) = e^x. Differentiating a third time gives the third derivative: g'''(x) = e^x.
+
+Explanation:
+The derivative of e^x is always e^x itself, regardless of the order of differentiation.
+
+Common mistake note:
+A common mistake is thinking that the exponent increases with each derivative, but for e^x, it remains constant.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the fourth derivative of h(x) = sin(x).
+A) -cos(x)
+B) -sin(x)
+C) cos(x)
+D) 4sin(x)
+Correct Answer: B
+
+Solution:
+The first derivative of h(x) is h'(x) = cos(x), the second derivative is h''(x) = -sin(x), the third derivative is h'''(x) = -cos(x), and the fourth derivative is h''''(x) = sin(x). Since we've reached the original function, it will repeat with a negative sign for an odd number of derivatives.
+
+Explanation:
+The sine function has a pattern where its derivative alternates between cosine and negative sine. After four derivatives, it repeats with a negative sign.
+
+Common mistake note:
+A common mistake is not recognizing the repeating pattern in the derivatives of trigonometric functions.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Calculate the second derivative of p(x) = 5x^4 - 2x^3 + 7x^2.
+A) 180x^2 - 60x + 14
+B) 20x^3 - 9x^2 + 14x
+C) 60x^3 - 36x^2 + 28x
+D) 5x^3 - 3x^2 + 7x
+Correct Answer: A
+
+Solution:
+First derivative: p'(x) = 20x^3 - 6x^2 + 14x. Second derivative: p''(x) = 60x^2 - 12x + 14.
+
+Explanation:
+To find the higher-order derivatives, differentiate each term separately and then sum them up.
+
+Common mistake note:
+A common mistake is not applying the power rule to each term individually or forgetting to multiply by the exponent.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Find the third derivative of q(x) = ln|x|.
+A) 1/x^2
+B) -1/x^3
+C) 0
+D) 1/(x|x|)
+Correct Answer: B
+
+Solution:
+The first derivative of q(x) is q'(x) = 1/x, the second derivative is q''(x) = -1/x^2, and the third derivative is q'''(x) = 2/ x^3. However, since x cannot be zero for ln|x| to be defined, we can ignore the zero at x=0 when considering the third derivative.
+
+Explanation:
+The natural logarithm function has a derivative that involves the reciprocal of x. When differentiating multiple times, powers of x are involved.
+
+Common mistake note:
+A common mistake is not accounting for the domain restriction of ln|x| and assuming the derivative at x=0.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+What is the fourth derivative of r(x) = 2^x?
+A) 2^x ln^4(2)
+B) 2^x ln^3(2)
+C) 2^x ln^2(2)
+D) 2^x ln(2)
+Correct Answer: A
+
+Solution:
+The first derivative of r(x) is r'(x) = 2^x ln(2), the second derivative is r''(x) = 2^x ln^2(2), the third derivative is r'''(x) = 2^x ln^3(2), and the fourth derivative is r''''(x) = 2^x ln^4(2).
+
+Explanation:
+The derivative of 2^x involves multiplying by ln(2) to each power. This pattern continues for higher-order derivatives.
+
+Common mistake note:
+A common mistake is not recognizing that the base of the exponential function affects the derivative and forgetting to multiply by ln(2).
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Find the second derivative of s(x) = x^(1/3).
+A) -1/(9x^{4/3})
+B) 1/(9x^{4/3})
+C) 2/(3x^{2/3})
+D) 1/(3x^{2/3})
+Correct Answer: B
+
+Solution:
+The first derivative of s(x) is s'(x) = (1/3)x^{-2/3}, the second derivative is s''(x) = (-2/9)x^{-5/3} = 1/(9x^{4/3}).
+
+Explanation:
+When differentiating a power function with a fractional exponent, use the power rule and multiply by the negative of the exponent plus one. Then simplify.
+
+Common mistake note:
+A common mistake is not accounting for the negative sign when differentiating the fractional exponent.
+------------------------------------------------------------------------------

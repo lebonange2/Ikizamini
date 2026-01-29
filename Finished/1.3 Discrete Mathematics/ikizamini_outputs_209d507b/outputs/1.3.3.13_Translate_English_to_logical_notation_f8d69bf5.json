@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.3.13",
+  "objective_text": "Translate English to logical notation",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Express the statement 'If it is raining, then I will stay at home' in logical notation.",
+      "choices": {
+        "A": "R -> H",
+        "B": "H -> R",
+        "C": "R & H",
+        "D": "¬R v ¬H"
+      },
+      "correct_choice": "A",
+      "solution": "The statement 'If it is raining, then I will stay at home' can be translated to the logical implication 'Raining (R) implies Staying at Home (H)', which is represented as R -> H.",
+      "explanation": "An implication has the form 'P -> Q', where P is the antecedent and Q is the consequent. In this case, P is 'it is raining' and Q is 'I will stay at home'.",
+      "common_mistake_notes": "Common mistake: Choosing B (H -> R), which means 'Staying at Home implies It is Raining', reversing the relationship."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Translate the sentence 'Either it is sunny or I am playing tennis' into logical notation.",
+      "choices": {
+        "A": "S v T",
+        "B": "S & T",
+        "C": "¬S -> T",
+        "D": "T  -> ¬S"
+      },
+      "correct_choice": "A",
+      "solution": "The statement 'Either it is sunny or I am playing tennis' can be translated to the logical disjunction 'Sunny (S) or Playing Tennis (T)', which is represented as S v T.",
+      "explanation": "A disjunction has the form 'P v Q', meaning either P or Q, or both are true. In this case, P is 'it is sunny' and Q is 'I am playing tennis'.",
+      "common_mistake_notes": "Common mistake: Choosing C (¬S -> T), which means 'If it's not sunny, then I'm playing tennis', or D (T  -> ¬S), which means 'If I'm playing tennis, then it's not sunny', both of which express different relationships."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Express the statement 'I will go to the gym if and only if I have time' in logical notation.",
+      "choices": {
+        "A": "G <-> T",
+        "B": "G & T",
+        "C": "G v ¬T",
+        "D": "¬G -> ¬T"
+      },
+      "correct_choice": "A",
+      "solution": "The statement 'I will go to the gym if and only if I have time' can be translated to the biconditional 'Going to the Gym (G) is equivalent to Having Time (T)', which is represented as G <-> T.",
+      "explanation": "A biconditional has the form 'P <-> Q', meaning P is true if and only if Q is true, and vice versa. In this case, P is 'I will go to the gym' and Q is 'I have time'.",
+      "common_mistake_notes": "Common mistake: Choosing B (G & T), which means 'Going to the gym and Having Time simultaneously', or C (G v ¬T), which means 'Either Going to the Gym or Not Having Time', both of which do not express the equivalence relationship."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Translate the sentence 'It is not the case that both I am studying and it is noisy' into logical notation.",
+      "choices": {
+        "A": "¬(S & N)",
+        "B": "(S v N) -> F",
+        "C": "S -> ¬N",
+        "D": "N -> S"
+      },
+      "correct_choice": "A",
+      "solution": "The statement 'It is not the case that both I am studying (S) and it is noisy (N)' can be translated to the negation of their conjunction, which is represented as ¬(S & N).",
+      "explanation": "Negating a conjunction means 'not both P and Q' and is written as ¬(P & Q). In this case, P is 'I am studying' and Q is 'it is noisy'.",
+      "common_mistake_notes": "Common mistake: Choosing B (S v N) -> F, which means 'If either Studying or Noisy, then False', or C (S -> ¬N), which means 'Studying implies Not Noisy', or D (N -> S), which means 'Noisy implies Studying', all of which express different relationships."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Express the statement 'I will go to the movies only if I finish my homework' in logical notation.",
+      "choices": {
+        "A": "M & H",
+        "B": "M v H",
+        "C": "H -> M",
+        "D": "M -> ¬H"
+      },
+      "correct_choice": "C",
+      "solution": "The statement 'I will go to the movies (M) only if I finish my homework (H)' can be translated to the conditional 'Finishing Homework implies Going to the Movies', which is represented as H -> M.",
+      "explanation": "A conditional has the form 'P -> Q', where P is the antecedent and Q is the consequent. In this case, P is 'I finish my homework' and Q is 'I go to the movies'.",
+      "common_mistake_notes": "Common mistake: Choosing A (M & H), which means 'Going to the movies and Finishing Homework simultaneously', or B (M v H), which means 'Either Going to the Movies or Finishing Homework', or D (M -> ¬H), which means 'If I go to the movies, then I did not finish my homework', all of which express different relationships."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Translate the sentence 'It is raining and either it is cold or it is snowing' into logical notation.",
+      "choices": {
+        "A": "R & (C v S)",
+        "B": "(R v C) & S",
+        "C": "R & C v S",
+        "D": "R v (C & S)"
+      },
+      "correct_choice": "A",
+      "solution": "The statement 'It is raining (R) and either it is cold (C) or it is snowing (S)' can be translated to the conjunction of R with the disjunction of C and S, which is represented as R & (C v S).",
+      "explanation": "A conjunction has the form 'P & Q', meaning both P and Q are true. In this case, P is 'It is raining' and Q is '(It is cold or It is snowing)', which is a disjunction expressed as C v S.",
+      "common_mistake_notes": "Common mistake: Choosing B (R v C) & S, which means 'Either Raining or Cold and Snowing', or C (R & C v S), which means 'Raining and (Cold or Snowing)', or D (R v (C & S)), which means 'Raining or Both Cold and Snowing', all of which express different relationships."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Express the statement 'I will go to bed if it is past 10 PM, but only if I finish my reading' in logical notation.",
+      "choices": {
+        "A": "(T > 10) & (F -> B)",
+        "B": "(T > 10) & (B -> F)",
+        "C": "T > 10 v (F -> B)",
+        "D": "T > 10 & (B v F)"
+      },
+      "correct_choice": "A",
+      "solution": "The statement 'I will go to bed (B) if it is past 10 PM (T > 10), but only if I finish my reading (F)' can be translated to the conjunction of 'It's past 10' with the conditional 'Finishing Reading implies Going to Bed', which is represented as (T > 10) & (F -> B).",
+      "explanation": "We need both conditions to be true: it must be past 10 PM and finishing reading should imply going to bed. This can be expressed as a conjunction of the two conditions.",
+      "common_mistake_notes": "Common mistake: Choosing B (T > 10) & (B -> F), which means 'Finishing Reading implies Going to Bed, given it's past 10', but does not require finishing reading; C (T > 10 v (F -> B)), which combines the two conditions with a disjunction and is incorrect; or D (T > 10 & (B v F)), which means 'It's past 10 and either Going to Bed or Finishing Reading', but does not require both conditions to be met simultaneously."
+    }
+  ]
+}

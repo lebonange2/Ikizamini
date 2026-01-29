@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.6.1 Identify related rates problems
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.6 Related Rates
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Increasing Circle Area):
+A circle's radius is increasing at a rate of 2 cm/s. At what rate is the area of the circle increasing when the radius is 5 cm?
+A) 10π cm²/s
+B) 20π cm²/s
+C) 40π cm²/s
+D) 80π cm²/s
+Correct Answer: B
+
+Solution:
+The area of a circle is given by A = πr². The rate of change of the area with respect to time (dA/dt) can be found using the chain rule: dA/dt = dA/dr * dr/dt. Given dr/dt = 2 cm/s and r = 5 cm, we first find dA/dr: dA/dr = d(πr²)/dr = 2πr. Now we multiply by dr/dt: dA/dt = 2πr * 2 cm/s = 4πr cm²/s. Substituting r = 5 cm gives us dA/dt = 4π(5) cm²/s = 20π cm²/s.
+
+Explanation:
+The area of a circle increases at a rate proportional to the radius. Since dr/dt is constant, the rate of change of the area is also directly proportional to r. Thus, when r = 5 cm, the area increases twice as fast as when r = 1 cm (since 2π 	imes 5 = 10π and 2π 	imes 1 = 2π).
+
+Common mistake note:
+A common mistake is to forget to multiply by the radius after finding dA/dr. Answer A is obtained by multiplying only by 2π, without including the radius.
+------------------------------------------------------------------------------
+
+Problem 2 (Water Level in a Cone):
+Water is being poured into a cone at a rate of 3 cm³/s. The cone has a height of 10 cm and a base radius of 5 cm. At what rate is the water level rising when it is 4 cm deep?
+A) 0.2 cm/ s
+B) 0.6 cm/ s
+C) 1.2 cm/ s
+D) 2.4 cm/ s
+Correct Answer: B
+
+Solution:
+The volume of a cone is given by V = (1/3)πr²h, where r is the radius and h is the height. We need to find dh/dt when h = 4 cm. First, we express V in terms of h: V = (1/3)π(5²)(h) = (25/3)πh. Now differentiate both sides with respect to time: dV/dt = (25/3)π dh/dt. Given dV/dt = 3 cm³/s, we solve for dh/dt: 3 = (25/3)π dh/dt, so dh/dt = (3/(25/3)π) = (9/25π) cm/s. When h = 4 cm, the water level is rising at a rate of dh/dt = (9/25π)(4) = 0.6 cm/s.
+
+Explanation:
+The volume of water in the cone increases linearly with the height of the water. Since dV/dt is constant, dh/dt will be inversely proportional to the cross-sectional area of the cone at that height. The cross-sectional area decreases as the water level rises, so the rate of change of the water level slows down.
+
+Common mistake note:
+A common mistake is to assume that dV/dt is directly proportional to dh/dt without considering the changing cross-sectional area. Answer D is obtained by multiplying dV/dt by 4 cm without accounting for the cone's shape.
+------------------------------------------------------------------------------
+
+Problem 3 (Ladder Slipping Down a Wall):
+A ladder 12 meters long is leaning against a wall. If the bottom of the ladder slides away from the wall at a rate of 0.5 m/s, how fast is the top of the ladder slipping down the wall when it is 9 meters off the ground?
+A) 0.75 m/ s
+B) 1.0 m/ s
+C) 1.25 m/ s
+D) 1.5 m/ s
+Correct Answer: A
+
+Solution:
+Let x be the distance from the wall to the bottom of the ladder and y be the height of the top of the ladder off the ground. We have x² + y² = 12², which simplifies to y = √(144 - x²). Now differentiate both sides with respect to time: dy/dt = (-x dx/dt) / √(144 - x²). Given dx/dt = 0.5 m/s and y = 9 m, we solve for dy/dt: 9 = √(144 - x²), so x² = 144 - 81 = 63, and x = √63. Substituting values gives us dy/dt = (-√63 	imes 0.5) / √(144 - 63) = -0.75 m/s. Since the top of the ladder is slipping down, the sign is negative.
+
+Explanation:
+The ladder's length remains constant, so the relationship between x and y can be expressed as a Pythagorean theorem equation. By differentiating this equation, we find that dy/dt is inversely proportional to √(144 - x²), which decreases as x increases (the bottom of the ladder moves away from the wall).
+
+Common mistake note:
+A common mistake is to assume that dx/dt and dy/dt are directly proportional without considering the right triangle formed by the ladder, wall, and ground. Answer D is obtained by multiplying dx/dt by 0.5 m/s without accounting for the changing angle.
+------------------------------------------------------------------------------
+
+Problem 4 (Droplet Evaporation):
+A spherical droplet of water with a radius of 2 mm evaporates at a rate proportional to its surface area. At what rate is the volume decreasing when the radius is 1 mm?
+A) π/3 cm³/s
+B) π/6 cm³/s
+C) π/9 cm³/s
+D) π/12 cm³/s
+Correct Answer: C
+
+Solution:
+The volume of a sphere is given by V = (4/3)πr³. The rate of change of the volume with respect to time (dV/dt) can be found using the chain rule: dV/dt = dV/dr * dr/dt. Given that dV/da is proportional to A (the surface area), we have dV/dr ∝ 4πr², so dV/dr = k 	imes 4πr² for some constant k. Now we need to find the rate at which the radius decreases: dr/dt = -dV/dr / (4πr²). When r = 1 mm, we have V = (4/3)π(1)³ = 4π/3 mm³ and dV/dr = k 	imes 4π(1)² = 4kπ. Since the volume decreases at a rate of -dV/dt = 4kπ / (4π), we have dr/dt = -dV/dt / (4πr²) = -(4kπ) / (4π 	imes 1²) = -k. To find k, we use the given information that dV/da ∝ A: dV/dr = k 	imes 4πr² = 4πr² 	imes (dV/da). Since dV/da is constant for a spherical droplet, we can choose any radius to solve for k. At r = 2 mm, V = (4/3)π(2)³ = 32π/3 mm³ and dV/dr = k 	imes 4π(2)² = 16kπ. Since dV/da is constant, we have 16kπ = 4π 	imes 4, so k = 1. Thus, dr/dt = -k = -1 mm/s. The rate of change of the volume when r = 1 mm is dV/dr * dr/dt = (4π 	imes 1²) 	imes (-1) = -4π mm³/s, which is equivalent to π/9 cm³/s.
+
+Explanation:
+The volume of a spherical droplet decreases at a rate proportional to its surface area, which in turn is proportional to r². Since dV/da is constant, the rate of change of the radius is inversely proportional to r². At r = 1 mm, the rate of decrease is fastest because the surface area is smallest.
+
+Common mistake note:
+A common mistake is to assume that dV/dr is constant without considering the relationship between volume and surface area for a sphere. Answer D is obtained by dividing -dV/dt (when r = 1 mm) by 4π, which does not account for the changing radius.
+------------------------------------------------------------------------------
+
+Problem 5 (Filling a Tank):
+Water is being poured into a cylindrical tank with a diameter of 2 meters and height of 3 meters at a rate of 0.5 m³/min. At what rate is the water level rising when it is 1 meter deep?
+A) 0.17 m/ min
+B) 0.33 m/ min
+C) 0.50 m/ min
+D) 0.67 m/ min
+Correct Answer: B
+
+Solution:
+The volume of a cylinder is given by V = πr²h, where r is the radius and h is the height. The tank has a diameter of 2 meters, so its radius is 1 meter. We need to find dh/dt when h = 1 m. First, we express V in terms of h: V = π(1)²h = πh. Now differentiate both sides with respect to time: dV/dt = π dh/dt. Given dV/dt = 0.5 m³/min, we solve for dh/dt: 0.5 = π dh/dt, so dh/dt = 0.5 / π ≈ 0.159 m/min. When h = 1 m, the water level is rising at a rate of approximately 0.159 m/min.
+
+Explanation:
+The volume of water in the tank increases linearly with the height of the water. Since dV/dt is constant, dh/dt will be directly proportional to the cross-sectional area of the cylinder, which is πr² (independent of h).
+
+Common mistake note:
+A common mistake is to assume that the rate of change of the water level depends on the height or volume. Answer D is obtained by dividing dV/dt by the tank's volume at h = 1 m, which does not account for the constant cross-sectional area.
+------------------------------------------------------------------------------
+
+Problem 6 (Rocket Elevation):
+A rocket is ascending vertically with an acceleration of 20 m/s². At a certain instant, it is 500 meters above the ground and its engines fail. At what rate is the rocket's elevation changing when it reaches 1000 meters?
+A) 0 m/ s
+B) 10 m/ s
+C) 20 m/ s
+D) 30 m/ s
+Correct Answer: A
+
+Solution:
+The rocket's motion is governed by the equation of motion: h = vi*t + (1/2)at², where h is the height, vi is the initial velocity, t is time, and a is the acceleration. Since the engines fail, the rocket will continue to move upward with its final velocity at the moment they fail. At 500 meters, we can assume that the rocket has reached its maximum height (since it's no longer accelerating). The rate of change of elevation when it reaches 1000 meters is zero because it has already stopped ascending and begins to fall back down.
+
+Explanation:
+The problem involves projectile motion with an initial upward acceleration, followed by free fall. Once the engines fail, the rocket will coast at its final velocity until it reaches its maximum height. At that point, its elevation change rate becomes zero.
+
+Common mistake note:
+A common mistake is to assume that the rocket continues to accelerate or decelerate after the engines fail. Answer C is obtained by assuming the constant acceleration continues, which is incorrect.
+------------------------------------------------------------------------------
+
+Problem 7 (Growing Tree):
+A tree grows at a rate of 0.5 cm/day. When its height is 10 meters, how fast is its tip moving?
+A) 0.5 cm/ day
+B) 0.5 cm/ s
+C) 2π cm/ day
+D) 2π cm/ s
+Correct Answer: A
+
+Solution:
+The height of the tree can be treated as a straight line, and the tip of the tree is moving along this line at the same rate as the growth of the tree. Since the tree grows at 0.5 cm/day, its tip is also moving at 0.5 cm/day.
+
+Explanation:
+The problem involves the linear growth of a tree. The tip of the tree moves at the same speed as the overall growth rate, regardless of the height of the tree.
+
+Common mistake note:
+A common mistake is to confuse the growth rate with the velocity of the tip along the curved surface of a real tree trunk. Answer D is obtained by multiplying the growth rate by 2π (the circumference of a hypothetical circular trunk), which is incorrect.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.13.14",
+  "objective_text": "Apply to engineering design",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "A mechanical engineer is designing a new component for a machine that will be subjected to high stress. The engineer decides to use a material with a high yield strength. Which of the following best explains why this decision was made?",
+      "choices": {
+        "A": "High yield strength materials are less expensive.",
+        "B": "High yield strength materials have better corrosion resistance.",
+        "C": "High yield strength materials can withstand greater loads before deforming permanently.",
+        "D": "High yield strength materials have a higher melting point."
+      },
+      "correct_choice": "C",
+      "solution": "The engineer chose a material with high yield strength to ensure the component can withstand significant stress without deforming permanently, which is crucial for the machine's performance and durability. High yield strength materials are designed specifically for applications where resistance to deformation under load is important.",
+      "explanation": "Yield strength is a measure of a material's ability to resist permanent deformation. In engineering design, using materials with high yield strength helps ensure that components can handle the forces they will encounter during operation without failing.",
+      "common_mistake_notes": "Choosing A or B could be due to a misunderstanding of the role of yield strength in engineering design. Choice A focuses on cost, which is not directly related to yield strength; choice B refers to corrosion resistance, which is an important property but not the primary reason for selecting high yield strength materials."
+    },
+    {
+      "id": ":Q2",
+      "stem": "An aerospace engineer is designing a lightweight aircraft wing. Which of the following materials would be the most suitable choice, considering both strength and weight?",
+      "choices": {
+        "A": "Steel",
+        "B": "Aluminum alloy",
+        "C": "Titanium alloy",
+        "D": "Carbon fiber composite"
+      },
+      "correct_choice": "D",
+      "solution": "The aerospace engineer should choose carbon fiber composite for the aircraft wing because it offers a high strength-to-weight ratio, making it an ideal material for lightweight structures that require durability.",
+      "explanation": "Carbon fiber composites are known for their exceptional strength and stiffness while being significantly lighter than other materials like steel, aluminum, or titanium. This property makes them particularly attractive in aerospace applications where reducing weight is crucial for fuel efficiency and overall performance.",
+      "common_mistake_notes": "Choosing A or C might result from an overemphasis on strength without considering the weight aspect. Steel and titanium alloys are strong but much heavier than carbon fiber composites, which could negatively impact the aircraft's performance."
+    },
+    {
+      "id": ":Q3",
+      "stem": "A civil engineer is designing a bridge that must resist both tension and compression forces. Which of the following structural designs would best meet this requirement?",
+      "choices": {
+        "A": "Cantilever bridge",
+        "B": "Beam bridge",
+        "C": "Arch bridge",
+        "D": "Truss bridge"
+      },
+      "correct_choice": "D",
+      "solution": "The truss bridge design is best suited for withstanding both tension and compression forces, as it distributes the loads effectively throughout its framework.",
+      "explanation": "Truss bridges are composed of triangular units that efficiently transfer loads between supports, providing resistance to both tension (pulling) and compression (pushing) forces. Cantilever and beam bridges primarily resist compression, while arch bridges mainly distribute compression forces through their curved shape.",
+      "common_mistake_notes": "Choosing A or C might be due to an understanding of the primary function of those bridge types (cantilever for tension and arch for compression), but not considering the need to handle both forces simultaneously."
+    },
+    {
+      "id": ":Q4",
+      "stem": "An electrical engineer is designing a power transmission line that needs to minimize energy loss. Which of the following factors would have the greatest impact on reducing energy losses?",
+      "choices": {
+        "A": "Increasing wire diameter",
+        "B": "Using a higher voltage",
+        "C": "Reducing wire length",
+        "D": "Choosing a conductor with lower resistivity"
+      },
+      "correct_choice": "D",
+      "solution": "The choice of a conductor with lower resistivity will have the greatest impact on reducing energy losses in a power transmission line, as it minimizes Ohmic (resistance) losses.",
+      "explanation": "Ohm's Law states that electrical resistance causes energy loss in the form of heat. By using a conductor with lower resistivity, the engineer can minimize these losses and improve the efficiency of the power transmission system. Increasing wire diameter or reducing length can help but are not as effective as choosing a low- resistivity material; using a higher voltage is important for minimizing line losses over long distances but does not directly affect the resistive loss itself.",
+      "common_mistake_notes": "Choosing A or C might be due to an understanding of their impact on electrical resistance, but not considering that the primary concern is energy loss. Choice B is related to voltage drop and efficiency at long distances, not direct reduction of resistive losses."
+    },
+    {
+      "id": ":Q5",
+      "stem": "A software engineer is designing a system for real-time data processing in an industrial plant. Which of the following design principles would be most important to consider?",
+      "choices": {
+        "A": "Scalability",
+        "B": "Interoperability",
+        "C": "Reliability",
+        "D": "Usability"
+      },
+      "correct_choice": "C",
+      "solution": "In a real-time data processing system for an industrial plant, reliability is the most crucial design principle to ensure that the system operates accurately and consistently without failures.",
+      "explanation": "Reliability is essential in industrial settings where real-time data processing can impact safety, efficiency, and production. Scalability allows for growth as needed, interoperability enables communication between different systems, and usability affects user experience but are not as critical for mission-critical applications like real-time data processing.",
+      "common_mistake_notes": "Choosing A or B might be due to their importance in other contexts, such as managing large amounts of data or integrating with multiple systems. However, in a real-time industrial setting, reliability takes precedence over scalability and interoperability."
+    },
+    {
+      "id": ":Q6",
+      "stem": "A chemical engineer is designing a process for the production of a new compound. Which of the following factors would be most important to consider when selecting an appropriate reactor type?",
+      "choices": {
+        "A": "Ease of maintenance",
+        "B": "Cost of construction",
+        "C": "Heat and mass transfer rates",
+        "D": "Viscosity of the reactants"
+      },
+      "correct_choice": "C",
+      "solution": "When designing a chemical process, heat and mass transfer rates are crucial factors in selecting an appropriate reactor type to ensure efficient mixing and reaction conditions.",
+      "explanation": "Heat and mass transfer rates directly impact the rate at which reactions occur and the overall efficiency of the process. Ease of maintenance, cost of construction, and viscosity of reactants are important considerations but not the primary focus when choosing a reactor type.",
+      "common_mistake_notes": "Choosing A or B might be due to an emphasis on operational aspects or initial investment, which are relevant but not the primary concern for selecting a reactor based on chemical process requirements. Choice D may lead to confusion if viscosity is considered as a factor in mixing, but it's not the main focus when choosing a reactor type."
+    },
+    {
+      "id": ":Q7",
+      "stem": "A systems engineer is designing a network infrastructure for a large organization. Which of the following design elements would be most important to prioritize for fault tolerance?",
+      "choices": {
+        "A": "Bandwidth allocation",
+        "B": "Redundant hardware components",
+        "C": "Firewall strength",
+        "D": "Data compression algorithms"
+      },
+      "correct_choice": "B",
+      "solution": "To ensure fault tolerance in a network infrastructure, the systems engineer should prioritize redundant hardware components that can take over if primary components fail.",
+      "explanation": "Fault tolerance is achieved by designing systems that can continue to function even when individual components fail. Redundant hardware provides backup for critical elements, ensuring that the network remains operational. Bandwidth allocation, firewall strength, and data compression algorithms are important but do not directly address fault tolerance.",
+      "common_mistake_notes": "Choosing A or C might be due to an understanding of their importance in network performance and security, respectively, but they do not inherently provide fault tolerance. Choice D is related to optimizing data transmission but does not contribute to the system's ability to withstand component failures."
+    }
+  ]
+}

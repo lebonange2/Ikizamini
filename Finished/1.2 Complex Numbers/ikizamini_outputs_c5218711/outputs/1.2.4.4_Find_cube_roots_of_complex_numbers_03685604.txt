@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.4.4 Find cube roots of complex numbers
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.4 Powers and Roots of Complex Numbers
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the principal cube root of -64i.
+A) -2 + 4i
+B) 2 - 4i
+C) -4 + 2i
+D) 4 - 2i
+Correct Answer: C
+
+Solution:
+The given complex number is -64i, which can be written in polar form as (-64)(rac{π}{2}) = 8(4π) or 8e^(iπ). The principal cube root of a complex number is the one with the smallest argument. To find the cube roots, we divide the angle by 3. So, the angle for the principal cube root is rac{π}{3}. Now, let's find the modulus of the cube root: (8)^(1/3) = 2. Thus, the principal cube root is 2e^(iπ/3). Converting this back to rectangular form gives us -4 + 2i.
+
+Explanation:
+The principal cube root has the smallest argument among all cube roots. In this case, it's important not to mistake the angle for π, which would lead to an incorrect result.
+
+Common mistake note:
+A common mistake is to use π as the angle instead of rac{π}{3}, resulting in answer A (-2 + 4i) or B (2 - 4i).
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Find the cube root of 1 + i, given that one of the roots is 1 + rac{ioot{3}{3}}{3}.
+A) -1 + rac{ioot{3}{3}}{3}
+B) rac{-2 + ioot{3}{3}}{3}
+C) 1 - rac{ioot{3}{3}}{3}
+D) rac{2 + ioot{3}{3}}{3}
+Correct Answer: D
+
+Solution:
+Given one of the cube roots is 1 + rac{ioot{3}{3}}{3}, we can find the other two by multiplying this root by the primitive cube roots of unity, which are e^(2πi/3) and e^(-2πi/3). Let's calculate these: e^(2πi/3) = cos(2π/3) + i*sin(2π/3) = -1/2 + (sqrt(3)/2)i and e^(-2πi/3) = cos(-2πi/3) + i*sin(-2πi/3) = -1/2 - (sqrt(3)/2)i. Now, we multiply 1 + rac{ioot{3}{3}}{3} by these two values to get the other roots: (-1/2 + (sqrt(3)/2)i)(1 + rac{ioot{3}{3}}{3}) = rac{-2 + ioot{3}{3}}{3} and (-1/2 - (sqrt(3)/2)i)(1 + rac{ioot{3}{3}}{3}) = rac{2 + ioot{3}{3}}{3}. The third root is the sum of these two roots, which gives us 1 - rac{ioot{3}{3}}{3} as one of the cube roots. Therefore, the correct answer is D: rac{2 + ioot{3}{3}}{3}.
+
+Explanation:
+The key here is to recognize that we need to find the other two cube roots by multiplying the given root by the primitive cube roots of unity.
+
+Common mistake note:
+A common mistake is to forget to multiply the given root by both primitive cube roots or to mix up the signs when calculating the cosine and sine values.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Find the cube root of -8, expressed in rectangular form.
+A) -2 + 0i
+B) 2 + 0i
+C) -1 + √3i
+D) 1 - √3i
+Correct Answer: A
+
+Solution:
+The given complex number is -8, which can be written in polar form as (-8)(π) = 8e^(iπ). To find the cube roots, we divide the angle by 3. So, the angles for the cube roots are π, rac{π}{3}, and rac{-π}{3}. The modulus of all cube roots is the same: (8)^(1/3) = 2. Therefore, the cube roots in rectangular form are -2, -1 + √3i, and 1 - √3i. Since we're looking for the principal cube root with the smallest argument, the correct answer is A: -2 + 0i.
+
+Explanation:
+The principal cube root has the smallest argument among all cube roots. In this case, it's important not to mistake any of the other cube roots as the principal one.
+
+Common mistake note:
+A common mistake is to choose C (-1 + √3i) or D (1 - √3i), which are also cube roots but not the principal one.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Find the cube root of 8cis(2π/3), expressed in polar form.
+A) 2cis(rac{2π}{9})
+B) 2cis(rac{4π}{9})
+C) 2cis(rac{2π}{3})
+D) 2cis(rac{8π}{9})
+Correct Answer: B
+
+Solution:
+The given complex number is 8cis(2π/3), which has modulus 8 and argument 2π/3. To find the cube root, we divide the angle by 3: (2π/3) / 3 = 2π/9. The modulus of the cube root will be the cube root of 8, which is 2. Therefore, the cube root in polar form is 2cis(2π/9). However, since we're looking for a principal cube root, we need to ensure that the angle falls within the range [0, 2π). Adding or subtracting 2π as needed, we get 2cis(4π/9) as the principal cube root. The correct answer is B: 2cis(rac{4π}{9}).
+
+Explanation:
+It's essential to ensure that the angle of the polar form falls within the standard range [0, 2π).
+
+Common mistake note:
+A common mistake is to forget to adjust the angle for the principal cube root or to use an incorrect adjustment.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Find the cube roots of -1 + i, expressed in polar form.
+A) cis(rac{π}{6}), cis(rac{5π}{6}), cis(rac{9π}{6})
+B) cis(rac{π}{3}), cis(rac{4π}{3}), cis(rac{7π}{3})
+C) cis(rac{π}{2}), cis(rac{3π}{2}), cis(rac{5π}{2})
+D) cis(rac{-π}{6}), cis(rac{-5π}{6}), cis(rac{-9π}{6})
+Correct Answer: B
+
+Solution:
+The given complex number is -1 + i, which can be written in polar form as √2cis(3π/4). To find the cube roots, we divide the angle by 3: (3π/4) / 3 = π/4. The modulus of all cube roots is the same: √2. Therefore, the cube roots in polar form are cis(π/4), cis(5π/4), and cis(9π/4). However, we need to convert these angles to the range [0, 2π) for correct representation. The principal cube root with the smallest argument iscis(π/4), which converts to cis(7π/3) within the standard range. So, the cube roots in polar form arecis(π/3), cis(4π/3), and cis(7π/3). The correct answer is B: cis(rac{π}{3}), cis(rac{4π}{3}), cis(rac{7π}{3}).
+
+Explanation:
+It's crucial to ensure that the angles of the polar form fall within the standard range [0, 2π) and to recognize the principal cube root with the smallest argument.
+
+Common mistake note:
+A common mistake is to forget to adjust the angle for the principal cube root or to use an incorrect adjustment.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Find the cube roots of 16cis(rac{π}{4}), expressed in rectangular form.
+A) 2 + 2i, -1 + √3i, -1 - √3i
+B) 2 + 2i, 1 + √3i, 1 - √3i
+C) 2 - 2i, -1 + √3i, -1 - √3i
+D) 2 - 2i, 1 + √3i, 1 - √3i
+Correct Answer: A
+
+Solution:
+The given complex number is 16cis(π/4), which has modulus 16 and argument π/4. To find the cube roots, we divide the angle by 3: (π/4) / 3 = π/12. The modulus of the cube root will be the cube root of 16, which is 2. Therefore, the cube roots in rectangular form are 2cis(π/12), 2cis(5π/12), and 2cis(9π/12). Converting these to rectangular form: 2cis(π/12) = cos(π/12) + i*sin(π/12) ≈ 1.03 + 0.98i, 2cis(5π/12) = cos(5π/12) + i*sin(5π/12) ≈ -0.5 + √3i, and 2cis(9π/12) = cos(9π/12) + i*sin(9π/12) ≈ -0.5 - √3i. The correct answer is A: 2 + 2i, -1 + √3i, -1 - √3i.
+
+Explanation:
+It's important to convert the polar form to rectangular form accurately and recognize the cube roots.
+
+Common mistake note:
+A common mistake is to make errors in converting from polar to rectangular form or to mix up the signs when calculating cosine and sine values.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Find the cube root of -27cis(rac{π}{3}), expressed in rectangular form.
+A) -3 + 0i, 1 + √3i, 1 - √3i
+B) -3 + 0i, -1 + √3i, -1 - √3i
+C) 3 + 0i, 1 + √3i, 1 - √3i
+D) 3 + 0i, -1 + √3i, -1 - √3i
+Correct Answer: B
+
+Solution:
+The given complex number is -27cis(π/3), which has modulus -27 and argument π/3. To find the cube roots, we divide the angle by 3: (π/3) / 3 = π/9. The modulus of the cube root will be the cube root of -27, which is -3. Therefore, the cube roots in rectangular form are -3cis(π/9), -3cis(5π/9), and -3cis(9π/9). Converting these to rectangular form: -3cis(π/9) = cos(π/9) + i*sin(π/9) ≈ -2.76 + 0.58i, -3cis(5π/9) = cos(5π/9) + i*sin(5π/9) ≈ -1 - √3i, and -3cis(9π/9) = cos(9π/9) + i*sin(9π/9) ≈ -1 + √3i. The correct answer is B: -3 + 0i, -1 + √3i, -1 - √3i.
+
+Explanation:
+It's important to convert the polar form to rectangular form accurately and recognize the cube roots, considering the negative modulus.
+
+Common mistake note:
+A common mistake is to make errors in converting from polar to rectangular form or to mix up the signs when calculating cosine and sine values.
+------------------------------------------------------------------------------

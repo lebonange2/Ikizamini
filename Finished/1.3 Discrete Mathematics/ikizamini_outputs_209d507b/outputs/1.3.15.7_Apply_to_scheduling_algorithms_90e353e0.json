@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.15.7",
+  "objective_text": "Apply to scheduling algorithms",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "A computer system has three processes with the following burst times: Process A: 4 ms, Process B: 8 ms, and Process C: 2 ms. Which scheduling algorithm would minimize the average waiting time for these processes?",
+      "choices": {
+        "A": "First-Come, First-Served (FCFS)",
+        "B": "Shortest Job First (SJF)",
+        "C": "Round Robin (RR) with a quantum of 5 ms",
+        "D": "Priority Scheduling with equal priorities"
+      },
+      "correct_choice": "B",
+      "solution": "The Shortest Job First (SJF) scheduling algorithm minimizes the average waiting time by executing the process with the shortest burst time first. In this case, Process C has the shortest burst time of 2 ms, followed by Process A and then Process B. FCFS would result in longer wait times for shorter processes, RR with a quantum of 5 ms may not assign enough CPU time to smaller processes, and Priority Scheduling with equal priorities might lead to starvation if the burst times are not significantly different.",
+      "explanation": "SJF is an effective strategy when minimizing average waiting time is the primary concern.",
+      "common_mistake_notes": "A common mistake would be selecting FCFS, which does not prioritize shorter processes. Another mistake could be picking RR with a quantum of 5 ms, which may not efficiently utilize CPU time for smaller processes."
+    },
+    {
+      "id": ":2",
+      "stem": "Consider a computer system with two processors running the preemptive Shortest Remaining Time First (SRTF) scheduling algorithm. Process A has a burst time of 8 units and is currently executing on Processor 1, while Process B has a burst time of 4 units and is waiting to be scheduled. If Process A requires 3 more units of CPU time before it can be preempted, which process will the scheduler choose next?",
+      "choices": {
+        "A": "Process A",
+        "B": "Process B",
+        "C": "No preemption occurs; Process A continues executing",
+        "D": "Both processes execute simultaneously"
+      },
+      "correct_choice": "B",
+      "solution": "The SRTF algorithm selects the process with the shortest remaining time to completion. In this case, when Process A requires 3 more units of CPU time, its remaining burst time is 11 units (8 + 3). Process B has a remaining burst time of 4 units. Therefore, the scheduler will choose Process B next.",
+      "explanation": "SRTF preemptively switches to the process with the shortest remaining execution time.",
+      "common_mistake_notes": "A common mistake would be selecting Process A, assuming that it is already executing and should continue. However, SRTF considers the remaining burst times for preemption decisions."
+    },
+    {
+      "id": ":3",
+      "stem": "In a computer system with four processes (P1, P2, P3, and P4) and two processors, each process has an equal burst time of 5 units. Which scheduling algorithm would ensure that all processes complete their execution in the minimum amount of time?",
+      "choices": {
+        "A": "Non-Preemptive Round Robin with a quantum of 2 units",
+        "B": "Preemptive Round Robin with a quantum of 1 unit",
+        "C": "Fixed-Priority Scheduling with equal priorities",
+        "D": "Priority Scheduling based on arrival time"
+      },
+      "correct_choice": "B",
+      "solution": "The minimum amount of time for all processes to complete execution is achieved when each process gets an equal share of CPU time. With a quantum of 1 unit in Preemptive Round Robin, each process will execute for one unit before being preempted and the next process will start. This ensures that all processes execute simultaneously and completes their execution in 5 time units.",
+      "explanation": "Preemptive Round Robin with a small quantum分配每个进程相等的CPU时间，从而实现最短总执行时间。",
+      "common_mistake_notes": "A common mistake would be selecting Non-Preemptive Round Robin, which does not allow preemption and may lead to some processes executing longer than others. Fixed-Priority Scheduling with equal priorities or priority scheduling based on arrival time might result in different execution times for each process."
+    },
+    {
+      "id": ":4",
+      "stem": "A computer system has five processes (P1, P2, P3, P4, and P5) with burst times of 6, 3, 8, 7, and 4 units respectively. Which scheduling algorithm would minimize the average turnaround time for these processes?",
+      "choices": {
+        "A": "First-Come, First-Served (FCFS)",
+        "B": "Shortest Job First (SJF)",
+        "C": "Round Robin with a quantum of 3 units",
+        "D": "Multilevel Feedback Queue Scheduling"
+      },
+      "correct_choice": "D",
+      "solution": "Multilevel Feedback Queue Scheduling is designed to handle different types of processes efficiently. It separates processes into multiple queues based on their burst times and priority levels, ensuring that shorter processes get executed quickly while longer ones are managed effectively. In this case, it would likely minimize the average turnaround time compared to FCFS, SJF, or RR with a quantum of 3 units.",
+      "explanation": "Multilevel Feedback Queue Scheduling is suitable for systems with diverse process characteristics and aims to balance response time and throughput.",
+      "common_mistake_notes": "A common mistake would be selecting FCFS or SJF, which do not handle long- running processes as efficiently. Another mistake could be picking RR with a quantum of 3 units, which may not provide enough CPU time for longer processes."
+    },
+    {
+      "id": ":5",
+      "stem": "In a real-time operating system, which scheduling algorithm is best suited for guaranteeing deadlines and minimizing response times for time- critical tasks?",
+      "choices": {
+        "A": "First-Come, First-Served (FCFS)",
+        "B": "Shortest Job First (SJF)",
+        "C": "Round Robin with a small quantum",
+        "D": "Real-Time Priority Scheduling"
+      },
+      "correct_choice": "D",
+      "solution": "Real-Time Priority Scheduling assigns priority levels to tasks based on their criticality and ensures that high-priority tasks are executed before lower-priority ones. This guarantees deadlines and minimizes response times for time-critical tasks.",
+      "explanation": "Real-Time Priority Scheduling is designed specifically for real-time systems where meeting deadlines is crucial.",
+      "common_mistake_notes": "A common mistake would be selecting FCFS or SJF, which do not prioritize tasks based on their criticality. RR with a small quantum may not provide enough CPU time for high-priority tasks."
+    },
+    {
+      "id": ":6",
+      "stem": "A computer system has six processes (P1, P2, P3, P4, P5, and P6) with burst times of 10, 8, 6, 4, 2, and 1 units respectively. Which scheduling algorithm would result in the minimum average waiting time if there are two processors available?",
+      "choices": {
+        "A": "Non-Preemptive Round Robin with a quantum of 5 units",
+        "B": "Preemptive Round Robin with a quantum of 3 units",
+        "C": "Priority Scheduling based on burst times",
+        "D": "Multilevel Feedback Queue Scheduling"
+      },
+      "correct_choice": "C",
+      "solution": "In this case, using Priority Scheduling based on burst times would result in the minimum average waiting time. With two processors, processes can execute simultaneously, and by assigning higher priorities to shorter processes, they will be executed before longer ones.",
+      "explanation": "Priority Scheduling with burst time- based priorities ensures that shorter processes are executed first, minimizing wait times.",
+      "common_mistake_notes": "A common mistake would be selecting Non-Preemptive Round Robin or RR with a quantum of 3 units, which do not prioritize shorter processes. Multilevel Feedback Queue Scheduling might also work but is more complex and may not always provide the best performance in this scenario."
+    },
+    {
+      "id": ":7",
+      "stem": "A computer system has four processes (P1, P2, P3, and P4) with burst times of 5, 7, 9, and 11 units respectively. Which scheduling algorithm would result in the minimum average turnaround time if there is only one processor available?",
+      "choices": {
+        "A": "First-Come, First-Served (FCFS)",
+        "B": "Shortest Job First (SJF)",
+        "C": "Round Robin with a quantum of 2 units",
+        "D": "Multilevel Feedback Queue Scheduling"
+      },
+      "correct_choice": "B",
+      "solution": "The Shortest Job First (SJF) scheduling algorithm minimizes the average turnaround time by executing the process with the shortest burst time first. In this case, SJF would execute processes P1, P2, P3, and P4 in that order, resulting in the minimum average turnaround time.",
+      "explanation": "SJF is effective for minimizing average turnaround time when there's only one processor available.",
+      "common_mistake_notes": "A common mistake would be selecting FCFS, which does not prioritize shorter processes. RR with a quantum of 2 units or Multilevel Feedback Queue Scheduling might also work but are less efficient in this case."
+    }
+  ]
+}

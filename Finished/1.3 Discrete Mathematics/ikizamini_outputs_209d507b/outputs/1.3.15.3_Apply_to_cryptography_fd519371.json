@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.15.3",
+  "objective_text": "Apply to cryptography",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "AsymmetricCrypto",
+      "stem": "Which of the following is an example of asymmetric cryptography?",
+      "choices": {
+        "A": "AES-256",
+        "B": "RSA",
+        "C": "MD5",
+        "D": "SHA-256"
+      },
+      "correct_choice": "B",
+      "solution": "Asymmetric cryptography uses different keys for encryption and decryption. RSA is a well-known example of asymmetric cryptography, while AES-256, MD5, and SHA-256 are symmetric ciphers or hash functions.",
+      "explanation": "AES-256 and SHA-256 are symmetric encryption algorithms used for protecting data, while MD5 is a hashing function used for integrity checks. RSA uses pairs of public and private keys, which makes it an asymmetric cryptography method.",
+      "common_mistake_notes": "Common mistake: Choosing A (AES-256) or C (MD5) as they are symmetric encryption or hash functions, not asymmetric."
+    },
+    {
+      "id": "SymmetricCrypto",
+      "stem": "What type of cryptography uses the same key for both encryption and decryption?",
+      "choices": {
+        "A": "RSA",
+        "B": "DES",
+        "C": "SHA-384",
+        "D": "Elliptic Curve Cryptography"
+      },
+      "correct_choice": "B",
+      "solution": "Symmetric cryptography uses a single key for both encryption and decryption. DES (Data Encryption Standard) is an example of symmetric encryption, while RSA, SHA-384, and Elliptic Curve Cryptography are asymmetric.",
+      "explanation": "RSA and Elliptic Curve Cryptography use different keys for encryption and decryption, making them asymmetric. SHA-384 is a hash function, not a symmetric cipher.",
+      "common_mistake_notes": "Common mistake: Choosing A (RSA) or D (Elliptic Curve Cryptography) as they are asymmetric cryptography methods."
+    },
+    {
+      "id": "DigitalSignature",
+      "stem": "Which of the following is used to ensure data integrity and authenticity in cryptography?",
+      "choices": {
+        "A": "Symmetric Encryption",
+        "B": "Asymmetric Encryption",
+        "C": "Hash Function",
+        "D": "Private Key"
+      },
+      "correct_choice": "C",
+      "solution": "A hash function is commonly used for creating digital signatures, which verify the integrity and authenticity of data. Symmetric and asymmetric encryption protect data confidentiality, while private keys are part of asymmetric cryptography.",
+      "explanation": "Symmetric and asymmetric encryption focus on protecting data privacy, not integrity or authenticity. Private keys are used in asymmetric cryptography but do not ensure data integrity by themselves.",
+      "common_mistake_notes": "Common mistake: Choosing A (Symmetric Encryption) or B (Asymmetric Encryption) as they protect confidentiality, not integrity and authenticity."
+    },
+    {
+      "id": "PublicKeys",
+      "stem": "In public-key cryptography, who typically possesses the private key?",
+      "choices": {
+        "A": "Recipient",
+        "B": "Sender",
+        "C": "Both Sender and Recipient",
+        "D": "Neither Sender nor Recipient"
+      },
+      "correct_choice": "A",
+      "solution": "In public-key cryptography, the recipient usually possesses the private key, while the sender uses the recipient's public key to encrypt messages. The reverse is not true; the sender keeps their private key secret.",
+      "explanation": "The sender uses the recipient's public key for encryption and the recipient uses their private key for decryption. Keeping the private key secure is crucial for maintaining the security of the system.",
+      "common_mistake_notes": "Common mistake: Choosing B (Sender) as they use the recipient's public key, not their own."
+    },
+    {
+      "id": "KeyExchange",
+      "stem": "What protocol is used to securely exchange keys in cryptography?",
+      "choices": {
+        "A": "SSL/TLS",
+        "B": "PGP",
+        "C": "Diffie-Hellman",
+        "D": "RSA"
+      },
+      "correct_choice": "C",
+      "solution": "The Diffie-Hellman key exchange protocol is used to securely exchange keys without sharing them directly. SSL/TLS and PGP are cryptographic protocols that use key exchanges, but they're not the key exchange method themselves. RSA is an asymmetric encryption algorithm.",
+      "explanation": "SSL/TLS and PGP employ key exchange mechanisms (like Diffie-Hellman) for secure communication, but they are broader protocols. RSA is unrelated to key exchange; it's an asymmetric encryption algorithm.",
+      "common_mistake_notes": "Common mistake: Choosing A (SSL/TLS) or B (PGP) as they use key exchanges but are not the key exchange methods."
+    },
+    {
+      "id": "HashFunction",
+      "stem": "What is the primary purpose of a hash function in cryptography?",
+      "choices": {
+        "A": "Data Encryption",
+        "B": "Data Decryption",
+        "C": "Message Authentication Code (MAC)",
+        "D": "Key Generation"
+      },
+      "correct_choice": "C",
+      "solution": "The primary purpose of a hash function in cryptography is to create a Message Authentication Code (MAC) for data integrity and authenticity checks. Hash functions are not used for encryption or decryption, and key generation is typically unrelated.",
+      "explanation": "Hash functions are designed to produce fixed-size outputs from variable-length inputs, making them useful for verifying data integrity and authenticity. They do not encrypt or decrypt data or generate keys directly.",
+      "common_mistake_notes": "Common mistake: Choosing A (Data Encryption) or B (Data Decryption) as hash functions don't perform encryption or decryption."
+    },
+    {
+      "id": "Ciphersuites",
+      "stem": "In SSL/TLS, ciphersuites combine which two components for secure communication?",
+      "choices": {
+        "A": "Symmetric Encryption and Hash Function",
+        "B": "Asymmetric Encryption and Digital Signature",
+        "C": "Key Exchange and Asymmetric Encryption",
+        "D": "Key Exchange and Symmetric Encryption"
+      },
+      "correct_choice": "D",
+      "solution": "In SSL/TLS, ciphersuites combine a key exchange algorithm and symmetric encryption for secure communication. Asymmetric encryption is used for key exchange in some cases, but not directly part of the ciphersuite.",
+      "explanation": "Ciphersuites define the cryptographic algorithms used during an SSL/TLS session, typically including a key exchange method (e.g., Diffie-Hellman) and a symmetric encryption algorithm (e.g., AES). Asymmetric encryption is involved in key exchange but not directly part of the ciphersuite.",
+      "common_mistake_notes": "Common mistake: Choosing B (Asymmetric Encryption and Digital Signature) as digital signatures are not part of the ciphersuite definition."
+    }
+  ]
+}

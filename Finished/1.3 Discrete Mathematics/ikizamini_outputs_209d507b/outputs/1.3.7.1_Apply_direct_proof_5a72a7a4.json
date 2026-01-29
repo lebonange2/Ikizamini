@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.7.1",
+  "objective_text": "Apply direct proof",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Prove that if a number is divisible by both 2 and 3, then it is divisible by 6.",
+      "choices": {
+        "A": "Contradiction: Assume the number is not divisible by 6.",
+        "B": "Let x be a number divisible by both 2 and 3. Then x = 2k and x = 3m for some integers k and m. Thus, x = 2 × 3 × (k/m), which shows x is divisible by 6.",
+        "C": "Counterexample: Take the number 9, which is divisible by both 2 and 3 but not by 6.",
+        "D": "Proof by cases: If a number is even and odd, it must be divisible by 6."
+      },
+      "correct_choice": "B",
+      "solution": "To prove this statement using direct proof, we assume that the number x is divisible by both 2 (x = 2k) and 3 (x = 3m), where k and m are integers. Multiplying these two equations together gives us x = 2 × 3 × (k × m) or x = 6 × (km). Since km is an integer, x is divisible by 6. Therefore, the direct proof shows that if a number is divisible by both 2 and 3, it is also divisible by 6.",
+      "explanation": "Direct proof involves showing that a statement must be true by assuming its hypothesis and logically deducing its conclusion without contradiction or counterexamples.",
+      "common_mistake_notes": "A common mistake would be to use a counterexample (Choice C), which is not appropriate for a direct proof. A counterexample disproves the statement, but a direct proof aims to show that the statement must be true given the hypothesis."
+    },
+    {
+      "id": ":2",
+      "stem": "Prove that if n is an odd integer, then n^2 - 1 is divisible by 8.",
+      "choices": {
+        "A": "Contradiction: Assume n^2 - 1 is not divisible by 8.",
+        "B": "Let n be an odd integer. Then n = 2k + 1 for some integer k. Thus, n^2 - 1 = (2k + 1)^2 - 1 = 4k^2 + 4k, which is divisible by 8.",
+        "C": "Counterexample: Take the number 5, which is an odd integer and its square minus one (24) is not divisible by 8.",
+        "D": "Proof by cases: If n is even or odd, then n^2 - 1 will always be divisible by 8."
+      },
+      "correct_choice": "B",
+      "solution": "To prove this statement using direct proof, we assume that n is an odd integer (n = 2k + 1 for some integer k). Squaring n and subtracting 1 gives us n^2 - 1 = (2k + 1)^2 - 1 = 4k^2 + 4k. This expression can be factored as 4k(2k + 1), which is clearly divisible by 8 since both k and k + 1 are integers. Therefore, the direct proof shows that if n is an odd integer, then n^2 - 1 is divisible by 8.",
+      "explanation": "Direct proof involves showing that a statement must be true by assuming its hypothesis and logically deducing its conclusion without contradiction or counterexamples.",
+      "common_mistake_notes": "A common mistake would be to use a counterexample (Choice C), which does not prove the statement for all odd integers. A direct proof requires demonstrating truth universally, not just for specific examples."
+    },
+    {
+      "id": ":3",
+      "stem": "Prove that if a triangle has two sides of equal length, it is an isosceles triangle.",
+      "choices": {
+        "A": "Contradiction: Assume the triangle is not isosceles.",
+        "B": "Let ABC be a triangle with AB = AC. By definition, a triangle with two sides of equal length is an isosceles triangle, so ABC is isosceles.",
+        "C": "Counterexample: Take a right-angled triangle with unequal legs and a hypotenuse of length 5 units.",
+        "D": "Proof by cases: If the triangle has three equal sides, it is isosceles; if not, it's not isosceles."
+      },
+      "correct_choice": "B",
+      "solution": "To prove this statement using direct proof, we start with a triangle ABC and assume that AB = AC. By definition, an isosceles triangle has two sides of equal length. Since AB and AC are equal in our given triangle, it satisfies the definition of an isosceles triangle. Therefore, the direct proof shows that if a triangle has two sides of equal length, it is indeed an isosceles triangle.",
+      "explanation": "Direct proof involves showing that a statement must be true by assuming its hypothesis and logically deducing its conclusion without contradiction or counterexamples.",
+      "common_mistake_notes": "A common mistake would be to use a counterexample (Choice C), which does not disprove the general statement. A direct proof requires demonstrating truth universally, not just for specific exceptions."
+    },
+    {
+      "id": ":4",
+      "stem": "Prove that if x is an integer and x^2 is even, then x is also even.",
+      "choices": {
+        "A": "Contradiction: Assume x is odd.",
+        "B": "Let x be an integer with x^2 = 2k for some integer k. Since the square of an odd number is odd (odd × odd = odd), x must be even to produce an even square.",
+        "C": "Counterexample: Take the number 3, which has an even square (9) but is not itself even.",
+        "D": "Proof by cases: If x is a multiple of 4, it's even; if not, it's odd."
+      },
+      "correct_choice": "B",
+      "solution": "To prove this statement using direct proof, we assume that x is an integer and its square (x^2) is even. Since the product of two integers is even only when at least one of them is even, x must be even to produce an even square (as the square of an odd number is always odd). Therefore, the direct proof shows that if x^2 is even, x must also be even.",
+      "explanation": "Direct proof involves showing that a statement must be true by assuming its hypothesis and logically deducing its conclusion without contradiction or counterexamples.",
+      "common_mistake_notes": "A common mistake would be to use a counterexample (Choice C), which does not disprove the general statement. A direct proof requires demonstrating truth universally, not just for specific exceptions."
+    },
+    {
+      "id": ":5",
+      "stem": "Prove that if a set is finite and has no greatest element, then it has an infinite number of elements.",
+      "choices": {
+        "A": "Contradiction: Assume the set has a finite number of elements.",
+        "B": "Let S be a finite set with no greatest element. By definition, there's always another element in S greater than any given element. This process can continue indefinitely, contradicting finiteness; thus, S must have an infinite number of elements.",
+        "C": "Counterexample: Take the set {1, 2, 3}, which has no greatest element but is finite.",
+        "D": "Proof by cases: If a set has a greatest element, it's finite; if not, it's infinite."
+      },
+      "correct_choice": "B",
+      "solution": "To prove this statement using direct proof, we assume that S is a finite set with no greatest element. By definition, for any element in the set, there must be another element greater than it. This process can continue as long as the set remains finite, which creates a contradiction since finiteness implies a limit to how many elements can be added. Therefore, the direct proof shows that if a set is finite and has no greatest element, it cannot be finite; it must have an infinite number of elements.",
+      "explanation": "Direct proof involves showing that a statement must be true by assuming its hypothesis and logically deducing its conclusion without contradiction or counterexamples.",
+      "common_mistake_notes": "A common mistake would be to use a counterexample (Choice C), which does not disprove the general statement. A direct proof requires demonstrating truth universally, not just for specific exceptions."
+    },
+    {
+      "id": ":6",
+      "stem": "Prove that if all angles in a triangle are equal, then the triangle is equilateral.",
+      "choices": {
+        "A": "Contradiction: Assume the triangle is not equilateral.",
+        "B": "Let ABC be a triangle with angles A = B = C. By definition, an equilateral triangle has three equal sides. Since the angles determine the shape of a triangle, if all angles are equal, the sides must also be equal to maintain congruence; thus, ABC is equilateral.",
+        "C": "Counterexample: Take a right-angled triangle with two equal legs and one angle measuring 90 degrees.",
+        "D": "Proof by cases: If the triangle has three equal angles, it's equilateral; if not, it's not equilateral."
+      },
+      "correct_choice": "B",
+      "solution": "To prove this statement using direct proof, we start with a triangle ABC and assume that all its angles are equal (A = B = C). By definition, an equilateral triangle has three equal sides. Since the angles determine the shape of a triangle, if all angles are congruent, the sides must also be congruent to maintain the same angle relationships; thus, the triangle is equilateral. Therefore, the direct proof shows that if all angles in a triangle are equal, it is an equilateral triangle.",
+      "explanation": "Direct proof involves showing that a statement must be true by assuming its hypothesis and logically deducing its conclusion without contradiction or counterexamples.",
+      "common_mistake_notes": "A common mistake would be to use a counterexample (Choice C), which does not disprove the general statement. A direct proof requires demonstrating truth universally, not just for specific exceptions."
+    },
+    {
+      "id": ":7",
+      "stem": "Prove that if a number is divisible by 12, it is also divisible by both 3 and 4.",
+      "choices": {
+        "A": "Contradiction: Assume the number is not divisible by 3 or 4.",
+        "B": "Let x be a number divisible by 12. Since 12 = 3 × 4, x must also be divisible by both 3 and 4 as it's a multiple of their product.",
+        "C": "Counterexample: Take the number 15, which is divisible by 12 but not by 3 or 4.",
+        "D": "Proof by cases: If a number is divisible by 6, it's divisible by 3 and 4; if not, it's not divisible by 12."
+      },
+      "correct_choice": "B",
+      "solution": "To prove this statement using direct proof, we assume that x is a number divisible by 12. Since 12 can be factored into 3 × 4, any multiple of 12 will also be a multiple of both 3 and 4. Therefore, the direct proof shows that if a number is divisible by 12, it must also be divisible by 3 and 4.",
+      "explanation": "Direct proof involves showing that a statement must be true by assuming its hypothesis and logically deducing its conclusion without contradiction or counterexamples.",
+      "common_mistake_notes": "A common mistake would be to use a counterexample (Choice C), which does not disprove the general statement. A direct proof requires demonstrating truth universally, not just for specific exceptions."
+    }
+  ]
+}

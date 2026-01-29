@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.14",
+  "objective_text": "Use in impedance calculations",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {
+      "id": "One-ohm-resistor-series",
+      "stem": "What is the total impedance when two 1-Ohm resistors are connected in series?",
+      "choices": {
+        "A": "0.5 Ohms",
+        "B": "1 Ohm",
+        "C": "2 Ohms",
+        "D": "4 Ohms"
+      },
+      "correct_choice": "C",
+      "solution": "In series, impedances add together: Z_total = Z_1 + Z_2. So the total impedance is 1 Ohm + 1 Ohm = 2 Ohms.",
+      "explanation": "Series connection of resistors: Z_total = Z_1 + Z_2",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which might happen if the learner forgets that impedances add in series."
+    },
+    {
+      "id": "Two-ohm-resistor-parallel",
+      "stem": "What is the total impedance when two 2-Ohm resistors are connected in parallel?",
+      "choices": {
+        "A": "0.5 Ohms",
+        "B": "1 Ohm",
+        "C": "2 Ohms",
+        "D": "4 Ohms"
+      },
+      "correct_choice": "A",
+      "solution": "In parallel, the reciprocal of the total impedance is the sum of the reciprocals of individual impedances: 1/Z_total = 1/Z_1 + 1/Z_2. So Z_total = 1/(1/2 + 1/2) = 0.5 Ohms.",
+      "explanation": "Parallel connection of resistors: 1/Z_total = 1/Z_1 + 1/Z_2",
+      "common_mistake_notes": "Common mistake: Choosing C or D, which might happen if the learner forgets that impedances decrease in parallel."
+    },
+    {
+      "id": "Impedance-mesh-analysis",
+      "stem": "In a circuit with two 3-Ohm resistors and one 4-Ohm resistor connected in a mesh, what is the impedance between points A and B?",
+      "choices": {
+        "A": "1 Ohm",
+        "B": "2 Ohms",
+        "C": "5 Ohms",
+        "D": "7 Ohms"
+      },
+      "correct_choice": "C",
+      "solution": "Using Kirchhoff's voltage law (KVL), the effective impedance between A and B is 3 Ohms in series with 4 Ohms, resulting in a total of 5 Ohms.",
+      "explanation": "Mesh analysis using KVL",
+      "common_mistake_notes": "Common mistake: Applying Ohm's Law directly, which doesn't work for mesh analysis. The learner might forget to consider loop currents and voltage drops."
+    },
+    {
+      "id": "Impedance-star-delta",
+      "stem": "In a circuit with a 3-Ohm resistor and a 4-Ohm resistor connected in both star and delta configurations, which configuration results in a lower total impedance between points A and B?",
+      "choices": {
+        "A": "Star Configuration",
+        "B": "Delta Configuration",
+        "C": "Both have the same impedance",
+        "D": "Cannot be determined without more information"
+      },
+      "correct_choice": "B",
+      "solution": "In a delta configuration, the total impedance is lower than in the star configuration. So, for this case, the delta configuration has a lower total impedance.",
+      "explanation": "Delta vs Star configurations and their effect on total impedance",
+      "common_mistake_notes": "Common mistake: Choosing A or C, which might happen if the learner forgets the difference between star and delta connections."
+    },
+    {
+      "id": "Inductor-capacitor-series-parallel",
+      "stem": "An inductor with 2 Henry and a capacitor with 1 Farad are connected in series. What is the total impedance at 50 Hz?",
+      "choices": {
+        "A": "3 Ohms",
+        "B": "6 Ohms",
+        "C": "8 Ohms",
+        "D": "10 Ohms"
+      },
+      "correct_choice": "A",
+      "solution": "The total impedance in a series RLC circuit is Z_total = √(R^2 + (XL - XC)^2), where XL = 2πfL and XC = 1/(2πfC). For this case, XL = 6.28 and XC = 0.314, so Z_total ≈ √(0^2 + (6.28 - 0.314)^2) ≈ 3 Ohms.",
+      "explanation": "Series RLC circuit impedance calculation",
+      "common_mistake_notes": "Common mistake: Forgetting to calculate the reactances of the inductor and capacitor or using the wrong formula."
+    },
+    {
+      "id": "RLC-resonance-frequency",
+      "stem": "An RLC circuit has a resistance of 10 Ohms, an inductance of 5 Henry, and a capacitance of 2 Farad. At what frequency will the total impedance be at its minimum?",
+      "choices": {
+        "A": "0.4 Hz",
+        "B": "4 Hz",
+        "C": "40 Hz",
+        "D": "400 Hz"
+      },
+      "correct_choice": "B",
+      "solution": "The resonant frequency (f) of an RLC circuit is given by f = 1/(2π√(LC)). For this case, f ≈ 1/(2π√(5*2)) ≈ 4 Hz.",
+      "explanation": "Resonant frequency calculation for an RLC circuit",
+      "common_mistake_notes": "Common mistake: Using the wrong formula or forgetting to calculate the resonant frequency."
+    },
+    {
+      "id": "Impedance-power-factor",
+      "stem": "A load has a resistance of 10 Ohms and an impedance of 12 Ohms. What is the power factor?",
+      "choices": {
+        "A": "0.83",
+        "B": "0.9",
+        "C": "0.95",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "The power factor (cosφ) is given by R/Z. For this case, cosφ = 10/12 ≈ 0.83.",
+      "explanation": "Calculating the power factor from resistance and impedance",
+      "common_mistake_notes": "Common mistake: Confusing the power factor with efficiency or using the wrong formula."
+    }
+  ]
+}

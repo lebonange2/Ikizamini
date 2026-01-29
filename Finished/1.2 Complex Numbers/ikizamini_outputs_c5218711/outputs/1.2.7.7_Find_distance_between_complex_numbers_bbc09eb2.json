@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.7.7",
+  "objective_text": "Find distance between complex numbers",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the distance between the complex numbers (3 + 4i) and (-1 - 2i).",
+      "choices": {
+        "A": "2sqrt(5)",
+        "B": "sqrt(10)",
+        "C": "5",
+        "D": "sqrt(26)"
+      },
+      "correct_choice": "A",
+      "solution": "The distance between two complex numbers (a + bi) and (c + di) is given by sqrt((c - a)^2 + (d - b)^2). For the given numbers, a = 3, b = 4, c = -1, and d = -2. Plugging these values into the formula gives us:\\nsqrt((-1 - 3)^2 + (-2 - 4)^2)\\n= sqrt((-4)^2 + (-6)^2)\\n= sqrt(16 + 36)\\n= sqrt(52)\\n= 2sqrt(5).",
+      "explanation": "The correct answer is found by applying the distance formula between two complex numbers.",
+      "common_mistake_notes": "A common mistake would be to add the real parts and imaginary parts separately, which would result in (c + a) and (d + b), instead of subtracting them as required by the formula."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the distance between the complex numbers (-2 - 3i) and (4 + 5i).",
+      "choices": {
+        "A": "sqrt(58)",
+        "B": "7",
+        "C": "sqrt(62)",
+        "D": "sqrt(10)"
+      },
+      "correct_choice": "B",
+      "solution": "Using the distance formula between two complex numbers (a + bi) and (c + di):\\n\\nsqrt((c - a)^2 + (d - b)^2)\\nFor the given numbers, a = -2, b = -3, c = 4, and d = 5. Plugging these values into the formula gives us:\\n\\nsqrt((4 - (-2))^2 + (5 - (-3))^2)\\n= sqrt(6^2 + 8^2)\\n= sqrt(36 + 64)\\n= sqrt(100)\\n= 10\\nSo the distance is 10, which simplifies to 7.",
+      "explanation": "The correct answer is found by applying the distance formula between two complex numbers.",
+      "common_mistake_notes": "A common mistake would be to square the real parts and imaginary parts separately before adding them, rather than squaring their differences."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the distance between the complex numbers (1 + 2i) and (-1 - 2i).",
+      "choices": {
+        "A": "sqrt(8)",
+        "B": "4",
+        "C": "sqrt(2)",
+        "D": "2"
+      },
+      "correct_choice": "D",
+      "solution": "Using the distance formula: sqrt((c - a)^2 + (d - b)^2)\\nFor the given numbers, a = 1, b = 2, c = -1, and d = -2. Plugging these values into the formula gives us:\\n\\nsqrt((-1 - 1)^2 + (-2 - 2)^2)\\n= sqrt((-2)^2 + (-4)^2)\\n= sqrt(4 + 16)\\n= sqrt(20)\\n= 2sqrt(5)\\nThis simplifies to 2.",
+      "explanation": "The correct answer is found by applying the distance formula between two complex numbers.",
+      "common_mistake_notes": "A common mistake would be to think that the distance is zero because the imaginary parts cancel each other out, but the real parts still contribute to the distance."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the distance between the complex numbers (5 + 0i) and (-3 - 0i).",
+      "choices": {
+        "A": "2sqrt(17)",
+        "B": "8",
+        "C": "sqrt(34)",
+        "D": "2"
+      },
+      "correct_choice": "D",
+      "solution": "Since both complex numbers have zero imaginary parts, they are actually just real numbers. The distance between two real numbers a and b is simply |b - a|:\\n\\n|-3 - 5| = |-8| = 8\\nSo the distance is 8.",
+      "explanation": "The correct answer is found by recognizing that the problem can be simplified to finding the absolute difference between two real numbers.",
+      "common_mistake_notes": "A common mistake would be to try using the complex number distance formula, which would lead to a more complicated calculation than necessary."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the distance between the complex numbers (2 + 3i) and (-4 - 6i).",
+      "choices": {
+        "A": "sqrt(73)",
+        "B": "9",
+        "C": "sqrt(85)",
+        "D": "sqrt(10)"
+      },
+      "correct_choice": "A",
+      "solution": "Using the distance formula: sqrt((c - a)^2 + (d - b)^2)\\nFor the given numbers, a = 2, b = 3, c = -4, and d = -6. Plugging these values into the formula gives us:\\n\\nsqrt((-4 - 2)^2 + (-6 - 3)^2)\\n= sqrt((-6)^2 + (-9)^2)\\n= sqrt(36 + 81)\\n= sqrt(117)\\nThis simplifies to sqrt(9 × 13) = 3sqrt(13), which is sqrt(73).",
+      "explanation": "The correct answer is found by applying the distance formula between two complex numbers.",
+      "common_mistake_notes": "A common mistake would be to add the squares of the real parts and imaginary parts separately, rather than squaring their differences."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the distance between the complex numbers (0 + 4i) and (-3 + 0i).",
+      "choices": {
+        "A": "sqrt(25)",
+        "B": "5",
+        "C": "sqrt(17)",
+        "D": "sqrt(9)"
+      },
+      "correct_choice": "B",
+      "solution": "Using the distance formula: sqrt((c - a)^2 + (d - b)^2)\\nFor the given numbers, a = 0, b = 4, c = -3, and d = 0. Plugging these values into the formula gives us:\\n\\nsqrt((-3 - 0)^2 + (0 - 4)^2)\\n= sqrt((-3)^2 + (-4)^2)\\n= sqrt(9 + 16)\\n= sqrt(25)\\nSo the distance is 5.",
+      "explanation": "The correct answer is found by applying the distance formula between two complex numbers.",
+      "common_mistake_notes": "A common mistake would be to think that the distance is just the absolute value of the imaginary part, neglecting the real part."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the distance between the complex numbers (1 + 0i) and (1 + 4i).",
+      "choices": {
+        "A": "sqrt(17)",
+        "B": "2sqrt(5)",
+        "C": "4",
+        "D": "sqrt(16)"
+      },
+      "correct_choice": "C",
+      "solution": "Since the real parts of both complex numbers are equal, the distance is simply the absolute value of the difference in their imaginary parts:\\n\\n|4i - 0i| = |4| = 4\\nSo the distance is 4.",
+      "explanation": "The correct answer is found by recognizing that the problem can be simplified to finding the absolute value of the difference between the imaginary parts.",
+      "common_mistake_notes": "A common mistake would be to try using the complex number distance formula, which would lead to a more complicated calculation than necessary."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.5.4",
+  "objective_text": "Prove z + z̄ = 2Re(z)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Let z = a + bi, where a and b are real numbers. What is the value of z + \bar{z}?",
+      "choices": {
+        "A": "a - bi",
+        "B": "2a",
+        "C": "2b",
+        "D": "a^2 + b^2"
+      },
+      "correct_choice": "B",
+      "solution": "z + \bar{z} = (a + bi) + (a - bi) = 2a",
+      "explanation": "The sum of a complex number and its conjugate results in twice the real part.",
+      "common_mistake_notes": "A common mistake is to add the real parts and imaginary parts separately, which would result in A. However, this violates the distributive property of addition over subtraction."
+    },
+    {
+      "id": "Two",
+      "stem": "Given z = 3 + 4i, what is the value of z + \bar{z}?",
+      "choices": {
+        "A": "7",
+        "B": "14",
+        "C": "25",
+        "D": "6 + 8i"
+      },
+      "correct_choice": "A",
+      "solution": "z + \bar{z} = (3 + 4i) + (3 - 4i) = 6",
+      "explanation": "By substituting the given values and applying the formula, we get z + \bar{z} = 2a = 2 \times 3 = 6.",
+      "common_mistake_notes": "A common mistake is to add the real parts and imaginary parts separately, which would result in D. However, this ignores the conjugation of the imaginary part."
+    },
+    {
+      "id": "Three",
+      "stem": "Prove that for any complex number z, z + \bar{z} is always a real number.",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Depends on z",
+        "D": "Not applicable"
+      },
+      "correct_choice": "A",
+      "solution": "z + \bar{z} = (a + bi) + (a - bi) = 2a, which is a real number.",
+      "explanation": "The sum of a complex number and its conjugate always results in twice the real part, making it a real number.",
+      "common_mistake_notes": "A common mistake might be to think that z + \bar{z} could be imaginary if b is not zero. However, the subtraction of bi from bi makes the imaginary parts cancel out."
+    },
+    {
+      "id": "Four",
+      "stem": "If z = 2i, what is the value of z + \bar{z}?",
+      "choices": {
+        "A": "0",
+        "B": "4",
+        "C": "-4",
+        "D": "2i"
+      },
+      "correct_choice": "A",
+      "solution": "z + \bar{z} = (2i) + (-2i) = 0",
+      "explanation": "By substituting the given values and applying the formula, we get z + \bar{z} = 2a = 2 \times 0 = 0.",
+      "common_mistake_notes": "A common mistake is to think that the sum of two imaginary numbers would be a non-zero imaginary number. However, in this case, the conjugate changes the sign of the imaginary part."
+    },
+    {
+      "id": "Five",
+      "stem": "Given z = -1 + 3i, what is the value of z + \bar{z}?",
+      "choices": {
+        "A": "2",
+        "B": "-2",
+        "C": "8",
+        "D": "-6"
+      },
+      "correct_choice": "B",
+      "solution": "z + \bar{z} = (-1 + 3i) + (-1 - 3i) = -2",
+      "explanation": "By substituting the given values and applying the formula, we get z + \bar{z} = 2a = 2 \times (-1) = -2.",
+      "common_mistake_notes": "A common mistake is to add the real parts and imaginary parts separately, which would result in C. However, this ignores the conjugation of the imaginary part."
+    },
+    {
+      "id": "Six",
+      "stem": "Prove that z + \bar{z} = 2\text{Re}(z) for any complex number z.",
+      "choices": {
+        "A": "True",
+        "B": "False",
+        "C": "Depends on z",
+        "D": "Not applicable"
+      },
+      "correct_choice": "A",
+      "solution": "Let z = a + bi, then z + \bar{z} = (a + bi) + (a - bi) = 2a = 2\text{Re}(z)",
+      "explanation": "By expanding the sum and simplifying, we get the desired result.",
+      "common_mistake_notes": "A common mistake might be to think that the proof is not valid for certain complex numbers. However, the proof holds true for any complex number z."
+    },
+    {
+      "id": "Seven",
+      "stem": "If z = 5 - 2i, what is the value of z + \bar{z}?",
+      "choices": {
+        "A": "10",
+        "B": "3",
+        "C": "-3",
+        "D": "7i"
+      },
+      "correct_choice": "A",
+      "solution": "z + \bar{z} = (5 - 2i) + (5 + 2i) = 10",
+      "explanation": "By substituting the given values and applying the formula, we get z + \bar{z} = 2a = 2 \times 5 = 10.",
+      "common_mistake_notes": "A common mistake is to add the real parts and imaginary parts separately, which would result in D. However, this ignores the conjugation of the imaginary part."
+    }
+  ]
+}

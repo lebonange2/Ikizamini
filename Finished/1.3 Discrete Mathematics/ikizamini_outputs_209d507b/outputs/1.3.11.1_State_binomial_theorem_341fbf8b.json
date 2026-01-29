@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.11.1",
+  "objective_text": "State binomial theorem",
+  "difficulty_profile": "easy→hard mixed",
+  "questions": [
+    {
+      "id": "IncrementalID1",
+      "stem": "State the binomial theorem.",
+      "choices": {
+        "A": "The sum of two numbers raised to a power.",
+        "B": "The product of two binomials expanded using coefficients.",
+        "C": "A theorem that relates the coefficients in the expansion of (x + y)^n.",
+        "D": "The theorem that states the sum of an arithmetic sequence."
+      },
+      "correct_choice": "C",
+      "solution": "(C) The binomial theorem is a formula that describes the expansion of powers of a binomial, stating that (x + y)^n can be expanded as a sum involving terms of the form C(n, k)x^(n- k)y^k.",
+      "explanation": "The binomial theorem provides a way to expand expressions like (x+y)^n by calculating the coefficients using combinations. It does not deal with sums of numbers raised to powers or arithmetic sequences.",
+      "common_mistake_notes": "Common mistake: Choosing (A) because it describes addition of powers, which is different from the expansion of binomials."
+    },
+    {
+      "id": "IncrementalID2",
+      "stem": "What is the value of C(4, 2)?",
+      "choices": {
+        "A": "16",
+        "B": "6",
+        "C": "8",
+        "D": "4"
+      },
+      "correct_choice": "B",
+      "solution": "(B) The binomial coefficient C(n, k) can be calculated using the formula n! / (k!(n- k)!). For C(4, 2), we have 4! / (2!(4-2)!) = 6.",
+      "explanation": "Binomial coefficients are used in the expansion of (x+y)^n and are calculated based on factorials. In this case, n=4 and k=2.",
+      "common_mistake_notes": "Common mistake: Calculating incorrectly or forgetting to divide by the factorial of (n- k)."
+    },
+    {
+      "id": "IncrementalID3",
+      "stem": "What is the term with x^2y^2 in the expansion of (x + y)^4?",
+      "choices": {
+        "A": "16x^2y^2",
+        "B": "6x^2y^2",
+        "C": "4x^2y^2",
+        "D": "8x^2y^2"
+      },
+      "correct_choice": "B",
+      "solution": "(B) The term with x^2y^2 in the expansion of (x+y)^4 can be found using the binomial theorem: C(4, 2)x^(4-2)y^2 = 6x^2y^2.",
+      "explanation": "The binomial theorem helps determine the coefficients for each term in the expansion. For x^2y^2, n=4 and k=2, so the coefficient is C(4, 2).",
+      "common_mistake_notes": "Common mistake: Using the wrong values for n or k when calculating the coefficient."
+    },
+    {
+      "id": "IncrementalID4",
+      "stem": "What is the binomial theorem used for?",
+      "choices": {
+        "A": "Finding roots of polynomials.",
+        "B": "Solving systems of linear equations.",
+        "C": "Expanding powers of a binomial.",
+        "D": "Deriving derivatives of functions."
+      },
+      "correct_choice": "C",
+      "solution": "(C) The binomial theorem is used to expand powers of a binomial, such as (x+y)^n, into a sum of terms with specific coefficients.",
+      "explanation": "The binomial theorem specifically deals with expanding expressions like (x+y)^n and does not involve finding roots, solving systems of equations, or derivatives.",
+      "common_mistake_notes": "Common mistake: Confusing the binomial theorem with other mathematical concepts like polynomial roots or derivatives."
+    },
+    {
+      "id": "IncrementalID5",
+      "stem": "In the expansion of (x + y)^n, what is the value of k for the term with the largest coefficient?",
+      "choices": {
+        "A": "n/2",
+        "B": "n-1",
+        "C": "0",
+        "D": "n"
+      },
+      "correct_choice": "A",
+      "solution": "(A) In the expansion of (x+y)^n, the term with the largest coefficient has k = n/2. This occurs when n is even; if n is odd, there are two terms with equal largest coefficients.",
+      "explanation": "The binomial theorem states that each term's coefficient can be calculated using C(n, k). The largest coefficient typically occurs for k values closest to n/2.",
+      "common_mistake_notes": "Common mistake: Assuming the largest coefficient always occurs at k=n or k=0."
+    },
+    {
+      "id": "IncrementalID6",
+      "stem": "What is the coefficient of x^3y in the expansion of (x + 2y)^5?",
+      "choices": {
+        "A": "10",
+        "B": "40",
+        "C": "80",
+        "D": "160"
+      },
+      "correct_choice": "B",
+      "solution": "(B) The coefficient of x^3y in the expansion of (x+2y)^5 can be found using the binomial theorem: C(5, 3)(x^(5-3))(2y)^1 = 40x^3y.",
+      "explanation": "The binomial theorem helps determine coefficients for each term in the expansion. For x^3y, n=5 and k=3, so the coefficient is C(5, 3) * (2y).",
+      "common_mistake_notes": "Common mistake: Using the wrong value for y when calculating the coefficient."
+    },
+    {
+      "id": "IncrementalID7",
+      "stem": "What is the connection between the binomial theorem and Pascal's triangle?",
+      "choices": {
+        "A": "Pascal's triangle provides a way to calculate combinations, which are used in the binomial theorem.",
+        "B": "The binomial theorem is derived from the sum of infinite geometric series.",
+        "C": "Pascal's triangle is a graphical representation of derivatives of polynomials.",
+        "D": "The binomial theorem is only valid for specific values of x and y in Pascal's triangle."
+      },
+      "correct_choice": "A",
+      "solution": "(A) Pascal's triangle provides a way to calculate combinations, which are used as coefficients in the binomial theorem. Each number in Pascal's triangle represents C(n, k).",
+      "explanation": "The binomial theorem relies on combinations (C(n, k)) for its expansion, and these combinations can be found using Pascal's triangle.",
+      "common_mistake_notes": "Common mistake: Assuming that Pascal's triangle is specific to the binomial theorem for certain x and y values or unrelated to derivatives."
+    }
+  ]
+}

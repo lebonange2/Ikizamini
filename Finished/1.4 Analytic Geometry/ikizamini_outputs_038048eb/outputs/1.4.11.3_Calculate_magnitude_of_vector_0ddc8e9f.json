@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.11.3",
+  "objective_text": "Calculate magnitude of vector",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Find the magnitude of the vector ε = (3, 4).",
+      "choices": {
+        "A": "2",
+        "B": "5",
+        "C": "7",
+        "D": "sqrt(26)"
+      },
+      "correct_choice": "D",
+      "solution": "The magnitude of a vector (x, y) is calculated using the Pythagorean theorem: sqrt(x^2 + y^2). For ε = (3, 4), we have sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5. However, this is not one of the answer choices; the correct answer after applying the square root is D: sqrt(26).",
+      "explanation": "The magnitude calculation was done correctly but the square root was not simplified to its simplest form.",
+      "common_mistake_notes": "Common mistake: Not simplifying the square root to its simplest form."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Calculate the magnitude of vector ζ = (-5, 12).",
+      "choices": {
+        "A": "17",
+        "B": "sqrt(149)",
+        "C": "sqrt(-149)",
+        "D": "sqrt(149)"
+      },
+      "correct_choice": "C",
+      "solution": "The magnitude of a vector (x, y) is calculated using the Pythagorean theorem: sqrt(x^2 + y^2). For ζ = (-5, 12), we have sqrt((-5)^2 + 12^2) = sqrt(25 + 144) = sqrt(169) = 13. However, this is not one of the answer choices; the correct answer after applying the square root is C: sqrt(149).",
+      "explanation": "The magnitude calculation was done correctly but the negative sign in front of the square root was a mistake since magnitudes are always non-negative.",
+      "common_mistake_notes": "Common mistake: Including a negative sign in the square root, assuming the magnitude can be negative."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Find the magnitude of vector η = (2i + 3j).",
+      "choices": {
+        "A": "sqrt(13)",
+        "B": "5",
+        "C": "sqrt(10)",
+        "D": "sqrt(5)"
+      },
+      "correct_choice": "A",
+      "solution": "The magnitude of a vector in the form ai + bj is calculated using the Pythagorean theorem: sqrt(a^2 + b^2). For η = 2i + 3j, we have sqrt(2^2 + 3^2) = sqrt(4 + 9) = sqrt(13). The correct answer is A: sqrt(13).",
+      "explanation": "The magnitude calculation was done correctly.",
+      "common_mistake_notes": "Common mistake: Not recognizing that the i and j components represent orthogonal directions and should be squared separately."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Determine the magnitude of vector θ = (-4i - 6j).",
+      "choices": {
+        "A": "sqrt(52)",
+        "B": "sqrt(-52)",
+        "C": "10",
+        "D": "sqrt(52)"
+      },
+      "correct_choice": "A",
+      "solution": "The magnitude of a vector in the form ai + bj is calculated using the Pythagorean theorem: sqrt(a^2 + b^2). For θ = -4i - 6j, we have sqrt((-4)^2 + (-6)^2) = sqrt(16 + 36) = sqrt(52). The correct answer is A: sqrt(52).",
+      "explanation": "The magnitude calculation was done correctly but the negative sign in front of the square root was a mistake since magnitudes are always non-negative.",
+      "common_mistake_notes": "Common mistake: Including a negative sign in the square root, assuming the magnitude can be negative."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Calculate the magnitude of vector ι = (1, 2, 3).",
+      "choices": {
+        "A": "sqrt(6)",
+        "B": "sqrt(14)",
+        "C": "sqrt(15)",
+        "D": "sqrt(16)"
+      },
+      "correct_choice": "C",
+      "solution": "The magnitude of a vector in 3D space (x, y, z) is calculated using the Pythagorean theorem: sqrt(x^2 + y^2 + z^2). For ι = (1, 2, 3), we have sqrt(1^2 + 2^2 + 3^2) = sqrt(1 + 4 + 9) = sqrt(14). The correct answer is C: sqrt(14).",
+      "explanation": "The magnitude calculation was done correctly but the square root was not simplified to its simplest form.",
+      "common_mistake_notes": "Common mistake: Not simplifying the square root to its simplest form."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Find the magnitude of vector κ = (-2, -3, 4).",
+      "choices": {
+        "A": "sqrt(29)",
+        "B": "sqrt(-29)",
+        "C": "5",
+        "D": "sqrt(29)"
+      },
+      "correct_choice": "A",
+      "solution": "The magnitude of a vector in 3D space (x, y, z) is calculated using the Pythagorean theorem: sqrt(x^2 + y^2 + z^2). For κ = (-2, -3, 4), we have sqrt((-2)^2 + (-3)^2 + 4^2) = sqrt(4 + 9 + 16) = sqrt(29). The correct answer is A: sqrt(29).",
+      "explanation": "The magnitude calculation was done correctly but the negative sign in front of the square root was a mistake since magnitudes are always non-negative.",
+      "common_mistake_notes": "Common mistake: Including a negative sign in the square root, assuming the magnitude can be negative."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Determine the magnitude of vector λ = (2i + 3j - 4k).",
+      "choices": {
+        "A": "sqrt(29)",
+        "B": "5",
+        "C": "sqrt(13)",
+        "D": "sqrt(26)"
+      },
+      "correct_choice": "A",
+      "solution": "The magnitude of a vector in 3D space (ai + bj + ck) is calculated using the Pythagorean theorem: sqrt(a^2 + b^2 + c^2). For λ = 2i + 3j - 4k, we have sqrt(2^2 + 3^2 + (-4)^2) = sqrt(4 + 9 + 16) = sqrt(29). The correct answer is A: sqrt(29).",
+      "explanation": "The magnitude calculation was done correctly.",
+      "common_mistake_notes": "Common mistake: Not recognizing that the i, j, and k components represent orthogonal directions and should be squared separately."
+    }
+  ]
+}

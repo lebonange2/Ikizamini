@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.15.5 Apply duality principle
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.15 Advanced Analytic Geometry
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+Consider the primal linear program: maximize 2x + 3y subject to x + y ≤ 4, x ≥ 0, y ≥ 0. What is the objective function of its dual?
+A) -4z
+B) 4z
+C) z
+D) 2z + 3w
+Correct Answer: B
+
+Solution:
+The dual of a linear program maximizes the constraints' coefficients, multiplied by their corresponding variables, subject to non-negativity. The primal has constraints x + y ≤ 4 and non-negative variables x and y. So, in the dual, z will correspond to the constraint with coefficient -4 (flipped sign due to duality) and w is not present since there's no free variable in the primal. Thus, the dual objective function is maximize 4z.
+
+Explanation:
+The duality principle states that the optimal value of a linear program and its dual are equal.
+
+Common mistake note:
+A common mistake is to forget to flip the sign of the constraint coefficients when forming the dual objective.
+------------------------------------------------------------------------------
+
+Problem 2 (Xcv123):
+Given the primal LP: minimize 5x + 7y subject to 2x + 3y ≥ 6, x ≤ 4, y ≤ 3. What is the variable associated with constraint x ≤ 4 in its dual?
+A) w
+B) z
+C) u
+D) v
+Correct Answer: C
+
+Solution:
+In the dual of a linear program, each constraint from the primal becomes a variable. Since x is bounded by 4 in the primal, its corresponding variable in the dual will be u.
+
+Explanation:
+The duality principle involves mapping variables and constraints between the primal and dual problems.
+
+Common mistake note:
+A common mistake is to confuse the variable associated with y ≤ 3 instead of x ≤ 4.
+------------------------------------------------------------------------------
+
+Problem 3 (Zxc123):
+For the primal LP: maximize 3x + 5y subject to 2x + 4y ≤ 10, x ≥ 0, y ≥ 0. What is the non-negativity constraint for the dual variable associated with x?
+A) u ≥ 0
+B) v ≥ 0
+C) w ≥ 0
+D) z ≥ 0
+Correct Answer: A
+
+Solution:
+In the dual of a linear program, each primal variable becomes a non-negativity constraint for its corresponding dual variable. Since x is in the primal, its associated dual variable u will have the constraint u ≥ 0.
+
+Explanation:
+The duality principle requires that dual variables are non-negative.
+
+Common mistake note:
+A common mistake is to choose the wrong variable (v or w) due to confusion between x and y.
+------------------------------------------------------------------------------
+
+Problem 4 (Sdf123):
+What is the relationship between the optimal values of a primal linear program and its dual?
+A) They are equal.
+B) The primal's value is always greater than the dual's.
+C) The dual's value is always greater than the primal's.
+D) They have no specific relationship.
+Correct Answer: A
+
+Solution:
+According to the duality principle, the optimal values of a linear program and its dual are equal.
+
+Explanation:
+Duality ensures that both problems have the same optimal value.
+
+Common mistake note:
+A common mistake is to think that one problem's value can be greater than the other without understanding the fundamental theorem of duality.
+------------------------------------------------------------------------------
+
+Problem 5 (Qwe123):
+In a primal LP with an unbounded feasible region, what can be said about its dual?
+A) The dual is infeasible.
+B) The dual has no optimal solution.
+C) The dual is unbounded.
+D) The dual has the same optimal value as the primal.
+Correct Answer: C
+
+Solution:
+If a primal linear program has an unbounded feasible region, its dual must be unbounded. The duality principle does not apply in this case.
+
+Explanation:
+Unboundedness in one problem implies unboundedness in the other under duality.
+
+Common mistake note:
+A common mistake is to think that both problems have no optimal solution when only one of them is unbounded.
+------------------------------------------------------------------------------
+
+Problem 6 (Rty123):
+Given a primal LP with an infeasible feasible region, what can be said about its dual?
+A) The dual is unbounded.
+B) The dual has no optimal solution.
+C) The dual is infeasible.
+D) The dual has the same optimal value as the primal.
+Correct Answer: B
+
+Solution:
+If a primal linear program is infeasible, its dual has no feasible solution and thus no optimal solution. The duality principle does not apply when both problems are infeasible.
+
+Explanation:
+Infeasibility in one problem implies infeasibility or unboundedness in the other under duality.
+
+Common mistake note:
+A common mistake is to confuse infeasibility with unboundedness, leading to selecting the wrong answer.
+------------------------------------------------------------------------------
+
+Problem 7 (Ghi123):
+What is an application of the duality principle in linear programming?
+A) Finding a feasible solution quickly.
+B) Solving large-scale problems more efficiently.
+C) Determining if a problem has no optimal solution or is unbounded.
+D) Comparing different optimization algorithms.
+Correct Answer: C
+
+Solution:
+The duality principle can be used to determine whether a linear program has no feasible solution, an unbounded feasible region, or if it has an optimal solution. It does not directly help with finding solutions or comparing algorithms.
+
+Explanation:
+Duality provides insights into the existence and properties of optimal solutions in linear programming.
+
+Common mistake note:
+A common mistake is to think that duality helps with finding solutions or comparing optimization methods, which it does not.
+------------------------------------------------------------------------------

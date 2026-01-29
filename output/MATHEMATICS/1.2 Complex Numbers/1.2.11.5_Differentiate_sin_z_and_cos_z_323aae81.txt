@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.11.5 Differentiate sin z and cos z
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.11 Complex Differentiation
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (AsinBcosC):
+Find the derivative of f(z) = sin(z) with respect to z.
+A) cos(z)
+B) sin(z)
+C) 2sin(z)
+D) cos^2(z)
+Correct Answer: A
+
+Solution:
+The derivative of sin(z) with respect to z is cos(z). This is a basic property of trigonometric functions.
+
+Explanation:
+Recall that the derivative of the sine function is the cosine function and vice versa. The power rule was not applied here since there's no exponent on sin(z).
+
+Common mistake note:
+A common mistake would be to choose B, which is the original function itself instead of its derivative.
+------------------------------------------------------------------------------
+
+Problem 2 (BcosZsinZ):
+Find the derivative of g(z) = cos(z) with respect to z.
+A) sin(z)
+B) -sin(z)
+C) 2cos(z)
+D) cos^2(z)
+Correct Answer: B
+
+Solution:
+The derivative of cos(z) with respect to z is -sin(z). This is another basic property of trigonometric functions.
+
+Explanation:
+The derivative of the cosine function is its negative sine, and vice versa. The power rule was not applied here since there's no exponent on cos(z).
+
+Common mistake note:
+A common mistake would be to choose A, which is the sine function instead of its negative counterpart.
+------------------------------------------------------------------------------
+
+Problem 3 (CsinZcos2Z):
+Find the derivative of h(z) = sin(2z) with respect to z.
+A) 2cos(2z)
+B) cos(2z)
+C) 4sin(2z)
+D) sin^2(2z)
+Correct Answer: A
+
+Solution:
+The derivative of sin(2z) with respect to z is 2cos(2z). This involves the chain rule.
+
+Explanation:
+To differentiate a composite function like this, we use the chain rule: [d/dz(sin(u)) * du/dz]. Here, u = 2z, so du/dz = 2. Thus, the derivative is 2cos(2z).
+
+Common mistake note:
+A common mistake would be to forget the chain rule and multiply by 2 (choice C), which would result in differentiating sin(z) instead of sin(2z).
+------------------------------------------------------------------------------
+
+Problem 4 (DcosZsin3Z):
+Find the derivative of j(z) = cos(3z) with respect to z.
+A) -3sin(3z)
+B) sin(3z)
+C) 6cos(3z)
+D) cos^2(3z)
+Correct Answer: A
+
+Solution:
+The derivative of cos(3z) with respect to z is -3sin(3z). This involves the chain rule.
+
+Explanation:
+Using the chain rule, [d/dz(cos(u)) * du/dz], where u = 3z and du/dz = 3. The derivative is thus -3sin(3z).
+
+Common mistake note:
+A common mistake would be to forget the negative sign or multiply by 3 incorrectly (choice C), which would result in differentiating cos(z) instead of cos(3z).
+------------------------------------------------------------------------------
+
+Problem 5 (EsinZcosZ2):
+Find the derivative of k(z) = sin(z)cos^2(z) with respect to z.
+A) cos^2(z) - 2sin(z)cos(z)
+B) cos(z) + 2sin(z)cos^2(z)
+C) cos(z)cos^2(z) - 2sin(z)cos(z)
+D) cos^3(z) - sin^2(z)cos(z)
+Correct Answer: D
+
+Solution:
+The derivative of sin(z)cos^2(z) with respect to z is cos^3(z) - sin^2(z)cos(z). This involves the product rule and chain rule.
+
+Explanation:
+Using the product rule [u'v + uv'], where u = sin(z), v = cos^2(z), u' = cos(z), and v' = 2sin(z)cos(z). The derivative is thus cos(z)cos^2(z) - 2sin(z)cos^3(z). Simplifying, we get cos^3(z) - sin^2(z)cos(z).
+
+Common mistake note:
+A common mistake would be to forget the negative sign or apply the chain rule incorrectly on cos^2(z), leading to an incorrect result (choice C).
+------------------------------------------------------------------------------
+
+Problem 6 (FcosZsinZ3):
+Find the derivative of l(z) = cos(z)sin^3(z) with respect to z.
+A) -sin^3(z) - 3sin^2(z)cos(z)
+B) sin^2(z) + 3sin(z)cos^2(z)
+C) sin(z)sin^3(z) - 3sin^2(z)cos(z)
+D) sin^4(z) - cos^2(z)sin(z)
+Correct Answer: D
+
+Solution:
+The derivative of cos(z)sin^3(z) with respect to z is sin^4(z) - cos^2(z)sin(z). This involves the product rule and chain rule.
+
+Explanation:
+Using the product rule [u'v + uv'], where u = cos(z), v = sin^3(z), u' = -sin(z), and v' = 3sin^2(z)cos(z). The derivative is thus -sin(z)sin^3(z) - 3sin^2(z)cos^2(z). Simplifying, we get sin^4(z) - cos^2(z)sin(z).
+
+Common mistake note:
+A common mistake would be to forget the negative sign or apply the chain rule incorrectly on sin^3(z), leading to an incorrect result (choice C).
+------------------------------------------------------------------------------
+
+Problem 7 (GsinZcosZ4):
+Find the derivative of m(z) = sin(z)cos^4(z) with respect to z.
+A) cos^4(z) - 4sin(z)cos^3(z)
+B) cos^3(z) + 4sin(z)cos^4(z)
+C) sin(z)cos^4(z) - 4sin(z)cos^3(z)
+D) sin(z)cos^5(z) - 4sin^2(z)cos^3(z)
+Correct Answer: D
+
+Solution:
+The derivative of sin(z)cos^4(z) with respect to z is sin(z)cos^5(z) - 4sin^2(z)cos^3(z). This involves the product rule and chain rule.
+
+Explanation:
+Using the product rule [u'v + uv'], where u = sin(z), v = cos^4(z), u' = cos(z), and v' = 4cos^3(z)(-sin(z)). The derivative is thus cos(z)cos^4(z) - 4sin(z)cos^3(z). Simplifying, we get sin(z)cos^5(z) - 4sin^2(z)cos^3(z).
+
+Common mistake note:
+A common mistake would be to forget the negative sign or apply the chain rule incorrectly on cos^4(z), leading to an incorrect result (choice C).
+------------------------------------------------------------------------------

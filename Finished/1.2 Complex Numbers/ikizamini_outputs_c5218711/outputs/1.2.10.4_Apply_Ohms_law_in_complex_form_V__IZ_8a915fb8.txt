@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.10.4 Apply Ohm's law in complex form (V = IZ)
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.10 Applications to AC Circuits
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+A circuit has a voltage of 10∠30° V and a current of 2∠45° A. Calculate the impedance Z using Ohm's law.
+A) 5∠75° Ω
+B) 5∠-15° Ω
+C) 5∠15° Ω
+D) 5∠-75° Ω
+Correct Answer: C
+
+Solution:
+Using Ohm's law in complex form (V = IZ), we can calculate the impedance Z as follows: Z = V / I = (10∠30° V) / (2∠45° A). To divide two complex numbers, multiply the numerator by the conjugate of the denominator and simplify. So, Z = (10∠30°)(2∠-45°) / 4 = 20∠(-15°)/4 = 5∠-15° Ω. However, we need to find the equivalent impedance with a positive angle. Adding 360° to -15° gives us 345°, which is equivalent to 15° in the standard range of -180° to 180°. Therefore, the correct answer is Z = 5∠15° Ω.
+
+Explanation:
+Ohm's law in complex form relates voltage (V), current (I), and impedance (Z) as V = IZ. The correct choice has the correct magnitude and angle that satisfies Ohm's law when multiplied by the given current.
+
+Common mistake note:
+A common mistake is to forget to take the conjugate of the denominator when dividing complex numbers, which would result in an incorrect angle.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+An AC circuit has a voltage amplitude of 12 V and a current amplitude of 3 A. The phase difference between voltage and current is 60°. Calculate the impedance Z using Ohm's law.
+A) 4∠-60° Ω
+B) 4∠60° Ω
+C) 4∠120° Ω
+D) 4∠-120° Ω
+Correct Answer: B
+
+Solution:
+Using Ohm's law in complex form (V = IZ), we can calculate the impedance Z as follows: Z = V / I. Since both voltage and current are given in amplitude and phase, we first convert them to polar form: V = 12∠60° V, I = 3∠0° A. Now, we divide the magnitudes and add the angles (since they're in the same direction): Z = 12 / 3 = 4 Ω, and since there's no phase difference between voltage and current, the angle remains 60°. Therefore, the correct answer is Z = 4∠60° Ω.
+
+Explanation:
+Ohm's law in complex form relates voltage (V), current (I), and impedance (Z) as V = IZ. The correct choice has the correct magnitude and angle that satisfies Ohm's law when multiplied by the given current.
+
+Common mistake note:
+A common mistake is to forget that there's no phase difference between voltage and current, leading to an incorrect angle.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+An AC circuit has a voltage of 8∠-90° V and a current of 4∠135° A. Calculate the magnitude of the impedance Z using Ohm's law.
+A) 2 Ω
+B) 4 Ω
+C) 6 Ω
+D) 8 Ω
+Correct Answer: A
+
+Solution:
+Using Ohm's law in complex form (V = IZ), we can calculate the magnitude of the impedance Z as follows: Z = V / I. First, we find the magnitudes of voltage and current: |V| = 8, |I| = 4. Since the impedances are in polar form, we only need to divide the magnitudes: Z = |V| / |I| = 8 / 4 = 2 Ω. Therefore, the correct answer is 2 Ω.
+
+Explanation:
+Ohm's law in complex form relates voltage (V), current (I), and impedance (Z) as V = IZ. The correct choice has the correct magnitude that satisfies Ohm's law when multiplied by the given current.
+
+Common mistake note:
+A common mistake is to attempt to divide the angles, which is not necessary for finding the magnitude of the impedance.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+An AC circuit has a voltage of 6∠180° V and a current of 2∠-90° A. Calculate the phase angle of the impedance Z using Ohm's law.
+A) 0°
+B) 45°
+C) 90°
+D) 180°
+Correct Answer: C
+
+Solution:
+Using Ohm's law in complex form (V = IZ), we can calculate the phase angle of the impedance Z as follows: Z = V / I. First, we find the magnitudes and angles of voltage and current: |V| = 6, |I| = 2, θ_V = -180°, θ_I = 90°. Since there's a phase difference between voltage and current, we add their phases to get the angle of Z: θ_Z = θ_V - θ_I = -180° - 90° = -270°. However, we need to find the equivalent angle in the standard range of -180° to 180°. Adding 360° to -270° gives us 90°. Therefore, the correct answer is 90°.
+
+Explanation:
+Ohm's law in complex form relates voltage (V), current (I), and impedance (Z) as V = IZ. The correct choice has the correct phase angle that satisfies Ohm's law when multiplied by the given current.
+
+Common mistake note:
+A common mistake is to subtract the voltage phase from the current phase without considering the standard range of -180° to 180°.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+An AC circuit has a voltage amplitude of 15 V and a current amplitude of 5 A. The impedance Z is given as 3∠45° Ω. Calculate the phase difference between voltage and current using Ohm's law.
+A) 0°
+B) 30°
+C) 45°
+D) 60°
+Correct Answer: B
+
+Solution:
+Using Ohm's law in complex form (V = IZ), we can calculate the phase difference between voltage and current as follows: V = IZ. Since both voltage and impedance are given in amplitude and phase, we first convert them to polar form: V = 15∠θ_V V, Z = 3∠45° Ω. Now, we divide voltage by impedance: I = V / Z = 15∠θ_V / 3∠45° A. To find the phase difference, we compare the angles of current and impedance: θ_I - θ_Z = θ_V - 45°. Since there's no phase difference between voltage and current (θ_V is unknown but not given as different), we have θ_V = 45°. Therefore, the phase difference is θ_I - θ_Z = 0°.
+
+Explanation:
+Ohm's law in complex form relates voltage (V), current (I), and impedance (Z) as V = IZ. The correct choice has the correct phase difference that satisfies Ohm's law when multiplied by the given impedance.
+
+Common mistake note:
+A common mistake is to assume that the phase difference between voltage and current is equal to the phase of the impedance, which is not necessarily true.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+An AC circuit has a voltage of 10∠-45° V and a current of 2∠60° A. Calculate the complex power S using P = I*V.
+A) 20∠105° VA
+B) 20∠-75° VA
+C) 10∠105° VA
+D) 10∠-75° VA
+Correct Answer: B
+
+Solution:
+Using the complex power formula (S = I*V), we can calculate the complex power S as follows: S = 2∠60° * 10∠-45° V. To multiply two complex numbers, multiply their magnitudes and add their angles: |S| = 2 * 10 = 20 VA, θ_S = 60° - (-45°) = 105°. However, we need to find the equivalent angle in the standard range of -180° to 180°. Subtracting 360° from 105° gives us -255°, which is equivalent to -75°. Therefore, the correct answer is S = 20∠-75° VA.
+
+Explanation:
+The complex power formula relates active power (P), current (I), and voltage (V*) as S = I*V*. The correct choice has the correct magnitude and angle that satisfy the formula when multiplied by the given voltage conjugate.
+
+Common mistake note:
+A common mistake is to forget to take the complex conjugate of the voltage, which would result in an incorrect angle.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+An AC circuit has a current of 4∠-30° A and a power factor of 0.8 lagging. Calculate the complex power S using P = I*V.
+A) 12∠-30° VA
+B) 16∠-30° VA
+C) 12∠90° VA
+D) 16∠90° VA
+Correct Answer: B
+
+Solution:
+Using the complex power formula (S = I*V) and the power factor, we can calculate the complex power S as follows: P = 0.8 * |I| * |V|. Since the power factor is lagging, the voltage angle will be 30° more negative than the current angle. First, find the magnitude of the voltage: |V| = P / (0.8 * |I|) = P / (0.8 * 4) = P / 3.2. Now, calculate the complex power S: S = I*V = 4∠-30° * (P / 3.2)∠(-30° - 30°) V. Since we only need to find the magnitude of S, we can ignore the angle and calculate it as |S| = 4 * (P / 3.2) = P / 0.8 = 16 VA. Therefore, the correct answer is S = 16∠-30° VA.
+
+Explanation:
+The complex power formula relates active power (P), current (I), and voltage (V*) as S = I*V*. The correct choice has the correct magnitude that satisfies the formula when multiplied by the given voltage conjugate, considering the power factor.
+
+Common mistake note:
+A common mistake is to forget that the voltage angle is more negative than the current angle due to a lagging power factor.
+------------------------------------------------------------------------------

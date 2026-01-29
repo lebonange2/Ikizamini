@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.13.4 Apply Möbius transformations
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.13 Conformal Mapping
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the image of the point z = 2 + 3i under the Möbius transformation w = (z - 1)/(z + 2)
+A) -4 - 5i
+B) 0.6 - 0.8i
+C) 5 + 7i
+D) 1.2 + 1.6i
+Correct Answer: B
+
+Solution:
+w = (z - 1)/(z + 2) = (2 + 3i - 1)/(2 + 3i + 2) = (1 + 3i)/4 = (1/4) + (3/4)i * 2 / (2 + 3i) = 0.6 - 0.8i
+
+Explanation:
+We applied the Möbius transformation formula to the given point z and simplified the result.
+
+Common mistake note:
+A common mistake is forgetting to conjugate the denominator when rationalizing, leading to answer A.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Find the image of the unit circle |z| = 1 under the Möbius transformation w = z^2.
+A) |w| < 1
+B) |w| = 1
+C) |w| > 1
+D) w is a straight line
+Correct Answer: A
+
+Solution:
+For any point on the unit circle, |z| = 1. Under the transformation w = z^2, we have |w| = |z|^2 = 1^2 = 1. Thus, the image of the unit circle is inside a circle with radius 1.
+
+Explanation:
+The square of a complex number on the unit circle results in a number inside a smaller circle.
+
+Common mistake note:
+A common mistake is to assume that squaring preserves the circle's size, which leads to choice B.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the image of the line Re(z) = 1 under the Möbius transformation w = (z - i)/(z + i).
+A) Re(w) = 0
+B) Re(w) = 2
+C) Im(w) = 1
+D) w is a circle
+Correct Answer: A
+
+Solution:
+Let z = x + yi with Re(z) = x = 1. Then, w = (x - i + iy)/(x + i + iy) = (1 - i + iy)/(2 + iy) = (1 + y)/(2 + y)i * (2 - iy)/(2 - iy) = (2 + y)/(4 + y^2). Since Im(w) ≠ 0, Re(w) must be 0.
+
+Explanation:
+We used the given line and Möbius transformation to find the image. The real part of w is zero.
+
+Common mistake note:
+A common mistake is not considering the effect of complex conjugation in the denominator, leading to choice C.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Find the image of the circle |z - 3i| = 2 under the transformation w = z + 1.
+A) |w - 3i| = 2
+B) |w - 3i| = 4
+C) |w - 4i| = 2
+D) w is a straight line
+Correct Answer: C
+
+Solution:
+The circle |z - 3i| = 2 shifts by 1 unit in the real direction under the transformation w = z + 1. The new equation becomes |(z + 1) - 3i| = |z - 2i| = 2, which is a circle with center at (1, -2i) and radius 2.
+
+Explanation:
+The circle shifts in the direction of the real part of the transformation.
+
+Common mistake note:
+A common mistake is forgetting to shift the center of the circle, leading to choice A.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Find the image of the line Im(z) = 2 under the Möbius transformation w = (z - 1)/(z + 1).
+A) Im(w) = 4
+B) Re(w) = 0
+C) w is a straight line parallel to the real axis
+D) w is a straight line perpendicular to the real axis
+Correct Answer: C
+
+Solution:
+Let z = x + 2i with Im(z) = 2. Then, w = (x - 1 + 2i)/(x + 1 + 2i) = (x + 2i)/(x + 3i). Since the denominator has a non-zero imaginary part, the image is a straight line parallel to the real axis.
+
+Explanation:
+The transformation does not change the imaginary part of z, so the image remains a line parallel to the original one.
+
+Common mistake note:
+A common mistake is assuming that the line will be perpendicular to the real axis, leading to choice D.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Find the image of the point z = -2 under the Möbius transformation w = (z + 1)/(z - 1).
+A) w = 0
+B) w = 1
+C) w = -1
+D) w is undefined
+Correct Answer: A
+
+Solution:
+The point z = -2 maps to w = (-2 + 1)/(-2 - 1) = -1/-3 = 1/3, but this is a pole of the transformation because it makes the denominator zero. Therefore, the image is undefined.
+
+Explanation:
+A pole in the Möbius transformation indicates an infinite value or singularity in the image.
+
+Common mistake note:
+A common mistake is not recognizing the pole and assuming w = 1/3, leading to choice C.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Find the image of the circle |z - i| = 3 under the transformation w = z^3.
+A) |w - i| = 9
+B) |w - i| = 27
+C) w is a sphere
+D) w is an ellipse
+Correct Answer: A
+
+Solution:
+The circle |z - i| = 3 gets mapped to the surface of a sphere under the transformation w = z^3, with radius cubed (3^3 = 27) and centered at the image of i. The equation becomes |(x + yi - i)^3| = |x + (y - 1)i|^3 = 27, which simplifies to |x^3 - 3xy^2 + 3ix^2y - (y - 1)^3| = 27. The real and imaginary parts are not independent, so it's not an ellipse.
+
+Explanation:
+The cube of a complex number on the circle results in a sphere centered at the image of i.
+
+Common mistake note:
+A common mistake is assuming that the transformation preserves the shape, leading to choice D.
+------------------------------------------------------------------------------

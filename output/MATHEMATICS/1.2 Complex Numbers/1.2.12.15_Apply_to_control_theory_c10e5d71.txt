@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.12.15 Apply to control theory
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.12 Complex Integration
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+A control system maintains room temperature using a feedback loop and heating element. Which action represents closed-loop control?
+A) Manually adjusting the thermostat based on personal preference.
+B) Increasing heating element power when temperature sensor detects drop.
+C) Opening a window to cool down the room.
+D) Stopping feedback loop, ending temperature regulation.
+Correct Answer: B
+
+Solution:
+In closed-loop control, heating element power increases when sensor detects lower temp. Ensures automatic adjustments based on room state.
+
+Explanation:
+Closed-loop systems use feedback to adjust actions and maintain desired output; open-loop doesn't consider output.
+
+Common mistake note:
+Mistake: Choosing A, relying on human input rather than automated adjustment.
+------------------------------------------------------------------------------
+
+Problem 2 (Xyz456):
+What's the role of a PID controller in a control system?
+A) Introduces random variations to test system response.
+B) Calculates corrections based on error, past errors, and change rate.
+C) Blocks external disturbances from affecting the system.
+D) Predicts future values of controlled variable.
+Correct Answer: B
+
+Solution:
+PID calculates corrections using proportional, integral, and derivative terms for precise control.
+
+Explanation:
+PID controllers adjust proportional, integral, and derivative gains to handle various processes.
+
+Common mistake note:
+Mistake: Choosing A, which describes disturbance test, not PID's primary function.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwe789):
+In a cruise control system, what component serves as feedback?
+A) Speedometer, measuring current speed.
+B) Gas pedal, controlling engine power output.
+C) Road conditions, affecting car's speed.
+D) Driver, manually adjusting the speed.
+Correct Answer: A
+
+Solution:
+Speedometer is feedback element as it measures current speed and informs controller to maintain setpoint.
+
+Explanation:
+Feedback elements provide output data to ensure system stays on track with desired performance.
+
+Common mistake note:
+Mistake: Choosing B, which is an actuator; C and D, external factors not in control loop.
+------------------------------------------------------------------------------
+
+Problem 4 (Rty102):
+What's the purpose of a lead compensator in a control system?
+A) Reduces stability by lowering phase margin.
+B) Improves responsiveness by shifting poles closer to imaginary axis.
+C) Widens bandwidth by increasing damping ratio.
+D) Reduces overshoot with zeros at high frequencies.
+Correct Answer: B
+
+Solution:
+Lead compensator improves response by shifting poles near imaginary axis, reducing settling time and widening bandwidth.
+
+Explanation:
+Lead compensators enhance transient response without sacrificing stability or increasing overshoot.
+
+Common mistake note:
+Mistake: Choosing A for lag compensator effect; C and D not directly related to lead补偿.
+------------------------------------------------------------------------------
+
+Problem 5 (Uij345):
+Given G(s) = (s + 2)/(s^2 + 4s + 5), which controller improves stability?
+A) Proportional (P)
+B) Integral (I)
+C) Derivative (D)
+D) Lag compensator
+Correct Answer: C
+
+Solution:
+A derivative controller (D) improves stability by reducing overshoot and settling time.
+
+Explanation:
+Second-order system with two real poles may have overshoot; D-controller addresses this without affecting steady-state response.
+
+Common mistake note:
+Mistake: Choosing B, not directly improving stability; A and D, not specific to second-order stability.
+------------------------------------------------------------------------------
+
+Problem 6 (Kol567):
+A system has a steady-state error of 0.1 for unit step input. Which controller reduces this?
+A) Proportional (P)
+B) Integral (I)
+C) Derivative (D)
+D) Lag compensator
+Correct Answer: B
+
+Solution:
+An integral controller (I) reduces steady-state error by integrating error over time.
+
+Explanation:
+Steady-state errors are addressed with I-controllers; P-controllers don't eliminate them, D-controllers improve transient response.
+
+Common mistake note:
+Mistake: Choosing A, not addressing steady-state error; C, may improve transient but not guaranteed zero error; D, not directly related.
+------------------------------------------------------------------------------
+
+Problem 7 (Mno789):
+What's the role of a PI controller compared to PD?
+A) PI has better transient response but worse steady-state than PD.
+B) PI provides integral (I) for steady-state reduction, proportional (P) for quick response; PD only offers derivative (D).
+C) PD is better for high-frequency disturbances, PI for low-frequency.
+D) PI has less overshoot but slower settling time than PD.
+Correct Answer: B
+
+Solution:
+PI combines integral and proportional actions; PD only offers derivative action.
+
+Explanation:
+PI balances transient response with steady-state performance, while PD focuses on responsiveness.
+
+Common mistake note:
+Mistake: Choosing A and D, incorrect trade-offs between PI and PD; C, not related to controller roles.
+------------------------------------------------------------------------------

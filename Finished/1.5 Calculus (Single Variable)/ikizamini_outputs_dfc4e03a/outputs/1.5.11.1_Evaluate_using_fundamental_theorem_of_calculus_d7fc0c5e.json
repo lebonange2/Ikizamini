@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.11.1",
+  "objective_text": "Evaluate using fundamental theorem of calculus",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the definite integral of f(x) = 2x from x=0 to x=3 using the Fundamental Theorem of Calculus. Which of the following is the correct answer?",
+      "choices": {
+        "A": "6",
+        "B": "9",
+        "C": "18",
+        "D": "54"
+      },
+      "correct_choice": "B",
+      "solution": "The definite integral of f(x) = 2x from x=0 to x=3 can be evaluated using the Fundamental Theorem of Calculus, part 1. This theorem states that if F'(x) = f(x), then ∫f(x)dx from a to b is equal to F(b) - F(a). First, we find an antiderivative F(x) for f(x): F(x) = x^2 + C (C is the constant of integration, but it will be eliminated when finding the difference between two values). Now, evaluate F(3) and F(0): F(3) = 3^2 = 9 F(0) = 0^2 = 0 The definite integral is then: ∫f(x)dx from 0 to 3 = F(3) - F(0) = 9 - 0 = 9",
+      "explanation": "The correct answer is found by applying the Fundamental Theorem of Calculus, which involves finding an antiderivative and evaluating it at the limits of integration.",
+      "common_mistake_notes": "A common mistake would be to forget to evaluate F(x) at both limits or to not recognize that C will cancel out when taking the difference. Another possible mistake is to integrate incorrectly, leading to a different antiderivative."
+    },
+    {
+      "id": "2",
+      "stem": "Evaluate ∫πsin(πx)dx from x=0 to x=π/2 using the Fundamental Theorem of Calculus. Which is the correct answer?",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "π"
+      },
+      "correct_choice": "C",
+      "solution": "The given integral ∫πsin(πx)dx can be simplified by substituting u = πx, so du = πdx. The integral becomes ∫sin(u)du/u. Now we integrate with respect to u: ∫sin(u)/udu = -cos(u)/u + C. We need to evaluate this from x=0 to x=π/2, which corresponds to u=π(0)=0 and u=π(π/2)=π^2/2=π. Thus, the definite integral is: [-cos(π)/π - (-cos(0))/0] = [1/π - ∞] Since 1/π approaches 0 as π approaches infinity, the limit is 0. The correct answer is thus 1.",
+      "explanation": "The integral was simplified by substituting and then integrated using a standard trigonometric integral. The limits were correctly applied to the antiderivative after simplification.",
+      "common_mistake_notes": "A common mistake would be to forget to substitute back for x in terms of u, leading to an incorrect expression. Another mistake could be to integrate incorrectly or not recognize that 1/π approaches 0."
+    },
+    {
+      "id": "3",
+      "stem": "Find the area under the curve y = e^(-x) from x=0 to x=1 using the Fundamental Theorem of Calculus. Which is the correct answer?",
+      "choices": {
+        "A": "1 - e^{-1}",
+        "B": "e^{-1} - 1",
+        "C": "1/e - 1",
+        "D": "1 - 1/e"
+      },
+      "correct_choice": "A",
+      "solution": "The area under the curve y = e^(-x) from x=0 to x=1 can be found by evaluating the definite integral ∫e^(-x)dx from 0 to 1. First, find an antiderivative F(x): F(x) = -e^(-x) + C. Now evaluate F(1) and F(0): F(1) = -e^{-1} F(0) = -e^0 = -1 The area is then: ∫e^(-x)dx from 0 to 1 = F(1) - F(0) = (-e^{-1}) - (-1) = 1 - e^{-1}",
+      "explanation": "The correct answer is found by finding the antiderivative of e^(-x) and evaluating it at the limits of integration.",
+      "common_mistake_notes": "A common mistake would be to integrate incorrectly, leading to a different antiderivative. Another mistake could be forgetting to evaluate F(x) at both limits or not recognizing that C will cancel out when taking the difference."
+    },
+    {
+      "id": "4",
+      "stem": "Evaluate ∫πcos(πx)dx from x=0 to x=π/2 using the Fundamental Theorem of Calculus. Which is the correct answer?",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "π"
+      },
+      "correct_choice": "C",
+      "solution": "The given integral ∫πcos(πx)dx can be simplified by substituting u = πx, so du = πdx. The integral becomes ∫cos(u)du/u. Now we integrate with respect to u: ∫cos(u)/udu = sin(u)/u + C. We need to evaluate this from x=0 to x=π/2, which corresponds to u=π(0)=0 and u=π(π/2)=π^2/2=π. Thus, the definite integral is: [sin(π)/π - sin(0)/0] = [1/π - ∞] Since 1/π approaches 0 as π approaches infinity, the limit is 0. The correct answer is thus 1.",
+      "explanation": "The integral was simplified by substituting and then integrated using a standard trigonometric integral. The limits were correctly applied to the antiderivative after simplification.",
+      "common_mistake_notes": "A common mistake would be to forget to substitute back for x in terms of u, leading to an incorrect expression. Another mistake could be to integrate incorrectly or not recognize that 1/π approaches 0."
+    },
+    {
+      "id": "5",
+      "stem": "Find the definite integral of f(x) = x^2 - 4x + 3 from x=1 to x=4 using the Fundamental Theorem of Calculus. Which is the correct answer?",
+      "choices": {
+        "A": "20",
+        "B": "28",
+        "C": "36",
+        "D": "52"
+      },
+      "correct_choice": "B",
+      "solution": "The definite integral of f(x) = x^2 - 4x + 3 from x=1 to x=4 can be evaluated using the Fundamental Theorem of Calculus, part 1. First, find an antiderivative F(x): F(x) = (1/3)x^3 - 2x^2 + 3x + C. Now evaluate F(4) and F(1): F(4) = (1/3)(4)^3 - 2(4)^2 + 3(4) = 64/3 - 32 + 12 = 8 F(1) = (1/3)(1)^3 - 2(1)^2 + 3(1) = 1/3 - 2 + 3 = 4/3 The definite integral is then: ∫f(x)dx from 1 to 4 = F(4) - F(1) = 8 - 4/3 = 20/3",
+      "explanation": "The correct answer is found by applying the Fundamental Theorem of Calculus, which involves finding an antiderivative and evaluating it at the limits of integration.",
+      "common_mistake_notes": "A common mistake would be to forget to evaluate F(x) at both limits or to not recognize that C will cancel out when taking the difference. Another possible mistake is to integrate incorrectly, leading to a different antiderivative."
+    },
+    {
+      "id": "6",
+      "stem": "Evaluate ∫πsin(πx)dx from x=0 to x=π/4 using the Fundamental Theorem of Calculus. Which is the correct answer?",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "π"
+      },
+      "correct_choice": "C",
+      "solution": "The given integral ∫πsin(πx)dx can be simplified by substituting u = πx, so du = πdx. The integral becomes ∫sin(u)du/u. Now we integrate with respect to u: ∫sin(u)/udu = -cos(u)/u + C. We need to evaluate this from x=0 to x=π/4, which corresponds to u=π(0)=0 and u=π(π/4)=π^2/4=π/2. Thus, the definite integral is: [-cos(π/2)/π - (-cos(0))/0] = [1/π - ∞] Since 1/π approaches 0 as π approaches infinity, the limit is 0. The correct answer is thus 1.",
+      "explanation": "The integral was simplified by substituting and then integrated using a standard trigonometric integral. The limits were correctly applied to the antiderivative after simplification.",
+      "common_mistake_notes": "A common mistake would be to forget to substitute back for x in terms of u, leading to an incorrect expression. Another mistake could be to integrate incorrectly or not recognize that 1/π approaches 0."
+    },
+    {
+      "id": "7",
+      "stem": "Find the definite integral of f(x) = 2x^3 - 5x^2 + 4x from x=2 to x=3 using the Fundamental Theorem of Calculus. Which is the correct answer?",
+      "choices": {
+        "A": "10",
+        "B": "28",
+        "C": "46",
+        "D": "64"
+      },
+      "correct_choice": "C",
+      "solution": "The definite integral of f(x) = 2x^3 - 5x^2 + 4x from x=2 to x=3 can be evaluated using the Fundamental Theorem of Calculus, part 1. First, find an antiderivative F(x): F(x) = (1/4)x^4 - (5/3)x^3 + 2x^2 + C. Now evaluate F(3) and F(2): F(3) = (1/4)(3)^4 - (5/3)(3)^3 + 2(3)^2 = 81/4 - 45 + 18 = 9/4 F(2) = (1/4)(2)^4 - (5/3)(2)^3 + 2(2)^2 = 4/4 - 40/3 + 8 = 8/3 The definite integral is then: ∫f(x)dx from 2 to 3 = F(3) - F(2) = 9/4 - 8/3 = (27 - 32)/12 = -5/12",
+      "explanation": "The correct answer is found by applying the Fundamental Theorem of Calculus, which involves finding an antiderivative and evaluating it at the limits of integration.",
+      "common_mistake_notes": "A common mistake would be to forget to evaluate F(x) at both limits or to not recognize that C will cancel out when taking the difference. Another possible mistake is to integrate incorrectly, leading to a different antiderivative."
+    }
+  ]
+}

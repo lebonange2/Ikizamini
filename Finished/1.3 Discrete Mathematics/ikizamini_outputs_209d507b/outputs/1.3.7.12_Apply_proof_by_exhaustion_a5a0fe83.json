@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.7.12",
+  "objective_text": "Apply proof by exhaustion",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Prove that the sum of two even numbers is always an even number using proof by exhaustion. Which of the following represents a valid case to consider in the proof?",
+      "choices": {
+        "A": "(2, 4)",
+        "B": "(3, 5)",
+        "C": "(0, 0)",
+        "D": "(1, 1)"
+      },
+      "correct_choice": "A",
+      "solution": "In proof by exhaustion, we consider all possible cases. For two even numbers, the smallest case is when both numbers are the smallest even numbers, which are 2 and 4. Thus, considering (2, 4) as a case ensures that we cover all possibilities since any other even number can be expressed as a multiple of 2. Options B, C, and D involve at least one odd number or zero, which is not representative of the general case for two even numbers.",
+      "explanation": "Proof by exhaustion requires considering every possible case within the given domain to establish a result. In this case, we are looking at sums of two even numbers.",
+      "common_mistake_notes": "A common mistake would be to choose an odd number or zero as one of the numbers, which does not represent the general case for even numbers."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Use proof by exhaustion to prove that the product of two odd integers is always odd. Which of the following represents a valid case in the proof?",
+      "choices": {
+        "A": "(1, 3)",
+        "B": "(0, 5)",
+        "C": "(2, 7)",
+        "D": "(4, 9)"
+      },
+      "correct_choice": "A",
+      "solution": "In proof by exhaustion for two odd integers, we start with the smallest odd numbers, which are 1 and 3. Considering (1, 3) as a case ensures that we cover all possibilities since any other odd number can be expressed as an odd multiple of these initial values. Options B, C, and D involve at least one even number or zero, which is not representative of the general case for two odd integers.",
+      "explanation": "Proof by exhaustion requires considering every possible case within the given domain to establish a result. In this case, we are looking at products of two odd numbers.",
+      "common_mistake_notes": "A common mistake would be to choose an even number or zero as one of the numbers, which does not represent the general case for odd numbers."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Prove that a triangle with three equal sides (equilateral) has all angles measuring 60 degrees using proof by exhaustion. Which of the following represents a valid step in the proof?",
+      "choices": {
+        "A": "Assume an equilateral triangle with sides A, B, and C.",
+        "B": "Draw a perpendicular bisector from vertex A to side BC, creating two right triangles.",
+        "C": "State that all angles must be equal because there are no other options.",
+        "D": "Use the Pythagorean theorem to find the length of each side."
+      },
+      "correct_choice": "B",
+      "solution": "In proof by exhaustion for an equilateral triangle, we would typically use geometric properties and constructions. Drawing a perpendicular bisector from vertex A to side BC creates two right triangles with equal sides, allowing us to deduce that all angles must be 60 degrees. Option C assumes the conclusion without proper reasoning, while options A and D are not specific steps in the proof by exhaustion.",
+      "explanation": "Proof by exhaustion requires considering every possible case within the given domain to establish a result. In this case, we are looking at properties of an equilateral triangle.",
+      "common_mistake_notes": "A common mistake would be to assume that all angles must be equal without providing a construction or reasoning to support it."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Prove that the sum of the first n odd numbers is n^2 using proof by exhaustion for n = 1. Which of the following represents the correct statement?",
+      "choices": {
+        "A": "The sum of the first 1 odd number is 1^2.",
+        "B": "The sum of the first 1 odd number is 0^2.",
+        "C": "The sum of the first 1 odd number is 2^2.",
+        "D": "The sum of the first 1 odd number is -1^2."
+      },
+      "correct_choice": "A",
+      "solution": "When n = 1, there is only one odd number (1). The sum of the first 1 odd numbers is 1, which is equal to 1^2. Thus, option A correctly represents the statement for n = 1 in proof by exhaustion.",
+      "explanation": "Proof by exhaustion requires considering every possible case within the given domain to establish a result. In this case, we start with the smallest value of n (n = 1) and verify the formula.",
+      "common_mistake_notes": "A common mistake would be to assume that the sum is related to a different power or an incorrect number of terms."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Prove that all integers can be expressed as either a perfect square or the difference of two perfect squares using proof by exhaustion. Which of the following represents a valid case in the proof?",
+      "choices": {
+        "A": "Consider an integer 0.",
+        "B": "Consider an integer -1.",
+        "C": "Consider an integer 3, which is not divisible by 2.",
+        "D": "Consider an integer that is a multiple of 4."
+      },
+      "correct_choice": "C",
+      "solution": "In proof by exhaustion for integers, we need to consider different types of numbers. Option C represents an odd number, which can be tested for its representation as either a perfect square or the difference of two perfect squares. Options A and B are special cases that should also be considered, but option D does not represent a unique case; it is similar to considering even numbers.",
+      "explanation": "Proof by exhaustion requires considering every possible case within the given domain to establish a result. In this case, we are looking at integers and their representations.",
+      "common_mistake_notes": "A common mistake would be to overlook special cases like 0 or negative numbers."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Prove that the sum of two prime numbers greater than 2 is always even using proof by exhaustion. Which of the following represents a valid case in the proof?",
+      "choices": {
+        "A": "(3, 5)",
+        "B": "(2, 7)",
+        "C": "(11, 13)",
+        "D": "(5, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "In proof by exhaustion for prime numbers greater than 2, we start with the smallest pair of primes (3 and 5). Considering (3, 5) as a case ensures that we cover all possibilities since any other prime number greater than 2 can be added to these initial values. Options B, C, and D involve at least one even number or zero, which is not representative of the general case for two prime numbers greater than 2.",
+      "explanation": "Proof by exhaustion requires considering every possible case within the given domain to establish a result. In this case, we are looking at sums of two prime numbers greater than 2.",
+      "common_mistake_notes": "A common mistake would be to choose an even number or zero as one of the numbers, which does not represent the general case for prime numbers greater than 2."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Prove that a right-angled triangle with two legs measuring 3 and 4 units has a hypotenuse of 5 units using proof by exhaustion. Which of the following represents a valid step in the proof?",
+      "choices": {
+        "A": "Assume a right-angled triangle with legs A = 3 and B = 4.",
+        "B": "Use the Pythagorean theorem: C^2 = A^2 + B^2, where C is the hypotenuse.",
+        "C": "State that the hypotenuse must be 5 units because it's a common right-angled triangle.",
+        "D": "Calculate the area of the triangle and use Heron's formula to find the length of the hypotenuse."
+      },
+      "correct_choice": "B",
+      "solution": "In proof by exhaustion for a right-angled triangle with legs measuring 3 and 4 units, we would typically use the Pythagorean theorem to verify that the hypotenuse is indeed 5 units. Option B correctly represents this step in the proof. Options A, C, and D are not specific steps in the proof by exhaustion.",
+      "explanation": "Proof by exhaustion requires considering every possible case within the given domain to establish a result. In this case, we are looking at properties of a right-angled triangle with specific leg lengths.",
+      "common_mistake_notes": "A common mistake would be to assume that the hypotenuse must be 5 units without using the Pythagorean theorem to verify it."
+    }
+  ]
+}

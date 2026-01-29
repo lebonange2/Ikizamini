@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.5.4 Prove z + z̄ = 2Re(z)
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.5 Complex Conjugates and Properties
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Let z = a + bi, where a and b are real numbers. What is the value of z + ar{z}?
+A) a - bi
+B) 2a
+C) 2b
+D) a^2 + b^2
+Correct Answer: B
+
+Solution:
+z + ar{z} = (a + bi) + (a - bi) = 2a
+
+Explanation:
+The sum of a complex number and its conjugate results in twice the real part.
+
+Common mistake note:
+A common mistake is to add the real parts and imaginary parts separately, which would result in A. However, this violates the distributive property of addition over subtraction.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Given z = 3 + 4i, what is the value of z + ar{z}?
+A) 7
+B) 14
+C) 25
+D) 6 + 8i
+Correct Answer: A
+
+Solution:
+z + ar{z} = (3 + 4i) + (3 - 4i) = 6
+
+Explanation:
+By substituting the given values and applying the formula, we get z + ar{z} = 2a = 2 	imes 3 = 6.
+
+Common mistake note:
+A common mistake is to add the real parts and imaginary parts separately, which would result in D. However, this ignores the conjugation of the imaginary part.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Prove that for any complex number z, z + ar{z} is always a real number.
+A) True
+B) False
+C) Depends on z
+D) Not applicable
+Correct Answer: A
+
+Solution:
+z + ar{z} = (a + bi) + (a - bi) = 2a, which is a real number.
+
+Explanation:
+The sum of a complex number and its conjugate always results in twice the real part, making it a real number.
+
+Common mistake note:
+A common mistake might be to think that z + ar{z} could be imaginary if b is not zero. However, the subtraction of bi from bi makes the imaginary parts cancel out.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+If z = 2i, what is the value of z + ar{z}?
+A) 0
+B) 4
+C) -4
+D) 2i
+Correct Answer: A
+
+Solution:
+z + ar{z} = (2i) + (-2i) = 0
+
+Explanation:
+By substituting the given values and applying the formula, we get z + ar{z} = 2a = 2 	imes 0 = 0.
+
+Common mistake note:
+A common mistake is to think that the sum of two imaginary numbers would be a non-zero imaginary number. However, in this case, the conjugate changes the sign of the imaginary part.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Given z = -1 + 3i, what is the value of z + ar{z}?
+A) 2
+B) -2
+C) 8
+D) -6
+Correct Answer: B
+
+Solution:
+z + ar{z} = (-1 + 3i) + (-1 - 3i) = -2
+
+Explanation:
+By substituting the given values and applying the formula, we get z + ar{z} = 2a = 2 	imes (-1) = -2.
+
+Common mistake note:
+A common mistake is to add the real parts and imaginary parts separately, which would result in C. However, this ignores the conjugation of the imaginary part.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Prove that z + ar{z} = 2	ext{Re}(z) for any complex number z.
+A) True
+B) False
+C) Depends on z
+D) Not applicable
+Correct Answer: A
+
+Solution:
+Let z = a + bi, then z + ar{z} = (a + bi) + (a - bi) = 2a = 2	ext{Re}(z)
+
+Explanation:
+By expanding the sum and simplifying, we get the desired result.
+
+Common mistake note:
+A common mistake might be to think that the proof is not valid for certain complex numbers. However, the proof holds true for any complex number z.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+If z = 5 - 2i, what is the value of z + ar{z}?
+A) 10
+B) 3
+C) -3
+D) 7i
+Correct Answer: A
+
+Solution:
+z + ar{z} = (5 - 2i) + (5 + 2i) = 10
+
+Explanation:
+By substituting the given values and applying the formula, we get z + ar{z} = 2a = 2 	imes 5 = 10.
+
+Common mistake note:
+A common mistake is to add the real parts and imaginary parts separately, which would result in D. However, this ignores the conjugation of the imaginary part.
+------------------------------------------------------------------------------

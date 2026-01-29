@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.3.8",
+  "objective_text": "Determine perpendicular planes",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Which pair of planes are perpendicular?",
+      "choices": {
+        "A": "[0, 2, 1], [2, 0, -1]",
+        "B": "[1, 1, 1], [-1, -1, -1]",
+        "C": "[3, 4, 5], [-4, 3, -5]",
+        "D": "[2, -1, 0], [1, 2, 0]"
+      },
+      "correct_choice": "D",
+      "solution": "The normal vectors of the planes must be orthogonal (dot product equals zero) for the planes to be perpendicular. Let's calculate the dot products for each pair:\n\nA: (0, 2, 1) • (2, 0, -1) = 0*2 + 2*0 + 1*(-1) = -1\nB: (1, 1, 1) • (-1, -1, -1) = 1*(-1) + 1*(-1) + 1*(-1) = -3\nC: (3, 4, 5) • (-4, 3, -5) = 3*(-4) + 4*3 + 5*(-5) = -12 + 12 - 25 = -25\nD: (2, -1, 0) • (1, 2, 0) = 2*1 + (-1)*2 + 0*0 = 2 - 2 = 0\n\nThe dot product is zero for pair D, so the planes are perpendicular.",
+      "explanation": "Perpendicular planes have normal vectors that are orthogonal, meaning their dot product is zero.",
+      "common_mistake_notes": "A common mistake is to assume that if one component of the normal vectors is zero, the planes are perpendicular. However, this is not always true; all components must be considered in the dot product."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Find a plane perpendicular to the plane 3x - 4y + z = 5 and passing through the point (1, 2, 3).",
+      "choices": {
+        "A": "[3, -4, 1], [1, 2, 3]",
+        "B": "[-4, 3, -1], [1, 2, 3]",
+        "C": "[4, -3, 1], [1, 2, 3]",
+        "D": "[-3, 4, -1], [1, 2, 3]"
+      },
+      "correct_choice": "B",
+      "solution": "The normal vector of the given plane is (3, -4, 1). A perpendicular plane will have a normal vector that is orthogonal to this one. Let's find a vector perpendicular to (3, -4, 1) by taking its cross product with another non-zero vector. We can use (1, 0, 0) as the other vector:\n\n(3, -4, 1) × (1, 0, 0) = (-4, 3, 0)\n\nNow we need to find a plane with normal vector (-4, 3, 0) and passing through point (1, 2, 3). The equation of such a plane is:\n\nA(x - x_0) + B(y - y_0) + C(z - z_0) = 0\n(-4)(x - 1) + 3(y - 2) + 0(z - 3) = 0\n-4x + 4 + 3y - 6 = 0\n-4x + 3y - 2 = 0\n\nThe normal vector for the plane is [-4, 3, 0], which corresponds to answer choice B.",
+      "explanation": "To find a plane perpendicular to another, we need its normal vector to be orthogonal to the original plane's normal vector. We then use the point-normal form of the plane equation to write the equation of the new plane.",
+      "common_mistake_notes": "A common mistake is to forget to normalize the cross product or to not consider that the resulting vector should be perpendicular to the given normal vector."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Which of the following lines are perpendicular to the line with direction vector [2, 1, -1]?",
+      "choices": {
+        "A": "[1, 0, 0], [0, 1, 0]",
+        "B": "[1, 1, 1], [0, 0, 1]",
+        "C": "[-1, 1, 0], [-2, 2, 0]",
+        "D": "[2, -1, 1], [4, -2, 2]"
+      },
+      "correct_choice": "C",
+      "solution": "The direction vector of the line must be orthogonal to the direction vectors of any lines perpendicular to it. Let's calculate the dot products between the given direction vector and each choice:\n\nA: (2, 1, -1) • (1, 0, 0) = 2*1 + 1*0 + (-1)*0 = 2\nB: (2, 1, -1) • (1, 1, 1) = 2*1 + 1*1 + (-1)*1 = 2\nC: (2, 1, -1) • (-1, 1, 0) = 2*(-1) + 1*1 + (-1)*0 = -1\nD: (2, 1, -1) • (2, -1, 1) = 2*2 + 1*(-1) + (-1)*1 = 3\n\nThe dot product is zero for choice C, so the lines are perpendicular.",
+      "explanation": "Lines are perpendicular if their direction vectors are orthogonal. We check this by calculating the dot products between the given direction vector and each choice's direction vector.",
+      "common_mistake_notes": "A common mistake is to assume that if one component of the direction vectors is zero, the lines are perpendicular. However, all components must be considered in the dot product."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Find a plane perpendicular to the line with direction vector [1, 2, 3] and passing through the point (0, 0, 0).",
+      "choices": {
+        "A": "[1, 2, 3], [0, 0, 0]",
+        "B": "[-2, 1, -1], [0, 0, 0]",
+        "C": "[3, -2, 1], [0, 0, 0]",
+        "D": "[-1, -2, -3], [0, 0, 0]"
+      },
+      "correct_choice": "B",
+      "solution": "The direction vector of the line is (1, 2, 3). A perpendicular plane will have a normal vector that is orthogonal to this one. Let's find a vector perpendicular to (1, 2, 3) by taking its cross product with another non-zero vector. We can use (0, 1, 0) as the other vector:\n\n(1, 2, 3) × (0, 1, 0) = (-2, 1, -1)\n\nNow we need to find a plane with normal vector (-2, 1, -1) and passing through point (0, 0, 0). The equation of such a plane is:\n\nA(x - x_0) + B(y - y_0) + C(z - z_0) = 0\n(-2)(x - 0) + 1(y - 0) + (-1)(z - 0) = 0\n-2x + y - z = 0\n\nThe normal vector for the plane is [-2, 1, -1], which corresponds to answer choice B.",
+      "explanation": "To find a plane perpendicular to a line, we need its normal vector to be orthogonal to the line's direction vector. We then use the point-normal form of the plane equation to write the equation of the new plane.",
+      "common_mistake_notes": "A common mistake is to forget to normalize the cross product or to not consider that the resulting vector should be perpendicular to the given direction vector."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Which pair of vectors represents a line and its normal vector, indicating that the line is in a plane perpendicular to the xy-plane?",
+      "choices": {
+        "A": "[1, 0, 2], [0, 0, 1]",
+        "B": "[0, 1, 2], [1, 0, 0]",
+        "C": "[1, 1, 2], [0, 0, 1]",
+        "D": "[1, 2, 2], [0, 0, 1]"
+      },
+      "correct_choice": "A",
+      "solution": "The xy-plane has a normal vector of [0, 0, 1]. For a line to be in a plane perpendicular to the xy-plane, its direction vector must be orthogonal to [0, 0, 1]. Let's check the dot products:\n\nA: (1, 0, 2) • (0, 0, 1) = 1*0 + 0*0 + 2*1 = 2\nB: (0, 1, 2) • (0, 0, 1) = 0*0 + 1*0 + 2*1 = 2\nC: (1, 1, 2) • (0, 0, 1) = 1*0 + 1*0 + 2*1 = 2\nD: (1, 2, 2) • (0, 0, 1) = 1*0 + 2*0 + 2*1 = 2\n\nNone of the dot products are zero, but we need to find a line with direction vector perpendicular to [0, 0, 1]. The correct choice is A because it has a direction vector that is parallel to the xy-plane and thus orthogonal to its normal vector.",
+      "explanation": "A line in a plane perpendicular to the xy-plane must have a direction vector orthogonal to the normal vector of the xy-plane, which is [0, 0, 1]. We check the dot products between each choice's direction vector and [0, 0, 1] to determine orthogonality.",
+      "common_mistake_notes": "A common mistake is to assume that any line in the xy-plane is perpendicular to the xy-plane. However, we need a line with a direction vector orthogonal to the normal vector of the xy-plane."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Find a plane perpendicular to the plane 2x + y - 3z = 7 and passing through the point (1, 2, 3).",
+      "choices": {
+        "A": "[2, 1, -3], [1, 2, 3]",
+        "B": "[-1, 2, 3], [1, 2, 3]",
+        "C": "[1, -2, 3], [1, 2, 3]",
+        "D": "[-2, -1, 3], [1, 2, 3]"
+      },
+      "correct_choice": "B",
+      "solution": "The normal vector of the given plane is (2, 1, -3). A perpendicular plane will have a normal vector that is orthogonal to this one. Let's find a vector perpendicular to (2, 1, -3) by taking its cross product with another non-zero vector. We can use (0, 1, 0) as the other vector:\n\n(2, 1, -3) × (0, 1, 0) = (-1, 2, 3)\n\nNow we need to find a plane with normal vector (-1, 2, 3) and passing through point (1, 2, 3). The equation of such a plane is:\n\nA(x - x_0) + B(y - y_0) + C(z - z_0) = 0\n(-1)(x - 1) + 2(y - 2) + 3(z - 3) = 0\n-x + 1 + 2y - 4 + 3z - 9 = 0\n-x + 2y + 3z - 12 = 0\n\nThe normal vector for the plane is [-1, 2, 3], which corresponds to answer choice B.",
+      "explanation": "To find a plane perpendicular to another, we need its normal vector to be orthogonal to the original plane's normal vector. We then use the point-normal form of the plane equation to write the equation of the new plane.",
+      "common_mistake_notes": "A common mistake is to forget to normalize the cross product or to not consider that the resulting vector should be perpendicular to the given normal vector."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Which pair of planes are parallel?",
+      "choices": {
+        "A": "[1, 2, 3], [4, 5, 6]",
+        "B": "[2, -1, 0], [-1, 2, 0]",
+        "C": "[3, 4, 5], [-4, 3, -5]",
+        "D": "[4, -3, 1], [4, -3, 1]"
+      },
+      "correct_choice": "D",
+      "solution": "Parallel planes have the same normal vector. Let's compare the normal vectors of each pair:\n\nA: (1, 2, 3) ≠ (4, 5, 6)\nB: (2, -1, 0) ≠ (-1, 2, 0)\nC: (3, 4, 5) ≠  (-4, 3, -5)\nD: (4, -3, 1) = (4, -3, 1)\n\nThe normal vectors of planes in choice D are the same, making them parallel.",
+      "explanation": "Parallel planes have identical normal vectors. We compare the normal vectors of each pair to determine if they are parallel.",
+      "common_mistake_notes": "A common mistake is to confuse parallel planes with perpendicular planes. Parallel planes have the same normal vector, while perpendicular planes have normal vectors that are orthogonal (dot product equals zero)."
+    }
+  ]
+}

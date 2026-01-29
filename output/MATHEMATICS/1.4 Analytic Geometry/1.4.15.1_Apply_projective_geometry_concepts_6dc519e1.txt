@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.15.1 Apply projective geometry concepts
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.15 Advanced Analytic Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+In a perspective drawing, two parallel lines appear to converge at a point on the horizon line called what?
+A) vanishing point
+B) center of projection
+C) principal point
+D) focal point
+Correct Answer: A
+
+Solution:
+In projective geometry, when parallel lines appear to meet at a single point on the horizon line in a perspective drawing, that point is called the vanishing point.
+
+Explanation:
+The vanishing point represents the convergence of parallel lines due to foreshortening caused by perspective. Other terms like center of projection, principal point, and focal point refer to different concepts in geometry or optics.
+
+Common mistake note:
+Common mistake: Choosing B (center of projection), which refers to the point from which an object is projected onto a plane, not the point where parallel lines appear to meet.
+------------------------------------------------------------------------------
+
+Problem 2 (Xyz456):
+What property do projective transformations preserve in a geometric figure?
+A) Area
+B) Lengths of parallel sides
+C) Angles between intersecting lines
+D) Ratio of distances from a point to two other points
+Correct Answer: D
+
+Solution:
+Projective transformations preserve the ratio of distances from a point to two other points, known as cross-ratios. They do not necessarily preserve area or angles.
+
+Explanation:
+In projective geometry, transformations maintain relative positions and incidence relationships between points, lines, and planes. Cross-ratios are invariant under such transformations.
+
+Common mistake note:
+Common mistake: Choosing A (area), which is not preserved in general by projective transformations; or C (angles between intersecting lines), which may change depending on the transformation.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwe789):
+Which of the following statements about a projective plane is false?
+A) It has no boundaries.
+B) It contains an infinite number of points and lines.
+C) Any two distinct lines intersect at exactly one point.
+D) It can be embedded in three-dimensional space without any self-intersections.
+Correct Answer: D
+
+Solution:
+A projective plane cannot be embedded in three-dimensional space without self-intersections because it has the property that any two distinct lines must intersect at exactly one point, which is not possible in a Euclidean embedding.
+
+Explanation:
+The properties of a projective plane include no boundaries, an infinite number of points and lines, and unique intersection for any two lines. However, it cannot be embedded without self-intersections due to its non-Euclidean nature.
+
+Common mistake note:
+Common mistake: Choosing C (any two distinct lines intersect at exactly one point), which is a true statement about projective planes.
+------------------------------------------------------------------------------
+
+Problem 4 (Rty123):
+In projective geometry, what type of transformation maps every line to another line?
+A) Similarity transformation
+B) Affine transformation
+C) Projective transformation
+D) Isometry
+Correct Answer: C
+
+Solution:
+Projective transformations map every line to another line in a projective space, while preserving incidence and cross-ratios.
+
+Explanation:
+Projective transformations are broader than both similarity and affine transformations, as they include the latter two as special cases. They ensure that lines remain lines and points remain points after transformation.
+
+Common mistake note:
+Common mistake: Choosing B (affine transformation), which does not necessarily map every line to another line.
+------------------------------------------------------------------------------
+
+Problem 5 (Uij456):
+What is the relationship between a projective plane and a real plane in terms of dimensionality?
+A) They have the same dimensionality.
+B) The projective plane has one fewer dimension than the real plane.
+C) The projective plane has one more dimension than the real plane.
+D) They are not comparable as they belong to different geometries.
+Correct Answer: C
+
+Solution:
+A projective plane has one more dimension than a real plane, as it includes an additional 'at infinity' region where parallel lines intersect.
+
+Explanation:
+Projective planes add a notion of infinity by considering points at infinity for parallel lines. This adds an extra dimension compared to the traditional Euclidean plane.
+
+Common mistake note:
+Common mistake: Choosing B (one fewer dimension), which is incorrect; or D (not comparable), which overlooks the fact that projective geometry extends Euclidean geometry.
+------------------------------------------------------------------------------
+
+Problem 6 (Oop789):
+Which of the following transformations preserves collinearity in a projective space?
+A) Translation
+B) Rotation
+C) Reflection
+D) Perspective transformation
+Correct Answer: D
+
+Solution:
+A perspective transformation, also known as a central projection, preserves collinearity in a projective space. It maps points on a plane to another plane by projecting them through a single point called the center of projection.
+
+Explanation:
+Collinearity refers to the property that three or more points lie on the same line. Perspective transformations ensure that collinear points remain collinear after transformation, even if their relative positions change.
+
+Common mistake note:
+Common mistake: Choosing A (translation), B (rotation), or C (reflection), which do not necessarily preserve collinearity in a projective space.
+------------------------------------------------------------------------------
+
+Problem 7 (Kol123):
+In projective geometry, what is the role of homogeneous coordinates?
+A) They represent points on the plane using real numbers.
+B) They allow for the representation of infinity as a finite value.
+C) They simplify calculations by avoiding division.
+D) They are used to describe non-geometric transformations.
+Correct Answer: B
+
+Solution:
+Homogeneous coordinates enable the representation of points at infinity in projective geometry by using a form with an extra homogeneous coordinate, which can be set to zero for points at infinity.
+
+Explanation:
+Homogeneous coordinates extend the concept of Cartesian coordinates by adding an additional component, allowing for a unified treatment of finite and infinite points. This is crucial in projective geometry where lines may intersect at infinity.
+
+Common mistake note:
+Common mistake: Choosing A (real numbers), which is not specific to homogeneous coordinates; or C (avoiding division), which is not the primary purpose.
+------------------------------------------------------------------------------

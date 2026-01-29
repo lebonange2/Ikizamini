@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.5.13",
+  "objective_text": "Calculate perimeter (approximate)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the approximate perimeter of a rectangle with length 12 cm and width 7 cm?",
+      "choices": {
+        "A": "19 cm",
+        "B": "25 cm",
+        "C": "30 cm",
+        "D": "36 cm"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the perimeter of a rectangle is P = 2l + 2w, where l is the length and w is the width. Plugging in the values given: P = 2(12) + 2(7) = 24 + 14 = 38 cm. The closest approximation to 38 cm among the choices is 25 cm.",
+      "explanation": "To approximate, you can round the numbers before calculating: 12 cm to 10 cm and 7 cm to 10 cm. Then P ≈ 2(10) + 2(10) = 40 cm. Since 30 cm is too small and 36 cm is too large, 25 cm is the best approximation.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by 2 for each side or to round numbers incorrectly."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the approximate perimeter of a triangle with sides 9 m, 13 m, and 7 m?",
+      "choices": {
+        "A": "20 m",
+        "B": "30 m",
+        "C": "40 m",
+        "D": "50 m"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for the perimeter of a triangle is P = a + b + c, where a, b, and c are the lengths of the sides. Plugging in the values given: P = 9 + 13 + 7 = 29 m. The closest approximation to 29 m among the choices is 40 m.",
+      "explanation": "To approximate, you can round the numbers before calculating: 9 m to 10 m, 13 m to 10 m, and 7 m to 5 m. Then P ≈ 10 + 10 + 5 = 25 m. Since 20 m is too small and 50 m is too large, 40 m is the best approximation.",
+      "common_mistake_notes": "A common mistake is to round numbers incorrectly or to add them without considering the correct order of addition."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the approximate perimeter of a circle with diameter 15 cm?",
+      "choices": {
+        "A": "30 cm",
+        "B": "47.1 cm",
+        "C": "50 cm",
+        "D": "60 cm"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the circumference (perimeter) of a circle is C = πd, where d is the diameter and π is approximately 3.14159. Plugging in the values given: C ≈ 3.14159 \times 15 cm ≈ 47.1245 cm. The closest approximation to 47.1245 cm among the choices is 47.1 cm.",
+      "explanation": "To approximate, you can use a common value for π like 3.14 or 3.15 and multiply it by the diameter. Then C ≈ 3.14 \times 15 cm = 47.1 cm. Since 30 cm is too small and 60 cm is too large, 47.1 cm is the best approximation.",
+      "common_mistake_notes": "A common mistake is to forget that the formula for circumference involves π or to use an incorrect value for π."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the approximate perimeter of a square with side length 6.5 cm?",
+      "choices": {
+        "A": "13 cm",
+        "B": "26 cm",
+        "C": "39 cm",
+        "D": "52 cm"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the perimeter of a square is P = 4s, where s is the side length. Plugging in the value given: P = 4 \times 6.5 cm = 26 cm. The exact answer is 26 cm, which matches choice B.",
+      "explanation": "No approximation needed here since the side length is already a decimal number. Simply multiply the side length by 4 to get the perimeter.",
+      "common_mistake_notes": "A common mistake might be to round the side length before multiplying, leading to an incorrect answer."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the approximate perimeter of a parallelogram with sides 8 cm and 12 cm and a diagonal of 15 cm?",
+      "choices": {
+        "A": "30 cm",
+        "B": "40 cm",
+        "C": "50 cm",
+        "D": "60 cm"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the perimeter of a parallelogram is P = 2(a + b), where a and b are the lengths of the sides. Since we don't have the exact angle between the sides, we can use the Pythagorean theorem to find the length of the other diagonal (d) and then use Heron's formula to approximate the perimeter. d^2 = 15^2 - 8^2 = 169, so d ≈ 13 cm. The semi-perimeter is s = (a + b + d)/2 = (8 + 12 + 13)/2 = 23 cm. Using Heron's formula: P ≈ 2\frac{2s - a - b}{2} \times \frac{\text{sqrt}(2s - a)(2s - b)(2s - d)}{2} = 2\frac{23 - 8 - 12}{2} \times \frac{\text{sqrt}(15)(11)(9)}{2} ≈ 40 cm.",
+      "explanation": "To approximate, we use the Pythagorean theorem to find the length of the other diagonal and then Heron's formula for the perimeter. Since the given values are exact, no rounding is needed for this problem.",
+      "common_mistake_notes": "A common mistake might be to assume that the parallelogram is a rectangle or to forget to use Heron's formula when the sides and one diagonal are given."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the approximate perimeter of an equilateral triangle with side length 10 cm?",
+      "choices": {
+        "A": "20 cm",
+        "B": "30 cm",
+        "C": "40 cm",
+        "D": "50 cm"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the perimeter of an equilateral triangle is P = 3s, where s is the side length. Plugging in the value given: P = 3 \times 10 cm = 30 cm. The exact answer is 30 cm, which matches choice B.",
+      "explanation": "No approximation needed here since the side length is an integer. Simply multiply the side length by 3 to get the perimeter.",
+      "common_mistake_notes": "A common mistake might be to round the side length before multiplying, leading to an incorrect answer."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the approximate perimeter of a regular hexagon with side length 4.5 cm?",
+      "choices": {
+        "A": "13.5 cm",
+        "B": "27 cm",
+        "C": "40.5 cm",
+        "D": "54 cm"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the perimeter of a regular hexagon is P = 6s, where s is the side length. Plugging in the value given: P = 6 \times 4.5 cm ≈ 27 cm. The closest approximation to 27 cm among the choices is 27 cm.",
+      "explanation": "To approximate, you can multiply the exact side length by 6 since it's already a decimal number. Then P ≈ 6 \times 4.5 cm = 27 cm. Since 13.5 cm is too small and 54 cm is too large, 27 cm is the best approximation.",
+      "common_mistake_notes": "A common mistake might be to round the side length before multiplying, leading to an incorrect answer."
+    }
+  ]
+}

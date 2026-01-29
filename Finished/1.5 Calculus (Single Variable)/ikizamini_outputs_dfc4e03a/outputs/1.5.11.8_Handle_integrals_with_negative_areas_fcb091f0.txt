@@ -1,0 +1,153 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.11.8 Handle integrals with negative areas
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.11 Definite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (What is the definite integral of f(x) = -2x from x=0 to x=1?):
+-2
+-1
+2
+1
+A) -2
+B) -1
+C) 2
+D) 1
+Correct Answer: A
+
+Solution:
+The integral of f(x) = -2x is -x^2. Evaluating from x=0 to x=1 gives (-1^2) - (0^2) = -1.
+
+Explanation:
+When integrating a negative function, the area under the curve is negative. Thus, the definite integral will be negative as well.
+
+Common mistake note:
+A common mistake is to forget that the area is negative when integrating a negative function.
+------------------------------------------------------------------------------
+
+Problem 2 (What is the net signed area between x=0 and x=2 for the function g(x) = -x^2 + 1?):
+-3
+-4
+divide by zero
+3
+A) -3
+B) -4
+C) divide by zero
+D) 3
+Correct Answer: A
+
+Solution:
+The function has two parts: a parabola with negative area and a constant increase. The area under the curve from x=0 to x=1 is positive (1), but from x=1 to x=2 it's negative (-3). Net signed area = 1 - 3 = -2.
+
+Explanation:
+When calculating net signed area, consider both positive and negative areas under the curve.
+
+Common mistake note:
+A common mistake is to only calculate the area between x=0 and x=1, forgetting that the function changes sign at x=1.
+------------------------------------------------------------------------------
+
+Problem 3 (Find the definite integral of h(x) = 3x^2 - 4x from x=-1 to x=1.):
+-2
+-1
+divide by zero
+1
+A) -2
+B) -1
+C) divide by zero
+D) 1
+Correct Answer: A
+
+Solution:
+The integral of h(x) is x^3 - 2x^2. Evaluating from x=-1 to x=1 gives [(1^3 - 2(1)^2) - ((-1)^3 - 2(-1)^2)] = [1 - 2 + 1 - 2] = 0.
+
+Explanation:
+When integrating, don't forget the constant of integration. However, since we're evaluating a definite integral, it will be zero.
+
+Common mistake note:
+A common mistake is to forget to evaluate the antiderivative at both limits and then subtract.
+------------------------------------------------------------------------------
+
+Problem 4 (Calculate the area between x=-1 and x=2 for the function i(x) = -x^3 + 2x^2 - 3x.):
+-4
+-5
+divide by zero
+5
+A) -4
+B) -5
+C) divide by zero
+D) 5
+Correct Answer: A
+
+Solution:
+The function has three parts: a cubic with negative area, a quadratic increase, and a linear decrease. The area under the curve from x=-1 to x=0 is positive (1), but from x=0 to x=2 it's negative (-5). Net signed area = 1 - 5 = -4.
+
+Explanation:
+When calculating net signed area, consider both positive and negative areas under the curve.
+
+Common mistake note:
+A common mistake is to only calculate the area between x=-1 and x=0, forgetting that the function changes sign at x=0.
+------------------------------------------------------------------------------
+
+Problem 5 (Find the definite integral of j(x) = -4x^2 + 3x from x=-2 to x=1.):
+-6
+-5
+divide by zero
+5
+A) -6
+B) -5
+C) divide by zero
+D) 5
+Correct Answer: B
+
+Solution:
+The integral of j(x) is -x^3 + 3/2 x^2. Evaluating from x=-2 to x=1 gives [(1 - 3/2) - ((-8 - 3)] = [1/2 - (-11/2)] = 5.
+
+Explanation:
+When integrating, don't forget the constant of integration. However, since we're evaluating a definite integral, it will be zero.
+
+Common mistake note:
+A common mistake is to forget to evaluate the antiderivative at both limits and then subtract.
+------------------------------------------------------------------------------
+
+Problem 6 (Calculate the area between x=-2 and x=1 for the function k(x) = -x^2 + 4x - 6.):
+-3
+-4
+divide by zero
+3
+A) -3
+B) -4
+C) divide by zero
+D) 3
+Correct Answer: A
+
+Solution:
+The function has three parts: a parabola with negative area, a linear increase, and a constant decrease. The area under the curve from x=-2 to x=0 is positive (6), but from x=0 to x=1 it's negative (-3). Net signed area = 6 - 3 = 3.
+
+Explanation:
+When calculating net signed area, consider both positive and negative areas under the curve.
+
+Common mistake note:
+A common mistake is to only calculate the area between x=-2 and x=0, forgetting that the function changes sign at x=0.
+------------------------------------------------------------------------------
+
+Problem 7 (Find the definite integral of l(x) = 2x^2 - 5x from x=-1 to x=2.):
+-6
+-7
+divide by zero
+7
+A) -6
+B) -7
+C) divide by zero
+D) 7
+Correct Answer: A
+
+Solution:
+The integral of l(x) is (2/3)x^3 - 5/2 x^2. Evaluating from x=-1 to x=2 gives [(8/3 - 5/2) - ((-1 - 5)] = [7/6 - (-6)] = 49/6.
+
+Explanation:
+When integrating, don't forget the constant of integration. However, since we're evaluating a definite integral, it will be zero.
+
+Common mistake note:
+A common mistake is to forget to evaluate the antiderivative at both limits and then subtract.
+------------------------------------------------------------------------------

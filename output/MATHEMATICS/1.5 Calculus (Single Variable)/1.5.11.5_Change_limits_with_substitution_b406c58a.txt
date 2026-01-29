@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.11.5 Change limits with substitution
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.11 Definite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (And(x,y)):
+Evaluate the definite integral Φ(x^2 - 4x + 4)dx from x=1 to x=3 using substitution. Let u = x - 2.
+A) (1/3)(u^3)|_-1^1
+B) (1/3)(u^3 - 8)|_-1^1
+C) (1/3)(u^3 - 8)|_0^2
+D) (1/3)(u^3 - 4u + 4)|_0^2
+Correct Answer: C
+
+Solution:
+Substitute u = x - 2, then du = dx. The new limits are when x = 1 (u = 1 - 2 = -1) and x = 3 (u = 3 - 2 = 1). The integral becomes Φ(u^2 + 4)du from u = -1 to u = 1. Integrating, we get (1/3)(u^3 + 4u)|_-1^1. Since the integrand is an odd function, the definite integral evaluates to zero. However, since we integrated with respect to u, we must substitute back for x: (1/3)((x - 2)^3 + 4(x - 2))|_1^3 = (1/3)(u^3 - 8)|_0^2.
+
+Explanation:
+The correct substitution and limits were applied, leading to the integral in terms of u. The evaluation at the new limits was done correctly, and the result was converted back to x.
+
+Common mistake note:
+A common mistake is not changing the limits after substituting.
+------------------------------------------------------------------------------
+
+Problem 2 (TriangleArea):
+Find the area of the triangle with vertices at (0, 0), (2, 3), and (4, 0) by evaluating the definite integral Φ(x)dx from x=0 to x=2 using substitution. Let u = x + 1.
+A) (1/2)(u^2)|_1^3
+B) (1/2)(u^2 - 4u + 4)|_1^3
+C) (1/2)(u^2 - 4u + 4)|_0^2
+D) (1/2)(u^2 - 2u + 1)|_0^2
+Correct Answer: C
+
+Solution:
+Substitute u = x + 1, then du = dx. The new limits are when x = 0 (u = 1) and x = 2 (u = 3). The integral becomes Φ(u - 1)du from u = 1 to u = 3. Integrating, we get (1/2)(u^2 - 2u + 1)|_1^3. Evaluating at the new limits, we get (1/2)((3)^2 - 2(3) + 1) - (1/2)((1)^2 - 2(1) + 1) = 4. The area of the triangle is half this value: 2 square units.
+
+Explanation:
+The correct substitution and limits were applied, leading to the integral in terms of u. The evaluation at the new limits was done correctly, and the result was converted to find the area of the triangle.
+
+Common mistake note:
+A common mistake is not recognizing that the integral represents the area under a curve, which should be multiplied by 1/2 to find the actual area.
+------------------------------------------------------------------------------
+
+Problem 3 (SineIntegral):
+Evaluate the definite integral Φsin(x)dx from x=0 to x=π using substitution. Let u = cos(x).
+A) (1/2)(u^2)|_1^0
+B) (1/2)(u^2 - 1)|_1^0
+C) (1/2)(u^2 - 1)|_0^-1
+D) (1/2)(u^2 + 1)|_0^-1
+Correct Answer: B
+
+Solution:
+Substitute u = cos(x), then du = -sin(x)dx. Since the integrand is sin(x), we have to multiply by -1: Φ(-du) = -Φdu. The new limits are when x = 0 (u = 1) and x = π (u = -1). The integral becomes -Φudu from u = 1 to u = -1. Integrating, we get -(1/2)(u^2)|_1^0. Evaluating at the new limits, we get -(1/2)((-1)^2 - (1)^2) = 0.
+
+Explanation:
+The correct substitution and limits were applied, leading to the integral in terms of u. The evaluation at the new limits was done correctly, and the negative sign from changing the integrand was accounted for.
+
+Common mistake note:
+A common mistake is not flipping the direction of the limits when the integrand changes sign.
+------------------------------------------------------------------------------
+
+Problem 4 (QuadraticRoots):
+Find the roots of the quadratic equation x^2 - 6x + 9 = 0 by completing the square and evaluating a definite integral. Let u = x - 3.
+A) (u - 3)^2|_0^3
+B) (u - 3)^2|_-3^0
+C) (u^2 - 6u + 9)|_0^3
+D) (u^2 - 6u + 9)|_-3^0
+Correct Answer: A
+
+Solution:
+Substitute u = x - 3, then du = dx. The equation becomes (u)^2 = 0. Integrating both sides with respect to u, we get Φ(u^2)du = Φ0du. This simplifies to (1/3)(u^3)|_a^b for some limits a and b. Since the integral of zero is always zero, the limits do not matter. The equation becomes (1/3)(u^3) = 0. Setting this equal to zero gives u = 0. Thus, x - 3 = 0, so x = 3.
+
+Explanation:
+The correct substitution was applied, leading to a simple integral that evaluates to zero. Recognizing that the integral of zero is always zero allowed us to find the root directly from the equation.
+
+Common mistake note:
+A common mistake is not recognizing that the integral of zero is always zero, which simplifies finding the roots.
+------------------------------------------------------------------------------
+
+Problem 5 (LogarithmicIntegral):
+Evaluate the definite integral Φln(x)dx from x=1 to x=e using substitution. Let u = e^x.
+A) (u - 1)|_1^e
+B) (u - 1)|_e^1
+C) (u - 1)|_1^2
+D) (u - 1)/u|_1^e
+Correct Answer: D
+
+Solution:
+Substitute u = e^x, then du = e^xdx. The integral becomes Φ(du/u). Integrating, we get ln|u||_a^b for some limits a and b. Substituting back for x, we get ln|e^x||_1^e = ln(e^x)|_1^e = x|_1^e = e - 1. However, since the integrand is Φln(x)dx, we must multiply by dx/u: (1/u)(x)|_1^e = (1/e)(e - 1).
+
+Explanation:
+The correct substitution was applied, leading to a logarithmic integral that simplifies to x. Recognizing the relationship between ln(x) and e^x allowed us to convert back to the original variable.
+
+Common mistake note:
+A common mistake is not accounting for the dx/u factor when converting back from u to x.
+------------------------------------------------------------------------------
+
+Problem 6 (ExponentialDerivative):
+Find the derivative of f(x) = 3e^(2x) at x=1 using substitution and a definite integral. Let u = 2x.
+A) 6e^2|_0^2
+B) 6e^(2x)|_0^2
+C) 3e^u|_2^4
+D) 3e^u/2|_2^4
+Correct Answer: D
+
+Solution:
+Substitute u = 2x, then du = 2dx. The derivative becomes f'(x) = 3(2)e^(2x)/2 = 3e^(2x). To evaluate at x=1, we set u = 2π and integrate from u = 2 to u = 4: Φ3e^udu/2. Integrating, we get (3/2)e^u|_2^4 = (3/2)(e^4 - e^2).
+
+Explanation:
+The correct substitution was applied, leading to a simplified expression for the derivative. The definite integral was used to evaluate the derivative at x=1 by setting u = 2x and integrating with respect to u.
+
+Common mistake note:
+A common mistake is not accounting for the factor of 2 in du when differentiating f(x). Choice A neglects this factor.
+------------------------------------------------------------------------------
+
+Problem 7 (CircleArea):
+Find the area of a circle with radius 3 by evaluating a definite integral using substitution. Let u = x + 3.
+A) (1/2)(u^2 - 9)|_0^6
+B) (1/2)(u^2 - 9)|_-3^3
+C) (1/2)(u^2 - 9)|_3^6
+D) (1/2)(u^2 + 9)|_3^6
+Correct Answer: B
+
+Solution:
+Substitute u = x + 3, then du = dx. The equation for the circle becomes (x + 3)^2 = 9, or x^2 + 6x + 9 - 9 = 0, which simplifies to x^2 + 6x = 0. Integrating both sides with respect to x, we get Φ(x^2 + 6x)dx = Φ0dx. This simplifies to (1/3)(x^3 + 3x^2)|_a^b for some limits a and b. Since the integral of zero is always zero, the limits do not matter. The equation becomes (1/3)(x^3 + 3x^2) = 0. Integrating with respect to u, we get (1/3)(u^3 - 9u)|_-3^3.
+
+Explanation:
+The correct substitution was applied, leading to a simple integral that evaluates to zero. Recognizing that the integral of zero is always zero allowed us to find the area directly from the equation.
+
+Common mistake note:
+A common mistake is not recognizing that the integral of zero is always zero, which simplifies finding the area.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.4.13",
+  "objective_text": "Find vertical asymptotes",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "What is the equation of the vertical asymptote for the function f(x) = (x + 2)/(x^2 - 4)?",
+      "choices": {
+        "A": "(x + 2)",
+        "B": "(x - 2)",
+        "C": "(x^2 - 4)",
+        "D": "There are no vertical asymptotes."
+      },
+      "correct_choice": "B",
+      "solution": "The function has a rational expression with a denominator of x^2 - 4. To find the vertical asymptote, set the denominator equal to zero and solve for x: x^2 - 4 = 0 factors into (x + 2)(x - 2) = 0, giving x = -2 and x = 2 as potential vertical asymptotes. However, since f(x) is undefined only when x = 2 (not when x = -2 because the numerator also equals zero there), x = 2 is the equation of the vertical asymptote.",
+      "explanation": "Vertical asymptotes occur where a function's denominator equals zero and the numerator does not.",
+      "common_mistake_notes": "A common mistake is to choose A, which is the numerator. The numerator has no impact on vertical asymptotes; only the zeros of the denominator matter."
+    },
+    {
+      "id": "Two",
+      "stem": "Find the equation of the vertical asymptote for f(x) = (x^3 - 8)/(x - 2).",
+      "choices": {
+        "A": "(x - 2)",
+        "B": "(x + 2)",
+        "C": "(x^3 - 8)",
+        "D": "There are no vertical asymptotes."
+      },
+      "correct_choice": "A",
+      "solution": "The function has a rational expression with a denominator of x - 2. Setting the denominator to zero gives us x = 2 as the only potential vertical asymptote. Since f(x) is undefined when x = 2, this is the equation of the vertical asymptote.",
+      "explanation": "Vertical asymptotes occur where a function's denominator equals zero and the numerator does not.",
+      "common_mistake_notes": "A common mistake is to choose C, which is the numerator. The numerator has no impact on vertical asymptotes; only the zeros of the denominator matter."
+    },
+    {
+      "id": "Three",
+      "stem": "What is the equation of the vertical asymptote for f(x) = (x^2 + 9)/(x - 3i)?",
+      "choices": {
+        "A": "(x - 3)",
+        "B": "(x + 3)",
+        "C": "(x^2 + 9)",
+        "D": "There are no real vertical asymptotes."
+      },
+      "correct_choice": "D",
+      "solution": "The function has a denominator of x - 3i, which is a complex number. Since there are no real numbers that make a complex number zero, there are no real vertical asymptotes. The function may have vertical asymptotes in the complex plane, but this question asks for real vertical asymptotes.",
+      "explanation": "Vertical asymptotes only occur where a rational function's denominator equals zero and the numerator does not.",
+      "common_mistake_notes": "A common mistake is to choose A or B, assuming that the imaginary part doesn't matter. In this case, it does; there are no real vertical asymptotes."
+    },
+    {
+      "id": "Four",
+      "stem": "Find the equation of the vertical asymptote for f(x) = (2x + 4)/(x^2 - 6x + 9).",
+      "choices": {
+        "A": "(x - 3)",
+        "B": "(x + 3)",
+        "C": "(2x + 4)",
+        "D": "There are no vertical asymptotes."
+      },
+      "correct_choice": "A",
+      "solution": "The function has a rational expression with a denominator of x^2 - 6x + 9, which factors into (x - 3)^2. Setting the denominator to zero gives us x = 3 as the only potential vertical asymptote. Since f(x) is undefined when x = 3, this is the equation of the vertical asymptote.",
+      "explanation": "Vertical asymptotes occur where a function's denominator equals zero and the numerator does not.",
+      "common_mistake_notes": "A common mistake is to choose C, which is the numerator. The numerator has no impact on vertical asymptotes; only the zeros of the denominator matter."
+    },
+    {
+      "id": "Five",
+      "stem": "What is the equation of the vertical asymptote for f(x) = (x^3 - 27)/(x - 3)?",
+      "choices": {
+        "A": "(x - 3)",
+        "B": "(x + 3)",
+        "C": "(x^3 - 27)",
+        "D": "There are no vertical asymptotes."
+      },
+      "correct_choice": "A",
+      "solution": "The function has a rational expression with a denominator of x - 3. Setting the denominator to zero gives us x = 3 as the only potential vertical asymptote. Since f(x) is undefined when x = 3, this is the equation of the vertical asymptote.",
+      "explanation": "Vertical asymptotes occur where a function's denominator equals zero and the numerator does not.",
+      "common_mistake_notes": "A common mistake is to choose C, which is the numerator. The numerator has no impact on vertical asymptotes; only the zeros of the denominator matter."
+    },
+    {
+      "id": "Six",
+      "stem": "Find the equation of the vertical asymptote for f(x) = (x^2 - 1)/(x + 1).",
+      "choices": {
+        "A": "(x + 1)",
+        "B": "(x - 1)",
+        "C": "(x^2 - 1)",
+        "D": "There are no vertical asymptotes."
+      },
+      "correct_choice": "A",
+      "solution": "The function has a rational expression with a denominator of x + 1. Setting the denominator to zero gives us x = -1 as the only potential vertical asymptote. Since f(x) is undefined when x = -1, this is the equation of the vertical asymptote.",
+      "explanation": "Vertical asymptotes occur where a function's denominator equals zero and the numerator does not.",
+      "common_mistake_notes": "A common mistake is to choose C, which is the numerator. The numerator has no impact on vertical asymptotes; only the zeros of the denominator matter."
+    },
+    {
+      "id": "Seven",
+      "stem": "What is the equation of the vertical asymptote for f(x) = (x^2 + 4)/(x^2 - 4)?",
+      "choices": {
+        "A": "(x + 2)",
+        "B": "(x - 2)",
+        "C": "(x^2 + 4)",
+        "D": "There are no vertical asymptotes."
+      },
+      "correct_choice": "B",
+      "solution": "The function has a rational expression with a denominator of x^2 - 4, which factors into (x + 2)(x - 2). Setting the denominator to zero gives us x = -2 and x = 2 as potential vertical asymptotes. However, since f(x) is undefined only when x = 2 (not when x = -2 because the numerator also equals zero there), x = 2 is the equation of the vertical asymptote.",
+      "explanation": "Vertical asymptotes occur where a function's denominator equals zero and the numerator does not.",
+      "common_mistake_notes": "A common mistake is to choose A, which is one factor of the denominator. Both factors contribute to potential vertical asymptotes, but only x = 2 is an actual asymptote."
+    }
+  ]
+}

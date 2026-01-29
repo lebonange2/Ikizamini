@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.8.8",
+  "objective_text": "Interpret inequality regions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Solve the inequality: x + 3 < 7\nA) x < 4\nB) x > 4\nC) x ≤ 4\nD) x ≥ 4",
+      "choices": {
+        "A": "x < 4",
+        "B": "x > 4",
+        "C": "x ≤ 4",
+        "D": "x ≥ 4"
+      },
+      "correct_choice": "A",
+      "solution": "Subtract 3 from both sides to get x < 4. The correct answer is A.",
+      "explanation": "Inequalities are solved by performing the same operation on both sides of the inequality sign. Here, subtracting 3 maintains the direction of the inequality.",
+      "common_mistake_notes": "A common mistake is to forget to change the direction of the inequality when multiplying or dividing by a negative number."
+    },
+    {
+      "id": "Bghj",
+      "stem": "Sketch the solution set for the inequality: 2y - 5 > 15\nA) y < 10\nB) y > 10\nC) y ≤ 10\nD) y ≥ 10",
+      "choices": {
+        "A": "y < 10",
+        "B": "y > 10",
+        "C": "y ≤ 10",
+        "D": "y ≥ 10"
+      },
+      "correct_choice": "B",
+      "solution": "Add 5 to both sides and divide by 2 to get y > 10. The correct answer is B.",
+      "explanation": "When solving inequalities, it's essential to perform the same operation on both sides of the inequality sign. Here, adding 5 and dividing by 2 maintains the direction of the inequality.",
+      "common_mistake_notes": "A common mistake is to forget to divide by a negative number when solving for y."
+    },
+    {
+      "id": "Qwer",
+      "stem": "Which graph represents the solution set for the inequality: -3x + 6 ≤ 12?\nA) A line with shading on the right side\nB) A line with shading on the left side\nC) A shaded region above the line\nD) A shaded region below the line",
+      "choices": {
+        "A": "A line with shading on the right side",
+        "B": "A line with shading on the left side",
+        "C": "A shaded region above the line",
+        "D": "A shaded region below the line"
+      },
+      "correct_choice": "D",
+      "solution": "The inequality -3x + 6 ≤ 12 simplifies to x ≥ -2. The solution set is all values of x greater than or equal to -2, which corresponds to a shaded region below the line y = x + 2. The correct answer is D.",
+      "explanation": "When graphing inequalities, shading above or below the line depends on whether the inequality involves '<' or '>=' (shading below) or '>' or '<=' (shading above).",
+      "common_mistake_notes": "A common mistake is to shade in the wrong direction based on the inequality sign."
+    },
+    {
+      "id": "Tyui",
+      "stem": "Solve and graph the solution set for the compound inequality: 4x - 5 < 11 or x + 2 > 7\nA) x < 4, x > 5\nB) x < 4, x < 5\nC) x > 4, x < 5\nD) x > 4, x > 5",
+      "choices": {
+        "A": "x < 4, x > 5",
+        "B": "x < 4, x < 5",
+        "C": "x > 4, x < 5",
+        "D": "x > 4, x > 5"
+      },
+      "correct_choice": "A",
+      "solution": "Solve each inequality separately: 4x - 5 < 11 gives x < 4 and x + 2 > 7 gives x > 5. The compound solution set is x < 4 or x > 5, which graphically appears as two separate regions on the number line. The correct answer is A.",
+      "explanation": "When solving compound inequalities with 'or', you find solutions for each inequality and combine them without overlapping regions.",
+      "common_mistake_notes": "A common mistake is to incorrectly combine the solution sets, assuming they should overlap."
+    },
+    {
+      "id": "Poiu",
+      "stem": "Sketch the solution set for the inequality: 3(x - 2) ≥ x + 6\nA) A line with shading on the right side\nB) A line with shading on the left side\nC) A shaded region above the line\nD) A shaded region below the line",
+      "choices": {
+        "A": "A line with shading on the right side",
+        "B": "A line with shading on the left side",
+        "C": "A shaded region above the line",
+        "D": "A shaded region below the line"
+      },
+      "correct_choice": "C",
+      "solution": "Distribute and simplify: 3x - 6 ≥ x + 6, which gives 2x ≥ 12 or x ≥ 6. The solution set is all values of x greater than or equal to 6, which corresponds to a shaded region above the line y = x - 6. The correct answer is C.",
+      "explanation": "When graphing inequalities, shading above or below the line depends on whether the inequality involves '<' or '>=' (shading below) or '>' or '<=' (shading above). Here, we first distribute and simplify before graphing.",
+      "common_mistake_notes": "A common mistake is to forget to distribute the 3 in the original inequality."
+    },
+    {
+      "id": "Asdfg",
+      "stem": "Solve the inequality: 2(5 - x) < 10\nA) x > 0\nB) x < 0\nC) x ≤ 0\nD) x ≥ 0",
+      "choices": {
+        "A": "x > 0",
+        "B": "x < 0",
+        "C": "x ≤ 0",
+        "D": "x ≥ 0"
+      },
+      "correct_choice": "A",
+      "solution": "Distribute and solve: 10 - 2x < 10, which gives -2x < 0 or x > 0. The correct answer is A.",
+      "explanation": "When solving inequalities, distribute any terms first and then isolate the variable. Here, we distribute the 2 before simplifying to find the solution.",
+      "common_mistake_notes": "A common mistake is to forget to distribute the 2 in the original inequality."
+    },
+    {
+      "id": "Bvcxz",
+      "stem": "Sketch the solution set for the inequality: -4(3x + 1) > 8\nA) A line with shading on the right side\nB) A line with shading on the left side\nC) A shaded region above the line\nD) A shaded region below the line",
+      "choices": {
+        "A": "A line with shading on the right side",
+        "B": "A line with shading on the left side",
+        "C": "A shaded region above the line",
+        "D": "A shaded region below the line"
+      },
+      "correct_choice": "B",
+      "solution": "Distribute and simplify: -12x - 4 > 8, which gives -12x > 12 or x < -1. The solution set is all values of x less than -1, which corresponds to a shaded region on the left side of the line y = x + 1. The correct answer is B.",
+      "explanation": "When graphing inequalities, shading above or below the line depends on whether the inequality involves '<' or '>=' (shading below) or '>' or '<=' (shading above). Here, we first distribute and simplify before graphing.",
+      "common_mistake_notes": "A common mistake is to forget to distribute the -4 in the original inequality."
+    }
+  ]
+}

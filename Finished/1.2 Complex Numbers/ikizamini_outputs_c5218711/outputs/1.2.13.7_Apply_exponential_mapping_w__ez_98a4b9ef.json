@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.13.7",
+  "objective_text": "Apply exponential mapping w = e^z",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the value of w when z = 2 + 3i using exponential mapping.",
+      "choices": {
+        "A": "w = e^5",
+        "B": "w = e^(2+3i)",
+        "C": "w = e^2 * e^3i",
+        "D": "w = e^2 + e^3i"
+      },
+      "correct_choice": "C",
+      "solution": "The exponential mapping formula is w = e^z. Therefore, we substitute z into the formula: w = e^(2+3i). To evaluate this expression, separate it into its real and imaginary parts: w = e^2 * (cos(3) + i*sin(3)). The correct answer choice represents this separation with e^2 as the real part and e^3i as the imaginary part.",
+      "explanation": "The exponential function is a way to represent complex numbers in polar form. Choice A multiplies exponents, which is incorrect since e^(a+b) = e^a * e^b. Choice B keeps z as a single term, not applying the exponential mapping. Choice D adds the real and imaginary parts separately, which is also incorrect.",
+      "common_mistake_notes": "A common mistake is to multiply the exponents (Choice A),混淆了指数函数的性质。"
+    },
+    {
+      "id": ":2",
+      "stem": "Evaluate w = e^(π/4) + e^(-π/4) using exponential mapping.",
+      "choices": {
+        "A": "w = 0",
+        "B": "w = 1",
+        "C": "w = √2",
+        "D": "w = 2"
+      },
+      "correct_choice": "C",
+      "solution": "Rewrite the expression using Euler's formula: e^(ix) = cos(x) + i*sin(x). For x = π/4, we have: w = (cos(π/4) + i*sin(π/4)) + (cos(-π/4) + i*sin(-π/4)). Since cos(-x) = cos(x) and sin(-x) = -sin(x), the expression simplifies to: w = 2*cos(π/4). Using the fact that cos(π/4) = √2/2, we get w = √2. The correct answer is Choice C.",
+      "explanation": "Euler's formula connects trigonometric functions with complex exponentials. Choice A assumes the terms cancel each other out, which is not true for exponential functions. Choice B and D represent incorrect sums of the individual terms.",
+      "common_mistake_notes": "A common mistake is to assume that the terms in the sum will cancel (Choice A),忽略了指数函数的线性性质。"
+    },
+    {
+      "id": ":3",
+      "stem": "Find w when z = -2i using exponential mapping.",
+      "choices": {
+        "A": "w = e^(-2)",
+        "B": "w = e^(-2i)",
+        "C": "w = e^(-1) * i",
+        "D": "w = -e^(-1)"
+      },
+      "correct_choice": "B",
+      "solution": "The exponential mapping formula is w = e^z. Substituting z = -2i, we get: w = e^(-2i). This expression represents a complex number in polar form with an angle of -2π radians and a modulus of 1 (since e^0 = 1). The correct answer is Choice B.",
+      "explanation": "The exponential function can represent negative imaginary values. Choice A treats the negative sign as part of the exponent, which is incorrect. Choice C separates the real and imaginary parts but uses an incorrect base. Choice D negates the base, which changes the value of the expression.",
+      "common_mistake_notes": "A common mistake is to treat the negative sign as part of the exponent (Choice A),混淆了指数函数的性质。"
+    },
+    {
+      "id": ":4",
+      "stem": "Given z = 3 + 4i, find w using exponential mapping and then express w in rectangular form.",
+      "choices": {
+        "A": "w = e^7; w ≈ 10.95",
+        "B": "w = e^(3+4i); w = 3cos(4) + 4sin(4)",
+        "C": "w = e^3 * e^(4i); w ≈ 20.08 - 16.71i",
+        "D": "w = e^3 + e^4; w ≈ 20.08 + 54.59i"
+      },
+      "correct_choice": "C",
+      "solution": "The exponential mapping formula is w = e^z. So, w = e^(3+4i). To express this in rectangular form, use Euler's formula: e^(ix) = cos(x) + i*sin(x). For x = 4, we have: w ≈ e^3 * (cos(4) + i*sin(4)). The real part is approximately 20.08 and the imaginary part is approximately -16.71. Therefore, the correct answer is Choice C.",
+      "explanation": "The exponential function can be converted to rectangular form using Euler's formula. Choice A multiplies exponents incorrectly. Choice B keeps z in polar form without converting it. Choice D adds the real and imaginary parts separately, which is incorrect.",
+      "common_mistake_notes": "A common mistake is multiplying the exponents (Choice A),混淆了指数函数的性质。"
+    },
+    {
+      "id": ":5",
+      "stem": "Evaluate w = e^(2πi) using exponential mapping.",
+      "choices": {
+        "A": "w = 0",
+        "B": "w = -1",
+        "C": "w = 1",
+        "D": "w = i"
+      },
+      "correct_choice": "C",
+      "solution": "The expression e^(2πi) represents one complete revolution around the unit circle in the complex plane. By Euler's formula, e^(ix) = cos(x) + i*sin(x), and for x = 2π, we have cos(2π) = 1 and sin(2π) = 0. Therefore, w = e^(2πi) = 1. The correct answer is Choice C.",
+      "explanation": "Euler's formula connects trigonometric functions with complex exponentials. Choice A and B represent incorrect values for a full revolution. Choice D represents an imaginary value, which is not the result of a full revolution.",
+      "common_mistake_notes": "A common mistake is to assume that w = 0 (Choice A),忽略了复数在单位圆上完整旋转一圈后回到原点的性质。"
+    },
+    {
+      "id": ":6",
+      "stem": "Find the value of w when z = -1 using exponential mapping.",
+      "choices": {
+        "A": "w = e^(-1)",
+        "B": "w = e^(πi)",
+        "C": "w = e^(2πi)",
+        "D": "w = -e"
+      },
+      "correct_choice": "B",
+      "solution": "The exponential mapping formula is w = e^z. Substituting z = -1, we get: w = e^(-1). This represents a complex number in polar form with an angle of -π radians and a modulus of 1 (since e^0 = 1). To express this in terms of πi, rewrite it as w = e^(πi) * e^(-2πi) = cos(π) + i*sin(π) * (cos(2π) + i*sin(2π)). Since cos(π) = -1 and sin(π) = 0, the expression simplifies to w = -e^(2πi). The correct answer is Choice B.",
+      "explanation": "The exponential function can represent negative real values. Choice A omits the πi part of the angle. Choice C represents a full revolution, which is not equivalent to -1. Choice D uses an incorrect base.",
+      "common_mistake_notes": "A common mistake is to omit the πi part of the angle (Choice A),忽略了负实数在复平面上对应的角。"
+    },
+    {
+      "id": ":7",
+      "stem": "Given z = 4i, find w using exponential mapping and express w in polar form.",
+      "choices": {
+        "A": "w = e^4; w ≈ 54.59",
+        "B": "w = e^(4i); w = 0 + 4i",
+        "C": "w = e^2 * i; w ≈ 7.39i",
+        "D": "w = e^2 * e^(2i); w ≈ 4.81 - 6.93i"
+      },
+      "correct_choice": "B",
+      "solution": "The exponential mapping formula is w = e^z. So, w = e^(4i). To express this in polar form, use Euler's formula: e^(ix) = cos(x) + i*sin(x). For x = 4, we have: w = cos(4) + i*sin(4). Since the real part is approximately 0 and the imaginary part is approximately 4, the correct answer is Choice B.",
+      "explanation": "The exponential function can be converted to polar form using Euler's formula. Choice A treats e^(4i) as a real number, which is incorrect. Choice C separates the exponents incorrectly. Choice D adds the real and imaginary parts separately, which is also incorrect.",
+      "common_mistake_notes": "A common mistake is to treat e^(4i) as a real number (Choice A),忽略了复数在极坐标形式下的表示。"
+    }
+  ]
+}

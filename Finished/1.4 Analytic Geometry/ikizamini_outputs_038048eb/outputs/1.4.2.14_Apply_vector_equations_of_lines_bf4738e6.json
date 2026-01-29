@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.2.14",
+  "objective_text": "Apply vector equations of lines",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Infinite Line",
+      "stem": "Find the equation of the line passing through the point (3, 4) and parallel to the vector <2, 1>.",
+      "choices": {
+        "A": "<6, 3> + t<2, 1>",
+        "B": "<3, 4> + t<2, -1>",
+        "C": "<3, 4> + t<-2, 1>",
+        "D": "<3, 4> + t<2, 1>"
+      },
+      "correct_choice": "D",
+      "solution": "<3, 4> + t<2, 1>",
+      "explanation": "The equation of a line parallel to vector <a, b> and passing through point (x0, y0) is given by <x0, y0> + t<a, b>. In this case, a = 2 and b = 1.",
+      "common_mistake_notes": "Common mistake: Choosing B or C because of sign confusion. Remember that the line is parallel to the given vector, so the direction must match."
+    },
+    {
+      "id": "Finite Line",
+      "stem": "Find the equation of the line segment with endpoints (1, 2) and (4, 6).",
+      "choices": {
+        "A": "<1, 2> + t<3, 4>",
+        "B": "<4, 6> + t<-3, -4>",
+        "C": "<1, 2> + t<1/3, 2>",
+        "D": "<4, 6> + t<1/3, 2>"
+      },
+      "correct_choice": "A",
+      "solution": "<1, 2> + t<3, 4>",
+      "explanation": "The equation of a line segment with endpoints (x1, y1) and (x2, y2) is given by <x1, y1> + t(<x2-x1>, <y2-y1>). In this case, x1 = 1, y1 = 2, x2 = 4, and y2 = 6.",
+      "common_mistake_notes": "Common mistake: Choosing C or D because they represent a direction vector, but not the correct one for the line segment. The direction vector should be from the first endpoint to the second."
+    },
+    {
+      "id": "Intersection of Lines",
+      "stem": "Find the point of intersection between the lines given by the equations <x, y> = <1, 2> + t<3, 4> and <x, y> = <5, -1> + s<-2, 1>.",
+      "choices": {
+        "A": "<0, 1>",
+        "B": "<2, 3>",
+        "C": "<3, 4>",
+        "D": "<4, 5>"
+      },
+      "correct_choice": "A",
+      "solution": "<0, 1>",
+      "explanation": "To find the intersection point, set the x and y components equal for both lines and solve for t and s. For this example: 1 + 3t = 5 - 2s and 2 + 4t = -1 + s. Solving these equations gives t = 0 and s = 1.",
+      "common_mistake_notes": "Common mistake: Choosing C or D because they are points on the lines, but not the intersection point. Make sure to solve for t and s simultaneously."
+    },
+    {
+      "id": "Parallel Lines",
+      "stem": "Determine if the lines given by the equations <x, y> = <2, 3> + t<1, 0> and <x, y> = <4, 6> + s<2, 0> are parallel.",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined from the information given",
+        "D": "Depends on t and s"
+      },
+      "correct_choice": "A",
+      "solution": "Yes",
+      "explanation": "Parallel lines have equal direction vectors. The direction vector for both lines is <1, 0>, so they are parallel.",
+      "common_mistake_notes": "Common mistake: Choosing C or D because of the variable t and s. However, these variables do not affect the line's direction."
+    },
+    {
+      "id": "Perpendicular Lines",
+      "stem": "Determine if the lines given by the equations <x, y> = <1, 2> + t<3, 4> and <x, y> = <5, -1> + s<-2, 1> are perpendicular.",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined from the information given",
+        "D": "Depends on t and s"
+      },
+      "correct_choice": "B",
+      "solution": "No",
+      "explanation": "Perpendicular lines have direction vectors with a dot product equal to zero. The dot product of <3, 4> and <-2, 1> is not zero, so the lines are not perpendicular.",
+      "common_mistake_notes": "Common mistake: Choosing A because they might think that the lines intersect at right angles. However, this is not enough; the direction vectors must also be perpendicular."
+    },
+    {
+      "id": "Line through 3 Points",
+      "stem": "Find the equation of the line passing through points (1, 2), (3, 4), and (5, 6).",
+      "choices": {
+        "A": "<1, 2> + t<2, 2>",
+        "B": "<3, 4> + t<2, 2>",
+        "C": "<5, 6> + t<2, 2>",
+        "D": "<1, 2> + t<4, 4>"
+      },
+      "correct_choice": "A",
+      "solution": "<1, 2> + t<2, 2>",
+      "explanation": "The direction vector is (<x2-x1>, <y2-y1>) = (3-1, 4-2) = <2, 2>. The equation of the line passing through (1, 2) and having this direction is <1, 2> + t<2, 2>.",
+      "common_mistake_notes": "Common mistake: Choosing B or C because they use the wrong point as a starting position. Always choose one of the points to be the starting position for the equation."
+    },
+    {
+      "id": "Line Segment through 3 Points",
+      "stem": "Find the equation of the line segment with endpoints (1, 2) and (5, 6), passing through the point (3, 4).",
+      "choices": {
+        "A": "<1, 2> + t<4, 4>",
+        "B": "<3, 4> + t<2, 2>",
+        "C": "<1, 2> + t<2, 2>",
+        "D": "<5, 6> + t<-2, -2>"
+      },
+      "correct_choice": "B",
+      "solution": "<3, 4> + t<2, 2>",
+      "explanation": "The direction vector is (<x2-x1>, <y2-y1>) = (5-1, 6-2) = <4, 4>. However, since the line segment must pass through (3, 4), we use that point as the starting position and the direction vector divided by 2 to get <3, 4> + t<2, 2>.",
+      "common_mistake_notes": "Common mistake: Choosing A because it uses the correct direction vector but does not account for passing through (3, 4). Make sure to use the correct starting position."
+    }
+  ]
+}

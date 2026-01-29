@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.7.3",
+  "objective_text": "Represent subtraction geometrically",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "IncrementalSubtraction",
+      "stem": "Which diagram best represents the expression 5 - 2?",
+      "choices": {
+        "A": "[A diagram with 5 circles, 2 crossed out, leaving 3 circles remaining]",
+        "B": "[A diagram with 5 circles, 3 crossed out, leaving 2 circles remaining]",
+        "C": "[A diagram with 2 circles, 5 crossed out, leaving no circles remaining]",
+        "D": "[A diagram with no circles]"
+      },
+      "correct_choice": "A",
+      "solution": "The expression 5 - 2 represents taking away 2 from 5. The correct representation shows 5 circles and then 2 of them are crossed out, leaving 3 circles remaining.",
+      "explanation": "Subtraction is the inverse operation of addition; it shows how many more are needed to reach a certain quantity. In this case, we start with 5 and remove 2, which leaves us with 3.",
+      "common_mistake_notes": "A common mistake would be choosing B, as some students might misinterpret the subtraction as adding 2 circles to an empty set instead of removing them from an existing set."
+    },
+    {
+      "id": "VisualSubtraction",
+      "stem": "What diagram best represents the expression 10 - 7?",
+      "choices": {
+        "A": "[A diagram with 10 squares, 7 shaded, leaving 3 unshaded]",
+        "B": "[A diagram with 10 squares, 3 shaded, leaving 7 unshaded]",
+        "C": "[A diagram with 7 squares, 10 shaded, leaving no squares unshaded]",
+        "D": "[A diagram with 7 squares]"
+      },
+      "correct_choice": "B",
+      "solution": "The expression 10 - 7 represents taking away 7 from 10. The correct representation shows 10 squares and then shades 7 of them, leaving 3 squares unshaded.",
+      "explanation": "Subtraction is about removing parts of a whole. In this case, we start with 10 squares and remove 7 to show that there are 3 squares left.",
+      "common_mistake_notes": "A common mistake would be choosing A, where students might mistake the shading for selecting the quantity being taken away instead of representing what remains after subtraction."
+    },
+    {
+      "id": "NegativeSubtraction",
+      "stem": "Which diagram represents the expression -5 - (-2)?",
+      "choices": {
+        "A": "[A diagram with 5 circles, 2 crossed out, leaving 3 circles remaining]",
+        "B": "[A diagram with 5 circles, 3 crossed out, leaving 2 circles remaining]",
+        "C": "[A diagram with 2 circles, 5 crossed out, leaving no circles remaining]",
+        "D": "[A diagram with 2 circles, 3 crossed out, leaving -1 circle (indicated by a negative sign)]"
+      },
+      "correct_choice": "D",
+      "solution": "The expression -5 - (-2) represents subtracting a negative number from another negative number. The correct representation shows 5 negative circles and then removes 2 of them, resulting in -3.",
+      "explanation": "When subtracting a negative, it's equivalent to adding the positive value of that number. So, -5 - (-2) is the same as -5 + 2 = -3.",
+      "common_mistake_notes": "A common mistake would be choosing A or B, where students might not understand how to handle negative numbers in a subtraction context."
+    },
+    {
+      "id": "SubtractionWithZero",
+      "stem": "What diagram represents the expression 8 - 0?",
+      "choices": {
+        "A": "[A diagram with 8 circles, no circles removed, leaving 8 circles remaining]",
+        "B": "[A diagram with 8 circles, all circles removed, leaving no circles remaining]",
+        "C": "[A diagram with 0 circles, 8 circles added, leaving 8 circles total]",
+        "D": "[A diagram with 0 circles]"
+      },
+      "correct_choice": "A",
+      "solution": "The expression 8 - 0 represents taking away zero from 8. The correct representation shows 8 circles and no circles are removed, so there are still 8 circles.",
+      "explanation": "Subtracting zero from any number does not change the value of that number. In this case, removing zero has no effect on the total count of circles.",
+      "common_mistake_notes": "A common mistake would be choosing B or C, where students might misunderstand the concept of subtracting zero or adding zero in a subtraction context."
+    },
+    {
+      "id": "SubtractionWithNegative",
+      "stem": "Which diagram represents the expression -3 - 4?",
+      "choices": {
+        "A": "[A diagram with 3 circles, 4 circles added, leaving -7 circles (indicated by a negative sign)]",
+        "B": "[A diagram with 3 circles, 4 circles removed, leaving -1 circle (indicated by a negative sign)]",
+        "C": "[A diagram with 4 circles, 3 circles removed, leaving 1 circle remaining]",
+        "D": "[A diagram with 7 circles]"
+      },
+      "correct_choice": "B",
+      "solution": "The expression -3 - 4 represents subtracting a positive number from a negative number. The correct representation shows 3 negative circles and then removes 4, resulting in -7.",
+      "explanation": "When subtracting a positive number from a negative, it's equivalent to adding the absolute value of that number and changing the sign. So, -3 - 4 is the same as -3 + 4 = -7.",
+      "common_mistake_notes": "A common mistake would be choosing A or C, where students might not understand how to handle subtraction involving both negative and positive numbers."
+    },
+    {
+      "id": "SubtractionWithPositive",
+      "stem": "What diagram represents the expression 6 - (-3)?",
+      "choices": {
+        "A": "[A diagram with 6 circles, 3 circles removed, leaving 3 circles remaining]",
+        "B": "[A diagram with 6 circles, 3 circles added, leaving 9 circles remaining]",
+        "C": "[A diagram with 3 circles, 6 circles removed, leaving no circles remaining]",
+        "D": "[A diagram with 3 circles]"
+      },
+      "correct_choice": "B",
+      "solution": "The expression 6 - (-3) represents subtracting a negative number from a positive number. The correct representation shows 6 circles and then adds 3 more, resulting in 9.",
+      "explanation": "When subtracting a negative number, it's equivalent to adding the positive value of that number. So, 6 - (-3) is the same as 6 + 3 = 9.",
+      "common_mistake_notes": "A common mistake would be choosing A or C, where students might not understand how to handle subtraction involving both negative and positive numbers."
+    },
+    {
+      "id": "SubtractionWithMixedFractions",
+      "stem": "Which diagram represents the expression 2\frac{1}{2} - 1\frac{3}{4}? (Note: Use circles for whole parts, and smaller circles within to represent fractional parts.)",
+      "choices": {
+        "A": "[A diagram with 2 full circles and 1 small circle, 1 full circle and 3 small circles removed, leaving 1 full circle and 1 small circle remaining]",
+        "B": "[A diagram with 2 full circles and 1 small circle, 1 full circle and 1 small circle removed, leaving 1 full circle and 2 small circles remaining]",
+        "C": "[A diagram with 1 full circle and 3 small circles, 2 full circles and 1 small circle removed, leaving no circles remaining]",
+        "D": "[A diagram with 1 full circle and 3 small circles]"
+      },
+      "correct_choice": "B",
+      "solution": "The expression 2\frac{1}{2} - 1\frac{3}{4} represents subtracting mixed fractions. The correct representation shows 2 full circles, each divided into two equal parts (representing 1\frac{1}{2}), and an additional small circle. After removing 1 full circle (1\frac{3}{4}), there are 1 full circle and 2 small circles remaining.",
+      "explanation": "To subtract mixed fractions, convert them to improper fractions first, then perform the subtraction. In this case, 2\frac{1}{2} = \frac{5}{2} and 1\frac{3}{4} = \frac{7}{4}. After converting, we find that \frac{5}{2} - \frac{7}{4} = \frac{10}{4} - \frac{7}{4} = \frac{3}{4}, which is equivalent to 1 full circle and 2 small circles.",
+      "common_mistake_notes": "A common mistake would be choosing A, where students might not handle the fractional parts correctly when subtracting mixed fractions."
+    }
+  ]
+}

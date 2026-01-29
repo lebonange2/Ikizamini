@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.11.13 Find volume of parallelepiped
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.11 Vectors in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the volume of a parallelepiped with dimensions: length = 5 cm, width = 3 cm, height = 2 cm.
+A) 10 cm³
+B) 15 cm³
+C) 20 cm³
+D) 30 cm³
+Correct Answer: C
+
+Solution:
+The volume V of a parallelepiped is given by the formula V = length × width × height. Plugging in the values, we get V = 5 cm × 3 cm × 2 cm = 30 cm³.
+
+Explanation:
+The volume calculation is simply multiplying the three dimensions together.
+
+Common mistake note:
+Common mistake: Multiplying by an extra factor of 2 (selecting D instead of C).
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the volume of a parallelepiped with sides parallel to the axes: base area = 12 square units, height = 4 units.
+A) 32 cubic units
+B) 48 cubic units
+C) 64 cubic units
+D) 96 cubic units
+Correct Answer: A
+
+Solution:
+The volume V of a parallelepiped with base area B and height h is given by the formula V = B × h. Given B = 12 square units and h = 4 units, we get V = 12 × 4 = 48 cubic units.
+
+Explanation:
+The volume is found by multiplying the base area by the height.
+
+Common mistake note:
+Common mistake: Dividing by 2 (selecting A instead of B).
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the volume of a parallelepiped with vectors δ = <1, 2, 3>, ε = <4, 5, 6>, and ζ = <7, 8, 9> as adjacent sides.
+A) 120 cubic units
+B) 130 cubic units
+C) 140 cubic units
+D) 150 cubic units
+Correct Answer: A
+
+Solution:
+The volume V of a parallelepiped with vectors δ, ε, and ζ as adjacent sides is given by the absolute value of the scalar triple product: V = |(δ × ε)·ζ|. First, find the cross product (δ × ε): <-1, 1, -1>. Then, calculate the dot product with ζ: (-1)·7 + 1·8 - 1·9 = -1. Finally, take the absolute value for the volume: |V| = |-1| = 1.
+
+Explanation:
+The volume is found using the scalar triple product of the vectors.
+
+Common mistake note:
+Common mistake: Not taking the absolute value or not multiplying by the correct scalar (selecting incorrect options).
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the volume of a parallelepiped with base vertices A(1, 2, 3), B(2, 3, 4), C(3, 4, 5) and D(4, 5, 6).
+A) 10 cubic units
+B) 20 cubic units
+C) 30 cubic units
+D) 40 cubic units
+Correct Answer: C
+
+Solution:
+First, find the vectors AB, BC, and AD: AB = B-A = <1, 1, 1>, BC = C-B = <1, 1, 1>, AD = D- A = <3, 3, 3>. The volume V is given by the absolute value of the scalar triple product: V = |(AB × BC)·AD|. Calculate AB × BC: <-1, -1, -1>. Then, calculate the dot product with AD: (-1)·3 + (-1)·3 - (-1)·3 = -3. Finally, take the absolute value for the volume: |V| = |-3| = 3.
+
+Explanation:
+The volume is found using the scalar triple product of the vectors formed by the base vertices.
+
+Common mistake note:
+Common mistake: Not taking the absolute value or not multiplying by the correct scalar (selecting incorrect options).
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the volume of a parallelepiped with one vertex at origin and adjacent sides given by vectors δ = <2, 0, 1>, ε = <0, 3, 0>, and ζ = <1, 1, 2>.
+A) 8 cubic units
+B) 12 cubic units
+C) 16 cubic units
+D) 20 cubic units
+Correct Answer: A
+
+Solution:
+The volume V of a parallelepiped with vectors δ, ε, and ζ as adjacent sides is given by the absolute value of the scalar triple product: V = |(δ × ε)·ζ|. First, find the cross product (δ × ε): <-6, 0, 6>. Then, calculate the dot product with ζ: (-6)·1 + 0·1 - 6·2 = -12. Finally, take the absolute value for the volume: |V| = |-12| = 12.
+
+Explanation:
+The volume is found using the scalar triple product of the vectors.
+
+Common mistake note:
+Common mistake: Dividing by 2 (selecting A instead of B).
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the volume of a parallelepiped with base vertices A(0, 0, 0), B(1, 1, 1), C(2, 2, 2), and D(3, 3, 3).
+A) 6 cubic units
+B) 12 cubic units
+C) 18 cubic units
+D) 24 cubic units
+Correct Answer: A
+
+Solution:
+First, find the vectors AB, BC, and AD: AB = B-A = <1, 1, 1>, BC = C-B = <1, 1, 1>, AD = D- A = <3, 3, 3>. The volume V is given by the absolute value of the scalar triple product: V = |(AB × BC)·AD|. Calculate AB × BC: <-1, -1, -1>. Then, calculate the dot product with AD: (-1)·3 + (-1)·3 - (-1)·3 = -3. Finally, take the absolute value for the volume: |V| = |-3| = 3.
+
+Explanation:
+The volume is found using the scalar triple product of the vectors formed by the base vertices.
+
+Common mistake note:
+Common mistake: Not taking the absolute value or not multiplying by the correct scalar (selecting incorrect options).
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the volume of a parallelepiped with sides parallel to the axes and diagonals given by vectors δ = <2, 1, 3>, ε = <3, 2, 1>, and ζ = <1, 3, 2>.
+A) 12 cubic units
+B) 24 cubic units
+C) 36 cubic units
+D) 48 cubic units
+Correct Answer: B
+
+Solution:
+The volume V of a parallelepiped with sides parallel to the axes can be found using the lengths of the diagonals. First, find the length of each diagonal: d1 = √(2² + 1² + 3²), d2 = √(3² + 2² + 1²), and d3 = √(1² + 3² + 2²). Then, use Heron's formula for the volume with half the lengths: V = (d1·d2·d3) / 6.
+
+Explanation:
+The volume can be found using the lengths of the diagonals and Heron's formula.
+
+Common mistake note:
+Common mistake: Using the wrong formula or not simplifying (selecting incorrect options).
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.11.8",
+  "objective_text": "Calculate numerical approximations",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the approximate value of √2, rounded to two decimal places?",
+      "choices": {
+        "A": "1.40",
+        "B": "1.41",
+        "C": "1.42",
+        "D": "1.43"
+      },
+      "correct_choice": "B",
+      "solution": "The exact value of √2 is approximately 1.41421356237. Rounding this to two decimal places gives 1.41.",
+      "explanation": "To find the numerical approximation, we calculate the square root and round it to the desired number of decimal places.",
+      "common_mistake_notes": "A common mistake is to forget to round the result to two decimal places."
+    },
+    {
+      "id": "Bghj",
+      "stem": "What is the approximate value of ln(10), rounded to three decimal places?",
+      "choices": {
+        "A": "2.303",
+        "B": "2.302",
+        "C": "2.301",
+        "D": "2.304"
+      },
+      "correct_choice": "B",
+      "solution": "The exact value of ln(10) is approximately 2.30258509299. Rounding this to three decimal places gives 2.302.",
+      "explanation": "To find the numerical approximation, we calculate the natural logarithm and round it to the desired number of decimal places.",
+      "common_mistake_notes": "A common mistake is to use the wrong base for the logarithm or forget to round the result."
+    },
+    {
+      "id": "Xcvb",
+      "stem": "What is the approximate value of e^2, rounded to four decimal places?",
+      "choices": {
+        "A": "7.3891",
+        "B": "7.3889",
+        "C": "7.3890",
+        "D": "7.3892"
+      },
+      "correct_choice": "C",
+      "solution": "The exact value of e^2 is approximately 7.38905609893. Rounding this to four decimal places gives 7.3890.",
+      "explanation": "To find the numerical approximation, we calculate the exponentiation and round it to the desired number of decimal places.",
+      "common_mistake_notes": "A common mistake is to confuse e with another constant or forget to round the result."
+    },
+    {
+      "id": "Zxcv",
+      "stem": "What is the approximate value of sin(π/4), rounded to five decimal places?",
+      "choices": {
+        "A": "0.70711",
+        "B": "0.70712",
+        "C": "0.70713",
+        "D": "0.70714"
+      },
+      "correct_choice": "A",
+      "solution": "The exact value of sin(π/4) is approximately 0.707106781187. Rounding this to five decimal places gives 0.70711.",
+      "explanation": "To find the numerical approximation, we calculate the sine of the angle and round it to the desired number of decimal places.",
+      "common_mistake_notes": "A common mistake is to use the wrong trigonometric function or forget to convert the angle to radians."
+    },
+    {
+      "id": "Qwerty",
+      "stem": "What is the approximate value of 20! (20 factorial), rounded to the nearest thousand?",
+      "choices": {
+        "A": "1,035,000",
+        "B": "1,036,000",
+        "C": "1,037,000",
+        "D": "1,038,000"
+      },
+      "correct_choice": "B",
+      "solution": "The exact value of 20! is approximately 2,432,902,008,176,640,000. Rounding this to the nearest thousand gives 1,036,000.",
+      "explanation": "To find the numerical approximation, we calculate the factorial and round it to the desired number of significant digits.",
+      "common_mistake_notes": "A common mistake is to forget to round or use the wrong rounding method."
+    },
+    {
+      "id": "Poiuyt",
+      "stem": "What is the approximate value of 3^(1/3), rounded to six decimal places?",
+      "choices": {
+        "A": "1.44225",
+        "B": "1.44226",
+        "C": "1.44227",
+        "D": "1.44228"
+      },
+      "correct_choice": "A",
+      "solution": "The exact value of 3^(1/3) is approximately 1.44224957031. Rounding this to six decimal places gives 1.44225.",
+      "explanation": "To find the numerical approximation, we calculate the cube root and round it to the desired number of decimal places.",
+      "common_mistake_notes": "A common mistake is to use the wrong root or forget to round the result."
+    },
+    {
+      "id": "Bnm",
+      "stem": "What is the approximate value of 10! / 8!, rounded to seven decimal places?",
+      "choices": {
+        "A": "45.00000",
+        "B": "46.00000",
+        "C": "47.00000",
+        "D": "48.00000"
+      },
+      "correct_choice": "A",
+      "solution": "The exact value of 10! / 8! is approximately 45. The result is an integer, so when rounded to seven decimal places, it remains 45.",
+      "explanation": "To find the numerical approximation, we calculate the ratio of factorials and round it to the desired number of decimal places. Since the result is an integer, there's no need to round beyond that.",
+      "common_mistake_notes": "A common mistake is to forget that the division results in an integer or to attempt rounding unnecessarily."
+    }
+  ]
+}

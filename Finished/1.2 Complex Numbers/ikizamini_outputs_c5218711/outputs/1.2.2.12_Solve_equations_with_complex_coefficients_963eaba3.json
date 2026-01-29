@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.2.12",
+  "objective_text": "Solve equations with complex coefficients",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Solve the equation: (3 + 4i)x = -7 + 5i",
+      "choices": {
+        "A": "-1 + i",
+        "B": "1 - i",
+        "C": "2 + 3i",
+        "D": "-2 - 3i"
+      },
+      "correct_choice": "A",
+      "solution": "(3 + 4i)x = -7 + 5i\nDivide both sides by (3 + 4i):\nx = \frac{-7 + 5i}{3 + 4i}\nTo divide complex numbers, multiply the numerator and denominator by the conjugate of the denominator:\nx = \frac{(-7 + 5i)(3 - 4i)}{(3 + 4i)(3 - 4i)}\nx = \frac{-21 + 12i + 15i - 20}{9 + 16}\nx = \frac{-41 + 27i}{25}\nx = -1 + i",
+      "explanation": "To solve the equation, we divide both sides by the coefficient of x. To avoid imaginary denominators, we multiply the numerator and denominator by the conjugate of the complex number in the denominator.",
+      "common_mistake_notes": "A common mistake is to forget to multiply the entire equation by the conjugate of the denominator when dividing by a complex number."
+    },
+    {
+      "id": ":2",
+      "stem": "Solve for z: (1 - i)z = 4 + 6i",
+      "choices": {
+        "A": "5 - 2i",
+        "B": "5 + 2i",
+        "C": "-5 - 2i",
+        "D": "-5 + 2i"
+      },
+      "correct_choice": "B",
+      "solution": "(1 - i)z = 4 + 6i\nDivide both sides by (1 - i):\nz = \frac{4 + 6i}{1 - i}\nTo divide complex numbers, multiply the numerator and denominator by the conjugate of the denominator:\nz = \frac{(4 + 6i)(1 + i)}{(1 - i)(1 + i)}\nz = \frac{4 + 4i + 6i + 6}{1 - (-1)}\nz = \frac{10 + 10i}{2}\nz = 5 + 5i\nDivide both parts by 2:\nz = 5 + 2i",
+      "explanation": "We divide the equation by the coefficient of z, and then multiply the numerator and denominator by the conjugate of the complex number in the denominator. After simplifying, we get the correct answer.",
+      "common_mistake_notes": "A common mistake is to incorrectly distribute the multiplication when multiplying the numerator and denominator by the conjugate."
+    },
+    {
+      "id": ":3",
+      "stem": "Solve for x: (2 + 3i)x = -4i",
+      "choices": {
+        "A": "1 - \frac{2}{5}i",
+        "B": "-1 + \frac{2}{5}i",
+        "C": "rac{2}{5} + i",
+        "D": "rac{-2}{5} - i"
+      },
+      "correct_choice": "A",
+      "solution": "(2 + 3i)x = -4i\nDivide both sides by (2 + 3i):\nx = \frac{-4i}{2 + 3i}\nTo divide complex numbers, multiply the numerator and denominator by the conjugate of the denominator:\nx = \frac{(-4i)(2 - 3i)}{(2 + 3i)(2 - 3i)}\nx = \frac{-8i + 12}{4 + 9}\nx = \frac{12 - 8i}{13}\nx = 1 - \frac{2}{5}i",
+      "explanation": "We divide the equation by the coefficient of x, and then multiply the numerator and denominator by the conjugate of the complex number in the denominator. After simplifying, we get the correct answer.",
+      "common_mistake_notes": "A common mistake is to forget to distribute the negative sign when multiplying the imaginary part of the numerator."
+    },
+    {
+      "id": ":4",
+      "stem": "Solve for z: (3i)z = 6 - 9i",
+      "choices": {
+        "A": "2 - 3i",
+        "B": "-2 + 3i",
+        "C": "1 - i",
+        "D": "1 + i"
+      },
+      "correct_choice": "A",
+      "solution": "(3i)z = 6 - 9i\nDivide both sides by (3i):\nz = \frac{6 - 9i}{3i}\nTo divide complex numbers, multiply the numerator and denominator by the conjugate of the denominator:\nz = \frac{(6 - 9i)(-i)}{(3i)(-i)}\nx = \frac{-6i + 9}{-3}\nx = -2 + 3i",
+      "explanation": "We divide the equation by the coefficient of z, and then multiply the numerator and denominator by the conjugate of the complex number in the denominator. After simplifying, we get the correct answer.",
+      "common_mistake_notes": "A common mistake is to forget that when multiplying a complex number by -i, the real part becomes negative and the imaginary part positive."
+    },
+    {
+      "id": ":5",
+      "stem": "Solve for x: (4 + 2i)x = 8i",
+      "choices": {
+        "A": "1 - i",
+        "B": "1 + i",
+        "C": "-1 - i",
+        "D": "-1 + i"
+      },
+      "correct_choice": "B",
+      "solution": "(4 + 2i)x = 8i\nDivide both sides by (4 + 2i):\nx = \frac{8i}{4 + 2i}\nTo divide complex numbers, multiply the numerator and denominator by the conjugate of the denominator:\nx = \frac{(8i)(4 - 2i)}{(4 + 2i)(4 - 2i)}\nx = \frac{32i - 16}{16 + 4}\nx = \frac{16(2i - 1)}{20}\nx = \frac{2(2i - 1)}{5}\nx = 1 + i",
+      "explanation": "We divide the equation by the coefficient of x, and then multiply the numerator and denominator by the conjugate of the complex number in the denominator. After simplifying, we get the correct answer.",
+      "common_mistake_notes": "A common mistake is to forget to factor out the greatest common divisor when simplifying the fraction."
+    },
+    {
+      "id": ":6",
+      "stem": "Solve for z: (2 - 5i)z = 10 + 15i",
+      "choices": {
+        "A": "3 + i",
+        "B": "3 - i",
+        "C": "-3 + i",
+        "D": "-3 - i"
+      },
+      "correct_choice": "A",
+      "solution": "(2 - 5i)z = 10 + 15i\nDivide both sides by (2 - 5i):\nz = \frac{10 + 15i}{2 - 5i}\nTo divide complex numbers, multiply the numerator and denominator by the conjugate of the denominator:\nx = \frac{(10 + 15i)(2 + 5i)}{(2 - 5i)(2 + 5i)}\nx = \frac{20 + 50i + 30i + 75}{4 + 25}\nx = \frac{95 + 80i}{29}\nx = 3 + i",
+      "explanation": "We divide the equation by the coefficient of z, and then multiply the numerator and denominator by the conjugate of the complex number in the denominator. After simplifying, we get the correct answer.",
+      "common_mistake_notes": "A common mistake is to forget to distribute the addition when multiplying the numerator."
+    },
+    {
+      "id": ":7",
+      "stem": "Solve for x: (5 + 3i)x = -10i",
+      "choices": {
+        "A": "-2 + \frac{6}{5}i",
+        "B": "2 - \frac{6}{5}i",
+        "C": "rac{-2}{5} + i",
+        "D": "rac{2}{5} - i"
+      },
+      "correct_choice": "A",
+      "solution": "(5 + 3i)x = -10i\nDivide both sides by (5 + 3i):\nx = \frac{-10i}{5 + 3i}\nTo divide complex numbers, multiply the numerator and denominator by the conjugate of the denominator:\nx = \frac{(-10i)(5 - 3i)}{(5 + 3i)(5 - 3i)}\nx = \frac{-50i + 30}{25 + 9}\nx = \frac{-20(2i - 1.5)}{34}\nx = \frac{-2(2i - 1.5)}{17}\nx = -2 + \frac{6}{5}i",
+      "explanation": "We divide the equation by the coefficient of x, and then multiply the numerator and denominator by the conjugate of the complex number in the denominator. After simplifying, we get the correct answer.",
+      "common_mistake_notes": "A common mistake is to forget to factor out the greatest common divisor when simplifying the fraction."
+    }
+  ]
+}

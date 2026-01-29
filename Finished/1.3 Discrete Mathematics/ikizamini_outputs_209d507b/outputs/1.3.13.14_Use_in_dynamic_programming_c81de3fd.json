@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.13.14",
+  "objective_text": "Use in dynamic programming",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the primary use of dynamic programming in solving problems?",
+      "choices": {
+        "A": "To find the shortest path between two points",
+        "B": "To optimize a function with multiple variables",
+        "C": "To perform recursive calculations efficiently",
+        "D": "To predict future events based on historical data"
+      },
+      "correct_choice": "C",
+      "solution": "Dynamic programming is primarily used to solve problems by breaking them down into smaller overlapping subproblems and storing the results of these subproblems to avoid redundant calculations. This technique optimizes recursive calculations by preventing repeated computation of the same subproblem. Answer A refers to Dijkstra's algorithm, which is a shortest path algorithm, not specific to dynamic programming. Answer B relates to multidimensional optimization but doesn't capture the essence of dynamic programming. Answer D describes a task more suited for machine learning algorithms rather than dynamic programming.",
+      "explanation": "Dynamic programming is particularly useful when solving problems with overlapping subproblems and optimal substructure properties.",
+      "common_mistake_notes": "Common mistake: Choosing A or D, which are related to other algorithms or tasks not specifically tied to the core concept of dynamic programming."
+    },
+    {
+      "id": "Qwerty",
+      "stem": "What is an example of a problem that can be solved using dynamic programming?",
+      "choices": {
+        "A": "Sorting an array in ascending order",
+        "B": "Finding the maximum value in an unsorted array",
+        "C": "Calculating the nth Fibonacci number efficiently",
+        "D": "Searching for a specific element in a sorted list"
+      },
+      "correct_choice": "C",
+      "solution": "The calculation of the nth Fibonacci number can be done efficiently using dynamic programming by storing previously calculated values and reusing them instead of recalculating. This avoids redundant calculations, which is a key characteristic of dynamic programming. Answer A refers to sorting algorithms like quicksort or mergesort, not specific to dynamic programming. Answer B can be solved with linear search, but it doesn't involve overlapping subproblems. Answer D is related to binary search, another algorithm unrelated to dynamic programming.",
+      "explanation": "Fibonacci sequence calculation demonstrates the benefits of dynamic programming by avoiding redundant calculations and exploiting the optimal substructure property.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which are simpler algorithms not requiring the dynamic programming approach."
+    },
+    {
+      "id": "Zxcvb",
+      "stem": "In a dynamic programming problem with overlapping subproblems, why is it important to store previous results?",
+      "choices": {
+        "A": "To save memory by avoiding storing redundant data",
+        "B": "To speed up calculations by reusing previously computed values",
+        "C": "To ensure the problem has optimal substructure",
+        "D": "To guarantee the solution will be globally optimal"
+      },
+      "correct_choice": "B",
+      "solution": "Storing previous results in dynamic programming is crucial for efficiency because it allows the algorithm to reuse previously calculated values, avoiding redundant calculations. This significantly speeds up the computation process. While memory savings and optimal substructure are related concepts, they are not the primary reason for storing previous results. Answer D refers to the global optimality of the solution, which is a property of dynamic programming problems but not the direct reason for storing past results.",
+      "explanation": "The key advantage of dynamic programming lies in its ability to avoid redundant calculations through memoization or tabulation techniques.",
+      "common_mistake_notes": "Common mistake: Choosing A or D, which are related consequences but not the primary motivation for storing previous results."
+    },
+    {
+      "id": "Bnm",
+      "stem": "What is the difference between dynamic programming and divide- and-conquer algorithms?",
+      "choices": {
+        "A": "Dynamic programming always uses recursion, while divide-and-conquer does not",
+        "B": "Divide- and-conquer divides a problem into smaller subproblems of different sizes, whereas dynamic programming uses subproblems of equal size",
+        "C": "Dynamic programming stores results for re-use, while divide-and-conquer recomputes the same values multiple times",
+        "D": "Dynamic programming is used for optimization problems, and divide-and-conquer is used for searching or sorting"
+      },
+      "correct_choice": "C",
+      "solution": "The main difference between dynamic programming and divide- and-conquer algorithms lies in how they handle repeated calculations. Dynamic programming stores results for re-use (memoization or tabulation), while divide- and-conquer often recomputes the same values multiple times. Both approaches can use recursion, be applied to optimization problems, and involve dividing a problem into subproblems. Answer A is incorrect because divide-and-conquer algorithms can also use recursion. Answer B is false as both methods can handle subproblems of different sizes. Answer D混淆了两种算法的适用范围，它们都可以用于优化、搜索或排序问题。",
+      "explanation": "Dynamic programming's focus on avoiding redundant calculations through storing results sets it apart from divide- and-conquer algorithms.",
+      "common_mistake_notes": "Common mistake: Choosing A or D, which incorrectly describe the primary difference between the two approaches."
+    },
+    {
+      "id": "Ghjkl",
+      "stem": "In a dynamic programming problem with optimal substructure, how does solving smaller subproblems help find the overall solution?",
+      "choices": {
+        "A": "By ensuring that the smallest subproblem has the globally optimal solution",
+        "B": "By combining solutions to all subproblems in a specific order",
+        "C": "By building up from simple solutions and refining them through recursion",
+        "D": "By comparing the solutions of all possible subproblems"
+      },
+      "correct_choice": "C",
+      "solution": "In a dynamic programming problem with optimal substructure, solving smaller subproblems helps find the overall solution by building up from simpler cases and refining them through recursion. The optimal solution to the larger problem is constructed using the optimal solutions to its smaller subproblems. Answer A is incorrect because it assumes that the smallest subproblem's optimality guarantees the global optimality of the entire solution. Answer B suggests a specific ordering, which may not be applicable in all cases. Answer D implies an exhaustive search, which is inefficient and not the essence of dynamic programming.",
+      "explanation": "The optimal substructure property allows dynamic programming to construct solutions by combining the best solutions from smaller subproblems.",
+      "common_mistake_notes": "Common mistake: Choosing A or D, which misinterpret the role of subproblems in dynamic programming."
+    },
+    {
+      "id": "Ujkl",
+      "stem": "Which of the following is an example of a problem that does not naturally exhibit optimal substructure?",
+      "choices": {
+        "A": "Knapsack problem with limited weight capacity",
+        "B": "Longest common subsequence between two strings",
+        "C": "Minimum edit distance between two strings",
+        "D": "Traveling Salesman Problem (TSP) with Euclidean distances"
+      },
+      "correct_choice": "D",
+      "solution": "The Traveling Salesman Problem (TSP) with Euclidean distances does not naturally exhibit optimal substructure because the shortest path between cities A and B may not be the sum of the shortest paths from A to C and C to B. This violates the property that solving smaller subproblems directly leads to the optimal solution for the larger problem. The other choices (A, B, and C) are examples of problems with optimal substructure. Answer D is correct because it describes a case where subproblems do not guarantee global optimality.",
+      "explanation": "Optimal substructure is a key characteristic of dynamic programming problems; its absence indicates that the problem may not be well-suited for a dynamic programming solution.",
+      "common_mistake_notes": "Common mistake: Choosing A, B, or C, which are examples of problems with optimal substructure."
+    },
+    {
+      "id": "Bnmhj",
+      "stem": "What is the time complexity advantage of using dynamic programming over brute-force methods in solving optimization problems?",
+      "choices": {
+        "A": "Linear instead of quadratic",
+        "B": "Quadratic instead of cubic",
+        "C": "Polynomial instead of exponential",
+        "D": "Exponential instead of polynomial"
+      },
+      "correct_choice": "C",
+      "solution": "Dynamic programming often reduces the time complexity from exponential to polynomial when compared to brute-force methods in solving optimization problems. This is achieved by avoiding redundant calculations and reusing previously computed results. Answer A, B, and D describe incorrect relationships between the complexities. Answer C accurately reflects the advantage of dynamic programming over brute-force approaches.",
+      "explanation": "Dynamic programming's ability to avoid redundant calculations leads to significant time complexity improvements compared to exhaustive search methods.",
+      "common_mistake_notes": "Common mistake: Choosing A, B, or D, which describe incorrect relationships between time complexities."
+    }
+  ]
+}

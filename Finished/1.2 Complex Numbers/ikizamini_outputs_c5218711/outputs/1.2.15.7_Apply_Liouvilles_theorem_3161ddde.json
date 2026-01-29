@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.7",
+  "objective_text": "Apply Liouville's theorem",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Consider the function f(z) = e^(z^2) in the complex plane. According to Liouville's theorem, which of the following statements is true about f(z)?",
+      "choices": {
+        "A": "f(z) is bounded and therefore constant.",
+        "B": "f(z) is unbounded but has at least one zero.",
+        "C": "f(z) is entire (analytic everywhere) and non-constant.",
+        "D": "f(z) is analytic in some region but not entire."
+      },
+      "correct_choice": "C",
+      "solution": "Liouville's theorem states that a bounded entire function must be constant. Since f(z) = e^(z^2) is an entire function (analytic everywhere), and it is not constant (as e raised to any power is never zero), it cannot be bounded. Therefore, the correct answer is C: f(z) is entire and non-constant.",
+      "explanation": "Liouville's theorem helps determine whether a given complex function is constant or not based on its boundedness. In this case, the exponential nature of f(z) ensures it is unbounded, hence ruling out the possibility of it being constant.",
+      "common_mistake_notes": "A common mistake would be to assume that because e^(z^2) has no zeros, it must be constant according to Liouville's theorem. However, the theorem only applies to bounded functions, not those with no zeros."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Let g(z) = cosh(z) + sinh(z), where cosh and sinh are hyperbolic cosine and sine functions respectively. Using Liouville's theorem, determine if g(z) is constant or not.",
+      "choices": {
+        "A": "Constant",
+        "B": "Not constant",
+        "C": "Cannot be determined with the given information.",
+        "D": "Bounded but has at least one zero."
+      },
+      "correct_choice": "A",
+      "solution": "g(z) = cosh(z) + sinh(z) can be simplified to e^z, which is an entire function and grows without bound as |z| increases. According to Liouville's theorem, a bounded entire function must be constant. Since g(z) is not unbounded, it must be constant.",
+      "explanation": "Liouville's theorem helps classify functions based on their behavior at infinity. In this case, the exponential nature of g(z) implies that it is unbounded, which means it cannot be constant according to the theorem.",
+      "common_mistake_notes": "A common mistake would be to think that since cosh and sinh are both even functions, g(z) must also be constant. However, their sum results in an unbounded function."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Given a complex function h(z) = z^2 + 1, is it possible for h(z) to be constant according to Liouville's theorem?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined with the given information.",
+        "D": "Only if z is restricted to a bounded domain."
+      },
+      "correct_choice": "B",
+      "solution": "h(z) = z^2 + 1 is a polynomial function and thus entire. Since it grows without bound as |z| increases (e.g., h(i) = i^2 + 1 = -1 + 1 = 0, while h(2i) = (2i)^2 + 1 = -4 + 1 = -3), it cannot be constant according to Liouville's theorem.",
+      "explanation": "Liouville's theorem states that a bounded entire function must be constant. Since h(z) is unbounded, it cannot be constant by the theorem.",
+      "common_mistake_notes": "A common mistake would be to think that because h(z) is a simple polynomial, it might be constant. However, the quadratic term in z^2 + 1 ensures that it grows without bound."
+    },
+    {
+      "id": ":Q4",
+      "stem": "The function j(z) = e^(z^3) is entire and has no zeros. Can j(z) be constant based on Liouville's theorem?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined with the given information.",
+        "D": "Only if z is restricted to a bounded domain."
+      },
+      "correct_choice": "B",
+      "solution": "j(z) = e^(z^3) is an entire function since it's composed of exponential and polynomial functions. As e raised to any power is never zero, j(z) has no zeros. However, it grows without bound as |z| increases (e.g., j(i) = e^(-i^3) ≠ 0). According to Liouville's theorem, a bounded entire function must be constant, which rules out the possibility of j(z) being constant.",
+      "explanation": "Liouville's theorem helps classify functions based on their behavior at infinity. In this case, the exponential nature of j(z) implies that it is unbounded, making it non-constant by the theorem.",
+      "common_mistake_notes": "A common mistake would be to think that because j(z) has no zeros, it might be constant. However, its exponential growth ensures it is not."
+    },
+    {
+      "id": ":Q5",
+      "stem": "The function k(z) = log(z^2 + 1) is analytic in the domain Re(z) > 0. Can k(z) be constant according to Liouville's theorem?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined with the given information.",
+        "D": "Only if z is restricted to a bounded domain within Re(z) > 0."
+      },
+      "correct_choice": "C",
+      "solution": "k(z) = log(z^2 + 1) is analytic in the domain Re(z) > 0. However, Liouville's theorem applies only to entire functions, not those defined on a restricted domain. Without information about k(z)'s behavior outside the given domain, we cannot determine if it is constant or not.",
+      "explanation": "Liouville's theorem deals with entire functions, which are analytic everywhere in the complex plane. Since k(z) is only defined for Re(z) > 0, we cannot apply the theorem to classify its constancy.",
+      "common_mistake_notes": "A common mistake would be to assume that Liouville's theorem applies to any analytic function, regardless of its domain. However, the theorem requires functions to be entire."
+    },
+    {
+      "id": ":Q6",
+      "stem": "The function l(z) = z^3 + 2z^2 + 1 is a polynomial and therefore entire. Can it be constant according to Liouville's theorem?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined with the given information.",
+        "D": "Only if z is restricted to a bounded domain."
+      },
+      "correct_choice": "B",
+      "solution": "l(z) = z^3 + 2z^2 + 1 is an entire function since it's a polynomial. However, polynomials grow without bound as |z| increases (e.g., l(i) = i^3 + 2i^2 + 1 ≠ 0). According to Liouville's theorem, a bounded entire function must be constant, which rules out the possibility of l(z) being constant.",
+      "explanation": "Liouville's theorem helps classify functions based on their behavior at infinity. In this case, since l(z) is unbounded, it cannot be constant by the theorem.",
+      "common_mistake_notes": "A common mistake would be to think that because l(z) is a simple polynomial, it might be constant. However, the cubic term in z^3 + 2z^2 + 1 ensures that it grows without bound."
+    },
+    {
+      "id": ":Q7",
+      "stem": "The function m(z) = sinh(z)/z is analytic for all z ≠ 0. Can m(z) be constant according to Liouville's theorem?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined with the given information.",
+        "D": "Only if z is restricted to a bounded domain excluding 0."
+      },
+      "correct_choice": "C",
+      "solution": "m(z) = sinh(z)/z is analytic for all z ≠ 0, but Liouville's theorem applies only to entire functions. Without information about m(z)'s behavior at z = 0 or its behavior outside the given domain, we cannot determine if it is constant or not.",
+      "explanation": "Liouville's theorem deals with entire functions, which are analytic everywhere in the complex plane. Since m(z) has a singularity at z = 0, we cannot apply the theorem to classify its constancy.",
+      "common_mistake_notes": "A common mistake would be to assume that Liouville's theorem applies to any analytic function, regardless of its domain or singularities. However, the theorem requires functions to be entire."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.12.15",
+  "objective_text": "Apply to Laplace transforms",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Inverse Laplace Transform of a Rational Function",
+      "stem": "Find the inverse Laplace transform of the function F(s) = (s + 3)/(s^2 + 4s + 5).",
+      "choices": {
+        "A": "e^{-2t}cos(t)",
+        "B": "e^{-2t}sin(t)",
+        "C": "e^{-t}cos(2t)",
+        "D": "e^{-t}sin(2t)"
+      },
+      "correct_choice": "C",
+      "solution": "The Laplace transform of e^(-at)cos(bt) is (s+a)/(s^2+b^2), and for e^(-at)sin(bt) it's b/(s^2+b^2). For F(s) = (s + 3)/(s^2 + 4s + 5), we can complete the square in the denominator: s^2 + 4s + 5 = (s+2)^2 + 1. So, F(s) becomes (s+3)/((s+2)^2 + 1). This is of the form (s+a)/(s^2+b^2), with a=1 and b=2. Therefore, the inverse Laplace transform is e^(-at)cos(bt) = e^(-2t)cos(2t).",
+      "explanation": "The denominator suggests that we are dealing with an exponential times cosine or sine function. By completing the square, we can identify a and b in the standard form of the Laplace transform.",
+      "common_mistake_notes": "A common mistake is to misinterpret the roots of the denominator as a and b for the inverse Laplace transform. The correct interpretation involves completing the square."
+    },
+    {
+      "id": "Laplace Transform of a Derivative",
+      "stem": "Find the Laplace transform of the function f(t) = t^2e^{-3t}.",
+      "choices": {
+        "A": "(s+3)^2/(s-3)^3",
+        "B": "(s+3)/(s-3)^3",
+        "C": "(s-3)^2/(s+3)^3",
+        "D": "(s-3)/(s+3)^3"
+      },
+      "correct_choice": "B",
+      "solution": "The Laplace transform of f'(t) is sF(s) - f(0), and for f''(t) it's s^2F(s) - sf(0) - f'(0). Since f(t) = t^2e^{-3t}, we have f'(t) = 2te^{-3t} - 3t^2e^{-3t} and f(0) = 0. So, the Laplace transform of f'(t) is (s-3)^2/(s+3). To find the Laplace transform of f(t), we need to integrate this result: F(s) = ∫(s-3)^2/(s+3) ds. Integrating gives us (s+3)/(s-3)^3 + C. Since f(0) is 0, there's no constant term in the Laplace transform, so F(s) = (s+3)/(s-3)^3.",
+      "explanation": "The problem involves applying the derivative property of Laplace transforms and integrating to find the original function.",
+      "common_mistake_notes": "A common mistake is to forget to integrate after finding the Laplace transform of the derivative. Remember that we need to find F(s), not F'(s)."
+    },
+    {
+      "id": "Laplace Transform of a Periodic Function",
+      "stem": "Find the Laplace transform of the periodic function f(t) = cos(2t)u(t), where u(t) is the unit step function.",
+      "choices": {
+        "A": "s/(s^2 + 4)",
+        "B": "1/(s^2 + 4)",
+        "C": "s/(s - 2i)",
+        "D": "s/(s + 2i)"
+      },
+      "correct_choice": "A",
+      "solution": "The Laplace transform of cos(at)u(t) is s/(s^2 + a^2). For f(t) = cos(2t)u(t), we have a = 2, so the Laplace transform is s/(s^2 + 4).",
+      "explanation": "This problem tests the ability to apply the Laplace transform of a cosine function multiplied by the unit step function.",
+      "common_mistake_notes": "A common mistake is to confuse the Laplace transform of cos(at) with that of e^(iat), which would result in complex conjugate poles. Remember, for a real cosine function, the poles are real and symmetric around the origin."
+    },
+    {
+      "id": "Laplace Transform of an Exponential Function",
+      "stem": "Find the Laplace transform of the function f(t) = 2e^{-4t}u(t).",
+      "choices": {
+        "A": "2/(s + 4)",
+        "B": "1/(s + 4)",
+        "C": "2/(s - 4)",
+        "D": "1/(s - 4)"
+      },
+      "correct_choice": "A",
+      "solution": "The Laplace transform of f(t) = e^(-at)u(t) is 1/(s+a). For f(t) = 2e^{-4t}u(t), we have a = 4, so the Laplace transform is 2/(s + 4).",
+      "explanation": "This question tests the understanding of applying the Laplace transform to an exponential function multiplied by the unit step function.",
+      "common_mistake_notes": "A common mistake is to forget the constant multiple rule when finding the Laplace transform. The coefficient 2 must be included in the final result."
+    },
+    {
+      "id": "Laplace Transform of a Product of Functions",
+      "stem": "Find the Laplace transform of the function f(t) = te^(-3t)sin(2t).",
+      "choices": {
+        "A": "(s+3)/(s^2 + (2-3)^2)",
+        "B": "(s+3)/(s^2 + (2+3)^2)",
+        "C": "(s-3)/(s^2 + (2-3)^2)",
+        "D": "(s-3)/(s^2 + (2+3)^2)"
+      },
+      "correct_choice": "C",
+      "solution": "The Laplace transform of a product of functions is found by convolving the Laplace transforms. We have F(s) = L{te^(-3t)} * L{sin(2t)}. The Laplace transform of te^(-at) is -a/(s+ a)^2, and for sin(bt), it's b/(s^2 + b^2). So, F(s) = (-3)/(s+3)^2 * (2)/(s^2 + 4). Multiplying these gives us (s-3)/(s^2 + (2-3)^2).",
+      "explanation": "This problem tests the ability to convolve Laplace transforms of two functions.",
+      "common_mistake_notes": "A common mistake is to mix up the signs when finding the Laplace transform of te^(-at) or to forget that the convolution involves multiplying the transforms and simplifying."
+    },
+    {
+      "id": "Laplace Transform of a Sum of Functions",
+      "stem": "Find the Laplace transform of the function f(t) = 3e^{-2t} + 5sin(4t).",
+      "choices": {
+        "A": "3/(s+2) + 5/(s^2 + 16)",
+        "B": "3/(s-2) + 5/(s^2 + 16)",
+        "C": "3/(s+2) - 5/(s^2 + 16)",
+        "D": "3/(s-2) - 5/(s^2 + 16)"
+      },
+      "correct_choice": "A",
+      "solution": "The Laplace transform of a sum of functions is the sum of their individual transforms. For f(t) = 3e^{-2t} + 5sin(4t), we have L{3e^{-2t}} = 3/(s+2) and L{5sin(4t)} = 5/(s^2 + 16). Adding these gives us 3/(s+2) + 5/(s^2 + 16).",
+      "explanation": "This question tests the understanding of applying the Laplace transform to a sum of functions.",
+      "common_mistake_notes": "A common mistake is to forget that the Laplace transform of a sum is the sum of the individual transforms. Make sure to apply the correct formulas for each function."
+    },
+    {
+      "id": "Laplace Transform of a Heaviside Function",
+      "stem": "Find the Laplace transform of the function f(t) = u(t - 2).",
+      "choices": {
+        "A": "e^{-2s}/s",
+        "B": "1/s",
+        "C": "e^{2s}/s",
+        "D": "s/e^{2s}"
+      },
+      "correct_choice": "A",
+      "solution": "The Laplace transform of the Heaviside function u(t - a) is e^{-as}/s. For f(t) = u(t - 2), we have a = 2, so the Laplace transform is e^{-2s}/s.",
+      "explanation": "This problem tests the ability to apply the Laplace transform of the Heaviside function with a shift.",
+      "common_mistake_notes": "A common mistake is to forget the exponential term in the Laplace transform or to use the wrong sign in the exponent. The correct form includes e^{-as} for a > 0."
+    }
+  ]
+}

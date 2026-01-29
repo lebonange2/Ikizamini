@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.14.9",
+  "objective_text": "Use in electromagnetic theory",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "InhomogeneousMaxwellEquations",
+      "stem": "What equation describes the electric field caused by a changing magnetic field? Assume there are no charges or currents present.",
+      "choices": {
+        "A": "Gauss's Law for Electric Fields (curl E = -dB/dt)",
+        "B": "Gauss's Law for Magnetism (div B = 0)",
+        "C": "Faraday's Law of Induction (curl E = dB/dt)",
+        "D": "Ampere's Law with Maxwell's correction (div E = ρ/ε₀)"
+      },
+      "correct_choice": "C",
+      "solution": "The correct equation is Faraday's Law of Induction, which states that the curl of the electric field is equal to the negative time derivative of the magnetic field. This relationship describes how a changing magnetic field induces an electric field.",
+      "explanation": "Gauss's Law for Electric Fields relates the electric field to the charge density, not to changes in the magnetic field. Gauss's Law for Magnetism states that there are no magnetic monopoles, and Ampere's Law with Maxwell's correction connects the curl of the magnetic field to current density and time-varying electric fields.",
+      "common_mistake_notes": "A common mistake is choosing A instead of C, as students might混淆Faraday's Law和Gauss's Law for Electric Fields."
+    },
+    {
+      "id": "MaxwellEquationsSummary",
+      "stem": "Which of the following equations represents the relationship between electric field, magnetic field, charges, and currents in Maxwell's equations?",
+      "choices": {
+        "A": "curl E = -dB/dt + ρ/ε₀, div B = J + dE/dt",
+        "B": "curl E = dB/dt, div B = 0",
+        "C": "curl H = J, div D = ρ",
+        "D": "curl E = -dB/dt, div B = 0"
+      },
+      "correct_choice": "D",
+      "solution": "The correct equation represents the vacuum Maxwell's equations. The first equation is a combination of Faraday's Law and Gauss's Law for Electric Fields, while the second equation combines Ampere's Law with Maxwell's correction and Gauss's Law for Magnetism.",
+      "explanation": "Maxwell's equations in vacuum are curl E = -dB/dt and div B = 0. The other choices either include additional terms or represent different combinations of the four Maxwell's equations.",
+      "common_mistake_notes": "A common mistake is choosing A, as students might混淆the full set of Maxwell's equations with their individual components."
+    },
+    {
+      "id": "DisplacementCurrent",
+      "stem": "What term in Maxwell's equations accounts for the effect of a changing electric field on the magnetic field?",
+      "choices": {
+        "A": "Gauss's Law (div E = ρ/ε₀)",
+        "B": "Gauss's Law for Magnetism (div B = 0)",
+        "C": "Ampere's Law with Maxwell's correction (curl H = J + dD/dt)",
+        "D": "Faraday's Law of Induction (curl E = -dB/dt)"
+      },
+      "correct_choice": "C",
+      "solution": "The displacement current term, dD/dt, in Ampere's Law with Maxwell's correction accounts for the effect of a changing electric field on the magnetic field.",
+      "explanation": "Displacement current is an additional term introduced by James Clerk Maxwell to account for the fact that a changing electric field can also produce a magnetic field. This term completes the relationship between electric and magnetic fields in Maxwell's equations.",
+      "common_mistake_notes": "A common mistake is choosing D, as students might混淆displacement current with Faraday's Law of Induction."
+    },
+    {
+      "id": "MaxwellEquationsApplications",
+      "stem": "Which of the following phenomena can be explained using Maxwell's equations?",
+      "choices": {
+        "A": "Reflection of light at a smooth surface",
+        "B": "Diffraction of light through a single slit",
+        "C": "Propagation of electromagnetic waves in a vacuum",
+        "D": "Refraction of light by a prism"
+      },
+      "correct_choice": "C",
+      "solution": "Maxwell's equations describe the fundamental behavior of electric and magnetic fields, which includes the propagation of electromagnetic waves in a vacuum.",
+      "explanation": "Reflection, diffraction, and refraction are optical phenomena that involve interactions between light and matter, not just the propagation of electromagnetic waves. Maxwell's equations do predict these behaviors but are more general and encompass a broader range of phenomena.",
+      "common_mistake_notes": "A common mistake is choosing A or D, as students might混淆Maxwell's equations with specific光学现象."
+    },
+    {
+      "id": "EMWaveProperties",
+      "stem": "What property of an electromagnetic wave determines its frequency?",
+      "choices": {
+        "A": "Wavelength",
+        "B": "Amplitude",
+        "C": "Phase velocity",
+        "D": "Polarization"
+      },
+      "correct_choice": "A",
+      "solution": "The wavelength of an electromagnetic wave is inversely proportional to its frequency. As the wavelength decreases, the frequency increases.",
+      "explanation": "The relationship between frequency and wavelength in an electromagnetic wave is given by the equation c = λν, where c is the speed of light, λ is the wavelength, and ν is the frequency. Amplitude determines the intensity of the wave, phase velocity depends on the medium, and polarization describes the orientation of the electric field.",
+      "common_mistake_notes": "A common mistake is choosing B, as students might混淆amplitude with frequency."
+    },
+    {
+      "id": "EMWaveEnergyTransfer",
+      "stem": "How does an electromagnetic wave transfer energy?",
+      "choices": {
+        "A": "Through the oscillating magnetic field",
+        "B": "Through the oscillating electric field",
+        "C": "Both A and B",
+        "D": "Neither A nor B, it transfers energy through a combination of charges and currents"
+      },
+      "correct_choice": "C",
+      "solution": "Electromagnetic waves transfer energy through both the oscillating electric and magnetic fields, which are perpendicular to each other and to the direction of wave propagation.",
+      "explanation": "The oscillating fields create an electromagnetic field that propagates through space, transferring energy without requiring a physical medium. The interaction between the electric and magnetic fields is what enables this energy transfer.",
+      "common_mistake_notes": "A common mistake is choosing D, as students might混淆the role of charges and currents in generating electromagnetic waves with their role in energy transfer."
+    },
+    {
+      "id": "EMWavePropagationMedia",
+      "stem": "How does an electromagnetic wave propagate through a medium with a high dielectric constant?",
+      "choices": {
+        "A": "Its speed increases",
+        "B": "Its frequency decreases",
+        "C": "Its wavelength decreases",
+        "D": "Its amplitude remains unchanged"
+      },
+      "correct_choice": "C",
+      "solution": "In a medium with a high dielectric constant, the speed of an electromagnetic wave decreases, which in turn reduces its wavelength while keeping the frequency constant.",
+      "explanation": "The speed of light in a material is lower than in a vacuum due to interactions with the material's atoms. This results in a decrease in phase velocity and a corresponding reduction in wavelength. The frequency remains the same as it is determined by the source, not the medium.",
+      "common_mistake_notes": "A common mistake is choosing A or D, as students might混淆the effect of a dielectric on wave speed with its effect on amplitude."
+    }
+  ]
+}

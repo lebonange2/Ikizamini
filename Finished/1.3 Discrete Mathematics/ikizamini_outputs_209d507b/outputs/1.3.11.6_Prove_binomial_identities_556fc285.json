@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.11.6",
+  "objective_text": "Prove binomial identities",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "AndCombinatorics",
+      "stem": "What is the coefficient of x^2 in the expansion of (x + 3)^4?",
+      "choices": {
+        "A": "108",
+        "B": "54",
+        "C": "36",
+        "D": "27"
+      },
+      "correct_choice": "B",
+      "solution": "(x + 3)^4 = \\binom{4}{0}x^4(3)^0 + \\binom{4}{1}x^3(3)^1 + \\binom{4}{2}x^2(3)^2 + \\binom{4}{3}x^1(3)^3 + \\binom{4}{4}x^0(3)^4. The coefficient of x^2 is \\binom{4}{2}(3)^2 = \\frac{4!}{2!(4-2)!}9 = 6 \times 9 = 54.",
+      "explanation": "The binomial theorem helps us expand the expression and find the coefficient of x^2. The correct choice is found by applying the combination formula.",
+      "common_mistake_notes": "A common mistake is to use the wrong power for x or 3, resulting in an incorrect coefficient."
+    },
+    {
+      "id": "BinomIdent1",
+      "stem": "Prove that (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3.",
+      "choices": {
+        "A": "False",
+        "B": "True",
+        "C": "Cannot be determined without more information",
+        "D": "Depends on the values of a and b"
+      },
+      "correct_choice": "B",
+      "solution": "To prove the identity, we can expand both sides using the binomial theorem. (a + b)^3 = \\binom{3}{0}a^3b^0 + \\binom{3}{1}a^2b^1 + \\binom{3}{2}a^1b^2 + \\binom{3}{3}a^0b^3 = a^3 + 3a^2b + 3ab^2 + b^3.",
+      "explanation": "By applying the binomial theorem, we can see that both sides of the equation are identical, proving the identity.",
+      "common_mistake_notes": "A common mistake is to forget one or more terms when expanding the binomial, leading to a false conclusion."
+    },
+    {
+      "id": "BinomIdent2",
+      "stem": "Prove that (a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3.",
+      "choices": {
+        "A": "False",
+        "B": "True",
+        "C": "Cannot be determined without more information",
+        "D": "Depends on the values of a and b"
+      },
+      "correct_choice": "B",
+      "solution": "Expanding (a - b)^3 using the binomial theorem, we get: \\binom{3}{0}a^3(-b)^0 + \\binom{3}{1}a^2(-b)^1 + \\binom{3}{2}a^1(-b)^2 + \\binom{3}{3}a^0(-b)^3 = a^3 - 3a^2b + 3ab^2 - b^3.",
+      "explanation": "The negative sign in front of b changes the sign of each term, but the binomial theorem still holds. Both sides are equal, proving the identity.",
+      "common_mistake_notes": "A common mistake is to forget the negative signs when expanding terms involving b, leading to an incorrect conclusion."
+    },
+    {
+      "id": "BinomIdent3",
+      "stem": "Prove that (a + b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4.",
+      "choices": {
+        "A": "False",
+        "B": "True",
+        "C": "Cannot be determined without more information",
+        "D": "Depends on the values of a and b"
+      },
+      "correct_choice": "B",
+      "solution": "Expanding (a + b)^4 using the binomial theorem, we get: \\binom{4}{0}a^4b^0 + \\binom{4}{1}a^3b^1 + \\binom{4}{2}a^2b^2 + \\binom{4}{3}a^1b^3 + \\binom{4}{4}a^0b^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4.",
+      "explanation": "The binomial theorem holds for any power, and expanding both sides shows that the identity is true.",
+      "common_mistake_notes": "A common mistake is to misapply the combination formula, resulting in incorrect coefficients."
+    },
+    {
+      "id": "BinomIdent4",
+      "stem": "Prove that (x - y)^5 = x^5 - 5x^4y + 10x^3y^2 - 10x^2y^3 + 5xy^4 - y^5.",
+      "choices": {
+        "A": "False",
+        "B": "True",
+        "C": "Cannot be determined without more information",
+        "D": "Depends on the values of x and y"
+      },
+      "correct_choice": "B",
+      "solution": "Expanding (x - y)^5 using the binomial theorem, we get: \\binom{5}{0}x^5y^0 - \\binom{5}{1}x^4y^1 + \\binom{5}{2}x^3y^2 - \\binom{5}{3}x^2y^3 + \\binom{5}{4}xy^4 - \\binom{5}{5}y^5 = x^5 - 5x^4y + 10x^3y^2 - 10x^2y^3 + 5xy^4 - y^5.",
+      "explanation": "The negative sign in front of y changes the sign of each term, but the binomial theorem still holds. Both sides are equal, proving the identity.",
+      "common_mistake_notes": "A common mistake is to forget the alternating signs when expanding terms involving y, leading to an incorrect conclusion."
+    },
+    {
+      "id": "BinomIdent5",
+      "stem": "Prove that (2x + 3y)^2 = 4x^2 + 12xy + 9y^2.",
+      "choices": {
+        "A": "False",
+        "B": "True",
+        "C": "Cannot be determined without more information",
+        "D": "Depends on the values of x and y"
+      },
+      "correct_choice": "B",
+      "solution": "Expanding (2x + 3y)^2 using the binomial theorem, we get: \\binom{2}{0}(2x)^2(3y)^0 + \\binom{2}{1}(2x)(3y) + \\binom{2}{2}(3y)^2 = 4x^2 + 12xy + 9y^2.",
+      "explanation": "The binomial theorem holds for any coefficients, and expanding both sides shows that the identity is true.",
+      "common_mistake_notes": "A common mistake is to multiply the coefficients incorrectly, leading to incorrect terms."
+    },
+    {
+      "id": "BinomIdent6",
+      "stem": "Prove that (3a - 4b)^0 = 1.",
+      "choices": {
+        "A": "False",
+        "B": "True",
+        "C": "Cannot be determined without more information",
+        "D": "Depends on the values of a and b"
+      },
+      "correct_choice": "B",
+      "solution": "By the definition of any number raised to the power of 0, (3a - 4b)^0 = 1, regardless of the values of a and b.",
+      "explanation": "The binomial theorem is not needed here; it's a basic property of exponents that any non-zero number raised to the power of 0 equals 1.",
+      "common_mistake_notes": "A common mistake is to assume that the binomial theorem must be used, leading to unnecessary complexity."
+    }
+  ]
+}

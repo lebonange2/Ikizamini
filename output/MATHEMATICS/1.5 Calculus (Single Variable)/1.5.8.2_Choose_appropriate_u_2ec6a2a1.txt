@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.8.2 Choose appropriate u
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.8 Integration Techniques - Substitution
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the antiderivative of f(x) = x^3 π using integration by substitution. Let u = x^2. What is the appropriate value for du?
+A) du = 2x^3 dx
+B) du = 2x dx
+C) du = x^4 dx
+D) du = x dx
+Correct Answer: B
+
+Solution:
+To use integration by substitution, we need to express the integrand in terms of u and its derivative du. Given u = x^2, we differentiate both sides with respect to x: du/dx = 2x. Thus, du = 2x dx. So, the correct choice is B.
+
+Explanation:
+The key here is to recognize that when u = x^2, du/dx is the derivative of u with respect to x, which is 2x. This leads to du = 2x dx.
+
+Common mistake note:
+A common mistake would be to square the derivative (i.e., du = 2x^3 dx), but that's not correct because we're looking for the differential of u with respect to x, not the value of u itself.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Integrate f(x) = e^(2x) using integration by substitution. Let u = 2x. What is the appropriate value for du?
+A) du = 2e^(2x) dx
+B) du = e^(2x) dx
+C) du = e^x dx
+D) du = x dx
+Correct Answer: B
+
+Solution:
+To use integration by substitution, we need to express the integrand in terms of u and its derivative du. Given u = 2x, we differentiate both sides with respect to x: du/dx = 2. Thus, du = 2 dx. However, since we're integrating e^(2x), we must multiply du by the exponential term's coefficient (1/2) to get the correct expression: du = e^(2x) dx. So, the correct choice is B.
+
+Explanation:
+The key here is to remember that when u = 2x, du/dx is 2, but we must also account for the exponential term's coefficient (1/2) in front of e^(2x). This leads to du = e^(2x) dx.
+
+Common mistake note:
+A common mistake would be to forget about the coefficient (i.e., du = 2e^(2x) dx), but that's not correct because we need to maintain the original function's form in terms of u.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Integrate f(x) = sin(3x) using integration by substitution. Let u = 3x. What is the appropriate value for du?
+A) du = 3sin(3x) dx
+B) du = sin(3x) dx
+C) du = cos(3x) dx
+D) du = x dx
+Correct Answer: B
+
+Solution:
+To use integration by substitution, we need to express the integrand in terms of u and its derivative du. Given u = 3x, we differentiate both sides with respect to x: du/dx = 3. Thus, du = 3 dx. However, since we're integrating sin(3x), we must multiply du by the sine function's coefficient (1/3) to get the correct expression: du = sin(3x) dx. So, the correct choice is B.
+
+Explanation:
+The key here is to remember that when u = 3x, du/dx is 3, but we must also account for the sine function's coefficient (1/3) in front of sin(3x). This leads to du = sin(3x) dx.
+
+Common mistake note:
+A common mistake would be to forget about the coefficient (i.e., du = 3sin(3x) dx), but that's not correct because we need to maintain the original function's form in terms of u.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Integrate f(x) = cos^2(x) using integration by substitution. Let u = sin(x). What is the appropriate value for du?
+A) du = 2cos(x)sin(x) dx
+B) du = cos(x) dx
+C) du = sin(x) dx
+D) du = x dx
+Correct Answer: B
+
+Solution:
+To use integration by substitution, we need to express the integrand in terms of u and its derivative du. Given u = sin(x), we differentiate both sides with respect to x: du/dx = cos(x). Thus, du = cos(x) dx. So, the correct choice is B.
+
+Explanation:
+The key here is to recognize that when u = sin(x), du/dx is the derivative of u with respect to x, which is cos(x). This leads to du = cos(x) dx.
+
+Common mistake note:
+A common mistake would be to square the derivative (i.e., du = 2cos(x)sin(x) dx), but that's not correct because we're looking for the differential of u with respect to x, not the value of u itself.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Integrate f(x) = ln(x) using integration by substitution. Let u = x. What is the appropriate value for du?
+A) du = ln(x) dx
+B) du = 1/x dx
+C) du = x dx
+D) du = dx
+Correct Answer: B
+
+Solution:
+To use integration by substitution, we need to express the integrand in terms of u and its derivative du. Given u = x, we differentiate both sides with respect to x: du/dx = 1. Thus, du = dx. However, since we're integrating ln(x), we must multiply du by the logarithm's derivative (1/x) to get the correct expression: du = 1/x dx. So, the correct choice is B.
+
+Explanation:
+The key here is to remember that when u = x, du/dx is 1, but we must also account for the logarithm function's derivative (1/x). This leads to du = 1/x dx.
+
+Common mistake note:
+A common mistake would be to forget about the derivative of ln(x) (i.e., du = ln(x) dx), but that's not correct because we need to maintain the original function's form in terms of u.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Integrate f(x) = x^2 e^(3x) using integration by substitution. Let u = 3x. What is the appropriate value for du?
+A) du = 3x^2 e^(3x) dx
+B) du = x^2 e^(3x) dx
+C) du = 3e^(3x) dx
+D) du = x dx
+Correct Answer: C
+
+Solution:
+To use integration by substitution, we need to express the integrand in terms of u and its derivative du. Given u = 3x, we differentiate both sides with respect to x: du/dx = 3. Thus, du = 3 dx. However, since we're integrating x^2 e^(3x), we must multiply du by the exponential term's coefficient (1/3) and the power of x (x^2) to get the correct expression: du = 3e^(3x) dx. So, the correct choice is C.
+
+Explanation:
+The key here is to remember that when u = 3x, du/dx is 3, but we must also account for the exponential term's coefficient (1/3) and the power of x in the integrand. This leads to du = 3e^(3x) dx.
+
+Common mistake note:
+A common mistake would be to forget about the coefficients and powers (i.e., du = 3x^2 e^(3x) dx), but that's not correct because we need to maintain the original function's form in terms of u.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Integrate f(x) = sqrt(1+x^2) using integration by substitution. Let u = 1 + x^2. What is the appropriate value for du?
+A) du = 2x dx
+B) du = x sqrt(1+x^2) dx
+C) du = (1+x^2) dx
+D) du = dx
+Correct Answer: A
+
+Solution:
+To use integration by substitution, we need to express the integrand in terms of u and its derivative du. Given u = 1 + x^2, we differentiate both sides with respect to x: du/dx = 2x. Thus, du = 2x dx. So, the correct choice is A.
+
+Explanation:
+The key here is to recognize that when u = 1 + x^2, du/dx is the derivative of u with respect to x, which is 2x. This leads to du = 2x dx.
+
+Common mistake note:
+A common mistake would be to square the derivative (i.e., du = 2x sqrt(1+x^2) dx), but that's not correct because we're looking for the differential of u with respect to x, not the value of u itself.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.5.12",
+  "objective_text": "Calculate area: A = πab",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Andoid",
+      "stem": "Find the area of a rectangle with length 8 cm and width 3 cm.",
+      "choices": {
+        "A": "16π cm²",
+        "B": "24π cm²",
+        "C": "96π cm²",
+        "D": "24 cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The area of a rectangle is given by A = length × width. Given length = 8 cm and width = 3 cm, we can calculate the area as follows: A = πab = π(8)(3) = 24π cm².",
+      "explanation": "The formula for the area of a rectangle uses the product of its length and width, not just one dimension. The correct formula includes π to account for the circular constant in the general area calculation.",
+      "common_mistake_notes": "Common mistake: Choosing A or C by using only one dimension (8π cm² or 96π cm²) instead of multiplying both dimensions."
+    },
+    {
+      "id": "Cat",
+      "stem": "Calculate the area of a circle with diameter 10 inches.",
+      "choices": {
+        "A": "25π in²",
+        "B": "50π in²",
+        "C": "78.54π in²",
+        "D": "100π in²"
+      },
+      "correct_choice": "A",
+      "solution": "The area of a circle is given by A = πr², where r is the radius. Since the diameter is twice the radius, we have r = 10/2 = 5 inches. Now we can calculate the area: A = π(5)² = 25π in².",
+      "explanation": "The formula for the area of a circle uses the square of the radius, not just the diameter. The correct formula includes π to account for the circular constant in the general area calculation.",
+      "common_mistake_notes": "Common mistake: Choosing B or D by using the diameter instead of the radius squared (50π in² or 100π in²) or not including π at all."
+    },
+    {
+      "id": "Dog",
+      "stem": "Find the area of a parallelogram with base 6 m and height 4 m.",
+      "choices": {
+        "A": "24π m²",
+        "B": "96π m²",
+        "C": "24 m²",
+        "D": "12 m²"
+      },
+      "correct_choice": "C",
+      "solution": "The area of a parallelogram is given by A = base × height. Given base = 6 m and height = 4 m, we can calculate the area as follows: A = 6 × 4 = 24 m².",
+      "explanation": "The formula for the area of a parallelogram uses the product of its base and height, not π. There is no need to include π in this calculation.",
+      "common_mistake_notes": "Common mistake: Choosing A or B by including π (24π m² or 96π m²), which is unnecessary for a parallelogram."
+    },
+    {
+      "id": "Bird",
+      "stem": "What is the area of a square with side length 7 cm?",
+      "choices": {
+        "A": "14π cm²",
+        "B": "49π cm²",
+        "C": "49 cm²",
+        "D": "28 cm²"
+      },
+      "correct_choice": "C",
+      "solution": "The area of a square is given by A = s², where s is the side length. Given side length = 7 cm, we can calculate the area as follows: A = (7)² = 49 cm².",
+      "explanation": "The formula for the area of a square uses the square of its side length, not π. There is no need to include π in this calculation.",
+      "common_mistake_notes": "Common mistake: Choosing B or D by including π (49π cm² or 28 cm²), which is unnecessary for a square."
+    },
+    {
+      "id": "Fish",
+      "stem": "Calculate the area of a sector with radius 5 cm and central angle of 60°.",
+      "choices": {
+        "A": "1.57π cm²",
+        "B": "7.85π cm²",
+        "C": "24π cm²",
+        "D": "39.27π cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The area of a sector is given by A = (θ/360°) × πr², where θ is the central angle in degrees and r is the radius. Given radius = 5 cm and central angle = 60°, we can calculate the area as follows: A = (60/360) × π(5)² = 7.85π cm².",
+      "explanation": "The formula for the area of a sector uses the fraction of the circle represented by the central angle and the radius squared, not just one or the other. The correct formula includes π to account for the circular constant in the general area calculation.",
+      "common_mistake_notes": "Common mistake: Choosing A or C by using only the radius (1.57π cm² or 24π cm²) or not including the central angle fraction, or choosing D by not converting the angle to degrees."
+    },
+    {
+      "id": "Horse",
+      "stem": "Find the area of a triangle with base 9 ft and height 6 ft.",
+      "choices": {
+        "A": "54π ft²",
+        "B": "108π ft²",
+        "C": "27 ft²",
+        "D": "54 ft²"
+      },
+      "correct_choice": "D",
+      "solution": "The area of a triangle is given by A = (1/2) × base × height. Given base = 9 ft and height = 6 ft, we can calculate the area as follows: A = (1/2) × 9 × 6 = 54 ft².",
+      "explanation": "The formula for the area of a triangle uses one-half the product of its base and height, not π. There is no need to include π in this calculation.",
+      "common_mistake_notes": "Common mistake: Choosing A or B by including π (54π ft² or 108π ft²), which is unnecessary for a triangle."
+    },
+    {
+      "id": "Cow",
+      "stem": "Calculate the area of an equilateral triangle with side length 12 cm.",
+      "choices": {
+        "A": "36π cm²",
+        "B": "72π cm²",
+        "C": "36√3 cm²",
+        "D": "72 cm²"
+      },
+      "correct_choice": "C",
+      "solution": "The area of an equilateral triangle is given by A = (sqrt(3)/4) × s², where s is the side length. Given side length = 12 cm, we can calculate the area as follows: A = (sqrt(3)/4) × (12)² = 36√3 cm².",
+      "explanation": "The formula for the area of an equilateral triangle uses a specific constant involving √3, not π. There is no need to include π in this calculation.",
+      "common_mistake_notes": "Common mistake: Choosing A or B by including π (36π cm² or 72π cm²), which is incorrect for an equilateral triangle."
+    }
+  ]
+}

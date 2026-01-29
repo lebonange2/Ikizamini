@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.8.10",
+  "objective_text": "Determine eccentricity from equation",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "1",
+      "stem": "Find the eccentricity of the conic section represented by the equation: x^2 + 4y^2 = 4\nA) 0.5\nB) 1\nC) 1.5\nD) 2",
+      "choices": {
+        "A": "math.sqrt(1 - (4/4)) = math.sqrt(0) = 0, which is not eccentricity for an ellipse",
+        "B": "math.sqrt(1 - (4/16)) = math.sqrt(3/4) ≈ 0.866, correct",
+        "C": "math.sqrt(1 - (4/(4*4))) = math.sqrt(3/5) ≈ 0.775, not the correct value for an ellipse",
+        "D": "math.sqrt(1 - (4/0)) is undefined, as division by zero is not allowed"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a conic section in standard form is x^2/a^2 + y^2/b^2 = 1. For an ellipse, the eccentricity e is given by e = sqrt(1 - b^2/a^2). In this case, the equation can be rewritten as (x^2)/4 + (y^2)/(4/4) = 1, so a^2 = 4 and b^2 = 1. Thus, e = sqrt(1 - (1/4)) = sqrt(3/4). The correct answer is B.",
+      "explanation": "The eccentricity of an ellipse ranges from 0 to 1, where 0 represents a circle and 1 represents a parabola. In this case, the value of e is less than 1, indicating it's an ellipse.",
+      "common_mistake_notes": "Common mistake: Choosing C because it's closer to the correct value but not exactly equal. It's important to calculate the exact eccentricity using the formula provided."
+    },
+    {
+      "id": "2",
+      "stem": "Find the eccentricity of the conic section represented by the equation: 9x^2 - 4y^2 = 36\nA) 0.5\nB) 1\nC) 1.5\nD) 2",
+      "choices": {
+        "A": "math.sqrt(1 - (36/36)) = math.sqrt(0) = 0, which is not eccentricity for a hyperbola",
+        "B": "math.sqrt(1 - (-36/(9*4))) = math.sqrt(7/3) ≈ 1.528, correct",
+        "C": "math.sqrt(1 - (36/(9*4))) = math.sqrt(2/3) ≈ 0.816, not the correct value for a hyperbola",
+        "D": "math.sqrt(1 - (36/0)) is undefined, as division by zero is not allowed"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a conic section in standard form is x^2/a^2 + y^2/b^2 = 1. For this equation, we first need to rearrange it: (x^2)/4 - (y^2)/9 = 1, so a^2 = 4 and b^2 = 9. The eccentricity e is given by e = sqrt(1 - b^2/a^2) = sqrt(1 - 9/4) = sqrt(7/3). The correct answer is B.",
+      "explanation": "The eccentricity of a hyperbola is greater than 1, which means it's an open curve. In this case, the value of e is greater than 1, indicating it's a hyperbola.",
+      "common_mistake_notes": "Common mistake: Choosing C because it's closer to the correct value but not exactly equal. It's important to calculate the exact eccentricity using the formula provided."
+    },
+    {
+      "id": "3",
+      "stem": "Find the eccentricity of the conic section represented by the equation: x^2 + y^2 = 1\nA) 0\nB) 0.5\nC) 1\nd) 1.5",
+      "choices": {
+        "A": "math.sqrt(1 - (1/1)) = math.sqrt(0) = 0, correct",
+        "B": "math.sqrt(1 - (1/(1*1))) = math.sqrt(0) = 0, not the correct value because it's a circle",
+        "C": "math.sqrt(1 - (1/(1*1))) = math.sqrt(0) = 0, also not the correct value for the same reason as B",
+        "D": "math.sqrt(1 - (1/0)) is undefined, as division by zero is not allowed"
+      },
+      "correct_choice": "A",
+      "solution": "The equation x^2 + y^2 = 1 represents a circle with radius 1. The eccentricity of a circle is 0 because it has no 'flatness' like an ellipse or hyperbola. The correct answer is A.",
+      "explanation": "For a circle, the eccentricity is always 0, regardless of its size.",
+      "common_mistake_notes": "Common mistake: Choosing B or C because they both result in 0, but not understanding that for a circle, the eccentricity should be exactly 0, not just close to it."
+    },
+    {
+      "id": "4",
+      "stem": "Find the eccentricity of the conic section represented by the equation: x^2 - 9y^2 = 9\nA) 0.5\nB) 1\nc) 1.5\nd) 2",
+      "choices": {
+        "A": "math.sqrt(1 - (-9/(9*4))) = math.sqrt(7/3) ≈ 1.528, not the correct value for an ellipse",
+        "B": "math.sqrt(1 - (-9/(9*4))) = math.sqrt(7/3) ≈ 1.528, correct",
+        "C": "math.sqrt(1 - (9/(9*4))) = math.sqrt(2/3) ≈ 0.816, not the correct value for an ellipse",
+        "D": "math.sqrt(1 - (9/0)) is undefined, as division by zero is not allowed"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a conic section in standard form is x^2/a^2 + y^2/b^2 = 1. For this equation, we first need to rearrange it: (x^2)/9 - (y^2)/1 = 1, so a^2 = 9 and b^2 = 1. The eccentricity e is given by e = sqrt(1 - b^2/a^2) = sqrt(1 - 1/9) = sqrt(8/9). However, since the equation represents a hyperbola (negative term for y), we must take the absolute value of the result: |sqrt(8/9)| ≈ 0.894. The correct answer is B.",
+      "explanation": "The eccentricity of an ellipse is between 0 and 1, but since this equation represents a hyperbola, we need to consider the absolute value of the calculated eccentricity.",
+      "common_mistake_notes": "Common mistake: Choosing C because it's closer to the correct value but not exactly equal. It's important to calculate the exact eccentricity using the formula provided and take the absolute value for hyperbolas."
+    },
+    {
+      "id": "5",
+      "stem": "Find the eccentricity of the conic section represented by the equation: 4x^2 + y^2 = 16\nA) 0.5\nB) 1\nc) 1.5\nd) 2",
+      "choices": {
+        "A": "math.sqrt(1 - (16/16)) = math.sqrt(0) = 0, which is not eccentricity for an ellipse",
+        "B": "math.sqrt(1 - (16/(4*4))) = math.sqrt(3/5) ≈ 0.775, correct",
+        "C": "math.sqrt(1 - (16/4)) = math.sqrt(-3) is imaginary, not the correct value for an ellipse",
+        "D": "math.sqrt(1 - (16/0)) is undefined, as division by zero is not allowed"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a conic section in standard form is x^2/a^2 + y^2/b^2 = 1. For this equation, we first need to rearrange it: (x^2)/4 + (y^2)/(16/16) = 1, so a^2 = 4 and b^2 = 1. The eccentricity e is given by e = sqrt(1 - b^2/a^2) = sqrt(1 - 1/4) = sqrt(3/4). Since the equation represents an ellipse (positive term for both x and y), we must use this value directly. The correct answer is B.",
+      "explanation": "The eccentricity of a hyperbola should be greater than 1, but in this case, it's less than 1, indicating an ellipse.",
+      "common_mistake_notes": "Common mistake: Choosing C because it results in an imaginary number, not understanding that the eccentricity must be real for conic sections."
+    },
+    {
+      "id": "6",
+      "stem": "Find the eccentricity of the conic section represented by the equation: x^2 - y^2 = 1\nA) 0.5\nB) 1\nc) 1.5\nd) 2",
+      "choices": {
+        "A": "math.sqrt(1 - (-1/(1*1))) = math.sqrt(2) ≈ 1.414, not the correct value for an ellipse",
+        "B": "math.sqrt(1 - (-1/(1*1))) = math.sqrt(2) ≈ 1.414, correct",
+        "C": "math.sqrt(1 - (1/(1*1))) = math.sqrt(0) = 0, not the correct value for a hyperbola",
+        "D": "math.sqrt(1 - (1/0)) is undefined, as division by zero is not allowed"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a conic section in standard form is x^2/a^2 + y^2/b^2 = 1. For this equation, we have a^2 = 1 and b^2 = -1 (which is not allowed for ellipses or circles). The eccentricity e is given by e = sqrt(1 - b^2/a^2) = sqrt(1 - (-1/1)) = sqrt(2). Since the equation represents a hyperbola (negative term for y), we must take the absolute value of the result: |sqrt(2)| ≈ 1.414. The correct answer is B.",
+      "explanation": "The eccentricity of a hyperbola can be greater than 1, and in this case, it's exactly sqrt(2).",
+      "common_mistake_notes": "Common mistake: Choosing C because it results in 0, not understanding that the equation represents a hyperbola with an imaginary value for b^2."
+    },
+    {
+      "id": "7",
+      "stem": "Find the eccentricity of the conic section represented by the equation: x^2 + 9y^2 = 1\nA) 0.5\nB) 1\nc) 1.5\nd) 2",
+      "choices": {
+        "A": "math.sqrt(1 - (1/1)) = math.sqrt(0) = 0, which is not eccentricity for a hyperbola",
+        "B": "math.sqrt(1 - (1/(1*1))) = math.sqrt(0) = 0, correct",
+        "C": "math.sqrt(1 - (1/(1*1))) = math.sqrt(0) = 0, not the correct value because it's a circle",
+        "D": "math.sqrt(1 - (1/0)) is undefined, as division by zero is not allowed"
+      },
+      "correct_choice": "B",
+      "solution": "The equation x^2 + 9y^2 = 1 represents a circle with radius 1/3. The eccentricity of a circle is 0 because it has no 'flatness' like an ellipse or hyperbola. The correct answer is B.",
+      "explanation": "For a circle, the eccentricity is always 0, regardless of its size.",
+      "common_mistake_notes": "Common mistake: Choosing C because it results in 0, but not understanding that for a circle, the eccentricity should be exactly 0, not just close to it."
+    }
+  ]
+}

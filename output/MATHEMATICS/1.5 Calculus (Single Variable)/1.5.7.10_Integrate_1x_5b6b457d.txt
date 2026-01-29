@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.7.10 Integrate 1/x
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.7 Indefinite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IndefiniteIntegral_1):
+Find the indefinite integral of 1/x: ∫(1/xdx) = ?
+A) ln|x| + C
+B) x ln|x| + C
+C) x^2 ln|x| + C
+D) x^3 ln|x| + C
+Correct Answer: A
+
+Solution:
+∫(1/x) dx = ln|x| + C
+
+Explanation:
+The integral of 1/x is the natural logarithm function, ln|x|, plus a constant of integration, C.
+
+Common mistake note:
+Common mistake: Some students may forget to include the absolute value signs around x in the natural logarithm function, which can lead to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 2 (DefiniteIntegral_2):
+Evaluate the definite integral from 1 to e of 1/x: ∫(1/xdx) from 1 to e = ?
+A) 0
+B) 1
+C) ln(e)
+D) ln(e^2)
+Correct Answer: C
+
+Solution:
+∫(1/x) dx from 1 to e = [ln|x|]_1^e = ln(e) - ln(1) = ln(e)
+
+Explanation:
+The definite integral of 1/x from a to b is evaluated by finding the antiderivative and evaluating it at the limits of integration: F(b) - F(a). Here, F(x) = ln|x|.
+
+Common mistake note:
+Common mistake: Students may forget to evaluate the antiderivative at both limits or may confuse the natural logarithm base with a different base.
+------------------------------------------------------------------------------
+
+Problem 3 (IntegrationByParts_3):
+Integrate 1/x using integration by parts: ∫(1/xdx) = ?
+A) x ln|x| + C
+B) ln|x| - x
+C) x^2 ln|x| + C
+D) x^3 ln|x| + C
+Correct Answer: A
+
+Solution:
+∫(1/x) dx = x ln|x| - ∫(ln|x|) dx = x ln|x| - [x ln|x| - x] + C = x ln|x| + C
+
+Explanation:
+Integration by parts is not necessary for this integral, as it can be directly evaluated using the natural logarithm rule. However, if attempted, the correct result is obtained after integrating the remaining term.
+
+Common mistake note:
+Common mistake: Students may incorrectly apply integration by parts twice, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 4 (IntegrationWithConstant_4):
+Evaluate the integral of 2/ x: ∫(2/xdx) = ?
+A) 2ln|x| + C
+B) x^2 ln|x| + C
+C) 2x ln|x| + C
+D) x^3 ln|x| + C
+Correct Answer: A
+
+Solution:
+∫(2/xdx) = 2 ∫(1/x) dx = 2ln|x| + C
+
+Explanation:
+The integral of a constant multiple is found by multiplying the constant outside the integral and integrating the remaining function.
+
+Common mistake note:
+Common mistake: Students may forget to multiply the constant 2 before integrating 1/x, resulting in an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 5 (IntegrationWithVariableBase_5):
+Find the indefinite integral of 1/(2x): ∫(1/(2x)dx) = ?
+A) ln|2x| + C
+B) x ln|2x| + C
+C) x^2 ln|2x| + C
+D) (1/2)ln|x| + C
+Correct Answer: D
+
+Solution:
+∫(1/(2x)dx) = (1/2) ∫(1/x) dx = (1/2)ln|x| + C
+
+Explanation:
+The integral of a function with a variable base can be simplified by factoring out constants before integrating.
+
+Common mistake note:
+Common mistake: Students may not factor out the constant 1/2, leading to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 6 (IntegrationWithTrigonometricFunction_6):
+Find the integral of sin(x)/x: ∫(sin(x)/xdx) = ?
+A) cos|x| + C
+B) x cos|x| + C
+C) x^2 cos|x| + C
+D) x sin|x| - cos|x| + C
+Correct Answer: D
+
+Solution:
+∫(sin(x)/xdx) = x sin(x) - ∫(sin(x)) dx = x sin(x) + cos(x) + C
+
+Explanation:
+The integral of sin(x)/x cannot be directly evaluated using the natural logarithm rule. Instead, it can be solved by integration by parts or recognizing it as a special function (which is not part of this objective). The correct answer is obtained after integrating the remaining term.
+
+Common mistake note:
+Common mistake: Students may attempt to use the natural logarithm rule, which does not apply here.
+------------------------------------------------------------------------------
+
+Problem 7 (IntegrationWithExponentialFunction_7):
+Find the integral of e^(-x)/x: ∫(e^(-x)/xdx) = ?
+A) -e^(-x) ln|x| + C
+B) e^(-x) ln|x| + C
+C) xe^(-x) ln|x| + C
+D) x^2 e^(-x) ln|x| + C
+Correct Answer: A
+
+Solution:
+∫(e^(-x)/xdx) = -e^(-x) ln|x| + ∫(e^(-x)) dx = -e^(-x) ln|x| - e^(-x) + C
+
+Explanation:
+The integral of an exponential function divided by x can be solved using integration by parts. The correct answer is obtained after integrating the remaining term.
+
+Common mistake note:
+Common mistake: Students may not recognize that integration by parts is needed and attempt to use the natural logarithm rule, which does not apply here.
+------------------------------------------------------------------------------

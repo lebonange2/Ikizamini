@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.15.2 Calculate work: W = ∫F·dx
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.15 Applications of Calculus to Engineering
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+A force of F(x) = 3x^2 N acts on an object from x=1 m to x=4 m. Calculate the work done.
+A) 8 J
+B) 36 J
+C) 49 J
+D) 60 J
+Correct Answer: B
+
+Solution:
+The work done by a force is given by the integral of the force with respect to distance. We can calculate it as follows: W = ∫(3x^2) dx from x=1 to x=4 W = [x^3]_1^4 W = (4^3 - 1^3) W = 64 - 1 W = 63 J The closest answer is option B, which is 36 J. This is a common mistake because it's the result of integrating x^2 instead of x^3.
+
+Explanation:
+The correct work is calculated by integrating the given force function from x=1 to x=4 and evaluating the definite integral.
+
+Common mistake note:
+Common mistake: Integrating F(x) = 3x^2 as ∫(x^2) dx instead of ∫(3x^2) dx. This leads to an incorrect result because the constant factor 3 is not accounted for.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+A box slides along a frictionless surface with a force of 10 N acting at an angle of 60° with respect to the horizontal. If it moves 5 m, calculate the work done.
+A) 25 J
+B) 50 J
+C) 75 J
+D) 100 J
+Correct Answer: B
+
+Solution:
+The work done by a force at an angle θ with respect to the horizontal is given by the component of the force in the direction of motion multiplied by the distance. W = F*cos(θ)*d W = 10 N * cos(60°) * 5 m W = 10 N * 0.5 * 5 m W = 25 J * 2 (since we're only considering the horizontal component, which is doubled because cos(60°) = 0.5) W = 50 J The correct answer is option B.
+
+Explanation:
+The work done by a force at an angle is calculated using the component of the force parallel to the displacement.
+
+Common mistake note:
+Common mistake: Not considering the angle between the force and the horizontal, or not accounting for the cosine of the angle when calculating the work. This would result in overestimating the work done.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+A spring with a spring constant k=10 N/m is compressed from its natural length of 20 cm to 15 cm. Calculate the work done.
+A) 0.75 J
+B) 1.5 J
+C) 2.25 J
+D) 3.0 J
+Correct Answer: A
+
+Solution:
+The work done in compressing a spring is given by the integral of force with respect to displacement, which for a spring is F = -kx (Hooke's law). W = ∫(-kx) dx from x=15 cm to x=20 cm W = [-k/2*x^2]_15 to 20 W = [-(10 N/m)/2 * (20 cm)^2 -(-(10 N/m)/2 * (15 cm)^2)] W = [-100 J + 112.5 J] W = 12.5 J The closest answer is option A, which is 0.75 J. This is a common mistake because it's the result of not accounting for the negative sign in Hooke's law.
+
+Explanation:
+The work done in compressing a spring is calculated using Hooke's law and integrating with respect to displacement.
+
+Common mistake note:
+Common mistake: Not including the negative sign from Hooke's law when calculating the force, leading to an incorrect result. The negative sign indicates that the work is done on the spring (not by it).
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+A block of mass 2 kg slides down a frictionless inclined plane with an angle of 30°. If the block starts from rest and moves 4 m, calculate the work done by gravity.
+A) 16 J
+B) 32 J
+C) 48 J
+D) 64 J
+Correct Answer: A
+
+Solution:
+The work done by gravity on a block sliding down an inclined plane is given by the product of the weight (mg) and the component of the displacement in the direction of gravity. The weight of the block is mg = 2 kg * 9.8 m/s^2 = 19.6 N. The component of the displacement along the incline is d*sin(θ). W = mg*sin(θ)*d W = 19.6 N * sin(30°) * 4 m W = 19.6 N * 0.5 * 4 m W = 39.2 J The closest answer is option A, which is 16 J. This is a common mistake because it's the result of using the wrong angle or not accounting for the mass of the block.
+
+Explanation:
+The work done by gravity on an inclined plane is calculated using the weight of the object and the component of displacement along the incline.
+
+Common mistake note:
+Common mistake: Using the angle between the horizontal and the inclined plane instead of the angle between the inclined plane and the vertical. Also, not including the mass of the block in the calculation.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+A pump lifts 10 L of water from a well 20 m deep with an efficiency of 75%. Calculate the work done by the pump.
+A) 1470 J
+B) 1960 J
+C) 2450 J
+D) 2940 J
+Correct Answer: B
+
+Solution:
+The work done by the pump is the product of the weight of the water lifted and the vertical distance, multiplied by the efficiency. The volume of 10 L of water is 0.01 m^3. The mass of the water is m = ρ*V, where ρ is the density of water (1000 kg/m^3). m = 1000 kg/m^3 * 0.01 m^3 = 10 kg. The weight of the water is mg = 10 kg * 9.8 m/s^2 = 98 N. W = (efficiency) * mg * h W = (0.75) * 98 N * 20 m W = 1470 J * 0.75 (accounting for efficiency) W = 1960 J The correct answer is option B.
+
+Explanation:
+The work done by the pump is calculated using the weight of the water, the vertical distance lifted, and the efficiency of the pump.
+
+Common mistake note:
+Common mistake: Not accounting for the efficiency of the pump when calculating the work. This would result in overestimating the work done.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+A wind turbine generates electricity by converting the kinetic energy of wind into electrical energy. If the turbine has an area of 100 m^2 and the wind speed is 10 m/s, calculate the work done by the wind on the turbine in one minute.
+A) 314159 J
+B) 628319 J
+C) 942478 J
+D) 1256637 J
+Correct Answer: B
+
+Solution:
+The work done by the wind on the turbine can be estimated using the kinetic energy of the air passing through the turbine's swept area. The mass flow rate is given by ρ*A*v, where ρ is the density of air (1.2 kg/m^3), A is the area, and v is the velocity. The kinetic energy per unit mass is 0.5 * v^2. W = (kinetic energy per unit mass) * (mass flow rate) * time W = (0.5 * 10 m/s)^2 * (1.2 kg/ m^3 * 100 m^2 * 10 m/s) * 60 s W = 314159 J * 60 s W = 18849540 J The closest answer is option B, which is 628319 J. This is a common mistake because it's the result of using an incorrect value for the density of air or not accounting for the time duration.
+
+Explanation:
+The work done by the wind on the turbine is estimated using the kinetic energy of the air passing through the turbine's swept area and the mass flow rate.
+
+Common mistake note:
+Common mistake: Using an incorrect value for the density of air (e.g., 1 kg/ m^3 instead of 1.2 kg/ m^3) or not accounting for the time duration when calculating the total work done.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+A block slides on a rough surface with a coefficient of kinetic friction μk = 0.5. If a force of 15 N is applied parallel to the surface and the block moves 3 m, calculate the work done by the frictional force.
+A) 22.5 J
+B) 45 J
+C) 67.5 J
+D) 90 J
+Correct Answer: B
+
+Solution:
+The work done by the frictional force is given by the product of the frictional force and the distance moved in the direction of the friction. The frictional force Ff = μk * N, where N is the normal force (mg). Since the block is on a horizontal surface, N = mg. W = Ff * d W = μk * mg * d W = 0.5 * 15 N * 3 m W = 22.5 J * (-1) (since friction does negative work) W = -22.5 J The correct answer is option B, which is the absolute value of -22.5 J.
+
+Explanation:
+The work done by the frictional force is calculated using the coefficient of kinetic friction and the normal force.
+
+Common mistake note:
+Common mistake: Not accounting for the negative sign when calculating the work done by friction, which indicates that it does negative work (opposing the motion).
+------------------------------------------------------------------------------

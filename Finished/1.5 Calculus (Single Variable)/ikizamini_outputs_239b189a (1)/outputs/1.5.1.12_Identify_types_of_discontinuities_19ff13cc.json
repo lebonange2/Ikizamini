@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.1.12",
+  "objective_text": "Identify types of discontinuities",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1]",
+      "stem": "Which function has a removable discontinuity at x = 3?",
+      "choices": {
+        "A": "f(x) = (x^2 - 9)/(x - 3)",
+        "B": "g(x) = (x + 3)/(x - 3)",
+        "C": "h(x) = √(x - 4)",
+        "D": "p(x) = |x - 3|"
+      },
+      "correct_choice": "A",
+      "solution": "The function f(x) has a removable discontinuity at x = 3 because the factor (x - 3) can be cancelled out, making it continuous after simplification. The other options either have vertical asymptotes (B), are continuous at x = 3 (C), or do not have a hole at x = 3 (D).",
+      "explanation": "Removable discontinuities occur when the function is undefined due to a removable factor, such as a cancelled out denominator.",
+      "common_mistake_notes": "Common mistake: Choosing B because it has a similar structure but does not cancel out, resulting in a vertical asymptote."
+    },
+    {
+      "id": "[2]",
+      "stem": "What type of discontinuity does f(x) = 1/x have at x = 0?",
+      "choices": {
+        "A": "Removable",
+        "B": "Jump",
+        "C": "Infinite",
+        "D": "None"
+      },
+      "correct_choice": "C",
+      "solution": "The function f(x) has an infinite discontinuity at x = 0 because the limit approaches infinity as x approaches 0 from both sides. There is no way to remove the discontinuity.",
+      "explanation": "Infinite discontinuities occur when the limit of a function approaches infinity or negative infinity at a specific point.",
+      "common_mistake_notes": "Common mistake: Choosing A, thinking that removing the factor would make it continuous, but x cannot be 0."
+    },
+    {
+      "id": "[3]",
+      "stem": "Which function has a jump discontinuity at x = 2?",
+      "choices": {
+        "A": "g(x) = |x - 2|",
+        "B": "h(x) = (x^2 - 4)/(x - 2)",
+        "C": "p(x) = x^2 + 1",
+        "D": "f(x) = 3x - 6"
+      },
+      "correct_choice": "A",
+      "solution": "The function g(x) has a jump discontinuity at x = 2 because the limit from the left (g(2-) = 0) is different from the limit from the right (g(2+) = 2). The other options are continuous or have removable discontinuities.",
+      "explanation": "Jump discontinuities occur when the function's value changes abruptly at a point without approaching infinity.",
+      "common_mistake_notes": "Common mistake: Choosing B, which has a removable discontinuity rather than a jump."
+    },
+    {
+      "id": "[4]",
+      "stem": "What type of discontinuity does f(x) = 1/(x - 1)^2 have at x = 1?",
+      "choices": {
+        "A": "Removable",
+        "B": "Jump",
+        "C": "Infinite",
+        "D": "None"
+      },
+      "correct_choice": "C",
+      "solution": "The function f(x) has an infinite discontinuity at x = 1 because the limit approaches infinity as x approaches 1. There is no way to remove the discontinuity.",
+      "explanation": "Infinite discontinuities occur when the limit of a function approaches infinity or negative infinity at a specific point.",
+      "common_mistake_notes": "Common mistake: Choosing A, thinking that removing the factor would make it continuous, but x cannot be 1."
+    },
+    {
+      "id": "[5]",
+      "stem": "Which function has a removable discontinuity at x = -2?",
+      "choices": {
+        "A": "g(x) = (x + 2)/(x^2 + 4)",
+        "B": "h(x) = √(x + 2)",
+        "C": "p(x) = |x + 2|",
+        "D": "f(x) = x + 2"
+      },
+      "correct_choice": "A",
+      "solution": "The function g(x) has a removable discontinuity at x = -2 because the factor (x + 2) can be cancelled out, making it continuous after simplification. The other options are either continuous or have infinite discontinuities.",
+      "explanation": "Removable discontinuities occur when the function is undefined due to a removable factor, such as a cancelled out denominator.",
+      "common_mistake_notes": "Common mistake: Choosing B because it has no discontinuity at x = -2."
+    },
+    {
+      "id": "[6]",
+      "stem": "What type of discontinuity does f(x) = [x] have at x = 1?",
+      "choices": {
+        "A": "Removable",
+        "B": "Jump",
+        "C": "Infinite",
+        "D": "None"
+      },
+      "correct_choice": "B",
+      "solution": "The function f(x) = [x], the greatest integer function, has a jump discontinuity at x = 1 because the value of the function changes from 0 to 1 as x increases past 1. The other options do not describe this type of behavior.",
+      "explanation": "Jump discontinuities occur when the function's value changes abruptly at a point without approaching infinity.",
+      "common_mistake_notes": "Common mistake: Choosing A, thinking that [x] is continuous, but it actually has jumps at integer values."
+    },
+    {
+      "id": "[7]",
+      "stem": "Which of the following functions has no discontinuities?",
+      "choices": {
+        "A": "g(x) = x^2/x",
+        "B": "h(x) = 3x - 6",
+        "C": "p(x) = √(x + 1)",
+        "D": "f(x) = |x|"
+      },
+      "correct_choice": "B",
+      "solution": "The function h(x) = 3x - 6 is continuous for all real numbers because it is a linear function with no undefined points or infinite limits.",
+      "explanation": "Continuous functions have no breaks, jumps, or asymptotes in their graphs; they can be drawn without lifting the pencil.",
+      "common_mistake_notes": "Common mistake: Choosing A, which has a removable discontinuity at x = 0."
+    }
+  ]
+}

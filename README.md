@@ -7,6 +7,7 @@ This repo includes:
 - `ikizamini_local.py`: Flask UI that talks to **Ollama**
 - `ikizamini_app.py`: CLI version (OpenAI Responses API client)
 - `setup.sh`: Runpod-friendly setup (installs deps, installs Ollama, pulls Qwen model, starts UI)
+- `ikizamini_local_parallel.py`: parallel/concurrent CLI runner for Ollama (saves to `Parallely_Processed/`)
 - `remove_json_files.py`: cleanup utility to remove `*.json` files from the output folder
 
 ## Quick start (Runpod / cloud)
@@ -35,7 +36,7 @@ python3 ikizamini_local.py
 ```
 
 Then open:
-- `http://127.0.0.1:8000` (local)
+- `http://127.0.0.1:8000` (local; may auto-pick `8001` if `8000` is busy)
 - On Runpod, use the public URL mapped to port 8000 (or `RUNPOD_PORT`)
 
 ### Notes
@@ -51,6 +52,42 @@ python3 ikizamini_app.py \
   --output ikizamini.txt \
   --output-dir "output/MATHEMATICS/1.1 Algebra and Trigonometry"
 ```
+
+## Running the parallel/concurrent CLI (Ollama) — `ikizamini_local_parallel.py`
+
+This runner processes learning objectives concurrently (single-process threads) while Ollama does the heavy work.
+
+### Smoke-check (fast validation)
+
+Checks that Ollama is reachable and the model can respond with JSON (no `--input` needed):
+
+```bash
+source venv/bin/activate
+python3 ikizamini_local_parallel.py --smoke-check --ollama-url http://localhost:11434 --worker-model gemma2:2b
+```
+
+### Generate outputs
+
+```bash
+source venv/bin/activate
+python3 ikizamini_local_parallel.py \
+  --input Uru.txt \
+  --ollama-url http://localhost:11434 \
+  --worker-model gemma3:latest \
+  --manager-model gemma3:latest \
+  --workers 4 \
+  --output-dir Parallely_Processed
+```
+
+Useful flags:
+- `--limit 10`: only process the first 10 learning objectives (good for testing)
+- `--timeout-s 600`: increase Ollama request timeout for slower models/CPU runs
+- `--max-rounds 6`: repair/review rounds per objective
+- `--num-ctx 8192`: context size
+
+Outputs:
+- Per objective: `Parallely_Processed/<objective>_<hash>.json` and `.txt`
+- Index: `Parallely_Processed/index.txt`
 
 ## Removing JSON files from the output directory
 

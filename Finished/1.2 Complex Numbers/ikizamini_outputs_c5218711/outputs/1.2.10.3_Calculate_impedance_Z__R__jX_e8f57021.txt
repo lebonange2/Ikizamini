@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.10.3 Calculate impedance Z = R + jX
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.10 Applications to AC Circuits
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the impedance of a circuit with 50 ohms resistance and 30 ohms inductive reactance?
+A) 20 + j80 ohms
+B) 50 - j30 ohms
+C) 80 + j20 ohms
+D) 50 + j30 ohms
+Correct Answer: D
+
+Solution:
+The impedance (Z) is calculated as the sum of resistance (R) and reactance (X) in complex form: Z = R + jX. Given R = 50 ohms and X = 30 ohms, we have Z = 50 + j30 ohms.
+
+Explanation:
+Impedance is a measure of opposition to alternating current flow and is represented as a complex number with resistance (R) in the real part and reactance (X) in the imaginary part.
+
+Common mistake note:
+A common mistake would be subtracting the inductive reactance instead of adding it, which results in choice B. This error occurs because the reactance contributes to the overall impedance and should not be treated as a negative value.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Calculate the impedance of a circuit with 100 ohms resistance and -50 ohms capacitive reactance.
+A) 150 + j50 ohms
+B) 50 + j150 ohms
+C) 100 - j50 ohms
+D) 100 + j50 ohms
+Correct Answer: C
+
+Solution:
+The impedance (Z) is calculated as the sum of resistance (R) and reactance (X) in complex form: Z = R + jX. Given R = 100 ohms and X = -50 ohms (capacitive reactance is negative), we have Z = 100 - j50 ohms.
+
+Explanation:
+Capacitive reactance is represented with a negative imaginary part because it tends to oppose inductive reactance. The overall impedance should reflect this opposition by subtracting the capacitive reactance from the resistance.
+
+Common mistake note:
+A common mistake would be adding the capacitive reactance instead of subtracting it, which results in choice D. This error occurs due to confusion about the sign convention for capacitive reactance.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+What is the impedance of a circuit with 20 ohms resistance and no reactance?
+A) 20 + j0 ohms
+B) 0 + j20 ohms
+C) 20 - j0 ohms
+D) 0 + j0 ohms
+Correct Answer: A
+
+Solution:
+The impedance (Z) is calculated as the sum of resistance (R) and reactance (X) in complex form: Z = R + jX. Given R = 20 ohms and X = 0 ohms, we have Z = 20 + j0 ohms or simply 20 ohms.
+
+Explanation:
+If there is no reactance (no inductive or capacitive elements), the impedance is equal to the resistance alone. The imaginary part of the complex number is zero.
+
+Common mistake note:
+A common mistake would be choosing option D, which represents pure reactance with no resistance. This error occurs due to misunderstanding that a circuit with no reactance still has some form of opposition to current flow.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Calculate the impedance of a circuit with 80 ohms resistance and equal inductive and capacitive reactances of 40 ohms each.
+A) 120 + j80 ohms
+B) 120 - j80 ohms
+C) 40 + j40 ohms
+D) 160 + j0 ohms
+Correct Answer: C
+
+Solution:
+The impedance (Z) is calculated as the sum of resistance (R) and reactance (X) in complex form: Z = R + jX. Given R = 80 ohms, X_L = 40 ohms (inductive), and X_C = -40 ohms (capacitive), the total reactance is X_total = X_L + X_C = 40 - 40 = 0 ohms. So, Z = 80 + j0 ohms or simply 80 ohms.
+
+Explanation:
+The inductive and capacitive reactances cancel each other out when they are equal in magnitude but opposite in sign, resulting in a total reactance of zero. The impedance is then equal to the resistance alone.
+
+Common mistake note:
+A common mistake would be adding both reactances together without considering their opposing signs, which leads to choice A or B. This error occurs due to overlooking the effect of capacitive reactance on the overall impedance.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+What is the phase angle (φ) between voltage and current in a circuit with an impedance of 30 + j40 ohms?
+A) 36.87°
+B) 53.13°
+C) 120°
+D) 90°
+Correct Answer: A
+
+Solution:
+The phase angle (φ) between voltage and current can be calculated using the formula: φ = arctan(X/R), where X is the reactance and R is the resistance. Given Z = 30 + j40 ohms, we have R = 30 ohms and X = 40 ohms. So, φ = arctan(40/30) ≈ 36.87°.
+
+Explanation:
+The phase angle indicates the difference in timing between voltage and current in an AC circuit. It's calculated based on the ratio of reactance to resistance in the impedance.
+
+Common mistake note:
+A common mistake would be choosing option D, which represents a 90° phase angle typical for purely reactive (inductive or capacitive) circuits. This error occurs due to confusion between the phase angle and the presence of only reactance without resistance.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Calculate the impedance of a circuit with 120 ohms resistance and 75 ohms inductive reactance. If the voltage is 120 V at 60 Hz, what is the current (I) through the circuit?
+A) 1.8 A
+B) 2.4 A
+C) 3.6 A
+D) 4.8 A
+Correct Answer: B
+
+Solution:
+First, calculate the impedance: Z = 120 + j75 ohms. Then use Ohm's Law (V = IZ) to find current: I = V/Z. Given V = 120 V and Z = 120 + j75 ohms, we have I ≈ 1.83 A. However, the question asks for the magnitude of current, so we take the absolute value: |I| ≈ 1.83 A, which is closest to option B.
+
+Explanation:
+After calculating the impedance, we can find the current by dividing the voltage by the impedance. The result will be a complex number representing both the magnitude and phase of the current. For this question, we only need the magnitude.
+
+Common mistake note:
+A common mistake would be directly using the real part of the calculated current (1.83 A) without taking its absolute value, which leads to choice A. This error occurs due to overlooking that the current should be a positive value.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the impedance of a circuit with 60 ohms resistance and 90 ohms inductive reactance? If the voltage is 180 V at 50 Hz, what is the power factor (PF)?
+A) 0.707
+B) 0.866
+C) 0.500
+D) 1.000
+Correct Answer: A
+
+Solution:
+First, calculate the impedance: Z = 60 + j90 ohms. Then find the power factor (PF) using the formula: PF = R / √(R^2 + X^2). Given R = 60 ohms and X = 90 ohms, we have PF ≈ 0.707.
+
+Explanation:
+The power factor measures the efficiency of energy transfer in an AC circuit. It's calculated as the ratio of the resistance to the impedance (R / Z).
+
+Common mistake note:
+A common mistake would be choosing option D, which represents a unity power factor typical for purely resistive circuits. This error occurs due to overlooking the effect of inductive reactance on the power factor.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.1.3 Evaluate one-sided limits
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.1 Limits and Continuity
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 ([1.5.1.3]Q1):
+Find the limit as x approaches 2 from the left: \(\lim_{{x  \to 2^-}}  (x^2  - 4)\)
+A) -2
+B) 0
+C) 2
+D) Does not exist
+Correct Answer: D
+
+Solution:
+The limit does not exist because the function approaches different values as x approaches 2 from the left and right. From the left, it approaches -2 (since \((x-2)(x+2)\) becomes \((-1)(4) = -4\)), while from the right it approaches 4 (as x gets closer to 2 from above).
+
+Explanation:
+One- sided limits are evaluated by considering only values of x approaching a particular point from one direction. In this case, we look at values less than 2.
+
+Common mistake note:
+A common mistake is to assume that the limit exists because the function value at x=2 is well-defined. However, for one-sided limits, it's the behavior of the function near the point, not the value at the point itself, that matters.
+------------------------------------------------------------------------------
+
+Problem 2 ([1.5.1.3]Q2):
+Evaluate \(\lim_{{x  \to 0^+}}  \frac{1}{x}\).
+A) -∞
+B) 0
+C) 1
+D) +∞
+Correct Answer: D
+
+Solution:
+The limit is +∞ because as x approaches 0 from the right, the fraction becomes very large since the denominator gets closer to zero without reaching it.
+
+Explanation:
+When evaluating a one-sided limit approaching from the positive side of zero, we consider only values greater than zero. The function grows without bound in this case.
+
+Common mistake note:
+A common mistake is to think that the limit might be 0 because the function approaches 0 as x approaches 0 from both sides, but this is not a one-sided limit.
+------------------------------------------------------------------------------
+
+Problem 3 ([1.5.1.3]Q3):
+Find \(\lim_{{x  → -∞}}  (2x + 5)\).
+A) -∞
+B) 0
+C) 5
+D) +∞
+Correct Answer: A
+
+Solution:
+The limit is -∞ because as x approaches negative infinity, the term 2x becomes more and more negative, causing the entire expression to become arbitrarily large in magnitude.
+
+Explanation:
+When evaluating a limit as x approaches negative infinity, we consider values of x that are increasingly negative. The linear function grows without bound in this case, but in the negative direction.
+
+Common mistake note:
+A common mistake is to think that the limit might be 5 because it's the constant term in the expression, but the dominant term is 2x which drives the limit.
+------------------------------------------------------------------------------
+
+Problem 4 ([1.5.1.3]Q4):
+Evaluate \(\lim_{{x  → 0^-}}  \frac{\sin(x)}{x}\).
+A) -1
+B) 0
+C) 1
+D) Does not exist
+Correct Answer: C
+
+Solution:
+The limit is 1, which can be proven using L'Hopital's rule or by recognizing that the function approaches the slope of the tangent line to y=sin(x) at x=0.
+
+Explanation:
+This limit is a special case known as the squeeze theorem limit. As x approaches 0 from the left, sin(x)/x approaches the value of the sine function divided by its input, which is 1 at x=0.
+
+Common mistake note:
+A common mistake is to think that the limit might be 0 because both numerator and denominator approach 0, but this is not a one-sided limit. L'Hopital's rule or the squeeze theorem must be applied.
+------------------------------------------------------------------------------
+
+Problem 5 ([1.5.1.3]Q5):
+Find \(\lim_{{x  → 3^+}}  \frac{1}{(x-3)^2}\).
+A) -9
+B) 0
+C) 9
+D) +∞
+Correct Answer: D
+
+Solution:
+The limit is +∞ because as x approaches 3 from the right, the denominator becomes very small (without reaching zero), causing the entire expression to become arbitrarily large.
+
+Explanation:
+This is a one-sided limit approaching from the positive side of 3. The function grows without bound as x gets closer to 3 from above.
+
+Common mistake note:
+A common mistake is to think that the limit might be 0 because the denominator approaches zero, but this is not a two-...
+------------------------------------------------------------------------------
+
+Problem 6 ([1.5.1.3]Q6):
+Evaluate \(\lim_{{x  → π/2^-}}  \tan(x)\).
+A) -∞
+B) 0
+C) π/2
+D) +∞
+Correct Answer: D
+
+Solution:
+The limit is +∞ because as x approaches π/2 from the left, tan(x) increases without bound since it's the ratio of sin(x) and cos(x), both approaching 1 but sin(x) grows faster than cos(x).
+
+Explanation:
+This is a one-sided limit approaching from the negative side of π/2. The tangent function approaches infinity as x gets closer to π/2 from below.
+
+Common mistake note:
+A common mistake is to think that the limit might be π/2 because it's the value at which the function becomes undefined, but this is not a one-sided limit.
+------------------------------------------------------------------------------
+
+Problem 7 ([1.5.1.3]Q7):
+Find \(\lim_{{x  → 0}}  (\frac{1}{|x|})\).
+A) -1
+B) 0
+C) Does not exist
+D) +∞
+Correct Answer: C
+
+Solution:
+The limit does not exist because the function approaches different values as x approaches 0 from the left and right. From the left, it approaches +∞ (since |x| becomes very small), while from the right it also approaches +∞.
+
+Explanation:
+This is a two-sided limit, but since we're asked to return only one-sided limits, we can say that there's no one-sided limit as x approaches 0. The function behaves differently depending on which direction x comes from.
+
+Common mistake note:
+A common mistake is to think that the limit exists because the function seems continuous at x=0, but it's not a one-sided limit.
+------------------------------------------------------------------------------

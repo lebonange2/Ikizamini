@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.1.9 Evaluate limits with trigonometric functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.1 Limits and Continuity
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the limit: \(\lim_{{x  \to 0}}  \frac{\sin(x)}{x}\)
+A) \(-1\)
+B) \(0\)
+C) \(1\)
+D) \(+\infty\)
+Correct Answer: C
+
+Solution:
+The limit represents the derivative of sine at 0, which is equal to \(\cos(0) = 1\). Using L'Hopital's rule or recognizing the limit as a special one (limit of sinc function), we get:\[\lim_{{x  → 0}}  \frac{\sin(x)}{x} = \cos(0) = 1\]
+
+Explanation:
+The limit evaluates to 1 because sine approaches its linear approximation near 0, and the ratio of sine to x approaches the cosine function's value at 0.
+
+Common mistake note:
+A common mistake is to think that the limit is 0, which would be true if we were evaluating \(\lim_{{x  → 0}}  \frac{f(x)}{g(x)}\) where both f and g approach 0. However, in this case, the sine function approaches 0 while x also approaches 0, so the limit is not indeterminate.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Evaluate the limit: \(\lim_{{x  →  \frac{\pi}{2}}}  \frac{1 -  \cos(x)}{x -  \frac{\pi}{2}}\)
+A) \(-1\)
+B) \(0\)
+C) \(1\)
+D) \(+\infty\)
+Correct Answer: A
+
+Solution:
+Using L'Hopital's rule, since the limit is in indeterminate form (difference of squares), we differentiate both numerator and denominator:\[\lim_{{x  →  \frac{\pi}{2}}}  \frac{1 -  \cos(x)}{x -  \frac{\pi}{2}} = \lim_{{x  →  \frac{\pi}{2}}}  \frac{\sin(x)}{1} = \sin\left(\frac{\pi}{2}\right) = 1\]
+
+Explanation:
+The limit evaluates to -1 because the numerator approaches 0 and the denominator approaches a constant, making the limit indeterminate. Applying L'Hopital's rule simplifies the problem to finding the sine of \(\frac{\pi}{2}\), which is 1.
+
+Common mistake note:
+A common mistake would be to evaluate the function at \(x =  \frac{\pi}{2}\) directly, without considering that the limit is in indeterminate form. This approach would lead to a value of 0/0, which is undefined.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the limit: \(\lim_{{x  → 0}}  \frac{\tan(x) - x}{x^3}\)
+A) \(-\frac{1}{2}\)
+B) \(0\)
+C) \(\frac{1}{2}\)
+D) \(+\infty\)
+Correct Answer: A
+
+Solution:
+Using L'Hopital's rule twice, we differentiate numerator and denominator three times:\[\lim_{{x  → 0}}  \frac{\tan(x) - x}{x^3} = \lim_{{x  → 0}}  \frac{\sec^2(x) - 1}{3x^2} = \lim_{{x  → 0}}  \frac{2\sec^2(x)\tan(x)}{6x} = \lim_{{x  → 0}}  \frac{2\sec^4(x)}{6} = \frac{2}{6} = \frac{1}{3}\]
+
+Explanation:
+The limit evaluates to \(\frac{1}{3}\) because the numerator approaches 0 and the denominator approaches a constant, making the limit indeterminate. Applying L'Hopital's rule twice simplifies the problem to finding the limit of a rational function that can be evaluated directly.
+
+Common mistake note:
+A common mistake would be to stop after applying L'Hopital's rule once, which would lead to the limit being  \(\frac{2}{6} = \frac{1}{3}\) instead of the correct answer. It is important to continue differentiating until the limit becomes non-indeterminate.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Evaluate the limit: \(\lim_{{x  → 0}}  \frac{\sin(x) - x}{x^3}\)
+A) \(-\frac{1}{6}\.
+B) \(0\)
+C) \(\frac{1}{6}\)
+D) \(+\infty\)
+Correct Answer: A
+
+Solution:
+Using L'Hopital's rule twice, we differentiate numerator and denominator three times:\[\lim_{{x  → 0}}  \frac{\sin(x) - x}{x^3} = \lim_{{x  → 0}}  \frac{\cos(x) - 1}{3x^2} = \lim_{{x  → 0}}  \frac{-\sin(x)}{6x} = \lim_{{x  → 0}}  \frac{-\cos(x)}{6} = -\frac{1}{6}\]
+
+Explanation:
+The limit evaluates to \(-\frac{1}{6}\) because the numerator approaches 0 and the denominator approaches a constant, making the limit indeterminate. Applying L'Hopital's rule twice simplifies the problem to finding the limit of a rational function that can be evaluated directly.
+
+Common mistake note:
+A common mistake would be to stop after applying L'Hopital's rule once, which would lead to an incorrect limit. It is important to continue differentiating until the limit becomes non-indeterminate.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Find the limit: \(\lim_{{x  → 0}}  \frac{\sin(x) - x}{x^2}\)
+A) \(-1\)
+B) \(0\)
+C) \(1\)
+D) \(+\infty\)
+Correct Answer: A
+
+Solution:
+Using L'Hopital's rule, we differentiate numerator and denominator twice:\[\lim_{{x  → 0}}  \frac{\sin(x) - x}{x^2} = \lim_{{x  → 0}}  \frac{\cos(x) - 1}{2x} = \lim_{{x  → 0}}  \frac{-\sin(x)}{2} = 0\]
+
+Explanation:
+The limit evaluates to 0 because the numerator approaches 0 and the denominator approaches a constant, making the limit indeterminate. Applying L'Hopital's rule simplifies the problem to finding the limit of a rational function that can be evaluated directly.
+
+Common mistake note:
+A common mistake would be to think that the limit is -1 because the numerator approaches -x and the denominator approaches x^2, which could lead to an incorrect conclusion. It is important to use L'Hopital's rule correctly.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Evaluate the limit: \(\lim_{{x  → 0}}  \frac{\tan(x) - x}{x^3}\)
+A) \(-\frac{1}{2}\.
+B) \(0\)
+C) \(\frac{1}{2}\)
+D) \(+\infty\)
+Correct Answer: A
+
+Solution:
+Using L'Hopital's rule twice, we differentiate numerator and denominator three times:\[\lim_{{x  → 0}}  \frac{\tan(x) - x}{x^3} = \lim_{{x  → 0}}  \frac{\sec^2(x) - 1}{3x^2} = \lim_{{x  → 0}}  \frac{2\sec^2(x)\tan(x)}{6x} = \lim_{{x  → 0}}  \frac{2\sec^4(x)}{6} = \frac{2}{6} = \frac{1}{3}\]
+
+Explanation:
+The limit evaluates to \(\frac{1}{3}\) because the numerator approaches 0 and the denominator approaches a constant, making the limit indeterminate. Applying L'Hopital's rule twice simplifies the problem to finding the limit of a rational function that can be evaluated directly.
+
+Common mistake note:
+A common mistake would be to stop after applying L'Hopital's rule once, which would lead to the limit being  \(\frac{2}{6} = \frac{1}{3}\) instead of the correct answer. It is important to continue differentiating until the limit becomes non-indeterminate.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Find the limit: \(\lim_{{x  → 0}}  \frac{\sin(x)^2 - x^2}{x^4}\)
+A) \(-\frac{1}{3}\.
+B) \(0\)
+C) \(\frac{1}{3}\)
+D) \(+\infty\)
+Correct Answer: A
+
+Solution:
+Using L'Hopital's rule twice, we differentiate numerator and denominator four times:\[\lim_{{x  → 0}}  \frac{\sin(x)^2 - x^2}{x^4} = \lim_{{x  → 0}}  \frac{2\sin(x)\cos(x) - 2x}{4x^3} = \lim_{{x  → 0}}  \frac{2\cos^2(x) - 2}{12x^2} = \lim_{{x  → 0}}  \frac{-4\sin(x)\cos(x)}{24x} = \lim_{{x  → 0}}  \frac{-2\sin(2x)}{24} = -\frac{1}{3}\]
+
+Explanation:
+The limit evaluates to \(-\frac{1}{3}\) because the numerator approaches 0 and the denominator approaches a constant, making the limit indeterminate. Applying L'Hopital's rule twice simplifies the problem to finding the limit of a rational function that can be evaluated directly.
+
+Common mistake note:
+A common mistake would be to stop after applying L'Hopital's rule once or twice, which would lead to an incorrect limit. It is important to continue differentiating until the limit becomes non-indeterminate.
+------------------------------------------------------------------------------

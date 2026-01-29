@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.8.14 Use in trajectory analysis
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.8 Conic Section Classification
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (OneStepLinearTrajectory):
+A particle moves along a straight line, covering 2 meters in the first second and 3 meters in the second second. What is the average velocity of the particle over these two seconds?
+A) 1 m/s
+B) 2 m/s
+C) 2.5 m/s
+D) 5 m/s
+Correct Answer: C
+
+Solution:
+The total distance covered in two seconds is 2 meters + 3 meters = 5 meters. The average velocity is the total distance divided by the time interval, which is 5 meters / 2 seconds = 2.5 m/ s.
+
+Explanation:
+Average velocity is calculated as the total displacement over a given time period. In this case, the particle's displacement is equal to its total distance traveled.
+
+Common mistake note:
+A common mistake would be to divide by the number of steps (2) instead of the total time (2 seconds), which would result in choice A (1 m/s). This approach calculates the average speed per step rather than the overall velocity.
+------------------------------------------------------------------------------
+
+Problem 2 (ConstantAcceleration):
+An object starts from rest and accelerates uniformly, covering 4 meters in the first second and 6 meters in the second second. What is the acceleration of the object?
+A) 1 m/s^2
+B) 2 m/s^2
+C) 3 m/s^2
+D) 4 m/s^2
+Correct Answer: A
+
+Solution:
+The change in velocity can be found by comparing the velocities at the end of each second. In the first second, the object goes from 0 m/s to approximately 4/1 = 4 m/s (assuming constant acceleration). In the second second, it covers an additional 2 meters, so its final velocity is around 6/1 = 6 m/s. The average acceleration over these two seconds is (6 m/s - 4 m/s) / 2 s = 1 m/s^2.
+
+Explanation:
+To find the acceleration, we can use the formula Δv = aΔt, where Δv is the change in velocity and Δt is the time interval. Since the object starts from rest, its initial velocity is 0.
+
+Common mistake note:
+A common mistake would be to calculate the average of the accelerations between each step (1 m/s^2 and 2 m/s^2), which would result in choice B (1.5 m/s^2). However, this approach assumes non-uniform acceleration, whereas the problem states uniform acceleration.
+------------------------------------------------------------------------------
+
+Problem 3 (FreeFallTrajectory):
+An object falls from rest under gravity for two seconds. Assuming a constant acceleration due to gravity of 9.8 m/s^2, how far has it fallen by the end of the second second?
+A) 9.8 meters
+B) 14.7 meters
+C) 19.6 meters
+D) 29.4 meters
+Correct Answer: B
+
+Solution:
+The distance an object falls under constant acceleration can be calculated using the equation: d = 0.5at^2, where d is the distance, a is the acceleration (in this case, gravity), and t is the time. For two seconds, t = 2 s, so d = 0.5 × 9.8 m/s^2 × (2 s)^2 = 14.7 meters.
+
+Explanation:
+The problem involves free fall, which follows the equation for uniformly accelerated motion with an acceleration due to gravity.
+
+Common mistake note:
+A common mistake would be to use the formula for average velocity (d = vt) and multiply the acceleration by time directly, which would result in choice C (19.6 meters). This approach assumes constant velocity, whereas the problem involves constant acceleration.
+------------------------------------------------------------------------------
+
+Problem 4 (UniformCircularMotion):
+An object moves along a circular path with a radius of 3 meters at a constant speed of 5 m/s. What is the centripetal acceleration of the object?
+A) 2 m/s^2
+B) 4 m/s^2
+C) 6 m/s^2
+D) 8 m/s^2
+Correct Answer: C
+
+Solution:
+The centripetal acceleration is given by the equation: a_c = v^2 / r, where a_c is the centripetal acceleration, v is the linear velocity, and r is the radius of the circular path. Plugging in the values, we get a_c = (5 m/s)^2 / 3 m = 6.7 m/s^2, which rounds to 6 m/s^2.
+
+Explanation:
+Centripetal acceleration is the acceleration an object experiences while moving in a circle and is directed towards the center of the circle.
+
+Common mistake note:
+A common mistake would be to divide the linear velocity by the radius (5 m/s / 3 m), which would result in choice A (1.7 m/s^2). This approach calculates the tangential acceleration, not the centripetal acceleration.
+------------------------------------------------------------------------------
+
+Problem 5 (ProjectileMotion):
+An object is thrown vertically upwards with an initial velocity of 20 m/s. At what height does it reach its maximum altitude?
+A) 10 meters
+B) 20 meters
+C) 40 meters
+D) 60 meters
+Correct Answer: B
+
+Solution:
+The maximum height reached by an object thrown vertically upwards can be calculated using the equation: h = (v_0^2sin^2θ) / (2g), where h is the height, v_0 is the initial velocity, θ is the angle of projection (in this case, 90° for a vertical throw), and g is the acceleration due to gravity. Since θ = 90°, sin(90°) = 1, so h = (20 m/s)^2 / (2 × 9.8 m/s^2) ≈ 20 meters.
+
+Explanation:
+The problem involves projectile motion with an initial vertical velocity. The maximum height is reached when the object momentarily stops before falling back down.
+
+Common mistake note:
+A common mistake would be to use the formula for the total time of flight (h = v_0sinθ × t), which would result in a different value for the height. This approach calculates the distance traveled, not the maximum altitude.
+------------------------------------------------------------------------------
+
+Problem 6 (RectilinearMotion):
+An object moves along a straight line with an initial velocity of 10 m/s and constant acceleration of 2 m/s^2. After 5 seconds, what is its final velocity?
+A) 15 m/s
+B) 20 m/s
+C) 25 m/s
+D) 30 m/s
+Correct Answer: C
+
+Solution:
+The change in velocity can be calculated using the equation: Δv = aΔt, where Δv is the change in velocity, a is the acceleration, and t is the time. After 5 seconds, Δv = 2 m/s^2 × 5 s = 10 m/s. Adding this to the initial velocity gives the final velocity: v_f = v_0 + Δv = 10 m/s + 10 m/s = 20 m/s.
+
+Explanation:
+The problem involves rectilinear motion with a constant acceleration. The final velocity can be found by adding the change in velocity to the initial velocity.
+
+Common mistake note:
+A common mistake would be to multiply the acceleration by time directly, which would result in choice D (30 m/s). This approach assumes constant velocity, whereas the problem involves constant acceleration.
+------------------------------------------------------------------------------
+
+Problem 7 (UniformlyAcceleratedMotion):
+An object starts from rest and accelerates uniformly, covering a distance of 12 meters in the first second and 18 meters in the second second. What is the total distance covered by the object after 4 seconds?
+A) 30 meters
+B) 36 meters
+C) 42 meters
+D) 48 meters
+Correct Answer: C
+
+Solution:
+The average velocity for each second can be calculated as the distance covered divided by time. For the first two seconds, the average velocities are 12 m/s and 9 m/s, respectively. Since acceleration is uniform, the object's velocity increases linearly. The total distance after 4 seconds can be found by summing up the distances covered in each second: d = (12 m + 18 m) + (18 m + 15 m) = 42 meters.
+
+Explanation:
+The problem involves uniformly accelerated motion, where the object's velocity increases at a constant rate. The total distance can be calculated by summing up the distances covered in each second using the average velocities.
+
+Common mistake note:
+A common mistake would be to assume that the acceleration remains constant for all 4 seconds and use the formula for uniformly accelerated motion (d = v_0t + 0.5at^2), which would result in a different value for the distance. This approach assumes a constant velocity increase, whereas the problem involves a constant acceleration.
+------------------------------------------------------------------------------

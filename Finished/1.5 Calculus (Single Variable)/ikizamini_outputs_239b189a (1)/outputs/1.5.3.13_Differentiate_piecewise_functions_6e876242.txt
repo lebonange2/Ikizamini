@@ -1,0 +1,162 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.3.13 Differentiate piecewise functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.3 Derivatives - Advanced Rules
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IncreasingInterval):
+Find the interval on which the function f(x) =
+-2x + 4 for x < 1
+3x - 5 for x >= 1
+is increasing.
+A) (1, ∞)
+B) (-∞, 1)
+C) (-∞, ∞)
+D) No interval
+Correct Answer: A
+
+Solution:
+The derivative of f(x) is:
+-2 for x < 1
+3 for x >= 1
+The function is increasing where the derivative is positive. Thus, it's increasing on (1, ∞).
+
+Explanation:
+The piecewise function changes its behavior at x = 1. We need to check the derivative in each interval.
+
+Common mistake note:
+A common mistake is to forget to consider both intervals or to assume that the entire domain is increasing.
+------------------------------------------------------------------------------
+
+Problem 2 (DecreasingPoint):
+Find the point where the function g(x) =
+-5x + 2 for x < -1
+4x - 3 for x >= -1
+changes from decreasing to increasing.
+A) (-1, -3)
+B) (0, 7)
+C) (-1, 1)
+D) No point
+Correct Answer: C
+
+Solution:
+The derivative of g(x) is:
+-5 for x < -1
+4 for x >= -1
+g(x) changes from decreasing to increasing when the derivative changes from negative to positive. This happens at x = -1, so the point is (-1, 1).
+
+Explanation:
+The piecewise function changes its behavior at x = -1. We need to find where the derivative changes sign.
+
+Common mistake note:
+A common mistake is to confuse the point of change with a specific value in the domain.
+------------------------------------------------------------------------------
+
+Problem 3 (DomainRange):
+Find the domain and range of the piecewise function h(x) =
+|2x - 3| for x < 2
+x^2 - 1 for x >= 2.
+A) Domain: (-∞, ∞), Range: [0, ∞)
+B) Domain: (-∞, 2), Range: [0, ∞)
+C) Domain: (-∞, ∞), Range: [0, ∞) ∪ (-∞, -1]
+D) Domain: (-∞, 2], Range: [0, ∞)
+Correct Answer: C
+
+Solution:
+The domain of h(x) is all real numbers because there are no restrictions. The range for x < 2 is 0 to ∞ (absolute value), and for x >= 2 it's [-1, ∞) (quadratic). Combining the ranges gives [0, ∞) ∪ (-∞, -1].
+
+Explanation:
+The domain of a piecewise function is the union of the domains of each part. The range is found by considering the individual parts separately.
+
+Common mistake note:
+A common mistake is to forget that the absolute value function has a non-negative range.
+------------------------------------------------------------------------------
+
+Problem 4 (InterceptIntersection):
+Find the x-intercept(s) of the piecewise function j(x) =
+3x - 4 for x < 1
+2x + 1 for x >= 1.
+A) (0, 0), (1, 5)
+B) (1/3, 0), (1, 3)
+C) (4/3, 0), (1, 3)
+D) No x- intercept
+Correct Answer: C
+
+Solution:
+To find the x-intercepts, we set each piece equal to zero:
+For 3x - 4 = 0, x = 4/3
+For 2x + 1 = 0, x = -1/2 (not in the domain)
+So, the only x-intercept is at (4/3, 0).
+
+Explanation:
+We need to find the roots of each piece separately and consider their domains.
+
+Common mistake note:
+A common mistake is to forget to check the domain or assume that both pieces have an x-intercept.
+------------------------------------------------------------------------------
+
+Problem 5 (VerticalAsymptote):
+Find the vertical asymptote(s) of the function k(x) =
+(2x + 1)/(x - 3) for x < 3
+(x - 4)/(x - 3) for x >= 3.
+A) x = 3
+B) x = -3
+C) No vertical asymptote
+D) x = 4
+Correct Answer: A
+
+Solution:
+Vertical asymptotes occur when the denominator is zero. In this case, the common denominator x - 3 makes x = 3 a vertical asymptote for both pieces.
+
+Explanation:
+We look for where the denominators of each piece become zero and consider their domains.
+
+Common mistake note:
+A common mistake is to assume that the vertical asymptote changes when the function changes.
+------------------------------------------------------------------------------
+
+Problem 6 (HorizontalAsymptote):
+Find the horizontal asymptote(s) of the function l(x) =
+x^2 + 3 for x < 0
+x - 1 for x >= 0.
+A) y = 1
+B) y = -3
+C) No horizontal asymptote
+D) y = 0
+Correct Answer: C
+
+Solution:
+For x^2 + 3, the degree of the numerator is greater than the denominator, so there's no horizontal asymptote. For x - 1, the horizontal asymptote is y = 1 (the line approaches as x increases). However, since we're looking for a common horizontal asymptote, the answer is none.
+
+Explanation:
+We consider the degree of the numerator and denominator in each piece to determine if there's a horizontal asymptote.
+
+Common mistake note:
+A common mistake is to assume that the horizontal asymptote changes when the function changes.
+------------------------------------------------------------------------------
+
+Problem 7 (IntersectionPoint):
+Find the point(s) of intersection between the functions m(x) =
+2x + 1 for x < 0
+-x^2 + 3 for x >= 0,
+and n(x) = x - 2.
+A) (1, -1), (-1, -3)
+B) (-1, 1), (1, 1)
+C) No intersection point
+D) (-1, 1), (0, -2)
+Correct Answer: B
+
+Solution:
+To find the intersection points, we set m(x) = n(x):
+For x < 0: 2x + 1 = x - 2 => x = -3
+For x >= 0: -x^2 + 3 = x - 2 => x = -1 (not in the domain)
+or x = 5 (in the domain)
+So, the intersection points are (-1, 1) and (5, 3), but we only consider the one in the shared domain of both functions: (-1, 1).
+
+Explanation:
+We set m(x) equal to n(x) for each piece separately and check their domains.
+
+Common mistake note:
+A common mistake is to forget to check the domain or assume that both pieces intersect at the same point.
+------------------------------------------------------------------------------

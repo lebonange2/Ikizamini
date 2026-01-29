@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.5",
+  "objective_text": "Apply Schwarz-Christoffel transformation",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Find the conformal map that transforms the upper half-plane onto a rectangle with vertices at -1, 1, 1+i, and -1+i. Which of the following is the correct Schwarz-Christoffel formula?",
+      "choices": {
+        "A": "f(z) = \frac{A}{2} \times \frac{\theta}{\tan(\theta)} + B",
+        "B": "f(z) = A \times \frac{K(k')}{2\text{K}(k)} \times F(\frac{\theta}{2}, k') + C",
+        "C": "f(z) = A \times \text{sn}(\theta, k) + B",
+        "D": "f(z) = A \times \text{cn}(\theta, k) + B"
+      },
+      "correct_choice": "B",
+      "solution": "The correct Schwarz-Christoffel formula for mapping the upper half-plane to a rectangle with given vertices is given by option B. The other options are not suitable for this transformation: A is a simple rational function, C uses the Jacobi sn function which maps to an ellipse, and D uses the Jacobi cn function which also maps to an ellipse.",
+      "explanation": "The Schwarz-Christoffel transformation involving elliptic integrals is used when mapping to polygons or rectangles. Option B represents this type of transformation.",
+      "common_mistake_notes": "A common mistake is to choose A, which is a simple rational function and not suitable for mapping to a rectangle. Another mistake might be selecting C or D, which use Jacobi functions that map to ellipses rather than rectangles."
+    },
+    {
+      "id": "?",
+      "stem": "Given the conformal map f(z) = \frac{1}{2\text{K}(k)} \times \text{F}(\frac{\theta}{2}, k), where K(k) is the complete elliptic integral of the first kind and F(\theta, k) is the incomplete elliptic integral of the first kind. Which of the following transformations does this map represent?",
+      "choices": {
+        "A": "A rectangle with vertices at -1, 1, 1+ i, and -1+ i",
+        "B": "An equilateral triangle with vertices at 0, 1, and i",
+        "C": "A semicircle centered at the origin",
+        "D": "A sector of a circle with angle \frac{\theta}{2}"
+      },
+      "correct_choice": "A",
+      "solution": "The given conformal map represents a rectangle transformation because it uses the incomplete elliptic integral of the first kind, which is typical for mapping to polygons or rectangles. The parameters in the function indicate that this specific transformation maps the upper half-plane to a rectangle with vertices at -1, 1, 1+ i, and -1+ i.",
+      "explanation": "The Schwarz-Christoffel formula involving elliptic integrals is used for transforming regions into polygons or rectangles. In this case, the parameters in the function suggest a rectangle transformation.",
+      "common_mistake_notes": "A common mistake might be selecting B, which would involve using the Jacobian theta functions instead of elliptic integrals. C and D transformations typically use simpler functions like rational or trigonometric functions."
+    },
+    {
+      "id": "?",
+      "stem": "What is the value of k in the Schwarz-Christoffel formula f(z) = A \times \frac{K(k')}{2\text{K}(k)} \times F(\frac{\theta}{2}, k') for mapping the upper half-plane to a rectangle with vertices at -1, 1, 1+ i, and -1+ i?",
+      "choices": {
+        "A": "0",
+        "B": "rac{1}{2}",
+        "C": "1",
+        "D": "rac{\text{K}(k'')}{\text{K}(k)}"
+      },
+      "correct_choice": "B",
+      "solution": "The value of k in the Schwarz-Christoffel formula for mapping to a rectangle with vertices at -1, 1, 1+ i, and -1+ i is \frac{1}{2}. This specific value corresponds to a rectangle with equal sides and angles.",
+      "explanation": "For a rectangle with vertices at -1, 1, 1+ i, and -1+ i, the modulus k should be set to \frac{1}{2} to ensure that the transformation is correct. Other values of k will result in different shapes or sizes for the rectangle.",
+      "common_mistake_notes": "A common mistake might be selecting A (0), which would result in a degenerate case where the rectangle collapses into a line segment. C (1) corresponds to a semicircle, and D is not a valid expression for k in this context."
+    },
+    {
+      "id": "?",
+      "stem": "Find the conformal map that transforms the unit disk |z| < 1 onto an equilateral triangle with vertices at 0, 1, and i. Which of the following functions represents the correct Schwarz-Christoffel transformation?",
+      "choices": {
+        "A": "f(z) = \frac{A}{2} \times \text{arcsin}(z) + B",
+        "B": "f(z) = A \times \text{sn}(\theta, k) + B",
+        "C": "f(z) = A \times \text{cn}(\theta, k) + B",
+        "D": "f(z) = A \times \text{dn}(\theta, k) + B"
+      },
+      "correct_choice": "B",
+      "solution": "The correct Schwarz-Christoffel transformation for mapping the unit disk to an equilateral triangle is given by option B, using the Jacobi sn function. The other options are not suitable for this specific transformation.",
+      "explanation": "For transforming a unit disk to an equilateral triangle, we use the Jacobi sn function in the Schwarz-Christoffel formula. Option A uses a simple trigonometric function, and C and D involve different Jacobi functions that do not map to an equilateral triangle.",
+      "common_mistake_notes": "A common mistake might be selecting A, which is a simple inverse sine function and does not produce an equilateral triangle. C and D use Jacobi functions that typically result in ellipses or other non-equilateral shapes."
+    },
+    {
+      "id": "?",
+      "stem": "Given the conformal map f(z) = A \times \text{sn}(\theta, k) + B, where sn is the Jacobian elliptic function. Which of the following transformations does this map represent?",
+      "choices": {
+        "A": "An equilateral triangle with vertices at 0, 1, and i",
+        "B": "A rectangle with vertices at -1, 1, 1+ i, and -1+ i",
+        "C": "A sector of a circle with angle \theta",
+        "D": "A semicircle centered at the origin"
+      },
+      "correct_choice": "A",
+      "solution": "The given conformal map represents an equilateral triangle transformation because it uses the Jacobi sn function. This specific function is used for transforming regions into regular polygons.",
+      "explanation": "The use of the Jacobi sn function in a Schwarz-Christoffel formula indicates that the transformation maps to an equilateral triangle. Other options involve different functions or transformations.",
+      "common_mistake_notes": "A common mistake might be selecting B, which would require elliptic integrals instead of the Jacobi sn function. C and D transformations typically use simpler functions like rational or trigonometric functions."
+    },
+    {
+      "id": "?",
+      "stem": "What is the value of k in the Schwarz-Christoffel formula f(z) = A \times \text{sn}(\theta, k) + B for mapping the unit disk |z| < 1 onto an equilateral triangle with vertices at 0, 1, and i?",
+      "choices": {
+        "A": "0",
+        "B": "rac{1}{2}",
+        "C": "1",
+        "D": "rac{\text{K}(k'')}{\text{K}(k)}"
+      },
+      "correct_choice": "C",
+      "solution": "The value of k in the Schwarz-Christoffel formula for mapping to an equilateral triangle with vertices at 0, 1, and i is 1. This specific value corresponds to a regular polygon with equal sides.",
+      "explanation": "For an equilateral triangle with vertices at 0, 1, and i, the modulus k should be set to 1 to ensure that the transformation is correct. Other values of k will result in different shapes or sizes for the triangle.",
+      "common_mistake_notes": "A common mistake might be selecting A (0), which would result in a degenerate case where the triangle collapses into a line segment. B and D are not valid expressions for k in this context."
+    },
+    {
+      "id": "?",
+      "stem": "Find the conformal map that transforms the upper half-plane onto a sector of a circle with central angle \frac{\theta}{2}. Which of the following functions represents the correct Schwarz-Christoffel transformation?",
+      "choices": {
+        "A": "f(z) = A \times \text{arcsin}(z) + B",
+        "B": "f(z) = A \times \frac{\theta}{\tan(\theta)} + B",
+        "C": "f(z) = A \times \text{sn}(\theta, k) + B",
+        "D": "f(z) = A \times \text{cn}(\theta, k) + B"
+      },
+      "correct_choice": "B",
+      "solution": "The correct Schwarz-Christoffel transformation for mapping the upper half-plane to a sector of a circle with central angle \frac{\theta}{2} is given by option B, using a simple rational function. The other options involve more complex functions that are not suitable for this specific transformation.",
+      "explanation": "For transforming the upper half-plane to a sector of a circle, we use a simple rational function in the Schwarz-Christoffel formula. Options C and D involve Jacobi functions typically used for mapping to regular polygons or ellipses, while A uses an inverse sine function that does not produce a sector.",
+      "common_mistake_notes": "A common mistake might be selecting A, which is a simple inverse sine function and does not produce a sector of a circle. C and D use Jacobi functions that typically result in regular polygons or ellipses."
+    }
+  ]
+}

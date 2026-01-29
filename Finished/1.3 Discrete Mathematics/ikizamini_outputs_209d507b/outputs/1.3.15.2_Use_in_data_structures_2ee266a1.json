@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.15.2",
+  "objective_text": "Use in data structures",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asd1",
+      "stem": "What is the main advantage of using a linked list data structure?",
+      "choices": {
+        "A": "Random access to elements",
+        "B": "Maintaining sorted order",
+        "C": "Efficient insertion and deletion",
+        "D": "Optimizing memory for small datasets"
+      },
+      "correct_choice": "C",
+      "solution": "Linked lists excel at frequent insertions and deletions, as they don't require shifting elements like arrays. Random access is not their forte, so option A is incorrect. Maintaining sorted order typically requires a different structure like a binary search tree, making option B wrong. Option D doesn't uniquely apply to linked lists.",
+      "explanation": "Linked lists are dynamic arrays where elements are stored in separate nodes with references to the next node. This enables efficient insertion and deletion at any position without affecting other elements.",
+      "common_mistake_notes": "A common mistake is selecting A, assuming that random access is crucial; linked lists don't support it efficiently."
+    },
+    {
+      "id": "Zxc1",
+      "stem": "Which data structure would you choose for a stack with constant time push and pop operations?",
+      "choices": {
+        "A": "Array",
+        "B": "Linked list",
+        "C": "Binary search tree",
+        "D": "Hash table"
+      },
+      "correct_choice": "B",
+      "solution": "A singly or doubly-linked list is ideal for implementing a stack with O(1) push and pop, as adding or removing elements happens at the head  (LIFO).",
+      "explanation": "Arrays require element shifting, binary search trees need rebalancing, and hash tables are designed for key-value lookups, not constant time stack operations.",
+      "common_mistake_notes": "A common error is picking A, assuming arrays are always best; they don't support constant time push and pop."
+    },
+    {
+      "id": "Qwe1",
+      "stem": "Which data structure efficiently supports insertion and retrieval of the highest priority element in a priority queue?",
+      "choices": {
+        "A": "Array",
+        "B": "Linked list",
+        "C": "Binary heap",
+        "D": "Hash table"
+      },
+      "correct_choice": "C",
+      "solution": "A binary heap is commonly used for priority queues, offering O(log n) time complexity for insertion and removal of the highest priority element  (root).",
+      "explanation": "Arrays and linked lists don't guarantee efficient access to the highest priority. Hash tables are designed for key-value lookups, not priority-based operations.",
+      "common_mistake_notes": "A common misconception is selecting A or B; they cannot efficiently manage priorities."
+    },
+    {
+      "id": "Rty1",
+      "stem": "Which data structure is best for storing a large number of unique elements with fast membership testing?",
+      "choices": {
+        "A": "Array",
+        "B": "Linked list",
+        "C": "Set  (e.g., hash set)",
+        "D": "Tree  (e.g., binary search tree)"
+      },
+      "correct_choice": "C",
+      "solution": "A set, like a hash set, is designed for fast membership tests and ensures uniqueness. It typically provides O(1) average time complexity for insertion and deletion.",
+      "explanation": "Arrays and linked lists don't guarantee constant time testing. Trees may have slower operations compared to a hash set.",
+      "common_mistake_notes": "A common oversight is picking A or B; they are not optimized for membership tests."
+    },
+    {
+      "id": "Uio1",
+      "stem": "Which data structure enables constant time enqueue and dequeue in a queue?",
+      "choices": {
+        "A": "Array",
+        "B": "Linked list",
+        "C": "Circular array",
+        "D": "Graph"
+      },
+      "correct_choice": "C",
+      "solution": "A circular array is suitable for implementing a queue with O(1) enqueue and dequeue. Enqueue at the tail, dequeue at the head, wrapping around if needed.",
+      "explanation": "Arrays without circular structure require shifting, linked lists have better insertion but not efficient dequeue, and graphs aren't designed for queue operations.",
+      "common_mistake_notes": "A common confusion is choosing A or B; they don't support constant time queue operations."
+    },
+    {
+      "id": "Poi1",
+      "stem": "Which data structure represents a hierarchical relationship with parent-child connections?",
+      "choices": {
+        "A": "Array",
+        "B": "Linked list",
+        "C": "Tree  (e.g., binary tree)",
+        "D": "Graph"
+      },
+      "correct_choice": "C",
+      "solution": "A tree data structure, like a binary or general tree, represents nodes with zero or more child nodes and one parent node.",
+      "explanation": "Arrays and linked lists don't support the parent-child relationship. Graphs are more general and may be less efficient for tree operations.",
+      "common_mistake_notes": "A common misconception is selecting D; graphs are broader and might not be as efficient for tree hierarchies."
+    },
+    {
+      "id": "Lkm1",
+      "stem": "Which data structure allows for fast retrieval of values based on keys?",
+      "choices": {
+        "A": "Array",
+        "B": "Linked list",
+        "C": "Hash table",
+        "D": "Binary search tree"
+      },
+      "correct_choice": "C",
+      "solution": "A hash table efficiently retrieves values by keys using a hash function to map keys to array indices. It typically provides O(1) average time complexity for operations.",
+      "explanation": "Arrays and linked lists don't guarantee fast key-based retrieval. Binary search trees may be slower compared to a hash table.",
+      "common_mistake_notes": "A common confusion is picking D; binary search trees are optimized for sorted order, not direct key access."
+    }
+  ]
+}

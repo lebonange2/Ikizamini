@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.13.7",
+  "objective_text": "Sketch quadric surfaces",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Sketch the surface defined by the equation: x^2 + y^2 - z^2 = 1",
+      "choices": {
+        "A": "Ellipsoid",
+        "B": "Hyperboloid of one sheet",
+        "C": "Paraboloid",
+        "D": "Hyperboloid of two sheets"
+      },
+      "correct_choice": "B",
+      "solution": "The equation represents a hyperboloid of one sheet when k > 0. Sketch the surface accordingly.",
+      "explanation": "An ellipsoid has positive coefficients for all variables; a paraboloid has only one variable squared on one side; and a hyperboloid of two sheets has k < 0.",
+      "common_mistake_notes": "Common mistake: Choosing A (ellipsoid) because it's the most familiar quadric surface. Remember to check the signs of the coefficients."
+    },
+    {
+      "id": "Two",
+      "stem": "Sketch the surface defined by the equation: x^2 + y^2 - z^2 = 0",
+      "choices": {
+        "A": "Ellipsoid",
+        "B": "Hyperboloid of one sheet",
+        "C": "Paraboloid",
+        "D": "Plane"
+      },
+      "correct_choice": "D",
+      "solution": "The equation simplifies to (x^2 + y^2) = z^2, which represents two parallel planes when set equal to zero. Sketch the planes.",
+      "explanation": "An ellipsoid has positive coefficients for all variables; a hyperboloid requires at least one variable squared on each side; and a paraboloid has only one variable squared.",
+      "common_mistake_notes": "Common mistake: Choosing B (hyperboloid of one sheet) because it's similar to the previous question. However, setting the equation equal to zero eliminates the hyperbolic behavior."
+    },
+    {
+      "id": "Three",
+      "stem": "Sketch the surface defined by the equation: x^2 + y^2 = 4z",
+      "choices": {
+        "A": "Ellipsoid",
+        "B": "Hyperboloid of one sheet",
+        "C": "Paraboloid (vertical)",
+        "D": "Cylinder"
+      },
+      "correct_choice": "C",
+      "solution": "The equation represents a vertical paraboloid opening upwards. Sketch the paraboloid.",
+      "explanation": "An ellipsoid has all variables squared and positive coefficients; a hyperboloid requires at least one variable squared on each side; and a cylinder does not have z as a quadratic term.",
+      "common_mistake_notes": "Common mistake: Choosing D (cylinder) because it's similar to the previous question. However, the presence of z^2 indicates a paraboloidal shape."
+    },
+    {
+      "id": "Four",
+      "stem": "Sketch the surface defined by the equation: x^2 + y^2 = 9 - z^2",
+      "choices": {
+        "A": "Ellipsoid",
+        "B": "Hyperboloid of one sheet",
+        "C": "Paraboloid (horizontal)",
+        "D": "Sphere"
+      },
+      "correct_choice": "D",
+      "solution": "The equation represents a sphere with radius 3. Sketch the sphere.",
+      "explanation": "An ellipsoid has all variables squared and positive coefficients; a hyperboloid requires at least one variable squared on each side; and a paraboloid does not have z^2 as part of the quadratic term.",
+      "common_mistake_notes": "Common mistake: Choosing C (horizontal paraboloid) because of the form x^2 + y^2, but the presence of z^2 indicates a spherical shape."
+    },
+    {
+      "id": "Five",
+      "stem": "Sketch the surface defined by the equation: x^2 - y^2 = z",
+      "choices": {
+        "A": "Ellipsoid",
+        "B": "Hyperboloid of two sheets",
+        "C": "Paraboloid (vertical)",
+        "D": "Hyperboloid of one sheet"
+      },
+      "correct_choice": "B",
+      "solution": "The equation represents a hyperboloid of two sheets. Sketch the oblique hyperboloid.",
+      "explanation": "An ellipsoid has all variables squared and positive coefficients; a paraboloid requires only one variable squared; and a hyperboloid of one sheet has z^2 instead of z.",
+      "common_mistake_notes": "Common mistake: Choosing D (hyperboloid of one sheet) because it's similar to the previous question. However, the lack of z^2 indicates a different type of hyperboloid."
+    },
+    {
+      "id": "Six",
+      "stem": "Sketch the surface defined by the equation: x^2 + y^2 + z^2 = 4",
+      "choices": {
+        "A": "Ellipsoid",
+        "B": "Hyperboloid of one sheet",
+        "C": "Paraboloid (horizontal)",
+        "D": "Cone"
+      },
+      "correct_choice": "A",
+      "solution": "The equation represents an ellipsoid with radii 2, 2, and 2. Sketch the ellipsoid.",
+      "explanation": "A hyperboloid requires at least one variable squared on each side; a paraboloid does not have all variables squared; and a cone has only two variables squared.",
+      "common_mistake_notes": "Common mistake: Choosing D (cone) because of the form x^2 + y^2, but the presence of z^2 indicates an ellipsoidal shape."
+    },
+    {
+      "id": "Seven",
+      "stem": "Sketch the surface defined by the equation: x^2 - z^2 = 4y",
+      "choices": {
+        "A": "Ellipsoid",
+        "B": "Hyperboloid of two sheets",
+        "C": "Paraboloid (vertical)",
+        "D": "Hyperboloid of one sheet"
+      },
+      "correct_choice": "B",
+      "solution": "The equation represents a hyperboloid of two sheets. Sketch the oblique hyperboloid.",
+      "explanation": "An ellipsoid has all variables squared and positive coefficients; a paraboloid requires only one variable squared; and a hyperboloid of one sheet has y^2 instead of y.",
+      "common_mistake_notes": "Common mistake: Choosing D (hyperboloid of one sheet) because it's similar to the previous question. However, the lack of z^2 indicates a different type of hyperboloid."
+    }
+  ]
+}

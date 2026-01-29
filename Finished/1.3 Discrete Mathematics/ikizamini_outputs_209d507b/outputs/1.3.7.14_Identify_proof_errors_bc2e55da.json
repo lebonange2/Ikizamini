@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.7.14",
+  "objective_text": "Identify proof errors",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "In a proof by contrapositive, which statement is true?",
+      "choices": {
+        "A": "The conclusion is assumed to be false and the hypothesis is proven.",
+        "B": "Both the conclusion and the hypothesis are assumed to be true.",
+        "C": "The hypothesis is assumed to be false and the conclusion is proven.",
+        "D": "The conclusion is assumed to be true and the hypothesis is disproven."
+      },
+      "correct_choice": "C",
+      "solution": "In a proof by contrapositive, we assume the negation of the hypothesis (hypothesis is false) and then prove the negation of the conclusion. Therefore, choice C is correct.",
+      "explanation": "Proof by contrapositive is a method where we show that if the opposite of the conclusion is true, then the opposite of the hypothesis must also be true. This effectively proves the original statement.",
+      "common_mistake_notes": "Confusing proof by contradiction with proof by contrapositive; in proof by contradiction, both the hypothesis and conclusion are assumed false, which isn't done in a proof by contrapositive."
+    },
+    {
+      "id": "2",
+      "stem": "In a direct proof, what is the general approach?",
+      "choices": {
+        "A": "Assume the conclusion is true and derive the hypothesis.",
+        "B": "Assume both the conclusion and the hypothesis are false and find a contradiction.",
+        "C": "Assume the hypothesis is true and derive the conclusion.",
+        "D": "Assume the negation of the conclusion is true and prove the negation of the hypothesis."
+      },
+      "correct_choice": "C",
+      "solution": "In a direct proof, we start by assuming the hypothesis is true and then logically deduce the conclusion. Choice C accurately describes this approach.",
+      "explanation": "Direct proofs are straightforward; they establish the truth of a statement by using logical steps from known facts or axioms to reach the desired conclusion.",
+      "common_mistake_notes": "Confusing direct proof with proof by contrapositive, where we assume the negation of the hypothesis instead."
+    },
+    {
+      "id": "3",
+      "stem": "What is an example of a common error in mathematical proofs involving algebraic manipulations?",
+      "choices": {
+        "A": "Forgetting to divide both sides of an equation by the same non-zero number.",
+        "B": "Using the distributive property incorrectly on a negative term.",
+        "C": "Neglecting to consider the domain when simplifying expressions with square roots.",
+        "D": "All of the above."
+      },
+      "correct_choice": "D",
+      "solution": "All four options (A, B, C) represent common errors in algebraic manipulations within proofs. Therefore, choice D is correct.",
+      "explanation": "Mathematical proofs involving algebra can be prone to mistakes such as forgetting to apply operations to both sides of an equation, misusing properties like the distributive property, and overlooking domain restrictions when simplifying expressions.",
+      "common_mistake_notes": "Focusing on only one type of error and missing others that may also occur in algebraic proofs."
+    },
+    {
+      "id": "4",
+      "stem": "In a proof by induction, what is the first step?",
+      "choices": {
+        "A": "Prove the base case for n = 1.",
+        "B": "Assume the statement is true for all positive integers up to k and prove it for k + 1.",
+        "C": "Show that the statement is false for some specific value of n.",
+        "D": "Derive a general formula for the nth term in the sequence."
+      },
+      "correct_choice": "A",
+      "solution": "The first step in proof by induction is to establish the base case, usually for n = 1 or n = 0. Choice A correctly identifies this initial step.",
+      "explanation": "Proof by induction involves proving a statement for a base case and then showing that if it's true for some arbitrary k, it must also be true for k + 1, thus establishing the truth for all positive integers.",
+      "common_mistake_notes": "Skipping or incorrectly stating the base case."
+    },
+    {
+      "id": "5",
+      "stem": "Which of the following is an example of circular reasoning in a proof?",
+      "choices": {
+        "A": "Proving that A implies B by showing that B implies A.",
+        "B": "Using the Pythagorean theorem to prove the Pythagorean theorem.",
+        "C": "Assuming the conclusion in the hypothesis while proving the statement.",
+        "D": "All of the above."
+      },
+      "correct_choice": "D",
+      "solution": "Circular reasoning occurs when a proof relies on an argument that assumes what it is trying to prove. All three options (A, B, C) represent circular reasoning. Choice D is correct.",
+      "explanation": "Circular reasoning is fallacious because it does not establish the truth of a statement; instead, it merely restates or rephrases it without providing new evidence.",
+      "common_mistake_notes": "Not recognizing when an argument is simply repeating or rewording the same information without progression."
+    },
+    {
+      "id": "6",
+      "stem": "What error would occur if a proof by exhaustion were attempted on an infinite set?",
+      "choices": {
+        "A": "The proof would be incomplete because it's impossible to check every element.",
+        "B": "The proof would be invalid because infinity is not a real number.",
+        "C": "The proof would be correct, as infinity can be handled mathematically.",
+        "D": "The proof would be too long and impractical, but logically sound."
+      },
+      "correct_choice": "A",
+      "solution": "Proof by exhaustion involves considering every possible case in a finite set. Attempting it on an infinite set leads to an incomplete proof because it's impossible to check all elements. Choice A is correct.",
+      "explanation": "Proof by exhaustion relies on the finiteness of the cases being considered; when dealing with infinity, this method becomes unfeasible.",
+      "common_mistake_notes": "Assuming that proof by exhaustion can be applied to infinite sets without considering the implications of infinity."
+    },
+    {
+      "id": "7",
+      "stem": "In a proof involving logical connectives, what error might occur if one forgets to distribute a quantifier?",
+      "choices": {
+        "A": "The proof would become invalid due to a double-negative fallacy.",
+        "B": "The conclusion could be proven true even when the hypothesis is false.",
+        "C": "The proof would be correct as long as the rest of the logic is sound.",
+        "D": "The proof might lead to a contradiction, making it incorrect."
+      },
+      "correct_choice": "B",
+      "solution": "Failing to distribute a quantifier can result in an incorrect proof where the conclusion may be proven true even when the hypothesis is false. Choice B accurately describes this error.",
+      "explanation": "Quantifiers like 'for all' and 'there exists' must be distributed properly throughout logical statements to ensure that the proof's logic remains sound.",
+      "common_mistake_notes": "Misapplying quantifiers, leading to incorrect implications or conclusions."
+    }
+  ]
+}

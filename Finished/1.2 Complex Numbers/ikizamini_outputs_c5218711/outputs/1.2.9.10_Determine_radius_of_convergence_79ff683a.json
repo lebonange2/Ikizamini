@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.9.10",
+  "objective_text": "Determine radius of convergence",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the radius of convergence for the series: ∑(n=1 to infinity) (x^n)/(n^2)",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "∞"
+      },
+      "correct_choice": "B",
+      "solution": "The ratio test is used to find the radius of convergence. The limit formula is lim (n→∞) |a_n+1/a_n|, where a_n is x^n/n^2. For this problem: lim (n→∞) |(x^(n+1)/(n+1)^2) / (x^n/n^2)| = |x| * lim (n→∞) (n^2/(n+1)^2). As n approaches infinity, the limit becomes 1. The radius of convergence R is |x| < 1, so R = 1.",
+      "explanation": "The ratio test determines the interval of convergence. Here, it shows that the series converges when |x| < 1.",
+      "common_mistake_notes": "A common mistake is to set the limit directly to x without applying the ratio test."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the radius of convergence for the series: ∑(n=1 to infinity) (-3)^n * (x-4)^n",
+      "choices": {
+        "A": "1",
+        "B": "3",
+        "C": "5",
+        "D": "∞"
+      },
+      "correct_choice": "B",
+      "solution": "The ratio test is applied. a_n = (-3)^n * (x-4)^n. The limit formula gives: lim (n→∞) |(-3)^(n+1) * (x-4)^(n+1)/(-3)^n * (x-4)^n| = |-3| * |x-4|. For convergence, this limit must be less than 1: |-3| * |x-4| < 1. Simplifying gives |x-4| < 1/3. The radius of convergence is R = 1/3.",
+      "explanation": "The ratio test helps determine the interval of convergence. Here, it shows that the series converges within a range around x=4.",
+      "common_mistake_notes": "A common mistake is to assume the base -3 affects the sign of the radius."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the radius of convergence for the series: ∑(n=1 to infinity) (2^(n^2)) * x^n",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "∞"
+      },
+      "correct_choice": "D",
+      "solution": "The root test is more appropriate. a_n = 2^(n^2) * x^n. The limit formula gives: lim (n→∞) |2^(n^2) * x^n|^(1/n) = lim (n→∞) 2^(n^2/n) * |x|. As n approaches infinity, 2^(n^2/n) → 1. Thus, the limit is |x| * 1 = |x|. Since no value of x makes this limit ≥ 1, R = ∞.",
+      "explanation": "The root test is useful for rapidly growing terms. Here, it shows that the series converges for all x.",
+      "common_mistake_notes": "A common mistake is to use the ratio test instead."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the radius of convergence for the series: ∑(n=1 to infinity) (x^n/n!)",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "e",
+        "D": "∞"
+      },
+      "correct_choice": "D",
+      "solution": "The ratio test is applied. a_n = x^n/n!. The limit formula gives: lim (n→∞) |(x^(n+1)/(n+1)!) / (x^n/n!)| = |x| * lim (n→∞) 1/(n+1). As n approaches infinity, the limit becomes 0. R = ∞ since any x satisfies this condition.",
+      "explanation": "The ratio test helps with factorial terms. Here, it shows that the series converges for all x.",
+      "common_mistake_notes": "A common mistake is to assume a finite radius due to n!."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the radius of convergence for the series: ∑(n=1 to infinity) (x^(3n))/n^3",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "√3",
+        "D": "∞"
+      },
+      "correct_choice": "C",
+      "solution": "The ratio test is used. a_n = x^(3n)/n^3. The limit formula gives: lim (n→∞) |x^3 * (n^3/(n+1)^3)| = |x|^3 * lim (n→∞) 1/(n+1)^2. As n approaches infinity, the limit becomes 1. R = √3 since |x|^3 < 1.",
+      "explanation": "The ratio test helps with variable exponents. Here, it shows convergence for |x| < √3.",
+      "common_mistake_notes": "A common mistake is to set the limit directly to |x|^3."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the radius of convergence for the series: ∑(n=1 to infinity) (sin(n))^n * x^n",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "π",
+        "D": "∞"
+      },
+      "correct_choice": "A",
+      "solution": "The root test is more appropriate. a_n = (sin(n))^n * x^n. The limit formula gives: lim (n→∞) |(sin(n))^n * x^n|^(1/n) = |x| * lim (n→∞) |sin(n)|. Since sin(n) oscillates, the limit doesn't exist. R = 0.",
+      "explanation": "The root test helps with trigonometric terms. Here, it shows that the series diverges for all x.",
+      "common_mistake_notes": "A common mistake is to assume convergence based on the sine function."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the radius of convergence for the series: ∑(n=1 to infinity) (x^(2n))/n^4",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "√2",
+        "D": "∞"
+      },
+      "correct_choice": "C",
+      "solution": "The ratio test is used. a_n = x^(2n)/n^4. The limit formula gives: lim (n→∞) |x^2 * (n^4/(n+1)^4)| = |x|^2 * lim (n→∞) 1/(n+1)^2. As n approaches infinity, the limit becomes 1. R = √2 since |x|^2 < 1.",
+      "explanation": "The ratio test helps with variable exponents. Here, it shows convergence for |x| < √2.",
+      "common_mistake_notes": "A common mistake is to set the limit directly to |x|^2."
+    }
+  ]
+}

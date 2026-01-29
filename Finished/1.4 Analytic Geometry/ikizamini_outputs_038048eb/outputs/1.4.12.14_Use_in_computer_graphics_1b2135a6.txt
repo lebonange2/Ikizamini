@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.12.14 Use in computer graphics
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.12 Transformations in the Plane
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Andromeda Galaxy Rendering):
+Which technique is commonly used in computer graphics for rendering detailed images of the Andromeda Galaxy?
+A) Ray tracing
+B) Rasterization
+C) Shadow mapping
+D) Normal mapping
+Correct Answer: A
+
+Solution:
+Ray tracing simulates light interactions, making it suitable for complex scenes like galaxies. Rasterization is faster but less detailed.
+
+Explanation:
+Rasterization is used for real-time graphics, shadow mapping creates shadows, and normal mapping adds surface detail without extra polygons.
+
+Common mistake note:
+Choosing B (Rasterization) as it's faster, but ray tracing is more accurate for detailed scenes.
+------------------------------------------------------------------------------
+
+Problem 2 (Realistic Water Simulation):
+Which computer graphics method simulates the appearance of realistic water in a scene?
+A) Particle systems
+B) Fog volume
+C) Normal mapping
+D) Bump mapping
+Correct Answer: A
+
+Solution:
+Particle systems create fluid motion, essential for simulating water. Other techniques enhance texture or lighting.
+
+Explanation:
+Fog volumes add atmospheric effects, normal mapping and bump mapping improve surface detail without changing geometry.
+
+Common mistake note:
+Choosing C (Normal mapping) or D (Bump mapping) as they enhance texture, but not for fluid motion simulation.
+------------------------------------------------------------------------------
+
+Problem 3 (Real-Time Terrain Rendering):
+What technique is used in real-time computer graphics to efficiently render large outdoor terrains?
+A) Level of Detail (LOD)
+B) Ray marching
+C) Screen space reflections
+D) SSAO (Screen Space Ambient Occlusion)
+Correct Answer: A
+
+Solution:
+LOD adjusts model complexity based on distance, optimizing real-time rendering. Ray marching and SSAO are for other effects.
+
+Explanation:
+Ray marching is for volumetric rendering, screen space reflections add realism to reflective surfaces, and SSAO enhances ambient lighting.
+
+Common mistake note:
+Choosing B (Ray marching) as it's related to rendering, but LOD is more suitable for real-time terrains.
+------------------------------------------------------------------------------
+
+Problem 4 (Anti-Aliasing Technique):
+Which method reduces jagged edges, or aliasing, in rendered computer graphics images?
+A) Temporal anti-aliasing (TAA)
+B) Mipmapping
+C) Bloom post-processing effect
+D) Depth of Field
+Correct Answer: A
+
+Solution:
+TAA averages frames to smooth edges, improving image quality. Mipmapping affects texture detail.
+
+Explanation:
+Mipmapping enhances texture resolution, bloom creates an over-exposed effect, and depth of field adjusts focus.
+
+Common mistake note:
+Choosing B (Mipmapping) as it impacts textures, but TAA is for aliasing reduction.
+------------------------------------------------------------------------------
+
+Problem 5 (Physically Based Shading):
+What approach in computer graphics produces realistic lighting and materials?
+A) Gouraud shading
+B) Phong shading
+C) Vertex lighting
+D) Physically Based Rendering (PBR)
+Correct Answer: D
+
+Solution:
+PBR models light interactions based on physics, resulting in lifelike appearances. Older techniques are less accurate.
+
+Explanation:
+Gouraud and Phong shading are outdated methods, vertex lighting affects only mesh vertices.
+
+Common mistake note:
+Choosing B (Phong shading) as an older technique, but PBR is more realistic.
+------------------------------------------------------------------------------
+
+Problem 6 (Realistic Fire Simulation):
+What computer graphics method simulates fire behavior and appearance?
+A) Fluid dynamics simulation
+B) Procedural texture generation
+C) Shadow mapping
+D) Normal mapping
+Correct Answer: A
+
+Solution:
+Fluid dynamics simulates complex behaviors like fire by modeling particle movement. Other techniques enhance visuals.
+
+Explanation:
+Procedural texture generation creates textures, shadow mapping adds shadows, and normal mapping enhances surface detail.
+
+Common mistake note:
+Choosing B (Procedural texture generation) as it generates textures, but not for simulating fire behavior.
+------------------------------------------------------------------------------
+
+Problem 7 (Real-Time Character Animation):
+Which technique is used in real-time applications like games to animate characters?
+A) Skinning with skeletal animation
+B) Lattice deformation
+C) Vertex displacement mapping
+D) Particle systems
+Correct Answer: A
+
+Solution:
+Skinning with skeletal animation allows for realistic character movements by attaching a mesh to bones. Other techniques are suited for other tasks.
+
+Explanation:
+Lattice deformation changes shape, vertex displacement mapping adds detail, and particle systems simulate fluids or particles.
+
+Common mistake note:
+Choosing B (Lattice deformation) as it can change shape, but skinning with skeletal animation is better for character animations.
+------------------------------------------------------------------------------

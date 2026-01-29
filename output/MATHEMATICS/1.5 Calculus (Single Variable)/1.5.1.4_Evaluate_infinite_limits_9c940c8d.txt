@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.1.4 Evaluate infinite limits
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.1 Limits and Continuity
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:question_1):
+What is the limit of the function f(x) = 2x^2 + x - 3 as x approaches infinity?
+A) -∞
+B) 0
+C) ∞
+D) 1
+Correct Answer: C
+
+Solution:
+As x approaches infinity, the highest power term (2x^2) dominates the function. Thus, the limit is ∞.
+
+Explanation:
+The limit of a polynomial with the highest degree term having a positive coefficient approaches infinity as x goes to infinity.
+
+Common mistake note:
+A common mistake would be to choose option A (-∞), which occurs when the highest degree term has a negative coefficient. Here, since the coefficient is positive, the limit is positive infinity.
+------------------------------------------------------------------------------
+
+Problem 2 (question_2):
+Evaluate the limit of the function g(x) = (4x - 5)/(3x + 2) as x approaches infinity.
+A) -∞
+B) 0
+C) 1
+D) ∞
+Correct Answer: C
+
+Solution:
+The limit can be simplified by dividing both the numerator and denominator by the highest power of x (x in this case). This gives us (4 - 5/x)/(3 + 2/x), which approaches (4 - 0)/(3 + 0) = 1 as x approaches infinity.
+
+Explanation:
+When evaluating limits with rational functions, it's often helpful to divide both the numerator and denominator by the highest power of x present in either part.
+
+Common mistake note:
+A common mistake would be to cancel out the x terms without considering their coefficients, leading to an incorrect conclusion that the limit is 1/3. However, this approach overlooks the fact that the limit of (5/x) and (2/x) as x approaches infinity is zero.
+------------------------------------------------------------------------------
+
+Problem 3 (question_3):
+Find the limit of h(x) = x^3 - 4x + 7 as x approaches negative infinity.
+A) -∞
+B) 0
+C) 1
+D) ∞
+Correct Answer: A
+
+Solution:
+As x approaches negative infinity, the highest power term (x^3) dominates the function with a positive coefficient. Thus, the limit is -∞.
+
+Explanation:
+The limit of a polynomial with the highest degree term having a negative coefficient approaches negative infinity as x goes to negative infinity.
+
+Common mistake note:
+A common mistake would be to choose option D (∞), which occurs when the highest degree term has a positive coefficient. Here, since the coefficient is negative, the limit is negative infinity.
+------------------------------------------------------------------------------
+
+Problem 4 (question_4):
+Evaluate the limit of p(x) = (2x^3 - 5x^2 + 7)/(x^2 + 3) as x approaches infinity.
+A) -∞
+B) 0
+C) 1
+D) ∞
+Correct Answer: C
+
+Solution:
+Dividing both the numerator and denominator by x^2, we get (2 - 5/x + 7/x^2)/(1 + 3/x^2), which approaches (2 - 0 + 0)/(1 + 0) = 2 as x approaches infinity.
+
+Explanation:
+When evaluating limits with rational functions, it's crucial to divide both the numerator and denominator by the highest power of x present in either part.
+
+Common mistake note:
+A common mistake would be to cancel out all x terms, leading to an incorrect conclusion that the limit is 2. However, this approach overlooks the fact that the limit of (5/x) and (7/x^2) as x approaches infinity is zero.
+------------------------------------------------------------------------------
+
+Problem 5 (question_5):
+Find the limit of q(x) = 3x - 4sin(x)/x as x approaches infinity.
+A) -∞
+B) 0
+C) 1
+D) ∞
+Correct Answer: C
+
+Solution:
+As x approaches infinity, sin(x)/x approaches 0. Thus, the limit is (3x - 0)/(x) = 3, which approaches ∞ as x approaches infinity.
+
+Explanation:
+The limit of sin(x)/x approaches 0 as x goes to infinity, so the dominant term in the numerator is 3x.
+
+Common mistake note:
+A common mistake would be to think that sin(x)/x approaches 1 as x approaches infinity. However, this is not true; it actually approaches 0.
+------------------------------------------------------------------------------
+
+Problem 6 (question_6):
+Evaluate the limit of r(x) = (2e^x - 3)/(e^x + 1) as x approaches infinity.
+A) -∞
+B) 0
+C) 1
+D) ∞
+Correct Answer: C
+
+Solution:
+Dividing both the numerator and denominator by e^x, we get (2 - 3/e^x)/(1 + 1/e^x), which approaches (2 - 0)/(1 + 0) = 2 as x approaches infinity.
+
+Explanation:
+When evaluating limits with exponential functions, it's helpful to divide both the numerator and denominator by the same base raised to the power of x.
+
+Common mistake note:
+A common mistake would be to cancel out the e^x terms without considering their coefficients, leading to an incorrect conclusion that the limit is 1. However, this approach overlooks the fact that the limit of (3/e^x) as x approaches infinity is zero.
+------------------------------------------------------------------------------
+
+Problem 7 (question_7):
+Find the limit of s(x) = (x - 2)^2/(x + 1) as x approaches negative infinity.
+A) -∞
+B) 0
+C) 1
+D) ∞
+Correct Answer: A
+
+Solution:
+As x approaches negative infinity, the highest power term (x^2) dominates the function with a positive coefficient. Thus, the limit is -∞.
+
+Explanation:
+The limit of a polynomial with the highest degree term having a negative coefficient approaches negative infinity as x goes to negative infinity.
+
+Common mistake note:
+A common mistake would be to choose option D (∞), which occurs when the highest degree term has a positive coefficient. Here, since the coefficient is negative, the limit is negative infinity.
+------------------------------------------------------------------------------

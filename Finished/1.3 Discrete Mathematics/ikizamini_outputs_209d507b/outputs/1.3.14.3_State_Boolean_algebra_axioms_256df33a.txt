@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.14.3 State Boolean algebra axioms
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.14 Boolean Algebra
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asd1):
+Which of the following is an axiom in Boolean algebra?
+A) A ∨ (B ∧ C) = (A ∨ B) ∧ (A ∨ C)
+B) A + B = B + A
+C) A ∙ 0 = 0
+D) A ∨ 1 = 1
+Correct Answer: D
+
+Solution:
+The axiom 'A ∨ 1 = 1' states that the disjunction of any value with 1 (true) results in 1 (true). This is one of the basic axioms in Boolean algebra.
+
+Explanation:
+This question tests the understanding of Boolean algebra axioms related to disjunction.
+
+Common mistake note:
+A common mistake would be selecting 'A ∨ (B ∧ C) = (A ∨ B) ∧ (A ∨ C)', which is actually a distributive law, not an axiom.
+------------------------------------------------------------------------------
+
+Problem 2 (Asd2):
+Which of the following is NOT an axiom in Boolean algebra?
+A) A ∙ 1 = A
+B) A + 0 = A
+C) A ∨ A = A
+D) A ∧ (B ∨ C) = (A ∧ B) ∨ (A ∧ C)
+Correct Answer: D
+
+Solution:
+The law 'A ∧ (B ∨ C) = (A ∧ B) ∨ (A ∧ C)' is a distributive law, not an axiom in Boolean algebra.
+
+Explanation:
+This question checks the knowledge of which statements are considered axioms in Boolean algebra.
+
+Common mistake note:
+A common mistake would be selecting 'A ∙ 1 = A' or 'A + 0 = A', as these are often confused with axioms due to their simplicity, but they are actually consequences of the axioms.
+------------------------------------------------------------------------------
+
+Problem 3 (Asd3):
+Which Boolean algebra axiom states that the complement of the union of two elements is equal to the intersection of their complements?
+A) De Morgan's Law
+B) Idempotent Law
+C) Commutative Law
+D) Associative Law
+Correct Answer: A
+
+Solution:
+De Morgan's Law states that (A ∨ B)' = A' ∧ B', which means the complement of the union of two elements is equal to the intersection of their complements.
+
+Explanation:
+This question assesses understanding of De Morgan's Law, an important axiom in Boolean algebra.
+
+Common mistake note:
+A common mistake would be selecting 'Commutative Law' or 'Associative Law', which deal with the order of operations rather than complementation.
+------------------------------------------------------------------------------
+
+Problem 4 (Asd4):
+Which of the following is an example of the Identity Law in Boolean algebra?
+A) A ∨ 0 = A
+B) A ∧ 1 = A
+C) A + A = 1
+D) A ∙ A' = 0
+Correct Answer: B
+
+Solution:
+The Identity Law in Boolean algebra states that A ∧ 1 = A, meaning any value ANDed with 1 remains unchanged.
+
+Explanation:
+This question tests the recognition of the Identity Law within Boolean algebra.
+
+Common mistake note:
+A common mistake would be selecting 'A ∨ 0 = A', which is also an Identity Law but for disjunction instead of conjunction.
+------------------------------------------------------------------------------
+
+Problem 5 (Asd5):
+Which Boolean algebra axiom states that the complement of the intersection of two elements is equal to the union of their complements?
+A) Complement Law
+B) Involution Law
+C) De Morgan's Law
+D) Double Negation Law
+Correct Answer: C
+
+Solution:
+De Morgan's Law states that (A ∧ B)' = A' ∨ B', which means the complement of the intersection of two elements is equal to the union of their complements.
+
+Explanation:
+This question checks understanding of De Morgan's Law, an axiom related to complementation in Boolean algebra.
+
+Common mistake note:
+A common mistake would be selecting 'Complement Law' or 'Involution Law', which deal with individual elements rather than sets.
+------------------------------------------------------------------------------
+
+Problem 6 (Asd6):
+Which of the following is NOT a Boolean algebra axiom?
+A) A ∨ (B ∨ C) = (A ∨ B) ∨ C
+B) A ∙ 0 = 0
+C) A ∨ A' = 1
+D) A ∧ A = A
+Correct Answer: A
+
+Solution:
+The law 'A ∨ (B ∨ C) = (A ∨ B) ∨ C' is a distributive law, not an axiom in Boolean algebra.
+
+Explanation:
+This question verifies the knowledge of which statements are considered axioms in Boolean algebra.
+
+Common mistake note:
+A common mistake would be selecting 'A ∙ 0 = 0', as this is often confused with an axiom due to its simplicity, but it is actually a consequence of the axioms.
+------------------------------------------------------------------------------
+
+Problem 7 (Asd7):
+Which Boolean algebra axiom states that any value ANDed with itself is equal to the value?
+A) Identity Law for Conjunction
+B) Commutative Law for Disjunction
+C) Idempotent Law for Conjunction
+D) Involution Law for Disjunction
+Correct Answer: C
+
+Solution:
+The Idempotent Law for Conjunction states that A ∧ A = A, meaning any value ANDed with itself remains unchanged.
+
+Explanation:
+This question assesses the recognition of the Idempotent Law in Boolean algebra.
+
+Common mistake note:
+A common mistake would be selecting 'Identity Law for Disjunction', which is related to disjunction rather than conjunction.
+------------------------------------------------------------------------------

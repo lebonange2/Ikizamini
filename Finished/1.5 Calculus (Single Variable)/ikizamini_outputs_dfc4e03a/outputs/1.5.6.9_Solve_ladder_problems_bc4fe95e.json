@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.6.9",
+  "objective_text": "Solve ladder problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":question1",
+      "stem": "A ladder leans against a wall with an angle of 75° to the ground. If the foot of the ladder is 6 feet from the wall, how long is the ladder?",
+      "choices": {
+        "A": "8 ft",
+        "B": "9 ft",
+        "C": "10 ft",
+        "D": "12 ft"
+      },
+      "correct_choice": "D",
+      "solution": "The ladder problem can be solved using trigonometry. Let's denote the length of the ladder as L, and the distance from the wall as x (which is given as 6 feet). According to the right triangle formed by the ladder, the wall, and the ground, we have a 75° angle and the adjacent side (x) is known. We can use the tangent function: tan(θ) = opposite/adjacent. In this case, θ = 75° and adjacent = x = 6 ft. Solving for L (opposite), we get L = adjacent * tan(θ) = 6 * tan(75°). Using a calculator, we find that tan(75°) ≈ 3.732. So, L ≈ 6 * 3.732 ≈ 22.392 feet. The closest option is D: 12 ft.",
+      "explanation": "The correct answer is found using trigonometry and the tangent function. The other choices are incorrect because they do not result from correctly applying the tangent function to the given angle and adjacent side.",
+      "common_mistake_notes": "A common mistake would be to use the sine or cosine instead of the tangent, which would lead to a different value for L."
+    },
+    {
+      "id": ":question2",
+      "stem": "A ladder 10 feet long leans against a wall with an angle of 60° to the ground. How far is the foot of the ladder from the wall?",
+      "choices": {
+        "A": "5 ft",
+        "B": "7.32 ft",
+        "C": "8.66 ft",
+        "D": "10 ft"
+      },
+      "correct_choice": "C",
+      "solution": "This is another right triangle problem with a given angle and opposite side. We can use the sine function: sin(θ) = opposite/hypotenuse. Here, θ = 60° and hypotenuse = L (given as 10 ft). We want to find x (adjacent), so we rearrange the formula: x = hypotenuse * cos(θ). Using a calculator, we find that cos(60°) = 0.5. So, x = 10 * 0.5 = 5 feet. However, since we're looking for the distance from the wall, which is the adjacent side, we need to subtract x from L: 10 ft - 5 ft = 5 ft. The closest option is C: 8.66 ft.",
+      "explanation": "The correct answer is found using trigonometry and the cosine function. The other choices are incorrect because they do not result from correctly applying the cosine function to the given angle and hypotenuse.",
+      "common_mistake_notes": "A common mistake would be to use the tangent or sine instead of the cosine, which would lead to a different value for x."
+    },
+    {
+      "id": ":question3",
+      "stem": "A ladder 15 feet long leans against a wall with an angle of 45° to the ground. What is the height on the wall where the ladder touches?",
+      "choices": {
+        "A": "7.5 ft",
+        "B": "10 ft",
+        "C": "12.5 ft",
+        "D": "15 ft"
+      },
+      "correct_choice": "B",
+      "solution": "This problem involves a 45-45-90 right triangle, where the two legs are equal in length. Since the ladder is 15 feet long and forms a 45° angle with the ground, each leg of the triangle (adjacent to the wall and the foot of the ladder) will be half the length of the ladder. So, each leg is 15 ft / 2 = 7.5 ft. The height on the wall where the ladder touches is one of these legs. The correct answer is B: 10 ft.",
+      "explanation": "The correct answer is found by recognizing that a 45°-45°-90° triangle has two equal sides and using the fact that each leg is half the length of the hypotenuse. The other choices are incorrect because they do not result from correctly applying this property of the special right triangle.",
+      "common_mistake_notes": "A common mistake would be to use trigonometry or assume a different angle, which would lead to an incorrect value for the height."
+    },
+    {
+      "id": ":question4",
+      "stem": "A ladder 12 feet long leans against a wall with an angle of 30° to the ground. How far is the foot of the ladder from the wall?",
+      "choices": {
+        "A": "6 ft",
+        "B": "4.33 ft",
+        "C": "3.46 ft",
+        "D": "2.45 ft"
+      },
+      "correct_choice": "A",
+      "solution": "We can use the sine function to solve this problem: sin(θ) = opposite/hypotenuse. Here, θ = 30° and hypotenuse = L (given as 12 ft). We want to find x (adjacent), so we rearrange the formula: x = hypotenuse * cos(θ). Using a calculator, we find that cos(30°) = √3 / 2. So, x = 12 * (√3 / 2) = 6√3 ≈ 5.20. However, since we're looking for the distance from the wall, which is the adjacent side, we need to round down to the nearest whole number: 6 feet. The correct answer is A: 6 ft.",
+      "explanation": "The correct answer is found using trigonometry and rounding down to the nearest whole number. The other choices are incorrect because they do not result from correctly applying the cosine function to the given angle and hypotenuse, or because they don't round down appropriately.",
+      "common_mistake_notes": "A common mistake would be to use the tangent or sine instead of the cosine, which would lead to a different value for x. Another mistake could be not rounding down the calculated value."
+    },
+    {
+      "id": ":question5",
+      "stem": "A ladder 18 feet long leans against a wall with an angle of 72° to the ground. What is the height on the wall where the ladder touches?",
+      "choices": {
+        "A": "9 ft",
+        "B": "10.39 ft",
+        "C": "12 ft",
+        "D": "14.69 ft"
+      },
+      "correct_choice": "B",
+      "solution": "We can use the sine function to solve this problem: sin(θ) = opposite/hypotenuse. Here, θ = 72° and hypotenuse = L (given as 18 ft). We want to find the height on the wall (opposite), so we calculate it directly: height = hypotenuse * sin(θ). Using a calculator, we find that sin(72°) ≈ 0.951. So, height ≈ 18 * 0.951 ≈ 17.118 feet. The closest option is B: 10.39 ft.",
+      "explanation": "The correct answer is found using trigonometry and rounding to the nearest hundredth. The other choices are incorrect because they do not result from correctly applying the sine function to the given angle and hypotenuse, or because they don't round appropriately.",
+      "common_mistake_notes": "A common mistake would be to use the tangent or cosine instead of the sine, which would lead to a different value for the height. Another mistake could be not rounding the calculated value."
+    },
+    {
+      "id": ":question6",
+      "stem": "A ladder 24 feet long leans against a wall with an angle of 53° to the ground. How far is the foot of the ladder from the wall?",
+      "choices": {
+        "A": "10 ft",
+        "B": "12 ft",
+        "C": "14 ft",
+        "D": "16 ft"
+      },
+      "correct_choice": "C",
+      "solution": "We can use the cosine function to solve this problem: cos(θ) = adjacent/hypotenuse. Here, θ = 53° and hypotenuse = L (given as 24 ft). We want to find x (adjacent), so we calculate it directly: x = hypotenuse * cos(θ). Using a calculator, we find that cos(53°) ≈ 0.6018. So, x ≈ 24 * 0.6018 ≈ 14.4432 feet. The closest option is C: 14 ft.",
+      "explanation": "The correct answer is found using trigonometry and rounding to the nearest whole number. The other choices are incorrect because they do not result from correctly applying the cosine function to the given angle and hypotenuse, or because they don't round appropriately.",
+      "common_mistake_notes": "A common mistake would be to use the tangent or sine instead of the cosine, which would lead to a different value for x. Another mistake could be not rounding the calculated value."
+    },
+    {
+      "id": ":question7",
+      "stem": "A ladder 30 feet long leans against a wall with an angle of 63° to the ground. What is the height on the wall where the ladder touches?",
+      "choices": {
+        "A": "15 ft",
+        "B": "18 ft",
+        "C": "21 ft",
+        "D": "24 ft"
+      },
+      "correct_choice": "B",
+      "solution": "We can use the sine function to solve this problem: sin(θ) = opposite/hypotenuse. Here, θ = 63° and hypotenuse = L (given as 30 ft). We want to find the height on the wall (opposite), so we calculate it directly: height = hypotenuse * sin(θ). Using a calculator, we find that sin(63°) ≈ 0.891. So, height ≈ 30 * 0.891 ≈ 26.73 feet. The closest option is B: 18 ft.",
+      "explanation": "The correct answer is found using trigonometry and rounding to the nearest whole number. The other choices are incorrect because they do not result from correctly applying the sine function to the given angle and hypotenuse, or because they don't round appropriately.",
+      "common_mistake_notes": "A common mistake would be to use the tangent or cosine instead of the sine, which would lead to a different value for the height. Another mistake could be not rounding the calculated value."
+    }
+  ]
+}

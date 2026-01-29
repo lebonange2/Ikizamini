@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.2.4",
+  "objective_text": "Differentiate sum and difference",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Q1",
+      "stem": "What is the difference between (x + 3) and (x - 3)?",
+      "choices": {
+        "A": "6",
+        "B": "x^2 - 9",
+        "C": "2x",
+        "D": "x^2 + 6x + 9"
+      },
+      "correct_choice": "C",
+      "solution": "The difference between (x + 3) and (x - 3) is found by subtracting the second expression from the first: (x + 3) - (x - 3) = x + 3 - x + 3 = 6.",
+      "explanation": "This question tests understanding of basic arithmetic subtraction applied to binomials.",
+      "common_mistake_notes": "A common mistake would be to try factoring the expressions, which is not necessary for this problem."
+    },
+    {
+      "id": "Q2",
+      "stem": "What is the sum of (2x - 5) and (3x + 7)?",
+      "choices": {
+        "A": "5x + 12",
+        "B": "x^2 + 2x - 12",
+        "C": "5x - 2",
+        "D": "5x + 2"
+      },
+      "correct_choice": "A",
+      "solution": "The sum of (2x - 5) and (3x + 7) is found by adding the coefficients of x and constant terms: (2x + 3x) + (-5 + 7) = 5x + 12.",
+      "explanation": "This question tests understanding of combining like terms in binomials.",
+      "common_mistake_notes": "A common mistake would be to try factoring the expressions, which is not necessary for this problem."
+    },
+    {
+      "id": "Q3",
+      "stem": "What is the difference between (4y^2 + 6y) and (4y^2 - 6y)?",
+      "choices": {
+        "A": "12y",
+        "B": "8y^3",
+        "C": "0",
+        "D": "12y^2"
+      },
+      "correct_choice": "A",
+      "solution": "The difference between (4y^2 + 6y) and (4y^2 - 6y) is found by subtracting the second expression from the first: (4y^2 + 6y) - (4y^2 - 6y) = 4y^2 + 6y - 4y^2 + 6y = 12y.",
+      "explanation": "This question tests understanding of difference of squares and combining like terms.",
+      "common_mistake_notes": "A common mistake would be to think that the two 4y^2 terms cancel out, but they do not because they have different coefficients."
+    },
+    {
+      "id": "Q4",
+      "stem": "What is the sum of (x + 1) and (3x - 2)?",
+      "choices": {
+        "A": "4x - 1",
+        "B": "x^2 + 4x - 1",
+        "C": "4x + 1",
+        "D": "4x - 3"
+      },
+      "correct_choice": "A",
+      "solution": "The sum of (x + 1) and (3x - 2) is found by adding the coefficients of x and constant terms: (x + 3x) + (1 - 2) = 4x - 1.",
+      "explanation": "This question tests understanding of combining like terms in binomials with simple constants.",
+      "common_mistake_notes": "A common mistake would be to forget to subtract the constant term when adding."
+    },
+    {
+      "id": "Q5",
+      "stem": "What is the difference between (5a^2 - 3b) and (5a^2 + 3b)?",
+      "choices": {
+        "A": "6b",
+        "B": "10a^2",
+        "C": "0",
+        "D": "-6ab"
+      },
+      "correct_choice": "A",
+      "solution": "The difference between (5a^2 - 3b) and (5a^2 + 3b) is found by subtracting the second expression from the first: (5a^2 - 3b) - (5a^2 + 3b) = 5a^2 - 3b - 5a^2 - 3b = -6b.",
+      "explanation": "This question tests understanding of difference of terms with different variables and combining like terms.",
+      "common_mistake_notes": "A common mistake would be to think that the two 5a^2 terms cancel out, but they do not because they have different signs."
+    },
+    {
+      "id": "Q6",
+      "stem": "What is the sum of (6m - 4n) and (6m + 4n)?",
+      "choices": {
+        "A": "12m",
+        "B": "12m - 8n^2",
+        "C": "0",
+        "D": "12m + 8n"
+      },
+      "correct_choice": "A",
+      "solution": "The sum of (6m - 4n) and (6m + 4n) is found by adding the coefficients of m and n: (6m + 6m) + (-4n + 4n) = 12m.",
+      "explanation": "This question tests understanding of combining like terms in binomials with different variables.",
+      "common_mistake_notes": "A common mistake would be to think that the two -4n and 4n terms cancel out, but they do not because they have different signs."
+    },
+    {
+      "id": "Q7",
+      "stem": "What is the difference between (2p^3 + 5q) and (2p^3 - 5q)?",
+      "choices": {
+        "A": "10pq",
+        "B": "4p^3",
+        "C": "0",
+        "D": "-10p^3q"
+      },
+      "correct_choice": "B",
+      "solution": "The difference between (2p^3 + 5q) and (2p^3 - 5q) is found by subtracting the second expression from the first: (2p^3 + 5q) - (2p^3 - 5q) = 2p^3 + 5q - 2p^3 + 5q = 4p^3.",
+      "explanation": "This question tests understanding of difference of terms with different variables and combining like terms.",
+      "common_mistake_notes": "A common mistake would be to think that the two 2p^3 terms cancel out, but they do not because they have different signs."
+    }
+  ]
+}

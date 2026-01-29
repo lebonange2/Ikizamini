@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.7.8",
+  "objective_text": "Find asymptotes: y = k ± (b/a)(x-h)",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Find the vertical asymptote of the function f(x) = (2x + 5)/(x - 3).",
+      "choices": {
+        "A": "(x - 1)",
+        "B": "(x + 3)",
+        "C": "(x - 3)",
+        "D": "(x + 1)"
+      },
+      "correct_choice": "C",
+      "solution": "The vertical asymptote occurs where the denominator is equal to zero. In this case, the denominator x - 3 equals zero when x = 3.",
+      "explanation": "Vertical asymptotes occur at values of x that make the function undefined due to division by zero.",
+      "common_mistake_notes": "A common mistake would be selecting (x + 3), but it's not an asymptote because it doesn't correspond to a zero in the denominator."
+    },
+    {
+      "id": "?",
+      "stem": "Find the horizontal asymptote of the function g(x) = 4x^2 - 7x + 10 / x^2 + 5x.",
+      "choices": {
+        "A": "y = 4",
+        "B": "y = -7",
+        "C": "y = 10",
+        "D": "y = 0"
+      },
+      "correct_choice": "A",
+      "solution": "The horizontal asymptote can be found by comparing the leading coefficients of the numerator and denominator. Here, the leading coefficient in the numerator is 4 and in the denominator is 1, so the horizontal asymptote is y = 4.",
+      "explanation": "Horizontal asymptotes represent the function's behavior as x approaches infinity or negative infinity. When the degree of the numerator is less than or equal to the degree of the denominator, the horizontal asymptote is determined by the ratio of leading coefficients.",
+      "common_mistake_notes": "A common mistake would be selecting y = -7, which is not the determining factor for the horizontal asymptote."
+    },
+    {
+      "id": "?",
+      "stem": "Find the slant (oblique) asymptote of the function h(x) = x^3 + 2x^2 - 5x + 7 / x - 1.",
+      "choices": {
+        "A": "y = x^2 + 3x + 6",
+        "B": "y = x^2 - 4x + 8",
+        "C": "y = x^2 + x - 4",
+        "D": "y = x^2 + 2x - 5"
+      },
+      "correct_choice": "A",
+      "solution": "To find the slant asymptote, divide the numerator by the denominator. The quotient is x^2 + 3x + 6, which represents the oblique asymptote.",
+      "explanation": "Slant asymptotes occur when the degree of the numerator is one more than the degree of the denominator. They represent the line that the function's graph approaches as x goes to infinity or negative infinity.",
+      "common_mistake_notes": "A common mistake would be selecting y = x^2 - 4x + 8, which is not the correct quotient after polynomial division."
+    },
+    {
+      "id": "?",
+      "stem": "Find the vertical asymptote of the function j(x) = (3x - 6)/(x^2 - 9).",
+      "choices": {
+        "A": "(x + 3)",
+        "B": "(x - 3)",
+        "C": "(x + 1)",
+        "D": "(x - 1)"
+      },
+      "correct_choice": "A",
+      "solution": "The vertical asymptote occurs where the denominator is equal to zero. In this case, the denominator factors to (x - 3)(x + 3), which equals zero when x = 3 or x = -3. However, only x = -3 is a valid vertical asymptote because it's not a hole in the function.",
+      "explanation": "Vertical asymptotes occur at values of x that make the function undefined due to division by zero.",
+      "common_mistake_notes": "A common mistake would be selecting (x - 3), which is also a root of the denominator but not a vertical asymptote because it corresponds to a hole in the function."
+    },
+    {
+      "id": "?",
+      "stem": "Find the horizontal asymptote of the function k(x) = x^3 / (2x^2 + 4).",
+      "choices": {
+        "A": "y = 1/2",
+        "B": "y = 0",
+        "C": "y = x",
+        "D": "y = 2"
+      },
+      "correct_choice": "A",
+      "solution": "The horizontal asymptote can be found by comparing the leading coefficients of the numerator and denominator. Here, the leading coefficient in the numerator is 1 and in the denominator is 2, so the horizontal asymptote is y = 1/2.",
+      "explanation": "Horizontal asymptotes represent the function's behavior as x approaches infinity or negative infinity. When the degree of the numerator is less than the degree of the denominator, the horizontal asymptote is determined by the ratio of leading coefficients.",
+      "common_mistake_notes": "A common mistake would be selecting y = 0, which is incorrect because the numerator's leading term dominates as x grows large."
+    },
+    {
+      "id": "?",
+      "stem": "Find the slant (oblique) asymptote of the function l(x) = x^3 - 2x + 1 / x - 2.",
+      "choices": {
+        "A": "y = x^2 + 2x + 5",
+        "B": "y = x^2 - 4x + 9",
+        "C": "y = x^2 + x - 1",
+        "D": "y = x^2 - x + 3"
+      },
+      "correct_choice": "C",
+      "solution": "To find the slant asymptote, divide the numerator by the denominator. The quotient is x^2 + x - 1, which represents the oblique asymptote.",
+      "explanation": "Slant asymptotes occur when the degree of the numerator is one more than the degree of the denominator. They represent the line that the function's graph approaches as x goes to infinity or negative infinity.",
+      "common_mistake_notes": "A common mistake would be selecting y = x^2 - 4x + 9, which is not the correct quotient after polynomial division."
+    },
+    {
+      "id": "?",
+      "stem": "Find the vertical asymptote of the function m(x) = (3x^2 - 6x)/(x - 2)^2.",
+      "choices": {
+        "A": "(x - 2)",
+        "B": "(x + 2)",
+        "C": "(x - 1)",
+        "D": "(x + 1)"
+      },
+      "correct_choice": "A",
+      "solution": "The vertical asymptote occurs where the denominator is equal to zero. In this case, the denominator (x - 2)^2 equals zero when x = 2. However, since it's squared, there will be a hole at x = 2 rather than an actual vertical asymptote.",
+      "explanation": "Vertical asymptotes occur at values of x that make the function undefined due to division by zero.",
+      "common_mistake_notes": "A common mistake would be selecting (x - 1) or (x + 1), which are not roots of the denominator and do not correspond to vertical asymptotes."
+    }
+  ]
+}

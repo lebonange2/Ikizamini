@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.2.10",
+  "objective_text": "Apply associative property",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "OnePlusOnePlusTwo",
+      "stem": "What is the result of (1 + 1) + 2?",
+      "choices": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "correct_choice": "A",
+      "solution": "(1 + 1) + 2 = 2 + 2 = 4. The associative property states that the order in which numbers are grouped does not affect the sum, so (1 + 1) + 2 is equal to 1 + (1 + 2), which equals 4.",
+      "explanation": "The associative property applies when adding multiple numbers together. It allows you to group the numbers differently without changing the final result.",
+      "common_mistake_notes": "A common mistake would be choosing 'B', 4, because some might think that each addition operation is performed separately (1 + 1 = 2, then 2 + 2 = 4), but forgetting that the property allows for grouping changes without affecting the sum."
+    },
+    {
+      "id": "ThreePlusOnePlusTwo",
+      "stem": "What is the result of 3 + (1 + 2)?",
+      "choices": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "correct_choice": "A",
+      "solution": "3 + (1 + 2) = 3 + 3 = 6. The associative property holds, so the order of grouping does not affect the sum.",
+      "explanation": "Again, we apply the associative property when adding numbers together. Here, we first perform the operation inside the parentheses (1 + 2), then add the result to 3.",
+      "common_mistake_notes": "A common mistake would be choosing 'C', 7, if a student forgets to use the associative property and instead calculates each addition separately (3 + 1 = 4, then 4 + 2 = 6)."
+    },
+    {
+      "id": "MultiplicationAssociative",
+      "stem": "What is the result of (5 × 2) × 3?",
+      "choices": {
+        "A": "10",
+        "B": "15",
+        "C": "20",
+        "D": "30"
+      },
+      "correct_choice": "D",
+      "solution": "(5 × 2) × 3 = 10 × 3 = 30. The associative property of multiplication also holds, so the order of grouping does not affect the product.",
+      "explanation": "The associative property applies to multiplication as well. Here, we first multiply 5 and 2, then multiply the result by 3.",
+      "common_mistake_notes": "A common mistake would be choosing 'B', 15, if a student forgets that the associative property also works for multiplication and calculates each multiplication separately (5 × 2 = 10, then 10 × 3 = 30)."
+    },
+    {
+      "id": "MixedOperationsAssociative",
+      "stem": "What is the result of (4 + 6) × (2 + 3)?",
+      "choices": {
+        "A": "40",
+        "B": "50",
+        "C": "60",
+        "D": "70"
+      },
+      "correct_choice": "C",
+      "solution": "(4 + 6) × (2 + 3) = 10 × 5 = 50. First, perform the operations inside each set of parentheses, then multiply the results.",
+      "explanation": "When there are both addition and multiplication involved, use the order of operations: first perform the operations inside parentheses, then multiply. Here, we add within each set of parentheses (4 + 6 = 10, 2 + 3 = 5), then multiply the results.",
+      "common_mistake_notes": "A common mistake would be choosing 'D', 70, if a student forgets to apply the associative property and calculates the addition operations separately before multiplying (4 + 6 = 10, 2 + 3 = 5, then 10 × 5 = 50)."
+    },
+    {
+      "id": "AssociativePropertyWithFractions",
+      "stem": "What is the result of (1/2 + 1/4) + 1/8?",
+      "choices": {
+        "A": "7/8",
+        "B": "9/8",
+        "C": "15/16",
+        "D": "17/16"
+      },
+      "correct_choice": "C",
+      "solution": "(1/2 + 1/4) + 1/8 = (2/4 + 1/4) + 1/8 = 3/4 + 1/8 = (6/8 + 1/8) = 7/8. The associative property holds for fractions as well.",
+      "explanation": "When adding fractions, first find a common denominator and then add the numerators. Here, we have a common denominator of 8 after simplifying 2/4 to 1/2. Then, we apply the associative property to group the fractions differently without changing the sum.",
+      "common_mistake_notes": "A common mistake would be choosing 'B', 9/8, if a student calculates each addition separately (1/2 + 1/4 = 3/4, then 3/4 + 1/8 = 7/8) without considering the associative property."
+    },
+    {
+      "id": "AssociativePropertyWithNegativeNumbers",
+      "stem": "What is the result of (-5 - 3) - (-2)?",
+      "choices": {
+        "A": "-6",
+        "B": "-7",
+        "C": "-10",
+        "D": "-14"
+      },
+      "correct_choice": "A",
+      "solution": "(-5 - 3) - (-2) = -8 - (-2) = -8 + 2 = -6. The associative property applies to subtraction, but remember that subtracting a negative is the same as adding a positive.",
+      "explanation": "When subtracting negative numbers, it's equivalent to adding positives. Here, we first perform the operation inside the parentheses and then apply the associative property.",
+      "common_mistake_notes": "A common mistake would be choosing 'C', -10, if a student forgets that subtracting a negative is addition and calculates each subtraction separately (-5 - 3 = -8, then -8 - (-2) = -6)."
+    },
+    {
+      "id": "AssociativePropertyWithMixedOperationsAndParentheses",
+      "stem": "What is the result of ((-2 + 4) × 3) ÷ (1 + 1)?",
+      "choices": {
+        "A": "3",
+        "B": "4",
+        "C": "6",
+        "D": "12"
+      },
+      "correct_choice": "B",
+      "solution": "((-2 + 4) × 3) ÷ (1 + 1) = (2 × 3) ÷ 2 = 6 ÷ 2 = 3. Apply the order of operations: parentheses first, then multiplication and division from left to right.",
+      "explanation": "Remember the order of operations: perform operations inside parentheses first, followed by multiplication and division from left to right (no need for associative property here since there are no repeated operations).",
+      "common_mistake_notes": "A common mistake would be choosing 'C', 6, if a student forgets the order of operations and calculates the multiplication before the addition within the parentheses (2 + 4 = 6, then 6 × 3 = 18 ÷ 2 = 9)."
+    }
+  ]
+}

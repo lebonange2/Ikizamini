@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.1.15",
+  "objective_text": "Apply epsilon-delta definition of limits",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1-7]",
+      "stem": "Find the limit using the epsilon-delta definition: lim x → 2 (3x - 4)",
+      "choices": {
+        "A": "(3 * 2) - 4 = 2",
+        "B": "ε/δ",
+        "C": "不存在（无定义）",
+        "D": "3 * lim x → 2 (x) - lim x → 2 (4) = 6 - 4 = 2"
+      },
+      "correct_choice": "D",
+      "solution": "lim x → 2 (3x - 4) = 3 * lim x → 2 (x) - lim x → 2 (4) = 3 * 2 - 4 = 6 - 4 = 2",
+      "explanation": "The limit of a product is the product of the limits, assuming both limits exist. Here, we can separate the function into its components and find the limit of each part separately.",
+      "common_mistake_notes": "A common mistake would be to evaluate the function at x = 2 without considering the epsilon-delta definition. Choice A does this by plugging in x = 2 directly."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Prove that lim x → 0 (sin(x))/x = 1 using the epsilon-delta definition.",
+      "choices": {
+        "A": "选择 δ = ε",
+        "B": "选择 δ = ε / |π|",
+        "C": "不存在（无定义）",
+        "D": "无法证明，因为没有给定ε-δ关系"
+      },
+      "correct_choice": "A",
+      "solution": "选择 δ = ε, 然后证明对于所有 0 < |x - 0| < δ, 我们有 |(sin(x))/x - 1| < ε. 利用三角不等式 |sin(x)| ≤ |x|，我们可以得出结论.",
+      "explanation": "The epsilon-delta definition requires us to find a δ for every given ε such that the inequality holds. In this case, we can choose δ = ε and use the fact that |sin(x)| ≤ |x| to prove the limit.",
+      "common_mistake_notes": "A common mistake would be to choose an incorrect δ value or not using the triangle inequality properly."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Find the limit using the epsilon-delta definition: lim x → π (sin(x))",
+      "choices": {
+        "A": "0",
+        "B": "π",
+        "C": "不存在（无定义）",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "lim x → π (sin(x)) = sin(π) = 0, 因为 sin 是周期函数，且在 π 处取值为 0.",
+      "explanation": "The limit of a trigonometric function at a specific point is the value of the function at that point. Here, we know that sin(π) = 0.",
+      "common_mistake_notes": "A common mistake would be to assume that the limit does not exist because π is an 'interesting' value for sine."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Prove that lim x → 3 (2x + 1) = 7 using the epsilon-delta definition.",
+      "choices": {
+        "A": "选择 δ = ε/4",
+        "B": "选择 δ = ε / 2",
+        "C": "不存在（无定义）",
+        "D": "无法证明，因为没有给定ε-δ关系"
+      },
+      "correct_choice": "B",
+      "solution": "选择 δ = ε / 2, 然后证明对于所有 0 < |x - 3| < δ, 我们有 |(2x + 1) - 7| < ε. 这很容易通过代数运算得出结论.",
+      "explanation": "The epsilon-delta definition requires us to find a δ for every given ε such that the inequality holds. In this case, we can choose δ = ε / 2 and use algebraic manipulation to prove the limit.",
+      "common_mistake_notes": "A common mistake would be to choose an incorrect δ value or not using algebra properly."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Find the limit using the epsilon-delta definition: lim x → 1 (x^2 - 1)",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "不存在（无定义）",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "lim x → 1 (x^2 - 1) = (1)^2 - 1 = 0, 因为平方函数在 x = 1 处的值是 0.",
+      "explanation": "The limit of a polynomial function at a specific point is the value of the function at that point. Here, we know that (1)^2 - 1 = 0.",
+      "common_mistake_notes": "A common mistake would be to assume that the limit does not exist because x^2 - 1 can be factored as (x-1)(x+1)"
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Prove that lim x → ∞ (3x - 5) = ∞ using the epsilon-delta definition.",
+      "choices": {
+        "A": "选择 δ = ε/3",
+        "B": "选择 δ = ε / 5",
+        "C": "不存在（无定义）",
+        "D": "无法证明，因为无穷大不是实数"
+      },
+      "correct_choice": "D",
+      "solution": "对于无穷大的极限，我们不能直接使用 epsilon-delta 定义。但是，我们可以考虑 x 趋近于正无穷时函数值的增长趋势。",
+      "explanation": "The epsilon-delta definition is not applicable for limits involving infinity. Instead, we can argue that as x approaches infinity, the function 3x - 5 also grows without bound.",
+      "common_mistake_notes": "A common mistake would be to try to apply the epsilon-delta definition directly to an infinite limit."
+    },
+    {
+      "id": "[1-7]",
+      "stem": "Find the limit using the epsilon-delta definition: lim x → -2 (x^3 + 8)",
+      "choices": {
+        "A": "0",
+        "B": "-16",
+        "C": "不存在（无定义）",
+        "D": "无法计算，因为没有给定 x 趋近于的具体值"
+      },
+      "correct_choice": "B",
+      "solution": "lim x → -2 (x^3 + 8) = (-2)^3 + 8 = -8 + 8 = 0, 因为立方函数在 x = -2 处的值是 -8.",
+      "explanation": "The limit of a polynomial function at a specific point is the value of the function at that point. Here, we know that (-2)^3 + 8 = 0.",
+      "common_mistake_notes": "A common mistake would be to assume that the limit does not exist because x^3 can be factored as (x+2)(x^2 - 2x + 4)"
+    }
+  ]
+}

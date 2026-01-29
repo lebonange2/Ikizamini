@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.5.13",
+  "objective_text": "Use in electrical impedance",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the unit of electrical impedance?",
+      "choices": {
+        "A": "Ohm (Ω)",
+        "B": "Volt (V)",
+        "C": "Ampere (A)",
+        "D": "Hertz (Hz)"
+      },
+      "correct_choice": "A",
+      "solution": "Electrical impedance, denoted by Z, measures the opposition to current flow in an electrical circuit. Its unit is Ohm (Ω), which represents resistance.",
+      "explanation": "Impedance combines resistance and reactance; however, the question asks for the unit of impedance itself, not its components. Therefore, choices B (Volt), C (Ampere), and D (Hertz) are incorrect as they represent other electrical quantities.",
+      "common_mistake_notes": "Common mistake: Choosing B (Volt) or C (Ampere) because they are related to voltage and current."
+    },
+    {
+      "id": ":2",
+      "stem": "In a series RLC circuit, which component(s) contribute to the impedance?",
+      "choices": {
+        "A": "Resistor only",
+        "B": "Inductor only",
+        "C": "Capacitor only",
+        "D": "Resistor, inductor, and capacitor"
+      },
+      "correct_choice": "D",
+      "solution": "In a series RLC circuit, all three components - resistor (R), inductor (L), and capacitor (C) contribute to the overall impedance Z.",
+      "explanation": "The impedance of a series RLC circuit is given by Z = √(R^2 + (XL - XC)^2), where XL is the inductive reactance and XC is the capacitive reactance. Each component affects the total impedance differently, making choices A, B, and C incomplete.",
+      "common_mistake_notes": "Common mistake: Choosing A, B, or C if the learner focuses on only one aspect of the circuit."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the relationship between electrical impedance and frequency in a capacitor?",
+      "choices": {
+        "A": "Impedance increases with frequency",
+        "B": "Impedance decreases with frequency",
+        "C": "Impedance remains constant regardless of frequency",
+        "D": "Impedance varies randomly with frequency"
+      },
+      "correct_choice": "B",
+      "solution": "The impedance of a capacitor, XC, is inversely proportional to the frequency (f): XC = 1/(2πfC). Thus, as frequency increases, impedance decreases.",
+      "explanation": "Capacitors allow current to flow more easily at higher frequencies, which reduces their effective opposition to current. Choices A, C, and D are incorrect because they describe different behaviors or lack a consistent relationship with frequency.",
+      "common_mistake_notes": "Common mistake: Choosing A if the learner混淆s capacitive reactance with inductive reactance."
+    },
+    {
+      "id": ":4",
+      "stem": "In an AC circuit, what role does electrical impedance play?",
+      "choices": {
+        "A": "It determines the voltage across each component",
+        "B": "It controls the current through each component",
+        "C": "It affects both the voltage and current in the circuit",
+        "D": "It has no effect on the behavior of the circuit"
+      },
+      "correct_choice": "C",
+      "solution": "Electrical impedance influences both the voltage drop across and the current flowing through each element in an AC circuit.",
+      "explanation": "Impedance determines how much a component resists or modifies the sinusoidal waveform of an AC signal. Choices A and B are incomplete as they only address one aspect, while D is incorrect because it implies that impedance has no impact.",
+      "common_mistake_notes": "Common mistake: Choosing A or B if the learner focuses on voltage or current independently."
+    },
+    {
+      "id": ":5",
+      "stem": "What happens to the total impedance of a parallel RLC circuit when the frequency is increased?",
+      "choices": {
+        "A": "Impedance increases",
+        "B": "Impedance decreases",
+        "C": "Impedance remains constant",
+        "D": "Impedance may increase or decrease depending on the values of R, L, and C"
+      },
+      "correct_choice": "D",
+      "solution": "The total impedance of a parallel RLC circuit is more complex than in a series circuit. At certain frequencies (resonant frequency), it can be lower than individual impedances; at other frequencies, it may increase or decrease depending on the values of R, L, and C.",
+      "explanation": "In a parallel RLC circuit, the relationship between impedance, frequency, and component values is more intricate. Choices A, B, and C oversimplify this behavior.",
+      "common_mistake_notes": "Common mistake: Assuming that the same rules apply as in a series RLC circuit."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the relationship between electrical impedance and reactance?",
+      "choices": {
+        "A": "Reactance is a part of impedance",
+        "B": "Reactance is always equal to impedance",
+        "C": "Reactance is independent of impedance",
+        "D": "Reactance can be greater or lesser than impedance"
+      },
+      "correct_choice": "A",
+      "solution": "Reactance (XL for inductors and XC for capacitors) is a component of electrical impedance, which also includes resistance (R).",
+      "explanation": "Impedance is the total opposition to current flow, including both resistance and reactance. Choices B, C, and D are incorrect because they misrepresent this relationship.",
+      "common_mistake_notes": "Common mistake: Choosing B if the learner混淆s reactance with impedance."
+    },
+    {
+      "id": ":7",
+      "stem": "How does electrical impedance help in designing a filter circuit?",
+      "choices": {
+        "A": "By increasing resistance to certain frequencies",
+        "B": "By reducing current flow at specific frequencies",
+        "C": "By allowing only desired frequencies to pass through",
+        "D": "By creating voltage drops that disrupt signal integrity"
+      },
+      "correct_choice": "C",
+      "solution": "Electrical impedance is used in filter circuits to selectively allow or block specific frequency ranges, thereby shaping the signal.",
+      "explanation": "Filter circuits, such as low-pass, high-pass, band-pass, and band-stop filters, rely on impedance variations with frequency to achieve their purpose. Choices A, B, and D describe unintended consequences or incorrect applications of impedance in filtering.",
+      "common_mistake_notes": "Common mistake: Choosing A if the learner focuses on resistance without considering reactance."
+    }
+  ]
+}

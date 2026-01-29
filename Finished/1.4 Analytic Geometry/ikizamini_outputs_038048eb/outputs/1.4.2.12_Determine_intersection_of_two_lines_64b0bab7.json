@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.2.12",
+  "objective_text": "Determine intersection of two lines",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the point of intersection for the lines with equations: y = 2x + 3 and y = -x + 5.",
+      "choices": {
+        "A": "(1, 5)",
+        "B": "(2, 7)",
+        "C": "(4/3, 7/3)",
+        "D": "(0, 3)"
+      },
+      "correct_choice": "C",
+      "solution": "To find the intersection of two lines, set their equations equal to each other and solve for x. So, 2x + 3 = -x + 5. Solving this equation gives us x = (5 - 3) / 3 = 2/3. Substituting x back into either equation, we get y = 2(2/3) + 3 = 7/3. The intersection point is (4/3, 7/3).",
+      "explanation": "We used the substitution method to find the value of x and then found y by plugging x back into one of the equations.",
+      "common_mistake_notes": "A common mistake would be to incorrectly solve for x or substitute x into the wrong equation. This would lead to an incorrect point."
+    },
+    {
+      "id": "2",
+      "stem": "Find the intersection of the lines with equations: 3x - y = 1 and 4x + 3y = 7.",
+      "choices": {
+        "A": "(1, 2)",
+        "B": "(2, 1)",
+        "C": "(4/3, 5/3)",
+        "D": "(0, 1)"
+      },
+      "correct_choice": "A",
+      "solution": "To find the intersection, we can either solve the system of equations using substitution or elimination. Here, we'll use elimination: Multiply the first equation by 3 to get 9x - 3y = 3 and add it to the second equation: 13x = 10. So, x = 10/13. Substituting x into either equation gives us y = 3x - 1 = 2. The intersection point is (1, 2).",
+      "explanation": "We used elimination to find the value of x and then found y by plugging x back into one of the equations.",
+      "common_mistake_notes": "A common mistake would be to multiply the wrong coefficients or add/subtract the equations incorrectly. This could lead to an incorrect point."
+    },
+    {
+      "id": "3",
+      "stem": "Find the intersection of the lines with equations: y = 4x - 1 and 2y + x = 7.",
+      "choices": {
+        "A": "(1, 3)",
+        "B": "(2, 6)",
+        "C": "(3/2, 5/2)",
+        "D": "(0, -1)"
+      },
+      "correct_choice": "A",
+      "solution": "First, we can rewrite the second equation to solve for y: y = (7 - x) / 2. Setting this equal to the first equation's y gives us 4x - 1 = (7 - x) / 2. Solving for x gives us x = 3/2. Substituting x into either equation gives us y = 4(3/2) - 1 = 5/2. The intersection point is (1, 3).",
+      "explanation": "We rearranged the second equation to solve for y and then set it equal to the first equation's y to find x. We then found y by plugging x back into one of the equations.",
+      "common_mistake_notes": "A common mistake would be to incorrectly multiply or divide by 2 when solving for y, leading to an incorrect value for x."
+    },
+    {
+      "id": "4",
+      "stem": "Find the intersection of the lines with equations: 5x - 3y = 1 and 7x + 2y = 9.",
+      "choices": {
+        "A": "(1, 2)",
+        "B": "(2, 1)",
+        "C": "(3/2, 5/2)",
+        "D": "(0, 1)"
+      },
+      "correct_choice": "B",
+      "solution": "We'll use the elimination method again. Multiply the first equation by 2 and the second equation by 3 to get 10x - 6y = 2 and 21x + 6y = 27. Adding these equations gives us 31x = 29, so x = 29/31. Substituting x into either equation gives us y = (5(29/31) - 1) / 3 = 1. The intersection point is (2, 1).",
+      "explanation": "We used elimination to find the value of x and then found y by plugging x back into one of the equations.",
+      "common_mistake_notes": "A common mistake would be to multiply the wrong coefficients or add/subtract the equations incorrectly. This could lead to an incorrect point."
+    },
+    {
+      "id": "5",
+      "stem": "Find the intersection of the lines with equations: 2x + 3y = 12 and x - y = 4.",
+      "choices": {
+        "A": "(3, 2)",
+        "B": "(4, 0)",
+        "C": "(6, 2)",
+        "D": "(0, 4)"
+      },
+      "correct_choice": "C",
+      "solution": "We'll use substitution. Solving the second equation for x gives us x = y + 4. Substituting this into the first equation: 2(y + 4) + 3y = 12, which simplifies to 5y = 4. So, y = 4/5 and x = (4/5) + 4 = 24/5. The intersection point is (6, 2).",
+      "explanation": "We solved the second equation for x and then plugged it into the first equation to find y. We then found x by plugging y back into the second equation.",
+      "common_mistake_notes": "A common mistake would be to incorrectly solve for x or substitute x into the wrong equation. This could lead to an incorrect point."
+    },
+    {
+      "id": "6",
+      "stem": "Find the intersection of the lines with equations: 4x - 5y = 10 and 3x + 2y = 7.",
+      "choices": {
+        "A": "(1, 2)",
+        "B": "(2, 1)",
+        "C": "(3/2, 5/2)",
+        "D": "(0, 1)"
+      },
+      "correct_choice": "B",
+      "solution": "We'll use the substitution method. Solving the second equation for x gives us x = (7 - 2y) / 3. Substituting this into the first equation: 4((7 - 2y) / 3) - 5y = 10, which simplifies to y = 1. Plugging y back into either equation gives us x = (7 - 2(1)) / 3 = 2/3. The intersection point is (2, 1).",
+      "explanation": "We solved the second equation for x and then plugged it into the first equation to find y. We then found x by plugging y back into the second equation.",
+      "common_mistake_notes": "A common mistake would be to incorrectly solve for x or substitute x into the wrong equation. This could lead to an incorrect point."
+    },
+    {
+      "id": "7",
+      "stem": "Find the intersection of the lines with equations: 3x + y = 5 and 2y - x = 1.",
+      "choices": {
+        "A": "(1, 2)",
+        "B": "(2, 1)",
+        "C": "(3/2, 5/2)",
+        "D": "(0, 1)"
+      },
+      "correct_choice": "A",
+      "solution": "We'll use the substitution method. Solving the second equation for x gives us x = 2y - 1. Substituting this into the first equation: 3(2y - 1) + y = 5, which simplifies to 7y = 8. So, y = 8/7 and x = 2(8/7) - 1 = 6/7. The intersection point is (1, 2).",
+      "explanation": "We solved the second equation for x and then plugged it into the first equation to find y. We then found x by plugging y back into the second equation.",
+      "common_mistake_notes": "A common mistake would be to incorrectly solve for x or substitute x into the wrong equation. This could lead to an incorrect point."
+    }
+  ]
+}

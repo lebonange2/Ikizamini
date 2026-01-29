@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.9.9 Find power series representations
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.9 Complex Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the power series representation for the function f(x) = ln(1+x).
+A) (x - x^3/2 + x^5/3! - ...)
+B) (-x + x^2/2 - x^3/3! + ...)
+C) (x + x^2/2 + x^3/3! + ...)
+D) (-x - x^2/2 - x^3/3! - ...)
+Correct Answer: B
+
+Solution:
+The derivative of ln(1+x) is 1/(1+x), which can be expanded into a geometric series: 1/(1+x) = 1 - x + x^2 - x^3 + ... Integrating this series term by term gives the power series representation for ln(1+x): ln(1+x) = (-x + x^2/2 - x^3/3! + ...) + C. Since ln(1+0) = 0, the constant of integration C is 0.
+
+Explanation:
+The natural logarithm function can be expanded into a Taylor series around x=0 by differentiating and integrating the geometric series.
+
+Common mistake note:
+A common mistake is to forget that the derivative of ln(1+x) is 1/(1+x), which leads to choosing the wrong series.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+Find the power series representation for the function f(x) = e^(-x).
+A) (1 - x + x^2/2! - x^3/3! + ...)
+B) (1 + x + x^2/2! + x^3/3! + ...)
+C) (-1 - x - x^2/2! - x^3/3! - ...)
+D) (-1 + x - x^2/2! + x^3/3! + ...)
+Correct Answer: A
+
+Solution:
+The function e^(-x) is the derivative of -e^(-x), which is a known power series: -e^(-x) = (x - x^2/2! + x^3/3! - ...). Integrating this series term by term gives the power series representation for e^(-x): e^(-x) = (1 - x + x^2/2! - x^3/3! + ...) + C. Since e^(0) = 1, the constant of integration C is 0.
+
+Explanation:
+The exponential function can be expanded into a Taylor series around x=0 by differentiating and integrating the known power series for -e^(-x).
+
+Common mistake note:
+A common mistake is to forget that e^(-x) is the derivative of -e^(-x), which leads to choosing the wrong series.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer):
+Find the power series representation for the function f(x) = 1/(1-x)^2.
+A) (x + x^2 + x^3 + ...)
+B) (1 + 2x + 3x^2 + ...)
+C) (1 - 2x + 3x^2 - ...)
+D) (-1 + 2x - 3x^2 + ...)
+Correct Answer: B
+
+Solution:
+The function f(x) = 1/(1-x)^2 is the derivative of 1/(1-x), which is a known geometric series: 1/(1-x) = (1 + x + x^2 + ...). Differentiating this series term by term gives the power series representation for f(x): f(x) = (1 + 2x + 3x^2 + ...) + C. Since f(0) = 1, the constant of integration C is 0.
+
+Explanation:
+The function can be expanded into a Taylor series around x=0 by differentiating the known geometric series for 1/(1-x).
+
+Common mistake note:
+A common mistake is to forget that f(x) is the derivative of 1/(1-x), which leads to choosing the wrong series.
+------------------------------------------------------------------------------
+
+Problem 4 (Yuiop):
+Find the power series representation for the function f(x) = sin(x)/x.
+A) (1 - x^2/3! + x^4/5! - ...)
+B) (x - x^3/3! + x^5/5! - ...)
+C) (-x + x^3/3! - x^5/5! + ...)
+D) (x + x^3/3! + x^5/5! + ...)
+Correct Answer: B
+
+Solution:
+The function f(x) = sin(x)/x can be rewritten as sin(x)/x = (sin(x))/x * (1/x), which becomes (cos(x) - sin(x)/x). The derivative of cos(x) is -sin(x), so we have a known power series for cos(x): cos(x) = (1 - x^2/2! + x^4/4! - ...). Differentiating this series term by term and dividing by x gives the power series representation for f(x): f(x) = (x - x^3/3! + x^5/5! - ...) + C. Since f(0) = 1, the constant of integration C is 0.
+
+Explanation:
+The function can be expanded into a Taylor series around x=0 by rewriting it and differentiating the known power series for cos(x).
+
+Common mistake note:
+A common mistake is to forget that f(x) involves the derivative of cos(x), which leads to choosing the wrong series.
+------------------------------------------------------------------------------
+
+Problem 5 (Bvnmm):
+Find the power series representation for the function f(x) = arctan(x).
+A) (x - x^3/3 + x^5/5! - ...)
+B) (x + x^3/3 + x^5/5! + ...)
+C) (-x - x^3/3 - x^5/5! - ...)
+D) (x - x^3/3 - x^5/5! + ...)
+Correct Answer: A
+
+Solution:
+The derivative of arctan(x) is 1/(1+x^2), which can be expanded into a partial fraction decomposition: 1/(1+x^2) = (1/(1-x)) - (1/(1+x)). Integrating these series term by term gives the power series representation for arctan(x): arctan(x) = (x - x^3/3 + x^5/5! - ...) + C. Since arctan(0) = 0, the constant of integration C is 0.
+
+Explanation:
+The inverse tangent function can be expanded into a Taylor series around x=0 by differentiating and integrating the partial fraction decomposition of 1/(1+x^2).
+
+Common mistake note:
+A common mistake is to forget that the derivative of arctan(x) involves partial fraction decomposition, which leads to choosing the wrong series.
+------------------------------------------------------------------------------
+
+Problem 6 (Xzcvbnm):
+Find the power series representation for the function f(x) = (1-cos(x))/x^2.
+A) (x - x^3/3! + x^5/5! - ...)
+B) (1 - 2x^2/3! + 4x^4/5! - ...)
+C) (-x + x^3/3! - x^5/5! + ...)
+D) (1 + 2x^2/3! + 4x^4/5! + ...)
+Correct Answer: B
+
+Solution:
+The function f(x) = (1-cos(x))/x^2 can be rewritten as (1-cos(x))/x^2 = (sin^2(x))/(x^2 * cos(x)). The derivative of sin^2(x) is 2sin(x)cos(x), so we have a known power series for sin^2(x): sin^2(x) = (x^2 - x^4/3! + x^6/5! - ...). Dividing this series by x^2 and multiplying by cos(x) gives the power series representation for f(x): f(x) = (1 - 2x^2/3! + 4x^4/5! - ...) + C. Since f(0) = 1, the constant of integration C is 0.
+
+Explanation:
+The function can be expanded into a Taylor series around x=0 by rewriting it and using the known power series for sin^2(x).
+
+Common mistake note:
+A common mistake is to forget that f(x) involves the derivative of sin^2(x), which leads to choosing the wrong series.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdfghjkl):
+Find the power series representation for the function f(x) = e^(2x)cos(3x).
+A) (1 + 4x + 16x^2/2! + ...)
+B) (1 - 6x + 54x^2/2! - ...)
+C) (-1 + 8x - 72x^2/2! + ...)
+D) (1 - 2x + 4x^2/2! - ...)
+Correct Answer: B
+
+Solution:
+The function f(x) = e^(2x)cos(3x) can be expanded using the product of power series: e^(2x) = (1 + 2x + 4x^2/2! + ...) and cos(3x) = (1 - 9x^2/2! + 81x^4/4! - ...). Multiplying these series term by term gives the power series representation for f(x): f(x) = (1 - 6x + 54x^2/2! - ...) + C. Since f(0) = 1, the constant of integration C is 0.
+
+Explanation:
+The function can be expanded into a Taylor series around x=0 by multiplying the known power series for e^(2x) and cos(3x).
+
+Common mistake note:
+A common mistake is to forget to multiply the terms correctly, which leads to choosing the wrong series.
+------------------------------------------------------------------------------

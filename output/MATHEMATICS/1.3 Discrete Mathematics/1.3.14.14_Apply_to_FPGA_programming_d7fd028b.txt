@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.14.14 Apply to FPGA programming
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.14 Boolean Algebra
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Assemble a digital circuit on an FPGA):
+What is the correct process for assembling a digital circuit on an FPGA?
+A) Translate high-level code into Verilog or VHDL, synthesize, place & route, and finally configure the FPGA.
+B) Directly program the gates and flip- flops using binary codes.
+C) Manually wire logical components together inside the FPGA fabric.
+D) Load a pre-assembled circuit from an online library without modification.
+Correct Answer: A
+
+Solution:
+The correct process involves translating high-level code into hardware description languages (Verilog or VHDL), synthesizing the design, placing and routing logic elements, and finally configuring the FPGA with the resulting bitstream.
+
+Explanation:
+B is incorrect because FPGA programming does not involve direct binary coding of gates. C is impractical as manual wiring inside the FPGA fabric is not practical. D may require customization for specific applications.
+
+Common mistake note:
+Common mistake: Choosing B, thinking that FPGAs work like traditional logic boards where components are wired directly.
+------------------------------------------------------------------------------
+
+Problem 2 (Implement a finite state machine on an FPGA):
+What is the primary method for implementing a finite state machine (FSM) on an FPGA?
+A) Use a lookup table (LUT) to store all possible states and transitions.
+B) Manually create flip- flops and logic gates for each state and transition.
+C) Program the FSM using a hardware description language like VHDL or Verilog.
+D) Connect premade FSM blocks from an FPGA library without modification.
+Correct Answer: C
+
+Solution:
+The primary method is to program the FSM using a hardware description language (HDL) such as VHDL or Verilog, which allows for automated synthesis and optimization by the FPGA tools.
+
+Explanation:
+A is incorrect because LUTs are used internally but not directly for FSM implementation. B is impractical for complex FSMs due to manual effort required. D assumes premade blocks will always fit the desired FSM, which may not be true.
+
+Common mistake note:
+Common mistake: Choosing A or B, underestimating the power and efficiency of HDL-based FPGA design.
+------------------------------------------------------------------------------
+
+Problem 3 (Configure an FPGA for high-speed data transfer):
+What is a crucial step in configuring an FPGA for high-speed data transfer?
+A) Use low-skew clock distribution.
+B) Increase the clock frequency to its maximum value.
+C) Reduce the number of logic elements to minimize power consumption.
+D) Disable all unused I/O pins to save resources.
+Correct Answer: A
+
+Solution:
+Using a low- skew clock distribution is crucial for maintaining signal integrity and ensuring reliable high-speed data transfer in an FPGA.
+
+Explanation:
+B can lead to timing violations and instability. C reduces performance, not necessary for high-speed transfers. D may save resources but does not directly impact data transfer speed.
+
+Common mistake note:
+Common mistake: Choosing B or C, focusing on unrelated optimization goals.
+------------------------------------------------------------------------------
+
+Problem 4 (Debug an FPGA design):
+What is a common technique used to debug an FPGA design?
+A) Visualize the logic signals using a digital oscilloscope.
+B) Add blinkenlights to indicate circuit activity.
+C) Use simulation and synthesis tools to test the HDL code before implementation.
+D) Manually inspect the physical layout of the FPGA for errors.
+Correct Answer: C
+
+Solution:
+Using simulation and synthesis tools to test the hardware description language (HDL) code prior to implementation is a common technique for debugging an FPGA design.
+
+Explanation:
+A can be used but is not a primary debugging method. B is impractical for complex designs. D is not feasible as physical inspection does not reveal logical errors.
+
+Common mistake note:
+Common mistake: Choosing A or D, focusing on hardware-based debugging methods rather than software tools.
+------------------------------------------------------------------------------
+
+Problem 5 (Optimize FPGA resource usage):
+Which of the following techniques can be used to optimize FPGA resource usage?
+A) Use a single large block for all logic instead of smaller ones.
+B) Reduce clock frequency to minimize power consumption.
+C) Employ pipelining and parallelism in algorithms.
+D) Disable unused I/O pins to save resources.
+Correct Answer: C
+
+Solution:
+Employing pipelining and parallelism in algorithms can optimize FPGA resource usage by efficiently utilizing hardware resources.
+
+Explanation:
+A increases resource usage due to interconnect complexity. B does not directly optimize resources, only power consumption. D saves resources but does not necessarily optimize usage.
+
+Common mistake note:
+Common mistake: Choosing A or B, focusing on unrelated optimization goals.
+------------------------------------------------------------------------------
+
+Problem 6 (Configure an FPGA for real-time processing):
+What is a key consideration when configuring an FPGA for real-time processing?
+A) Maximize the number of available LUTs.
+B) Use a high clock frequency without considering timing constraints.
+C) Implement pipelining and parallelism in algorithms to reduce latency.
+D) Minimize the number of I/O pins to save resources.
+Correct Answer: C
+
+Solution:
+Implementing pipelining and parallelism in algorithms is key for reducing latency and enabling real-time processing on an FPGA.
+
+Explanation:
+A, B, and D do not directly address the need for low-latency processing. A and B can lead to timing violations or inefficient resource usage, while D does not impact processing speed.
+
+Common mistake note:
+Common mistake: Choosing A, B, or D, focusing on unrelated optimization goals.
+------------------------------------------------------------------------------
+
+Problem 7 (Program an FPGA with a precompiled bitstream):
+What is the process for programming an FPGA with a precompiled bitstream?
+A) Translate high-level code into Verilog or VHDL, synthesize, and generate a new bitstream.
+B) Load the bitstream file onto the FPGA using a JTAG interface or configuration tool.
+C) Manually program the gates and flip- flops inside the FPGA fabric.
+D) Connect premade circuit blocks from an FPGA library without modification.
+Correct Answer: B
+
+Solution:
+Loading the precompiled bitstream file onto the FPGA using a JTAG interface or configuration tool is the correct process for programming with a pre-assembled design.
+
+Explanation:
+A involves creating a new design, not loading a precompiled one. C is manual work that defeats the purpose of a precompiled bitstream. D implies no need for loading a bitstream, which is incorrect.
+
+Common mistake note:
+Common mistake: Choosing A or C, assuming that FPGA programming always starts from scratch.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.4.1",
+  "objective_text": "Find critical points",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1.5.4.1]Q1",
+      "stem": "Find the critical points of the function f(x) = x^3 - 6x^2 + 9x.",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(3, 0)",
+        "C": "(-3, 0)",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "To find the critical points of a function, take its derivative and set it equal to zero. For f(x), the derivative is f'(x) = 3x^2 - 12x + 9. Setting this to zero gives (3x - 3)(x - 3) = 0, so x = 1 or x = 3. Both are critical points since f(x) is a polynomial. The correct answer is B: (3, 0).",
+      "explanation": "The derivative helps identify slope changes; setting it to zero finds potential critical points. Factoring the derivative yields solutions.",
+      "common_mistake_notes": "Mistakes may include thinking f(0) = 0 is a critical point due to zero derivative at x = 0, but it's an inflection point, not a local extremum."
+    },
+    {
+      "id": "[1.5.4.1]Q2",
+      "stem": "Find the critical points of g(x) = x^4 - 8x^3 + 18x^2.",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(2, 0)",
+        "C": "(3, 0)",
+        "D": "Does not exist"
+      },
+      "correct_choice": "C",
+      "solution": "Derive g(x) to get g'(x) = 4x^3 - 24x^2 + 36x. Setting it to zero gives x(2x - 3)(x - 3) = 0, so x = 0, 3/2, or 3. All are valid critical points for a polynomial, but the question asks for one distinct point; choose x = 3 as it's an integer. The correct answer is C: (3, g(3)).",
+      "explanation": "Derivative identifies potential critical points by setting it to zero and factoring. Select appropriate point from solutions found.",
+      "common_mistake_notes": "Mistakes may include focusing only on x = 0 as the integer solution, overlooking other valid solutions like x = 3/2."
+    },
+    {
+      "id": "[1.5.4.1]Q3",
+      "stem": "Find the critical points of h(x) = e^x - x^2.",
+      "choices": {
+        "A": "(0, 1)",
+        "B": "(1, e-1)",
+        "C": "(ln(2), 2-ln(2))",
+        "D": "Does not exist"
+      },
+      "correct_choice": "C",
+      "solution": "Derive h(x) to get h'(x) = e^x - 2x. Setting it equal to zero gives a transcendental equation with no algebraic solution. Use numerical methods or graphing, like Newton's method, to find an approximate solution, such as x ≈ ln(2). The correct answer is C: (ln(2), h(ln(2))).",
+      "explanation": "Transcendental equations may not have exact solutions; use numerical methods or graphs. Identify critical point from approximation.",
+      "common_mistake_notes": "Mistakes may include attempting to solve algebraically, which can be difficult or impossible. Recognize when numerical approaches are needed."
+    },
+    {
+      "id": "[1.5.4.1]Q4",
+      "stem": "Find the critical points of p(x) = x^2 sin(x) - x.",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(π/2, π/2)",
+        "C": "(π, 0)",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "Derive p(x) to get p'(x) = 2x sin(x) + x^2 cos(x) - 1. Setting it equal to zero gives a challenging equation. Use properties of sine and cosine, like sin(π/2) = 1, cos(π/2) = 0, to check if x = π/2 is a solution. It is, so the correct answer is B: (π/2, p(π/2)).",
+      "explanation": "For nonlinear equations, specific values can help identify solutions. Use sine and cosine properties when applicable.",
+      "common_mistake_notes": "Mistakes may include trying to simplify equation algebraically, which can be difficult or impossible. Recognize when specific values are helpful."
+    },
+    {
+      "id": "[1.5.4.1]Q5",
+      "stem": "Find the critical points of q(x) = x^3 - 6x^2 + 9x + ln(x).",
+      "choices": {
+        "A": "(0, ln(0))",
+        "B": "(1, 4+ln(1))",
+        "C": "(3, 0+ln(3))",
+        "D": "Does not exist"
+      },
+      "correct_choice": "C",
+      "solution": "Derive q(x) to get q'(x) = 3x^2 - 12x + 9 + 1/x. Setting it equal to zero gives a cubic equation, which may be challenging. Check if x = 3 is a solution by plugging in: q'(3) = 0. The correct answer is C: (3, q(3)).",
+      "explanation": "For higher-degree polynomials, exact solutions might be hard. Use specific values to identify critical points.",
+      "common_mistake_notes": "Mistakes may include attempting to solve the cubic equation algebraically, which can be difficult or impossible. Recognize when specific values are helpful."
+    },
+    {
+      "id": "[1.5.4.1]Q6",
+      "stem": "Find the critical points of r(x) = x^2 e^x.",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(1, e)",
+        "C": "(-1, -e^{-1})",
+        "D": "Does not exist"
+      },
+      "correct_choice": "A",
+      "solution": "Derive r(x) to get r'(x) = x^2 e^x + 2xe^x. Setting it equal to zero gives xe^x(x+2) = 0, so x = 0 or x = -2. Both are valid critical points for a continuous function. Choose x = 0 as the simpler solution: A: (0, r(0)).",
+      "explanation": "For exponential functions, factor the derivative to find solutions. Select appropriate point from solutions found.",
+      "common_mistake_notes": "Mistakes may include focusing on x = -2 and overlooking x = 0 as a valid, simpler solution."
+    },
+    {
+      "id": "[1.5.4.1]Q7",
+      "stem": "Find the critical points of s(x) = sin(x) + cos(2x).",
+      "choices": {
+        "A": "(π/2, 1)",
+        "B": "(π, -1)",
+        "C": "(0, 1)",
+        "D": "Does not exist"
+      },
+      "correct_choice": "A",
+      "solution": "Derive s(x) to get s'(x) = cos(x) - 2sin(2x). Setting it equal to zero gives a trigonometric equation. Check if x = π/2 is a solution using sine and cosine properties: s'(π/2) = 0. The correct answer is A: (π/2, s(π/2)).",
+      "explanation": "For trig equations, specific values can help identify solutions. Use sine and cosine properties when applicable.",
+      "common_mistake_notes": "Mistakes may include attempting to solve algebraically, which can be difficult or impossible. Recognize when specific values are helpful."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.14.3 Set up arc length integrals
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.14 Applications of Integrals - Arc Length and Surface Area
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (AslQc):
+Find the arc length of the curve y = x^2 from x = 0 to x = 2. Which integral represents the arc length?
+A) (∫ from 0 to 2) √(1 + 4x^2) dx
+B) (∫ from 0 to 2) √(1 + 2x) dx
+C) (∫ from 0 to 2) √(1 + x^4) dx
+D) (∫ from 0 to 2) √(1 + x^2) dx
+Correct Answer: D
+
+Solution:
+The arc length formula is L = ∫√(1 + (dy/dx)^2) dx. For y = x^2, dy/dx = 2x. So the integral becomes L = ∫√(1 + (2x)^2) dx = ∫√(1 + 4x^2) dx. The correct choice is D.
+
+Explanation:
+The arc length formula involves the derivative of the function squared, which for y = x^2 is 4x^2.
+
+Common mistake note:
+A common mistake is to forget to square the derivative (dy/dx), resulting in choice B.
+------------------------------------------------------------------------------
+
+Problem 2 (vLrKj):
+Find the arc length of the curve y = √x from x = 1 to x = 4. Which integral represents the arc length?
+A) (∫ from 1 to 4) √(1 + (1/2√x)^2) dx
+B) (∫ from 1 to 4) √(1 + x^2) dx
+C) (∫ from 1 to 4) √(1 + x^(3/2)) dx
+D) (∫ from 1 to 4) √(1 + (1/x)^2) dx
+Correct Answer: A
+
+Solution:
+The arc length formula is L = ∫√(1 + (dy/dx)^2) dx. For y = √x, dy/dx = 1/(2√x). So the integral becomes L = ∫√(1 + (1/(2√x))^2) dx = ∫√(1 + (1/4x)) dx. The correct choice is A.
+
+Explanation:
+The derivative of y = √x simplifies to 1/(2√x), which must be squared before plugging into the arc length formula.
+
+Common mistake note:
+A common mistake is to forget to divide by 2 when finding dy/dx, resulting in choice C.
+------------------------------------------------------------------------------
+
+Problem 3 (WzrJt):
+Find the arc length of the curve y = sin(x) from x = 0 to x = π. Which integral represents the arc length?
+A) (∫ from 0 to π) √(1 + cos^2(x)) dx
+B) (∫ from 0 to π) √(1 - sin^2(x)) dx
+C) (∫ from 0 to π) √(1 + sin^2(x)) dx
+D) (∫ from 0 to π) √(1 + cos(x)) dx
+Correct Answer: C
+
+Solution:
+The arc length formula is L = ∫√(1 + (dy/dx)^2) dx. For y = sin(x), dy/dx = cos(x). So the integral becomes L = ∫√(1 + cos^2(x)) dx. The correct choice is C.
+
+Explanation:
+The derivative of y = sin(x) is cos(x), which must be squared before plugging into the arc length formula.
+
+Common mistake note:
+A common mistake is to use the Pythagorean identity incorrectly, resulting in choice B.
+------------------------------------------------------------------------------
+
+Problem 4 (xMfKz):
+Find the arc length of the curve y = e^x from x = 0 to x = ln(2). Which integral represents the arc length?
+A) (∫ from 0 to ln(2)) √(1 + e^(2x)) dx
+B) (∫ from 0 to ln(2)) √(1 + e^x) dx
+C) (∫ from 0 to ln(2)) √(1 - e^(2x)) dx
+D) (∫ from 0 to ln(2)) √(1 - e^x) dx
+Correct Answer: A
+
+Solution:
+The arc length formula is L = ∫√(1 + (dy/dx)^2) dx. For y = e^x, dy/dx = e^x. So the integral becomes L = ∫√(1 + (e^x)^2) dx = ∫√(1 + e^(2x)) dx. The correct choice is A.
+
+Explanation:
+The derivative of y = e^x is e^x, which must be squared before plugging into the arc length formula.
+
+Common mistake note:
+A common mistake is to forget to square e^x when finding dy/dx, resulting in choice B.
+------------------------------------------------------------------------------
+
+Problem 5 (nRgJt):
+Find the arc length of the curve y = x^3 from x = 0 to x = 1. Which integral represents the arc length?
+A) (∫ from 0 to 1) √(1 + 9x^4) dx
+B) (∫ from 0 to 1) √(1 + 6x^2) dx
+C) (∫ from 0 to 1) √(1 + 3x^2) dx
+D) (∫ from 0 to 1) √(1 + x^6) dx
+Correct Answer: C
+
+Solution:
+The arc length formula is L = ∫√(1 + (dy/dx)^2) dx. For y = x^3, dy/dx = 3x^2. So the integral becomes L = ∫√(1 + (3x^2)^2) dx = ∫√(1 + 9x^4) dx. The correct choice is C.
+
+Explanation:
+The derivative of y = x^3 is 3x^2, which must be squared before plugging into the arc length formula.
+
+Common mistake note:
+A common mistake is to forget to square 3x^2 when finding dy/dx, resulting in choice B.
+------------------------------------------------------------------------------
+
+Problem 6 (tLrJg):
+Find the arc length of the curve y = ln(x) from x = 1 to x = e. Which integral represents the arc length?
+A) (∫ from 1 to e) √(1 + (1/x)^2) dx
+B) (∫ from 1 to e) √(1 - ln^2(x)) dx
+C) (∫ from 1 to e) √(1 + x^2) dx
+D) (∫ from 1 to e) √(1 + (1/x)) dx
+Correct Answer: A
+
+Solution:
+The arc length formula is L = ∫√(1 + (dy/dx)^2) dx. For y = ln(x), dy/dx = 1/x. So the integral becomes L = ∫√(1 + (1/x)^2) dx. The correct choice is A.
+
+Explanation:
+The derivative of y = ln(x) is 1/x, which must be squared before plugging into the arc length formula.
+
+Common mistake note:
+A common mistake is to use the wrong function for dy/dx, resulting in choice C.
+------------------------------------------------------------------------------
+
+Problem 7 (hMfJt):
+Find the arc length of the curve y = 2sin(x) from x = 0 to x = π/2. Which integral represents the arc length?
+A) (∫ from 0 to π/2) √(1 + 4cos^2(x)) dx
+B) (∫ from 0 to π/2) √(1 - 4sin^2(x)) dx
+C) (∫ from 0 to π/2) √(1 + 4sin(x)) dx
+D) (∫ from 0 to π/2) √(1 + 2sin(x)) dx
+Correct Answer: A
+
+Solution:
+The arc length formula is L = ∫√(1 + (dy/dx)^2) dx. For y = 2sin(x), dy/dx = 2cos(x). So the integral becomes L = ∫√(1 + (2cos(x))^2) dx = ∫√(1 + 4cos^2(x)) dx. The correct choice is A.
+
+Explanation:
+The derivative of y = 2sin(x) is 2cos(x), which must be squared before plugging into the arc length formula.
+
+Common mistake note:
+A common mistake is to forget to multiply the cosine term by 2 when finding dy/dx, resulting in choice C.
+------------------------------------------------------------------------------

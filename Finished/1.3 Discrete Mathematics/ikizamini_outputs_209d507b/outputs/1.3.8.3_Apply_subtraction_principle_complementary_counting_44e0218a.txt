@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.8.3 Apply subtraction principle (complementary counting)
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.8 Counting Principles
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One):
+A bag contains 20 red balls and some blue balls. If there are a total of 50 balls in the bag, how many blue balls are there?
+A) 15
+B) 20
+C) 30
+D) 45
+Correct Answer: C
+
+Solution:
+To find the number of blue balls, we can use complementary counting. Since there are 50 balls in total and 20 are red, we subtract the number of red balls from the total to get the number of blue balls: 50 - 20 = 30.
+
+Explanation:
+Complementary counting is used when we want to find one quantity by knowing the total and another related quantity. In this case, we know the total number of balls and the number of red balls, so we subtract the red balls from the total to get the blue balls.
+
+Common mistake note:
+A common mistake would be to choose option A (15), which is the difference between 50 and 20 without considering that some of those 30 remaining balls are also red. The correct approach uses complementary counting to account for all balls in the bag.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+A box contains 7 white socks and 11 black socks. If a person randomly takes out one sock, then another without replacing the first, what is the probability of picking two white socks consecutively?
+A) 7/18
+B) 6/28
+C) 7/28
+D) 6/18
+Correct Answer: C
+
+Solution:
+First, we find the probability of picking a white sock on the first draw: P(white) = 7/18. Since the sock is not replaced, there are now 6 white socks out of 17 total socks for the second draw: P(white | white) = 6/17. To find the overall probability of picking two white socks consecutively, we multiply these probabilities together: (7/18) * (6/17). Simplifying gives us 42/306, which reduces to 7/51 or approximately 7/28.
+
+Explanation:
+The problem involves conditional probability and subtraction principle. We calculate the probability of picking a white sock on both draws, considering that the first draw affects the second draw by reducing the total number of socks.
+
+Common mistake note:
+A common mistake would be to multiply the probabilities without accounting for the reduction in the total number of socks after the first draw. This would result in an incorrect probability of (7/18) * (7/18), which does not consider that there are fewer white socks available for the second draw.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+A library has 300 fiction books and 450 non-fiction books. If a patron randomly selects one book, what is the probability that they do not pick a non-fiction book?
+A) 1/2
+B) 2/3
+C) 3/7
+D) 4/7
+Correct Answer: C
+
+Solution:
+The total number of books is 300 fiction + 450 non-fiction = 750. The probability of not picking a non-fiction book (i.e., picking a fiction book) is the number of fiction books divided by the total number of books: P(fiction) = 300/750, which simplifies to 2/5 or approximately 3/7.
+
+Explanation:
+To find the probability of not picking a non-fiction book, we use complementary counting. We calculate the probability of picking a fiction book and then express it as a fraction of the total number of books.
+
+Common mistake note:
+A common mistake would be to choose option A (1/2), assuming that the probabilities are equal for fiction and non-fiction books. However, there are more non-fiction books than fiction books, so the probability of picking a non-fiction book is higher.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+There are 30 students in a class, out of which 18 play soccer and 12 play basketball. If every student plays at least one sport, how many students play both soccer and basketball?
+A) 6
+B) 9
+C) 12
+D) 15
+Correct Answer: B
+
+Solution:
+We can use the subtraction principle to find the number of students who play both sports. First, we add the number of soccer players and basketball players: 18 + 12 = 30. Since this sum is equal to the total number of students, it means that there are no students playing only one sport; all students play both sports. Therefore, the number of students who play both soccer and basketball is equal to the total number of students minus the number of students who play only one sport, which is 0 in this case: 30 - 0 = 12.
+
+Explanation:
+The problem involves finding the intersection of two groups (soccer players and basketball players) when we know that every student plays at least one sport. By adding the numbers of students in each group and comparing it to the total number of students, we can determine that all students play both sports.
+
+Common mistake note:
+A common mistake would be to choose option C (12), assuming that the sum of soccer players and basketball players is equal to the number of students who play both sports. However, this approach does not account for the fact that some students might play only one sport.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+A box contains 5 red marbles, 7 blue marbles, and 8 green marbles. If a marble is randomly drawn from the box without replacement, what is the probability of drawing a red or a blue marble?
+A) 12/20
+B) 12/21
+C) 13/20
+D) 13/21
+Correct Answer: B
+
+Solution:
+The probability of drawing a red or a blue marble is the sum of the probabilities of drawing each color without replacement. P(red) = 5/20, and P(blue) = 7/19 (since one red marble has been removed). Adding these probabilities gives us: (5/20) + (7/19) ≈ 12/38, which simplifies to 12/21.
+
+Explanation:
+The problem involves finding the probability of drawing either a red or blue marble without replacement. We calculate each probability separately and then add them together, considering that one marble has been removed from the total after the first draw.
+
+Common mistake note:
+A common mistake would be to choose option A (12/20), assuming that the probabilities are independent and can be added directly. However, since we are drawing without replacement, the probability of drawing a blue marble changes after removing one red marble.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+There are 36 students in a class, out of which 14 play chess and 20 play checkers. If some students play both games, how many students play neither?
+A) 8
+B) 10
+C) 12
+D) 14
+Correct Answer: B
+
+Solution:
+We can use complementary counting to find the number of students who play neither game. First, we add the number of chess players and checkers players: 14 + 20 = 34. Since there are 36 students in total, the number of students who play neither game is the difference between the total number of students and the sum of those playing at least one game: 36 - 34 = 2.
+
+Explanation:
+To find the number of students who play neither chess nor checkers, we subtract the sum of students who play each game from the total number of students. This gives us the count of students who do not participate in either activity.
+
+Common mistake note:
+A common mistake would be to choose option D (14), assuming that all students must play either chess or checkers. However, the problem does not specify that every student plays one of the games, so it's possible that some students don't play either.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+A jar contains 25 red jellybeans and 15 green jellybeans. If you randomly pick two jellybeans without replacement, what is the probability that both are red?
+A) 6/39
+B) 7/39
+C) 8/39
+D) 9/39
+Correct Answer: C
+
+Solution:
+First, we find the probability of picking a red jellybean on the first draw: P(red) = 25/40. Since the jellybean is not replaced, there are now 24 red jellybeans out of 39 total for the second draw: P(red | red) = 24/39. To find the overall probability of picking two red jellybeans consecutively, we multiply these probabilities together: (25/40) * (24/39). Simplifying gives us 600/1560, which reduces to 8/39.
+
+Explanation:
+The problem involves conditional probability and subtraction principle. We calculate the probability of picking a red jellybean on both draws, considering that the first draw affects the second draw by reducing the total number of jellybeans available.
+
+Common mistake note:
+A common mistake would be to multiply the probabilities without accounting for the reduction in the total number of jellybeans after the first draw. This would result in an incorrect probability of (25/40) * (25/40), which does not consider that there are fewer red jellybeans available for the second draw.
+------------------------------------------------------------------------------

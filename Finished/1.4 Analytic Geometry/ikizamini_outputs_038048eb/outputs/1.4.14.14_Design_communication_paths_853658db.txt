@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.14.14 Design communication paths
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.14 Analytic Geometry Applications
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+In a client-server architecture, data needs to be sent from Device A to Device B through a network. Which of the following is the correct sequence of devices that the data will pass through?
+A) Device A → Router → Server → Router → Device B
+B) Device A → Switch → Server → Switch → Device B
+C) Device A → Server → Router → Device B
+D) Device A → Server → Switch → Router → Device B
+Correct Answer: A
+
+Solution:
+Data flows from the client (Device A) to the server and then back to the client. The data would first go through a router to reach the server and then return through the same path to reach Device B.
+
+Explanation:
+The correct sequence ensures that data follows standard routing, involving routers for external communication and switches for internal network connections.
+
+Common mistake note:
+Common mistake: Choosing option B, which uses switches instead of routers. Routers connect different networks, while switches connect devices within a single network.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+In a distributed system with multiple nodes, data needs to be sent from Node A to Node D. Which communication path is the most efficient assuming all links have equal bandwidth?
+A) Node A → Router 1 → Router 2 → Router 3 → Node D
+B) Node A → Router 1 → Router 2 → Node C → Router 3 → Node D
+C) Node A → Router 1 → Router 2 → Router 4 → Router 5 → Node D
+D) Node A → Router 1 → Router 2 → Router 3 → Router 4 → Node D
+Correct Answer: B
+
+Solution:
+The most efficient path has the fewest number of hops, reducing latency and potential congestion. In this case, option B has only three hops.
+
+Explanation:
+Efficient paths minimize hops to reduce delays and improve system performance in distributed systems.
+
+Common mistake note:
+Common mistake: Choosing options A or C, which have more hops. More hops increase latency and may lead to congestion.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+In a peer-to-peer network, Node X needs to send data to Node Y. Which of the following statements is true about the communication path?
+A) Data flows directly from Node X to Node Y through a dedicated link.
+B) Data flows from Node X to a central server, which then forwards it to Node Y.
+C) Data may follow different paths depending on the availability of other nodes in the network.
+D) Data is broadcasted to all nodes in the network, and Node Y receives it.
+Correct Answer: C
+
+Solution:
+In a peer-to-peer network, data can be transmitted directly or through other nodes if the direct link is unavailable, resulting in varying paths.
+
+Explanation:
+Peer-to-peer networks rely on node cooperation for resource sharing and routing, which means paths may change based on network state.
+
+Common mistake note:
+Common mistake: Choosing options A or B, which imply centralized architectures. Peer-to-peer networks lack dedicated links.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+In a client-server architecture, what is the primary role of a load balancer in designing communication paths?
+A) Encrypt data for secure transmission.
+B) Ensure data integrity by checking checksums.
+C) Distribute incoming requests evenly across multiple servers.
+D) Compress data to reduce network bandwidth usage.
+Correct Answer: C
+
+Solution:
+A load balancer distributes traffic across servers, improving performance and availability.
+
+Explanation:
+Load balancing is crucial for high-availability systems by preventing server overload and optimizing resource use.
+
+Common mistake note:
+Common mistake: Choosing options A, B, or D, which relate to other aspects of network security or optimization but not load balancer's primary role.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+In a mesh network topology, how many communication paths exist between Node A and Node Z?
+A) 1
+B) 2
+C) 3
+D) More than 3
+Correct Answer: D
+
+Solution:
+Mesh networks have redundant connections, creating multiple paths between any two nodes.
+
+Explanation:
+Redundant connections in mesh networks improve reliability and fault tolerance by providing multiple communication paths.
+
+Common mistake note:
+Common mistake: Choosing a number less than 3, assuming simpler topologies. Mesh networks have complex connectivity.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+In a star network topology, what device is responsible for routing data between connected devices?
+A) Hub
+B) Switch
+C) Router
+D) Gateway
+Correct Answer: B
+
+Solution:
+A switch routes data in a star network, connecting all devices.
+
+Explanation:
+Star networks use switches for efficient data transfer and reduced congestion by managing communication between connected devices.
+
+Common mistake note:
+Common mistake: Choosing option A, which was common in older networks but does not route in star topologies. Hubs broadcast data to all devices.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+In a hybrid network topology, what two basic topologies are combined?
+A) Bus and Ring
+B) Star and Mesh
+C) Client-Server and Peer-to-Peer
+D) Point-Point and Point-Multipoint
+Correct Answer: B
+
+Solution:
+A hybrid network combines star topology for central management and mesh for redundancy.
+
+Explanation:
+Hybrid networks merge strengths of different topologies, often using a star for central connectivity and mesh connections for improved reliability.
+
+Common mistake note:
+Common mistake: Choosing options A, C, or D, which are not common hybrid combinations. Star and Mesh are typically combined in hybrid networks.
+------------------------------------------------------------------------------

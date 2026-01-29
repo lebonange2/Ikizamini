@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.15.15",
+  "objective_text": "Apply to advanced engineering problems",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "A bridge is designed to support a maximum load of 200,000 N. A truck with a weight of 180,000 N approaches the bridge. Is it safe for the truck to cross the bridge?",
+      "choices": {
+        "A": "Yes, the bridge can handle the weight.",
+        "B": "No, the bridge is not designed for this much weight.",
+        "C": "It depends on other factors.",
+        "D": "The question does not provide enough information."
+      },
+      "correct_choice": "A",
+      "solution": "The bridge is designed to support a maximum load of 200,000 N and the truck weighs 180,000 N. Since the truck's weight is less than the bridge's capacity, it is safe for the truck to cross.",
+      "explanation": "This problem tests the application of engineering principles in assessing the safety of structures under load.",
+      "common_mistake_notes": "A common mistake would be to choose B, assuming that any weight above zero would make the bridge unsafe. However, understanding the maximum capacity is crucial for making this determination."
+    },
+    {
+      "id": ":2",
+      "stem": "An engineer needs to design a heat exchanger for a chemical process operating at 150°C and 10 bar. Which of the following materials would be the most suitable?",
+      "choices": {
+        "A": "Copper",
+        "B": "Stainless steel",
+        "C": "Titanium",
+        "D": "Aluminum"
+      },
+      "correct_choice": "C",
+      "solution": "Titanium is a suitable material for high-temperature and pressure applications due to its corrosion resistance, strength, and thermal stability.",
+      "explanation": "This question assesses the selection of materials based on their properties and application requirements in engineering.",
+      "common_mistake_notes": "A common mistake would be to choose A (Copper) or D (Aluminum), which are not suitable for high-temperature and pressure conditions."
+    },
+    {
+      "id": ":3",
+      "stem": "A hydraulic system uses a pump with an output of 20 liters per minute at 100 bar. If the system's pipe diameter is reduced by half, what will be the new flow rate?",
+      "choices": {
+        "A": "40 L/minute",
+        "B": "20 L/minute",
+        "C": "10 L/minute",
+        "D": "5 L/minute"
+      },
+      "correct_choice": "D",
+      "solution": "Using the principle of continuity (A1V1 = A2V2), where A is cross-sectional area and V is velocity, a reduction in pipe diameter by half will increase the velocity fourfold. Since flow rate is directly proportional to velocity, the new flow rate would be 1/4 of the original, or 5 L/minute.",
+      "explanation": "This question tests understanding of fluid dynamics principles in hydraulic systems.",
+      "common_mistake_notes": "A common mistake would be to choose A (40 L/minute), assuming that the flow rate remains constant despite the change in pipe diameter."
+    },
+    {
+      "id": ":4",
+      "stem": "In a reinforced concrete beam, what is the primary function of steel reinforcement?",
+      "choices": {
+        "A": "To increase the beam's compressive strength.",
+        "B": "To increase the beam's tensile strength.",
+        "C": "To improve the beam's fire resistance.",
+        "D": "To reduce the weight of the beam."
+      },
+      "correct_choice": "B",
+      "solution": "Steel reinforcement in a reinforced concrete beam is primarily used to increase its tensile strength, as concrete is strong in compression but weak in tension.",
+      "explanation": "This question evaluates knowledge of structural engineering and materials science principles.",
+      "common_mistake_notes": "A common mistake would be to choose A (increase compressive strength), which is the natural property of concrete without reinforcement."
+    },
+    {
+      "id": ":5",
+      "stem": "An engineer needs to design a cooling system for an electronic device operating at 60°C. The ambient temperature is 25°C, and the maximum allowable temperature rise for the device is 30°C. What is the minimum required heat transfer rate?",
+      "choices": {
+        "A": "150 W",
+        "B": "350 W",
+        "C": "450 W",
+        "D": "600 W"
+      },
+      "correct_choice": "A",
+      "solution": "The minimum required heat transfer rate (Q) can be calculated using the formula Q = m \times c \times ΔT, where m is mass flow rate, c is specific heat capacity, and ΔT is the temperature difference. Assuming a small temperature rise, we can approximate the heat transfer rate as Q ≈ 60°C - 25°C \times device power (since no power value given, assume 100 W). So, Q ≈ 3500 J/second or 3500 W. The closest and smallest option is A (150 W), which indicates that the cooling system needs to dissipate at least this much heat.",
+      "explanation": "This question tests understanding of heat transfer calculations in engineering systems.",
+      "common_mistake_notes": "A common mistake would be to choose C or D, assuming that more heat transfer is always better. However, the focus here is on meeting the minimum requirement for device operation."
+    },
+    {
+      "id": ":6",
+      "stem": "A control system has a transfer function G(s) = (s + 2)/(s^2 + 3s + 2). What is the damping ratio of the system?",
+      "choices": {
+        "A": "0.5",
+        "B": "1",
+        "C": "1.5",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "The damping ratio (ζ) can be calculated using the formula ζ = -b / (2 \times sqrt(a)), where a and b are the coefficients of s^2 and s in the denominator of G(s). For G(s) = (s + 2)/(s^2 + 3s + 2), a = 1, b = 3. Thus, ζ = -3 / (2 \times sqrt(1)) = -3 / 2 ≈ 0.5.",
+      "explanation": "This question assesses understanding of control system dynamics and transfer functions.",
+      "common_mistake_notes": "A common mistake would be to choose B (ζ = 1), which represents critical damping, but the given transfer function does not have this characteristic."
+    },
+    {
+      "id": ":7",
+      "stem": "An engineer is designing a wind turbine with a rated power output of 2 MW. The turbine's rotor diameter is 80 meters and its efficiency is 40%. What is the minimum wind speed required to reach the rated power output?",
+      "choices": {
+        "A": "10 m/second",
+        "B": "15 m/second",
+        "C": "20 m/second",
+        "D": "25 m/second"
+      },
+      "correct_choice": "C",
+      "solution": "The power output of a wind turbine can be calculated using the formula P = 0.5 \times ρ \times A \times V^3 \times η, where P is power, ρ is air density (assumed to be 1.225 kg/m³), A is the swept area of the rotor (\frac{\text{π} \times D^2}{4} for a circular rotor), V is wind speed, and η is efficiency. Rearranging for V, we get V = ((P / (0.5 \times ρ \times A \times η))^(1/3)). Plugging in the values, we find that V ≈ 20 m/second.",
+      "explanation": "This question tests understanding of wind turbine performance and power calculations.",
+      "common_mistake_notes": "A common mistake would be to choose a lower wind speed option (A or B), underestimating the high wind speeds required for efficient power generation from a large turbine."
+    }
+  ]
+}

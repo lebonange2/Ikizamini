@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.6.4",
+  "objective_text": "Apply existential quantifier (∃)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which of the following statements represents a valid use of the existential quantifier (∃)?",
+      "choices": {
+        "A": "For all x, x is a prime number.",
+        "B": "There exists an x such that x is both even and odd.",
+        "C": "There exists a real number x such that x^2 = 1.",
+        "D": "No integers x satisfy the equation x + 5 = 0."
+      },
+      "correct_choice": "C",
+      "solution": "The correct statement using the existential quantifier (∃) is 'There exists a real number x such that x^2 = 1.' This means there is at least one real number (for example, x = 1 or x = -1) that satisfies the equation. Answer A uses 'for all' which is an universal quantifier, B is false because no number can be both even and odd, and D is negation of a true statement, so it's not existential.",
+      "explanation": "Existential quantification asserts that there exists at least one element in a set that satisfies a given property. In this case, we're looking for an example where the property (x^2 = 1) has at least one solution.",
+      "common_mistake_notes": "A common mistake is to confuse existential quantifier (∃) with universal quantifier (∀). Answer A uses the universal quantifier, which is not what the question asks for."
+    },
+    {
+      "id": "2",
+      "stem": "Which of the following statements can be represented using the existential quantifier (∃)?",
+      "choices": {
+        "A": "All circles have a diameter.",
+        "B": "Every person on Earth has at least one sibling.",
+        "C": "There is a number that is both prime and even.",
+        "D": "No two parallel lines intersect."
+      },
+      "correct_choice": "C",
+      "solution": "The statement 'There is a number that is both prime and even' can be represented using the existential quantifier (∃) because it asserts that there exists at least one number (2) with the given property. The other statements do not require an existential quantifier as they describe general truths or universal properties.",
+      "explanation": "Existential quantification is used when we want to say that there exists at least one element in a set that satisfies a certain condition. In this case, option C asserts that there's at least one number (2) which is both prime and even, making it the correct existential statement.",
+      "common_mistake_notes": "A common mistake would be to choose A or B, as they describe general truths using 'all' or 'every', which are universal quantifiers rather than existential."
+    },
+    {
+      "id": "3",
+      "stem": "Which of the following logical expressions is equivalent to ∃x (P(x))?",
+      "choices": {
+        "A": "¬∀x ¬P(x)",
+        "B": "¬∃x ¬P(x)",
+        "C": "∀x P(x)",
+        "D": "¬∀x P(x)"
+      },
+      "correct_choice": "A",
+      "solution": "The logical expression equivalent to ∃x (P(x)) is ¬∀x ¬P(x). This is because the negation of 'for all x, not P(x)' means that there must be at least one x for which P(x) is true.",
+      "explanation": "De Morgan's laws state that ¬(∀x P(x)) is equivalent to ∃x ¬P(x), and ¬¬A is equivalent to A. So, ¬¬(∀x P(x)) becomes ∀x P(x). By applying De Morgan's law again, we get ¬∀x ¬P(x) which means there exists at least one x for which P(x) holds true.",
+      "common_mistake_notes": "A common mistake would be to choose B, as it represents the negation of ∃x ¬P(x), which is not equivalent to ∃x (P(x))."
+    },
+    {
+      "id": "4",
+      "stem": "Which of the following statements uses the existential quantifier (∃) correctly in a mathematical context?",
+      "choices": {
+        "A": "All integers are divisible by 2.",
+        "B": "At least one integer is not even.",
+        "C": "No real numbers satisfy x^2 + 1 = 0.",
+        "D": "For every positive number x, there exists a smaller positive number y."
+      },
+      "correct_choice": "B",
+      "solution": "The statement 'At least one integer is not even' uses the existential quantifier (∃) correctly because it asserts that there exists at least one integer (like 1 or 3) that does not have the property of being even.",
+      "explanation": "Existential quantification is used when we want to say that there is at least one element in a set with a given property. In this case, option B correctly uses ∃ to assert that there's at least one integer that is not even.",
+      "common_mistake_notes": "A common mistake would be to choose A or C, as they use universal quantifiers (∀) and describe general truths rather than existential statements."
+    },
+    {
+      "id": "5",
+      "stem": "Which of the following sentences can be translated into a mathematical statement using the existential quantifier (∃)?",
+      "choices": {
+        "A": "Every day is a new opportunity.",
+        "B": "Some people never change.",
+        "C": "All birds can fly.",
+        "D": "No two snowflakes are alike."
+      },
+      "correct_choice": "B",
+      "solution": "The sentence 'Some people never change' can be translated into a mathematical statement using the existential quantifier (∃) as ∃x (Person(x) ∧ NeverChanges(x)). This means there exists at least one person who never changes.",
+      "explanation": "Existential quantification is used when we want to say that there is at least one element in a set with a given property. In this case, option B correctly represents an existential statement about people who never change.",
+      "common_mistake_notes": "A common mistake would be to choose A or C, as they use universal quantifiers (∀) and describe general truths rather than existential statements."
+    },
+    {
+      "id": "6",
+      "stem": "Which of the following logical expressions is equivalent to ∃x (P(x) ∧ Q(x))?",
+      "choices": {
+        "A": "¬∀x ¬(P(x) ∧ Q(x))",
+        "B": "¬∃x ¬(P(x) ∧ Q(x))",
+        "C": "∀x (P(x) ∧ Q(x))",
+        "D": "¬∀x (P(x) ∧ Q(x))"
+      },
+      "correct_choice": "A",
+      "solution": "The logical expression equivalent to ∃x (P(x) ∧ Q(x)) is ¬∀x ¬(P(x) ∧ Q(x)). This is because the negation of 'for all x, not (P(x) and Q(x))' means that there must be at least one x for which both P(x) and Q(x) are true.",
+      "explanation": "De Morgan's laws state that ¬(∀x (P(x) ∧ Q(x))) is equivalent to ∃x ¬(P(x) ∧ Q(x)), and ¬¬A is equivalent to A. So, ¬¬(∀x (P(x) ∧ Q(x))) becomes ∀x (P(x) ∧ Q(x)). By applying De Morgan's law again, we get ¬∀x ¬(P(x) ∧ Q(x)) which means there exists at least one x for which both P(x) and Q(x) hold true.",
+      "common_mistake_notes": "A common mistake would be to choose B, as it represents the negation of ∃x ¬(P(x) ∧ Q(x)), which is not equivalent to ∃x (P(x) ∧ Q(x))."
+    },
+    {
+      "id": "7",
+      "stem": "Which of the following statements uses the existential quantifier (∃) correctly in a real-world scenario?",
+      "choices": {
+        "A": "All cars require gasoline to function.",
+        "B": "At least one car in the parking lot has a flat tire.",
+        "C": "No animals can survive without water.",
+        "D": "For every person, there exists a favorite color."
+      },
+      "correct_choice": "B",
+      "solution": "The statement 'At least one car in the parking lot has a flat tire' uses the existential quantifier (∃) correctly because it asserts that there exists at least one car with the property of having a flat tire.",
+      "explanation": "Existential quantification is used when we want to say that there is at least one element in a set with a given property. In this case, option B correctly uses ∃ to assert that there's at least one car in the parking lot with a flat tire.",
+      "common_mistake_notes": "A common mistake would be to choose A or C, as they use universal quantifiers (∀) and describe general truths rather than existential statements."
+    }
+  ]
+}

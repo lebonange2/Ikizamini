@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.11.9",
+  "objective_text": "Apply properties of definite integrals",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Find the value of the definite integral: ∫(π/2 to π) sin(x) dx",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "B",
+      "solution": "The integral of sin(x) from π/2 to π is 0 because the area between the x-axis and the sine function over a full period is zero.",
+      "explanation": "The definite integral represents one complete cycle of the sine wave. Since the areas above and below the x-axis cancel each other, the total area is 0.",
+      "common_mistake_notes": "A common mistake would be to choose A (-1) because it's the value of sin(π), but not considering that sin(π/2) = 1 and the areas must balance."
+    },
+    {
+      "id": "Two",
+      "stem": "Evaluate ∫(1 to 4) (x^2 - 3x + 2) dx",
+      "choices": {
+        "A": "56",
+        "B": "70",
+        "C": "84",
+        "D": "98"
+      },
+      "correct_choice": "A",
+      "solution": "The integral is found by integrating the function and evaluating at the limits: ∫(x^2 - 3x + 2) dx = (1/3)x^3 - (3/2)x^2 + 2x. Evaluating from 1 to 4 gives 56.",
+      "explanation": "The definite integral is computed by integrating the function and then applying the limits of integration. The antiderivative of x^2 - 3x + 2 is (1/3)x^3 - (3/2)x^2 + 2x.",
+      "common_mistake_notes": "A common mistake would be to forget to evaluate the antiderivative at both limits or apply incorrect limits."
+    },
+    {
+      "id": "Three",
+      "stem": "Find the area between y = x^2 and the x-axis from x = 0 to x = 3.",
+      "choices": {
+        "A": "9/2",
+        "B": "18",
+        "C": "27/2",
+        "D": "54"
+      },
+      "correct_choice": "C",
+      "solution": "The area is given by ∫(0 to 3) x^2 dx = (x^3/3)|_0^3 = 27/2.",
+      "explanation": "To find the area between a curve and the x-axis, integrate the function from the lower limit to the upper limit. Here, it's ∫(0 to 3) x^2 dx.",
+      "common_mistake_notes": "A common mistake would be to forget to divide by 3 when integrating x^2 or evaluate the antiderivative at incorrect limits."
+    },
+    {
+      "id": "Four",
+      "stem": "Evaluate ∫(-1 to 1) cos(x) dx",
+      "choices": {
+        "A": "-2sin(1)",
+        "B": "0",
+        "C": "2sin(1)",
+        "D": "4sin(1)"
+      },
+      "correct_choice": "C",
+      "solution": "The integral of cos(x) from -1 to 1 is 2sin(1), as cos(1) = cos(-1). The definite integral gives the net signed area, which is positive.",
+      "explanation": "The integral of cos(x) represents the signed area under the curve. Since cos(x) is an even function, its values at -1 and 1 are equal, resulting in a positive total area.",
+      "common_mistake_notes": "A common mistake would be to choose A (-2sin(1)) because it's sin(-1), but not considering that cos(x) is even."
+    },
+    {
+      "id": "Five",
+      "stem": "Find the average value of f(x) = 3x + 2 on the interval [0, 4].",
+      "choices": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "correct_choice": "C",
+      "solution": "(1/(b-a))∫(a to b) f(x) dx = (1/4)∫(0 to 4) (3x + 2) dx = 7.",
+      "explanation": "The average value of a function on an interval is found by integrating the function over that interval and dividing by the length. Here, it's (1/4)∫(0 to 4) (3x + 2) dx.",
+      "common_mistake_notes": "A common mistake would be to forget to divide by the interval length or integrate incorrectly."
+    },
+    {
+      "id": "Six",
+      "stem": "Evaluate ∫(-2 to 2) e^x dx",
+      "choices": {
+        "A": "e^2 - e^{-2}",
+        "B": "e^2 + e^{-2}",
+        "C": "(1/2)(e^2 - e^{-2})",
+        "D": "(1/2)(e^2 + e^{-2})"
+      },
+      "correct_choice": "A",
+      "solution": "The integral of e^x from -2 to 2 is e^2 - e^{-2}, as the exponential function is neither odd nor even.",
+      "explanation": "When integrating an exponential function, use ∫e^x dx = e^x. Evaluate at the limits: e^2 - e^{-2}. There's no symmetry to exploit.",
+      "common_mistake_notes": "A common mistake would be to assume the integral is zero due to symmetry, but this isn't the case for a general exponential function."
+    },
+    {
+      "id": "Seven",
+      "stem": "Find the definite integral of f(x) = x^3 - 2x + 1 from x = 1 to x = 4 using the Fundamental Theorem of Calculus.",
+      "choices": {
+        "A": "176/4",
+        "B": "180/4",
+        "C": "184/4",
+        "D": "188/4"
+      },
+      "correct_choice": "C",
+      "solution": "The definite integral is F(4) - F(1), where F(x) is the antiderivative of f(x). The antiderivative is (1/4)x^4 - x^2 + x, so the integral is 184/4.",
+      "explanation": "The Fundamental Theorem of Calculus states that ∫f(x) dx from a to b = F(b) - F(a), where F'(x) = f(x). Here, it's (1/4)x^4 - x^2 + x.",
+      "common_mistake_notes": "A common mistake would be to forget to evaluate the antiderivative at both limits or apply incorrect limits."
+    }
+  ]
+}

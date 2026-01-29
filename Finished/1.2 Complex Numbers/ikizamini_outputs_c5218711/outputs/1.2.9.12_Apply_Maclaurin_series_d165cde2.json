@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.9.12",
+  "objective_text": "Apply Maclaurin series",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the Maclaurin series for f(x) = cos(x). Which of the following is correct?",
+      "choices": {
+        "A": "Σ(-1)^n  * x^(2n)/(2n!) for n=0 to ∞",
+        "B": "Σ(-1)^n  * x^(2n+1)/(2n+1)! for n=0 to ∞",
+        "C": "Σ(-1)^n  * x^n/‌​n! for n=0 to ∞",
+        "D": "Σ(-1)^(n+1)  * x^(2n)/(2n)! for n=0 to ∞"
+      },
+      "correct_choice": "C",
+      "solution": "The Maclaurin series for cos(x) is Σ((-1)^n  * x^n/‌​n!) for n = 0 to ∞.",
+      "explanation": "The Maclaurin series expansion of cosine function has a coefficient of (-1)^n and the factorial in the denominator follows n!",
+      "common_mistake_notes": "Common mistake: Choosing A, which is the Taylor series for sin(x) instead of cos(x). The key difference is the absence of (2n+1) in the exponent."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the Maclaurin series for f(x) = e^x. Which of the following is correct?",
+      "choices": {
+        "A": "Σ(-1)^n  * x^n/‌​n! for n=0 to ∞",
+        "B": "Σx^n/‌​n! for n=0 to ∞",
+        "C": "Σx^(2n)/(2n!) for n=0 to ∞",
+        "D": "Σx^(2n+1)/(2n+1)! for n=0 to ∞"
+      },
+      "correct_choice": "B",
+      "solution": "The Maclaurin series for e^x is Σ(x^n/‌​n!) for n = 0 to ∞.",
+      "explanation": "The Maclaurin series expansion of the exponential function has a constant coefficient of 1 and the factorial in the denominator follows n!",
+      "common_mistake_notes": "Common mistake: Choosing A, which is the Taylor series for (-e^x), not e^x. The key difference is the absence of (-1)^n."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the Maclaurin series for f(x) = sin(x). Which of the following is correct?",
+      "choices": {
+        "A": "Σ(-1)^n  * x^(2n)/(2n!) for n=0 to ∞",
+        "B": "Σ(-1)^n  * x^(2n+1)/(2n+1)! for n=0 to ∞",
+        "C": "Σx^‌​n/‌​n! for n=0 to ∞",
+        "D": "Σx^(2n)/(2n)! for n=0 to ∞"
+      },
+      "correct_choice": "B",
+      "solution": "The Maclaurin series for sin(x) is Σ((-1)^n  * x^(2n+1)/(2n+1)!) for n = 0 to ∞.",
+      "explanation": "The Maclaurin series expansion of sine function has a coefficient of (-1)^n and the factorial in the denominator follows (2n+1)!",
+      "common_mistake_notes": "Common mistake: Choosing A, which is the Taylor series for cos(x) instead of sin(x). The key difference is the presence of (2n+1) in the exponent."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the Maclaurin series for f(x) = 1/(1-x), valid for |x| < 1. Which of the following is correct?",
+      "choices": {
+        "A": "Σx^‌​n/‌​n! for n=0 to ∞",
+        "B": "Σ(-1)^n  * x^(n+1)/(n+1)! for n=0 to ∞",
+        "C": "Σx^‌​n for n=0 to ∞",
+        "D": "Σ(-1)^n  * x^n for n=0 to ∞"
+      },
+      "correct_choice": "C",
+      "solution": "The Maclaurin series for 1/(1-x) is Σ(x^n) for n = 0 to ∞.",
+      "explanation": "This is the geometric series expansion, which has a constant coefficient of 1 and no factorial in the denominator.",
+      "common_mistake_notes": "Common mistake: Choosing A, which is the Maclaurin series for e^x. The key difference is that this series does not have a factorial in the denominator."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the Maclaurin series for f(x) = ln(1+x), valid for |x| < 1. Which of the following is correct?",
+      "choices": {
+        "A": "Σ(-1)^n  * x^(n+1)/(n+1)!",
+        "B": "Σx^‌​n/‌​n for n=1 to ∞",
+        "C": "Σ(-1)^n  * x^n/‌​n for n=1 to ∞",
+        "D": "Σx^‌​n/(n+1)! for n=0 to ∞"
+      },
+      "correct_choice": "C",
+      "solution": "The Maclaurin series for ln(1+x) is Σ((-1)^n  * x^n/‌​n) for n = 1 to ∞.",
+      "explanation": "This is the Maclaurin series expansion of the natural logarithm, with a coefficient of (-1)^n and the factorial in the denominator follows n, starting from n=1.",
+      "common_mistake_notes": "Common mistake: Choosing A, which is the Taylor series for -ln(1-‌​x). The key difference is that this series starts from n=1 and has a negative sign."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the Maclaurin series for f(x) = sqrt(1+x), valid for |x| < 1. Which of the following is correct?",
+      "choices": {
+        "A": "Σ(-1)^n  * x^(2n)/(4^‌​n*(2n)!) for n=0 to ∞",
+        "B": "Σx^(2n+1)/(2n+1)! for n=0 to ∞",
+        "C": "Σx^‌​n/(2^‌​n*n!) for n=0 to ∞",
+        "D": "Σ(-1)^n  * x^(2n+1)/(2^‌​n*(2n+1)!) for n=0 to ∞"
+      },
+      "correct_choice": "C",
+      "solution": "The Maclaurin series for sqrt(1+x) is Σ(x^n/(2^‌​n*n!)) for n = 0 to ∞.",
+      "explanation": "This is the binomial expansion of (1+x)^1/2, with a coefficient of 1 and the factorial in the denominator follows n!",
+      "common_mistake_notes": "Common mistake: Choosing A, which is the Maclaurin series for sqrt(1-‌​x). The key difference is that this series has a positive sign and starts from n=0."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the Maclaurin series for f(x) = (1+x)^2, valid for all x. Which of the following is correct?",
+      "choices": {
+        "A": "Σx^‌​n/‌​n! for n=0 to ∞",
+        "B": "Σ(2n+1)‌​x^(2n)/(2n)! for n=0 to ∞",
+        "C": "Σ(2^‌​n*x^‌​n) for n=0 to ∞",
+        "D": "Σ(2^‌​n*x^(2n)) for n=0 to ∞"
+      },
+      "correct_choice": "C",
+      "solution": "The Maclaurin series for (1+x)^2 is Σ(2^‌​n  * x^‌​n) for n = 0 to ∞.",
+      "explanation": "This is the binomial expansion of (1+x)^2, with a coefficient of 2^‌​n and no factorial in the denominator.",
+      "common_mistake_notes": "Common mistake: Choosing B, which is the Maclaurin series for sin(2x). The key difference is that this series has a constant coefficient of 2^‌​n."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.15.6 Apply to beam deflection
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.15 Applications of Calculus to Engineering
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+A simply supported beam with a uniformly distributed load has a length of 10 meters and a flexural rigidity of 50 N*m^2. Calculate the maximum deflection at the center of the beam.
+A) 0.5 m
+B) 0.25 m
+C) 0.125 m
+D) 0.0625 m
+Correct Answer: C
+
+Solution:
+The formula for maximum deflection of a simply supported beam with uniform load is: Δ = (wL^4)/(8EI), where w is the distributed load, L is the length, E is the modulus of elasticity, and I is the area moment of inertia. Given: w = 0 (uniformly distributed load implies no external force), L = 10 m, E = (modulus of elasticity for steel) = 200 GPa (or 2 x 10^11 N/m^2), and I = (b * h^3)/12 (for a rectangular beam with width b and height h). For simplicity, let's assume the beam is made of steel and has dimensions of 0.1 m x 0.1 m. Then, I = (0.1 * 0.1^3)/12 = 8.33 x 10^-7 m^4. Plugging these values into the formula: Δ = (0)/(8 * 2 x 10^11 * 8.33 x 10^-7) = 0. The question states flexural rigidity, which is EI, so we can use that directly: Δ = (L^4)/(8EI) = (10^4)/(8 * 50) = 0.125 m.
+
+Explanation:
+The correct answer is found by applying the formula for maximum deflection and using the given flexural rigidity, which is equivalent to EI.
+
+Common mistake note:
+A common mistake would be to assume that the distributed load w has a value other than 0, leading to an incorrect calculation. Remember, for uniformly distributed loads on simply supported beams, the maximum deflection occurs at the center and is only dependent on the flexural rigidity.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+A cantilever beam with a length of 6 meters and a tip load of 100 N has a flexural rigidity of 30 N*m^2. Calculate the deflection at the tip.
+A) 5 m
+B) 2.5 m
+C) 1.25 m
+D) 0.625 m
+Correct Answer: D
+
+Solution:
+The formula for deflection at the tip of a cantilever beam with a point load is: Δ = (PL^3)/(3EI), where P is the point load, L is the length, E is the modulus of elasticity, and I is the area moment of inertia. Given: P = 100 N, L = 6 m, E = (modulus of elasticity for steel) = 200 GPa (or 2 x 10^11 N/m^2), and I = (b * h^3)/12 (for a rectangular beam with width b and height h). For simplicity, let's assume the beam is made of steel and has dimensions of 0.1 m x 0.1 m. Then, I = (0.1 * 0.1^3)/12 = 8.33 x 10^-7 m^4. Plugging these values into the formula: Δ = (100 * 6^3)/(3 * 2 x 10^11 * 8.33 x 10^-7) = 0.625 m.
+
+Explanation:
+The correct answer is found by applying the formula for deflection at the tip of a cantilever beam and using the given flexural rigidity, which is equivalent to EI.
+
+Common mistake note:
+A common mistake would be to forget to include the factor 1/3 in the formula or to use the wrong value for the modulus of elasticity. Make sure to use the correct formula for a cantilever beam with a point load.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+A uniformly loaded beam has a length of 8 meters, flexural rigidity of 40 N*m^2, and is supported by two roller supports at each end. Calculate the maximum deflection.
+A) 1 m
+B) 0.5 m
+C) 0.25 m
+D) 0.125 m
+Correct Answer: C
+
+Solution:
+The formula for maximum deflection of a beam with two roller supports at each end (simply supported with no overhang) is: Δ = (wL^4)/(8EI), where w is the distributed load, L is the length, E is the modulus of elasticity, and I is the area moment of inertia. Given: w = 0 (uniformly distributed load implies no external force), L = 8 m, E = (modulus of elasticity for steel) = 200 GPa (or 2 x 10^11 N/m^2), and I = (b * h^3)/12 (for a rectangular beam with width b and height h). For simplicity, let's assume the beam is made of steel and has dimensions of 0.1 m x 0.1 m. Then, I = (0.1 * 0.1^3)/12 = 8.33 x 10^-7 m^4. Plugging these values into the formula: Δ = (0)/(8 * 2 x 10^11 * 8.33 x 10^-7) = 0. The question states flexural rigidity, which is equivalent to EI, so we can use that directly: Δ = (L^4)/(8EI) = (8^4)/(8 * 40) = 0.25 m.
+
+Explanation:
+The correct answer is found by applying the formula for maximum deflection and using the given flexural rigidity, which is equivalent to EI.
+
+Common mistake note:
+A common mistake would be to assume that the distributed load w has a value other than 0, leading to an incorrect calculation. Remember, for uniformly distributed loads on simply supported beams with no overhang, the maximum deflection occurs at the center and is only dependent on the flexural rigidity.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+A cantilever beam with a length of 12 meters has a flexural rigidity of 60 N*m^2. If a load of 80 N is applied at a distance of 3 meters from the fixed support, calculate the deflection at the tip.
+A) 4 m
+B) 2 m
+C) 1 m
+D) 0.5 m
+Correct Answer: C
+
+Solution:
+The formula for deflection at a point on a cantilever beam with a distributed load is: Δ = (wL^3)/(3EI) + (P(L - x)^2)/(6EI), where w is the linear load per unit length, L is the length, E is the modulus of elasticity, I is the area moment of inertia, P is the point load, and x is the distance from the fixed support. Given: w = 0 (no distributed load mentioned), L = 12 m, E = (modulus of elasticity for steel) = 200 GPa (or 2 x 10^11 N/m^2), I = (b * h^3)/12 (for a rectangular beam with width b and height h). For simplicity, let's assume the beam is made of steel and has dimensions of 0.1 m x 0.1 m. Then, I = (0.1 * 0.1^3)/12 = 8.33 x 10^-7 m^4, P = 80 N, and x = 3 m. Plugging these values into the formula: Δ = (0 * 12^3)/(3 * 2 x 10^11 * 8.33 x 10^-7) + (80(12 - 3)^2)/(6 * 2 x 10^11 * 8.33 x 10^-7) = 1 m.
+
+Explanation:
+The correct answer is found by applying the formula for deflection at a point on a cantilever beam with both distributed and point loads, and using the given flexural rigidity, which is equivalent to EI.
+
+Common mistake note:
+A common mistake would be to forget to include the second term in the formula when dealing with a combination of distributed and point loads. Make sure to use the correct formula for this specific case.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+A simply supported beam has a length of 15 meters, flexural rigidity of 75 N*m^2, and is subjected to a uniformly varying load from zero at one end to 100 N/m at the other end. Calculate the maximum deflection.
+A) 3 m
+B) 1.5 m
+C) 0.75 m
+D) 0.375 m
+Correct Answer: C
+
+Solution:
+The formula for maximum deflection of a beam with a uniformly varying load is: Δ = (wavgL^4)/(8EI), where wavg is the average load per unit length, L is the length, E is the modulus of elasticity, and I is the area moment of inertia. Given: wavg = (0 + 100)/2 = 50 N/m, L = 15 m, E = (modulus of elasticity for steel) = 200 GPa (or 2 x 10^11 N/m^2), and I = (b * h^3)/12 (for a rectangular beam with width b and height h). For simplicity, let's assume the beam is made of steel and has dimensions of 0.1 m x 0.1 m. Then, I = (0.1 * 0.1^3)/12 = 8.33 x 10^-7 m^4. Plugging these values into the formula: Δ = (50 * 15^4)/(8 * 2 x 10^11 * 8.33 x 10^-7) = 0.75 m.
+
+Explanation:
+The correct answer is found by applying the formula for maximum deflection and using the given flexural rigidity, which is equivalent to EI, along with the average load per unit length for a uniformly varying load.
+
+Common mistake note:
+A common mistake would be to use the total load instead of the average load when calculating the deflection. Make sure to calculate the average load for a uniformly varying load.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+A cantilever beam with a length of 9 meters has a flexural rigidity of 80 N*m^2 and is subjected to a parabolic distributed load from zero at the fixed support to 150 N/m at the tip. Calculate the deflection at the tip.
+A) 4.5 m
+B) 2.25 m
+C) 1.125 m
+D) 0.5625 m
+Correct Answer: C
+
+Solution:
+The formula for deflection at the tip of a cantilever beam with a parabolic distributed load is: Δ = (∫w(x)x^3dx)/(3EI), where w(x) is the linear load per unit length as a function of x, L is the length, E is the modulus of elasticity, and I is the area moment of inertia. Given: w(x) = 150 - 150x/9, L = 9 m, E = (modulus of elasticity for steel) = 200 GPa (or 2 x 10^11 N/m^2), and I = (b * h^3)/12 (for a rectangular beam with width b and height h). For simplicity, let's assume the beam is made of steel and has dimensions of 0.1 m x 0.1 m. Then, I = (0.1 * 0.1^3)/12 = 8.33 x 10^-7 m^4. Integrating w(x)x^3 from 0 to 9: ∫(150 - 150x/9)(x^3)dx = (150x^4 - 50x^5)/18 evaluated from 0 to 9 = 2700. Plugging these values into the formula: Δ = (2700)/(3 * 2 x 10^11 * 8.33 x 10^-7) = 1.125 m.
+
+Explanation:
+The correct answer is found by applying the formula for deflection at the tip of a cantilever beam with a parabolic distributed load and using the given flexural rigidity, which is equivalent to EI.
+
+Common mistake note:
+A common mistake would be to integrate w(x)x^3 incorrectly or to forget to evaluate the definite integral from 0 to the length of the beam. Make sure to use the correct formula for a parabolic distributed load.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+A uniformly loaded cantilever beam has a length of 18 meters and a flexural rigidity of 90 N*m^2. If a point load of 120 N is applied at the tip, calculate the total deflection at the tip.
+A) 6 m
+B) 3 m
+C) 1.5 m
+D) 0.75 m
+Correct Answer: B
+
+Solution:
+The formula for total deflection at the tip of a cantilever beam with both a distributed load and a point load is: Δtotal = (wL^4)/(8EI) + (PL^3)/(3EI), where w is the linear load per unit length, L is the length, E is the modulus of elasticity, I is the area moment of inertia, P is the point load. Given: w = 0 (uniformly distributed load implies no external force other than the point load), L = 18 m, E = (modulus of elasticity for steel) = 200 GPa (or 2 x 10^11 N/m^2), I = (b * h^3)/12 (for a rectangular beam with width b and height h). For simplicity, let's assume the beam is made of steel and has dimensions of 0.1 m x 0.1 m. Then, I = (0.1 * 0.1^3)/12 = 8.33 x 10^-7 m^4, P = 120 N. Plugging these values into the formula: Δtotal = (0)/(8 * 2 x 10^11 * 8.33 x 10^-7) + (120 * 18^3)/(3 * 2 x 10^11 * 8.33 x 10^-7) = 3 m.
+
+Explanation:
+The correct answer is found by applying the formula for total deflection at the tip of a cantilever beam with both a distributed load and a point load, and using the given flexural rigidity, which is equivalent to EI.
+
+Common mistake note:
+A common mistake would be to forget to include the term for the point load when calculating the total deflection. Make sure to use the correct formula for this specific case.
+------------------------------------------------------------------------------

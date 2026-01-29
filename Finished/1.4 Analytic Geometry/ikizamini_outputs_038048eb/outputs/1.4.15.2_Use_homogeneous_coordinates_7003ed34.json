@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.15.2",
+  "objective_text": "Use homogeneous coordinates",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFgHjK",
+      "stem": "Which of the following represents a valid point in homogeneous coordinates?",
+      "choices": {
+        "A": "[1, 2, 0]",
+        "B": "[3, 4, 5]",
+        "C": "[0, 0, 1]",
+        "D": "[6, 7, 8]"
+      },
+      "correct_choice": "C",
+      "solution": "Homogeneous coordinates represent a point in space with three coordinates. A valid homogeneous coordinate has no zero for all components if it's representing an actual point. Choice C represents a valid point since none of its components are zero.",
+      "explanation": "In homogeneous coordinates, a point is represented by a 3-tuple with the last component being non-zero (except for points at infinity). Choices A and D have a zero in the third component, making them invalid representations of points. Choice B does not involve the third component, which is required for homogeneous coordinates.",
+      "common_mistake_notes": "Common mistake: Choosing options A or D, as they contain a zero in the third coordinate, which is not allowed for representing an actual point in homogeneous coordinates."
+    },
+    {
+      "id": "XyzPqRsT",
+      "stem": "What is the primary purpose of using homogeneous coordinates in computer graphics?",
+      "choices": {
+        "A": "To represent 2D shapes in 3D space",
+        "B": "To simplify matrix operations",
+        "C": "To model perspective projections",
+        "D": "To improve rendering performance"
+      },
+      "correct_choice": "C",
+      "solution": "Homogeneous coordinates are used in computer graphics to handle projective geometry, which is essential for modeling perspective projections. This allows correct mapping of 3D objects onto a 2D screen.",
+      "explanation": "Choice A can be done without homogeneous coordinates. Choice B is an advantage but not the primary reason. Choice D is unrelated to the use of homogeneous coordinates.",
+      "common_mistake_notes": "Common mistake: Selecting choice B, as matrix operations do become more convenient with homogeneous coordinates, but the core purpose is handling perspective projections."
+    },
+    {
+      "id": "BnmLkjIh",
+      "stem": "Given a line in 2D space represented by the equation 2x + 3y = 5, what would be its representation in homogeneous coordinates?",
+      "choices": {
+        "A": "[2, 3, 1]",
+        "B": "[5, 2, 3]",
+        "C": "[2, 3, 0]",
+        "D": "[2, 3, 5]"
+      },
+      "correct_choice": "C",
+      "solution": "To convert a line in 2D to homogeneous coordinates, we add an extra variable (w) and set it to 1. Thus, the equation becomes 2x + 3y = 5 * w, which simplifies to [2, 3, w]. Since w is 1, the representation is [2, 3, 1].",
+      "explanation": "Choice A omits the extra variable w. Choice B represents the coefficients and constant from the original equation but not in homogeneous form. Choice D includes the constant from the original equation, which is incorrect for homogeneous coordinates.",
+      "common_mistake_notes": "Common mistake: Selecting choice A or D, as they do not properly convert the line equation to homogeneous coordinates by including the extra variable w."
+    },
+    {
+      "id": "QweRtuYm",
+      "stem": "What happens when a point in 3D space is projected onto a plane using homogeneous coordinates?",
+      "choices": {
+        "A": "The point's coordinates remain unchanged",
+        "B": "The point's third coordinate becomes zero",
+        "C": "The point's first two coordinates are scaled",
+        "D": "The point's position relative to the plane changes"
+      },
+      "correct_choice": "D",
+      "solution": "When a point in 3D space is projected onto a plane using homogeneous coordinates, its position relative to the plane changes. The third coordinate may change as well, but the primary effect is on the relationship between the point and the plane.",
+      "explanation": "Choice A is incorrect because projection always alters the point's position. Choice B is not always true; it depends on the specific projection. Choice C does not capture the main effect of projection.",
+      "common_mistake_notes": "Common mistake: Selecting choice B, as some projections may result in a zero third coordinate, but this is not always the case and not the primary effect."
+    },
+    {
+      "id": "ZxcVbnMm",
+      "stem": "What is the homogeneous representation of a line at infinity in 3D space?",
+      "choices": {
+        "A": "[1, 0, 0, 0]",
+        "B": "[0, 1, 0, 0]",
+        "C": "[0, 0, 1, 0]",
+        "D": "[0, 0, 0, 1]"
+      },
+      "correct_choice": "D",
+      "solution": "In homogeneous coordinates, a line at infinity is represented by a direction vector with all components equal to zero except for the last one, which is 1. Thus, the representation is [0, 0, 0, 1].",
+      "explanation": "Choice A and B represent points on the x- and y-axes at infinity, respectively. Choice C represents a point at infinity in the z-direction, not a line. Only choice D represents a line at infinity.",
+      "common_mistake_notes": "Common mistake: Selecting choices A, B, or C, which represent points at infinity rather than a line at infinity."
+    },
+    {
+      "id": "SdfGhiJk",
+      "stem": "Which of the following transformations can be represented more easily using homogeneous coordinates?",
+      "choices": {
+        "A": "Translation",
+        "B": "Scaling",
+        "C": "Rotation",
+        "D": "Reflection"
+      },
+      "correct_choice": "C",
+      "solution": "Homogeneous coordinates allow for representing 3D rotations with a single matrix operation, making them easier to compute compared to other transformations.",
+      "explanation": "Choice A and B can be represented directly without homogeneous coordinates. Choice D is typically handled using reflection matrices, which are not inherently simpler in homogeneous coordinates. Only choice C benefits significantly from the use of homogeneous coordinates.",
+      "common_mistake_notes": "Common mistake: Selecting choices A or B, as they may seem simple to represent, but homogeneous coordinates do not offer a significant advantage for these transformations."
+    },
+    {
+      "id": "XcvBnmLk",
+      "stem": "What is the result of multiplying a 3x4 matrix representing a projective transformation with a point in homogeneous coordinates?",
+      "choices": {
+        "A": "A new 3D point in Cartesian coordinates",
+        "B": "A new point in homogeneous coordinates",
+        "C": "A new 2D point on a screen plane",
+        "D": "A transformed 3D object"
+      },
+      "correct_choice": "B",
+      "solution": "Multiplying a 3x4 matrix representing a projective transformation with a point in homogeneous coordinates results in a new point in homogeneous coordinates, describing the transformed position of the original point.",
+      "explanation": "Choice A represents a non-homogeneous representation, which is not the result of this operation. Choice C represents a 2D projection, but the multiplication does not inherently produce that. Choice D describes an entire object transformation, not a single point.",
+      "common_mistake_notes": "Common mistake: Selecting choice A or C, as they might混淆 the output of matrix multiplication with a specific representation (Cartesian or projected), which is actually in homogeneous coordinates."
+    }
+  ]
+}

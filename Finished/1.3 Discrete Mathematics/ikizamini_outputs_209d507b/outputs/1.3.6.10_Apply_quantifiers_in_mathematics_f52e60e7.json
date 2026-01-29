@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.6.10",
+  "objective_text": "Apply quantifiers in mathematics",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which statement represents the universal quantifier?",
+      "choices": {
+        "A": "For all x, P(x)",
+        "B": "For all x, not P(x)",
+        "C": "There exists an x such that P(x)",
+        "D": "There exists an x such that not P(x)"
+      },
+      "correct_choice": "A",
+      "solution": "The universal quantifier states that a property holds for all elements in a set. In this case, 'For all x, P(x)' means that the statement P(x) is true for every x.",
+      "explanation": "B represents a negation of the universal quantifier (not P(x) for all x). C and D represent existential quantifiers, asserting the existence of at least one element satisfying or not satisfying the property.",
+      "common_mistake_notes": "A common mistake is confusing 'For all' with 'There exists,' which are different quantifiers."
+    },
+    {
+      "id": ":2",
+      "stem": "Which statement represents the existential quantifier?",
+      "choices": {
+        "A": "There exists an x such that P(x)",
+        "B": "For some x, not P(x)",
+        "C": "For all x, not P(x)",
+        "D": "For no x, P(x)"
+      },
+      "correct_choice": "A",
+      "solution": "The existential quantifier states that there is at least one element in a set for which the property holds. In this case, 'There exists an x such that P(x)' means that there's at least one x where P(x) is true.",
+      "explanation": "B represents a negation of the universal quantifier (not P(x) for all x). C and D are incorrect negations of the existential quantifier or its equivalent phrasing.",
+      "common_mistake_notes": "A common mistake is confusing 'There exists' with 'For all,' which convey different meanings."
+    },
+    {
+      "id": ":3",
+      "stem": "Which statement is equivalent to 'There does not exist an x such that P(x)'?",
+      "choices": {
+        "A": "For some x, P(x)",
+        "B": "For no x, P(x)",
+        "C": "For all x, not P(x)",
+        "D": "Not for all x, P(x)"
+      },
+      "correct_choice": "C",
+      "solution": "The negation of the existential quantifier 'There does not exist an x such that P(x)' is equivalent to saying that the property P(x) is false for every element in the set. This can be expressed as 'For all x, not P(x),' meaning P(x) doesn't hold true for any x.",
+      "explanation": "A represents the existential quantifier (there exists an x such that P(x)). B and D are incorrect negations or phrasings of the existential quantifier.",
+      "common_mistake_notes": "A common mistake is assuming that negating 'There exists' directly leads to 'For no x,' which is an ambiguous phrasing."
+    },
+    {
+      "id": ":4",
+      "stem": "What is the contrapositive of the statement 'If it's raining, then I stay inside'? (Use P(x) for 'it's raining' and Q(x) for 'I stay inside')",
+      "choices": {
+        "A": "If I don't stay inside, then it's not raining",
+        "B": "If it's raining, then I go outside",
+        "C": "If I stay inside, then it's raining",
+        "D": "If it's not raining, then I stay inside"
+      },
+      "correct_choice": "A",
+      "solution": "The contrapositive of a conditional statement is formed by negating both the antecedent (P(x)) and the consequent (Q(x)), while keeping the 'if-then' structure. So, the contrapositive of 'If P(x), then Q(x)' is 'If not Q(x), then not P(x).'",
+      "explanation": "B, C, and D are incorrect as they represent the converse, inverse, or neither of the original statement.",
+      "common_mistake_notes": "A common mistake is confusing the contrapositive with the converse or inverse of a conditional statement."
+    },
+    {
+      "id": ":5",
+      "stem": "Which quantifier best describes the statement 'Some integers are even'?",
+      "choices": {
+        "A": "For all x, P(x)",
+        "B": "There exists an x such that P(x)",
+        "C": "For no x, P(x)",
+        "D": "Not for all x, P(x)"
+      },
+      "correct_choice": "B",
+      "solution": "The statement 'Some integers are even' means there is at least one integer (x) for which the property (P(x)) of being even holds true. This corresponds to the existential quantifier.",
+      "explanation": "A represents a universal quantifier, which would mean all integers are even. C and D are incorrect negations or phrasings of the existential quantifier.",
+      "common_mistake_notes": "A common mistake is assuming that 'some' implies 'all,' which is not the case for quantifiers."
+    },
+    {
+      "id": ":6",
+      "stem": "Which quantifier correctly represents the statement 'No natural numbers are less than zero'? (Use N(x) for 'x is a natural number')",
+      "choices": {
+        "A": "For all x, N(x)",
+        "B": "There exists an x such that N(x)",
+        "C": "For no x, N(x)",
+        "D": "Not for all x, N(x)"
+      },
+      "correct_choice": "D",
+      "solution": "The statement 'No natural numbers are less than zero' means the property of being less than zero does not hold true for any natural number. This is equivalent to saying 'not for all x, N(x) and P(x)', where P(x) represents 'x is less than zero.'",
+      "explanation": "A represents a universal quantifier, which would mean all natural numbers are greater than or equal to zero. B is redundant as it only asserts the existence of at least one natural number, not addressing the property in question. C is incorrect as it negates the entire statement, saying there are no natural numbers.",
+      "common_mistake_notes": "A common mistake is confusing 'no' with 'not for all,' which have different implications."
+    },
+    {
+      "id": ":7",
+      "stem": "What is the quantified form of the statement 'Every student in the class passed the exam'? (Use S(x) for 'x is a student in the class' and P(x) for 'x passed the exam')",
+      "choices": {
+        "A": "There exists an x such that S(x) and P(x)",
+        "B": "For no x, S(x) and not P(x)",
+        "C": "For all x, S(x) and P(x)",
+        "D": "Not for all x, S(x) and P(x)"
+      },
+      "correct_choice": "C",
+      "solution": "The statement 'Every student in the class passed the exam' can be quantified as 'For all x, S(x) implies P(x)', which means that if x is a student in the class (S(x)), then x must have passed the exam (P(x)).",
+      "explanation": "A represents an existential quantifier, which would mean at least one student passed the exam. B negates the entire statement, saying there's no student who passed the exam. D is not a standard way to express the universal quantifier and may lead to confusion.",
+      "common_mistake_notes": "A common mistake is interpreting 'every' as an existential quantifier instead of a universal one."
+    }
+  ]
+}

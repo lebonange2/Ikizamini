@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.12.6",
+  "objective_text": "Calculate rotation matrices",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "AsdFgHjK",
+      "stem": "Find the rotation matrix that rotates a vector by 90 degrees counterclockwise around the z-axis.",
+      "choices": {
+        "A": "[[1, 0, 0], [0, -1, 0], [0, 0, 1]]",
+        "B": "[[-1, 0, 0], [0, 1, 0], [0, 0, 1]]",
+        "C": "[[0, 1, 0], [1, 0, 0], [0, 0, 1]]",
+        "D": "[[0, -1, 0], [-1, 0, 0], [0, 0, 1]]"
+      },
+      "correct_choice": "D",
+      "solution": "The rotation matrix for a counterclockwise rotation of 90 degrees around the z-axis is given by the identity matrix with the first and second columns negated. The correct matrix is thus [[0, -1, 0], [-1, 0, 0], [0, 0, 1]].",
+      "explanation": "A counterclockwise rotation around the z-axis results in a swap of the x and y components with a change of sign on one of them.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which represent clockwise rotations. Remember that counterclockwise rotations result in negative signs for the off-diagonal elements."
+    },
+    {
+      "id": "ZxvBnMlP",
+      "stem": "Given a rotation matrix R = [[cosθ, -sinθ], [sinθ, cosθ]], what is the angle of rotation θ if R represents a 180-degree rotation?",
+      "choices": {
+        "A": "-π",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "C",
+      "solution": "A 180-degree rotation is equivalent to π radians. In the given rotation matrix, when θ = π, we have cosθ = -1 and sinθ = 0, resulting in the matrix [[-1, 0], [0, -1]] which represents a 180-degree rotation.",
+      "explanation": "The rotation matrix for an angle θ is defined as [[cosθ, -sinθ], [sinθ, cosθ]]. For a 180-degree rotation, θ = π.",
+      "common_mistake_notes": "Common mistake: Choosing B or D, which represent quarter turns. Remember that a full turn is π radians."
+    },
+    {
+      "id": "QweRtYui",
+      "stem": "Find the rotation matrix for rotating a vector by 45 degrees counterclockwise around the x-axis.",
+      "choices": {
+        "A": "[[1, 0, 0], [0, cos(π/4), -sin(π/4)], [0, sin(π/4), cos(π/4)]]",
+        "B": "[[cos(π/4), 0, -sin(π/4)], [0, 1, 0], [sin(π/4), 0, cos(π/4)]]",
+        "C": "[[cos(π/4), sin(π/4), 0], [-sin(π/4), cos(π/4), 0], [0, 0, 1]]",
+        "D": "[[-cos(π/4), sin(π/4), 0], [sin(π/4), cos(π/4), 0], [0, 0, 1]]"
+      },
+      "correct_choice": "A",
+      "solution": "The rotation matrix for a counterclockwise rotation of θ degrees around the x-axis is given by [[1, 0, 0], [0, cosθ, -sinθ], [0, sinθ, cosθ]]. For θ = 45 degrees or π/4 radians, we have cos(π/4) = sin(π/4) = √2 / 2.",
+      "explanation": "The rotation matrix around the x-axis involves only changes in the y and z components.",
+      "common_mistake_notes": "Common mistake: Choosing B, which represents a rotation around the y-axi...}, ... (remaining questions are unchanged)}]},"
+    },
+    {
+      "id": "BvnMlPqRs",
+      "stem": "Given a vector v = [1, 0, 0] and a rotation matrix R = [[cosθ, -sinθ, 0], [sinθ, cosθ, 0], [0, 0, 1]], what is the rotated vector after a 90-degree counterclockwise rotation around the y-axis?",
+      "choices": {
+        "A": "[0, 1, 0]",
+        "B": "[-1, 0, 0]",
+        "C": "[1, 0, 0]",
+        "D": "[0, -1, 0]"
+      },
+      "correct_choice": "A",
+      "solution": "The rotation matrix for a counterclockwise rotation of θ degrees around the y-axis is given by [[cosθ, 0, sinθ], [0, 1, 0], [-sinθ, 0, cosθ]]. For θ = 90 degrees or π/2 radians, we have cosθ = 0 and sinθ = 1. The rotated vector v' is thus Rv = [0, 1, 0].",
+      "explanation": "The rotation matrix around the y-axis only affects the x and z components of the vector.",
+      "common_mistake_notes": "Common mistake: Choosing C or D, which represent no rotation or a clockwise rotation. Remember that counterclockwise rotations change the x component."
+    },
+    {
+      "id": "XcvBnMlP",
+      "stem": "Find the angle θ in radians for which the rotation matrix R = [[cosθ, -sinθ], [sinθ, cosθ]] represents a 45-degree clockwise rotation.",
+      "choices": {
+        "A": "-π/4",
+        "B": "π/4",
+        "C": "3π/4",
+        "D": "5π/4"
+      },
+      "correct_choice": "C",
+      "solution": "A 45-degree clockwise rotation is equivalent to -45 degrees or -π/4 radians. In the given rotation matrix, when θ = -π/4, we have cosθ = cos(-π/4) = √2 / 2 and sinθ = sin(-π/4) = -√2 / 2.",
+      "explanation": "The rotation matrix for an angle θ is defined as [[cosθ, -sinθ], [sinθ, cosθ]]. For a clockwise rotation of 45 degrees, θ = -π/4.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which represent counterclockwise rotations. Remember that clockwise rotations have negative angles."
+    },
+    {
+      "id": "GhjKlMnO",
+      "stem": "Given a rotation matrix R = [[cosθ, -sinθ, 0], [sinθ, cosθ, 0], [0, 0, 1]], what is the rotated vector after a 360-degree rotation around the z-axis?",
+      "choices": {
+        "A": "[1, 0, 0]",
+        "B": "[-1, 0, 0]",
+        "C": "[0, 1, 0]",
+        "D": "[0, -1, 0]"
+      },
+      "correct_choice": "A",
+      "solution": "The rotation matrix for a full 360-degree (2π radians) rotation around the z-axis is the identity matrix [[1, 0, 0], [0, 1, 0], [0, 0, 1]], which does not change the vector. Thus, the rotated vector remains as v = [1, 0, 0].",
+      "explanation": "A full rotation around any axis returns the original orientation.",
+      "common_mistake_notes": "Common mistake: Choosing B, C, or D, which represent rotations around other axes. Remember that a full rotation around the z-axis does not change the vector."
+    },
+    {
+      "id": "WertYuiO",
+      "stem": "Find the rotation matrix for rotating a vector by 60 degrees counterclockwise around the x-y plane (formed by the x and y axes).",
+      "choices": {
+        "A": "[cos(π/3), -sin(π/3), 0], [sin(π/3), cos(π/3), 0], [0, 0, 1]]",
+        "B": "[-cos(π/3), sin(π/3), 0], [sin(π/3), cos(π/3), 0], [0, 0, 1]]",
+        "C": "[cos(π/6), -sin(π/6), 0], [sin(π/6), cos(π/6), 0], [0, 0, 1]]",
+        "D": "[-cos(π/6), sin(π/6), 0], [sin(π/6), cos(π/6), 0], [0, 0, 1]"
+      },
+      "correct_choice": "C",
+      "solution": "The rotation matrix for a counterclockwise rotation of θ degrees around the x-y plane is given by [[cosθ, -sinθ, 0], [sinθ, cosθ, 0], [0, 0, 1]]. For θ = 60 degrees or π/3 radians, we have cos(π/3) = 1/2 and sin(π/3) = √3 / 2. However, since the rotation is around the x-y plane, it's equivalent to a rotation of θ/2 around the z-axis. Thus, θ/2 = π/6, which gives cos(π/6) = √3 / 2 and sin(π/6) = 1/2.",
+      "explanation": "Rotations around the x-y plane can be thought of as rotations around the z-axi...}, ... (remaining questions are unchanged)}]},",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which represent rotations around the x-axis only. Remember that rotations around the x-y plane involve both x and y axes."
+    }
+  ]
+}

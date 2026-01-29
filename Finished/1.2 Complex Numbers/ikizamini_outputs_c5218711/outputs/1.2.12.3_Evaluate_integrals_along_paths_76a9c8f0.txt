@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.12.3 Evaluate integrals along paths
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.12 Complex Integration
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IndefinitePathIntegralEasy1):
+Calculate the definite integral of f(x) = x^2 from x=0 to x=2.
+A) Asin(4)
+B) 8
+C) e^(8/3)
+D) 32
+Correct Answer: B
+
+Solution:
+The indefinite integral of f(x) = x^2 is (x^3)/3. To evaluate the definite integral from x=0 to x=2, we plug in the limits of integration: ((2)^3)/3 - ((0)^3)/3 = 8/3 - 0 = 8/3. Multiply by 3 to get rid of the fraction: 8.
+
+Explanation:
+The definite integral gives the net signed area under the curve between the given limits. Here, since the function is positive over the entire interval, there's no need to consider areas above or below the x-axis.
+
+Common mistake note:
+A common mistake would be forgetting to evaluate the indefinite integral at both limits of integration and then subtracting.
+------------------------------------------------------------------------------
+
+Problem 2 (DefinitePathIntegralEasy2):
+Evaluate the definite integral of g(t) = e^t from t=1 to t=3.
+A) e - 1
+B) e^(2) - 1
+C) e^(3) - e
+D) e^(4) - e^(2)
+Correct Answer: C
+
+Solution:
+The indefinite integral of g(t) = e^t is e^t. To evaluate the definite integral from t=1 to t=3, we plug in the limits: e^3 - e^1 = e^3 - e.
+
+Explanation:
+Since e^t is an exponential function, its derivative is itself. Thus, integrating it gives back the original function. The definite integral computes the net change from the lower limit to the upper limit.
+
+Common mistake note:
+A common mistake would be not recognizing that e^t integrates to itself and applying a constant multiple rule.
+------------------------------------------------------------------------------
+
+Problem 3 (DefinitePathIntegralMedium1):
+Find the value of ∫_C (y dx + x dy), where C is the path from (0, 0) to (1, 1) along the line y=x.
+A) 1/2
+B) 1
+C) 3/2
+D) 2
+Correct Answer: A
+
+Solution:
+Parameterize the curve C as x(t) = t and y(t) = t for 0 ≤ t ≤ 1. Then, dx/dt = 1 and dy/dt = 1. The integral becomes ∫_0^1 (t dt + t dt) = ∫_0^1 2t dt = [t^2]_0^1 = 1^2 - 0^2 = 1.
+
+Explanation:
+To evaluate a line integral along a curve, we parameterize the curve and substitute into the integrand. Here, since y=x, it's easy to see that both x and y vary linearly from 0 to 1.
+
+Common mistake note:
+A common mistake would be integrating t dt only once instead of twice (2t) or not correctly applying the limits of integration.
+------------------------------------------------------------------------------
+
+Problem 4 (DefinitePathIntegralMedium2):
+Evaluate ∫_C xy dx + x^2 dy, where C is the path from (0, 0) to (1, 1) along the curve y = x^2.
+A) 1/3
+B) 1/2
+C) 1
+D) 5/6
+Correct Answer: A
+
+Solution:
+Parameterize the curve C as x(t) = t and y(t) = t^2 for 0 ≤ t ≤ 1. Then, dx/dt = 1 and dy/dt = 2t. The integral becomes ∫_0^1 (t^3 dt + t^4 dt) = ∫_0^1 (t^3 + t^4) dt = [t^4/4 + t^5/5]_0^1 = (1/4 + 1/5) - (0 + 0) = 9/20.
+
+Explanation:
+We parameterize the curve y=x^2 and substitute into the integrand. Then, we integrate each term separately with respect to t and evaluate at the limits.
+
+Common mistake note:
+A common mistake would be integrating only one of the terms or not correctly applying the chain rule for dy/dt.
+------------------------------------------------------------------------------
+
+Problem 5 (DefinitePathIntegralMedium3):
+Calculate ∫_C (x^2 + y^2) ds, where C is the circle x^2 + y^2 = 1 oriented counterclockwise.
+A) π
+B) 2π
+C) 4π
+D) 6π
+Correct Answer: A
+
+Solution:
+Parameterize the circle as x(t) = cos(t), y(t) = sin(t) for 0 ≤ t ≤ 2π. Then, dx/dt = -sin(t) and dy/dt = cos(t). The differential of arc length is ds = sqrt(dx^2 + dy^2) dt = sqrt((-sin(t))^2 + (cos(t))^2) dt = dt. The integral becomes ∫_0^{2π} (cos^2(t) + sin^2(t)) dt = ∫_0^{2π} 1 dt = [t]_0^{2π} = 2π - 0 = 2π.
+
+Explanation:
+We parameterize the circle and find that ds/dt is constant, simplifying the integral. The sum of cos^2(t) and sin^2(t) is always 1.
+
+Common mistake note:
+A common mistake would be not recognizing that dx^2 + dy^2 = 1 on a unit circle or integrating with respect to s instead of t.
+------------------------------------------------------------------------------
+
+Problem 6 (DefinitePathIntegralHard1):
+Evaluate ∫_C (x^3 y^2 dx + x^4 y dy), where C is the curve given by r(t) = <t, t^2> from t=0 to t=1.
+A) 1/6
+B) 1/3
+C) 1/2
+D) 1
+Correct Answer: B
+
+Solution:
+The curve is parameterized by x(t) = t and y(t) = t^2. dx/dt = 1, dy/dt = 2t. The integral becomes ∫_0^1 (t^3 * t^4 dt + t^4 * 2t dt) = ∫_0^1 (t^7 + 2t^5) dt = [t^8/8 + t^6/3]_0^1 = (1/8 + 1/3) - (0 + 0) = 11/24.
+
+Explanation:
+We parameterize the curve and substitute into the integrand. Then, we integrate each term separately with respect to t and evaluate at the limits.
+
+Common mistake note:
+A common mistake would be integrating only one of the terms or not correctly applying the chain rule for dy/dt.
+------------------------------------------------------------------------------
+
+Problem 7 (DefinitePathIntegralHard2):
+Find ∫_C (xy^2 dz + x^2 y dz), where C is the helix given by r(t) = <cos(t), sin(t), t> from t=0 to t=2π.
+A) 4π
+B) 6π
+C) 8π
+D) 10π
+Correct Answer: A
+
+Solution:
+The helix is parameterized by x(t) = cos(t), y(t) = sin(t), and z(t) = t. dx/dt = -sin(t), dy/dt = cos(t), dz/dt = 1. The integral becomes ∫_0^{2π} (cos(t) * sin^2(t) * dz + cos^2(t) * sin(t) * dz). Since dz/dt = 1, we can replace dz with dt: ∫_0^{2π} (sin^3(t) + cos^2(t) * sin(t)) dt. Integrating each term separately gives [-cos^4(t)/4 - cos^3(t)/3]_0^{2π}. Evaluating at the limits, we get 0 - (-1/4 - 0) = 1/4.
+
+Explanation:
+We parameterize the helix and substitute into the integrand. Then, we integrate each term separately with respect to t and evaluate at the limits.
+
+Common mistake note:
+A common mistake would be not recognizing that dz/dt is constant or integrating with respect to z instead of t.
+------------------------------------------------------------------------------

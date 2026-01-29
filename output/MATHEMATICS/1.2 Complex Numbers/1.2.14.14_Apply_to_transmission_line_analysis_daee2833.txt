@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.14.14 Apply to transmission line analysis
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.14 Complex Analysis Applications
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A transmission line has a characteristic impedance of 50 ohms and is terminated with a load impedance of 75 ohms. What is the reflection coefficient?
+A) -0.4
+B) 0.4
+C) 0.6
+D) -0.6
+Correct Answer: B
+
+Solution:
+The reflection coefficient (Γ) is calculated using the formula: Γ = (Z_L - Z_0) / (Z_L + Z_0), where Z_L is the load impedance and Z_0 is the characteristic impedance. Plugging in the values, we get: Γ = (75 - 50) / (75 + 50) = 25 / 125 = 0.2 or 0.4.
+
+Explanation:
+The reflection coefficient measures the ratio of the reflected wave to the incident wave. A positive value indicates a phase shift and a negative value indicates a phase reversal. In this case, since the load impedance is greater than the characteristic impedance, there will be a positive reflection coefficient.
+
+Common mistake note:
+A common mistake would be to assume that the reflection coefficient would be negative because the load impedance is larger than the characteristic impedance. However, the formula takes into account both impedances and their relative magnitudes.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+In a transmission line, what is meant by the term 'voltage standing wave ratio' (VSWR)?
+A) The ratio of maximum voltage to minimum voltage along the line.
+B) The ratio of reflected power to transmitted power.
+C) The ratio of load impedance to characteristic impedance.
+D) The ratio of transmitted power to reflected power.
+Correct Answer: A
+
+Solution:
+The voltage standing wave ratio (VSWR) is a measure of how uniform the voltage is along a transmission line. It represents the ratio of the maximum voltage to the minimum voltage at any given point on the line.
+
+Explanation:
+A VSWR value of 1 indicates a perfect match between the load and characteristic impedances, while a higher value (usually expressed as a decimal or a ratio) indicates an impedance mismatch and power reflection. The other options describe different aspects of transmission line analysis but do not specifically refer to VSWR.
+
+Common mistake note:
+A common mistake would be to confuse VSWR with the power-related terms like reflected power to transmitted power, which is related to SWR (not VSWR) and not directly measured by VSWR.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+What is the relationship between the reflection coefficient (Γ) and voltage standing wave ratio (VSWR)?
+A) VSWR = 1 + |Γ|²
+B) VSWR = 1 - |Γ|²
+C) VSWR = |Γ|
+D) VSWR = 1 / |Γ|
+Correct Answer: A
+
+Solution:
+The relationship between the reflection coefficient (Γ) and voltage standing wave ratio (VSWR) is given by VSWR = 1 + |Γ|². The absolute value of Γ is used to account for both positive and negative values.
+
+Explanation:
+This formula helps in calculating VSWR from the reflection coefficient, which is a fundamental concept in transmission line analysis. The other options do not accurately represent this relationship.
+
+Common mistake note:
+A common mistake would be to use the wrong formula or混淆VSWR与反射系数的平方。
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+In a lossless transmission line, what is the relationship between input impedance (Z_in) and load impedance (Z_L)?
+A) Z_in = Z_L
+B) Z_in = 1 / Z_L
+C) Z_in = Z_0
+D) Z_in = Z_L + Z_0
+Correct Answer: A
+
+Solution:
+In a lossless transmission line, the input impedance (Z_in) is equal to the load impedance (Z_L). This is because there is no power dissipated in the line and all the voltage and current waves are either transmitted or reflected at the load.
+
+Explanation:
+The characteristic impedance (Z_0) of a transmission line is independent of the load impedance. In a lossless case, the input impedance will match the load impedance regardless of the position on the line. The other options do not accurately represent this relationship in a lossless scenario.
+
+Common mistake note:
+A common mistake would be to assume that Z_in is related to Z_0 or that there is some kind of addition or division involved, which is not true for a lossless transmission line.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+What is the phase difference between the reflected wave and incident wave in a transmission line with a reflection coefficient (Γ) of 0.3?
+A) 18°
+B) 36°
+C) 54°
+D) 72°
+Correct Answer: B
+
+Solution:
+The phase difference between the reflected wave and incident wave is given by θ = arctan(Γ). For a reflection coefficient of 0.3, we have θ = arctan(0.3) ≈ 17.47° or 18° (approximated to the nearest whole number).
+
+Explanation:
+The phase difference is an important aspect of transmission line analysis as it affects the overall behavior of the system. The other options do not accurately represent the phase difference for a given reflection coefficient.
+
+Common mistake note:
+A common mistake would be to use the wrong formula or混淆arctan(Γ)与θ的度数表示。
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the purpose of a transmission line matching network?
+A) To increase the power output of the source.
+B) To reduce signal attenuation along the line.
+C) To match the load impedance to the characteristic impedance for minimal reflection.
+D) To improve the bandwidth of the system.
+Correct Answer: C
+
+Solution:
+The purpose of a transmission line matching network is to match the load impedance to the characteristic impedance of the transmission line, ensuring minimal power reflection and efficient transfer of power from the source to the load.
+
+Explanation:
+A well-matched transmission line ensures maximum power transfer and reduces signal distortion. The other options describe different goals but do not specifically address the role of a matching network.
+
+Common mistake note:
+A common mistake would be to confuse the matching network's function with other objectives like increasing power output or improving bandwidth, which are not its primary purpose.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+In a transmission line, what is meant by the term 'impedance mismatch'? How does it affect signal transmission?
+A) It occurs when the load impedance is equal to the characteristic impedance; it results in no power loss.
+B) It occurs when the load impedance is greater than the characteristic impedance; it causes voltage reflection and potential power loss.
+C) It occurs when the load impedance is less than the characteristic impedance; it causes current reflection and no power loss.
+D) It occurs when the load impedance is different from the characteristic impedance; it results in signal attenuation but no power loss.
+Correct Answer: B
+
+Solution:
+Impedance mismatch occurs when the load impedance is not equal to the characteristic impedance of the transmission line. This results in voltage reflection, which can cause power loss and signal distortion.
+
+Explanation:
+An impedance mismatch is a common issue in transmission lines and affects the efficiency and accuracy of signal transfer. The other options describe incorrect scenarios or do not accurately represent the effects of an impedance mismatch.
+
+Common mistake note:
+A common mistake would be to assume that no reflection or power loss occurs when there is an impedance mismatch, which is not true.
+------------------------------------------------------------------------------

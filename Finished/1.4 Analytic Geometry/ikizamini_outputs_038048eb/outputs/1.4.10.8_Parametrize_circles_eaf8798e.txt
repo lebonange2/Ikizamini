@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.10.8 Parametrize circles
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.10 Parametric Curves in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the standard form equation of a circle with center (h, k) and radius r?
+A) (x - h)^2 + (y - k)^2 = r^2
+B) (x + h)^2 + (y + k)^2 = r^2
+C) x^2 + y^2 = r^2
+D) (h - x)^2 + (k - y)^2 = r^2
+Correct Answer: A
+
+Solution:
+The standard form equation of a circle with center (h, k) and radius r is (x - h)^2 + (y - k)^2 = r^2. This equation represents the set of all points that are equidistant from the center.
+
+Explanation:
+The standard form helps to identify the center and radius directly from the equation.
+
+Common mistake note:
+A common mistake is to reverse the signs in the center coordinates, which would result in choice B. This form does not represent a circle with the given center.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What are the parametric equations for a circle with radius 3 and center at the origin?
+A) x = 3π, y = 3π
+B) x = 3θ cos(θ), y = 3θ sin(θ)
+C) x = 3cos(θ), y = 3sin(θ)
+D) x = 3sin(θ), y = 3cos(θ)
+Correct Answer: C
+
+Solution:
+The parametric equations for a circle with radius r and center at the origin are x = r cos(θ) and y = r sin(θ). For a circle with radius 3, these equations become x = 3cos(θ) and y = 3sin(θ).
+
+Explanation:
+Parametric equations describe the coordinates of points on a curve as functions of a single variable (θ). In this case, θ ranges from 0 to 2π to cover the entire circle.
+
+Common mistake note:
+A common mistake is to use θ instead of cos(θ) and sin(θ), which would result in choice A. This form does not represent a circle.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+What are the parametric equations for a circle with center (2, 1) and radius 4?
+A) x = 2 + 4cos(θ), y = 1 + 4sin(θ)
+B) x = 2 - 4cos(θ), y = 1 - 4sin(θ)
+C) x = 4cos(θ) + 2, y = 4sin(θ) + 1
+D) x = 4cos(θ) - 2, y = 4sin(θ) - 1
+Correct Answer: A
+
+Solution:
+The parametric equations for a circle with center (h, k) and radius r are x = h + r cos(θ) and y = k + r sin(θ). For a circle with center (2, 1) and radius 4, these equations become x = 2 + 4cos(θ) and y = 1 + 4sin(θ).
+
+Explanation:
+The parametric equations for a shifted circle include the coordinates of the center in the equation.
+
+Common mistake note:
+A common mistake is to reverse the signs in the center coordinates, which would result in choice B. This form does not represent a circle with the given center.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the value of θ when the parametric point (x, y) = (5, 3) on a circle with radius 6 and center at the origin corresponds to the quarter where cos(θ) > 0 and sin(θ) > 0?
+A) π/4
+B) π/2
+C) 3π/4
+D) π
+Correct Answer: A
+
+Solution:
+The point (5, 3) lies in the first quadrant where both cos(θ) and sin(θ) are positive. The angle π/4 corresponds to this quadrant because cos(π/4) = √2/2 and sin(π/4) = √2/2.
+
+Explanation:
+The first quadrant is where both cosine and sine are positive. The angle that corresponds to this quadrant is π/4.
+
+Common mistake note:
+A common mistake is to choose B, which represents the second quadrant where cos(θ) < 0 and sin(θ) > 0.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+What is the value of r when the parametric equations for a circle are x = 4cos(θ) - 3 and y = 4sin(θ) + 2?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: D
+
+Solution:
+The parametric equations for a circle with center (h, k) and radius r are x = h + r cos(θ) and y = k + r sin(θ). Comparing the given equations to this form, we see that r is equal to 4.
+
+Explanation:
+The coefficient of cos(θ) and sin(θ) in the parametric equations represents the radius of the circle.
+
+Common mistake note:
+A common mistake is to choose C or B, which would be the distance between the origin and the center (3 or 2), not the actual radius.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the value of θ when the parametric point (x, y) = (-5, -3) on a circle with center at (1, 2) and radius 6 corresponds to the quarter where cos(θ) < 0 and sin(θ) < 0?
+A) π
+B) 3π/2
+C) 5π/4
+D) 7π/4
+Correct Answer: B
+
+Solution:
+The point (-5, -3) lies in the third quadrant where both cos(θ) and sin(θ) are negative. The angle 3π/2 corresponds to this quadrant because cos(3π/2) = -√2/2 and sin(3π/2) = -√2/2.
+
+Explanation:
+The third quadrant is where both cosine and sine are negative. The angle that corresponds to this quadrant is 3π/2.
+
+Common mistake note:
+A common mistake is to choose A, which represents the fourth quadrant where cos(θ) > 0 and sin(θ) < 0.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What are the parametric equations for a circle with center at (-2, 3) and radius 5?
+A) x = -2 + 5cos(θ), y = 3 + 5sin(θ)
+B) x = -2 - 5cos(θ), y = 3 - 5sin(θ)
+C) x = 5cos(θ) - 2, y = 5sin(θ) + 3
+D) x = 5cos(θ) + 2, y = 5sin(θ) - 3
+Correct Answer: C
+
+Solution:
+The parametric equations for a circle with center (h, k) and radius r are x = h + r cos(θ) and y = k + r sin(θ). For a circle with center (-2, 3) and radius 5, these equations become x = -2 + 5cos(θ) and y = 3 + 5sin(θ).
+
+Explanation:
+The parametric equations for a shifted circle include the coordinates of the center in the equation.
+
+Common mistake note:
+A common mistake is to reverse the signs in the center coordinates, which would result in choice B. This form does not represent a circle with the given center.
+------------------------------------------------------------------------------

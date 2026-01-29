@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.5.4",
+  "objective_text": "Apply idempotent laws",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Given the idempotent law for multiplication: a × a = a, which of the following expressions is true?",
+      "choices": {
+        "A": "2 × 2 = 4",
+        "B": "3 + 3 = 6",
+        "C": "5 × 5 = 5",
+        "D": "7 - 7 = 0"
+      },
+      "correct_choice": "C",
+      "solution": "The idempotent law for multiplication states that when a number is multiplied by itself, the result is the number itself. Therefore, 5 × 5 = 5.",
+      "explanation": "This question tests understanding of the idempotent property in multiplication.",
+      "common_mistake_notes": "A common mistake would be to choose A, as it's a correct multiplication but not an example of idempotence. B and D are not related to multiplication."
+    },
+    {
+      "id": ":2",
+      "stem": "Which of the following binary operations demonstrates idempotence?",
+      "choices": {
+        "A": "a + a",
+        "B": "a - a",
+        "C": "a × a",
+        "D": "a / a"
+      },
+      "correct_choice": "C",
+      "solution": "The operation 'a × a' demonstrates idempotence because it results in the same number when performed on itself.",
+      "explanation": "This question tests understanding of which operations exhibit the idempotent property.",
+      "common_mistake_notes": "A common mistake would be to choose A, as addition is not idempotent; B can lead to 0 if a = 0; D may seem correct for non-zero a but idempotence requires the operation result to be the operand itself."
+    },
+    {
+      "id": ":3",
+      "stem": "Given the idempotent law for exponentiation: a^2 = a, which of the following expressions is NOT true?",
+      "choices": {
+        "A": "2^2 = 4",
+        "B": "3^3 = 3",
+        "C": "5^5 = 5",
+        "D": "7^0 = 1"
+      },
+      "correct_choice": "A",
+      "solution": "The idempotent law for exponentiation states that when a number is raised to the power of itself, the result is the number itself. Therefore, 2^2 = 4 does not demonstrate idempotence.",
+      "explanation": "This question tests understanding of the idempotent property in exponentiation.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, but they are correct examples of idempotence; D is an unrelated case with base raised to 0."
+    },
+    {
+      "id": ":4",
+      "stem": "Which of the following statements demonstrates the idempotent property for integers?",
+      "choices": {
+        "A": "a + a = 2a",
+        "B": "a - a = 0",
+        "C": "a × a = a^2",
+        "D": "a / a = 1 (for a ≥ 1)"
+      },
+      "correct_choice": "C",
+      "solution": "The statement 'a × a = a^2' demonstrates the idempotent property for integers when a is raised to the power of itself.",
+      "explanation": "This question tests understanding of idempotence in integer operations.",
+      "common_mistake_notes": "A common mistake would be to choose A or D, as they are not examples of idempotence; B is not idempotent for all integers."
+    },
+    {
+      "id": ":5",
+      "stem": "According to the idempotent law, what is the result of applying the operation twice on a number 'a'?",
+      "choices": {
+        "A": "2a",
+        "B": "0",
+        "C": "a",
+        "D": "a^2"
+      },
+      "correct_choice": "C",
+      "solution": "The idempotent law states that when an operation is applied twice to a number, the result remains unchanged. So, applying the operation twice on 'a' will give 'a'.",
+      "explanation": "This question tests understanding of what idempotence means in general.",
+      "common_mistake_notes": "A common mistake would be to choose A or D, as they imply multiplication; B is incorrect because it doesn't preserve the original value."
+    },
+    {
+      "id": ":6",
+      "stem": "Which of the following logical operations exhibits the idempotent property?",
+      "choices": {
+        "A": "a AND a",
+        "B": "a OR a",
+        "C": "NOT a AND NOT a",
+        "D": "a XOR a"
+      },
+      "correct_choice": "A",
+      "solution": "The logical operation 'a AND a' demonstrates idempotence because it results in the same truth value when performed on itself.",
+      "explanation": "This question tests understanding of idempotence in logical operations.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, as they are not idempotent; D is not an example of idempotence."
+    },
+    {
+      "id": ":7",
+      "stem": "Given the idempotent law for sets: A ⋅ A = A, which of the following set operations demonstrates this property?",
+      "choices": {
+        "A": "{1, 2} UNION {1, 2}",
+        "B": "{3, 4} INTERSECT {3, 4}",
+        "C": "{5, 6} DIFFERENCE {5, 6}",
+        "D": "{7, 8} CARTESIAN_PRODUCT {7, 8}"
+      },
+      "correct_choice": "B",
+      "solution": "The set operation '{3, 4} INTERSECT {3, 4}' demonstrates the idempotent property because it results in the same set when performed on itself.",
+      "explanation": "This question tests understanding of idempotence in set operations.",
+      "common_mistake_notes": "A common mistake would be to choose A or D, as they are not examples of idempotence; C is an empty set, not idempotent."
+    }
+  ]
+}

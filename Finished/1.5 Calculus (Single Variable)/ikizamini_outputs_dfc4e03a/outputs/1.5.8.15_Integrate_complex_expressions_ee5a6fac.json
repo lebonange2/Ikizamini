@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.8.15",
+  "objective_text": "Integrate complex expressions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Indefinite integral of cos(x) from 0 to pi/2",
+      "stem": "Evaluate the indefinite integral: ∫cos(x) dx",
+      "choices": {
+        "A": "sin(x) + C",
+        "B": "cos(x) + C",
+        "C": "tan(x) + C",
+        "D": "sec(x) + C"
+      },
+      "correct_choice": "A",
+      "solution": "The antiderivative of cos(x) is sin(x). Therefore, the indefinite integral of cos(x) dx is sin(x) + C.",
+      "explanation": "To integrate a function, find its antiderivative. The derivative of sin(x) is cos(x), so the antiderivative of cos(x) is sin(x).",
+      "common_mistake_notes": "A common mistake would be to choose B (cos(x) + C), which is incorrect because it is not the antiderivative of cos(x)."
+    },
+    {
+      "id": "Definite integral of e^x from 1 to 2",
+      "stem": "Evaluate the definite integral: ∫e^x dx from x = 1 to x = 2",
+      "choices": {
+        "A": "e^2 - e",
+        "B": "e - e^2",
+        "C": "e^3 - e^2",
+        "D": "e^2 - 1"
+      },
+      "correct_choice": "A",
+      "solution": "The antiderivative of e^x is e^x. Evaluate at the limits: (e^2 - e^1) = e^2 - e.",
+      "explanation": "To evaluate a definite integral, find the antiderivative and then evaluate it at the given limits. The derivative of e^x is itself, so the antiderivative is also e^x.",
+      "common_mistake_notes": "A common mistake would be to choose D (e^2 - 1), which is the difference of the function values at the limits but not the result of evaluating the definite integral."
+    },
+    {
+      "id": "Integration by substitution: ∫(x^2 + 3)^3 dx",
+      "stem": "Evaluate the integral using substitution: ∫(x^2 + 3)^3 dx",
+      "choices": {
+        "A": "(x^2 + 3)^4 / 16",
+        "B": "(x^2 + 3)^4 / 8",
+        "C": "(x^2 + 3)^4 / 4",
+        "D": "(x^2 + 3)^4 / 2"
+      },
+      "correct_choice": "B",
+      "solution": "Let u = x^2 + 3, du/dx = 2x. dx = du / (2x), so ∫(u)^3 * (1/(2√u)) du = (u^4 / 8) + C = (x^2 + 3)^4 / 8 + C.",
+      "explanation": "To integrate by substitution, choose a suitable u and find du/dx. Then change the integrand accordingly and integrate with respect to u. Finally, substitute back x^2 + 3 for u.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply by du/dx or to use the wrong power rule when integrating (u)^3."
+    },
+    {
+      "id": "Integration by parts: ∫xe^(2x) dx",
+      "stem": "Evaluate the integral using integration by parts: ∫xe^(2x) dx",
+      "choices": {
+        "A": "(1/4)e^(2x)(x^2 - 1) + C",
+        "B": "(1/2)e^(2x)(x^2 - 1) + C",
+        "C": "(1/3)e^(2x)(x^2 - 1) + C",
+        "D": "(1/5)e^(2x)(x^2 - 1) + C"
+      },
+      "correct_choice": "B",
+      "solution": "Let u = x, dv/dx = e^(2x), du/dx = 1, v = (1/2)e^(2x). ∫xe^(2x) dx = (1/2)x(e^(2x)) - ∫(1/2)e^(2x) dx = (1/2)e^(2x)(x - 1/2) + C.",
+      "explanation": "To integrate by parts, choose u and dv/dx such that the product rule can be used to simplify the integral. Integrate dv/dx to get v, then apply the integration by parts formula: ∫udv = uv - ∫vdu.",
+      "common_mistake_notes": "A common mistake would be to integrate e^(2x) incorrectly or to forget to subtract the second part of the integration by parts formula."
+    },
+    {
+      "id": "Integration of a logarithmic function: ∫ln(x) dx",
+      "stem": "Evaluate the integral: ∫ln(x) dx",
+      "choices": {
+        "A": "x ln(x) - x + C",
+        "B": "x ln(x) + x + C",
+        "C": "x ln(x) - 2x + C",
+        "D": "x ln(x) + 2x + C"
+      },
+      "correct_choice": "A",
+      "solution": "The antiderivative of ln(x) is x ln(x) - x + C. Use integration by parts with u = ln(x), dv/dx = dx/x.",
+      "explanation": "To integrate a logarithmic function, use integration by parts. Choose u = ln(x) and dv/dx = dx/x to simplify the integral.",
+      "common_mistake_notes": "A common mistake would be to forget to subtract x from the antiderivative of x ln(x), which comes from integrating by parts."
+    },
+    {
+      "id": "Integration of a rational function: ∫(2x + 1)/(x^2 + 2) dx",
+      "stem": "Evaluate the integral using partial fraction decomposition: ∫(2x + 1)/(x^2 + 2) dx",
+      "choices": {
+        "A": "arctan(x) - (1/√2)ln|x + √2| + C",
+        "B": "arctan(x) + (1/√2)ln|x + √2| + C",
+        "C": "arcsin(x) - (1/√2)ln|x + √2| + C",
+        "D": "arcsin(x) + (1/√2)ln|x + √2| + C"
+      },
+      "correct_choice": "A",
+      "solution": "Decompose into partial fractions: A/(x + √2) + B/(x - √2). Solve for A and B, integrate each term separately.",
+      "explanation": "To integrate a rational function, decompose it into partial fractions with linear denominators. Then integrate each term using basic integration techniques.",
+      "common_mistake_notes": "A common mistake would be to choose the wrong decomposition or to integrate the resulting terms incorrectly."
+    },
+    {
+      "id": "Integration of a trigonometric substitution: ∫(1 + x^2)^(-1/2) dx",
+      "stem": "Evaluate the integral using trigonometric substitution: ∫(1 + x^2)^(-1/2) dx",
+      "choices": {
+        "A": "arctan(x) + C",
+        "B": "arcsin(x) + C",
+        "C": "arccos(x) + C",
+        "D": "arcsec(x) + C"
+      },
+      "correct_choice": "A",
+      "solution": "Let x = tan(θ), dx/dθ = sec^2(θ). ∫(1 + x^2)^(-1/2) dx = ∫cos^2(θ)dθ = (1/2)θ + (1/2)sin(θ) + C = arctan(x) + C.",
+      "explanation": "To integrate a trigonometric substitution, choose an appropriate substitution that simplifies the integrand. In this case, x = tan(θ) leads to cos^2(θ). Integrate with respect to θ and substitute back for x.",
+      "common_mistake_notes": "A common mistake would be to choose the wrong substitution or to integrate the resulting trigonometric function incorrectly."
+    }
+  ]
+}

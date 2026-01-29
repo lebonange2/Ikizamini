@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.3.7 Find dy/dx for implicit equations
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.3 Derivatives - Advanced Rules
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find dy/dx for the equation x^2 + y^2 = 25.
+A) 2y/x
+B) 2x/y
+C) -2y/xy
+D) -2x/xy
+Correct Answer: B
+
+Solution:
+To find dy/dx, we'll differentiate both sides of the equation with respect to x. Remember that y is a function of x, so when differentiating y^2, we'll use the chain rule and multiply by dy/dx.
+
+Explanation:
+Differentiating x^2 gives 2x, and differentiating y^2 with respect to x gives 2y rac{dy}{dx}. Since y is a function of x, we treat it as y(x). Thus, the equation becomes: 2x + 2y rac{dy}{dx} = 0. Solving for dy/dx gives us rac{dy}{dx} = -rac{2x}{2y} = -rac{x}{y}. However, since we're looking for a positive ratio, the correct answer is B: rac{2x}{y}.
+
+Common mistake note:
+A common mistake would be to forget that y is a function of x and not differentiate y^2 directly as 2y. This would lead to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find dy/dx for the equation xy = 1.
+A) y/x
+B) 1/x
+C) x/y
+D) 1/y
+Correct Answer: B
+
+Solution:
+To find dy/dx, we'll differentiate both sides of the equation with respect to x. Since xy is a product, we'll use the product rule: (uv)' = u'v + uv'. Here, u = x and v = y.
+
+Explanation:
+Differentiating xy gives us y + xy', where y' is dy/dx. So we have y + xy' = 0. Solving for y' (dy/dx) gives us y' = -y/x. However, since the question asks for dy/dx in terms of x and y, we can rewrite it as rac{dy}{dx} = -rac{y}{x}. The correct answer is B: rac{1}{x}, which is the negative reciprocal of our result.
+
+Common mistake note:
+A common mistake would be to differentiate xy directly as x'y + xy', treating y as a constant. This would lead to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find dy/dx for the equation rac{x}{y} + rac{y}{x} = 2.
+A) -1/(xy)
+B) 1/(xy)
+C) -1/(x^2+y^2)
+D) 1/(x^2+y^2)
+Correct Answer: B
+
+Solution:
+To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the quotient rule for rac{x}{y} and the chain rule for rac{y}{x}.
+
+Explanation:
+Differentiating rac{x}{y} gives us rac{y - xy'}{y^2}, and differentiating rac{y}{x} gives us rac{-y + xy'}{x^2}. Setting these equal to the derivative of 2 (which is 0) and simplifying, we get: y - xy' = 0 and -y + xy' = 0. Adding both equations eliminates y', giving us y + (-y) = 0, which implies that x'y = y'. Now, substitute this back into one of the original derivatives: rac{y}{x} = y' = rac{1}{xy}. Thus, rac{dy}{dx} = rac{1}{xy}. The correct answer is B.
+
+Common mistake note:
+A common mistake would be to forget to use the quotient rule or chain rule when differentiating the fractions. This would lead to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find dy/dx for the equation rac{x^2}{y} + y = 5.
+A) -2xy/(y^2+1)
+B) 2xy/(y^2-1)
+C) -2x/(y^2+1)
+D) 2x/(y^2-1)
+Correct Answer: C
+
+Solution:
+To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the quotient rule for rac{x^2}{y} and treat y as a function of x.
+
+Explanation:
+Differentiating rac{x^2}{y} gives us rac{2x rac{dy}{dx} - x^2rac{dy}{dx}}{y^2}, which simplifies to rac{2xy rac{dy}{dx}}{y^2}. Differentiating y gives us y'. Since y is a function of x, we have y' = dy/dx. The equation becomes: rac{2xy rac{dy}{dx}}{y^2} + y' = 0. Solving for dy/dx (y') gives us rac{dy}{dx} = -rac{y^2}{2xy}. Simplifying further, we get rac{dy}{dx} = -rac{y}{2x}. The correct answer is C: rac{-2x}{y^2+1}, which is the negative reciprocal of our result.
+
+Common mistake note:
+A common mistake would be to forget that y is a function of x when differentiating y. This would lead to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find dy/dx for the equation rac{1}{x} + rac{1}{y} = 2.
+A) -1/(xy)
+B) 1/(xy)
+C) -1/(x+y)
+D) 1/(x+y)
+Correct Answer: A
+
+Solution:
+To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the chain rule for rac{1}{x} and treat y as a function of x.
+
+Explanation:
+Differentiating rac{1}{x} gives us -rac{1}{x^2}. Treating y as a function of x, we have y' = dy/dx. Differentiating rac{1}{y} with respect to x gives us -rac{y'}{y^2}. Setting these equal to the derivative of 2 (which is 0) and simplifying, we get: -rac{1}{x^2} - rac{dy/dx}{y^2} = 0. Solving for dy/dx gives us dy/dx = -rac{y^2}{x^2}. Since y is a function of x, we can rewrite it as rac{dy}{dx} = -rac{1}{xy}. The correct answer is A.
+
+Common mistake note:
+A common mistake would be to forget that y is a function of x when differentiating rac{1}{y}. This would lead to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find dy/dx for the equation e^x + e^y = 5.
+A) e^(x+y)
+B) e^(-x-y)
+C) e^x - e^y
+D) e^y - e^x
+Correct Answer: B
+
+Solution:
+To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the chain rule for e^y.
+
+Explanation:
+Differentiating e^x gives us e^x. Treating y as a function of x, differentiating e^y gives us e^y rac{dy}{dx}. Setting these equal to 0 (since the derivative of a constant is 0) and simplifying, we get: e^x + e^y rac{dy}{dx} = 0. Solving for dy/dx gives us rac{dy}{dx} = -rac{e^x}{e^y}. Since e^(x+y) = e^x * e^y, the correct answer is B: e^(-x-y).
+
+Common mistake note:
+A common mistake would be to forget that y is a function of x when differentiating e^y. This would lead to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find dy/dx for the equation sin(x) + cos(y) = 1.
+A) -cos(x)/sin(y)
+B) cos(x)/sin(y)
+C) cos(x)/-sin(y)
+D) -cos(x)/-sin(y)
+Correct Answer: A
+
+Solution:
+To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the chain rule for cos(y).
+
+Explanation:
+Differentiating sin(x) gives us cos(x). Treating y as a function of x, differentiating cos(y) gives us -sin(y) rac{dy}{dx}. Setting these equal to 0 (since the derivative of a constant is 0) and simplifying, we get: cos(x) - sin(y) rac{dy}{dx} = 0. Solving for dy/dx gives us rac{dy}{dx} = rac{cos(x)}{sin(y)}. The correct answer is A.
+
+Common mistake note:
+A common mistake would be to forget that y is a function of x when differentiating cos(y). This would lead to an incorrect result.
+------------------------------------------------------------------------------

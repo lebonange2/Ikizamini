@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.9.14 Apply Laurent series
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.9 Complex Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the Laurent series expansion for the function f(z) = 1/(z^3 - z), centered at z=0.
+A) f(z) = sum(n=-∞ to ∞) (n+2)! * z^(n-3)
+B) f(z) = sum(n=-∞ to ∞) (-1)^n * n! * z^(n-3)
+C) f(z) = sum(n=0 to ∞) (-1)^n * (n+2)! * z^n
+D) f(z) = sum(n=-∞ to ∞) (-1)^n * (n+1)! * z^(n-3)
+Correct Answer: B
+
+Solution:
+The function f(z) can be rewritten as f(z) = 1/z^3(1 - z/z). This is a geometric series with the term 1/(z^3), and the ratio -z/z. The general form of the Laurent series for a geometric series is given by sum(n=-∞ to ∞) ar^n, where a is the first term and r is the ratio. In this case, a = 1/z^3 and r = -1. Thus, f(z) can be expanded as f(z) = sum(n=-∞ to ∞) (1/z^3)(-1)^n * z^n = sum(n=-∞ to ∞) (-1)^n * z^(n-3). The factorial form of this series is f(z) = sum(n=-∞ to ∞) (-1)^n * n! * z^(n-3).
+
+Explanation:
+The correct answer uses the formula for a geometric series and correctly adjusts the indices to account for the initial term 1/z^3.
+
+Common mistake note:
+A common mistake is not accounting for the initial term 1/z^3, which results in an incorrect index shift. Answer A has the wrong index shift (n-3 instead of n+2), and answer C omits the initial term and starts with n=0. Answer D has the correct index shift but uses the factorial form incorrectly.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Find the interval of convergence for the Laurent series expansion of f(z) = 1/(z^2 + 4), centered at z=0.
+A) (-∞, -2) U (2, ∞)
+B) (-2, 2)
+C) (0, 2)
+D) (-∞, ∞)
+Correct Answer: A
+
+Solution:
+The function f(z) can be rewritten using partial fraction decomposition as f(z) = 1/4 * (1/(z+2i) + 1/(z-2i)). Each term is a geometric series with ratio -2i and 2i, respectively. The radius of convergence for each geometric series is given by |r| = 1, so the radius of convergence for f(z) is R=1. Since the Laurent series is centered at z=0, the interval of convergence will be from -R to +R without including the endpoints: (-∞, -2) U (2, ∞).
+
+Explanation:
+The correct answer calculates the radius of convergence for each geometric series term and correctly determines the interval of convergence based on the center of the series.
+
+Common mistake note:
+A common mistake is to assume that the entire function f(z) is a geometric series, which would lead to an incorrect interval of convergence. Answer B assumes this and finds a finite interval around z=0. Answer C only considers one of the two terms in the partial fraction decomposition, while answer D incorrectly assumes the series converges everywhere.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Find the Laurent series expansion for f(z) = 1/(z^2 + 4z + 5), centered at z=-2.
+A) f(z) = sum(n=0 to ∞) (-1)^n * (n+1)! * (z+2)^n
+B) f(z) = sum(n=-∞ to ∞) (-1)^n * n! * (z+2)^n
+C) f(z) = sum(n=-∞ to ∞) (-1)^n * (n+1)! * (z+2)^(-n)
+D) f(z) = sum(n=0 to ∞) (-1)^n * n! * (z+2)^(-n)
+Correct Answer: B
+
+Solution:
+The function f(z) can be rewritten as f(z) = 1/((z+2)^2 + 1). This is a sum of two geometric series with terms 1/(z+2)^2 and 1, respectively. The general form of the Laurent series for these series is given by sum(n=-∞ to ∞) ar^n, where a is the first term and r is the ratio. In this case, a = 1/(z+2)^2 and r = -1 for the first term, and a = 1 and r = 1 for the second term. Thus, f(z) can be expanded as f(z) = sum(n=-∞ to ∞) (-1)^n * (z+2)^(-2- n) + sum(n=-∞ to ∞) (z+2)^(-n). Combining these series gives f(z) = sum(n=-∞ to ∞) (-1)^n * n! * (z+2)^n.
+
+Explanation:
+The correct answer correctly decomposes the function into two geometric series and combines them to form the final Laurent series.
+
+Common mistake note:
+A common mistake is not accounting for the different ratios in each geometric series, which leads to incorrect powers of (z+2). Answer A has the wrong sign in the exponent, while answer C uses the wrong sign and index shift. Answer D omits the first term of the series.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Find the residue of f(z) = 1/(z^3 - z) at the pole z=0.
+A) -2
+B) 0
+C) 1
+D) 2
+Correct Answer: C
+
+Solution:
+The function f(z) has a simple pole at z=0, since the denominator has a single zero of order 3. The residue can be found by taking the limit as z approaches 0 of (z - 0) * f(z), which simplifies to the limit of 1/z^2. Evaluating this limit gives the residue as 1.
+
+Explanation:
+The correct answer uses the formula for finding the residue at a simple pole: the limit of (z-z_0) * f(z) as z approaches z_0, where z_0 is the pole.
+
+Common mistake note:
+A common mistake is to confuse the order of the pole with the residue calculation. Answer A uses the numerator's coefficient, while answer B assumes there is no residue for a simple pole. Answer D uses the denominator's coefficient.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Find the Laurent series expansion for f(z) = 1/(z^2 - 4), centered at z=2.
+A) f(z) = sum(n=-∞ to ∞) (-1)^n * (n+1)! * (z-2)^(-n)
+B) f(z) = sum(n=-∞ to ∞) (-1)^n * n! * (z-2)^(-n)
+C) f(z) = sum(n=0 to ∞) (-1)^n * (n+1)! * (z-2)^n
+D) f(z) = sum(n=0 to ∞) (-1)^n * n! * (z-2)^(-n)
+Correct Answer: B
+
+Solution:
+The function f(z) can be rewritten as f(z) = 1/((z-2)(z+2)). This is a product of two simple poles. The residue at z=2 can be found by multiplying the residue of 1/(z-2) (which is 1) with the value of 1/(z+2) evaluated at z=2 (which is -1/4). Thus, the coefficient of the Laurent series term for z=2 is -1/4. The general form of the Laurent series for a simple pole is given by sum(n=-∞ to ∞) c_n * (z-z_0)^(-n), where c_n is the residue at z_0. In this case, c_{-1} = -1/4 and z_0 = 2, so the term for z=2 in the Laurent series is -1/4 * (z-2)^{-1}. The rest of the series will be a geometric series from z=-2 to ∞ with ratio -1. Therefore, f(z) can be expanded as f(z) = sum(n=-∞ to ∞) (-1)^n * n! * (z-2)^(-n).
+
+Explanation:
+The correct answer correctly identifies the simple pole at z=2 and calculates the coefficient for that term in the Laurent series.
+
+Common mistake note:
+A common mistake is not accounting for the residue at the pole z=2, which leads to an incorrect coefficient. Answer A uses the wrong sign in the exponent, while answer C omits the pole at z=2. Answer D has the correct index but uses the wrong coefficient.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Find the interval of convergence for the Laurent series expansion of f(z) = 1/(z^3 - 1), centered at z=1.
+A) (-∞, 0) U (2, ∞)
+B) (0, 2)
+C) (-1, 1)
+D) (-∞, ∞)
+Correct Answer: B
+
+Solution:
+The function f(z) can be rewritten as f(z) = 1/(z-1)(z^2 + z + 1). This is a product of two simple poles and a quadratic term. The interval of convergence will be determined by the quadratic term, which has roots at z=-0.5 ± √3i/2. The distance from z=1 to these roots is R = |1 - (-0.5 ± √3i/2)| = 1.5. Thus, the interval of convergence for the Laurent series will be (1-R, 1+R) without including the endpoints: (0, 2).
+
+Explanation:
+The correct answer correctly identifies the quadratic term and calculates the radius of convergence based on the distance from the center to the roots.
+
+Common mistake note:
+A common mistake is to assume that the entire function f(z) is a geometric series, which would lead to an incorrect interval of convergence. Answer A assumes this and finds a finite interval around z=1. Answer C only considers the simple poles, while answer D incorrectly assumes the series converges everywhere.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Find the residue of f(z) = 1/(z^3 - 1) at the pole z=1.
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: A
+
+Solution:
+The function f(z) has a pole of order 3 at z=1, since the denominator has a zero of order 3. To find the residue, we need to take the derivative of the numerator two times and evaluate it at z=1. The first derivative is -3z^2, the second derivative is -6z, and the third derivative is -6. Evaluating this at z=1 gives the residue as -6/3 = -2.
+
+Explanation:
+The correct answer uses the formula for finding the residue at a pole of order n: (n-1)! * [d^(n-1)/dz^(n-1) (numerator)](z=z_0), where z_0 is the pole.
+
+Common mistake note:
+A common mistake is to confuse the order of the pole with the residue calculation. Answer B uses the numerator's coefficient, while answer C and D use incorrect calculations.
+------------------------------------------------------------------------------

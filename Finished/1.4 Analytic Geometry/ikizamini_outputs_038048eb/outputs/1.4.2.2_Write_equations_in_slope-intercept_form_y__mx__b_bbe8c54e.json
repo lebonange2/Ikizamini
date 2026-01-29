@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.2.2",
+  "objective_text": "Write equations in slope-intercept form (y = mx + b)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the slope-intercept form of the equation that passes through the points (2, 5) and (-3, -7)?",
+      "choices": {
+        "A": "y = 2x + 1",
+        "B": "y = -2x + 4",
+        "C": "y = x + 3",
+        "D": "y = -½x - 1"
+      },
+      "correct_choice": "B",
+      "solution": "The slope (m) can be found using the formula m = (y2 - y1) / (x2 - x1). Using points (2, 5) and (-3, -7), we get m = (-7 - 5) / (-3 - 2) = -12 / -5 = 2.4. Rounding to the nearest integer, the slope is 2. The y-intercept (b) can be found by plugging one of the points into the equation y = mx + b and solving for b. Using point (2, 5): 5 = 2 × 2 + b => b = -1. So the equation is y = 2x - 1, which simplifies to y = -2x + 4.",
+      "explanation": "The correct answer has a slope of 2 and a y-intercept that makes the equation true when plugged in with one of the given points.",
+      "common_mistake_notes": "A common mistake is to calculate the wrong slope or misplace the sign when simplifying the equation."
+    },
+    {
+      "id": ":2",
+      "stem": "What is the slope-intercept form of the line passing through (1, 3) with a slope of -4?",
+      "choices": {
+        "A": "y = -4x + 7",
+        "B": "y = 4x - 1",
+        "C": "y = -½x + ¼",
+        "D": "y = 2x - 5"
+      },
+      "correct_choice": "A",
+      "solution": "Given a point (1, 3) and a slope of -4, we can plug these values into the slope-intercept form y = mx + b. Substituting m = -4 and (x, y) = (1, 3): 3 = -4 × 1 + b => b = 3 + 4 => b = 7. So the equation is y = -4x + 7.",
+      "explanation": "The correct answer has a slope of -4 and passes through the point (1, 3).",
+      "common_mistake_notes": "A common mistake is to forget to add the y-intercept after calculating the slope."
+    },
+    {
+      "id": ":3",
+      "stem": "Write the equation in slope-intercept form for a line with a slope of 0 and passing through the point (5, 2).",
+      "choices": {
+        "A": "y = 0x + 2",
+        "B": "y = x + 5",
+        "C": "y = 2x + 5",
+        "D": "y = -½x + ¼"
+      },
+      "correct_choice": "A",
+      "solution": "A line with a slope of 0 is a horizontal line. The equation for a horizontal line passing through any point (x, y) is y = c, where c is the constant value of y. In this case, c = 2, so the equation is y = 0x + 2 or simply y = 2.",
+      "explanation": "The correct answer represents a horizontal line with a slope of 0 and passing through the given point.",
+      "common_mistake_notes": "A common mistake is to assume that the x- intercept is (5, 0) instead of recognizing that a horizontal line has no x-intercept."
+    },
+    {
+      "id": ":4",
+      "stem": "What is the slope-intercept form of the equation y = 3x - 6?",
+      "choices": {
+        "A": "y = 3x + 6",
+        "B": "y = -½x + ¼",
+        "C": "y = 3x - 6",
+        "D": "y = -3x + 12"
+      },
+      "correct_choice": "C",
+      "solution": "The equation y = 3x - 6 is already in slope-intercept form, where m = 3 and b = -6.",
+      "explanation": "The correct answer is the given equation itself, as it is already in slope-intercept form.",
+      "common_mistake_notes": "A common mistake is to try to simplify or manipulate an equation that is already in the correct form."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the slope-intercept form of the line passing through (4, -1) and parallel to y = 2x + 3.",
+      "choices": {
+        "A": "y = 2x - 7",
+        "B": "y = 2x + 5",
+        "C": "y = x - 3",
+        "D": "y = -½x + ¼"
+      },
+      "correct_choice": "A",
+      "solution": "Lines that are parallel have the same slope. The given line has a slope of 2, so our new line will also have a slope of 2. We can use the point (4, -1) and the slope to find the y-intercept (b). Substituting m = 2 and (x, y) = (4, -1): -1 = 2 × 4 + b => b = -1 - 8 => b = -9. So the equation is y = 2x - 9, which simplifies to y = 2x - 7.",
+      "explanation": "The correct answer has a slope of 2 and passes through the point (4, -1).",
+      "common_mistake_notes": "A common mistake is to assume that parallel lines have different slopes."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the slope-intercept form of the equation y = -½x + 8?",
+      "choices": {
+        "A": "y = -2x + 16",
+        "B": "y = ½x - 4",
+        "C": "y = -½x + 8",
+        "D": "y = 2x - 16"
+      },
+      "correct_choice": "C",
+      "solution": "The equation y = -½x + 8 is already in slope-intercept form, where m = -½ and b = 8.",
+      "explanation": "The correct answer is the given equation itself, as it is already in slope-intercept form.",
+      "common_mistake_notes": "A common mistake is to try to simplify or manipulate an equation that is already in the correct form."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the slope-intercept form of the line passing through (0, 7) and perpendicular to y = ½x - 3.",
+      "choices": {
+        "A": "y = 2x + 14",
+        "B": "y = -2x + 7",
+        "C": "y = x - 3",
+        "D": "y = -½x + ¼"
+      },
+      "correct_choice": "B",
+      "solution": "Lines that are perpendicular have slopes that are negative reciprocals of each other. The given line has a slope of 1/2, so our new line will have a slope of -2. As the line passes through (0, 7), this is the y-intercept (b). So the equation is y = -2x + 7.",
+      "explanation": "The correct answer has a slope that is perpendicular to the given line and passes through the point (0, 7).",
+      "common_mistake_notes": "A common mistake is to use the wrong formula for finding the slope of a perpendicular line."
+    }
+  ]
+}

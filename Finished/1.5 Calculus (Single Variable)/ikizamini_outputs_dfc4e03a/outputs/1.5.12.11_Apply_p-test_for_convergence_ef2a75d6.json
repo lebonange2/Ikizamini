@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.12.11",
+  "objective_text": "Apply p-test for convergence",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "InfiniteGP",
+      "stem": "Determine the convergence of the infinite geometric series: sum_{n=1}^{∞} (-3)^{n-1}.",
+      "choices": {
+        "A": "Converges with sum = -2",
+        "B": "Converges with sum = 1/4",
+        "C": "Converges with sum = 0",
+        "D": "Diverges"
+      },
+      "correct_choice": "B",
+      "solution": "The ratio of consecutive terms is (-3)^{n-1} / (-3)^(n-2) = -3. Since |{-3}| = 3 > 1, the geometric series diverges by the p-test.",
+      "explanation": "The p-test states that a geometric series converges if and only if the absolute value of the common ratio is less than 1 (|r| < 1).",
+      "common_mistake_notes": "A common mistake would be to assume that because the first term is -2, the sum must converge to -2. However, this is not how geometric series work; the convergence depends on the ratio of consecutive terms."
+    },
+    {
+      "id": "FiniteGP",
+      "stem": "Find the sum of the finite geometric series: 1 + 0.5 + 0.25 + ... + 0.5^6.",
+      "choices": {
+        "A": "3.90625",
+        "B": "4.0",
+        "C": "4.125",
+        "D": "4.25"
+      },
+      "correct_choice": "A",
+      "solution": "The series has 7 terms (including the first term), so it's a finite geometric series with a common ratio of 0.5. The sum S_7 = a * (1 - r^7) / (1 - r), where a is the first term and r is the common ratio. Plugging in a = 1, r = 0.5, and n = 7 gives S_7 = 1 * (1 - 0.5^7) / (1 - 0.5) = 3.90625.",
+      "explanation": "The formula for the sum of a finite geometric series is S_n = a * (1 - r^n) / (1 - r), where a is the first term, r is the common ratio, and n is the number of terms.",
+      "common_mistake_notes": "A common mistake would be to use the infinite sum formula instead of the finite sum formula. Since the series has a finite number of terms, we must use the finite sum formula."
+    },
+    {
+      "id": "AlternatingSeries",
+      "stem": "Determine if the alternating series sum_{n=1}^{∞} (-1)^{n-1} * (2n + 1) converges or diverges.",
+      "choices": {
+        "A": "Converges by p-test",
+        "B": "Converges by alternating series test",
+        "C": "Diverges by comparison with harmonic series",
+        "D": "Diverges by ratio test"
+      },
+      "correct_choice": "B",
+      "solution": "The absolute value of the terms is |(-1)^{n-1} * (2n + 1)| = 2n + 1, which increases without bound as n grows. Thus, it does not converge by the p-test or ratio test. However, since the sequence of absolute values |2n + 1| decreases and approaches 0, the series converges by the alternating series test.",
+      "explanation": "The alternating series test states that if the terms of an alternating series are decreasing in absolute value and approach 0, then the series converges.",
+      "common_mistake_notes": "A common mistake would be to assume that because the terms alternate in sign, they must converge by the p-test. However, the p-test applies only to geometric series, not alternating series."
+    },
+    {
+      "id": "HarmonicSeries",
+      "stem": "Does the harmonic series sum_{n=1}^{∞} 1/n converge or diverge?",
+      "choices": {
+        "A": "Converges by integral test",
+        "B": "Converges by p-test",
+        "C": "Diverges by comparison with a geometric series",
+        "D": "Diverges by p-series test"
+      },
+      "correct_choice": "C",
+      "solution": "The harmonic series diverges by comparing it to the integral of 1/x, which is unbounded as x approaches infinity. Alternatively, one can compare it to the geometric series with ratio 1/2, since 1/n > 1/(2^(n-1)) for n >= 2, and a geometric series with ratio greater than or equal to 1/2 diverges.",
+      "explanation": "The harmonic series is an example of a p-series with p = 1. By the p-series test, a p-series converges if p > 1 and diverges if p ≤ 1.",
+      "common_mistake_notes": "A common mistake would be to think that because the terms of the harmonic series decrease, it must converge. However, this is not true; the rate at which the terms decrease matters."
+    },
+    {
+      "id": "TaylorSeries",
+      "stem": "Determine if the Taylor series for e^x centered at x=0 converges or diverges at x=2.",
+      "choices": {
+        "A": "Converges everywhere",
+        "B": "Converges only at x=0",
+        "C": "Converges to e^2",
+        "D": "Converges conditionally"
+      },
+      "correct_choice": "A",
+      "solution": "The Taylor series for e^x centered at x=0 converges for all real numbers x, including x=2. This is because the Maclaurin series (Taylor series at x=0) for e^x converges uniformly on any bounded interval, including [-2, 2].",
+      "explanation": "The Taylor series for a function f(x) centered at a point a converges to f(x) within some radius of convergence. For the exponential function, the radius of convergence is infinite.",
+      "common_mistake_notes": "A common mistake would be to think that the Taylor series might diverge outside of the interval [-1, 1], but this is not true for e^x."
+    },
+    {
+      "id": "PowerSeries",
+      "stem": "Find the interval of convergence for the power series sum_{n=0}^{∞} (2^n * x^(3n)).",
+      "choices": {
+        "A": "(-1/2, 1/2)",
+        "B": "(0, ∞)",
+        "C": "(-∞, ∞)",
+        "D": "[-1/2, 1/2]"
+      },
+      "correct_choice": "D",
+      "solution": "The radius of convergence R is given by R = 1 / limsup |a_n^(1/3)|, where a_n is the coefficient of x^n. For this series, a_n = 2^n, so R = 1 / (limsup |2|^(n/3)) = 1/2. The interval of convergence is thus [-R, R] = [-1/2, 1/2].",
+      "explanation": "The radius of convergence for a power series can be found using the ratio test or root test on the coefficients.",
+      "common_mistake_notes": "A common mistake would be to calculate the limit of |a_n| instead of |a_n^(1/3)|, which would lead to an incorrect interval of convergence."
+    },
+    {
+      "id": "ImproperIntegral",
+      "stem": "Determine if the improper integral ∫_{1}^{∞} (x^2 + 3) dx converges or diverges.",
+      "choices": {
+        "A": "Converges by comparison with p-series",
+        "B": "Converges by direct comparison test",
+        "C": "Diverges by comparison with an unbounded function",
+        "D": "Diverges by limit comparison test"
+      },
+      "correct_choice": "B",
+      "solution": "The integral ∫_{1}^{∞} (x^2 + 3) dx diverges because the integral of x^2 alone diverges as it is a p-series with p = 2, which is less than 1. Since x^2 + 3 > x^2 for all x >= 1, we can directly compare the given function to x^2 and conclude that the integral diverges.",
+      "explanation": "The direct comparison test states that if 0 ≤ f(x) ≤ g(x) for all x in an interval and ∫_{a}^{∞} g(x) dx converges, then ∫_{a}^{∞} f(x) dx also converges. If ∫_{a}^{∞} g(x) dx diverges, then ∫_{a}^{∞} f(x) dx also diverges.",
+      "common_mistake_notes": "A common mistake would be to try using the limit comparison test or comparing with a p-series directly, but these methods are not applicable here since we have a sum of functions."
+    }
+  ]
+}

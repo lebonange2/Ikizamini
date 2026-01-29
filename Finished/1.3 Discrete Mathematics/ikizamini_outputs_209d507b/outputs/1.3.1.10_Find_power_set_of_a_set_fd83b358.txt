@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.1.10 Find power set of a set
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.1 Set Theory Fundamentals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IncreasingSetSize):
+What is the size of the power set for the set {a, b, c}?
+A) {2}
+B) {4}
+C) {6}
+D) {8}
+Correct Answer: B
+
+Solution:
+The power set of a set with n elements has 2^n elements. For the set {a, b, c}, n = 3, so the size of its power set is 2^3 = 8.
+
+Explanation:
+The power set includes all possible combinations of elements from the original set, including the empty set and the set itself.
+
+Common mistake note:
+A common mistake is to think that the number of elements in the original set is the size of its power set. This is not true; the power set always has 2^n elements, where n is the number of elements in the original set.
+------------------------------------------------------------------------------
+
+Problem 2 (EmptySetPowerSet):
+What is the size of the power set for the empty set?
+A) {0}
+B) {1}
+C) {2}
+D) {4}
+Correct Answer: B
+
+Solution:
+The power set of the empty set contains only one element, which is the empty set itself. Therefore, its size is 1.
+
+Explanation:
+By definition, the empty set has no elements, so there are no non-empty subsets to include in its power set. The only subset is the empty set itself.
+
+Common mistake note:
+A common mistake is to think that the power set of the empty set should be empty, but this is not correct. It contains exactly one element: the empty set.
+------------------------------------------------------------------------------
+
+Problem 3 (DuplicatesInSet):
+What is the size of the power set for the set {a, a, b}?
+A) {3}
+B) {4}
+C) {6}
+D) {8}
+Correct Answer: B
+
+Solution:
+The power set of a set does not consider duplicate elements. For the set {a, a, b}, we have n = 2 (unique elements), so the size of its power set is 2^2 = 4.
+
+Explanation:
+Duplicates in the original set do not affect the size of the power set; only unique elements matter when calculating the power set.
+
+Common mistake note:
+A common mistake is to count duplicate elements separately, leading to an incorrect calculation of n (the number of unique elements). Remember that duplicates are treated as a single element in the context of the power set.
+------------------------------------------------------------------------------
+
+Problem 4 (SetWithDuplicatesPowerSet):
+What is the power set for the set {a, b, c, d}?
+A) { {}, {a}, {b}, {c}, {d}, {a, b}, {a, c}, {a, d}, {b, c}, {b, d}, {c, d}, {a, b, c, d} }
+B) { {}, {a}, {b}, {c}, {d}, {a, b, c}, {a, b, d}, {a, c, d}, {b, c, d} }
+C) { {}, {a}, {b}, {c}, {d}, {a, b, c, d} }
+D) { {}, {a}, {b}, {c}}
+Correct Answer: A
+
+Solution:
+The power set of {a, b, c, d} includes all possible combinations of its elements: 2^4 = 16 subsets. The given set includes all valid combinations.
+
+Explanation:
+To find the power set, consider every possible combination of elements from the original set, including the empty set and the set itself.
+
+Common mistake note:
+A common mistake is to exclude some combinations or include invalid ones (e.g., {a, b, c} instead of {a, b}). Ensure that you generate all possible subsets, considering both singletons and multiple-element sets.
+------------------------------------------------------------------------------
+
+Problem 5 (SetWithDuplicatesAndEmpty):
+What is the power set for the set {a, a, b, empty set}
+A) { {}, {empty set}, {a}, {b}, {a, a}, {a, b}, {a, empty set}, {b, empty set} }
+B) { {}, {empty set}, {a}, {b}, {a, a}, {a, b}}
+C) { {}, {empty set}, {a}, {b}}
+D) { {}, {empty set}, {a, a}, {a, b}, {a, empty set}, {b, empty set} }
+Correct Answer: A
+
+Solution:
+The power set of the given set includes all possible combinations of its elements: 2^4 = 16 subsets. The given set includes all valid combinations, treating duplicates and the empty set separately.
+
+Explanation:
+Remember that duplicates in the original set do not affect the size of the power set, and the empty set is a separate element to be included.
+
+Common mistake note:
+A common mistake is to exclude the empty set or treat duplicates as a single element. Both the empty set and duplicate elements must be considered when constructing the power set.
+------------------------------------------------------------------------------
+
+Problem 6 (SetWithThreeElementsPowerSet):
+What is the power set for the set {1, 2, 3}?
+A) { {}, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3} }
+B) { {}, {1}, {2}, {3}}
+C) { {}, {1, 2, 3} }
+D) { {}, {1, 2}, {1, 3}, {2, 3} }
+Correct Answer: A
+
+Solution:
+The power set of the given set includes all possible combinations of its elements: 2^3 = 8 subsets. The given set includes all valid combinations.
+
+Explanation:
+To find the power set, consider every possible combination of elements from the original set, including the empty set and the set itself.
+
+Common mistake note:
+A common mistake is to exclude some combinations or include invalid ones (e.g., {1, 2, 3} instead of {1, 2}). Ensure that you generate all possible subsets, considering both singletons and multiple-element sets.
+------------------------------------------------------------------------------
+
+Problem 7 (SetWithDuplicatesAndEmptyPowerSet):
+What is the size of the power set for the set {a, b, b, c, empty set}?
+A) {16}
+B) {32}
+C) {64}
+D) {128}
+Correct Answer: A
+
+Solution:
+The size of the power set for the given set is 2^5 = 32 subsets, regardless of duplicate elements or the presence of the empty set.
+
+Explanation:
+When calculating the size of a power set, only consider the number of unique elements in the original set. The presence of duplicates or the empty set does not affect this calculation.
+
+Common mistake note:
+A common mistake is to count duplicates separately or include the empty set in the count for n (the number of unique elements). Remember that duplicates and the empty set do not change the size of the power set; only unique elements matter.
+------------------------------------------------------------------------------

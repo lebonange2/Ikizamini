@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.9.8 Graph limaçons: r = a ± b cosθ
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.9 Polar Coordinate Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+What is the graph of the equation r = 2 + 1 cosθ?
+A) An ellipse with its major axis along the polar axis.
+B) A circle centered at the origin.
+C) A cardioid.
+D) A rose curve.
+Correct Answer: C
+
+Solution:
+The graph of r = a + b cosθ is a limaçon. When a > b, it forms a dimpled shape called a cardioid. In this case, a = 2 and b = 1, so the correct answer is C: A cardioid.
+
+Explanation:
+A cardioid is a special type of limaçon where the inner loop touches the outer boundary at one point. An ellipse with its major axis along the polar axis would be formed by r = a cosθ, not r = a + b cosθ. A circle centered at the origin would be formed by r = constant, which is not the case here. A rose curve is formed by equations of the form r = a sin(nθ) or r = a cos(nθ), where n is an integer.
+
+Common mistake note:
+Common mistake: Choosing A (an ellipse with its major axis along the polar axis) because students might混淆limaçons and ellipses in polar coordinates.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+What is the eccentricity of the limaçon r = 4 - 3 cosθ?
+A) 0
+B) 1/2
+C) 3/4
+D) 1
+Correct Answer: B
+
+Solution:
+The eccentricity (e) of a polar equation r = a ± b cosθ is given by e = |b| / a. For the equation r = 4 - 3 cosθ, a = 4 and b = -3. So, e = |-3| / 4 = 3/4.
+
+Explanation:
+The eccentricity of a conic section in polar coordinates is related to how 'stretched' it is from a circle. A circle has an eccentricity of 0, while a parabola has an eccentricity of 1. Since the given equation forms a limaçon and not a parabola, e must be less than 1.
+
+Common mistake note:
+Common mistake: Choosing D (1) because students might混淆eccentricities for circles and parabolas.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Which of the following equations represents a limaçon with an outer loop but no inner loop?
+A) r = 5 + 2 cosθ
+B) r = 3 - 4 cosθ
+C) r = 6 sinθ
+D) r = 7 cosθ
+Correct Answer: A
+
+Solution:
+For a limaçon to have an outer loop but no inner loop, the absolute value of b must be less than a in the equation r = a ± b cosθ. In A, |2| < 5, so it represents a limaçon with an outer loop but no inner loop.
+
+Explanation:
+A limaçon with an outer loop but no inner loop is called a dimpled or kidney- shaped limaçon. When |b| < a, the graph will have an outer boundary without an inner loop. In B, |4| > 3, so it forms a cardioid with an inner loop. C and D represent circles.
+
+Common mistake note:
+Common mistake: Choosing B (r = 3 - 4 cosθ) because students might overlook the condition for no inner loop.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+What is the equation of a limaçon with a horizontal major axis and a radius of 6 units?
+A) r = 6 + 5 sinθ
+B) r = 6 - 5 cosθ
+C) r = 6 cosθ
+D) r = 6 sinθ
+Correct Answer: B
+
+Solution:
+The equation of a limaçon with a horizontal major axis is given by r = a ± b sinθ. To have a radius of 6 units, we set a = 6 and choose the appropriate value for b. Since we want a horizontal major axis, we use sine instead of cosine.
+
+Explanation:
+In polar coordinates, a limaçon with a horizontal major axis is formed by an equation of the form r = a ± b sinθ. The radius is determined by the constant term 'a', which in this case is 6 units. Cosine would result in a vertical major axis.
+
+Common mistake note:
+Common mistake: Choosing C (r = 6 cosθ) because students might混淆limaçons with circles or cardioids.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+What is the equation of a limaçon that passes through the origin and has an inner loop?
+A) r = 2 cosθ - 1
+B) r = 3 + 4 sinθ
+C) r = 5 - 6 cosθ
+D) r = 7 sinθ + 2
+Correct Answer: C
+
+Solution:
+For a limaçon to pass through the origin, the equation must have a term that makes r equal to zero at some point. In C, when θ is 0 or π, r = 5 - 6 cos(0) = 5 - 6 = -1, which passes through the origin. Additionally, since |b| > a, it will have an inner loop.
+
+Explanation:
+A limaçon that passes through the origin must have a term in its equation that makes r = 0 at some point. The presence of an inner loop requires that |b| > a. In A and D, the terms do not make r = 0, while B does not have an inner loop.
+
+Common mistake note:
+Common mistake: Choosing A (r = 2 cosθ - 1) because students might overlook the condition for an inner loop.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+What is the equation of a limaçon with a vertical major axis and no inner loop?
+A) r = 4 + 3 sinθ
+B) r = 5 - 2 cosθ
+C) r = 6 cosθ
+D) r = 7 sinθ
+Correct Answer: A
+
+Solution:
+The equation of a limaçon with a vertical major axis is given by r = a ± b cosθ. To have no inner loop, |b| must be less than a. In A, |3| < 4, so it represents a limaçon with a vertical major axis and no inner loop.
+
+Explanation:
+A limaçon with a vertical major axis is formed by an equation of the form r = a ± b cosθ. To have no inner loop, |b| must be less than a. In B, C, and D, either the major axis is horizontal or there is an inner loop.
+
+Common mistake note:
+Common mistake: Choosing C (r = 6 cosθ) because students might混淆limaçons with circles or cardioids.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+What is the equation of a limaçon that resembles a heart shape?
+A) r = 3 + 2 cosθ
+B) r = 4 - 3 sinθ
+C) r = 5 cosθ
+D) r = 6 sinθ
+Correct Answer: A
+
+Solution:
+The equation of a heart- shaped limaçon, also known as a lemniscate, is given by r^2 = a^2 ± 2ab cos(θ - α), where a and b are constants. For simplicity, we can rewrite it as r = √(a^2 ± 2ab cos(θ - α)). When the inner loop touches the outer boundary at two points, it resembles a heart shape. In A, when θ is π/2 or 3π/2, the equation forms a heart shape.
+
+Explanation:
+A heart-shaped limaçon is formed by an equation that results in an inner loop touching the outer boundary at two points. The given choices do not exactly match this form, but A comes closest as it resembles a heart when θ = π/2 or 3π/2. Other choices either do not have an inner loop or do not touch the outer boundary.
+
+Common mistake note:
+Common mistake: Choosing D (r = 6 sinθ) because students might混淆limaçons with circles or cardioids.
+------------------------------------------------------------------------------

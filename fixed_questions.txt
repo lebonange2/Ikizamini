@@ -1,0 +1,519 @@
+IKIZAMINI MASTER OUTPUT
+Source file: Uru.txt
+Model: gpt-4o
+Generated at (unix): 1769450970
+Objectives completed: 4 / 4
+
+##############################################################################
+
+1.4.10.3 Graph parametric curves
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Given the parametric equations \(x(t) = 3 \cos(t)\) and \(y(t) = 3 \sin(t)\), identify the graph.
+A) A circle centered at the origin with radius 3.
+B) An ellipse centered at the origin with semi-major axis 3.
+C) A parabola opening to the right.
+D) A line through the origin.
+Correct Answer: A
+
+Solution:
+The parametric equations \(x(t) = 3 \cos(t)\) and \(y(t) = 3 \sin(t)\) represent a circle because they follow the form \(x^2 + y^2 = r^2\), where \(r\) is the radius 3.
+
+Explanation:
+The coordinates (x, y) are derived from trigonometric functions \(\cos(t)\) and \(\sin(t)\), making a circle.
+
+Common mistake note:
+Mistaking the shape as an ellipse; however, the parametric form \(\cos^2(t) + \sin^2(t) = 1\) confirms a circle.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+What is the shape of the curve given by \(x(t) = t\) and \(y(t) = t^2\)?
+A) A circle
+B) A line
+C) A parabola
+D) An ellipse
+Correct Answer: C
+
+Solution:
+The parametric form \(x(t) = t\) and \(y(t) = t^2\) indicates a parabola \(y = x^2\).
+
+Explanation:
+As \(t\) varies, \(x\) is \(t\) and \(y\) is \(t^2\). Graphing \(y\) in terms of \(x\) gives \(y = x^2\).
+
+Common mistake note:
+Confusing the curve with a circle due to squared terms without recognizing the parametric independence of \(t\).
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Which of the following parametric equations represents a line?
+A) \(x(t) = 3t, y(t) = 2t + 1\)
+B) \(x(t) = t^2, y(t) = t^3\)
+C) \(x(t) = \cos(t), y(t) = \sin(t)\)
+D) \(x(t) = e^t, y(t) = \ln(t)\)
+Correct Answer: A
+
+Solution:
+Both \(x(t) = 3t\) and \(y(t) = 2t + 1\) are linear in \(t\), describing a parametric line.
+
+Explanation:
+Parametric equations \(x=a_1t+b_1\), \(y=a_2t+b_2\) graph a line. Here, \(a_1 = 3\) and \(a_2 = 2\).
+
+Common mistake note:
+Misidentifying \(x(t)=t^2, y(t)=t^3\) as linear; however, the powers of \(t\) should be 1 for both.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Describe the curve formed by the parametric equations \(x(t) = 2 + \sin(t)\) and \(y(t) = 3 + \cos(t)\).
+A) A circle of radius 1 centered at (2, 3)
+B) An ellipse centered at (2, 3)
+C) A line parallel to the y-axis
+D) A hyperbola centered at (2, 3)
+Correct Answer: A
+
+Solution:
+The equations describe a circle of radius 1 due to \((x-2)^2 + (y-3)^2 = 1\), centered at (2, 3).
+
+Explanation:
+Shifting the circle by (2, 3) from the origin, its radius remains 1 due to \(\sin(t)\) and \(\cos(t)\) functions.
+
+Common mistake note:
+Assuming it forms an ellipse; however, \(\cos^2(t) + \sin^2(t) = 1\) confirms a circle.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Find the Cartesian equation of the curve given by \(x(t) = 4\cos(t)\) and \(y(t) = 4\sin(t)\).
+A) x^2 + y^2 = 16
+B) x^2 + y^2 = 4
+C) x^2 - y^2 = 16
+D) y = x^2 + 4
+Correct Answer: A
+
+Solution:
+Replacing \(\cos(t)\) and \(\sin(t)\) in \(x^2+y^2=r^2\), we get \(16(\cos^2(t)+\sin^2(t))=16\).
+
+Explanation:
+The identity \(\cos^2(t) + \sin^2(t) = 1\) plugs into \(x^2 + y^2 = 4^2\), simplifying to \(x^2 + y^2 = 16\).
+
+Common mistake note:
+Miscomputing radius as 4; forgetting to square 4 in \(x^2+y^2=r^2\) which results in 16.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+What curve is traced by \(x(t) = 6t\) and \(y(t) = 3t - 1\) when \(t\) ranges over all real numbers?
+A) A parabola
+B) An ellipse
+C) A hyperbola
+D) A line
+Correct Answer: D
+
+Solution:
+Both components have \(t\) in degree 1; thus, the lines are linear equations in \(t\).
+
+Explanation:
+Linear equations in \(t\) produce a line in the \(xy\)-plane with slope derived from coefficients of \(t\).
+
+Common mistake note:
+Mistaking linear growth as parabolic; confusion arises when ignoring linearity of both terms.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Convert the parametric equations \(x(t) = 1 + 2t\) and \(y(t) = 3 \text{e}^t\) to Cartesian form.
+A) x = 1 + 2 \ln(y/3)
+B) y = 3e^{(x-1)/2}
+C) x = y^2 + 1
+D) y = \log(x - 2)
+Correct Answer: B
+
+Solution:
+From \(x(t) = 1 + 2t\), solve for \(t\): \(t = (x-1)/2\). Substitute into \(y(t) = 3e^t\): \(y = 3e^{(x-1)/2}\).
+
+Explanation:
+Solve \(x(t)\) for \(t\) then substitute into \(y(t)\), leading to \(y = 3e^{(x-1)/2}\).
+
+Common mistake note:
+Confusing the process with simple algebra; logarithmic transformation is necessary for exponential \(y(t)\).
+------------------------------------------------------------------------------
+
+1.4.15.12 Study space curves
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Which of the following is a vector function that represents a helix in space?
+A) r(t) = (cos(t), sin(t), t)
+B) r(t) = (t^2, t^3, t^4)
+C) r(t) = (e^t, e^(-t), t)
+D) r(t) = (t, t*sin(t), t*cos(t))
+Correct Answer: A
+
+Solution:
+The helix is defined by r(t) = (cos(t), sin(t), t) where the circular motion is in the xy-plane and the linearly increasing t represents the upward movement along the z-axis.
+
+Explanation:
+A helix is characterized by a circular path along with linear progression in another direction. Option A satisfies this condition.
+
+Common mistake note:
+Students might confuse option D as a helix due to sine and cosine components, but their t-dependent scaling leads to a different shape.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+What is the curvature of the space curve r(t) = (t, t^2, t^3)?
+A) 0
+B) 1
+C) |1 + 4t^2|^(-3/2)
+D) |2t + 4t^5|^(-3/2)
+Correct Answer: C
+
+Solution:
+First, compute r'(t) = (1, 2t, 3t^2) and r''(t) = (0, 2, 6t). The curvature κ(t) is given by κ(t) = |r'(t) × r''(t)| / |r'(t)|^3. The cross-product is (4t^2, -6t, 2), and thus, |r'(t) × r''(t)| = √((4t^2)^2 + (-6t)^2 + 2^2) = √(16t^4 + 36t^2 + 4). The magnitude |r'(t)| = √(1 + 4t^2 + 9t^4). Thus, κ(t) = √(16t^4 + 36t^2 + 4) / (1 + 4t^2 + 9t^4)^(3/2).
+
+Explanation:
+Curvature measures how quickly a curve deviates from a straight line. Compute curvature using κ(t) = |r'(t) × r''(t)| / |r'(t)|^3.
+
+Common mistake note:
+A common mistake is to neglect computing the magnitude of the cross product properly, leading to errors in the curvature formula.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Consider the curve r(t) = (3t, 2sqrt(2)t, t^2). What is its parametrization at t=2?
+A) (6, 4sqrt(2), 4)
+B) (4, 4sqrt(2), 2)
+C) (2, 2sqrt(2), 2)
+D) (6, 4, 4)
+Correct Answer: A
+
+Solution:
+Substitute t = 2 into r(t): r(2) = (3(2), 2sqrt(2)(2), (2)^2) = (6, 4sqrt(2), 4).
+
+Explanation:
+Parametrization involves finding specific points on the curve for given values of t.
+
+Common mistake note:
+Students might forget the correct application of the square root term, leading to inaccurate results.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Which formula provides the torsion τ of a space curve given r(t)?
+A) τ = (r'(t) × r''(t)) • r'''(t) / |r'(t) × r''(t)|^2
+B) τ = |r'(t)| / |r(t)|
+C) τ = |r''(t) × r'''(t)| / |r'(t)|
+D) τ = (r'(t) • r''(t))^2 / |r(t)|^3
+Correct Answer: A
+
+Solution:
+The torsion of a space curve is defined by τ = (r'(t) × r''(t)) • r'''(t) / |r'(t) × r''(t)|^2, which indicates twisting of the curve.
+
+Explanation:
+Torsion measures how a curve twists out of the plane of curvature, computed from derivatives of the curve's vector function.
+
+Common mistake note:
+Confusion might arise by ignoring the need for the cross product and focusing only on dot product terms.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+In a space curve r(t) = (t, t^2, t^3), what is the unit tangent vector T(t) at t=1?
+A) (1/√14, 2/√14, 3/√14)
+B) (1/3, 2/3, 1)
+C) (1, 1, 1)
+D) (1/3, 1/3, 1/3)
+Correct Answer: A
+
+Solution:
+Calculate r'(t) = (1, 2t, 3t^2). At t=1, r'(1) = (1, 2, 3). The magnitude |r'(1)| = √(1^2 + 2^2 + 3^2) = √14. Thus, T(t) = (1/√14, 2/√14, 3/√14).
+
+Explanation:
+The unit tangent vector is found by normalizing the derivative at a given point, providing directionality on the curve.
+
+Common mistake note:
+Students may miscalculate the magnitude by simply adding instead of taking the square root of the sum of squares.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+What is the geometric significance of the normal vector to a space curve at a given point?
+A) It indicates the axial symmetry of the curve.
+B) It shows the direction towards the center of curvature.
+C) It is parallel to the tangent vector.
+D) It describes the twisting of the curve.
+Correct Answer: B
+
+Solution:
+The normal vector at a given point in a curve is perpendicular to the tangent vector and points towards the circle of curvature.
+
+Explanation:
+The normal vector helps in understanding how sharply a curve is bending at a given point.
+
+Common mistake note:
+Confusion may occur confusing the normal vector with torsion, but torsion is related to twisting, not direct curvature.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+For the curve r(t) = (sin(t), cos(t), t), what are the Frenet-Serret equations used to describe?
+A) The equations of motion in free space.
+B) The relationship between curvature, torsion, and spatial orientation.
+C) The trajectory of projectile motion.
+D) The solution to the Laplace's equation.
+Correct Answer: B
+
+Solution:
+The Frenet-Serret equations describe the derivative relations of the tangent, normal, and binormal vectors in terms of curvature and torsion, thus explaining the curve’s spatial twisting and bending.
+
+Explanation:
+Their significance lies in providing a complete description of the curve's geometry in three-dimensional space.
+
+Common mistake note:
+Mixing up with equations of motion like Newton's laws might lead students to incorrectly associate Frenet-Serret equations with mechanics.
+------------------------------------------------------------------------------
+
+1.4.4.4 Find center and radius
+------------------------------------------------------------------------------
+Problem 1 (1):
+Given the equation of a circle \(x^2 + y^2 = 25\), what is the radius?
+A) 5
+B) 25
+C) 10
+D) 12.5
+Correct Answer: A
+
+Solution:
+The given equation \(x^2 + y^2 = 25\) is in the form \((x-h)^2 + (y-k)^2 = r^2\) where \((h, k)\) is the center and \(r\) is the radius. Here, \(r^2 = 25\), so \(r = \sqrt{25} = 5\).
+
+Explanation:
+The standard form of a circle's equation is \((x-h)^2 + (y-k)^2 = r^2\). If the equation is \(x^2 + y^2 = 25\), it implies the center is \((0, 0)\) and \(r^2 = 25\), so \(r = 5\).
+
+Common mistake note:
+A common mistake could be interpreting 25 directly as the radius instead of recognizing it as \(r^2\).
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+What is the center of the circle described by the equation \((x-4)^2 + (y+3)^2 = 16\)?
+A) (4, -3)
+B) (-4, 3)
+C) (4, 3)
+D) (-4, -3)
+Correct Answer: A
+
+Solution:
+The given equation \((x-4)^2 + (y+3)^2 = 16\) is in the form \((x-h)^2 + (y-k)^2 = r^2\). Thus, the center \((h, k)\) is \((4, -3)\).
+
+Explanation:
+By comparing the given equation with \((x-h)^2 + (y-k)^2 = r^2\), the values of \(h\) and \(k\) are 4 and -3, respectively.
+
+Common mistake note:
+Mistaking \(y+3\) as \(k = 3\) is incorrect. The equation form is \((y-k)^2\), so \(k = -3\).
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Find the radius of a circle with equation \((x+1)^2 + (y-2)^2 = 49\).
+A) 7
+B) 49
+C) 1
+D) 2
+Correct Answer: A
+
+Solution:
+From the equation \((x+1)^2 + (y-2)^2 = 49\), compare with \((x-h)^2 + (y-k)^2 = r^2\), we have \(r^2 = 49\). So, \(r = \sqrt{49} = 7\).
+
+Explanation:
+In the standard circle equation \(r^2\) is on the right side, so \(r = \sqrt{49} = 7\).
+
+Common mistake note:
+Selecting 49 as the radius is a misconception; it is \(r^2\), not \(r\).
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Determine the center of the circle with equation \((x-2)^2 + (y-5)^2 = 81\).
+A) (2, 5)
+B) (-2, 5)
+C) (2, -5)
+D) (5, 2)
+Correct Answer: A
+
+Solution:
+The equation \((x-2)^2 + (y-5)^2 = 81\) shows that the center \((h, k)\) is at \((2, 5)\).
+
+Explanation:
+By the equation form \((x-h)^2 + (y-k)^2 = r^2\), \(h\) is 2 and \(k\) is 5 in \((x-2)^2 + (y-5)^2 = 81\).
+
+Common mistake note:
+Confusing the placement of 2 and 5 would lead to errors in determining the center's coordinates.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+If a circle's equation is \(x^2 + (y-1)^2 = 36\), what are the center and radius?
+A) Center: (0, 1), Radius: 6
+B) Center: (0, -1), Radius: 36
+C) Center: (1, 0), Radius: 6
+D) Center: (0, 0), Radius: 36
+Correct Answer: A
+
+Solution:
+The circle equation \(x^2 + (y-1)^2 = 36\) indicates the center is \((0, 1)\) and \(r^2 = 36\), yielding \(r = 6\).
+
+Explanation:
+\(x^2\) implies \(x-h = x-0\) thus \(h = 0\). \((y-1)^2\) means \(k = 1\) with \(r^2 = 36\), hence \(r = 6\).
+
+Common mistake note:
+Misinterpreting \(x^2\) as indicating \(h = 1\) instead of \(h = 0\) would be incorrect.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+For the circle \((x+3)^2 + (y-4)^2 = 100\), find the center and radius.
+A) Center: (3, -4), Radius: 10
+B) Center: (-3, 4), Radius: 100
+C) Center: (3, 4), Radius: 10
+D) Center: (-3, 4), Radius: 10
+Correct Answer: D
+
+Solution:
+The equation \((x+3)^2 + (y-4)^2 = 100\) implies the center is \((-3, 4)\) and \(r^2 = 100\) so \(r = 10\).
+
+Explanation:
+Comparing with \((x-h)^2 + (y-k)^2 = r^2\), \(h = -3\), \(k = 4\), and \(r = \sqrt{100} = 10\).
+
+Common mistake note:
+Reading the signs incorrectly in the center coordinates due to the plus sign in \((x+3)^2\).
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+A circle is described by \((x-6)^2 + (y+7)^2 = 64\). What are its center and radius?
+A) Center: (6, -7), Radius: 8
+B) Center: (-6, 7), Radius: 8
+C) Center: (6, 7), Radius: 64
+D) Center: (6, -7), Radius: 64
+Correct Answer: A
+
+Solution:
+The equation \((x-6)^2 + (y+7)^2 = 64\) provides a center at \((6, -7)\) with \(r^2 = 64\) so \(r = 8\).
+
+Explanation:
+By comparing the equation with the standard form, the center \((h, k)\) is \((6, -7)\) and the radius \(r = \sqrt{64} = 8\).
+
+Common mistake note:
+Believing that \(r = 64\) instead of \(r = 8\) due to confusion between \(r\) and \(r^2\) is a common error.
+------------------------------------------------------------------------------
+
+1.4.7.10 Write equation given parameters
+------------------------------------------------------------------------------
+Problem 1 (1):
+Write the equation of a line with a slope of 3 and a y-intercept of -5.
+A) y = 3x + 5
+B) y = 3x - 5
+C) y = 5x + 3
+D) y = -3x - 5
+Correct Answer: B
+
+Solution:
+Using the slope-intercept form y = mx + b, where m is the slope and b is the y-intercept, plug in the given slope (3) and y-intercept (-5). This results in the equation y = 3x - 5.
+
+Explanation:
+The slope-intercept form equation is derived directly from the parameters given: slope and y-intercept.
+
+Common mistake note:
+A common mistake is to mix up the sign of the y-intercept, leading to the wrong answer such as option A.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Find the equation of a circle with center at (0, 0) and radius 4.
+A) x^2 + y^2 = 16
+B) x^2 + y^2 = 8
+C) x^2 + y^2 = 4
+D) x^2 + y^2 = 2
+Correct Answer: A
+
+Solution:
+The equation of a circle with center at (h, k) and radius r is (x - h)^2 + (y - k)^2 = r^2. Using center (0,0) and radius 4, the equation is x^2 + y^2 = 4^2 = 16.
+
+Explanation:
+This problem uses the standard circle equation derived from its parameters: center and radius.
+
+Common mistake note:
+Students might confuse the radius with the diameter, incorrectly using a value of 8 instead of 16.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Determine the equation for a parabola opening upward with vertex at (2, -3) and passing through the point (3, -1).
+A) y = (x - 2)^2 - 3
+B) y = (x - 2)^2 + 3
+C) y = (x - 3)^2 - 1
+D) y = 2(x - 2)^2 - 3
+Correct Answer: D
+
+Solution:
+The equation of a parabola in vertex form is y = a(x - h)^2 + k. Using vertex (2, -3), we have y = a(x - 2)^2 - 3. To find a, substitute point (3, -1): -1 = a(3 - 2)^2 - 3. Solving gives a = 2, so the equation is y = 2(x - 2)^2 - 3.
+
+Explanation:
+This uses vertex form of a parabola. Ensure to check substitution thoroughly to find a.
+
+Common mistake note:
+A mistake might include incorrect substitution of point values, as choices are crafted to consider common errors.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Write the quadratic equation with roots 2 and -4 and a leading coefficient of 1.
+A) (x - 2)(x + 4)
+B) x^2 + 2x - 8
+C) x^2 - 2x - 8
+D) x^2 - 2x + 8
+Correct Answer: B
+
+Solution:
+A quadratic equation with roots p and q is given by (x - p)(x - q). Here, p = 2, q = -4, so the factored form is (x - 2)(x + 4). Expanding gives x^2 + 2x - 8.
+
+Explanation:
+The standard approach to write quadratic equations involves using the roots to form the factors, expanding to standard form.
+
+Common mistake note:
+Error arises from incorrect sign application to roots, leading to wrong factors.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Construct the equation for an exponential function passing through points (0, 1) and (1, 3).
+A) y = 3^x
+B) y = x^3
+C) y = 2x + 1
+D) y = 3x
+Correct Answer: A
+
+Solution:
+The exponential function form is y = ab^x. Using (0, 1), we determine a = 1. With (1, 3), solve 3 = 1*b^1; hence b = 3. The equation becomes y = 3^x.
+
+Explanation:
+Points on the graph establish parameters a and b in the exponential equation.
+
+Common mistake note:
+Misinterpreting exponential form as linear is common, leading to incorrect choices like C or D.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Formulate the equation of a horizontal line passing through point (4, -2).
+A) y = -2
+B) x = 4
+C) y = 4
+D) x = -2
+Correct Answer: A
+
+Solution:
+Horizontal lines have the form y = k. Given it passes through (4, -2), k = -2, so the equation is y = -2.
+
+Explanation:
+A horizontal line requires y-equation consistent with the y-value of the passing point.
+
+Common mistake note:
+Confusing vertical with horizontal lines leads to x-based equations like B or D.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Write the equation of the line perpendicular to y = x + 1, passing through the origin.
+A) y = -x
+B) y = x
+C) y = -x + 1
+D) y = x - 1
+Correct Answer: A
+
+Solution:
+A line perpendicular to y = x + 1 (slope 1) has a slope of -1. Since it passes through the origin, it is y = -1x or y = -x.
+
+Explanation:
+Perpendicular slopes are negative reciprocals. Substitute required point for the final equation.
+
+Common mistake note:
+Missing the perpendicular condition often leads to incorrect choices with the same slope (e.g., B).
+------------------------------------------------------------------------------

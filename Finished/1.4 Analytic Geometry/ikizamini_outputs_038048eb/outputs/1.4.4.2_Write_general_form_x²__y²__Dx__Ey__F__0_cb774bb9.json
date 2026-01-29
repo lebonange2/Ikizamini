@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.4.2",
+  "objective_text": "Write general form: x² + y² + Dx + Ey + F = 0",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the general form of a circle's equation in the xy-plane?",
+      "choices": {
+        "A": "x  + y  + D  = 0",
+        "B": "x²  + y²  + Dx  + Ey  + F  = 0",
+        "C": "x²  + y²  - 2xy  = 0",
+        "D": "ax²  + by²  + cx  + dy  + e  = 0"
+      },
+      "correct_choice": "B",
+      "solution": "The general form of a circle's equation in the xy-plane is x²  + y²  + Dx  + Ey  + F  = 0, where D, E, and F are constants. This form represents the set of all points (x, y) that are equidistant from the center of the circle.",
+      "explanation": "The general form given includes the squared terms for x and y, which is necessary to represent a circle. The other choices either lack the squared terms or have different structures.",
+      "common_mistake_notes": "Common mistake: Choosing A, which represents a linear equation rather than a circle."
+    },
+    {
+      "id": "2",
+      "stem": "What term in the general form x²  + y²  + Dx  + Ey  + F  = 0 represents the horizontal translation of the circle's center?",
+      "choices": {
+        "A": "x²",
+        "B": "y²",
+        "C": "D",
+        "D": "F"
+      },
+      "correct_choice": "C",
+      "solution": "The term 'D' in the general form x²  + y²  + Dx  + Ey  + F  = 0 represents the horizontal translation of the circle's center from the origin (0, 0). It shifts the circle along the x-axis.",
+      "explanation": "The coefficient D multiplies x, which affects the horizontal position of the circle. A and B represent the radii of the circle, C represents the vertical translation, and D represents the horizontal translation.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which are related to the radius rather than the center's position."
+    },
+    {
+      "id": "3",
+      "stem": "What term in the general form x²  + y²  + Dx  + Ey  + F  = 0 represents the vertical translation of the circle's center?",
+      "choices": {
+        "A": "x²",
+        "B": "y²",
+        "C": "E",
+        "D": "F"
+      },
+      "correct_choice": "C",
+      "solution": "The term 'E' in the general form x²  + y²  + Dx  + Ey  + F  = 0 represents the vertical translation of the circle's center from the origin (0, 0). It shifts the circle along the y-axis.",
+      "explanation": "The coefficient E multiplies y, which affects the vertical position of the circle. A and B represent the radii of the circle, C represents the horizontal translation, and D represents the vertical translation.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which are related to the radius rather than the center's position."
+    },
+    {
+      "id": "4",
+      "stem": "What term in the general form x²  + y²  + Dx  + Ey  + F  = 0 represents the sum of the squares of the radii?",
+      "choices": {
+        "A": "x²",
+        "B": "y²",
+        "C": "D",
+        "D": "F"
+      },
+      "correct_choice": "B",
+      "solution": "The term 'y²' in the general form x²  + y²  + Dx  + Ey  + F  = 0 represents the sum of the squares of the radii, which determines the circle's size. The total is (x-h)²  + (y-k)², where h and k are the coordinates of the center.",
+      "explanation": "A and B represent the radii, C and D represent translations, and F represents the sum of the squares of the radii after translation. The term 'y²' alone does not give the actual radius; it's part of the equation that determines the circle's size.",
+      "common_mistake_notes": "Common mistake: Choosing A or D, which are related to translations or the center rather than the circle's size."
+    },
+    {
+      "id": "5",
+      "stem": "In the general form x²  + y²  + Dx  + Ey  + F  = 0, what value of F makes the circle tangent to the x-axis?",
+      "choices": {
+        "A": "F > 0",
+        "B": "F = 0",
+        "C": "F < 0",
+        "D": "No specific value for F"
+      },
+      "correct_choice": "B",
+      "solution": "When F = 0 in the general form x²  + y²  + Dx  + Ey  + F  = 0, the circle is tangent to the x-axis. This occurs because the radius of the circle becomes zero, making it a point on the x-axi...}, ... (remaining questions are similar, with only minor normalization changes) },",
+      "explanation": "For a circle to be tangent to the x-axis, its radius must be zero. In the general form, F represents the sum of the squares of the radii after translation; setting F = 0 eliminates the radius term, resulting in a point on the x-axis.",
+      "common_mistake_notes": "Common mistake: Choosing A or C, which would result in circles that do not touch the x-axis."
+    },
+    {
+      "id": "6",
+      "stem": "In the general form x²  + y²  + Dx  + Ey  + F  = 0, what value of D makes the circle tangent to the y-axis?",
+      "choices": {
+        "A": "D > 0",
+        "B": "D = 0",
+        "C": "D < 0",
+        "D": "No specific value for D"
+      },
+      "correct_choice": "B",
+      "solution": "When D = 0 in the general form x²  + y²  + Dx  + Ey  + F  = 0, the circle is tangent to the y-axis. This occurs because there is no horizontal translation, and the center of the circle lies on the y-axis.",
+      "explanation": "For a circle to be tangent to the y-axis, its center must lie on the y-axis. In the general form, D represents the horizontal translation; setting D = 0 eliminates any horizontal shift, placing the center on the y-axis.",
+      "common_mistake_notes": "Common mistake: Choosing A or C, which would result in circles that do not touch the y-axis."
+    },
+    {
+      "id": "7",
+      "stem": "In the general form x²  + y²  + Dx  + Ey  + F  = 0, what value of E makes the circle centered at the origin?",
+      "choices": {
+        "A": "E > 0",
+        "B": "E = 0",
+        "C": "E < 0",
+        "D": "No specific value for E"
+      },
+      "correct_choice": "B",
+      "solution": "When E = 0 in the general form x²  + y²  + Dx  + Ey  + F  = 0, the circle is centered at the origin (0, 0). This occurs because there is no vertical translation.",
+      "explanation": "For a circle to be centered at the origin, there should be no vertical shift. In the general form, E represents the vertical translation; setting E = 0 eliminates any vertical movement, placing the center at the origin.",
+      "common_mistake_notes": "Common mistake: Choosing A or C, which would result in circles with a non-zero vertical offset from the origin."
+    }
+  ]
+}

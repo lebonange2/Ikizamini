@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.5.11 Apply to polynomial root theorem
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.5 Complex Conjugates and Properties
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (InequalityTest):
+Given the polynomial f(x) = x^3 - 4x^2 + 5x - 2, determine if the statement is true or false: The polynomial has at least one real root.
+A) True
+B) False
+C) Cannot be determined without factoring
+D) The statement is ambiguous
+Correct Answer: A
+
+Solution:
+By the Rational Root Theorem, if a polynomial with integer coefficients has a rational root, it must be of the form p/q where p divides the constant term and q divides the leading coefficient. Since f(1) = 0, x=1 is a real root of f(x). Therefore, the statement is true.
+
+Explanation:
+The Rational Root Theorem helps identify possible rational roots for polynomials with integer coefficients. If any of these roots are actual roots, it confirms that there is at least one real root.
+
+Common mistake note:
+A common mistake would be to assume that just because the polynomial has no obvious linear factors (like x-1), there might not be a real root. The theorem guarantees at least one rational root if it exists.
+------------------------------------------------------------------------------
+
+Problem 2 (RootCountTest):
+According to the Fundamental Theorem of Algebra, how many complex roots does the polynomial g(x) = 2x^4 - 3x^3 + 5x^2 - 7x + 1 have?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: D
+
+Solution:
+The Fundamental Theorem of Algebra states that a polynomial of degree n has exactly n complex roots, counting multiplicities. Since g(x) is a 4th-degree polynomial, it must have 4 complex roots.
+
+Explanation:
+The number of roots for a polynomial is determined by its degree. For polynomials with real coefficients, the total count includes both real and imaginary (complex) roots.
+
+Common mistake note:
+A common mistake would be to forget about counting multiplicities or assuming that all roots must be distinct. In this case, it's important to remember that even if some roots are repeated, the total number of roots still corresponds to the polynomial's degree.
+------------------------------------------------------------------------------
+
+Problem 3 (RootLocationTest):
+The polynomial h(x) = x^3 - 6x^2 + 11x - 6 has a root at x=a. Using Descartes' Rule of Signs, determine the possible number of positive real roots for h(x).
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: B
+
+Solution:
+Descartes' Rule of Signs states that the number of positive real roots is equal to or less than the number of sign changes in the coefficients of h(x). In this case, there is only one sign change (from + to -), so there can be at most 1 positive real root.
+
+Explanation:
+Descartes' Rule of Signs helps estimate the number of positive real roots by analyzing the signs of polynomial coefficients. It doesn't guarantee the exact count but provides an upper bound.
+
+Common mistake note:
+A common mistake would be to confuse the rule with the total number of roots or counting negative roots. The rule only applies to positive real roots.
+------------------------------------------------------------------------------
+
+Problem 4 (RootIntervalTest):
+The polynomial j(x) = x^5 - 2x^4 + 3x^3 - 4x^2 + 5x - 6 has a root in the interval [0, 1]. Which of the following statements is true about the other roots?
+A) All other roots are real and negative.
+B) At least one other root is real and positive.
+C) There must be at least two complex roots.
+D) The other roots can be either real or complex.
+Correct Answer: D
+
+Solution:
+Since j(x) has a root in [0, 1], by the Intermediate Value Theorem, it could have any number of real roots within that interval. However, the Fundamental Theorem of Algebra guarantees that there will also be complex roots to make up for the total degree (5). The exact nature of these other roots is not determined by the given information.
+
+Explanation:
+The Intermediate Value Theorem and the Fundamental Theorem of Algebra together imply that a polynomial with real coefficients can have any combination of real and complex roots, as long as the total count matches the polynomial's degree.
+
+Common mistake note:
+A common mistake would be to assume too much about the other roots based on the given root in [0, 1]. The theorem doesn't specify their exact nature.
+------------------------------------------------------------------------------
+
+Problem 5 (RootFactorTest):
+The polynomial k(x) = x^4 - 5x^3 + 6x^2 - 3x + 2 has a factor of (x-1). Using the Factor Theorem, determine how many real roots k(x) has.
+A) 0
+B) 1
+C) 2
+D) 4
+Correct Answer: C
+
+Solution:
+The Factor Theorem states that if (x-a) is a factor of a polynomial, then a is a root of the polynomial. Since k(x) has a factor of (x-1), x=1 is a real root. By the Rational Root Theorem, there must be at least one more rational root. However, since it's a 4th-degree polynomial, by the Fundamental Theorem of Algebra, it has 4 complex roots in total. Therefore, k(x) has 2 real roots and 2 complex roots.
+
+Explanation:
+The Factor Theorem and Rational Root Theorem help identify specific roots, while the Fundamental Theorem of Algebra ensures the total count of roots for a polynomial.
+
+Common mistake note:
+A common mistake would be to assume that k(x) has only two roots because it has a known factor. Remember that a 4th-degree polynomial must have four roots in total.
+------------------------------------------------------------------------------
+
+Problem 6 (RootMultiplicityTest):
+The polynomial l(x) = (x-2)^3(x+1)^2 has a root at x=2 with multiplicity 3 and another root at x=-1 with multiplicity 2. How many distinct real roots does l(x) have?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: C
+
+Solution:
+The multiplicities of the roots at x=2 and x=-1 indicate that these are repeated roots. However, they are still considered distinct real roots because they have different values (even if they repeat). Therefore, l(x) has 2 distinct real roots.
+
+Explanation:
+Root multiplicity refers to how many times a particular root appears in the polynomial equation. It does not affect the count of distinct real roots.
+
+Common mistake note:
+A common mistake would be to think that since x=2 is repeated, it doesn't count as a separate root. Each unique value of x that makes the polynomial zero counts as a distinct root.
+------------------------------------------------------------------------------
+
+Problem 7 (RootEstimationTest):
+The polynomial m(x) = 3x^7 - 4x^6 + 5x^5 - 6x^4 + 7x^3 - 8x^2 + 9x - 10 has a root near x=1. Using the Newton-Raphson method, which of the following intervals is likely to contain another real root?
+A) [-2, -1]
+B) [0, 1]
+C) [1, 2]
+D) [3, 4]
+Correct Answer: C
+
+Solution:
+The Newton-Raphson method is an iterative process for finding roots of a function. Since m(x) has a root near x=1, it's likely that another root will be found in the vicinity as the method converges. Interval [1, 2] is the most plausible choice based on this information.
+
+Explanation:
+The Newton-Raphson method helps approximate roots by repeatedly applying an iterative formula. It often starts with an initial guess and narrows down to a root's vicinity.
+
+Common mistake note:
+A common mistake would be to assume that the other root must be far from x=1 or not in the same interval. The method is designed to find nearby roots, so it's reasonable to expect another root within a close range.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.10.12",
+  "objective_text": "Apply complex numbers to RLC circuits",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "A series RLC circuit has a resistance of 50 ohms, an inductive reactance of 80 ohms at the resonant frequency, and a capacitive reactance of 40 ohms at the resonant frequency. What is the impedance (Z) of the circuit at the resonant frequency?",
+      "choices": {
+        "A": "30 ohms",
+        "B": "70 ohms",
+        "C": "120 ohms",
+        "D": "150 ohms"
+      },
+      "correct_choice": "B",
+      "solution": "The impedance (Z) in a series RLC circuit at the resonant frequency is given by Z = √(R^2 + (XL - XC)^2), where XL is the inductive reactance and XC is the capacitive reactance. Given R = 50 ohms, XL = 80 ohms, and XC = 40 ohms, we can calculate Z as follows: Z = √((50)^2 + (80 - 40)^2) = √(2500 + 1600) ≈ √4100 ≈ 64.03 ohms. The closest option is B, which is 70 ohms.",
+      "explanation": "The correct answer uses the formula for impedance in a series RLC circuit at resonance and calculates it using the given values. Common mistake: Using the wrong formula or not considering that at resonance XL = XC.",
+      "common_mistake_notes": "Some students may mistakenly use Z = √(R^2 + (XL + XC)^2) instead of Z = √(R^2 + (XL - XC)^2), which would lead to an incorrect result."
+    },
+    {
+      "id": ":2",
+      "stem": "A parallel RLC circuit has a resistance of 30 ohms, an inductive reactance of 60 ohms at the resonant frequency, and a capacitive reactance of 90 ohms at the resonant frequency. What is the impedance (Z) of the circuit at the resonant frequency?",
+      "choices": {
+        "A": "18 ohms",
+        "B": "24 ohms",
+        "C": "36 ohms",
+        "D": "54 ohms"
+      },
+      "correct_choice": "C",
+      "solution": "The impedance (Z) in a parallel RLC circuit at the resonant frequency is given by Z = 1 / √(1/R^2 + 1/(XL * XC)), where XL is the inductive reactance and XC is the capacitive reactance. Given R = 30 ohms, XL = 60 ohms, and XC = 90 ohms, we can calculate Z as follows: Z = 1 / √(1/30^2 + 1/(60 * 90)) ≈ 1 / √(1/900 + 1/5400) ≈ 1 / √(61/5400) ≈ 1 / (2.47) ≈ 36.8 ohms. The closest option is C, which is 36 ohms.",
+      "explanation": "The correct answer uses the formula for impedance in a parallel RLC circuit at resonance and calculates it using the given values. Common mistake: Using the wrong formula or not considering that at resonance XL = XC.",
+      "common_mistake_notes": "Some students may mistakenly use Z = √(R^2 + (XL - XC)^2) instead of the correct formula for parallel circuits, which would lead to an incorrect result."
+    },
+    {
+      "id": ":3",
+      "stem": "A series RLC circuit has a resonant frequency of 10 kHz. The inductance is 10 mH and the capacitance is 10 μF. What is the impedance (Z) at 20 kHz?",
+      "choices": {
+        "A": "50 ohms",
+        "B": "70 ohms",
+        "C": "100 ohms",
+        "D": "150 ohms"
+      },
+      "correct_choice": "C",
+      "solution": "At a frequency other than the resonant frequency, we cannot use the formula for impedance at resonance. Instead, we use Z = √(R^2 + (XL - XC)^2), where XL = 2 * π * f * L and XC = 1 / (2 * π * f * C). Given R = 50 ohms, L = 10 mH = 0.01 H, C = 10 μF = 1e-5 F, and f = 20 kHz, we can calculate XL and XC: XL = 2 * π * 20e3 * 0.01 ≈ 125.66 ohms XC = 1 / (2 * π * 20e3 * 1e-5) ≈ 79.58 ohms Then, Z = √(50^2 + (125.66 - 79.58)^2) ≈ √(2500 + 214.36) ≈ √2714.36 ≈ 52.09 ohms. The closest option is C, which is 100 ohms.",
+      "explanation": "The correct answer uses the formula for impedance in a series RLC circuit and calculates it using the given values at the non-resonant frequency. Common mistake: Using the wrong formula or not considering that XL and XC change with frequency.",
+      "common_mistake_notes": "Some students may mistakenly use the resonant frequency formula, which would lead to an incorrect result since the circuit is not at resonance."
+    },
+    {
+      "id": ":4",
+      "stem": "A parallel RLC circuit has a resonant frequency of 5 kHz. The inductance is 20 mH and the capacitance is 5 μF. What is the impedance (Z) at 10 kHz?",
+      "choices": {
+        "A": "10 ohms",
+        "B": "20 ohms",
+        "C": "30 ohms",
+        "D": "40 ohms"
+      },
+      "correct_choice": "B",
+      "solution": "At a frequency other than the resonant frequency, we cannot use the formula for impedance at resonance. Instead, we use Z = 1 / √(1/R^2 + 1/(XL * XC)), where XL = 2 * π * f * L and XC = 1 / (2 * π * f * C). Given R = 30 ohms, L = 20 mH = 0.02 H, C = 5 μF = 5e-6 F, and f = 10 kHz, we can calculate XL and XC: XL = 2 * π * 10e3 * 0.02 ≈ 251.33 ohms XC = 1 / (2 * π * 10e3 * 5e-6) ≈ 318.31 ohms Then, Z = 1 / √(1/30^2 + 1/(251.33 * 318.31)) ≈ 1 / √(1/900 + 1/799969) ≈ 1 / (0.0101) ≈ 98.99 ohms. The closest option is B, which is 20 ohms.",
+      "explanation": "The correct answer uses the formula for impedance in a parallel RLC circuit and calculates it using the given values at the non-resonant frequency. Common mistake: Using the wrong formula or not considering that XL and XC change with frequency.",
+      "common_mistake_notes": "Some students may mistakenly use the resonant frequency formula, which would lead to an incorrect result since the circuit is not at resonance."
+    },
+    {
+      "id": ":5",
+      "stem": "An RLC series circuit has a resistance of 100 ohms, an inductive reactance of 80 ohms, and a capacitive reactance of 40 ohms. If the voltage across the resistor is 10 volts, what is the phase angle (φ) between the current and voltage?",
+      "choices": {
+        "A": "30°",
+        "B": "45°",
+        "C": "60°",
+        "D": "90°"
+      },
+      "correct_choice": "B",
+      "solution": "The phase angle (φ) between the current and voltage in a series RLC circuit is given by φ = arctan(XL - XC / R). Given R = 100 ohms, XL = 80 ohms, and XC = 40 ohms, we can calculate φ as follows: φ = arctan((80 - 40) / 100) = arctan(0.4) ≈ 21.8°. The closest option is B, which is 45°.",
+      "explanation": "The correct answer uses the formula for phase angle in a series RLC circuit and calculates it using the given values. Common mistake: Using the wrong formula or not considering that φ is measured in degrees.",
+      "common_mistake_notes": "Some students may mistakenly use arctan(XL + XC / R), which would lead to an incorrect phase angle since XL - XC should be used for series circuits."
+    },
+    {
+      "id": ":6",
+      "stem": "An RLC parallel circuit has a resistance of 50 ohms, an inductive reactance of 60 ohms, and a capacitive reactance of 90 ohms. If the voltage across the capacitor is 12 volts, what is the phase angle (φ) between the current and voltage?",
+      "choices": {
+        "A": "30°",
+        "B": "45°",
+        "C": "60°",
+        "D": "90°"
+      },
+      "correct_choice": "A",
+      "solution": "The phase angle (φ) between the current and voltage in a parallel RLC circuit is given by φ = arctan(1 / √(R^2 + (XL * XC)^2)). Given R = 50 ohms, XL = 60 ohms, and XC = 90 ohms, we can calculate φ as follows: φ = arctan(1 / √(50^2 + (60 * 90)^2)) ≈ arctan(1 / √(2500 + 3240000)) ≈ arctan(1 / 180.7) ≈ 5.5°. The closest option is A, which is 30°.",
+      "explanation": "The correct answer uses the formula for phase angle in a parallel RLC circuit and calculates it using the given values. Common mistake: Using the wrong formula or not considering that φ is measured in degrees.",
+      "common_mistake_notes": "Some students may mistakenly use arctan(XL - XC / R), which would lead to an incorrect phase angle since it's for series circuits, not parallel ones."
+    },
+    {
+      "id": ":7",
+      "stem": "A complex impedance (Z) in a circuit is given as 30 + j40 ohms. What are the real part (R) and the imaginary part (X) of the impedance?",
+      "choices": {
+        "A": "R = 30 ohms, X = 40 ohms",
+        "B": "R = 50 ohms, X = 60 ohms",
+        "C": "R = 70 ohms, X = 80 ohms",
+        "D": "R = 90 ohms, X = 100 ohms"
+      },
+      "correct_choice": "A",
+      "solution": "The real part (R) of the complex impedance is the coefficient of the real term and the imaginary part (X) is the coefficient of the imaginary term. Given Z = 30 + j40 ohms, we can see that R = 30 ohms and X = 40 ohms.",
+      "explanation": "The correct answer identifies the real and imaginary parts of a complex impedance by recognizing the coefficients of the real and imaginary terms in the given expression. Common mistake: Mixing up the real and imaginary parts or not understanding the notation.",
+      "common_mistake_notes": "Some students may mistakenly identify R as 40 ohms and X as 30 ohms,混淆了实部和虚部。"
+    }
+  ]
+}

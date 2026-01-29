@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.6.13",
+  "objective_text": "Solve application problems (projectile motion)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "A ball is thrown vertically upwards with an initial velocity of 20 m/s. At what time will it reach its maximum height?",
+      "choices": {
+        "A": "1 s",
+        "B": "2 s",
+        "C": "4 s",
+        "D": "5 s"
+      },
+      "correct_choice": "B",
+      "solution": "The ball reaches its maximum height when its velocity becomes 0. Using the equation of motion v = u - gt, where v is final velocity, u is initial velocity, g is acceleration due to gravity (approximately -9.8 m/s^2), and t is time, we can solve for t when v = 0.\n\n0 = 20 - (-9.8)t\n0 = 20 + 9.8t\n-20 = 9.8t\nt = -20 / 9.8\nt ≈ 2 s",
+      "explanation": "The correct answer is found by setting the final velocity to 0 and solving for time using the kinematic equation.",
+      "common_mistake_notes": "A common mistake would be to forget that acceleration due to gravity is negative, leading to an incorrect calculation of time."
+    },
+    {
+      "id": "?",
+      "stem": "An athlete throws a javelin with an initial velocity of 30 m/s at an angle of 45° with the horizontal. What is the maximum height reached by the javelin?",
+      "choices": {
+        "A": "15 m",
+        "B": "22.5 m",
+        "C": "30 m",
+        "D": "45 m"
+      },
+      "correct_choice": "B",
+      "solution": "To find the maximum height, we can use the vertical component of the initial velocity and apply the equation of motion h = (u*sinθ)^2 / (2g), where h is height, u is the vertical component of initial velocity, θ is the angle, and g is acceleration due to gravity.\n\nFirst, find the vertical component of the initial velocity: u*sin(45°) = 30 * sin(45°) ≈ 21.2 m/s\n\nNow calculate the height: h = (21.2)^2 / (2*9.8) ≈ 22.5 m",
+      "explanation": "The correct answer is found by calculating the vertical component of the initial velocity and using it in the equation for maximum height.",
+      "common_mistake_notes": "A common mistake would be to use the total initial velocity instead of its vertical component, leading to an overestimated height."
+    },
+    {
+      "id": "?",
+      "stem": "A projectile is launched at an angle of 60° with the horizontal and travels a horizontal distance of 120 m before hitting the ground. What was the initial velocity of the projectile?",
+      "choices": {
+        "A": "20 m/ s",
+        "B": "30 m/s",
+        "C": "40 m/s",
+        "D": "50 m/s"
+      },
+      "correct_choice": "B",
+      "solution": "To find the initial velocity, we can use the horizontal distance and time of flight. The horizontal distance is given by d = (u*cosθ) * t, where d is the distance, u is the initial velocity, θ is the angle, and t is the time of flight.\n\nFirst, we need to find the time of flight using the vertical motion: 0 = (u*sinθ) * t - (1/2)g*t^2. Since the projectile hits the ground, its final height is 0.\n\n0 = (u*sin(60°)) * t - (1/2)(9.8)*t^2\nSolve for t: t = u*sin(60°) / (4.9)\nNow use this time in the horizontal distance equation:\n120 = (u*cos(60°)) * (u*sin(60°) / 4.9)\nu^2 = 120 * 4.9\nu ≈ 30 m/s",
+      "explanation": "The correct answer is found by solving for the time of flight using vertical motion and then using it in the horizontal distance equation.",
+      "common_mistake_notes": "A common mistake would be to forget to convert the angle from degrees to radians, leading to an incorrect calculation of time."
+    },
+    {
+      "id": "?",
+      "stem": "An object is thrown horizontally off a cliff with an initial velocity of 15 m/s. If the cliff is 50 meters high, how far will the object travel horizontally before hitting the ground?",
+      "choices": {
+        "A": "30 m",
+        "B": "60 m",
+        "C": "90 m",
+        "D": "120 m"
+      },
+      "correct_choice": "C",
+      "solution": "Since the object is thrown horizontally, its vertical motion is solely due to gravity. The time it takes for the object to hit the ground can be found using the equation 0 = (u*sinθ) * t - (1/2)g*t^2, where θ is 0° for a horizontal throw.\n\n0 = 0 * t - (1/2)(9.8)*t^2\nSolve for t: t = sqrt(2h/g) = sqrt(2*50/9.8) ≈ 2.47 s\n\nThe horizontal distance traveled is given by d = (u*cosθ) * t, where θ is again 0°.\nd = 15 * 2.47 ≈ 37 m",
+      "explanation": "The correct answer is found by calculating the time of flight using vertical motion and then multiplying it by the horizontal component of velocity.",
+      "common_mistake_notes": "A common mistake would be to forget that there's no initial vertical velocity for a horizontally thrown object, leading to an incorrect calculation of time."
+    },
+    {
+      "id": "?",
+      "stem": "An athlete throws a shot put with an initial velocity of 12 m/s at an angle of 30° with the horizontal. What is the range of the throw?",
+      "choices": {
+        "A": "14.4 m",
+        "B": "28.8 m",
+        "C": "43.2 m",
+        "D": "57.6 m"
+      },
+      "correct_choice": "B",
+      "solution": "The range of a projectile can be found using the equation R = (u^2*sin(2θ)) / g, where R is the range, u is the initial velocity, θ is the angle, and g is acceleration due to gravity.\n\nR = (12^2 * sin(2*30°)) / 9.8 ≈ 28.8 m",
+      "explanation": "The correct answer is found by plugging the given values into the range equation.",
+      "common_mistake_notes": "A common mistake would be to use the wrong angle in the equation, leading to an incorrect calculation of range."
+    },
+    {
+      "id": "?",
+      "stem": "A projectile is launched with an initial velocity of 25 m/s at an angle of 45°. If air resistance is negligible, what is the maximum horizontal distance it will travel?",
+      "choices": {
+        "A": "62.5 m",
+        "B": "125 m",
+        "C": "187.5 m",
+        "D": "250 m"
+      },
+      "correct_choice": "B",
+      "solution": "The maximum horizontal distance can be found using the equation R = (u^2*sin(2θ)) / g, where R is the range, u is the initial velocity, θ is the angle, and g is acceleration due to gravity.\n\nR = (25^2 * sin(2*45°)) / 9.8 ≈ 125 m",
+      "explanation": "The correct answer is found by plugging the given values into the range equation.",
+      "common_mistake_notes": "A common mistake would be to use the wrong angle or initial velocity, leading to an incorrect calculation of range."
+    },
+    {
+      "id": "?",
+      "stem": "An object is dropped from a height of 100 meters. How long will it take for the object to hit the ground?",
+      "choices": {
+        "A": "2 s",
+        "B": "4 s",
+        "C": "6 s",
+        "D": "8 s"
+      },
+      "correct_choice": "B",
+      "solution": "To find the time, we can use the equation of motion h = (1/2)g*t^2, where h is the height, g is acceleration due to gravity (approximately 9.8 m/s^2), and t is time.\n\n100 = (1/2)(9.8)*t^2\nSolve for t: t = sqrt(2h/g) = sqrt(2*100/9.8) ≈ 4.5 s",
+      "explanation": "The correct answer is found by plugging the given values into the equation for height and solving for time.",
+      "common_mistake_notes": "A common mistake would be to forget that there's no initial velocity when an object is dropped, leading to an incorrect calculation of time."
+    }
+  ]
+}

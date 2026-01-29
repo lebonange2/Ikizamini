@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.5.9",
+  "objective_text": "Apply conjugate of product/quotient",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "Simplify the expression \\\\frac{3  + 4i}{2  - 3i} using the conjugate.\nA) \\\\frac{-5  - 10i}{13}\nB) \\\\frac{5  + 10i}{13}\nC) \\\\frac{5  - 10i}{13}\nD) \\\\frac{-5  + 10i}{13}",
+      "choices": {
+        "A": "-5  - 10i / 13",
+        "B": "5  + 10i / 13",
+        "C": "5  - 10i / 13",
+        "D": "-5  + 10i / 13"
+      },
+      "correct_choice": "C",
+      "solution": "\\frac{3  + 4i}{2  - 3i} \\cdot \\frac{2  + 3i}{2  + 3i} = \\frac{(3  + 4i)(2  + 3i)}{(2  - 3i)(2  + 3i)} = \\frac{6  + 9i  + 8i  + 12i^2}{4  - 9i^2} = \\frac{-6  + 17i}{13} = \\frac{5  - 10i}{13}",
+      "explanation": "To simplify the expression, we multiply the numerator and denominator by the conjugate of the denominator. This eliminates the imaginary part in the denominator.",
+      "common_mistake_notes": "A common mistake is to forget to multiply both the numerator and the denominator by the conjugate, leading to an incorrect result."
+    },
+    {
+      "id": "Xyz456",
+      "stem": "Simplify the expression \\\\frac{2  - 3i}{1  + i} using the conjugate.\nA) \\\\frac{-1  - 5i}{2}\nB) \\\\frac{1  + 5i}{2}\nC) \\\\frac{-1  + 5i}{2}\nD) \\\\frac{1  - 5i}{2}",
+      "choices": {
+        "A": "-1  - 5i / 2",
+        "B": "1  + 5i / 2",
+        "C": "-1  + 5i / 2",
+        "D": "1  - 5i / 2"
+      },
+      "correct_choice": "A",
+      "solution": "\\frac{2  - 3i}{1  + i} \\cdot \\frac{1  - i}{1  - i} = \\frac{(2  - 3i)(1  - i)}{(1  + i)(1  - i)} = \\frac{2  - 2i  - 3i  + 3i^2}{1  - i^2} = \\frac{-1  - 5i}{2}",
+      "explanation": "We multiply the numerator and denominator by the conjugate of the denominator to eliminate the imaginary part in the denominator.",
+      "common_mistake_notes": "A common mistake is to mix up the signs when multiplying the terms, leading to an incorrect result."
+    },
+    {
+      "id": "Qwe789",
+      "stem": "Simplify the expression \\\\frac{4  + 6i}{5  - 2i} using the conjugate.\nA) \\\\frac{-14  + 26i}{29}\nB) \\\\frac{14  + 26i}{29}\nC) \\\\frac{14  - 26i}{29}\nD) \\\\frac{-14  - 26i}{29}",
+      "choices": {
+        "A": "-14  + 26i / 29",
+        "B": "14  + 26i / 29",
+        "C": "14  - 26i / 29",
+        "D": "-14  - 26i / 29"
+      },
+      "correct_choice": "C",
+      "solution": "\\frac{4  + 6i}{5  - 2i} \\cdot \\frac{5  + 2i}{5  + 2i} = \\frac{(4  + 6i)(5  + 2i)}{(5  - 2i)(5  + 2i)} = \\frac{20  + 8i  + 30i  + 12i^2}{25  - 4i^2} = \\frac{14  - 26i}{29}",
+      "explanation": "We multiply the numerator and denominator by the conjugate of the denominator to eliminate the imaginary part in the denominator.",
+      "common_mistake_notes": "A common mistake is to forget to square the imaginary unit i when simplifying, leading to an incorrect result."
+    },
+    {
+      "id": "Rty1234",
+      "stem": "Simplify the expression \\\\frac{5  - 7i}{3  + 4i} using the conjugate.\nA) \\\\frac{-13  - 19i}{25}\nB) \\\\frac{13  + 19i}{25}\nC) \\\\frac{13  - 19i}{25}\nD) \\\\frac{-13  + 19i}{25}",
+      "choices": {
+        "A": "-13  - 19i / 25",
+        "B": "13  + 19i / 25",
+        "C": "13  - 19i / 25",
+        "D": "-13  + 19i / 25"
+      },
+      "correct_choice": "C",
+      "solution": "\\frac{5  - 7i}{3  + 4i} \\cdot \\frac{3  - 4i}{3  - 4i} = \\frac{(5  - 7i)(3  - 4i)}{(3  + 4i)(3  - 4i)} = \\\\frac{15  - 20i  - 21i  + 28i^2}{9  - 16i^2} = \\frac{13  - 19i}{25}",
+      "explanation": "We multiply the numerator and denominator by the conjugate of the denominator to eliminate the imaginary part in the denominator.",
+      "common_mistake_notes": "A common mistake is to misplace the negative sign when multiplying terms, leading to an incorrect result."
+    },
+    {
+      "id": "Uij5678",
+      "stem": "Simplify the expression \\\\frac{1  + 3i}{2  - i} using the conjugate.\nA) \\\\frac{-5  - 7i}{5}\nB) \\\\frac{5  + 7i}{5}\nC) \\\\frac{-5  + 7i}{5}\nD) \\\\frac{5  - 7i}{5}",
+      "choices": {
+        "A": "-5  - 7i / 5",
+        "B": "5  + 7i / 5",
+        "C": "-5  + 7i / 5",
+        "D": "5  - 7i / 5"
+      },
+      "correct_choice": "D",
+      "solution": "\\frac{1  + 3i}{2  - i} \\cdot \\frac{2  + i}{2  + i} = \\frac{(1  + 3i)(2  + i)}{(2  - i)(2  + i)} = \\\\frac{2  + i  + 6i  + 3i^2}{4  - i^2} = \\frac{5  - 7i}{5}",
+      "explanation": "We multiply the numerator and denominator by the conjugate of the denominator to eliminate the imaginary part in the denominator.",
+      "common_mistake_notes": "A common mistake is to forget to simplify the result after multiplying, leading to an incorrect final form."
+    },
+    {
+      "id": "Kol9012",
+      "stem": "Simplify the expression \\\\frac{6  - 8i}{4  + i} using the conjugate.\nA) \\\\frac{-22  - 34i}{17}\nB) \\\\frac{22  + 34i}{17}\nC) \\\\frac{-22  + 34i}{17}\nD) \\\\frac{22  - 34i}{17}",
+      "choices": {
+        "A": "-22  - 34i / 17",
+        "B": "22  + 34i / 17",
+        "C": "-22  + 34i / 17",
+        "D": "22  - 34i / 17"
+      },
+      "correct_choice": "D",
+      "solution": "\\frac{6  - 8i}{4  + i} \\cdot \\frac{4  - i}{4  - i} = \\frac{(6  - 8i)(4  - i)}{(4  + i)(4  - i)} = \\\\frac{24  - 6i  - 32i  + 8i^2}{16  - i^2} = \\frac{22  - 34i}{17}",
+      "explanation": "We multiply the numerator and denominator by the conjugate of the denominator to eliminate the imaginary part in the denominator.",
+      "common_mistake_notes": "A common mistake is to mix up the signs when multiplying terms, leading to an incorrect result."
+    },
+    {
+      "id": "Mno3456",
+      "stem": "Simplify the expression \\\\frac{7  + 9i}{-1  + 2i} using the conjugate.\nA) \\\\frac{-25  - 23i}{5}\nB) \\\\frac{25  + 23i}{5}\nC) \\\\frac{-25  + 23i}{5}\nD) \\\\frac{25  - 23i}{5}",
+      "choices": {
+        "A": "-25  - 23i / 5",
+        "B": "25  + 23i / 5",
+        "C": "-25  + 23i / 5",
+        "D": "25  - 23i / 5"
+      },
+      "correct_choice": "A",
+      "solution": "\\frac{7  + 9i}{-1  + 2i} \\cdot \\\\frac{-1  - 2i}{-1  - 2i} = \\frac{(7  + 9i)(-1  - 2i)}{(-1  + 2i)(-1  - 2i)} = \\\\frac{-7  - 14i  - 9i  - 18i^2}{1  + 4i^2} = \\frac{-25  - 23i}{5}",
+      "explanation": "We multiply the numerator and denominator by the conjugate of the denominator to eliminate the imaginary part in the denominator.",
+      "common_mistake_notes": "A common mistake is to forget to square the imaginary unit i when simplifying, leading to an incorrect result."
+    }
+  ]
+}

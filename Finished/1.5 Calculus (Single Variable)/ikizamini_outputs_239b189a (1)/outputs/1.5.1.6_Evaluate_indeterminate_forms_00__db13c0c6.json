@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.1.6",
+  "objective_text": "Evaluate indeterminate forms (0/0, ∞/∞)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asymptote_0/0",
+      "stem": "Find the limit of the function f(x) = (x^2 - 4)/(x - 2) as x approaches 2.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "Does not exist"
+      },
+      "correct_choice": "D",
+      "solution": "The limit is of the form 0/0, which is indeterminate. To evaluate it, factor the numerator: (x - 2)(x + 2)/(x - 2). The (x - 2) term cancels out, leaving us with x + 2. As x approaches 2, the limit becomes 2 + 2 = 4. However, since there's a hole at x = 2, the limit does not exist.",
+      "explanation": "The function is undefined at x = 2 because of the canceled factor, which creates a removable discontinuity or hole in the graph. Thus, the limit does not exist even though the algebraic manipulation gives us a finite value.",
+      "common_mistake_notes": "A common mistake is to cancel out (x - 2) without considering that it makes the function undefined at x = 2. This leads to the incorrect conclusion that the limit is 4."
+    },
+    {
+      "id": "Infinite_ Pole",
+      "stem": "Evaluate the limit of the function g(x) = (3x^2 + 6x)/(x^2 - 1) as x approaches ∞.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "∞"
+      },
+      "correct_choice": "D",
+      "solution": "The limit is of the form ∞/∞, which is also indeterminate. To evaluate it, divide both numerator and denominator by x^2: (3 + 6/x)/(1 - 1/x^2). As x approaches infinity, the terms with x approach zero, leaving us with the limit of (3 + 0)/(1 - 0) = 3/1 = 3. However, since the function grows without bound as x increases, the limit is actually ∞.",
+      "explanation": "The limit represents the behavior of the function as x becomes very large. Since both the numerator and denominator grow at the same rate (x^2), their ratio approaches infinity.",
+      "common_mistake_notes": "A common mistake is to cancel out x^2 without considering that this operation does not apply when working with infinity. The correct approach involves dividing by the highest power of x in both parts."
+    },
+    {
+      "id": "Factor_ and_Cancel",
+      "stem": "Find the limit of h(x) = (x^3 - 8)/(x - 2) as x approaches 2.",
+      "choices": {
+        "A": "0",
+        "B": "4",
+        "C": "6",
+        "D": "∞"
+      },
+      "correct_choice": "C",
+      "solution": "The limit is of the form 0/0, which is indeterminate. Factor the numerator: (x - 2)(x^2 + 2x + 4)/(x - 2). The (x - 2) term cancels out, leaving us with x^2 + 2x + 4. As x approaches 2, the limit becomes 2^2 + 2(2) + 4 = 12. Since 12/1 = 12, the limit is 12.",
+      "explanation": "The function has a removable discontinuity at x = 2 due to the canceled factor. After canceling, we can evaluate the limit by plugging in x = 2 directly into the simplified expression.",
+      "common_mistake_notes": "A common mistake is to cancel out (x - 2) without considering that it makes the function undefined at x = 2. This leads to an incorrect conclusion about the limit."
+    },
+    {
+      "id": "L' Hopital's_Rule",
+      "stem": "Evaluate the limit of k(x) = sin(x)/x as x approaches 0.",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "Does not exist"
+      },
+      "correct_choice": "C",
+      "solution": "The limit is of the form 0/0, which is indeterminate. Apply L'Hôpital's Rule by differentiating both numerator and denominator: cos(x)/1. As x approaches 0, cos(x) approaches 1 and 1 remains constant, so the limit becomes 1/1 = 1.",
+      "explanation": "L'Hôpital's Rule is a technique for evaluating indeterminate forms like 0/0 or ∞/∞ by differentiating the numerator and denominator. In this case, it helps to resolve the indeterminacy.",
+      "common_mistake_notes": "A common mistake is to try to evaluate the limit without using L'Hôpital's Rule, which would result in an indeterminate form. Remember that L'Hôpital's Rule is specifically designed for these types of limits."
+    },
+    {
+      "id": "Polynomial_Division",
+      "stem": "Find the limit of m(x) = (x^3 - x)/(x - 1) as x approaches 1.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "D",
+      "solution": "The limit is of the form 0/0, which is indeterminate. Perform polynomial division: (x^2 + x + 1). As x approaches 1, the limit becomes 1^2 + 1 + 1 = 3.",
+      "explanation": "Polynomial division allows us to rewrite the function as a sum of terms that do not have a common factor in the numerator and denominator. Once we've done this, we can evaluate the limit by plugging in x = 1.",
+      "common_mistake_notes": "A common mistake is to cancel out (x - 1) without considering that it makes the function undefined at x = 1. Instead, use polynomial division or factoring to simplify the expression."
+    },
+    {
+      "id": "Rationalization",
+      "stem": "Evaluate the limit of n(x) = sqrt(x + 4) - 2)/(x - 0) as x approaches 0.",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "The limit is of the form 0/0, which is indeterminate. Rationalize the numerator by multiplying both top and bottom by the conjugate: (sqrt(x + 4) - 2)(sqrt(x + 4) + 2)/(x). Simplify to get x/x = 1.",
+      "explanation": "Rationalization involves multiplying the expression by a form that eliminates the square root. In this case, we multiply by the conjugate of the numerator to simplify the expression and resolve the indeterminacy.",
+      "common_mistake_notes": "A common mistake is to try to cancel out x without considering that it makes the function undefined at x = 0. Rationalization helps avoid this issue."
+    },
+    {
+      "id": "Infinite_Slope",
+      "stem": "Find the limit of p(x) = (x^2 - 1)/(x - 1) as x approaches 1.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "∞"
+      },
+      "correct_choice": "C",
+      "solution": "The limit is of the form 0/0, which is indeterminate. Factor the numerator: (x - 1)(x + 1)/(x - 1). The (x - 1) term cancels out, leaving us with x + 1. As x approaches 1, the limit becomes 1 + 1 = 2.",
+      "explanation": "The function has a removable discontinuity at x = 1 due to the canceled factor. After canceling, we can evaluate the limit by plugging in x = 1 directly into the simplified expression.",
+      "common_mistake_notes": "A common mistake is to cancel out (x - 1) without considering that it makes the function undefined at x = 1. This leads to an incorrect conclusion about the limit."
+    }
+  ]
+}

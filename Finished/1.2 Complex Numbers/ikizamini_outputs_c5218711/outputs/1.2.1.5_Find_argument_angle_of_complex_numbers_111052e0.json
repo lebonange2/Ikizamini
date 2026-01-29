@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.1.5",
+  "objective_text": "Find argument (angle) of complex numbers",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Given the complex number z = -3 + 4i, what is the argument (in radians)?",
+      "choices": {
+        "A": "-π/2",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "A",
+      "solution": "The argument of a complex number in polar form (r, θ) is the angle θ. To find the argument, we first express the complex number in its polar form. The given complex number z = -3 + 4i can be expressed as follows using the Pythagorean theorem and trigonometry: r = √((-3)^2 + 4^2) = 5, and θ = arctan(4/-3). Since the number is in the second quadrant, we add π to the result of arctan: θ = arctan(4/-3) + π. The argument is -π/2.",
+      "explanation": "The correct answer is A because it represents the correct angle in radians for the given complex number in the second quadrant.",
+      "common_mistake_notes": "A common mistake would be to choose B, which corresponds to an angle in the first quadrant. This fails because the real part of the complex number is negative, placing it in the second quadrant."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the argument of the complex number z = 5cis(π/4), where cis(x) represents cos(x) + i*sin(x).",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "A",
+      "solution": "The argument of a complex number in polar form (cis(θ)) is the angle θ. In this case, z = 5cis(π/4) already gives us the polar representation with an argument of π/4. Therefore, the argument of the given complex number is π/4.",
+      "explanation": "The correct answer is A because it directly corresponds to the angle provided in the polar form of the complex number.",
+      "common_mistake_notes": "A common mistake would be to choose B or D, which are related to angles in different quadrants. This fails because the argument given in the problem statement is already the correct one."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the argument of the complex number z = -4 + 4i.",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "B",
+      "solution": "The argument of a complex number in polar form (r, θ) is the angle θ. To find the argument, we first express the complex number in its polar form. The given complex number z = -4 + 4i can be expressed as follows using the Pythagorean theorem and trigonometry: r = √((-4)^2 + 4^2) = 8, and θ = arctan(4/-4) = arctan(-1). Since the number is in the second quadrant, we add π to the result of arctan: θ = arctan(-1) + π. The argument is π/2.",
+      "explanation": "The correct answer is B because it represents the correct angle in radians for the given complex number in the second quadrant.",
+      "common_mistake_notes": "A common mistake would be to choose A, which corresponds to an angle in the first quadrant. This fails because the real part of the complex number is negative, placing it in the second quadrant."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the argument of the complex number z = 3 - 3i.",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "C",
+      "solution": "The argument of a complex number in polar form (r, θ) is the angle θ. To find the argument, we first express the complex number in its polar form. The given complex number z = 3 - 3i can be expressed as follows using the Pythagorean theorem and trigonometry: r = √(3^2 + (-3)^2) = 3π, and θ = arctan(-3/3) = arctan(-1). Since the number is in the fourth quadrant, we subtract π from the result of arctan: θ = arctan(-1) - π. The argument is π.",
+      "explanation": "The correct answer is C because it represents the correct angle in radians for the given complex number in the fourth quadrant.",
+      "common_mistake_notes": "A common mistake would be to choose A or B, which correspond to angles in different quadrants. This fails because the real part of the complex number is positive and the imaginary part is negative, placing it in the fourth quadrant."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the argument of the complex number z = 2cis(3π/4), where cis(x) represents cos(x) + i*sin(x).",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "D",
+      "solution": "The argument of a complex number in polar form (cis(θ)) is the angle θ. In this case, z = 2cis(3π/4) already gives us the polar representation with an argument of 3π/4. Therefore, the argument of the given complex number is 3π/4.",
+      "explanation": "The correct answer is D because it directly corresponds to the angle provided in the polar form of the complex number.",
+      "common_mistake_notes": "A common mistake would be to choose A or B, which are related to angles in different quadrants. This fails because the argument given in the problem statement is already the correct one."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the argument of the complex number z = -2 + 0i.",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "C",
+      "solution": "The argument of a complex number in polar form (r, θ) is the angle θ. For a complex number with zero imaginary part, such as z = -2 + 0i, the argument is simply π because it lies on the negative x-axis.",
+      "explanation": "The correct answer is C because it represents the correct angle in radians for a complex number lying on the negative x-axis.",
+      "common_mistake_notes": "A common mistake would be to choose A, B, or D, which correspond to angles in different quadrants. This fails because the imaginary part of the complex number is zero, placing it on the x-axis."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the argument of the complex number z = 0 + 4i.",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "B",
+      "solution": "The argument of a complex number in polar form (r, θ) is the angle θ. For a complex number with zero real part and positive imaginary part, such as z = 0 + 4i, the argument is π/2 because it lies on the positive y-axis.",
+      "explanation": "The correct answer is B because it represents the correct angle in radians for a complex number lying on the positive y-axis.",
+      "common_mistake_notes": "A common mistake would be to choose A, C, or D, which correspond to angles in different quadrants. This fails because the real part of the complex number is zero and the imaginary part is positive, placing it on the y-axis."
+    }
+  ]
+}

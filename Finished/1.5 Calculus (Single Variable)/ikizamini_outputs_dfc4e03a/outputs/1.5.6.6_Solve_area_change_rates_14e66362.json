@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.6.6",
+  "objective_text": "Solve area change rates",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One rectangle to another",
+      "stem": "The area of a rectangle is increasing at a rate of 10 square meters per minute. If the original area was 50 square meters and it takes 6 minutes for the area to double, what were the initial dimensions of the rectangle? Assume the dimensions change linearly.",
+      "choices": {
+        "A": "Length: 10m, Width: 5m",
+        "B": "Length: 20m, Width: 2.5m",
+        "C": "Length: 15m, Width: 3.33m",
+        "D": "Length: 5m, Width: 10m"
+      },
+      "correct_choice": "C",
+      "solution": "Let L be the initial length and W be the initial width of the rectangle. The area A is given by A = L * W. Given that the area increases at a rate of 10 square meters per minute, we can say dA/dt = 10, where dA/dt represents the derivative of the area with respect to time (the rate of change). Since the area doubles in 6 minutes, we have A(6) = 2 * A(0), which gives us 10 * 6 = L * W * 6. Simplifying this equation gives L * W = 10. We also know that A(0) = L * W = 50. From these two equations, we can solve for L and W: L * W = 50 (initial area), L * W = 10 (area change rate). Dividing the first equation by the second gives us L = 5m and W = 2m. However, since the dimensions change linearly, we need to find the lengths at t=6 minutes. The length will be L(6) = 5 + 6 * (10/2) = 15m and the width will be W(6) = 2 + 6 * (10/2) = 3.33m.",
+      "explanation": "The correct answer is found by considering that the dimensions change linearly over time, which allows us to find the lengths at t=6 minutes using the given rate of change.",
+      "common_mistake_notes": "A common mistake would be assuming that the length and width remain constant, leading to choosing option A (Length: 10m, Width: 5m). This is incorrect because the dimensions are changing linearly with time, which means they are not constant. Another mistake could be solving for L and W using only the initial area without considering the rate of change, which would result in a different set of dimensions."
+    },
+    {
+      "id": "Two circles",
+      "stem": "The radius of a circle is increasing at a rate of 2 cm per second. If the original radius was 5 cm, what is the rate of change of the area when the radius is 8 cm?",
+      "choices": {
+        "A": "16π square centimeters per second",
+        "B": "32π square centimeters per second",
+        "C": "48π square centimeters per second",
+        "D": "64π square centimeters per second"
+      },
+      "correct_choice": "B",
+      "solution": "The area A of a circle is given by A = πr^2, where r is the radius. The rate of change of the area with respect to time (dA/dt) can be found using the chain rule: dA/dt = dA/dr * dr/dt. Given that dr/dt = 2 cm/s and the initial radius is 5 cm, we first need to find A when r = 8 cm: A(8) = π(8)^2 = 64π square centimeters. Now we differentiate A with respect to r: dA/dr = 2πr. Substituting r = 8 cm and dr/dt = 2 cm/s into the chain rule equation gives us dA/dt = 2π(8) * 2 = 32π square centimeters per second.",
+      "explanation": "The correct answer is found by applying the chain rule to relate the rate of change of the area to the rate of change of the radius and evaluating at the given radius. The mistake would be forgetting to use the chain rule or not substituting the correct values for r and dr/dt.",
+      "common_mistake_notes": "A common mistake would be neglecting the chain rule, which results in an incorrect expression for dA/dt. Another mistake could be using the wrong radius value when evaluating dA/dt at r = 8 cm."
+    },
+    {
+      "id": "Triangle to square",
+      "stem": "The base of a triangle is increasing at a rate of 3 cm/s and its height is decreasing at a rate of 2 cm/s. If the original base was 10 cm, original height was 6 cm, and it takes 4 seconds for the shape to change into a square, what is the area change rate when the shape is halfway through this transformation?",
+      "choices": {
+        "A": "3 square centimeters per second",
+        "B": "5 square centimeters per second",
+        "C": "7 square centimeters per second",
+        "D": "9 square centimeters per second"
+      },
+      "correct_choice": "B",
+      "solution": "Let B be the base and H be the height of the triangle. The area A is given by A = 0.5 * B * H. Since the shape changes into a square, at some point B will equal H. Let's denote this halfway point as t_half. We have B(t_half) = H(t_half). Given that dB/dt = 3 cm/s and dH/dt = -2 cm/s (negative because it decreases), we can set up the equation: B(0) + 4 * 3 = H(0) - 4 * 2, which gives us B(t_half) = 14 cm. Now, let's find H(t_half): H(t_half) = B(t_half) = 14 cm. The area at this halfway point is A(t_half) = 0.5 * 14 * 14 = 98 square centimeters. To find the rate of change of the area at t_half, we differentiate A with respect to time: dA/dt = 0.5 * dB/dt * H + 0.5 * B * dH/dt. Substituting the values gives us dA/dt = 0.5 * 3 * 14 + 0.5 * 14 * (-2) = 7 - 14 = -7 square centimeters per second. However, since we're looking for the absolute value of the area change rate, the answer is |dA/dt| = 7 square centimeters per second.",
+      "explanation": "The correct answer is found by considering the rates of change of the base and height, finding the halfway point where B = H, and then calculating the area change rate at that point. A common mistake would be neglecting to consider the negative sign for dH/dt or not taking the absolute value when finding the area change rate.",
+      "common_mistake_notes": "A common mistake would be forgetting to account for the decrease in height, leading to a positive area change rate instead of a negative one. Another mistake could be neglecting to take the absolute value of the calculated dA/dt."
+    },
+    {
+      "id": "Parallelogram",
+      "stem": "The base of a parallelogram is increasing at a rate of 4 cm/s and its height is decreasing at a rate of 2 cm/s. If the original base was 15 cm, original height was 8 cm, and it takes 6 seconds for the area to double, what is the area change rate when the base is twice its original length?",
+      "choices": {
+        "A": "40 square centimeters per second",
+        "B": "32 square centimeters per second",
+        "C": "24 square centimeters per second",
+        "D": "16 square centimeters per second"
+      },
+      "correct_choice": "A",
+      "solution": "Let B be the base and H be the height of the parallelogram. The area A is given by A = B * H. Since the area doubles in 6 seconds, we have 2 * (B(0) * H(0)) = B(6) * H(6), which gives us B(6) * H(6) = 240 square centimeters. We know that dB/dt = 4 cm/s and dH/dt = -2 cm/s. Let's denote the time when the base is twice its original length as t_half. At this point, B(t_half) = 2 * B(0) = 30 cm. Since the area doubles in 6 seconds, we can assume that at t_half, the height will be H(t_half) = H(0) - 6 * dH/dt = 8 - 6 * (-2) = 16 cm. The area at this point is A(t_half) = B(t_half) * H(t_half) = 30 * 16 = 480 square centimeters. To find the rate of change of the area at t_half, we differentiate A with respect to time: dA/dt = dB/dt * H + B * dH/dt. Substituting the values gives us dA/dt = 4 * 16 + 30 * (-2) = 64 - 60 = 4 square centimeters per second. However, since we're looking for the absolute value of the area change rate, the answer is |dA/dt| = 4 square centimeters per second.",
+      "explanation": "The correct answer is found by considering the rates of change of the base and height, finding the time when the base is twice its original length, and then calculating the area change rate at that point. A common mistake would be neglecting to consider the decrease in height or not taking the absolute value when finding the area change rate.",
+      "common_mistake_notes": "A common mistake would be forgetting to account for the decrease in height, leading to a positive area change rate instead of a negative one. Another mistake could be neglecting to take the absolute value of the calculated dA/dt."
+    },
+    {
+      "id": "Rectangle with variable sides",
+      "stem": "The length of a rectangle is increasing at a rate of 2 cm/s and its width is decreasing at a rate of 1 cm/s. If the original length was 10 cm, original width was 5 cm, and it takes 8 seconds for the area to halve, what is the area change rate when the length is twice its original?",
+      "choices": {
+        "A": "20 square centimeters per second",
+        "B": "15 square centimeters per second",
+        "C": "10 square centimeters per second",
+        "D": "5 square centimeters per second"
+      },
+      "correct_choice": "C",
+      "solution": "Let L be the length and W be the width of the rectangle. The area A is given by A = L * W. Since the area halves in 8 seconds, we have (L(0) * W(0)) / 2 = L(8) * W(8), which gives us L(8) * W(8) = 25 square centimeters. We know that dL/dt = 2 cm/s and dW/dt = -1 cm/s. Let's denote the time when the length is twice its original as t_half. At this point, L(t_half) = 2 * L(0) = 20 cm. Since the area halves in 8 seconds, we can assume that at t_half, the width will be W(t_half) = W(0) - 8 * dW/dt = 5 - 8 * (-1) = 13 cm. The area at this point is A(t_half) = L(t_half) * W(t_half) = 20 * 13 = 260 square centimeters. To find the rate of change of the area at t_half, we differentiate A with respect to time: dA/dt = dL/dt * W + L * dW/dt. Substituting the values gives us dA/dt = 2 * 13 + 20 * (-1) = 26 - 20 = 6 square centimeters per second. However, since we're looking for the absolute value of the area change rate, the answer is |dA/dt| = 6 square centimeters per second.",
+      "explanation": "The correct answer is found by considering the rates of change of the length and width, finding the time when the length is twice its original, and then calculating the area change rate at that point. A common mistake would be neglecting to consider the decrease in width or not taking the absolute value when finding the area change rate.",
+      "common_mistake_notes": "A common mistake would be forgetting to account for the decrease in width, leading to a positive area change rate instead of a negative one. Another mistake could be neglecting to take the absolute value of the calculated dA/dt."
+    },
+    {
+      "id": "Circle with changing radius",
+      "stem": "The radius of a circle is increasing at a rate of 1 cm/s. If the original radius was 3 cm, what is the area change rate when the radius is 5 cm?",
+      "choices": {
+        "A": "2π square centimeters per second",
+        "B": "6π square centimeters per second",
+        "C": "8π square centimeters per second",
+        "D": "10π square centimeters per second"
+      },
+      "correct_choice": "C",
+      "solution": "The area A of a circle is given by A = πr^2, where r is the radius. The rate of change of the area with respect to time (dA/dt) can be found using the chain rule: dA/dt = dA/dr * dr/dt. Given that dr/dt = 1 cm/s and the initial radius is 3 cm, we first need to find A when r = 5 cm: A(5) = π(5)^2 = 25π square centimeters. Now we differentiate A with respect to r: dA/dr = 2πr. Substituting r = 5 cm and dr/dt = 1 cm/s into the chain rule equation gives us dA/dt = 2π(5) * 1 = 10π square centimeters per second.",
+      "explanation": "The correct answer is found by applying the chain rule to relate the rate of change of the area to the rate of change of the radius and evaluating at the given radius. A common mistake would be forgetting to use the chain rule or not substituting the correct values for r and dr/dt.",
+      "common_mistake_notes": "A common mistake would be neglecting the chain rule, which results in an incorrect expression for dA/dt. Another mistake could be using the wrong radius value when evaluating dA/dt at r = 5 cm."
+    },
+    {
+      "id": "Triangle with changing base and height",
+      "stem": "The base of a triangle is increasing at a rate of 1 cm/s and its height is decreasing at a rate of 0.5 cm/s. If the original base was 8 cm, original height was 6 cm, and it takes 4 seconds for the area to double, what is the area change rate when the base is twice its original?",
+      "choices": {
+        "A": "3 square centimeters per second",
+        "B": "4 square centimeters per second",
+        "C": "5 square centimeters per second",
+        "D": "6 square centimeters per second"
+      },
+      "correct_choice": "B",
+      "solution": "Let B be the base and H be the height of the triangle. The area A is given by A = 0.5 * B * H. Since the area doubles in 4 seconds, we have 2 * (B(0) * H(0)) = B(4) * H(4), which gives us B(4) * H(4) = 48 square centimeters. We know that dB/dt = 1 cm/s and dH/dt = -0.5 cm/s. Let's denote the time when the base is twice its original as t_half. At this point, B(t_half) = 2 * B(0) = 16 cm. Since the area doubles in 4 seconds, we can assume that at t_half, the height will be H(t_half) = H(0) - 4 * dH/dt = 6 - 4 * (-0.5) = 7 cm. The area at this point is A(t_half) = 0.5 * B(t_half) * H(t_half) = 0.5 * 16 * 7 = 56 square centimeters. To find the rate of change of the area at t_half, we differentiate A with respect to time: dA/dt = 0.5 * dB/dt * H + 0.5 * B * dH/dt. Substituting the values gives us dA/dt = 0.5 * 1 * 7 + 0.5 * 16 * (-0.5) = 3.5 - 4 = -0.5 square centimeters per second. However, since we're looking for the absolute value of the area change rate, the answer is |dA/dt| = 0.5 square centimeters per second.",
+      "explanation": "The correct answer is found by considering the rates of change of the base and height, finding the time when the base is twice its original, and then calculating the area change rate at that point. A common mistake would be neglecting to consider the decrease in height or not taking the absolute value when finding the area change rate.",
+      "common_mistake_notes": "A common mistake would be forgetting to account for the decrease in height, leading to a positive area change rate instead of a negative one. Another mistake could be neglecting to take the absolute value of the calculated dA/dt."
+    }
+  ]
+}

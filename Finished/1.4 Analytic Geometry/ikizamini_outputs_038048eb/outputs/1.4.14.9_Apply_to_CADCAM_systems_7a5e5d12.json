@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.14.9",
+  "objective_text": "Apply to CAD/CAM systems",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Assemble a 3D model using CAD software",
+      "stem": "Which of the following steps is necessary when assembling a 3D model using CAD software?",
+      "choices": {
+        "A": "Randomly place components without considering assembly order",
+        "B": "Use layers to organize different parts of the model",
+        "C": "Ignore constraints and interlocking mechanisms between parts",
+        "D": "Apply colors to the model for aesthetic purposes only"
+      },
+      "correct_choice": "B",
+      "solution": "Using layers to organize different parts of the model helps in managing complexity and makes it easier to edit or modify individual components. Other options can lead to incorrect assembly or inefficient design processes.",
+      "explanation": "In CAD software, organizing models using layers is crucial for maintaining clarity and efficiency when working with complex 3D designs.",
+      "common_mistake_notes": "Choosing A may result in混乱的模型结构和困难的编辑过程. Choosing C can lead to design errors, while choosing D is not essential for the model's functionality."
+    },
+    {
+      "id": "Analyze a CAM- generated toolpath",
+      "stem": "What is the primary purpose of analyzing a CAM-generated toolpath?",
+      "choices": {
+        "A": "To change the color scheme of the machining process",
+        "B": "To ensure the machine tool does not exceed its operational limits",
+        "C": "To add decorative elements to the machined part",
+        "D": "To preview the final product's appearance"
+      },
+      "correct_choice": "B",
+      "solution": "Analyzing a CAM-generated toolpath ensures that the machine tool operates within its safe limits, preventing damage and ensuring accurate machining.",
+      "explanation": "In CAM systems, analyzing toolpaths is essential for verifying the feasibility and safety of the machining process, as well as optimizing cutting parameters.",
+      "common_mistake_notes": "Choosing A or C does not relate to the primary function of toolpath analysis. Choosing D may lead users to overlook potential issues with the process."
+    },
+    {
+      "id": "Post-process a CAD model for 3D printing",
+      "stem": "What is an essential step when post-processing a CAD model for 3D printing?",
+      "choices": {
+        "A": "Reduce the number of vertices to improve print speed",
+        "B": "Apply textures and colors to make the printed object more visually appealing",
+        "C": "Ensure the model is watertight and has no overlapping faces",
+        "D": "Increase the resolution to achieve higher detail in the final print"
+      },
+      "correct_choice": "C",
+      "solution": "A watertight, non-overlapping CAD model is crucial for 3D printing, as it prevents errors during the printing process and ensures a successful build.",
+      "explanation": "Post-processing for 3D printing involves preparing the CAD model to be compatible with the printer's requirements, including fixing topology issues and ensuring proper orientation.",
+      "common_mistake_notes": "Choosing A or D may affect print quality or time but are less critical than a watertight model. Choosing B is unrelated to post-processing for 3D printing."
+    },
+    {
+      "id": "Generate toolpaths for CNC milling",
+      "stem": "When generating toolpaths for CNC milling using CAM software, what parameter should be considered to reduce machining time?",
+      "choices": {
+        "A": "Increase the feed rate without considering material properties",
+        "B": "Use a smaller diameter end mill for all cuts",
+        "C": "Reduce the number of passes over the stock material",
+        "D": "Set a fixed cutting speed regardless of tool or material"
+      },
+      "correct_choice": "C",
+      "solution": "Reducing the number of passes over the stock material helps to decrease machining time without compromising part quality, provided that other parameters are optimized.",
+      "explanation": "In CNC milling, optimizing toolpaths involves balancing factors like feed rate, cutting speed, and pass count to achieve efficient machining while maintaining accuracy and surface finish.",
+      "common_mistake_notes": "Choosing A or D may lead to increased wear on the tool or poor part quality. Choosing B might not be suitable for all cuts, as it could increase tool deflection."
+    },
+    {
+      "id": "Create a mold design in CAD",
+      "stem": "When creating a mold design in CAD software, what is an important consideration for ensuring proper part ejection?",
+      "choices": {
+        "A": "Use a single浇注入口 to minimize material waste",
+        "B": "Design the模具 with a simple geometry to reduce manufacturing complexity",
+        "C": "Include strategically placed ejector pins for easy part removal",
+        "D": "Apply a texture to the mold surface to improve part adhesion"
+      },
+      "correct_choice": "C",
+      "solution": "Including strategically placed ejector pins in a mold design is essential for ensuring efficient and complete part ejection during the molding process.",
+      "explanation": "In mold design, proper part ejection is critical for achieving high-quality parts without damage or defects. Ejector pins help to separate the molded part from the模具 after cooling.",
+      "common_mistake_notes": "Choosing A or D does not relate to part ejection. Choosing B might simplify manufacturing but could compromise part design or functionality."
+    },
+    {
+      "id": "Analyze a FEA simulation result",
+      "stem": "What is the primary purpose of analyzing the results from a Finite Element Analysis (FEA) simulation in CAD/CAE software?",
+      "choices": {
+        "A": "To optimize the appearance of the 3D model",
+        "B": "To determine if the design will meet strength and deformation requirements",
+        "C": "To calculate material properties for the manufactured part",
+        "D": "To generate a toolpath for CNC machining"
+      },
+      "correct_choice": "B",
+      "solution": "FEA simulations help designers evaluate the structural integrity of their designs, ensuring they meet strength, stiffness, and deformation criteria.",
+      "explanation": "FEA is an analysis method used to predict how a part will behave under various loads and boundary conditions, providing valuable insights for design optimization.",
+      "common_mistake_notes": "Choosing A or C does not relate to FEA's primary function. Choosing D refers to CAM, not CAE."
+    },
+    {
+      "id": "Generate a G-code program from a CAM operation",
+      "stem": "What is the purpose of generating a G-code program from a CAM operation in CAD/CAM software?",
+      "choices": {
+        "A": "To create a 3D visualization of the machining process",
+        "B": "To send instructions to a CNC machine for automated manufacturing",
+        "C": "To analyze material properties and predict part behavior under stress",
+        "D": "To calculate tool wear and optimize cutting parameters"
+      },
+      "correct_choice": "B",
+      "solution": "G-code is a programming language used by CNC machines to execute machining operations based on the toolpaths generated by CAM software.",
+      "explanation": "Converting CAM- generated toolpaths into G-code allows for automated manufacturing, where the CNC machine follows the instructions to create the desired part.",
+      "common_mistake_notes": "Choosing A or C refers to unrelated processes. Choosing D might be related to CAM optimization but not directly to G-code generation."
+    }
+  ]
+}

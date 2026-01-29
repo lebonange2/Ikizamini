@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.12.13 Apply to probability distributions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.12 Improper Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (AsdFg6789):
+A fair six-sided die is rolled once. What is the probability of rolling an odd number?
+A) 1/2
+B) 1/3
+C) 2/3
+D) 1/6
+Correct Answer: A
+
+Solution:
+The probability of rolling an odd number on a fair six-sided die is 3 out of 6, because there are three odd numbers (1, 3, and 5) and six possible outcomes in total. This simplifies to 1/2.
+
+Explanation:
+When calculating probabilities for discrete events, like rolling a die, you divide the number of desired outcomes by the total number of possible outcomes.
+
+Common mistake note:
+A common mistake is to assume that each outcome has an equal probability, which leads to choosing B (1/3), but this only applies if all outcomes are equally likely.
+------------------------------------------------------------------------------
+
+Problem 2 (ZxcvbNmlk):
+A bag contains 5 red balls and 7 blue balls. If one ball is drawn at random, what is the probability that it will be a red ball?
+A) 2/3
+B) 1/2
+C) 5/12
+D) 7/12
+Correct Answer: C
+
+Solution:
+The probability of drawing a red ball from the bag is calculated by dividing the number of red balls (5) by the total number of balls in the bag (5 + 7 = 12). So, the probability is 5/12.
+
+Explanation:
+When calculating probabilities with replacement, each draw does not affect the subsequent draws. The total outcomes remain constant, and you only consider the desired outcome for each question.
+
+Common mistake note:
+A common mistake is to add the number of red balls (5) to the number of blue balls (7), assuming that's the total probability, which leads to choosing D (7/12). However, this method would be correct if you were calculating the probability of drawing a red ball and then another red ball without replacement.
+------------------------------------------------------------------------------
+
+Problem 3 (QwertyUij):
+A standard deck of 52 cards is shuffled. What is the probability of drawing a heart as the first card?
+A) 1/4
+B) 1/2
+C) 3/4
+D) 1/13
+Correct Answer: A
+
+Solution:
+There are 52 cards in a deck, and 13 of them are hearts. The probability of drawing a heart as the first card is thus 13 out of 52, which simplifies to 1/4.
+
+Explanation:
+When drawing from a well-shuffled deck, each card has an equal chance of being drawn. Since there are four suits and one of them is hearts, the probability of drawing a heart is 1/4.
+
+Common mistake note:
+A common mistake is to confuse the number of hearts with the total number of cards, leading to choosing D (1/13), which would be the probability of drawing a specific card from the deck.
+------------------------------------------------------------------------------
+
+Problem 4 (BnmLkjhGf):
+A fair coin is flipped twice. What is the probability of getting at least one head?
+A) 1/4
+B) 3/4
+C) 1/2
+D) 7/8
+Correct Answer: B
+
+Solution:
+There are four possible outcomes when flipping a coin twice: HH, HT, TH, and TT. Three out of these four have at least one head (HH, HT, and TH). So the probability is 3/4.
+
+Explanation:
+When considering events that can happen in multiple trials, like flipping a coin twice, it's important to count all outcomes with the desired property. In this case, we're looking for any outcome with at least one head.
+
+Common mistake note:
+A common mistake is to only consider the probability of getting exactly one head (HT or TH), which would be 1/2, and not including the probability of getting two heads (HH). This leads to choosing C.
+------------------------------------------------------------------------------
+
+Problem 5 (PoiuytRtf):
+A box contains 3 red marbles, 4 blue marbles, and 5 green marbles. If two marbles are drawn without replacement, what is the probability that both will be red?
+A) 1/20
+B) 9/10
+C) 6/45
+D) 3/10
+Correct Answer: C
+
+Solution:
+First, we calculate the probability of drawing a red marble on the first draw: 3 red marbles out of 12 total (3 + 4 + 5). After drawing one red marble, there are now 2 red marbles left and 11 total. The probability of drawing another red is 2/11. Multiply these probabilities together to get 3/12 	imes 2/11 = 6/132, which simplifies to 6/45.
+
+Explanation:
+When drawing without replacement, the probability of each draw changes based on previous draws. Here, we first find the probability of drawing a red marble and then multiply it by the probability of drawing another red after one has been drawn.
+
+Common mistake note:
+A common mistake is to assume that the probability remains constant for both draws (3/12), leading to choosing A (1/20). However, this neglects the reduction in total marbles after the first draw.
+------------------------------------------------------------------------------
+
+Problem 6 (BvcxZqweR):
+An urn contains 7 white balls and 5 black balls. If two balls are drawn without replacement, what is the probability that one will be white and one will be black?
+A) 2/3
+B) 1/2
+C) 14/35
+D) 7/15
+Correct Answer: D
+
+Solution:
+There are two ways to draw one white ball and one black ball: first white then black or first black then white. The probability of drawing a white ball first is 7/12, followed by a black ball with probability 5/11. The other way around has a probability of 5/12 	imes 7/11. Adding these probabilities together gives us (7/12 	imes 5/11) + (5/12 	imes 7/11) = 35/66, which simplifies to 7/15.
+
+Explanation:
+When calculating the probability of two events happening in a specific order without replacement, you need to consider both orders and sum their probabilities. Here, we're looking for one white and one black ball, regardless of the order.
+
+Common mistake note:
+A common mistake is to assume that each event has an equal probability (7/12 	imes 5/12), leading to choosing C (14/35). However, this method would be correct if both balls were drawn with replacement.
+------------------------------------------------------------------------------
+
+Problem 7 (SdfghJkl):
+A fair six-...
+A) 1/36
+B) 5/36
+C) 1/9
+D) 1/6
+Correct Answer: B
+
+Solution:
+There are six possible outcomes for each die roll, so there are a total of 6 	imes 6 = 36 possible combinations. The sums that equal 7 are (1, 6), (2, 5), (3, 4), (4, 3), and (5, 2). So, the probability is 5 out of 36.
+
+Explanation:
+When rolling two dice, we're looking for all combinations that result in a sum of 7. We then divide the number of successful outcomes by the total number of possible outcomes.
+
+Common mistake note:
+A common mistake is to assume that each roll has an equal probability and multiply those probabilities (1/6 	imes 1/6), leading to choosing A (1/36). This would be correct if we were looking for two specific numbers, but not for a sum.
+------------------------------------------------------------------------------

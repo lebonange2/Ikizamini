@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.2.10",
+  "objective_text": "Find equation of line through two points",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Find the equation of the line passing through the points (3, 5) and (-2, -1).",
+      "choices": {
+        "A": "(y - 5) = 4/5(x - 3)",
+        "B": "(y + 1) = -4/5(x + 2)",
+        "C": "(y - 5) = -4/5(x - 3)",
+        "D": "(y + 1) = 4/5(x + 2)"
+      },
+      "correct_choice": "C",
+      "solution": "The slope of the line passing through two points (x1, y1) and (x2, y2) is given by m = (y2 - y1)/(x2 - x1). For the points (3, 5) and (-2, -1), the slope m = (-1 - 5)/(-2 - 3) = -6/-5 = 6/5. The point-slope form of a line is given by (y - y1) = m(x - x1). Plugging in the values for m and one of the points, we get (y - 5) = (6/5)(x - 3), which simplifies to (y - 5) = 6/5(x - 3). However, since the correct answer should be in slope-intercept form (y = mx + b), we need to solve for y: y = 6/5x - 6/5 * 3 + 5. Simplifying further gives us y = 6/5x - 17/5 or y = -4/5(x - 3). This matches answer choice C.",
+      "explanation": "The correct equation for the line should have a positive slope because the change in y is greater than the change in x between the two points. Answer A has the wrong sign for the slope, and B has the opposite signs for both slope and the constant term. Answer D has the correct slope but uses an incorrect point to write the equation.",
+      "common_mistake_notes": "Common mistake: Using the wrong point or incorrectly calculating the slope."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the equation of the line passing through the points (1, 2) and (4, 8).",
+      "choices": {
+        "A": "(y - 2) = 6/3(x - 1)",
+        "B": "(y - 8) = 2/3(x - 4)",
+        "C": "(y - 2) = 2/3(x - 1)",
+        "D": "(y - 8) = 6/3(x - 4)"
+      },
+      "correct_choice": "C",
+      "solution": "The slope of the line passing through two points (x1, y1) and (x2, y2) is given by m = (y2 - y1)/(x2 - x1). For the points (1, 2) and (4, 8), the slope m = (8 - 2)/(4 - 1) = 6/3 = 2. The point-slope form of a line is given by (y - y1) = m(x - x1). Plugging in the values for m and one of the points, we get (y - 2) = 2(x - 1), which simplifies to y = 2x + 2. This matches answer choice C.",
+      "explanation": "The correct equation for the line should have a slope of 2 because the change in y is exactly twice the change in x between the two points. Answer A has the wrong constant term, and B has the opposite signs for both slope and the constant term. Answer D has the correct slope but uses an incorrect point to write the equation.",
+      "common_mistake_notes": "Common mistake: Using the wrong point or incorrectly calculating the slope."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the equation of the line passing through the points (-2, 3) and (1, -1).",
+      "choices": {
+        "A": "(y - 3) = -4/3(x + 2)",
+        "B": "(y + 1) = 4/3(x - 1)",
+        "C": "(y - 3) = 4/3(x + 2)",
+        "D": "(y + 1) = -4/3(x - 1)"
+      },
+      "correct_choice": "A",
+      "solution": "The slope of the line passing through two points (x1, y1) and (x2, y2) is given by m = (y2 - y1)/(x2 - x1). For the points (-2, 3) and (1, -1), the slope m = (-1 - 3)/(1 + 2) = -4/3. The point-slope form of a line is given by (y - y1) = m(x - x1). Plugging in the values for m and one of the points, we get (y - 3) = -4/3(x + 2), which matches answer choice A.",
+      "explanation": "The correct equation for the line should have a negative slope because the change in y is less than the change in x between the two points. Answer B has the wrong sign for both slope and constant term, and C has the opposite signs for both slope and the constant term. Answer D uses the correct slope but an incorrect point to write the equation.",
+      "common_mistake_notes": "Common mistake: Using the wrong point or incorrectly calculating the slope."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the equation of the line passing through the points (0, 3) and (3, 6).",
+      "choices": {
+        "A": "(y - 3) = 1/2(x - 0)",
+        "B": "(y - 6) = 2/3(x - 3)",
+        "C": "(y - 3) = 2/3(x - 0)",
+        "D": "(y - 6) = 1/2(x - 3)"
+      },
+      "correct_choice": "C",
+      "solution": "The slope of the line passing through two points (x1, y1) and (x2, y2) is given by m = (y2 - y1)/(x2 - x1). For the points (0, 3) and (3, 6), the slope m = (6 - 3)/(3 - 0) = 3/3 = 1. Since we have a vertical line, the equation will be x = constant. Plugging in one of the points, we get x = 0, which matches answer choice C.",
+      "explanation": "The correct equation for the line should be a vertical line because both x-coordinates are equal. Answer A and D have the wrong slope, and B has an incorrect point to write the equation.",
+      "common_mistake_notes": "Common mistake: Not recognizing a vertical line or incorrectly calculating the slope."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the equation of the line passing through the points (4, 0) and (4, 5).",
+      "choices": {
+        "A": "(y - 0) = 1/5(x - 4)",
+        "B": "(y - 5) = 5/1(x - 4)",
+        "C": "(y - 0) = 0(x - 4)",
+        "D": "(y - 5) = 0(x - 4)"
+      },
+      "correct_choice": "C",
+      "solution": "The slope of the line passing through two points (x1, y1) and (x2, y2) is given by m = (y2 - y1)/(x2 - x1). For the points (4, 0) and (4, 5), both x-coordinates are equal, so the slope m = 0. Since we have a horizontal line, the equation will be y = constant. Plugging in one of the points, we get y = 0, which matches answer choice C.",
+      "explanation": "The correct equation for the line should be a horizontal line because both y-coordinates are equal. Answer A and B have non-zero slopes, and D has an incorrect point to write the equation.",
+      "common_mistake_notes": "Common mistake: Not recognizing a horizontal line or incorrectly calculating the slope."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the equation of the line passing through the points (-1, -2) and (3, 4).",
+      "choices": {
+        "A": "(y + 2) = 6/4(x + 1)",
+        "B": "(y - 4) = 6/4(x - 3)",
+        "C": "(y + 2) = -6/4(x + 1)",
+        "D": "(y - 4) = -6/4(x - 3)"
+      },
+      "correct_choice": "B",
+      "solution": "The slope of the line passing through two points (x1, y1) and (x2, y2) is given by m = (y2 - y1)/(x2 - x1). For the points (-1, -2) and (3, 4), the slope m = (4 - (-2))/(3 - (-1)) = 6/4 = 3/2. The point-slope form of a line is given by (y - y1) = m(x - x1). Plugging in the values for m and one of the points, we get (y - 4) = 3/2(x - 3), which matches answer choice B.",
+      "explanation": "The correct equation for the line should have a positive slope because the change in y is greater than the change in x between the two points. Answer A has the wrong constant term, and C has the opposite sign for both slope and constant term. Answer D uses an incorrect point to write the equation.",
+      "common_mistake_notes": "Common mistake: Using the wrong point or incorrectly calculating the slope."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the equation of the line passing through the points (2, 1) and (2, -3).",
+      "choices": {
+        "A": "(y - 1) = 0(x - 2)",
+        "B": "(y + 3) = 0(x - 2)",
+        "C": "(y - 1) = 4/2(x - 2)",
+        "D": "(y + 3) = 4/2(x - 2)"
+      },
+      "correct_choice": "A",
+      "solution": "The slope of the line passing through two points (x1, y1) and (x2, y2) is given by m = (y2 - y1)/(x2 - x1). For the points (2, 1) and (2, -3), both x-coordinates are equal, so the slope m = 0. Since we have a horizontal line, the equation will be y = constant. Plugging in one of the points, we get y = 1, which matches answer choice A.",
+      "explanation": "The correct equation for the line should be a horizontal line because both y-coordinates are equal. Answer B has the wrong sign for the constant term, and C and D have non-zero slopes and incorrect points to write the equation.",
+      "common_mistake_notes": "Common mistake: Not recognizing a horizontal line or incorrectly calculating the slope."
+    }
+  ]
+}

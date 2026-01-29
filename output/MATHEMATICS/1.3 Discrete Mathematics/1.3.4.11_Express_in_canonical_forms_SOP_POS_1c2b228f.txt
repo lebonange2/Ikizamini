@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.4.11 Express in canonical forms (SOP, POS)
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.4 Truth Tables
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Express the boolean expression A'BC + ABC' + AB'C in SOP form.
+A) A'B'C'
+B) ABC'
+C) AB'C'
+D) A'B+C'
+Correct Answer: D
+
+Solution:
+The SOP (Sum of Products) form is a way to express a boolean expression as a sum of products. To convert the given expression A'BC + ABC' + AB'C into SOP, we can group the terms based on their common variables and find the product of those variables for each term. The common terms are A'B'C', which covers all three terms.
+
+Explanation:
+The correct answer is D because it represents the sum of products where A', B, and C' appear together in one term (A'B+C') and cover all possible combinations of the original expression.
+
+Common mistake note:
+Common mistake: Choosing A or B. These choices are incorrect because they don't include all the variable combinations present in the original expression.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Express the boolean expression (X + Y)(Δ + Z) in POS form.
+A) XYZ'
+B) XY'Z'
+C) XΔY'ΔZ'
+D) XΔYZ'
+Correct Answer: C
+
+Solution:
+The POS (Product of Sums) form is a way to express a boolean expression as a product of sums. To convert the given expression (X + Y)(Δ + Z) into POS, we distribute each variable from one set across all variables in the other set.
+
+Explanation:
+The correct answer is C because it represents the product of sums where X and Δ appear together in one term (XΔ), Y' and Δ appear together in another term (Y'Δ), and Z appears alone, covering all possible combinations of the original expression.
+
+Common mistake note:
+Common mistake: Choosing A or B. These choices are incorrect because they don't include all the variable combinations present in the original expression.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Express the boolean expression (A + B)'(C + D)' in SOP form.
+A) ABCD'
+B) ABC'D'
+C) A'B'C'D'
+D) A'B'CD
+Correct Answer: C
+
+Solution:
+To convert the given expression (A + B)'(C + D)' into SOP, we first find the complements of each variable in the original expression and then form products for each combination.
+
+Explanation:
+The correct answer is C because it represents the sum of products where A', B', C', and D' appear together, covering all possible combinations of the complemented variables from the original expression.
+
+Common mistake note:
+Common mistake: Choosing A or B. These choices are incorrect because they don't include both complements of A and B or both complements of C and D.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Express the boolean expression (X + Y + Z)' in POS form.
+A) XYZ'
+B) X'Y'Z'
+C) X'YZ' + XY'Z'
+D) X'Y'Z
+Correct Answer: B
+
+Solution:
+To convert the given expression (X + Y + Z)' into POS, we first find the complement of the original expression and then express it as a product of sums.
+
+Explanation:
+The correct answer is B because it represents the product of sums where X', Y', and Z' appear together, covering all possible combinations of the complemented variables from the original expression.
+
+Common mistake note:
+Common mistake: Choosing C or D. These choices are incorrect because they split the complements into different terms, which doesn't represent the complement of the original expression.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Express the boolean expression (A'B + A'C')(B'C + B'D') in SOP form.
+A) AB'CD'
+B) ABC'D'
+C) A'B'C'D'
+D) A'B+C'D'
+Correct Answer: C
+
+Solution:
+To convert the given expression (A'B + A'C')(B'C + B'D') into SOP, we distribute and combine terms to form products for each combination.
+
+Explanation:
+The correct answer is C because it represents the sum of products where A', B', C', and D' appear together, covering all possible combinations of the original expression.
+
+Common mistake note:
+Common mistake: Choosing A or B. These choices are incorrect because they don't include both complements of A and B or both complements of C and D.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Express the boolean expression (X + Y)(Δ + Z)' in POS form.
+A) XYZ'
+B) XY'Z'
+C) XΔY'ΔZ'
+D) XΔYZ'
+Correct Answer: A
+
+Solution:
+To convert the given expression (X + Y)(Δ + Z)' into POS, we distribute each variable from one set across all variables in the other set and then find the complement of the result.
+
+Explanation:
+The correct answer is A because it represents the product of sums where X, Y, and Z' appear together, covering all possible combinations of the original expression after taking the complement of (Δ + Z).
+
+Common mistake note:
+Common mistake: Choosing B or C. These choices are incorrect because they don't include both variables from the first set (X and Y) or have an extra term (C).
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Express the boolean expression A'B'C'D + ABCD in POS form.
+A) A'BC'D'
+B) ABCD'
+C) A'B'CD'
+D) A'B+C'D'
+Correct Answer: B
+
+Solution:
+To convert the given expression A'B'C'D + ABCD into POS, we group the terms based on their common variables and find the sum of those variables for each term. The common terms are ABCD.
+
+Explanation:
+The correct answer is B because it represents the product of sums where A', B', C', and D' appear together in one term (ABCD'), covering all possible combinations of the original expression.
+
+Common mistake note:
+Common mistake: Choosing A or C. These choices are incorrect because they don't include all the variables from the original expression.
+------------------------------------------------------------------------------

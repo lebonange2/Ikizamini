@@ -1,0 +1,300 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.3.6 Find line of intersection of planes
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.3 Lines and Planes in 3D
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (InPlaneIntersection):
+Find the equation of the line formed by the intersection of the planes:
+A: 2x + y - z = 3
+B: x - y + 2z = 1
+A) (1, 0, 0) + t(1, 1, 1)
+B) (1, 1, 1) + t(-1, 1, 2)
+C) (3, 1, -1) + t(1, -1, 2)
+D) (1, 1, 0) + t(2, 1, -1)
+Correct Answer: C
+
+Solution:
+To find the line of intersection, we need to solve the system formed by the two equations. First, eliminate one variable. Let's eliminate z by adding A and B:
+
+(2x + y - z) + (x - y + 2z) = 3 + 1
+3x + z = 4
+
+Now substitute z back into either equation. We'll use A:
+
+2x + y - (4 - 3x) = 3
+2x + y - 4 + 3x = 3
+5x + y = 7
+y = 7 - 5x
+
+The line of intersection is given by the parametric equations:
+x = x_0 + at
+y = y_0 + bt
+z = z_0 + ct
+
+We can choose any point on the line as our starting point (x_0, y_0, z_0). Let's use the value of x when z = 0 from z = 4 - 3x:
+
+4 - 3x = 0
+x = 4/3
+y = 7 - 5(4/3)
+y = 1/3
+z = 0
+
+(x_0, y_0, z_0) = (4/3, 1/3, 0)
+
+Now we can find the direction vector by subtracting the variables from their free terms:
+dx/dt = 5
+dy/dt = -5
+dz/dt = 3
+
+So the line is given by:
+
+(4/3, 1/3, 0) + t(5, -5, 3)
+
+This simplifies to:
+
+(1, 1, 0) + t(1, -1, 2)
+
+Which corresponds to answer C.
+
+Explanation:
+The correct line of intersection was found by solving the system formed by adding the equations and then substituting back into one equation. The direction vector is obtained from the coefficients of the free variables in the resulting parametric equations.
+
+Common mistake note:
+A common mistake is to eliminate a variable incorrectly or substitute it back into the wrong equation. Another mistake could be not simplifying the final parametric equations.
+------------------------------------------------------------------------------
+
+Problem 2 (IntersectingNormalVectors):
+Find the line of intersection between the planes:
+A: 3x - y + 2z = 1
+B: x + 2y - z = 0
+A) (1, 0, 0) + t(1, 1, 1)
+B) (-1, 1, 2) + t(1, 1, 1)
+C) (1, 1, 0) + t(3, -1, 2)
+D) (0, 0, 0) + t(3, 2, -1)
+Correct Answer: D
+
+Solution:
+To find the line of intersection, we can use the fact that the direction vector of the line is perpendicular to both normal vectors of the planes. The normal vectors are the coefficients of x, y, and z in each equation:
+
+Normal vector for A: (3, -1, 2)
+Normal vector for B: (1, 2, -1)
+
+The cross product of these two vectors will give us the direction vector of the line of intersection. Let's calculate it:
+
+(3, -1, 2) x (1, 2, -1) = <-(-1)(-1) - (-2)(2), (2)(1) - (3)(-1), (3)(2) - (-1)(1)> 
+= <-5, 5, 7>
+
+Now we need a point on the line of intersection. We can find it by solving the system formed by the two equations. Let's add the equations:
+
+(3x - y + 2z) + (x + 2y - z) = 1 + 0
+4x + y + z = 1
+
+We can solve for any variable, let's solve for x:
+
+4x = 1 - y - z
+x = (1 - y - z)/4
+
+Now substitute x back into one of the original equations. We'll use A:
+
+3((1 - y - z)/4) - y + 2z = 1
+(3 - 3y/4 - 3z/4) - y + 2z = 1
+9/4 - 7y/4 + 5z/4 = 1
+7y/4 - 5z/4 = 5/4
+y - (5/7)z = 5/7
+
+We can choose any value for z, let's set z = 0 to find y:
+
+y = 5/7
+x = (1 - 5/7 - 0)/4
+x = 2/7
+
+The point on the line is (2/7, 5/7, 0). Now we can write the parametric equations of the line:
+x = x_0 + at
+y = y_0 + bt
+z = z_0 + ct
+
+(x_0, y_0, z_0) = (2/7, 5/7, 0)
+dx/dt = 3, dy/dt = -1, dz/dt = 2
+
+So the line is given by:
+
+(2/7, 5/7, 0) + t(3, -1, 2)
+
+This simplifies to:
+
+(0, 0, 0) + t(3, 2, -1)
+
+Which corresponds to answer D.
+
+Explanation:
+The correct line of intersection was found by calculating the cross product of the normal vectors and then solving for a point on the line using the equations. The direction vector is obtained from the cross product result.
+
+Common mistake note:
+A common mistake is to incorrectly calculate the cross product or not simplifying the final parametric equations. Another mistake could be choosing an incorrect value for z when finding a point on the line.
+------------------------------------------------------------------------------
+
+Problem 3 (IntersectionIn3D):
+Find the intersection of the planes:
+A: 2x + y - z = 1
+B: x - y + 2z = 0
+C: x + y - z = 2
+A) (1, 1, 0) + t(1, 1, 1)
+B) (-1, 1, 2) + t(1, 1, 1)
+C) (1, 1, 0) + t(3, -1, 2)
+D) No intersection
+Correct Answer: D
+
+Solution:
+To determine if there is an intersection between the three planes, we can check if they are parallel or not. If any two pairs of normal vectors are parallel, then the planes will be either coincident (the same plane) or skew (no intersection). Let's find the normal vectors for each plane:
+
+Normal vector for A: (2, 1, -1)
+Normal vector for B: (1, -1, 2)
+Normal vector for C: (1, 1, -1)
+
+We can check if any two pairs of these vectors are parallel. First, let's check A and C:
+
+(2, 1, -1) is not parallel to (1, 1, -1) because their cross product is not zero.
+
+Next, let's check B and C:
+
+(1, -1, 2) is not parallel to (1, 1, -1) because their cross product is not zero.
+
+Finally, let's check A and B:
+
+(2, 1, -1) is not parallel to (1, -1, 2) because their cross product is not zero.
+
+Since no two pairs of normal vectors are parallel, the planes do not intersect. Therefore, there is no intersection point or line between these three planes. The correct answer is D: No intersection.
+
+Explanation:
+The correct conclusion was reached by checking if any pair of normal vectors from the given planes were parallel. Since none of them were parallel, it means that the planes are either skew (no intersection) or coincident (the same plane). In this case, they are not coincident because their equations are different.
+
+Common mistake note:
+A common mistake would be to assume that there is an intersection without checking if the normal vectors are parallel. Another mistake could be attempting to find a line of intersection when the planes do not intersect.
+------------------------------------------------------------------------------
+
+Problem 4 (IntersectionIn2D):
+Find the equation of the line formed by the intersection of the planes:
+A: x + y = 3
+B: 2x - y = 1
+A) (0, 3) + t(1, 1)
+B) (1, 2) + t(-1, 1)
+C) (1, 0) + t(2, -1)
+D) No intersection
+Correct Answer: A
+
+Solution:
+Since these planes are in 2D (they only have x and y terms), they will either intersect at a line or be parallel. To find the intersection, we can solve the system formed by the two equations:
+
+x + y = 3 
+2x - y = 1
+
+We can add the two equations to eliminate y:
+
+(3x) = 4
+x = 4/3
+
+Now substitute x back into one of the original equations. We'll use A:
+
+4/3 + y = 3
+y = 9/3 - 4/3
+y = 5/3
+
+The intersection point is (4/3, 5/3). The line can be written in parametric form as:
+x = x_0 + at
+y = y_0 + bt
+
+(x_0, y_0) = (4/3, 5/3)
+dx/dt = 1, dy/dt = 1
+
+So the line is given by:
+
+(4/3, 5/3) + t(1, 1)
+
+This simplifies to:
+
+(0, 3) + t(1, 1)
+
+Which corresponds to answer A.
+
+Explanation:
+The correct line of intersection was found by solving the system formed by adding the equations and then substituting back into one equation. The direction vector is obtained from the coefficients of the free variables in the resulting parametric equations.
+
+Common mistake note:
+A common mistake would be to assume that there is no intersection because the planes are in 2D. Another mistake could be attempting to find a line of intersection in 3D when the problem only involves two dimensions.
+------------------------------------------------------------------------------
+
+Problem 5 (IntersectionWithOrigin):
+Find the equation of the line formed by the intersection of the plane:
+A: x + y + z = 1
+A) (0, 0, 0) + t(1, 1, 1)
+B) (1, 1, 1) + t(-1, 1, 2)
+C) (1, 1, 0) + t(2, 1, -1)
+D) No intersection
+Correct Answer: A
+
+Solution:
+Since the plane A passes through the origin (0, 0, 0), any linear combination of its normal vector will also pass through the origin. The normal vector for plane A is (1, 1, 1). Therefore, the line of intersection can be written as:
+x = x_0 + at
+y = y_0 + bt
+z = z_0 + ct
+
+where x_0, y_0, and z_0 are all zero. The direction vector is the normal vector itself, so we have:
+
+x = 0 + at
+y = 0 + bt
+z = 0 + ct
+
+This simplifies to:
+
+(0, 0, 0) + t(1, 1, 1)
+
+Which corresponds to answer A.
+
+Explanation:
+The correct line of intersection was found by recognizing that the plane passes through the origin and using the normal vector as the direction vector for the line. Since the plane is already at the origin, there's no need to find a specific point on the line.
+
+Common mistake note:
+A common mistake would be to attempt to solve a system of equations or look for another point on the line when the plane itself passes through the origin.
+------------------------------------------------------------------------------
+
+Problem 6 (IntersectionWithPlaneAtOrigin):
+Find the equation of the line formed by the intersection of the planes:
+A: x + y + z = 1
+B: x + y + z = 0
+A) (0, 0, 0) + t(1, 1, 1)
+B) (1, 1, 1) + t(-1, 1, 2)
+C) (1, 1, 0) + t(2, 1, -1)
+D) No intersection
+Correct Answer: D
+
+Solution:
+The two planes A and B are parallel because they have the same normal vector (1, 1, 1). Parallel planes do not intersect in 3D space. Therefore, there is no line of intersection between these planes. The correct answer is D: No intersection.
+
+Explanation:
+The correct conclusion was reached by recognizing that both planes have the same normal vector, which indicates they are parallel and thus do not intersect.
+
+Common mistake note:
+A common mistake would be to assume that there is an intersection without checking if the normal vectors of the planes are equal. Another mistake could be attempting to find a line of intersection when the planes are parallel.
+------------------------------------------------------------------------------
+
+Problem 7 (IntersectionWithPlaneThroughOrigin):
+Find the equation of the line formed by the intersection of the plane:
+A: x + y + z = 1
+B: x + y + z = 2
+A) (0, 0, 0) + t(1, 1, 1)
+B) (1, 1, 1) + t(-1, 1, 2)
+C) (1, 1, 0) + t(2, 1, -1)
+D) No intersection
+Correct Answer: D
+
+Solution:
+The two planes A and B are parallel because they have the same normal vector (1, 1, 1). Parallel planes do not intersect in 3D space. Therefore, there is no line of intersection between these planes. The correct answer is D: No intersection.
+
+Explanation:
+The correct conclusion was reached by recognizing that both planes have the same normal vector, which indicates they are parallel and thus do not intersect.
+
+Common mistake note:
+A common mistake would be to assume that there is an intersection without checking if the normal vectors of the planes are equal. Another mistake could be attempting to find a line of intersection when the planes are parallel.
+------------------------------------------------------------------------------

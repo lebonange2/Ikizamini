@@ -1,0 +1,179 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.1.11 Apply cylindrical coordinates
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.1 Coordinate Systems
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Convert the point (2, π/3, 4) in Cartesian coordinates to cylindrical coordinates.
+A) (2
+cos(π/3), 2
+cos(π/3), 4)
+B) (2
+cos(π/3), 2
+sin(π/3), 4)
+C) (2, π/3, 4)
+D) (4
+cos(π/3), 4
+cos(π/3), 4)
+Correct Answer: B
+
+Solution:
+(r, θ, z) = (2
+cos(π/3), 2
+sin(π/3), 4)
+
+Explanation:
+In cylindrical coordinates, a point is represented by (r, θ, z), where r is the distance from the origin to the point in the xy-plane, θ is the angle between the positive x-axis and the line segment connecting the origin to the point, and z is the height of the point above or below the xy-plane. The given point has x = 2
+cos(π/3), y = 2
+sin(π/3), and z = 4.
+
+Common mistake note:
+Common mistake is to mix up the trigonometric functions, using cos for both r and θ. Remember that r uses cosine while θ uses sine.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the cylindrical coordinates of a point with Cartesian coordinates (3
+cos(π/4), 3
+cos(π/4), 5).
+A) (3, π/2, 5)
+B) (3
+cos(π/4), π/4, 5)
+C) (3
+cos^2(π/4), π/4, 5)
+D) (3
+cos(π/4), π/8, 5)
+Correct Answer: B
+
+Solution:
+(r, θ, z) = (3
+cos(π/4), π/4, 5)
+
+Explanation:
+Given the Cartesian coordinates x = 3
+cos(π/4) and y = 3
+cos(π/4), we can find r by taking the square root of x^2 + y^2. Since x = y, r = √(3
+cos(π/4))^2 = 3
+cos(π/4). The angle θ is given by π/4 because the point lies on the line where x = y. z remains unchanged at 5.
+
+Common mistake note:
+Common mistake is to assume that r is equal to 3, but since x and y are both cos(π/4), their sum under the square root gives r as 3
+cos(π/4).
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Convert the cylindrical coordinates (5, π, 2) to Cartesian coordinates.
+A) (5, -5, 2)
+B) (5
+cos(π), 5
+cos(π), 2)
+C) (5
+cos(π), 5
+cos(π), -2)
+D) (0, -5, 2)
+Correct Answer: D
+
+Solution:
+(x, y, z) = (0, -5, 2)
+
+Explanation:
+In cylindrical coordinates, x = r
+cos(θ), y = r
+cos(θ), and z remains the same. For the given point with θ = π, cos(π) is equal to -1. Therefore, x = 5
+cos(π) = 0 and y = 5
+cos(π) = -5.
+
+Common mistake note:
+Common mistake is to use sin instead of cos for x and y, but since θ is π, cos(π) is the correct trigonometric function to use.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the volume of a right circular cylinder with radius 2 and height 6 in cylindrical coordinates.
+A) 24
+cos^2(θ)
+B) 24
+cos(θ)
+C) 24
+cos(2θ)
+D) 24
+cos^2(θ)dzdrdθ
+Correct Answer: D
+
+Solution:
+V = πr^2dzdrdθ = 24
+cos^2(θ)dzdrdθ
+
+Explanation:
+The volume of a right circular cylinder in cylindrical coordinates is given by V = πr^2dzdrdθ. Since the radius is constant at 2, we substitute r^2 with 4 and integrate over the appropriate ranges for z, r, and θ.
+
+Common mistake note:
+Common mistake is to forget the factor of π or to integrate only over one variable instead of all three (z, r, and θ). Remember that volume in cylindrical coordinates involves integrating over all three variables.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Express the surface area of a right circular cylinder with radius 4 and height 8 as an integral in cylindrical coordinates.
+A) 32
+cos(θ)dθ dz
+B) 128
+cos^2(θ)dθ dz
+C) 128
+cos(2θ)dθ dz
+D) 128
+cos^2(θ)dzdrdθ
+Correct Answer: B
+
+Solution:
+A = 2πrh + 2πr^2 = 128
+cos^2(θ)dθ dz
+
+Explanation:
+The surface area of a right circular cylinder in cylindrical coordinates is given by A = 2πrh + 2πr^2, where r is the radius and h is the height. Since the radius is constant at 4 and the height is 8, we substitute r with 4 and h with 8 and integrate over the appropriate ranges for z and θ.
+
+Common mistake note:
+Common mistake is to forget the factor of 2π or to integrate only over one variable instead of both (z and θ). Remember that surface area in cylindrical coordinates involves integrating over two variables.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Evaluate the integral π ∫_0^1 ∫_0^√(1 - x^2) xy dz dr dx, which represents the volume of a solid in cylindrical coordinates.
+A) √3/8
+B) 1/4
+C) 1/2
+D) 3/4
+Correct Answer: A
+
+Solution:
+π ∫_0^1 ∫_0^√(1 - x^2) xy dz dr dx = √3/8
+
+Explanation:
+The integral represents the volume of a solid in cylindrical coordinates with r = √(1 - x^2). We can convert this to Cartesian coordinates by substituting x = r
+cos(θ) and y = r
+cos(θ), then integrating over the appropriate ranges for z, r, and θ. After simplifying, we get V = √3/8.
+
+Common mistake note:
+Common mistake is to integrate with respect to x and y directly without converting to cylindrical coordinates first. Remember that the integral is given in cylindrical coordinates, so it must be integrated accordingly.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the distance between the points (2, π/4, 1) and (3, π/6, 2) in cylindrical coordinates.
+A) √(5 + 2
+cos(π/12))
+B) √(5 - 2
+cos(π/12))
+C) √(5 + 2
+cos(π/6))
+D) √(5 - 2
+cos(π/6))
+Correct Answer: A
+
+Solution:
+d = √((r_2 - r_1)^2 + (z_2 - z_1)^2) = √(5 + 2
+cos(π/12))
+
+Explanation:
+The distance between two points in cylindrical coordinates is given by d = √((r_2 - r_1)^2 + (z_2 - z_1)^2). For the given points, we have r_1 = 2, r_2 = 3, z_1 = 1, and z_2 = 2. Substituting these values gives d = √(5 + 2
+cos(π/12))
+
+Common mistake note:
+Common mistake is to use the distance formula in Cartesian coordinates without considering the change of variables. Remember that cylindrical coordinates have a different distance formula.
+------------------------------------------------------------------------------

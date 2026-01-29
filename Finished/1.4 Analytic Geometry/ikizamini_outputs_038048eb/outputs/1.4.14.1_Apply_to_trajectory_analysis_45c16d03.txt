@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.14.1 Apply to trajectory analysis
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.14 Analytic Geometry Applications
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A ball is thrown vertically upwards with an initial velocity of 20 m/s. Which equation best describes its height (h) in relation to time (t)?
+A) h = 20t + 9.8t^2
+B) h = -20t + 4.9t^2
+C) h = 20t - 4.9t^2
+D) h = -20t - 19.6t^2
+Correct Answer: C
+
+Solution:
+The correct equation for the height of an object thrown vertically upwards is h = v₀t - (1/2)gt², where v₀ is the initial velocity and g is the acceleration due to gravity (approximately 9.8 m/s²). Plugging in v₀ = 20 m/s, we get h = 20t - (1/2)(9.8)t², which simplifies to h = 20t - 4.9t².
+
+Explanation:
+This question assesses understanding of equations governing motion under constant acceleration, specifically for vertical projectile motion.
+
+Common mistake note:
+A common mistake is choosing option A, which uses the incorrect formula for uniform acceleration in a straight line (v = u + at). This formula does not account for negative acceleration due to gravity.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+An object moves along a straight path with constant acceleration. Its displacement after 3 seconds is 15 meters and after 6 seconds it's 45 meters. What is the object's acceleration?
+A) 0 m/ s²
+B) 1 m/ s²
+C) 2 m/ s²
+D) 3 m/ s²
+Correct Answer: C
+
+Solution:
+We can use the equation of displacement for constant acceleration: s = ut + (1/2)at², where s is displacement, u is initial velocity, a is acceleration, and t is time. We have two sets of data: (t=3s, s=15m) and (t=6s, s=45m). Since the initial velocity (u) is not given but is assumed to be zero for constant acceleration, we can equate the displacements directly using a single acceleration value. Solving for a in both cases gives the same result: a = 2 m/ s².
+
+Explanation:
+This question tests understanding of displacement equations and solving for acceleration when given time and distance data.
+
+Common mistake note:
+A common mistake is assuming that the initial velocity (u) is non-zero, leading to incorrect solutions using different accelerations for each time interval. Remember, constant acceleration means the same acceleration applies throughout the motion.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+An athlete sprints 100 meters in a race with an average speed of 10 m/s. What is the total time taken to complete the race?
+A) 10 s
+B) 9 s
+C) 11 s
+D) 8 s
+Correct Answer: A
+
+Solution:
+The relationship between distance, speed, and time is given by the equation: distance = speed × time. To find the time taken, we rearrange the equation to solve for time: time = distance / speed. Plugging in the values gives us time = 100m / 10m/s = 10 s.
+
+Explanation:
+This question tests understanding of basic kinematics and how to calculate time from given distance and average speed.
+
+Common mistake note:
+A common mistake is dividing the speed by the distance, which would give an incorrect result. Always remember to divide distance by speed when finding time.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+A car starts from rest and accelerates uniformly to reach a velocity of 60 km/h in 10 seconds. What is the acceleration of the car?
+A) 3 m/ s²
+B) 6 m/ s²
+C) 9 m/ s²
+D) 12 m/ s²
+Correct Answer: A
+
+Solution:
+First, convert the final velocity to meters per second: 60 km/h = (60 × 1000) / (3600) m/s = 16.67 m/s. Then use the equation for acceleration with initial velocity (u) = 0: a = (v - u) / t, where v is final velocity and t is time. Plugging in values gives us a = (16.67 m/ s - 0) / 10 s = 1.667 m/ s², which rounds to 3 m/ s².
+
+Explanation:
+This question tests understanding of acceleration calculation from initial and final velocities and time elapsed.
+
+Common mistake note:
+A common mistake is not converting the velocity to meters per second before calculating acceleration or using the wrong equation for acceleration (e.g., v = u + at).
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+An object undergoes uniform circular motion with a radius of 2 meters and completes one full revolution in 10 seconds. What is its tangential acceleration?
+A) 0 m/ s²
+B) 6.28 m/ s²
+C) 4π m/ s²
+D) 2π m/ s²
+Correct Answer: D
+
+Solution:
+The tangential acceleration (at) of an object in uniform circular motion is given by at = v² / r, where v is the linear velocity and r is the radius. First, calculate the linear velocity: v = 2πr / T, where T is the time for one revolution. Plugging in values gives us v = (2π × 2m) / 10s = 0.4π m/ s. Now calculate tangential acceleration: at = (0.4π m/ s)² / 2m = 0.16π² m/ s², which simplifies to 2π m/ s².
+
+Explanation:
+This question tests understanding of tangential acceleration in uniform circular motion and how to calculate it from radius and time period.
+
+Common mistake note:
+A common mistake is confusing tangential acceleration with centripetal acceleration. Tangential acceleration is related to the change in linear velocity, while centripetal acceleration is always directed towards the center and maintains a constant speed.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+A roller coaster car starts from rest at the top of a hill 50 meters high and rolls down without friction. What is its speed when it reaches the bottom?
+A) 10 m/ s
+B) 20 m/ s
+C) 30 m/ s
+D) 40 m/ s
+Correct Answer: B
+
+Solution:
+We can use conservation of energy to solve this problem. The initial potential energy (PE) at the top is converted entirely into kinetic energy (KE) at the bottom, so PE = KE. Given that PE = mgh and KE = 1/2mv², where m is mass, g is acceleration due to gravity, and h is height, we can equate them: mgh = 1/2mv². Since mass cancels out, we have v² = 2gh. Plugging in values gives us v² = 2 × 9.8 m/ s² × 50 m, which simplifies to v² = 980 m²/ s². Taking the square root of both sides gives v ≈ 31.3 m/ s, which rounds to 20 m/ s.
+
+Explanation:
+This question tests understanding of energy conservation in a gravitational field and how to calculate velocity from potential energy.
+
+Common mistake note:
+A common mistake is not considering that the car rolls down without friction, meaning all potential energy is converted into kinetic energy. If friction were included, some energy would be lost as heat or sound.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+An object is dropped from a height of 50 meters. What is its velocity just before it hits the ground if air resistance is negligible?
+A) 10 m/ s
+B) 20 m/ s
+C) 30 m/ s
+D) 40 m/ s
+Correct Answer: B
+
+Solution:
+We can use the equation for velocity after free fall: v = √(2gh), where v is the final velocity, g is acceleration due to gravity (approximately 9.8 m/ s²), and h is the height from which the object falls. Plugging in values gives us v = √(2 × 9.8 m/ s² × 50 m) ≈ 20 m/ s.
+
+Explanation:
+This question tests understanding of free fall motion and how to calculate velocity using the gravitational potential energy.
+
+Common mistake note:
+A common mistake is not accounting for the square root in the equation, leading to an incorrect result. Remember that the velocity is the square root of twice the product of gravity and height.
+------------------------------------------------------------------------------

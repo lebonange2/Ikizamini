@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.11.14",
+  "objective_text": "Apply vector equations of lines",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "Find the equation of the line passing through points A(1, 2) and B(3, 5). Write it in vector form r = a + tb.",
+      "choices": {
+        "A": "[4, 3] + t[2, 3]",
+        "B": "[1, 2] + t[2, 3]",
+        "C": "[1, 2] + t[1, 3]",
+        "D": "[2, 3] + t[1, 2]"
+      },
+      "correct_choice": "B",
+      "solution": "The direction vector is the difference between the two points: B - A = (3-1, 5-2) = [2, 3]. The point A(1, 2) can be written as a position vector [1, 2]. Therefore, the equation of the line in vector form is r = [1, 2] + t[2, 3].",
+      "explanation": "The vector equation represents a line that passes through point A and has direction given by the displacement from A to B.",
+      "common_mistake_notes": "A common mistake is to mix up the position vector of one of the points with the direction vector. Choice A uses the wrong position vector, while choice C and D have swapped components in their direction vectors."
+    },
+    {
+      "id": "Xcv123",
+      "stem": "Find the intersection point between the lines given by r = [1, 0] + t[1, 2] and r = [2, -1] + s[-1, 1].",
+      "choices": {
+        "A": "[1, 1]",
+        "B": "[0, 0]",
+        "C": "[3/2, 1/2]",
+        "D": "No intersection"
+      },
+      "correct_choice": "C",
+      "solution": "To find the intersection point, we set the position vectors equal to each other: [1, 0] + t[1, 2] = [2, -1] + s[-1, 1]. Solving for t and s gives us t = 3/2 and s = 1/2. Plugging these values into either equation gives the intersection point r = [1, 0] + (3/2)[1, 2] = [3/2, 1/2].",
+      "explanation": "The intersection of two lines occurs when their position vectors are equal for some values of t and s.",
+      "common_mistake_notes": "A common mistake is to assume that the direction vectors must be parallel or perpendicular for there to be an intersection. In this case, they are neither, but the lines still intersect."
+    },
+    {
+      "id": "Zxc123",
+      "stem": "Find the equation of the line passing through the point P(2, -1) and parallel to the vector v = [3, 4]. Write it in vector form r = a + tb.",
+      "choices": {
+        "A": "[2, -1] + t[3, 4]",
+        "B": "[2, -1] + t[-3, -4]",
+        "C": "[0, 0] + t[3, 4]",
+        "D": "[5, 3] + t[3, 4]"
+      },
+      "correct_choice": "A",
+      "solution": "Since the line is parallel to vector v, its direction vector is [3, 4]. The position vector a can be any point on the line; we use P(2, -1) as our starting point. Therefore, the equation of the line in vector form is r = [2, -1] + t[3, 4].",
+      "explanation": "A line parallel to a given vector has the same direction vector, regardless of its position.",
+      "common_mistake_notes": "A common mistake is to use the wrong direction vector or to forget that any point on the line can be used as the starting position vector."
+    },
+    {
+      "id": "Sdf123",
+      "stem": "Find the distance between the line r = [1, 0] + t[1, 1] and the point Q(3, 4).",
+      "choices": {
+        "A": "sqrt(2)",
+        "B": "2",
+        "C": "sqrt(5)",
+        "D": "sqrt(10)"
+      },
+      "correct_choice": "A",
+      "solution": "The distance d between a line r = a + tb and a point Q(x, y) is given by the formula d = |(Q - a) × b| / ||b||. For our problem: d = |[(3-1, 4-0) × (1, 1)]| / sqrt(1^2 + 1^2). Calculating the cross product and simplifying gives us d = sqrt(2).",
+      "explanation": "The distance from a point to a line is found by finding the shortest perpendicular distance between them.",
+      "common_mistake_notes": "A common mistake is to use the dot product instead of the cross product in the formula, which would result in an incorrect answer."
+    },
+    {
+      "id": "Ghi123",
+      "stem": "Find the equation of the line passing through the origin and perpendicular to the vector w = [2, -3]. Write it in vector form r = a + tb.",
+      "choices": {
+        "A": "[0, 0] + t[2, -3]",
+        "B": "[0, 0] + t[-2/13, 3/13]",
+        "C": "[0, 0] + t[3, 2]",
+        "D": "[0, 0] + t[-3, 2]"
+      },
+      "correct_choice": "B",
+      "solution": "A line perpendicular to vector w has a direction vector that is the negative reciprocal of w. So, the direction vector is [-(-3/2), -(-2/3)] = [3/2, 2/3]. Since the line passes through the origin, the position vector a is [0, 0]. Therefore, the equation of the line in vector form is r = [0, 0] + t[3/2, 2/3].",
+      "explanation": "Lines perpendicular to each other have direction vectors that are negative reciprocals of one another.",
+      "common_mistake_notes": "A common mistake is to forget to take the negative reciprocal or to mix up the components when calculating it."
+    },
+    {
+      "id": "Jkl123",
+      "stem": "Find the equation of the line passing through the point R(-2, 5) and making a 45-degree angle with the positive x-axis in counterclockwise direction. Write it in vector form r = a + tb.",
+      "choices": {
+        "A": "[0, 0] + t[1, 1]",
+        "B": "[-2, 5] + t[1, 1]",
+        "C": "[0, 0] + t[-1, 1]",
+        "D": "[-2, 5] + t[-1, 1]"
+      },
+      "correct_choice": "B",
+      "solution": "A line making a 45-degree angle with the positive x-axis has a direction vector with equal components. Since it passes through R(-2, 5), the position vector a is [-2, 5]. Therefore, the equation of the line in vector form is r = [-2, 5] + t[1, 1].",
+      "explanation": "The angle between the x-axis and a line determines its direction vector; for a 45-degree angle, both components are equal.",
+      "common_mistake_notes": "A common mistake is to forget that the direction vector should be normalized or to use the wrong position vector."
+    },
+    {
+      "id": "Mno123",
+      "stem": "Find the equation of the line passing through the point S(4, -3) and parallel to the y-axis. Write it in vector form r = a + tb.",
+      "choices": {
+        "A": "[0, 0] + t[1, 0]",
+        "B": "[4, -3] + t[1, 0]",
+        "C": "[0, 0] + t[0, 1]",
+        "D": "[4, -3] + t[0, 1]"
+      },
+      "correct_choice": "D",
+      "solution": "A line parallel to the y-axis has a direction vector of [0, 1]. Since it passes through S(4, -3), the position vector a is [4, -3]. Therefore, the equation of the line in vector form is r = [4, -3] + t[0, 1].",
+      "explanation": "Lines parallel to an axis have direction vectors along that axis.",
+      "common_mistake_notes": "A common mistake is to use a direction vector with non-zero x-component or to forget that the position vector should be S(4, -3)."
+    }
+  ]
+}

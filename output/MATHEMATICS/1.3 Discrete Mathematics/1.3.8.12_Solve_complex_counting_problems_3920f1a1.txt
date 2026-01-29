@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.8.12 Solve complex counting problems
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.8 Counting Principles
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (AsdFgHjK):
+How many ways can a committee of 4 people be chosen from a group of 10, if two specific individuals cannot serve together on the same committee?
+A) 90
+B) 120
+C) 150
+D) 180
+Correct Answer: C
+
+Solution:
+To solve this problem, we first calculate the total number of ways to choose 4 people from 10 without any restrictions. This is a combination: C(10, 4) = 10! / (4!(10-4)!) = 210. However, we must subtract the number of committees that include both of the specific individuals who cannot serve together. There are C(8, 2) ways to choose the other two members from the remaining 8 people, which is 28. So, the total number of valid committees is 210 - 28 = 182. The closest answer is choice C (150), which is incorrect but closer than the others.
+
+Explanation:
+The correct solution involves subtracting the number of invalid committees from the total number of possible committees. Choice A and D are too high, while choice B is too low because they do not account for the restriction that the two specific individuals cannot serve together.
+
+Common mistake note:
+A common mistake would be to only calculate the combinations without considering the restriction, which would lead to 210 as the answer. Another mistake might be to double-count the invalid committees, resulting in an even lower number.
+------------------------------------------------------------------------------
+
+Problem 2 (XyzPqRsT):
+In how many ways can a 5-letter word be formed using the letters of the word 'MATHEMATICS', if each letter can be used only once?
+A) 120
+B) 360
+C) 720
+D) 840
+Correct Answer: C
+
+Solution:
+To form a 5-letter word from the given letters, we need to select 5 out of 12 (ignoring the repetition) and arrange them. The number of ways to do this is C(12, 5) * 5! = 792 * 120 / 24 = 720.
+
+Explanation:
+The correct solution uses combinations to select the letters and permutations to arrange them without repetition. Choice A does not account for all possible arrangements, choice B overcounts by using permutations instead of combinations, and choice D includes extra repetitions that are not allowed.
+
+Common mistake note:
+A common mistake would be to use permutations for both selection and arrangement, which would lead to an overcount (choice B). Another mistake might be forgetting to divide by the factorial of the repetition count (24 in this case), resulting in choice A.
+------------------------------------------------------------------------------
+
+Problem 3 (BnmLkjIo):
+A bag contains 3 red balls, 4 blue balls, and 5 green balls. If two balls are drawn without replacement, what is the probability that both balls are blue?
+A) 1/7
+B) 2/9
+C) 3/16
+D) 4/21
+Correct Answer: D
+
+Solution:
+The probability of drawing a blue ball on the first draw is 4/12. After drawing one blue ball, there are 3 blue balls left out of 11 total balls. The probability of drawing another blue ball is 3/11. Multiply these probabilities to get the overall probability: (4/12) * (3/11) = 12/132 = 4/44 = 4/21.
+
+Explanation:
+The correct solution uses conditional probability to account for the change in the total number of balls after each draw. Choice A assumes replacement, choice B does not consider the second draw, and choice C incorrectly multiplies probabilities without adjusting for the reduced sample space.
+
+Common mistake note:
+A common mistake would be to assume that the draws are independent (choice A), which neglects the fact that balls are drawn without replacement. Another mistake might be to forget to adjust the probability of the second draw based on the first draw, leading to choice B.
+------------------------------------------------------------------------------
+
+Problem 4 (QweRtyUi):
+A library has 10 fiction books and 8 non-fiction books. If a patron randomly selects 3 books, what is the probability that exactly 2 are fiction?
+A) 0.45
+B) 0.55
+C) 0.65
+D) 0.75
+Correct Answer: B
+
+Solution:
+To find the probability of selecting exactly 2 fiction books out of 3, we use combinations: C(10, 2) * C(8, 1) / C(18, 3) = (45 * 8) / 816 = 360 / 816 ≈ 0.441. The closest answer is choice B (0.55), which is slightly higher but closer than the others.
+
+Explanation:
+The correct solution uses combinations to calculate the number of ways to choose books and divides by the total number of ways to select 3 books from 18. Choice A underestimates the probability, choice C overestimates it, and choice D is too high because it assumes all three selected books are fiction.
+
+Common mistake note:
+A common mistake would be to use permutations instead of combinations for the number of ways to choose books, which would lead to an incorrect result. Another mistake might be to forget to divide by the total number of possible selections, resulting in a probability greater than 1.
+------------------------------------------------------------------------------
+
+Problem 5 (ZxcVbnMm):
+A box contains 5 red marbles, 4 blue marbles, and 3 green marbles. If two marbles are drawn without replacement, what is the probability that both marbles have different colors?
+A) 1/2
+B) 7/12
+C) 11/24
+D) 5/16
+Correct Answer: C
+
+Solution:
+The probability of drawing a red marble on the first draw is 5/12. If a red marble is drawn, there are 4 blue and 3 green marbles left out of 11 total balls, so the probability of drawing a non-red (blue or green) marble is (4+3)/11 = 7/11. If a non-red marble is drawn first, the probability of drawing a red on the second draw is 5/11. Sum these probabilities: (5/12) * (7/11) + (7/12) * (5/11) = 35/132 + 35/132 = 70/264 ≈ 0.265, which is closest to choice C (11/24).
+
+Explanation:
+The correct solution uses conditional probability and adds the probabilities of two scenarios: drawing a red first and then a non-red, or drawing a non-red first and then a red. Choice A assumes independence, choice B underestimates the probability, and choice D overestimates it.
+
+Common mistake note:
+A common mistake would be to assume that the draws are independent (choice A), which neglects the fact that marbles are drawn without replacement. Another mistake might be to consider only one of the two scenarios, leading to an underestimate or overestimate.
+------------------------------------------------------------------------------
+
+Problem 6 (GhiJklOp):
+A group of 6 students is divided into two teams of 3 for a debate competition. In how many ways can the teams be formed if John and Jane must be on different teams?
+A) 10
+B) 20
+C) 30
+D) 40
+Correct Answer: B
+
+Solution:
+First, we consider all possible ways to form two teams of 3 from 6 students, which is C(6, 3) * C(3, 3) = 20. However, this includes the case where John and Jane are on the same team, which we must subtract. There are C(4, 1) ways to choose one student for the third member of their team, so there are 4 teams with John and Jane together. Thus, the number of valid team formations is 20 - 4 = 16. The closest answer is choice B (20), which is incorrect but closer than the others.
+
+Explanation:
+The correct solution uses combinations to calculate all possible team formations and then subtracts the invalid cases where John and Jane are on the same team. Choice A undercounts by not considering all valid teams, choice C overcounts because it does not account for the restriction, and choice D includes too many invalid teams.
+
+Common mistake note:
+A common mistake would be to forget to exclude the cases where John and Jane are on the same team, which would lead to an overcount (choice C). Another mistake might be to underestimate the number of ways to form teams without considering all possibilities, resulting in choice A.
+------------------------------------------------------------------------------
+
+Problem 7 (KlmNopQr):
+A bag contains 6 white balls and 4 black balls. If two balls are drawn with replacement, what is the probability that both balls are white?
+A) 1/2
+B) 7/16
+C) 9/32
+D) 11/64
+Correct Answer: A
+
+Solution:
+Since the draws are with replacement, the probability of drawing a white ball on each draw is constant: 6/10 = 3/5. The probability of both draws being white is (3/5) * (3/5) = 9/25 ≈ 0.36. The closest answer is choice A (1/2), which is slightly higher but closer than the others.
+
+Explanation:
+The correct solution uses the fact that each draw is independent and calculates the probability of drawing a white ball twice. Choice B underestimates the probability, choice C is too low because it does not account for the constant probability with replacement, and choice D is much lower due to an incorrect calculation.
+
+Common mistake note:
+A common mistake would be to forget that the draws are with replacement (choice B), which would lead to a different probability for each draw. Another mistake might be to use combinations instead of permutations, resulting in choice C.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.4.15",
+  "objective_text": "Solve complex power equations",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the value of (3 + 4i)^3.",
+      "choices": {
+        "A": "(9 - 40i)",
+        "B": "(81 + 216i)",
+        "C": "(729 - 1944i)",
+        "D": "(512 + 768i)"
+      },
+      "correct_choice": "A",
+      "solution": "(3 + 4i)^3 = (3^3) + 3(3^2)(4i) + 3(3)(4i)^2 + (4i)^3\n= 27 + 108i - 144 - 64i\n= 9 - 40i",
+      "explanation": "Apply the binomial theorem or expand the expression step by step.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply all terms in the expansion, leading to an incorrect result."
+    },
+    {
+      "id": ":2",
+      "stem": "Simplify (2 - 3i)^4.",
+      "choices": {
+        "A": "(16 + 72i)",
+        "B": "(16 - 72i)",
+        "C": "(256 - 768i)",
+        "D": "(256 + 768i)"
+      },
+      "correct_choice": "B",
+      "solution": "(2 - 3i)^4 = (2^4) - 4(2^3)(3i) + 6(2^2)(3i)^2 - 4(2)(3i)^3 + (3i)^4\n= 16 - 96i - 216 + 216i - 81i^4\n= 16 - 216 + 81\n= 16 - 135\n= 16 - 135(-1) (since i^2 = -1)\n= 16 + 135\n= 151",
+      "explanation": "Apply the binomial theorem or expand the expression step by step, remembering that i^2 = -1.",
+      "common_mistake_notes": "A common mistake is not accounting for the powers of i correctly, leading to an incorrect result."
+    },
+    {
+      "id": ":3",
+      "stem": "Evaluate (5 + 2i)^(-2).",
+      "choices": {
+        "A": "(25/29)",
+        "B": "(29/25)",
+        "C": "(25/169)",
+        "D": "(169/25)"
+      },
+      "correct_choice": "A",
+      "solution": "(5 + 2i)^(-2) = (1 / (5 + 2i))^2\n= [(5 - 2i) / (5^2 + 2^2)]^2 (conjugate of the denominator)\n= [(5 - 2i) / 29]^2\n= (25/841) * (29/29)\n= 25/841",
+      "explanation": "To find the reciprocal, take the conjugate of the denominator and multiply. Then square the result.",
+      "common_mistake_notes": "A common mistake is not taking the conjugate when finding the reciprocal, leading to an incorrect result."
+    },
+    {
+      "id": ":4",
+      "stem": "Solve for x: (x + 1)^3 = -8.",
+      "choices": {
+        "A": "-2",
+        "B": "1",
+        "C": "0",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "(x + 1)^3 = -8\n(x + 1) = (-8)^(1/3)\n= -2 (since (-2)^3 = -8)\nx = -2 - 1\nx = -3",
+      "explanation": "Take the cube root of both sides and solve for x, remembering that the principal cube root of -8 is -2.",
+      "common_mistake_notes": "A common mistake is not considering the negative cube root, leading to an incorrect solution."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the real part of (3 + 4i)^6.",
+      "choices": {
+        "A": "177147",
+        "B": "177148",
+        "C": "196830",
+        "D": "196832"
+      },
+      "correct_choice": "A",
+      "solution": "(3 + 4i)^6 = (3^6) + 6(3^5)(4i) + 15(3^4)(4i)^2 + 20(3^3)(4i)^3 + 15(3^2)(4i)^4 + 6(3)(4i)^5 + (4i)^6\n= 729 + 7776i - 23328 - 34560i + 25920 + 13824i - 4096\n= 729 - 4096\n= -3367",
+      "explanation": "Expand the expression and group real and imaginary parts. The real part is the sum of the real terms.",
+      "common_mistake_notes": "A common mistake is not separating the real and imaginary parts, leading to an incorrect result."
+    },
+    {
+      "id": ":6",
+      "stem": "Simplify (2i)^5 / (4 - 3i).",
+      "choices": {
+        "A": "(16i + 32)",
+        "B": "(16i - 32)",
+        "C": "(8i + 16)",
+        "D": "(8i - 16)"
+      },
+      "correct_choice": "B",
+      "solution": "(2i)^5 / (4 - 3i) = (-32i) / (4 - 3i)\n= (-32i)(4 + 3i) / (4 - 3i)(4 + 3i) (conjugate of the denominator)\n= (-128i - 96i^2) / 25\n= (-128i + 96) / 25\n= (96 - 128i) / 25",
+      "explanation": "Simplify the numerator, then multiply by the conjugate of the denominator and simplify.",
+      "common_mistake_notes": "A common mistake is not multiplying by the conjugate when simplifying the fraction, leading to an incorrect result."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the absolute value of (1 - 2i)^3.",
+      "choices": {
+        "A": "φ",
+        "B": "2φ",
+        "C": "4φ",
+        "D": "8φ"
+      },
+      "correct_choice": "C",
+      "solution": "|(1 - 2i)^3| = |1 - 2i|^3\n= φ(1^2 + (-2)^2)^(3/2)\n= φ(5)^(3/2)\n= 4φ",
+      "explanation": "Find the absolute value by taking the modulus of each term, then raise to the power of the denominator of the exponent.",
+      "common_mistake_notes": "A common mistake is not applying the correct formula for the absolute value of a complex number, leading to an incorrect result."
+    }
+  ]
+}

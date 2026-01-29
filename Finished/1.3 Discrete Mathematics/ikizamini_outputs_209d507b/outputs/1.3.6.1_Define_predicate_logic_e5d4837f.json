@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.6.1",
+  "objective_text": "Define predicate logic",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "1",
+      "stem": "What is the primary purpose of predicate logic?",
+      "choices": {
+        "A": "To express relationships between sets.",
+        "B": "To prove the truth or falsehood of mathematical statements.",
+        "C": "To model complex systems in computer science.",
+        "D": "To represent and reason about knowledge in artificial intelligence."
+      },
+      "correct_choice": "B",
+      "solution": "Predicate logic is a formal system used to express and reason about propositions (statements that can be either true or false) and their relationships. It allows for the representation of relationships between objects, properties, and quantification over them. Option B accurately describes its primary purpose in mathematical reasoning.",
+      "explanation": "Option A refers to set theory, not predicate logic. Option C is related to model checking but not the main focus of predicate logic. Option D touches on an application of predicate logic in AI, but it is broader than the core concept.",
+      "common_mistake_notes": "Common mistake: Choosing option A or C, which are related fields but not the primary purpose of predicate logic."
+    },
+    {
+      "id": "2",
+      "stem": "In predicate logic, what symbol represents a variable that can stand for any object?",
+      "choices": {
+        "A": "!",
+        "B": "?",
+        "C": "&",
+        "D": "∀"
+      },
+      "correct_choice": "B",
+      "solution": "In predicate logic, the question mark (?) is used to represent a variable that can take on any value or stand for any object within the domain of discourse. This allows for quantification and general statements.",
+      "explanation": "Option A represents negation, option C is commonly used for conjunction in other contexts, and option D stands for universal quantifier, which applies to all objects in the domain.",
+      "common_mistake_notes": "Common mistake: Choosing option D, which is a quantifier rather than a variable placeholder."
+    },
+    {
+      "id": "3",
+      "stem": "What does the symbol ∀ mean in predicate logic?",
+      "choices": {
+        "A": "Existential quantification",
+        "B": "Universal quantification",
+        "C": "Conjunction",
+        "D": "Implication"
+      },
+      "correct_choice": "B",
+      "solution": "The symbol ∀ (read as 'for all') is used in predicate logic to express universal quantification, indicating that a proposition holds for every element in the domain of discourse.",
+      "explanation": "Option A refers to ∃ (existential quantifier), option C represents conjunction (and), and option D stands for implication (if...then).",
+      "common_mistake_notes": "Common mistake: Choosing option A, which is a different type of quantification."
+    },
+    {
+      "id": "4",
+      "stem": "Which of the following is an example of a simple predicate in predicate logic?",
+      "choices": {
+        "A": "x + y = z",
+        "B": "John is happy",
+        "C": "The cat sat on the mat",
+        "D": "All dogs are mammals"
+      },
+      "correct_choice": "B",
+      "solution": "A simple predicate in predicate logic is a statement that attributes a property or relation to a single subject. Option B, 'John is happy,' is an example of a simple predicate.",
+      "explanation": "Option A is an equation, not a predicate; option C is a sentence but not a formal predicate; and option D is a quantified proposition with multiple terms.",
+      "common_mistake_notes": "Common mistake: Choosing option C, which is a sentence but not a simple predicate."
+    },
+    {
+      "id": "5",
+      "stem": "In a predicate logic formula, what role does the subject play?",
+      "choices": {
+        "A": "It represents a specific value or object within the domain of discourse.",
+        "B": "It combines multiple predicates to form a compound statement.",
+        "C": "It connects the predicate with quantifiers to express relationships.",
+        "D": "It specifies the logical operation to be performed on propositions."
+      },
+      "correct_choice": "A",
+      "solution": "The subject in a predicate logic formula is a variable or constant that represents a specific value or object within the domain of discourse to which the predicate applies.",
+      "explanation": "Option B refers to conjunction or other logical operations, option C is related to quantifiers, and option D is about logical connectives like 'and' or 'or.'",
+      "common_mistake_notes": "Common mistake: Choosing option C, which混淆了quantifiers和subject的作用。"
+    },
+    {
+      "id": "6",
+      "stem": "What is the difference between a predicate logic formula and a propositional logic formula?",
+      "choices": {
+        "A": "Predicate logic formulas use quantifiers, while propositional logic does not.",
+        "B": "Predicate logic deals with truth values, whereas propositional logic focuses on relationships between variables.",
+        "C": "Propositional logic is more expressive than predicate logic in modeling complex systems.",
+        "D": "Predicate logic uses functions, while propositional logic only uses constants and variables."
+      },
+      "correct_choice": "A",
+      "solution": "The primary difference between predicate logic formulas and propositional logic formulas is that predicate logic uses quantifiers (∀, ∃) to express relationships over a domain of discourse, whereas propositional logic deals with truth values of propositions without quantification.",
+      "explanation": "Option B is incorrect because both propositional and predicate logic deal with truth values. Option C is not accurate as both can model complex systems; the difference lies in their scope. Option D混淆了functions和predicates的概念，它们在两种逻辑中都可以使用。",
+      "common_mistake_notes": "Common mistake: Choosing option D, which混淆了functions和predicates的作用。"
+    },
+    {
+      "id": "7",
+      "stem": "Which of the following is an example of a quantified predicate in predicate logic?",
+      "choices": {
+        "A": "x > 0",
+        "B": "Some dogs are friendly",
+        "C": "The sky is blue",
+        "D": "All cats meow"
+      },
+      "correct_choice": "B",
+      "solution": "A quantified predicate in predicate logic includes a quantifier (∀ or ∃) that applies the predicate to all or some elements of the domain. Option B, 'Some dogs are friendly,' is an example of a quantified predicate.",
+      "explanation": "Option A is an inequality, not a quantified predicate; option C is a simple statement without quantification; and option D uses a universal quantifier but not in the correct format for this question (it should be '∀ cats, cat meows').",
+      "common_mistake_notes": "Common mistake: Choosing option D, which虽然是一个quantified proposition，但格式不符合问题要求。"
+    }
+  ]
+}

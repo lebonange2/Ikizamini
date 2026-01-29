@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.9.1 Convert (x,y) to (r,θ)
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.9 Polar Coordinate Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Convert the point (3, 4) in Cartesian coordinates to polar coordinates (r, θ). Round to two decimal places.
+A) (5.00, 0.93)
+B) (7.00, 0.62)
+C) (5.00, 1.25)
+D) (7.00, 1.41)
+Correct Answer: A
+
+Solution:
+The formula to convert from Cartesian coordinates (x, y) to polar coordinates (r, θ) is r = √(x² + y²) and θ = arctan(y/x). For the point (3, 4), we calculate: r ≈ 5.00 and θ ≈ 0.93 radians. So the polar coordinates are approximately (5.00, 0.93).
+
+Explanation:
+The conversion from Cartesian to polar coordinates involves finding the distance (r) from the origin and the angle (θ) with respect to the positive x-axis.
+
+Common mistake note:
+A common mistake is to forget to convert θ from radians to degrees, which would result in choice B. Another mistake might be using the wrong order of the coordinates when calculating arctan.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+Convert the point (-4, 3) in Cartesian coordinates to polar coordinates (r, θ). Round to two decimal places.
+A) (5.00, 2.67)
+B) (7.00, 2.18)
+C) (5.00, 3.14)
+D) (7.00, 1.81)
+Correct Answer: A
+
+Solution:
+The formula to convert from Cartesian coordinates (x, y) to polar coordinates (r, θ) is r = √(x² + y²) and θ = arctan(y/x). For the point (-4, 3), we calculate: r ≈ 5.00 and θ ≈ 2.67 radians. So the polar coordinates are approximately (5.00, 2.67).
+
+Explanation:
+When x is negative and y is positive, the point lies in the second quadrant, so we need to find the angle that's coterminal with arctan(y/x) but in the range [0, 2π].
+
+Common mistake note:
+A common mistake is to forget to adjust the angle for the quadrant, which would result in choice D. Another mistake might be using the wrong sign for y when calculating arctan.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer):
+Convert the point (0, 5) in Cartesian coordinates to polar coordinates (r, θ). Round to two decimal places.
+A) (5.00, 1.57)
+B) (7.00, 2.36)
+C) (5.00, 0.00)
+D) (7.00, 3.14)
+Correct Answer: C
+
+Solution:
+The formula to convert from Cartesian coordinates (x, y) to polar coordinates (r, θ) is r = √(x² + y²) and θ = arctan(y/x). For the point (0, 5), we calculate: r = 5.00 and θ = π or 180°. So the polar coordinates are (5.00, 0.00) in radians. However, it's important to note that θ can also be expressed as π or any other equivalent angle like 2π - π.
+
+Explanation:
+When x is zero, arctan(y/x) is undefined because of division by zero. In this case, the point lies on the positive y-axis, so θ is π (or 180°).
+
+Common mistake note:
+A common mistake is to choose an angle that's not coterminal with π, like choice A or D, which would result in a different quadrant. Another mistake might be forgetting to consider the special case when x=0.
+------------------------------------------------------------------------------
+
+Problem 4 (Yuiop):
+Convert the point (-5, 0) in Cartesian coordinates to polar coordinates (r, θ). Round to two decimal places.
+A) (5.00, 3.14)
+B) (7.00, 2.36)
+C) (5.00, 1.57)
+D) (7.00, 0.00)
+Correct Answer: A
+
+Solution:
+The formula to convert from Cartesian coordinates (x, y) to polar coordinates (r, θ) is r = √(x² + y²) and θ = arctan(y/x). For the point (-5, 0), we calculate: r = 5.00 and θ = -π or -180°. So the polar coordinates are (5.00, -π) or (5.00, -180°), which can be expressed as (5.00, 3.14) in radians. However, it's important to note that θ can also be expressed as -π or any other equivalent angle like 2π + π.
+
+Explanation:
+When y is zero, arctan(y/x) is undefined because of division by zero. In this case, the point lies on the negative x-axis, so θ is -π (or -180°).
+
+Common mistake note:
+A common mistake is to choose an angle that's not coterminal with -π, like choice B or C, which would result in a different quadrant. Another mistake might be forgetting to consider the special case when y=0.
+------------------------------------------------------------------------------
+
+Problem 5 (Bvnmm):
+Convert the point (4√3, 4) in Cartesian coordinates to polar coordinates (r, θ). Round to two decimal places.
+A) (8.00, 1.25)
+B) (11.00, 0.62)
+C) (8.00, 0.93)
+D) (11.00, 1.41)
+Correct Answer: C
+
+Solution:
+The formula to convert from Cartesian coordinates (x, y) to polar coordinates (r, θ) is r = √(x² + y²) and θ = arctan(y/x). For the point (4√3, 4), we calculate: r ≈ 8.00 and θ ≈ 0.93 radians. So the polar coordinates are approximately (8.00, 0.93).
+
+Explanation:
+This problem involves a point with irrational coordinates. The conversion process remains the same as for other points.
+
+Common mistake note:
+A common mistake is to forget to simplify the fraction inside arctan or make an error in calculating the square root, which would result in choices B, D, or A.
+------------------------------------------------------------------------------
+
+Problem 6 (Xcvbn):
+Convert the point (5√2, -5) in Cartesian coordinates to polar coordinates (r, θ). Round to two decimal places.
+A) (10.00, 2.67)
+B) (15.00, 2.18)
+C) (10.00, 3.14)
+D) (15.00, 1.81)
+Correct Answer: A
+
+Solution:
+The formula to convert from Cartesian coordinates (x, y) to polar coordinates (r, θ) is r = √(x² + y²) and θ = arctan(y/x). For the point (5√2, -5), we calculate: r ≈ 10.00 and θ ≈ 2.67 radians. So the polar coordinates are approximately (10.00, 2.67).
+
+Explanation:
+This problem involves a point with irrational coordinates and lies in the third quadrant, so we need to find the angle that's coterminal with arctan(y/x) but in the range [0, 2π].
+
+Common mistake note:
+A common mistake is to forget to adjust the angle for the quadrant or simplify the fraction inside arctan, which would result in choices C, D, or B. Another mistake might be using the wrong sign for y when calculating arctan.
+------------------------------------------------------------------------------
+
+Problem 7 (Qwerty):
+Convert the point (-4√2, 4) in Cartesian coordinates to polar coordinates (r, θ). Round to two decimal places.
+A) (6.00, 1.81)
+B) (8.00, 2.36)
+C) (6.00, 2.18)
+D) (8.00, 1.57)
+Correct Answer: A
+
+Solution:
+The formula to convert from Cartesian coordinates (x, y) to polar coordinates (r, θ) is r = √(x² + y²) and θ = arctan(y/x). For the point (-4√2, 4), we calculate: r ≈ 6.00 and θ ≈ 1.81 radians. So the polar coordinates are approximately (6.00, 1.81).
+
+Explanation:
+This problem involves a point with irrational coordinates and lies in the fourth quadrant, so we need to find the angle that's coterminal with arctan(y/x) but in the range [0, 2π].
+
+Common mistake note:
+A common mistake is to forget to adjust the angle for the quadrant or simplify the fraction inside arctan, which would result in choices B, C, or D. Another mistake might be using the wrong sign for y when calculating arctan.
+------------------------------------------------------------------------------

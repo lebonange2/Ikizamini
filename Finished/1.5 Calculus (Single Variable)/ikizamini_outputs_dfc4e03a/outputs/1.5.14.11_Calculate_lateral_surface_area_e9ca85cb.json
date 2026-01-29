@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.14.11",
+  "objective_text": "Calculate lateral surface area",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the lateral surface area of a cylinder with radius 5 cm and height 10 cm.",
+      "choices": {
+        "A": "25π cm²",
+        "B": "50π cm²",
+        "C": "75π cm²",
+        "D": "100π cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The lateral surface area of a cylinder is given by the formula 2πrh, where r is the radius and h is the height. Plugging in the values for this problem: LSA = 2π(5)(10) = 100π cm². The correct answer is B.",
+      "explanation": "The lateral surface area (LSA) formula was correctly applied to find the area.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply by 2π, resulting in choice A (25π cm²). Another possible error is not multiplying radius and height together, leading to choice C (75π cm²)."
+    },
+    {
+      "id": "2",
+      "stem": "What is the lateral surface area of a cone with radius 3 m and slant height 5 m?",
+      "choices": {
+        "A": "15π m²",
+        "B": "45π m²",
+        "C": "75π m²",
+        "D": "90π m²"
+      },
+      "correct_choice": "A",
+      "solution": "The lateral surface area of a cone is given by the formula πrl, where r is the radius and l is the slant height. Plugging in the values for this problem: LSA = π(3)(5) = 15π m². The correct answer is A.",
+      "explanation": "The lateral surface area (LSA) formula was correctly applied to find the area.",
+      "common_mistake_notes": "A common mistake would be to use the cylinder's formula, which includes multiplying by 2π, resulting in choice D (90π m²). Another possible error is not using the slant height instead of the height, leading to an incorrect calculation."
+    },
+    {
+      "id": "3",
+      "stem": "Find the lateral surface area of a rectangular prism with length 8 cm, width 4 cm, and height 6 cm.",
+      "choices": {
+        "A": "96 cm²",
+        "B": "128 cm²",
+        "C": "192 cm²",
+        "D": "256 cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The lateral surface area of a rectangular prism is the sum of the areas of its four non-base faces. For this problem, two sides have an area of 8 x 4 = 32 cm² each, and the other two sides have an area of 4 x 6 = 24 cm² each. Total LSA = 2(32) + 2(24) = 96 cm². The correct answer is A.",
+      "explanation": "The lateral surface area (LSA) was correctly calculated by summing the areas of the non-base faces.",
+      "common_mistake_notes": "A common mistake would be to include the area of the two base faces, which are not part of the lateral surface. Another possible error is multiplying all dimensions together instead of finding the area of each pair of sides."
+    },
+    {
+      "id": "4",
+      "stem": "Calculate the lateral surface area of a triangular prism with base length 6 in, height 8 in, and slant height 10 in.",
+      "choices": {
+        "A": "96 in²",
+        "B": "120 in²",
+        "C": "192 in²",
+        "D": "240 in²"
+      },
+      "correct_choice": "B",
+      "solution": "The lateral surface area of a triangular prism is the sum of the areas of its three rectangular faces. Each face has an area of 1/2 base x height, so for this problem: LSA = 1/2(6)(8) + 1/2(6)(10) + 1/2(8)(10) = 48 + 30 + 40 = 120 in². The correct answer is B.",
+      "explanation": "The lateral surface area (LSA) was correctly calculated by summing the areas of the three rectangular faces.",
+      "common_mistake_notes": "A common mistake would be to forget that each triangular face has a base and height, not just the base length given. Another possible error is using the wrong slant height in the calculation."
+    },
+    {
+      "id": "5",
+      "stem": "Find the lateral surface area of a sphere with radius 7 m.",
+      "choices": {
+        "A": "98π m²",
+        "B": "154π m²",
+        "C": "210π m²",
+        "D": "254π m²"
+      },
+      "correct_choice": "B",
+      "solution": "The lateral surface area of a sphere is the same as its total surface area, which is given by the formula 4πr². Plugging in the value for this problem: LSA = 4π(7)² = 196π m². The correct answer is B.",
+      "explanation": "The lateral surface area (LSA) was correctly calculated using the total surface area formula, as a sphere has no distinct lateral faces.",
+      "common_mistake_notes": "A common mistake would be to try to use the lateral surface area formula for a cylinder or cone, which are not applicable to spheres. Another possible error is forgetting to square the radius in the calculation."
+    },
+    {
+      "id": "6",
+      "stem": "Calculate the lateral surface area of a pentagonal prism with base side length 9 cm and height 12 cm.",
+      "choices": {
+        "A": "135π cm²",
+        "B": "270π cm²",
+        "C": "405π cm²",
+        "D": "540π cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The lateral surface area of a pentagonal prism is the sum of the areas of its five rectangular faces. Each face has an area of base x height, so for this problem: LSA = 9 x 12 * 5 = 540 cm². The correct answer is B.",
+      "explanation": "The lateral surface area (LSA) was correctly calculated by summing the areas of the five rectangular faces.",
+      "common_mistake_notes": "A common mistake would be to forget that each face has a height, not just the base side length given. Another possible error is using the wrong number of sides in the calculation."
+    },
+    {
+      "id": "7",
+      "stem": "Find the lateral surface area of a hexagonal prism with base side length 5 cm and height 10 cm.",
+      "choices": {
+        "A": "150π cm²",
+        "B": "300π cm²",
+        "C": "450π cm²",
+        "D": "600π cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The lateral surface area of a hexagonal prism is the sum of the areas of its six rectangular faces. Each face has an area of base x height, so for this problem: LSA = 5 x 10 * 6 = 300 cm². The correct answer is A.",
+      "explanation": "The lateral surface area (LSA) was correctly calculated by summing the areas of the six rectangular faces.",
+      "common_mistake_notes": "A common mistake would be to forget that each face has a height, not just the base side length given. Another possible error is using the wrong number of sides in the calculation."
+    }
+  ]
+}

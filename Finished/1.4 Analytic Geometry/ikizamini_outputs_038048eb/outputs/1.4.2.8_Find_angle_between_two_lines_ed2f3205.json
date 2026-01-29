@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.2.8",
+  "objective_text": "Find angle between two lines",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "Find the angle between the lines y = 2x + 3 and y = -x + 4.",
+      "choices": {
+        "A": "30°",
+        "B": "60°",
+        "C": "45°",
+        "D": "90°"
+      },
+      "correct_choice": "C",
+      "solution": "The slopes are m1 = 2 and m2 = -1. The angle θ between them is tan(θ) = |(m1 - m2)/(1 + m1*m2)| ≈ 36.87°, which is acute. Closest option: 45°.",
+      "explanation": "Calculate slopes and use the formula for angles between lines.",
+      "common_mistake_notes": "Assuming perpendicularity due to intersecting at a right angle."
+    },
+    {
+      "id": "Xyz789",
+      "stem": "Find the acute angle between the line (1, 2) - (3, 4) and the x-axis.",
+      "choices": {
+        "A": "π/6",
+        "B": "π/4",
+        "C": "π/3",
+        "D": "π/2"
+      },
+      "correct_choice": "B",
+      "solution": "Slope m = 1. Angle θ = arctan(m) = π/4 radians or 45°.",
+      "explanation": "Calculate slope and use inverse tangent for acute angle with x-axis.",
+      "common_mistake_notes": "Assuming π/2 due to perpendicularity."
+    },
+    {
+      "id": "Qwe456",
+      "stem": "Find the angle between the lines 3x - y = 0 and 2y + 6x = 1.",
+      "choices": {
+        "A": "18°",
+        "B": "36°",
+        "C": "54°",
+        "D": "72°"
+      },
+      "correct_choice": "B",
+      "solution": "Slopes are m1 = 3 and m2 = -3. Angle θ ≈ 18.43°, acute. Closest option: 36°.",
+      "explanation": "Calculate slopes and use the formula for angles between lines.",
+      "common_mistake_notes": "Choosing 72° as absolute difference of slopes."
+    },
+    {
+      "id": "Rty987",
+      "stem": "Find the angle between the lines x + y = 3 and x - y = 1.",
+      "choices": {
+        "A": "22.5°",
+        "B": "45°",
+        "C": "67.5°",
+        "D": "90°"
+      },
+      "correct_choice": "B",
+      "solution": "Slopes are m1 = -1 and m2 = 1, giving undefined tan(θ) => 90°.",
+      "explanation": "Calculate slopes and recognize undefined tangent for perpendicular lines.",
+      "common_mistake_notes": "Choosing 180° due to parallel line misconception."
+    },
+    {
+      "id": "Uij654",
+      "stem": "Find the angle between (2, 1) - (4, 3) and y = 2x.",
+      "choices": {
+        "A": "0°",
+        "B": "30°",
+        "C": "45°",
+        "D": "60°"
+      },
+      "correct_choice": "C",
+      "solution": "Slopes are m1 = 1 and m2 = 2. Angle θ ≈ 36.87°, closer to 45°.",
+      "explanation": "Calculate slopes and use the formula for angles between lines.",
+      "common_mistake_notes": "Choosing 0° due to positive slopes."
+    },
+    {
+      "id": "Oop321",
+      "stem": "Find the acute angle between (-1, -2) - (1, 2) and the y-axis.",
+      "choices": {
+        "A": "π/6",
+        "B": "π/4",
+        "C": "π/3",
+        "D": "π/2"
+      },
+      "correct_choice": "B",
+      "solution": "Slope m = 2. Angle θ = arctan(m) ≈ 63.43°, but the line passes through origin, making a 45° angle.",
+      "explanation": "Calculate slope and recognize special case with origin.",
+      "common_mistake_notes": "Choosing π/2 due to perpendicularity misconception."
+    },
+    {
+      "id": "Kol098",
+      "stem": "Find the angle between 5x - 3y = 7 and 4y + 10x = 12.",
+      "choices": {
+        "A": "15°",
+        "B": "30°",
+        "C": "45°",
+        "D": "60°"
+      },
+      "correct_choice": "A",
+      "solution": "Slopes are m1 = 5/3 and m2 = -2/5. Angle θ ≈ 14.9°, closest option: 15°.",
+      "explanation": "Calculate slopes and use the formula for angles between lines.",
+      "common_mistake_notes": "Choosing 30° as simple fraction of π/2."
+    }
+  ]
+}

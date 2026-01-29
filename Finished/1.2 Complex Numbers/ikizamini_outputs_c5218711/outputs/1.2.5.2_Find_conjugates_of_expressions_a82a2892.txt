@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.5.2 Find conjugates of expressions
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.5 Complex Conjugates and Properties
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the conjugate of the complex number 3 + 4i?
+A) 3 - 4i
+B) -3 + 4i
+C) -3 - 4i
+D) 4 + 3i
+Correct Answer: A
+
+Solution:
+The conjugate of a complex number a + bi is found by changing the sign of the imaginary part. So, for the number 3 + 4i, the conjugate is 3 - 4i.
+
+Explanation:
+Conjugates are used in operations involving complex numbers, such as rationalizing denominators.
+
+Common mistake note:
+A common mistake would be to switch both parts of the complex number (e.g., -3 + 4i), but that's not the conjugate; it's just reversing the sign of the real part and keeping the imaginary part unchanged.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the conjugate of (-2 + 5i)(6 - 7i).
+A) -12 + 29i
+B) 12 - 29i
+C) 47 - 8i
+D) 47 + 8i
+Correct Answer: B
+
+Solution:
+First, multiply the binomials: (-2 + 5i)(6 - 7i) = -12 + 30i + 35i^2. Since i^2 = -1, we have -12 + 30i - 35(-1) = -12 + 30i + 35 = 23 + 30i. Now find the conjugate of this result: 23 - 30i.
+
+Explanation:
+When finding the conjugate of a product, you need to conjugate each term separately and then multiply them again.
+
+Common mistake note:
+A common mistake would be to simply conjugate one factor and not both (e.g., (-2 + 5i)(6 + 7i)), but that's not correct; you must conjugate both factors.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+What is the conjugate of the fraction rac{1 + 3i}{4 - 2i}?
+A) rac{-1 - 3i}{4 + 2i}
+B) rac{1 - 3i}{4 + 2i}
+C) rac{-1 + 3i}{4 - 2i}
+D) rac{1 + 3i}{4 - 2i}
+Correct Answer: B
+
+Solution:
+To find the conjugate of a fraction, you need to multiply both the numerator and the denominator by the conjugate of the denominator. Here, the conjugate of 4 - 2i is 4 + 2i. So, rac{1 + 3i}{4 - 2i} * rac{4 + 2i}{4 + 2i} = rac{(1 + 3i)(4 + 2i)}{(4 - 2i)(4 + 2i)} = rac{4 + 2i + 12i + 6i^2}{16 - 4i^2}. Since i^2 = -1, we have rac{-2 + 14i}{16 + 4} = rac{-2 + 14i}{20} = rac{1 - 3i}{10}. The conjugate of this is rac{1 - 3i}{10} * rac{10}{10} = rac{1 - 3i}{10}.
+
+Explanation:
+When rationalizing a denominator with complex numbers, you multiply both the numerator and the denominator by the conjugate of the denominator.
+
+Common mistake note:
+A common mistake would be to forget to multiply both the numerator and the denominator by the conjugate (e.g., rac{1 + 3i}{4}), which would result in an incorrect simplified fraction.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the conjugate of the expression rac{2 - i}{rac{1}{2} + i}.
+A) rac{-2 + i}{-rac{1}{2} - i}
+B) rac{-2 - i}{-rac{1}{2} + i}
+C) rac{2 + i}{rac{1}{2} - i}
+D) rac{2 - i}{rac{1}{2} - i}
+Correct Answer: A
+
+Solution:
+First, multiply the fraction by the conjugate of its denominator: rac{2 - i}{rac{1}{2} + i} * rac{rac{1}{2} - i}{rac{1}{2} - i} = rac{(2 - i)(rac{1}{2} - i)}{(rac{1}{2} + i)(rac{1}{2} - i)}. The denominator simplifies to rac{1}{4} + i^2, which is rac{1}{4} - 1 = -rac{3}{4}. The numerator simplifies to rac{1}{2} - 2i + i - i^2. Since i^2 = -1, we have rac{1}{2} - i + 1 = rac{3}{2} - i. So the conjugate of the original expression is rac{rac{3}{2} - i}{-rac{3}{4}} * rac{-rac{4}{3}}{-rac{4}{3}} = rac{-2 + i}{-rac{1}{2} - i}.
+
+Explanation:
+When rationalizing a denominator with complex numbers, you multiply both the numerator and the denominator by the conjugate of the denominator, even if it's a fraction.
+
+Common mistake note:
+A common mistake would be to incorrectly simplify the denominator (e.g., thinking that rac{1}{2} + i is equal to 1), which would lead to an incorrect conjugate.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+What is the conjugate of the complex number rac{3i}{1 - i}?
+A) rac{-3i}{1 + i}
+B) rac{-3i}{-1 - i}
+C) rac{3i}{-1 + i}
+D) rac{3i}{1 + i}
+Correct Answer: A
+
+Solution:
+To find the conjugate of rac{3i}{1 - i}, multiply both the numerator and denominator by the conjugate of the denominator: rac{3i}{1 - i} * rac{1 + i}{1 + i} = rac{3i(1 + i)}{(1 - i)(1 + i)}. The denominator simplifies to 1 - i^2, which is 1 + 1 = 2. The numerator simplifies to 3i + 3i^2 = 3i - 3. So the conjugate of the original expression is rac{-3 + 3i}{2} * rac{2}{2} = rac{-3i}{1 + i}.
+
+Explanation:
+When rationalizing a denominator with complex numbers, you multiply both the numerator and the denominator by the conjugate of the denominator, even if it's in the numerator.
+
+Common mistake note:
+A common mistake would be to forget that the conjugate is applied to the entire fraction (e.g., rac{-3i}{1}), which would result in an incorrect simplified fraction.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the conjugate of rac{2 + 4i}{(1 - i)^2}.
+A) rac{-2 - 4i}{(1 + i)^2}
+B) rac{-2 + 4i}{(1 + i)^2}
+C) rac{2 - 4i}{(1 - i)^2}
+D) rac{2 + 4i}{(1 - i)^2}
+Correct Answer: A
+
+Solution:
+First, expand the denominator: (1 - i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i. Now, find the conjugate of rac{2 + 4i}{-2i}: multiply both the numerator and denominator by the conjugate of the denominator: rac{2 + 4i}{-2i} * rac{-2i}{-2i} = rac{(2 + 4i)(-2i)}{(-2i)(-2i)}. The denominator simplifies to 4i^2, which is -4. The numerator simplifies to -4i - 8i^2 = -4i + 8. So the conjugate of the original expression is rac{-8 + 4i}{-4} * rac{-1}{-1} = rac{-2 - 4i}{(1 + i)^2}.
+
+Explanation:
+When rationalizing a denominator with complex numbers, you multiply both the numerator and the denominator by the conjugate of the denominator, even if it's in the form of a power.
+
+Common mistake note:
+A common mistake would be to incorrectly expand the denominator (e.g., thinking that (1 - i)^2 is equal to 1 - i), which would lead to an incorrect conjugate.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the conjugate of rac{1}{rac{1}{i} + 3}?
+A) rac{-1}{-rac{1}{i} - 3}
+B) rac{-1}{rac{1}{i} - 3}
+C) rac{1}{rac{1}{i} + 3}
+D) rac{1}{-rac{1}{i} - 3}
+Correct Answer: A
+
+Solution:
+First, simplify the denominator: rac{1}{i} = i^(-1) = -i (since i^2 = -1). So the expression becomes rac{1}{-i + 3}. Now find the conjugate of this expression by multiplying both the numerator and denominator by the conjugate of the denominator: rac{1}{-i + 3} * rac{-i - 3}{-i - 3} = rac{-i - 3}{(-i + 3)(-i - 3)}. The denominator simplifies to i^2 - 9, which is -1 - 9 = -10. The numerator simplifies to -i - 3. So the conjugate of the original expression is rac{-i - 3}{-10} * rac{-1}{-1} = rac{1}{rac{1}{i} + 3}.
+
+Explanation:
+When rationalizing a denominator with complex numbers, you multiply both the numerator and the denominator by the conjugate of the denominator, even if it's in the form of a fraction.
+
+Common mistake note:
+A common mistake would be to forget that rac{1}{i} is equal to -i (e.g., thinking that rac{1}{i} is 1), which would result in an incorrect conjugate.
+------------------------------------------------------------------------------

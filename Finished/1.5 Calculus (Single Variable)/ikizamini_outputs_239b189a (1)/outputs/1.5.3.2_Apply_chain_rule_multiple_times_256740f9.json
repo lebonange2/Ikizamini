@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.3.2",
+  "objective_text": "Apply chain rule multiple times",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Unique ID",
+      "stem": "Find the derivative of f(x) = (2x^3 + 5)^4 using the chain rule.",
+      "choices": {
+        "A": "(8x^2)(2x^3 + 5)^3",
+        "B": "4(2x^3 + 5)^3",
+        "C": "4(6x^2)(2x^3 + 5)^3",
+        "D": "16x^6(2x^3 + 5)^2"
+      },
+      "correct_choice": "C",
+      "solution": "To find the derivative, apply the chain rule twice. First, differentiate the outer function (4) and multiply by the derivative of the inner function (6x^2). So, f'(x) = 4 * 6x^2 * (2x^3 + 5)^3 = 24x^2(2x^3 + 5)^3. Answer C is correct.",
+      "explanation": "The chain rule states that if you have a composite function like f(g(x)), the derivative is f'(g(x)) \times g'(x). In this case, f(u) = u^4 and g(x) = 2x^3 + 5. Differentiate f with respect to u and multiply by g'(x).",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by the derivative of the inner function (6x^2) after applying the power rule on the outer function."
+    },
+    {
+      "id": "Unique ID",
+      "stem": "Find the derivative of h(t) = (3t^2 - 1)^5(4t - 7)^6 using the chain and product rules.",
+      "choices": {
+        "A": "30t(3t^2 - 1)^4(4t - 7)^6 + 24(3t^2 - 1)^5(4t - 7)^5",
+        "B": "5(3t^2 - 1)^4 * 6(4t - 7)^5",
+        "C": "180t(3t^2 - 1)^3(4t - 7)^5 + 144(3t^2 - 1)^5(4t - 7)^4",
+        "D": "180t(3t^2 - 1)^4(4t - 7)^6 + 24(3t^2 - 1)^5(4t - 7)^5"
+      },
+      "correct_choice": "D",
+      "solution": "Apply the product rule first, then the chain rule twice. The derivative of h(t) is (h_1'(t) \times h_2(t) + h_1(t) \times h_2'(t)), where h_1(t) = (3t^2 - 1)^5 and h_2(t) = (4t - 7)^6. So, h_1'(t) = 5(3t^2 - 1)^4 * 6(3t^2 - 1)' and h_2'(t) = 6(4t - 7)^5 * 4. Simplify to get h'(t) = 180t(3t^2 - 1)^4(4t - 7)^5 + 24(3t^2 - 1)^5(4t - 7)^6. Answer D is correct.",
+      "explanation": "The product rule states that if you have a product of functions like f(x)g(x), the derivative is f'(x)g(x) + f(x)g'(x). In this case, differentiate each term and multiply by the other.",
+      "common_mistake_notes": "A common mistake is applying the chain rule to only one factor in the product instead of both."
+    },
+    {
+      "id": "Unique ID",
+      "stem": "Find the derivative of g(x) = sin(3x^2 + 1)^5 using the chain rule.",
+      "choices": {
+        "A": "5cos(3x^2 + 1)^4",
+        "B": "5sin(3x^2 + 1)^4 * 6x",
+        "C": "5cos(3x^2 + 1)^4 * 6x",
+        "D": "5sin(3x^2 + 1)^3 * 6x"
+      },
+      "correct_choice": "C",
+      "solution": "Apply the chain rule twice. First, differentiate the outer function (cos) and multiply by the derivative of the inner function (5sin(3x^2 + 1)^4 * 6x). So, g'(x) = -sin(3x^2 + 1)^4 * 6x. Answer C is correct.",
+      "explanation": "The chain rule states that if you have a composite function like f(g(x)), the derivative is f'(g(x)) \times g'(x). In this case, f(u) = sin(u) and g(x) = 3x^2 + 1. Differentiate f with respect to u and multiply by g'(x).",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by the derivative of the inner function (6x) after applying the chain rule on the sine function."
+    },
+    {
+      "id": "Unique ID",
+      "stem": "Find the derivative of f(z) = e^(2z^3 - 5z) using the chain rule.",
+      "choices": {
+        "A": "e^(2z^3 - 5z)(6z^2 - 5)",
+        "B": "e^(2z^3 - 5z)(2z^2 - 5)",
+        "C": "e^(2z^3 - 5z)(12z^2 - 5)",
+        "D": "e^(2z^3 - 5z)(6z^2 + 5)"
+      },
+      "correct_choice": "A",
+      "solution": "Apply the chain rule. Differentiate the outer function (e^u) and multiply by the derivative of the inner function (2z^3 - 5z). So, f'(z) = e^(2z^3 - 5z)(6z^2 - 5). Answer A is correct.",
+      "explanation": "The chain rule states that if you have a composite function like f(g(x)), the derivative is f'(g(x)) \times g'(x). In this case, f(u) = e^u and g(z) = 2z^3 - 5z. Differentiate f with respect to u and multiply by g'(z).",
+      "common_mistake_notes": "A common mistake is applying the chain rule incorrectly on the exponential function, forgetting to multiply by the derivative of the inner function."
+    },
+    {
+      "id": "Unique ID",
+      "stem": "Find the derivative of h(x) = (x^4 - 2x)^7 using the chain rule.",
+      "choices": {
+        "A": "28x^3(x^4 - 2x)^6",
+        "B": "14x^3(x^4 - 2x)^6",
+        "C": "56x^3(x^4 - 2x)^5",
+        "D": "7x^3(x^4 - 2x)^6"
+      },
+      "correct_choice": "A",
+      "solution": "Apply the chain rule. Differentiate the outer function (u^7) and multiply by the derivative of the inner function (x^4 - 2x). So, h'(x) = 7(x^4 - 2x)^6 * 4x^3 = 28x^3(x^4 - 2x)^6. Answer A is correct.",
+      "explanation": "The chain rule states that if you have a composite function like f(g(x)), the derivative is f'(g(x)) \times g'(x). In this case, f(u) = u^7 and g(x) = x^4 - 2x. Differentiate f with respect to u and multiply by g'(x).",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by the power of the outer function (7) after applying the chain rule on the inner function."
+    },
+    {
+      "id": "Unique ID",
+      "stem": "Find the derivative of g(y) = sqrt(5y^2 + 3) using the chain rule.",
+      "choices": {
+        "A": "1/(2sqrt(5y^2 + 3))",
+        "B": "(10y)/(2sqrt(5y^2 + 3))",
+        "C": "(5y)/(sqrt(5y^2 + 3))",
+        "D": "(5y^2)/(sqrt(5y^2 + 3))"
+      },
+      "correct_choice": "B",
+      "solution": "Apply the chain rule. Differentiate the outer function (u^(1/2)) and multiply by the derivative of the inner function (5y^2 + 3). So, g'(y) = (1/2)(5y^2 + 3)^(-1/2) * 10y = (5y)/(sqrt(5y^2 + 3)). Answer B is correct.",
+      "explanation": "The chain rule states that if you have a composite function like f(g(x)), the derivative is f'(g(x)) \times g'(x). In this case, f(u) = u^(1/2) and g(y) = 5y^2 + 3. Differentiate f with respect to u and multiply by g'(y).",
+      "common_mistake_notes": "A common mistake is forgetting to apply the power rule on the outer function (u^(1/2)) before multiplying by the derivative of the inner function."
+    },
+    {
+      "id": "Unique ID",
+      "stem": "Find the derivative of f(x) = ln(4x^3 - 7x) using the chain rule.",
+      "choices": {
+        "A": "(12x^2 - 7)/(4x^3 - 7x)",
+        "B": "(12x^2 - 7)/(4x^2 - 7)",
+        "C": "(4x^2 - 7)/(12x^2 - 7)",
+        "D": "(-12x^2 + 7)/(4x^3 - 7x)"
+      },
+      "correct_choice": "A",
+      "solution": "Apply the chain rule. Differentiate the outer function (ln(u)) and multiply by the derivative of the inner function (4x^3 - 7x). So, f'(x) = 1/(4x^3 - 7x) * (12x^2 - 7) = (12x^2 - 7)/(4x^3 - 7x). Answer A is correct.",
+      "explanation": "The chain rule states that if you have a composite function like f(g(x)), the derivative is f'(g(x)) \times g'(x). In this case, f(u) = ln(u) and g(x) = 4x^3 - 7x. Differentiate f with respect to u and multiply by g'(x).",
+      "common_mistake_notes": "A common mistake is applying the chain rule incorrectly on the natural logarithm function, forgetting to multiply by the derivative of the inner function."
+    }
+  ]
+}

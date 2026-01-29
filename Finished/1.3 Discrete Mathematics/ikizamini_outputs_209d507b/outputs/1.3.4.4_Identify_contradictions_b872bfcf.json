@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.4.4",
+  "objective_text": "Identify contradictions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which of the following statements is a contradiction?",
+      "choices": {
+        "A": "The sky appears blue during both day and night under certain conditions.",
+        "B": "Water boils at 100 degrees Celsius and 212 degrees Fahrenheit, which are equivalent temperatures in different units.",
+        "C": "A square has four sides and exactly two right angles.",
+        "D": "The moon orbits around Earth, but it is also influenced by the gravitational pull of other celestial bodies."
+      },
+      "correct_choice": "D",
+      "solution": "D presents a contradiction because if the moon orbits around Earth, it implies that Earth also experiences the effects of the moon's gravity. The other statements are either facts or do not present contradictory information.",
+      "explanation": "A contradiction occurs when two or more statements cannot both be true at the same time. In this case, option D presents a false dichotomy about the celestial bodies' orbits and gravitational influences.",
+      "common_mistake_notes": "Common mistake: Choosing A, which is a statement that might seem contradictory but is actually describing different times of day; the sky can indeed appear blue during both day and night under certain conditions."
+    },
+    {
+      "id": ":2",
+      "stem": "Select the statement that contains a logical contradiction:",
+      "choices": {
+        "A": "I always eat breakfast before going to work.",
+        "B": "Some birds can fly, but some cannot swim.",
+        "C": "The capital of France is Paris.",
+        "D": "It rained yesterday, so the ground was wet."
+      },
+      "correct_choice": "C",
+      "solution": "C presents a logical contradiction because it claims that the capital of France is Rome (which is the capital of Italy), which is not true. The correct statement would be that the capital of France is Paris.",
+      "explanation": "A contradiction occurs when two or more statements within a single statement are mutually exclusive and cannot coexist as true.",
+      "common_mistake_notes": "Common mistake: Choosing B, which presents a difference in abilities among birds but does not contain a logical inconsistency."
+    },
+    {
+      "id": ":3",
+      "stem": "Identify the sentence with a contradiction:",
+      "choices": {
+        "A": "I love to travel, but I hate flying.",
+        "B": "The concert starts at 7 PM sharp and will end by 10 PM.",
+        "C": "All cats are mammals, and some animals in the mammal class lay eggs (e.g., platypus).",
+        "D": "Eating vegetables is healthy and important for a balanced diet."
+      },
+      "correct_choice": "C",
+      "solution": "C presents a contradiction because it claims that all cats are mammals, which is true, but then contradicts itself by saying some mammals lay eggs, which is not true for cats.",
+      "explanation": "A contradiction occurs when two or more statements within a single statement contradict each other.",
+      "common_mistake_notes": "Common mistake: Choosing A, which presents contrasting preferences rather than a logical inconsistency."
+    },
+    {
+      "id": ":4",
+      "stem": "Which of the following sentences contains a self-contradiction?",
+      "choices": {
+        "A": "I never eat junk food, except for pizza and ice cream, which are technically considered junk food.",
+        "B": "The car is painted in multiple colors, including red and blue.",
+        "C": "This statement is false.",
+        "D": "Every person in this room has two hands."
+      },
+      "correct_choice": "C",
+      "solution": "C presents a self-contradiction because if the statement is true, it must be false, and if it's false, it must be true. This creates an inconsistent paradox.",
+      "explanation": "A self-contradiction occurs when a statement contradicts itself within its own content.",
+      "common_mistake_notes": "Common mistake: Choosing B, which presents a simple contradiction but not a self-contradiction; it's possible for the car to be painted in multiple colors."
+    },
+    {
+      "id": ":5",
+      "stem": "Which of the following sentences is logically contradictory?",
+      "choices": {
+        "A": "The grass turns green during summer and brown during winter due to changes in temperature and sunlight.",
+        "B": "All circles have a single center point, no corners, and no edges.",
+        "C": "I always brush my teeth before bed, unless I'm too tired or it's an exceptional circumstance.",
+        "D": "Every even number greater than 2 can be expressed as the sum of two prime numbers (Goldbach's Conjecture, which remains unproven)."
+      },
+      "correct_choice": "D",
+      "solution": "D presents a logical contradiction because it refers to Goldbach's Conjecture, which is an unsolved problem in mathematics. While it has been tested extensively for small numbers, it has not been proven or disproven for all even numbers greater than 2.",
+      "explanation": "A contradiction occurs when two or more statements within a single statement are mutually exclusive and cannot coexist as true.",
+      "common_mistake_notes": "Common mistake: Choosing C, which presents a conditional statement rather than a logical inconsistency."
+    },
+    {
+      "id": ":6",
+      "stem": "Select the sentence with a contradictory statement:",
+      "choices": {
+        "A": "The temperature was below freezing, so there was frost on the grass.",
+        "B": "I finished my homework early and still had time to play video games.",
+        "C": "All birds have feathers, but some species, like ostriches, are flightless.",
+        "D": "The movie was boring, so I fell asleep halfway through."
+      },
+      "correct_choice": "A",
+      "solution": "A presents a contradictory statement because if the temperature was below freezing, frost would typically form on the grass.",
+      "explanation": "A contradiction occurs when two or more statements within a single statement are mutually exclusive and cannot coexist as true.",
+      "common_mistake_notes": "Common mistake: Choosing B, which presents a sequence of events rather than a logical inconsistency."
+    },
+    {
+      "id": ":7",
+      "stem": "Which sentence contains a self-contradiction?",
+      "choices": {
+        "A": "I never eat junk food unless I'm feeling particularly hungry or have a special occasion.",
+        "B": "The book is both interesting and boring at the same time, which can be confusing for readers.",
+        "C": "The party was fun, but no one enjoyed it, including myself.",
+        "D": "Every person in this room has unique fingerprints, except for identical twins who may share similar patterns."
+      },
+      "correct_choice": "C",
+      "solution": "C presents a self-contradiction because if the party was fun, it implies that someone must have enjoyed it. The second part of the sentence contradicts the first part.",
+      "explanation": "A self-contradiction occurs when a statement contradicts itself within its own content.",
+      "common_mistake_notes": "Common mistake: Choosing A, which presents a conditional statement rather than a self-contradiction."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.5.8",
+  "objective_text": "Apply conjugate of sum/difference",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd1",
+      "stem": "Find the conjugate of the complex number (3 + 4i):",
+      "choices": {
+        "A": "(3 - 4i)",
+        "B": "(-3 + 4i)",
+        "C": "(-3 - 4i)",
+        "D": "(4 + 3i)"
+      },
+      "correct_choice": "A",
+      "solution": "The conjugate of a complex number (a + bi) is obtained by changing the sign of the imaginary part. So, the conjugate of (3 + 4i) is (3 - 4i).",
+      "explanation": "Conjugation flips the sign of the imaginary part while keeping the real part unchanged.",
+      "common_mistake_notes": "A common mistake would be to change both parts of the complex number, which results in choice B or C. Remember, only the imaginary part changes sign."
+    },
+    {
+      "id": "Asd2",
+      "stem": "Simplify (5 - 6i)(π + i):",
+      "choices": {
+        "A": "(5π - 11i)",
+        "B": "(5π + 11i)",
+        "C": "(-5π - 11i)",
+        "D": "(-5π + 11i)"
+      },
+      "correct_choice": "A",
+      "solution": "Use the distributive property (FOIL) to expand and then apply conjugation on (i)(-π): (5 - 6i)(π + i) = 5π + 5i - 6πi - 6i^2 = 5π + 5i - 6πi + 6 = (5π - 11i)",
+      "explanation": "FOIL stands for First, Outer, Inner, Last and is used to multiply binomials. Remember that i^2 = -1.",
+      "common_mistake_notes": "A common mistake would be forgetting to apply conjugation on (i)(-π), which could lead to choice B or C."
+    },
+    {
+      "id": "Asd3",
+      "stem": "Find the difference of the complex numbers (7 + 3i) - (2 - 4i):",
+      "choices": {
+        "A": "(5 - 7i)",
+        "B": "(9 + 7i)",
+        "C": "(5 + 7i)",
+        "D": "(9 - 7i)"
+      },
+      "correct_choice": "C",
+      "solution": "Subtract the real parts and the imaginary parts separately: (7 + 3i) - (2 - 4i) = 7 - 2 + (3i + 4i) = 5 + 7i",
+      "explanation": "When subtracting complex numbers, treat the real part and the imaginary part as separate entities.",
+      "common_mistake_notes": "A common mistake would be to combine the terms incorrectly, which could result in choice A or D."
+    },
+    {
+      "id": "Asd4",
+      "stem": "Simplify π(π + i):",
+      "choices": {
+        "A": "(1 - π^2)i",
+        "B": "(1 + π^2)i",
+        "C": "(1 - π)i",
+        "D": "(1 + 㰂)i"
+      },
+      "correct_choice": "A",
+      "solution": "π(π + i) = π^2 + πi = 1 - 1 + πi = (1 - π^2)i",
+      "explanation": "Use the fact that π^2 = -1 to simplify the expression.",
+      "common_mistake_notes": "A common mistake would be to forget that π^2 = -1, which could lead to choice B or C."
+    },
+    {
+      "id": "Asd5",
+      "stem": "Find the sum of the complex numbers (8 - 6i) + (-4 + 9i):",
+      "choices": {
+        "A": "(12 + 3i)",
+        "B": "(4 + 3i)",
+        "C": "(4 - 3i)",
+        "D": "(12 - 3i)"
+      },
+      "correct_choice": "B",
+      "solution": "(8 - 6i) + (-4 + 9i) = 8 - 4 - 6i + 9i = 4 + 3i",
+      "explanation": "When adding complex numbers, combine the real parts and the imaginary parts separately.",
+      "common_mistake_notes": "A common mistake would be to add or subtract the terms incorrectly, which could result in choice A, C, or D."
+    },
+    {
+      "id": "Asd6",
+      "stem": "Simplify (2 + 3i)(4 - 5i):",
+      "choices": {
+        "A": "(8 + 7i)",
+        "B": "(8 - 7i)",
+        "C": "(14 - 7i)",
+        "D": "(14 + 7i)"
+      },
+      "correct_choice": "B",
+      "solution": "(2 + 3i)(4 - 5i) = 8 - 10i + 12i - 15i^2 = 8 + 2i + 15 = (8 - 7i)",
+      "explanation": "Use the distributive property (FOIL) to expand and remember that i^2 = -1.",
+      "common_mistake_notes": "A common mistake would be to forget to apply conjugation on (3i)(-5i), which could lead to choice A or C."
+    },
+    {
+      "id": "Asd7",
+      "stem": "Find the product of the complex numbers (6 + 4i) and its conjugate:",
+      "choices": {
+        "A": "(20 - 24i)",
+        "B": "(20 + 24i)",
+        "C": "(36 - 16i)",
+        "D": "(36 + 16i)"
+      },
+      "correct_choice": "C",
+      "solution": "The product of a complex number (a + bi) and its conjugate is (a + bi)(a - bi) = a^2 - (bi)^2 = a^2 + b^2. For (6 + 4i), the product with its conjugate is (6 + 4i)(6 - 4i) = 36 - 16i^2 = 36 + 16 = (36 - 16i)",
+      "explanation": "The product of a complex number and its conjugate results in the square of the real part plus the square of the imaginary part.",
+      "common_mistake_notes": "A common mistake would be to forget that i^2 = -1, which could lead to choice A or B."
+    }
+  ]
+}

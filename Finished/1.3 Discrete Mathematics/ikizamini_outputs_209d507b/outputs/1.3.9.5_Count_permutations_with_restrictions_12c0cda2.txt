@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.9.5 Count permutations with restrictions
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.9 Permutations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One-Slot-Restriction):
+How many ways can you arrange the letters of the word "MATHEMATICS" if the two M's must be next to each other?
+A) 120
+B) 720
+C) 1440
+D) 5040
+Correct Answer: C
+
+Solution:
+To solve this problem, treat the two adjacent M's as a single unit (MM). There are 8 units to arrange: MM, A, T, H, E, I, C, S. These can be arranged in 8! ways. Since the two M's within the unit can also be arranged in 2! ways, multiply by this factor. Total arrangements: 8! * 2! = 1440.
+
+Explanation:
+The word "MATHEMATICS" has 11 letters with two M's treated as one unit. Account for the restriction and calculate permutations of combined units.
+
+Common mistake note:
+Not accounting for the double arrangement of the two M's within MM, which leads to overcounting.
+------------------------------------------------------------------------------
+
+Problem 2 (Two-Slot-Restriction):
+How many ways can you arrange the letters of the word "COMPUTER" if the C and R must be at the ends?
+A) 12
+B) 24
+C) 36
+D) 48
+Correct Answer: B
+
+Solution:
+Given C and R at ends, 7 letters remain. Place C in 2 ways; R fills the other end. Then arrange remaining 6 letters in 6! ways. Total arrangements: 2 * 6! = 24.
+
+Explanation:
+With C and R fixed at ends, arrange the remaining 7 letters subject to those constraints.
+
+Common mistake note:
+Overcounting by not considering the fixed positions of C and R.
+------------------------------------------------------------------------------
+
+Problem 3 (Restricted-Positions):
+How many ways can you arrange the numbers 1, 2, 3, 4, 5, 6 if 1 must be before 2 and 3 must be after 4?
+A) 720
+B) 360
+C) 180
+D) 90
+Correct Answer: C
+
+Solution:
+Arrange 1, 3, 5, and 6 in 4! ways. Given constraints, place 2 and 4 in 2 slots (2! ways). Total arrangements: 4! * 2! = 180.
+
+Explanation:
+With relative positions of 1, 2, 3, and 4 fixed, arrange the non-restricted numbers first then place the restricted ones.
+
+Common mistake note:
+Overlooking constraint that 3 must follow 4.
+------------------------------------------------------------------------------
+
+Problem 4 (Restricted-Adjacent):
+How many ways can you arrange the letters of the word "BANANA" if no two A's are adjacent?
+A) 120
+B) 240
+C) 360
+D) 720
+Correct Answer: B
+
+Solution:
+Consider 5 slots between and around A's for non-A letters (4 choices). Arrange these in 3! ways. Then arrange all 6 letters in 6! ways. Total arrangements: 3! * 6! = 240.
+
+Explanation:
+With restriction on A's, consider non-A letter positions and calculate permutations without violating the rule.
+
+Common mistake note:
+Assuming all 6 letters can be arranged freely, leading to overcounting with adjacent A's.
+------------------------------------------------------------------------------
+
+Problem 5 (Restricted-Count):
+How many ways can you arrange a set of 5 distinct objects, including 2 identical red balls and 3 distinct blue balls?
+A) 120
+B) 60
+C) 40
+D) 20
+Correct Answer: B
+
+Solution:
+With 2 identical red balls, divide total permutations (5!) by arrangements of these (2!). Total arrangements: 5! / 2! = 60.
+
+Explanation:
+Account for overcounting due to indistinguishable red balls by dividing by their arrangements.
+
+Common mistake note:
+Forgetting to divide by factorial of identical objects, leading to incorrect count.
+------------------------------------------------------------------------------
+
+Problem 6 (Restricted-Permutations):
+How many ways can you arrange 3 boys and 4 girls in a row if no two boys are adjacent?
+A) 288
+B) 192
+C) 144
+D) 72
+Correct Answer: C
+
+Solution:
+Consider 3 slots between and around boys for girls (4 choices). Arrange girls in 4! ways. Then arrange boys in 3! ways within slots. Total arrangements: 4! * 3! = 144.
+
+Explanation:
+Given no adjacent boys, consider girl positions and calculate permutations without violating the restriction.
+
+Common mistake note:
+Assuming all 7 children can be arranged freely, leading to overcounting with adjacent boys.
+------------------------------------------------------------------------------
+
+Problem 7 (Restricted-Combination):
+How many ways can you choose a committee of 3 students from a group of 5 boys and 4 girls if at least one girl must be included?
+A) 28
+B) 36
+C) 40
+D) 48
+Correct Answer: B
+
+Solution:
+Choose 1 girl, 2 boys: 4C1 * 5C2. Choose 2 girls, 1 boy: 4C2 * 5C1. Total arrangements (divided by 2 for double counting): (4 * 10 + 6 * 5) / 2 = 30 = 5 * 6.
+
+Explanation:
+With at least one girl, consider two cases: 1 girl and 2 boys or 2 girls and 1 boy. Combine counts accounting for overcounting.
+
+Common mistake note:
+Not adjusting for double counting when combining cases, leading to incorrect total count.
+------------------------------------------------------------------------------

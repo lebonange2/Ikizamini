@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.6.5 Apply complex logarithm
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.6 Complex Functions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the principal value of the complex logarithm: log(-3 + 4i)
+A) -π + π/3 i
+B) π/2 - π/6 i
+C) -π/2 + π/6 i
+D) π/2 + π/6 i
+Correct Answer: B
+
+Solution:
+The complex number -3 + 4i lies in the second quadrant. The principal value of the logarithm is found by converting the number to polar form and using the formula log(r cis(θ)) = ln(r) + i(θ - 2kπ), where k is an integer. For -3 + 4i, r = √(3^2 + 4^2) = 5 and θ = arctan(4/(-3)) = -π/6. Since we're looking for the principal value, k = 0. Thus, log(-3 + 4i) = ln(5) - π/6 i.
+
+Explanation:
+The correct answer is in the second quadrant and has a positive imaginary part due to the principal value of the logarithm.
+
+Common mistake note:
+A common mistake is choosing A, which represents a point in the fourth quadrant instead of the second. Another mistake could be using k = 1 or another integer, leading to an incorrect angle.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Evaluate log(3 - 4i) + log(4 + 3i)
+A) ln(7) + iπ
+B) ln(5) + iπ/2
+C) ln(25) - iπ/2
+D) ln(25) + iπ/2
+Correct Answer: D
+
+Solution:
+First, convert both complex numbers to polar form: 3 - 4i = 5cis(-π/6) and 4 + 3i = 5cis(π/6). Then use the property log(a) + log(b) = log(ab): log(5cis(-π/6)) + log(5cis(π/6)) = log((5cis(-π/6))(5cis(π/6))) = log(25cis(0)). The logarithm of a number in polar form with an angle of 0 is simply ln(r), so the result is ln(25) + i(0).
+
+Explanation:
+The sum of logs of two numbers in polar form results in the log of their product, and the angles add up. Since the angles cancel out, we're left with only the real part.
+
+Common mistake note:
+A common mistake is to forget to convert the complex numbers to polar form before adding the logarithms. Another mistake could be adding the angles without considering that they cancel each other out.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the value of log(1 + i) - log(1 - i)
+A) iπ
+B) 2i
+C) -iπ
+D) 0
+Correct Answer: D
+
+Solution:
+First, convert both complex numbers to polar form: 1 + i = √(1^2 + 1^2) cis(π/4) and 1 - i = √(1^2 + (-1)^2) cis(-π/4). Then use the property log(a) - log(b) = log(a/b): log(√(1^2 + 1^2) cis(π/4)) - log(√(1^2 + (-1)^2) cis(-π/4)) = log((√(1^2 + 1^2) cis(π/4))/(√(1^2 + (-1)^2) cis(-π/4))) = log(cis(π/2)). The logarithm of a number in polar form with an angle of π/2 is 0, so the result is 0.
+
+Explanation:
+The difference of logs of two numbers in polar form results in the log of their ratio. Since the angles are additive inverses, they cancel out, leaving only the real part.
+
+Common mistake note:
+A common mistake is to forget to convert the complex numbers to polar form before subtracting the logarithms. Another mistake could be adding the angles without considering that they cancel each other out.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Calculate log(-1) using Euler's formula, e^(iπ) = -1
+A) iπ
+B) -iπ
+C) 2iπ
+D) 4iπ
+Correct Answer: A
+
+Solution:
+Using Euler's formula, we can write -1 as e^(iπ). Therefore, log(-1) = log(e^(iπ)) = iπ.
+
+Explanation:
+Euler's formula directly relates the complex exponential to the negative one. Taking the logarithm of both sides gives us the principal value of the complex logarithm.
+
+Common mistake note:
+A common mistake is to choose -iπ, which would be correct for a different branch of the logarithm. However, we're looking for the principal value.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the value of log((-1 + iπ)/(-1 - iπ))
+A) iπ
+B) -iπ
+C) 2iπ
+D) 4iπ
+Correct Answer: A
+
+Solution:
+First, simplify the complex fraction: (-1 + iπ)/(-1 - iπ) = (e^(iπ/2))/(-e^(-iπ/2)) = -e^(iπ). Now, take the logarithm: log((-e^(iπ))) = log(e^(iπ)) + ln(-1) = iπ + iπ = 2iπ. However, since we're looking for the principal value of the logarithm, we take only the first term: iπ.
+
+Explanation:
+The complex fraction simplifies to a negative number raised to an imaginary power. Taking the logarithm and using Euler's formula leads to the principal value.
+
+Common mistake note:
+A common mistake is to forget that ln(-1) = iπ when calculating the logarithm of -1. Another mistake could be adding the angles without considering that they cancel each other out.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Evaluate log(2cis(π/4)) + log(2cis(-π/4))
+A) ln(4) - iπ/2
+B) ln(8)  + iπ/2
+C) ln(4)  + iπ/2
+D) ln(8)  - iπ/2
+Correct Answer: A
+
+Solution:
+First, use the property log(a) + log(b) = log(ab): log(2cis(π/4)) + log(2cis(-π/4)) = log((2cis(π/4))(2cis(-π/4))) = log(4cis(0)). The logarithm of a number in polar form with an angle of 0 is simply ln(r), so the result is ln(4) + i(0).
+
+Explanation:
+The sum of logs of two numbers in polar form results in the log of their product, and the angles add up. Since the angles cancel out, we're left with only the real part.
+
+Common mistake note:
+A common mistake is to forget to convert the complex numbers to polar form before adding the logarithms. Another mistake could be adding the angles without considering that they cancel each other out.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the value of log(1 + iπ/2) - log(1 - iπ/2)
+A) iπ
+B) -iπ
+C) 2iπ
+D) 4iπ
+Correct Answer: A
+
+Solution:
+First, convert both complex numbers to polar form: 1 + iπ/2 = √(1^2 + (π/2)^2) cis(π/4) and 1 - iπ/2 = √(1^2 + (-π/2)^2) cis(-π/4). Then use the property log(a) - log(b) = log(a/b): log(√(1^2 + (π/2)^2) cis(π/4)) - log(√(1^2 + (-π/2)^2) cis(-π/4)) = log((√(1^2 + (π/2)^2) cis(π/4))/(√(1^2 + (-π/2)^2) cis(-π/4))) = log(cis(π/2)). The logarithm of a number in polar form with an angle of π/2 is 0, so the result is iπ.
+
+Explanation:
+The difference of logs of two numbers in polar form results in the log of their ratio. Since the angles are additive inverses, they cancel out, leaving only the real part.
+
+Common mistake note:
+A common mistake is to forget to convert the complex numbers to polar form before subtracting the logarithms. Another mistake could be adding the angles without considering that they cancel each other out.
+------------------------------------------------------------------------------

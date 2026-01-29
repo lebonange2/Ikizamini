@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.8.7 Apply generalized pigeonhole principle
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.8 Counting Principles
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+There are 5 boxes and 6 balls. Each box can hold at most 2 balls. What is the minimum number of boxes that must be occupied?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: D
+
+Solution:
+By the generalized pigeonhole principle, if there are more balls (6) than the product of the capacities of the boxes (5 * 2 = 10), then at least one box must hold more than its capacity. Since each box can hold up to 2 balls, we need to distribute 6 balls among 5 boxes with a maximum of 2 per box. The minimum number of occupied boxes will be when all but one box are filled to their maximum capacity. So, 4 boxes will have 2 balls each and the last box will have 0 balls.
+
+Explanation:
+The generalized pigeonhole principle states that if more items (balls) are distributed into fewer containers (boxes), then at least one container must hold more than its capacity.
+
+Common mistake note:
+A common mistake is to assume that all boxes can be filled with exactly 2 balls, which would lead to the incorrect answer of '3' boxes. However, this does not account for the possibility of distributing balls unevenly among the boxes.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+In a school with 10 classes, each class has between 25 and 30 students. What is the minimum number of students needed to guarantee that there will be at least two classes with an equal number of students?
+A) 60
+B) 75
+C) 90
+D) 100
+Correct Answer: C
+
+Solution:
+The maximum possible difference in student numbers between any two classes is 30 - 25 = 5 students. To guarantee that there are at least two classes with an equal number of students, we must have more than 5 * (10 - 1) = 45 additional students beyond the minimum class size. Since each class has a minimum of 25 students, adding 46 students would result in at least one class having 25 + 46 = 71 students and another class also having 71 students due to the pigeonhole principle. Therefore, we need a total of 10 classes * 25 students/class + 46 students = 90 students.
+
+Explanation:
+The generalized pigeonhole principle applies when trying to distribute items (students) into containers (classes) with varying capacities. To guarantee that at least two classes have an equal number of students, we must exceed the maximum possible difference in student numbers times the number of classes minus one.
+
+Common mistake note:
+A common mistake is to assume that distributing 60 or 75 students would be enough to ensure two classes with the same number. However, this does not take into account the possibility of having a range of class sizes within the given interval.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+There are 8 different types of fruit and 9 baskets, each capable of holding 4 fruits. What is the minimum number of fruits needed to guarantee that at least one basket will contain all 8 types?
+A) 24
+B) 32
+C) 36
+D) 40
+Correct Answer: C
+
+Solution:
+Each basket can hold 4 fruits, so we need to distribute 8 types of fruit among 9 baskets such that at least one basket has all 8 types. To guarantee this, we must fill 8 - 1 = 7 baskets with 3 fruits each (one of each type), which totals 7 * 3 = 21 fruits. Then, the last basket will automatically have all 8 types when it is filled with its first fruit. So, we need a total of 21 + 1 = 22 fruits to start with, and since each basket can hold up to 4 fruits, we must add at least one more fruit for each basket that has fewer than 4 fruits. Since 7 baskets have 3 fruits and 2 baskets have less than 4 fruits (one with 0 and one with 1), we need an additional 2 fruits. Therefore, the minimum number of fruits needed is 22 + 2 = 24.
+
+Explanation:
+The generalized pigeonhole principle can be applied here by considering each basket as a container and the types of fruit as items to distribute. To guarantee that at least one basket has all 8 types, we must fill enough baskets with a subset of the fruit types such that adding one more fruit will automatically result in a basket having all 8.
+
+Common mistake note:
+A common mistake is to assume that filling 7 baskets with 3 fruits each would be sufficient, without considering that the last basket might not have all 8 types. This would lead to an incorrect minimum number of fruits needed.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+In a deck of 52 cards, what is the minimum number of cards you must draw to guarantee having at least two cards with the same suit?
+A) 4
+B) 5
+C) 6
+D) 7
+Correct Answer: B
+
+Solution:
+There are 4 suits in a deck of cards. By the generalized pigeonhole principle, if we draw 5 cards, at least one suit will have 2 or more cards because there are not enough cards to fill all 4 suits with exactly 1 card each. So, the minimum number of cards needed to guarantee having at least two cards with the same suit is 5.
+
+Explanation:
+The principle applies when distributing items (cards) into containers (suits). Since there are 4 suits and we want to ensure that at least one has more than one card, drawing 5 cards guarantees that at least one suit will have 2 or more cards due to the limited number of suits.
+
+Common mistake note:
+A common mistake is to think that drawing 4 cards would be enough, but this does not guarantee that there will be two cards with the same suit. It's possible to draw one card from each suit in this case.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+There are 7 different colors of paint and 6 artists. Each artist must use at least one color, but no two artists can use the exact same combination of colors. What is the minimum number of colors that any single artist must use?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: C
+
+Solution:
+To ensure that no two artists use the exact same combination of colors, we need to distribute the 7 colors among the 6 artists such that each artist has a unique subset. The minimum number of colors an artist can use is when they have one less color than the next artist. If the first artist uses 1 color, the second must use 2, and so on until all colors are distributed. However, this would result in the last artist using 6 colors, which is not allowed since they must use at least one color. Therefore, we start with the second artist using 2 colors, then the third uses 3, and so on. The fourth artist will have to use 4 colors to ensure that their combination is unique from the previous three artists. Thus, the minimum number of colors any single artist must use is 4.
+
+Explanation:
+The generalized pigeonhole principle can be applied here by considering each artist as a container and the colors they use as items to distribute. To guarantee uniqueness in combinations, we need to ensure that each artist uses enough colors such that no two artists have the same subset.
+
+Common mistake note:
+A common mistake is to assume that starting with the first artist using 1 color would work, but this does not account for ensuring a unique combination for the last artist. This would lead to an incorrect minimum number of colors needed.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+In a group of 20 students, each student can speak at least one of three languages: English, French, or Spanish. If 8 students speak English, 10 speak French, and 7 speak Spanish, what is the minimum number of students who must speak more than one language to guarantee that there is a group of 4 students who all speak a different language?
+A) 2
+B) 3
+C) 4
+D) 5
+Correct Answer: B
+
+Solution:
+First, we have 8 + 10 + 7 = 25 total languages spoken. Since there are only 20 students, at least 25 - 20 = 5 students must speak more than one language. Now, consider the worst-case scenario: 4 students each speak exactly two different languages, covering all three languages between them. In this case, we have 16 languages spoken by these 4 students (4 * 2 = 8) and 9 remaining languages spoken by the other 16 students. To guarantee a group of 4 students who all speak a different language, we need at least one student to speak a fourth language. Therefore, the minimum number of students speaking more than one language is 4 (the 4 students with two languages) + 1 (an additional student with a fourth language) = 5.
+
+Explanation:
+The principle applies when considering the distribution of languages among students and ensuring that there is a group of 4 students who all speak different languages. By maximizing the number of students speaking exactly two languages, we can determine the minimum number needed to guarantee this condition.
+
+Common mistake note:
+A common mistake is to think that only 4 students speaking multiple languages would be enough, but this does not account for ensuring a group of 4 with different languages. This would lead to an incorrect minimum number of students needed.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+There are 12 boxes and 13 balls, each box can hold at most 3 balls. What is the minimum number of boxes that must be occupied?
+A) 4
+B) 5
+C) 6
+D) 7
+Correct Answer: C
+
+Solution:
+By the generalized pigeonhole principle, if there are more balls (13) than the product of the capacities of the boxes (12 * 3 = 36), then at least one box must hold more than its capacity. Since each box can hold up to 3 balls, we need to distribute 13 balls among 12 boxes with a maximum of 3 per box. The minimum number of occupied boxes will be when all but one box are filled to their maximum capacity. So, 6 boxes will have 3 balls each and the last box will have 1 ball.
+
+Explanation:
+The generalized pigeonhole principle states that if more items (balls) are distributed into fewer containers (boxes), then at least one container must hold more than its capacity.
+
+Common mistake note:
+A common mistake is to assume that all boxes can be filled with exactly 3 balls, which would lead to the incorrect answer of '4' boxes. However, this does not account for the possibility of distributing balls unevenly among the boxes.
+------------------------------------------------------------------------------

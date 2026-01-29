@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.9.10 Apply tabular integration
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.9 Integration Techniques - By Parts
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Evaluate the definite integral using tabular integration: ∫π to 2π sin(x) dx
+A) -2
+B) 0
+C) 2
+D) 4
+Correct Answer: B
+
+Solution:
+To evaluate the definite integral using tabular integration, integrate the function and evaluate it at the limits of integration. The antiderivative of sin(x) is -cos(x). So, ∫sin(x) dx = -cos(x) + C. Evaluate at the limits: (-cos(2π)) - (-cos(π)) = 0.
+
+Explanation:
+Tabular integration involves integrating the function and evaluating it at the limits to find the definite integral.
+
+Common mistake note:
+A common mistake is forgetting to evaluate the antiderivative at both upper and lower limits, instead of just one. This would result in answer A (-2) which is incorrect.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Evaluate the definite integral using tabular integration: ∫1 to 3 (x^2 + 3x) dx
+A) 45
+B) 60
+C) 75
+D) 90
+Correct Answer: B
+
+Solution:
+Integrate the function first: ∫(x^2 + 3x) dx = (1/3)x^3 + (3/2)x^2 + C. Evaluate at the limits: [(1/3)(3)^3 + (3/2)(3)^2] - [(1/3)(1)^3 + (3/2)(1)^2] = 60.
+
+Explanation:
+Tabular integration requires integrating the function and evaluating it at the limits to find the definite integral.
+
+Common mistake note:
+A common mistake is not simplifying the antiderivative before plugging in the limits, which may lead to answers C (75) or D (90).
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Evaluate the definite integral using tabular integration: ∫-2 to 2 e^x dx
+A) e^2 - e^{-2}
+B) e^2 + e^{-2} - 2
+C) e^2 + e^{-2}
+D) 0
+Correct Answer: D
+
+Solution:
+The antiderivative of e^x is e^x itself. So, ∫e^x dx = e^x + C. Evaluate at the limits: [e^2] - [-e^{-2}] = 0.
+
+Explanation:
+Tabular integration involves integrating the function and evaluating it at the limits to find the definite integral.
+
+Common mistake note:
+A common mistake is forgetting that e raised to an even power (like e^(-2)) will have a positive value, leading to answers A (e^2 - e^{-2}) or B (e^2 + e^{-2} - 2) which are incorrect.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Evaluate the definite integral using tabular integration: ∫0 to π/2 cos(x) dx
+A) 1
+B) 2
+C) π/2
+D) π
+Correct Answer: A
+
+Solution:
+The antiderivative of cos(x) is sin(x). So, ∫cos(x) dx = sin(x) + C. Evaluate at the limits: [sin(π/2)] - [sin(0)] = 1.
+
+Explanation:
+Tabular integration requires integrating the function and evaluating it at the limits to find the definite integral.
+
+Common mistake note:
+A common mistake is not remembering that sin(π/2) equals 1, which would lead to answers C (π/2) or D (π) which are incorrect.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Evaluate the definite integral using tabular integration: ∫-1 to 1 x^3 dx
+A) 0
+B) 1/4
+C) 1/2
+D) 3/4
+Correct Answer: A
+
+Solution:
+The antiderivative of x^3 is x^4/4. So, ∫x^3 dx = x^4/4 + C. Evaluate at the limits: [(1)^4/4] - [(-1)^4/4] = 0.
+
+Explanation:
+Tabular integration involves integrating the function and evaluating it at the limits to find the definite integral.
+
+Common mistake note:
+A common mistake is not recognizing that the function is odd, which means its definite integral over a symmetric interval will be zero. This would lead to answers B (1/4), C (1/2), or D (3/4) which are incorrect.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Evaluate the definite integral using tabular integration: ∫-3 to 3 x^2 dx
+A) 0
+B) 9
+C) 18
+D) 27
+Correct Answer: B
+
+Solution:
+The antiderivative of x^2 is x^3/3. So, ∫x^2 dx = x^3/3 + C. Evaluate at the limits: [(3)^3/3] - [(-3)^3/3] = 18 - (-18) = 9.
+
+Explanation:
+Tabular integration requires integrating the function and evaluating it at the limits to find the definite integral.
+
+Common mistake note:
+A common mistake is not simplifying the antiderivative before plugging in the limits, which may lead to answers C (18) or D (27).
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Evaluate the definite integral using tabular integration: ∫-4 to 4 sin(2x) dx
+A) 0
+B) -2
+C) 2
+D) 4
+Correct Answer: A
+
+Solution:
+The antiderivative of sin(2x) is -1/2 cos(2x). So, ∫sin(2x) dx = -1/2 cos(2x) + C. Evaluate at the limits: [-1/2 cos(8)] - [-1/2 cos(-8)] = 0.
+
+Explanation:
+Tabular integration involves integrating the function and evaluating it at the limits to find the definite integral.
+
+Common mistake note:
+A common mistake is not realizing that the cosine function is even, so the values at -8 and 8 will be equal, leading to a zero result. This would lead to answers B (-2), C (2), or D (4) which are incorrect.
+------------------------------------------------------------------------------

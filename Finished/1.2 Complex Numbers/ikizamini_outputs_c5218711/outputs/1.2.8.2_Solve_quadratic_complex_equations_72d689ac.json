@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.8.2",
+  "objective_text": "Solve quadratic complex equations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Solve the quadratic equation: (z - 3)(z + 4) = 0",
+      "choices": {
+        "A": "(3, 4)",
+        "B": "(-3, -4)",
+        "C": "(3, -4)",
+        "D": "(-3, 4)"
+      },
+      "correct_choice": "C",
+      "solution": "To solve the equation (z - 3)(z + 4) = 0, set each factor equal to zero and solve for z: z - 3 = 0 => z = 3 and z + 4 = 0 => z = -4. The solution is (3, -4).",
+      "explanation": "Tests finding roots by setting factors equal to zero.",
+      "common_mistake_notes": "Common mistake: choosing A or B, which are individual zeros of one factor, not both."
+    },
+    {
+      "id": "2",
+      "stem": "Solve the quadratic equation: z^2 + 4z + 4 = 0",
+      "choices": {
+        "A": "-2i",
+        "B": "2i",
+        "C": "-2, -2",
+        "D": "2, 2"
+      },
+      "correct_choice": "C",
+      "solution": "Use the quadratic formula: z = (-b ± √(b^2 - 4ac)) / (2a). For a = 1, b = 4, c = 4, we get z = (-4 ± √(0)) / 2 = -2. The solution is -2, -2.",
+      "explanation": "Tests applying the quadratic formula to an equation with real roots.",
+      "common_mistake_notes": "Common mistake: assuming complex roots due to form, but discriminant is zero."
+    },
+    {
+      "id": "3",
+      "stem": "Solve the quadratic equation: z^2 + 6z + 10 = 0",
+      "choices": {
+        "A": "-3 + i",
+        "B": "-3 - i",
+        "C": "-5, -1",
+        "D": "5, 1"
+      },
+      "correct_choice": "C",
+      "solution": "Use the quadratic formula: z = (-b ± √(b^2 - 4ac)) / (2a). For a = 1, b = 6, c = 10, we get z = (-6 ± √(-4)) / 2. The solutions are complex: z = -5 and z = -1.",
+      "explanation": "Tests solving for complex roots using the quadratic formula.",
+      "common_mistake_notes": "Common mistake: looking for real solutions, but discriminant is negative."
+    },
+    {
+      "id": "4",
+      "stem": "Solve the quadratic equation: (z + 2i)(z - 3i) = 5",
+      "choices": {
+        "A": "-1 + i",
+        "B": "1 - i",
+        "C": "1 + i, -1 - i",
+        "D": "-1 - i, 1 + i"
+      },
+      "correct_choice": "D",
+      "solution": "Expand: z^2 - iz - 6 = 5. Rearrange: z^2 - iz - 11 = 0. Use the quadratic formula: z = (i ± √(1 + 44)) / 2, simplifying to z = (i ± 3√5) / 2, or -1 - i and 1 + i.",
+      "explanation": "Tests expanding, rearranging, and using the quadratic formula with complex coefficients.",
+      "common_mistake_notes": "Common mistake: assuming simple factor combinations without considering right side."
+    },
+    {
+      "id": "5",
+      "stem": "Solve the quadratic equation: z^2 - 4z + 4 = (1 + i)z",
+      "choices": {
+        "A": "2 - i",
+        "B": "2 + i",
+        "C": "1 - i, 3 + i",
+        "D": "1 + i, 3 - i"
+      },
+      "correct_choice": "A",
+      "solution": "Rearrange: z^2 - (5 + i)z + 4 = 0. Use the quadratic formula: z = (-5 - i ± √(26 + 10i)) / 2. One root is real, z ≈ 2 - i.",
+      "explanation": "Tests rearranging, simplifying, and using quadratic formula with complex coefficients, recognizing one real root.",
+      "common_mistake_notes": "Common mistake: assuming both roots are real or conjugates without checking reality."
+    },
+    {
+      "id": "6",
+      "stem": "Solve the quadratic equation: z^2 + 8iz - 15 = 0",
+      "choices": {
+        "A": "-3 - 4i",
+        "B": "3 + 4i",
+        "C": "-3 + 4i, 3 - 4i",
+        "D": "3 + 4i, -3 + 4i"
+      },
+      "correct_choice": "C",
+      "solution": "Use the quadratic formula: z = (-8i ± √(-64 + 60)) / 2, simplifying to z = (-8i ± 2i) / 2, or -3i and 3i. Rewrite as -3 + 4i and 3 - 4i.",
+      "explanation": "Tests using the quadratic formula directly with complex coefficients, accepting complex roots.",
+      "common_mistake_notes": "Common mistake: looking for real solutions due to absence of imaginary terms."
+    },
+    {
+      "id": "7",
+      "stem": "Solve the quadratic equation: (z - 2i)^2 = 9",
+      "choices": {
+        "A": "-1 + i, 3 + i",
+        "B": "1 - i, -3 - i",
+        "C": "1 + i, -3 + i",
+        "D": "-1 - i, 3 - i"
+      },
+      "correct_choice": "C",
+      "solution": "Expand: z^2 - 4iz - 4 = 9. Rearrange: z^2 - 4iz - 13 = 0. Use the quadratic formula: z = (4i ± √(-64 + 52)) / 2, simplifying to z = (4i ± 2√3i) / 2, or 2i ± √3i, rewritten as 1 + i and -3 + i.",
+      "explanation": "Tests expanding, rearranging, using quadratic formula, and simplifying complex roots.",
+      "common_mistake_notes": "Common mistake: assuming simple factor combinations without considering right side."
+    }
+  ]
+}

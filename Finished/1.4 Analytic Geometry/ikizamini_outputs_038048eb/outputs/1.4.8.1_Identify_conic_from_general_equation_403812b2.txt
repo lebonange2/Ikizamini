@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.8.1 Identify conic from general equation
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.8 Conic Section Classification
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Given the equation 9x^2 + 24xy + 16y^2 - 36 = 0, identify the type of conic section.
+A) Circle
+B) Ellipse
+C) Parabola
+D) Hyperbola
+Correct Answer: B
+
+Solution:
+The general equation for an ellipse is Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0, where B^2 - 4AC < 0. In this case, A=9, B=24, C=16, and B^2 - 4AC = (24)^2 - 4(9)(16) = 576 - 576 = 0. Since B^2 - 4AC = 0, the equation represents an ellipse.
+
+Explanation:
+An ellipse is characterized by B^2 - 4AC < 0, a parabola by B^2 - 4AC = 0, and a hyperbola by B^2 - 4AC > 0. A circle is a special case of an ellipse with B=0.
+
+Common mistake note:
+A common mistake would be to choose 'C' (Parabola) because the equation has both x and y terms, but忽略了B^2 - 4AC = 0, which indicates an ellipse.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Identify the conic section represented by the equation 4x^2 + 8y^2 - 16x - 32y + 48 = 0.
+A) Circle
+B) Ellipse
+C) Parabola
+D) Hyperbola
+Correct Answer: A
+
+Solution:
+The equation can be rewritten as (2x)^2 + 2(2y)^2 - 8(2x) - 16y + 48 = 0, which simplifies to (2x - 4)^2 + 2(y - 2)^2 = 16. This is the equation of a circle with center at (2, 2) and radius sqrt(16) = 4.
+
+Explanation:
+A circle's equation can be written in the form (x - h)^2 + (y - k)^2 = r^2, where (h, k) is the center and r is the radius. In this case, we recognize the pattern and simplify to find the circle's properties.
+
+Common mistake note:
+A common mistake would be to choose 'B' (Ellipse) because of the presence of x^2 and y^2 terms, but忽略了the perfect square form indicating a circle.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+What type of conic section is described by the equation 16y^2 - 9x^2 + 72y - 54x = 0?
+A) Circle
+B) Ellipse
+C) Parabola
+D) Hyperbola
+Correct Answer: D
+
+Solution:
+The equation can be rewritten as (4y)^2 - (3x)^2 + 18(4y) - 18(3x) = 0, which simplifies to (4y + 9)^2 - (3x + 9)^2 = 0. This is the difference of squares form, representing a hyperbola.
+
+Explanation:
+A hyperbola's equation can be written in the form (x - h)^2/a^2 - (y - k)^2/b^2 = 1 or (y - k)^2/b^2 - (x - h)^2/a^2 = 1. In this case, we recognize the difference of squares pattern.
+
+Common mistake note:
+A common mistake would be to choose 'B' (Ellipse) because of the x^2 and y^2 terms with different coefficients, but忽略了the difference of squares form.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Determine the conic section for the equation 3x^2 - 6xy + 3y^2 + 12x - 12y = 0.
+A) Circle
+B) Ellipse
+C) Parabola
+D) Hyperbola
+Correct Answer: B
+
+Solution:
+The equation can be rewritten as (sqrt(3)x - sqrt(3)y)^2 + (2x - 2y)^2 = 12, which simplifies to (sqrt(3)x - sqrt(3)y)^2 + 2(x - y)^2 = 4. This represents an ellipse.
+
+Explanation:
+We factor out the square roots and recognize the pattern of a sum of squares, indicating an ellipse.
+
+Common mistake note:
+A common mistake would be to choose 'C' (Parabola) because of the x^2 and y^2 terms with the same coefficient, but忽略了the presence of two separate squared terms.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Identify the conic section for the equation 3x^2 + 6xy - 9y^2 = 0.
+A) Circle
+B) Ellipse
+C) Parabola
+D) Hyperbola
+Correct Answer: D
+
+Solution:
+The equation can be rewritten as (sqrt(3)x + sqrt(3)y)(sqrt(3)x - 3y) = 0, which represents two lines and thus a degenerate hyperbola.
+
+Explanation:
+A degenerate hyperbola is when the difference of squares factorization results in linear factors, indicating that the conic is actually two intersecting lines.
+
+Common mistake note:
+A common mistake would be to choose 'B' (Ellipse) because of the x^2 and y^2 terms with different coefficients, but忽略了the fact that it's a product of two linear factors.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+What type of conic section does the equation 4x^2 - 16y^2 + 32x - 64y = 0 represent?
+A) Circle
+B) Ellipse
+C) Parabola
+D) Hyperbola
+Correct Answer: D
+
+Solution:
+The equation can be rewritten as (2x)^2 - 4(2y)^2 + 8(2x) - 16(2y) = 0, which simplifies to (2x + 4)^2 - 4(2y + 4)^2 = 0. This is the difference of squares form, representing a hyperbola.
+
+Explanation:
+We factor out common factors and recognize the pattern of a difference of squares, indicating a hyperbola.
+
+Common mistake note:
+A common mistake would be to choose 'B' (Ellipse) because of the x^2 and y^2 terms with different coefficients, but忽略了the difference of squares form.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Determine the conic section for the equation 9x^2 + 16y^2 - 36x - 64y = 0.
+A) Circle
+B) Ellipse
+C) Parabola
+D) Hyperbola
+Correct Answer: B
+
+Solution:
+The equation can be rewritten as (sqrt(9)x - sqrt(9))^2 + (4y - 4)^2 = 36, which simplifies to (3x - 9)^2 + 4(y - 1)^2 = 36. This represents an ellipse.
+
+Explanation:
+We factor out the square roots and recognize the pattern of a sum of squares, indicating an ellipse.
+
+Common mistake note:
+A common mistake would be to choose 'C' (Parabola) because of the x^2 and y^2 terms with different coefficients, but忽略了the presence of two separate squared terms.
+------------------------------------------------------------------------------

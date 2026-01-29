@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.9.2 Choose u and dv appropriately (LIATE rule)
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.9 Integration Techniques - By Parts
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf1):
+Evaluate the integral ∫(3x^2 + 4x) dx using the LIATE rule. Choose the correct u and dv.
+A) (3x^3)/3 + (4x^2)/4
+B) u = 3x^2, dv = x dx
+C) u = 4x, dv = 3x^2 dx
+D) Invalid choice
+Correct Answer: B
+
+Solution:
+Using the LIATE rule (Logarithmic, Inverse Trigonometric, Algebraic, Trigonometric, Exponential), we choose u as the term with the highest power of x (3x^2) and dv as the remaining term (x dx). So, u = 3x^2 and dv = x dx. Integrating, ∫(3x^2)dx = (3/3)x^3 = x^3 and ∫(x)dx = (1/2)x^2.
+
+Explanation:
+The LIATE rule helps us select the appropriate u and dv for integration by parts. In this case, we prioritize the algebraic term with the highest power.
+
+Common mistake note:
+A common mistake is to choose u as 4x instead of 3x^2 because it's simpler. However, the LIATE rule prioritizes the term with the higher degree.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+Evaluate ∫(e^x sin(x)) dx using integration by parts. Choose the correct u and dv.
+A) u = e^x, dv = sin(x) dx
+B) u = sin(x), dv = e^x dx
+C) (e^x cos(x))/2 - ∫(cos(x)e^x) dx
+D) Invalid choice
+Correct Answer: A
+
+Solution:
+Using the LIATE rule, we choose u as e^x (exponential term) and dv as sin(x) (trigonometric term). So, u = e^x and dv = sin(x) dx. Integrating, ∫(e^x)dx = e^x and ∫(sin(x))dx = -cos(x). The integral becomes e^x(-cos(x)) + ∫(cos(x)e^x) dx.
+
+Explanation:
+The LIATE rule guides us to select the exponential term as u and the trigonometric term as dv. This choice leads to a simpler antiderivative for u.
+
+Common mistake note:
+A common mistake is to choose u = sin(x), which would result in an infinite loop of integration by parts. The LIATE rule helps avoid this.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+Evaluate ∫(ln(x)) dx using integration by parts. Choose the correct u and dv.
+A) u = ln(x), dv = 1/x dx
+B) u = x, dv = ln(x) dx
+C) x ln(x) - ∫(x dx)
+D) Invalid choice
+Correct Answer: A
+
+Solution:
+Using the LIATE rule, we choose u as ln(x) (logarithmic term) and dv as 1/x dx. So, u = ln(x) and dv = 1/x dx. Integrating, ∫(ln(x))dx = x ln(x) - ∫(x dx).
+
+Explanation:
+The LIATE rule guides us to select the logarithmic term as u and the inverse trigonometric term (in this case, reciprocal of x) as dv.
+
+Common mistake note:
+A common mistake is to choose u = 1/x, which would lead to a more complex integral. The LIATE rule helps simplify the process.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+Evaluate ∫(sin(x) cos(x)) dx using integration by parts. Choose the correct u and dv.
+A) u = sin(x), dv = cos(x) dx
+B) u = cos(x), dv = sin(x) dx
+C) 2sin^2(x)
+D) Invalid choice
+Correct Answer: B
+
+Solution:
+Using the LIATE rule, we choose u as cos(x) (trigonometric term) and dv as sin(x) dx. So, u = cos(x) and dv = sin(x) dx. Integrating, ∫(cos(x))dx = sin(x) and ∫(sin(x))dx = -cos(x). The integral becomes sin(x)cos(x) + ∫(-cos^2(x)) dx.
+
+Explanation:
+The LIATE rule guides us to select the cosine term as u and the sine term as dv. This choice simplifies the antiderivative for u.
+
+Common mistake note:
+A common mistake is to choose u = sin(x), which would result in a more complex integral. The LIATE rule helps simplify the process.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+Evaluate ∫(e^x cos(x)) dx using integration by parts. Choose the correct u and dv.
+A) u = e^x, dv = cos(x) dx
+B) u = cos(x), dv = e^x dx
+C) sin(x)e^x - ∫(sin(x)e^x) dx
+D) Invalid choice
+Correct Answer: A
+
+Solution:
+Using the LIATE rule, we choose u as e^x (exponential term) and dv as cos(x) (trigonometric term). So, u = e^x and dv = cos(x) dx. Integrating, ∫(e^x)dx = e^x and ∫(cos(x))dx = sin(x). The integral becomes e^xsin(x) - ∫(sin(x)e^x) dx.
+
+Explanation:
+The LIATE rule guides us to select the exponential term as u and the trigonometric term as dv. This choice simplifies the antiderivative for u.
+
+Common mistake note:
+A common mistake is to choose u = cos(x), which would result in an infinite loop of integration by parts. The LIATE rule helps avoid this.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+Evaluate ∫(x^2 ln(x)) dx using integration by parts. Choose the correct u and dv.
+A) u = x^2, dv = ln(x) dx
+B) u = ln(x), dv = x^2 dx
+C) x^3/3 - ∫(x^2/x) dx
+D) Invalid choice
+Correct Answer: A
+
+Solution:
+Using the LIATE rule, we choose u as x^2 (algebraic term with highest power) and dv as ln(x) (logarithmic term). So, u = x^2 and dv = ln(x) dx. Integrating, ∫(x^2)dx = x^3/3 and ∫(ln(x))dx = x ln(x) - x. The integral becomes x^3 ln(x)/3 - ∫(x ln(x) - x/x^2) dx.
+
+Explanation:
+The LIATE rule guides us to select the algebraic term with the highest power as u and the logarithmic term as dv. This choice simplifies the antiderivative for u.
+
+Common mistake note:
+A common mistake is to choose u = ln(x), which would result in a more complex integral. The LIATE rule helps simplify the process.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+Evaluate ∫(x^2 e^(-x)) dx using integration by parts. Choose the correct u and dv.
+A) u = x^2, dv = e^(-x) dx
+B) u = e^(-x), dv = x^2 dx
+C) -(x^2 e^(-x)) - 2∫(xe^(-x)) dx
+D) Invalid choice
+Correct Answer: A
+
+Solution:
+Using the LIATE rule, we choose u as x^2 (algebraic term with highest power) and dv as e^(-x) (exponential term). So, u = x^2 and dv = e^(-x) dx. Integrating, ∫(x^2)dx = x^3/3 and ∫(e^(-x))dx = -e^(-x). The integral becomes -(x^2 e^(-x))/3 + 2∫(xe^(-x)) dx.
+
+Explanation:
+The LIATE rule guides us to select the algebraic term with the highest power as u and the exponential term as dv. This choice simplifies the antiderivative for u.
+
+Common mistake note:
+A common mistake is to choose u = e^(-x), which would result in a more complex integral. The LIATE rule helps simplify the process.
+------------------------------------------------------------------------------

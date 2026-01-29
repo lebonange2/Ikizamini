@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.13.9 Apply power mapping w = z^n
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.13 Conformal Mapping
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (?):
+Find the value of w when z = 2 and n = 3, using the power mapping formula w = z^n.
+A) 4
+B) 6
+C) 8
+D) 10
+Correct Answer: C
+
+Solution:
+w = z^n = 2^3 = 8
+
+Explanation:
+The power mapping formula states that the new value of w is equal to the original value of z raised to the power of n. In this case, z = 2 and n = 3, so we calculate w as 2 cubed, which equals 8.
+
+Common mistake note:
+A common mistake would be to multiply z by n instead of raising z to the power of n. This would result in an incorrect answer of 6 (2 	imes 3) rather than the correct answer of 8.
+------------------------------------------------------------------------------
+
+Problem 2 (?):
+Evaluate w when z = -1 and n = 4, using the power mapping formula w = z^n.
+A) -4
+B) 1
+C) -1
+D) 4
+Correct Answer: B
+
+Solution:
+w = z^n = (-1)^4 = 1
+
+Explanation:
+The power mapping formula applies to negative numbers as well. When n is an even number, a negative base raised to that power will result in a positive value. In this case, -1 raised to the power of 4 (an even number) equals 1.
+
+Common mistake note:
+A common mistake would be to think that any negative number raised to an even power is always negative. This is false; when raising a negative number to an even power, the result will actually be positive.
+------------------------------------------------------------------------------
+
+Problem 3 (?):
+Calculate w if z = 3i and n = 2, using the power mapping formula w = z^n.
+A) 6i
+B) -9
+C) 9
+D) -6i
+Correct Answer: A
+
+Solution:
+w = z^n = (3i)^2 = -9
+
+Explanation:
+When dealing with complex numbers, the power mapping formula still applies. For z = 3i and n = 2, we first square the imaginary part (3^2) and then multiply by i^2. Since i^2 = -1, w = (-9)i or 6i when written in standard form.
+
+Common mistake note:
+A common mistake would be to forget that i^2 equals -1, leading to an incorrect result of 9i. Remembering the property of i^2 is crucial for correctly handling complex numbers.
+------------------------------------------------------------------------------
+
+Problem 4 (?):
+Find w when z = √2 and n = 0.5, using the power mapping formula w = z^n.
+A) 1
+B) √2
+C) 2
+D) 4
+Correct Answer: B
+
+Solution:
+w = z^n = (√2)^(1/2) = √(2^1/2) = √√2 = √2
+
+Explanation:
+When raising a number to the power of 0.5 (or square root), it's equivalent to taking the square root of that number. Thus, (√2)^(1/2) simplifies to √2.
+
+Common mistake note:
+A common mistake would be to think that raising to the power of 0.5 means squaring the number, which is incorrect. Raising to the power of 0.5 actually means taking the square root.
+------------------------------------------------------------------------------
+
+Problem 5 (?):
+Determine w when z = -4 and n = -2, using the power mapping formula w = z^n.
+A) -16
+B) 1
+C) 1/16
+D) 4
+Correct Answer: C
+
+Solution:
+w = z^n = (-4)^(-2) = 1/((-4)^2) = 1/16
+
+Explanation:
+When raising a number to a negative power, it's equivalent to taking the reciprocal of that number raised to the positive power. In this case, w is equal to 1 divided by -4 squared, which equals 1/16.
+
+Common mistake note:
+A common mistake would be to think that when n is negative, the result will also be negative. However, raising a number to a negative power actually inverts the value, so the result here is positive.
+------------------------------------------------------------------------------
+
+Problem 6 (?):
+Calculate w if z = 5 and n = -1/2, using the power mapping formula w = z^n.
+A) √5
+B) 1/√5
+C) 5^(1/2)
+D) 5^(-1/2)
+Correct Answer: B
+
+Solution:
+w = z^n = 5^(-1/2) = 1/(5^(1/2)) = 1/√5
+
+Explanation:
+When raising a number to a negative fraction, it's equivalent to taking the reciprocal of that number raised to the positive fraction. In this case, w is equal to 1 divided by the square root of 5, which equals 1/√5.
+
+Common mistake note:
+A common mistake would be to forget that when n is negative, the result will be the reciprocal of the original value. Here, it's important to remember to take the reciprocal of √5 rather than just squaring 5.
+------------------------------------------------------------------------------
+
+Problem 7 (?):
+Find w if z = -1 + i and n = 3, using the power mapping formula w = z^n.
+A) -6 - 8i
+B) 6 + 8i
+C) 6 - 8i
+D) -6 + 8i
+Correct Answer: A
+
+Solution:
+w = z^n = (-1 + i)^3 = -2 - 4i + 4i^2 = -2 - 4(-1) = -2 + 4 = 2
+
+Explanation:
+When raising a complex number to a power, you need to apply the binomial theorem or expand the expression. In this case, (-1 + i)^3 simplifies to -2 + 4i^2, and since i^2 = -1, we get w = -2 + 4(-1) = -6 - 8i.
+
+Common mistake note:
+A common mistake would be to forget the properties of complex numbers when expanding the expression. It's crucial to remember that i^2 equals -1 and apply it correctly.
+------------------------------------------------------------------------------

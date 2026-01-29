@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.7.15",
+  "objective_text": "Use in navigation systems (LORAN)",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "1",
+      "stem": "What is the primary use of LORAN?",
+      "choices": {
+        "A": "GPS tracking",
+        "B": "Radio communication",
+        "C": "Underwater navigation",
+        "D": "Long-range navigation"
+      },
+      "correct_choice": "D",
+      "solution": "LORAN (Long-Range Navigation) is a radio-based navigation system that uses multiple transmitters to determine the precise location of a receiver on land, sea, or air. It was primarily used for long-range navigation before GPS became widely available.",
+      "explanation": "LORAN works by measuring the time difference between signals received from two or more transmitting stations, which allows it to calculate the position of the receiver accurately.",
+      "common_mistake_notes": "Confusion with GPS functions."
+    },
+    {
+      "id": "2",
+      "stem": "What distinguishes LORAN signals?",
+      "choices": {
+        "A": "Short-range transmission",
+        "B": "Single transmitter station",
+        "C": "Frequency modulation",
+        "D": "Time difference measurement"
+      },
+      "correct_choice": "D",
+      "solution": "LORAN signals are characterized by their use of time difference measurements to determine the position of a receiver. The system relies on multiple transmitters and measures the time it takes for the signals to reach the receiver, which helps in calculating its location.",
+      "explanation": "Options A (short-range transmission) and B (single transmitter station) are not accurate descriptions of LORAN. Option C (frequency modulation) may be part of the signal but is not the main characteristic.",
+      "common_mistake_notes": "Confusion with systems using different technologies."
+    },
+    {
+      "id": "3",
+      "stem": "How many transmitter stations are typically required for LORAN to function accurately?",
+      "choices": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "correct_choice": "B",
+      "solution": "At least two transmitter stations are needed in a LORAN system to calculate the position of a receiver using time difference measurements. Additional stations can improve accuracy and reliability.",
+      "explanation": "One station is insufficient, while more than two stations provide better performance but are not mandatory.",
+      "common_mistake_notes": "Assuming more发射站是开始导航的必要条件。"
+    },
+    {
+      "id": "4",
+      "stem": "In which decade was LORAN first developed?",
+      "choices": {
+        "A": "1920s",
+        "B": "1940s",
+        "C": "1960s",
+        "D": "1980s"
+      },
+      "correct_choice": "B",
+      "solution": "LORAN, or Long-Range Navigation, was developed during the 1940s as a navigation system for military and commercial use. It became operational in the late 1950s.",
+      "explanation": "Options A (1920s) and D (1980s) are incorrect timeframes. Option C (1960s) comes after LORAN's development.",
+      "common_mistake_notes": "Misattributing LORAN's development to a different era."
+    },
+    {
+      "id": "5",
+      "stem": "How does the accuracy of LORAN compare to GPS?",
+      "choices": {
+        "A": "More accurate",
+        "B": "Less accurate",
+        "C": "同等准确",
+        "D": "Depends on the environment"
+      },
+      "correct_choice": "B",
+      "solution": "LORAN, while effective in its time, is generally less accurate than GPS. GPS provides centimeter-level precision, whereas LORAN's accuracy ranges from几十米 to几百米.",
+      "explanation": "GPS is more precise than LORAN due to satellite-based signals.",
+      "common_mistake_notes": "Believing LORAN and GPS have similar or higher accuracy."
+    },
+    {
+      "id": "6",
+      "stem": "What event marked the end of LORAN's primary role in navigation?",
+      "choices": {
+        "A": "Introduction of GPS",
+        "B": "Invention of radar",
+        "C": "Development of radio direction finding",
+        "D": "Adoption of digital communication standards"
+      },
+      "correct_choice": "A",
+      "solution": "The introduction of GPS in the 1980s and its widespread adoption led to LORAN's decline as a primary navigation system.",
+      "explanation": "Options B, C, and D are unrelated or not the main reason for LORAN's decline.",
+      "common_mistake_notes": "Attributing LORAN's decline to other technologies' advancements rather than GPS."
+    },
+    {
+      "id": "7",
+      "stem": "How does a LORAN receiver determine its position?",
+      "choices": {
+        "A": "By comparing signal strength from multiple stations",
+        "B": "By receiving signals from a single satellite",
+        "C": "By measuring the angle between transmitting stations",
+        "D": "By calculating the difference in arrival time of signals"
+      },
+      "correct_choice": "D",
+      "solution": "A LORAN receiver calculates its position by measuring the difference in arrival time of signals from at least two transmitter stations. This information, combined with the known locations of the transmitters, determines the receiver's location.",
+      "explanation": "Options A, B, and C are not methods used in LORAN systems.",
+      "common_mistake_notes": "Confusing LORAN with systems using different positioning techniques."
+    }
+  ]
+}

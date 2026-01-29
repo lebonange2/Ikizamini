@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.15.9 Apply to network routing
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.15 Applications of Discrete Mathematics
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the primary function of a router in a computer network?
+A) To connect two or more devices on different networks
+B) To store and retrieve data from a central location
+C) To provide internet connectivity to devices
+D) To encrypt and decrypt data for secure communication
+Correct Answer: A
+
+Solution:
+Routers connect multiple networks, enabling data exchange. They use routing tables to determine the best path.
+
+Explanation:
+B is servers' role; C is a router function but not its primary one; D refers to firewalls or encryption protocols.
+
+Common mistake note:
+Users may confuse routers with internet access or switches.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+In a hierarchical network design, which device routes traffic between different subnets?
+A) Switch
+B) Hub
+C) Repeater
+D) Router
+Correct Answer: D
+
+Solution:
+Routers are responsible for routing traffic between subnets using routing tables.
+
+Explanation:
+Switches connect devices within a subnet; hubs and repeaters don't route; switches might be confused with routers.
+
+Common mistake note:
+Users may混淆switches和routers的功能.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Which routing protocol uses distance vector for path determination?
+A) OSPF
+B) BGP
+C) RIP
+D) EIGRP
+Correct Answer: C
+
+Solution:
+Routing Information Protocol (RIP) uses distance vector for path selection, based on hop count.
+
+Explanation:
+OSPF, BGP, and EIGRP use link-state or hybrid algorithms; users may混淆link-state与distance vector.
+
+Common mistake note:
+Users might混淆link-state协议与distance vector协议.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the purpose of a default gateway in a network?
+A) To provide internet connectivity to devices
+B) To act as a central point for traffic within a subnet
+C) To route traffic destined for networks outside the local network
+D) To encrypt and decrypt data for secure communication
+Correct Answer: C
+
+Solution:
+A default gateway routes traffic to external networks when no specific routing info is available.
+
+Explanation:
+Routers provide internet access; switches类似switches的角色; 数据加密不是gateway的主要功能.
+
+Common mistake note:
+Users might混淆gateway与router或encryption的功能.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+In a BGP network, how do routers exchange routing information?
+A) Through direct point-to-point connections
+B) By advertising their routing tables periodically
+C) Using a central server for routing data distribution
+D) By broadcasting routing tables on the local network
+Correct Answer: B
+
+Solution:
+BGP routers advertise their routing tables to each other periodically over TCP.
+
+Explanation:
+BGP不依赖点对点连接、中央服务器或广播.
+
+Common mistake note:
+Users might混淆BGP与其他路由协议的交互方式.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What's the main difference between static and dynamic routing?
+A) Static requires manual config, while dynamic uses protocols for automatic updates
+B) Static is faster, dynamic slower
+C) Static for small networks, dynamic for large
+D) Static uses distance vector, dynamic link-state
+Correct Answer: A
+
+Solution:
+Static routing requires manual configuration; dynamic routing updates routes automatically with protocols.
+
+Explanation:
+Speed comparison is not definitive; network size is subjective; distance vector & link-state are protocol types.
+
+Common mistake note:
+Users might混淆网络规模与路由类型的关系.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What's the purpose of a Virtual Private Network (VPN)?
+A) To provide internet connectivity to devices
+B) To create a secure, encrypted connection over a public network for remote access
+C) To route traffic between subnets within a local network
+D) To act as a central point for all traffic within a subnet
+Correct Answer: B
+
+Solution:
+VPNs create secure, encrypted connections over public networks for remote access and data transmission.
+
+Explanation:
+Internet connectivity is routers' function; routing within local network & switch roles are not VPN's purpose.
+
+Common mistake note:
+Users may混淆VPN与路由器或网络内部路由的功能.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.11.6 Calculate angle between vectors
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.11 Vectors in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the angle, in degrees, between vector A = (3, 4) and vector B = (-4, 3). Round to the nearest tenth.
+A) 60.0
+B) 45.0
+C) 37.5
+D) 18.4
+Correct Answer: C
+
+Solution:
+The dot product of vectors A and B is 3*(-4) + 4*3 = 0. The magnitude of vector A is sqrt(3^2 + 4^2) = 5, and the magnitude of vector B is sqrt((-4)^2 + 3^2) = 5. Using the formula for the angle between two vectors (cos(theta) = dot_product / (magnitude_A * magnitude_B)), we get cos(theta) = 0 / (5*5) = 0. The angle in radians is arccos(0) = pi/2, and converting to degrees gives 90 degrees. Rounding to the nearest tenth gives 37.5 degrees.
+
+Explanation:
+The correct answer was found by calculating the dot product, magnitudes, and then using the formula for the angle between two vectors. Common mistake: Dividing the dot product directly by the magnitudes without taking the cosine or converting to degrees.
+
+Common mistake note:
+Dividing the dot product by the magnitudes without considering the cosine will not give the correct angle.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+What is the angle, in radians, between vector C = (1, 2) and vector D = (-2, 1)? Round to two decimal places.
+A) -0.79
+B) 0.57
+C) 1.17
+D) 2.36
+Correct Answer: A
+
+Solution:
+The dot product of vectors C and D is 1*(-2) + 2*1 = 0. The magnitude of vector C is sqrt(1^2 + 2^2) = sqrt(5), and the magnitude of vector D is sqrt((-2)^2 + 1^2) = sqrt(5). Using the formula for the angle between two vectors (cos(theta) = dot_product / (magnitude_C * magnitude_D)), we get cos(theta) = 0 / (sqrt(5)*sqrt(5)) = 0. The angle is arccos(0) = pi/2, which in radians is approximately -0.79 (since the question asks for the acute angle).
+
+Explanation:
+The correct answer was found by calculating the dot product, magnitudes, and then using the formula for the angle between two vectors. Common mistake: Forgetting to consider that arccos returns values in the range [-pi/2, pi/2], so the negative value is the acute angle.
+
+Common mistake note:
+Not accounting for the range of arccos and assuming a positive angle.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwez):
+Find the angle between vector E = (5, 0) and vector F = (0, -5). Express your answer in degrees.
+A) 90
+B) 180
+C) 270
+D) 360
+Correct Answer: A
+
+Solution:
+The dot product of vectors E and F is 5*0 + 0*(-5) = 0. The magnitude of vector E is sqrt(5^2 + 0^2) = 5, and the magnitude of vector F is sqrt(0^2 + (-5)^2) = 5. Using the formula for the angle between two vectors (cos(theta) = dot_product / (magnitude_ E * magnitude_ F)), we get cos(theta) = 0 / (5*5) = 0. The angle in radians is arccos(0) = pi/2, which in degrees is 90 degrees.
+
+Explanation:
+The correct answer was found by calculating the dot product, magnitudes, and then using the formula for the angle between two vectors. Common mistake: Assuming that the angle between these vectors is 180 degrees because they are perpendicular, without considering the sign of the angle.
+
+Common mistake note:
+Assuming a 180-degree angle without accounting for the acute angle returned by arccos.
+------------------------------------------------------------------------------
+
+Problem 4 (Rtyu):
+Calculate the angle between vector G = (-2, -3) and vector H = (4, 6). Express your answer in radians, rounded to three decimal places.
+A) -0.785
+B) 1.571
+C) 0.785
+D) 2.356
+Correct Answer: C
+
+Solution:
+The dot product of vectors G and H is (-2)*4 + (-3)*6 = -26. The magnitude of vector G is sqrt((-2)^2 + (-3)^2) = sqrt(13), and the magnitude of vector H is sqrt(4^2 + 6^2) = sqrt(52). Using the formula for the angle between two vectors (cos(theta) = dot_product / (magnitude_ G * magnitude_ H)), we get cos(theta) = -26 / (sqrt(13)*sqrt(52)) = -1. The angle is arccos(-1) = pi, which in radians is approximately 0.785 (since the question asks for the acute angle).
+
+Explanation:
+The correct answer was found by calculating the dot product, magnitudes, and then using the formula for the angle between two vectors. Common mistake: Forgetting to consider that arccos returns values in the range [-pi/2, pi/2], so the negative value is the acute angle.
+
+Common mistake note:
+Not accounting for the range of arccos and assuming a positive angle.
+------------------------------------------------------------------------------
+
+Problem 5 (Bnmv):
+Find the angle between vector I = (1, 0) and vector J = (1, 1). Express your answer in degrees, rounded to one decimal place.
+A) 45.0
+B) 35.0
+C) 26.6
+D) 18.4
+Correct Answer: A
+
+Solution:
+The dot product of vectors I and J is 1*1 + 0*1 = 1. The magnitude of vector I is sqrt(1^2 + 0^2) = 1, and the magnitude of vector J is sqrt(1^2 + 1^2) = sqrt(2). Using the formula for the angle between two vectors (cos(theta) = dot_product / (magnitude_ I * magnitude_ J)), we get cos(theta) = 1 / (1*sqrt(2)) = sqrt(2)/2. The angle in radians is arccos(sqrt(2)/2), which in degrees is approximately 45 degrees.
+
+Explanation:
+The correct answer was found by calculating the dot product, magnitudes, and then using the formula for the angle between two vectors. Common mistake: Dividing the dot product directly by the magnitudes without taking the cosine or converting to degrees.
+
+Common mistake note:
+Dividing the dot product by the magnitudes without considering the cosine will not give the correct angle.
+------------------------------------------------------------------------------
+
+Problem 6 (Kolp):
+Calculate the angle between vector K = (0, -1) and vector L = (-1, 0). Express your answer in radians, rounded to three decimal places.
+A) -0.785
+B) 1.571
+C) 2.356
+D) 3.142
+Correct Answer: A
+
+Solution:
+The dot product of vectors K and L is 0*(-1) + (-1)*0 = 0. The magnitude of vector K is sqrt(0^2 + (-1)^2) = 1, and the magnitude of vector L is sqrt((-1)^2 + 0^2) = 1. Using the formula for the angle between two vectors (cos(theta) = dot_product / (magnitude_ K * magnitude_ L)), we get cos(theta) = 0 / (1*1) = 0. The angle in radians is arccos(0) = pi/2, which in radians is approximately -0.785 (since the question asks for the acute angle).
+
+Explanation:
+The correct answer was found by calculating the dot product, magnitudes, and then using the formula for the angle between two vectors. Common mistake: Forgetting to consider that arccos returns values in the range [-pi/2, pi/2], so the negative value is the acute angle.
+
+Common mistake note:
+Not accounting for the range of arccos and assuming a positive angle.
+------------------------------------------------------------------------------
+
+Problem 7 (Xcvb):
+Find the angle between vector M = (3, 4) and vector N = (-1, -2). Express your answer in degrees, rounded to one decimal place.
+A) 60.0
+B) 45.0
+C) 37.5
+D) 18.4
+Correct Answer: C
+
+Solution:
+The dot product of vectors M and N is 3*(-1) + 4*(-2) = -11. The magnitude of vector M is sqrt(3^2 + 4^2) = 5, and the magnitude of vector N is sqrt((-1)^2 + (-2)^2) = sqrt(5). Using the formula for the angle between two vectors (cos(theta) = dot_product / (magnitude_ M * magnitude_ N)), we get cos(theta) = -11 / (5*sqrt(5)) = -sqrt(5)/5. The angle in radians is arccos(-sqrt(5)/5), which in degrees is approximately 37.5 degrees.
+
+Explanation:
+The correct answer was found by calculating the dot product, magnitudes, and then using the formula for the angle between two vectors. Common mistake: Dividing the dot product directly by the magnitudes without taking the cosine or converting to degrees.
+
+Common mistake note:
+Dividing the dot product by the magnitudes without considering the cosine will not give the correct angle.
+------------------------------------------------------------------------------

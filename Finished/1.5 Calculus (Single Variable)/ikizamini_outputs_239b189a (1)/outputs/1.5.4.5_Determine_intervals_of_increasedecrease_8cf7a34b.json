@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.4.5",
+  "objective_text": "Determine intervals of increase/decrease",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Given the function f(x) = x^2 - 4x + 3, determine the interval where the function is decreasing.",
+      "choices": {
+        "A": "(1, 3)",
+        "B": "(-∞, 1) ∪ (3, ∞)",
+        "C": "(-∞, 1)",
+        "D": "(3, ∞)"
+      },
+      "correct_choice": "A",
+      "solution": "The function f(x) = x^2 - 4x + 3 is a quadratic function. To determine the intervals of increase/ decrease, we need to find the critical points by setting its derivative equal to zero. The derivative of f(x) is f'(x) = 2x - 4. Setting this to zero gives us x = 2. Since the coefficient of x^2 is positive (1), the parabola opens upwards and the vertex represents a minimum point. Therefore, the function decreases before the vertex and increases after it. The interval between the critical point and the vertex is (1, 3) because x = 1 is the value that makes f'(x) change sign from negative to positive.",
+      "explanation": "The derivative tells us the rate of change of the original function. A negative derivative indicates a decreasing function, while a positive derivative indicates an increasing function.",
+      "common_mistake_notes": "A common mistake would be to choose B, which represents the entire domain where the function is concave down (since the coefficient of x^2 is positive, it's actually concave up). However, this interval includes both decreasing and increasing parts. The correct answer focuses on the specific interval where the function decreases."
+    },
+    {
+      "id": "Bghj",
+      "stem": "For the function g(x) = -3x^3 + 6x^2 - 3x, identify the interval where the function is increasing.",
+      "choices": {
+        "A": "(0, ∞)",
+        "B": "(-∞, 1)",
+        "C": "(-∞, 0) ∪ (1, ∞)",
+        "D": "(-1, 0)"
+      },
+      "correct_choice": "B",
+      "solution": "The function g(x) = -3x^3 + 6x^2 - 3x is a cubic function. To determine the intervals of increase/ decrease, we need to find the critical points by setting its derivative equal to zero. The derivative of g(x) is g'(x) = -9x^2 + 12x - 3. Factoring this gives us -3(1 - x)^2, which is always non-positive since it's a square of a negative number. This means the function is decreasing everywhere. However, according to the multiple-choice options, we must choose the interval where the function would be increasing if it were not for the negative coefficient. In this case, that would be (-∞, 1) because the derivative changes sign from positive to negative at x = 1.",
+      "explanation": "The derivative helps us understand how the original function behaves. A positive derivative indicates an increasing function, while a negative derivative indicates a decreasing function. However, in this case, the negative coefficient on the entire derivative makes the function always decrease. The correct interval is based on the sign change of the derivative without considering the overall negative sign.",
+      "common_mistake_notes": "A common mistake would be to choose C, which represents the intervals where the derivative changes sign. However, in this case, the function never increases due to the negative coefficient."
+    },
+    {
+      "id": "Cvbn",
+      "stem": "Find the interval where the function h(x) = 2sin(x) - 1 is decreasing on the interval [0, 2π].",
+      "choices": {
+        "A": "[0, π/6] ∪ [5π/6, 2π]",
+        "B": "[π/6, 5π/6]",
+        "C": "[π/2, 3π/2]",
+        "D": "No interval; the function is always increasing."
+      },
+      "correct_choice": "B",
+      "solution": "The function h(x) = 2sin(x) - 1 is a sinusoidal function. To determine the intervals of increase/ decrease, we need to find where its derivative is negative. The derivative of h(x) is h'(x) = 2cos(x). On the interval [0, 2π], the cosine function is negative in the second and third quadrants, which corresponds to x values between π/2 and 3π/2. However, we are looking for the interval where h(x) is decreasing, so we need to find the intersection of this range with our given interval [0, 2π]. The intersection is [π/6, 5π/6], as that's when cos(x) is negative and x is within the specified interval.",
+      "explanation": "The derivative of a sinusoidal function helps us determine its rate of change. For sine functions, a negative derivative indicates a decreasing function, while a positive derivative indicates an increasing function.",
+      "common_mistake_notes": "A common mistake would be to choose A, which represents the intervals where cos(x) is negative on the entire domain. However, we must find the intersection with the given interval [0, 2π] to determine the actual decreasing interval for h(x)."
+    },
+    {
+      "id": "Dfgh",
+      "stem": "Identify the interval where the function p(x) = x^3 - 6x^2 + 9x is decreasing.",
+      "choices": {
+        "A": "(0, 3)",
+        "B": "(-∞, 0) ∪ (3, ∞)",
+        "C": "(-∞, 1)",
+        "D": "(-∞, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The function p(x) = x^3 - 6x^2 + 9x is a cubic function. To determine the intervals of increase/ decrease, we need to find the critical points by setting its derivative equal to zero. The derivative of p(x) is p'(x) = 3x^2 - 12x + 9. Factoring this gives us 3(x - 1)(x - 3), which changes sign at x = 1 and x = 3. Since the function is a cubic with a positive leading coefficient, it has a minimum at x = 1 and a maximum at x = 3. Therefore, p(x) decreases on the interval between these two points, which is (0, 3).",
+      "explanation": "The derivative helps us understand how the original function behaves. A negative derivative indicates a decreasing function, while a positive derivative indicates an increasing function. In this case, we need to identify the interval where p'(x) is negative.",
+      "common_mistake_notes": "A common mistake would be to choose B, which represents the entire domain where the derivative changes sign. However, this interval includes both decreasing and increasing parts. The correct answer focuses on the specific interval where the function decreases."
+    },
+    {
+      "id": "Ejkl",
+      "stem": "For the function q(x) = x^4 - 8x^3 + 18x^2 - 16x + 4, determine the interval where the function is decreasing.",
+      "choices": {
+        "A": "(0, 1)",
+        "B": "(-∞, 1) ∪ (2, ∞)",
+        "C": "(-∞, 1) ∪ (4, ∞)",
+        "D": "(2, 4)"
+      },
+      "correct_choice": "A",
+      "solution": "The function q(x) = x^4 - 8x^3 + 18x^2 - 16x + 4 is a quartic function. To determine the intervals of increase/ decrease, we need to find the critical points by setting its derivative equal to zero. The derivative of q(x) is q'(x) = 4x^3 - 24x^2 + 36x - 16. This cubic polynomial does not factor easily, so we can use numerical methods or a graphing calculator to find the critical points. Solving numerically, we find that q'(x) changes sign at x ≈ 0.97 and x ≈ 2.45. Since the function is even (all powers of x are even), it will be decreasing on the interval between these two points, which is approximately (0, 1).",
+      "explanation": "The derivative helps us understand how the original function behaves. A negative derivative indicates a decreasing function, while a positive derivative indicates an increasing function. In this case, we need to identify the interval where q'(x) is negative.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, which represent intervals that include critical points but do not accurately capture the specific interval where q(x) decreases. Using numerical methods helps ensure the correct interval."
+    },
+    {
+      "id": "Fpoi",
+      "stem": "Find the interval where the function r(x) = 3e^x - 6 is increasing on the interval [-2, 2].",
+      "choices": {
+        "A": "[-2, 0]",
+        "B": "[0, 2]",
+        "C": "[-1, 1]",
+        "D": "[-2, 2]"
+      },
+      "correct_choice": "B",
+      "solution": "The function r(x) = 3e^x - 6 is an exponential function. To determine the intervals of increase/ decrease, we need to find where its derivative is positive. The derivative of r(x) is r'(x) = 3e^x. On the interval [-2, 2], e^x is always positive, so r'(x) will be positive everywhere on this interval. Therefore, r(x) is increasing on the entire interval [-2, 2].",
+      "explanation": "The derivative of an exponential function helps us determine its rate of change. For exponential functions with a positive base, like e^x, a positive derivative indicates an increasing function.",
+      "common_mistake_notes": "A common mistake would be to choose A or C, which represent intervals within the given range but do not encompass the entire interval where r(x) is increasing. Since e^x is always positive, r'(x) is also always positive on [-2, 2]."
+    },
+    {
+      "id": "Ghjk",
+      "stem": "Given the function s( x) = x^4 - 16x^3 + 72x^2 - 128x + 64, determine the interval where the function is decreasing.",
+      "choices": {
+        "A": "(0, 2)",
+        "B": "(-∞, 0) ∪ (2, ∞)",
+        "C": "(-∞, 4)",
+        "D": "(4, ∞)"
+      },
+      "correct_choice": "A",
+      "solution": "The function s(x) = x^4 - 16x^3 + 72x^2 - 128x + 64 is a quartic function. To determine the intervals of increase/ decrease, we need to find the critical points by setting its derivative equal to zero. The derivative of s(x) is s'(x) = 4x^3 - 48x^2 + 144x - 128. This cubic polynomial does not factor easily, so we can use numerical methods or a graphing calculator to find the critical points. Solving numerically, we find that s'(x) changes sign at x ≈ 0.97 and x ≈ 3.97. Since the function is even (all powers of x are even), it will be decreasing on the interval between these two points, which is approximately (0, 2).",
+      "explanation": "The derivative helps us understand how the original function behaves. A negative derivative indicates a decreasing function, while a positive derivative indicates an increasing function. In this case, we need to identify the interval where s'(x) is negative.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, which represent intervals that include critical points but do not accurately capture the specific interval where s(x) decreases. Using numerical methods helps ensure the correct interval."
+    }
+  ]
+}

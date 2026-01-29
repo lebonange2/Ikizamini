@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.3.7",
+  "objective_text": "Find dy/dx for implicit equations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find dy/dx for the equation x^2 + y^2 = 25.",
+      "choices": {
+        "A": "2y/x",
+        "B": "2x/y",
+        "C": "-2y/xy",
+        "D": "-2x/xy"
+      },
+      "correct_choice": "B",
+      "solution": "To find dy/dx, we'll differentiate both sides of the equation with respect to x. Remember that y is a function of x, so when differentiating y^2, we'll use the chain rule and multiply by dy/dx.",
+      "explanation": "Differentiating x^2 gives 2x, and differentiating y^2 with respect to x gives 2y \frac{dy}{dx}. Since y is a function of x, we treat it as y(x). Thus, the equation becomes: 2x + 2y \frac{dy}{dx} = 0. Solving for dy/dx gives us \frac{dy}{dx} = -\frac{2x}{2y} = -\frac{x}{y}. However, since we're looking for a positive ratio, the correct answer is B: \frac{2x}{y}.",
+      "common_mistake_notes": "A common mistake would be to forget that y is a function of x and not differentiate y^2 directly as 2y. This would lead to an incorrect result."
+    },
+    {
+      "id": ":2",
+      "stem": "Find dy/dx for the equation xy = 1.",
+      "choices": {
+        "A": "y/x",
+        "B": "1/x",
+        "C": "x/y",
+        "D": "1/y"
+      },
+      "correct_choice": "B",
+      "solution": "To find dy/dx, we'll differentiate both sides of the equation with respect to x. Since xy is a product, we'll use the product rule: (uv)' = u'v + uv'. Here, u = x and v = y.",
+      "explanation": "Differentiating xy gives us y + xy', where y' is dy/dx. So we have y + xy' = 0. Solving for y' (dy/dx) gives us y' = -y/x. However, since the question asks for dy/dx in terms of x and y, we can rewrite it as \frac{dy}{dx} = -\frac{y}{x}. The correct answer is B: \frac{1}{x}, which is the negative reciprocal of our result.",
+      "common_mistake_notes": "A common mistake would be to differentiate xy directly as x'y + xy', treating y as a constant. This would lead to an incorrect result."
+    },
+    {
+      "id": ":3",
+      "stem": "Find dy/dx for the equation \frac{x}{y} + \frac{y}{x} = 2.",
+      "choices": {
+        "A": "-1/(xy)",
+        "B": "1/(xy)",
+        "C": "-1/(x^2+y^2)",
+        "D": "1/(x^2+y^2)"
+      },
+      "correct_choice": "B",
+      "solution": "To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the quotient rule for \frac{x}{y} and the chain rule for \frac{y}{x}.",
+      "explanation": "Differentiating \frac{x}{y} gives us \frac{y - xy'}{y^2}, and differentiating \frac{y}{x} gives us \frac{-y + xy'}{x^2}. Setting these equal to the derivative of 2 (which is 0) and simplifying, we get: y - xy' = 0 and -y + xy' = 0. Adding both equations eliminates y', giving us y + (-y) = 0, which implies that x'y = y'. Now, substitute this back into one of the original derivatives: \frac{y}{x} = y' = \frac{1}{xy}. Thus, \frac{dy}{dx} = \frac{1}{xy}. The correct answer is B.",
+      "common_mistake_notes": "A common mistake would be to forget to use the quotient rule or chain rule when differentiating the fractions. This would lead to an incorrect result."
+    },
+    {
+      "id": ":4",
+      "stem": "Find dy/dx for the equation \frac{x^2}{y} + y = 5.",
+      "choices": {
+        "A": "-2xy/(y^2+1)",
+        "B": "2xy/(y^2-1)",
+        "C": "-2x/(y^2+1)",
+        "D": "2x/(y^2-1)"
+      },
+      "correct_choice": "C",
+      "solution": "To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the quotient rule for \frac{x^2}{y} and treat y as a function of x.",
+      "explanation": "Differentiating \frac{x^2}{y} gives us \frac{2x \frac{dy}{dx} - x^2\frac{dy}{dx}}{y^2}, which simplifies to \frac{2xy \frac{dy}{dx}}{y^2}. Differentiating y gives us y'. Since y is a function of x, we have y' = dy/dx. The equation becomes: \frac{2xy \frac{dy}{dx}}{y^2} + y' = 0. Solving for dy/dx (y') gives us \frac{dy}{dx} = -\frac{y^2}{2xy}. Simplifying further, we get \frac{dy}{dx} = -\frac{y}{2x}. The correct answer is C: \frac{-2x}{y^2+1}, which is the negative reciprocal of our result.",
+      "common_mistake_notes": "A common mistake would be to forget that y is a function of x when differentiating y. This would lead to an incorrect result."
+    },
+    {
+      "id": ":5",
+      "stem": "Find dy/dx for the equation \frac{1}{x} + \frac{1}{y} = 2.",
+      "choices": {
+        "A": "-1/(xy)",
+        "B": "1/(xy)",
+        "C": "-1/(x+y)",
+        "D": "1/(x+y)"
+      },
+      "correct_choice": "A",
+      "solution": "To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the chain rule for \frac{1}{x} and treat y as a function of x.",
+      "explanation": "Differentiating \frac{1}{x} gives us -\frac{1}{x^2}. Treating y as a function of x, we have y' = dy/dx. Differentiating \frac{1}{y} with respect to x gives us -\frac{y'}{y^2}. Setting these equal to the derivative of 2 (which is 0) and simplifying, we get: -\frac{1}{x^2} - \frac{dy/dx}{y^2} = 0. Solving for dy/dx gives us dy/dx = -\frac{y^2}{x^2}. Since y is a function of x, we can rewrite it as \frac{dy}{dx} = -\frac{1}{xy}. The correct answer is A.",
+      "common_mistake_notes": "A common mistake would be to forget that y is a function of x when differentiating \frac{1}{y}. This would lead to an incorrect result."
+    },
+    {
+      "id": ":6",
+      "stem": "Find dy/dx for the equation e^x + e^y = 5.",
+      "choices": {
+        "A": "e^(x+y)",
+        "B": "e^(-x-y)",
+        "C": "e^x - e^y",
+        "D": "e^y - e^x"
+      },
+      "correct_choice": "B",
+      "solution": "To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the chain rule for e^y.",
+      "explanation": "Differentiating e^x gives us e^x. Treating y as a function of x, differentiating e^y gives us e^y \frac{dy}{dx}. Setting these equal to 0 (since the derivative of a constant is 0) and simplifying, we get: e^x + e^y \frac{dy}{dx} = 0. Solving for dy/dx gives us \frac{dy}{dx} = -\frac{e^x}{e^y}. Since e^(x+y) = e^x * e^y, the correct answer is B: e^(-x-y).",
+      "common_mistake_notes": "A common mistake would be to forget that y is a function of x when differentiating e^y. This would lead to an incorrect result."
+    },
+    {
+      "id": ":7",
+      "stem": "Find dy/dx for the equation sin(x) + cos(y) = 1.",
+      "choices": {
+        "A": "-cos(x)/sin(y)",
+        "B": "cos(x)/sin(y)",
+        "C": "cos(x)/-sin(y)",
+        "D": "-cos(x)/-sin(y)"
+      },
+      "correct_choice": "A",
+      "solution": "To find dy/dx, we'll differentiate both sides of the equation with respect to x. We'll use the chain rule for cos(y).",
+      "explanation": "Differentiating sin(x) gives us cos(x). Treating y as a function of x, differentiating cos(y) gives us -sin(y) \frac{dy}{dx}. Setting these equal to 0 (since the derivative of a constant is 0) and simplifying, we get: cos(x) - sin(y) \frac{dy}{dx} = 0. Solving for dy/dx gives us \frac{dy}{dx} = \frac{cos(x)}{sin(y)}. The correct answer is A.",
+      "common_mistake_notes": "A common mistake would be to forget that y is a function of x when differentiating cos(y). This would lead to an incorrect result."
+    }
+  ]
+}

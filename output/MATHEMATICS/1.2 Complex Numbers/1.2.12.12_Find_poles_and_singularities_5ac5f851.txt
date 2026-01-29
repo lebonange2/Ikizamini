@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.12.12 Find poles and singularities
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.12 Complex Integration
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Find the pole of the function f(z) = (z^2 + 4)/(z - 2i)
+A) -2i
+B) 2i
+C) 0
+D) No poles
+Correct Answer: B
+
+Solution:
+The pole occurs where the denominator is zero. Thus, we set z - 2i = 0 and solve for z: z = 2i.
+
+Explanation:
+Poles are points in the complex plane where a function becomes infinite due to division by zero.
+
+Common mistake note:
+Common mistake is to choose 'No poles' because the numerator does not have a zero, but it's the denominator that determines the pole.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Find the singularities of the function g(z) = 1/(z^3 + 1)
+A) i
+B) -i
+C) 1
+D) No singularities
+Correct Answer: A
+
+Solution:
+The singularities occur where the denominator is zero. We factor the denominator: z^3 + 1 = (z + 1)(z^2 - z + 1). The only real root is z = -1, but we're looking for complex roots. The quadratic part does not have any real roots, so the only singularity is at the complex root of unity: z = i.
+
+Explanation:
+Singularities are points where a function is undefined, typically due to division by zero or a logarithm with argument equal to zero.
+
+Common mistake note:
+Common mistake is to choose 'No singularities' because there's no explicit singularity in the form of 1/0, but complex roots still count.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Find the pole of the function h(z) = (z^3 - 1)/(z^2 + 4)
+A) 2i
+B) -2i
+C) No poles
+D) Both A and B
+Correct Answer: C
+
+Solution:
+The denominator is z^2 + 4, which does not have any real roots since it's a sum of squares. Therefore, there are no poles in the complex plane.
+
+Explanation:
+Poles only exist when the denominator has zeros.
+
+Common mistake note:
+Common mistake is to choose 'Both A and B' because they are the solutions to z^2 + 4 = 0, but these are not poles since they're not in the domain of complex numbers.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Find the singularities of the function j(z) = ln(z^2 - 1)
+A) ±1
+B) No singularities
+C) ±i
+D) Both A and B
+Correct Answer: A
+
+Solution:
+The logarithm is undefined when its argument is zero or negative. Set z^2 - 1 = 0 to find the singularities: z^2 = 1, which gives z = ±1.
+
+Explanation:
+Logarithmic functions have singularities at points where their arguments are zero or negative.
+
+Common mistake note:
+Common mistake is to choose 'Both A and B' because they seem like valid roots, but the function is defined for z = ±i (since z^2 - 1 will be positive).
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Find the pole of the function k(z) = 1/(z^4 + 1)
+A) ±i
+B) ±√2i
+C) No poles
+D) Both A and B
+Correct Answer: C
+
+Solution:
+The denominator is z^4 + 1, which is a sum of squares and does not have any real or complex roots. Hence, there are no poles.
+
+Explanation:
+Poles only exist when the denominator has zeros.
+
+Common mistake note:
+Common mistake is to choose 'Both A and B' because they seem like valid roots, but they are actually the solutions to z^4 - 1 = 0, which is not the same as the given function.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Find the singularities of the function l(z) = cos(1/z)
+A) 0
+B) ±i
+C) Both A and B
+D) No singularities
+Correct Answer: A
+
+Solution:
+The cosine function is well-defined for all complex numbers, but the argument of 1/z can cause singularities. When z = 0, the argument becomes undefined, so there's a singularity at z = 0.
+
+Explanation:
+Singularities in trigonometric functions typically arise when the denominator approaches zero.
+
+Common mistake note:
+Common mistake is to choose 'Both A and B' because they are roots of z^2 + 1 (which is not related to this function), but only z = 0 causes a singularity here.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Find the pole of the function m(z) = e^(1/(z - 3))
+A) 3
+B) ±i
+C) No poles
+D) Both A and B
+Correct Answer: A
+
+Solution:
+The exponential function is well-defined for all complex numbers, but the argument of 1/(z - 3) can cause a pole. When z = 3, the argument becomes undefined, so there's a pole at z = 3.
+
+Explanation:
+Poles in exponential functions typically arise when the denominator approaches zero.
+
+Common mistake note:
+Common mistake is to choose 'Both A and B' because they are roots of z^2 + 1 (which is not related to this function), but only z = 3 causes a pole here.
+------------------------------------------------------------------------------

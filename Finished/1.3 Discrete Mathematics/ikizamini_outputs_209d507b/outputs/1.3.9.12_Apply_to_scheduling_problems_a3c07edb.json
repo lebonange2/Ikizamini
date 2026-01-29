@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.9.12",
+  "objective_text": "Apply to scheduling problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd1",
+      "stem": "A company needs to schedule 5 tasks with different durations on a single machine. The tasks and their durations are as follows: Task A (3 hours), Task B (2 hours), Task C (4 hours), Task D (1 hour), and Task E (5 hours). What is the minimum total time required to complete all tasks if task order can be rearranged?",
+      "choices": {
+        "A": "15 hours",
+        "B": "16 hours",
+        "C": "17 hours",
+        "D": "18 hours"
+      },
+      "correct_choice": "C",
+      "solution": "To minimize the total time, we should schedule the tasks with the shortest duration first. The order would be: Task D (1 hour), Task B (2 hours), Task A (3 hours), Task C (4 hours), and Task E (5 hours). Total time = 1 + 2 + 3 + 4 + 5 = 15 hours. However, since we have to account for the machine's idle time between tasks, we need to add the duration of the next task to the previous one before it starts. So, the actual total time would be: Task D (1 hour), Task B + Task D (3 hours), Task A + Task B + Task D (6 hours), Task C + Task A + Task B + Task D (10 hours), and Task E + Task C + Task A + Task B + Task D (15 hours). The minimum total time is 17 hours.",
+      "explanation": "This question tests the understanding of scheduling problems and optimizing task order to minimize total time.",
+      "common_mistake_notes": "A common mistake would be to assume that the minimum total time is simply the sum of all task durations without considering idle times between tasks."
+    },
+    {
+      "id": "Asd2",
+      "stem": "A bakery has 3 ovens and needs to bake 6 batches of cookies with different baking times. The baking times are: Batch A (15 minutes), Batch B (20 minutes), Batch C (10 minutes), Batch D (30 minutes), Batch E (25 minutes), and Batch F (15 minutes). Each oven can only bake one batch at a time. Assuming the ovens can work simultaneously, what is the minimum total baking time?",
+      "choices": {
+        "A": "90 minutes",
+        "B": "100 minutes",
+        "C": "110 minutes",
+        "D": "120 minutes"
+      },
+      "correct_choice": "A",
+      "solution": "To minimize the total time, we should start baking the batches in parallel using all 3 ovens. The minimum total time would be: Batches A and C in oven 1 (25 minutes), Batch D in oven 2 (30 minutes), Batches E and F in oven 3 (40 minutes). Total time = 25 + 30 + 40 = 95 minutes. However, since we have to account for the case where batches finish at different times, we need to consider the latest finishing batch as the total baking time. In this case, it's Batch D, which takes 30 minutes.",
+      "explanation": "This question tests understanding of parallel processing and optimizing scheduling with multiple resources.",
+      "common_mistake_notes": "A common mistake would be to add up the individual baking times for all batches without considering that they can be baked simultaneously."
+    },
+    {
+      "id": "Asd3",
+      "stem": "A university needs to schedule 4 classes on a single day, each with a different duration: Class A (2 hours), Class B (1 hour), Class C (3 hours), and Class D (1.5 hours). The classes must be scheduled consecutively without any breaks between them. What is the earliest possible end time for all classes?",
+      "choices": {
+        "A": "6:00 PM",
+        "B": "7:00 PM",
+        "C": "8:00 PM",
+        "D": "9:00 PM"
+      },
+      "correct_choice": "C",
+      "solution": "To find the earliest possible end time, we should start with the class that starts first and add the duration of each subsequent class. The order would be: Class B (1 hour), Class A + Class B (3 hours), Class C + Class A + Class B (6 hours), and Class D + Class C + Class A + Class B (7.5 hours). The earliest possible end time is 7:30 PM, which rounds up to 8:00 PM.",
+      "explanation": "This question tests understanding of scheduling with sequential order constraints.",
+      "common_mistake_notes": "A common mistake would be to assume that the classes can overlap, leading to an earlier end time than the correct answer."
+    },
+    {
+      "id": "Asd4",
+      "stem": "An assembly line has 5 stations and produces widgets at different rates. The production times for each station are: Station A (2 minutes), Station B (3 minutes), Station C (1 minute), Station D (4 minutes), and Station E (2 minutes). What is the minimum time required to produce one widget if all stations work continuously without any idle time?",
+      "choices": {
+        "A": "12 minutes",
+        "B": "13 minutes",
+        "C": "14 minutes",
+        "D": "15 minutes"
+      },
+      "correct_choice": "A",
+      "solution": "To find the minimum production time, we should consider the station with the longest production time as it determines the overall rate. In this case, Station B has the longest production time of 3 minutes. Since all stations work continuously without idle time, each widget will take 3 minutes to pass through the entire assembly line.",
+      "explanation": "This question tests understanding of bottlenecks in a production process and determining the overall rate.",
+      "common_mistake_notes": "A common mistake would be to add up the individual production times for all stations without recognizing that the slowest station sets the pace."
+    },
+    {
+      "id": "Asd5",
+      "stem": "A software development team needs to complete 6 tasks with different effort estimates. The estimated efforts are: Task A (3 days), Task B (2 days), Task C (4 days), Task D (1 day), Task E (5 days), and Task F (3 days). Assuming the team can work on multiple tasks simultaneously, what is the minimum total time required to complete all tasks?",
+      "choices": {
+        "A": "10 days",
+        "B": "11 days",
+        "C": "12 days",
+        "D": "13 days"
+      },
+      "correct_choice": "C",
+      "solution": "To minimize the total time, the team should work on multiple tasks simultaneously. The minimum total time would be: Tasks D and F in parallel (4 days), Task B + Task D + Task F (5 days), Task A + Task B + Task D + Task F (8 days), and Task C + Task A + Task B + Task D + Task F (12 days). The minimum total time is 12 days.",
+      "explanation": "This question tests understanding of parallel task execution in project management.",
+      "common_mistake_notes": "A common mistake would be to assume that the team can only work on one task at a time, leading to an overestimated total time."
+    },
+    {
+      "id": "Asd6",
+      "stem": "A hospital needs to schedule 3 surgeries with different durations and patient recovery times. The surgery durations are: Surgery A (4 hours), Surgery B (2 hours), and Surgery C (5 hours). Each surgery requires a recovery time of half its duration. What is the minimum total time required for all surgeries, including recovery?",
+      "choices": {
+        "A": "13 hours",
+        "B": "14 hours",
+        "C": "15 hours",
+        "D": "16 hours"
+      },
+      "correct_choice": "C",
+      "solution": "To minimize the total time, we should schedule the surgeries in order of their duration. The order would be: Surgery B (2 hours), Surgery A + Recovery for Surgery B (6 hours), and Surgery C + Recovery for Surgery A (9 hours). Total time = 2 + 6 + 9 = 17 hours. However, since we have to account for the recovery time of each surgery before scheduling the next one, we need to add the recovery time to the previous surgery's duration. So, the actual total time would be: Surgery B (2 hours), Recovery for Surgery B + Surgery A (5 hours), Recovery for Surgery A + Surgery C (10 hours). The minimum total time is 15 hours.",
+      "explanation": "This question tests understanding of scheduling with recovery times and optimizing order to minimize total time.",
+      "common_mistake_notes": "A common mistake would be to neglect the recovery times, resulting in an underestimated total time."
+    },
+    {
+      "id": "Asd7",
+      "stem": "A factory has 2 production lines and needs to produce 4 batches of products with different production rates. The production rates are: Batch A (5 units per hour), Batch B (3 units per hour), Batch C (6 units per hour), and Batch D (4 units per hour). Each production line can only produce one batch at a time. Assuming the production lines can work simultaneously, how long will it take to complete all batches if each batch requires 100 units?",
+      "choices": {
+        "A": "2 hours",
+        "B": "3 hours",
+        "C": "4 hours",
+        "D": "5 hours"
+      },
+      "correct_choice": "B",
+      "solution": "To find the minimum time, we should calculate the production rate for each line and then determine which batches to produce simultaneously. Line 1: Batch A + Batch C (9 units per hour), Line 2: Batch B + Batch D (7 units per hour). In 1 hour, they can produce a total of 16 units. To produce 400 units (4 batches * 100 units each), it will take 400 / 16 = 25 hours. However, since we have to account for the case where one line finishes before the other, we need to consider the time taken by the slower line. In this case, Line 2 takes longer at 3 hours.",
+      "explanation": "This question tests understanding of parallel production and optimizing resource allocation.",
+      "common_mistake_notes": "A common mistake would be to assume that both lines can produce at their maximum rates simultaneously without considering the total production capacity."
+    }
+  ]
+}

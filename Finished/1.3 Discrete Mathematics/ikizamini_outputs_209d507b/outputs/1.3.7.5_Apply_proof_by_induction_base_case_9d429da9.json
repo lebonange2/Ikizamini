@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.7.5",
+  "objective_text": "Apply proof by induction (base case)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Prove that the sum of the first n positive integers is \n(n(1+1))/2\nusing mathematical induction. What is the base case for this proof?",
+      "choices": {
+        "A": "n = 0",
+        "B": "n = 1",
+        "C": "n = -1",
+        "D": "n = any integer"
+      },
+      "correct_choice": "B",
+      "solution": "The base case for a proof by induction typically involves showing that the statement holds true for the smallest possible value of the variable. In this case, n represents the number of positive integers being summed, so the smallest possible value is 1. Thus, the base case is when n = 1.",
+      "explanation": "The sum of the first positive integer (n=1) is 1 itself, which according to the formula \n(n(1+1))/2\nequals \n(1(1+1))/2 = 1. Since this is true for n=1, we start with n=1 as our base case to show that the statement holds for at least one value.",
+      "common_mistake_notes": "A common mistake would be to choose 'n = 0' or 'n = -1', but these values are not part of the set of positive integers, which is the domain of this problem. Choosing 'n = any integer' is too broad and does not provide a specific starting point for the induction proof."
+    },
+    {
+      "id": "Two",
+      "stem": "To prove that 2^n > n^2 for all positive integers n greater than or equal to 3, what should be the base case in the proof by induction?",
+      "choices": {
+        "A": "n = 0",
+        "B": "n = 1",
+        "C": "n = 2",
+        "D": "n = 3"
+      },
+      "correct_choice": "D",
+      "solution": "The base case for this proof should be the smallest value of n that is greater than or equal to the starting point specified in the problem statement, which is n = 3. This ensures we are demonstrating the inequality holds true for at least one integer within the given range.",
+      "explanation": "For n = 3, 2^3 = 8 and 3^2 = 9. Since 8 > 9 does not hold, we must start with n = 3 as our base case to show that the statement holds for at least one value within the specified range (n >= 3).",
+      "common_mistake_notes": "A common mistake would be to choose 'n = 0', 'n = 1', or 'n = 2', but these values are outside the given range, which starts from n = 3. Choosing 'n = any integer' is too broad and does not provide a specific starting point for the induction proof."
+    },
+    {
+      "id": "Three",
+      "stem": "To prove that the sum of the first n odd numbers is n^2 using mathematical induction, what should be the base case?",
+      "choices": {
+        "A": "n = 0",
+        "B": "n = 1",
+        "C": "n = -1",
+        "D": "n = any integer"
+      },
+      "correct_choice": "B",
+      "solution": "The sum of the first odd number is 1, which can be represented as \n(1(1+1))/2. Since this is true for n=1, n = 1 serves as a suitable base case to start the induction proof.",
+      "explanation": "For n = 1, the sum of the first odd number is 1, and according to the formula \n(n(1+1))/2\nit equals \n(1(1+1))/2 = 1. This shows that the statement holds true for at least one value (n=1), which is necessary for a proof by induction.",
+      "common_mistake_notes": "A common mistake would be to choose 'n = 0', 'n = -1', or 'n = any integer', but these values are not part of the set of odd numbers, which is the domain of this problem. Choosing 'n = any integer' is too broad and does not provide a specific starting point for the induction proof."
+    },
+    {
+      "id": "Four",
+      "stem": "To prove that 3^n > n^3 for all positive integers n greater than or equal to 5, what should be the base case?",
+      "choices": {
+        "A": "n = 0",
+        "B": "n = 1",
+        "C": "n = 2",
+        "D": "n = 5"
+      },
+      "correct_choice": "D",
+      "solution": "The base case for this proof should be the smallest value of n that is greater than or equal to the starting point specified in the problem statement, which is n = 5. This ensures we are demonstrating the inequality holds true for at least one integer within the given range.",
+      "explanation": "For n = 5, 3^5 = 243 and 5^3 = 125. Since 243 > 125 is true, we can start with n = 5 as our base case to show that the statement holds for at least one value within the specified range (n >= 5).",
+      "common_mistake_notes": "A common mistake would be to choose 'n = 0', 'n = 1', 'n = 2', or any other value less than 5, as these values are outside the given range, which starts from n = 5. Choosing 'n = any integer' is too broad and does not provide a specific starting point for the induction proof."
+    },
+    {
+      "id": "Five",
+      "stem": "To prove that the sum of the first n even numbers is n(n+1) using mathematical induction, what should be the base case?",
+      "choices": {
+        "A": "n = 0",
+        "B": "n = 1",
+        "C": "n = -1",
+        "D": "n = 2"
+      },
+      "correct_choice": "D",
+      "solution": "The sum of the first two even numbers is 2 + 4 = 6, which can be represented as 2(2+1). Since this is true for n=2, n = 2 serves as a suitable base case to start the induction proof.",
+      "explanation": "For n = 2, the sum of the first two even numbers is 6, and according to the formula \nn(n+1)\nit equals \n2(2+1) = 6. This shows that the statement holds true for at least one value (n=2), which is necessary for a proof by induction.",
+      "common_mistake_notes": "A common mistake would be to choose 'n = 0', 'n = -1', or 'n = any integer', but these values are not part of the set of even numbers, which is the domain of this problem. Choosing 'n = any integer' is too broad and does not provide a specific starting point for the induction proof."
+    },
+    {
+      "id": "Six",
+      "stem": "To prove that 4^n > n^4 for all positive integers n greater than or equal to 3, what should be the base case?",
+      "choices": {
+        "A": "n = 0",
+        "B": "n = 1",
+        "C": "n = 2",
+        "D": "n = 3"
+      },
+      "correct_choice": "D",
+      "solution": "The base case for this proof should be the smallest value of n that is greater than or equal to the starting point specified in the problem statement, which is n = 3. This ensures we are demonstrating the inequality holds true for at least one integer within the given range.",
+      "explanation": "For n = 3, 4^3 = 64 and 3^4 = 81. Since 64 > 81 does not hold, we must start with n = 3 as our base case to show that the statement holds for at least one value within the specified range (n >= 3).",
+      "common_mistake_notes": "A common mistake would be to choose 'n = 0', 'n = 1', or 'n = 2', but these values are outside the given range, which starts from n = 3. Choosing 'n = any integer' is too broad and does not provide a specific starting point for the induction proof."
+    },
+    {
+      "id": "Seven",
+      "stem": "To prove that the sum of the first n prime numbers is less than n^2 using mathematical induction, what should be the base case?",
+      "choices": {
+        "A": "n = 0",
+        "B": "n = 1",
+        "C": "n = -1",
+        "D": "n = 2"
+      },
+      "correct_choice": "B",
+      "solution": "The sum of the first prime number is 2, which is less than 1^2. Since this is true for n=1, n = 1 serves as a suitable base case to start the induction proof.",
+      "explanation": "For n = 1, the sum of the first prime number (2) is less than 1^2 (which is 1), so the statement holds true for at least one value (n=1). This is necessary for a proof by induction.",
+      "common_mistake_notes": "A common mistake would be to choose 'n = 0', 'n = -1', or 'n = any integer', but these values are not part of the set of prime numbers, which is the domain of this problem. Choosing 'n = any integer' is too broad and does not provide a specific starting point for the induction proof."
+    }
+  ]
+}

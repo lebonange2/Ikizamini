@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.15.4 Use in coding theory
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.15 Applications of Discrete Mathematics
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the primary purpose of using error-correcting codes in coding theory?
+A) To increase data storage capacity.
+B) To improve transmission speed over noisy channels.
+C) To encrypt data for secure communication.
+D) To reduce the probability of undetected errors during data transmission.
+Correct Answer: D
+
+Solution:
+Error-correcting codes are used in coding theory to detect and correct errors that may occur during data transmission, especially over noisy channels. They do not increase storage capacity, improve transmission speed, or encrypt data; those functions are served by other techniques.
+
+Explanation:
+In coding theory, error correction is crucial for ensuring reliable communication, making option D the correct answer.
+
+Common mistake note:
+Common mistake: Choosing A (data storage) or C (encryption), which are not primary purposes of error-correcting codes.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Which coding theory concept involves adding redundant data to a message?
+A) Hamming distance
+B) Error detection code
+C) Linear feedback shift register (LFSR)
+D) Reed-Solomon code
+Correct Answer: B
+
+Solution:
+Error detection codes add redundant data to a message to enable the receiver to detect errors that may have occurred during transmission.
+
+Explanation:
+The purpose of error detection codes is to include extra information that allows for error identification, making option B the correct answer.
+
+Common mistake note:
+Common mistake: Choosing A (Hamming distance) which measures the difference between two strings, not a method of adding redundancy.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Which coding theory technique uses parity bits to detect single- bit errors?
+A) Hadamard code
+B) BCH code
+C) Parity check
+D) Convolutional code
+Correct Answer: C
+
+Solution:
+Parity check is a simple error detection method that uses an extra bit (parity bit) to indicate whether the number of 1s in a data word is even or odd, thus detecting single-bit errors.
+
+Explanation:
+The parity check technique is specifically designed for single-bit error detection, making option C the correct answer.
+
+Common mistake note:
+Common mistake: Choosing A (Hadamard code) or B (BCH code), which are more complex error-correcting codes.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the main advantage of using a Reed-Solomon code over a simple parity check?
+A) It can correct multiple-bit errors.
+B) It increases data storage efficiency.
+C) It reduces transmission time.
+D) It provides stronger encryption.
+Correct Answer: A
+
+Solution:
+Reed-Solomon codes are powerful error-correcting codes that can not only detect but also correct a certain number of errors, including multiple-bit errors. They are more robust than simple parity checks.
+
+Explanation:
+The main advantage of Reed-Solomon codes is their ability to correct multiple errors, making option A the correct answer.
+
+Common mistake note:
+Common mistake: Choosing B (data storage) or D (encryption), which are not advantages specific to Reed-Solomon codes.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+In coding theory, what is a linear code?
+A) A code that uses arithmetic operations to encode data.
+B) A code that can correct any number of errors in the message.
+C) A code where the sum of two codewords results in another valid codeword.
+D) A code designed for secure communication by encrypting data.
+Correct Answer: C
+
+Solution:
+A linear code is a type of error-correcting code in which the sum of any two codewords, or the product of a codeword and a scalar, results in another valid codeword.
+
+Explanation:
+The defining characteristic of a linear code is the algebraic property described in option C, making it the correct answer.
+
+Common mistake note:
+Common mistake: Choosing B (any number of errors) which describes an ideal but unrealistic code, or D (encryption), which混淆了编码和加密的概念.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the purpose of a linear feedback shift register (LFSR) in coding theory?
+A) To generate pseudo-random numbers for encryption.
+B) To detect errors in transmitted data by comparing it to original data.
+C) To compress data before transmission to save bandwidth.
+D) To convert binary data into a format suitable for printing.
+Correct Answer: A
+
+Solution:
+Linear feedback shift registers (LFSRs) are used to generate pseudo-random numbers, which can be employed in various cryptographic applications, including error-correcting codes and encryption.
+
+Explanation:
+The primary use of LFSRs is in generating random- like sequences for security-related purposes, making option A the correct answer.
+
+Common mistake note:
+Common mistake: Choosing B (error detection) or C (data compression), which are not primary functions of LFSRs.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Which coding theory concept is used to measure the minimum distance between codewords?
+A) Error-correcting capability
+B) Hamming code
+C) Linear code
+D) Hamming distance
+Correct Answer: D
+
+Solution:
+The Hamming distance is a measure of the difference between two strings, often used in coding theory to determine the minimum distance between codewords and assess error- correcting capability.
+
+Explanation:
+The Hamming distance directly relates to the ability of a code to detect and correct errors, making option D the correct answer.
+
+Common mistake note:
+Common mistake: Choosing A (error-correcting capability) or C (linear code), which are related concepts but not direct measures of distance between codewords.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.9.8 Apply distinguishable permutations
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.9 Permutations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+How many distinguishable ways are there to arrange the letters of the word 'MATHEMATICS'?
+A) 720
+B) 360
+C) 8! / (2! × 3!)
+D) 10!
+Correct Answer: C
+
+Solution:
+To find the number of distinguishable ways to arrange the letters of 'MATHEMATICS', we first consider there are 10 letters in total. Since there are two 'M' and three 'A', we need to divide by the factorial of their repetitions: (2! for M and 3! for A). The total number of arrangements is thus 10! / (2! × 3!). The correct answer is C.
+
+Explanation:
+The arrangement of distinct letters in a word is calculated by the factorial of the total number of letters. To account for repeated letters, we divide by the factorials of their repetitions.
+
+Common mistake note:
+A common mistake would be to not consider the repetition of 'M' and 'A', leading to an overestimation of arrangements (e.g., choosing A or D).
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+How many distinguishable 4-digit numbers can be formed using the digits 1, 2, 3, and 4 without repetition?
+A) 6
+B) 12
+C) 24
+D) 24!
+Correct Answer: C
+
+Solution:
+To form a 4-digit number with no repetition using the digits 1, 2, 3, and 4, we have 4 choices for the first digit, 3 choices for the second, 2 for the third, and 1 for the fourth. The total number of distinguishable numbers is thus 4 × 3 × 2 × 1 = 24. The correct answer is C.
+
+Explanation:
+When forming a number with no repetition, we multiply the number of choices for each position together.
+
+Common mistake note:
+A common mistake would be to assume that since there are 4 digits, the answer is 4! (as in permutations), but not accounting for the fact that we're dealing with numbers and not just an arrangement of digits (which would lead to D).
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+How many distinguishable ways can a committee of 5 people be formed from a group of 7 men and 6 women if at least 2 women must be included?
+A) 180
+B) 240
+C) 300
+D) 360
+Correct Answer: B
+
+Solution:
+First, we choose 2 women from 6, which gives us 6! / (4! × 2!) = 15 ways. Then, we have 5 remaining spots to fill with either men or women. We can choose any combination of men and women for these spots, giving us 11 × 10 × 9 × 8 = 7920 ways. Total distinguishable committees are 15 × 7920 = 120,300. Dividing by the number of ways to arrange the 5-person committee (5!) gives us 120,300 / 120 = 1002. The correct answer is B.
+
+Explanation:
+We first choose the minimum required women and then fill the remaining spots with any combination of men and women. We divide by the factorial of the committee size to account for permutations of the same group members.
+
+Common mistake note:
+A common mistake would be to not consider the condition that at least 2 women must be included, leading to an underestimation of committees (e.g., choosing A or C).
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+How many distinguishable ways can a 3-person team be formed from a group of 5 men and 4 women if one man and one woman must be on the team?
+A) 20
+B) 40
+C) 80
+D) 160
+Correct Answer: A
+
+Solution:
+We choose 1 man from 5 and 1 woman from 4, giving us 5 × 4 = 20 ways. The remaining spot can be filled by any of the remaining 3 men or 3 women, so we have 6 choices. Total distinguishable teams are 20 × 6 = 120. Dividing by the number of ways to arrange the 3-person team (3!) gives us 120 / 6 = 20. The correct answer is A.
+
+Explanation:
+We first choose one man and one woman, then fill the remaining spot with any of the remaining people. We divide by the factorial of the team size to account for permutations of the same group members.
+
+Common mistake note:
+A common mistake would be to not consider that only one man and one woman must be on the team, leading to an overestimation of teams (e.g., choosing B, C, or D).
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+How many distinguishable ways can a 4-person committee be formed from a group of 6 men and 5 women if exactly 2 men must be included?
+A) 180
+B) 360
+C) 720
+D) 1,440
+Correct Answer: B
+
+Solution:
+We choose 2 men from 6 and then 2 women from 5, giving us 6! / (4! × 2!) = 15 ways to choose the men and 5! / (3! × 2!) = 10 ways to choose the women. Total distinguishable committees are 15 × 10 = 150. Dividing by the number of ways to arrange the 4-person committee (4!) gives us 150 / 24 = 6.25, which is not a valid choice as it must be an integer. This indicates there's an error in the question or choices provided.
+
+Explanation:
+We first choose exactly 2 men and then 2 women, but upon calculating the total distinguishable committees, we get a non-integer result. This suggests an error in the problem statement or answer choices.
+
+Common mistake note:
+A common mistake would be to assume that the calculation is correct and select one of the given choices, but the result should be an integer for this type of question.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+How many distinguishable 5-card hands can be dealt from a standard deck of 52 cards?
+A) 2,598,960
+B) 5,197,920
+C) 13 × 12 × 11 × 10 × 9
+D) 52!
+Correct Answer: A
+
+Solution:
+To find the number of distinguishable 5-card hands, we choose 5 cards from a deck of 52 without replacement. This is calculated as 52! / (47! × 5!) = 2,598,960. The correct answer is A.
+
+Explanation:
+When dealing a hand from a standard deck, we choose 5 cards out of 52 without considering the order in which they are dealt.
+
+Common mistake note:
+A common mistake would be to assume that since there are 5 cards, the answer is 52! / (52 - 5)! (as in combinations), but not accounting for the fact that we're dealing with a specific set of 5 cards (which would lead to D).
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+How many distinguishable ways can a 4-person team be formed from a group of 6 men and 4 women if no restrictions are applied?
+A) 10
+B) 20
+C) 30
+D) 156
+Correct Answer: D
+
+Solution:
+We have 6 men and 4 women, so we choose 4 people from a total of 10. This is calculated as 10! / (4! × (10 - 4)!) = 210. Dividing by the number of ways to arrange the 4-person team (4!) gives us 210 / 24 = 8.75, which is not a valid choice as it must be an integer. This indicates there's an error in the question or choices provided.
+
+Explanation:
+We first choose 4 people from a total of 10 without restrictions, but upon calculating the total distinguishable teams, we get a non-integer result. This suggests an error in the problem statement or answer choices.
+
+Common mistake note:
+A common mistake would be to assume that the calculation is correct and select one of the given choices, but the result should be an integer for this type of question.
+------------------------------------------------------------------------------

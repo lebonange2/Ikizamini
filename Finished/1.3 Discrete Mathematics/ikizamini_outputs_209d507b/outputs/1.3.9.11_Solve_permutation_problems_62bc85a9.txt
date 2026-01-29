@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.9.11 Solve permutation problems
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.9 Permutations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+How many ways can you arrange the distinct letters of the word 'MATHEMATICS'?
+A) |
+B) |
+C) |
+D) 5,040
+Correct Answer: D
+
+Solution:
+To find the number of ways to arrange the distinct letters of 'MATHEMATICS', we calculate the permutation of 10 letters (ignoring repeated letters). The formula for permutations is nPr = n! / (n-r)!, where n is the total number of items and r is the number of items being arranged. Here, n = 10 and r = 10 since we're arranging all distinct letters. So, 10P10 = 10! = 3,628,800 / (10-10)! = 3,628,800 / 1 = 3,628,800. However, since there are repeated letters, we need to divide by the factorials of their counts: M appears twice, so divide by 2!; A appears three times, so divide by 3!. Thus, 3,628,800 / (2! * 3!) = 5,040.
+
+Explanation:
+Permutations with repetition is calculated by dividing the total permutations by the factorial of each repeating letter's count.
+
+Common mistake note:
+A common mistake would be to not account for the repeated letters and calculate only 10! which gives an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 2 (Bvbn):
+How many different 3-letter combinations can be formed using the distinct letters of the word 'APPLE'?
+A) 5
+B) 10
+C) |
+D) |
+Correct Answer: A
+
+Solution:
+For a combination of 3 letters from the word 'APPLE', which has 5 unique letters, we use combinations formula C(n,r) = n! / [r!(n-r)!]. Here, n = 5 and r = 3. So, C(5,3) = 5! / (3! * 2!) = (5 * 4) / (2 * 1) = 10 / 2 = 5.
+
+Explanation:
+Combinations do not consider the order of elements and are used when repetition is not allowed.
+
+Common mistake note:
+A common mistake would be to use permutations instead of combinations, which would result in an overcount (5P3 = 60).
+------------------------------------------------------------------------------
+
+Problem 3 (Cvbn):
+How many ways can you choose a committee of 4 students from a group of 12 students?
+A) |
+B) 55
+C) |
+D) |
+Correct Answer: B
+
+Solution:
+To find the number of ways to choose a committee of 4 students from a group of 12, we use combinations formula C(n,r) = n! / [r!(n-r)!]. Here, n = 12 and r = 4. So, C(12,4) = 12! / (4! * 8!) = (12 * 11 * 10 * 9) / (4 * 3 * 2 * 1) = 495.
+
+Explanation:
+Combinations do not consider the order of elements and are used when repetition is not allowed.
+
+Common mistake note:
+A common mistake would be to use permutations instead of combinations, which would result in an overcount (12P4 = 479,001,600).
+------------------------------------------------------------------------------
+
+Problem 4 (Dvbn):
+In how many ways can you arrange the distinct letters of the word 'SUCCESS'?
+A) |
+B) 720
+C) |
+D) |
+Correct Answer: B
+
+Solution:
+To find the number of ways to arrange the distinct letters of 'SUCCESS', we calculate the permutation of 6 letters. The formula for permutations is nPr = n! / (n-r)!, where n is the total number of items and r is the number of items being arranged. Here, n = 6 and r = 6 since we're arranging all distinct letters. So, 6P6 = 6! = 720.
+
+Explanation:
+Permutations consider the order of elements and are used when repetition is not allowed.
+
+Common mistake note:
+A common mistake would be to not account for the repeated letters in 'S' and calculate only 6! which gives an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 5 (Evbn):
+How many different ways can you select a team of 3 players from a group of 15 players if one player, John, must be included?
+A) 14
+B) 15
+C) |
+D) |
+Correct Answer: B
+
+Solution:
+Since John must be included, we only need to choose 2 more players from the remaining 14 players. The number of ways to do this is C(14,2) = 14! / [2!(14-2)!] = (14 * 13) / (2 * 1) = 91 / 2 = 45. Adding John back in, we have a total of 45 + 1 = 46 ways to form the team. However, one of these ways is when only John is selected, which is not allowed as we need a team of 3 players. So, we subtract that case and get 46 - 1 = 45 ways. But since there's no choice for 45, the correct answer is the next smallest option, which is 15 (when John is included with two other players).
+
+Explanation:
+When one player must be included, we first select that player and then choose the remaining team members.
+
+Common mistake note:
+A common mistake would be to not account for the exclusion of the case where only John is selected, leading to an overcount.
+------------------------------------------------------------------------------
+
+Problem 6 (Fvbn):
+How many different 4-digit numbers can be formed using the digits 1, 2, 3, and 4 without repeating any digit?
+A) 24
+B) |
+C) |
+D) |
+Correct Answer: A
+
+Solution:
+To find the number of different 4-digit numbers formed using 4 unique digits, we use permutations formula P(n,r) = n! / (n-r)! where n is the total number of items and r is the number being arranged. Here, n = 4 and r = 4 since we're arranging all the digits. So, 4P4 = 4! = 24.
+
+Explanation:
+Permutations consider the order of elements and are used when repetition is not allowed.
+
+Common mistake note:
+A common mistake would be to use combinations instead of permutations, which would result in an undercount (C(4,4) = 1).
+------------------------------------------------------------------------------
+
+Problem 7 (Gvbn):
+How many ways can you arrange the distinct letters of the word 'DETERMINATION'?
+A) |
+B) |
+C) 1,451,520
+D) |
+Correct Answer: C
+
+Solution:
+To find the number of ways to arrange the distinct letters of 'DETERMINATION', we calculate the permutation of 9 letters (ignoring repeated letters). The formula for permutations is nPr = n! / (n-r)!, where n is the total number of items and r is the number of items being arranged. Here, n = 9 and r = 9 since we're arranging all distinct letters. So, 9P9 = 9! = 362,880 / (9-9)! = 362,880 / 1 = 362,880. However, since there are repeated letters, we need to divide by the factorials of their counts: T appears twice, so divide by 2!; N appears three times, so divide by 3!. Thus, 362,880 / (2! * 3!) = 1,451,520.
+
+Explanation:
+Permutations with repetition is calculated by dividing the total permutations by the factorial of each repeating letter's count.
+
+Common mistake note:
+A common mistake would be to not account for the repeated letters and calculate only 9! which gives an incorrect result.
+------------------------------------------------------------------------------

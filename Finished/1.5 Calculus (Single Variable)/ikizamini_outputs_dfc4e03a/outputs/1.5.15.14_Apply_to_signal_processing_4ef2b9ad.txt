@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.15.14 Apply to signal processing
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.15 Applications of Calculus to Engineering
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (AsdFgHjKlMnO):
+A continuous-time signal x(t) is sampled at a rate of fs = 8 kHz and then passed through an ideal low-pass filter with a cutoff frequency of fc = 3 kHz. What is the maximum frequency component in the filtered signal?
+A) 1 kHz
+B) 3 kHz
+C) 4 kHz
+D) 8 kHz
+Correct Answer: B
+
+Solution:
+The Nyquist-Shannon sampling theorem states that a continuous-time signal must be sampled at least twice as fast as its highest frequency component to avoid aliasing. Since the signal is sampled at 8 kHz, any frequency components above 4 kHz will be aliased and folded back into the range of 0 to 4 kHz. The low-pass filter with a cutoff frequency of 3 kHz removes all frequency components above 3 kHz. Therefore, the maximum frequency component in the filtered signal is 3 kHz.
+
+Explanation:
+The Nyquist-Shannon sampling theorem is crucial for understanding this problem. Choice A (1 kHz) is too low and choice C (4 kHz) would be aliased due to the sampling rate. Choice D (8 kHz) is the sampling rate, not a frequency component in the signal.
+
+Common mistake note:
+A common mistake is to assume that the maximum frequency component in the filtered signal is equal to the sampling rate or the cutoff frequency of the filter without considering aliasing and the Nyquist-Shannon theorem.
+------------------------------------------------------------------------------
+
+Problem 2 (BvnCmDpEqFrG):
+A discrete-time signal x[n] with a Fourier series representation X(e^(jω)) has a non-zero value only in the range -π/2 to π/2. What is the period of the signal x[n]?
+A) 1 sample
+B) 2 samples
+C) 4 samples
+D) 8 samples
+Correct Answer: B
+
+Solution:
+The Fourier series representation of a periodic discrete-time signal has non-zero values only within one period. Since X(e^(jω)) is non-zero from -π/2 to π/2, this represents half of the period. Therefore, the period of the signal x[n] is 2 samples.
+
+Explanation:
+The range of non-zero values in the Fourier series representation directly corresponds to the period of the signal. Choice A (1 sample) would result in a non-periodic signal, and choices C and D are multiples of 2 samples but do not match the given range.
+
+Common mistake note:
+A common mistake is to assume that the period is equal to the width of the non-zero region in the frequency domain without considering that it represents only half of the actual period.
+------------------------------------------------------------------------------
+
+Problem 3 (CwxDrEsFtGuH):
+A discrete- time signal x[n] is passed through an LTI system with impulse response h[n] = δ[n - 2]. What is the output y[3]?
+A) x[1]
+B) x[2]
+C) x[3]
+D) x[4]
+Correct Answer: B
+
+Solution:
+The LTI system with impulse response h[n] = δ[n - 2] shifts the input signal x[n] by two samples to the right. At n = 3, the output y[3] will be equal to the value of x[n - 2] at that time step, which is x[3 - 2] = x[1].
+
+Explanation:
+The impulse response determines how the system shifts and combines input samples to produce the output. Choice A (x[1]) would result from a shift by 1 sample, choice B (x[2]) is the correct answer, and choices C and D are shifted too far.
+
+Common mistake note:
+A common mistake is to forget that the impulse response shifts the input signal in time or to misinterpret the delay caused by δ[n - 2].
+------------------------------------------------------------------------------
+
+Problem 4 (DyzEvFwGxHjI):
+A continuous-time signal x(t) is passed through a Butterworth low-pass filter with a cutoff frequency of fc = 1 kHz. The filter's phase shift at the cutoff frequency is approximately:
+A) 0°
+B) 45°
+C) 90°
+D) 180°
+Correct Answer: A
+
+Solution:
+Butterworth filters are designed to have a linear phase response, meaning that the phase shift is approximately constant across all frequencies. At the cutoff frequency, the phase shift of a Butterworth filter is close to 0°.
+
+Explanation:
+Butterworth filters are known for their flat frequency response and minimal phase distortion. Choice B (45°) is typical for a first-order filter, choice C (90°) is for a second-order filter, and choice D (180°) is for a maximally flat phase response, which is not characteristic of Butterworth filters.
+
+Common mistake note:
+A common mistake is to assume that the phase shift at the cutoff frequency follows a specific pattern without considering the characteristics of Butterworth filters.
+------------------------------------------------------------------------------
+
+Problem 5 (EabFgHjKlMnO):
+A discrete-time signal x[n] is passed through an LTI system with transfer function H(z) = 1 - z^(-2). What is the output y[3] if x[n] = δ[n]? (Assume zero initial conditions)
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: B
+
+Solution:
+The transfer function H(z) = 1 - z^(-2) represents a system with two samples of delay. When the input x[n] is δ[0], the output y[3] will be equal to the input delayed by two samples, which is x[3 - 2] = x[1]. Since δ[1] is 1 at n = 1 and 0 elsewhere, y[3] = 1.
+
+Explanation:
+The transfer function describes how the system processes input signals. Choice A (0) would result from no delay or an incorrect impulse response, choice C and D are not consistent with the delay caused by H(z).
+
+Common mistake note:
+A common mistake is to misinterpret the delay caused by z^(-2) in the transfer function or to forget that δ[1] is 1 at n = 1.
+------------------------------------------------------------------------------
+
+Problem 6 (FbcCmDpEqFrG):
+A continuous-time signal x(t) is passed through a Hilbert transformer, which produces an analytic signal. What property does the analytic signal have?
+A) It has no negative frequency components.
+B) It has no positive frequency components.
+C) Its real part is equal to the original signal.
+D) Its imaginary part is equal to the original signal.
+Correct Answer: A
+
+Solution:
+The Hilbert transformer converts a real- valued signal into an analytic signal by adding a complex conjugate of the original signal. This results in a signal with no negative frequency components, as they are canceled out by their complex conjugates.
+
+Explanation:
+Hilbert transformers are used to separate a signal into its positive and negative frequency components. Choice B is incorrect because it removes all positive frequencies, choice C and D describe the relationship between the original signal and its real or imaginary parts, but do not capture the property of an analytic signal.
+
+Common mistake note:
+A common mistake is to confuse the purpose of a Hilbert transformer with other operations like conjugation or filtering.
+------------------------------------------------------------------------------
+
+Problem 7 (GcdDrEsFtGuH):
+A discrete-time signal x[n] is passed through an LTI system with impulse response h[n] = [1, 2, 3]. What is the output y[2] if x[n] = δ[n]? (Assume zero initial conditions)
+A) 0
+B) 1
+C) 5
+D) 6
+Correct Answer: D
+
+Solution:
+The impulse response h[n] = [1, 2, 3] represents a system that adds the input signal delayed by one, two, and three samples. When the input x[n] is δ[0], the output y[2] will be equal to the sum of these delayed inputs, which is δ[2 - 1] + δ[2 - 2] + δ[2 - 3] = δ[1] + δ[0] + δ[-1]. Since δ[n] is 1 at n = 0 and 0 elsewhere, y[2] = 1 + 1 + 0 = 2.
+
+Explanation:
+The impulse response describes how the system processes input signals. Choice A (0) would result from no delay or an incorrect impulse response, choice B and C are not consistent with the sum of delayed inputs caused by h[n].
+
+Common mistake note:
+A common mistake is to misinterpret the delay caused by the impulse response or to forget that δ[0] is 1 at n = 0.
+------------------------------------------------------------------------------

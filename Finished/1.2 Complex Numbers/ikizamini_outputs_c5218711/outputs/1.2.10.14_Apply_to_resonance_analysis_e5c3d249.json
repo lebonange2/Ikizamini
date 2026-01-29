@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.10.14",
+  "objective_text": "Apply to resonance analysis",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which molecule exhibits resonance?",
+      "choices": {
+        "A": "[N₂H₃]+",
+        "B": "CH3COOH",
+        "C": "NO2⁻",
+        "D": "C6H5Cl"
+      },
+      "correct_choice": "C",
+      "solution": "The molecule NO2⁻ exhibits resonance due to the delocalization of electrons between a double bond and a single bond between nitrogen and oxygen atoms. This results in two resonance structures.",
+      "explanation": "Resonance occurs when a molecule can be represented by multiple Lewis structures with the same atom arrangement but different electron distributions. In this case, A and D have only one type of bond, while B does not have a central atom with multiple bond types for resonance.",
+      "common_mistake_notes": "A common mistake is to select A or D based on the presence of double bonds, but these molecules lack the necessary atom arrangement for resonance."
+    },
+    {
+      "id": ":2",
+      "stem": "Which structure represents the correct resonance hybrid for the nitrate ion (NO3⁻)?",
+      "choices": {
+        "A": "[N₂O₃]",
+        "B": "[NO₂]₁- [O₂]⁺",
+        "C": "[NO₂]₁- [O]⁻ [O₂]₁+",
+        "D": "[N₂O₃]₁-"
+      },
+      "correct_choice": "C",
+      "solution": "The correct resonance hybrid for NO3⁻ is [NO₂]₁- [O]⁻ [O₂]₁+, with the negative charge delocalized across three oxygen atoms.",
+      "explanation": "Resonance hybrids arise from multiple equivalent Lewis structures. In NO3⁻, the single bond between nitrogen and one oxygen can shift to form double bonds with the other two oxygens while maintaining charge balance.",
+      "common_mistake_notes": "A common mistake is to choose A or D, which represent only one Lewis structure without considering negative charge delocalization."
+    },
+    {
+      "id": ":3",
+      "stem": "Which molecule does NOT have a resonance contributor?",
+      "choices": {
+        "A": "Ozone (O3)",
+        "B": "Phenol (C6H5OH)",
+        "C": "Formaldehyde (CH2O)",
+        "D": "Acetate ion (CH3COO⁻)"
+      },
+      "correct_choice": "C",
+      "solution": "Formaldehyde (CH2O) does not have a resonance contributor as its structure cannot be represented by multiple equivalent Lewis structures with delocalized electrons.",
+      "explanation": "Resonance occurs when a molecule has more than one valid Lewis structure. Ozone, phenol, and acetate ion all exhibit resonance due to double bonds or lone pairs that can redistribute among atoms.",
+      "common_mistake_notes": "A common mistake is to choose B because of the hydroxyl group, but it does not affect the benzene ring's resonance."
+    },
+    {
+      "id": ":4",
+      "stem": "In C6H5NO2, which nitrogen atom shows resonance?",
+      "choices": {
+        "A": "The nitrogen bonded to carbon",
+        "B": "The nitrogen bonded to oxygen",
+        "C": "Both nitrogen atoms",
+        "D": "Neither nitrogen atom"
+      },
+      "correct_choice": "B",
+      "solution": "The nitrogen atom bonded to oxygen exhibits resonance in C6H5NO2 due to its nitro group (NO2), which forms resonance structures.",
+      "explanation": "Resonance occurs when electrons are delocalized among atoms. In C6H5NO2, the nitro group has two oxygen atoms with single bonds and one double bond, allowing for different electron sharing between bonds.",
+      "common_mistake_notes": "A common mistake is to choose A because of its carbon bond, but this nitrogen atom does not support resonance."
+    },
+    {
+      "id": ":5",
+      "stem": "Which molecule has the most stable resonance hybrid?",
+      "choices": {
+        "A": "[NH4]+",
+        "B": "[CH3]3N",
+        "C": "C6H5CN",
+        "D": "HC≡C- CN"
+      },
+      "correct_choice": "D",
+      "solution": "HC≡C-CN has the most stable resonance hybrid due to effective electron delocalization from a triple bond and a cyano group.",
+      "explanation": "Resonance stability is often associated with distributing negative charge or electron density. A lacks resonance, B has only one nitrogen atom, C has a single carbon-nitrogen bond, while D has both a triple bond and a cyano group for stabilization.",
+      "common_mistake_notes": "A common mistake is to choose C because of the double bond, but its limited resonance compared to D's triple bond and cyano group."
+    },
+    {
+      "id": ":6",
+      "stem": "Which molecule has the fewest resonance contributors?",
+      "choices": {
+        "A": "Furan (C4H4O)",
+        "B": "Pyridine (C5H5N)",
+        "C": "Thiophene (C4H4S)",
+        "D": "Pyrrole (C4H4N)"
+      },
+      "correct_choice": "D",
+      "solution": "Pyrrole (C4H4N) has the fewest resonance contributors, with only one nitrogen atom and a single carbon bond in its structure.",
+      "explanation": "Resonance contributors arise from multiple valid Lewis structures. Furan, thiophene, and pyridine have more than one heteroatom for multiple resonance forms. Pyrrole's structure limits the number of contributors to one nitrogen atom.",
+      "common_mistake_notes": "A common mistake is to choose A due to its fewer atoms, but furan still has two oxygen atoms capable of forming resonance structures."
+    },
+    {
+      "id": ":7",
+      "stem": "Which molecule exhibits the mesomeric effect?",
+      "choices": {
+        "A": "CH3COOH",
+        "B": "C6H5NO2",
+        "C": "C6H5Cl",
+        "D": "HC≡N"
+      },
+      "correct_choice": "A",
+      "solution": "CH3COOH exhibits the mesomeric effect through electron donation from its carbonyl group (C=O) to stabilize an adjacent substituent.",
+      "explanation": "Mesomeric effect involves electron donation from a functional group, stabilizing the molecule. A has a carboxylic acid group (COOH), which donates electrons. B and C do not donate electrons, while D is a nitrile with no mesomeric effect.",
+      "common_mistake_notes": "A common mistake is to choose C due to its halogen atom, but chlorobenzene does not exhibit mesomeric effect as chlorine does not donate electrons."
+    }
+  ]
+}

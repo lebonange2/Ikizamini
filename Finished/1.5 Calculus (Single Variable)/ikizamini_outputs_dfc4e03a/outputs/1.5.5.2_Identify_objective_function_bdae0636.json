@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.2",
+  "objective_text": "Identify objective function",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFg67h",
+      "stem": "What is the objective function in the following linear programming problem?\nMaximize: 3x + 4y\nSubject to:\nx + y ≤ 10\n2x - y ≤ 8\nx, y ≥ 0",
+      "choices": {
+        "A": "x + y",
+        "B": "2x - y",
+        "C": "3x + 4y",
+        "D": "x"
+      },
+      "correct_choice": "C",
+      "solution": "The objective function is the expression that we want to maximize in a linear programming problem. In this case, it is '3x + 4y'. The other expressions are constraints.",
+      "explanation": "The objective function defines what we want to optimize in a linear programming problem.",
+      "common_mistake_notes": "A common mistake would be to choose one of the constraint inequalities (A or B), which represent the limits on the variables, rather than the actual target to optimize."
+    },
+    {
+      "id": "ZxvBn91m",
+      "stem": "Identify the objective function in the following problem:\nMinimize: 5c + 2d\nSubject to:\nc + d ≤ 30\nc - d ≤ 10\nc, d ≥ 0",
+      "choices": {
+        "A": "c + d",
+        "B": "c - d",
+        "C": "5c + 2d",
+        "D": "c"
+      },
+      "correct_choice": "C",
+      "solution": "The objective function is '5c + 2d', as it represents the quantity we want to minimize.",
+      "explanation": "In a linear programming problem, the objective function sets the target for optimization (maximization or minimization).",
+      "common_mistake_notes": "A common mistake would be selecting one of the constraint inequalities (A or B), which define the feasible region, instead of the expression we want to minimize."
+    },
+    {
+      "id": "JkLmNpOq",
+      "stem": "What is the objective function in this linear programming problem?\nMaximize: 2x - y\nSubject to:\nx + 3y ≤ 15\n4x - y ≥ 8\nx, y ≥ 0",
+      "choices": {
+        "A": "x + 3y",
+        "B": "4x - y",
+        "C": "2x - y",
+        "D": "y"
+      },
+      "correct_choice": "C",
+      "solution": "The objective function is '2x - y', as it represents the expression we want to maximize.",
+      "explanation": "In linear programming, the objective function determines what aspect of the problem should be optimized.",
+      "common_mistake_notes": "A common mistake would be picking one of the constraint inequalities (A or B), which restrict the feasible region, rather than the target for optimization."
+    },
+    {
+      "id": "RtSvUtVw",
+      "stem": "Find the objective function in this problem:\nMinimize: 7a + 3b\nSubject to:\na + 2b ≤ 18\n3a - b ≥ 6\na, b ≥ 0",
+      "choices": {
+        "A": "a + 2b",
+        "B": "3a - b",
+        "C": "7a + 3b",
+        "D": "a"
+      },
+      "correct_choice": "C",
+      "solution": "The objective function is '7a + 3b', which we aim to minimize.",
+      "explanation": "In linear programming, the objective function sets the goal for optimization (maximization or minimization).",
+      "common_mistake_notes": "A common error would be selecting one of the constraint inequalities (A or B), which define the feasible region, instead of the expression to minimize."
+    },
+    {
+      "id": "XyZaBbCc",
+      "stem": "What is the objective function in this linear programming scenario?\nMaximize: 4p + 2q\nSubject to:\np + q ≤ 100\n3p - 2q ≤ 150\np, q ≥ 0",
+      "choices": {
+        "A": "p + q",
+        "B": "3p - 2q",
+        "C": "4p + 2q",
+        "D": "p"
+      },
+      "correct_choice": "C",
+      "solution": "The objective function is '4p + 2q', which we want to maximize.",
+      "explanation": "In linear programming, the objective function represents the quantity that should be optimized.",
+      "common_mistake_notes": "A typical mistake would be choosing one of the constraint inequalities (A or B), which define the feasible region, rather than the target for maximization."
+    },
+    {
+      "id": "DfEgHhIi",
+      "stem": "Identify the objective function in this problem:\nMinimize: 6x - 4y\nSubject to:\nx + 5y ≤ 30\n2x - 3y ≥ 12\nx, y ≥ 0",
+      "choices": {
+        "A": "x + 5y",
+        "B": "2x - 3y",
+        "C": "6x - 4y",
+        "D": "y"
+      },
+      "correct_choice": "C",
+      "solution": "The objective function is '6x - 4y', which we are trying to minimize.",
+      "explanation": "In linear programming, the objective function sets the optimization goal (maximization or minimization).",
+      "common_mistake_notes": "A common mistake would be selecting one of the constraint inequalities (A or B), which restrict the feasible region, instead of the expression to minimize."
+    },
+    {
+      "id": "JkLmNoOp",
+      "stem": "What is the objective function in this scenario?\nMaximize: 9m + 7n\nSubject to:\nm + n ≤ 50\n2m - 3n ≥ 30\nm, n ≥ 0",
+      "choices": {
+        "A": "m + n",
+        "B": "2m - 3n",
+        "C": "9m + 7n",
+        "D": "m"
+      },
+      "correct_choice": "C",
+      "solution": "The objective function is '9m + 7n', which we aim to maximize.",
+      "explanation": "In linear programming, the objective function represents the quantity that should be optimized.",
+      "common_mistake_notes": "A common error would be picking one of the constraint inequalities (A or B), which define the feasible region, instead of the expression to maximize."
+    }
+  ]
+}

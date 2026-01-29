@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.14.5",
+  "objective_text": "Use in frequency response",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "A system's transfer function is given by H(s) = (s + 3)/(s^2 + 4s + 5). What is the system's frequency response at a frequency of 1 rad/s?",
+      "choices": {
+        "A": "-0.6",
+        "B": "0",
+        "C": "0.6",
+        "D": "1"
+      },
+      "correct_choice": "C",
+      "solution": "The frequency response H(jω) is calculated by substituting s with jω in the transfer function, where ω is the angular frequency. At 1 rad/s, ω = 1. So, H(1) = (j + 3)/(j^2 + 4j + 5). Simplifying this expression gives H(j1) = (j + 3)/(1 + 4j + 5) = (j + 3)/(6 + 4j) = 0.6 - 0.6j. The magnitude of the frequency response is |H(ω)|, which for ω = 1 rad/s is |0.6 - 0.6j| = 0.6. Therefore, the correct answer is C: 0.6.",
+      "explanation": "The frequency response measures how a system responds to different frequencies. It's important to substitute s with jω and calculate the magnitude of the resulting complex number.",
+      "common_mistake_notes": "A common mistake would be to forget to convert the frequency from rad/s to Hz, which is not necessary in this case since the calculation is done directly in radians."
+    },
+    {
+      "id": "2",
+      "stem": "What does a Bode plot represent for a linear time-invariant system?",
+      "choices": {
+        "A": "The phase shift vs. frequency",
+        "B": "The output signal vs. input signal",
+        "C": "The impulse response vs. time",
+        "D": "The step response vs. time"
+      },
+      "correct_choice": "A",
+      "solution": "A Bode plot is a graphical representation of the frequency response of a linear time-invariant system, showing the magnitude (in decibels) and phase shift (in degrees) as functions of frequency. Therefore, the correct answer is A: The phase shift vs. frequency.",
+      "explanation": "Bode plots are useful for analyzing the stability and overall behavior of control systems at different frequencies.",
+      "common_mistake_notes": "A common mistake would be to confuse Bode plots with time-domain responses like impulse or step responses."
+    },
+    {
+      "id": "3",
+      "stem": "In a frequency response analysis, what does a pole represent?",
+      "choices": {
+        "A": "An increase in output amplitude at that frequency",
+        "B": "A decrease in output amplitude at that frequency",
+        "C": "A phase shift of 180 degrees at that frequency",
+        "D": "The system's natural frequency"
+      },
+      "correct_choice": "B",
+      "solution": "In the context of a transfer function, poles represent frequencies where the denominator goes to zero, causing the magnitude of the response to decrease. Therefore, the correct answer is B: A decrease in output amplitude at that frequency.",
+      "explanation": "Poles are important for understanding the stability and dynamics of a system, as they can lead to instability if not properly compensated.",
+      "common_mistake_notes": "A common mistake would be to associate poles with an increase in amplitude or phase shifts."
+    },
+    {
+      "id": "4",
+      "stem": "What does a zero represent in a frequency response analysis?",
+      "choices": {
+        "A": "An increase in output amplitude at that frequency",
+        "B": "A decrease in output amplitude at that frequency",
+        "C": "A phase shift of 180 degrees at that frequency",
+        "D": "The system's natural frequency"
+      },
+      "correct_choice": "A",
+      "solution": "In the context of a transfer function, zeros represent frequencies where the numerator goes to zero, causing the magnitude of the response to increase. Therefore, the correct answer is A: An increase in output amplitude at that frequency.",
+      "explanation": "Zeros can be used to improve the system's performance by boosting the desired frequencies.",
+      "common_mistake_notes": "A common mistake would be to associate zeros with decreases in amplitude or phase shifts."
+    },
+    {
+      "id": "5",
+      "stem": "The magnitude of a system's frequency response at a particular frequency is 0 dB. What does this indicate?",
+      "choices": {
+        "A": "No signal passes through the system at that frequency",
+        "B": "The system amplifies the signal by a factor of 1 at that frequency",
+        "C": "The system attenuates the signal by a factor of 1 at that frequency",
+        "D": "The phase shift is undefined at that frequency"
+      },
+      "correct_choice": "B",
+      "solution": "A magnitude of 0 dB in a frequency response indicates that the system neither amplifies nor attenuates the signal at that frequency; it maintains the same amplitude. Therefore, the correct answer is B: The system amplifies the signal by a factor of 1 at that frequency.",
+      "explanation": "0 dB means the system has unity gain at that frequency, meaning it doesn't change the input amplitude.",
+      "common_mistake_notes": "A common mistake would be to think that 0 dB indicates no signal passing through or an undefined phase shift."
+    },
+    {
+      "id": "6",
+      "stem": "What is the relationship between a system's phase margin and its stability in frequency response analysis?",
+      "choices": {
+        "A": "Phase margin has no effect on stability",
+        "B": "Greater phase margin means greater stability",
+        "C": "Smaller phase margin means greater stability",
+        "D": "Phase margin only affects overshoot in time domain"
+      },
+      "correct_choice": "B",
+      "solution": "The phase margin is a measure of how much additional phase shift the system can tolerate before it becomes unstable. A greater phase margin indicates that the system is more stable, as it has more room for phase variation without entering an instability region. Therefore, the correct answer is B: Greater phase margin means greater stability.",
+      "explanation": "Phase margin is a crucial factor in assessing the stability of control systems under feedback.",
+      "common_mistake_notes": "A common mistake would be to associate a smaller phase margin with greater stability or to混淆 it with overshoot in time domain analysis."
+    },
+    {
+      "id": "7",
+      "stem": "In a frequency response plot, what does a 45° phase shift at low frequencies indicate about the system?",
+      "choices": {
+        "A": "The system has a dominant pole",
+        "B": "The system has a dominant zero",
+        "C": "The system is marginally stable",
+        "D": "The system is critically damped"
+      },
+      "correct_choice": "A",
+      "solution": "A 45° phase shift at low frequencies typically indicates the presence of a dominant pole in the system's transfer function. Poles contribute to phase shifts, and a first-order pole would result in a phase shift of -90°. Since we have a +45° phase shift, it means there is an additional 135° phase shift from other poles or zeros that compensate for the negative phase shift. Therefore, the correct answer is A: The system has a dominant pole.",
+      "explanation": "The phase shift at low frequencies can provide insights into the system's dynamics and the presence of dominant poles.",
+      "common_mistake_notes": "A common mistake would be to associate a 45° phase shift with zeros or stability classifications."
+    }
+  ]
+}

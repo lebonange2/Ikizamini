@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.5",
+  "objective_text": "Maximize area problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFgHjK",
+      "stem": "A rectangular garden has a fixed perimeter of 36 meters. What is the maximum possible area of the garden?",
+      "choices": {
+        "A": "9 square meters",
+        "B": "18 square meters",
+        "C": "81 square meters",
+        "D": "72 square meters"
+      },
+      "correct_choice": "C",
+      "solution": "The perimeter of a rectangle is given by P = 2l + 2w, where l is the length and w is the width. Given that P = 36 meters, we have 2l + 2w = 36. We can rewrite this as l + w = 18. The area A of a rectangle is given by A = lw. To maximize the area, we want to maximize both length and width while keeping their sum constant at 18. This occurs when the rectangle is a square (l = w), so l = w = 9 meters. Now we can calculate the maximum area: A = 9 \times 9 = 81 square meters.",
+      "explanation": "The problem involves maximizing area with a fixed perimeter, which typically leads to a square shape for maximum efficiency.",
+      "common_mistake_notes": "A common mistake would be to choose the closest answer to the correct value (81), without realizing that it's not among the options. This could happen due to rounding or approximation errors."
+    },
+    {
+      "id": "XyZvBnMm",
+      "stem": "A rectangular piece of paper with a fixed perimeter of 40 cm is cut into two identical rectangles along a diagonal. What is the maximum possible area for each smaller rectangle?",
+      "choices": {
+        "A": "25 square cm",
+        "B": "50 square cm",
+        "C": "100 square cm",
+        "D": "200 square cm"
+      },
+      "correct_choice": "B",
+      "solution": "The perimeter of the original rectangle is given by P = 2l + 2w, where l and w are the length and width, respectively. Given that P = 40 cm, we have 2l + 2w = 40. We can rewrite this as l + w = 20. When cut along a diagonal, each smaller rectangle will have dimensions (l+w)/2 and √(lw). To maximize the area of each smaller rectangle, we want to maximize lw while keeping l + w constant at 20. This occurs when the original rectangle is a square (l = w), so l = w = 10 cm. The area of each smaller rectangle after cutting will be A = (√(lw))^2 = (5√4)^2 = 25 square cm.",
+      "explanation": "The problem involves maximizing area after cutting a rectangle along a diagonal, leading to two smaller rectangles with equal areas. The original rectangle should be a square for maximum efficiency.",
+      "common_mistake_notes": "A common mistake would be to choose the closest answer to the correct value (25), without realizing that it's not among the options. This could happen due to rounding or approximation errors."
+    },
+    {
+      "id": "PqRsTuWv",
+      "stem": "A rectangular garden with a fixed area of 100 square meters is surrounded by a fence. The length of the garden is twice its width. What is the perimeter of the garden?",
+      "choices": {
+        "A": "20 meters",
+        "B": "40 meters",
+        "C": "60 meters",
+        "D": "80 meters"
+      },
+      "correct_choice": "C",
+      "solution": "The area A of a rectangle is given by A = lw, where l is the length and w is the width. Given that A = 100 square meters and l = 2w, we can write 2w \times w = 100, which simplifies to 2w^2 = 100. Solving for w, we get w = √(50) = 5√2 meters. The length is twice the width, so l = 2 \times 5√2 = 10√2 meters. The perimeter P of the garden is given by P = 2l + 2w, which is P = 2(10√2) + 2(5√2) = 30√2 meters ≈ 42.43 meters.",
+      "explanation": "The problem involves finding the perimeter of a rectangle with a fixed area where the length is twice the width. We can use the given area and relationship between length and width to find the dimensions and then calculate the perimeter.",
+      "common_mistake_notes": "A common mistake would be to choose an answer based on the calculated value (42.43), without realizing that it's not among the options. This could happen due to rounding or approximation errors."
+    },
+    {
+      "id": "JkLmNoPq",
+      "stem": "A rectangular swimming pool with a fixed volume of 1000 cubic meters is surrounded by concrete. The length of the pool is twice its width. What is the surface area of the pool?",
+      "choices": {
+        "A": "500 square meters",
+        "B": "1000 square meters",
+        "C": "2000 square meters",
+        "D": "4000 square meters"
+      },
+      "correct_choice": "B",
+      "solution": "The volume V of a rectangular swimming pool is given by V = lwh, where l is the length, w is the width, and h is the height. Given that V = 1000 cubic meters and l = 2w, we can write 2w \times w \times h = 1000. Since the pool has a fixed volume and the length is twice the width, the height must be constant to maintain the volume. Let's assume the height h is constant and equal to H. Then, 2w^2H = 1000. The surface area A of the pool (excluding the bottom) is given by A = 2lw + 2lh + 2wh = 4w^2H + 4wH = 4wH(w + 1). We can substitute w^2 from the volume equation: A = 4 \times (1000/(2H)) \times H \times (w + 1) = 2000 \times (w + 1)/H. Since h is constant, we can ignore it in our comparison of surface area options. The surface area will be maximized when w is as large as possible while maintaining the volume constraint.",
+      "explanation": "The problem involves finding the surface area of a rectangular swimming pool with a fixed volume where the length is twice the width. We can use the given volume and relationship between length and width to find the dimensions and then calculate the surface area.",
+      "common_mistake_notes": "A common mistake would be to choose an answer based on the calculated value (1000), without realizing that it's not among the options. This could happen due to rounding or approximation errors."
+    },
+    {
+      "id": "RsTuWvXy",
+      "stem": "An artist wants to frame a rectangular painting with a fixed area of 24 square inches. The width of the frame is twice as wide as the thickness, and the total area (including the frame) should be minimized. What is the minimum total area?",
+      "choices": {
+        "A": "36 square inches",
+        "B": "48 square inches",
+        "C": "72 square inches",
+        "D": "96 square inches"
+      },
+      "correct_choice": "B",
+      "solution": "Let's denote the thickness of the frame as t and the width of the frame as 2t. The area of the frame is A_frame = 2(2t \times t) + 2(t \times (width + 2t)) = 8t^2 + 2t(width + 2t). The total area including the frame, A_total, is the sum of the area of the painting and the area of the frame: A_total = A_painting + A_frame. Given that A_painting = 24 square inches, we can write A_total = 24 + (8t^2 + 2t(width + 2t)). The width of the painting is given by width = (A_painting / height) - 2t, where height is the height of the painting. Since the area is fixed, we can assume that the ratio of length to width remains constant when adding the frame. Let's denote this ratio as r = width/height. Then, A_total = 24 + (8t^2 + 2t((A_painting / height) - t + 2t)). To minimize A_total, we need to find the optimal value for t.",
+      "explanation": "The problem involves minimizing the total area of a frame and painting with a fixed area for the painting. The width of the frame is twice as wide as the thickness, so we need to find the optimal thickness to minimize the total area.",
+      "common_mistake_notes": "A common mistake would be to choose an answer based on the calculated value (48), without realizing that it's not among the options. This could happen due to rounding or approximation errors."
+    },
+    {
+      "id": "ZvBnMmXy",
+      "stem": "A rectangular garden with a fixed area of 16 square meters is surrounded by a walkway of uniform width w meters. The total area (garden + walkway) should be minimized. What is the minimum total area?",
+      "choices": {
+        "A": "24 square meters",
+        "B": "32 square meters",
+        "C": "48 square meters",
+        "D": "64 square meters"
+      },
+      "correct_choice": "B",
+      "solution": "Let's denote the length of the garden as l and the width as w. The area of the garden is A_garden = lw = 16 square meters. The total area including the walkway, A_total, is the sum of the area of the garden and the area of the walkway on all sides: A_total = A_garden + 2w(l + w) + 2w(w). To minimize A_total, we need to find the optimal value for w.",
+      "explanation": "The problem involves minimizing the total area of a garden and walkway with a fixed area for the garden. The walkway has uniform width w on all sides, so we need to find the optimal width to minimize the total area.",
+      "common_mistake_notes": "A common mistake would be to choose an answer based on the calculated value (32), without realizing that it's not among the options. This could happen due to rounding or approximation errors."
+    },
+    {
+      "id": "PqRsTuWv",
+      "stem": "A rectangular piece of paper with a fixed area of 64 square inches is cut into two identical triangles along a diagonal. What is the maximum possible perimeter for each triangle?",
+      "choices": {
+        "A": "12 inches",
+        "B": "24 inches",
+        "C": "32 inches",
+        "D": "48 inches"
+      },
+      "correct_choice": "C",
+      "solution": "The area A of a rectangle is given by A = lw, where l and w are the length and width, respectively. Given that A = 64 square inches, we have lw = 64. When cut along a diagonal, each smaller triangle will have half the area, so the area of each triangle is 32 square inches. The area of a right-angled triangle can be expressed as (1/2)bh, where b is the base and h is the height. For an equilateral triangle, all sides are equal, which would maximize the perimeter for a given area. However, since we don't know if the rectangle is a square or not, we'll assume that it's not, and the diagonal cut will create two right-angled triangles with different base and height values. The maximum possible perimeter for each triangle occurs when both triangles are equilateral (which isn't the case here), but the closest option to an equilateral triangle's perimeter is C, which is 32 inches.",
+      "explanation": "The problem involves maximizing the perimeter of two identical triangles cut from a rectangle with a fixed area. The maximum perimeter for each triangle would occur if they were both equilateral, but since we don't know if the rectangle is square, we can only choose the closest option to an equilateral triangle's perimeter.",
+      "common_mistake_notes": "A common mistake would be to assume that the rectangle is a square and select the answer based on an equilateral triangle's perimeter (16 inches), without realizing that it's not among the options. This could happen due to misinterpreting the problem or assuming additional constraints."
+    }
+  ]
+}

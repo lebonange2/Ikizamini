@@ -1,0 +1,180 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.11.11 Find harmonic functions
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.11 Complex Differentiation
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (?):
+Which function is harmonic in the region π < θ < 2π and r > 0?
+A) r^2sin(θ)cos(θ)
+B) ln(r)cos(θ)
+C) r^(-1)sin(θ)
+D) r^2e^(rθ)
+Correct Answer: B
+
+Solution:
+A harmonic function satisfies Laplace's equation, ∇²u = 0. Check each option by taking second partial derivatives with respect to r and θ.
+
+For A: u = r^2sin(θ)cos(θ)
+∂²u/∂r² ≠ 0
+∂²u/∂θ² ≠ 0
+Not harmonic.
+
+For B: u = ln(r)cos(θ)
+∂²u/∂r² = 0
+∂²u/∂θ² ≠ 0
+Not harmonic.
+
+For C: u = r^(-1)sin(θ)
+∂²u/∂r² = 0
+∂²u/∂θ² ≠ 0
+Not harmonic.
+
+For D: u = r^2e^(rθ)
+∂²u/∂r² ≠ 0
+∂²u/∂θ² ≠ 0
+Not harmonic.
+
+The only option that satisfies Laplace's equation is B.
+
+Explanation:
+A function is harmonic if it satisfies Laplace's equation. Verify by taking second partial derivatives with respect to both variables and setting them equal to zero.
+
+Common mistake note:
+Remember that a function must be harmonic in the entire specified region.
+------------------------------------------------------------------------------
+
+Problem 2 (?):
+Find the harmonic conjugate of f(z) = 2x - 3y, where z = x + iy.
+A) 2y + 3x
+B) 3x + 2y
+C) -2y + 3x
+D) 3y - 2x
+Correct Answer: D
+
+Solution:
+The harmonic conjugate g(x, y) of f(x, y) satisfies ∂f/∂y = -∂g/∂x.
+
+Given f(z) = 2x - 3y, ∂f/∂y = -3. Thus, ∂g/∂x = 3.
+
+Testing options:
+A: g(2y + 3x), ∂g/∂x ≠ 3
+B: g(3x + 2y), ∂g/∂x ≠ 3
+C: g(-2y + 3x), ∂g/∂x ≠ 3
+D: g(3y - 2x), ∂g/∂x = 2 (multiply by -1 for correct sign)
+
+The correct answer, after adjusting the sign, is D.
+
+Explanation:
+Find the harmonic conjugate by equating the partial derivative of f with respect to y to the negative of the partial derivative of g with respect to x.
+
+Common mistake note:
+Ensure the sign of ∂g/∂x matches the sign of -∂f/∂y.
+------------------------------------------------------------------------------
+
+Problem 3 (?):
+Find the real part of the harmonic function u(x, y) = e^(-x)sin(y), where x and y are real numbers.
+A) e^(-x)
+B) -e^(-x)
+C) sin(y)
+D) cos(y)
+Correct Answer: A
+
+Solution:
+The real part of a harmonic function is given by the function itself: u(x, y) = e^(-x)sin(y).
+
+Explanation:
+In this problem, the real part of the given harmonic function is simply e^(-x).
+
+Common mistake note:
+No common mistakes noted.
+------------------------------------------------------------------------------
+
+Problem 4 (?):
+Find the harmonic function that has a potential V(x, y) = 2x^2 + 3y^2.
+A) 4x^2 - 6y^2
+B) -4x^2 + 6y^2
+C) 4xy
+D) 2xy
+Correct Answer: B
+
+Solution:
+To find u(x, y), take negative partial derivatives of V: ∂u/∂x = -4x, ∂u/∂y = -6y. Integrate:
+u(x, y) = 2x^2 + 3y^2 + C
+Since we want the harmonic function corresponding to V, negate the result:
+u(x, y) = -2x^2 - 3y^2 + C
+The constant C does not affect harmonicity; thus, the correct answer is B.
+
+Explanation:
+To find a harmonic function from its potential, take negative partial derivatives and integrate. The resulting function should satisfy Laplace's equation.
+
+Common mistake note:
+Be cautious with signs when integrating and include unnecessary constants.
+------------------------------------------------------------------------------
+
+Problem 5 (?):
+Find the harmonic conjugate of f(z) = 3x^2 - 4y^2, where z = x + iy.
+A) 6xy
+B) -6xy
+C) 12xy
+D) 12xy - C
+Correct Answer: B
+
+Solution:
+The harmonic conjugate g(x, y) of f(x, y) satisfies ∂f/∂y = -∂g/∂x.
+
+Given f(z) = 3x^2 - 4y^2, ∂f/∂y = -8y. Thus, ∂g/∂x = 8y.
+
+Testing options:
+A: g(6xy), ∂g/∂x ≠ 8y
+B: g(-6xy), ∂g/∂x = -6y (multiply by -1 for correct sign)
+C: g(12xy), ∂g/∂x ≠ 8y
+D: g(12xy - C), ∂g/∂x = 12y (constant不影响)
+
+The correct answer, after adjusting the sign, is B.
+
+Explanation:
+Find the harmonic conjugate by equating the partial derivative of f with respect to y to the negative of the partial derivative of g with respect to x.
+
+Common mistake note:
+Ensure the sign of ∂g/∂x matches the sign of -∂f/∂y.
+------------------------------------------------------------------------------
+
+Problem 6 (?):
+Find the imaginary part of the harmonic function u(x, y) = 2e^(ix)sin(y), where x and y are real numbers.
+A) 2e^(-x)cos(θ)
+B) 2e^(x)cos(θ)
+C) 2e^(ix)cos(θ)
+D) 2e^(ix)sin(θ)
+Correct Answer: C
+
+Solution:
+The imaginary part of a harmonic function is given by the product of its exponential and trigonometric components: u(x, y) = 2e^(ix)sin(y).
+
+Explanation:
+In this problem, the imaginary part of the given harmonic function is 2e^(ix)cos(θ).
+
+Common mistake note:
+No common mistakes noted.
+------------------------------------------------------------------------------
+
+Problem 7 (?):
+Find the harmonic function that has a potential V(x, y) = 2xy.
+A) x^2 - y^2
+B) x^2 + y^2
+C) x^2 + 2xy
+D) x^2 - 2xy
+Correct Answer: D
+
+Solution:
+To find u(x, y), take negative partial derivatives of V: ∂u/∂x = -2y, ∂u/∂y = -2x. Integrate:
+u(x, y) = -2xy + C
+The correct answer is D.
+
+Explanation:
+To find a harmonic function from its potential, take negative partial derivatives and integrate. The resulting function should satisfy Laplace's equation.
+
+Common mistake note:
+Be cautious with signs when integrating.
+------------------------------------------------------------------------------

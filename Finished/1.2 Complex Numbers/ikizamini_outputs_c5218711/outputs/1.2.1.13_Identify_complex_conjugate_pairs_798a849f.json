@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.1.13",
+  "objective_text": "Identify complex conjugate pairs",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "What is the complex conjugate of the complex number 3 + 4i?",
+      "choices": {
+        "A": "2 + 4i",
+        "B": "3 - 4i",
+        "C": "4 + 3i",
+        "D": "5 + 0i"
+      },
+      "correct_choice": "B",
+      "solution": "The complex conjugate of a complex number a + bi is a - bi. For the given number 3 + 4i, its complex conjugate would be 3 - 4i.",
+      "explanation": "Complex conjugates are formed by changing the sign of the imaginary part while keeping the real part unchanged.",
+      "common_mistake_notes": "A common mistake is to switch both parts of the complex number, which results in option A. Remember that only the imaginary part changes sign."
+    },
+    {
+      "id": "Two",
+      "stem": "Find the complex conjugate of (-2 + 6i)^2.",
+      "choices": {
+        "A": "4 - 36i",
+        "B": "-4 + 36i",
+        "C": "10 + 24i",
+        "D": "-10 - 24i"
+      },
+      "correct_choice": "D",
+      "solution": "First, calculate the square of (-2 + 6i): (-2 + 6i)^2 = (-2)^2 + 2(-2)(6i) + (6i)^2 = 4 - 24i + 36i^2. Since i^2 = -1, we have: 4 - 24i - 36 = -32 - 24i. Now find the complex conjugate by changing the sign of the imaginary part: -32 + 24i.",
+      "explanation": "First square the given complex number and then find its conjugate by reversing the sign of the imaginary term.",
+      "common_mistake_notes": "A common mistake is to forget that i^2 = -1, which would lead to incorrect choices. Also, not squaring both parts of the binomial can result in errors."
+    },
+    {
+      "id": "Three",
+      "stem": "Identify the complex conjugate pair among the following: 7i, -7i, 5 + 3i, and 5 - 3i.",
+      "choices": {
+        "A": "7i and -7i",
+        "B": "5 + 3i and 5 - 3i",
+        "C": "7i and 5 + 3i",
+        "D": "-7i and 5 - 3i"
+      },
+      "correct_choice": "B",
+      "solution": "The complex conjugate pair is the one where the real parts are identical, and the imaginary parts have opposite signs. In this case, 5 + 3i and 5 - 3i form a conjugate pair.",
+      "explanation": "Look for pairs with the same real part and opposite imaginary parts to identify the complex conjugates.",
+      "common_mistake_notes": "A common mistake is to confuse the concept of conjugates with simply adding or subtracting numbers, which would lead to incorrect choices."
+    },
+    {
+      "id": "Four",
+      "stem": "What is the product of the complex number 2 + 3i and its complex conjugate?",
+      "choices": {
+        "A": "-4 - 5i",
+        "B": "13",
+        "C": "4 + 5i",
+        "D": "4 - 5i"
+      },
+      "correct_choice": "B",
+      "solution": "The product of a complex number (a + bi) and its conjugate (a - bi) is always a real number, specifically (a^2 + b^2). For the given number 2 + 3i, the product with its conjugate is (2 + 3i)(2 - 3i) = 4 - 9i^2. Since i^2 = -1, we have: 4 + 9 = 13.",
+      "explanation": "The product of a complex number and its conjugate results in a real number; calculate the product using the formula (a^2 + b^2).",
+      "common_mistake_notes": "A common mistake is to forget that i^2 = -1, which would lead to an incorrect result. Also, not multiplying both parts of the binomial can cause errors."
+    },
+    {
+      "id": "Five",
+      "stem": "Find the complex conjugate of the expression (3 + 4i)/(5 - 6i).",
+      "choices": {
+        "A": "(3 - 4i)/(5 + 6i)",
+        "B": "(3 + 4i)/(6 + 5i)",
+        "C": "(18 + 22i)/(25 + 30i)",
+        "D": "(18 - 22i)/(25 + 30i)"
+      },
+      "correct_choice": "A",
+      "solution": "To find the complex conjugate of a fraction, multiply both numerator and denominator by the conjugate of the denominator: (3 + 4i)/(5 - 6i) * (5 + 6i)/(5 + 6i) = (15 + 18i + 20i + 24i^2)/(25 + 30i - 30i - 36i^2). Since i^2 = -1, we have: (15 + 38i - 24)/(25 + 36) = (1 + 38i)/(61) * (61)/(61) = (1 - 38i)/(61). The conjugate of this is (1 + 38i)/(61), which simplifies to (3 + 4i)/(5 + 6i).",
+      "explanation": "To find the conjugate of a complex fraction, multiply both numerator and denominator by the conjugate of the denominator, then simplify.",
+      "common_mistake_notes": "A common mistake is to forget to multiply both parts of the fraction or to incorrectly apply the conjugation rule, leading to incorrect choices."
+    },
+    {
+      "id": "Six",
+      "stem": "Given the complex number 1 - 7i, what is its complex conjugate raised to the power of 3?",
+      "choices": {
+        "A": "-46 + 21i",
+        "B": "46 + 21i",
+        "C": "46 - 21i",
+        "D": "-46 - 21i"
+      },
+      "correct_choice": "C",
+      "solution": "The complex conjugate of 1 - 7i is 1 + 7i. Raising this to the power of 3: (1 + 7i)^3 = 1^3 + 3(1^2)(7i) + 3(1)(7i)^2 + (7i)^3 = 1 + 21i - 147 - 343i. Simplify and find the conjugate by changing the sign of the imaginary part: -136 + 322i.",
+      "explanation": "First, find the complex conjugate, then raise it to the given power, and finally find its conjugate by reversing the sign of the imaginary term.",
+      "common_mistake_notes": "A common mistake is to forget that i^2 = -1 or to incorrectly apply exponentiation rules, leading to incorrect choices."
+    },
+    {
+      "id": "Seven",
+      "stem": "Identify which pair represents a complex conjugate pair: (a) 8 + 3i and 8 - 3i, (b) 4i and -4i, (c) 2 + 5i and 7 + 9i, (d) 6 - 7i and 6 + 7i.",
+      "choices": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "d"
+      },
+      "correct_choice": "A",
+      "solution": "The complex conjugate pair is the one where the real parts are identical, and the imaginary parts have opposite signs. In this case, 8 + 3i and 8 - 3i form a conjugate pair.",
+      "explanation": "Look for pairs with the same real part and opposite imaginary parts to identify the complex conjugates.",
+      "common_mistake_notes": "A common mistake is to confuse the concept of conjugates with simply adding or subtracting numbers, which would lead to incorrect choices."
+    }
+  ]
+}

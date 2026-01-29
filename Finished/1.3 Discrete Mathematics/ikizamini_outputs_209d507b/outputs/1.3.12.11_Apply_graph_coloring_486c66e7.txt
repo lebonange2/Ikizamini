@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.12.11 Apply graph coloring
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.12 Graph Theory Basics
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+What is the goal of graph coloring?
+A) To find a path between two nodes
+B) To assign colors to nodes such that no adjacent nodes have the same color
+C) To minimize the number of edges in a graph
+D) To maximize the degree of each node
+Correct Answer: B
+
+Solution:
+The goal of graph coloring is to assign colors to nodes in a graph such that no adjacent nodes share the same color. This helps in visualizing relationships and identifying patterns in the graph.
+
+Explanation:
+Option A refers to finding a path, which is a different problem called shortest path or connectivity. Option C relates to edge minimization, like in minimum spanning trees. Option D deals with degree maximization, which is not the objective of graph coloring.
+
+Common mistake note:
+Common mistake: Confusing graph coloring with other graph-related problems such as finding paths or minimizing edges.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+In a 3-colorable graph, what is the maximum number of nodes that can share the same color?
+A) 1
+B) 2
+C) 3
+D) The entire graph
+Correct Answer: C
+
+Solution:
+In a 3-colorable graph, each node can be assigned one of three colors. Since no adjacent nodes can have the same color, the maximum number of nodes that can share the same color is 3 (assuming they form a triangle).
+
+Explanation:
+Option A and B are incorrect because they limit the number of nodes too much. Option D is wrong because it violates the rule that adjacent nodes must have different colors.
+
+Common mistake note:
+Common mistake: Assuming all nodes can share the same color without considering adjacency constraints.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Which of the following graphs requires at least 4 colors for proper coloring?
+A) A cycle graph with 5 nodes
+B) A complete graph with 4 nodes
+C) A tree with 6 nodes
+D) A path graph with 7 nodes
+Correct Answer: B
+
+Solution:
+A complete graph with 4 nodes (K4) requires at least 4 colors for proper coloring. In a complete graph, every node is connected to every other node, making it impossible to color the graph using fewer than 4 distinct colors without violating the adjacent node rule.
+
+Explanation:
+Option A (5-cycle) can be colored with 3 colors. Option C (6-node tree) and D (7-node path) can both be colored with 3 colors as well.
+
+Common mistake note:
+Common mistake: Underestimating the number of colors needed for complete graphs.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+What is a proper graph coloring?
+A) Assigning any color to each node, regardless of adjacency
+B) Using as many colors as nodes in the graph
+C) Assigning colors such that no adjacent nodes have the same color
+D) Minimizing the number of unique colors used
+Correct Answer: C
+
+Solution:
+A proper graph coloring is when colors are assigned to nodes in a way that no adjacent nodes share the same color.
+
+Explanation:
+Option A violates the adjacency rule. Option B does not necessarily ensure a correct coloring. Option D refers to an optimization aspect, but it's not the definition of a proper coloring.
+
+Common mistake note:
+Common mistake: Confusing proper graph coloring with minimum number of colors used.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+In an undirected graph with 8 nodes and 12 edges, what is the minimum number of colors needed for a proper coloring?
+A) 3
+B) 4
+C) 5
+D) 6
+Correct Answer: B
+
+Solution:
+To determine the minimum number of colors needed, we can use the chromatic number formula: χ(G) ≤ 1 + δ(G), where χ(G) is the chromatic number and δ(G) is the maximum degree of any node in the graph. First, find the maximum degree (δ): 12 edges / 8 nodes = 1.5, rounded up to 2. Then, apply the formula: χ(G) ≤ 1 + 2 = 3. However, since we're looking for a proper coloring and not an upper bound, we need to check if a 3-coloring is possible. In this case, it's possible, so the minimum number of colors needed is 3.
+
+Explanation:
+Option A is incorrect because it doesn't consider the maximum degree. Option C and D are too high.
+
+Common mistake note:
+Common mistake: Not using the chromatic number formula or misapplying it.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+What is a vertex coloring?
+A) Assigning colors to edges in a graph
+B) Assigning colors to nodes in a graph such that no adjacent nodes have the same color
+C) Creating a subgraph with specific properties
+D) Finding the shortest path between two nodes
+Correct Answer: B
+
+Solution:
+Vertex coloring is the process of assigning colors to nodes in a graph such that no adjacent nodes share the same color.
+
+Explanation:
+Option A refers to edge coloring, which is different. Option C and D describe other graph problems.
+
+Common mistake note:
+Common mistake: Mixing up vertex coloring with edge coloring or other graph-related concepts.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Which of the following statements about graph coloring is true?
+A) Every graph can be colored using only two colors.
+B) The chromatic number of a graph is always equal to its maximum degree.
+C) Graph coloring is an NP-complete problem.
+D) A graph with no edges requires at least one color for proper coloring.
+Correct Answer: C
+
+Solution:
+Graph coloring, specifically the decision version (determining if a graph can be colored with k colors), is an NP-complete problem.
+
+Explanation:
+Option A is false because not all graphs are 2-colorable. Option B is incorrect as the chromatic number can be higher than the maximum degree. Option D is wrong because an empty graph (no edges) requires zero colors for proper coloring.
+
+Common mistake note:
+Common mistake: Misunderstanding the properties or complexity of graph coloring.
+------------------------------------------------------------------------------

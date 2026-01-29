@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.8.11 Use quadratic formula with complex coefficients
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.8 Complex Equations and Inequalities
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Solve the quadratic equation: x^2 + 3ix - 4 = 0
+A) -2i, 2i
+B) 2, -2
+C) 1 - i, 1 + i
+D) 1 + 2i, 1 - 2i
+Correct Answer: A
+
+Solution:
+Using the quadratic formula: x = (-b ± √(b² - 4ac)) / (2a), where a = 1, b = 3i, c = -4. We calculate the discriminant: D = (3i)² - 4(1)(-4) = -9 + 16 = 7. Since D > 0 and is not a perfect square, we have complex roots. The roots are x = (-3i ± √7i) / 2. Simplifying the imaginary part gives us x = -i ± √7/2 * i, which can be written as complex conjugates: x = -2i and x = 2i.
+
+Explanation:
+The quadratic formula works with complex coefficients as well. The roots are found by applying the formula and simplifying the imaginary parts.
+
+Common mistake note:
+A common mistake is to assume that because there are complex coefficients, the solution must be entirely complex. However, it's possible to have one or both roots real if the discriminant is positive but not a perfect square.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the solutions for the equation: 2x^2 + 5ix - 3 = 0
+A) -1.5 - 1.5i, -1.5 + 1.5i
+B) 1.5 - 1.5i, 1.5 + 1.5i
+C) 0.5 - 2i, 0.5 + 2i
+D) -0.5 - 2i, -0.5 + 2i
+Correct Answer: C
+
+Solution:
+Using the quadratic formula: x = (-b ± √(b² - 4ac)) / (2a), where a = 2, b = 5i, c = -3. We calculate the discriminant: D = (5i)² - 4(2)(-3) = -25 + 24 = -1. Since D < 0, we have complex roots with an imaginary part. The roots are x = (-5i ± √(-1)i) / 4 = -i/2 ± (1/2)i√(-1). Simplifying gives us x = -0.5 - i and x = -0.5 + i.
+
+Explanation:
+When the discriminant is negative, the roots are complex conjugates with an imaginary part. The quadratic formula handles this case correctly.
+
+Common mistake note:
+A common mistake is to think that because the discriminant is negative, the solution must involve √(-1) directly. However, it's essential to simplify the expression using Euler's formula (e^(iθ) = cos(θ) + i*sin(θ)) or by recognizing the form of a complex conjugate pair.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Solve the quadratic equation: x^2 - 4ix + 5 = 0
+A) 2i, -2i
+B) 1 + 2i, 1 - 2i
+C) -1 + 2i, -1 - 2i
+D) 2 + i, 2 - i
+Correct Answer: B
+
+Solution:
+Using the quadratic formula: x = (-b ± √(b² - 4ac)) / (2a), where a = 1, b = -4i, c = 5. We calculate the discriminant: D = (-4i)² - 4(1)(5) = 16 + 20 = 36. Since D > 0 and is a perfect square, we have real roots. The roots are x = (4i ± √36) / 2 = 2i ± 6 / 2 = 1 ± 3. The solutions are x = 1 + 3 and x = 1 - 3, which can be written as complex conjugates: x = 1 + 2i and x = 1 - 2i.
+
+Explanation:
+The quadratic formula works with complex coefficients, and when the discriminant is a perfect square, the roots are real. The imaginary parts cancel out in this case.
+
+Common mistake note:
+A common mistake is to assume that because there are complex coefficients, the solution must be entirely complex. However, if the discriminant is a perfect square, it's possible to have real roots.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the solutions for the equation: 3x^2 + 6ix - 8 = 0
+A) -1 - 2i, -1 + 2i
+B) 1 - 2i, 1 + 2i
+C) 2 - i, 2 + i
+D) 4 - 3i, 4 + 3i
+Correct Answer: A
+
+Solution:
+Using the quadratic formula: x = (-b ± √(b² - 4ac)) / (2a), where a = 3, b = 6i, c = -8. We calculate the discriminant: D = (6i)² - 4(3)(-8) = -36 + 96 = 60. Since D > 0 and is not a perfect square, we have complex roots. The roots are x = (-6i ± √60i) / 6 = -i ± √15/3 * i. Simplifying gives us x = -1 - √5i and x = -1 + √5i.
+
+Explanation:
+The quadratic formula works with complex coefficients, and when the discriminant is not a perfect square, we have complex roots. The imaginary parts are simplified in this case.
+
+Common mistake note:
+A common mistake is to assume that because there are complex coefficients, the solution must be entirely complex. However, it's possible to have one or both roots real if the discriminant is positive but not a perfect square.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Solve the quadratic equation: x^2 + 4ix - 3 = 0
+A) -1.5 - 1.5i, -1.5 + 1.5i
+B) 1.5 - 1.5i, 1.5 + 1.5i
+C) 0.5 - 2i, 0.5 + 2i
+D) -0.5 - 2i, -0.5 + 2i
+Correct Answer: C
+
+Solution:
+Using the quadratic formula: x = (-b ± √(b² - 4ac)) / (2a), where a = 1, b = 4i, c = -3. We calculate the discriminant: D = (4i)² - 4(1)(-3) = -16 + 12 = -4. Since D < 0, we have complex roots with an imaginary part. The roots are x = (-4i ± √(-4)i) / 2 = -2i ± √2 * i. Simplifying gives us x = -0.5 - 2i and x = -0.5 + 2i.
+
+Explanation:
+When the discriminant is negative, the roots are complex conjugates with an imaginary part. The quadratic formula handles this case correctly.
+
+Common mistake note:
+A common mistake is to think that because the discriminant is negative, the solution must involve √(-1) directly. However, it's essential to simplify the expression using Euler's formula (e^(iθ) = cos(θ) + i*sin(θ)) or by recognizing the form of a complex conjugate pair.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the solutions for the equation: 2x^2 - 3ix + 1 = 0
+A) 0.5 + 0.5i, 0.5 - 0.5i
+B) -0.5 + 0.5i, -0.5 - 0.5i
+C) 1 + i, 1 - i
+D) -1 + i, -1 - i
+Correct Answer: A
+
+Solution:
+Using the quadratic formula: x = (-b ± √(b² - 4ac)) / (2a), where a = 2, b = -3i, c = 1. We calculate the discriminant: D = (-3i)² - 4(2)(1) = -9 + 8 = -1. Since D < 0, we have complex roots with an imaginary part. The roots are x = (3i ± √(-1)i) / 4 = 0.75i ± 0.5 * i√(-1). Simplifying gives us x = 0.5 + 0.5i and x = 0.5 - 0.5i.
+
+Explanation:
+When the discriminant is negative, the roots are complex conjugates with an imaginary part. The quadratic formula handles this case correctly.
+
+Common mistake note:
+A common mistake is to think that because the discriminant is negative, the solution must involve √(-1) directly. However, it's essential to simplify the expression using Euler's formula (e^(iθ) = cos(θ) + i*sin(θ)) or by recognizing the form of a complex conjugate pair.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Solve the quadratic equation: 4x^2 - 6ix + 5 = 0
+A) 1.5 + 1.5i, 1.5 - 1.5i
+B) -1.5 + 1.5i, -1.5 - 1.5i
+C) 0.5 + 2i, 0.5 - 2i
+D) -0.5 + 2i, -0.5 - 2i
+Correct Answer: A
+
+Solution:
+Using the quadratic formula: x = (-b ± √(b² - 4ac)) / (2a), where a = 4, b = -6i, c = 5. We calculate the discriminant: D = (-6i)² - 4(4)(5) = -36 + 80 = 44. Since D > 0 and is not a perfect square, we have complex roots. The roots are x = (6i ± √44i) / 8 = 0.75i ± √11/2 * i. Simplifying gives us x = 1.5 + 1.5i and x = 1.5 - 1.5i.
+
+Explanation:
+The quadratic formula works with complex coefficients, and when the discriminant is not a perfect square, we have complex roots. The imaginary parts are simplified in this case.
+
+Common mistake note:
+A common mistake is to assume that because there are complex coefficients, the solution must be entirely complex. However, it's possible to have one or both roots real if the discriminant is positive but not a perfect square.
+------------------------------------------------------------------------------

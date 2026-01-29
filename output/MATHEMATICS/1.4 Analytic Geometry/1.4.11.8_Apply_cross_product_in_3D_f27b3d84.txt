@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.11.8 Apply cross product in 3D
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.11 Vectors in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the cross product of vector A = <2, 3, 4> and vector B = <-1, 5, 6>.
+A) <-7, 10, 7>
+B) <7, -10, 7>
+C) <7, 10, -7>
+D) <-7, -10, -7>
+Correct Answer: A
+
+Solution:
+The cross product of two vectors A and B is calculated as follows: A x B = (Ay * Bz - Az * By)i - (Ax * Bz - Az * Bx)j + (Ax * By - Ay * Bx)k. Plugging in the values, we get: A x B = (3 * 6 - 4 * 5)i - (2 * 6 - 4 * (-1))j + (2 * 5 - 3 * (-1))k = <-7, 10, 7>. Therefore, the correct answer is A.
+
+Explanation:
+The cross product results in a vector perpendicular to both input vectors. The formula involves multiplying corresponding components and taking differences, then applying the right-hand rule for orientation.
+
+Common mistake note:
+A common mistake would be swapping the order of multiplication or forgetting to negate one of the terms when calculating the components of the resulting vector.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Calculate the cross product of vector C = <1, 0, -1> and vector D = <-3, 4, 5>.
+A) <-4, -8, 4>
+B) <4, 8, 4>
+C) <4, -8, -4>
+D) <-4, 8, -4>
+Correct Answer: C
+
+Solution:
+Using the cross product formula: C x D = (Cy * Dz - Cz * Dy)i - (Cx * Dz - Cz * Dx)j + (Cx * Dy - Cy * Dx)k. Plugging in the values, we get: C x D = (0 * 5 - (-1) * 4)i - (1 * 5 - (-1) * (-3))j + (1 * 4 - 0 * (-3))k = <4, -8, -4>. Therefore, the correct answer is C.
+
+Explanation:
+Remember to treat each component of the vectors separately and apply the cross product formula correctly. This ensures that the resulting vector is perpendicular to both input vectors.
+
+Common mistake note:
+One common mistake might be mixing up the order of multiplication or forgetting to negate one term when calculating the components.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the cross product of vector E = <-2, 1, -3> and vector F = <4, -5, 6>.
+A) <-7, 10, 7>
+B) <7, -10, 7>
+C) <7, -10, -7>
+D) <-7, 10, -7>
+Correct Answer: D
+
+Solution:
+Using the cross product formula: E x F = (Ey * Fz - Ez * Fy)i - (Ex * Fz - Ez *Fx)j + (Ex * Fy - Ey * Fx)k. Plugging in the values, we get: E x F = (1 * 6 - (-3) * (-5))i - (-2 * 6 - (-3) * 4)j + (-2 * (-5) - 1 * 4)k = <-7, 10, -7>. Therefore, the correct answer is D.
+
+Explanation:
+The cross product formula involves multiplying components and taking differences, then applying the right-hand rule for orientation. Ensure that you perform the calculations correctly to find the perpendicular vector.
+
+Common mistake note:
+A common mistake could be reversing the order of multiplication or forgetting to negate one term when calculating the components.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Calculate the cross product of vector G = <3, 2, -1> and vector H = <-1, 0, 2>.
+A) <-5, -6, 5>
+B) <5, 6, 5>
+C) <5, -6, -5>
+D) <-5, 6, -5>
+Correct Answer: C
+
+Solution:
+Using the cross product formula: G x H = (Gy * Hz - Gz * Hy)i - (Gx * Hz - Gz * Hx)j + (Gx * Hy - Gy * Hx)k. Plugging in the values, we get: G x H = (2 * 2 - (-1) * 0)i - (3 * 2 - (-1) * (-1))j + (3 * 0 - 2 * (-1))k = <5, -6, -5>. Therefore, the correct answer is C.
+
+Explanation:
+When calculating cross products, ensure that you apply the formula correctly and pay attention to the signs when multiplying components. This will give you a vector perpendicular to both input vectors.
+
+Common mistake note:
+A common mistake might be forgetting to negate one term or mixing up the order of multiplication.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Find the cross product of vector I = <1, -2, 3> and vector J = <-4, 5, -6>.
+A) <-7, -10, 7>
+B) <7, 10, 7>
+C) <7, -10, -7>
+D) <-7, 10, -7>
+Correct Answer: A
+
+Solution:
+Using the cross product formula: I x J = (Iy * Jz - Iz * Jy)i - (Ix * Jz - Iz * Jx)j + (Ix * Jy - Iy * Jx)k. Plugging in the values, we get: I x J = (-2 * (-6) - 3 * 5)i - (1 * (-6) - 3 * (-4))j + (1 * 5 - (-2) * (-4))k = <-7, -10, 7>. Therefore, the correct answer is A.
+
+Explanation:
+When calculating cross products, ensure that you apply the formula correctly and pay attention to the signs when multiplying components. This will give you a vector perpendicular to both input vectors.
+
+Common mistake note:
+A common mistake could be reversing the order of multiplication or forgetting to negate one term.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Calculate the cross product of vector K = <-1, 3, -2> and vector L = <4, -5, 6>.
+A) <-7, -10, 7>
+B) <7, 10, 7>
+C) <7, -10, -7>
+D) <-7, 10, -7>
+Correct Answer: D
+
+Solution:
+Using the cross product formula: K x L = (Ky * Lz - Kz * Ly)i - (Kx * Lz - Kz * Lx)j + (Kx * Ly - Ky * Lx)k. Plugging in the values, we get: K x L = (3 * 6 - (-2) * (-5))i - (-1 * 6 - (-2) * 4)j + (-1 * (-5) - 3 * 4)k = <-7, 10, -7>. Therefore, the correct answer is D.
+
+Explanation:
+The cross product formula involves multiplying components and taking differences, then applying the right-hand rule for orientation. Ensure that you perform the calculations correctly to find the perpendicular vector.
+
+Common mistake note:
+A common mistake might be mixing up the order of multiplication or forgetting to negate one term when calculating the components.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Find the cross product of vector M = <2, -1, 4> and vector N = <-3, 5, -6>.
+A) <-7, -10, 7>
+B) <7, 10, 7>
+C) <7, -10, -7>
+D) <-7, 10, -7>
+Correct Answer: A
+
+Solution:
+Using the cross product formula: M x N = (My * Nz - Mz * Ny)i - (Mx * Nz - Mz * Nx)j + (Mx * Ny - My * Nx)k. Plugging in the values, we get: M x N = (-1 * (-6) - 4 * 5)i - (2 * (-6) - 4 * (-3))j + (2 * 5 - (-1) * (-3))k = <-7, -10, 7>. Therefore, the correct answer is A.
+
+Explanation:
+When calculating cross products, ensure that you apply the formula correctly and pay attention to the signs when multiplying components. This will give you a vector perpendicular to both input vectors.
+
+Common mistake note:
+A common mistake could be reversing the order of multiplication or forgetting to negate one term.
+------------------------------------------------------------------------------

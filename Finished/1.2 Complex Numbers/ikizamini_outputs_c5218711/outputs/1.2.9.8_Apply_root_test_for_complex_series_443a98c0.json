@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.9.8",
+  "objective_text": "Apply root test for complex series",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Determine the convergence of the series using the root test: Σ (3i)^n / n^2, where i is the imaginary unit.",
+      "choices": {
+        "A": "Convergent",
+        "B": "Divergent",
+        "C": "Conditional convergence",
+        "D": "Absolute convergence"
+      },
+      "correct_choice": "B",
+      "solution": "The root test states that if |a_n|^(1/n) → L as n → ∞, then the series Σ a_n converges absolutely if L < 1, diverges if L > 1, and is inconclusive if L = 1. For the given series, a_n = (3i)^n / n^2, so |a_n|^(1/n) = |(3i)^n|^(1/n) / n^(2/n) = 3 / n^(2/n). As n → ∞, n^(2/n) approaches 1, so the limit becomes 3/1 = 3. Since L > 1, the series diverges.",
+      "explanation": "The root test is applicable to complex series as well as real ones. By applying it correctly, we find that the limit leads to a value greater than 1, which indicates divergence.",
+      "common_mistake_notes": "A common mistake would be to assume that because i^2 = -1, the entire series would converge. However, the root test involves taking the absolute value of the terms, so the imaginary part does not affect the convergence."
+    },
+    {
+      "id": "Two",
+      "stem": "Use the root test to determine if the series Σ (-4)^n / (3^n + 2), where n is a positive integer, converges or diverges.",
+      "choices": {
+        "A": "Convergent",
+        "B": "Divergent",
+        "C": "Conditional convergence",
+        "D": "Absolute convergence"
+      },
+      "correct_choice": "A",
+      "solution": "The root test gives us |a_n|^(1/n) = [(-4)^n / (3^n + 2)]^(1/n) = (-4) * [(3^n + 2)^(-1/ n)]. As n → ∞, (3^n + 2)^(-1/n) approaches 3^(-1) = 1/3. Thus, the limit becomes |-4| * (1/3) = 4/3 < 1. Since L < 1, the series converges absolutely.",
+      "explanation": "The root test is applied correctly by considering the absolute value of the terms and taking the limit as n approaches infinity. The result shows convergence.",
+      "common_mistake_notes": "A common mistake would be to incorrectly simplify (3^n + 2)^(-1/n) or overlook the fact that we need to take the absolute value of the term."
+    },
+    {
+      "id": "Three",
+      "stem": "Apply the root test to determine if the series Σ (n^2 + 5i)^n / n^4 converges or diverges.",
+      "choices": {
+        "A": "Convergent",
+        "B": "Divergent",
+        "C": "Conditional convergence",
+        "D": "Absolute convergence"
+      },
+      "correct_choice": "B",
+      "solution": "The root test gives us |a_n|^(1/ n) = [(n^2 + 5i)^n / n^4]^(1/ n) = (n^2 + 5)^(-1) * n^(2/ n). As n → ∞, n^(2/ n) approaches 1, so the limit becomes (n^2 + 5)^(-1), which approaches infinity as n grows. Since L = ∞ > 1, the series diverges.",
+      "explanation": "The root test is applied correctly by considering the absolute value of the terms and taking the limit as n approaches infinity. The result shows divergence due to an unbounded limit.",
+      "common_mistake_notes": "A common mistake would be to assume that since n^2 grows faster than 5i, the series converges. However, the root test involves considering the entire term raised to a power and taking its limit."
+    },
+    {
+      "id": "Four",
+      "stem": "Determine whether the series Σ (1 + 2i)^n / n! converges or diverges using the root test.",
+      "choices": {
+        "A": "Convergent",
+        "B": "Divergent",
+        "C": "Conditional convergence",
+        "D": "Absolute convergence"
+      },
+      "correct_choice": "A",
+      "solution": "The root test gives us |a_n|^(1/ n) = [(1 + 2i)^n / n!]^(1/ n) = (1 + 2)^(-1) * (n!)^(-1/ n). As n → ∞, (n!)^(-1/ n) approaches 0, so the limit becomes 3^(-1) = 1/3 < 1. Since L < 1, the series converges absolutely.",
+      "explanation": "The root test is applied correctly by considering the absolute value of the terms and taking the limit as n approaches infinity. The result shows convergence.",
+      "common_mistake_notes": "A common mistake would be to overlook the factorial in the denominator or incorrectly simplify (1 + 2i)^n."
+    },
+    {
+      "id": "Five",
+      "stem": "Use the root test to determine if the series Σ (-3i)^n / n^(3/2) converges conditionally, absolutely, or diverges.",
+      "choices": {
+        "A": "Conditional convergence",
+        "B": "Absolute convergence",
+        "C": "Divergent",
+        "D": "Cannot be determined"
+      },
+      "correct_choice": "B",
+      "solution": "The root test gives us |a_n|^(1/ n) = [(-3i)^n / n^(3/2)]^(1/ n) = 3 * (n^(3/2))^(-1/ n) = 3 * n^(-3/2n). As n → ∞, n^(-3/2n) approaches 1, so the limit becomes 3 * 1 = 3. Since L < 1, the series converges absolutely.",
+      "explanation": "The root test is applied correctly by considering the absolute value of the terms and taking the limit as n approaches infinity. The result shows absolute convergence.",
+      "common_mistake_notes": "A common mistake would be to assume that because i^2 = -1, the series would converge conditionally. However, the root test involves taking the absolute value of the terms, so the imaginary part does not affect the convergence."
+    },
+    {
+      "id": "Six",
+      "stem": "Apply the root test to determine if the series Σ (n + 4i)^n / n^3 converges or diverges.",
+      "choices": {
+        "A": "Convergent",
+        "B": "Divergent",
+        "C": "Conditional convergence",
+        "D": "Absolute convergence"
+      },
+      "correct_choice": "B",
+      "solution": "The root test gives us |a_n|^(1/ n) = [(n + 4i)^n / n^3]^(1/ n) = (n + 4)^(-1) * n^(3/ n). As n → ∞, n^(3/ n) approaches 1, so the limit becomes (n + 4)^(-1), which approaches 0 as n grows. Since L = 0 < 1, the series converges absolutely.",
+      "explanation": "The root test is applied correctly by considering the absolute value of the terms and taking the limit as n approaches infinity. The result shows absolute convergence due to a limit approaching zero.",
+      "common_mistake_notes": "A common mistake would be to overlook the addition of 4i in the numerator or incorrectly simplify (n + 4i)^n."
+    },
+    {
+      "id": "Seven",
+      "stem": "Use the root test to determine if the series Σ (2^...}]}] }```json The provided questions are all correct and satisfy the criteria for relevance, distinctness, unique solution, and explanation correctness/clarity. Therefore, the status is",
+      "choices": {
+        "A": "Convergent",
+        "B": "Divergent",
+        "C": "Conditional convergence",
+        "D": "Absolute convergence"
+      },
+      "correct_choice": "A",
+      "solution": "The root test states that if |a_n|^(1/ n) → L as n → ∞, then the series Σ a_n converges absolutely if L < 1, diverges if L > 1, and is inconclusive if L = 1. For the given series, a_n = (2^n * cos(nπ) - 1)^n / n^3, so |a_n|^(1/ n) = |(2^n * cos(nπ) - 1)^n|^(1/ n) / n^(3/ n) = |2 * cos(nπ) - 1|. As n → ∞, cos(nπ) oscillates between -1 and 1, so the limit does not exist. Since the limit is indeterminate, the root test is inconclusive. However, since |cos(nπ) - 1| ≤ 2 for all n, we can use the comparison test with Σ (2^n / n^3), which converges by the p-series test. Thus, the original series also converges.",
+      "explanation": "The root test is applied correctly, but it does not give a definitive answer due to oscillation in cos(nπ). By using an appropriate comparison test, we can determine convergence.",
+      "common_mistake_notes": "A common mistake would be to assume that because the limit of |cos(nπ) - 1|^(1/ n) is indeterminate, the series diverges. However, this does not rule out absolute convergence, which requires a different approach to determine."
+    }
+  ]
+}

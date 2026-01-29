@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.9.11",
+  "objective_text": "Apply Taylor series for complex functions",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Find the first three non-zero terms of the Taylor series expansion of the function f(z) = e^z around z=0.",
+      "choices": {
+        "A": "1 + z + (z^2)/2!",
+        "B": "1 + iz + (iz^2)/2!",
+        "C": "1 - z - (z^2)/2!",
+        "D": "1 + 2z + (2z^2)/2!"
+      },
+      "correct_choice": "A",
+      "solution": "The Taylor series expansion of e^z around z=0 is given by the sum from n=0 to infinity of (z^n)/(n!). The first three non-zero terms are 1, z, and (z^2)/2!",
+      "explanation": "This question tests the ability to apply the Taylor series for a complex function. The correct answer uses the known Taylor series expansion of e^z.",
+      "common_mistake_notes": "A common mistake would be to use i in the expansion without considering that the base function is e^z, which does not involve i."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Find the first two non-zero terms of the Taylor series expansion of the function f(z) = sin(π/4 + z) around z=0.",
+      "choices": {
+        "A": "(√2)/2 - (z)",
+        "B": "(√2)/2 + (z)",
+        "C": "-(√2)/2 - (z)",
+        "D": "-(√2)/2 + (z)"
+      },
+      "correct_choice": "B",
+      "solution": "The Taylor series expansion of sin(π/4 + z) around z=0 is given by the sum from n=0 to infinity of (-1)^n  * (z)^(2n+1)/(2n+1)! * cos(π/4). The first two non-zero terms are (z) and -(z)/3.",
+      "explanation": "This question tests the ability to apply the Taylor series for a trigonometric function. The correct answer uses the known Taylor series expansion of sin(a + z).",
+      "common_mistake_notes": "A common mistake would be to forget the alternating sign (-1)^n or to use the wrong power in the numerator (2n instead of 2n+1)."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Find the first three non-zero terms of the Taylor series expansion of the function f(z) = ln(1 + z) around z=0.",
+      "choices": {
+        "A": "z - (z^2)/2 + (z^3)/3",
+        "B": "z + (z^2)/2 - (z^3)/3",
+        "C": "z - (z^2)/2 - (z^3)/3",
+        "D": "z + (z^2)/2 + (z^3)/3"
+      },
+      "correct_choice": "A",
+      "solution": "The Taylor series expansion of ln(1 + z) around z=0 is given by the sum from n=1 to infinity of (-1)^(n-1)  * (z^n)/n. The first three non-zero terms are z, -(z^2)/2, and (z^3)/3.",
+      "explanation": "This question tests the ability to apply the Taylor series for a logarithmic function. The correct answer uses the known Taylor series expansion of ln(1 + z).",
+      "common_mistake_notes": "A common mistake would be to forget the alternating sign (-1)^(n-1) or to start the sum from n=0 instead of n=1."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Find the first two non-zero terms of the Taylor series expansion of the function f(z) = cosh(z - π/2) around z=π/2.",
+      "choices": {
+        "A": "(e^π/2)/2 + (z-π/2)e^(π/2)",
+        "B": "(e^π/2)/2 - (z-π/2)e^(π/2)",
+        "C": "(e^-π/2)/2 + (z-π/2)e^-π/2",
+        "D": "(e^-π/2)/2 - (z-π/2)e^-π/2"
+      },
+      "correct_choice": "C",
+      "solution": "The Taylor series expansion of cosh(z - π/2) around z=π/2 is given by the sum from n=0 to infinity of (z-π/2)^{2n}/(2n!)  * e^(-π/2). The first two non-zero terms are (e^-π/2)/2 and (z-π/2)e^-π/2.",
+      "explanation": "This question tests the ability to apply the Taylor series for a hyperbolic function. The correct answer uses the known Taylor series expansion of cosh(z - a).",
+      "common_mistake_notes": "A common mistake would be to use the wrong base function (e.g., sin or cos instead of cosh) or to forget the exponential term e^(-π/2)."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Find the first three non-zero terms of the Taylor series expansion of the function f(z) = 1/(1-z) around z=0.",
+      "choices": {
+        "A": "1 + z + z^2",
+        "B": "1 - z - z^2",
+        "C": "1 + z - z^2",
+        "D": "1 - z + z^2"
+      },
+      "correct_choice": "A",
+      "solution": "The Taylor series expansion of 1/(1-z) around z=0 is given by the sum from n=0 to infinity of z^n. The first three non-zero terms are 1, z, and z^2.",
+      "explanation": "This question tests the ability to apply the Taylor series for a rational function. The correct answer uses the known geometric series expansion.",
+      "common_mistake_notes": "A common mistake would be to forget that the denominator is (1-z) or to use the wrong power in the numerator (n instead of n-1)."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Find the first two non-zero terms of the Taylor series expansion of the function f(z) = z^3 around z=2.",
+      "choices": {
+        "A": "(z-2)^3 + 3(z-2)^2",
+        "B": "(z-2)^3 - 3(z-2)^2",
+        "C": "6(z-2) + 6(z-2)^2",
+        "D": "6(z-2) - 6(z-2)^2"
+      },
+      "correct_choice": "C",
+      "solution": "The Taylor series expansion of z^3 around z=2 is given by the sum from n=0 to infinity of (z-2)^n  * 3^(n-1). The first two non-zero terms are 6(z-2) and 6(z-2)^2.",
+      "explanation": "This question tests the ability to apply the Taylor series for a polynomial function. The correct answer uses the known Taylor series expansion of z^3.",
+      "common_mistake_notes": "A common mistake would be to forget the power of 3^(n-1) or to use the wrong base (e.g., z instead of z-2)."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Find the first three non-zero terms of the Taylor series expansion of the function f(z) = sinh(z - π) around z=π.",
+      "choices": {
+        "A": "(z-π)e^π - (z-π)^2e^(2π)/2!",
+        "B": "(z-π)e^-π + (z-π)^2e^(-2π)/2!",
+        "C": "(z-π)e^π + (z-π)^2e^(2π)/2!",
+        "D": "(z-π)e^-π - (z-π)^2e^(-2π)/2!"
+      },
+      "correct_choice": "A",
+      "solution": "The Taylor series expansion of sinh(z - π) around z=π is given by the sum from n=0 to infinity of (-1)^(n+1)  * (z-π)^{2n+1}/(2n+1)!  * e^π. The first three non-zero terms are (z-π)e^π, -(z-π)^2e^(2π)/2!, and (z-π)^3e^(3π)/3!.",
+      "explanation": "This question tests the ability to apply the Taylor series for a hyperbolic function. The correct answer uses the known Taylor series expansion of sinh(z - a).",
+      "common_mistake_notes": "A common mistake would be to forget the alternating sign (-1)^(n+1) or to use the wrong power in the denominator (2n instead of 2n+1)."
+    }
+  ]
+}

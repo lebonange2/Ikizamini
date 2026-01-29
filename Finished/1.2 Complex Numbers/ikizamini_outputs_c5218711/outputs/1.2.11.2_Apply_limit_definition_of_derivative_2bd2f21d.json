@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.11.2",
+  "objective_text": "Apply limit definition of derivative",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the derivative of f(x) = x^2 at x = 3 using the limit definition.",
+      "choices": {
+        "A": "6",
+        "B": "9",
+        "C": "18",
+        "D": "27"
+      },
+      "correct_choice": "A",
+      "solution": "The limit definition of the derivative is f'(x) = lim(h→0) [f(x+h) - f(x)]/h. For f(x) = x^2 at x = 3, we have: f'(3) = lim(h→0) [(3+h)^2 - 3^2]/h = lim(h→0) [(9 + 6h + h^2) - 9]/h = lim(h→0) (6h + h^2)/h = lim(h→0) (h(6 + h))/h = lim(h→0) (6 + h) = 6.",
+      "explanation": "The derivative is found by evaluating the limit using algebraic manipulation. The common mistake is to forget to simplify the numerator or not cancel out the h terms, leading to choice B (9).",
+      "common_mistake_notes": "Common mistake: Not simplifying the numerator properly, resulting in the incorrect answer 9."
+    },
+    {
+      "id": "2",
+      "stem": "Find the derivative of f(x) = x^3 at x = 2 using the limit definition.",
+      "choices": {
+        "A": "4",
+        "B": "12",
+        "C": "24",
+        "D": "48"
+      },
+      "correct_choice": "B",
+      "solution": "Using the limit definition: f'(2) = lim(h→0) [(2+h)^3 - 2^3]/h = lim(h→0) [(8 + 12h + 6h^2 + h^3) - 8]/h = lim(h→0) (12h + 6h^2 + h^3)/h = lim(h→0) (h(12 + 6h + h^2))/h = lim(h→0) (12 + 6h + h^2) = 12.",
+      "explanation": "The derivative is found by evaluating the limit using algebraic manipulation. The common mistake is to not expand the cube correctly, leading to choice A (4).",
+      "common_mistake_notes": "Common mistake: Incorrectly expanding the cube, resulting in the incorrect answer 4."
+    },
+    {
+      "id": "3",
+      "stem": "Find the derivative of f(x) = sin(x) at x = π/2 using the limit definition.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "π/2"
+      },
+      "correct_choice": "B",
+      "solution": "Using the limit definition: f'(π/2) = lim(h→0) [sin(π/2 + h) - sin(π/2)]/h = lim(h→0) [cos(h) - 1]/h. Using the cosine half-angle identity, cos(h) = sqrt[1 - sin^2(h)], we get: f'(π/2) = lim(h→0) [sqrt[1 - sin^2(h)] - 1]/h = 0.",
+      "explanation": "The derivative is found by using trigonometric identities and evaluating the limit. The common mistake is to forget the half-angle identity, leading to choice C (-1).",
+      "common_mistake_notes": "Common mistake: Not using the cosine half-angle identity, resulting in the incorrect answer -1."
+    },
+    {
+      "id": "4",
+      "stem": "Find the derivative of f(x) = e^x at x = 0 using the limit definition.",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "e",
+        "D": "e^2"
+      },
+      "correct_choice": "A",
+      "solution": "Using the limit definition: f'(0) = lim(h→0) [e^(h) - e^0]/h = lim(h→0) [e^h - 1]/h. Since e^0 = 1, we have: f'(0) = lim(h→0) [e^h - 1]/h = 1.",
+      "explanation": "The derivative is found by evaluating the limit using the fact that e^0 = 1. The common mistake is to not recognize that e^0 = 1, leading to choice C (e).",
+      "common_mistake_notes": "Common mistake: Not recognizing that e^0 = 1, resulting in the incorrect answer e."
+    },
+    {
+      "id": "5",
+      "stem": "Find the derivative of f(x) = cos(x) at x = π using the limit definition.",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "π"
+      },
+      "correct_choice": "A",
+      "solution": "Using the limit definition: f'(π) = lim(h→0) [cos(π + h) - cos(π)]/h = lim(h→0) [-cos(h) - 1]/h. Since cos(π) = -1, we get: f'(π) = lim(h→0) [-cos(h) + 1]/h = -1.",
+      "explanation": "The derivative is found by evaluating the limit using the trigonometric identity for cosine of a sum and recognizing that cos(π) = -1. The common mistake is to forget the negative sign in front of cos(h), leading to choice B (0).",
+      "common_mistake_notes": "Common mistake: Not accounting for the negative sign in front of cos(h), resulting in the incorrect answer 0."
+    },
+    {
+      "id": "6",
+      "stem": "Find the derivative of f(x) = 5x at x = 2 using the limit definition.",
+      "choices": {
+        "A": "10",
+        "B": "15",
+        "C": "20",
+        "D": "25"
+      },
+      "correct_choice": "A",
+      "solution": "Using the limit definition: f'(2) = lim(h→0) [5(2+h) - 5(2)]/h = lim(h→0) [10 + 5h - 10]/h = lim(h→0) (5h)/h = 5.",
+      "explanation": "The derivative is found by evaluating the limit using algebraic manipulation. The common mistake is to not distribute the 5 correctly, leading to choice C (20).",
+      "common_mistake_notes": "Common mistake: Not distributing the coefficient 5 properly, resulting in the incorrect answer 20."
+    },
+    {
+      "id": "7",
+      "stem": "Find the derivative of f(x) = 1/x at x = 2 using the limit definition.",
+      "choices": {
+        "A": "-1/4",
+        "B": "0",
+        "C": "1/2",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "Using the limit definition: f'(2) = lim(h→0) [(1/(2+h)) - (1/2)]/h = lim(h→0) [2 - (2+h)]/[2(2+h)h] = lim(h→0) [-h]/[4h + 2h^2] = lim(h→0) [-1/(4+2h)] = -1/4.",
+      "explanation": "The derivative is found by evaluating the limit using algebraic manipulation. The common mistake is to not simplify the fraction correctly, leading to choice C (1/2).",
+      "common_mistake_notes": "Common mistake: Not simplifying the fraction properly, resulting in the incorrect answer 1/2."
+    }
+  ]
+}

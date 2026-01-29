@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.7.3",
+  "objective_text": "Identify center (h, k)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the center of the circle described by the equation \n(x - 2)^2 + (y - 3)^2 = 16?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(2, 3)",
+        "C": "(4, 5)",
+        "D": "(-2, -3)"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a circle in standard form is (x - h)^2 + (y - k)^2 = r^2, where (h, k) is the center and r is the radius. Comparing this to the given equation (x - 2)^2 + (y - 3)^2 = 16, we can see that h = 2 and k = 3.",
+      "explanation": "The center of the circle is directly given by the values of h and k in the standard form equation. In this case, h = 2 and k = 3.",
+      "common_mistake_notes": "A common mistake would be to confuse (h, k) with the radius (r). Remember that r^2 is the constant inside the parentheses."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the center of the circle defined by the equation \n(x + 5)^2 + (y - 7)^2 = 9.",
+      "choices": {
+        "A": "(5, 7)",
+        "B": "(-5, 7)",
+        "C": "(-5, -7)",
+        "D": "(5, -7)"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a circle in standard form is (x - h)^2 + (y - k)^2 = r^2. Comparing this to the given equation (x + 5)^2 + (y - 7)^2 = 9, we can see that h = -5 and k = 7.",
+      "explanation": "The negative sign in front of the x term indicates that the center's x-coordinate is actually 5 units to the left of where it appears. Thus, the correct center is (-5, 7).",
+      "common_mistake_notes": "A common mistake would be to think that h and k are the same as the numbers inside the parentheses without considering the sign."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the center of the circle with equation \n(x - 4)^2 + (y + 6)^2 = 25?",
+      "choices": {
+        "A": "(4, 6)",
+        "B": "(-4, 6)",
+        "C": "(-4, -6)",
+        "D": "(4, -6)"
+      },
+      "correct_choice": "D",
+      "solution": "The equation of a circle in standard form is (x - h)^2 + (y - k)^2 = r^2. Comparing this to the given equation (x - 4)^2 + (y + 6)^2 = 25, we can see that h = 4 and k = -6.",
+      "explanation": "The negative sign in front of the y term indicates that the center's y-coordinate is actually 6 units below where it appears. So, the correct center is (4, -6).",
+      "common_mistake_notes": "A common mistake would be to forget to consider the negative sign when determining k."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the center of the circle described by \n(x + 1)^2 + (y - 3)^2 = 2.",
+      "choices": {
+        "A": "(1, 3)",
+        "B": "(-1, 3)",
+        "C": "(-1, -3)",
+        "D": "(1, -3)"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a circle in standard form is (x - h)^2 + (y - k)^2 = r^2. Comparing this to the given equation (x + 1)^2 + (y - 3)^2 = 2, we can see that h = -1 and k = 3.",
+      "explanation": "The negative sign in front of the x term indicates that the center's x-coordinate is actually 1 unit to the left of where it appears. Therefore, the correct center is (-1, 3).",
+      "common_mistake_notes": "A common mistake would be to think that h and k are the same as the numbers inside the parentheses without considering the sign."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the center of the circle with equation \n(x - 7)^2 + (y + 9)^2 = 49?",
+      "choices": {
+        "A": "(7, 9)",
+        "B": "(-7, 9)",
+        "C": "(-7, -9)",
+        "D": "(7, -9)"
+      },
+      "correct_choice": "D",
+      "solution": "The equation of a circle in standard form is (x - h)^2 + (y - k)^2 = r^2. Comparing this to the given equation (x - 7)^2 + (y + 9)^2 = 49, we can see that h = 7 and k = -9.",
+      "explanation": "The negative sign in front of the y term indicates that the center's y-coordinate is actually 9 units below where it appears. So, the correct center is (7, -9).",
+      "common_mistake_notes": "A common mistake would be to forget to consider the negative sign when determining k."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the center of the circle defined by \n(x + 3)^2 + (y - 1)^2 = 9.",
+      "choices": {
+        "A": "(3, 1)",
+        "B": "(-3, 1)",
+        "C": "(-3, -1)",
+        "D": "(3, -1)"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a circle in standard form is (x - h)^2 + (y - k)^2 = r^2. Comparing this to the given equation (x + 3)^2 + (y - 1)^2 = 9, we can see that h = -3 and k = 1.",
+      "explanation": "The negative sign in front of the x term indicates that the center's x-coordinate is actually 3 units to the left of where it appears. Thus, the correct center is (-3, 1).",
+      "common_mistake_notes": "A common mistake would be to think that h and k are the same as the numbers inside the parentheses without considering the sign."
+    },
+    {
+      "id": ":7",
+      "stem": "What is the center of the circle with equation \n(x - 6)^2 + (y + 4)^2 = 16?",
+      "choices": {
+        "A": "(6, 4)",
+        "B": "(-6, 4)",
+        "C": "(-6, -4)",
+        "D": "(6, -4)"
+      },
+      "correct_choice": "D",
+      "solution": "The equation of a circle in standard form is (x - h)^2 + (y - k)^2 = r^2. Comparing this to the given equation (x - 6)^2 + (y + 4)^2 = 16, we can see that h = 6 and k = -4.",
+      "explanation": "The negative sign in front of the y term indicates that the center's y-coordinate is actually 4 units below where it appears. So, the correct center is (6, -4).",
+      "common_mistake_notes": "A common mistake would be to forget to consider the negative sign when determining k."
+    }
+  ]
+}

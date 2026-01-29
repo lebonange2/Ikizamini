@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.5.15 Optimize logic circuits
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.5 Logical Equivalence and Laws
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Which of the following is the most optimized implementation for a 2-input AND gate using NAND gates? Assume each NAND gate has an output that can be directly connected to another gate's input.
+A) NAND(A, B)
+B) NAND(NAND( A, A), NAND(B, B))
+C) NAND( NOT(A), NOT(B))
+D) NAND(NAND( NOT(A), A), NAND( NOT(B), B))
+Correct Answer: C
+
+Solution:
+The most optimized implementation of a 2-input AND gate using NAND gates is to negate both inputs and feed them into a single NAND gate. This way, the output will be LOW only when both inputs are HIGH, mimicking the behavior of an AND gate. The correct expression is NAND( NOT(A), NOT(B)).
+
+Explanation:
+A: Direct use of a NAND gate does not optimize the circuit. B and D: Using nested NAND gates with self- comparisons adds unnecessary complexity and gates.
+
+Common mistake note:
+Common mistake is to choose A or D, which do not minimize the number of gates used.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is the simplified expression for the following logic circuit using only OR and NOT gates? (Diagram not shown but assume inputs are X and Y).
+A) X + Y
+B) !X + !Y
+C) !X + Y
+D) X + !Y
+Correct Answer: A
+
+Solution:
+The simplified expression for a 2-input OR gate using only OR and NOT gates is X + Y. Since there are no NOT gates in the circuit, the output will be HIGH when either or both inputs are HIGH.
+
+Explanation:
+B: Adding NOT to both inputs would invert the logic. C and D: Adding NOT to only one input would change the behavior from OR to XOR.
+
+Common mistake note:
+Common mistake is to add NOT gates unnecessarily, which changes the gate function.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+To optimize a 4-input AND gate using only NAND gates, how many NAND gates are required at minimum?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: C
+
+Solution:
+A minimum of 3 NAND gates is required to implement a 4-input AND gate using only NAND gates. One way to do this is by cascading two 2-input AND gates using a single NAND gate.
+
+Explanation:
+A: A single NAND gate cannot implement a 4- input AND gate directly. B: Two NAND gates are not enough to connect all inputs. D: Four NAND gates can be used, but it's not the most optimized solution.
+
+Common mistake note:
+Common mistake is to think that two or four gates are sufficient for optimization.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+In a combinational circuit, which of the following techniques would likely result in the lowest power consumption while maintaining the same functionality?
+A) Using more transistors per gate
+B) Reducing the number of logic levels
+C) Increasing clock frequency
+D) Using larger gates for low-frequency signals
+Correct Answer: B
+
+Solution:
+Reducing the number of logic levels in a combinational circuit typically results in lower power consumption. Fewer logic levels mean fewer transistors are active at any given time.
+
+Explanation:
+A: More transistors per gate would increase power consumption. C: Increasing clock frequency increases dynamic power dissipation. D: Using larger gates may not necessarily result in less power consumption, especially for low-frequency signals.
+
+Common mistake note:
+Common mistake is to think that more or larger gates would lead to better optimization.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+To optimize a 3-input OR gate using only NAND gates, which of the following expressions is correct?
+A) NAND( NOT(A), NOT(B)) + NAND( NOT(B), NOT(C))
+B) NAND( NOT(A), B) + NAND( NOT(B), C)
+C) NAND( NOT(A), NOT(B), NOT(C))
+D) NAND( NOT(A), NOT(B), C)
+Correct Answer: A
+
+Solution:
+The correct expression for a 3-input OR gate using only NAND gates is NAND( NOT(A), NOT(B)) + NAND( NOT(B), NOT(C)). This arrangement simulates an OR gate by negating the inputs and then using two NAND gates to combine them.
+
+Explanation:
+B: The NOT operation should be applied to both A and B. C and D: Using 3-input NAND gates is not necessary for this optimization problem.
+
+Common mistake note:
+Common mistake is to apply NOT to only one input or use a 3- input NAND gate.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+In a logic circuit, which of the following techniques would lead to faster signal propagation?
+A) Increasing fanout
+B) Using smaller transistors
+C) Reducing wire length
+D) Increasing power supply voltage
+Correct Answer: C
+
+Solution:
+Reducing wire length in a logic circuit typically leads to faster signal propagation as it decreases the capacitance and resistance, allowing signals to travel more quickly.
+
+Explanation:
+A: Increasing fanout can slow down signal propagation due to increased loading. B: Smaller transistors may not necessarily result in faster signal propagation if other factors like wire length are not optimized. D: Increasing power supply voltage can help, but reducing wire length is a more direct optimization technique.
+
+Common mistake note:
+Common mistake is to think that larger fanout or transistor size would lead to faster signals.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the primary goal of optimizing logic circuits?
+A) To reduce power consumption
+B) To increase clock frequency
+C) To minimize the number of gates used
+D) All of the above
+Correct Answer: D
+
+Solution:
+The primary goal of optimizing logic circuits is to achieve a combination of reduced power consumption, increased clock frequency, and minimized gate count. All three factors contribute to improved circuit performance.
+
+Explanation:
+A, B, C: Each factor is important but not the sole goal. D: Achieving all three goals simultaneously is the primary objective of optimization.
+
+Common mistake note:
+Common mistake is to focus on only one aspect (e.g., power consumption or gate count) and overlook the others.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.13.6 Calculate volume using disk method
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.13 Applications of Integrals - Area and Volume
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the volume of a solid formed by revolving the region bounded by the curve y = x^2 and the x-axis from x = 0 to x = 3 about the x-axis using the disk method. Round your answer to two decimal places.
+A) 64π
+B) 75π
+C) 81π/2
+D) 9π
+Correct Answer: C
+
+Solution:
+The volume V of a solid formed by revolving the region about the x-axis using the disk method is given by the integral V = ∫[A(x)]^2 dx, where A(x) is the cross-sectional area at a given x-value. For y = x^2, the radius of the circle at any x is x, so A(x) = πx^2. The limits of integration are from 0 to 3. Thus, V = ∫[πx^2]^2 dx from 0 to 3 = ∫π^2x^4 dx from 0 to 3 = [π^2 * x^5/5] evaluated from 0 to 3 = π^2 * (3^5/5 - 0) = 81π/2.
+
+Explanation:
+The volume is calculated using the disk method, which involves integrating the area of circular cross-sections along the axis of revolution. The correct choice C correctly integrates the square of the radius function and evaluates it at the given limits.
+
+Common mistake note:
+A common mistake would be to integrate y^2 instead of (radius)^2, which is x^2 in this case. This would lead to an incorrect answer A: 64π.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Find the volume of a solid formed by revolving the region between the curve y = √x and the line y = 2 about the line y = -1 using the disk method. Round your answer to two decimal places.
+A) π/3
+B) 4π
+C) 7π/3
+D) 16π
+Correct Answer: C
+
+Solution:
+The volume V of a solid formed by revolving the region about the line y = -1 using the disk method is given by the integral V = ∫[A(y)]^2 dy, where A(y) is the cross-sectional area at a given y-value. For y = √x, we can solve for x as x = y^2. The radius of the circle at any y is (y + 1), so A(y) = π(y + 1)^2. The limits of integration are from 0 to 2. Thus, V = ∫[π(y + 1)^2]^2 dy from 0 to 2 = [π^2 * (y + 1)^4/4] evaluated from 0 to 2 = π^2 * ((2 + 1)^4/4 - (0 + 1)^4/4) = 7π/3.
+
+Explanation:
+The volume is calculated using the disk method, which involves integrating the area of circular cross-sections along the line of revolution. The correct choice C correctly integrates the square of the radius function and evaluates it at the given limits.
+
+Common mistake note:
+A common mistake would be to integrate y^2 instead of (radius)^2, which is (y + 1)^2 in this case. This would lead to an incorrect answer A: π/3.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Find the volume of a solid formed by revolving the region between the curve y = x^3 and the line y = 8 about the line x = -1 using the disk method. Round your answer to two decimal places.
+A) 256π
+B) 192π
+C) 128π
+D) 64π
+Correct Answer: B
+
+Solution:
+The volume V of a solid formed by revolving the region about the line x = -1 using the disk method is given by the integral V = ∫[A(x)]^2 dx, where A(x) is the cross-sectional area at a given x-value. For y = x^3, we can solve for x as x = y^(1/3). The radius of the circle at any x is (x + 1), so A(x) = π(x + 1)^2. The limits of integration are from -2 to 2 (since y = 8 corresponds to x = -2 and x = 2). Thus, V = ∫[π(x + 1)^2]^2 dx from -2 to 2 = [π^2 * (x + 1)^4/4] evaluated from -2 to 2 = π^2 * ((2 + 1)^4/4 - (-2 + 1)^4/4) = 192π.
+
+Explanation:
+The volume is calculated using the disk method, which involves integrating the area of circular cross-sections along the line of revolution. The correct choice B correctly integrates the square of the radius function and evaluates it at the given limits.
+
+Common mistake note:
+A common mistake would be to integrate y^2 instead of (radius)^2, which is (x + 1)^2 in this case. This would lead to an incorrect answer A: 256π.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Find the volume of a solid formed by revolving the region between the curve y = sin(x) and the x-axis from x = 0 to x = π about the line y = -1 using the disk method. Round your answer to two decimal places.
+A) 2π
+B) 4π
+C) 6π
+D) 8π
+Correct Answer: A
+
+Solution:
+The volume V of a solid formed by revolving the region about the line y = -1 using the disk method is given by the integral V = ∫[A(x)]^2 dx, where A(x) is the cross-sectional area at a given x-value. For y = sin(x), the radius of the circle at any x is (sin(x) + 1), so A(x) = π(sin(x) + 1)^2. The limits of integration are from 0 to π. Thus, V = ∫[π(sin(x) + 1)^2]^2 dx from 0 to π = [π^2 * (sin(x) + 1)^4/4] evaluated from 0 to π = π^2 * ((sin(π) + 1)^4/4 - (sin(0) + 1)^4/4) = 2π.
+
+Explanation:
+The volume is calculated using the disk method, which involves integrating the area of circular cross-sections along the line of revolution. The correct choice A correctly integrates the square of the radius function and evaluates it at the given limits.
+
+Common mistake note:
+A common mistake would be to integrate sin^2(x) instead of (radius)^2, which is (sin(x) + 1)^2 in this case. This would lead to an incorrect answer B: 4π.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Find the volume of a solid formed by revolving the region between the curve y = e^x and the x-axis from x = 0 to x = ln(3) about the line y = -1 using the disk method. Round your answer to two decimal places.
+A) π
+B) 2π
+C) 3π
+D) 4π
+Correct Answer: B
+
+Solution:
+The volume V of a solid formed by revolving the region about the line y = -1 using the disk method is given by the integral V = ∫[A(x)]^2 dx, where A(x) is the cross-sectional area at a given x-value. For y = e^x, the radius of the circle at any x is (e^x + 1), so A(x) = π(e^x + 1)^2. The limits of integration are from 0 to ln(3). Thus, V = ∫[π(e^x + 1)^2]^2 dx from 0 to ln(3) = [π^2 * (e^x + 1)^4/4] evaluated from 0 to ln(3) = π^2 * ((e^(ln(3)) + 1)^4/4 - (e^0 + 1)^4/4) = 2π.
+
+Explanation:
+The volume is calculated using the disk method, which involves integrating the area of circular cross-sections along the line of revolution. The correct choice B correctly integrates the square of the radius function and evaluates it at the given limits.
+
+Common mistake note:
+A common mistake would be to integrate e^(2x) instead of (radius)^2, which is (e^x + 1)^2 in this case. This would lead to an incorrect answer A: π.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Find the volume of a solid formed by revolving the region between the curve y = x^4 and the line y = 81 about the line x = -1 using the disk method. Round your answer to two decimal places.
+A) 20736π
+B) 15552π
+C) 10368π
+D) 5184π
+Correct Answer: C
+
+Solution:
+The volume V of a solid formed by revolving the region about the line x = -1 using the disk method is given by the integral V = ∫[A(x)]^2 dx, where A(x) is the cross-sectional area at a given x-value. For y = x^4, we can solve for x as x = y^(1/4). The radius of the circle at any x is (x + 1), so A(x) = π(x + 1)^2. The limits of integration are from -3 to 3 (since y = 81 corresponds to x = -3 and x = 3). Thus, V = ∫[π(x + 1)^2]^2 dx from -3 to 3 = [π^2 * (x + 1)^4/4] evaluated from -3 to 3 = π^2 * ((3 + 1)^4/4 - (-3 + 1)^4/4) = 10368π.
+
+Explanation:
+The volume is calculated using the disk method, which involves integrating the area of circular cross-sections along the line of revolution. The correct choice C correctly integrates the square of the radius function and evaluates it at the given limits.
+
+Common mistake note:
+A common mistake would be to integrate x^8 instead of (radius)^2, which is (x + 1)^2 in this case. This would lead to an incorrect answer A: 20736π.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Find the volume of a solid formed by revolving the region between the curve y = x^2 and the line y = 4 about the line y = -1 using the disk method. Round your answer to two decimal places.
+A) 64π
+B) 32π
+C) 16π
+D) 8π
+Correct Answer: C
+
+Solution:
+The volume V of a solid formed by revolving the region about the line y = -1 using the disk method is given by the integral V = ∫[A(x)]^2 dx, where A(x) is the cross-sectional area at a given x-value. For y = x^2, the radius of the circle at any x is (x + 1), so A(x) = π(x + 1)^2. The limits of integration are from -2 to 2 (since y = 4 corresponds to x = -2 and x = 2). Thus, V = ∫[π(x + 1)^2]^2 dx from -2 to 2 = [π^2 * (x + 1)^4/4] evaluated from -2 to 2 = π^2 * ((2 + 1)^4/4 - (-2 + 1)^4/4) = 16π.
+
+Explanation:
+The volume is calculated using the disk method, which involves integrating the area of circular cross-sections along the line of revolution. The correct choice C correctly integrates the square of the radius function and evaluates it at the given limits.
+
+Common mistake note:
+A common mistake would be to integrate x^4 instead of (radius)^2, which is (x + 1)^2 in this case. This would lead to an incorrect answer A: 64π.
+------------------------------------------------------------------------------

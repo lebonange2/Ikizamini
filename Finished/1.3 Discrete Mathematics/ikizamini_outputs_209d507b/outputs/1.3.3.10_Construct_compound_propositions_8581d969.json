@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.3.10",
+  "objective_text": "Construct compound propositions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AssembleSimplePropositions",
+      "stem": "Combine the following simple propositions using logical connectives: 'It is raining.' and 'I will stay inside.'",
+      "choices": {
+        "A": "If it is raining, then I will stay inside.",
+        "B": "Both it is raining and I will stay inside.",
+        "C": "I will stay inside if and only if it is raining.",
+        "D": "It is not raining or I will stay inside."
+      },
+      "correct_choice": "A",
+      "solution": "The correct way to combine these simple propositions using a logical connective is with an 'if-then' statement, which corresponds to the conditional operator. Choice A correctly represents this relationship: 'If it is raining, then I will stay inside.' The other choices either use incorrect operators or do not accurately represent the relationship between the two propositions.",
+      "explanation": "In this question, students are expected to understand how to construct compound propositions by combining simple propositions using logical connectives like 'if-then' (also known as a conditional statement).",
+      "common_mistake_notes": "A common mistake would be to choose C, which represents a biconditional statement (equivalent to saying 'I will stay inside only if it is raining, and it is raining only if I will stay inside'). This is not the same as the given simple propositions, which imply that staying inside is dependent on rain but do not imply the reverse."
+    },
+    {
+      "id": "NegateCompoundProposition",
+      "stem": "Negate the following compound proposition: 'Either it is snowing or it is raining, and if it is snowing, then I will build a snowman.'",
+      "choices": {
+        "A": "Both it is not snowing and it is not raining, and I will not build a snowman if it is not snowing.",
+        "B": "It is neither snowing nor raining, or if it is snowing, then I will build a snowman.",
+        "C": "Neither it is snowing nor it is raining, and I will build a snowman if it is snowing.",
+        "D": "Both it is not snowing and it is not raining, or if it is snowing, then I will not build a snowman."
+      },
+      "correct_choice": "D",
+      "solution": "The correct negation of the given compound proposition involves negating both parts: the disjunction (either/or) and the conditional statement. Choice D correctly represents this: 'Both it is not snowing and it is not raining, or if it is snowing, then I will not build a snowman.' The other choices either negate incorrectly or do not maintain the correct logical structure.",
+      "explanation": "This question assesses students' understanding of negating compound propositions by negating both simple propositions and the logical connectives between them. Negating 'or' changes it to 'and,' while negating an 'if-then' statement inverts the consequent.",
+      "common_mistake_notes": "A common mistake would be to choose A, which incorrectly maintains the original conditional relationship (I will not build a snowman if it is not snowing) instead of inverting the consequent (I will build a snowman if it is snowing)."
+    },
+    {
+      "id": "CombineConjunctivePropositions",
+      "stem": "Combine the following compound propositions using logical connectives: 'The grass needs mowing.' and 'The flowers need watering.'",
+      "choices": {
+        "A": "Both the grass needs mowing and the flowers need watering.",
+        "B": "If the grass needs mowing, then the flowers need watering.",
+        "C": "The grass needs mowing if and only if the flowers need watering.",
+        "D": "The grass does not need mowing or the flowers do not need watering."
+      },
+      "correct_choice": "A",
+      "solution": "To combine two simple propositions using a conjunction (and), we simply join them without any additional connectives. Choice A correctly represents this: 'Both the grass needs mowing and the flowers need watering.' The other choices either use incorrect operators or do not accurately represent the relationship between the two propositions.",
+      "explanation": "This question tests students' ability to combine compound propositions by using a conjunction, which combines two simple propositions without any conditional or exclusive relationships.",
+      "common_mistake_notes": "A common mistake would be to choose B, which introduces an incorrect conditional relationship between the two statements. Students may confuse conjunction with implication, but in this case, there is no stated cause- and-effect relationship."
+    },
+    {
+      "id": "DeMorgan'sLaw",
+      "stem": "Negate the following compound proposition using De Morgan's Law: 'Neither it is sunny nor it is warm.'",
+      "choices": {
+        "A": "Both it is not sunny and it is not warm.",
+        "B": "It is either sunny or it is warm, and if it is sunny, then it is warm.",
+        "C": "Either it is not sunny or it is not warm, and if it is not sunny, then it is warm.",
+        "D": "Either it is sunny or it is warm."
+      },
+      "correct_choice": "D",
+      "solution": "De Morgan's Law states that the negation of a disjunction (or) is equivalent to the conjunction (and) of the negations of each proposition, and vice versa. Choice D correctly represents the negated proposition: 'Either it is sunny or it is warm.' The other choices either do not use De Morgan's Law or negate incorrectly.",
+      "explanation": "This question assesses students' understanding of applying De Morgan's Law to negate compound propositions involving disjunctions. It requires them to recognize when to apply the law and how it changes the logical structure.",
+      "common_mistake_notes": "A common mistake would be to choose A, which is the direct negation without applying De Morgan's Law. Students may forget that negating 'neither nor' actually results in an 'either or' relationship."
+    },
+    {
+      "id": "ImplicationInversion",
+      "stem": "Negate the following compound proposition by inverting the antecedent and consequent: 'If it is raining, then I will stay inside.'",
+      "choices": {
+        "A": "If it is not raining, then I will stay inside.",
+        "B": "If it is not raining, then I will not stay inside.",
+        "C": "If it is raining, then I will not stay inside.",
+        "D": "It is raining and I will stay inside."
+      },
+      "correct_choice": "B",
+      "solution": "To negate a conditional statement by inverting the antecedent and consequent, we must change the operator to its opposite (in this case, from 'if-then' to 'if-not'). Choice B correctly represents this: 'If it is not raining, then I will not stay inside.' The other choices either do not invert correctly or use incorrect operators.",
+      "explanation": "This question tests students' understanding of inverting a conditional statement (also known as contraposition) to negate it. It requires them to recognize the specific rule for negating this type of compound proposition.",
+      "common_mistake_notes": "A common mistake would be to choose A, which incorrectly maintains the original consequent (I will stay inside). Students may混淆contrapositive with converse, but inverting only involves changing both parts of the conditional statement."
+    },
+    {
+      "id": "QuantifiersAndPropositions",
+      "stem": "Translate the following into a compound proposition using quantifiers: 'Every student in the class passed their exam.'",
+      "choices": {
+        "A": "For all students x in the class, x passed their exam.",
+        "B": "There exists at least one student x in the class who did not pass their exam.",
+        "C": "For some students x in the class, x did not pass their exam.",
+        "D": "There are no students in the class who passed their exams."
+      },
+      "correct_choice": "A",
+      "solution": "To represent this statement using quantifiers, we use 'for all' to indicate that every student satisfies the condition. Choice A correctly represents this: 'For all students x in the class, x passed their exam.' The other choices either use incorrect quantifiers or negate the statement.",
+      "explanation": "This question assesses students' understanding of using quantifiers (such as 'for all' and 'there exists') to express propositions involving groups or collections. It requires them to correctly apply the appropriate quantifier based on the given statement.",
+      "common_mistake_notes": "A common mistake would be to choose B, which incorrectly uses a different quantifier ('there exists at least one') that contradicts the original statement."
+    },
+    {
+      "id": "CompoundPropositionsWithQuantifiers",
+      "stem": "Translate the following into a compound proposition using quantifiers: 'Some students in the class study every day, but none of them skip classes.'",
+      "choices": {
+        "A": "For some students x in the class, x studies every day and for all y in the class, y does not skip classes.",
+        "B": "There exists at least one student x in the class who studies every day, and there are no students y in the class who skip classes.",
+        "C": "For all students x in the class, x either studies every day or does not skip classes.",
+        "D": "None of the students in the class study every day or skip classes."
+      },
+      "correct_choice": "A",
+      "solution": "To represent this statement using quantifiers, we need to express both parts separately: 'for some' for studying and 'for all' for not skipping. Choice A correctly represents this: 'For some students x in the class, x studies every day and for all y in the class, y does not skip classes.' The other choices either use incorrect quantifiers or do not accurately represent both parts of the statement.",
+      "explanation": "This question tests students' ability to combine quantifiers with compound propositions. It requires them to understand how to apply multiple quantifiers to different parts of a proposition.",
+      "common_mistake_notes": "A common mistake would be to choose C, which incorrectly combines the two conditions into an 'either-or' relationship instead of expressing them separately."
+    }
+  ]
+}

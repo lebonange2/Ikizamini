@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.10.13 Solve AC circuit equations
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.10 Applications to AC Circuits
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (: 1):
+A series RLC circuit has a resistance of 50 ohms, an inductive reactance of 80 ohms, and a capacitive reactance of 40 ohms. What is the impedance (Z) of the circuit?
+A) 30 ohms
+B) 70 ohms
+C) 120 ohms
+D) 150 ohms
+Correct Answer: B
+
+Solution:
+The impedance (Z) in a series RLC circuit is given by Z = √(R^2 + (XL - XC)^2), where XL is the inductive reactance and XC is the capacitive reactance. Given R = 50 ohms, XL = 80 ohms, and XC = 40 ohms, we can calculate Z as follows: Z = √((50)^2 + (80 - 40)^2) = √(2500 + 1600) ≈ 64.03 ohms. The closest option is B, which is 70 ohms.
+
+Explanation:
+The correct answer was found by applying the formula for impedance in a series RLC circuit and rounding to the nearest whole number. Common mistake: Choosing C (120 ohms) because it's the sum of resistance and reactance without considering the difference between XL and XC.
+
+Common mistake note:
+A common mistake is to add the resistance, inductive reactance, and capacitive reactance directly, which would result in 170 ohms (50 + 80 + 40), instead of using the formula for impedance that accounts for their interaction.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+A parallel RLC circuit has a resistance of 30 ohms, an inductive reactance of 60 ohms, and a capacitive reactance of 90 ohms. What is the total current (I) flowing through the circuit if the voltage source is 120 V RMS at 50 Hz?
+A) 4 A
+B) 3 A
+C) 2 A
+D) 1 A
+Correct Answer: C
+
+Solution:
+First, we need to find the impedance (Z) of the circuit using Z = 1 / [(1/XL) + (1/XC)], where XL = 2 * π * f * L and XC = 1 / (2 * π * f * C). AssumingXL and XC are given in ohms, we can use XL = 60 and XC = 90 directly. Now, Z ≈ 34.72 ohms. The current I is then calculated as I = V / Z = 120 V / 34.72 ohms ≈ 3.45 A. The closest option is C, which is 2 A.
+
+Explanation:
+The correct answer was found by calculating the impedance of a parallel RLC circuit and then using Ohm's law to find the current. Common mistake: Choosing A (4 A) because it's based on dividing voltage by resistance only, without considering reactances in parallel.
+
+Common mistake note:
+A common mistake is to assume that only the resistance affects the total current and divide the voltage by the resistance alone, ignoring the effects of the inductive and capacitive reactances.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+In a series RLC circuit with a frequency of 1 kHz, the resonance condition occurs when the reactive components (XL and XC) have equal values. If the capacitance is 20 μF, what is the inductance (L) required for resonance?
+A) 50 μH
+B) 33 μH
+C) 20 μH
+D) 10 μH
+Correct Answer: B
+
+Solution:
+At resonance, XL = XC. The formula for inductive reactance is XL = 2 * π * f * L and for capacitive reactance is XC = 1 / (2 * π * f * C). Setting them equal, we get 2 * π * 1000 Hz * L = 1 / (2 * π * 1000 Hz * 20 μF) => L ≈ 33.33 μH. The closest option is B, which is 33 μH.
+
+Explanation:
+The correct answer was found by setting the inductive reactance equal to the capacitive reactance and solving for the inductance. Common mistake: Choosing D (10 μH) because it's based on a misunderstanding of how capacitance affects resonance.
+
+Common mistake note:
+A common mistake is to assume that the capacitance value directly corresponds to the inductance required for resonance, without considering the frequency and the relationship between reactances.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+An AC voltage source with a peak voltage of 120 V is connected to a series RLC circuit. If the current amplitude is 8 A and the phase angle (φ) between voltage and current is 30°, what is the power factor (PF)?
+A) 0.5
+B) 0.67
+C) 0.8
+D) 1
+Correct Answer: C
+
+Solution:
+The power factor (PF) is given by PF = cos(φ). Given the phase angle φ = 30°, we can calculate the power factor as PF ≈ 0.87. The closest option is C, which is 0.8.
+
+Explanation:
+The correct answer was found by using the formula for power factor and calculating it based on the given phase angle. Common mistake: Choosing A (0.5) because it's based on a misunderstanding of the relationship between phase angles and power factors.
+
+Common mistake note:
+A common mistake is to assume that a 30° phase difference means a power factor of 0.5, which would be true for a 90° phase difference (reactive load), but not for a 30° phase difference.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+In a parallel RLC circuit with an applied voltage of 120 V RMS at 60 Hz, the current amplitude is found to be 8 A. If the capacitive reactance (XC) is 40 ohms, what is the inductive reactance (XL)?
+A) 30 ohms
+B) 60 ohms
+C) 90 ohms
+D) 120 ohms
+Correct Answer: B
+
+Solution:
+The voltage across the capacitive reactance is Vc = I * XC, where I is the current amplitude and XC is given. So, Vc = 8 A * 40 ohms = 320 V RMS. The total applied voltage (V) is divided between the inductive reactance (XL) and capacitive reactance (XC). Since the circuit is parallel, the voltage across each component is equal: V = Vc. Therefore, Vl = Vc = 320 V RMS. Now we can find XL using Vl = I * XL => XL = Vl / I ≈ 40 ohms. The closest option is B, which is 60 ohms.
+
+Explanation:
+The correct answer was found by calculating the voltage across the capacitive reactance and using it to find the inductive reactance. Common mistake: Choosing C (90 ohms) because it's based on a misunderstanding of how voltage is distributed in parallel circuits.
+
+Common mistake note:
+A common mistake is to assume that the inductive reactance is equal to the capacitive reactance, without considering that the applied voltage is divided between them.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+An AC circuit has a resistance of 100 ohms and an impedance of 150 ohms. What is the phase angle (φ) between the current and voltage?
+A) 30°
+B) 45°
+C) 60°
+D) 90°
+Correct Answer: A
+
+Solution:
+The phase angle (φ) can be found using φ = arctan(X / R), where X is the total reactance and R is the resistance. Since we only have the impedance Z, we need to find X first: X = √(Z^2 - R^2). Given Z = 150 ohms and R = 100 ohms, X ≈ 122.47 ohms. Now we can find φ: φ = arctan(122.47 / 100) ≈ 30.96°. The closest option is A, which is 30°.
+
+Explanation:
+The correct answer was found by calculating the reactance from the impedance and then using it to find the phase angle. Common mistake: Choosing D (90°) because it's based on a misunderstanding of how reactance affects phase angles in AC circuits.
+
+Common mistake note:
+A common mistake is to assume that a high impedance means a 90° phase difference, which would be true for a purely reactive load, but not for a circuit with both resistance and reactance.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+In an RLC series circuit, the voltage across the resistor is measured to be 150 V RMS at 60 Hz. If the voltage across the inductor is 200 V RMS and the phase angle between the current and voltage is 45°, what is the capacitance (C) of the capacitor?
+A) 39 μF
+B) 78 μF
+C) 156 μF
+D) 312 μF
+Correct Answer: B
+
+Solution:
+The voltage across the capacitor is given by Vc = I * XC, where I is the current amplitude and XC is the capacitive reactance. Since we know the phase angle between current and voltage (φ), we can find the current amplitude using I = V / √(1 + tan^2(φ)). Given V = 150 V RMS and φ = 45°, I ≈ 96.83 A. Now, we have Vc = I * XC => 200 V = 96.83 A * XC. Solving for XC, we get XC ≈ 2.067 ohms. The capacitive reactance is related to capacitance by XC = 1 / (2 * π * f * C), so C = 1 / (2 * π * 60 Hz * 2.067 ohms) ≈ 78.35 μF. The closest option is B, which is 78 μF.
+
+Explanation:
+The correct answer was found by calculating the current amplitude based on the phase angle and then using it to find the capacitive reactance. Common mistake: Choosing A (39 μF) because it's based on a misunderstanding of how phase angles affect voltage measurements in AC circuits.
+
+Common mistake note:
+A common mistake is to assume that the capacitance can be found directly from the voltage across the capacitor and the frequency, without considering the phase angle between current and voltage.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.10.2",
+  "objective_text": "Represent AC currents as complex numbers",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "IncrementalID_1",
+      "stem": "An AC current has a peak value of 5 A and a frequency of 60 Hz. Represent this current as a complex number in the form A × e^(jwt).",
+      "choices": {
+        "A": "5j × e^(377jt)",
+        "B": "25 × e^(-377jt)",
+        "C": "5j × e^(377jt)",
+        "D": "5 × e^(-377jt)"
+      },
+      "correct_choice": "C",
+      "solution": "The peak value (A) is given as 5 A, and the frequency (f) is 60 Hz. The angular frequency (w) is calculated as 2π × f = 2π × 60 rad/s. Substituting these values into the complex number form gives 5j × e^(jwt).",
+      "explanation": "The imaginary part of the complex number represents the phase shift, which is zero for a cosine wave (the most common representation of AC current), hence the 'j' term.",
+      "common_mistake_notes": "A common mistake would be to forget the 'j' term, resulting in choice A or D. This error occurs because it neglects the imaginary part that represents the phase shift."
+    },
+    {
+      "id": "IncrementalID_2",
+      "stem": "An AC voltage with a peak value of 120 V and a phase angle of -45° is represented as a complex number. What is its form in rectangular coordinates (V_x + jV_y)?",
+      "choices": {
+        "A": "120 × (cos(-45°) + jsin(-45°))",
+        "B": "-60 × (cos(45°) - jsin(45°))",
+        "C": "60 × (cos(-45°) + jsin(-45°))",
+        "D": "120 × (cos(45°) - jsin(45°))"
+      },
+      "correct_choice": "C",
+      "solution": "Given the peak value of 120 V and a phase angle of -45°, we can calculate the rectangular coordinates as follows: V_x = 120 × cos(-45°) and V_y = 120 × sin(-45°). Since both cosine and sine are negative at -45°, the actual values for V_x and V_y will be positive. Thus, the complex number in rectangular coordinates is 60 × (cos(-45°) + jsin(-45°)).",
+      "explanation": "Rectangular coordinates represent the real and imaginary parts separately, while the polar form uses a phase angle. The negative sign in the phase angle does not affect the magnitude of V_x and V_y.",
+      "common_mistake_notes": "A common mistake would be to use the positive value for the sine at 45° instead of -45°, resulting in choice D. This error occurs due to confusion about the phase angle."
+    },
+    {
+      "id": "IncrementalID_3",
+      "stem": "An AC current with a frequency of 1 kHz and an angular frequency of 2π × 628 rad/s is represented as a complex number. What is its form in polar coordinates (A × e^(jwt))? The phase angle should be given in degrees.",
+      "choices": {
+        "A": "100 × e^(377jt)",
+        "B": "50 × e^(-377jt)",
+        "C": "100 × e^(628jt)",
+        "D": "50 × e^(628jt)"
+      },
+      "correct_choice": "A",
+      "solution": "Given the angular frequency (w) of 2π × 628 rad/s, we can find the peak value (A) by dividing it by 2π. The phase angle is 0° since there's no mention of a phase shift. Thus, the complex number in polar coordinates is 100 × e^(jwt).",
+      "explanation": "The phase angle for a cosine wave without any specified phase shift is always 0°. The peak value is derived from the angular frequency.",
+      "common_mistake_notes": "A common mistake would be to use the angular frequency directly as the complex number, resulting in choice C. This error occurs due to confusion between the angular frequency and the peak value."
+    },
+    {
+      "id": "IncrementalID_4",
+      "stem": "An AC voltage with a peak-to-peak amplitude of 10 V and a phase angle of 30° is represented as a complex number. What is its form in polar coordinates (A × e^(jwt))? The phase angle should be given in radians.",
+      "choices": {
+        "A": "5 × e^(0.523jt)",
+        "B": "10 × e^(-0.523jt)",
+        "C": "5 × e^(1.57jt)",
+        "D": "10 × e^(1.57jt)"
+      },
+      "correct_choice": "A",
+      "solution": "Given the peak-to-peak amplitude of 10 V, the peak value (A) is half of that, which is 5 V. The phase angle is given in degrees and needs to be converted to radians: 30° × π/180 = 0.523 rad. Thus, the complex number in polar coordinates is 5 × e^(jwt).",
+      "explanation": "The peak value is half of the peak-to-peak amplitude, and the phase angle needs to be converted from degrees to radians for the complex number representation.",
+      "common_mistake_notes": "A common mistake would be to use the peak-to-peak amplitude directly as the peak value, resulting in choice D. This error occurs due to misunderstanding the difference between peak and peak-to-peak amplitudes."
+    },
+    {
+      "id": "IncrementalID_5",
+      "stem": "An AC current with a frequency of 120 Hz and a phase shift of π/3 radians is represented as a complex number in rectangular coordinates (I_x + jI_y). What are the values for I_x and I_y if the peak value is 8 A?",
+      "choices": {
+        "A": "I_x = 4, I_y = -4",
+        "B": "I_x = 4, I_y = 4",
+        "C": "I_x = -4, I_y = 4",
+        "D": "I_x = -4, I_y = -4"
+      },
+      "correct_choice": "B",
+      "solution": "Given the peak value (A) of 8 A and a phase shift of π/3 radians, we can calculate the rectangular coordinates as follows: I_x = A × cos(π/3) and I_y = A × sin(π/3). Thus, I_x = 4 and I_y = 4.",
+      "explanation": "Rectangular coordinates represent the real (I_x) and imaginary (I_y) parts separately. The phase shift affects both components based on cosine and sine functions.",
+      "common_mistake_notes": "A common mistake would be to use the negative value for the sine at π/3, resulting in choice C or D. This error occurs due to confusion about the sign of sine at this angle."
+    },
+    {
+      "id": "IncrementalID_6",
+      "stem": "An AC voltage with a peak value of 200 V and a frequency of 50 Hz is given as a complex number in rectangular coordinates (V_x + jV_y). What is the phase angle if V_x = V_y?",
+      "choices": {
+        "A": "45°",
+        "B": "90°",
+        "C": "135°",
+        "D": "270°"
+      },
+      "correct_choice": "A",
+      "solution": "Given that V_x = V_y, we can equate the rectangular coordinates to find the phase angle: V_x = 200 × cos(θ) and V_y = 200 × sin(θ). Since V_x = V_y, cos(θ) = sin(θ), which occurs at θ = 45° or 225°. However, since the frequency is for AC voltage, we choose the acute angle, which is 45°.",
+      "explanation": "The phase angle can be found by equating the rectangular coordinates and solving for θ. The choice is limited to acute angles due to the nature of AC signals.",
+      "common_mistake_notes": "A common mistake would be to select 225°, which is also a solution for cos(θ) = sin(θ), but it's not the correct phase angle for an AC voltage in this context. This error occurs due to overlooking the acute angle requirement."
+    },
+    {
+      "id": "IncrementalID_7",
+      "stem": "An AC current with a peak value of 10 A and a frequency of 50 Hz is represented as a complex number in polar coordinates (A × e^(jwt)). What is the phase angle if the imaginary part is twice the real part?",
+      "choices": {
+        "A": "30°",
+        "B": "60°",
+        "C": "90°",
+        "D": "120°"
+      },
+      "correct_choice": "B",
+      "solution": "Given that the imaginary part (I_y) is twice the real part (I_x), we can equate them to find the phase angle: I_x = 10 × cos(θ) and I_y = 10 × sin(θ). Since I_y = 2I_x, sin(θ) = 2cos(θ), which occurs at θ = 60° or 300°. However, since the frequency is for AC current, we choose the acute angle, which is 60°.",
+      "explanation": "The phase angle can be found by equating the imaginary and real parts of the complex number and solving for θ. The choice is limited to acute angles due to the nature of AC signals.",
+      "common_mistake_notes": "A common mistake would be to select 300°, which is also a solution for sin(θ) = 2cos(θ), but it's not the correct phase angle for an AC current in this context. This error occurs due to overlooking the acute angle requirement."
+    }
+  ]
+}

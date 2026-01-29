@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.15.15 Apply to software verification
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.15 Applications of Discrete Mathematics
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Which technique is commonly used in software verification?
+A) Random testing
+B) Mutation testing
+C) Equivalence partitioning
+D) All of the above
+Correct Answer: D
+
+Solution:
+Multiple techniques are commonly used in software verification, including random testing, mutation testing, and equivalence partitioning. Therefore, the correct answer is D: All of the above.
+
+Explanation:
+Random testing selects inputs randomly for testing, mutation testing introduces small code changes to check robustness, and equivalence partitioning groups similar inputs for efficient testing.
+
+Common mistake note:
+A common mistake might be selecting only one technique without realizing that multiple methods are often combined for comprehensive verification.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+The primary goal of software verification is to ensure that a program:
+A) Meets its intended functionality
+B) Is optimized for performance
+C) Has no syntax errors
+D) Follows coding standards
+Correct Answer: A
+
+Solution:
+Software verification aims to confirm that the program functions as intended, without logical or behavioral errors. The correct answer is A: Meets its intended functionality.
+
+Explanation:
+Optimization, syntax checking, and adherence to coding standards are important but not the main focus of software verification.
+
+Common mistake note:
+A common mistake might be choosing B: Is optimized for performance, which is related but distinct from ensuring correct functionality.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+An example of a static analysis technique in software verification is:
+A) Code review
+B) Integration testing
+C) Unit testing
+D) Regression testing
+Correct Answer: A
+
+Solution:
+Static analysis examines code without execution. Code review, where developers inspect the source code, is an example of a static analysis method. The correct answer is A: Code review.
+
+Explanation:
+Integration testing, unit testing, and regression testing involve executing the software.
+
+Common mistake note:
+A common mistake might be choosing B, C, or D, which are dynamic analysis methods requiring code execution.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Software verification primarily helps identify:
+A) Memory leaks
+B) Performance bottlenecks
+C) Logic errors
+D) All of the above
+Correct Answer: C
+
+Solution:
+Software verification focuses on detecting logic errors to ensure correct behavior. While it may indirectly reveal other issues, its primary purpose is for logical correctness. The correct answer is C: Logic errors.
+
+Explanation:
+Memory leaks and performance problems are typically addressed by other techniques like profiling.
+
+Common mistake note:
+A common mistake might be choosing D: All of the above, thinking software verification covers all aspects of quality. Its primary focus is on logic errors.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+In software verification, a test oracle serves to:
+A) Automate testing processes
+B) Generate test cases
+C) Determine if a test has passed or failed
+D) Measure code coverage
+Correct Answer: C
+
+Solution:
+A test oracle helps assess whether an input produces the correct output, determining if a test case has passed or failed. The correct answer is C: Determine if a test has passed or failed.
+
+Explanation:
+Automating testing, generating test cases, and measuring code coverage are separate aspects of software testing.
+
+Common mistake note:
+A common mistake might be choosing A, B, or D, which are related but distinct from the primary function of a test oracle.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+An advantage of formal methods in software verification is:
+A) Easy to automate
+B) Highly accurate
+C) Less time-consuming than testing
+D) Suitable for all types of software
+Correct Answer: B
+
+Solution:
+Formal methods use mathematical techniques for high accuracy in error identification. However, they can be complex and not universally applicable. The correct answer is B: Highly accurate.
+
+Explanation:
+Complexity, scalability, and domain-specific limitations are associated with formal methods.
+
+Common mistake note:
+A common mistake might be choosing C or D, which are not inherent advantages of formal methods.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Software verification is crucial in the software development life cycle because it helps:
+A) Meet project deadlines
+B) Reduce maintenance costs
+C) Improve developer productivity
+D) Ensure regulatory compliance
+Correct Answer: B
+
+Solution:
+Software verification aids in reducing maintenance costs by identifying and fixing errors early, preventing higher expenses later. The correct answer is B: Reduce maintenance costs.
+
+Explanation:
+While software verification can indirectly impact deadlines and productivity, its primary benefit is improving quality and reducing long-term costs.
+
+Common mistake note:
+A common mistake might be choosing A or C, which are not the main focus of software verification but may have secondary benefits.
+------------------------------------------------------------------------------

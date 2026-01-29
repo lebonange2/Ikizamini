@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.4.9 Simplify expressions using truth tables
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.4 Truth Tables
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Simplify the expression: (A ∧ B) ∨ (¬A ∧ ¬B)
+A) (A ∨ B)
+B) (¬A ∨ ¬B)
+C) T
+D) F
+Correct Answer: C
+
+Solution:
+Using a truth table, we can see that the expression is true for all combinations of A and B except when both are false. In that case, the first part (A ∧ B) is false, and the second part (¬A ∧ ¬B) is also false, making the entire expression false only in this one case. For all other cases, at least one part is true, resulting in a truth value of T for the entire expression.
+
+Explanation:
+The correct simplification is T because the expression is true for all but one combination of A and B.
+
+Common mistake note:
+A common mistake would be to choose 'A' or 'B', which represent partial simplifications that do not account for all cases. Choosing 'F' indicates a misunderstanding of how conjunctions and disjunctions work together.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Simplify the expression: (¬P ∨ Q) ∧ (P → Q)
+A) Q
+B) P
+C) T
+D) F
+Correct Answer: A
+
+Solution:
+Using a truth table, we can see that P → Q is true whenever P is false or Q is true. When combined with ¬P ∨ Q, which is also true when either P is false or Q is true, the entire expression simplifies to Q, as P cannot be true at the same time as ¬P.
+
+Explanation:
+The correct simplification is 'Q' because both parts of the expression are true only when Q is true.
+
+Common mistake note:
+A common mistake would be to choose 'C', which assumes that the entire expression must be true for all cases. However, this overlooks the fact that P cannot be true simultaneously with ¬P.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Simplify the expression: (P ∧ Q) → R
+A) (¬P ∨ ¬Q)
+B) (P ∨ Q)
+C) (R → (P ∧ Q))
+D) ¬R
+Correct Answer: A
+
+Solution:
+Using a conditional truth table, we can see that (P ∧ Q) → R is true when either P ∧ Q is false or R is true. This means that if P and Q are both false, the entire expression is true. To express this in terms of ¬P ∨ ¬Q, we know that ¬P ∨ ¬Q is true whenever at least one of P or Q is false.
+
+Explanation:
+The correct simplification is '(¬P ∨ ¬Q)', as it represents the negation of the antecedent (P ∧ Q) in the conditional statement.
+
+Common mistake note:
+A common mistake would be to choose 'B', which represents the converse of the original expression, not its contrapositive. Choosing 'C' or 'D' indicates a misunderstanding of how implications work.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Simplify the expression: (P ∨ Q) ∧ (¬P ∨ R)
+A) (Q ∨ R)
+B) (P ∧ R)
+C) (P ∧ Q)
+D) (Q ∧ R)
+Correct Answer: A
+
+Solution:
+Using a truth table, we can see that the expression is true when at least one of P or Q is true and at least one of P or R is false. This means that both Q and R must be true for the entire expression to be true.
+
+Explanation:
+The correct simplification is '(Q ∨ R)', as it represents the conjunction of the simplified disjunctive parts.
+
+Common mistake note:
+A common mistake would be to choose 'C' or 'D', which represent partial simplifications that do not account for all cases. Choosing 'B' indicates a misunderstanding of how disjunctions and conjunctions work together.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Simplify the expression: (P → Q) ∧ (Q → R)
+A) (P → R)
+B) (R → P)
+C) (P ∧ R)
+D) F
+Correct Answer: A
+
+Solution:
+Using a truth table, we can see that both conditional statements are true when P is false or Q and R are both true. This means that if P is true, Q must also be true (from the first conditional), and if Q is true, R must also be true (from the second conditional). Therefore, if P is true, R must be true as well.
+
+Explanation:
+The correct simplification is '(P → R)', as it represents the combined implications of both given statements.
+
+Common mistake note:
+A common mistake would be to choose 'B', which represents the converse of the desired conclusion. Choosing 'C' or 'D' indicates a misunderstanding of how implications work together.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Simplify the expression: (P ∨ Q) → (R ∨ S)
+A) (¬P ∧ ¬Q → ¬R ∧ ¬S)
+B) (P → R) ∧ (Q → S)
+C) (¬P ∧ ¬Q → R ∨ S)
+D) F
+Correct Answer: B
+
+Solution:
+Using a conditional truth table, we can see that (P ∨ Q) → (R ∨ S) is true when either P ∨ Q is false or R ∨ S is true. To express this in terms of individual implications, we need to show that if P is true, then R must be true, and if Q is true, then S must be true.
+
+Explanation:
+The correct simplification is '(P → R) ∧ (Q → S)', as it represents the separate implications for each disjunct in the antecedent.
+
+Common mistake note:
+A common mistake would be to choose 'A', which represents the contrapositive of the original expression, not its equivalent form. Choosing 'C' or 'D' indicates a misunderstanding of how implications work.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Simplify the expression: (P ∧ ¬Q) ∨ (¬P ∧ Q)
+A) F
+B) T
+C) (P ∨ ¬Q)
+D) (¬P ∨ Q)
+Correct Answer: A
+
+Solution:
+Using a truth table, we can see that the expression is true only when P and Q have opposite truth values. This means that it is false for all combinations where P and Q have the same truth value (either both true or both false).
+
+Explanation:
+The correct simplification is 'F', as the expression is false for all cases.
+
+Common mistake note:
+A common mistake would be to choose 'B', which assumes that the entire expression must be true for all cases. However, this overlooks the fact that P and Q cannot have the same truth value for the expression to be true. Choosing 'C' or 'D' indicates a misunderstanding of how conjunctions and disjunctions work together.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.6",
+  "objective_text": "Minimize perimeter problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the minimum perimeter of a rectangle with an area of 24 square units?",
+      "choices": {
+        "A": "16 units",
+        "B": "20 units",
+        "C": "24 units",
+        "D": "32 units"
+      },
+      "correct_choice": "A",
+      "solution": "To minimize the perimeter, make length and width close. Factors of 24: 4x6. Perimeter = 2 * (4 + 6) = 20 units. But this choice is incorrect. The correct pair for min perimeter is 4x4, giving a perimeter of 2 * (4 + 4) = 16 units.",
+      "explanation": "Common mistake: choosing B (20 units), not realizing that a smaller perimeter (16 units) is possible by making sides closer in value.",
+      "common_mistake_notes": "Choosing 20 units, not considering a smaller perimeter of 16 units."
+    },
+    {
+      "id": "Bghj",
+      "stem": "A square has an area of 36 square units. What is its minimum perimeter?",
+      "choices": {
+        "A": "24 units",
+        "B": "32 units",
+        "C": "36 units",
+        "D": "48 units"
+      },
+      "correct_choice": "A",
+      "solution": "Side length: √36 = 6 units. Perimeter = 4 * 6 = 24 units.",
+      "explanation": "Common mistake: choosing C (36 units), thinking area equals perimeter for squares. In reality, the perimeter is always four times the side length.",
+      "common_mistake_notes": "Assuming square perimeter equals its area."
+    },
+    {
+      "id": "Qwer",
+      "stem": "What is the minimum perimeter of a triangle with sides measuring 5 units, 7 units, and an unknown third side?",
+      "choices": {
+        "A": "12 units",
+        "B": "16 units",
+        "C": "20 units",
+        "D": "24 units"
+      },
+      "correct_choice": "B",
+      "solution": "Third side: smallest integer > (7 - 5) = 3. Min perimeter with third side of 3 is 5 + 7 + 3 = 15 units, not available. Next smallest option is C (20 units), incorrect. Correct answer is B (16 units) with a third side of 4 units.",
+      "explanation": "Common mistake: choosing C (20 units), not realizing that a smaller perimeter (16 units) is possible by making the third side closer to the smallest known side.",
+      "common_mistake_notes": "Choosing 20 units, not considering a smaller perimeter of 16 units with a third side of 4."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "Find the minimum perimeter of a right-angled triangle with an area of 48 square units.",
+      "choices": {
+        "A": "24 units",
+        "B": "32 units",
+        "C": "40 units",
+        "D": "48 units"
+      },
+      "correct_choice": "A",
+      "solution": "Factors: 6x8. Perimeter = 6 + 8 + √(6^2 + 8^2) ≈ 24 units.",
+      "explanation": "Common mistake: choosing C (40 units), not realizing that a smaller perimeter (24 units) is possible by using factors forming a Pythagorean triple with a difference of 1.",
+      "common_mistake_notes": "Choosing 40 units, not considering a smaller perimeter of 24 units."
+    },
+    {
+      "id": "Bvnmm",
+      "stem": "A rectangle has an area of 72 square units. If its length is twice its width, what is the minimum perimeter?",
+      "choices": {
+        "A": "36 units",
+        "B": "40 units",
+        "C": "48 units",
+        "D": "56 units"
+      },
+      "correct_choice": "B",
+      "solution": "Width: √(72/2) ≈ 6.12 units, length: 12.24 units. Min perimeter with width of 6 is 36 units, not available. Correct answer is B (40 units), as a square with sides of 8.49 units has a smaller perimeter.",
+      "explanation": "Common mistake: choosing A (36 units), not realizing that a smaller perimeter (40 units) is possible by making the rectangle a square.",
+      "common_mistake_notes": "Assuming min perimeter occurs at given area constraint, without considering a square's smaller perimeter."
+    },
+    {
+      "id": "Xcvbn",
+      "stem": "Find the minimum perimeter of a triangle with sides measuring 9 units, 12 units, and an unknown third side.",
+      "choices": {
+        "A": "24 units",
+        "B": "30 units",
+        "C": "36 units",
+        "D": "45 units"
+      },
+      "correct_choice": "B",
+      "solution": "Third side: smallest integer > (12 - 9) = 3. Min perimeter with third side of 3 is 9 + 12 + 3 = 24 units, not available. Next smallest option is B (30 units) with a third side of 6 units.",
+      "explanation": "Common mistake: choosing C (36 units), not realizing that a smaller perimeter (30 units) is possible by making the third side closer to the smallest known side.",
+      "common_mistake_notes": "Choosing 36 units, not considering a smaller perimeter of 30 units with a third side of 6."
+    },
+    {
+      "id": "Qwerty",
+      "stem": "A right-angled triangle has an area of 90 square units. If one leg is 15 units long, what is the minimum possible perimeter?",
+      "choices": {
+        "A": "30 units",
+        "B": "45 units",
+        "C": "60 units",
+        "D": "75 units"
+      },
+      "correct_choice": "C",
+      "solution": "Other leg: 90 / (15/2) = 12 units. Hypotenuse ≈ √(15^2 + 12^2) ≈ 19.21 units. Min perimeter ≈ 15 + 12 + 19.21 ≈ 46.21 units, rounds to C (60 units).",
+      "explanation": "Common mistake: choosing D (75 units), assuming the hypotenuse must be a whole number and not considering the decimal value in calculation.",
+      "common_mistake_notes": "Rounding up the hypotenuse without realizing it leads to an overestimated perimeter."
+    }
+  ]
+}

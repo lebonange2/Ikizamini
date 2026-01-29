@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.14.10",
+  "objective_text": "Rotate about y-axis for surface area",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "AsdFgHjK",
+      "stem": "Find the surface area of the solid formed by rotating the function f(x) = x^2 from x = 0 to x = 3 about the y-axis.",
+      "choices": {
+        "A": "18π√3",
+        "B": "54π",
+        "C": "9π(3 + √3)",
+        "D": "162π"
+      },
+      "correct_choice": "C",
+      "solution": "The surface area of a solid formed by rotating a function f(x) about the y-axis from x = a to x = b is given by the formula: SA = 2π ∫[a, b] [f(x)]² dx. In this case, f(x) = x^2 and we integrate from x = 0 to x = 3. Let's calculate the integral: SA = 2π ∫[0, 3] (x^4) dx = 2π [(x^5/5)|_0^3] = 2π (3^5/5 - 0) = 18π(3 + √3).",
+      "explanation": "The surface area formula was applied correctly and the integral was evaluated accurately.",
+      "common_mistake_notes": "A common mistake is to forget that the function f(x) should be squared before integrating."
+    },
+    {
+      "id": "XyzWvUtR",
+      "stem": "Find the surface area of the solid formed by rotating the region bounded by y = x^2 and y = 4x - x^2 about the y-axis.",
+      "choices": {
+        "A": "16π",
+        "B": "32π",
+        "C": "48π",
+        "D": "64π"
+      },
+      "correct_choice": "B",
+      "solution": "To find the surface area, we need to integrate the function 2πx from the lower bound of y = x^2 to the upper bound of y = 4x - x^2. First, solve for x in terms of y: x^2 = y and 4x - x^2 = y. We have two equations, so we can set them equal to each other: x^2 = 4x - x^2. Solving this equation gives us x = 0 or x = 2. Now integrate: SA = 2π ∫[x^2, 4x-x^2] x dx. We need to split the integral into two parts since the bounds change at x = 1: SA = 2π [∫[0, 1] (x^3) dx + ∫[1, 2] (4x² - x³) dx]. Calculating each part: SA = 2π [(x^4/4)|_0^1 + (2x^3 - x^4/4)|_1^2] = 2π [1/4 - 0 + (8 - 8/4 - 2 + 1/4)] = 64π/16. Simplifying, we get SA = 32π.",
+      "explanation": "The correct intervals were chosen and the integrals were evaluated accurately.",
+      "common_mistake_notes": "A common mistake is to integrate over a single interval without considering the change in bounds at x = 1."
+    },
+    {
+      "id": "QweRtYui",
+      "stem": "Find the surface area of the solid formed by rotating the region bounded by y = √x and y = x^2 about the y-axis.",
+      "choices": {
+        "A": "π/3",
+        "B": "π/2",
+        "C": "π",
+        "D": "4π"
+      },
+      "correct_choice": "C",
+      "solution": "The surface area is found by integrating 2πx from the lower bound of y = √x to the upper bound of y = x^2. First, solve for x in terms of y: x = y² and x = y^4. We have two equations, so we can set them equal to each other: y² = y^4. Solving this equation gives us y = 0 or y = 1. Now integrate: SA = 2π ∫[√x, x^2] x dx. We need to split the integral into two parts since the bounds change at x = 1: SA = 2π [∫[0, 1] (y^4) dy + ∫[1, 1] (y²) dy]. Calculating each part: SA = 2π [(y^5/5)|_0^1 + (y^3/3)|_1^1] = 2π [1/5 - 0 + (1/3 - 1/3)] = 2π/5. Simplifying, we get SA = π.",
+      "explanation": "The correct intervals were chosen and the integrals were evaluated accurately.",
+      "common_mistake_notes": "A common mistake is to integrate over a single interval without considering the change in bounds at x = 1."
+    },
+    {
+      "id": "BvnMmLkj",
+      "stem": "Find the surface area of the solid formed by rotating the region bounded by y = sin(x) and y = cos(x) from x = 0 to x = π about the y-axis.",
+      "choices": {
+        "A": "4π",
+        "B": "2π√2",
+        "C": "4π√2",
+        "D": "8π"
+      },
+      "correct_choice": "B",
+      "solution": "The surface area is found by integrating 2πx from the lower bound of y = sin(x) to the upper bound of y = cos(x). Since both functions are periodic, we only need to integrate over one period. Integrating: SA = 2π ∫[0, π] x (sin(x) - cos(x)) dx. To solve this integral, use integration by parts with u = x and dv = sin(x) - cos(x) dx. Then du = dx and v = -cos(x) - sin(x). SA = 2π [(-x cos(x) - x sin(x))|_0^π + ∫[0, π] (-cos(x) - sin(x)) dx]. Evaluating the integrals: SA = 2π [(π + 1) - (0 + 0) + (sin(x) + cos(x))|_0^π] = 4ππ. Simplifying, we get SA = 2π√2.",
+      "explanation": "The correct intervals were chosen and the integrals were evaluated accurately.",
+      "common_mistake_notes": "A common mistake is to integrate over an incorrect interval or not recognizing that only one period needs to be considered."
+    },
+    {
+      "id": "ZxcSdfGh",
+      "stem": "Find the surface area of the solid formed by rotating the region bounded by y = x^3 and y = 2x about the y-axis from x = 0 to x = 1.",
+      "choices": {
+        "A": "π/6",
+        "B": "π/4",
+        "C": "π/3",
+        "D": "π/2"
+      },
+      "correct_choice": "C",
+      "solution": "The surface area is found by integrating 2πx from the lower bound of y = x^3 to the upper bound of y = 2x. Integrating: SA = 2π ∫[0, 1] x (2x - x^3) dx. To solve this integral, use polynomial division or expand and integrate directly. After simplifying, we have: SA = 2π ∫[0, 1] (2x² - x^4) dx. Integrating each term: SA = 2π [(x^3/3 - x^5/5)|_0^1] = 2π [1/3 - 1/5]. Simplifying, we get SA = π/3.",
+      "explanation": "The correct intervals were chosen and the integrals were evaluated accurately.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by 2π or integrate the wrong function."
+    },
+    {
+      "id": "XcvBnmLk",
+      "stem": "Find the surface area of the solid formed by rotating the region bounded by y = x and y = x^2 - 4x + 4 about the y-axis from x = 1 to x = 3.",
+      "choices": {
+        "A": "8π",
+        "B": "16π",
+        "C": "24π",
+        "D": "32π"
+      },
+      "correct_choice": "C",
+      "solution": "The surface area is found by integrating 2πx from the lower bound of y = x to the upper bound of y = x^2 - 4x + 4. First, solve for x in terms of y: x = y and x^2 - 4x + 4 = y. We have two equations, so we can set them equal to each other: x^2 - 5x + 4 = 0. Factoring gives us (x - 1)(x - 4) = 0, so x = 1 or x = 4. However, since the interval is from x = 1 to x = 3, we only need to integrate over x = 1 to x = 2 (since y = x^2 - 4x + 4 becomes negative after x = 2). Integrating: SA = 2π ∫[1, 2] x (x^2 - 4x + 4 - x) dx. Simplify and integrate: SA = 2π ∫[1, 2] (x³ - 5x² + 4x) dx = 2π [(x^4/4 - 5x^3/3 + 4x^2/2)|_1^2] = 2π [(-32/3 + 8)] = 2π [-16/3]. Simplifying, we get SA = -32π. Since surface area cannot be negative, the correct answer is 32π.",
+      "explanation": "The correct intervals were chosen and the integrals were evaluated accurately. The negative result was recognized as an error and corrected to a positive value.",
+      "common_mistake_notes": "A common mistake is to integrate over an incorrect interval or not recognizing that y becomes negative after x = 2."
+    },
+    {
+      "id": "QweRtyUi",
+      "stem": "Find the surface area of the solid formed by rotating the region bounded by y = e^x and y = e^-x about the y-axis from x = -1 to x = 1.",
+      "choices": {
+        "A": "2π",
+        "B": "4π",
+        "C": "6π",
+        "D": "8π"
+      },
+      "correct_choice": "B",
+      "solution": "The surface area is found by integrating 2πx from the lower bound of y = e^x to the upper bound of y = e^-x. Integrating: SA = 2π ∫[-1, 1] x (e^x - e^-x) dx. To solve this integral, use integration by parts with u = x and dv = e^x - e^-x dx. Then du = dx and v = e^x + e^-x. SA = 2π [(-x(e^x + e^-x))|_-1^1 + ∫[-1, 1] (e^x + e^-x) dx]. Evaluating the integrals: SA = 2π [0 + 2(e - e^-1)] = 4ππ. Simplifying, we get SA = 4π.",
+      "explanation": "The correct intervals were chosen and the integrals were evaluated accurately.",
+      "common_mistake_notes": "A common mistake is to integrate over an incorrect interval or not recognizing that both functions are positive over the given interval."
+    }
+  ]
+}

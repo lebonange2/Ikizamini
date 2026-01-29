@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.11.10 Identify analytic functions
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.11 Complex Differentiation
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (AsdFgHjK):
+Which function is analytic everywhere in the complex plane?
+A) f(z) = |z|
+B) f(z) = z^2
+C) f(z) = 1/z
+D) f(z) = sin(1/z)
+Correct Answer: B
+
+Solution:
+The function f(z) = z^2 is analytic everywhere because its derivative exists and is continuous for all z. A has a non-differentiable point at z=0, C has a singularity at z=0, and D has singularities at z=0 and integer multiples of πi.
+
+Explanation:
+Analytic functions have continuous derivatives in their domain, allowing differentiation infinitely many times without issues like discontinuities or singularities.
+
+Common mistake note:
+Students may choose A due to the smooth appearance of the absolute value function, but it's non-differentiable at z=0.
+------------------------------------------------------------------------------
+
+Problem 2 (XyZvBnMm):
+Which function is analytic in the region Re(z) > 0?
+A) f(z) = e^(-z)
+B) f(z) = ln(z)
+C) f(z) = cosh(z)
+D) f(z) = sinh(z)
+Correct Answer: C
+
+Solution:
+f(z) = cosh(z) is analytic in Re(z) > 0 as its derivative exists and is continuous for all z with positive real part. A is entire, B has a branch cut along the negative real axis, and D has singularities at ±∞.
+
+Explanation:
+Analyticity depends on the function's derivative being continuous within its domain; here, we look for a function analytic in Re(z) > 0.
+
+Common mistake note:
+Students might choose B, forgetting that ln(z) has a branch cut along the negative real axis.
+------------------------------------------------------------------------------
+
+Problem 3 (PqRsTuWv):
+Which function is analytic in the region |z| < 1?
+A) f(z) = 1/(1-z)
+B) f(z) = z^3 - 3z^2 + 3z - 1
+C) f(z) = arctan(z)
+D) f(z) = (z-1)/(z+1)
+Correct Answer: A
+
+Solution:
+f(z) = 1/(1-z) is analytic in |z| < 1 due to being a geometric series with radius of convergence 1. B is entire, C has a singularity at z=∞, and D has singularities at z=-1.
+
+Explanation:
+Consider singularities and series convergence when assessing analyticity within a region.
+
+Common mistake note:
+Students may choose B, thinking all polynomials are entire, but this one isn't restricted to the given region.
+------------------------------------------------------------------------------
+
+Problem 4 (JkLmNpOq):
+Which function is analytic in the upper half-plane Im(z) > 0?
+A) f(z) = z^2 + 1
+B) f(z) = z^3 - 3z
+C) f(z) = sinh(iz)
+D) f(z) = cosh(z)
+Correct Answer: C
+
+Solution:
+f(z) = sinh(iz) is analytic in Im(z) > 0 as its derivative exists and is continuous for all z with positive imaginary part. A is entire, B has a branch cut along the real axis, and D is even and thus not analytic.
+
+Explanation:
+Analyticity depends on the function's derivative being continuous; here, we look for a function analytic in Im(z) > 0.
+
+Common mistake note:
+Students might choose D, forgetting that cosh(z) is even and not analytic everywhere.
+------------------------------------------------------------------------------
+
+Problem 5 (RtSvXwYz):
+Which function is analytic at z=1?
+A) f(z) = 1/(z-1)
+B) f(z) = (z^2 - 1)/(z-1)
+C) f(z) = ln(z-1)
+D) f(z) = e^(1/(z-1))
+Correct Answer: D
+
+Solution:
+f(z) = e^(1/(z-1)) is analytic at z=1 because the singularity is removable. A has a simple pole, B has a removable singularity, and C has a logarithmic singularity.
+
+Explanation:
+Analyticity requires differentiability except possibly at isolated singularities; here, we look for a function analytic at z=1.
+
+Common mistake note:
+Students may choose B, thinking removing the singularity makes it analytic, but it's not defined at z=1.
+------------------------------------------------------------------------------
+
+Problem 6 (KlMnOpQr):
+Which function is analytic at z=i?
+A) f(z) = 1/(z-i)
+B) f(z) = (z^2 + 1)/(z-i)
+C) f(z) = ln(z-i)
+D) f(z) = e^(1/(z-i))
+Correct Answer: D
+
+Solution:
+f(z) = e^(1/(z-i)) is analytic at z=i due to a removable singularity. A has a simple pole, B has a removable singularity, and C has a logarithmic singularity.
+
+Explanation:
+Analyticity requires differentiability except possibly at isolated singularities; here, we look for a function analytic at z=i.
+
+Common mistake note:
+Students may choose B, thinking removing the singularity makes it analytic, but it's not defined at z=i.
+------------------------------------------------------------------------------
+
+Problem 7 (AsBcDdEe):
+Which function is analytic in the region Re(z) < 0 and Im(z) ≠ 0?
+A) f(z) = z^2 + 1
+B) f(z) = ln(z)
+C) f(z) = sinh(z)
+D) f(z) = cosh(z)
+Correct Answer: B
+
+Solution:
+f(z) = ln(z) is analytic in Re(z) < 0 and Im(z) ≠ 0 as its derivative exists and is continuous for z with negative real part and non-zero imaginary part. A is entire, C has a singularity at z=0, and D is even and not analytic.
+
+Explanation:
+Check singularities and continuity of the derivative when assessing analyticity in a region.
+
+Common mistake note:
+Students might choose A, thinking all polynomials are entire, but this one isn't restricted to the given region.
+------------------------------------------------------------------------------

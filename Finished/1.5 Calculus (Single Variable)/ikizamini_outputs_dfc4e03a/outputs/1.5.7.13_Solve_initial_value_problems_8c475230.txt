@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.7.13 Solve initial value problems
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.7 Indefinite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (What is the solution to the differential equation y'  + 2y  = 0 with initial condition y(0)  = 4?):
+What is the solution to the differential equation y'  + 2y  = 0 with initial condition y(0)  = 4?
+A) y(t)  = 4e^(-2t)
+B) y(t)  = 4e^(2t)
+C) y(t)  = e^(-2t)  + 3
+D) y(t)  = e^(2t)  + 4
+Correct Answer: A
+
+Solution:
+The given differential equation is a first-order linear homogeneous equation. The general solution for such an equation is y(t)  = Ce^(-kt), where C is the constant of integration and k is the coefficient of y. To find C, we use the initial condition y(0)  = 4: 4  = Ce^(0)  => C  = 4. So the particular solution is y(t)  = 4e^(-2t).
+
+Explanation:
+The correct answer represents a valid exponential function that satisfies both the differential equation and the initial condition.
+
+Common mistake note:
+A common mistake would be to choose option B, which represents an exponential function with a positive growth rate. However, this does not satisfy the given differential equation.
+------------------------------------------------------------------------------
+
+Problem 2 (Solve the IVP y'  - 3y  = e^t with y(0)  = 1.):
+Solve the IVP y'  - 3y  = e^t with y(0)  = 1.
+A) y(t)  =  (e^t  + 2) * e^(3t)
+B) y(t)  =  (e^t  - 2) * e^(-3t)
+C) y(t)  =  (e^t  - 1) * e^(3t)
+D) y(t)  =  (e^t  + 1) * e^(-3t)
+Correct Answer: B
+
+Solution:
+The given differential equation is also a first-order linear homogeneous equation with an inhomogeneous term. We first find the general solution to the homogeneous part, y'  - 3y  = 0, which is y_ h( t)  = Ce^(3t). Then we find a particular solution to the non-homogeneous equation using an integrating factor method or variation of parameters. The particular solution is y_p( t)  = (1/4)e^t. So the general solution is y(t)  = y_ h( t)  + y_p( t)  = Ce^(3t)  + (1/4)e^t. Using the initial condition y(0)  = 1, we find C  = (1  - 1/4)/e^(3*0)  = 3/4. The final solution is y(t)  = (3/4)e^(3t)  + (1/4)e^t  = (e^t  - 2) * e^(-3t).
+
+Explanation:
+The correct answer represents a linear combination of an exponential function that satisfies the homogeneous equation and a particular solution to the non-homogeneous equation.
+
+Common mistake note:
+A common mistake would be to choose option A, which does not satisfy the initial condition y(0)  = 1. Another possible mistake is to forget to multiply the integrating factor or the particular solution by the exponential function when combining them.
+------------------------------------------------------------------------------
+
+Problem 3 (Solve the IVP y''  + 4y'  + 5y  = 2sin(t), y(0)  = 1, y'(0)  =  -3.):
+Solve the IVP y''  + 4y'  + 5y  = 2sin(t), y(0)  = 1, y'(0)  =  -3.
+A) y(t)  = (t^2  - 2t  + 1)e^(-2t)  + sin(t)/6
+B) y(t)  = (t^2  + 2t  + 1)e^(2t)  + sin(t)/6
+C) y(t)  = (t^2  - 2t  + 1)e^(-2t)  - sin(t)/6
+D) y(t)  = (t^2  + 2t  + 1)e^(2t)  - sin(t)/6
+Correct Answer: A
+
+Solution:
+This is a second-order linear homogeneous equation with an inhomogeneous term. We first find the characteristic equation r^2  + 4r  + 5  = 0, which has complex roots -2 ± i. The homogeneous solution is y_ h( t)  = e^(-2t)(C1cos(t)  + C2sin(t)). To find a particular solution to the non-homogeneous equation, we use the method of undetermined coefficients and guess a form of y_p( t)  = At^2  + Bt  + C  + Dsin(t). Plugging this into the equation and solving for A, B, C, and D, we get y_p( t)  = (1/6)sin(t). The final solution is y(t)  = y_ h( t)  + y_p( t)  = e^(-2t)(C1cos(t)  + C2sin(t))  + (1/6)sin(t). Using the initial conditions y(0)  = 1 and y'(0)  = -3, we find C1  = 1/2 and C2  = -1/4. The final solution is y(t)  = (t^2  - 2t  + 1)e^(-2t)  + sin(t)/6.
+
+Explanation:
+The correct answer represents a linear combination of an exponential function with complex roots that satisfies the homogeneous equation and a particular solution to the non-homogeneous equation.
+
+Common mistake note:
+A common mistake would be to choose option B, which uses the wrong sign for the exponential term or forgets to include the sine term. Another possible mistake is to use incorrect coefficients when solving for A, B, C, and D in the particular solution.
+------------------------------------------------------------------------------
+
+Problem 4 (Solve the IVP y'  + 2y  = 3e^(-t), y(0)  = 2.):
+Solve the IVP y'  + 2y  = 3e^(-t), y(0)  = 2.
+A) y(t)  = (1/2)e^(-2t)  + 3te^(-t)
+B) y(t)  = (1/2)e^(2t)  - 3te^(-t)
+C) y(t)  = (1/2)e^(-2t)  + 3e^(-t)
+D) y(t)  = (1/2)e^(2t)  - 3e^(-t)
+Correct Answer: A
+
+Solution:
+This is a first-order linear non-homogeneous equation. We first find the general solution to the homogeneous part, y'  + 2y  = 0, which is y_ h( t)  = Ce^(-2t). Then we find a particular solution to the non-homogeneous equation using an integrating factor method or variation of parameters. The particular solution is y_p( t)  = -3/4e^(-t). So the general solution is y(t)  = y_ h( t)  + y_p( t)  = Ce^(-2t)  - 3/4e^(-t). Using the initial condition y(0)  = 2, we find C  = (1/2)e^(0)  = 1/2. The final solution is y(t)  = (1/2)e^(-2t)  + 3te^(-t).
+
+Explanation:
+The correct answer represents a linear combination of an exponential function that satisfies the homogeneous equation and a particular solution to the non-homogeneous equation.
+
+Common mistake note:
+A common mistake would be to choose option B, which uses the wrong sign for the exponential term or forgets to include the te^(-t) term. Another possible mistake is to use incorrect coefficients when solving for the particular solution.
+------------------------------------------------------------------------------
+
+Problem 5 (Find the solution to the IVP y'  - 3y  = t^2, y(0)  = 1.):
+Find the solution to the IVP y'  - 3y  = t^2, y(0)  = 1.
+A) y(t)  = (t^3/9)  + (t^2/6)  + 1
+B) y(t)  = (t^3/9)  - (t^2/6)  + 1
+C) y(t)  = (t^3/9)  + (t^2/6)  - 1
+D) y(t)  = (t^3/9)  - (t^2/6)  - 1
+Correct Answer: A
+
+Solution:
+This is a first-order linear non-homogeneous equation. We first find the general solution to the homogeneous part, y'  - 3y  = 0, which is y_ h( t)  = Ce^(3t). Then we find a particular solution to the non-homogeneous equation using an integrating factor method or variation of parameters. The particular solution is y_p( t)  = ∫(t^2)e^(3t)d t  = (t^3/9)e^(3t)  + C1e^(3t)  + C2. Using the initial condition y(0)  = 1, we find C1  = -1/6 and C2  = 1. The final solution is y(t)  = (t^3/9)e^(3t)  - (1/6)e^(3t)  + 1. To eliminate the exponential term, multiply both sides by e^(-3t): y(t)e^(-3t)  = t^3/9  - t^2/6  + 1e^(-3t). The final solution is y(t)  = (t^3/9)  + (t^2/6)  + 1.
+
+Explanation:
+The correct answer represents a linear combination of an exponential function that satisfies the homogeneous equation and a particular solution to the non-homogeneous equation, with the exponential term消除.
+
+Common mistake note:
+A common mistake would be to choose option B or C, which use incorrect coefficients for the t^3/9 and t^2/6 terms. Another possible mistake is to forget to multiply both sides by e^(-3t) to eliminate the exponential term.
+------------------------------------------------------------------------------
+
+Problem 6 (Solve the IVP y''  + 4y'  + 5y  = 4sin(2t), y(0)  = 1, y'(0)  = -2.):
+Solve the IVP y''  + 4y'  + 5y  = 4sin(2t), y(0)  = 1, y'(0)  = -2.
+A) y(t)  = (t^2/2  - t  + 1)e^(-2t)  + 2cos(2t)/3
+B) y(t)  = (t^2/2  + t  + 1)e^(2t)  + 2cos(2t)/3
+C) y(t)  = (t^2/2  - t  + 1)e^(-2t)  - 2cos(2t)/3
+D) y(t)  = (t^2/2  + t  + 1)e^(2t)  - 2cos(2t)/3
+Correct Answer: A
+
+Solution:
+This is a second-order linear non-homogeneous equation. We first find the characteristic equation r^2  + 4r  + 5  = 0, which has complex roots -2 ± i. The homogeneous solution is y_ h( t)  = e^(-2t)(C1cos(t)  + C2sin(t)). To find a particular solution to the non-homogeneous equation, we use the method of undetermined coefficients and guess a form of y_p( t)  = At^2  + Bt  + C  + Dcos(2t). Plugging this into the equation and solving for A, B, C, and D, we get y_p( t)  = (1/3)cos(2t). The final solution is y(t)  = y_ h( t)  + y_p( t)  = e^(-2t)(C1cos(t)  + C2sin(t))  + (1/3)cos(2t). Using the initial conditions y(0)  = 1 and y'(0)  = -2, we find C1  = 1/2 and C2  = -1/4. The final solution is y(t)  = (t^2/2  - t  + 1)e^(-2t)  + 2cos(2t)/3.
+
+Explanation:
+The correct answer represents a linear combination of an exponential function with complex roots that satisfies the homogeneous equation and a particular solution to the non-homogeneous equation.
+
+Common mistake note:
+A common mistake would be to choose option B, which uses the wrong sign for the exponential term or forgets to include the cos(2t) term. Another possible mistake is to use incorrect coefficients when solving for A, B, C, and D in the particular solution.
+------------------------------------------------------------------------------
+
+Problem 7 (Solve the IVP y'  + 3y  = 2cos(3t), y(0)  = 1.):
+Solve the IVP y'  + 3y  = 2cos(3t), y(0)  = 1.
+A) y(t)  = (2/9)sin(3t)  - (2/27)cos(3t)  + 1
+B) y(t)  = (2/9)sin(3t)  + (2/27)cos(3t)  + 1
+C) y(t)  = (2/9)sin(3t)  - (2/27)cos(3t)  - 1
+D) y(t)  = (2/9)sin(3t)  + (2/27)cos(3t)  - 1
+Correct Answer: B
+
+Solution:
+This is a first-order linear non-homogeneous equation. We first find the general solution to the homogeneous part, y'  + 3y  = 0, which is y_ h( t)  = Ce^(-3t). Then we find a particular solution to the non-homogeneous equation using an integrating factor method or variation of parameters. The particular solution is y_p( t)  = ∫(2cos(3t))e^(3t)d t  = (2/9)sin(3t)e^(3t)  + C1e^(3t)  + C2. Using the initial condition y(0)  = 1, we find C1  = -1/27 and C2  = 1. The final solution is y(t)  = (2/9)sin(3t)e^(3t)  - (1/27)e^(3t)  + 1. To eliminate the exponential term, multiply both sides by e^(-3t): y(t)e^(-3t)  = (2/9)sin(3t)  - (1/27)cos(3t)  + 1e^(-3t). The final solution is y(t)  = (2/9)sin(3t)  + (2/27)cos(3t)  + 1.
+
+Explanation:
+The correct answer represents a linear combination of an exponential function that satisfies the homogeneous equation and a particular solution to the non-homogeneous equation, with the exponential term消除.
+
+Common mistake note:
+A common mistake would be to choose option A or C, which use incorrect coefficients for the sin(3t) and cos(3t) terms. Another possible mistake is to forget to multiply both sides by e^(-3t) to eliminate the exponential term.
+------------------------------------------------------------------------------

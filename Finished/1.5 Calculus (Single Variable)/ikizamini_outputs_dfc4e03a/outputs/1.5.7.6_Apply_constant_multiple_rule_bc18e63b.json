@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.7.6",
+  "objective_text": "Apply constant multiple rule",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Simplify the expression: 4(x + 3)",
+      "choices": {
+        "A": "x + 12",
+        "B": "4x + 12",
+        "C": "16x + 3",
+        "D": "4x + 9"
+      },
+      "correct_choice": "B",
+      "solution": "To simplify the expression, we apply the constant multiple rule by multiplying the coefficient (4) with each term inside the parentheses. So, 4(x) becomes 4x and 4(3) becomes 12. The simplified expression is thus 4x + 12.",
+      "explanation": "The constant multiple rule states that when a constant multiplies an entire expression, you can multiply each term within the expression by that constant.",
+      "common_mistake_notes": "A common mistake would be to distribute the 4 only to one of the terms (e.g., 4x + 12 instead of multiplying both x and 3). This fails because it does not apply the rule consistently to all terms inside the parentheses."
+    },
+    {
+      "id": "Two",
+      "stem": "Simplify the expression: -5(2y - 7)",
+      "choices": {
+        "A": "-10y + 35",
+        "B": "-10y - 35",
+        "C": "-10y + 14",
+        "D": "10y - 35"
+      },
+      "correct_choice": "A",
+      "solution": "Applying the constant multiple rule, we multiply -5 by both terms inside the parentheses: -5(2y) becomes -10y and -5(-7) becomes 35. The simplified expression is -10y + 35.",
+      "explanation": "The constant multiple rule applies even when there's a negative sign outside the parentheses, which means you multiply both terms by the absolute value of the constant and keep track of the sign.",
+      "common_mistake_notes": "A common mistake would be to distribute the -5 incorrectly, like multiplying only one term (e.g., -10y - 35 instead of applying it to both terms). This fails because it does not apply the rule consistently."
+    },
+    {
+      "id": "Three",
+      "stem": "Simplify the expression: 2(3a^2 - a + 4)",
+      "choices": {
+        "A": "6a^2 - 2a + 8",
+        "B": "6a^2 + 2a + 8",
+        "C": "6a^2 - 2a + 12",
+        "D": "6a^2 + 2a + 12"
+      },
+      "correct_choice": "A",
+      "solution": "Applying the constant multiple rule, we multiply each term inside the parentheses by 2: 2(3a^2) becomes 6a^2, 2(-a) becomes -2a, and 2(4) becomes 8. The simplified expression is 6a^2 - 2a + 8.",
+      "explanation": "The constant multiple rule applies to all terms within the parentheses, including variables raised to powers.",
+      "common_mistake_notes": "A common mistake would be to distribute the 2 incorrectly, like forgetting to multiply one of the terms (e.g., 6a^2 - 2a + 12 instead of distributing to all terms). This fails because it does not apply the rule consistently."
+    },
+    {
+      "id": "Four",
+      "stem": "Simplify the expression: -7(4b - 3c)",
+      "choices": {
+        "A": "-28b + 21c",
+        "B": "-28b - 21c",
+        "C": "-28b + 14c",
+        "D": "28b - 21c"
+      },
+      "correct_choice": "A",
+      "solution": "Applying the constant multiple rule, we multiply -7 by both terms inside the parentheses: -7(4b) becomes -28b and -7(-3c) becomes 21c. The simplified expression is -28b + 21c.",
+      "explanation": "The negative sign outside the parentheses affects all terms within, so you multiply each term by the absolute value of the constant and keep track of the sign.",
+      "common_mistake_notes": "A common mistake would be to distribute the -7 incorrectly, like multiplying only one term (e.g., -28b - 21c instead of applying it to both terms). This fails because it does not apply the rule consistently."
+    },
+    {
+      "id": "Five",
+      "stem": "Simplify the expression: 6(5d - 2e + 3f)",
+      "choices": {
+        "A": "30d - 12e + 18f",
+        "B": "30d + 12e + 18f",
+        "C": "30d - 12e + 9f",
+        "D": "30d + 12e + 9f"
+      },
+      "correct_choice": "A",
+      "solution": "Applying the constant multiple rule, we multiply each term inside the parentheses by 6: 6(5d) becomes 30d, 6(-2e) becomes -12e, and 6(3f) becomes 18f. The simplified expression is 30d - 12e + 18f.",
+      "explanation": "The constant multiple rule applies to all terms within the parentheses, including variables with different coefficients.",
+      "common_mistake_notes": "A common mistake would be to distribute the 6 incorrectly, like forgetting to multiply one of the terms (e.g., 30d - 12e + 9f instead of distributing to all terms). This fails because it does not apply the rule consistently."
+    },
+    {
+      "id": "Six",
+      "stem": "Simplify the expression: -4(7g^3 - 5h^2)",
+      "choices": {
+        "A": "-28g^3 + 20h^2",
+        "B": "-28g^3 - 20h^2",
+        "C": "-28g^3 + 15h^2",
+        "D": "28g^3 - 20h^2"
+      },
+      "correct_choice": "A",
+      "solution": "Applying the constant multiple rule, we multiply -4 by both terms inside the parentheses: -4(7g^3) becomes -28g^3 and -4(-5h^2) becomes 20h^2. The simplified expression is -28g^3 + 20h^2.",
+      "explanation": "The constant multiple rule applies to terms with variables raised to different powers, as well as negative coefficients outside the parentheses.",
+      "common_mistake_notes": "A common mistake would be to distribute the -4 incorrectly, like multiplying only one term (e.g., -28g^3 - 20h^2 instead of applying it to both terms). This fails because it does not apply the rule consistently."
+    },
+    {
+      "id": "Seven",
+      "stem": "Simplify the expression: 9(10i - 5j + 2k)",
+      "choices": {
+        "A": "90i - 45j + 18k",
+        "B": "90i + 45j + 18k",
+        "C": "90i - 45j + 9k",
+        "D": "90i + 45j + 9k"
+      },
+      "correct_choice": "A",
+      "solution": "Applying the constant multiple rule, we multiply each term inside the parentheses by 9: 9(10i) becomes 90i, 9(-5j) becomes -45j, and 9(2k) becomes 18k. The simplified expression is 90i - 45j + 18k.",
+      "explanation": "The constant multiple rule applies to all terms within the parentheses, including when there are different coefficients for each variable.",
+      "common_mistake_notes": "A common mistake would be to distribute the 9 incorrectly, like forgetting to multiply one of the terms (e.g., 90i - 45j + 9k instead of distributing to all terms). This fails because it does not apply the rule consistently."
+    }
+  ]
+}

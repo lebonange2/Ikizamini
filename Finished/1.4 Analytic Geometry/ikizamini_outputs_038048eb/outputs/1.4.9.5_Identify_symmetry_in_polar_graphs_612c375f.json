@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.9.5",
+  "objective_text": "Identify symmetry in polar graphs",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "The polar graph of r = cos(2θ) exhibits which type of symmetry?",
+      "choices": {
+        "A": "No symmetry",
+        "B": "Reflectional symmetry about the horizontal axis",
+        "C": "Reflectional symmetry about the vertical axis",
+        "D": "Rotational symmetry of order 4"
+      },
+      "correct_choice": "C",
+      "solution": "The function r = cos(2θ) has reflectional symmetry about the vertical axis because cosine is an even function. When plotted, it appears symmetrical with respect to the line θ = π/2.",
+      "explanation": "Even functions exhibit reflectional symmetry about the y-axis in rectangular coordinates, which translates to reflectional symmetry about the vertical axis (θ-axis) in polar coordinates.",
+      "common_mistake_notes": "Students may mistakenly choose A (No symmetry), thinking that cosine's periodic nature eliminates overall symmetry. However, recognizing that even functions have reflectional symmetry is key."
+    },
+    {
+      "id": "2",
+      "stem": "The polar equation r = 3sin(θ) has what type of symmetry?",
+      "choices": {
+        "A": "Reflectional symmetry about both axes",
+        "B": "Rotational symmetry of order 3",
+        "C": "Reflectional symmetry about the horizontal axis",
+        "D": "Reflectional symmetry about the vertical axis"
+      },
+      "correct_choice": "B",
+      "solution": "The function r = 3sin(θ) has rotational symmetry of order 3 because sine is a periodic function with period 2π, and multiplying by 3 makes its graph repeat every π/3 radians.",
+      "explanation": "Rotational symmetry in polar graphs occurs when the angle between successive points on the graph is a fraction of 2π. Here, sin(θ) has period 2π; multiplying by 3 results in a period of 2π/3, indicating rotational symmetry of order 3.",
+      "common_mistake_notes": "Students might choose A (Reflectional symmetry about both axes),混淆sine的周期性与反射对称性。实际上，sine仅在直角坐标中关于原点对称，而非同时关于两轴。"
+    },
+    {
+      "id": "3",
+      "stem": "The polar equation r = 2 - 4cos(θ) exhibits which type of symmetry?",
+      "choices": {
+        "A": "Reflectional symmetry about the horizontal axis",
+        "B": "Reflectional symmetry about the vertical axis",
+        "C": "Rotational symmetry of order 2",
+        "D": "No symmetry"
+      },
+      "correct_choice": "B",
+      "solution": "The function r = 2 - 4cos(θ) has reflectional symmetry about the vertical axis because cosine is an even function and the entire equation shifts vertically. The negative sign before cos(θ) does not affect overall symmetry.",
+      "explanation": "Even functions retain their reflectional symmetry about the vertical axis when combined with linear transformations like shifting or stretching. In this case, shifting up by 2 and stretching by -4 do not change cosine's even property.",
+      "common_mistake_notes": "Students may select C (Rotational symmetry of order 2)，误以为cosine的周期性导致旋转对称。然而，是偶函数和位移的组合决定了整体对称性。"
+    },
+    {
+      "id": "4",
+      "stem": "The polar graph of r = 5sin(2θ) + 3cos(θ) exhibits which type of symmetry?",
+      "choices": {
+        "A": "Reflectional symmetry about the horizontal axis",
+        "B": "Reflectional symmetry about the vertical axis",
+        "C": "Rotational symmetry of order 4",
+        "D": "No symmetry"
+      },
+      "correct_choice": "D",
+      "solution": "The function r = 5sin(2θ) + 3cos(θ) has no symmetry because it combines sine and cosine functions with different periods, resulting in an asymmetrical graph.",
+      "explanation": "When combining trigonometric functions with distinct periods or harmonics (like sin(2θ)), the resulting graph typically lacks specific symmetries. Here, the combination of 5sin(2θ) and 3cos(θ) creates a complex shape without recognizable symmetries.",
+      "common_mistake_notes": "Students might choose B (Reflectional symmetry about the vertical axis)，仅关注其中一个函数（cosine）的反射对称性。然而，与sine和不同谐波的组合消除了整体对称性。"
+    },
+    {
+      "id": "5",
+      "stem": "The polar equation r = 2sin(θ) - cos(θ) exhibits which type of symmetry?",
+      "choices": {
+        "A": "Reflectional symmetry about both axes",
+        "B": "Rotational symmetry of order 3",
+        "C": "Reflectional symmetry about the horizontal axis",
+        "D": "Reflectional symmetry about the vertical axis"
+      },
+      "correct_choice": "A",
+      "solution": "The function r = 2sin(θ) - cos(θ) has reflectional symmetry about both axes because it combines sine and cosine functions, which individually have symmetries that combine to form symmetry about both axes.",
+      "explanation": "Sine exhibits reflectional symmetry about the origin in rectangular coordinates, as does cosine. When combined this way, the graph displays reflectional symmetry around both horizontal and vertical axes.",
+      "common_mistake_notes": "Students may select C (Reflectional symmetry about the horizontal axis) or D (Reflectional symmetry about the vertical axis)，仅关注单个函数的对称性。实际上，sine和cosine的组合在极坐标中形成关于两轴的对称性。"
+    },
+    {
+      "id": "6",
+      "stem": "The polar graph of r = 4sin(3θ) has what type of symmetry?",
+      "choices": {
+        "A": "Reflectional symmetry about the horizontal axis",
+        "B": "Rotational symmetry of order 3",
+        "C": "Reflectional symmetry about the vertical axis",
+        "D": "No symmetry"
+      },
+      "correct_choice": "B",
+      "solution": "The function r = 4sin(3θ) has rotational symmetry of order 3 because sine is a periodic function with period 2π, and multiplying by 3 creates a graph that repeats every π/3 radians.",
+      "explanation": "Rotational symmetry in polar graphs occurs when the angle between successive points on the graph equals a fraction of 2π. Here, sin(θ) has period 2π; multiplying by 3 gives a period of 2π/3, indicating rotational symmetry of order 3.",
+      "common_mistake_notes": "Students may choose A (Reflectional symmetry about the horizontal axis)，误以为sine的反射对称性延续。然而，在极坐标中，整体对称性由函数周期和谐波决定。"
+    },
+    {
+      "id": "7",
+      "stem": "The polar equation r = 2cos(θ) - 3sin(θ) exhibits which type of symmetry?",
+      "choices": {
+        "A": "Reflectional symmetry about both axes",
+        "B": "Rotational symmetry of order 4",
+        "C": "Reflectional symmetry about the horizontal axis",
+        "D": "Reflectional symmetry about the vertical axis"
+      },
+      "correct_choice": "A",
+      "solution": "The function r = 2cos(θ) - 3sin(θ) has reflectional symmetry about both axes because it combines cosine and sine functions, which individually have symmetries that combine to form symmetry about both axes.",
+      "explanation": "Cosine displays reflectional symmetry about the origin in rectangular coordinates, as does sine. When combined this way, the graph exhibits reflectional symmetry around both horizontal and vertical axes.",
+      "common_mistake_notes": "Students may select C (Reflectional symmetry about the horizontal axis) or D (Reflectional symmetry about the vertical axis)，仅关注单个函数的对称性。实际上，cosine和sine的组合在极坐标中形成关于两轴的对称性。"
+    }
+  ]
+}

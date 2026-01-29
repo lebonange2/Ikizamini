@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.2.10",
+  "objective_text": "Perform Cartesian product (A × B)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "What is the result of performing the Cartesian product between sets A = {1, 2} and B = {3, 4}? Write the pairs in the order (A element, B element).",
+      "choices": {
+        "A": "[(1, 3), (1, 4), (2, 3), (2, 4)]",
+        "B": "[(3, 1), (3, 2), (4, 1), (4, 2)]",
+        "C": "[1, 2, 3, 4]",
+        "D": "[(1, 4), (2, 3)]"
+      },
+      "correct_choice": "A",
+      "solution": "The Cartesian product creates all possible combinations of elements from both sets without regard for their original order. The correct result is [(1, 3), (1, 4), (2, 3), (2, 4)].",
+      "explanation": "Each element from set A is paired with each element from set B.",
+      "common_mistake_notes": "A common mistake is to mix up the order of the elements or not include all possible pairs."
+    },
+    {
+      "id": ":Q2",
+      "stem": "What is the result of performing the Cartesian product between sets A = {} and B = {5, 6}? Write the pairs in the order (A element, B element).",
+      "choices": {
+        "A": "[()]",
+        "B": "[(5, ), (6, )]",
+        "C": "[]",
+        "D": "[(, 5), (, 6)]"
+      },
+      "correct_choice": "C",
+      "solution": "The Cartesian product of an empty set and any other set results in an empty set because there are no elements to pair with the elements from the non-empty set. The correct result is [].",
+      "explanation": "When one of the sets involved in the Cartesian product is empty, it does not contribute any elements to the resulting pairs.",
+      "common_mistake_notes": "A common mistake is to assume that an element from the non-empty set would be paired with the empty set, but this is not the case."
+    },
+    {
+      "id": ":Q3",
+      "stem": "What is the result of performing the Cartesian product between sets A = {7} and B = {7}? Write the pairs in the order (A element, B element).",
+      "choices": {
+        "A": "[(7, 7)]",
+        "B": "[(7, 7), (7, 7)]",
+        "C": "[7, 7]",
+        "D": "[(7, ), (7, )]"
+      },
+      "correct_choice": "A",
+      "solution": "The Cartesian product of two sets with the same single element results in a set containing one pair. The correct result is [(7, 7)].",
+      "explanation": "Each element from set A is paired with each element from set B.",
+      "common_mistake_notes": "A common mistake is to think that there would be two pairs because of the repetition of the number 7, but in the Cartesian product, each element from set A is paired with each element from set B."
+    },
+    {
+      "id": ":Q4",
+      "stem": "What is the result of performing the Cartesian product between sets A = {8, 9} and B = {8, 9, 10}? Write the pairs in the order (A element, B element).",
+      "choices": {
+        "A": "[(8, 8), (8, 9), (8, 10), (9, 8), (9, 9), (9, 10)]",
+        "B": "[(8, 8), (8, 9), (9, 8), (9, 9)]",
+        "C": "[(8, 9), (9, 10)]",
+        "D": "[(8, 10), (9, 8)]"
+      },
+      "correct_choice": "A",
+      "solution": "Each element from set A is paired with each element from set B, regardless of whether the elements are repeated in either set. The correct result is [(8, 8), (8, 9), (8, 10), (9, 8), (9, 9), (9, 10)].",
+      "explanation": "Each element from set A is paired with each element from set B.",
+      "common_mistake_notes": "A common mistake is to overlook pairs where an element appears multiple times in one or both sets."
+    },
+    {
+      "id": ":Q5",
+      "stem": "What is the size (number of elements) of the Cartesian product between sets A = {1, 2, 3} and B = {4, 5, 6}? Write the pairs in the order (A element, B element).",
+      "choices": {
+        "A": "9",
+        "B": "6",
+        "C": "3",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "The size of the Cartesian product is equal to the product of the sizes of the two sets involved. In this case, |A| = 3 and |B| = 3, so |A × B| = 3 × 3 = 9.",
+      "explanation": "The number of elements in the Cartesian product is determined by multiplying the number of elements in each set together.",
+      "common_mistake_notes": "A common mistake is to confuse the size of the resulting set with the number of elements in one of the original sets."
+    },
+    {
+      "id": ":Q6",
+      "stem": "What is the result of performing the Cartesian product between sets A = {1, 2} and B = {3, 4, 5}? Write the pairs in the order (A element, B element).",
+      "choices": {
+        "A": "[(1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5)]",
+        "B": "[(3, 1), (4, 2), (5, 1), (5, 2)]",
+        "C": "[(1, 4), (2, 3)]",
+        "D": "[(1, 3), (2, 4)]"
+      },
+      "correct_choice": "A",
+      "solution": "Each element from set A is paired with each element from set B. The correct result is [(1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5)].",
+      "explanation": "Each element from set A is paired with each element from set B.",
+      "common_mistake_notes": "A common mistake is to overlook pairs where an element appears in one set but not the other."
+    },
+    {
+      "id": ":Q7",
+      "stem": "What is the result of performing the Cartesian product between sets A = {a, b} and B = {c, d, e}? Write the pairs in the order (A element, B element).",
+      "choices": {
+        "A": "[(a, c), (a, d), (a, e), (b, c), (b, d), (b, e)]",
+        "B": "[(c, a), (d, b), (e, a), (e, b)]",
+        "C": "[(a, d), (b, c)]",
+        "D": "[(a, c), (b, d)]"
+      },
+      "correct_choice": "A",
+      "solution": "Each element from set A is paired with each element from set B. The correct result is [(a, c), (a, d), (a, e), (b, c), (b, d), (b, e)].",
+      "explanation": "Each element from set A is paired with each element from set B.",
+      "common_mistake_notes": "A common mistake is to mix up the order of the elements or not include all possible pairs."
+    }
+  ]
+}

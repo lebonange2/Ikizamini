@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.7.9",
+  "objective_text": "Verify integration by differentiation",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Given the function f(x) = x^3 + 2x^2 - x + 4, verify that its derivative is correct. Which of the following is the derivative of f(x)?",
+      "choices": {
+        "A": "3x^2 + 4x - 1",
+        "B": "x^2 + 2x - 1 + 4/x",
+        "C": "6x^2 + 8x - 1",
+        "D": "x^3 + 2x^2 - x + 4"
+      },
+      "correct_choice": "A",
+      "solution": "To verify the integration by differentiation, we differentiate f(x) = x^3 + 2x^2 - x + 4. The derivative is found using the power rule: (d/dx)x^n = nx^(n-1). So, df/dx = 3x^2 + 4x - 1.",
+      "explanation": "The correct derivative is obtained by applying the power rule to each term in f(x).",
+      "common_mistake_notes": "A common mistake would be forgetting to apply the power rule to the constant term (4), which results in a wrong answer. Remember that constants differentiate to zero."
+    },
+    {
+      "id": "2",
+      "stem": "Given the function F(x) = ∫(2sin(x) + 3cos(x))dx, verify that its derivative is correct. Which of the following is the derivative of F(x)?",
+      "choices": {
+        "A": "2cos(x) - 3sin(x)",
+        "B": "2sin(x) + 3cos(x)",
+        "C": "4sin(x) + 6cos(x)",
+        "D": "x(2sin(x) + 3cos(x))"
+      },
+      "correct_choice": "A",
+      "solution": "To verify the integration by differentiation, we differentiate F(x). The derivative of an integral is the integrand itself. So, dF/dx = 2sin(x) + 3cos(x).",
+      "explanation": "The derivative of an indefinite integral is simply the function inside the integral sign.",
+      "common_mistake_notes": "A common mistake would be treating F(x) as a definite integral and applying the Fundamental Theorem of Calculus, which gives the antiderivative evaluated at limits. Here, we only need to find the integrand."
+    },
+    {
+      "id": "3",
+      "stem": "Given the function G(x) = ∫(x^2 + 1)dx from 0 to x, verify that its derivative is correct. Which of the following is the derivative of G(x)?",
+      "choices": {
+        "A": "x^2 + 1",
+        "B": "2x + 1",
+        "C": "x^3/3 + x",
+        "D": "x^3/3 + 1"
+      },
+      "correct_choice": "C",
+      "solution": "To verify the integration by differentiation, we differentiate G(x) = ∫(x^2 + 1)dx from 0 to x. The derivative of a definite integral is the integrand evaluated at the variable limit: dG/dx = (x^2 + 1).",
+      "explanation": "The Fundamental Theorem of Calculus part 1 states that the derivative of a definite integral with respect to its upper limit gives the integrand evaluated at that limit.",
+      "common_mistake_notes": "A common mistake would be differentiating the limits, which is not correct for a definite integral. Here, we only need to evaluate the integrand at x."
+    },
+    {
+      "id": "4",
+      "stem": "Given the function H(x) = ∫(e^x)dx from 1 to x, verify that its derivative is correct. Which of the following is the derivative of H(x)?",
+      "choices": {
+        "A": "e^x - e",
+        "B": "xe^x - e",
+        "C": "e^(x-1)",
+        "D": "e^(x+1)"
+      },
+      "correct_choice": "A",
+      "solution": "To verify the integration by differentiation, we differentiate H(x) = ∫(e^x)dx from 1 to x. The derivative of a definite integral with respect to its upper limit gives the integrand evaluated at that limit: dH/dx = e^x - e^1.",
+      "explanation": "The Fundamental Theorem of Calculus part 1 states that the derivative of a definite integral with respect to its upper limit gives the integrand evaluated at that limit, minus the same evaluation at the lower limit.",
+      "common_mistake_notes": "A common mistake would be forgetting to subtract the value of the integrand at the lower limit (e^1)."
+    },
+    {
+      "id": "5",
+      "stem": "Given the function I(x) = ∫(sin(x))dx from π/2 to x, verify that its derivative is correct. Which of the following is the derivative of I(x)?",
+      "choices": {
+        "A": "cos(x) - 1",
+        "B": "cos(x)",
+        "C": "sin(x) - cos(π/2)",
+        "D": "x*sin(x)"
+      },
+      "correct_choice": "A",
+      "solution": "To verify the integration by differentiation, we differentiate I(x) = ∫(sin(x))dx from π/2 to x. The derivative of a definite integral with respect to its upper limit gives the integrand evaluated at that limit: dI/dx = cos(x) - cos(π/2).",
+      "explanation": "The Fundamental Theorem of Calculus part 1 states that the derivative of a definite integral with respect to its upper limit gives the integrand evaluated at that limit, minus the same evaluation at the lower limit.",
+      "common_mistake_notes": "A common mistake would be treating cos(π/2) as zero, which is correct but not necessary for this problem. The correct answer should include cos(π/2) in the expression."
+    },
+    {
+      "id": "6",
+      "stem": "Given the function J(x) = ∫(x^3 - 2x + 1)dx from 0 to x, verify that its derivative is correct. Which of the following is the derivative of J(x)?",
+      "choices": {
+        "A": "x^4/4 - x^2 + x",
+        "B": "x^3 - 2x + 1",
+        "C": "x^4 - 2x^2 + x",
+        "D": "x^4/4 - 2x^2 + x"
+      },
+      "correct_choice": "A",
+      "solution": "To verify the integration by differentiation, we differentiate J(x) = ∫(x^3 - 2x + 1)dx from 0 to x. The derivative of a definite integral with respect to its upper limit gives the integrand evaluated at that limit: dJ/dx = x^4/4 - x^2 + x.",
+      "explanation": "The Fundamental Theorem of Calculus part 1 states that the derivative of a definite integral with respect to its upper limit gives the integrand evaluated at that limit, minus the same evaluation at the lower limit. Apply power rule for each term in the integrand.",
+      "common_mistake_notes": "A common mistake would be forgetting to apply the power rule to each term or applying it incorrectly."
+    },
+    {
+      "id": "7",
+      "stem": "Given the function K(x) = ∫(2x^3 + 5x^2 - 3x + 1)dx from 0 to x, verify that its derivative is correct. Which of the following is the derivative of K(x)?",
+      "choices": {
+        "A": "x^4/2 + 5x^3/3 - 3x^2/2 + x",
+        "B": "2x^3 + 5x^2 - 3x + 1",
+        "C": "2x^4 + 10x^3 - 9x^2 + 4x",
+        "D": "x^4 + 5x^3 - 3x^2 + x"
+      },
+      "correct_choice": "A",
+      "solution": "To verify the integration by differentiation, we differentiate K(x) = ∫(2x^3 + 5x^2 - 3x + 1)dx from 0 to x. The derivative of a definite integral with respect to its upper limit gives the integrand evaluated at that limit: dK/dx = x^4/2 + 5x^3/3 - 3x^2/2 + x.",
+      "explanation": "The Fundamental Theorem of Calculus part 1 states that the derivative of a definite integral with respect to its upper limit gives the integrand evaluated at that limit, minus the same evaluation at the lower limit. Apply power rule for each term in the integrand.",
+      "common_mistake_notes": "A common mistake would be forgetting to apply the power rule to each term or applying it incorrectly."
+    }
+  ]
+}

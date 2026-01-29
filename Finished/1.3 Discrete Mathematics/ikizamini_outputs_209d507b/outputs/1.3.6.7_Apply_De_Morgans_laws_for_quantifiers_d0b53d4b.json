@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.6.7",
+  "objective_text": "Apply De Morgan's laws for quantifiers",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Given the statement: ∀x( P(x) → Q(x)), which of the following is equivalent using De Morgan's law?",
+      "choices": {
+        "A": "∃x( ¬P(x) ∧ ¬Q(x))",
+        "B": "∀x( ¬P(x) ∨ ¬Q(x))",
+        "C": "∃x( P(x) ∧ Q(x))",
+        "D": "∀x( P(x) ∨ Q(x))"
+      },
+      "correct_choice": "B",
+      "solution": "De Morgan's law for quantifiers states that ¬∀x(P(x)) is equivalent to ∃x(¬P(x)), and ¬∃x(P(x)) is equivalent to ∀x(¬P(x)). Applying this to the given statement, we get: ¬∀x( P(x) → Q(x)) = ¬∀x( ¬P(x) ∨ Q(x)) = ∃x( ¬(¬P(x) ∨ Q(x))) = ∃x( P(x) ∧ ¬Q(x)). So, the correct equivalent statement is B.",
+      "explanation": "De Morgan's law is used to negate quantified statements. In this case, we negate the implication P(x) → Q(x) by negating both P(x) and Q(x), then applying the law for universal quantifier.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply De Morgan's law on the implications themselves instead of negating the entire statement. Choice A applies the law directly to P(x) and Q(x), which is incorrect."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Given the statement: ∃x( P(x) ∧ Q(x)), which of the following is equivalent using De Morgan's law?",
+      "choices": {
+        "A": "∀x( ¬P(x) → ¬Q(x))",
+        "B": "∃x( ¬P(x) ∨ ¬Q(x))",
+        "C": "∀x( ¬P(x) ∧ ¬Q(x))",
+        "D": "∃x( P(x) ∨ Q(x))"
+      },
+      "correct_choice": "A",
+      "solution": "De Morgan's law for quantifiers states that ¬∀x(P(x)) is equivalent to ∃x(¬P(x)), and ¬∃x(P(x)) is equivalent to ∀x(¬P(x)). Applying this to the given statement, we get: ¬∃x( P(x) ∧ Q(x)) = ¬∃x( ¬(P(x) ∧ Q(x))) = ∀x( ¬P(x) ∨ ¬Q(x)). So, the correct equivalent statement is A.",
+      "explanation": "De Morgan's law is used to negate quantified statements. In this case, we negate the conjunction P(x) ∧ Q(x) by negating both P(x) and Q(x), then applying the law for existential quantifier.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply De Morgan's law on the conjuncts themselves instead of negating the entire statement. Choice B applies the law directly to P(x) and Q(x), which is incorrect."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Given the statement: ∀x( ¬P(x)), which of the following is equivalent using De Morgan's law?",
+      "choices": {
+        "A": "∃x( P(x))",
+        "B": "∀x( Q(x) → P(x))",
+        "C": "∃x( ¬Q(x) ∧ ¬P(x))",
+        "D": "∀x( ¬Q(x) ∨ P(x))"
+      },
+      "correct_choice": "A",
+      "solution": "De Morgan's law for quantifiers states that ¬∀x(P(x)) is equivalent to ∃x(¬P(x)). So, the correct equivalent statement is A.",
+      "explanation": "In this case, we simply apply De Morgan's law directly to the universal quantifier and negate P(x). There is no need to consider Q(x) as it is not present in the original statement.",
+      "common_mistake_notes": "A common mistake would be to introduce a new variable or connective (like Q(x) or implication) that was not present in the original statement. Choice B adds an unrelated variable and connective, which is incorrect."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Given the statement: ∃x( ¬Q(x)), which of the following is equivalent using De Morgan's law?",
+      "choices": {
+        "A": "∀x( Q(x))",
+        "B": "∃x( P(x) → Q(x))",
+        "C": "∀x( ¬P(x) ∧ ¬Q(x))",
+        "D": "∃x( ¬P(x) ∨ Q(x))"
+      },
+      "correct_choice": "A",
+      "solution": "De Morgan's law for quantifiers states that ¬∃x(P(x)) is equivalent to ∀x(¬P(x)). So, the correct equivalent statement is A.",
+      "explanation": "In this case, we simply apply De Morgan's law directly to the existential quantifier and negate Q(x). There is no need to consider P(x) as it is not present in the original statement.",
+      "common_mistake_notes": "A common mistake would be to introduce a new variable or connective (like P(x) or implication) that was not present in the original statement. Choice B adds an unrelated variable and connective, which is incorrect."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Given the statement: ∀x( P(x)), which of the following is equivalent using De Morgan's law?",
+      "choices": {
+        "A": "∃x( ¬P(x))",
+        "B": "∀x( Q(x) → P(x))",
+        "C": "∃x( ¬Q(x) ∧ ¬P(x))",
+        "D": "∀x( ¬Q(x) ∨ P(x))"
+      },
+      "correct_choice": "A",
+      "solution": "De Morgan's law for quantifiers states that ¬∀x(P(x)) is equivalent to ∃x(¬P(x)). So, the correct equivalent statement is A.",
+      "explanation": "In this case, we simply apply De Morgan's law directly to the universal quantifier and negate P(x). There is no need to consider Q(x) as it is not present in the original statement.",
+      "common_mistake_notes": "A common mistake would be to introduce a new variable or connective (like Q(x) or implication) that was not present in the original statement. Choice B adds an unrelated variable and connective, which is incorrect."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Given the statement: ∃x( Q(x)), which of the following is equivalent using De Morgan's law?",
+      "choices": {
+        "A": "∀x( ¬Q(x))",
+        "B": "∃x( P(x) → Q(x))",
+        "C": "∀x( ¬P(x) ∧ ¬Q(x))",
+        "D": "∃x( ¬P(x) ∨ Q(x))"
+      },
+      "correct_choice": "A",
+      "solution": "De Morgan's law for quantifiers states that ¬∃x(P(x)) is equivalent to ∀x(¬P(x)). So, the correct equivalent statement is A.",
+      "explanation": "In this case, we simply apply De Morgan's law directly to the existential quantifier and negate Q(x). There is no need to consider P(x) as it is not present in the original statement.",
+      "common_mistake_notes": "A common mistake would be to introduce a new variable or connective (like P(x) or implication) that was not present in the original statement. Choice B adds an unrelated variable and connective, which is incorrect."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Given the statement: ∀x( P(x) ∨ Q(x)), which of the following is equivalent using De Morgan's law?",
+      "choices": {
+        "A": "∃x( ¬P(x) ∧ ¬Q(x))",
+        "B": "∀x( ¬P(x) ∨ ¬Q(x))",
+        "C": "∃x( P(x) ∧ Q(x))",
+        "D": "∀x( ¬P(x) ∧ Q(x))"
+      },
+      "correct_choice": "A",
+      "solution": "De Morgan's law for quantifiers states that ¬∀x(P(x)) is equivalent to ∃x(¬P(x)), and ¬∀x(Q(x)) is equivalent to ∃x(¬Q(x)). Applying this to the given statement, we get: ¬∀x( P(x) ∨ Q(x)) = ¬∀x( ¬(P(x) ∨ Q(x))) = ∃x( ¬P(x) ∧ ¬Q(x)). So, the correct equivalent statement is A.",
+      "explanation": "De Morgan's law is used to negate quantified statements. In this case, we negate the disjunction P(x) ∨ Q(x) by negating both P(x) and Q(x), then applying the law for universal quantifier.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply De Morgan's law on the disjuncts themselves instead of negating the entire statement. Choice B applies the law directly to P(x) and Q(x), which is incorrect."
+    }
+  ]
+}

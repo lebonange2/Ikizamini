@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.4.14 Apply to control systems
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.4 Powers and Roots of Complex Numbers
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A control system is designed to maintain a constant temperature in a room. Which of the following actions would be taken by the control system when the room temperature rises above the setpoint?
+A) Increase the heating output.
+B) Decrease the cooling output.
+C) Maintain the current heating and cooling levels.
+D) Both A and B.
+Correct Answer: B
+
+Solution:
+The control system's goal is to maintain a constant temperature. When the room temperature rises above the setpoint, it should decrease the cooling output to bring the temperature back down.
+
+Explanation:
+A control system in a heating/cooling application would typically respond by reducing the cooling when the temperature is too high and increasing the heating when it's too low.
+
+Common mistake note:
+Common mistake: Choosing A, which would increase heat and further raise the room temperature. The correct action is to decrease cooling to balance the system.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+A cruise control system in a car maintains a constant speed by adjusting the engine's throttle. When encountering an uphill slope, what should the control system do?
+A) Decrease the throttle input.
+B) Maintain the current throttle input.
+C) Increase the throttle input.
+D) Both A and C.
+Correct Answer: C
+
+Solution:
+The cruise control system must increase the throttle input to provide more power for climbing an uphill slope, thereby maintaining a constant speed.
+
+Explanation:
+When facing an incline, the car requires more power to maintain its desired speed. The cruise control system adjusts the throttle accordingly to compensate for the increased resistance.
+
+Common mistake note:
+Common mistake: Choosing A, which would decrease speed on an uphill; this is incorrect as the system aims to maintain a constant speed.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+A PID (Proportional-Integral-Derivative) controller is used in a process control application. Which of the following actions does the derivative term primarily affect?
+A) Steady-state error.
+B) Rise time.
+C) Settling time.
+D) Peak overshoot.
+Correct Answer: D
+
+Solution:
+The derivative term in a PID controller helps to reduce peak overshoot by anticipating future changes in the controlled process variable.
+
+Explanation:
+The derivative term reacts to the rate of change, helping the system respond more quickly to disturbances and minimize overshoot. It does not directly affect steady-state error, rise time, or settling time.
+
+Common mistake note:
+Common mistake: Choosing A, which is primarily influenced by the proportional term; the derivative term's main role is not in reducing steady-state error.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+A control system for a robot arm uses feedback to maintain accurate positioning. Which of the following sensors would be most useful for providing this feedback?
+A) Accelerometer.
+B) Gyroscope.
+C) Force sensor.
+D) Encoder.
+Correct Answer: D
+
+Solution:
+An encoder provides precise position data, making it the best choice for a control system that requires accurate positioning feedback in a robot arm application.
+
+Explanation:
+Encoders measure angular or linear displacement and are commonly used in closed-loop control systems to monitor and adjust position continuously. Accelerometers and gyros measure acceleration and rotation, respectively, while force sensors measure applied forces.
+
+Common mistake note:
+Common mistake: Choosing C, which measures force but not position; an encoder is needed for accurate feedback on the robot arm's position.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+In a control system with a PI (Proportional-Integral) controller, what effect does increasing the integral gain have?
+A) Reducing steady-state error.
+B) Increasing rise time.
+C) Decreasing overshoot.
+D) Increasing settling time.
+Correct Answer: A
+
+Solution:
+Increasing the integral gain in a PI controller reduces steady-state error by integrating the error over time and adding it to the control output.
+
+Explanation:
+The integral term helps to eliminate steady-state error by accumulating the cumulative effect of past errors. It does not directly affect rise time, overshoot, or settling time.
+
+Common mistake note:
+Common mistake: Choosing B, which is influenced by other controller parameters; increasing integral gain does not inherently increase rise time.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+A control system for a water tank uses a float valve to maintain a constant water level. When the water level drops, what action should the float valve take?
+A) Close the valve completely.
+B) Open the valve partially.
+C) Keep the valve fully open.
+D) Both B and C.
+Correct Answer: B
+
+Solution:
+The float valve should open partially to allow water flow back into the tank, raising the water level until it reaches the desired setpoint.
+
+Explanation:
+A float valve works based on the position of a float attached to a valve mechanism. When the water level drops, the float moves down, opening the valve to let more water in. It should not be fully closed or fully open for stable control.
+
+Common mistake note:
+Common mistake: Choosing A, which would stop water flow completely; choosing C, which would result in overfilling the tank. The correct action is to partially open the valve.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+A PID controller is used to regulate temperature in a chemical reactor. Which of the following actions should the controller take when the temperature falls below the setpoint?
+A) Decrease the heating output.
+B) Increase the cooling output.
+C) Do nothing, as the system will eventually self-correct.
+D) Both A and B.
+Correct Answer: A
+
+Solution:
+The PID controller should increase the heating output when the temperature falls below the setpoint to bring it back up to the desired level.
+
+Explanation:
+In a temperature control application, a PID controller would respond by increasing heat input when the temperature is too low and decreasing it when it's too high. It does not wait for self-correction; instead, it actively regulates the process.
+
+Common mistake note:
+Common mistake: Choosing B, which would further cool the reactor; choosing C, which ignores the controller's role in actively regulating the temperature.
+------------------------------------------------------------------------------

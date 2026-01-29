@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.3.5 Differentiate inverse trig functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.3 Derivatives - Advanced Rules
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Inverse_Trig_Diff_1):
+Find the derivative of y = arctan(x):
+A) 1 / (x^2 + 1)
+B) -1 / (x^2 + 1)
+C) 1 / x
+D) -1 / x
+Correct Answer: A
+
+Solution:
+The derivative of arctan(x) is dy/dx = 1 / (x^2 + 1). This comes from the differentiation rule for inverse trigonometric functions.
+
+Explanation:
+The derivative of arctan(x) can be found using the chain rule and the fact that the derivative of tan^(-1)(u) with respect to u is 1/(u^2 + 1). In this case, u = x.
+
+Common mistake note:
+A common mistake would be to choose B, which is the derivative of arctan(x) if it were -x instead of x. Remember that the denominator should always be (x^2 + 1) for arctan(x).
+------------------------------------------------------------------------------
+
+Problem 2 (Inverse_Trig_Diff_2):
+Find the derivative of y = arccos(3x):
+A) -3 / √(1 - 9x^2)
+B) 3 / √(1 - 9x^2)
+C) -3 / (1 - 9x^2)
+D) 3 / (1 - 9x^2)
+Correct Answer: A
+
+Solution:
+The derivative of arccos(3x) is dy/dx = -3 / √(1 - 9x^2). This comes from the chain rule and the fact that the derivative of cos^(-1)(u) with respect to u is -1 / √(1 - u^2). In this case, u = 3x.
+
+Explanation:
+The derivative of arccos(3x) can be found using the chain rule and the fact that the derivative of cos^(-1)(u) with respect to u is -1 / √(1 - u^2). In this case, u = 3x.
+
+Common mistake note:
+A common mistake would be to choose C or D, which are incorrect because they don't account for the negative sign in the derivative of arccosine. Remember that the denominator should always have a square root and the coefficient outside should match the derivative of the inside function.
+------------------------------------------------------------------------------
+
+Problem 3 (Inverse_Trig_Diff_3):
+Find the derivative of y = arcsin(x^2):
+A) 2x / √(1 - x^4)
+B) -2x / √(1 - x^4)
+C) 2 / √(1 - x^2)
+D) -2 / √(1 - x^2)
+Correct Answer: A
+
+Solution:
+The derivative of arcsin(x^2) is dy/dx = 2x / √(1 - x^4). This comes from the chain rule and the fact that the derivative of sin^(-1)(u) with respect to u is 1 / √(1 - u^2). In this case, u = x^2.
+
+Explanation:
+The derivative of arcsin(x^2) can be found using the chain rule and the fact that the derivative of sin^(-1)(u) with respect to u is 1 / √(1 - u^2). In this case, u = x^2.
+
+Common mistake note:
+A common mistake would be to choose B, which is incorrect because it has a negative sign when the inside function is squared. Remember that the derivative of arcsin(x) does not have a negative sign unless there's an outside factor causing it (like -x).
+------------------------------------------------------------------------------
+
+Problem 4 (Inverse_Trig_Diff_4):
+Find the derivative of y = arccot(2x):
+A) -2 / (1 + 4x^2)
+B) 2 / (1 + 4x^2)
+C) -2 / √(1 - 4x^2)
+D) 2 / √(1 - 4x^2)
+Correct Answer: A
+
+Solution:
+The derivative of arccot(2x) is dy/dx = -2 / (1 + 4x^2). This comes from the chain rule and the fact that the derivative of cot^(-1)(u) with respect to u is -1 / (u^2 + 1). In this case, u = 2x.
+
+Explanation:
+The derivative of arccot(2x) can be found using the chain rule and the fact that the derivative of cot^(-1)(u) with respect to u is -1 / (u^2 + 1). In this case, u = 2x.
+
+Common mistake note:
+A common mistake would be to choose B, which is the derivative of arccot(x) if it were +x instead of 2x. Remember that the denominator should always be (1 + u^2) for arccot(u).
+------------------------------------------------------------------------------
+
+Problem 5 (Inverse_Trig_Diff_5):
+Find the derivative of y = arcsec(5x):
+A) 5 / |x|√(25x^2 - 1)
+B) -5 / |x|√(25x^2 - 1)
+C) 5 / √(25x^2 - 1)
+D) -5 / √(25x^2 - 1)
+Correct Answer: B
+
+Solution:
+The derivative of arcsec(5x) is dy/dx = -5 / |x|√(25x^2 - 1). This comes from the chain rule and the fact that the derivative of sec^(-1)(u) with respect to u is -1 / |u|√(u^2 - 1). In this case, u = 5x.
+
+Explanation:
+The derivative of arcsec(5x) can be found using the chain rule and the fact that the derivative of sec^(-1)(u) with respect to u is -1 / |u|√(u^2 - 1). In this case, u = 5x.
+
+Common mistake note:
+A common mistake would be to choose C or D, which are incorrect because they don't account for the negative sign and absolute value in the derivative of arcsecant. Remember that the denominator should have a square root and an absolute value with the coefficient outside matching the derivative of the inside function.
+------------------------------------------------------------------------------
+
+Problem 6 (Inverse_Trig_Diff_6):
+Find the derivative of y = arccsc(4x):
+A) -4 / |x|√(16x^2 - 1)
+B) 4 / |x|√(16x^2 - 1)
+C) -4 / √(16x^2 - 1)
+D) 4 / √(16x^2 - 1)
+Correct Answer: A
+
+Solution:
+The derivative of arccsc(4x) is dy/dx = -4 / |x|√(16x^2 - 1). This comes from the chain rule and the fact that the derivative of csc^(-1)(u) with respect to u is -1 / |u|√(u^2 - 1). In this case, u = 4x.
+
+Explanation:
+The derivative of arccsc(4x) can be found using the chain rule and the fact that the derivative of csc^(-1)(u) with respect to u is -1 / |u|√(u^2 - 1). In this case, u = 4x.
+
+Common mistake note:
+A common mistake would be to choose B or D, which are incorrect because they don't account for the negative sign and absolute value in the derivative of arccosecant. Remember that the denominator should have a square root and an absolute value with the coefficient outside matching the derivative of the inside function.
+------------------------------------------------------------------------------
+
+Problem 7 (Inverse_Trig_Diff_7):
+Find the derivative of y = arctanh(2x):
+A) 3x^2 / (1 - x^6)
+B) -3x^2 / (1 - x^6)
+C) 3x^2 / (1 + x^6)
+D) -3x^2 / (1 + x^6)
+Correct Answer: A
+
+Solution:
+The derivative of arctanh(2x) is dy/dx = 3x^2 / (1 - x^6). This comes from the chain rule and the fact that the derivative of tanh^(-1)(u) with respect to u is 1 / (1 - u^2). In this case, u = 2x.
+
+Explanation:
+The derivative of arctanh(2x) can be found using the chain rule and the fact that the derivative of tanh^(-1)(u) with respect to u is 1 / (1 - u^2). In this case, u = 2x.
+
+Common mistake note:
+A common mistake would be to choose B or D, which are incorrect because they have a negative sign when the inside function is cubed. Remember that the derivative of arctanh(2x) does not have a negative sign unless there's an outside factor causing it (like -x).
+------------------------------------------------------------------------------

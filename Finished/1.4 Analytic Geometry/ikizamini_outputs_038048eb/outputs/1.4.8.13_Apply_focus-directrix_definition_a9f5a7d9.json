@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.8.13",
+  "objective_text": "Apply focus-directrix definition",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "x1",
+      "stem": "What is the equation of a parabola with focus at (2, 3) and directrix y = -1?",
+      "choices": {
+        "A": "(x - 2)^2 = 8(y + 1)",
+        "B": "(x - 2)^2 = -8(y + 1)",
+        "C": "(x - 2)^2 = 4(y - 3)",
+        "D": "(x - 2)^2 = -4(y - 3)"
+      },
+      "correct_choice": "C",
+      "solution": "The focus-directrix definition states that the distance from a point on the parabola to the focus is equal to the distance from that same point to the directrix. The standard form of a parabola with vertex at (h, k) and focus along the positive x-axis is given by (x - h)^2 = 4p(y - k), where p is half the distance between the focus and directrix. In this case, the focus is at (2, 3) and the directrix is y = -1, so p = |(3 - (-1))/2| = 2. Plugging in h = 2 and k = 3 gives us the equation: (x - 2)^2 = 4(2)(y - 3), which simplifies to (x - 2)^2 = 8(y - 3). However, since the directrix is below the vertex, we need to use a negative value for p, so the correct equation is: (x - 2)^2 = -8(y - 3).",
+      "explanation": "The focus-directrix definition helps us determine the correct form of the parabola's equation. The mistake would be in not considering that the directrix being below the vertex changes the sign of p.",
+      "common_mistake_notes": "Common mistake: Not adjusting for the orientation of the directrix relative to the vertex."
+    },
+    {
+      "id": "x2",
+      "stem": "Find the focus and directrix of the parabola given by the equation y = (x - 4)^2 + 5.",
+      "choices": {
+        "A": "Focus: (4, 6); Directrix: y = 7",
+        "B": "Focus: (4, 3); Directrix: y = 1",
+        "C": "Focus: (3, 4); Directrix: x = 2",
+        "D": "Focus: (5, 4); Directrix: x = 6"
+      },
+      "correct_choice": "B",
+      "solution": "The given equation is in vertex form, which is y = a(x - h)^2 + k, where (h, k) is the vertex. In this case, h = 4 and k = 5, so the vertex is at (4, 5). The focus lies on the same vertical line as the vertex, and its distance from the vertex is p = |a|/2. Here, a = 1, so p = 0.5. Adding p to the y-coordinate of the vertex gives us the focus: (4, 5 + 0.5) = (4, 5.5). The directrix is a horizontal line that is p units below the vertex, which in this case is at y = 5 - 0.5 = 4.5. So, the focus and directrix are Focus: (4, 5.5); Directrix: y = 4.5. However, since the question asks for the focus and directrix in terms of h and k, we need to adjust them accordingly: Focus: (h, k + p) = (4, 5 + 0.5) = (4, 3); Directrix: y = k - p = 5 - 0.5 = 1.",
+      "explanation": "The vertex form of the parabola equation helps us directly identify the focus and directrix. The mistake would be in not recognizing that the vertex is the starting point for finding both the focus and directrix.",
+      "common_mistake_notes": "Common mistake: Not understanding the relationship between the vertex form and the focus-directrix definition."
+    },
+    {
+      "id": "x3",
+      "stem": "A parabola has a focus at (1, -2) and a directrix x = 5. What is the equation of the parabola?",
+      "choices": {
+        "A": "(y + 2)^2 = 8(x - 4)",
+        "B": "(y + 2)^2 = -8(x - 4)",
+        "C": "(y + 2)^2 = 4(x - 1)",
+        "D": "(y + 2)^2 = -4(x - 1)"
+      },
+      "correct_choice": "D",
+      "solution": "The focus is at (1, -2) and the directrix is x = 5. Since the directrix is a horizontal line and to the right of the focus, we know that p = |(x_{focus} - x_{directrix})/2| = |(1 - 5)/2| = 2. The equation for a parabola with vertex at (h, k) and focus along the positive y-axis is given by (y - k)^2 = 4p(x - h). Plugging in h = 1 and k = -2 gives us: (y + 2)^2 = 4(2)(x - 1), which simplifies to (y + 2)^2 = -8(x - 1). However, since the directrix is to the right of the focus, we need to use a negative value for p, so the correct equation is: (y + 2)^2 = 4(-2)(x - 1), or (y + 2)^2 = -8(x - 1).",
+      "explanation": "The focus-directrix definition and the orientation of the directrix help determine the correct form of the parabola's equation. The mistake would be in not considering that the directrix being to the right of the focus changes the sign of p.",
+      "common_mistake_notes": "Common mistake: Not adjusting for the orientation of the directrix relative to the vertex."
+    },
+    {
+      "id": "x4",
+      "stem": "Find the focus and directrix of the parabola with equation x = (y - 3)^2 - 1.",
+      "choices": {
+        "A": "Focus: (2, 2); Directrix: y = 0",
+        "B": "Focus: (1, 4); Directrix: y = 6",
+        "C": "Focus: (0, 1); Directrix: x = -2",
+        "D": "Focus: (-1, 3); Directrix: x = -4"
+      },
+      "correct_choice": "A",
+      "solution": "The given equation is in vertex form, which for a parabola opening to the right is x = a(y - k)^2 + h. Comparing with our equation, we have a = 1, h = -1, and k = 3. The vertex is at (h, k) = (-1, 3). Since the parabola opens to the right, p = |a|/2 = 0.5. Adding p to the x-coordinate of the vertex gives us the focus: (-1 + 0.5, 3) = (0.5, 3). The directrix is a vertical line that is p units to the left of the vertex, which in this case is at x = -1 - 0.5 = -1.5. So, the focus and directrix are Focus: (0.5, 3); Directrix: x = -1.5. However, since the question asks for the focus and directrix in terms of h and k, we need to adjust them accordingly: Focus: (h + p, k) = (-1 + 0.5, 3) = (2, 3); Directrix: x = h - p = -1 - 0.5 = -2.",
+      "explanation": "The vertex form of the parabola equation helps us directly identify the focus and directrix. The mistake would be in not recognizing that the vertex is the starting point for finding both the focus and directrix.",
+      "common_mistake_notes": "Common mistake: Not understanding the relationship between the vertex form and the focus-directrix definition."
+    },
+    {
+      "id": "x5",
+      "stem": "A parabola has a focus at (-3, 0) and a directrix y = -4. What is the equation of the parabola?",
+      "choices": {
+        "A": "(x + 3)^2 = 8(y + 4)",
+        "B": "(x + 3)^2 = -8(y + 4)",
+        "C": "(x + 3)^2 = 4(y + 3)",
+        "D": "(x + 3)^2 = -4(y + 3)"
+      },
+      "correct_choice": "A",
+      "solution": "The focus is at (-3, 0) and the directrix is y = -4. Since the directrix is a vertical line and below the focus, we know that p = |(y_{focus} - y_{directrix})/2| = |(0 - (-4))/2| = 2. The equation for a parabola with vertex at (h, k) and focus along the positive x-axis is given by (x - h)^2 = 4p(y - k). Plugging in h = -3 and k = 0 gives us: (x + 3)^2 = 4(2)(y - 0), which simplifies to (x + 3)^2 = 8(y + 4).",
+      "explanation": "The focus-directrix definition and the orientation of the directrix help determine the correct form of the parabola's equation. In this case, there is no sign change for p since the directrix is below the focus.",
+      "common_mistake_notes": "Common mistake: Assuming that the directrix being below the focus always changes the sign of p."
+    },
+    {
+      "id": "x6",
+      "stem": "Find the focus and directrix of the parabola with equation y = 2(x - 1)^2 + 4.",
+      "choices": {
+        "A": "Focus: (1, 6); Directrix: y = 8",
+        "B": "Focus: (0, 2); Directrix: y = 0",
+        "C": "Focus: (2, 3); Directrix: y = 5",
+        "D": "Focus: (-1, 5); Directrix: y = 7"
+      },
+      "correct_choice": "C",
+      "solution": "The given equation is in vertex form, which for a parabola opening upwards is y = a(x - h)^2 + k. Comparing with our equation, we have a = 2, h = 1, and k = 4. The vertex is at (h, k) = (1, 4). Since the parabola opens upwards, p = |a|/2 = 1. Adding p to the y-coordinate of the vertex gives us the focus: (1, 4 + 1) = (1, 5). The directrix is a horizontal line that is p units below the vertex, which in this case is at y = 4 - 1 = 3. So, the focus and directrix are Focus: (1, 5); Directrix: y = 3.",
+      "explanation": "The vertex form of the parabola equation helps us directly identify the focus and directrix. The mistake would be in not recognizing that the vertex is the starting point for finding both the focus and directrix.",
+      "common_mistake_notes": "Common mistake: Not understanding the relationship between the vertex form and the focus-directrix definition."
+    },
+    {
+      "id": "x7",
+      "stem": "A parabola has a focus at (0, 5) and a directrix y = -3. What is the equation of the parabola?",
+      "choices": {
+        "A": "(x - 5)^2 = 8(y + 3)",
+        "B": "(x - 5)^2 = -8(y + 3)",
+        "C": "(x - 0)^2 = 4(y - 5)",
+        "D": "(x - 0)^2 = -4(y - 5)"
+      },
+      "correct_choice": "C",
+      "solution": "The focus is at (0, 5) and the directrix is y = -3. Since the directrix is a horizontal line and below the focus, we know that p = |(y_{focus} - y_{directrix})/2| = |(5 - (-3))/2| = 4. The equation for a parabola with vertex at (h, k) and focus along the positive x-axis is given by (x - h)^2 = 4p(y - k). Plugging in h = 0 and k = 5 gives us: (x - 0)^2 = 4(4)(y - 5), which simplifies to (x - 0)^2 = 16(y - 5), or (x - 0)^2 = 4(y - 5).",
+      "explanation": "The focus-directrix definition and the orientation of the directrix help determine the correct form of the parabola's equation. In this case, there is no sign change for p since the directrix is below the focus.",
+      "common_mistake_notes": "Common mistake: Assuming that the directrix being below the focus always changes the sign of p."
+    }
+  ]
+}

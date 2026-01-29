@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.15.1",
+  "objective_text": "Apply to motion problems (position, velocity, acceleration)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "InstantaneousSpeed",
+      "stem": "A car travels at a constant speed of 60 miles per hour. What is its instantaneous speed at t = 2 hours?",
+      "choices": {
+        "A": "120 mph",
+        "B": "60 mph",
+        "C": "30 mph",
+        "D": "0 mph"
+      },
+      "correct_choice": "B",
+      "solution": "The car's speed is constant, so the instantaneous speed at any time is the same as its average speed. Therefore, the instantaneous speed at t = 2 hours is 60 mph.",
+      "explanation": "This question tests understanding of instantaneous speed in a context of constant velocity.",
+      "common_mistake_notes": "A common mistake would be to multiply the speed by the time (120 mph), assuming that speed is proportional to time. However, since the car's speed is constant, it does not change with time."
+    },
+    {
+      "id": "AverageAcceleration",
+      "stem": "An object starts from rest and accelerates at a rate of 5 m/s^2 for 3 seconds. What is its average acceleration over the entire duration?",
+      "choices": {
+        "A": "10 m/ s^2",
+        "B": "7.5 m/ s^2",
+        "C": "5 m/ s^2",
+        "D": "0 m/ s^2"
+      },
+      "correct_choice": "C",
+      "solution": "Average acceleration is defined as the change in velocity divided by the time interval. Since the object starts from rest, its initial velocity (v_0) is 0 and final velocity (v_f) after 3 seconds can be calculated using v_f = a*t where a = 5 m/ s^2 and t = 3 s. Thus, v_f = 15 m/ s. The average acceleration is then (v_f - v_0) / t = 15 m/ s / 3 s = 5 m/ s^2.",
+      "explanation": "This question assesses understanding of average acceleration and its calculation using the final velocity and time.",
+      "common_mistake_notes": "A common mistake would be to assume that the acceleration remains constant throughout the entire motion, leading to an incorrect answer of 10 m/ s^2. However, since the problem asks for average acceleration over the entire duration, it's important to use the initial and final velocities."
+    },
+    {
+      "id": "PositionFromVelocity",
+      "stem": "A particle has a velocity function v(t) = 3t^2 - 4t + 5 m/ s. What is its position at t = 2 seconds if it starts from rest?",
+      "choices": {
+        "A": "10 m",
+        "B": "16 m",
+        "C": "20 m",
+        "D": "24 m"
+      },
+      "correct_choice": "B",
+      "solution": "To find the position, we integrate the velocity function with respect to time. The integral of v(t) = 3t^2 - 4t + 5 is s(t) = t^3 - 2t^2 + 5t + C, where C is the constant of integration. Since the particle starts from rest, its initial position (s(0)) is 0, which allows us to find C: 0 = 0 - 0 + 0 + C, so C = 0. The position at t = 2 seconds is s(2) = 2^3 - 2^2 + 5*2 = 8 - 4 + 10 = 14 m.",
+      "explanation": "This question tests the ability to find position from a given velocity function by integration.",
+      "common_mistake_notes": "A common mistake would be to forget to integrate the velocity function, leading to an incorrect answer based on the velocity at t = 2 seconds. However, integrating the velocity gives the position."
+    },
+    {
+      "id": "ConstantVelocity",
+      "stem": "An object moves with a constant velocity of -4 m/ s for 5 seconds. What is its displacement?",
+      "choices": {
+        "A": "10 m",
+        "B": "20 m",
+        "C": "25 m",
+        "D": "30 m"
+      },
+      "correct_choice": "B",
+      "solution": "Displacement is the change in position, which can be calculated by multiplying velocity by time. Since the object has a constant velocity of -4 m/ s (negative sign indicates it's moving in the opposite direction), its displacement after 5 seconds is s = v*t = (-4 m/ s) * 5 s = -20 m. The magnitude of the displacement is 20 m.",
+      "explanation": "This question assesses understanding of displacement with constant velocity, including negative velocities indicating motion in the opposite direction.",
+      "common_mistake_notes": "A common mistake would be to forget that the velocity is negative and calculate the absolute value, leading to an incorrect answer of 20 m. However, it's important to consider the sign of the velocity when calculating displacement."
+    },
+    {
+      "id": "UniformlyAcceleratedMotion",
+      "stem": "An object starts from rest and accelerates uniformly at a rate of 3 m/ s^2 for 4 seconds. What is its final velocity?",
+      "choices": {
+        "A": "10 m/ s",
+        "B": "12 m/ s",
+        "C": "15 m/ s",
+        "D": "18 m/ s"
+      },
+      "correct_choice": "C",
+      "solution": "The final velocity of an object undergoing uniform acceleration can be calculated using the formula v_f = v_i + a*t, where v_i is the initial velocity (0 for this problem), a is the acceleration (3 m/ s^2), and t is the time (4 s). Thus, v_f = 0 + 3 m/ s^2 * 4 s = 12 m/ s.",
+      "explanation": "This question tests understanding of uniformly accelerated motion and how to find final velocity using the given acceleration and time.",
+      "common_mistake_notes": "A common mistake would be to forget that the object starts from rest, leading to an incorrect answer based on a non-zero initial velocity. However, in this case, the object begins at rest."
+    },
+    {
+      "id": "AverageSpeed",
+      "stem": "A person walks 2 km north, then turns around and walks 3 km south, all at a constant speed of 5 km/ h. What is their average speed?",
+      "choices": {
+        "A": "4 km/ h",
+        "B": "5 km/ h",
+        "C": "6 km/ h",
+        "D": "10 km/ h"
+      },
+      "correct_choice": "A",
+      "solution": "Average speed is the total distance traveled divided by the total time taken. The person walks a total distance of 2 km + 3 km = 5 km, and since they walk at a constant speed of 5 km/ h, the total time taken is 5 km / 5 km/ h = 1 hour. Therefore, their average speed is 5 km / 1 h = 5 km/ h.",
+      "explanation": "This question assesses understanding of average speed in a scenario involving multiple directions and distances.",
+      "common_mistake_notes": "A common mistake would be to assume that the average speed is simply the given constant speed (5 km/ h), without considering the total distance traveled. However, the correct answer takes into account both the distance and time."
+    },
+    {
+      "id": "InstantaneousAcceleration",
+      "stem": "An object's acceleration function is a(t) = 2t m/ s^2. What is its instantaneous acceleration at t = 1 second?",
+      "choices": {
+        "A": "0 m/ s^2",
+        "B": "1 m/ s^2",
+        "C": "2 m/ s^2",
+        "D": "4 m/ s^2"
+      },
+      "correct_choice": "C",
+      "solution": "Instantaneous acceleration is the derivative of velocity with respect to time. Given a(t) = 2t, we can find v( t) by integrating: v( t) = ∫a( t) dt = ∫2t dt = t^2 + C. Since the problem doesn't provide information about the initial velocity, we can assume that it starts from rest (v(0) = 0), which implies C = 0. The derivative of v( t) with respect to time gives us instantaneous acceleration: a( t) = dv/dt = 2t. At t = 1 second, a(1) = 2 * 1 = 2 m/ s^2.",
+      "explanation": "This question tests the ability to find instantaneous acceleration from an acceleration function by differentiation.",
+      "common_mistake_notes": "A common mistake would be to forget to differentiate the velocity function to find instantaneous acceleration. However, differentiating v( t) with respect to time gives the instantaneous acceleration."
+    }
+  ]
+}

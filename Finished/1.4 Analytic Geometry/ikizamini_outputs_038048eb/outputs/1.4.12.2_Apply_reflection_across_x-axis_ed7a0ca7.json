@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.12.2",
+  "objective_text": "Apply reflection across x-axis",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf1",
+      "stem": "Reflect the point (3, 4) across the x-axis. What are the coordinates of the reflected point?",
+      "choices": {
+        "A": "(3, -4)",
+        "B": "(4, 3)",
+        "C": "(-3, 4)",
+        "D": "(-3, -4)"
+      },
+      "correct_choice": "A",
+      "solution": "When reflecting a point across the x-axis, only the y-coordinate changes its sign. So, the reflected coordinates are (3, -4).",
+      "explanation": "Reflecting across the x-axis means keeping the x-coordinate unchanged and changing the sign of the y-coordinate.",
+      "common_mistake_notes": "A common mistake is to forget to change the sign of the y-coordinate."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Reflect the line segment connecting points (1, 2) and (5, 6) across the x-axis. What are the coordinates of the endpoints of the reflected line segment?",
+      "choices": {
+        "A": "(1, -2), (5, -6)",
+        "B": "(-1, 2), (-5, 6)",
+        "C": "(1, 2), (5, 6)",
+        "D": "(-1, -2), (-5, -6)"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting a line segment across the x-axis means reflecting each point on the segment. The endpoints become (1, -2) and (5, -6).",
+      "explanation": "Each point on the original line segment is reflected by changing only the sign of the y-coordinate.",
+      "common_mistake_notes": "A common mistake is to forget that both endpoints must be reflected."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Reflect the triangle with vertices (2, 1), (4, 3), and (6, 5) across the x-axis. What are the coordinates of the reflected vertex (6, 5)?",
+      "choices": {
+        "A": "(6, -5)",
+        "B": "(-6, 5)",
+        "C": "(-6, -5)",
+        "D": "(2, 1)"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting a vertex across the x-axis means changing only the sign of its y-coordinate. The reflected point is (6, -5).",
+      "explanation": "The x-coordinate remains unchanged while the y-coordinate changes sign.",
+      "common_mistake_notes": "A common mistake is to mix up the x- and y-coordinates."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Reflect the parabola defined by the equation y = x^2 across the x-axis. What is the equation of the reflected parabola?",
+      "choices": {
+        "A": "y = -x^2",
+        "B": "y = x^2",
+        "C": "y = -(x + 1)^2",
+        "D": "y = (x - 1)^2"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting a parabola across the x-axis changes the sign of the y-value. The new equation is y = -x^2.",
+      "explanation": "The reflection affects only the function part of the equation, not the independent variable x.",
+      "common_mistake_notes": "A common mistake is to forget that the entire function changes sign."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Reflect the circle with center (3, 4) and radius 2 across the x-axis. What are the coordinates of the center of the reflected circle?",
+      "choices": {
+        "A": "(3, -4)",
+        "B": "(4, 3)",
+        "C": "(-3, 4)",
+        "D": "(-3, -4)"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting a circle across the x-axis changes only the sign of its y-coordinate. The center becomes (3, -4).",
+      "explanation": "The reflection affects only the center coordinates, not the radius.",
+      "common_mistake_notes": "A common mistake is to forget that only the center's y-coordinate changes."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Reflect the rectangle with vertices (1, 2), (3, 2), (3, 4), and (1, 4) across the x-axis. Which of the following best describes the relationship between the original and reflected rectangles?",
+      "choices": {
+        "A": "They are congruent.",
+        "B": "They are similar but not congruent.",
+        "C": "They are identical.",
+        "D": "They are neither similar nor congruent."
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting a rectangle across the x-axis produces a new rectangle that is congruent to the original one, as it maintains the same shape and size with flipped orientation.",
+      "explanation": "Reflection preserves shape and size but may change orientation.",
+      "common_mistake_notes": "A common mistake is to think that reflection changes the size or shape of the figure."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Reflect the function f(x) = 2x + 3 across the x-axis. What is the equation of the reflected function?",
+      "choices": {
+        "A": "f(x) = -2x - 3",
+        "B": "f(x) = 2x + 3",
+        "C": "f(x) = -(2x + 1)",
+        "D": "f(x) = (2x - 1)"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting a linear function across the x-axis changes the sign of the coefficient and constant term. The new equation is f(x) = -2x - 3.",
+      "explanation": "Reflection affects both the slope and the y-intercept of the line.",
+      "common_mistake_notes": "A common mistake is to forget that both the slope and the y-intercept change sign."
+    }
+  ]
+}

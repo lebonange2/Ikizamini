@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.3.11",
+  "objective_text": "Evaluate truth of compound statements",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "InequalityAndConjunction",
+      "stem": "If x < 5 and x > -2, what is the range of possible values for x?",
+      "choices": {
+        "A": "-5 ≤ x ≤ 2",
+        "B": "-2 < x < 5",
+        "C": "-∞ < x < ∞",
+        "D": "No solution"
+      },
+      "correct_choice": "B",
+      "solution": "The compound statement 'x < 5 and x > -2' means that x must be both less than 5 and greater than -2. The range of possible values for x is therefore between -2 and 5, exclusive (since it's not equal to either). So the correct answer is B.",
+      "explanation": "The compound statement involves conjunction (and), which requires both conditions to be true simultaneously. Choice A is incorrect because it includes the endpoints -5 and 2, which are not in the range. Choice C is wrong because it allows for all real numbers, including those outside the given range. Choice D is incorrect because there are values that satisfy both inequalities.",
+      "common_mistake_notes": "Common mistake: Choosing A due to confusion with inclusive inequality symbols (≤ and ≥). Remember, 'and' requires both conditions to be true."
+    },
+    {
+      "id": "ConjunctionAndDisjunction",
+      "stem": "If p is a prime number and q is an even number, which of the following statements must be true?",
+      "choices": {
+        "A": "p * q is odd",
+        "B": "p + q is odd",
+        "C": "p * q is even",
+        "D": "p + q is even"
+      },
+      "correct_choice": "C",
+      "solution": "The compound statement 'p is a prime number and q is an even number' means that p must be prime (and thus odd) and q must be even. When an odd number is multiplied by an even number, the result is always even. Therefore, p * q must be even.",
+      "explanation": "Choice A is incorrect because multiplication of an odd number (prime) with an even number results in an even product. Choice B is wrong because adding an odd prime and an even number can result in either an odd or even sum, depending on the specific numbers. Choice D is incorrect because it's not a must that the sum of a prime and an even number will be even.",
+      "common_mistake_notes": "Common mistake: Choosing A due to assuming that multiplying two 'odd' numbers always results in an odd product. However, one of the factors here (q) is even."
+    },
+    {
+      "id": "NegationOfImplication",
+      "stem": "If it is not raining and the grass is wet, which of the following must be true?",
+      "choices": {
+        "A": "The sprinkler was on.",
+        "B": "It rained earlier.",
+        "C": "The grass was watered by someone.",
+        "D": "None of the above."
+      },
+      "correct_choice": "D",
+      "solution": "The negation of an implication (if-then) statement does not imply anything about the antecedent or consequent. In this case, 'it is not raining and the grass is wet' does not necessarily mean that any specific action caused the grass to be wet; it could have been due to other reasons like dew.",
+      "explanation": "Choice A assumes that only a sprinkler can make the grass wet when it's not raining, which may not be true. Choice B assumes that rain must have occurred before, but that is also not necessarily true. Choice C is similar to A and makes an assumption about who watered the grass.",
+      "common_mistake_notes": "Common mistake: Assuming that negating an implication automatically means one of the choices must be true. In fact, it only means the original implication does not hold."
+    },
+    {
+      "id": "DeMorgan'sLaw",
+      "stem": "If it is not the case that both p and q are true, which of the following is equivalent?",
+      "choices": {
+        "A": "p is false and q is false.",
+        "B": "p is true or q is true.",
+        "C": "p is false or q is false.",
+        "D": "p is true and q is false."
+      },
+      "correct_choice": "C",
+      "solution": "De Morgan's law states that the negation of a conjunction (and) is equivalent to the disjunction (or) of the negations. So, 'not (p and q)' is equivalent to '(not p) or (not q).'",
+      "explanation": "Choice A is incorrect because it assumes both p and q must be false simultaneously. Choice B is wrong because it implies that at least one of them must be true, which is not necessarily the case. Choice D is incorrect because it only considers one possible scenario where p is true and q is false.",
+      "common_mistake_notes": "Common mistake: Applying De Morgan's law incorrectly or forgetting to negate both parts of the conjunction when negating the entire statement."
+    },
+    {
+      "id": "ConditionalAndBiconditional",
+      "stem": "If a number is divisible by 3 and it is also divisible by 2, which of the following statements must be true?",
+      "choices": {
+        "A": "The number is even.",
+        "B": "The number is odd.",
+        "C": "The number is prime.",
+        "D": "The number is not prime."
+      },
+      "correct_choice": "A",
+      "solution": "If a number is divisible by both 3 and 2, it must be divisible by the least common multiple of 2 and 3, which is 6. Since 6 is an even number, any number divisible by 6 is also even.",
+      "explanation": "Choice B is incorrect because all numbers divisible by 2 are even, so if a number is divisible by both 2 and 3, it must be even. Choice C is wrong because the number could be 6, which is not prime. Choice D is incorrect because there may be prime numbers that are divisible by both 3 and 2 (e.g., 3 and 2 themselves).",
+      "common_mistake_notes": "Common mistake: Assuming that a number being divisible by 3 and 2 means it's only divisible by those two numbers. Remember, divisibility by multiple numbers can lead to different properties."
+    },
+    {
+      "id": "ExclusiveOr",
+      "stem": "In a group of friends, either Alice or Bob (but not both) will bring snacks for the picnic. If Alice brings snacks, which of the following must be true?",
+      "choices": {
+        "A": "Bob brought snacks.",
+        "B": "Bob did not bring snacks.",
+        "C": "Alice and Bob brought snacks together.",
+        "D": "No one brought snacks."
+      },
+      "correct_choice": "B",
+      "solution": "If 'either Alice or Bob (but not both)' will bring snacks, then if Alice brings snacks, Bob must not have brought them. This is an example of exclusive disjunction (XOR), where exactly one of the conditions can be true.",
+      "explanation": "Choice A is incorrect because it contradicts the given condition that only one person brings snacks. Choice C is wrong because it assumes both brought snacks, which is against the given rule. Choice D is incorrect because Alice is stated to bring snacks.",
+      "common_mistake_notes": "Common mistake: Assuming that if Alice brings snacks, Bob must also bring them due to a lack of understanding of exclusive disjunction."
+    },
+    {
+      "id": "QuantifiersAndNegation",
+      "stem": "For all integers x and y, if x is not greater than y, then which of the following must be true?",
+      "choices": {
+        "A": "x < y.",
+        "B": "x ≤ y.",
+        "C": "x > y.",
+        "D": "x ≥ y."
+      },
+      "correct_choice": "B",
+      "solution": "The statement 'for all integers x and y, if x is not greater than y' can be rephrased as 'for all integers x and y, x ≤ y.' This means that x must be less than or equal to y.",
+      "explanation": "Choice A is incorrect because it only considers the case where x is strictly less than y. Choice C is wrong because it contradicts the given condition. Choice D is incorrect because it includes the possibility of equality, which is already covered by 'x ≤ y.'",
+      "common_mistake_notes": "Common mistake: Misinterpreting 'not greater than' as 'less than,' neglecting to include the equal case."
+    }
+  ]
+}

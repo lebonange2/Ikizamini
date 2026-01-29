@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.9.13 Apply to definite integrals
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.9 Integration Techniques - By Parts
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the area under the curve of f(x) = x^2 from x=0 to x=2.
+A) 4/3
+B) 8/3
+C) 16/3
+D) 32/3
+Correct Answer: B
+
+Solution:
+To find the area under the curve, integrate f(x) = x^2 from 0 to 2 and apply the Fundamental Theorem of Calculus: ∫(x^2)dx from 0 to 2 = [(2^3)/3] - [(0^3)/3] = (8/3).
+
+Explanation:
+The area under a curve is given by the definite integral of the function. Integrate and evaluate at the limits.
+
+Common mistake note:
+A common mistake would be to forget to apply the Fundamental Theorem of Calculus.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Evaluate ∫[1, 3] (x + 1) dx.
+A) 9
+B) 12
+C) 15
+D) 18
+Correct Answer: A
+
+Solution:
+Integrate the function x + 1: ∫(x + 1)dx = (x^2)/2 + x. Apply the Fundamental Theorem of Calculus: [(3^2)/2 + 3] - [(1^2)/2 + 1] = [9/2 + 3 - 1/2 - 1] = 4. Multiply by the constant term: 4.
+
+Explanation:
+To evaluate a definite integral, integrate the function and apply the limits of integration.
+
+Common mistake note:
+A common mistake would be to forget to multiply the result by the constant term (in this case, 1).
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Find the definite integral of f(x) = 2x - 3 from x=1 to x=4.
+A) -8
+B) 0
+C) 8
+D) 16
+Correct Answer: C
+
+Solution:
+Integrate the function: ∫(2x - 3)dx = x^2 - 3x. Apply the Fundamental Theorem of Calculus: [4^2 - 3 	imes 4] - [1^2 - 3 	imes 1] = 8.
+
+Explanation:
+To find a definite integral, integrate the function and evaluate at the limits.
+
+Common mistake note:
+A common mistake would be to forget to subtract the antiderivative evaluated at the lower limit from the value evaluated at the upper limit.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Calculate ∫[0, π/2] sin(x) dx.
+A) -1
+B) 0
+C) 1
+D) π/2
+Correct Answer: C
+
+Solution:
+The integral of sine is negative cosine: ∫sin(x)dx = -cos(x). Apply the Fundamental Theorem of Calculus: [-cos(π/2) + cos(0)] = [0 + 1] = 1.
+
+Explanation:
+Integrate the function and evaluate at the limits using the antiderivative of sine.
+
+Common mistake note:
+A common mistake would be to forget that the sine function is negative on the interval [π/2, π], which would lead to an incorrect evaluation.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Find the definite integral of f(x) = e^x from x=1 to x=3.
+A) e - 1
+B) e^2 - 1
+C) e^3 - e
+D) e^4 - e^2
+Correct Answer: C
+
+Solution:
+The integral of e^x is simply e^x: ∫e^xdx = e^x. Apply the Fundamental Theorem of Calculus: [e^3 - e^1] = [e^3 - e].
+
+Explanation:
+Integrate the function and evaluate at the limits using the antiderivative of e^x.
+
+Common mistake note:
+A common mistake would be to forget to evaluate the antiderivative at both limits, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Evaluate ∫[2, 5] (3x + 4) dx.
+A) 105
+B) 91
+C) 77
+D) 63
+Correct Answer: B
+
+Solution:
+Integrate the function: ∫(3x + 4)dx = (3/2)x^2 + 4x. Apply the Fundamental Theorem of Calculus: [(5^2)/2 + 4 	imes 5] - [(2^2)/2 + 4 	imes 2] = [21/2]. Multiply by the constant term: 21/2.
+
+Explanation:
+To evaluate a definite integral, integrate the function and apply the limits of integration.
+
+Common mistake note:
+A common mistake would be to forget to multiply the result by the constant term (in this case, 1).
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Find the area under the curve of f(x) = x^3 from x=-1 to x=1.
+A) 0
+B) 2/5
+C) 4/5
+D) 6/5
+Correct Answer: A
+
+Solution:
+Integrate f(x) = x^3 from -1 to 1 and apply the Fundamental Theorem of Calculus: ∫(x^3)dx from -1 to 1 = [(1^4)/4] - [(-1)^4]/4 = (1/4) - (1/4) = 0. The area under an odd function over a symmetric interval is zero due to symmetry.
+
+Explanation:
+The area under an odd function over a symmetric interval is zero due to symmetry.
+
+Common mistake note:
+A common mistake would be to forget that the function is odd and thus the definite integral over a symmetric interval will be zero.
+------------------------------------------------------------------------------

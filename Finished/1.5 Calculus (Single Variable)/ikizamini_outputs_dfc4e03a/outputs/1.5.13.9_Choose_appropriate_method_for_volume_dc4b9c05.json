@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.13.9",
+  "objective_text": "Choose appropriate method for volume",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Incremental Scaling",
+      "stem": "Find the volume of a cylinder with radius 4 cm and height 6 cm.",
+      "choices": {
+        "A": "V = π(2)^2 \times 6",
+        "B": "V = π(4)^2 \times 6",
+        "C": "V = π(8)^2 \times 6",
+        "D": "V = π(16)^2 \times 6"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the volume of a cylinder is V = πr^2h. Given radius r = 4 cm and height h = 6 cm, we substitute these values into the formula: V = π(4)^2 \times 6.",
+      "explanation": "This question tests the ability to choose the correct method (cylinder volume formula) and apply it correctly with given dimensions.",
+      "common_mistake_notes": "A common mistake would be using the wrong radius (e.g., A uses r = 2 instead of r = 4)."
+    },
+    {
+      "id": "Rectangular Prism",
+      "stem": "Find the volume of a rectangular prism with length 8 cm, width 5 cm, and height 3 cm.",
+      "choices": {
+        "A": "V = π(8 \times 5) \times 3",
+        "B": "V = (8 \times 5) \times 3",
+        "C": "V = π(8)^2 \times 3",
+        "D": "V = π(5)^2 \times 3"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the volume of a rectangular prism is V = lwh. Given length l = 8 cm, width w = 5 cm, and height h = 3 cm, we substitute these values into the formula: V = (8 \times 5) \times 3.",
+      "explanation": "This question tests the ability to choose the correct method (rectangular prism volume formula) and apply it correctly with given dimensions.",
+      "common_mistake_notes": "A common mistake would be using the wrong formula (e.g., A uses the cylinder formula instead of the rectangular prism formula)."
+    },
+    {
+      "id": "Pyramid",
+      "stem": "Find the volume of a pyramid with base area 20 cm² and height 7 cm.",
+      "choices": {
+        "A": "V = \frac{1}{3} \times 20 \times 7",
+        "B": "V = \frac{1}{2} \times 20 \times 7",
+        "C": "V = 20 \times 7",
+        "D": "V = \frac{1}{4} \times 20 \times 7"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for the volume of a pyramid is V = \frac{1}{3}Bh, where B is the base area and h is the height. Given base area B = 20 cm² and height h = 7 cm, we substitute these values into the formula: V = \frac{1}{3} \times 20 \times 7.",
+      "explanation": "This question tests the ability to choose the correct method (pyramid volume formula) and apply it correctly with given dimensions.",
+      "common_mistake_notes": "A common mistake would be using the wrong fraction or multiplying instead of dividing by 3 (e.g., B uses \frac{1}{2} instead of \frac{1}{3})."
+    },
+    {
+      "id": "Cone",
+      "stem": "Find the volume of a cone with radius 6 cm and height 9 cm.",
+      "choices": {
+        "A": "V = π(6)^2 \times 9",
+        "B": "V = \frac{1}{3}π(6)^2 \times 9",
+        "C": "V = π(3)^2 \times 9",
+        "D": "V = \frac{1}{3}π(3)^2 \times 9"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the volume of a cone is V = \frac{1}{3}πr^2h. Given radius r = 6 cm and height h = 9 cm, we substitute these values into the formula: V = \frac{1}{3}π(6)^2 \times 9.",
+      "explanation": "This question tests the ability to choose the correct method (cone volume formula) and apply it correctly with given dimensions.",
+      "common_mistake_notes": "A common mistake would be not dividing by 3 or using the wrong radius (e.g., A uses π(6)^2 \times 9 instead of \frac{1}{3}π(6)^2 \times 9)."
+    },
+    {
+      "id": "Sphere",
+      "stem": "Find the volume of a sphere with radius 5 cm.",
+      "choices": {
+        "A": "V = \frac{4}{3}π(5)^2",
+        "B": "V = \frac{4}{3}π(5)^3",
+        "C": "V = \frac{1}{3}π(5)^3",
+        "D": "V = 4π(5)^3"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the volume of a sphere is V = \frac{4}{3}πr^3. Given radius r = 5 cm, we substitute this value into the formula: V = \frac{4}{3}π(5)^3.",
+      "explanation": "This question tests the ability to choose the correct method (sphere volume formula) and apply it correctly with given dimensions.",
+      "common_mistake_notes": "A common mistake would be using the wrong power or multiplying instead of dividing by 3 (e.g., A uses \frac{4}{3}π(5)^2 instead of \frac{4}{3}π(5)^3)."
+    },
+    {
+      "id": "Prism with Irregular Base",
+      "stem": "Find the volume of a prism with an irregular base that has an area of 18 cm² and height 7 cm.",
+      "choices": {
+        "A": "V = π \times 18 \times 7",
+        "B": "V = 18 \times 7",
+        "C": "V = \frac{1}{3} \times 18 \times 7",
+        "D": "V = \frac{4}{3} \times 18 \times 7"
+      },
+      "correct_choice": "B",
+      "solution": "The formula for the volume of a prism with an irregular base is V = Bh, where B is the base area and h is the height. Given base area B = 18 cm² and height h = 7 cm, we substitute these values into the formula: V = 18 \times 7.",
+      "explanation": "This question tests the ability to choose the correct method (irregular prism volume formula) and apply it correctly with given dimensions.",
+      "common_mistake_notes": "A common mistake would be using the wrong formula or multiplying by π (e.g., A uses π \times 18 \times 7 instead of 18 \times 7)."
+    },
+    {
+      "id": "Cylinder with Different Units",
+      "stem": "Find the volume of a cylinder with radius 3 inches and height 5 inches.",
+      "choices": {
+        "A": "V = π(3)^2 \times 5",
+        "B": "V = π(3)^2 \times 5 \times 2.54^3",
+        "C": "V = π(3)^2 \times 5 \times 10^3",
+        "D": "V = π(3)^2 \times 5 \times 28.317"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for the volume of a cylinder is V = πr^2h. Given radius r = 3 inches and height h = 5 inches, we substitute these values into the formula: V = π(3)^2 \times 5.",
+      "explanation": "This question tests the ability to choose the correct method (cylinder volume formula) and apply it correctly with given dimensions without converting units.",
+      "common_mistake_notes": "A common mistake would be trying to convert inches to centimeters or another unit before calculating the volume."
+    }
+  ]
+}

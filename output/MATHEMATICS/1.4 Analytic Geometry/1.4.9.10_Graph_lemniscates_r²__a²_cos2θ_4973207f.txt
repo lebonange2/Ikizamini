@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.9.10 Graph lemniscates: r² = a² cos(2θ)
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.9 Polar Coordinate Geometry
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One):
+Which equation represents a lemniscate centered at the origin?
+A) r^2 = 4sin(θ)
+B) r = 3cos(2θ)
+C) r^2 = 9sin(4θ)
+D) r^2 = 2cos(θ)
+Correct Answer: B
+
+Solution:
+The equation for a lemniscate centered at the origin is given by r² = a² cos(2θ). In this case, a = 3. Therefore, the correct equation is B: r = 3cos(2θ).
+
+Explanation:
+A lemniscate has a characteristic shape resembling a sideways figure eight and its equation involves cosine of twice the angle θ.
+
+Common mistake note:
+Common mistake is to choose an equation with sine instead of cosine, or with only one power of r.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Given the lemniscate equation r² = a² cos(2θ), if its major radius is 5 units, what is the value of 'a'?
+A) 10
+B) 5
+C) sqrt(5)
+D) 2.5
+Correct Answer: B
+
+Solution:
+The major radius of the lemniscate is half the distance between the two loops, which is equal to 'a'. Given that the major radius is 5 units, a = 5.
+
+Explanation:
+The parameter 'a' in the equation represents the scaling factor for the cosine function and determines the size of the lemniscate.
+
+Common mistake note:
+Common mistake is to confuse the major radius with the total diameter or to misunderstand that 'a' relates to half the distance between loops.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Sketching a lemniscate, which interval for θ shows only one loop of the curve?
+A) [0, π/2]
+B) [-π/4, π/4]
+C) [-π/2, π/2]
+D) [-π, π]
+Correct Answer: B
+
+Solution:
+The interval [-π/4, π/4] covers half a period of the cosine function in the equation r² = a² cos(2θ). This results in one complete loop of the lemniscate.
+
+Explanation:
+Sketching a lemniscate involves understanding how the angle θ affects the shape. One full loop corresponds to half a period of the cosine function.
+
+Common mistake note:
+Common mistake is to choose an interval that spans more than one loop, like [0, π] or [-π/2, 3π/2], which would show two loops.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+What is the vertical symmetry axis of a lemniscate described by the equation r² = 4cos(2θ)?
+A) y-axis
+B) x-axis
+C) line y=x
+D) line y=-x
+Correct Answer: A
+
+Solution:
+The vertical symmetry axis of a lemniscate is the y-axis because the equation r² = 4cos(2θ) does not involve 'y' directly, only through 'θ'. The cosine function is symmetric about the origin, which implies that the curve will be symmetric along the vertical line passing through the origin.
+
+Explanation:
+The symmetry of a lemniscate can be deduced from its equation and the properties of the cosine function.
+
+Common mistake note:
+Common mistake is to choose an axis that would result in horizontal symmetry, like x-axis or line y=xy=x.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+The area enclosed by a lemniscate with equation r² = 9cos(2θ) can be calculated using the integral ∫[a,b] (1/2)(r)^2 dθ. What is the correct interval [a, b] for this integration?
+A) [-π/4, π/4]
+B) [0, π/2]
+C) [-π/2, π/2]
+D) [-π, π]
+Correct Answer: A
+
+Solution:
+The interval [-π/4, π/4] covers one loop of the lemniscate, which is necessary to calculate the area enclosed by the curve. The integral must be taken over a full period of the cosine function.
+
+Explanation:
+Calculating the area of a lemniscate involves integrating the square of the radius 'r' with respect to θ over an appropriate interval that encompasses one loop.
+
+Common mistake note:
+Common mistake is to choose an interval that covers more than one loop, like [0, π] or [-π/2, 3π/2], which would result in twice the actual area.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+The equation r = 2cos(θ) represents a shape similar to a lemniscate. How can this curve be transformed into a true lemniscate with equation r² = a² cos(2θ)?
+A) Multiply both sides by 'r'
+B) Divide both sides by 'r'
+C) Square both sides
+D) Take the square root of both sides
+Correct Answer: C
+
+Solution:
+To transform the equation r = 2cos(θ) into a lemniscate form, we need to square both sides: (r)^2 = (2cos(θ))^2. This simplifies to r² = 4cos^2(θ), which is equivalent to r² = 4cos(2θ) after applying the identity cos^2(θ) = (1 + cos(2θ))/2.
+
+Explanation:
+Transforming an equation into a lemniscate form involves manipulating the terms to match the standard form.
+
+Common mistake note:
+Common mistake is to multiply both sides by 'r', which would result in r^3 = 2rcos(θ), not a lemniscate form.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+The equation r² = 5sin(4θ) represents a polar curve. Is it a lemniscate?
+A) Yes
+B) No
+C) Cannot be determined without additional information
+D) Depends on the value of 'a'
+Correct Answer: B
+
+Solution:
+The given equation does not match the standard form for a lemniscate, which is r² = a² cos(2θ). The presence of sine and 4θ instead of 2θ indicates that it's not a lemniscate.
+
+Explanation:
+To be a lemniscate, an equation must follow the specific form involving cosine of twice the angle θ.
+
+Common mistake note:
+Common mistake is to assume that any polar curve with a trigonometric function is a lemniscate.
+------------------------------------------------------------------------------

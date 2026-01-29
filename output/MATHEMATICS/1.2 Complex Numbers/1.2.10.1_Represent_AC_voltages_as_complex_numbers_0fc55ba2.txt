@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.10.1 Represent AC voltages as complex numbers
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.10 Applications to AC Circuits
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+An AC voltage with a peak value of 12 V and a frequency of 60 Hz is given by the equation: v(t) = 12 sin(2πft). Represent this voltage as a complex number.
+A) 12e^{j2πft}
+B) 12e^{-j2πft}
+C) 6e^{jπft}
+D) 6e^{-jπft}
+Correct Answer: A
+
+Solution:
+The complex representation of an AC voltage is given by V = Vm e^{j(ωt + φ)}, where Vm is the peak voltage, ω = 2πf is the angular frequency, and t is time. In this case, Vm = 12 V and f = 60 Hz. The equation provided in the stem can be converted to complex form by multiplying by e^{jωt}. So, V = 12e^{j2πft}.
+
+Explanation:
+The correct representation includes the peak voltage (12 V), the angular frequency (2πf), and the imaginary unit (j). The phase angle is not given, so it's assumed to be zero.
+
+Common mistake note:
+A common mistake would be to use θ instead of 2πf, which would result in an incorrect frequency representation.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+An AC voltage with a peak-peak value of 16 V and a phase angle of π/4 radians is given by the equation: v(t) = 8e^{j(ωt + π/4)}. Represent this voltage as a phasor diagram.
+A) A phasor with a magnitude of 8 and an angle of π/2
+B) A phasor with a magnitude of 16 and an angle of π/4
+C) A phasor with a magnitude of 8 and an angle of π/4
+D) A phasor with a magnitude of 16 and an angle of π/2
+Correct Answer: C
+
+Solution:
+The phasor representation of the AC voltage is given by a vector with its length representing the peak voltage (Vm) and its angle representing the phase shift (φ). In this case, Vm = 8 V (half of the peak-peak value), and the phase angle φ is π/4 radians. Therefore, the phasor diagram shows a vector with a magnitude of 8 and an angle of π/4.
+
+Explanation:
+The phasor diagram should accurately represent the peak voltage and phase shift given in the equation.
+
+Common mistake note:
+A common mistake would be to use the peak-peak value (16 V) instead of the peak voltage (8 V), which would result in an incorrect magnitude on the phasor.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+An AC voltage with a frequency of 50 Hz and a phase shift of π/2 radians is given by the equation: v(t) = 10e^{j(ωt + π/2)}. What is the complex conjugate of this voltage?
+A) 10e^{-j(ωt + π/2)}
+B) 10e^{j(ωt - π/2)}
+C) 10e^{-jt}
+D) 10e^{jt}
+Correct Answer: A
+
+Solution:
+The complex conjugate of a voltage V = Vm e^{j(ωt + φ)} is given by V* = Vm e^{-j(ωt + φ)}. In this case, the voltage is v(t) = 10e^{j(ωt + π/2)}, so its complex conjugate is 10e^{-j(ωt + π/2)}.
+
+Explanation:
+The complex conjugate of a voltage involves changing the sign of the phase angle while keeping the magnitude and frequency unchanged.
+
+Common mistake note:
+A common mistake would be to forget to change the sign of the phase angle, which would result in an incorrect complex conjugate.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+An AC voltage with a peak value of 10 V and a frequency of 80 Hz is given by v(t) = 5sin(2πft). Calculate the RMS (root mean square) value of this voltage.
+A) 5
+B) 10
+C) 5√(2)
+D) 10√(2)
+Correct Answer: C
+
+Solution:
+The RMS value of an AC voltage V(t) = Vm sin(ωt) is given by Vrms = Vm / √(2). In this case, Vm = 10 V. So, Vrms = 10 / √(2) = 5√(2).
+
+Explanation:
+The RMS value of an AC voltage is used to compare it with a DC voltage that would produce the same heating effect. The formula involves dividing the peak voltage by √(2).
+
+Common mistake note:
+A common mistake would be to forget to divide by √(2), which would result in an incorrect RMS value.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+An AC voltage with a peak-peak value of 18 V and a frequency of 40 Hz is given by v(t) = 9sin(ωt + π/3). What is the period of this voltage?
+A) 0.25 s
+B) 0.5 s
+C) 0.75 s
+D) 1 s
+Correct Answer: B
+
+Solution:
+The period (T) of an AC voltage with frequency f is given by T = 1/f. In this case, the frequency is 40 Hz, so the period is T = 1/40 = 0.025 s or 25 ms.
+
+Explanation:
+The period of a waveform is the time it takes to complete one full cycle. It's inversely proportional to the frequency.
+
+Common mistake note:
+A common mistake would be to use the peak-peak value instead of the frequency when calculating the period, which would result in an incorrect period.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+An AC voltage with a peak value of 15 V and a phase shift of π/3 radians is given by v(t) = 7.5sin(ωt + π/3). What is the average value of this voltage over one cycle?
+A) 0
+B) 7.5
+C) 15
+D) 30
+Correct Answer: A
+
+Solution:
+The average value of an AC voltage V(t) = Vm sin(ωt + φ) over one cycle is given by Vavg = 0. In this case, since the waveform is sinusoidal, the average value over a complete cycle is zero.
+
+Explanation:
+The average value of a pure sine wave AC voltage over one cycle is always zero because the positive and negative values cancel each other out.
+
+Common mistake note:
+A common mistake would be to assume that the average value is equal to the peak or RMS value, which is not true for sinusoidal waveforms.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+An AC voltage with a peak-peak value of 24 V and a frequency of 100 Hz is given by v(t) = 12sin(ωt + π/6). What is the instantaneous voltage at t = 0.01 s?
+A) 12
+B) 12e^{jπ/6}
+C) 12e^{-jπ/6}
+D) 0
+Correct Answer: D
+
+Solution:
+The instantaneous voltage at a specific time t is given by plugging that value into the equation. For t = 0.01 s, v(0.01) = 12sin(ω 	imes 0.01 + π/6) = 12sin(π/100 + π/6). Since sin(π/6) is a non-zero real number, the instantaneous voltage at t = 0.01 s will be 12sin(π/100 + π/6) which is not zero.
+
+Explanation:
+The problem asks for the voltage value at a specific time, not an average or RMS value.
+
+Common mistake note:
+A common mistake would be to assume that the instantaneous voltage is always zero or equal to the peak voltage, which is not true for AC waveforms.
+------------------------------------------------------------------------------

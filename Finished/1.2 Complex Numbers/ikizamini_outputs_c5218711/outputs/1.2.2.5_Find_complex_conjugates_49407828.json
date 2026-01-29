@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.2.5",
+  "objective_text": "Find complex conjugates",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1A]",
+      "stem": "What is the complex conjugate of the number 3 + 4i?",
+      "choices": {
+        "A": "2 + 4i",
+        "B": "3 - 4i",
+        "C": "4 + 3i",
+        "D": "7i"
+      },
+      "correct_choice": "B",
+      "solution": "The complex conjugate of a complex number a + bi is a - bi. For the given number 3 + 4i, its complex conjugate is 3 - 4i.",
+      "explanation": "Complex conjugates are formed by changing the sign of the imaginary part while keeping the real part unchanged.",
+      "common_mistake_notes": "A common mistake is to switch both parts of the complex number, which would result in option A. Remember that only the imaginary part changes its sign."
+    },
+    {
+      "id": "[1B]",
+      "stem": "Find the complex conjugate of (-2 + 5i)^2.",
+      "choices": {
+        "A": "4 - 25i",
+        "B": "-9 + 20i",
+        "C": "9 - 20i",
+        "D": "25 - 4i"
+      },
+      "correct_choice": "C",
+      "solution": "First, calculate the square of (-2 + 5i): (-2 + 5i)^2 = (-2)^2 + 2(-2)(5i) + (5i)^2 = 4 - 20i + 25i^2. Since i^2 = -1, we have: 4 - 20i - 25 = -21 - 20i. Now find the complex conjugate of this result: -21 + 20i.",
+      "explanation": "First square the given complex number and then take the complex conjugate of the result.",
+      "common_mistake_notes": "A common mistake is to forget to square both parts of the original complex number or to incorrectly apply the i^2 = -1 rule. This could lead to answers like A, B, or D."
+    },
+    {
+      "id": "[1C]",
+      "stem": "What is the complex conjugate of (3 + 4i)/(5 - 6i)?",
+      "choices": {
+        "A": "(3 + 4i)/(5 + 6i)",
+        "B": "(3 - 4i)/(5 + 6i)",
+        "C": "(18 - 2i)/(29)",
+        "D": "(18 + 2i)/(29)"
+      },
+      "correct_choice": "B",
+      "solution": "To find the complex conjugate of a fraction, take the complex conjugate of both the numerator and the denominator: (3 - 4i)/(5 + 6i).",
+      "explanation": "When dealing with fractions, you must apply the conjugate to both parts of the fraction.",
+      "common_mistake_notes": "A common mistake is to forget to take the conjugate of both the numerator and the denominator, which could result in answers like A, C, or D."
+    },
+    {
+      "id": "[1D]",
+      "stem": "Find the complex conjugate of (2 - 3i)/(4 + 5i) * (6 + 7i).",
+      "choices": {
+        "A": "(18 - 29i)/(20 + 29i)",
+        "B": "(18 + 29i)/(20 - 29i)",
+        "C": "(18 + 29i)/(20 + 29i)",
+        "D": "(18 - 29i)/(20 - 29i)"
+      },
+      "correct_choice": "A",
+      "solution": "First, multiply the complex numbers: (2 - 3i)(6 + 7i) = 12 + 14i - 18i - 21i^2. Since i^2 = -1, we have: 12 - 4i - 21(-1) = 33 - 4i. Now multiply by the second complex number: (33 - 4i)/(4 + 5i). To find the conjugate of this fraction, take the conjugate of both parts: (33 + 4i)/(4 - 5i).",
+      "explanation": "Multiply the complex numbers first and then take the complex conjugate of the result.",
+      "common_mistake_notes": "A common mistake is to forget to multiply the complex numbers before taking the conjugates, or to incorrectly apply the i^2 = -1 rule. This could lead to answers like B, C, or D."
+    },
+    {
+      "id": "[1E]",
+      "stem": "Find the complex conjugate of the expression (3 + 4i)^3.",
+      "choices": {
+        "A": "81 - 204i",
+        "B": "81 + 204i",
+        "C": "207 - 156i",
+        "D": "207 + 156i"
+      },
+      "correct_choice": "C",
+      "solution": "First, calculate (3 + 4i)^3: (3 + 4i)^3 = 3^3 + 3(3^2)(4i) + 3(3)(4i)^2 + (4i)^3. Since i^2 = -1 and i^3 = -i, we have: 27 + 108i - 144 - 64i = -15 - 44i. Now find the complex conjugate of this result: -15 + 44i.",
+      "explanation": "First raise the given complex number to the power, then take the complex conjugate of the result.",
+      "common_mistake_notes": "A common mistake is to forget to cube both parts of the original complex number or to incorrectly apply the i^2 = -1 and i^3 = -i rules. This could lead to answers like A, B, or D."
+    },
+    {
+      "id": "[1F]",
+      "stem": "Find the complex conjugate of (4 + 5i)/(6 - 7i) / (8 + 9i).",
+      "choices": {
+        "A": "(32 - 44i)/(100 + 117i)",
+        "B": "(32 + 44i)/(100 - 117i)",
+        "C": "(32 + 44i)/(100 + 117i)",
+        "D": "(32 - 44i)/(100 - 117i)"
+      },
+      "correct_choice": "A",
+      "solution": "First, divide the complex numbers: (4 + 5i)/(6 - 7i) / (8 + 9i) = (4 + 5i)(8 - 9i) / (6 - 7i)(8 + 9i). Simplify this expression: (32 - 40i - 36i + 45i^2) / (48 - 56i + 56i - 63i^2). Since i^2 = -1, we have: (-3 + 76i) / (48 + 63). Simplify further: (76i - 3) / 111. Now take the complex conjugate of this result: (76i + 3) / 111.",
+      "explanation": "Divide the complex numbers first and then take the complex conjugate of the result.",
+      "common_mistake_notes": "A common mistake is to forget to divide the complex numbers before taking the conjugates, or to incorrectly apply the i^2 = -1 rule. This could lead to answers like B, C, or D."
+    },
+    {
+      "id": "[1G]",
+      "stem": "Find the complex conjugate of (7 + 6i)/(9 - 8i) + (5 - 4i)/(3 + 2i).",
+      "choices": {
+        "A": "(10 - 2i)/(12 + 10i)",
+        "B": "(10 + 2i)/(12 - 10i)",
+        "C": "(10 + 2i)/(12 + 10i)",
+        "D": "(10 - 2i)/(12 - 10i)"
+      },
+      "correct_choice": "B",
+      "solution": "First, add the complex fractions: (7 + 6i)(3 + 2i) / (9 - 8i)(3 + 2i) + (5 - 4i)(9 - 8i) / (3 + 2i)(9 - 8i). Simplify each fraction: (21 + 14i + 18i + 12i^2) / (27 + 18i - 24i - 16i^2) + (45 - 36i - 32i + 32i^2) / (27 + 18i - 24i - 16i^2). Since i^2 = -1, we have: (-9 + 32i) / (43 + 8i) + (13 - 68i) / (43 + 8i). Combine the fractions: ((-9 + 32i) + (13 - 68i)) / (43 + 8i) = (4 - 36i) / (43 + 8i). Now take the complex conjugate of this result: (4 + 36i) / (43 - 8i).",
+      "explanation": "Add the complex fractions first and then take the complex conjugate of the result.",
+      "common_mistake_notes": "A common mistake is to forget to add the complex fractions before taking the conjugates, or to incorrectly apply the i^2 = -1 rule. This could lead to answers like A, C, or D."
+    }
+  ]
+}

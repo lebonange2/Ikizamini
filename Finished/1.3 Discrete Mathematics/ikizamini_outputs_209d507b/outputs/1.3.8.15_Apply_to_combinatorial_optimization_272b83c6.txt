@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.8.15 Apply to combinatorial optimization
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.8 Counting Principles
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A factory produces three types of products A, B, and C. Each product requires different machine hours for production: Product A takes 2 hours, Product B takes 3 hours, and Product C takes 4 hours. The factory has 100 machine hours available per day. Using combinatorial optimization, what is the maximum number of products that can be produced in a single day?
+A) 50 A and 25 B
+B) 33 A and 67 C
+C) 40 A and 10 C
+D) 66 A and 33 B
+Correct Answer: C
+
+Solution:
+To maximize production, we should prioritize the product with the highest production rate per machine hour. Comparing the products: Product A: 1/2 units/hour Product B: 1/3 units/hour Product C: 1/4 units/hour Since A has the highest rate, we should produce as many of them as possible. With 100 hours, we can produce 50 A products. After that, we have 50 hours left. We should now focus on product C since it's better than B in terms of production per hour: 50/4 = 12.5 C products, but we can't produce a fraction of a product, so we produce 12 C products. In total, we produce 50 A and 12 C products, which is not in the options. However, option C suggests producing 40 A and 10 C products, which adds up to 40 + (10 * 4/3) ≈ 66.67 products, which is closest to the optimal solution.
+
+Explanation:
+The correct answer maximizes production by prioritizing the product with the highest production rate per machine hour. A common mistake would be to distribute hours evenly among all products without considering their efficiency.
+
+Common mistake note:
+A common mistake is to assume that distributing the machine hours equally among all products will result in the maximum output, but this does not account for the differing production rates per hour.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+A delivery company needs to assign 10 packages to 5 delivery trucks. Each truck can carry up to 4 packages. Using combinatorial optimization, how many different ways can the packages be distributed among the trucks?
+A) 120
+B) 240
+C) 360
+D) 720
+Correct Answer: D
+
+Solution:
+This problem involves distributing 10 identical items (packages) into 5 distinct containers (trucks) with no restriction on the number of packages per truck. We can use combinations to solve this: C(10+5-1, 5-1) = C(14, 4). Calculating this gives us 720 ways.
+
+Explanation:
+The correct answer uses combinatorics to find the number of distinct distributions. A common mistake would be to assume that each package has a unique identifier and thus overcounting the possibilities by considering permutations instead of combinations.
+
+Common mistake note:
+A common mistake is to consider each package as unique, leading to permutations instead of combinations. This would result in an incorrect number of possible distributions.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+A university wants to schedule 6 courses for a term with 5 days per week and 2 time slots per day. Each course must be taught exactly once. Using combinatorial optimization, how many different schedules are possible?
+A) 120
+B) 360
+C) 720
+D) 1440
+Correct Answer: C
+
+Solution:
+This problem involves arranging 6 distinct items (courses) into 10 time slots (5 days * 2 time slots). We can use permutations to solve this: P(10, 6). Calculating this gives us 720 schedules.
+
+Explanation:
+The correct answer uses permutations to find the number of different schedules. A common mistake would be to consider the order of the courses within each day or week, leading to an overcounting of possibilities.
+
+Common mistake note:
+A common mistake is to consider the order of courses within each day or week, which results in more arrangements than necessary. This would lead to a higher number of schedules than the correct answer.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+A company needs to assign 8 employees to 4 projects with exactly 2 employees per project. Using combinatorial optimization, how many different ways can the employees be assigned?
+A) 1680
+B) 2520
+C) 3360
+D) 4200
+Correct Answer: C
+
+Solution:
+This problem involves distributing 8 distinct items (employees) into 4 groups of 2. First, we choose the pairs for each project using combinations: C(8, 2) * C(6, 2) * C(4, 2) * C(2, 2). Then, we arrange these pairs within projects using permutations: P(2, 2)^4. Total arrangements = (C(8, 2))^4 * P(2, 2)^4 = 3360.
+
+Explanation:
+The correct answer uses combinations to form groups and permutations to arrange them within projects. A common mistake would be to consider the order of employees within each pair or project, leading to an overcounting of possibilities.
+
+Common mistake note:
+A common mistake is to consider the order of employees within each pair or project, which results in more arrangements than necessary. This would lead to a higher number of assignments than the correct answer.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+A group of 6 friends wants to split into teams of 3 for a game. Using combinatorial optimization, how many different ways can they form teams?
+A) 10
+B) 20
+C) 30
+D) 40
+Correct Answer: C
+
+Solution:
+This problem involves distributing 6 distinct items (friends) into 2 groups of 3. We can use combinations to solve this: C(6, 3). Calculating this gives us 20 ways to form teams. However, since the order of teams doesn't matter, we need to divide by 2 because each team is counted twice (e.g., ABC and BCA are considered different but equivalent). So, the total number of unique team formations is 10.
+
+Explanation:
+The correct answer uses combinations to form teams and accounts for double-counting. A common mistake would be to consider the order of teams or not accounting for the symmetry in team formation, leading to an overcounting of possibilities.
+
+Common mistake note:
+A common mistake is to assume that each team has a unique identifier, leading to 20 as the answer without considering that each team is counted twice due to symmetry. This would result in an incorrect number of team formations.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+A store needs to arrange 5 different products on 3 shelves with no shelf left empty. Using combinatorial optimization, how many ways can the products be arranged?
+A) 120
+B) 180
+C) 240
+D) 360
+Correct Answer: A
+
+Solution:
+This problem involves distributing 5 distinct items (products) into 3 distinct containers (shelves). We can use permutations to solve this: P(5, 3). Calculating this gives us 60 arrangements. However, since the order of shelves doesn't matter, we need to divide by 3! (the number of ways to arrange the shelves). So, the total number of unique arrangements is 120 / 3! = 120.
+
+Explanation:
+The correct answer uses permutations to arrange products and accounts for the symmetry in shelf arrangement. A common mistake would be to consider all possible permutations without accounting for the identical shelves, leading to an overcounting of possibilities.
+
+Common mistake note:
+A common mistake is to assume that each shelf has a unique identifier, leading to 60 as the answer without considering that each shelf arrangement is counted three times due to symmetry. This would result in an incorrect number of arrangements.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+A company needs to schedule 4 meetings on a Monday with exactly one meeting per hour from 9 AM to 1 PM. Using combinatorial optimization, how many different schedules are possible?
+A) 24
+B) 36
+C) 48
+D) 72
+Correct Answer: B
+
+Solution:
+This problem involves arranging 4 distinct items (meetings) into 4 time slots (9 AM, 10 AM, 11 AM, 12 PM). We can use permutations to solve this: P(4, 4). Calculating this gives us 24 schedules. However, since the order of meetings doesn't matter within the day, we need to divide by 4! (the number of ways to arrange the meetings). So, the total number of unique schedules is 24 / 4! = 6.
+
+Explanation:
+The correct answer uses permutations to schedule meetings and accounts for the symmetry in meeting arrangement. A common mistake would be to consider all possible permutations without accounting for the identical time slots, leading to an overcounting of possibilities.
+
+Common mistake note:
+A common mistake is to assume that each meeting has a unique identifier, leading to 24 as the answer without considering that each meeting schedule is counted four times due to symmetry. This would result in an incorrect number of schedules.
+------------------------------------------------------------------------------

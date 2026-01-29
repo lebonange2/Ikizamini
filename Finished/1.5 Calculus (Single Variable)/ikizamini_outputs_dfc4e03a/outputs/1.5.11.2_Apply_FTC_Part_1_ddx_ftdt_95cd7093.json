@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.11.2",
+  "objective_text": "Apply FTC Part 1: d/dx ∫f(t)dt",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Find the derivative of the function F(x) = ∫ from 0 to x sin(t^2) dt. What is F'(x)?",
+      "choices": {
+        "A": "cos(x^2)",
+        "B": "2x cos(x^2)",
+        "C": "sin(x^2)",
+        "D": "2x cos(x)"
+      },
+      "correct_choice": "B",
+      "solution": "By the Fundamental Theorem of Calculus, Part 1 (FTC), the derivative of an integral F(x) evaluated from a constant to x is the integrand evaluated at x. So F'(x) = sin(x^2). Since the integral has limits from 0 to x, we multiply by the derivative of the upper limit, which is 2x.",
+      "explanation": "The FTC Part 1 states that d/dx ∫f(t)dt from a to x = f(x). In this case, f(t) = sin(t^2), so F'(x) = sin(x^2). The additional factor of 2x comes from differentiating the upper limit x with respect to x.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the derivative of the upper limit (2x in this case). This error would lead to answer A, which is only the integrand evaluated at x without accounting for the change in the upper limit."
+    },
+    {
+      "id": "Bvbn",
+      "stem": "Find the derivative of the function G(x) = ∫ from 1 to x^3 e^t dt. What is G'(x)?",
+      "choices": {
+        "A": "3x^2 e^(x^3)",
+        "B": "e^(x^3)",
+        "C": "3xe^(x^3)",
+        "D": "x^3 e^(x)"
+      },
+      "correct_choice": "A",
+      "solution": "Using FTC Part 1, the derivative of G(x) is e^(x^3), multiplied by the derivative of the upper limit (3x^2). So G'(x) = 3x^2 e^(x^3).",
+      "explanation": "FTC Part 1 states that d/dx ∫f(t)dt from a to x = f(x). Here, f(t) = e^t, so G'(x) = e^(x^3). The additional factor of 3x^2 comes from differentiating the upper limit x^3 with respect to x.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the derivative of the upper limit (3x^2 in this case). This error would lead to answer B, which only gives the integrand evaluated at x^3 without accounting for the change in the upper limit."
+    },
+    {
+      "id": "Cvbn",
+      "stem": "Find the derivative of the function H(x) = ∫ from 0 to sin(x) cos(t) dt. What is H'(x)?",
+      "choices": {
+        "A": "cos(sin(x))",
+        "B": "sin(x) cos(sin(x))",
+        "C": "sin(cos(x))",
+        "D": "cos(x)"
+      },
+      "correct_choice": "B",
+      "solution": "FTC Part 1 tells us that the derivative of H(x) is cos(sin(x)), multiplied by the derivative of the upper limit (cos(x)). So H'(x) = sin(x) cos(sin(x)).",
+      "explanation": "The FTC Part 1 states that d/dx ∫f(t)dt from a to x = f(x). Here, f(t) = cos(t), so H'(x) = cos(sin(x)). The additional factor of cos(x) comes from differentiating the upper limit sin(x) with respect to x.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the derivative of the upper limit (cos(x) in this case). This error would lead to answer A, which only gives the integrand evaluated at sin(x) without accounting for the change in the upper limit."
+    },
+    {
+      "id": "Dvbn",
+      "stem": "Find the derivative of the function I(x) = ∫ from 2 to x^2 t^2 dt. What is I'(x)?",
+      "choices": {
+        "A": "2x^3",
+        "B": "x^4",
+        "C": "2x x^2",
+        "D": "x^2"
+      },
+      "correct_choice": "A",
+      "solution": "Applying FTC Part 1, the derivative of I(x) is x^2, multiplied by the derivative of the upper limit (2x). So I'(x) = 2x^3.",
+      "explanation": "FTC Part 1 states that d/dx ∫f(t)dt from a to x = f(x). Here, f(t) = t^2, so I'(x) = x^2. The additional factor of 2x comes from differentiating the upper limit x^2 with respect to x.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the derivative of the upper limit (2x in this case). This error would lead to answer D, which only gives the integrand evaluated at x^2 without accounting for the change in the upper limit."
+    },
+    {
+      "id": "Evbn",
+      "stem": "Find the derivative of the function J(x) = ∫ from 1 to e^x ln(t) dt. What is J'(x)?",
+      "choices": {
+        "A": "e^x e^(x)",
+        "B": "e^x cos(e^x)",
+        "C": "e^x cos(x)",
+        "D": "e^x e^x"
+      },
+      "correct_choice": "D",
+      "solution": "Using FTC Part 1, the derivative of J(x) is ln(e^x), multiplied by the derivative of the upper limit (e^x). So J'(x) = e^x e^x.",
+      "explanation": "FTC Part 1 states that d/dx ∫f(t)dt from a to x = f(x). Here, f(t) = ln(t), so J'(x) = ln(e^x). The additional factor of e^x comes from differentiating the upper limit e^x with respect to x.",
+      "common_mistake_notes": "A common mistake is to mix up the integrand and the derivative of the upper limit. This error would lead to answer A, which combines the integrand evaluated at e^x with the exponential function."
+    },
+    {
+      "id": "Fvbn",
+      "stem": "Find the derivative of the function K(x) = ∫ from 0 to x sin(2t) dt. What is K'(x)?",
+      "choices": {
+        "A": "cos(2x)",
+        "B": "2 cos(2x)",
+        "C": "sin(2x)",
+        "D": "2 cos(x)"
+      },
+      "correct_choice": "B",
+      "solution": "By FTC Part 1, the derivative of K(x) is sin(2x), multiplied by the derivative of the upper limit (1). So K'(x) = 2 cos(2x).",
+      "explanation": "FTC Part 1 states that d/dx ∫f(t)dt from a to x = f(x). Here, f(t) = sin(2t), so K'(x) = sin(2x). The additional factor of 2 comes from the integrand being sin(2t), which doubles the effect of differentiating with respect to x.",
+      "common_mistake_notes": "A common mistake is to forget that the integrand involves 2t, leading to an incorrect factor. This error would lead to answer A, which only gives the integrand evaluated at 2x without accounting for the doubled effect."
+    },
+    {
+      "id": "Gvbn",
+      "stem": "Find the derivative of the function L(x) = ∫ from -1 to x^2 t^3 dt. What is L'(x)?",
+      "choices": {
+        "A": "-1 cos(x^2)",
+        "B": "2x^5",
+        "C": "x^6",
+        "D": "x^4"
+      },
+      "correct_choice": "B",
+      "solution": "Applying FTC Part 1, the derivative of L(x) is x^6, multiplied by the derivative of the upper limit (2x). So L'(x) = 2x^5.",
+      "explanation": "FTC Part 1 states that d/dx ∫f(t)dt from a to x = f(x). Here, f(t) = t^3, so L'(x) = x^6. The additional factor of 2x comes from differentiating the upper limit x^2 with respect to x.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by the derivative of the upper limit (2x in this case). This error would lead to answer D, which only gives the integrand evaluated at x^2 without accounting for the change in the upper limit."
+    }
+  ]
+}

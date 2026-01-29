@@ -1,0 +1,169 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.5.12 Optimize rates and efficiency
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.5 Optimization Problems
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (AssembleLineEfficiency):
+A manufacturing company assembles widgets in a line, with each station performing a specific task. The table below shows the time (in minutes) required for each station to complete its task and the current number of workers at that station. To optimize efficiency, which station should the company add an additional worker to first?
+A) Station 3: 4 min, 2 workers
+B) Station 5: 6 min, 1 worker
+C) Station 2: 3 min, 3 workers
+D) Station 4: 5 min, 2 workers
+Correct Answer: B
+
+Solution:
+To optimize efficiency, the company should focus on the station with the longest processing time per worker. By dividing the processing time by the number of workers at each station, we can determine the time per worker for each station:
+
+Station 1: 2 min / 3 workers = 0.67 min/worker
+Station 2: 3 min / 3 workers = 1 min/worker
+Station 3: 4 min / 2 workers = 2 min/worker
+Station 4: 5 min / 2 workers = 2.5 min/worker
+Station 5: 6 min / 1 worker = 6 min/worker
+
+The station with the longest processing time per worker is Station 5, at 6 min/worker. Adding an additional worker to this station will have the greatest impact on overall efficiency.
+
+Explanation:
+Adding more workers to stations with shorter processing times would not proportionally increase efficiency as much as focusing on the bottleneck (Station 5).
+
+Common mistake note:
+A common mistake is to choose Station 3 or Station 4, assuming that fewer workers mean higher inefficiency. However, this doesn't account for the time per worker; Station 5 has a longer processing time even with only one worker.
+------------------------------------------------------------------------------
+
+Problem 2 (FactoryOutput):
+A factory produces two products: Product A and Product B. The table below shows the production rates (in units per hour) for each product based on the number of workers assigned to each line. To optimize output, how many additional workers should be added to the Product A line?
+A) 2 workers
+B) 3 workers
+C) 1 worker
+D) 4 workers
+Correct Answer: C
+
+Solution:
+To optimize output, we need to maximize the production rate of both products. First, let's find the current production rates for each product:
+
+Product A: 6 units/hour per worker (12 units/hour with 2 workers)
+Product B: 8 units/hour per worker (32 units/ hour with 4 workers)
+
+Adding one more worker to Product A will increase its production rate from 12 units/ hour to 18 units/ hour. This maintains a better balance between the two products' output rates compared to adding more workers to either line.
+
+Explanation:
+Adding more workers to just Product B would lead to an even greater imbalance in output, while adding more workers to Product A helps maintain a better ratio of production rates for both products.
+
+Common mistake note:
+A common mistake is to add more workers to the product with higher individual production rate (Product B). However, this doesn't consider the overall efficiency and balance between the two lines.
+------------------------------------------------------------------------------
+
+Problem 3 (ShippingEfficiency):
+A shipping company has three delivery routes: Route A, Route B, and Route C. Each route requires a different number of delivery trucks to complete within a day. The table below shows the current truck assignments and the time it takes for each route. To optimize efficiency, which route should the company assign an additional truck to first?
+A) Route A: 5 hours, 3 trucks
+B) Route B: 7 hours, 4 trucks
+C) Route C: 6 hours, 2 trucks
+D) No change needed
+Correct Answer: C
+
+Solution:
+To optimize efficiency, we should assign an additional truck to the route with the highest time per truck. By dividing the time by the number of trucks for each route, we can determine the time per truck:
+
+Route A: 5 hours / 3 trucks = 1.67 hours/truck
+Route B: 7 hours / 4 trucks = 1.75 hours/truck
+Route C: 6 hours / 2 trucks = 3 hours/truck
+
+The route with the highest time per truck is Route C, at 3 hours/truck. Adding an additional truck to this route will reduce the time per truck and improve efficiency.
+
+Explanation:
+Adding a truck to routes A or B would not proportionally decrease the time per truck as much as focusing on the route with the longest time per truck (Route C).
+
+Common mistake note:
+A common mistake is to choose Route A or Route B, assuming that more trucks mean higher efficiency. However, this doesn't account for the time per truck; Route C has a longer time per truck even with fewer trucks.
+------------------------------------------------------------------------------
+
+Problem 4 (AssemblyLineCosts):
+An electronics company assembles smartphones in an assembly line. The table below shows the cost (in dollars) of each station and the current number of workers at that station. To optimize costs, which station should the company reduce the number of workers from first?
+A) Station 1: $200, 3 workers
+B) Station 2: $150, 2 workers
+C) Station 3: $300, 4 workers
+D) Station 4: $250, 3 workers
+Correct Answer: C
+
+Solution:
+To optimize costs, the company should focus on reducing the cost per unit of time at each station. By dividing the cost by the processing time (in minutes) and then dividing by the number of workers at each station, we can determine the cost per worker-minute:
+
+Station 1: $200 / 5 min * 3 workers = $12/minute/worker
+Station 2: $150 / 4 min * 2 workers = $9.38/minute/worker
+Station 3: $300 / 6 min * 4 workers = $10/minute/worker
+Station 4: $250 / 5 min * 3 workers = $10/minute/worker
+
+The station with the highest cost per worker-minute is Station 1. Reducing the number of workers at this station will have the greatest impact on overall cost efficiency.
+
+Explanation:
+Reducing the number of workers at stations with lower cost per worker-minute would not proportionally decrease costs as much as focusing on the station with the highest cost (Station 1).
+
+Common mistake note:
+A common mistake is to choose Station 3 or Station 4, assuming that more expensive stations require fewer workers. However, this doesn't account for the cost per worker-minute; Station 1 has a higher cost per worker-minute even with fewer minutes per task.
+------------------------------------------------------------------------------
+
+Problem 5 (FactoryProductionCost):
+A factory produces two products: Product X and Product Y. The table below shows the production costs (in dollars per unit) for each product based on the number of units produced. To optimize costs, which product should the company increase its production to first?
+A) Product Y
+B) Both equally
+C) No change needed
+D) Product X
+Correct Answer: D
+
+Solution:
+To optimize costs, we need to consider economies of scale, where increasing production can lead to lower unit costs. Let's analyze the cost per unit for each product:
+
+Product X: Cost decreases from $10 to $8 as production increases from 50 units to 100 units.
+Product Y: Cost remains at $6 regardless of production quantity.
+
+By increasing Product X's production, the company can achieve lower costs per unit and optimize its spending.
+
+Explanation:
+Increasing Product Y's production will not lead to a decrease in cost per unit, while increasing Product X's production will result in lower costs due to economies of scale.
+
+Common mistake note:
+A common mistake is to choose Product Y, assuming that it has a lower cost per unit. However, this doesn't consider the potential for reducing costs through increased production; only Product X offers such an opportunity.
+------------------------------------------------------------------------------
+
+Problem 6 (SupplyChainEfficiency):
+A company manages its supply chain with three suppliers: Supplier A, B, and C. Each supplier has a different lead time (in days) to deliver goods and a different order minimum. To optimize the supply chain, which supplier should the company consolidate orders with first?
+A) Supplier A: 5 days, 100 units
+B) Supplier B: 7 days, 200 units
+C) Supplier C: 6 days, 150 units
+D) No change needed
+Correct Answer: A
+
+Solution:
+To optimize the supply chain, we should consolidate orders with the supplier that has the shortest lead time and a reasonable order minimum. In this case, Supplier A has the shortest lead time of 5 days and a lower order minimum compared to Supplier B and C.
+
+Explanation:
+Consolidating orders with suppliers with longer lead times or higher minimums would not improve efficiency as much as focusing on the supplier with the best combination of lead time and minimum order quantity (Supplier A).
+
+Common mistake note:
+A common mistake is to choose Supplier B or C, assuming that a larger order minimum means better pricing. However, this doesn't consider the importance of shorter lead times in maintaining a smooth supply chain.
+------------------------------------------------------------------------------
+
+Problem 7 (TransportationEfficiency):
+A logistics company has three delivery routes: Route A, B, and C. Each route requires a different number of trucks to complete within a day. The table below shows the current truck assignments, fuel consumption per truck (in gallons), and distance traveled. To optimize fuel efficiency, which route should the company consolidate deliveries on first?
+A) Route A: 5 trucks, 20 gal/truck, 100 miles
+B) Route B: 3 trucks, 18 gal/truck, 150 miles
+C) Route C: 4 trucks, 22 gal/truck, 120 miles
+D) No change needed
+Correct Answer: B
+
+Solution:
+To optimize fuel efficiency, we should consolidate deliveries on the route with the lowest gallons per mile (GPM). By calculating GPM for each route:
+
+Route A: 20 gal/truck * 100 miles / 5 trucks = 40 GPM
+Route B: 18 gal/truck * 150 miles / 3 trucks = 90 GPM
+Route C: 22 gal/truck * 120 miles / 4 trucks = 66 GPM
+
+The route with the highest GPM is Route B. Consolidating deliveries on this route will improve fuel efficiency.
+
+Explanation:
+Consolidating deliveries on routes with lower GPM would not proportionally increase efficiency as much as focusing on the route with the highest GPM (Route B).
+
+Common mistake note:
+A common mistake is to choose Route A or C, assuming that fewer trucks or higher fuel consumption per truck means worse efficiency. However, this doesn't account for the gallons per mile ratio; Route B has a higher GPM even with fewer gallons consumed per truck.
+------------------------------------------------------------------------------

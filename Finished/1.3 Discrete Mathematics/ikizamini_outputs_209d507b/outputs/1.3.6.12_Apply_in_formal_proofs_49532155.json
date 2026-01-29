@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.6.12",
+  "objective_text": "Apply in formal proofs",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "x1",
+      "stem": "In a formal proof, what is the first step after stating the given information?",
+      "choices": {
+        "A": "Provide a conclusion without justification.",
+        "B": "Assume what needs to be proven and work backwards.",
+        "C": "Use logical reasoning to derive new statements from the given information.",
+        "D": "Introduce unrelated premises to support the conclusion."
+      },
+      "correct_choice": "C",
+      "solution": "In a formal proof, the first step after stating the given information is to use logical reasoning to derive new statements from those given facts. This helps build a chain of reasoning that eventually leads to the desired conclusion.",
+      "explanation": "Logical reasoning allows one to make valid deductions based on the initial premises. Options A and D introduce flaws in the proof, while option B describes a non-standard approach called 'proof by contradiction'.",
+      "common_mistake_notes": "Common mistake: Choosing A or D may happen when students misunderstand the structure of a formal proof, thinking it can start with an unsupported conclusion or unrelated premises."
+    },
+    {
+      "id": "x2",
+      "stem": "Which of the following is an example of a valid step in a formal proof using modus ponens?",
+      "choices": {
+        "A": "If A implies B and B implies C, then A implies C.",
+        "B": "If A implies B and C implies D, then A implies D.",
+        "C": "If A implies B and not-A implies C, then B or C.",
+        "D": "If A implies B and C implies A, then B implies C."
+      },
+      "correct_choice": "A",
+      "solution": "Modus ponens is a valid deductive rule that states if 'A implies B' is true and 'A' is also true, then 'B' must be true. In the given examples, only option A directly applies modus ponens.",
+      "explanation": "Option A correctly uses modus ponens to derive 'C' from 'A implies B' and 'A'. Options B, C, and D involve different logical relationships that are not modus ponens.",
+      "common_mistake_notes": "Common mistake: Choosing B may occur when students confuse modus ponens with hypothetical syllogism (B→C→D). Choosing C could result from confusion with disjunctive syllogism, and choosing D might be due to misunderstanding the contrapositive."
+    },
+    {
+      "id": "x3",
+      "stem": "In a formal proof, what is the purpose of using a conditional statement?",
+      "choices": {
+        "A": "To introduce unrelated premises.",
+        "B": "To provide an immediate conclusion without justification.",
+        "C": "To express a relationship between two propositions where one implies the other.",
+        "D": "To contradict the given information."
+      },
+      "correct_choice": "C",
+      "solution": "Conditional statements in formal proofs are used to express a relationship between two propositions, where if the first proposition (antecedent) is true, then the second proposition (consequence) must also be true.",
+      "explanation": "Conditional statements allow for logical connections between premises and conclusions. Options A, B, and D describe actions that would not contribute to a valid proof structure.",
+      "common_mistake_notes": "Common mistake: Choosing A or B may happen when students misunderstand the role of conditional statements in proofs, thinking they can introduce unrelated information or immediate conclusions without reasoning."
+    },
+    {
+      "id": "x4",
+      "stem": "In a formal proof, how do you introduce a new assumption for the sake of contradiction?",
+      "choices": {
+        "A": "State it as a given fact.",
+        "B": "Assume it and derive a conclusion that contradicts a known fact or premise.",
+        "C": "Introduce it as an intermediate step without any justification.",
+        "D": "Use a conditional statement to link it to another assumption."
+      },
+      "correct_choice": "B",
+      "solution": "In a formal proof, introducing a new assumption for the sake of contradiction involves assuming the opposite of what needs to be proven and then showing that this leads to a contradiction with a known fact or premise.",
+      "explanation": "Proof by contradiction is a valid method where one assumes the negation of the conclusion and derives a contradiction. Options A, C, and D do not accurately describe this technique.",
+      "common_mistake_notes": "Common mistake: Choosing A may occur when students misunderstand the purpose of introducing an assumption for contradiction, thinking it can be treated as a given fact. Choosing C or D might result from confusion about how to connect assumptions in a proof."
+    },
+    {
+      "id": "x5",
+      "stem": "Which of the following is an example of a valid direct proof?",
+      "choices": {
+        "A": "Assume what needs to be proven and work backwards.",
+        "B": "Prove the contrapositive of the statement to be proven.",
+        "C": "Derive a conclusion by showing that the opposite would lead to a contradiction.",
+        "D": "Use a combination of conditional statements and known facts to reach the desired conclusion."
+      },
+      "correct_choice": "D",
+      "solution": "A direct proof involves using logical reasoning, conditional statements, and known facts to directly show that a statement is true without resorting to contradictions or contrapositives.",
+      "explanation": "Option D accurately describes a direct proof. Options A and C describe methods other than direct proof (proof by contradiction and proof of the contrapositive, respectively). Option B is not an example of a direct proof since it proves the contrapositive instead.",
+      "common_mistake_notes": "Common mistake: Choosing A or C may happen when students混淆证明方法，误以为它们是直接证明。选择B可能是由于对直接证明和证明逆否命题之间的区别混淆。"
+    },
+    {
+      "id": "x6",
+      "stem": "In a formal proof, how do you use the law of detachment?",
+      "choices": {
+        "A": "By assuming two premises and concluding their conjunction.",
+        "B": "By assuming two conditional statements and concluding their disjunction.",
+        "C": "By assuming a conditional statement and one of its antecedents, then concluding the consequence.",
+        "D": "By assuming a conclusion and working backwards to derive the given information."
+      },
+      "correct_choice": "C",
+      "solution": "The law of detachment (modus ponens) is used in formal proofs by assuming a conditional statement (A implies B) and one of its antecedents (A), then concluding the consequence (B).",
+      "explanation": "The law of detachment allows for drawing a conclusion when both the antecedent and the conditional are true. Options A, B, and D describe actions that do not involve the law of detachment.",
+      "common_mistake_notes": "Common mistake: Choosing A or B may occur when students混淆逻辑规则，误以为它们与 detachment 相关。选择D可能是由于对证明过程的误解，认为结论是先验的。"
+    },
+    {
+      "id": "x7",
+      "stem": "In a formal proof, how do you use the law of syllogism?",
+      "choices": {
+        "A": "By assuming two premises and concluding their disjunction.",
+        "B": "By assuming two conditional statements and concluding their conjunction.",
+        "C": "By assuming two propositions with the same antecedent, then concluding the conjunction of their consequences.",
+        "D": "By assuming a conclusion and working backwards to derive the given information."
+      },
+      "correct_choice": "C",
+      "solution": "The law of syllogism is used in formal proofs by assuming two propositions with the same antecedent (A implies B and A implies C), then concluding the conjunction of their consequences (B and C).",
+      "explanation": "The law of syllogism allows for combining two conditional statements with a common antecedent to derive a new conclusion. Options A, B, and D describe actions that do not involve the law of syllogism.",
+      "common_mistake_notes": "Common mistake: Choosing A or B may occur when students混淆逻辑规则，误以为它们与 syllogism 相关。选择D可能是由于对证明过程的误解，认为结论是先验的。"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.15.12 Study space curves
+==============================================================================
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Which of the following is a vector function that represents a helix in space?
+A) r(t) = (cos(t), sin(t), t)
+B) r(t) = (t^2, t^3, t^4)
+C) r(t) = (e^t, e^(-t), t)
+D) r(t) = (t, t*sin(t), t*cos(t))
+Correct Answer: A
+
+Solution:
+The helix is defined by r(t) = (cos(t), sin(t), t) where the circular motion is in the xy-plane and the linearly increasing t represents the upward movement along the z-axis.
+
+Explanation:
+A helix is characterized by a circular path along with linear progression in another direction. Option A satisfies this condition.
+
+Common mistake note:
+Students might confuse option D as a helix due to sine and cosine components, but their t-dependent scaling leads to a different shape.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+What is the curvature of the space curve r(t) = (t, t^2, t^3)?
+A) 0
+B) 1
+C) |1 + 4t^2|^(-3/2)
+D) |2t + 4t^5|^(-3/2)
+Correct Answer: C
+
+Solution:
+First, compute r'(t) = (1, 2t, 3t^2) and r''(t) = (0, 2, 6t). The curvature κ(t) is given by κ(t) = |r'(t) × r''(t)| / |r'(t)|^3. The cross-product is (4t^2, -6t, 2), and thus, |r'(t) × r''(t)| = √((4t^2)^2 + (-6t)^2 + 2^2) = √(16t^4 + 36t^2 + 4). The magnitude |r'(t)| = √(1 + 4t^2 + 9t^4). Thus, κ(t) = √(16t^4 + 36t^2 + 4) / (1 + 4t^2 + 9t^4)^(3/2).
+
+Explanation:
+Curvature measures how quickly a curve deviates from a straight line. Compute curvature using κ(t) = |r'(t) × r''(t)| / |r'(t)|^3.
+
+Common mistake note:
+A common mistake is to neglect computing the magnitude of the cross product properly, leading to errors in the curvature formula.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Consider the curve r(t) = (3t, 2sqrt(2)t, t^2). What is its parametrization at t=2?
+A) (6, 4sqrt(2), 4)
+B) (4, 4sqrt(2), 2)
+C) (2, 2sqrt(2), 2)
+D) (6, 4, 4)
+Correct Answer: A
+
+Solution:
+Substitute t = 2 into r(t): r(2) = (3(2), 2sqrt(2)(2), (2)^2) = (6, 4sqrt(2), 4).
+
+Explanation:
+Parametrization involves finding specific points on the curve for given values of t.
+
+Common mistake note:
+Students might forget the correct application of the square root term, leading to inaccurate results.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Which formula provides the torsion τ of a space curve given r(t)?
+A) τ = (r'(t) × r''(t)) • r'''(t) / |r'(t) × r''(t)|^2
+B) τ = |r'(t)| / |r(t)|
+C) τ = |r''(t) × r'''(t)| / |r'(t)|
+D) τ = (r'(t) • r''(t))^2 / |r(t)|^3
+Correct Answer: A
+
+Solution:
+The torsion of a space curve is defined by τ = (r'(t) × r''(t)) • r'''(t) / |r'(t) × r''(t)|^2, which indicates twisting of the curve.
+
+Explanation:
+Torsion measures how a curve twists out of the plane of curvature, computed from derivatives of the curve's vector function.
+
+Common mistake note:
+Confusion might arise by ignoring the need for the cross product and focusing only on dot product terms.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+In a space curve r(t) = (t, t^2, t^3), what is the unit tangent vector T(t) at t=1?
+A) (1/√14, 2/√14, 3/√14)
+B) (1/3, 2/3, 1)
+C) (1, 1, 1)
+D) (1/3, 1/3, 1/3)
+Correct Answer: A
+
+Solution:
+Calculate r'(t) = (1, 2t, 3t^2). At t=1, r'(1) = (1, 2, 3). The magnitude |r'(1)| = √(1^2 + 2^2 + 3^2) = √14. Thus, T(t) = (1/√14, 2/√14, 3/√14).
+
+Explanation:
+The unit tangent vector is found by normalizing the derivative at a given point, providing directionality on the curve.
+
+Common mistake note:
+Students may miscalculate the magnitude by simply adding instead of taking the square root of the sum of squares.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+What is the geometric significance of the normal vector to a space curve at a given point?
+A) It indicates the axial symmetry of the curve.
+B) It shows the direction towards the center of curvature.
+C) It is parallel to the tangent vector.
+D) It describes the twisting of the curve.
+Correct Answer: B
+
+Solution:
+The normal vector at a given point in a curve is perpendicular to the tangent vector and points towards the circle of curvature.
+
+Explanation:
+The normal vector helps in understanding how sharply a curve is bending at a given point.
+
+Common mistake note:
+Confusion may occur confusing the normal vector with torsion, but torsion is related to twisting, not direct curvature.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+For the curve r(t) = (sin(t), cos(t), t), what are the Frenet-Serret equations used to describe?
+A) The equations of motion in free space.
+B) The relationship between curvature, torsion, and spatial orientation.
+C) The trajectory of projectile motion.
+D) The solution to the Laplace's equation.
+Correct Answer: B
+
+Solution:
+The Frenet-Serret equations describe the derivative relations of the tangent, normal, and binormal vectors in terms of curvature and torsion, thus explaining the curve’s spatial twisting and bending.
+
+Explanation:
+Their significance lies in providing a complete description of the curve's geometry in three-dimensional space.
+
+Common mistake note:
+Mixing up with equations of motion like Newton's laws might lead students to incorrectly associate Frenet-Serret equations with mechanics.
+------------------------------------------------------------------------------

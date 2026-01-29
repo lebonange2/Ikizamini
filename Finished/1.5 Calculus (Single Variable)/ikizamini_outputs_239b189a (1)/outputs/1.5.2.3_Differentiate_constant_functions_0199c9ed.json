@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.2.3",
+  "objective_text": "Differentiate constant functions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "OneConstant",
+      "stem": "What is the derivative of the function f(x) = 5?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "x",
+        "D": "5"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of a constant function is always zero. So, the derivative of f(x) = 5 is 0.",
+      "explanation": "Constants don't change with respect to x, hence their rate of change (derivative) is zero.",
+      "common_mistake_notes": "A common mistake would be selecting 'B' (1), as some might think that the derivative of any function is 1. However, this is not true for constant functions."
+    },
+    {
+      "id": "TwoConstants",
+      "stem": "What is the derivative of the function g(x) = -2?",
+      "choices": {
+        "A": "0",
+        "B": "-1",
+        "C": "-x",
+        "D": "-2"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of a constant function is always zero. So, the derivative of g(x) = -2 is 0.",
+      "explanation": "Constants don't change with respect to x, hence their rate of change (derivative) is zero.",
+      "common_mistake_notes": "A common mistake would be selecting 'D' (-2), as some might think that the derivative retains the original constant value. However, this is not true for constant functions."
+    },
+    {
+      "id": "ThreeConstant",
+      "stem": "What is the derivative of the function h(x) = 0?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "x^2",
+        "D": "h'(x)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of a constant function is always zero. So, the derivative of h(x) = 0 is 0.",
+      "explanation": "Constants don't change with respect to x, hence their rate of change (derivative) is zero.",
+      "common_mistake_notes": "A common mistake would be selecting 'D' (h'(x)), as some might think that the derivative is a function of x. However, for constant functions, it's always 0."
+    },
+    {
+      "id": "FourConstant",
+      "stem": "What is the slope of the line represented by the equation y = 7?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "x + 3",
+        "D": "7"
+      },
+      "correct_choice": "A",
+      "solution": "The slope of a horizontal line (which is a constant function) is always zero. So, the slope of y = 7 is 0.",
+      "explanation": "Horizontal lines have no change in 'y' for any change in 'x', making their slope zero.",
+      "common_mistake_notes": "A common mistake would be selecting 'D' (7), as some might think that the slope retains the constant value. However, for horizontal lines, the slope is always 0."
+    },
+    {
+      "id": "FiveConstant",
+      "stem": "What is the derivative of the function j(x) = -3x + c, where c is a constant?",
+      "choices": {
+        "A": "-3",
+        "B": "-3x",
+        "C": "c",
+        "D": "j'(x)"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of a linear function with no x-intercept term (-3x) is the coefficient of x. So, the derivative of j(x) = -3x + c is -3.",
+      "explanation": "Constants don't affect the rate of change; only the coefficient of x matters in a linear function.",
+      "common_mistake_notes": "A common mistake would be selecting 'C' (c), as some might think that constants affect the derivative. However, for linear functions, constants do not contribute to the derivative."
+    },
+    {
+      "id": "SixConstant",
+      "stem": "What is the rate of change of the function k(x) = 4x^2 + 6x + 9 at x = 0?",
+      "choices": {
+        "A": "0",
+        "B": "4",
+        "C": "6",
+        "D": "15"
+      },
+      "correct_choice": "A",
+      "solution": "The rate of change is the derivative. At x = 0, the derivative of k(x) = 4x^2 + 6x + 9 is 0.",
+      "explanation": "Constants don't affect the rate of change; only the coefficients and powers of x matter in a polynomial function. At x = 0, the coefficient of x matters.",
+      "common_mistake_notes": "A common mistake would be selecting 'D' (15), as some might think that the derivative at x = 0 is the sum of coefficients. However, for polynomial functions, it's the derivative evaluated at x = 0."
+    },
+    {
+      "id": "SevenConstant",
+      "stem": "What is the derivative of the function l(x) = 2sin(x) + 3cos(x) + 8?",
+      "choices": {
+        "A": "2cos(x)",
+        "B": "3sin(x)",
+        "C": "2cos(x) + 3sin(x)",
+        "D": "l'(x)"
+      },
+      "correct_choice": "C",
+      "solution": "The derivative of a constant function is always zero. So, the derivative of l(x) = 2sin(x) + 3cos(x) + 8 is 2cos(x) + 3sin(x).",
+      "explanation": "Constants don't change with respect to x, so they do not affect the derivative. The derivatives of sin(x) and cos(x) are cos(x) and -sin(x), respectively.",
+      "common_mistake_notes": "A common mistake would be selecting 'D' (l'(x)), as some might think that the derivative is a function of x. However, for constant functions within a trigonometric expression, only the non-constant parts contribute to the derivative."
+    }
+  ]
+}

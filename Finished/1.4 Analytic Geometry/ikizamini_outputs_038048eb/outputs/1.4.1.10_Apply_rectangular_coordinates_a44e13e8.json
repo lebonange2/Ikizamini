@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.1.10",
+  "objective_text": "Apply rectangular coordinates",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "What is the rectangular coordinate of a point located 3 units to the right and 4 units up from the origin?",
+      "choices": {
+        "A": "(4, 3)",
+        "B": "(3, 4)",
+        "C": "(7, 0)",
+        "D": "(-3, -4)"
+      },
+      "correct_choice": "B",
+      "solution": "Rectangular coordinates are represented as (x, y), where x is the horizontal distance from the origin and y is the vertical distance. The point at 3 units right and 4 units up has coordinates (3, 4).",
+      "explanation": "The order of coordinates matters: first x, then y.",
+      "common_mistake_notes": "A common mistake is reversing the order of the coordinates. Remember that x comes before y."
+    },
+    {
+      "id": "Xyz789",
+      "stem": "What are the rectangular coordinates of a point located 2 units to the left and 1 unit down from the origin?",
+      "choices": {
+        "A": "(1, -2)",
+        "B": "(-2, 1)",
+        "C": "(-1, 2)",
+        "D": "(2, -1)"
+      },
+      "correct_choice": "D",
+      "solution": "Rectangular coordinates are represented as (x, y), where x is the horizontal distance from the origin and y is the vertical distance. A point 2 units left and 1 unit down has coordinates (-2, -1).",
+      "explanation": "Both x and y can be negative if the point is in a quadrant opposite the origin.",
+      "common_mistake_notes": "A common mistake is forgetting to include negative signs for coordinates in the third or fourth quadrant."
+    },
+    {
+      "id": "Qwe456",
+      "stem": "What are the rectangular coordinates of a point on the x-axis, 7 units away from the origin?",
+      "choices": {
+        "A": "(0, 7)",
+        "B": "(7, 0)",
+        "C": "(-7, 0)",
+        "D": "(0, -7)"
+      },
+      "correct_choice": "B",
+      "solution": "Points on the x-axis have a y-coordinate of 0. A point 7 units along the x-axis has coordinates (7, 0).",
+      "explanation": "On the x-axis, all points have a y-coordinate of 0.",
+      "common_mistake_notes": "A common mistake is assuming the point would be on the positive or negative y-axis instead of the x-axis."
+    },
+    {
+      "id": "Rty789",
+      "stem": "What are the rectangular coordinates of a point on the y-axis, 3 units away from the origin?",
+      "choices": {
+        "A": "(0, 3)",
+        "B": "(3, 0)",
+        "C": "(-3, 0)",
+        "D": "(0, -3)"
+      },
+      "correct_choice": "A",
+      "solution": "Points on the y-axis have an x-coordinate of 0. A point 3 units along the y-axis has coordinates (0, 3).",
+      "explanation": "On the y-axis, all points have an x-coordinate of 0.",
+      "common_mistake_notes": "A common mistake is assuming the point would be on the positive or negative x-axis instead of the y-axis."
+    },
+    {
+      "id": "Uij123",
+      "stem": "What is the distance between the points (2, 5) and (-4, -3)?",
+      "choices": {
+        "A": "9",
+        "B": "10",
+        "C": "11",
+        "D": "12"
+      },
+      "correct_choice": "B",
+      "solution": "The distance between two points in a rectangular coordinate system is calculated using the distance formula: d = sqrt((x2 - x1)^2 + (y2 - y1)^2). For points (2, 5) and (-4, -3), d = sqrt((-4 - 2)^2 + (-3 - 5)^2) = sqrt(36 + 64) = sqrt(100) = 10.",
+      "explanation": "The distance formula gives the straight-line distance between two points in a coordinate plane.",
+      "common_mistake_notes": "A common mistake is forgetting to square the differences and take the square root."
+    },
+    {
+      "id": "Kol789",
+      "stem": "What is the slope of the line passing through the points (3, 1) and (-2, -4)?",
+      "choices": {
+        "A": "-1",
+        "B": "1/3",
+        "C": "-5/3",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "The slope of a line passing through two points (x1, y1) and (x2, y2) is calculated as m = (y2 - y1) / (x2 - x1). For points (3, 1) and (-2, -4), m = (-4 - 1) / (-2 - 3) = -5 / -5 = 1. The slope is positive if the line rises to the right, negative if it falls to the right.",
+      "explanation": "The slope of a line describes its steepness and direction.",
+      "common_mistake_notes": "A common mistake is reversing the order of coordinates when calculating the slope."
+    },
+    {
+      "id": "Mno456",
+      "stem": "What is the equation of the line passing through the points (1, 2) and (3, 6)?",
+      "choices": {
+        "A": "y = x + 1",
+        "B": "y = 2x - 1",
+        "C": "y = 2x + 1",
+        "D": "y = 2x"
+      },
+      "correct_choice": "D",
+      "solution": "The equation of a line in slope-intercept form is y = mx + b, where m is the slope and b is the y- intercept. First, find the slope: m = (6 - 2) / (3 - 1) = 4 / 2 = 2. Then, substitute one point into the equation to solve for b: using (1, 2), 2 = 2(1) + b => b = 0. The equation is y = 2x.",
+      "explanation": "The slope-intercept form gives the slope and y-intercept directly.",
+      "common_mistake_notes": "A common mistake is using the wrong point to find the y-intercept."
+    }
+  ]
+}

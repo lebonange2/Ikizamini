@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.13.11",
+  "objective_text": "Use in fluid dynamics",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the primary function of a venturi meter in fluid dynamics?",
+      "choices": {
+        "A": "To increase pressure by reducing flow velocity.",
+        "B": "To measure flow rate by creating a pressure difference.",
+        "C": "To mix two fluids of different densities.",
+        "D": "To regulate fluid temperature."
+      },
+      "correct_choice": "B",
+      "solution": "A venturi meter is used to measure the flow rate of a fluid by creating a pressure difference due to changes in the cross-sectional area. As the fluid flows through the constricted section, its velocity increases, and according to Bernoulli's principle, the pressure decreases. This pressure difference can be measured and correlated with the flow rate.",
+      "explanation": "The other options describe functions of different devices or processes not directly related to the primary purpose of a venturi meter.",
+      "common_mistake_notes": "Common mistake: Choosing A, which describes a diffuser that increases pressure by reducing velocity."
+    },
+    {
+      "id": ":2",
+      "stem": "In fluid dynamics, what is the relationship between pressure and velocity according to Bernoulli's principle?",
+      "choices": {
+        "A": "Pressure is directly proportional to velocity.",
+        "B": "Pressure is inversely proportional to velocity.",
+        "C": "Pressure is independent of velocity.",
+        "D": "An increase in pressure results in an increase in velocity."
+      },
+      "correct_choice": "B",
+      "solution": "Bernoulli's principle states that the total energy per unit volume of a fluid remains constant along a streamline, assuming no friction and no work being done on or by the fluid. This means that as the velocity of the fluid increases, its pressure decreases, and vice versa.",
+      "explanation": "The other options do not accurately represent the relationship described by Bernoulli's principle.",
+      "common_mistake_notes": "Common mistake: Choosing A, which incorrectly assumes a direct proportionality."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the primary reason for turbulence in fluid flow?",
+      "choices": {
+        "A": "High viscosity of the fluid.",
+        "B": "Uneven heating or cooling of the fluid.",
+        "C": "Abrupt changes in pipe diameter or direction.",
+        "D": "Low pressure within the fluid."
+      },
+      "correct_choice": "C",
+      "solution": "Turbulence in fluid flow is primarily caused by sudden changes in the flow path, such as a reduction in pipe diameter (like in a venturi meter) or a change in direction. These abrupt changes disrupt the smooth flow and create eddies and swirls, leading to turbulence.",
+      "explanation": "The other options may affect fluid behavior but are not primary causes of turbulence.",
+      "common_mistake_notes": "Common mistake: Choosing A, which might lead one to think that high viscosity would cause turbulence, but it actually tends to dampen turbulent flow."
+    },
+    {
+      "id": ":4",
+      "stem": "In a hydraulic system, what is the purpose of a pressure relief valve?",
+      "choices": {
+        "A": "To maintain constant fluid velocity.",
+        "B": "To regulate the flow rate through the system.",
+        "C": "To prevent excessive pressure buildup in the system.",
+        "D": "To ensure uniform temperature throughout the fluid."
+      },
+      "correct_choice": "C",
+      "solution": "A pressure relief valve is designed to protect a hydraulic system from damage caused by excessive pressure. It automatically opens when the pressure exceeds a predetermined threshold, allowing fluid to flow out and reducing the overall pressure in the system.",
+      "explanation": "The other options describe functions of different components or processes not directly related to a pressure relief valve.",
+      "common_mistake_notes": "Common mistake: Choosing B, which describes the function of a flow control valve, not a pressure relief valve."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the role of surface tension in fluid dynamics?",
+      "choices": {
+        "A": "It causes fluids to expand and contract with temperature changes.",
+        "B": "It helps fluids adhere to solid surfaces, like in capillary action.",
+        "C": "It creates resistance to flow by increasing the internal friction within the fluid.",
+        "D": "It affects the boiling point of a fluid, making it higher than its pure state."
+      },
+      "correct_choice": "B",
+      "solution": "Surface tension is the phenomenon where the surface molecules of a liquid are attracted to each other more strongly than they are to the surrounding air or another fluid. This property causes fluids to form droplets, cling to surfaces, and exhibit capillary action.",
+      "explanation": "The other options describe effects related to temperature, internal friction, and boiling point, which are not directly caused by surface tension.",
+      "common_mistake_notes": "Common mistake: Choosing C, which describes the effect of viscosity on fluid flow, not surface tension."
+    },
+    {
+      "id": ":6",
+      "stem": "In a wind tunnel, what is the primary purpose of the test section?",
+      "choices": {
+        "A": "To generate and maintain a uniform airflow.",
+        "B": "To measure the temperature and humidity of the air.",
+        "C": "To house and protect the instruments used to measure pressure.",
+        "D": "To create turbulence in the airflow for testing purposes."
+      },
+      "correct_choice": "A",
+      "solution": "The test section of a wind tunnel is designed to provide a controlled, uniform airflow over the object being tested. This allows researchers to study the aerodynamic properties of the object without interference from external factors.",
+      "explanation": "The other options describe functions that may be part of a wind tunnel but are not the primary purpose of the test section.",
+      "common_mistake_notes": "Common mistake: Choosing D, which might seem logical for turbulence testing, but wind tunnels can create turbulence in different ways, and the test section's main focus is on maintaining a uniform flow."
+    },
+    {
+      "id": ":7",
+      "stem": "What principle governs the movement of fluids through a porous medium, such as soil?",
+      "choices": {
+        "A": "Archimedes' principle",
+        "B": "Boyle's law",
+        "C": "Darcy's law",
+        "D": "Ohm's law"
+      },
+      "correct_choice": "C",
+      "solution": "Darcy's law describes the flow of fluids through a porous medium, taking into account factors such as fluid viscosity, pressure difference, and the properties of the medium itself. It is widely used in fields like hydrogeology to understand groundwater movement.",
+      "explanation": "The other options describe principles unrelated to fluid flow through porous media.",
+      "common_mistake_notes": "Common mistake: Choosing A, which deals with buoyancy and is not specific to fluid flow through a porous medium."
+    }
+  ]
+}

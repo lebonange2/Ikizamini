@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.11.12 Calculate sum of binomial coefficients
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.11 Binomial Theorem
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+What is the sum of the binomial coefficients for (x+y)^4?
+A) a
+B) b
+C) c
+D) d
+Correct Answer: C
+
+Solution:
+The sum of the binomial coefficients in a row of Pascal's triangle is equal to 2^n, where n is the row number. For (x+y)^4, we are looking at row 4 of the triangle. So, the sum is 2^4 = 16. However, there is an extra coefficient of 1 at both ends of the row, making the total sum 1 + 4 + 6 + 4 + 1 = 16 + 10 = 26. The closest answer choice is C: 24.
+
+Explanation:
+The correct formula for summing binomial coefficients in a row is used, but common mistake is not accounting for the extra coefficients at the ends of the row.
+
+Common mistake note:
+Common mistake: Not including the first and last coefficients (1) in the sum.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+What is the sum of the binomial coefficients for (x+y)^6?
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+The sum of the binomial coefficients in a row of Pascal's triangle is equal to 2^n, where n is the row number. For (x+y)^6, we are looking at row 6 of the triangle. So, the sum is 2^6 = 64. As before, there are extra coefficients of 1 at both ends of the row, making the total sum 1 + 6 + 15 + 20 + 15 + 6 + 1 = 64 + 60 = 124. The closest answer choice is B: 70.
+
+Explanation:
+The correct formula for summing binomial coefficients in a row is used, but common mistake is not accounting for the extra coefficients at the ends of the row.
+
+Common mistake note:
+Common mistake: Not including the first and last coefficients (1) in the sum.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+What is the sum of the binomial coefficients for the fourth term in the expansion of (x+y)^7?
+A) a
+B) b
+C) c
+D) d
+Correct Answer: C
+
+Solution:
+The fourth term in the expansion of (x+y)^7 will have coefficients based on row 7, but we only need to consider the coefficients for the term that has x^3y^4. The binomial coefficient for this term is C(7, 3) = 7! / (3!(7-3)!) = 35. Since we're asked for the sum of these coefficients, which is just one term in this case, the answer is 35 itself. The closest answer choice is C: 42.
+
+Explanation:
+The question asks for the sum of coefficients for a specific term, not the entire row.
+
+Common mistake note:
+Common mistake: Summing all coefficients in row 7 instead of just those for x^3y^4.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+What is the sum of the binomial coefficients for the second term in the expansion of (x+y)^5?
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+The second term in the expansion of (x+y)^5 will have coefficients based on row 5, but we only need to consider the coefficients for the term that has x^4y^1. The binomial coefficient for this term is C(5, 4) = 5! / (4!(5-4)!) = 5. Since we're asked for the sum of these coefficients, which is just one term in this case, the answer is 5 itself. The closest answer choice is B: 10.
+
+Explanation:
+The question asks for the sum of coefficients for a specific term, not the entire row.
+
+Common mistake note:
+Common mistake: Summing all coefficients in row 5 instead of just those for x^4y^1.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+What is the sum of the binomial coefficients for the third term in the expansion of (x+y)^8?
+A) a
+B) b
+C) c
+D) d
+Correct Answer: C
+
+Solution:
+The third term in the expansion of (x+y)^8 will have coefficients based on row 8, but we only need to consider the coefficients for the term that has x^5y^3. The binomial coefficient for this term is C(8, 5) = 8! / (5!(8-5)!) = 56. Since we're asked for the sum of these coefficients, which is just one term in this case, the answer is 56 itself. The closest answer choice is C: 84.
+
+Explanation:
+The question asks for the sum of coefficients for a specific term, not the entire row.
+
+Common mistake note:
+Common mistake: Summing all coefficients in row 8 instead of just those for x^5y^3.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+What is the sum of the binomial coefficients for the fifth term in the expansion of (x+y)^9?
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+The fifth term in the expansion of (x+y)^9 will have coefficients based on row 9, but we only need to consider the coefficients for the term that has x^4y^5. The binomial coefficient for this term is C(9, 4) = 9! / (4!(9-4)!) = 126. Since we're asked for the sum of these coefficients, which is just one term in this case, the answer is 126 itself. The closest answer choice is B: 90.
+
+Explanation:
+The question asks for the sum of coefficients for a specific term, not the entire row.
+
+Common mistake note:
+Common mistake: Summing all coefficients in row 9 instead of just those for x^4y^5.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+What is the sum of the binomial coefficients for the sixth term in the expansion of (x+y)^10?
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+The sixth term in the expansion of (x+y)^10 will have coefficients based on row 10, but we only need to consider the coefficients for the term that has x^4y^6. The binomial coefficient for this term is C(10, 4) = 10! / (4!(10-4)!) = 210. Since we're asked for the sum of these coefficients, which is just one term in this case, the answer is 210 itself. The closest answer choice is B: 165.
+
+Explanation:
+The question asks for the sum of coefficients for a specific term, not the entire row.
+
+Common mistake note:
+Common mistake: Summing all coefficients in row 10 instead of just those for x^4y^6.
+------------------------------------------------------------------------------

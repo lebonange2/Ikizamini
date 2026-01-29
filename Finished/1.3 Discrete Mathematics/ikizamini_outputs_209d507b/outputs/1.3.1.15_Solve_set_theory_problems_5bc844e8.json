@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.1.15",
+  "objective_text": "Solve set theory problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Given sets A = {1, 2, 3} and B = {2, 3, 4}, what is the intersection of sets A and B?",
+      "choices": {
+        "A": "{1, 2, 3}",
+        "B": "{2, 3, 4}",
+        "C": "{1, 4}",
+        "D": "{2, 3}"
+      },
+      "correct_choice": "D",
+      "solution": "The intersection of sets A and B contains elements that are common to both sets. In this case, the intersection is {2, 3} because these elements appear in both A and B.",
+      "explanation": "Intersection of sets: The set containing all elements that are both in set A and set B.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which represent the original sets without considering their intersection."
+    },
+    {
+      "id": ":2",
+      "stem": "What is the union of sets C = {3, 5, 7} and D = {5, 6, 7}? Write your answer in roster form.",
+      "choices": {
+        "A": "{3, 4, 5, 6, 7}",
+        "B": "{3, 5, 6, 7}",
+        "C": "{3, 5, 7}",
+        "D": "{5, 6, 7}"
+      },
+      "correct_choice": "B",
+      "solution": "The union of sets C and D contains all elements from both sets, without repetition. In roster form, it is {3, 5, 6, 7}.",
+      "explanation": "Union of sets: The set containing all elements that are in either set A or set B (or both), without duplicates.",
+      "common_mistake_notes": "Common mistake: Including elements not in either set (like 4) or repeating elements from one set."
+    },
+    {
+      "id": ":3",
+      "stem": "Given the universal set U = {1, 2, 3, 4, 5} and set E = {2, 4}, what is the complement of set E? Write your answer in roster form.",
+      "choices": {
+        "A": "{1, 3, 5}",
+        "B": "{2, 4}",
+        "C": "{1, 2, 3, 5}",
+        "D": "{1, 2, 3, 4, 5}"
+      },
+      "correct_choice": "A",
+      "solution": "The complement of set E contains all elements in the universal set U that are not in set E. In roster form, it is {1, 3, 5}.",
+      "explanation": "Complement of a set: The set containing all elements in the universal set that are not in the given set.",
+      "common_mistake_notes": "Common mistake: Including elements from set E or missing elements from U."
+    },
+    {
+      "id": ":4",
+      "stem": "Set F = {x | x is an even number less than 10} and G = {x | x is a prime number less than 10}. What is the intersection of sets F and G?",
+      "choices": {
+        "A": "{2, 4}",
+        "B": "{2}",
+        "C": "{2, 3, 5}",
+        "D": "{1, 2, 3, 4, 5}"
+      },
+      "correct_choice": "B",
+      "solution": "The intersection of sets F and G contains the even prime number less than 10, which is 2.",
+      "explanation": "Intersection of sets: The set containing all elements that are both in set A and set B.",
+      "common_mistake_notes": "Common mistake: Including non-prime even numbers or forgetting that 2 is the only even prime."
+    },
+    {
+      "id": ":5",
+      "stem": "Set H = {x | x is a multiple of 3 less than 15} and I = {x | x is an odd number less than 15}. What is the union of sets H and I?",
+      "choices": {
+        "A": "{3, 6, 9, 12, 5, 7, 9, 11, 13}",
+        "B": "{3, 6, 9, 12, 15}",
+        "C": "{5, 7, 9, 11, 13}",
+        "D": "{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}"
+      },
+      "correct_choice": "A",
+      "solution": "The union of sets H and I contains all multiples of 3 less than 15 (3, 6, 9, 12) and odd numbers less than 15 (5, 7, 9, 11, 13).",
+      "explanation": "Union of sets: The set containing all elements that are in either set A or set B (or both), without duplicates.",
+      "common_mistake_notes": "Common mistake: Including numbers not in either set or repeating elements from one set."
+    },
+    {
+      "id": ":6",
+      "stem": "Set J = {x | x is a perfect square less than 10} and K = {x | x is an integer between -5 and 5}. What is the complement of set J with respect to set K?",
+      "choices": {
+        "A": "{-5, -4, -3, -2, -1, 0, 1, 6, 7, 8, 9}",
+        "B": "{-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}",
+        "C": "{-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}",
+        "D": "{-5, -4, -3, -2, -1, 6, 7, 8, 9}"
+      },
+      "correct_choice": "A",
+      "solution": "The complement of set J with respect to set K contains all elements in set K that are not perfect squares less than 10. In roster form, it is {-5, -4, -3, -2, -1, 0, 1, 6, 7, 8, 9}.",
+      "explanation": "Complement of a set: The set containing all elements in the universal set that are not in the given set.",
+      "common_mistake_notes": "Common mistake: Including perfect squares or missing numbers from the range -5 to 5."
+    },
+    {
+      "id": ":7",
+      "stem": "Set L = {x | x is a positive integer less than 10} and M = {x | x is an even positive integer less than 10}. What is the difference between set L and set M?",
+      "choices": {
+        "A": "{1, 3, 5, 7, 9}",
+        "B": "{2, 4, 6, 8}",
+        "C": "{1, 2, 3, 4, 5, 6, 7, 8, 9}",
+        "D": "{0}"
+      },
+      "correct_choice": "A",
+      "solution": "The difference between set L and set M contains all positive integers less than 10 that are not even. In roster form, it is {1, 3, 5, 7, 9}.",
+      "explanation": "Difference of sets: The set containing elements that are in the first set but not in the second set.",
+      "common_mistake_notes": "Common mistake: Including even numbers or missing odd numbers from set L."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.6",
+  "objective_text": "Divide complex numbers in polar form",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the quotient of the complex numbers (4cis(π/3)) and (2cis(π/6)). Express your answer in polar form.",
+      "choices": {
+        "A": "(2 cis(π/2))",
+        "B": "(4 cis(π/6))",
+        "C": "(2 cis(π/3))",
+        "D": "(√2 cis(π/3))"
+      },
+      "correct_choice": "D",
+      "solution": "(4cis(π/3)) / (2cis(π/6)) = (2^2 cis(2π/3)) / (2cis(π/6)) = 2cis((2π/3) - (π/6)) = 2cis(π/2) = (√2 cis(π/2)). The correct answer is D.",
+      "explanation": "To divide complex numbers in polar form, you divide the magnitudes and subtract the angles. In this case, the magnitude ratio is 4 / 2 = 2 and the angle difference is (2π/3) - (π/6) = π/2. The result is (√2 cis(π/2)).",
+      "common_mistake_notes": "A common mistake is to add the angles instead of subtracting them, which would lead to answer B."
+    },
+    {
+      "id": "2",
+      "stem": "Divide the complex numbers (3cis(5π/4)) and (1cis(π/4)). Express your answer in polar form.",
+      "choices": {
+        "A": "(3 cis(π/2))",
+        "B": "(3 cis(π))",
+        "C": "(3 cis(π/4))",
+        "D": "(3 cis(3π/4))"
+      },
+      "correct_choice": "A",
+      "solution": "(3cis(5π/4)) / (1cis(π/4)) = 3cis((5π/4) - (π/4)) = 3cis(π/2). The correct answer is A.",
+      "explanation": "When dividing complex numbers in polar form, you divide the magnitudes and subtract the angles. Here, the magnitude ratio is 3 / 1 = 3, and the angle difference is (5π/4) - (π/4) = π/2. The result is (3 cis(π/2)).",
+      "common_mistake_notes": "A common mistake is to multiply the magnitudes instead of dividing them, which would lead to an incorrect answer."
+    },
+    {
+      "id": "3",
+      "stem": "Find the quotient of the complex numbers (6cis(-π/3)) and (2cis(π/3)). Express your answer in polar form.",
+      "choices": {
+        "A": "(3 cis(0))",
+        "B": "(3 cis(π))",
+        "C": "(3 cis(π/3))",
+        "D": "(3 cis(-π/3))"
+      },
+      "correct_choice": "A",
+      "solution": "(6cis(-π/3)) / (2cis(π/3)) = 3cis((-π/3) - (π/3)) = 3cis(0). The correct answer is A.",
+      "explanation": "When dividing complex numbers, you divide the magnitudes and subtract the angles. Here, the magnitude ratio is 6 / 2 = 3, and the angle difference is (-π/3) - (π/3) = 0. The result is (3 cis(0)).",
+      "common_mistake_notes": "A common mistake is to add the angles instead of subtracting them, which would lead to an incorrect answer."
+    },
+    {
+      "id": "4",
+      "stem": "Divide the complex numbers (8cis(2π)) and (4cis(π/2)). Express your answer in polar form.",
+      "choices": {
+        "A": "(2 cis(3π/2))",
+        "B": "(2 cis(π))",
+        "C": "(2 cis(π/2))",
+        "D": "(2 cis(0))"
+      },
+      "correct_choice": "D",
+      "solution": "(8cis(2π)) / (4cis(π/2)) = 2cis((2π) - (π/2)) = 2cis(3π/2). The correct answer is D.",
+      "explanation": "When dividing complex numbers, you divide the magnitudes and subtract the angles. Here, the magnitude ratio is 8 / 4 = 2, and the angle difference is (2π) - (π/2) = 3π/2. The result is (2 cis(3π/2)).",
+      "common_mistake_notes": "A common mistake is to forget that dividing by a multiple of 2π does not change the complex number, which would lead to an incorrect answer."
+    },
+    {
+      "id": "5",
+      "stem": "Find the quotient of the complex numbers (10cis(7π/6)) and (5cis(π/3)). Express your answer in polar form.",
+      "choices": {
+        "A": "(2 cis(π))",
+        "B": "(2 cis(π/2))",
+        "C": "(2 cis(π/3))",
+        "D": "(2 cis(5π/6))"
+      },
+      "correct_choice": "B",
+      "solution": "(10cis(7π/6)) / (5cis(π/3)) = 2cis(((7π/6) - (π/3)) mod 2π) = 2cis(π/2). The correct answer is B.",
+      "explanation": "When dividing complex numbers, you divide the magnitudes and subtract the angles. Here, the magnitude ratio is 10 / 5 = 2, and the angle difference is (7π/6) - (π/3) = π/2. Since we're working in polar form, we need to express the angle within the range of [0, 2π). The result is (2 cis(π/2)).",
+      "common_mistake_notes": "A common mistake is to forget to adjust the angle to be within the range [0, 2π), which would lead to an incorrect answer."
+    },
+    {
+      "id": "6",
+      "stem": "Divide the complex numbers (7cis(4π/3)) and (1cis(-π/3)). Express your answer in polar form.",
+      "choices": {
+        "A": "(7 cis(π))",
+        "B": "(7 cis(π/2))",
+        "C": "(7 cis(5π/6))",
+        "D": "(7 cis(π/3))"
+      },
+      "correct_choice": "A",
+      "solution": "(7cis(4π/3)) / (1cis(-π/3)) = 7cis(((4π/3) - (-π/3)) mod 2π) = 7cis(5π/3). The correct answer is A.",
+      "explanation": "When dividing complex numbers, you divide the magnitudes and subtract the angles. Here, the magnitude ratio is 7 / 1 = 7, and the angle difference is (4π/3) - (-π/3) = 5π/3. Since we're working in polar form, we need to express the angle within the range of [0, 2π). The result is (7 cis(5π/3)).",
+      "common_mistake_notes": "A common mistake is to forget to adjust the angle to be within the range [0, 2π), which would lead to an incorrect answer."
+    },
+    {
+      "id": "7",
+      "stem": "Find the quotient of the complex numbers (9cis(11π/4)) and (3cis(π/4)). Express your answer in polar form.",
+      "choices": {
+        "A": "(3 cis(2π))",
+        "B": "(3 cis(3π/2))",
+        "C": "(3 cis(π))",
+        "D": "(3 cis(5π/4))"
+      },
+      "correct_choice": "B",
+      "solution": "(9cis(11π/4)) / (3cis(π/4)) = 3cis(((11π/4) - (π/4)) mod 2π) = 3cis(5π/2). The correct answer is B.",
+      "explanation": "When dividing complex numbers, you divide the magnitudes and subtract the angles. Here, the magnitude ratio is 9 / 3 = 3, and the angle difference is (11π/4) - (π/4) = 5π/2. Since we're working in polar form, we need to express the angle within the range of [0, 2π). The result is (3 cis(5π/2)).",
+      "common_mistake_notes": "A common mistake is to forget to adjust the angle to be within the range [0, 2π), which would lead to an incorrect answer."
+    }
+  ]
+}

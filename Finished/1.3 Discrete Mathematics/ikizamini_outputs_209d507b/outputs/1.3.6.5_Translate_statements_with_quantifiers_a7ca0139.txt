@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.6.5 Translate statements with quantifiers
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.6 Predicates and Quantifiers
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Which statement best represents the universal quantifier 'for all'?
+A) There exists at least one.
+B) There are no elements.
+C) For each and every element.
+D) At most one element.
+Correct Answer: C
+
+Solution:
+The universal quantifier 'for all' means that a statement is true for each and every element in a set. Choice C accurately represents this concept.
+
+Explanation:
+A universal quantification asserts that a property holds for all elements of a domain. Option A refers to an existential quantifier, option B implies the negation of a universal quantifier (vacuously true when the set is empty), and option D refers to a particular case of at most one element.
+
+Common mistake note:
+Common mistake: Choosing A instead of C, which represents an existential quantification rather than a universal one.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Which statement best represents the existential quantifier 'there exists at least one'?
+A) For each and every element.
+B) There are no elements.
+C) At most one element.
+D) There is at least one element.
+Correct Answer: D
+
+Solution:
+The existential quantifier 'there exists at least one' means that there is at least one element in a set for which the statement is true. Choice D accurately represents this concept.
+
+Explanation:
+An existential quantification asserts that there is at least one element in the domain for which the property holds. Option A refers to a universal quantifier, option B implies the negation of an existential quantifier (vacuously true when the set is empty), and option C refers to a particular case of at most one element.
+
+Common mistake note:
+Common mistake: Choosing A instead of D, which represents a universal quantification rather than an existential one.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Translate the statement 'There does not exist an integer x such that 2x + 1 = 5' into symbolic form using quantifiers.
+A) βx ∈ Z | 2x + 1 = 5
+B) δx ∈ Z | 2x + 1 ≠ 5
+C) βx ∈ Z | 2x + 1 ≠ 5
+D) δx ∈ Z | 2x + 1 = 5
+Correct Answer: C
+
+Solution:
+The symbolic form using quantifiers for the statement would be 'βx ∈ Z | 2x + 1 ≠ 5', which means 'There exists no integer x such that 2x + 1 is not equal to 5'.
+
+Explanation:
+The negation of 'there exists at least one' is 'for all' with a negated predicate. In this case, the predicate is '2x + 1 = 5', so its negation is '2x + 1 ≠ 5'. The symbol 'β' represents 'there exists not' or 'for all' in symbolic logic.
+
+Common mistake note:
+Common mistake: Choosing A instead of C, which uses the incorrect quantifier for negation.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Which statement best represents the negation of 'For every real number x, there exists a real number y such that x < y':
+A) βx ∈ R | βy ∈ R | x >= y
+B) δx ∈ R | εy ∈ R | x < y
+C) εx ∈ R | βy ∈ R | x >= y
+D) εx ∈ R | εy ∈ R | x < y
+Correct Answer: A
+
+Solution:
+The negation of the given statement is 'βx ∈ R | βy ∈ R | x >= y', which means 'For every real number x, there exists a real number y such that x is greater than or equal to y'.
+
+Explanation:
+The negation of a universal quantification followed by an existential quantification is an existential quantification followed by a universal quantification with the predicate negated. In this case, the original predicate is 'x < y', so its negation is 'x >= y'. The symbol 'ε' represents 'there exists' in symbolic logic.
+
+Common mistake note:
+Common mistake: Choosing B instead of A, which incorrectly switches the order of quantifiers.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Translate the statement 'No integer is both even and odd' into symbolic form using quantifiers.
+A) βx ∈ Z | x % 2 = 0 ∧ x % 2 = 1
+B) εx ∈ Z | x % 2 = 0 ∧ x % 2 = 1
+C) βx ∈ Z | x % 2 = 0 ∩ x % 2 = 1
+D) εx ∈ Z | x % 2 = 0 ∩ x % 2 = 1
+Correct Answer: D
+
+Solution:
+The symbolic form using quantifiers for the statement would be 'εx ∈ Z | x % 2 = 0 ∩ x % 2 = 1', which means 'There exists no integer x such that x is both even and odd'.
+
+Explanation:
+The negation of a statement involving both an existential quantifier and a universal quantifier can be represented by negating the entire statement. In this case, the predicate is 'x % 2 = 0 ∩ x % 2 = 1', which means 'x is even and x is odd'. Since no integer can be both even and odd simultaneously, the negation of this statement is true.
+
+Common mistake note:
+Common mistake: Choosing A instead of D, which uses the incorrect quantifier for negation.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Which statement best represents the contrapositive of 'If a number is divisible by 3, then it is even':
+A) If a number is not divisible by 3, then it is odd.
+B) If a number is divisible by 3, then it is not even.
+C) If a number is not even, then it is divisible by 3.
+D) If a number is even, then it is divisible by 3.
+Correct Answer: A
+
+Solution:
+The contrapositive of the given statement is 'If a number is not divisible by 3, then it is odd', which can be symbolically represented as 'εx ∈ Z | x % 3 ≠ 0 → x % 2 = 1'.
+
+Explanation:
+The contrapositive of a conditional statement 'If A, then B' is 'If not B, then not A'. In this case, the original predicate 'B' is 'x is even', and its negation is 'x is odd'; the original antecedent 'A' is 'x is divisible by 3', and its negation is 'x is not divisible by 3'.
+
+Common mistake note:
+Common mistake: Choosing B instead of A, which incorrectly keeps the original statement's direction.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Translate the symbolic statement 'βx ∈ R | x > 0' into English.
+A) There exists a real number x such that x is less than zero.
+B) For every real number x, x is greater than zero.
+C) No real number x is greater than zero.
+D) At least one real number x is less than or equal to zero.
+Correct Answer: B
+
+Solution:
+The symbolic statement 'βx ∈ R | x > 0' translates to 'For every real number x, x is greater than zero'.
+
+Explanation:
+The symbol 'β' represents the universal quantifier 'for all', and the predicate 'x > 0' means that x is greater than zero. Therefore, the statement asserts that this property holds for all real numbers.
+
+Common mistake note:
+Common mistake: Choosing A instead of B, which incorrectly uses the existential quantifier instead of a universal one.
+------------------------------------------------------------------------------

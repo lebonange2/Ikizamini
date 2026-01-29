@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.8",
+  "objective_text": "Use maximum modulus principle",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ": 1",
+      "stem": "Let f(z) = z^2 + 2z + 3 be a complex function defined on the closed unit disk |z| ≤ 1. What is the maximum value of |f(z)|?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "4"
+      },
+      "correct_choice": "D",
+      "solution": "The maximum modulus principle states that if a function is holomorphic (analytic) in a bounded domain and continuous on its boundary, then the maximum of the absolute value of the function is attained on the boundary. Since f(z) = z^2 + 2z + 3 is a polynomial and thus analytic everywhere, we only need to consider the values on the unit circle |z| = 1. Let z = cos(θ) + i*sin(θ), then |f(z)| = |(cos(θ) + i*sin(θ))^2 + 2(cos(θ) + i*sin(θ)) + 3|.",
+      "explanation": "Expanding and simplifying gives us |cos^2(θ) - sin^2(θ) + 2i*sin(θ)*cos(θ) + 2*cos(θ) + 6 + 2i*sin(θ)| = |(cos(2θ) + 1) + (sin(2θ) + 2) * i|.",
+      "common_mistake_notes": "A common mistake is to assume that the maximum value is attained at an interior point of the disk, but this is not guaranteed without the maximum modulus principle. Another possible mistake is forgetting to convert z to polar form when working with the unit circle boundary."
+    },
+    {
+      "id": ": 2",
+      "stem": "Consider the function g(z) = e^z defined on the closed disk |z| ≤ 3. What is the maximum value of |g(z)|?",
+      "choices": {
+        "A": "1",
+        "B": "e",
+        "C": "e^3",
+        "D": "e^6"
+      },
+      "correct_choice": "C",
+      "solution": "The function g(z) = e^z is entire (holomorphic on the entire complex plane), so we can again apply the maximum modulus principle. We only need to consider the values on the boundary |z| = 3. Let z = 3cis(θ), where cis(θ) = cos(θ) + i*sin(θ). Then |g(z)| = |e^(3cis(θ))|.",
+      "explanation": "The magnitude of an exponential function with a complex argument is given by the absolute value of its base raised to the real part of the argument. Thus, |e^(3cis(θ))| = e^(3*cos(θ)). Since -1 ≤ cos(θ) ≤ 1 for all θ, the maximum value occurs when cos(θ) = 1, which gives us |g(z)| = e^3.",
+      "common_mistake_notes": "A common mistake is to forget that we are looking for the maximum modulus and not the actual function value. Another possible error is assuming that the maximum value is attained at θ = 0 without considering the entire boundary."
+    },
+    {
+      "id": ": 3",
+      "stem": "Find the maximum value of |h(z)| on the closed disk |z - 2i| ≤ 4, where h(z) = z^3 - 6z^2 + 11z - 6.",
+      "choices": {
+        "A": "0",
+        "B": "5",
+        "C": "16",
+        "D": "27"
+      },
+      "correct_choice": "C",
+      "solution": "The function h(z) is a polynomial and thus holomorphic everywhere. We need to consider the values on the boundary |z - 2i| = 4. Let z = 2i + 4cis(θ), then |h(z)| = |(2i + 4cis(θ))^3 - 6(2i + 4cis(θ))^2 + 11(2i + 4cis(θ)) - 6|.",
+      "explanation": "Expanding and simplifying gives us a complex number. To find its modulus, we take the absolute value of each term and sum them. The maximum value occurs when the imaginary parts cancel out, which happens when θ = π/2 or θ = 3π/2. Evaluating at either point gives |h(z)| = 16.",
+      "common_mistake_notes": "A common mistake is to overlook the possibility of multiple boundary points giving the same maximum modulus. Another error could be not simplifying the expression for h(z) properly."
+    },
+    {
+      "id": ": 4",
+      "stem": "Given the function j(z) = z^4 - 2z^3 + 3z^2 - 2z + 1 on the closed disk |z| ≤ 2, what is the maximum value of |j(z)|?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "4",
+        "D": "9"
+      },
+      "correct_choice": "D",
+      "solution": "The function j(z) is a polynomial and holomorphic everywhere. We only need to consider the values on the boundary |z| = 2. Let z = 2cis(θ), then |j(z)| = |(2cis(θ))^4 - 2(2cis(θ))^3 + 3(2cis(θ))^2 - 2(2cis(θ)) + 1|.",
+      "explanation": "Expanding and simplifying gives us a complex number. Taking the modulus, we get |j(z)| = |16cos^4(θ) - 16cos^3(θ) + 12cos^2(θ) - 8cos(θ) + 1|.",
+      "common_mistake_notes": "A common mistake is to assume that the maximum value occurs at θ = 0 without considering the entire boundary. Another possible error is not simplifying the expression for j(z) correctly."
+    },
+    {
+      "id": ": 5",
+      "stem": "Find the maximum value of |k(z)| on the closed annulus 1 ≤ |z| ≤ 2, where k(z) = z^2 + 4.",
+      "choices": {
+        "A": "5",
+        "B": "6",
+        "C": "9",
+        "D": "13"
+      },
+      "correct_choice": "C",
+      "solution": "The function k(z) is holomorphic everywhere in the complex plane. The maximum modulus principle does not directly apply to an annulus, but we can use it on each disk separately and then compare the results. We need to consider the values on both boundaries |z| = 1 and |z| = 2.",
+      "explanation": "For |z| = 1, let z = cis(θ), then |k(z)| = |cis^2(θ) + 4| = |cos^2(θ) + 4 + 2i*sin(θ)*cos(θ)|. For |z| = 2, let z = 2cis(φ), then |k(z)| = |4cis^2(φ) + 4| = |4cos^2(φ) + 8 + 8i*sin(φ)*cos(φ)|.",
+      "common_mistake_notes": "A common mistake is to assume that the maximum modulus occurs at θ = 0 or φ = 0 without considering the entire boundary. Another possible error is not simplifying the expressions for k(z) correctly."
+    },
+    {
+      "id": ": 6",
+      "stem": "Consider the function l(z) = z^3 - 4z + 2 on the closed square with vertices at ±1 ± i. What is the maximum value of |l(z)|?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "D",
+      "solution": "The function l(z) is holomorphic everywhere, so we need to consider the values on the boundary of the square. We can parameterize each side of the square and evaluate |l(z)|.",
+      "explanation": "For z = 1 + iy (top side), |l(z)| = |(1 + iy)^3 - 4(1 + iy) + 2| = |-3y^2 - 6yi + 5|. For z = -1 + iy (bottom side), |l(z)| = |-(-1 + iy)^3 - 4(-1 + iy) + 2| = |-3y^2 + 6yi + 5|. For z = x + i (right side), |l(z)| = |x^3 - 4x + 2i(x^2 - 4) + 2| = |(x^3 - 4x + 2) + 2ix^2 - 8i|.",
+      "common_mistake_notes": "A common mistake is to forget that the boundary includes all four sides of the square, not just one. Another possible error is not simplifying the expressions for l(z) correctly."
+    },
+    {
+      "id": ": 7",
+      "stem": "Find the maximum value of |m(z)| on the closed unit disk |z| ≤ 1, where m(z) = z^2/(z - 1).",
+      "choices": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "√2"
+      },
+      "correct_choice": "C",
+      "solution": "The function m(z) is meromorphic (holomorphic except at isolated singularities) everywhere in the complex plane except for z = 1. We can apply the maximum modulus principle to the domain扣除 {1}. Let z = cis(θ), then |m(z)| = |cis^2(θ)/(cis(θ) - 1)|.",
+      "explanation": "To avoid division by zero, we multiply the numerator and denominator by the complex conjugate of the denominator: |m(z)| = |cis^2(θ)/(cis(θ) - 1)(cis(-θ) + 1)| = |cos^2(θ) + cos(θ)sin(θ))/(1 - cos(θ))|.",
+      "common_mistake_notes": "A common mistake is to forget that the function has a singularity at z = 1 and exclude it from the domain. Another possible error is not simplifying the expression for m(z) correctly."
+    }
+  ]
+}

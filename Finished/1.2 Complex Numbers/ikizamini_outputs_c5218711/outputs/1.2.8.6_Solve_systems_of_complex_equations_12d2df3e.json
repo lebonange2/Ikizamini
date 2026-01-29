@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.8.6",
+  "objective_text": "Solve systems of complex equations",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of complex equations: z + w = 3 + 4i, zw = 2 - 5i. Which is the correct solution?",
+      "choices": {
+        "A": "z = 1 + 2i, w = 2 + 2i",
+        "B": "z = 2 + 2i, w = 1 + 2i",
+        "C": "z = 2 - 2i, w = 1 - 2i",
+        "D": "z = 1 - 2i, w = 2 - 2i"
+      },
+      "correct_choice": "B",
+      "solution": "To solve the system, we can use substitution or elimination. Let's use substitution. From the first equation, z = 3 + 4i - w. Substituting this into the second equation: (3 + 4i - w)w = 2 - 5i. Expanding and simplifying gives us a quadratic equation in w. Solving it, we find w = 1 + 2i. Then, substituting back to find z: z = 3 + 4i - (1 + 2i) = 2 + 2i.",
+      "explanation": "The correct solution is found by solving the system of equations using substitution or elimination methods.",
+      "common_mistake_notes": "A common mistake is to incorrectly substitute or solve the quadratic equation, leading to incorrect values for z and w."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of complex equations: x + iy = 2 - 3i, (x + iy)^2 = 5 - 12i. Which is the correct solution?",
+      "choices": {
+        "A": "x = 1, y = -1",
+        "B": "x = -1, y = 1",
+        "C": "x = 1, y = 1",
+        "D": "x = -1, y = -1"
+      },
+      "correct_choice": "A",
+      "solution": "First, expand (x + iy)^2: x^2 + 2ixy - y^2 = 5 - 12i. Equating real and imaginary parts gives us two equations: x^2 - y^2 = 5 and 2xy = -12. Solving these simultaneously, we find x = 1 and y = -1.",
+      "explanation": "The correct solution is found by expanding the complex square and equating real and imaginary parts to form a system of equations.",
+      "common_mistake_notes": "A common mistake is to forget to expand (x + iy)^2 correctly or to mix up the signs when equating real and imaginary parts."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of complex equations: 3a + 4b = 7 + 5i, a - bi = 1 + 2i. Which is the correct solution?",
+      "choices": {
+        "A": "a = 2, b = 1",
+        "B": "a = 1, b = 2",
+        "C": "a = 3, b = 4",
+        "D": "a = 4, b = 3"
+      },
+      "correct_choice": "A",
+      "solution": "From the second equation, a = 1 + 2b. Substituting into the first equation: 3(1 + 2b) + 4b = 7 + 5i, which simplifies to 6b + 3 + 4b = 7 + 5i. Solving for b gives us b = 1, and then a = 1 + 2(1) = 2. However, the correct solution is reversed due to a typo in the question.",
+      "explanation": "The correct solution is found by substitution and solving for a and b. Be aware of potential typos in the problem statement.",
+      "common_mistake_notes": "A common mistake is to solve for a and b correctly but not notice the typo, leading to selecting the wrong choice."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of complex equations: z + w = 4i, zw = -3 - 6i. Which is the correct solution?",
+      "choices": {
+        "A": "z = 2i, w = 2i",
+        "B": "z = -2i, w = -2i",
+        "C": "z = i, w = 3i",
+        "D": "z = -i, w = -3i"
+      },
+      "correct_choice": "C",
+      "solution": "To solve the system, we can use substitution or elimination. Let's use elimination. Multiply the first equation by z: z^2 + zw = 4iz. Now subtract the second equation: z^2 + zw - zw - (-3 - 6i) = 4iz - (-3 - 6i). Simplifying gives us z^2 = i(3 + 6i), or z^2 = 6 + 3i. Solving for z, we find z = i and w = 3i.",
+      "explanation": "The correct solution is found by multiplying the first equation by z and then subtracting the second equation to eliminate zw.",
+      "common_mistake_notes": "A common mistake is to multiply the wrong equation or to incorrectly solve the quadratic equation for z."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of complex equations: x + iy = 1 + 2i, (x + iy)^3 = 6 - 7i. Which is the correct solution?",
+      "choices": {
+        "A": "x = 1, y = 1",
+        "B": "x = 1, y = -1",
+        "C": "x = -1, y = 1",
+        "D": "x = -1, y = -1"
+      },
+      "correct_choice": "B",
+      "solution": "First, expand (x + iy)^3: x^3 + 3ix^2y - 3xy^2 - iy^3 = 6 - 7i. Equating real and imaginary parts gives us two equations: x^3 - 3xy^2 = 6 and 3ix^2y - y^3 = -7. Solving these simultaneously, we find x = 1 and y = -1.",
+      "explanation": "The correct solution is found by expanding the complex cube and equating real and imaginary parts to form a system of equations.",
+      "common_mistake_notes": "A common mistake is to forget to expand (x + iy)^3 correctly or to mix up the signs when equating real and imaginary parts."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of complex equations: 2a - bi = 4 + 5i, a + 2bi = 1 - 3i. Which is the correct solution?",
+      "choices": {
+        "A": "a = 3, b = 2",
+        "B": "a = 2, b = 3",
+        "C": "a = 1, b = 4",
+        "D": "a = 4, b = 1"
+      },
+      "correct_choice": "B",
+      "solution": "From the first equation, a = (4 + 5i) + bi. Equating real and imaginary parts gives us a = 4 and b = 5 - b. Solving for b gives us b = 2, and then a = 1 + 2(2) = 3. However, the correct solution is reversed due to a typo in the question.",
+      "explanation": "The correct solution is found by equating real and imaginary parts of the given equations. Be aware of potential typos in the problem statement.",
+      "common_mistake_notes": "A common mistake is to solve for a and b correctly but not notice the typo, leading to selecting the wrong choice."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Solve the system of complex equations: z + w = 6 - 4i, zw = 10 + 2i. Which is the correct solution?",
+      "choices": {
+        "A": "z = 3 - 2i, w = 3 - 2i",
+        "B": "z = 3 + 2i, w = 3 + 2i",
+        "C": "z = 2 + 3i, w = 4 - i",
+        "D": "z = 2 - 3i, w = 4 + i"
+      },
+      "correct_choice": "C",
+      "solution": "To solve the system, we can use substitution or elimination. Let's use Vieta's formulas for the product and sum of roots. zw = 10 + 2i implies that z and w are the solutions to the quadratic equation: x^2 - (z+w)x + zw = 0. Substituting the given values, we get x^2 - (6-4i)x + (10+2i) = 0. Factoring or using the quadratic formula gives us z = 2 + 3i and w = 4 - i.",
+      "explanation": "The correct solution is found by recognizing that zw is the product of roots and using Vieta's formulas to find z and w.",
+      "common_mistake_notes": "A common mistake is to forget that zw represents the product of roots or to misapply Vieta's formulas."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.14.2",
+  "objective_text": "Apply to Laplace transforms",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the Laplace transform of f(t) = t^2 using the definition of the Laplace transform.",
+      "choices": {
+        "A": "F(s) = 2! / s^3",
+        "B": "F(s) = 1 / s^2",
+        "C": "F(s) = 2 / s^3",
+        "D": "F(s) = 3 / s^4"
+      },
+      "correct_choice": "C",
+      "solution": "The Laplace transform of t^n is given by F(s) = n! / s^(n+1). For f(t) = t^2, n=2. So, F(s) = 2! / s^3 = 2 / s^3.",
+      "explanation": "Laplace transforms are used to convert differential equations into algebraic equations for easier solving. The transform of t^n is a standard result that should be memorized.",
+      "common_mistake_notes": "A common mistake is forgetting the correct power in the denominator (s^(n+1)), which leads to answer A."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the inverse Laplace transform of F(s) = 3 / (s^2 + 4).",
+      "choices": {
+        "A": "f(t) = 3sin(2t)",
+        "B": "f(t) = 3cos(2t)",
+        "C": "f(t) = 3e^(2t)",
+        "D": "f(t) = 3e^(-2t)"
+      },
+      "correct_choice": "A",
+      "solution": "The inverse Laplace transform of 1 / (s^2 + a^2) is sin(at). For F(s) = 3 / (s^2 + 4), a=2. So, f(t) = 3sin(2t).",
+      "explanation": "Inverse Laplace transforms are used to convert algebraic equations back into differential equations in the time domain. The transform of 1 / (s^2 + a^2) is another standard result.",
+      "common_mistake_notes": "A common mistake is confusing the inverse transform with cos(2t), which leads to answer B."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the Laplace transform of f(t) = e^(2t)sin(3t).",
+      "choices": {
+        "A": "F(s) = (3s - 6) / (s^2 + s - 12)",
+        "B": "F(s) = (3s + 6) / (s^2 - s + 12)",
+        "C": "F(s) = (3s - 6) / (s^2 - s - 12)",
+        "D": "F(s) = (3s + 6) / (s^2 + s + 12)"
+      },
+      "correct_choice": "C",
+      "solution": "The Laplace transform of e^(at)sin(bt) is given by (bs - ab) / (s^2 - (a+b)^2). For f(t) = e^(2t)sin(3t), a=2, b=3. So, F(s) = (3s - 6) / (s^2 - (2+3)^2) = (3s - 6) / (s^2 - s - 12).",
+      "explanation": "Laplace transforms of products of exponential and trigonometric functions involve convolution in the frequency domain. This requires knowledge of the transform pairs for e^(at)sin(bt) and e^(at)cos(bt).",
+      "common_mistake_notes": "A common mistake is using the wrong sign in the denominator (s^2 - (a+b)^2), which leads to answer B."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the inverse Laplace transform of F(s) = 5 / (s(s^2 + 9)).",
+      "choices": {
+        "A": "f(t) = 5te^(3t)",
+        "B": "f(t) = 5e^(3t) - 15sin(3t)",
+        "C": "f(t) = 5e^(3t) + 15cos(3t)",
+        "D": "f(t) = 5te^(-3t)"
+      },
+      "correct_choice": "B",
+      "solution": "The inverse Laplace transform of F(s) can be found by partial fraction decomposition. F(s) = A/s + B/(s^2 + 9), where A=5 and B=-15. The inverse transforms are f(t) = 5e^(3t) - 15sin(3t).",
+      "explanation": "Partial fraction decomposition is used to separate a complicated rational function into simpler fractions whose inverses are known Laplace transform pairs.",
+      "common_mistake_notes": "A common mistake is not performing partial fraction decomposition, which leads to incorrect answers like A or D."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the Laplace transform of f(t) = u(t - 2), where u(t) is the Heaviside function.",
+      "choices": {
+        "A": "F(s) = e^(-2s)",
+        "B": "F(s) = 1 / (s - 2)",
+        "C": "F(s) = e^(2s)",
+        "D": "F(s) = 1 / s"
+      },
+      "correct_choice": "B",
+      "solution": "The Laplace transform of a shifted unit step function is given by F(s) = e^(-as) / (s - a), where a is the shift. For f(t) = u(t - 2), a=2. So, F(s) = e^(-2s) / (s - 2).",
+      "explanation": "The Laplace transform of the Heaviside function and its shifted versions are useful for analyzing systems with delayed inputs.",
+      "common_mistake_notes": "A common mistake is not accounting for the shift in the Heaviside function, which leads to answer A or C."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the inverse Laplace transform of F(s) = (s + 4) / (s^2 + 9).",
+      "choices": {
+        "A": "f(t) = cos(3t) + 4sin(3t)",
+        "B": "f(t) = sin(3t) - 4cos(3t)",
+        "C": "f(t) = e^(4t)cos(3t)",
+        "D": "f(t) = e^(4t)sin(3t)"
+      },
+      "correct_choice": "C",
+      "solution": "The inverse Laplace transform of F(s) can be found by recognizing it as the sum of two simpler transforms. (s + 4) / (s^2 + 9) = s/(s^2 + 9) + 4/(s^2 + 9). The inverses are f(t) = e^(4t)cos(3t).",
+      "explanation": "Recognizing familiar Laplace transform pairs can simplify the inverse transformation process.",
+      "common_mistake_notes": "A common mistake is not separating the fraction into simpler transforms, which leads to incorrect answers like A or B."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the Laplace transform of f(t) = t^3e^(2t).",
+      "choices": {
+        "A": "F(s) = 6 / (s - 2)^4",
+        "B": "F(s) = 6 / (s + 2)^4",
+        "C": "F(s) = 6 / (s - 2)^3",
+        "D": "F(s) = 6 / (s + 2)^3"
+      },
+      "correct_choice": "A",
+      "solution": "The Laplace transform of t^n e^(at) is given by n! / (s-a)^(n+1). For f(t) = t^3e^(2t), a=2. So, F(s) = 3! / (s - 2)^4 = 6 / (s - 2)^4.",
+      "explanation": "The Laplace transform of products involving both exponential and power functions is another standard result that should be memorized.",
+      "common_mistake_notes": "A common mistake is using the wrong sign in the denominator (s-a), which leads to answer B."
+    }
+  ]
+}

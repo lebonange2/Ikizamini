@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.12.3",
+  "objective_text": "Apply reflection across y-axis",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the result of reflecting the point (3, 4) across the y-axis?",
+      "choices": {
+        "A": "(3, -4)",
+        "B": "(-3, 4)",
+        "C": "(4, 3)",
+        "D": "(-4, 3)"
+      },
+      "correct_choice": "B",
+      "solution": "When reflecting a point across the y-axis, the x-coordinate changes sign while the y-coordinate remains unchanged. So, the reflection of (3, 4) is (-3, 4).",
+      "explanation": "The y-axis reflection flips the sign of the x-coordinate.",
+      "common_mistake_notes": "A common mistake would be to also flip the sign of the y-coordinate, which would result in choice A. However, this is incorrect because only the x-coordinate changes sign."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Reflect the point (-5, -7) across the y-axis and identify the coordinates.",
+      "choices": {
+        "A": "(5, -7)",
+        "B": "(-5, 7)",
+        "C": "(7, -5)",
+        "D": "(-7, -5)"
+      },
+      "correct_choice": "A",
+      "solution": "The reflection of (-5, -7) across the y-axis is (5, -7), as only the x-coordinate changes sign.",
+      "explanation": "Remember that reflecting across the y-axis only affects the x-coordinate.",
+      "common_mistake_notes": "A common mistake would be to think that both coordinates change signs, which would lead to choices B and C. However, this is incorrect; only the x-coordinate should have its sign flipped."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "What is the y-coordinate of the point reflected across the y-axis if the original point has coordinates (x, 8)?",
+      "choices": {
+        "A": "-8",
+        "B": "0",
+        "C": "x",
+        "D": "8"
+      },
+      "correct_choice": "D",
+      "solution": "The y-coordinate remains unchanged after reflecting across the y-axis. So, it will still be 8.",
+      "explanation": "Reflection across the y-axis only affects the x-coordinate; the y-coordinate stays the same.",
+      "common_mistake_notes": "A common mistake would be to think that the y-coordinate changes sign, which would lead to choice A. However, this is incorrect; the y-coordinate remains 8."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Reflect the point (2, -9) across the y-axis and determine the x- coordinate of the reflected point.",
+      "choices": {
+        "A": "-2",
+        "B": "0",
+        "C": "2",
+        "D": "9"
+      },
+      "correct_choice": "A",
+      "solution": "The x-coordinate changes sign after reflecting across the y-axis. So, it will be -2.",
+      "explanation": "Reflection across the y-axis only affects the x- coordinate; its sign is flipped.",
+      "common_mistake_notes": "A common mistake would be to think that the x-coordinate remains unchanged, which would lead to choice C. However, this is incorrect; the x-coordinate should change to -2."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Reflect the point (-4, 6) across the y-axis and write the coordinates in the form (__, __).",
+      "choices": {
+        "A": "(4, 6)",
+        "B": "(-4, -6)",
+        "C": "(-6, 4)",
+        "D": "(6, -4)"
+      },
+      "correct_choice": "A",
+      "solution": "The reflection of (-4, 6) across the y-axis is (4, 6), with only the x-coordinate changing sign.",
+      "explanation": "Reflection across the y-axis impacts only the x- coordinate; the y-coordinate remains the same.",
+      "common_mistake_notes": "A common mistake would be to think that both coordinates change signs, which would lead to choices B and C. However, this is incorrect; only the x-coordinate should have its sign flipped."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "What is the reflection of the point (7, -2) across the y-axis? Write it in the form (__, __).",
+      "choices": {
+        "A": "(-7, 2)",
+        "B": "(7, 2)",
+        "C": "(-7, -2)",
+        "D": "(7, -2)"
+      },
+      "correct_choice": "A",
+      "solution": "The reflection of (7, -2) across the y-axis is (-7, 2), with only the x-coordinate changing sign.",
+      "explanation": "Reflection across the y-axis changes the sign of the x- coordinate while keeping the y-coordinate intact.",
+      "common_mistake_notes": "A common mistake would be to think that both coordinates change signs, which would lead to choice C. However, this is incorrect; only the x-coordinate should have its sign flipped."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Reflect the point (0, -1) across the y-axis and state the new y- coordinate.",
+      "choices": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "undefined"
+      },
+      "correct_choice": "C",
+      "solution": "The reflection of (0, -1) across the y-axis is (0, -1), as only the x-coordinate changes sign. The y- coordinate remains -1.",
+      "explanation": "Reflection across the y-axis does not affect the y-coordinate if it's already at 0.",
+      "common_mistake_notes": "A common mistake would be to think that the y-coordinate changes sign, which would lead to choice A. However, this is incorrect; the y-coordinate remains -1."
+    }
+  ]
+}

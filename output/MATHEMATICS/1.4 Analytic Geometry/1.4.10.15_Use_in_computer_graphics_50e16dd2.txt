@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.10.15 Use in computer graphics
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.10 Parametric Curves in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+What is the primary use of shaders in computer graphics?
+A) To create realistic lighting effects
+B) To model 3D objects
+C) To optimize game performance
+D) To handle user input
+Correct Answer: A
+
+Solution:
+Shaders are used in computer graphics to calculate and manipulate the appearance of objects on a rendered scene, such as lighting, textures, and colors. Thus, option A is correct.
+
+Explanation:
+B is incorrect because modeling 3D objects is typically done with 3D modeling software before shaders come into play. C is wrong because while shaders can contribute to performance optimization, their primary purpose is graphical rendering. D is unrelated as handling user input is a separate aspect of game programming.
+
+Common mistake note:
+Confusing the role of shaders with other aspects of game development.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+Which programming language is commonly used for writing shaders in computer graphics?
+A) C#
+B) GLSL
+C) Python
+D) Java
+Correct Answer: B
+
+Solution:
+GLSL (OpenGL Shading Language) is the most widely used programming language for writing shaders in computer graphics.
+
+Explanation:
+A, C, and D are popular programming languages but not specifically designed or commonly used for shader development. GLSL, on the other hand, is tailored for GPU programming and shader authoring.
+
+Common mistake note:
+Assuming a more general-purpose language like C# or Python would be used.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+In computer graphics, what does a vertex shader primarily do?
+A) Applies textures to surfaces
+B) Calculates the final color of a pixel
+C) Transforms vertices into screen space
+D) Performs collision detection
+Correct Answer: C
+
+Solution:
+Vertex shaders are responsible for transforming vertex positions from model space to clip space and then to screen space, preparing them for rasterization.
+
+Explanation:
+A is the job of a fragment shader. B is also related to fragment shaders, which calculate pixel colors. D is part of physics engines, not vertex shaders.
+
+Common mistake note:
+Mixing up the responsibilities of vertex and fragment shaders.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+Which of the following is a type of shader used to simulate reflection in computer graphics?
+A) Normal map shader
+B) Shadow shader
+C) Reflection shader
+D) Bloom shader
+Correct Answer: C
+
+Solution:
+A reflection shader is specifically designed to create realistic reflections on surfaces in a 3D scene.
+
+Explanation:
+A normal map shader helps with surface detail, shadow shaders handle shadows, and bloom shaders are used for over-exposure effects.
+
+Common mistake note:
+Confusing different types of shaders based on their names.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+In computer graphics, what does a fragment shader do after the rasterization process?
+A) Transforms vertices into screen space
+B) Calculates the final color of a pixel
+C) Applies textures to surfaces
+D) Performs collision detection
+Correct Answer: B
+
+Solution:
+Fragment shaders calculate and set the final color of each pixel in a rendered image, based on the data provided by vertex shaders.
+
+Explanation:
+A is done by vertex shaders. C can be part of fragment shaders but not their primary function. D is unrelated to fragment shaders' role.
+
+Common mistake note:
+Overlooking the specific task of fragment shaders.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+What does a shader program typically consist of in computer graphics?
+A) A single vertex shader
+B) A single fragment shader
+C) Both vertex and fragment shaders
+D) A physics engine
+Correct Answer: C
+
+Solution:
+Shader programs usually contain both vertex and fragment shaders to handle different stages of the graphics pipeline.
+
+Explanation:
+Vertex shaders work on vertices, while fragment shaders work on pixels. A physics engine is a separate component in game development.
+
+Common mistake note:
+Assuming that a shader program only contains one type of shader.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+Which part of the graphics pipeline does a tessellation shader intervene in?
+A) Vertex processing
+B) Rasterization
+C) Geometry processing
+D) Pixel processing
+Correct Answer: C
+
+Solution:
+Tessellation shaders are used to refine the geometry of a mesh during the geometry processing stage, before rasterization.
+
+Explanation:
+A is done by vertex shaders. B happens after tessellation. D is related to fragment shaders.
+
+Common mistake note:
+Misunderstanding the role of tessellation in the graphics pipeline.
+------------------------------------------------------------------------------

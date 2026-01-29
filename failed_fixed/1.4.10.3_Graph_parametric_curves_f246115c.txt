@@ -1,0 +1,130 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.10.3 Graph parametric curves
+==============================================================================
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Given the parametric equations \(x(t) = 3 \cos(t)\) and \(y(t) = 3 \sin(t)\), identify the graph.
+A) A circle centered at the origin with radius 3.
+B) An ellipse centered at the origin with semi-major axis 3.
+C) A parabola opening to the right.
+D) A line through the origin.
+Correct Answer: A
+
+Solution:
+The parametric equations \(x(t) = 3 \cos(t)\) and \(y(t) = 3 \sin(t)\) represent a circle because they follow the form \(x^2 + y^2 = r^2\), where \(r\) is the radius 3.
+
+Explanation:
+The coordinates (x, y) are derived from trigonometric functions \(\cos(t)\) and \(\sin(t)\), making a circle.
+
+Common mistake note:
+Mistaking the shape as an ellipse; however, the parametric form \(\cos^2(t) + \sin^2(t) = 1\) confirms a circle.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+What is the shape of the curve given by \(x(t) = t\) and \(y(t) = t^2\)?
+A) A circle
+B) A line
+C) A parabola
+D) An ellipse
+Correct Answer: C
+
+Solution:
+The parametric form \(x(t) = t\) and \(y(t) = t^2\) indicates a parabola \(y = x^2\).
+
+Explanation:
+As \(t\) varies, \(x\) is \(t\) and \(y\) is \(t^2\). Graphing \(y\) in terms of \(x\) gives \(y = x^2\).
+
+Common mistake note:
+Confusing the curve with a circle due to squared terms without recognizing the parametric independence of \(t\).
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Which of the following parametric equations represents a line?
+A) \(x(t) = 3t, y(t) = 2t + 1\)
+B) \(x(t) = t^2, y(t) = t^3\)
+C) \(x(t) = \cos(t), y(t) = \sin(t)\)
+D) \(x(t) = e^t, y(t) = \ln(t)\)
+Correct Answer: A
+
+Solution:
+Both \(x(t) = 3t\) and \(y(t) = 2t + 1\) are linear in \(t\), describing a parametric line.
+
+Explanation:
+Parametric equations \(x=a_1t+b_1\), \(y=a_2t+b_2\) graph a line. Here, \(a_1 = 3\) and \(a_2 = 2\).
+
+Common mistake note:
+Misidentifying \(x(t)=t^2, y(t)=t^3\) as linear; however, the powers of \(t\) should be 1 for both.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Describe the curve formed by the parametric equations \(x(t) = 2 + \sin(t)\) and \(y(t) = 3 + \cos(t)\).
+A) A circle of radius 1 centered at (2, 3)
+B) An ellipse centered at (2, 3)
+C) A line parallel to the y-axis
+D) A hyperbola centered at (2, 3)
+Correct Answer: A
+
+Solution:
+The equations describe a circle of radius 1 due to \((x-2)^2 + (y-3)^2 = 1\), centered at (2, 3).
+
+Explanation:
+Shifting the circle by (2, 3) from the origin, its radius remains 1 due to \(\sin(t)\) and \(\cos(t)\) functions.
+
+Common mistake note:
+Assuming it forms an ellipse; however, \(\cos^2(t) + \sin^2(t) = 1\) confirms a circle.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Find the Cartesian equation of the curve given by \(x(t) = 4\cos(t)\) and \(y(t) = 4\sin(t)\).
+A) x^2 + y^2 = 16
+B) x^2 + y^2 = 4
+C) x^2 - y^2 = 16
+D) y = x^2 + 4
+Correct Answer: A
+
+Solution:
+Replacing \(\cos(t)\) and \(\sin(t)\) in \(x^2+y^2=r^2\), we get \(16(\cos^2(t)+\sin^2(t))=16\).
+
+Explanation:
+The identity \(\cos^2(t) + \sin^2(t) = 1\) plugs into \(x^2 + y^2 = 4^2\), simplifying to \(x^2 + y^2 = 16\).
+
+Common mistake note:
+Miscomputing radius as 4; forgetting to square 4 in \(x^2+y^2=r^2\) which results in 16.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+What curve is traced by \(x(t) = 6t\) and \(y(t) = 3t - 1\) when \(t\) ranges over all real numbers?
+A) A parabola
+B) An ellipse
+C) A hyperbola
+D) A line
+Correct Answer: D
+
+Solution:
+Both components have \(t\) in degree 1; thus, the lines are linear equations in \(t\).
+
+Explanation:
+Linear equations in \(t\) produce a line in the \(xy\)-plane with slope derived from coefficients of \(t\).
+
+Common mistake note:
+Mistaking linear growth as parabolic; confusion arises when ignoring linearity of both terms.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Convert the parametric equations \(x(t) = 1 + 2t\) and \(y(t) = 3 \text{e}^t\) to Cartesian form.
+A) x = 1 + 2 \ln(y/3)
+B) y = 3e^{(x-1)/2}
+C) x = y^2 + 1
+D) y = \log(x - 2)
+Correct Answer: B
+
+Solution:
+From \(x(t) = 1 + 2t\), solve for \(t\): \(t = (x-1)/2\). Substitute into \(y(t) = 3e^t\): \(y = 3e^{(x-1)/2}\).
+
+Explanation:
+Solve \(x(t)\) for \(t\) then substitute into \(y(t)\), leading to \(y = 3e^{(x-1)/2}\).
+
+Common mistake note:
+Confusing the process with simple algebra; logarithmic transformation is necessary for exponential \(y(t)\).
+------------------------------------------------------------------------------

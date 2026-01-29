@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.6.15 Apply to engineering problems
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.6 Complex Functions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One-dimensional steady-state heat conduction in a rod):
+A metal rod of length 1 meter and thermal conductivity k is heated at one end and kept at constant temperature T1 while the other end is kept at constant temperature T2. Which equation describes the temperature distribution along the rod?
+A) T(x) = (T1 - T2) * x + T2
+B) T(x) = T1 * e^(-kx)
+C) T(x) = T1 + (T2 - T1) * x / L
+D) T(x) = T1 * sin(kx)
+Correct Answer: C
+
+Solution:
+The temperature distribution in a one-dimensional steady-state heat conduction problem is given by Fourier's law: T(x) = T1 + (T2 - T1) * x / L, where L is the length of the rod. Choice A represents a linear temperature increase but does not account for the length of the rod. Choice B represents an exponential decay which is not typical in steady-state conditions. Choice D represents a sinusoidal distribution, which is also not applicable to this problem.
+
+Explanation:
+This question assesses understanding of one-dimensional heat conduction and application of Fourier's law to find temperature distribution in a metal rod.
+
+Common mistake note:
+Common mistake: Choosing A or B because they represent simple linear or exponential functions, which are not accurate for steady-state heat conduction.
+------------------------------------------------------------------------------
+
+Problem 2 (Torque on a shaft):
+A torque of 10 Nm is applied to a shaft with a radius of 5 cm. Assuming no other torques act on the shaft and it has a moment of inertia I = (1/2) * m * r^2, where m is mass and r is radius, what is the angular acceleration in rad/s^2?
+A) 4
+B) 8
+C) 16
+D) 32
+Correct Answer: A
+
+Solution:
+The torque τ = Iα, where α is the angular acceleration. Given τ = 10 Nm and I = (1/2) * m * r^2 = (1/2) * m * (0.05 m)^2, we can solve for α: 10 = (1/2) * m * (0.05)^2 * α. Since the mass is not given and does not affect the ratio τ/I, we can ignore it. Solving for α gives α = 4 rad/s^2.
+
+Explanation:
+This question tests understanding of torque and angular acceleration relationships in an engineering context.
+
+Common mistake note:
+Common mistake: Including mass (m) in the calculation, which is unnecessary since it cancels out or assuming a constant moment of inertia without considering the radius.
+------------------------------------------------------------------------------
+
+Problem 3 (Bridge truss analysis):
+A bridge truss designed with triangular elements to distribute load evenly. In a Warren truss with 6 vertical members and 5 horizontal members, how many triangles are formed?
+A) 9
+B) 10
+C) 11
+D) 12
+Correct Answer: B
+
+Solution:
+In a Warren truss, each horizontal member forms a triangle with the two vertical members it connects. With 5 horizontal members and 6 vertical members, we have 5 triangles formed by the first horizontal member, 4 more by the second, 3 by the third, 2 by the fourth, and 1 by the fifth. Summing these gives 5 + 4 + 3 + 2 + 1 = 10 triangles.
+
+Explanation:
+This question tests ability to analyze truss structures and count the number of triangles formed in an engineering context.
+
+Common mistake note:
+Common mistake: Counting only the triangles formed by one set of horizontal members, forgetting that each additional member adds fewer new triangles.
+------------------------------------------------------------------------------
+
+Problem 4 (Damped harmonic oscillator):
+A damped harmonic oscillator has a damping coefficient c and natural frequency ω_n. The equation of motion is m * d^2x/dt^2 + c * dx/dt + k * x = 0, where m is the mass and k is the spring constant. Which term represents energy dissipation in the system?
+A) m * d^2x/dt^2
+B) c * dx/dt
+C) k * x
+D) All terms contribute
+Correct Answer: B
+
+Solution:
+The term c * dx/dt represents damping or energy dissipation in the system. It is proportional to the velocity of the oscillator and causes a decrease in the system's total energy over time.
+
+Explanation:
+This question tests understanding of damped harmonic oscillators and role of damping in energy dissipation.
+
+Common mistake note:
+Common mistake: Choosing A, which represents the kinetic energy term; C, which represents the potential energy term; or D, assuming all terms contribute to energy dissipation equally.
+------------------------------------------------------------------------------
+
+Problem 5 (Stress-strain relationship):
+A material subjected to a tensile force of 500 N and experiences an extension of 2 mm. If its original length was 1 meter and cross-sectional area is 1 cm^2, what is the Young's modulus (E) of the material?
+A) 2.5 × 10^9 Pa
+B) 5 × 10^9 Pa
+C) 7.5 × 10^9 Pa
+D) 1 × 10^10 Pa
+Correct Answer: B
+
+Solution:
+Young's modulus E is defined as stress divided by strain, where stress = force / area and strain = extension / original length. Stress = (500 N) / (1 cm^2) = 5 × 10^6 Pa, and strain = (2 mm) / (1 m) = 2 × 10^-3. E = stress / strain = (5 × 10^6 Pa) / (2 × 10^-3) = 2.5 × 10^9 Pa.
+
+Explanation:
+This question tests understanding of Young's modulus and its calculation from stress and strain values.
+
+Common mistake note:
+Common mistake: Using the wrong units for force, area, or extension; not converting lengths to consistent units before calculating strain.
+------------------------------------------------------------------------------
+
+Problem 6 (Control system stability):
+A closed-loop control system has a transfer function G(s) = K / (s + 2)(s + 3). What is the range of K values that ensure the system is stable?
+A) K > 0
+B) K < 6
+C) K < 5
+D) K < 4
+Correct Answer: D
+
+Solution:
+For a control system to be stable, all poles of its transfer function must have negative real parts. The poles are the solutions to (s + 2)(s + 3) = 0, which gives s = -2 and s = -3. To ensure stability, K / (s + 2)(s + 3) must not introduce any additional poles with positive real parts. For a numerator of degree 1, this means the magnitude of K must be less than the product of the magnitudes of the denominator's pole locations: |K| < |(-2) * (-3)| = 6. Thus, K < 4.
+
+Explanation:
+This question tests understanding of control system stability and pole-zero placement.
+
+Common mistake note:
+Common mistake: Assuming that any positive K value ensures stability or not considering the effect of the numerator on pole locations.
+------------------------------------------------------------------------------
+
+Problem 7 (Thermodynamic cycle efficiency):
+A heat engine operates between two temperature reservoirs at 600 K and 300 K. The engine absorbs 10 kJ of heat from the hot reservoir and releases 6 kJ to the cold reservoir during each cycle. What is the Carnot efficiency of this engine?
+A) 0.2
+B) 0.4
+C) 0.5
+D) 0.6
+Correct Answer: C
+
+Solution:
+The Carnot efficiency (η_c) is given by 1 - T_c / T_h, where T_c is the temperature of the cold reservoir and T_h is the temperature of the hot reservoir. η_c = 1 - (300 K) / (600 K) = 0.5.
+
+Explanation:
+This question tests understanding of Carnot efficiency and its application to thermodynamic cycles.
+
+Common mistake note:
+Common mistake: Using the actual heat absorbed or released by the engine instead of considering the ideal case represented by Carnot efficiency.
+------------------------------------------------------------------------------

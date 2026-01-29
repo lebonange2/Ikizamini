@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.14.13 Optimize digital circuits
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.14 Boolean Algebra
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IncrementerDesign):
+Which circuit design is most efficient for a simple incrementer that adds 1 to its input?
+A) AND, OR, and NOT gates only
+B) Single flip-flop and XOR gate
+C) Full adder for each bit
+D) Multiple flip-flops and AND, OR, and NOT gates
+Correct Answer: B
+
+Solution:
+A sequential circuit with a single flip-flop and an XOR gate is the most efficient. It uses fewer gates and has lower latency compared to other options.
+
+Explanation:
+Option A cannot maintain state for incrementing. Option C is more complex with more gates. Option D is also more complex than the single flip-flop solution.
+
+Common mistake note:
+Choosing C because it seems straightforward; however, full adders are less efficient due to increased gates.
+------------------------------------------------------------------------------
+
+Problem 2 (ComparatorOptimization):
+Which optimization technique best improves a 4-bit comparator circuit's efficiency?
+A) AND, OR, and NOT gates instead of XOR
+B) Parallel comparison with multiple 2-bit comparators
+C) Reduce number of bits by one
+D) Use a lookup table for comparison
+Correct Answer: B
+
+Solution:
+Implementing parallel comparison using multiple 2-bit comparators is the most effective. It reduces latency and improves efficiency without sacrificing accuracy.
+
+Explanation:
+Option A does not inherently improve efficiency. Option C changes comparator functionality. Option D may be faster but increases memory usage.
+
+Common mistake note:
+Choosing D for perceived speed, but it sacrifices hardware efficiency due to memory usage.
+------------------------------------------------------------------------------
+
+Problem 3 (LogicMinimizationExample):
+Which logic expression best represents the minimized version of function F(ABC) = 1 when A=B=C?
+A) (A'+B'C')(B'+AC')(C'+AB')
+B) (A'B' + BC')(B'C + AC')(C'A + AB)
+C) (A'B'C')(B'C + AC')(C'A + AB)
+D) (A'B'C)(B'C + AC')(C'A + AB)
+Correct Answer: C
+
+Solution:
+The minimized expression is (A'B'C')(B'C + AC')(C'A + AB). It has the fewest literals and accurately represents F(ABC) = 1 when A=B=C.
+
+Explanation:
+Options A, B have extra literals. Option D omits double primes indicating variable complements.
+
+Common mistake note:
+Choosing D without considering double prime notation changes variable meaning.
+------------------------------------------------------------------------------
+
+Problem 4 (FlipFlopChoice):
+Which flip-flop is best for a 4x frequency divider?
+A) SR Flip-Flop
+B) D Flip-Flop
+C) T Flip-Flop
+D) JK Flip-Flop
+Correct Answer: B
+
+Solution:
+A D Flip-Flop is suitable for a 4x frequency divider. It can be easily configured without additional gates.
+
+Explanation:
+SR, T, JK flip-flops require extra logic for clock division. D Flip-Flop can be cascaded or connected appropriately.
+
+Common mistake note:
+Choosing A, C, D as they are less common for frequency division; SR, T, JK need additional gates.
+------------------------------------------------------------------------------
+
+Problem 5 (LUTSizeSelection):
+For an 8-to-3-bit LUT optimization, which size is most efficient?
+A) 4-input LUT
+B) 8-input LUT
+C) 16-input LUT
+D) 32-input LUT
+Correct Answer: B
+
+Solution:
+An 8-input LUT is most efficient, directly mapping inputs to outputs with minimal resources.
+
+Explanation:
+4-input LUT insufficient. 16-, 32-input LUTs waste resources for given problem size.
+
+Common mistake note:
+Choosing A, C, D for insufficient capacity or excess resources.
+------------------------------------------------------------------------------
+
+Problem 6 (PipelineStages):
+In a 3-stage pipeline processor, which stage offers the most potential for parallelism?
+A) Instruction Fetch (IF)
+B) Instruction Decode (ID)
+C) Execution (EX)
+D) Write Back (WB)
+Correct Answer: C
+
+Solution:
+The Execution stage has the most potential for parallelism, as it typically takes longest and can process multiple instructions.
+
+Explanation:
+IF, ID, WB have limited parallelism. Parallelizing these may increase complexity without significant improvement.
+
+Common mistake note:
+Choosing A, B, D due to simplicity, limiting parallelism potential.
+------------------------------------------------------------------------------
+
+Problem 7 (LogicGatesCombination):
+Which gate combination uses minimum hardware for a 2-input AND gate?
+A) Two NOTs and two ORs
+B) One NAND and one AND
+C) One NOR and one XOR
+D) One XNOR and one AND
+Correct Answer: B
+
+Solution:
+A 2-input AND gate can be implemented with minimum resources using one NAND and one AND gate.
+
+Explanation:
+Option A uses four gates. Option C does not directly implement AND. Option D is equivalent to a NAND with an extra gate.
+
+Common mistake note:
+Choosing A, C, or D for more gates or indirect logic implementation.
+------------------------------------------------------------------------------

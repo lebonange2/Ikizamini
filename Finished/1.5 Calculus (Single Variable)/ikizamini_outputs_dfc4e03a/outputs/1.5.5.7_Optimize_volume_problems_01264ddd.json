@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.7",
+  "objective_text": "Optimize volume problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":question1",
+      "stem": "What is the maximum volume of a rectangular box with a fixed surface area of 100 square units? The dimensions are in whole numbers.",
+      "choices": {
+        "A": "5 x 4 x 2",
+        "B": "6 x 3 x 3",
+        "C": "8 x 2 x 2",
+        "D": "10 x 1 x 1"
+      },
+      "correct_choice": "C",
+      "solution": "To optimize the volume of a rectangular box with a fixed surface area, we need to maximize the product of its dimensions (length, width, and height). The formula for the surface area (SA) is SA = 2lw + 2lh + 2wh. Given that SA = 100, we can express one dimension in terms of the others: h = (100 - 2lw) / (2l + 2w). To maximize volume (V), which is V = lwh, we need to find dimensions where lw is a perfect square or close to it. Let's test each option with their surface areas and see if they match 100 units.\n\nA: 5 x 4 x 2 => SA = 2(5*4) + 2(5*2) + 2(4*2) = 80 (not equal to 100)\nB: 6 x 3 x 3 => SA = 2(6*3) + 2(6*3) + 2(3*3) = 72 (not equal to 100)\nC: 8 x 2 x 2 => SA = 2(8*2) + 2(8*2) + 2(2*2) = 100 (matches)\nD: 10 x 1 x 1 => SA = 2(10*1) + 2(10*1) + 2(1*1) = 44 (not equal to 100)\n\nThe correct dimensions are 8 x 2 x 2, which gives a surface area of 100 square units and a maximum volume.",
+      "explanation": "To maximize the volume with a fixed surface area, we need to find dimensions where the product of two sides is as close to a perfect square as possible. This ensures that the volume (length × width × height) will be maximized.",
+      "common_mistake_notes": "A common mistake would be to assume that the largest dimensions result in the maximum volume, but this is not always true when the surface area is fixed. The product of two dimensions should be close to a perfect square."
+    },
+    {
+      "id": ":question2",
+      "stem": "What is the maximum volume of a cylinder with a fixed surface area of 150π square units? The height and radius are in whole numbers.",
+      "choices": {
+        "A": "5 x 3",
+        "B": "4 x 4",
+        "C": "6 x 2",
+        "D": "3 x 5"
+      },
+      "correct_choice": "B",
+      "solution": "To optimize the volume of a cylinder with a fixed surface area, we need to maximize the product of its radius (r) and height (h). The formula for the surface area (SA) of a cylinder is SA = 2πrh + 2πr^2. Given that SA = 150π, we can express one dimension in terms of the other: h = (150π - 2πr^2) / (2πr). To maximize volume (V), which is V = πr^2h, we need to find dimensions where r^2h is a perfect square or close to it. Let's test each option with their surface areas and see if they match 150π units.\n\nA: 5 x 3 => SA = 2π(5*3) + 2π(5^2) = 70π (not equal to 150π)\nB: 4 x 4 => SA = 2π(4*4) + 2π(4^2) = 160π (matches)\nC: 6 x 2 => SA = 2π(6*2) + 2π(6^2) = 84π (not equal to 150π)\nD: 3 x 5 => SA = 2π(3*5) + 2π(3^2) = 42π (not equal to 150π)\n\nThe correct dimensions are 4 x 4, which gives a surface area of 160π square units and a maximum volume.",
+      "explanation": "To maximize the volume with a fixed surface area for a cylinder, we need to find dimensions where the product of radius squared and height is as close to a perfect square as possible. This ensures that the volume (πr^2h) will be maximized.",
+      "common_mistake_notes": "A common mistake would be to assume that the largest dimensions result in the maximum volume, but this is not always true when the surface area is fixed. The product of radius squared and height should be close to a perfect square."
+    },
+    {
+      "id": ":question3",
+      "stem": "What is the maximum volume of a triangular prism with a fixed surface area of 120 square units? The base and height are in whole numbers.",
+      "choices": {
+        "A": "6 x 4 x 3",
+        "B": "5 x 5 x 2",
+        "C": "8 x 3 x 2",
+        "D": "4 x 6 x 2"
+      },
+      "correct_choice": "B",
+      "solution": "To optimize the volume of a triangular prism with a fixed surface area, we need to maximize the product of its base (b), height (h), and length (l). The formula for the surface area (SA) is SA = 2bh + lh. Given that SA = 120, we can express one dimension in terms of the others: l = (120 - 2bh) / h. To maximize volume (V), which is V = bhl, we need to find dimensions where bh is a perfect square or close to it. Let's test each option with their surface areas and see if they match 120 square units.\n\nA: 6 x 4 x 3 => SA = 2(6*4) + 3(6) = 54 (not equal to 120)\nB: 5 x 5 x 2 => SA = 2(5*5) + 2(5) = 60 (matches)\nC: 8 x 3 x 2 => SA = 2(8*3) + 2(8) = 72 (not equal to 120)\nD: 4 x 6 x 2 => SA = 2(4*6) + 2(4) = 56 (not equal to 120)\n\nThe correct dimensions are 5 x 5 x 2, which gives a surface area of 60 square units and a maximum volume.",
+      "explanation": "To maximize the volume with a fixed surface area for a triangular prism, we need to find dimensions where the product of the base and height is as close to a perfect square as possible. This ensures that the volume (bhl) will be maximized.",
+      "common_mistake_notes": "A common mistake would be to assume that the largest dimensions result in the maximum volume, but this is not always true when the surface area is fixed. The product of the base and height should be close to a perfect square."
+    },
+    {
+      "id": ":question4",
+      "stem": "What is the maximum volume of a sphere with a fixed surface area of 150π square units? The radius is in whole numbers.",
+      "choices": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "2"
+      },
+      "correct_choice": "B",
+      "solution": "To optimize the volume of a sphere with a fixed surface area, we need to maximize the radius (r) since the volume (V) and surface area (SA) are directly proportional to r^3 and r^2, respectively. The formula for the surface area is SA = 4πr^2. Given that SA = 150π, we can solve for r: 150π = 4πr^2 => r^2 = 150 / 4 => r^2 = 37.5 (not a perfect square). However, since the radius must be a whole number, we need to find the nearest whole number that gives us an area close to 150π.\n\nA: 3 => SA ≈ 113.1π (too small)\nB: 4 => SA ≈ 150.7π (close enough)\nC: 5 => SA ≈ 251.3π (too large)\nD: 2 => SA ≈ 50.2π (too small)\n\nThe correct radius is 4, which gives a surface area close to 150π square units and a maximum volume.",
+      "explanation": "To maximize the volume with a fixed surface area for a sphere, we need to find the nearest whole number radius that results in a surface area closest to the given value. Since the volume is proportional to r^3, a larger radius will generally result in a greater volume.",
+      "common_mistake_notes": "A common mistake would be to assume that the largest possible radius always gives the maximum volume, but since the radius must be a whole number and the surface area is not exactly 150π, finding the nearest whole number with a surface area close to 150π is crucial."
+    },
+    {
+      "id": ":question5",
+      "stem": "What is the maximum volume of a right circular cone with a fixed surface area of 75π square units? The radius and height are in whole numbers.",
+      "choices": {
+        "A": "3 x 4",
+        "B": "2 x 6",
+        "C": "4 x 3",
+        "D": "5 x 2"
+      },
+      "correct_choice": "A",
+      "solution": "To optimize the volume of a right circular cone with a fixed surface area, we need to maximize the product of its radius (r) and height (h). The formula for the surface area (SA) is SA = πrl + πr^2, where l is the slant height. Given that SA = 75π, we can express one dimension in terms of the others: l = (75π - πr^2) / r. To maximize volume (V), which is V = 1/3πr^2h, we need to find dimensions where r^2h is a perfect square or close to it. Let's test each option with their surface areas and see if they match 75π units.\n\nA: 3 x 4 => SA ≈ 60π (matches)\nB: 2 x 6 => SA ≈ 41.9π (not equal to 75π)\nC: 4 x 3 => SA ≈ 87.6π (not equal to 75π)\nD: 5 x 2 => SA ≈ 50.2π (not equal to 75π)\n\nThe correct dimensions are 3 x 4, which gives a surface area close to 75π square units and a maximum volume.",
+      "explanation": "To maximize the volume with a fixed surface area for a right circular cone, we need to find dimensions where the product of radius squared and height is as close to a perfect square as possible. This ensures that the volume (1/3πr^2h) will be maximized.",
+      "common_mistake_notes": "A common mistake would be to assume that the largest dimensions result in the maximum volume, but this is not always true when the surface area is fixed. The product of radius squared and height should be close to a perfect square."
+    },
+    {
+      "id": ":question6",
+      "stem": "What is the maximum volume of a rectangular pyramid with a fixed surface area of 100 square units? The base dimensions are in whole numbers.",
+      "choices": {
+        "A": "5 x 4 x 3",
+        "B": "4 x 3 x 2",
+        "C": "6 x 3 x 2",
+        "D": "3 x 5 x 2"
+      },
+      "correct_choice": "A",
+      "solution": "To optimize the volume of a rectangular pyramid with a fixed surface area, we need to maximize the product of its base dimensions (length and width) and height. The formula for the surface area (SA) is SA = lw + lh + wh. Given that SA = 100, we can express one dimension in terms of the others: h = (100 - lw - wh) / (l + w). To maximize volume (V), which is V = lwh/3, we need to find dimensions where lw is a perfect square or close to it. Let's test each option with their surface areas and see if they match 100 square units.\n\nA: 5 x 4 x 3 => SA = 20 + 15 + 12 = 47 (not equal to 100)\nB: 4 x 3 x 2 => SA = 12 + 8 + 6 = 26 (not equal to 100)\nC: 6 x 3 x 2 => SA = 18 + 9 + 12 = 39 (not equal to 100)\nD: 3 x 5 x 2 => SA = 15 + 10 + 6 = 31 (not equal to 100)\n\nThe correct dimensions are 5 x 4 x 3, which gives a surface area of 47 square units and a maximum volume.",
+      "explanation": "To maximize the volume with a fixed surface area for a rectangular pyramid, we need to find dimensions where the product of the base length and width is as close to a perfect square as possible. This ensures that the volume (lwh/3) will be maximized.",
+      "common_mistake_notes": "A common mistake would be to assume that the largest dimensions result in the maximum volume, but this is not always true when the surface area is fixed. The product of the base length and width should be close to a perfect square."
+    },
+    {
+      "id": ":question7",
+      "stem": "What is the maximum volume of a right rectangular prism with a fixed surface area of 200 square units? The dimensions are in whole numbers.",
+      "choices": {
+        "A": "5 x 4 x 3",
+        "B": "6 x 3 x 3",
+        "C": "8 x 2 x 2",
+        "D": "10 x 1 x 1"
+      },
+      "correct_choice": "C",
+      "solution": "To optimize the volume of a right rectangular prism with a fixed surface area, we need to maximize the product of its dimensions (length, width, and height). The formula for the surface area (SA) is SA = 2lw + 2lh + 2wh. Given that SA = 200, we can express one dimension in terms of the others: h = (200 - 2lw - 2wh) / (2l + 2w). To maximize volume (V), which is V = lwh, we need to find dimensions where lw is a perfect square or close to it. Let's test each option with their surface areas and see if they match 200 square units.\n\nA: 5 x 4 x 3 => SA = 40 + 15 + 12 = 67 (not equal to 200)\nB: 6 x 3 x 3 => SA = 36 + 18 + 18 = 72 (not equal to 200)\nC: 8 x 2 x 2 => SA = 32 + 16 + 16 = 64 (matches)\nD: 10 x 1 x 1 => SA = 20 + 10 + 10 = 40 (not equal to 200)\n\nThe correct dimensions are 8 x 2 x 2, which gives a surface area of 64 square units and a maximum volume.",
+      "explanation": "To maximize the volume with a fixed surface area for a right rectangular prism, we need to find dimensions where the product of two sides is as close to a perfect square as possible. This ensures that the volume (lwh) will be maximized.",
+      "common_mistake_notes": "A common mistake would be to assume that the largest dimensions result in the maximum volume, but this is not always true when the surface area is fixed. The product of two dimensions should be close to a perfect square."
+    }
+  ]
+}

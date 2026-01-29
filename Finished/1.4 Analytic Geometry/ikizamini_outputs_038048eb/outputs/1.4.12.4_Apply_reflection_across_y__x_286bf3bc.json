@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.12.4",
+  "objective_text": "Apply reflection across y = x",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Reflect the point (3, 4) across the line y = x. Which of the following is the correct reflected point?",
+      "choices": {
+        "A": "(4, 3)",
+        "B": "(3, -4)",
+        "C": "(-4, -3)",
+        "D": "(-3, -4)"
+      },
+      "correct_choice": "A",
+      "solution": "The reflection across the line y = x swaps the x and y coordinates of a point. So, if we start with (3, 4), the reflected point will have its x-coordinate as the original y-coordinate and vice versa: (4, 3).",
+      "explanation": "Reflection across the line y = x is a common transformation in geometry that swaps the x and y values of each coordinate.",
+      "common_mistake_notes": "A common mistake would be to choose option B, which reflects the point along the x-axis instead of the line y = x. Remember that reflection across y = x only swaps coordinates."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Reflect the triangle with vertices A(1, 2), B(3, 4), and C(5, 6) across the line y = x. Which of the following is the correct reflected point for vertex B?",
+      "choices": {
+        "A": "(4, 3)",
+        "B": "(2, 1)",
+        "C": "(-4, -3)",
+        "D": "(-3, -4)"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting vertex B(3, 4) across the line y = x will swap its coordinates: (4, 3).",
+      "explanation": "Reflecting a shape across a line involves reflecting each of its vertices. The same rule for individual points applies.",
+      "common_mistake_notes": "A common mistake would be to choose option B, which reflects the point along the y-axis instead of the line y = x. Remember that reflection across y = x only swaps coordinates."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Reflect the equation y = 2x + 1 across the line y = x. Which of the following is the correct reflected equation?",
+      "choices": {
+        "A": "x = 2y + 1",
+        "B": "x = -2y - 1",
+        "C": "y = -2x - 1",
+        "D": "y = -2x + 1"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting the equation across y = x means swapping x and y. So, y becomes x and vice versa: x = 2y + 1.",
+      "explanation": "When reflecting an equation, treat it as a point (slope-intercept form) or line and apply the reflection rule accordingly.",
+      "common_mistake_notes": "A common mistake would be to choose option C, which reflects the slope incorrectly. Remember that the slope changes sign when reflecting across y = x."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Reflect the parabola defined by the equation y = (x - 2)^2 + 3 across the line y = x. Which of the following is the correct reflected equation?",
+      "choices": {
+        "A": "x = (y - 2)^2 + 3",
+        "B": "x = -(y - 2)^2 - 3",
+        "C": "y = -(x - 2)^2 - 3",
+        "D": "y = -(x - 2)^2 + 3"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting the parabola across y = x means swapping x and y: x = (y - 2)^2 + 3.",
+      "explanation": "When reflecting a more complex function, like a parabola, apply the reflection rule to each term in the equation.",
+      "common_mistake_notes": "A common mistake would be to choose option C, which reflects the vertex incorrectly. Remember that only the x and y values change; the structure of the equation remains the same."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Reflect the circle with center (3, 4) and radius 2 across the line y = x. Which of the following is the correct reflected circle's center?",
+      "choices": {
+        "A": "(4, 3)",
+        "B": "(3, -4)",
+        "C": "(-4, -3)",
+        "D": "(-3, -4)"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting the circle across y = x swaps the coordinates of its center: (4, 3). The radius remains unchanged.",
+      "explanation": "Reflecting a circle involves reflecting its center point and keeping the radius constant.",
+      "common_mistake_notes": "A common mistake would be to choose option B, which reflects the circle along the x-axis instead of the line y = x. Remember that reflection across y = x only swaps coordinates."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Reflect the function f(x) = 3sin(x) + 2 across the line y = x. Which of the following is the correct reflected function?",
+      "choices": {
+        "A": "x = 3sin(y) + 2",
+        "B": "x = -3sin(y) - 2",
+        "C": "y = -3sin(x) - 2",
+        "D": "y = -3sin(x) + 2"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting the function across y = x means swapping x and y: x = 3sin(y) + 2.",
+      "explanation": "When reflecting a function, treat it as a set of points and apply the reflection rule accordingly.",
+      "common_mistake_notes": "A common mistake would be to choose option C, which reflects the function's coefficients incorrectly. Remember that only the x and y values change; the structure of the function remains the same."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Reflect the line segment connecting points A(-1, 2) and B(4, 5) across the line y = x. Which of the following is the correct reflected point for B?",
+      "choices": {
+        "A": "(5, 4)",
+        "B": "(2, -1)",
+        "C": "(-5, -4)",
+        "D": "(-4, -5)"
+      },
+      "correct_choice": "A",
+      "solution": "Reflecting point B(4, 5) across y = x swaps its coordinates: (5, 4).",
+      "explanation": "Reflecting a line segment involves reflecting each endpoint and keeping the line connecting them.",
+      "common_mistake_notes": "A common mistake would be to choose option C, which reflects the point along the x-axis instead of the line y = x. Remember that reflection across y = x only swaps coordinates."
+    }
+  ]
+}

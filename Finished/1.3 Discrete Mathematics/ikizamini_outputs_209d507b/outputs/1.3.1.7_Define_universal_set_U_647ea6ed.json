@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.1.7",
+  "objective_text": "Define universal set (U)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is a universal set in the context of set theory?",
+      "choices": {
+        "A": "A set that contains all possible elements under consideration.",
+        "B": "An empty set.",
+        "C": "A set with only one element.",
+        "D": "A set that intersects with every other set."
+      },
+      "correct_choice": "A",
+      "solution": "In set theory, a universal set (U) is a set that contains all possible elements under consideration. It serves as a container for all other sets being studied in a particular context. Answer A accurately defines the concept of a universal set.",
+      "explanation": "The universal set includes everything within the scope of discussion. Answers B and C describe sets with limited cardinality, which is not the defining characteristic of a universal set. Answer D refers to an intersection, not a universal set.",
+      "common_mistake_notes": "Confusing the universal set with the empty set (B) or a singleton set (C). These sets have different properties and do not encompass all elements under consideration."
+    },
+    {
+      "id": "Qwerty",
+      "stem": "Which of the following best represents a universal set for a collection of numbers including integers from -5 to 5?",
+      "choices": {
+        "A": "{-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}",
+        "B": "{Integers}",
+        "C": "{Positive integers}",
+        "D": "{Even numbers}"
+      },
+      "correct_choice": "B",
+      "solution": "The best representation of a universal set for the given collection of numbers would be all integers, as it includes every possible integer value. Answer B accurately represents this concept.",
+      "explanation": "Answer A is too specific and only contains a limited range of integers. Answer C narrows down to positive integers only, leaving out negative ones. Answer D further restricts the set to even numbers only, which does not encompass all integers in the given range.",
+      "common_mistake_notes": "Choosing a set that is too restrictive (A, C, or D), not considering that the universal set should include all elements under consideration."
+    },
+    {
+      "id": "Zxcvb",
+      "stem": "In a Venn diagram representing all animals, what would the universal set represent?",
+      "choices": {
+        "A": "The overlapping region of mammals and birds.",
+        "B": "Only mammals.",
+        "C": "All animals in the diagram.",
+        "D": "None of the sets shown."
+      },
+      "correct_choice": "C",
+      "solution": "In a Venn diagram representing all animals, the universal set would encompass every animal included in the diagram. Answer C correctly identifies this representation.",
+      "explanation": "Answer A represents an intersection, not the entire range of animals. Answer B is too specific and only includes mammals. Answer D suggests that there is no universal set present, which is incorrect as it should include all sets shown in the Venn diagram.",
+      "common_mistake_notes": "Confusing the universal set with a subset or intersection (A) or overlooking its role as the container for all sets (D)."
+    },
+    {
+      "id": "Sdfgh",
+      "stem": "What is the relationship between the universal set and a set containing only prime numbers?",
+      "choices": {
+        "A": "The set of prime numbers is a subset of the universal set.",
+        "B": "The set of prime numbers is equal to the universal set.",
+        "C": "The set of prime numbers contains the universal set.",
+        "D": "The sets have no relationship."
+      },
+      "correct_choice": "A",
+      "solution": "In this context, the set of prime numbers would be a subset of the universal set, which includes all possible numbers. Answer A correctly describes their relationship.",
+      "explanation": "Answer B is incorrect because the set of prime numbers is not equivalent to the universal set; it is only a part of it. Answer C reverses the containment, which is also wrong. Answer D suggests no connection between the sets, whereas they have a clear hierarchical relationship.",
+      "common_mistake_notes": "Misunderstanding the concept of subset and superset (A vs. B or C) or assuming independence (D)."
+    },
+    {
+      "id": "Xcvbn",
+      "stem": "In a set theory problem involving students in a school, what would be considered the universal set?",
+      "choices": {
+        "A": "The math department students.",
+        "B": "All students enrolled in the senior year.",
+        "C": "The entire student body of the school.",
+        "D": "Students who participate in extracurricular activities."
+      },
+      "correct_choice": "C",
+      "solution": "In this context, the universal set would be the entire student body of the school, as it includes all students under consideration. Answer C accurately represents the universal set.",
+      "explanation": "Answer A, B, and D are subsets that only represent specific groups of students, not the complete population. The universal set should include all students without any restrictions or classifications.",
+      "common_mistake_notes": "Selecting a subset based on a specific characteristic (A, B, or D) instead of considering the entire group."
+    },
+    {
+      "id": "Bnm",
+      "stem": "What is the universal set in a Venn diagram comparing colors of cars and colors of houses?",
+      "choices": {
+        "A": "The intersection of red cars and blue houses.",
+        "B": "All colors of cars.",
+        "C": "All colors of houses.",
+        "D": "All possible colors."
+      },
+      "correct_choice": "D",
+      "solution": "In this scenario, the universal set would include all possible colors for both cars and houses. Answer D correctly identifies the universal set.",
+      "explanation": "Answer A represents an intersection, not the complete range of colors. Answers B and C only consider one aspect (cars or houses), not both. The universal set should cover all relevant colors across both categories.",
+      "common_mistake_notes": "Focusing on a single category (B or C) or混淆交集与全集（A）."
+    },
+    {
+      "id": "Vbnm",
+      "stem": "In a probability problem where you roll two dice, what would be the universal set?",
+      "choices": {
+        "A": "The sum of all possible outcomes.",
+        "B": "All even numbers rolled on the dice.",
+        "C": "The individual outcomes for each die.",
+        "D": "All possible combinations of numbers rolled on both dice."
+      },
+      "correct_choice": "D",
+      "solution": "In this probability problem, the universal set would be all possible combinations of numbers rolled on both dice. Answer D accurately represents the universal set.",
+      "explanation": "Answer A represents a different aspect of the problem (sums), not the complete range of outcomes. Answer B is too restrictive, only considering even numbers. Answer C describes individual die rolls, not combined results. The universal set should include all possible pairs of dice rolls.",
+      "common_mistake_notes": "Misinterpreting the focus of the problem (A or B) or overlooking the combination aspect (C)."
+    }
+  ]
+}

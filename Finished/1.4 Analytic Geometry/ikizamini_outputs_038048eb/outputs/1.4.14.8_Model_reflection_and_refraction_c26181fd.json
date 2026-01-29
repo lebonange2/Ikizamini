@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.14.8",
+  "objective_text": "Model reflection and refraction",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A light ray hits a boundary between two media at an angle of incidence of 30 degrees. If the refractive index of medium 2 is 1.5, what is the angle of refraction?",
+      "choices": {
+        "A": "18 degrees",
+        "B": "20 degrees",
+        "C": "26 degrees",
+        "D": "30 degrees"
+      },
+      "correct_choice": "C",
+      "solution": "Using Snell's Law: n1*sin(θ1) = n2*sin(θ2), where n1 is the refractive index of medium 1 (air, typically assumed to be 1), θ1 is the angle of incidence, n2 is the refractive index of medium 2, and θ2 is the angle of refraction. Given n2 = 1.5 and θ1 = 30 degrees, we can solve for θ2: sin(θ2) = (n1*sin(θ1)) / n2 = (1 * sin(30)) / 1.5 ≈ 0.5 / 1.5 ≈ 0.333. Thus, θ2 ≈ arcsin(0.333) ≈ 26 degrees.",
+      "explanation": "Snell's Law is used to describe the relationship between the angles of incidence and refraction when light passes through different media with varying refractive indices.",
+      "common_mistake_notes": "A common mistake would be to assume that the angle of refraction is equal to the angle of incidence, which is not true in general. The refractive index of the second medium affects the bending of the ray."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "A plane mirror reflects a light ray incident at an angle of 45 degrees. What is the angle between the reflected ray and the normal to the mirror?",
+      "choices": {
+        "A": "0 degrees",
+        "B": "30 degrees",
+        "C": "45 degrees",
+        "D": "90 degrees"
+      },
+      "correct_choice": "C",
+      "solution": "According to the law of reflection, the angle of incidence is equal to the angle of reflection. Given an incident angle of 45 degrees, the reflected ray will also make a 45-degree angle with the normal to the mirror.",
+      "explanation": "The law of reflection states that the angle between the incoming light ray and the normal to the reflecting surface (incident angle) is equal to the angle between the reflected ray and the same normal (reflected angle).",
+      "common_mistake_notes": "A common mistake would be to assume that the angle between the reflected ray and the normal is twice the incident angle, which is not correct. The angles are equal in reflection."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "A light beam passes from air into water, where its speed decreases. How does the wavelength of the light change?",
+      "choices": {
+        "A": "Increases",
+        "B": "Remains the same",
+        "C": "Decreases",
+        "D": "Cannot be determined without more information"
+      },
+      "correct_choice": "C",
+      "solution": "The speed of light in a medium is inversely proportional to its refractive index. When light passes from air into water, its speed decreases due to the higher refractive index of water. The wavelength (λ) of light is related to its frequency (f) and speed (v) by λ = v/f. Since the frequency remains constant as it passes through different media, a decrease in speed will result in a decrease in wavelength.",
+      "explanation": "The relationship between light's wavelength, frequency, and speed in a medium is governed by the equation λ = v/f. A change in the speed of light due to a change in medium affects the wavelength while keeping the frequency constant.",
+      "common_mistake_notes": "A common mistake would be to assume that the wavelength remains the same or increases when passing from air to water, but this is not correct because the speed of light decreases in water."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "What happens to the angle of refraction when light passes from a medium with a lower refractive index to one with a higher refractive index?",
+      "choices": {
+        "A": "Increases",
+        "B": "Decreases",
+        "C": "Remains the same",
+        "D": "Cannot be determined without more information"
+      },
+      "correct_choice": "B",
+      "solution": "According to Snell's Law, n1*sin(θ1) = n2*sin(θ2), where n1 and n2 are the refractive indices of medium 1 and medium 2, respectively, and θ1 and θ2 are the angles of incidence and refraction. When light passes from a medium with a lower refractive index (n1) to one with a higher refractive index (n2), the sine of the angle of refraction (θ2) must decrease to maintain the equality.",
+      "explanation": "Snell's Law describes how light rays change direction when passing through different media. When the refractive index increases, the bending of the ray becomes more pronounced, resulting in a smaller angle of refraction.",
+      "common_mistake_notes": "A common mistake would be to assume that the angle of refraction increases or remains the same when passing from a lower to a higher refractive index medium, but this is not correct. The angle decreases due to increased bending."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "What is the critical angle for total internal reflection between water and glass if the refractive index of water is 1.33 and that of glass is 1.5?",
+      "choices": {
+        "A": "49 degrees",
+        "B": "60 degrees",
+        "C": "72 degrees",
+        "D": "90 degrees"
+      },
+      "correct_choice": "B",
+      "solution": "The critical angle (θc) for total internal reflection can be found using the formula: sin(θc) = n2 / n1, where n1 is the refractive index of the medium with lower refractive index and n2 is that of the higher refractive index. Given n1 = 1.33 (water) and n2 = 1.5 (glass), we can calculate sin(θc): sin(θc) = 1.5 / 1.33 ≈ 1.127, which is greater than 1. Since the sine of an angle cannot be greater than 1, there is no critical angle for total internal reflection between these two media.",
+      "explanation": "Total internal reflection occurs when light rays traveling from a medium with a higher refractive index to one with a lower refractive index are incident at an angle greater than the critical angle. The critical angle can be calculated using the formula sin(θc) = n2 / n1, where n1 and n2 are the refractive indices of the two media.",
+      "common_mistake_notes": "A common mistake would be to calculate the sine value and assume it represents the critical angle directly, without realizing that a sine value greater than 1 is not physically possible. This indicates that total internal reflection does not occur."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "What happens to the polarization of light when it reflects off a smooth surface?",
+      "choices": {
+        "A": "Remains unpolarized",
+        "B": "Becomes partially polarized",
+        "C": "Becomes fully polarized",
+        "D": "Cannot be determined without more information"
+      },
+      "correct_choice": "B",
+      "solution": "When light reflects off a smooth surface, it becomes partially polarized. This is known as Brewster's angle polarization, where the plane of vibration of the reflected light is perpendicular to the plane containing the incident ray and the normal to the surface.",
+      "explanation": "At Brewster's angle, which is specific to each pair of media, the reflected light has a preferential orientation (polarization) due to the interference between the s-polarized and p-polarized components of the incident light. The reflected light is thus partially polarized.",
+      "common_mistake_notes": "A common mistake would be to assume that the light remains unpolarized or becomes fully polarized after reflection from a smooth surface. Partial polarization is the correct outcome at Brewster's angle."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "What is the primary difference between reflection and refraction?",
+      "choices": {
+        "A": "Reflection involves bending of light, while refraction does not.",
+        "B": "Reflection occurs at the boundary between two media, whereas refraction does not.",
+        "C": "Reflection changes the wavelength of light, but refraction does not.",
+        "D": "Reflection maintains the angle of incidence, while refraction changes it."
+      },
+      "correct_choice": "D",
+      "solution": "The primary difference between reflection and refraction is that reflection maintains the angle of incidence (the angle between the incident ray and the normal to the surface), while refraction causes a change in the direction of the light ray as it passes through different media, altering both the angle of incidence and the angle of refraction.",
+      "explanation": "Reflection is the bouncing back of light rays from a surface, preserving the angles between the incident and reflected rays. Refraction, on the other hand, involves the bending of light rays when they pass through a boundary between two media with different refractive indices.",
+      "common_mistake_notes": "A common mistake would be to confuse reflection and refraction as having similar effects on light rays, but they differ in how they change the direction of light. Reflection maintains angles, while refraction alters them."
+    }
+  ]
+}

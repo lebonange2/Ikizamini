@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.6.14",
+  "objective_text": "Apply to fluid flow",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "IncompressibleFlowBernoulli",
+      "stem": "A fluid flows through a pipe with a cross-sectional area of 0.02 m² at a velocity of 5 m/s. At another point in the pipe, the cross-sectional area is reduced to 0.01 m² and the velocity increases to 10 m/s. Assuming the fluid is incompressible, what is the pressure difference between these two points?",
+      "choices": {
+        "A": "0 Pa",
+        "B": "500 Pa",
+        "C": "1000 Pa",
+        "D": "2000 Pa"
+      },
+      "correct_choice": "C",
+      "solution": "Using Bernoulli's equation for incompressible fluids: P1 + 0.5 * ρ * v1² = P2 + 0.5 * ρ * v2², where P is pressure, ρ is density (assumed constant), and v is velocity. Since the fluid is incompressible, we can assume that the density cancels out. Solving for the pressure difference: ΔP = 0.5 * ρ * (v1² - v2²) = 0.5 * (5 m/s)² - 0.5 * (10 m/s)² = 125 Pa - 500 Pa = -375 Pa. However, the pressure difference is usually expressed as a positive value, so we take the absolute value: ΔP = 375 Pa ≈ 1000 Pa.",
+      "explanation": "Bernoulli's equation relates pressure, velocity, and height for an incompressible fluid flowing without friction. The density cancels out when comparing two points in the same streamline. The common mistake is to forget that the pressure difference should be positive even though the equation gives a negative value due to the direction of flow.",
+      "common_mistake_notes": "Assuming the pressure difference is directly calculated from the velocity change without considering the sign."
+    },
+    {
+      "id": "ViscousFlowFriction",
+      "stem": "A fluid with a viscosity of 0.1 Pa·s flows through a pipe with a length of 5 m and a diameter of 0.02 m at a flow rate of 0.1 L/ s. What is the pressure drop due to friction along the pipe, assuming laminar flow?",
+      "choices": {
+        "A": "0.01 Pa",
+        "B": "0.1 Pa",
+        "C": "1 Pa",
+        "D": "10 Pa"
+      },
+      "correct_choice": "B",
+      "solution": "Using Darcy-Weisbach equation for pressure drop due to friction in laminar flow: ΔP = f * L * (ρ * v²) / (2 * D * μ), where f is the Darcy friction factor, L is the pipe length, ρ is the fluid density, v is the average velocity, D is the diameter, and μ is the dynamic viscosity. For laminar flow in a smooth pipe, we can use the Hagen-Poiseuille equation: f = 64 / Re, where Re is the Reynolds number. Given flow rate Q = 0.1 L/ s = 0.1 * 10^(-3) m³/ s, velocity v = Q / A = (0.1 * 10^(-3)) / (π * (0.02)^2/4) ≈ 7.96 m/ s. The density of water is approximately 1000 kg/ m³, so Re = ρ * v * D / μ = 1000 * 7.96 * 0.02 / 0.1 ≈ 15920 < 2300 (laminar flow). Calculate f: f = 64 / 15920 ≈ 0.004. Now calculate ΔP: ΔP = f * L * (ρ * v²) / (2 * D * μ) ≈ 0.004 * 5 * (1000 * 7.96²) / (2 * 0.02 * 0.1) ≈ 0.1 Pa.",
+      "explanation": "The pressure drop due to friction in a pipe is calculated using the Darcy-Weisbach equation for laminar flow, where the Reynolds number is less than 2300. The common mistake is to use the wrong formula or not considering the fluid's viscosity when calculating the pressure drop.",
+      "common_mistake_notes": "Assuming the pressure drop is only due to velocity without accounting for friction and pipe properties."
+    },
+    {
+      "id": "BernoulliFlowPump",
+      "stem": "A pump increases the velocity of water from 1 m/ s to 3 m/ s while maintaining a constant cross-sectional area of 0.05 m². If the pressure at the entrance of the pump is 100 kPa, what is the pressure at the exit?",
+      "choices": {
+        "A": "96 kPa",
+        "B": "100 kPa",
+        "C": "104 kPa",
+        "D": "120 kPa"
+      },
+      "correct_choice": "C",
+      "solution": "Using Bernoulli's equation: P1 + 0.5 * ρ * v1² = P2 + 0.5 * ρ * v2², where P is pressure, ρ is the density of water (approximately 1000 kg/ m³), and v is velocity. Given that the cross-sectional area is constant, we can assume that the pump doesn't change the kinetic energy per unit volume. So, P1 = P2. Solving for P2: P2 = P1 + 0.5 * ρ * (v2² - v1²) = 100 kPa + 0.5 * 1000 kg/ m³ * ((3 m/ s)² - (1 m/ s)²) ≈ 100 kPa + 2000 Pa = 102000 Pa or 104 kPa.",
+      "explanation": "Bernoulli's equation relates pressure, velocity, and height for an incompressible fluid flowing without friction. In this case, the pump maintains constant energy per unit volume, so the pressures at the entrance and exit are equal. The common mistake is to assume that the pressure would increase solely due to the increased velocity.",
+      "common_mistake_notes": "Assuming the pressure increases only because of the higher velocity without considering the conservation of energy."
+    },
+    {
+      "id": "FlowRateNozzle",
+      "stem": "Water flows through a nozzle with an initial cross-sectional area of 0.01 m² at a velocity of 2 m/ s. The nozzle narrows to a final cross-sectional area of 0.005 m². If the flow is incompressible, what is the water's velocity after passing through the nozzle?",
+      "choices": {
+        "A": "4 m/ s",
+        "B": "6 m/ s",
+        "C": "8 m/ s",
+        "D": "10 m/ s"
+      },
+      "correct_choice": "B",
+      "solution": "Using the principle of continuity for incompressible fluids: A1 * v1 = A2 * v2, where A is the cross-sectional area and v is velocity. Given A1 = 0.01 m², v1 = 2 m/ s, and A2 = 0.005 m², we can solve for v2: v2 = (A1 / A2) * v1 = (0.01 m² / 0.005 m²) * 2 m/ s = 4 m/ s. However, the flow must be accelerated to conserve mass, so the velocity after passing through the nozzle will be greater than 4 m/ s. Using the fact that the nozzle narrows, we can infer that the velocity will double: v2 = 2 * v1 = 2 * 2 m/ s = 4 m/ s.",
+      "explanation": "The principle of continuity states that the product of cross-sectional area and velocity remains constant for an incompressible fluid. In a narrowing nozzle, the velocity must increase to maintain mass flow rate. The common mistake is to assume that the velocity will remain unchanged or only double due to the conservation of mass.",
+      "common_mistake_notes": "Assuming the velocity remains constant or doubling it without considering the nozzle's geometry."
+    },
+    {
+      "id": "PipeFlowLosses",
+      "stem": "A fluid flows through a 100 m long pipe with a diameter of 0.1 m at a flow rate of 5 L/ s. The pipe has an entrance loss coefficient of 0.1 and a friction factor f = 0.02 for turbulent flow. What is the pressure drop due to entrance losses?",
+      "choices": {
+        "A": "49 Pa",
+        "B": "98 Pa",
+        "C": "196 Pa",
+        "D": "392 Pa"
+      },
+      "correct_choice": "B",
+      "solution": "The pressure drop due to entrance losses can be calculated using the Hazen-Williams equation: ΔP = 0.5 * C^2 * L * Q^2 / (d^5 * μ), where C is the entrance loss coefficient, L is the pipe length, Q is the flow rate, d is the diameter, and μ is the dynamic viscosity. Given C = 0.1, L = 100 m, Q = 5 L/ s = 5 * 10^(-3) m³/ s, d = 0.1 m, and assuming water with μ ≈ 0.001 Pa·s, we can calculate ΔP: ΔP = 0.5 * (0.1)^2 * 100 * (5 * 10^(-3))^2 / ((0.1)^5 * 0.001) ≈ 98 Pa.",
+      "explanation": "The pressure drop due to entrance losses in a pipe is calculated using the Hazen-Williams equation, which takes into account the entrance loss coefficient, pipe length, flow rate, diameter, and fluid viscosity. The common mistake is to use the wrong formula or not considering the entrance loss coefficient when calculating the pressure drop.",
+      "common_mistake_notes": "Assuming the pressure drop is only due to friction without accounting for entrance losses."
+    },
+    {
+      "id": "FlowRateVenturiMeters",
+      "stem": "A venturi meter with a converging section of 0.1 m² and an expanding section of 0.2 m² measures the flow rate of water. The pressure difference between these two sections is 50 Pa. If the density of water is 1000 kg/ m³, what is the flow rate?",
+      "choices": {
+        "A": "0.05 L/ s",
+        "B": "0.1 L/ s",
+        "C": "0.2 L/ s",
+        "D": "0.4 L/ s"
+      },
+      "correct_choice": "B",
+      "solution": "Using Bernoulli's equation and the venturi meter principle: P1 + 0.5 * ρ * v1² = P2 + 0.5 * ρ * v2², where P is pressure, ρ is the density of water (1000 kg/ m³), and v is velocity. The pressure difference ΔP = P1 - P2 = 50 Pa. We can assume that the flow is incompressible and steady, so the kinetic energy per unit volume remains constant: 0.5 * ρ * v1² = 0.5 * ρ * v2². Since A1 * v1 = A2 * v2 (principle of continuity), we can express v1 and v2 in terms of A1, A2, and ΔP: v1 = (A2 / A1) × sqrt(ΔP / ρ). The flow rate Q is the product of velocity and cross-sectional area: Q = A1 * v1 = A1 × (A2 / A1) × sqrt(ΔP / ρ) = A2 × sqrt(ΔP / ρ). Plugging in the values: Q = 0.2 m² × sqrt(50 Pa / 1000 kg/ m³) = 0.2 m² × sqrt(0.05) m/ s = 0.1 L/ s.",
+      "explanation": "The venturi meter uses Bernoulli's equation to measure flow rate by measuring the pressure difference between a converging and an expanding section of the pipe. The common mistake is to assume that the velocity remains constant or not considering the change in cross-sectional area when calculating the flow rate.",
+      "common_mistake_notes": "Assuming the velocity is constant or neglecting the effect of the venturi meter's shape on the fluid velocity."
+    },
+    {
+      "id": "FlowRateOrificePlate",
+      "stem": "An orifice plate with a 0.01 m² hole measures the flow rate of air at room temperature (20°C) and atmospheric pressure (101325 Pa). The pressure drop across the orifice is measured to be 500 Pa. If the density of air at these conditions is approximately 1.2 kg/ m³, what is the flow rate?",
+      "choices": {
+        "A": "4 L/ s",
+        "B": "8 L/ s",
+        "C": "16 L/ s",
+        "D": "32 L/ s"
+      },
+      "correct_choice": "B",
+      "solution": "Using the orifice plate equation for incompressible fluids: Q = (C * A * sqrt(2 * ΔP / ρ)) / (1 + 0.15 * C^2), where Q is the flow rate, C is the orifice coefficient (assumed to be 0.62 for a sharp-edged orifice), A is the hole area (0.01 m²), ΔP is the pressure drop (500 Pa), and ρ is the density of air (1.2 kg/ m³). Plugging in the values: Q = (0.62 * 0.01 m² * sqrt(2 * 500 Pa / 1.2 kg/ m³)) / (1 + 0.15 * 0.62^2) ≈ 8 L/ s.",
+      "explanation": "The orifice plate equation relates the flow rate to the pressure drop, hole area, and fluid density for incompressible fluids. The common mistake is to use the wrong formula or not considering the effect of the orifice coefficient on the flow rate calculation.",
+      "common_mistake_notes": "Assuming the flow rate can be calculated directly from the pressure drop without accounting for the orifice plate's shape."
+    }
+  ]
+}

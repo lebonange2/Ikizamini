@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.5.10",
+  "objective_text": "Determine focal width (latus rectum)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Find the latus rectum of the parabola with equation y = x^2.",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "8"
+      },
+      "correct_choice": "C",
+      "solution": "The formula for the focal width (latus rectum) of a parabola in standard form y = ax^2 is L = 4p, where p is the distance from the vertex to the focus. For y = x^2, p = 1/4. Thus, L = 4 * (1/4) = 1.",
+      "explanation": "The latus rectum of a parabola is twice the focal length, which for y = x^2 with 'a' equal to 1, is 2p. Since p = 1/4, L = 2 * (1/4) = 1/2.",
+      "common_mistake_notes": "A common mistake is to confuse the focal length with the latus rectum."
+    },
+    {
+      "id": "Two",
+      "stem": "Find the latus rectum of the parabola with equation x = 2y^2.",
+      "choices": {
+        "A": "1/8",
+        "B": "1/4",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "The formula for the latus rectum of a parabola in standard form x = ay^2 is L = 4p, where p is the distance from the vertex to the focus. For x = 2y^2, p = 1/(4 * (1/2)) = 1/2. Thus, L = 4 * (1/2) = 2.",
+      "explanation": "The latus rectum of a parabola is twice the focal length. For x = 2y^2, convert to standard form y = ax^2 and find 'a'. After converting, we find that 'a' is 1/4, so p = 1/(4 * (1/4)) = 1. Therefore, L = 4p = 4.",
+      "common_mistake_notes": "A common mistake is to forget to convert the equation to standard form before finding 'a'."
+    },
+    {
+      "id": "Three",
+      "stem": "Find the latus rectum of the parabola with focus at (3, 0) and directrix y = -2.",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "8"
+      },
+      "correct_choice": "B",
+      "solution": "The distance from the vertex to the focus is p, which can be found using the formula p = (1/4) * (distance between focus and directrix). The distance between (3, 0) and y = -2 is 2 units. Thus, p = (1/4) * 2 = 1/2, and L = 4p = 2.",
+      "explanation": "The latus rectum of a parabola is twice the focal length. Given the focus and directrix, calculate the distance between them to find p. Then use L = 4p.",
+      "common_mistake_notes": "A common mistake is to confuse the distance from the vertex to the directrix with the distance between the focus and directrix."
+    },
+    {
+      "id": "Four",
+      "stem": "Find the latus rectum of the parabola with equation y = 3(x - 2)^2 + 1.",
+      "choices": {
+        "A": "4/3",
+        "B": "8/3",
+        "C": "16/3",
+        "D": "32/3"
+      },
+      "correct_choice": "B",
+      "solution": "The parabola is in the form y = a(x - h)^2 + k, where (h, k) is the vertex. Expand and simplify: y = 3x^2 - 12x + 15. Thus, a = 3. The latus rectum L = 4p, where p = 1/(4 * 3) = 1/12. So, L = 4 * (1/12) = 1/3.",
+      "explanation": "The latus rectum of a parabola is twice the focal length. Convert to standard form y = ax^2 and find 'a'. Then calculate p and use L = 4p.",
+      "common_mistake_notes": "A common mistake is to forget to expand and simplify the given equation before finding 'a'."
+    },
+    {
+      "id": "Five",
+      "stem": "Find the latus rectum of the parabola with vertex at (1, 2) and focus at (4, 2).",
+      "choices": {
+        "A": "3",
+        "B": "6",
+        "C": "9",
+        "D": "12"
+      },
+      "correct_choice": "B",
+      "solution": "The distance between the vertex (1, 2) and the focus (4, 2) is p. Since both points have the same y-coordinate, p = |x焦点 - x顶点| = |4 - 1| = 3. Thus, L = 4p = 12.",
+      "explanation": "The latus rectum of a parabola is twice the focal length. Given the vertex and focus coordinates, calculate the distance between them to find p. Then use L = 4p.",
+      "common_mistake_notes": "A common mistake is to forget that the distance between the vertex and focus is along the axis of symmetry."
+    },
+    {
+      "id": "Six",
+      "stem": "Find the latus rectum of the parabola with equation x = 4(y - 3)^2 + 5.",
+      "choices": {
+        "A": "1/8",
+        "B": "1/4",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "The parabola is in the form x = a(y - k)^2 + h, where (h, k) is the vertex. Expand and simplify: x = 4y^2 - 24y + 37. Thus, a = 4. The latus rectum L = 4p, where p = 1/(4 * 4) = 1/16. So, L = 4 * (1/16) = 1/4.",
+      "explanation": "The latus rectum of a parabola is twice the focal length. Convert to standard form x = ay^2 and find 'a'. Then calculate p and use L = 4p.",
+      "common_mistake_notes": "A common mistake is to forget to expand and simplify the given equation before finding 'a'."
+    },
+    {
+      "id": "Seven",
+      "stem": "Find the latus rectum of the parabola with vertex at (0, 0) and focus at (3, 0).",
+      "choices": {
+        "A": "1/3",
+        "B": "2/3",
+        "C": "4/3",
+        "D": "8/3"
+      },
+      "correct_choice": "C",
+      "solution": "The distance between the vertex (0, 0) and the focus (3, 0) is p. Since both points have the same x-coordinate, p = |y焦点 - y顶点| = |0 - 0| = 0. However, for a parabola with vertex at (0, 0) and focus at (3, 0), 'a' is negative. The standard form is x = ay^2 with a = -1/4. Thus, p = 1/(4 * (-1/4)) = -1, and L = 4p = -4.",
+      "explanation": "The latus rectum of a parabola is twice the focal length. Given the vertex and focus coordinates, calculate the distance between them to find p. For negative 'a', use the standard form x = ay^2 with a = -1/4. Then use L = 4p.",
+      "common_mistake_notes": "A common mistake is to assume that all parabolas have positive 'a', which leads to an incorrect focal length and latus rectum."
+    }
+  ]
+}

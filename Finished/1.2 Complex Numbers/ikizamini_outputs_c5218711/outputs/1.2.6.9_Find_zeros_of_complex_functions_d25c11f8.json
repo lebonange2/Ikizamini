@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.6.9",
+  "objective_text": "Find zeros of complex functions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the zeros of the function f(z) = z^2 + 4i.",
+      "choices": {
+        "A": "-2i",
+        "B": "2i",
+        "C": "2",
+        "D": "-2"
+      },
+      "correct_choice": "A",
+      "solution": "To find the zeros of a quadratic complex function, set it equal to zero and solve for z. For f(z) = z^2 + 4i = 0, use the quadratic formula: z = (-b ± √(b² - 4ac)) / (2a). Here, a = 1, b = 0, c = 4i. Plugging these values gives z = ±√(-4)i = ±2i.",
+      "explanation": "The quadratic formula applies to complex numbers. Since the discriminant is negative, expect two complex roots.",
+      "common_mistake_notes": "Overlook real solutions or forget imaginary part in the quadratic formula."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the zeros of the function g(z) = 3z^3 - 6iz^2 + 9.",
+      "choices": {
+        "A": "i√3",
+        "B": "-i√3",
+        "C": "0",
+        "D": "i"
+      },
+      "correct_choice": "C",
+      "solution": "For g(z) = 3z^3 - 6iz^2 + 9 = 0, if z = 0, the equation is satisfied. Thus, z = 0 is a zero. Factor out z and solve the remaining quadratic: 3z^2 - 6iz + 9 = 0, which has no real or complex solutions.",
+      "explanation": "A linear term with zero coefficient indicates an immediate zero. Factoring simplifies to solving a quadratic with no additional zeros.",
+      "common_mistake_notes": "Overlook the linear term and assume all zeros from cubic equation."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the zeros of the function h(z) = z^4 + 2z^2 + 1.",
+      "choices": {
+        "A": "±i",
+        "B": "±√(−1)",
+        "C": "±√(−2)",
+        "D": "0"
+      },
+      "correct_choice": "A",
+      "solution": "Rewrite as (z^2 + 1)^2 = 0. Taking the square root gives z^2 + 1 = 0, and solving for z results in z = ±√(-1) = ±i.",
+      "explanation": "Recognize a perfect square; factor and solve the quadratic inside the square root.",
+      "common_mistake_notes": "Try to solve directly leading to a complex quartic equation."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the zeros of the function j(z) = z^3 - 2z + i.",
+      "choices": {
+        "A": "1 + √(−1)",
+        "B": "1 - √(−1)",
+        "C": "1 + √(2)i",
+        "D": "1 - √(2)i"
+      },
+      "correct_choice": "B",
+      "solution": "j(1) = i, so z - 1 is a factor. Divide by (z - 1): (z^2 + z - 1). Factoring gives (z + 1)(z - √(-1)). One zero is z = 1 - √(−1).",
+      "explanation": "Simple value reveals a linear factor. Divide and factor quadratic for zeros.",
+      "common_mistake_notes": "Assume real roots or overlook complex roots when testing values."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the zeros of the function k(z) = z^2 + 4z + 5.",
+      "choices": {
+        "A": "i, -i",
+        "B": "2, -3",
+        "C": "1 + i, 1 - i",
+        "D": "−2 + √(−1), −2 - √(−1)"
+      },
+      "correct_choice": "D",
+      "solution": "Quadratic equation. Using the quadratic formula: z = (-b ± √(b² - 4ac)) / (2a) with a = 1, b = 4, c = 5 gives z = (-4 ± √(-16)) / 2 = (-4 ± 4i) / 2 = -2 ± 2i.",
+      "explanation": "Quadratic formula; roots are complex conjugates due to real coefficients.",
+      "common_mistake_notes": "Forget negative discriminant or mix up signs in the quadratic formula."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the zeros of the function l(z) = z^3 + 2z^2 + 4z + 8.",
+      "choices": {
+        "A": "−2, i√(−1), -i√(−1)",
+        "B": "0, √(−2), -√(−2)",
+        "C": "−2, 2i, -2i",
+        "D": "−2, 2, 4"
+      },
+      "correct_choice": "A",
+      "solution": "l(-2) = 0; z + 2 is a factor. Divide: (z^2 - 2). Factoring gives (z - √(−2))(z + √(−2)). Zeros are z = -2, i√(−1), and -i√(−1).",
+      "explanation": "Simple value reveals linear factor. Divide and factor quadratic for zeros.",
+      "common_mistake_notes": "Overlook complex roots when testing values or assume all real roots."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the zeros of the function m(z) = z^4 - 16.",
+      "choices": {
+        "A": "±2, ±2i",
+        "B": "±√(−1), ±√(−1)",
+        "C": "±√(2), ±√(2)i",
+        "D": "0, ±2, ±2i"
+      },
+      "correct_choice": "A",
+      "solution": "Factor as (z^2 - 4)(z^2 + 4) = (z - 2)(z + 2)(z - 2i)(z + 2i). Zeros are z = ±2 and z = ±2i.",
+      "explanation": "Recognize difference of squares; factor for four zeros.",
+      "common_mistake_notes": "Try to solve directly without factoring or overlook complex roots."
+    }
+  ]
+}

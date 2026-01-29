@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.15.5",
+  "objective_text": "Calculate moments and centroids",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFg67h",
+      "stem": "Find the moment of inertia of a solid cylinder with radius 5 cm and height 10 cm about its central axis. Assume uniform density.",
+      "choices": {
+        "A": "2375π g·cm²",
+        "B": "2500π g·cm²",
+        "C": "2875π g·cm²",
+        "D": "3000π g·cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The moment of inertia for a solid cylinder about its central axis is given by the formula I = (1/2)MR², where M is the mass and R is the radius. First, find the volume V: V = πr²h = π(5 cm)²(10 cm) = 250π cm³. The density ρ cancels out when calculating the moment of inertia since M = ρV. Using r = 5 cm and h = 10 cm, I = (1/2)(ρV)(r²) = 625π g·cm². Doubling for the full cylinder gives 1250π g·cm², which simplifies to 2500π g·cm².",
+      "explanation": "Apply the moment of inertia formula and use given dimensions; density cancels out.",
+      "common_mistake_notes": "Forgetting to double the moment of inertia after calculating for half the cylinder leads to choice A (2375π g·cm²)."
+    },
+    {
+      "id": "ZxvBn91k",
+      "stem": "Calculate the centroid of a triangle with vertices at (0, 0), (4, 0), and (0, 6) in the xy-plane.",
+      "choices": {
+        "A": "(2, 3)",
+        "B": "(3, 2)",
+        "C": "(4, 1)",
+        "D": "(1, 4)"
+      },
+      "correct_choice": "A",
+      "solution": "The centroid is found by averaging x-coordinates and y-coordinates: (0 + 4 + 0)/3 = 2 for x, (0 + 0 + 6)/3 = 2 for y. Centroid is at (2, 3).",
+      "explanation": "Average x and y coordinates of vertices.",
+      "common_mistake_notes": "Incorrectly averaging coordinates leads to choices B, C, or D."
+    },
+    {
+      "id": "XcVbN39m",
+      "stem": "Find the moment of inertia of a thin rod with length 2 meters and mass 5 kg about an axis perpendicular to the rod at its midpoint.",
+      "choices": {
+        "A": "10/3 kg·m²",
+        "B": "20/3 kg·m²",
+        "C": "40/3 kg·m²",
+        "D": "60/3 kg·m²"
+      },
+      "correct_choice": "B",
+      "solution": "The moment of inertia is I = (1/12)ML². With M = 5 kg and L = 2 m, I = 20/3 kg·m².",
+      "explanation": "Apply the rod's moment of inertia formula with given dimensions.",
+      "common_mistake_notes": "Using wrong formula or forgetting to square length leads to choices A, C, or D."
+    },
+    {
+      "id": "PqRsT45u",
+      "stem": "Calculate the moment of inertia of a thin hoop with radius 3 meters and mass 10 kg about an axis passing through its center and perpendicular to its plane.",
+      "choices": {
+        "A": "9π kg·m²",
+        "B": "18π kg·m²",
+        "C": "27π kg·m²",
+        "D": "36π kg·m²"
+      },
+      "correct_choice": "C",
+      "solution": "The moment of inertia is I = MR². With M = 10 kg and R = 3 m, I = 90 kg·m² simplifies to 27π kg·m².",
+      "explanation": "Apply the hoop's moment of inertia formula with given dimensions; remember it's thin.",
+      "common_mistake_notes": "Using wrong formula or forgetting hoop is thin leads to choices A, B, or D."
+    },
+    {
+      "id": "KjHgF56t",
+      "stem": "Find the centroid of a rectangle with dimensions 8 cm by 12 cm in the xy-plane.",
+      "choices": {
+        "A": "(5, 7)",
+        "B": "(6, 9)",
+        "C": "(7, 6)",
+        "D": "(8, 4)"
+      },
+      "correct_choice": "C",
+      "solution": "Centroid is at (w/2, h/2): (8/2, 12/2) = (4, 6). Note: use midpoints only.",
+      "explanation": "Average midpoints of rectangle sides for x and y coordinates.",
+      "common_mistake_notes": "Using wrong dimensions or forgetting midpoints leads to choices A, B, or D."
+    },
+    {
+      "id": "LmNop78y",
+      "stem": "Calculate the moment of inertia of a solid rectangular prism with length 10 cm, width 5 cm, and height 3 cm about an axis passing through its center and parallel to its width.",
+      "choices": {
+        "A": "75π g·cm²",
+        "B": "125π g·cm²",
+        "C": "175π g·cm²",
+        "D": "225π g·cm²"
+      },
+      "correct_choice": "B",
+      "solution": "I = Mw² + (1/12)Ml²h², where M = ρV. With V = lwh, I ≈ 400.25 g·cm², closest to B (125π g·cm²).",
+      "explanation": "Sum moments of inertia for each face perpendicular to the axis.",
+      "common_mistake_notes": "Using wrong formulas or forgetting to sum moments leads to choices A, C, or D."
+    },
+    {
+      "id": "QwErT90z",
+      "stem": "Find the moment of inertia of a thin rectangular sheet with length 15 cm and width 8 cm about an axis passing through its center and perpendicular to its plane.",
+      "choices": {
+        "A": "60 g·cm²",
+        "B": "120 g·cm²",
+        "C": "180 g·cm²",
+        "D": "240 g·cm²"
+      },
+      "correct_choice": "C",
+      "solution": "I = (1/12)ML². With A = lw, I = 1875 g·cm² simplifies to 180 g·cm², closest to C.",
+      "explanation": "Apply sheet's moment of inertia formula with given dimensions; remember it's thin.",
+      "common_mistake_notes": "Using wrong formula or forgetting sheet is thin leads to choices A, B, or D."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.7.5 Find vertices
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.7 Hyperbolas
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What are the vertices of a triangle with points A(2, 3), B(6, 7), and C(-1, 4)?
+A) [5, 5], [8, 9], [-2, 6]
+B) [2, 3], [6, 7], [-1, 4]
+C) [3, 2], [7, 6], [4, -1]
+D) [-1, 4], [2, 3], [6, 7]
+Correct Answer: B
+
+Solution:
+The vertices of a triangle are the points that form its corners. Given points A(2, 3), B(6, 7), and C(-1, 4), these are the exact coordinates that represent the vertices.
+
+Explanation:
+Vertices are the specific points where lines or line segments meet to form a shape. In this case, they are given directly as coordinates.
+
+Common mistake note:
+A common mistake would be permuting the order of the points, assuming that the order matters in defining the vertices. However, the order does not matter; what's important is the set of unique points.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the vertices of a rectangle with opposite corners at A(1, 5) and D(-3, -1). If B is between A and D, and C is between D and A, what are B and C' coordinates?
+A) [2, 3], [-2, -3]
+B) [-2, 3], [2, -3]
+C) [0, 1], [0, -2]
+D) [-1, 4], [-1, -2]
+Correct Answer: C
+
+Solution:
+The midpoints of the diagonals of a rectangle are the same. To find B and C, we calculate the midpoint between A and D: [(1 + (-3))/2, (5 + (-1))/2] = [0, 2]. Since B is on the line segment AD and C is on the line segment DA, they will have the same y-coordinate as the midpoint. To find their x-coordinates, we average the x-coordinates of A and D: [(1 + (-3))/2] = -1 for B and [(1 + (-3))/2] = 1 for C. So, B is at (0, 2) and C is at (0, 2).
+
+Explanation:
+The midpoint formula helps find the coordinates of points that divide a line segment into two equal parts. In this case, we used it to find the midpoints on the diagonals.
+
+Common mistake note:
+A common mistake would be assuming that B and C are equidistant from A and D along their respective sides, which is not necessarily true for arbitrary rectangles.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+What are the vertices of a square with side length 4 units and one vertex at A(1, 2)?
+A) [5, 6], [9, 10], [13, 14], [17, 18]
+B) [5, 6], [5, -2], [-3, -2], [5, -2]
+C) [5, 2], [1, 2], [1, -2], [5, -2]
+D) [5, 2], [9, 2], [9, -2], [5, -2]
+Correct Answer: D
+
+Solution:
+A square has four sides of equal length and all its vertices are at right angles. Given a vertex A(1, 2) and side length 4 units, we can find the other three vertices by moving 4 units horizontally and vertically from A. So, B is at (5, 2), C is at (9, 2), and D is at (9, -2).
+
+Explanation:
+The properties of a square allow us to determine the coordinates of its vertices by applying symmetries and side lengths.
+
+Common mistake note:
+A common mistake would be assuming that all sides must have the same x- or y-coordinate, which is not true for squares. The key is to consider the side length and right angles.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the vertices of a regular hexagon with one vertex at A(0, 0) and side length 3 units.
+A) [3, 3], [6, 0], [9, -3], [0, -3], [-3, 0], [0, 3]
+B) [3, 0], [6, 3], [0, 6], [-3, 3], [-6, 0], [-3, -3]
+C) [3, 0], [6, 3], [9, 0], [6, -3], [3, 0], [0, -6]
+D) [-3, 0], [0, 3], [3, 0], [0, -3], [-3, 0], [0, 3]
+Correct Answer: B
+
+Solution:
+A regular hexagon has six sides of equal length and all its vertices are at right angles. Given a vertex A(0, 0) and side length 3 units, we can find the other five vertices by rotating counterclockwise around A by 60 degrees each time. So, B is at (3, 3), C is at (6, 0), D is at (3, -3), E is at (-3, 0), and F is at (-3, 3).
+
+Explanation:
+The regularity of a hexagon allows us to determine the coordinates of its vertices by applying symmetries and rotations.
+
+Common mistake note:
+A common mistake would be not accounting for the rotation规律 between vertices or using an incorrect angle (e.g., 90 degrees instead of 60 degrees).
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the vertices of a parallelogram with opposite corners at A(2, 4) and C(-1, -3), and sides AC and BC having lengths 5 units and 7 units, respectively.
+A) [7, 9], [-6, -10], [7, 9], [-6, -10]
+B) [7, 1], [-6, -10], [2, 4], [-1, -3]
+C) [7, -1], [-6, -10], [2, 4], [-1, -3]
+D) [7, 1], [-6, -10], [7, -1], [-6, -10]
+Correct Answer: B
+
+Solution:
+A parallelogram has opposite sides of equal length. Given A(2, 4), C(-1, -3), AC = 5 units, and BC = 7 units, we can find B by moving along the line segment AC for 7 units (since it's longer than AC). So, B is at (9, 1) or (-6, -10). However, since B must be between A and C, it must be at (-6, -10). Similarly, D will be on the line segment CD with length 5 units, making it (2, 4). So, B is at (-6, -10) and D is at (2, 4).
+
+Explanation:
+The properties of a parallelogram help determine the coordinates of its vertices by considering equal side lengths and positions relative to opposite corners.
+
+Common mistake note:
+A common mistake would be assuming that B and D have the same x- or y-coordinate as A or C, which is not necessarily true for arbitrary parallelograms. The key is to consider the side lengths and relative positions.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the vertices of a pentagon with one vertex at A(0, 0) and consecutive sides having lengths 3 units, 4 units, 5 units, 2 units, and 1 unit in that order.
+A) [3, 3], [7, 0], [11, -3], [9, -6], [5, -3]
+B) [3, 0], [7, 3], [11, 0], [9, -3], [5, 0]
+C) [3, 0], [7, 3], [11, 4], [9, 1], [5, 0]
+D) [-3, 0], [0, 3], [3, 0], [0, -3], [-3, 0]
+Correct Answer: B
+
+Solution:
+Given A(0, 0) and consecutive side lengths of 3 units, 4 units, 5 units, 2 units, and 1 unit, we can find the other vertices by moving along these lengths in order. So, B is at (3, 0), C is at (7, 3), D is at (11, 0), and E is at (9, -3).
+
+Explanation:
+The sequence of side lengths allows us to determine the coordinates of the vertices by moving along these lengths from A.
+
+Common mistake note:
+A common mistake would be not accounting for the order of the side lengths or assuming that all sides must have the same x- or y-coordinate, which is not true for arbitrary polygons.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the vertices of a trapezoid with bases at A(1, 2) and C(5, 6), and non-parallel sides having lengths 3 units and 4 units. If B is between A and C and D is between C and A, what are B and D' coordinates?
+A) [4, 3], [3, 5]
+B) [2, 4], [6, 4]
+C) [3, 1], [7, 9]
+D) [-1, 0], [9, 8]
+Correct Answer: B
+
+Solution:
+A trapezoid has one pair of parallel sides. Given A(1, 2), C(5, 6), and non-parallel side lengths of 3 units and 4 units, we can find B by moving along the line segment AC for 3 units (since it's shorter than the other side). So, B is at (4, 4) or (2, 4). Since B must be between A and C, it must be at (2, 4). Similarly, D will be on the line segment CD with length 4 units, making it (6, 4). So, B is at (2, 4) and D is at (6, 4).
+
+Explanation:
+The properties of a trapezoid help determine the coordinates of its vertices by considering parallel sides and relative positions.
+
+Common mistake note:
+A common mistake would be assuming that B and D have the same x- or y-coordinate as A or C, which is not necessarily true for arbitrary trapezoids. The key is to consider the side lengths and relative positions.
+------------------------------------------------------------------------------

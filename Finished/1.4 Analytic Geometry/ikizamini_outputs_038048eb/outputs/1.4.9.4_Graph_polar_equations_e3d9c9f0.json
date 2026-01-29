@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.9.4",
+  "objective_text": "Graph polar equations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Sketch the graph of the polar equation: r = 2 + sin(θ)",
+      "choices": {
+        "A": "A circle with radius 3 centered at (0, 0)",
+        "B": "A cardioid with a loop around the origin",
+        "C": "A straight line passing through the pole at an angle of π/6",
+        "D": "A spiral starting from the pole and winding outwards"
+      },
+      "correct_choice": "B",
+      "solution": "The graph of r = 2 + sin(θ) is a cardioid because it can be derived from the general form r = a + bsin(θ), which represents a cardioid. The loop around the origin indicates that there's a cusp at θ = π.",
+      "explanation": "Cardioids are heart-shaped curves formed by the intersection of a cone with a plane parallel to its side. In this case, since a > b (a = 2 and b = 1), the cardioid has a loop around the origin.",
+      "common_mistake_notes": "Choosing A might be due to adding the radius (2) and the maximum value of sin(θ) (1), which would result in a circle with radius 3. However, this is not correct because the equation combines r and sin(θ) linearly."
+    },
+    {
+      "id": ":2",
+      "stem": "Sketch the graph of the polar equation: r = 4cos(2θ)",
+      "choices": {
+        "A": "A circle with radius 4 centered at (0, 0)",
+        "B": "An Archimedean spiral starting from the pole and winding outwards",
+        "C": "A concentric series of circles with decreasing radii",
+        "D": "A cardioid without a loop around the origin"
+      },
+      "correct_choice": "C",
+      "solution": "The graph of r = 4cos(2θ) represents a family of concentric circles because it can be derived from the general form r = Acos(nθ), which forms concentric circles when n is an integer greater than 1. The radius varies as cos(2θ) changes.",
+      "explanation": "Archimedean spirals are formed by equations where r is a function of θ, not its multiple like in this case. A cardioid would have sinθ instead of cosθ, and a circle would have no dependence on θ inside the trigonometric function.",
+      "common_mistake_notes": "Choosing B might be due to confusion with polar equations that create spirals (e.g., r = aθ). However, in this case, the presence of 2θ makes it a series of concentric circles."
+    },
+    {
+      "id": ":3",
+      "stem": "Sketch the graph of the polar equation: r = 3sin(3θ)",
+      "choices": {
+        "A": "A circle with radius 3 centered at (0, 0)",
+        "B": "An Archimedean spiral starting from the pole and winding outwards",
+        "C": "A rose curve with petal count 6",
+        "D": "A cardioid with a loop around the origin"
+      },
+      "correct_choice": "C",
+      "solution": "The graph of r = 3sin(3θ) is a rose curve because it can be derived from the general form r = a sin(nθ), which forms petal-likeshapes called roses. The number of petals is determined by n, in this case, 6.",
+      "explanation": "Rose curves have an even number of petals when n is odd and an infinite number of petals when n is even. In this case, with n = 3, there are 6 petals. A circle would not have a trigonometric function inside r, and a cardioid would use cosθ.",
+      "common_mistake_notes": "Choosing D might be due to confusion with the form of a cardioid (r = a + bsin(θ)), but in this case, the sine function indicates a rose curve."
+    },
+    {
+      "id": ":4",
+      "stem": "Sketch the graph of the polar equation: r = 5e^(2θ)",
+      "choices": {
+        "A": "A logarithmic spiral starting from the pole and winding outwards",
+        "B": "An Archimedean spiral starting from the pole and winding outwards",
+        "C": "A circle with radius 5 centered at (0, 0)",
+        "D": "A cardioid without a loop around the origin"
+      },
+      "correct_choice": "A",
+      "solution": "The graph of r = 5e^(2θ) is a logarithmic spiral because it involves an exponential function. Logarithmic spirals have a continuously changing radius and angle, creating a spiral shape.",
+      "explanation": "Logarithmic spirals are formed by equations where r is an exponential function of θ. An Archimedean spiral would involve a trigonometric function like cosθ or sinθ, and a circle would not have any variable inside the function.",
+      "common_mistake_notes": "Choosing B might be due to confusion with Archimedean spirals, but in this case, the exponential function (e^(2θ)) creates a logarithmic spiral."
+    },
+    {
+      "id": ":5",
+      "stem": "Sketch the graph of the polar equation: r = 1 - cos(θ)",
+      "choices": {
+        "A": "A circle with radius 2 centered at (0, 0)",
+        "B": "A cardioid without a loop around the origin",
+        "C": "A straight line passing through the pole at an angle of π/2",
+        "D": "A rose curve with petal count 4"
+      },
+      "correct_choice": "B",
+      "solution": "The graph of r = 1 - cos(θ) is a cardioid because it can be derived from the general form r = a - bcos(θ), which represents a cardioid. The lack of a loop around the origin indicates that there's no cusp at θ = π.",
+      "explanation": "Cardioids are heart-shaped curves formed by the intersection of a cone with a plane parallel to its side. In this case, since a > b (a = 1 and b = 1), the cardioid does not have a loop around the origin.",
+      "common_mistake_notes": "Choosing A might be due to subtracting the maximum value of cos(θ) (1) from 1, which would result in a circle with radius 2. However, this is not correct because the equation combines r and cos(θ) linearly."
+    },
+    {
+      "id": ":6",
+      "stem": "Sketch the graph of the polar equation: r = 2sin(4θ)",
+      "choices": {
+        "A": "A circle with radius 2 centered at (0, 0)",
+        "B": "An Archimedean spiral starting from the pole and winding outwards",
+        "C": "A rose curve with petal count 8",
+        "D": "A cardioid without a loop around the origin"
+      },
+      "correct_choice": "C",
+      "solution": "The graph of r = 2sin(4θ) is a rose curve because it can be derived from the general form r = a sin(nθ), which forms petal-likeshapes called roses. The number of petals is determined by n, in this case, 8.",
+      "explanation": "Rose curves have an even number of petals when n is odd and an infinite number of petals when n is even. In this case, with n = 4, there are 8 petals. A circle would not have a trigonometric function inside r, and a cardioid would use cosθ.",
+      "common_mistake_notes": "Choosing D might be due to confusion with the form of a cardioid (r = a + bsin(θ)), but in this case, the sine function indicates a rose curve."
+    },
+    {
+      "id": ":7",
+      "stem": "Sketch the graph of the polar equation: r = 6e^(-θ)",
+      "choices": {
+        "A": "A logarithmic spiral starting from the pole and winding inwards",
+        "B": "An Archimedean spiral starting from the pole and winding outwards",
+        "C": "A circle with radius 6 centered at (0, 0)",
+        "D": "A cardioid without a loop around the origin"
+      },
+      "correct_choice": "A",
+      "solution": "The graph of r = 6e^(-θ) is a logarithmic spiral because it involves an exponential function. In this case, the negative sign inside the exponent causes the spiral to wind inwards rather than outwards.",
+      "explanation": "Logarithmic spirals are formed by equations where r is an exponential function of θ. An Archimedean spiral would involve a trigonometric function like cosθ or sinθ, and a circle would not have any variable inside the function.",
+      "common_mistake_notes": "Choosing B might be due to confusion with Archimedean spirals, but in this case, the exponential function (e^(-θ)) creates a logarithmic spiral that winds inwards."
+    }
+  ]
+}

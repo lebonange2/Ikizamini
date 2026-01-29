@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.9.13 Use in cryptography
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.9 Permutations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asymmetric key encryption):
+Which of the following is an example of asymmetric key encryption?
+A) AES
+B) RSA
+C) MD5
+D) SHA-256
+Correct Answer: B
+
+Solution:
+RSA is a well-known example of asymmetric encryption. AES, MD5, and SHA-256 are hashing or symmetric encryption algorithms.
+
+Explanation:
+AES and SHA-256 use the same key for encryption and decryption (symmetric), while MD5 is a hash function. RSA uses pairs of keys (asymmetric).
+
+Common mistake note:
+Choosing A  (AES) or C  (MD5) as they are symmetric or hashing, not asymmetric.
+------------------------------------------------------------------------------
+
+Problem 2 (Digital signatures):
+What is the primary purpose of digital signatures in cryptography?
+A) Securing data during transmission
+B) Verifying the authenticity of a message
+C) Encrypting large amounts of data quickly
+D) Establishing secure connections between devices
+Correct Answer: B
+
+Solution:
+Digital signatures ensure the authenticity and integrity of digital messages, confirming their origin and preventing tampering.
+
+Explanation:
+Encryption and secure connections are general goals, not specific to digital signatures. MACs provide data integrity, but not authentication like digital signatures.
+
+Common mistake note:
+Choosing A  (Securing data) as it's related to cryptography but not digital signature purpose.
+------------------------------------------------------------------------------
+
+Problem 3 (Key exchange protocols):
+Which protocol is commonly used for securely exchanging cryptographic keys?
+A) SSL/TLS
+B) PGP
+C) Diffie-Hellman
+D) RSA
+Correct Answer: C
+
+Solution:
+The Diffie-Hellman key exchange allows two parties to establish a shared secret without explicitly exchanging the key.
+
+Explanation:
+SSL/TLS and RSA are for encryption, PGP is an encryption software. None of these are primarily for key exchange.
+
+Common mistake note:
+Choosing A  (SSL/TLS) or D  (RSA), as they are related to cryptography but not key exchange.
+------------------------------------------------------------------------------
+
+Problem 4 (Message Authentication Codes):
+What do Message Authentication Codes  (MACs) provide in addition to encryption?
+A) Data compression
+B) Integrity and authenticity
+C) Decryption of data
+D) Anonymity of the sender
+Correct Answer: B
+
+Solution:
+MACs ensure data integrity and authenticity, complementing encryption.
+
+Explanation:
+MACs do not compress, decrypt, or anonymize; these functions are unrelated to their purpose.
+
+Common mistake note:
+Choosing A  (Compression), C  (Decryption), or D  (Anonymity) as they are not MAC functions.
+------------------------------------------------------------------------------
+
+Problem 5 (Public key infrastructure):
+What is the main purpose of a Public Key Infrastructure  (PKI)?
+A) Storing private keys on a central server
+B) Enabling secure communication without sharing secret keys
+C) Encrypting large amounts of data quickly
+D) Verifying authenticity of software updates
+Correct Answer: B
+
+Solution:
+PKI manages public-private key pairs for secure communication without sharing secrets.
+
+Explanation:
+PKI is not for storing private keys, encrypting data, or verifying software updates; it focuses on key management.
+
+Common mistake note:
+Choosing A  (Storing keys) as it's related to key management but not PKI's main purpose.
+------------------------------------------------------------------------------
+
+Problem 6 (Symmetric vs. Asymmetric encryption):
+Which type of encryption is generally faster and uses less computational resources?
+A) Asymmetric
+B) Symmetric
+C) Both are equally efficient
+D) It depends on specific algorithms
+Correct Answer: B
+
+Solution:
+Symmetric encryption, like AES, is faster and more efficient than asymmetric encryption, like RSA.
+
+Explanation:
+Asymmetric encryption is resource-intensive due to complex operations. Symmetric encryption is efficient for data encryption but not key exchange.
+
+Common mistake note:
+Choosing A  (Asymmetric) as it's considered more secure, but speed and efficiency differ.
+------------------------------------------------------------------------------
+
+Problem 7 (Hash functions in cryptography):
+What is the primary purpose of a hash function in cryptography?
+A) Encrypting data for transmission
+B) Verifying integrity of digital signatures
+C) Establishing secure connections between devices
+D) Creating a unique representation of input data
+Correct Answer: D
+
+Solution:
+Hash functions create a fixed-size, unique summary  (hash) of input data, useful for verifying integrity and authenticity.
+
+Explanation:
+Hashes are not encryption, do not establish connections, or verify signatures directly. They generate compact, unique representations of data.
+
+Common mistake note:
+Choosing A  (Encrypting data) as it's related to cryptography but not hash functions' main purpose.
+------------------------------------------------------------------------------

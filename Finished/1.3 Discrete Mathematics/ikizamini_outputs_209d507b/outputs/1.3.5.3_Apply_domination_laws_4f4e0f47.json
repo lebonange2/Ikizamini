@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.5.3",
+  "objective_text": "Apply domination laws",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "Given the truth table for a logic gate with inputs A and B, where 1 means true and 0 means false:\n|A|B|Output|\n|---|---|---|\n|0|0|0|\n|0|1|1|\n|1|0|1|\n|1|1|0|\nWhat is the type of logic gate represented by this truth table?",
+      "choices": {
+        "A": "AND",
+        "B": "OR",
+        "C": "NOT",
+        "D": "NAND"
+      },
+      "correct_choice": "D",
+      "solution": "The given truth table represents a NAND gate because it outputs 0 only when both inputs are 1, and outputs 1 in all other cases.",
+      "explanation": "A NOT gate would invert the input. An AND gate requires both inputs to be true for the output to be true. An OR gate requires at least one input to be true for the output to be true. A NAND gate is the negation of the AND gate.",
+      "common_mistake_notes": "Choosing 'A' (AND) because it seems similar; however, the output is inverted compared to the AND gate."
+    },
+    {
+      "id": "Xyz456",
+      "stem": "What is the simplified expression for the following boolean function using domination laws?\nF( A, B, C ) = A'B + ABC'",
+      "choices": {
+        "A": "A'",
+        "B": "B'",
+        "C": "C'",
+        "D": "A"
+      },
+      "correct_choice": "D",
+      "solution": "The simplified expression for F( A, B, C ) is A because the term A'B dominates the term ABC' when A is true. When A is true, A'B is always true and ABC' is false.",
+      "explanation": "Domination law states that if one term in a sum (OR) contains all the literals of another term, the second term can be removed without changing the truth value of the expression. In this case, when A is true, A'B is always true regardless of B and C values, making ABC' irrelevant.",
+      "common_mistake_notes": "Choosing 'B' or 'C'; domination only applies when one term contains all literals from another."
+    },
+    {
+      "id": "Qwe789",
+      "stem": "Given the truth table for a logic gate with inputs X and Y, where 1 means true and 0 means false:\n|X|Y|Output|\n|---|---|---|\n|0|0|1|\n|0|1|1|\n|1|0|1|\n|1|1|1|\nWhat is the type of logic gate represented by this truth table?",
+      "choices": {
+        "A": "AND",
+        "B": "OR",
+        "C": "NAND",
+        "D": "XOR"
+      },
+      "correct_choice": "B",
+      "solution": "The given truth table represents an OR gate because it outputs 1 when at least one input is 1.",
+      "explanation": "An AND gate requires both inputs to be true for the output to be true. A NAND gate outputs 0 when both inputs are 1. An XOR gate (exclusive OR) outputs 1 when the number of true inputs is odd.",
+      "common_mistake_notes": "Choosing 'C' (NAND); this truth table does not match the output pattern of a NAND gate."
+    },
+    {
+      "id": "Rty098",
+      "stem": "Simplify the following boolean expression using domination laws:\nF( A, B, C ) = A'B + ABC + AB'C'",
+      "choices": {
+        "A": "A'B'",
+        "B": "AB'C'",
+        "C": "ABC",
+        "D": "A'B  + AB'C'"
+      },
+      "correct_choice": "B",
+      "solution": "The simplified expression for F( A, B, C ) is AB'C' because the term A'B dominates the term ABC when A is true and the term AB'C' dominates the term A'B when C is true.",
+      "explanation": "Domination law states that if one term in a sum (OR) contains all literals of another term, the second term can be removed without changing the truth value of the expression. In this case, A'B dominates ABC and AB'C' dominates A'B under certain input conditions.",
+      "common_mistake_notes": "Choosing 'D'; not applying domination law correctly; both terms can be simplified further."
+    },
+    {
+      "id": "Uij765",
+      "stem": "Given the truth table for a logic gate with inputs P and Q, where 1 means true and 0 means false:\n|P|Q|Output|\n|---|---|---|\n|0|0|1|\n|0|1|0|\n|1|0|0|\n|1|1|1|\nWhat is the type of logic gate represented by this truth table?",
+      "choices": {
+        "A": "AND",
+        "B": "OR",
+        "C": "NAND",
+        "D": "XOR"
+      },
+      "correct_choice": "D",
+      "solution": "The given truth table represents an XOR gate because it outputs 1 when the number of true inputs is odd.",
+      "explanation": "An AND gate requires both inputs to be true for the output to be true. An OR gate outputs 1 when at least one input is true. A NAND gate outputs 0 when both inputs are 1.",
+      "common_mistake_notes": "Choosing 'A' (AND) or 'B' (OR); this truth table does not match the output pattern of those gates."
+    },
+    {
+      "id": "Kol456",
+      "stem": "Given the truth table for a logic gate with inputs R and S, where 1 means true and 0 means false:\n|R|S|Output|\n|---|---|---|\n|0|0|1|\n|0|1|0|\n|1|0|0|\n|1|1|0|\nWhat is the type of logic gate represented by this truth table?",
+      "choices": {
+        "A": "AND",
+        "B": "OR",
+        "C": "NAND",
+        "D": "XOR"
+      },
+      "correct_choice": "C",
+      "solution": "The given truth table represents a NAND gate because it outputs 0 only when both inputs are true, and outputs 1 in all other cases.",
+      "explanation": "An AND gate requires both inputs to be true for the output to be true. An OR gate outputs 1 when at least one input is true. An XOR gate (exclusive OR) outputs 1 when the number of true inputs is odd or different.",
+      "common_mistake_notes": "Choosing 'A' (AND); this truth table does not match the output pattern of an AND gate with inverted output."
+    },
+    {
+      "id": "Poi123",
+      "stem": "Given the truth table for a logic gate with inputs X and Y, where 1 means true and 0 means false:\n|X|Y|Output|\n|---|---|---|\n|0|0|0|\n|0|1|0|\n|1|0|0|\n|1|1|1|\nWhat is the type of logic gate represented by this truth table?",
+      "choices": {
+        "A": "AND",
+        "B": "OR",
+        "C": "NAND",
+        "D": "XOR"
+      },
+      "correct_choice": "A",
+      "solution": "The given truth table represents an AND gate because it outputs 1 only when both inputs are true.",
+      "explanation": "An OR gate outputs 1 when at least one input is true. A NAND gate outputs 0 when both inputs are 1. An XOR gate (exclusive OR) outputs 1 when the number of true inputs is odd.",
+      "common_mistake_notes": "Choosing 'B' (OR); this truth table does not match the output pattern of an OR gate."
+    }
+  ]
+}

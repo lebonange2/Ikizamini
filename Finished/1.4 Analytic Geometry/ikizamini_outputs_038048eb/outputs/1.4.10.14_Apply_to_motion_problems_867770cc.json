@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.10.14",
+  "objective_text": "Apply to motion problems",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A car travels at a constant speed of 60 km/h for 2 hours. What is the distance traveled by the car?",
+      "choices": {
+        "A": "100 km",
+        "B": "120 km",
+        "C": "140 km",
+        "D": "160 km"
+      },
+      "correct_choice": "B",
+      "solution": "Distance = Speed × Time. Distance = 60 km/h × 2 h = 120 km.",
+      "explanation": "The correct answer is obtained by multiplying the speed of the car with the time it traveled.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply the speed and time, resulting in an incorrect distance."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An airplane travels 1500 km at a constant speed. If it takes 3 hours to complete the journey, what is the average speed of the plane?",
+      "choices": {
+        "A": "450 km/ h",
+        "B": "500 km/ h",
+        "C": "550 km/ h",
+        "D": "600 km/ h"
+      },
+      "correct_choice": "A",
+      "solution": "Average Speed = Total Distance / Time. Average Speed = 1500 km / 3 h = 500 km/h.",
+      "explanation": "The correct answer is calculated by dividing the total distance traveled by the time taken to complete the journey.",
+      "common_mistake_notes": "A common mistake would be to confuse average speed with instantaneous speed, which could lead to an incorrect calculation."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A train accelerates from 0 km/h to 90 km/h in 5 minutes. What is the average acceleration of the train?",
+      "choices": {
+        "A": "18 km/ h^2",
+        "B": "20 km/ h^2",
+        "C": "22 km/ h^2",
+        "D": "24 km/ h^2"
+      },
+      "correct_choice": "A",
+      "solution": "Average Acceleration = (Final Speed - Initial Speed) / Time. Average Acceleration = (90 km/h - 0 km/h) / (5 min * 60 s/min) = 18 km/ h^2.",
+      "explanation": "The correct answer is calculated by finding the change in speed and dividing it by the time taken for that change to occur.",
+      "common_mistake_notes": "A common mistake would be to forget to convert minutes to seconds when calculating acceleration, leading to an incorrect value."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An object falls from rest under gravity for 3 seconds. What is the distance it falls during this time?",
+      "choices": {
+        "A": "45 m",
+        "B": "90 m",
+        "C": "135 m",
+        "D": "180 m"
+      },
+      "correct_choice": "A",
+      "solution": "Distance = 1/2 * g * t^2. Distance = 1/2 * 9.8 m/s^2 * (3 s)^2 = 45 m.",
+      "explanation": "The correct answer is calculated using the formula for distance fallen under free fall, where g is the acceleration due to gravity and t is the time elapsed.",
+      "common_mistake_notes": "A common mistake would be to forget the factor of 1/2 in the equation, resulting in an overestimated distance."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A boat travels upstream at a speed of 8 km/h and downstream at a speed of 12 km/h. What is the speed of the current?",
+      "choices": {
+        "A": "2 km/ h",
+        "B": "3 km/ h",
+        "C": "4 km/ h",
+        "D": "5 km/ h"
+      },
+      "correct_choice": "C",
+      "solution": "(Boat's Speed + Current Speed) = Downstream Speed, (Boat's Speed - Current Speed) = Upstream Speed. 12 km/h = 8 km/h + Current Speed, Current Speed = 4 km/h.",
+      "explanation": "The correct answer is found by setting up an equation where the sum of the boat's speed and current speed equals the downstream speed, and then solving for the current speed.",
+      "common_mistake_notes": "A common mistake would be to assume that the difference between upstream and downstream speeds directly gives the current speed, without considering the boat's speed."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An athlete runs a 100-meter dash in 10 seconds. What is their average velocity?",
+      "choices": {
+        "A": "10 m/ s",
+        "B": "9.8 m/ s",
+        "C": "10.2 m/ s",
+        "D": "10.5 m/ s"
+      },
+      "correct_choice": "A",
+      "solution": "Average Velocity = Total Distance / Time. Average Velocity = 100 m / 10 s = 10 m/s.",
+      "explanation": "The correct answer is calculated by dividing the total distance traveled by the time taken to complete the journey, regardless of changes in speed during the run.",
+      "common_mistake_notes": "A common mistake would be to confuse average velocity with instantaneous velocity at a specific point in time, which could lead to an incorrect calculation."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A car starts from rest and accelerates uniformly to reach a speed of 60 km/h in 10 seconds. What is the distance it covers during this acceleration?",
+      "choices": {
+        "A": "300 m",
+        "B": "350 m",
+        "C": "400 m",
+        "D": "450 m"
+      },
+      "correct_choice": "A",
+      "solution": "Distance = 1/2 * a * t^2. First, convert speed to m/s: 60 km/h = 16.67 m/s. Acceleration, a = (Final Speed - Initial Speed) / Time = (16.67 m/s - 0 m/s) / 10 s = 1.67 m/s^2. Distance = 1/2 * 1.67 m/s^2 * (10 s)^2 = 300 m.",
+      "explanation": "The correct answer is calculated using the formula for distance traveled during uniform acceleration, where a is the acceleration and t is the time elapsed.",
+      "common_mistake_notes": "A common mistake would be to forget to convert speed from km/h to m/s before calculating acceleration or distance."
+    }
+  ]
+}

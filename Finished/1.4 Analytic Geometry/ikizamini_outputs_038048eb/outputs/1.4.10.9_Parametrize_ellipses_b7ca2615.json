@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.10.9",
+  "objective_text": "Parametrize ellipses",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "What is the standard form of an ellipse with center (h, k), major axis length 2a, and minor axis length 2b?",
+      "choices": {
+        "A": "(x - h)^2/a^2 + (y - k)^2/b^2 = 1",
+        "B": "(x - h)^2/b^2 + (y - k)^2/a^2 = 1",
+        "C": "(x/h)^2 + (y/k)^2 = 1",
+        "D": "a(x - h)^2 + b(y - k)^2 = 1"
+      },
+      "correct_choice": "A",
+      "solution": "The standard form of an ellipse with center (h, k), major axis length 2a, and minor axis length 2b is\n\n(x - h)^2/a^2 + (y - k)^2/b^2 = 1\n\nThis equation describes the set of points whose distances from the two foci sum up to a constant value (2a).",
+      "explanation": "The correct form includes the squares of the distances from the center to the x and y coordinates divided by the squares of the semi-major and semi-minor axes, respectively. The other choices are either incorrectly ordered or use incorrect variables.",
+      "common_mistake_notes": "Common mistake: Choosing B because it reverses the order of a^2 and b^2. This would result in an ellipse with swapped major and minor axes."
+    },
+    {
+      "id": ":Q2",
+      "stem": "An ellipse has vertices at (3, 4) and (-3, 4). What is the equation of the ellipse in standard form?",
+      "choices": {
+        "A": "(x - 0)^2/9 + (y - 4)^2/16 = 1",
+        "B": "(x - 0)^2/16 + (y - 4)^2/9 = 1",
+        "C": "(x - 3)^2/9 + (y - 4)^2/16 = 1",
+        "D": "(x - 3)^2/16 + (y - 4)^2/9 = 1"
+      },
+      "correct_choice": "A",
+      "solution": "The vertices of the ellipse are at (3, 4) and (-3, 4), which means the center is at (0, 4) since the x-coordinate is the average of the two vertex x-coordinates. The distance between the center and a vertex is the semi-major axis length, which is 3. Since the y-coordinate remains constant, the semi-minor axis length is equal to the difference between the y-coordinate of the center and one of the vertices, which is 4 - 4 = 0. However, since we cannot have a zero radius, it means that the minor axis is along the x-axis, not the y-axis, so the equation must be flipped. The correct standard form is thus:\n\n(x - 0)^2/9 + (y - 4)^2/16 = 1",
+      "explanation": "The vertices determine the center and semi-major axis length. Since the ellipse is vertical, the minor axis is horizontal, which means we use the x^2 term with the smaller denominator.",
+      "common_mistake_notes": "Common mistake: Choosing B because it assumes the major axis is along the y-axis. However, the given vertices indicate a vertical ellipse."
+    },
+    {
+      "id": ":Q3",
+      "stem": "An ellipse has foci at (1, 2) and (5, 2) and passes through the point (3, 4). What is the equation of the ellipse in standard form?",
+      "choices": {
+        "A": "(x - 3)^2/9 + (y - 2)^2/4 = 1",
+        "B": "(x - 3)^2/4 + (y - 2)^2/9 = 1",
+        "C": "(x - 2)^2/9 + (y - 3)^2/4 = 1",
+        "D": "(x - 2)^2/4 + (y - 3)^2/9 = 1"
+      },
+      "correct_choice": "B",
+      "solution": "The foci of the ellipse are at (1, 2) and (5, 2), which means the center is at the midpoint between them: (3, 2). The distance between a focus and the center is the focal length, which is 5 - 3 = 2. This is also half the major axis length (a), so a = 4. Since the foci are on the x-axis, the minor axis will be along the y-axis with length b^2 = a^2 - c^2, where c is the focal length. Thus, b^2 = 16 - 4 = 12 and b = 2√3. The standard form of the ellipse is:\n\n(x - 3)^2/4 + (y - 2)^2/(2√3)^2 = 1",
+      "explanation": "The foci determine the center and focal length, which leads to the semi-major axis length. Since the foci are on the x-axis, the minor axis is along the y-axis.",
+      "common_mistake_notes": "Common mistake: Choosing A because it assumes the major axis is along the y-axis. However, the foci indicate a horizontal ellipse."
+    },
+    {
+      "id": ":Q4",
+      "stem": "A circle with radius 5 has its center at (3, -2). What is the equation of the circle in standard form?",
+      "choices": {
+        "A": "(x - 3)^2 + (y + 2)^2 = 25",
+        "B": "(x + 3)^2 + (y - 2)^2 = 25",
+        "C": "(x - 3)^2 + (y - 2)^2 = 10",
+        "D": "(x + 3)^2 + (y + 2)^2 = 10"
+      },
+      "correct_choice": "A",
+      "solution": "The equation of a circle with center (h, k) and radius r is given by:\n\n(x - h)^2 + (y - k)^2 = r^2\nGiven the center at (3, -2) and radius 5, the standard form of the circle's equation is:\n\n(x - 3)^2 + (y + 2)^2 = 25",
+      "explanation": "A circle is a special case of an ellipse with equal semi-major and semi-minor axes. The center and radius determine the equation.",
+      "common_mistake_notes": "Common mistake: Choosing B because it reverses the signs on the x and y terms. This would result in a circle centered at (-3, 2), not (3, -2)."
+    },
+    {
+      "id": ":Q5",
+      "stem": "An ellipse has vertices at (4, 0) and (-4, 0) and passes through the point (0, 3). What is the equation of the ellipse in standard form?",
+      "choices": {
+        "A": "(x - 0)^2/16 + (y - 0)^2/9 = 1",
+        "B": "(x - 0)^2/9 + (y - 0)^2/16 = 1",
+        "C": "(x - 4)^2/16 + (y - 0)^2/9 = 1",
+        "D": "(x - 4)^2/9 + (y - 0)^2/16 = 1"
+      },
+      "correct_choice": "C",
+      "solution": "The vertices of the ellipse are at (4, 0) and (-4, 0), which means the center is at (0, 0). The distance between the center and a vertex is the semi-major axis length, which is 4. Since the x-coordinate remains constant, the minor axis is along the y-axis with length b^2 = a^2 - c^2, where c is the focal length. However, since the ellipse has no foci (it's a circle), c = 0 and b^2 = a^2 = 16. The standard form of the ellipse is:\n\n(x - 4)^2/16 + (y - 0)^2/16 = 1",
+      "explanation": "The vertices determine the center and semi-major axis length. Since there are no foci, it's a circle with equal major and minor axes.",
+      "common_mistake_notes": "Common mistake: Choosing B because it assumes the major axis is along the y-axis. However, the given vertices indicate a horizontal ellipse."
+    },
+    {
+      "id": ":Q6",
+      "stem": "An ellipse has foci at (0, 3) and (0, -3) and passes through the point (2, 1). What is the equation of the ellipse in standard form?",
+      "choices": {
+        "A": "(x - 0)^2/4 + (y - 0)^2/9 = 1",
+        "B": "(x - 0)^2/9 + (y - 0)^2/4 = 1",
+        "C": "(x - 0)^2/16 + (y - 1)^2/9 = 1",
+        "D": "(x - 0)^2/9 + (y - 1)^2/16 = 1"
+      },
+      "correct_choice": "D",
+      "solution": "The foci of the ellipse are at (0, 3) and (0, -3), which means the center is at (0, 0). The distance between a focus and the center is the focal length, which is 3. This is also half the major axis length (a), so a = 6. Since the foci are on the y-axis, the minor axis will be along the x-axis with length b^2 = a^2 - c^2, where c is the focal length. Thus, b^2 = 36 - 9 = 27 and b = 3√3. The standard form of the ellipse is:\n\n(x - 0)^2/(3√3)^2 + (y - 1)^2/9 = 1",
+      "explanation": "The foci determine the center and focal length, which leads to the semi-major axis length. Since the foci are on the y-axis, the minor axis is along the x-axis.",
+      "common_mistake_notes": "Common mistake: Choosing A because it assumes the major axis is along the x-axi... (truncated for brevity)"
+    },
+    {
+      "id": ":Q7",
+      "stem": "An ellipse has vertices at (0, 5) and (0, -5) and passes through the point (1, 3). What is the equation of the ellipse in standard form?",
+      "choices": {
+        "A": "(x - 1)^2/9 + (y - 0)^2/25 = 1",
+        "B": "(x - 1)^2/25 + (y - 0)^2/9 = 1",
+        "C": "(x - 0)^2/9 + (y - 3)^2/25 = 1",
+        "D": "(x - 0)^2/25 + (y - 3)^2/9 = 1"
+      },
+      "correct_choice": "A",
+      "solution": "The vertices of the ellipse are at (0, 5) and (0, -5), which means the center is at (0, 0). The distance between the center and a vertex is the semi-major axis length, which is 5. Since the y-coordinate remains constant, the minor axis is along the x-axis with length b^2 = a^2 - c^2, where c is the focal length. However, since the ellipse has no foci (it's a circle), c = 0 and b^2 = a^2 = 25. The standard form of the ellipse is:\n\n(x - 1)^2/9 + (y - 0)^2/25 = 1",
+      "explanation": "The vertices determine the center and semi-major axis length. Since there are no foci, it's a circle with equal major and minor axes.",
+      "common_mistake_notes": "Common mistake: Choosing B because it assumes the major axis is along the x-axis. However, the given vertices indicate a vertical ellipse."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.7.14",
+  "objective_text": "Apply integration formulas",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the definite integral of f(x) = 3x^2 from x=0 to x=2.",
+      "choices": {
+        "A": "8",
+        "B": "16",
+        "C": "24",
+        "D": "32"
+      },
+      "correct_choice": "C",
+      "solution": "The antiderivative of 3x^2 is x^3. Evaluate at the limits: (2)^3 - (0)^3 = 8.",
+      "explanation": "This question tests the ability to find the definite integral using the fundamental theorem of calculus.",
+      "common_mistake_notes": "A common mistake would be forgetting to evaluate the antiderivative at the limits, resulting in an incorrect answer."
+    },
+    {
+      "id": "2",
+      "stem": "Evaluate Ω(1) - Ω(-1), where Ω(x) is the antiderivative of x^3.",
+      "choices": {
+        "A": "-4",
+        "B": "0",
+        "C": "4",
+        "D": "8"
+      },
+      "correct_choice": "C",
+      "solution": "The antiderivative of x^3 is x^4/4. Evaluate at the limits: (1)^4/4 - (-1)^4/4 = 1/4 + 1/4 = 1/2.",
+      "explanation": "This question tests understanding of finding definite integrals using antiderivatives and applying the power rule.",
+      "common_mistake_notes": "A common mistake would be forgetting to divide by the exponent's factor after integrating, leading to an incorrect answer."
+    },
+    {
+      "id": "3",
+      "stem": "Find Ω(2) - Ω(-1), where Ω(x) is the antiderivative of 2x.",
+      "choices": {
+        "A": "-4",
+        "B": "0",
+        "C": "4",
+        "D": "8"
+      },
+      "correct_choice": "C",
+      "solution": "The antiderivative of 2x is x^2. Evaluate at the limits: (2)^2 - (-1)^2 = 4 - 1 = 3.",
+      "explanation": "This question tests integration by applying the power rule with a constant multiple.",
+      "common_mistake_notes": "A common mistake would be forgetting to square the variable after integrating, resulting in an incorrect answer."
+    },
+    {
+      "id": "4",
+      "stem": "Evaluate Ω(π) - Ω(0), where Ω(x) is the antiderivative of sin(x).",
+      "choices": {
+        "A": "-2",
+        "B": "0",
+        "C": "2",
+        "D": "4"
+      },
+      "correct_choice": "C",
+      "solution": "The antiderivative of sin(x) is -cos(x). Evaluate at the limits: -cos(π) - (-cos(0)) = 1 + 1 = 2.",
+      "explanation": "This question tests integration using the sine function and understanding that cos(π) = -1 and cos(0) = 1.",
+      "common_mistake_notes": "A common mistake would be forgetting to negate the cosine after integrating, leading to an incorrect answer."
+    },
+    {
+      "id": "5",
+      "stem": "Find Ω(e) - Ω(1), where Ω(x) is the antiderivative of ln(x).",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "C",
+      "solution": "The antiderivative of ln(x) is x * ln(x) - x. Evaluate at the limits: e * ln(e) - e - (1 * ln(1) - 1) = e - e - (-1) = 1.",
+      "explanation": "This question tests integration using the natural logarithm function and applying the integral of ln(x).",
+      "common_mistake_notes": "A common mistake would be forgetting to multiply by x after integrating, resulting in an incorrect answer."
+    },
+    {
+      "id": "6",
+      "stem": "Find Ω(2) - Ω(-1), where Ω(x) is the antiderivative of 1/x^2.",
+      "choices": {
+        "A": "-4",
+        "B": "0",
+        "C": "4",
+        "D": "8"
+      },
+      "correct_choice": "A",
+      "solution": "The antiderivative of 1/x^2 is -1/x. Evaluate at the limits: -(1/2) - (-1/-1) = -1/2 + 1 = -1/2.",
+      "explanation": "This question tests integration using the power rule with a negative exponent and understanding that 1/x^2 is the derivative of -1/x.",
+      "common_mistake_notes": "A common mistake would be forgetting to negate the result after integrating, leading to an incorrect answer."
+    },
+    {
+      "id": "7",
+      "stem": "Evaluate Ω(√3) - Ω(1), where Ω(x) is the antiderivative of 1/(x^2 + 1).",
+      "choices": {
+        "A": "-π/6",
+        "B": "0",
+        "C": "π/6",
+        "D": "π/3"
+      },
+      "correct_choice": "C",
+      "solution": "The antiderivative of 1/(x^2 + 1) is tan^(-1)(x). Evaluate at the limits: tan^(-1)(√3) - tan^(-1)(1) = π/3 - π/4 = π/12.",
+      "explanation": "This question tests integration using the inverse tangent function and understanding that tan(π/3) = √3 and tan(π/4) = 1.",
+      "common_mistake_notes": "A common mistake would be forgetting to apply the inverse tangent function after integrating, resulting in an incorrect answer."
+    }
+  ]
+}

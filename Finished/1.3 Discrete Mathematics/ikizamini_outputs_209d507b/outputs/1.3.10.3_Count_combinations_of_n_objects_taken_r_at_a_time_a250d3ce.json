@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.10.3",
+  "objective_text": "Count combinations of n objects taken r at a time",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "How many combinations are there for choosing 3 desserts from a menu of 7 options?",
+      "choices": {
+        "A": "{21}",
+        "B": "{35}",
+        "C": "{42}",
+        "D": "{56}"
+      },
+      "correct_choice": "C",
+      "solution": "The number of combinations is calculated using the combination formula: C(n, r) = n! / (r!(n-r)!). For 7 desserts and choosing 3, we have C(7, 3) = 7! / (3!(7-3)!) = 35. The correct answer is 42.",
+      "explanation": "This problem involves counting combinations of 7 objects taken 3 at a time using the combination formula.",
+      "common_mistake_notes": "A common mistake would be to use permutations instead of combinations, which would result in an incorrect count (permutations consider order while combinations do not)."
+    },
+    {
+      "id": "Two",
+      "stem": "How many ways can you form a committee of 4 people from a group of 10?",
+      "choices": {
+        "A": "{20}",
+        "B": "{35}",
+        "C": "{56}",
+        "D": "{70}"
+      },
+      "correct_choice": "C",
+      "solution": "Using the combination formula, C(10, 4) = 10! / (4!(10-4)!) = 210. Dividing by 4! (since there are 4! ways to arrange 4 people), we get 56 unique combinations of people for the committee.",
+      "explanation": "This question asks for the number of ways to choose 4 people from a group of 10 without considering their order on the committee.",
+      "common_mistake_notes": "A common mistake would be to divide by 10! instead of 4!, which would result in an overcount because it considers all permutations rather than unique combinations."
+    },
+    {
+      "id": "Three",
+      "stem": "In a group of 9 friends, how many ways can you choose 2 people to play doubles tennis?",
+      "choices": {
+        "A": "{16}",
+        "B": "{36}",
+        "C": "{45}",
+        "D": "{84}"
+      },
+      "correct_choice": "B",
+      "solution": "Using the combination formula, C(9, 2) = 9! / (2!(9-2)!) = 36. This gives us the number of unique pairs that can play doubles tennis.",
+      "explanation": "This problem involves selecting 2 friends from a group of 9 to form a doubles team, without considering their order on the court.",
+      "common_mistake_notes": "A common mistake would be to use permutations or not understand that choosing one pair doesn't affect the choice of another pair, leading to an incorrect count."
+    },
+    {
+      "id": "Four",
+      "stem": "From a set of 12 different books, how many ways can you select 3 books for a reading list?",
+      "choices": {
+        "A": "{48}",
+        "B": "{66}",
+        "C": "{78}",
+        "D": "{220}"
+      },
+      "correct_choice": "B",
+      "solution": "Using the combination formula, C(12, 3) = 12! / (3!(12-3)!) = 220. Dividing by 3! (since there are 3! ways to arrange 3 books), we get 66 unique combinations of books for the reading list.",
+      "explanation": "This question asks for the number of ways to choose 3 books from a set of 12 without considering their order on the list.",
+      "common_mistake_notes": "A common mistake would be to divide by 12! instead of 3!, which would result in an overcount because it considers all permutations rather than unique combinations."
+    },
+    {
+      "id": "Five",
+      "stem": "In a class of 20 students, how many ways can you form a study group of 5?",
+      "choices": {
+        "A": "{156}",
+        "B": "{240}",
+        "C": "{300}",
+        "D": "{320}"
+      },
+      "correct_choice": "B",
+      "solution": "Using the combination formula, C(20, 5) = 20! / (5!(20-5)!) = 15,504. Dividing by 5! (since there are 5! ways to arrange 5 students), we get 240 unique combinations of students for the study group.",
+      "explanation": "This problem involves selecting 5 students from a class of 20 to form a study group, without considering their order within the group.",
+      "common_mistake_notes": "A common mistake would be to use permutations or not understand that choosing one student doesn't affect the choice of another student, leading to an incorrect count."
+    },
+    {
+      "id": "Six",
+      "stem": "From 15 different paintings, how many ways can you choose 4 for a gallery exhibit?",
+      "choices": {
+        "A": "{210}",
+        "B": "{300}",
+        "C": "{360}",
+        "D": "{455}"
+      },
+      "correct_choice": "C",
+      "solution": "Using the combination formula, C(15, 4) = 15! / (4!(15-4)!) = 1365. Dividing by 4! (since there are 4! ways to arrange 4 paintings), we get 360 unique combinations of paintings for the exhibit.",
+      "explanation": "This question asks for the number of ways to choose 4 paintings from a set of 15 without considering their order in the gallery.",
+      "common_mistake_notes": "A common mistake would be to divide by 15! instead of 4!, which would result in an overcount because it considers all permutations rather than unique combinations."
+    },
+    {
+      "id": "Seven",
+      "stem": "In a box of 8 different fruits, how many ways can you select 2 for a snack?",
+      "choices": {
+        "A": "{15}",
+        "B": "{20}",
+        "C": "{24}",
+        "D": "{36}"
+      },
+      "correct_choice": "B",
+      "solution": "Using the combination formula, C(8, 2) = 8! / (2!(8-2)!) = 28. Dividing by 2! (since there are 2! ways to arrange 2 fruits), we get 20 unique combinations of fruits for the snack.",
+      "explanation": "This problem involves selecting 2 fruits from a box of 8 without considering their order in the snack.",
+      "common_mistake_notes": "A common mistake would be to use permutations or not understand that choosing one fruit doesn't affect the choice of another fruit, leading to an incorrect count."
+    }
+  ]
+}

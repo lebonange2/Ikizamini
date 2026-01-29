@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.3.14",
+  "objective_text": "Translate logical notation to English",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Express the following statement in English: 'p ∧ q'",
+      "choices": {
+        "A": "p if and only if q",
+        "B": "p implies q",
+        "C": "Both p and q are true",
+        "D": "p or q"
+      },
+      "correct_choice": "C",
+      "solution": "The logical notation 'p ∧ q' means that both 'p' and 'q' must be true simultaneously. Therefore, the statement in English is 'Both p and q are true'.",
+      "explanation": "The symbol ∧ represents 'and', which requires both propositions to be true.",
+      "common_mistake_notes": "A common mistake would be choosing option D ('p or q'), as it suggests only one of the propositions needs to be true, whereas ∧ requires both."
+    },
+    {
+      "id": "2",
+      "stem": "Translate the following statement: '¬(p ∨ q)'",
+      "choices": {
+        "A": "Both p and q are false",
+        "B": "Either p or q is false",
+        "C": "It is not the case that both p and q are true",
+        "D": "Neither p nor q is true"
+      },
+      "correct_choice": "C",
+      "solution": "The logical notation '¬(p ∨ q)' means 'not (p or q)', which implies that it is not possible for both 'p' and 'q' to be true simultaneously. Therefore, the statement in English is 'It is not the case that both p and q are true'.",
+      "explanation": "The symbol ¬ represents 'not', and ∨ represents 'or'. When negating a disjunction, it means that at least one of the propositions must be false.",
+      "common_mistake_notes": "A common mistake would be choosing option A ('Both p and q are false'), as it does not account for the possibility that only one proposition is true."
+    },
+    {
+      "id": "3",
+      "stem": "What does the logical notation 'p → q' mean in English?",
+      "choices": {
+        "A": "If p, then q",
+        "B": "q implies p",
+        "C": "p and q are mutually exclusive",
+        "D": "p if and only if q"
+      },
+      "correct_choice": "A",
+      "solution": "The logical notation 'p → q' means 'if p, then q', which is a conditional statement where the truth of 'p' (the antecedent) implies the truth of 'q' (the consequent).",
+      "explanation": "The arrow → represents implication, indicating that if the premise (p) is true, the conclusion (q) must also be true.",
+      "common_mistake_notes": "A common mistake would be choosing option B ('q implies p'), which reverses the direction of the implication."
+    },
+    {
+      "id": "4",
+      "stem": "Translate the following statement: '¬p → q'",
+      "choices": {
+        "A": "If not p, then q",
+        "B": "Both p and q are true",
+        "C": "q implies not p",
+        "D": "p if and only if q"
+      },
+      "correct_choice": "A",
+      "solution": "The logical notation '¬p → q' means 'if not p, then q', which is a conditional statement where the falsity of 'p' (the antecedent) implies the truth of 'q' (the consequent).",
+      "explanation": "The symbol ¬ represents 'not', and the arrow → represents implication. The negation of p in the antecedent means that if p is false, q must be true.",
+      "common_mistake_notes": "A common mistake would be choosing option C ('q implies not p'), which reverses the direction of the implication and does not account for the fact that p is negated."
+    },
+    {
+      "id": "5",
+      "stem": "Express the following statement in English: '(p ∨ q) ∧ ¬p'",
+      "choices": {
+        "A": "Both p and q are true",
+        "B": "q is false and at least one of p or q is true",
+        "C": "p and q are mutually exclusive",
+        "D": "Neither p nor q is true"
+      },
+      "correct_choice": "B",
+      "solution": "The logical notation '(p ∨ q) ∧ ¬p' means 'either p or q, and not p'. This implies that at least one of p or q must be true (due to the disjunction), but p cannot be true (due to the negation). Therefore, q is false and at least one of p or q is true.",
+      "explanation": "The symbols ∨ represent 'or', ∧ represents 'and', and ¬ represents 'not'. The conjunction with ¬p means that q must be false while either p or q must be true.",
+      "common_mistake_notes": "A common mistake would be choosing option A ('Both p and q are true'), which does not account for the negation of p."
+    },
+    {
+      "id": "6",
+      "stem": "What does the logical notation '¬(p ∧ q) → r' mean in English?",
+      "choices": {
+        "A": "If both p and q are false, then r is true",
+        "B": "r implies not (p and q)",
+        "C": "If either p or q is false, then r is true",
+        "D": "If p and q are true, then r is false"
+      },
+      "correct_choice": "B",
+      "solution": "The logical notation '¬(p ∧ q) → r' means 'if not (p and q), then r', which is a conditional statement where the falsity of both 'p' and 'q' (the antecedent) implies the truth of 'r' (the consequent). This can also be read as 'r implies not (p and q)', since implication is transitive.",
+      "explanation": "The symbol ¬ represents 'not', ∧ represents 'and', and → represents implication. The negation of p ∧ q means that at least one of p or q, or both, must be false for the antecedent to be true.",
+      "common_mistake_notes": "A common mistake would be choosing option A ('If both p and q are false, then r is true'), which does not account for the possibility that only one proposition is false."
+    },
+    {
+      "id": "7",
+      "stem": "Translate the following statement: 'p ↔ q'",
+      "choices": {
+        "A": "p implies q",
+        "B": "q implies p",
+        "C": "Both p and q are true, or both are false",
+        "D": "p if and only if q"
+      },
+      "correct_choice": "C",
+      "solution": "The logical notation 'p ↔ q' means 'p if and only if q', which implies that the truth of 'p' is equivalent to the truth of 'q'. Therefore, both p and q are true simultaneously or both are false.",
+      "explanation": "The double arrow ↔ represents biconditional logic, meaning that both propositions must have the same truth value for the statement to be true.",
+      "common_mistake_notes": "A common mistake would be choosing option A ('p implies q') or B ('q implies p'), as these only represent one-directional implications."
+    }
+  ]
+}

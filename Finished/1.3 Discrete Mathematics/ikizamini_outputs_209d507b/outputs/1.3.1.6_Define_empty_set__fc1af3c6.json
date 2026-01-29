@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.1.6",
+  "objective_text": "Define empty set (∅)",
+  "difficulty_profile": "easy→hard mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the empty set (Ø)?",
+      "choices": {
+        "A": "A set with no elements",
+        "B": "A set containing all possible elements",
+        "C": "A set with only one element, the number zero",
+        "D": "A set that contradicts itself and cannot exist"
+      },
+      "correct_choice": "A",
+      "solution": "The empty set (Ø) is a set that contains no elements. It represents the lack of something or the absence of any members.",
+      "explanation": "Option A accurately defines the empty set as having no elements. Option B describes a universal set, not an empty set. Option C suggests a set with a single element, which is not an empty set. Option D refers to a logical paradox, not a mathematical concept.",
+      "common_mistake_notes": "Common mistake: Choosing option B, which represents a universal set rather than the empty set."
+    },
+    {
+      "id": "Qwerty",
+      "stem": "Which of the following statements about the empty set (Ø) is true?",
+      "choices": {
+        "A": "The empty set has one element: the null set.",
+        "B": "The empty set is a subset of every set.",
+        "C": "The union of the empty set with any other set results in that other set.",
+        "D": "The intersection of the empty set with any other set results in the empty set."
+      },
+      "correct_choice": "B",
+      "solution": "The empty set is a subset of every set, including itself. This property holds true because there are no elements in the empty set to violate the subset definition.",
+      "explanation": "Option A is incorrect as it confuses the null set with the empty set. Option C describes the union operation correctly but does not address the empty set's subset relationship. Option D refers to the intersection operation, which is correct but not the primary focus of this question.",
+      "common_mistake_notes": "Common mistake: Choosing option A, confusing the null set with the empty set."
+    },
+    {
+      "id": "Zxcvb",
+      "stem": "What is the cardinality (number of elements) of the empty set (Ø)?",
+      "choices": {
+        "A": "1",
+        "B": "0",
+        "C": "Infinity",
+        "D": "Undetermined"
+      },
+      "correct_choice": "B",
+      "solution": "The cardinality of the empty set is 0, as it contains no elements.",
+      "explanation": "Option B correctly states that the empty set has zero elements. Option A suggests a single element, which is not true for an empty set. Option C refers to an infinite number of elements, and option D implies uncertainty, neither of which applies to the empty set.",
+      "common_mistake_notes": "Common mistake: Choosing option A, assuming that the empty set has one element (the null set)."
+    },
+    {
+      "id": "Bnm",
+      "stem": "What is the result of multiplying a number by the empty set (Ø)?",
+      "choices": {
+        "A": "The number itself",
+        "B": "Zero",
+        "C": "Undefined",
+        "D": "The empty set"
+      },
+      "correct_choice": "C",
+      "solution": "Multiplying a number by the empty set is undefined because there are no elements in the empty set to perform the multiplication operation.",
+      "explanation": "Option A assumes that there is an element in the empty set, which is not the case. Option B suggests a zero result, but this would only be true if multiplying by the null set (not the empty set). Option D implies that the empty set can somehow participate in multiplication, which it cannot.",
+      "common_mistake_notes": "Common mistake: Choosing option B, confusing the empty set and null set concepts."
+    },
+    {
+      "id": "Ghjkl",
+      "stem": "In set theory, what is the relationship between the empty set (Ø) and the universal set (U)?",
+      "choices": {
+        "A": "The empty set is a proper subset of the universal set.",
+        "B": "The empty set is equal to the universal set.",
+        "C": "The empty set is a superset of the universal set.",
+        "D": "The empty set has no relationship with the universal set."
+      },
+      "correct_choice": "A",
+      "solution": "The empty set is a proper subset of every set, including the universal set. It contains no elements that are not in the universal set.",
+      "explanation": "Option A accurately describes the subset relationship between the empty set and any other set, including the universal set. Option B is incorrect as it suggests equality, which is not true. Option C reverses the subset relationship, and option D ignores the fundamental property of the empty set being a subset of all sets.",
+      "common_mistake_notes": "Common mistake: Choosing option C, reversing the empty set and universal set's subset relationship."
+    },
+    {
+      "id": "Ujkl",
+      "stem": "What is the result of taking the complement of the empty set (Ø) with respect to a universal set (U)?",
+      "choices": {
+        "A": "The empty set",
+        "B": "The universal set",
+        "C": "A set containing all elements except one",
+        "D": "An inconsistent set"
+      },
+      "correct_choice": "B",
+      "solution": "The complement of the empty set with respect to any universal set is the universal set itself, as it contains all elements not in the empty set.",
+      "explanation": "Option B correctly identifies that the complement of an empty set is the universal set. Option A suggests the empty set again, which would be true for the complement of the universal set. Option C refers to a specific case with one element removed, and option D implies a logical inconsistency, neither of which applies here.",
+      "common_mistake_notes": "Common mistake: Choosing option A, confusing the empty set and universal set's complement relationship."
+    },
+    {
+      "id": "Bnmhj",
+      "stem": "Given two empty sets (Ø), what is the result of taking their union?",
+      "choices": {
+        "A": "One empty set",
+        "B": "Two empty sets",
+        "C": "A set with one element",
+        "D": "An inconsistent set"
+      },
+      "correct_choice": "A",
+      "solution": "The union of two empty sets results in a single empty set, as there are no elements to combine.",
+      "explanation": "Option A accurately represents the result of combining two empty sets. Option B suggests multiple empty sets, which is not how set operations work. Option C implies an element being introduced, and option D refers to a logical inconsistency, neither of which applies when working with empty sets.",
+      "common_mistake_notes": "Common mistake: Choosing option C,误以为合并空集会引入元素。"
+    }
+  ]
+}

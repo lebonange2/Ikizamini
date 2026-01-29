@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.2.15 Prove set identities
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.2 Set Operations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asd1):
+Given the sets A = {1, 2, 3} and B = {2, 3, 4}, prove that (A ∪ B) ∩ B = B.
+A) (A ∪ B) ∩ B = {2, 3}
+B) (A ∪ B) ∩ B = {1, 2, 3, 4}
+C) (A ∪ B) ∩ B = B
+D) (A ∪ B) ∩ B = A
+Correct Answer: C
+
+Solution:
+The union of sets A and B (A ∪ B) is {1, 2, 3, 4}. When we intersect this with set B, we retain only the elements that are in both A ∪ B and B. Since B is already a subset of A ∪ B, the intersection results in B itself: (A ∪ B) ∩ B = {2, 3, 4} = B.
+
+Explanation:
+This question tests understanding of set operations and how to prove set identities using their definitions.
+
+Common mistake note:
+Common mistake is to assume that the intersection will result in A ∪ B, which is not correct because we are intersecting with B.
+------------------------------------------------------------------------------
+
+Problem 2 (Asd2):
+Prove that (A ∩ B) ∪ A = A.
+A) (A ∩ B) ∪ A = A ∩ B
+B) (A ∩ B) ∪ A = A
+C) (A ∩ B) ∪ A = B
+D) (A ∩ B) ∪ A = A ∪ B
+Correct Answer: B
+
+Solution:
+The intersection of sets A and B (A ∩ B) contains elements that are in both A and B. When we union this with set A, we add any elements from A that were not in the intersection but already exist in A: (A ∩ B) ∪ A = A.
+
+Explanation:
+This question tests understanding of set operations and how to prove set identities using their definitions.
+
+Common mistake note:
+Common mistake is to assume that the union will result in B or A ∪ B, which is not correct because we are starting with elements from A.
+------------------------------------------------------------------------------
+
+Problem 3 (Asd3):
+Given the sets X = {x | x is a prime number less than 10} and Y = {y | y is an even prime number}, prove that X ∩ Y = {}.
+A) X ∩ Y = {2}
+B) X ∩ Y = {}
+C) X ∩ Y = X
+D) X ∩ Y = Y
+Correct Answer: B
+
+Solution:
+The set X contains prime numbers less than 10, which are {2, 3, 5, 7}. The set Y contains even prime numbers, which is just {2}. Since there is only one even prime number and it is also in X, but no other elements in X are even, the intersection of X and Y is empty: X ∩ Y = {}.
+
+Explanation:
+This question tests understanding of set operations and how to prove set identities using specific examples.
+
+Common mistake note:
+Common mistake is to assume that X ∩ Y = {2}, which is not correct because even though 2 is in both sets, it is the only element in Y.
+------------------------------------------------------------------------------
+
+Problem 4 (Asd4):
+Prove that (A ∪ B) ∆ A = (A - B) ∪ (B - A), where ∆ denotes the symmetric difference.
+A) (A ∪ B) ∆ A = (A - B) ∪ (B - A)
+B) (A ∪ B) ∆ A = A ∩ B
+C) (A ∪ B) ∆ A = A ∪ B
+D) (A ∪ B) ∆ A = A
+Correct Answer: A
+
+Solution:
+The symmetric difference (A ∆ B) of sets A and B contains elements that are in either A or B, but not both. When we take the symmetric difference of (A ∪ B) with A, we remove any elements that are only in A: (A ∪ B) ∆ A = (A - B) ∪ (B - A).
+
+Explanation:
+This question tests understanding of set operations and how to prove set identities using their definitions.
+
+Common mistake note:
+Common mistake is to assume that the symmetric difference will result in A ∩ B or A ∪ B, which is not correct because we are removing elements from A that are also in (A ∪ B).
+------------------------------------------------------------------------------
+
+Problem 5 (Asd5):
+Given the sets P = {1, 2, 3, 4} and Q = {3, 4, 5, 6}, prove that (P - Q) ∩ Q = {}.
+A) (P - Q) ∩ Q = {1, 2}
+B) (P - Q) ∩ Q = {3, 4}
+C) (P - Q) ∩ Q = {}
+D) (P - Q) ∩ Q = P
+Correct Answer: C
+
+Solution:
+The set difference (P - Q) contains elements that are in P but not in Q, which is {1, 2}. When we intersect this with set Q, we find no elements that are in both sets: (P - Q) ∩ Q = {}.
+
+Explanation:
+This question tests understanding of set operations and how to prove set identities using specific examples.
+
+Common mistake note:
+Common mistake is to assume that (P - Q) ∩ Q contains elements from P, which is not correct because we are only considering elements in P that are not in Q.
+------------------------------------------------------------------------------
+
+Problem 6 (Asd6):
+Prove that if A ⊆ B, then A ∪ C = B ∪ C for any set C.
+A) A ∪ C = B ∪ C
+B) A ∪ C ≠ B ∪ C
+C) A ∪ C = A
+D) B ∪ C = A
+Correct Answer: A
+
+Solution:
+If set A is a subset of set B (A ⊆ B), then all elements of A are also in B. When we union either set with another set C, the result will be the same because the elements from A are already included in B: A ∪ C = B ∪ C.
+
+Explanation:
+This question tests understanding of set containment and how it affects set operations.
+
+Common mistake note:
+Common mistake is to assume that A ∪ C ≠ B ∪ C, which is not correct because the elements from A are already in B when A ⊆ B.
+------------------------------------------------------------------------------
+
+Problem 7 (Asd7):
+Given the sets R = {x | x is a real number} and S = {x | x is an irrational number}, prove that R ∩ S = S.
+A) R ∩ S = R
+B) R ∩ S = S
+C) R ∩ S = {}
+D) R ∩ S = R - S
+Correct Answer: B
+
+Solution:
+The intersection of the set of all real numbers (R) and the set of irrational numbers (S) is just the set of irrational numbers because every irrational number is also a real number: R ∩ S = S.
+
+Explanation:
+This question tests understanding of set operations and how to prove set identities using specific examples.
+
+Common mistake note:
+Common mistake is to assume that R ∩ S = R, which is not correct because the intersection only includes irrational numbers, not all real numbers.
+------------------------------------------------------------------------------

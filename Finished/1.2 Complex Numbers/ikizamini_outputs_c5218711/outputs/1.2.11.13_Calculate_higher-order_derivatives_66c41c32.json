@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.11.13",
+  "objective_text": "Calculate higher-order derivatives",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Find the second derivative of f(x) = x^3.",
+      "choices": {
+        "A": "6x",
+        "B": "3x^2",
+        "C": "9x",
+        "D": "2x^4"
+      },
+      "correct_choice": "A",
+      "solution": "The first derivative of f(x) is f'(x) = 3x^2. Taking the derivative again, we get the second derivative: f''(x) = 6x.",
+      "explanation": "To find higher-order derivatives, differentiate the function successively. In this case, we differentiated the cubic function twice to obtain the second derivative.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by the exponent when applying the power rule for differentiation."
+    },
+    {
+      "id": ":Q2",
+      "stem": "What is the third derivative of g(x) = e^x?",
+      "choices": {
+        "A": "e^x",
+        "B": "0",
+        "C": "3e^x",
+        "D": "e^{3x}"
+      },
+      "correct_choice": "A",
+      "solution": "The first derivative of g(x) is g'(x) = e^x. Differentiating again, we get g''(x) = e^x. Differentiating a third time gives the third derivative: g'''(x) = e^x.",
+      "explanation": "The derivative of e^x is always e^x itself, regardless of the order of differentiation.",
+      "common_mistake_notes": "A common mistake is thinking that the exponent increases with each derivative, but for e^x, it remains constant."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Find the fourth derivative of h(x) = sin(x).",
+      "choices": {
+        "A": "-cos(x)",
+        "B": "-sin(x)",
+        "C": "cos(x)",
+        "D": "4sin(x)"
+      },
+      "correct_choice": "B",
+      "solution": "The first derivative of h(x) is h'(x) = cos(x), the second derivative is h''(x) = -sin(x), the third derivative is h'''(x) = -cos(x), and the fourth derivative is h''''(x) = sin(x). Since we've reached the original function, it will repeat with a negative sign for an odd number of derivatives.",
+      "explanation": "The sine function has a pattern where its derivative alternates between cosine and negative sine. After four derivatives, it repeats with a negative sign.",
+      "common_mistake_notes": "A common mistake is not recognizing the repeating pattern in the derivatives of trigonometric functions."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Calculate the second derivative of p(x) = 5x^4 - 2x^3 + 7x^2.",
+      "choices": {
+        "A": "180x^2 - 60x + 14",
+        "B": "20x^3 - 9x^2 + 14x",
+        "C": "60x^3 - 36x^2 + 28x",
+        "D": "5x^3 - 3x^2 + 7x"
+      },
+      "correct_choice": "A",
+      "solution": "First derivative: p'(x) = 20x^3 - 6x^2 + 14x. Second derivative: p''(x) = 60x^2 - 12x + 14.",
+      "explanation": "To find the higher-order derivatives, differentiate each term separately and then sum them up.",
+      "common_mistake_notes": "A common mistake is not applying the power rule to each term individually or forgetting to multiply by the exponent."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Find the third derivative of q(x) = ln|x|.",
+      "choices": {
+        "A": "1/x^2",
+        "B": "-1/x^3",
+        "C": "0",
+        "D": "1/(x|x|)"
+      },
+      "correct_choice": "B",
+      "solution": "The first derivative of q(x) is q'(x) = 1/x, the second derivative is q''(x) = -1/x^2, and the third derivative is q'''(x) = 2/ x^3. However, since x cannot be zero for ln|x| to be defined, we can ignore the zero at x=0 when considering the third derivative.",
+      "explanation": "The natural logarithm function has a derivative that involves the reciprocal of x. When differentiating multiple times, powers of x are involved.",
+      "common_mistake_notes": "A common mistake is not accounting for the domain restriction of ln|x| and assuming the derivative at x=0."
+    },
+    {
+      "id": ":Q6",
+      "stem": "What is the fourth derivative of r(x) = 2^x?",
+      "choices": {
+        "A": "2^x ln^4(2)",
+        "B": "2^x ln^3(2)",
+        "C": "2^x ln^2(2)",
+        "D": "2^x ln(2)"
+      },
+      "correct_choice": "A",
+      "solution": "The first derivative of r(x) is r'(x) = 2^x ln(2), the second derivative is r''(x) = 2^x ln^2(2), the third derivative is r'''(x) = 2^x ln^3(2), and the fourth derivative is r''''(x) = 2^x ln^4(2).",
+      "explanation": "The derivative of 2^x involves multiplying by ln(2) to each power. This pattern continues for higher-order derivatives.",
+      "common_mistake_notes": "A common mistake is not recognizing that the base of the exponential function affects the derivative and forgetting to multiply by ln(2)."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Find the second derivative of s(x) = x^(1/3).",
+      "choices": {
+        "A": "-1/(9x^{4/3})",
+        "B": "1/(9x^{4/3})",
+        "C": "2/(3x^{2/3})",
+        "D": "1/(3x^{2/3})"
+      },
+      "correct_choice": "B",
+      "solution": "The first derivative of s(x) is s'(x) = (1/3)x^{-2/3}, the second derivative is s''(x) = (-2/9)x^{-5/3} = 1/(9x^{4/3}).",
+      "explanation": "When differentiating a power function with a fractional exponent, use the power rule and multiply by the negative of the exponent plus one. Then simplify.",
+      "common_mistake_notes": "A common mistake is not accounting for the negative sign when differentiating the fractional exponent."
+    }
+  ]
+}

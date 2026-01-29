@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.4.8",
+  "objective_text": "Sketch curves using calculus",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsymptoteTest_1",
+      "stem": "Sketch the curve of the function f(x) = (x+2)/(x^2-4). Identify any vertical asymptotes. Which of the following is the correct graph?",
+      "choices": {
+        "A": "Graph with a vertical asymptote at x = -2 and another at x = 2",
+        "B": "Graph with a vertical asymptote at x = 2 only",
+        "C": "Graph with a vertical asymptote at x = -2 only",
+        "D": "Graph with no vertical asymptotes"
+      },
+      "correct_choice": "A",
+      "solution": "The function f(x) has a denominator of x^2 - 4, which factors to (x+2)(x-2). This means there are potential vertical asymptotes at x = -2 and x = 2. Since the numerator does not have any roots that cancel out these factors, both x = -2 and x = 2 are indeed vertical asymptotes. Therefore, the correct graph is the one with vertical asymptotes at both x = -2 and x = 2.",
+      "explanation": "Vertical asymptotes occur where the denominator of a rational function equals zero, as long as the numerator does not also equal zero at that point.",
+      "common_mistake_notes": "A common mistake would be to choose B or C, assuming that only one of the factors in the denominator causes a vertical asymptote. However, both x = -2 and x = 2 are valid vertical asymptotes because the numerator does not have corresponding roots."
+    },
+    {
+      "id": "ZeroesTest_1",
+      "stem": "Sketch the curve of the function f(x) = x^3 - 4x^2 + 5x. Identify any x- intercepts. Which of the following is the correct graph?",
+      "choices": {
+        "A": "Graph with x-intercepts at x = 0, x = 1, and x = 5",
+        "B": "Graph with x-intercepts at x = -1, x = 1, and x = 3",
+        "C": "Graph with x-intercepts at x = 1 and x = 2",
+        "D": "Graph with no x-intercepts"
+      },
+      "correct_choice": "C",
+      "solution": "The function f(x) has a cubic polynomial. To find the x-intercepts, we need to set it equal to zero and solve for x: x^3 - 4x^2 + 5x = 0. Factoring by grouping gives us (x)(x^2 - 4x + 5) = 0. The quadratic part does not factor easily, so we use the quadratic formula to find its roots: x = [4 ± √(16 - 4*5)] / 2 = 1 and x = 2. Therefore, the correct graph has x-intercepts at x = 1 and x = 2.",
+      "explanation": "To find the x-intercepts of a polynomial function, set it equal to zero and solve for x. Factoring by grouping or using the quadratic formula can help in finding roots.",
+      "common_mistake_notes": "A common mistake would be to try factoring the entire cubic polynomial directly, which is difficult. Instead, factoring by grouping or using the quadratic formula on the quadratic part should be attempted."
+    },
+    {
+      "id": "CriticalPointsTest_1",
+      "stem": "Sketch the curve of the function f(x) = x^3 - 6x^2 + 9x. Identify any critical points and their nature (min, max, or inflection). Which of the following is the correct graph?",
+      "choices": {
+        "A": "Graph with a local minimum at x = 1 and an inflection point at x = 3",
+        "B": "Graph with a local maximum at x = 2 and an inflection point at x = 3",
+        "C": "Graph with a local minimum at x = 3 and no inflection points",
+        "D": "Graph with a local minimum at x = 1, a local maximum at x = 2, and an inflection point at x = 3"
+      },
+      "correct_choice": "B",
+      "solution": "The function f(x) has critical points where its derivative is zero or undefined. The derivative is f'(x) = 3x^2 - 12x + 9. Setting it to zero gives us a quadratic equation: 3x^2 - 12x + 9 = 0, which factors to 3(x-1)(x-3) = 0. The critical points are x = 1 and x = 3. To determine their nature, we look at the second derivative: f''(x) = 6x - 12. At x = 1, f''(1) < 0, indicating a local maximum; at x = 3, f''(3) > 0, indicating an inflection point. The correct graph has a local maximum at x = 2 and an inflection point at x = 3.",
+      "explanation": "To find critical points of a function, set its derivative equal to zero or undefined, then determine their nature by analyzing the second derivative: if f''(c) > 0, it's a minimum; if f''(c) < 0, it's a maximum; if f''(c) changes sign, it's an inflection point.",
+      "common_mistake_notes": "A common mistake would be to misinterpret the second derivative test, thinking that f''(1) > 0 indicates a minimum or f''(3) < 0 indicates a maximum. The correct interpretation is based on the sign of the second derivative at the critical points."
+    },
+    {
+      "id": "IntervalsOfIncreaseTest_1",
+      "stem": "Sketch the curve of the function f(x) = x^2 - 4x + 5. Determine the intervals where the function is increasing and decreasing. Which of the following is the correct graph?",
+      "choices": {
+        "A": "Graph that increases on (-∞, 0)U(2, ∞) and decreases on (0, 2)",
+        "B": "Graph that increases on (-∞, -2)U(1, ∞) and decreases on (-2, 1)",
+        "C": "Graph that increases on (-∞, 1)U(2, ∞) and decreases on (1, 2)",
+        "D": "Graph that increases on (-∞, 2)U(4, ∞) and decreases on (2, 4)"
+      },
+      "correct_choice": "C",
+      "solution": "The function f(x) is a quadratic with a positive leading coefficient, so it opens upwards. To determine the intervals of increase and decrease, we look at its derivative: f'(x) = 2x - 4. Setting it to zero gives us x = 2. Since the function increases where its derivative is positive and decreases where it's negative, we have an increasing interval on (-∞, 1)U(2, ∞) and a decreasing interval on (1, 2). The correct graph reflects these intervals.",
+      "explanation": "The intervals of increase and decrease for a function can be determined by analyzing its derivative: if f'(x) > 0, the function is increasing; if f'(x) < 0, it's decreasing. Critical points divide the domain into intervals where the sign of the derivative remains constant.",
+      "common_mistake_notes": "A common mistake would be to misinterpret the critical point x = 2 as a turning point, assuming that the function changes from increasing to decreasing at x = 2. However, since f'(x) is negative for x < 1 and positive for x > 2, the function actually increases on both sides of x = 2."
+    },
+    {
+      "id": "ConcavityTest_1",
+      "stem": "Sketch the curve of the function f(x) = x^4 - 6x^3 + 9x^2. Determine the intervals of concavity and any points of inflection. Which of the following is the correct graph?",
+      "choices": {
+        "A": "Graph that is concave up on (-∞, 0)U(3, ∞) with an inflection point at x = 1",
+        "B": "Graph that is concave down on (-∞, -1)U(2, ∞) with an inflection point at x = 3",
+        "C": "Graph that is concave up on (-∞, 1)U(3, ∞) with an inflection point at x = 2",
+        "D": "Graph that is concave down on (-∞, 0)U(2, ∞) with an inflection point at x = 1"
+      },
+      "correct_choice": "C",
+      "solution": "The function f(x) has intervals of concavity determined by its second derivative: f''(x) = 12x^2 - 36x + 18. Setting it to zero gives us a quadratic equation: 12x^2 - 36x + 18 = 0, which factors to 6(x-1)(2x-3) = 0. The inflection points are x = 1 and x = 3/2. Since the function is concave up where its second derivative is positive and concave down where it's negative, we have a concave up interval on (-∞, 1)U(3/2, ∞) with an inflection point at x = 2. The correct graph reflects these intervals.",
+      "explanation": "The intervals of concavity for a function can be determined by analyzing its second derivative: if f''(x) > 0, the function is concave up; if f''(x) < 0, it's concave down. Inflection points occur where the sign of the second derivative changes.",
+      "common_mistake_notes": "A common mistake would be to misinterpret the inflection point x = 2 as a turning point or not recognizing that the function is concave up on both sides of x = 1. The correct interpretation should consider the intervals where the second derivative remains constant in sign."
+    },
+    {
+      "id": "AreaUnderCurveTest_1",
+      "stem": "Sketch the curve of the function f(x) = 2x - x^2 from x = 0 to x = 3. Find the area under the curve on this interval. Which of the following is the correct graph?",
+      "choices": {
+        "A": "Graph with an area of 9 square units",
+        "B": "Graph with an area of 6 square units",
+        "C": "Graph with an area of 4.5 square units",
+        "D": "Graph with an area of 2.25 square units"
+      },
+      "correct_choice": "C",
+      "solution": "To find the area under the curve f(x) = 2x - x^2 from x = 0 to x = 3, we integrate the function: ∫(2x - x^2)dx = x^2 - (1/3)x^3 evaluated from 0 to 3. Plugging in the limits gives us an area of (3^2 - (1/3)(3^3)) - (0^2 - (1/3)(0^3)) = 9 - 9 = 4.5 square units. The correct graph should reflect this area.",
+      "explanation": "The area under a curve can be found by integrating the function over the given interval and evaluating the definite integral at the limits.",
+      "common_mistake_notes": "A common mistake would be to integrate incorrectly or forget to evaluate the definite integral at the limits. Another possible mistake is to misinterpret the graph, thinking it represents the area directly rather than just the curve."
+    },
+    {
+      "id": "VolumeOfRevolutionTest_1",
+      "stem": "Sketch the curve of the function f(x) = x^2 from x = 0 to x = 2. Find the volume of the solid formed by revolving the curve around the x-axis using the disk method. Which of the following is the correct graph?",
+      "choices": {
+        "A": "Graph with a volume of 32π cubic units",
+        "B": "Graph with a volume of 16π cubic units",
+        "C": "Graph with a volume of 8π cubic units",
+        "D": "Graph with a volume of 4π cubic units"
+      },
+      "correct_choice": "C",
+      "solution": "To find the volume of the solid formed by revolving the curve f(x) = x^2 around the x-axis using the disk method, we integrate π[f(x)]^2 dx from x = 0 to x = 2: ∫π(x^4)dx = (1/5)x^5 evaluated from 0 to 2. Plugging in the limits gives us a volume of (1/5)(2^5) - (1/5)(0^5) = 32/5 - 0 = 32/5π cubic units. The correct graph should reflect this solid formed by revolving the curve.",
+      "explanation": "The volume of a solid formed by revolving a function around an axis can be found using the disk method, which involves integrating π[f(x)]^2 dx over the interval and evaluating at the limits.",
+      "common_mistake_notes": "A common mistake would be to integrate incorrectly or forget to evaluate the definite integral at the limits. Another possible mistake is to misinterpret the graph, thinking it represents the volume directly rather than just the curve being revolved."
+    }
+  ]
+}

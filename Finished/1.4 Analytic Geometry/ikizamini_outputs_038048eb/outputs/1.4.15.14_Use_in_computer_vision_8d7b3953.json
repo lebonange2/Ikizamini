@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.15.14",
+  "objective_text": "Use in computer vision",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is a common use of computer vision in self-driving cars?",
+      "choices": {
+        "A": "Detecting traffic lights",
+        "B": "Calculating fuel efficiency",
+        "C": "Analyzing engine performance",
+        "D": "Predicting weather conditions"
+      },
+      "correct_choice": "A",
+      "solution": "Computer vision helps self-driving cars detect objects like traffic lights, pedestrians, and other vehicles on the road. Calculating fuel efficiency and analyzing engine performance are related to car mechanics, not computer vision. Predicting weather conditions is not directly related to the primary function of self-driving cars.",
+      "explanation": "In self-driving cars, computer vision plays a crucial role in perception and decision-making by recognizing elements in the environment.",
+      "common_mistake_notes": "Common mistake: Choosing B or C, which are related to car performance rather than perception."
+    },
+    {
+      "id": ":2",
+      "stem": "Which of the following is an application of computer vision in security systems?",
+      "choices": {
+        "A": "Facial recognition",
+        "B": "Analyzing financial data",
+        "C": "Translating languages",
+        "D": "Playing chess"
+      },
+      "correct_choice": "A",
+      "solution": "Facial recognition uses computer vision algorithms to identify or verify a person's identity based on their facial features. Analyzing financial data, translating languages, and playing chess are not directly related to computer vision.",
+      "explanation": "Computer vision is widely used in security systems for tasks like access control and surveillance through facial recognition.",
+      "common_mistake_notes": "Common mistake: Choosing B, C, or D, which are unrelated fields that may involve AI but not specifically computer vision."
+    },
+    {
+      "id": ":3",
+      "stem": "What technology powers the object detection feature in smartphone cameras?",
+      "choices": {
+        "A": "Image compression",
+        "B": "Optical character recognition (OCR)",
+        "C": "Machine learning algorithms",
+        "D": "GPS"
+      },
+      "correct_choice": "C",
+      "solution": "Object detection in smartphone cameras relies on machine learning algorithms that can identify and label objects within an image. Image compression reduces file size, OCR reads text from images, and GPS is used for location tracking.",
+      "explanation": "Smartphone cameras use computer vision to enhance user experience by detecting objects and applying filters or features accordingly.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which are unrelated technologies; choosing D, which is a positioning system rather than an image analysis tool."
+    },
+    {
+      "id": ":4",
+      "stem": "Which computer vision technique is used for identifying handwritten digits?",
+      "choices": {
+        "A": "Image segmentation",
+        "B": "Feature extraction",
+        "C": "Deep learning neural networks",
+        "D": "Edge detection"
+      },
+      "correct_choice": "C",
+      "solution": "Handwritten digit recognition typically employs deep learning neural networks, such as convolutional neural networks (CNNs), to classify and interpret the patterns in handwritten digits. Image segmentation separates an image into meaningful regions, feature extraction isolates important aspects of an image, and edge detection highlights boundaries.",
+      "explanation": "Deep learning algorithms are particularly effective at recognizing complex patterns like those found in handwritten digits.",
+      "common_mistake_notes": "Common mistake: Choosing A or D, which are techniques for image processing but not specifically designed for digit recognition; choosing B, which is a step in the process but not the primary method for this task."
+    },
+    {
+      "id": ":5",
+      "stem": "What technology enables self-checkout systems to scan and identify products?",
+      "choices": {
+        "A": "Radio-frequency identification (RFID)",
+        "B": "Computer vision",
+        "C": "Barcodes and QR codes",
+        "D": "Infrared sensors"
+      },
+      "correct_choice": "B",
+      "solution": "Self-checkout systems use computer vision to recognize products by scanning their appearance, while RFID is used for tracking inventory, barcodes/QR codes are scanned for product information, and infrared sensors are unrelated to this specific task.",
+      "explanation": "Computer vision plays a key role in self-checkout systems by quickly and accurately identifying items being purchased.",
+      "common_mistake_notes": "Common mistake: Choosing A or C, which are related technologies but not the primary method for product recognition; choosing D, which is unrelated to product scanning."
+    },
+    {
+      "id": ":6",
+      "stem": "Which computer vision application helps with autonomous navigation in drones?",
+      "choices": {
+        "A": "Scene understanding",
+        "B": "Image compression",
+        "C": "Image stitching",
+        "D": "Video stabilization"
+      },
+      "correct_choice": "A",
+      "solution": "Scene understanding, a subfield of computer vision, enables drones to interpret their surroundings and make decisions for autonomous navigation. Image compression reduces file size, image stitching combines multiple images, and video stabilization ensures smooth footage.",
+      "explanation": "Autonomous drones rely on scene understanding to avoid obstacles, follow routes, and perform tasks like aerial photography or inspection.",
+      "common_mistake_notes": "Common mistake: Choosing B, C, or D, which are unrelated technologies; they do not directly contribute to drone navigation."
+    },
+    {
+      "id": ":7",
+      "stem": "What is a primary use of computer vision in the field of robotics?",
+      "choices": {
+        "A": "Controlling temperature sensors",
+        "B": "Manipulating data in databases",
+        "C": "Object manipulation and grasping",
+        "D": "Generating music"
+      },
+      "correct_choice": "C",
+      "solution": "Computer vision helps robots recognize and interact with objects, facilitating tasks like grasping and manipulation. Controlling temperature sensors, manipulating data, and generating music are not directly related to computer vision in robotics.",
+      "explanation": "In robotics, computer vision is crucial for enabling robots to perceive their environment and perform complex actions accordingly.",
+      "common_mistake_notes": "Common mistake: Choosing A or B, which involve different types of control or data processing; choosing D, which is an unrelated creative application."
+    }
+  ]
+}

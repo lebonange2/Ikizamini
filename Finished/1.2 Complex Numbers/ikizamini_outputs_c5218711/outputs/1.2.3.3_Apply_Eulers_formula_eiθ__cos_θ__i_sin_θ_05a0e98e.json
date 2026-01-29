@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.3",
+  "objective_text": "Apply Euler's formula: e^(iθ) = cos θ + i sin θ",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Find the imaginary part of e^(iπ/4).",
+      "choices": {
+        "A": "-1/√2",
+        "B": "1/√2",
+        "C": "-√2",
+        "D": "√2"
+      },
+      "correct_choice": "B",
+      "solution": "Using Euler's formula, we have e^(iθ) = cos θ + i sin θ. For θ = π/4, we get e^(iπ/4) = cos(π/4) + i sin(π/4). The imaginary part is sin(π/4), which equals 1/√2.",
+      "explanation": "The imaginary part of the complex exponential comes from the sine term in Euler's formula.",
+      "common_mistake_notes": "A common mistake would be to select A (-1/√2) as it might be confused with the cosine value at π/4, but we are looking for the imaginary part which is given by the sine."
+    },
+    {
+      "id": "Two",
+      "stem": "Evaluate e^(iπ) - cos(π).",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "B",
+      "solution": "Using Euler's formula, we have e^(iπ) = cos π + i sin π. Thus, e^(iπ) - cos(π) = (cos π + i sin π) - cos π = i sin π. At π, sin π is 0, so the result is 0.",
+      "explanation": "The difference between the complex exponential and its cosine part at π simplifies to zero due to sin π being zero.",
+      "common_mistake_notes": "A common mistake would be to select A (-1) as it might be the value of cos(π), but Euler's formula also includes an imaginary term which cancels out with the cosine."
+    },
+    {
+      "id": "Three",
+      "stem": "Find the real part of e^(i3π/2).",
+      "choices": {
+        "A": "-√2",
+        "B": "0",
+        "C": "1",
+        "D": "√2"
+      },
+      "correct_choice": "B",
+      "solution": "Using Euler's formula, we have e^(iθ) = cos θ + i sin θ. For θ = 3π/2, we get e^(i3π/2) = cos(3π/2) + i sin(3π/2). The real part is cos(3π/2), which equals 0.",
+      "explanation": "The real part of the complex exponential comes from the cosine term in Euler's formula, and at 3π/2, cosine is zero.",
+      "common_mistake_notes": "A common mistake would be to select A (-√2) as it might be confused with the sine value at 3π/2, but we are looking for the real part which is given by the cosine."
+    },
+    {
+      "id": "Four",
+      "stem": "Express cos(4θ) in terms of e^(iθ).",
+      "choices": {
+        "A": "(e^(iθ) + e^(-iθ))^4",
+        "B": "(e^(iθ) - e^(-iθ))^2",
+        "C": "(e^(iθ) + e^(-iθ))^2",
+        "D": "1/2(e^(iθ) + e^(-iθ))^2"
+      },
+      "correct_choice": "C",
+      "solution": "Using the cosine double-angle identity, cos(4θ) = 2cos²(2θ) - 1. Now, we can use Euler's formula to express cos(2θ): cos(2θ) = (e^(i2θ) + e^(-i2θ))/2. Squaring this gives us cos²(2θ) = [(e^(i2θ) + e^(-i2θ))^2]/4. Substituting back into the original expression, we get cos(4θ) = 2[(e^(i2θ) + e^(-i2θ))^2]/4 - 1/2 = (e^(i2θ) + e^(-i2θ))^2/2 - 1/2. Simplifying further, we have cos(4θ) = (e^(i4θ) + 2 + e^(-i4θ))/4 - 1/2 = (e^(iθ) + e^(-iθ))^2.",
+      "explanation": "We used the cosine double-angle identity and Euler's formula to express cos(4θ) in terms of e^(iθ).",
+      "common_mistake_notes": "A common mistake would be to select A or B, as they involve powers of 4, but that's not correct for the cosine of four times the angle."
+    },
+    {
+      "id": "Five",
+      "stem": "Find the value of sin(2θ) if e^(iθ) = 1+i.",
+      "choices": {
+        "A": "2/√5",
+        "B": "1/√5",
+        "C": "-1/√5",
+        "D": "-2/√5"
+      },
+      "correct_choice": "A",
+      "solution": "Given e^(iθ) = 1+i, we can use Euler's formula to find sin(θ): e^(iθ) = cos θ + i sin θ. Comparing real and imaginary parts, we have cos θ = 1 and sin θ = 1. Now, using the sine double-angle identity, sin(2θ) = 2sin θ cos θ = 2 * (1) * (1) = 2. To express this in terms of √5, we get sin(2θ) = 2/√5.",
+      "explanation": "We first found the sine and cosine values from the given complex exponential, then used the sine double-angle identity to find sin(2θ).",
+      "common_mistake_notes": "A common mistake would be to select B or C as they might come from a misapplication of the Pythagorean theorem, but we are looking for sin(2θ), not sin θ."
+    },
+    {
+      "id": "Six",
+      "stem": "Simplify (e^(iπ/3))^4.",
+      "choices": {
+        "A": "-1/8",
+        "B": "1/8",
+        "C": "-1",
+        "D": "1"
+      },
+      "correct_choice": "D",
+      "solution": "Using Euler's formula, we have e^(iθ) = cos θ + i sin θ. For θ = π/3, we get (e^(iπ/3))^4 = (cos(π/3) + i sin(π/3))^4. Since cos(π/3) = 1/2 and sin(π/3) = √3/2, the expression simplifies to ((1/2) + (√3/2)i)^4. Expanding this using De Moivre's Theorem or binomial theorem, we get (cos(π/3) + i sin(π/3))^4 = cos(4π/3) + i sin(4π/3). At 4π/3, both cosine and sine are negative, but since we're looking for the real part only, it simplifies to cos(4π/3) = -1/2. Thus, (e^(iπ/3))^4 = (-1/2)^4 = 1.",
+      "explanation": "We raised the complex exponential to a power and simplified using Euler's formula and De Moivre's Theorem.",
+      "common_mistake_notes": "A common mistake would be to select A or B as they might come from misapplying powers, but we are looking for the real part of the expression."
+    },
+    {
+      "id": "Seven",
+      "stem": "Find the value of e^(iθ) if cos θ = -1/2 and sin θ = √3/2.",
+      "choices": {
+        "A": "-√3/2 + i/2",
+        "B": "1/2 + √3i/2",
+        "C": "-1/2 - √3i/2",
+        "D": "-1/2 + √3i/2"
+      },
+      "correct_choice": "D",
+      "solution": "Given cos θ = -1/2 and sin θ = √3/2, we can use Euler's formula to find e^(iθ): e^(iθ) = cos θ + i sin θ. Substituting the values, we get e^(iθ) = (-1/2) + (√3/2)i.",
+      "explanation": "We directly applied Euler's formula using the given cosine and sine values.",
+      "common_mistake_notes": "A common mistake would be to select A or C as they might come from a mix-up of signs, but we are looking for the complex exponential representation."
+    }
+  ]
+}

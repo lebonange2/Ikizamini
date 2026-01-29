@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.2.12",
+  "objective_text": "Apply domination laws",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Given the following set of logical expressions, which one is dominated by (implies) the expression X AND Y?",
+      "choices": {
+        "A": "(X OR Y)",
+        "B": "(NOT X OR NOT Y)",
+        "C": "(X AND NOT Y)",
+        "D": "(NOT X AND Y)"
+      },
+      "correct_choice": "A",
+      "solution": "The domination law states that 'X AND Y' is dominated by 'X OR Y', meaning that if 'X OR Y' is true, then 'X AND Y' must also be true. Therefore, (X OR Y) dominates (X AND Y). The other options do not have this implication.",
+      "explanation": "Domination law states that if A implies B, then A is said to dominate B.",
+      "common_mistake_notes": "A common mistake would be to choose (X AND NOT Y), which is equivalent to 'X' but does not imply 'X AND Y'."
+    },
+    {
+      "id": ":2",
+      "stem": "Which of the following logical expressions dominates (implies) the expression NOT(X OR Y)?",
+      "choices": {
+        "A": "(NOT X AND NOT Y)",
+        "B": "(X AND Y)",
+        "C": "(X OR NOT Y)",
+        "D": "(NOT X OR Y)"
+      },
+      "correct_choice": "A",
+      "solution": "The domination law states that 'NOT( X OR Y)' is dominated by '(NOT X AND NOT Y)', meaning that if '(NOT X AND NOT Y)' is true, then 'NOT(X OR Y)' must also be true. Therefore, (NOT X AND NOT Y) dominates (NOT(X OR Y)). The other options do not have this implication.",
+      "explanation": "Using De Morgan's laws, we can rewrite 'NOT( X OR Y)' as '(NOT X AND NOT Y)', which is dominated by itself.",
+      "common_mistake_notes": "A common mistake would be to choose (X AND Y), which is the negation of 'NOT(X OR Y)' but does not imply it."
+    },
+    {
+      "id": ":3",
+      "stem": "Which logical expression is dominated by (implies) the expression X NAND Y?",
+      "choices": {
+        "A": "(X OR Y)",
+        "B": "(NOT X AND NOT Y)",
+        "C": "(X AND NOT Y)",
+        "D": "(NOT X OR Y)"
+      },
+      "correct_choice": "D",
+      "solution": "The domination law for NAND states that 'X NAND Y' is dominated by '(NOT X OR Y)', meaning that if '(NOT X OR Y)' is true, then 'X NAND Y' must also be true. Therefore, (NOT X OR Y) dominates (X NAND Y). The other options do not have this implication.",
+      "explanation": "NAND is the negation of AND, so 'X NAND Y' is equivalent to '(NOT( X AND Y))', which implies '(NOT X OR Y)' according to De Morgan's laws.",
+      "common_mistake_notes": "A common mistake would be to choose (X OR Y), which is the negation of 'X AND Y' but does not imply 'X NAND Y'."
+    },
+    {
+      "id": ":4",
+      "stem": "Which of the following expressions dominates (implies) the expression X NAND NOT Y?",
+      "choices": {
+        "A": "(X OR NOT Y)",
+        "B": "(NOT X AND Y)",
+        "C": "(X AND Y)",
+        "D": "(NOT X OR NOT Y)"
+      },
+      "correct_choice": "A",
+      "solution": "The domination law for NAND states that 'X NAND NOT Y' is dominated by '(X OR NOT Y)', meaning that if '(X OR NOT Y)' is true, then 'X NAND NOT Y' must also be true. Therefore, (X OR NOT Y) dominates (X NAND NOT Y). The other options do not have this implication.",
+      "explanation": "NAND is the negation of AND, so 'X NAND NOT Y' is equivalent to '(NOT( X AND NOT Y))', which implies '(X OR NOT Y)' according to De Morgan's laws.",
+      "common_mistake_notes": "A common mistake would be to choose (NOT X AND Y), which is the negation of 'X AND NOT Y' but does not imply 'X NAND NOT Y'."
+    },
+    {
+      "id": ":5",
+      "stem": "Given the logical expressions, which one is dominated by (implies) the expression X OR Y?",
+      "choices": {
+        "A": "(X AND Y)",
+        "B": "(NOT X OR NOT Y)",
+        "C": "(X AND NOT Y)",
+        "D": "(NOT X AND Y)"
+      },
+      "correct_choice": "B",
+      "solution": "The domination law states that 'X OR Y' is dominated by '(NOT X OR NOT Y)', meaning that if '(NOT X OR NOT Y)' is true, then 'X OR Y' must also be true. Therefore, (NOT X OR NOT Y) dominates (X OR Y). The other options do not have this implication.",
+      "explanation": "Using De Morgan's laws, we can rewrite 'X OR Y' as '(NOT( NOT X AND NOT Y))', which is dominated by '(NOT X OR NOT Y)' itself.",
+      "common_mistake_notes": "A common mistake would be to choose (X AND Y), which is equivalent to 'X OR Y' but does not imply it."
+    },
+    {
+      "id": ":6",
+      "stem": "Which logical expression dominates (implies) the expression X NOR Y?",
+      "choices": {
+        "A": "(X OR Y)",
+        "B": "(NOT X AND NOT Y)",
+        "C": "(X AND NOT Y)",
+        "D": "(NOT X OR Y)"
+      },
+      "correct_choice": "B",
+      "solution": "The domination law for NOR states that 'X NOR Y' is dominated by '(NOT X AND NOT Y)', meaning that if '(NOT X AND NOT Y)' is true, then 'X NOR Y' must also be true. Therefore, (NOT X AND NOT Y) dominates (X NOR Y). The other options do not have this implication.",
+      "explanation": "NOR is the negation of OR, so 'X NOR Y' is equivalent to '(NOT( X OR Y))', which implies '(NOT X AND NOT Y)' according to De Morgan's laws.",
+      "common_mistake_notes": "A common mistake would be to choose (X OR Y), which is the negation of 'X AND Y' but does not imply 'X NOR Y'."
+    },
+    {
+      "id": ":7",
+      "stem": "Which of the following expressions dominates (implies) the expression X NOR NOT Y?",
+      "choices": {
+        "A": "(X OR NOT Y)",
+        "B": "(NOT X AND Y)",
+        "C": "(X AND Y)",
+        "D": "(NOT X OR NOT Y)"
+      },
+      "correct_choice": "D",
+      "solution": "The domination law for NOR states that 'X NOR NOT Y' is dominated by '(NOT X OR NOT Y)', meaning that if '(NOT X OR NOT Y)' is true, then 'X NOR NOT Y' must also be true. Therefore, (NOT X OR NOT Y) dominates (X NOR NOT Y). The other options do not have this implication.",
+      "explanation": "NOR is the negation of OR, so 'X NOR NOT Y' is equivalent to '(NOT( X OR NOT Y))', which implies '(NOT X OR NOT Y)' according to De Morgan's laws.",
+      "common_mistake_notes": "A common mistake would be to choose (NOT X AND Y), which is the negation of 'X AND NOT Y' but does not imply 'X NOR NOT Y'."
+    }
+  ]
+}

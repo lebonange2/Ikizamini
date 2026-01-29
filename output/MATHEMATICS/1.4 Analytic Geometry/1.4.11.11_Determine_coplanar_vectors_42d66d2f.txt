@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.11.11 Determine coplanar vectors
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.11 Vectors in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Are the following three vectors coplanar?
+A) [2, 3, 4], [5, 7, 9], [10, 15, 21]
+B) [3, 6, 9], [6, 12, 18], [9, 18, 27]
+C) [1, 2, 3], [4, 5, 6], [7, 8, 10]
+D) [1, 1, 1], [2, 2, 2], [3, 3, 3]
+Correct Answer: B
+
+Solution:
+To determine if three vectors are coplanar, check if the cross product of any two is parallel to the third. For option B: (3i + 6j + 9k) x (6i + 12j + 18k) = 0i - 0j - 0k and (6i + 12j + 18k) x (9i + 18j + 27k) = 0i - 0j - 0k. Both yield zero, indicating coplanarity.
+
+Explanation:
+Coplanar vectors lie in the same plane; their cross product results in a vector parallel to the normal or zero. Zero-cross products imply linear dependence and coplanarity.
+
+Common mistake note:
+Assuming that vectors with identical directions are coplanar, e.g., [1, 0, 0], [2, 0, 0], [3, 0, 0] are collinear but not coplanar with z-axis.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Are these two vectors coplanar with vector v = <5, -3, 4>?
+A) <1, 2, 3>, <6, 9, 12>
+B) <-2, 4, -6>, <7, -14, 21>
+C) <3, -6, 9>, <8, -16, 24>
+D) <0, 0, 0>, <1, 1, 1>
+Correct Answer: C
+
+Solution:
+Check if one vector's cross product with v is parallel to the other. For option C: (3i - 6j + 9k) x (5i - 3j + 4k) = 0i - 0j - 0k, which is parallel to <8, -16, 24>.
+
+Explanation:
+When checking with a third vector, verify if the cross product of two vectors is parallel to the third. If so, all three are coplanar.
+
+Common mistake note:
+Forgetting to check for parallelism between the cross product and the third vector; instead, assuming zero-cross product implies automatic coplanarity.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Are these vectors coplanar with the xy-plane?
+A) [1, 2, 0], [3, 4, 0], [5, 6, 0]
+B) [2, 4, 1], [4, 8, 2], [6, 12, 3]
+C) [1, 1, 1], [2, 2, 2], [3, 3, 3]
+D) [0, 0, 1], [0, 0, 2], [0, 0, 3]
+Correct Answer: A
+
+Solution:
+Vectors are coplanar with the xy-plane if z-components are zero. Only option A has all vectors with z = 0.
+
+Explanation:
+To check, verify if all vectors' z-coordinates are zero; if so, they lie in the xy-plane and are coplanar.
+
+Common mistake note:
+Confusing coplanar with parallel; vectors in option C have parallel z-components but not in the xy-plane.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Are these vectors coplanar if they form a triangle in 3D space?
+A) [1, 2, 3], [4, 5, 6], [7, 8, 9]
+B) [2, 4, 6], [4, 8, 12], [6, 12, 18]
+C) [1, 1, 1], [2, 2, 2], [3, 3, 3]
+D) [0, 0, 0], [1, 1, 1], [2, 2, 2]
+Correct Answer: B
+
+Solution:
+For vectors to form a triangle, they must not be collinear. In option B, cross products result in zero, meaning they are coplanar but not collinear.
+
+Explanation:
+Vectors forming a triangle must be non-collinear and lie in the same plane; zero-cross products imply coplanarity but not necessarily collinearity.
+
+Common mistake note:
+Assuming that if vectors form a triangle, they're non-coplanar. Degenerate triangles can be coplanar.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Are these vectors coplanar with vector v = <1, 0, 1> and w = <0, 1, 1>?
+A) <1, 1, 1>, <2, 2, 2>
+B) <1, -1, 1>, <2, -2, 2>
+C) <-1, 1, -1>, <-2, 2, -2>
+D) [0, 0, 0], [1, 1, 1]
+Correct Answer: A
+
+Solution:
+Find a normal vector n = <1, 1, -2> (cross product of v and w) and check if the dot product with given vectors is zero. For option A: (n . <1, 1, 1>) = 0 and (n . <2, 2, 2>) = 0.
+
+Explanation:
+To check coplanarity, find a normal to v and w; if the dot product with given vectors is zero, they're coplanar.
+
+Common mistake note:
+Not considering the dot product with the normal but checking parallelism or collinearity between given vectors.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Are these vectors coplanar if they form a parallelogram in 3D space?
+A) [1, 2, 3], [4, 5, 6], [7, 8, 9]
+B) [2, 4, 6], [4, 8, 12], [6, 12, 18]
+C) [1, 1, 1], [2, 2, 2], [3, 3, 3]
+D) [0, 0, 0], [1, 1, 1], [2, 2, 2]
+Correct Answer: A
+
+Solution:
+For vectors to form a parallelogram, they must be non-collinear. In option A, non-zero cross products imply non-coplanarity.
+
+Explanation:
+Vectors forming a parallelogram must be non-collinear; non-zero cross products mean non-coplanar and can form a parallelogram.
+
+Common mistake note:
+Assuming that if vectors form a parallelogram, they're coplanar. Non-coplanar vectors can still form a parallelogram.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Are these vectors coplanar with vector v = <1, 2, 3> and w = <4, 5, 6>?
+A) [7, 8, 9], [10, 11, 12]
+B) [7, -8, 9], [10, -11, 12]
+C) [-7, 8, -9], [-10, 11, -12]
+D) [0, 0, 0], [1, 1, 1]
+Correct Answer: A
+
+Solution:
+Find a normal vector n = <-3, -6, 1> (cross product of v and w) and check if the dot product with given vectors is zero. For option A: (n . [7, 8, 9]) = 0 and (n . [10, 11, 12]) = 0.
+
+Explanation:
+To check coplanarity, find a normal to v and w; if the dot product with given vectors is zero, they're coplanar.
+
+Common mistake note:
+Not considering the dot product with the normal but checking parallelism or collinearity between given vectors.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.9.1 Define complex sequences
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.9 Complex Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is a complex sequence in mathematics?
+A) A sequence with only even numbers.
+B) A sequence that follows a rule involving imaginary numbers.
+C) A sequence of words arranged in a specific pattern.
+D) A sequence where each term is the sum of the previous two terms.
+Correct Answer: B
+
+Solution:
+Complex sequences are mathematical sequences involving imaginary or complex numbers, which include the square root of -1. Choice A describes an arithmetic sequence with even numbers, choice C refers to a linguistic sequence, and choice D represents a Fibonacci sequence.
+
+Explanation:
+A complex sequence goes beyond real number sequences by incorporating elements from the complex number system.
+
+Common mistake note:
+Common mistake: Selecting A or C. These choices describe different types of sequences not involving complex numbers.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Which of the following represents a complex sequence?
+A) [1, 3, 5, 7, ...]
+B) [2i, -4i, 8i, -16i, ...]
+C) [a, b, c, d, ...] where a, b, c, and d are variables.
+D) [π, e, √2, √3, ...]
+Correct Answer: B
+
+Solution:
+The sequence [2i, -4i, 8i, -16i, ...] is a complex sequence as it includes the imaginary number i (where i^2 = -1). The other choices represent real number sequences or variable-based sequences without imaginary components.
+
+Explanation:
+A complex sequence must contain at least one term with an imaginary part.
+
+Common mistake note:
+Common mistake: Choosing A, C, or D. These choices describe real number sequences or a sequence of variables without imaginary numbers.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+What is the general form of a complex geometric sequence where the first term is 'a' and the common ratio is 'ri', with 'r' being a real number and 'i' being the imaginary unit?
+A) a * r^n
+B) a * (rn)^(n-1)
+C) a * ri^(n-1)
+D) a * r^ni
+Correct Answer: C
+
+Solution:
+The general form of a complex geometric sequence is similar to its real counterpart, but with the common ratio multiplied by 'i'. Thus, it's a * ri^(n-1). The other choices either omit 'i' or have incorrect exponents.
+
+Explanation:
+In a complex geometric sequence, each term is found by multiplying the previous term by the product of the real common ratio and the imaginary unit i.
+
+Common mistake note:
+Common mistake: Choosing A or B. These choices represent forms of real geometric sequences without considering the imaginary component.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the first term of the complex sequence defined by the rule: t_n = (2i)^n?
+A) 0
+B) 1
+C) 2i
+D) 4i
+Correct Answer: C
+
+Solution:
+The first term is found by plugging n=1 into the given rule: t_n = (2i)^n. For n=1, the first term is (2i)^1 = 2i.
+
+Explanation:
+To find the first term of a sequence, substitute n with its initial value (usually 1).
+
+Common mistake note:
+Common mistake: Choosing A or B. These choices result from not correctly applying the given rule.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Which of the following is an example of a complex arithmetic sequence?
+A) [2i, 4i, 6i, 8i, ...]
+B) [1 + i, 3 - 2i, 5 + 3i, 7 - 4i, ...]
+C) [√2, √3, √4, √5, ...]
+D) [π/2, π, 3π/2, 2π, ...]
+Correct Answer: B
+
+Solution:
+The sequence [1 + i, 3 - 2i, 5 + 3i, 7 - 4i, ...] is a complex arithmetic sequence as both the real and imaginary parts follow a consistent pattern (an increase of 2 in the real part and a decrease of 3 in the imaginary part).
+
+Explanation:
+A complex arithmetic sequence has a common difference for both the real and imaginary components.
+
+Common mistake note:
+Common mistake: Choosing A or C. These choices represent sequences with only imaginary or real numbers, respectively, without a consistent pattern for both parts.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the fifth term of the complex sequence defined by the rule: t_n = (n + 1)i^n?
+A) 2i^5
+B) 3i^5
+C) 4i^5
+D) 5i^5
+Correct Answer: C
+
+Solution:
+The fifth term is found by plugging n=5 into the rule: t_n = (n + 1)i^n. So, t_5 = (5 + 1)i^5 = 6i^5. Since i^5 = i * i^4 = i * (i^2)^2 = i * (-1)^2 = -1 * 1 = -1, the fifth term is -6i or 4i^5 in standard form.
+
+Explanation:
+To find a specific term of a sequence, substitute the index with the desired term number and evaluate.
+
+Common mistake note:
+Common mistake: Choosing A, B, or D. These choices result from not correctly applying the given rule or simplifying the complex number.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the general form of a complex sequence that alternates between two complex numbers 'a + bi' and 'c + di', where 'a', 'b', 'c', and 'd' are real numbers?
+A) [a + bi, c + di, a + bi, c + di, ...]
+B) [(a + bi) + (c + di), 0, (a + bi) + (c + di), 0, ...]
+C) [a + bi, c + di, -a - bi, -c - di, ...]
+D) [a + bi, c + di, a - bi, c - di, ...]
+Correct Answer: A
+
+Solution:
+The general form of an alternating complex sequence is simply [a + bi, c + di, a + bi, c + di, ...]. The other choices introduce additional operations or patterns that do not accurately represent the alternating nature.
+
+Explanation:
+An alternating sequence cycles through two given values without any additional rules or transformations.
+
+Common mistake note:
+Common mistake: Choosing B, C, or D. These choices add unnecessary complexity to the sequence by introducing zero terms, negations, or different operations.
+------------------------------------------------------------------------------

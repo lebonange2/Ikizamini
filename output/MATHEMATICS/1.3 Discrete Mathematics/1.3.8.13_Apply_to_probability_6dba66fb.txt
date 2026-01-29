@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.8.13 Apply to probability
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.8 Counting Principles
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A fair coin is flipped twice. What is the probability of getting exactly one head?
+A) 0.25
+B) 0.33
+C) 0.50
+D) 0.75
+Correct Answer: C
+
+Solution:
+The probability of flipping a heads on a fair coin is 0.5, and the flips are independent events. The probability of getting exactly one head in two flips can be calculated as follows: (0.5) * (0.5) + (0.5) * (0.5) = 0.25 + 0.25 = 0.50.
+
+Explanation:
+The correct answer is the probability of getting heads on the first flip and tails on the second, plus the probability of tails on the first flip and heads on the second. Both scenarios have equal probability since the coin is fair.
+
+Common mistake note:
+A common mistake would be to choose A (0.25), which is the probability of getting exactly one head in a single flip, not two flips.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+An urn contains 3 red balls and 4 blue balls. If two balls are drawn without replacement, what is the probability that both balls are red?
+A) 0.15
+B) 0.20
+C) 0.30
+D) 0.67
+Correct Answer: B
+
+Solution:
+The probability of drawing a red ball on the first draw is 3/7 (since there are 3 red balls out of 7 total). After drawing one red ball, there are now 2 red balls left and a total of 6 balls. The probability of drawing another red ball on the second draw is 2/6. To find the overall probability of both events happening, multiply these probabilities: (3/7) * (2/6) = 0.15.
+
+Explanation:
+The correct answer considers that the first draw affects the probability of the second draw since balls are not replaced. The mistake would be to assume independence and multiply by 3/7 twice, which would lead to an incorrect probability of 0.30.
+
+Common mistake note:
+A common mistake would be to choose C (0.30), assuming that each draw is independent, which it is not since balls are not replaced.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+A bag contains 5 white marbles and 7 black marbles. If a marble is drawn at random and then replaced, what is the probability of drawing two white marbles in a row?
+A) 0.16
+B) 0.25
+C) 0.36
+D) 0.49
+Correct Answer: D
+
+Solution:
+Since the marble is replaced after each draw, each draw is independent. The probability of drawing a white marble on both draws is (5/12) * (5/12) = 0.40625, which rounds to 0.49.
+
+Explanation:
+The correct answer assumes that the marbles are drawn with replacement, so each draw has the same probability as if it were the first draw. A common mistake would be to consider without replacement, leading to a different probability.
+
+Common mistake note:
+A common mistake would be to choose A (0.16) or B (0.25), assuming that the marbles are not replaced, which is not the case in this problem.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+An experiment has an 80% chance of success and a 20% chance of failure. If the experiment is performed twice, what is the probability of getting one success and one failure?
+A) 0.16
+B) 0.32
+C) 0.48
+D) 0.64
+Correct Answer: B
+
+Solution:
+The probability of success on a single trial is 0.8, and the probability of failure is 0.2. The events are independent, so we can calculate the probability of one success and one failure by multiplying the probabilities: (0.8) * (0.2) + (0.2) * (0.8) = 0.16 + 0.16 = 0.32.
+
+Explanation:
+The correct answer considers both possible orderings of success and failure, as each has the same probability since the events are independent. A common mistake would be to choose C or D, assuming that only one specific ordering is considered.
+
+Common mistake note:
+A common mistake would be to choose C (0.48) or D (0.64), considering only one possible outcome (e.g., success then failure) and not accounting for the other equally likely outcome (failure then success).
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+In a deck of 52 cards, what is the probability of drawing two kings without replacement?
+A) 0.0036
+B) 0.0072
+C) 0.0144
+D) 0.0288
+Correct Answer: B
+
+Solution:
+There are 4 kings in a deck of 52 cards. The probability of drawing a king on the first draw is 4/52. After drawing one king, there are 3 kings left and a total of 51 cards remaining. The probability of drawing another king on the second draw is 3/51. To find the overall probability, multiply these probabilities: (4/52) * (3/51) = 0.0072.
+
+Explanation:
+The correct answer takes into account that cards are not replaced, so the probability of drawing a king on the second draw is affected by the first draw. A common mistake would be to assume independence and multiply by 4/52 twice, leading to an incorrect probability.
+
+Common mistake note:
+A common mistake would be to choose C (0.0144), assuming that each draw is independent, which it is not since cards are not replaced.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+An unfair coin lands heads 75% of the time and tails 25% of the time. If the coin is flipped twice, what is the probability of getting two heads?
+A) 0.19
+B) 0.37
+C) 0.56
+D) 0.75
+Correct Answer: C
+
+Solution:
+The probability of flipping heads on this unfair coin is 0.75, and the flips are independent events. The probability of getting two heads in two flips can be calculated as follows: (0.75) * (0.75) = 0.5625, which rounds to 0.56.
+
+Explanation:
+The correct answer considers that the coin is unfair and calculates the probability of two heads based on its bias. A common mistake would be to assume a fair coin, leading to an incorrect probability.
+
+Common mistake note:
+A common mistake would be to choose D (0.75), assuming that the coin is fair, which it is not.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+A bag contains 3 green balls and 2 red balls. If two balls are drawn without replacement, what is the probability that at least one ball is green?
+A) 0.50
+B) 0.60
+C) 0.75
+D) 0.80
+Correct Answer: C
+
+Solution:
+To find the probability of drawing at least one green ball, we can calculate the probability of drawing two red balls and subtract it from 1 to get the complement. The probability of drawing two red balls is (2/5) * (1/4) = 0.125. Subtracting this from 1 gives us 1 - 0.125 = 0.875, which rounds to 0.75.
+
+Explanation:
+The correct answer uses complementary probability by finding the probability of an event (not drawing any green balls) and subtracting it from 1 to find the probability of its complement (drawing at least one green ball). A common mistake would be to add probabilities instead of using complements.
+
+Common mistake note:
+A common mistake would be to choose B (0.60), by adding the probabilities of drawing exactly one green ball and two green balls, which is not the correct way to find the probability of at least one green ball.
+------------------------------------------------------------------------------

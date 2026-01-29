@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.3.11 Convert between all three forms
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.3 Polar and Exponential Forms
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IncrementalConversion):
+What is the binary representation of the decimal number 42?
+A) 101010
+B) 101100
+C) 101110
+D) 110010
+Correct Answer: A
+
+Solution:
+The binary representation of decimal 42 is 101010.
+
+Explanation:
+To convert a decimal number to binary, repeatedly divide by 2 and write down the remainder until the quotient is 0. Then read the remainders in reverse order.
+
+Common mistake note:
+A common mistake is forgetting to write down the remainders or not reversing them when forming the binary number.
+------------------------------------------------------------------------------
+
+Problem 2 (DecToHexConversion):
+What is the hexadecimal representation of the decimal number 245?
+A) E5
+B) F5
+C) D5
+D) C5
+Correct Answer: C
+
+Solution:
+The hexadecimal representation of decimal 245 is D5.
+
+Explanation:
+To convert a decimal number to hexadecimal, divide the number by 16 and write down the remainder. Continue dividing the quotient by 16 until it becomes 0. Convert each remainder to its corresponding hexadecimal digit (0-9 for numbers, A-F for letters representing values 10-15).
+
+Common mistake note:
+A common mistake is not converting the remainders properly or forgetting that A represents 10, B represents 11, and so on.
+------------------------------------------------------------------------------
+
+Problem 3 (HexToBinConversion):
+What is the binary representation of the hexadecimal number F7?
+A) 11110111
+B) 11101111
+C) 11111111
+D) 11111011
+Correct Answer: A
+
+Solution:
+The binary representation of hexadecimal F7 is 11110111.
+
+Explanation:
+To convert a hexadecimal number to binary, convert each hexadecimal digit (A- F) to its equivalent 4-bit binary value and concatenate the results. A = 1010, B = 1011, C = 1100, D = 1101, E = 1110, F = 1111.
+
+Common mistake note:
+A common mistake is misinterpreting the hexadecimal digits or not properly converting them to binary.
+------------------------------------------------------------------------------
+
+Problem 4 (BinToDecConversion):
+What is the decimal representation of the binary number 10110?
+A) 22
+B) 34
+C) 42
+D) 50
+Correct Answer: C
+
+Solution:
+The decimal representation of binary 10110 is 42.
+
+Explanation:
+To convert a binary number to decimal, multiply each digit by 2 raised to the power of its position (starting from right as 0) and sum the results. 1 * 2^4 + 0 * 2^3 + 1 * 2^2 + 1 * 2^1 + 0 * 2^0 = 16 + 4 + 2 = 22.
+
+Common mistake note:
+A common mistake is miscounting the positions or forgetting to start with position 0.
+------------------------------------------------------------------------------
+
+Problem 5 (BinToHexConversion):
+What is the hexadecimal representation of the binary number 1101101?
+A) D5
+B) C7
+C) CB
+D) DB
+Correct Answer: B
+
+Solution:
+The binary representation of binary 1101101 is C7.
+
+Explanation:
+To convert a binary number to hexadecimal, group the digits into pairs starting from the right. Convert each pair to its corresponding hexadecimal digit (A- F for values 10-15). If there's an odd number of bits, pad with a 0 on the left.
+
+Common mistake note:
+A common mistake is not grouping the binary digits correctly or misinterpreting the resulting pairs.
+------------------------------------------------------------------------------
+
+Problem 6 (DecToBinConversion):
+What is the binary representation of the decimal number 127?
+A) 1111111
+B) 1111011
+C) 1111101
+D) 1111100
+Correct Answer: A
+
+Solution:
+The binary representation of decimal 127 is 1111111.
+
+Explanation:
+To convert a decimal number to binary, repeatedly divide by 2 and write down the remainder until the quotient is 0. Then read the remainders in reverse order. Since 127 is a power of 2 (2^7), it has a simple binary representation with all 1s.
+
+Common mistake note:
+A common mistake is not recognizing that 127 is a power of 2 and trying to perform the division process.
+------------------------------------------------------------------------------
+
+Problem 7 (HexToDecConversion):
+What is the decimal representation of the hexadecimal number 3B?
+A) 59
+B) 60
+C) 61
+D) 62
+Correct Answer: A
+
+Solution:
+The decimal representation of hexadecimal 3B is 59.
+
+Explanation:
+To convert a hexadecimal number to decimal, multiply each hexadecimal digit (A- F) by its corresponding value and sum the results. A = 10, B = 11, C = 12, D = 13, E = 14, F = 15. 3 * 16^1 + 11 * 16^0 = 48 + 11 = 59.
+
+Common mistake note:
+A common mistake is misinterpreting the hexadecimal digits or not properly converting them to decimal values.
+------------------------------------------------------------------------------

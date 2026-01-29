@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.12.15",
+  "objective_text": "Apply to computer networks",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "What is the primary function of a router in a computer network?",
+      "choices": {
+        "A": "To store and retrieve data from the network",
+        "B": "To connect multiple devices on a network and forward data packets between them",
+        "C": "To provide internet connectivity to the network",
+        "D": "To secure the network by filtering incoming and outgoing traffic"
+      },
+      "correct_choice": "B",
+      "solution": "A router connects multiple devices on a network and forwards data packets between them, enabling communication between different networks and managing network traffic.",
+      "explanation": "Routers may contribute to security and provide internet connectivity, but their primary role is connecting devices and forwarding data.",
+      "common_mistake_notes": "Common mistake: Choosing A (store and retrieve data) typically involves servers or storage devices. Choosing C (internet connectivity) can be misleading as routers can function without internet access, focusing on local network communication."
+    },
+    {
+      "id": "?",
+      "stem": "In a client-server architecture, what is the primary role of the client?",
+      "choices": {
+        "A": "To store and process data for multiple users",
+        "B": "To provide services to other devices by running applications",
+        "C": "To request resources or services from the server",
+        "D": "To manage network traffic between devices"
+      },
+      "correct_choice": "C",
+      "solution": "In a client-server architecture, clients primarily request resources or services from the server. The server responds to these requests and provides the required data or service.",
+      "explanation": "Clients initiate communication while servers handle requested tasks. A and B describe server roles, and D is typically the function of a router.",
+      "common_mistake_notes": "Common mistake: Choosing A (store and process data) may混淆 with database or application server roles. Choosing B (provide services) could be misinterpreted as clients request services from servers."
+    },
+    {
+      "id": "?",
+      "stem": "What is the main purpose of using firewalls in computer networks?",
+      "choices": {
+        "A": "To increase network speed by optimizing data transmission",
+        "B": "To provide remote access to devices on the network",
+        "C": "To ensure secure communication by filtering unauthorized traffic",
+        "D": "To distribute network load and balance resources"
+      },
+      "correct_choice": "C",
+      "solution": "Firewalls primarily filter unauthorized traffic, ensuring secure communication between trusted internal networks and untrusted external networks.",
+      "explanation": "Firewalls do not affect network speed, provide remote access, or distribute network load; these functions belong to other networking components.",
+      "common_mistake_notes": "Common mistake: Choosing A (increase network speed) could be a misunderstanding of firewall functionality. Choosing B (remote access) might混淆 with virtual private networks (VPNs)."
+    },
+    {
+      "id": "?",
+      "stem": "Which protocol is used for file transfers in computer networks?",
+      "choices": {
+        "A": "HTTP (Hypertext Transfer Protocol)",
+        "B": "FTP (File Transfer Protocol)",
+        "C": "SMTP (Simple Mail Transfer Protocol)",
+        "D": "TCP (Transmission Control Protocol)"
+      },
+      "correct_choice": "B",
+      "solution": "FTP (File Transfer Protocol) enables uploading, downloading, and managing files between computers in computer networks.",
+      "explanation": "HTTP is for web content, SMTP is for email, and TCP is a transport layer protocol ensuring reliable data transmission.",
+      "common_mistake_notes": "Common mistake: Choosing A (HTTP) could result from confusion with web browsing. Choosing C (SMTP) might happen when considering email attachments."
+    },
+    {
+      "id": "?",
+      "stem": "What technology allows devices to connect wirelessly to a computer network?",
+      "choices": {
+        "A": "Ethernet",
+        "B": "Wi-Fi",
+        "C": "TCP/IP",
+        "D": "SSL/TLS"
+      },
+      "correct_choice": "B",
+      "solution": "Wi-Fi technology enables wireless connections between devices and computer networks, providing convenience and flexibility without the need for physical cables.",
+      "explanation": "Ethernet is a wired networking standard, TCP/IP is a set of protocols for internetwork communication, and SSL/TLS is used for secure data transmission.",
+      "common_mistake_notes": "Common mistake: Choosing A (Ethernet) could混淆 with traditional wired connections. Choosing C (TCP/IP) might happen when thinking about internet connectivity in general."
+    },
+    {
+      "id": "?",
+      "stem": "Which layer of the OSI (Open Systems Interconnection) model is responsible for routing data packets between networks?",
+      "choices": {
+        "A": "Application Layer",
+        "B": "Transport Layer",
+        "C": "Network Layer",
+        "D": "Data Link Layer"
+      },
+      "correct_choice": "C",
+      "solution": "The Network Layer in the OSI model routes data packets between networks, using addressing information and protocols like IP.",
+      "explanation": "The Application Layer deals with user applications, Transport Layer manages end-to-end communication, and Data Link Layer focuses on reliable transmission within a single network segment.",
+      "common_mistake_notes": "Common mistake: Choosing A (Application Layer) could混淆 with high-level services. Choosing B (Transport Layer) might happen when thinking about error-free data transfer."
+    },
+    {
+      "id": "?",
+      "stem": "What is the primary function of a DNS (Domain Name System) server in computer networks?",
+      "choices": {
+        "A": "To translate IP addresses into human-readable domain names",
+        "B": "To provide internet connectivity to devices on the network",
+        "C": "To secure network traffic by encrypting data",
+        "D": "To manage and allocate network resources"
+      },
+      "correct_choice": "A",
+      "solution": "DNS servers translate human-readable domain names into IP addresses, facilitating access to websites and online resources.",
+      "explanation": "DNS servers do not provide internet connectivity, secure traffic, or manage network resources. These functions are performed by other components in the network infrastructure.",
+      "common_mistake_notes": "Common mistake: Choosing B (internet connectivity) could混淆 with routers or modems. Choosing C (secure traffic) might happen when thinking about protocols like HTTPS."
+    }
+  ]
+}

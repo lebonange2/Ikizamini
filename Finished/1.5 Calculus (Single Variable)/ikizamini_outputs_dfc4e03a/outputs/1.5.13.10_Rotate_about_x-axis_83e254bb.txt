@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.13.10 Rotate about x-axis
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.13 Applications of Integrals - Area and Volume
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Just a number):
+What is the angle required to rotate an object around the x-axis by 90 degrees?
+A) 45°
+B) 90°
+C) 180°
+D) 270°
+Correct Answer: B
+
+Solution:
+A rotation of 90 degrees around the x-axis is a quarter turn. Therefore, the correct angle is 90°.
+
+Explanation:
+Rotating an object around the x-axis changes its position along the y and z axes while keeping the x-coordinate unchanged.
+
+Common mistake note:
+Common mistake: Choosing 45° or 180° as they are not a quarter turn. The rotation must be exactly 90 degrees to meet the objective.
+------------------------------------------------------------------------------
+
+Problem 2 (Negative angle):
+What is the equivalent positive angle for rotating an object around the x-axis by -270 degrees?
+A) 90°
+B) 180°
+C) 270°
+D) 360°
+Correct Answer: A
+
+Solution:
+A negative angle can be thought of as a rotation in the opposite direction. To find an equivalent positive angle, add 360 degrees to -270 degrees.
+
+Explanation:
+Rotating an object around the x-axis by -270 degrees is equivalent to rotating it clockwise by 90 degrees since adding 360° brings the object back to its original position along the y and z axes.
+
+Common mistake note:
+Common mistake: Subtracting 270° from 360°, which would result in a positive angle that is not equivalent. Remember to add 360° to convert a negative angle to a positive one.
+------------------------------------------------------------------------------
+
+Problem 3 (Rotate object):
+An object is rotated around the x-axis by an angle of θ. Which of the following statements is true about the object's new position?
+A) The y-coordinate remains unchanged.
+B) The z-coordinate remains unchanged.
+C) Both the y- and z-coordinates remain unchanged.
+D) None of the coordinates remain unchanged.
+Correct Answer: A
+
+Solution:
+When an object is rotated around the x-axis, only the y- and z-coordinates change. The x-coordinate remains constant.
+
+Explanation:
+Rotation around the x-axis affects the position along the y and z axes while keeping the x-coordinate intact.
+
+Common mistake note:
+Common mistake: Choosing B or C, assuming that both y- and z- coordinates remain unchanged. Only the x-coordinate remains constant during a rotation about the x-axis.
+------------------------------------------------------------------------------
+
+Problem 4 (Rotate vector):
+A 2D vector (1, 3) is rotated around the x-axis by 180°. What are the new coordinates of the vector?
+A) (1, -3)
+B) (-1, 3)
+C) (-1, -3)
+D) (3, 1)
+Correct Answer: A
+
+Solution:
+Rotating a vector (1, 3) around the x-axis by 180° will result in a reflection across the x-axis. The y-coordinate changes sign while the x-coordinate remains unchanged.
+
+Explanation:
+When rotating a vector around the x-axis, only the component perpendicular to the axis changes sign.
+
+Common mistake note:
+Common mistake: Choosing B or D, assuming that both coordinates change signs or remain unchanged. Only the y-coordinate should change sign.
+------------------------------------------------------------------------------
+
+Problem 5 (Rotate matrix):
+A 2x2 matrix [[1, 2], [3, 4]] is rotated around the x-axis by 90°. What is the new matrix?
+A) [[-2, -1], [-4, -3]]
+B) [[-1, 2], [-3, 4]]
+C) [[2, 1], [4, 3]]
+D) [[1, -2], [3, -4]]
+Correct Answer: A
+
+Solution:
+Rotating a matrix around the x-axis by 90° is equivalent to swapping rows and columns and negating the elements in the new first column.
+
+Explanation:
+Rotation of matrices can be performed using matrix multiplication with a rotation matrix. For a 90° rotation, the result will have the original second row as the new first row, and the original first row negated as the new second row.
+
+Common mistake note:
+Common mistake: Swapping rows without negating elements or vice versa. Remember to negate the elements in the new first column.
+------------------------------------------------------------------------------
+
+Problem 6 (Rotate 3D object):
+A rectangular prism is rotated around the x-axis by 180°. Which of the following statements is true about its new orientation?
+A) The front face remains facing forward.
+B) The top face remains facing up.
+C) Both the front and top faces remain in their original orientations.
+D) None of the faces maintain their original orientations.
+Correct Answer: D
+
+Solution:
+Rotating a 3D object around the x-axis by 180° will cause all its faces to flip, so none of them will maintain their original orientation.
+
+Explanation:
+A full rotation around any axis results in a complete change in orientation for a 3D object.
+
+Common mistake note:
+Common mistake: Choosing A or B, assuming that certain faces remain unchanged. All faces will flip during a 180° rotation.
+------------------------------------------------------------------------------
+
+Problem 7 (Rotate coordinate system):
+A point P(2, 4, 6) is described in a coordinate system rotated around the x-axis by 45°. What are the new coordinates of point P?
+A) (2, φ, 6)
+B) (2, 4φ, 6)
+C) (2, 4, 6φ)
+D) (2, 4φ, 6φ)
+Correct Answer: B
+
+Solution:
+When the coordinate system is rotated around the x-axis by 45°, the new y and z coordinates can be found using trigonometric functions. The x-coordinate remains unchanged.
+
+Explanation:
+Rotating a coordinate system affects how points are described in that system. To find the new coordinates of a point after rotation, use appropriate trigonometric relationships.
+
+Common mistake note:
+Common mistake: Applying the 45° angle directly to the original coordinates without using trigonometry. Remember to consider the effect of the rotated coordinate system.
+------------------------------------------------------------------------------

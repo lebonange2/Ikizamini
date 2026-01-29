@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.1.1",
+  "objective_text": "Define sets and elements",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "What is a set in mathematics?",
+      "choices": {
+        "A": "A collection of similar items without any specific order.",
+        "B": "An ordered list of unique items.",
+        "C": "A group of numbers arranged in a specific pattern.",
+        "D": "A single item with multiple properties."
+      },
+      "correct_choice": "A",
+      "solution": "A set is a collection of distinct objects, called elements, grouped together without any particular order. Answer A accurately describes this definition.",
+      "explanation": "Sets are unordered and can contain duplicates if specified. Answers B and C describe other mathematical structures (sequences/arrays and patterns respectively), while answer D refers to an individual item rather than a collection.",
+      "common_mistake_notes": "Common mistake is confusing sets with ordered lists (B) or sequences."
+    },
+    {
+      "id": "?",
+      "stem": "Which of the following represents an element of a set?",
+      "choices": {
+        "A": "[1, 2, 3]",
+        "B": "{1, 2, 3}",
+        "C": "(1, 2, 3)",
+        "D": "1"
+      },
+      "correct_choice": "D",
+      "solution": "An element of a set is one of the individual items contained within the set. In this case, '1' is an element. Answer D represents a single item, which can be part of a set.",
+      "explanation": "Sets are represented using curly braces {}, so answers A and C represent lists or tuples, not sets. Answer B is a set containing elements 1, 2, and 3, but '1' is the specific element being asked for.",
+      "common_mistake_notes": "Common mistake is confusing sets with lists/tuples (A, C) or not identifying the individual element (B)."
+    },
+    {
+      "id": "?",
+      "stem": "Which of the following statements about set membership is true?",
+      "choices": {
+        "A": "2 ∉ {1, 3, 5}",
+        "B": "3 ∈ {1, 2, 4}",
+        "C": "1 ∈ {1, 2, 3}",
+        "D": "4 ∉ {1, 2, 3}"
+      },
+      "correct_choice": "C",
+      "solution": "Set membership is denoted by the symbol '∈' for 'belongs to' or 'is an element of'. In this case, 1 is an element of the set {1, 2, 3}. Answer C correctly shows this relationship.",
+      "explanation": "Answer A should be '2 ∈ {1, 3, 5}' because 2 is in that set. Answer B should be '3 ∉ {1, 2, 4}' as 3 is not an element of that set. Answer D should be '4 ∈ {1, 2, 3}' since 4 is not part of the given set.",
+      "common_mistake_notes": "Common mistake is misinterpreting set membership (A, B, D)."
+    },
+    {
+      "id": "?",
+      "stem": "What does it mean when we say 'A ∪ B' in the context of sets?",
+      "choices": {
+        "A": "The intersection of sets A and B.",
+        "B": "The union of sets A and B.",
+        "C": "The difference between sets A and B.",
+        "D": "The Cartesian product of sets A and B."
+      },
+      "correct_choice": "B",
+      "solution": "The symbol '∪' represents the union of two sets, which includes all elements that are either in set A, set B, or both. Answer B correctly identifies this operation.",
+      "explanation": "Answer A refers to intersection (∩), C refers to difference (A - B or B - A), and D refers to the Cartesian product (A × B).",
+      "common_mistake_notes": "Common mistake is confusing union with other set operations (A, C, D)."
+    },
+    {
+      "id": "?",
+      "stem": "What is the result of the operation {1, 2, 3} ∩ {2, 3, 4}?",
+      "choices": {
+        "A": "{1}",
+        "B": "{2, 3}",
+        "C": "{4}",
+        "D": "{1, 2, 3, 4}"
+      },
+      "correct_choice": "B",
+      "solution": "The intersection of two sets includes only the elements that are common to both sets. In this case, {2, 3} is the result because these are the only elements found in both {1, 2, 3} and {2, 3, 4}. Answer B is correct.",
+      "explanation": "Answers A, C, and D include elements that are not shared by both sets. Only answer B contains the intersection of the two sets.",
+      "common_mistake_notes": "Common mistake is including elements not in both sets (A, C, D)."
+    },
+    {
+      "id": "?",
+      "stem": "Which set operation results in a new set containing only elements that are unique to each set?",
+      "choices": {
+        "A": "Union (∪)",
+        "B": "Intersection (∩)",
+        "C": "Difference (A - B or B - A)",
+        "D": "Symmetric difference (A Δ B)"
+      },
+      "correct_choice": "C",
+      "solution": "The difference between two sets, denoted by 'A - B' or 'B - A', results in a new set containing elements that are unique to the first set (A) and not in the second set (B). Answer C is correct.",
+      "explanation": "Union (A ∪ B) combines all elements from both sets. Intersection (A ∩ B) includes only common elements. Symmetric difference (A Δ B) includes elements that are unique to either A or B, but not both.",
+      "common_mistake_notes": "Common mistake is confusing intersection and symmetric difference concepts (B, D)."
+    },
+    {
+      "id": "?",
+      "stem": "What does it mean when we say 'A ⊆ B'?",
+      "choices": {
+        "A": "Set A is a proper subset of set B.",
+        "B": "Set B is a proper subset of set A.",
+        "C": "Sets A and B have no elements in common.",
+        "D": "Sets A and B are equal."
+      },
+      "correct_choice": "A",
+      "solution": "The symbol '⊆' means 'is a subset of'. If we say 'A ⊆ B', it means that every element of set A is also an element of set B. Answer A accurately describes this relationship.",
+      "explanation": "Answer B would be reversed (B ⊆ A), answer C refers to disjoint sets, and answer D refers to equality, which uses the symbol '=' instead of '⊆'.",
+      "common_mistake_notes": "Common mistake is reversing subset relationships (A, B) or confusing with set equality (D)."
+    }
+  ]
+}

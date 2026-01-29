@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.13.13",
+  "objective_text": "Calculate surface area",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the surface area of a cube with sides measuring 5 cm each.",
+      "choices": {
+        "A": "75 cm²",
+        "B": "100 cm²",
+        "C": "150 cm²",
+        "D": "200 cm²"
+      },
+      "correct_choice": "C",
+      "solution": "The surface area of a cube is 6 times the square of one side. For sides of 5 cm, it's 6 * (5 cm)² = 150 cm².",
+      "explanation": "Use the formula A = 6a², where A is the surface area and a is the length of a side. The correct choice applies this formula correctly.",
+      "common_mistake_notes": "A common mistake is to multiply only by the side length (5 cm) instead of squaring it first and then multiplying by 6."
+    },
+    {
+      "id": ":2",
+      "stem": "Calculate the surface area of a cylinder with radius 3 cm and height 8 cm.",
+      "choices": {
+        "A": "113.04 cm²",
+        "B": "150.72 cm²",
+        "C": "226.08 cm²",
+        "D": "314.16 cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The surface area is 2πrh + 2πr², where r is the radius and h is the height. For a cylinder with r = 3 cm and h = 8 cm, it's 2π * 3 cm * 8 cm + 2π * (3 cm)² = 150.72 cm².",
+      "explanation": "Use the formula A = 2πrh + 2πr². The correct choice applies this formula correctly.",
+      "common_mistake_notes": "A common mistake is to forget the top and bottom circles (πr²) in the calculation."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the surface area of a sphere with radius 7 cm.",
+      "choices": {
+        "A": "153.86 cm²",
+        "B": "492.96 cm²",
+        "C": "1131.84 cm²",
+        "D": "3849.84 cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The surface area is 4πr², where r is the radius. For a sphere with r = 7 cm, it's 4π * (7 cm)² = 492.96 cm².",
+      "explanation": "Use the formula A = 4πr². The correct choice applies this formula correctly.",
+      "common_mistake_notes": "A common mistake is to forget to multiply by 4 in the calculation."
+    },
+    {
+      "id": ":4",
+      "stem": "Calculate the surface area of a rectangular prism with length 10 cm, width 6 cm, and height 4 cm.",
+      "choices": {
+        "A": "208 cm²",
+        "B": "240 cm²",
+        "C": "320 cm²",
+        "D": "384 cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The surface area is 2lw + 2lh + 2wh. For a prism with l = 10 cm, w = 6 cm, and h = 4 cm, it's 2 * 10 cm * 6 cm + 2 * 10 cm * 4 cm + 2 * 6 cm * 4 cm = 240 cm².",
+      "explanation": "Use the formula A = 2lw + 2lh + 2wh. The correct choice applies this formula correctly.",
+      "common_mistake_notes": "A common mistake is to add areas of only four faces, neglecting the top and bottom."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the surface area of a cone with radius 4 cm and slant height 6 cm.",
+      "choices": {
+        "A": "100.48 cm²",
+        "B": "125.6 cm²",
+        "C": "150.72 cm²",
+        "D": "175.84 cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The surface area is πrl + πr², where r is the radius and l is the slant height. For a cone with r = 4 cm and l = 6 cm, it's π * 4 cm * 6 cm + π * (4 cm)² = 125.6 cm².",
+      "explanation": "Use the formula A = πrl + πr². The correct choice applies this formula correctly.",
+      "common_mistake_notes": "A common mistake is to forget the curved part (πrl) in the calculation."
+    },
+    {
+      "id": ":6",
+      "stem": "Calculate the surface area of a triangular prism with base length 8 cm, height 5 cm, and triangle height 6 cm.",
+      "choices": {
+        "A": "140 cm²",
+        "B": "160 cm²",
+        "C": "180 cm²",
+        "D": "200 cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The surface area is the sum of two triangle areas and three rectangular faces. For a prism with base length 8 cm, height 5 cm, and triangle height 6 cm, it's 2 * (1/2 * 8 cm * 5 cm) + 2 * 8 cm * 6 cm + 5 cm * 6 cm = 140 cm².",
+      "explanation": "Use the formula A = 2A_{triangle} + 2lw + lh, where A_{triangle} is the area of a triangle. The correct choice applies this formula correctly.",
+      "common_mistake_notes": "A common mistake is to forget to multiply the base length by the triangle height when calculating the triangle areas."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the surface area of a rectangular pyramid with length 12 cm, width 8 cm, and height 10 cm.",
+      "choices": {
+        "A": "352 cm²",
+        "B": "440 cm²",
+        "C": "528 cm²",
+        "D": "616 cm²"
+      },
+      "correct_choice": "C",
+      "solution": "The surface area is the base area plus 1/2 * (perimeter of the base) * slant height. For a pyramid with l = 12 cm, w = 8 cm, and h = 10 cm, it's 12 cm * 8 cm + 1/2 * (24 cm + 16 cm + 16 cm) * 10 cm = 528 cm².",
+      "explanation": "Use the formula A = B + 1/2P_{base}l_{slant}, where B is the base area and P_{base} is the perimeter of the base. The correct choice applies this formula correctly.",
+      "common_mistake_notes": "A common mistake is to forget the lateral face area (1/2 * P_{base} * l_{slant}) in the calculation."
+    }
+  ]
+}

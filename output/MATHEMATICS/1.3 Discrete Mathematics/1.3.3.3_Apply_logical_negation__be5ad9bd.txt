@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.3.3 Apply logical negation (¬)
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.3 Logic and Propositions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+What is the result of ¬(true)?
+A) false
+B) true
+C) unknown
+D) not applicable
+Correct Answer: A
+
+Solution:
+The logical negation of true is false.
+
+Explanation:
+Logical negation inverts the truth value of a statement. When applied to true, it becomes false.
+
+Common mistake note:
+Common mistake: Choosing B (true). This fails because negating a true statement results in false.
+------------------------------------------------------------------------------
+
+Problem 2 (Qwer):
+What is the result of ¬(false)?
+A) true
+B) false
+C) unknown
+D) not applicable
+Correct Answer: A
+
+Solution:
+The logical negation of false is true.
+
+Explanation:
+Logical negation inverts the truth value of a statement. When applied to false, it becomes true.
+
+Common mistake note:
+Common mistake: Choosing B (false). This fails because negating a false statement results in true.
+------------------------------------------------------------------------------
+
+Problem 3 (Zxcv):
+What is the result of ¬(unknown)?
+A) known
+B) unknown
+C) true
+D) false
+Correct Answer: B
+
+Solution:
+The logical negation of unknown does not change its value.
+
+Explanation:
+Logical operations do not alter the truth value of 'unknown' or indeterminate values.
+
+Common mistake note:
+Common mistake: Choosing A (known). This fails because negating an unknown value does not make it known.
+------------------------------------------------------------------------------
+
+Problem 4 (Bnml):
+What is the result of ¬('not applicable')?
+A) applicable
+B) not applicable
+C) true
+D) false
+Correct Answer: B
+
+Solution:
+The logical negation of 'not applicable' does not change its meaning.
+
+Explanation:
+Logical operations do not apply to non-boolean or non-truth-functional statements like 'not applicable'.
+
+Common mistake note:
+Common mistake: Choosing A (applicable). This fails because negating a statement that is not applicable doesn't make it applicable.
+------------------------------------------------------------------------------
+
+Problem 5 (Ghjk):
+Which of the following represents the negation of 'If it's raining, then I'll stay home.'?
+A) It's raining and I'll stay home.
+B) It's not raining or I'll stay home.
+C) It's not raining and I won't stay home.
+D) It's raining or I won't stay home.
+Correct Answer: C
+
+Solution:
+The negation of a conditional statement switches the antecedent and consequent and inverts their truth values.
+
+Explanation:
+The contrapositive form of the given conditional is 'If it's not raining, then I won't stay home.'
+
+Common mistake note:
+Common mistake: Choosing B (It's not raining or I'll stay home). This fails because it's the inclusive disjunction, not the negation.
+------------------------------------------------------------------------------
+
+Problem 6 (Uyti):
+What is the result of ¬(p ∧ q)?
+A) ¬p ∧ q
+B) p ∧ ¬q
+C) ¬p ∨ ¬q
+D) p ∨ q
+Correct Answer: C
+
+Solution:
+The negation of a conjunction (AND) is equivalent to the disjunction (OR) of the negations.
+
+Explanation:
+De Morgan's law states that the negation of a conjunction is equal to the disjunction of the negated terms.
+
+Common mistake note:
+Common mistake: Choosing B (p ∧ ¬q). This fails because it only negates one term, not both.
+------------------------------------------------------------------------------
+
+Problem 7 (Rtfg):
+What is the result of ¬(p ∨ q)?
+A) ¬p ∨ q
+B) p ∨ ¬q
+C) ¬p ∧ ¬q
+D) p ∧ q
+Correct Answer: C
+
+Solution:
+The negation of a disjunction (OR) is equivalent to the conjunction (AND) of the negations.
+
+Explanation:
+De Morgan's law states that the negation of a disjunction is equal to the conjunction of the negated terms.
+
+Common mistake note:
+Common mistake: Choosing A (¬p ∨ q). This fails because it only negates one term, not both.
+------------------------------------------------------------------------------

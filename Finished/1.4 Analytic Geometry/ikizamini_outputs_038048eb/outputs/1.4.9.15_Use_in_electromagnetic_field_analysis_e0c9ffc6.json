@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.9.15",
+  "objective_text": "Use in electromagnetic field analysis",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "AsdFgHjK",
+      "stem": "What is the primary function of Maxwell's equations in electromagnetic field analysis?",
+      "choices": {
+        "A": "Calculating the force between two charges",
+        "B": "Describing the behavior of electric and magnetic fields",
+        "C": "Determining the speed of light in a vacuum",
+        "D": "Explaining the photoelectric effect"
+      },
+      "correct_choice": "B",
+      "solution": "Maxwell's equations describe how electric and magnetic fields are generated and altered by each other and by charges. They form the foundation for analyzing electromagnetic fields.",
+      "explanation": "Maxwell's equations do relate to some of the other concepts mentioned, such as the speed of light (which is derived from them) and the behavior of charges, but their primary function in electromagnetic field analysis is to describe the fields themselves.",
+      "common_mistake_notes": "Common mistake: Choosing A, which refers to Coulomb's law, not Maxwell's equations. Choice C might be tempting but it's a result derived from Maxwell's equations."
+    },
+    {
+      "id": "XyzPqRsT",
+      "stem": "In electromagnetic field analysis, what is the relationship between electric fields (E) and magnetic fields (B) according to Faraday's law?",
+      "choices": {
+        "A": "E is proportional to B squared",
+        "B": "The curl of E equals the negative time derivative of B",
+        "C": "E is inversely proportional to the distance from a charge",
+        "D": "The divergence of B equals zero"
+      },
+      "correct_choice": "B",
+      "solution": "Faraday's law states that the curl of the electric field is equal to the negative rate of change of the magnetic field with respect to time. This relationship describes how a changing magnetic field induces an electric field.",
+      "explanation": "Choice A and C refer to other concepts in electromagnetism (Einstein's mass-energy equivalence and Coulomb's law, respectively), while choice D is related to Gauss' law for magnetism, which states that the divergence of B is zero in regions without magnetic monopoles.",
+      "common_mistake_notes": "Common mistake: Choosing C, which describes the relationship between electric fields and charges, not Faraday's law."
+    },
+    {
+      "id": "BvnCmkLp",
+      "stem": "Which of the following Maxwell's equations relates the divergence of the electric field to the charge density?",
+      "choices": {
+        "A": "Gauss' law for magnetism",
+        "B": "Ampère's circuital law with Maxwell's addition",
+        "C": "Faraday's law of electromagnetic induction",
+        "D": "Gauss' law for electricity"
+      },
+      "correct_choice": "D",
+      "solution": "Gauss' law for electricity states that the electric flux through a closed surface is proportional to the total charge enclosed within the surface. This equation connects the divergence of E with the charge density.",
+      "explanation": "Choice A refers to the divergence of B being zero, choice B deals with currents and magnetic fields, and choice C describes how a changing magnetic field induces an electric field.",
+      "common_mistake_notes": "Common mistake: Choosing B, which involves currents and the magnetic field, not charge density."
+    },
+    {
+      "id": "QweRtyUi",
+      "stem": "What is the relationship between the curl of the magnetic field and the current density in Ampère's circuital law?",
+      "choices": {
+        "A": "The curl of B is equal to zero",
+        "B": "The curl of B is proportional to the time derivative of the electric field",
+        "C": "The curl of B is equal to the current density multiplied by a constant",
+        "D": "The curl of B is equal to the sum of the electric and magnetic fields"
+      },
+      "correct_choice": "C",
+      "solution": "Ampère's circuital law states that the curl of the magnetic field is proportional to the current density, with a proportionality constant (the permeability of free space). This equation describes how currents generate magnetic fields.",
+      "explanation": "Choice A refers to regions without magnetic monopoles, choice B relates to Faraday's law, and choice D is not a correct relationship in electromagnetism.",
+      "common_mistake_notes": "Common mistake: Choosing A, which applies to regions without magnetic monopoles but does not describe the relationship between B and current density."
+    },
+    {
+      "id": "ZxcVbnMm",
+      "stem": "In electromagnetic field analysis, how do Maxwell's equations account for the propagation of electromagnetic waves?",
+      "choices": {
+        "A": "By showing that electric and magnetic fields are always in phase",
+        "B": "By demonstrating that electric fields can generate magnetic fields and vice versa",
+        "C": "By proving that the speed of light is constant in all reference frames",
+        "D": "By relating the time-derivative of the electric field to the curl of the magnetic field"
+      },
+      "correct_choice": "D",
+      "solution": "Maxwell's equations, specifically Faraday's law and Ampère's circuital law with Maxwell's addition, when combined with the wave equation, show that electric and magnetic fields oscillate in phase and propagate at the speed of light. The relationship between the time-derivative of E and the curl of B is key to this.",
+      "explanation": "Choice A refers to a property of electromagnetic waves but does not explain how they propagate. Choice B describes a general behavior of fields, choice C is related to Einstein's theory of relativity, not Maxwell's equations.",
+      "common_mistake_notes": "Common mistake: Choosing B, which is true but does not specifically address the propagation of waves."
+    },
+    {
+      "id": "KjHgFdgE",
+      "stem": "What role do time-variant fields play in electromagnetic field analysis?",
+      "choices": {
+        "A": "They are irrelevant to static field analysis",
+        "B": "They only appear in materials with non-zero magnetic permeability",
+        "C": "They are essential for understanding wave phenomena and radiation",
+        "D": "They represent the steady-state response of a system"
+      },
+      "correct_choice": "C",
+      "solution": "Time-variant fields are crucial for analyzing electromagnetic waves, radiation, and other dynamic phenomena. They describe how fields change over time and interact with each other.",
+      "explanation": "Choice A is incorrect because time-variant fields are essential in many situations. Choice B refers to a specific case where magnetic fields can be induced, not all scenarios. Choice D describes steady-state conditions, which are different from time-variant fields.",
+      "common_mistake_notes": "Common mistake: Choosing A, thinking that static field analysis does not involve time-variant fields."
+    },
+    {
+      "id": "BnmLkjIh",
+      "stem": "Which of the following Maxwell's equations describes the conservation of electric charge?",
+      "choices": {
+        "A": "Gauss' law for magnetism",
+        "B": "Faraday's law of electromagnetic induction",
+        "C": "Ampère's circuital law with Maxwell's addition",
+        "D": "Gauss' law for electricity"
+      },
+      "correct_choice": "D",
+      "solution": "Gauss' law for electricity states that the net electric flux through a closed surface is equal to the total charge enclosed within the surface. This equation demonstrates the conservation of electric charge.",
+      "explanation": "Choice A deals with magnetic fields and has no direct connection to charge conservation, choice B describes how changing magnetic fields induce electric fields, and choice C relates magnetic fields to currents.",
+      "common_mistake_notes": "Common mistake: Choosing C, which involves currents but does not describe charge conservation."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.6.13 Apply complex integration basics
+==============================================================================
+Difficulty profile: easy→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Q1):
+Evaluate the integral of \( f(z) = z^2 \) over the path \( C \), where \( C \) is the line segment from \( z = 0 \) to \( z = 1 + i \).
+A) 1 + i
+B) 1 + 2i
+C) -i
+D) 0
+Correct Answer: A
+
+Solution:
+The integral is \( \int_C z^2 \, dz = \int_0^{1+i} (x+iy)^2 \, dz \). Parametrize \( z = t + it \) for \( t \) from 0 to 1. Then \( dz = (1+i) dt \). The integral becomes \( \int_0^1 (t+it)^2 (1+i) \ dt = \int_0^1 t^2 (1+2i) dt = \frac{(1+2i)}{3} \), which evaluates to \( 1+i \).
+
+Explanation:
+Parametrization and substitution allow evaluating the line integral directly.
+
+Common mistake note:
+A common mistake is to confuse the parametrization or incorrectly compute \( dz \), resulting in wrong integrals.
+------------------------------------------------------------------------------
+
+Problem 2 (Q2):
+Evaluate the contour integral \( \int_C \frac{1}{z} \, dz \) where \( C \) is the unit circle \( |z| = 1 \).
+A) 0
+B) 2\pi i
+C) i
+D) \pi i
+Correct Answer: B
+
+Solution:
+By the Cauchy Integral Theorem, \( \int_C \frac{1}{z} \, dz = 2\pi i \). This is because \( \frac{1}{z} \) has a simple pole at the origin, which is inside the contour \( C \).
+
+Explanation:
+Use the residue theorem or Cauchy's integral formula for single poles to evaluate integrals easily.
+
+Common mistake note:
+Assuming the integral is zero due to misapplying the theorem ignoring the pole at the origin.
+------------------------------------------------------------------------------
+
+Problem 3 (Q3):
+Compute \( \int_C e^z \, dz \) where \( C \) is the semicircle from \( -i \) to \( i \).
+A) e^{i} - e^{-i}
+B) 2i
+C) 0
+D) i(e^{-1} + e)
+Correct Answer: C
+
+Solution:
+\( \int_C e^z \, dz = 0 \) because any entire function (like \( e^z \)) over a closed curve has an integral of zero due to the Cauchy Integral Theorem.
+
+Explanation:
+Entire functions over closed paths yield zero integrals by Cauchy's Theorem.
+
+Common mistake note:
+Forgetting the function \( e^z \) is entire could lead to incorrect non-zero calculations.
+------------------------------------------------------------------------------
+
+Problem 4 (Q4):
+Find the value of \( \int_{|z|=2} \frac{dz}{z^2 - 1} \).
+A) 0
+B) \pi i
+C) 2\pi i
+D) \frac{\pi i}{2}
+Correct Answer: B
+
+Solution:
+The function has simple poles at \( z = 1 \) and \( z = -1 \). Both are inside \( |z|=2 \). The residue at \( z=1 \) is \( \frac{1}{2} \), and at \( z=-1 \) is also \( \frac{1}{2} \). Thus, the integral is \( 2\pi i (\frac{1}{2} + \frac{1}{2}) = 2\pi i \).
+
+Explanation:
+Residues at singularities inside the contour sum to give the integral via the residue theorem.
+
+Common mistake note:
+Neglecting a pole or computing residues incorrectly can lead to zero or wrong integrals.
+------------------------------------------------------------------------------
+
+Problem 5 (Q5):
+Evaluate the integral \( \int_C (z - 2) e^z \, dz \) where \( C \) is a circle of radius 3 centered at the origin.
+A) 0
+B) 6\pi i
+C) 9\pi i
+D) 2\pi ie^2
+Correct Answer: A
+
+Solution:
+Since \( (z - 2) e^z \) is entire (analytic everywhere), the contour integral around any closed path is zero by Cauchy's theorem.
+
+Explanation:
+Integral of an entire function over a closed path is zero.
+
+Common mistake note:
+A misconception is to consider the function non-entire due to a perceived pole.
+------------------------------------------------------------------------------
+
+Problem 6 (Q6):
+Evaluate \( \int_C \overline{z} \, dz \), where \( C \) is the unit circle \( |z| = 1 \).
+A) 0
+B) \pi i
+C) 2\pi i
+D) -2\pi i
+Correct Answer: D
+
+Solution:
+Use \( \overline{z} = \frac{1}{z} \) on the unit circle, so \( \int_C \overline{z} \, dz = \int_C \frac{1}{z} \, dz = -2\pi i \) by reversing orientation (negative of the standard result).
+
+Explanation:
+\( \overline{z} \) on \( |z|=1 \) is \( \frac{1}{z} \), reversing orientation gives \( -2\pi i \).
+
+Common mistake note:
+Forgetting the reversal due to \( \overline{z} \) could lead to a positive result.
+------------------------------------------------------------------------------
+
+Problem 7 (Q7):
+Determine \( \int_C \frac{1}{(z-1)^2} \, dz \) where \( C \) is the circle \( |z-1| = 2 \).
+A) 0
+B) 2\pi i
+C) -2\pi i
+D) 4\pi i
+Correct Answer: A
+
+Solution:
+The point \( z = 1 \) is outside the path \( |z-1|=2 \), hence by Cauchy's theorem, the integral over this path is 0.
+
+Explanation:
+If the singularity is outside the contour, the integral is 0 by Cauchy's theorem.
+
+Common mistake note:
+Failing to verify whether a singularity is inside or outside the path can lead to incorrect non-zero integrals.
+------------------------------------------------------------------------------

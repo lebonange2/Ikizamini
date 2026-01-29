@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.12.11",
+  "objective_text": "Calculate contour integrals",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Evaluate the contour integral of f(z) = z^2 dz along the unit circle |z| = 1, counterclockwise.",
+      "choices": {
+        "A": "π",
+        "B": "0",
+        "C": "-π",
+        "D": "2π"
+      },
+      "correct_choice": "B",
+      "solution": "The contour integral of a function f(z) around a closed curve C is given by Φ_C f(z) dz. For the unit circle |z| = 1, we parametrize z as z(t) = e^(it), where t ranges from 0 to 2π. The integral becomes Φ_0^(2π) (e^(it))^2 * i e^(it) dt = Φ_0^(2π) i e^(3it) dt. Integrating this, we get (-1/3)e^(3it)|_0^(2π) = 0 because the exponential function evaluates to 1 and -1 at the limits.",
+      "explanation": "The integral of an odd power of cosine or sine over a full period is zero.",
+      "common_mistake_notes": "A common mistake would be to integrate z^2 without considering the differential dz. Another mistake might be forgetting to convert from rectangular to polar coordinates."
+    },
+    {
+      "id": "2",
+      "stem": "Calculate the contour integral of f(z) = 1/z dz along the semicircle C with center at origin, radius R (R > 0), and lying in the upper half-plane, counterclockwise.",
+      "choices": {
+        "A": "πi",
+        "B": "0",
+        "C": "-πi",
+        "D": "(π/2)i"
+      },
+      "correct_choice": "A",
+      "solution": "The contour integral of f(z) = 1/z dz along a semicircle in the upper half-plane can be split into two parts: one along the real axis from -R to R and another along the semicircle. The integral along the real axis is zero because of Cauchy's theorem (or by direct integration). For the semicircle, we parametrize z as z(t) = Re^(it), where t ranges from 0 to π. The integral becomes Φ_0^π (Ri e^(it)) / (Re^(it)) dt = Φ_0^π i dt = πi.",
+      "explanation": "The residue theorem or Cauchy's integral formula can be used to evaluate this contour integral.",
+      "common_mistake_notes": "A common mistake would be to forget that the semicircle contributes only to the integral along the imaginary axis, and not along the real axis."
+    },
+    {
+      "id": "3",
+      "stem": "Evaluate Φ_C (z^2 + 1) dz where C is the circle |z - 2| = 3, counterclockwise.",
+      "choices": {
+        "A": "4πi",
+        "B": "0",
+        "C": "8πi",
+        "D": "-4πi"
+      },
+      "correct_choice": "C",
+      "solution": "Parametrize z as z(t) = 2 + 3e^(it), where t ranges from 0 to 2π. The integral becomes Φ_0^(2π) ((2+3e^(it))^2 + 1) (3i e^(it)) dt = Φ_0^(2π) (9e^(2it) + 12ie^(it) + 5) (3i e^(it)) dt. Integrating, we get -27/2 e^(3it)|_0^(2π) + 36/3 e^(2it)|_0^(2π) - 15/2 e^(it)|_0^(2π) = 8πi.",
+      "explanation": "The integral is evaluated by substituting the parametrization of z into the function and integrating over t.",
+      "common_mistake_notes": "A common mistake would be to forget to substitute the correct expression for z in terms of t, or to integrate the polynomial incorrectly."
+    },
+    {
+      "id": "4",
+      "stem": "Calculate Φ_C (1/(z^2 + 1)) dz where C is a circle centered at origin with radius 2, counterclockwise.",
+      "choices": {
+        "A": "0",
+        "B": "πi",
+        "C": "-πi",
+        "D": "2πi"
+      },
+      "correct_choice": "B",
+      "solution": "The function f(z) = 1/(z^2 + 1) has a simple pole at z = i. By the residue theorem, the integral is 2πi * Res(f, i) = 2πi * (1/(-2i)) = πi.",
+      "explanation": "The residue theorem can be used to evaluate this contour integral by finding the residue of f(z) at the pole inside the contour.",
+      "common_mistake_notes": "A common mistake would be to try to integrate directly without considering the residue theorem or the presence of a pole."
+    },
+    {
+      "id": "5",
+      "stem": "Evaluate Φ_C (z^3 + 2z) dz where C is the straight line segment from -1 to 1, counterclockwise.",
+      "choices": {
+        "A": "0",
+        "B": "1/4",
+        "C": "1/2",
+        "D": "3/4"
+      },
+      "correct_choice": "A",
+      "solution": "The integral along a straight line can be evaluated by converting to rectangular coordinates. Let z = x + 0i, where x ranges from -1 to 1. The integral becomes Φ_-1^1 (x^3 + 2x) dx = [x^4/4 + x^2]|_-1^1 = 0.",
+      "explanation": "The integral of an odd function over a symmetric interval is zero.",
+      "common_mistake_notes": "A common mistake would be to forget that the integral of an odd function over a symmetric interval is zero, or to integrate incorrectly."
+    },
+    {
+      "id": "6",
+      "stem": "Calculate Φ_C (e^z) dz where C is the rectangle with vertices at -1 + i, 1 + i, 1 - i, and -1 - i, counterclockwise.",
+      "choices": {
+        "A": "0",
+        "B": "πi",
+        "C": "4πi",
+        "D": "6πi"
+      },
+      "correct_choice": "A",
+      "solution": "The function f(z) = e^z is entire (analytic everywhere), so by Cauchy's integral theorem, the contour integral around a closed curve is zero.",
+      "explanation": "Cauchy's integral theorem states that the integral of an analytic function over a simple closed curve is zero.",
+      "common_mistake_notes": "A common mistake would be to try to integrate directly without considering the properties of the function or the theorem."
+    },
+    {
+      "id": "7",
+      "stem": "Evaluate Φ_C (z^2 - 3z + 2)/(z - 1) dz where C is a circle centered at origin with radius 4, counterclockwise.",
+      "choices": {
+        "A": "0",
+        "B": "πi",
+        "C": "4πi",
+        "D": "6πi"
+      },
+      "correct_choice": "B",
+      "solution": "The function f(z) = (z^2 - 3z + 2)/(z - 1) has a simple pole at z = 1. By the residue theorem, the integral is 2πi * Res(f, 1) = 2πi * (1 - 3 + 2) = 2πi.",
+      "explanation": "The residue theorem can be used to evaluate this contour integral by finding the residue of f(z) at the pole inside the contour.",
+      "common_mistake_notes": "A common mistake would be to try to integrate directly without considering the residue theorem or the presence of a pole."
+    }
+  ]
+}

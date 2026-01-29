@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.8.11",
+  "objective_text": "Apply polar equations of conics",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Which polar equation represents a circle with radius 3 centered at the pole?",
+      "choices": {
+        "A": "\\rho = 3\\theta",
+        "B": "\\rho^2 = 9\\theta",
+        "C": "\\rho = 3",
+        "D": "\\rho^2 = 9"
+      },
+      "correct_choice": "C",
+      "solution": "The general form of a polar equation for a circle centered at the pole is \\rho = r, where 'r' is the radius. Therefore, the correct equation is \\rho = 3.",
+      "explanation": "A circle with its center at the origin (pole) has no angular dependence in its polar equation. Choice A and B have an angular term (\\theta), which indicates they represent non-circular curves. Choice D represents a parabola rather than a circle because it is in the form of \\rho^2 = ar^2.",
+      "common_mistake_notes": "Common mistake: Choosing (A) or (B) due to confusion with parametric equations for circles, which involve both r and \\theta. Remember that polar equations for circles at the origin do not have an angular term."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the equation of the hyperbola in polar form if its focus is at the pole and has a distance of 4 from the directrix, with eccentricity 2?",
+      "choices": {
+        "A": "\\rho = \\frac{8}{1 + 2\\theta}",
+        "B": "\\rho = \\frac{4}{2 - \\theta}",
+        "C": "\\rho = \\frac{4}{1 + 2\\theta}",
+        "D": "\\rho = \\frac{8}{2 - \\theta}"
+      },
+      "correct_choice": "C",
+      "solution": "The polar form of a hyperbola with focus at the pole is given by \\rho = \\frac{ep}{1 - e\\text{cos}\\theta}, where 'e' is the eccentricity and 'p' is half the distance between the focus and directrix. Given e = 2 and p = 4/2 = 2, we substitute to get \\rho = \\frac{2 \times 2}{1 - 2\\text{cos}\\theta} = \\frac{4}{1 - 2\\text{cos}\\theta}. However, since the directrix is at a distance of 4 from the focus, we have cos(\\theta) = (distance to focus)/(distance to directrix) = -1/2. Thus, the equation simplifies to \\rho = \\frac{4}{1 + 2\\theta}.",
+      "explanation": "Choice A has an incorrect eccentricity term, and choice B uses the wrong form for a hyperbola with the focus at the pole. Choice D uses the wrong distance in the denominator.",
+      "common_mistake_notes": "Common mistake: Confusing the directrix distance with the focus distance or not accounting for the sign change when calculating cos(\\theta). Remember that the directrix is farther from the origin than the focus, so cos(\\theta) will be negative."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which polar equation represents a parabola opening upwards with vertex at the pole?",
+      "choices": {
+        "A": "\\rho = 2\\text{sin}\\theta",
+        "B": "\\rho = 2\\text{cos}\\theta",
+        "C": "\\rho^2 = 4\\text{sin}\\theta",
+        "D": "\\rho^2 = 4\\text{cos}\\theta"
+      },
+      "correct_choice": "C",
+      "solution": "The general form of a parabola opening upwards with vertex at the pole in polar coordinates is \\rho^2 = 4ap, where 'a' is the distance from the focus to the directrix. Since we have no information about 'a', we can only consider the shape and not the specific value of 'p'. The correct form for a parabola opening upwards is given by \\rho^2 = 4\\text{sin}\\theta.",
+      "explanation": "Choice A represents a parabola opening downwards, choice B represents an ellipse, and choice D represents a hyperbola. Only choice C matches the required characteristics of a parabola opening upwards with vertex at the pole.",
+      "common_mistake_notes": "Common mistake: Choosing (A) or (B) due to confusion between parabolas and ellipses in polar coordinates. Remember that for a parabola, the equation has \\rho^2 on one side and a trigonometric function raised to the power of 1 on the other side."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the equation of the ellipse in polar form if its major axis is along the horizontal direction and has a semi-major axis of 3, while the semi-minor axis is half the length of the semi-major axis?",
+      "choices": {
+        "A": "\\rho = \\frac{6}{1 + 0.5\\text{cos}\\theta}",
+        "B": "\\rho = \\frac{9}{1 - 0.5\\text{sin}\\theta}",
+        "C": "\\rho = \\frac{3}{1 + 0.5\\text{cos}\\theta}",
+        "D": "\\rho = \\frac{6}{1 - 0.5\\text{sin}\\theta}"
+      },
+      "correct_choice": "C",
+      "solution": "The polar form of an ellipse with the major axis along the horizontal direction is given by \\rho = \\frac{ab}{b + a\\text{cos}\\theta}, where 'a' is the semi-major axis and 'b' is the semi-minor axis. Given a = 3 and b = 3/2, we substitute to get \\rho = \\frac{3 \times (3/2)}{(3/2) + 3\\text{cos}\\theta} = \\frac{9}{3 + 6\\text{cos}\\theta}. Simplifying this expression gives us the correct equation: \\rho = \\frac{3}{1 + 2\\text{cos}\\theta}.",
+      "explanation": "Choice A has an incorrect semi-minor axis value, choice B uses the wrong form for an ellipse, and choice D uses the wrong trigonometric function. Only choice C correctly represents an ellipse with the given characteristics.",
+      "common_mistake_notes": "Common mistake: Mixing up the formulas for ellipses and hyperbolas in polar coordinates or not simplifying the equation properly. Remember that for an ellipse, the denominator has a single term (a + b\\text{cos}\\theta) rather than two terms like in a hyperbola."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the eccentricity of the conic represented by the polar equation \\rho = 6\\text{sin}(2\\theta)?",
+      "choices": {
+        "A": "\\frac{1}{2}",
+        "B": "\\frac{\\sqrt{3}}{2}",
+        "C": "\\frac{\\sqrt{2}}{2}",
+        "D": "1"
+      },
+      "correct_choice": "D",
+      "solution": "The given polar equation is in the form of \\rho = r\\text{sin}(n\\theta), which represents a rose curve. For a rose curve, the eccentricity is 1 regardless of the values of 'r' and 'n'. Therefore, the eccentricity of this conic is 1.",
+      "explanation": "Choice A, B, and C represent ellipses with different eccentricities, but they do not match the given equation. Only choice D correctly identifies the eccentricity for a rose curve.",
+      "common_mistake_notes": "Common mistake: Assuming that the eccentricity can be determined from the standard forms of conics like circles, ellipses, or hyperbolas. Remember that rose curves' (rose curves) eccentricity is always 1, regardless of 'r' and 'n' values."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which polar equation represents a cardioid with a cusp at the pole?",
+      "choices": {
+        "A": "\\rho = 2(1 + \\text{cos}\\theta)",
+        "B": "\\rho = 2(1 - \\text{sin}\\theta)",
+        "C": "\\rho = 2(1 + \\text{sin}\\theta)",
+        "D": "\\rho = 2(1 - \\text{cos}\\theta)"
+      },
+      "correct_choice": "A",
+      "solution": "The polar equation for a cardioid with a cusp at the pole is given by \\rho = 2a(1 + \\text{cos}\\theta), where 'a' is a constant. The correct equation in this case is \\rho = 2(1 + \\text{cos}\\theta) since 'a' is assumed to be 1.",
+      "explanation": "Choice B represents a limaçon, choice C represents an epicycloid with one cusp, and choice D represents a lemniscate. Only choice A correctly represents a cardioid with a cusp at the pole.",
+      "common_mistake_notes": "Common mistake: Confusing the polar equations for different types of curves like limaçons, epicycloids, or lemniscates. Remember that cardioids' (cardioids) equation is \\rho = 2a(1 + \\text{cos}\\theta), where 'a' is a constant."
+    },
+    {
+      "id": "Asdf",
+      "stem": "What is the equation of the hyperbola in polar form if its asymptotes make an angle of 60 degrees with the horizontal axis and has a focus at the pole?",
+      "choices": {
+        "A": "\\rho = \\frac{4}{\\text{cos}(3\\theta)}",
+        "B": "\\rho = \\frac{4}{\\text{sin}(3\\theta)}",
+        "C": "\\rho = 4\\text{tan}(3\\theta)",
+        "D": "\\rho = 4\\text{cot}(3\\theta)"
+      },
+      "correct_choice": "D",
+      "solution": "The polar form of a hyperbola with asymptotes making an angle 'α' with the horizontal axis and focus at the pole is given by \\rho = \\frac{ep}{\\text{cos}(α - θ)} or \\rho = \\frac{ep}{\\text{sin}(θ - α)}, where 'e' is the eccentricity and 'p' is half the distance between the focus and directrix. Since we have no information about 'e' or 'p', we can only consider the shape and not the specific values of these parameters. The correct form for a hyperbola with given asymptotes is \\rho = 4\\text{cot}(3θ) because cotangent is used when the asymptotes are above and below the horizontal axis.",
+      "explanation": "Choice A and B use sine instead of cosine, which is incorrect for hyperbolas. Choice C represents a curve with no asymptotes (it's a rectangular hyperbola), not an ordinary hyperbola with given characteristics. Only choice D correctly represents a hyperbola with the specified asymptotes.",
+      "common_mistake_notes": "Common mistake: Confusing the trigonometric functions used for hyperbolas with different orientations of their asymptotes. Remember that when the asymptotes are above and below the horizontal axis, use cotangent; when they're to the left and right, use tangent."
+    }
+  ]
+}

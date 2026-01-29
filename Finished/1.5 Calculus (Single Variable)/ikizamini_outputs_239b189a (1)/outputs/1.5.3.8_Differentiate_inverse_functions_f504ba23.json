@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.3.8",
+  "objective_text": "Differentiate inverse functions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "The inverse of the function f(x) = x^2 + 1 is g(x). What is the value of g(5)?",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "√4"
+      },
+      "correct_choice": "D",
+      "solution": "The inverse of f(x) = x^2 + 1 can be found by solving for x in terms of y: y = x^2 + 1. To find g(5), set y = 5 and solve for x. 5 = x^2 + 1 => x^2 = 4 => x = √4 (positive value only). So, g(5) = √4.",
+      "explanation": "The inverse of a quadratic function like f(x) typically involves taking the square root and swapping x and y variables.",
+      "common_mistake_notes": "A common mistake is to forget that the inverse function discards the negative solution when dealing with square roots."
+    },
+    {
+      "id": "Bghj",
+      "stem": "Given the functions f(x) = 2x - 3 and its inverse g(x), what is the value of g(7)?",
+      "choices": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "correct_choice": "C",
+      "solution": "To find g(7), solve f(x) = 7 for x. 7 = 2x - 3 => 10 = 2x => x = 5. So, g(7) = 5.",
+      "explanation": "For linear functions, finding the inverse is straightforward: swap x and y and solve for y.",
+      "common_mistake_notes": "A common mistake is to forget to swap x and y when finding the inverse of a linear function."
+    },
+    {
+      "id": "Qwer",
+      "stem": "The function h(x) = 3x + 1 has an inverse, h^(-1)(x). What is the value of h^(-1)(5)?",
+      "choices": {
+        "A": "2",
+        "B": "4/3",
+        "C": "5/3",
+        "D": "6"
+      },
+      "correct_choice": "C",
+      "solution": "To find h^(-1)(5), solve h(x) = 5 for x. 5 = 3x + 1 => 4 = 3x => x = 4/3. So, h^(-1)(5) = 4/3.",
+      "explanation": "For linear functions, finding the inverse is straightforward: swap x and y and solve for y.",
+      "common_mistake_notes": "A common mistake is to forget to swap x and y when finding the inverse of a linear function."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "Given f(x) = 2^(x+1), what is its inverse, f^(-1)(x)?",
+      "choices": {
+        "A": "log_2(x) - 1",
+        "B": "log_2(x + 1)",
+        "C": "log_2(x/2) - 1",
+        "D": "log_2(x) + 1"
+      },
+      "correct_choice": "D",
+      "solution": "To find the inverse of f(x), set y = 2^(x+1) and solve for x. y = 2^(x+1) => log_2(y) = x+1 => x = log_2(y) - 1. So, f^(-1)(x) = log_2(x) + 1.",
+      "explanation": "For exponential functions with base 2, the inverse involves taking the logarithm with base 2 and adjusting the terms accordingly.",
+      "common_mistake_notes": "A common mistake is to forget to adjust the terms when finding the inverse of an exponential function."
+    },
+    {
+      "id": "Tfgh",
+      "stem": "The function g(x) = x^3 - 2 has an inverse, g^(-1)(x). What is the value of g^(-1)(-7)?",
+      "choices": {
+        "A": "-3",
+        "B": "-2",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "A",
+      "solution": "To find g^(-1)(-7), solve g(x) = -7 for x. -7 = x^3 - 2 => -5 = x^3 => x = √[(-5)^{1/3}] = -3. So, g^(-1)(-7) = -3.",
+      "explanation": "For cubic functions, finding the inverse can be challenging; in this case, we use the cube root to find x.",
+      "common_mistake_notes": "A common mistake is to forget that the inverse function discards the non-real solution when dealing with cube roots."
+    },
+    {
+      "id": "Yhjk",
+      "stem": "Given f(x) = 3sin(x), what is its inverse, f^(-1)(x)?",
+      "choices": {
+        "A": "arcsin(x/3)",
+        "B": "arcsin(3x)",
+        "C": "arcsin(x)/3",
+        "D": "3arcsin(x)"
+      },
+      "correct_choice": "B",
+      "solution": "To find the inverse of f(x), set y = 3sin(x) and solve for x. y = 3sin(x) => sin(x) = y/3 => x = arcsin(y/3). So, f^(-1)(x) = arcsin(3x).",
+      "explanation": "For sinusoidal functions, the inverse involves taking the inverse sine with the appropriate scaling factor.",
+      "common_mistake_notes": "A common mistake is to forget to scale the argument of the inverse sine function."
+    },
+    {
+      "id": "Bnmv",
+      "stem": "The function h(x) = 2cos(x) + 1 has an inverse, h^(-1)(x). What is the value of h^(-1)(3)?",
+      "choices": {
+        "A": "π/3",
+        "B": "π/2",
+        "C": "2π/3",
+        "D": "π"
+      },
+      "correct_choice": "A",
+      "solution": "To find h^(-1)(3), solve h(x) = 3 for x. 3 = 2cos(x) + 1 => 2 = 2cos(x) => cos(x) = 1 => x = 0, 2π (in radians). Since cosine is periodic, we usually choose the principal value in the range of arccosine, which is x = π/3. So, h^(-1)(3) = π/3.",
+      "explanation": "For trigonometric functions, finding the inverse involves taking the inverse cosine with appropriate adjustments for the domain and range.",
+      "common_mistake_notes": "A common mistake is to forget to consider the periodic nature of trigonometric functions when finding their inverses."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.11.6 Apply chain rule in complex domain
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.11 Complex Differentiation
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+Find the derivative of f(z) = (z^2 + 3i)^5 with respect to z.
+A) (10z(‌​z^2 + 3i)^4)
+B) (5z^2 + 3i)^4
+C) 5(‌​z^2 + 3i)^4
+D) 20z(‌​z^2 + 3i)^3
+Correct Answer: C
+
+Solution:
+The chain rule states that if you have a composite function f(g(z)), the derivative is f'(g(z)) 	imes g'(z). In this case, f(u) = u^5 and g(z) = z^2 + 3i. So, f'(u) = 5u^4 and g'(z) = 2z. Applying the chain rule gives us (5(‌​z^2 + 3i)^4) 	imes 2z = 10z(‌​z^2 + 3i)^4.
+
+Explanation:
+The correct answer is obtained by applying the chain rule correctly. The mistake in choice A is multiplying by an extra factor of z, while choices B and D use incorrect exponents or derivatives of f(u).
+
+Common mistake note:
+Common mistakes include not accounting for the derivative of the inner function (g'(z)) or incorrectly applying the power rule to the outer function.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Find the derivative of h(z) = e^(3iz^2 - 5) with respect to z.
+A) 6zie^(3iz^2 - 5)
+B) e^(3iz^2 - 5)(-6z^2)
+C) 3iez^2e^(3iz^2 - 5)
+D) 3ie^(3iz^2 - 5)
+Correct Answer: A
+
+Solution:
+The chain rule applies here with f(u) = e^u and g(z) = 3iz^2 - 5. The derivative of f is f'(u) = e^u, and the derivative of g is g'(z) = 6iz. Applying the chain rule gives us e^(3iz^2 - 5) 	imes 6iz = 6zie^(3iz^2 - 5).
+
+Explanation:
+The correct answer uses the chain rule correctly with the appropriate derivatives for f(u) and g(z). Choice B has a negative sign error, choice C multiplies by an incorrect power of z, and choice D omits the factor of iz.
+
+Common mistake note:
+Common mistakes include not differentiating the exponent (u) or applying the chain rule with the wrong derivative for the inner function.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Find the derivative of j(‌​z) = sin(2z^3 + 4iz) with respect to z.
+A) 6z^2cos(2z^3 + 4iz)
+B) 3z^2cos(2z^3 + 4iz)
+C) cos(2z^3 + 4iz)(6z^2 + 4i)
+D) cos(2z^3 + 4iz)(6z^2)
+Correct Answer: C
+
+Solution:
+The chain rule is used with f(u) = sin(u) and g(z) = 2z^3 + 4iz. The derivative of f is f'(u) = cos(u), and the derivative of g is g'(z) = 6z^2 + 4i. Applying the chain rule gives us cos(2z^3 + 4iz)(6z^2 + 4i).
+
+Explanation:
+The correct answer correctly applies the chain rule with the derivatives for f(u) and g(z). Choice A has an incorrect power of z, choice B uses a wrong derivative for f(u), and choice D omits the imaginary part of g'(z).
+
+Common mistake note:
+Common mistakes include not differentiating the sine function correctly or applying the chain rule with the wrong derivative for the inner function.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Find the derivative of k(z) = ln(5z^2 + 2i) with respect to z.
+A) (10z)/(5z^2 + 2i)
+B) (10z)/(5z^2 + 2i)^2
+C) 2/(5z^2 + 2i)
+D) (2z)/(5z^2 + 2i)
+Correct Answer: A
+
+Solution:
+The chain rule is applied with f(u) = ln(u) and g(z) = 5z^2 + 2i. The derivative of f is f'(u) = 1/u, and the derivative of g is g'(z) = 10z. Applying the chain rule gives us (1/(5z^2 + 2i)) 	imes 10z = (10z)/(5z^2 + 2i).
+
+Explanation:
+The correct answer uses the chain rule correctly with the appropriate derivatives for f(u) and g(z). Choice B has an extra power of u, choice C omits the factor of z, and choice D uses an incorrect derivative for g(z).
+
+Common mistake note:
+Common mistakes include applying the natural logarithm derivative incorrectly or not multiplying by the derivative of the inner function.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Find the derivative of m(z) = (4z + 3i)^(-2) with respect to z.
+A) -8(4z + 3i)^(-3)
+B) -8/(4z + 3i)^3
+C) (8z)/(4z + 3i)^3
+D) -(8z)/(4z + 3i)^2
+Correct Answer: B
+
+Solution:
+The chain rule is applied with f(u) = u^(-2) and g(z) = 4z + 3i. The derivative of f is f'(u) = -2u^(-3), and the derivative of g is g'(z) = 4. Applying the chain rule gives us (-2/(4z + 3i)^3) 	imes 4 = -8/(4z + 3i)^3.
+
+Explanation:
+The correct answer correctly applies the chain rule with the derivatives for f(u) and g(z). Choice A has an incorrect power of u, choice C omits the negative sign, and choice D uses a wrong derivative for g(z).
+
+Common mistake note:
+Common mistakes include applying the power rule incorrectly or not multiplying by the derivative of the inner function.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+Find the derivative of n(z) = (z^3 - 2i)^4 with respect to z.
+A) 12z^2(z^3 - 2i)^3
+B) 12z(z^3 - 2i)^3
+C) 4(z^3 - 2i)^3
+D) 36z^2(z^3 - 2i)^2
+Correct Answer: A
+
+Solution:
+The chain rule is applied with f(u) = u^4 and g(z) = z^3 - 2i. The derivative of f is f'(u) = 4u^3, and the derivative of g is g'(z) = 3z^2. Applying the chain rule gives us (4(z^3 - 2i)^3) 	imes 3z^2 = 12z^2(z^3 - 2i)^3.
+
+Explanation:
+The correct answer uses the chain rule correctly with the appropriate derivatives for f(u) and g(z). Choice B omits a power of z, choice C has an incorrect exponent, and choice D uses a wrong derivative for f(u).
+
+Common mistake note:
+Common mistakes include applying the power rule incorrectly or not multiplying by the derivative of the inner function.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Find the derivative of p(z) = (z + 1i)^(-5) with respect to z.
+A) 5(z + 1i)^(-6)
+B) 5/(z + 1i)^6
+C) -5(z + 1i)^(-6)
+D) -(5z)/(z + 1i)^5
+Correct Answer: C
+
+Solution:
+The chain rule is applied with f(u) = u^(-5) and g(z) = z + 1i. The derivative of f is f'(u) = -5u^(-6), and the derivative of g is g'(z) = 1. Applying the chain rule gives us (-5/(z + 1i)^6) 	imes 1 = -5(z + 1i)^(-6).
+
+Explanation:
+The correct answer correctly applies the chain rule with the derivatives for f(u) and g(z). Choice A has a positive sign, choice B omits the negative sign, and choice D uses an incorrect derivative for g(z).
+
+Common mistake note:
+Common mistakes include applying the power rule incorrectly or not multiplying by the derivative of the inner function.
+------------------------------------------------------------------------------

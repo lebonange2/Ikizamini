@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.1.13",
+  "objective_text": "Apply intermediate value theorem",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsnXzJm9",
+      "stem": "Consider the function f(x) = x^2 - 4x + 3 on the interval [0, 5]. According to the Intermediate Value Theorem, does there exist a value c in this interval such that f(c) = 0?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot determine without more information",
+        "D": "f(c) is always positive on this interval"
+      },
+      "correct_choice": "A",
+      "solution": "The Intermediate Value Theorem states that if a function is continuous on an interval and takes values f(a) and f(b) at the endpoints of the interval, then for any value between f(a) and f(b), there exists at least one c in (a, b) such that f(c) = k. For f(x) = x^2 - 4x + 3 on [0, 5], we can see that f(0) = 3 and f(5) = 8. Since 0 is between 3 and 8, there must be a value c in (0, 5) such that f(c) = 0.",
+      "explanation": "The theorem applies because the function is continuous everywhere. The correct answer is A: Yes.",
+      "common_mistake_notes": "A common mistake would be to choose C, thinking that more information is needed about the function's behavior. However, the theorem only requires continuity on the interval, which f(x) has."
+    },
+    {
+      "id": "nTg2fKjZ",
+      "stem": "For the continuous function g(x) = 3x^3 - 6x^2 + 3x - 1 on the interval [-2, 2], does there exist a value c such that g(c) = 0?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot determine without more information",
+        "D": "g(с) is always negative on this interval"
+      },
+      "correct_choice": "A",
+      "solution": "The Intermediate Value Theorem applies to the continuous function g(x) = 3x^3 - 6x^2 + 3x - 1 on the interval [-2, 2]. At x = -2, g(-2) = -79 and at x = 2, g(2) = 5. Since 0 is between -79 and 5, there must be a value c in (-2, 2) such that g(c) = 0.",
+      "explanation": "The theorem guarantees the existence of a root because the function values at the endpoints have different signs. The correct answer is A: Yes.",
+      "common_mistake_notes": "A common mistake would be to choose D, assuming that the function is always negative on the interval. However, the theorem does not require knowledge of the sign of the function."
+    },
+    {
+      "id": "xMh5pLrW",
+      "stem": "Does there exist a continuous function h(x) on the interval [-1, 1] such that h(-1) = -2 and h(1) = 0, but no value c in (-1, 1) satisfies h(c) = -1?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot determine without more information",
+        "D": "h(x) is always positive on this interval"
+      },
+      "correct_choice": "B",
+      "solution": "The Intermediate Value Theorem states that if a function is continuous on an interval and takes values f(a) and f(b) at the endpoints of the interval, then for any value between f(a) and f(b), there exists at least one c in (a, b) such that f(c) = k. Since h(-1) = -2 and h(1) = 0, by the theorem, there must be a value c in (-1, 1) such that h(c) = -1.",
+      "explanation": "The theorem requires continuity and opposite signs at the endpoints for a root to exist within the interval. The correct answer is B: No.",
+      "common_mistake_notes": "A common mistake would be to choose A, thinking it's possible to construct such a function. However, the Intermediate Value Theorem guarantees that there must be a value c with h(c) = -1 between -2 and 0."
+    },
+    {
+      "id": "eYj9pKvM",
+      "stem": "For the continuous function j(x) = x^4 - 3x^2 + 2 on the interval [-2, 2], does there exist a value c such that j(c) = -1?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot determine without more information",
+        "D": "j(с) is always positive on this interval"
+      },
+      "correct_choice": "B",
+      "solution": "The Intermediate Value Theorem applies to the continuous function j(x) = x^4 - 3x^2 + 2 on the interval [-2, 2]. At x = -2 and x = 2, j(-2) = 18 and j(2) = 6. Since -1 is not between 18 and 6, there is no value c in (-2, 2) such that j(c) = -1.",
+      "explanation": "The theorem does not guarantee a root when the function values at the endpoints do not bracket the target value. The correct answer is B: No.",
+      "common_mistake_notes": "A common mistake would be to choose A, assuming that there must always be a root between two different function values. However, the theorem only requires that the target value lies between the endpoint values."
+    },
+    {
+      "id": "zLm7nRqT",
+      "stem": "Consider the continuous function k(x) = 2sin(x) on the interval [0, π]. Does there exist a value c such that k(c) = 1?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot determine without more information",
+        "D": "k(x) is always positive on this interval"
+      },
+      "correct_choice": "A",
+      "solution": "The Intermediate Value Theorem applies to the continuous function k(x) = 2sin(x) on the interval [0, π]. At x = 0, k(0) = 0 and at x = π, k(π) = -2. Since 1 is between 0 and -2, there must be a value c in (0, π) such that k(c) = 1.",
+      "explanation": "The theorem guarantees the existence of a root because the function values at the endpoints have different signs. The correct answer is A: Yes.",
+      "common_mistake_notes": "A common mistake would be to choose D, assuming that sine is always positive on [0, π]. However, the theorem does not require knowledge of the sign of the function."
+    },
+    {
+      "id": "sQf8nLpX",
+      "stem": "For the continuous function l(x) = x^3 - 2x^2 + x - 1 on the interval [-2, 2], does there exist a value c such that l(c) = 0?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot determine without more information",
+        "D": "l(x) is always negative on this interval"
+      },
+      "correct_choice": "A",
+      "solution": "The Intermediate Value Theorem applies to the continuous function l(x) = x^3 - 2x^2 + x - 1 on the interval [-2, 2]. At x = -2 and x = 2, l(-2) = -19 and l(2) = 3. Since 0 is between -19 and 3, there must be a value c in (-2, 2) such that l(c) = 0.",
+      "explanation": "The theorem guarantees the existence of a root because the function values at the endpoints have different signs. The correct answer is A: Yes.",
+      "common_mistake_notes": "A common mistake would be to choose D, assuming that the cubic function is always negative on [-2, 2]. However, the theorem does not require knowledge of the sign of the function."
+    },
+    {
+      "id": "pRr9nLmK",
+      "stem": "Does there exist a continuous function m(с) on the interval [0, 1] such that m(0) = -1 and m(1) = 1, but no value c in (0, 1) satisfies m(c) = 0?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot determine without more information",
+        "D": "m(x) is always positive on this interval"
+      },
+      "correct_choice": "B",
+      "solution": "The Intermediate Value Theorem states that if a function is continuous on an interval and takes values f(a) and f(b) at the endpoints of the interval, then for any value between f(a) and f(b), there exists at least one c in (a, b) such that f(c) = k. Since m(0) = -1 and m(1) = 1, by the theorem, there must be a value c in (0, 1) such that m(c) = 0.",
+      "explanation": "The theorem requires continuity and opposite signs at the endpoints for a root to exist within the interval. The correct answer is B: No.",
+      "common_mistake_notes": "A common mistake would be to choose A, thinking it's possible to construct such a function. However, the Intermediate Value Theorem guarantees that there must be a value c with m(c) = 0 between -1 and 1."
+    }
+  ]
+}

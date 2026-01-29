@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.10",
+  "objective_text": "Handle argument in different quadrants",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "InQuadrant1",
+      "stem": "Given the complex number z = 3 + 4i, which quadrant does it lie in?",
+      "choices": {
+        "A": "First Quadrant",
+        "B": "Second Quadrant",
+        "C": "Third Quadrant",
+        "D": "Fourth Quadrant"
+      },
+      "correct_choice": "A",
+      "solution": "The first quadrant contains complex numbers with both positive real and imaginary parts. Since 3 is positive and 4 is also positive, z = 3 + 4i lies in the first quadrant.",
+      "explanation": "In a complex plane, the quadrants are defined by the signs of the real (x) and imaginary (y) parts: \n- First Quadrant: x > 0, y > 0\n- Second Quadrant: x < 0, y > 0\n- Third Quadrant: x < 0, y < 0\n- Fourth Quadrant: x > 0, y < 0",
+      "common_mistake_notes": "A common mistake is to misinterpret the signs of the real and imaginary parts. Make sure to check both the sign of the real part (3) and the imaginary part (4)."
+    },
+    {
+      "id": "InQuadrant2",
+      "stem": "The complex number z = -2 - 5i lies in which quadrant?",
+      "choices": {
+        "A": "First Quadrant",
+        "B": "Second Quadrant",
+        "C": "Third Quadrant",
+        "D": "Fourth Quadrant"
+      },
+      "correct_choice": "D",
+      "solution": "The fourth quadrant contains complex numbers with a positive real part and a negative imaginary part. Since -2 is negative and -5 is also negative, z = -2 - 5i lies in the fourth quadrant.",
+      "explanation": "In a complex plane, the quadrants are defined by the signs of the real (x) and imaginary (y) parts: \n- First Quadrant: x > 0, y > 0\n- Second Quadrant: x < 0, y > 0\n- Third Quadrant: x < 0, y < 0\n- Fourth Quadrant: x > 0, y < 0",
+      "common_mistake_notes": "A common mistake is to overlook the negative signs. Make sure to consider both the sign of the real part (-2) and the imaginary part (-5)."
+    },
+    {
+      "id": "InQuadrant3",
+      "stem": "What quadrant does the complex number z = 4i belong to?",
+      "choices": {
+        "A": "First Quadrant",
+        "B": "Second Quadrant",
+        "C": "Third Quadrant",
+        "D": "Fourth Quadrant"
+      },
+      "correct_choice": "B",
+      "solution": "The second quadrant contains complex numbers with a negative real part and a positive imaginary part. Since 4i has no real part (x = 0) and a positive imaginary part, z = 4i lies in the second quadrant.",
+      "explanation": "In a complex plane, the quadrants are defined by the signs of the real (x) and imaginary (y) parts: \n- First Quadrant: x > 0, y > 0\n- Second Quadrant: x < 0, y > 0\n- Third Quadrant: x < 0, y < 0\n- Fourth Quadrant: x > 0, y < 0",
+      "common_mistake_notes": "A common mistake is to assume that the absence of a real part means it's in the first or fourth quadrant. Remember that zero is neither positive nor negative."
+    },
+    {
+      "id": "InQuadrant4",
+      "stem": "The complex number z = -3 + 2i lies in which quadrant?",
+      "choices": {
+        "A": "First Quadrant",
+        "B": "Second Quadrant",
+        "C": "Third Quadrant",
+        "D": "Fourth Quadrant"
+      },
+      "correct_choice": "C",
+      "solution": "The third quadrant contains complex numbers with a negative real part and a negative imaginary part. Since -3 is negative and 2 is positive, z = -3 + 2i lies in the third quadrant.",
+      "explanation": "In a complex plane, the quadrants are defined by the signs of the real (x) and imaginary (y) parts: \n- First Quadrant: x > 0, y > 0\n- Second Quadrant: x < 0, y > 0\n- Third Quadrant: x < 0, y < 0\n- Fourth Quadrant: x > 0, y < 0",
+      "common_mistake_notes": "A common mistake is to misinterpret the signs of the real part (-3) and the imaginary part (2). Make sure to consider both signs."
+    },
+    {
+      "id": "InQuadrant5",
+      "stem": "Find the quadrant for the complex number z = -4 - 3i.",
+      "choices": {
+        "A": "First Quadrant",
+        "B": "Second Quadrant",
+        "C": "Third Quadrant",
+        "D": "Fourth Quadrant"
+      },
+      "correct_choice": "C",
+      "solution": "The third quadrant contains complex numbers with a negative real part and a negative imaginary part. Since -4 is negative and -3 is also negative, z = -4 - 3i lies in the third quadrant.",
+      "explanation": "In a complex plane, the quadrants are defined by the signs of the real (x) and imaginary (y) parts: \n- First Quadrant: x > 0, y > 0\n- Second Quadrant: x < 0, y > 0\n- Third Quadrant: x < 0, y < 0\n- Fourth Quadrant: x > 0, y < 0",
+      "common_mistake_notes": "A common mistake is to overlook the negative signs. Make sure to consider both the sign of the real part (-4) and the imaginary part (-3)."
+    },
+    {
+      "id": "InQuadrant6",
+      "stem": "Which quadrant does the complex number z = 0 + 7i belong to?",
+      "choices": {
+        "A": "First Quadrant",
+        "B": "Second Quadrant",
+        "C": "Third Quadrant",
+        "D": "Fourth Quadrant"
+      },
+      "correct_choice": "B",
+      "solution": "The second quadrant contains complex numbers with a negative real part and a positive imaginary part. Since 0 is neither positive nor negative, z = 0 + 7i lies in the second quadrant.",
+      "explanation": "In a complex plane, the quadrants are defined by the signs of the real (x) and imaginary (y) parts: \n- First Quadrant: x > 0, y > 0\n- Second Quadrant: x < 0, y > 0\n- Third Quadrant: x < 0, y < 0\n- Fourth Quadrant: x > 0, y < 0",
+      "common_mistake_notes": "A common mistake is to assume that the absence of a real part means it's in the first or fourth quadrant. Remember that zero is neither positive nor negative."
+    },
+    {
+      "id": "InQuadrant7",
+      "stem": "Identify the quadrant for the complex number z = -6i.",
+      "choices": {
+        "A": "First Quadrant",
+        "B": "Second Quadrant",
+        "C": "Third Quadrant",
+        "D": "Fourth Quadrant"
+      },
+      "correct_choice": "B",
+      "solution": "The second quadrant contains complex numbers with a negative real part and a positive imaginary part. Since -6i has no real part (x = 0) and a positive imaginary part, z = -6i lies in the second quadrant.",
+      "explanation": "In a complex plane, the quadrants are defined by the signs of the real (x) and imaginary (y) parts: \n- First Quadrant: x > 0, y > 0\n- Second Quadrant: x < 0, y > 0\n- Third Quadrant: x < 0, y < 0\n- Fourth Quadrant: x > 0, y < 0",
+      "common_mistake_notes": "A common mistake is to assume that the absence of a real part means it's in the first or fourth quadrant. Remember that zero is neither positive nor negative."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.3.6 Apply logical implication (→)
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.3 Logic and Propositions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+If P → Q, which of the following is true?
+A) Q → P
+B) P ↔ Q
+C) ¬Q → ¬P
+D) ¬P → ¬Q
+Correct Answer: C
+
+Solution:
+The contrapositive of P → Q is ¬Q → ¬P. This means if the antecedent (P) is false, then the consequent (Q) must also be false.
+
+Explanation:
+In logical implication, the truth of the antecedent (P) does not guarantee the truth of the consequent (Q), but the falsity of the consequent guarantees the falsity of the antecedent. The contrapositive captures this relationship.
+
+Common mistake note:
+A common mistake is to confuse logical implication with biconditional (↔). P → Q does not imply that Q → P, as the truth of Q does not necessarily mean the truth of P.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+Given R → S and ¬S, which statement must be true?
+A) R → ¬S
+B) ¬R → S
+C) ¬R
+D) R
+Correct Answer: C
+
+Solution:
+If ¬S is given and R → S is true, it logically follows that ¬R must be true to make the implication false.
+
+Explanation:
+When the consequent of an implication is false, the antecedent must also be false for the entire statement to be true. Since ¬S is given, ¬R must hold.
+
+Common mistake note:
+A common mistake would be to choose 'R → ¬S,' which is not a valid conclusion from the given statements.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer):
+If T → U and U → V, what can we conclude about T and V?
+A) T → V
+B) V → T
+C) ¬T → ¬V
+D) ¬V → ¬T
+Correct Answer: A
+
+Solution:
+By combining the two implications (T → U) and (U → V), we can infer that T implies V through transitive implication.
+
+Explanation:
+Transitive implication allows us to chain implications together. If T implies U, and U implies V, then T must also imply V.
+
+Common mistake note:
+A common mistake would be to choose 'V → T,' which is not a valid conclusion from the given statements. The direction of implication matters.
+------------------------------------------------------------------------------
+
+Problem 4 (Yuiop):
+Which of the following best represents the negation of P → Q?
+A) P → ¬Q
+B) ¬P → Q
+C) P ∧ ¬Q
+D) ¬(P ∨ Q)
+Correct Answer: C
+
+Solution:
+The negation of P → Q is logically equivalent to P being true and Q being false, which is represented by P ∧ ¬Q.
+
+Explanation:
+To negate a conditional statement, we must find a scenario where the antecedent is true but the consequent is false. This is captured by the conjunction of P and ¬Q.
+
+Common mistake note:
+A common mistake would be to choose 'P → ¬Q,' which is not the negation of P → Q; it's just another conditional statement.
+------------------------------------------------------------------------------
+
+Problem 5 (Bvnmm):
+If X → Y and Y → Z, which of the following is NOT logically equivalent to X → Z?
+A) (X ∧ Y) → Z
+B) ¬(X ∧ ¬Z)
+C) ¬X ∨ Z
+D) X → (Y ∧ Z)
+Correct Answer: D
+
+Solution:
+The statement 'X → (Y ∧ Z)' is not logically equivalent to X → Z, as it implies that both Y and Z must be true when X is true.
+
+Explanation:
+While the other choices are valid implications or contrapositives of X → Z, 'X → (Y ∧ Z)' adds an unnecessary condition that both Y and Z must hold simultaneously.
+
+Common mistake note:
+A common mistake would be to misinterpret the relationship between X, Y, and Z, leading to selecting a choice that is not logically equivalent.
+------------------------------------------------------------------------------
+
+Problem 6 (Kolm):
+Given M → N and P → Q, which of the following represents the compound implication?
+A) (M ∨ P) → (N ∨ Q)
+B) (M ∧ P) → (N ∧ Q)
+C) M → (N ∧ Q)
+D) P → (M ∨ N)
+Correct Answer: A
+
+Solution:
+The compound implication of M → N and P → Q is represented by the disjunction of antecedents and the disjunction of consequents.
+
+Explanation:
+When combining two implications with 'or' (disjunction), we apply the same operation to both the antecedents and consequents. This results in (M ∨ P) → (N ∨ Q).
+
+Common mistake note:
+A common mistake would be to choose 'B,' which incorrectly uses conjunction instead of disjunction.
+------------------------------------------------------------------------------
+
+Problem 7 (Jhgf):
+If A → B and ¬A, which of the following is true?
+A) B → A
+B) A ↔ B
+C) ¬B → A
+D) ¬B
+Correct Answer: D
+
+Solution:
+Given ¬A (not A), the implication A → B is vacuously true, making ¬B true as well.
+
+Explanation:
+When the antecedent of an implication is false, the entire statement is considered true regardless of the consequent. Since ¬A is given, it implies that ¬B must be true to maintain the truth value of the original implication.
+
+Common mistake note:
+A common mistake would be to choose 'B,' which suggests a biconditional relationship between A and B, which is not necessarily implied by the given statements.
+------------------------------------------------------------------------------

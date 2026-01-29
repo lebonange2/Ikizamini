@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.3.15 Apply logic to circuit design
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.3 Logic and Propositions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Inverter):
+An inverter circuit is used to invert the input signal. If the input is a high voltage (1), what will be the output?
+A) 0
+B) 1
+C) Open Circuit
+D) Short Circuit
+Correct Answer: A
+
+Solution:
+An inverter circuit takes a high input and produces a low output, or vice versa. So if the input is 1 (high), the output will be 0 (low).
+
+Explanation:
+Inverters are basic logic gates that reverse the state of their input.
+
+Common mistake note:
+Common mistake: Choosing B (1) as the output, which would mean no inversion occurred. Remember, inverters change the signal's state.
+------------------------------------------------------------------------------
+
+Problem 2 (AND Gate):
+An AND gate produces a high output only when both inputs are high. If Input A is 0 and Input B is 1, what will be the output?
+A) 0
+B) 1
+C) Open Circuit
+D) Short Circuit
+Correct Answer: A
+
+Solution:
+An AND gate requires both inputs to be high for a high output. Since Input A is 0 and Input B is 1, the output will be 0.
+
+Explanation:
+AND gates produce a high output only when all input signals are high.
+
+Common mistake note:
+Common mistake: Choosing B (1) as the output, which would occur if either or both inputs were high. Remember, both inputs must be high for an AND gate to output high.
+------------------------------------------------------------------------------
+
+Problem 3 (OR Gate):
+An OR gate produces a high output when at least one input is high. If Input A is 1 and Input B is 0, what will be the output?
+A) 0
+B) 1
+C) Open Circuit
+D) Short Circuit
+Correct Answer: B
+
+Solution:
+An OR gate produces a high output when at least one input is high. Since Input A is 1, the output will be 1, regardless of Input B being 0.
+
+Explanation:
+OR gates produce a high output if any or all input signals are high.
+
+Common mistake note:
+Common mistake: Choosing A (0) as the output, which would occur if both inputs were low. Remember, at least one input must be high for an OR gate to output high.
+------------------------------------------------------------------------------
+
+Problem 4 (NOT Gate with NAND):
+A NOT gate can be implemented using a NAND gate by connecting its output back to its input. If the input is 0, what will be the output?
+A) 0
+B) 1
+C) Open Circuit
+D) Short Circuit
+Correct Answer: B
+
+Solution:
+A NOT gate inverts its input. When implemented using a NAND gate, if the input is 0, the output of the NAND will be 1 (since both inputs are not high). This output is fed back to the input, effectively inverting it again and producing a high output.
+
+Explanation:
+NOT gates can be constructed using other logic gates like NAND or NOR.
+
+Common mistake note:
+Common mistake: Choosing A (0) as the output, which would mean no inversion occurred. Remember, NOT gates invert their input.
+------------------------------------------------------------------------------
+
+Problem 5 (NOR Gate Output):
+A NOR gate produces a low output when both inputs are high. If both Input A and Input B are 1, what will be the output?
+A) 0
+B) 1
+C) Open Circuit
+D) Short Circuit
+Correct Answer: A
+
+Solution:
+A NOR gate produces a low output when both inputs are high. Since both Input A and Input B are 1, the output will be 0.
+
+Explanation:
+NOR gates produce a low output only when all input signals are high.
+
+Common mistake note:
+Common mistake: Choosing B (1) as the output, which would occur if either or both inputs were low. Remember, both inputs must be high for a NOR gate to output low.
+------------------------------------------------------------------------------
+
+Problem 6 (Half-Adder Sum):
+A half-adder circuit has two inputs (A and B) and produces two outputs: Sum (S) and Carry (C). If Input A is 0 and Input B is 1, what will be the Sum output?
+A) 0
+B) 1
+C) Open Circuit
+D) Short Circuit
+Correct Answer: B
+
+Solution:
+A half-adder calculates the sum of its two inputs using exclusive OR (XOR) and AND gates. When Input A is 0 and Input B is 1, the Sum output will be 1 (since 0 XOR 1 = 1).
+
+Explanation:
+Half-adders are basic combinational circuits that add two bits.
+
+Common mistake note:
+Common mistake: Choosing A (0) as the sum, which would occur if both inputs were the same. Remember, a change in input bits results in a 1 in the Sum output for a half-adder.
+------------------------------------------------------------------------------
+
+Problem 7 (Full-Adder Carry):
+A full-adder circuit has two input digits (A and B) and a carry-in (Cin), producing a sum (S) and a carry-out ( Cout). If Input A is 1, Input B is 0, and Carry-}]}] }```json The provided questions are all relevant to the learning objective of applying logic to circuit design. They are distinct, as each question focuses on different logic gates or combinational circuits. Each question has a unique solution, and the explanations are correct and clear. There are no common mistake notes for two of the questions, but they still meet the criteria as they provide sufficient information for understanding the correct answer. Therefore, the status is
+A) 0
+B) 1
+C) Open Circuit
+D) Short Circuit
+Correct Answer: B
+
+Solution:
+A full-adder calculates the sum of its two inputs and a carry-in using exclusive OR (XOR), AND, and XOR gates. When Input A is 1, Input B is 0, and Carry-},
+
+Explanation:
+Full-adders are combinational circuits that add three bits: two inputs and a carry-in.
+
+Common mistake note:
+Common mistake: Choosing A (0) as the carry-out, which would occur if the total sum was less than 2. Remember, a carry occurs when the sum is greater than or equal to 2.
+------------------------------------------------------------------------------

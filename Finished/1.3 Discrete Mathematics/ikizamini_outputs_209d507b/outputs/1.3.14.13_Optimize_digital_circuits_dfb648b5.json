@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.14.13",
+  "objective_text": "Optimize digital circuits",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "IncrementerDesign",
+      "stem": "Which circuit design is most efficient for a simple incrementer that adds 1 to its input?",
+      "choices": {
+        "A": "AND, OR, and NOT gates only",
+        "B": "Single flip-flop and XOR gate",
+        "C": "Full adder for each bit",
+        "D": "Multiple flip-flops and AND, OR, and NOT gates"
+      },
+      "correct_choice": "B",
+      "solution": "A sequential circuit with a single flip-flop and an XOR gate is the most efficient. It uses fewer gates and has lower latency compared to other options.",
+      "explanation": "Option A cannot maintain state for incrementing. Option C is more complex with more gates. Option D is also more complex than the single flip-flop solution.",
+      "common_mistake_notes": "Choosing C because it seems straightforward; however, full adders are less efficient due to increased gates."
+    },
+    {
+      "id": "ComparatorOptimization",
+      "stem": "Which optimization technique best improves a 4-bit comparator circuit's efficiency?",
+      "choices": {
+        "A": "AND, OR, and NOT gates instead of XOR",
+        "B": "Parallel comparison with multiple 2-bit comparators",
+        "C": "Reduce number of bits by one",
+        "D": "Use a lookup table for comparison"
+      },
+      "correct_choice": "B",
+      "solution": "Implementing parallel comparison using multiple 2-bit comparators is the most effective. It reduces latency and improves efficiency without sacrificing accuracy.",
+      "explanation": "Option A does not inherently improve efficiency. Option C changes comparator functionality. Option D may be faster but increases memory usage.",
+      "common_mistake_notes": "Choosing D for perceived speed, but it sacrifices hardware efficiency due to memory usage."
+    },
+    {
+      "id": "LogicMinimizationExample",
+      "stem": "Which logic expression best represents the minimized version of function F(ABC) = 1 when A=B=C?",
+      "choices": {
+        "A": "(A'+B'C')(B'+AC')(C'+AB')",
+        "B": "(A'B' + BC')(B'C + AC')(C'A + AB)",
+        "C": "(A'B'C')(B'C + AC')(C'A + AB)",
+        "D": "(A'B'C)(B'C + AC')(C'A + AB)"
+      },
+      "correct_choice": "C",
+      "solution": "The minimized expression is (A'B'C')(B'C + AC')(C'A + AB). It has the fewest literals and accurately represents F(ABC) = 1 when A=B=C.",
+      "explanation": "Options A, B have extra literals. Option D omits double primes indicating variable complements.",
+      "common_mistake_notes": "Choosing D without considering double prime notation changes variable meaning."
+    },
+    {
+      "id": "FlipFlopChoice",
+      "stem": "Which flip-flop is best for a 4x frequency divider?",
+      "choices": {
+        "A": "SR Flip-Flop",
+        "B": "D Flip-Flop",
+        "C": "T Flip-Flop",
+        "D": "JK Flip-Flop"
+      },
+      "correct_choice": "B",
+      "solution": "A D Flip-Flop is suitable for a 4x frequency divider. It can be easily configured without additional gates.",
+      "explanation": "SR, T, JK flip-flops require extra logic for clock division. D Flip-Flop can be cascaded or connected appropriately.",
+      "common_mistake_notes": "Choosing A, C, D as they are less common for frequency division; SR, T, JK need additional gates."
+    },
+    {
+      "id": "LUTSizeSelection",
+      "stem": "For an 8-to-3-bit LUT optimization, which size is most efficient?",
+      "choices": {
+        "A": "4-input LUT",
+        "B": "8-input LUT",
+        "C": "16-input LUT",
+        "D": "32-input LUT"
+      },
+      "correct_choice": "B",
+      "solution": "An 8-input LUT is most efficient, directly mapping inputs to outputs with minimal resources.",
+      "explanation": "4-input LUT insufficient. 16-, 32-input LUTs waste resources for given problem size.",
+      "common_mistake_notes": "Choosing A, C, D for insufficient capacity or excess resources."
+    },
+    {
+      "id": "PipelineStages",
+      "stem": "In a 3-stage pipeline processor, which stage offers the most potential for parallelism?",
+      "choices": {
+        "A": "Instruction Fetch (IF)",
+        "B": "Instruction Decode (ID)",
+        "C": "Execution (EX)",
+        "D": "Write Back (WB)"
+      },
+      "correct_choice": "C",
+      "solution": "The Execution stage has the most potential for parallelism, as it typically takes longest and can process multiple instructions.",
+      "explanation": "IF, ID, WB have limited parallelism. Parallelizing these may increase complexity without significant improvement.",
+      "common_mistake_notes": "Choosing A, B, D due to simplicity, limiting parallelism potential."
+    },
+    {
+      "id": "LogicGatesCombination",
+      "stem": "Which gate combination uses minimum hardware for a 2-input AND gate?",
+      "choices": {
+        "A": "Two NOTs and two ORs",
+        "B": "One NAND and one AND",
+        "C": "One NOR and one XOR",
+        "D": "One XNOR and one AND"
+      },
+      "correct_choice": "B",
+      "solution": "A 2-input AND gate can be implemented with minimum resources using one NAND and one AND gate.",
+      "explanation": "Option A uses four gates. Option C does not directly implement AND. Option D is equivalent to a NAND with an extra gate.",
+      "common_mistake_notes": "Choosing A, C, or D for more gates or indirect logic implementation."
+    }
+  ]
+}

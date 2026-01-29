@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.6.14 Use in conformal mapping
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.6 Complex Functions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Which conformal map transforms the unit disk to the right half-plane?
+A) f(z) = z^2
+B) f(z) = (z - i)/(z + i)
+C) f(z) = e^{iz}
+D) f(z) = 1/z
+Correct Answer: B
+
+Solution:
+The correct answer is B. A conformal map preserves angles and locally stretches or shrinks the plane without changing angle distortion. f(z) = (z - i)/(z + i) maps the unit disk to the right half-plane while preserving angles. Other options either do not map the unit disk to the right half-plane, like z^2, which creates a folded region, or do not preserve angles, like e^{iz}, which rotates points, and 1/z, which flips the plane.
+
+Explanation:
+Conformal mappings are important in complex analysis for transforming one region into another while preserving key properties like angles. Understanding how they work is crucial for applying them effectively in various problems.
+
+Common mistake note:
+A common mistake is to choose A (z^2), which maps the unit disk to a half-disk with a fold along the negative real axis, not the right half-plane. Another mistake might be selecting C (e^{iz}), which rotates points and does not preserve angles, or D (1/z), which flips the plane.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Under the conformal map w = f(z) = z^3, what is the image of the interval [0, 1]?
+A) [0, 1]
+B) [0, π/6]
+C) [0, π]
+D) [-1, 1]
+Correct Answer: D
+
+Solution:
+The correct answer is D. When z varies from 0 to 1, the cube of z ranges from 0 to 1 cubed, which is 1. Thus, under the conformal map w = z^3, the interval [0, 1] maps to [-1, 1].
+
+Explanation:
+In this question, we apply the conformal map to a simple interval and observe how it transforms. Conformality ensures that angles are preserved, but not necessarily shape or size.
+
+Common mistake note:
+A common mistake might be selecting A (the original interval), which assumes that the mapping preserves the interval's endpoints. However, since z^3 is an odd function, its range includes negative values. Another potential error could be picking B ([π/6]) or C ([π]), which are related to angles but not the image of the interval under the given conformal map.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Which conformal map transforms the upper half-plane to the unit disk?
+A) f(z) = 1/z
+B) f(z) = z^2
+C) f(z) = (z - i)/(z + i)
+D) f(z) = e^{iz}
+Correct Answer: C
+
+Solution:
+The correct answer is C. The function f(z) = (z - i)/(z + i) maps the upper half-plane to the unit disk while preserving angles.
+
+Explanation:
+This question tests the understanding of conformal mappings that transform different regions in the complex plane. Choice A flips the plane, B creates a folded region, and D rotates points, none of which map the upper half-plane to the unit disk while preserving angles.
+
+Common mistake note:
+A common mistake is to choose A (1/z), which flips the plane and does not preserve angles for the upper half-plane. Another potential error could be selecting B (z^2) or D (e^{iz}), both of which do not map the upper half-plane to the unit disk.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Under the conformal map w = f(z) = z + 1, what is the image of the imaginary axis?
+A) Reals shifted by 1
+B) Imaginary axis shifted by 1
+C) Unit circle
+D) Real axis
+Correct Answer: A
+
+Solution:
+The correct answer is A. The conformal map w = z + 1 shifts every point in the complex plane by 1 along the real axis, so the imaginary axis maps to the reals shifted by 1.
+
+Explanation:
+This question demonstrates how a simple translation affects the image of a specific line under a conformal mapping. Conformality ensures that angles are preserved, but not necessarily the shape or size of the original set.
+
+Common mistake note:
+A common mistake might be selecting B (imaginary axis shifted by 1), which assumes that the imaginary axis is mapped to itself. However, since the map adds 1 to every point, it shifts all points along the real axis. Another potential error could be picking C (unit circle) or D (real axis), which are unrelated to the transformation of the imaginary axis under this conformal map.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Which conformal map transforms the exterior of the unit disk to the entire complex plane excluding the origin?
+A) f(z) = 1/z
+B) f(z) = z^2
+C) f(z) = 1/(z - 1)
+D) f(z) = e^{iz}
+Correct Answer: C
+
+Solution:
+The correct answer is C. The function f(z) = (1/(z - 1)) maps the exterior of the unit disk to the entire complex plane excluding the origin while preserving angles.
+
+Explanation:
+This question tests the understanding of conformal mappings that transform regions outside or inside a circle. Choice A maps the exterior of the unit disk to its interior, B creates a folded region, and D rotates points, none of which satisfy the desired transformation.
+
+Common mistake note:
+A common mistake is to choose A (1/z), which maps the exterior of the unit disk to its interior, not the entire complex plane excluding the origin. Another potential error could be selecting B (z^2) or D (e^{iz}), both of which do not exclude the origin in their image.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Under the conformal map w = f(z) = z^4, what is the image of the interval [-1, 1]?
+A) [-1, 1]
+B) [-π/2, π/2]
+C) [-1, π]
+D) [0, 1]
+Correct Answer: A
+
+Solution:
+The correct answer is A. When z varies from -1 to 1, the fourth power of z ranges from 1 to 1 cubed, which is 1. Thus, under the conformal map w = z^4, the interval [-1, 1] maps back to itself.
+
+Explanation:
+In this question, we apply the conformal map to a simple interval and observe how it transforms. Conformality ensures that angles are preserved, but not necessarily shape or size.
+
+Common mistake note:
+A common mistake might be selecting B ([π/2]) or C ([π]), which are related to angles but not the image of the interval under the given conformal map. Another potential error could be picking D (0, 1), assuming that the mapping preserves only positive values, but z^4 is an even function and includes negative values.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Which conformal map transforms the right half-plane to the upper half-plane?
+A) f(z) = (z - i)/(z + i)
+B) f(z) = z^2
+C) f(z) = e^{iz}
+D) f(z) = 1/z
+Correct Answer: C
+
+Solution:
+The correct answer is C. The function f(z) = e^{iz} maps the right half-plane to the upper half-plane while preserving angles.
+
+Explanation:
+This question tests the understanding of conformal mappings that transform different regions in the complex plane. Choice A maps the right half-plane to the unit disk, B creates a folded region, and D flips the plane, none of which map the right half-plane to the upper half-plane while preserving angles.
+
+Common mistake note:
+A common mistake is to choose A ((z - i)/(z + i)), which maps the right half-plane to the unit disk, not the upper half-plane. Another potential error could be selecting B (z^2) or D (1/z), both of which do not preserve angles for the right half-plane.
+------------------------------------------------------------------------------

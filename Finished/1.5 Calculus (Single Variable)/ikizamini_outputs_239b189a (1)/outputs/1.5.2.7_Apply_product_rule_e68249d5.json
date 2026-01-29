@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.2.7",
+  "objective_text": "Apply product rule",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Find the derivative of f(x) = x^3 * e^x using the product rule.",
+      "choices": {
+        "A": "3x^2 * e^x + x^3 * e^x",
+        "B": "x^2 * e^x + x^3 * e^x",
+        "C": "3x^2 * e^(2x)",
+        "D": "x^3 * e^(x+1)"
+      },
+      "correct_choice": "A",
+      "solution": "The product rule states that if you have a function f(x) = u(x)v(x), the derivative is f'(x) = u'(x)v(x) + u(x)v'(x). Here, u(x) = x^3 and v(x) = e^x. The derivatives are u'(x) = 3x^2 and v'(x) = e^x. Applying the product rule: f'(x) = (3x^2)(e^x) + (x^3)(e^x) = 3x^2 * e^x + x^3 * e^x.",
+      "explanation": "The correct answer is A because it correctly applies the product rule by multiplying each derivative with the other function in the original expression.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply one of the derivatives with the other function, resulting in an incorrect sum. For example, choosing B would be a mistake as it only includes one term from the product rule."
+    },
+    {
+      "id": "Two",
+      "stem": "Find the derivative of g(x) = sin(x) * cos(x) using the product rule.",
+      "choices": {
+        "A": "cos^2(x) - sin^2(x)",
+        "B": "sin(x) * cos(x)",
+        "C": "cos(2x)",
+        "D": "sin(2x)"
+      },
+      "correct_choice": "C",
+      "solution": "The product rule states that if you have a function g(x) = u(x)v(x), the derivative is g'(x) = u'(x)v(x) + u(x)v'(x). Here, u(x) = sin(x) and v(x) = cos(x). The derivatives are u'(x) = cos(x) and v'(x) = -sin(x). Applying the product rule: g'(x) = (cos(x))(cos(x)) + (sin(x))(-sin(x)) = cos^2(x) - sin^2(x) = cos(2x).",
+      "explanation": "The correct answer is C because it correctly applies the double angle identity for cosine, which simplifies the result from the product rule.",
+      "common_mistake_notes": "A common mistake would be to not recognize that cos^2(x) - sin^2(x) can be simplified using a trigonometric identity. Choosing A would be a mistake as it does not simplify the expression."
+    },
+    {
+      "id": "Three",
+      "stem": "Find the derivative of h(x) = 5x * ln(x) using the product rule.",
+      "choices": {
+        "A": "5ln(x) + x",
+        "B": "5x * (1/x)",
+        "C": "5ln(x) + 5",
+        "D": "5x * ln(x)"
+      },
+      "correct_choice": "C",
+      "solution": "The product rule states that if you have a function h(x) = u(x)v(x), the derivative is h'(x) = u'(x)v(x) + u(x)v'(x). Here, u(x) = 5x and v(x) = ln(x). The derivatives are u'(x) = 5 and v'(x) = 1/x. Applying the product rule: h'(x) = (5)(ln(x)) + (5x)(1/x) = 5ln(x) + 5.",
+      "explanation": "The correct answer is C because it correctly applies the product rule by multiplying each derivative with the other function in the original expression.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply one of the derivatives with the other function, resulting in an incorrect sum. For example, choosing A would be a mistake as it only includes one term from the product rule."
+    },
+    {
+      "id": "Four",
+      "stem": "Find the derivative of p(x) = x^2 * e^(3x) using the product rule.",
+      "choices": {
+        "A": "2xe^(3x) + 3x^2e^(3x)",
+        "B": "2x * e^(3x)",
+        "C": "x^2 * e^(3x)",
+        "D": "6x^2e^(3x)"
+      },
+      "correct_choice": "A",
+      "solution": "The product rule states that if you have a function p(x) = u(x)v(x), the derivative is p'(x) = u'(x)v(x) + u(x)v'(x). Here, u(x) = x^2 and v(x) = e^(3x). The derivatives are u'(x) = 2x and v'(x) = 3e^(3x). Applying the product rule: p'(x) = (2x)(e^(3x)) + (x^2)(3e^(3x)) = 2xe^(3x) + 3x^2e^(3x).",
+      "explanation": "The correct answer is A because it correctly applies the product rule by multiplying each derivative with the other function in the original expression.",
+      "common_mistake_notes": "A common mistake would be to multiply the wrong derivatives together, resulting in an incorrect sum. For example, choosing B would be a mistake as it only includes one term from the product rule and does not account for the second derivative multiplied by the first function."
+    },
+    {
+      "id": "Five",
+      "stem": "Find the derivative of q(x) = 2x * sin(3x) using the product rule.",
+      "choices": {
+        "A": "2sin(3x) + 6xcos(3x)",
+        "B": "2cos(3x)",
+        "C": "2x * cos(3x)",
+        "D": "6xsin(3x)"
+      },
+      "correct_choice": "A",
+      "solution": "The product rule states that if you have a function q(x) = u(x)v(x), the derivative is q'(x) = u'(x)v(x) + u(x)v'(x). Here, u(x) = 2x and v(x) = sin(3x). The derivatives are u'(x) = 2 and v'(x) = 3cos(3x). Applying the product rule: q'(x) = (2)(sin(3x)) + (2x)(3cos(3x)) = 2sin(3x) + 6xcos(3x).",
+      "explanation": "The correct answer is A because it correctly applies the product rule by multiplying each derivative with the other function in the original expression.",
+      "common_mistake_notes": "A common mistake would be to multiply the wrong derivatives together, resulting in an incorrect sum. For example, choosing B would be a mistake as it only includes one term from the product rule and does not account for the second derivative multiplied by the first function."
+    },
+    {
+      "id": "Six",
+      "stem": "Find the derivative of r(x) = x^3 * cos(2x) using the product rule.",
+      "choices": {
+        "A": "3x^2cos(2x) - 2x^3sin(2x)",
+        "B": "x^2cos(2x)",
+        "C": "x^3sin(2x)",
+        "D": "6x^2cos(2x)"
+      },
+      "correct_choice": "A",
+      "solution": "The product rule states that if you have a function r(x) = u(x)v(x), the derivative is r'(x) = u'(x)v(x) + u(x)v'(x). Here, u(x) = x^3 and v(x) = cos(2x). The derivatives are u'(x) = 3x^2 and v'(x) = -2sin(2x). Applying the product rule: r'(x) = (3x^2)(cos(2x)) + (x^3)(-2sin(2x)) = 3x^2cos(2x) - 2x^3sin(2x).",
+      "explanation": "The correct answer is A because it correctly applies the product rule by multiplying each derivative with the other function in the original expression.",
+      "common_mistake_notes": "A common mistake would be to multiply the wrong derivatives together, resulting in an incorrect sum. For example, choosing B would be a mistake as it only includes one term from the product rule and does not account for the second derivative multiplied by the first function."
+    },
+    {
+      "id": "Seven",
+      "stem": "Find the derivative of s(x) = e^(2x) * ln(x) using the product rule.",
+      "choices": {
+        "A": "2e^(2x)ln(2x) + e^(2x)/x",
+        "B": "e^(2x)",
+        "C": "e^(2x)ln(x)",
+        "D": "e^(2x)/(2x)"
+      },
+      "correct_choice": "A",
+      "solution": "The product rule states that if you have a function s(x) = u(x)v(x), the derivative is s'(x) = u'(x)v(x) + u(x)v'(x). Here, u(x) = e^(2x) and v(x) = ln(x). The derivatives are u'(x) = 2e^(2x) and v'(x) = 1/x. Applying the product rule: s'(x) = (2e^(2x))(ln(x)) + (e^(2x))(1/x) = 2e^(2x)ln(2x) + e^(2x)/x.",
+      "explanation": "The correct answer is A because it correctly applies the product rule by multiplying each derivative with the other function in the original expression.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply one of the derivatives with the other function, resulting in an incorrect sum. For example, choosing B would be a mistake as it only includes one term from the product rule."
+    }
+  ]
+}

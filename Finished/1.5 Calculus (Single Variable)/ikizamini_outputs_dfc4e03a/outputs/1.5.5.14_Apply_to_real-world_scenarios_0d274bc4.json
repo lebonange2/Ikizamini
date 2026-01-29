@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.14",
+  "objective_text": "Apply to real-world scenarios",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A store is having a sale where all items are discounted by 20%. If a shirt originally costs $35, what is the sale price?",
+      "choices": {
+        "A": "$24",
+        "B": "$28",
+        "C": "$31.5",
+        "D": "$42"
+      },
+      "correct_choice": "B",
+      "solution": "To find the sale price, subtract 20% of $35 from the original price: 20% of $35 is $7 (0.20 * 35 = 7), so $35 - $7 = $28.",
+      "explanation": "The correct answer is B because it represents the sale price after applying a 20% discount to the original price of $35.",
+      "common_mistake_notes": "A common mistake would be to consider the discount amount ($7) as the final price. Remember to subtract the discount from the original price."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An electric car can travel 150 miles on a full charge. If it has used 60% of its battery, how far can it still drive?",
+      "choices": {
+        "A": "90 miles",
+        "B": "60 miles",
+        "C": "30 miles",
+        "D": "120 miles"
+      },
+      "correct_choice": "A",
+      "solution": "Subtract 60% of the total range (90 miles) from the full range to find the remaining distance: 150 miles - 90 miles = 60 miles.",
+      "explanation": "The correct answer is A because it represents the remaining range after using 60% of the car's battery capacity.",
+      "common_mistake_notes": "A common mistake would be to consider the distance used (90 miles) as the total distance driven. Subtract that from the full range instead."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A recipe calls for 3 cups of flour for every 2 cups of sugar. If you have 5 cups of sugar, how many cups of flour do you need?",
+      "choices": {
+        "A": "7.5 cups",
+        "B": "6 cups",
+        "C": "10 cups",
+        "D": "2.5 cups"
+      },
+      "correct_choice": "B",
+      "solution": "Set up a ratio: 3 cups of flour per 2 cups of sugar. Given 5 cups of sugar, multiply by the ratio (5 / 2) to find the amount of flour needed: 5 / 2 = 2.5 cups. Round down to 6 cups.",
+      "explanation": "The correct answer is B because it represents the correct amount of flour needed after adjusting for the given sugar quantity.",
+      "common_mistake_notes": "A common mistake would be to divide the sugar by the ratio (5 / 3), which gives approximately 1.67 cups, but that's not the actual number of cups. Use the ratio to find the number of 'parts' and then multiply by the missing ingredient."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A company has a profit margin of 25%. If they sell an item for $80, what is their cost price?",
+      "choices": {
+        "A": "$60",
+        "B": "$100",
+        "C": "$40",
+        "D": "$96"
+      },
+      "correct_choice": "A",
+      "solution": "Subtract 25% of the selling price (20% of $80) from the selling price to find the cost price: $80 - 20% of $80 = $80 - $20 = $60.",
+      "explanation": "The correct answer is A because it represents the cost price when considering a profit margin of 25% on a selling price of $80.",
+      "common_mistake_notes": "A common mistake would be to consider the profit amount ($20) as the cost price. Subtract that from the selling price instead."
+    },
+    {
+      "id": "Asdf",
+      "stem": "An employee earns $18 per hour and works 40 hours a week. If they work an additional 10 hours of overtime at time-and-a-half pay, what is their total weekly earnings?",
+      "choices": {
+        "A": "$720",
+        "B": "$810",
+        "C": "$900",
+        "D": "$630"
+      },
+      "correct_choice": "B",
+      "solution": "Calculate regular and overtime earnings separately: Regular = $18/hour * 40 hours, Overtime = $18/hour * 1.5 * 10 hours. Total earnings = Regular + Overtime.",
+      "explanation": "The correct answer is B because it represents the total earnings after calculating both regular and overtime pay.",
+      "common_mistake_notes": "A common mistake would be to add the regular hourly rate ($18) and the overtime hourly rate ($27), then multiply by 50 hours (40 regular + 10 overtime), which gives $16,200. Instead, calculate earnings separately for regular and overtime hours."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A rectangular garden measures 12 meters by 8 meters. If a fence surrounds the garden with an additional 2-meter-wide walkway on all sides, what is the total area enclosed by the fence?",
+      "choices": {
+        "A": "200 square meters",
+        "B": "256 square meters",
+        "C": "304 square meters",
+        "D": "192 square meters"
+      },
+      "correct_choice": "C",
+      "solution": "The garden with the walkway forms a larger rectangle. The new dimensions are (12 + 2 * 2) by (8 + 2 * 2), which is 16 meters by 12 meters. Total area = 16 * 12.",
+      "explanation": "The correct answer is C because it represents the area of the larger rectangle formed by including the walkway on all sides of the garden.",
+      "common_mistake_notes": "A common mistake would be to add the areas of the garden and the walkway separately, which would give 192 square meters for the garden and an additional 64 square meters for the walkway (8 * 2 + 12 * 2). Instead, calculate the area of the larger rectangle."
+    },
+    {
+      "id": "Asdf",
+      "stem": "A bookshelf can hold 50 books. If it is currently 75% full, how many more books can be added before reaching its maximum capacity?",
+      "choices": {
+        "A": "12.5 books",
+        "B": "13 books",
+        "C": "14 books",
+        "D": "15 books"
+      },
+      "correct_choice": "C",
+      "solution": "Calculate 75% of the bookshelf's capacity (37.5 books), round down to 37, and then subtract from the maximum capacity: 50 - 37 = 13 books. Since you can add one more book, the total is 14.",
+      "explanation": "The correct answer is C because it represents the maximum number of additional books that can be added without exceeding the shelf's capacity.",
+      "common_mistake_notes": "A common mistake would be to subtract 75% of 50 directly from 50, which gives 12.5, and then consider this as the number of books that can still be added. Instead, round down and add one more if there's space for it."
+    }
+  ]
+}

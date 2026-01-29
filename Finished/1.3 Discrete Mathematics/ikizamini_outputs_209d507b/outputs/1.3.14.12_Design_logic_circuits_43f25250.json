@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.14.12",
+  "objective_text": "Design logic circuits",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the output of an OR gate when A = 0 and B = 1?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "A",
+        "D": "B"
+      },
+      "correct_choice": "B",
+      "solution": "The output of an OR gate is high (1) if either or both inputs are high. Since A = 0 and B = 1, the output will be 1.",
+      "explanation": "An OR gate produces a high output when one or both inputs are high.",
+      "common_mistake_notes": "A common mistake is to choose 'C' if the test-taker assumes the gate is an AND gate. An AND gate requires both inputs to be high for the output to be high."
+    },
+    {
+      "id": ":2",
+      "stem": "What is the truth table entry for a NOT gate with input A = 1?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "A",
+        "D": "B and A"
+      },
+      "correct_choice": "A",
+      "solution": "The output of a NOT gate is the opposite of its input. If A = 1, the output will be 0.",
+      "explanation": "A NOT gate has only one input and inverts its output.",
+      "common_mistake_notes": "A common mistake is to choose 'B' if the test-taker forgets that NOT gates invert their inputs."
+    },
+    {
+      "id": ":3",
+      "stem": "Which combination of basic gates can be used to create a NAND gate?",
+      "choices": {
+        "A": "AND and NOT",
+        "B": "OR and NOT",
+        "C": "AND and OR",
+        "D": "NAND and XOR"
+      },
+      "correct_choice": "A",
+      "solution": "A NAND gate can be created by combining an AND gate with a NOT gate. The output of the AND gate is inverted to produce the NAND gate's output.",
+      "explanation": "The NAND gate is a universal gate, meaning it can be used to create any other logic gate.",
+      "common_mistake_notes": "A common mistake is to choose 'B' if the test-taker混淆s the function of an OR gate with that of a NAND gate."
+    },
+    {
+      "id": ":4",
+      "stem": "What is the output of a 2-input XOR gate when A = 0 and B = 1?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "A",
+        "D": "B"
+      },
+      "correct_choice": "B",
+      "solution": "An XOR gate produces an output of 1 if the inputs have different values. With A = 0 and B = 1, the output will be 1.",
+      "explanation": "The XOR gate gives a high output when the inputs are different from each other.",
+      "common_mistake_notes": "A common mistake is to choose 'C' if the test-taker assumes the XOR gate behaves like an AND or OR gate."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the truth table entry for a 3-input AND gate with inputs A = 1, B = 0, and C = 1?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "A",
+        "D": "B and A and C"
+      },
+      "correct_choice": "A",
+      "solution": "An AND gate produces a high output only when all inputs are high. With A = 1, B = 0, and C = 1, the output will be 0 because not all inputs are high.",
+      "explanation": "The AND gate requires all inputs to be high for the output to be high.",
+      "common_mistake_notes": "A common mistake is to choose 'B' if the test-taker overlooks one of the low inputs."
+    },
+    {
+      "id": ":6",
+      "stem": "What logic circuit can be used to create a 4-input OR gate using only 2-input OR gates?",
+      "choices": {
+        "A": "Connect all inputs directly to a single 4-input OR gate.",
+        "B": "Connect two 2-input OR gates in series, then connect the outputs of those gates to another 2-input OR gate.",
+        "C": "Connect four 2-input OR gates in parallel, with each input connected to one of the 4-inputs.",
+        "D": "Connect two 2-input OR gates in parallel, then connect the outputs of those gates to a single 2-input OR gate."
+      },
+      "correct_choice": "C",
+      "solution": "To create a 4-input OR gate using only 2-input OR gates, you can connect four 2-input OR gates in parallel, with each input connected to one of the 4-inputs. The outputs of these gates are then combined with another 2-input OR gate.",
+      "explanation": "Parallel connection allows each input to be processed independently by a separate 2-input OR gate.",
+      "common_mistake_notes": "A common mistake is to choose 'B' if the test-taker misunderstands how to combine multiple OR gates."
+    },
+    {
+      "id": ":7",
+      "stem": "What is the output of a 3-input XOR gate when A = 1, B = 1, and C = 0?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "A",
+        "D": "B and A and C"
+      },
+      "correct_choice": "B",
+      "solution": "An XOR gate produces an output of 1 if the number of high inputs is odd. With A = 1, B = 1, and C = 0, there are two high inputs (A and B), so the output will be 1.",
+      "explanation": "The XOR gate gives a high output when the inputs are different from each other.",
+      "common_mistake_notes": "A common mistake is to choose 'A' if the test-taker overlooks that two of the inputs are high."
+    }
+  ]
+}

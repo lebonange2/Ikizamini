@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.4.1",
+  "objective_text": "Calculate integer powers using De Moivre's theorem",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the fourth power of the complex number (3 + 4i) using De Moivre's theorem.",
+      "choices": {
+        "A": "(9 - 16i)",
+        "B": "(81 + 256i)",
+        "C": "(81 - 256i)",
+        "D": "(27 + 64i)"
+      },
+      "correct_choice": "C",
+      "solution": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = √(3^2 + 4^2) = 5, θ = tan^-1(4/3). Then we apply De Moivre's theorem.",
+      "explanation": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = √(3^2 + 4^2) = 5, θ = tan^-1(4/3). Then we apply De Moivre's theorem.",
+      "common_mistake_notes": "A common mistake is to forget to square the modulus and multiply the angle by the power. Answer A neglects to square the modulus, while answer B multiplies the modulus incorrectly."
+    },
+    {
+      "id": "2",
+      "stem": "Calculate (1 - √3i)^6 using De Moivre's theorem.",
+      "choices": {
+        "A": "(4 + 2√3i)",
+        "B": "(8 - 12√3i)",
+        "C": "(64 - 192√3i)",
+        "D": "(64 + 192√3i)"
+      },
+      "correct_choice": "C",
+      "solution": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = √(1^2 + (-√3)^2) = 2, θ = -π/3. Then we apply De Moivre's theorem.",
+      "explanation": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = √(1^2 + (-√3)^2) = 2, θ = -π/3. Then we apply De Moivre's theorem.",
+      "common_mistake_notes": "A common mistake is to confuse the angle with its reference angle or to forget that multiplying by an even number of π will result in a positive cosine value. Answer A and D use the wrong sign for the cosine part."
+    },
+    {
+      "id": "3",
+      "stem": "Find (2cis(π/4))^5 using De Moivre's theorem.",
+      "choices": {
+        "A": "(16cis(5π/4))",
+        "B": "(16cis(π/4))",
+        "C": "(32cis(π/4))",
+        "D": "(32cis(5π/4))"
+      },
+      "correct_choice": "A",
+      "solution": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. We apply De Moivre's theorem directly, multiplying the modulus by itself and adding the angle to itself five times.",
+      "explanation": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. We apply De Moivre's theorem directly, multiplying the modulus by itself and adding the angle to itself five times.",
+      "common_mistake_notes": "A common mistake is to forget that the angle should be multiplied by the power. Answer B neglects this step."
+    },
+    {
+      "id": "4",
+      "stem": "Calculate (-1 + i)^3 using De Moivre's theorem.",
+      "choices": {
+        "A": "(2 - 2i)",
+        "B": "(2 + 2i)",
+        "C": "(1 - 3i)",
+        "D": "(1 + 3i)"
+      },
+      "correct_choice": "A",
+      "solution": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = √((-1)^2 + 1^2) = √2, θ = π/4. Then we apply De Moivre's theorem.",
+      "explanation": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = √((-1)^2 + 1^2) = √2, θ = π/4. Then we apply De Moivre's theorem.",
+      "common_mistake_notes": "A common mistake is to forget that multiplying by an odd number of π will result in a negative cosine value. Answer B uses the wrong sign for the cosine part."
+    },
+    {
+      "id": "5",
+      "stem": "Use De Moivre's theorem to find (1 + i)^7.",
+      "choices": {
+        "A": "(2 - 6i)",
+        "B": "(16 + 32i)",
+        "C": "(16 - 32i)",
+        "D": "(8 + 14i)"
+      },
+      "correct_choice": "B",
+      "solution": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = √(1^2 + 1^2) = √2, θ = π/4. Then we apply De Moivre's theorem.",
+      "explanation": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = √(1^2 + 1^2) = √2, θ = π/4. Then we apply De Moivre's theorem.",
+      "common_mistake_notes": "A common mistake is to forget that multiplying by an odd number of π will result in a negative cosine value and a positive sine value. Answer A uses the wrong signs for both parts."
+    },
+    {
+      "id": "6",
+      "stem": "Calculate (3cis(-π/2))^8 using De Moivre's theorem.",
+      "choices": {
+        "A": "(81cis(4π))",
+        "B": "(81cis(-4π))",
+        "C": "(81cis(0))",
+        "D": "(81cis(π))"
+      },
+      "correct_choice": "C",
+      "solution": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = 3, θ = -π/2. Then we apply De Moivre's theorem.",
+      "explanation": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = 3, θ = -π/2. Then we apply De Moivre's theorem.",
+      "common_mistake_notes": "A common mistake is to forget that multiplying by an even number of π will result in a positive cosine value. Answer A uses the wrong sign for the cosine part."
+    },
+    {
+      "id": "7",
+      "stem": "Use De Moivre's theorem to find (4cis(π/3))^6.",
+      "choices": {
+        "A": "(256cis(π))",
+        "B": "(256cis(2π))",
+        "C": "(256cis(0))",
+        "D": "(256cis(π/3))"
+      },
+      "correct_choice": "B",
+      "solution": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = 4, θ = π/3. Then we apply De Moivre's theorem.",
+      "explanation": "De Moivre's theorem states that (r cis θ)^n = r^n cis (nθ), where 'cis' is the shorthand for cosine + i*sin. First, we find the modulus and argument of the complex number: r = 4, θ = π/3. Then we apply De Moivre's theorem.",
+      "common_mistake_notes": "A common mistake is to forget that multiplying by an even number of π will result in a positive cosine value. Answer A uses the wrong sign for the cosine part."
+    }
+  ]
+}

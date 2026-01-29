@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.5.11 Apply to engineering design
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.5 Optimization Problems
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+A mechanical engineer is designing a bracket for a new product. The bracket needs to support a load of 200 N and has a cross-sectional area of 5 cm². What is the minimum required yield strength (in MPa) for the material used in the bracket?
+A) 10
+B) 40
+C) 100
+D) 200
+Correct Answer: C
+
+Solution:
+The yield strength is calculated as the applied load divided by the cross-sectional area. So, Yield Strength = Load / Area = 200 N / (5 cm² * 10^4 m²/cm²) = 200 N / 5 * 10^6 m² = 40 MPa. Therefore, option C is correct.
+
+Explanation:
+Yield strength represents the stress at which a material begins to deform plastically and is an essential consideration in engineering design for load-bearing components.
+
+Common mistake note:
+A common mistake would be to choose option A, assuming that the yield strength is directly proportional to the applied load. However, this neglects the role of cross-sectional area in distributing the load.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+An aerospace engineer needs to select a material for a wing component that can withstand extreme temperatures ranging from -60°C to 350°C while maintaining its structural integrity. Which of the following materials would be the most suitable choice?
+A) Aluminum
+B) Titanium alloy
+C) Stainless steel
+D) Carbon fiber composite
+Correct Answer: B
+
+Solution:
+Titanium alloys are known for their high strength-to-weight ratio, excellent corrosion resistance, and ability to maintain their properties at both low and high temperatures. Therefore, option B is the most suitable choice.
+
+Explanation:
+Aluminum has good corrosion resistance but lower temperature tolerance compared to titanium. Stainless steel has better temperature resistance than aluminum but not as good as titanium. Carbon fiber composites are lightweight but may degrade at high temperatures.
+
+Common mistake note:
+A common mistake might be to choose option D, assuming that carbon fiber composites would be the lightest and strongest choice. However, their performance at extreme temperatures is less favorable compared to titanium alloys.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+An electrical engineer is designing a power cable for an industrial application with a maximum current of 100 A. The cable must have a resistance no greater than 0.5 Ω per kilometer. What should the minimum cross-sectional area (in mm²) of the copper wire be?
+A) 2
+B) 4
+C) 8
+D) 16
+Correct Answer: B
+
+Solution:
+The resistance R of a conductor is given by R = ρ * L / A, where ρ is the resistivity (for copper, approximately 1.72 Ω·m), L is the length (1 km = 1000 m), and A is the cross-sectional area in square meters. We need to find A such that R ≤ 0.5 Ω/km. Rearranging the formula: A ≥ ρ * L / R = 1.72 Ω·m * 1000 m / 0.5 Ω/km = 3440 mm². The smallest multiple of 1000 that is greater than 3440 is 4000 mm², which corresponds to option B.
+
+Explanation:
+The engineer must ensure the cable's resistance does not exceed the specified limit for safe and efficient power transmission.
+
+Common mistake note:
+A common mistake would be to choose option A, assuming that a smaller cross-sectional area would result in less resistance. However, this would lead to a higher resistance than allowed.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+An environmental engineer is designing a water treatment system for a small village. The system must filter out particles larger than 5 μm and bacteria with a diameter of approximately 0.5 μm. Which type of filtration method would be most appropriate?
+A) Reverse osmosis
+B) Sand filtration
+C) Ultrafiltration
+D) Microfiltration
+Correct Answer: D
+
+Solution:
+Microfiltration is a suitable choice for filtering out particles in the range of 0.1 to 10 μm, which includes both larger particles and bacteria with a diameter of approximately 0.5 μm.
+
+Explanation:
+Reverse osmosis is used for desalination and removes dissolved ions; sand filtration is effective for larger particles but not bacteria; ultrafiltration has a slightly smaller pore size than microfiltration, making it less suitable for this application.
+
+Common mistake note:
+A common mistake could be to choose option A or C, assuming that they would provide better filtration. However, reverse osmosis is overkill for this task and ultrafiltration may not filter out all bacteria.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+An industrial designer is creating a plastic part for an electronic device that needs to withstand a maximum torque of 10 N·m without deforming. The part has a circular cross-section with a diameter of 2 cm and is made of a material with a shear modulus of 3 GPa. What should the minimum thickness (in mm) of the part be?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: B
+
+Solution:
+The torque T that a circular cross-section can withstand is given by T = π * D^3 * G / 32, where D is the diameter and G is the shear modulus. We need to find the thickness t such that T ≤ 10 N·m. Rearranging the formula: t ≥ (32 * T) / (π * D^3 * G) = (32 * 10 N·m) / (π * (2 cm)^3 * 3 GPa * 10^9 Pa/ GPa) ≈ 2.04 mm. The smallest multiple of 0.1 mm that is greater than 2.04 is 2.1 mm, which corresponds to option B.
+
+Explanation:
+The designer must ensure the plastic part can withstand the specified torque without deforming during use.
+
+Common mistake note:
+A common mistake would be to choose option A, assuming that a thinner part would be sufficient. However, this would result in a lower torque capacity than required.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+A civil engineer is designing a bridge with a span of 100 meters. To minimize the weight and cost, the engineer decides to use prestressed concrete beams. The maximum compressive stress allowed in the beam is 25 MPa. What should the minimum cross-sectional area (in m²) of the beam be?
+A) 4
+B) 6
+C) 8
+D) 10
+Correct Answer: A
+
+Solution:
+The maximum compressive stress is given by Stress = Force / Area. Assuming uniform loading, the force acting on the beam (F) can be estimated as half of the weight of the beam itself (W), which is W = ρ * L * h * t, where ρ is the density of concrete (about 2400 kg/m³), L is the span, h is the height of the beam, and t is its thickness. Assuming a rectangular cross-section, we have A = h * t. To find the minimum area, we need to minimize both h and t while keeping Stress ≤ 25 MPa. Since Stress = W / A = (ρ * L * h * t) / (h * t), we can rearrange it as A ≥ ρ * L / 25 MPa. Plugging in the values: A ≥ 2400 kg/m³ * 100 m / 25 * 10^6 Pa = 9600 m² / 25 * 10^6 ≈ 38.4 m². The smallest multiple of 10 that is greater than 38.4 is 40 m², which corresponds to option A.
+
+Explanation:
+The engineer must ensure the prestressed concrete beam can withstand the compressive stress without failing due to excessive weight or cost.
+
+Common mistake note:
+A common mistake would be to choose a larger area, assuming that it would provide more safety. However, this would increase the weight and cost of the bridge.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+An automotive engineer is designing an engine component that must withstand 10,000 cycles of loading at a maximum stress level of 300 MPa before failure. The material used has a fatigue limit of 250 MPa. Will the component fail during its service life?
+A) Yes
+B) No
+C) Cannot determine with given information
+D) Depends on the loading frequency
+Correct Answer: B
+
+Solution:
+The fatigue limit is the stress level below which a material can undergo an infinite number of cycles without failure. Since the maximum stress level during loading (300 MPa) is less than the fatigue limit (250 MPa), the component will not fail during its service life.
+
+Explanation:
+Understanding the relationship between stress levels and fatigue is crucial in designing components that can withstand cyclic loading over their expected lifespan.
+
+Common mistake note:
+A common mistake might be to choose option A, assuming that any stress above 250 MPa would lead to failure. However, as long as the stress remains below the fatigue limit, the component will not fail due to cyclic loading.
+------------------------------------------------------------------------------

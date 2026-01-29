@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.2.6",
+  "objective_text": "Apply commutative laws",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "OnePlusOneCommutative",
+      "stem": "What is the result of adding 1 and 1?",
+      "choices": {
+        "A": "0",
+        "B": "2",
+        "C": "1",
+        "D": "3"
+      },
+      "correct_choice": "B",
+      "solution": "The commutative law states that changing the order of addition does not change the sum. So, 1 + 1 is equal to 1 + 1, which equals 2.",
+      "explanation": "Commutativity applies to addition: a + b = b + a.",
+      "common_mistake_notes": "A common mistake would be selecting A (0) or C (1), not understanding that adding two 1s results in 2."
+    },
+    {
+      "id": "TwoPlusThreeCommutative",
+      "stem": "What is the result of adding 2 and 3?",
+      "choices": {
+        "A": "5",
+        "B": "6",
+        "C": "4",
+        "D": "7"
+      },
+      "correct_choice": "B",
+      "solution": "The commutative law holds for any numbers. So, 2 + 3 is equal to 3 + 2, which equals 5.",
+      "explanation": "Commutativity applies to addition: a + b = b + a.",
+      "common_mistake_notes": "A common mistake would be selecting C (4) or D (7), not realizing that the commutative law does not change the sum."
+    },
+    {
+      "id": "MultiplicationFiveByTwoCommutative",
+      "stem": "What is the result of multiplying 5 by 2?",
+      "choices": {
+        "A": "10",
+        "B": "7",
+        "C": "4",
+        "D": "12"
+      },
+      "correct_choice": "A",
+      "solution": "The commutative law holds for multiplication: 5 \times 2 is equal to 2 \times 5, which equals 10.",
+      "explanation": "Commutativity applies to multiplication: a \times b = b \times a.",
+      "common_mistake_notes": "A common mistake would be selecting B (7) or C (4), not realizing that the commutative law does not change the product."
+    },
+    {
+      "id": "MultiplicationAndAdditionMixed",
+      "stem": "What is the result of adding 3 multiplied by 2 and 1?",
+      "choices": {
+        "A": "7",
+        "B": "8",
+        "C": "5",
+        "D": "6"
+      },
+      "correct_choice": "A",
+      "solution": "First, multiply 3 by 2 (3 \times 2 = 6), then add 1: 6 + 1 = 7. The commutative law applies to addition but not multiplication.",
+      "explanation": "Commutativity applies to addition: a + b = b + a, but not to multiplication: a \times b ≠ b \times a.",
+      "common_mistake_notes": "A common mistake would be selecting D (6), assuming the commutative law applies to both addition and multiplication."
+    },
+    {
+      "id": "MultiplicationAndSubtractionMixed",
+      "stem": "What is the result of multiplying 4 by 3 and then subtracting 2?",
+      "choices": {
+        "A": "10",
+        "B": "12",
+        "C": "8",
+        "D": "14"
+      },
+      "correct_choice": "A",
+      "solution": "First, multiply 4 by 3 (4 \times 3 = 12), then subtract 2: 12 - 2 = 10. The commutative law does not apply to subtraction.",
+      "explanation": "Commutativity applies to addition but not to subtraction or multiplication: a + b = b + a, and a \times b ≠ b \times a.",
+      "common_mistake_notes": "A common mistake would be selecting B (12), assuming the commutative law applies to both multiplication and subtraction."
+    },
+    {
+      "id": "MultiplicationAndDivisionMixed",
+      "stem": "What is the result of multiplying 6 by 3 and then dividing by 2?",
+      "choices": {
+        "A": "9",
+        "B": "3",
+        "C": "18",
+        "D": "4"
+      },
+      "correct_choice": "A",
+      "solution": "First, multiply 6 by 3 (6 \times 3 = 18), then divide by 2: 18 / 2 = 9. The commutative law does not apply to division.",
+      "explanation": "Commutativity applies to addition but not to subtraction or multiplication: a + b = b + a, and a \times b ≠ b \times a.",
+      "common_mistake_notes": "A common mistake would be selecting C (18), assuming the commutative law applies to both multiplication and division."
+    },
+    {
+      "id": "MultiplicationAndDivisionMixed2",
+      "stem": "What is the result of dividing 12 by 3 and then multiplying by 2?",
+      "choices": {
+        "A": "8",
+        "B": "4",
+        "C": "6",
+        "D": "10"
+      },
+      "correct_choice": "A",
+      "solution": "First, divide 12 by 3 (12 / 3 = 4), then multiply by 2: 4 \times 2 = 8. The commutative law does not apply to division.",
+      "explanation": "Commutativity applies to addition but not to subtraction or multiplication: a + b = b + a, and a \times b ≠ b \times a.",
+      "common_mistake_notes": "A common mistake would be selecting C (6), assuming the commutative law applies to both division and multiplication."
+    }
+  ]
+}

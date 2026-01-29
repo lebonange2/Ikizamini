@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.12.15 Apply to robotics
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.12 Transformations in the Plane
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Assembling a Robot Arm):
+A robotic arm needs to be assembled for an assembly line. Which of the following steps is necessary for proper assembly?
+A) Connecting the power source without checking the wiring diagram.
+B) Attaching all motors and servos in any order.
+C) Following the manufacturer's instructions and torque specifications.
+D) Using any available screwdriver, regardless of size or fit.
+Correct Answer: C
+
+Solution:
+C: Following the manufacturer's instructions and torque specifications is necessary for proper assembly to ensure that the robotic arm functions correctly and safely. Not following the instructions can lead to incorrect connections, damage to components, or even injury.
+
+Explanation:
+Proper assembly of a robotic arm requires adherence to specific guidelines to guarantee optimal performance and safety.
+
+Common mistake note:
+A common mistake is not checking the wiring diagram, which could result in misconnections or electrical issues. B is incorrect because attaching motors and servos in any order may lead to mechanical malfunctions. D is wrong as using the wrong screwdriver can damage screws or the robot's components.
+------------------------------------------------------------------------------
+
+Problem 2 (Calibrating a Robot Sensor):
+A robot's proximity sensor needs calibration. Which of the following actions would correctly calibrate the sensor?
+A) Covering the sensor with tape to block all signals.
+B) Moving the robot closer and farther from an object without adjusting settings.
+C) Disabling the sensor temporarily during calibration.
+D) Increasing the sensitivity to its maximum value.
+Correct Answer: B
+
+Solution:
+B: Moving the robot closer and farther from an object without adjusting settings allows for proper adjustment of the sensor's threshold, ensuring accurate distance measurements.
+
+Explanation:
+Proper calibration involves testing the sensor's response under various conditions to find the optimal sensitivity and range.
+
+Common mistake note:
+A is incorrect because blocking the sensor prevents it from receiving any signals. C is wrong as disabling the sensor during calibration defeats its purpose. D can lead to false positives or missed detections if the sensitivity is too high.
+------------------------------------------------------------------------------
+
+Problem 3 (Programming a Robot Path):
+A robot needs to follow a specific path in a warehouse. Which programming language would be best suited for this task?
+A) Python, for its simplicity and versatility.
+B) C++, for its speed and low-level control.
+C) MATLAB, for its mathematical capabilities.
+D) HTML, for web-based interface design.
+Correct Answer: A
+
+Solution:
+A: Python is a suitable choice for programming robot paths due to its simplicity, readability, and extensive libraries for robotics applications.
+
+Explanation:
+Python offers easy-to-use libraries like ROS (Robot Operating System) that simplify the process of programming robot movements.
+
+Common mistake note:
+B is incorrect because C++ may be too complex and time-consuming for this task. C is not ideal as MATLAB is more focused on data analysis, not robotics control. D is unrelated to robotics programming.
+------------------------------------------------------------------------------
+
+Problem 4 (Controlling a Robot via Wi-Fi):
+A remote-controlled robot requires wireless communication. Which protocol would be most appropriate?
+A) FTP, for file transfer.
+B) HTTP, for web browsing.
+C) UDP, for low-latency data transmission.
+D) TCP, for reliable, high-latency data transfer.
+Correct Answer: C
+
+Solution:
+C: UDP (User Datagram Protocol) is suitable for low-latency data transmission needed for real-time remote control of a robot to ensure smooth and responsive movement.
+
+Explanation:
+UDP is preferred over TCP in robotics applications because it has lower overhead, making it more efficient for real-time communication.
+
+Common mistake note:
+A and B are incorrect as they are file transfer and web browsing protocols, respectively. D is unsuitable due to its higher latency, which can lead to delays in robot response.
+------------------------------------------------------------------------------
+
+Problem 5 (Detecting Obstacles with a Robot):
+A robot needs to detect obstacles while navigating an environment. Which sensor would be best for this purpose?
+A) Temperature sensor, to measure heat.
+B) LIDAR, to measure distances using laser beams.
+C) Pressure sensor, to measure air pressure changes.
+D) Infrared thermometer, to measure temperature differences.
+Correct Answer: B
+
+Solution:
+B: LIDAR (Light Detection and Ranging) is the best choice for detecting obstacles as it uses laser beams to measure distances and create a 3D map of the environment, allowing the robot to navigate safely.
+
+Explanation:
+LIDAR sensors are specifically designed for obstacle detection in robotics applications.
+
+Common mistake note:
+A, C, and D are unrelated to obstacle detection; they serve different purposes in robotics.
+------------------------------------------------------------------------------
+
+Problem 6 (Powering a Mobile Robot):
+A mobile robot needs a power source. Which of the following would be the most suitable?
+A) Alkaline batteries, for their high voltage.
+B) Lithium-ion batteries, for their energy density and rechargeability.
+C) Dry cells, for their long shelf life.
+D) Lead-acid batteries, for their low cost.
+Correct Answer: B
+
+Solution:
+B: Lithium-ion batteries are the most suitable choice due to their high energy density, rechargeability, and lightweight design, which is crucial for mobile robots.
+
+Explanation:
+Lithium-ion batteries provide a balance of power, weight, and longevity, making them ideal for robotics applications.
+
+Common mistake note:
+A, C, and D are less suitable choices. Alkaline batteries have limited energy density, dry cells are heavy and not rechargeable, and lead-acid batteries are heavy and have lower energy density compared to lithium-ion.
+------------------------------------------------------------------------------
+
+Problem 7 (Robot Arm Gripper Design):
+A robot arm needs a gripper for grasping objects of various shapes. Which type of gripper would be the most versatile?
+A) Vacuum gripper, using suction to grasp objects.
+B) Magnetic gripper, using magnets to attract metal objects.
+C) Parallel-jaw gripper, with two jaws that close around an object.
+D) Adhesive gripper, using a sticky surface to adhere to objects.
+Correct Answer: A
+
+Solution:
+A: A vacuum gripper is the most versatile as it can grasp a wide range of objects without relying on specific shapes or materials, making it suitable for various applications.
+
+Explanation:
+A vacuum gripper's suction allows it to grip objects regardless of their surface properties or shape, providing flexibility in grasping tasks.
+
+Common mistake note:
+B is limited to metal objects. C may not work well with delicate or irregularly shaped items. D could be affected by dust, dirt, or surface contamination.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.9.3 Calculate P(n,r) = n!/(n-r)!
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.9 Permutations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the value of P(8, 4)?
+A) 7!
+B) 4!
+C) 20
+D) 35
+Correct Answer: C
+
+Solution:
+P(8, 4) = 8! / (8 - 4)! = 8! / 4! = (8 × 7 × 6 × 5) / (4 × 3 × 2 × 1) = 20
+
+Explanation:
+The formula for P(n, r) is n!/(n- r)!, where n is the total number of items and r is the number chosen. In this case, n=8 and r=4.
+
+Common mistake note:
+A common mistake would be to calculate 8! directly without dividing by (8-4)!. This would result in an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is the probability of selecting 3 red balls from a bag containing 5 red and 7 blue balls, if order does not matter?
+A) 0.167
+B) 0.286
+C) 0.429
+D) 0.571
+Correct Answer: B
+
+Solution:
+P = P(12, 3) / C(12, 3) = (12! / (12 - 3)!)/(12! / (12 - 5)!) = (12 × 11 × 10) / (7 × 6 × 5) ≈ 0.286
+
+Explanation:
+We use the combination formula C(n, r) for selecting balls without regard to order, then divide by the total combinations of selecting 3 balls from 12.
+
+Common mistake note:
+A common mistake would be to calculate P(5, 3) instead of P(12, 3), assuming only red balls were considered. This would lead to an incorrect probability.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+How many ways can you choose 4 students from a group of 10 for a committee?
+A) 6!
+B) 10!
+C) 210
+D) 360
+Correct Answer: C
+
+Solution:
+P(10, 4) = 10! / (10 - 4)! = 10 × 9 × 8 × 7 = 210
+
+Explanation:
+The number of ways to choose r items from a set of n is given by P(n, r). Here, n=10 and r=4.
+
+Common mistake note:
+A common mistake would be to use the combination formula C(10, 4) instead of P(10, 4), which would result in a smaller number.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the value of P(6, 2)?
+A) 5!
+B) 72
+C) 30
+D) 12
+Correct Answer: C
+
+Solution:
+P(6, 2) = 6! / (6 - 2)! = 6 × 5 = 30
+
+Explanation:
+The formula for P(n, r) is n!/(n- r)!, where n is the total number of items and r is the number chosen. In this case, n=6 and r=2.
+
+Common mistake note:
+A common mistake would be to calculate 6! directly without dividing by (6-2)!. This would result in an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+How many ways can you select 3 desserts from a menu of 8 different options if order matters?
+A) 8!
+B) 56
+C) 336
+D) 20
+Correct Answer: C
+
+Solution:
+P(8, 3) = 8! / (8 - 3)! = 8 × 7 × 6 = 336
+
+Explanation:
+The formula for P(n, r) is used when order matters. Here, n=8 and r=3.
+
+Common mistake note:
+A common mistake would be to use the combination formula C(8, 3), which does not account for order, resulting in an incorrect number.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the value of P(15, 7)?
+A) 14!
+B) 105
+C) 630
+D) 945
+Correct Answer: D
+
+Solution:
+P(15, 7) = 15! / (15 - 7)! = 15 × 14 × 13 × 12 × 11 × 10 × 9 = 945
+
+Explanation:
+The formula for P(n, r) is n!/(n- r)!, where n is the total number of items and r is the number chosen. In this case, n=15 and r=7.
+
+Common mistake note:
+A common mistake would be to calculate 15! directly without dividing by (15-7)!. This would result in an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the probability of drawing a pair of kings from a standard deck of 52 cards, if order does not matter?
+A) 0.0036
+B) 0.0144
+C) 0.0288
+D) 0.0576
+Correct Answer: B
+
+Solution:
+P = P(4, 2) / C(52, 2) = (4! / (4 - 2)!)/(52! / (52 - 2)!) ≈ 0.0144
+
+Explanation:
+We use the permutation formula for selecting kings and the combination formula for selecting any two cards from a deck of 52, then divide to find the probability.
+
+Common mistake note:
+A common mistake would be to calculate P(4, 2) without dividing by C(52, 2), which would result in an incorrect probability.
+------------------------------------------------------------------------------

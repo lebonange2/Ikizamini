@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.6.5 Solve volume change rates
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.6 Related Rates
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Well-Insulated Container):
+A well-insulated container holds 500 cubic meters of water at a temperature of 20°C. The container loses heat at a rate of 10 cubic meters per hour per degree Celsius difference from room temperature. If the room temperature is 15°C, what will be the volume of water in the container after 3 hours?
+A) 400 m³
+B) 425 m³
+C) 450 m³
+D) 475 m³
+Correct Answer: B
+
+Solution:
+The rate of volume loss is given by the product of the temperature difference and the heat loss rate. The temperature difference after 3 hours is (20°C - 15°C) * 3 = 15°C. So, the total volume lost in 3 hours is 15°C * 10 m³/hour/°C = 150 m³. Start with the initial volume and subtract the volume lost: 500 m³ - 150 m³ = 425 m³.
+
+Explanation:
+The problem involves calculating the change in volume over time based on a rate that depends on temperature difference. The correct solution uses the given rates to calculate the total volume loss and then subtracts it from the initial volume.
+
+Common mistake note:
+A common mistake is to forget to multiply the temperature difference by 3 hours when calculating the total volume lost.
+------------------------------------------------------------------------------
+
+Problem 2 (Growing Ice Cube):
+An ice cube with a volume of 10 cubic centimeters melts at a rate of 0.2 cubic centimeters per minute. If the melting continues for 15 minutes, what will be the new volume of the ice cube?
+A) 7.5 cm³
+B) 8.5 cm³
+C) 9.5 cm³
+D) 10.5 cm³
+Correct Answer: B
+
+Solution:
+The total volume lost after 15 minutes is 0.2 cm³/minute * 15 minutes = 3 cm³. Subtract the volume lost from the initial volume: 10 cm³ - 3 cm³ = 7 cm³.
+
+Explanation:
+This question requires calculating the new volume by subtracting the total volume melted from the initial volume. The melting rate is given per minute, so it must be multiplied by the time in minutes to find the total volume lost.
+
+Common mistake note:
+A common mistake is to forget to convert the time from minutes to a single unit (e.g., hours) before calculating the total volume lost.
+------------------------------------------------------------------------------
+
+Problem 3 (Water Pumping):
+A pump fills a swimming pool with a capacity of 20,000 gallons at a rate of 500 gallons per minute. How long will it take to fill the pool if the initial volume is 4,000 gallons?
+A) 36 minutes
+B) 38 minutes
+C) 40 minutes
+D) 42 minutes
+Correct Answer: C
+
+Solution:
+First, find the volume that needs to be pumped: 20,000 gallons - 4,000 gallons = 16,000 gallons. Then divide the volume by the pumping rate: 16,000 gallons / 500 gallons/minute = 32 minutes. Since the pool is not completely empty, we need to add the time it takes to fill the initial 4,000 gallons: 32 minutes + 4 minutes = 36 minutes.
+
+Explanation:
+The problem involves calculating the time needed to fill a partially filled pool by finding the volume that needs to be added and dividing it by the pumping rate. The initial volume must also be considered when calculating the total time.
+
+Common mistake note:
+A common mistake is to forget to account for the initial volume of water in the pool, leading to an underestimate of the total time needed.
+------------------------------------------------------------------------------
+
+Problem 4 (Filling a Tank):
+A tank with a capacity of 100 liters is being filled at a rate of 5 liters per minute. How long will it take to fill the tank if it is already 25% full?
+A) 10 minutes
+B) 12 minutes
+C) 14 minutes
+D) 16 minutes
+Correct Answer: B
+
+Solution:
+First, find the volume that needs to be filled: 100 liters * (1 - 0.25) = 75 liters. Then divide the volume by the filling rate: 75 liters / 5 liters/minute = 15 minutes.
+
+Explanation:
+This question requires calculating the time needed to fill a partially filled tank by finding the remaining volume and dividing it by the filling rate.
+
+Common mistake note:
+A common mistake is to forget to calculate the remaining volume after accounting for the initial fill, leading to an overestimate or underestimate of the total time needed.
+------------------------------------------------------------------------------
+
+Problem 5 (Evaporating Solution):
+A solution with a volume of 200 milliliters evaporates at a rate of 5 milliliters per hour. If the evaporation continues for 6 hours, what will be the new volume of the solution?
+A) 170 mL
+B) 180 mL
+C) 190 mL
+D) 200 mL
+Correct Answer: C
+
+Solution:
+The total volume evaporated after 6 hours is 5 mL/ho... (truncated for brevity) ...e time from hours to a single unit (e.g., minutes) before calculating the total volume evaporated.
+
+Explanation:
+This question requires calculating the new volume by subtracting the total volume evaporated from the initial volume. The evaporation rate is given per hour, so it must be multiplied by the time in hours to find the total volume lost.
+
+Common mistake note:
+A common mistake is to forget to convert the time from hours to a single unit (e.g., minutes) before calculating the total volume evaporated.
+------------------------------------------------------------------------------
+
+Problem 6 (Pouring Water):
+A bucket with a capacity of 50 gallons is being filled from a tap that flows at a rate of 2 gallons per second. How long will it take to fill the bucket if it is already 40% full?
+A) 30 seconds
+B) 40 seconds
+C) 50 seconds
+D) 60 seconds
+Correct Answer: C
+
+Solution:
+First, find the volume that needs to be filled: 50 gallons * (1 - 0.4) = 30 gallons. Then divide the volume by the filling rate: 30 gallons / 2 gallons/second = 15 seconds.
+
+Explanation:
+This question requires calculating the time needed to fill a partially filled bucket by finding the remaining volume and dividing it by the filling rate.
+
+Common mistake note:
+A common mistake is to forget to calculate the remaining volume after accounting for the initial fill, leading to an overestimate or underestimate of the total time needed.
+------------------------------------------------------------------------------
+
+Problem 7 (Melting Ice Cube):
+An ice cube with a volume of 15 cubic inches melts at a rate of 0.3 cubic inches per minute. If the melting continues for 20 minutes, what will be the new volume of the ice cube?
+A) 9 in³
+B) 10 in³
+C) 11 in³
+D) 12 in³
+Correct Answer: C
+
+Solution:
+The total volume lost after 20 minutes is 0.3 in³/minute * 20 minutes = 6 in³. Subtract the volume lost from the initial volume: 15 in³ - 6 in³ = 9 in³.
+
+Explanation:
+This question requires calculating the new volume by subtracting the total volume melted from the initial volume. The melting rate is given per minute, so it must be multiplied by the time in minutes to find the total volume lost.
+
+Common mistake note:
+A common mistake is to forget to convert the time from minutes to a single unit (e.g., hours) before calculating the total volume lost.
+------------------------------------------------------------------------------

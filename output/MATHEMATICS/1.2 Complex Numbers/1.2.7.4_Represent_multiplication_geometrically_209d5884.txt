@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.7.4 Represent multiplication geometrically
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.7 Argand Diagrams and Geometric Interpretation
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (InequalityGraphs):
+The graph below represents the inequality y > 3x. Which of the following graphs represents the solution to the equation 2y = 6x?
+A) A line with a positive slope passing through the origin.
+B) A line with a negative slope not passing through the origin.
+C) A line with a slope of 2 passing through the point (0, 0).
+D) A line with a slope of 3 passing through the point (0, 6).
+Correct Answer: C
+
+Solution:
+The equation 2y = 6x simplifies to y = 3x. This is equivalent to multiplying both sides by 2, which does not change the inequality relationship. The correct graph should represent a line with a slope of 3 and passing through the origin. Only choice C satisfies these conditions.
+
+Explanation:
+Multiplication by a positive constant does not change the direction of inequality; it only scales the graph. Since we multiplied both sides of y > 3x by 2, the new equation should have the same slope as the original but be scaled up by a factor of 2.
+
+Common mistake note:
+Common mistake: Choosing A or B because they do not consider the effect of multiplying both sides by a positive number. This does not change the direction of the inequality.
+------------------------------------------------------------------------------
+
+Problem 2 (RectanglesArea):
+A rectangle has a length of 5 units and a width of 4 units. What is the area of a similar rectangle with twice the length and half the width?
+A) 10 square units
+B) 20 square units
+C) 40 square units
+D) 80 square units
+Correct Answer: B
+
+Solution:
+The area of a rectangle is length times width. Doubling the length and halving the width results in an area of (2 * 5) * (1/2 * 4) = 10 * 2 = 20 square units.
+
+Explanation:
+When multiplying two factors being multiplied together, you can multiply each factor separately. In this case, doubling one factor and halving the other does not change the area.
+
+Common mistake note:
+Common mistake: Assuming that multiplying both length and width by different factors would result in a more complex calculation. However, since they are being multiplied together, the multiplication can be done separately.
+------------------------------------------------------------------------------
+
+Problem 3 (TriangleArea):
+A triangle has base 6 units and height 3 units. If we double both the base and the height, what is the area of the new triangle?
+A) 9 square units
+B) 18 square units
+C) 27 square units
+D) 36 square units
+Correct Answer: B
+
+Solution:
+The area of a triangle is 1/2 * base * height. Doubling both the base and the height results in an area of (1/2 * 2 * 6) * (2 * 3) = 6 * 6 = 36 square units. However, since we doubled both dimensions, the new area is four times the original.
+
+Explanation:
+When multiplying a factor by a constant in an area formula, multiply that factor directly. In this case, doubling both base and height quadruples the area because each of the two factors is doubled.
+
+Common mistake note:
+Common mistake: Doubling the area by multiplying only one of the dimensions (base or height) instead of considering the effect on both dimensions.
+------------------------------------------------------------------------------
+
+Problem 4 (ScalingCircleArea):
+A circle has a radius of 3 units. If we double the radius, what is the area of the new circle?
+A) 9π square units
+B) 18π square units
+C) 27π square units
+D) 36π square units
+Correct Answer: C
+
+Solution:
+The area of a circle is πr^2. Doubling the radius results in an area of π(2r)^2 = 4πr^2. With r = 3, the new area is 4π(3^2) = 36π square units.
+
+Explanation:
+When scaling a circle's radius by a factor, the area scales by the square of that factor. In this case, doubling the radius results in an area four times the original.
+
+Common mistake note:
+Common mistake: Assuming that multiplying the radius by 2 would double the area, not realizing that the area is proportional to the square of the radius.
+------------------------------------------------------------------------------
+
+Problem 5 (ScalingVolumeCuboid):
+A cuboid has dimensions 3 units by 4 units by 5 units. If we triple the length and halve the width, what is the new volume?
+A) 180 cubic units
+B) 270 cubic units
+C) 405 cubic units
+D) 540 cubic units
+Correct Answer: B
+
+Solution:
+The volume of a cuboid is length * width * height. Tripling the length and halving the width results in a new volume of (3 * 3) * (1/2 * 4) * 5 = 9 * 2 * 5 = 90 cubic units. However, since the height remains unchanged, the total volume is 90 * 5 = 450 cubic units.
+
+Explanation:
+When scaling different dimensions of a cuboid by different factors, multiply each dimension separately and then multiply them together. In this case, length was tripled, width was halved, and height remained the same, resulting in a total volume increase.
+
+Common mistake note:
+Common mistake: Incorrectly multiplying all three dimensions together without considering the effect of keeping one dimension unchanged.
+------------------------------------------------------------------------------
+
+Problem 6 (ScalingVolumeCylinder):
+A cylinder has a radius of 3 units and a height of 5 units. If we double both the radius and the height, what is the new volume?
+A) 90π cubic units
+B) 180π cubic units
+C) 270π cubic units
+D) 360π cubic units
+Correct Answer: C
+
+Solution:
+The volume of a cylinder is πr^2h. Doubling both the radius and the height results in a new volume of π(2r)^2 * 2h = 4πr^2 * 2h = 8πr^2h. With r = 3 and h = 5, the new volume is 8π(3^2) * 5 = 720π cubic units.
+
+Explanation:
+When scaling a cylinder's radius and height by a factor, the volume scales by the product of the squares of those factors. In this case, doubling both radius and height results in an 8 times increase in volume.
+
+Common mistake note:
+Common mistake: Assuming that multiplying the radius and height by 2 would double the volume, not realizing that the volume is proportional to the square of the radius and linearly proportional to the height.
+------------------------------------------------------------------------------
+
+Problem 7 (ScalingVolumeSphere):
+A sphere has a radius of 3 units. If we quadruple the radius, what is the new volume?
+A) 108π cubic units
+B) 216π cubic units
+C) 432π cubic units
+D) 729π cubic units
+Correct Answer: C
+
+Solution:
+The volume of a sphere is (4/3)πr^3. Quadrupling the radius results in a new volume of (4/3)π(4r)^3 = 64πr^3. With r = 3, the new volume is (4/3)π(4*3)^3 = 1024π cubic units.
+
+Explanation:
+When scaling a sphere's radius by a factor, the volume scales by the cube of that factor. In this case, quadrupling the radius results in a 64 times increase in volume.
+
+Common mistake note:
+Common mistake: Assuming that multiplying the radius by 4 would simply multiply the volume by 4, not realizing that the volume is proportional to the cube of the radius.
+------------------------------------------------------------------------------

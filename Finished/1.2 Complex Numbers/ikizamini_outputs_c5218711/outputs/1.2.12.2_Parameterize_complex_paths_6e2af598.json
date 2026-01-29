@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.12.2",
+  "objective_text": "Parameterize complex paths",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "IncorrectParameters",
+      "stem": "A function `draw_shape(x, y)` is used to draw a shape with parameters x and y. To draw the same shape at different positions, which of the following code snippets correctly parameterizes the position?",
+      "choices": {
+        "A": "draw_shape(50, 100)",
+        "B": "draw_shape(shape_x, 100)",
+        "C": "draw_shape(x, shape_y)",
+        "D": "draw_shape(position_x, position_y)"
+      },
+      "correct_choice": "D",
+      "solution": "The correct answer is D. This snippet parameterizes the position by using variables `position_x` and `position_y`, allowing for different positions to be passed in when calling the function. The other options do not use variables or only use one variable, which would result in drawing the shape at a fixed position or along one axis.",
+      "explanation": "To parameterize a complex path, you need to use variables that can hold different values for each instance of the path. Options A, B, and C either don't use variables for both dimensions or use only one variable, making them incorrect choices.",
+      "common_mistake_notes": "Common mistake: Not using two separate variables for both x and y coordinates."
+    },
+    {
+      "id": "IncorrectPathFunction",
+      "stem": "A program uses a function `draw_circle(radius, center_x, center_y) to draw circles. To create multiple circles with different radii at varying positions, which of the following code snippets correctly parameterizes the circle creation?",
+      "choices": {
+        "A": "for i in range(5): draw_circle(i)",
+        "B": "for i in range(5): draw_circle(radius=i, center=(0, 0))",
+        "C": "for i in range(5): draw_circle(i, center_x=i*10, center_y=i*10)",
+        "D": "for i in range(5): draw_circle(i, (i*10, i*10))"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C. This snippet parameterizes the circle creation by using a loop and variables `i`, `center_x`, and `center_y`. The other options either don't vary the position or use incorrect variable assignments.",
+      "explanation": "To parameterize the creation of multiple circles, you need to vary both the radius and the center coordinates. Option A only varies the radius but not the position, option B uses a fixed center, and option D assigns the same value for both `center_x` and `center_y`. Only option C correctly varies all parameters.",
+      "common_mistake_notes": "Common mistake: Not varying the center coordinates or using incorrect variable assignments."
+    },
+    {
+      "id": "IncorrectPathData",
+      "stem": "A program generates a complex path by concatenating multiple line segments. The function `draw_line(x1, y1, x2, y2) is used to draw each line segment. To create a parameterized version of the path, which of the following code snippets correctly uses arrays for the coordinates?",
+      "choices": {
+        "A": "def draw_complex_path(points): for i in range(len(points)): draw_line(points[i])",
+        "B": "def draw_complex_path(line_data): for i in range(len(line_data)): draw_line(line_data[ i][0], line_data[ i][1], line_data[ i][2], line_data[ i][3])",
+        "C": "def draw_complex_path(lines): for line in lines: draw_line(line[0], line[1], line[2], line[3])",
+        "D": "def draw_complex_path(path): for i in range(len(path)): draw_line(path[i][0], path[i][1], path[i][2], path[i][3])"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C. This snippet correctly uses a 2D array `lines` to store the x and y coordinates for each line segment, allowing for easy manipulation of the path data. The other options either don't use arrays or have incorrect indexing.",
+      "explanation": "To parameterize a complex path, you need to store the coordinates in an array format that can be easily modified. Option A doesn't use arrays at all, option B uses a 1D array with incorrect indexing, and option D has incorrect variable name. Only option C correctly uses a 2D array with proper indexing.",
+      "common_mistake_notes": "Common mistake: Not using a 2D array or incorrect indexing."
+    },
+    {
+      "id": "IncorrectPathAnimation",
+      "stem": "A program animates a character moving along a complex path by updating its position in each frame. The function `update_position(x, y) is used to update the character's position. To create a parameterized animation, which of the following code snippets correctly uses a list of positions?",
+      "choices": {
+        "A": "def animate_character(path_ data): for i in range(len(path_ data)): update_ position(path_ data[i])",
+        "B": "def animate_character(positions): for i in range(len(positions)): update_ position(positions[ i][0], positions[ i][1])",
+        "C": "def animate_character(steps): for step in steps: update_ position(step[0], step[1])",
+        "D": "def animate_character(frame_ data): for i in range(len(frame_ data)): update_ position(frame_ data[i][0], frame_ data[i][1])"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C. This snippet correctly uses a list `steps` to store the x and y coordinates for each frame, allowing for easy manipulation of the character's movement. The other options either don't use lists or have incorrect indexing.",
+      "explanation": "To parameterize an animation, you need to store the positions in a list format that can be easily modified. Option A doesn't use lists at all, option B uses a 1D array with incorrect indexing, and option D has incorrect variable name. Only option C correctly uses a list with proper indexing.",
+      "common_mistake_notes": "Common mistake: Not using a list or incorrect indexing."
+    },
+    {
+      "id": "IncorrectPathInterpolation",
+      "stem": "A program generates a smooth path between two points by interpolating multiple intermediate points. The function `interpolate_points(x1, y1, x2, y2, num_interpolated) is used to generate the interpolated points. To create a parameterized version of the interpolation, which of the following code snippets correctly uses variables for the input and output?",
+      "choices": {
+        "A": "def smooth_ path(start_point, end_point): return interpolate_points(start_point, end_point, 10)",
+        "B": "def smooth_ path(num_interpolated, start_ x, start_ y, end_ x, end_ y): return interpolate_points(start_ x, start_ y, end_ x, end_ y, num_interpolated)",
+        "C": "def smooth_ path( points, num_interpolated): return [interpolate_points(point[0], point[1], points[ i+1][0], points[ i+1][1], num_interpolated) for i in range(len(points)-1)]",
+        "D": "def smooth_ path(path_ data, num_interpolated): return [interpolate_points(data[ i][0], data[ i][1], data[ i+1][0], data[ i+1][1], num_interpolated) for i in range(len(path_ data)-1)]"
+      },
+      "correct_choice": "D",
+      "solution": "The correct answer is D. This snippet correctly uses a 2D array `path_ data` to store the start and end points, and a variable `num_interpolated` for the number of intermediate points. The other options either don't use variables or have incorrect indexing.",
+      "explanation": "To parameterize the interpolation process, you need to store the start and end points in an array format and use a variable for the number of intermediate points. Option A doesn't use variables for the input points, option B uses incorrect variable names, and option C has incorrect indexing. Only option D correctly uses arrays with proper indexing.",
+      "common_mistake_notes": "Common mistake: Not using arrays or incorrect indexing."
+    },
+    {
+      "id": "IncorrectPathTransformation",
+      "stem": "A program applies a transformation to a complex path before drawing it. The function `apply_ transformation(x, y, scale, rotation) is used to apply the transformation. To create a parameterized version of the transformation, which of the following code snippets correctly uses variables for the transformation parameters?",
+      "choices": {
+        "A": "def transformed_path( path_ data): return [apply_ transformation(point[0], point[1], 2, 45) for point in path_ data]",
+        "B": "def transformed_path(scale, rotation, points): return [apply_ transformation(points[ i][0], points[ i][1], scale, rotation) for i in range(len(points))]",
+        "C": "def transformed_path(path, scale=2, rotation=45): return [apply_ transformation(point[0], point[1], scale, rotation) for point in path]",
+        "D": "def transformed_path(scale, rotation, path_ data): return [apply_ transformation(path_ data[ i][0], path_ data[ i][1], scale, rotation) for i in range(len(path_ data))]"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C. This snippet correctly uses variables `scale` and `rotation` to apply the transformation to each point in the path, with default values provided. The other options either don't use variables or have incorrect variable names.",
+      "explanation": "To parameterize a transformation, you need to use variables for the transformation parameters and apply them to each point in the path. Option A doesn't provide default values, option B has incorrect variable names, and option D uses an unnecessary array variable. Only option C correctly uses variables with proper defaults.",
+      "common_mistake_notes": "Common mistake: Not providing default values or using incorrect variable names."
+    },
+    {
+      "id": "IncorrectPathComposition",
+      "stem": "A program composes multiple complex paths into a single compound path by concatenating them. The function `concatenate_paths(path1, path2) is used to combine two paths. To create a parameterized version of the composition, which of the following code snippets correctly uses lists for the input paths?",
+      "choices": {
+        "A": "def compound_path( paths): return concatenate_paths(paths)",
+        "B": "def compound_path(num_ paths, path_ data): return [concatenate_paths(path_ data[ i], path_ data[ i+1]) for i in range(num_ paths-1)]",
+        "C": "def compound_path(path_ list, num_ paths): return [concatenate_paths(path_ list[ i], path_ list[ i+1]) for i in range(num_ paths-1)]",
+        "D": "def compound_path(composite_ data, num_ paths): return [concatenate_paths(composite_ data[ i][0], composite_ data[ i][1]) for i in range(num_ paths-1)]"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C. This snippet correctly uses a list `path_ list` to store the input paths and a variable `num_ paths` to control the composition process. The other options either don't use lists or have incorrect indexing.",
+      "explanation": "To parameterize the path composition, you need to store the individual paths in a list format and use a variable for the number of paths being combined. Option A doesn't use variables for the input paths, option B has incorrect indexing, and option D uses an unnecessary 2D array. Only option C correctly uses a list with proper indexing.",
+      "common_mistake_notes": "Common mistake: Not using a list or incorrect indexing."
+    }
+  ]
+}

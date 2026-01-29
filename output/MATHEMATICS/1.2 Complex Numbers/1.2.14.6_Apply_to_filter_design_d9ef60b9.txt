@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.14.6 Apply to filter design
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.14 Complex Analysis Applications
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+A low-pass filter is designed to pass signals with a cutoff frequency of 1 kHz and attenuate signals above it. What type of filter would be suitable for this purpose?
+A) Butterworth filter
+B) Chebyshev Type I filter
+C) Elliptic filter
+D) Bessel filter
+Correct Answer: A
+
+Solution:
+A Butterworth filter provides a flat frequency response in the passband and a gradual roll-off in the stopband, making it suitable for low-pass filtering with a smooth cutoff.
+
+Explanation:
+Butterworth filters have a maximally flat response in the passband, which minimizes distortion. Chebyshev Type I and Elliptic filters have steeper rolloffs but may introduce ripples in the passband or stopband. Bessel filters prioritize phase linearity over steepness of roll-off.
+
+Common mistake note:
+Common mistake: Choosing C (Elliptic filter) because it has a steep roll-off. However, Elliptic filters have ripple in both the passband and stopband, which may not be desirable for a low-pass filter.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+A high-pass filter is required to attenuate signals below 10 kHz and allow higher frequencies to pass through. Which type of filter would provide the best performance?
+A) Chebyshev Type II filter
+B) Bessel filter
+C) Elliptic filter
+D) RC passive filter
+Correct Answer: A
+
+Solution:
+Chebyshev Type II filters have a steeper roll-off in the stopband compared to other types, making them suitable for high-pass filtering with minimal ripple.
+
+Explanation:
+Chebyshev Type II filters are designed to minimize ripples in the stopband while providing a steep roll-off. Bessel filters prioritize phase linearity over steepness of roll-off, and Elliptic filters have ripple in both passband and stopband. RC passive filters don't offer as much control over frequency response.
+
+Common mistake note:
+Common mistake: Choosing D (RC passive filter) because it's a simple circuit. However, RC passive filters do not provide the steep roll-off needed for high-pass filtering.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+A designer needs to create a bandpass filter with a passband from 2 kHz to 5 kHz. Which type of filter would be best suited for this application?
+A) Bessel filter
+B) Chebyshev Type I filter
+C) Butterworth filter
+D) Bandpass filter (specifically designed)
+Correct Answer: D
+
+Solution:
+A bandpass filter specifically designed for the desired frequency range will provide the most accurate and efficient performance.
+
+Explanation:
+While Butterworth, Chebyshev, and Bessel filters can be configured to approximate a bandpass response, a custom-designed bandpass filter will have the exact passband and transition regions needed. Other types may not achieve the required selectivity or roll-off.
+
+Common mistake note:
+Common mistake: Choosing C (Butterworth filter) because it has a flat passband. However, Butterworth filters are typically used for low- or high-pass filtering, not bandpass.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+A designer wants to design a notch filter to remove interference at 10 kHz in an audio signal. Which type of filter would be most appropriate?
+A) RC passive filter
+B) Chebyshev Type II filter
+C) Band-stop filter (specifically designed)
+D) Butterworth filter
+Correct Answer: C
+
+Solution:
+A band-stop filter specifically designed for the interference frequency will provide the best attenuation at that specific point.
+
+Explanation:
+Band-stop filters, also known as notch filters, are designed to remove a narrow range of frequencies. RC passive filters and Butterworth filters do not offer the selectivity needed for a notch filter. Chebyshev Type II filters may not provide sufficient attenuation at a single frequency.
+
+Common mistake note:
+Common mistake: Choosing A (RC passive filter) because it's simple. However, RC passive filters are not suitable for creating a narrow band-stop response.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+In an audio system, a designer wants to reduce the bass frequencies below 100 Hz while preserving higher frequencies. Which type of filter would be best for this task?
+A) High-pass filter (specifically designed)
+B) Butterworth filter
+C) Chebyshev Type I filter
+D) Band-stop filter
+Correct Answer: A
+
+Solution:
+A high-pass filter specifically designed to remove bass frequencies will provide the desired effect without affecting higher frequencies.
+
+Explanation:
+High-pass filters are used to attenuate low frequencies and allow higher ones to pass. Butterworth, Chebyshev Type I, and band-stop filters do not target a specific frequency range for attenuation while preserving others.
+
+Common mistake note:
+Common mistake: Choosing D (Band-stop filter) because it removes frequencies. However, a band-stop filter would remove a range of frequencies, not just the low bass.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+A designer needs to design a filter that allows signals between 1 kHz and 2 kHz while attenuating those below and above this range. Which type of filter should be used?
+A) Band-pass filter (specifically designed)
+B) Chebyshev Type II filter
+C) Butterworth filter
+D) RC passive filter
+Correct Answer: A
+
+Solution:
+A bandpass filter specifically designed for the desired frequency range will provide the most accurate and efficient performance.
+
+Explanation:
+Bandpass filters are used to allow a specific range of frequencies while attenuating others. Chebyshev Type II, Butterworth, and RC passive filters do not offer the exact control needed for this application.
+
+Common mistake note:
+Common mistake: Choosing C (Butterworth filter) because it has a flat passband. However, Butterworth filters are typically used for low- or high-pass filtering, not bandpass.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+A designer wants to create a filter that removes interference at 5 kHz in an audio signal without affecting the rest of the frequency spectrum. Which type of filter would be most suitable?
+A) Band-stop filter (specifically designed)
+B) Chebyshev Type I filter
+C) RC passive filter
+D) Butterworth filter
+Correct Answer: A
+
+Solution:
+A band-stop filter specifically designed for the interference frequency will provide the best attenuation at that specific point without affecting other frequencies.
+
+Explanation:
+Band-stop filters, also known as notch filters, are designed to remove a narrow range of frequencies. Chebyshev Type I, RC passive, and Butterworth filters do not offer the selectivity needed for a notch filter.
+
+Common mistake note:
+Common mistake: Choosing C (RC passive filter) because it's simple. However, RC passive filters are not suitable for creating a narrow band-stop response.
+------------------------------------------------------------------------------

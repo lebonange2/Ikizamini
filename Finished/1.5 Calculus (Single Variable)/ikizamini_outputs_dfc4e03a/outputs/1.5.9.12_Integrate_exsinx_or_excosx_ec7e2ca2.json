@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.9.12",
+  "objective_text": "Integrate e^x·sin(x) or e^x·cos(x)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "1",
+      "stem": "Evaluate the integral: ∫ e^(3x) sin(2x) dx",
+      "choices": {
+        "A": "1/5 e^(3x) cos(2x)",
+        "B": "e^(3x) sin(2x) - x/6",
+        "C": "1/5 e^(3x) cos(2x) - x/6",
+        "D": "e^(3x) sin(2x)"
+      },
+      "correct_choice": "C",
+      "solution": "To integrate e^(3x) sin(2x), use the substitution method: u = 2x, du/dx = 2, dx = du/2. ∫ (1/6) e^u sin(u) du = (1/6) e^u cos(u) - C. Substituting back: (1/6) e^(3x) cos(2x) - C.",
+      "explanation": "Integrate by substituting u = 2x and using the result from integrating e^x sin(x).",
+      "common_mistake_notes": "Students may forget to divide by 6, resulting in e^(3x) cos(2x) + C instead of 1/5 e^(3x) cos(2x) + C."
+    },
+    {
+      "id": "2",
+      "stem": "Evaluate the integral: ∫ x^2 e^(4x) sin(4x) dx",
+      "choices": {
+        "A": "x^2 e^(4x) cos(4x) - x^2/16",
+        "B": "x^2 e^(4x) sin(4x) - x^3/16",
+        "C": "x^2 e^(4x) cos(4x) - x^3/8",
+        "D": "x^2 e^(4x) sin(4x)"
+      },
+      "correct_choice": "B",
+      "solution": "Use integration by parts: u = x^2, dv = e^(4x) sin(4x) dx. du = 2x dx, v = -1/16 e^(4x) cos(4x). ∫ x^2 e^(4x) sin(4x) dx = x^2 (-1/16) e^(4x) cos(4x) + ∫ (-1/16) e^(4x) cos(4x) 2x dx. Repeat integration by parts for the remaining integral.",
+      "explanation": "Apply integration by parts twice, recognizing a second application is needed to solve the original integral.",
+      "common_mistake_notes": "Students may stop after first application and think answer is x^2 e^(4x) cos(4x) - x^2/16 + C; remember to apply integration by parts again."
+    },
+    {
+      "id": "3",
+      "stem": "Evaluate the integral: ∫ e^(-5x) cos(3x) dx",
+      "choices": {
+        "A": "-e^(-5x) sin(3x)",
+        "B": "e^(-5x) cos(3x) - x/15",
+        "C": "-e^(-5x) sin(3x) - x/15",
+        "D": "e^(-5x) cos(3x)"
+      },
+      "correct_choice": "C",
+      "solution": "Use integration by parts: u = cos(3x), dv = e^(-5x) dx. du = -3sin(3x) dx, v = -1/5 e^(-5x). ∫ e^(-5x) cos(3x) dx = (-1/5) e^(-5x) cos(3x) + ∫ (3/5) e^(-5x) sin(3x) dx. Repeat integration by parts for the remaining integral.",
+      "explanation": "Apply integration by parts twice with a negative exponent, simplifying the result.",
+      "common_mistake_notes": "Students may forget the negative exponent, resulting in e^(-5x) cos(3x) + C instead of -e^(-5x) sin(3x) - x/15 + C."
+    },
+    {
+      "id": "4",
+      "stem": "Evaluate the integral: ∫ e^(7x) sin(5x) dx",
+      "choices": {
+        "A": "1/6 e^(7x) cos(5x)",
+        "B": "e^(7x) sin(5x) - x/35",
+        "C": "1/6 e^(7x) cos(5x) - x/35",
+        "D": "e^(7x) sin(5x)"
+      },
+      "correct_choice": "C",
+      "solution": "Use the substitution method: u = 5x, du/dx = 5, dx = du/5. ∫ (1/35) e^u sin(u) du = (1/35) e^u cos(u) - C. Substituting back: (1/35) e^(7x) cos(5x) - C.",
+      "explanation": "Substitute u = 5x and use the result from integrating e^x sin(x).",
+      "common_mistake_notes": "Students may forget to divide by 35, resulting in e^(7x) cos(5x) + C instead of 1/6 e^(7x) cos(5x) + C."
+    },
+    {
+      "id": "5",
+      "stem": "Evaluate the integral: ∫ x^3 e^(-2x) sin(x) dx",
+      "choices": {
+        "A": "x^3 e^(-2x) cos(x) - x^4/8",
+        "B": "x^3 e^(-2x) sin(x) - x^4/16",
+        "C": "x^3 e^(-2x) cos(x) - x^4/4",
+        "D": "x^3 e^(-2x) sin(x)"
+      },
+      "correct_choice": "B",
+      "solution": "Use integration by parts: u = x^3, dv = e^(-2x) sin(x) dx. du = 3x^2 dx, v = -1/2 e^(-2x) cos(x). ∫ x^3 e^(-2x) sin(x) dx = x^3 (-1/2) e^(-2x) cos(x) + ∫ (-1/2) e^(-2x) cos(x) 3x^2 dx. Repeat integration by parts for the remaining integral.",
+      "explanation": "Apply integration by parts twice, recognizing a second application is needed to solve the original integral.",
+      "common_mistake_notes": "Students may stop after first application and think answer is x^3 e^(-2x) cos(x) - x^4/8 + C; remember to apply integration by parts again."
+    },
+    {
+      "id": "6",
+      "stem": "Evaluate the integral: ∫ e^(11x) sin(9x) dx",
+      "choices": {
+        "A": "1/12 e^(11x) cos(9x)",
+        "B": "e^(11x) sin(9x) - x/99",
+        "C": "1/12 e^(11x) cos(9x) - x/99",
+        "D": "e^(11x) sin(9x)"
+      },
+      "correct_choice": "C",
+      "solution": "Use the substitution method: u = 9x, du/dx = 9, dx = du/9. ∫ (1/99) e^u sin(u) du = (1/99) e^u cos(u) - C. Substituting back: (1/99) e^(11x) cos(9x) - C.",
+      "explanation": "Substitute u = 9x and use the result from integrating e^x sin(x).",
+      "common_mistake_notes": "Students may forget to divide by 99, resulting in e^(11x) cos(9x) + C instead of 1/12 e^(11x) cos(9x) + C."
+    },
+    {
+      "id": "7",
+      "stem": "Evaluate the integral: ∫ x^4 e^(6x) sin(3x) dx",
+      "choices": {
+        "A": "x^4 e^(6x) cos(3x) - x^5/24",
+        "B": "x^4 e^(6x) sin(3x) - x^5/12",
+        "C": "x^4 e^(6x) cos(3x) - x^5/6",
+        "D": "x^4 e^(6x) sin(3x)"
+      },
+      "correct_choice": "B",
+      "solution": "Use integration by parts: u = x^4, dv = e^(6x) sin(3x) dx. du = 4x^3 dx, v = -1/24 e^(6x) cos(3x). ∫ x^4 e^(6x) sin(3x) dx = x^4 (-1/24) e^(6x) cos(3x) + ∫ (-1/24) e^(6x) cos(3x) 4x^3 dx. Repeat integration by parts for the remaining integral.",
+      "explanation": "Apply integration by parts twice, recognizing a second application is needed to solve the original integral.",
+      "common_mistake_notes": "Students may stop after first application and think answer is x^4 e^(6x) cos(3x) - x^5/24 + C; remember to apply integration by parts again."
+    }
+  ]
+}

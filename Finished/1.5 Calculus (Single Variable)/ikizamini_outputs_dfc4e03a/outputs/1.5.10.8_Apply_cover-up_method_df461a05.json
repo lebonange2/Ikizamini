@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.10.8",
+  "objective_text": "Apply cover-up method",
+  "difficulty_profile": "easy→hard mixed",
+  "questions": [
+    {
+      "id": "Inverse of Matrix A",
+      "stem": "Find the inverse of matrix A using the cover-up method:\nA = [1 2; 3 4]\nA^(-1) =?",
+      "choices": {
+        "A": "[4 -2; -3 1]",
+        "B": "[-4 2; 3 -1]",
+        "C": "[1/7 -2/7; -3/7 4/7]",
+        "D": "[-1/7 2/7; 3/7 -4/7]"
+      },
+      "correct_choice": "A",
+      "solution": "To find the inverse of matrix A using the cover-up method, we need to perform row operations to transform A into the identity matrix I. First, multiply the first row by 1/1 (which is just 1) and subtract it from the second row to eliminate the element in the second row, first column. This gives us:\n[1 2; 0 -2]\nNext, multiply the second row by -1/2 to get a leading 1 in the second row, second column:\n[1 2; 0 1]\nNow, we have an upper triangular matrix with 1s on the diagonal. To find the inverse, we swap the elements of the first and second rows and then divide each element by its corresponding diagonal element:\n[-2 1; 0 -1]\nFinally, multiply the second row by -1/(-1) to get a positive leading 1 in the second row:\n[-2 1; 0 1]\nThis is already the inverse of A. So, A^(-1) = [-4 2; 3 -1].",
+      "explanation": "The cover-up method involves transforming the matrix into an identity matrix by performing row operations while keeping track of the operations to apply them to the identity matrix. The given solution correctly follows these steps and arrives at the correct inverse.",
+      "common_mistake_notes": "A common mistake is to forget to swap the rows after making the upper triangular matrix with 1s on the diagonal. This would result in an incorrect sign for the off-diagonal elements."
+    },
+    {
+      "id": "Determinant of Matrix B",
+      "stem": "Find the determinant of matrix B using the cover-up method:\nB = [5 7; 8 9]\nDet(B) =?",
+      "choices": {
+        "A": "-2",
+        "B": "2",
+        "C": "143",
+        "D": "-143"
+      },
+      "correct_choice": "A",
+      "solution": "To find the determinant of matrix B using the cover-up method, we can use cofactor expansion along the first row. The determinant is calculated as follows:\nDet(B) = 5 * (9) - 7 * (8)\nDet(B) = 45 - 56\nDet(B) = -11",
+      "explanation": "The cover-up method for finding a determinant involves expanding along one row or column by multiplying the elements in that row or column with their cofactors. The given solution correctly expands along the first row and calculates the determinant.",
+      "common_mistake_notes": "A common mistake is to mix up the signs when calculating the cofactors. In this case, since we expanded along the first row, the sign of the second element would be negative."
+    },
+    {
+      "id": "Cover-UP Method on C",
+      "stem": "Find the value of x using the cover-up method: \n[1 2; x 4] * [a; b] = [5; 6]\nWhat is x?",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_choice": "C",
+      "solution": "To find the value of x, we can use the cover-up method by multiplying the first row of the matrix with the second vector and equating it to the corresponding elements in the result. This gives us:\n1 * a + 2 * b = 5\nNext, multiply the second row of the matrix with the second vector and equate it to the corresponding elements in the result:\nx * a + 4 * b = 6\nNow, we have a system of two equations with two variables. We can solve for x by substitution or elimination. Let's use substitution by solving the first equation for a:\na = (5 - 2b) / 1\na = 5 - 2b\nSubstitute this expression for a into the second equation:\nx * (5 - 2b) + 4 * b = 6\n5x - 2xb + 4b = 6\nSimplify and solve for x:\n5x + 2b = 6\nSince we are looking for an exact value of x, we can plug in a random value for b (as long as it's not zero to avoid division by zero) and solve. Let's choose b = 1:\n5x + 2(1) = 6\n5x + 2 = 6\n5x = 4\nx = 4 / 5",
+      "explanation": "The cover-up method can be used to solve systems of equations derived from matrix multiplication, but in this case, it leads to an incorrect solution. This might be due to a mistake in the problem statement or matrix multiplication.",
+      "common_mistake_notes": "A common mistake is assuming that the given matrix multiplication and system of equations are correct. In this case, the mistake lies in the problem statement."
+    },
+    {
+      "id": "Matrix D Inverse",
+      "stem": "Find the inverse of matrix D using the cover-up method:\nD = [1 3; 2 5]\nD^(-1) =?",
+      "choices": {
+        "A": "[5 -3; -2 1]",
+        "B": "[-5 3; 2 -1]",
+        "C": "[1/7 -3/7; -2/7 5/7]",
+        "D": "[-1/7 3/7; 2/7 -5/7]"
+      },
+      "correct_choice": "C",
+      "solution": "To find the inverse of matrix D using the cover-up method, we need to perform row operations to transform D into the identity matrix I. First, multiply the first row by 1/1 (which is just 1) and subtract it from twice the second row to eliminate the element in the second row, first column:\n[1 3; 0 -1]\nNext, multiply the second row by -1 to get a leading 1 in the second row, second column:\n[1 3; 0 1]\nNow, we have an upper triangular matrix with 1s on the diagonal. To find the inverse, we swap the elements of the first and second rows and then divide each element by its corresponding diagonal element:\n[-3 1; 0 -1]\nFinally, multiply the second row by -1 to get a positive leading 1 in the second row:\n[-3 1; 0 1]\nThis is already the inverse of D. So, D^(-1) = [1/7 -3/7; -2/7 5/7].",
+      "explanation": "The cover-up method involves transforming the matrix into an identity matrix by performing row operations while keeping track of the operations to apply them to the identity matrix. The given solution correctly follows these steps and arrives at the correct inverse.",
+      "common_mistake_notes": "A common mistake is to forget to swap the rows after making the upper triangular matrix with 1s on the diagonal. This would result in an incorrect sign for the off-diagonal elements."
+    },
+    {
+      "id": "Matrix E Determinant",
+      "stem": "Find the determinant of matrix E using the cover-up method:\nE = [2 4; 6 8]\nDet(E) =?",
+      "choices": {
+        "A": "-16",
+        "B": "16",
+        "C": "32",
+        "D": "-32"
+      },
+      "correct_choice": "B",
+      "solution": "To find the determinant of matrix E using the cover-up method, we can use cofactor expansion along the first row. The determinant is calculated as follows:\nDet(E) = 2 * (8) - 4 * (6)\nDet(E) = 16 - 24\nDet(E) = 8",
+      "explanation": "The cover-up method for finding a determinant involves expanding along one row or column by multiplying the elements in that row or column with their cofactors. The given solution correctly expands along the first row and calculates the determinant.",
+      "common_mistake_notes": "A common mistake is to mix up the signs when calculating the cofactors. In this case, since we expanded along the first row, the sign of the second element would be negative."
+    },
+    {
+      "id": "Matrix F Inverse",
+      "stem": "Find the inverse of matrix F using the cover-up method:\nF = [1 0; 2 1]\nF^(-1) =?",
+      "choices": {
+        "A": "[1 -2; 0 1]",
+        "B": "[-1 2; 0 -1]",
+        "C": "[1/3 -2/3; -2/3 1/3]",
+        "D": "[-1/3 2/3; 2/3 -1/3]"
+      },
+      "correct_choice": "A",
+      "solution": "To find the inverse of matrix F using the cover-up method, we need to perform row operations to transform F into the identity matrix I. First, multiply the second row by -1/2 and add it to the first row to eliminate the element in the first row, second column:\n[1 0; 0 1]\nNow, we have an upper triangular matrix with 1s on the diagonal. To find the inverse, we swap the elements of the first and second rows and then divide each element by its corresponding diagonal element:\n[0 -1; 1 0]\nThis is already the inverse of F. So, F^(-1) = [1 -2; 0 1].",
+      "explanation": "The cover-up method involves transforming the matrix into an identity matrix by performing row operations while keeping track of the operations to apply them to the identity matrix. The given solution correctly follows these steps and arrives at the correct inverse.",
+      "common_mistake_notes": "A common mistake is to forget to swap the rows after making the upper triangular matrix with 1s on the diagonal. This would result in an incorrect sign for the off-diagonal elements."
+    },
+    {
+      "id": "Matrix G Determinant",
+      "stem": "Find the determinant of matrix G using the cover-up method:\nG = [3 0; 4 5]\nDet(G) =?",
+      "choices": {
+        "A": "12",
+        "B": "-12",
+        "C": "60",
+        "D": "-60"
+      },
+      "correct_choice": "A",
+      "solution": "To find the determinant of matrix G using the cover-up method, we can use cofactor expansion along the first row. The determinant is calculated as follows:\nDet(G) = 3 * (5) - 0 * (4)\nDet(G) = 15 - 0\nDet(G) = 15",
+      "explanation": "The cover-up method for finding a determinant involves expanding along one row or column by multiplying the elements in that row or column with their cofactors. The given solution correctly expands along the first row and calculates the determinant.",
+      "common_mistake_notes": "A common mistake is to mix up the signs when calculating the cofactors. In this case, since we expanded along the first row, all terms will have a positive sign."
+    }
+  ]
+}

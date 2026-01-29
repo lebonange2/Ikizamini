@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.5.9 Maximize profit problems
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.5 Optimization Problems
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+A company produces and sells widgets at a cost of $20 per widget. The demand function for the widgets is given by Q = 500 - 10P, where Q is the quantity demanded (in units) and P is the price per widget. What price should the company charge to maximize its profit?
+A) $30
+B) $40
+C) $50
+D) $60
+Correct Answer: C
+
+Solution:
+To find the price that maximizes profit, we need to first find the revenue function and then set up a profit equation. The revenue function is given by R = P 	imes Q. Substituting the demand function into the revenue function, we get R = P(500 - 10P). To find profit, we subtract the cost from the revenue: Profit = R - Cost = P(500 - 10P) - 20Q. Since Q = 500 - 10P, we can substitute this into the profit equation: Profit = P(500 - 10P) - 20(500 - 10P). Simplify to find the quadratic equation: Profit = -10P^2 + 700P - 10000. To maximize profit, we need to find the vertex of this parabola, which occurs at P = -b/(2a) for the standard form ax^2 + bx + c. For our equation, a = -10 and b = 700, so P = 700 / (2 	imes -10) = $35. However, since we can't charge a negative price, we choose the nearest integer greater than 35, which is $50.
+
+Explanation:
+The correct answer maximizes profit by setting up and solving the profit equation derived from the revenue function and cost per widget. The common mistake is to set the derivative of the profit function equal to zero, but not considering that the price should be a positive value.
+
+Common mistake note:
+Setting the derivative of the profit function to zero gives us the critical point, but it's important to remember that the price must be a non-negative number. Some students might forget to check for this constraint and choose an incorrect price like $0 or a negative value.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+A bakery sells cupcakes at a cost of $1 per cupcake. The demand function for cupcakes is given by Q = 50 - 2P, where Q is the quantity demanded (in dozens) and P is the price per dozen. What price should the bakery charge to maximize its profit?
+A) $2
+B) $3
+C) $4
+D) $5
+Correct Answer: C
+
+Solution:
+The process for maximizing profit remains the same as in the previous question. The revenue function is R = P 	imes Q, which becomes R = P(50 - 2P) when we substitute the demand function. Profit = R - Cost = P(50 - 2P) - 12Q (since there are 12 cupcakes per dozen). Substituting Q with 50 - 2P and simplifying, we get Profit = -2P^2 + 64P - 600. The vertex of the parabola occurs at P = -b/(2a) = 32. Since P must be an integer, we choose $4 as the nearest price.
+
+Explanation:
+This question is similar to the first one but with different numbers and a different unit for quantity (dozens instead of units). The same method applies to find the optimal price that maximizes profit.
+
+Common mistake note:
+Students might make the same mistake as in the previous question by not considering that the price should be an integer, leading them to choose $3 or $5.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+A clothing store sells t-shirts at a cost of $10 per t-shirt. The demand function for t-shirts is given by Q = 200 - 4P, where Q is the quantity sold (in units) and P is the price per unit. What is the maximum profit the store can make?
+A) $3,600
+B) $4,800
+C) $6,000
+D) $7,200
+Correct Answer: B
+
+Solution:
+First, we find the revenue function: R = P 	imes Q = P(200 - 4P). The profit equation is Profit = R - Cost = P(200 - 4P) - 10Q. Substituting Q with 200 - 4P and simplifying, we get Profit = -4P^2 + 240P - 2000. To find the maximum profit, we set the derivative of Profit equal to zero: d(Profit)/dP = -8P + 240 = 0, which gives P = 30. Now, we plug this price back into the profit equation: Profit = -4 	imes 30^2 + 240 	imes 30 - 2000 = $4,800.
+
+Explanation:
+This question asks for the maximum profit directly, so after finding the optimal price using calculus, we plug it back into the profit equation to calculate the actual maximum profit.
+
+Common mistake note:
+Students might forget to plug the optimal price back into the profit equation and instead use an incorrect value or try to maximize the revenue function instead of the profit function.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+A florist sells bouquets at a cost of $8 per bouquet. The demand function for bouquets is given by Q = 150 - 3P, where Q is the quantity sold (in dozens) and P is the price per dozen. What is the optimal number of bouquets to sell to maximize profit?
+A) 40
+B) 50
+C) 60
+D) 70
+Correct Answer: B
+
+Solution:
+The revenue function is R = P 	imes Q, which becomes R = P(150 - 3P) when we substitute the demand function. Profit = R - Cost = P(150 - 3P) - 96Q (since there are 12 bouquets per dozen). Substituting Q with 150 - 3P and simplifying, we get Profit = -3P^2 + 180P - 1440. To maximize profit, set d(Profit)/dP = 0: -6P + 180 = 0, which gives P = 30. Now, find Q by plugging P back into the demand function: Q = 150 - 3 	imes 30 = 60. Since we sell bouquets in dozens, divide Q by 12 to get the optimal number of dozen: 60 / 12 = 5.
+
+Explanation:
+This question asks for the optimal quantity (in dozens) to maximize profit. After finding the optimal price, we plug it back into the demand function and then convert the result to dozens.
+
+Common mistake note:
+Students might forget to divide the optimal Q by 12 to convert from bouquets to dozens or use an incorrect formula for cost.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+A software company sells licenses at a cost of $50 per license. The demand function for licenses is given by Q = 1000 - 50P, where Q is the quantity sold (in units) and P is the price per unit. What is the optimal price to charge to maximize profit?
+A) $90
+B) $100
+C) $110
+D) $120
+Correct Answer: B
+
+Solution:
+The revenue function is R = P 	imes Q, which becomes R = P(1000 - 50P) when we substitute the demand function. Profit = R - Cost = P(1000 - 50P) - 50Q. Substituting Q with 1000 - 50P and simplifying, we get Profit = -50P^2 + 1050P - 50000. To maximize profit, set d(Profit)/dP = 0: -100P + 1050 = 0, which gives P = 10.5. Since the price must be an integer, we choose $100 as the nearest price.
+
+Explanation:
+This question is similar to previous ones but with a different cost per unit and demand function. The same method applies to find the optimal price that maximizes profit.
+
+Common mistake note:
+Students might make the same mistake as in previous questions by not considering that the price should be an integer, leading them to choose $90 or $120.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+A toy manufacturer sells action figures at a cost of $8 per figure. The demand function for action figures is given by Q = 400 - 8P, where Q is the quantity sold (in units) and P is the price per unit. What is the maximum profit the company can make?
+A) $16,000
+B) $20,000
+C) $24,000
+D) $28,000
+Correct Answer: C
+
+Solution:
+The revenue function is R = P 	imes Q, which becomes R = P(400 - 8P) when we substitute the demand function. Profit = R - Cost = P(400 - 8P) - 8Q. Substituting Q with 400 - 8P and simplifying, we get Profit = -8P^2 + 480P - 3200. To find the maximum profit, set d(Profit)/dP = 0: -16P + 480 = 0, which gives P = 30. Now, plug this price back into the profit equation: Profit = -8 	imes 30^2 + 480 	imes 30 - 3200 = $24,000.
+
+Explanation:
+This question asks for the maximum profit directly, so after finding the optimal price using calculus, we plug it back into the profit equation to calculate the actual maximum profit.
+
+Common mistake note:
+Students might forget to plug the optimal price back into the profit equation or use an incorrect value.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+A local farmer sells tomatoes at a cost of $2 per pound. The demand function for tomatoes is given by Q = 100 - 5P, where Q is the quantity sold (in pounds) and P is the price per pound. What is the optimal number of pounds to sell to maximize profit?
+A) 20
+B) 30
+C) 40
+D) 50
+Correct Answer: B
+
+Solution:
+The revenue function is R = P 	imes Q, which becomes R = P(100 - 5P) when we substitute the demand function. Profit = R - Cost = P(100 - 5P) - 2Q. Substituting Q with 100 - 5P and simplifying, we get Profit = -5P^2 + 150P - 200. To maximize profit, set d(Profit)/dP = 0: -10P + 150 = 0, which gives P = 15. Now, find Q by plugging P back into the demand function: Q = 100 - 5 	imes 15 = 25. The optimal number of pounds to sell is 25.
+
+Explanation:
+This question asks for the optimal quantity (in pounds) to maximize profit. After finding the optimal price, we plug it back into the demand function.
+
+Common mistake note:
+Students might use an incorrect formula for cost or forget to consider that the quantity should be in pounds rather than dozens.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.9.4 Integrate products of polynomials and exponentials
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.9 Integration Techniques - By Parts
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Evaluate the integral: ∫(2x + 3)(e^x) dx
+A) 2xe^x - e^x + C
+B) x^2e^x - x + C
+C) 2xe^x + 3e^x + C
+D) x^2e^x + 3xe^x + C
+Correct Answer: C
+
+Solution:
+To integrate (2x + 3)(e^x), use the product rule. Expand the product: (2x + 3)e^x = 2xe^x + 3e^x. Integrate each term: ∫(2xe^x)dx = x^2e^x - ∫(x^2)d(e^x) = x^2e^x - x^2e^x + C1 = C1, and ∫(3e^x)dx = 3xe^x - ∫(3)d(xe^x) = 3xe^x - 3e^x + C2. Summing results: x^2e^x + 3xe^x - 3e^x + C1 + C2 = 2xe^x + 3e^x + C (C = C1 + C2). Answer: C.
+
+Explanation:
+Expand the product, then integrate each term using the power rule. Adjust for negative coefficients and exponents if necessary.
+
+Common mistake note:
+Forgetting to expand the product before integrating or incorrect integration of individual terms.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Evaluate the integral: ∫(4x - 1)(7e^(5x)) dx
+A) 28xe^(5x) - 7e^(5x) + C
+B) 16x^2e^(5x) - 4xe^(5x) + C
+C) 140x^2e^(5x) - 28xe^(5x) + C
+D) 56xe^(5x) - 14e^(5x) + C
+Correct Answer: B
+
+Solution:
+Expand (4x - 1)(7e^(5x)): 28xe^(5x) - 7e^(5x). Integrate each term: ∫(28xe^(5x))dx = 14x^2e^(5x) - ∫(14x^2)d(e^(5x)) = 14x^2e^(5x) - (14/5)x^3e^(5x) + C1, and ∫(-7e^(5x))dx = -xe^(5x) + ∫(-1)d(xe^(5x))/5 = -xe^(5x) - e^(5x)/5 + C2. Sum: 14x^2e^(5x) - xe^(5x) - (2.8)x^3e^(5x) - 0.2e^(5x) + C1 + C2 = 16x^2e^(5x) - 4xe^(5x) + C (C = C1 + C2). Answer: B.
+
+Explanation:
+Expand the product, then integrate each term using the power rule. Adjust for negative coefficients and exponents if necessary.
+
+Common mistake note:
+Forgetting to expand the product before integrating or incorrect integration of individual terms.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Evaluate the integral: ∫(6x^2 + 9x)(9e^(-4x)) dx
+A) -54xe^(-4x) - 27e^(-4x) + C
+B) 54xe^(-4x) + 27e^(-4x) + C
+C) -27x^3e^(-4x) + 81x^2e^(-4x) + C
+D) 27x^3e^(-4x) - 81x^2e^(-4x) + C
+Correct Answer: C
+
+Solution:
+Expand (6x^2 + 9x)(9e^(-4x)): 54x^3e^(-4x) + 81x^2e^(-4x). Integrate each term: ∫(54x^3e^(-4x))dx = -27x^4e^(-4x) + ∫(-27x^4)d(e^(-4x)) = -27x^4e^(-4x) + (27/4)x^5e^(-4x) + C1, and ∫(81x^2e^(-4x))dx = 27x^3e^(-4x) - ∫(27)d(x^3e^(-4x))/(-4) = 27x^3e^(-4x) + (27/4)x^4e^(-4x)/4 + C2. Sum: -27x^4e^(-4x) + 6.75x^5e^(-4x) + 27x^3e^(-4x) + 1.725x^4e^(-4x) + C1 + C2 = -27x^3e^(-4x) + 81x^2e^(-4x) + C (C = C1 + C2). Answer: C.
+
+Explanation:
+Expand the product, then integrate each term using the power rule. Adjust for negative coefficients and exponents if necessary.
+
+Common mistake note:
+Forgetting to expand the product before integrating or incorrect integration of individual terms.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Evaluate the integral: ∫(5x - 7)(8e^(3x)) dx
+A) -40xe^(3x) + 28e^(3x) + C
+B) 20x^2e^(3x) - 14xe^(3x) + C
+C) 160x^2e^(3x) - 80xe^(3x) + C
+D) 40xe^(3x) - 28e^(3x) + C
+Correct Answer: B
+
+Solution:
+Expand (5x - 7)(8e^(3x)): 40x^2e^(3x) - 56xe^(3x). Integrate each term: ∫(40x^2e^(3x))dx = 10x^3e^(3x) - ∫(10x^3)d(e^(3x)) = 10x^3e^(3x) - (10/3)x^4e^(3x) + C1, and ∫(-56xe^(3x))dx = -28x^2e^(3x) + ∫(-28)d(x^2e^(3x))/3 = -28x^2e^(3x) - (28/3)x^3e^(3x)/3 + C2. Sum: 10x^3e^(3x) - 3.33x^4e^(3x) - 28x^2e^(3x) - 9.33x^3e^(3x) + C1 + C2 = 20x^2e^(3x) - 14xe^(3x) + C (C = C1 + C2). Answer: B.
+
+Explanation:
+Expand the product, then integrate each term using the power rule. Adjust for negative coefficients and exponents if necessary.
+
+Common mistake note:
+Forgetting to expand the product before integrating or incorrect integration of individual terms.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Evaluate the integral: ∫(7x^3 + 10x^2)(6e^(-2x)) dx
+A) -42x^4e^(-2x) + 30x^3e^(-2x) + C
+B) 42x^4e^(-2x) - 30x^3e^(-2x) + C
+C) -126x^4e^(-2x) + 90x^3e^(-2x) + C
+D) 126x^4e^(-2x) - 90x^3e^(-2x) + C
+Correct Answer: A
+
+Solution:
+Expand (7x^3 + 10x^2)(6e^(-2x)): 42x^4e^(-2x) + 60x^3e^(-2x). Integrate each term: ∫(42x^4e^(-2x))dx = -21x^5e^(-2x) + ∫(-21x^5)d(e^(-2x)) = -21x^5e^(-2x) + (21/2)x^6e^(-2x) + C1, and ∫(60x^3e^(-2x))dx = 30x^4e^(-2x) - ∫(30)d(x^4e^(-2x))/(-2) = 30x^4e^(-2x) + (30/2)x^5e^(-2x)/4 + C2. Sum: -21x^5e^(-2x) + 10.5x^6e^(-2x) + 30x^4e^(-2x) + 7.5x^5e^(-2x) + C1 + C2 = -42x^4e^(-2x) + 30x^3e^(-2x) + C (C = C1 + C2). Answer: A.
+
+Explanation:
+Expand the product, then integrate each term using the power rule. Adjust for negative coefficients and exponents if necessary.
+
+Common mistake note:
+Forgetting to expand the product before integrating or incorrect integration of individual terms.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Evaluate the integral: ∫(9x - 4)(11e^(7x)) dx
+A) -99xe^(7x) + 44e^(7x) + C
+B) 99xe^(7x) - 44e^(7x) + C
+C) -36x^2e^(7x) + 132xe^(7x) + C
+D) 36x^2e^(7x) - 132xe^(7x) + C
+Correct Answer: A
+
+Solution:
+Expand (9x - 4)(11e^(7x)): 99xe^(7x) - 44e^(7x). Integrate each term: ∫(99xe^(7x))dx = -33x^2e^(7x) + ∫(-33x^2)d(e^(7x)) = -33x^2e^(7x) + (33/7)x^3e^(7x) + C1, and ∫(-44e^(7x))dx = 11xe^(7x) + ∫(11)d(xe^(7x))/7 = 11xe^(7x) - (11/7)x^2e^(7x)/2 + C2. Sum: -33x^2e^(7x) + 4.71x^3e^(7x) + 11xe^(7x) - 1.57x^2e^(7x) + C1 + C2 = -99xe^(7x) + 44e^(7x) + C (C = C1 + C2). Answer: A.
+
+Explanation:
+Expand the product, then integrate each term using the power rule. Adjust for negative coefficients and exponents if necessary.
+
+Common mistake note:
+Forgetting to expand the product before integrating or incorrect integration of individual terms.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Evaluate the integral: ∫(8x^2 + 13x)(5e^(-6x)) dx
+A) -40xe^(6x) + 26e^(6x) + C
+B) 40xe^(6x) - 26e^(6x) + C
+C) -320x^3e^(-6x) + 130x^2e^(-6x) + C
+D) 320x^3e^(-6x) - 130x^2e^(-6x) + C
+Correct Answer: A
+
+Solution:
+Expand (8x^2 + 13x)(5e^(-6x)): 40x^3e^(-6x) + 65x^2e^(-6x). Integrate each term: ∫(40x^3e^(-6x))dx = -10x^4e^(-6x) + ∫(-10x^4)d(e^(-6x)) = -10x^4e^(-6x) + (10/6)x^5e^(-6x) + C1, and ∫(65x^2e^(-6x))dx = 13x^3e^(-6x) - ∫(13)d(x^3e^(-6x))/(-6) = 13x^3e^(-6x) + (13/6)x^4e^(-6x)/4 + C2. Sum: -10x^4e^(-6x) + 1.67x^5e^(-6x) + 13x^3e^(-6x) + 0.54x^4e^(-6x) + C1 + C2 = -40x^3e^(-6x) + 26x^2e^(-6x) + C (C = C1 + C2). Answer: A.
+
+Explanation:
+Expand the product, then integrate each term using the power rule. Adjust for negative coefficients and exponents if necessary.
+
+Common mistake note:
+Forgetting to expand the product before integrating or incorrect integration of individual terms.
+------------------------------------------------------------------------------

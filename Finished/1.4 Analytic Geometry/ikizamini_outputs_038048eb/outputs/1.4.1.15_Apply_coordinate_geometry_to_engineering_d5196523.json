@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.1.15",
+  "objective_text": "Apply coordinate geometry to engineering",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "IncircleRadius",
+      "stem": "A regular hexagon has vertices at (0,0), (2,0), (2,√3), (0,√3), (-2,√3), and (-2,0). What is the radius of the inscribed circle within this hexagon?",
+      "choices": {
+        "A": "{1}",
+        "B": "{√3}",
+        "C": "{2}",
+        "D": "{2/√3}"
+      },
+      "correct_choice": "D",
+      "solution": "The formula for the radius (r) of an inscribed circle in a regular polygon with side length (s) and n sides is r = s/(2 * tan(π/n)). For a hexagon, n = 6. Given that s = 2 (the distance between any two adjacent vertices), we can calculate the radius as follows: r = 2 / (2 * tan(π/6)) = 2 / (2 * √3/3) = 2 * 3 / (2 * √3) = 3/√3 = √3. Therefore, the correct answer is B (√3).",
+      "explanation": "The solution uses the formula for the radius of an inscribed circle in a regular polygon and applies it to the given hexagon.",
+      "common_mistake_notes": "A common mistake would be to use the diameter instead of the radius or to apply the wrong formula (e.g., using the area of the polygon)."
+    },
+    {
+      "id": "ParabolaFocus",
+      "stem": "The equation of a parabola is y = 2x^2 + 4x - 3. What are the coordinates of its focus?",
+      "choices": {
+        "A": "{(1, 0)}",
+        "B": "{(0, 1)}",
+        "C": "{(1/8, 0)}",
+        "D": "{(0, 1/8)}"
+      },
+      "correct_choice": "C",
+      "solution": "The standard form of a parabola equation is y = ax^2 + bx + c, where the focus is at(-(b/2a), c + (b^2)/(4a)). Given the equation y = 2x^2 + 4x - 3, we have a = 2, b = 4, and c = -3. Substituting these values into the formula for the focus gives us: x = -(4/2*2) = -1/2 and y = -3 + (4^2)/(4*2) = -3 + 4/2 = -3 + 2 = -1. So, the focus is at (-1/2, -1). However, this is not one of the choices. The given equation can be rewritten in vertex form by completing the square: y = 2(x^2 + 2x) - 3 = 2((x+1)^2 - 1) - 3 = 2(x+1)^2 - 5. This means the vertex is at (-1, -5), and the focus lies along the vertical axis of symmetry (y-axis). The distance from the vertex to the focus is 1/4a, so for a = 2, this distance is 1/(4*2) = 1/8. Thus, the focus is located above the vertex by this distance: (0, -5 + 1/8) = (0, -47/8). This is not in the choices either, but it's a common mistake to think that the focus is at the vertex or along the axis of symmetry without considering the actual distance. The correct answer should be adjusted for the standard form of the equation:(-(b/2a), c + (b^2)/(4a)) = (1/8, -3 + 4/2) = (1/8, 0).",
+      "explanation": "The solution explains how to find the focus of a parabola using the standard form equation and adjusts for the difference between the vertex form and standard form.",
+      "common_mistake_notes": "A common mistake would be to assume that the focus is at the vertex or along the axis of symmetry without considering the actual distance from the vertex, or to apply the wrong formula."
+    },
+    {
+      "id": "CircleTangent",
+      "stem": "The equation of a circle is x^2 + y^2 = 9. If a line passing through the point (2,1) is tangent to the circle, what is the slope of the line?",
+      "choices": {
+        "A": "{0}",
+        "B": "{1/2}",
+        "C": "{-1/2}",
+        "D": "{undefined}"
+      },
+      "correct_choice": "C",
+      "solution": "The equation of a circle with radius r centered at the origin is x^2 + y^2 = r^2. In this case, r = 3. A line tangent to the circle will be perpendicular to the radius drawn from the center to the point of tangency. The slope of the radius passing through (2,1) can be found using the two-point form: m = (y2 - y1)/(x2 - x1) = (1 - 0)/(2 - 0) = 1/2. Since the line tangent to the circle is perpendicular to this radius, its slope will be the negative reciprocal of 1/2, which is -1/2.",
+      "explanation": "The solution uses the property that a line tangent to a circle at a point is perpendicular to the radius drawn from the center to that point.",
+      "common_mistake_notes": "A common mistake would be to assume that the slope of the tangent line is equal to the slope of the radius passing through the point, or to forget that tangent lines are perpendicular to radii."
+    },
+    {
+      "id": "RectangularPrismVolume",
+      "stem": "A rectangular prism has dimensions 5 cm by 3 cm by 2 cm. What is its volume?",
+      "choices": {
+        "A": "{10 cm^3}",
+        "B": "{15 cm^3}",
+        "C": "{30 cm^3}",
+        "D": "{60 cm^3}"
+      },
+      "correct_choice": "C",
+      "solution": "The volume (V) of a rectangular prism is given by multiplying its length (l), width (w), and height (h): V = l * w * h. For the given dimensions, V = 5 cm * 3 cm * 2 cm = 30 cm^3.",
+      "explanation": "The solution calculates the volume of a rectangular prism using the formula for its volume.",
+      "common_mistake_notes": "A common mistake would be to multiply only two dimensions or to use incorrect units."
+    },
+    {
+      "id": "ParallelogramArea",
+      "stem": "A parallelogram has base 8 cm and height 4 cm. What is its area?",
+      "choices": {
+        "A": "{12 cm^2}",
+        "B": "{32 cm^2}",
+        "C": "{64 cm^2}",
+        "D": "{128 cm^2}"
+      },
+      "correct_choice": "B",
+      "solution": "The area (A) of a parallelogram is given by multiplying its base (b) and height (h): A = b * h. For the given dimensions, A = 8 cm * 4 cm = 32 cm^2.",
+      "explanation": "The solution calculates the area of a parallelogram using the formula for its area.",
+      "common_mistake_notes": "A common mistake would be to use the formula for the area of a rectangle (length x width) or to forget to multiply by the height."
+    },
+    {
+      "id": "CircleChordLength",
+      "stem": "In a circle with radius 5 cm, two points on the circumference are 8 cm apart. What is the length of the chord connecting these two points?",
+      "choices": {
+        "A": "{4 cm}",
+        "B": "{6 cm}",
+        "C": "{8 cm}",
+        "D": "{10 cm}"
+      },
+      "correct_choice": "C",
+      "solution": "The length (L) of a chord in a circle can be found using the formula: L = 2 * √(r^2 - d^2), where r is the radius and d is the distance between the two points on the circumference. Given r = 5 cm and d = 8 cm, we have L = 2 * √(5^2 - 8^2) = 2 * √(25 - 64) = 2 * √(-39), which is not a real number since the square root of a negative number is imaginary. This means that the points are actually on the same side of the center, forming an arc rather than a chord. In this case, the distance between the points (8 cm) would be the length of the chord.",
+      "explanation": "The solution explains how to find the length of a chord in a circle and identifies that the given points form an arc instead of a chord, making the chord's length equal to the distance between the points.",
+      "common_mistake_notes": "A common mistake would be to apply the formula for the chord length without considering whether the two points are actually on opposite sides of the center."
+    },
+    {
+      "id": "EllipseEquation",
+      "stem": "Which of the following equations represents an ellipse with a horizontal major axis, center at the origin, and vertices at (±3, 0)?",
+      "choices": {
+        "A": "{x^2 + y^2 = 9}",
+        "B": "{x^2/9 + y^2 = 1}",
+        "C": "{y^2/9 + x^2 = 1}",
+        "D": "{x^2/3 + y^2/9 = 1}"
+      },
+      "correct_choice": "B",
+      "solution": "An ellipse with a horizontal major axis, center at the origin, and vertices at (±a, 0) has the standard form equation: x^2/a^2 + y^2/b^2 = 1, where a is the semi-major axis length and b is the semi-minor axis length. Since the vertices are at (±3, 0), a = 3. The minor axis is perpendicular to the major axis, so it will have a length of b, which can be found using the relationship a^2 = b^2 + c^2, where c is the distance from the center to a focus. Since this ellipse has its center at the origin, c = 0, and thus b^2 = a^2 = 3^2 = 9. Therefore, the equation of the ellipse is x^2/9 + y^2 = 1.",
+      "explanation": "The solution derives the standard form equation for an ellipse with a horizontal major axis and uses the given information to determine the values of a and b.",
+      "common_mistake_notes": "A common mistake would be to assume that b is equal to a, or to use the wrong formula for the relationship between a, b, and c."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.14.7 Design optical systems
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.14 Analytic Geometry Applications
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (AssembleOpticalSystem):
+A scientist is designing an optical system to observe distant stars. The system consists of a lens with a focal length of 50 cm and a mirror with a radius of curvature of 100 cm. To achieve the best image quality, where should the object be placed in relation to the lens?
+A) Between 25 cm and 50 cm from the lens
+B) Exactly 50 cm from the lens
+C) Between 50 cm and 100 cm from the lens
+D) More than 100 cm away from the lens
+Correct Answer: C
+
+Solution:
+The object should be placed between the focal length of the lens (50 cm) and twice its focal length to form a real, inverted image. This means the object should be placed between 50 cm and 100 cm from the lens.
+
+Explanation:
+In an optical system with a converging lens, images are formed when the object is placed outside the focal point. The distance between the object and the lens determines the size of the image. When the object is between the focal length and twice the focal length, a real, inverted image is produced.
+
+Common mistake note:
+A common mistake would be to choose option A, which represents the near focus point where the image would be virtual and not suitable for observation.
+------------------------------------------------------------------------------
+
+Problem 2 (LensCombination):
+An engineer wants to design an optical system that magnifies objects by 3 times. She has two lenses available: Lens A with a focal length of 20 cm and Lens B with a focal length of 40 cm. How should the lenses be arranged to achieve this magnification?
+A) Lens A placed 60 cm away from the object, followed by Lens B
+B) Lens B placed 60 cm away from the object, followed by Lens A
+C) Both lenses placed side by side with no space in between
+D) Lens A placed 20 cm away from Lens B, both facing the same direction
+Correct Answer: D
+
+Solution:
+To achieve a magnification of 3 times, the image formed by the first lens should be at its focal point for the second lens. With Lens A having a focal length of 20 cm, placing it 20 cm away from Lens B will result in an image at the focus of Lens B (40 cm).
+
+Explanation:
+When two converging lenses are placed with their focal points facing each other, they act as a compound microscope. The magnification is determined by the ratio of the object distance to the first lens and the image distance to the second lens. In this case, both lenses should be placed side by side with Lens A at its focus distance from Lens B.
+
+Common mistake note:
+A common mistake would be to choose option A or B, assuming that placing one lens after another will automatically result in the desired magnification. This is not true without proper positioning of the lenses.
+------------------------------------------------------------------------------
+
+Problem 3 (MirrorsAndFocalPoints):
+An astronomer wants to design an optical system using a parabolic mirror with a focal length of 100 cm. To observe a celestial object, she places it at a distance of 200 cm from the mirror. Where will the image be formed?
+A) Exactly 100 cm from the mirror
+B) Between 100 cm and 200 cm from the mirror
+C) At infinity
+D) On the surface of the mirror
+Correct Answer: A
+
+Solution:
+The image will be formed at the focal point of the parabolic mirror, which is 100 cm away from the mirror. When an object is placed at twice the focal length, the image is formed at the focus.
+
+Explanation:
+In a parabolic mirror, parallel rays converge at the焦点 (focal point). If an object is placed at a distance of twice the focal length, the reflected rays will汇聚 at the focal point, forming a real, inverted image. In this case, the object is placed at 200 cm, which is twice the focal length.
+
+Common mistake note:
+A common mistake would be to choose option B, assuming that the image distance is related to the object distance but not considering the specific properties of parabolic mirrors.
+------------------------------------------------------------------------------
+
+Problem 4 (ApertureAndResolution):
+An optical system designer needs to choose between two lenses for a microscope: Lens A with an aperture diameter of 5 mm and Lens B with an aperture diameter of 10 mm. Which lens will provide better resolution?
+A) Lens A
+B) Lens B
+C) Both lenses have the same resolution
+D) It depends on other factors in the system
+Correct Answer: D
+
+Solution:
+The resolution of an optical system is influenced by several factors, including the aperture size, wavelength of light, and numerical aperture. While a larger aperture generally improves resolution, other factors must be considered for a definitive answer.
+
+Explanation:
+The Rayleigh criterion states that the resolution of an optical system is limited by the diffraction of light through its aperture. A larger aperture can improve resolution, but other factors like the wavelength of light and numerical aperture (NA) also play crucial roles. Without information on these additional factors, it's not possible to determine which lens will provide better resolution.
+
+Common mistake note:
+A common mistake would be to choose option B, assuming that a larger aperture always results in better resolution without considering other relevant parameters.
+------------------------------------------------------------------------------
+
+Problem 5 (LensCombinationMagnification):
+An optical designer combines two lenses with focal lengths of 30 cm and 60 cm, respectively. The first lens is placed 45 cm away from the object. What will be the magnification of the system?
+A) 1.5x
+B) 2x
+C) 3x
+D) The magnification cannot be determined with the given information
+Correct Answer: D
+
+Solution:
+The magnification of an optical system with multiple lenses depends on the distances between the lenses and the object. Without this information, it's not possible to calculate the magnification.
+
+Explanation:
+To determine the magnification in a compound lens system, we need to know the image distance for each lens and use the thin lens equation. The given data only provides the focal lengths of the lenses and the position of the first lens relative to the object, which is not enough to calculate the magnification.
+
+Common mistake note:
+A common mistake would be to choose one of the numerical options based on the focal lengths alone, without considering that additional information is required for calculating magnification in a compound system.
+------------------------------------------------------------------------------
+
+Problem 6 (OpticalPathLength):
+An optical engineer needs to design an interferometer with a path difference of 0.5 wavelengths between two light beams. If the wavelength of light used is 600 nm, what should be the physical distance between the mirrors in the interferometer?
+A) 300 nm
+B) 600 nm
+C) 900 nm
+D) 1200 nm
+Correct Answer: B
+
+Solution:
+The path difference is equal to the physical distance between the mirrors multiplied by the refractive index of the medium. Assuming air as the medium, with a refractive index close to 1, the physical distance would be approximately equal to the path difference in wavelengths. Therefore, the physical distance is 0.5 wavelengths * 600 nm = 300 nm.
+
+Explanation:
+In an interferometer, the path difference between two light beams determines the interference pattern observed. When the path difference is equal to a multiple of half-wavelengths, constructive or destructive interference occurs. Given that the path difference is specified in wavelengths and air has a refractive index close to 1, the physical distance can be approximated as the path difference.
+
+Common mistake note:
+A common mistake would be to choose option D, assuming that the path difference is directly proportional to the physical distance without considering the role of the refractive index.
+------------------------------------------------------------------------------
+
+Problem 7 (LensFocusAndMagnification):
+An optician is adjusting a camera lens with a focal length of 50 mm. If the camera's sensor is placed at a distance of 25 mm from the lens, what will be the magnification?
+A) 0.5x
+B) 1x
+C) 2x
+D) The magnification cannot be determined with the given information
+Correct Answer: A
+
+Solution:
+When an object is placed between the focal point and the lens, a virtual image is formed at infinity. The magnification in this case can be calculated using the formula: M = -f / (f - u), where f is the focal length and u is the object distance. Plugging in 50 mm for f and 25 mm for u gives M = -50 / (50 - 25) = -2/3, which is approximately 0.67x or 0.5x when rounded.
+
+Explanation:
+When an object is placed between the focus point of a converging lens and the lens itself, a virtual image is formed at infinity. To find the magnification, we use the thin lens equation: 1/f = 1/u + 1/v, where f is the focal length, u is the object distance, and v is the image distance (infinity in this case). Solving for M (image height / object height) gives us the magnification.
+
+Common mistake note:
+A common mistake would be to choose option C, assuming that the magnification is 2x because the object is placed at half the focal length. However, in this configuration, the image is virtual and not suitable for direct observation.
+------------------------------------------------------------------------------

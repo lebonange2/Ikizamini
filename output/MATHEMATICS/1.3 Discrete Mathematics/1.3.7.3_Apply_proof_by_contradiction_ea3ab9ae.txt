@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.7.3 Apply proof by contradiction
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.7 Proof Techniques
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Prove that the square root of 2 is irrational using proof by contradiction. Assume the opposite and show a contradiction.
+A) Assume φ = m/ n, where m and n are integers with no common factors other than 1. Then, φ^2 = m^2 / n^2 is rational. This contradicts the fact that 2 is irrational.
+B) Assume φ = π * q, where q is a rational number. Then, φ^2 = π^2 * q^2 is also rational. This contradicts the fact that 2 is irrational.
+C) Assume φ is rational. Since all rational numbers can be expressed as a ratio of two integers, there exist integers m and n such that φ = m/ n. But then, φ^2 = m^2 / n^2 would also be an integer, contradicting the fact that 2 is not a perfect square.
+D) Assume φ = m/ n, where m and n are integers with no common factors other than 1. Then, φ^2 = (m^2 + n^2) / (2n^2), which is rational but not an integer, contradicting the fact that 2 is a perfect square.
+Correct Answer: C
+
+Solution:
+The correct proof by contradiction assumes that φ is rational and expresses it as m/ n. Then, squaring φ results in m^2 / n^2, which must be an integer if φ were rational. This contradicts the fact that 2 is irrational since 2 = φ^2 would also be an integer. Choice A uses unnecessary variables and choice B uses a different method (showing φ^2 is an integer). Choice D incorrectly arrives at a non-integer rational number for φ^2.
+
+Explanation:
+Proof by contradiction involves assuming the opposite of what we want to prove and then showing that this assumption leads to a logical inconsistency. In this case, we assume that the square root of 2 is rational and arrive at a contradiction by demonstrating that it would imply 2 is an integer squared.
+
+Common mistake note:
+A common mistake is confusing proof by contradiction with direct proof; remember to start by assuming the opposite of what you want to prove.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+Prove that there are infinitely many prime numbers using proof by contradiction. Assume there are finitely many primes and show a contradiction.
+A) Let P be the product of all known primes. Create a new number N = P + 1, which is not divisible by any of the primes in P. This contradicts the assumption that P contains all prime numbers.
+B) Assume there are only k prime numbers. Multiply them together and add 1 to get a new number N. If N is prime, it contradicts our assumption. If N is composite, at least one of its factors must be a new prime, also contradicting the assumption.
+C) Let P be the largest known prime. Create a new number N = 2P + 1. This number is odd and not divisible by any of the primes in P, so it must be a new prime, contradicting the finiteness assumption.
+D) Assume there are only k prime numbers. Find the smallest prime p and multiply all other primes together to get M. Create N = M * p + 1, which is not divisible by any of the primes in P, leading to a contradiction.
+Correct Answer: B
+
+Solution:
+The correct proof by contradiction assumes finitely many primes and constructs a new number N that either contradicts the assumption directly (if it's prime) or indirectly (if it's composite). Choice A uses an incorrect method for creating N, and choice C only finds one new prime. Choice D unnecessarily involves finding the smallest prime.
+
+Explanation:
+Proof by contradiction in this case involves assuming a finite number of primes and showing that this leads to either a new prime or a composite number with a previously unknown prime factor, both of which contradict the assumption of finitely many primes.
+
+Common mistake note:
+A common mistake is not clearly demonstrating how the constructed number N contradicts the finiteness assumption.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwe):
+Prove that the set of irrational numbers is uncountable using proof by contradiction. Assume the set of irrationals is countable and show a contradiction.
+A) Assume the irrationals are countable, so they can be listed as (a1, a2, a3, ...). Create a new number N = 0.
+B) Assuming the irrationals are countable, let's list them as (a1, a2, a3, ...). For each ai, create a new number Ni = ai + 1/i. Since these numbers are distinct from the original list, we have found more than countably many irrational numbers, contradicting our assumption.
+C) Assume the irrationals are countable and can be listed as (a1, a2, a3, ...). Create a new number N = 0.
+D) Assuming the irrationals are countable, let's list them as (a1, a2, a3, ...). For each ai, create a new number Ni = ai + 1/2i. Since these numbers are distinct from the original list and also irrational, we have found more than countably many irrational numbers, contradicting our assumption.
+Correct Answer: D
+
+Solution:
+The correct proof by contradiction assumes that irrationals are countable and constructs a new set of distinct irrational numbers (Ni) that cannot be part of the original countable list. Choice A and C lack a clear construction of N. Choice B uses 1/i, which could result in rational numbers.
+
+Explanation:
+Proof by contradiction here involves assuming that the irrationals are countable and creating a new set of distinct irrational numbers from the original list, showing that there must be more than countably many, contradicting the assumption.
+
+Common mistake note:
+A common mistake is not ensuring that the new numbers created are both distinct and irrational.
+------------------------------------------------------------------------------
+
+Problem 4 (Zxcv):
+Prove that sqrt(3) is irrational using proof by contradiction. Assume the opposite and show a contradiction.
+A) Assume φ = m/ n, where m and n have no common factors other than 1. Then, 3n^2 = m^2, which implies that m^2 is divisible by 3. This contradicts the fact that if a number is divisible by 3, its square must also be divisible by 3.
+B) Assume φ = m/ n, where m and n are integers with no common factors other than 1. Then, 3m^2 = n^2, which implies that n^2 is divisible by 3. This contradicts the fact that if a number is divisible by 3, its square must also be divisible by 3.
+C) Assume φ = m/ n, where m and n have no common factors other than 1. Then, 3n^2 = m^2, which implies that m is divisible by 3. This contradicts the fact that if a number is divisible by 3, its square root cannot be expressed as a ratio of two integers.
+D) Assume φ = m/ n, where m and n are integers with no common factors other than 1. Then, 3m^2 = n^2, which implies that m is divisible by 3. This contradicts the fact that if a number is divisible by 3, its square root cannot be expressed as a ratio of two integers.
+Correct Answer: C
+
+Solution:
+The correct proof by contradiction assumes that φ = sqrt(3) is rational and expresses it as m/ n. Then, multiplying both sides by 3 results in 3n^2 = m^2, which implies that m is divisible by 3. This contradicts the fact that if m is divisible by 3, m^2 cannot be expressed as a ratio of two integers with no common factors. Choices A and B use n instead of m, while choice D uses an incorrect statement about n.
+
+Explanation:
+Proof by contradiction in this case involves assuming sqrt(3) is rational and showing that it leads to a situation where the numerator (m) must be divisible by 3, which contradicts the assumption of rationality.
+
+Common mistake note:
+A common mistake is mixing up m and n when considering divisibility by 3.
+------------------------------------------------------------------------------
+
+Problem 5 (Sdfg):
+Prove that there are infinitely many twin primes using proof by contradiction. Assume there are finitely many pairs of twin primes (p1, p2), (p3, p4), ..., (pn, pn+1) and show a contradiction.
+A) Let P = p1 * p2 * ... * pn * (pn+1) + 2. This number is even and greater than the largest prime in our list, so it must be divisible by a new prime that is part of a twin prime pair with another new prime, contradicting the finiteness assumption.
+B) Assume there are only k pairs of twin primes. Multiply all primes from each pair together to get M, then add 2 to get N = M + 2. If N is prime, it contradicts our assumption. If N is composite, at least one of its factors must be a new prime in a twin prime pair, also contradicting the assumption.
+C) Let P = p1 * p2 * ... * pn * (pn+1) - 1. This number is odd and not divisible by any of the primes in our list, so it must be a new prime that is part of a twin prime pair with another new prime, contradicting the finiteness assumption.
+D) Assume there are only k pairs of twin primes. Find the smallest twin prime pair (p1, p2) and multiply all other primes from each pair together to get M. Create N = M * (p1 - 1), which is not divisible by any of the primes in our list, leading to a contradiction.
+Correct Answer: A
+
+Solution:
+The correct proof by contradiction assumes finitely many twin prime pairs and constructs a new number N that either contradicts the assumption directly (if it's part of a twin prime pair) or indirectly (if it's composite with a previously unknown prime factor). Choice B uses an incorrect method for creating N, while choices C and D do not guarantee a twin prime pair.
+
+Explanation:
+Proof by contradiction in this case involves assuming a finite number of twin prime pairs and showing that this leads to a new prime or a composite number with a previously unknown prime factor in a twin prime relationship, both of which contradict the assumption of finitely many pairs.
+
+Common mistake note:
+A common mistake is not ensuring that the constructed number N leads to a twin prime pair.
+------------------------------------------------------------------------------
+
+Problem 6 (Hjkl):
+Prove that the sum of an infinite geometric series with a ratio less than 1 converges using proof by contradiction. Assume the opposite and show a contradiction.
+A) Assume the sum Sn = a(1 - r^n) / (1 - r) diverges for some |r| < 1. Let N be a large integer such that |r|^N < ε, where ε is an arbitrary small positive number. Then, for n > N, the terms of the series become smaller than ε, contradicting divergence.
+B) Assume the sum Sn = a(1 - r^n) / (1 - r) converges for some |r| < 1. Let N be a large integer such that |r|^N < ε, where ε is an arbitrary small positive number. Then, for n > N, the terms of the series become smaller than ε, contradicting convergence.
+C) Assume the sum Sn = a(1 - r^n) / (1 - r) diverges for some |r| < 1. Let N be a large integer such that |r|^N < 1. Then, for n > N, the terms of the series grow without bound, contradicting divergence.
+D) Assume the sum Sn = a(1 - r^n) / (1 - r) converges for some |r| < 1. Let N be a large integer such that |r|^N < 1. Then, for n > N, the terms of the series grow without bound, contradicting convergence.
+Correct Answer: A
+
+Solution:
+The correct proof by contradiction assumes that the infinite geometric series diverges and shows that this leads to a situation where the sum eventually becomes smaller than any arbitrary small positive number (ε), which contradicts divergence. Choice B uses the wrong assumption for the proof, while choices C and D use an incorrect bound on |r|^N.
+
+Explanation:
+Proof by contradiction in this case involves assuming that an infinite geometric series with a ratio less than 1 diverges and demonstrating that it actually converges to a finite value, contradicting the initial assumption.
+
+Common mistake note:
+A common mistake is not correctly using the properties of geometric series or choosing the wrong bound for |r|^N.
+------------------------------------------------------------------------------
+
+Problem 7 (Ujih):
+Prove that there are no integers x and y such that 3x + 4y = 7 using proof by contradiction. Assume the opposite and show a contradiction.
+A) Assume there exist integers x and y such that 3x + 4y = 7. Then, x = (7 - 4y) / 3, which is an integer only if 4 divides 7, which is false. This contradicts our assumption.
+B) Assume there exist integers x and y such that 3x + 4y = 7. Then, y = (7 - 3x) / 4, which is an integer only if 3 divides 7, which is false. This contradicts our assumption.
+C) Assume there exist integers x and y such that 3x + 4y = 7. Then, x = (7 - 4y) % 3, which is an integer only if 4 divides 7, which is false. This contradicts our assumption.
+D) Assume there exist integers x and y such that 3x + 4y = 7. Then, y = (7 - 3x) % 4, which is an integer only if 3 divides 7, which is false. This contradicts our assumption.
+Correct Answer: B
+
+Solution:
+The correct proof by contradiction assumes that there exist integers x and y satisfying the equation and shows that this leads to a situation where y must be an integer when it cannot be (since 3 does not divide 7). Choice A uses x instead of y, while choices C and D use modulo operations, which are not appropriate for this proof.
+
+Explanation:
+Proof by contradiction in this case involves assuming the existence of integers x and y that satisfy the equation and demonstrating that it leads to a contradiction with modular arithmetic properties.
+
+Common mistake note:
+A common mistake is mixing up x and y or using modulo operations instead of considering divisibility.
+------------------------------------------------------------------------------

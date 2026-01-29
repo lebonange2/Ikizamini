@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.15.14",
+  "objective_text": "Use in machine learning",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the primary use of machine learning in data analysis?",
+      "choices": {
+        "A": "Creating visualizations",
+        "B": "Predicting future outcomes based on patterns",
+        "C": "Sorting and filtering data",
+        "D": "Cleaning and formatting datasets"
+      },
+      "correct_choice": "B",
+      "solution": "Machine learning is primarily used for predicting future outcomes based on patterns found in data. It employs algorithms that learn from data to make predictions or recommendations.",
+      "explanation": "Creating visualizations (A) helps interpret data, sorting and filtering data (C) is part of data preprocessing, and cleaning and formatting datasets (D) is essential for data analysis but not the primary use of machine learning.",
+      "common_mistake_notes": "Choosing A or C may result from confusion between data analysis tasks. Choosing D could be due to underestimating prediction's role in machine learning."
+    },
+    {
+      "id": ":2",
+      "stem": "Which of the following is an example of supervised machine learning?",
+      "choices": {
+        "A": "Clustering similar customer profiles",
+        "B": "Classifying emails as spam or not spam",
+        "C": "Finding patterns in stock market data",
+        "D": "Generating recommendations based on user behavior"
+      },
+      "correct_choice": "B",
+      "solution": "Supervised learning involves training a model with labeled data. Classifying emails as spam or not spam (B) is an example, as the algorithm learns from examples marked as spam or not spam.",
+      "explanation": "Clustering similar customer profiles (A) and finding patterns in stock market data (C) are unsupervised learning tasks. Generating recommendations based on user behavior (D) can use supervised or reinforcement learning methods.",
+      "common_mistake_notes": "Choosing A or C might be due to confusion between unsupervised and supervised learning. Choosing D could result from混淆不同学习方法在推荐系统中的应用。"
+    },
+    {
+      "id": ":3",
+      "stem": "In unsupervised machine learning, what is the primary goal?",
+      "choices": {
+        "A": "To make predictions based on input data",
+        "B": "To group similar data points together",
+        "C": "To find relationships between variables",
+        "D": "To minimize error during training"
+      },
+      "correct_choice": "B",
+      "solution": "Unsupervised learning aims to discover hidden patterns or cluster similar data points without prior knowledge of output labels. Clustering (B) is a common task.",
+      "explanation": "Making predictions (A) is the focus of supervised and reinforcement learning. Finding relationships between variables (C) can be done with correlation analysis, not exclusive to unsupervised learning. Minimizing error (D) is a goal in all machine learning but not unsupervised learning's primary focus.",
+      "common_mistake_notes": "Choosing A or C may result from混淆不同机器学习类型的任务。选择D可能是因为对减少训练误差在所有学习中的普遍性理解不足。"
+    },
+    {
+      "id": ":4",
+      "stem": "What is the role of feature engineering in machine learning?",
+      "choices": {
+        "A": "To reduce the size of the dataset",
+        "B": "To improve model performance by selecting relevant variables",
+        "C": "To convert categorical data into numerical data",
+        "D": "To create new features using mathematical operations"
+      },
+      "correct_choice": "B",
+      "solution": "Feature engineering selects, creates, and transforms variables to enhance a machine learning model's performance. It focuses on relevant information (B) for predictions.",
+      "explanation": "Reducing dataset size (A) is part of data preprocessing. Converting categorical data (C) and creating new features (D) are parts of feature engineering but not its primary role.",
+      "common_mistake_notes": "Choosing A, C, or D may result from混淆数据预处理和特征工程的任务。"
+    },
+    {
+      "id": ":5",
+      "stem": "Which machine learning algorithm is suitable for regression tasks?",
+      "choices": {
+        "A": "K-means clustering",
+        "B": "Naive Bayes classifier",
+        "C": "Random Forest",
+        "D": "Linear Regression"
+      },
+      "correct_choice": "D",
+      "solution": "Linear Regression (D) is a supervised learning algorithm designed for predicting continuous values, suitable for regression tasks.",
+      "explanation": "K-means clustering (A) is unsupervised. Naive Bayes classifier (B) and Random Forest (C) are classification algorithms, not suited for regression.",
+      "common_mistake_notes": "Choosing A, B, or C may result from混淆不同机器学习算法的适用范围。"
+    },
+    {
+      "id": ":6",
+      "stem": "What is the main difference between deep learning and traditional machine learning?",
+      "choices": {
+        "A": "Deep learning uses neural networks, while traditional ML doesn't",
+        "B": "Traditional ML requires more feature engineering than deep learning",
+        "C": "Deep learning models are less accurate than traditional ML models",
+        "D": "Traditional ML can handle only linear relationships, but deep learning is nonlinear"
+      },
+      "correct_choice": "A",
+      "solution": "The main difference is that deep learning relies on neural networks (A) with multiple layers for complex pattern recognition, while traditional ML algorithms typically have fewer or no hidden layers.",
+      "explanation": "Traditional ML may require less feature engineering than deep learning. Deep learning can be more accurate in complex tasks. Traditional ML handles both linear and nonlinear relationships, but deep learning excels at nonlinearity.",
+      "common_mistake_notes": "Choosing B, C, or D may result from混淆两种学习方法的特点。选择B可能是因为对特征工程需求的误解，选择C可能低估了深度学习的优势，选择D可能忽视了传统ML处理非线性关系的能力。"
+    },
+    {
+      "id": ":7",
+      "stem": "Which of the following is an example of reinforcement learning?",
+      "choices": {
+        "A": "Personalizing product recommendations based on user behavior",
+        "B": "Classifying images of cats and dogs",
+        "C": "Predicting stock prices for next week",
+        "D": "Sorting customer data into different segments"
+      },
+      "correct_choice": "A",
+      "solution": "Reinforcement learning trains an agent to make decisions through feedback. Personalizing recommendations (A) based on user behavior is an example, as the algorithm learns by interacting with users.",
+      "explanation": "Classifying images (B) is supervised, stock price prediction (C) may use regression or time-series methods, and customer segmentation (D) is unsupervised clustering.",
+      "common_mistake_notes": "Choosing B, C, or D may result from混淆不同机器学习类型的任务。选择B可能混淆了监督学习和强化学习，选择C可能未理解预测问题的多样性，选择D可能混淆了聚类与强化学习。"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.9.2",
+  "objective_text": "Convert (r,θ) to (x,y)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Convert the polar coordinates (5, π/3) to rectangular coordinates (x, y).",
+      "choices": {
+        "A": "(2.5, 4.33)",
+        "B": "(4.33, 2.5)",
+        "C": "(5\ncos(π/3), 5\nsin(π/3))",
+        "D": "(5\ncos(π), 5\ncos(π))"
+      },
+      "correct_choice": "C",
+      "solution": "(x, y) = (r \ncos(θ), r \nsin(θ)). For (5, π/3): x = 5 \ncos(π/3) = 2.5, y = 5 \nsin(π/3) = 4.33.",
+      "explanation": "The conversion formula from polar to rectangular coordinates is (x, y) = (r \ncos(θ), r \nsin(θ)). Make sure to use the correct angle measure.",
+      "common_mistake_notes": "Common mistake: Using the wrong angle (π instead of π/3). Remember to use the given θ value in the conversion formula."
+    },
+    {
+      "id": "Bghj",
+      "stem": "Convert the polar coordinates (2, 5π/4) to rectangular coordinates (x, y).",
+      "choices": {
+        "A": "(1.41, -1.41)",
+        "B": "(-1.41, -1.41)",
+        "C": "(2\ncos(5π/4), 2\ncos(5π/4))",
+        "D": "(2\ncos(0), 2\ncos(0))"
+      },
+      "correct_choice": "B",
+      "solution": "(x, y) = (r \ncos(θ), r \nsin(θ)). For (2, 5π/4): x = 2 \ncos(5π/4) = -1.41, y = 2 \nsin(5π/4) = -1.41.",
+      "explanation": "The conversion formula from polar to rectangular coordinates is (x, y) = (r \ncos(θ), r \nsin(θ)). Make sure to use the correct angle measure.",
+      "common_mistake_notes": "Common mistake: Forgetting to adjust the sine and cosine values for the fourth quadrant. The angles in the fourth quadrant have negative cosine and sine values."
+    },
+    {
+      "id": "Qwer",
+      "stem": "Convert the polar coordinates (3, -π/2) to rectangular coordinates (x, y).",
+      "choices": {
+        "A": "(0, 3)",
+        "B": "(3, 0)",
+        "C": "(3\ncos(-π/2), 3\ncos(-π/2))",
+        "D": "(3\ncos(π/2), 3\ncos(π))"
+      },
+      "correct_choice": "A",
+      "solution": "(x, y) = (r \ncos(θ), r \nsin(θ)). For (3, -π/2): x = 3 \ncos(-π/2) = 0, y = 3 \nsin(-π/2) = -3.",
+      "explanation": "The conversion formula from polar to rectangular coordinates is (x, y) = (r \ncos(θ), r \nsin(θ)). Make sure to use the correct angle measure.",
+      "common_mistake_notes": "Common mistake: Not considering the negative sine value for -π/2. The sine of an angle in the third quadrant is negative."
+    },
+    {
+      "id": "Tyui",
+      "stem": "Convert the polar coordinates (4, 3π) to rectangular coordinates (x, y).",
+      "choices": {
+        "A": "(4\ncos(3π), 4\ncos(3π))",
+        "B": "(4\ncos(2π), 4\ncos(2π))",
+        "C": "(4\ncos(0), 4\ncos(0))",
+        "D": "(4\ncos(-π), 4\ncos(-π))"
+      },
+      "correct_choice": "A",
+      "solution": "(x, y) = (r \ncos(θ), r \nsin(θ)). For (4, 3π): x = 4 \ncos(3π) = -4, y = 4 \nsin(3π) = 0.",
+      "explanation": "The conversion formula from polar to rectangular coordinates is (x, y) = (r \ncos(θ), r \nsin(θ)). Make sure to use the correct angle measure.",
+      "common_mistake_notes": "Common mistake: Not adjusting for a full revolution around the origin. Remember that 3π is equivalent to -π in rectangular coordinates."
+    },
+    {
+      "id": "Poiu",
+      "stem": "Convert the polar coordinates (6, π/6) to rectangular coordinates (x, y).",
+      "choices": {
+        "A": "(3\ncos(π/6), 3\ncos(π/6))",
+        "B": "(3\ncos(π/2), 3\ncos(π/2))",
+        "C": "(6\ncos(π/6), 6\ncos(π/6))",
+        "D": "(6\ncos(π), 6\ncos(π))"
+      },
+      "correct_choice": "C",
+      "solution": "(x, y) = (r \ncos(θ), r \nsin(θ)). For (6, π/6): x = 6 \ncos(π/6) = 3\ncos(π/6), y = 6 \nsin(π/6) = 3\ncos(π/6).",
+      "explanation": "The conversion formula from polar to rectangular coordinates is (x, y) = (r \ncos(θ), r \nsin(θ)). Make sure to use the correct angle measure.",
+      "common_mistake_notes": "Common mistake: Mixing up sine and cosine. Remember that for this problem, both x and y will have the same value because cos(π/6) = sin(π/6)."
+    },
+    {
+      "id": "Bvbn",
+      "stem": "Convert the polar coordinates (7, -2π/3) to rectangular coordinates (x, y).",
+      "choices": {
+        "A": "(7\ncos(-2π/3), 7\ncos(-2π/3))",
+        "B": "(7\ncos(4π/3), 7\ncos(4π/3))",
+        "C": "(7\ncos(π/3), 7\ncos(π/3))",
+        "D": "(7\ncos(0), 7\ncos(0))"
+      },
+      "correct_choice": "B",
+      "solution": "(x, y) = (r \ncos(θ), r \nsin(θ)). For (7, -2π/3): x = 7 \ncos(-2π/3) = 7\ncos(4π/3), y = 7 \nsin(-2π/3) = -7\ncos(4π/3).",
+      "explanation": "The conversion formula from polar to rectangular coordinates is (x, y) = (r \ncos(θ), r \nsin(θ)). Make sure to use the correct angle measure.",
+      "common_mistake_notes": "Common mistake: Not considering the negative cosine value for -2π/3. The cosine of an angle in the third quadrant is negative."
+    },
+    {
+      "id": "Vbnm",
+      "stem": "Convert the polar coordinates (8, 5π/3) to rectangular coordinates (x, y).",
+      "choices": {
+        "A": "(8\ncos(5π/3), 8\ncos(5π/3))",
+        "B": "(8\ncos(2π/3), 8\ncos(2π/3))",
+        "C": "(8\ncos(-π/3), 8\ncos(-π/3))",
+        "D": "(8\ncos(0), 8\ncos(0))"
+      },
+      "correct_choice": "A",
+      "solution": "(x, y) = (r \ncos(θ), r \nsin(θ)). For (8, 5π/3): x = 8 \ncos(5π/3) = 8\ncos(2π/3), y = 8 \nsin(5π/3) = -8\ncos(2π/3).",
+      "explanation": "The conversion formula from polar to rectangular coordinates is (x, y) = (r \ncos(θ), r \nsin(θ)). Make sure to use the correct angle measure.",
+      "common_mistake_notes": "Common mistake: Not adjusting for a full revolution around the origin. Remember that 5π/3 is equivalent to 2π/3 in rectangular coordinates."
+    }
+  ]
+}

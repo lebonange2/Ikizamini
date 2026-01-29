@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.13.11",
+  "objective_text": "Apply spherical coordinates to surfaces",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Andromeda Galaxy Shape",
+      "stem": "What shape does the Andromeda Galaxy appear as when viewed in spherical coordinates?",
+      "choices": {
+        "A": "Circle",
+        "B": "Sphere",
+        "C": "Ellipsoid",
+        "D": "Cylinder"
+      },
+      "correct_choice": "B",
+      "solution": "In spherical coordinates, the Andromeda Galaxy appears as a sphere due to the uniform distribution of stars across its surface. So, the correct answer is B: Sphere.",
+      "explanation": "Spherical coordinates describe points on a sphere or in 3D space. The galaxy's shape in these coordinates reflects its overall structure rather than its spiral arms.",
+      "common_mistake_notes": "Common mistake: selecting A (Circle), which represents the projection of the galaxy onto a plane, not its shape in spherical coordinates."
+    },
+    {
+      "id": "Sphere Surface Area",
+      "stem": "Calculate the surface area of a sphere with radius 5 units using the formula for surface area in spherical coordinates: A = 2πr².",
+      "choices": {
+        "A": "100π",
+        "B": "75π",
+        "C": "25π",
+        "D": "50π"
+      },
+      "correct_choice": "A",
+      "solution": "Using the formula, A = 2π(5)² = 100π. So, the correct answer is A: 100π.",
+      "explanation": "The surface area of a sphere is directly proportional to the square of its radius.",
+      "common_mistake_notes": "Common mistake: forgetting to square the radius or using an incorrect formula (e.g., volume formula instead)."
+    },
+    {
+      "id": "Cone Volume",
+      "stem": "Find the volume of a cone with height 6 units and base radius 3 units. Use the standard formula for volume, V = πr²h / 3, not spherical coordinates.",
+      "choices": {
+        "A": "18π",
+        "B": "54π",
+        "C": "36π",
+        "D": "72π"
+      },
+      "correct_choice": "A",
+      "solution": "The volume is V = π(3)²(6) / 3 = 18π. So, the correct answer is A: 18π.",
+      "explanation": "The volume of a cone is unrelated to spherical coordinates; use the standard formula.",
+      "common_mistake_notes": "Common mistake: attempting to use a spherical coordinate formula or applying concepts incorrectly."
+    },
+    {
+      "id": "Sphere Volume",
+      "stem": "Calculate the volume of a sphere with radius 4 units using the formula for volume in spherical coordinates: V = πr³ / 3.",
+      "choices": {
+        "A": "256π",
+        "B": "128π",
+        "C": "64π",
+        "D": "32π"
+      },
+      "correct_choice": "C",
+      "solution": "Using the formula, V = π(4)³ / 3 = 64π. So, the correct answer is C: 64π.",
+      "explanation": "The volume of a sphere is directly proportional to the cube of its radius.",
+      "common_mistake_notes": "Common mistake: forgetting to cube the radius or using an incorrect formula (e.g., surface area formula instead)."
+    },
+    {
+      "id": "Spherical Cap Volume",
+      "stem": "Find the volume of a spherical cap with height 3 units and base radius 5 units. The cap is cut from a sphere with radius 8 units. Use the formula V = πh(R² + h²) / 3, where R is the radius of the sphere.",
+      "choices": {
+        "A": "12π",
+        "B": "48π",
+        "C": "72π",
+        "D": "96π"
+      },
+      "correct_choice": "B",
+      "solution": "The volume is V = π(3)(8² + 3²) / 3 = 48π. So, the correct answer is B: 48π.",
+      "explanation": "The volume of a spherical cap depends on its height and the radius of the sphere it's cut from.",
+      "common_mistake_notes": "Common mistake: using the wrong formula or mixing up variables (e.g., using base radius instead of sphere's radius)."
+    },
+    {
+      "id": "Spherical Shell Volume",
+      "stem": "Find the volume of a spherical shell with outer radius 10 units and inner radius 6 units. Use the standard formula for volume, V = π(R² - r²)h, where R is the outer radius and r is the inner radius.",
+      "choices": {
+        "A": "128π",
+        "B": "192π",
+        "C": "256π",
+        "D": "320π"
+      },
+      "correct_choice": "B",
+      "solution": "The volume is V = π(10² - 6²)(4) = 192π. So, the correct answer is B: 192π.",
+      "explanation": "The volume of a spherical shell depends on the difference in radii and height between them.",
+      "common_mistake_notes": "Common mistake: using the wrong formula or mixing up variables (e.g., using radius of a sphere instead of shell's radii)."
+    },
+    {
+      "id": "Spherical Sector Volume",
+      "stem": "Find the volume of a spherical sector with central angle 60° and radius 7 units. Use the standard formula for volume, V = πr²h / 3, where h is the height of the sector.",
+      "choices": {
+        "A": "49π",
+        "B": "147π",
+        "C": "294π",
+        "D": "882π"
+      },
+      "correct_choice": "A",
+      "solution": "The volume is V = π(7)²(7π / 6) / 3 = 49π. So, the correct answer is A: 49π.",
+      "explanation": "The volume of a spherical sector depends on its central angle and radius.",
+      "common_mistake_notes": "Common mistake: using the wrong formula or not converting the central angle to radians."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.14.15",
+  "objective_text": "Optimize engineering layouts",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":memory:1",
+      "stem": "A factory needs to rearrange its production line for maximum efficiency. The current layout has machines A, B, C, and D arranged in that order. Which of the following arrangements would likely result in the shortest overall distance traveled by materials between machines?",
+      "choices": {
+        "A": "[A, B, D, C]",
+        "B": "[A, C, B, D]",
+        "C": "[A, D, B, C]",
+        "D": "[B, A, C, D]"
+      },
+      "correct_choice": "C",
+      "solution": "The optimal layout would minimize the distance materials need to travel between machines. In option C, materials only need to move from machine A to D (shortest distance), then from D to B, and finally from B to C. This arrangement reduces unnecessary back-and-forth movement compared to the other options.",
+      "explanation": "The key to optimizing the layout is to minimize material movement between machines. Option C achieves this by having materials move in a more linear fashion.",
+      "common_mistake_notes": "A common mistake would be choosing option A, which may seem logical due to maintaining the alphabetical order of machines. However, it does not consider the efficiency of material flow."
+    },
+    {
+      "id": ":memory:2",
+      "stem": "An engineer is tasked with designing a server room layout that minimizes cable length and maximizes cooling efficiency. Which of the following layouts would be most effective?",
+      "choices": {
+        "A": "[Servers arranged in a circle around the AC units]",
+        "B": "[Servers placed randomly throughout the room]",
+        "C": "[Servers arranged in rows perpendicular to the AC units]",
+        "D": "[Servers arranged in columns parallel to the AC units]"
+      },
+      "correct_choice": "C",
+      "solution": "Option C is the most effective because it arranges servers in a way that allows for better air circulation and minimizes cable length between servers and power sources.",
+      "explanation": "Good server room design prioritizes cooling efficiency and minimizing cable clutter. Option C ensures that cool air from AC units can flow easily between servers, while also keeping cables short to reduce potential issues.",
+      "common_mistake_notes": "A common mistake might be selecting option A, as it may seem intuitive to place servers close to the AC units. However, this layout could obstruct airflow and lead to hotspots."
+    },
+    {
+      "id": ":memory:3",
+      "stem": "In a chemical plant, engineers are optimizing the piping system for minimum pressure loss and ease of maintenance. Which pipe routing would result in the most efficient design?",
+      "choices": {
+        "A": "[Curved pipes following the shortest path between units]",
+        "B": "[Straight pipes with gradual turns to avoid equipment collisions]",
+        "C": "[Longest possible straight pipes to minimize friction losses]",
+        "D": "[Randomly placed pipes to maximize flexibility]"
+      },
+      "correct_choice": "B",
+      "solution": "Option B is best because it minimizes pressure loss by using straight pipes and gradual turns, while also considering space constraints for ease of maintenance.",
+      "explanation": "Efficient piping systems should minimize pressure losses and allow for easy access for maintenance. Option B balances these requirements by using straight sections with gentle curves to avoid collisions without unnecessarily increasing pipe length.",
+      "common_mistake_notes": "A common mistake would be selecting option C, which focuses only on minimizing friction losses but ignores the practicality of routing pipes around existing equipment."
+    },
+    {
+      "id": ":memory:4",
+      "stem": "An architect is designing a data center with high-density racks. To optimize cooling and energy efficiency, what should the server rack arrangement be?",
+      "choices": {
+        "A": "[Racks arranged in a circle to promote air circulation]",
+        "B": "[Racks placed back-... (truncated) from the CRAC units enters the cold aisle and hot air from servers exits through the hot aisle, creating an efficient thermal gradient.",
+        "C": "[Packaging stations grouped by function, with dedicated buffer zones between groups]",
+        "D": "[Packaging stations placed randomly throughout the room to balance workload]"
+      },
+      "correct_choice": "B",
+      "solution": "Option B is the most efficient as it organizes packaging stations by function and provides buffer zones, reducing bottlenecks and improving productivity.",
+      "explanation": "A well-organized packaging line should minimize delays and ensure smooth flow of products. Option B achieves this by grouping similar tasks together and providing space for temporary storage, preventing congestion.",
+      "common_mistake_notes": "A common mistake might be selecting option A, as it may seem efficient due to its simplicity. However, this layout can lead to bottlenecks and inefficiencies when one station slows down."
+    },
+    {
+      "id": ":memory:7",
+      "stem": "An engineer is optimizing a warehouse storage system for efficient order picking. Which of the following layouts would result in the shortest travel distance for pickers?",
+      "choices": {
+        "A": "[Products arranged randomly throughout the warehouse to balance picker workload]",
+        "B": "[Products grouped by category, with aisles between categories for easy navigation]",
+        "C": "[Products placed in a circle to minimize walking distance overall]",
+        "D": "[Products arranged linearly along one wall, with pickers moving back and forth]"
+      },
+      "correct_choice": "B",
+      "solution": "Option B is the most efficient as it organizes products by category, allowing pickers to quickly locate items and navigate the warehouse.",
+      "explanation": "Efficient warehouse storage should enable easy access for pickers. Option B groups similar products together, reducing picker travel time and improving picking accuracy.",
+      "common_mistake_notes": "A common mistake could be selecting option C, which may seem like a good way to minimize walking distance. However, it can lead to confusion for pickers and make it harder to locate specific items."
+    },
+    {
+      "id": ":memory:6",
+      "stem": "An industrial designer is optimizing a packaging line for maximum productivity. Which layout would result in the most streamlined process?",
+      "choices": {
+        "A": "[Packaging stations arranged linearly with no buffer zones between them]",
+        "B": "[Packaging stations grouped by function, with dedicated buffer zones between groups]",
+        "C": "[Packaging stations placed randomly throughout the room to balance workload]",
+        "D": "[Packaging stations arranged in a circle for easy access to all stations]"
+      },
+      "correct_choice": "B",
+      "solution": "Option B is the most efficient as it organizes packaging stations by function and provides buffer zones, reducing bottlenecks and improving productivity.",
+      "explanation": "A well-organized packaging line should minimize delays and ensure smooth flow of products. Option B achieves this by grouping similar tasks together and providing space for temporary storage, preventing congestion.",
+      "common_mistake_notes": "A common mistake might be selecting option A, as it may seem efficient due to its simplicity. However, this layout can lead to bottlenecks and inefficiencies when one station slows down."
+    },
+    {
+      "id": ":memory:5",
+      "stem": "An engineer is redesigning an assembly line for a manufacturing plant. Which of the following layouts would result in the shortest cycle time?",
+      "choices": {
+        "A": "[Machines arranged in a straight line with minimal spacing between them]",
+        "B": "[Machines grouped by function, with longer distances between groups]",
+        "C": "[Machines placed randomly throughout the room to balance workload]",
+        "D": "[Machines arranged in a U-shape to minimize material handling]"
+      },
+      "correct_choice": "D",
+      "solution": "Option D is the most efficient as it minimizes material handling and reduces cycle time by keeping materials close to the workstations.",
+      "explanation": "The U-shaped layout allows for better flow of materials, reducing unnecessary movement and wait times. This arrangement also facilitates communication and coordination among team members.",
+      "common_mistake_notes": "A common mistake could be selecting option A, which may seem efficient due to its compactness. However, it can lead to bottlenecks and increased material handling between machines."
+    }
+  ]
+}

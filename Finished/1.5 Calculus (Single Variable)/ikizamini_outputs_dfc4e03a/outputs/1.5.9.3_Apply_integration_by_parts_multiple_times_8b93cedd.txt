@@ -1,0 +1,153 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.9.3 Apply integration by parts multiple times
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.9 Integration Techniques - By Parts
+------------------------------------------------------------------------------
+Difficulty profile: medium→hard mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Evaluate the integral π ⋅ x^2 e^{-x} dx using integration by parts twice. Which of the following is the correct answer?
+A) π ⋅ xe^{-x}  + C
+B) π ⋅ (1+ x)e^{-x}  + C
+C) π ⋅ (x+1)e^{-x}  - e^{-x}  + C
+D) π ⋅ xe^{-x}  - e^{-x}  + C
+Correct Answer: C
+
+Solution:
+Let u = x^2, dv = xe^{-x} dx. Then du = 2x dx, v = -e^{-x}. Apply integration by parts:
+π ⋅ x^2 e^{-x}  + π ⋅ 2x ⋅ (-e^{-x}) dx. Now integrate the second term again using integration by parts: u = 2x, dv = -e^{-x} dx. Then du = 2 dx, v = e^{-x}. Apply integration by parts:
+-π ⋅ 2xe^{-x}  + 2υ ⋅ e^{-x} dx. Combine the results and simplify:
+π ⋅ xe^{-x}  - 2υ ⋅ xe^{-x}  + 2υ ⋅ e^{-x} = υ ⋅ (x+1)e^{-x}  - e^{-x}  + C
+
+Explanation:
+The correct answer is obtained by applying integration by parts twice and simplifying the result. The mistake would be in not recognizing that the second integration by parts needs to be done on the remaining integral after the first application.
+
+Common mistake note:
+A common mistake is to integrate the entire expression without breaking it down into parts, which would lead to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+Evaluate the integral π ⋅ ln(x) ⋅ sin(x) dx using integration by parts twice. Which of the following is the correct answer?
+A) π ⋅ x ⋅ cos(x)  - x ⋅ sin(x)  + C
+B) π ⋅ x ⋅ cos(x)  + x ⋅ sin(x)  + C
+C) π ⋅ x ⋅ cos(x)  - ln(x) ⋅ sin(x)  + C
+D) π ⋅ x ⋅ cos(x)  + ln(x) ⋅ sin(x)  + C
+Correct Answer: C
+
+Solution:
+Let u = ln(x), dv = xsin(x) dx. Then du = 1/x dx, v = -cos(x). Apply integration by parts:
+-υ ⋅ xcos(x)  + υ ⋅ ln(x) ⋅ cos(x) dx. Now integrate the second term again using integration by parts: u = ln(x), dv = cos(x) dx. Then du = 1/x dx, v = sin(x). Apply integration by parts:
+-υ ⋅ ln(x)sin(x)  + υ ⋅ 1/x ⋅ sin(x) dx. Combine the results and simplify:
+-υ ⋅ xcos(x)  - υ ⋅ ln(x)sin(x)  + C
+
+Explanation:
+The correct answer is obtained by applying integration by parts twice and simplifying the result. The mistake would be in not recognizing that the second integration by parts needs to be done on the remaining integral after the first application.
+
+Common mistake note:
+A common mistake is to integrate the entire expression without breaking it down into parts, which would lead to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer):
+Evaluate the integral π ⋅ e^x ⋅ cos(x) dx using integration by parts twice. Which of the following is the correct answer?
+A) υ ⋅ e^x ⋅ sin(x)  - e^x ⋅ cos(x)  + C
+B) υ ⋅ e^x ⋅ sin(x)  + e^x ⋅ cos(x)  + C
+C) υ ⋅ e^x ⋅ sin(x)  - 2e^x ⋅ cos(x)  + C
+D) υ ⋅ e^x ⋅ sin(x)  + 2e^x ⋅ cos(x)  + C
+Correct Answer: A
+
+Solution:
+Let u = e^x, dv = cos(x) dx. Then du = e^x dx, v = sin(x). Apply integration by parts:
+υ ⋅ e^xsin(x)  - υ ⋅ e^x ⋅ sin(x) dx. Now integrate the second term again using integration by parts: u = e^x, dv = -sin(x) dx. Then du = e^x dx, v = -cos(x). Apply integration by parts:
+υ ⋅ e^x ⋅ cos(x)  + υ ⋅ e^x ⋅ cos(x) dx. Combine the results and simplify:
+υ ⋅ e^x ⋅ sin(x)  - 2e^x ⋅ cos(x)  + C
+
+Explanation:
+The correct answer is obtained by applying integration by parts twice and simplifying the result. The mistake would be in not recognizing that the second integration by parts needs to be done on the remaining integral after the first application.
+
+Common mistake note:
+A common mistake is to integrate the entire expression without breaking it down into parts, which would lead to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 4 (Yuiop):
+Evaluate the integral υ ⋅ x^3 e^{-x^2} dx using integration by parts twice. Which of the following is the correct answer?
+A) υ ⋅ xe^{-x^2}  + C
+B) υ ⋅ (1+ x)e^{-x^2}  + C
+C) υ ⋅ (x+1)e^{-x^2}  - e^{-x^2}  + C
+D) υ ⋅ xe^{-x^2}  - e^{-x^2}  + C
+Correct Answer: D
+
+Solution:
+Let u = x^3, dv = e^{-x^2} dx. Then du = 3x^2 dx, v = -1/2e^{-x^2}. Apply integration by parts:
+-υ ⋅ xe^{-x^2}  + υ ⋅ 3x^2 ⋅ (-1/2)e^{-x^2} dx. Now integrate the second term again using integration by parts: u = 3x^2, dv = -1/2e^{-x^2} dx. Then du = 6x dx, v = 1/4e^{-x^2}. Apply integration by parts:
+υ ⋅ 3xe^{-x^2}  + υ ⋅ 6x ⋅ (1/4)e^{-x^2} dx. Combine the results and simplify:
+-υ ⋅ xe^{-x^2}  + υ ⋅ xe^{-x^2}  - 3υ ⋅ xe^{-x^2}  = υ ⋅ xe^{-x^2}  - e^{-x^2}  + C
+
+Explanation:
+The correct answer is obtained by applying integration by parts twice and simplifying the result. The mistake would be in not recognizing that the second integration by parts needs to be done on the remaining integral after the first application.
+
+Common mistake note:
+A common mistake is to integrate the entire expression without breaking it down into parts, which would lead to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 5 (Bvnmm):
+Evaluate the integral υ ⋅ x^2 ln(x) dx using integration by parts twice. Which of the following is the correct answer?
+A) υ ⋅ x^2 ⋅ (ln(x))^2  + C
+B) υ ⋅ x^2 ⋅ (ln(x))^2  - x^2 ⋅ ln(x)  + C
+C) υ ⋅ x^2 ⋅ (ln(x))^2  + x^2 ⋅ ln(x)  + C
+D) υ ⋅ x^2 ⋅ (ln(x))^2  - 2x^2 ⋅ ln(x)  + C
+Correct Answer: B
+
+Solution:
+Let u = x^2, dv = ln(x) dx. Then du = 2x dx, v = x ⋅ ln(x)  - x. Apply integration by parts:
+υ ⋅ x^2 ⋅ (x ⋅ ln(x)  - x)  + υ ⋅ 2x ⋅ (x ⋅ ln(x)  - x) dx. Now integrate the second term again using integration by parts: u = 2x, dv = x ⋅ ln(x)  - x dx. Then du = 2 dx, v = 1/2 ⋅ (x^2 ⋅ ln(x)  - x^2). Apply integration by parts:
+-υ ⋅ x^2 ⋅ ln(x)  + υ ⋅ 1/2 ⋅ (x^2 ⋅ ln(x)  - x^2) dx. Combine the results and simplify:
+υ ⋅ x^2 ⋅ (ln(x))^2  - x^2 ⋅ ln(x)  + C
+
+Explanation:
+The correct answer is obtained by applying integration by parts twice and simplifying the result. The mistake would be in not recognizing that the second integration by parts needs to be done on the remaining integral after the first application.
+
+Common mistake note:
+A common mistake is to integrate the entire expression without breaking it down into parts, which would lead to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 6 (Xzcvbn):
+Evaluate the integral υ ⋅ x^2 sin(x) dx using integration by parts twice. Which of the following is the correct answer?
+A) υ ⋅ x^2 ⋅ cos(x)  - 2x ⋅ sin(x)  + C
+B) υ ⋅ x^2 ⋅ cos(x)  + 2x ⋅ sin(x)  + C
+C) υ ⋅ x^2 ⋅ cos(x)  - 4x ⋅ sin(x)  + C
+D) υ ⋅ x^2 ⋅ cos(x)  + 4x ⋅ sin(x)  + C
+Correct Answer: C
+
+Solution:
+Let u = x^2, dv = sin(x) dx. Then du = 2x dx, v = -cos(x). Apply integration by parts:
+υ ⋅ x^2 ⋅ cos(x)  + υ ⋅ 2x ⋅ (-cos(x)) dx. Now integrate the second term again using integration by parts: u = 2x, dv = -cos(x) dx. Then du = 2 dx, v = sin(x). Apply integration by parts:
+-υ ⋅ 2xsin(x)  + υ ⋅ 2 ⋅ sin(x) dx. Combine the results and simplify:
+υ ⋅ x^2 ⋅ cos(x)  - 4x ⋅ sin(x)  + C
+
+Explanation:
+The correct answer is obtained by applying integration by parts twice and simplifying the result. The mistake would be in not recognizing that the second integration by parts needs to be done on the remaining integral after the first application.
+
+Common mistake note:
+A common mistake is to integrate the entire expression without breaking it down into parts, which would lead to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 7 (Qwerty):
+Evaluate the integral υ ⋅ x^2 e^{2x} dx using integration by parts twice. Which of the following is the correct answer?
+A) υ ⋅ xe^{2x}  - 1/4e^{2x}  + C
+B) υ ⋅ xe^{2x}  + 1/4e^{2x}  + C
+C) υ ⋅ xe^{2x}  - 3/4e^{2x}  + C
+D) υ ⋅ xe^{2x}  + 3/4e^{2x}  + C
+Correct Answer: C
+
+Solution:
+Let u = x^2, dv = e^{2x} dx. Then du = 2x dx, v = 1/2e^{2x}. Apply integration by parts:
+υ ⋅ xe^{2x}  - υ ⋅ 2x ⋅ (1/2)e^{2x} dx. Now integrate the second term again using integration by parts: u = 2x, dv = (1/2)e^{2x} dx. Then du = 2 dx, v = 1/4e^{2x}. Apply integration by parts:
+-υ ⋅ xe^{2x}  + υ ⋅ 2 ⋅ (1/4)e^{2x} dx. Combine the results and simplify:
+υ ⋅ xe^{2x}  - 3/4e^{2x}  + C
+
+Explanation:
+The correct answer is obtained by applying integration by parts twice and simplifying the result. The mistake would be in not recognizing that the second integration by parts needs to be done on the remaining integral after the first application.
+
+Common mistake note:
+A common mistake is to integrate the entire expression without breaking it down into parts, which would lead to an incorrect antiderivative.
+------------------------------------------------------------------------------

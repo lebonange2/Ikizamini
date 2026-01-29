@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.8.12 Classify from polar form
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.8 Conic Section Classification
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Convert the complex number 3cis(60°) to rectangular form.
+A) (3, -√3)
+B) (√3, 3)
+C) (1.5, 1.5√3)
+D) (2, √3)
+Correct Answer: C
+
+Solution:
+The polar form of a complex number is given by $r	ext{cis}(	heta)$ where $r$ is the modulus and $	heta$ is the argument in radians. To convert from polar to rectangular form, we use Euler's formula: $z = r(	ext{cos}	heta + i	ext{sin}	heta)$. For $3	ext{cis}(60°)$, we have $r=3$ and $	heta=rac{	ext{π}}{3}$ radians. Substituting these values into Euler's formula gives us the rectangular form: $z = 3(	ext{cos}(rac{	ext{π}}{3}) + i	ext{sin}(rac{	ext{π}}{3}))$. Evaluating this expression, we get $z = 3(rac{1}{2} + rac{	ext{i}	ext{√}3}{2}) = 1.5 + 1.5	ext{i}	ext{√}3$, which is equivalent to $(1.5, 1.5	ext{√}3)$.
+
+Explanation:
+The correct answer uses the correct values for $r$ and $	heta$ and applies Euler's formula correctly.
+
+Common mistake note:
+A common mistake would be to use degrees instead of radians for $	heta$, which would lead to an incorrect conversion. Another mistake could be forgetting to multiply the cosine and sine parts by the modulus $r$.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Identify the type of the complex number -2cis(270°).
+A) Real
+B) Purely imaginary
+C) Complex conjugate
+D) Zero
+Correct Answer: B
+
+Solution:
+The polar form $z = r	ext{cis}(	heta)$ gives us the modulus $r$ and argument $	heta$. For -2cis(270°), we have $r = -2$ and $	heta = rac{3	ext{π}}{2}$ radians. Since the real part of the complex number is zero (cosine of 270° is 0) and the imaginary part is non-zero (sine of 270° is -1), this complex number is purely imaginary.
+
+Explanation:
+A purely imaginary number has a zero real part and a non-zero imaginary part. The given polar form indicates that the real part is indeed zero, making it a purely imaginary number.
+
+Common mistake note:
+A common mistake would be to think that because the modulus is negative, the complex number must be real or have some other specific property. However, the sign of the modulus only determines whether the number lies in the second or third quadrant, not its type.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Find the polar form of the complex number 4 - 4i.
+A) 4cis(135°)
+B) 4cis(225°)
+C) 4cis(315°)
+D) 4cis(45°)
+Correct Answer: B
+
+Solution:
+To convert a rectangular form complex number (a + bi) to polar form (r cis θ), we use the formulas $r = 	ext{√}(a^2 + b^2)$ and $	heta = 	ext{tan}^{-1}ig(rac{b}{a}ig)$. For 4 - 4i, a = 4 and b = -4. Calculating $r$ and θ, we get $r = 	ext{√}(4^2 + (-4)^2) = 	ext{√}(16 + 16) = 4	ext{√}2$. To find θ, we calculate $	ext{tan}^{-1}ig(rac{-4}{4}ig) = -rac{	ext{π}}{4}$ radians. Since the complex number lies in the fourth quadrant, we add π to θ: $	heta = -rac{	ext{π}}{4} + 	ext{π} = rac{3	ext{π}}{4}$. Thus, the polar form is $4	ext{cis}ig(rac{3	ext{π}}{4}ig)$ or $4	ext{cis}(225°)$.
+
+Explanation:
+The correct answer uses the correct formulas to convert from rectangular to polar form and correctly adjusts the argument for the quadrant of the complex number.
+
+Common mistake note:
+A common mistake would be to forget to adjust the argument for the quadrant, which could lead to an incorrect angle. Another mistake might be using degrees instead of radians without converting them.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Determine the modulus of the complex number 5cis(120°).
+A) 3
+B) 4
+C) 5√3
+D) 5
+Correct Answer: C
+
+Solution:
+The modulus $r$ of a complex number in polar form $z = r	ext{cis}(	heta)$ is simply the value of $r$. For 5cis(120°), we have $r = 5$. The argument $	heta = 120°$ or $rac{2	ext{π}}{3}$ radians does not affect the modulus.
+
+Explanation:
+The correct answer recognizes that the modulus is independent of the argument and only depends on the value given before cis.
+
+Common mistake note:
+A common mistake would be to think that the argument affects the modulus, which is not true. The argument determines the direction of the complex number in the complex plane but does not change its distance from the origin.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Find the product of the complex numbers 2cis(45°) and 3cis(180°). Express the result in polar form.
+A) 6cis(225°)
+B) 6cis(270°)
+C) 6cis(45°)
+D) 6cis(90°)
+Correct Answer: A
+
+Solution:
+To multiply two complex numbers in polar form, we multiply their moduli and add their arguments. For 2cis(45°) and 3cis(180°), the product is $(2 	imes 3)	ext{cis}(45° + 180°) = 6	ext{cis}(225°)$.
+
+Explanation:
+The correct answer correctly applies the rules for multiplying complex numbers in polar form: multiply moduli and add arguments.
+
+Common mistake note:
+A common mistake would be to forget to add the angles when multiplying, or to use the wrong angle sum. Another potential error is not converting the result back to polar form.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Express the complex number √3 + i in polar form.
+A) $2	ext{cis}(45°)$
+B) $2	ext{cis}(60°)$
+C) $1	ext{cis}(30°)$
+D) $1	ext{cis}(45°)$
+Correct Answer: A
+
+Solution:
+To convert a rectangular form complex number (a + bi) to polar form (r cis θ), we use the formulas $r = 	ext{√}(a^2 + b^2)$ and $	heta = 	ext{tan}^{-1}ig(rac{b}{a}ig)$. For √3 + i, a = √3 and b = 1. Calculating $r$ and θ, we get $r = 	ext{√}( (√3)^2 + (1)^2 ) = 	ext{√}(3 + 1) = 2$. To find θ, we calculate $	ext{tan}^{-1}ig(rac{1}{	ext{√}3}ig) = rac{	ext{π}}{6}$ radians. Since the complex number lies in the first quadrant, no adjustment to θ is needed. Thus, the polar form is $2	ext{cis}ig(rac{	ext{π}}{6}ig)$ or $2	ext{cis}(30°)$.
+
+Explanation:
+The correct answer correctly calculates the modulus and argument using the given rectangular coordinates and converts them to polar form.
+
+Common mistake note:
+A common mistake would be to forget to convert the angle from radians to degrees when asked for a specific format. Another error might be in calculating the argument, where the wrong ratio of a and b is used.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Find the quotient of the complex numbers 8cis(30°) and 2cis(15°). Express the result in polar form.
+A) $4	ext{cis}(15°)$
+B) $4	ext{cis}(10°)$
+C) $4	ext{cis}(45°)$
+D) $4	ext{cis}(25°)$
+Correct Answer: A
+
+Solution:
+To divide two complex numbers in polar form, we divide their moduli and subtract their arguments. For 8cis(30°) and 2cis(15°), the quotient is $(rac{8}{2})	ext{cis}(30° - 15°) = 4	ext{cis}(15°)$.
+
+Explanation:
+The correct answer correctly applies the rules for dividing complex numbers in polar form: divide moduli and subtract arguments.
+
+Common mistake note:
+A common mistake would be to forget to subtract the angles when dividing, or to use the wrong angle difference. Another potential error is not converting the result back to polar form.
+------------------------------------------------------------------------------

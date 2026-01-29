@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.11.7",
+  "objective_text": "Understand integral as area",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFg6789",
+      "stem": "The definite integral of f(x) from a to b represents the area under the curve of f(x) between x = a and x = b. Which of the following definite integrals represents the area between the x-axis and the curve of f(x) = 2x - 1 from x = 0 to x = 3?",
+      "choices": {
+        "A": "∫[0, 3] (2x - 1) dx",
+        "B": "∫[0, 3] (2x + 1) dx",
+        "C": "∫[3, 0] (2x - 1) dx",
+        "D": "∫[0, 3] 2x dx"
+      },
+      "correct_choice": "A",
+      "solution": "The correct integral is ∫[0, 3] (2x - 1) dx because it represents the area under the curve of f(x) = 2x - 1. The limits of integration, a and b, define the interval over which we calculate the area.",
+      "explanation": "The integral calculates the signed area between the x-axis and the function curve. Since f(x) is positive for x >= 0.5, the area will be positive for our given interval.",
+      "common_mistake_notes": "A common mistake would be to choose option B, which uses (2x + 1), an incorrect function. This would give a different area due to the change in the curve."
+    },
+    {
+      "id": "ZxcVbNml",
+      "stem": "The integral ∫[1, 4] x^2 dx represents the area of which geometric shape?",
+      "choices": {
+        "A": "Triangle",
+        "B": "Rectangle",
+        "C": "Parabolic sector",
+        "D": "Circular sector"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, a parabolic sector. The integral of x^2 gives the area under the curve y = x^2, which forms a portion of a parabola between x = 1 and x = 4.",
+      "explanation": "When we integrate x^n from a to b, we get the area under the curve y = x^n for that interval. For n = 2, this is a parabolic sector.",
+      "common_mistake_notes": "A common mistake would be to choose option A (Triangle), which arises from integrating x linearly instead of quadratically."
+    },
+    {
+      "id": "QweRtYui",
+      "stem": "The area under the curve y = 3sin(x) from x = 0 to x = π is given by which definite integral?",
+      "choices": {
+        "A": "∫[0, π] 3sin(x) dx",
+        "B": "∫[0, π] 3cos(x) dx",
+        "C": "∫[0, π] 2sin(x) dx",
+        "D": "∫[0, π] 4sin(x) dx"
+      },
+      "correct_choice": "A",
+      "solution": "The correct integral is ∫[0, π] 3sin(x) dx because it represents the area under the curve y = 3sin(x). The coefficient 3 multiplies the sine function to give the total area.",
+      "explanation": "The area under a sinusoidal curve is still given by integrating the function, but with the appropriate amplitude (in this case, 3).",
+      "common_mistake_notes": "A common mistake would be to choose option B, which integrates cos(x) instead of sin(x), which would give the area under a cosine curve, not sine."
+    },
+    {
+      "id": "BvnMjHgl",
+      "stem": "The definite integral ∫[1, 2] e^x dx represents the area between which two curves?",
+      "choices": {
+        "A": "y = e^x and y = 1",
+        "B": "y = e^x and y = x",
+        "C": "y = e^x and y = e",
+        "D": "y = e^x and y = e^2"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, between y = e^x and y = e. The definite integral gives the area between the curve of y = e^x and the x-axis from x = 1 to x = 2. Since we're not subtracting another function, the upper bound for the area is the x-axis.",
+      "explanation": "When integrating a single function without subtraction, the area is above the x-axis and below the curve of that function.",
+      "common_mistake_notes": "A common mistake would be to choose option D, which assumes we're finding the area between y = e^x and y = e^2. This would involve subtracting two functions, but our integral does not include a second function."
+    },
+    {
+      "id": "GhjKlPoi",
+      "stem": "The definite integral ∫[0, 2] (x - 1)^2 dx represents the area of which shape?",
+      "choices": {
+        "A": "Triangle",
+        "B": "Rectangle",
+        "C": "Parabolic sector",
+        "D": "Circular sector"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, a parabolic sector. The integral of (x - 1)^2 gives the area under the curve y = (x - 1)^2, which forms a portion of a parabola between x = 0 and x = 2.",
+      "explanation": "When integrating a quadratic function like (x - 1)^2, we get the area under the corresponding parabolic curve for the given interval.",
+      "common_mistake_notes": "A common mistake would be to choose option A (Triangle), which arises from integrating a linear function instead of a quadratic one."
+    },
+    {
+      "id": "XcvBnMnb",
+      "stem": "The definite integral ∫[0, π/4] 2cos(2x) dx represents the area between which two curves?",
+      "choices": {
+        "A": "y = 2cos(2x) and y = 1",
+        "B": "y = 2cos(2x) and y = sin(x)",
+        "C": "y = 2cos(2x) and y = cos(x)",
+        "D": "y = 2cos(2x) and y = 0"
+      },
+      "correct_choice": "D",
+      "solution": "The correct answer is D, between y = 2cos(2x) and the x-axis. The definite integral gives the area under the curve of y = 2cos(2x) from x = 0 to x = π/4.",
+      "explanation": "When integrating a single function without subtraction, the area is above the x-axis and below the curve of that function.",
+      "common_mistake_notes": "A common mistake would be to choose option B, which assumes we're finding the area between y = 2cos(2x) and another curve. Our integral does not involve subtracting a second function."
+    },
+    {
+      "id": "UytRfVgh",
+      "stem": "The definite integral ∫[0, 2] (4 - x^2) dx represents the area of which shape?",
+      "choices": {
+        "A": "Triangle",
+        "B": "Rectangle",
+        "C": "Parabolic sector",
+        "D": "Circular sector"
+      },
+      "correct_choice": "C",
+      "solution": "The correct answer is C, a parabolic sector. The integral of (4 - x^2) gives the area under the curve y = 4 - x^2, which forms a portion of a parabola between x = 0 and x = 2.",
+      "explanation": "When integrating a quadratic function like 4 - x^2, we get the area under the corresponding parabolic curve for the given interval. The limits of integration define the interval over which we calculate the area.",
+      "common_mistake_notes": "A common mistake would be to choose option A (Triangle), which arises from integrating a linear function instead of a quadratic one."
+    }
+  ]
+}

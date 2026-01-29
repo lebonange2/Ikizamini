@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.5.9",
+  "objective_text": "Apply De Morgan's laws",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "What is the negation of (A AND B)?",
+      "stem": "(A) NOT A OR NOT B\n(B) NOT A AND NOT B\n(C) NOT A OR B\n(D) A AND NOT B",
+      "choices": {
+        "A": "NOT A OR NOT B",
+        "B": "NOT A AND NOT B",
+        "C": "NOT A OR B",
+        "D": "A AND NOT B"
+      },
+      "correct_choice": "B",
+      "solution": "De Morgan's law states that the negation of a conjunction (AND) is equivalent to the disjunction (OR) of the negations. So, the negation of (A AND B) is (NOT A OR NOT B).",
+      "explanation": "De Morgan's laws help simplify logical expressions by negating both the operands and the operator.",
+      "common_mistake_notes": "Common mistake: Choosing (C) which is the negation of only one operand. Remember, De Morgan's law applies to both operands."
+    },
+    {
+      "id": "What is the negation of (A OR B AND C)?",
+      "stem": "(A) NOT A AND NOT (B AND C)\n(B) NOT A OR NOT B AND NOT C\n(C) NOT A AND NOT B OR NOT C\n(D) NOT (A OR B) AND NOT C",
+      "choices": {
+        "A": "NOT A AND NOT (B AND C)",
+        "B": "NOT A OR NOT B AND NOT C",
+        "C": "NOT A AND NOT B OR NOT C",
+        "D": "NOT (A OR B) AND NOT C"
+      },
+      "correct_choice": "D",
+      "solution": "De Morgan's law can be applied to multiple operands as well. The negation of (A OR B AND C) is (NOT A AND NOT B) AND (NOT A AND NOT C), which simplifies to NOT (A OR B) AND NOT C.",
+      "explanation": "When applying De Morgan's laws, consider the grouping and apply the law to each group separately.",
+      "common_mistake_notes": "Common mistake: Choosing (B) or (C) by incorrectly distributing the negation. Remember to apply De Morgan's law to the entire expression within parentheses."
+    },
+    {
+      "id": "What is the negation of ((NOT A) OR B)?",
+      "stem": "(A) A AND NOT B\n(B) A OR NOT B\n(C) NOT (NOT A) AND B\n(D) NOT (NOT A OR B)",
+      "choices": {
+        "A": "A AND NOT B",
+        "B": "A OR NOT B",
+        "C": "NOT (NOT A) AND B",
+        "D": "NOT (NOT A OR B)"
+      },
+      "correct_choice": "D",
+      "solution": "The negation of ((NOT A) OR B) is NOT (NOT A OR B), which simplifies to (A AND NOT B).",
+      "explanation": "When applying De Morgan's laws, remember that NOT distributes over OR and AND.",
+      "common_mistake_notes": "Common mistake: Choosing (C) by reversing the operands without negating them. Remember to negate both the operands and the operator."
+    },
+    {
+      "id": "What is the negation of ((A AND B) OR C)?",
+      "stem": "(A) NOT A AND NOT B AND NOT C\n(B) NOT (A AND B) OR NOT C\n(C) NOT A OR NOT B OR NOT C\n(D) NOT A AND NOT B AND C",
+      "choices": {
+        "A": "NOT A AND NOT B AND NOT C",
+        "B": "NOT (A AND B) OR NOT C",
+        "C": "NOT A OR NOT B OR NOT C",
+        "D": "NOT A AND NOT B AND C"
+      },
+      "correct_choice": "B",
+      "solution": "The negation of ((A AND B) OR C) is NOT (A AND B) OR NOT C, which simplifies to (NOT A OR NOT B) OR NOT C.",
+      "explanation": "When applying De Morgan's laws, consider the grouping and apply the law to each group separately.",
+      "common_mistake_notes": "Common mistake: Choosing (C) by incorrectly distributing the negation. Remember to apply De Morgan's law to the entire expression within parentheses."
+    },
+    {
+      "id": "What is the negation of ((NOT A AND NOT B) OR C)?",
+      "stem": "(A) A OR B OR NOT C\n(B) A AND B OR NOT C\n(C): (NOT A OR NOT B) AND NOT C\n(D): NOT (NOT A AND NOT B) AND NOT C",
+      "choices": {
+        "A": "A OR B OR NOT C",
+        "B": "A AND B OR NOT C",
+        "C": "(NOT A OR NOT B) AND NOT C",
+        "D": "NOT (NOT A AND NOT B) AND NOT C"
+      },
+      "correct_choice": "D",
+      "solution": "The negation of ((NOT A AND NOT B) OR C) is NOT (NOT A AND NOT B) AND NOT C, which simplifies to (A OR B) AND NOT C.",
+      "explanation": "When applying De Morgan's laws, remember that NOT distributes over OR and AND.",
+      "common_mistake_notes": "Common mistake: Choosing (B) by incorrectly distributing the negation. Remember to apply De Morgan's law to the entire expression within parentheses."
+    },
+    {
+      "id": "What is the negation of ((A OR B) AND NOT C)?",
+      "stem": "(A) NOT A AND NOT B AND C\n(B): NOT (A OR B) OR C\n(C): (NOT A AND NOT B) OR C\n(D): NOT (A OR B) AND C",
+      "choices": {
+        "A": "NOT A AND NOT B AND C",
+        "B": "NOT (A OR B) OR C",
+        "C": "(NOT A AND NOT B) OR C",
+        "D": "NOT (A OR B) AND C"
+      },
+      "correct_choice": "B",
+      "solution": "The negation of ((A OR B) AND NOT C) is NOT (A OR B) OR C, which simplifies to (NOT A AND NOT B) OR C.",
+      "explanation": "When applying De Morgan's laws, remember that NOT distributes over OR and AND.",
+      "common_mistake_notes": "Common mistake: Choosing (D) by incorrectly distributing the negation. Remember to apply De Morgan's law to the entire expression within parentheses."
+    },
+    {
+      "id": "What is the negation of ((NOT A AND B) OR (A AND NOT C))?",
+      "stem": "(A): NOT (NOT A AND B) AND NOT (A AND NOT C)\n(B): (A OR NOT B) AND (NOT A OR C)\n(C): (NOT A OR NOT B) AND (A OR C)\n(D): (A OR B) AND (NOT A OR NOT C)",
+      "choices": {
+        "A": "NOT (NOT A AND B) AND NOT (A AND NOT C)",
+        "B": "(A OR NOT B) AND (NOT A OR C)",
+        "C": "(NOT A OR NOT B) AND (A OR C)",
+        "D": "(A OR B) AND (NOT A OR NOT C)"
+      },
+      "correct_choice": "D",
+      "solution": "The negation of ((NOT A AND B) OR (A AND NOT C)) is NOT ((NOT A AND B) OR (A AND NOT C)), which simplifies to (A OR B) AND (NOT A OR NOT C).",
+      "explanation": "When applying De Morgan's laws, consider the grouping and apply the law to each group separately.",
+      "common_mistake_notes": "Common mistake: Choosing (B) or (C) by incorrectly distributing the negation. Remember to apply De Morgan's law to the entire expression within parentheses."
+    }
+  ]
+}

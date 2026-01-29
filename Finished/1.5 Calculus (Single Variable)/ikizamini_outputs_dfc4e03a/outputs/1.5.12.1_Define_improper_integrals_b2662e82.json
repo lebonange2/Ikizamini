@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.12.1",
+  "objective_text": "Define improper integrals",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Which of the following is an example of an improper integral?",
+      "choices": {
+        "A": "(∫π to ∞) (1/x^2) dx",
+        "B": "(∫1 to 2) (x^2 + 1) dx",
+        "C": "(∫-∞ to 0) (e^x) dx",
+        "D": "(∫0 to 1) (sin(x)) dx"
+      },
+      "correct_choice": "A",
+      "solution": "An improper integral is an integral that either has an infinite limit or involves a function with an infinite discontinuity within the interval of integration. Choice A fits this definition, as it integrates from π to infinity, which is unbounded. Choices B, C, and D all have finite limits and no infinite discontinuities.",
+      "explanation": "In choice B, both limits are finite (1 to 2), and there's no infinite discontinuity. In choice C, the lower limit is -∞ but the function e^x approaches zero as x goes to negative infinity, making it a proper integral. Choice D has a finite interval (0 to 1) and a continuous function (sin(x)).",
+      "common_mistake_notes": "A common mistake would be to choose C because of the infinite lower limit, but not considering that e^x approaches zero as x goes to negative infinity."
+    },
+    {
+      "id": "Two",
+      "stem": "What is the value of the improper integral (∫1 to ∞) (1/x) dx?",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "ln(∞)",
+        "D": "∞"
+      },
+      "correct_choice": "D",
+      "solution": "The integral (∫1 to ∞) (1/x) dx represents the area under the curve y = 1/x from x = 1 to infinity. This is a divergent integral, meaning its value approaches infinity as the upper limit goes to infinity.",
+      "explanation": "As x increases without bound, the function 1/x approaches zero but never quite reaches it, so the area beneath the curve keeps increasing indefinitely. Choices A, B, and C represent finite values or a logarithmic function that does not diverge.",
+      "common_mistake_notes": "A common mistake would be to choose C because of the appearance of ln(∞), which is an indeterminate form but does not represent the value of this integral."
+    },
+    {
+      "id": "Three",
+      "stem": "Which of the following improper integrals can be evaluated by splitting the interval into two parts?",
+      "choices": {
+        "A": "(∫-1 to 1) (x^2 + 1) dx",
+        "B": "(∫0 to ∞) (e^-x) dx",
+        "C": "(∫-∞ to ∞) (1/x^2) dx",
+        "D": "(∫1 to 3) (1/(x-2)) dx"
+      },
+      "correct_choice": "D",
+      "solution": "Choice D can be split into two improper integrals, one from 1 to 2 and the other from 2 to 3. The first integral will have a singularity at x = 2 but is still improper because of the infinite discontinuity; the second integral is proper.",
+      "explanation": "In choice A, both limits are finite, making it a proper integral. Choice B can be evaluated using an exponential function property without splitting. Choice C is already a standard p-integral (p < 1) that diverges. Choice D has a singularity at x = 2 but can be split into two improper integrals.",
+      "common_mistake_notes": "A common mistake would be to choose B because of the exponential function, but it does not require splitting for evaluation."
+    },
+    {
+      "id": "Four",
+      "stem": "What is the value of the improper integral (∫-∞ to ∞) (sin(x))/x dx?",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "-1",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "The integral (∫-∞ to ∞) (sin(x))/x dx is an example of a Dirichlet integral, which evaluates to zero. This result holds due to symmetry properties of the sine function and the fact that the integrand approaches zero as x goes to infinity.",
+      "explanation": "Choice A correctly represents the value of this special improper integral. Choices B, C, and D represent finite values but do not correspond to the actual value of the Dirichlet integral.",
+      "common_mistake_notes": "A common mistake would be to choose B because it is a familiar result from other trigonometric integrals, but the specific properties of this integral make it zero."
+    },
+    {
+      "id": "Five",
+      "stem": "Which improper integral represents an area that is finite?",
+      "choices": {
+        "A": "(∫1 to ∞) (x^2) dx",
+        "B": "(∫-∞ to 0) (1/x) dx",
+        "C": "(∫0 to π/2) (sin(x)) dx",
+        "D": "(∫0 to 1) (1/(x^2)) dx"
+      },
+      "correct_choice": "C",
+      "solution": "Choice C represents the area under the curve y = sin(x) from x = 0 to π/2, which is a finite value because the function is bounded and the interval is finite.",
+      "explanation": "In choice A, the integrand (x^2) approaches infinity as x goes to infinity, making the area unbounded. Choice B has an infinite discontinuity at x = 0. Choice D also has an infinite discontinuity at x = 0. Only choice C represents a finite area.",
+      "common_mistake_notes": "A common mistake would be to choose A or D because of the presence of powers, but these integrals diverge due to unbounded functions."
+    },
+    {
+      "id": "Six",
+      "stem": "What is the value of the improper integral (∫0 to ∞) (e^(-2x)) dx?",
+      "choices": {
+        "A": "1/2",
+        "B": "1",
+        "C": "1/e",
+        "D": "ln(2)"
+      },
+      "correct_choice": "A",
+      "solution": "The integral (∫0 to ∞) (e^(-2x)) dx can be evaluated using the exponential function property: ∫ e^(ax) dx = 1/a e^(ax). In this case, a = -2, so the value is 1/(-2)e^(-2x), evaluated from 0 to ∞.",
+      "explanation": "As x goes to infinity, e^(-2x) approaches zero. Evaluating at x = 0 gives 1/(2)(1) = 1/2. Choices B, C, and D do not represent the correct value of this integral.",
+      "common_mistake_notes": "A common mistake would be to choose C because it resembles an incorrect evaluation without considering the limit as x goes to infinity."
+    },
+    {
+      "id": "Seven",
+      "stem": "Which improper integral can be evaluated by using L'Hôpital's rule?",
+      "choices": {
+        "A": "(∫1 to ∞) (x^2 - 1)/(x^3 + 1) dx",
+        "B": "(∫0 to π/2) (cos(x))/sin(x) dx",
+        "C": "(∫-∞ to ∞) (e^(-x^2)) dx",
+        "D": "(∫1 to 2) (1/(x - 1)^2) dx"
+      },
+      "correct_choice": "B",
+      "solution": "Choice B can be evaluated using L'Hôpital's rule because the limit at x = π/2 is of the form 0/0. After applying L'Hôpital's rule, the integral becomes (∫0 to π/2) (-sin(x))/cos(x) dx, which simplifies to -tan(π/2).",
+      "explanation": "Choice A does not have an indeterminate form at x = ∞. Choice C is a Gaussian integral that can be evaluated using special techniques. Choice D has a removable discontinuity at x = 1 and does not require L'Hôpital's rule. Only choice B requires L'Hôpital's rule.",
+      "common_mistake_notes": "A common mistake would be to choose A or C because they involve indeterminate forms, but these do not require L'Hôpital's rule for evaluation."
+    }
+  ]
+}

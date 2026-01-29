@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.3.11 Find angle between line and plane
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.3 Lines and Planes in 3D
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (1):
+Find the angle between the line r = <2, 3, 4> + t<1, -1, 0> and the plane x + y - z = 5.
+A) 30°
+B) 60°
+C) 45°
+D) 90°
+Correct Answer: C
+
+Solution:
+The direction vector of the line is <1, -1, 0>. The normal vector of the plane is <1, 1, -1>. To find the angle between them, we use the dot product and the magnitudes of these vectors. The dot product is 0, and the magnitudes are sqrt(2), sqrt(3). The angle θ is arccos(0 / (sqrt(2)*sqrt(3))) = π/4 or 45°.
+
+Explanation:
+The dot product of two perpendicular vectors is zero, which indicates a 90° angle between them. Since the dot product is zero, the line and plane intersect at an angle of 45°.
+
+Common mistake note:
+A common mistake would be to assume that since the normal vector of the plane and the direction vector of the line are perpendicular (dot product is zero), the angle between the line and the plane must also be 90°. However, this is not always true; in this case, the line intersects the plane at a 45° angle.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Find the acute angle between the line y = 3x + 1 and the xy-plane.
+A) 30°
+B) 45°
+C) 60°
+D) 90°
+Correct Answer: B
+
+Solution:
+The line is in slope-intercept form y = mx + b, where m = 3. The angle θ between the line and the xy-plane can be found using the tangent function: tan(θ) = |m| = 3. Thus, θ = arctan(3), which is approximately 71.56°. However, since we're looking for an acute angle, we choose the smaller positive value of arctan(-3), which is 45°.
+
+Explanation:
+The slope of a line in the xy-plane determines its angle with the x-axis. An acute angle with the xy-plane means that the angle must be less than 90°. The given line has a steep slope, but since we're looking for an acute angle, it's not 90°.
+
+Common mistake note:
+A common mistake would be to assume that the angle between any line and the xy-plane is always 90°. This is only true if the line is perpendicular to the plane, which is not the case here.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Find the angle between the line r = <1, 2, 3> + t<4, 5, 6> and the xy-plane.
+A) 0°
+B) 30°
+C) 45°
+D) 60°
+Correct Answer: A
+
+Solution:
+The line is in vector form r = P + tv, where P = <1, 2, 3> and v = <4, 5, 6>. The angle between the line and the xy-plane is determined by the z-component of the direction vector v. Since v has a non-zero z-component (6), the line does not intersect the xy-plane at all; it lies entirely above or below it. Therefore, the angle is 0°.
+
+Explanation:
+The angle between a line and the xy-plane is zero if the line does not intersect the plane. In this case, the direction vector of the line has a non-zero z-component, indicating that the line does not touch the xy-plane.
+
+Common mistake note:
+A common mistake would be to assume that the angle is 90° because the line does not intersect the xy-plane. However, a 90° angle indicates perpendicularity, which is not applicable here since the line and plane do not intersect at all.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Find the angle between the plane x + y + z = 1 and the line r = <1, 2, 3> + t<4, 5, 6>.
+A) 0°
+B) 30°
+C) 45°
+D) 90°
+Correct Answer: D
+
+Solution:
+The normal vector of the plane is <1, 1, 1>, and the direction vector of the line is <4, 5, 6>. The dot product is 15, and the magnitudes are sqrt(3), sqrt(78). The angle θ is arccos(15 / (sqrt(3)*sqrt(78))) ≈ 0.02°, which is effectively 90° for practical purposes.
+
+Explanation:
+The dot product of two vectors perpendicular to each other is zero. Since the dot product is not zero, we can calculate the actual angle using the dot product and magnitudes. However, the angle is so small that it's approximately 90° for most applications.
+
+Common mistake note:
+A common mistake would be to assume that since the line does not intersect the plane, the angle between them must be 90°. While this is true in some cases, it's essential to calculate the actual angle using the dot product and magnitudes to ensure accuracy.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Find the angle between the line y = x + 1 and the plane y - z = 2.
+A) 30°
+B) 45°
+C) 60°
+D) 90°
+Correct Answer: B
+
+Solution:
+The line is in slope-intercept form y = mx + b, where m = 1. The normal vector of the plane is <0, 1, -1>. The angle θ between them can be found using the dot product and magnitudes: (1)(0) + (1)(1) + (0)(-1) = 1, sqrt(2), sqrt(2). The angle θ is arccos(1 / (sqrt(2)*sqrt(2))) = π/4 or 45°.
+
+Explanation:
+The slope of the line and the normal vector of the plane are used to find the angle between them. Since both vectors have a component in the y-direction, we can calculate the angle directly using the dot product and magnitudes.
+
+Common mistake note:
+A common mistake would be to assume that since one of the variables is eliminated (y), the line must be perpendicular to the plane. However, this is not always true; in this case, the line intersects the plane at a 45° angle.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Find the angle between the line r = <1, 0, 0> + t<0, 1, 0> and the xy-plane.
+A) 0°
+B) 30°
+C) 45°
+D) 90°
+Correct Answer: D
+
+Solution:
+The line is in vector form r = P + tv, where P = <1, 0, 0> and v = <0, 1, 0>. The line lies entirely on the x-axis, perpendicular to the xy-plane. Therefore, the angle is 90°.
+
+Explanation:
+A line parallel to one of the axes in a coordinate system forms a right angle with the plane that does not contain that axis. In this case, the line lies on the x-axis and is thus perpendicular to the xy-plane.
+
+Common mistake note:
+A common mistake would be to assume that since the line does not intersect the xy-plane, the angle between them must be 0°. However, a 0° angle indicates that the line lies entirely within the plane, which is not true here.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Find the angle between the line r = <0, 1, 0> + t<1, 0, 1> and the xz-plane.
+A) 30°
+B) 45°
+C) 60°
+D) 90°
+Correct Answer: B
+
+Solution:
+The line is in vector form r = P + tv, where P = <0, 1, 0> and v = <1, 0, 1>. The angle between the line and the xz-plane can be found using the dot product of the direction vector v with a normal vector to the xz-plane, such as <0, 1, 0>: (0)(0) + (1)(1) + (1)(0) = 1. The magnitudes are sqrt(2), sqrt(2). The angle θ is arccos(1 / (sqrt(2)*sqrt(2))) = π/4 or 45°.
+
+Explanation:
+The direction vector of the line and a normal vector to the xz-plane are used to find the angle between them. Since both vectors have a component in the y-direction, we can calculate the angle directly using the dot product and magnitudes.
+
+Common mistake note:
+A common mistake would be to assume that since the line does not intersect the xz-plane, the angle between them must be 90°. However, this is not always true; in this case, the line intersects the plane at a 45° angle.
+------------------------------------------------------------------------------

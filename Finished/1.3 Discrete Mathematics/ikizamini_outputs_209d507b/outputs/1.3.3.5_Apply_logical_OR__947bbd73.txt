@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.3.5 Apply logical OR (∨)
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.3 Logic and Propositions
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+What is the result of evaluating the expression (A ∨ B) when A is true and B is false?
+A) True
+B) False
+C) Unknown
+D) Both A and B
+Correct Answer: A
+
+Solution:
+In logical OR, if at least one of the operands is true, the result is true. Since A is true in this case, the expression evaluates to true.
+
+Explanation:
+Logical OR (∨) is a binary operator that returns true when either or both of its operands are true.
+
+Common mistake note:
+A common mistake would be selecting 'Both A and B', which is not a valid output for logical operators.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+What is the result of (X ∨ Y) when X is false and Y is also false?
+A) True
+B) False
+C) Unknown
+D) Both X and Y
+Correct Answer: B
+
+Solution:
+In logical OR, if both operands are false, the result is false. Since both X and Y are false, the expression evaluates to false.
+
+Explanation:
+Logical OR (∨) returns true only when at least one of its operands is true.
+
+Common mistake note:
+Selecting 'Both X and Y' as a valid output is a common mistake, but it does not apply in logical operators.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+What is the result of (P ∨ Q) when P is true?
+A) True
+B) False
+C) Unknown
+D) Depends on Q
+Correct Answer: A
+
+Solution:
+In this case, since P is true, the logical OR expression evaluates to true regardless of the value of Q.
+
+Explanation:
+When one operand in a logical OR is true, the overall result will be true, even if the other operand is false.
+
+Common mistake note:
+A common mistake would be selecting 'Depends on Q', but since P is already true, the outcome does not depend on Q.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+What is the truth value of (R ∨ R)?
+A) True
+B) False
+C) Unknown
+D) Both True and False
+Correct Answer: A
+
+Solution:
+In logical OR, if both operands are identical and true, the result is still true.
+
+Explanation:
+The truth value of a logical OR expression does not change based on the repetition of its operands as long as they are true.
+
+Common mistake note:
+Selecting 'Both True and False' or 'Unknown' would be a common mistake, but in this case, R is being compared to itself, so it's like saying 'true ∨ true', which is true.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+What is the result of (A ∨ B) when A and B are both true?
+A) True
+B) False
+C) Unknown
+D) Depends on A and B
+Correct Answer: A
+
+Solution:
+When both operands in a logical OR expression are true, the result is also true.
+
+Explanation:
+The logical OR operator combines two boolean values, returning true if either or both of them are true.
+
+Common mistake note:
+Selecting 'False' or 'Unknown' would be a common mistake, but in this case, since both A and B are true, the result is true.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+What is the truth value of (T ∨ F) when T represents true and F represents false?
+A) True
+B) False
+C) Unknown
+D) Depends on T and F
+Correct Answer: A
+
+Solution:
+In this case, 'T' represents true and 'F' represents false. Since one of the operands is true, the logical OR expression evaluates to true.
+
+Explanation:
+The truth value of a logical OR expression depends on whether at least one of its operands is true.
+
+Common mistake note:
+A common mistake would be selecting 'False', but since T (true) is present in the expression, the outcome will be true.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+What is the result of evaluating (C ∨ C ∨ C) when C is false?
+A) True
+B) False
+C) Unknown
+D) Depends on C
+Correct Answer: B
+
+Solution:
+In this case, since all three operands are identical and false, the logical OR expression evaluates to false.
+
+Explanation:
+The truth value of a logical OR expression does not change based on the repetition of its operands; it depends on whether at least one of them is true.
+
+Common mistake note:
+A common mistake would be selecting 'True' or 'Unknown', but in this case, since all C values are false, the outcome will be false.
+------------------------------------------------------------------------------

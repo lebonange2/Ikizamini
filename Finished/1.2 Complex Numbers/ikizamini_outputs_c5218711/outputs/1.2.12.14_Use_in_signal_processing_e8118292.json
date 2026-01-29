@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.12.14",
+  "objective_text": "Use in signal processing",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1]",
+      "stem": "What is the primary use of Fourier transforms in signal processing?",
+      "choices": {
+        "A": "To visualize frequency components of a signal",
+        "B": "To compress audio files",
+        "C": "To remove noise from an image",
+        "D": "To encrypt communication signals"
+      },
+      "correct_choice": "A",
+      "solution": "The Fourier transform is used to analyze signals in the frequency domain, making it useful for visualizing the frequency components of a signal.",
+      "explanation": "While Fourier transforms can be applied in various contexts, their primary use in signal processing is to analyze and manipulate frequency content. Options B, C, and D describe different techniques or applications not directly related to the core function of Fourier transforms in signal processing.",
+      "common_mistake_notes": "Choosing B might happen if a test-taker associates compression with signal processing but forgets that it's typically done using lossy algorithms like MP3, which is not related to Fourier transforms. Choosing C could be due to confusion with image processing techniques like filtering, and choosing D might occur if the test-taker conflates encryption methods with signal analysis."
+    },
+    {
+      "id": "[2]",
+      "stem": "Which of the following statements about the Fourier series is true?",
+      "choices": {
+        "A": "It represents a continuous- time signal as a sum of sine waves.",
+        "B": "It can only be applied to periodic signals.",
+        "C": "It uses complex exponentials instead of sine and cosine functions.",
+        "D": "It's used exclusively for image processing."
+      },
+      "correct_choice": "B",
+      "solution": "The Fourier series represents a periodic function as an infinite sum of sine and cosine waves.",
+      "explanation": "Fourier series is specifically designed for periodic signals, whereas the Fourier transform can handle both periodic and non-periodic signals. Option C refers to the Fourier transform, not the Fourier series. Option D is incorrect because Fourier series is used in signal processing, not just image processing.",
+      "common_mistake_notes": "Choosing A might happen if a test-taker forgets that the Fourier series is specifically for continuous-time signals and periodic functions. Choosing C could occur due to confusion between Fourier series and transform, and choosing D might result from an incomplete understanding of the application domains."
+    },
+    {
+      "id": "[3]",
+      "stem": "What does the magnitude spectrum of a signal represent?",
+      "choices": {
+        "A": "The phase relationship between different frequency components.",
+        "B": "The energy distribution across different frequencies.",
+        "C": "The time-domain representation of the signal.",
+        "D": "The rate at which the signal changes over time."
+      },
+      "correct_choice": "B",
+      "solution": "The magnitude spectrum shows how much energy is present at each frequency in a signal.",
+      "explanation": "The magnitude spectrum provides information about the relative strength or intensity of different frequency components within a signal, not their phase relationship (A), time-domain representation (C), or rate of change (D).",
+      "common_mistake_notes": "Choosing A might happen if a test-taker混淆s magnitude with phase. Choosing C could result from confusion between frequency and time domains, and choosing D might occur due to misunderstanding the role of the spectrum in signal analysis."
+    },
+    {
+      "id": "[4]",
+      "stem": "In digital signal processing, what is an appropriate method for filtering out high-frequency noise?",
+      "choices": {
+        "A": "Applying a low-pass filter",
+        "B": "Applying a high-pass filter",
+        "C": "Multiplying the signal by its complex conjugate",
+        "D": "Increasing the sampling rate"
+      },
+      "correct_choice": "A",
+      "solution": "A low- pass filter allows lower frequency signals to pass while attenuating or removing higher frequency noise.",
+      "explanation": "Low-pass filters are used to remove high-frequency noise, whereas high-pass filters remove low-frequency noise. Multiplying by a complex conjugate is related to finding the real part of a signal in the frequency domain, and increasing the sampling rate does not directly filter out noise but can help avoid aliasing issues.",
+      "common_mistake_notes": "Choosing B might happen if a test-taker reverses the function of low-pass and high-pass filters. Choosing C could result from confusion with finding the real part of a signal, and choosing D might occur due to an incomplete understanding of the relationship between sampling rate and noise removal."
+    },
+    {
+      "id": "[5]",
+      "stem": "Which property of Fourier transforms allows for convolution in the time domain to become multiplication in the frequency domain?",
+      "choices": {
+        "A": "Linearity",
+        "B": "Shift theorem",
+        "C": "Parseval's theorem",
+        "D": "Convolution theorem"
+      },
+      "correct_choice": "D",
+      "solution": "The convolution theorem states that convolution in the time domain corresponds to multiplication in the frequency domain.",
+      "explanation": "The convolution theorem is a fundamental property of Fourier transforms that simplifies signal processing operations. Linearity refers to the ability to scale signals, the shift theorem deals with shifting signals in time, and Parseval's theorem relates energy in the time domain to energy in the frequency domain.",
+      "common_mistake_notes": "Choosing A might happen if a test-taker混淆s linearity with convolution properties. Choosing B could result from confusion between shifting signals and convolution, choosing C might occur due to misunderstanding the role of Parseval's theorem, and no common mistake for D."
+    },
+    {
+      "id": "[6]",
+      "stem": "What is the primary advantage of using Fourier transforms in image compression?",
+      "choices": {
+        "A": "Reducing color depth",
+        "B": "Removing redundant spatial information",
+        "C": "Increasing contrast",
+        "D": "Applying filters to enhance edges"
+      },
+      "correct_choice": "B",
+      "solution": "The Fourier transform can reveal redundant spatial information, which can be removed or compressed without significantly affecting image quality.",
+      "explanation": "In image compression, the Fourier transform helps identify and remove redundancy in pixel values across different frequencies. Options A, C, and D describe other techniques used in image processing but are not directly related to the primary advantage of using Fourier transforms for compression.",
+      "common_mistake_notes": "Choosing A might happen if a test-taker associates color depth reduction with image compression but forgets that it's an independent process. Choosing C could be due to confusion with contrast enhancement techniques, and choosing D might occur if the test-taker conflates edge detection methods with Fourier transform applications."
+    },
+    {
+      "id": "[7]",
+      "stem": "How does a window function improve spectral analysis of a finite-length signal?",
+      "choices": {
+        "A": "By increasing the sampling rate",
+        "B": "By reducing spectral leakage",
+        "C": "By eliminating high-frequency noise",
+        "D": "By converting the signal to a continuous-time representation"
+      },
+      "correct_choice": "B",
+      "solution": "A window function helps reduce spectral leakage, which occurs when frequency components are spread across multiple bins in the frequency domain due to finite-length signals.",
+      "explanation": "Window functions are used to taper off the edges of a finite-length signal, reducing spectral leakage and providing more accurate frequency analysis. Options A, C, and D describe unrelated techniques or transformations.",
+      "common_mistake_notes": "Choosing A might happen if a test-taker混淆s window functions with sampling rate adjustments. Choosing C could result from confusion between noise reduction methods and window functions, and choosing D might occur due to an incomplete understanding of the relationship between continuous and discrete signals."
+    }
+  ]
+}

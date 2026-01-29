@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.10.2 Eliminate parameter to find Cartesian equation
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.10 Parametric Curves in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Given the parametric equations x = 3t and y = t^2, what is the Cartesian equation?
+A) (x/3)^2 = y
+B) y = 9x^2
+C) y = x^3
+D) 3y = x^2
+Correct Answer: B
+
+Solution:
+To eliminate the parameter t, we solve one of the equations for t and substitute it into the other equation. From x = 3t, we get t = x/3. Substituting this into y = t^2 gives us y = (x/3)^2, which simplifies to y = 9x^2. The Cartesian equation is thus y = 9x^2.
+
+Explanation:
+The correct answer results from eliminating the parameter t using algebraic manipulation. Incorrect choices do not arise from correctly substituting the expression for t into the second equation.
+
+Common mistake note:
+A common mistake is squaring x directly instead of (x/3), leading to choice A.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+For the parametric equations x = cos(t) and y = sin(t), what is the Cartesian equation?
+A) x^2 + y^2 = 1
+B) y = sqrt(1 - x)
+C) x^2 + y^2 = 0
+D) y = tan(x)
+Correct Answer: A
+
+Solution:
+Using the trigonometric identity sin^2(t) + cos^2(t) = 1, we substitute x for cos(t) and y for sin(t), giving us y^2 + x^2 = 1. The Cartesian equation is x^2 + y^2 = 1.
+
+Explanation:
+The correct answer arises from applying the identity to eliminate t. Incorrect choices do not result from the proper application of the identity or algebraic manipulation.
+
+Common mistake note:
+A common mistake is forgetting the squares on x and y, leading to an equation that does not represent a circle.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+Given the parametric equations x = 2t + 1 and y = t - 3, what is the Cartesian equation?
+A) y = (x - 1)/2 - 3
+B) y = 2x - 7
+C) y = x/2 - 5
+D) x + 2y = -5
+Correct Answer: B
+
+Solution:
+By solving one equation for t and substituting into the other, we find that t = (x - 1)/2. Substituting this into y = t - 3 gives us y = (x - 1)/2 - 3, which simplifies to y = 2x - 7. The Cartesian equation is y = 2x - 7.
+
+Explanation:
+The correct answer results from eliminating the parameter t using algebraic manipulation. Incorrect choices do not arise from correctly substituting the expression for t into the second equation.
+
+Common mistake note:
+A common mistake is forgetting to distribute the coefficient when simplifying y = (x - 1)/2 - 3, leading to choice C.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+For the parametric equations x = e^t and y = e^-t, what is the Cartesian equation?
+A) y = 1/x
+B) x + y = 1
+C) xy = 1
+D) x - y = 2
+Correct Answer: C
+
+Solution:
+Multiplying the parametric equations together eliminates t: xy = e^(t + (-t)) = e^0 = 1. The Cartesian equation is xy = 1.
+
+Explanation:
+The correct answer results from multiplying the parametric equations to eliminate t. Incorrect choices do not result from this multiplication or algebraic manipulation.
+
+Common mistake note:
+A common mistake is adding exponents instead of multiplying, leading to choice B.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+Given the parametric equations x = 4sin(t) and y = 3cos(t), what is the Cartesian equation?
+A) x^2/16 + y^2/9 = 1
+B) y = 3/x
+C) x^2 + y^2 = 7
+D) y = -3x
+Correct Answer: A
+
+Solution:
+Using the trigonometric identity sin^2(t) + cos^2(t) = 1, we substitute x/4 for sin(t) and y/3 for cos(t), giving us (x/4)^2 + (y/3)^2 = 1. The Cartesian equation is x^2/16 + y^2/9 = 1.
+
+Explanation:
+The correct answer arises from applying the identity to eliminate t. Incorrect choices do not result from the proper application of the identity or algebraic manipulation.
+
+Common mistake note:
+A common mistake is forgetting the squares on x/4 and y/3, leading to an equation that does not represent an ellipse.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+For the parametric equations x = 1 - t^2 and y = t + 1, what is the Cartesian equation?
+A) y = sqrt(1 - x)
+B) y = -sqrt(x) + 1
+C) x = (y - 1)^2
+D) x + y = 2
+Correct Answer: C
+
+Solution:
+Solving one equation for t and substituting into the other, we get t = sqrt(1 - x). Substituting this into y = t + 1 gives us y = sqrt(1 - x) + 1, which rearranges to x = (y - 1)^2. The Cartesian equation is x = (y - 1)^2.
+
+Explanation:
+The correct answer results from eliminating the parameter t using algebraic manipulation. Incorrect choices do not arise from correctly substituting the expression for t into the second equation or choosing the appropriate square root.
+
+Common mistake note:
+A common mistake is forgetting to consider both possible values of t when squaring, leading to an equation that does not represent a parabola.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+Given the parametric equations x = 2t - 3 and y = 4t + 5, what is the Cartesian equation?
+A) y = 2x + 11
+B) y = (x + 3)/2 + 5
+C) y = -2x + 16
+D) x - 2y = 8
+Correct Answer: A
+
+Solution:
+By solving one equation for t and substituting into the other, we find that t = (x + 3)/2. Substituting this into y = 4t + 5 gives us y = 4((x + 3)/2) + 5, which simplifies to y = 2x + 11. The Cartesian equation is y = 2x + 11.
+
+Explanation:
+The correct answer results from eliminating the parameter t using algebraic manipulation. Incorrect choices do not arise from correctly substituting the expression for t into the second equation.
+
+Common mistake note:
+A common mistake is forgetting to distribute the coefficient when simplifying y = 4((x + 3)/2) + 5, leading to choice B.
+------------------------------------------------------------------------------

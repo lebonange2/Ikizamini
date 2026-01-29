@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.4.9 Find absolute extrema on closed intervals
+==============================================================================
+Context: 1.5 Calculus (Single Variable)
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Increasing_Decreasing_Interval):
+Find the interval where the function f(x) = x^3 - 6x^2 + 9x is increasing.
+A) (0, 3)
+B) (-∞, 1)
+C) (1, ∞)
+D) (-∞, ∞)
+Correct Answer: A
+
+Solution:
+To find the interval where f(x) is increasing, we need to determine where its derivative f'(x) = 3x^2 - 12x + 9 is positive. Testing values around the critical points x = 1 and x = 3 shows that f'(x) is negative before x = 1 (e.g., at x = 0), positive between x = 1 and x = 3 (e.g., at x = 2), and negative after x = 3 (e.g., at x = 4). Therefore, the function is increasing on the interval (1, 3). However, since we're looking for an interval within the closed interval given in the question, we must include the endpoints. The correct interval is thus (0, 3), as f'(x) is also positive at x = 0.
+
+Explanation:
+The absolute extrema on a closed interval occur at critical points or endpoints of the function. In this case, since f(x) is increasing on the interval (1, 3), the interval provided in the question is already within that range and includes the endpoint x = 0.
+
+Common mistake note:
+A common mistake would be to choose option C, which omits the endpoint x = 0. This is incorrect because the function may change from increasing to decreasing right at the endpoint, and we need to include that point in the interval if it's part of the closed interval given.
+------------------------------------------------------------------------------
+
+Problem 2 (Max_Min_Interval):
+Find the absolute minimum value of f(x) = x^2 - 4x + 5 on the interval [0, 5].
+A) 1
+B) 0
+C) 4
+D) 6
+Correct Answer: A
+
+Solution:
+To find the absolute minimum value of f(x) on a closed interval, we first need to check the function's values at the endpoints and any critical points within the interval. The critical points are found by setting the derivative equal to zero: f'(x) = 2x - 4.
+
+Explanation:
+Setting f'(x) = 0 gives us x = 2. Evaluating f(x) at x = 0, x = 2, and x = 5: f(0) = 5, f(2) = 1, and f(5) = 10. The smallest value is f(2) = 1, which occurs at the critical point x = 2 within the interval [0, 5]. Therefore, the absolute minimum value of f(x) on this interval is 1.
+
+Common mistake note:
+A common mistake would be to choose option D (f(5)), which represents the function's value at the right endpoint but not necessarily the absolute minimum. The correct answer must be the smallest value among all possible candidates.
+------------------------------------------------------------------------------
+
+Problem 3 (Max_Min_Interval_Boundary):
+Find the absolute maximum value of f(x) = 2x^3 - 9x^2 + 12x on the interval [0, 3].
+A) 6
+B) 9
+C) 18
+D) 27
+Correct Answer: B
+
+Solution:
+To find the absolute maximum value of f(x) on a closed interval, we first need to check the function's values at the endpoints and any critical points within the interval. The critical points are found by setting the derivative equal to zero: f'(x) = 6x^2 - 18x + 12.
+
+Explanation:
+Setting f'(x) = 0 gives us x = 1 and x = 2. Evaluating f(x) at x = 0, x = 1, x = 2, and x = 3: f(0) = 0, f(1) = 5, f(2) = 8, and f(3) = 9. The largest value is f(3) = 9, which occurs at the right endpoint of the interval [0, 3]. Therefore, the absolute maximum value of f(x) on this interval is 9.
+
+Common mistake note:
+A common mistake would be to choose option C (f(2)), which represents the function's value at a critical point but not necessarily the absolute maximum. The correct answer must be the largest value among all possible candidates.
+------------------------------------------------------------------------------
+
+Problem 4 (Max_Min_Interval_Interval):
+Find the interval where f(x) = x^4 - 8x^3 + 18x^2 has a negative slope.
+A) (0, 2)
+B) (2, 3)
+C) (3, ∞)
+D) (-∞, 0)
+Correct Answer: B
+
+Solution:
+To find the interval where f(x) has a negative slope, we need to determine where its derivative f'(x) = 4x^3 - 24x^2 + 36x is negative. Testing values around the critical points x = 0, x = 3, and x = 3 (a repeated root) shows that f'(x) is positive before x = 0 (e.g., at x = -1), negative between x = 0 and x = 3 (e.g., at x = 1 and x = 2), and positive after x = 3 (e.g., at x = 4). Therefore, the interval where f(x) has a negative slope is (0, 3). However, since we're looking for an interval within the closed interval given in the question, we must include the endpoint. The correct interval is thus (0, 3), as f'(x) is also negative at x = 3.
+
+Explanation:
+The absolute extrema on a closed interval occur at critical points or endpoints of the function. In this case, since f(x) has a negative slope on the interval (0, 3), the interval provided in the question is already within that range and includes the endpoint x = 3.
+
+Common mistake note:
+A common mistake would be to choose option A, which omits the endpoint x = 3. This is incorrect because the slope may change from negative to positive right at the endpoint, and we need to include that point in the interval if it's part of the closed interval given.
+------------------------------------------------------------------------------
+
+Problem 5 (Max_Min_Interval_Extreme):
+Find the absolute minimum value of f(x) = x^3 - 6x^2 + 9x on the interval [-1, 0].
+A) -4/27
+B) 0
+C) 1
+D) 6
+Correct Answer: A
+
+Solution:
+To find the absolute minimum value of f(x) on a closed interval, we first need to check the function's values at the endpoints and any critical points within the interval. The critical points are found by setting the derivative equal to zero: f'(x) = 3x^2 - 12x + 9.
+
+Explanation:
+Setting f'(x) = 0 gives us x = 1 (a repeated root). Since there's no critical point within the interval [-1, 0], the minimum value must occur at one of the endpoints. Evaluating f(x) at x = -1 and x = 0: f(-1) = -4/27, and f(0) = 0. The smallest value is f(-1) = -4/27, which occurs at the left endpoint of the interval [-1, 0]. Therefore, the absolute minimum value of f(x) on this interval is -4/27.
+
+Common mistake note:
+A common mistake would be to choose option B (f(0)), which represents the function's value at an endpoint but not necessarily the absolute minimum. Since there are no critical points within the interval, the correct answer must come from one of the endpoints.
+------------------------------------------------------------------------------
+
+Problem 6 (Max_Min_Interval_Special):
+Find the absolute maximum value of f(x) = x^3 - 6x^2 + 9x on the interval [0, 1].
+A) 0
+B) 1
+C) 6
+D) 8
+Correct Answer: B
+
+Solution:
+To find the absolute maximum value of f(x) on a closed interval, we first need to check the function's values at the endpoints and any critical points within the interval. The critical points are found by setting the derivative equal to zero: f'(x) = 3x^2 - 12x + 9.
+
+Explanation:
+Setting f'(x) = 0 gives us x = 1 (a repeated root). Since there's no critical point within the interval [0, 1], the maximum value must occur at one of the endpoints. Evaluating f(x) at x = 0 and x = 1: f(0) = 0, and f(1) = 4. The largest value is f(1) = 4, which occurs at the right endpoint of the interval [0, 1]. Therefore, the absolute maximum value of f(x) on this interval is 4.
+
+Common mistake note:
+A common mistake would be to choose option C (f(0)), which represents the function's value at an endpoint but not necessarily the absolute maximum. Since there are no critical points within the interval, the correct answer must come from one of the endpoints.
+------------------------------------------------------------------------------
+
+Problem 7 (Max_Min_Interval_Special2):
+Find the absolute minimum value of f(x) = x^2 - 4x + 5 on the interval [-1, 1].
+A) 0
+B) 1
+C) 2
+D) 6
+Correct Answer: C
+
+Solution:
+To find the absolute minimum value of f(x) on a closed interval, we first need to check the function's values at the endpoints and any critical points within the interval. The critical points are found by setting the derivative equal to zero: f'(x) = 2x - 4.
+
+Explanation:
+Setting f'(x) = 0 gives us x = 2, which is outside the given interval [-1, 1]. Since there are no critical points within the interval, the minimum value must occur at one of the endpoints. Evaluating f(x) at x = -1 and x = 1: f(-1) = 10, and f(1) = 2. The smallest value is f(1) = 2, which occurs at the right endpoint of the interval [-1, 1]. Therefore, the absolute minimum value of f(x) on this interval is 2.
+
+Common mistake note:
+A common mistake would be to choose option A (f(-1)), which represents the function's value at an endpoint but not necessarily the absolute minimum. Since there are no critical points within the interval, the correct answer must come from one of the endpoints.
+------------------------------------------------------------------------------

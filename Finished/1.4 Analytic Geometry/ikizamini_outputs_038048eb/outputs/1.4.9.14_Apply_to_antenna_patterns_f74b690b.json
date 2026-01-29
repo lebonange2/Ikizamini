@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.9.14",
+  "objective_text": "Apply to antenna patterns",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "An isotropic antenna has a radiation pattern that is uniform in all directions. What is the maximum directivity of an isotropic antenna?",
+      "choices": {
+        "A": "0 dBi",
+        "B": "1 dBi",
+        "C": "2.75 dBi",
+        "D": "3 dB"
+      },
+      "correct_choice": "A",
+      "solution": "The directivity of an isotropic antenna is 0 dBi because it radiates equally in all directions, making it the reference for comparing other antennas' gain.",
+      "explanation": "An isotropic antenna serves as a standard reference for antenna gain calculations. Its directivity is always 0 dBi, regardless of its actual radiation pattern.",
+      "common_mistake_notes": "A common mistake would be to choose '1 dBi', which is the unit increment used in comparing antenna gains relative to an isotropic radiator. However, the maximum directivity for an isotropic antenna itself is 0 dBi."
+    },
+    {
+      "id": "?",
+      "stem": "What does a cosine pattern indicate about an antenna's radiation? Assume the angle is measured from the antenna's boresight.",
+      "choices": {
+        "A": "Maximum radiation in all directions",
+        "B": "Uniform radiation along the horizon",
+        "C": "Maximum radiation at 90° elevation",
+        "D": "Maximum radiation along the antenna's axis"
+      },
+      "correct_choice": "D",
+      "solution": "A cosine pattern indicates that an antenna radiates most of its power along its main axis, with the radiation intensity decreasing as the angle from the boresight increases.",
+      "explanation": "Cosine patterns are characteristic of many antennas and represent a concentration of radiation in the direction perpendicular to the plane of the antenna. The radiation is highest at 0° (boresight) and decreases symmetrically on either side.",
+      "common_mistake_notes": "A common mistake would be to choose 'Maximum radiation in all directions', which describes an isotropic pattern, not a cosine pattern. A cosine pattern has maximum radiation along the antenna's axis, not uniformly."
+    },
+    {
+      "id": "?",
+      "stem": "In a Yagi- Uda antenna, what role does the reflector element play?",
+      "choices": {
+        "A": "To receive signals from multiple directions",
+        "B": "To increase the directivity of the antenna",
+        "C": "To amplify the transmitted signal",
+        "D": "To reduce interference from other sources"
+      },
+      "correct_choice": "B",
+      "solution": "The reflector element in a Yagi- Uda antenna helps to increase the directivity by reflecting the radio waves back towards the driven element, thereby enhancing the main radiation lobe.",
+      "explanation": "A Yagi- Uda antenna consists of multiple elements, including a driven element, directors, and reflectors. The reflector element is positioned behind the driven element and reflects the energy back towards it, improving the antenna's directivity without increasing gain.",
+      "common_mistake_notes": "A common mistake would be to choose 'To receive signals from multiple directions', which is not the role of a reflector in a Yagi- Uda antenna. The primary purpose of the reflector is to enhance the main radiation lobe, not to increase reception angles."
+    },
+    {
+      "id": "?",
+      "stem": "What is the relationship between antenna gain and effective area?",
+      "choices": {
+        "A": "Gain is directly proportional to effective area",
+        "B": "Gain is inversely proportional to effective area",
+        "C": "There is no direct relationship between gain and effective area",
+        "D": "Gain is equal to effective area"
+      },
+      "correct_choice": "A",
+      "solution": "Antenna gain is directly proportional to its effective area, meaning that as the effective area increases, so does the antenna's ability to receive or transmit more power.",
+      "explanation": "The relationship between antenna gain (G) and effective area (Ae) is given by G = 4π(Ae / λ^2), where λ is the wavelength. This equation shows that gain increases with an increase in effective area, as both are directly related.",
+      "common_mistake_notes": "A common mistake would be to choose 'Gain is inversely proportional to effective area', which is incorrect. The two parameters have a positive correlation, not a negative one."
+    },
+    {
+      "id": "?",
+      "stem": "In an antenna array, what is the purpose of phasing?",
+      "choices": {
+        "A": "To increase the number of antennas in the array",
+        "B": "To synchronize the phase of the signals from each element",
+        "C": "To reduce the overall size of the array",
+        "D": "To improve the antenna's bandwidth"
+      },
+      "correct_choice": "B",
+      "solution": "Phasing in an antenna array is used to adjust the phase relationship between the signals emitted by each element, allowing for constructive interference at a specific direction and improving directivity.",
+      "explanation": "Phasing ensures that the radio waves from different elements of an array arrive at the same point in space in phase, maximizing the radiation intensity in the desired direction. This results in a more focused beam and increased directivity.",
+      "common_mistake_notes": "A common mistake would be to choose 'To increase the number of antennas in the array', which is not the purpose of phasing. Phasing is about synchronizing signals, not adding antennas."
+    },
+    {
+      "id": "?",
+      "stem": "What is meant by the half-power beamwidth (HPBW) of an antenna?",
+      "choices": {
+        "A": "The angle between the two points where the radiation intensity is one-half of the maximum value",
+        "B": "The distance between the two elements in a dipole antenna",
+        "C": "The frequency range over which the antenna operates",
+        "D": "The ratio of power transmitted to power received"
+      },
+      "correct_choice": "A",
+      "solution": "Half-power beamwidth (HPBW) refers to the angle between the two points in the radiation pattern where the intensity is 50% of the maximum value, indicating the width of the main lobe.",
+      "explanation": "The HPBW is a measure of an antenna's directivity and helps describe how focused its radiation pattern is. It is defined as the angular distance between the half-power points (where the power drops to half of the peak) in the major lobe of the radiation pattern.",
+      "common_mistake_notes": "A common mistake would be to choose 'The distance between the two elements in a dipole antenna', which refers to the physical dimension of a dipole, not its radiation pattern. HPBW is related to the angle of radiation intensity."
+    },
+    {
+      "id": "?",
+      "stem": "In an antenna's radiation pattern, what does a null indicate?",
+      "choices": {
+        "A": "Zero radiation in that direction",
+        "B": "Maximum radiation in that direction",
+        "C": "Half the maximum radiation in that direction",
+        "D": "Equal radiation in all directions"
+      },
+      "correct_choice": "A",
+      "solution": "In an antenna's radiation pattern, a null indicates zero radiation intensity in that particular direction. It is a region where no energy is transmitted.",
+      "explanation": "Nulls are points in the radiation pattern where the electromagnetic field strength drops to zero due to constructive and destructive interference of waves. They represent directions where the antenna does not radiate any power.",
+      "common_mistake_notes": "A common mistake would be to choose 'Maximum radiation in that direction', which is incorrect. Nulls correspond to zero radiation, not maximum."
+    }
+  ]
+}

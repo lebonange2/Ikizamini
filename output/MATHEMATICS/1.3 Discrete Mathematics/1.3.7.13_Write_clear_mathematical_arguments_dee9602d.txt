@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.7.13 Write clear mathematical arguments
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.7 Proof Techniques
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+Prove that the square root of 2 is irrational.
+A) Assume the square root of 2 can be expressed as a fraction, then show a contradiction.
+B) State that the square root of 2 has an infinite number of decimal places, hence it cannot be rational.
+C) Prove that if the square root of 2 is rational, its square must also be rational.
+D) Use the fact that the sum of two irrational numbers is always irrational.
+Correct Answer: A
+
+Solution:
+To prove that √2 is irrational, use proof by contradiction. Assume √2 can be expressed as p/q (p and q coprime). Then: √2 = p/q. Squaring both sides gives 2 = p^2 / q^2. Thus, p^2 is even; since an odd square is odd and two even numbers multiply to an even number, p must be even. Let p = 2k (k integer), then 4k^2 = q^2. So q^2 is also even, making q even. But if p and q are both even, they have a common factor of 2, contradicting coprimality. Hence, √2 cannot be expressed as a fraction, proving it's irrational.
+
+Explanation:
+This question assesses understanding of proof by contradiction and rational numbers' properties.
+
+Common mistake note:
+Mistakes: (B) only describes irrationality; (C) is an intermediate step; (D) unrelated to √2.
+------------------------------------------------------------------------------
+
+Problem 2 (Xyz456):
+Prove that if a and b are positive integers such that a^2 = 2b^2, then a must be even.
+A) Assume a is odd, then show b^2 would also be odd, contradicting the given equation.
+B) State that since a^2 is divisible by 2, a must also be divisible by 2.
+C) Prove that if a is even, then b can be expressed as an integer multiple of a/2.
+D) Use the fact that the product of two odd numbers is always odd.
+Correct Answer: B
+
+Solution:
+To prove a must be even (a^2 = 2b^2), use direct proof. As a^2 is divisible by 2 (twice b^2), a must be even since only an even number squared produces an even result.
+
+Explanation:
+This question tests divisibility properties' understanding in proofs.
+
+Common mistake note:
+Mistakes: (A) doesn't lead to contradiction; (C) irrelevant; (D) unrelated.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwe789):
+Prove that if n is an integer and n^2 is divisible by 3, then n must also be divisible by 3.
+A) Use the fact that if a number is divisible by 3, its square must also be divisible by 3.
+B) Assume n is not divisible by 3, then show n^2 would not be divisible by 3, contradicting the given statement.
+C) Prove that if n is divisible by 3, then n can be expressed as 3k for some integer k.
+D) Use modular arithmetic to demonstrate (n^2) mod 3 = (n mod 3)^2.
+Correct Answer: D
+
+Solution:
+To prove n's divisibility by 3 (n^2 divisible by 3), use modular arithmetic: (n^2) mod 3 = (n mod 3)^2. If n^2 is divisible by 3, then (n^2) mod 3 = 0, implying (n mod 3)^2 = 0; thus, n mod 3 is 0 or -3 (equiv. to 0 mod 3), so n is divisible by 3.
+
+Explanation:
+This question tests modular arithmetic and divisibility proofs.
+
+Common mistake note:
+Mistakes: (A) circular reasoning; (B) no clear counterexample; (C) unnecessary for proof.
+------------------------------------------------------------------------------
+
+Problem 4 (Rty098):
+Prove that the sum of two consecutive odd integers is always even.
+A) Assume the first integer is x, then show the second integer is x + 2 and their sum is 2x + 2, which is even.
+B) State that an odd number plus an even number equals an odd number, but consecutive integers are not one odd and one even.
+C) Prove that if the first integer is even, then the second integer must be odd and their sum will be odd.
+D) Use the fact that the product of two consecutive integers is always divisible by 2.
+Correct Answer: A
+
+Solution:
+To prove the sum of consecutive odd integers (x & x+2) is even, let first integer be x (odd). Sum: x + (x + 2) = 2x + 2, which is even as it's twice an integer plus 2.
+
+Explanation:
+This question assesses arithmetic properties' understanding in proofs.
+
+Common mistake note:
+Mistakes: (B) incorrect assumption; (C) irrelevant to odd integers; (D) unrelated.
+------------------------------------------------------------------------------
+
+Problem 5 (Uij654):
+Prove that if a > 0 and b > 0, then (a + b)^2 > a^2 + b^2.
+A) Assume (a + b)^2 ≤ a^2 + b^2, then show this leads to a contradiction with the given conditions.
+B) State that the square of a sum is always greater than or equal to the sum of squares because of the distributive property.
+C) Prove that if a = b, then (a + b)^2 = 2a^2 > a^2 + b^2.
+D) Use the fact that the difference between two squares is always non-negative.
+Correct Answer: A
+
+Solution:
+To prove (a + b)^2 > a^2 + b^2, use contradiction. Assume (a + b)^2 ≤ a^2 + b^2. Expanding: a^2 + 2ab + b^2 ≤ a^2 + b^2. Subtracting a^2 + b^2 gives 2ab ≤ 0. Since a and b are positive, 2ab is positive, contradicting the inequality.
+
+Explanation:
+This question tests inequalities and contradiction in proofs.
+
+Common mistake note:
+Mistakes: (B) incomplete argument; (C) only for a = b; (D) unrelated.
+------------------------------------------------------------------------------
+
+Problem 6 (Kol321):
+Prove that if n is an odd integer, then (n + 1)(n - 1) is divisible by 2.
+A) Assume n is even, then show (n + 1)(n - 1) would not be divisible by 2, contradicting the given statement.
+B) State that the product of two consecutive integers is always divisible by 2, and use this fact with n being odd.
+C) Prove that if n is even, then (n + 1)(n - 1) can be expressed as 2k for some integer k.
+D) Use modular arithmetic to demonstrate [(n + 1)(n - 1)] mod 2 = 0.
+Correct Answer: B
+
+Solution:
+To prove (n + 1)(n - 1) is divisible by 2 (n odd), use the fact that consecutive integers' product is divisible by 2. Since n odd, n - 1 is even; thus, their product is divisible by 4 and hence by 2.
+
+Explanation:
+This question assesses divisibility properties in proofs.
+
+Common mistake note:
+Mistakes: (A) no clear counterexample; (C) unnecessary for proof; (D) not most straightforward.
+------------------------------------------------------------------------------
+
+Problem 7 (Poi987):
+Prove that if a and b are integers such that a > b and a^2 = b^2, then a = b.
+A) Assume a ≠ b, then show a^2 would not be equal to b^2, contradicting the given statement.
+B) State that the square of an integer is unique, so if a^2 = b^2, a must be equal to b or -b.
+C) Prove that if a and b are both positive, then a^2 > b^2 for all a > b.
+D) Use the fact that the square root function is one-to-one on non-negative numbers.
+Correct Answer: A
+
+Solution:
+To prove a = b (a > b & a^2 = b^2), use contradiction. Assume a ≠ b. Since a > b, we have: a > 0 and b < 0 or a > 0 and b > 0. In the first case, a^2 > b^2; in the second, a^2 = b^2 but a > b, both contradictions. Hence, a = b.
+
+Explanation:
+This question tests square functions' understanding and contradiction in proofs.
+
+Common mistake note:
+Mistakes: (B) not specific to this problem; (C) only for positive a & b; (D) unnecessary given the statement.
+------------------------------------------------------------------------------

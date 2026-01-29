@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.8.5",
+  "objective_text": "Integrate using trig substitution",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Q1",
+      "stem": "Evaluate the integral ∫(x² dx) / (x³ + 1) from 0 to 2.",
+      "choices": {
+        "A": "π/3 - π/6",
+        "B": "π/2",
+        "C": "π",
+        "D": "2π"
+      },
+      "correct_choice": "B",
+      "solution": "Using trig substitution with x = tan(θ), dx = sec²(θ)dθ, the integral becomes ∫(tan²(θ)sec²(θ)dθ) / (tan³(θ) + 1). This simplifies to ∫(sec⁴(θ)dθ) / (sec³(θ)). Integrating, we get ∫(sec(θ)dθ) from π/4 to arctan(2) = ln|sec(θ) + tan(θ)| evaluated from π/4 to arctan(2) = ln(sqrt(5) + 2) - ln(sqrt(2) + 1) = π/2.",
+      "explanation": "The integral is solved using trigonometric substitution and evaluating the resulting integral with respect to θ or π.",
+      "common_mistake_notes": "A common mistake would be not recognizing that dx becomes sec²(θ)dθ, leading to an incorrect result."
+    },
+    {
+      "id": "Q2",
+      "stem": "Evaluate the integral ∫(sin(x) dx) / (1 + cos²(x)) from 0 to π.",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "3π/4",
+        "D": "π"
+      },
+      "correct_choice": "A",
+      "solution": "Using trig substitution with x = 2arctan(t), dx = 2/(1 + t²)dt, the integral becomes ∫(sin(2arctan(t)) * 2/(1 + t²)dθ) / (1 + cos²(2arctan(t))). This simplifies to ∫(2t/(1 + t²)dθ) / (1 + (1 - t²)/(1 + t²)). Integrating, we get ∫(2tdθ) from 0 to 1 = π/4.",
+      "explanation": "The integral is solved using trigonometric substitution and evaluating the resulting integral with respect to θ or π.",
+      "common_mistake_notes": "A common mistake would be not recognizing that dx becomes 2/(1 + t²)dt, leading to an incorrect result."
+    },
+    {
+      "id": "Q3",
+      "stem": "Evaluate the integral ∫(cos(x) dx) / (sin²(x) + 4) from -π/2 to π/2.",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "π",
+        "D": "2π"
+      },
+      "correct_choice": "A",
+      "solution": "Using trig substitution with x = arctan(2t), dx = 2/(1 + 4t²)dt, the integral becomes ∫(cos(arctan(2t)) * 2/(1 + 4t²)dθ) / ((sin(arctan(2t)))² + 4). This simplifies to ∫(2tdθ) from -1/√3 to 1/√3 = 0.",
+      "explanation": "The integral is solved using trigonometric substitution and evaluating the resulting integral with respect to θ or π. The limits of integration yield an odd function, which results in a zero value.",
+      "common_mistake_notes": "A common mistake would be not recognizing that dx becomes 2/(1 + 4t²)dt, leading to an incorrect result."
+    },
+    {
+      "id": "Q4",
+      "stem": "Evaluate the integral ∫(x³ dx) / (x⁴ + 1) from -1 to 1.",
+      "choices": {
+        "A": "π/2",
+        "B": "π",
+        "C": "3π/2",
+        "D": "2π"
+      },
+      "correct_choice": "A",
+      "solution": "Using trig substitution with x = tan(θ), dx = sec²(θ)dθ, the integral becomes ∫(tan³(θ)sec²(θ)dθ) / (tan⁴(θ) + 1). This simplifies to ∫(sec⁵(θ)dθ) / (sec³(θ)). Integrating, we get ∫(sec²(θ)dθ) from -π/4 to π/4 = ln|sec(θ) + tan(θ)| evaluated from -π/4 to π/4 = ln(sqrt(2) + 1) - ln(sqrt(2) - 1) = π/2.",
+      "explanation": "The integral is solved using trigonometric substitution and evaluating the resulting integral with respect to θ or π. The limits of integration yield an even function, which results in a non-zero value.",
+      "common_mistake_notes": "A common mistake would be not recognizing that dx becomes sec²(θ)dθ, leading to an incorrect result."
+    },
+    {
+      "id": "Q5",
+      "stem": "Evaluate the integral ∫(x⁴ dx) / (x⁵ + 1) from 0 to 2.",
+      "choices": {
+        "A": "π/3",
+        "B": "π/2",
+        "C": "2π/3",
+        "D": "π"
+      },
+      "correct_choice": "C",
+      "solution": "Using trig substitution with x = tan(θ), dx = sec²(θ)dθ, the integral becomes ∫(tan⁴(θ)sec²(θ)dθ) / (tan⁵(θ) + 1). This simplifies to ∫(sec⁷(θ)dθ) / (sec³(θ)). Integrating, we get ∫(sec²(θ)dθ) from π/4 to arctan(2) = ln|sec(θ) + tan(θ)| evaluated from π/4 to arctan(2) = ln(sqrt(5) + 2) - ln(sqrt(2) + 1) = 2π/3.",
+      "explanation": "The integral is solved using trigonometric substitution and evaluating the resulting integral with respect to θ or π. The limits of integration yield a non-zero result.",
+      "common_mistake_notes": "A common mistake would be not recognizing that dx becomes sec²(θ)dθ, leading to an incorrect result."
+    },
+    {
+      "id": "Q6",
+      "stem": "Evaluate the integral ∫(sin(x)cos(x) dx) / (1 + cos(2x)) from 0 to π.",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "3π/4",
+        "D": "π"
+      },
+      "correct_choice": "B",
+      "solution": "Using trig substitution with x = arctan(t), dx = dt/(1 + t²), the integral becomes ∫((sin(arctan(θ))cos(arctan(θ))) * dt/(1 + t²)) / (1 + cos(2arctan(θ))). This simplifies to ∫(t/2dt) from 0 to ∞ = π/2.",
+      "explanation": "The integral is solved using trigonometric substitution and evaluating the resulting integral with respect to θ or π. The limits of integration yield an even function, which results in a non-zero value.",
+      "common_mistake_notes": "A common mistake would be not recognizing that dx becomes dt/(1 + t²), leading to an incorrect result."
+    },
+    {
+      "id": "Q7",
+      "stem": "Evaluate the integral ∫(sin(x)cos²(θ) dx) / (1 - cos³(θ)) from 0 to π/2.",
+      "choices": {
+        "A": "π/6",
+        "B": "π/3",
+        "C": "π/2",
+        "D": "π"
+      },
+      "correct_choice": "B",
+      "solution": "Using trig substitution with x = arctan(t), dx = dt/(1 + t²), the integral becomes ∫((sin(arctan(θ))cos²(arctan(θ))) * dt/(1 + t²)) / (1 - cos³(arctan(θ))). This simplifies to ∫(t²/2dt) from 0 to 1 = π/3.",
+      "explanation": "The integral is solved using trigonometric substitution and evaluating the resulting integral with respect to θ or π. The limits of integration yield a non-zero result.",
+      "common_mistake_notes": "A common mistake would be not recognizing that dx becomes dt/(1 + t²), leading to an incorrect result."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.14.4 Apply to stability analysis
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.14 Complex Analysis Applications
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Consider the system represented by the differential equation dx/dt = -x. Determine if the equilibrium point x=0 is stable, unstable, or semi-stable.
+A) Unstable
+B) Stable
+C) Semi- Stable
+D) Undetermined
+Correct Answer: B
+
+Solution:
+The stability of a system can be determined by analyzing the sign of the derivative of the function at the equilibrium point. For dx/dt = -x, at x=0, the derivative is -1, which is negative. A negative derivative indicates that the system is stable because it pushes the solution back towards the equilibrium point.
+
+Explanation:
+A stable equilibrium point means that small perturbations around the equilibrium will decay over time and return to the equilibrium value. In this case, since dx/dt is negative for x=0, any small positive or negative deviation from x=0 will cause the system to move back towards x=0.
+
+Common mistake note:
+A common mistake would be to choose 'Unstable' because of the negative sign in the equation. However, the stability depends on the sign of the derivative at the equilibrium point, not the sign of the function itself.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Given the system dx/dt = x^2 - 1, determine if the equilibrium points x=±1 are stable or unstable.
+A) Both stable
+B) x=-1 stable, x=1 unstable
+C) x=1 stable, x=-1 unstable
+D) Both unstable
+Correct Answer: C
+
+Solution:
+To determine the stability of the equilibrium points, we examine the derivative of dx/dt at each point. At x=-1, the derivative is 2(-1)^2 - 1 = 1, which is positive (unstable). At x=1, the derivative is 2(1)^2 - 1 = 1, also positive (unstable).
+
+Explanation:
+For a stable equilibrium point, the derivative must be negative at that point. Since both equilibrium points have a positive derivative, they are both unstable.
+
+Common mistake note:
+A common mistake would be to assume that because x=±1 are roots of the equation, they must be stable. However, stability is determined by the sign of the derivative, not the function value at the equilibrium point.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Consider the system dx/dt = -2x + x^3. Find the stability of the equilibrium points.
+A) One stable and one unstable
+B) Two stable
+C) Both semi-stable
+D) Both stable
+Correct Answer: A
+
+Solution:
+The derivative is dx/dt' = -2 + 3x^2. At x=0, the derivative is -2 (unstable). At x=±√(2/3), the derivative is 0 (semi-stable). Since one equilibrium point is unstable and another is semi-stable, the system has a mix of stability.
+
+Explanation:
+The equilibrium points are found by setting dx/dt to zero. For x=0, the derivative is negative, making it an unstable equilibrium. At x=±√(2/3), the derivative is zero, indicating semi-stability (neither stable nor unstable).
+
+Common mistake note:
+A common mistake would be to assume that since there are two equilibrium points, they must both have the same stability. However, different equilibrium points can have different stability characteristics.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+For the system dx/dt = x(1-x), determine if the equilibrium point x=0 is stable or unstable.
+A) Unstable
+B) Stable
+C) Semi- Stable
+D) Undetermined
+Correct Answer: B
+
+Solution:
+The derivative of dx/dt is 1 - 2x. At x=0, the derivative is 1 (positive), indicating a stable equilibrium point.
+
+Explanation:
+A stable equilibrium occurs when the derivative at that point is negative, which pushes the solution back towards the equilibrium. In this case, the derivative at x=0 is positive, making it a stable point.
+
+Common mistake note:
+A common mistake would be to choose 'Unstable' because of the presence of x in the equation. However, stability depends on the derivative, not the function itself.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Given the system dx/dt = -x^3, find the stability of the equilibrium points.
+A) One stable and one unstable
+B) Two stable
+C) Both semi-stable
+D) No stable equilibrium
+Correct Answer: D
+
+Solution:
+The derivative is dx/dt' = -3x^2. At x=0, the derivative is 0 (semi-stable). There are no other real equilibrium points, and since there's no stable point, the system has no stable equilibrium.
+
+Explanation:
+The equilibrium points are found by setting dx/dt to zero. For x=0, the derivative is zero, indicating semi- stability. However, there are no other real roots for the equation, so there are no stable or unstable equilibrium points.
+
+Common mistake note:
+A common mistake would be to assume that since there's a semi-stable point at x=0, there must also be a stable point. However, not all systems have both stable and unstable points.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Consider the system dx/dt = -x^2 + 1. Determine if the equilibrium points x=±1 are stable or unstable.
+A) Both stable
+B) x=-1 stable, x=1 unstable
+C) x=1 stable, x=-1 unstable
+D) Both unstable
+Correct Answer: D
+
+Solution:
+The derivative is dx/dt' = -2x. At x=±1, the derivative is -2 (negative), indicating an unstable equilibrium point for both.
+
+Explanation:
+For a stable equilibrium point, the derivative must be negative at that point. Since both equilibrium points have a negative derivative, they are both unstable.
+
+Common mistake note:
+A common mistake would be to assume that because x=±1 are roots of the equation, they must be stable. However, stability is determined by the sign of the derivative, not the function value at the equilibrium point.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Given the system dx/dt = x(2-x), find the stability of the equilibrium points.
+A) One stable and one unstable
+B) Two stable
+C) Both semi-stable
+D) No stable equilibrium
+Correct Answer: A
+
+Solution:
+The derivative is dx/dt' = 2 - 2x. At x=0, the derivative is 2 (positive), indicating an unstable equilibrium point. At x=1, the derivative is 0 (semi-stable). There's no stable equilibrium.
+
+Explanation:
+The equilibrium points are found by setting dx/dt to zero. For x=0, the derivative is positive, making it an unstable point. At x=1, the derivative is zero, indicating semi- stability. However, there's no stable point in this system.
+
+Common mistake note:
+A common mistake would be to assume that since there's a semi-stable point at x=1, there must also be a stable point. However, not all systems have both stable and unstable points.
+------------------------------------------------------------------------------

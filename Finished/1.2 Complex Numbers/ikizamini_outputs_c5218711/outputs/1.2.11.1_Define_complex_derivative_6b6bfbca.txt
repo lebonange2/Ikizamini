@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.11.1 Define complex derivative
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.11 Complex Differentiation
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One):
+What is the definition of the derivative of a complex function f(z) at a point z₀?
+A) lim (h → 0) [f(z₀ + ih) - f(z₀)] / h
+B) lim (h → 0) [f(z₀ + h) - f(z₀)] / h
+C) lim (h → 0) [f(z₀ + ih) - f(z₀)] / ih
+D) lim (h → 0) [f(z₀ + ih) + f(z₀)] / ih
+Correct Answer: C
+
+Solution:
+The correct definition of the complex derivative is the limit where both the real and imaginary parts are considered. Hence, we use 'ih' in the denominator to account for the complex nature of the function. The formula is lim (h → 0) [f(z₀ + ih) - f(z₀)] / ih.
+
+Explanation:
+The derivative of a complex function involves considering both real and imaginary parts simultaneously. Options A, B, and D are incorrect because: A uses 'h' in the denominator, which leads to a real derivative; B does not account for the complex nature of the problem; and D adds the function values instead of subtracting them.
+
+Common mistake note:
+Common mistakes include choosing A or B, which apply to real derivatives rather than complex ones. Choosing D, which uses addition instead of subtraction in the numerator.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+What is the derivative of f(z) = z² at z₀ = 2?
+A) 4i
+B) 8
+C) 4
+D) 2i
+Correct Answer: B
+
+Solution:
+The derivative of f(z) = z² is f'(z) = 2z. At z₀ = 2, the derivative becomes f'(2) = 2 * 2 = 4.
+
+Explanation:
+To find the derivative of a complex function, apply differentiation rules as for real functions. In this case, we use the power rule: f'(z) = 2z, and substitute z₀ = 2.
+
+Common mistake note:
+Common mistakes include applying the imaginary unit 'i' directly to the result (e.g., choosing A or D), which is not correct for complex derivatives. Not applying derivative rules correctly.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+Find the derivative of f(z) = e^(iz) at z₀ = π/2.
+A) -i
+B) 1
+C) i
+D) 0
+Correct Answer: A
+
+Solution:
+The derivative of f(z) = e^(iz) is f'(z) = i * e^(iz). At z₀ = π/2, the derivative becomes f'(π/2) = i * e^(iπ/2) = -i.
+
+Explanation:
+For exponential functions with a complex base, differentiate using the chain rule: f'(z) = i * e^(iz). Substituting z₀ = π/2 gives f'(π/2) = -i, as e^(iπ/2) = i.
+
+Common mistake note:
+Common mistakes include forgetting to multiply by 'i' in the derivative (e.g., choosing B or D), which is essential for complex derivatives. Not simplifying the result correctly.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+What is the derivative of f(z) = sin(z) at z₀ = 3?
+A) cos(3)
+B) cos(3i)
+C) icos(3)
+D) sin(3)
+Correct Answer: A
+
+Solution:
+The derivative of f(z) = sin(z) is f'(z) = cos(z). At z₀ = 3, the derivative becomes f'(3) = cos(3).
+
+Explanation:
+For trigonometric functions with a complex argument, differentiate as for real functions. In this case, we use the chain rule: f'(z) = cos(z), and substitute z₀ = 3.
+
+Common mistake note:
+Common mistakes include applying the imaginary unit 'i' directly to the result (e.g., choosing C or D), which is not correct for complex derivatives. Not applying derivative rules correctly.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Find the derivative of f(z) = ln(1+2z) at z₀ = 1+i.
+A) (1-i)/(2(1+i))
+B) 1/(1+2i)
+C) 1/(1+i)
+D) 1
+Correct Answer: A
+
+Solution:
+The derivative of f(z) = ln(1+2z) is f'(z) = 2 / (1+2z). At z₀ = 1+i, the derivative becomes f'(1+i) = 2 / (1+2(1+i)). To rationalize the denominator, multiply by the complex conjugate: (1-i)/(2(1+i)).
+
+Explanation:
+The derivative of ln(1+2z) is 2 / (1+2z). When evaluating at a complex point like z₀ = 1+i, we need to simplify the result by multiplying by the complex conjugate to eliminate the imaginary part from the denominator.
+
+Common mistake note:
+Common mistakes include not rationalizing the denominator (e.g., choosing B or C), which is necessary for simplifying complex derivatives. Applying incorrect algebraic manipulation.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+What is the derivative of f(z) = z³ - 2z² + 3z - 4 at z₀ = 1?
+A) 6i
+B) 6
+C) 8
+D) 4
+Correct Answer: B
+
+Solution:
+The derivative of f(z) = z³ - 2z² + 3z - 4 is f'(z) = 3z² - 4z + 3. At z₀ = 1, the derivative becomes f'(1) = 3(1)² - 4(1) + 3 = 6.
+
+Explanation:
+To find the derivative of a polynomial function with complex coefficients, apply power and sum/difference rules as for real polynomials. In this case, we get f'(z) = 3z² - 4z + 3, and then substitute z₀ = 1.
+
+Common mistake note:
+Common mistakes include applying imaginary units to the coefficients (e.g., choosing A), which is not correct for complex derivatives. Not applying derivative rules correctly.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Find the derivative of f(z) = z / (z - i) at z₀ = 2+i.
+A) (3-2i)/(5-2i)
+B) (1-i)/(4+2i)
+C) (1+i)/(4+2i)
+D) (1-i)/(5-2i)
+Correct Answer: B
+
+Solution:
+The derivative of f(z) = z / (z - i) can be found using the quotient rule: f'(z) = [(z - i) * 1 - z * 1] / (z - i)². At z₀ = 2+i, the derivative becomes f'(2+i) = [(2+i - i) * 1 - (2+i) * 1] / ((2+i) - i)² = (1-i)/(4+2i).
+
+Explanation:
+To differentiate a complex function in quotient form, use the quotient rule. After simplifying, substitute z₀ = 2+i to find the derivative at that point.
+
+Common mistake note:
+Common mistakes include not applying the quotient rule correctly (e.g., choosing A or C). Not simplifying the result after substitution (e.g., choosing D).
+------------------------------------------------------------------------------

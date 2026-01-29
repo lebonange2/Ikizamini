@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.12.1",
+  "objective_text": "Define graphs (vertices and edges)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFgHjK",
+      "stem": "What is the definition of a vertex in graph theory?",
+      "choices": {
+        "A": "An edge connecting two nodes",
+        "B": "A point representing an item or concept",
+        "C": "The weight or cost associated with an edge",
+        "D": "A cycle formed by a series of connected edges"
+      },
+      "correct_choice": "B",
+      "solution": "In graph theory, a vertex (also known as a node) is a fundamental unit that represents an item or concept. Vertices serve as the building blocks for connecting different elements within a graph.",
+      "explanation": "Vertices are the basic units in a graph and denote entities or ideas connected by edges.",
+      "common_mistake_notes": "Common mistake: Choosing A, which describes an edge rather than a vertex."
+    },
+    {
+      "id": "XyzPqRsT",
+      "stem": "What is the term for the lines connecting vertices in a graph?",
+      "choices": {
+        "A": "Vertices",
+        "B": "Edges",
+        "C": "Nodes",
+        "D": "Weights"
+      },
+      "correct_choice": "B",
+      "solution": "In graph theory, edges are the connections that link vertices together within a graph.",
+      "explanation": "Edges define the relationships between vertices and enable traversal or flow within the graph structure.",
+      "common_mistake_notes": "Common mistake: Choosing A, which refers to the points rather than the connections."
+    },
+    {
+      "id": "BvnMjHgF",
+      "stem": "What characterizes a directed graph?",
+      "choices": {
+        "A": "Vertices are connected by undirected edges",
+        "B": "Edges have no direction and can be traversed in either direction",
+        "C": "Edges have a fixed starting and ending vertex",
+        "D": "Vertices cannot repeat within an edge"
+      },
+      "correct_choice": "C",
+      "solution": "A directed graph is a type of graph where edges possess a specific direction, indicating a one-way relationship between vertices.",
+      "explanation": "In directed graphs, edges have an arrow-like orientation, allowing traversal or flow from the starting vertex to the ending vertex only.",
+      "common_mistake_notes": "Common mistake: Choosing A, which describes an undirected graph."
+    },
+    {
+      "id": "HijKlmNo",
+      "stem": "What property differentiates an undirected graph from a directed graph?",
+      "choices": {
+        "A": "Vertices are connected by undirected edges",
+        "B": "Edges have no direction and can be traversed in either direction",
+        "C": "Edges have a fixed starting and ending vertex",
+        "D": "Vertices cannot repeat within an edge"
+      },
+      "correct_choice": "B",
+      "solution": "An undirected graph has edges that connect vertices symmetrically, allowing traversal or flow in both directions, unlike directed graphs.",
+      "explanation": "In contrast to directed graphs, undirected graphs do not have a fixed starting and ending vertex; their edges connect nodes equally in either direction.",
+      "common_mistake_notes": "Common mistake: Choosing C, which describes a directed graph."
+    },
+    {
+      "id": "ZxcVbnMm",
+      "stem": "What is the term for an edge that connects a vertex to itself?",
+      "choices": {
+        "A": "Simple edge",
+        "B": "Loop",
+        "C": "Multiple edge",
+        "D": "Weighted edge"
+      },
+      "correct_choice": "B",
+      "solution": "In graph theory, a loop is an edge that connects a vertex to itself, forming a cycle within the vertex.",
+      "explanation": "Loops are self-referential connections and can be found in both directed and undirected graphs.",
+      "common_mistake_notes": "Common mistake: Choosing A, which refers to a basic connection between two different vertices."
+    },
+    {
+      "id": "GhiJklOp",
+      "stem": "What value is typically assigned to edges in an unweighted graph?",
+      "choices": {
+        "A": "Infinity",
+        "B": "Zero",
+        "C": "One",
+        "D": "Negative one"
+      },
+      "correct_choice": "C",
+      "solution": "An unweighted graph assigns a value of one (or no explicit value) to its edges, indicating equal cost or distance between connected vertices.",
+      "explanation": "Unweighted graphs emphasize connectivity rather than numerical relationships between vertices; the assigned edge value is often symbolic.",
+      "common_mistake_notes": "Common mistake: Choosing A, which may be used in certain contexts but is not standard for unweighted graphs."
+    },
+    {
+      "id": "BnmLkjIh",
+      "stem": "What is a tree in graph theory?",
+      "choices": {
+        "A": "A cycle-free graph with the minimum number of edges",
+        "B": "A connected graph with no cycles and an equal number of vertices and edges",
+        "C": "A complete graph where every vertex is connected to every other vertex",
+        "D": "A disconnected graph with a single path between any two vertices"
+      },
+      "correct_choice": "B",
+      "solution": "In graph theory, a tree is a connected graph that contains no cycles and has exactly one path between any two vertices.",
+      "explanation": "Trees are acyclic graphs characterized by their unique route between any pair of nodes.",
+      "common_mistake_notes": "Common mistake: Choosing A, which describes a forest rather than a tree."
+    }
+  ]
+}

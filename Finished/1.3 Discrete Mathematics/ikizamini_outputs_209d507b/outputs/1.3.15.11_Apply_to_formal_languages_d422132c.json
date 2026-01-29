@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.15.11",
+  "objective_text": "Apply to formal languages",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which regular expression represents a language containing strings of 0s and 1s with an equal number of 0s and 1s?",
+      "choices": {
+        "A": "(0+1)*",
+        "B": "(0+1)^*(01|10)*(0+1)^*",
+        "C": "0^*1^*",
+        "D": "0(0+1)^*1(0+1)^*"
+      },
+      "correct_choice": "D",
+      "solution": "The correct regular expression is D, which represents strings starting with a 0, followed by any number of 0s or 1s, then a 1, and finally any number of 0s or 1s. This ensures an equal number of 0s and 1s in the string.",
+      "explanation": "Regular expressions describe languages containing strings that meet specific criteria.",
+      "common_mistake_notes": "Choice A represents any combination of 0s and 1s, not necessarily with an equal number.\nChoice B requires at least one pair of alternating 0s and 1s, which isn't necessary for equality."
+    },
+    {
+      "id": ":2",
+      "stem": "Which formal language notation describes a set of strings where each string has an even number of 'a's followed by an odd number of 'b's?",
+      "choices": {
+        "A": "Context-free grammar (CFG)",
+        "B": "Regular expression (regex)",
+        "C": "Deterministic finite automaton (DFA)",
+        "D": "Pushdown automaton (PDA)"
+      },
+      "correct_choice": "A",
+      "solution": "The language described requires a context-sensitive rule, best represented by a Context-free grammar (CFG). Regular expressions and DFAs can't handle the specific ordering requirement.",
+      "explanation": "Context-free grammars are used for languages with more complex structure than regular expressions or DFAs.",
+      "common_mistake_notes": "Choice B (regex) cannot enforce the exact order of 'a's and 'b's.\nChoice C (DFA) is limited to finite state transitions, unable to handle the ordering."
+    },
+    {
+      "id": ":3",
+      "stem": "Which formal language model recognizes the language containing all strings ending with the substring 'ab'?",
+      "choices": {
+        "A": "Regular expression (regex)",
+        "B": "Deterministic finite automaton (DFA)",
+        "C": "Non-deterministic finite automaton (NFA)",
+        "D": "Pushdown automaton (PDA)"
+      },
+      "correct_choice": "A",
+      "solution": "The language described can be recognized by a regular expression, designed to match specific patterns in strings. DFAs and NFAs can also recognize this language.",
+      "explanation": "Regular expressions are used for pattern-matching tasks in strings.",
+      "common_mistake_notes": "Choice D (PDA) is unnecessary for this simple pattern matching task."
+    },
+    {
+      "id": ":4",
+      "stem": "Which formal language model describes the set of all palindromic strings over the alphabet {a, b}?",
+      "choices": {
+        "A": "Regular expression (regex)",
+        "B": "Deterministic finite automaton (DFA)",
+        "C": "Non-deterministic finite automaton (NFA)",
+        "D": "Context-free grammar (CFG)"
+      },
+      "correct_choice": "C",
+      "solution": "Palindromic strings can be recognized by a non-deterministic finite automaton (NFA), which allows for multiple paths through the machine. DFAs and regular expressions cannot handle reading the string in both directions.",
+      "explanation": "NFAs are used when there's a need for non-linear or parallel processing.",
+      "common_mistake_notes": "Choice A (regex) and B (DFA) are limited to linear progression through the string."
+    },
+    {
+      "id": ":5",
+      "stem": "Which formal language model best describes the set of all strings containing an equal number of 'a' and 'b', where 'a' appears before 'b'?",
+      "choices": {
+        "A": "Regular expression (regex)",
+        "B": "Deterministic finite automaton (DFA)",
+        "C": "Non-deterministic finite automaton (NFA)",
+        "D": "Context-sensitive grammar (CSG)"
+      },
+      "correct_choice": "D",
+      "solution": "The language described requires context-sensitivity, as it involves the order of 'a' and 'b'. Regular expressions, DFAs, and NFAs are not context- sensitive.",
+      "explanation": "Context-sensitive grammars handle languages with complex ordering requirements.",
+      "common_mistake_notes": "Choice A (regex) and B (DFA) are limited to pattern matching and finite state transitions, respectively.\nChoice C (NFA) is also limited to finite state transitions."
+    },
+    {
+      "id": ":6",
+      "stem": "Which formal language model recognizes the set of all strings that contain at least one 'a' followed by an equal number of 'b's?",
+      "choices": {
+        "A": "Regular expression (regex)",
+        "B": "Deterministic finite automaton (DFA)",
+        "C": "Non-deterministic finite automaton (NFA)",
+        "D": "Pushdown automaton (PDA)"
+      },
+      "correct_choice": "C",
+      "solution": "The language described can be recognized by a non-deterministic finite automaton (NFA), which allows for multiple paths through the machine. DFAs and regular expressions cannot handle reading the string in both directions.",
+      "explanation": "NFAs are used when there's a need for non-linear or parallel processing.",
+      "common_mistake_notes": "Choice A (regex) is limited to pattern matching without counting.\nChoice B (DFA) doesn't allow for counting."
+    },
+    {
+      "id": ":7",
+      "stem": "Which formal language model describes the set of all strings that start with 'a', end with 'b', and have an equal number of 'a' and 'b' between?",
+      "choices": {
+        "A": "Regular expression (regex)",
+        "B": "Deterministic finite automaton (DFA)",
+        "C": "Non-deterministic finite automaton (NFA)",
+        "D": "Context-free grammar (CFG)"
+      },
+      "correct_choice": "D",
+      "solution": "The language described requires context-sensitivity, as it involves the order and count of 'a' and 'b'. Regular expressions, DFAs, and NFAs are not context-sensitive.",
+      "explanation": "Context-free grammars handle languages with complex ordering requirements.",
+      "common_mistake_notes": "Choice A (regex) is limited to pattern matching without counting.\nChoice B (DFA) and C (NFA) are limited to finite state transitions."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.2.9",
+  "objective_text": "Differentiate exponential functions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Find the derivative of f(x) = 3^x using logarithmic differentiation.",
+      "choices": {
+        "A": "ln(3) * 3^(x-1)",
+        "B": "ln(3) * 3^x",
+        "C": "3^(x) * ln(x)",
+        "D": "3^(x) * ln(3)"
+      },
+      "correct_choice": "B",
+      "solution": "Using logarithmic differentiation, take the natural logarithm of both sides: ln(f(x)) = ln(3^x). Then differentiate both sides with respect to x: \frac{1}{f(x)} f'(x) = 3^x * ln(3). Multiply both sides by f(x) to get f'(x): f'(x) = 3^x * ln(3).",
+      "explanation": "Logarithmic differentiation simplifies the differentiation process for exponential functions.",
+      "common_mistake_notes": "A common mistake is differentiating 3^x directly without using logarithms, leading to an incorrect result."
+    },
+    {
+      "id": "Two",
+      "stem": "Find the derivative of g(x) = e^(2x + 1).",
+      "choices": {
+        "A": "e^(2x)",
+        "B": "2 * e^(2x)",
+        "C": "e^(2x + 1)",
+        "D": "2 * e^(2x + 1)"
+      },
+      "correct_choice": "D",
+      "solution": "Using the chain rule, we differentiate e^(2x + 1) with respect to (2x + 1), then multiply by the derivative of (2x + 1): g'(x) = e^(2x + 1) * 2. So, g'(x) = 2 * e^(2x + 1).",
+      "explanation": "The chain rule differentiates an exponential function with a composite function inside.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by the derivative of the inner function (2x + 1), resulting in g'(x) = e^(2x)."
+    },
+    {
+      "id": "Three",
+      "stem": "Find the derivative of h(x) = 5 * 4^x.",
+      "choices": {
+        "A": "5 * ln(4) * 4^(x-1)",
+        "B": "20 * 4^(x-1)",
+        "C": "5 * ln(4) * 4^x",
+        "D": "20 * 4^x"
+      },
+      "correct_choice": "C",
+      "solution": "The derivative of h(x) = 5 * 4^x is found by multiplying the constant 5 with the derivative of 4^x: h'(x) = 5 * ln(4) * 4^x.",
+      "explanation": "When differentiating a product, we apply the constant multiple rule and differentiate only the variable part.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by the constant 5, resulting in h'(x) = ln(4) * 4^x."
+    },
+    {
+      "id": "Four",
+      "stem": "Find the derivative of j(x) = (2^x - 1)^3.",
+      "choices": {
+        "A": "3 * (2^x - 1)^2 * ln(2)",
+        "B": "3 * (2^x - 1)^2 * (ln(2))^2",
+        "C": "6 * (2^x - 1)^2 * ln(2)",
+        "D": "6 * (2^x - 1) * ln(2)"
+      },
+      "correct_choice": "C",
+      "solution": "Using the chain rule twice, we differentiate j(x): j'(x) = 3 * (2^x - 1)^2 * d/dx(2^x - 1). Now differentiate 2^x - 1: 3 * (2^x - 1)^2 * ln(2) * d/dx(2^x). Finally, differentiate 2^x: j'(x) = 3 * (2^x - 1)^2 * ln(2) * 2^x. Simplify to get j'(x) = 6 * (2^x - 1)^2 * ln(2).",
+      "explanation": "The chain rule is applied twice, first for the exponent and then for the base.",
+      "common_mistake_notes": "A common mistake is applying the chain rule only once, resulting in j'(x) = 3 * (2^x - 1)^2 * ln(2)."
+    },
+    {
+      "id": "Five",
+      "stem": "Find the derivative of k(x) = x^2 * e^(3x).",
+      "choices": {
+        "A": "2xe^(3x) + 3x^2e^(3x)",
+        "B": "2xe^(3x) + 9x^2e^(3x)",
+        "C": "2xe^(3x) + 3xe^(3x)",
+        "D": "2xe^(3x) - 3xe^(3x)"
+      },
+      "correct_choice": "C",
+      "solution": "Using the product rule, we differentiate k(x): k'(x) = x^2 * d/dx(e^(3x)) + e^(3x) * d/dx(x^2). The derivative of e^(3x) is 3e^(3x), and the derivative of x^2 is 2x. So, k'(x) = 2xe^(3x) + 3x^2e^(3x).",
+      "explanation": "The product rule differentiates a product of two functions.",
+      "common_mistake_notes": "A common mistake is forgetting the constant multiple in the second term, resulting in k'(x) = 2xe^(3x) + 9x^2e^(3x)."
+    },
+    {
+      "id": "Six",
+      "stem": "Find the derivative of m(x) = e^(sin(x)).",
+      "choices": {
+        "A": "cos(x)e^(sin(x))",
+        "B": "sin(x)e^(sin(x))",
+        "C": "e^(sin(x)) * cos^2(x)",
+        "D": "e^(sin(x)) * (1 - sin^2(x))"
+      },
+      "correct_choice": "C",
+      "solution": "Using the chain rule, we differentiate m(x): m'(x) = e^(sin(x)) * d/dx(sin(x)). The derivative of sin(x) is cos(x), so m'(x) = e^(sin(x)) * cos(x). To simplify, apply the Pythagorean identity: m'(x) = e^(sin(x)) * cos^2(x).",
+      "explanation": "The chain rule differentiates an exponential function with a trigonometric function inside.",
+      "common_mistake_notes": "A common mistake is forgetting to square the cosine term, resulting in m'(x) = e^(sin(x)) * cos(x)."
+    },
+    {
+      "id": "Seven",
+      "stem": "Find the derivative of n(x) = (3^x + 5)^4.",
+      "choices": {
+        "A": "4 * (3^x + 5)^3 * ln(3)",
+        "B": "4 * (3^x + 5)^3 * ln(3) * 3^x",
+        "C": "12 * (3^x + 5)^3 * ln(3)",
+        "D": "12 * (3^x + 5)^3 * ln(3) * 3^x"
+      },
+      "correct_choice": "C",
+      "solution": "Using the chain rule twice, we differentiate n(x): n'(x) = 4 * (3^x + 5)^3 * d/dx(3^x + 5). Now differentiate 3^x + 5: 4 * (3^x + 5)^3 * ln(3) * d/dx(3^x). Finally, differentiate 3^x: n'(x) = 4 * (3^x + 5)^3 * ln(3) * 3^x. Multiply by the constant multiple to get n'(x) = 12 * (3^x + 5)^3 * ln(3).",
+      "explanation": "The chain rule is applied twice, first for the exponent and then for the base.",
+      "common_mistake_notes": "A common mistake is applying the chain rule only once, resulting in n'(x) = 4 * (3^x + 5)^3 * ln(3)."
+    }
+  ]
+}

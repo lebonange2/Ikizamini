@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.1",
+  "objective_text": "Set up optimization problems",
+  "difficulty_profile": "mixed",
+  "questions": [
+    {
+      "id": "Justification of Objective Function",
+      "stem": "A company produces two products, A and B. The profit per unit for product A is $5 and for product B is $7. Each unit of product A requires 2 hours of labor and 1 hour of machine time, while each unit of product B requires 1 hour of labor and 3 hours of machine time. The company has 100 hours of labor and 120 hours of machine time available per day. How would you set up the objective function for maximizing profit?",
+      "choices": {
+        "A": "$5A + $7B",
+        "B": "$5 \times 2A + $7 \times 3B",
+        "C": "$5 \times 100A + $7 \times 120B",
+        "D": "2A + 3B"
+      },
+      "correct_choice": "A",
+      "solution": "The objective function should represent the total profit, which is the sum of profits from both products A and B. The profit per unit for product A is $5 and for product B is $7, so we multiply the number of units produced by their respective profit per unit. There are no constraints on the number of units produced in this problem, so we don't need to include any terms related to labor or machine hours.",
+      "explanation": "The correct objective function is simply the sum of profits from both products A and B, which is represented as $5A + $7B. The other choices either multiply by the wrong factors (labor or machine time) or use incorrect units for profit.",
+      "common_mistake_notes": "Common mistake: Using labor or machine hours in the objective function instead of profit per unit."
+    },
+    {
+      "id": "Constraint Formulation",
+      "stem": "A farmer has 100 acres to plant corn and wheat. Corn requires 2 bushels of seed per acre, while wheat requires 3 bushels of seed per acre. The farmer has a total of 450 bushels of seed available. How would you set up the constraint for the amount of seed used?",
+      "choices": {
+        "A": "2C + 3W ≤ 100",
+        "B": "2C + 3W ≤ 450",
+        "C": "C + W ≤ 225",
+        "D": "C + W ≤ 100"
+      },
+      "correct_choice": "B",
+      "solution": "The constraint should represent the total amount of seed used, which is the sum of the seed used for corn (2 bushels per acre) and wheat (3 bushels per acre), multiplied by the number of acres planted. The total seed available is 450 bushels.",
+      "explanation": "The correct constraint is 2C + 3W ≤ 450, where C represents the number of acres of corn and W represents the number of acres of wheat. Choices A and D use the wrong constraints (acres instead of seed), while choice C uses an incorrect conversion factor.",
+      "common_mistake_notes": "Common mistake: Using acres instead of bushels in the constraint."
+    },
+    {
+      "id": "Variable Definition",
+      "stem": "A company wants to minimize the cost of producing a product using two raw materials, X and Y. Material X costs $2 per unit and material Y costs $3 per unit. The production process requires at least 10 units of X and 5 units of Y. How would you define the variables for this problem?",
+      "choices": {
+        "A": "X: number of units of material X, Y: number of units of material Y",
+        "B": "C: total cost, X: number of units of material X",
+        "C": "M: minimum required units, X: difference from minimum X",
+        "D": "T: total raw materials used, Y: difference from minimum Y"
+      },
+      "correct_choice": "A",
+      "solution": "The variables should represent the quantities of the two raw materials, X and Y, since we are minimizing the cost based on these inputs.",
+      "explanation": "The correct variable definition is X: number of units of material X, Y: number of units of material Y. Choices B, C, and D use incorrect or unrelated variables for the problem.",
+      "common_mistake_notes": "Common mistake: Using cost or differences from minimum requirements as variables instead of raw material quantities."
+    },
+    {
+      "id": "Linear Inequality Constraint",
+      "stem": "A store needs to order at least 50 units of product A and at most 100 units of product B. Each unit of product A costs $10, and each unit of product B costs $20. The store has a budget of $1800 for these products. How would you set up the constraint for the number of units of product B?",
+      "choices": {
+        "A": "B ≤ 100",
+        "B": "B ≥ 50",
+        "C": "20B ≤ 1800 - 10(50)",
+        "D": "20B ≤ 1800"
+      },
+      "correct_choice": "C",
+      "solution": "The constraint for product B should be based on the budget and the cost of product A. Since product A has a lower cost, we need to subtract its total cost from the budget before setting the upper limit for product B.",
+      "explanation": "The correct constraint is 20B ≤ 1800 - 10(50), which ensures that the total cost does not exceed the budget. Choices A and B only set bounds on the number of units, while choice D does not account for the cost of product A.",
+      "common_mistake_notes": "Common mistake: Not accounting for the cost of other products in the budget constraint."
+    },
+    {
+      "id": "Objective Function with Constraints",
+      "stem": "A factory produces two types of widgets, X and Y. The profit per unit for widget X is $15 and for widget Y is $20. Each widget X requires 3 hours of labor and 2 hours of machine time, while each widget Y requires 4 hours of labor and 1 hour of machine time. The factory has 60 hours of labor and 80 hours of machine time available per day. How would you set up the optimization problem to maximize profit?",
+      "choices": {
+        "A": "Maximize: $15X + $20Y subject to: 3X + 4Y ≤ 60, 2X + Y ≤ 80",
+        "B": "Minimize: 15X + 20Y subject to: X + Y ≤ 60, X + Y ≤ 80",
+        "C": "Maximize: $15X + $20Y subject to: 3X + 4Y ≤ 80, 2X + Y ≤ 60",
+        "D": "Minimize: 15X + 20Y subject to: X + Y ≤ 60, 3X + 4Y ≤ 80"
+      },
+      "correct_choice": "A",
+      "solution": "The objective is to maximize profit, which is represented by the sum of profits from widgets X and Y. The constraints are based on labor and machine hours available.",
+      "explanation": "The correct optimization problem is Maximize: $15X + $20Y subject to: 3X + 4Y ≤ 60, 2X + Y ≤ 80. Choices B, C, and D either have the wrong objective (minimization) or incorrect constraints.",
+      "common_mistake_notes": "Common mistake: Misinterpreting the objective as minimization instead of maximization."
+    },
+    {
+      "id": "Alternative Objective Function",
+      "stem": "A shipping company wants to minimize the total distance traveled by its delivery trucks. Each truck has a capacity of 10,000 pounds and must visit three locations: A (2500 miles away with 6000 pounds), B (3000 miles away with 4000 pounds), and C (2800 miles away with 5000 pounds). How would you set up the objective function for minimizing distance traveled?",
+      "choices": {
+        "A": "Minimize: 2500A + 3000B + 2800C",
+        "B": "Minimize: A + B + C",
+        "C": "Minimize: (2500 \times 6000)A + (3000 \times 4000)B + (2800 \times 5000)C",
+        "D": "Minimize: 2500(6000A + 4000B + 5000C)"
+      },
+      "correct_choice": "A",
+      "solution": "The objective function should represent the total distance traveled, which is the sum of the distances to each location. The weight at each location does not affect the distance.",
+      "explanation": "The correct objective function is Minimize: 2500A + 3000B + 2800C, where A, B, and C represent the number of trucks sent to locations A, B, and C, respectively. Choices B, C, and D either use incorrect units or include unnecessary factors related to weight.",
+      "common_mistake_notes": "Common mistake: Including weight in the objective function instead of distance."
+    },
+    {
+      "id": "Multiple Constraints",
+      "stem": "A farmer has 120 acres to plant corn, wheat, and soybeans. Corn requires 2 bushels of seed per acre, wheat requires 3 bushels of seed per acre, and soybeans require 4 bushels of seed per acre. The farmer has a total of 720 bushels of seed available. Additionally, the farmer must plant at least 15 acres of corn and at most 60 acres of wheat. How would you set up the constraints for this problem?",
+      "choices": {
+        "A": "C + W + S ≤ 120, 2C + 3W + 4S ≤ 720, C ≥ 15, W ≤ 60",
+        "B": "C + W + S ≤ 120, 2C + 3W + 4S ≤ 720, C ≤ 15, W ≥ 60",
+        "C": "C + W + S ≥ 120, 2C + 3W + 4S ≤ 720, C ≥ 15, W ≤ 60",
+        "D": "C + W + S ≤ 120, 2C + 3W + 4S ≥ 720, C ≤ 15, W ≥ 60"
+      },
+      "correct_choice": "A",
+      "solution": "The constraints should represent the total acres planted and the total seed used, as well as the minimum and maximum acreage for corn and wheat.",
+      "explanation": "The correct constraints are C + W + S ≤ 120 (total acres), 2C + 3W + 4S ≤ 720 (total seed), C ≥ 15 (minimum corn), and W ≤ 60 (maximum wheat). Choice B has the wrong direction for the minimum corn constraint, choice C has the wrong direction for total acres and total seed constraints, and choice D has the wrong directions for both minimum corn and maximum wheat constraints.",
+      "common_mistake_notes": "Common mistake: Using incorrect inequality signs for constraints."
+    }
+  ]
+}

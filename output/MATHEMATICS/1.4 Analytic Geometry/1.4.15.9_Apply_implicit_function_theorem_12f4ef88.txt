@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.15.9 Apply implicit function theorem
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.15 Advanced Analytic Geometry
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the partial derivative of z with respect to x for the equation x^2 + y^2 + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (1, 1).
+A) 0
+B) 1/3
+C) -1/3
+D) 1
+Correct Answer: C
+
+Solution:
+Using the implicit function theorem, we can find rac{	ext{∂}z}{	ext{∂}x} by taking the partial derivative of both sides of the equation with respect to x and then solving for rac{	ext{∂}z}{	ext{∂}x}. The left side becomes 2x + 2yzrac{	ext{∂}z}{	ext{∂}x}, and since we assume (x, y) = (1, 1), the equation becomes: 2(1) + 2(1)zrac{	ext{∂}z}{	ext{∂}x} = 0. Solving for rac{	ext{∂}z}{	ext{∂}x}, we get -1/3.
+
+Explanation:
+The implicit function theorem helps to find partial derivatives when the function is defined implicitly.
+
+Common mistake note:
+A common mistake would be to forget to apply the chain rule for z, resulting in an incorrect derivative.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find dz/dx for the equation x^3 + y^3 = 6xyz, where z is a function of x and y. Assume that (x, y) = (1, 1).
+A) 1/2
+B) 1/4
+C) 1/6
+D) 1
+Correct Answer: C
+
+Solution:
+Using the implicit function theorem, we differentiate both sides with respect to x: 3x^2 + 3y^2rac{	ext{∂}y}{	ext{∂}x} = 6yz + 6xyrac{	ext{∂}z}{	ext{∂}x}. Since (x, y) = (1, 1), the equation simplifies to: 3 + 3rac{	ext{∂}y}{	ext{∂}x} = 6rac{	ext{∂}z}{	ext{∂}x}. Solving for rac{	ext{∂}z}{	ext{∂}x}, we get rac{	ext{∂}z}{	ext{∂}x} = 1/6.
+
+Explanation:
+The implicit function theorem helps to find partial derivatives when the function is defined implicitly.
+
+Common mistake note:
+A common mistake would be to assume that y and z are independent variables, leading to an incorrect derivative.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find dz/dy for the equation x^2 + y^2 + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (1, 1).
+A) 0
+B) 1/3
+C) -1/3
+D) 1
+Correct Answer: B
+
+Solution:
+Using the implicit function theorem, we differentiate both sides with respect to y: 2xrac{	ext{∂}x}{	ext{∂}y} + 2y + 2zrac{	ext{∂}z}{	ext{∂}y} = 0. Since (x, y) = (1, 1), the equation simplifies to: 2rac{	ext{∂}x}{	ext{∂}y} + 2 + 2rac{	ext{∂}z}{	ext{∂}y} = 0. Solving for rac{	ext{∂}z}{	ext{∂}y}, we get rac{	ext{∂}z}{	ext{∂}y} = -1/3.
+
+Explanation:
+The implicit function theorem helps to find partial derivatives when the function is defined implicitly.
+
+Common mistake note:
+A common mistake would be to forget to apply the chain rule for z, resulting in an incorrect derivative.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find dz/dx for the equation xy + yz + xz = 1, where z is a function of x and y. Assume that (x, y) = (1, 1).
+A) 0
+B) 1/2
+C) -1/2
+D) 1
+Correct Answer: A
+
+Solution:
+Using the implicit function theorem, we differentiate both sides with respect to x: y + zrac{	ext{∂}z}{	ext{∂}x} + z = 0. Since (x, y) = (1, 1), the equation simplifies to: 1 + rac{	ext{∂}z}{	ext{∂}x} + 1 = 0. Solving for rac{	ext{∂}z}{	ext{∂}x}, we get rac{	ext{∂}z}{	ext{∂}x} = 0.
+
+Explanation:
+The implicit function theorem helps to find partial derivatives when the function is defined implicitly.
+
+Common mistake note:
+A common mistake would be to assume that z is independent of x, leading to an incorrect derivative.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find dz/dx for the equation e^(xy) + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (0, 0).
+A) 1
+B) e^0
+C) 0
+D) undefined
+Correct Answer: C
+
+Solution:
+Using the implicit function theorem, we differentiate both sides with respect to x: y e^(xy) + 2zrac{	ext{∂}z}{	ext{∂}x} = 0. Since (x, y) = (0, 0), the equation simplifies to: 0 + 2zrac{	ext{∂}z}{	ext{∂}x} = 0. Solving for rac{	ext{∂}z}{	ext{∂}x}, we get rac{	ext{∂}z}{	ext{∂}x} = 0.
+
+Explanation:
+The implicit function theorem helps to find partial derivatives when the function is defined implicitly.
+
+Common mistake note:
+A common mistake would be to forget to apply the chain rule for z, resulting in an incorrect derivative.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find dz/dy for the equation sin(xy) + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (π/2, π/2).
+A) cos(π^2)
+B) 0
+C) undefined
+D) sin(π^2)
+Correct Answer: A
+
+Solution:
+Using the implicit function theorem, we differentiate both sides with respect to y: x cos(xy) + 2zrac{	ext{∂}z}{	ext{∂}y} = 0. Since (x, y) = (π/2, π/2), the equation simplifies to: π/2 cos(π^2) + 2zrac{	ext{∂}z}{	ext{∂}y} = 0. Solving for rac{	ext{∂}z}{	ext{∂}y}, we get rac{	ext{∂}z}{	ext{∂}y} = -π/4 cos(π^2).
+
+Explanation:
+The implicit function theorem helps to find partial derivatives when the function is defined implicitly.
+
+Common mistake note:
+A common mistake would be to forget to apply the chain rule for z, resulting in an incorrect derivative.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find dz/dx for the equation ln(xy) + z^2 = 1, where z is a function of x and y. Assume that (x, y) = (e, e).
+A) 1/e
+B) 0
+C) undefined
+D) e
+Correct Answer: A
+
+Solution:
+Using the implicit function theorem, we differentiate both sides with respect to x: 1/x + yrac{	ext{∂}y}{	ext{∂}x} + 2zrac{	ext{∂}z}{	ext{∂}x} = 0. Since (x, y) = (e, e), the equation simplifies to: 1/e + erac{	ext{∂}y}{	ext{∂}x} + 2zrac{	ext{∂}z}{	ext{∂}x} = 0. Solving for rac{	ext{∂}z}{	ext{∂}x}, we get rac{	ext{∂}z}{	ext{∂}x} = -1/(2e).
+
+Explanation:
+The implicit function theorem helps to find partial derivatives when the function is defined implicitly.
+
+Common mistake note:
+A common mistake would be to assume that y and z are independent variables, leading to an incorrect derivative.
+------------------------------------------------------------------------------

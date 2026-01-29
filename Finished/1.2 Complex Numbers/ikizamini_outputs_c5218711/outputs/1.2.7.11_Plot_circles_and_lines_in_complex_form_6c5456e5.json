@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.7.11",
+  "objective_text": "Plot circles and lines in complex form",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Given the equation of a circle in complex form: |z - 3 + 4i| = 5, what is the center of the circle?",
+      "choices": {
+        "A": "(8, -1)",
+        "B": "(3, 4)",
+        "C": "(-3, -4)",
+        "D": "(-8, 1)"
+      },
+      "correct_choice": "B",
+      "solution": "The equation |z - 3 + 4i| = 5 represents a circle with the center at (3, 4) and radius 5. The standard form of the equation of a circle is |z - h| = r, where (h, k) is the center and r is the radius.",
+      "explanation": "The center of the circle is given by the point (h, k), which in this case is (3, 4).",
+      "common_mistake_notes": "A common mistake would be to misinterpret the equation or forget that the center is represented by the values inside the absolute value and not the radius."
+    },
+    {
+      "id": ":2",
+      "stem": "What is the equation of a line passing through the points z1 = 2 + 3i and z2 = -1 - 4i in complex form?",
+      "choices": {
+        "A": "(z - 2) / (z + 1) = (3i - 4i) / (-3 - 4)",
+        "B": "z - 2 = 5(z + 1)",
+        "C": "z - (-1) = (3i + 4i)/(2 + 3)",
+        "D": "z - 2 = 5(z - (-1))"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a line in complex form passing through two points z1 and z2 is given by \frac{z - z1}{z2 - z1} = \frac{z_2 - z1}{z2 - z1}. Plugging in the values, we get: \frac{z - (2 + 3i)}{(-1 - 4i) - (2 + 3i)} = \frac{-1 - 4i - 2 - 3i}{-1 - 4i - 2 - 3i}. Simplifying, we get: z - 2 = 5(z + 1).",
+      "explanation": "The formula for the equation of a line in complex form involves dividing the differences of the points.",
+      "common_mistake_notes": "A common mistake would be to mix up the order of the points or forget to subtract the corresponding parts when finding the slope."
+    },
+    {
+      "id": ":3",
+      "stem": "Given the line segment with endpoints z1 = 1 + 2i and z2 = -3 - 4i, what is the midpoint in complex form?",
+      "choices": {
+        "A": "(2, -2)",
+        "B": "(-1, -1)",
+        "C": "(1, 2)",
+        "D": "(-3, -4)"
+      },
+      "correct_choice": "B",
+      "solution": "The midpoint of a line segment with endpoints z1 and z2 is given by \frac{z1 + z2}{2}. Plugging in the values, we get: \frac{(1 + 2i) + (-3 - 4i)}{2} = (-1 - 1i)/2 = (-1, -1).",
+      "explanation": "The midpoint formula involves averaging the real and imaginary parts of the endpoints.",
+      "common_mistake_notes": "A common mistake would be to forget to divide by 2 or mix up the addition of the real and imaginary parts."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the equation of a circle passing through the points z1 = 3i, z2 = -2 + 5i, and z3 = 4 - 3i in complex form.",
+      "choices": {
+        "A": "|z - (-1, 2)| = 5",
+        "B": "|z - (1, -2)| = 3",
+        "C": "|z - (3, -1)| = 4",
+        "D": "|z - (2, 1)| = 6"
+      },
+      "correct_choice": "A",
+      "solution": "To find the equation of a circle passing through three points, we first need to find the center. The center is the point that is equidistant from all three given points. However, this problem can be simplified by recognizing that z1, z2, and z3 form an arithmetic progression in their real parts (3i has a real part of 0, -2 + 5i has a real part of -2, and 4 - 3i has a real part of 4), which means the center will have a real part halfway between the first and last points. The center is thus at (-1, 2). Plugging this into the equation of a circle, we get |z - (-1 + 2i)| = 5.",
+      "explanation": "The problem hints at an arithmetic progression in the real parts, which helps to find the center quickly.",
+      "common_mistake_notes": "A common mistake would be to try to solve for the center using more complex methods or not recognizing the pattern in the real parts."
+    },
+    {
+      "id": ":5",
+      "stem": "What is the equation of a line passing through the point z = 1 + i and parallel to the imaginary axis in complex form?",
+      "choices": {
+        "A": "z - 1 = 0",
+        "B": "z - i = 0",
+        "C": "Re(z) = 1",
+        "D": "Im(z) = 1"
+      },
+      "correct_choice": "C",
+      "solution": "A line parallel to the imaginary axis has a slope of 0, meaning it is a vertical line. The equation of a vertical line in complex form is Re(z) = constant. Plugging in the point z = 1 + i, we get Re(z) = 1.",
+      "explanation": "The problem asks for a vertical line parallel to the imaginary axis, which has a fixed real part.",
+      "common_mistake_notes": "A common mistake would be to choose a horizontal line or not recognize that the line is vertical."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the equation of a circle with radius 3 and tangent to the real axis at the point z = 2 in complex form.",
+      "choices": {
+        "A": "|z - 2| = 3",
+        "B": "|z - (2, 0)| = 3",
+        "C": "|z - 1| = 3",
+        "D": "|z - (3, 0)| = 2"
+      },
+      "correct_choice": "A",
+      "solution": "Since the circle is tangent to the real axis at z = 2, its center must lie on the real axis and be 3 units away from z = 2. The center would thus be at 5 (2 + 3), but since the radius is 3, it cannot be further than 2 along the positive real axis or it wouldn't be tangent to the real axis. Therefore, the center must be at 2 and the equation of the circle is |z - 2| = 3.",
+      "explanation": "The problem specifies that the circle is tangent to the real axis, which constrains the position of the center.",
+      "common_mistake_notes": "A common mistake would be to assume the center is at (5, 0) without considering the radius constraint."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the equation of a line passing through the origin and perpendicular to the line with equation Re(z) = Im(z) in complex form.",
+      "choices": {
+        "A": "Re(z) + Im(z) = 0",
+        "B": "Re(z) - Im(z) = 0",
+        "C": "|z| = 1",
+        "D": "z^2 = 1"
+      },
+      "correct_choice": "B",
+      "solution": "A line perpendicular to Re(z) = Im(z) will have a slope that is the negative reciprocal of the original slope (which is 1). The slope of the new line will be -1. Since the line passes through the origin, its equation in complex form is Re(z) - Im(z) = 0.",
+      "explanation": "The problem asks for a line perpendicular to another line, which means their slopes are negative reciprocals.",
+      "common_mistake_notes": "A common mistake would be to choose a line with slope 1 or not recognize that the lines must be perpendicular."
+    }
+  ]
+}

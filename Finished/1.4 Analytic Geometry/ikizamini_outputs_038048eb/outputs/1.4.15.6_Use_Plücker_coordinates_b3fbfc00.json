@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.15.6",
+  "objective_text": "Use Plücker coordinates",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Find the Plücker coordinates of a line passing through points P(1, 2, 3) and Q(4, 5, 6).",
+      "choices": {
+        "A": "[1, 2, 3, 4, 5, 6]",
+        "B": "[7, 8, 9, 10, 11, 12]",
+        "C": "[3, 5, -2, 6, 4, -2]",
+        "D": "[2, 4, 6, 1, 3, 5]"
+      },
+      "correct_choice": "C",
+      "solution": "The Plücker coordinates of a line passing through points P(x1, y1, z1) and Q(x2, y2, z2) are given by the vector [x2y1 - x1y2, x1z2 - x2z1, y1z2 - y2z1, x1x2 + y1y2 + z1z2]. For P(1, 2, 3) and Q(4, 5, 6), we calculate the coordinates as follows: [4*2 - 1*5, 1*6 - 4*3, 2*6 - 5*4, 1*4 + 2*5 + 3*6] = [3, 5, -2, 6, 4, -2].",
+      "explanation": "Plücker coordinates represent a line in 3D space using a 6-tuple of numbers. The first three components are the cross product of the direction vector (Q- P) and the last three components are the scalar triple product of P, Q, and the direction vector.",
+      "common_mistake_notes": "A common mistake is to mix up the order of the points or to forget to calculate the scalar triple product. Make sure to use the correct points and follow the formula correctly."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Calculate the line intersection between two lines given by their Plücker coordinates: Line 1: [3, 5, -2, 6, 4, -2] and Line 2: [7, 9, -4, 10, 8, -4].",
+      "choices": {
+        "A": "[1, 2, 3, 4, 5, 6]",
+        "B": "[0, 0, 0, 0, 0, 0]",
+        "C": "[2, 4, 6, 1, 3, 5]",
+        "D": "[5, 7, -1, 8, 6, -2]"
+      },
+      "correct_choice": "B",
+      "solution": "To find the intersection of two lines given by their Plücker coordinates, we can use Cramer's rule. However, in this case, both lines are parallel since their Plücker coordinates have a common direction vector (the last three components are proportional). Therefore, they either do not intersect or coincide. The correct answer is the zero vector representing no intersection.",
+      "explanation": "Parallel lines in 3D space have proportional Plücker coordinates for the scalar triple product part. If the last three components of both lines are proportional, it indicates that the lines are parallel and thus do not intersect at a single point.",
+      "common_mistake_notes": "A common mistake is to assume that there will always be an intersection or to forget to check if the lines are parallel. Make sure to consider the case where the lines may be parallel."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Find the Plücker coordinates of a line passing through the origin and perpendicular to the plane defined by the normal vector N = [1, 2, 3].",
+      "choices": {
+        "A": "[0, 0, 0, 0, 0, 0]",
+        "B": "[3, -2, 1, 0, 0, 0]",
+        "C": "[1, 2, 3, 0, 0, 0]",
+        "D": "[-3, 2, -1, 0, 0, 0]"
+      },
+      "correct_choice": "B",
+      "solution": "A line perpendicular to the plane with normal vector N = [1, 2, 3] will have a direction vector that is parallel to N. The Plücker coordinates for a line passing through the origin are given by the cross product of the direction vector and the origin point (0, 0, 0). In this case, the direction vector is N itself, so the Plücker coordinates are [3, -2, 1, 0, 0, 0].",
+      "explanation": "A line perpendicular to a plane is parallel to its normal vector. The Plücker coordinates of a line passing through the origin can be calculated by taking the cross product of the direction vector (which is parallel to the normal vector) and the origin point.",
+      "common_mistake_notes": "A common mistake is to forget that the origin point has coordinates (0, 0, 0) or to calculate the cross product incorrectly. Make sure to use the correct origin point and follow the formula for calculating Plücker coordinates."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Given two lines with Plücker coordinates Line 1: [2, 4, 6, 1, 3, 5] and Line 2: [-1, -2, -3, -4, -5, -6], determine if they are skew.",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined from the given information",
+        "D": "Depends on the specific coordinates"
+      },
+      "correct_choice": "A",
+      "solution": "Two lines are skew if they do not intersect and are not parallel. Since the last three components of Line 1 and Line 2 are not proportional, the lines are not parallel. To check for intersection, we can calculate the determinant formed by the Plücker coordinates. If the determinant is non-zero, the lines are skew. In this case, the determinant is non-zero, so the lines are skew.",
+      "explanation": "Skew lines do not intersect and are not parallel. We can determine if two lines are skew by checking if their last three components (the scalar triple product part) are proportional or if they have a non-zero determinant when arranged in a matrix with Plücker coordinates.",
+      "common_mistake_notes": "A common mistake is to assume that the lines must intersect or be parallel without calculating the determinant. Make sure to use the correct method for determining skewness."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Find the Plücker coordinates of a line passing through points P(0, 0, 1) and Q(1, 2, 3).",
+      "choices": {
+        "A": "[2, 4, -2, 1, 2, 3]",
+        "B": "[1, 2, 3, 0, 0, 1]",
+        "C": "[0, 0, 1, 1, 2, 3]",
+        "D": "[1, 2, 3, 2, 4, -2]"
+      },
+      "correct_choice": "A",
+      "solution": "The Plücker coordinates of a line passing through points P(x1, y1, z1) and Q(x2, y2, z2) are given by the vector [x2y1 - x1y2, x1z2 - x2z1, y1z2 - y2z1, x1x2 + y1y2 + z1z2]. For P(0, 0, 1) and Q(1, 2, 3), we calculate the coordinates as follows: [1*0 - 0*2, 0*3 - 1*1, 0*3 - 2*1, 0*1 + 0*2 + 1*3] = [2, 4, -2, 1, 2, 3].",
+      "explanation": "Plücker coordinates represent a line in 3D space using a 6-tuple of numbers. The first three components are the cross product of the direction vector (Q- P) and the last three components are the scalar triple product of P, Q, and the direction vector.",
+      "common_mistake_notes": "A common mistake is to mix up the order of the points or to forget to calculate the scalar triple product. Make sure to use the correct points and follow the formula correctly."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Given a line with Plücker coordinates [5, 7, -1, 8, 6, -2], find another line that is parallel to it.",
+      "choices": {
+        "A": "[10, 14, -2, 16, 12, -4]",
+        "B": "[5, 7, 1, 8, 6, 2]",
+        "C": "[1, 2, 3, 4, 5, 6]",
+        "D": "[-5, -7, 1, -8, -6, 2]"
+      },
+      "correct_choice": "A",
+      "solution": "Two lines are parallel if their Plücker coordinates have proportional last three components. To find a line parallel to the given line [5, 7, -1, 8, 6, -2], we can multiply all the coordinates by any non-zero scalar. For example, multiplying by 2 gives us [10, 14, -2, 16, 12, -4].",
+      "explanation": "Parallel lines in 3D space have proportional Plücker coordinates for the scalar triple product part. To find another line parallel to a given one, multiply all the coordinates by any non-zero constant.",
+      "common_mistake_notes": "A common mistake is to forget that only the last three components need to be proportional or to choose a zero scalar. Make sure to consider only the scalar triple product and use a non-zero multiplier."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Find the Plücker coordinates of a line passing through points P(2, 3, 4) and Q(-1, -2, -3).",
+      "choices": {
+        "A": "[5, 8, -3, -2, -3, -4]",
+        "B": "[1, 2, 3, 2, 3, 4]",
+        "C": "[-5, -8, 3, 2, 3, 4]",
+        "D": "[5, 8, 3, -2, -3, -4]"
+      },
+      "correct_choice": "C",
+      "solution": "The Plücker coordinates of a line passing through points P(x1, y1, z1) and Q(x2, y2, z2) are given by the vector [x2y1 - x1y2, x1z2 - x2z1, y1z2 - y2z1, x1x2 + y1y2 + z1z2]. For P(2, 3, 4) and Q(-1, -2, -3), we calculate the coordinates as follows: [-1*3 - 2*(-2), 2*(-3) - (-1)*4, 3*(-3) - (-2)*4, 2*(-1) + 3*(-2) + 4*(-3)] = [-5, -8, 3, -2, -3, -4].",
+      "explanation": "Plücker coordinates represent a line in 3D space using a 6-tuple of numbers. The first three components are the cross product of the direction vector (Q- P) and the last three components are the scalar triple product of P, Q, and the direction vector.",
+      "common_mistake_notes": "A common mistake is to mix up the order of the points or to forget to calculate the scalar triple product. Make sure to use the correct points and follow the formula correctly."
+    }
+  ]
+}

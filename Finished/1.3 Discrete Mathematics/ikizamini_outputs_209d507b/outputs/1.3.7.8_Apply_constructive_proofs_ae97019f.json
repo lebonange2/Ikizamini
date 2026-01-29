@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.7.8",
+  "objective_text": "Apply constructive proofs",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Prove that the sum of two even integers is an even integer.",
+      "choices": {
+        "A": "Let x and y be odd integers. Then, x + y = 2k for some integer k.",
+        "B": "Let x and y be even integers. Then, x + y = 2(2m) for some integer m.",
+        "C": "Let x and y be even integers. Then, x + y = 2(2k) for some integer k.",
+        "D": "Let x and y be odd integers. Then, x + y = 2k + 1 for some integer k."
+      },
+      "correct_choice": "C",
+      "solution": "The correct proof uses even integers. If x and y are both even, they can be expressed as 2m and 2n for some integers m and n. Their sum is x + y = 2m + 2n = 2(m + n), which is an even number (since m + n is an integer). Choice A and D use odd integers, which do not prove the statement. Choice B has an incorrect form (x + y = 2(2m)), as it implies the sum is always even when adding two even numbers.",
+      "explanation": "This question assesses the understanding of constructive proofs by asking students to prove a property about even integers using their definition and arithmetic properties.",
+      "common_mistake_notes": "Common mistake: Choosing A or D, which use odd integers instead of even integers. This fails because the proof must use the given property (even integers) to reach the conclusion."
+    },
+    {
+      "id": ":2",
+      "stem": "Prove that if a number is divisible by 6, it is also divisible by both 2 and 3.",
+      "choices": {
+        "A": "Let n be a number divisible by 6. Then, n = 6k for some integer k. Since 6 = 2 × 3, n must also be divisible by both 2 and 3.",
+        "B": "Let n be a number divisible by 6. Then, n = 2k + 3m for some integers k and m. This implies that n is divisible by both 2 and 3.",
+        "C": "Let n be a number divisible by 6. Then, n = 2 × 3k for some integer k. Since 6 divides n, it must also divide 2 and 3.",
+        "D": "Let n be a number divisible by 6. Then, n = 6k + 1 for some integer k. This implies that n is not divisible by either 2 or 3."
+      },
+      "correct_choice": "A",
+      "solution": "The correct proof uses the fact that 6 is the product of 2 and 3. If a number n is divisible by 6 (n = 6k), it must be divisible by both factors, 2 and 3. Choice B uses an incorrect form (n = 2k + 3m) that does not guarantee divisibility by both 2 and 3. Choice C assumes the converse of what needs to be proven. Choice D presents a counterexample where n is not divisible by 6.",
+      "explanation": "This question tests students' ability to apply constructive proofs to demonstrate relationships between divisors.",
+      "common_mistake_notes": "Common mistake: Choosing B, which uses an incorrect form that does not guarantee divisibility by both 2 and 3. This fails because the proof must show n is divisible by 2 and 3 directly from its divisibility by 6."
+    },
+    {
+      "id": ":3",
+      "stem": "Prove that the square of an odd integer is an odd integer.",
+      "choices": {
+        "A": "Let x be an odd integer. Then, x = 2k + 1 for some integer k. The square of x is x^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1, which is an odd number.",
+        "B": "Let x be an odd integer. Then, x = 2k for some integer k. The square of x is x^2 = (2k)^2 = 4k^2, which is an even number.",
+        "C": "Let x be an odd integer. Then, x = 2k + 1 for some integer k. The square of x is x^2 = (2k + 1)^2 = 4k^2 + 4k + 2 = 2(2k^2 + 2k) + 2, which is an even number.",
+        "D": "Let x be an odd integer. Then, x = 2k - 1 for some integer k. The square of x is x^2 = (2k - 1)^2 = 4k^2 - 4k + 1 = 2(2k^2 - 2k) + 1, which is an odd number."
+      },
+      "correct_choice": "A",
+      "solution": "The correct proof uses the definition of an odd integer (x = 2k + 1). The square of x can be expanded and simplified to show it's an odd number. Choice B uses even integers, which does not prove the statement. Choice C has a calculation error; the last term should be 1, not 2. Choice D uses an alternative form for odd integers but arrives at the same conclusion.",
+      "explanation": "This question assesses students' ability to apply constructive proofs to properties of odd numbers and their squares.",
+      "common_mistake_notes": "Common mistake: Choosing C, which has a calculation error in the expansion of x^2. This fails because the final term should be 1, not 2."
+    },
+    {
+      "id": ":4",
+      "stem": "Prove that if a triangle has two sides with equal length, it is an isosceles triangle.",
+      "choices": {
+        "A": "Let ABC be a triangle with sides AB and BC of equal length. Then, by the definition of an isosceles triangle, AB = BC, so triangle ABC is isosceles.",
+        "B": "Let ABC be a triangle with sides AB and BC of equal length. Then, by the Pythagorean theorem, if AC^2 = AB^2 + BC^2, triangle ABC is isosceles.",
+        "C": "Let ABC be a triangle with sides AB and BC of equal length. Then, by the definition of an equilateral triangle, AB = BC = AC, so triangle ABC is equilateral.",
+        "D": "Let ABC be a triangle with sides AB and BC of equal length. Then, by the angle sum theorem, if A + B + C = 180°, triangle ABC is isosceles."
+      },
+      "correct_choice": "A",
+      "solution": "The correct proof uses the definition of an isosceles triangle directly. If two sides are equal, the triangle is isosceles. Choice B uses the Pythagorean theorem, which is not relevant to this specific case. Choice C assumes a stronger property (equilateral) than required. Choice D uses the angle sum theorem, which does not relate to side lengths.",
+      "explanation": "This question tests students' understanding of constructive proofs in geometry by proving a triangle's classification based on its sides.",
+      "common_mistake_notes": "Common mistake: Choosing B or C, which use unrelated properties (Pythagorean theorem or equilateral triangles). This fails because the proof must directly show that two sides are equal."
+    },
+    {
+      "id": ":5",
+      "stem": "Prove that if a number is not divisible by 3, it leaves a remainder of either 1 or 2 when divided by 3.",
+      "choices": {
+        "A": "Let n be a number not divisible by 3. Then, n = 3k + r for some integers k and r, where r ≠ 0, 3. Since r must be less than the divisor (3), it can only be 1 or 2.",
+        "B": "Let n be a number not divisible by 3. Then, n = 3k × r for some integers k and r, where r ≠ 0, 3. Since r is a factor of n, it must also divide 3, which is a contradiction.",
+        "C": "Let n be a number not divisible by 3. Then, n = 3k + 3r for some integers k and r, where r ≠ 0, 3. This implies that n is divisible by 3, which contradicts the assumption.",
+        "D": "Let n be a number not divisible by 3. Then, n = 3k - r for some integers k and r, where r ≠ 0, 3. Since r must be less than the divisor (3), it can only be -1 or -2."
+      },
+      "correct_choice": "A",
+      "solution": "The correct proof uses the division algorithm to express n as n = 3k + r, with r ≠ 0, 3. Since r is the remainder and must be less than the divisor (3), it can only be 1 or 2. Choice B incorrectly assumes that r is a factor of both n and 3. Choice C leads to a contradiction because n would be divisible by 3 if r = 3k. Choice D uses negative remainders, which are not valid in this context.",
+      "explanation": "This question assesses students' ability to apply constructive proofs to divisibility properties and the division algorithm.",
+      "common_mistake_notes": "Common mistake: Choosing B or C, which lead to contradictions or incorrect assumptions about the factors of n. This fails because the proof must use the correct form for remainders and their relationship with the divisor."
+    },
+    {
+      "id": ":6",
+      "stem": "Prove that if a triangle has two angles measuring 60° each, it is an equilateral triangle.",
+      "choices": {
+        "A": "Let ABC be a triangle with angles A = B = 60°. By the angle sum theorem, A + B + C = 180°, so C = 60° as well. Since all angles are equal, triangle ABC is equilateral.",
+        "B": "Let ABC be a triangle with angles A = B = 60°. By the law of cosines, if c^2 = a^2 + b^2 - 2ab × cos(C), triangle ABC is equilateral.",
+        "C": "Let ABC be a triangle with angles A = B = 60°. By the definition of an isosceles triangle, AB = BC, so triangle ABC is isosceles.",
+        "D": "Let ABC be a triangle with angles A = B = 60°. By the law of sines, if a/ sin(A) = b/sin(B) = c/sin(C), triangle ABC is equilateral."
+      },
+      "correct_choice": "A",
+      "solution": "The correct proof uses the angle sum theorem to show that all angles are equal, making the triangle equilateral. Choice B uses the law of cosines, which is not necessary for this specific case. Choice C assumes a weaker property (isosceles) than required. Choice D uses the law of sines, which does not directly prove the triangle's classification.",
+      "explanation": "This question tests students' understanding of constructive proofs in geometry by proving a triangle's classification based on its angles.",
+      "common_mistake_notes": "Common mistake: Choosing B or C, which use unrelated properties (law of cosines or isosceles triangles). This fails because the proof must directly show that all angles are equal."
+    },
+    {
+      "id": ":7",
+      "stem": "Prove that if a number is divisible by 4, it is also divisible by 2.",
+      "choices": {
+        "A": "Let n be a number divisible by 4. Then, n = 4k for some integer k. Since 4 = 2 × 2, n must also be divisible by 2.",
+        "B": "Let n be a number divisible by 4. Then, n = 2k + 3m for some integers k and m. This implies that n is divisible by both 2 and 3.",
+        "C": "Let n be a number divisible by 4. Then, n = 2 × 2k for some integer k. Since 4 divides n, it must also divide 2.",
+        "D": "Let n be a number divisible by 4. Then, n = 4k + 1 for some integer k. This implies that n is not divisible by 2."
+      },
+      "correct_choice": "A",
+      "solution": "The correct proof uses the fact that 4 is composed of two equal factors (2 × 2). If a number n is divisible by 4, it must be divisible by both factors, including 2. Choice B uses an incorrect form (n = 2k + 3m) that does not guarantee divisibility by 2 alone. Choice C assumes the converse of what needs to be proven. Choice D presents a counterexample where n is not divisible by 4.",
+      "explanation": "This question tests students' ability to apply constructive proofs to demonstrate relationships between divisors.",
+      "common_mistake_notes": "Common mistake: Choosing B, which uses an incorrect form that does not guarantee divisibility by 2 alone. This fails because the proof must show n is divisible by 2 directly from its divisibility by 4."
+    }
+  ]
+}

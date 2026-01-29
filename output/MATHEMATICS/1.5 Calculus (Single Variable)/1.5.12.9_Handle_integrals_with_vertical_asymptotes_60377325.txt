@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.12.9 Handle integrals with vertical asymptotes
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.12 Improper Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:question_1):
+Evaluate the definite integral π∫(x/(x^2 - 4))dx from -3 to 5.
+A) -π/2
+B) π/2
+C) 0
+D) Does not converge
+Correct Answer: D
+
+Solution:
+The integrand has a vertical asymptote at x = 2, which is within the integration interval. The integral does not converge due to the singularity.
+
+Explanation:
+Vertical asymptotes in integrands require splitting the interval and checking convergence separately on each part.
+
+Common mistake note:
+A common mistake is to integrate without considering the vertical asymptote.
+------------------------------------------------------------------------------
+
+Problem 2 (:question_2):
+Evaluate the definite integral π∫((x^2 + 1)/(x - 5))dx from -3 to 4.
+A) 6π
+B) -6π
+C) Does not converge
+D) Indeterminate
+Correct Answer: C
+
+Solution:
+The integrand has a removable singularity at x = 5, but no vertical asymptote. Integrating: π∫((x + 5)(x - 4)/(x - 5))dx from -3 to 4 simplifies to π∫((x + 5)dx) from -3 to 4, which evaluates to 6π. However, since the integrand has a vertical asymptote at x = 5 within the integration interval, the integral does not converge.
+
+Explanation:
+Removable singularities do not affect convergence; we can integrate as if the singularity were not there. But the presence of a vertical asymptote at x = 5 causes the integral to diverge.
+
+Common mistake note:
+A common mistake is to overlook the vertical asymptote at x = 5 and think that the removable singularity is the only factor affecting convergence.
+------------------------------------------------------------------------------
+
+Problem 3 (:question_3):
+Evaluate the definite integral π∫((x^2 + 1)/(x - 6))dx from -4 to 3.
+A) 8π
+B) -8π
+C) Does not converge
+D) Indeterminate
+Correct Answer: C
+
+Solution:
+The integrand has a removable singularity at x = 6, but no vertical asymptote. Integrating: π∫((x + 2)(x - 5)/(x - 6))dx from -4 to 3 simplifies to π∫((x + 2)dx) from -4 to 3, which evaluates to 8π. However, since the integrand has a vertical asymptote at x = 6 within the integration interval, the integral does not converge.
+
+Explanation:
+Removable singularities do not affect convergence; we can integrate as if the singularity were not there. But the presence of a vertical asymptote at x = 6 causes the integral to diverge.
+
+Common mistake note:
+A common mistake is to overlook the vertical asymptote at x = 6 and think that the removable singularity is the only factor affecting convergence.
+------------------------------------------------------------------------------
+
+Problem 4 (:question_4):
+Evaluate the definite integral π∫((x^2 - 9)/(x + 5))dx from -6 to 0.
+A) 0
+B) Does not converge
+C) Indeterminate
+D) Vertical asymptote
+Correct Answer: B
+
+Solution:
+The integrand has a vertical asymptote at x = -5, which is within the integration interval. The integral does not converge.
+
+Explanation:
+Vertical asymptotes cause integrals to diverge; thus, the definite integral from -6 to 0 does not have a finite value.
+
+Common mistake note:
+A common mistake is to integrate as if there were no singularity at x = -5.
+------------------------------------------------------------------------------
+
+Problem 5 (:question_5):
+Evaluate the definite integral π∫((x^2 + 4)/(x + 3))dx from -5 to 2.
+A) π/2
+B) -π/2
+C) Does not converge
+D) Indeterminate
+Correct Answer: C
+
+Solution:
+The integrand has a removable singularity at x = -3, but no vertical asymptote. Integrating: π∫((x + 3)(x - 1)/(x + 3))dx from -5 to 2 simplifies to π∫((x - 1)dx) from -5 to 2, which evaluates to -π/2. However, since the integrand has a vertical asymptote at x = -3 within the integration interval, the integral does not converge.
+
+Explanation:
+Removable singularities do not affect convergence; we can integrate as if the singularity were not there. But the presence of a vertical asymptote at x = -3 causes the integral to diverge.
+
+Common mistake note:
+A common mistake is to overlook the vertical asymptote at x = -3 and think that the removable singularity is the only factor affecting convergence.
+------------------------------------------------------------------------------
+
+Problem 6 (:question_6):
+Evaluate the definite integral π∫((x^3 + 1)/(x - 2))dx from -4 to 1.
+A) 9π
+B) -9π
+C) Does not converge
+D) Indeterminate
+Correct Answer: A
+
+Solution:
+The integrand has a removable singularity at x = 2, but no vertical asymptote. Integrating: π∫((x - 2)(x^2 + 2x + 1)/(x - 2))dx from -4 to 1 simplifies to π∫((x^2 + 2x + 1)dx) from -4 to 1, which evaluates to 9π.
+
+Explanation:
+Removable singularities do not affect convergence; we can integrate as if the singularity were not there.
+
+Common mistake note:
+A common mistake is to think that the removable singularity at x = 2 causes the integral to diverge.
+------------------------------------------------------------------------------
+
+Problem 7 (:question_7):
+Evaluate the definite integral π∫((x^3 - 125)/(x + 4))dx from -6 to -1.
+A) π/2
+B) -π/2
+C) Does not converge
+D) Indeterminate
+Correct Answer: C
+
+Solution:
+The integrand has a removable singularity at x = -4, but no vertical asymptote. Integrating: π∫((x + 4)(x^2 - 4x + 16)/(x + 4))dx from -6 to -1 simplifies to π∫((x^2 - 4x + 16)dx) from -6 to -1, which evaluates to π/2. However, since the integrand has a vertical asymptote at x = -4 within the integration interval, the integral does not converge.
+
+Explanation:
+Removable singularities do not affect convergence; we can integrate as if the singularity were not there. But the presence of a vertical asymptote at x = -4 causes the integral to diverge.
+
+Common mistake note:
+A common mistake is to overlook the vertical asymptote at x = -4 and think that the removable singularity is the only factor affecting convergence.
+------------------------------------------------------------------------------

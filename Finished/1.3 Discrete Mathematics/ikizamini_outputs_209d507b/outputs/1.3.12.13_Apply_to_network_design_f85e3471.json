@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.12.13",
+  "objective_text": "Apply to network design",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "AssembleNetworkDesign",
+      "stem": "A company is designing a new network with the following requirements: Two departments (Sales and HR), each with 50 users, need access to a shared file server. The network must also support a public-facing website and have a dedicated gateway for accessing the internet. Which of the following best represents the appropriate network design?",
+      "choices": {
+        "A": "星形网络，所有设备连接到一台中央路由器",
+        "B": "环形网络，每台设备通过一个点对点连接与邻居设备相连",
+        "C": "总线型网络，所有设备连接到同一根主干电缆",
+        "D": "分层网络，包括接入层、分布层和核心层"
+      },
+      "correct_choice": "D",
+      "solution": "A分层网络设计 (包括接入层、分布层和核心层) 是最适合这种情况的。它提供了一种结构化的方法来组织和管理流量，确保高可用性和可扩展性。选项A星形网络可能不够灵活且难以扩展；选项B环形网络对单点故障敏感；选项C总线型网络在数据传输速度和安全性方面不如分层网络可靠。",
+      "explanation": "分层网络设计有助于隔离不同类型的流量，提供冗余路径，并优化带宽使用。在此场景中，接入层处理终端用户连接，分布层负责部门间的数据交换，而核心层则集中互联网访问和数据中心通信。",
+      "common_mistake_notes": "常见错误是选择星形或环形网络，这些设计可能在小型网络中足够，但不适合具有多个部门和复杂需求的公司网络。"
+    },
+    {
+      "id": "DesignFirewallPolicy",
+      "stem": "A company's network security policy requires that all external traffic to the internal web server must pass through a firewall. The firewall should allow HTTP (port 80) and HTTPS (port 443) connections, but block all other protocols and ports. Which of the following firewall rules best achieves this?",
+      "choices": {
+        "A": "允许所有入站流量到端口80和443",
+        "B": "阻止所有入站流量，仅允许HTTP和HTTPS流量",
+        "C": "允许所有出站流量，仅阻止非HTTP和HTTPS的入站流量",
+        "D": "允许所有流量，但对HTTP和HTTPS流量进行深度包检查"
+      },
+      "correct_choice": "B",
+      "solution": "选项B正确地描述了所需的策略：阻止所有入站流量（默认安全），然后特别允许HTTP和HTTPS流量通过端口80和443。这样可以确保仅允许必要的Web访问，同时保护内部网络免受其他未授权的连接尝试。",
+      "explanation": "防火墙规则应旨在限制不必要的通信，以减少潜在的安全风险。选项A过于宽松，可能会允许不需要的入站连接；选项C只控制出站流量，不保护内部系统；选项D虽然提供了额外的安全检查，但并不符合仅允许HTTP和HTTPS流量的要求。",
+      "common_mistake_notes": "常见错误是选择A或C，这些规则可能在某些场景下适用，但在本例中过于宽松或不够具体。"
+    },
+    {
+      "id": "DesignVLANs",
+      "stem": "An organization has three departments: Marketing, Engineering, and Finance. They share a single LAN switch with 24 ports. To improve security and reduce network congestion, the IT department wants to create separate VLANs for each department. How many VLANs should be created?",
+      "choices": {
+        "A": "1",
+        "B": "3",
+        "C": "6",
+        "D": "24"
+      },
+      "correct_choice": "B",
+      "solution": "为了满足部门隔离和网络优化的需求，应该创建3个VLAN，一个对应每个部门。这样可以限制不同部门之间的直接通信，提高安全性，并减少可能因广播风暴导致的网络拥塞。",
+      "explanation": "VLANs (虚拟局域网) 允许在单个物理网络上划分出多个逻辑网络。在这个场景中，创建3个 VLAN分别对应Marketing、Engineering和Finance是最合适的解决方案。选项A只创建一个VLAN无法实现部门隔离；选项C和D创建了过多的VLAN，可能导致管理复杂性和潜在的通信问题。",
+      "common_mistake_notes": "常见错误是选择A或C/ D，这些选择要么没有充分隔离部门，要么创建了不必要的 VLAN，增加了管理和性能风险。"
+    },
+    {
+      "id": "DesignRoutingProtocol",
+      "stem": "A company has a large network with multiple sites connected via a WAN. They need to implement a routing protocol that can dynamically update routes as the network topology changes, and is scalable for future growth. Which of the following routing protocols would be the best choice?",
+      "choices": {
+        "A": "静态路由",
+        "B": "RIP (Routing Information Protocol)",
+        "C": "OSPF (Open Shortest Path First)",
+        "D": "BGP (Border Gateway Protocol)"
+      },
+      "correct_choice": "C",
+      "solution": "OSPF（开放最短路径优先）是最佳选择，因为它能够动态地更新路由信息，而且设计用于大型网络。它支持VLSM、区域划分和无环路保证，适合未来扩展。",
+      "explanation": "静态路由需要手动配置和维护，不适合大规模或频繁变化的网络；RIP虽然简单，但其最大跳数限制（15跳）和较差的收敛速度使其不适合大型网络；BGP通常用于自治系统间的路由，而不是企业内部网络。",
+      "common_mistake_notes": "常见错误是选择A或B，这些协议在小型网络中可能足够，但在大型、动态网络中效率较低或功能不足。"
+    },
+    {
+      "id": "DesignWirelessNetwork",
+      "stem": "An office building has 5 floors, each with multiple rooms. The IT department needs to set up a wireless network that provides seamless coverage throughout the building without interference. Which of the following best describes the recommended wireless network design?",
+      "choices": {
+        "A": "使用单个接入点覆盖整个建筑",
+        "B": "在每层楼的中心位置放置多个接入点，彼此之间保持一定距离",
+        "C": "在每个房间内安装一个独立的接入点，并使用相同的无线频道",
+        "D": "在每个房间内安装一个接入点，并将它们分布在不同的无线频道上"
+      },
+      "correct_choice": "D",
+      "solution": "选项D是最佳选择。在每个房间放置一个接入点并分配不同的无线频道可以确保信号覆盖均匀，减少干扰，提供更好的网络性能和用户体验。",
+      "explanation": "使用单个接入点或多个但使用相同频道的接入点会导致信号重叠和干扰，影响性能；在每层楼中心位置放置接入点可能无法保证所有区域的信号强度。选项D通过将接入点分散并分配不同的无线频道来优化覆盖和减少冲突。",
+      "common_mistake_notes": "常见错误是选择A、B或C，这些设计可能导致信号覆盖不均、干扰多或性能低下。"
+    },
+    {
+      "id": "DesignLoadBalancing",
+      "stem": "A company's website experiences heavy traffic during peak hours, leading to slow response times. To improve performance and availability, the IT team plans to implement a load balancing solution. Which of the following methods would be most effective?",
+      "choices": {
+        "A": "使用DNS轮询，将流量均匀分配到多个服务器",
+        "B": "在数据中心内部部署两台防火墙，各自处理一半的网络流量",
+        "C": "在同一服务器上运行多个网站实例，共享计算资源",
+        "D": "在网络边缘安装一台专用负载均衡器，根据服务器性能动态分配流量"
+      },
+      "correct_choice": "D",
+      "solution": "选项D是最有效的解决方案。在边缘安装专用负载均衡器可以根据服务器性能和连接数动态地将流量分发到多个服务器，确保最佳的响应时间和可用性。",
+      "explanation": "DNS轮询可能会导致不均匀的负载分布；防火墙不是用来处理负载平衡的；在同一服务器上运行多个网站实例会限制资源利用率。选项D提供了一种灵活且高效的负载均衡方法。",
+      "common_mistake_notes": "常见错误是选择A或C，这些方法可能无法有效地处理高流量负载，或者可能导致性能瓶颈。"
+    },
+    {
+      "id": "DesignBackupStrategy",
+      "stem": "A company stores sensitive data on a centralized server. They want to ensure that their data is backed up regularly and can be quickly restored in case of failure. Which of the following backup strategies would best meet these requirements?",
+      "choices": {
+        "A": "每日全备份，每周增量备份",
+        "B": "每小时增量备份，每月全备份",
+        "C": "每周全备份，每天差异备份",
+        "D": "每分钟增量备份，每4小时完整备份"
+      },
+      "correct_choice": "D",
+      "solution": "选项D是最适合的策略。它提供了频繁的增量备份以减少数据丢失，而且有定期的完整备份用于快速恢复。这可以确保在发生故障时，公司能够迅速恢复其敏感数据。",
+      "explanation": "选项A和C可能不足以应对频繁的数据更改；选项B的全备份频率较低，可能导致大量数据丢失。选项D提供了适当的备份频率和恢复速度之间的平衡。",
+      "common_mistake_notes": "常见错误是选择A、B或C，这些策略可能无法提供足够的数据保护或快速恢复能力。"
+    }
+  ]
+}

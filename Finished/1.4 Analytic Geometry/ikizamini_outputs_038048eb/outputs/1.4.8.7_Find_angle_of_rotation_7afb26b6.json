@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.8.7",
+  "objective_text": "Find angle of rotation",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "A triangle is rotated 90 degrees clockwise around the origin. What is the angle of rotation in radians?",
+      "choices": {
+        "A": "π/2",
+        "B": "π",
+        "C": "3π/2",
+        "D": "2π"
+      },
+      "correct_choice": "A",
+      "solution": "The angle of rotation from a 90-degree clockwise rotation in degrees to radians is π/2. In radians, one full revolution is 2π, and a quarter revolution (90 degrees) is π/2.",
+      "explanation": "When converting angles from degrees to radians, remember that 180 degrees equals π radians.",
+      "common_mistake_notes": "Common mistake: Choosing B (π) which represents a half-revolution (180 degrees). The question specifies a 90-degree rotation."
+    },
+    {
+      "id": "2",
+      "stem": "A parallelogram is rotated 135 degrees counterclockwise around the origin. What is the angle of rotation in radians?",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "3π/4",
+        "D": "π"
+      },
+      "correct_choice": "C",
+      "solution": "A 135-degree counterclockwise rotation is equivalent to a 45-degree clockwise rotation from the positive x-axis. Since π/4 represents a 45-degree angle, we add it to π (half a revolution) to get the total angle of rotation in radians: π + π/4 = 5π/4, which simplifies to 3π/2.",
+      "explanation": "When rotating counterclockwise, subtract the angle from π. In this case, 180 - 45 = 135 degrees, which is equivalent to 3π/4 radians.",
+      "common_mistake_notes": "Common mistake: Choosing A (π/4) which represents a 45-degree rotation but not accounting for the direction of rotation."
+    },
+    {
+      "id": "3",
+      "stem": "A rectangle is flipped vertically about the y-axis. What is the angle of rotation required to achieve this transformation?",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "C",
+      "solution": "Flipping an object vertically about the y-axis is equivalent to a 180-degree rotation, which in radians is π.",
+      "explanation": "A vertical flip can be thought of as a full rotation around the y-axis. This corresponds to a π radian angle.",
+      "common_mistake_notes": "Common mistake: Choosing B (π/2) which represents a 90-degree rotation, but not considering that flipping requires a complete revolution."
+    },
+    {
+      "id": "4",
+      "stem": "A circle is dilated by a scale factor of 2 while maintaining the origin as the center. What angle of rotation would result in the same dilation?",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "A",
+      "solution": "Dilation by a scale factor does not involve any rotation; thus, the angle of rotation is 0.",
+      "explanation": "Dilation only changes the size of an object and does not affect its orientation. Therefore, no rotation is needed to achieve the same dilation.",
+      "common_mistake_notes": "Common mistake: Choosing any other option, assuming that dilation involves a change in orientation."
+    },
+    {
+      "id": "5",
+      "stem": "A regular hexagon is reflected across the line y = x. What is the angle of rotation required to achieve this reflection?",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "B",
+      "solution": "Reflecting an object across the line y = x is equivalent to a 90-degree rotation, which in radians is π/2.",
+      "explanation": "A reflection across the line y = x can be thought of as a quarter turn counterclockwise. This corresponds to a π/2 radian angle.",
+      "common_mistake_notes": "Common mistake: Choosing C (π) which represents a half-revolution, but not considering that reflections are like rotations by 180 degrees about an axis perpendicular to the reflection line."
+    },
+    {
+      "id": "6",
+      "stem": "A pentagon is translated 5 units right and 3 units up, then reflected across the x-axis. What angle of rotation would result in the same transformation?",
+      "choices": {
+        "A": "0",
+        "B": "π/2",
+        "C": "π",
+        "D": "3π/2"
+      },
+      "correct_choice": "A",
+      "solution": "Translation and reflection do not involve any rotation; thus, the angle of rotation is 0.",
+      "explanation": "Translation and reflection are independent transformations that do not affect an object's orientation. Therefore, no rotation is needed to achieve the same transformation.",
+      "common_mistake_notes": "Common mistake: Choosing any other option, assuming that translation or reflection involves a change in orientation."
+    },
+    {
+      "id": "7",
+      "stem": "A square is rotated around its center such that one of its sides aligns with the positive x-axis. What is the angle of rotation required for this alignment?",
+      "choices": {
+        "A": "π/4",
+        "B": "π/2",
+        "C": "3π/4",
+        "D": "π"
+      },
+      "correct_choice": "A",
+      "solution": "To align one side of a square with the positive x-axis, we need to rotate it 45 degrees clockwise or counterclockwise. In radians, this is π/4.",
+      "explanation": "Rotating a square so that one of its sides lines up with the x-axis requires a quarter turn. This corresponds to a π/4 radian angle.",
+      "common_mistake_notes": "Common mistake: Choosing B (π/2) which represents a 90-degree rotation, but not considering that the square can be aligned in either direction."
+    }
+  ]
+}

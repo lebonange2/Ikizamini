@@ -1,0 +1,137 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.12.10 Find inverse transformations
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.12 Transformations in the Plane
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Given the transformation matrix:
+A = [1, 2; 3, 4]
+What is the inverse of matrix A?
+A) [4, -2; -3, 1]
+B) [-4, 2; 3, -1]
+C) [1/7, -2/7; -3/7, 4/7]
+D) [-1/7, 2/7; 3/7, -4/7]
+Correct Answer: A
+
+Solution:
+The inverse of a 2x2 matrix A = [a, b; c, d] is given by (1/(ad-bc)) * [d, -b; -c, a]. For the matrix A = [1, 2; 3, 4], ad-bc = (1*4) - (2*3) = -2. The inverse is thus [4*(-1/-2), -2*(-1/-2); -3*(-1/-2), 1*(-1/-2)] = [4/2, -2/(-2); -3/(-2), 1/(-2)] = [2, 1; 1.5, -0.5] or simplified to [4, -2; -3, 1].
+
+Explanation:
+The inverse of a matrix is calculated using the formula given above. The correct choice A follows this formula correctly.
+
+Common mistake note:
+A common mistake would be to incorrectly calculate the determinant (ad-bc), which leads to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the inverse of the following matrix:
+B = [0, 1; -1, 0]
+A) [0, 1; -1, 0]
+B) [0, -1; 1, 0]
+C) [1, 0; 0, 1]
+D) [-1, 0; 0, -1]
+Correct Answer: B
+
+Solution:
+The matrix B is an example of a rotation matrix by 90 degrees counterclockwise. The inverse of such a matrix is a rotation by the same angle clockwise, which in this case is a rotation by 90 degrees clockwise, represented by [0, -1; 1, 0].
+
+Explanation:
+The inverse of a rotation matrix is another rotation matrix with the opposite angle. In this case, the inverse of rotating counterclockwise by 90 degrees is to rotate clockwise by 90 degrees.
+
+Common mistake note:
+A common mistake would be to assume that the inverse of a matrix is simply its transpose, which is not true for non-square or non-orthogonal matrices.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Given the function f(x) = 2x + 1, what is the inverse function?
+A) f^-1(x) = (x - 1)/2
+B) f^-1(x) = x/2 - 1
+C) f^-1(x) = x/2 + 1
+D) f^-1(x) = 2x - 1
+Correct Answer: A
+
+Solution:
+The inverse function of f(x) = ax + b is given by f^-1(x) = (x - b)/a. For f(x) = 2x + 1, a = 2 and b = 1, so the inverse is (x - 1)/2.
+
+Explanation:
+The inverse of an linear function can be found by swapping x and y, then solving for y. In this case, we get x = 2y + 1, which leads to y = (x - 1)/2.
+
+Common mistake note:
+A common mistake would be to forget to swap the roles of x and y when finding the inverse function.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the inverse of the matrix:
+C = [5, 0; 0, 7]
+A) [1/35, 0; 0, 1/49]
+B) [1/5, 0; 0, 1/7]
+C) [5, 0; 0, 7]
+D) [-1/5, 0; 0, -1/7]
+Correct Answer: B
+
+Solution:
+The inverse of a diagonal matrix is found by taking the reciprocal of each diagonal element. For C = [5, 0; 0, 7], the inverse is [1/5, 0; 0, 1/7].
+
+Explanation:
+Diagonal matrices have inverses that are easy to calculate: simply take the reciprocal of each diagonal element.
+
+Common mistake note:
+A common mistake would be to apply a general matrix inversion method when it's not necessary for a diagonal matrix.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Given the function g(x) = x^2, what is the inverse function?
+A) g^-1(x) = √x
+B) g^-1(x) = -√x
+C) g^-1(x) = ±√x
+D) g^-1(x) = x^2
+Correct Answer: C
+
+Solution:
+The inverse of g(x) = x^2 is not a single-vaued function because the original function is not one-to-one. The correct form for the inverse is g^-1(x) = ±√x.
+
+Explanation:
+The square root function has two possible outputs, positive and negative, which means the inverse of g(x) = x^2 should include both possibilities.
+
+Common mistake note:
+A common mistake would be to assume that the inverse of a squaring function is simply taking the square root, without considering the two possible outcomes.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the inverse of the matrix:
+D = [1, 3; -2, 4]
+A) [2, -1; 1, -0.5]
+B) [-2, 1; -1, 0.5]
+C) [4/5, -3/5; 2/5, 1/5]
+D) [-4/5, 3/5; -2/5, -1/5]
+Correct Answer: C
+
+Solution:
+The inverse of D = [1, 3; -2, 4] is calculated using the formula (1/(ad-bc)) * [d, -b; -c, a]. For this matrix, ad-bc = (1*4) - (3*(-2)) = 10. The inverse is thus [4/10, -3/10; -2/10, 1/10] or simplified to [4/5, -3/5; 2/5, 1/5].
+
+Explanation:
+The inverse of a matrix is calculated using the formula given above. The correct choice C follows this formula correctly.
+
+Common mistake note:
+A common mistake would be to incorrectly calculate the determinant (ad-bc), which leads to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Given the function h(x) = 3x - 4, what is the inverse function?
+A) h^-1(x) = (x + 4)/3
+B) h^-1(x) = x/3 + 4
+C) h^-1(x) = x + 4/3
+D) h^-1(x) = 3x - 4
+Correct Answer: A
+
+Solution:
+The inverse function of h(x) = ax + b is given by h^-1(x) = (x - b)/a. For h(x) = 3x - 4, a = 3 and b = -4, so the inverse is (x + 4)/3.
+
+Explanation:
+The inverse of an linear function can be found by swapping x and y, then solving for y. In this case, we get x = 3y - 4, which leads to y = (x + 4)/3.
+
+Common mistake note:
+A common mistake would be to forget to swap the roles of x and y when finding the inverse function.
+------------------------------------------------------------------------------

@@ -1,0 +1,160 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.1.12 Apply properties of complex numbers
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.1 Complex Number Fundamentals
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+What is the result of multiplying (3 + 4i) and (2 - 3i)?
+A) (5 + 6i)
+B) (7 - 6i)
+C) (11 - i)
+D) (11 + i)
+Correct Answer: C
+
+Solution:
+To multiply complex numbers, use the distributive property (FOIL method):
+(3 + 4i)(2 - 3i) = 3 	imes 2 + 3 	imes (-3i) + 4i 	imes 2 + 4i 	imes (-3i)
+= 6 - 9i + 8i - 12i^2
+Since i^2 = -1, substitute -1 for i^2:
+= 6 - i - 12(-1)
+= 6 - i + 12
+= 18 - i
+The correct answer is (C): (11 - i).
+
+Explanation:
+Use the FOIL method to multiply binomials. A common mistake is forgetting to substitute i^2 with -1, resulting in an incorrect solution.
+
+Common mistake note:
+Common mistake: Forgetting that i^2 = -1.
+------------------------------------------------------------------------------
+
+Problem 2 (Xyz456):
+What is the conjugate of the complex number 7 + 9i?
+A) -7 + 9i
+B) -7 - 9i
+C) 7 - 9i
+D) 9 + 7i
+Correct Answer: C
+
+Solution:
+The conjugate of a complex number (a + bi) is (a - bi). For the complex number 7 + 9i, the conjugate is 7 - 9i.
+
+Explanation:
+Find the conjugate by changing the sign of the imaginary part. A common mistake is reversing the real and imaginary parts.
+
+Common mistake note:
+Common mistake: Reversing the real and imaginary parts.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwe789):
+What is the modulus (magnitude) of the complex number -4 + 3i?
+A) 5
+B) 1
+C) 7
+D) sqrt(26)
+Correct Answer: D
+
+Solution:
+The modulus (magnitude) of a complex number (a + bi) is sqrt(a^2 + b^2). For -4 + 3i, calculate:
+Modulus = sqrt((-4)^2 + (3)^2)
+= sqrt(16 + 9)
+= sqrt(25)
+= 5
+
+Explanation:
+Use the Pythagorean theorem to find the modulus. A common mistake is forgetting to square and sum the real and imaginary parts.
+
+Common mistake note:
+Common mistake: Forgetting to square the real and imaginary parts.
+------------------------------------------------------------------------------
+
+Problem 4 (Rty101):
+What is the argument (angle) in radians for the complex number 3cis(π/4)?
+A) π/4
+B) π/2
+C) π
+D) 3π/2
+Correct Answer: A
+
+Solution:
+The argument of a complex number in polar form (r cis θ) is θ. For 3cis(π/4), the argument is π/4.
+
+Explanation:
+In polar form, the argument directly represents the angle. A common mistake is confusing the modulus with the argument.
+
+Common mistake note:
+Common mistake: Confusing the modulus with the argument.
+------------------------------------------------------------------------------
+
+Problem 5 (Uij102):
+What is the real part of the complex number (5 + 3i)/(7 - 4i)?
+A) (35 + 28i)/(65)
+B) (35 - 28i)/(65)
+C) (35 + 28)/(65)
+D) (35 - 28)/(65)
+Correct Answer: B
+
+Solution:
+To find the real part of a complex fraction, multiply both numerator and denominator by the conjugate of the denominator:
+(5 + 3i)/(7 - 4i) * (7 + 4i)/(7 + 4i)
+= [(5 + 3i)(7 + 4i)]/[(7 - 4i)(7 + 4i)]
+= (35 + 20i + 21i - 12i^2)/49 - 16i^2
+Since i^2 = -1, substitute -1 for i^2:
+= (35 + 41i + 12)/(49 + 16)
+= (47 + 41i)/65
+The real part is 47/65, which simplifies to (35 - 28i)/(65).
+
+Explanation:
+Multiply by the conjugate and simplify to find the real part. A common mistake is forgetting to multiply both numerator and denominator.
+
+Common mistake note:
+Common mistake: Forgetting to multiply both numerator and denominator by the conjugate.
+------------------------------------------------------------------------------
+
+Problem 6 (Kol103):
+What is the complex number that, when squared, gives 25 - 10i?
+A) 5 + 3i
+B) 5 - 3i
+C) -5 + 3i
+D) -5 - 3i
+Correct Answer: A
+
+Solution:
+Let the complex number be a + bi. Squaring it gives (a + bi)^2 = a^2 + 2abi - b^2i^2
+Since i^2 = -1, substitute -1 for i^2:
+(a + bi)^2 = a^2 + 2ab - b^2(-1)
+= a^2 + 2ab + b^2
+Set the real and imaginary parts equal to 25 - 10i:
+a^2 + b^2 = 25 (real part)
+2ab = -10 (imaginary part)
+Solve for a and b, choosing positive values since the real part of the square root should be positive. The complex number is 5 + 3i.
+
+Explanation:
+Set up equations for the real and imaginary parts after squaring. A common mistake is overlooking the sign of the imaginary part when solving for a and b.
+
+Common mistake note:
+Common mistake: Forgetting to consider both positive and negative solutions.
+------------------------------------------------------------------------------
+
+Problem 7 (Mno104):
+What is the sum of (2 + 3i) and (-4 - 5i)?
+A) (6 - 2i)
+B) (-2 - 2i)
+C) (2 - 8i)
+D) (-2 - 8i)
+Correct Answer: B
+
+Solution:
+Add complex numbers by combining the real parts and imaginary parts separately:
+(2 + 3i) + (-4 - 5i) = (2 - 4) + (3i - 5i)
+= -2 - 2i
+The correct answer is (B): (-2 - 2i).
+
+Explanation:
+Add the real parts and imaginary parts separately. A common mistake is mixing up the addition of real and imaginary parts.
+
+Common mistake note:
+Common mistake: Mixing up the addition of real and imaginary parts.
+------------------------------------------------------------------------------

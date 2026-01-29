@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.3.11 Find second derivatives
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.3 Derivatives - Advanced Rules
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (OneVariableSecondDerivativeEasy1):
+Find the second derivative of f(x) = 2x^3.
+A) 6x
+B) 12x^2
+C) 24x
+D) 48x^3
+Correct Answer: B
+
+Solution:
+The first derivative is f'(x) = 6x^2. The second derivative is f''(x) = 12x^2.
+
+Explanation:
+Apply the power rule twice: if f(x) = x^n, then f'(x) = nx^(n-1) and f''(x) = n(n-1)x^(n-2).
+
+Common mistake note:
+Common mistake: Differentiating the original function again instead of the first derivative.
+------------------------------------------------------------------------------
+
+Problem 2 (OneVariableSecondDerivativeEasy2):
+Find the second derivative of g(x) = 5x^4 - 3x^2.
+A) 20x^3 - 6x
+B) 60x^3 - 18x
+C) 120x^3 - 6x
+D) 120x^3 - 18x
+Correct Answer: D
+
+Solution:
+First derivative: g'(x) = 20x^3 - 6x. Second derivative: g''(x) = 60x^2 - 6.
+
+Explanation:
+Apply the power rule twice, differentiating each term separately: f'(x) = nx^(n-1).
+
+Common mistake note:
+Common mistake: Forgetting to differentiate both terms or mixing up coefficients when applying the power rule.
+------------------------------------------------------------------------------
+
+Problem 3 (OneVariableSecondDerivativeMedium1):
+Find the second derivative of h(x) = x^5 - 4x^3 + 2x.
+A) 5x^4 - 12x^2 + 2
+B) 20x^4 - 36x^2 + 2
+C) 30x^4 - 72x^2 + 2
+D) 40x^4 - 96x^2 + 2
+Correct Answer: B
+
+Solution:
+First derivative: h'(x) = 5x^4 - 12x^2 + 2. Second derivative: h''(x) = 20x^3 - 24x.
+
+Explanation:
+Apply the power rule twice, differentiating each term separately: f'(x) = nx^(n-1).
+
+Common mistake note:
+Common mistake: Forgetting to multiply coefficients by exponents or incorrect addition/subtraction of coefficients.
+------------------------------------------------------------------------------
+
+Problem 4 (OneVariableSecondDerivativeMedium2):
+Find the second derivative of p(x) = x^6 - 3x^4 + 2x^2.
+A) 6x^5 - 12x^3 + 4x
+B) 36x^5 - 48x^3 + 8x
+C) 24x^5 - 72x^3 + 8x
+D) 72x^5 - 96x^3 + 8x
+Correct Answer: D
+
+Solution:
+First derivative: p'(x) = 6x^5 - 12x^3 + 4x. Second derivative: p''(x) = 30x^4 - 36x^2.
+
+Explanation:
+Apply the power rule twice, differentiating each term separately: f'(x) = nx^(n-1).
+
+Common mistake note:
+Common mistake: Forgetting to multiply coefficients by exponents or incorrect addition/subtraction of coefficients.
+------------------------------------------------------------------------------
+
+Problem 5 (OneVariableSecondDerivativeMedium3):
+Find the second derivative of q(x) = 2sin(x) + 3cos(x).
+A) 2cos(x) - 3sin(x)
+B) -2cos(x) - 3sin(x)
+C) -2cos(x) + 3sin(x)
+D) 2cos(x) + 3sin(x)
+Correct Answer: B
+
+Solution:
+First derivative: q'(x) = 2cos(x) - 3sin(x). Second derivative: q''(x) = -2sin(x) - 3cos(x).
+
+Explanation:
+Use the chain rule and derivatives of sine and cosine: d/dx[sin(x)] = cos(x), d/dx[cos(x)] = -sin(x).
+
+Common mistake note:
+Common mistake: Forgetting to apply the negative sign with cosine or mixing up signs with the chain rule.
+------------------------------------------------------------------------------
+
+Problem 6 (OneVariableSecondDerivativeHard1):
+Find the second derivative of r(x) = e^(2x) - 5e^(-x).
+A) 4e^(2x) + 5e^(-x)
+B) 8e^(2x) + 5e^(-x)
+C) 8e^(2x) - 5e^(-x)
+D) 4e^(2x) - 5e^(-x)
+Correct Answer: A
+
+Solution:
+First derivative: r'(x) = 2e^(2x) + 5e^(-x). Second derivative: r''(x) = 4e^(2x) - 5e^(-x).
+
+Explanation:
+Use the chain rule and d/dx[e^(kx)] = ke^(kx), where k is a constant. Here, k = 2 for the first term and k = -1 for the second term.
+
+Common mistake note:
+Common mistake: Forgetting to multiply by the constant k or mixing up signs with the chain rule.
+------------------------------------------------------------------------------
+
+Problem 7 (OneVariableSecondDerivativeHard2):
+Find the second derivative of s(x) = ln(3x^2 + 1).
+A) (6x)/(3x^2 + 1)^2
+B) (6x^2 - 3)/(3x^2 + 1)^2
+C) (12x)/(3x^2 + 1)^2
+D) (12x^2 - 6)/(3x^2 + 1)^2
+Correct Answer: C
+
+Solution:
+First derivative: s'(x) = (6x)/(3x^2 + 1). Second derivative: s''(x) = (12 - 6x^2)/(3x^2 + 1)^2.
+
+Explanation:
+Use the chain rule and d/dx[ln(u)] = du/du * u'/u. Here, u = 3x^2 + 1, so du/du = 6x and u' = 6x.
+
+Common mistake note:
+Common mistake: Forgetting to multiply by the derivative of the inner function or incorrectly applying the power rule for the denominator.
+------------------------------------------------------------------------------

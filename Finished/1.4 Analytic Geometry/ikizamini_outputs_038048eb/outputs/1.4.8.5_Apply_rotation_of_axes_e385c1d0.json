@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.8.5",
+  "objective_text": "Apply rotation of axes",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "A coordinate point (x, y) is transformed by rotating the axes by 45 degrees counterclockwise. What are the new coordinates of the point after rotation?",
+      "choices": {
+        "A": "(x + y, x - y)",
+        "B": "(x + y, y - x)",
+        "C": "(sqrt(2)*x, sqrt(2)*y)",
+        "D": "(sqrt(2)*(x+y), sqrt(2)*(x-y))"
+      },
+      "correct_choice": "D",
+      "solution": "The transformation matrix for a 45- degree counterclockwise rotation is [sqrt(2)/2, -sqrt(2)/2; sqrt(2)/2, sqrt(2)/2]. Applying this to the point (x, y) gives us the new coordinates: x' = (sqrt(2)/2)x + (sqrt(2)/2)y and y' = (sqrt(2)/2)x - (sqrt(2)/2)y. Simplifying these expressions gives us the answer D.",
+      "explanation": "The rotation of axes changes the coordinate system, but the point's position relative to the new axes remains the same.",
+      "common_mistake_notes": "A common mistake is to forget that both x and y are affected by the rotation or to mix up the signs when applying the rotation matrix."
+    },
+    {
+      "id": "Zxc123",
+      "stem": "Given a point (3, 4) and a rotation of 60 degrees counterclockwise, what are the new coordinates of the point?",
+      "choices": {
+        "A": "(5sqrt(3) - 4, 5sqrt(3) + 4)",
+        "B": "(2sqrt(3) - 4, 2sqrt(3) + 4)",
+        "C": "(5sqrt(3) + 4, 5sqrt(3) - 4)",
+        "D": "(2sqrt(3) + 4, 2sqrt(3) - 4)"
+      },
+      "correct_choice": "B",
+      "solution": "The transformation matrix for a 60-degree counterclockwise rotation is [cos(60), -sin(60); sin(60), cos(60)]. Applying this to the point (3, 4) gives us x' = 3*cos(60) + 4*sin(60) and y' = 3*sin(60) - 4*cos(60). Simplifying these expressions gives us the answer B.",
+      "explanation": "Remember that cos(60) = 1/2 and sin(60) = sqrt(3)/2 when calculating the new coordinates.",
+      "common_mistake_notes": "A common mistake is to use the wrong trigonometric values for 60 degrees or to apply the rotation matrix incorrectly."
+    },
+    {
+      "id": "Ghy123",
+      "stem": "The point (2, -1) is rotated around the origin by 90 degrees counterclockwise. What are the new coordinates of the point?",
+      "choices": {
+        "A": "(1, 2)",
+        "B": "(-1, -2)",
+        "C": "(-2, 1)",
+        "D": "(2, -1)"
+      },
+      "correct_choice": "C",
+      "solution": "A 90-degree counterclockwise rotation around the origin swaps the x and y coordinates with their negatives. So, the new coordinates are (-2, 1).",
+      "explanation": "Rotating a point by 90 degrees counterclockwise is equivalent to swapping its coordinates and negating one of them.",
+      "common_mistake_notes": "A common mistake is to forget that one coordinate must be negated after rotation."
+    },
+    {
+      "id": "Bvn123",
+      "stem": "The equation of a line in the rotated coordinate system is y' = 2x' - 1. What was the original equation before rotating the axes by 30 degrees counterclockwise?",
+      "choices": {
+        "A": "y = x sqrt(3) - 1",
+        "B": "y = x - sqrt(3)",
+        "C": "y = x + sqrt(3)",
+        "D": "y = x sqrt(3) + 1"
+      },
+      "correct_choice": "A",
+      "solution": "The rotation matrix for a 30-degree counterclockwise rotation is [cos(30), -sin(30); sin(30), cos(30)]. To find the original equation, we need to multiply x' and y' by their respective coefficients in the matrix. This gives us y = (2*cos(30))x + (-sin(30))*(-1). Simplifying this expression gives us the answer A.",
+      "explanation": "When converting an equation from a rotated coordinate system back to the original, we need to undo the rotation by multiplying the variables with their corresponding coefficients in the inverse rotation matrix.",
+      "common_mistake_notes": "A common mistake is to use the wrong trigonometric values for 30 degrees or to apply the rotation matrix incorrectly."
+    },
+    {
+      "id": "Jkl123",
+      "stem": "The equation of a parabola in the rotated coordinate system is y' = x'^2 - 4x' + 3. What was the original equation before rotating the axes by 45 degrees counterclockwise?",
+      "choices": {
+        "A": "y = (x + sqrt(2))^2 - 4(x + sqrt(2)) + 3",
+        "B": "y = (x - sqrt(2))^2 - 4(x - sqrt(2)) + 3",
+        "C": "y = x^2 - 4sqrt(2)x + 3",
+        "D": "y = x^2 - 4x + 3"
+      },
+      "correct_choice": "D",
+      "solution": "Since the rotation affects only the coordinates but not the algebraic form of the equation, the original equation remains the same. The answer is D.",
+      "explanation": "Rotating the axes does not change the shape or coefficients of a parabola; it only shifts the position of the vertex.",
+      "common_mistake_notes": "A common mistake is to mistakenly apply the rotation matrix to the variables in the equation, which would be incorrect for a quadratic function."
+    },
+    {
+      "id": "Uij123",
+      "stem": "The area of a rectangle in the original coordinate system is 10 square units. After rotating it by 90 degrees counterclockwise, what is the new area?",
+      "choices": {
+        "A": "10 square units",
+        "B": "5 square units",
+        "C": "20 square units",
+        "D": "sqrt(2) square units"
+      },
+      "correct_choice": "A",
+      "solution": "The area of a rectangle does not change when it is rotated; only its orientation changes. So, the new area remains 10 square units.",
+      "explanation": "Rotating an object does not change its intrinsic properties like area or volume.",
+      "common_mistake_notes": "A common mistake is to think that the area might change due to the shape's appearance after rotation."
+    },
+    {
+      "id": "Qwe123",
+      "stem": "The equation of a circle in the rotated coordinate system is x'^2 + y'^2 = 9. What was the original equation before rotating the axes by 60 degrees counterclockwise?",
+      "choices": {
+        "A": "(x - sqrt(3))^2 + (y - 1)^2 = 9",
+        "B": "(x + sqrt(3))^2 + (y + 1)^2 = 9",
+        "C": "(x^2 + y^2) / 2 = 9",
+        "D": "x^2 + y^2 = 9"
+      },
+      "correct_choice": "D",
+      "solution": "Since the rotation affects only the coordinates but not the algebraic form of the equation, the original equation remains the same. The answer is D.",
+      "explanation": "Rotating a circle does not change its shape or radius; it only shifts the center.",
+      "common_mistake_notes": "A common mistake is to mistakenly apply the rotation matrix to the variables in the equation, which would be incorrect for a quadratic function involving both x and y."
+    }
+  ]
+}

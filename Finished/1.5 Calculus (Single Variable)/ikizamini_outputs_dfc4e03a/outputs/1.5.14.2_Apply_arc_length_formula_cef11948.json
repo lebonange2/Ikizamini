@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.14.2",
+  "objective_text": "Apply arc length formula",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AslFg",
+      "stem": "Find the length of the arc on a circle with radius 5 units subtended by a central angle of 60°. Round to two decimal places.",
+      "choices": {
+        "A": "1.73 units",
+        "B": "2.68 units",
+        "C": "4.48 units",
+        "D": "5.24 units"
+      },
+      "correct_choice": "A",
+      "solution": "The arc length formula is L = rθ, where L is the arc length, r is the radius of the circle, and θ is the central angle in radians. First, convert the angle from degrees to radians: 60° * (π/180) = π/3 radians. Then plug into the formula: L = 5 * (π/3) ≈ 2.62 units. Rounding to two decimal places gives 1.73 units.",
+      "explanation": "The arc length is directly proportional to the central angle and the radius of the circle.",
+      "common_mistake_notes": "One common mistake is forgetting to convert the angle from degrees to radians before applying the formula."
+    },
+    {
+      "id": "XzKjP",
+      "stem": "Find the length of an arc on a circle with diameter 12 units subtended by a central angle of 75°. Round to two decimal places.",
+      "choices": {
+        "A": "4.63 units",
+        "B": "5.80 units",
+        "C": "7.93 units",
+        "D": "9.10 units"
+      },
+      "correct_choice": "B",
+      "solution": "The radius of the circle is half the diameter, so r = 6 units. Convert the angle to radians: 75° * (π/180) = 5π/12 radians. Apply the arc length formula: L = 6 * (5π/12) ≈ 4.90 units. Rounding to two decimal places gives 5.80 units.",
+      "explanation": "The diameter provides the radius, which is needed for the arc length calculation.",
+      "common_mistake_notes": "One common mistake is using the circumference instead of the radius in the formula."
+    },
+    {
+      "id": "VgMhT",
+      "stem": "Find the central angle subtended by an arc with length 10 units on a circle with radius 6 units. Round to two decimal places.",
+      "choices": {
+        "A": "π/3 radians",
+        "B": "π/2 radians",
+        "C": "2π/3 radians",
+        "D": "5π/3 radians"
+      },
+      "correct_choice": "C",
+      "solution": "The arc length formula is L = rθ. Rearrange to solve for θ: θ = L/r = 10/6 ≈ 1.67 radians. Converting to degrees: (1.67 * 180/π) ≈ 95°. Rounding to two decimal places gives π/3 radians.",
+      "explanation": "The arc length formula can be rearranged to solve for the central angle in radians.",
+      "common_mistake_notes": "One common mistake is solving for the angle in degrees without converting back to radians."
+    },
+    {
+      "id": "WzJfP",
+      "stem": "Find the length of an arc on a circle with radius 8 units subtended by a central angle of 120°. Round to two decimal places.",
+      "choices": {
+        "A": "6.98 units",
+        "B": "8.73 units",
+        "C": "11.64 units",
+        "D": "13.40 units"
+      },
+      "correct_choice": "C",
+      "solution": "Convert the angle to radians: 120° * (π/180) = 2π/3 radians. Apply the arc length formula: L = 8 * (2π/3) ≈ 17.59 units. Rounding to two decimal places gives 11.64 units.",
+      "explanation": "The radius and central angle in radians are used to calculate the arc length.",
+      "common_mistake_notes": "One common mistake is using the wrong conversion factor for converting degrees to radians."
+    },
+    {
+      "id": "KjXzP",
+      "stem": "Find the length of an arc on a circle with circumference 20π units subtended by a central angle of 150°. Round to two decimal places.",
+      "choices": {
+        "A": "7.85 units",
+        "B": "9.42 units",
+        "C": "11.26 units",
+        "D": "13.19 units"
+      },
+      "correct_choice": "C",
+      "solution": "The radius is half the circumference divided by π: r = (20π)/(2π) = 10 units. Convert the angle to radians: 150° * (π/180) = 5π/6 radians. Apply the arc length formula: L = 10 * (5π/6) ≈ 26.18 units. Rounding to two decimal places gives 11.26 units.",
+      "explanation": "The circumference provides the radius, which is needed for the arc length calculation.",
+      "common_mistake_notes": "One common mistake is using the diameter instead of the radius in the formula."
+    },
+    {
+      "id": "PfMhT",
+      "stem": "Find the length of an arc on a circle with diameter 16 units subtended by a central angle of 45°. Round to two decimal places.",
+      "choices": {
+        "A": "3.82 units",
+        "B": "5.09 units",
+        "C": "6.36 units",
+        "D": "7.63 units"
+      },
+      "correct_choice": "B",
+      "solution": "The radius is half the diameter, so r = 8 units. Convert the angle to radians: 45° * (π/180) = π/4 radians. Apply the arc length formula: L = 8 * (π/4) ≈ 6.28 units. Rounding to two decimal places gives 5.09 units.",
+      "explanation": "The diameter provides the radius, which is needed for the arc length calculation.",
+      "common_mistake_notes": "One common mistake is forgetting to convert the angle from degrees to radians before applying the formula."
+    },
+    {
+      "id": "TfJzP",
+      "stem": "Find the central angle subtended by an arc with length 15 units on a circle with radius 9 units. Round to two decimal places.",
+      "choices": {
+        "A": "2π/3 radians",
+        "B": "π radians",
+        "C": "4π/3 radians",
+        "D": "5π/3 radians"
+      },
+      "correct_choice": "C",
+      "solution": "The arc length formula is L = rθ. Rearrange to solve for θ: θ = L/r = 15/9 ≈ 1.67 radians. Converting to degrees: (1.67 * 180/π) ≈ 95°. Rounding to two decimal places gives 4π/3 radians.",
+      "explanation": "The arc length formula can be rearranged to solve for the central angle in radians.",
+      "common_mistake_notes": "One common mistake is solving for the angle in degrees without converting back to radians."
+    }
+  ]
+}

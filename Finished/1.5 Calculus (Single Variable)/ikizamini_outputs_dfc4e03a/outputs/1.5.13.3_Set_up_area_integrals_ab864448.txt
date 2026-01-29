@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.13.3 Set up area integrals
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.13 Applications of Integrals - Area and Volume
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (IndefiniteIntegral_Area):
+Find the integral that represents the area under the curve y = x^2 from x=0 to x=3.
+A) ∫(x^2) dx from 0 to 3
+B) ∫(3x^2) dx from 0 to 1
+C) ∫(x^3) dx from 0 to 3
+D) ∫(x^2) dx from 1 to 3
+Correct Answer: A
+
+Solution:
+The area under the curve y = x^2 can be found by integrating y with respect to x and evaluating the definite integral from x=0 to x=3. The correct setup is ∫(x^2) dx from 0 to 3.
+
+Explanation:
+To find the area, we integrate the function that describes the curve and evaluate it over the given interval. In this case, y = x^2.
+
+Common mistake note:
+A common mistake would be integrating with respect to a different variable or using an incorrect upper or lower limit.
+------------------------------------------------------------------------------
+
+Problem 2 (DefiniteIntegral_Area):
+Find the integral that represents the area between the curve y = sin(x) and the x-axis from x=0 to x=π.
+A) ∫(sin(x)) dx from 0 to π
+B) ∫(-cos(x)) dx from 0 to π
+C) ∫(cos(x)) dx from 0 to π
+D) ∫(2sin(x)) dx from 0 to π
+Correct Answer: B
+
+Solution:
+The area between the curve y = sin(x) and the x-axis is found by integrating the absolute value of the function. Since sin(x) is positive in the given interval, we integrate -cos(x), which is the negative of the derivative of sin(x). The correct setup is ∫(-cos(x)) dx from 0 to π.
+
+Explanation:
+To find the area between a curve and the x-axis, we integrate the absolute value of the function. In this case, since sin(x) is positive over [0, π], we integrate -cos(x).
+
+Common mistake note:
+A common mistake would be integrating sin(x) directly without considering its sign or integrating cos(x) instead of -cos(x), which represents the negative area.
+------------------------------------------------------------------------------
+
+Problem 3 (Area_BetweenCurves_Area):
+Find the integral that represents the area between the curves y = x^2 and y = 4x from x=0 to x=2.
+A) ∫((4x - x^2)) dx from 0 to 2
+B) ∫((x^2 - 4x)) dx from 0 to 2
+C) ∫((x^2 + 4x)) dx from 0 to 2
+D) ∫((-x^2 + 4x)) dx from 0 to 2
+Correct Answer: D
+
+Solution:
+The area between two curves is found by integrating the difference of the upper and lower functions. In this case, y = 4x is above y = x^2. The correct setup is ∫((-x^2 + 4x)) dx from 0 to 2.
+
+Explanation:
+To find the area between two curves, we integrate the difference between the higher curve and the lower curve over the given interval. Here, 4x > x^2 on [0, 2].
+
+Common mistake note:
+A common mistake would be integrating (x^2 - 4x) instead of (-x^2 + 4x), which represents the area below the x-axis.
+------------------------------------------------------------------------------
+
+Problem 4 (Area_ShadedRegion_Area):
+Find the integral that represents the area of the shaded region in the graph of y = cos(x) from x=0 to x=π, where the region is bounded by the curve and the x-axi...},...}]},
+A) ∫(cos(x)) dx from 0 to π
+B) 2∫(cos(x)) dx from 0 to π
+C) ∫(|cos(x)|) dx from 0 to π
+D) ∫((π - x)cos(x)) dx from 0 to π
+Correct Answer: C
+
+Solution:
+The area of the shaded region, which includes both positive and negative parts of the curve y = cos(x), is found by integrating the absolute value of the function. The correct setup is ∫(|cos(x)|) dx from 0 to π.
+
+Explanation:
+To find the area of a region that includes both above and below x-axis regions, we integrate the absolute value of the function. Here, cos(x) changes sign over [0, π].
+
+Common mistake note:
+A common mistake would be integrating cos(x) directly without considering its sign or using an incorrect interval.
+------------------------------------------------------------------------------
+
+Problem 5 (Area_Revolved_Area):
+Find the integral that represents the volume of the solid formed by revolving the region between y = x^2 and y = x from x=0 to x=1 around the x-axis.
+A) π∫((x - x^2)^2) dx from 0 to 1
+B) π∫((x^2 - x)^2) dx from 0 to 1
+C) π∫((x^3 - x^2)^2) dx from 0 to 1
+D) π∫((x - x^3)^2) dx from 0 to 1
+Correct Answer: B
+
+Solution:
+The volume of a solid formed by revolving the region between two curves around the x-axis is found using the washer method, which involves integrating the difference of the outer and inner radii squared. The correct setup is π∫((x^2 - x)^2) dx from 0 to 1.
+
+Explanation:
+To find the volume of a solid formed by revolving a region around an axis, we integrate the area of washers (annuli), which is π(r_out^2 - r_in^2). Here, x^2 > x on [0, 1].
+
+Common mistake note:
+A common mistake would be integrating (x^3 - x)^2 or using an incorrect interval.
+------------------------------------------------------------------------------
+
+Problem 6 (Area_Revolved_Area):
+Find the integral that represents the volume of the solid formed by revolving the region between y = sin(x) and y = cos(x) from x=0 to x=π/2 around the y-axis.
+A) π∫((cos(x) - sin(x))^2) dy from 0 to π/2
+B) π∫((sin(x) - cos(x))^2) dy from 0 to π/2
+C) π∫((cos^2(x) - sin^2(x))) dy from 0 to π/2
+D) π∫((sin^2(x) - cos^2(x))) dy from 0 to π/2
+Correct Answer: A
+
+Solution:
+The volume of a solid formed by revolving the region between two curves around the y-axis is found using the shell method, which involves integrating the product of the height and width. The correct setup is π∫((cos(x) - sin(x))^2) dy from 0 to π/2.
+
+Explanation:
+To find the volume of a solid formed by revolving a region around an axis using the shell method, we integrate (2πx)(f(x) - g(x)), where f(x) is above g(x). Here, cos(x) > sin(x) on [0, π/2].
+
+Common mistake note:
+A common mistake would be integrating (sin(x) - cos(x))^2 or using an incorrect interval.
+------------------------------------------------------------------------------
+
+Problem 7 (Area_Revolved_Area):
+Find the integral that represents the volume of the solid formed by revolving the region between y = x^3 and y = x around the line y=1, from x=0 to x=1.
+A) π∫((x - (1 - x^3))^2) dx from 0 to 1
+B) π∫(((1 - x)^3 - x)^2) dx from 0 to 1
+C) π∫((x^3 - (1 - x))^2) dx from 0 to 1
+D) π∫(((1 - x^3) - x)^2) dx from 0 to 1
+Correct Answer: A
+
+Solution:
+The volume of a solid formed by revolving the region between two curves around a horizontal line is found using the washer method. The correct setup is π∫((x - (1 - x^3))^2) dx from 0 to 1.
+
+Explanation:
+To find the volume of a solid formed by revolving a region around a horizontal line, we integrate the area of washers (annuli), which is π(r_out^2 - r_in^2). Here, x < 1 - x^3 on [0, 1].
+
+Common mistake note:
+A common mistake would be integrating ((1 - x)^3 - x)^2 or using an incorrect interval.
+------------------------------------------------------------------------------

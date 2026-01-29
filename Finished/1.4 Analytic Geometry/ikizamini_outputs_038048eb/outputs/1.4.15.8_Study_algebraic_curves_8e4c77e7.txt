@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.15.8 Study algebraic curves
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.15 Advanced Analytic Geometry
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the equation of a circle with center (2, 3) and radius 4?
+A) (x - 2)^2 + (y - 3)^2 = 16
+B) (x + 2)^2 + (y + 3)^2 = 16
+C) (x - 2)^2 + (y - 3)^2 = 4
+D) (x + 2)^2 + (y + 3)^2 = 4
+Correct Answer: A
+
+Solution:
+The equation of a circle with center (h, k) and radius r is given by (x - h)^2 + (y - k)^2 = r^2. For the circle with center (2, 3) and radius 4, we substitute h=2, k=3, and r=4 into the equation.
+
+Explanation:
+The correct formula for a circle's equation is used here, resulting in (x - 2)^2 + (y - 3)^2 = 16. The other choices either have incorrect center coordinates or an incorrect radius.
+
+Common mistake note:
+Common mistake: Using the wrong signs for the x and y terms, which would result in a circle with its center at (-2, -3).
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is the equation of a parabola with vertex (1, -3) and opening upwards?
+A) (y + 3)^2 = 4(x - 1)
+B) (y - 3)^2 = 4(x + 1)
+C) (x + 1)^2 = 4(y - 3)
+D) (x - 1)^2 = 4(y + 3)
+Correct Answer: A
+
+Solution:
+The equation of a parabola in vertex form is given by (y - k)^2 = 4p(x - h), where (h, k) is the vertex and p determines the direction and width of the parabola. For a parabola with vertex (1, -3) opening up, we have p > 0.
+
+Explanation:
+The correct formula for a parabola's equation in vertex form is used here, resulting in (y + 3)^2 = 4(x - 1). The other choices either have incorrect vertex coordinates or an incorrect direction of opening.
+
+Common mistake note:
+Common mistake: Using the wrong sign for the y term, which would result in a parabola with its vertex at (1, 3) and opening down.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the equation of the line tangent to the curve y = x^2 - 4x + 5 at the point (3, 2).
+A) y = 2x - 4
+B) y = 2x - 1
+C) y = x - 1
+D) y = x + 1
+Correct Answer: C
+
+Solution:
+First, find the derivative of y with respect to x: y' = 2x - 4. Then evaluate the derivative at x = 3 to get the slope of the tangent line: m = 2(3) - 4 = 2. Finally, use point-slope form to find the equation of the line: y - 2 = 2(x - 3).
+
+Explanation:
+The correct tangent line's slope is found by differentiating the curve and evaluating at the given point. The equation is then derived using point-slope form.
+
+Common mistake note:
+Common mistake: Forgetting to differentiate the function to find the slope of the tangent line.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the equation of an ellipse with center (0, 0), major axis length 10, and minor axis length 6?
+A) x^2/36 + y^2/100 = 1
+B) x^2/100 + y^2/36 = 1
+C) x^2/9 + y^2/25 = 1
+D) x^2/25 + y^2/9 = 1
+Correct Answer: B
+
+Solution:
+The equation of an ellipse with center (0, 0) and major and minor axes along the x and y axes is given by x^2/a^2 + y^2/b^2 = 1, where a is half the length of the major axis and b is half the length of the minor axis. Here, a=5 and b=3.
+
+Explanation:
+The correct equation for an ellipse is used here, resulting in x^2/100 + y^2/36 = 1. The other choices either have incorrect major or minor axis lengths or swapped axes.
+
+Common mistake note:
+Common mistake: Mixing up the values of a and b when constructing the equation.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the equation of the hyperbola with vertices at (±3, 0) and foci at (±5, 0).
+A) x^2/9 - y^2/4 = 1
+B) x^2/4 - y^2/9 = 1
+C) x^2/6 - y^2/11 = 1
+D) x^2/11 - y^2/6 = 1
+Correct Answer: A
+
+Solution:
+The equation of a hyperbola with vertices at (±a, 0) and foci at (±c, 0) is given by x^2/a^2 - y^2/(c^2 - a^2) = 1. Here, a=3 and c=5, so c^2 - a^2 = 16 - 9 = 7.
+
+Explanation:
+The correct equation for a hyperbola is used here, resulting in x^2/9 - y^2/4 = 1. The other choices either have incorrect vertices or foci coordinates or an incorrect difference of squares.
+
+Common mistake note:
+Common mistake: Mixing up the values of a and c when constructing the equation.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the equation of the rational curve given by the function y = (2x^3 - 5x)/(3x^2 + 1) at the point (1, -1).
+A) y = (2x^3 - 5x)/(3x^2 + 1)
+B) y = (x^2 - 6x + 5)/(3x + 4)
+C) y = x - 2
+D) y = -1/2x + 1/2
+Correct Answer: C
+
+Solution:
+First, substitute the point (1, -1) into the function to find the slope of the tangent line: m = y'(1) = -1. Then use point-slope form to find the equation of the curve at this point: y + 1 = -1(x - 1).
+
+Explanation:
+The correct rational curve's slope is found by differentiating the function and evaluating at the given point. The equation is then derived using point-slope form.
+
+Common mistake note:
+Common mistake: Forgetting to differentiate the rational function to find the slope of the tangent line.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the equation of a rectangular hyperbola with asymptotes y = x and y = -x?
+A) xy = 1
+B) xy = -1
+C) x^2 - y^2 = 1
+D) x^2 - y^2 = -1
+Correct Answer: A
+
+Solution:
+The equation of a rectangular hyperbola with asymptotes y = mx and y = -mx is given by xy = k, where k is a constant. For the case m=1, we have xy = 1.
+
+Explanation:
+The correct equation for a rectangular hyperbola with the given asymptotes is used here, resulting in xy = 1. The other choices either have incorrect slopes or constants.
+
+Common mistake note:
+Common mistake: Not recognizing that the slope of the asymptotes determines the form of the rectangular hyperbola's equation.
+------------------------------------------------------------------------------

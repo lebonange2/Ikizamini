@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.2.11",
+  "objective_text": "Apply distributive property",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Simplify the expression: 3(4x + 5)",
+      "choices": {
+        "A": "12x + 8",
+        "B": "12x + 15",
+        "C": "15x + 8",
+        "D": "15x + 20"
+      },
+      "correct_choice": "B",
+      "solution": "3(4x + 5) = 3 \times 4x + 3 \times 5 = 12x + 15",
+      "explanation": "The distributive property states that a \times (b + c) = a \times b + a \times c. We apply this property to distribute the 3 across both terms inside the parentheses.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply each term within the parentheses by the outside number."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Simplify the expression: (5 - 2)(7x + 3)",
+      "choices": {
+        "A": "21x + 15",
+        "B": "21x - 9",
+        "C": "35x - 6",
+        "D": "35x + 6"
+      },
+      "correct_choice": "A",
+      "solution": "(5 - 2)(7x + 3) = 3 \times 7x + 3 \times 3 = 21x + 9",
+      "explanation": "We apply the distributive property twice, first distributing the (5 - 2) across the terms inside the second set of parentheses.",
+      "common_mistake_notes": "A common mistake is subtracting the numbers outside the parentheses before distributing."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Simplify the expression: 7(4y - 6)",
+      "choices": {
+        "A": "28y - 14",
+        "B": "28y - 42",
+        "C": "28y + 42",
+        "D": "49y - 6"
+      },
+      "correct_choice": "B",
+      "solution": "7(4y - 6) = 7 \times 4y - 7 \times 6 = 28y - 42",
+      "explanation": "The distributive property is applied to distribute the 7 across both terms inside the parentheses.",
+      "common_mistake_notes": "A common mistake is adding the numbers outside the parentheses instead of multiplying."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Simplify the expression: (2x + 3)(5 - x)",
+      "choices": {
+        "A": "10x - 2x^2 + 15 - 3x",
+        "B": "10x + 2x^2 + 15 - 3x",
+        "C": "10x - 2x^2 - 15 + 3x",
+        "D": "10x + 2x^2 - 15 + 3x"
+      },
+      "correct_choice": "A",
+      "solution": "(2x + 3)(5 - x) = 2x \times 5 + 2x \times (-x) + 3 \times 5 + 3 \times (-x) = 10x - 2x^2 + 15 - 3x",
+      "explanation": "We apply the distributive property twice, distributing each term in the first set of parentheses across both terms in the second set.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply the negative sign when multiplying by -x."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Simplify the expression: 4(3z + 2) - 2(6z - 1)",
+      "choices": {
+        "A": "12z + 8 - 12z + 2",
+        "B": "12z + 8 - 12z - 2",
+        "C": "12z + 8 + 12z - 2",
+        "D": "12z + 8 - 18z + 2"
+      },
+      "correct_choice": "D",
+      "solution": "4(3z + 2) - 2(6z - 1) = (4 \times 3z + 4 \times 2) - (2 \times 6z - 2 \times 1) = 12z + 8 - 12z + 2",
+      "explanation": "We apply the distributive property to each set of parentheses, then combine like terms.",
+      "common_mistake_notes": "A common mistake is not combining the like terms (12z and -12z) after distributing."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Simplify the expression: 6(2w - 3) + 3(4w + 5)",
+      "choices": {
+        "A": "18w - 18 + 12w + 15",
+        "B": "18w - 18 + 12w - 15",
+        "C": "18w + 18 + 12w + 15",
+        "D": "18w + 18 + 12w - 15"
+      },
+      "correct_choice": "A",
+      "solution": "6(2w - 3) + 3(4w + 5) = (6 \times 2w - 6 \times 3) + (3 \times 4w + 3 \times 5) = 18w - 18 + 12w + 15",
+      "explanation": "We apply the distributive property to each set of parentheses, then combine like terms.",
+      "common_mistake_notes": "A common mistake is not combining the like terms (18w and 12w) after distributing."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Simplify the expression: 3(5a - 4b) - 2(6a + 3b)",
+      "choices": {
+        "A": "15a - 12b - 12a - 6b",
+        "B": "15a - 12b - 12a + 6b",
+        "C": "15a + 12b - 12a - 6b",
+        "D": "15a + 12b - 12a + 6b"
+      },
+      "correct_choice": "A",
+      "solution": "3(5a - 4b) - 2(6a + 3b) = (3 \times 5a - 3 \times 4b) - (2 \times 6a + 2 \times 3b) = 15a - 12b - 12a - 6b",
+      "explanation": "We apply the distributive property to each set of parentheses, then combine like terms.",
+      "common_mistake_notes": "A common mistake is not combining the like terms (15a and -12a) or (-12b and -6b) after distributing."
+    }
+  ]
+}

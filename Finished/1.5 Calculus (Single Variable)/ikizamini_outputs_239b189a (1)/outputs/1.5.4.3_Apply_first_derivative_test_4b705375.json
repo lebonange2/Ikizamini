@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.4.3",
+  "objective_text": "Apply first derivative test",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Find the critical points of the function f(x) = x^3 - 6x^2 + 9x and determine their nature using the First Derivative Test.",
+      "choices": {
+        "A": "(1, 0), minimum",
+        "B": "(3, 0), maximum",
+        "C": "(3, 0), minimum",
+        "D": "(-3, 0), inflection point"
+      },
+      "correct_choice": "C",
+      "solution": "f'(x) = 3x^2 - 12x + 9. Setting f'(x) to zero gives x = 1 and x = 3. At x = 1, f''(x) = 6 > 0, so it's a minimum. At x = 3, f''(x) = -6 < 0, so it's a maximum.",
+      "explanation": "The first derivative test helps determine the nature of critical points by examining the sign changes of the second derivative. A positive second derivative indicates a minimum, while a negative second derivative indicates a maximum.",
+      "common_mistake_notes": "A common mistake is to forget to check the concavity (second derivative) at the critical points. Not checking this can lead to misidentifying the nature of the point."
+    },
+    {
+      "id": "Bghj",
+      "stem": "Find the intervals of increase and decrease for the function g(x) = x^4 - 8x^3 + 18x^2.",
+      "choices": {
+        "A": "(0, 3), decreasing; (3, ∞), increasing",
+        "B": "(-∞, 0), decreasing; (0, 3), increasing",
+        "C": "(-∞, 3), decreasing; (3, ∞), increasing",
+        "D": "(-∞, 0) and (3, ∞), increasing; (0, 3), decreasing"
+      },
+      "correct_choice": "C",
+      "solution": "g'(x) = 4x^3 - 24x^2 + 36x. Setting g'(x) to zero gives x = 0, x = 3, and x = 3 (repeated root). Since g'(x) changes sign from negative to positive at x = 3, it's a point of decrease-to-increase transition.",
+      "explanation": "To find intervals of increase and decrease, we need to determine where the first derivative is positive or negative. The critical points divide the domain into intervals where the sign of the derivative remains constant.",
+      "common_mistake_notes": "A common mistake is to misinterpret the change in sign at x = 3 as a point of increase-to-decrease transition, which would be incorrect."
+    },
+    {
+      "id": "Qwer",
+      "stem": "Determine the intervals of concavity for the function h(x) = x^5 - 10x^4 + 25x^3.",
+      "choices": {
+        "A": "(-∞, 0), decreasing; (0, 5), increasing",
+        "B": "(0, 5), decreasing; (5, ∞), increasing",
+        "C": "(-∞, 0) and (5, ∞), decreasing; (0, 5), increasing",
+        "D": "(-∞, 5), decreasing; (5, ∞), increasing"
+      },
+      "correct_choice": "B",
+      "solution": "h'(x) = 5x^4 - 40x^3 + 75x^2. h''(x) = 20x^3 - 120x^2 + 150x. Setting h''(x) to zero gives x = 0, x = 3, and x = 5 (repeated roots). Since h''(x) changes sign from negative to positive at x = 3, it's a point of concave down- to-concave up transition.",
+      "explanation": "To find intervals of concavity, we need to determine where the second derivative is positive or negative. The critical points divide the domain into intervals where the sign of the second derivative remains constant.",
+      "common_mistake_notes": "A common mistake is to misinterpret the change in sign at x = 3 as a point of concave up- to-concave down transition, which would be incorrect."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "Find the absolute minimum value and its corresponding x-value for the function j(x) = x^2 - 4x + 5 on the interval [0, 6].",
+      "choices": {
+        "A": "(1, 2), minimum",
+        "B": "(3, 2), minimum",
+        "C": "(3, 2), maximum",
+        "D": "(6, 29), minimum"
+      },
+      "correct_choice": "B",
+      "solution": "j'(x) = 2x - 4. Setting j'(x) to zero gives x = 2. Since x = 2 is not within the interval [0, 6], we evaluate the function at the endpoints: j(0) = 5 and j(6) = 29. The minimum value occurs at x = 3 with j(3) = 2.",
+      "explanation": "To find the absolute minimum on a closed interval, we first locate any critical points within the interval, then evaluate the function at those points and the endpoints of the interval.",
+      "common_mistake_notes": "A common mistake is to overlook the evaluation of the function at the interval endpoints, which could lead to missing the actual minimum value."
+    },
+    {
+      "id": "Bvnmm",
+      "stem": "Find the inflection point(s) for the function k(x) = x^3 - 6x^2 + 9x.",
+      "choices": {
+        "A": "(1, 0), inflection point",
+        "B": "(3, 0), inflection point",
+        "C": "(-3, 0), inflection point",
+        "D": "No inflection points"
+      },
+      "correct_choice": "B",
+      "solution": "k'(x) = 3x^2 - 12x + 9. k''(x) = 6x - 12. Setting k''(x) to zero gives x = 2. Since k''(2) changes sign from negative to positive, x = 2 is an inflection point. However, it's not within the domain of k(x), so there are no inflection points for this function.",
+      "explanation": "To find inflection points, we need to determine where the second derivative changes sign. If the change in sign occurs within the domain of the function, that x-value corresponds to an inflection point.",
+      "common_mistake_notes": "A common mistake is to assume that any critical point of the second derivative is an inflection point, without checking if the sign change actually occurs within the domain."
+    },
+    {
+      "id": "Xcvbn",
+      "stem": "Find the relative extrema for the function l(x) = x^3 - 6x^2 + 9x on the interval [-1, 5].",
+      "choices": {
+        "A": "(-1, 20), minimum; (5, 0), maximum",
+        "B": "(1, 2), minimum; (3, 0), maximum",
+        "C": "(3, 0), minimum; (5, -20), maximum",
+        "D": "(-1, 2), maximum; (3, 0), minimum"
+      },
+      "correct_choice": "B",
+      "solution": "l'(x) = 3x^2 - 12x + 9. Setting l'(x) to zero gives x = 1 and x = 3. Evaluating the function at these points and the endpoints of the interval, we find that l(1) = 2 is a minimum and l(3) = 0 is a maximum.",
+      "explanation": "To find relative extrema on a closed interval, we first locate any critical points within the interval, then evaluate the function at those points and the endpoints of the interval.",
+      "common_mistake_notes": "A common mistake is to misinterpret the signs of the second derivative when determining the nature of the extrema. This can lead to incorrect identifications of minimums and maximums."
+    },
+    {
+      "id": "Poiuy",
+      "stem": "Find the intervals where the function m(x) = x^4 - 8x^3 + 18x^2 is concave down.",
+      "choices": {
+        "A": "(-∞, 0), decreasing",
+        "B": "(0, 3), decreasing",
+        "C": "(3, ∞), decreasing",
+        "D": "No intervals of concave down"
+      },
+      "correct_choice": "B",
+      "solution": "m'(x) = 4x^3 - 24x^2 + 36x. m''(x) = 12x^2 - 48x + 36. Setting m''(x) to zero gives x = 0 and x = 3 (repeated roots). Since m''(0) > 0 and m''(3) < 0, the interval of concave down is between these two points: (0, 3).",
+      "explanation": "To find intervals of concavity, we need to determine where the second derivative is positive or negative. The critical points divide the domain into intervals where the sign of the second derivative remains constant.",
+      "common_mistake_notes": "A common mistake is to overlook the fact that m''(0) > 0 and assume that the interval of concave down starts at x = 0, which would be incorrect."
+    }
+  ]
+}

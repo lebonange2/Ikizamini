@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.5.13",
+  "objective_text": "Prove logical equivalences",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Which of the following is logically equivalent to (p ∧ q) → r?",
+      "choices": {
+        "A": "(¬p ∨ ¬q) ∨ r",
+        "B": "p → (q → r)",
+        "C": "r → (p ∧ q)",
+        "D": "¬(p ∧ q) ∨ r"
+      },
+      "correct_choice": "D",
+      "solution": "The given statement can be rewritten using the definition of implication: (p ∧ q) → r is equivalent to ¬(p ∧ q) ∨ r. Therefore, option D is correct.",
+      "explanation": "This question tests understanding of proving logical equivalences by manipulating conditional statements and using De Morgan's laws.",
+      "common_mistake_notes": "A common mistake would be selecting C, which represents the converse of the original statement but not logically equivalent."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Which of the following is logically equivalent to ¬(p ∧ q) ↔ (¬p ∨ ¬q)?",
+      "choices": {
+        "A": "p → q",
+        "B": "p ↔ q",
+        "C": "p ∨ q",
+        "D": "p ≡ q"
+      },
+      "correct_choice": "A",
+      "solution": "The given statement is a biconditional, which can be rewritten as two implications: ¬(p ∧ q) → (¬p ∨ ¬q) and (¬p ∨ ¬q) → ¬(p ∧ q). These are equivalent to p → q and q → p, respectively. Therefore, option A is correct.",
+      "explanation": "This question assesses the ability to prove logical equivalences by understanding biconditionals and converting them into implications.",
+      "common_mistake_notes": "A common mistake would be selecting B, which represents material equivalence but does not capture the relationship between p and q in the original statement."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Which of the following is logically equivalent to (p → q) ∧ (q → r)?",
+      "choices": {
+        "A": "r → p",
+        "B": "p → r",
+        "C": "p ≡ r",
+        "D": "¬(p ∨ ¬r)"
+      },
+      "correct_choice": "B",
+      "solution": "The given statement can be simplified by applying the definition of implication: (p → q) ∧ (q → r) is equivalent to ¬p ∨ q and ¬q ∨ r. By using associativity, we get ¬p ∨ (q ∧ ¬q) ∨ r, which simplifies to ¬p ∨ r. This is equivalent to p → r. Therefore, option B is correct.",
+      "explanation": "This question tests understanding of manipulating compound statements and applying logical rules such as conjunction and disjunction.",
+      "common_mistake_notes": "A common mistake would be selecting A, which represents the converse relationship but not the same implication as the original statement."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Which of the following is logically equivalent to (p ∨ q) ↔ (¬p → q)?",
+      "choices": {
+        "A": "q ≡ p",
+        "B": "p ≡ ¬q",
+        "C": "p ∧ q",
+        "D": "p ∨ ¬q"
+      },
+      "correct_choice": "D",
+      "solution": "The given statement can be rewritten as: (p ∨ q) ↔ ¬(¬p ∨ q). Using De Morgan's laws, this becomes: (p ∨ q) ↔ (p ∧ ¬q). By the distributive law, we get: p ∧ (q ∨ ¬q), which simplifies to p. Therefore, option D is correct.",
+      "explanation": "This question assesses the ability to prove logical equivalences by applying De Morgan's laws and understanding the relationship between disjunction and negation.",
+      "common_mistake_notes": "A common mistake would be selecting A, which represents a biconditional that does not hold for all values of p and q."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Which of the following is logically equivalent to (p ∧ q) ∨ (¬p ∧ r)?",
+      "choices": {
+        "A": "p ∨ r",
+        "B": "q ∨ r",
+        "C": "p ≡ r",
+        "D": "p ∧ q ∧ r"
+      },
+      "correct_choice": "A",
+      "solution": "The given statement can be simplified by using the distributive law: (p ∧ q) ∨ (¬p ∧ r) is equivalent to p ∧ (q ∨ ¬p) ∨ r. Since q ∨ ¬p is a tautology, it simplifies to p ∨ r. Therefore, option A is correct.",
+      "explanation": "This question tests understanding of manipulating compound statements and applying distributive law.",
+      "common_mistake_notes": "A common mistake would be selecting B, which represents only one possible case but not the complete logical equivalence."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Which of the following is logically equivalent to (p → q) ∨ (q → p)?",
+      "choices": {
+        "A": "p ≡ q",
+        "B": "p ∧ q",
+        "C": "p ∨ q",
+        "D": "¬(p ∨ q)"
+      },
+      "correct_choice": "C",
+      "solution": "The given statement can be rewritten as: ¬p ∨ q and ¬q ∨ p. By using associativity, we get: (¬p ∨ q) ∧ (¬q ∨ p), which is equivalent to (p ∨ q) ∧ (¬p ∨ ¬q). Using De Morgan's laws, this becomes: (p ∨ q) ∧ ¬(p ∧ q). Since p ∨ q is a tautology, the entire expression simplifies to p ∨ q. Therefore, option C is correct.",
+      "explanation": "This question assesses the ability to prove logical equivalences by manipulating compound statements and applying De Morgan's laws.",
+      "common_mistake_notes": "A common mistake would be selecting A, which represents material equivalence but does not capture the relationship between p and q in the original statement."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Which of the following is logically equivalent to ¬(p ∧ q) ∨ (p ∧ ¬q)?",
+      "choices": {
+        "A": "p ≡ q",
+        "B": "¬p ∨ ¬q",
+        "C": "p ∨ ¬q",
+        "D": "¬p ∧ ¬q"
+      },
+      "correct_choice": "C",
+      "solution": "The given statement can be simplified by using De Morgan's laws: ¬(p ∧ q) ∨ (p ∧ ¬q) is equivalent to (¬p ∨ ¬q) ∨ (p ∧ ¬q). By the associative law, we get: ((¬p ∨ p) ∧ ¬q), which simplifies to ¬q. Therefore, option C is correct.",
+      "explanation": "This question tests understanding of manipulating compound statements and applying De Morgan's laws.",
+      "common_mistake_notes": "A common mistake would be selecting A, which represents material equivalence but does not capture the relationship between p and q in the original statement."
+    }
+  ]
+}

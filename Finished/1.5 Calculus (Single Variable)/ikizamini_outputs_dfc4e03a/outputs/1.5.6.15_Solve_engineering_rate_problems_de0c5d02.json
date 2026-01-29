@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.6.15",
+  "objective_text": "Solve engineering rate problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "OneMachineOneProduct",
+      "stem": "A machine produces widgets at a constant rate of 10 widgets per minute. How many widgets will it produce in 45 minutes?",
+      "choices": {
+        "A": "400",
+        "B": "450",
+        "C": "500",
+        "D": "550"
+      },
+      "correct_choice": "B",
+      "solution": "To find the total number of widgets produced, multiply the rate by the time: 10 widgets/minute × 45 minutes = 450 widgets.",
+      "explanation": "The solution is obtained directly from multiplying the given rate and time.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply the two values, resulting in an incorrect total."
+    },
+    {
+      "id": "TwoMachinesSameRate",
+      "stem": "Two identical machines produce widgets at a constant rate of 15 widgets per minute. How many widgets will they produce together in 30 minutes?",
+      "choices": {
+        "A": "400",
+        "B": "450",
+        "C": "900",
+        "D": "1200"
+      },
+      "correct_choice": "C",
+      "solution": "Each machine produces 15 widgets per minute, so together they produce 15 × 2 = 30 widgets/minute. In 30 minutes, they will produce 30 widgets/minute × 30 minutes = 900 widgets.",
+      "explanation": "The solution accounts for the combined rate of both machines and multiplies it by the given time.",
+      "common_mistake_notes": "A common mistake would be to multiply only one machine's rate by the total time, neglecting that there are two machines working simultaneously."
+    },
+    {
+      "id": "MachineAndHumanRate",
+      "stem": "A machine produces widgets at a constant rate of 20 widgets per minute, while a human operator can produce 5 widgets per minute. If they work together for 25 minutes, how many widgets will they produce in total?",
+      "choices": {
+        "A": "600",
+        "B": "750",
+        "C": "800",
+        "D": "1000"
+      },
+      "correct_choice": "C",
+      "solution": "The machine produces 20 widgets per minute and the human operator produces 5 widgets per minute, so together they produce 20 + 5 = 25 widgets/minute. In 25 minutes, they will produce 25 widgets/minute × 25 minutes = 625 widgets.",
+      "explanation": "The solution combines the rates of both the machine and the human operator and multiplies it by the given time.",
+      "common_mistake_notes": "A common mistake would be to add the total number of widgets produced by each separately, without considering that they are working simultaneously."
+    },
+    {
+      "id": "FlowRateAndTime",
+      "stem": "Water flows through a pipe at a constant rate of 0.5 gallons per second. How many gallons will flow through the pipe in 4 minutes?",
+      "choices": {
+        "A": "12",
+        "B": "18",
+        "C": "24",
+        "D": "30"
+      },
+      "correct_choice": "A",
+      "solution": "To find the total volume, multiply the rate by the time: 0.5 gallons/second × 60 seconds/minute × 4 minutes = 12 gallons.",
+      "explanation": "The solution converts minutes to seconds and multiplies the flow rate by the total number of seconds in the given time period.",
+      "common_mistake_notes": "A common mistake would be to forget to convert minutes to seconds, leading to an incorrect volume calculation."
+    },
+    {
+      "id": "DistanceAndSpeed",
+      "stem": "A car travels at a constant speed of 60 miles per hour. How far will it travel in 2 hours and 30 minutes?",
+      "choices": {
+        "A": "150",
+        "B": "180",
+        "C": "210",
+        "D": "240"
+      },
+      "correct_choice": "C",
+      "solution": "To find the distance, multiply the speed by the time: 60 miles/hour × 2.5 hours = 150 miles.",
+      "explanation": "The solution calculates the total distance by multiplying the given speed by the total travel time in hours.",
+      "common_mistake_notes": "A common mistake would be to forget to convert the 30 minutes to hours, resulting in an incorrect distance calculation."
+    },
+    {
+      "id": "MultipleRatesAndTime",
+      "stem": "A factory has three production lines: Line A produces at a rate of 12 units per minute, Line B produces at a rate of 8 units per minute, and Line C produces at a rate of 6 units per minute. If all lines operate simultaneously for 30 minutes, how many units will be produced in total?",
+      "choices": {
+        "A": "900",
+        "B": "1200",
+        "C": "1500",
+        "D": "1800"
+      },
+      "correct_choice": "C",
+      "solution": "The total production rate is 12 + 8 + 6 = 26 units/minute. In 30 minutes, they will produce 26 units/minute × 30 minutes = 780 units.",
+      "explanation": "The solution combines the rates of all three production lines and multiplies it by the given time.",
+      "common_mistake_notes": "A common mistake would be to add the total number of units produced by each line separately, without considering that they are working simultaneously."
+    },
+    {
+      "id": "RateAndEfficiency",
+      "stem": "An engineer can assemble a widget in 10 minutes when working alone. If two engineers work together with the same efficiency, how long will it take them to assemble 5 widgets?",
+      "choices": {
+        "A": "20",
+        "B": "30",
+        "C": "40",
+        "D": "50"
+      },
+      "correct_choice": "B",
+      "solution": "One engineer can assemble a widget in 10 minutes, so two engineers working together can assemble one widget in 5 minutes. To assemble 5 widgets, they will take 5 minutes/widget × 5 widgets = 25 minutes.",
+      "explanation": "The solution accounts for the increased efficiency when two engineers work together and calculates the total time to assemble 5 widgets.",
+      "common_mistake_notes": "A common mistake would be to assume that the time halves with each additional engineer, neglecting that the rate of assembly increases proportionally to the number of engineers working."
+    }
+  ]
+}

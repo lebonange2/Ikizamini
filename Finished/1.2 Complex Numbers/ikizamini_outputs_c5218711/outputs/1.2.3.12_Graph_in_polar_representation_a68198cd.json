@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.12",
+  "objective_text": "Graph in polar representation",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which of the following equations represents a circle with radius 3 centered at the origin in polar coordinates?",
+      "choices": {
+        "A": "r = 9θ",
+        "B": "r = 3",
+        "C": "r^2 = 9",
+        "D": "\\theta = 3"
+      },
+      "correct_choice": "B",
+      "solution": "The equation of a circle with radius $r$ centered at the origin in polar coordinates is given by $r = r$. So, for a circle with radius 3, the equation is $r = 3$.",
+      "explanation": "Option A represents an angle-dependent curve, option C represents a concentric circle pattern, and option D represents a straight line along the angular direction.",
+      "common_mistake_notes": "Common mistake: Choosing option C, which describes a set of circles with different radii centered at the origin, rather than a single circle with radius 3."
+    },
+    {
+      "id": "2",
+      "stem": "The polar equation $r = 4\text{cos}(2θ)$ represents what type of curve?",
+      "choices": {
+        "A": "Circle",
+        "B": "Line",
+        "C": "Ellipse",
+        "D": "Cardioid"
+      },
+      "correct_choice": "C",
+      "solution": "The given polar equation is of the form $r = a\text{cos}(nθ)$, which represents an ellipse with the origin as one of its foci when $n ≠ 1$. Since $n = 2$ in this case, it's an ellipse.",
+      "explanation": "Option A (circle) requires $n = 1$, option B (line) is not represented by a polar equation, and option D (cardioid) would have $r = a\text{cos}(θ)$.",
+      "common_mistake_notes": "Common mistake: Choosing option A because of the presence of $\text{cos}(θ)$, but forgetting that the coefficient of $\text{cos}(θ)$ and the value of $n$ determine the shape."
+    },
+    {
+      "id": "3",
+      "stem": "What is the polar representation of the rectangular equation $x^2 + y^2 = 9$?",
+      "choices": {
+        "A": "$r = 3\text{sin}(θ)$",
+        "B": "$r = 3\text{cos}(θ)$",
+        "C": "$r = 9$",
+        "D": "$r^2 = 9$"
+      },
+      "correct_choice": "D",
+      "solution": "The rectangular equation $x^2 + y^2 = r^2$ represents a circle in polar coordinates. Given $x^2 + y^2 = 9$, we can directly write the polar representation as $r^2 = 9$.",
+      "explanation": "Option A and B represent ellipses, option C represents a single point at a distance of 9 from the origin.",
+      "common_mistake_notes": "Common mistake: Choosing options A or B by equating $x^2 + y^2$ to $r\text{sin}(θ)$ or $r\text{cos}(θ)$, which is incorrect for converting a circle equation."
+    },
+    {
+      "id": "4",
+      "stem": "The polar equation $r = 5\text{sin}(θ) + 2\text{cos}(θ)$ represents what type of curve?",
+      "choices": {
+        "A": "Line",
+        "B": "Parabola",
+        "C": "Hyperbola",
+        "D": "Lemniscate"
+      },
+      "correct_choice": "B",
+      "solution": "The given polar equation is a sum of $r\text{sin}(θ)$ and $r\text{cos}(θ)$, which represents a parabola in polar coordinates.",
+      "explanation": "Option A (line) would have only one trigonometric function, option C (hyperbola) requires different coefficients for sine and cosine, and option D (lemniscate) has a form $r^n = a^n\text{cos}^n(θ) + b^n\text{sin}^n(θ)$.",
+      "common_mistake_notes": "Common mistake: Choosing option C because of the presence of both sine and cosine, but not recognizing that their coefficients are equal."
+    },
+    {
+      "id": ",&#34;stem&#34;: &#34;The rectangular coordinates for the point with polar coordinates $(4, \frac{π}{3})$ are?&#34;, &#34;choices&#34;: {&#34;A&#34;: &#34;(2, 2\text{sqrt(3)})&#34;, &#34;B&#34;: &#34;(2\text{sqrt(3)}, 2)&#34;, &#34;C&#34;: &#34;(4\text{sqrt(3)}, 4)&#34;, &#34;D&#34;: &#34;(4, 0)&#34;}, &#34;correct_choice&#34;: &#34;A&#34;, &#34;solution&#34;: &#34;The rectangular coordinates $(x, y)$ can be found using $x = r\text{cos}(θ)$ and $y = r\text{sin}(θ)$. For $(4, \frac{π}{3})$, we have $x = 4\text{cos}(\frac{π}{3}) = 2$ and $y = 4\text{sin}(\frac{π}{3}) = 2\text{sqrt(3)}$.",
+      "stem": "The rectangular coordinates for the point with polar coordinates $(4, \frac{π}{3})$ are?",
+      "choices": {
+        "A": "(2, 2\text{sqrt(3)})",
+        "B": "(2\text{sqrt(3)}, 2)",
+        "C": "(4\text{sqrt(3)}, 4)",
+        "D": "(4, 0)"
+      },
+      "correct_choice": "A",
+      "solution": "The rectangular coordinates $(x, y)$ can be found using $x = r\text{cos}(θ)$ and $y = r\text{sin}(θ)$. For $(4, \frac{π}{3})$, we have $x = 4\text{cos}(\frac{π}{3}) = 2$ and $y = 4\text{sin}(\frac{π}{3}) = 2\text{sqrt(3)}$.",
+      "explanation": "Option B has the sine and cosine flipped, option C multiplies both by $r$, and option D sets $y$ to 0.",
+      "common_mistake_notes": "Common mistake: Mixing up the roles of sine and cosine when converting from polar to rectangular coordinates."
+    },
+    {
+      "id": "6",
+      "stem": "The polar equation for a cardioid with its cusp at the origin is?",
+      "choices": {
+        "A": "$r = 2 + 2\text{cos}(θ)$",
+        "B": "$r = 2 - 2\text{sin}(θ)$",
+        "C": "$r = 1 + \text{cos}(θ)$",
+        "D": "$r = 1 + \text{sin}(θ)$"
+      },
+      "correct_choice": "C",
+      "solution": "The polar equation for a cardioid with its cusp at the origin is given by $r = a + a\text{cos}(θ)$ or $r = a + a\text{sin}(θ)$. The correct choice here is $r = 1 + \text{cos}(θ)$.",
+      "explanation": "Option A and B represent limaçons, option D represents an epicycloid.",
+      "common_mistake_notes": "Common mistake: Choosing options A or B because they have a similar form to the cardioid equation but with sine instead of cosine."
+    },
+    {
+      "id": "7",
+      "stem": "The polar coordinates for the point with rectangular coordinates $(3\text{sqrt(2)}, 3\text{sqrt(2)})$ are?",
+      "choices": {
+        "A": "$(6, \frac{π}{4})$",
+        "B": "$(6, \frac{π}{2})$",
+        "C": "$(3\text{sqrt(2)}, \frac{π}{4})$",
+        "D": "$(3\text{sqrt(2)}, 0)$"
+      },
+      "correct_choice": "A",
+      "solution": "The polar coordinates $(r, θ)$ can be found using $r = \text{sqrt}(x^2 + y^2)$ and $\text{tan}(\theta) = \frac{y}{x}$. For $(3\text{sqrt(2)}, 3\text{sqrt(2)})$, we have $r = \text{sqrt}(9 + 9) = 6$ and $\text{tan}(\theta) = 1$, which gives $\theta = \frac{π}{4}$.",
+      "explanation": "Option B sets θ to $\frac{π}{2}$, option C uses the rectangular coordinates directly instead of finding the polar representation, and option D sets $r$ to $3\text{sqrt(2)}$ but does not find the correct angle.",
+      "common_mistake_notes": "Common mistake: Mixing up the roles of sine and cosine when converting from rectangular to polar coordinates."
+    }
+  ]
+}

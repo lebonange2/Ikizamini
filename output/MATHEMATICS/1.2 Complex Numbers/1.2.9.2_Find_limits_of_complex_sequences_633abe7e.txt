@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.9.2 Find limits of complex sequences
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.9 Complex Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the limit of the sequence (z_n) where z_n = (-1)^n + i^n as n approaches infinity?
+A) -1
+B) i
+C) 0
+D) Does not exist
+Correct Answer: C
+
+Solution:
+The sequence alternates between -1 and i. As n approaches infinity, there is no single value that the sequence converges to. Therefore, the limit does not exist.
+
+Explanation:
+When dealing with complex sequences, consider both real and imaginary parts separately. In this case, the real part alternates between -1 and 0 (since (-1)^n oscillates), while the imaginary part alternates between 1 and i (since i^n also oscillates). Since neither part converges, the limit does not exist.
+
+Common mistake note:
+A common mistake is to choose A or B, assuming convergence based on one part. Both parts must converge for a limit to exist.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the limit of the complex sequence (z_n) where z_n = (n^2 + 3ni)/(5n^2 - 4) as n approaches infinity.
+A) 0
+B) i
+C) 3/5 + 4i/5
+D) Does not exist
+Correct Answer: A
+
+Solution:
+Divide by the highest power of n: (1 + 3i/n)/(5 - 4/n^2). As n→∞, 3i/n→0 and 4/n^2→0. Limit is 1/5 + 0i = 0.
+
+Explanation:
+Simplify complex rational expressions by dividing both parts by the highest power of n in the denominator. This shows how the sequence behaves as n grows large.
+
+Common mistake note:
+A common mistake is to choose C, assuming the limit is the ratio of leading coefficients (3/5 + 4i/5). For complex sequences, consider each term's behavior.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Evaluate the limit of the sequence (z_n) where z_n = e^(niπ) as n approaches infinity.
+A) 1
+B) -1
+C) i
+D) Does not exist
+Correct Answer: D
+
+Solution:
+z_n represents a point on the unit circle with angle nπ. As n→∞, the angle becomes unbounded and the sequence does not converge. Limit does not exist.
+
+Explanation:
+For complex exponentials, recognize they represent points on a circle. As n grows, the angle increases without bound, so the limit does not exist.
+
+Common mistake note:
+A common mistake is to choose A or B, thinking the sequence might converge due to periodicity. However, as n→∞, it never repeats.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the limit of the complex sequence (z_n) where z_n = (n + i)/(n - i) as n approaches infinity.
+A) 1
+B) -1
+C) i
+D) Does not exist
+Correct Answer: A
+
+Solution:
+Multiply by the conjugate: (n + i)(n + i)/(n - i)(n + i) = (n^2 + 2ni - 1)/(n^2 + 1). Limit is 1 as n→∞.
+
+Explanation:
+Multiplying by the conjugate eliminates imaginary terms in the denominator, making it easier to see the limit behavior. Here, the limit is 1.
+
+Common mistake note:
+A common mistake is to choose B or C, assuming the limit relates to i. However, simplifying with the conjugate shows the limit is 1.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Evaluate the limit of the sequence (z_n) where z_n = sin(nπ)/n as n approaches infinity.
+A) 0
+B) π
+C) 1
+D) Does not exist
+Correct Answer: A
+
+Solution:
+sin(nπ) oscillates between -1 and 1, while n grows without bound. As n→∞, sin(nπ)/n approaches 0.
+
+Explanation:
+For trigonometric functions, consider their range compared to the growth rate of the other term. Here, since sin(nπ) is bounded and n increases, the limit is 0.
+
+Common mistake note:
+A common mistake is to choose B or C, thinking the limit might be related to π or 1. The oscillating nature of sin(nπ) and increasing denominator ensure the limit is 0.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the limit of the complex sequence (z_n) where z_n = (n + i)/(2n - 3i) as n approaches infinity.
+A) 1/2 + 3i/2
+B) 1/2 - 3i/2
+C) 3/2 + i/2
+D) Does not exist
+Correct Answer: A
+
+Solution:
+Multiply by the conjugate: (n + i)(2n + 3i)/(2n - 3i)(2n + 3i) = (2n^2 + 5ni - 3)/(4n^2 + 6ni - 9). Limit is 1/2 + 3i/2 as n→∞.
+
+Explanation:
+Multiplying by the conjugate simplifies the expression, showing the limit is a complex number with real and imaginary parts. Here, the limit is A.
+
+Common mistake note:
+A common mistake is to choose B or C, assuming an opposite sign due to i. After simplification, the correct limit is A.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Evaluate the limit of the sequence (z_n) where z_n = (n^2 + 3ni)/(n^2 - 4i) as n approaches infinity.
+A) 1
+B) i
+C) Does not exist
+D) 0
+Correct Answer: C
+
+Solution:
+Both numerator and denominator grow with n. As n→∞, neither part converges to a single value. Limit does not exist.
+
+Explanation:
+When both real and imaginary parts grow with n, they may not converge. Here, since both contain n^2, the ratio doesn't approach a finite limit as n grows.
+
+Common mistake note:
+A common mistake is to choose A or B, assuming the limit relates to leading coefficients (1 or i). Both parts growing means the correct answer is C.
+------------------------------------------------------------------------------

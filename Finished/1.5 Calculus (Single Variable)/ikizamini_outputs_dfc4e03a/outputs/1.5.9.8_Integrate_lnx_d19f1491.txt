@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.9.8 Integrate ln(x)
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.9 Integration Techniques - By Parts
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Incremental Difficulty 1):
+Evaluate the definite integral of ln(x) from 1 to e.
+A) 0
+B) 1
+C) e - 1
+D) 2
+Correct Answer: B
+
+Solution:
+The antiderivative of ln(x) is x * ln(x) - x. Evaluate at the limits: (e * ln(e) - e) - (1 * ln(1) - 1) = e - 1.
+
+Explanation:
+This question tests basic integration of ln(x).
+
+Common mistake note:
+A common mistake is to forget to evaluate the antiderivative at both limits.
+------------------------------------------------------------------------------
+
+Problem 2 (Incremental Difficulty 2):
+Evaluate the indefinite integral of (ln(x))^2 dx.
+A) x * ln(x)^2 - x
+B) x * ln(x) - x
+C) x^2 / 2 * ln(x)
+D) x * ln(x)^2 + C
+Correct Answer: D
+
+Solution:
+The antiderivative of (ln(x))^2 is x * ln(x)^2 + C. Apply the power rule for integration.
+
+Explanation:
+This question tests integration of a composite function with ln(x).
+
+Common mistake note:
+A common mistake is to integrate ln(x) first without considering the exponent.
+------------------------------------------------------------------------------
+
+Problem 3 (Incremental Difficulty 3):
+Evaluate the definite integral of (1/x) * ln(x) dx from 1 to e^2.
+A) e - 1
+B) e^2 - 1
+C) 2(e - 1)
+D) 2(e^2 - 1)
+Correct Answer: C
+
+Solution:
+The antiderivative of (1/x) * ln(x) is ln(x)^2 / 2. Evaluate at the limits: (ln(e^2)^2 / 2) - (ln(1)^2 / 2) = 2(e - 1).
+
+Explanation:
+This question tests integration by parts with ln(x).
+
+Common mistake note:
+A common mistake is to integrate (1/x) first without using integration by parts.
+------------------------------------------------------------------------------
+
+Problem 4 (Incremental Difficulty 4):
+Evaluate the indefinite integral of x * ln(x) dx.
+A) (x^2 / 2) * ln(x)
+B) x^2 * ln(x) - (x^2 / 2)
+C) x^2 * ln(x) + C
+D) x * ln(x)^2 + C
+Correct Answer: B
+
+Solution:
+The antiderivative of x * ln(x) is x^2 * ln(x) - (x^2 / 2). Apply integration by parts.
+
+Explanation:
+This question tests integration by parts with a product involving ln(x).
+
+Common mistake note:
+A common mistake is to integrate ln(x) first without using integration by parts.
+------------------------------------------------------------------------------
+
+Problem 5 (Incremental Difficulty 5):
+Evaluate the definite integral of (x^2 + 1) / x * ln(x) dx from 1 to e.
+A) (e - 1)^2
+B) (e - 1)^2 + (e - 1)
+C) (e - 1)^2 + 1
+D) (e - 1)^2 + e
+Correct Answer: D
+
+Solution:
+The antiderivative of (x^2 + 1) / x * ln(x) is x^2 * ln(x) - x + C. Evaluate at the limits: ((e^2) * ln(e) - e) - ((1^2) * ln(1) - 1) = (e - 1)^2 + e.
+
+Explanation:
+This question tests integration by parts with a more complex rational function involving ln(x).
+
+Common mistake note:
+A common mistake is to integrate (x^2 + 1) / x first without using integration by parts.
+------------------------------------------------------------------------------
+
+Problem 6 (Incremental Difficulty 6):
+Evaluate the definite integral of sin(x) / x * ln(x) dx from π/2 to π, where ln(x) is the natural logarithm.
+A) 0
+B) π - π/2
+C) π^2 / 2 - (π/2)^2
+D) π * ln(π) - (π/2) * ln(π/2)
+Correct Answer: D
+
+Solution:
+The antiderivative of sin(x) / x * ln(x) is π * ln(π) - (π/2) * ln(π/2). Apply integration by parts and note that sin(π/2) = 1 and sin(π) = 0.
+
+Explanation:
+This question tests integration by parts with a trigonometric function and ln(x).
+
+Common mistake note:
+A common mistake is to integrate sin(x) / x first without using integration by parts.
+------------------------------------------------------------------------------
+
+Problem 7 (Incremental Difficulty 7):
+Evaluate the definite integral of cos(x) / x * ln(x) dx from π/2 to π, where ln(x) is the natural logarithm.
+A) π - π/2
+B) π^2 / 2 - (π/2)^2
+C) π * ln(π) - (π/2) * ln(π/2)
+D) 0
+Correct Answer: A
+
+Solution:
+The antiderivative of cos(x) / x * ln(x) is π - π/2. Apply integration by parts and note that cos(π/2) = 1 and cos(π) = -1.
+
+Explanation:
+This question tests integration by parts with a trigonometric function and ln(x), and the use of limits to evaluate the definite integral.
+
+Common mistake note:
+A common mistake is to integrate cos(x) / x first without using integration by parts.
+------------------------------------------------------------------------------

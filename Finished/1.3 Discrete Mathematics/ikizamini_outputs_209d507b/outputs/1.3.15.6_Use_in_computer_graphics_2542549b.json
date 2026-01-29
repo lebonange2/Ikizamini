@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.15.6",
+  "objective_text": "Use in computer graphics",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Which of the following is a common use of vectors in computer graphics?",
+      "choices": {
+        "A": "Representing colors",
+        "B": "Calculating intersections of lines",
+        "C": "Storing font information",
+        "D": "Encoding audio data"
+      },
+      "correct_choice": "B",
+      "solution": "Vectors are often used in computer graphics to calculate the intersection points of lines, which is essential for rendering 2D and 3D objects accurately. While vectors can be involved in other tasks like representing colors (A), they primarily serve geometric calculations in this context.",
+      "explanation": "In computer graphics, vectors play a crucial role in geometry processing, making option B the correct answer. Options A, C, and D describe tasks more commonly associated with other data structures or formats.",
+      "common_mistake_notes": "Choosing A (Representing colors) as it might be related to graphics but vectors are not primarily used for color representation."
+    },
+    {
+      "id": "Two",
+      "stem": "What is the primary purpose of normal vectors in computer graphics?",
+      "choices": {
+        "A": "Defining the texture mapping of a surface",
+        "B": "Calculating the angle between surfaces for lighting calculations",
+        "C": "Determining the transparency of an object",
+        "D": "Storing vertex positions"
+      },
+      "correct_choice": "B",
+      "solution": "Normal vectors in computer graphics are primarily used to calculate the angle between surfaces, which is essential for realistic lighting and shading. This information helps create a sense of depth and realism in 3D scenes.",
+      "explanation": "Option B correctly describes the role of normal vectors in lighting calculations. Options A, C, and D refer to different aspects of graphics rendering that are not directly related to normal vectors.",
+      "common_mistake_notes": "Choosing A (Defining texture mapping) as it might be related to surface appearance but normal vectors are more specifically used for lighting effects."
+    },
+    {
+      "id": "Three",
+      "stem": "Which equation is used to calculate the dot product of two vectors in computer graphics?",
+      "choices": {
+        "A": "a × b = a × b",
+        "B": "a × b = |a| × |b|",
+        "C": "a × b = |a| × |b| × cos(θ)",
+        "D": "a × b = a × b + |a| × |b|"
+      },
+      "correct_choice": "C",
+      "solution": "The correct equation to calculate the dot product of two vectors in computer graphics is a × b = |a| × |b| × cos(θ), where θ is the angle between the two vectors. The dot product is used for various operations, such as calculating projections and determining angles.",
+      "explanation": "Option C provides the correct formula for the dot product. Options A, B, and D are either incorrect or represent different mathematical operations.",
+      "common_mistake_notes": "Choosing A (a × b = a × b) as it might resemble the scalar product formula but omits the cosine term, which is crucial for dot products."
+    },
+    {
+      "id": "Four",
+      "stem": "In computer graphics, what do tangents and bitangents vectors help determine?",
+      "choices": {
+        "A": "The color of a pixel",
+        "B": "The surface normal at a point",
+        "C": "The texture coordinates on a surface",
+        "D": "The orientation of an object in 3D space"
+      },
+      "correct_choice": "C",
+      "solution": "Tangents and bitangents vectors in computer graphics are used to determine the texture coordinates on a surface, allowing for realistic texturing and mapping of images onto 3D models.",
+      "explanation": "Option C accurately describes the role of tangents and bitangents. Options A, B, and D refer to different aspects of graphics rendering that are not directly related to these vectors.",
+      "common_mistake_notes": "Choosing B (The surface normal at a point) as it might be related to surface properties but tangents and bitangents are specifically used for texture mapping."
+    },
+    {
+      "id": "Five",
+      "stem": "Which of the following operations is typically performed using vectors in computer graphics?",
+      "choices": {
+        "A": "Blending two images together",
+        "B": "Encoding audio data for a game",
+        "C": "Rotating an object around an axis",
+        "D": "Decompressing video data"
+      },
+      "correct_choice": "C",
+      "solution": "Vector operations, such as scaling and rotation, are commonly used in computer graphics. In this case, rotating an object around an axis is a typical application of vector mathematics.",
+      "explanation": "Option C correctly describes a common use of vectors in graphics. Options A, B, and D involve tasks more related to image or video processing and audio encoding, which typically do not rely on vector operations as their primary method.",
+      "common_mistake_notes": "Choosing A (Blending two images together) as it might be a graphics task but blending is usually done using pixel- based operations rather than vectors."
+    },
+    {
+      "id": "Six",
+      "stem": "What role do vectors play in skeletal animation?",
+      "choices": {
+        "A": "Determining the position of bones in 3D space",
+        "B": "Storing sound effects for characters",
+        "C": "Calculating the texture coordinates on a mesh",
+        "D": "Encoding video data for playback"
+      },
+      "correct_choice": "A",
+      "solution": "In skeletal animation, vectors are used to determine the position and orientation of bones in 3D space. This information is then applied to deform a character's mesh, creating smooth animations.",
+      "explanation": "Option A accurately describes the role of vectors in skeletal animation. Options B, C, and D refer to different aspects of game development that do not involve vector manipulation for this specific task.",
+      "common_mistake_notes": "Choosing C (Calculating texture coordinates on a mesh) as it might be related to graphics but texture mapping is separate from skeletal animation, which primarily uses vectors for bone positioning."
+    },
+    {
+      "id": "Seven",
+      "stem": "Which vector operation is used to calculate the relative position of one point to another?",
+      "choices": {
+        "A": "Scalar multiplication",
+        "B": "Cross product",
+        "C": "Dot product",
+        "D": "Vector subtraction"
+      },
+      "correct_choice": "D",
+      "solution": "To find the relative position of one point to another in computer graphics, vector subtraction is used. This operation calculates the difference between two points' coordinates, resulting in a new vector pointing from the first point to the second.",
+      "explanation": "Option D correctly describes the operation needed for this task. Options A, B, and C serve different purposes in vector mathematics, unrelated to finding relative positions.",
+      "common_mistake_notes": "Choosing B (Cross product) as it might be related to vectors but cross products are used for calculating perpendicular vectors, not relative positions."
+    }
+  ]
+}

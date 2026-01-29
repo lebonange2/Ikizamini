@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.6.3",
+  "objective_text": "Apply chain rule to related rates",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Increasing Volume of Sphere",
+      "stem": "A sphere is expanding such that its radius increases at a rate of 2 cm/s. At what rate is the volume increasing when the radius is 5 cm?",
+      "choices": {
+        "A": "10π cm³/ s",
+        "B": "30π cm³/ s",
+        "C": "60π cm³/ s",
+        "D": "90π cm³/ s"
+      },
+      "correct_choice": "B",
+      "solution": "The volume V of a sphere is given by the formula V = (4/3)πr³. To find the rate of change of volume with respect to time, we apply the chain rule: dV/dt = dV/dr * dr/dt. Given dr/dt = 2 cm/s and r = 5 cm, we first differentiate V with respect to r: dV/dr = 4πr². Now we can find dV/dt: dV/dt = (4π(5cm)²)(2cm/ s) = 100π cm³/ s. Dividing by 3 gives us the final rate of increase: 30π cm³/ s.",
+      "explanation": "The chain rule is applied to relate the rate of change of volume to the rate of change of radius, and then evaluated at the given values.",
+      "common_mistake_notes": "A common mistake would be forgetting to cube the radius when differentiating V with respect to r or not multiplying by dr/dt. This would lead to an incorrect answer."
+    },
+    {
+      "id": "Water Level in Conical Tank",
+      "stem": "Water is being poured into a conical tank at a rate of 2π cubic meters per minute. The tank has a height of 10 meters and a radius at the base of 5 meters. At what rate is the water level rising when it is 4 meters deep?",
+      "choices": {
+        "A": "0.3 m/min",
+        "B": "0.6 m/min",
+        "C": "1.2 m/min",
+        "D": "2.4 m/min"
+      },
+      "correct_choice": "B",
+      "solution": "The volume V of a cone is given by the formula V = (1/3)πr²h, where r is the radius and h is the height. We want to find dh/dt when h = 4 meters. Using the chain rule: dV/dt = dV/dr * dr/dh * dh/dt. Given dV/dt = 2π m³/min, we first differentiate V with respect to r: dV/dr = (2/3)πrh. Since the tank is a cone, the radius is proportional to the height: r/h = 5/10 => r = h/2. Now we can substitute r into our derivative and solve for dh/dt: 2π = (2/3)π(h/2)(dh/dt). Solving for dh/dt gives us 0.6 m/min.",
+      "explanation": "The chain rule is applied to relate the rate of change of volume to the rate of change of radius and height, and then evaluated at the given values.",
+      "common_mistake_notes": "A common mistake would be not realizing that the radius is half the height or not using the correct formula for the volume of a cone. This would lead to an incorrect answer."
+    },
+    {
+      "id": "Deriving Angular Acceleration",
+      "stem": "An object on a spinning disk has an angular velocity ω that increases at a rate of 4 rad/s². If its initial angular velocity is 2 rad/s, what is its angular acceleration after 3 seconds?",
+      "choices": {
+        "A": "16 rad/ s²",
+        "B": "20 rad/ s²",
+        "C": "24 rad/ s²",
+        "D": "28 rad/ s²"
+      },
+      "correct_choice": "C",
+      "solution": "Angular acceleration α is the rate of change of angular velocity with respect to time. To find α after 3 seconds, we can use the chain rule: α = dω/dt. Given dω/dt = 4 rad/s² and ω(0) = 2 rad/s, we integrate dω/dt from 0 to 3 seconds: ω(3) = ∫(4 rad/s² dt) from 0 to 3 = 12 rad/s. Angular acceleration α is constant in this case, so α = 4 rad/s².",
+      "explanation": "The chain rule is applied to relate the rate of change of angular velocity with respect to time, and then integrated to find the angular velocity at a specific time.",
+      "common_mistake_notes": "A common mistake would be thinking that angular acceleration changes over time or not integrating the given rate of change. This would lead to an incorrect answer."
+    },
+    {
+      "id": "Deriving Acceleration of Pendulum",
+      "stem": "A pendulum swings with a length of 1 meter and an angle of 30° from the vertical. If the angle changes at a rate of 2 rad/s, what is the acceleration of the pendulum bob at its lowest point?",
+      "choices": {
+        "A": "1 m/ s²",
+        "B": "2 m/ s²",
+        "C": "3 m/ s²",
+        "D": "4 m/ s²"
+      },
+      "correct_choice": "C",
+      "solution": "At the lowest point, the acceleration of the pendulum bob is purely due to gravity. However, we need to find the total acceleration considering both horizontal and vertical components. The angle θ changes at a rate of 2 rad/s, so its angular velocity ω = dθ/dt = 2 rad/s. At the lowest point, the horizontal acceleration is given by ω²L, where L is the length of the pendulum (1 meter). So, ax = ω²L = (2 rad/ s)²(1 m) = 4 m/ s². The vertical acceleration is due to gravity: ay = -g, where g ≈ 9.8 m/ s². Since the bob is at its lowest point, ay is negative. Total acceleration a = √(ax² + ay²) = √((4 m/ s²)² + (-9.8 m/ s²)²) ≈ 3 m/ s².",
+      "explanation": "The chain rule is applied to relate the rate of change of angle with respect to time, and then used to find the horizontal acceleration at the lowest point. The vertical acceleration due to gravity is also considered.",
+      "common_mistake_notes": "A common mistake would be neglecting the vertical component of acceleration or not considering the negative sign for ay. This would lead to an incorrect answer."
+    },
+    {
+      "id": "Deriving Rate of Change of Sine",
+      "stem": "Find the rate of change of sin(x) when x is changing at a rate of 2 radians per second and x = π/4.",
+      "choices": {
+        "A": "1/√2",
+        "B": "√2/2",
+        "C": "√2",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "The derivative of sin(x) with respect to x is cos(x). To find the rate of change of sin(x) with respect to time, we apply the chain rule: d(sin(x))/dt = d(sin(x))/dx * dx/dt. Given dx/dt = 2 rad/s and x = π/4, we substitute and solve: d(sin(π/4))/dt = cos(π/4)(2 rad/s) = (1/√2)(2 rad/s) = √2/√2 = 1.",
+      "explanation": "The chain rule is applied to relate the rate of change of sin(x) with respect to x and then evaluated at the given values.",
+      "common_mistake_notes": "A common mistake would be not applying the chain rule or using the wrong derivative for sin(x). This would lead to an incorrect answer."
+    },
+    {
+      "id": "Deriving Rate of Change of Exponential",
+      "stem": "The population P of a city grows exponentially at a rate proportional to its current size, with a growth rate of 0.5% per year. If the initial population is 100,000 people, what is the rate of change of the population after 5 years?",
+      "choices": {
+        "A": "500 people/ year",
+        "B": "2,500 people/ year",
+        "C": "5,000 people/ year",
+        "D": "7,500 people/ year"
+      },
+      "correct_choice": "C",
+      "solution": "The population growth can be modeled by the exponential function P = Pe^(rt), where P is the current population, P₀ is the initial population (100,000), r is the growth rate (0.005 for 0.5%), and t is time in years. To find the rate of change of population with respect to time, we apply the chain rule: dP/dt = P * e^(rt) * r. Given P₀ = 100,000, r = 0.005, and t = 5 years, we substitute and solve: dP/dt = 100,000e^(0.005*5)(0.005) ≈ 5,000 people/ year.",
+      "explanation": "The chain rule is applied to relate the rate of change of population with respect to time and then evaluated at the given values.",
+      "common_mistake_notes": "A common mistake would be not using the exponential growth formula or not applying the chain rule correctly. This would lead to an incorrect answer."
+    },
+    {
+      "id": "Deriving Rate of Change of Logarithm",
+      "stem": "The number of bacteria in a culture is given by N = log(100 + t), where N is the number of bacteria and t is time in hours. Find the rate of change of the number of bacteria when there are 5 logarithmic units.",
+      "choices": {
+        "A": "0.25 hour^(-1)",
+        "B": "0.5 hour^(-1)",
+        "C": "1 hour^(-1)",
+        "D": "2 hour^(-1)"
+      },
+      "correct_choice": "A",
+      "solution": "To find the rate of change of N with respect to time, we apply the chain rule: dN/dt = d(log(100 + t))/dt. Since d/dx(log(x)) = 1/x, we have dN/dt = (1/(100 + t))(d(100 + t)/dt) = 1/(100 + t). When N = 5 logarithmic units, t = 100^(5) - 100 ≈ 97.46. Thus, dN/dt ≈ 1/97.46 ≈ 0.0102 ≈ 0.25 hour^(-1).",
+      "explanation": "The chain rule is applied to relate the rate of change of the logarithmic function with respect to time and then evaluated at the given values.",
+      "common_mistake_notes": "A common mistake would be not using the derivative of the logarithm or not evaluating the expression correctly. This would lead to an incorrect answer."
+    }
+  ]
+}

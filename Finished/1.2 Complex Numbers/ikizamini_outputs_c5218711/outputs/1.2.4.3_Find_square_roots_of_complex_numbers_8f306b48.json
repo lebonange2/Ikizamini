@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.4.3",
+  "objective_text": "Find square roots of complex numbers",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the square root of (-8 + 6i)?",
+      "choices": {
+        "A": "-2 + i",
+        "B": "2 - 3i",
+        "C": "4 + 3i",
+        "D": "-2 - 3i"
+      },
+      "correct_choice": "D",
+      "solution": "(a + bi)^2 = a^2 - b^2 + 2abi. For (-8 + 6i), a = -2, b = 3. So, we need to find complex numbers (x + yi) such that x^2 - y^2 = -8 and 2xy = 6. Solving these equations gives us x = -2 and y = -3. Thus, the square root is -2 - 3i.",
+      "explanation": "The correct answer is found by solving for the square roots of the given complex number using the properties of complex numbers.",
+      "common_mistake_notes": "A common mistake would be to choose A (-2 + i) because it seems close, but it does not satisfy the condition that its square equals the original complex number."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the principal square root of (1 - 3i).",
+      "choices": {
+        "A": "1 - √3i",
+        "B": "√3 + i",
+        "C": "-√3 - i",
+        "D": "√3 - i"
+      },
+      "correct_choice": "D",
+      "solution": "The principal square root is the one with a non-negative real part. For (1 - 3i), we have a = 1, b = -3. Solving for x and y gives us x = √(1/2) and y = -√(3/2). The principal square root is √3 - i.",
+      "explanation": "The principal square root of a complex number has a non-negative real part. We solve for the values of x and y that satisfy the given complex number.",
+      "common_mistake_notes": "A common mistake would be to choose B (√3 + i) because it is also a valid square root but not the principal one."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the square root of (25 - 10i)?",
+      "choices": {
+        "A": "5 - √6i",
+        "B": "5 + √6i",
+        "C": "-5 + √6i",
+        "D": "-5 - √6i"
+      },
+      "correct_choice": "A",
+      "solution": "For (25 - 10i), a = 5, b = -5. Solving for x and y gives us x = 5 and y = -√(6/5). The square root is 5 - √6i.",
+      "explanation": "We find the square root by solving for the values of x and y that satisfy the given complex number. Since a is positive, there will be two solutions with opposite imaginary parts.",
+      "common_mistake_notes": "A common mistake would be to choose B (5 + √6i) because it is also a valid square root but not the one we are looking for."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the square root of (-16 + 0i).",
+      "choices": {
+        "A": "-4",
+        "B": "4",
+        "C": "4i",
+        "D": "-4i"
+      },
+      "correct_choice": "A",
+      "solution": "(a + bi)^2 = a^2 - b^2 + 2abi. For (-16 + 0i), a = -4, b = 0. The square root is simply -4 because there is no imaginary part to consider.",
+      "explanation": "When the complex number has zero imaginary part, its square root will also have zero imaginary part. We only need to take the square root of the real part.",
+      "common_mistake_notes": "A common mistake would be to choose C (4i) or D (-4i), but these are not correct because they do not satisfy the condition that their square equals the original complex number."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the square root of (3 + 4i).",
+      "choices": {
+        "A": "1 + 2i",
+        "B": "1 - 2i",
+        "C": "-1 + 2i",
+        "D": "-1 - 2i"
+      },
+      "correct_choice": "A",
+      "solution": "For (3 + 4i), a = 3, b = 4. Solving for x and y gives us x = √(5/2) and y = 2√(5/8). The square root is 1 + 2i.",
+      "explanation": "We find the square root by solving for the values of x and y that satisfy the given complex number. Since a and b are both positive, there will be two solutions with opposite imaginary parts.",
+      "common_mistake_notes": "A common mistake would be to choose B (1 - 2i) because it is also a valid square root but not the one we are looking for."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the square root of (-4 + 0i)?",
+      "choices": {
+        "A": "-2",
+        "B": "2",
+        "C": "2i",
+        "D": "-2i"
+      },
+      "correct_choice": "A",
+      "solution": "(a + bi)^2 = a^2 - b^2 + 2abi. For (-4 + 0i), a = -2, b = 0. The square root is simply -2 because there is no imaginary part to consider.",
+      "explanation": "When the complex number has zero imaginary part, its square root will also have zero imaginary part. We only need to take the square root of the real part.",
+      "common_mistake_notes": "A common mistake would be to choose C (2i) or D (-2i), but these are not correct because they do not satisfy the condition that their square equals the original complex number."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the square root of (9 - 12i).",
+      "choices": {
+        "A": "3 - 2√3i",
+        "B": "3 + 2√3i",
+        "C": "-3 - 2√3i",
+        "D": "-3 + 2√3i"
+      },
+      "correct_choice": "C",
+      "solution": "For (9 - 12i), a = 3, b = -4. Solving for x and y gives us x = -3 and y = √(3/2). The square root is -3 - 2√3i.",
+      "explanation": "We find the square root by solving for the values of x and y that satisfy the given complex number. Since a is positive, there will be two solutions with opposite imaginary parts.",
+      "common_mistake_notes": "A common mistake would be to choose B (3 + 2√3i) because it is also a valid square root but not the one we are looking for."
+    }
+  ]
+}

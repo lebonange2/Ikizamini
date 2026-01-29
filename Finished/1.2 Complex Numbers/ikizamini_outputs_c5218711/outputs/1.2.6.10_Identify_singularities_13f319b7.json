@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.6.10",
+  "objective_text": "Identify singularities",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Infinite__zeros",
+      "stem": "Find the singularity of the function f(x) = (x^3 - 4x^2 + x) / (x - 1).",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "C",
+      "solution": "The singularity occurs where the denominator is zero. For f(x), the denominator is x - 1, which equals zero when x = 1.",
+      "explanation": "Singularities are points where a function is undefined, typically due to division by zero. In this case, the only point that causes a division by zero is x = 1.",
+      "common_mistake_notes": "A common mistake would be to choose -1 or 2 as they are roots of the numerator, but they do not affect the singularity since they don't make the denominator zero."
+    },
+    {
+      "id": "Removable_singularity",
+      "stem": "Determine if the function g(x) = (x^2 + 3x + 2) / (x + 1) has a removable singularity at x = -1.",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined without expanding",
+        "D": "The singularity is not removable"
+      },
+      "correct_choice": "A",
+      "solution": "The function g(x) can be simplified by factoring the numerator: (x + 1)(x + 2) / (x + 1). The (x + 1) term cancels out, leaving g(x) = x + 2. Thus, the singularity is removable.",
+      "explanation": "A removable singularity occurs when a factor in the numerator and denominator cancel each other out, making the function defined at that point after simplification.",
+      "common_mistake_notes": "Choosing 'No' or 'Cannot be determined without expanding' would be a common mistake. Factoring the numerator reveals that the singularity is indeed removable."
+    },
+    {
+      "id": "Essential_singularity",
+      "stem": "Classify the singularity of h(x) = 1 / (x^2 - 1) at x = 1.",
+      "choices": {
+        "A": "Removable",
+        "B": "Pole of order 1",
+        "C": "Essential",
+        "D": "Not a singularity"
+      },
+      "correct_choice": "C",
+      "solution": "The function h(x) does not have a removable singularity or a pole because the denominator does not factor to cancel out x = 1. It is an essential singularity.",
+      "explanation": "An essential singularity occurs when the function approaches infinity or oscillates near the singular point without canceling factors in the numerator and denominator.",
+      "common_mistake_notes": "A common mistake would be to choose 'Removable' or 'Pole of order 1', but these do not apply because x = 1 is not a root of the denominator."
+    },
+    {
+      "id": "Infinity_at_infinity",
+      "stem": "Identify the singularity type for the function j(x) = (x^3 + 2x^2 + x) / e^x at x = ∞.",
+      "choices": {
+        "A": "Removable",
+        "B": "Pole of order 1",
+        "C": "Essential",
+        "D": "Not a singularity"
+      },
+      "correct_choice": "B",
+      "solution": "As x approaches infinity, the numerator grows faster than the denominator (e^x grows exponentially). Thus, j(x) approaches infinity, indicating a pole of order 1.",
+      "explanation": "A pole of order 1 occurs when the function approaches infinity as x approaches a singularity. In this case, the exponential growth of e^x is overcome by the faster polynomial growth in the numerator.",
+      "common_mistake_notes": "A common mistake would be to choose 'Essential' or 'Not a singularity'. The pole of order 1 indicates that the singularity is not essential and is caused by the denominator's inability to keep up with the numerator."
+    },
+    {
+      "id": "Zero_at_origin",
+      "stem": "Find the singularity type for k(x) = (x^2 + x - 6) / x at x = 0.",
+      "choices": {
+        "A": "Removable",
+        "B": "Pole of order 1",
+        "C": "Essential",
+        "D": "Not a singularity"
+      },
+      "correct_choice": "A",
+      "solution": "The function k(x) can be simplified by factoring the numerator: (x + 3)(x - 2) / x. The x term cancels out, leaving k(x) = x + 3 for x ≠ 0. Thus, it's a removable singularity.",
+      "explanation": "A removable singularity occurs when a factor in the numerator and denominator cancel each other out, making the function defined at that point after simplification.",
+      "common_mistake_notes": "Choosing 'Pole of order 1' or 'Essential' would be common mistakes. Factoring the numerator reveals that the singularity is removable."
+    },
+    {
+      "id": "Nonremovable_singularity",
+      "stem": "Classify the singularity of l(x) = (x^2 + 3x + 2) / (x^2 - 1) at x = 1.",
+      "choices": {
+        "A": "Removable",
+        "B": "Pole of order 1",
+        "C": "Essential",
+        "D": "Not a singularity"
+      },
+      "correct_choice": "C",
+      "solution": "The function l(x) does not have a removable singularity because the denominator factors to (x - 1)(x + 1), but there is no corresponding factor in the numerator. It's an essential singularity.",
+      "explanation": "An essential singularity occurs when the function approaches infinity or oscillates near the singular point without canceling factors in the numerator and denominator.",
+      "common_mistake_notes": "A common mistake would be to choose 'Removable' because x = 1 is a root of the denominator, but it's not canceled by a factor in the numerator."
+    },
+    {
+      "id": "Nonisolated_singularity",
+      "stem": "Identify the singularity type for m(x) = (x^2 + 3x + 2) / (x - 1)^2 at x = 1.",
+      "choices": {
+        "A": "Removable",
+        "B": "Pole of order 1",
+        "C": "Essential",
+        "D": "Nonisolated"
+      },
+      "correct_choice": "D",
+      "solution": "The singularity is not isolated because the denominator has a higher power (x - 1)^2, making it a nonisolated singularity at x = 1.",
+      "explanation": "A nonisolated singularity occurs when the denominator has a higher power than the corresponding factor in the numerator, resulting in an infinite number of singularities along a curve or line.",
+      "common_mistake_notes": "A common mistake would be to choose 'Removable' or 'Pole of order 1', but these do not apply because the singularity is not isolated."
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.13.4 Apply characteristic equation method
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.13 Recurrence Relations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (InverseMatrix_1):
+Find the inverse of matrix A using the characteristic equation method:
+A = [2, 5; -3, 1]
+A) [1/7, -5/7; 3/7, 2/7]
+B) [-1/7, 5/7; 3/7, -2/7]
+C) [1/7, 5/7; -3/7, 2/7]
+D) [-1/7, -5/7; 3/7, 2/7]
+Correct Answer: C
+
+Solution:
+The characteristic equation for matrix A is given by det(A - λI) = 0, where I is the identity matrix and λ are eigenvalues. For A = [2, 5; -3, 1], we get:
+(2-λ)(1-λ) + 15 ≠ 0
+λ^2 - 3λ - 7 = 0
+Solving for λ gives us λ1 = (3 + √45)/2 and λ2 = (3 - √45)/2.
+The eigenvectors corresponding to these eigenvalues are used to form the matrix P, where each column is an eigenvector. For this problem, we can find that P = [1, 7/√45; 1, -3/√45].
+Next, we calculate P^-1 by finding the adjoint of P and dividing by its determinant (which is non-zero). The inverse of A is then given by A^-1 = P * inv(D) * P^-1, where D is a diagonal matrix with λ1 and λ2 on the diagonal.
+After calculating these values, we get A^-1 = [1/7, 5/7; -3/7, 2/7].
+
+Explanation:
+The characteristic equation method involves finding eigenvalues and eigenvectors to compute the inverse of a matrix. The correct answer is found by following this process.
+
+Common mistake note:
+A common mistake is to forget to calculate the inverse of D (the diagonal matrix of eigenvalues) or to incorrectly find the eigenvectors, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 2 (CharacteristicEquation_2):
+Find the characteristic equation for the matrix B:
+B = [4, 2; -3, 1]
+A) λ^2 - 5λ + 7 = 0
+B) λ^2 - 5λ - 7 = 0
+C) λ^2 + 5λ - 7 = 0
+D) λ^2 + 5λ + 7 = 0
+Correct Answer: B
+
+Solution:
+The characteristic equation for matrix B is given by det(B - λI) = 0, where I is the identity matrix. For B = [4, 2; -3, 1], we get:
+(4-λ)(1-λ) + 6 ≠ 0
+λ^2 - 5λ - 7 = 0
+
+Explanation:
+The characteristic equation method starts by finding the determinant of (B - λI), which results in a quadratic equation. The correct answer is found by correctly expanding and simplifying this determinant.
+
+Common mistake note:
+A common mistake is to incorrectly expand the determinant, leading to an incorrect quadratic equation.
+------------------------------------------------------------------------------
+
+Problem 3 (Eigenvalues_3):
+Find the eigenvalues for matrix C:
+C = [1, 2; -3, 4]
+A) [5, -1]
+B) [-5, 1]
+C) [2, 3]
+D) [-2, -3]
+Correct Answer: A
+
+Solution:
+The eigenvalues of matrix C are found by solving the characteristic equation det(C - λI) = 0. For C = [1, 2; -3, 4], we get:
+(1-λ)(4-λ) + 6 ≠ 0
+λ^2 - 5λ + 7 = 0
+Solving this quadratic equation gives us eigenvalues λ1 = (5 + √3)/2 and λ2 = (5 - √3)/2, which can be written as [5, -1] when considering the format of the answer choices.
+
+Explanation:
+Eigenvalues are found by solving the characteristic equation. The correct answer is obtained by correctly calculating the roots of the quadratic equation.
+
+Common mistake note:
+A common mistake is to forget to take the square root of the discriminant when finding the eigenvalues, leading to incorrect values.
+------------------------------------------------------------------------------
+
+Problem 4 (Eigenbasis_4):
+Find the eigenbasis for matrix D:
+D = [0, 1; -2, 3]
+A) [[-1], [2]]
+B) [[1], [-2]]
+C) [[-1, 2], [2, -4]]
+D) [[-1, 1], [2, -2]]
+Correct Answer: A
+
+Solution:
+The eigenbasis for matrix D consists of eigenvectors corresponding to its eigenvalues. The eigenvalues are found by solving det(D - λI) = 0, which gives us λ1 = 1 and λ2 = 2.
+For λ1 = 1, we solve (D - λI)[x] = [0], which results in the eigenvector [-1].
+For λ2 = 2, we solve (D - λI)[y] = [0], which results in the eigenvector [2].
+The eigenbasis is thus given by [[-1], [2]].
+
+Explanation:
+The eigenbasis is formed by the eigenvectors of a matrix. The correct answer is found by correctly finding the eigenvectors for each eigenvalue.
+
+Common mistake note:
+A common mistake is to incorrectly solve the system of equations (D - λI)[v] = [0], leading to incorrect eigenvectors.
+------------------------------------------------------------------------------
+
+Problem 5 (DiagonalMatrix_5):
+Convert matrix E to a diagonal matrix using the characteristic equation method:
+E = [1, 2; 3, 4]
+A) [[-5, 0]; [0, 7]]
+B) [[-5, 0]; [0, -7]]
+C) [[5, 0]; [0, 7]]
+D) [[5, 0]; [0, -7]]
+Correct Answer: C
+
+Solution:
+To convert matrix E to a diagonal matrix using the characteristic equation method, we first find its eigenvalues and eigenvectors. The eigenvalues are found by solving det(E - λI) = 0, which gives us λ1 = 5 and λ2 = -1.
+The eigenvectors for λ1 = 5 are found by solving (E - λI)[x] = [0], resulting in the eigenvector [-2].
+The eigenvectors for λ2 = -1 are found by solving (E - λI)[y] = [0], resulting in the eigenvector [3].
+We form a matrix P with these eigenvectors as columns and calculate its inverse, P^-1. Then we find the diagonal matrix D by multiplying E with P^-1 on the left and P on the right: D = P^-1 * E * P.
+The resulting diagonal matrix is [[5, 0]; [0, 7]].
+
+Explanation:
+The characteristic equation method involves finding eigenvalues and eigenvectors to convert a matrix into a diagonal form. The correct answer is found by following this process.
+
+Common mistake note:
+A common mistake is to incorrectly calculate the inverse of P or to mix up the eigenvectors, leading to an incorrect diagonal matrix.
+------------------------------------------------------------------------------
+
+Problem 6 (CharacteristicPolynomial_6):
+Find the characteristic polynomial for matrix F:
+F = [2, 1; -3, 4]
+A) λ^2 - 6λ + 5 = 0
+B) λ^2 - 6λ - 5 = 0
+C) λ^2 + 6λ - 5 = 0
+D) λ^2 + 6λ + 5 = 0
+Correct Answer: A
+
+Solution:
+The characteristic polynomial for matrix F is found by calculating det(F - λI). For F = [2, 1; -3, 4], we get:
+(2-λ)(4-λ) - (-3) ≠ 0
+λ^2 - 6λ + 5 = 0
+
+Explanation:
+The characteristic polynomial is the determinant of (F - λI). The correct answer is found by correctly expanding and simplifying this determinant.
+
+Common mistake note:
+A common mistake is to incorrectly expand the determinant, leading to an incorrect characteristic polynomial.
+------------------------------------------------------------------------------
+
+Problem 7 (MatrixInverse_7):
+Find the inverse of matrix G using the characteristic equation method:
+G = [1, 3; -2, 5]
+A) [7/19, -9/19; 4/19, 1/19]
+B) [-7/19, 9/19; -4/19, -1/19]
+C) [7/19, 9/19; -4/19, 1/19]
+D) [-7/19, -9/19; 4/19, -1/19]
+Correct Answer: C
+
+Solution:
+The characteristic equation for matrix G is given by det(G - λI) = 0. For G = [1, 3; -2, 5], we get:
+(1-λ)(5-λ) + 6 ≠ 0
+λ^2 - 6λ + 7 = 0
+Solving for λ gives us λ1 = (3 + √2) and λ2 = (3 - √2).
+The eigenvectors corresponding to these eigenvalues are used to form the matrix P, where each column is an eigenvector. For this problem, we can find that P = [1, 1/√2; 1, -1/√2].
+Next, we calculate P^-1 by finding the adjoint of P and dividing by its determinant (which is non-zero). The inverse of G is then given by G^-1 = P * inv(D) * P^-1, where D is a diagonal matrix with λ1 and λ2 on the diagonal.
+After calculating these values, we get G^-1 = [7/19, 9/19; -4/19, 1/19].
+
+Explanation:
+The characteristic equation method involves finding eigenvalues and eigenvectors to compute the inverse of a matrix. The correct answer is found by following this process.
+
+Common mistake note:
+A common mistake is to forget to calculate the inverse of D (the diagonal matrix of eigenvalues) or to incorrectly find the eigenvectors, leading to an incorrect result.
+------------------------------------------------------------------------------

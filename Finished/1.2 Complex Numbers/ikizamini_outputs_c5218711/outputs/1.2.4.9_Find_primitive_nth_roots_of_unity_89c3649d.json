@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.4.9",
+  "objective_text": "Find primitive nth roots of unity",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the primitive 5th root of unity in complex form.",
+      "choices": {
+        "A": "1",
+        "B": "i",
+        "C": "e^(2πi/5)",
+        "D": "e^(4πi/5)"
+      },
+      "correct_choice": "C",
+      "solution": "A primitive nth root of unity is a complex number that, when raised to the power of n, equals 1 and is distinct from other roots of unity for the same n. For n = 5, using De Moivre's Theorem, one of the primitive roots is e^(2kπi/5), where k is an integer giving a unique root. Choosing k=1 gives us e^(2πi/5).",
+      "explanation": "Option A (1) is not primitive as it's the 1st root and not distinct. Option B (i) is the 4th root, not primitive for n = 5. Option D (e^(4πi/5)) is also a root but not primitive because it's a multiple of e^(2πi/5).",
+      "common_mistake_notes": "Common mistake: Choosing a non-primitive root or selecting an incorrect form."
+    },
+    {
+      "id": "2",
+      "stem": "Find the primitive 7th root of unity in exponential form.",
+      "choices": {
+        "A": "e^(πi/7)",
+        "B": "e^(2πi/7)",
+        "C": "e^(3πi/7)",
+        "D": "e^(4πi/7)"
+      },
+      "correct_choice": "B",
+      "solution": "Similar to the previous question, we use De Moivre's Theorem. For n = 7, k=1 gives us a primitive root: e^(2πi/7).",
+      "explanation": "Option A (e^(πi/7)) is not primitive as it's a multiple of e^(2πi/7). Options C and D are roots but not primitive since they're multiples of B.",
+      "common_mistake_notes": "Common mistake: Choosing a non-primitive root or misunderstanding the meaning of 'primitive'."
+    },
+    {
+      "id": "3",
+      "stem": "What is the smallest positive integer n for which 2 + i is a primitive nth root of unity?",
+      "choices": {
+        "A": "4",
+        "B": "6",
+        "C": "8",
+        "D": "10"
+      },
+      "correct_choice": "B",
+      "solution": "To determine if 2 + i is a primitive nth root of unity, find the smallest n such that (2 + i)^n = 1. Convert to polar form: (2 + i) = √5 * (cos(θ) + i*sin(θ)), where θ = arctan(1/2). Then, calculate θ for which (cos(θ) + i*sin(θ))^n = 1.",
+      "explanation": "For n = 4, 6, 8, or 10, check if (2 + i)^n equals 1. Only for n = 6 does this hold true: (2 + i)^6 = (√5 * e^(i*arctan(1/2)))^6 = 32 * 5 = 160 = 1 (mod 100).",
+      "common_mistake_notes": "Common mistake: Not converting to polar form or failing to recognize the modular arithmetic aspect."
+    },
+    {
+      "id": "4",
+      "stem": "Find a primitive 9th root of unity in rectangular form.",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1/2 + √3i/2",
+        "D": "1/2 - √3i/2"
+      },
+      "correct_choice": "C",
+      "solution": "Using De Moivre's Theorem, we can find a primitive 9th root of unity by raising e^(2πi/9) to the power of 9. Let's choose k=1 for simplicity: (e^(2πi/9))^9 = 1.",
+      "explanation": "Option A (-1) is not primitive as it's the 3rd root, and n = 9. Option B (0) is not a root of unity. Options C and D are both correct as they are the two primitive 9th roots of unity in rectangular form, but we only need one. Since it asks for a primitive root, we choose C.",
+      "common_mistake_notes": "Common mistake: Choosing a non-primitive root or failing to recognize that there are two primitive roots in this case."
+    },
+    {
+      "id": "5",
+      "stem": "Find the smallest positive integer n such that (1 + i)^n = 1.",
+      "choices": {
+        "A": "2",
+        "B": "4",
+        "C": "6",
+        "D": "8"
+      },
+      "correct_choice": "B",
+      "solution": "Use De Moivre's Theorem to find the smallest n for which (1 + i) equals 1. In polar form, (1 + i) = √2 * (cos(π/4) + i*sin(π/4)). Find n such that cos(nπ/4) + i*sin(nπ/4) = 1.",
+      "explanation": "For n = 2, 4, 6, or 8, check if (1 + i)^n equals 1. Only for n = 4 does this hold true: (1 + i)^4 = (√2 * e^(i*π/4))^4 = 4 = 1.",
+      "common_mistake_notes": "Common mistake: Not converting to polar form or failing to recognize the modular arithmetic aspect."
+    },
+    {
+      "id": "6",
+      "stem": "Find a primitive 10th root of unity in trigonometric form.",
+      "choices": {
+        "A": "cos(π/5) + i*sin(π/5)",
+        "B": "cos(2π/5) + i*sin(2π/5)",
+        "C": "cos(3π/5) + i*sin(3π/5)",
+        "D": "cos(4π/5) + i*sin(4π/5)"
+      },
+      "correct_choice": "B",
+      "solution": "Using De Moivre's Theorem, we can find a primitive 10th root of unity by raising e^(2πi/10) to the power of 10. Let's choose k=1 for simplicity: (e^(2πi/10))^10 = 1.",
+      "explanation": "Option A is not primitive as it's a multiple of B. Option C and D are also roots but not primitive because they're multiples of B. We only need one primitive root, so we choose B.",
+      "common_mistake_notes": "Common mistake: Choosing a non-primitive root or misunderstanding the meaning of 'primitive'."
+    },
+    {
+      "id": "7",
+      "stem": "Find the smallest positive integer n such that (cos(π/3) + i*sin(π/3))^n = 1.",
+      "choices": {
+        "A": "3",
+        "B": "6",
+        "C": "9",
+        "D": "12"
+      },
+      "correct_choice": "B",
+      "solution": "Given the polar form, find n such that cos(nπ/3) + i*sin(nπ/3) = 1. For n = 3, 6, 9, or 12, check if (cos(π/3) + i*sin(π/3))^n equals 1. Only for n = 6 does this hold true.",
+      "explanation": "Option A is not primitive as it's the 3rd root and n = 6. Option C and D are multiples of B, so they're not primitive roots. We only need one primitive root, so we choose B.",
+      "common_mistake_notes": "Common mistake: Not recognizing that cos(π/3) + i*sin(π/3) is a cube root of unity and not considering the 'primitive' requirement."
+    }
+  ]
+}

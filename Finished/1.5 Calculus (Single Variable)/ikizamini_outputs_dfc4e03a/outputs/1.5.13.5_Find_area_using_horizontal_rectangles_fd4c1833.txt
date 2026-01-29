@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.13.5 Find area using horizontal rectangles
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.13 Applications of Integrals - Area and Volume
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (?):
+Find the area of the region bounded by the curve y = x^2 and the x-axis from x = 0 to x = 3, using horizontal rectangles.
+A) 18
+B) 27
+C) 36
+D) 45
+Correct Answer: B
+
+Solution:
+To find the area using horizontal rectangles, integrate y = x^2 from x = 0 to x = 3. The integral of x^2 is (x^3)/3. Evaluate at the limits: ((3^3)/3) - ((0^3)/3) = 27.
+
+Explanation:
+The area under a curve can be approximated by summing up the areas of rectangles with widths Δx and heights given by the function values at the rectangle's left edge. As we take more rectangles, this approximation becomes exact. In this case, we're asked for the exact area using integration.
+
+Common mistake note:
+A common mistake is to integrate x instead of x^2, which would give an incorrect answer of 9.
+------------------------------------------------------------------------------
+
+Problem 2 (?):
+Calculate the area between the curve y = √x and the x-axis from x = 1 to x = 4 using horizontal rectangles.
+A) 7
+B) 8
+C) 9
+D) 10
+Correct Answer: B
+
+Solution:
+To find the area, integrate √x from x = 1 to x = 4. The integral of √x is (2/3)x^(3/2). Evaluate at the limits: ((2/3)(4)^(3/2)) - ((2/3)(1)^(3/2)) = 8.
+
+Explanation:
+Again, we're using horizontal rectangles to approximate the area under a curve. The function here is √x, not x^2 or any other power of x.
+
+Common mistake note:
+A common mistake would be integrating x instead of √x, which would lead to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 3 (?):
+Find the area between y = 2x and the x-axis from x = -1 to x = 2 using horizontal rectangles.
+A) 6
+B) 8
+C) 10
+D) 12
+Correct Answer: A
+
+Solution:
+Integrate 2x from x = -1 to x = 2. The integral of 2x is x^2. Evaluate at the limits: ((2^2)/2) - (((-1)^2)/2) = 6.
+
+Explanation:
+The function here is linear, but the process remains the same. We integrate 2x and evaluate between the given limits.
+
+Common mistake note:
+A common mistake would be integrating x instead of 2x or forgetting to multiply by 2 when integrating.
+------------------------------------------------------------------------------
+
+Problem 4 (?):
+Calculate the area under y = sin(x) from x = 0 to x = π using horizontal rectangles.
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: B
+
+Solution:
+Integrate sin(x) from x = 0 to x = π. The integral of sin(x) is -cos(x). Evaluate at the limits: (-cos(π)) - (-cos(0)) = 2.
+
+Explanation:
+The function here is a trigonometric function, but the process remains the same. We integrate sin(x) and evaluate between the given limits.
+
+Common mistake note:
+A common mistake would be integrating cos(x) instead of sin(x), which would lead to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 5 (?):
+Find the area bounded by y = 3x - x^2 from x = 0 to x = 3 using horizontal rectangles.
+A) 6
+B) 9
+C) 12
+D) 15
+Correct Answer: B
+
+Solution:
+Integrate 3x - x^2 from x = 0 to x = 3. The integral of 3x is (3/2)x^2, and the integral of -x^2 is (-1/3)x^3. Evaluate at the limits: ((3/2)(3)^2 - (-1/3)(3)^3) - ((3/2)(0)^2 - (-1/3)(0)^3) = 9.
+
+Explanation:
+The function here is a quadratic, but the process remains the same. We integrate 3x and -x^2 separately and sum their antiderivatives.
+
+Common mistake note:
+A common mistake would be integrating x^2 instead of 3x or forgetting to multiply by coefficients when integrating.
+------------------------------------------------------------------------------
+
+Problem 6 (?):
+Calculate the area between y = e^x and the x-axis from x = 0 to x = 1 using horizontal rectangles.
+A) e - 1
+B) 2e - 1
+C) e^2 - 1
+D) e^3 - 1
+Correct Answer: A
+
+Solution:
+Integrate e^x from x = 0 to x = 1. The integral of e^x is e^x. Evaluate at the limits: (e) - (e^0) = e - 1.
+
+Explanation:
+The function here is an exponential, but the process remains the same. We integrate e^x and evaluate between the given limits.
+
+Common mistake note:
+A common mistake would be integrating e^(2x) or e^(3x) instead of e^x, which would lead to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 7 (?):
+Find the area under y = 1/x from x = 1 to x = 4 using horizontal rectangles.
+A) ln(2)
+B) ln(3)
+C) ln(4)
+D) ln(5)
+Correct Answer: C
+
+Solution:
+Integrate 1/x from x = 1 to x = 4. The integral of 1/x is ln|x|. Evaluate at the limits: ln|4| - ln|1| = ln(4). Since ln(1) is 0, we can drop it.
+
+Explanation:
+The function here is a logarithmic function, but the process remains the same. We integrate 1/x and evaluate between the given limits.
+
+Common mistake note:
+A common mistake would be integrating x instead of 1/x or forgetting to take the natural logarithm when integrating.
+------------------------------------------------------------------------------

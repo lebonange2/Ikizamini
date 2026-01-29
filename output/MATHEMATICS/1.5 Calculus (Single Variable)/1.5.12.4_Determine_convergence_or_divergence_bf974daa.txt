@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.12.4 Determine convergence or divergence
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.12 Improper Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (InfiniteSeriesConvergence_01):
+Determine if the infinite series converges or diverges: Σ (n / (n+1)) from n=1 to infinity.
+A) Convergent
+B) Divergent - p-series with p = 1
+C) Divergent - harmonic series
+D) Divergent - integral test fails
+Correct Answer: A
+
+Solution:
+The series converges by the limit comparison test, comparing it to the convergent p-series Σ (1/n) with p=1.
+
+Explanation:
+The limit comparison test states that if 0 ≤ a_n / b_n ≤ M for all n beyond some point and b_n converges, then a_n also converges. Here, a_n = n / (n+1) and b_n = 1/n.
+
+Common mistake note:
+A common mistake is to think it's divergent due to similarity with the harmonic series, but the extra term in the denominator changes its behavior.
+------------------------------------------------------------------------------
+
+Problem 2 (InfiniteSeriesConvergence_02):
+Determine if the infinite series converges or diverges: Σ (-1)^n / n from n=1 to infinity.
+A) Convergent - alternating series test
+B) Divergent - harmonic series
+C) Divergent - integral test fails
+D) Convergent - geometric series
+Correct Answer: A
+
+Solution:
+The series converges by the alternating series test, as the terms (-1)^n / n decrease monotonically to zero.
+
+Explanation:
+The alternating series test states that if a series has terms (-1)^n * u_n where u_n is decreasing and approaches zero, then the series converges.
+
+Common mistake note:
+A common mistake is to think it's divergent due to similarity with the harmonic series, but the alternating sign makes it converge.
+------------------------------------------------------------------------------
+
+Problem 3 (InfiniteSeriesConvergence_03):
+Determine if the infinite series converges or diverges: Σ (2^n / 3^(n+1)) from n=0 to infinity.
+A) Convergent - geometric series
+B) Divergent - p-series with p = 1
+C) Divergent - integral test fails
+D) Convergent - ratio test
+Correct Answer: A
+
+Solution:
+The series converges as it is a geometric series with common ratio (2/3)^n and |r| < 1.
+
+Explanation:
+A geometric series with first term a and common ratio r converges if |r| < 1. Here, a = 2/3 and r = 2/3.
+
+Common mistake note:
+A common mistake is to apply the ratio test or integral test unnecessarily; it's clearly a geometric series.
+------------------------------------------------------------------------------
+
+Problem 4 (InfiniteSeriesConvergence_04):
+Determine if the infinite series converges or diverges: Σ (ln(n) / n^2) from n=1 to infinity.
+A) Convergent - integral test
+B) Divergent - p-series with p = 1
+C) Divergent - harmonic series
+D) Convergent - comparison test
+Correct Answer: A
+
+Solution:
+The series converges by the integral test, as the integral of ln(x) / x^2 from 1 to infinity is finite.
+
+Explanation:
+The integral test states that if f(x) is positive, continuous, and decreasing on [1, ∞), and its improper integral converges, then the series Σ f(n) converges. Here, f(x) = ln(x) / x^2.
+
+Common mistake note:
+A common mistake is to compare it to p-series or harmonic series without a clear conclusion.
+------------------------------------------------------------------------------
+
+Problem 5 (InfiniteSeriesConvergence_05):
+Determine if the infinite series converges or diverges: Σ (n! / 2^n) from n=1 to infinity.
+A) Convergent - ratio test
+B) Divergent - p-series with p = 1
+C) Divergent - integral test fails
+D) Convergent - comparison test
+Correct Answer: A
+
+Solution:
+The series converges by the ratio test, as lim (n→∞) |a_n+1 / a_n| < 1.
+
+Explanation:
+The ratio test states that if lim (n→∞) |a_n+1 / a_n| < 1, then the series Σ a_n converges. Here, the limit goes to zero, so the series converges.
+
+Common mistake note:
+A common mistake is to try other tests or comparisons without a direct conclusion.
+------------------------------------------------------------------------------
+
+Problem 6 (InfiniteSeriesConvergence_06):
+Determine if the infinite series converges or diverges: Σ (sin(n) / n^2) from n=1 to infinity.
+A) Convergent - alternating series test
+B) Divergent - p-series with p = 1
+C) Divergent - integral test fails
+D) Convergent - Dirichlet's test
+Correct Answer: D
+
+Solution:
+The series converges by Dirichlet's test, as |sin(n)| is bounded and 1 / n^2 decreases monotonically to zero.
+
+Explanation:
+Dirichlet's test states that if the terms |a_n| are bounded and b_n decreases to zero, then Σ a_n * b_n converges. Here, a_n = sin(n) and b_n = 1 / n^2.
+
+Common mistake note:
+A common mistake is to use other tests like alternating series or integral test without direct applicability.
+------------------------------------------------------------------------------
+
+Problem 7 (InfiniteSeriesConvergence_07):
+Determine if the infinite series converges or diverges: Σ (1 / (n * ln(n))) from n=2 to infinity.
+A) Convergent - integral test
+B) Divergent - p-series with p = 1
+C) Divergent - harmonic series
+D) Convergent - comparison test
+Correct Answer: A
+
+Solution:
+The series converges by the integral test, as the integral of 1 / (x * ln(x)) from 2 to infinity is finite.
+
+Explanation:
+The integral test states that if f(x) is positive, continuous, and decreasing on [2, ∞), and its improper integral converges, then Σ f(n) converges. Here, f(x) = 1 / (x * ln(x)).
+
+Common mistake note:
+A common mistake is to compare it to p-series or harmonic series without a clear conclusion.
+------------------------------------------------------------------------------

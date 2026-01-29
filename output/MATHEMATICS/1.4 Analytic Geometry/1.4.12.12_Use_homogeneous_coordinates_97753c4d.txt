@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.12.12 Use homogeneous coordinates
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.12 Transformations in the Plane
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the primary purpose of using homogeneous coordinates in computer graphics?
+A) Represent points with negative coordinates.
+B) Perform translations using matrix multiplication.
+C) Simplify vector arithmetic by combining position and direction into one vector.
+D) Enable perspective projections.
+Correct Answer: D
+
+Solution:
+Homogeneous coordinates are primarily used in computer graphics to enable perspective projections, which is essential for creating realistic 3D images. While they can also simplify vector arithmetic by combining position and direction (C), representing points with negative coordinates (A) and performing translations using matrix multiplication (B) are not their primary function.
+
+Explanation:
+In computer graphics, homogeneous coordinates facilitate a unified representation of both 2D and 3D space, simplifying transformations like perspective projections. This is achieved by appending an extra dimension (w) to regular Cartesian coordinates, which is typically set to 1 for points.
+
+Common mistake note:
+Common mistake: Test-takers might choose A or B if they混淆homogeneous coordinates与其他坐标系统或变换的关系.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is the homogeneous representation of a point (x, y) in 2D space?
+A) (x, y)
+B) (x, y, 0)
+C) (x, y, 1)
+D) (x, y, x)
+Correct Answer: C
+
+Solution:
+The homogeneous representation of a point (x, y) in 2D space is (x, y, 1). The extra dimension (w) is set to 1 to preserve the point's identity.
+
+Explanation:
+Homogeneous coordinates add an additional component (usually denoted as w) to regular Cartesian coordinates. For points in 2D, this means appending a 1 as the third coordinate: (x, y, 1). This allows for transformations like perspective projections using matrix multiplication.
+
+Common mistake note:
+Common mistake: Choosing A might happen if the test-taker忘记了homogeneous坐标需要额外的维度。
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Given a vector (x, y) in 2D space, what is its homogeneous representation?
+A) (x, y)
+B) (x, y, 0)
+C) (x, y, 1)
+D) (x, y, x)
+Correct Answer: C
+
+Solution:
+The homogeneous representation of a vector (x, y) in 2D space is (x, y, 1). The extra dimension (w) is set to 1 for vectors as well.
+
+Explanation:
+In homogeneous coordinates, both points and vectors are represented with an additional component (w), which is usually set to 1. For a 2D vector (x, y), the homogeneous representation would be (x, y, 1). This enables transformations like rotations and scaling using matrix multiplication.
+
+Common mistake note:
+Common mistake: Choosing A might happen if the test-taker混淆了点和向量的homogeneous坐标表示。
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the purpose of dividing homogeneous coordinates by their w-component?
+A) Convert back to regular Cartesian coordinates.
+B) Normalize vectors for unit length.
+C) Scale the vector magnitude.
+D) Perform translations.
+Correct Answer: A
+
+Solution:
+Dividing homogeneous coordinates by their w-component converts them back to regular Cartesian coordinates in 2D or 3D space.
+
+Explanation:
+When working with homogeneous coordinates, dividing each component (x, y, z) by the w-component brings the representation back to its corresponding Cartesian form. This step is necessary after a transformation that uses homogeneous coordinates but before operations requiring regular Cartesian coordinates.
+
+Common mistake note:
+Common mistake: Choosing B might happen if the test-taker混淆了归一化向量和将homogeneous坐标转换为常规坐标。
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+In a 3D perspective projection, which of the following is true for a point (x, y, z) in homogeneous coordinates?
+A) The w-component remains unchanged.
+B) The x and y components are divided by z.
+C) The z-component is multiplied by w.
+D) All components are multiplied by w.
+Correct Answer: B
+
+Solution:
+In a 3D perspective projection, the x and y components of a point (x, y, z) in homogeneous coordinates are divided by the z-component to obtain the projected point.
+
+Explanation:
+During a perspective projection, the x and y components of a point are scaled based on their distance from the viewer (z-coordinate). This is done by dividing each component by z. The w-component is typically used for division later to convert back to Cartesian coordinates, so it remains unchanged during the projection.
+
+Common mistake note:
+Common mistake: Choosing A might happen if the test-taker忘记了透视投影中x和y的缩放。
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+What is the homogeneous representation of a 2D translation matrix that moves a point (x, y) by (dx, dy)?
+A) [1 0 dx; 0 1 dy]
+B) [1 0 0; 0 1 0; dx dy 1]
+C) [1 0 dy; 0 1 dx; 0 0 1]
+D) [dx 0 0; 0 dy 0; 0 0 1]
+Correct Answer: B
+
+Solution:
+The homogeneous representation of a 2D translation matrix that moves a point (x, y) by (dx, dy) is [1 0 0; 0 1 0; dx dy 1].
+
+Explanation:
+A translation matrix in homogeneous coordinates has the form [1 0 tx; 0 1 ty; 0 0 1], where tx and ty are the translation amounts along the x and y axes. To represent a 2D translation, we add an extra row and column with zeros and a 1 at the bottom right corner for the homogeneous coordinate.
+
+Common mistake note:
+Common mistake: Choosing A or C might happen if the test-taker混淆了translation矩阵的正确形式。
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Which of the following operations can be performed using homogeneous coordinates in computer graphics?
+A) Scaling only.
+B) Rotation and translation only.
+C) Translation, scaling, and rotation.
+D) Translation, scaling, rotation, and perspective projection.
+Correct Answer: D
+
+Solution:
+Homogeneous coordinates enable performing translation, scaling, rotation, and perspective projection operations in computer graphics.
+
+Explanation:
+Homogeneous coordinates are particularly useful for handling various 2D and 3D transformations. They allow for matrix representations of translations, rotations, scaling, and perspective projections, making it easier to combine these operations efficiently.
+
+Common mistake note:
+Common mistake: Choosing A or B might happen if the test-taker忘记了homogeneous坐标可以处理哪些类型的变换。
+------------------------------------------------------------------------------

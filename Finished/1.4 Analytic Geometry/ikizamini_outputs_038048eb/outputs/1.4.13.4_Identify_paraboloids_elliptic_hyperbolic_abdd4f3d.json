@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.13.4",
+  "objective_text": "Identify paraboloids (elliptic, hyperbolic)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Which equation represents an elliptic paraboloid?",
+      "choices": {
+        "A": "(x^2)/4 + (y^2)/9 = z",
+        "B": "x^2 - y^2 = 4z",
+        "C": "x^2 + y^2 = z^2",
+        "D": "x^2 - z^2 = 4y"
+      },
+      "correct_choice": "A",
+      "solution": "An elliptic paraboloid has an equation where the variables x and y are squared with positive coefficients. The correct choice is (x^2)/4 + (y^2)/9 = z.",
+      "explanation": "In A, both x and y have positive squared terms, indicating an elliptic paraboloid. B represents a hyperbolic paraboloid, C represents a cone, and D represents a hyperboloid of one sheet.",
+      "common_mistake_notes": "Common mistake is to confuse the equation for a hyperbolic paraboloid (B) with an elliptic paraboloid."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which graph represents a hyperbolic paraboloid?",
+      "choices": {
+        "A": "[Insert image of an elliptic paraboloid]",
+        "B": "[Insert image of a hyperbolic paraboloid]",
+        "C": "[Insert image of a cone]",
+        "D": "[Insert image of a hyperboloid of one sheet]"
+      },
+      "correct_choice": "B",
+      "solution": "A hyperbolic paraboloid has a saddle- like shape. The correct choice is the graph that shows this characteristic.",
+      "explanation": "The image in B represents a hyperbolic paraboloid, with two distinct branches opening away from each other. A and C represent elliptic surfaces, while D represents a different type of surface called a hyperboloid of one sheet.",
+      "common_mistake_notes": "Common mistake is to confuse the graph for an elliptic paraboloid (A) or a cone (C) with a hyperbolic paraboloid."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which equation represents a hyperbolic paraboloid?",
+      "choices": {
+        "A": "(x^2)/4 - (y^2)/9 = z",
+        "B": "x^2 + y^2 = 4z",
+        "C": "x^2 - y^2 = z^2",
+        "D": "x^2 + z^2 = 4y"
+      },
+      "correct_choice": "A",
+      "solution": "A hyperbolic paraboloid has an equation where the squares of x and y have opposite signs. The correct choice is (x^2)/4 - (y^2)/9 = z.",
+      "explanation": "In A, x and y have squared terms with opposite signs, indicating a hyperbolic paraboloid. B represents a cone, C represents an elliptic paraboloid, and D represents a hyperboloid of one sheet.",
+      "common_mistake_notes": "Common mistake is to confuse the equation for an elliptic paraboloid (C) or a hyperboloid of one sheet (D) with a hyperbolic paraboloid."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which surface has the equation x^2 + y^2 - z^2 = 0?",
+      "choices": {
+        "A": "Elliptic paraboloid",
+        "B": "Hyperbolic paraboloid",
+        "C": "Cone",
+        "D": "Hyperboloid of one sheet"
+      },
+      "correct_choice": "C",
+      "solution": "The equation x^2 + y^2 - z^2 = 0 represents a cone, as it is the difference of two squares.",
+      "explanation": "In C, the equation forms a cone with its vertex at the origin. A represents an elliptic paraboloid when the signs are positive, B represents a hyperbolic paraboloid when the signs are opposite, and D represents a hyperboloid of one sheet.",
+      "common_mistake_notes": "Common mistake is to confuse the equation for an elliptic paraboloid (A) or a hyperbolic paraboloid (B) with a cone."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which surface has the equation x^2 - y^2 = 4z?",
+      "choices": {
+        "A": "Elliptic paraboloid",
+        "B": "Hyperbolic paraboloid",
+        "C": "Cylinder",
+        "D": "Hyperboloid of two sheets"
+      },
+      "correct_choice": "B",
+      "solution": "The equation x^2 - y^2 = 4z represents a hyperbolic paraboloid, as the squares of x and y have opposite signs.",
+      "explanation": "In B, the equation forms a hyperbolic paraboloid with two branches opening away from each other. A represents an elliptic paraboloid when the signs are positive, C represents a cylinder, and D represents a different type of surface called a hyperboloid of two sheets.",
+      "common_mistake_notes": "Common mistake is to confuse the equation for an elliptic paraboloid (A) or a cylinder (C) with a hyperbolic paraboloid."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which surface has the equation z = x^2 + y^2?",
+      "choices": {
+        "A": "Elliptic paraboloid",
+        "B": "Hyperbolic paraboloid",
+        "C": "Cylinder",
+        "D": "Parabola"
+      },
+      "correct_choice": "A",
+      "solution": "The equation z = x^2 + y^2 represents an elliptic paraboloid, as the variables x and y are squared with positive coefficients.",
+      "explanation": "In A, both x and y have positive squared terms, indicating an elliptic paraboloid. B represents a hyperbolic paraboloid, C represents a cylinder, and D represents a different type of surface called a parabola.",
+      "common_mistake_notes": "Common mistake is to confuse the equation for a hyperbolic paraboloid (B) or a cylinder (C) with an elliptic paraboloid."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Which surface has the equation x^2 - z^2 = 4y?",
+      "choices": {
+        "A": "Elliptic paraboloid",
+        "B": "Hyperbolic paraboloid",
+        "C": "Cone",
+        "D": "Hyperboloid of one sheet"
+      },
+      "correct_choice": "D",
+      "solution": "The equation x^2 - z^2 = 4y represents a hyperboloid of one sheet, as the squares of x and z have opposite signs.",
+      "explanation": "In D, the equation forms a hyperboloid with one sheet. A represents an elliptic paraboloid when the signs are positive, B represents a hyperbolic paraboloid when the signs are also opposite but with different variables, and C represents a cone.",
+      "common_mistake_notes": "Common mistake is to confuse the equation for an elliptic paraboloid (A) or a hyperbolic paraboloid (B) with a hyperboloid of one sheet."
+    }
+  ]
+}

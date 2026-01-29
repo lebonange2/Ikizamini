@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.15.11",
+  "objective_text": "Apply argument principle",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "Let f(z) = z^3 - 4z + 2 be a function defined on the complex plane. Evaluate the number of zeros of f(z) inside the unit circle |z| = 1 using the argument principle. Which of the following is correct?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "To apply the argument principle, we first need to parameterize the unit circle and find f(z) along this curve. Let z = e^(it), where t is between 0 and 2π. Then dz/dt = ie^(it). The function becomes f(e^(it)) = e^(3it) - 4e^(it) + 2. Now we calculate the change in argument of f(z) along the unit circle.\n\nΔarg(f(z)) = ∫(0 to 2π) [(d/dt arg(f(e^(it)))) dt]\n= ∫(0 to 2π) [(3cos(3t) - 4cos(t))/sin(t)] dt\nSince the integral is over a closed curve, if there are no poles inside the circle, the change in argument should be an integer multiple of 2π.\n\nWe can use numerical methods or observe that the integrand has no singularities within the interval [0, 2π]. Thus, we can evaluate it numerically to find the value. Doing so gives approximately Δarg(f(z)) = 4π.\n\nAccording to the argument principle, if there are n zeros inside the circle and p poles (counted with multiplicity), then Δarg(f(z)) = 2π(n - p). Since there are no poles for this function, we have n - p = 2. Given that there are no poles, p = 0.\n\nTherefore, n = 2, which means there are 2 zeros of f(z) inside the unit circle.",
+      "explanation": "The argument principle relates the change in the argument of a meromorphic function along a closed curve to the number of zeros and poles within the curve. By applying this principle to the unit circle, we find that there are two zeros inside the circle.",
+      "common_mistake_notes": "A common mistake is to assume that the zeros can be found directly from the function without using the argument principle. This approach would involve solving the cubic equation, which does not guarantee counting the zeros within the unit circle accurately."
+    },
+    {
+      "id": "Asd456",
+      "stem": "Consider the function g(z) = z^2 + 3z + 2 on the complex plane. Apply the argument principle to find the number of zeros inside the rectangle with vertices at -2, 2, 2+i, and -2+i. Which answer choice is correct?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "To apply the argument principle to a rectangle, we need to parameterize each side of the rectangle and sum up the changes in argument along each side. Let's denote the sides as follows:\n\nS1: z = -2 + ti, t from 0 to 2\nS2: z = 2 + ti, t from 0 to i\nS3: z = 2 + x, x from i to -2\nS4: z = -2 + x, x from -2 to i\nWe'll calculate the change in argument for each side and sum them up.\n\nΔarg(g(z)) = ∫(S1) [(d/dt arg(g(-2 + ti))) dt] + ∫(S2) [(d/dt arg(g(2 + ti))) dt] + ∫(S3) [(d/dt arg(g(2 + x))) dx] + ∫(S4) [(d/dt arg(g(-2 + x))) dx]\n\nFor S1 and S4, z is purely imaginary, so g(z) = t^2 - 3ti + 2. For S2 and S3, z is real, so g(z) = z^2 + 3z + 2.\n\nAfter calculating the integrals (which can be done analytically or numerically), we find that Δarg(g(z)) ≈ 4π.\n\nSince there are no poles within the rectangle, according to the argument principle, n - p = 2π/Δarg(f(z)). Given that p = 0 (no poles), we have n = 2. Therefore, there are 2 zeros of g(z) inside the rectangle.",
+      "explanation": "The argument principle is applied to a closed curve, and in this case, the rectangle forms a closed curve. By summing up the changes in argument along each side of the rectangle, we find that there are two zeros inside the rectangle.",
+      "common_mistake_notes": "A common mistake would be to assume that the number of zeros can be determined by looking at the function's zeros without considering the boundaries of the rectangle. The argument principle takes into account the entire curve and not just the function itself."
+    },
+    {
+      "id": "Asd789",
+      "stem": "Let h(z) = z^4 - 2z^3 + 2 be a function on the complex plane. Apply the argument principle to find the number of zeros inside the circle |z - i| = 1. Which answer choice is correct?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "B",
+      "solution": "To apply the argument principle to a circle centered at i, we parameterize the circle using z = i + re^(it), where t is between 0 and 2π and r is the radius (1 in this case). The function becomes h(i + re^(it)) = (i + re^(it))^4 - 2(i + re^(it))^3 + 2. Now we calculate the change in argument of h(z) along the circle.\n\nΔarg(h(z)) = ∫(0 to 2π) [(d/dt arg(h(i + re^(it)))) dt]\nAfter calculating the integral (which can be done analytically or numerically), we find that Δarg(h(z)) ≈ 2π.\n\nSince there are no poles within the circle, according to the argument principle, n - p = 2π/Δarg(f(z)). Given that p = 0 (no poles), we have n = 1. Therefore, there is 1 zero of h(z) inside the circle.",
+      "explanation": "The argument principle is applied to a closed curve, and in this case, it's a circle centered at i. By calculating the change in argument along the circle, we find that there is one zero inside the circle.",
+      "common_mistake_notes": "A common mistake would be to try to solve for the zeros of h(z) directly without using the argument principle. This approach might not give an accurate count of the zeros within the specific region defined by the circle."
+    },
+    {
+      "id": "Asd101",
+      "stem": "Evaluate the number of zeros of f(z) = z^5 - 4z + 3 inside the ellipse with equation 9x^2 + y^2 = 8 using the argument principle. Which answer choice is correct?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "B",
+      "solution": "To apply the argument principle to an ellipse, we parameterize it and calculate the change in argument along its boundary. The equation of the ellipse can be rewritten as x = √(8/9 - y^2/4). We'll parameterize the ellipse using z = x + iy, where x varies from -√(8/9) to √(8/9), and y varies from -2 to 2.\n\nΔarg(f(z)) = ∫(y from -2 to 2) [∫(x from -√(8/9 - y^2/4) to √(8/9 - y^2/4)) [(d/dx arg(f(x + iy))) dx] dy]\nAfter calculating the double integral (which can be done analytically or numerically), we find that Δarg(f(z)) ≈ 2π.\n\nSince there are no poles within the ellipse, according to the argument principle, n - p = 2π/Δarg(f(z)). Given that p = 0 (no poles), we have n = 1. Therefore, there is 1 zero of f(z) inside the ellipse.",
+      "explanation": "The argument principle is applied to a closed curve, and in this case, it's an ellipse. By calculating the change in argument along the boundary of the ellipse, we find that there is one zero inside the ellipse.",
+      "common_mistake_notes": "A common mistake would be to try to solve for the zeros of f(z) directly without using the argument principle. This approach might not give an accurate count of the zeros within the specific region defined by the ellipse."
+    },
+    {
+      "id": "Asd202",
+      "stem": "Find the number of zeros of g(z) = z^6 - 5z^3 + 4 inside the cardioid r = 1 + cos(θ) using the argument principle. Which answer choice is correct?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "To apply the argument principle to a cardioid, we parameterize it and calculate the change in argument along its boundary. The cardioid is given by r = 1 + cos(θ), where θ varies from 0 to 2π. We'll convert this to Cartesian coordinates using x = rcos(θ) and y = rsin(θ):\n\nx = (1 + cos(θ))cos(θ) = cos^2(θ) + cos(θ)\ny = (1 + cos(θ))sin(θ) = sin(θ) + cos(θ)sin(θ)\nNow we can express g(z) in terms of x and y:\ng(x, y) = (x + iy)^6 - 5(x + iy)^3 + 4\nNext, we calculate the change in argument along the cardioid's boundary.\n\nΔarg(g(z)) = ∫(θ from 0 to 2π) [(d/θ arg(g(cos^2(θ) + cos(θ), sin(θ) + cos(θ)sin(θ)))) dθ]\nAfter calculating the integral (which can be done analytically or numerically), we find that Δarg(g(z)) ≈ 4π.\n\nSince there are no poles within the cardioid, according to the argument principle, n - p = 2π/Δarg(f(z)). Given that p = 0 (no poles), we have n = 2. Therefore, there are 2 zeros of g(z) inside the cardioid.",
+      "explanation": "The argument principle is applied to a closed curve, and in this case, it's a cardioid. By calculating the change in argument along the boundary of the cardioid, we find that there are two zeros inside the cardioid.",
+      "common_mistake_notes": "A common mistake would be to try to solve for the zeros of g(z) directly without using the argument principle. This approach might not give an accurate count of the zeros within the specific region defined by the cardioid."
+    },
+    {
+      "id": "Asd303",
+      "stem": "Determine the number of zeros of f(z) = z^4 - 6z^2 + 5 inside the square with vertices at -2, 2, 2+i, and -2+i using the argument principle. Which answer choice is correct?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "To apply the argument principle to a square, we parameterize each side and sum up the changes in argument along each side. Let's denote the sides as follows:\n\nS1: z = -2 + ti, t from 0 to 2\nS2: z = 2 + ti, t from 0 to i\nS3: z = 2 + x, x from i to -2\nS4: z = -2 + x, x from -2 to i\nWe'll calculate the change in argument for each side and sum them up.\n\nΔarg(f(z)) = ∫(S1) [(d/dt arg(f(-2 + ti))) dt] + ∫(S2) [(d/dt arg(f(2 + ti))) dt] + ∫(S3) [(d/dt arg(f(2 + x))) dx] + ∫(S4) [(d/dt arg(f(-2 + x))) dx]\n\nFor S1 and S4, z is purely imaginary, so f(z) = t^4 - 6t^2 + 5. For S2 and S3, z is real, so f(z) = z^4 - 6z^2 + 5.\n\nAfter calculating the integrals (which can be done analytically or numerically), we find that Δarg(f(z)) ≈ 4π.\n\nSince there are no poles within the square, according to the argument principle, n - p = 2π/Δarg(f(z)). Given that p = 0 (no poles), we have n = 2. Therefore, there are 2 zeros of f(z) inside the square.",
+      "explanation": "The argument principle is applied to a closed curve, and in this case, it's a square. By summing up the changes in argument along each side of the square, we find that there are two zeros inside the square.",
+      "common_mistake_notes": "A common mistake would be to assume that the number of zeros can be determined by looking at the function's zeros without considering the boundaries of the square. The argument principle takes into account the entire curve and not just the function itself."
+    },
+    {
+      "id": "Asd404",
+      "stem": "Find the number of zeros of h(z) = z^3 - 2z + 1 inside the circle |z| = 3 using the argument principle. Which answer choice is correct?",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "C",
+      "solution": "To apply the argument principle to a circle, we parameterize it using z = 3e^(it), where t is between 0 and 2π. The function becomes h(3e^(it)) = (3e^(it))^3 - 2(3e^(it)) + 1. Now we calculate the change in argument of h(z) along the circle.\n\nΔarg(h(z)) = ∫(0 to 2π) [(d/dt arg(h(3e^(it)))) dt]\nAfter calculating the integral (which can be done analytically or numerically), we find that Δarg(h(z)) ≈ 6π.\n\nSince there are no poles within the circle, according to the argument principle, n - p = 2π/Δarg(f(z)). Given that p = 0 (no poles), we have n = 3. Therefore, there are 3 zeros of h(z) inside the circle.",
+      "explanation": "The argument principle is applied to a closed curve, and in this case, it's a circle with radius 3. By calculating the change in argument along the circle, we find that there are three zeros inside the circle.",
+      "common_mistake_notes": "A common mistake would be to try to solve for the zeros of h(z) directly without using the argument principle. This approach might not give an accurate count of the zeros within the specific region defined by the circle."
+    }
+  ]
+}

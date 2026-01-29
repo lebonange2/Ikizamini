@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.3.5 Determine angle between planes
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.3 Lines and Planes in 3D
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (InscribedAngleProblem):
+Find the measure of the angle inscribed by line segments AB and CD where plane ABE is perpendicular to plane CDF. AB measures 5 units, and CD measures 8 units.
+A) 30°
+B) 45°
+C) 60°
+D) 75°
+Correct Answer: B
+
+Solution:
+The angle between two perpendicular planes is 90°. Since AB is perpendicular to plane CDF, the angle formed by AB and CD at their intersection is half of that, which is 45°.
+
+Explanation:
+This problem involves finding the angle between intersecting lines in two perpendicular planes. The key is understanding that the angle between the lines is half the angle between the planes.
+
+Common mistake note:
+A common mistake would be to assume that the angle formed by AB and CD is 90°, which is incorrect because AB is not perpendicular to CD.
+------------------------------------------------------------------------------
+
+Problem 2 (AngleBetweenNormalVectorsProblem):
+Find the angle θ between planes P1: 2x + 3y - z = 5 and P2: x - y + 2z = 7. Normal vectors are N1 = <2, 3, -1> for P1 and N2 = <1, -1, 2> for P2.
+A) 30°
+B) 45°
+C) 60°
+D) 90°
+Correct Answer: D
+
+Solution:
+The angle θ between two planes can be found using the dot product of their normal vectors: cos(θ) = (N1·N2)/(|N1||N2|). For N1 and N2, we have: cos(θ) = (-1)/(√14). Since cos(θ) = -1, θ is 180° or π radians, which means the planes are perpendicular and thus the angle between them is 90°.
+
+Explanation:
+This problem requires finding the dot product of the normal vectors of two planes and using it to determine the angle between the planes. The key is understanding that the dot product gives the cosine of the angle between the vectors, which can then be converted to an angle.
+
+Common mistake note:
+A common mistake would be to assume that the dot product directly gives the angle, without converting it to an actual angle measure.
+------------------------------------------------------------------------------
+
+Problem 3 (AngleBetweenIntersectingPlanesProblem):
+Find the angle between planes P1: x + y + z = 0 and P2: 2x - y + 3z = 5. The line of intersection is r = <1, 1, -2> + t<1, -2, 1>, where t is a real number.
+A) 30°
+B) 45°
+C) 60°
+D) 75°
+Correct Answer: C
+
+Solution:
+The angle between two intersecting planes can be found using the cross product of their normal vectors. The normal vectors are N1 = <1, 1, 1> and N2 = <2, -1, 3>. The cross product is N1 x N2 = <-4, 5, 3>, which has magnitude √46. The angle θ can be found using the dot product of their normal vectors: cos(θ) = (N1·N2)/(|N1||N2|). For N1 and N2, we have: cos(θ) = 4/√18. The angle θ is then arccos(4/√18), which approximately equals 60°.
+
+Explanation:
+This problem requires finding the cross product of the normal vectors of two intersecting planes and using it to determine the angle between the planes. The key is understanding that the cross product gives a vector perpendicular to both input vectors, whose magnitude can be used to find the sine of the angle between the input vectors.
+
+Common mistake note:
+A common mistake would be to calculate the dot product instead of the cross product, which would give an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 4 (AngleBetweenParallelPlanesProblem):
+Find the angle between planes P1: 3x + 4y - 5z = 6 and P2: 6x + 8y - 10z = 12. Are they parallel?
+A) 0°, Yes
+B) 90°, No
+C) 45°, Yes
+D) 30°, No
+Correct Answer: A
+
+Solution:
+The angle between two parallel planes is 0°. To check if the planes are parallel, we can compare their normal vectors: N1 = <3, 4, -5> and N2 = <6, 8, -10>. Since N2 = 2N1, the two normal vectors are scalar multiples of each other, indicating that the planes are parallel. Therefore, the angle between them is 0°.
+
+Explanation:
+This problem involves determining if two planes are parallel and finding the angle between them. The key is understanding that parallel planes have the same normal vector or scalar multiples of it.
+
+Common mistake note:
+A common mistake would be to assume that parallel planes have a 90° angle, which is incorrect; they actually have a 0° angle.
+------------------------------------------------------------------------------
+
+Problem 5 (AngleBetweenSkewPlanesProblem):
+Find the angle between planes P1: x + y + z = 0 and P2: x - y - z = 0. Are they skew?
+A) 30°, No
+B) 45°, Yes
+C) 60°, No
+D) 90°, No
+Correct Answer: B
+
+Solution:
+The angle between two skew planes cannot be directly calculated using the normal vectors. However, since P1 and P2 can be transformed into parallel planes (x + y = 0 and x - y = 0), they are actually parallel, so they cannot be skew. The angle between them is 0°.
+
+Explanation:
+This problem involves determining if two planes are skew and finding the angle between them. The key is understanding that skew planes do not intersect or touch at a single line; they are completely separate in three-dimensional space.
+
+Common mistake note:
+A common mistake would be to assume that skew planes have a specific angle, when in fact they do not intersect at all.
+------------------------------------------------------------------------------
+
+Problem 6 (AngleBetweenIntersectingLinesProblem):
+Find the angle between lines L1: r = <1, 0, 2> + t<3, 4, -1> and L2: r = <2, 1, -3> + s<1, 2, 1>. Are they skew?
+A) 30°, No
+B) 45°, Yes
+C) 60°, No
+D) 90°, No
+Correct Answer: C
+
+Solution:
+The angle between two intersecting lines can be found using the dot product of their direction vectors. The direction vectors are <3, 4, -1> and <1, 2, 1>. The dot product is 9, and the magnitudes are √26 and √6. The angle θ is then arccos(9/√(26*6)) ≈ 60°. Since the lines intersect, they cannot be skew.
+
+Explanation:
+This problem involves finding the angle between two intersecting lines and determining if they are skew. The key is understanding that skew lines do not intersect or touch at a single point; they are completely separate in three-dimensional space.
+
+Common mistake note:
+A common mistake would be to assume that skew lines have an angle of 90°, which is incorrect; they never intersect.
+------------------------------------------------------------------------------
+
+Problem 7 (AngleBetweenParallelLinesProblem):
+Find the angle between lines L1: r = <1, 2, 3> + t<4, 5, 6> and L2: r = <7, 8, 9> + s<4, 5, 6>. Are they parallel?
+A) 0°, Yes
+B) 90°, No
+C) 45°, Yes
+D) 30°, No
+Correct Answer: A
+
+Solution:
+The angle between two parallel lines is 0°. To check if the lines are parallel, we can compare their direction vectors: <4, 5, 6> and <4, 5, 6>. Since they are identical, the lines are parallel. Therefore, the angle between them is 0°.
+
+Explanation:
+This problem involves determining if two lines are parallel and finding the angle between them. The key is understanding that parallel lines have the same direction vector or scalar multiples of it.
+
+Common mistake note:
+A common mistake would be to assume that parallel lines have a 90° angle, which is incorrect; they actually have a 0° angle.
+------------------------------------------------------------------------------

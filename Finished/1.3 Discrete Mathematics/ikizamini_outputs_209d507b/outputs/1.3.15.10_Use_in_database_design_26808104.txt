@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.15.10 Use in database design
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.15 Applications of Discrete Mathematics
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the primary purpose of an index in a database?
+A) To increase storage space.
+B) To improve query performance.
+C) To reduce disk I/O operations.
+D) To ensure data integrity.
+Correct Answer: B
+
+Solution:
+An index in a database primarily improves the speed of data retrieval, making queries faster. While indexing may have secondary effects like reducing disk I/O and storage space, its main purpose is query performance improvement.
+
+Explanation:
+Indexes create a sorted structure for quicker access to data, bypassing full table scans during searches.
+
+Common mistake note:
+Common mistake: Choosing A (storage) or D (data integrity), which are not primary purposes. Indexes don't primarily focus on storage space or ensuring data integrity.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Which SQL statement is used to create an index?
+A) CREATE DATABASE
+B) ALTER TABLE
+C) INSERT INTO
+D) CREATE INDEX
+Correct Answer: D
+
+Solution:
+The SQL command `CREATE INDEX` creates a new index on one or more columns within a table.
+
+Explanation:
+CREATE DATABASE makes a new database, ALTER TABLE modifies an existing table structure, and INSERT INTO adds data to a table.
+
+Common mistake note:
+Common mistake: Choosing B (ALTER TABLE) which modifies indexes but doesn't create them. CREATE INDEX specifically creates new indexes.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Which indexing type is typically best for columns with many unique values?
+A) Clustered Index
+B) Non-Clustered Index
+C) Hash Index
+D) Bitmap Index
+Correct Answer: B
+
+Solution:
+For columns with numerous unique values, a non-clustered index is usually more efficient. It stores a separate structure referencing the original data, without physically reordering table data like a clustered index.
+
+Explanation:
+Clustered indexes can be inefficient for high-cardinality columns. Hash and bitmap indexes are specialized types used in specific scenarios.
+
+Common mistake note:
+Common mistake: Choosing A (Clustered Index) which may lead to inefficiencies with many unique values. Bitmap indexes are less common, used for low-cardinality columns.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+In a database, how does a primary key index differ from a unique index?
+A) A primary key enforces uniqueness while a unique index doesn't.
+B) Primary keys can have multiple columns; unique indexes cannot.
+C) Primary keys are automatically created; unique indexes must be defined.
+D) Primary key indexes are always clustered, unique indexes can be non-clustered.
+Correct Answer: D
+
+Solution:
+The primary difference is that a primary key index is typically (but not always) clustered, organizing table data based on the indexed column(s), whereas unique indexes can be either clustered or non-clustered.
+
+Explanation:
+Both enforce uniqueness. Primary keys are single-column by default but can have multiple columns in some databases. Neither is automatically created; both must be defined explicitly.
+
+Common mistake note:
+Common mistake: Choosing A (uniqueness) or B (multiple columns), which are shared characteristics. C (automatic creation) is incorrect as neither index type is automatic.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Which indexing method is most suitable for a database that frequently performs range-based queries?
+A) B-Tree Index
+B) Hash Index
+C) Bitmap Index
+D) R-Tree Index
+Correct Answer: A
+
+Solution:
+B-Tree indexes are well-suited for range-based queries as they efficiently search within a specified value range using a balanced tree structure.
+
+Explanation:
+Hash indexes are best for exact match searches, bitmap indexes work well with low-cardinality columns, and R-Tree indexes handle spatial data (like geographic coordinates).
+
+Common mistake note:
+Common mistake: Choosing B (Hash Index) which is optimized for single value lookups. C (Bitmap Index) and D (R-Tree Index) are specialized types not ideal for general range queries.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+How does a database query optimizer decide which index to use?
+A) It always uses the first index defined in the table.
+B) It chooses the index with the smallest number of rows affected.
+C) It selects the index providing the most selective coverage of data.
+D) It randomly picks an index.
+Correct Answer: C
+
+Solution:
+The query optimizer typically selects the index offering the most selective coverage, narrowing the search space and improving performance by reducing accessed data.
+
+Explanation:
+Indexes aren't chosen based on order or affected rows; they're selected for efficient filtering and retrieval.
+
+Common mistake note:
+Common mistake: Choosing A (first index) or D (random selection), which isn't how query optimizers work. B (fewer rows affected) may be a factor, but selectivity is primary.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the main disadvantage of using a covering index?
+A) It increases storage requirements.
+B) It slows down data modification operations.
+C) It reduces query performance in some cases.
+D) It cannot be used with foreign keys.
+Correct Answer: B
+
+Solution:
+The main disadvantage of a covering index is that it can slow down INSERTs, UPDATEs, and DELETEs as the index must be updated alongside table data. This increases write times.
+
+Explanation:
+Covering indexes store extra columns, improving read performance by reducing main table access. However, this comes at the cost of slower writes due to additional maintenance.
+
+Common mistake note:
+Common mistake: Choosing A (storage) as it's a side effect, not primary. C (query performance reduction) is incorrect; covering indexes can enhance reads. D (foreign keys) is unrelated.
+------------------------------------------------------------------------------

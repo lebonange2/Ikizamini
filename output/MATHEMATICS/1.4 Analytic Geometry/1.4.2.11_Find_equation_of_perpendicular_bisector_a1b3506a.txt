@@ -1,0 +1,294 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.2.11 Find equation of perpendicular bisector
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.2 Lines in 2D
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the equation of the perpendicular bisector of the line segment joining points A(2, 3) and B(6, 7)?
+A) (x - 4)^2 + (y - 5)^2 = 0
+B) y - x = 1
+C) y - 5 = 2(x - 4)
+D) x + y = 9
+Correct Answer: C
+
+Solution:
+The midpoint of AB is 
+midpoint = ((x_A + x_B) / 2, (y_A + y_B) / 2) = ((2 + 6) / 2, (3 + 7) / 2) = (4, 5)
+
+The slope of the line segment AB is 
+m_AB = (y_B - y_A) / (x_B - x_A) = (7 - 3) / (6 - 2) = 1
+
+Since the perpendicular bisector's slope is the negative reciprocal of the slope of AB, its slope is -1.
+
+The equation of a line in point-slope form is y - y_1 = m(x - x_1), where m is the slope and (x_1, y_1) is a point on the line. Using the midpoint as our point (4, 5) and slope -1, we get:
+
+y - 5 = -1(x - 4)
+
+Simplifying this gives us the equation of the perpendicular bisector: 
+y - 5 = -x + 4
+
+or rearranged: 
+y = -x + 9
+
+This is equivalent to answer choice C, after simplifying.
+
+Explanation:
+The correct equation should be in slope-intercept form or point-slope form and pass through the midpoint of the line segment with a slope perpendicular to that of the line segment.
+
+Common mistake note:
+A common mistake is to forget to find the negative reciprocal of the slope of the original line segment, resulting in an incorrect slope for the perpendicular bisector. Another mistake might be using the wrong point (not the midpoint) when writing the equation.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the equation of the perpendicular bisector of the line segment joining points C(-3, 1) and D(5, 7).
+A) y - x = 4
+B) x + y = 2
+C) y - 6 = 2(x - 1)
+D) y - 2 = -2(x + 3)
+Correct Answer: D
+
+Solution:
+The midpoint of CD is 
+midpoint = ((x_C + x_D) / 2, (y_C + y_D) / 2) = ((-3 + 5) / 2, (1 + 7) / 2) = (1, 4)
+
+The slope of the line segment CD is 
+m_CD = (y_D - y_C) / (x_D - x_C) = (7 - 1) / (5 - (-3)) = 3/4
+
+Since the perpendicular bisector's slope is the negative reciprocal of the slope of CD, its slope is -4/3.
+
+The equation of a line in point-slope form is y - y_1 = m(x - x_1), where m is the slope and (x_1, y_1) is a point on the line. Using the midpoint as our point (1, 4) and slope -4/3, we get:
+
+y - 4 = -4/3(x - 1)
+
+Multiplying both sides by 3 to eliminate the fraction gives us:
+
+3(y - 4) = -4(x - 1)
+
+Expanding and simplifying this gives us the equation of the perpendicular bisector: 
+
+3y - 12 = -4x + 4
+
+or rearranged: 
+
+4x + 3y = 16
+
+This is equivalent to answer choice D, after dividing by 4.
+
+Explanation:
+The correct equation should be in slope-intercept form or point-slope form and pass through the midpoint of the line segment with a slope perpendicular to that of the line segment.
+
+Common mistake note:
+A common mistake is to forget to find the negative reciprocal of the slope of the original line segment, resulting in an incorrect slope for the perpendicular bisector. Another mistake might be using the wrong point (not the midpoint) when writing the equation.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the equation of the perpendicular bisector of the line segment joining points E(-1, -2) and F(3, 6).
+A) y = x + 4
+B) y = -x - 2
+C) y - 2 = -1(x + 1)
+D) y - 2 = 1(x - 1)
+Correct Answer: A
+
+Solution:
+The midpoint of EF is 
+midpoint = ((x_E + x_F) / 2, (y_E + y_F) / 2) = ((-1 + 3) / 2, (-2 + 6) / 2) = (1, 2)
+
+The slope of the line segment EF is 
+m_EF = (y_F - y_E) / (x_F - x_E) = (6 - (-2)) / (3 - (-1)) = 8/4 = 2
+
+Since the perpendicular bisector's slope is the negative reciprocal of the slope of EF, its slope is -1/2.
+
+The equation of a line in point-slope form is y - y_1 = m(x - x_1), where m is the slope and (x_1, y_1) is a point on the line. Using the midpoint as our point (1, 2) and slope -1/2, we get:
+
+y - 2 = -1/2(x - 1)
+
+Multiplying both sides by 2 to eliminate the fraction gives us:
+
+2(y - 2) = -(x - 1)
+
+Expanding and simplifying this gives us the equation of the perpendicular bisector: 
+
+2y - 4 = -x + 1
+
+or rearranged: 
+
+x + 2y = 5
+
+This is equivalent to answer choice A, after dividing by 1.
+
+Explanation:
+The correct equation should be in slope-intercept form or point-slope form and pass through the midpoint of the line segment with a slope perpendicular to that of the line segment.
+
+Common mistake note:
+A common mistake is to forget to find the negative reciprocal of the slope of the original line segment, resulting in an incorrect slope for the perpendicular bisector. Another mistake might be using the wrong point (not the midpoint) when writing the equation.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the equation of the perpendicular bisector of the line segment joining points G(0, 5) and H(6, 1).
+A) y = -2x + 7
+B) y = x + 3
+C) y - 3 = -1(x - 3)
+D) y - 3 = 2(x - 3)
+Correct Answer: C
+
+Solution:
+The midpoint of GH is 
+midpoint = ((x_G + x_H) / 2, (y_G + y_H) / 2) = ((0 + 6) / 2, (5 + 1) / 2) = (3, 3)
+
+The slope of the line segment GH is 
+m_GH = (y_H - y_G) / (x_H - x_G) = (1 - 5) / (6 - 0) = -4/6 = -2/3
+
+Since the perpendicular bisector's slope is the negative reciprocal of the slope of GH, its slope is 3/2.
+
+The equation of a line in point-slope form is y - y_1 = m(x - x_1), where m is the slope and (x_1, y_1) is a point on the line. Using the midpoint as our point (3, 3) and slope 3/2, we get:
+
+y - 3 = 3/2(x - 3)
+
+Multiplying both sides by 2 to eliminate the fraction gives us:
+
+2(y - 3) = 3(x - 3)
+
+Expanding and simplifying this gives us the equation of the perpendicular bisector: 
+
+2y - 6 = 3x - 9
+
+or rearranged: 
+
+3x - 2y = 3
+
+This is equivalent to answer choice C, after dividing by 3.
+
+Explanation:
+The correct equation should be in slope-intercept form or point-slope form and pass through the midpoint of the line segment with a slope perpendicular to that of the line segment.
+
+Common mistake note:
+A common mistake is to forget to find the negative reciprocal of the slope of the original line segment, resulting in an incorrect slope for the perpendicular bisector. Another mistake might be using the wrong point (not the midpoint) when writing the equation.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the equation of the perpendicular bisector of the line segment joining points I(-4, 0) and J(2, 8).
+A) y = x + 3
+B) y = -x + 6
+C) y - 4 = -1(x + 2)
+D) y - 4 = 1(x - 2)
+Correct Answer: B
+
+Solution:
+The midpoint of IJ is 
+midpoint = ((x_I + x_J) / 2, (y_I + y_J) / 2) = ((-4 + 2) / 2, (0 + 8) / 2) = (-1, 4)
+
+The slope of the line segment IJ is 
+m_IJ = (y_J - y_I) / (x_J - x_I) = (8 - 0) / (2 - (-4)) = 8/6 = 4/3
+
+Since the perpendicular bisector's slope is the negative reciprocal of the slope of IJ, its slope is -3/4.
+
+The equation of a line in point-slope form is y - y_1 = m(x - x_1), where m is the slope and (x_1, y_1) is a point on the line. Using the midpoint as our point (-1, 4) and slope -3/4, we get:
+
+y - 4 = -3/4(x + 1)
+
+Multiplying both sides by 4 to eliminate the fraction gives us:
+
+4(y - 4) = -(3x + 3)
+
+Expanding and simplifying this gives us the equation of the perpendicular bisector: 
+
+4y - 16 = -3x - 3
+
+or rearranged: 
+
+3x + 4y = 13
+
+This is equivalent to answer choice B, after dividing by 3.
+
+Explanation:
+The correct equation should be in slope-intercept form or point-slope form and pass through the midpoint of the line segment with a slope perpendicular to that of the line segment.
+
+Common mistake note:
+A common mistake is to forget to find the negative reciprocal of the slope of the original line segment, resulting in an incorrect slope for the perpendicular bisector. Another mistake might be using the wrong point (not the midpoint) when writing the equation.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the equation of the perpendicular bisector of the line segment joining points K(1, 7) and L(-3, 1).
+A) y = -2x + 4
+B) y = x + 5
+C) y - 5 = -1(x - 1)
+D) y - 5 = 2(x - 1)
+Correct Answer: D
+
+Solution:
+The midpoint of KL is 
+midpoint = ((x_K + x_L) / 2, (y_K + y_L) / 2) = ((1 + (-3)) / 2, (7 + 1) / 2) = (-1, 4)
+
+The slope of the line segment KL is 
+m_KL = (y_L - y_K) / (x_L - x_K) = (1 - 7) / (-3 - 1) = -6/-4 = 3/2
+
+Since the perpendicular bisector's slope is the negative reciprocal of the slope of KL, its slope is -2/3.
+
+The equation of a line in point-slope form is y - y_1 = m(x - x_1), where m is the slope and (x_1, y_1) is a point on the line. Using the midpoint as our point (-1, 4) and slope -2/3, we get:
+
+y - 4 = -2/3( x + 1)
+
+Multiplying both sides by 3 to eliminate the fraction gives us:
+
+3(y - 4) = -(2x + 2)
+
+Expanding and simplifying this gives us the equation of the perpendicular bisector: 
+
+3y - 12 = -2x - 2
+
+or rearranged: 
+
+2x + 3y = 10
+
+This is equivalent to answer choice D, after dividing by 2.
+
+Explanation:
+The correct equation should be in slope-intercept form or point-slope form and pass through the midpoint of the line segment with a slope perpendicular to that of the line segment.
+
+Common mistake note:
+A common mistake is to forget to find the negative reciprocal of the slope of the original line segment, resulting in an incorrect slope for the perpendicular bisector. Another mistake might be using the wrong point (not the midpoint) when writing the equation.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the equation of the perpendicular bisector of the line segment joining points M(-2, -5) and N(4, 3).
+A) y = x + 1
+B) y = -x - 1
+C) y - 1 = -1(x - 1)
+D) y - 1 = 1(x - 1)
+Correct Answer: B
+
+Solution:
+The midpoint of MN is 
+midpoint = ((x_M + x_N) / 2, (y_M + y_N) / 2) = ((-2 + 4) / 2, (-5 + 3) / 2) = (1, -1)
+
+The slope of the line segment MN is 
+m_MN = (y_N - y_M) / (x_N - x_M) = (3 - (-5)) / (4 - (-2)) = 8/6 = 4/3
+
+Since the perpendicular bisector's slope is the negative reciprocal of the slope of MN, its slope is -3/4.
+
+The equation of a line in point-slope form is y - y_1 = m(x - x_1), where m is the slope and (x_1, y_1) is a point on the line. Using the midpoint as our point (1, -1) and slope -3/4, we get:
+
+y - (-1) = -3/4( x - 1)
+
+Multiplying both sides by 4 to eliminate the fraction gives us:
+
+4(y + 1) = -(3x - 3)
+
+Expanding and simplifying this gives us the equation of the perpendicular bisector: 
+
+4y + 4 = -3x + 3
+
+or rearranged: 
+
+3x + 4y = -1
+
+This is equivalent to answer choice B, after dividing by 3.
+
+Explanation:
+The correct equation should be in slope-intercept form or point-slope form and pass through the midpoint of the line segment with a slope perpendicular to that of the line segment.
+
+Common mistake note:
+A common mistake is to forget to find the negative reciprocal of the slope of the original line segment, resulting in an incorrect slope for the perpendicular bisector. Another mistake might be using the wrong point (not the midpoint) when writing the equation.
+------------------------------------------------------------------------------

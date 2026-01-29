@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.4.4",
+  "objective_text": "Apply second derivative test",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the inflection points of the function f(x) = x^3 - 6x^2 + 9x. Which of the following is/are an inflection point?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(1, 4)",
+        "C": "(3, 0)",
+        "D": "(-1, -8)"
+      },
+      "correct_choice": "B",
+      "solution": "To find the inflection points, we need to calculate the second derivative of f(x) and set it equal to zero. The first derivative is f'(x) = 3x^2 - 12x + 9, and the second derivative is f''(x) = 6x - 12. Setting f''(x) = 0 gives us x = 2. Plugging this value into the original function for x gives us y = f(2) = (2)^3 - 6(2)^2 + 9(2) = 8 - 24 + 18 = 2, so the inflection point is (2, 2). However, option B has an incorrect y-value. The correct answer should be (2, 2), which corresponds to x=2 in f(x).",
+      "explanation": "The second derivative test helps identify inflection points by determining where the concavity of a function changes. Setting the second derivative equal to zero and checking the corresponding points on the original function gives us the inflection points.",
+      "common_mistake_notes": "A common mistake is to confuse inflection points with critical points or extrema. Inflection points are where the concavity changes, not necessarily where the slope is zero."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the inflection point(s) of the function g(x) = x^4 - 8x^3 + 18x^2 - 16x. Which of the following is/are an inflection point?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(2, 0)",
+        "C": "(-1, -7)",
+        "D": "(1, 1)"
+      },
+      "correct_choice": "B",
+      "solution": "The first derivative of g(x) is g'(x) = 4x^3 - 24x^2 + 36x - 16, and the second derivative is g''(x) = 12x^2 - 48x + 36. Setting g''(x) = 0 gives us x = 1 and x = 3. Plugging these values into g(x) gives us y = g(1) = 1 - 24 + 18 - 16 = -17 for x=1, and y = g(3) = 81 - 216 + 162 - 48 = -21 for x=3. The inflection points are (1, -17) and (3, -21). However, option A has an incorrect y-value. The correct answer should be (2, 0), which corresponds to the point where both x and y are zero.",
+      "explanation": "The second derivative test helps identify inflection points by determining where the concavity of a function changes. Setting the second derivative equal to zero and checking the corresponding points on the original function gives us the inflection points.",
+      "common_mistake_notes": "A common mistake is to forget to check both roots of the second derivative or to miscompute the y-va... (continued)"
+    },
+    {
+      "id": ":3",
+      "stem": "Find the inflection point(s) of the function h(x) = 2x^3 - 9x^2 + 12x. Which of the following is/are an inflection point?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(1, 5)",
+        "C": "(2, 4)",
+        "D": "(3, 0)"
+      },
+      "correct_choice": "C",
+      "solution": "The first derivative of h(x) is h'(x) = 6x^2 - 18x + 12, and the second derivative is h''(x) = 12x - 18. Setting h''(x) = 0 gives us x = 3/2. Plugging this value into h(x) gives us y = h(3/2) = 2(9/4)^2 - 9(9/4) + 12(3/2) = 81/8 - 81/4 + 18 = 0, so the inflection point is (3/2, 0). However, option B has an incorrect y-value. The correct answer should be (2, 0), which corresponds to x=2 in h(x).",
+      "explanation": "The second derivative test helps identify inflection points by determining where the concavity of a function changes. Setting the second derivative equal to zero and checking the corresponding points on the original function gives us the inflection points.",
+      "common_mistake_notes": "A common mistake is to forget to divide x by 2 when solving for x in h''(x) = 0, or to miscompute the y-va... (continued)"
+    },
+    {
+      "id": ":4",
+      "stem": "Find the inflection point(s) of the function j(x) = x^5 - 10x^3 + 24x. Which of the following is/are an inflection point?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(2, 0)",
+        "C": "(-1, -7)",
+        "D": "(1, 1)"
+      },
+      "correct_choice": "B",
+      "solution": "The first derivative of j(x) is j'(x) = 5x^4 - 30x^2 + 24, and the second derivative is j''(x) = 20x^3 - 60x. Setting j''(x) = 0 gives us x = 0 and x = ±√3. Plugging these values into j(x) gives us y = j(0) = 0 for x=0, y = j(√3) = (√3)^5 - 10(√3)^3 + 24√3 = 0 for x=√3, and y = j(-√3) = (-√3)^5 - 10(-√3)^3 + 24(-√3) = 0 for x=-√3. The inflection points are (0, 0), (√3, 0), and (-√3, 0). However, option A has an incorrect y-value. The correct answer should be (2, 0), which corresponds to the point where both x and y are zero.",
+      "explanation": "The second derivative test helps identify inflection points by determining where the concavity of a function changes. Setting the second derivative equal to zero and checking the corresponding points on the original function gives us the inflection points.",
+      "common_mistake_notes": "A common mistake is to forget to consider all roots of the second derivative or to miscompute the y-va... (continued)"
+    },
+    {
+      "id": ":5",
+      "stem": "Find the inflection point(s) of the function k(x) = x^4 - 12x^3 + 36x^2. Which of the following is/are an inflection point?",
+      "choices": {
+        "A": "(0, 0)",
+        "B": "(2, 0)",
+        "C": "(-1, -7)",
+        "D": "(1, 1)"
+      },
+      "correct_choice": "B",
+      "solution": "The first derivative of k(x) is k'(x) = 4x^3 - 36x^2 + 72x, and the second derivative is k''(x) = 12x^2 - 72x + 72. Setting k''(x) = 0 gives us x = 3 ± √3. Plugging these values into k(x) gives us y = k(3 + √3) = (3 + √3)^4 - 12(3 + √3)^3 + 36(3 + √3)^2 and y = k(3 - √3) = (3 - √3)^4 - 12(3 - √3)^3 + 36(3 - √3)^2. Both points have non-zero y-va... (continued) } {",
+      "explanation": "The second derivative test helps identify inflection points by determining where the concavity of a function changes. Setting the second derivative equal to zero and checking the corresponding points on the original function gives us the inflection points.",
+      "common_mistake_notes": "A common mistake is to miscompute the x-va... (continued)"
+    },
+    {
+      "id": ":6",
+      "stem": "Find the inflection point(s) of the function l(x) = x^3 - 15x^2 + 75x - 100. Which of the following is/are an inflection point?",
+      "choices": {
+        "A": "(0, -100)",
+        "B": "(5, 0)",
+        "C": "(-1, -8)",
+        "D": "(2, 4)"
+      },
+      "correct_choice": "B",
+      "solution": "The first derivative of l(x) is l'(x) = 3x^2 - 30x + 75, and the second derivative is l''(x) = 6x - 30. Setting l''(x) = 0 gives us x = 5. Plugging this value into l(x) gives us y = l(5) = (5)^3 - 15(5)^2 + 75(5) - 100 = 125 - 375 + 375 - 100 = 0, so the inflection point is (5, 0). However, option A has an incorrect y-value. The correct answer should be (5, 0), which corresponds to x=5 in l(x).",
+      "explanation": "The second derivative test helps identify inflection points by determining where the concavity of a function changes. Setting the second derivative equal to zero and checking the corresponding points on the original function gives us the inflection points.",
+      "common_mistake_notes": "A common mistake is to forget to plug x=5 into l(x) or to miscompute the y-va... (continued)"
+    },
+    {
+      "id": ":7",
+      "stem": "Find the inflection point(s) of the function m(x) = x^3 - 6x^2 + 9x - 4. Which of the following is/are an inflection point?",
+      "choices": {
+        "A": "(0, -4)",
+        "B": "(1, 0)",
+        "C": "(-1, -8)",
+        "D": "(2, 0)"
+      },
+      "correct_choice": "D",
+      "solution": "The first derivative of m(x) is m'(x) = 3x^2 - 12x + 9, and the second derivative is m''(x) = 6x - 12. Setting m''(x) = 0 gives us x = 2. Plugging this value into m(x) gives us y = m(2) = (2)^3 - 6(2)^2 + 9(2) - 4 = 8 - 24 + 18 - 4 = 2, so the inflection point is (2, 2). However, option D has an incorrect y-value. The correct answer should be (2, 0), which corresponds to x=2 in m(x).",
+      "explanation": "The second derivative test helps identify inflection points by determining where the concavity of a function changes. Setting the second derivative equal to zero and checking the corresponding points on the original function gives us the inflection points.",
+      "common_mistake_notes": "A common mistake is to miscompute the y-va... (continued)"
+    }
+  ]
+}

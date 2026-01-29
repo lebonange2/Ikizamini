@@ -1,0 +1,200 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.8.14 Solve complex exponential equations
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.8 Complex Equations and Inequalities
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the value of x in the equation: e^(3ix) = -1 + i
+A) -π/6
+B) π/6
+C) 5π/6
+D) 7π/6
+Correct Answer: B
+
+Solution:
+Given the equation e^(3ix) = -1 + i, we can use Euler's formula to convert the complex exponential form into trigonometric form. Euler's formula states that e^(ix) = cos(x) + isin(x), where i is the imaginary unit.
+
+So, e^(3ix) = cos(3x) + isin(3x). Setting this equal to -1 + i gives us:
+cos(3x) + isin(3x) = -1 + i
+Comparing real and imaginary parts, we get two equations:
+
+cos(3x) = -1
+sin(3x) = 1
+The first equation tells us that 3x must be at the angle where cosine is -1, which is π. So, 3x = π.
+The second equation tells us that 3x must be at the angle where sine is 1, which is π/2. However, since we already have 3x = π, this condition is satisfied simultaneously with the first one.
+
+Solving for x, we get:
+x = π / 3
+This corresponds to option B (π/6) because we're looking for the value of x, not 3x.
+
+Explanation:
+The correct answer is found by converting the complex exponential equation into trigonometric form and equating real and imaginary parts. The common mistake would be to forget that we are solving for x, not 3x, which leads to selecting option A (-π/6) instead of B (π/6).
+
+Common mistake note:
+Common mistake: Selecting A (-π/6) instead of B (π/6) because the question asks for the value of x, not 3x.
+------------------------------------------------------------------------------
+
+Problem 2 (Bvbn):
+Solve the equation: e^(4ix) + e^(-4ix) = 2
+A) π/8
+B) π/4
+C) π/2
+D) 3π/4
+Correct Answer: C
+
+Solution:
+Given the equation e^(4ix) + e^(-4ix) = 2, we can use the identity for the cosine of a double angle: cos(2θ) = (e^(iθ) + e^(-iθ))/2.
+
+Applying this identity to our equation:
+cos(8x) = (e^(4ix) + e^(-4ix))/2 = 1
+Since cos(θ) = 1 at angles that are multiples of π, we have:
+8x = kπ, where k is an integer.
+To find x, divide both sides by 8:
+x = kπ/8
+For the smallest positive solution, we can set k = 1:
+x = π/8
+However, this is not one of the given options. The identity cos(2θ) = 2cos²θ - 1 also holds true. Let's use that to find another form of the equation:
+
+cos(2θ) = 2cos²θ - 1
+Setting this equal to 2 gives us:
+2cos²θ - 1 = 2
+cos²θ = 3/2
+This is not possible within the range of cosine, as cos²θ must be between 0 and 1. Therefore, there is no real solution for x in the given equation.
+
+Explanation:
+The correct answer is found by using trigonometric identities and recognizing that there is no real solution for x. The common mistake would be to assume that cos(8x) = 1 directly leads to x = π/8, without considering other possible solutions or checking the range of cosine.
+
+Common mistake note:
+Common mistake: Assuming that cos(8x) = 1 only at x = π/8 and not considering other multiples of π or checking for extraneous solutions.
+------------------------------------------------------------------------------
+
+Problem 3 (Cvbh):
+Solve for x in the equation: e^(ix) + e^(-ix) = 2
+A) 0
+B) π
+C) π/2
+D) 3π/2
+Correct Answer: A
+
+Solution:
+Given the equation e^(ix) + e^(-ix) = 2, we can use the identity for the cosine of a single angle: cos(x) = (e^(ix) + e^(-ix))/2.
+
+Setting this equal to 2 gives us:
+cos(x) = 2
+However, the range of cosine is [-1, 1], so there are no real solutions for x that make cos(x) = 2. The equation has no solution in the domain of real numbers. Therefore, the correct answer is A (0), as it represents an empty set or no solution.
+
+Explanation:
+The correct answer is found by recognizing that the cosine function cannot take a value greater than 1. The common mistake would be to assume there's a real solution for x.
+
+Common mistake note:
+Common mistake: Assuming there is a real solution for x when cos(x) = 2, which is not possible within the range of cosine.
+------------------------------------------------------------------------------
+
+Problem 4 (Dfgh):
+Solve for x in the equation: e^(ix) - e^(-ix) = 0
+A) π/4
+B) π/2
+C) 3π/4
+D) π
+Correct Answer: B
+
+Solution:
+Given the equation e^(ix) - e^(-ix) = 0, we can use the identity for the sine of a single angle: sin(x) = (e^(ix) - e^(-ix))/(2i).
+
+Setting this equal to 0 gives us:
+sin(x) = 0
+This occurs when x is an integer multiple of π. The smallest positive solution is x = π, which corresponds to option D (π).
+
+Explanation:
+The correct answer is found by using the sine identity and recognizing that sin(x) = 0 at multiples of π. The common mistake would be to select A (π/4), C (3π/4), or B (π/2), which are not solutions to the given equation.
+
+Common mistake note:
+Common mistake: Selecting A, C, or B as they do not satisfy sin(x) = 0.
+------------------------------------------------------------------------------
+
+Problem 5 (Ejkl):
+Solve for x in the equation: e^(2ix) + 1 = 0
+A) π/4
+B) π/2
+C) 3π/4
+D) π
+Correct Answer: C
+
+Solution:
+Given the equation e^(2ix) + 1 = 0, we can rewrite it as:
+e^(2ix) = -1
+Using Euler's formula, e^(ix) = cos(x) + isin(x), we have:
+cos(2x) + isin(2x) = -1 + 0i
+Comparing real and imaginary parts, we get two equations:
+
+cos(2x) = -1
+sin(2x) = 0
+The first equation tells us that 2x must be at the angle where cosine is -1, which is π. So, 2x = π.
+The second equation tells us that 2x must be at an angle where sine is 0, which are multiples of π. However, since we already have 2x = π, this condition is satisfied simultaneously with the first one.
+
+Solving for x, we get:
+x = π / 2
+This corresponds to option B (π/2), but note that there will be infinitely many solutions as we can add or subtract integer multiples of 2π to our solution. However, since we're looking for a single value within the range of -π to π, we choose x = π/2.
+
+Explanation:
+The correct answer is found by converting the complex exponential equation into trigonometric form and equating real and imaginary parts. The common mistake would be to forget that there are infinitely many solutions and select A (π/4) instead of B (π/2).
+
+Common mistake note:
+Common mistake: Selecting A (-π/4) instead of B (π/2) because it's a single solution within the range, but forgetting that there are infinitely many solutions due to periodicity.
+------------------------------------------------------------------------------
+
+Problem 6 (Fmno):
+Solve for x in the equation: e^(ix) - 1 = i
+A) π/2
+B) π
+C) 3π/2
+D) 2π
+Correct Answer: A
+
+Solution:
+Given the equation e^(ix) - 1 = i, we can rearrange it as:
+e^(ix) = 1 + i
+Using Euler's formula, e^(ix) = cos(x) + isin(x), we have:
+cos(x) + isin(x) = 1 + i
+Comparing real and imaginary parts, we get two equations:
+
+cos(x) = 1
+sin(x) = 1
+The first equation tells us that x must be at the angle where cosine is 1, which is 0. However, this does not satisfy the second equation.
+Instead, we can consider the angle where sine is 1 and cosine is 0, which is π/2. This satisfies both equations:
+cos(x) = cos(π/2) = 0
+sin(x) = sin(π/2) = 1
+So, x = π/2.
+This corresponds to option A (π/2).
+
+Explanation:
+The correct answer is found by converting the complex exponential equation into trigonometric form and equating real and imaginary parts. The common mistake would be to select B (π), C (3π/2), or D (2π) as they do not satisfy both cos(x) = 1 and sin(x) = 1 simultaneously.
+
+Common mistake note:
+Common mistake: Selecting B, C, or D because they do not satisfy both cos(x) = 1 and sin(x) = 1 at the same time.
+------------------------------------------------------------------------------
+
+Problem 7 (Gpqr):
+Solve for x in the equation: e^(ix) + e^(-ix) - 2 = 0
+A) π/4
+B) π/2
+C) 3π/4
+D) π
+Correct Answer: B
+
+Solution:
+Given the equation e^(ix) + e^(-ix) - 2 = 0, we can use the identity for the cosine of a single angle: cos(x) = (e^(ix) + e^(-ix))/2.
+
+Rearranging the equation gives us:
+cos(x) - 1 = 0
+cos(x) = 1
+This occurs when x is an integer multiple of π. The smallest positive solution is x = π, which corresponds to option D (π).
+
+Explanation:
+The correct answer is found by using the cosine identity and recognizing that cos(x) = 1 at multiples of π. The common mistake would be to select A (π/4), C (3π/4), or B (π/2), which are not solutions to the given equation.
+
+Common mistake note:
+Common mistake: Selecting A, C, or B as they do not satisfy cos(x) = 1.
+------------------------------------------------------------------------------

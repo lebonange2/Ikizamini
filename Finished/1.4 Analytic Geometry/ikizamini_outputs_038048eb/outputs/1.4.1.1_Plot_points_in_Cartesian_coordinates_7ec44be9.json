@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.1.1",
+  "objective_text": "Plot points in Cartesian coordinates",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Plot the point (3, 4) on the Cartesian plane.",
+      "choices": {
+        "A": "(4, 3)",
+        "B": "(3, -4)",
+        "C": "(-3, 4)",
+        "D": "(3, 4)"
+      },
+      "correct_choice": "D",
+      "solution": "The point (3, 4) has an x-coordinate of 3 and a y-coordinate of 4. The correct plot is at the intersection of the line representing x = 3 and the line representing y = 4.",
+      "explanation": "In Cartesian coordinates, the first number represents the x-coordinate and the second number represents the y-coordinate.",
+      "common_mistake_notes": "A common mistake is reversing the order of the coordinates. Remember that (x, y) means 'x goes first, then y'."
+    },
+    {
+      "id": ":2",
+      "stem": "Which point lies on the x-axis?",
+      "choices": {
+        "A": "(0, 5)",
+        "B": "(5, 0)",
+        "C": "(5, 5)",
+        "D": "(-3, 0)"
+      },
+      "correct_choice": "B",
+      "solution": "A point lies on the x-axis if its y-coordinate is zero. In this case, (5, 0) has a y-coordinate of 0.",
+      "explanation": "The x-axis is where all points have a y-value of 0.",
+      "common_mistake_notes": "Be cautious not to choose a point with a non-zero y-coordinate, like (0, 5), which lies on the y-axis."
+    },
+    {
+      "id": ":3",
+      "stem": "What is the y-coordinate of the point located 2 units to the right and 3 units up from the origin?",
+      "choices": {
+        "A": "-3",
+        "B": "1",
+        "C": "3",
+        "D": "5"
+      },
+      "correct_choice": "C",
+      "solution": "Starting at the origin (0, 0), moving 2 units to the right increases the x-coordinate by 2 and moving 3 units up increases the y-coordinate by 3. So, the point is at (2, 3). The y-coordinate is 3.",
+      "explanation": "When moving from the origin, positive changes in the x-direction correspond to an increase in the x-coordinate, and positive changes in the y-direction correspond to an increase in the y-coordinate.",
+      "common_mistake_notes": "A common mistake would be to add or subtract the distances incorrectly. Remember that each direction is independent."
+    },
+    {
+      "id": ":4",
+      "stem": "Plot the point (-2, -3) on the Cartesian plane.",
+      "choices": {
+        "A": "(2, 3)",
+        "B": "(2, -3)",
+        "C": "(-2, 3)",
+        "D": "(-2, -3)"
+      },
+      "correct_choice": "D",
+      "solution": "The point (-2, -3) has an x-coordinate of -2 and a y-coordinate of -3. The correct plot is at the intersection of the line representing x = -2 and the line representing y = -3.",
+      "explanation": "In Cartesian coordinates, negative numbers represent positions to the left on the x-axis and below the origin on the y-axis.",
+      "common_mistake_notes": "A common mistake is reversing the signs of the coordinates. Remember that (-x, -y) means 'negative x goes first, then negative y'."
+    },
+    {
+      "id": ":5",
+      "stem": "The point (0, 7) lies on which axis?",
+      "choices": {
+        "A": "x-axis",
+        "B": "y-axis",
+        "C": "Both axes",
+        "D": "Neither axis"
+      },
+      "correct_choice": "B",
+      "solution": "A point with a y-coordinate of 0 lies on the x-axis, and a point with an x-coordinate of 0 lies on the y-axis. Since (0, 7) has a non-zero y-coordinate, it lies on the y-axis.",
+      "explanation": "The x-axis is where all points have a y-value of 0, and the y-axi... (truncated for brevity) ...e. Points with zero coordinates lie on the respective axis.",
+      "common_mistake_notes": "Be careful not to confuse the roles of the axes. Points with zero coordinates lie on the respective axis."
+    },
+    {
+      "id": ":6",
+      "stem": "What is the x-coordinate of a point that is 4 units above and 5 units to the right of the point (1, -2)?",
+      "choices": {
+        "A": "-3",
+        "B": "0",
+        "C": "4",
+        "D": "6"
+      },
+      "correct_choice": "D",
+      "solution": "Starting at (1, -2), moving 5 units to the right increases the x-coordinate by 5 and moving 4 units up increases the y-coordinate by 4. So, the new point is at (6, 2). The x-coordinate is 6.",
+      "explanation": "When moving from a given point, positive changes in the x-direction correspond to an increase in the x-coordinate, and positive changes in the y-direction correspond to an increase in the y-coordinate.",
+      "common_mistake_notes": "A common mistake would be to add or subtract the distances incorrectly. Remember that each direction is independent."
+    },
+    {
+      "id": ":7",
+      "stem": "Plot the point (1/2, 3/4) on the Cartesian plane.",
+      "choices": {
+        "A": "(2/3, 1/4)",
+        "B": "(1/2, 3/4)",
+        "C": "(3/4, 1/2)",
+        "D": "(1, 1)"
+      },
+      "correct_choice": "B",
+      "solution": "The point (1/2, 3/4) has an x-coordinate of 1/2 and a y-coordinate of 3/4. The correct plot is at the intersection of the line representing x = 1/2 and the line representing y = 3/4.",
+      "explanation": "In Cartesian coordinates, fractions can be used to represent points as well. Just like whole numbers, the first fraction represents the x-coordinate and the second fraction represents the y-coordinate.",
+      "common_mistake_notes": "A common mistake is simplifying or converting the fractions incorrectly. Remember to plot the exact coordinates given."
+    }
+  ]
+}

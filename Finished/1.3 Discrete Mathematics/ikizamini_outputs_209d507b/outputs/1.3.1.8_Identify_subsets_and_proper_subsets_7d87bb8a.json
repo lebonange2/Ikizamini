@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.1.8",
+  "objective_text": "Identify subsets and proper subsets",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which of the following is a proper subset of {1, 2, 3, 4}?",
+      "choices": {
+        "A": "{1}",
+        "B": "{1, 2}",
+        "C": "{1, 2, 3}",
+        "D": "{1, 2, 3, 4}"
+      },
+      "correct_choice": "B",
+      "solution": "A proper subset contains all elements of the original set and at least one element is missing. In this case, {1, 2} is a proper subset of {1, 2, 3, 4}, as it has all elements from the original set but lacks 3 and 4.",
+      "explanation": "Proper subsets exclude at least one element from the original set.",
+      "common_mistake_notes": "Common mistake: Choosing D, which is not a proper subset because it is identical to the original set."
+    },
+    {
+      "id": "2",
+      "stem": "Is {5, 6} a subset or a proper subset of {1, 2, 3, 4, 5, 6}? Explain.",
+      "choices": {
+        "A": "Subset",
+        "B": "Proper subset",
+        "C": "Neither",
+        "D": "Both"
+      },
+      "correct_choice": "A",
+      "solution": "A subset contains all or some elements of the original set without excluding any. {5, 6} is a subset of {1, 2, 3, 4, 5, 6}, as it includes two elements from the original set.",
+      "explanation": "Subsets can be proper (missing at least one element) or not (containing all elements).",
+      "common_mistake_notes": "Common mistake: Choosing B, which is incorrect because {5, 6} does not exclude any elements from the original set."
+    },
+    {
+      "id": "3",
+      "stem": "Which of the following sets is a proper subset of {a, b, c}? Select all that apply.",
+      "choices": {
+        "A": "{a}",
+        "B": "{b, c}",
+        "C": "{a, b}",
+        "D": "{a, b, c}"
+      },
+      "correct_choice": "A",
+      "solution": "Proper subsets exclude at least one element from the original set. In this case, {a} is a proper subset of {a, b, c}, as it excludes b and c.",
+      "explanation": "Proper subsets can have any combination of elements missing from the original set.",
+      "common_mistake_notes": "Common mistake: Choosing D, which is not a proper subset because it includes all elements from the original set."
+    },
+    {
+      "id": "4",
+      "stem": "Is {x, y} a proper subset of {x, y, z}? Explain.",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined",
+        "D": "Both A and B"
+      },
+      "correct_choice": "B",
+      "solution": "A proper subset excludes at least one element from the original set. In this case, {x, y} is not a proper subset of {x, y, z}, because it includes all elements from the original set.",
+      "explanation": "Proper subsets do not include all elements of the original set.",
+      "common_mistake_notes": "Common mistake: Choosing A, which is incorrect because {x, y} does not exclude any elements from the original set."
+    },
+    {
+      "id": "5",
+      "stem": "Which of the following sets is a subset of {m, n, o, p}? Select all that apply.",
+      "choices": {
+        "A": "{n, o}",
+        "B": "{p, m, n, o}",
+        "C": "{m, n, o, p}",
+        "D": "{o, p}"
+      },
+      "correct_choice": "A",
+      "solution": "Subsets can include any combination of elements from the original set. In this case, {n, o} is a subset of {m, n, o, p}, as it includes two elements from the original set.",
+      "explanation": "Subsets can have any number of elements from the original set.",
+      "common_mistake_notes": "Common mistake: Choosing C, which is not a proper subset but rather identical to the original set."
+    },
+    {
+      "id": "6",
+      "stem": "Is {1, 2, 3} a proper subset of {1, 2, 3, 4, 5}? Explain.",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined",
+        "D": "Both A and B"
+      },
+      "correct_choice": "B",
+      "solution": "A proper subset excludes at least one element from the original set. In this case, {1, 2, 3} is not a proper subset of {1, 2, 3, 4, 5}, because it includes all elements from the original set.",
+      "explanation": "Proper subsets do not include all elements of the original set.",
+      "common_mistake_notes": "Common mistake: Choosing A, which is incorrect because {1, 2, 3} does not exclude any elements from the original set."
+    },
+    {
+      "id": "7",
+      "stem": "Which of the following sets is a proper subset of {x, y, z}? Select all that apply.",
+      "choices": {
+        "A": "{y}",
+        "B": "{x, y, z}",
+        "C": "{x, y}",
+        "D": "{z}"
+      },
+      "correct_choice": "A",
+      "solution": "Proper subsets exclude at least one element from the original set. In this case, {y} is a proper subset of {x, y, z}, as it excludes x and z.",
+      "explanation": "Proper subsets can have any combination of elements missing from the original set.",
+      "common_mistake_notes": "Common mistake: Choosing B, which is not a proper subset because it includes all elements from the original set."
+    }
+  ]
+}

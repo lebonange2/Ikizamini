@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.14.6 Apply to GPS positioning
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.14 Analytic Geometry Applications
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+A GPS receiver calculates its position by receiving signals from at least how many satellites?
+A) 2
+B) 3
+C) 4
+D) 5
+Correct Answer: C
+
+Solution:
+A GPS receiver needs a minimum of 4 satellite signals to calculate its position using trilateration. Three satellites provide the receiver with positional information in three dimensions (x, y, z), and the fourth satellite is used for clock synchronization and accuracy.
+
+Explanation:
+Trilateration determines an object's location by measuring distances from three or more known points. In GPS, these points are satellites orbiting Earth. Four satellites are required for 3D positioning and accurate time synchronization.
+
+Common mistake note:
+A common mistake is to choose '2', thinking that two signals would suffice for a 2D position. However, GPS provides 3D positioning and requires at least three satellites for triangulation; the fourth satellite ensures accuracy.
+------------------------------------------------------------------------------
+
+Problem 2 (Xyz789):
+GPS signals travel at what speed?
+A) 10,000 km/s
+B) 20,000 km/s
+C) 30,000 km/s
+D) The speed of light
+Correct Answer: D
+
+Solution:
+GPS signals travel at the speed of light in a vacuum, approximately 299,792 kilometers per second (km/s). This speed is crucial for precise distance calculations.
+
+Explanation:
+The speed of light is constant and GPS relies on measuring time taken for signals to reach Earth. Knowing this time and the speed of light enables accurate distance calculation between satellite and receiver.
+
+Common mistake note:
+A common mistake might be selecting a lower speed, like '10,000 km/s' or '20,000 km/s', which underestimates the actual value. GPS signals travel at the fastest possible speed for electromagnetic radiation.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwe456):
+GPS satellites transmit signals on how many frequencies?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: B
+
+Solution:
+GPS satellites transmit signals on two frequencies: 1575.42 MHz (L1) and 1227.60 MHz (L2). These frequencies aid in error checks and improve accuracy.
+
+Explanation:
+Dual-frequency transmission corrects ionospheric delays and other errors. By comparing both frequencies, receivers make more accurate distance calculations.
+
+Common mistake note:
+A common mistake might be selecting '1' or '3', implying a single frequency or incorrect number of frequencies. Both L1 and L2 are essential for GPS accuracy.
+------------------------------------------------------------------------------
+
+Problem 4 (Rty789):
+GPS signals experience ionospheric delay, which affects the signal's travel time by approximately how much?
+A) 0.1 to 1 microsecond
+B) 1 to 10 microseconds
+C) 10 to 100 microseconds
+D) 100 to 1000 microseconds
+Correct Answer: B
+
+Solution:
+GPS signals experience ionospheric delay, typically ranging from about 1 to 10 microseconds. The ionosphere is an atmospheric layer with ions and electrons affecting radio signals.
+
+Explanation:
+Ionospheric delay occurs as GPS signals pass through the ionosphere, slightly increasing travel time. Receivers correct for this delay to enhance position calculations.
+
+Common mistake note:
+A common mistake might be selecting extreme values like '0.1 to 1 microsecond' or '100 to 1000 microseconds', underestimating or overestimating typical ionospheric delay.
+------------------------------------------------------------------------------
+
+Problem 5 (Ghi567):
+GPS receivers use a technique called 'carrier phase measurement' for high-precision positioning. Which of the following statements about carrier phase measurement is true?
+A) It measures the number of complete cycles of the carrier wave.
+B) It relies on measuring the Doppler shift of the signal.
+C) It requires a reference station with known position.
+D) It is only used in military GPS receivers.
+Correct Answer: A
+
+Solution:
+Carrier phase measurement counts complete cycles of the carrier wave, providing centimeter-level accuracy. It's available in both civilian and military receivers.
+
+Explanation:
+By measuring exact cycle numbers, receivers calculate distances to satellites with high precision. This method is useful for surveying and real-time kinematic (RTK) GPS.
+
+Common mistake note:
+A common mistake might be selecting 'It relies on measuring the Doppler shift of the signal' or 'It requires a reference station with known position', which describe other techniques like differential GPS (DGPS).
+------------------------------------------------------------------------------
+
+Problem 6 (Jkl890):
+GPS signals can be affected by multipath interference when the signal reaches the receiver through multiple paths. Which of the following is NOT a common cause of multipath?
+A) Reflection off buildings and other structures
+B) Refraction through the ionosphere
+C) Reflection from the ground or water surfaces
+D) Interference from other electronic devices
+Correct Answer: B
+
+Solution:
+Multipath interference is caused by reflections from objects like buildings, ground, and water; interference from other devices. Refraction through the ionosphere affects signal travel time but doesn't cause multipath.
+
+Explanation:
+Multipath occurs when GPS signals reach receivers via multiple paths, causing distance calculation errors. Receivers distinguish direct and reflected signals to minimize these errors.
+
+Common mistake note:
+A common mistake might be selecting 'Refraction through the ionosphere', which impacts signal travel time but doesn't directly cause multipath interference.
+------------------------------------------------------------------------------
+
+Problem 7 (Mno987):
+Which of the following factors can affect GPS signal strength?
+A) Altitude above sea level
+B) Weather conditions like rain or snow
+C) Distance from the equator
+D) The number of satellites in orbit
+Correct Answer: B
+
+Solution:
+GPS signal strength can weaken due to weather conditions like rain, snow, and fog. Altitude, distance from the equator, and satellite count don't directly impact signal strength.
+
+Explanation:
+Weather affects the atmosphere, weakening or distorting GPS signals. Factors like altitude, latitude, and satellite numbers influence visibility and geometry, not signal strength itself.
+
+Common mistake note:
+A common mistake might be selecting 'Altitude above sea level' or 'Distance from the equator', which affect satellite visibility but don't直接影响 signal strength. Satellite count is important for receiver functionality, but it doesn't directly impact signal strength.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.3.6",
+  "objective_text": "Apply implicit differentiation",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "[1.5.3.6]Q1",
+      "stem": "Find the derivative of y with respect to x for the equation x^2 + y^2 = 25 using implicit differentiation.",
+      "choices": {
+        "A": "2x - 2yy'",
+        "B": "2y",
+        "C": "2x + 2yy'",
+        "D": "2yy'"
+      },
+      "correct_choice": "D",
+      "solution": "To find dy/dx, differentiate both sides with respect to x: 2x + 2yy' = 0. Solving for y', we get y' = -2x / 2y = -x/y. Choice D is correct.",
+      "explanation": "The derivative of y with respect to x is 2yy', which corresponds to choice D.",
+      "common_mistake_notes": "A common mistake is forgetting the chain rule, resulting in choice A (2y)."
+    },
+    {
+      "id": "[1.5.3.6]Q2",
+      "stem": "Find dy/dx for the equation sin(xy) = 2 using implicit differentiation.",
+      "choices": {
+        "A": "-cos(xy)(y + xy')",
+        "B": "cos(xy)",
+        "C": "cos(xy)(y - xy')",
+        "D": "cos(xy)(1 - x)"
+      },
+      "correct_choice": "A",
+      "solution": "Differentiating sin(xy) with respect to x using product and chain rules: cos(xy)(y + xy') = -cos(xy)(y + xy'). Choice A is correct.",
+      "explanation": "The derivative of y with respect to x is -cos(xy)(y + xy'), corresponding to choice A.",
+      "common_mistake_notes": "A common mistake is forgetting the negative sign, resulting in choice B (cos(xy))."
+    },
+    {
+      "id": "[1.5.3.6]Q3",
+      "stem": "Find dy/dx for the equation e^(2x + y) = 4 using implicit differentiation.",
+      "choices": {
+        "A": "e^(2x + y)(2 - y')",
+        "B": "e^(2x + y)",
+        "C": "e^(2x + y)(1 - y'/2)",
+        "D": "e^(2x + y)/2"
+      },
+      "correct_choice": "A",
+      "solution": "Differentiating e^(2x + y) with respect to x using chain rule: e^(2x + y)(2 + y') = e^(2x + y)(2 - y'). Choice A is correct.",
+      "explanation": "The derivative of y with respect to x is e^(2x + y)(2 - y'), corresponding to choice A.",
+      "common_mistake_notes": "A common mistake is not subtracting y', resulting in choice C (e^(2x + y)(1 - y'/2))."
+    },
+    {
+      "id": "[1.5.3.6]Q4",
+      "stem": "Find dy/dx for the equation y = ln(x^2 + 1) using implicit differentiation.",
+      "choices": {
+        "A": "2x / (x^2 + 1)",
+        "B": "(2x + 1) / x^2",
+        "C": "2 / (x^2 + 1)",
+        "D": "1 / (x^2 + 1)"
+      },
+      "correct_choice": "C",
+      "solution": "Differentiating ln(x^2 + 1) with respect to x using chain rule: (1/(x^2 + 1)) * 2x = 2 / (x^2 + 1). Choice C is correct.",
+      "explanation": "The derivative of y with respect to x is 2 / (x^2 + 1), corresponding to choice C.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply by du/dx, resulting in choice D (1 / (x^2 + 1))."
+    },
+    {
+      "id": "[1.5.3.6]Q5",
+      "stem": "Find dy/dx for the equation y = x^(sin(x)) using implicit differentiation.",
+      "choices": {
+        "A": "x^(sin(x)) * (cos(x) + ln(x)sin( x))",
+        "B": "x^(sin(x)) * cos(x)",
+        "C": "x^(sin(x)) * ln(x)",
+        "D": "x^(sin(x))"
+      },
+      "correct_choice": "A",
+      "solution": "Using chain rule twice: y' = x^(sin(x)) * (cos(x) + ln(x)sin(x)). Choice A is correct.",
+      "explanation": "The derivative of y with respect to x is x^(sin(x)) * (cos(x) + ln(x)sin(x)), corresponding to choice A.",
+      "common_mistake_notes": "A common mistake is not applying the chain rule twice, resulting in choice B (x^(sin(x)) * cos(x))."
+    },
+    {
+      "id": "[1.5.3.6]Q6",
+      "stem": "Find dy/dx for the equation y = sqrt(1 + x^2) using implicit differentiation.",
+      "choices": {
+        "A": "x / (sqrt(1 + x^2))",
+        "B": "1 / (2sqrt(1 + x^2))",
+        "C": "(1 + x^2) / 2",
+        "D": "x^2 / sqrt(1 + x^2)"
+      },
+      "correct_choice": "B",
+      "solution": "Using chain rule: y' = 1/(2sqrt(1 + x^2)). Choice B is correct.",
+      "explanation": "The derivative of y with respect to x is 1 / (2sqrt(1 + x^2)), corresponding to choice B.",
+      "common_mistake_notes": "A common mistake is not dividing by 2, resulting in choice A (x / (sqrt(1 + x^2)))."
+    },
+    {
+      "id": "[1.5.3.6]Q7",
+      "stem": "Find dy/dx for the equation y = tan(x^2) using implicit differentiation.",
+      "choices": {
+        "A": "2x sec^2(x^2)",
+        "B": "2x cot(x^2)",
+        "C": "sec^2(x^2)",
+        "D": "cot(x^2)"
+      },
+      "correct_choice": "A",
+      "solution": "Using chain rule twice: y' = 2x sec^2(x^2). Choice A is correct.",
+      "explanation": "The derivative of y with respect to x is 2x sec^2(x^2), corresponding to choice A.",
+      "common_mistake_notes": "A common mistake is not applying the chain rule twice, resulting in choice C (sec^2(x^2))."
+    }
+  ]
+}

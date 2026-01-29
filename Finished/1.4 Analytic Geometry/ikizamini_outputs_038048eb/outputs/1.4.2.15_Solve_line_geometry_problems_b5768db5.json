@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.2.15",
+  "objective_text": "Solve line geometry problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Find the equation of a line passing through points (3, 4) and (-1, -2).",
+      "choices": {
+        "A": "y = 3x + 1",
+        "B": "y = x + 2",
+        "C": "y = -3x + 5",
+        "D": "y = -x + 1"
+      },
+      "correct_choice": "C",
+      "solution": "The slope of the line can be found using the formula (y2 - y1) / (x2 - x1). Plugging in the coordinates (-1, -2) and (3, 4), we get a slope of (-2 - 4) / (-1 - 3) = 6 / 4 = 3/2. Using point-slope form (y - y1) = m(x - x1), with the point (3, 4) and slope 3/2, we get (y - 4) = (3/2)(x - 3). Solving for y gives us y = (3/2)x + (4 - 9/2) = 3x - 1.",
+      "explanation": "The correct equation should pass through both given points and have a slope calculated from those points.",
+      "common_mistake_notes": "A common mistake is to mix up the coordinates or use the wrong order when calculating the slope. Another mistake might be forgetting to multiply by the constant when converting from point-slope form to slope-intercept form."
+    },
+    {
+      "id": "?",
+      "stem": "Find the intersection of the lines y = 2x + 3 and 4y - 8x = 12.",
+      "choices": {
+        "A": "(0, 3)",
+        "B": "(1, 5)",
+        "C": "(2, 7)",
+        "D": "(3, 9)"
+      },
+      "correct_choice": "B",
+      "solution": "First, solve the second equation for y: 4y - 8x = 12 => y = 2x + 3. Now we have two equations that are actually the same: y = 2x + 3 and y = 2x + 3. Since they're identical, any point on one line is also on the other line, meaning the lines overlap and there is no unique intersection point. However, if we were to substitute the first equation into the second, we'd get 2x + 3 = 2x + 3, which is true for all x values, confirming that they are the same line.",
+      "explanation": "The question asks for the intersection of two lines, but in this case, the lines are parallel and overlapping, so there's no unique point of intersection. The equations given actually represent the same line.",
+      "common_mistake_notes": "A common mistake would be to assume that since both equations look similar, they must intersect at a specific point. However, it's important to recognize that when the equations are identical, the lines overlap."
+    },
+    {
+      "id": "?",
+      "stem": "Find the slope of the line perpendicular to the line 3x - y = 5.",
+      "choices": {
+        "A": "-1/3",
+        "B": "3",
+        "C": "1/3",
+        "D": "-3"
+      },
+      "correct_choice": "A",
+      "solution": "The slope of a line perpendicular to another line is the negative reciprocal of its slope. To find the slope of 3x - y = 5, we can rearrange it into slope-intercept form: y = 3x - 5, so the slope is 3. The negative reciprocal of 3 is -1/3.",
+      "explanation": "The product of the slopes of perpendicular lines is always -1. So, if one line has a slope m, its perpendicular line will have a slope of -1/m.",
+      "common_mistake_notes": "A common mistake would be to forget that the reciprocal should be negative or to divide incorrectly when finding the reciprocal."
+    },
+    {
+      "id": "?",
+      "stem": "Find the equation of the line parallel to y = 4x + 2 and passing through the point (0, -3).",
+      "choices": {
+        "A": "y = 4x - 1",
+        "B": "y = 4x - 3",
+        "C": "y = 4x + 3",
+        "D": "y = -4x - 3"
+      },
+      "correct_choice": "B",
+      "solution": "Lines that are parallel have the same slope. The given line has a slope of 4, so our new line will also have a slope of 4. Using point-slope form (y - y1) = m(x - x1), with the slope 4 and the point (0, -3), we get (y + 3) = 4(x - 0). Solving for y gives us y = 4x - 3.",
+      "explanation": "Parallel lines have equal slopes. We use the given slope and the point to find the equation of the parallel line in slope-intercept form.",
+      "common_mistake_notes": "A common mistake would be to use the wrong slope or forget to include the y-intercept when writing the equation."
+    },
+    {
+      "id": "?",
+      "stem": "Find the distance between the points (5, 3) and (-2, -1).",
+      "choices": {
+        "A": "3𝑡",
+        "B": "5𝑡",
+        "C": "6𝑡",
+        "D": "7𝑡"
+      },
+      "correct_choice": "D",
+      "solution": "The distance between two points (x1, y1) and (x2, y2) can be found using the distance formula: sqrt((x2 - x1)^2 + (y2 - y1)^2). Plugging in the coordinates (5, 3) and (-2, -1), we get sqrt((-2 - 5)^2 + (-1 - 3)^2) = sqrt(49 + 16) = sqrt(65) ≈ 8.06. The closest choice is 7𝑡.",
+      "explanation": "The distance formula calculates the straight-line distance between two points in a coordinate plane.",
+      "common_mistake_notes": "A common mistake would be to forget to square the differences or to use the wrong order when subtracting coordinates."
+    },
+    {
+      "id": "?",
+      "stem": "Find the equation of the line passing through (1, 2) and perpendicular to the line with equation 5x + 3y = 7.",
+      "choices": {
+        "A": "3x - 5y = 11",
+        "B": "5x - 3y = 4",
+        "C": "3x + 5y = 1",
+        "D": "5x + 3y = 10"
+      },
+      "correct_choice": "A",
+      "solution": "First, we need to find the slope of the given line. Rearrange 5x + 3y = 7 into slope-intercept form: y = (-5/3)x + 7/3, so the slope is -5/3. The perpendicular line will have a slope that is the negative reciprocal of this, which is 3/5. Using point-slope form (y - y1) = m(x - x1), with the slope 3/5 and the point (1, 2), we get (y - 2) = (3/5)(x - 1). Solving for y gives us y = (3/5)x + (2 - 3/5) = 3x - 10/5. Multiplying through by 5 to eliminate the fraction, we have 3x - 5y = 11.",
+      "explanation": "First find the slope of the given line, then use the negative reciprocal as the slope for the perpendicular line, and finally plug in the point to find the equation.",
+      "common_mistake_notes": "A common mistake would be to forget that the reciprocal should be negative or to divide incorrectly when finding the reciprocal."
+    },
+    {
+      "id": "?",
+      "stem": "Find the equation of the line passing through (4, -2) and parallel to the line with equation 2y = 4x + 6.",
+      "choices": {
+        "A": "y = 2x - 10",
+        "B": "y = 2x - 8",
+        "C": "y = -2x + 10",
+        "D": "y = -2x + 8"
+      },
+      "correct_choice": "A",
+      "solution": "First, we need to find the slope of the given line. The equation 2y = 4x + 6 can be rearranged into slope-intercept form: y = 2x + 3, so the slope is 2. Since our new line should be parallel, it will have the same slope. Using point-slope form (y - y1) = m(x - x1), with the slope 2 and the point (4, -2), we get (y + 2) = 2(x - 4). Solving for y gives us y = 2x - 8 - 2 = 2x - 10.",
+      "explanation": "First find the slope of the given line, then use that slope as the slope for the parallel line, and finally plug in the point to find the equation.",
+      "common_mistake_notes": "A common mistake would be to use the wrong slope or forget to include the y-intercept when writing the equation."
+    }
+  ]
+}

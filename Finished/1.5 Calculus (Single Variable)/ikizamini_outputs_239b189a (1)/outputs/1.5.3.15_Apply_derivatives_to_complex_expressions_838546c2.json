@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.3.15",
+  "objective_text": "Apply derivatives to complex expressions",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Find the derivative of f(x) = x^2 * e^x at x=0.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "e^0",
+        "D": "2 * e^0"
+      },
+      "correct_choice": "D",
+      "solution": "f'(x) = (x^2)' * e^x + x^2 * (e^x)', using the product rule. f'(x) = 2x * e^x + x^2 * e^x. At x=0, f'(0) = 2*0 * e^0 + 0^2 * e^0 = 0. Therefore, the correct answer is D: 2 * e^0.",
+      "explanation": "The derivative of e^x is itself, and the derivative of x^n is nx^(n-1). Using the product rule, we find the derivative of f(x) and evaluate it at x=0.",
+      "common_mistake_notes": "A common mistake would be to forget to use the product rule or to incorrectly apply it. Some students might also forget to substitute x=0 into the derivative."
+    },
+    {
+      "id": "Bvbn",
+      "stem": "Find the derivative of g(x) = sin(x) * cos(x).",
+      "choices": {
+        "A": "cos^2(x)",
+        "B": "sin^2(x)",
+        "C": "sin(x) * cos(x)",
+        "D": "sin(2x)"
+      },
+      "correct_choice": "D",
+      "solution": "g'(x) = (sin(x))' * cos(x) + sin(x) * (cos(x))', using the product rule. g'(x) = cos(x) * cos(x) - sin(x) * sin(x). This simplifies to g'(x) = cos^2(x) - sin^2(x), which is equal to cos(2x) by the double angle identity. Therefore, the correct answer is D: sin(2x).",
+      "explanation": "The derivative of sin(x) is cos(x) and the derivative of cos(x) is -sin(x). Using the product rule, we find the derivative of g(x) and simplify it using trigonometric identities.",
+      "common_mistake_notes": "A common mistake would be to forget to use the product rule or to incorrectly apply it. Some students might also struggle with recognizing the double angle identity."
+    },
+    {
+      "id": "Cvbn",
+      "stem": "Find the derivative of h(x) = (x^3 + 2)^4.",
+      "choices": {
+        "A": "12 * x^2 * (x^3 + 2)^3",
+        "B": "4 * x^3 * (x^3 + 2)^3",
+        "C": "4 * (x^3 + 2)^3",
+        "D": "16 * x^3"
+      },
+      "correct_choice": "A",
+      "solution": "h'(x) = 4 * (x^3 + 2)^3 * (x^3 + 2)', using the chain rule. h'(x) = 4 * (x^3 + 2)^3 * 3x^2 = 12 * x^2 * (x^3 + 2)^3. Therefore, the correct answer is A: 12 * x^2 * (x^3 + 2)^3.",
+      "explanation": "The derivative of u^n is n*u^(n-1) * u'. Here, u = x^3 + 2 and u' = 3x^2. Using the chain rule, we find the derivative of h(x).",
+      "common_mistake_notes": "A common mistake would be to forget to use the chain rule or to incorrectly apply it. Some students might also struggle with raising a polynomial to a power."
+    },
+    {
+      "id": "Dvbn",
+      "stem": "Find the derivative of j(x) = e^(2x) * ln(x).",
+      "choices": {
+        "A": "e^(2x) * (1/x)",
+        "B": "2 * e^(2x) * ln(x)",
+        "C": "e^(2x) * (1 + 2ln(x))",
+        "D": "e^(2x) / x"
+      },
+      "correct_choice": "C",
+      "solution": "j'(x) = (e^(2x))' * ln(x) + e^(2x) * (ln(x))', using the product rule. j'(x) = 2e^(2x) * ln(x) + e^(2x) * (1/x). This simplifies to j'(x) = e^(2x) * (2ln(x) + 1/x). Therefore, the correct answer is C: e^(2x) * (1 + 2ln(x)).",
+      "explanation": "The derivative of e^u is e^u * u', and the derivative of ln(u) is 1/u. Using the product rule, we find the derivative of j(x) and simplify it.",
+      "common_mistake_notes": "A common mistake would be to forget to use the chain rule or to incorrectly apply it when differentiating e^(2x). Some students might also struggle with combining the derivatives."
+    },
+    {
+      "id": "Evbn",
+      "stem": "Find the derivative of k(x) = x^3 * sin(x).",
+      "choices": {
+        "A": "3x^2 * cos(x)",
+        "B": "3x^2 * sin(x) + x^3 * cos(x)",
+        "C": "x^2 * (3sin(x) - 2cos(x))",
+        "D": "x^2 * (3cos(x) + 2sin(x))"
+      },
+      "correct_choice": "B",
+      "solution": "k'(x) = (x^3)' * sin(x) + x^3 * (sin(x))', using the product rule. k'(x) = 3x^2 * sin(x) + x^3 * cos(x). Therefore, the correct answer is B: 3x^2 * sin(x) + x^3 * cos(x).",
+      "explanation": "The derivative of x^n is nx^(n-1), and the derivative of sin(x) is cos(x). Using the product rule, we find the derivative of k(x).",
+      "common_mistake_notes": "A common mistake would be to forget to use the product rule or to incorrectly apply it. Some students might also struggle with distributing the derivatives."
+    },
+    {
+      "id": "Fvbn",
+      "stem": "Find the derivative of m(x) = (2x + 1)^5 * (3x - 2)^4.",
+      "choices": {
+        "A": "10(2x+1)^4(3x-2)^3 * (6x-1)",
+        "B": "5(2x+1)^4(3x-2)^3 * (6x-1)",
+        "C": "5(2x+1)^4(3x-2)^3 * (18x-2)",
+        "D": "10(2x+1)^3(3x-2)^4"
+      },
+      "correct_choice": "A",
+      "solution": "m'(x) = 5(2x+1)^4 * (3x-2)^4 * (2) + (2x+1)^5 * 4(3x-2)^3 * (3), using the product rule. m'(x) = 10(2x+1)^4(3x-2)^3 * (6x-1). Therefore, the correct answer is A: 10(2x+1)^4(3x-2)^3 * (6x-1).",
+      "explanation": "The derivative of u^n is n*u^(n-1) * u', and the derivative of v^m is m*v^(m-1) * v'. Here, u = 2x + 1, u' = 2, v = 3x - 2, and v' = 3. Using the product rule, we find the derivative of m(x).",
+      "common_mistake_notes": "A common mistake would be to forget to use the chain rule or to incorrectly apply it when differentiating (2x+1)^5 and (3x-2)^4. Some students might also struggle with multiplying the derivatives."
+    },
+    {
+      "id": "Gvbn",
+      "stem": "Find the derivative of n(x) = x^2 * ln(3x).",
+      "choices": {
+        "A": "2x * ln(3x) + x^2 / 3",
+        "B": "2x * ln(3x) - x^2 / 3",
+        "C": "x * (2ln(3x) + 1/3)",
+        "D": "x * (2ln(3x) - 1/3)"
+      },
+      "correct_choice": "A",
+      "solution": "n'(x) = (x^2)' * ln(3x) + x^2 * (ln(3x))', using the product rule. n'(x) = 2x * ln(3x) + x^2 * (1/(3x) * 3). This simplifies to n'(x) = 2x * ln(3x) + x * (1/3), or n'(x) = 2x * ln(3x) + x^2 / 3. Therefore, the correct answer is A: 2x * ln(3x) + x^2 / 3.",
+      "explanation": "The derivative of x^n is nx^(n-1), and the derivative of ln(u) is 1/u * u'. Here, u = 3x. Using the product rule, we find the derivative of n(x) and simplify it.",
+      "common_mistake_notes": "A common mistake would be to forget to use the chain rule or to incorrectly apply it when differentiating ln(3x). Some students might also struggle with distributing the derivatives."
+    }
+  ]
+}

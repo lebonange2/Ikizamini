@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.3.13",
+  "objective_text": "Find intersection of line and plane",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "IntrLinePlaneQ1",
+      "stem": "Find the point of intersection between the line given by the parametric equations x = 2t, y = 3t + 1, z = t - 2 and the plane defined by the equation 4x + 3y - z = 7.",
+      "choices": {
+        "A": "[8, 5, 10]",
+        "B": "[-1, 1, -2]",
+        "C": "[1, 2, 0]",
+        "D": "[2, 3, -1]"
+      },
+      "correct_choice": "C",
+      "solution": "To find the intersection point, substitute the parametric equations into the plane equation: 4(2t) + 3(3t + 1) - (t - 2) = 7. Solve for t and substitute back into the parametric equations to get x, y, z. The correct answer is [x, y, z], which corresponds to option C.",
+      "explanation": "The intersection point lies on both the line and the plane.",
+      "common_mistake_notes": "A common mistake is to forget to substitute t back into the parametric equations after finding its value from the plane equation."
+    },
+    {
+      "id": "IntrLinePlaneQ2",
+      "stem": "Find the intersection of the line with direction vector [1, 2, 3] passing through point (1, 2, 3) and the plane with normal vector [-2, 3, 4] and distance from the origin -5.",
+      "choices": {
+        "A": "[0, -1, 2]",
+        "B": "[-1, 0, 1]",
+        "C": "[1, 2, 3]",
+        "D": "[-2, 3, 4]"
+      },
+      "correct_choice": "C",
+      "solution": "The point of intersection lies on both the line and the plane. The equation for the line is r = (1, 2, 3) + t(1, 2, 3). For the plane, use the normal form: -2(x - 1) + 3(y - 2) + 4(z - 3) = -5. Substitute the line equation into the plane and check if it's true for any t. The intersection point is (x, y, z), corresponding to option C.",
+      "explanation": "The line passes through the given point and has the specified direction vector, so it's enough to check if this point lies on the plane.",
+      "common_mistake_notes": "A common mistake is to think that the normal vector of the plane should be used as a position vector for the intersection point."
+    },
+    {
+      "id": "IntrLinePlaneQ3",
+      "stem": "Find the intersection between the line with parametric equations x = 1 + t, y = 2t - 1, z = 3t + 4 and the plane defined by the equation 5x - 7y + 9z = 16.",
+      "choices": {
+        "A": "[0, 1, 2]",
+        "B": "[1, 2, 3]",
+        "C": "[2, 3, 4]",
+        "D": "[3, 4, 5]"
+      },
+      "correct_choice": "B",
+      "solution": "Substitute the parametric equations into the plane equation: 5(1 + t) - 7(2t - 1) + 9(3t + 4) = 16. Solve for t and substitute back into the parametric equations to get x, y, z. The correct answer is [x, y, z], which corresponds to option B.",
+      "explanation": "The intersection point lies on both the line and the plane.",
+      "common_mistake_notes": "A common mistake is to forget to solve for t after substituting the parametric equations into the plane equation."
+    },
+    {
+      "id": "IntrLinePlaneQ4",
+      "stem": "Find the intersection between the line passing through points (1, 2, 3) and (4, 5, 6) and the plane with normal vector [1, 1, 1] and distance from the origin 2.",
+      "choices": {
+        "A": "[0, 0, 0]",
+        "B": "[1, 2, 3]",
+        "C": "[2, 3, 4]",
+        "D": "[3, 4, 5]"
+      },
+      "correct_choice": "D",
+      "solution": "The line equation is r = (1, 2, 3) + t(3, 3, 3). The plane equation in normal form is x + y + z - 2 = 0. Substitute the line equation into the plane and solve for t. Check if the intersection point lies on the line segment between the two given points. The correct answer is [x, y, z], corresponding to option D.",
+      "explanation": "The intersection point lies on both the line and the plane. But in this case, it's outside the line segment defined by the two points.",
+      "common_mistake_notes": "A common mistake is to assume that the intersection point must lie between the two given points."
+    },
+    {
+      "id": "IntrLinePlaneQ5",
+      "stem": "Find the intersection of the line with direction vector [2, 3, 4] passing through point (1, 2, 3) and the plane defined by the equation x + y + z = 6.",
+      "choices": {
+        "A": "[0, 1, 2]",
+        "B": "[1, 2, 3]",
+        "C": "[2, 3, 4]",
+        "D": "[3, 4, 5]"
+      },
+      "correct_choice": "B",
+      "solution": "The line equation is r = (1, 2, 3) + t(2, 3, 4). Substitute into the plane equation and check if this point lies on the plane. The intersection point is (x, y, z), corresponding to option B.",
+      "explanation": "The line passes through the given point and has the specified direction vector, so it's enough to check if this point lies on the plane.",
+      "common_mistake_notes": "A common mistake is to think that the normal vector of the plane should be used as a position vector for the intersection point."
+    },
+    {
+      "id": "IntrLinePlaneQ6",
+      "stem": "Find the intersection between the line with parametric equations x = 2s, y = s + 1, z = -s and the plane defined by the equation 3x - 2y + z = 5.",
+      "choices": {
+        "A": "[0, 1, 0]",
+        "B": "[1, 2, -1]",
+        "C": "[2, 3, -2]",
+        "D": "[3, 4, -3]"
+      },
+      "correct_choice": "A",
+      "solution": "Substitute the parametric equations into the plane equation: 6s - 2(s + 1) - (-s) = 5. Solve for s and substitute back into the parametric equations to get x, y, z. The correct answer is [x, y, z], which corresponds to option A.",
+      "explanation": "The intersection point lies on both the line and the plane.",
+      "common_mistake_notes": "A common mistake is to forget to solve for s after substituting the parametric equations into the plane equation."
+    },
+    {
+      "id": "IntrLinePlaneQ7",
+      "stem": "Find the intersection between the line with direction vector [1, 2, 3] passing through point (1, 2, 3) and the plane defined by the equation x + y + z = 6.",
+      "choices": {
+        "A": "[0, 0, 0]",
+        "B": "[1, 2, 3]",
+        "C": "[2, 3, 4]",
+        "D": "[3, 4, 5]"
+      },
+      "correct_choice": "B",
+      "solution": "The line equation is r = (1, 2, 3) + t(1, 2, 3). Substitute into the plane equation and check if this point lies on the plane. The intersection point is (x, y, z), corresponding to option B.",
+      "explanation": "The line passes through the given point and has the specified direction vector, so it's enough to check if this point lies on the plane.",
+      "common_mistake_notes": "A common mistake is to think that the normal vector of the plane should be used as a position vector for the intersection point."
+    }
+  ]
+}

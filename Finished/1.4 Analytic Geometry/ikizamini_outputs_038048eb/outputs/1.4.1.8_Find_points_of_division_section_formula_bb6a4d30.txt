@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.1.8 Find points of division (section formula)
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.1 Coordinate Systems
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the coordinates of the point that divides the line segment from (3, 5) to (7, 9) in a ratio of 2:1.
+A) (4, 6)
+B) (5, 7)
+C) (6, 8)
+D) (8, 10)
+Correct Answer: C
+
+Solution:
+The section formula is given by (x = (mx_2 + nx_1) / (m + n), y = (my_2 + ny_1) / (m + n)), where m and n are the ratios. For a ratio of 2:1, we have m=2 and n=1. Plugging in the coordinates (x_1, y_1) = (3, 5) and (x_2, y_2) = (7, 9), we get x = (2 	imes 7 + 1 	imes 3) / (2 + 1) = 6 and y = (2 	imes 9 + 1 	imes 5) / (2 + 1) = 8. So the point is (6, 8).
+
+Explanation:
+The section formula helps find the coordinates of a point dividing a line segment in a given ratio.
+
+Common mistake note:
+A common mistake is to mix up the ratios or not properly apply the formula, leading to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+What are the coordinates of the point that divides the line from (-4, 3) to (5, -6) internally in a ratio of 3:2?
+A) (1, -1)
+B) (2, -3)
+C) (3, -5)
+D) (4, -7)
+Correct Answer: B
+
+Solution:
+Using the section formula with m=3 and n=2, we get x = (3 	imes 5 + 2 	imes (-4)) / (3 + 2) = 2 and y = (3 	imes (-6) + 2 	imes 3) / (3 + 2) = -3. So the point is (2, -3).
+
+Explanation:
+The internal division means that the ratio is applied between the two endpoints.
+
+Common mistake note:
+A common mistake is to assume the point lies outside the line segment when it should be inside due to the internal division.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+Find the coordinates of the point dividing the line joining (1, 2) and (-3, 4) externally in a ratio of 1:3.
+A) (0, 3)
+B) (0.5, 2.5)
+C) (1, 2)
+D) (-1, 1)
+Correct Answer: D
+
+Solution:
+For external division, we use the negative ratio. So m=-1 and n=-3. The point is (x = (-1 	imes (-3) + (-3) 	imes 1) / (-1 - 3), y = (-1 	imes 4 + (-3) 	imes 2) / (-1 - 3)) = (-1, 1).
+
+Explanation:
+External division means the ratio is applied with negative values to find a point outside the line segment.
+
+Common mistake note:
+A common mistake is to forget to use negative ratios for external division, leading to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+What are the coordinates of the point dividing the line segment from (2, 7) to (8, -3) in two equal parts?
+A) (3, 2)
+B) (4, 1)
+C) (5, 0)
+D) (6, -1)
+Correct Answer: D
+
+Solution:
+Since we're dividing the line into two equal parts, the ratio is 1:1. Using the section formula with m=1 and n=1, we get x = (1 	imes 8 + 1 	imes 2) / (1 + 1) = 6 and y = (1 	imes (-3) + 1 	imes 7) / (1 + 1) = -1. So the point is (6, -1).
+
+Explanation:
+For equal division, the ratio is usually 1:1 or a simple fraction like 2:2.
+
+Common mistake note:
+A common mistake is to forget that for equal division, m and n are equal, leading to an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+Find the coordinates of the point dividing the line from (6, -4) to (-2, 8) in a ratio of 3:5.
+A) (1, 0)
+B) (2, 1)
+C) (3, 2)
+D) (4, 3)
+Correct Answer: A
+
+Solution:
+Using the section formula with m=3 and n=5, we get x = (3 	imes (-2) + 5 	imes 6) / (3 + 5) = 1 and y = (3 	imes 8 + 5 	imes (-4)) / (3 + 5) = 0. So the point is (1, 0).
+
+Explanation:
+The section formula can be used for any ratio, even if it's not a simple fraction.
+
+Common mistake note:
+A common mistake is to misapply the formula or use incorrect arithmetic, resulting in an incorrect answer.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+What are the coordinates of the point that divides the line joining (0, 5) and (4, -3) internally in a ratio of 2:1?
+A) (1, 2)
+B) (2, 1)
+C) (3, 0)
+D) (4, -1)
+Correct Answer: B
+
+Solution:
+Using the section formula with m=2 and n=1, we get x = (2 	imes 4 + 1 	imes 0) / (2 + 1) = 2 and y = (2 	imes (-3) + 1 	imes 5) / (2 + 1) = 1. So the point is (2, 1).
+
+Explanation:
+Internal division means that the ratio is applied between the two endpoints.
+
+Common mistake note:
+A common mistake is to forget to consider the internal division and use the wrong coordinates for the calculation.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+Find the coordinates of the point dividing the line segment from (-1, 3) to (5, -2) externally in a ratio of 4:1.
+A) (0, 1)
+B) (1, 0)
+C) (2, -1)
+D) (3, -2)
+Correct Answer: B
+
+Solution:
+For external division, we use the negative ratio. So m=-4 and n=-1. The point is (x = (-4 	imes 5 + (-1) 	imes (-1)) / (-4 - 1), y = (-4 	imes (-2) + (-1) 	imes 3) / (-4 - 1)) = (1, 0).
+
+Explanation:
+External division means the ratio is applied with negative values to find a point outside the line segment.
+
+Common mistake note:
+A common mistake is to forget to use negative ratios for external division, leading to an incorrect answer.
+------------------------------------------------------------------------------

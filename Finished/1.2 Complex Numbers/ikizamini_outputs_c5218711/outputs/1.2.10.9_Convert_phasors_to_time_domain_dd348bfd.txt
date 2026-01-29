@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.10.9 Convert phasors to time domain
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.10 Applications to AC Circuits
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Given the phasor representation of a signal V = 10∠30° V, what is the corresponding time-domain waveform in volts (V)?
+A) 10cos(ωt - 30°)
+B) 5sin(ωt + 60°)
+C) 10sin(ωt + 30°)
+D) 5cos(ωt - 60°)
+Correct Answer: C
+
+Solution:
+The phasor V = 10∠30° represents a sinusoidal waveform in the complex form. To convert it to the time domain, we use Euler's formula: e^(jθ) = cos(θ) + jsin(θ). In this case, V = 10e^(j30°). The real part of the phasor gives the cosine function and the imaginary part gives the sine function. So, the time-domain waveform is V(t) = 10cos(ωt) * cos(30°) + j10sin(ωt) * sin(30°). Since cos(30°) = √3/2 and sin(30°) = 1/2, we get V(t) = 5√3cos(ωt) + 5sin(ωt). However, the question asks for the waveform in terms of sine only. To convert the cosine term to sine, we use the identity cos(θ) = sin(90° - θ): V(t) = 5sin(90° - 30°) + 5sin(ωt) = 5sin(60°) + 5sin(ωt). Since sin(60°) = √3/2, the final waveform is V(t) = 10sin(ωt + 30°).
+
+Explanation:
+The correct answer uses the Euler's formula to convert the phasor to a time-domain sine wave with the appropriate phase shift.
+
+Common mistake note:
+A common mistake is to directly use the cosine function from the phasor without considering the conversion to sine. Choice A represents this error by using cos(ωt - 30°) instead of the correct sine form.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+What is the time-domain waveform for the phasor I = 8∠-45° A, expressed in amperes (A)?
+A) 8sin(ωt + 45°)
+B) 4cos(ωt - 90°)
+C) 4sin(ωt + 135°)
+D) 8sin(ωt - 45°)
+Correct Answer: C
+
+Solution:
+Similar to the previous question, we use Euler's formula to convert the phasor to the time domain: e^(jθ) = cos(θ) + jsin(θ). In this case, I = 8e^(-j45°). The imaginary part of the phasor gives the sine function. So, the time-domain waveform is I(t) = 8sin(-ωt) * sin(-45°) - 8cos(-ωt) * cos(-45°). Since sin(-θ) = -sin(θ) and cos(-θ) = cos(θ), we get I(t) = -8sin(ωt) * sin(45°) + 8cos(ωt) * cos(45°). Using the values for sin(45°) and cos(45°), which are both √2/2, we have I(t) = -4√2sin(ωt) + 4√2cos(ωt). To express this in terms of a single sine function, we use the sum- to-product identity: sinα + sinβ = 2sin((α+β)/2)cos((α-β)/2). In our case, α = ωt and β = 90°. So, I(t) = 4√2sin((ωt + 90°)/2)cos((ωt - 90°)/2). Since cos(45°) = √2/2, the final waveform is I(t) = 8sin(ωt + 135°).
+
+Explanation:
+The correct answer correctly converts the phasor to a time-domain sine wave with the appropriate phase shift.
+
+Common mistake note:
+A common mistake is to use the cosine function directly from the phasor without considering the conversion to sine. Choice B represents this error by using cos(ωt - 90°) instead of the correct sine form.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+Convert the phasor V = 6∠120° V into its time-domain representation in volts (V).
+A) 6sin(ωt - 120°)
+B) 3cos(ωt + 240°)
+C) 6sin(ωt + 120°)
+D) 3cos(ωt - 240°)
+Correct Answer: C
+
+Solution:
+Using Euler's formula, we have e^(jθ) = cos(θ) + jsin(θ). For the phasor V = 6∠120°, the imaginary part gives the sine function. So, the time-domain waveform is V(t) = 6sin(ωt) * sin(120°) - 6cos(ωt) * cos(120°). Since sin(120°) = √3/2 and cos(120°) = -1/2, we get V(t) = 3√3sin(ωt) - 3cos(ωt). To express this in terms of a single sine function, we use the sum- to-product identity: sinα - sinβ = 2sin((α-β)/2)cos((α+β)/2). In our case, α = ωt and β = 180°. So, V(t) = 6sin((ωt - 180°)/2)cos((ωt + 180°)/2). Since cos(90°) = 0, the final waveform is V(t) = 6sin(ωt + 120°).
+
+Explanation:
+The correct answer correctly converts the phasor to a time-domain sine wave with the appropriate phase shift.
+
+Common mistake note:
+A common mistake is to use the cosine function directly from the phasor without considering the conversion to sine. Choice A represents this error by using cos(ωt - 120°) instead of the correct sine form.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+Given the phasor I = 4∠-90° A, what is its time-domain representation in amperes (A)?
+A) 4cos(ωt + 180°)
+B) 2sin(ωt - 270°)
+C) 4sin(ωt + 90°)
+D) 2cos(ωt + 90°)
+Correct Answer: C
+
+Solution:
+Using Euler's formula, we have e^(jθ) = cos(θ) + jsin(θ). For the phasor I = 4∠-90°, the imaginary part gives the sine function. So, the time-domain waveform is I(t) = 4sin(-ωt) * sin(-90°) - 4cos(-ωt) * cos(-90°). Since sin(-θ) = -sin(θ) and cos(-θ) = cos(θ), we get I(t) = -4sin(ωt) * (-1) + 4cos(ωt) * 0. This simplifies to I(t) = 4sin(ωt).
+
+Explanation:
+The correct answer correctly converts the phasor to a time-domain sine wave with no phase shift.
+
+Common mistake note:
+A common mistake is to use the cosine function directly from the phasor without considering the conversion to sine. Choice A represents this error by using cos(ωt + 180°) instead of the correct sine form.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+The phasor V = 2∠-60° V represents a voltage signal in the complex domain. What is its time-domain representation in volts (V)?
+A) 2sin(ωt - 180°)
+B) √3cos(ωt + 120°)
+C) 2sin(ωt + 60°)
+D) √3cos(ωt - 60°)
+Correct Answer: B
+
+Solution:
+Using Euler's formula, we have e^(jθ) = cos(θ) + jsin(θ). For the phasor V = 2∠-60°, the imaginary part gives the sine function. So, the time-domain waveform is V(t) = 2sin(-ωt) * sin(-60°) - 2cos(-ωt) * cos(-60°). Since sin(-θ) = -sin(θ) and cos(-θ) = cos(θ), we get V(t) = -2sin(ωt) * (-1/2) + 2cos(ωt) * (√3/2). This simplifies to V(t) = √3cos(ωt) + sin(ωt). To express this in terms of a single cosine function, we use the sum- to-product identity: cosα + cosβ = 2cos((α+β)/2)cos((α-β)/2). In our case, α = ωt and β = 60°. So, V(t) = 2cos((ωt + 60°)/2)cos((ωt - 60°)/2). Since cos(30°) = √3/2, the final waveform is V(t) = √3cos(ωt + 120°).
+
+Explanation:
+The correct answer correctly converts the phasor to a time-domain cosine wave with the appropriate phase shift.
+
+Common mistake note:
+A common mistake is to use the sine function directly from the phasor without considering the conversion to cosine. Choice A represents this error by using sin(ωt - 180°) instead of the correct cosine form.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+Convert the phasor I = 5∠270° A into its time-domain representation in amperes (A).
+A) 5sin(ωt + 90°)
+B) 5cos(ωt - 180°)
+C) 5sin(ωt - 90°)
+D) 5cos(ωt + 270°)
+Correct Answer: C
+
+Solution:
+Using Euler's formula, we have e^(jθ) = cos(θ) + jsin(θ). For the phasor I = 5∠270°, the imaginary part gives the sine function. So, the time-domain waveform is I(t) = 5sin(ωt) * sin(270°) - 5cos(ωt) * cos(270°). Since sin(270°) = -1 and cos(270°) = 0, we get I(t) = -5sin(ωt). To express this in terms of a single sine function, we use the negative sign to represent a phase shift: I(t) = 5sin(ωt + 180°).
+
+Explanation:
+The correct answer correctly converts the phasor to a time-domain sine wave with the appropriate phase shift.
+
+Common mistake note:
+A common mistake is to use the cosine function directly from the phasor without considering the conversion to sine. Choice B represents this error by using cos(ωt - 180°) instead of the correct sine form.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+The phasor V = 3∠45° V represents a voltage signal in the complex domain. What is its time-domain representation in volts (V)?
+A) 3sin(ωt + 135°)
+B) 3cos(ωt - 45°)
+C) 3sin(ωt - 45°)
+D) 3cos(ωt + 45°)
+Correct Answer: D
+
+Solution:
+Using Euler's formula, we have e^(jθ) = cos(θ) + jsin(θ). For the phasor V = 3∠45°, the real part gives the cosine function. So, the time-domain waveform is V(t) = 3cos(ωt) * cos(45°) + 3sin(ωt) * sin(45°). Since cos(45°) = √2/2 and sin(45°) = √2/2, we get V(t) = 3√2/2cos(ωt) + 3√2/2sin(ωt). To express this in terms of a single cosine function, we use the sum- to-product identity: cosα + cosβ = 2cos((α+β)/2)cos((α-β)/2). In our case, α = ωt and β = -45°. So, V(t) = 3√2cos((ωt - 45°)/2)cos((ωt + 45°)/2). Since cos(0°) = 1, the final waveform is V(t) = 3cos(ωt + 45°).
+
+Explanation:
+The correct answer correctly converts the phasor to a time-domain cosine wave with the appropriate phase shift.
+
+Common mistake note:
+A common mistake is to use the sine function directly from the phasor without considering the conversion to cosine. Choice C represents this error by using sin(ωt - 45°) instead of the correct cosine form.
+------------------------------------------------------------------------------

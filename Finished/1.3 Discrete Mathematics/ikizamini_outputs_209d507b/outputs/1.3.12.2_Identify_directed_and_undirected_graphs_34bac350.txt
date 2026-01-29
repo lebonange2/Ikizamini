@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.12.2 Identify directed and undirected graphs
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.12 Graph Theory Basics
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Which graph represents a directed graph?
+A) [Picture of an undirected graph with curved edges]
+B) [Picture of a directed graph with arrows on the edges]
+C) [Picture of a tree with no loops and one-way edges]
+D) [Picture of a cycle graph with equal length cycles]
+Correct Answer: B
+
+Solution:
+A directed graph has edges with arrows indicating direction. Choice A shows an undirected graph, choice C is a tree (a type of directed acyclic graph), and choice D may be either directed or undirected but the image does not show arrows.
+
+Explanation:
+Directed graphs have edges that point from one node to another, whereas undirected graphs have connections between nodes without directionality.
+
+Common mistake note:
+Common mistake: confusing trees with directed graphs.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+Which statement describes an undirected graph?
+A) Edges have arrows indicating direction.
+B) Nodes are connected by bidirectional connections.
+C) At least one cycle must be present in the graph.
+D) Edges cannot form loops connecting a node to itself.
+Correct Answer: B
+
+Solution:
+An undirected graph has edges that connect nodes without arrows, indicating symmetric connections. Choice A describes directed graphs, choice C is not a requirement for all undirected graphs, and choice D applies to both directed and undirected graphs.
+
+Explanation:
+Undirected graphs represent connections where there's no notion of direction between nodes; edges connect nodes symmetrically.
+
+Common mistake note:
+Common mistake: thinking that all graphs with arrows are directed.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+In a graph, if node A has an edge pointing to node B, does node B necessarily have an edge pointing back to node A?
+A) Yes, always.
+B) No, never.
+C) It depends on the type of graph.
+D) Only in cyclic graphs.
+Correct Answer: C
+
+Solution:
+The presence of an edge from node A to node B does not imply a reciprocal edge. This depends on whether the graph is directed or undirected. In directed graphs, edges may be unidirectional; in undirected graphs, they are bidirectional.
+
+Explanation:
+The nature of edges determines if there's a reciprocal edge; it's not determined by the nodes themselves.
+
+Common mistake note:
+Common mistake: assuming that all graphs have reciprocal edges.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+What term describes a graph where each node has exactly one incoming and one outgoing edge?
+A) Directed acyclic graph (DAG)
+B) Bipartite graph
+C) Eulerian graph
+D) Cycle graph
+Correct Answer: A
+
+Solution:
+A directed acyclic graph (DAG) is a directed graph with no cycles, where each node has one incoming and one outgoing edge. Choice B refers to graphs with nodes in two sets connected only between sets, choice C refers to graphs where all edges can be traversed without revisiting any, and choice D refers to a single cycle.
+
+Explanation:
+DAGs have no cycles and ensure that each node has exactly one input and output edge.
+
+Common mistake note:
+Common mistake: confusing Eulerian graphs with DAGs.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+In an undirected graph, how many edges connect nodes A and B if they are not connected?
+A) 0
+B) 1
+C) 2
+D) Cannot determine without more information.
+Correct Answer: A
+
+Solution:
+If two nodes in an undirected graph are not connected, there are zero edges between them. Undirected graphs do not have arrows specifying direction, so the absence of an edge means no connection.
+
+Explanation:
+In an undirected graph, the presence or absence of an edge directly determines connectivity between nodes.
+
+Common mistake note:
+Common mistake: assuming that undirected graphs always have at least one edge.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+What type of graph would you use to represent a social network where friendships are mutual?
+A) Directed graph
+B) Undirected graph
+C) Weighted graph
+D) Hypercubic graph
+Correct Answer: B
+
+Solution:
+An undirected graph is used to represent relationships that are mutual, like friendships in a social network. Choice A represents graphs with directional edges, choice C represents graphs where edges have numerical values (weights), and choice D refers to a specific type of graph with connections based on node coordinates.
+
+Explanation:
+Undirected graphs are suitable for representing relationships without directionality.
+
+Common mistake note:
+Common mistake: assuming that social networks must be directional.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+Which graph best represents the relationship between cities in a road network where roads can be traveled in both directions?
+A) [Picture of a directed graph with arrows on the edges]
+B) [Picture of an undirected graph with curved edges]
+C) [Picture of a tree with no loops and one-way edges]
+D) [Picture of a cycle graph with equal length cycles]
+Correct Answer: B
+
+Solution:
+An undirected graph represents roads that can be traveled in both directions, showing connections without arrows. Choice A is for directed graphs, choice C is a tree (a type of directed acyclic graph), and choice D may have bidirectional edges or not.
+
+Explanation:
+In a road network, roads typically allow travel in both directions, making an undirected graph appropriate.
+
+Common mistake note:
+Common mistake: assuming that all road networks must be directional.
+------------------------------------------------------------------------------

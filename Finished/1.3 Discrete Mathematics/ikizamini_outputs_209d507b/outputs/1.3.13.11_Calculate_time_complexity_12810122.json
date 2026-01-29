@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.13.11",
+  "objective_text": "Calculate time complexity",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "What is the time complexity of the following code snippet that performs a linear search in an unsorted array of size n, where x is the target value and arr[] is the input array?",
+      "choices": {
+        "A": "O(1)",
+        "B": "O(n^2)",
+        "C": "O(log n)",
+        "D": "O(n)"
+      },
+      "correct_choice": "D",
+      "solution": "The code snippet performs a linear search, which means it checks each element of the array one by one until it finds the target value or reaches the end. In the worst case, where the target is not in the array or is at the last position, the loop will iterate n times. Therefore, the time complexity is O(n).",
+      "explanation": "A linear search has a linear relationship between the input size and the number of operations performed.",
+      "common_mistake_notes": "Common mistake: Choosing B (O(n^2)) because they might混淆线性搜索与平方级复杂性的算法（如冒泡排序或嵌套循环）。"
+    },
+    {
+      "id": ":2",
+      "stem": "What is the time complexity of the following code snippet that uses a binary search to find a target value in a sorted array of size n?",
+      "choices": {
+        "A": "O(1)",
+        "B": "O(n)",
+        "C": "O(log n)",
+        "D": "O(n^2)"
+      },
+      "correct_choice": "C",
+      "solution": "The code snippet implements a binary search, which repeatedly divides the search interval in half. In each step, it compares the middle element with the target value. The process continues until the target is found or the interval becomes empty. On average and in the worst case, the number of steps is proportional to log n. Thus, the time complexity is O(log n).",
+      "explanation": "Binary search has a logarithmic relationship between the input size and the number of operations performed.",
+      "common_mistake_notes": "Common mistake: Choosing B (O(n)) because they might以为这是线性搜索，而实际上它每次缩小搜索范围。"
+    },
+    {
+      "id": ":3",
+      "stem": "What is the time complexity of the following code snippet that uses a for loop to calculate the sum of n numbers?",
+      "choices": {
+        "A": "O(1)",
+        "B": "O(n^2)",
+        "C": "O(log n)",
+        "D": "O(n)"
+      },
+      "correct_choice": "D",
+      "solution": "The code snippet has a single for loop that iterates n times, adding each number to the sum. The number of operations grows linearly with the input size, so the time complexity is O(n).",
+      "explanation": "This is a simple linear operation where the number of steps increases proportionally with the input size.",
+      "common_mistake_notes": "Common mistake: Choosing A (O(1)) because they might以为这个操作总是花费相同的时间，而忽略了输入大小的影响。"
+    },
+    {
+      "id": ":4",
+      "stem": "What is the time complexity of the following code snippet that uses two nested for loops to calculate the product of all pairs of numbers in an n x n matrix?",
+      "choices": {
+        "A": "O(n)",
+        "B": "O(log n)",
+        "C": "O(n^2)",
+        "D": "O(n^3)"
+      },
+      "correct_choice": "C",
+      "solution": "The code snippet has two nested for loops, each iterating n times. The total number of operations is proportional to n * n = n^2, hence the time complexity is O(n^2).",
+      "explanation": "This operation involves a nested loop structure, where the outer loop runs n times and the inner loop also runs n times in each iteration of the outer loop.",
+      "common_mistake_notes": "Common mistake: Choosing D (O(n^3)) because they might误以为这是三层循环，但实际上只有两层。"
+    },
+    {
+      "id": ":5",
+      "stem": "What is the time complexity of the following code snippet that uses recursion to calculate the factorial of a number n?",
+      "choices": {
+        "A": "O(1)",
+        "B": "O(n)",
+        "C": "O(log n)",
+        "D": "O(n!)"
+      },
+      "correct_choice": "D",
+      "solution": "The code snippet calculates the factorial using recursive calls. For each recursive call, the function reduces the input size by 1 until it reaches 1 (the base case). The total number of operations is proportional to n * (n-1) * ... * 1 = n!, so the time complexity is O(n!).",
+      "explanation": "Recursive factorial calculation has an exponential relationship with the input size.",
+      "common_mistake_notes": "Common mistake: Choosing B (O(n)) because they might以为这是线性操作，而实际上它是递归的，每次调用都会增加计算量。"
+    },
+    {
+      "id": ":6",
+      "stem": "What is the time complexity of the following code snippet that uses a while loop to calculate the Fibonacci sequence up to the nth term?",
+      "choices": {
+        "A": "O(1)",
+        "B": "O(n)",
+        "C": "O(log n)",
+        "D": "O(2^n)"
+      },
+      "correct_choice": "D",
+      "solution": "The code snippet calculates the Fibonacci sequence using a while loop with two recursive function calls in each iteration. The number of operations doubles with each term, resulting in an exponential growth (2^n). Therefore, the time complexity is O(2^n).",
+      "explanation": "This implementation of the Fibonacci sequence has an exponential relationship due to the repeated calculations for each term.",
+      "common_mistake_notes": "Common mistake: Choosing B (O(n)) because they might以为这是线性操作，而实际上它是递归调用导致的指数增长。"
+    },
+    {
+      "id": ":7",
+      "stem": "What is the time complexity of the following code snippet that uses a do-while loop to iterate over an array and perform an operation on each element, where n is the size of the array?",
+      "choices": {
+        "A": "O(1)",
+        "B": "O(n^2)",
+        "C": "D",
+        "D": "O(n)"
+      },
+      "correct_choice": "D",
+      "solution": "The code snippet has a do-while loop that iterates over an array, performing an operation on each element. The number of operations grows linearly with the input size, so the time complexity is O(n).",
+      "explanation": "This is a simple linear operation where the number of steps increases proportionally with the input size.",
+      "common_mistake_notes": "Common mistake: Choosing B (O(n^2)) because they might以为这是嵌套循环，但实际上它只是一个单层循环。"
+    }
+  ]
+}

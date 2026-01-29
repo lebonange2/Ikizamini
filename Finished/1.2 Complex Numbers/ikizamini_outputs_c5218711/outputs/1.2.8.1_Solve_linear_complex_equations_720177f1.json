@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.8.1",
+  "objective_text": "Solve linear complex equations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Solve for z in the equation: (3 + 4i)z = -7 + i\nA) z = -1 - i\nB) z = -1 + i\nC) z = 1 - i\nD) z = 1 + i",
+      "choices": {
+        "A": "-1 - i",
+        "B": "-1 + i",
+        "C": "1 - i",
+        "D": "1 + i"
+      },
+      "correct_choice": "A",
+      "solution": "To solve for z, we need to divide both sides of the equation by (3 + 4i). To do this, we can multiply both the numerator and denominator by the complex conjugate of (3 + 4i), which is (3 - 4i). This will eliminate the imaginary part from the denominator.\n\n(3 + 4i)z = -7 + i\n((3 + 4i)z)(3 - 4i) / (3 + 4i)(3 - 4i) = (-7 + i)(3 - 4i) / (3 + 4i)(3 - 4i)\n(3z - 12iz + 4iz + 16) / (9 + 16) = (-21 + 12i + 3i - 4) / (9 + 16)\n(3z + (4i - 12i)z + 16) / 25 = (-25 + 15i) / 25\n(3z - 8iz + 16) / 25 = -1 + 3/5i\nz = (-1 + 3/5i)(25) / (3 - 8i)\nz = (-25 + 15i) / (3 - 8i)",
+      "explanation": "The correct solution is z = -1 - i because after simplifying the equation using complex conjugates, we get z = (-1 + 3/5i)(25) / (3 - 8i), which simplifies to z = -1 - i.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply both sides of the equation by the complex conjugate, leading to an incorrect solution."
+    },
+    {
+      "id": ":2",
+      "stem": "Solve for x in the equation: (2 + 3i)x = 5 - 6i\nA) x = 1 - i\nB) x = 1 + i\nC) x = -1 - i\nD) x = -1 + i",
+      "choices": {
+        "A": "1 - i",
+        "B": "1 + i",
+        "C": "-1 - i",
+        "D": "-1 + i"
+      },
+      "correct_choice": "A",
+      "solution": "Similar to the previous question, we need to divide both sides of the equation by (2 + 3i). We multiply both the numerator and denominator by the complex conjugate of (2 + 3i), which is (2 - 3i).\n\n(2 + 3i)x = 5 - 6i\n((2 + 3i)x)(2 - 3i) / (2 + 3i)(2 - 3i) = (5 - 6i)(2 - 3i) / (2 + 3i)(2 - 3i)\n(2x - 6ix + 3ix - 9) / (4 + 9) = (10 - 15i - 12i + 18) / (4 + 9)\n(2x - (6i - 3i)x - 9) / 13 = 28 - 27i / 13\n(2x - 3ix - 9) / 13 = 2 - 2i/4\nx = (2 - 2i/4)(13) / (2 - 3i)\nx = (26 - 13i/2) / (2 - 3i)",
+      "explanation": "The correct solution is x = 1 - i because after simplifying the equation using complex conjugates, we get x = (26 - 13i/2) / (2 - 3i), which simplifies to x = 1 - i.",
+      "common_mistake_notes": "A common mistake would be to divide both sides by (2 + 3i) without multiplying by the complex conjugate, leading to an incorrect solution."
+    },
+    {
+      "id": ":3",
+      "stem": "Solve for z in the equation: 4z - 5i = 1 + 6iz\nA) z = 1/4 + i/2\nB) z = 1/4 - i/2\nC) z = -1/4 + i/2\nD) z = -1/4 - i/2",
+      "choices": {
+        "A": "1/4 + i/2",
+        "B": "1/4 - i/2",
+        "C": "-1/4 + i/2",
+        "D": "-1/4 - i/2"
+      },
+      "correct_choice": "A",
+      "solution": "To solve for z, we first isolate the terms with z on one side of the equation and then divide by 4.\n\n4z - 5i = 1 + 6iz\n4z = 1 + 5i + 6iz\n4z = (1 + 5i) + i(6z)\n4z = (1 + 5i) + 6zi",
+      "explanation": "The correct solution is z = 1/4 + i/2 because after simplifying the equation, we get 4z = (1 + 5i) + 6zi, which leads to z = (1 + 5i)/4 - 3/2i. Simplifying further gives z = 1/4 + i/2.",
+      "common_mistake_notes": "A common mistake would be to distribute the i across both terms on the right side of the equation without considering that i is a variable, leading to an incorrect solution."
+    },
+    {
+      "id": ":4",
+      "stem": "Solve for x in the equation: 3ix + 2 = 5 - 6x\nA) x = 1/3 - i/2\nB) x = 1/3 + i/2\nC) x = -1/3 - i/2\nD) x = -1/3 + i/2",
+      "choices": {
+        "A": "1/3 - i/2",
+        "B": "1/3 + i/2",
+        "C": "-1/3 - i/2",
+        "D": "-1/3 + i/2"
+      },
+      "correct_choice": "A",
+      "solution": "First, we isolate the terms with x on one side of the equation and then solve for x.\n\n3ix + 2 = 5 - 6x\n3ix + 6x = 5 - 2\n9ix = 3\nx = 3 / (9i)\nx = 1 / (3i)",
+      "explanation": "The correct solution is x = 1/3 - i/2 because after simplifying the equation, we get x = 1 / (3i), which can be rewritten as x = (1/-3) + (0i) or x = -1/3 - i/2.",
+      "common_mistake_notes": "A common mistake would be to divide both sides by 9 without considering the imaginary part, leading to an incorrect solution."
+    },
+    {
+      "id": ":5",
+      "stem": "Solve for z in the equation: (1 + i)z = 4i\nA) z = -2\nB) z = 2\nC) z = -2i\nD) z = 2i",
+      "choices": {
+        "A": "-2",
+        "B": "2",
+        "C": "-2i",
+        "D": "2i"
+      },
+      "correct_choice": "D",
+      "solution": "To solve for z, we divide both sides of the equation by (1 + i). To eliminate the imaginary part from the denominator, we multiply both sides by the complex conjugate of (1 + i), which is (1 - i).\n\n(1 + i)z = 4i\n((1 + i)z)(1 - i) / (1 + i)(1 - i) = 4i(1 - i) / (1 + i)(1 - i)\n(1z - iz + iz - i^2z) / (1 - i^2) = (4i - 4i^2) / (1 - i^2)\n(z - iz + iz + 1z) / 2 = (4i + 4) / 2\n(2z) / 2 = 4 + 2i / 2\nz = 2 + i",
+      "explanation": "The correct solution is z = 2i because after simplifying the equation using complex conjugates, we get z = (2 + i)/2, which simplifies to z = 2i.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply both sides of the equation by the complex conjugate, leading to an incorrect solution."
+    },
+    {
+      "id": ":6",
+      "stem": "Solve for x in the equation: (2 - i)x = 3 + 4ix\nA) x = 1 + i\nB) x = 1 - i\nC) x = -1 + i\nD) x = -1 - i",
+      "choices": {
+        "A": "1 + i",
+        "B": "1 - i",
+        "C": "-1 + i",
+        "D": "-1 - i"
+      },
+      "correct_choice": "A",
+      "solution": "We need to divide both sides of the equation by (2 - i). To eliminate the imaginary part from the denominator, we multiply both sides by the complex conjugate of (2 - i), which is (2 + i).\n\n(2 - i)x = 3 + 4ix\n((2 - i)x)(2 + i) / (2 - i)(2 + i) = (3 + 4ix)(2 + i) / (2 - i)(2 + i)\n(2x + ix - 2ix - i^2x) / (4 + i^2) = (6 + 8i + 3i - 4i^2) / (4 + i^2)\n(2x + x - xi - (-1)x) / 5 = (6 + 11i + 4) / 5\n(3x - xi + x) / 5 = 10 + 11i / 5\n(4x - xi) / 5 = 2 + 2.2i",
+      "explanation": "The correct solution is x = 1 + i because after simplifying the equation using complex conjugates, we get (4x - xi) / 5 = 2 + 2.2i, which simplifies to x = 1 + i.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply both sides of the equation by the complex conjugate, leading to an incorrect solution."
+    },
+    {
+      "id": ":7",
+      "stem": "Solve for z in the equation: (2i - 3)z = 6 + 9i\nA) z = 3 + 3i\nB) z = 3 - 3i\nC) z = -3 + 3i\nD) z = -3 - 3i",
+      "choices": {
+        "A": "3 + 3i",
+        "B": "3 - 3i",
+        "C": "-3 + 3i",
+        "D": "-3 - 3i"
+      },
+      "correct_choice": "C",
+      "solution": "To solve for z, we divide both sides of the equation by (2i - 3). To eliminate the imaginary part from the denominator, we multiply both sides by the complex conjugate of (2i - 3), which is (-2i - 3).\n\n(2i - 3)z = 6 + 9i\n((2i - 3)z)(-2i - 3) / (2i - 3)(-2i - 3) = (6 + 9i)(-2i - 3) / (2i - 3)(-2i - 3)\n(-4iz + 6ix - 6z + 9zi) / (-4i^2 - 12i + 9) = (-12i - 18 + 12i^2 + 27i) / (-4i^2 - 12i + 9)\n(-4iz + 6ix + (9 - 6)zi) / 13 = (-18 + 12i + 27i) / 13\n(-4iz + 3ix + 3zi) / 13 = -18 + 39i / 13\n(-4z + 3i - 3z)i / 13 = -1 + 3i",
+      "explanation": "The correct solution is z = -3 + 3i because after simplifying the equation using complex conjugates, we get (-7z + 6i)i / 13 = -1 + 3i, which simplifies to z = -3 + 3i.",
+      "common_mistake_notes": "A common mistake would be to forget to multiply both sides of the equation by the complex conjugate, leading to an incorrect solution."
+    }
+  ]
+}

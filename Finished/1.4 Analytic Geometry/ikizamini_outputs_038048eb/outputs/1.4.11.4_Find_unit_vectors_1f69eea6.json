@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.11.4",
+  "objective_text": "Find unit vectors",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the unit vector in the direction of the vector <3, 4>?",
+      "choices": {
+        "A": "<0.6, 0.8>",
+        "B": "<3/5, 4/5>",
+        "C": "<9, 12>",
+        "D": "<-0.6, -0.8>"
+      },
+      "correct_choice": "B",
+      "solution": "The unit vector in the direction of a given vector is found by dividing the vector by its magnitude. The magnitude of <3, 4> is sqrt(3^2 + 4^2) = 5. So, the unit vector is <3/5, 4/5>. Common mistake notes: Some students may forget to divide by the magnitude and instead use the original vector (choice B).",
+      "explanation": "Unit vectors have a magnitude of 1 and represent direction only.",
+      "common_mistake_notes": "Some students may forget to divide by the magnitude and instead use the original vector (choice B)."
+    },
+    {
+      "id": "Bghj",
+      "stem": "Find the unit vector in the direction of <0, -5>.",
+      "choices": {
+        "A": "<0, 1>",
+        "B": "<0, -1>",
+        "C": "<-1, 0>",
+        "D": "<1, 0>"
+      },
+      "correct_choice": "B",
+      "solution": "The unit vector in the direction of a given vector is found by dividing the vector by its magnitude. The magnitude of <0, -5> is 5. So, the unit vector is <0/-5, -5/5> = <0, -1>. Common mistake notes: Some students may forget to consider the negative sign when dividing (choice A).",
+      "explanation": "Unit vectors have a magnitude of 1 and represent direction only.",
+      "common_mistake_notes": "Some students may forget to consider the negative sign when dividing (choice A)."
+    },
+    {
+      "id": "Qwer",
+      "stem": "What is the unit vector in the direction of <5, -2>?",
+      "choices": {
+        "A": "<1, -0.4>",
+        "B": "<-5/√29, 2/√29>",
+        "C": "<0.5, -0.2>",
+        "D": "<5, -2>"
+      },
+      "correct_choice": "B",
+      "solution": "The unit vector in the direction of a given vector is found by dividing the vector by its magnitude. The magnitude of <5, -2> is sqrt(5^2 + (-2)^2) = √29. So, the unit vector is <-5/√29, 2/√29>. Common mistake notes: Some students may round the square root incorrectly or forget to divide both components (choice A).",
+      "explanation": "Unit vectors have a magnitude of 1 and represent direction only.",
+      "common_mistake_notes": "Some students may round the square root incorrectly or forget to divide both components (choice A)."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "Find the unit vector in the direction of <2, -3, 0>.",
+      "choices": {
+        "A": "<1/√13, -3/√13, 0>",
+        "B": "<2, -3, 0>",
+        "C": "<0.4, -0.6, 0>",
+        "D": "<-0.4, 0.6, 0>"
+      },
+      "correct_choice": "A",
+      "solution": "The unit vector in the direction of a given vector is found by dividing the vector by its magnitude. The magnitude of <2, -3, 0> is sqrt(2^2 + (-3)^2) = √13. So, the unit vector is <1/√13, -3/√13, 0>. Common mistake notes: Some students may forget to consider the third component, which is 0 (choice B and D).",
+      "explanation": "Unit vectors have a magnitude of 1 and represent direction only.",
+      "common_mistake_notes": "Some students may forget to consider the third component, which is 0 (choice B and D)."
+    },
+    {
+      "id": "Bvnmm",
+      "stem": "What is the unit vector in the direction of <-4, 3, -1>?",
+      "choices": {
+        "A": "<-0.8, 0.6, -0.2>",
+        "B": "<4, -3, 1>",
+        "C": "<-0.57, 0.43, -0.14>",
+        "D": "<0.57, -0.43, 0.14>"
+      },
+      "correct_choice": "A",
+      "solution": "The unit vector in the direction of a given vector is found by dividing the vector by its magnitude. The magnitude of <-4, 3, -1> is sqrt((-4)^2 + 3^2 + (-1)^2) = √26. So, the unit vector is <-4/√26, 3/√26, -1/√26>. Common mistake notes: Some students may round the square root incorrectly or forget to divide all components (choice C).",
+      "explanation": "Unit vectors have a magnitude of 1 and represent direction only.",
+      "common_mistake_notes": "Some students may round the square root incorrectly or forget to divide all components (choice C)."
+    },
+    {
+      "id": "Ghjkl",
+      "stem": "Find the unit vector in the direction of <0, 0, 7>.",
+      "choices": {
+        "A": "<0, 1, 0>",
+        "B": "<0, 0, -1>",
+        "C": "<0, 0, 1/7>",
+        "D": "<0, 0, 1>"
+      },
+      "correct_choice": "D",
+      "solution": "The unit vector in the direction of a given vector is found by dividing the vector by its magnitude. The magnitude of <0, 0, 7> is 7. So, the unit vector is <0/7, 0/7, 7/7> = <0, 0, 1>. Common mistake notes: Some students may forget that a zero component remains unchanged (choice A and B).",
+      "explanation": "Unit vectors have a magnitude of 1 and represent direction only.",
+      "common_mistake_notes": "Some students may forget that a zero component remains unchanged (choice A and B)."
+    },
+    {
+      "id": "Xcvbn",
+      "stem": "What is the unit vector in the direction of <-3, 0, 4>?",
+      "choices": {
+        "A": "<-0.6, 0, 0.8>",
+        "B": "<-3/5, 0, 4/5>",
+        "C": "<-0.75, 0, 1>",
+        "D": "<0.75, 0, -1>"
+      },
+      "correct_choice": "B",
+      "solution": "The unit vector in the direction of a given vector is found by dividing the vector by its magnitude. The magnitude of <-3, 0, 4> is sqrt((-3)^2 + 0^2 + 4^2) = 5. So, the unit vector is <-3/5, 0/5, 4/5>. Common mistake notes: Some students may forget to divide the negative component (choice C).",
+      "explanation": "Unit vectors have a magnitude of 1 and represent direction only.",
+      "common_mistake_notes": "Some students may forget to divide the negative component (choice C)."
+    }
+  ]
+}

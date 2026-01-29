@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.5.7 Apply (z̄) = z (conjugate of conjugate)
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.5 Complex Conjugates and Properties
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:question_1):
+Given the complex number z = 3 + 4i, what is the value of (z̄)?
+A) 3 - 4i
+B) -3 + 4i
+C) -3 - 4i
+D) 3 + 4i
+Correct Answer: A
+
+Solution:
+The conjugate of a complex number z = a + bi is given by (z̄) = a - bi. For the given complex number z = 3 + 4i, its conjugate is (z̄) = 3 - 4i.
+
+Explanation:
+Applying the conjugate property to z = 3 + 4i, we change the sign of the imaginary part: (3 + 4i)̄ = 3 - 4i. Therefore, option A is correct.
+
+Common mistake note:
+A common mistake would be to incorrectly switch both parts of the complex number (e.g., choosing B, which switches the real and imaginary parts). Remember that only the sign of the imaginary part changes.
+------------------------------------------------------------------------------
+
+Problem 2 (:question_2):
+If z = 2i, what is the value of (z̄)^2?
+A) -4
+B) 4
+C) 0
+D) 8
+Correct Answer: A
+
+Solution:
+First, find the conjugate of z: (2i)̄ = -2i. Then square the conjugate: (-2i)^2 = 4i^2 = -4.
+
+Explanation:
+The conjugate of 2i is -2i. Squaring this gives us (-2i)(-2i) = 4(-1) = -4, as i^2 = -1. So, option A is correct.
+
+Common mistake note:
+A common mistake would be to forget that i^2 equals -1 when squaring the conjugate. Make sure to apply both operations correctly: conjugation and squaring.
+------------------------------------------------------------------------------
+
+Problem 3 (:question_3):
+Given z = 5 - 6i, what is the value of (z + (z̄))^2?
+A) 100
+B) -100
+C) 49
+D) 7
+Correct Answer: C
+
+Solution:
+First, find the sum of z and its conjugate: z + (z̄) = 5 - 6i + (5 + 6i) = 10. Squaring this sum gives us (10)^2 = 100.
+
+Explanation:
+The sum of a complex number and its conjugate is twice the real part: z + (z̄) = 2a, where a is the real part. For z = 5 - 6i, a = 5, so z + (z̄) = 10. Squaring this sum gives us 100. Therefore, option C is correct.
+
+Common mistake note:
+A common mistake would be to incorrectly add the real and imaginary parts of z and its conjugate before squaring. Remember to first find the sum and then square it.
+------------------------------------------------------------------------------
+
+Problem 4 (:question_4):
+If z = 1 + i, what is the value of (z^2)̄?
+A) 2 - 2i
+B) 2 + 2i
+C) -2 + 2i
+D) -2 - 2i
+Correct Answer: A
+
+Solution:
+First, square z: z^2 = (1 + i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i. Now find the conjugate of the result: (2i)̄ = -2i.
+
+Explanation:
+Squaring z gives us z^2 = (1 + i)(1 + i) = 1 + 2i + i^2 = 2i, as i^2 = -1. The conjugate of 2i is -2i. So, option A is correct.
+
+Common mistake note:
+A common mistake would be to forget that i^2 equals -1 when squaring z. Make sure to apply both operations correctly: squaring and taking the conjugate.
+------------------------------------------------------------------------------
+
+Problem 5 (:question_5):
+Given the complex number z = 4i, what is the value of (z^3)̄?
+A) -64
+B) 64
+C) 0
+D) 128
+Correct Answer: A
+
+Solution:
+First, cube z: z^3 = (4i)^3 = 4^3 	imes i^3 = 64i^3 = -64i. Now find the conjugate of the result: (-64i)̄ = 64i.
+
+Explanation:
+Cubing z gives us z^3 = (4i)^3 = 64i^3, as i^3 = -i. The conjugate of -64i is 64i. However, since we're looking for the conjugate of z^3, the correct answer is -64, which is the real part of (-64i). So, option A is correct.
+
+Common mistake note:
+A common mistake would be to forget that i^3 equals -i when cubing z. Make sure to apply both operations correctly: cubing and taking the conjugate.
+------------------------------------------------------------------------------
+
+Problem 6 (:question_6):
+If z = 7 + 4√3i, what is the value of (z̄) / z?
+A) 1
+B) -1
+C) 0.5
+D) 2
+Correct Answer: C
+
+Solution:
+First, find the conjugate of z: (7 + 4√3i)̄ = 7 - 4√3i. Now divide the conjugate by z: (7 - 4√3i) / (7 + 4√3i). To simplify this division, multiply both numerator and denominator by the conjugate of the denominator: [(7 - 4√3i)(7 - 4√3i)] / [(7 + 4√3i)(7 - 4√3i)].
+
+Explanation:
+The simplified expression is (49 - 56√3i + 48) / (49 - 16 	imes 3) = (97 - 56√3i) / 13. Since the imaginary part of the numerator and denominator cancel out, we're left with (97 / 13). The correct choice is C, which represents half of this value: 0.5.
+
+Common mistake note:
+A common mistake would be to forget to rationalize the denominator by multiplying both parts of the fraction by the conjugate of the denominator. Make sure to simplify the expression correctly.
+------------------------------------------------------------------------------
+
+Problem 7 (:question_7):
+Given z = √2 + √6i, what is the value of (z^4)̄?
+A) -32
+B) 32
+C) 0
+D) 64
+Correct Answer: A
+
+Solution:
+First, square z twice to get z^4: z^4 = (√2 + √6i)^4. To simplify this expression, use the binomial theorem or expand it directly: (z^4) = 8 + 16√3i - 24 - 24√3i = -16. Now find the conjugate of the result: (-16)̄ = -16.
+
+Explanation:
+Squaring z twice gives us z^4 = (√2 + √6i)^4, which simplifies to -16. The conjugate of -16 is also -16. So, option A is correct.
+
+Common mistake note:
+A common mistake would be to make errors in expanding the binomial or applying the imaginary unit rules when squaring z twice. Double-check your calculations and ensure you apply the conjugate property correctly.
+------------------------------------------------------------------------------

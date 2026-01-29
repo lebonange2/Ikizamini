@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.4.12",
+  "objective_text": "Find horizontal asymptotes",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "?",
+      "stem": "Find the horizontal asymptote of the function f(x) = (3x^2 + 6x - 9)/(2x^2 - 4x + 2).",
+      "choices": {
+        "A": "y = -3/2",
+        "B": "y = 3/2",
+        "C": "y = 0",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "To find the horizontal asymptote, compare the degrees of the numerator and denominator. Both have a degree of 2. Since the leading coefficients are 3 and 2 respectively, the horizontal asymptote is y = (3/2)/(1) = 3/2.",
+      "explanation": "The horizontal asymptote occurs when the function approaches infinity or negative infinity. When both numerator and denominator have the same degree, the ratio of their leading coefficients gives the horizontal asymptote.",
+      "common_mistake_notes": "A common mistake is to assume that since the degrees are equal, the horizontal asymptote is y = 0. However, this only applies when the leading coefficient of the numerator is smaller than the denominator."
+    },
+    {
+      "id": "?",
+      "stem": "Find the horizontal asymptote of the function g(x) = (x^3 - 4x + 1)/(2x^3 + x^2).",
+      "choices": {
+        "A": "y = -1/2",
+        "B": "y = 1/2",
+        "C": "y = 0",
+        "D": "Does not exist"
+      },
+      "correct_choice": "C",
+      "solution": "Both the numerator and denominator have a degree of 3. Since the leading coefficients are equal (1), the horizontal asymptote is y = 1/1 = 0.",
+      "explanation": "When both numerator and denominator have the same degree and their leading coefficients are equal, the horizontal asymptote is y = 0.",
+      "common_mistake_notes": "A common mistake would be to compare the coefficients of x^2 or lower powers, which does not determine the horizontal asymptote. Always consider the highest power."
+    },
+    {
+      "id": "?",
+      "stem": "Find the horizontal asymptote of the function h(x) = (3e^x)/(5 + 2e^x).",
+      "choices": {
+        "A": "y = 0",
+        "B": "y = 1/2",
+        "C": "y = 1",
+        "D": "Does not exist"
+      },
+      "correct_choice": "C",
+      "solution": "As x approaches infinity, e^x grows much faster than any polynomial. Thus, the function approaches 3e^x/(5 + 2e^x) ≈ 3e^x/e^x = 3. The horizontal asymptote is y = 3/5 = 0.6 or 3/5.",
+      "explanation": "When the numerator grows faster than the denominator, the function approaches infinity and there is no horizontal asymptote. When both grow at the same rate (as in this case), the ratio of their leading coefficients gives the horizontal asymptote.",
+      "common_mistake_notes": "A common mistake would be to assume that as e^x grows, the fraction approaches 3/5, but this is not true when considering large values of x. The dominant term determines the behavior."
+    },
+    {
+      "id": "?",
+      "stem": "Find the horizontal asymptote of the function j(x) = (sin(x))/x.",
+      "choices": {
+        "A": "y = 0",
+        "B": "y = 1",
+        "C": "y = -1",
+        "D": "Does not exist"
+      },
+      "correct_choice": "A",
+      "solution": "As x approaches infinity, sin(x) oscillates between -1 and 1 while x grows unbounded. The ratio of the two approaches 0, so the horizontal asymptote is y = 0.",
+      "explanation": "When the numerator is a periodic function like sine or cosine, it does not grow or decay with x, so the horizontal asymptote is determined by the denominator's behavior. In this case, x grows without bound, leading to an asymptote at y = 0.",
+      "common_mistake_notes": "A common mistake would be to think that sin(x) approaches a specific value as x increases, but it does not; it oscillates indefinitely."
+    },
+    {
+      "id": "?",
+      "stem": "Find the horizontal asymptote of the function k(x) = (x^2 + 3)/(x - 1)^2.",
+      "choices": {
+        "A": "y = 0",
+        "B": "y = 1",
+        "C": "Does not exist",
+        "D": "y = infinity"
+      },
+      "correct_choice": "C",
+      "solution": "The degree of the numerator is 2, but the degree of the denominator's quadratic factor (x - 1)^2 is also 2. However, since the denominator has a higher power with respect to x, there is no horizontal asymptote.",
+      "explanation": "When the degree of the denominator is greater than the degree of the numerator, the function approaches zero as x approaches infinity or negative infinity, but there is no horizontal asymptote.",
+      "common_mistake_notes": "A common mistake would be to think that since both degrees are equal, a horizontal asymptote exists. But in this case, the higher power in the denominator eliminates the possibility of an asymptote."
+    },
+    {
+      "id": "?",
+      "stem": "Find the horizontal asymptote of the function l(x) = (x^3 - 2x + 1)/(x^4 + 3).",
+      "choices": {
+        "A": "y = 0",
+        "B": "y = 1/4",
+        "C": "Does not exist",
+        "D": "y = infinity"
+      },
+      "correct_choice": "C",
+      "solution": "The degree of the numerator is 3, and the degree of the denominator is 4. Since the degree of the denominator is greater than that of the numerator, there is no horizontal asymptote.",
+      "explanation": "When the degree of the denominator is greater by more than one than the degree of the numerator, the function approaches zero as x approaches infinity or negative infinity, but there is no horizontal asymptote.",
+      "common_mistake_notes": "A common mistake would be to compare leading coefficients, which does not apply when the degrees differ by more than 1."
+    },
+    {
+      "id": "?",
+      "stem": "Find the horizontal asymptote of the function m(x) = (2^x)/(3^x + 4).",
+      "choices": {
+        "A": "y = 0",
+        "B": "y = 1/2",
+        "C": "y = 1",
+        "D": "Does not exist"
+      },
+      "correct_choice": "D",
+      "solution": "As x approaches infinity, 2^x grows much faster than 3^x + 4. The function approaches 2^x/(3^x) ≈ 1/1 = 1. Since the numerator does not grow faster than the denominator, there is no horizontal asymptote.",
+      "explanation": "When both terms in the numerator and denominator are exponential functions with different bases, the one with the larger base will dominate at large x values, resulting in no horizontal asymptote.",
+      "common_mistake_notes": "A common mistake would be to assume that as x grows, the fraction approaches 1/2, but this is not true when considering very large values of x. The dominant term determines the behavior."
+    }
+  ]
+}

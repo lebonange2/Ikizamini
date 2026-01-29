@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.12.10",
+  "objective_text": "Find Hamilton paths and circuits",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Consider the following graph with vertices A, B, C, D, and E, where each edge represents a direct connection between two vertices. Which of the following sequences represents a Hamilton circuit in this graph?",
+      "choices": {
+        "A": "[A, B, C, D, E, A]",
+        "B": "[B, A, C, D, E, B]",
+        "C": "[C, A, B, D, E, C]",
+        "D": "[D, A, B, C, E, D]"
+      },
+      "correct_choice": "A",
+      "solution": "The Hamilton circuit is a path that visits each vertex exactly once and returns to the starting vertex. In this graph, the sequence [A, B, C, D, E, A] satisfies these conditions.",
+      "explanation": "Option A represents a valid Hamilton circuit as it starts at vertex A, visits all other vertices (B, C, D, E), and ends back at vertex A. The other options do not form a circuit or do not visit all vertices exactly once.",
+      "common_mistake_notes": "A common mistake is to forget that the circuit must return to the starting vertex. Options B, C, and D do not satisfy this condition."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Given the following graph with vertices 1, 2, 3, 4, and 5, where each edge represents a direct connection between two vertices, determine if there exists a Hamilton path. If yes, provide one example.",
+      "choices": {
+        "A": "No, there is no Hamilton path.",
+        "B": "[1, 2, 3, 4, 5]",
+        "C": "[1, 3, 2, 4, 5]",
+        "D": "[1, 2, 4, 3, 5]"
+      },
+      "correct_choice": "B",
+      "solution": "Yes, there exists a Hamilton path. An example is [1, 2, 3, 4, 5].",
+      "explanation": "A Hamilton path visits each vertex exactly once but does not need to return to the starting vertex. In this graph, the sequence [1, 2, 3, 4, 5] satisfies these conditions.",
+      "common_mistake_notes": "A common mistake is to confuse a Hamilton circuit with a Hamilton path. A Hamilton circuit must return to the starting vertex, while a Hamilton path does not."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Identify which of the following graphs has at least one Hamilton path.",
+      "choices": {
+        "A": "[1--2--3--4--5]",
+        "B": "[1--2--3] [4--5]",
+        "C": "[1--2] [3--4--5]",
+        "D": "[1--2--3] [4--5--6]"
+      },
+      "correct_choice": "A",
+      "solution": "Option A has a Hamilton path, for example: [1, 2, 3, 4, 5].",
+      "explanation": "In option A, there is a direct connection between each consecutive vertex, allowing for a Hamilton path. In options B, C, and D, there are disconnected components or vertices that cannot be connected without repeating an edge.",
+      "common_mistake_notes": "A common mistake is to overlook the requirement of a direct connection between vertices for a Hamilton path."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find a Hamilton circuit in the following complete graph with 6 vertices, labeled A through F. Write the circuit as a sequence of vertex labels.",
+      "choices": {
+        "A": "[A, B, C, D, E, F, A]",
+        "B": "[B, A, C, D, E, F, B]",
+        "C": "[C, A, B, D, E, F, C]",
+        "D": "[D, A, B, C, E, F, D]"
+      },
+      "correct_choice": "A",
+      "solution": "The Hamilton circuit is [A, B, C, D, E, F, A].",
+      "explanation": "In a complete graph with 6 vertices, every vertex is connected to every other vertex. Any sequence that starts at one vertex and visits all others exactly once before returning to the starting vertex will form a Hamilton circuit.",
+      "common_mistake_notes": "A common mistake is to forget that in a complete graph, there are multiple valid Hamilton circuits; any correct sequence is acceptable."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Determine if the following graph has a Hamilton circuit. If yes, provide one example.",
+      "choices": {
+        "A": "No, there is no Hamilton circuit.",
+        "B": "[1--2--3--4--5--6--1]",
+        "C": "[1--2--3] [4--5--6--1]",
+        "D": "[1--2--3--4] [5--6]"
+      },
+      "correct_choice": "A",
+      "solution": "No, there is no Hamilton circuit in this graph.",
+      "explanation": "A Hamilton circuit requires each vertex to be visited exactly once and for the path to return to the starting vertex. In this graph, there are disconnected components (1-2-3 and 4-5-6), making it impossible to form a Hamilton circuit.",
+      "common_mistake_notes": "A common mistake is to overlook the requirement that all vertices must be connected in a single cycle for a Hamilton circuit."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Given the following grid graph with 5 rows and 4 columns, identify if there exists a Hamilton path starting at vertex (1, 1) and ending at vertex (5, 4). If yes, provide one example.",
+      "choices": {
+        "A": "No, there is no Hamilton path.",
+        "B": "[1, 1]--[1, 2]--[1, 3]--[1, 4]--[2, 4]--...--[5, 4]",
+        "C": "[1, 1]--[2, 1]--[2, 2]--[3, 2]--[3, 3]--...--[5, 4]",
+        "D": "[1, 1]--[2, 1]--[2, 2]--[2, 3]--[2, 4]--...--[5, 4]"
+      },
+      "correct_choice": "C",
+      "solution": "Yes, there exists a Hamilton path. An example is [1, 1]--[2, 1]--[2, 2]--[3, 2]--[3, 3]--...--[5, 4].",
+      "explanation": "In a grid graph, we can traverse from one cell to its neighbors (up, down, left, or right) without crossing an edge. Starting at (1, 1), we can follow this rule to reach (5, 4) while visiting each vertex exactly once.",
+      "common_mistake_notes": "A common mistake is to forget that diagonal moves are not allowed in a grid graph; only horizontal and vertical moves are valid."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find a Hamilton circuit in the following complete bipartite graph with two sets of vertices, A and B, where |A| = 3 and |B| = 4. Write the circuit as a sequence of vertex labels.",
+      "choices": {
+        "A": "[A1, A2, A3, B1, B2, B3, B4, A1]",
+        "B": "[B1, A1, B2, A2, B3, A3, B4, A1]",
+        "C": "[A1, B1, A2, B2, A3, B3, A1, B4]",
+        "D": "[A1, B1, A2, B2, A3, B3, B4, A1]"
+      },
+      "correct_choice": "D",
+      "solution": "The Hamilton circuit is [A1, B1, A2, B2, A3, B3, B4, A1].",
+      "explanation": "In a complete bipartite graph, every vertex in one set is connected to every vertex in the other set. To form a Hamilton circuit, we can alternate between vertices from set A and set B, starting and ending at the same vertex.",
+      "common_mistake_notes": "A common mistake is to overlook the requirement that edges only connect vertices from different sets in a bipartite graph."
+    }
+  ]
+}

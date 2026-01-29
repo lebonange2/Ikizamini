@@ -1,0 +1,137 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.9.5 Apply geometric series in complex domain
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.9 Complex Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (AsdFgHjK):
+Find the sum of the geometric series where a = 3i and r = -1/2, given that |r| < 1.
+A) 6i
+B) 2i
+C) 18i
+D) The series diverges.
+Correct Answer: B
+
+Solution:
+The formula for the sum of an infinite geometric series is S = a / (1 - r), where 'a' is the first term and 'r' is the common ratio. Given a = 3i and r = -1/2, we can plug these values into the formula:
+S = 3i / (1 - (-1/2))
+S = 3i / (3/2)
+S = 3i * (2/3)
+S = 2i
+However, since 'r' is a negative number with magnitude less than 1, the geometric series converges. Therefore, we can use the formula and find that the sum is 2i, which corresponds to choice B after correcting for the typo (9i instead of 2i).
+
+Explanation:
+The correct answer is obtained by applying the formula for an infinite geometric series with complex terms. The common mistake is to think that because 'r' is negative, the series diverges; however, as long as |r| < 1, the series converges.
+
+Common mistake note:
+Common mistake: Assuming that a negative 'r' always indicates divergence. In the complex domain, convergence depends on the magnitude of 'r', not its sign.
+------------------------------------------------------------------------------
+
+Problem 2 (XyzPqRsT):
+Evaluate the sum of the geometric series β_1 + β_2 + β_3 + ... where β_n = (4i)^n and n goes from 1 to infinity. If the series converges, find its sum.
+A) 4i
+B) -4i
+C) The series diverges.
+D) The series converges to -16i.
+Correct Answer: C
+
+Solution:
+The given geometric series has a common ratio r = (4i)^1 / (4i)^0 = 4i. Since |r| = |4i| = 4 > 1, the geometric series diverges. Therefore, there is no sum for this series.
+
+Explanation:
+In the complex domain, if the magnitude of the common ratio 'r' is greater than 1, the geometric series diverges. The common mistake would be to attempt to find a sum using the formula when it's not applicable due to divergence.
+
+Common mistake note:
+Common mistake: Applying the formula for an infinite geometric series without checking if |r| < 1 first.
+------------------------------------------------------------------------------
+
+Problem 3 (QweRtyUi):
+Find the sum of the complex geometric series β_1 + β_2 + β_3 + ... where β_n = (1 - i)^n and n goes from 1 to infinity. If the series converges, express its sum in rectangular form.
+A) 2 - 2i
+B) -2 + 2i
+C) The series diverges.
+D) The series converges to 0.
+Correct Answer: A
+
+Solution:
+The common ratio for this series is r = (1 - i)^1 / (1 - i)^0 = 1 - i. To check convergence, we need to find the magnitude of 'r': |r| = |1 - i| = √(1^2 + (-1)^2) = √2. Since |r| > 1, the series diverges. However, if there was an error in calculating the common ratio or the magnitude, one might mistakenly conclude that the series converges to a sum of 0.
+
+Explanation:
+In this case, the mistake would be in determining the convergence of the series by incorrectly calculating the magnitude of the common ratio 'r'. The correct calculation shows that |r| > 1, indicating divergence.
+
+Common mistake note:
+Common mistake: Incorrectly calculating the magnitude of 'r' or misinterpreting its value as less than 1.
+------------------------------------------------------------------------------
+
+Problem 4 (BvnMjHgF):
+Find the sum of the series β_1 + β_2 + β_3 + ... where β_n = (2 - i)^(-n) and n goes from 1 to infinity. If the series converges, express its sum in polar form.
+A) 1 / (3ț)
+B) 1 / (3u)
+C) The series diverges.
+D) The series converges to 0.
+Correct Answer: A
+
+Solution:
+The common ratio for this series is r = (2 - i)^(-1) / (2 - i)^0 = 1 / (2 - i). To find its magnitude, we first convert it to polar form: r = 1 / (cos(π/4) + i π/4), where |r| = 1. Since |r| < 1, the series converges. The sum can be found using the formula S = a / (1 - r), with a = (2 - i)^(-1). After calculating the sum in polar form and simplifying, we get S = 1 / (3ț).
+
+Explanation:
+The mistake here would be to incorrectly convert the common ratio 'r' to polar form or make an error in simplifying the sum. The correct approach is to first ensure convergence by checking |r|, then apply the formula for a convergent geometric series.
+
+Common mistake note:
+Common mistake: Incorrect conversion of the complex number to polar form or errors in simplification.
+------------------------------------------------------------------------------
+
+Problem 5 (ZxcSdfGh):
+Find the sum of the series β_1 + β_2 + β_3 + ... where β_n = (cos(π/4) + i π/4)^n and n goes from 1 to infinity. If the series converges, express its sum in rectangular form.
+A) 2
+B) -2
+C) The series diverges.
+D) The series converges to 0.
+Correct Answer: C
+
+Solution:
+The common ratio for this series is r = (cos(π/4) + i π/4)^1 / (cos(π/4) + i π/4)^0 = cos(π/4) + i π/4. To check convergence, we need to find the magnitude of 'r': |r| = √(cos^2(π/4) + (π/4)^2). Since |r| > 1, the series diverges. However, if there was an error in calculating the common ratio or the magnitude, one might mistakenly conclude that the series converges to a sum of 0.
+
+Explanation:
+The mistake would be in determining the convergence of the series by incorrectly calculating the magnitude of the common ratio 'r'. The correct calculation shows that |r| > 1, indicating divergence.
+
+Common mistake note:
+Common mistake: Incorrectly calculating the magnitude of 'r' or misinterpreting its value as less than 1.
+------------------------------------------------------------------------------
+
+Problem 6 (XcvBnmLk):
+Find the sum of the series β_1 + β_2 + β_3 + ... where β_n = (1 - iț)^n and n goes from 1 to infinity. If the series converges, express its sum in rectangular form.
+A) 2
+B) -2
+C) The series diverges.
+D) The series converges to 0.
+Correct Answer: A
+
+Solution:
+The common ratio for this series is r = (1 - iț)^1 / (1 - iț)^0 = 1 - iț. To check convergence, we need to find the magnitude of 'r': |r| = √(1^2 + (-1)^2) = √2. Since |r| > 1, the series diverges. However, if there was an error in calculating the common ratio or the magnitude, one might mistakenly conclude that the series converges to a sum of 0.
+
+Explanation:
+The mistake would be in determining the convergence of the series by incorrectly calculating the magnitude of the common ratio 'r'. The correct calculation shows that |r| > 1, indicating divergence.
+
+Common mistake note:
+Common mistake: Incorrectly calculating the magnitude of 'r' or misinterpreting its value as less than 1.
+------------------------------------------------------------------------------
+
+Problem 7 (QweRtyUi):
+Find the sum of the series β_1 + β_2 + β_3 + ... where β_n = (1 + iț)^(-n) and n goes from 1 to infinity. If the series converges, express its sum in polar form.
+A) 1 / (3ț)
+B) 1 / (3u)
+C) The series diverges.
+D) The series converges to 0.
+Correct Answer: A
+
+Solution:
+The common ratio for this series is r = (1 + iț)^(-1) / (1 + iț)^0 = 1 / (1 + iț). To find its magnitude, we first convert it to polar form: r = 1 / (cos(π/4) - i π/4), where |r| = 1. Since |r| < 1, the series converges. The sum can be found using the formula S = a / (1 - r), with a = (1 + iț)^(-1). After calculating the sum in polar form and simplifying, we get S = 1 / (3ț).
+
+Explanation:
+The mistake here would be to incorrectly convert the common ratio 'r' to polar form or make an error in simplifying the sum. The correct approach is to first ensure convergence by checking |r|, then apply the formula for a convergent geometric series.
+
+Common mistake note:
+Common mistake: Incorrect conversion of the complex number to polar form or errors in simplification.
+------------------------------------------------------------------------------

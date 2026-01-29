@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.6.14 Apply to antenna design
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.6 Parabolas
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (Asd123):
+A designer wants to create a quarter-wave monopole antenna for a radio frequency (RF) system operating at 5 GHz. Which dimension would be suitable?
+A) 0.75 meters
+B) 0.5 meters
+C) 2 meters
+D) 1 meter
+Correct Answer: B
+
+Solution:
+The length of a quarter-wave monopole antenna is L = λ/4, where L is the length and λ (lambda) is the wavelength. For 5 GHz, λ ≈ 0.06 meters. Thus, L ≈ 0.015 meters or 0.15 meters. Choice B is closest.
+
+Explanation:
+A quarter-wave monopole antenna's length should be one-fourth of the operating wavelength for efficient operation. Other choices are either too short or too long.
+
+Common mistake note:
+Common mistake: Choosing A (0.75 meters) as it's a multiple of λ/4 but three times the correct value. Choice C is also common due to being too large.
+------------------------------------------------------------------------------
+
+Problem 2 (Asd124):
+In an antenna design, what does a ground plane in a dipole antenna do?
+A) Increases gain and directivity
+B) Reduces interference from other signals
+C) Provides electrical isolation between the two halves of the dipole
+D) Improves radiation efficiency by reflecting radio waves
+Correct Answer: D
+
+Solution:
+A ground plane reflects radio waves, enhancing the antenna's radiation efficiency. It focuses transmitted energy and reduces ohmic heating losses.
+
+Explanation:
+While a ground plane can slightly affect gain and directivity, its primary function is to improve efficiency. Choice B isn't directly related, and choice C isn't specific to dipole antennas.
+
+Common mistake note:
+Common mistake: Choosing A for associating a ground plane with beamforming, but that's not its main purpose. Choice B could be due to misunderstanding the role of a ground plane.
+------------------------------------------------------------------------------
+
+Problem 3 (Asd125):
+Which antenna type is suitable for long-range wireless communication in the microwave frequency range?
+A) Parabolic dish antenna
+B) Loop antenna
+C) Vertical polarization
+D) Omni-directional antenna
+Correct Answer: A
+
+Solution:
+Parabolic dish antennas offer high gain and directivity, ideal for long-range communication in microwave frequencies.
+
+Explanation:
+Loop antennas are more suitable at lower frequencies. Vertical polarization is a characteristic, not an antenna type. Omni-directional antennas aren't optimal for long ranges due to their broadcast pattern.
+
+Common mistake note:
+Common mistake: Choosing D as users might think omni-directional means large coverage, but it doesn't guarantee long-range performance. Choice B could be due to its association with lower frequencies.
+------------------------------------------------------------------------------
+
+Problem 4 (Asd126):
+In a Yagi-Uda antenna design, what does the reflector element do?
+A) Receives radio waves from multiple directions
+B) Increases the overall length of the antenna
+C) Directs radio waves towards the driven element
+D) Improves the bandwidth of the antenna
+Correct Answer: C
+
+Solution:
+The reflector element in a Yagi-Uda antenna focuses incoming signals towards the driven element, enhancing gain and directivity.
+
+Explanation:
+A Yagi-Uda antenna is directional, and the reflector's role is to focus signals. Choices A, B, and D are not its primary function.
+
+Common mistake note:
+Common mistake: Choosing A for misunderstanding the reflector as receiving; it's about directing signals. Choice B could be due to thinking that length improvement matters.
+------------------------------------------------------------------------------
+
+Problem 5 (Asd127):
+What is the main advantage of a helical antenna over a dipole antenna?
+A) Greater bandwidth and lower noise pickup
+B) Higher gain and directivity
+C) Reduced size for a given frequency range
+D) Improved polarization matching to the transmitting source
+Correct Answer: C
+
+Solution:
+The main advantage of a helical antenna is its smaller size for a given frequency range, making it more compact.
+
+Explanation:
+Helical antennas have lower gain and directivity than dipoles. Choice A might be tempting but isn't the primary benefit. Choice B could lead to confusion if users think high performance is better.
+
+Common mistake note:
+Common mistake: Choosing B for associating helical antennas with high performance, but they're not superior in this aspect. Choice A could be due to confusing reduced size with other advantages.
+------------------------------------------------------------------------------
+
+Problem 6 (Asd128):
+How does increasing the number of elements affect the overall gain in an array antenna?
+A) No change in gain
+B) Linear increase in gain
+C) Logarithmic increase in gain
+D) Exponential increase in gain
+Correct Answer: C
+
+Solution:
+Increasing elements in an array antenna leads to logarithmic gain improvement, not linear or exponential.
+
+Explanation:
+Each additional element contributes less to total gain as more are added, resulting in a logarithmic relationship. Choices B and D are incorrect.
+
+Common mistake note:
+Common mistake: Choosing B for assuming that adding elements proportionally increases gain, but it doesn't work that way. Choice D could be due to misunderstanding array antenna gain.
+------------------------------------------------------------------------------
+
+Problem 7 (Asd129):
+Which antenna is commonly used in mobile phones for signal reception and transmission?
+A) Log-periodic dipole array (LPDA)
+B) Isotropic antenna
+C) Patch antenna
+D) Yagi-Uda antenna
+Correct Answer: C
+
+Solution:
+Patch antennas are used in mobile phones due to their compact size, low profile, and reasonable performance.
+
+Explanation:
+LPDAs, Yagi- Uda antennas, and isotropic antennas have characteristics unsuitable for mobile phones. LPDAs are large, Yagi- Uda antennas are directional, and isotropic antennas don't exist in reality.
+
+Common mistake note:
+Common mistake: Choosing A for thinking LPDAs are versatile but their size is impractical. Choice D could be due to associating Yagi- Uda antennas with directionality.
+------------------------------------------------------------------------------

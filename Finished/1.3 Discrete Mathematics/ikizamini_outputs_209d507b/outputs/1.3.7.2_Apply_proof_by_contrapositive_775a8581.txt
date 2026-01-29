@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.7.2 Apply proof by contrapositive
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.7 Proof Techniques
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Prove the statement: If a number is even, then it is divisible by 2.
+A) Assume the converse: if a number is not divisible by 2, then it is odd. Show that this assumption leads to a contradiction.
+B) Assume the contrapositive: if a number is not divisible by 2, then it is not even. Show that this assumption holds true.
+C) Assume the converse: if a number is odd, then it is not divisible by 2. Provide an example of an odd number that is divisible by 2 to show the assumption is false.
+D) Assume the statement is true and find a counterexample to disprove it.
+Correct Answer: B
+
+Solution:
+To prove by contrapositive, we assume the opposite of what we want to prove: if a number is not divisible by 2 (i.e., odd), then it is not even. This assumption holds true because all even numbers have 2 as a factor, and odd numbers do not. Therefore, the proof by contrapositive is successful.
+
+Explanation:
+Proof by contrapositive involves proving the inverse of the conditional statement and showing that it leads to a contradiction. In this case, we prove the contrapositive to show the original statement is true.
+
+Common mistake note:
+A common mistake would be to assume the converse (if not divisible by 2, then odd) and try to find a counterexample, but this does not prove the original statement.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Prove the statement: If a triangle is equilateral, then it is also equiangular.
+A) Assume the converse: if a triangle is not equiangular, then it is not equilateral. Provide an example of a non-equilateral triangle with equal angles to show the assumption is false.
+B) Assume the contrapositive: if a triangle is not equilateral, then it is not equiangular. Show that this assumption leads to a contradiction by proving all equilateral triangles have equal angles.
+C) Assume the converse: if a triangle is not equilateral, then it may or may not be equiangular. Provide examples of both types of triangles.
+D) Assume the statement is true and find a counterexample to disprove it.
+Correct Answer: B
+
+Solution:
+To prove by contrapositive, we assume the opposite of what we want to prove: if a triangle is not equilateral, then it is not equiangular. Since all sides of an equilateral triangle are equal, their angles must also be equal (by angle sum property). This shows that the assumption leads to a contradiction, proving the original statement.
+
+Explanation:
+Proof by contrapositive helps us avoid directly proving the given statement and instead proves its inverse, which can sometimes be easier. In this case, it's simpler to show that all equilateral triangles have equal angles than to prove the converse directly.
+
+Common mistake note:
+A common mistake would be to assume the converse (if not equiangular, then not equilateral) and try to find a counterexample, but this does not prove the original statement.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Prove the statement: If a person is over 18 years old, then they are allowed to vote.
+A) Assume the converse: if a person is not allowed to vote, then they are under 18. Show that this assumption leads to a contradiction by providing an example of someone who is 17 and cannot vote.
+B) Assume the contrapositive: if a person is not allowed to vote, then they are under 18. Prove that all people under 18 are indeed not allowed to vote.
+C) Assume the converse: if a person is over 18, then they may or may not be allowed to vote. Provide examples of both situations.
+D) Assume the statement is true and find a counterexample to disprove it.
+Correct Answer: B
+
+Solution:
+To prove by contrapositive, we assume the opposite of what we want to prove: if a person is not allowed to vote, then they are under 18. This assumption holds true because voting age laws dictate that only those aged 18 or older can vote. Therefore, the proof by contrapositive is successful.
+
+Explanation:
+Proof by contrapositive helps us avoid proving the direct statement and instead proves its inverse, which in this case is straightforward to show since voting rights are based on age.
+
+Common mistake note:
+A common mistake would be to assume the converse (if not allowed to vote, then under 18) and try to find a counterexample, but this does not prove the original statement.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Prove the statement: If a function f(x) is continuous at x= c, then it is differentiable at x= c.
+A) Assume the converse: if a function f(x) is not differentiable at x= c, then it is not continuous at x= c. Provide an example of a continuous function that is not differentiable to show the assumption is false.
+B) Assume the contrapositive: if a function f(x) is not differentiable at x= c, then it is not continuous at x= c. Show that this assumption leads to a contradiction by proving all differentiable functions are continuous.
+C) Assume the converse: if a function f(x) is continuous at x= c, then it may or may not be differentiable at x= c. Provide examples of both types of functions.
+D) Assume the statement is true and find a counterexample to disprove it.
+Correct Answer: B
+
+Solution:
+To prove by contrapositive, we assume the opposite of what we want to prove: if a function f(x) is not differentiable at x= c, then it is not continuous at x= c. This assumption leads to a contradiction because all differentiable functions are continuous. Therefore, the proof by contrapositive supports the original statement.
+
+Explanation:
+Proof by contrapositive helps us avoid proving the direct statement and instead proves its inverse. In this case, we know that differentiability implies continuity, so showing the converse is false confirms the original statement.
+
+Common mistake note:
+A common mistake would be to assume the converse (if not differentiable, then not continuous) and try to find a counterexample, but this does not prove the original statement.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Prove the statement: If a number is prime, then it has exactly two distinct positive divisors.
+A) Assume the converse: if a number has more than two distinct positive divisors, then it is not prime. Provide an example of a composite number with three or more divisors to show the assumption is true.
+B) Assume the contrapositive: if a number does not have exactly two distinct positive divisors, then it is not prime. Show that this assumption leads to a contradiction by proving all prime numbers have only two divisors (1 and itself).
+C) Assume the converse: if a number has exactly two distinct positive divisors, then it may or may not be prime. Provide examples of both types of numbers.
+D) Assume the statement is true and find a counterexample to disprove it.
+Correct Answer: B
+
+Solution:
+To prove by contrapositive, we assume the opposite of what we want to prove: if a number does not have exactly two distinct positive divisors, then it is not prime. This assumption holds true because prime numbers have only two divisors (1 and itself), while composite numbers have more than two. Therefore, the proof by contrapositive supports the original statement.
+
+Explanation:
+Proof by contrapositive helps us avoid proving the direct statement and instead proves its inverse, which in this case is straightforward to show since prime number properties are well-defined.
+
+Common mistake note:
+A common mistake would be to assume the converse (if has more than two divisors, then not prime) and try to find a counterexample, but this does not prove the original statement.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Prove the statement: If a triangle is scalene, then it is not equilateral.
+A) Assume the converse: if a triangle is not equilateral, then it is scalene. Show that this assumption leads to a contradiction by providing an example of an isosceles triangle that is not scalene.
+B) Assume the contrapositive: if a triangle is not scalene, then it is equilateral. Prove that all triangles with at least two equal sides (isosceles or equilateral) are not scalene.
+C) Assume the converse: if a triangle is scalene, then it may or may not be equilateral. Provide examples of both types of triangles.
+D) Assume the statement is true and find a counterexample to disprove it.
+Correct Answer: B
+
+Solution:
+To prove by contrapositive, we assume the opposite of what we want to prove: if a triangle is not scalene (i.e., has at least two equal sides), then it is equilateral or isosceles. This assumption holds true because scalene triangles have no equal sides, so any triangle with two or more equal sides cannot be scalene. Therefore, the proof by contrapositive supports the original statement.
+
+Explanation:
+Proof by contrapositive helps us avoid proving the direct statement and instead proves its inverse, which in this case is straightforward to show since scalene triangles have distinct side lengths.
+
+Common mistake note:
+A common mistake would be to assume the converse (if not equilateral, then scalene) and try to find a counterexample, but this does not prove the original statement.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Prove the statement: If a person is an Olympic gold medalist, then they have won first place in their event.
+A) Assume the converse: if a person has not won first place in their event, then they are not an Olympic gold medalist. Provide an example of someone who did not win first but received a different medal to show the assumption is false.
+B) Assume the contrapositive: if a person has not won first place in their event, then they are not an Olympic gold medalist. Prove that all Olympic gold medals are awarded to athletes who win first place in their respective events.
+C) Assume the converse: if a person is an Olympic gold medalist, then they may or may not have won first place in their event. Provide examples of both situations (gold medalists and non-first-place finishers).
+D) Assume the statement is true and find a counterexample to disprove it.
+Correct Answer: B
+
+Solution:
+To prove by contrapositive, we assume the opposite of what we want to prove: if a person has not won first place in their event, then they are not an Olympic gold medalist. This assumption holds true because Olympic gold medals are awarded exclusively to athletes who win first place in their events. Therefore, the proof by contrapositive supports the original statement.
+
+Explanation:
+Proof by contrapositive helps us avoid proving the direct statement and instead proves its inverse, which is straightforward given the rules of awarding Olympic medals.
+
+Common mistake note:
+A common mistake would be to assume the converse (if not first place, then not gold medalist) and try to find a counterexample, but this does not prove the original statement.
+------------------------------------------------------------------------------

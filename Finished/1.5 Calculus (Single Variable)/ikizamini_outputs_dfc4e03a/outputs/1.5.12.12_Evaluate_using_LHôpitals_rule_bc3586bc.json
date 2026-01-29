@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.12.12",
+  "objective_text": "Evaluate using L'Hôpital's rule",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One-sided limit at infinity",
+      "stem": "Find the limit as x approaches infinity for the function f(x) = (3x^2 + 5x - 7)/(4x^2 + 9).",
+      "choices": {
+        "A": "-3/4",
+        "B": "3/4",
+        "C": "1",
+        "D": "Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "Using L'Hôpital's rule, we differentiate the numerator and denominator with respect to x. The derivative of 3x^2 + 5x - 7 is 6x + 5, and the derivative of 4x^2 + 9 is 8x. Now we have the limit as x approaches infinity for (6x + 5)/(8x). Dividing both terms by x gives us (6 + 5/x)/(8), which simplifies to 6/8 when x approaches infinity, or 3/4.",
+      "explanation": "L'Hôpital's rule is applied when the limit results in an indeterminate form like 0/0 or ∞/∞. In this case, both the numerator and denominator approach infinity as x increases, so L'Hôpital's rule can be used.",
+      "common_mistake_notes": "A common mistake would be to directly compare the highest powers of the numerator and denominator without applying L'Hôpital's rule. This would lead to the incorrect conclusion that the limit is 3/4 by comparing 3x^2 and 4x^2, which is not correct because we need to apply L'Hôpital's rule first."
+    },
+    {
+      "id": "Two-sided limit at a point",
+      "stem": "Evaluate the limit as x approaches 0 for the function g(x) = sin(5x)/x.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "5",
+        "D": "Does not exist"
+      },
+      "correct_choice": "C",
+      "solution": "Applying L'Hôpital's rule, we differentiate both the numerator and denominator with respect to x. The derivative of sin(5x) is 5cos(5x), and the derivative of x is 1. So the limit becomes (5cos(5x))/1. As x approaches 0, cos(5x) approaches 1, so the limit simplifies to 5.",
+      "explanation": "L'Hôpital's rule can be applied here because the limit results in the indeterminate form 0/0 when x approaches 0. After applying L'Hôpital's rule, we find that the limit is 5.",
+      "common_mistake_notes": "A common mistake would be to assume that sin(5x) behaves like 5x near 0 and conclude that the limit is 5 without using L'Hôpital's rule. This is incorrect because we need to apply L'Hôpital's rule to handle the indeterminate form."
+    },
+    {
+      "id": "Infinite discontinuity",
+      "stem": "Find the limit as x approaches 2 for the function h(x) = (x^3 - 8)/(x - 2).",
+      "choices": {
+        "A": "-12",
+        "B": "0",
+        "C": "4",
+        "D": "Does not exist"
+      },
+      "correct_choice": "D",
+      "solution": "The function has a removable discontinuity at x = 2, but we can still use L'Hôpital's rule to evaluate the limit. The numerator simplifies to (x - 2)(x^2 + 2x + 4), which becomes 0 when x approaches 2. The denominator is (x - 2), which also becomes 0. This gives us an indeterminate form of 0/0, so we can apply L'Hôpital's rule. Differentiating both numerator and denominator with respect to x, we get 3x^2 + 4x + 4 and 1, respectively. The limit then becomes (3(2)^2 + 4(2) + 4)/1 = 24/1 = 24. However, since the function is undefined at x = 2, the limit does not exist.",
+      "explanation": "L'Hôpital's rule can be applied here because of the indeterminate form 0/0 when x approaches 2. The limit does not exist due to the discontinuity in the function.",
+      "common_mistake_notes": "A common mistake would be to cancel out (x - 2) terms without considering that this would eliminate the singularity at x = 2, leading to an incorrect conclusion about the limit."
+    },
+    {
+      "id": "Zero over zero indeterminate form",
+      "stem": "Evaluate the limit as x approaches 1 for the function j(x) = (x^3 - 1)/(x - 1).",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "D",
+      "solution": "The limit results in an indeterminate form of 0/0 when x approaches 1. Applying L'Hôpital's rule, we differentiate both the numerator and denominator with respect to x. The derivative of x^3 - 1 is 3x^2, and the derivative of x - 1 is 1. So the limit becomes (3(1)^2)/1 = 3.",
+      "explanation": "L'Hôpital's rule can be applied here because of the indeterminate form 0/0 when x approaches 1. After applying L'Hôpital's rule, we find that the limit is 3.",
+      "common_mistake_notes": "A common mistake would be to factor out (x - 1) and cancel it without considering the indeterminate form, leading to an incorrect conclusion about the limit."
+    },
+    {
+      "id": "Infinite over infinite indeterminate form",
+      "stem": "Find the limit as x approaches infinity for the function k(x) = e^x/(2^x).",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "ln(2)",
+        "D": "∞"
+      },
+      "correct_choice": "C",
+      "solution": "The limit results in an indeterminate form of ∞/∞ when x approaches infinity. Applying L'Hôpital's rule, we differentiate both the numerator and denominator with respect to x. The derivative of e^x is e^x, and the derivative of 2^x is ln(2) \times 2^x. So the limit becomes (e^x)/(ln(2) \times 2^x). As x approaches infinity, both e^x and 2^x approach infinity, but the ratio converges to 1/ln(2), which simplifies to ln(2).",
+      "explanation": "L'Hôpital's rule can be applied here because of the indeterminate form ∞/∞ when x approaches infinity. After applying L'Hôpital's rule, we find that the limit is ln(2).",
+      "common_mistake_notes": "A common mistake would be to compare the base growth rates without using L'Hôpital's rule, leading to an incorrect conclusion about the limit."
+    },
+    {
+      "id": "Infinite over zero indeterminate form",
+      "stem": "Evaluate the limit as x approaches 0 for the function l(x) = x^2/e^(-1/x).",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "ln(2)",
+        "D": "∞"
+      },
+      "correct_choice": "D",
+      "solution": "The limit results in an indeterminate form of ∞/0 when x approaches 0. However, since the denominator approaches infinity faster than the numerator approaches zero, the limit is actually infinite. L'Hôpital's rule does not apply here because it can only be used for 0/0 or ∞/∞ forms.",
+      "explanation": "L'Hôpital's rule cannot be applied in this case because the indeterminate form is not 0/0 or ∞/∞. The limit is infinite due to the faster growth rate of the denominator compared to the numerator.",
+      "common_mistake_notes": "A common mistake would be to apply L'Hôpital's rule, which is not applicable in this case because the indeterminate form is not 0/0 or ∞/∞. This would lead to an incorrect conclusion about the limit."
+    },
+    {
+      "id": "Zero over infinite indeterminate form",
+      "stem": "Find the limit as x approaches infinity for the function m(x) = sin(x)/x.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "π/2",
+        "D": "∞"
+      },
+      "correct_choice": "A",
+      "solution": "The limit results in an indeterminate form of 0/∞ when x approaches infinity. However, since the numerator is bounded between -1 and 1 while the denominator grows without bound, the limit is 0. L'Hôpital's rule does not apply here because it can only be used for 0/0 or ∞/∞ forms.",
+      "explanation": "L'Hôpital's rule cannot be applied in this case because the indeterminate form is not 0/0 or ∞/∞. The limit is 0 due to the bounded nature of sin(x) and the unbounded growth of x.",
+      "common_mistake_notes": "A common mistake would be to apply L'Hôpital's rule, which is not applicable in this case because the indeterminate form is not 0/0 or ∞/∞. This would lead to an incorrect conclusion about the limit."
+    }
+  ]
+}

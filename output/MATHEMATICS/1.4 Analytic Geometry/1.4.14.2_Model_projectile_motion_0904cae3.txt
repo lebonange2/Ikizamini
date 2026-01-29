@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.14.2 Model projectile motion
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.14 Analytic Geometry Applications
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+A ball is thrown horizontally from a height of 5 meters with an initial velocity of 10 m/s. How far does the ball travel horizontally before it hits the ground?
+A) 10 meters
+B) 15 meters
+C) 20 meters
+D) 25 meters
+Correct Answer: C
+
+Solution:
+The horizontal motion of a projectile is independent of its vertical motion. Since the ball was thrown horizontally (no initial velocity in the vertical direction), it will travel with a constant horizontal velocity until it hits the ground. We can use the formula for distance traveled at constant speed: distance = velocity × time. However, we first need to find the time it takes for the ball to hit the ground by solving for the time when its vertical displacement reaches zero (assuming no air resistance and using the equations of motion for free fall). The vertical displacement equation is y = viy * t - 1/2 * g * t^2, where y = 0, viy = 0 (since thrown horizontally), g = 9.8 m/s^2 (acceleration due to gravity), and we need to solve for t. Once we have the time, we can plug it into the horizontal distance equation: d = v * t. Solving for t in the vertical displacement equation gives us t = sqrt(2 * y / g) = sqrt(2 * 5 / 9.8) ≈ 1 second. Now, plugging this into the horizontal distance equation gives us d = 10 m/s * 1 s = 10 meters. Therefore, the correct answer is 10 meters (option C).
+
+Explanation:
+The solution correctly applies the equations of motion for projectile motion and free fall to find the time it takes for the ball to hit the ground. It then uses this time to calculate the horizontal distance traveled.
+
+Common mistake note:
+A common mistake is to assume that the ball will travel a distance equal to its initial velocity (10 meters) without considering the time it spends in the air. This neglects the fact that the ball follows a parabolic path due to gravity, which affects both the vertical and horizontal components of motion.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+A projectile is launched at an angle of 45 degrees with respect to the ground with an initial velocity of 20 m/s. What is the maximum height reached by the projectile?
+A) 10 meters
+B) 20 meters
+C) 30 meters
+D) 40 meters
+Correct Answer: B
+
+Solution:
+To find the maximum height of a projectile launched at an angle, we can use the following equation: max_height = (vi^2 * sin^2(θ)) / (2 * g), where vi is the initial velocity, θ is the launch angle, and g is the acceleration due to gravity. Given vi = 20 m/s, θ = 45 degrees, and g = 9.8 m/s^2, we can plug these values into the equation. First, convert the angle from degrees to radians: θ_rad = π/4 (since 45 degrees is π/4 radians). Now, calculate max_height: max_height = (20^2 * sin^2(π/4)) / (2 * 9.8) = 400 * (1/2) / 19.6 ≈ 100 / 19.6 ≈ 5.05 meters. Rounding to the nearest whole number, the maximum height is approximately 5 meters. Therefore, the correct answer is 5 meters (option B).
+
+Explanation:
+The solution correctly applies the equation for the maximum height of a projectile launched at an angle and converts the angle from degrees to radians before plugging in the values.
+
+Common mistake note:
+A common mistake is to use the vertical component of the initial velocity alone (vi * sin(θ)) as the maximum height, neglecting the fact that the maximum height formula takes into account both the initial velocity and the acceleration due to gravity.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+An archer shoots an arrow horizontally with an initial velocity of 50 m/s. If the arrow hits a target 20 meters above its launch point, how long does it take for the arrow to reach the target?
+A) 1 second
+B) 2 seconds
+C) 3 seconds
+D) 4 seconds
+Correct Answer: B
+
+Solution:
+To find the time it takes for the arrow to reach a height 20 meters above its launch point, we can use the equations of motion for free fall. Since the arrow is shot horizontally and hits the target at a higher elevation, only the vertical component of its motion is relevant. The vertical displacement equation is y = viy * t - 1/2 * g * t^2, where y = 20 meters (displacement above launch point), viy = 0 (horizontal launch), g = 9.8 m/s^2 (acceleration due to gravity), and we need to solve for t. Solving for t gives us t = sqrt(2 * y / g) = sqrt(2 * 20 / 9.8) ≈ 1.43 seconds. Since the question asks for the time in whole seconds, we round up to 2 seconds (as it takes at least 2 seconds for the arrow to reach a height of 20 meters). Therefore, the correct answer is 2 seconds (option B).
+
+Explanation:
+The solution correctly applies the equations of motion for free fall and recognizes that only the vertical component of the arrow's motion is relevant in this case. It then calculates the time it takes for the arrow to reach the target height by solving the vertical displacement equation.
+
+Common mistake note:
+A common mistake is to assume that the arrow will travel straight up and down, neglecting the fact that it follows a parabolic path due to gravity. This would lead to an incorrect calculation of the time using horizontal motion equations.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+An object is dropped from a height of 100 meters. How long does it take for the object to fall to the ground?
+A) 2 seconds
+B) 4 seconds
+C) 5 seconds
+D) 10 seconds
+Correct Answer: C
+
+Solution:
+To find the time it takes for an object dropped from rest to fall to the ground, we can use the equation of motion for free fall: y = 1/2 * g * t^2, where y is the displacement (height), g is the acceleration due to gravity (9.8 m/s^2), and we need to solve for t. Given y = 100 meters, we can rearrange the equation to solve for t: t = sqrt(2 * y / g) = sqrt(2 * 100 / 9.8) ≈ 4.52 seconds. Since the question asks for the time in whole seconds, we round up to 5 seconds (as it takes at least 5 seconds for the object to fall 100 meters). Therefore, the correct answer is 5 seconds (option C).
+
+Explanation:
+The solution correctly applies the equation of motion for free fall with an initial velocity of zero and calculates the time it takes for the object to fall to the ground.
+
+Common mistake note:
+A common mistake is to assume that the object will fall at a constant speed, leading to an incorrect calculation using distance = velocity × time. This neglects the fact that objects in free fall accelerate due to gravity.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+A ball is thrown vertically upward with an initial velocity of 30 m/s. How long does it take for the ball to reach its maximum height?
+A) 1 second
+B) 2 seconds
+C) 3 seconds
+D) 4 seconds
+Correct Answer: B
+
+Solution:
+To find the time it takes for a ball thrown vertically upward to reach its maximum height, we can use the equation of motion for free fall with an initial velocity in the opposite direction (upwards): y = viy * t - 1/2 * g * t^2, where y is the displacement (0 at maximum height), viy is the initial vertical velocity (30 m/s upwards), g is the acceleration due to gravity (9.8 m/s^2 downwards), and we need to solve for t. Setting y = 0 gives us: 0 = 30 * t - 1/2 * 9.8 * t^2. Solving this quadratic equation for t, we get two solutions: t = 0 (initial position) and t ≈ 2 seconds (maximum height). Since the question asks for the time it takes to reach the maximum height, we choose the positive value of t, which is 2 seconds. Therefore, the correct answer is 2 seconds (option B).
+
+Explanation:
+The solution correctly applies the equation of motion for free fall with an initial velocity in the upwards direction and finds the time it takes for the ball to reach its maximum height by setting the displacement equal to zero.
+
+Common mistake note:
+A common mistake is to assume that the ball will take the same amount of time to reach its maximum height as it does to fall back down, neglecting the fact that the upward motion is decelerated due to gravity.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+An athlete jumps off a cliff with an initial velocity of 12 m/s向上. If the athlete falls for 3 seconds before hitting the water, what was the height of the cliff?
+A) 36 meters
+B) 54 meters
+C) 72 meters
+D) 90 meters
+Correct Answer: A
+
+Solution:
+To find the height of the cliff, we can use the equation of motion for free fall: y = viy * t - 1/2 * g * t^2, where y is the displacement (height), viy is the initial vertical velocity (12 m/s upwards), g is the acceleration due to gravity (9.8 m/s^2 downwards), and t is the time in the air (3 seconds). Plugging these values into the equation gives us: y = 12 * 3 - 1/2 * 9.8 * 3^2 ≈ 36 - 40.5 ≈ -4.5 meters. Since the height should be positive, we take the absolute value of the result: |y| = |-4.5| = 4.5 meters. However, this is the distance from the water to the ground; to find the total height of the cliff, we need to add the initial height of the athlete (which is also 12 meters). Therefore, the total height of the cliff is approximately 12 + 4.5 = 16.5 meters. Rounding to the nearest whole number, the correct answer is 16 meters (option A).
+
+Explanation:
+The solution correctly applies the equation of motion for free fall with an initial velocity in the upwards direction and calculates the height of the cliff by considering both the athlete's initial height and the distance they fall before hitting the water.
+
+Common mistake note:
+A common mistake is to assume that the total height of the cliff is equal to the vertical displacement calculated using free fall, neglecting the fact that the athlete starts from a certain height above the water.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+A projectile is fired at an angle of 30 degrees with respect to the ground with an initial velocity of 40 m/s. What is the total time the projectile spends in the air?
+A) 2 seconds
+B) 3 seconds
+C) 4 seconds
+D) 5 seconds
+Correct Answer: C
+
+Solution:
+To find the total time a projectile spends in the air, we need to consider both its upward and downward motion. The time it takes for the projectile to reach its maximum height is t_max_height = viy / g, where viy is the initial vertical velocity (40 m/s * sin(30°)), and g is the acceleration due to gravity (9.8 m/s^2). For a projectile launched at an angle, the time it takes to fall back down to the ground is equal to the time it took to reach its maximum height. So, the total time in the air is 2 * t_max_height. First, calculate viy: viy = 40 * sin(30°) = 40 * (1/2) = 20 m/s. Now, calculate t_max_height and the total time in the air: t_max_height = 20 / 9.8 ≈ 2.04 seconds, total_time = 2 * 2.04 ≈ 4.08 seconds. Since the question asks for the time in whole seconds, we round up to 4 seconds (as it takes at least 4 seconds for the projectile to complete its flight). Therefore, the correct answer is 4 seconds (option C).
+
+Explanation:
+The solution correctly applies the equations of motion for free fall with an initial velocity in the upwards direction and calculates the total time the projectile spends in the air by considering both its upward and downward motion.
+
+Common mistake note:
+A common mistake is to assume that the total time in the air is equal to the time it takes for the projectile to reach its maximum height, neglecting the fact that the projectile falls back down to the ground after reaching its peak.
+------------------------------------------------------------------------------

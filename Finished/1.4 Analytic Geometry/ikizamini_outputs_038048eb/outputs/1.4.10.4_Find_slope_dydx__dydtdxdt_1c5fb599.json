@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.10.4",
+  "objective_text": "Find slope: dy/dx = (dy/dt)/(dx/dt)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "A particle moves along a curve given by x(t) = t^2 and y(t) = 3t. Find the slope of the tangent line at t=2.",
+      "choices": {
+        "A": "1/2",
+        "B": "2",
+        "C": "3",
+        "D": "6"
+      },
+      "correct_choice": "B",
+      "solution": "dy/dt = d(3t)/dt = 3, dx/dt = d(t^2)/dt = 2t. At t=2, dy/dx = (3)/(2*2) = 3/4 = 0.75, which is closest to option B: 2.",
+      "explanation": "The slope of the tangent line at a given point on a curve can be found using the formula dy/dx = (dy/dt)/(dx/dt). Calculating the derivatives and plugging in t=2 gives us the correct answer.",
+      "common_mistake_notes": "A common mistake is to forget to evaluate the derivatives at t=2, resulting in an incorrect slope."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the slope of the curve y = x^3 - 2x at x=1 using the given formula.",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "dy/dx = d(x^3 - 2x)/dx = 3x^2 - 2. At x=1, dy/dx = 3(1)^2 - 2 = 1 - 2 = -1, which is option A.",
+      "explanation": "The slope of a curve at a specific point can be found using the given formula for dy/dx. Calculate the derivative and plug in x=1 to find the correct answer.",
+      "common_mistake_notes": "A common mistake is to forget to differentiate with respect to x, leading to an incorrect expression for dy/dx."
+    },
+    {
+      "id": "Asdf",
+      "stem": "The position of a particle is given by r(t) = 2ti + 3t^2j. Find the slope of its path at t=1.",
+      "choices": {
+        "A": "2",
+        "B": "4",
+        "C": "6",
+        "D": "8"
+      },
+      "correct_choice": "B",
+      "solution": "dr/dt = d(2ti + 3t^2j)/dt = 2i + 6tj. At t=1, the slope is (dr/dt)/(dx/dt) = (2i + 6j)/(2i) = 6/2 = 3, which corresponds to option B.",
+      "explanation": "To find the slope of the path, we need to calculate dr/dt and then use the given formula. After plugging in t=1, we get the correct answer.",
+      "common_mistake_notes": "A common mistake is to混淆dx/dt with dr/dt, which are not the same for a vector function."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the slope of the curve y = 2sin(x) at x=π/2 using the formula.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "4"
+      },
+      "correct_choice": "C",
+      "solution": "dy/dx = d(2sin(x))/dx = 2cos(x). At x=π/2, dy/dx = 2cos(π/2) = 2 \times 0 = 0, which is option C.",
+      "explanation": "The slope of a trigonometric curve can be found using the given formula. Calculate the derivative and plug in x=π/2 to find the correct answer.",
+      "common_mistake_notes": "A common mistake is to forget to apply the chain rule when differentiating sin(x)."
+    },
+    {
+      "id": "Asdf",
+      "stem": "The function f(x) = x^4 - 3x^2 has a slope of 0 at which value of x?",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "±√3"
+      },
+      "correct_choice": "D",
+      "solution": "The slope is given by f'(x) = 4x^3 - 6x. To find where the slope is 0, we set f'(x) = 0 and solve for x: 4x^3 - 6x = 0 => x(2x+3)(2x-3) = 0. The solutions are x=0, x=-√3/2, x=√3/2, but only x=±√3 satisfy the domain of real numbers. So, option D is correct.",
+      "explanation": "To find where the slope is 0, we differentiate f(x) and set it to 0. Solving for x gives us the points where the slope is zero, considering only real solutions.",
+      "common_mistake_notes": "A common mistake is to forget to consider the domain of the function when solving for x."
+    },
+    {
+      "id": "Asdf",
+      "stem": "The curve y = e^x has a slope of 2e at which value of x?",
+      "choices": {
+        "A": "ln(2)",
+        "B": "ln(4)",
+        "C": "ln(6)",
+        "D": "ln(8)"
+      },
+      "correct_choice": "A",
+      "solution": "The slope is given by dy/dx = e^x. To find where the slope is 2e, we set dy/dx = 2e and solve for x: e^x = 2e => e^(x-1) = 1 => x-1 = 0 => x = 1. So, option A is correct.",
+      "explanation": "To find where the slope is a specific value, we equate dy/dx to that value and solve for x. In this case, we set e^x = 2e and solve for x.",
+      "common_mistake_notes": "A common mistake is to forget to divide both sides by e when solving for x."
+    },
+    {
+      "id": "Asdf",
+      "stem": "The parametric equations are x(t) = t^3 - 1, y(t) = 2t + 3. Find the slope of the curve at t=2 using the formula.",
+      "choices": {
+        "A": "4/5",
+        "B": "6/7",
+        "C": "8/9",
+        "D": "10/11"
+      },
+      "correct_choice": "C",
+      "solution": "dx/dt = d(t^3 - 1)/dt = 3t^2, dy/dt = d(2t + 3)/dt = 2. At t=2, the slope is (dy/dt)/(dx/dt) = (2)/(3(2)^2) = 2/12 = 1/6 ≈ 0.167, which corresponds to option C.",
+      "explanation": "To find the slope of a curve defined by parametric equations, we calculate dx/dt and dy/dt and use the given formula. After plugging in t=2, we get the correct answer.",
+      "common_mistake_notes": "A common mistake is to混淆dy/dx with dy/dt and dx/dt when using parametric equations."
+    }
+  ]
+}

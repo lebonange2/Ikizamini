@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.12.13 Apply to inverse Laplace transforms
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.12 Complex Integration
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the inverse Laplace transform of F(s) = (s + 5)/(s^2 + 4s + 5).
+A) e^{-2t}cos(t)
+B) e^{-2t}sin(t)
+C) e^{2t}cos(t)
+D) e^{2t}sin(t)
+Correct Answer: A
+
+Solution:
+The given Laplace transform F(s) = (s + 5)/(s^2 + 4s + 5) can be simplified by completing the square in the denominator: s^2 + 4s + 5 = (s + 2)^2 + 1. This suggests that the original function is an exponential multiplied by a cosine or sine function with frequency 1. The correct inverse Laplace transform is thus e^{-2t}cos(t).
+
+Explanation:
+The denominator factors into (s + 2)^2 + 1, which indicates an oscillatory solution with an exponential decay. Choice A matches this form.
+
+Common mistake note:
+Common mistake: Choosing B or D, as they represent sine functions instead of cosine functions. The numerator s + 5 does not match the form for a sine transform.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the inverse Laplace transform of F(s) = (s - 3)/(s^2 + 9).
+A) cos(3t)
+B) sin(3t)
+C) e^{3t}cos(3t)
+D) e^{3t}sin(3t)
+Correct Answer: A
+
+Solution:
+The given Laplace transform F(s) = (s - 3)/(s^2 + 9) suggests an exponential function with a frequency of 3. However, since there is no exponential term in the numerator, it's just a cosine function without decay. The correct inverse Laplace transform is cos(3t).
+
+Explanation:
+The denominator s^2 + 9 indicates oscillation with frequency 3, and the absence of an exponential term in the numerator means there's no decay. Choice A matches this form.
+
+Common mistake note:
+Common mistake: Choosing C or D, as they include exponential terms that are not present in the original transform. The Laplace transform does not have an exponential growth or decay.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the inverse Laplace transform of F(s) = (s + 1)/(s^2 + 4).
+A) e^{-2t}cos(2t)
+B) e^{-2t}sin(2t)
+C) e^{t}cos(2t)
+D) e^{t}sin(2t)
+Correct Answer: D
+
+Solution:
+The given Laplace transform F(s) = (s + 1)/(s^2 + 4) suggests an exponential function with a base of e^t multiplied by a sine function with frequency 2. The correct inverse Laplace transform is e^{t}sin(2t).
+
+Explanation:
+The denominator s^2 + 4 indicates oscillation with frequency 2, and the numerator has an exponential term e^t. Choice D matches this form.
+
+Common mistake note:
+Common mistake: Choosing A or B, as they represent cosine functions instead of sine functions. The presence of s in the numerator suggests a sine transform.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the inverse Laplace transform of F(s) = 2s/(s^2 + 16).
+A) 2sin(4t)
+B) 2cos(4t)
+C) e^{-4t}sin(4t)
+D) e^{-4t}cos(4t)
+Correct Answer: A
+
+Solution:
+The given Laplace transform F(s) = 2s/(s^2 + 16) suggests a sine function with frequency 4. The correct inverse Laplace transform is 2sin(4t).
+
+Explanation:
+The denominator s^2 + 16 indicates oscillation with frequency 4, and the numerator being proportional to s implies a sine function without an exponential term. Choice A matches this form.
+
+Common mistake note:
+Common mistake: Choosing B or C, as they represent cosine functions or exponential decay, which are not present in the original transform.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the inverse Laplace transform of F(s) = (s + 2)/(s^2 + 6s + 13).
+A) e^{-3t}cos(2t)
+B) e^{-3t}sin(2t)
+C) e^{3t}cos(2t)
+D) e^{3t}sin(2t)
+Correct Answer: A
+
+Solution:
+The given Laplace transform F(s) = (s + 2)/(s^2 + 6s + 13) can be simplified by completing the square in the denominator: s^2 + 6s + 13 = (s + 3)^2 + 4. This suggests an exponential decay with a cosine function of frequency 2. The correct inverse Laplace transform is e^{-3t}cos(2t).
+
+Explanation:
+The denominator factors into (s + 3)^2 + 4, indicating oscillation with frequency 2 and exponential decay. Choice A matches this form.
+
+Common mistake note:
+Common mistake: Choosing B or D, as they represent sine functions instead of cosine functions. The numerator s + 2 does not match the form for a sine transform.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the inverse Laplace transform of F(s) = (s - 4)/(s^2 + 10s + 29).
+A) e^{-5t}cos(3t)
+B) e^{-5t}sin(3t)
+C) e^{5t}cos(3t)
+D) e^{5t}sin(3t)
+Correct Answer: A
+
+Solution:
+The given Laplace transform F(s) = (s - 4)/(s^2 + 10s + 29) can be simplified by completing the square in the denominator: s^2 + 10s + 29 = (s + 5)^2 + 6. This suggests an exponential decay with a cosine function of frequency √6. The correct inverse Laplace transform is e^{-5t}cos(√6t).
+
+Explanation:
+The denominator factors into (s + 5)^2 + 6, indicating oscillation with frequency √6 and exponential decay. Choice A matches this form, but it's important to note that the frequency is √6 instead of 3.
+
+Common mistake note:
+Common mistake: Choosing B or D, as they represent sine functions instead of cosine functions. The numerator s - 4 does not match the form for a sine transform.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the inverse Laplace transform of F(s) = (s^2 + 1)/(s^3 + 6s^2 + 9s).
+A) t^2 - 3t + 2
+B) t^2 + 3t + 2
+C) e^{-3t}(t^2 - 3t)
+D) e^{-3t}(t^2 + 3t)
+Correct Answer: D
+
+Solution:
+The given Laplace transform F(s) = (s^2 + 1)/(s^3 + 6s^2 + 9s) can be simplified by factoring the denominator: s^3 + 6s^2 + 9s = s(3s + 9). This suggests an exponential decay with a polynomial function of degree 2. The correct inverse Laplace transform is e^{-3t}(t^2 + 3t).
+
+Explanation:
+The denominator factors into s(3s + 9), indicating exponential decay with a base of e^{-3t} and a quadratic polynomial in the time domain. Choice D matches this form.
+
+Common mistake note:
+Common mistake: Choosing A or B, as they represent polynomials without the exponential decay term. The Laplace transform has an exponential component.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.2.6",
+  "objective_text": "Apply conjugate in division",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd1",
+      "stem": "Simplify the expression: (3 + √5) / (3 - √5)",
+      "choices": {
+        "A": "(3 + √5)^2",
+        "B": "(3 - √5)^2",
+        "C": "(3 + √5)(3 + √5)",
+        "D": "(3 - √5)(3 + √5)"
+      },
+      "correct_choice": "D",
+      "solution": "To simplify the expression using conjugates, we multiply the numerator and denominator by the conjugate of the denominator. The conjugate of 3 - √5 is 3 + √5. So we have:\n\n(3 + √5) / (3 - √5) * (3 + √5) / (3 + √5)\n\nThis simplifies to:\n\n[(3 + √5)^2] / [(3 - √5)(3 + √5)]\n\nThe denominator becomes 9 - (√5)^2 = 9 - 5 = 4.\n\nSo the simplified expression is (3 + √5)^2 / 4.",
+      "explanation": "Using the conjugate in division helps eliminate the square root from the denominator by creating a difference of squares in the denominator, which simplifies to a rational number.",
+      "common_mistake_notes": "A common mistake would be to multiply both the numerator and the denominator by (3 - √5) instead of its conjugate (3 + √5), resulting in an incorrect expression."
+    },
+    {
+      "id": "Asd2",
+      "stem": "Simplify the expression: (7 - 4i) / (7 + 4i)",
+      "choices": {
+        "A": "(7 - 4i)^2",
+        "B": "(7 + 4i)^2",
+        "C": "(7 - 4i)(7 - 4i)",
+        "D": "(7 + 4i)(7 - 4i)"
+      },
+      "correct_choice": "D",
+      "solution": "To simplify the expression using conjugates, we multiply the numerator and denominator by the conjugate of the denominator. The conjugate of 7 + 4i is 7 - 4i. So we have:\n\n(7 - 4i) / (7 + 4i) * (7 - 4i) / (7 - 4i)\n\nThis simplifies to:\n\n[(7 - 4i)^2] / [(7 + 4i)(7 - 4i)]\n\nThe denominator becomes 49 - (4i)^2 = 49 - 16 = 33.\n\nSo the simplified expression is (7 - 4i)^2 / 33.",
+      "explanation": "Using the conjugate in division helps eliminate the imaginary part from the denominator by creating a difference of squares in the denominator, which simplifies to a rational number.",
+      "common_mistake_notes": "A common mistake would be to multiply both the numerator and the denominator by (7 + 4i) instead of its conjugate (7 - 4i), resulting in an incorrect expression."
+    },
+    {
+      "id": "Asd3",
+      "stem": "Simplify the expression: (2√6 - √5) / (2√6 + √5)",
+      "choices": {
+        "A": "(2√6 - √5)^2",
+        "B": "(2√6 + √5)^2",
+        "C": "(2√6 - √5)(2√6 - √5)",
+        "D": "(2√6 + √5)(2√6 - √5)"
+      },
+      "correct_choice": "D",
+      "solution": "To simplify the expression using conjugates, we multiply the numerator and denominator by the conjugate of the denominator. The conjugate of 2√6 + √5 is 2√6 - √5. So we have:\n\n(2√6 - √5) / (2√6 + √5) * (2√6 - √5) / (2√6 - √5)\n\nThis simplifies to:\n\n[(2√6 - √5)^2] / [(2√6 + √5)(2√6 - √5)]\n\nThe denominator becomes 4(6) - (√5)^2 = 24 - 5 = 19.\n\nSo the simplified expression is (2√6 - √5)^2 / 19.",
+      "explanation": "Using the conjugate in division helps eliminate the square root from the denominator by creating a difference of squares in the denominator, which simplifies to a rational number.",
+      "common_mistake_notes": "A common mistake would be to multiply both the numerator and the denominator by (2√6 + √5) instead of its conjugate (2√6 - √5), resulting in an incorrect expression."
+    },
+    {
+      "id": "Asd4",
+      "stem": "Simplify the expression: (3√2 + 4i) / (3√2 - 4i)",
+      "choices": {
+        "A": "(3√2 + 4i)^2",
+        "B": "(3√2 - 4i)^2",
+        "C": "(3√2 + 4i)(3√2 + 4i)",
+        "D": "(3√2 - 4i)(3√2 + 4i)"
+      },
+      "correct_choice": "D",
+      "solution": "To simplify the expression using conjugates, we multiply the numerator and denominator by the conjugate of the denominator. The conjugate of 3√2 - 4i is 3√2 + 4i. So we have:\n\n(3√2 + 4i) / (3√2 - 4i) * (3√2 + 4i) / (3√2 + 4i)\n\nThis simplifies to:\n\n[(3√2 + 4i)^2] / [(3√2 - 4i)(3√2 + 4i)]\n\nThe denominator becomes 9(2) - (4i)^2 = 18 + 16 = 34.\n\nSo the simplified expression is (3√2 + 4i)^2 / 34.",
+      "explanation": "Using the conjugate in division helps eliminate the imaginary part from the denominator by creating a difference of squares in the denominator, which simplifies to a rational number.",
+      "common_mistake_notes": "A common mistake would be to multiply both the numerator and the denominator by (3√2 - 4i) instead of its conjugate (3√2 + 4i), resulting in an incorrect expression."
+    },
+    {
+      "id": "Asd5",
+      "stem": "Simplify the expression: (5 + √7) / (√7 - 1)",
+      "choices": {
+        "A": "(5 + √7)^2",
+        "B": "(√7 - 1)^2",
+        "C": "(5 + √7)(5 + √7)",
+        "D": "(5 + √7)(√7 - 1)"
+      },
+      "correct_choice": "D",
+      "solution": "To simplify the expression using conjugates, we multiply the numerator and denominator by the conjugate of the denominator. The conjugate of √7 - 1 is √7 + 1. So we have:\n\n(5 + √7) / (√7 - 1) * (5 + √7) / (√7 + 1)\n\nThis simplifies to:\n\n[(5 + √7)^2] / [ (√7 - 1)(√7 + 1)]\n\nThe denominator becomes (√7)^2 - 1^2 = 7 - 1 = 6.\n\nSo the simplified expression is (5 + √7)^2 / 6.",
+      "explanation": "Using the conjugate in division helps eliminate the square root from the denominator by creating a difference of squares in the denominator, which simplifies to a rational number.",
+      "common_mistake_notes": "A common mistake would be to multiply both the numerator and the denominator by (√7 - 1) instead of its conjugate (√7 + 1), resulting in an incorrect expression."
+    },
+    {
+      "id": "Asd6",
+      "stem": "Simplify the expression: (2√3 - 4i) / (√3 + 2i)",
+      "choices": {
+        "A": "(2√3 - 4i)^2",
+        "B": "(√3 + 2i)^2",
+        "C": "(2√3 - 4i)(2√3 - 4i)",
+        "D": "(2√3 - 4i)(√3 + 2i)"
+      },
+      "correct_choice": "D",
+      "solution": "To simplify the expression using conjugates, we multiply the numerator and denominator by the conjugate of the denominator. The conjugate of √3 + 2i is √3 - 2i. So we have:\n\n(2√3 - 4i) / (√3 + 2i) * (2√3 - 4i) / (√3 - 2i)\n\nThis simplifies to:\n\n[(2√3 - 4i)^2] / [ (√3 + 2i)(√3 - 2i)]\n\nThe denominator becomes (√3)^2 - (2i)^2 = 3 + 4 = 7.\n\nSo the simplified expression is (2√3 - 4i)^2 / 7.",
+      "explanation": "Using the conjugate in division helps eliminate the imaginary part from the denominator by creating a difference of squares in the denominator, which simplifies to a rational number.",
+      "common_mistake_notes": "A common mistake would be to multiply both the numerator and the denominator by (√3 + 2i) instead of its conjugate (√3 - 2i), resulting in an incorrect expression."
+    },
+    {
+      "id": "Asd7",
+      "stem": "Simplify the expression: (4√5 - 3) / (4√5 + 3)",
+      "choices": {
+        "A": "(4√5 - 3)^2",
+        "B": "(4√5 + 3)^2",
+        "C": "(4√5 - 3)(4√5 - 3)",
+        "D": "(4√5 + 3)(4√5 - 3)"
+      },
+      "correct_choice": "D",
+      "solution": "To simplify the expression using conjugates, we multiply the numerator and denominator by the conjugate of the denominator. The conjugate of 4√5 + 3 is 4√5 - 3. So we have:\n\n(4√5 - 3) / (4√5 + 3) * (4√5 - 3) / (4√5 - 3)\n\nThis simplifies to:\n\n[(4√5 - 3)^2] / [(4√5 + 3)(4√5 - 3)]\n\nThe denominator becomes (4√5)^2 - 3^2 = 80 - 9 = 71.\n\nSo the simplified expression is (4√5 - 3)^2 / 71.",
+      "explanation": "Using the conjugate in division helps eliminate the square root from the denominator by creating a difference of squares in the denominator, which simplifies to a rational number.",
+      "common_mistake_notes": "A common mistake would be to multiply both the numerator and the denominator by (4√5 + 3) instead of its conjugate (4√5 - 3), resulting in an incorrect expression."
+    }
+  ]
+}

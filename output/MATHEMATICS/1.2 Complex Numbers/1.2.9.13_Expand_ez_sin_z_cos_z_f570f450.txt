@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.9.13 Expand e^z, sin z, cos z
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.9 Complex Sequences and Series
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the power series expansion for f(z) = e^(-z). What is the coefficient of z^3 in the expansion?
+A) -1/6
+B) 1/6
+C) -1/24
+D) 1/24
+Correct Answer: C
+
+Solution:
+The Taylor series expansion for e^z is given by e^z = 1 + z + z^2/2! + z^3/3! + ... . To find the coefficient of z^3 in the expansion of e^(-z), substitute -z for z: e^(-z) = 1 - z + z^2/2! - z^3/3! + .... The coefficient of z^3 is thus -1/3! = -1/6. However, since we're finding the coefficient for f(z) = e^(-z), take the negative: -(-1/6) = 1/6.
+
+Explanation:
+The correct answer is B. A common mistake is not accounting for the negative sign when calculating the coefficient of e^(-z).
+
+Common mistake note:
+Not accounting for the negative sign in e^(-z)
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the Maclaurin series expansion for sin(z) up to z^4. What is the coefficient of z^2 in the expansion?
+A) 0
+B) 1/6
+C) 1/2
+D) 1/3
+Correct Answer: A
+
+Solution:
+The Maclaurin series for sin(z) is given by sin(z) = z - z^3/3! + z^5/5! - .... The coefficient of z^2 in this expansion is 0. This is because the sine function has a zero at z=0, so all even-powered terms are zero.
+
+Explanation:
+The correct answer is A. A common mistake is assuming a non-zero coefficient for an even-powered term in sin(z)'s Maclaurin series.
+
+Common mistake note:
+Assuming a non-zero coefficient for an even-ordered term in the Maclaurin series of sin(z)
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the MacLaurin series expansion for cos(z) up to z^5. What is the coefficient of z^4 in the expansion?
+A) 0
+B) 1/24
+C) 1/8
+D) 1/120
+Correct Answer: C
+
+Solution:
+The MacLaurin series for cos(z) is given by cos(z) = 1 - z^2/2! + z^4/4! - z^6/6! + .... The coefficient of z^4 is 1/4!. So, the correct value is 1/(4 × 3 × 2 × 1) = 1/24.
+
+Explanation:
+The correct answer is B. A common mistake is forgetting to divide by the factorial when calculating coefficients.
+
+Common mistake note:
+Forgetting to divide by the factorial in the denominator
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Expand f(z) = e^(2z) using a Taylor series centered at z=1. What is the coefficient of (z-1)^3 in the expansion?
+A) 8/6
+B) 8/3
+C) 16/3
+D) 16
+Correct Answer: C
+
+Solution:
+The Taylor series for e^z centered at z=1 is e^(z-1) = 1 + (z-1) + (z-1)^2/2! + (z-1)^3/3! + .... To find the coefficient of (z-1)^3 in f(z) = e^(2z), multiply each term by 2^3: e^(2(z-1)) = 8 + 8(z-1) + 8(z-1)^2/2! + 8(z-1)^3/3! + .... The coefficient of (z-1)^3 is thus 8/3.
+
+Explanation:
+The correct answer is C. A common mistake is forgetting to multiply the coefficients by 2^3 when expanding e^(2z).
+
+Common mistake note:
+Forgetting to adjust the coefficients for f(z) = e^(2z)
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the Maclaurin series expansion for cos(2z) up to z^3. What is the coefficient of z^3 in the expansion?
+A) 0
+B) -4/3
+C) -8/3
+D) -16/3
+Correct Answer: B
+
+Solution:
+The Maclaurin series for cos(z) is given by cos(z) = 1 - z^2/2! + z^4/4! - .... To find the coefficient of z^3 in cos(2z), differentiate twice and evaluate at z=0: cos'(z) = -sin(z) and cos''(z) = -cos(z). Thus, cos''(2z)|_{z=0} = -cos(2 × 0) = -1. The coefficient of z^3 in cos(2z) is (-1)(-2)^2/3! = -4/3.
+
+Explanation:
+The correct answer is B. A common mistake is forgetting to multiply the power of 2 with the factorial term when differentiating.
+
+Common mistake note:
+Forgetting to multiply the power of 2 with the factorial term
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the Taylor series expansion for sin(z^2) centered at z=0 up to z^4. What is the coefficient of z^4 in the expansion?
+A) 1/3!
+B) 1/4!
+C) 1/5!
+D) 1/6!
+Correct Answer: B
+
+Solution:
+The Taylor series for sin(z) centered at z=0 is given by sin(z) = z - z^3/3! + z^5/5! - .... To find the coefficient of z^4 in sin(z^2), differentiate twice and evaluate at z=0: sin'(z^2) = 2z cos(z^2) and sin''(z^2) = 2cos(z^2) - 4z^2sin(z^2). Thus, sin''(0) = 2cos(0) - 4 × 0^2sin(0) = 2. The coefficient of z^4 in sin(z^2) is (2)(-1)^2/4! = 1/4!.
+
+Explanation:
+The correct answer is B. A common mistake is forgetting to multiply the power of z with the factorial term when differentiating.
+
+Common mistake note:
+Forgetting to multiply the power of z with the factorial term
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the Maclaurin series expansion for e^(z^2) up to z^5. What is the coefficient of z^4 in the expansion?
+A) 1/2!
+B) 1/3!
+C) 1/4!
+D) 1/5!
+Correct Answer: C
+
+Solution:
+The Maclaurin series for e^z centered at z=0 is given by e^z = 1 + z + z^2/2! + z^3/3! + .... To find the coefficient of z^4 in e^(z^2), differentiate twice and evaluate at z=0: e'(z^2) = 2ze^(z^2) and e''(z^2) = 2e^(z^2) + 4z^2e^(z^2). Thus, e''(0) = 2e^(0) = 2. The coefficient of z^4 in e^(z^2) is (2)/4! = 1/4!.
+
+Explanation:
+The correct answer is C. A common mistake is forgetting to multiply the power of z with the factorial term when differentiating.
+
+Common mistake note:
+Forgetting to multiply the power of z with the factorial term
+------------------------------------------------------------------------------

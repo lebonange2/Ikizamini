@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.9.6",
+  "objective_text": "Integrate x^n·e^x",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Increase difficulty by using a higher power for n.",
+      "stem": "Evaluate the integral ∫x<sup>4</sup>e<sup>x</sup>dx",
+      "choices": {
+        "A": "x<sup>5</sup>e<sup>x</sup>/5  + C",
+        "B": "x<sup>6</sup>e<sup>x</sup>/6  + C",
+        "C": "x<sup>4</sup>e<sup>x</sup>/4  + C",
+        "D": "x<sup>3</sup>e<sup>x</sup>/3  + C"
+      },
+      "correct_choice": "A",
+      "solution": "The integral of x<sup>n</sup>e<sup>x</sup> is (x<sup>n+1</sup>e<sup>x</sup>)/(n+1)  + C. For n = 4, the solution is (x<sup>5</sup>e<sup>x</sup>)/5  + C.",
+      "explanation": "To integrate x<sup>4</sup>e<sup>x</sup>, use the power rule and multiply by the exponent plus one, then divide by the new exponent.",
+      "common_mistake_notes": "A common mistake is to forget to add 1 to n when applying the power rule."
+    },
+    {
+      "id": "Increase difficulty by using a negative exponent for n.",
+      "stem": "Evaluate the integral ∫x<sup>-2</sup>e<sup>x</sup>dx",
+      "choices": {
+        "A": "-x<sup>-1</sup>e<sup>x</sup>/3  + C",
+        "B": "x<sup>-3</sup>e<sup>x</sup>/(-3)  + C",
+        "C": "x<sup>-2</sup>e<sup>x</sup>/(-2)  + C",
+        "D": "-x<sup>-1</sup>e<sup>x</sup>/2  + C"
+      },
+      "correct_choice": "B",
+      "solution": "The integral of x<sup>n</sup>e<sup>x</sup> is (x<sup>n+1</sup>e<sup>x</sup>)/(n+1)  + C. For n = -2, the solution is (-x<sup>-3</sup>e<sup>x</sup>)/(-3)  + C.",
+      "explanation": "When integrating a negative exponent, remember to change the sign of the exponent before applying the power rule.",
+      "common_mistake_notes": "A common mistake is to forget to change the sign of the exponent when it's negative."
+    },
+    {
+      "id": "Increase difficulty by using a variable exponent for n.",
+      "stem": "Evaluate the integral ∫x<sup>a</sup>e<sup>x</sup>dx, where a is a constant",
+      "choices": {
+        "A": "(x<sup>a+1</sup>e<sup>x</sup>)/(a+1)  + C",
+        "B": "x<sup>a</sup>e<sup>x</sup>/a  + C",
+        "C": "x<sup>a+1</sup>e<sup>x</sup>/2a  + C",
+        "D": "(x<sup>a</sup>e<sup>x</sup>)/(a-1)  + C"
+      },
+      "correct_choice": "A",
+      "solution": "The integral of x<sup>n</sup>e<sup>x</sup> is (x<sup>n+1</sup>e<sup>x</sup>)/(n+1)  + C. For any constant a, the solution is (x<sup>a+1</sup>e<sup>x</sup>)/(a+1)  + C.",
+      "explanation": "The power rule applies regardless of whether n is a number or a variable.",
+      "common_mistake_notes": "A common mistake is to treat 'a' as if it were 1, forgetting that it's a constant."
+    },
+    {
+      "id": "Increase difficulty by using integration by parts.",
+      "stem": "Evaluate the integral ∫x<sup>2</sup>e<sup>x</sup>dx",
+      "choices": {
+        "A": "x<sup>3</sup>e<sup>x</sup>/3  + C",
+        "B": "x<sup>2</sup>e<sup>x</sup>/2  + C",
+        "C": "e<sup>x</sup>(x<sup>2</sup> - 2x + 2)/6  + C",
+        "D": "e<sup>x</sup>(x<sup>2</sup> - x + 1)/3  + C"
+      },
+      "correct_choice": "D",
+      "solution": "Use integration by parts: u = x<sup>2</sup>, dv = e<sup>x</sup>dx, du = 2xdx, v = e<sup>x</sup>. The integral becomes (x<sup>2</sup>e<sup>x</sup>) - ∫(2xe<sup>x</sup>)dx. Repeat integration by parts for the remaining integral: u = x, dv = e<sup>x</sup>dx, du = dx, v = e<sup>x</sup>. The final solution is e<sup>x</sup>(x<sup>2</sup> - x + 1)/3  + C.",
+      "explanation": "When the power of x is greater than 1, integration by parts may be required.",
+      "common_mistake_notes": "A common mistake is to forget to perform a second round of integration by parts for the remaining integral."
+    },
+    {
+      "id": "Increase difficulty by using substitution.",
+      "stem": "Evaluate the integral ∫(2x+1)e<sup>2x+1</sup>dx",
+      "choices": {
+        "A": "e<sup>2x+1</sup>/4  + C",
+        "B": "e<sup>2x+1</sup>/2  + C",
+        "C": "(1/2)e<sup>2x+1</sup>  + C",
+        "D": "(1/4)e<sup>2x+1</sup>  + C"
+      },
+      "correct_choice": "C",
+      "solution": "Let u = 2x + 1, du = 2dx. The integral becomes (1/2)∫e<sup>u</sup>du = (1/2)e<sup>u</sup>/1 = (1/2)e<sup>2x+1</sup>  + C.",
+      "explanation": "Substitute the entire function inside the integral to simplify it before integrating.",
+      "common_mistake_notes": "A common mistake is to forget to adjust the differential when making a substitution."
+    },
+    {
+      "id": "Increase difficulty by using a trigonometric substitution.",
+      "stem": "Evaluate the integral ∫x<sup>2</sup>e<sup>√(1-x^2)</sup>dx",
+      "choices": {
+        "A": "(1/3)e<sup>√(1-x^2)</sup>(1  - x<sup>2</sup>)^(3/2)  + C",
+        "B": "e<sup>√(1-x^2)</sup>/3  + C",
+        "C": "(1/2)e<sup>√(1-x^2)</sup>(1  - x<sup>2</sup>)  + C",
+        "D": "(1/6)e<sup>√(1-x^2)</sup>(1  - x<sup>2</sup>)^(3/2)  + C"
+      },
+      "correct_choice": "D",
+      "solution": "Let x = sinθ, dx = cosθdθ. The integral becomes (cosθ)^2∫e<sup>cosθ</sup>cosθdθ. Use substitution: u = cosθ, du = -sinθdθ. The integral becomes -(1/3)e<sup>u</sup>(1  - u^2)^(3/2). Back-substitute to get the final solution: (1/6)e<sup>√(1-x^2)</sup>(1  - x<sup>2</sup>)^(3/2)  + C.",
+      "explanation": "When there's a square root involving 1  - x<sup>2</sup>, use a trigonometric substitution.",
+      "common_mistake_notes": "A common mistake is to forget to change the limits of integration when using a trigonometric substitution."
+    },
+    {
+      "id": "Increase difficulty by using partial fraction decomposition.",
+      "stem": "Evaluate the integral ∫(x<sup>2</sup>/[(x+1)(x-2)])e<sup>x</sup>dx",
+      "choices": {
+        "A": "(1/3)e<sup>x</sup>(x  - 2)  + (2/3)e<sup>x</sup>(x  + 1)  + C",
+        "B": "(1/3)e<sup>x</sup>(x  - 2)  - (2/3)e<sup>x</sup>(x  + 1)  + C",
+        "C": "e<sup>x</sup>(x  - 2)/3  - e<sup>x</sup>(x  + 1)/2  + C",
+        "D": "(1/6)e<sup>x</sup>(x  - 2)  - (1/3)e<sup>x</sup>(x  + 1)  + C"
+      },
+      "correct_choice": "B",
+      "solution": "Decompose the fraction: x<sup>2</sup>/[(x+1)(x-2)] = A/(x+1) + B/(x-2). Solve for A and B, then integrate each term separately. The final solution is (1/3)e<sup>x</sup>(x  - 2) - (2/3)e<sup>x</sup>(x  + 1)  + C.",
+      "explanation": "When the denominator has multiple factors, use partial fraction decomposition before integrating.",
+      "common_mistake_notes": "A common mistake is to forget to multiply each term by e<sup>x</sup> after decomposing the fraction."
+    }
+  ]
+}

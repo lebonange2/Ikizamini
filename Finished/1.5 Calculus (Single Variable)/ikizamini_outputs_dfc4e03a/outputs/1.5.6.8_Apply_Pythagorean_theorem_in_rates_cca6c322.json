@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.6.8",
+  "objective_text": "Apply Pythagorean theorem in rates",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "x1",
+      "stem": "A boat travels at a speed of 20 km/h in still water and against the current, it takes 3 hours to travel 60 km. What is the speed of the current?",
+      "choices": {
+        "A": "5 km/ h",
+        "B": "7 km/ h",
+        "C": "10 km/ h",
+        "D": "15 km/ h"
+      },
+      "correct_choice": "C",
+      "solution": "Let's denote the speed of the current as `v` km/h. When traveling against the current, the boat's effective speed is `(20 - v)` km/h. According to the Pythagorean theorem applied to rates, we can set up the equation:\n\n`(20 - v) * 3 = √(60^2 + (v * 3)^2)\n\nSolving for `v`, we find that `v = 10` km/h.",
+      "explanation": "The boat's speed against the current is its speed in still water minus the speed of the current. The distance traveled in 3 hours against the current gives us a right triangle with sides representing the boat's speed and the speed of the current, and the hypotenuse representing the total distance. We use the Pythagorean theorem to relate these speeds.",
+      "common_mistake_notes": "A common mistake is to assume that the speed of the boat in still water is the sum of its speed against the current and the speed of the current, which is not correct when applying the Pythagorean theorem."
+    },
+    {
+      "id": "x2",
+      "stem": "An athlete runs at a constant speed along a straight track. In the first 10 seconds, she covers 50 meters. Then, in the next 10 seconds, she covers an additional 70 meters. What is her average speed over the entire 20-second period?",
+      "choices": {
+        "A": "8 m/s",
+        "B": "9 m/s",
+        "C": "10 m/s",
+        "D": "11 m/s"
+      },
+      "correct_choice": "C",
+      "solution": "The total distance covered in 20 seconds is `50 + 70 = 120` meters. The average speed is the total distance divided by the total time:\n\n`Average Speed = Total Distance / Total Time`\n\n`Average Speed = 120 m / 20 s`\n\n`Average Speed = 6 m/s`.\n\nHowever, since we are asked for the average speed in meters per second (m/s), and not kilometers per hour (km/h), we keep it as `6 m/s`, which is equivalent to `10 km/ h`.",
+      "explanation": "The average speed is calculated by dividing the total distance covered by the total time taken. In this case, the athlete covers a total of 120 meters in 20 seconds.",
+      "common_mistake_notes": "A common mistake is to calculate the average speed by averaging the speeds for each 10-second interval, which would give `6 m/s` and `7 m/s`, and then taking their average. This approach does not account for the fact that the athlete covers different distances in each interval."
+    },
+    {
+      "id": "x3",
+      "stem": "A ladder leans against a wall at an angle of 60° to the ground. The foot of the ladder is 2 meters from the wall. How long is the ladder?",
+      "choices": {
+        "A": "4 meters",
+        "B": "4√3 meters",
+        "C": "8 meters",
+        "D": "8√3 meters"
+      },
+      "correct_choice": "B",
+      "solution": "We can use the sine function of trigonometry to solve this problem. The sine of an angle in a right triangle is equal to the opposite side divided by the hypotenuse. In this case, we have:\n\n`sin(60°) = Opposite Side / Hypotenuse`\n\n`sin(60°) = 2 meters / Ladder Length`\n\nThe sine of 60° is equal to √3/2, so:\n\n`(√3/2) = 2 meters / Ladder Length`\n\nSolving for the ladder length, we get `Ladder Length = 4√3` meters.",
+      "explanation": "We are given a right triangle with an angle of 60° and one side (the foot of the ladder) measuring 2 meters. We use the sine function to relate this side to the hypotenuse (the length of the ladder).",
+      "common_mistake_notes": "A common mistake is to use the cosine function instead of the sine, which would lead to an incorrect calculation. The cosine function relates the adjacent side to the hypotenuse, not the opposite side."
+    },
+    {
+      "id": "x4",
+      "stem": "An airplane travels at a speed of 500 km/h in a straight line towards its destination, which is 1200 kilometers away. However, there is a wind blowing at a constant speed of 100 km/ h in the opposite direction. How long will it take for the airplane to reach its destination?",
+      "choices": {
+        "A": "2 hours",
+        "B": "2.5 hours",
+        "C": "3 hours",
+        "D": "4 hours"
+      },
+      "correct_choice": "C",
+      "solution": "The effective speed of the airplane against the wind is its speed in still air minus the speed of the wind:\n\n`Effective Speed = 500 km/h - 100 km/h = 400 km/h`\n\nTo find the time it takes to travel 1200 kilometers at this effective speed, we divide the distance by the speed:\n\n`Time = Distance / Effective Speed`\n\n`Time = 1200 km / 400 km/ h`\n\n`Time = 3 hours`.",
+      "explanation": "The airplane's effective speed is reduced by the wind blowing in the opposite direction. We calculate this new speed and then use it to find the time required to travel the given distance.",
+      "common_mistake_notes": "A common mistake is to add the speeds of the airplane and the wind, which would give an incorrect result because the wind is acting against the airplane's motion."
+    },
+    {
+      "id": "x5",
+      "stem": "A car travels at a constant speed along a straight road. In the first 30 minutes, it covers 60 kilometers. Then, in the next 30 minutes, it increases its speed and covers an additional 90 kilometers. What is the average speed of the car over the entire hour?",
+      "choices": {
+        "A": "40 km/ h",
+        "B": "50 km/ h",
+        "C": "60 km/ h",
+        "D": "70 km/ h"
+      },
+      "correct_choice": "B",
+      "solution": "The total distance covered in 1 hour is `60 + 90 = 150` kilometers. The average speed is the total distance divided by the total time:\n\n`Average Speed = Total Distance / Total Time`\n\n`Average Speed = 150 km / 1 h`\n\n`Average Speed = 150 km/ h`.",
+      "explanation": "The average speed is calculated by dividing the total distance covered by the total time taken. In this case, the car covers a total of 150 kilometers in 1 hour.",
+      "common_mistake_notes": "A common mistake is to calculate the average speed by averaging the speeds for each 30-minute interval, which would give `60 km/ h` and `90 km/ h`, and then taking their average. This approach does not account for the fact that the car increases its speed in the second half of the hour."
+    },
+    {
+      "id": "x6",
+      "stem": "A train travels at a constant speed along a straight track. In the first 45 minutes, it covers 90 kilometers. Then, in the next 45 minutes, it slows down and covers an additional 72 kilometers. What is the average speed of the train over the entire hour and a half?",
+      "choices": {
+        "A": "48 km/ h",
+        "B": "50 km/ h",
+        "C": "56 km/ h",
+        "D": "60 km/ h"
+      },
+      "correct_choice": "C",
+      "solution": "The total distance covered in 1.5 hours is `90 + 72 = 162` kilometers. The average speed is the total distance divided by the total time:\n\n`Average Speed = Total Distance / Total Time`\n\n`Average Speed = 162 km / 1.5 h`\n\n`Average Speed = 108 km/ h`.",
+      "explanation": "The average speed is calculated by dividing the total distance covered by the total time taken. In this case, the train covers a total of 162 kilometers in 1.5 hours.",
+      "common_mistake_notes": "A common mistake is to calculate the average speed by averaging the speeds for each 45-minute interval, which would give `20 km/ min` and `16 km/ min`, and then converting them to hours. This approach does not account for the fact that the train slows down in the second half of the journey."
+    },
+    {
+      "id": "x7",
+      "stem": "A boat travels at a speed of 30 km/h in still water and with the current, it takes 2 hours to travel 60 kilometers. What is the speed of the current?",
+      "choices": {
+        "A": "5 km/ h",
+        "B": "10 km/ h",
+        "C": "15 km/ h",
+        "D": "20 km/ h"
+      },
+      "correct_choice": "B",
+      "solution": "Let's denote the speed of the current as `v` km/h. When traveling with the current, the boat's effective speed is `(30 + v)` km/h. According to the Pythagorean theorem applied to rates, we can set up the equation:\n\n`(30 + v) * 2 = √(60^2 + (v * 2)^2)\n\nSolving for `v`, we find that `v = 10` km/h.",
+      "explanation": "The boat's speed with the current is its speed in still water plus the speed of the current. The distance traveled in 2 hours with the current gives us a right triangle with sides representing the boat's speed and the speed of the current, and the hypotenuse representing the total distance. We use the Pythagorean theorem to relate these speeds.",
+      "common_mistake_notes": "A common mistake is to assume that the speed of the boat in still water is the difference between its speed with the current and the speed of the current, which is not correct when applying the Pythagorean theorem."
+    }
+  ]
+}

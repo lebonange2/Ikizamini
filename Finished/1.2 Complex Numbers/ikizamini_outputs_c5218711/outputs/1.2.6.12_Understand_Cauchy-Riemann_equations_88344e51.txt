@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.6.12 Understand Cauchy-Riemann equations
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.6 Complex Functions
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (AsdFgHjKlMnO):
+What are the Cauchy-Riemann equations for a complex function f(z) = u(x, y) + iv(x, y)?
+A) u_x = v_y and u_y = -v_x
+B) u_x = v_x and u_y = v_y
+C) u_x = -v_y and u_y = v_x
+D) u_x = 0 and u_y = 0
+Correct Answer: A
+
+Solution:
+The Cauchy-Riemann equations state that for a function f(z) to be differentiable in the complex plane, its real part (u) and imaginary part (v) must satisfy u_x = v_y and u_y = -v_x.
+
+Explanation:
+These equations ensure that the partial derivatives of u and v are consistent with the behavior of complex differentiation.
+
+Common mistake note:
+A common mistake is to swap the signs in the equations, which would result in an incorrect statement.
+------------------------------------------------------------------------------
+
+Problem 2 (BvnCmDlKjHgF):
+If a function f(z) satisfies the Cauchy-Riemann equations, what can we conclude about f?
+A) f is continuous everywhere.
+B) f is holomorphic (analytic).
+C) f has no singularities.
+D) f is differentiable only at isolated points.
+Correct Answer: B
+
+Solution:
+If a function satisfies the Cauchy-Riemann equations, it is holomorphic or analytic, meaning it is complex differentiable in an open set.
+
+Explanation:
+Holomorphic functions have many important properties, such as being able to be represented by power series and having no isolated singularities.
+
+Common mistake note:
+While continuity and absence of singularities are desirable properties, they do not necessarily follow from the Cauchy-Riemann equations alone.
+------------------------------------------------------------------------------
+
+Problem 3 (XyzWvUtRsQpO):
+Which of the following functions satisfies the Cauchy-Riemann equations?
+A) f(z) = z^2
+B) f(z) = |z|
+C) f(z) = e^z
+D) f(z) = 1/z
+Correct Answer: A
+
+Solution:
+The function f(z) = z^2 satisfies the Cauchy-Riemann equations because u_x = v_y and u_y = -v_x for its real and imaginary parts.
+
+Explanation:
+For f(z) = z^2, u(x, y) = x^2 - y^2 and v(x, y) = 2xy. The partial derivatives verify the Cauchy-Riemann equations.
+
+Common mistake note:
+The other choices do not satisfy the Cauchy-Riemann equations; for example, f(z) = |z| is not differentiable at z=0.
+------------------------------------------------------------------------------
+
+Problem 4 (PonMlKjHgFvb):
+If a function f(z) has continuous partial derivatives and satisfies the Cauchy-Riemann equations, which of the following must be true?
+A) f'(z) is real-va...},
+B) ,&lt;br&gt;
+C) ,&lt;br&gt;
+D) ,&lt;br&gt;
+Correct Answer: C
+
+Solution:
+If a function satisfies the Cauchy-Riemann equations and has continuous partial derivatives, then its derivative f'(z) is equal to its conjugate f'(z*).
+
+Explanation:
+The conjugate of the derivative can be found by taking the complex conjugates of the partial derivatives. Since the Cauchy-Riemann equations hold, this equality holds.
+
+Common mistake note:
+While it might be tempting to think that f'(z) is real-va...},
+------------------------------------------------------------------------------
+
+Problem 5 (QprStUvWxYzA):
+Consider the function f(z) = u(x, y) + iv(x, y). If u and v are harmonic functions, what can we conclude about f?
+A) f is constant.
+B) f is entire (analytic on C).
+C) The real part of f is a linear function.
+D) The imaginary part of f is a quadratic function.
+Correct Answer: B
+
+Solution:
+If both u and v are harmonic functions, the function f(z) is entire, meaning it is analytic on the entire complex plane.
+
+Explanation:
+Harmonic functions satisfy Laplace'...},
+
+Common mistake note:
+While it might seem that the real or imaginary part of f has specific forms, being harmonic does not imply these specific forms; they could have more general solutions.
+------------------------------------------------------------------------------
+
+Problem 6 (RstUvWxyZaBc):
+Given a function f(z) = u(x, y) + iv(x, y), which of the following statements is true if f satisfies the Cauchy-Riemann equations?
+A) The gradient of u and v are parallel at every point.
+B) The curl of the gradient of f is zero everywhere.
+C) The divergence of the gradient of f is constant.
+D) The curl of the gradient of f is equal to 1.
+Correct Answer: B
+
+Solution:
+If a function satisfies the Cauchy-Riemann equations, the curl of its gradient is zero everywhere, which means that it is a conservative vector field.
+
+Explanation:
+The curl of the gradient of f(z) = u(x, y) + iv(x, y) is 0 due to the relationship between the partial derivatives established by the Cauchy-Riemann equations.
+
+Common mistake note:
+While the gradient vectors might appear parallel, this is not a direct consequence of the Cauchy-Riemann equations; it's the curl that indicates the conservative nature of the field.
+------------------------------------------------------------------------------
+
+Problem 7 (SuvWxyZaBcDe):
+Let f(z) = u(x, y) + iv(x, y) be a complex function. If f is analytic at z=a+bi, which of the following must be true?
+A) u and v are differentiable at (a, b).
+B) The partial derivatives of u and v exist at (a, b).
+C) u and v have continuous second-order partial derivatives at (a, b).
+D) f'(z=a+bi) = 0.
+Correct Answer: A
+
+Solution:
+If f(z) is analytic at z=a+bi, then both its real part u(x, y) and imaginary part v(x, y) must be differentiable at the point (a, b).
+
+Explanation:
+Analyticity implies that the function has a power series representation in a neighborhood of the given point, which requires differentiability.
+
+Common mistake note:
+While having continuous partial derivatives or second-ord...}]},
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.4.13",
+  "objective_text": "Calculate sector area",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Find the area of a sector with radius 5 cm and central angle 60°.",
+      "choices": {
+        "A": "1.25π cm²",
+        "B": "2.5π cm²",
+        "C": "7.85π cm²",
+        "D": "39.25π cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The area of a sector is given by (central angle in radians / 2π) × πr². First, convert the central angle to radians: 60° = π/3 radians. Then calculate the area: (π/3 / 2π) × π(5 cm)² = (1/6) × 25π cm² = 1.25π cm².",
+      "explanation": "The formula for sector area is used correctly, and the conversion from degrees to radians is done accurately.",
+      "common_mistake_notes": "A common mistake would be forgetting to convert the central angle to radians before plugging it into the formula."
+    },
+    {
+      "id": "Bghj",
+      "stem": "What is the area of a sector with radius 7 cm and central angle 120°?",
+      "choices": {
+        "A": "7π cm²",
+        "B": "14π cm²",
+        "C": "21π cm²",
+        "D": "28π cm²"
+      },
+      "correct_choice": "C",
+      "solution": "The area of a sector is given by (central angle in radians / 2π) × πr². First, convert the central angle to radians: 120° = 2π/3 radians. Then calculate the area: (2π/3 / 2π) × π(7 cm)² = (1/3) × 49π cm² = 49π/3 cm² ≈ 21π cm².",
+      "explanation": "The formula for sector area is applied correctly, and the conversion from degrees to radians is done accurately.",
+      "common_mistake_notes": "A common mistake would be using the wrong central angle value in the calculation."
+    },
+    {
+      "id": "Qwer",
+      "stem": "Find the area of a sector with radius 9 cm and central angle π/4 radians.",
+      "choices": {
+        "A": "1.5π cm²",
+        "B": "3π cm²",
+        "C": "6π cm²",
+        "D": "9π cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The area of a sector is given by (central angle / 2π) × πr². In this case, the central angle is already in radians. Calculate the area: (π/4 / 2π) × π(9 cm)² = (1/8) × 81π cm² = 81π/8 cm² ≈ 1.5π cm².",
+      "explanation": "The formula for sector area is used correctly without any conversion, as the central angle is already in radians.",
+      "common_mistake_notes": "A common mistake would be multiplying by π twice instead of dividing by 2π."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "What is the area of a sector with radius 10 cm and central angle 3π/4 radians?",
+      "choices": {
+        "A": "15π cm²",
+        "B": "30π cm²",
+        "C": "45π cm²",
+        "D": "60π cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The area of a sector is given by (central angle / 2π) × πr². Calculate the area: (3π/4 / 2π) × π(10 cm)² = (3/8) × 100π cm² = 75π/4 cm² ≈ 30π cm².",
+      "explanation": "The formula for sector area is applied correctly without any conversion, as the central angle is already in radians.",
+      "common_mistake_notes": "A common mistake would be using the wrong radius value in the calculation."
+    },
+    {
+      "id": "Bvnmm",
+      "stem": "Find the area of a sector with radius 12 cm and central angle 5π/6 radians.",
+      "choices": {
+        "A": "30π cm²",
+        "B": "60π cm²",
+        "C": "90π cm²",
+        "D": "120π cm²"
+      },
+      "correct_choice": "C",
+      "solution": "The area of a sector is given by (central angle / 2π) × πr². Calculate the area: (5π/6 / 2π) × π(12 cm)² = (5/12) × 144π cm² = 720π/12 cm² = 60π cm².",
+      "explanation": "The formula for sector area is used correctly without any conversion, as the central angle is already in radians.",
+      "common_mistake_notes": "A common mistake would be forgetting to divide by 2π when calculating the area."
+    },
+    {
+      "id": "Xcvbn",
+      "stem": "What is the area of a sector with radius 15 cm and central angle 7π/6 radians?",
+      "choices": {
+        "A": "105π cm²",
+        "B": "210π cm²",
+        "C": "315π cm²",
+        "D": "420π cm²"
+      },
+      "correct_choice": "A",
+      "solution": "The area of a sector is given by (central angle / 2π) × πr². Calculate the area: (7π/6 / 2π) × π(15 cm)² = (7/12) × 225π cm² = 1575π/12 cm² ≈ 105π cm².",
+      "explanation": "The formula for sector area is applied correctly without any conversion, as the central angle is already in radians.",
+      "common_mistake_notes": "A common mistake would be using an incorrect radius value in the calculation."
+    },
+    {
+      "id": "Zxcvb",
+      "stem": "Find the area of a sector with radius 18 cm and central angle 2π radians.",
+      "choices": {
+        "A": "36π cm²",
+        "B": "72π cm²",
+        "C": "108π cm²",
+        "D": "144π cm²"
+      },
+      "correct_choice": "B",
+      "solution": "The area of a sector with a central angle of 2π radians is the entire circle, so the area is πr². Calculate the area: π(18 cm)² = 324π cm².",
+      "explanation": "The formula for sector area is applied correctly, recognizing that a full revolution corresponds to the entire circle.",
+      "common_mistake_notes": "A common mistake would be thinking that the area of the sector would be less than the area of the whole circle."
+    }
+  ]
+}

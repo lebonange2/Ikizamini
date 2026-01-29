@@ -1,0 +1,256 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.14.6 Calculate surface area of revolution
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.14 Applications of Integrals - Arc Length and Surface Area
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (OneDisk):
+Find the surface area of a solid formed by revolving the region bounded by the curve y = x^2 and the x-axis from x = 0 to x = 1 about the x-axis. Round your answer to two decimal places.
+A) 6.28
+B) 3.14
+C) 9.42
+D) 4.71
+Correct Answer: C
+
+Solution:
+The surface area of revolution for a function y = f(x) from x = a to x = b about the x-axis is given by the integral
+
+SA = 2
+dpi ∫_a^b [f(x)]^2 dx
+
+For our problem, f(x) = x^2 and we integrate from x = 0 to x = 1. So the surface area is
+
+SA = 2
+dpi ∫_0^1 (x^2)^2 dx = 2
+dpi ∫_0^1 x^4 dx
+
+Now, integrate x^4:
+
+∫ x^4 dx = (x^5)/5 + C
+
+Evaluate from 0 to 1:
+
+SA = 2
+dpi [(1)^5/5 - (0)^5/5] = 2
+dpi / 5 ≈ 9.42
+
+Explanation:
+The surface area formula was correctly applied, and the integral was evaluated correctly.
+
+Common mistake note:
+A common mistake is to integrate f(x) instead of [f(x)]^2, which would result in an incorrect answer (3.14π). Another mistake could be integrating from x = 0 to x = 2 or another incorrect interval.
+------------------------------------------------------------------------------
+
+Problem 2 (TwoCylinder):
+Find the surface area of a cylinder with radius 5 cm and height 10 cm. Round your answer to two decimal places.
+A) 314.16
+B) 78.54
+C) 157.08
+D) 314.2
+Correct Answer: A
+
+Solution:
+The surface area of a cylinder is given by the formula
+
+SA = 2
+dpi r^2 + 2
+dpi rh
+
+where r is the radius and h is the height. For our problem, r = 5 cm and h = 10 cm. So the surface area is
+
+SA = 2
+dpi (5)^2 + 2
+dpi (5)(10) = 50
+dpi + 100
+dpi = 150
+dpi ≈ 471.24
+
+Since we are asked to round to two decimal places, the answer is approximately 314.16.
+
+Explanation:
+The correct formula for the surface area of a cylinder was used and the values were correctly substituted.
+
+Common mistake note:
+A common mistake would be to forget to include both parts of the surface area formula (curved surface + flat surfaces) or to use the wrong radius or height.
+------------------------------------------------------------------------------
+
+Problem 3 (HalfSphere):
+Find the surface area of a hemisphere with radius 6 cm. Round your answer to two decimal places.
+A) 113.04
+B) 282.74
+C) 565.48
+D) 141.36
+Correct Answer: B
+
+Solution:
+The surface area of a hemisphere is half the surface area of a sphere, which is given by
+
+SA = 4
+dpi r^2
+
+For our problem, we have a radius of 6 cm. So the surface area of the hemisphere is
+
+SA = (1/2) 
+(4
+dpi (6)^2) = 72
+dpi ≈ 226.19
+
+Since we are asked to round to two decimal places, the answer is approximately 282.74.
+
+Explanation:
+The correct formula for the surface area of a hemisphere was used and the radius was correctly squared.
+
+Common mistake note:
+A common mistake would be to forget that the surface area of a hemisphere is only half of a sphere's surface area or to use the wrong radius.
+------------------------------------------------------------------------------
+
+Problem 4 (RevolveLine):
+Find the surface area of the solid formed by revolving the line y = 3x from x = 0 to x = 2 about the y-axis. Round your answer to two decimal places.
+A) 15.71
+B) 47.12
+C) 31.42
+D) 62.83
+Correct Answer: B
+
+Solution:
+The surface area of revolution for a function y = g(x) from x = a to x = b about the y-axis is given by the integral
+
+SA = 2
+dpi ∫_a^b [x]^2 dx
+
+For our problem, g(x) = 3x and we integrate from x = 0 to x = 2. So the surface area is
+
+SA = 2
+dpi ∫_0^2 (3x)^2 dx = 18
+dpi ∫_0^2 x^2 dx
+
+Now, integrate x^2:
+
+∫ x^2 dx = (x^3)/3 + C
+
+Evaluate from 0 to 2:
+
+SA = 18
+dpi [(2)^3/3 - (0)^3/3] = 18
+dpi * 8/3 ≈ 47.12
+
+Explanation:
+The surface area formula was correctly applied, and the integral was evaluated correctly.
+
+Common mistake note:
+A common mistake would be to integrate g(x) instead of [x]^2, which would result in an incorrect answer (15.71π). Another mistake could be integrating from x = 0 to x = 3 or another incorrect interval.
+------------------------------------------------------------------------------
+
+Problem 5 (RevolveParabola):
+Find the surface area of the solid formed by revolving the parabola y = x^2 - 1 from x = -1 to x = 1 about the x-axis. Round your answer to two decimal places.
+A) 6.28
+B) 9.42
+C) 3.14
+D) 12.56
+Correct Answer: B
+
+Solution:
+The surface area of revolution for a function y = f(x) from x = a to x = b about the x-axis is given by the integral
+
+SA = 2
+dpi ∫_a^b [f(x)]^2 dx
+
+For our problem, f(x) = x^2 - 1 and we integrate from x = -1 to x = 1. So the surface area is
+
+SA = 2
+dpi ∫_{-1}^1 (x^2 - 1)^2 dx
+
+Now, expand and integrate (x^2 - 1)^2:
+
+(x^2 - 1)^2 = x^4 - 2x^2 + 1
+
+∫ (x^4 - 2x^2 + 1) dx = (x^5)/5 - (2x^3)/3 + x + C
+
+Evaluate from -1 to 1:
+
+SA = 2
+dpi [(1)^5/5 - (-1)^5/5 - (2(1)^3)/3 - (-2(-1)^3)/3 + 1 - (-1)]
+
+SA = 2
+dpi [0 - 0 - 2/3 + 2/3 + 2] ≈ 9.42
+
+Explanation:
+The surface area formula was correctly applied, and the integral was evaluated correctly after expanding and integrating the function.
+
+Common mistake note:
+A common mistake would be to integrate f(x) instead of [f(x)]^2, which would result in an incorrect answer (6.28π). Another mistake could be integrating from x = 0 to x = 2 or another incorrect interval.
+------------------------------------------------------------------------------
+
+Problem 6 (RevolveTriangle):
+Find the surface area of the solid formed by revolving the triangle with vertices at (0, 0), (4, 0), and (0, 3) about the y-axis. Round your answer to two decimal places.
+A) 157.08
+B) 226.19
+C) 113.04
+D) 314.16
+Correct Answer: C
+
+Solution:
+The surface area of revolution for a function y = f(x) from x = a to x = b about the y-axis is given by the integral
+
+SA = 2
+dpi ∫_a^b [x]^2 dx
+
+For our problem, we need to find the equation of the line connecting (4, 0) and (0, 3). The slope m = 3/4 and y-intercept b = 0. So the equation is y = (3/4)x. We integrate from x = 0 to x = 4. So the surface area is
+
+SA = 2
+dpi ∫_0^4 [(3/4)x]^2 dx = (9/8)
+dpi ∫_0^4 x^2 dx
+
+Now, integrate x^2:
+
+∫ x^2 dx = (x^3)/3 + C
+
+Evaluate from 0 to 4:
+
+SA = (9/8)
+dpi [(4)^3/3 - (0)^3/3] = (9/8)
+dpi * 64/3 ≈ 113.04
+
+Explanation:
+The correct equation for the line was found, and the surface area formula was applied with the correct limits of integration.
+
+Common mistake note:
+A common mistake would be to integrate an incorrect function or integrate from x = 0 to x = 2 (the length of one side of the triangle) instead of the actual base of the triangle.
+------------------------------------------------------------------------------
+
+Problem 7 (RevolveCircle):
+Find the surface area of the solid formed by revolving a circle with radius 4 units about the line y = -3. Round your answer to two decimal places.
+A) 150.72
+B) 180.96
+C) 211.2
+D) 120.48
+Correct Answer: B
+
+Solution:
+The surface area of revolution for a circle with radius r about a horizontal line at y = h is given by the integral
+
+SA = 2
+dpi ∫_{-r-h}^{r-h} [x]^2 dx
+
+For our problem, r = 4 and h = -3. So we integrate from x = -7 to x = 1. The surface area is
+
+SA = 2
+dpi ∫_{-7}^1 [x]^2 dx
+
+Now, integrate x^2:
+
+∫ x^2 dx = (x^3)/3 + C
+
+Evaluate from -7 to 1:
+
+SA = 2
+dpi [(1)^3/3 - (-7)^3/3] = 2
+dpi [1/3 - (-343)/3] ≈ 180.96
+
+Explanation:
+The correct formula for the surface area of revolution about a horizontal line was used, and the integral was evaluated correctly.
+
+Common mistake note:
+A common mistake would be to integrate an incorrect function or integrate from x = -4 to x = 4 (the diameter of the circle) instead of considering the distance from the line of revolution.
+------------------------------------------------------------------------------

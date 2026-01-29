@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.12.2",
+  "objective_text": "Evaluate integrals with infinite limits",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":question_1",
+      "stem": "Evaluate the integral: ∫(x^2 + 3x) dx from -∞ to ∞",
+      "choices": {
+        "A": "-∞",
+        "B": "0",
+        "C": "∞",
+        "D": "Does not converge"
+      },
+      "correct_choice": "D",
+      "solution": "The integral of x^2 + 3x with respect to x is (1/3)x^3 + (3/2)x^2. Evaluating this from -∞ to ∞, both terms diverge to infinity since the powers are greater than or equal to 1. Therefore, the integral does not converge.",
+      "explanation": "The convergence of an improper integral with infinite limits is determined by the behavior of the function at the infinite endpoints. If either endpoint diverges to infinity or oscillates without converging, the integral as a whole does not converge.",
+      "common_mistake_notes": "A common mistake would be to assume that since the integrand is composed of polynomials, it will always converge. However, this is not true when integrating from -∞ to ∞."
+    },
+    {
+      "id": ":question_2",
+      "stem": "Evaluate the integral: ∫(e^x) dx from 0 to ∞",
+      "choices": {
+        "A": "1",
+        "B": "e",
+        "C": "∞",
+        "D": "Does not converge"
+      },
+      "correct_choice": "C",
+      "solution": "The integral of e^x with respect to x is e^x. Evaluating this from 0 to ∞, we get [e^∞ - e^0] = [∞ - 1] = ∞. Therefore, the integral diverges.",
+      "explanation": "An exponential function like e^x grows without bound as x approaches infinity, so its definite integral also diverges to infinity when integrated from a finite lower limit to infinity.",
+      "common_mistake_notes": "A common mistake would be to evaluate the antiderivative at the limits and compare them, thinking that since e^∞ is 'larger' than 1, it must converge. However, this comparison does not account for the unbounded growth of the function."
+    },
+    {
+      "id": ":question_3",
+      "stem": "Evaluate the integral: ∫(sin(x)) dx from -π to π",
+      "choices": {
+        "A": "0",
+        "B": "π",
+        "C": "-π",
+        "D": "Does not converge"
+      },
+      "correct_choice": "A",
+      "solution": "The integral of sin(x) with respect to x is -cos(x). Evaluating this from -π to π, we get [-cos(π) - (-cos(-π))] = [1 - 1] = 0. Therefore, the integral converges.",
+      "explanation": "The sine function is periodic and has a period of 2π. When integrating over an interval that includes one full period, the function oscillates between positive and negative values, resulting in a net area of zero.",
+      "common_mistake_notes": "A common mistake would be to assume that since sin(x) does not grow without bound, the integral must converge. However, it's the oscillating nature of the sine function that leads to convergence in this case."
+    },
+    {
+      "id": ":question_4",
+      "stem": "Evaluate the integral: ∫(1/x) dx from 1 to ∞",
+      "choices": {
+        "A": "0",
+        "B": "ln(∞)",
+        "C": "ln(1)",
+        "D": "Does not converge"
+      },
+      "correct_choice": "D",
+      "solution": "The integral of 1/x with respect to x is ln|x|. Evaluating this from 1 to ∞, we get [ln(∞) - ln(1)] = [∞ - 0] = ∞. Therefore, the integral does not converge.",
+      "explanation": "The natural logarithm function grows without bound as x approaches infinity, so its definite integral also diverges to infinity when integrated from a finite lower limit to infinity.",
+      "common_mistake_notes": "A common mistake would be to think that since ln(x) approaches infinity slowly, the integral might converge. However, any growth rate faster than 1/x will lead to divergence when integrating to infinity."
+    },
+    {
+      "id": ":question_5",
+      "stem": "Evaluate the integral: ∫(x^(-2)) dx from 1 to ∞",
+      "choices": {
+        "A": "0",
+        "B": "∞",
+        "C": "π",
+        "D": "Does not converge"
+      },
+      "correct_choice": "B",
+      "solution": "The integral of x^(-2) with respect to x is x^(-1) / (-1) = -1/x. Evaluating this from 1 to ∞, we get [-1/∞ - (-1/1)] = [0 - (-1)] = 1. Since the limit as x approaches infinity is zero, the integral converges to a finite value.",
+      "explanation": "The function x^(-2) has a pole at x=0 but is integrable from 1 to ∞ because the singularity is not included in the interval. The integral converges to a finite value due to the decreasing nature of the function.",
+      "common_mistake_notes": "A common mistake would be to think that since x^(-2) approaches zero as x increases, the integral must converge to zero. However, the integral converges because the function decreases faster than 1/x."
+    },
+    {
+      "id": ":question_6",
+      "stem": "Evaluate the integral: ∫(cos(x)) dx from -∞ to ∞",
+      "choices": {
+        "A": "0",
+        "B": "π",
+        "C": "-π",
+        "D": "Does not converge"
+      },
+      "correct_choice": "A",
+      "solution": "The integral of cos(x) with respect to x is sin(x). Evaluating this from -∞ to ∞, we get [sin(∞) - sin(-∞)]. Since sin(x) oscillates between -1 and 1, the limit as x approaches infinity does not converge. Therefore, the integral does not converge.",
+      "explanation": "The cosine function is periodic and has a period of 2π. When integrating over an interval that includes infinitely many periods, the function oscillates indefinitely without converging to a single value.",
+      "common_mistake_notes": "A common mistake would be to think that since cos(x) does not grow without bound, the integral must converge. However, it's the oscillating nature of the cosine function that leads to non- convergence in this case."
+    },
+    {
+      "id": ":question_7",
+      "stem": "Evaluate the integral: ∫(e^(-x)) dx from 0 to ∞",
+      "choices": {
+        "A": "1",
+        "B": "e",
+        "C": "∞",
+        "D": "Does not converge"
+      },
+      "correct_choice": "A",
+      "solution": "The integral of e^(-x) with respect to x is -e^(-x). Evaluating this from 0 to ∞, we get [-e^(-∞) - (-e^0)] = [0 - (-1)] = 1. Therefore, the integral converges.",
+      "explanation": "The exponential function e^(-x) decreases rapidly as x increases, approaching zero. When integrating from a finite lower limit to infinity, the area under the curve approaches a finite value.",
+      "common_mistake_notes": "A common mistake would be to think that since e^(-x) approaches zero, the integral might converge to zero. However, the negative sign in the antiderivative changes the interpretation: as x increases, the function becomes positive and integrates to a non-zero value."
+    }
+  ]
+}

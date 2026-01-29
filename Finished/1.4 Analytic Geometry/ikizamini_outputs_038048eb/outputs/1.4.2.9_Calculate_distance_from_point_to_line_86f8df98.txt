@@ -1,0 +1,137 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.2.9 Calculate distance from point to line
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.2 Lines in 2D
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the shortest distance between the point (3, 4) and the line defined by y = 2x + 1.
+A) 1.5 units
+B) 2.0 units
+C) 2.5 units
+D) 3.0 units
+Correct Answer: A
+
+Solution:
+The distance d between a point P(x1, y1) and a line Ax + By + C = 0 is given by the formula: d = |Ax1 + By1 + C| / sqrt(A^2 + B^2). For the line y = 2x + 1, we can rewrite it as 2x - y + 1 = 0. Now apply the formula with A=2, B=-1, C=1, x1=3, and y1=4.
+d = |(2*3) - (4) + 1| / sqrt(2^2 + (-1)^2)
+d ≈ 1.5 units
+
+Explanation:
+The correct answer is found by applying the distance formula to the given point and line equation.
+
+Common mistake note:
+A common mistake would be to directly substitute the coordinates of the point into the line equation and solve for y, which gives the perpendicular distance but not necessarily the shortest distance. The shortest distance is always along a perpendicular line.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the distance between the point (-1, 0) and the line defined by x - 3y = 6.
+A) 2 units
+B) sqrt(10) units
+C) sqrt(13) units
+D) sqrt(5) units
+Correct Answer: B
+
+Solution:
+The distance d between a point P(x1, y1) and a line Ax + By + C = 0 is given by the formula: d = |Ax1 + By1 + C| / sqrt(A^2 + B^2). For the line x - 3y = 6, we have A=1, B=-3, C=6. Apply the formula with x1=-1 and y1=0.
+d ≈ sqrt(5) units
+
+Explanation:
+The correct answer is found by applying the distance formula to the given point and line equation.
+
+Common mistake note:
+A common mistake would be to forget to take the absolute value when calculating the numerator in the distance formula, which could result in an incorrect negative distance.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the shortest distance between the point (0, 2) and the line defined by y = -x + 3.
+A) sqrt(2) units
+B) 1 unit
+C) sqrt(3) units
+D) 2 units
+Correct Answer: A
+
+Solution:
+The distance d between a point P(x1, y1) and a line Ax + By + C = 0 is given by the formula: d = |Ax1 + By1 + C| / sqrt(A^2 + B^2). For the line y = -x + 3, we can rewrite it as x + y - 3 = 0. Now apply the formula with A=1, B=1, C=-3, x1=0, and y1=2.
+d ≈ sqrt(2) units
+
+Explanation:
+The correct answer is found by applying the distance formula to the given point and line equation.
+
+Common mistake note:
+A common mistake would be to assume that the slope of the perpendicular line is the negative reciprocal of the original line, which is not always true for finding the shortest distance. The shortest distance is always along a perpendicular line with zero slope difference.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the distance between the point (2, -1) and the line defined by 3x - 4y = 8.
+A) sqrt(5) units
+B) sqrt(7) units
+C) sqrt(6) units
+D) sqrt(10) units
+Correct Answer: C
+
+Solution:
+The distance d between a point P(x1, y1) and a line Ax + By + C = 0 is given by the formula: d = |Ax1 + By1 + C| / sqrt(A^2 + B^2). For the line 3x - 4y = 8, we have A=3, B=-4, C=8. Apply the formula with x1=2 and y1=-1.
+d ≈ sqrt(6) units
+
+Explanation:
+The correct answer is found by applying the distance formula to the given point and line equation.
+
+Common mistake note:
+A common mistake would be to forget to distribute the coefficients when multiplying the point coordinates with the line's coefficients, leading to an incorrect numerator in the distance formula.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the shortest distance between the point (1, 3) and the line defined by y = 0.
+A) 2 units
+B) 1 unit
+C) sqrt(2) units
+D) 0 units
+Correct Answer: D
+
+Solution:
+The shortest distance between a point P(x1, y1) and a horizontal line y = k is the vertical distance between the point and the line. Since the line y = 0 is the x- axis, the point (1, 3) lies exactly above it on the y-axis. Therefore, the distance is 0 units.
+
+Explanation:
+The correct answer is found by recognizing that a horizontal line represents all points with a specific y-value and that the shortest distance between a point and such a line is zero when the point lies directly above or below the line.
+
+Common mistake note:
+A common mistake would be to apply the distance formula, which would result in a non-zero value due to the incorrect interpretation of the problem. In this case, no calculation is needed since the point lies on the line.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the shortest distance between the point (4, -2) and the line defined by x = 5.
+A) 1 unit
+B) sqrt(2) units
+C) sqrt(3) units
+D) 2 units
+Correct Answer: A
+
+Solution:
+The shortest distance between a point P(x1, y1) and a vertical line x = k is the horizontal distance between the point and the line. Since the line x = 5 is parallel to the y-axis, the point (4, -2) lies exactly to the left of it on the x-axis. Therefore, the distance is 1 unit.
+
+Explanation:
+The correct answer is found by recognizing that a vertical line represents all points with a specific x-value and that the shortest distance between a point and such a line is zero when the point lies directly to the left or right of the line.
+
+Common mistake note:
+A common mistake would be to apply the distance formula, which would result in a non-zero value due to the incorrect interpretation of the problem. In this case, no calculation is needed since the point lies on the line.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the shortest distance between the point (0, 1) and the line defined by y = x.
+A) sqrt(2) units
+B) 1 unit
+C) sqrt(3) units
+D) 0 units
+Correct Answer: B
+
+Solution:
+The shortest distance between a point P(x1, y1) and the line y = x is found by drawing a perpendicular line from the point to the line. The slope of this perpendicular line must be the negative reciprocal of 1 (the slope of y = x), which is -1. The equation of the perpendicular line passing through (0, 1) is y = -x + 1. To find the intersection, we set both equations equal: y = x and y = -x + 1. Solving for x gives x = 1/2, and substituting back into either equation gives y = 1/2. The distance between (0, 1) and (1/2, 1/2) is sqrt((1/2)^2 + (1/2 - 1)^2) = sqrt(1/4 + 1/4) = sqrt(1/2) = 1 unit.
+
+Explanation:
+The correct answer is found by finding the intersection of the given line and a perpendicular line passing through the point, then calculating the distance between these two points.
+
+Common mistake note:
+A common mistake would be to assume that the shortest distance is along the line y = x, which is incorrect. The shortest distance is always along a perpendicular line.
+------------------------------------------------------------------------------

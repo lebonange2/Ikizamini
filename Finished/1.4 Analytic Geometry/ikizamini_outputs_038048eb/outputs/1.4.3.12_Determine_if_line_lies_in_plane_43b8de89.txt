@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.3.12 Determine if line lies in plane
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.3 Lines and Planes in 3D
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Given a plane defined by the equation 2x + 3y - z = 5 and a line parametrized by r(t) = <1, t, 2t>, does the line lie in the plane?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) The line intersects the plane at a single point
+Correct Answer: A
+
+Solution:
+To determine if the line lies in the plane, we plug the parametric equations of the line into the equation of the plane. If the resulting expression is true for all values of t, then the line lies in the plane. Let's substitute x = 1, y = t, and z = 2t into the plane equation: 2(1) + 3(t) - (2t) = 5. Simplifying gives us 2 + 3t - 2t = 5, or t = 3. Since this is a single value for t and not dependent on it, the line lies in the plane for all values of t.
+
+Explanation:
+The solution shows that substituting the parametric equations into the plane equation results in an identity (true for all t), which indicates the line lies in the plane.
+
+Common mistake note:
+A common mistake is to assume that if the line intersects the plane at a single point, it means the line does not lie in the plane. However, a line can intersect a plane at a single point and still be part of the plane.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Does the line defined by r(t) = <t, 2t, 3t> lie in the plane with normal vector n=<1, 1, 1> and passing through the point P(1, 1, 1)?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) The line intersects the plane at a single point
+Correct Answer: B
+
+Solution:
+To check if the line lies in the plane, we need to verify that the direction vector of the line is orthogonal (perpendicular) to the normal vector of the plane. The dot product of n and the direction vector <1, 2, 3> should be zero for the line to lie in the plane. The dot product is 1*1 + 1*2 + 1*3 = 6, which is not zero. Therefore, the line does not lie in the plane.
+
+Explanation:
+The solution demonstrates that since the dot product of the line's direction vector and the plane's normal vector is non-zero, the line does not lie in the plane.
+
+Common mistake note:
+A common mistake would be to assume that if the point P lies on both the line and the plane, the line must lie in the plane. However, this is only true if the direction vector of the line is orthogonal to the normal vector of the plane.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Given a plane defined by 4x - 2y + z = 1 and a line passing through points A(1, 0, 2) and B(2, 1, 3), does the line lie in the plane?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) The line intersects the plane at a single point
+Correct Answer: C
+
+Solution:
+To determine if the line lies in the plane, we need to check if both points A and B satisfy the plane equation. For A(1, 0, 2), 4*1 - 2*0 + 2 = 6, which does not equal 1. Since at least one point does not satisfy the equation, we cannot determine without more information whether the entire line lies in the plane.
+
+Explanation:
+The solution shows that since only one of the two points on the line satisfies the plane equation, it's not possible to conclude if the entire line lies in the plane without additional information.
+
+Common mistake note:
+A common mistake would be to assume that if a single point on the line lies in the plane, the whole line must lie in the plane. However, this is incorrect; a line can intersect a plane at a single point or multiple points but still not be fully contained within the plane.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Does the line with parametric equations r(t) = <t, 0, t> lie in the plane defined by 3x + y - z = 2?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) The line intersects the plane at a single point
+Correct Answer: A
+
+Solution:
+We substitute x = t, y = 0, and z = t into the plane equation: 3(t) + 0 - (t) = 2. Simplifying gives us 2t = 2, or t = 1. Since this is a single value for t and not dependent on it, the line lies in the plane for all values of t.
+
+Explanation:
+The solution demonstrates that substituting the parametric equations into the plane equation results in an identity (true for all t), which indicates the line lies in the plane.
+
+Common mistake note:
+A common mistake would be to assume that if the line intersects the plane at a single point, it means the line does not lie in the plane. However, a line can intersect a plane at a single point and still be part of the plane.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Given a plane with equation 6x - 4y + 2z = 8 and a line passing through points C(0, 1, 0) and D(2, 3, 2), does the line lie in the plane?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) The line intersects the plane at a single point
+Correct Answer: B
+
+Solution:
+We check if both points C and D satisfy the plane equation. For C(0, 1, 0), 6*0 - 4*1 + 2*0 = -4, which does not equal 8. For D(2, 3, 2), 6*2 - 4*3 + 2*2 = 8, which equals 8. Since one point satisfies the equation and the other doesn't, we cannot determine without more information whether the entire line lies in the plane.
+
+Explanation:
+The solution shows that only one of the two points on the line satisfies the plane equation, making it impossible to conclude if the whole line lies in the plane without additional information.
+
+Common mistake note:
+A common mistake would be to assume that if a single point on the line lies in the plane, the whole line must lie in the plane. However, this is incorrect; a line can intersect a plane at a single point or multiple points but still not be fully contained within the plane.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Does the line with parametric equations r(t) = <2t, 3t, t> lie in the plane defined by x + y - z = 0?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) The line intersects the plane at a single point
+Correct Answer: A
+
+Solution:
+We substitute x = 2t, y = 3t, and z = t into the plane equation: 2t + 3t - t = 0. Simplifying gives us 4t = 0, or t = 0. Since this is a single value for t and not dependent on it, the line lies in the plane for all values of t.
+
+Explanation:
+The solution demonstrates that substituting the parametric equations into the plane equation results in an identity (true for all t), which indicates the line lies in the plane.
+
+Common mistake note:
+A common mistake would be to assume that if the line intersects the plane at a single point, it means the line does not lie in the plane. However, a line can intersect a plane at a single point and still be part of the plane.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Given a plane with normal vector n=<1, 2, 3> and passing through the point P(0, 0, 0), does the line with direction vector d=<1, 1, 1> lie in the plane?
+A) Yes
+B) No
+C) Cannot determine without more information
+D) The line intersects the plane at a single point
+Correct Answer: B
+
+Solution:
+To check if the line lies in the plane, we need to verify that the direction vector of the line is orthogonal (perpendicular) to the normal vector of the plane. The dot product of n and d should be zero for the line to lie in the plane. The dot product is 1*1 + 2*1 + 3*1 = 6, which is not zero. Therefore, the line does not lie in the plane.
+
+Explanation:
+The solution demonstrates that since the dot product of the line's direction vector and the plane's normal vector is non-zero, the line does not lie in the plane.
+
+Common mistake note:
+A common mistake would be to assume that if a single point on the line lies in the plane, the whole line must lie in the plane. However, this is incorrect; a line can intersect a plane at a single point or multiple points but still not be fully contained within the plane.
+------------------------------------------------------------------------------

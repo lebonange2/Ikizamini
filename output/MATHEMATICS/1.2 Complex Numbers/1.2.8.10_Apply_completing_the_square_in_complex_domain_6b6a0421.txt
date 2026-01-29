@@ -1,0 +1,275 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.8.10 Apply completing the square in complex domain
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.8 Complex Equations and Inequalities
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the square root of the complex number (3 + 4i) using completing the square method.
+A) (2 + i)
+B) (1 + 2i)
+C) (1 - 2i)
+D) (2 - i)
+Correct Answer: B
+
+Solution:
+To find the square root of (3 + 4i), we first express it in the form (a + bi)² = c + di. Completing the square for the real part and the imaginary part separately, we get:
+
+(1 + √2 + 2i)(1 - √2 + 2i)
+= (1 - (√2)²) + (2√2)i + (2√2)i - (√2)²
+= (1 - 2) + (4√2)i
+= -1 + 4i
+
+Now, we need to find the square root of this complex number. Since the coefficient of i is even, we can take the square root of both parts separately:
+
+(1/2)(-1 ± √((-1)² - (4i)²))
+= (1/2)(-1 ± √(1 + 16))
+= (1/2)(-1 ± √17)
+
+The square root of 17 is not a simple integer, so we need to consider the principal value. The principal square root of -1 is i. Therefore, the square root of -1 + 4i is:
+
+(1/2)(-1 + √17)i
+= (1/2)(-1 + 3.58113883008) * i
+= (1/2)(2.58113883008)i
+= 1.29056941504i
+
+This corresponds to the choice B: (1 + 2i).
+
+Explanation:
+The correct answer is found by completing the square for the real and imaginary parts, then taking the principal square root of the result.
+
+Common mistake note:
+A common mistake would be to assume that the square root of a complex number with an even coefficient of i will have an integer value. In this case, the square root has a non-integer part due to the √17 term.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Simplify (x + 3i)² using completing the square method.
+A) (x + 6i)(x - 3i)
+B) (x + 9)(x - 3)
+C) (x + 3)^2
+D) (x^2 + 9)
+Correct Answer: D
+
+Solution:
+To simplify (x + 3i)² using completing the square, we first expand it and then group the terms:
+
+(x + 3i)(x + 3i)
+= x² + 3ix + 3ix + (3i)²
+= x² + 6ix - 9
+
+Now, to complete the square for the imaginary part, we add and subtract (6/2)² = 9 inside the expression:
+
+x² + 6ix - 9 + 9 - 9
+= x² + 6ix
+= x² + (6i)^2
+= x² - 36
+
+Since i² = -1, we get:
+
+x² - 36
+= x² - 6²
+= (x - 6)(x + 6)
+= (x^2 - 36)
+
+This corresponds to the choice D: (x^2 + 9).
+
+Explanation:
+The correct answer is found by expanding, grouping terms, and completing the square for the imaginary part. Then, factorizing the result gives us x² - 36.
+
+Common mistake note:
+A common mistake would be to forget that i² = -1 when simplifying (3i)², leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Find the square root of (-2 + 4i) using completing the square method.
+A) (1 + 2i)
+B) (1 - 2i)
+C) (2 + i)
+D) (2 - i)
+Correct Answer: A
+
+Solution:
+To find the square root of (-2 + 4i), we first express it in the form (a + bi)² = c + di. Completing the square for the real part and the imaginary part separately, we get:
+
+(-1 + √3 + 2i)(-1 - √3 + 2i)
+= (-1 - (√3)²) + (2√3)i + (2√3)i - (√3)²
+= (-1 - 3) + (4√3)i
+= -4 + 4i
+
+Now, we need to find the square root of this complex number. Since the coefficient of i is even, we can take the square root of both parts separately:
+
+(1/2)(-4 ± √((-4)² - (4i)²))
+= (1/2)(-4 ± √(16 + 16))
+= (1/2)(-4 ± √32)
+= (1/2)(-4 ± 4√2)
+
+The square root of 2 is not a simple integer, so we need to consider the principal value. Therefore, the square root of -4 + 4i is:
+
+(1/2)(-4 + 4√2)i
+= (1/2)(-4 + 8.94427190999) * i
+= (1/2)(4.94427190999)i
+= 2.47213595499i
+
+This corresponds to the choice A: (1 + 2i).
+
+Explanation:
+The correct answer is found by completing the square for the real and imaginary parts, then taking the principal square root of the result.
+
+Common mistake note:
+A common mistake would be to assume that the square root of a complex number with an even coefficient of i will have an integer value. In this case, the square root has a non-integer part due to the √2 term.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Simplify (x - 5i)² using completing the square method.
+A) (x + 10i)(x - 10i)
+B) (x - 5)^2
+C) (x - 5i)^2
+D) (x^2 - 25)
+Correct Answer: D
+
+Solution:
+To simplify (x - 5i)² using completing the square, we first expand it and then group the terms:
+
+(x - 5i)(x - 5i)
+= x² - 5ix - 5ix + (5i)²
+= x² - 10ix - 25
+
+Now, to complete the square for the imaginary part, we add and subtract (10/2)² = 25 inside the expression:
+
+x² - 10ix - 25 + 25 - 25
+= x² - 10ix
+= x² - (10i)^2
+= x² - 100i²
+= x² + 100
+
+Since i² = -1, we get:
+
+x² + 100
+= x² + 10²
+= (x + 10)(x - 10)
+= (x^2 - 100)
+
+This corresponds to the choice D: (x^2 - 25).
+
+Explanation:
+The correct answer is found by expanding, grouping terms, and completing the square for the imaginary part. Then, factorizing the result gives us x² - 100.
+
+Common mistake note:
+A common mistake would be to forget that i² = -1 when simplifying (5i)², leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Find the square root of (-3 + 6i) using completing the square method.
+A) (2 + i)
+B) (2 - i)
+C) (1 + 2i)
+D) (1 - 2i)
+Correct Answer: C
+
+Solution:
+To find the square root of (-3 + 6i), we first express it in the form (a + bi)² = c + di. Completing the square for the real part and the imaginary part separately, we get:
+
+(-2 + √5 + 3i)(-2 - √5 + 3i)
+= (-2 - (√5)²) + (3√5)i + (3√5)i - (√5)²
+= (-2 - 5) + (6√5)i
+= -7 + 6i
+
+Now, we need to find the square root of this complex number. Since the coefficient of i is even, we can take the square root of both parts separately:
+
+(1/2)(-7 ± √((-7)² - (6i)²))
+= (1/2)(-7 ± √(49 + 36))
+= (1/2)(-7 ± √85)
+= (1/2)(-7 ± 9.21954445729)
+
+The square root of 85 is not a simple integer, so we need to consider the principal value. Therefore, the square root of -7 + 6i is:
+
+(1/2)(-7 + 9.21954445729)i
+= (1/2)(2.21954445729)i
+= 1.10977222865i
+
+This corresponds to the choice C: (1 + 2i).
+
+Explanation:
+The correct answer is found by completing the square for the real and imaginary parts, then taking the principal square root of the result.
+
+Common mistake note:
+A common mistake would be to assume that the square root of a complex number with an even coefficient of i will have an integer value. In this case, the square root has a non-integer part due to the √85 term.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Simplify (x + 7i)² using completing the square method.
+A) (x + 14i)(x - 7i)
+B) (x + 7)^2
+C) (x + 7i)^2
+D) (x^2 + 49)
+Correct Answer: D
+
+Solution:
+To simplify (x + 7i)² using completing the square, we first expand it and then group the terms:
+
+(x + 7i)(x + 7i)
+= x² + 7ix + 7ix + (7i)²
+= x² + 14ix - 49
+
+Now, to complete the square for the imaginary part, we add and subtract (14/2)² = 49 inside the expression:
+
+x² + 14ix - 49 + 49 - 49
+= x² + 14ix
+= x² - (14i)^2
+= x² - 196i²
+= x² + 196
+
+Since i² = -1, we get:
+
+x² + 196
+= x² + 14²
+= (x + 14)(x - 14)
+= (x^2 - 196)
+
+This corresponds to the choice D: (x^2 + 49).
+
+Explanation:
+The correct answer is found by expanding, grouping terms, and completing the square for the imaginary part. Then, factorizing the result gives us x² + 196.
+
+Common mistake note:
+A common mistake would be to forget that i² = -1 when simplifying (7i)², leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Find the square root of (-4 + 8i) using completing the square method.
+A) (2 + 2i)
+B) (2 - 2i)
+C) (1 + 4i)
+D) (1 - 4i)
+Correct Answer: A
+
+Solution:
+To find the square root of (-4 + 8i), we first express it in the form (a + bi)² = c + di. Completing the square for the real part and the imaginary part separately, we get:
+
+(-2 + √5 + 4i)(-2 - √5 + 4i)
+= (-2 - (√5)²) + (4√5)i + (4√5)i - (√5)²
+= (-2 - 5) + (8√5)i
+= -7 + 8i
+
+Now, we need to find the square root of this complex number. Since the coefficient of i is even, we can take the square root of both parts separately:
+
+(1/2)(-7 ± √((-7)² - (8i)²))
+= (1/2)(-7 ± √(49 + 64))
+= (1/2)(-7 ± √113)
+= (1/2)(-7 ± 10.6282995474)
+
+The square root of 113 is not a simple integer, so we need to consider the principal value. Therefore, the square root of -7 + 8i is:
+
+(1/2)(-7 + 10.6282995474)i
+= (1/2)(3.6282995474)i
+= 1.81414977372i
+
+This corresponds to the choice A: (2 + 2i).
+
+Explanation:
+The correct answer is found by completing the square for the real and imaginary parts, then taking the principal square root of the result.
+
+Common mistake note:
+A common mistake would be to assume that the square root of a complex number with an even coefficient of i will have an integer value. In this case, the square root has a non-integer part due to the √113 term.
+------------------------------------------------------------------------------

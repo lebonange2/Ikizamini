@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.9.6 Graph circles in polar form: r = a
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.9 Polar Coordinate Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the equation of a circle with radius 5 units centered at the origin in polar form?
+A) (r - 5)^2 + (θ - π/2)^2 = 25
+B) r = 5
+C) r^2 = 25
+D) (r - 5)^2 + θ^2 = 25
+Correct Answer: B
+
+Solution:
+The equation of a circle with radius 'a' units centered at the origin in polar form is simply 'r = a'. In this case, a = 5.
+
+Explanation:
+In polar coordinates, the distance from the origin to a point on the circle (radius) is represented by 'r', and the angle formed with the positive x-axis is represented by 'θ'. Since the radius is given directly, there's no need for any additional terms like angles or squared distances.
+
+Common mistake note:
+Common mistake: Choosing C ('r^2 = 25'), which represents the equation of a circle in rectangular form (x^2 + y^2 = r^2), not polar form.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+What is the radius of the circle described by the polar equation r = 3?
+A) 9
+B) 6
+C) 3
+D) 1
+Correct Answer: C
+
+Solution:
+The radius of a circle in polar form 'r = a' is given directly by 'a'. In this case, the radius is 3.
+
+Explanation:
+In polar coordinates, 'r' represents the distance from the origin to any point on the circle. When 'r' is constant, it corresponds to a circle of that fixed radius.
+
+Common mistake note:
+Common mistake: Choosing A ('9') or B ('6'), which are incorrect because they represent squares of the actual radius (3).
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+What is the equation of a unit circle (radius 1) in polar form?
+A) r = 1
+B) (r - 1)^2 + θ^2 = 1
+C) r^2 = 1
+D) θ = π/2
+Correct Answer: A
+
+Solution:
+The equation of a unit circle (radius 1) in polar form is simply 'r = 1'.
+
+Explanation:
+In polar coordinates, the equation for a unit circle with radius 'a' centered at the origin simplifies to 'r = 1', as the radius is always 1.
+
+Common mistake note:
+Common mistake: Choosing B ('(r - 1)^2 + θ^2 = 1'), which represents the equation of a circle in rectangular form transformed into polar coordinates, not the simple form for a unit circle.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+What is the center of the circle described by the polar equation r = 7sinθ?
+A) (0, 0)
+B) (7, 0)
+C) (0, 7)
+D) (1, 0)
+Correct Answer: A
+
+Solution:
+The center of a circle in polar form 'r = f(θ)' is always at the origin (0, 0) when there's no constant term for 'r'. In this case, the equation does not have a constant term.
+
+Explanation:
+In polar coordinates, if the polar equation has no constant term for 'r' (e.g., r = a + f(θ)), it indicates that the circle is centered at the origin. The given equation only has 'r = 7sinθ', which means the center is at (0, 0).
+
+Common mistake note:
+Common mistake: Choosing B ('(7, 0)') or C ('(0, 7)'), which represent possible radii but not the actual center of a circle in polar form.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+What is the equation of a circle with radius 4 units and centered at (2, 0) in polar form?
+A) r = 4
+B) r = 2 + 4sinθ
+C) r = 6
+D) r = 2 + 4cosθ
+Correct Answer: B
+
+Solution:
+The equation of a circle with radius 'a' and center at (h, k) in polar form is r = sqrt((x - h)^2 + (y - k)^2). Substituting the given values, we get r = sqrt((rcosθ - 2)^2 + (rsinθ - 0)^2), which simplifies to 'r = 2 + 4sinθ'.
+
+Explanation:
+To convert a rectangular equation to polar form for a circle centered at (h, k), use the conversion formulas x = rcosθ and y = rsinθ. Then substitute these into the rectangular equation and solve for 'r'. In this case, we get r = 2 + 4sinθ.
+
+Common mistake note:
+Common mistake: Choosing A ('r = 4'), which represents a circle centered at the origin, not the given center (2, 0).
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+What is the equation of a circle with radius 3 units and passing through the point (3√3, π/3) in polar form?
+A) r = 3sinθ
+B) r = 3cosθ
+C) r = 6
+D) r = 3
+Correct Answer: A
+
+Solution:
+The equation of a circle with radius 'a' passing through the point (rcosθ, rsinθ) in polar form is r^2 = a^2. Substituting the given values, we get (3√3)^2 = 3^2, which simplifies to 'r = 3sinθ'.
+
+Explanation:
+To find the equation of a circle passing through a point in polar coordinates, use the conversion formulas x = rcosθ and y = rsinθ. Then substitute the coordinates of the point into the rectangular form of the circle equation (x^2 + y^2 = a^2) and solve for 'r'. In this case, we get r = 3sinθ.
+
+Common mistake note:
+Common mistake: Choosing D ('r = 3'), which represents a circle centered at the origin with radius 3, not passing through the given point.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+What is the equation of a circle with radius 2 units and tangent to the polar axis (x-axis) in polar form?
+A) r = 2cosθ
+B) r = 2sinθ
+C) r = 4
+D) r = 2
+Correct Answer: A
+
+Solution:
+The equation of a circle tangent to the polar axis (x-axis) with radius 'a' in polar form is r = a*cos(θ - α), where α is the angle between the positive x-axis and the line connecting the origin to the point of tangency. Since the circle is tangent to the x-axis, α = π/2. Substituting, we get 'r = 2cos(θ - π/2)', which simplifies to 'r = 2sinθ'.
+
+Explanation:
+When a circle is tangent to the polar axis (x-axis), it means that at least one point on the circle has a y-coordinate of zero. This corresponds to θ = α in the equation r = a*cos(θ - α). Since the tangent occurs at the x-axis, α = π/2. The simplified form for this case is 'r = 2sinθ'.
+
+Common mistake note:
+Common mistake: Choosing D ('r = 2'), which represents a circle centered at the origin with radius 2, not tangent to the polar axis.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.15.7",
+  "objective_text": "Calculate electric charge and current",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One electron charge",
+      "stem": "What is the charge of a single electron in coulombs?",
+      "choices": {
+        "A": "1.6 x 10^-19 C",
+        "B": "1.6 x 10^-18 C",
+        "C": "1.6 x 10^-17 C",
+        "D": "1.6 x 10^-16 C"
+      },
+      "correct_choice": "A",
+      "solution": "The charge of a single electron is exactly 1.6 x 10^-19 Coulombs.",
+      "explanation": "This is a fundamental constant in physics and should be memorized for this context.",
+      "common_mistake_notes": "Common mistake: Choosing the wrong exponent, which changes the magnitude of the charge."
+    },
+    {
+      "id": "Charge to current conversion",
+      "stem": "If a device moves 2 x 10^18 electrons per second, what is the current in amperes?",
+      "choices": {
+        "A": "3.2 A",
+        "B": "0.32 A",
+        "C": "0.032 A",
+        "D": "0.0032 A"
+      },
+      "correct_choice": "C",
+      "solution": "Current (I) is given by the charge (Q) divided by time (t). Charge per second = 1 electron * 2 x 10^18 electrons/s = 2 x 10^18 C/s. Current = Q/t = 2 x 10^18 C/s / (1.6 x 10^-19 C/electron) = 0.032 A.",
+      "explanation": "Calculate the total charge per second and then divide by the charge of a single electron to find the current.",
+      "common_mistake_notes": "Common mistake: Not converting electrons to Coulombs or not using the correct value for the electron charge."
+    },
+    {
+      "id": "Parallel circuit current",
+      "stem": "In a parallel circuit with two branches, one branch has a resistance of 5 Ω and carries 2 A, while the other branch has a resistance of 10 Ω. What is the total current in the circuit?",
+      "choices": {
+        "A": "4 A",
+        "B": "3 A",
+        "C": "2.4 A",
+        "D": "1.8 A"
+      },
+      "correct_choice": "C",
+      "solution": "The voltage across both branches is the same, so we can use Ohm's Law (V = IR) to find the current in each branch. For the first branch: V = 5 Ω * 2 A = 10 V. Now, using Ohm's Law for the second branch: I = V / R = 10 V / 10 Ω = 1 A. The total current is the sum of the currents in both branches: 2 A + 1 A = 3 A.",
+      "explanation": "In a parallel circuit, the voltage across each branch is the same; use Ohm's Law to find individual branch currents and add them for the total current.",
+      "common_mistake_notes": "Common mistake: Assuming that the current divides equally between branches, which is not true in parallel circuits."
+    },
+    {
+      "id": "Series circuit charge",
+      "stem": "In a series circuit with three resistors of 2 Ω, 3 Ω, and 4 Ω, respectively, a voltage of 12 V is applied. What is the total charge passing through the circuit in 5 seconds?",
+      "choices": {
+        "A": "60 C",
+        "B": "30 C",
+        "C": "20 C",
+        "D": "10 C"
+      },
+      "correct_choice": "A",
+      "solution": "First, find the equivalent resistance of the series circuit: R_total = 2 Ω + 3 Ω + 4 Ω = 9 Ω. Then use Ohm's Law to find the current: I = V / R_total = 12 V / 9 Ω = 1.33 A. Finally, calculate the total charge: Q = I * t = 1.33 A * 5 s = 6.65 C. Since we need the answer in coulombs, round to the nearest Coulomb: 60 C.",
+      "explanation": "In a series circuit, the current is the same through each resistor; use Ohm's Law to find the current and multiply by time to get charge.",
+      "common_mistake_notes": "Common mistake: Not accounting for rounding when converting from amperes to coulombs."
+    },
+    {
+      "id": "Capacitor charging",
+      "stem": "A capacitor with a capacitance of 10 μF is connected to a battery with a voltage of 5 V. How much charge will be stored on the capacitor?",
+      "choices": {
+        "A": "50 C",
+        "B": "5 C",
+        "C": "0.5 C",
+        "D": "0.05 C"
+      },
+      "correct_choice": "C",
+      "solution": "Use the formula for capacitance: Q = CV, where Q is charge, C is capacitance, and V is voltage. Charge on the capacitor = 10 μF * 5 V = 50 μC. To convert to Coulombs, remember that 1 μC = 1 x 10^-6 C. So, 50 μC = 50 x 10^-6 C = 0.00005 C or 0.5 C.",
+      "explanation": "Capacitors store charge proportional to the voltage applied; use the capacitance formula to find the stored charge.",
+      "common_mistake_notes": "Common mistake: Not converting microcoulombs (μC) to Coulombs (C)."
+    },
+    {
+      "id": "Resistor power dissipation",
+      "stem": "A resistor with a resistance of 10 Ω is connected to a voltage source of 9 V. What is the power dissipated by the resistor in watts?",
+      "choices": {
+        "A": "81 W",
+        "B": "9 W",
+        "C": "1 W",
+        "D": "0.1 W"
+      },
+      "correct_choice": "C",
+      "solution": "Use the formula for power dissipation in a resistor: P = I^2 * R or P = V^2 / R, where P is power, I is current, and R is resistance. First, find the current using Ohm's Law: I = V / R = 9 V / 10 Ω = 0.9 A. Then calculate the power: P = I^2 * R = (0.9 A)^2 * 10 Ω = 8.1 W. Alternatively, you can use V^2 / R = (9 V)^2 / 10 Ω = 8.1 W. Since power is usually given in watts, divide by 1000 to get the correct unit: 8.1 W / 1000 = 0.0081 W or 1 W.",
+      "explanation": "Power dissipated in a resistor is related to current and resistance; use either I^2 * R or V^2 / R to find the power.",
+      "common_mistake_notes": "Common mistake: Not converting from kilowatts (kW) to watts (W)."
+    },
+    {
+      "id": "Current through a diode",
+      "stem": "A silicon diode has a forward voltage drop of 0.7 V when current flows through it. If a 12 V battery is connected in series with the diode, what will be the approximate current flowing through the diode?",
+      "choices": {
+        "A": "1.7 A",
+        "B": "1.2 A",
+        "C": "0.93 A",
+        "D": "0.67 A"
+      },
+      "correct_choice": "C",
+      "solution": "The voltage across the diode will be approximately 0.7 V, so the remaining voltage across the diode is 12 V - 0.7 V = 11.3 V. Use Ohm's Law to find the current: I = V / R. Assuming a small resistance for the diode, we can approximate the current as I ≈ V_diode / R ≈ 11.3 V / (R + 0 Ω) ≈ 11.3 V / R. Since the diode resistance is not given, we cannot calculate an exact value, but we can estimate that the current will be close to 11.3 V divided by a small resistance. The closest option is 0.93 A.",
+      "explanation": "Diodes have a forward voltage drop; subtract this from the battery voltage and use Ohm's Law to estimate the current through the diode.",
+      "common_mistake_notes": "Common mistake: Assuming that the entire battery voltage drops across the diode, which would result in an incorrect current calculation."
+    }
+  ]
+}

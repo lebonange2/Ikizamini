@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.5.14",
+  "objective_text": "Apply to symmetric properties",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which of the following statements accurately describes a symmetric relation?",
+      "choices": {
+        "A": "If (a, b) is in the relation, then (b, c) must be in the relation.",
+        "B": "If (a, b) and (b, a) are both in the relation, then (a, a) must be in the relation.",
+        "C": "If (a, b) is in the relation, then (b, a) must also be in the relation.",
+        "D": "If (a, b) and (c, d) are in the relation, then (b, a) and (d, c) must be in the relation."
+      },
+      "correct_choice": "C",
+      "solution": "A symmetric relation is one where if (a, b) is in the relation, then (b, a) must also be in the relation. Choice C correctly states this property.",
+      "explanation": "Symmetric relations have symmetry with respect to swapping elements in pairs. Choices A and B do not capture this exact property, while choice D relates multiple pairs which is not the focus of symmetric properties.",
+      "common_mistake_notes": "Common mistake: Choosing (A) because it only partially describes a transitive relation, not a symmetric one."
+    },
+    {
+      "id": ":2",
+      "stem": "Given the relation R on the set {1, 2, 3} defined by (1, 2), (2, 1), (2, 3), and (3, 2), is R symmetric?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined",
+        "D": "None of the above"
+      },
+      "correct_choice": "A",
+      "solution": "The relation R has pairs (1, 2) and (2, 1), which demonstrates symmetry. Since every pair with elements (a, b) also includes (b, a), the relation is symmetric.",
+      "explanation": "To check for symmetry, we only need to see if for every (a, b), there's also (b, a). In this case, R has both pairs, making it symmetric.",
+      "common_mistake_notes": "Common mistake: Choosing (B) because they might overlook the pair (2, 1) or (3, 2) which demonstrates symmetry."
+    },
+    {
+      "id": ":3",
+      "stem": "Which of these properties is NOT a characteristic of a symmetric relation?",
+      "choices": {
+        "A": "If (a, b) is in the relation, then (b, a) must be in the relation.",
+        "B": "The identity property: (a, a) is in the relation for all a in the set.",
+        "C": "If (a, b) and (b, c) are in the relation, then (a, c) must be in the relation.",
+        "D": "For any element a in the set, there exists an element b such that (a, b) is in the relation."
+      },
+      "correct_choice": "C",
+      "solution": "The transitive property (if (a, b) and (b, c) are in the relation, then (a, c) must be in the relation) is not a characteristic of symmetric relations. Symmetry only requires that if (a, b), then (b, a).",
+      "explanation": "Symmetric properties do not imply transitivity; they focus on swapping elements within pairs.",
+      "common_mistake_notes": "Common mistake: Choosing (A) because it's easy to confuse symmetry with reflexivity."
+    },
+    {
+      "id": ":4",
+      "stem": "Consider the relation S on the set of real numbers defined by xSy if and only if x + y = 0. Is S symmetric?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined",
+        "D": "None of the above"
+      },
+      "correct_choice": "B",
+      "solution": "The relation S is not symmetric because for xSy, we have x + y = 0, but if we swap x and y, we get y + x = 0, which is the same equation. This does not guarantee that ySx.",
+      "explanation": "For a symmetric relation, (a, b) implies (b, a), but in this case, x + y = 0 ≠ y + x = 0.",
+      "common_mistake_notes": "Common mistake: Choosing (A) because they might overlook the fact that swapping elements does not change the equation."
+    },
+    {
+      "id": ":5",
+      "stem": "Given the relation T on the set of integers defined by (1, -1), (2, -2), (3, -3), and so on, is T symmetric?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined",
+        "D": "None of the above"
+      },
+      "correct_choice": "A",
+      "solution": "The relation T has pairs like (1, -1) and (-1, 1), which demonstrates symmetry. Since every pair with elements (a, -a) also includes (-a, a), the relation is symmetric.",
+      "explanation": "To check for symmetry, we only need to see if for every (a, b), there's also (b, a). In this case, T has both pairs, making it symmetric.",
+      "common_mistake_notes": "Common mistake: Choosing (B) because they might overlook the pattern in the relation."
+    },
+    {
+      "id": ":6",
+      "stem": "Which of these relations on the set {1, 2, 3} is symmetric?",
+      "choices": {
+        "A": "[1, 1], [2, 2], [3, 3]",
+        "B": "[1, 2], [2, 1], [2, 3]",
+        "C": "[1, 2], [2, 1], [3, 2], [2, 3]",
+        "D": "[1, 2], [2, 1], [3, 1], [1, 3]"
+      },
+      "correct_choice": "D",
+      "solution": "The relation D has pairs (1, 2) and (2, 1), (3, 1) and (1, 3), demonstrating symmetry. Every pair with elements (a, b) also includes (b, a).",
+      "explanation": "To check for symmetry, we only need to see if for every (a, b), there's also (b, a). In this case, D has both pairs, making it symmetric.",
+      "common_mistake_notes": "Common mistake: Choosing (B) because they might overlook the pair (3, 1) or (1, 3) which demonstrates symmetry."
+    },
+    {
+      "id": ":7",
+      "stem": "Let R be a relation on the set of all real numbers such that xRy if and only if x < y. Is R symmetric?",
+      "choices": {
+        "A": "Yes",
+        "B": "No",
+        "C": "Cannot be determined",
+        "D": "None of the above"
+      },
+      "correct_choice": "B",
+      "solution": "The relation R is not symmetric because for xRy (x < y), swapping x and y gives us yRx (y < x), which is not necessarily true. For example, if x = 1 and y = 2, then 1 < 2 but 2 > 1.",
+      "explanation": "Symmetry requires that (a, b) implies (b, a), but in this case, x < y does not imply y < x.",
+      "common_mistake_notes": "Common mistake: Choosing (A) because they might overlook the directionality of the inequality."
+    }
+  ]
+}

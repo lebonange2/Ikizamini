@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.11.3",
+  "objective_text": "Differentiate complex polynomials",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Find the derivative of the function f(x) = 4x^3 - 7x^2 + 9x - 2.",
+      "choices": {
+        "A": "-12x^2 + 14x - 9",
+        "B": "12x^2 - 14x + 9",
+        "C": "4x^2 - 14x + 8",
+        "D": "12x - 14"
+      },
+      "correct_choice": "B",
+      "solution": "f'(x) = d/dx(4x^3) - d/dx(7x^2) + d/dx(9x) - d/dx(2)\nf'(x) = 12x^2 - 14x + 9",
+      "explanation": "The derivative of a polynomial is found by applying the power rule to each term. The power rule states that if f(x) = x^n, then f'(x) = nx^(n-1).",
+      "common_mistake_notes": "A common mistake is forgetting to apply the negative sign when differentiating an even-powered term with an odd exponent (e.g., -7x^2)."
+    },
+    {
+      "id": ":2",
+      "stem": "Find the derivative of g(x) = 5x^4 - 3x^2 + 6.",
+      "choices": {
+        "A": "20x^3 - 6x",
+        "B": "15x^3 - 6x",
+        "C": "20x^3 - 6",
+        "D": "15x^3 - 6"
+      },
+      "correct_choice": "A",
+      "solution": "g'(x) = d/dx(5x^4) - d/dx(3x^2) + d/dx(6)\ng'(x) = 20x^3 - 6x",
+      "explanation": "Again, apply the power rule to each term. Remember that when differentiating a constant term (like 6), the derivative is zero.",
+      "common_mistake_notes": "A common mistake is forgetting to multiply the coefficient of the x-term by its exponent."
+    },
+    {
+      "id": ":3",
+      "stem": "Find the derivative of h(x) = -2x^5 + 4x^3 - 9x + 1.",
+      "choices": {
+        "A": "-10x^4 + 12x^2 - 9",
+        "B": "10x^4 - 12x^2 + 9",
+        "C": "-10x^4 + 12x^2 - 8",
+        "D": "10x^3 - 12x + 9"
+      },
+      "correct_choice": "A",
+      "solution": "h'(x) = d/dx(-2x^5) + d/dx(4x^3) - d/dx(9x) + d/dx(1)\nh'(x) = -10x^4 + 12x^2 - 9",
+      "explanation": "Apply the power rule and remember to multiply negative coefficients by their respective exponents.",
+      "common_mistake_notes": "A common mistake is forgetting to handle the negative sign in front of the x-term correctly."
+    },
+    {
+      "id": ":4",
+      "stem": "Find the derivative of p(x) = 3x^6 - 7x^4 + 9x^2 - 1.",
+      "choices": {
+        "A": "18x^5 - 28x^3 + 18x",
+        "B": "18x^5 - 28x^3 + 18",
+        "C": "18x^5 - 28x^4 + 18x",
+        "D": "18x^5 - 28x^3 - 18"
+      },
+      "correct_choice": "A",
+      "solution": "p'(x) = d/dx(3x^6) - d/dx(7x^4) + d/dx(9x^2) - d/dx(1)\np'(x) = 18x^5 - 28x^3 + 18x",
+      "explanation": "Apply the power rule and be careful with the coefficients and exponents.",
+      "common_mistake_notes": "A common mistake is mixing up the exponents when differentiating terms."
+    },
+    {
+      "id": ":5",
+      "stem": "Find the derivative of q(x) = x^7 - 2x^5 + 3x^3 - 4x + 5.",
+      "choices": {
+        "A": "7x^6 - 10x^4 + 9x^2 - 4",
+        "B": "7x^6 - 10x^4 + 9x - 4",
+        "C": "7x^6 - 10x^4 + 9x^2 - 5",
+        "D": "7x^6 - 10x^3 + 9x - 4"
+      },
+      "correct_choice": "A",
+      "solution": "q'(x) = d/dx(x^7) - d/dx(2x^5) + d/dx(3x^3) - d/dx(4x) + d/dx(5)\nq'(x) = 7x^6 - 10x^4 + 9x^2 - 4",
+      "explanation": "Apply the power rule and remember that the derivative of a constant term is zero.",
+      "common_mistake_notes": "A common mistake is forgetting to include the correct exponents when differentiating."
+    },
+    {
+      "id": ":6",
+      "stem": "Find the derivative of r(x) = -4x^9 + 6x^7 - 8x^5 + 10x^3 - 12x.",
+      "choices": {
+        "A": "-36x^8 + 42x^6 - 40x^4 + 30x^2 - 12",
+        "B": "36x^8 - 42x^6 + 40x^4 - 30x^2 - 12",
+        "C": "-36x^8 + 42x^6 - 40x^4 + 30x^2 + 12",
+        "D": "36x^8 - 42x^6 + 40x^4 - 30x^2 + 12"
+      },
+      "correct_choice": "A",
+      "solution": "r'(x) = d/dx(-4x^9) + d/dx(6x^7) - d/dx(8x^5) + d/dx(10x^3) - d/dx(12x)\nr'(x) = -36x^8 + 42x^6 - 40x^4 + 30x^2 - 12",
+      "explanation": "Apply the power rule and handle negative coefficients correctly.",
+      "common_mistake_notes": "A common mistake is mishandling the negative sign in front of the x-term."
+    },
+    {
+      "id": ":7",
+      "stem": "Find the derivative of s(x) = 2x^10 - 3x^8 + 4x^6 - 5x^4 + 6x^2.",
+      "choices": {
+        "A": "20x^9 - 24x^7 + 24x^5 - 20x^3 + 12x",
+        "B": "20x^9 - 24x^7 + 24x^5 - 20x^3 - 12",
+        "C": "20x^9 - 24x^7 + 24x^5 - 20x^3 + 6",
+        "D": "20x^9 - 24x^7 + 24x^5 - 20x^3 - 12x"
+      },
+      "correct_choice": "A",
+      "solution": "s'(x) = d/dx(2x^10) - d/dx(3x^8) + d/dx(4x^6) - d/dx(5x^4) + d/dx(6x^2)\ns'(x) = 20x^9 - 24x^7 + 24x^5 - 20x^3 + 12x",
+      "explanation": "Apply the power rule and be careful with the coefficients.",
+      "common_mistake_notes": "A common mistake is mixing up the exponents when differentiating terms."
+    }
+  ]
+}

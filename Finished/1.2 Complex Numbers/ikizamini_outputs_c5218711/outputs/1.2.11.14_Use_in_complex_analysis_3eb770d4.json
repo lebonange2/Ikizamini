@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.11.14",
+  "objective_text": "Use in complex analysis",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Calculate the integral of f(z) = z^2 over the unit circle |z| = 1, traversed counterclockwise.",
+      "choices": {
+        "A": "π",
+        "B": "0",
+        "C": "2πi",
+        "D": "4π"
+      },
+      "correct_choice": "C",
+      "solution": "Using Cauchy's integral formula, ∫(f(z)dz) = 2πif(a), where a is the point inside the contour. For f(z) = z^2 and |z| = 1, a = 0. Thus, ∫(z^2 dz) = 2πi * 0 = 0.",
+      "explanation": "The integral of an even power of z over a symmetric path around the origin is zero due to symmetry.",
+      "common_mistake_notes": "Common mistake: Choosing A (π), which is the result for ∫(z dz) over the unit circle. The mistake occurs because the power of z is different."
+    },
+    {
+      "id": "2",
+      "stem": "Find the residue of f(z) = 1/(z^3 + 1) at the pole z = -1.",
+      "choices": {
+        "A": "-1/6",
+        "B": "1/6",
+        "C": "1/3",
+        "D": "1"
+      },
+      "correct_choice": "B",
+      "solution": "The residue of a function with a simple pole at z = -1 is given by the limit (z + 1) * f(z), as z approaches -1. For f(z) = 1/(z^3 + 1), this limit simplifies to (z + 1)/(3z^2). Evaluating at z = -1 gives 1/6.",
+      "explanation": "Residues help evaluate contour integrals by providing the contribution from each pole inside the contour.",
+      "common_mistake_notes": "Common mistake: Choosing A (-1/6), which is the limit without multiplying by (z + 1). The mistake occurs because the residue formula requires multiplication by (z - pole)."
+    },
+    {
+      "id": "3",
+      "stem": "Evaluate ∫(e^(iz) dz) from 0 to 2π, where i is the imaginary unit.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2πi",
+        "D": "-2πi"
+      },
+      "correct_choice": "A",
+      "solution": "The integral of e^(iz) over a full period (0 to 2π) results in a real exponential function that returns to its original value, making the definite integral zero.",
+      "explanation": "Exponential functions with imaginary parts have periodic behavior along the real axis.",
+      "common_mistake_notes": "Common mistake: Choosing C (2πi), which is the result for ∫(iz dz) over 0 to 2π. The mistake occurs because e^(iz) does not involve z directly."
+    },
+    {
+      "id": "4",
+      "stem": "Determine the value of ∫(cos(z)/sin(z) dz) from 0 to π, where the path avoids the branch cut along the negative real axis.",
+      "choices": {
+        "A": "2",
+        "B": "π",
+        "C": "0",
+        "D": "1"
+      },
+      "correct_choice": "A",
+      "solution": "The function cos(z)/sin(z) can be simplified to tan(z). The integral of tan(z) dz from 0 to π is -ln(cos(π)) + ln(cos(0)) = 2.",
+      "explanation": "Branch cuts are necessary for multivalued functions like the logarithm and tangent. By avoiding the branch cut, we avoid discontinuities.",
+      "common_mistake_notes": "Common mistake: Choosing C (0), which would be correct if the integral were over a full period. The mistake occurs because the integration interval does not encompass a full period."
+    },
+    {
+      "id": "5",
+      "stem": "Find the Fourier transform of f(t) = e^(-t)u(t), where u(t) is the unit step function.",
+      "choices": {
+        "A": "1/(s + 1)",
+        "B": "s/(s + 1)^2",
+        "C": "1/s + 1",
+        "D": "s/(s + 1)"
+      },
+      "correct_choice": "A",
+      "solution": "The Fourier transform of e^(-t)u(t) is F(s) = ∫(e^(-t)e^(st) dt), from 0 to infinity, which simplifies to 1/(s + 1).",
+      "explanation": "The Fourier transform converts a time-domain function into its frequency domain representation.",
+      "common_mistake_notes": "Common mistake: Choosing B (s/(s + 1)^2), which is the Laplace transform of e^(-t)u(t). The mistake occurs because the question asks for the Fourier transform, not the Laplace transform."
+    },
+    {
+      "id": "6",
+      "stem": "Calculate the winding number of the curve C given by z(t) = e^(it), 0 ≤ t ≤ 2π, around the origin.",
+      "choices": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "-1"
+      },
+      "correct_choice": "B",
+      "solution": "The winding number is the number of times a curve winds counterclockwise (positive) or clockwise (negative) around a point. For z(t) = e^(it), it traverses the unit circle once counterclockwise, so the winding number is 1.",
+      "explanation": "Winding numbers help classify the behavior of curves around points and are used in topological arguments in complex analysis.",
+      "common_mistake_notes": "Common mistake: Choosing A (0), which would be correct if the curve did not encircle the origin. The mistake occurs because the curve does enclose the origin."
+    },
+    {
+      "id": "7",
+      "stem": "Determine the value of ∫(1/z dz) from 1 to -1 along the real axis, avoiding the singularity at z = 0.",
+      "choices": {
+        "A": "ln|-1| - ln|1|",
+        "B": "πi",
+        "C": "-πi",
+        "D": "0"
+      },
+      "correct_choice": "C",
+      "solution": "The integral of 1/z dz along a path avoiding the singularity at z = 0 can be evaluated using Cauchy's principal value. For the real axis, we integrate from 1 to ε and then from -ε to -1, taking the limit as ε approaches 0. The result is -πi.",
+      "explanation": "Cauchy's principal value helps evaluate integrals with singularities by considering a limiting process.",
+      "common_mistake_notes": "Common mistake: Choosing A (ln|-1| - ln|1|), which would be correct if the integral were over a path that does not cross the branch cut. The mistake occurs because the integration path crosses the branch cut."
+    }
+  ]
+}

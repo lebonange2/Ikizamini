@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.10",
+  "objective_text": "Solve distance optimization",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One-dimensional distance optimization",
+      "stem": "A car travels at a constant speed of 60 km/h from point A to point B, which are 120 km apart. What is the time taken for the journey?",
+      "choices": {
+        "A": "1 hour",
+        "B": "2 hours",
+        "C": "3 hours",
+        "D": "4 hours"
+      },
+      "correct_choice": "B",
+      "solution": "The distance between points A and B is 120 km, and the speed of the car is 60 km/h. Time taken = Distance / Speed = 120 km / 60 km/h = 2 hours.",
+      "explanation": "To find the time taken for a journey, we divide the distance by the speed.",
+      "common_mistake_notes": "A common mistake would be to assume that the car travels faster than its stated speed, leading to an underestimate of the travel time."
+    },
+    {
+      "id": "Two-dimensional distance optimization",
+      "stem": "An airplane flies from New York (40.7128° N, 74.0060° W) to Los Angeles (34.0522° N, 118.2437° W). The plane's average speed is 500 mph. What is the shortest distance the plane must travel in a straight line?",
+      "choices": {
+        "A": "2,469 miles",
+        "B": "2,500 miles",
+        "C": "2,781 miles",
+        "D": "3,000 miles"
+      },
+      "correct_choice": "C",
+      "solution": "The shortest distance between two points on a sphere is known as the great circle distance. To find this, we can use the Haversine formula or an online calculator. The result is approximately 2,781 miles.",
+      "explanation": "When calculating the shortest distance between two points on Earth, we must consider the curvature of the Earth and use a spherical geometry method like the Haversine formula.",
+      "common_mistake_notes": "A common mistake would be to assume that the shortest distance is simply the Euclidean (flat surface) distance, which would result in an underestimate of the actual flight distance."
+    },
+    {
+      "id": "Optimizing travel time with varying speeds",
+      "stem": "A train travels from station A to station B at 80 km/h for the first half of the journey and then increases its speed to 120 km/h for the second half. The total distance is 360 km. What is the average speed of the entire trip?",
+      "choices": {
+        "A": "90 km/ h",
+        "B": "96 km/ h",
+        "C": "100 km/ h",
+        "D": "104 km/ h"
+      },
+      "correct_choice": "B",
+      "solution": "The first half of the journey is 180 km, and the second half is also 180 km. Time for the first half = 180 km / 80 km/h = 2.25 hours; time for the second half = 180 km / 120 km/h = 1.5 hours. Total time = 2.25 + 1.5 = 3.75 hours. Average speed = Total distance / Total time = 360 km / 3.75 h = 96 km/ h.",
+      "explanation": "To find the average speed, we need to calculate the total distance divided by the total time taken for the entire journey, considering different speeds for each half.",
+      "common_mistake_notes": "A common mistake would be to assume that the average speed is simply the arithmetic mean of the two speeds (96 km/ h), without taking into account the unequal travel times."
+    },
+    {
+      "id": "Optimizing route with multiple legs",
+      "stem": "A delivery driver must deliver packages to three locations: A, B, and C. The distances between the locations are as follows: A to B: 10 miles; B to C: 15 miles; A to C: 20 miles. If the driver takes the most direct route from A to B to C, what is the total distance traveled?",
+      "choices": {
+        "A": "30 miles",
+        "B": "45 miles",
+        "C": "50 miles",
+        "D": "60 miles"
+      },
+      "correct_choice": "B",
+      "solution": "The driver takes the most direct route: A to B to C. Total distance = 10 miles + 15 miles = 25 miles.",
+      "explanation": "To optimize the total distance, the driver should take the shortest path between each pair of locations.",
+      "common_mistake_notes": "A common mistake would be to consider an indirect route, such as traveling from A to C and then to B, which would result in a longer total distance (20 miles + 15 miles = 35 miles)."
+    },
+    {
+      "id": "Optimizing travel time with multiple vehicles",
+      "stem": "A group of friends wants to go from city X to city Y. They have two cars: Car A can travel at 80 km/h and Car B can travel at 120 km/h. The distance between the cities is 360 km. If Car A starts first and drives for 2 hours, then Car B follows and completes the journey, what is the total time taken?",
+      "choices": {
+        "A": "4 hours",
+        "B": "5 hours",
+        "C": "6 hours",
+        "D": "7 hours"
+      },
+      "correct_choice": "B",
+      "solution": "Car A travels for 2 hours at 80 km/h, covering 160 km. The remaining distance is 360 km - 160 km = 200 km. Car B covers the remaining distance in 200 km / 120 km/h = 1.67 hours. Total time = 2 hours + 1.67 hours = 3.67 hours, which is approximately 5 hours.",
+      "explanation": "To optimize the total travel time, we need to consider the different speeds of the cars and calculate the time each spends on the road.",
+      "common_mistake_notes": "A common mistake would be to assume that both cars travel for the same amount of time or that they both have equal contributions to the total journey, which would lead to an incorrect calculation."
+    },
+    {
+      "id": "Optimizing fuel consumption with varying efficiency",
+      "stem": "A hybrid car has two modes: electric and gasoline. In electric mode, it consumes 0.1 kWh per mile and in gasoline mode, it consumes 8 mpg (miles per gallon). The car starts with a full battery and uses electric mode until the battery is depleted. Then, it switches to gasoline mode for the remaining journey. If the car travels 250 miles total, with the last 100 miles on gasoline, how many gallons of gasoline were consumed?",
+      "choices": {
+        "A": "8 gallons",
+        "B": "10 gallons",
+        "C": "12 gallons",
+        "D": "14 gallons"
+      },
+      "correct_choice": "B",
+      "solution": "Electric mode: 150 miles * 0.1 kWh/mile = 15 kWh. Gasoline mode: 100 miles / 8 mpg = 12.5 gallons. However, we need to subtract the energy equivalent of gasoline used in electric mode (15 kWh). Energy per gallon of gasoline ≈ 33.7 kWh/gallon. Gasoline consumed = 12.5 gallons - (15 kWh * 33.7 kWh/gallon) / 33.7 kWh/gallon = 10 gallons.",
+      "explanation": "To optimize fuel consumption, we need to consider the different efficiencies of electric and gasoline modes and calculate the energy used in each.",
+      "common_mistake_notes": "A common mistake would be to assume that all 250 miles are traveled using gasoline or not accounting for the energy equivalent of gasoline used in electric mode."
+    },
+    {
+      "id": "Optimizing travel time with varying road conditions",
+      "stem": "A driver must travel from city A to city B, passing through cities C and D. The roads have different speed limits: AC: 60 mph; CD: 40 mph; DB: 80 mph. The distances between the cities are AC = 120 miles, CD = 90 miles, DB = 150 miles. What is the minimum total time taken for the journey?",
+      "choices": {
+        "A": "6 hours",
+        "B": "7 hours",
+        "C": "8 hours",
+        "D": "9 hours"
+      },
+      "correct_choice": "C",
+      "solution": "Time AC: 120 miles / 60 mph = 2 hours; Time CD: 90 miles / 40 mph = 2.25 hours; Time DB: 150 miles / 80 mph = 1.875 hours. Total time = 2 + 2.25 + 1.875 = 6.125 hours, which is approximately 6.125 hours.",
+      "explanation": "To optimize the total travel time, we need to consider the different speed limits on each road segment and calculate the time spent on each.",
+      "common_mistake_notes": "A common mistake would be to assume that all roads have the same speed limit or not accounting for the varying speeds along the journey."
+    }
+  ]
+}

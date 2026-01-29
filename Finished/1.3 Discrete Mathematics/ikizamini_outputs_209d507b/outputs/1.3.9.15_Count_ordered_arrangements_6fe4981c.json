@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.9.15",
+  "objective_text": "Count ordered arrangements",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "How many ways can 5 distinct books be arranged on a shelf?",
+      "choices": {
+        "A": "5",
+        "B": "10",
+        "C": "60",
+        "D": "120"
+      },
+      "correct_choice": "C",
+      "solution": "To find the number of ways to arrange 5 distinct books, we use the factorial notation. The formula is n!, where n is the number of items being arranged. For 5 books: 5! = 5 × 4 × 3 × 2 × 1 = 120",
+      "explanation": "The factorial grows quickly as you multiply consecutive integers, so for 5 items it's 120 arrangements.",
+      "common_mistake_notes": "A common mistake is to think that since there are 5 books, the answer would be 5. However, this only counts one possible arrangement (e.g., book 1 then book 2, etc.). The factorial accounts for all permutations."
+    },
+    {
+      "id": "Bghj",
+      "stem": "How many different ways can a committee of 3 students be chosen from a group of 8 students?",
+      "choices": {
+        "A": "56",
+        "B": "40",
+        "C": "28",
+        "D": "16"
+      },
+      "correct_choice": "C",
+      "solution": "To find the number of combinations for selecting r items from n distinct items, we use the combination formula: C(n, r) = n! / [r!(n-r)!]. For 3 students from 8: C(8, 3) = 8! / [3!(8-3)!] = (8 × 7 × 6) / (3 × 2 × 1) = 56 / 6 = 28",
+      "explanation": "The combination formula accounts for selecting groups without regard to the order in which they are chosen.",
+      "common_mistake_notes": "A common mistake is to use permutations instead of combinations, leading to an overcount. In this case, using permutations would give 8! / (8-3)! = 40, which includes multiple arrangements of the same committee members."
+    },
+    {
+      "id": "Qwer",
+      "stem": "How many distinct 3-letter words can be formed from the letters in the word 'MATHEMATICS', without repeating any letter?",
+      "choices": {
+        "A": "210",
+        "B": "420",
+        "C": "720",
+        "D": "1,260"
+      },
+      "correct_choice": "C",
+      "solution": "Since there are no repetitions allowed and we're forming 3-letter words, we use permutations. The formula is nPr = n! / (n-3)!, where n is the total number of items and r is the number to be arranged. For 'MATHEMATICS': 12! / (12-3)! = 479001600 / 5040 = 95040, which simplifies to 720 when we divide by 120 (the number of ways to arrange the repeated letters).",
+      "explanation": "The formula accounts for all possible arrangements without considering duplicates due to repeating letters.",
+      "common_mistake_notes": "A common mistake is not accounting for repeated letters, which would lead to an overcount. In this case, using 12! / 3! directly would give 479001600 / 6 = 79833600, which is incorrect."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "How many ways can a 5-person row be arranged if two specific people must sit next to each other?",
+      "choices": {
+        "A": "24",
+        "B": "48",
+        "C": "120",
+        "D": "240"
+      },
+      "correct_choice": "B",
+      "solution": "First, consider the two specific people as a single unit. There are 4 units (the pair and the other 3 individuals) to arrange, which gives 4! = 24 arrangements. However, within the pair, there are 2 ways they can be arranged. So, the total number of arrangements is 24 * 2 = 48.",
+      "explanation": "By treating the two specific people as a unit, we avoid double-counting their permutations within the row.",
+      "common_mistake_notes": "A common mistake is to only consider the arrangement of the 4 units without accounting for the 2 ways the pair can be arranged. This would result in an undercount of 24 arrangements."
+    },
+    {
+      "id": "Zxcvb",
+      "stem": "How many distinct 4-digit numbers can be formed using the digits 1, 2, 3, and 4 without repeating any digit?",
+      "choices": {
+        "A": "6",
+        "B": "12",
+        "C": "24",
+        "D": "25"
+      },
+      "correct_choice": "C",
+      "solution": "Since there are no repetitions allowed and we're forming 4-digit numbers, we use permutations. The formula is nPr = n! / (n-4)!, where n is the total number of items and r is the number to be arranged. For the digits 1, 2, 3, and 4: 4! = 24.",
+      "explanation": "The formula accounts for all possible arrangements without considering duplicates due to repeating digits.",
+      "common_mistake_notes": "A common mistake is not accounting for the order of the digits, which would lead to an undercount. In this case, simply multiplying the number of choices for each position (4 * 3 * 2 * 1) would give 24, which is correct but obtained through a different method."
+    },
+    {
+      "id": "Bnm",
+      "stem": "How many ways can a 6-person dance troupe be arranged in a line if two specific dancers must not stand next to each other?",
+      "choices": {
+        "A": "360",
+        "B": "720",
+        "C": "1440",
+        "D": "5040"
+      },
+      "correct_choice": "C",
+      "solution": "First, arrange the 6 people without restrictions, which gives 6! = 720 arrangements. However, in these arrangements, the two specific dancers are always together, so we need to subtract the number of times they're next to each other. Treating them as a single unit, there are 5 units (the pair and the other 4 individuals) to arrange, which gives 5! = 120 arrangements. Since within the pair there are 2 ways they can be arranged, we have 120 * 2 = 240 arrangements where they're together. Subtract this from the total: 720 - 240 = 480. Finally, since the two dancers can switch places, we double the result to account for both possibilities: 480 * 2 = 960.",
+      "explanation": "By treating the two specific dancers as a single unit and then accounting for their positions within that unit, we avoid overcounting arrangements where they're together.",
+      "common_mistake_notes": "A common mistake is to not consider the cases where the two dancers are together at all, leading to an overcount. Another mistake is not accounting for the 2 ways the pair can be arranged within their unit."
+    },
+    {
+      "id": "Vbnm",
+      "stem": "How many distinct 3-letter words can be formed using the letters in the word 'EQUATION', without repeating any letter?",
+      "choices": {
+        "A": "15",
+        "B": "30",
+        "C": "42",
+        "D": "72"
+      },
+      "correct_choice": "C",
+      "solution": "Since there are no repetitions allowed and we're forming 3-letter words, we use permutations. The formula is nPr = n! / (n-3)!, where n is the total number of items and r is the number to be arranged. For 'EQUATION': 8! / (8-3)! = 40320 / 120 = 336, which simplifies to 42 when we divide by 7 (the number of ways to arrange the repeated letter 'T').",
+      "explanation": "The formula accounts for all possible arrangements without considering duplicates due to repeating letters.",
+      "common_mistake_notes": "A common mistake is not accounting for the repeated letter 'T', which would lead to an overcount. In this case, using 8! / 3! directly would give 40320 / 6 = 6720, which is incorrect."
+    }
+  ]
+}

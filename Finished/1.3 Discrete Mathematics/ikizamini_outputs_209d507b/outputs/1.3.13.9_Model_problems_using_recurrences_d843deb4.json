@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.13.9",
+  "objective_text": "Model problems using recurrences",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the recurrence relation for the number of ways to tile a 2xN chessboard with 2x1 dominoes?",
+      "choices": {
+        "A": "T(n) = T(n-1) + T(n-2)",
+        "B": "T(n) = 2 πn",
+        "C": "T(n) = 2^N",
+        "D": "T(n) = N!"
+      },
+      "correct_choice": "A",
+      "solution": "The recurrence relation for tiling a 2xN chessboard with 2x1 dominoes is found by considering the last tile placed. If it covers the two leftmost cells, there are T(n-1) ways to tile the remaining board. If it covers the second and third cells from the left, then there are T(n-2) ways to tile the rest. Therefore, the recurrence relation is T(n) = T(n-1) + T(n-2).",
+      "explanation": "This problem involves modeling a combinatorial situation with a recurrence relation.",
+      "common_mistake_notes": "A common mistake would be to choose C (T(n) = 2^N), which represents the number of subsets of size N from a set, not the number of ways to tile a board."
+    },
+    {
+      "id": "Bghj",
+      "stem": "What is the recurrence relation for the Fibonacci sequence, where F(1) = 1 and F(2) = 1?",
+      "choices": {
+        "A": "F(n) = F(n-1) + F(n-2)",
+        "B": "F(n) = n!",
+        "C": "F(n) = 2^n",
+        "D": "F(n) = F(n-1) × F(n-2)"
+      },
+      "correct_choice": "A",
+      "solution": "The Fibonacci sequence is defined by the recurrence relation F(n) = F(n-1) + F(n-2), where F(1) = 1 and F(2) = 1.",
+      "explanation": "This problem tests understanding of a well-known recurrence relation.",
+      "common_mistake_notes": "A common mistake would be to choose D (F(n) = F(n-1) × F(n-2)), which is the recurrence relation for the Lucas sequence, not the Fibonacci sequence."
+    },
+    {
+      "id": "Qwer",
+      "stem": "What is the recurrence relation for the number of ways to climb n stairs if you can take 1 or 2 steps at a time?",
+      "choices": {
+        "A": "C(n) = C(n-1) + C(n-2)",
+        "B": "C(n) = 2^n",
+        "C": "C(n) = n!",
+        "D": "C(n) = C(n-1) × C(n-2)"
+      },
+      "correct_choice": "A",
+      "solution": "The recurrence relation for this problem is found by considering the last step taken. If you take a single step, there are C(n-1) ways to climb the remaining stairs. If you take two steps, there are C(n-2) ways. Therefore, C(n) = C(n-1) + C(n-2).",
+      "explanation": "This problem models a counting problem with a recurrence relation.",
+      "common_mistake_notes": "A common mistake would be to choose B (C(n) = 2^n), which represents the number of subsets of size n from a set, not the number of ways to climb stairs."
+    },
+    {
+      "id": "Poiu",
+      "stem": "What is the recurrence relation for the number of binary trees with n nodes?",
+      "choices": {
+        "A": "T(n) = T(n-1) + T(n-2)",
+        "B": "T(n) = 2^n - 1",
+        "C": "T(n) = n! / (n-2)!",
+        "D": "T(n) = C(n, 2)"
+      },
+      "correct_choice": "C",
+      "solution": "The number of binary trees with n nodes is given by the recurrence relation T(n) = n × T(n-1), with T(1) = 1. This can be simplified to T(n) = n! / (n-2)!.",
+      "explanation": "This problem involves modeling a tree structure with a recurrence relation.",
+      "common_mistake_notes": "A common mistake would be to choose A (T(n) = T(n-1) + T(n-2)), which is the Fibonacci sequence, not the number of binary trees."
+    },
+    {
+      "id": "Bvnm",
+      "stem": "What is the recurrence relation for the number of ways to partition a set of n elements into k non-empty subsets?",
+      "choices": {
+        "A": "P(n, k) = P(n-1, k) + P(n-1, k-1)",
+        "B": "P(n, k) = C(n, k)",
+        "C": "P(n, k) = k^n",
+        "D": "P(n, k) = n! / (k!(n-k)!)"
+      },
+      "correct_choice": "A",
+      "solution": "The recurrence relation for partitioning a set into non-empty subsets is P(n, k) = P(n-1, k) + P(n-1, k-1), with P(1, k) = 1 and P(n, n) = 1.",
+      "explanation": "This problem models a combinatorial situation involving partitions.",
+      "common_mistake_notes": "A common mistake would be to choose D (P(n, k) = n! / (k!(n-k)!)), which represents the number of ways to arrange n elements into k groups, not the number of ways to partition them."
+    },
+    {
+      "id": "Vbnm",
+      "stem": "What is the recurrence relation for the number of strings of length n using only characters 'a' and 'b', where no two consecutive characters are the same?",
+      "choices": {
+        "A": "S(n) = S(n-1) + S(n-2)",
+        "B": "S(n) = 2^n",
+        "C": "S(n) = n! / 2!",
+        "D": "S(n) = S(n-1) + S(n-2) - S(n-3)"
+      },
+      "correct_choice": "D",
+      "solution": "The recurrence relation for this problem is found by considering the last character added. If it's 'a', there are S(n-1) valid strings, and if it's 'b', there are also S(n-1) valid strings (since we can't have two consecutive 'a's or 'b's). However, we've counted the case where the last two characters are 'aa' or 'bb' twice, so we subtract S(n-3), which is the number of invalid strings ending in 'aaa' or 'bbb'. Thus, S(n) = S(n-1) + S(n-2) - S(n-3).",
+      "explanation": "This problem models a string constraint with a recurrence relation.",
+      "common_mistake_notes": "A common mistake would be to choose A (S(n) = S(n-1) + S(n-2)), which is the Fibonacci sequence, not the number of strings satisfying this condition."
+    },
+    {
+      "id": "Xzas",
+      "stem": "What is the recurrence relation for the number of ways to arrange n distinct items into a circle?",
+      "choices": {
+        "A": "C(n) = C(n-1) + C(n-2)",
+        "B": "C(n) = (n-1)! / 2",
+        "C": "C(n) = n!",
+        "D": "C(n) = n × (n-1)"
+      },
+      "correct_choice": "B",
+      "solution": "The number of ways to arrange n distinct items in a circle is given by C(n) = (n-1)! / 2, as rotations are considered equivalent.",
+      "explanation": "This problem involves modeling a circular arrangement with a recurrence relation.",
+      "common_mistake_notes": "A common mistake would be to choose C (C(n) = n!), which represents the number of ways to arrange n items linearly, not in a circle."
+    }
+  ]
+}

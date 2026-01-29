@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.3",
+  "objective_text": "Identify constraint equations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "AsdFg67h",
+      "stem": "What is the constraint equation for a rectangular garden with length x meters and width y meters, where the perimeter must be 20 meters?",
+      "choices": {
+        "A": "x + y = 10",
+        "B": "xy = 20",
+        "C": "2(x + y) = 20",
+        "D": "x^2 + y^2 = 20"
+      },
+      "correct_choice": "C",
+      "solution": "The perimeter of a rectangle is given by P = 2(length + width). Given that the perimeter must be 20 meters, we can set up the equation 2(x + y) = 20. Solving for the constraint equation, we get x + y = 10.",
+      "explanation": "The correct answer is C because it represents the relationship between length and width based on the given perimeter.",
+      "common_mistake_notes": "A common mistake would be to choose A without considering that it represents the sum of dimensions rather than their sum being equal to half the perimeter. Choice B represents an area equation, not a constraint for the perimeter. Choice D represents the sum of squares, which is unrelated to the perimeter."
+    },
+    {
+      "id": "ZxvBn54m",
+      "stem": "What is the constraint equation for a triangle with sides x cm, y cm, and z cm, where the sum of any two sides must be greater than the third side?",
+      "choices": {
+        "A": "x + y > z",
+        "B": "x + y = z",
+        "C": "xy = z",
+        "D": "xyz = 1"
+      },
+      "correct_choice": "A",
+      "solution": "The triangle inequality theorem states that the sum of any two sides of a triangle must be greater than the length of the third side. Therefore, we can write three inequalities: x + y > z, x + z > y, and y + z > x. The constraint equation for this problem is one of these inequalities; let's choose the first one: x + y > z.",
+      "explanation": "The correct answer is A because it represents the triangle inequality theorem, ensuring that any two sides combined are longer than the third side.",
+      "common_mistake_notes": "A common mistake would be to choose B, which represents equality rather than the required inequality. Choice C represents an area equation for a rectangle, not a constraint for triangles. Choice D represents a product of triangle's sides, which is unrelated to the triangle inequality."
+    },
+    {
+      "id": "JklPq89r",
+      "stem": "What is the constraint equation for a right-angled triangle with legs x cm and y cm, where the Pythagorean theorem applies?",
+      "choices": {
+        "A": "x^2 + y^2 = 1",
+        "B": "x^2 + y^2 = z^2",
+        "C": "xy = z",
+        "D": "x + y = z"
+      },
+      "correct_choice": "B",
+      "solution": "The Pythagorean theorem states that in a right-angled triangle, the square of the length of the hypotenuse (z) is equal to the sum of the squares of the lengths of the other two sides (x and y). The constraint equation for this problem is x^2 + y^2 = z^2.",
+      "explanation": "The correct answer is B because it represents the Pythagorean theorem, which relates the lengths of the triangle's sides in a right-angled triangle.",
+      "common_mistake_notes": "A common mistake would be to choose A, which represents an equation that does not satisfy the Pythagorean theorem. Choice C represents an area equation for a rectangle, not the Pythagorean theorem. Choice D represents the sum of legs, which is unrelated to the Pythagorean theorem."
+    },
+    {
+      "id": "XcvBn98t",
+      "stem": "What is the constraint equation for a circle with radius r units, where the circumference must be 20π units?",
+      "choices": {
+        "A": "r = 10",
+        "B": "C = 2πr",
+        "C": "A = πr^2",
+        "D": "C = 20"
+      },
+      "correct_choice": "A",
+      "solution": "The circumference of a circle is given by the formula C = 2πr. Given that the circumference must be 20π units, we can set up the equation 2πr = 20π and solve for r: r = 10.",
+      "explanation": "The correct answer is A because it represents the radius of the circle based on the given circumference using the formula C = 2πr.",
+      "common_mistake_notes": "A common mistake would be to choose B, which is the general formula for the circumference but not the constraint equation. Choice C represents the area of a circle, not the circumference. Choice D represents the circumference with no variable for radius."
+    },
+    {
+      "id": "QweRt78u",
+      "stem": "What is the constraint equation for a system of linear equations represented by 2x + 3y = k and 4x - y = m, where the sum of x and y must be equal to 5?",
+      "choices": {
+        "A": "x + y = 5",
+        "B": "k + m = 10",
+        "C": "6x + 2y = 5",
+        "D": "8x - 4y = 5"
+      },
+      "correct_choice": "A",
+      "solution": "The constraint equation for this system is given by the condition that x and y must sum to 5. Therefore, we can write x + y = 5 as the constraint equation.",
+      "explanation": "The correct answer is A because it represents the constraint on the sum of x and y in the system of equations.",
+      "common_mistake_notes": "A common mistake would be to choose B, which represents the sum of constants k and m, not the sum of x and y. Choice C and D are incorrect combinations of the original equation terms."
+    },
+    {
+      "id": "BvnMn90v",
+      "stem": "What is the constraint equation for a system of inequalities represented by 2x + 3y < 15 and x - y > 3, where the sum of x and y must be less than or equal to 6?",
+      "choices": {
+        "A": "x + y ≤ 6",
+        "B": "2x + 3y > 15",
+        "C": "x - y < 3",
+        "D": "4x - 2y ≥ 9"
+      },
+      "correct_choice": "A",
+      "solution": "The constraint equation for this system is given by the condition that x and y must sum to less than or equal to 6. Therefore, we can write x + y ≤ 6 as the constraint inequality.",
+      "explanation": "The correct answer is A because it represents the constraint on the sum of x and y in the system of inequalities.",
+      "common_mistake_notes": "A common mistake would be to choose B, which represents an inequality unrelated to the constraint. Choice C represents one of the original inequalities but not the constraint. Choice D is an incorrect combination of terms."
+    },
+    {
+      "id": "GhiJk89w",
+      "stem": "What is the constraint equation for a system of equations represented by 3x - 2y = k and x + y = m, where the product of x and y must be equal to 10?",
+      "choices": {
+        "A": "xy = 10",
+        "B": "k + m = 5",
+        "C": "6x - 4y = 20",
+        "D": "3m - 2k = 10"
+      },
+      "correct_choice": "A",
+      "solution": "The constraint equation for this system is given by the condition that the product of x and y must be equal to 10. Therefore, we can write xy = 10 as the constraint equation.",
+      "explanation": "The correct answer is A because it represents the constraint on the product of x and y in the system of equations.",
+      "common_mistake_notes": "A common mistake would be to choose B, which represents the sum of constants k and m, not the product of x and y. Choice C and D are incorrect combinations of the original equation terms."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.8.4",
+  "objective_text": "Apply fundamental theorem of algebra",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "How many complex roots (including real ones) does a polynomial equation of degree n have?",
+      "choices": {
+        "A": "n - 1",
+        "B": "2n",
+        "C": "n",
+        "D": "n + 1"
+      },
+      "correct_choice": "C",
+      "solution": "The Fundamental Theorem of Algebra states that a polynomial equation of degree n has exactly n roots, counting multiplicities. This includes real and complex roots.",
+      "explanation": "Given the degree n, the number of roots is directly related to it, which equals n.",
+      "common_mistake_notes": "Students may forget to consider multiplicities or confuse this with the number of terms in a polynomial."
+    },
+    {
+      "id": "Two",
+      "stem": "If a quadratic equation has only one root, what can be concluded about its discriminant?",
+      "choices": {
+        "A": "The discriminant is positive.",
+        "B": "The discriminant is zero.",
+        "C": "The discriminant is negative.",
+        "D": "The discriminant does not affect the number of roots."
+      },
+      "correct_choice": "B",
+      "solution": "A quadratic equation has one root when its discriminant (b^2 - 4ac) equals zero, according to the quadratic formula. This results in a repeated root.",
+      "explanation": "For ax^2 + bx + c = 0, if b^2 - 4ac = 0, there is only one root due to a double root.",
+      "common_mistake_notes": "Students might think that a positive discriminant implies two roots but should remember zero discriminant indicates a repeated root."
+    },
+    {
+      "id": "Three",
+      "stem": "According to the Fundamental Theorem of Algebra, how many complex roots does a cubic equation have?",
+      "choices": {
+        "A": "Exactly one complex root.",
+        "B": "Exactly two complex roots.",
+        "C": "Exactly three complex roots.",
+        "D": "No complex roots."
+      },
+      "correct_choice": "C",
+      "solution": "A cubic equation has exactly three roots, counting multiplicities, as stated by the Fundamental Theorem of Algebra. These can be real or complex.",
+      "explanation": "The theorem applies to any degree n polynomial; for a cubic (degree 3), there are three roots in total.",
+      "common_mistake_notes": "Students may confuse the number of terms with the number of roots, but they should remember that each root corresponds to the degree."
+    },
+    {
+      "id": "Four",
+      "stem": "If a polynomial equation of degree 4 has two real roots, how many complex roots does it have?",
+      "choices": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "None"
+      },
+      "correct_choice": "B",
+      "solution": "In a polynomial equation of degree n, there are exactly n roots. With two real roots, the remaining complex roots total 4 - 2 = 2.",
+      "explanation": "The total number of roots minus the real roots gives the count for complex roots.",
+      "common_mistake_notes": "Students might overlook subtracting real roots from the degree or混淆 'real' with 'distinct'."
+    },
+    {
+      "id": "Five",
+      "stem": "What is the possible range of non-real complex roots in a polynomial equation based on its degree?",
+      "choices": {
+        "A": "The number of non-real complex roots is always equal to the degree.",
+        "B": "The number of non-real complex roots is always half the degree.",
+        "C": "The number of non-real complex roots can be any number up to the degree, but not exceeding it.",
+        "D": "There is no relationship between the two."
+      },
+      "correct_choice": "C",
+      "solution": "A polynomial equation of degree n has exactly n roots, which may include real and non-real complex roots. The number of non-real complex roots can range from 0 to (n - 1), but not more.",
+      "explanation": "The total root count is determined by the degree, with non-real roots filling any remaining slots after accounting for real roots.",
+      "common_mistake_notes": "Students might think there's a fixed ratio between non-real roots and degree, but they should remember that it depends on the specific equation."
+    },
+    {
+      "id": "Six",
+      "stem": "Given a polynomial equation of degree 6 with three real roots, how many distinct complex conjugate pairs are present?",
+      "choices": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "correct_choice": "B",
+      "solution": "With 6 total roots and 3 real ones, there must be 3 complex roots. Complex roots come in conjugate pairs, so 3 complex roots imply 1.5 pairs, which rounds down to 1 pair.",
+      "explanation": "Divide the number of complex roots by 2 to find the count of distinct pairs.",
+      "common_mistake_notes": "Students might forget that complex roots occur in pairs and divide the total number of complex roots by 1 instead of 2."
+    },
+    {
+      "id": "Seven",
+      "stem": "If a polynomial equation has no real roots, what can be inferred about its degree?",
+      "choices": {
+        "A": "The degree must be even.",
+        "B": "The degree must be odd.",
+        "C": "There is no specific relationship between the degree and number of real roots.",
+        "D": "The degree must be greater than 2."
+      },
+      "correct_choice": "C",
+      "solution": "The Fundamental Theorem of Algebra does not dictate a connection between the degree of a polynomial equation and the presence of real roots. It only guarantees n roots in total, which can all be complex.",
+      "explanation": "The theorem doesn't specify that even-degree polynomials must have real roots or vice versa.",
+      "common_mistake_notes": "Students might误以为偶数阶多项式一定有实根，但应记住定理关注的是总根数而非其性质。"
+    }
+  ]
+}

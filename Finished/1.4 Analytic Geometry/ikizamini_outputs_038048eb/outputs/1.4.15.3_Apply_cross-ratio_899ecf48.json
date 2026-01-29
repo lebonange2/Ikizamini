@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.15.3",
+  "objective_text": "Apply cross-ratio",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Given four points A, B, C, and D in the plane such that AB = 2 units, BC = 4 units, CD = 6 units, and DA = 3 units, what is the cross-ratio of these points?",
+      "choices": {
+        "A": "(2, 4, 6, 3)",
+        "B": "(1/3, 1/2, 2, 3)",
+        "C": "(3, 2, 1/2, 1/3)",
+        "D": "(1/2, 1/3, 3, 2)"
+      },
+      "correct_choice": "C",
+      "solution": "The cross-ratio is calculated as (AB / BC) / (CD / DA). Plugging in the given lengths: (2 / 4) / (6 / 3) = (1/2) / (2) = 1/4. To express this as a cross-ratio, we write it as (3, 2, 1/2, 1/3), where 1/4 is represented as the ratio of 3 units to 12 units.",
+      "explanation": "The cross-ratio compares ratios of distances between points and is invariant under projective transformations. In this case, we simplified the fractions before finding the cross-ratio.",
+      "common_mistake_notes": "A common mistake would be to directly compare AB with CD or BC with DA without forming the ratio of ratios. This would result in an incorrect value."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Points E, F, G, and H are collinear such that EF = 6 units, FG = 9 units, GH = 12 units, and HE = 4 units. What is the cross-ratio of these points?",
+      "choices": {
+        "A": "(6, 9, 12, 4)",
+        "B": "(2/3, 3/4, 4/5, 1)",
+        "C": "(1/4, 1/3, 1/2, 3/2)",
+        "D": "(3/2, 2/3, 1, 4/3)"
+      },
+      "correct_choice": "B",
+      "solution": "The cross-ratio for collinear points is the ratio of the ratios of their distances. So, (EF / FG) / (GH / HE) = (6 / 9) / (12 / 4) = (2/3) / (3) = 2/9. To express this as a cross-ratio, we write it as (2/3, 3/4, 4/5, 1), where 2/9 is represented as the ratio of 2 units to 9 units.",
+      "explanation": "Collinear points have a specific cross-ratio formula that involves only ratios of distances between them. The result does not change when expressed in the standard form of a cross-ratio.",
+      "common_mistake_notes": "A common mistake would be to assume that collinear points follow the same cross-ratio calculation as non-collinear points, leading to an incorrect value."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Points J, K, L, and M are vertices of a parallelogram with sides JK = 5 units, KL = 10 units, LM = 8 units, and MJ = 4 units. What is the cross-ratio of these points?",
+      "choices": {
+        "A": "(5, 10, 8, 4)",
+        "B": "(1/2, 1, 2/3, 1/2)",
+        "C": "(2, 1, 3/2, 2)",
+        "D": "(1/2, 2, 1, 3/2)"
+      },
+      "correct_choice": "B",
+      "solution": "The cross-ratio of the vertices of a parallelogram is (JK / KL) / (LM / MJ) = (5 / 10) / (8 / 4) = (1/2) / (2) = 1/4. To express this as a cross-ratio, we write it as (1/2, 1, 2/3, 1/2), where 1/4 is represented as the ratio of 1 unit to 4 units.",
+      "explanation": "The cross-ratio of the vertices of a parallelogram is related to the ratios of their sides. Since opposite sides are equal in length, we can use any pair of adjacent sides for calculation.",
+      "common_mistake_notes": "A common mistake would be to assume that the cross-ratio of a parallelogram's vertices follows the same pattern as non-parallel sides, leading to an incorrect value."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Points N, O, P, and Q are vertices of a rectangle with sides NO = 7 units, OP = 14 units, PQ = 7 units, andQN = 14 units. What is the cross-ratio of these points?",
+      "choices": {
+        "A": "(7, 14, 7, 14)",
+        "B": "(1/2, 1, 1/2, 1)",
+        "C": "(2, 1, 2, 1)",
+        "D": "(1, 1, 1, 1)"
+      },
+      "correct_choice": "B",
+      "solution": "The cross-ratio of the vertices of a rectangle is (NO / OP) / (PQ /QN) = (7 / 14) / (7 / 14) = (1/2) / (1) = 1/2. To express this as a cross-ratio, we write it as (1/2, 1, 1/2, 1), where 1/2 is represented as the ratio of 1 unit to 2 units.",
+      "explanation": "The cross-ratio of the vertices of a rectangle is related to the ratios of its sides. Since opposite sides are equal in length, we can use any pair of adjacent sides for calculation.",
+      "common_mistake_notes": "A common mistake would be to assume that the cross-ratio of a rectangle's vertices follows the same pattern as non-parallel sides, leading to an incorrect value."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Points R, S, T, and U are concyclic with distances RS = 3 units, ST = 6 units, TU = 9 units, and UR = 4.5 units. What is the cross-ratio of these points?",
+      "choices": {
+        "A": "(3, 6, 9, 4.5)",
+        "B": "(2/3, 1, 3/2, 1)",
+        "C": "(1/2, 1, 2/3, 1)",
+        "D": "(1, 1, 1, 1)"
+      },
+      "correct_choice": "C",
+      "solution": "The cross-ratio of points on a circle can be calculated using the sine rule. However, in this case, we can use the property that RS:ST:TU::UR:RS, which gives (3 / 6) / (9 / 4.5) = (1/2) / (2) = 1/4. To express this as a cross-ratio, we write it as (1/2, 1, 2/3, 1), where 1/4 is represented as the ratio of 1 unit to 4 units.",
+      "explanation": "Points on a circle have a specific cross-ratio relationship based on their distances. In this case, the problem provides a direct proportion that can be used to find the cross-ratio.",
+      "common_mistake_notes": "A common mistake would be to attempt to use the sine rule for finding the cross-ratio, which is not necessary here since we have a direct proportion."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Points V, W, X, and Y are vertices of a rhombus with sides VW = 8 units, WX = 8 units, XY = 10 units, and YV = 10 units. What is the cross-ratio of these points?",
+      "choices": {
+        "A": "(8, 8, 10, 10)",
+        "B": "(1, 1, 2/5, 5/2)",
+        "C": "(5/2, 2/5, 1, 1)",
+        "D": "(1/2, 1/2, 1/5, 5)"
+      },
+      "correct_choice": "B",
+      "solution": "The cross-ratio of the vertices of a rhombus is (VW / WX) / (XY / YV) = (8 / 8) / (10 / 10) = (1) / (1) = 1. To express this as a cross-ratio, we write it as (1, 1, 2/5, 5/2), where 1 is represented as the ratio of 1 unit to 1 unit.",
+      "explanation": "The cross-ratio of the vertices of a rhombus is related to the ratios of its sides. Since opposite sides are equal in length, we can use any pair of adjacent sides for calculation.",
+      "common_mistake_notes": "A common mistake would be to assume that the cross-ratio of a rhombus' vertices follows the same pattern as non-parallel sides, leading to an incorrect value."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Points Z, A, B, and C are vertices of a kite with sides AZ = 4 units, AB = 6 units, BC = 8 units, and CZ = 12 units. What is the cross-ratio of these points?",
+      "choices": {
+        "A": "(4, 6, 8, 12)",
+        "B": "(2/3, 1, 3/4, 2)",
+        "C": "(3/2, 4/3, 1, 2)",
+        "D": "(1, 2, 3/2, 4/3)"
+      },
+      "correct_choice": "B",
+      "solution": "The cross-ratio of the vertices of a kite is (AZ / AB) / (BC / CZ) = (4 / 6) / (8 / 12) = (2/3) / (1/3) = 2. To express this as a cross-ratio, we write it as (2/3, 1, 3/4, 2), where 2 is represented as the ratio of 2 units to 1 unit.",
+      "explanation": "The cross-ratio of the vertices of a kite can be calculated using the ratios of its sides. Since opposite sides are not equal in length, we use adjacent sides for calculation.",
+      "common_mistake_notes": "A common mistake would be to assume that the cross-ratio of a kite' vertices follows the same pattern as parallel sides, leading to an incorrect value."
+    }
+  ]
+}

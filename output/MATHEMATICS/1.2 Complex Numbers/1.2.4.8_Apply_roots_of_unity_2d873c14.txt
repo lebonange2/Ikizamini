@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.4.8 Apply roots of unity
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.4 Powers and Roots of Complex Numbers
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the cube root of unity (a complex number that, when cubed, equals 1). Write your answer in polar form.
+A) 1
+B) cos(2π/3) + i sin(2π/3)
+C) cos(4π/3) + i sin(4π/3)
+D) cos(0) + i sin(0)
+Correct Answer: B
+
+Solution:
+The cube roots of unity are the solutions to the equation x^3 = 1. One way to find them is by using De Moivre's Theorem, which states that (cosθ + i sinθ)^n = cos(nθ) + i sin(nθ). For n = 3, we have three solutions: when θ = 0, 2π/3, and 4π/3. Thus, one cube root of unity is at θ = 2π/3, which gives us the polar form cos(2π/3) + i sin(2π/3).
+
+Explanation:
+De Moivre's Theorem helps find roots of complex numbers raised to a power. Answer A is incorrect because it's just 1, not a root of unity; C represents another cube root but not the one asked for in polar form; D is incorrect because it's just 1 (the trivial solution) which isn't in polar form.
+
+Common mistake note:
+Common mistake: Choosing A or D as they represent the trivial solutions, not the cube roots of unity.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Evaluate the product of the two cube roots of unity that are NOT 1. Express your answer in rectangular form.
+A) -1
+B) cos(π) + i sin(π)
+C) cos(4π/3) - i sin(4π/3)
+D) cos(2π/3) - i sin(2π/3)
+Correct Answer: D
+
+Solution:
+The two non-trivial cube roots of unity are cos(2π/3) + i sin(2π/3) and cos(4π/3) + i sin(4π/3). Their product is (cos(2π/3) + i sin(2π/3))(cos(4π/3) + i sin(4π/3)). Using the trigonometric identities for products of cosine and sine, we get cos(6π/3) - sin^2(2π/3) + i(sin(2π/3)cos(4π/3) + cos(2π/3)sin(4π/3)). This simplifies to -1/2 - √3/2i, which is the rectangular form of the product.
+
+Explanation:
+The key here is to multiply the two non-trivial cube roots and simplify using trigonometric identities. Answer A is incorrect because it's not the product of the given roots; B represents the polar form of -1 but not in rectangular form; C is another possible result but not the correct one for this problem.
+
+Common mistake note:
+Common mistake: Mixing up the angles or simplifying incorrectly, leading to an incorrect rectangular form.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the fourth root of unity (a complex number that, when raised to the power of 4, equals 1) in exponential form with a base of e. Express your answer as e^(ix), where x is a real number.
+A) e^(0i)
+B) e^(πi/2)
+C) e^(πi)
+D) e^(3πi/2)
+Correct Answer: B
+
+Solution:
+The fourth roots of unity are the solutions to the equation x^4 = 1. Using De Moivre's Theorem, we can find them at θ = 0, π/2, π, and 3π/2. In exponential form with base e, this corresponds to e^(0i), e^(πi/2), e^(πi), and e^(3πi/2). The one asked for is the one that's not a trivial solution (not 1), which is e^(πi/2).
+
+Explanation:
+De Moivre's Theorem helps find roots of complex numbers raised to a power. Answer A is incorrect because it's just 1, not a root of unity; C and D represent other fourth roots but not the one asked for in exponential form with base e.
+
+Common mistake note:
+Common mistake: Choosing A as it represents the trivial solution, not the fourth root of unity.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Given the complex number z = 1 + i, find its fifth power using roots of unity. Express your answer in rectangular form.
+A) 2
+B) 3 + 4i
+C) -4 - 3i
+D) 8 - 6i
+Correct Answer: C
+
+Solution:
+To find z^5, we can express z in polar form and use De Moivre's Theorem. z = √2 * (cos(π/4) + i sin(π/4)). So, z^5 = (√2)^5 * (cos(5π/4) + i sin(5π/4)) = 32 * (-√2/2 - √2/2i) = -16 - 16i. Converting to rectangular form gives us -4 - 3i.
+
+Explanation:
+The key is to convert z into polar form, apply De Moivre's Theorem, and then convert the result back to rectangular form. Answer A, B, and D are incorrect because they do not match the correct calculation using roots of unity.
+
+Common mistake note:
+Common mistake: Applying powers without converting to polar form or making errors in trigonometric calculations.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Find the sixth root of unity (a complex number that, when raised to the power of 6, equals 1) with a non-zero imaginary part. Express your answer in rectangular form.
+A) cos(π/3) + i sin(π/3)
+B) cos(π/2) + i sin(π/2)
+C) cos(π) + i sin(π)
+D) cos(5π/6) + i sin(5π/6)
+Correct Answer: A
+
+Solution:
+The sixth roots of unity are the solutions to the equation x^6 = 1. Using De Moivre's Theorem, we can find them at θ = 0, π/6, π/3, π/2, 2π/3, and 5π/6. We're looking for one with a non-zero imaginary part, which means it should be at θ = π/6 or π/3. The one asked for is in the first quadrant, so it's cos(π/6) + i sin(π/6).
+
+Explanation:
+De Moivre's Theorem helps find roots of complex numbers raised to a power. Answer C represents the trivial solution (not in the first quadrant); B and D are not sixth roots with non-zero imaginary parts.
+
+Common mistake note:
+Common mistake: Choosing C as it represents the trivial solution, or selecting a root that is not in the first quadrant.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Given the complex number z = -1 + i√3, find its seventh power using roots of unity. Express your answer in polar form.
+A) 2
+B) cos(π/7) + i sin(π/7)
+C) cos(5π/7) + i sin(5π/7)
+D) cos(3π/7) + i sin(3π/7)
+Correct Answer: C
+
+Solution:
+To find z^7, we can express z in polar form and use De Moivre's Theorem. z = 2 * (cos(π/3) + i sin(π/3)). So, z^7 = 128 * (cos(7π/3) + i sin(7π/3)) = -64 * (-√3/2 - √3/2i) = 96√3i. Converting to polar form gives us 96 and θ = π/3, so the answer is cos(5π/7) + i sin(5π/7).
+
+Explanation:
+The key is to convert z into polar form, apply De Moivre's Theorem, and then convert the result back to polar form. Answer A, B, and D are incorrect because they do not match the correct calculation using roots of unity.
+
+Common mistake note:
+Common mistake: Applying powers without converting to polar form or making errors in trigonometric calculations.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Find the eighth root of unity (a complex number that, when raised to the power of 8, equals 1) with a negative real part. Express your answer in exponential form with base e.
+A) e^(πi)
+B) e^(3πi/2)
+C) e^(5πi/4)
+D) e^(7πi/8)
+Correct Answer: C
+
+Solution:
+The eighth roots of unity are the solutions to the equation x^8 = 1. Using De Moivre's Theorem, we can find them at θ = 0, π/8, π/4, π/2, 3π/4, 5π/4, 7π/4, and 3π/2. We're looking for one with a negative real part, which means it should be at θ = 5π/4 or 7π/4. The one asked for is in the third quadrant, so it's e^(5πi/4).
+
+Explanation:
+De Moivre's Theorem helps find roots of complex numbers raised to a power. Answer A and B represent trivial solutions (not in the third quadrant); D is not an eighth root with a negative real part.
+
+Common mistake note:
+Common mistake: Choosing A or B as they represent the trivial solutions, or selecting a root that is not in the third quadrant.
+------------------------------------------------------------------------------

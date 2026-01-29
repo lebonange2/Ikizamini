@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.8.6 Apply pigeonhole principle
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.8 Counting Principles
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+There are 5 boxes and 6 balls, each box can hold only one ball. If all balls are placed into the boxes, at least how many boxes will have more than one ball?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: C
+
+Solution:
+By the pigeonhole principle, if there are more balls (6) than boxes (5), then at least one box must hold more than one ball. Since we cannot distribute 6 balls evenly into 5 boxes without having at least one box with two balls, it is clear that at least two boxes will have more than one ball.
+
+Explanation:
+The pigeonhole principle states that if more items (balls) are placed into fewer containers (boxes), then at least one container must hold more items than the others. In this case, since there are more balls than boxes, we can deduce that two or more boxes will have more than one ball.
+
+Common mistake note:
+A common mistake would be to choose '1' as the answer, assuming that only one box might have two balls while the rest remain empty. However, this is not possible given that there are six balls and only five boxes.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+In a class of 30 students, each student chooses exactly one elective course from among Math, Science, and English. If at least 11 students choose Math, at least 11 choose Science, and at least 11 choose English, what is the minimum possible number of students who chose all three courses?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: B
+
+Solution:
+Since there are 30 students and each student chooses exactly one elective course, a total of 30 enrollments are made. If at least 11 students choose Math, Science, and English, we can distribute the remaining enrollments as follows: 11 in Math, 11 in Science, and 8 in English (to reach a total of 30). However, this distribution doesn't account for students who chose all three courses. To minimize the number of students choosing all three, we must assume that the extra student from each group chooses a different course: one student chooses Math and Science, another chooses Math and English, and the last chooses Science and English. This leaves 1 student who has to choose all three courses to meet the minimum requirement.
+
+Explanation:
+The pigeonhole principle applies here because we have more enrollments (30) than unique combinations of elective choices (Math + Science, Math + English, Science + English). To minimize the number of students choosing all three courses, we distribute as many as possible into pairs of subjects and then use the remaining students to fill the third subject.
+
+Common mistake note:
+A common mistake would be to assume that no student could choose all three courses, but this is not true given the constraints. At least one student must choose all three to satisfy the condition that at least 11 students choose each course.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+There are 7 different books and 6 students who want to borrow them. If each student borrows exactly one book, how many students will have more than one book of the same genre?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: A
+
+Solution:
+If there are 7 different books and each student borrows exactly one, it is impossible for any student to have more than one book of the same genre, as each book represents a unique genre. Therefore, no students will have more than one book of the same genre.
+
+Explanation:
+The pigeonhole principle does not apply here because there are more books (7) than students (6), ensuring that each student gets a different book and no duplicates occur within a single student's selection.
+
+Common mistake note:
+A common mistake would be to assume that the pigeonhole principle applies, leading to the conclusion that at least one student must have two books of the same genre. However, since each book represents a unique genre, this is not possible.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+In a deck of 52 cards, what is the minimum number of cards you need to pick to guarantee having at least 3 cards of the same suit?
+A) 3
+B) 6
+C) 9
+D) 12
+Correct Answer: C
+
+Solution:
+To guarantee having at least 3 cards of the same suit, we can use the pigeonhole principle. There are 4 suits in a deck (hearts, diamonds, clubs, and spades). If you pick 9 cards, by the pigeonhole principle, you will have picked at least 3 cards from one suit, as each suit has only 13 cards.
+
+Explanation:
+The pigeonhole principle states that if more items are placed into fewer containers, then at least one container must hold more items than the others. In this case, with 9 cards and 4 suits acting as containers, it's guaranteed that at least one suit will have 3 or more cards.
+
+Common mistake note:
+A common mistake would be to choose '6' as the answer, assuming that picking 6 cards would guarantee having 3 of the same suit. However, this is not true; you could pick 2 cards from each of 3 different suits and still not have 3 cards of the same suit.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+A bag contains 7 red balls, 8 blue balls, and 9 green balls. If a student randomly picks 14 balls without replacement, what is the minimum number of balls they must pick to guarantee having at least 3 balls of each color?
+A) 12
+B) 15
+C) 16
+D) 17
+Correct Answer: C
+
+Solution:
+To guarantee having at least 3 balls of each color, we can use the pigeonhole principle. First, pick 8 red balls and 9 blue balls (total of 17), which will leave at most 2 green balls in the bag. Then, picking one more ball guarantees that you'll have at least 3 green balls, as you cannot pick both remaining green balls without exceeding 14 picks. Therefore, a total of 16 balls must be picked.
+
+Explanation:
+The pigeonhole principle applies here because we need to ensure that each color has at least 3 balls, and the number of balls in the bag exceeds the number of colors (7 red, 8 blue, 9 green). By picking enough balls from two colors, we can guarantee that there will be at least 3 balls left in the third color.
+
+Common mistake note:
+A common mistake would be to assume that picking 14 balls would automatically ensure having 3 of each color. However, it's possible to pick only 2 green balls and 12 red and blue balls without meeting the condition.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+There are 5 different flavors of ice cream and 6 customers who order them. If each customer orders exactly one flavor, how many customers will have a flavor that is ordered by at least two other customers?
+A) 0
+B) 1
+C) 2
+D) 3
+Correct Answer: B
+
+Solution:
+To apply the pigeonhole principle, we can think of each customer as a 'pigeon' and each unique flavor as a 'box.' If there are 6 customers (pigeons) and only 5 different flavors (boxes), at least one box must hold more than one pigeon. Therefore, at least one flavor will be ordered by at least two other customers.
+
+Explanation:
+The pigeonhole principle states that if more items are placed into fewer containers, then at least one container must hold more items than the others. In this case, since there are more customers (6) than unique flavors (5), it's guaranteed that at least one flavor will be chosen by multiple customers.
+
+Common mistake note:
+A common mistake would be to assume that no customer could have a flavor ordered by two other customers, but this is not true given the constraints. At least one flavor must be chosen by more than one customer.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+In a group of 10 friends, each person has exactly one favorite movie from among 5 different movies. What is the minimum number of friends who must have the same favorite movie?
+A) 2
+B) 3
+C) 4
+D) 5
+Correct Answer: B
+
+Solution:
+To apply the pigeonhole principle, we can think of each friend as a 'pigeon' and each unique movie as a 'box.' If there are 10 friends (pigeons) and only 5 different movies (boxes), at least one box must hold more than one pigeon. Therefore, at least three friends will have the same favorite movie.
+
+Explanation:
+The pigeonhole principle states that if more items are placed into fewer containers, then at least one container must hold more items than the others. In this case, since there are more friends (10) than unique movies (5), it's guaranteed that at least one movie will be a favorite for three or more friends.
+
+Common mistake note:
+A common mistake would be to assume that only two friends could have the same favorite movie, but this is not true given the constraints. At least three friends must share a favorite movie.
+------------------------------------------------------------------------------

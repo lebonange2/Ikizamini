@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.9.13 Find area in polar coordinates
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.9 Polar Coordinate Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the area of the region enclosed by the curve given by r = 2sin(θ) from θ = π/6 to θ = π/2.
+A) π/3
+B) π/2
+C) 2π/3
+D) π
+Correct Answer: A
+
+Solution:
+The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 2sin(θ), we have A = ∫[0 to π/2] (1/2)(2sin(θ))^2 dθ = ∫[0 to π/2] 2sin^2(θ) dθ * 2 = [θ - cos(θ)sin(θ)]|[0 to π/2]. Evaluating at the limits, we get A = (π/2 - 1) - (0 - 0) = π/2 - 1 = π/3.
+
+Explanation:
+The area is calculated using the formula for polar coordinates and integrating over the given interval.
+
+Common mistake note:
+A common mistake would be to integrate r^2 directly without dividing by 2, which would result in an incorrect area.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Find the area of the region enclosed by the cardioid r = 1 - cos(θ).
+A) π/2
+B) π
+C) 3π/2
+D) 2π
+Correct Answer: B
+
+Solution:
+The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 1 - cos(θ), we have A = ∫[0 to 2π] (1/2)(1 - cos(θ))^2 dθ. Expanding and integrating, we get A = [θ + sin(θ)cos(θ) - (1/3)sin^3(θ)]|[0 to 2π]. Evaluating at the limits, we get A = 2π - 0 - 0 + 0 = 2π.
+
+Explanation:
+The area is calculated using the formula for polar coordinates and integrating over a full period of θ.
+
+Common mistake note:
+A common mistake would be to integrate only half the interval, assuming the cardioid is symmetric. However, since it's enclosed, we must integrate over the entire 2π range.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Find the area of the region between the curves r = 2sin(θ) and r = 2cos(θ).
+A) π/4
+B) π/2
+C) 3π/4
+D) π
+Correct Answer: C
+
+Solution:
+The area A in polar coordinates is given by the integral of (1/2)r^2 dθ from θ where the curves intersect. To find the intersection, set 2sin(θ) = 2cos(θ), which gives θ = π/4. Now integrate [0 to π/4] (1/2)(2sin(θ))^2 dθ + [π/4 to π/2] (1/2)(2cos(θ))^2 dθ. Simplify and integrate, we get A = ∫[0 to π/4] 2sin^2(θ) dθ + ∫[π/4 to π/2] 2cos^2(θ) dθ = [θ - cos(θ)sin(θ)]|[0 to π/4] + [(π/2 - θ) + sin(θ)cos(θ)]|[π/4 to π/2]. Evaluating at the limits, we get A = (π/4 - 1) + (π/2 - π/4 + 1) = π/4 + π/4 = 3π/4.
+
+Explanation:
+The area is calculated by integrating over the intervals where each curve is greater than the other.
+
+Common mistake note:
+A common mistake would be to integrate only one of the curves without considering the intersection points, which would result in an incorrect area.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Find the area of the sector formed by r = 3θ from θ = 0 to θ = π/6.
+A) π/12
+B) π/8
+C) π/6
+D) π/4
+Correct Answer: C
+
+Solution:
+The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 3θ, we have A = ∫[0 to π/6] (1/2)(3θ)^2 dθ = ∫[0 to π/6] (9/2)θ^2 dθ = [3θ^3/4]|[0 to π/6]. Evaluating at the limits, we get A = (3(π/6)^3)/4 - 0 = 3π^3/144 = π/16. However, since it's a sector of a circle with radius π/6, we multiply by 2π/θ to find the area of the full sector: A = (π/16) * (2π/(π/6)) = 3π/8.
+
+Explanation:
+The area is calculated using the formula for polar coordinates and integrating over the given interval. Then, it's converted from a sector of a circle to the full sector by multiplying with 2π/θ.
+
+Common mistake note:
+A common mistake would be to forget to multiply by 2π/θ to convert the area of the sector to the full sector.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Find the area of the region enclosed by r = 4sin(θ) and r = 4cos(θ).
+A) π
+B) 2π
+C) 3π
+D) 4π
+Correct Answer: A
+
+Solution:
+The area A in polar coordinates is given by the integral of (1/2)r^2 dθ from θ where the curves intersect. To find the intersection, set 4sin(θ) = 4cos(θ), which gives θ = π/4 and θ = 3π/4. Now integrate [0 to π/4] (1/2)(4sin(θ))^2 dθ + [π/4 to 3π/4] (1/2)(4cos(θ))^2 dθ + [3π/4 to 2π] (1/2)(4sin(θ))^2 dθ. Simplify and integrate, we get A = ∫[0 to π/4] 8sin^2(θ) dθ + ∫[π/4 to 3π/4] 8cos^2(θ) dθ + ∫[3π/4 to 2π] 8sin^2(θ) dθ. Evaluating at the limits, we get A = (π - 1)/2 + π - (π - 1)/2 = π.
+
+Explanation:
+The area is calculated by integrating over the intervals where each curve is greater than the other and summing the results.
+
+Common mistake note:
+A common mistake would be to integrate only one of the curves without considering the intersection points, which would result in an incorrect area.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Find the area of the region enclosed by r = 2 + cos(θ) from θ = 0 to θ = π.
+A) π/2
+B) π
+C) 3π/2
+D) 2π
+Correct Answer: B
+
+Solution:
+The area A in polar coordinates is given by the integral of (1/2)r^2 dθ. For r = 2 + cos(θ), we have A = ∫[0 to π] (1/2)(2 + cos(θ))^2 dθ. Expand and integrate, we get A = [θ + sin(θ)cos(θ) - (1/3)sin^3(θ)]|[0 to π]. Evaluating at the limits, we get A = π - 0 - 0 + 0 = π.
+
+Explanation:
+The area is calculated using the formula for polar coordinates and integrating over a full period of θ.
+
+Common mistake note:
+A common mistake would be to integrate only half the interval, assuming the region is symmetric. However, since it's enclosed, we must integrate over the entire π range.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Find the area of the region between r = 2sin(θ) and r = 3cos(θ).
+A) π/6
+B) π/4
+C) π/3
+D) π/2
+Correct Answer: C
+
+Solution:
+The area A in polar coordinates is given by the integral of (1/2)r^2 dθ from θ where the curves intersect. To find the intersection, set 2sin(θ) = 3cos(θ), which gives θ = π/4 and θ = 5π/4. Now integrate [0 to π/4] (1/2)(2sin(θ))^2 dθ + [π/4 to 5π/4] (1/2)(3cos(θ))^2 dθ + [5π/4 to 2π] (1/2)(2sin(θ))^2 dθ. Simplify and integrate, we get A = ∫[0 to π/4] 2sin^2(θ) dθ + ∫[π/4 to 5π/4] 9cos^2(θ) dθ + ∫[5π/4 to 2π] 2sin^2(θ) dθ. Evaluating at the limits, we get A = (π - 1)/4 + 3π - (π - 1)/4 = 3π/2.
+
+Explanation:
+The area is calculated by integrating over the intervals where each curve is greater than the other and summing the results.
+
+Common mistake note:
+A common mistake would be to integrate only one of the curves without considering the intersection points, which would result in an incorrect area.
+------------------------------------------------------------------------------

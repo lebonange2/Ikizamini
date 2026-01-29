@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.4.14 Use in logic circuit analysis
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.4 Truth Tables
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Inverter):
+What is the output of an inverter gate when the input is 1?
+A) 0
+B) 1
+C) No Output
+D) Invalid Choice
+Correct Answer: A
+
+Solution:
+An inverter gate flips the input. If the input is 1, the output will be 0.
+
+Explanation:
+In logic gates, an inverter gate (NOT gate) inverts its input. When the input is high (1), the output is low (0).
+
+Common mistake note:
+Common mistake: Choosing B, assuming that a 1 remains unchanged. Remember, an inverter always flips the input.
+------------------------------------------------------------------------------
+
+Problem 2 (AND Gate):
+What is the output of an AND gate when both inputs are 1?
+A) 0
+B) 1
+C) No Output
+D) Invalid Choice
+Correct Answer: B
+
+Solution:
+An AND gate produces a high output (1) only when all its inputs are high.
+
+Explanation:
+In logic gates, an AND gate produces an output of 1 if both input signals are 1; otherwise, it produces an output of 0.
+
+Common mistake note:
+Common mistake: Choosing A, assuming that at least one input needs to be 1. Both inputs must be 1 for the output to be 1.
+------------------------------------------------------------------------------
+
+Problem 3 (OR Gate):
+What is the output of an OR gate when one input is 0 and the other is 1?
+A) 0
+B) 1
+C) No Output
+D) Invalid Choice
+Correct Answer: B
+
+Solution:
+An OR gate produces a high output (1) if at least one input is high.
+
+Explanation:
+In logic gates, an OR gate produces an output of 1 if at least one input signal is 1; otherwise, it produces an output of 0.
+
+Common mistake note:
+Common mistake: Choosing A, assuming that both inputs need to be 1. Only one input needs to be 1 for the output to be 1.
+------------------------------------------------------------------------------
+
+Problem 4 (NAND Gate):
+What is the output of a NAND gate when both inputs are 1?
+A) 0
+B) 1
+C) No Output
+D) Invalid Choice
+Correct Answer: A
+
+Solution:
+A NAND gate is an AND gate followed by an inverter. If both inputs are 1, the output of the AND gate is 1, which is then inverted to 0.
+
+Explanation:
+In logic gates, a NAND gate produces an output opposite to that of an AND gate; it outputs 0 when both inputs are 1 and 1 otherwise.
+
+Common mistake note:
+Common mistake: Choosing B, assuming that the output remains unchanged. A NAND gate inverts the AND gate's output.
+------------------------------------------------------------------------------
+
+Problem 5 (NOR Gate):
+What is the output of a NOR gate when both inputs are 0?
+A) 0
+B) 1
+C) No Output
+D) Invalid Choice
+Correct Answer: B
+
+Solution:
+A NOR gate is an OR gate followed by an inverter. If both inputs are 0, the output of the OR gate is 0, which is then inverted to 1.
+
+Explanation:
+In logic gates, a NOR gate produces an output opposite to that of an OR gate; it outputs 1 when both inputs are 0 and 0 otherwise.
+
+Common mistake note:
+Common mistake: Choosing A, assuming that the output remains unchanged. A NOR gate inverts the OR gate's output.
+------------------------------------------------------------------------------
+
+Problem 6 (XOR Gate):
+What is the output of an XOR gate when one input is 1 and the other is 0?
+A) 0
+B) 1
+C) No Output
+D) Invalid Choice
+Correct Answer: B
+
+Solution:
+An XOR gate produces a high output (1) if the inputs are different; otherwise, it produces an output of 0.
+
+Explanation:
+In logic gates, an XOR gate outputs 1 when the number of high input signals is odd and 0 when it is even.
+
+Common mistake note:
+Common mistake: Choosing A, assuming that both inputs need to be different. The XOR gate only cares if one input is different from the other.
+------------------------------------------------------------------------------
+
+Problem 7 (XNOR Gate):
+What is the output of an XNOR gate when one input is 1 and the other is 0?
+A) 0
+B) 1
+C) No Output
+D) Invalid Choice
+Correct Answer: A
+
+Solution:
+An XNOR gate is an XOR gate followed by an inverter. If one input is 1 and the other is 0, the output of the XOR gate is 1, which is then inverted to 0.
+
+Explanation:
+In logic gates, an XNOR gate produces an output opposite to that of an XOR gate; it outputs 0 when the inputs are different and 1 otherwise.
+
+Common mistake note:
+Common mistake: Choosing B, assuming that the output remains unchanged. An XNOR gate inverts the XOR gate's output.
+------------------------------------------------------------------------------

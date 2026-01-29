@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.8.6",
+  "objective_text": "Eliminate xy-term",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Simplify the expression: x^2 + 2xy + y^2",
+      "choices": {
+        "A": "(x+y)^2",
+        "B": "x(x+2y)",
+        "C": "y(x^2+2)",
+        "D": "(x-y)^2"
+      },
+      "correct_choice": "A",
+      "solution": "The expression is a perfect square trinomial, which can be factored as (x + y)^2. Thus, the correct answer is A.",
+      "explanation": "Perfect square trinomials have the form (a+b)^2 = a^2 + 2ab + b^2.",
+      "common_mistake_notes": "A common mistake would be to choose B, which represents x multiplied by the linear term (x+2y), but this does not eliminate the xy-term."
+    },
+    {
+      "id": "Bghj",
+      "stem": "Simplify the expression: 3x^2 + 6xy + 3y^2",
+      "choices": {
+        "A": "3(x+y)^2",
+        "B": "3x(x+2y)",
+        "C": "3y(x^2+2)",
+        "D": "3(x-y)^2"
+      },
+      "correct_choice": "A",
+      "solution": "The expression has a common factor of 3, which can be factored out. Then it becomes a perfect square trinomial that can be factored as 3(x + y)^2. The correct answer is A.",
+      "explanation": "When simplifying expressions with a common factor, we first factor out the greatest common factor before applying other algebraic techniques like factoring by grouping or recognizing special products.",
+      "common_mistake_notes": "A common mistake would be to choose B, where the 3 is not factored out, resulting in an incorrect factorization."
+    },
+    {
+      "id": "Qwer",
+      "stem": "Simplify the expression: x^2 - 6xy + 9y^2",
+      "choices": {
+        "A": "(x-3y)^2",
+        "B": "x(x-6y)",
+        "C": "y(x^2-6)",
+        "D": "(x+y)^2"
+      },
+      "correct_choice": "A",
+      "solution": "The expression is a perfect square trinomial with negative coefficients, which can be factored as (x - 3y)^2. The correct answer is A.",
+      "explanation": "Perfect square trinomials can also have negative terms when the binomial inside the parentheses has opposite signs. In this case, x and -6y are multiplied by -3 to form the middle term.",
+      "common_mistake_notes": "A common mistake would be to choose D, which represents (x+y)^2, but it does not match the given expression with a negative middle term."
+    },
+    {
+      "id": "Tyui",
+      "stem": "Simplify the expression: 4x^2 + 12xy + 9y^2",
+      "choices": {
+        "A": "2(x+3y)^2",
+        "B": "4x(x+3y)",
+        "C": "9y(4x+y)",
+        "D": "(2x-3y)^2"
+      },
+      "correct_choice": "A",
+      "solution": "The expression has a common factor of 4, which can be factored out. Then it becomes a perfect square trinomial that can be factored as 4(x + 3y)^2. The correct answer is A.",
+      "explanation": "When simplifying expressions with a common factor, we first factor out the greatest common factor before applying other algebraic techniques like factoring by grouping or recognizing special products.",
+      "common_mistake_notes": "A common mistake would be to choose B, where the 4 is not factored out, resulting in an incorrect factorization."
+    },
+    {
+      "id": "Poiu",
+      "stem": "Simplify the expression: x^2 - xy + y^2",
+      "choices": {
+        "A": "(x+y)^2",
+        "B": "x(x-y)",
+        "C": "y(x^2-1)",
+        "D": "(x-y)^2"
+      },
+      "correct_choice": "B",
+      "solution": "The given expression is not a perfect square trinomial. Instead, it can be factored by grouping as x(x - y) + y(y). The correct answer is B.",
+      "explanation": "When the middle term has a coefficient of -1 or 1, we can try to factor by grouping: group the first two terms and the last two terms separately, then factor out the greatest common factor from each group.",
+      "common_mistake_notes": "A common mistake would be to choose D, which represents (x-y)^2, but it does not match the given expression with a positive middle term."
+    },
+    {
+      "id": "Bvbn",
+      "stem": "Simplify the expression: 9x^2 - 6xy + y^2",
+      "choices": {
+        "A": "3(x+y)^2",
+        "B": "9x(x-y)",
+        "C": "y(9x-1)",
+        "D": "(3x-y)^2"
+      },
+      "correct_choice": "D",
+      "solution": "The expression has a common factor of 9, which can be factored out. Then it becomes a difference of squares that can be factored as (3x - y)(3x + y). The correct answer is D.",
+      "explanation": "When simplifying expressions with a common factor, we first factor out the greatest common factor before applying other algebraic techniques like factoring by grouping or recognizing special products. In this case, it's not a perfect square trinomial but a difference of squares.",
+      "common_mistake_notes": "A common mistake would be to choose A, where the 9 is not factored out, resulting in an incorrect factorization."
+    },
+    {
+      "id": "Vbnm",
+      "stem": "Simplify the expression: x^2 + xy + y^2",
+      "choices": {
+        "A": "(x+y)^2",
+        "B": "x(x+y)",
+        "C": "y(x^2+1)",
+        "D": "(x-y)^2"
+      },
+      "correct_choice": "B",
+      "solution": "The given expression is not a perfect square trinomial. Instead, it can be factored by grouping as x(x + y) + y. The correct answer is B.",
+      "explanation": "When the middle term has a coefficient of 1, we can try to factor by grouping: group the first two terms and the last term separately, then factor out the greatest common factor from each group.",
+      "common_mistake_notes": "A common mistake would be to choose A, which represents (x+y)^2, but it does not match the given expression with a positive middle term."
+    }
+  ]
+}

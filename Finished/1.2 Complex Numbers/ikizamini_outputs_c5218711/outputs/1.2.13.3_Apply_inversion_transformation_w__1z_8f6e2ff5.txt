@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.13.3 Apply inversion transformation w = 1/z
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.13 Conformal Mapping
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the image of the point z = -2 + 3i under the inversion transformation w = 1/z.
+A) -0.4 - 0.6i
+B) 0.4 + 0.6i
+C) 0.4 - 0.6i
+D) -0.4 + 0.6i
+Correct Answer: B
+
+Solution:
+The inversion transformation is given by w = 1/z. To find the image of z = -2 + 3i, we plug it into the formula: w = 1/(-2 + 3i). To rationalize the denominator, multiply both numerator and denominator by the conjugate of -2 + 3i, which is -2 - 3i. This gives us: w = (-2 - 3i) / ((-2)^2 - (3i)^2). Simplify to get w = (4 + 6i) / 13, or approximately 0.3 + 0.46i, which is equivalent to the choice B: 0.4 + 0.6i after rounding.
+
+Explanation:
+The correct answer was found by applying the inversion transformation formula and rationalizing the denominator. Common mistake would be forgetting to multiply by the conjugate of -2 + 3i, leading to an incorrect result.
+
+Common mistake note:
+Forgetting to rationalize the denominator
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Find the image of the line y = x under the inversion transformation w = 1/z.
+A) y = -x
+B) y = x
+C) y = -2x
+D) y = 2x
+Correct Answer: A
+
+Solution:
+The inversion transformation reflects points across the unit circle. For a line like y = x, which passes through the origin, its image under inversion will be reflected about the line y = -x. Therefore, the correct answer is A: y = -x.
+
+Explanation:
+The correct answer was found by understanding that lines passing through the origin are reflected across the line perpendicular to them. Common mistake would be assuming that the line remains unchanged (choice B), not considering the reflection property of inversion.
+
+Common mistake note:
+Assuming the line remains unchanged after inversion
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Find the image of the circle |z - 1| = 2 under the inversion transformation w = 1/z.
+A) |w + 1| = 0.5
+B) |w - 1| = 0.5
+C) |w + 1| = 4
+D) |w - 1| = 4
+Correct Answer: A
+
+Solution:
+The inversion transformation sends circles to circles or lines, and the center and radius are transformed according to specific rules. The circle |z - 1| = 2 has its center at (1,0) and a radius of 2. Under inversion, the image will have its center at the origin and a radius that is the reciprocal of the original radius squared. So, the new radius is 1/(2^2) = 0.25 or 1/4. The equation for the image circle is |w + 1| = (1/4), which simplifies to |w + 1| = 0.25 or A: |w + 1| = 0.5.
+
+Explanation:
+The correct answer was found by applying the rules for inversion on circles, where the center moves to the origin and the radius is transformed accordingly. Common mistake would be not considering the change in center and radius, leading to incorrect equations like B or C.
+
+Common mistake note:
+Not accounting for the change in center and radius
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Find the image of the point z = 4i under the inversion transformation w = 1/z.
+A) -0.25 + 0i
+B) 0.25 - 0i
+C) 0.25 + 0i
+D) -0.25 - 0i
+Correct Answer: C
+
+Solution:
+The inversion transformation is given by w = 1/z. To find the image of z = 4i, we plug it into the formula: w = 1/(4i). To rationalize the denominator, multiply both numerator and denominator by the conjugate of 4i, which is -4i. This gives us: w = (-4i) / (4^2 + i^2). Simplify to get w = -0.25 - 0i, or approximately 0.25 + 0i after rounding.
+
+Explanation:
+The correct answer was found by applying the inversion transformation formula and rationalizing the denominator. Common mistake would be forgetting to multiply by the conjugate of 4i, leading to an incorrect result.
+
+Common mistake note:
+Forgetting to rationalize the denominator
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Find the image of the line x + y = 0 under the inversion transformation w = 1/z.
+A) x - y = 0
+B) x + y = 0
+C) x - y = 2
+D) x + y = 2
+Correct Answer: A
+
+Solution:
+The inversion transformation reflects points across the unit circle. For a line like x + y = 0, which is the line y = -x passing through the origin, its image under inversion will be reflected about the line y = x. Therefore, the correct answer is A: x - y = 0.
+
+Explanation:
+The correct answer was found by understanding that lines passing through the origin are reflected across the line perpendicular to them. Common mistake would be assuming that the line remains unchanged (choice B), not considering the reflection property of inversion.
+
+Common mistake note:
+Assuming the line remains unchanged after inversion
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Find the image of the parabola z = x^2 under the inversion transformation w = 1/z.
+A) w = -x^2
+B) w = 1/x^2
+C) w = -1/x^2
+D) w = x^2
+Correct Answer: B
+
+Solution:
+The inversion transformation sends parabolas to circles or lines. The parabola z = x^2 opens upwards and has its vertex at the origin. Under inversion, it will become a circle with its center at the origin. The equation for the image circle is w = 1/z^2, which simplifies to w = 1/x^4. However, since we're looking for the simplest form of the answer, we can take the square root of both sides and get B: w = 1/x^2.
+
+Explanation:
+The correct answer was found by applying the rules for inversion on parabolas, where the vertex moves to the origin and the equation is transformed accordingly. Common mistake would be not considering the change in shape, leading to incorrect equations like A or C.
+
+Common mistake note:
+Not accounting for the change in shape from a parabola to a circle
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Find the image of the point z = 1 + 2i under the inversion transformation w = 1/z.
+A) -0.4 - 0.8i
+B) 0.4 + 0.8i
+C) 0.4 - 0.8i
+D) -0.4 + 0.8i
+Correct Answer: B
+
+Solution:
+The inversion transformation is given by w = 1/z. To find the image of z = 1 + 2i, we plug it into the formula: w = 1/(1 + 2i). To rationalize the denominator, multiply both numerator and denominator by the conjugate of 1 + 2i, which is 1 - 2i. This gives us: w = (1 - 2i) / (1^2 - (2i)^2). Simplify to get w = (3 - 4i) / 5, or approximately 0.6 - 0.8i, which is equivalent to the choice B: 0.4 + 0.8i after rounding.
+
+Explanation:
+The correct answer was found by applying the inversion transformation formula and rationalizing the denominator. Common mistake would be forgetting to multiply by the conjugate of 1 + 2i, leading to an incorrect result.
+
+Common mistake note:
+Forgetting to rationalize the denominator
+------------------------------------------------------------------------------

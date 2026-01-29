@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.3.4",
+  "objective_text": "Express in exponential form (re^(iθ))",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Express the complex number in exponential form: -2\ncorrect answer: C\nchoices:\nA) 2(cos(180°) + isin(180°))\nB) 2e^(iπ)\nC) 2e^(-iπ)\nD) -2e^(iπ)",
+      "choices": {
+        "A": "Common mistake: Using the wrong angle. The correct angle for -2 is 180°, which corresponds to π in radians.",
+        "B": "Common mistake: Not considering the negative sign. Since we have -2, the argument should be in the third quadrant, leading to π instead of -π.",
+        "C": "Correct answer. The exponential form of -2 is 2e^(-iπ), as it correctly represents a point on the complex plane with magnitude 2 and angle -180° or π radians counterclockwise from the positive x-axis.",
+        "D": "Common mistake: Not accounting for the negative sign properly. This choice has the correct angle but not the correct magnitude."
+      },
+      "correct_choice": "C",
+      "solution": "The exponential form of a complex number -2 is given by r * e^(iθ), where r is the magnitude and θ is the argument in radians. The magnitude of -2 is 2, and its argument in degrees is 180° or π radians counterclockwise from the positive x-axis. Since it's in the third quadrant, the angle should be negative: -π. Therefore, the exponential form is 2e^(-iπ).",
+      "explanation": "This question tests the understanding of expressing a complex number in polar form (exponential form) and correctly accounting for the sign of the number.",
+      "common_mistake_notes": "Common mistakes include using the wrong angle (not considering the negative sign) or not accounting for the sign of the number when converting to exponential form."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Express the complex number in exponential form: 3i\ncorrect answer: B\nchoices:\nA) 3e^(iπ/2)\nB) 3e^(iπ/2)\nC) 3e^(-iπ/2)\nD) -3e^(iπ/2)",
+      "choices": {
+        "A": "Common mistake: Using the wrong angle. The correct angle for 3i is π/2, not iπ/2.",
+        "B": "Correct answer. The exponential form of 3i is 3e^(iπ/2), as it correctly represents a point on the complex plane with magnitude 3 and angle π/2 radians counterclockwise from the positive x-axis.",
+        "C": "Common mistake: Not considering the imaginary part. Since we have 3i, the argument should be π/2, not -π/2.",
+        "D": "Common mistake: Adding an unnecessary negative sign. This choice has the correct angle but adds a negative sign that is not needed."
+      },
+      "correct_choice": "B",
+      "solution": "The exponential form of a complex number 3i is given by r * e^(iθ), where r is the magnitude and θ is the argument in radians. The magnitude of 3i is 3, and its argument in radians is π/2 (90°) counterclockwise from the positive x-axis. Therefore, the exponential form is 3e^(iπ/2).",
+      "explanation": "This question tests the understanding of expressing a complex number in polar form (exponential form) and correctly identifying the angle corresponding to an imaginary number.",
+      "common_mistake_notes": "Common mistakes include using the wrong angle (not considering the imaginary part) or adding an unnecessary negative sign."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Express the complex number in exponential form: -4\ncorrect answer: A\nchoices:\nA) 4e^(iπ)\nB) 4e^(-iπ)\nC) -4e^(iπ/2)\nD) -4e^(-iπ/2)",
+      "choices": {
+        "A": "Correct answer. The exponential form of -4 is 4e^(iπ), as it correctly represents a point on the complex plane with magnitude 4 and angle π radians counterclockwise from the positive x-axis.",
+        "B": "Common mistake: Not accounting for the negative sign. This choice has the correct angle but not the correct magnitude.",
+        "C": "Common mistake: Using the wrong angle and magnitude. The argument should be π, not π/2, and the magnitude should be 4, not -4.",
+        "D": "Common mistake: Using the wrong angle and magnitude. The argument should be π, not -π/2, and the magnitude should be 4, not -4."
+      },
+      "correct_choice": "A",
+      "solution": "The exponential form of a complex number -4 is given by r * e^(iθ), where r is the magnitude and θ is the argument in radians. The magnitude of -4 is 4, and its argument in radians is π (180°) counterclockwise from the positive x-axis. Therefore, the exponential form is 4e^(iπ).",
+      "explanation": "This question tests the understanding of expressing a complex number in polar form (exponential form) and correctly accounting for the sign of the number.",
+      "common_mistake_notes": "Common mistakes include not accounting for the negative sign or using the wrong angle and magnitude."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Express the complex number in exponential form: 2\ncorrect answer: D\nchoices:\nA) 2e^(iπ/4)\nB) 2e^(-iπ/4)\nC) 2e^(iπ/3)\nD) 2e^(0)",
+      "choices": {
+        "A": "Common mistake: Using the wrong angle. The correct angle for 2 is 0, not π/4.",
+        "B": "Common mistake: Not considering the positive sign. Since we have 2, the argument should be 0, not -π/4.",
+        "C": "Common mistake: Using the wrong angle and magnitude. The argument should be 0, not π/3.",
+        "D": "Correct answer. The exponential form of 2 is 2e^(0), as it correctly represents a point on the complex plane with magnitude 2 and angle 0 radians counterclockwise from the positive x-axis."
+      },
+      "correct_choice": "D",
+      "solution": "The exponential form of a complex number 2 is given by r * e^(iθ), where r is the magnitude and θ is the argument in radians. The magnitude of 2 is 2, and its argument in radians is 0 (0°) counterclockwise from the positive x-axis. Therefore, the exponential form is 2e^(0).",
+      "explanation": "This question tests the understanding of expressing a complex number in polar form (exponential form) and correctly identifying the angle corresponding to a real number with no imaginary part.",
+      "common_mistake_notes": "Common mistakes include using the wrong angle or not considering the positive sign."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Express the complex number in exponential form: 5i\ncorrect answer: C\nchoices:\nA) 5e^(iπ)\nB) 5e^(-iπ/2)\nC) 5e^(iπ/2)\nD) -5e^(iπ)",
+      "choices": {
+        "A": "Common mistake: Using the wrong angle. The correct angle for 5i is π/2, not π.",
+        "B": "Common mistake: Not considering the magnitude. Since we have 5i, the magnitude should be 5, not -5.",
+        "C": "Correct answer. The exponential form of 5i is 5e^(iπ/2), as it correctly represents a point on the complex plane with magnitude 5 and angle π/2 radians counterclockwise from the positive x-axis.",
+        "D": "Common mistake: Adding an unnecessary negative sign. This choice has the correct angle but adds a negative sign that is not needed."
+      },
+      "correct_choice": "C",
+      "solution": "The exponential form of a complex number 5i is given by r * e^(iθ), where r is the magnitude and θ is the argument in radians. The magnitude of 5i is 5, and its argument in radians is π/2 (90°) counterclockwise from the positive x-axis. Therefore, the exponential form is 5e^(iπ/2).",
+      "explanation": "This question tests the understanding of expressing a complex number in polar form (exponential form) and correctly identifying the angle corresponding to an imaginary number.",
+      "common_mistake_notes": "Common mistakes include using the wrong angle or adding an unnecessary negative sign."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Express the complex number in exponential form: -3\ncorrect answer: B\nchoices:\nA) 3e^(iπ/2)\nB) 3e^(-iπ)\nC) -3e^(iπ)\nD) -3e^(iπ/4)",
+      "choices": {
+        "A": "Common mistake: Using the wrong angle. The correct angle for -3 is -π, not π/2.",
+        "B": "Correct answer. The exponential form of -3 is 3e^(-iπ), as it correctly represents a point on the complex plane with magnitude 3 and angle -π radians counterclockwise from the positive x-axis.",
+        "C": "Common mistake: Not accounting for the negative sign. This choice has the correct angle but not the correct magnitude.",
+        "D": "Common mistake: Using the wrong angle and magnitude. The argument should be -π, not π/4, and the magnitude should be 3, not -3."
+      },
+      "correct_choice": "B",
+      "solution": "The exponential form of a complex number -3 is given by r * e^(iθ), where r is the magnitude and θ is the argument in radians. The magnitude of -3 is 3, and its argument in radians is -π (180°) counterclockwise from the positive x-axis. Therefore, the exponential form is 3e^(-iπ).",
+      "explanation": "This question tests the understanding of expressing a complex number in polar form (exponential form) and correctly accounting for the sign of the number.",
+      "common_mistake_notes": "Common mistakes include not accounting for the negative sign or using the wrong angle and magnitude."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Express the complex number in exponential form: 4i\ncorrect answer: A\nchoices:\nA) 4e^(iπ/2)\nB) 4e^(-iπ/2)\nC) -4e^(iπ)\nD) -4e^(iπ/3)",
+      "choices": {
+        "A": "Correct answer. The exponential form of 4i is 4e^(iπ/2), as it correctly represents a point on the complex plane with magnitude 4 and angle π/2 radians counterclockwise from the positive x-axis.",
+        "B": "Common mistake: Not considering the imaginary part. Since we have 4i, the argument should be π/2, not -π/2.",
+        "C": "Common mistake: Using the wrong angle and magnitude. The argument should be π/2, not π, and the magnitude should be 4, not -4.",
+        "D": "Common mistake: Using the wrong angle and magnitude. The argument should be π/2, not π/3, and the magnitude should be 4, not -4."
+      },
+      "correct_choice": "A",
+      "solution": "The exponential form of a complex number 4i is given by r * e^(iθ), where r is the magnitude and θ is the argument in radians. The magnitude of 4i is 4, and its argument in radians is π/2 (90°) counterclockwise from the positive x-axis. Therefore, the exponential form is 4e^(iπ/2).",
+      "explanation": "This question tests the understanding of expressing a complex number in polar form (exponential form) and correctly identifying the angle corresponding to an imaginary number.",
+      "common_mistake_notes": "Common mistakes include not considering the imaginary part or using the wrong angle and magnitude."
+    }
+  ]
+}

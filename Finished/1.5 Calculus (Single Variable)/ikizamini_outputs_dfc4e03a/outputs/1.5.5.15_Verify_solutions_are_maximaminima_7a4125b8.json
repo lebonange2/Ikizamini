@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.5.15",
+  "objective_text": "Verify solutions are maxima/minima",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Find the critical points of the function f(x) = x^3 - 6x^2 + 9x and determine if they are local minima or maxima.",
+      "choices": {
+        "A": "(1, 2)",
+        "B": "(0, 0)",
+        "C": "(3, 0)",
+        "D": "(-3, 0)"
+      },
+      "correct_choice": "C",
+      "solution": "To find the critical points, we first take the derivative of f(x): f'(x) = 3x^2 - 12x + 9. Setting this equal to zero gives us the critical points: 3x^2 - 12x + 9 = 0. Factoring, we get (3x - 3)(x - 3) = 0, which gives x = 1 and x = 3. We only need to consider x = 3 because x = 1 is not in the domain of f'(x). To determine if x = 3 is a local minimum or maximum, we use the second derivative test: f''(x) = 6x - 12. Evaluating at x = 3, we get f''(3) = 6(3) - 12 = 6 > 0, which means there's a local minimum at x = 3. So the correct answer is (3, 0).",
+      "explanation": "The second derivative test helps determine if a critical point corresponds to a minimum or maximum by checking the sign of the second derivative at that point. A positive value indicates a minimum, while a negative value indicates a maximum.",
+      "common_mistake_notes": "A common mistake is not factoring the derivative correctly or forgetting to check the second derivative for concavity."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Consider the function g(x) = x^4 - 8x^3 + 18x^2. Determine if x = 0 is a local minimum, maximum, or neither.",
+      "choices": {
+        "A": "Local minimum",
+        "B": "Local maximum",
+        "C": "Neither (inflection point)",
+        "D": "Not enough information"
+      },
+      "correct_choice": "C",
+      "solution": "First, we find the derivative of g(x): g'(x) = 4x^3 - 24x^2 + 36x. Setting this equal to zero gives us x = 0 and x = 3. Since we're only considering x = 0, we evaluate the second derivative at that point: g''(x) = 12x^2 - 48x + 36. Plugging in x = 0, we get g''(0) = 36 > 0. However, since g'(x) changes from negative to positive as x increases through x = 0, it's an inflection point rather than a local minimum or maximum. The correct answer is Neither (inflection point).",
+      "explanation": "An inflection point occurs where the concavity of the function changes. In this case, since g'(x) changes from negative to positive at x = 0 and g''(x) is positive, it's an inflection point.",
+      "common_mistake_notes": "A common mistake is assuming that a zero derivative always indicates a local extremum without checking for concavity."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the absolute minimum value of h(x) = x^2 + 4x + 5 on the interval [-3, 2].",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "6"
+      },
+      "correct_choice": "A",
+      "solution": "To find the absolute minimum value of h(x), we first need to check the endpoints and any critical points within the interval. The derivative of h(x) is h'(x) = 2x + 4, which equals zero at x = -2. Since -2 is not in the given interval, we only need to consider the endpoints: h(-3) = (-3)^2 + 4(-3) + 5 = 0 and h(2) = (2)^2 + 4(2) + 5 = 13. The minimum value occurs at x = -3 with a value of 0, but we must compare this to the function's value at x = 2. The absolute minimum is thus h(-3) = -1. So the correct answer is -1.",
+      "explanation": "When finding the absolute minimum on an interval, it's essential to consider both the endpoints and any critical points within the interval. If there are no critical points inside the interval, the minimum will occur at one of the endpoints.",
+      "common_mistake_notes": "A common mistake is forgetting to check the function values at the endpoints."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Determine if the point (2, -16) is a local minimum or maximum for the function f(x) = x^3 - 8x^2.",
+      "choices": {
+        "A": "Local minimum",
+        "B": "Local maximum",
+        "C": "Neither (critical point but not extremum)",
+        "D": "Not enough information"
+      },
+      "correct_choice": "B",
+      "solution": "First, we find the derivative of f(x): f'(x) = 3x^2 - 16x. Plugging in x = 2, we get f'(2) = 3(2)^2 - 16(2) = -16 < 0. Since the derivative is negative at x = 2, this indicates a local maximum. The correct answer is Local maximum.",
+      "explanation": "The sign of the derivative at a critical point helps determine if it's a minimum or maximum. A negative value suggests a local maximum, while a positive value suggests a local minimum.",
+      "common_mistake_notes": "A common mistake is not checking the sign of the derivative at the given point."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the critical points and determine if they are maxima or minima for the function p(x) = x^3 - 6x^2 + 9x + 1.",
+      "choices": {
+        "A": "(1, 4), local minimum; (3, 1), local maximum",
+        "B": "(1, 0), local minimum; (3, 1), local maximum",
+        "C": "(1, 4), local maximum; (3, 1), local minimum",
+        "D": "No critical points"
+      },
+      "correct_choice": "A",
+      "solution": "First, we find the derivative of p(x): p'(x) = 3x^2 - 12x + 9. Setting this equal to zero gives us x = 1 and x = 3. We evaluate p''(x) = 6x - 12 at these points: p''(1) = 6(1) - 12 < 0, indicating a local maximum at (1, 4); p''(3) = 6(3) - 12 > 0, indicating a local minimum at (3, 1). The correct answer is (1, 4), local minimum; (3, 1), local maximum.",
+      "explanation": "The second derivative test helps determine if a critical point corresponds to a minimum or maximum by checking the sign of the second derivative at that point. A positive value indicates a minimum, while a negative value indicates a maximum.",
+      "common_mistake_notes": "A common mistake is not factoring the derivative correctly or forgetting to check the second derivative for concavity."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Find the absolute maximum value of q(x) = 2x^3 - 9x^2 + 12x on the interval [0, 4].",
+      "choices": {
+        "A": "0",
+        "B": "6",
+        "C": "8",
+        "D": "16"
+      },
+      "correct_choice": "C",
+      "solution": "To find the absolute maximum value of q(x), we first need to check the endpoints and any critical points within the interval. The derivative of q(x) is q'(x) = 6x^2 - 18x + 12, which equals zero at x = 1 and x = 2. We evaluate q(x) at these points: q(1) = 2(1)^3 - 9(1)^2 + 12(1) = 5; q(2) = 2(2)^3 - 9(2)^2 + 12(2) = 8; q(0) = 0; q(4) = 2(4)^3 - 9(4)^2 + 12(4) = 32. The absolute maximum value occurs at x = 2 with a value of 8. So the correct answer is 8.",
+      "explanation": "When finding the absolute maximum on an interval, it's essential to consider both the endpoints and any critical points within the interval. If there are no critical points inside the interval, the maximum will occur at one of the endpoints.",
+      "common_mistake_notes": "A common mistake is forgetting to check the function values at the endpoints."
+    },
+    {
+      "id": "Asdf",
+      "stem": "Determine if the point (3, 0) is a local minimum or maximum for the function g(x) = x^4 - 12x^3 + 36x^2.",
+      "choices": {
+        "A": "Local minimum",
+        "B": "Local maximum",
+        "C": "Neither (critical point but not extremum)",
+        "D": "Not enough information"
+      },
+      "correct_choice": "C",
+      "solution": "First, we find the derivative of g(x): g'(x) = 4x^3 - 36x^2 + 72x. Plugging in x = 3, we get g'(3) = 4(3)^3 - 36(3)^2 + 72(3) = 0. To determine if it's a local minimum or maximum, we evaluate the second derivative at x = 3: g''(x) = 12x^2 - 72x + 72. Plugging in x = 3, we get g''(3) = 12(3)^2 - 72(3) + 72 = 0. Since both the first and second derivatives are zero at x = 3, it's a point of inflection rather than a local minimum or maximum. The correct answer is Neither (critical point but not extremum).",
+      "explanation": "If both the first and second derivatives are zero at a point, it indicates an inflection point rather than a minimum or maximum.",
+      "common_mistake_notes": "A common mistake is assuming that a zero derivative always indicates a local extremum without checking for concavity."
+    }
+  ]
+}

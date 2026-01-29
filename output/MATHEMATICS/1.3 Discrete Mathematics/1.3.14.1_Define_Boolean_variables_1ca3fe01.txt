@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.14.1 Define Boolean variables
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.14 Boolean Algebra
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (?):
+What is the definition of a Boolean variable?
+A) A variable that can only have two values: True and False
+B) A variable that represents a real number
+C) A variable used for storing images
+D) A variable that stores text data
+Correct Answer: A
+
+Solution:
+A Boolean variable is a variable that can only have two values: True or False. It is typically used to represent logical conditions in programming.
+
+Explanation:
+Boolean variables are an essential part of programming logic and are used to make decisions based on whether a condition is true or false.
+
+Common mistake note:
+Common mistake: Choosing B, which represents a numeric variable instead of a Boolean one. Remember that Boolean variables deal with logical values (True/False), not numerical ones.
+------------------------------------------------------------------------------
+
+Problem 2 (?):
+In what programming language context are Boolean variables primarily used?
+A) Python
+B) C++
+C) Java
+D) Prolog
+Correct Answer: D
+
+Solution:
+Prolog is a logic programming language that heavily relies on Boolean variables and logical operations.
+
+Explanation:
+Prolog was designed to handle complex logical queries, making it well-suited for using Boolean variables. Other languages like Python, C++, and Java also support Boolean variables but are not primarily focused on them.
+
+Common mistake note:
+Common mistake: Choosing A, B, or C, as they all support Boolean variables but were not designed specifically with Booleans in mind.
+------------------------------------------------------------------------------
+
+Problem 3 (?):
+What is the primary purpose of using Boolean variables in programming?
+A) To store large amounts of data efficiently
+B) To perform arithmetic operations
+C) To make decisions and control program flow
+D) To create graphical user interfaces
+Correct Answer: C
+
+Solution:
+Boolean variables are used to make decisions within a program, controlling the execution flow based on whether a condition is true or false.
+
+Explanation:
+Boolean variables help programmers write conditional statements that determine which parts of the code should be executed. They do not store large amounts of data, perform arithmetic operations, or create GUIs.
+
+Common mistake note:
+Common mistake: Choosing A, B, or D, as these functions are typically performed by other programming constructs and not the primary purpose of Boolean variables.
+------------------------------------------------------------------------------
+
+Problem 4 (?):
+Which symbol represents the logical 'AND' operation in Boolean algebra?
+A) &amp;
+B) |
+C) ^
+D) ~
+Correct Answer: A
+
+Solution:
+The symbol commonly used for the logical AND operation in Boolean algebra is '&amp;' (ampersand).
+
+Explanation:
+In programming, the ampersand symbol (&amp;) is often used to represent the logical AND operation, which returns True only if both operands are True.
+
+Common mistake note:
+Common mistake: Choosing B, C, or D, as these symbols typically represent other logical operations (OR, XOR, and NOT) in Boolean algebra.
+------------------------------------------------------------------------------
+
+Problem 5 (?):
+What is the result of evaluating the expression 'True OR False'?
+A) False
+B) True
+C) Error: Ambiguous expression
+D) 0
+Correct Answer: B
+
+Solution:
+The result of evaluating the expression 'True OR False' is True, because at least one of the operands is true.
+
+Explanation:
+In Boolean algebra, the OR operation returns True if either or both of its operands are True. In this case, since True is one of the operands, the overall result is True.
+
+Common mistake note:
+Common mistake: Choosing A, C, or D, as these results do not follow the rules of the logical OR operation in Boolean algebra.
+------------------------------------------------------------------------------
+
+Problem 6 (?):
+How is the negation of a Boolean variable 'x' represented in most programming languages?
+A) x == 0
+B) not x
+C) x != True
+D) x = False
+Correct Answer: B
+
+Solution:
+The negation of a Boolean variable 'x' is represented as 'not x' in most programming languages.
+
+Explanation:
+The negation operation flips the value of a Boolean variable. In many languages, this is done using the 'not' keyword. The other choices do not accurately represent the negation of 'x'.
+
+Common mistake note:
+Common mistake: Choosing A or C, as they compare the variable to values instead of negating it. Choosing D assigns a new value to x rather than negating it.
+------------------------------------------------------------------------------
+
+Problem 7 (?):
+What type of data should be used for the condition in an if-else statement?
+A) Integer
+B) String
+C) Boolean
+D) List
+Correct Answer: C
+
+Solution:
+The condition in an if-else statement should be a Boolean value, as it determines whether the 'if' or 'else' block is executed.
+
+Explanation:
+An if-else statement evaluates a condition (a Boolean variable or expression) to decide which code block to execute. Integer, string, and list data types are not suitable for this purpose because they do not represent true/false conditions.
+
+Common mistake note:
+Common mistake: Choosing A, B, or D, as these data types do not directly determine the execution flow in an if-else statement.
+------------------------------------------------------------------------------

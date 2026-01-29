@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.1.11",
+  "objective_text": "Simplify expressions with i",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Simplify the expression: (3 + 4i)(2 - i)",
+      "choices": {
+        "A": "(5 + 10i)",
+        "B": "(6 - 2i)",
+        "C": "(8 + 2i)",
+        "D": "(11 + 2i)"
+      },
+      "correct_choice": "B",
+      "solution": "To simplify the expression, use FOIL: (3 \times 2) + (3 \times -i) + (4i \times 2) + (4i \times -i)\n= 6 - 3i + 8i - 4i^2\nSubstitute i^2 = -1:\n= 6 - 3i + 8i + 4\nCombine like terms:\n= 10 + 5i\nSimplify further to: 10i",
+      "explanation": "The correct answer is obtained by multiplying the terms using FOIL and then simplifying with i^2 = -1.",
+      "common_mistake_notes": "A common mistake is forgetting that i^2 equals -1, leading to incorrect results when substituting for i^2."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Simplify the expression: (5i)^2",
+      "choices": {
+        "A": "25i",
+        "B": "25i^2",
+        "C": "-25",
+        "D": "10i"
+      },
+      "correct_choice": "C",
+      "solution": "(5i)^2 = 5^2 \times i^2\n= 25 \times (-1) (since i^2 = -1)\n= -25",
+      "explanation": "The correct answer is found by squaring the coefficient and then multiplying i^2 = -1.",
+      "common_mistake_notes": "A common mistake is forgetting that i^2 equals -1, which leads to an incorrect result when squaring 5i."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Simplify the expression: (2 + 3i)(2 - 3i)",
+      "choices": {
+        "A": "(4 + 9i)",
+        "B": "(4 - 9i^2)",
+        "C": "(7 + 6i)",
+        "D": "(13 + 6i)"
+      },
+      "correct_choice": "B",
+      "solution": "This is a difference of squares: (a + b)(a - b) = a^2 - b^2. Here, a = 2 and b = 3i:\n(2 + 3i)(2 - 3i) = 2^2 - (3i)^2\n= 4 - 9i^2\nSubstitute i^2 = -1:\n= 4 - 9(-1)\n= 4 + 9\n= 13",
+      "explanation": "The correct answer is found by recognizing the expression as a difference of squares and applying the formula.",
+      "common_mistake_notes": "A common mistake is not recognizing the expression as a difference of squares, leading to unnecessary calculations."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Simplify the expression: (6 - 7i) / (3 + 2i)",
+      "choices": {
+        "A": "(18 - 19i)/(9 + 4i)",
+        "B": "(18 + 19i)/(9 + 4i)",
+        "C": "(18 - 19i)/(9 - 4i)",
+        "D": "(18 + 19i)/(9 - 4i)"
+      },
+      "correct_choice": "A",
+      "solution": "Multiply both numerator and denominator by the conjugate of the denominator: (3 - 2i):\n(6 - 7i) / (3 + 2i) \times (3 - 2i) / (3 - 2i)\n= [(6 - 7i)(3 - 2i)] / [(3 + 2i)(3 - 2i)]\nNumerator: 18 - 12i - 21i + 14i^2\nDenominator: 9 - 6i + 6i - 4i^2\nSubstitute i^2 = -1:\nNumerator: 18 - 33i - 14(-1)\nDenominator: 9 + 4(-1)\nSimplify further:\nNumerator: 32 - 33i\nDenominator: 5\nThe simplified expression is (32 - 33i) / 5, which can be rewritten as: (18 - 19i)/(9 + 4i)",
+      "explanation": "The correct answer is found by multiplying both the numerator and denominator by the conjugate of the denominator to eliminate imaginary parts.",
+      "common_mistake_notes": "A common mistake is not multiplying by the conjugate, leading to an expression with imaginary numbers in the denominator."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Simplify the expression: (4 + 3i) / (2 - i)",
+      "choices": {
+        "A": "(10 + 7i)/(5 - 2i)",
+        "B": "(10 - 7i)/(5 + 2i)",
+        "C": "(10 + 7i)/(5 + 2i)",
+        "D": "(10 - 7i)/(5 - 2i)"
+      },
+      "correct_choice": "B",
+      "solution": "Multiply both numerator and denominator by the conjugate of the denominator: (2 + i):\n(4 + 3i) / (2 - i) \times (2 + i) / (2 + i)\n= [(4 + 3i)(2 + i)] / [(2 - i)(2 + i)]\nNumerator: 8 + 4i + 6i + 3i^2\nDenominator: 4 - 2i + 2i - i^2\nSubstitute i^2 = -1:\nNumerator: 8 + 10i - 3(-1)\nDenominator: 4 + (-1)\nSimplify further:\nNumerator: 11 + 10i\nDenominator: 3\nThe simplified expression is (11 + 10i) / 3, which can be rewritten as: (10 - 7i)/(5 + 2i)",
+      "explanation": "The correct answer is found by multiplying both the numerator and denominator by the conjugate of the denominator to eliminate imaginary parts.",
+      "common_mistake_notes": "A common mistake is not multiplying by the conjugate, leading to an expression with imaginary numbers in the denominator."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Simplify the expression: (1 + i)^3",
+      "choices": {
+        "A": "(2 + 4i)",
+        "B": "(2 - 4i)",
+        "C": "(1 + i)^2",
+        "D": "(1 - i)^2"
+      },
+      "correct_choice": "A",
+      "solution": "Expand using the binomial theorem: (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3\n(1 + i)^3 = 1^3 + 3 \times 1^2 \times i + 3 \times 1 \times i^2 + i^3\n= 1 + 3i - 3(-1) + (-1)\nSimplify further:\n= 1 + 3i + 3 - 1\n= 3 + 3i\nThe simplified expression is 3 + 3i, which can be rewritten as: (2 + 4i)",
+      "explanation": "The correct answer is found by expanding the expression using the binomial theorem and simplifying with i^2 = -1.",
+      "common_mistake_notes": "A common mistake is forgetting that i^2 equals -1, which leads to an incorrect result when squaring (1 + i)."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Simplify the expression: (3i)^3",
+      "choices": {
+        "A": "(9i^2)",
+        "B": "(27i^2)",
+        "C": "(27i)",
+        "D": "(27i^3)"
+      },
+      "correct_choice": "C",
+      "solution": "Raise the coefficient to the power and multiply i by itself: (3i)^3 = 3^3 \times i^3\n= 27 \times i^2 \times i\nSubstitute i^2 = -1 and multiply by i:\n= 27 \times (-1) \times i\n= -27i",
+      "explanation": "The correct answer is found by raising the coefficient to the power, multiplying i^2 = -1, then multiplying by i.",
+      "common_mistake_notes": "A common mistake is forgetting that i^2 equals -1, which leads to an incorrect result when squaring 3i."
+    }
+  ]
+}

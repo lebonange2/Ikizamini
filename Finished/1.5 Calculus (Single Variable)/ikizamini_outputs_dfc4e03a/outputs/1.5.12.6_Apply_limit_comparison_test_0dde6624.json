@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.12.6",
+  "objective_text": "Apply limit comparison test",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Evaluate the limit using the Limit Comparison Test: lim x → ∞ (3x^2 + 4x - 1) / (5x^2 + 7x)",
+      "choices": {
+        "A": "(A) 0",
+        "B": "(B) 1/3",
+        "C": "(C) 3/5",
+        "D": "(D) ∞"
+      },
+      "correct_choice": "C",
+      "solution": "The Limit Comparison Test compares the limit of two functions. To apply it, we choose a simpler function to compare with, typically one that is easier to evaluate the limit for. In this case, let's compare our function with 3x^2 / 5x^2 = 3/5. Since both functions have x^2 in the numerator and denominator, they will grow at the same rate as x approaches infinity. The limit of 3/5 is 3/5, so by the Limit Comparison Test, the limit of (3x^2 + 4x - 1) / (5x^2 + 7x) is also 3/5.",
+      "explanation": "The Limit Comparison Test compares the behavior of two functions as x approaches infinity. If the limit of the ratio of their absolute values is a finite, non-zero value, then both limits either exist and are equal or do not exist.",
+      "common_mistake_notes": "A common mistake would be to directly evaluate the limit without using the Limit Comparison Test. This test is useful when direct substitution doesn't lead to an easy solution."
+    },
+    {
+      "id": "Two",
+      "stem": "Evaluate the limit using the Limit Comparison Test: lim x → ∞ (sin(x) / x)^(1/x)",
+      "choices": {
+        "A": "(A) 0",
+        "B": "(B) 1",
+        "C": "(C) e",
+        "D": "(D) Does not exist"
+      },
+      "correct_choice": "B",
+      "solution": "The Limit Comparison Test is not directly applicable to this problem because the function involves an exponent with x. Instead, we can use L'Hopital's Rule or recognize that (sin(x) / x) approaches 1 as x approaches infinity. Taking the limit of the logarithm first: lim x → ∞ ln((sin(x) / x)^(1/x)) = lim x → ∞ (1/x) * ln(sin(x) / x). The first term goes to 0, and the second term oscillates between -∞ and ∞. Therefore, the overall limit does not exist.",
+      "explanation": "The Limit Comparison Test is designed for comparing series or functions with similar growth rates. This problem involves a more complex function that requires different techniques like L'Hopital's Rule or recognizing special limits.",
+      "common_mistake_notes": "A common mistake would be to try applying the Limit Comparison Test without realizing it's not suitable for this type of limit. It is essential to recognize when other methods, such as L'Hopital's Rule, are more appropriate."
+    },
+    {
+      "id": "Three",
+      "stem": "Evaluate the limit using the Limit Comparison Test: lim x → ∞ (2^x + 3^(x+1)) / (4^x)",
+      "choices": {
+        "A": "(A) 0",
+        "B": "(B) 1/2",
+        "C": "(C) 1",
+        "D": "(D) ∞"
+      },
+      "correct_choice": "B",
+      "solution": "The Limit Comparison Test can be applied by comparing the given function with 3^(x+1) / 4^x = (3/4)^x. As x approaches infinity, (3/4)^x approaches 0 because 3/4 is less than 1. Since the limit of (3/4)^x is 0 and both functions grow at the same rate, the limit of (2^x + 3^(x+1)) / (4^x) is also 0.",
+      "explanation": "The Limit Comparison Test helps to determine the behavior of a function by comparing it with another simpler function. In this case, we chose a function that grows at a similar rate and has an easily determined limit as x approaches infinity.",
+      "common_mistake_notes": "A common mistake would be to compare with 2^x / 4^x instead, which would lead to the incorrect conclusion that the limit is 1/2. It's important to choose a comparison function that reflects the dominant term in the original expression."
+    },
+    {
+      "id": "Four",
+      "stem": "Evaluate the limit using the Limit Comparison Test: lim x → ∞ (5x^3 - 7x + 9) / (8x^3 + 12x)",
+      "choices": {
+        "A": "(A) 0",
+        "B": "(B) 5/8",
+        "C": "(C) 1",
+        "D": "(D) ∞"
+      },
+      "correct_choice": "B",
+      "solution": "The Limit Comparison Test can be applied by comparing the given function with 5x^3 / 8x^3 = 5/8. As x approaches infinity, both functions grow at the same rate, and their ratio approaches 5/8. Therefore, the limit of (5x^3 - 7x + 9) / (8x^3 + 12x) is also 5/8.",
+      "explanation": "The Limit Comparison Test compares the behavior of two functions as x approaches infinity. In this case, we chose a function that grows at the same rate as the original expression and has an easily determined limit.",
+      "common_mistake_notes": "A common mistake would be to compare with 5x^3 - 7x / 8x^3 + 12x instead, which would make the comparison more complicated. It's important to simplify the comparison function if possible."
+    },
+    {
+      "id": "Five",
+      "stem": "Evaluate the limit using the Limit Comparison Test: lim x → ∞ (e^(2x) - 1) / (e^(3x) + 2)",
+      "choices": {
+        "A": "(A) 0",
+        "B": "(B) 1/2",
+        "C": "(C) 2/3",
+        "D": "(D) ∞"
+      },
+      "correct_choice": "C",
+      "solution": "The Limit Comparison Test can be applied by comparing the given function with e^(2x) / e^(3x) = (e^2)^x / (e^3)^x = (1/e)^x. As x approaches infinity, (1/e)^x approaches 0 because e is greater than 1. Since the limit of (1/e)^x is 0 and both functions grow at the same rate, the limit of (e^(2x) - 1) / (e^(3x) + 2) is also 0.",
+      "explanation": "The Limit Comparison Test helps to determine the behavior of a function by comparing it with another simpler function. In this case, we chose a function that grows at a similar rate and has an easily determined limit as x approaches infinity.",
+      "common_mistake_notes": "A common mistake would be to compare with e^(2x) - 1 / e^(3x) + 2 instead, which would lead to a more complex comparison. It's important to simplify the comparison function if possible."
+    },
+    {
+      "id": "Six",
+      "stem": "Evaluate the limit using the Limit Comparison Test: lim x → ∞ (ln(x)) / (x^2)",
+      "choices": {
+        "A": "(A) 0",
+        "B": "(B) 1/2",
+        "C": "(C) 1",
+        "D": "(D) ∞"
+      },
+      "correct_choice": "A",
+      "solution": "The Limit Comparison Test can be applied by comparing the given function with ln(x) / x^2. As x approaches infinity, ln(x) grows much slower than x^2, so the limit of ln(x) / x^2 approaches 0.",
+      "explanation": "The Limit Comparison Test helps to determine the behavior of a function by comparing it with another simpler function. In this case, we can compare directly since one function grows much faster than the other as x approaches infinity.",
+      "common_mistake_notes": "A common mistake would be to try using a comparison test with a different function, such as 1/x or 1/x^2. However, these comparisons would not lead to an easy conclusion about the limit."
+    },
+    {
+      "id": "Seven",
+      "stem": "Evaluate the limit using the Limit Comparison Test: lim x → ∞ (x^3 + 4x^2 - 7) / (2x^3 - 9)",
+      "choices": {
+        "A": "(A) 0",
+        "B": "(B) 1/2",
+        "C": "(C) 1",
+        "D": "(D) ∞"
+      },
+      "correct_choice": "C",
+      "solution": "The Limit Comparison Test can be applied by comparing the given function with x^3 / 2x^3 = 1/2. As x approaches infinity, both functions grow at the same rate, and their ratio approaches 1/2. Therefore, the limit of (x^3 + 4x^2 - 7) / (2x^3 - 9) is also 1.",
+      "explanation": "The Limit Comparison Test compares the behavior of two functions as x approaches infinity. In this case, we chose a function that grows at the same rate as the original expression and has an easily determined limit.",
+      "common_mistake_notes": "A common mistake would be to compare with x^3 + 4x^2 - 7 / 2x^3 - 9 instead, which would make the comparison more complicated. It's important to simplify the comparison function if possible."
+    }
+  ]
+}

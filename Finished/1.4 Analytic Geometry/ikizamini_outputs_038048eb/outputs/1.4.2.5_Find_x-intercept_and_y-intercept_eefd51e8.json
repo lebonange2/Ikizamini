@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.4.2.5",
+  "objective_text": "Find x-intercept and y-intercept",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "One",
+      "stem": "Find the x-intercept of the line given by the equation 3x + 4y = 12.",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "6"
+      },
+      "correct_choice": "B",
+      "solution": "To find the x-intercept, set y = 0 and solve for x. So we have: 3x + 4(0) = 12 => 3x = 12 => x = 12 / 3 => x = 4. Therefore, the x-intercept is (4, 0).",
+      "explanation": "The x-intercept occurs where the line crosses the x-axis, which means y is zero.",
+      "common_mistake_notes": "A common mistake is to solve for y instead of x when finding the x-intercept."
+    },
+    {
+      "id": "Two",
+      "stem": "Find the y-intercept of the equation y = 2x - 5.",
+      "choices": {
+        "A": "-3",
+        "B": "-5",
+        "C": "0",
+        "D": "5"
+      },
+      "correct_choice": "B",
+      "solution": "The y-intercept occurs when x = 0. Plugging in x = 0 into the equation, we get: y = 2(0) - 5 => y = -5. So the y- intercept is (0, -5).",
+      "explanation": "To find the y-intercept, set x = 0 and solve for y.",
+      "common_mistake_notes": "A common mistake is to forget to substitute x with 0 when finding the y-intercept."
+    },
+    {
+      "id": "Three",
+      "stem": "Find the x-intercept of the line passing through points (2, 3) and (-1, 0).",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "correct_choice": "A",
+      "solution": "First, find the slope using the two points: m = (y2 - y1) / (x2 - x1) = (0 - 3) / (-1 - 2) = 3 / 3 = 1. Then use point-slope form to find the equation of the line: y - y1 = m(x - x1). Plugging in one of the points, say (2, 3), we get: y - 3 = 1(x - 2) => y = x + 1. To find the x-intercept, set y = 0 and solve for x: 0 = x + 1 => x = -1. So the x-intercept is (-1, 0).",
+      "explanation": "Use the two points to find the slope, then use point-slope form to get the equation of the line, and finally set y = 0 to find the x-intercept.",
+      "common_mistake_notes": "A common mistake is to forget to convert from point-slope form to slope-intercept form before setting y = 0."
+    },
+    {
+      "id": "Four",
+      "stem": "Find the x- and y-intercepts of the line 4x - 3y = 12.",
+      "choices": {
+        "A": "x- intercept: (3, 0), y-intercept: (0, 4)",
+        "B": "x- intercept: (-3, 0), y-intercept: (0, -4)",
+        "C": "x- intercept: (4, 0), y-intercept: (0, 3)",
+        "D": "x- intercept: (-4, 0), y-intercept: (0, -3)"
+      },
+      "correct_choice": "B",
+      "solution": "To find the x-intercept, set y = 0 and solve for x: 4x - 3(0) = 12 => 4x = 12 => x = 12 / 4 => x = -3. So the x-intercept is (-3, 0). To find the y-intercept, set x = 0 and solve for y: 4(0) - 3y = 12 => -3y = 12 => y = -12 / 3 => y = -4. So the y-intercept is (0, -4).",
+      "explanation": "Separately set x and y to zero and solve for the other variable to find both intercepts.",
+      "common_mistake_notes": "A common mistake is to mix up the signs when solving for the intercepts."
+    },
+    {
+      "id": "Five",
+      "stem": "Find the equation of a line with x-intercept 5 and y-intercept -2.",
+      "choices": {
+        "A": "y = -2x + 10",
+        "B": "y = 2x - 10",
+        "C": "y = 2x + 10",
+        "D": "y = -2x - 10"
+      },
+      "correct_choice": "A",
+      "solution": "The equation of a line with x-intercept 5 is x = 5, and the equation with y-intercept -2 is y = -2. To combine these into one equation, we can use the point-slope form: y - y1 = m(x - x1). Since the slope is undefined (vertical line), the equation will be in the form of x = a. In this case, a = 5, so the equation is x = 5. However, if we need to express it as y = mx + b, we can rearrange: y = 0x - 2 => y = -2x - 10.",
+      "explanation": "The x-intercept gives us the value of x when y = 0, and the y-intercept gives us the value of y when x = 0. If the line is vertical, the slope is undefined, and the equation will be in the form of x = a.",
+      "common_mistake_notes": "A common mistake is to assume that the line is horizontal when given only intercepts, without considering the possibility of a vertical line."
+    },
+    {
+      "id": "Six",
+      "stem": "Find the x- and y-intercepts of the parabola y = x^2 - 4x + 3.",
+      "choices": {
+        "A": "x- intercept: (1, 0), y-intercept: (0, 3)",
+        "B": "x- intercept: (3, 0), y-intercept: (0, 6)",
+        "C": "x- intercept: (-1, 0), y-intercept: (0, -2)",
+        "D": "x- intercept: (1, 0) and (3, 0), y-intercept: (0, 3)"
+      },
+      "correct_choice": "D",
+      "solution": "To find the x-intercepts, set y = 0 and solve for x: x^2 - 4x + 3 = 0. Factoring gives us (x - 1)(x - 3) = 0, so x = 1 or x = 3. The x- intercepts are (1, 0) and (3, 0). To find the y-intercept, set x = 0 and solve for y: y = (0)^2 - 4(0) + 3 => y = 3. So the y-intercept is (0, 3).",
+      "explanation": "For a parabola, find the x- intercepts by setting y = 0 and solving the quadratic equation. The y-intercept is found by setting x = 0.",
+      "common_mistake_notes": "A common mistake is to forget that a quadratic equation may have two distinct real roots for the x-intercepts."
+    },
+    {
+      "id": "Seven",
+      "stem": "Find the x- and y-intercepts of the hyperbola xy = 6.",
+      "choices": {
+        "A": "x- intercept: (6, 0), y-intercept: (0, 6)",
+        "B": "x- intercept: (-6, 0) and (6, 0), y-intercept: (0, -6) and (0, 6)",
+        "C": "x- intercept: (1, 6), y-intercept: (0, 1)",
+        "D": "x- intercept: (6, 0) and (-6, 0), y-intercept: (0, 6) and (0, -6)"
+      },
+      "correct_choice": "D",
+      "solution": "To find the x-intercepts, set y = 0 and solve for x: 0x = 6 => no solution. The hyperbola does not cross the x-axis. To find the y- intercept, set x = 0 and solve for y: 0y = 6 => no solution. The hyperbola does not cross the y-axis either. However, it passes through the points where x or y are equal to the square root of 6 (e.g., (6, 1) and (-6, -1)).",
+      "explanation": "Hyperbolas do not generally have x- or y- intercepts unless they are degenerate cases. In this case, the hyperbola does not intersect either axis.",
+      "common_mistake_notes": "A common mistake is to assume that a hyperbola will always cross both axes like a parabola or line."
+    }
+  ]
+}

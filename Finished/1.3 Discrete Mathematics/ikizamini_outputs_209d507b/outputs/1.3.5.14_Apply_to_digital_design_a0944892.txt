@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.5.14 Apply to digital design
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.5 Logical Equivalence and Laws
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:1):
+In a digital circuit, what is the function of a NOT gate?
+A) It adds two inputs together.
+B) It outputs 1 when all inputs are 0.
+C) It inverts the input signal.
+D) It compares two inputs for equality.
+Correct Answer: C
+
+Solution:
+A NOT gate, also known as an inverter, takes a single input and produces an output that is the opposite of the input. If the input is 1, the output is 0; if the input is 0, the output is 1.
+
+Explanation:
+The NOT gate is a fundamental logic gate in digital design used for negation.
+
+Common mistake note:
+Choosing A (addition) would be incorrect as addition is performed by an ADDER gate. Choosing B (AND gate behavior) and D (comparator behavior) are also wrong because they describe the functions of different gates.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+What is the output of a 4-bit binary up-counter when it reaches its maximum value?
+A) 0001
+B) 1111
+C) 1000
+D) 0000
+Correct Answer: B
+
+Solution:
+A 4-bit binary up-counter counts from 0000 to 1111. When it reaches 1111, it rolls over back to 0000.
+
+Explanation:
+In digital design, a binary counter increments its output by 1 with each clock pulse until it reaches its maximum value, at which point it resets.
+
+Common mistake note:
+Choosing A, C, or D would be incorrect because they are intermediate values in the counter's sequence. The correct answer is B (1111) as it represents the highest value before resetting.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Which of the following digital circuits can store a single bit of information?
+A) AND gate
+B) Flip- flop
+C) Comparator
+D) Multiplexer
+Correct Answer: B
+
+Solution:
+A flip-flop is a basic memory element in digital design that can store a single bit (0 or 1) of information.
+
+Explanation:
+Memory elements like flip-flops are essential for storing data in digital systems. The other choices do not have storage capabilities; they perform logical operations or comparisons.
+
+Common mistake note:
+Choosing A, C, or D would be incorrect because these gates and components don't store information; they process it.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+What is the purpose of a decoder in digital design?
+A) To combine multiple inputs into a single output.
+B) To convert binary to decimal or vice versa.
+C) To amplify a weak input signal.
+D) To compare two inputs for equality.
+Correct Answer: B
+
+Solution:
+A decoder is a digital circuit that takes a set of inputs and produces multiple outputs, typically used to translate binary codes into their corresponding values.
+
+Explanation:
+Decoders are useful in systems where multiple output states need to be represented by a smaller number of input bits.
+
+Common mistake note:
+Choosing A (multiplexer) or D (comparator) would be incorrect because they perform different functions. Choosing C (amplifier) is unrelated to decoders, which don't amplify signals.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Which logic gate can be used to implement a conditional statement in digital design?
+A) AND gate
+B) NOR gate
+C) NAND gate
+D) MUX (Multiplexer)
+Correct Answer: D
+
+Solution:
+A Multiplexer (MUX) is a digital circuit that allows one of several input signals to be selected and passed on as a single output, effectively implementing conditional logic.
+
+Explanation:
+MUXes are often used in digital design to implement conditional statements or data selectors.
+
+Common mistake note:
+Choosing A, B, or C would be incorrect because these gates do not have the ability to selectively pass input signals based on a control signal. MUX is the correct choice for implementing conditional logic.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+In a 7-segment display, how many segments are used to represent numbers and letters?
+A) 4
+B) 7
+C) 10
+D) 14
+Correct Answer: B
+
+Solution:
+A 7-segment display uses seven segments to form digits and certain letters by lighting up different combinations of the segments.
+
+Explanation:
+The segments are typically labeled A, B, C, D, E, F, and G, and can be combined to represent numbers from 0 to 9 and some letters like 'I' and 'O'.
+
+Common mistake note:
+Choosing A, C, or D would be incorrect because they refer to different counts of segments. The correct answer is B (7) as it represents the number of segments in a 7-segment display.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+What is the purpose of a Schmitt trigger in digital design?
+A) To convert an analog signal to a digital one.
+B) To filter out noise from a digital signal.
+C) To stabilize an input voltage threshold for a bistable circuit.
+D) To amplify a weak digital signal.
+Correct Answer: C
+
+Solution:
+A Schmitt trigger is a type of comparator with hysteresis, which helps to stabilize the input voltage threshold and prevent oscillations in bistable circuits due to noise or fluctuations.
+
+Explanation:
+Schmitt triggers are commonly used in digital design to clean up noisy signals and ensure reliable switching between two stable states.
+
+Common mistake note:
+Choosing A (ADC) would be incorrect because it converts analog to digital. Choosing B (filter) is not specific to Schmitt triggers, which don't filter but stabilize thresholds. Choosing D (amplifier) is unrelated as Schmitt triggers do not amplify signals.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.2.1",
+  "objective_text": "Apply definition of derivative (limit definition)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Find the derivative of f(x) = x^2 at x=3 using the limit definition.",
+      "choices": {
+        "A": "-6",
+        "B": "6",
+        "C": "9",
+        "D": "18"
+      },
+      "correct_choice": "B",
+      "solution": "f'(x) = lim (h->0) [ f(x+h) - f(x) ] / h\nf'(3) = lim (h->0) [ (3+h)^2 - 3^2 ] / h\n= lim (h->0) [ 9 + 6h + h^2 - 9 ] / h\n= lim (h->0) [ 6h + h^2 ] / h\n= lim (h->0) [ h(6+h) ] / h\n= lim (h->0) (6+h)\n= 6",
+      "explanation": "The limit definition of the derivative is used to find the slope of a tangent line at a specific point. In this case, we evaluate the limit as h approaches zero.",
+      "common_mistake_notes": "A common mistake would be forgetting to take the limit as h approaches zero or simplifying the expression incorrectly."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Find the derivative of g(x) = 5x - 7 at x=4 using the limit definition.",
+      "choices": {
+        "A": "-1",
+        "B": "3",
+        "C": "18",
+        "D": "23"
+      },
+      "correct_choice": "B",
+      "solution": "g'(x) = lim (h->0) [ g(x+h) - g(x) ] / h\ng'(4) = lim (h->0) [ 5(4+h) - 7 - (5*4 - 7) ] / h\n= lim (h->0) [ 20 + 5h - 7 - 20 + 7 ] / h\n= lim (h->0) [ 5h ] / h\n= lim (h->0) [ 5 ]\n= 5",
+      "explanation": "Again, we use the limit definition of the derivative to find the slope of the tangent line at x=4. The function is linear, so the derivative is constant.",
+      "common_mistake_notes": "A common mistake might be forgetting to distribute the 5 in g(x+h) or misapplying the distributive property."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Find the derivative of h(x) = x^3 - 2x at x=1 using the limit definition.",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "3"
+      },
+      "correct_choice": "D",
+      "solution": "h'(x) = lim (h->0) [ h(x+h)^3 - 2(x+h) - (x^3 - 2x) ] / h\nh'(1) = lim (h->0) [ (1+h)^3 - 2(1+h) - (1 - 2) ] / h\n= lim (h->0) [ 1 + 3h + 3h^2 + h^3 - 2 - 2h - (-1) ] / h\n= lim (h->0) [ h^3 + h^2 + h ] / h\n= lim (h->0) [ h(h^2 + h + 1) ] / h\n= lim (h->0) (h^2 + h + 1)\n= 1+1+1\n= 3",
+      "explanation": "The function is a cubic, so we apply the limit definition to find the derivative at x=1. The simplification involves expanding and factoring.",
+      "common_mistake_notes": "A common mistake would be misapplying the power rule when expanding (h^2 + h + 1) or not simplifying correctly."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Find the derivative of p(x) = x / (x+1) at x=2 using the limit definition.",
+      "choices": {
+        "A": "0.5",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_choice": "A",
+      "solution": "p'(x) = lim (h->0) [ p(x+h) - p(x) ] / h\np'(2) = lim (h->0) [ (2+h)/(2+h+1) - 2/(2+1) ] / h\n= lim (h->0) [ (2+h)/(3+h) - 2/3 ] / h\n= lim (h->0) [ 6 + 3h - 2(3+h) ] / [ 3h + 3h^2 ]\n= lim (h->0) [ 6 + 3h - 6 - 2h ] / [ 3h(1+h) ]\n= lim (h->0) [ h ] / [ 3h(1+h) ]\n= lim (h->0) [ 1/(3(1+h)) ]\n= 1/6",
+      "explanation": "The function is a rational function, so we apply the limit definition to find the derivative at x=2. The simplification involves multiplying by the conjugate.",
+      "common_mistake_notes": "A common mistake would be forgetting to multiply by the conjugate or simplifying incorrectly."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Find the derivative of q(x) = e^x at x=0 using the limit definition.",
+      "choices": {
+        "A": "1",
+        "B": "e",
+        "C": "2",
+        "D": "e^2"
+      },
+      "correct_choice": "A",
+      "solution": "q'(x) = lim (h->0) [ q(x+h) - q(x) ] / h\nq'(0) = lim (h->0) [ e^(0+h) - e^0 ] / h\n= lim (h->0) [ e^h - 1 ] / h\n= 1",
+      "explanation": "The derivative of the exponential function is itself. We use the limit definition to find the derivative at x=0.",
+      "common_mistake_notes": "A common mistake would be not recognizing that the derivative of e^x is e^x or applying the chain rule incorrectly."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Find the derivative of r(x) = sin(x) at x=π/2 using the limit definition.",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "π"
+      },
+      "correct_choice": "C",
+      "solution": "r'(x) = lim (h->0) [ r(x+h) - r(x) ] / h\nr'(π/2) = lim (h->0) [ sin(π/2+h) - sin(π/2) ] / h\n= lim (h->0) [ cos(h) - 1 ] / h\n= 0",
+      "explanation": "The derivative of sine is cosine. We use the limit definition to find the derivative at x=π/2, where cos(h) approaches 0 as h approaches 0.",
+      "common_mistake_notes": "A common mistake would be forgetting that sin(π/2) = 1 or applying the sum/difference identities incorrectly."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Find the derivative of s(x) = ln(x) at x=1 using the limit definition.",
+      "choices": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "e"
+      },
+      "correct_choice": "C",
+      "solution": "s'(x) = lim (h->0) [ s(x+h) - s(x) ] / h\ns'(1) = lim (h->0) [ ln(1+h) - ln(1) ] / h\n= lim (h->0) [ ln(1+h) ] / h\n= 1",
+      "explanation": "The derivative of the natural logarithm is 1/x. We use the limit definition to find the derivative at x=1, where ln(1+h) approaches 0 as h approaches 0.",
+      "common_mistake_notes": "A common mistake would be forgetting that ln(1) = 0 or applying the change of base formula incorrectly."
+    }
+  ]
+}

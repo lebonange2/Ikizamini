@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.4.12 Apply to Boolean algebra
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.4 Truth Tables
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+What is the result of the Boolean expression (A AND B) OR (NOT A AND C)?
+A) B AND C
+B) A OR C
+C) A AND NOT B
+D) B
+Correct Answer: B
+
+Solution:
+Using the distributive law of Boolean algebra, (A AND B) OR (NOT A AND C) = (A OR NOT A) AND (B OR C). Since A OR NOT A is always true (1), the expression simplifies to True AND (B OR C), resulting in B OR C.
+
+Explanation:
+The term A OR NOT A simplifies to 1, and thus the expression reduces to 1 AND (B OR C) which equals B OR C.
+
+Common mistake note:
+A common mistake would be to think that (NOT A AND C) means B must be false, but it doesn't affect the truth value of B.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Given the Boolean expressions X = A + BC and Y = A'B', what is the simplified form of X + Y?
+A) A'BC'
+B) AB + AC'
+C) ABC'
+D) A + B'C'
+Correct Answer: D
+
+Solution:
+Using De Morgan's law, Y = (A')'B' = AB'. Combining X and Y: X + Y = A + BC + AB' = A(1 + B') + BC = A + BC.
+
+Explanation:
+The term A'(B'C') simplifies to 0 because A' and B' cannot both be true at the same time.
+
+Common mistake note:
+A common mistake would be to incorrectly apply De Morgan's law, leading to an incorrect simplified form.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+What is the result of the Boolean expression (X'Y + XZ) AND (XY + YZ)?
+A) XYZ
+B) X + YZ'
+C) X'YZ'
+D) 0
+Correct Answer: D
+
+Solution:
+Distributing the AND operation: (X'Y + XZ) AND (XY + YZ) = X'(Y(1+Z)) + X(Z(Y+Z)). Since Y(1+Z) is always true (Y + YZ), the expression simplifies to X'YZ + X(Z+Z) = 0.
+
+Explanation:
+The terms X'YZ and X(Z+Z) both evaluate to 0 because at least one of the variables in each term must be false.
+
+Common mistake note:
+A common mistake would be to overlook the fact that Y(1+Z) is always true, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Given the Boolean expressions P = A + B and Q = A'B', what is the simplified form of P'Q?
+A) A'B'
+B) AB'
+C) A'B
+D) 0
+Correct Answer: D
+
+Solution:
+First, we find P': P' = (A + B)' = A'*B'. Now, multiplying P' with Q: P'Q = A'*B'*A'B = 0.
+
+Explanation:
+The product of two terms containing complementary variables (A' and A) results in 0.
+
+Common mistake note:
+A common mistake would be to overlook the multiplication rule for complements, leading to an incorrect simplified form.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Simplify the following Boolean expression: (X + Y)' * (X'Y + XZ)
+A) X'Y'Z'
+B) X'YZ'
+C) XYZ'
+D) 0
+Correct Answer: A
+
+Solution:
+First, we find the complement of (X + Y): (X + Y)' = X'*Y'. Now, multiplying with the other term: (X'Y'*X'Z) + (X'Y'*YZ'). Since X'Y' is a common factor in both terms, we can combine them: X'Y'(X'Z + YZ') = X'Y'(X'(1+Z) + YZ') = X'Y'(X' + YZ').
+
+Explanation:
+The term X'(1+Z) simplifies to X', and the expression reduces to X'Y'(X' + YZ').
+
+Common mistake note:
+A common mistake would be to incorrectly distribute the complement operation, leading to an incorrect simplified form.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Given the Boolean expressions R = A'B'C and S = ABC', what is the truth value of R + S when A = 1, B = 0, C = 1?
+A) 0
+B) 1
+C) A
+D) B
+Correct Answer: B
+
+Solution:
+Given A = 1, B = 0, and C = 1: R = A'B'C = 1 * 0 * 1 = 0 S = ABC' = 1 * 0 * 0 = 0. The sum of R and S is: R + S = 0 + 0 = 0.
+
+Explanation:
+Since both R and S evaluate to 0 with the given values, their sum is also 0.
+
+Common mistake note:
+A common mistake would be to overlook the specific truth values for A, B, and C, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Simplify the following Boolean expression: (X + Y)(X'Y + Z)
+A) XYZ
+B) X + YZ'
+C) XY + XZ'
+D) X + YZ
+Correct Answer: D
+
+Solution:
+Expanding the product, we get: X(X'Y) + X(Z) + Y(X'Y) + Y(Z). Simplifying each term: X'YZ + XZ + 0 + YZ = XZ + YZ + X'YZ.
+
+Explanation:
+The term X'YZ is common in two terms and can be factored out, resulting in XZ + (X'Y + 1)Z = XZ + YZ.
+
+Common mistake note:
+A common mistake would be to incorrectly distribute the multiplication, leading to an incorrect simplified form.
+------------------------------------------------------------------------------

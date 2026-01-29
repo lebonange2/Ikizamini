@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.14.1 Apply to Fourier transforms
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.14 Complex Analysis Applications
+------------------------------------------------------------------------------
+Difficulty profile: mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the Fourier transform of a function f(t) = 3sin(2πt). Which of the following is the correct result?
+A) 3jπ(δ(f - 1) - δ(f + 1))
+B) 6jπ(δ(f - 1) + δ(f + 1))
+C) 3π(δ(f - 2) - δ(f + 2))
+D) 6π(δ(f - 2) + δ(f + 2))
+Correct Answer: B
+
+Solution:
+The Fourier transform of f(t) = Aωsin(Bt) is given by F(f) = (jA/2)π(δ(f - B/ω) - δ(f + B/ω)). In this case, A = 3, B = 2π, and ω = 1. Plugging these values into the formula gives us F(f) = 3jπ(δ(f - 1) + δ(f + 1))
+
+Explanation:
+The Fourier transform of a sine function is a pair of impulses at frequencies ±B/ω, with amplitudes proportional to A and a phase shift of j.
+
+Common mistake note:
+A common mistake would be to forget the factor of A/2 in the Fourier transform formula or to misapply the frequency B/ω. Answer C uses the wrong frequency (B = 2π instead of B = π), while answer D omits the phase shift (j).
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf):
+Given a function g(t) = e^{-2t}u(t), what is its Fourier transform G(f)? Choose the correct option.
+A) π(δ(f + 2) + δ(f - 2))
+B) -jπ(δ(f + 2) - δ(f - 2))
+C) jπ(δ(f + 2) - δ(f - 2))
+D) π(δ(f - 2) + δ(f + 2))
+Correct Answer: C
+
+Solution:
+The Fourier transform of g(t) = e^{-αt}u(t), where α > 0, is given by G(f) = jπ(δ(f + α) - δ(f - α)). In this case, α = 2. Plugging this value into the formula gives us G(f) = jπ(δ(f + 2) - δ(f - 2))
+
+Explanation:
+The Fourier transform of an exponential function with a positive time constant is a pair of impulses at frequencies ±α, with amplitudes proportional to j and a phase shift.
+
+Common mistake note:
+A common mistake would be to forget the sign in front of δ(f - α) or to use the wrong frequency (α = 2 instead of α = -2). Answer A uses the wrong sign for the impulses, while answer B omits the j factor.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf):
+Find the inverse Fourier transform of F(f) = 4πδ(f + 3) - 6jπδ(f - 5). Which function h(t) represents this?
+A) 2e^{-3t}u(-t) - 3e^{5t}u(t)
+B) -2e^{3t}u(t) + 3e^{-5t}u(-t)
+C) 2e^{-3t}u(t) - 3e^{5t}u(-t)
+D) 2e^{3t}u(t) + 3e^{-5t}u(-t)
+Correct Answer: C
+
+Solution:
+The inverse Fourier transform of F(f) = Aδ(f - B) - Bjπδ(f + C) is given by h(t) = Au(At)u(t) - Be^{-Ct}u(-At)u(-t). In this case, A = 4π, B = -3, and C = 5. Plugging these values into the formula gives us h(t) = 2e^{-3t}u(t) - 3e^{5t}u(-t)
+
+Explanation:
+The inverse Fourier transform of impulses at frequencies ±B is an exponential function multiplied by a unit step function, with appropriate signs and time constants.
+
+Common mistake note:
+A common mistake would be to mix up the signs or use the wrong time constants. Answer A uses the wrong sign for the second term, while answer B uses the wrong sign for both terms and omits the u(-t) in the first term.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf):
+Calculate the Fourier transform of f(t) = 2πsin(4πt)cos(6πt). Which option represents the correct result?
+A) j(δ(f - 5) - δ(f + 5))
+B) -j(δ(f - 1) - δ(f + 1))
+C) j(δ(f - 1) + δ(f + 1))
+D) -j
+Correct Answer: A
+
+Solution:
+The Fourier transform of f(t) = Aωsin(Bt)cos(Ct) is given by F(f) = (jA/2)π(δ(f - (B+C)/ω) - δ(f + (B+C)/ω) + δ(f - (B-C)/ω) - δ(f + (B-C)/ω)). In this case, A = 2π, B = 4π, C = 6π, and ω = 1. Plugging these values into the formula gives us F(f) = jπ(δ(f - 5) - δ(f + 5))
+
+Explanation:
+The Fourier transform of a product of sine and cosine functions results in impulses at frequencies ±(B±C)/ω.
+
+Common mistake note:
+A common mistake would be to forget the factor of A/2 or to misapply the frequencies (B±C)/ω. Answer B uses the wrong frequency (B+C = 10π instead of 5π), while answer C and D use incorrect signs.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf):
+Find the Fourier transform of f(t) = u(t - 2) - u(t - 4). Which option represents the correct result?
+A) jπ(δ(f + 1) - δ(f - 1))e^{-2t}
+B) jπ(δ(f - 1) - δ(f + 1))e^{2t}
+C) jπ(δ(f - 1) + δ(f + 1))e^{-2t}
+D) jπ(δ(f + 1) + δ(f - 1))e^{2t}
+Correct Answer: B
+
+Solution:
+The Fourier transform of f(t) = u(t - a) - u(t - b), where a < b, is given by F(f) = jπ(δ(f - (b-a)/2) - δ(f + (b-a)/2))e^{-(a+b)t/2}. In this case, a = 2 and b = 4. Plugging these values into the formula gives us F(f) = jπ(δ(f - 1) - δ(f + 1))e^{2t}
+
+Explanation:
+The Fourier transform of a difference of two unit step functions results in impulses at frequencies ±(b-a)/2, multiplied by an exponential term.
+
+Common mistake note:
+A common mistake would be to use the wrong sign or frequency. Answer A uses the wrong frequency (b-a = 2 instead of -2), while answer C and D use incorrect signs for the impulses.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf):
+Given a function g(t) = e^{-t}u(t) + e^{t}u(-t), what is its Fourier transform G(f)? Choose the correct option.
+A) jπ(δ(f - 1) - δ(f + 1))
+B) -jπ(δ(f - 1) - δ(f + 1))
+C) π(δ(f - 1) + δ(f + 1))
+D) 2π(δ(f - 1) + δ(f + 1))
+Correct Answer: A
+
+Solution:
+The Fourier transform of g(t) = e^{-αt}u(t) + e^{αt}u(-t), where α > 0, is given by G(f) = jπ(δ(f - α) - δ(f + α)). In this case, α = 1. Plugging this value into the formula gives us G(f) = jπ(δ(f - 1) - δ(f + 1))
+
+Explanation:
+The Fourier transform of a sum of exponential functions with opposite signs and the same time constant results in impulses at frequencies ±α, with amplitudes proportional to j.
+
+Common mistake note:
+A common mistake would be to forget the sign in front of δ(f + α) or to use the wrong frequency (α = 1 instead of α = -1). Answer B omits the j factor, while answer C and D use incorrect amplitudes.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf):
+Find the inverse Fourier transform of F(f) = 3πδ(f + 2) + 4jπδ(f - 1). Which function h(t) represents this?
+A) 3e^{-2t}u(t) + 4e^{t}u(-t)
+B) 3e^{2t}u(-t) + 4e^{-t}u(t)
+C) 3e^{2t}u(t) + 4e^{-t}u(-t)
+D) 3e^{-2t}u(-t) + 4e^{t}u(t)
+Correct Answer: C
+
+Solution:
+The inverse Fourier transform of F(f) = Aδ(f - B) + Bjπδ(f + C) is given by h(t) = Au(Bt)u(t) + Be^{-Ct}u(-Bt)u(-t). In this case, A = 3π, B = -2, and C = 1. Plugging these values into the formula gives us h(t) = 3e^{2t}u(t) + 4e^{-t}u(-t)
+
+Explanation:
+The inverse Fourier transform of impulses at frequencies ±B is an exponential function multiplied by a unit step function, with appropriate signs and time constants.
+
+Common mistake note:
+A common mistake would be to mix up the signs or use the wrong time constants. Answer A uses the wrong sign for the first term, while answer B uses the wrong sign for both terms and omits the u(-t) in the second term.
+------------------------------------------------------------------------------

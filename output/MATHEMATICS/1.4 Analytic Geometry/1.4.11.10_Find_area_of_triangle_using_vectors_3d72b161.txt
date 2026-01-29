@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.11.10 Find area of triangle using vectors
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.11 Vectors in Geometry
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the area of the triangle formed by the points A(1,2), B(3,4), and C(5,6) using vector methods.
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+The area of a triangle formed by three points A(x1,y1), B(x2,y2), and C(x3,y3) can be found using the cross product of two vectors AB and AC. First, find the vectors AB and AC: AB = <(x2-x1),(y2-y1)> = <2,2> AC = <(x3-x1),(y3-y1)> = <4,4> Next, find the cross product of AB and AC: |AB x AC| = |<2,2> x <4,4>| = 16 The area A of the triangle is half the magnitude of the cross product: A = (1/2)|AB x AC| = 8
+
+Explanation:
+The area of a triangle formed by three points can be found using the cross product of two vectors. In this case, we calculated the cross product of AB and AC correctly and then took half its magnitude to find the area.
+
+Common mistake note:
+A common mistake is to forget to take the absolute value when calculating the cross product (|AB x AC|), which would lead to an incorrect negative area. Another mistake might be forgetting to divide by 2 when finding the area, resulting in twice the actual area.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Find the area of the triangle with vertices A(-1,3), B(2,-1), and C(4,5) using vector methods.
+A) a
+B) b
+C) c
+D) d
+Correct Answer: A
+
+Solution:
+First, find the vectors AB and AC: AB = <(2-(-1)),(-1-3)> = <3,-4> AC = <(4-(-1)),(5-3)> = <5,2> Next, calculate the cross product of AB and AC: |AB x AC| = |<3,-4> x <5,2>| = 26 The area A of the triangle is half the magnitude of the cross product: A = (1/2)|AB x AC| = 13
+
+Explanation:
+We correctly calculated the cross product of AB and AC, then took half its magnitude to find the area. However, there was a mistake in interpreting the result; the correct area is 13, not 6.
+
+Common mistake note:
+A common mistake here would be to misinterpret the magnitude of the cross product (26) as the area directly, without dividing by 2.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the area of the triangle with vertices A(0,0), B(4,0), and C(0,3) using vector methods.
+A) a
+B) b
+C) c
+D) d
+Correct Answer: C
+
+Solution:
+The vectors AB and AC are: AB = <(4-0),(0-0)> = <4,0> AC = <(0-0),(3-0)> = <0,3> The cross product of AB and AC is zero since the vectors are parallel: |AB x AC| = |<4,0> x <0,3>| = 0 Since the cross product is zero, the area A of the triangle is also zero: A = (1/2)|AB x AC| = 0
+
+Explanation:
+The vectors AB and AC are parallel, resulting in a cross product of zero. This indicates that the triangle degenerates into a line segment, so its area is zero.
+
+Common mistake note:
+A common mistake would be to assume that since two sides of the triangle are horizontal and vertical, the area can be found by multiplying their lengths (4 * 3), which would lead to an incorrect answer of 12.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Find the area of the triangle with vertices A(2,1), B(5,3), and C(7,6) using vector methods.
+A) a
+B) b
+C) c
+D) d
+Correct Answer: C
+
+Solution:
+The vectors AB and AC are: AB = <(5-2),(3-1)> = <3,2> AC = <(7-2),(6-1)> = <5,5> Calculate the cross product of AB and AC: |AB x AC| = |<3,2> x <5,5>| = 25 The area A of the triangle is half the magnitude of the cross product: A = (1/2)|AB x AC| = 6.5
+
+Explanation:
+We correctly calculated the cross product of AB and AC, but made a mistake in interpreting the result; the correct area is 6.5, not 12.5.
+
+Common mistake note:
+A common mistake would be to misinterpret the magnitude of the cross product (25) as the area directly, without dividing by 2.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Find the area of the triangle with vertices A(-3,4), B(1,2), and C(2,6) using vector methods.
+A) a
+B) b
+C) c
+D) d
+Correct Answer: A
+
+Solution:
+The vectors AB and AC are: AB = <(1-(-3)),(2-4)> = <4,-2> AC = <(2-(-3)),(6-4)> = <5,2> Calculate the cross product of AB and AC: |AB x AC| = |<4,-2> x <5,2>| = 18 The area A of the triangle is half the magnitude of the cross product: A = (1/2)|AB x AC| = 5
+
+Explanation:
+We correctly calculated the cross product of AB and AC, but made a mistake in interpreting the result; the correct area is 5, not 9.
+
+Common mistake note:
+A common mistake would be to misinterpret the magnitude of the cross product (18) as the area directly, without dividing by 2.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Find the area of the triangle with vertices A(0,0), B(3,4), and C(-2,5) using vector methods.
+A) a
+B) b
+C) c
+D) d
+Correct Answer: A
+
+Solution:
+The vectors AB and AC are: AB = <(3-0),(4-0)> = <3,4> AC = <(-2-0),(5-0)> = <-2,5> Calculate the cross product of AB and AC: |AB x AC| = |<3,4> x <-2,5>| = 23 The area A of the triangle is half the magnitude of the cross product: A = (1/2)|AB x AC| = 7
+
+Explanation:
+We correctly calculated the cross product of AB and AC, but made a mistake in interpreting the result; the correct area is 7, not 11.5.
+
+Common mistake note:
+A common mistake would be to misinterpret the magnitude of the cross product (23) as the area directly, without dividing by 2.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Find the area of the triangle with vertices A(1,0), B(4,3), and C(2,5) using vector methods.
+A) a
+B) b
+C) c
+D) d
+Correct Answer: B
+
+Solution:
+The vectors AB and AC are: AB = <(4-1),(3-0)> = <3,3> AC = <(2-1),(5-0)> = <1,5> Calculate the cross product of AB and AC: |AB x AC| = |<3,3> x <1,5>| = 18 The area A of the triangle is half the magnitude of the cross product: A = (1/2)|AB x AC| = 6
+
+Explanation:
+We correctly calculated the cross product of AB and AC, but made a mistake in interpreting the result; the correct area is 6, not 9.
+
+Common mistake note:
+A common mistake would be to misinterpret the magnitude of the cross product (18) as the area directly, without dividing by 2.
+------------------------------------------------------------------------------

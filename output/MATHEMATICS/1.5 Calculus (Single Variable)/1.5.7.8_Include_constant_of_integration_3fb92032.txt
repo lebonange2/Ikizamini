@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.7.8 Include constant of integration
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.7 Indefinite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the indefinite integral of f(x) = 2x + 3 with respect to x and include the constant of integration.
+A) x^2 + 3x + C
+B) 4x^2 + 6x + C
+C) x^2 + 3 + C
+D) 4x^2 + 3x + C
+Correct Answer: A
+
+Solution:
+The integral of 2x is x^2, and the integral of a constant (3) is that constant times x. Thus, the integral is x^2 + 3x + C.
+
+Explanation:
+When integrating, it's important to include the constant of integration, which represents the family of all possible antiderivatives.
+
+Common mistake note:
+A common mistake is forgetting to add the constant of integration. This results in an incomplete solution.
+------------------------------------------------------------------------------
+
+Problem 2 (2):
+Evaluate ∫(5sin(x) + 7cos(x))dx with respect to x and include the constant of integration.
+A) -5cos(x) + 7sin(x) + C
+B) -5cos(x) - 7sin(x) + C
+C) 5cos(x) + 7sin(x) + C
+D) 5cos(x) - 7sin(x) + C
+Correct Answer: A
+
+Solution:
+The integral of 5sin(x) is -5cos(x), and the integral of 7cos(x) is 7sin(x). Adding these together gives -5cos(x) + 7sin(x) + C.
+
+Explanation:
+When integrating trigonometric functions, recall the basic integration rules for sine and cosine.
+
+Common mistake note:
+A common mistake is mixing up the signs when integrating sine or cosine. Remember that the integral of sin(x) is -cos(x) and vice versa.
+------------------------------------------------------------------------------
+
+Problem 3 (3):
+Find ∫(e^x)dx with respect to x and include the constant of integration.
+A) e^x + C
+B) xe^x + C
+C) ln|x| + C
+D) 1/e^x + C
+Correct Answer: A
+
+Solution:
+The integral of e^x is simply e^x, so the solution is e^x + C.
+
+Explanation:
+The integral of an exponential function with base e is a simple rule to remember: ∫e^x dx = e^x + C.
+
+Common mistake note:
+A common mistake is confusing the derivative and integral rules for e^x. The derivative of e^x is e^x, but the integral is also e^x.
+------------------------------------------------------------------------------
+
+Problem 4 (4):
+Evaluate ∫(3x^2 - 7x + 10)dx with respect to x and include the constant of integration.
+A) x^3 - 7/2x^2 + 10x + C
+B) 3x^3 - 7/3x^2 + 10x + C
+C) x^3 - 7x^2 + 10 + C
+D) 3x^3 - 7/2x^2 + 10 + C
+Correct Answer: A
+
+Solution:
+The integral of 3x^2 is x^3, the integral of -7x is -7/2x^2, and the integral of a constant (10) is that constant times x. Thus, the integral is x^3 - 7/2x^2 + 10x + C.
+
+Explanation:
+When integrating polynomials, use the power rule for each term: ∫x^n dx = x^(n+1)/(n+1).
+
+Common mistake note:
+A common mistake is forgetting to reduce the power by 1 when applying the power rule. Remember to divide by the original exponent plus one.
+------------------------------------------------------------------------------
+
+Problem 5 (5):
+Find the indefinite integral of f(x) = x^4 - 2x^3 + 6 with respect to x and include the constant of integration.
+A) 1/5x^5 - 2/4x^4 + 6x + C
+B) 1/5x^5 - 1/2x^4 + 6x + C
+C) 1/5x^5 - 2/4x^4 + 6x^2 + C
+D) 1/5x^5 - 1/2x^4 + 6 + C
+Correct Answer: B
+
+Solution:
+The integral of x^4 is 1/5x^5, the integral of -2x^3 is -1/2x^4, and the integral of a constant (6) is that constant times x. Thus, the integral is 1/5x^5 - 1/2x^4 + 6x + C.
+
+Explanation:
+When integrating polynomials, use the power rule for each term: ∫x^n dx = x^(n+1)/(n+1).
+
+Common mistake note:
+A common mistake is using the wrong constant when applying the power rule. Remember to divide by the original exponent plus one.
+------------------------------------------------------------------------------
+
+Problem 6 (6):
+Evaluate ∫(2sin(x)cos(x))dx with respect to x and include the constant of integration.
+A) -cos^2(x) + C
+B) sin^2(x) + C
+C) sin(2x) + C
+D) cos(2x) + C
+Correct Answer: C
+
+Solution:
+The integral of 2sin(x)cos(x) is sin(2x), so the solution is sin(2x) + C.
+
+Explanation:
+When integrating products of sine and cosine, use the double angle identity: sin(2x) = 2sin(x)cos(x).
+
+Common mistake note:
+A common mistake is applying the wrong trigonometric identity. Make sure to recognize when a product can be simplified using a known identity.
+------------------------------------------------------------------------------
+
+Problem 7 (7):
+Find ∫(e^(3x))dx with respect to x and include the constant of integration.
+A) 1/3e^(3x) + C
+B) 3e^(3x) + C
+C) e^(3x) + C
+D) ln|e^(3x)| + C
+Correct Answer: A
+
+Solution:
+The integral of e^(3x) is 1/3e^(3x), so the solution is 1/3e^(3x) + C.
+
+Explanation:
+When integrating an exponential function with a constant base, use the power rule and multiply by the reciprocal of the exponent: ∫e^(ax) dx = e^(ax)/a.
+
+Common mistake note:
+A common mistake is forgetting to divide by the coefficient of x in the exponent. Remember to apply the power rule after factoring out the constant.
+------------------------------------------------------------------------------

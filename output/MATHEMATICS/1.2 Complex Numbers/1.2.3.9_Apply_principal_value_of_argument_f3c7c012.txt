@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.3.9 Apply principal value of argument
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.3 Polar and Exponential Forms
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (AsinPV):
+Find the principal value of arsin(-√3/2).
+A) -π/3
+B) π/6
+C) 2π/3
+D) 5π/3
+Correct Answer: A
+
+Solution:
+The principal value of arsin(θ) is the angle in the interval [-π/2, π/2] that has sine equal to θ. Since sin(π/3) = √3/2 and sin(-π/3) = -√3/2, the principal value for arsin(-√3/2) is -π/3.
+
+Explanation:
+The principal value of inverse trigonometric functions ensures a unique solution within a specific range.
+
+Common mistake note:
+A common mistake would be to select C (2π/3), which is the angle with sine equal to √3/2 but not in the principal interval.
+------------------------------------------------------------------------------
+
+Problem 2 (AcosPV):
+Find the principal value of arccos(1/2).
+A) π/3
+B) π/6
+C) 2π/3
+D) 5π/3
+Correct Answer: A
+
+Solution:
+The principal value of arccos(θ) is the angle in the interval [0, π] that has cosine equal to θ. Since cos(π/3) = 1/2, the principal value for arccos(1/2) is π/3.
+
+Explanation:
+The principal value of inverse trigonometric functions ensures a unique solution within a specific range.
+
+Common mistake note:
+A common mistake would be to select B (π/6), which is the angle with cosine equal to 1/2 but not in the principal interval.
+------------------------------------------------------------------------------
+
+Problem 3 (AtanPV):
+Find the principal value of arctan(1).
+A) π/4
+B) π/6
+C) π/3
+D) π/2
+Correct Answer: A
+
+Solution:
+The principal value of arctan(θ) is the angle in the interval [-π/2, π/2] that has tangent equal to θ. Since tan(π/4) = 1, the principal value for arctan(1) is π/4.
+
+Explanation:
+The principal value of inverse trigonometric functions ensures a unique solution within a specific range.
+
+Common mistake note:
+A common mistake would be to select D (π/2), which is not in the principal interval for arctan.
+------------------------------------------------------------------------------
+
+Problem 4 (Atan2PV):
+Find the principal value of atan2(-√3, -1).
+A) -π/6
+B) -π/3
+C) π/6
+D) π/3
+Correct Answer: B
+
+Solution:
+The principal value of atan2(y, x) is the angle in the interval [-π, π] that corresponds to the point (x, y) in the Cartesian plane. For (-√3, -1), this point lies in the third quadrant with reference angle π/6. Thus, the principal value is π - π/6 = 5π/6 or -π/3 when considering the interval [-π, π].
+
+Explanation:
+The principal value of atan2 accounts for the quadrant of the point (x, y) in the Cartesian plane.
+
+Common mistake note:
+A common mistake would be to select A (-π/6), which is the reference angle but not the principal value in the third quadrant.
+------------------------------------------------------------------------------
+
+Problem 5 (AsinhPV):
+Find the principal value of arcsinh(√3).
+A) π/3
+B) π/6
+C) ln(√3 + 1)
+D) 2ln(√3 + 1)
+Correct Answer: C
+
+Solution:
+The principal value of arcsinh(x) is the real number that, when sinh'd, gives x. Since sinh(ln(a)) = a - 1 for any positive a, we have sinh(ln(√3 + 1)) = √3. Thus, the principal value for arcsinh(√3) is ln(√3 + 1).
+
+Explanation:
+The principal value of inverse hyperbolic trigonometric functions ensures a unique real solution.
+
+Common mistake note:
+A common mistake would be to select A (π/3), which is an angle but not the correct result for arcsinh.
+------------------------------------------------------------------------------
+
+Problem 6 (AcoshPV):
+Find the principal value of arccosh(2).
+A) 0
+B) ln(√3 + 1)
+C) ln(2)
+D) 2
+Correct Answer: C
+
+Solution:
+The principal value of arccosh(x) is the real number that, when cosh'd, gives x. Since cosh(ln(a)) = a + 1 for any positive a, we have cosh(ln(2)) = 2. Thus, the principal value for arccosh(2) is ln(2).
+
+Explanation:
+The principal value of inverse hyperbolic trigonometric functions ensures a unique real solution.
+
+Common mistake note:
+A common mistake would be to select D (2), which is not the correct result for arccosh but rather its input.
+------------------------------------------------------------------------------
+
+Problem 7 (AtanhPV):
+Find the principal value of artanh(1/3).
+A) ln(2)
+B) ln(√2)
+C) 1/2 ln(2)
+D) ln(√3 + 1)
+Correct Answer: C
+
+Solution:
+The principal value of artanh(x) is the real number that, when tanh'd, gives x. Since tanh(ln(a)) = (a - 1)/(a + 1), we have tanh(ln(√2)) = (√2 - 1)/ (√2 + 1) = 1/3. Thus, the principal value for artanh(1/3) is ln(√2).
+
+Explanation:
+The principal value of inverse hyperbolic trigonometric functions ensures a unique real solution.
+
+Common mistake note:
+A common mistake would be to select A (ln(2)), which is not the correct result for artanh but rather the result for arctan.
+------------------------------------------------------------------------------

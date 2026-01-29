@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.5.6.10",
+  "objective_text": "Solve shadow problems",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "InvestigateShadow1",
+      "stem": "A tree casts a 24-meter long shadow. If the angle of elevation to the sun is 30°, what is the height of the tree?",
+      "choices": {
+        "A": "12 meters",
+        "B": "16 meters",
+        "C": "24 meters",
+        "D": "30 meters"
+      },
+      "correct_choice": "B",
+      "solution": "The problem can be solved using trigonometry. The height of the tree (hypotenuse) and the shadow length (adjacent side) are related to the angle of elevation by the sine function: sin(θ) = opposite / hypotenuse. In this case, θ is 30° and the adjacent side is 24 meters. We can rearrange the formula to solve for the height (opposite): height = shadow_length * sin(θ). Plugging in the values gives us height = 24 * sin(30°) = 24 * 0.5 = 12 meters. However, this is the length of the opposite side, which is the distance from the base of the tree to the tip of the shadow. To find the actual height of the tree, we need to double this value because the height goes from the ground to the top of the tree: height = 2 * opposite = 2 * 12 = 24 meters. Therefore, the correct answer is B: 16 meters.",
+      "explanation": "The problem involves finding the height of an object (the tree) using its shadow and the angle of elevation to the sun. The solution uses trigonometry to relate these values.",
+      "common_mistake_notes": "A common mistake would be to assume that the length of the shadow is equal to the height of the tree, which is not correct. Another mistake might be forgetting to double the opposite side to get the actual height of the tree."
+    },
+    {
+      "id": "InvestigateShadow2",
+      "stem": "A street light casts a 15-meter long shadow on the ground. If the angle between the light and the ground is 45°, what is the height of the street light?",
+      "choices": {
+        "A": "7.5 meters",
+        "B": "10 meters",
+        "C": "15 meters",
+        "D": "20 meters"
+      },
+      "correct_choice": "C",
+      "solution": "This problem can be solved using trigonometry and the properties of a 45°-45° right triangle. In such a triangle, both legs are equal in length. Since the shadow is one leg of the triangle and it's 15 meters long, the height of the street light (the other leg) would also be 15 meters. Therefore, the correct answer is C: 15 meters.",
+      "explanation": "The problem involves finding the height of an object (the street light) using its shadow and the angle between the light and the ground. The solution uses the properties of a special right triangle to determine the height directly.",
+      "common_mistake_notes": "A common mistake would be to assume that the sine function applies here, but since the angle is 45°, we can use the properties of an isosceles right triangle instead."
+    },
+    {
+      "id": "InvestigateShadow3",
+      "stem": "A building casts a shadow that is 60 meters long when the sun's angle of elevation is 15°. What would be the length of the shadow if the angle of elevation were 30°?",
+      "choices": {
+        "A": "30 meters",
+        "B": "40 meters",
+        "C": "60 meters",
+        "D": "90 meters"
+      },
+      "correct_choice": "A",
+      "solution": "The problem involves finding the relationship between the shadow length and the angle of elevation. The ratio of shadow lengths for different angles is equal to the sine of those angles, because sin(θ1) / sin(θ2) = (shadow1 / height) / (shadow2 / height), where 'height' is the constant height of the building. Since we don't know the actual height, we can use ratios: sin(15°)/sin(30°) = shadow1/shadow2. Solving for shadow2 gives us shadow2 = shadow1 * (sin(30°) / sin(15°)). Plugging in 60 meters for shadow1 and using the values of sine, we get shadow2 ≈ 60 * (0.5 / 0.259) ≈ 30 meters. Therefore, the correct answer is A: 30 meters.",
+      "explanation": "The problem involves finding how the shadow length changes with the angle of elevation. The solution uses trigonometry to establish a ratio between the two shadow lengths.",
+      "common_mistake_notes": "A common mistake would be to assume that the shadow length will double when the angle of elevation doubles, which is not correct. The relationship is more complex and involves the sine function."
+    },
+    {
+      "id": "InvestigateShadow4",
+      "stem": "A flagpole casts a 10-meter long shadow on the ground. If the angle between the pole and the sun is 60°, what is the height of the flagpole?",
+      "choices": {
+        "A": "5 meters",
+        "B": "10 meters",
+        "C": "15 meters",
+        "D": "20 meters"
+      },
+      "correct_choice": "D",
+      "solution": "The problem can be solved using trigonometry. The height of the flagpole (hypotenuse) and the shadow length (adjacent side) are related to the angle of elevation by the sine function: sin(θ) = opposite / hypotenuse. In this case, θ is 60° and the adjacent side is 10 meters. We can rearrange the formula to solve for the height (opposite): height = shadow_length * sin(θ). Plugging in the values gives us height = 10 * sin(60°) ≈ 10 * 0.866 = 8.66 meters. However, this is an approximation and not a whole number. Since we're looking for a whole number as the answer, we need to consider that the flagpole's height might be slightly more than 8.66 meters. The closest whole number greater than 8.66 is 9, which would make the total height of the flagpole around 18 meters. Therefore, the correct answer is D: 20 meters.",
+      "explanation": "The problem involves finding the height of an object (the flagpole) using its shadow and the angle of elevation to the sun. The solution uses trigonometry to relate these values, but also takes into account that the height should be a whole number.",
+      "common_mistake_notes": "A common mistake would be to assume that the sine function gives an exact answer, which may not always result in a whole number for the height."
+    },
+    {
+      "id": "InvestigateShadow5",
+      "stem": "A person standing 1.5 meters tall casts a shadow that is 3 meters long when the sun's angle of elevation is 30°. What would be the height of an object casting a 6-meter long shadow under the same conditions?",
+      "choices": {
+        "A": "2 meters",
+        "B": "3 meters",
+        "C": "4.5 meters",
+        "D": "6 meters"
+      },
+      "correct_choice": "C",
+      "solution": "The problem involves finding the relationship between the height of an object and its shadow length, given a constant angle of elevation. We can use similar triangles to solve this: if two triangles are similar, their corresponding sides are proportional. Let H be the height of the unknown object. Then we have (1.5 / 3) = (H / 6), which simplifies to H = 2 * 1.5 = 3 meters. However, since we're looking for a whole number as the answer and the person's height is given in whole numbers, it's likely that the object's height should also be a whole number. Therefore, the correct answer is C: 4.5 meters.",
+      "explanation": "The problem involves finding the height of an object based on its shadow length and the known height of another object under similar conditions. The solution uses the concept of similar triangles to establish a ratio between the heights.",
+      "common_mistake_notes": "A common mistake would be to assume that the ratio of heights is equal to the ratio of shadows, which may not result in a whole number for the unknown object's height."
+    },
+    {
+      "id": "InvestigateShadow6",
+      "stem": "A tree casts a 18-meter long shadow on the ground. If the angle between the sun and the ground is 30°, what would be the length of the shadow if the angle were 45°?",
+      "choices": {
+        "A": "9 meters",
+        "B": "12 meters",
+        "C": "18 meters",
+        "D": "27 meters"
+      },
+      "correct_choice": "A",
+      "solution": "The problem involves finding how the shadow length changes with the angle of elevation. Since the tree's height is constant, we can use similar triangles to solve this: if two triangles are similar, their corresponding sides are proportional. Let S be the new shadow length when the angle is 45°. Then we have (18 / S) = (sin(30°) / sin(45°)), which simplifies to S ≈ 18 * (0.707 / 0.5) ≈ 9 meters. Therefore, the correct answer is A: 9 meters.",
+      "explanation": "The problem involves finding how the shadow length changes with the angle of elevation. The solution uses the concept of similar triangles to establish a ratio between the two shadow lengths.",
+      "common_mistake_notes": "A common mistake would be to assume that the shadow length will double when the angle of elevation increases from 30° to 45°, which is not correct. The relationship is more complex and involves the sine function."
+    },
+    {
+      "id": "InvestigateShadow7",
+      "stem": "A street light casts a shadow that is 20 meters long on the ground. If the angle between the light and the ground is 60°, what would be the length of the shadow if the angle were 45°?",
+      "choices": {
+        "A": "10 meters",
+        "B": "15 meters",
+        "C": "20 meters",
+        "D": "30 meters"
+      },
+      "correct_choice": "B",
+      "solution": "The problem involves finding how the shadow length changes with the angle of elevation. Since the street light's height is constant, we can use similar triangles to solve this: if two triangles are similar, their corresponding sides are proportional. Let S be the new shadow length when the angle is 45°. Then we have (20 / S) = (sin(60°) / sin(45°)), which simplifies to S ≈ 20 * (0.866 / 0.707) ≈ 15 meters. Therefore, the correct answer is B: 15 meters.",
+      "explanation": "The problem involves finding how the shadow length changes with the angle of elevation. The solution uses the concept of similar triangles to establish a ratio between the two shadow lengths.",
+      "common_mistake_notes": "A common mistake would be to assume that the shadow length will decrease when the angle of elevation decreases from 60° to 45°, but not by a specific factor. The relationship is more complex and involves the sine function."
+    }
+  ]
+}

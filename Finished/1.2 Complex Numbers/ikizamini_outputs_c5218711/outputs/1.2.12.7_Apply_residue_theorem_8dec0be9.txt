@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.12.7 Apply residue theorem
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.12 Complex Integration
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (?):
+Evaluate the integral $	ext{oint}_{C} rac{f(z)}{(z-a)^n} dz$, where C is a simple closed curve enclosing the singularity at z=a and n is a positive integer. Use residue theorem.
+A) -2i pi i 	ext{Res}(f(z),a)
+B) 2i pi i 	ext{Res}(f(z),a)
+C) 0
+D) ext{Indeterminate}
+Correct Answer: B
+
+Solution:
+Using the residue theorem, the integral of a function f(z) around a simple closed curve C enclosing a singularity at z=a is equal to $2i pi i$ times the residue of the function at that singularity. The residue of $rac{f(z)}{(z-a)^n}$ at z=a is the coefficient of $(z-a)^{n-1}$ in the Taylor series expansion of f(z) around z=a. Since n is positive, the residue is non-zero and the integral evaluates to $2i pi i 	ext{Res}(f(z),a)$.
+
+Explanation:
+The residue theorem is a powerful tool for evaluating contour integrals when there are singularities inside the curve of integration.
+
+Common mistake note:
+A common mistake would be to choose 'A' instead of 'B', which is the negative of the correct answer. This error occurs because the student might混淆 the sign convention in the residue theorem.
+------------------------------------------------------------------------------
+
+Problem 2 (?):
+Find the value of $	ext{oint}_{C} rac{dz}{(z-1)(z-2)^2}$, where C is a simple closed curve enclosing the singularities at z=1 and z=2.
+A) -2i pi i
+B) 0
+C) 2i pi i
+D) 4i pi i
+Correct Answer: A
+
+Solution:
+The function has two singularities: a simple pole at z=1 and a double pole at z=2. The residue at z=1 is $rac{1}{2i (1-2)^2} = -rac{1}{2}$, and the residue at z=2 is the coefficient of $(z-2)^{-1}$ in the Taylor series expansion around z=2, which is 0 because there's no such term. The total integral is thus $-2i pi i 	imes (-rac{1}{2}) = -2i pi i$.
+
+Explanation:
+When evaluating a contour integral with multiple singularities, it's crucial to find the residue at each singularity and sum them up according to the residue theorem.
+
+Common mistake note:
+A common mistake would be to forget about the double pole at z=2, which contributes 0 to the total residue. This error occurs when students focus only on simple poles and overlook higher-order ones.
+------------------------------------------------------------------------------
+
+Problem 3 (?):
+Calculate $	ext{oint}_{C} rac{e^z dz}{(z-1)^3}$, where C is a simple closed curve enclosing the singularity at z=1.
+A) -2i pi i e
+B) 0
+C) 2i pi i e
+D) 4i pi i e
+Correct Answer: A
+
+Solution:
+The function has a triple pole at z=1. The residue is the coefficient of $(z-1)^{-3}$ in the Taylor series expansion of $e^z$ around z=1, which is $e$. Thus, the integral evaluates to $-2i pi i 	imes e = -2i pi i e$.
+
+Explanation:
+When dealing with exponential functions, it's important to remember that their derivatives at a point determine the coefficients in the Taylor series expansion.
+
+Common mistake note:
+A common mistake would be to choose 'C' instead of 'A', which is the positive of the correct answer. This error occurs when students forget that the residue theorem involves multiplying by $-2i pi i$.
+------------------------------------------------------------------------------
+
+Problem 4 (?):
+Evaluate $	ext{oint}_{C} rac{dz}{z^3}$, where C is a simple closed curve enclosing the origin.
+A) -2i pi i
+B) 0
+C) 2i pi i
+D) ext{Indeterminate}
+Correct Answer: B
+
+Solution:
+The function has a singularity at z=0, but it is of order 3, which means the residue is 0. Therefore, the integral evaluates to 0.
+
+Explanation:
+When the order of the pole is greater than the power in the denominator, the residue is always 0.
+
+Common mistake note:
+A common mistake would be to choose 'A' or 'C', which are incorrect because the function has a higher-order pole at the origin. This error occurs when students do not consider the order of the pole correctly.
+------------------------------------------------------------------------------
+
+Problem 5 (?):
+Find the value of $	ext{oint}_{C} rac{	ext{sin}(z) dz}{z^2}$, where C is a simple closed curve enclosing the origin.
+A) -2i pi i
+B) 0
+C) 2i pi i
+D) ext{Indeterminate}
+Correct Answer: B
+
+Solution:
+The function has a singularity at z=0, but it is of order 2, which means the residue is 0. Thus, the integral evaluates to 0.
+
+Explanation:
+For trigonometric functions like sine, the derivative at the origin determines the coefficient in the Taylor series expansion, and since $	ext{sin}'(0) = 	ext{cos}(0) = 1$, the residue is 0.
+
+Common mistake note:
+A common mistake would be to choose 'A' or 'C', which are incorrect because the function has a higher-order pole at the origin. This error occurs when students do not recognize that the sine function behaves similarly to polynomials near the origin.
+------------------------------------------------------------------------------
+
+Problem 6 (?):
+Calculate $	ext{oint}_{C} rac{	ext{cos}(z) dz}{(z-1)^2}$, where C is a simple closed curve enclosing the singularity at z=1.
+A) -2i pi i 	ext{cos}(1)
+B) 0
+C) 2i pi i 	ext{cos}(1)
+D) ext{Indeterminate}
+Correct Answer: A
+
+Solution:
+The function has a simple pole at z=1. The residue is the coefficient of $(z-1)^{-2}$ in the Taylor series expansion of $	ext{cos}(z)$ around z=1, which is $-rac{	ext{cos}'(1)}{2} = -rac{-	ext{sin}(1)}{2} = rac{	ext{cos}(1)}{2}$. Thus, the integral evaluates to $-2i pi i 	imes (rac{	ext{cos}(1)}{2}) = -2i pi i 	ext{cos}(1)$.
+
+Explanation:
+When dealing with trigonometric functions, it's important to remember that their derivatives at a point determine the coefficients in the Taylor series expansion.
+
+Common mistake note:
+A common mistake would be to choose 'C' instead of 'A', which is the positive of the correct answer. This error occurs when students forget that the residue theorem involves multiplying by $-2i pi i$.
+------------------------------------------------------------------------------
+
+Problem 7 (?):
+Evaluate $	ext{oint}_{C} rac{dz}{(z-1)(z-2)^3}$, where C is a simple closed curve enclosing the singularities at z=1 and z=2.
+A) -2i pi i
+B) 0
+C) 2i pi i
+D) 4i pi i
+Correct Answer: A
+
+Solution:
+The function has a simple pole at z=1 with residue $rac{1}{(z-2)^3}$ and a triple pole at z=2 with residue 0. The total integral is thus $-2i pi i 	imes (rac{1}{(-1)^3}) = -2i pi i$.
+
+Explanation:
+When evaluating a contour integral with multiple singularities, it's crucial to find the residue at each singularity and sum them up according to the residue theorem. In this case, only the simple pole contributes to the total residue.
+
+Common mistake note:
+A common mistake would be to forget about the double pole at z=2, which contributes 0 to the total residue. This error occurs when students focus only on simple poles and overlook higher-order ones.
+------------------------------------------------------------------------------

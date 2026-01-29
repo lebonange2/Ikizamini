@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.3.3 Differentiate composite functions
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.3 Derivatives - Advanced Rules
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+Find the derivative of f(x) = (2x + 1)^3 using the chain rule. Which of the following is correct?
+A) (6x + 3)(2x + 1)^2
+B) 6(2x + 1)^2
+C) 3(2x + 1)^2
+D) 2(2x + 1)^2
+Correct Answer: B
+
+Solution:
+The derivative of f(x) = (g(h(x)))^n is n 	imes g'(h(x)) 	imes h'(x)^(n-1). Here, g(x) = 2x + 1 and h(x) = x. So, g'(x) = 2 and h'(x) = 1. Applying the chain rule: f'(x) = 3(2x + 1)^2 	imes 1^2 = 6(2x + 1)^2.
+
+Explanation:
+The derivative of a composite function involves applying the chain rule, which multiplies the derivatives of the inner and outer functions. In this case, we multiply 3 (the exponent) by the derivative of the inner function (2x + 1) and then the derivative of the outer function (which is 1 because it's x).
+
+Common mistake note:
+A common mistake would be to forget to multiply by the exponent (n), which in this case is 3. Answer A neglects to multiply by 6, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+Find the derivative of f(x) = sin(3x^2 + 1). Which of the following is correct?
+A) cos(3x^2 + 1)
+B) 6xcos(3x^2 + 1)
+C) 3x^2cos(3x^2 + 1)
+D) 3cos(3x^2 + 1)
+Correct Answer: B
+
+Solution:
+The derivative of f(x) = sin(g(x)) is cos(g(x)) 	imes g'(x). Here, g(x) = 3x^2 + 1. So, g'(x) = 6x. Applying the chain rule: f'(x) = cos(3x^2 + 1) 	imes 6x.
+
+Explanation:
+The derivative of a sine composite function involves applying the chain rule with the cosine of the inner function multiplied by the derivative of the inner function. In this case, we multiply cos(3x^2 + 1) by 6x, which is the derivative of 3x^2 + 1.
+
+Common mistake note:
+A common mistake would be to forget that the outer function is sine and thus use the derivative of cosine directly. Answer A neglects to multiply by g'(x), leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+Find the derivative of f(x) = e^(2x + 3). Which of the following is correct?
+A) e^(2x + 3)
+B) 2e^(2x + 3)
+C) 3e^(2x + 3)
+D) e^(2)
+Correct Answer: B
+
+Solution:
+The derivative of f(x) = e^g(x) is e^g(x) 	imes g'(x). Here, g(x) = 2x + 3. So, g'(x) = 2. Applying the chain rule: f'(x) = e^(2x + 3) 	imes 2.
+
+Explanation:
+The derivative of an exponential composite function involves multiplying the base (e^g(x)) by the derivative of the exponent (g'(x)). In this case, we multiply e^(2x + 3) by 2, which is the derivative of 2x + 3.
+
+Common mistake note:
+A common mistake would be to forget that the base is e and thus use a different base for the derivative. Answer C uses an incorrect base (e^(2x + 3)), leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+Find the derivative of f(x) = ln(5x^3 - 2). Which of the following is correct?
+A) (15x^2)/(5x^3 - 2)
+B) (30x^2)/(5x^3 - 2)
+C) (15x)/(5x^3 - 2)
+D) (30x)/(5x^3 - 2)
+Correct Answer: A
+
+Solution:
+The derivative of f(x) = ln(g(x)) is 1/g(x) 	imes g'(x). Here, g(x) = 5x^3 - 2. So, g'(x) = 15x^2. Applying the chain rule: f'(x) = (1/(5x^3 - 2)) 	imes 15x^2.
+
+Explanation:
+The derivative of a natural logarithm composite function involves multiplying the reciprocal of the inner function by the derivative of the inner function. In this case, we multiply 1/(5x^3 - 2) by 15x^2, which is the derivative of 5x^3 - 2.
+
+Common mistake note:
+A common mistake would be to forget to take the reciprocal of g(x). Answer B neglects to take the reciprocal, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+Find the derivative of f(x) = (x^2 + 1)^4. Which of the following is correct?
+A) 4(x^2 + 1)^3
+B) 8x(x^2 + 1)^3
+C) 4(2x)(x^2 + 1)^3
+D) 4(2x + 1)(x^2 + 1)^3
+Correct Answer: C
+
+Solution:
+The derivative of f(x) = (g(x))^n is n 	imes g'(x) 	imes g(x)^(n-1). Here, g(x) = x^2 + 1 and n = 4. So, g'(x) = 2x. Applying the chain rule: f'(x) = 4(2x)(x^2 + 1)^3.
+
+Explanation:
+The derivative of a composite function raised to a power involves multiplying the exponent (n), the derivative of the inner function (g'(x)), and the original function raised to the (n-1) power. In this case, we multiply 4 by 2x and (x^2 + 1)^3, which is the derivative of x^2 + 1.
+
+Common mistake note:
+A common mistake would be to forget to multiply by n. Answer A neglects to multiply by 4, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+Find the derivative of f(x) = cos(3sin(x)). Which of the following is correct?
+A) -sin(3sin(x)) 	imes 3cos(x)
+B) -sin(3sin(x)) 	imes 3sin(x)
+C) -3sin(x) 	imes cos(3sin(x))
+D) -3cos(x) 	imes sin(3sin(x))
+Correct Answer: A
+
+Solution:
+The derivative of f(x) = cos(g(x)) is -sin(g(x)) 	imes g'(x). Here, g(x) = 3sin(x). So, g'(x) = 3cos(x). Applying the chain rule: f'(x) = -sin(3sin(x)) 	imes 3cos(x).
+
+Explanation:
+The derivative of a cosine composite function involves multiplying the negative sine of the inner function by the derivative of the inner function. In this case, we multiply -sin(3sin(x)) by 3cos(x), which is the derivative of 3sin(x).
+
+Common mistake note:
+A common mistake would be to use the wrong trigonometric identity or forget the negative sign. Answer B uses the incorrect sine of g(x) and neglects the negative sign, leading to an incorrect result.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+Find the derivative of f(x) = tan(2x^2 + 1). Which of the following is correct?
+A) (4x)/(cos^2(2x^2 + 1))
+B) (8x)/(sin^2(2x^2 + 1))
+C) (4x)/(sin^2(2x^2 + 1))
+D) (8x)/(cos^2(2x^2 + 1))
+Correct Answer: A
+
+Solution:
+The derivative of f(x) = tan(g(x)) is sec^2(g(x)) 	imes g'(x). Here, g(x) = 2x^2 + 1. So, g'(x) = 4x. Applying the chain rule: f'(x) = sec^2(2x^2 + 1) 	imes 4x = (1/cos^2(2x^2 + 1)) 	imes 4x = (4x)/(cos^2(2x^2 + 1)).
+
+Explanation:
+The derivative of a tangent composite function involves multiplying the square of the secant of the inner function by the derivative of the inner function. In this case, we multiply sec^2(2x^2 + 1) by 4x, which is the derivative of 2x^2 + 1. Since secant is the reciprocal of cosine, we can rewrite it as (4x)/(cos^2(2x^2 + 1)).
+
+Common mistake note:
+A common mistake would be to use the wrong trigonometric identity or forget the square on the secant. Answer D uses the sine instead of cosine and neglects the square, leading to an incorrect result.
+------------------------------------------------------------------------------

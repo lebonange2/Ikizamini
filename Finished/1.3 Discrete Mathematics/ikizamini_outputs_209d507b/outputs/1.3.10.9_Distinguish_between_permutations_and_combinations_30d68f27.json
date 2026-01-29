@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.10.9",
+  "objective_text": "Distinguish between permutations and combinations",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "What is the difference between a permutation and a combination?",
+      "choices": {
+        "A": "A permutation involves choosing items where order matters, while a combination does not.",
+        "B": "A combination has fewer possibilities than a permutation for the same number of items.",
+        "C": "In permutations, repetition is not allowed, whereas in combinations it may be allowed.",
+        "D": "Permutations and combinations are different concepts; permutations consider order, while combinations do not."
+      },
+      "correct_choice": "A",
+      "solution": "A permutation is an arrangement of items where order matters, while a combination is the selection of items without considering their order. Permutations count all possible arrangements, whereas combinations focus on unique selections regardless of order.",
+      "explanation": "The correct answer (A) accurately describes the fundamental difference between permutations and combinations. The other options are incorrect: (B) permutations can have more or fewer possibilities than combinations depending on the context; (C) is not a defining characteristic but rather a possible variation in problem setup; (D) correctly states that they are different concepts, with permutations considering order and combinations not.",
+      "common_mistake_notes": "Common mistake: Confusing permutations with combinations because of similar language used to describe them. Remember that order matters for permutations and does not for combinations."
+    },
+    {
+      "id": "Bghj",
+      "stem": "You have 5 different books to arrange on a shelf. How many unique arrangements are possible?",
+      "choices": {
+        "A": "5",
+        "B": "10",
+        "C": "60",
+        "D": "120"
+      },
+      "correct_choice": "C",
+      "solution": "This is a permutation problem since order matters. The formula for permutations is nPr = n! / (n - r)!, where n is the total number of items and r is the number chosen at a time. For 5 books, there are 5! arrangements, which equals 120.",
+      "explanation": "The correct answer (C) uses the permutation formula to calculate the number of unique arrangements. Other options: (A) represents choosing one book out of five; (B) is the combination for choosing two books out of five; (D) is a higher order permutation that would apply if more than 5 books were involved.",
+      "common_mistake_notes": "Common mistake: Using the combination formula instead of the permutation formula. Remember to consider whether order matters when deciding which formula to use."
+    },
+    {
+      "id": "Qwer",
+      "stem": "You want to select a team of 3 players from a group of 10. How many unique teams can be formed?",
+      "choices": {
+        "A": "10",
+        "B": "20",
+        "C": "60",
+        "D": "120"
+      },
+      "correct_choice": "C",
+      "solution": "This is a combination problem since order does not matter. The formula for combinations is nCr = n! / [r!(n - r)!], where n is the total number of items and r is the number chosen at a time. For 10 players, there are C(10,3) teams, which equals 120.",
+      "explanation": "The correct answer (C) uses the combination formula to calculate the number of unique teams. Other options: (A) represents choosing one player out of ten; (B) is a lower order combination that would apply if fewer players were selected; (D) is a higher order permutation that would apply if team formation involved arranging them in a specific order.",
+      "common_mistake_notes": "Common mistake: Using the permutation formula instead of the combination formula. Remember to consider whether order matters when deciding which formula to use."
+    },
+    {
+      "id": "Yuiop",
+      "stem": "You have 6 different types of ice cream flavors and want to serve a 3-flavor sundae. How many unique combinations can you create?",
+      "choices": {
+        "A": "20",
+        "B": "30",
+        "C": "40",
+        "D": "50"
+      },
+      "correct_choice": "B",
+      "solution": "This is a combination problem since order does not matter when serving ice cream flavors. The formula for combinations is nCr = n! / [r!(n - r)!], where n is the total number of items and r is the number chosen at a time. For 6 flavors, there are C(6,3) combinations, which equals 20.",
+      "explanation": "The correct answer (B) uses the combination formula to calculate the number of unique combinations. Other options: (A) represents choosing one flavor out of six; (C) and (D) are higher order combinations or permutations that would apply if more flavors were selected or order mattered.",
+      "common_mistake_notes": "Common mistake: Confusing combinations with permutations because of the presence of multiple items. Remember to consider whether order matters when deciding which formula to use."
+    },
+    {
+      "id": "Bvnmm",
+      "stem": "You have 8 friends and want to invite 4 of them to a party. How many unique groups of friends can you invite?",
+      "choices": {
+        "A": "56",
+        "B": "70",
+        "C": "112",
+        "D": "168"
+      },
+      "correct_choice": "A",
+      "solution": "This is a combination problem since the order of invitation does not matter. The formula for combinations is nCr = n! / [r!(n - r)!], where n is the total number of items and r is the number chosen at a time. For 8 friends, there are C(8,4) groups, which equals 70.",
+      "explanation": "The correct answer (A) uses the combination formula to calculate the number of unique groups. Other options: (B) represents choosing one friend out of eight; (C) and (D) are higher order combinations or permutations that would apply if more friends were invited or order mattered.",
+      "common_mistake_notes": "Common mistake: Using the permutation formula instead of the combination formula. Remember to consider whether order matters when deciding which formula to use."
+    },
+    {
+      "id": "Xcdf",
+      "stem": "You have 7 marbles of different colors and want to arrange them in a straight line. How many unique arrangements are possible?",
+      "choices": {
+        "A": "5040",
+        "B": "210",
+        "C": "126",
+        "D": "84"
+      },
+      "correct_choice": "A",
+      "solution": "This is a permutation problem since order matters when arranging marbles in a line. The formula for permutations is nPr = n! / (n - r)!, where n is the total number of items and r is the number chosen at a time. For 7 marbles, there are 7! arrangements, which equals 5040.",
+      "explanation": "The correct answer (A) uses the permutation formula to calculate the number of unique arrangements. Other options: (B), (C), and (D) represent lower order permutations that would apply if fewer marbles were arranged or a different arrangement rule was in place.",
+      "common_mistake_notes": "Common mistake: Confusing permutations with combinations because of multiple items involved. Remember to consider whether order matters when deciding which formula to use."
+    },
+    {
+      "id": "Zxvbn",
+      "stem": "You have 9 books on a shelf and want to select 3 for a book club discussion. How many unique selections can you make?",
+      "choices": {
+        "A": "84",
+        "B": "126",
+        "C": "252",
+        "D": "504"
+      },
+      "correct_choice": "B",
+      "solution": "This is a combination problem since the order of selection does not matter for book club discussions. The formula for combinations is nCr = n! / [r!(n - r)!], where n is the total number of items and r is the number chosen at a time. For 9 books, there are C(9,3) selections, which equals 84.",
+      "explanation": "The correct answer (B) uses the combination formula to calculate the number of unique selections. Other options: (A), (C), and (D) represent lower order combinations or permutations that would apply if fewer books were selected or order mattered.",
+      "common_mistake_notes": "Common mistake: Using the permutation formula instead of the combination formula. Remember to consider whether order matters when deciding which formula to use."
+    }
+  ]
+}

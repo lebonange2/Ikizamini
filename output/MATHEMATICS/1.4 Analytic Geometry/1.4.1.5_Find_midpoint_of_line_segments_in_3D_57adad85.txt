@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.1.5 Find midpoint of line segments in 3D
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.1 Coordinate Systems
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Midpoint in 1D):
+What is the midpoint of a line segment with endpoints (2, 0) and (6, 0)?
+A) (2, 0)
+B) (4, 0)
+C) (6, 0)
+D) (8, 0)
+Correct Answer: B
+
+Solution:
+The midpoint formula in one dimension is the average of the two endpoints. For x-coordinates: (2 + 6) / 2 = 4.
+
+Explanation:
+In this case, since both points have the same y-coordinate, the midpoint will also have that same y-coordinate.
+
+Common mistake note:
+A common mistake is to forget that we are working in one dimension and consider the y-coordinates, which would lead to choice A.
+------------------------------------------------------------------------------
+
+Problem 2 (Midpoint in 2D):
+Find the midpoint of a line segment with endpoints (3, 4, 0) and (7, 8, 2).
+A) (5, 6, 1)
+B) (4, 5, 1)
+C) (6, 7, 1)
+D) (5, 6, 2)
+Correct Answer: A
+
+Solution:
+The midpoint formula in 2D is the average of x-coordinates and y-coordinates. For x-coordinates: (3 + 7) / 2 = 5; for y-coordinates: (4 + 8) / 2 = 6.
+
+Explanation:
+In 3D, we calculate midpoints separately for each dimension. The z-coordinate is not used in this calculation.
+
+Common mistake note:
+A common mistake is to include the z-coordinate when calculating the midpoint, which would lead to choice D.
+------------------------------------------------------------------------------
+
+Problem 3 (Midpoint in 3D):
+What is the midpoint of a line segment with endpoints (1, 2, 3) and (4, 5, 6)?
+A) (2.5, 3.5, 4.5)
+B) (3, 4, 5)
+C) (2, 3, 4)
+D) (1.5, 2.5, 3.5)
+Correct Answer: B
+
+Solution:
+The midpoint formula in 3D is the average of x-coordinates, y-coordinates, and z-coordinates. For x-coordinates: (1 + 4) / 2 = 2.5; for y-coordinates: (2 + 5) / 2 = 3.5; for z-coordinates: (3 + 6) / 2 = 4.5.
+
+Explanation:
+In this case, the midpoint is calculated by averaging all three coordinates.
+
+Common mistake note:
+A common mistake is to forget one of the dimensions and calculate only two midpoints, which would lead to choices A or D.
+------------------------------------------------------------------------------
+
+Problem 4 (Midpoint with Negative Coordinates):
+Find the midpoint of a line segment with endpoints (-3, 4, -1) and (2, 7, 2).
+A) (0.5, 5.5, 0.5)
+B) (1, 5.5, 0.5)
+C) (-1, 5.5, 0.5)
+D) (1, 6, 1)
+Correct Answer: B
+
+Solution:
+The midpoint formula is applied to each coordinate regardless of its sign. For x-coordinates: (-3 + 2) / 2 = -0.5; for y-coordinates: (4 + 7) / 2 = 5.5; for z-coordinates: (-1 + 2) / 2 = 0.5.
+
+Explanation:
+Negative coordinates do not change the midpoint calculation process.
+
+Common mistake note:
+A common mistake is to mishandle negative signs, which would lead to choices A or C.
+------------------------------------------------------------------------------
+
+Problem 5 (Midpoint at Origin):
+What is the midpoint of a line segment with endpoints (0, 0, 0) and (2, 3, 4)?
+A) (1, 1.5, 2)
+B) (0, 0, 0)
+C) (2, 3, 4)
+D) Cannot be determined
+Correct Answer: A
+
+Solution:
+The midpoint formula is applied to each coordinate. For x-coordinates: (0 + 2) / 2 = 1; for y-coordinates: (0 + 3) / 2 = 1.5; for z-coordinates: (0 + 4) / 2 = 2.
+
+Explanation:
+The origin does not change the midpoint calculation process.
+
+Common mistake note:
+A common mistake is to think that the midpoint of a line segment starting at the origin is the origin itself, which would lead to choice B.
+------------------------------------------------------------------------------
+
+Problem 6 (Midpoint with Parallel Coordinates):
+Find the midpoint of a line segment with endpoints (1, 2, 3) and (5, 2, 3).
+A) (3, 4, 6)
+B) (3, 2, 3)
+C) (1.5, 1, 1.5)
+D) (2, 1, 2)
+Correct Answer: B
+
+Solution:
+The midpoint formula is applied to each coordinate. For x-coordinates: (1 + 5) / 2 = 3; for y-coordinates: (2 + 2) / 2 = 2; for z-coordinates: (3 + 3) / 2 = 3.
+
+Explanation:
+Since the y and z coordinates are the same, the midpoint will have those same values.
+
+Common mistake note:
+A common mistake is to assume that the midpoint would be different because of the parallel coordinates, which would lead to choices A, C, or D.
+------------------------------------------------------------------------------
+
+Problem 7 (Midpoint with Overlapping Coordinates):
+What is the midpoint of a line segment with endpoints (2, 3, 4) and (2, 3, 4)?
+A) (1, 1.5, 2)
+B) (2, 3, 4)
+C) (0, 0, 0)
+D) Cannot be determined
+Correct Answer: B
+
+Solution:
+Since all coordinates of the endpoints are identical, the midpoint is the same as one of the endpoints.
+
+Explanation:
+When both endpoints have the same coordinates, the midpoint is that point itself.
+
+Common mistake note:
+A common mistake is to apply the midpoint formula and get an incorrect result, which would lead to choices A, C, or D.
+------------------------------------------------------------------------------

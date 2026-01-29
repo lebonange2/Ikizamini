@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.1.9",
+  "objective_text": "Determine set equality",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "Which set is equal to {1, 2, 3}?",
+      "choices": {
+        "A": "{1, 2, 4}",
+        "B": "{1, 2, 3}",
+        "C": "{2, 3, 4}",
+        "D": "{1, 3, 5}"
+      },
+      "correct_choice": "B",
+      "solution": "Set equality means that two sets contain exactly the same elements, regardless of their order. The set {1, 2, 3} is equal to itself, hence option B is correct.",
+      "explanation": "Sets are considered equal if they have the same elements, even if they are arranged differently. Options A, C, and D all have different elements than the given set, making them incorrect choices.",
+      "common_mistake_notes": "A common mistake would be to focus on the order of the elements rather than their uniqueness. Remember that sets do not consider the order of elements."
+    },
+    {
+      "id": "Xyz456",
+      "stem": "Are the sets {a, b, c} and {c, a, b} equal?",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "Cannot be determined",
+        "D": "Depends on the values of a, b, and c"
+      },
+      "correct_choice": "B",
+      "solution": "The sets {a, b, c} and {c, a, b} are equal because they contain the same elements, regardless of their order.",
+      "explanation": "Set equality is determined by the elements present, not their arrangement. Since both sets have the same elements (a, b, and c), they are considered equal.",
+      "common_mistake_notes": "A common mistake would be to think that the order matters, but in sets it does not. The elements must match exactly for two sets to be considered equal."
+    },
+    {
+      "id": "Qwe789",
+      "stem": "Which set is equal to {2, 4, 6, 8}?",
+      "choices": {
+        "A": "{1, 3, 5, 7}",
+        "B": "{2, 4, 6, 8}",
+        "C": "{4, 6, 8, 10}",
+        "D": "{2, 4, 5, 6}"
+      },
+      "correct_choice": "B",
+      "solution": "The set {2, 4, 6, 8} is equal to itself. Therefore, option B is correct.",
+      "explanation": "Sets are considered equal if they have the same elements. In this case, only option B has exactly the same elements as the given set.",
+      "common_mistake_notes": "A common mistake would be to overlook one or more elements in the comparison. Make sure to check that all elements match perfectly for equality."
+    },
+    {
+      "id": "Mnb098",
+      "stem": "Are the sets {x, y} and {y, x} equal?",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "Cannot be determined without knowing the values of x and y",
+        "D": "Depends on the context"
+      },
+      "correct_choice": "B",
+      "solution": "The sets {x, y} and {y, x} are equal because they contain the same elements, regardless of their order.",
+      "explanation": "Set equality is based on the presence of elements, not their arrangement. Since both sets have the same elements (x and y), they are considered equal.",
+      "common_mistake_notes": "A common mistake would be to think that the order matters, but in sets it does not. The elements must match exactly for two sets to be considered equal."
+    },
+    {
+      "id": "Ghi654",
+      "stem": "Which set is NOT equal to {a, b, c}?",
+      "choices": {
+        "A": "{b, a, c}",
+        "B": "{c, a, b}",
+        "C": "{d, e, f}",
+        "D": "{a, b, c}"
+      },
+      "correct_choice": "C",
+      "solution": "The set {d, e, f} is not equal to {a, b, c} because it has different elements.",
+      "explanation": "Sets are considered unequal if they have different elements. In this case, only option C has different elements than the given set.",
+      "common_mistake_notes": "A common mistake would be to overlook one or more elements in the comparison. Make sure to check that all elements match perfectly for equality."
+    },
+    {
+      "id": "Uij321",
+      "stem": "Are the sets {1, 2, 3, 4} and {4, 3, 2, 1} equal?",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "Cannot be determined without knowing the values of the elements",
+        "D": "Depends on the context"
+      },
+      "correct_choice": "B",
+      "solution": "The sets {1, 2, 3, 4} and {4, 3, 2, 1} are equal because they contain the same elements, regardless of their order.",
+      "explanation": "Set equality is determined by the elements present, not their arrangement. Since both sets have the same elements (1, 2, 3, and 4), they are considered equal.",
+      "common_mistake_notes": "A common mistake would be to think that the order matters, but in sets it does not. The elements must match exactly for two sets to be considered equal."
+    },
+    {
+      "id": "Kol098",
+      "stem": "Which set is equal to {x, y, z}?",
+      "choices": {
+        "A": "{y, x, z}",
+        "B": "{z, y, x}",
+        "C": "{x, z, y}",
+        "D": "{x, y, z}"
+      },
+      "correct_choice": "D",
+      "solution": "The set {x, y, z} is equal to itself. Therefore, option D is correct.",
+      "explanation": "Sets are considered equal if they have the same elements. In this case, only option D has exactly the same elements as the given set.",
+      "common_mistake_notes": "A common mistake would be to overlook one or more elements in the comparison. Make sure to check that all elements match perfectly for equality."
+    }
+  ]
+}

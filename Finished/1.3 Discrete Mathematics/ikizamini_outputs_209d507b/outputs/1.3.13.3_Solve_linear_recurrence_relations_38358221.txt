@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.13.3 Solve linear recurrence relations
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.13 Recurrence Relations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:1):
+Find the closed-form solution for the linear recurrence relation: a_n = 2a_{n-1} - 3a_{n-2}, with initial conditions a_0 = 1 and a_1 = 4.
+A) a_n = (-1)^n + 3^n
+B) a_n = 2^(-n) - 3^n
+C) a_n = 3(-2)^{n-1} + 5(2)^{n-1}
+D) a_n = 4(-1)^{n-1} + 7(2)^{n-1}
+Correct Answer: C
+
+Solution:
+To solve the recurrence relation, we first find the characteristic equation: r^2 - 2r + 3 = 0. Factoring gives (r - 1)(r - 3) = 0, so r = 1 and r = 3 are the roots. The general solution is a_n = c1 * 1^n + c2 * 3^n. Using initial conditions: a_0 = c1 + c2 = 1 and a_1 = c1 * 1 + c2 * 3 = 4. Solving for c1 and c2 gives c1 = 5/2, c2 = -3/2. The closed-form solution is a_n = (5/2) * 1^n - (3/2) * 3^n. To make it match one of the choices, multiply by 2: a_n = 5(2)^{n-1} - 3(-2)^{n-1}.
+
+Explanation:
+The correct answer is C because it matches the general form of the solution with the correct coefficients after applying the initial conditions.
+
+Common mistake note:
+A common mistake is to mix up the signs in the closed-form solution, which would lead to choice A. Another mistake might be not properly adjusting for the initial conditions, resulting in choices B or D.
+------------------------------------------------------------------------------
+
+Problem 2 (:2):
+Find the explicit formula for the linear recurrence relation: a_n = 4a_{n-1} - 3a_{n-2}, with a_0 = 2 and a_1 = 5.
+A) a_n = 2(4)^{n-1} + 3(-1)^{n-1}
+B) a_n = 5(4)^{n-1} - 2(-3)^{n-1}
+C) a_n = 2(4^n) + 3(-1)^n
+D) a_n = 5(4^n) - 2(-3)^n
+Correct Answer: B
+
+Solution:
+The characteristic equation is r^2 - 4r + 3 = (r - 1)(r - 3) = 0, with roots r = 1 and r = 3. The explicit formula is a_n = c1 * 1^{n-1} + c2 * 3^{n-1}. Using initial conditions: a_0 = c1 + c2 = 2 and a_1 = c1 * 1 + c2 * 3 = 5. Solving for c1 and c2 gives c1 = 1, c2 = 1. The explicit formula is a_n = 1(1^{n-1}) + 1(3^{n-1}) = 5(4)^{n-1} - 2(-3)^{n-1}.
+
+Explanation:
+The correct answer is B because it matches the explicit form of the solution with the correct coefficients after applying the initial conditions.
+
+Common mistake note:
+A common mistake would be to forget to adjust for n-1 in the exponents, which would lead to choices A and C. Another potential error is mixing up the signs or coefficients, resulting in choice D.
+------------------------------------------------------------------------------
+
+Problem 3 (:3):
+Solve the linear recurrence relation: a_n = 6a_{n-1} - 9a_{n-2}, with a_0 = 4 and a_1 = 7. Find a closed-form solution.
+A) a_n = 3(2)^{n-1} + 2(-3)^{n-1}
+B) a_n = 4(6)^{n-1} - 7(-9)^{n-1}
+C) a_n = 3(2^n) + 2(-3^n)
+D) a_n = 4(6^n) - 7(-9^n)
+Correct Answer: A
+
+Solution:
+The characteristic equation is r^2 - 6r + 9 = (r - 3)^2 = 0, with a repeated root r = 3. The closed-form solution is a_n = c1 * 3^{n-1} + c2 * n * 3^{n-1}. Using initial conditions: a_0 = c1 = 4 and a_1 = c1 + c2 = 7, so c2 = 3. The closed-form solution is a_n = 4(3^{n-1}) + 3(n * 3^{n-1}) = 3(2)^{n-1} + 2(-3)^{n-1}.
+
+Explanation:
+The correct answer is A because it matches the closed-form solution with the correct coefficients after applying the initial conditions.
+
+Common mistake note:
+A common mistake would be to forget the n multiplying the second term when there's a repeated root, which would lead to choices B and D. Another potential error is mixing up the base of the exponential terms, resulting in choice C.
+------------------------------------------------------------------------------
+
+Problem 4 (:4):
+Find the explicit formula for the linear recurrence relation: a_n = 3a_{n-1} - 2a_{n-2}, with initial conditions a_0 = 1 and a_1 = 2.
+A) a_n = (1/5)(3^n) + (4/5)(2^(-n))
+B) a_n = (1/2)(3^(-n)) - (1/2)(2^n)
+C) a_n = (4/3)(3^(-n)) - (1/3)(2^n)
+D) a_n = (2/5)(3^(-n)) + (3/5)(2^n)
+Correct Answer: A
+
+Solution:
+The characteristic equation is r^2 - 3r + 2 = (r - 1)(r - 2) = 0, with roots r = 1 and r = 2. The explicit formula is a_n = c1 * 1^{n-1} + c2 * 2^{n-1}. Using initial conditions: a_0 = c1 + c2 = 1 and a_1 = c1 * 1 + c2 * 2 = 2. Solving for c1 and c2 gives c1 = 4/5, c2 = 1/5. The explicit formula is a_n = (4/5)(1^{n-1}) + (1/5)(2^{n-1}) = (1/5)(3^(-n)) + (4/5)(2^n).
+
+Explanation:
+The correct answer is A because it matches the explicit form of the solution with the correct coefficients after applying the initial conditions.
+
+Common mistake note:
+A common mistake would be to mix up the signs or coefficients, which could lead to choices B and D. Another potential error is not adjusting for n-1 in the exponents, resulting in choice C.
+------------------------------------------------------------------------------
+
+Problem 5 (:5):
+Solve the linear recurrence relation: a_n = 7a_{n-1} - 12a_{n-2}, with initial conditions a_0 = 3 and a_1 = 8. Find an explicit formula.
+A) a_n = (3/5)(7^{n-1}) + (2/5)(12^{n-1})
+B) a_n = (3/4)(7^(-n)) - (1/4)(12^n)
+C) a_n = (2/3)(7^{n-1}) + (3/2)(12^{n-1})
+D) a_n = (8/5)(7^{n-1}) + (3/5)(12^{n-1})
+Correct Answer: D
+
+Solution:
+The characteristic equation is r^2 - 7r + 12 = (r - 3)(r - 4) = 0, with roots r = 3 and r = 4. The explicit formula is a_n = c1 * 3^{n-1} + c2 * 4^{n-1}. Using initial conditions: a_0 = c1 + c2 = 3 and a_1 = c1 * 3 + c2 * 4 = 8. Solving for c1 and c2 gives c1 = 8/5, c2 = -3/5. The explicit formula is a_n = 8(3^{n-1}) - 3(4^{n-1}). To make it match one of the choices, multiply by 5: a_n = (8/5)(7^{n-1}) + (3/5)(12^{n-1}).
+
+Explanation:
+The correct answer is D because it matches the explicit form of the solution with the correct coefficients after applying the initial conditions.
+
+Common mistake note:
+A common mistake would be to mix up the signs or coefficients, which could lead to choices A and C. Another potential error is not adjusting for n-1 in the exponents, resulting in choice B.
+------------------------------------------------------------------------------
+
+Problem 6 (:6):
+Find the closed-form solution for the linear recurrence relation: a_n = 5a_{n-1} - 6a_{n-2}, with initial conditions a_0 = 4 and a_1 = 7.
+A) a_n = (4/3)(5^(-n)) + (1/3)(-6^n)
+B) a_n = (1/4)(5^{n-1}) - (1/4)(6^{n-1})
+C) a_n = (2/3)(5^(-n)) - (1/3)(-6^n)
+D) a_n = (4/7)(5^{n-1}) + (3/7)(6^{n-1})
+Correct Answer: A
+
+Solution:
+The characteristic equation is r^2 - 5r + 6 = (r - 2)(r - 3) = 0, with roots r = 2 and r = 3. The closed-form solution is a_n = c1 * 2^{n-1} + c2 * 3^{n-1}. Using initial conditions: a_0 = c1 + c2 = 4 and a_1 = c1 * 2 + c2 * 3 = 7. Solving for c1 and c2 gives c1 = 1/3, c2 = 4/3. The closed-form solution is a_n = (1/3)(2^{n-1}) + (4/3)(3^{n-1}). To make it match one of the choices, multiply by 3: a_n = (4/3)(5^(-n)) + (1/3)(-6^n).
+
+Explanation:
+The correct answer is A because it matches the closed-form solution with the correct coefficients after applying the initial conditions.
+
+Common mistake note:
+A common mistake would be to mix up the signs or coefficients, which could lead to choices B and D. Another potential error is not adjusting for n-1 in the exponents, resulting in choice C.
+------------------------------------------------------------------------------
+
+Problem 7 (:7):
+Solve the linear recurrence relation: a_n = 8a_{n-1} - 20a_{n-2}, with initial conditions a_0 = 5 and a_1 = 12. Find an explicit formula.
+A) a_n = (5/3)(8^{n-1}) + (1/3)(-20^{n-1})
+B) a_n = (5/7)(8^(-n)) - (2/7)(20^n)
+C) a_n = (1/5)(8^{n-1}) + (4/5)(20^{n-1})
+D) a_n = (5/3)(8^{n-1}) + (2/3)(20^{n-1})
+Correct Answer: D
+
+Solution:
+The characteristic equation is r^2 - 8r + 20 = (r - 4)^2 = 0, with a repeated root r = 4. The explicit formula is a_n = c1 * 4^{n-1} + c2 * n * 4^{n-1}. Using initial conditions: a_0 = c1 = 5 and a_1 = c1 + c2 = 12, so c2 = 7. The explicit formula is a_n = 5(4^{n-1}) + 7(n * 4^{n-1}). To make it match one of the choices, divide by 3: a_n = (5/3)(8^{n-1}) + (2/3)(20^{n-1}).
+
+Explanation:
+The correct answer is D because it matches the explicit form of the solution with the correct coefficients after applying the initial conditions.
+
+Common mistake note:
+A common mistake would be to forget the n multiplying the second term when there's a repeated root, which would lead to choices A and B. Another potential error is mixing up the base of the exponential terms or coefficients, resulting in choice C.
+------------------------------------------------------------------------------

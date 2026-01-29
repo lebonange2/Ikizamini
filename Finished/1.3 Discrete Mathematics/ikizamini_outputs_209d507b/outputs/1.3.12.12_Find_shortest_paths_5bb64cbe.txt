@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.12.12 Find shortest paths
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.12 Graph Theory Basics
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (x1):
+What algorithm is commonly used to find the shortest path between two nodes in a weighted graph?
+A) Prim's Algorithm
+B) Dijkstra's Algorithm
+C) Kruskal's Algorithm
+D) Floyd-Warshall Algorithm
+Correct Answer: B
+
+Solution:
+Dijkstra's Algorithm is specifically designed to find the shortest path between two nodes in a weighted graph. Prim's and Kruskal's algorithms are used for minimum spanning trees, while Floyd- Warshall is an algorithm for finding shortest paths in a weighted graph with negative weights (but not necessarily single-source shortest paths).
+
+Explanation:
+Dijkstra's Algorithm uses a priority queue to iteratively select the node with the smallest distance from the source and updates the distances of its neighbors. It guarantees to find the shortest path.
+
+Common mistake note:
+Common mistake is selecting Prim's or Kruskal's algorithms, which are not designed for finding shortest paths between two specific nodes.
+------------------------------------------------------------------------------
+
+Problem 2 (x2):
+Which of the following statements about Dijkstra's Algorithm is true?
+A) It always requires visiting all nodes in the graph.
+B) It can only be used on unweighted graphs.
+C) It uses a priority queue to select nodes for expansion.
+D) It guarantees to find the longest path between two nodes.
+Correct Answer: C
+
+Solution:
+Dijkstra's Algorithm uses a priority queue, typically implemented as a binary heap, to efficiently select the node with the smallest distance from the source at each step of the algorithm. This allows it to avoid visiting all nodes if the shortest path is found before exploring the entire graph.
+
+Explanation:
+The priority queue plays a crucial role in Dijkstra's Algorithm by ensuring that the next node to be expanded has the smallest known distance.
+
+Common mistake note:
+Common mistake is selecting 'It always requires visiting all nodes in the graph,' which is not necessarily true if the shortest path is found early during the algorithm.
+------------------------------------------------------------------------------
+
+Problem 3 (x3):
+Which of the following modifications can be made to Dijkstra's Algorithm to handle graphs with negative edge weights?
+A) Add a large constant to all edge weights.
+B) Use Bellman- Ford Algorithm instead.
+C) Replace the priority queue with a simple list.
+D) Keep track of the previous node for each visited node.
+Correct Answer: B
+
+Solution:
+The Bellman-Ford Algorithm is designed to handle graphs with negative edge weights, while Dijkstra's Algorithm cannot be directly applied in such cases. Adding a constant to all edge weights may not guarantee the correctness of Dijkstra's Algorithm, and replacing the priority queue or keeping track of previous nodes would not solve the issue.
+
+Explanation:
+The Bellman-Ford Algorithm can handle graphs with negative weight edges by performing relaxation steps multiple times until no further improvement is possible.
+
+Common mistake note:
+Common mistake is selecting 'Add a large constant to all edge weights,' which may not guarantee that the algorithm will find the correct shortest path.
+------------------------------------------------------------------------------
+
+Problem 4 (x4):
+What is the time complexity of Dijkstra's Algorithm in its basic form, assuming a priority queue with O(log n) insertion and deletion?
+A) O(n + m log n)
+B) O(n^2)
+C) O(m log n)
+D) O(n log m)
+Correct Answer: A
+
+Solution:
+The time complexity of Dijkstra's Algorithm with a priority queue is O((n + m) log n), where n is the number of nodes and m is the number of edges. However, since we are asked about the basic form, which assumes that each node is inserted into the priority queue once and removed exactly once, the time complexity simplifies to O(n log n) for insertion and O(m log n) for deletion, resulting in a total of O(n + m log n).
+
+Explanation:
+The priority queue operations dominate the time complexity.
+
+Common mistake note:
+Common mistake is selecting 'O(n^2),' which would be the case without using a priority queue or if there were multiple insertions and deletions for each node.
+------------------------------------------------------------------------------
+
+Problem 5 (x5):
+Which of the following graphs would require Dijkstra's Algorithm to visit all nodes in order to find the shortest path between two specific nodes?
+A) A graph with a single negative weight cycle.
+B) A complete graph with equal edge weights.
+C) A tree with uniform positive edge weights.
+D) An unweighted graph with a disconnected component.
+Correct Answer: B
+
+Solution:
+In a complete graph with equal edge weights, the shortest path between any two nodes will always be of the same length (n-1 edges), and Dijkstra's Algorithm would need to visit all nodes to confirm this. In other cases, the algorithm may find the shortest path before visiting all nodes.
+
+Explanation:
+In a complete graph with equal edge weights, every node is one step away from every other node, so the shortest path will always involve visiting n-1 edges.
+
+Common mistake note:
+Common mistake is selecting 'A' or 'D,' which would not require visiting all nodes as Dijkstra's Algorithm can avoid negative weight cycles and disconnected components.
+------------------------------------------------------------------------------
+
+Problem 6 (x6):
+What is the main difference between Dijkstra's Algorithm and A* Search?
+A) Dijkstra's Algorithm uses a priority queue, while A* Search does not.
+B) A* Search considers both the distance from the start and heuristic information to the goal, whereas Dijkstra's Algorithm only uses distance.
+C) A* Search is designed for unweighted graphs, while Dijkstra's Algorithm works on weighted graphs.
+D) Dijkstra's Algorithm guarantees the shortest path, but A* Search does not.
+Correct Answer: B
+
+Solution:
+The main difference between Dijkstra's Algorithm and A* Search is that A* Search incorporates a heuristic function to guide its search towards the goal, in addition to considering the distance from the start. Dijkstra's Algorithm only uses the actual distance from the source node.
+
+Explanation:
+A* Search aims to find an approximate shortest path by using a combination of the cost so far and an estimate of the remaining cost to reach the goal.
+
+Common mistake note:
+Common mistake is selecting 'Dijkstra's Algorithm guarantees the shortest path, but A* Search does not,' which is incorrect as Dijkstra's Algorithm always guarantees the shortest path in a weighted graph without negative cycles.
+------------------------------------------------------------------------------
+
+Problem 7 (x7):
+Which of the following graphs would be best suited for using Dijkstra's Algorithm to find the shortest path between two nodes?
+A) A directed acyclic graph with positive edge weights.
+B) An undirected graph with both positive and negative edge weights.
+C) A weighted complete graph with no negative weight cycles.
+D) A disconnected graph with varying edge weights.
+Correct Answer: C
+
+Solution:
+Dijkstra's Algorithm is best suited for finding the shortest path in a weighted, connected graph without negative weight cycles. An undirected graph with both positive and negative weights or a disconnected graph would not be suitable inputs for Dijkstra's Algorithm.
+
+Explanation:
+A weighted complete graph with no negative weight cycles satisfies all the conditions required for Dijkstra's Algorithm to work correctly.
+
+Common mistake note:
+Common mistake is selecting 'An undirected graph with both positive and negative edge weights,' which would require a different algorithm like Bellman- Ford.
+------------------------------------------------------------------------------

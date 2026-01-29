@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.10.12 Use in subset counting
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.10 Combinations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asd1):
+How many ways are there to choose 3 numbers from the set {1, 2, 3, 4, 5} without choosing any number more than once?
+A) 10
+B) 15
+C) 20
+D) 25
+Correct Answer: B
+
+Solution:
+To find the number of ways to choose 3 numbers from a set of 5 without repetition, use combinations: C(5, 3) = 5! / (3!(5-3)!). This gives 10.
+
+Explanation:
+The combination formula ensures unique selections without considering order.
+
+Common mistake note:
+A common mistake is using permutations instead of combinations, which would result in overcounting due to the order of selection.
+------------------------------------------------------------------------------
+
+Problem 2 (Asd2):
+In a group of 10 students, how many ways can a committee of 4 be formed if no student can serve on more than one committee?
+A) 56
+B) 70
+C) 120
+D) 210
+Correct Answer: C
+
+Solution:
+Use combinations: C(10, 4) = 10! / (4!(10-4)!). This gives 210.
+
+Explanation:
+The combination formula ensures each student is chosen only once and order does not matter.
+
+Common mistake note:
+A common mistake is multiplying the number of students for each position, which results in permutations. Combinations should be used since order doesn't matter.
+------------------------------------------------------------------------------
+
+Problem 3 (Asd3):
+How many ways can 5 different books be arranged on a shelf if two specific books must always be together?
+A) 24
+B) 120
+C) 720
+D) 1440
+Correct Answer: B
+
+Solution:
+Treat the pair as one unit. Arrange 4 units in 4! ways, then arrange the books within the pair in 2! ways: 4! * 2! = 48.
+
+Explanation:
+Treating the two books as a single unit simplifies the problem to arranging 4 units with internal arrangement accounted for.
+
+Common mistake note:
+A common mistake is not considering the internal arrangement of the pair, which would result in 5! = 120.
+------------------------------------------------------------------------------
+
+Problem 4 (Asd4):
+In a set of 7 distinct marbles, how many ways are there to choose 3 marbles if at least one red marble must be included?
+A) 21
+B) 35
+C) 42
+D) 56
+Correct Answer: C
+
+Solution:
+Use inclusion-exclusion: total ways (C(7, 3)) - ways with no reds + ways with all reds = 35 - C(4, 3) + C(3, 3) = 32.
+
+Explanation:
+Inclusion-exclusion principle is used to account for cases with at least one red marble.
+
+Common mistake note:
+A common mistake is not considering the requirement of at least one red marble, which would result in simply using C(7, 3) = 35.
+------------------------------------------------------------------------------
+
+Problem 5 (Asd5):
+From a group of 10 people, how many ways can a team of 4 be formed if two specific individuals cannot serve together?
+A) 84
+B) 96
+C) 108
+D) 120
+Correct Answer: B
+
+Solution:
+Total ways (C(10, 4)) - ways with both specific individuals = 210 - C(8, 3) = 154.
+
+Explanation:
+Inclusion-exclusion principle is used to exclude cases where the two specific individuals are together.
+
+Common mistake note:
+A common mistake is not accounting for double-counting when subtracting teams with both individuals.
+------------------------------------------------------------------------------
+
+Problem 6 (Asd6):
+In a group of 9 students, how many ways can a team of 4 be formed if exactly two specific students must always be included?
+A) 28
+B) 35
+C) 42
+D) 56
+Correct Answer: C
+
+Solution:
+Choose the required students (C(2, 2)) and remaining team members (C(7, 2)): 1 * 21 = 21.
+
+Explanation:
+First select the two required students, then choose from the remaining group.
+
+Common mistake note:
+A common mistake is not accounting for exactly two specific students being included, which would result in using C(9, 4) = 126.
+------------------------------------------------------------------------------
+
+Problem 7 (Asd7):
+How many ways can a committee of 5 be formed from 8 people if one person cannot serve with two others?
+A) 30
+B) 42
+C) 56
+D) 72
+Correct Answer: B
+
+Solution:
+Total ways (C(8, 5)) - ways with restricted person and one of the other two = 56 - C(3, 1) * C(6, 3) = 42.
+
+Explanation:
+Inclusion-exclusion principle is used to exclude cases where the restricted person serves with two others.
+
+Common mistake note:
+A common mistake is not considering overcounting when subtracting, which would result in an incorrect negative number.
+------------------------------------------------------------------------------

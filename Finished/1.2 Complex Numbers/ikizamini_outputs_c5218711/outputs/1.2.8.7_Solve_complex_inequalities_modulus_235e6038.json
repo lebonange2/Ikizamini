@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.8.7",
+  "objective_text": "Solve complex inequalities (modulus)",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Solve the inequality: |x - 3| < 5.",
+      "choices": {
+        "A": "-8 < x < 2",
+        "B": "2 < x < 8",
+        "C": "-2 < x < 8",
+        "D": "0 < x < 10"
+      },
+      "correct_choice": "C",
+      "solution": "To solve the inequality |x - 3| < 5, we consider two cases: when (x - 3) is positive and when it's negative.\n\nCase 1: x - 3 > 0\n(x - 3) < 5\nx < 8\n\nCase 2: x - 3 < 0\n-(x - 3) < 5\n-x + 3 < 5\nx > -2\n\nCombining the two cases, we get -2 < x < 8.",
+      "explanation": "The correct answer is when the absolute value of (x - 3) is less than 5, which means x can be between -2 and 8 but not including those values.",
+      "common_mistake_notes": "A common mistake is to forget considering both cases (positive and negative), leading to an incorrect solution."
+    },
+    {
+      "id": ":2",
+      "stem": "Solve the inequality: |2x + 1| ≤ 7.",
+      "choices": {
+        "A": "-4 ≤ x ≤ 3",
+        "B": "0 ≤ x ≤ 4",
+        "C": "-9 ≤ x ≤ 5",
+        "D": "1 ≤ x ≤ 6"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the inequality |2x + 1| ≤ 7, we again consider two cases: when (2x + 1) is positive and when it's negative.\n\nCase 1: 2x + 1 ≥ 0\n2x + 1 ≤ 7\n2x ≤ 6\nx ≤ 3\n\nCase 2: 2x + 1 < 0\n-(2x + 1) ≤ 7\n-2x - 1 ≤ 7\n-2x ≤ 8\nx ≥ -4\n\nCombining the two cases, we get -4 ≤ x ≤ 3.",
+      "explanation": "The correct answer is when the absolute value of (2x + 1) is less than or equal to 7, which means x can be between -4 and 3 inclusive.",
+      "common_mistake_notes": "A common mistake is to forget that '≤' includes the endpoint values, so x can be -4 and 3."
+    },
+    {
+      "id": ":3",
+      "stem": "Solve the inequality: |3x - 6| > 9.",
+      "choices": {
+        "A": "x < -1 or x > 5",
+        "B": "x ≤ -1 or x ≥ 5",
+        "C": "x ≠ -1 and x ≠ 5",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the inequality |3x - 6| > 9, we consider when (3x - 6) is positive and negative.\n\nCase 1: 3x - 6 > 0\n3x > 6\nx > 2\nSince x must be greater than 2, it must also be greater than 5 to satisfy the inequality.\n\nCase 2: 3x - 6 < 0\n-(3x - 6) > 9\n-3x + 6 > 9\n-3x > 3\nx < -1\nSince x must be less than -1, it must also be less than -1 to satisfy the inequality.\n\nCombining the two cases, we get x < -1 or x > 5.",
+      "explanation": "The correct answer is when the absolute value of (3x - 6) is greater than 9, which means x can be any number less than -1 or greater than 5.",
+      "common_mistake_notes": "A common mistake is to forget that '>' does not include the endpoint values."
+    },
+    {
+      "id": ":4",
+      "stem": "Solve the inequality: |x + 2| + |x - 3| < 7.",
+      "choices": {
+        "A": "-1.5 < x < 4.5",
+        "B": "0 < x < 6",
+        "C": "-4 < x < 5",
+        "D": "No solution"
+      },
+      "correct_choice": "C",
+      "solution": "To solve the inequality |x + 2| + |x - 3| < 7, we need to consider four cases due to the two absolute values:\n\nCase 1: x ≤ -2 and x ≥ 3 (no overlap)\n(x + 2) + (x - 3) < 7\n2x - 1 < 7\n2x < 8\nx < 4\nSince x must be greater than or equal to 3, there is no solution in this case.\n\nCase 2: -2 < x < 3\n(x + 2) + (-(x - 3)) < 7\nx + 2 - x + 3 < 7\n5 < 7\nThis case is always true for any x between -2 and 3.\n\nCombining the solutions from Case 2, we get -2 < x < 3 or -4 < x < 5 (since x cannot be equal to -2 or 3 due to the inequality being strict).",
+      "explanation": "The correct answer is when the sum of the absolute values of (x + 2) and (x - 3) is less than 7, which means x can be any number between -4 and 5 but not including those endpoints.",
+      "common_mistake_notes": "A common mistake is to forget that there are four cases to consider due to the two absolute values."
+    },
+    {
+      "id": ":5",
+      "stem": "Solve the inequality: |2x - 1| + |3x + 4| ≤ 10.",
+      "choices": {
+        "A": "-4/3 ≤ x ≤ 1/2",
+        "B": "-1/3 ≤ x ≤ 9/2",
+        "C": "-5/3 ≤ x ≤ 7/2",
+        "D": "No solution"
+      },
+      "correct_choice": "C",
+      "solution": "To solve the inequality |2x - 1| + |3x + 4| ≤ 10, we again consider four cases due to the two absolute values:\n\nCase 1: x ≤ -4/3 and x ≥ 1/2 (no overlap)\n(2x - 1) + (3x + 4) ≤ 10\n5x + 3 ≤ 10\n5x ≤ 7\nx ≤ 7/5\nSince x must be greater than or equal to 1/2, there is no solution in this case.\n\nCase 2: -4/3 < x < 1/2\n(2x - 1) + (-(3x + 4)) ≤ 10\n2x - 1 - 3x - 4 ≤ 10\n-x - 5 ≤ 10\n-x ≤ 15\nx ≥ -15\nSince x must be less than 1/2, we have -15 ≤ x < 1/2.\n\nCombining the solutions from Case 2, we get -15 ≤ x < 1/2 or -5/3 ≤ x ≤ 7/2 (since x cannot be equal to -4/3 or 1/2 due to the inequality being weak).",
+      "explanation": "The correct answer is when the sum of the absolute values of (2x - 1) and (3x + 4) is less than or equal to 10, which means x can be any number between -5/3 and 7/2 inclusive.",
+      "common_mistake_notes": "A common mistake is to forget that there are four cases to consider due to the two absolute values."
+    },
+    {
+      "id": ":6",
+      "stem": "Solve the inequality: |x - 4| + |2x + 1| > 9.",
+      "choices": {
+        "A": "x < -5 or x > 7",
+        "B": "x ≤ -5 or x ≥ 7",
+        "C": "x ≠ -5 and x ≠ 7",
+        "D": "No solution"
+      },
+      "correct_choice": "A",
+      "solution": "To solve the inequality |x - 4| + |2x + 1| > 9, we consider four cases due to the two absolute values:\n\nCase 1: x ≤ 4 and x ≥ -1/2 (no overlap)\n(x - 4) + (2x + 1) > 9\n3x - 3 > 9\n3x > 12\nx > 4\nSince x must be greater than or equal to -1/2, there is no solution in this case.\n\nCase 2: -1/2 < x < 4\n(x - 4) + (-(2x + 1)) > 9\nx - 4 - 2x - 1 > 9\n-x - 5 > 9\n-x > 14\nx < -14\nSince x must be greater than -1/2, there is no solution in this case.\n\nCombining the solutions from Cases 1 and 2, we get x < -14 or x > 7 (since x cannot be equal to -1/2 or 4 due to the inequality being strict).",
+      "explanation": "The correct answer is when the sum of the absolute values of (x - 4) and (2x + 1) is greater than 9, which means x can be any number less than -14 or greater than 7.",
+      "common_mistake_notes": "A common mistake is to forget that there are four cases to consider due to the two absolute values."
+    },
+    {
+      "id": ":7",
+      "stem": "Solve the inequality: |3x - 2| - |x + 1| < 5.",
+      "choices": {
+        "A": "-4/3 < x < 9/2",
+        "B": "-1/3 < x < 7/2",
+        "C": "-2 < x < 6",
+        "D": "No solution"
+      },
+      "correct_choice": "C",
+      "solution": "To solve the inequality |3x - 2| - |x + 1| < 5, we consider four cases due to the two absolute values:\n\nCase 1: x ≤ -1 and x ≥ 2/3 (no overlap)\n(3x - 2) - (x + 1) < 5\n2x - 3 < 5\n2x < 8\nx < 4\nSince x must be greater than or equal to 2/3, there is no solution in this case.\n\nCase 2: -1 < x < 2/3\n(3x - 2) - (-(x + 1)) < 5\n3x - 2 + x + 1 < 5\n4x - 1 < 5\n4x < 6\nx < 3/2\nSince x must be less than 2/3, we have -1 < x < 3/2.\n\nCombining the solutions from Case 2, we get -1 < x < 3/2 or -2 < x < 6 (since x cannot be equal to -1 or 2/3 due to the inequality being strict).",
+      "explanation": "The correct answer is when the difference of the absolute values of (3x - 2) and (x + 1) is less than 5, which means x can be any number between -2 and 6 but not including those endpoints.",
+      "common_mistake_notes": "A common mistake is to forget that there are four cases to consider due to the two absolute values."
+    }
+  ]
+}

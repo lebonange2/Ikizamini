@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.5.8",
+  "objective_text": "Apply distributive laws",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Inequality_Expansion",
+      "stem": "Solve for x: 3(x - 4) > 2x + 10",
+      "choices": {
+        "A": "-16",
+        "B": "8",
+        "C": "2",
+        "D": "No solution"
+      },
+      "correct_choice": "D",
+      "solution": "To solve the inequality, we expand the left side using the distributive law: 3x - 12 > 2x + 10. Next, isolate x by subtracting 2x from both sides and adding 12 to both sides: x > 22. Since there's no upper bound for x, the solution is all real numbers greater than 22, which means 'No solution' within a finite range.",
+      "explanation": "The distributive law helps distribute multiplication over addition or subtraction.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the distributive property (e.g., 3x - 12 > 6x + 10), leading to an incorrect solution."
+    },
+    {
+      "id": "Polynomial_Simplification",
+      "stem": "Simplify: (5x + 3)(2x - 4)",
+      "choices": {
+        "A": "7x^2 - 17x - 12",
+        "B": "10x^2 - 7x - 12",
+        "C": "10x^2 - 17x - 12",
+        "D": "7x^2 + 7x - 12"
+      },
+      "correct_choice": "C",
+      "solution": "Using the distributive law, we multiply each term in the first polynomial by each term in the second polynomial: (5x \times 2x) + (5x \times -4) + (3 \times 2x) + (3 \times -4). This gives us 10x^2 - 20x + 6x - 12, which simplifies to 10x^2 - 17x - 12.",
+      "explanation": "The distributive law distributes multiplication across addition within parentheses.",
+      "common_mistake_notes": "A common mistake would be forgetting to distribute one or both terms in the first polynomial, resulting in an incorrect simplified expression."
+    },
+    {
+      "id": "Fraction_Simplification",
+      "stem": "Simplify: (3/4)(2x + 1) - (1/2)(x + 3)",
+      "choices": {
+        "A": "3/2x + 3/4 - x/2 - 3/2",
+        "B": "3/2x + 3/4 - x/2 - 3",
+        "C": "3/2x + 3/4 - x - 3",
+        "D": "3x + 3 - 2x - 6"
+      },
+      "correct_choice": "A",
+      "solution": "Using the distributive law, we multiply each term inside the first set of parentheses by 3/4 and subtract the terms inside the second set of parentheses multiplied by 1/2: (3/4 \times 2x) + (3/4 \times 1) - (1/2 \times x) - (1/2 \times 3). This simplifies to 3/2x + 3/4 - x/2 - 3/2.",
+      "explanation": "The distributive law applies the fraction outside the parentheses to each term inside.",
+      "common_mistake_notes": "A common mistake would be incorrect distribution of fractions, leading to an incorrect simplified expression."
+    },
+    {
+      "id": "Exponential_Simplification",
+      "stem": "Simplify: 2(3^x + 1) - 4 \times 3^{x-1}",
+      "choices": {
+        "A": "6^x + 2 - 4 \times 3^{x-1}",
+        "B": "2 \times 3^x + 2 - 4 \times 3^{x-1}",
+        "C": "2 \times 3^x + 2 - 4 \times 3^x",
+        "D": "6^x + 2 - 4 \times 3^x"
+      },
+      "correct_choice": "B",
+      "solution": "Using the distributive law, we multiply each term inside the first set of parentheses by 2 and subtract 4 times the second term raised to the power (x-1): (2 \times 3^x) + (2 \times 1) - 4 \times 3^{x-1}. This simplifies to 2 \times 3^x + 2 - 4 \times 3^{x-1}.",
+      "explanation": "The distributive law distributes multiplication over addition within parentheses, including exponents.",
+      "common_mistake_notes": "A common mistake would be incorrect distribution of the coefficient or applying wrong exponent rules, resulting in an incorrect simplified expression."
+    },
+    {
+      "id": "Variable_Simplification",
+      "stem": "Simplify: 5(a + b) - 3(a + b)",
+      "choices": {
+        "A": "2a + 8b",
+        "B": "2a + 2b",
+        "C": "2(5a + 5b) - 2(a + b)",
+        "D": "5a + 5b - 3a - 3b"
+      },
+      "correct_choice": "D",
+      "solution": "Using the distributive law, we multiply each term inside the parentheses by 5 and subtract the same terms multiplied by 3: (5 \times a) + (5 \times b) - (3 \times a) - (3 \times b). This simplifies to 5a + 5b - 3a - 3b.",
+      "explanation": "The distributive law distributes multiplication over addition within parentheses, with variables.",
+      "common_mistake_notes": "A common mistake would be distributing the coefficients incorrectly, leading to an incorrect simplified expression."
+    },
+    {
+      "id": "Linear_Equation_Distributive",
+      "stem": "Solve for x: 2(3x - 5) = 4x + 10",
+      "choices": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "No solution"
+      },
+      "correct_choice": "D",
+      "solution": "Applying the distributive law to both sides, we get: 6x - 10 = 4x + 10. Next, isolate x by subtracting 4x from both sides and adding 10 to both sides: 2x = 20. Finally, divide both sides by 2: x = 10. However, checking the solution in the original equation shows it's not valid, so there is 'No solution'.",
+      "explanation": "The distributive law helps distribute multiplication over addition or subtraction when solving equations.",
+      "common_mistake_notes": "A common mistake would be to incorrectly apply the distributive property (e.g., 6x - 10 = 8x + 10), leading to an incorrect solution."
+    },
+    {
+      "id": "Quadratic_Distributive",
+      "stem": "Factor the quadratic expression: x^2 - 5x + 6",
+      "choices": {
+        "A": "(x - 3)(x - 2)",
+        "B": "(x + 3)(x + 2)",
+        "C": "(x - 1)(x - 6)",
+        "D": "(x + 1)(x + 6)"
+      },
+      "correct_choice": "A",
+      "solution": "Using the distributive law, we look for two numbers that multiply to give 6 (the constant term) and add up to -5 (the coefficient of x). These numbers are -3 and -2. So, the expression factors as: x^2 - 3x - 2x + 6 = (x - 3)(x - 2)",
+      "explanation": "The distributive law is used in factoring quadratic expressions by finding the product of the coefficients and constant term.",
+      "common_mistake_notes": "A common mistake would be to incorrectly identify the numbers that multiply to give the constant term and add up to the coefficient of x, leading to an incorrect factorization."
+    }
+  ]
+}

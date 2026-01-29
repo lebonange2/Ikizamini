@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.3.9 Write parametric equations of line in 3D
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.3 Lines and Planes in 3D
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (One point form, direction vector):
+Find the parametric equations for the line passing through point (2, 1, -3) and parallel to the vector <4, 5, 6>.
+A) [x = 2 + 4t, y = 1 + 5t, z = -3 + 6t]
+B) [x = 4 + 2t, y = 5 + t, z = 6 - 3t]
+C) [x = 2t, y = 5t, z = 6t]
+D) [x = 1 + 2t, y = -3 + 5t, z = 2 + 4t]
+Correct Answer: A
+
+Solution:
+The parametric equations for a line passing through point P_1(x_1, y_1, z_1) and parallel to vector v=<a, b, c> are given by [x = x_1 + at, y = y_1 + bt, z = z_1 + ct]. In this case, P_1(2, 1, -3) and v=<4, 5, 6>, so the equations are [x = 2 + 4t, y = 1 + 5t, z = -3 + 6t].
+
+Explanation:
+The parametric equations represent a line that starts at the given point and moves in the direction of the vector.
+
+Common mistake note:
+A common mistake is to mix up the coordinates of the starting point or the components of the direction vector.
+------------------------------------------------------------------------------
+
+Problem 2 (Two points form):
+Find the parametric equations for the line passing through points (1, 2, 3) and (-2, -3, -4).
+A) [x = t, y = t - 1, z = t - 2]
+B) [x = 1 + 3t, y = 2 - 1t, z = 3 - 2t]
+C) [x = 1 - 3t, y = 2 + t, z = 3 + 2t]
+D) [x = 3t - 1, y = t - 2, z = t - 3]
+Correct Answer: C
+
+Solution:
+The parametric equations for a line passing through points P_1(x_1, y_1, z_1) and P_2( x_2, y_2, z_2) can be found by expressing the differences between the coordinates as multiples of a parameter t. In this case, [x = x_1 + (x_2 - x_1)t, y = y_1 + (y_2 - y_1)t, z = z_1 + (z_2 - z_1)t]. Plugging in the points gives [x = 1 - 3t, y = 2 + t, z = 3 + 2t].
+
+Explanation:
+The parametric equations represent a line that passes through both given points.
+
+Common mistake note:
+A common mistake is to use the wrong sign when calculating the differences between coordinates.
+------------------------------------------------------------------------------
+
+Problem 3 (Intercept form):
+Find the parametric equations for the line with x-intercept 2, y-intercept 3, and z-intercept 4.
+A) [x = 2s, y = 3s, z = 4s]
+B) [x = t/2, y = t/3, z = t/4]
+C) [x = 2t, y = 3t, z = 4t]
+D) [x = s/2, y = s/3, z = s/4]
+Correct Answer: C
+
+Solution:
+The parametric equations for a line with intercepts at the axes can be written as [x = a*t, y = b*t, z = c*t], where a, b, and c are the intercepts. In this case, a=2, b=3, and c=4, so the equations are [x = 2t, y = 3t, z = 4t].
+
+Explanation:
+The parametric equations represent a line that passes through the given intercepts.
+
+Common mistake note:
+A common mistake is to forget to multiply each coordinate by t.
+------------------------------------------------------------------------------
+
+Problem 4 (Symmetric form):
+Find the parametric equations for the line passing through point (1, 2, 3) and symmetric with respect to the origin.
+A) [x = 2t, y = 4t, z = 6t]
+B) [x = t/2, y = t/4, z = t/6]
+C) [x = t - 1, y = 2t - 2, z = 3t - 3]
+D) [x = 1 - t, y = 2 - 2t, z = 3 - 3t]
+Correct Answer: D
+
+Solution:
+The parametric equations for a line symmetric with respect to the origin can be written as [x = x_0 - t*(x_0), y = y_0 - t*(y_0), z = z_0 - t*(z_0)], where (x_0, y_0, z_0) is any point on the line. In this case, using the point (1, 2, 3) gives [x = 1 - t, y = 2 - 2t, z = 3 - 3t].
+
+Explanation:
+The parametric equations represent a line that passes through the given point and is symmetric with respect to the origin.
+
+Common mistake note:
+A common mistake is to use the wrong sign when subtracting t from the coordinates.
+------------------------------------------------------------------------------
+
+Problem 5 (Intersection of planes):
+Find the parametric equations for the line formed by the intersection of the planes 2x + y - z = 1 and x - 3y + 2z = 4.
+A) [x = t, y = 2t + 1, z = t + 3]
+B) [x = t + 1, y = 2t - 1, z = t + 3]
+C) [x = t + 1, y = 2t + 1, z = t - 3]
+D) [x = t - 1, y = 2t + 1, z = t + 3]
+Correct Answer: D
+
+Solution:
+To find the parametric equations for the intersection of two planes, we can solve for one variable in terms of the other two and substitute it into either equation. Solving for z gives us z = x - y + 1. Substituting this into the second plane equation gives [x = t - 1, y = 2t + 1, z = t + 3].
+
+Explanation:
+The parametric equations represent a line that lies on both planes.
+
+Common mistake note:
+A common mistake is to mix up the signs when solving for z or substituting into the second plane equation.
+------------------------------------------------------------------------------
+
+Problem 6 (Intersection of lines):
+Find the parametric equations for the line formed by the intersection of the lines x = 2t + 1, y = t - 3, and z = 4t + 7.
+A) [x = s, y = s - 4, z = s + 5]
+B) [x = t + 1, y = t - 3, z = t + 7]
+C) [x = s + 1, y = s - 3, z = s + 7]
+D) [x = t - 1, y = t - 2, z = t + 4]
+Correct Answer: B
+
+Solution:
+To find the parametric equations for the intersection of three lines, we can equate corresponding coordinates and solve for one variable in terms of the others. In this case, x = s + 1, y = s - 3, z = s + 7 are equivalent to the given lines when s=t. Thus, the correct parametric equations are [x = t + 1, y = t - 3, z = t + 7].
+
+Explanation:
+The parametric equations represent a line that lies on all three given lines.
+
+Common mistake note:
+A common mistake is to use the wrong variable when equating coordinates.
+------------------------------------------------------------------------------
+
+Problem 7 (Intersection of line and plane):
+Find the parametric equations for the line formed by the intersection of the line x = 2t + 1, y = t - 3, z = 4t + 7 and the plane 3x - y + 2z = 10.
+A) [x = s, y = s - 4, z = s + 5]
+B) [x = t + 1, y = t - 3, z = t + 7]
+C) [x = s + 1, y = s - 3, z = s + 7]
+D) [x = t - 1, y = t - 2, z = t + 4]
+Correct Answer: D
+
+Solution:
+To find the parametric equations for the intersection of a line and a plane, we can substitute the line's parametric form into the plane equation and solve for t. Substituting x, y, and z from the given line into the plane equation gives [3(2t + 1) - (t - 3) + 2(4t + 7) = 10], which simplifies to [11t + 20 = 10]. Solving for t gives t=-1, and plugging this into the line equations gives [x = t - 1, y = t - 2, z = t + 4].
+
+Explanation:
+The parametric equations represent a line that lies on both the given line and plane.
+
+Common mistake note:
+A common mistake is to forget to solve for t after substituting the line's parametric form into the plane equation.
+------------------------------------------------------------------------------

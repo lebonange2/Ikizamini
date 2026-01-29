@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.6.3",
+  "objective_text": "Apply universal quantifier (∀)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":1",
+      "stem": "Which of the following statements represents a valid use of the universal quantifier (∀)?",
+      "choices": {
+        "A": "All dogs can fly.",
+        "B": "There exists a cat that does not like fish.",
+        "C": "For every integer x, x + 2 > x.",
+        "D": "Some numbers are not divisible by themselves."
+      },
+      "correct_choice": "C",
+      "solution": "The correct statement using the universal quantifier (∀) is 'For every integer x, x + 2 > x.' This states that the property holds true for all integers. Choice A is false because dogs cannot fly in reality. Choice B uses the existential quantifier (∃), not the universal one. Choice D involves a negation and thus implies the existential quantifier.",
+      "explanation": "The universal quantifier (∀) asserts that a property holds for all members of a set or domain. In this case, choice C correctly applies the universal quantifier to the statement about integers.",
+      "common_mistake_notes": "Common mistake: Confusing the universal quantifier (∀) with the existential quantifier (∃). The latter is used when stating that there exists at least one element in a set satisfying a property."
+    },
+    {
+      "id": ":2",
+      "stem": "Which of the following statements uses the universal quantifier (∀) correctly to describe all real numbers?",
+      "choices": {
+        "A": "There exists a number x such that x^2 = 0.",
+        "B": "For every x, there is y with y > x.",
+        "C": "All real numbers have an even integer multiple.",
+        "D": "No real number is both rational and irrational."
+      },
+      "correct_choice": "D",
+      "solution": "The correct statement using the universal quantifier (∀) is 'No real number is both rational and irrational.' This asserts that no member of the set of real numbers can be both rational and irrational at the same time. Choice A uses the existential quantifier, choice B does not involve a negation, and choice C is false since there are real numbers without an even integer multiple.",
+      "explanation": "The universal quantifier (∀) describes properties that hold for all elements in a set. In this case, choice D correctly applies the universal quantifier to exclude a specific property from holding for any real number.",
+      "common_mistake_notes": "Common mistake: Not recognizing that the negation of 'some numbers are both rational and irrational' is a valid use of the universal quantifier."
+    },
+    {
+      "id": ":3",
+      "stem": "Which of the following statements uses the universal quantifier (∀) to express that all circles have a specific property?",
+      "choices": {
+        "A": "There exists a circle with no center.",
+        "B": "For every circle, there is a line tangent to it.",
+        "C": "All circles have a circumference-to-diameter ratio of π.",
+        "D": "Some circles are not perfectly round."
+      },
+      "correct_choice": "C",
+      "solution": "The correct statement using the universal quantifier (∀) is 'All circles have a circumference-to-diameter ratio of π.' This property holds true for every circle. Choice A and D use existential quantifiers, and choice B does not express a negation or a specific property shared by all circles.",
+      "explanation": "The universal quantifier (∀) can be used to describe properties that are universally true for a class of objects, like circles in this case. Choice C correctly applies the universal quantifier to the circumference-to-diameter ratio.",
+      "common_mistake_notes": "Common mistake: Not recognizing that the property 'circumference- to-diameter ratio is π' applies to all circles."
+    },
+    {
+      "id": ":4",
+      "stem": "Which of the following statements uses the universal quantifier (∀) to express a true fact about integers?",
+      "choices": {
+        "A": "All even numbers are prime.",
+        "B": "For every integer x, there exists an integer y such that x + y = 0.",
+        "C": "No integer is both positive and negative.",
+        "D": "Some integers have more than two factors."
+      },
+      "correct_choice": "B",
+      "solution": "The correct statement using the universal quantifier (∀) is 'For every integer x, there exists an integer y such that x + y = 0.' This is true because for any integer x, its negative (-x) will add up to zero. Choice A is false (2 is even and prime), choice C does not use a quantifier, and choice D uses the existential quantifier.",
+      "explanation": "The universal quantifier (∀) can be used to express properties that hold for all elements in a set. In this case, choice B correctly applies the universal quantifier to state that every integer has an additive inverse.",
+      "common_mistake_notes": "Common mistake: Not recognizing that the property 'every integer has an additive inverse' is true for all integers."
+    },
+    {
+      "id": ":5",
+      "stem": "Which of the following statements uses the universal quantifier (∀) to express a fact about real numbers?",
+      "choices": {
+        "A": "All real numbers are rational.",
+        "B": "For every real number x, there exists a real number y such that xy = 1.",
+        "C": "No real number is both positive and negative at the same time.",
+        "D": "Some real numbers have decimal expansions that terminate."
+      },
+      "correct_choice": "C",
+      "solution": "The correct statement using the universal quantifier (∀) is 'No real number is both positive and negative at the same time.' This is true for all real numbers. Choice A is false, choice B uses the existential quantifier, and choice D does not express a negation or a specific property shared by all real numbers.",
+      "explanation": "The universal quantifier (∀) can be used to describe properties that are universally true for a class of objects, like real numbers in this case. Choice C correctly applies the universal quantifier to exclude a specific property from holding for any real number.",
+      "common_mistake_notes": "Common mistake: Not recognizing that no real number can simultaneously be both positive and negative."
+    },
+    {
+      "id": ":6",
+      "stem": "Which of the following statements uses the universal quantifier (∀) to express a true fact about triangles?",
+      "choices": {
+        "A": "All triangles have at least four sides.",
+        "B": "For every triangle, there exists a circle that can be inscribed within it.",
+        "C": "No triangle has all three angles equal to 90 degrees.",
+        "D": "Some triangles are not equilateral."
+      },
+      "correct_choice": "B",
+      "solution": "The correct statement using the universal quantifier (∀) is 'For every triangle, there exists a circle that can be inscribed within it.' This property holds true for all triangles. Choice A is false, choice C does not use a quantifier, and choice D uses the existential quantifier.",
+      "explanation": "The universal quantifier (∀) can be used to describe properties that are universally true for a class of objects, like triangles in this case. Choice B correctly applies the universal quantifier to state that every triangle has an inscribed circle.",
+      "common_mistake_notes": "Common mistake: Not recognizing that every triangle has an inscribed circle."
+    },
+    {
+      "id": ":7",
+      "stem": "Which of the following statements uses the universal quantifier (∀) to express a true fact about even numbers?",
+      "choices": {
+        "A": "All even numbers are prime.",
+        "B": "For every even number x, there exists an odd number y such that x + y = 0.",
+        "C": "No even number is both positive and negative.",
+        "D": "Some even numbers have more than two factors."
+      },
+      "correct_choice": "B",
+      "solution": "The correct statement using the universal quantifier (∀) is 'For every even number x, there exists an odd number y such that x + y = 0.' This is true because for any even number x, its negative (-x) will add up to zero. Choice A is false (2 is even and prime), choice C does not use a quantifier, and choice D uses the existential quantifier.",
+      "explanation": "The universal quantifier (∀) can be used to express properties that hold for all elements in a set. In this case, choice B correctly applies the universal quantifier to state that every even number has an odd additive inverse.",
+      "common_mistake_notes": "Common mistake: Not recognizing that the property 'every even number has an odd additive inverse' is true for all even numbers."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.2.15 Apply operations to AC circuit analysis
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.2 Complex Number Operations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+In an RLC series circuit, if the frequency of the AC voltage source is increased, what happens to the current through the circuit?
+A) Increases
+B) Decreases
+C) Remains constant
+D) Cannot be determined without additional information
+Correct Answer: A
+
+Solution:
+Increasing the frequency of an AC voltage source in a series RLC circuit causes the capacitive reactance to decrease, allowing more current to flow through the circuit. Therefore, the current increases.
+
+Explanation:
+The behavior of a series RLC circuit is determined by how the resistance (R), inductive reactance (XL), and capacitive reactance (XC) interact with the AC voltage source. At higher frequencies, XC decreases, reducing opposition to the flow of current.
+
+Common mistake note:
+A common mistake would be to choose 'C' or 'D', assuming that the current remains constant or cannot be determined without more information. However, understanding the relationship between frequency and capacitive reactance is crucial in this context.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+In a parallel RLC circuit, what happens to the resonant frequency when the capacitance is doubled?
+A) Increases by 2
+B) Remains constant
+C) Decreases by 1/√2
+D) Decreases by 2
+Correct Answer: C
+
+Solution:
+The resonant frequency (f) of a parallel RLC circuit is inversely proportional to the square root of capacitance (C). Doubling the capacitance halves the resonant frequency.
+
+Explanation:
+The resonant frequency in a parallel RLC circuit is given by f = 1 / (2π√(LC)). When capacitance is doubled, the resonant frequency decreases by √(1/2) or approximately 0.707, which is equivalent to 1/√2.
+
+Common mistake note:
+A common mistake would be to choose 'B', assuming that the resonant frequency remains constant. However, the relationship between capacitance and resonant frequency in a parallel circuit follows an inverse square root proportion.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+An AC voltage source with a frequency of 50 Hz is connected to a series RLC circuit with a resonance frequency of 100 Hz. What is the phase relationship between the current and voltage?
+A) In phase
+B) 90° out of phase
+C) 180° out of phase
+D) Cannot be determined without additional information
+Correct Answer: B
+
+Solution:
+At a frequency other than the resonant frequency, the current in a series RLC circuit lags behind the voltage by an amount proportional to the difference between the actual and resonant frequencies. At 50 Hz, which is half the resonance frequency, the phase shift will be approximately 90°.
+
+Explanation:
+In a series RLC circuit, the phase relationship between current and voltage depends on the relative magnitudes of XL and XC. At frequencies other than the resonant frequency, the phase difference is not 0° or 180° but somewhere in between.
+
+Common mistake note:
+A common mistake would be to choose 'A' or 'C', assuming that the current and voltage are either in phase or 180° out of phase. However, at a frequency different from the resonant frequency, the phase relationship is not as simple.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+In an RLC circuit with a capacitance of 2 μF and an inductance of 5 mH, what is the resonant frequency if the resistance is 10 Ω?
+A) 6.3 Hz
+B) 12.6 Hz
+C) 25.2 Hz
+D) 50.4 Hz
+Correct Answer: B
+
+Solution:
+The resonant frequency (f) of an RLC circuit is given by f = 1 / (2π√(LC)). Plugging in the values, we get f = 1 / (2π√(5 × 10^-3 × 2 × 10^-6)) ≈ 12.57 Hz.
+
+Explanation:
+The resonant frequency is independent of resistance and only depends on capacitance and inductance. Using the formula, we can calculate the resonant frequency directly.
+
+Common mistake note:
+A common mistake would be to include resistance in the calculation, assuming it affects the resonant frequency. However, resistance does not impact the resonant frequency; it only affects the damping of the circuit.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+In a parallel RLC circuit with an inductive reactance of 10 Ω and a capacitive reactance of 20 Ω, what is the total impedance at resonance?
+A) 10 Ω
+B) 14.14 Ω
+C) 20 Ω
+D) 30 Ω
+Correct Answer: A
+
+Solution:
+At resonance, capacitive reactance (XC) is equal to inductive reactance (XL), so the total impedance (Z) becomes Z = √(R^2 + 0^2) = R. Given R = 10 Ω, the total impedance at resonance is also 10 Ω.
+
+Explanation:
+At resonance, XL = XC, and the reactive components cancel each other out, leaving only the resistance in the circuit. The total impedance is then equal to the resistance alone.
+
+Common mistake note:
+A common mistake would be to choose 'B' or 'C', assuming that the total impedance is affected by the reactances without considering their relationship at resonance. At resonance, XL = XC, so the reactive components do not contribute to the total impedance.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+In an AC circuit with a voltage source of 120 V and a current of 5 A, what is the power factor if the phase angle between voltage and current is 30°?
+A) 0.87
+B) 0.96
+C) 1.00
+D) 1.41
+Correct Answer: A
+
+Solution:
+The power factor (PF) is given by the cosine of the phase angle between voltage and current. In this case, PF = cos(30°) ≈ 0.87.
+
+Explanation:
+The power factor measures how effectively electrical energy is being used in a circuit. It's the ratio of real power to apparent power and depends on the phase relationship between voltage and current.
+
+Common mistake note:
+A common mistake would be to choose 'C' or 'D', assuming that the power factor is either 1 (perfectly in phase) or higher than it should be. However, a 30° phase angle indicates a non-perfect power factor.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+In an RLC series circuit with a resistance of 5 Ω, capacitance of 2 μF, and inductance of 10 mH, what is the current if the AC voltage source has a peak amplitude of 10 V and frequency of 1 kHz?
+A) 1 A
+B) 1.41 A
+C) 2 A
+D) 2.83 A
+Correct Answer: B
+
+Solution:
+First, calculate the impedance (Z) using Z = √(R^2 + (XL - XC)^2). Then use Ohm's law to find current: I = V / Z. Given R = 5 Ω, XL = 2πfL ≈ 63.7 Ω, and XC = 1/(2πfC) ≈ 79.6 Ω, we get Z ≈ 14.14 Ω. The peak current is I = 10 V / 14.14 Ω ≈ 0.707 A or approximately 1.41 A.
+
+Explanation:
+To find the current in an RLC series circuit, we first calculate the impedance using the total reactance (XL - XC) and then apply Ohm's law to determine the current based on the voltage source.
+
+Common mistake note:
+A common mistake would be to neglect the difference between XL and XC when calculating the impedance. The phase relationship between inductive and capacitive reactances affects the overall impedance of the circuit.
+------------------------------------------------------------------------------

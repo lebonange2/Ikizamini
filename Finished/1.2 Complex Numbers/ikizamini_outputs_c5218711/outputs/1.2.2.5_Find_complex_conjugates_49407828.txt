@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.2.5 Find complex conjugates
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.2 Complex Number Operations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 ([1A]):
+What is the complex conjugate of the number 3 + 4i?
+A) 2 + 4i
+B) 3 - 4i
+C) 4 + 3i
+D) 7i
+Correct Answer: B
+
+Solution:
+The complex conjugate of a complex number a + bi is a - bi. For the given number 3 + 4i, its complex conjugate is 3 - 4i.
+
+Explanation:
+Complex conjugates are formed by changing the sign of the imaginary part while keeping the real part unchanged.
+
+Common mistake note:
+A common mistake is to switch both parts of the complex number, which would result in option A. Remember that only the imaginary part changes its sign.
+------------------------------------------------------------------------------
+
+Problem 2 ([1B]):
+Find the complex conjugate of (-2 + 5i)^2.
+A) 4 - 25i
+B) -9 + 20i
+C) 9 - 20i
+D) 25 - 4i
+Correct Answer: C
+
+Solution:
+First, calculate the square of (-2 + 5i): (-2 + 5i)^2 = (-2)^2 + 2(-2)(5i) + (5i)^2 = 4 - 20i + 25i^2. Since i^2 = -1, we have: 4 - 20i - 25 = -21 - 20i. Now find the complex conjugate of this result: -21 + 20i.
+
+Explanation:
+First square the given complex number and then take the complex conjugate of the result.
+
+Common mistake note:
+A common mistake is to forget to square both parts of the original complex number or to incorrectly apply the i^2 = -1 rule. This could lead to answers like A, B, or D.
+------------------------------------------------------------------------------
+
+Problem 3 ([1C]):
+What is the complex conjugate of (3 + 4i)/(5 - 6i)?
+A) (3 + 4i)/(5 + 6i)
+B) (3 - 4i)/(5 + 6i)
+C) (18 - 2i)/(29)
+D) (18 + 2i)/(29)
+Correct Answer: B
+
+Solution:
+To find the complex conjugate of a fraction, take the complex conjugate of both the numerator and the denominator: (3 - 4i)/(5 + 6i).
+
+Explanation:
+When dealing with fractions, you must apply the conjugate to both parts of the fraction.
+
+Common mistake note:
+A common mistake is to forget to take the conjugate of both the numerator and the denominator, which could result in answers like A, C, or D.
+------------------------------------------------------------------------------
+
+Problem 4 ([1D]):
+Find the complex conjugate of (2 - 3i)/(4 + 5i) * (6 + 7i).
+A) (18 - 29i)/(20 + 29i)
+B) (18 + 29i)/(20 - 29i)
+C) (18 + 29i)/(20 + 29i)
+D) (18 - 29i)/(20 - 29i)
+Correct Answer: A
+
+Solution:
+First, multiply the complex numbers: (2 - 3i)(6 + 7i) = 12 + 14i - 18i - 21i^2. Since i^2 = -1, we have: 12 - 4i - 21(-1) = 33 - 4i. Now multiply by the second complex number: (33 - 4i)/(4 + 5i). To find the conjugate of this fraction, take the conjugate of both parts: (33 + 4i)/(4 - 5i).
+
+Explanation:
+Multiply the complex numbers first and then take the complex conjugate of the result.
+
+Common mistake note:
+A common mistake is to forget to multiply the complex numbers before taking the conjugates, or to incorrectly apply the i^2 = -1 rule. This could lead to answers like B, C, or D.
+------------------------------------------------------------------------------
+
+Problem 5 ([1E]):
+Find the complex conjugate of the expression (3 + 4i)^3.
+A) 81 - 204i
+B) 81 + 204i
+C) 207 - 156i
+D) 207 + 156i
+Correct Answer: C
+
+Solution:
+First, calculate (3 + 4i)^3: (3 + 4i)^3 = 3^3 + 3(3^2)(4i) + 3(3)(4i)^2 + (4i)^3. Since i^2 = -1 and i^3 = -i, we have: 27 + 108i - 144 - 64i = -15 - 44i. Now find the complex conjugate of this result: -15 + 44i.
+
+Explanation:
+First raise the given complex number to the power, then take the complex conjugate of the result.
+
+Common mistake note:
+A common mistake is to forget to cube both parts of the original complex number or to incorrectly apply the i^2 = -1 and i^3 = -i rules. This could lead to answers like A, B, or D.
+------------------------------------------------------------------------------
+
+Problem 6 ([1F]):
+Find the complex conjugate of (4 + 5i)/(6 - 7i) / (8 + 9i).
+A) (32 - 44i)/(100 + 117i)
+B) (32 + 44i)/(100 - 117i)
+C) (32 + 44i)/(100 + 117i)
+D) (32 - 44i)/(100 - 117i)
+Correct Answer: A
+
+Solution:
+First, divide the complex numbers: (4 + 5i)/(6 - 7i) / (8 + 9i) = (4 + 5i)(8 - 9i) / (6 - 7i)(8 + 9i). Simplify this expression: (32 - 40i - 36i + 45i^2) / (48 - 56i + 56i - 63i^2). Since i^2 = -1, we have: (-3 + 76i) / (48 + 63). Simplify further: (76i - 3) / 111. Now take the complex conjugate of this result: (76i + 3) / 111.
+
+Explanation:
+Divide the complex numbers first and then take the complex conjugate of the result.
+
+Common mistake note:
+A common mistake is to forget to divide the complex numbers before taking the conjugates, or to incorrectly apply the i^2 = -1 rule. This could lead to answers like B, C, or D.
+------------------------------------------------------------------------------
+
+Problem 7 ([1G]):
+Find the complex conjugate of (7 + 6i)/(9 - 8i) + (5 - 4i)/(3 + 2i).
+A) (10 - 2i)/(12 + 10i)
+B) (10 + 2i)/(12 - 10i)
+C) (10 + 2i)/(12 + 10i)
+D) (10 - 2i)/(12 - 10i)
+Correct Answer: B
+
+Solution:
+First, add the complex fractions: (7 + 6i)(3 + 2i) / (9 - 8i)(3 + 2i) + (5 - 4i)(9 - 8i) / (3 + 2i)(9 - 8i). Simplify each fraction: (21 + 14i + 18i + 12i^2) / (27 + 18i - 24i - 16i^2) + (45 - 36i - 32i + 32i^2) / (27 + 18i - 24i - 16i^2). Since i^2 = -1, we have: (-9 + 32i) / (43 + 8i) + (13 - 68i) / (43 + 8i). Combine the fractions: ((-9 + 32i) + (13 - 68i)) / (43 + 8i) = (4 - 36i) / (43 + 8i). Now take the complex conjugate of this result: (4 + 36i) / (43 - 8i).
+
+Explanation:
+Add the complex fractions first and then take the complex conjugate of the result.
+
+Common mistake note:
+A common mistake is to forget to add the complex fractions before taking the conjugates, or to incorrectly apply the i^2 = -1 rule. This could lead to answers like A, C, or D.
+------------------------------------------------------------------------------

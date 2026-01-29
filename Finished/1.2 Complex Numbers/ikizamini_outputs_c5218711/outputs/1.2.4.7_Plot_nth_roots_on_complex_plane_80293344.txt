@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.4.7 Plot nth roots on complex plane
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.4 Powers and Roots of Complex Numbers
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Incremental Difficulty - Easy):
+Find the cube root of (-8 + 0i) in polar form.
+A) (2rac{π}{3}, 2)
+B) (4rac{π}{3}, 2)
+C) (2rac{π}{3}, -2)
+D) (4rac{π}{3}, -2)
+Correct Answer: A
+
+Solution:
+The polar form of a complex number is (r, θ), where r is the modulus and θ is the argument. For (-8 + 0i), r = 8 and θ = π since it lies on the negative real axis. To find the cube root, we divide the angle by 3: π / 3 = 2π/3. The modulus is the cube root of the original modulus: (8)^(1/3) = 2. So, the polar form is (2rac{π}{3}, 2).
+
+Explanation:
+The correct answer has the correct angle and modulus for the cube root.
+
+Common mistake note:
+A common mistake would be to use θ = 0 because of the absence of an imaginary part. However, the argument must account for the position on the complex plane.
+------------------------------------------------------------------------------
+
+Problem 2 (Incremental Difficulty - Medium):
+Find the fourth root of (1 + i√3) in rectangular form.
+A) (1 + rac{1}{2}irac{oot 4 rom 3}{2})
+B) (1 - rac{1}{2}irac{oot 4 rom 3}{2})
+C) (1 + irac{oot 4 rom 3}{2})
+D) (1 - irac{oot 4 rom 3}{2})
+Correct Answer: A
+
+Solution:
+The polar form of (1 + i√3) is (2, π/3). To find the fourth root, we divide the angle by 4: π / 3 / 4 = π / 12. The modulus is raised to the power of 1/4: (2)^(1/4) = rac{oot 4  rom 2}{2}. Using Euler's formula, e^(iπ/12) = cos(π/12) + i*sin(π/12). The rectangular form is (rac{oot 4  rom 2}{2}cos(π/12), rac{oot 4  rom 2}{2}sin(π/12)) = (1 + rac{1}{2}irac{oot 4  rom 3}{2}).
+
+Explanation:
+The correct answer has the correct rectangular form after converting from polar and applying Euler's formula.
+
+Common mistake note:
+A common mistake would be to use only the cosine part of Euler's formula, neglecting the sine part. Both cosine and sine are necessary for a complete representation in rectangular form.
+------------------------------------------------------------------------------
+
+Problem 3 (Incremental Difficulty - Easy):
+Plot the two square roots of (3 + 4i) on the complex plane.
+A) (1+2i), (-1-2i)
+B) (2+1i), (-2-1i)
+C) (1-2i), (-1+2i)
+D) (2-1i), (-2+1i)
+Correct Answer: A
+
+Solution:
+The modulus of (3 + 4i) is √(3^2 + 4^2) = 5. The argument is arctan(4/3) ≈ 0.93 radians or 53.13 degrees. The two square roots are obtained by adding and subtracting the angle by π/2: (5, 0.93 ± π/2). Converting to rectangular form gives (1+2i) and (-1-2i).
+
+Explanation:
+The correct answer correctly plots the two square roots with the appropriate angles and moduli.
+
+Common mistake note:
+A common mistake would be to plot only one root, forgetting that there are two distinct square roots for a complex number.
+------------------------------------------------------------------------------
+
+Problem 4 (Incremental Difficulty - Medium):
+Find the fifth root of (-32) in rectangular form.
+A) (1 + irac{oot 5 rom 3}{2})
+B) (1 - irac{oot 5 rom 3}{2})
+C) (-1 + irac{oot 5 rom 3}{2})
+D) (-1 - irac{oot 5 rom 3}{2})
+Correct Answer: C
+
+Solution:
+The polar form of (-32) is (32, π). To find the fifth root, we divide the angle by 5: π / 5 = 0.628 radians or 37.2°. The modulus is raised to the power of 1/5: (32)^(1/5) = 2. Using Euler's formula, e^(iπ/5) = cos(π/5) + i*sin(π/5). The rectangular form is (2cos(π/5), -2sin(π/5)) = (-1 + irac{oot 5 rom 3}{2}).
+
+Explanation:
+The correct answer has the correct rectangular form after converting from polar and applying Euler's formula.
+
+Common mistake note:
+A common mistake would be to use only the cosine part of Euler's formula, neglecting the sine part. Both cosine and sine are necessary for a complete representation in rectangular form.
+------------------------------------------------------------------------------
+
+Problem 5 (Incremental Difficulty - Easy):
+Plot the three cube roots of (-8) on the complex plane.
+A) (-2, 0), (1+rac{2oot 3 rom 2}{3}, 1-rac{2oot 3 rom 2}{3}), (1-rac{2oot 3 rom 2}{3}, -1+rac{2oot 3 rom 2}{3})
+B) (-2, 0), (-1+rac{2oot 3 rom 2}{3}, -1-rac{2oot 3 rom 2}{3}), (1-rac{2oot 3 rom 2}{3}, 1+rac{2oot 3 rom 2}{3})
+C) (-2, 0), (-1-rac{2oot 3 rom 2}{3}, -1+rac{2oot 3 rom 2}{3}), (1+rac{2oot 3 rom 2}{3}, 1-rac{2oot 3 rom 2}{3})
+D) (-2, 0), (1+rac{2oot 3 rom 2}{3}, -1-rac{2oot 3 rom 2}{3}), (-1-rac{2oot 3 rom 2}{3}, 1+rac{2oot 3 rom 2}{3})
+Correct Answer: A
+
+Solution:
+The polar form of (-8) is (8, π). To find the cube roots, we divide the angle by 3: π / 3 = 120°. The modulus is raised to the power of 1/3: (8)^(1/3) = 2. The three cube roots are (2cos(120°), 2sin(120°)), (2cos(240°), 2sin(240°)), and (2cos(360°), 2sin(360°)). In rectangular form, these are (-2, 0), (1+rac{2oot 3 rom 2}{3}, 1-rac{2oot 3 rom 2}{3}), and (1-rac{2oot 3 rom 2}{3}, -1+rac{2oot 3 rom 2}{3}).
+
+Explanation:
+The correct answer correctly plots the three cube roots with the appropriate angles and moduli.
+
+Common mistake note:
+A common mistake would be to plot only one root, forgetting that there are three distinct cube roots for a complex number.
+------------------------------------------------------------------------------
+
+Problem 6 (Incremental Difficulty - Medium):
+Find the square root of (4 + 3i) in polar form.
+A) (5rac{π}{6}, oot 2 rom 7)
+B) (5rac{π}{6}, -oot 2 rom 7)
+C) (1rac{π}{6}, oot 2 rom 7)
+D) (1rac{π}{6}, -oot 2 rom 7)
+Correct Answer: A
+
+Solution:
+The polar form of (4 + 3i) is (√(4^2 + 3^2), arctan(3/4)) = (√25, 0.643 radians or 36.87°). To find the square root, we divide the angle by 2: 0.643 / 2 ≈ 0.3215 radians or 18.435°. The modulus is raised to the power of 1/2: √(√25) = √5 = oot 2 rom 5. So, the polar form is (5rac{π}{6}, oot 2 rom 7).
+
+Explanation:
+The correct answer has the correct angle and modulus for the square root.
+
+Common mistake note:
+A common mistake would be to use only one of the two possible angles when dividing by 2, neglecting that there are two distinct square roots with opposite arguments.
+------------------------------------------------------------------------------
+
+Problem 7 (Incremental Difficulty - Easy):
+Plot the four fourth roots of (16) on the complex plane.
+A) (2, 0), (1+rac{oot 4 rom 2}{2}, 1-rac{oot 4 rom 2}{2}), (1-rac{oot 4 rom 2}{2}, -1+rac{oot 4 rom 2}{2}), (-2, 0)
+B) ...
+C) ...
+D) ...
+Correct Answer: A
+
+Solution:
+The polar form of (16) is (16, 0). To find the fourth roots, we divide the angle by 4: 0 / 4 = 0. The modulus is raised to the power of 1/4: (16)^(1/4) = 2. The four fourth roots are (2cos(0), 2sin(0)), (2cos(90°), 2sin(90°)), (2cos(180°), 2sin(180°)), and (2cos(270°), 2sin(270°)). In rectangular form, these are (2, 0), (1+rac{oot 4 rom 2}{2}, 1-rac{oot 4 rom 2}{2}), (1-rac{oot 4 rom 2}{2}, -1+rac{oot 4 rom 2}{2}), and (-2, 0).
+
+Explanation:
+The correct answer correctly plots the four fourth roots with the appropriate angles and moduli.
+
+Common mistake note:
+A common mistake would be to plot only one root, forgetting that there are four distinct fourth roots for a complex number.
+------------------------------------------------------------------------------

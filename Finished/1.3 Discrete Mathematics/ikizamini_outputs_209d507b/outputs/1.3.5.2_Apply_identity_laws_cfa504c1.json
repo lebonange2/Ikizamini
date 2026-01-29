@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.5.2",
+  "objective_text": "Apply identity laws",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Simplify the expression: 5 + 0",
+      "choices": {
+        "A": "5",
+        "B": "0",
+        "C": "-5",
+        "D": "Cannot be simplified"
+      },
+      "correct_choice": "A",
+      "solution": "The identity law for addition states that any number added to zero remains unchanged. So, 5 + 0 = 5.",
+      "explanation": "Identity laws preserve the value of an expression when a specific operation is applied. In this case, applying the addition identity with 0 results in the original number.",
+      "common_mistake_notes": "Common mistake: Choosing B (0) or C (-5). This happens when not recognizing that adding zero to any number does not change its value."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Simplify the expression: 7 × 1",
+      "choices": {
+        "A": "7",
+        "B": "1",
+        "C": "0",
+        "D": "Cannot be simplified"
+      },
+      "correct_choice": "A",
+      "solution": "The identity law for multiplication states that any number multiplied by one remains unchanged. So, 7 × 1 = 7.",
+      "explanation": "Identity laws preserve the value of an expression when a specific operation is applied. In this case, applying the multiplication identity with 1 results in the original number.",
+      "common_mistake_notes": "Common mistake: Choosing B (1) or C (0). This happens when not recognizing that multiplying any number by one does not change its value."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Simplify the expression: (-2)^0",
+      "choices": {
+        "A": "1",
+        "B": "-2",
+        "C": "0",
+        "D": "Cannot be simplified"
+      },
+      "correct_choice": "A",
+      "solution": "The identity law for exponentiation with 0 states that any non-zero number raised to the power of zero is equal to one. So, (-2)^0 = 1.",
+      "explanation": "Identity laws apply to exponents as well; a non-zero number raised to the power of zero equals one.",
+      "common_mistake_notes": "Common mistake: Choosing B (-2) or C (0). This happens when not remembering that any non-zero number raised to the power of zero is 1."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Simplify the expression: 8 - 8",
+      "choices": {
+        "A": "0",
+        "B": "8",
+        "C": "-8",
+        "D": "Cannot be simplified"
+      },
+      "correct_choice": "A",
+      "solution": "The identity law for subtraction states that any number subtracted by itself equals zero. So, 8 - 8 = 0.",
+      "explanation": "Identity laws also apply to subtraction; a number subtracted from itself results in zero.",
+      "common_mistake_notes": "Common mistake: Choosing B (8) or C (-8). This happens when not recognizing that subtracting a number from itself gives zero."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Simplify the expression: 4 ÷ (-1/4)",
+      "choices": {
+        "A": "1",
+        "B": "-1",
+        "C": "0",
+        "D": "Cannot be simplified"
+      },
+      "correct_choice": "B",
+      "solution": "The identity law for division states that any number divided by its reciprocal is equal to 1. So, 4 ÷ (-1/4) = -1.",
+      "explanation": "When a number is divided by its reciprocal (the fraction with flipped numerator and denominator), the result is always 1, unless the number is zero.",
+      "common_mistake_notes": "Common mistake: Choosing A (1). This happens when not recognizing that dividing by the reciprocal results in -1 for non-zero numbers."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Simplify the expression: (-5)^2",
+      "choices": {
+        "A": "-5",
+        "B": "5",
+        "C": "25",
+        "D": "Cannot be simplified"
+      },
+      "correct_choice": "C",
+      "solution": "The identity law for squaring states that any number squared is a positive value. So, (-5)^2 = 25.",
+      "explanation": "When a negative number is squared, the result is always positive because squaring removes the negative sign.",
+      "common_mistake_notes": "Common mistake: Choosing A (-5). This happens when not remembering that squaring a negative number makes it positive."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Simplify the expression: 9 ÷ (1/9)",
+      "choices": {
+        "A": "1",
+        "B": "9",
+        "C": "81",
+        "D": "Cannot be simplified"
+      },
+      "correct_choice": "A",
+      "solution": "The identity law for division states that any number divided by its reciprocal is equal to 1. So, 9 ÷ (1/9) = 1.",
+      "explanation": "When a number is divided by its reciprocal, the result is always 1, unless the number is zero.",
+      "common_mistake_notes": "Common mistake: Choosing B (9). This happens when not recognizing that dividing by the reciprocal results in 1 for non-zero numbers."
+    }
+  ]
+}

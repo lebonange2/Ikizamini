@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.6.8 Use nested quantifiers
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.6 Predicates and Quantifiers
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (One):
+Which of the following statements is true about the expression ∀x∃y( P(x) ∧ Q(y))?
+A) For every x, there exists a y such that P(x) and Q(y) are both true.
+B) There exists a y such that for every x, P(x) and Q(y) are both false.
+C) For every x, there exists a y such that either P(x) or Q(y) is true.
+D) There exists a y such that for some x, P(x) and Q(y) are both true.
+Correct Answer: A
+
+Solution:
+The expression ∀x∃y( P(x) ∧ Q(y)) means 'for every x, there exists a y such that P(x) is true and Q(y) is also true.' This directly corresponds to answer choice A.
+
+Explanation:
+Nested quantifiers involve one quantifier (∀ or ∃) inside another. In this case, ∀x (for all x) is nested within ∃y (there exists a y). The inner quantifier determines the scope of the outer quantifier.
+
+Common mistake note:
+A common mistake would be to choose B, which suggests that there's a single y for which P(x) and Q(y) are both false for all x. However, this is not what the nested quantifiers convey; they state that for each x, there's a different y that makes the conjunction true.
+------------------------------------------------------------------------------
+
+Problem 2 (Two):
+Which of the following statements is equivalent to ¬∀x∃y( R(x) → ¬S(y))?
+A) There exists an x such that for every y, R(x) and S(y) are both true.
+B) For every x, there exists a y such that R(x) implies S(y).
+C) For some x, it is not the case that for all y, R(x) implies ¬S(y).
+D) There exists an x such that for no y, R(x) implies ¬S(y).
+Correct Answer: C
+
+Solution:
+The negation of ¬∀x∃y( R(x) → ¬S(y)) is equivalent to ∃x∀y(¬R(x) ∨ S(y)). This means 'there exists an x such that for all y, either R(x) is false or S(y) is true.' Which directly corresponds to answer choice C.
+
+Explanation:
+When negating a nested quantifier, the outer quantifier flips and the inner quantifier stays the same. The implication (→) also flips when negated inside the scope of the inner quantifier.
+
+Common mistake note:
+A common mistake would be to choose A, which suggests that for some x, R(x) and S(y) are both true for all y. However, this is not equivalent to the original statement; it does not account for the possibility that R(x) might be false.
+------------------------------------------------------------------------------
+
+Problem 3 (Three):
+What does the expression ∃x∀y( P(x) → Q(y)) state?
+A) There exists an x such that for every y, if P(x), then Q(y).
+B) For every y, there exists an x such that if Q(y), then P(x).
+C) For some x, it is not the case that for all y, if P(x) is true, then Q(y) must be false.
+D) There exists an x such that for no y, if P(x), then Q(y) is true.
+Correct Answer: A
+
+Solution:
+The expression ∃x∀y( P(x) → Q(y)) states 'there exists an x such that for every y, if P(x) is true, then Q(y) must also be true.' This directly corresponds to answer choice A.
+
+Explanation:
+In this nested quantifier, the inner quantifier (∀y) applies to the entire conditional (P(x) → Q(y)), while the outer quantifier (∃x) states that there exists at least one x for which the condition holds.
+
+Common mistake note:
+A common mistake would be to choose B, which suggests a different order of quantification and implication. However, this is not equivalent to the original statement; it implies that for each y, there's an x such that if Q(y), then P(x), which is not what the nested quantifiers convey.
+------------------------------------------------------------------------------
+
+Problem 4 (Four):
+Which of the following statements is true about the expression ∀x∃y( ¬P(x) ∨ R(y))?
+A) For every x, there exists a y such that either P(x) is false or R(y) is true.
+B) There exists a y such that for every x, P(x) and R(y) are both true.
+C) For some x, it is not the case that for all y, if P(x), then ¬R(y).
+D) There exists an x such that for no y, either P(x) is false or R(y) is true.
+Correct Answer: A
+
+Solution:
+The expression ∀x∃y( ¬P(x) ∨ R(y)) means 'for every x, there exists a y such that either P(x) is false or R(y) is true.' This directly corresponds to answer choice A.
+
+Explanation:
+Nested quantifiers involve one quantifier (∀ or ∃) inside another. In this case, ∀x (for all x) is nested within ∃y (there exists a y). The inner quantifier determines the scope of the outer quantifier.
+
+Common mistake note:
+A common mistake would be to choose B, which suggests that there's a single y for which P(x) and R(y) are both true for all x. However, this is not what the nested quantifiers convey; they state that for each x, there's a different y that makes the disjunction true.
+------------------------------------------------------------------------------
+
+Problem 5 (Five):
+Which of the following statements is equivalent to ¬∃x∀y( P(x) ∧ Q(y))?
+A) For every x, there exists a y such that P(x) and Q(y) are both false.
+B) There exists an x such that for some y, P(x) and Q(y) are both true.
+C) For all x, it is not the case that there exists a y such that P(x) and Q(y) are both true.
+D) There exists an x such that for every y, P(x) or Q(y) is false.
+Correct Answer: C
+
+Solution:
+The negation of ¬∃x∀y( P(x) ∧ Q(y)) is equivalent to ∀x¬∃y( P(x) ∧ Q(y)). This means 'for all x, it is not the case that there exists a y such that P(x) and Q(y) are both true.' Which directly corresponds to answer choice C.
+
+Explanation:
+When negating a nested quantifier, the outer quantifier flips and the inner quantifier stays the same. In this case, the inner quantifier is ¬∃y, which means 'it is not the case that there exists a y such that.'
+
+Common mistake note:
+A common mistake would be to choose A, which suggests that for some x, P(x) and Q(y) are both false for all y. However, this is not equivalent to the original statement; it does not account for the possibility that there might be an x for which a corresponding y exists such that both P(x) and Q(y) are true.
+------------------------------------------------------------------------------
+
+Problem 6 (Six):
+What does the expression ∃x∀y( ¬Q(y) → ¬P(x)) state?
+A) There exists an x such that for every y, if Q(y) is false, then P(x) must also be false.
+B) For every y, there exists an x such that if P(x), then Q(y) is true.
+C) For some x, it is not the case that for all y, if Q(y) is true, then P(x) must be false.
+D) There exists an x such that for no y, if Q(y) is false, then P(x) is true.
+Correct Answer: A
+
+Solution:
+The expression ∃x∀y( ¬Q(y) → ¬P(x)) states 'there exists an x such that for every y, if Q(y) is false, then P(x) must also be false.' This directly corresponds to answer choice A.
+
+Explanation:
+In this nested quantifier, the inner quantifier (∀y) applies to the entire conditional (¬Q(y) → ¬P(x)), while the outer quantifier (∃x) states that there exists at least one x for which the condition holds.
+
+Common mistake note:
+A common mistake would be to choose B, which suggests a different order of quantification and implication. However, this is not equivalent to the original statement; it implies that for each y, there's an x such that if P(x), then Q(y) is true, which is not what the nested quantifiers convey.
+------------------------------------------------------------------------------
+
+Problem 7 (Seven):
+Which of the following statements is true about the expression ∀x∃y( P(x) ∨ ¬Q(y))?
+A) For every x, there exists a y such that P(x) or Q(y) is false.
+B) There exists a y such that for every x, P(x) and Q(y) are both true.
+C) For some x, it is not the case that for all y, if P(x), then Q(y) must be true.
+D) There exists an x such that for no y, either P(x) or Q(y) is false.
+Correct Answer: C
+
+Solution:
+The expression ∀x∃y( P(x) ∨ ¬Q(y)) means 'for every x, there exists a y such that either P(x) is true or Q(y) is false.' This directly corresponds to answer choice C.
+
+Explanation:
+Nested quantifiers involve one quantifier (∀ or ∃) inside another. In this case, ∀x (for all x) is nested within ∃y (there exists a y). The inner quantifier determines the scope of the outer quantifier.
+
+Common mistake note:
+A common mistake would be to choose A, which suggests that for some x, P(x) or Q(y) is false for all y. However, this is not what the nested quantifiers convey; they state that for each x, there's a different y that makes the disjunction true.
+------------------------------------------------------------------------------

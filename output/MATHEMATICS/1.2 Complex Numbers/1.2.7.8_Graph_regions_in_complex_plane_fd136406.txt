@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.2.7.8 Graph regions in complex plane
+==============================================================================
+Context: 1.2 Complex Numbers > 1.2.7 Argand Diagrams and Geometric Interpretation
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (Asymptotes):
+The function f(z) = (z^2 - 4)/(z + 2) has a vertical asymptote at z =?
+A) -4
+B) 0
+C) 2
+D) ∞
+Correct Answer: C
+
+Solution:
+The function f(z) has a vertical asymptote where the denominator is zero. Thus, we set the denominator equal to zero and solve for z: z + 2 = 0, which gives us z = -2.
+
+Explanation:
+Vertical asymptotes occur at values of z that make the denominator zero.
+
+Common mistake note:
+A common mistake is to choose A or B because they are factors of the quadratic term in the numerator. However, these do not affect the location of the vertical asymptote, which is determined by the denominator.
+------------------------------------------------------------------------------
+
+Problem 2 (Holes):
+The function g(z) = (z^3 - 1)/(z - 1)^2 has a hole at z =?
+A) -1
+B) 0
+C) 1
+D) ∞
+Correct Answer: C
+
+Solution:
+The function g(z) has a hole where the denominator is zero, but it's raised to an even power (in this case 2), which means the singularity is removable. So, we look for values of z that make the denominator zero: z - 1 = 0, giving us z = 1.
+
+Explanation:
+Holes occur when a factor in the denominator is squared or raised to an even power, making the singularity removable.
+
+Common mistake note:
+A common mistake is to choose A or B because they are related to the cubic term in the numerator. However, these do not affect the location of the hole, which is determined by the denominator.
+------------------------------------------------------------------------------
+
+Problem 3 (Zeros):
+The function h(z) = z^3 + 8 has a zero at z =?
+A) -2
+B) 0
+C) 2
+D) ∞
+Correct Answer: A
+
+Solution:
+To find the zeros of h(z), we set it equal to zero and solve for z: z^3 + 8 = 0. Factoring out 8 gives us (z + 2)(z^2 - 2z + 4) = 0. The only real root is z = -2.
+
+Explanation:
+Zeros of a function are the values of z that make the function equal to zero.
+
+Common mistake note:
+A common mistake is to choose B or C because they are related to the quadratic factor in the expanded form, but those roots are complex. The question asks for real zeros only.
+------------------------------------------------------------------------------
+
+Problem 4 (Domain):
+The domain of the function j(z) = 1/sqrt(4 - z^2) is all values of z such that z^2 <?
+A) 0
+B) 1
+C) 2
+D) 4
+Correct Answer: D
+
+Solution:
+The domain of j(z) depends on the radicand being greater than zero: 4 - z^2 > 0, which implies z^2 < 4.
+
+Explanation:
+The domain of a function is the set of all possible input values (z in this case) for which the function is defined.
+
+Common mistake note:
+A common mistake is to choose A or B because they are factors of 4, but they do not represent the correct inequality. The correct bound for z^2 is 4.
+------------------------------------------------------------------------------
+
+Problem 5 (Range):
+The range of the function k(z) = sin(z) on the interval [0, 2π] is the set {y | -1 ≤ y ≤?
+A) 0
+B) 1
+C) π
+D) 2π
+Correct Answer: B
+
+Solution:
+The range of k(z) = sin(z) on the interval [0, 2π] is the set {y | -1 ≤ y ≤ 1}, as the sine function oscillates between -1 and 1.
+
+Explanation:
+The range of a function is the set of all possible output values (y in this case) for the given domain.
+
+Common mistake note:
+A common mistake is to choose A or C because they are related to the interval bounds, but they do not represent the correct range of the sine function.
+------------------------------------------------------------------------------
+
+Problem 6 (Periodicity):
+The function l(z) = cos(2z) has a period of ? π
+A) 1/2
+B) 1
+C) 2
+D) 4
+Correct Answer: B
+
+Solution:
+The period of l(z) = cos(bz) is 2π/b. For l(z) = cos(2z), b = 2, so the period is 2π/2 = π.
+
+Explanation:
+The period of a trigonometric function is the length of one complete cycle of its graph.
+
+Common mistake note:
+A common mistake is to choose A or C because they are related to the coefficient in front of z, but they do not give the correct period.
+------------------------------------------------------------------------------
+
+Problem 7 (Exponential Growth):
+The function m(z) = 3^z has an exponential growth rate of?
+A) ln(2)
+B) ln(3)
+C) ln(4)
+D) ln(5)
+Correct Answer: B
+
+Solution:
+The growth rate of an exponential function m(z) = a^z is the base logarithm, ln(a). For m(z) = 3^z, a = 3, so the growth rate is ln(3).
+
+Explanation:
+The growth rate of an exponential function with base a is given by ln(a), which measures the change in output per unit increase in input.
+
+Common mistake note:
+A common mistake is to choose A or C because they are related to other logarithms, but they do not represent the correct growth rate for the base 3.
+------------------------------------------------------------------------------

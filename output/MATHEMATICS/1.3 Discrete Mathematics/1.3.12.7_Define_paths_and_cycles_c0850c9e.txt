@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.12.7 Define paths and cycles
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.12 Graph Theory Basics
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (And Path vs Cycle):
+Which of the following is a correct statement about paths and cycles in a graph?
+A) A path always starts and ends at different vertices.
+B) A cycle has no repeated vertices except for the starting and ending vertex.
+C) A path can have repeated vertices but not repeated edges.
+D) A cycle is a path with at least one repeated edge.
+Correct Answer: D
+
+Solution:
+A cycle is a path that starts and ends at the same vertex and has at least one repeated edge. Option A is incorrect because paths do not necessarily start and end at different vertices. Option B is wrong because cycles have repeated vertices other than the starting and ending vertex. Option C is false because paths cannot have repeated edges.
+
+Explanation:
+This question tests understanding of the basic definitions of paths and cycles in graph theory.
+
+Common mistake note:
+Common mistake: Confusing a path with a cycle, thinking that paths can start and end at the same vertex or cycles do not allow repeated vertices other than the starting and ending one.
+------------------------------------------------------------------------------
+
+Problem 2 (Directed vs Undirected):
+In an undirected graph, which of the following statements is true about a path between two vertices?
+A) The path must be a straight line.
+B) Each edge can only be traversed in one direction.
+C) There can be multiple distinct paths between the vertices.
+D) Every vertex on the path must have an even degree.
+Correct Answer: C
+
+Solution:
+In an undirected graph, there can be multiple distinct paths between two vertices. Option A is incorrect because paths in graphs do not necessarily follow straight lines. Option B is false because edges in an undirected graph can be traversed in both directions. Option D is wrong because vertex degree has no direct relation to the existence of a path.
+
+Explanation:
+This question assesses understanding of path properties in undirected graphs.
+
+Common mistake note:
+Common mistake: Assuming that paths in undirected graphs follow specific rules, such as straight lines or single-direction edges.
+------------------------------------------------------------------------------
+
+Problem 3 (Directed Cycle):
+In a directed graph, which of the following statements is true about cycles?
+A) A cycle must have an odd number of vertices.
+B) A cycle can have parallel edges between two vertices.
+C) Every vertex in the cycle must have both incoming and outgoing edges.
+D) There can be multiple disconnected cycles in a directed graph.
+Correct Answer: D
+
+Solution:
+In a directed graph, there can be multiple disconnected cycles. Option A is incorrect because cycles do not necessarily have an odd number of vertices. Option B is false because parallel edges are not allowed in cycles (they would form a loop instead). Option C is wrong because it's possible for a vertex in a cycle to only have incoming or outgoing edges.
+
+Explanation:
+This question tests knowledge of cycles in directed graphs.
+
+Common mistake note:
+Common mistake: Assuming that cycles in directed graphs follow specific rules, such as having an odd number of vertices or requiring both incoming and outgoing edges for each vertex.
+------------------------------------------------------------------------------
+
+Problem 4 (Path Properties):
+In a simple graph, what is the minimum number of edges required to form a path between two vertices?
+A) 1
+B) 2
+C) 3
+D) 4
+Correct Answer: B
+
+Solution:
+A path in a simple graph requires at least 2 edges to connect two vertices. One edge connects the starting vertex to another, and the second edge connects that vertex to the destination vertex.
+
+Explanation:
+This question checks understanding of the minimum requirements for forming a path in a graph.
+
+Common mistake note:
+Common mistake: Assuming that only one edge is needed to form a path between two vertices.
+------------------------------------------------------------------------------
+
+Problem 5 (Cycle Length):
+What is the minimum number of edges required to form a cycle in a simple graph?
+A) 2
+B) 3
+C) 4
+D) 5
+Correct Answer: B
+
+Solution:
+A cycle in a simple graph requires at least 3 edges to form a closed loop connecting three vertices.
+
+Explanation:
+This question tests the understanding of the minimum requirements for forming a cycle in a graph.
+
+Common mistake note:
+Common mistake: Assuming that only two edges are needed to form a cycle, which would actually create a line rather than a closed loop.
+------------------------------------------------------------------------------
+
+Problem 6 (Path vs Loop):
+Which of the following statements correctly differentiates a path from a loop in a graph?
+A) Paths have no repeated vertices, while loops can repeat vertices.
+B) Loops always start and end at the same vertex, while paths do not.
+C) Paths can have parallel edges, but loops cannot.
+D) Loops have an odd number of edges, while paths can have any number.
+Correct Answer: B
+
+Solution:
+Loops always start and end at the same vertex, while paths do not necessarily connect the same starting and ending vertices. Option A is incorrect because paths can have repeated vertices (as long as they are not back- to-back). Option C is false because both paths and loops cannot have parallel edges. Option D is wrong because loop edge count has no specific rule.
+
+Explanation:
+This question assesses understanding of the differences between paths and loops in graphs.
+
+Common mistake note:
+Common mistake: Confusing loops with cycles or thinking that paths cannot repeat vertices.
+------------------------------------------------------------------------------
+
+Problem 7 (Connected Graph):
+In a connected graph, which of the following statements is true?
+A) Every vertex must be part of a cycle.
+B) There can be multiple disconnected cycles in the graph.
+C) There exists at least one path between any two vertices.
+D) The graph must have an odd number of edges.
+Correct Answer: C
+
+Solution:
+In a connected graph, there must exist at least one path between any two vertices. Option A is incorrect because not all vertices in a connected graph need to be part of a cycle. Option B is false because multiple disconnected cycles would mean the graph is not connected. Option D is wrong because the number of edges has no specific rule for connectivity.
+
+Explanation:
+This question tests knowledge of connectivity properties in graphs.
+
+Common mistake note:
+Common mistake: Assuming that all vertices must be part of a cycle or that multiple disconnected cycles are allowed in a connected graph.
+------------------------------------------------------------------------------

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.13.7 Apply generating functions
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.13 Recurrence Relations
+------------------------------------------------------------------------------
+Difficulty profile: medium
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the generating function for the sequence where the nth term is n^2. Which of the following is correct?
+A) (x + x^2 + x^3 + ...) + (x^2 + x^4 + x^6 + ...) + (x^3 + x^6 + x^9 + ...)
+B) x(1 + x + x^2 + ...) + x^2(1 + x + x^2 + ...) + x^3(1 + x + x^2 + ...)
+C) (1 + 2x + 3x^2 + ...) + (2x + 4x^2 + 6x^3 + ...) + (3x^2 + 6x^3 + 9x^4 + ...)
+D) x(1 + 2x + 3x^2 + ...) + x^2(2x + 4x^2 + 6x^3 + ...) + x^3(3x^2 + 6x^3 + 9x^4 + ...)
+Correct Answer: D
+
+Solution:
+The generating function for the sequence where the nth term is n^2 can be found by summing up the generating functions of each power of x. For n^2, we have a coefficient of n for each x^n. So, the generating function will have coefficients 1, 2, 3 for x^1, x^2, x^3 respectively, and so on. The correct choice represents this pattern correctly.
+
+Explanation:
+The generating function is built by multiplying each term in the sequence by its corresponding power of x and summing these products. In this case, we multiply n^2 by x^n for each n, which gives us 1x, 2x^2, 3x^3, etc.
+
+Common mistake note:
+A common mistake is to add the sequences instead of multiplying them with powers of x.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Find the generating function for the Fibonacci sequence (0, 1, 1, 2, 3, 5, ...). Which of the following is correct?
+A) (x + x^2 + x^3 + ...) + (x^2 + x^4 + x^6 + ...) + (x^3 + x^6 + x^9 + ...)
+B) x(1 + x + x^2 + ...) + x^2(1 + x + x^2 + ...) + x^3(1 + x + x^2 + ...)
+C) (1 - x - x^2)/(1 - 2x)
+D) (x + x^2)/(1 - 2x)
+Correct Answer: C
+
+Solution:
+The generating function for the Fibonacci sequence can be found using the formula (1 - x - x^2)/(1 - 2x). This is derived from the recurrence relation F(n) = F(n-1) + F(n-2), where F(0) = 0 and F(1) = 1.
+
+Explanation:
+The generating function for a sequence defined by a recurrence relation can often be found using algebraic manipulation. In this case, we use the fact that the Fibonacci sequence is defined by F(n) = F(n-1) + F(n-2), which leads to the given rational function.
+
+Common mistake note:
+A common mistake would be to choose a generating function based on an arithmetic or geometric progression, but the Fibonacci sequence does not follow such patterns.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the generating function for the sequence where the nth term is 2^n. Which of the following is correct?
+A) (1 + x + x^2 + ...) + (x + x^2 + x^3 + ...) + (x^2 + x^4 + x^6 + ...)
+B) x(1 + x + x^2 + ...) + 2x^2(1 + x + x^2 + ...) + 4x^3(1 + x + x^2 + ...)
+C) (1 + 2x + 4x^2 + ...) + (2x + 4x^2 + 8x^3 + ...) + (4x^2 + 8x^3 + 16x^4 + ...)
+D) x(1 + 2x + 4x^2 + ...) + 2x^2(2x + 4x^2 + 8x^3 + ...) + 4x^3(4x^2 + 8x^3 + 16x^4 + ...)
+Correct Answer: B
+
+Solution:
+The generating function for the sequence where the nth term is 2^n can be found by multiplying each term in the sequence by its corresponding power of x and summing these products. For 2^n, we have a coefficient of 2^(n-1) for each x^n. So, the generating function will have coefficients 1, 2, 4 for x^1, x^2, x^3 respectively.
+
+Explanation:
+The generating function is built by multiplying each term in the sequence by its corresponding power of x and summing these products. In this case, we multiply 2^n by x^n for each n, which gives us 1x, 2x^2, 4x^3, etc.
+
+Common mistake note:
+A common mistake is to forget the exponent of 2 decreases by 1 for each power of x. Choice A and C do not account for this decrease.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Find the generating function for the sequence where the nth term is n choose k, represented as C(n, k). Which of the following is correct?
+A) (x + x^2 + x^3 + ...) * (1 + x + x^2 + ...)^k
+B) x(1 + x + x^2 + ...) * (1 + x + x^2 + ...)^k
+C) (x + x^2 + x^3 + ...) * (x + x^2 + x^3 + ...)^k
+D) x(1 + x + x^2 + ...) * (x + x^2 + x^3 + ...)^k
+Correct Answer: A
+
+Solution:
+The generating function for the binomial coefficients C(n, k) is given by (x + x^2 + x^3 + ...) * (1 + x + x^2 + ...)^k. This represents the expansion of (1+x)^n when n is a non-negative integer.
+
+Explanation:
+The generating function for binomial coefficients can be derived from the binomial theorem, which states that (a+b)^n = C(n,0)a^n + C(n,1)a^(n-1)b + ... + C(n,n)b^n. Setting a=1 and b=x gives us the desired generating function.
+
+Common mistake note:
+A common mistake is to use x instead of 1 in the second factor, which would not account for all possible combinations of terms.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Find the generating function for the sequence where the nth term is the number of ways to choose k elements from n elements. Which of the following is correct?
+A) (x + x^2 + x^3 + ...) * (1 + x + x^2 + ...)^n
+B) x(1 + x + x^2 + ...) * (1 + x + x^2 + ...)^n
+C) (x + x^2 + x^3 + ...) * (x + x^2 + x^3 + ...)^n
+D) x(1 + x + x^2 + ...) * (x + x^2 + x^3 + ...)^n
+Correct Answer: A
+
+Solution:
+The generating function for the number of ways to choose k elements from n elements is given by (x + x^2 + x^3 + ...) * (1 + x + x^2 + ...)^n. This represents the expansion of (1+x)^n when n is a non-negative integer.
+
+Explanation:
+The generating function for combinations can be derived from the binomial theorem, which states that (a+b)^n = C(n,0)a^n + C(n,1)a^(n-1)b + ... + C(n,n)b^n. Setting a=1 and b=x gives us the desired generating function.
+
+Common mistake note:
+A common mistake is to use x instead of 1 in the first factor, which would not account for all possible combinations of terms.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Find the generating function for the sequence where the nth term is the sum of the first n natural numbers. Which of the following is correct?
+A) (x + x^2 + x^3 + ...) + 2(x^2 + x^4 + x^6 + ...) + 3(x^3 + x^6 + x^9 + ...)
+B) x(1 + x + x^2 + ...) + x^2(1 + x + x^2 + ...) + x^3(1 + x + x^2 + ...)
+C) (x + 2x^2 + 3x^3 + ...) + (2x^2 + 4x^3 + 6x^4 + ...) + (3x^3 + 6x^4 + 9x^5 + ...)
+D) x(1 + 2x + 3x^2 + ...) + x^2(2x + 4x^2 + 6x^3 + ...) + x^3(3x^2 + 6x^3 + 9x^4 + ...)
+Correct Answer: C
+
+Solution:
+The generating function for the sequence where the nth term is the sum of the first n natural numbers can be found by multiplying each term in the sequence by its corresponding power of x and summing these products. The sum of the first n natural numbers is n(n+1)/2, so we have coefficients 1, 2, 3 for x^1, x^2, x^3 respectively.
+
+Explanation:
+The generating function is built by multiplying each term in the sequence by its corresponding power of x and summing these products. In this case, we multiply n(n+1)/2 by x^n for each n, which gives us 1x, 2x^2, 3x^3, etc.
+
+Common mistake note:
+A common mistake is to use the wrong formula for the sum of natural numbers (e.g., n^2 instead of n(n+1)/2), leading to incorrect coefficients.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Find the generating function for the sequence where the nth term is the product of the first n odd numbers. Which of the following is correct?
+A) (x + x^3 + x^5 + ...) * (1 + x^2 + x^4 + ...)^n
+B) x(1 + x^2 + x^4 + ...) * (1 + x^2 + x^4 + ...)^n
+C) (x + x^3 + x^5 + ...) * (x + x^3 + x^5 + ...)^n
+D) x(1 + x^2 + x^4 + ...) * (x + x^3 + x^5 + ...)^n
+Correct Answer: A
+
+Solution:
+The generating function for the sequence where the nth term is the product of the first n odd numbers can be found by multiplying each term in the sequence by its corresponding power of x and summing these products. Since we have only odd powers, we multiply (x + x^3 + x^5 + ...) by (1 + x^2 + x^4 + ...)^n.
+
+Explanation:
+The generating function for this sequence involves multiplying the generating functions for odd numbers and all natural numbers raised to the power of n. The generating function for odd numbers is (x + x^3 + x^5 + ...), while the generating function for all natural numbers raised to the power of n is (1 + x^2 + x^4 + ...)^n.
+
+Common mistake note:
+A common mistake would be to use the generating function for even numbers instead of odd numbers, which would not account for the product of only odd terms.
+------------------------------------------------------------------------------

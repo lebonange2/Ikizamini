@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.15.13 Apply to computational geometry
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.15 Advanced Analytic Geometry
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 ([1-7]):
+What is the time complexity of computing the convex hull of a set of n points in 2D using Graham's scan algorithm?
+A) O(n^2)
+B) O(n log n)
+C) O(n log^2 n)
+D) O(n)
+Correct Answer: B
+
+Solution:
+Graham's scan has a time complexity of O(n log n) for computing the convex hull of n points in 2D. This is because it sorts the points by polar angle and removes potential vertices one by one, which takes linearithmic time.
+
+Explanation:
+The algorithm's efficiency comes from its ability to efficiently remove non-convex points without excessive comparisons.
+
+Common mistake note:
+A common mistake is to confuse Graham's scan with another algorithm that has a higher complexity, such as Jarvis march, which has a time complexity of O(n^2).
+------------------------------------------------------------------------------
+
+Problem 2 ([1-7]):
+Which computational geometry problem does the rotating calipers method solve?
+A) Closest Pair Problem
+B) Intersection of Line Segments
+C) Convex Hull
+D) Point in Polygon
+Correct Answer: C
+
+Solution:
+The rotating calipers method is used to find the convex hull of a set of points. It works by sweeping two imaginary calipers (parallel lines) around the point set, adjusting their position until they encompass all points and finding the extreme points along the way.
+
+Explanation:
+While the other options are also computational geometry problems, rotating calipers specifically addresses the task of computing a convex hull.
+
+Common mistake note:
+A common mistake is to confuse rotating calipers with algorithms that solve different problems, such as Quickhull for finding the convex hull or Bentley-Ottmann for line segment intersection.
+------------------------------------------------------------------------------
+
+Problem 3 ([1-7]):
+Which of the following statements about Voronoi diagrams is false?
+A) They divide a plane into regions based on distance to points (sites).
+B) Each region in a Voronoi diagram corresponds to a single site.
+C) Voronoi diagrams are used for spatial analysis and clustering.
+D) The complexity of constructing a Voronoi diagram for n sites is O(n log^2 n)
+Correct Answer: D
+
+Solution:
+The time complexity of constructing a Voronoi diagram for n sites using the Fortune's algorithm is O(n log n), not O(n log^2 n). The algorithm efficiently processes site events along a sweep line.
+
+Explanation:
+Fortune's algorithm improves upon other methods by reducing the overall time complexity for generating Voronoi diagrams.
+
+Common mistake note:
+A common mistake is to confuse the time complexity of different algorithms or assume that all computational geometry problems have similar complexities.
+------------------------------------------------------------------------------
+
+Problem 4 ([1-7]):
+In computational geometry, what does the term 'collision detection' refer to?
+A) Determining if two lines intersect
+B) Finding the shortest path between two points
+C) Calculating the area of a polygon
+D) Detecting when objects in a 2D or 3D space overlap
+Correct Answer: D
+
+Solution:
+Collision detection is the process of determining whether two or more geometric shapes intersect or overlap in a 2D or 3D space. It's commonly used in computer graphics, simulations, and video games.
+
+Explanation:
+While options A, B, and C are related to computational geometry, they do not specifically address collision detection.
+
+Common mistake note:
+A common mistake is to confuse collision detection with other geometric calculations or operations.
+------------------------------------------------------------------------------
+
+Problem 5 ([1-7]):
+Which algorithm is used for finding the minimum bounding rectangle (MBR) of a set of points in 2D?
+A) Quickhull
+B) Gift Wrapping Algorithm
+C) Kruskal's Algorithm
+D) Graham's Scan
+Correct Answer: B
+
+Solution:
+The Gift Wrapping Algorithm, also known as the Jarvis March, is used to find the minimum bounding rectangle (MBR) of a set of points in 2D. It starts at the leftmost point and iteratively adds points to the MBR until all points are enclosed.
+
+Explanation:
+Quickhull and Graham's Scan are used for computing convex hulls, while Kruskal's Algorithm is a graph algorithm unrelated to this problem.
+
+Common mistake note:
+A common mistake is to混淆 Gift Wrapping Algorithm with other algorithms that solve different problems.
+------------------------------------------------------------------------------
+
+Problem 6 ([1-7]):
+What is the primary purpose of Delaunay triangulation?
+A) To find the closest pair of points
+B) To create a mesh for finite element analysis
+C) To determine if a point lies within a polygon
+D) To minimize the area of triangles in a planar graph
+Correct Answer: B
+
+Solution:
+Delaunay triangulation is primarily used to create a mesh for finite element analysis, where it ensures that the triangles have good shape properties and are well-distributed. It does not necessarily minimize triangle area or solve closest pair or point-in-polygon problems.
+
+Explanation:
+The Delaunay triangulation's property of avoiding small angles in triangles makes it useful for numerical methods like finite element analysis.
+
+Common mistake note:
+A common mistake is to associate Delaunay triangulation with other geometric tasks that it does not directly address.
+------------------------------------------------------------------------------
+
+Problem 7 ([1-7]):
+In computational geometry, what is the purpose of a Voronoi diagram?
+A) To find the closest pair of points
+B) To determine if a point lies within a polygon
+C) To partition a space into regions based on nearest sites
+D) To calculate the area of a complex shape
+Correct Answer: C
+
+Solution:
+The primary purpose of a Voronoi diagram is to partition a space into regions (Voronoi cells) based on the nearest site (point). Each cell represents the set of points closer to one specific site than any other.
+
+Explanation:
+While Voronoi diagrams can be used for various tasks, options A, B, and D describe different problems or calculations.
+
+Common mistake note:
+A common mistake is to confuse the role of a Voronoi diagram with other geometric algorithms or data structures.
+------------------------------------------------------------------------------

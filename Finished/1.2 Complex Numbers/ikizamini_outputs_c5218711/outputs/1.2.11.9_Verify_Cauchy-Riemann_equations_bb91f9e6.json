@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.2.11.9",
+  "objective_text": "Verify Cauchy-Riemann equations",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Determine if the function f(z) = x^2 - y^2 + 2ixy satisfies the Cauchy-Riemann equations. Where z = x + iy.",
+      "choices": {
+        "A": "Yes, it does satisfy the equations.",
+        "B": "No, it does not satisfy the equations.",
+        "C": "Not enough information provided.",
+        "D": "The function is not differentiable."
+      },
+      "correct_choice": "A",
+      "solution": "To verify the Cauchy-Riemann equations for f(z) = x^2 - y^2 + 2ixy, we need to find the partial derivatives of u(x, y) and v(x, y), where u(x, y) is the real part and v(x, y) is the imaginary part. For f(z), u(x, y) = x^2 - y^2 and v(x, y) = 2xy.",
+      "explanation": "The Cauchy-Riemann equations are given by:\n∂u/∂x = ∂v/∂y\n∂u/∂y = -∂v/∂x\nLet's compute the partial derivatives:\n∂u/∂x = 2x\n∂u/∂y = -2y\n∂v/∂x = 2y\n∂v/∂y = 2x\nComparing these, we see that both equations hold true:\n2x = 2x\n-2y = -2x\nTherefore, f(z) satisfies the Cauchy-Riemann equations.",
+      "common_mistake_notes": "A common mistake would be to assume that if one of the Cauchy-Riemann equations is not satisfied, then the function does not satisfy them at all. However, both equations must hold simultaneously for a function to satisfy the Cauchy-Riemann conditions."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Given f(z) = e^z, where z = x + iy, verify if it satisfies the Cauchy-Riemann equations.",
+      "choices": {
+        "A": "Yes, it does satisfy the equations.",
+        "B": "No, it does not satisfy the equations.",
+        "C": "Not enough information provided.",
+        "D": "The function is not differentiable."
+      },
+      "correct_choice": "A",
+      "solution": "For f(z) = e^z, we can write u(x, y) = cos(y)e^x and v(x, y) = sin(y)e^x. Now let's compute the partial derivatives:\n∂u/∂x = cos(y)e^x\n∂u/∂y = -sin(y)e^x\n∂v/∂x = sin(y)e^x\n∂v/∂y = cos(y)e^x",
+      "explanation": "The Cauchy-Riemann equations are:\n∂u/∂x = ∂v/∂y\n∂u/∂y = -∂v/∂x\nComparing these, we see that both equations hold true:\ncos(y)e^x = cos(y)e^x\n-sin(y)e^x = -sin(y)e^x\nThus, f(z) = e^z satisfies the Cauchy-Riemann equations.",
+      "common_mistake_notes": "A common mistake would be to forget that e^z is a complex exponential function and not separate it into its real and imaginary parts before applying the partial derivatives."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Determine if f(z) = 1/z satisfies the Cauchy-Riemann equations, where z = x + iy.",
+      "choices": {
+        "A": "Yes, it does satisfy the equations.",
+        "B": "No, it does not satisfy the equations.",
+        "C": "Not enough information provided.",
+        "D": "The function is not differentiable."
+      },
+      "correct_choice": "D",
+      "solution": "f(z) = 1/z can be rewritten as u(x, y) = 1/(x^2 + y^2) and v(x, y) = -y/(x^2 + y^2). Let's compute the partial derivatives:\n∂u/∂x = -2x/(x^2 + y^2)^2\n∂u/∂y = -2y/(x^2 + y^2)^2\n∂v/∂x = 2xy/(x^2 + y^2)^2\n∂v/∂y = -1/(x^2 + y^2)",
+      "explanation": "The Cauchy-Riemann equations are:\n∂u/∂x = ∂v/∂y\n∂u/∂y = -∂v/∂x\nComparing these, we see that they do not hold true for f(z) = 1/z. For example,\n-2x/(x^2 + y^2)^2 ≠ 2xy/(x^2 + y^2)^2\nTherefore, the function is not differentiable and thus does not satisfy the Cauchy-Riemann equations.",
+      "common_mistake_notes": "A common mistake would be to assume that if one of the partial derivatives is zero, then the Cauchy-Riemann equations are satisfied. However, for a function to be differentiable, both equations must hold simultaneously."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Given f(z) = z^2, where z = x + iy, verify if it satisfies the Cauchy-Riemann equations.",
+      "choices": {
+        "A": "Yes, it does satisfy the equations.",
+        "B": "No, it does not satisfy the equations.",
+        "C": "Not enough information provided.",
+        "D": "The function is not differentiable."
+      },
+      "correct_choice": "B",
+      "solution": "For f(z) = z^2, we can write u(x, y) = x^2 - y^2 and v(x, y) = 2xy. Now let's compute the partial derivatives:\n∂u/∂x = 2x\n∂u/∂y = -2y\n∂v/∂x = 2y\n∂v/∂y = 2x",
+      "explanation": "The Cauchy-Riemann equations are:\n∂u/∂x = ∂v/∂y\n∂u/∂y = -∂v/∂x\nComparing these, we see that they do not hold true for f(z) = z^2. For example,\n2x ≠ 2y\nTherefore, f(z) does not satisfy the Cauchy-Riemann equations.",
+      "common_mistake_notes": "A common mistake would be to mix up the signs when differentiating v(x, y), leading to an incorrect conclusion about the satisfaction of the equations."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Determine if f(z) = x^3 + 3xy^2, where z = x + iy, satisfies the Cauchy-Riemann equations.",
+      "choices": {
+        "A": "Yes, it does satisfy the equations.",
+        "B": "No, it does not satisfy the equations.",
+        "C": "Not enough information provided.",
+        "D": "The function is not differentiable."
+      },
+      "correct_choice": "B",
+      "solution": "For f(z) = x^3 + 3xy^2, we can write u(x, y) = x^3 and v(x, y) = 3xy^2. Now let's compute the partial derivatives:\n∂u/∂x = 3x^2\n∂u/∂y = 0\n∂v/∂x = 3y^2\n∂v/∂y = 6xy",
+      "explanation": "The Cauchy-Riemann equations are:\n∂u/∂x = ∂v/∂y\n∂u/∂y = -∂v/∂x\nComparing these, we see that they do not hold true for f(z) = x^3 + 3xy^2. For example,\n3x^2 ≠ 3y^2\nTherefore, f(z) does not satisfy the Cauchy-Riemann equations.",
+      "common_mistake_notes": "A common mistake would be to assume that if the real part of the function is a polynomial, it automatically satisfies the Cauchy-Riemann equations. However, the imaginary part must also satisfy the conditions."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Given f(z) = ln(|z|), where z = x + iy, verify if it satisfies the Cauchy-Riemann equations.",
+      "choices": {
+        "A": "Yes, it does satisfy the equations.",
+        "B": "No, it does not satisfy the equations.",
+        "C": "Not enough information provided.",
+        "D": "The function is not differentiable."
+      },
+      "correct_choice": "A",
+      "solution": "For f(z) = ln(|z|), we can write u(x, y) = ln(sqrt(x^2 + y^2)) and v(x, y) = 0. Now let's compute the partial derivatives:\n∂u/∂x = x/(x^2 + y^2)\n∂u/∂y = y/(x^2 + y^2)\n∂v/∂x = 0\n∂v/∂y = 0",
+      "explanation": "The Cauchy-Riemann equations are:\n∂u/∂x = ∂v/∂y\n∂u/∂y = -∂v/∂x\nComparing these, we see that both equations hold true for f(z) = ln(|z|):\nx/(x^2 + y^2) = 0\ny/(x^2 + y^2) = 0\nThus, f(z) satisfies the Cauchy-Riemann equations.",
+      "common_mistake_notes": "A common mistake would be to forget that v(x, y) is zero for this function, which simplifies the verification of the Cauchy-Riemann equations."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Determine if f(z) = sinh(z), where z = x + iy, satisfies the Cauchy-Riemann equations.",
+      "choices": {
+        "A": "Yes, it does satisfy the equations.",
+        "B": "No, it does not satisfy the equations.",
+        "C": "Not enough information provided.",
+        "D": "The function is not differentiable."
+      },
+      "correct_choice": "A",
+      "solution": "For f(z) = sinh(z), we can write u(x, y) = cosh(y)e^x and v(x, y) = sinh(y)e^x. Now let's compute the partial derivatives:\n∂u/∂x = cosh(2y)e^x\n∂u/∂y = -sinh(2y)e^x\n∂v/∂x = sinh(2y)e^x\n∂v/∂y = cosh(2y)e^x",
+      "explanation": "The Cauchy-Riemann equations are:\n∂u/∂x = ∂v/∂y\n∂u/∂y = -∂v/∂x\nComparing these, we see that both equations hold true for f(z) = sinh(z):\ncosh(2y)e^x = sinh(2y)e^x\n-sinh(2y)e^x = -cosh(2y)e^x\nThus, f(z) satisfies the Cauchy-Riemann equations.",
+      "common_mistake_notes": "A common mistake would be to confuse sinh and cosh functions with their exponential counterparts. It's essential to remember that sinh is the hyperbolic sine and cosh is the hyperbolic cosine."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.7.1 Understand antiderivatives
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.7 Indefinite Integrals
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (The Basics of Antiderivatives):
+Find the antiderivative of f(x) = 3x^2.
+A) x^3 + C
+B) 6x + C
+C) 9x^3 + C
+D) 1/3x^3 + C
+Correct Answer: A
+
+Solution:
+The antiderivative of 3x^2 is found by applying the power rule: (x^(n+1))/(n+1). For n=2, this gives us x^3/3. Adding the constant of integration C, we get x^3 + C.
+
+Explanation:
+The power rule for antiderivatives states that the antiderivative of x^n is x^(n+1)/(n+1), with a constant of integration C.
+
+Common mistake note:
+A common mistake is to forget the constant of integration (C) or apply the power rule incorrectly.
+------------------------------------------------------------------------------
+
+Problem 2 (Combining Antiderivatives):
+Find the antiderivative of f(x) = 2x + 5.
+A) x^2 + 5x + C
+B) x^2 + 5C
+C) 2x^2 + 5x + C
+D) 2x^2 + 5C
+Correct Answer: A
+
+Solution:
+The antiderivative of a sum is the sum of the antiderivatives. For f(x) = 2x + 5, we get x^2 for 2x and 5x for the constant term. Adding C gives us x^2 + 5x + C.
+
+Explanation:
+This question tests combining antiderivatives of multiple terms in a function.
+
+Common mistake note:
+A common mistake is to apply the power rule incorrectly to the constant or forget that the constant multiplier affects only the first term.
+------------------------------------------------------------------------------
+
+Problem 3 (Antiderivative of Trigonometric Functions):
+Find the antiderivative of f(x) = sin(x).
+A) -cos(x) + C
+B) cos(x) + C
+C) sin(x) + C
+D) tan(x) + C
+Correct Answer: A
+
+Solution:
+The antiderivative of sin(x) is -cos(x), using the fundamental theorem of calculus and the derivative of cos(x). Adding C gives us -cos(x) + C.
+
+Explanation:
+This question assesses knowledge of antiderivatives for trigonometric functions.
+
+Common mistake note:
+A common mistake is to forget the negative sign from the derivative of cosine.
+------------------------------------------------------------------------------
+
+Problem 4 (Antiderivative of Exponential Functions):
+Find the antiderivative of f(x) = e^x.
+A) e^x + C
+B) ln(e^x) + C
+C) 1/e^x + C
+D) xe^x + C
+Correct Answer: A
+
+Solution:
+The antiderivative of e^x is simply e^x, multiplied by the constant of integration C.
+
+Explanation:
+This question tests understanding of antiderivatives for exponential functions.
+
+Common mistake note:
+A common mistake is to apply logarithmic rules or multiply by x unnecessarily.
+------------------------------------------------------------------------------
+
+Problem 5 (Antiderivative of a Polynomial with Multiple Variables):
+Find the antiderivative of f(x) = 4x^3 + 2x^2 - 7x + 1.
+A) x^4 + x^3 - 7/2x^2 + x + C
+B) 4x^4 + 2x^3 - 7x^2 + x + C
+C) x^4 + x^3 - 7/2x^2 + C
+D) 4x^4 + 2x^3 - 7x^2 + C
+Correct Answer: A
+
+Solution:
+Applying the power rule to each term: (4/4)x^(3+1) + (2/3)x^(2+1) - (7/2)x^(1+1) + x + C = x^4 + x^3 - 7/2x^2 + x + C.
+
+Explanation:
+This question tests handling multiple variables and exponents in a polynomial antiderivative.
+
+Common mistake note:
+A common mistake is to forget to divide by the exponent plus one.
+------------------------------------------------------------------------------
+
+Problem 6 (Antiderivative of a Rational Function):
+Find the antiderivative of f(x) = 1/(x^2 + 1).
+A) arctan(x) + C
+B) tan^-1(x) + C
+C) ln|x^2 + 1| + C
+D) x/(x^2 + 1) + C
+Correct Answer: A
+
+Solution:
+The antiderivative of 1/(x^2 + 1) is arctan(x) or tan^-1(x), multiplied by dx, plus C.
+
+Explanation:
+This question assesses knowledge of antiderivatives for rational functions involving x^2 + 1.
+
+Common mistake note:
+A common mistake is to confuse the derivative and antiderivative of arctan(x).
+------------------------------------------------------------------------------
+
+Problem 7 (Antiderivative of a Logarithmic Function):
+Find the antiderivative of f(x) = ln(x).
+A) xln(x) - x + C
+B) x(ln(x) - 1) + C
+C) x(ln(x) + 1) + C
+D) x(ln(x)) + C
+Correct Answer: B
+
+Solution:
+Integrating xln(x) gives us x(ln(x) - 1) + C, using integration by substitution or the derivative rule.
+
+Explanation:
+This question tests understanding of antiderivatives for logarithmic functions.
+
+Common mistake note:
+A common mistake is to forget to multiply by x before applying the derivative rule.
+------------------------------------------------------------------------------

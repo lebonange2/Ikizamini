@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.3.9.10 Apply permutation formulas
+==============================================================================
+Context: 1.3 Discrete Mathematics > 1.3.9 Permutations
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+How many ways can 5 distinct books be arranged on a shelf?
+A) 5!
+B) 6!
+C) 120
+D) 720
+Correct Answer: A
+
+Solution:
+The number of permutations of n distinct objects is given by n!. In this case, n = 5. So the number of ways to arrange 5 books is 5! = 120.
+
+Explanation:
+Permutations count the number of ways to order a set of items without regard to repetition.
+
+Common mistake note:
+A common mistake would be to choose B, which represents 6 factorial instead of 5 factorial. This error occurs because the student may have miscounted the number of books or assumed that an extra book was added.
+------------------------------------------------------------------------------
+
+Problem 2 (Bghj):
+If there are 8 people in a room and we want to form a committee of 3, how many different committees can be formed?
+A) 8C3
+B) 8P3
+C) 56
+D) 336
+Correct Answer: A
+
+Solution:
+To find the number of ways to choose 3 people out of 8, we use combinations: C(n, k) = n! / (k!(n-k)!). For this problem, n=8 and k=3. So, 8C3 = 8! / (3!(8-3)!) = 56.
+
+Explanation:
+Combinations are used when order does not matter.
+
+Common mistake note:
+A common mistake would be to choose B, which represents permutations instead of combinations. This error occurs because the student may have thought that the order of selecting committee members mattered.
+------------------------------------------------------------------------------
+
+Problem 3 (Qwer):
+How many ways can 6 different marbles be arranged in a row if two specific marbles must always be together?
+A) 5!
+B) 4!
+C) 2! × 5!
+D) 3!
+Correct Answer: C
+
+Solution:
+Treat the two specific marbles as a single unit, giving us 5 units to arrange. The two specific marbles can be arranged among themselves in 2! ways. So, total arrangements = 5! × 2! = 120.
+
+Explanation:
+When certain items must stay together, treat them as a single entity and calculate permutations for the combined unit.
+
+Common mistake note:
+A common mistake would be to choose A, which does not account for the fact that the two marbles can be arranged within themselves. This error occurs due to overlooking the constraint that the two marbles must always be together.
+------------------------------------------------------------------------------
+
+Problem 4 (Yuiop):
+In how many ways can a 4-person committee be chosen from a group of 7 people if one person is not eligible for the committee?
+A) 6C3
+B) 7C4
+C) 21
+D) 35
+Correct Answer: A
+
+Solution:
+We need to choose 3 people out of the remaining 6 eligible people. So, we use combinations: C(n, k) = n! / (k!(n-k)!). For this problem, n=6 and k=3. Thus, 6C3 = 6! / (3!(6-3)!) = 20.
+
+Explanation:
+When excluding a specific person, subtract that person from the total count before calculating combinations.
+
+Common mistake note:
+A common mistake would be to choose B, which calculates permutations for all 7 people without accounting for the ineligible individual. This error occurs due to not considering the exclusion of one person.
+------------------------------------------------------------------------------
+
+Problem 5 (Bvnmm):
+How many ways can a 5-card hand be dealt from a standard deck of 52 cards?
+A) 5C52
+B) 5P52
+C) 2,598,960
+D) 52!
+Correct Answer: C
+
+Solution:
+We use combinations to choose the 5 cards from the deck: C(n, k) = n! / (k!(n-k)!). For this problem, n=52 and k=5. So, 5C52 = 52! / (5!(52-5)!) = 2,598,960.
+
+Explanation:
+When dealing a hand of cards, order does not matter; use combinations.
+
+Common mistake note:
+A common mistake would be to choose B, which calculates permutations instead of combinations. This error occurs because the student may have thought that the order in which the cards were dealt mattered.
+------------------------------------------------------------------------------
+
+Problem 6 (Kolm):
+How many ways can a 3-digit number be formed using the digits 1, 2, and 3 without repetition?
+A) 3!
+B) 6
+C) 9
+D) 18
+Correct Answer: A
+
+Solution:
+Since we have 3 distinct digits and each position can be filled in only one way (no repetition), the total number of arrangements is simply 3! = 6.
+
+Explanation:
+When no digit can be repeated, permutations are used to count the arrangements.
+
+Common mistake note:
+A common mistake would be to choose B, which represents the number of ways to arrange the digits without considering that each position has a unique constraint. This error occurs due to overlooking the restriction on repetition.
+------------------------------------------------------------------------------
+
+Problem 7 (Jhgf):
+How many ways can 7 people be seated in a row if two specific people must sit next to each other?
+A) 6!
+B) 5! × 2!
+C) 48
+D) 120
+Correct Answer: B
+
+Solution:
+Treat the two specific people as a single unit, giving us 6 units to arrange. The two specific people can be arranged among themselves in 2! ways. So, total arrangements = 6! × 2! = 1440.
+
+Explanation:
+When certain individuals must sit together, treat them as a single entity and calculate permutations for the combined unit.
+
+Common mistake note:
+A common mistake would be to choose A, which does not account for the fact that the two people can be arranged within themselves. This error occurs due to overlooking the constraint that the two people must sit together.
+------------------------------------------------------------------------------

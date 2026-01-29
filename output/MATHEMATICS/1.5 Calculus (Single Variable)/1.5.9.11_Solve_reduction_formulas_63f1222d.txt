@@ -1,0 +1,132 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.5.9.11 Solve reduction formulas
+==============================================================================
+Context: 1.5 Calculus (Single Variable) > 1.5.9 Integration Techniques - By Parts
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (:Q1):
+Find the antiderivative of (x^3 + 2x^2 - x + 1) dx using integration by reduction formula. The reduced form should be in terms of x and a constant C.
+A) (1/4)x^4 + (2/3)x^3 - (1/2)x^2 + x + C
+B) (1/4)x^4 + (2/3)x^3 - (1/2)x^2 + C
+C) (1/4)x^4 + (2/3)x^3 - x + C
+D) (1/4)x^4 + 2x^3 - (1/2)x^2 + x + C
+Correct Answer: A
+
+Solution:
+To find the antiderivative using reduction formula, we integrate x^n dx and then divide by n+1. For x^3, we get (1/(3+1))x^(3+1) = (1/4)x^4. For 2x^2, we do the same for 2x^(2+1) = 2*(1/3)x^3. For -x, we get -(1/2)x^2, and for the constant term 1, it remains as x. Adding them up and adding C gives us (1/4)x^4 + (2/3)x^3 - (1/2)x^2 + x + C.
+
+Explanation:
+The reduction formula is used to integrate powers of x by reducing the power and integrating the resulting expression.
+
+Common mistake note:
+A common mistake would be forgetting to divide by n+1 when applying the reduction formula, which leads to an incorrect constant term.
+------------------------------------------------------------------------------
+
+Problem 2 (:Q2):
+Evaluate ∫(x^5 - 3x^4 + x^2) dx using integration by reduction formula. The reduced form should be in terms of x and a constant C.
+A) (1/6)x^6 - (3/5)x^5 + (1/3)x^3 + C
+B) (1/6)x^6 - (3/5)x^5 + x^2 + C
+C) (1/6)x^6 - (3/5)x^5 + (1/3)x^3 - C
+D) (1/6)x^6 - 3x^5 + (1/3)x^3 + C
+Correct Answer: A
+
+Solution:
+Applying the reduction formula, we get: ∫(x^5) dx = (1/(5+1))x^(5+1) = (1/6)x^6. For -3x^4, we have -(3/4)x^5. For x^2, it remains as x^3 since the power is already reduced to 1. Adding them up and adding C gives us (1/6)x^6 - (3/5)x^5 + (1/3)x^3 + C.
+
+Explanation:
+The reduction formula helps simplify integration of powers by reducing the exponent and integrating the new expression.
+
+Common mistake note:
+A common mistake would be mixing up the coefficients when applying the reduction formula, leading to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 3 (:Q3):
+Find the integral of (4x^7 - 5x^6 + 2) dx using integration by reduction formula. The reduced form should be in terms of x and a constant C.
+A) (1/8)x^8 - (5/7)x^7 + 2x + C
+B) (1/8)x^8 - (5/7)x^7 + 2C
+C) (1/8)x^8 - (5/7)x^7 + 2x^6 + C
+D) (1/8)x^8 - 5x^7 + 2x + C
+Correct Answer: A
+
+Solution:
+Using the reduction formula, we integrate: ∫(4x^7) dx = (4/(7+1))x^(7+1) = (1/2)x^8. For -5x^6, we have -(5/6)x^7. The constant term 2 does not change during integration. Adding them up and adding C gives us (1/8)x^8 - (5/7)x^7 + 2x + C.
+
+Explanation:
+Reduction formula simplifies the process of integrating powers by reducing their exponents and integrating the new expression.
+
+Common mistake note:
+A common mistake is forgetting to multiply the coefficient with the reduced power when applying the reduction formula.
+------------------------------------------------------------------------------
+
+Problem 4 (:Q4):
+Evaluate ∫(2x^9 - 3x^8 + x) dx using integration by reduction formula. The reduced form should be in terms of x and a constant C.
+A) (1/10)x^10 - (3/9)x^9 + x^2 + C
+B) (1/10)x^10 - (3/9)x^9 + x + C
+C) (1/10)x^10 - (3/9)x^9 + x^8 + C
+D) (1/10)x^10 - 3x^9 + x^2 + C
+Correct Answer: B
+
+Solution:
+Applying the reduction formula: ∫(2x^9) dx = (2/(9+1))x^(9+1) = (1/5)x^10. For -3x^8, we have -(3/8)x^9. The constant term x remains as x^2 after integration. Adding them up and adding C gives us (1/10)x^10 - (3/9)x^9 + x + C.
+
+Explanation:
+Reduction formula helps integrate powers by reducing their exponents and integrating the simplified expression.
+
+Common mistake note:
+A common mistake is not recognizing that the constant term should be integrated as a power of x with exponent 1.
+------------------------------------------------------------------------------
+
+Problem 5 (:Q5):
+Find the antiderivative of (6x^11 - 4x^10 + 3x^7) dx using integration by reduction formula. The reduced form should be in terms of x and a constant C.
+A) (1/12)x^12 - (4/11)x^11 + (3/8)x^8 + C
+B) (1/12)x^12 - (4/11)x^11 + 3x^7 + C
+C) (1/12)x^12 - (4/11)x^11 + 3x^6 + C
+D) (1/12)x^12 - 4x^11 + (3/8)x^8 + C
+Correct Answer: A
+
+Solution:
+Using the reduction formula: ∫(6x^11) dx = (6/(11+1))x^(11+1) = (1/2)x^12. For -4x^10, we have -(4/10)x^11. For 3x^7, we integrate as (3/(7+1))x^(7+1) = (3/8)x^8. Adding them up and adding C gives us (1/12)x^12 - (4/11)x^11 + (3/8)x^8 + C.
+
+Explanation:
+Reduction formula simplifies integration by reducing powers and integrating the resulting expression.
+
+Common mistake note:
+A common mistake is not applying the reduction formula to all terms in the integrand, leading to an incorrect antiderivative.
+------------------------------------------------------------------------------
+
+Problem 6 (:Q6):
+Evaluate ∫(8x^13 - 7x^12 + 5x^9) dx using integration by reduction formula. The reduced form should be in terms of x and a constant C.
+A) (1/14)x^14 - (7/13)x^13 + (5/10)x^10 + C
+B) (1/14)x^14 - (7/13)x^13 + 5x^9 + C
+C) (1/14)x^14 - (7/13)x^13 + 5x^8 + C
+D) (1/14)x^14 - 7x^13 + (5/10)x^10 + C
+Correct Answer: A
+
+Solution:
+Applying the reduction formula: ∫(8x^13) dx = (8/(13+1))x^(13+1) = (1/2)x^14. For -7x^12, we have -(7/12)x^13. For 5x^9, we integrate as (5/(9+1))x^(9+1) = (5/10)x^10. Adding them up and adding C gives us (1/14)x^14 - (7/13)x^13 + (5/10)x^10  + C.
+
+Explanation:
+Reduction formula simplifies integration by reducing powers and integrating the simplified expression.
+
+Common mistake note:
+A common mistake is not applying the correct power reduction to each term in the integrand.
+------------------------------------------------------------------------------
+
+Problem 7 (:Q7):
+Find the antiderivative of (10x^15 - 9x^14 + 2x^11) dx using integration by reduction formula. The reduced form should be in terms of x and a constant C.
+A) (1/16)x^16 - (9/15)x^15 + (2/12)x^12 + C
+B) (1/16)x^16 - (9/15)x^15 + 2x^11 + C
+C) (1/16)x^16 - (9/15)x^15 + 2x^10 + C
+D) (1/16)x^16 - 9x^15 + (2/12)x^12 + C
+Correct Answer: A
+
+Solution:
+Using the reduction formula: ∫(10x^15) dx = (10/(15+1))x^(15+1) = (5/8)x^16. For -9x^14, we have -(9/14)x^15. For 2x^11, we integrate as (2/(11+1))x^(11+1) = (1/6)x^12. Adding them up and adding C gives us (1/16)x^16 - (9/15)x^15 + (2/12)x^12  + C.
+
+Explanation:
+Reduction formula simplifies integration by reducing powers and integrating the simplified expression.
+
+Common mistake note:
+A common mistake is not applying the reduction formula consistently to all terms in the integrand.
+------------------------------------------------------------------------------

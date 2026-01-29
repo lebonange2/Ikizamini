@@ -1,0 +1,186 @@
+==============================================================================
+LEARNING OBJECTIVE: 1.4.5.8 Write equation given parameters
+==============================================================================
+Context: 1.4 Analytic Geometry > 1.4.5 Ellipses
+------------------------------------------------------------------------------
+Difficulty profile: easy→medium mixed
+------------------------------------------------------------------------------
+Problem 1 (Asdf):
+What is the equation of a line passing through the points (2, 3) and (4, 7)?
+A) y = 2x + 1
+B) y = x + 5
+C) y = 3x - 1
+D) y = 0.5x + 4
+Correct Answer: B
+
+Solution:
+The slope of the line passing through (2, 3) and (4, 7) is
+(7 - 3)/(4 - 2) = 4/2 = 2.
+The y-intercept can be found by plugging one point into the equation in slope- intercept form (y = mx + b), for example using (2, 3):
+3 = 2 * 2 + b
+b = 3 - 4 = -1
+So the equation is y = 2x - 1.
+The correct answer is B.
+
+Explanation:
+The slope-intercept form of a line's equation is y = mx + b, where m is the slope and b is the y-intercept. A common mistake is to calculate the wrong slope or mix up the points when finding b.
+
+Common mistake note:
+Common mistake: Mixing up the coordinates for calculating the slope.
+------------------------------------------------------------------------------
+
+Problem 2 (Asdf2):
+What is the equation of a circle with center (3, -2) and radius 5?
+A) (x + 3)^2 + (y - 2)^2 = 25
+B) (x - 3)^2 + (y + 2)^2 = 25
+C) (x + 2)^2 + (y - 3)^2 = 5
+D) (x - 2)^2 + (y + 3)^2 = 10
+Correct Answer: B
+
+Solution:
+The equation of a circle with center (h, k) and radius r is
+(x - h)^2 + (y - k)^2 = r^2.
+Given the center (3, -2) and radius 5, the equation becomes
+(x - 3)^2 + (y + 2)^2 = 5^2,
+which simplifies to
+(x - 3)^2 + (y + 2)^2 = 25.
+The correct answer is B.
+
+Explanation:
+A common mistake is to mix up the signs when translating the center coordinates into the equation or to incorrectly square the radius.
+
+Common mistake note:
+Common mistake: Mixing up the signs for h and k in the equation.
+------------------------------------------------------------------------------
+
+Problem 3 (Asdf3):
+What is the quadratic equation with roots 1 and -3?
+A) x^2 + 2x - 3 = 0
+B) x^2 - 4x + 3 = 0
+C) x^2 - x - 3 = 0
+D) x^2 + 3x - 1 = 0
+Correct Answer: C
+
+Solution:
+The quadratic equation with roots a and b is given by
+(x - a)(x - b) = 0,
+which expands to
+x^2 - (a + b)x + ab = 0.
+Given the roots 1 and -3, we have a = 1 and b = -3, so the equation becomes
+x^2 - (1 - 3)x + (1 	imes -3) = 0,
+which simplifies to
+x^2 + 2x - 3 = 0.
+The correct answer is A.
+
+Explanation:
+A common mistake is to mix up the signs when multiplying the roots or to forget to multiply the constant term ab.
+
+Common mistake note:
+Common mistake: Mixing up the signs when multiplying the roots.
+------------------------------------------------------------------------------
+
+Problem 4 (Asdf4):
+What is the equation of a parabola with vertex (2, 5) and opens downward?
+A) (x - 2)^2 = 10(y - 5)
+B) (y - 5)^2 = -10(x - 2)
+C) y = -(x - 2)^2 + 5
+D) y = (x - 2)^2 - 5
+Correct Answer: B
+
+Solution:
+The equation of a parabola in vertex form is given by
+(y - k) = a(x - h)^2,
+where (h, k) is the vertex and a determines the direction of opening. Given a vertex at (2, 5), we have h = 2 and k = 5. Since the parabola opens downward, a must be negative. The equation becomes
+(y - 5) = -a(x - 2)^2.
+To find a, we can use one of the properties of a parabola. For example, if we consider the point (0, 1), which lies on the parabola because it is equidistant from the vertex in both x and y directions, we can substitute these values into the equation:
+1 = -a(0 - 2)^2
+1 = -4a
+a = -1/4.
+The equation becomes
+(y - 5) = -(1/4)(x - 2)^2,
+which simplifies to
+(y - 5) = -1/4(x^2 - 4x + 4),
+and further expanding gives us
+y = -(x - 2)^2 + 5.
+The correct answer is C.
+
+Explanation:
+A common mistake is to forget that the coefficient a must be negative for a downward- opening parabola or to make errors when expanding the equation.
+
+Common mistake note:
+Common mistake: Forgetting the sign of a for a downward-opening parabola.
+------------------------------------------------------------------------------
+
+Problem 5 (Asdf5):
+What is the standard form of the equation of a line passing through (1, 4) and parallel to y = 3x - 2?
+A) y = 3x + 1
+B) y = x + 1
+C) y = 3x - 1
+D) y = 0.5x + 4
+Correct Answer: A
+
+Solution:
+Two lines are parallel if they have the same slope. The given line y = 3x - 2 has a slope of 3, so the equation of the parallel line will also have a slope of 3. Using the point-slope form, we can write the equation as
+y - 4 = 3(x - 1),
+which expands to
+y = 3x + (3 	imes -1) + 4,
+and simplifies to
+y = 3x + 1.
+The correct answer is A.
+
+Explanation:
+A common mistake is to mix up the slope or forget to use the point-slope form when writing the equation.
+
+Common mistake note:
+Common mistake: Mixing up the slope or using the wrong form of the equation.
+------------------------------------------------------------------------------
+
+Problem 6 (Asdf6):
+What is the equation of a circle tangent to the x-axis with radius 7?
+A) (x - 7)^2 + (y - 0)^2 = 49
+B) (x - 0)^2 + (y - 7)^2 = 49
+C) x^2 + y^2 = 49
+D) x^2 + (y - 7)^2 = 49
+Correct Answer: C
+
+Solution:
+A circle is tangent to the x-axis if its center has a y-coordinate of 0. Given a radius of 7, the equation of the circle in standard form is
+(x - h)^2 + (y - k)^2 = r^2,
+where (h, k) is the center and r is the radius. Since the circle is tangent to the x-axis, we have k = 0, so the equation becomes
+x^2 + (y - 0)^2 = 7^2,
+which simplifies to
+x^2 + y^2 = 49.
+The correct answer is C.
+
+Explanation:
+A common mistake is to forget that a circle tangent to the x-axis has its center on the x-axis or to mix up the coordinates in the equation.
+
+Common mistake note:
+Common mistake: Forgetting that the center of a tangent circle lies on the axis of tangency.
+------------------------------------------------------------------------------
+
+Problem 7 (Asdf7):
+What is the equation of a linear function passing through (1, 2) with a rate of change of -3?
+A) y = -3x + 5
+B) y = 3x - 1
+C) y = -3x + 1
+D) y = x - 1
+Correct Answer: A
+
+Solution:
+The rate of change, or slope, of a linear function is given by the coefficient of x. Given a slope of -3 and a point (1, 2), we can use the point-slope form to find the equation:
+y - y1 = m(x - x1),
+where m is the slope and (x1, y1) is a point on the line. Substituting the values gives us
+y - 2 = -3(x - 1),
+which expands to
+y = -3x + 3 + 2,
+and simplifies to
+y = -3x + 5.
+The correct answer is A.
+
+Explanation:
+A common mistake is to mix up the slope or forget to use the point-slope form when writing the equation.
+
+Common mistake note:
+Common mistake: Mixing up the slope or using the wrong form of the equation.
+------------------------------------------------------------------------------

@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.11.15",
+  "objective_text": "Apply to signal processing",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": "Asd123",
+      "stem": "A continuous-time signal x(t) is sampled at a rate of fs = 8 kHz and then passed through an ideal low-pass filter with a cutoff frequency of fc = 4 kHz. What is the maximum frequency component in the filtered signal?",
+      "choices": {
+        "A": "1 kHz",
+        "B": "2 kHz",
+        "C": "4 kHz",
+        "D": "8 kHz"
+      },
+      "correct_choice": "C",
+      "solution": "The Nyquist-Shannon sampling theorem states that a continuous-time signal must be sampled at least twice as fast as its highest frequency component to avoid aliasing. Since the cutoff frequency of the low-pass filter is 4 kHz, any frequency components above this value will be attenuated or removed. Therefore, the maximum frequency component in the filtered signal will not exceed fc = 4 kHz.",
+      "explanation": "The Nyquist rate is twice the highest frequency component. In this case, fs = 8 kHz, which satisfies the Nyquist criterion for signals up to 4 kHz. The low-pass filter further ensures that only frequencies below 4 kHz remain in the signal.",
+      "common_mistake_notes": "A common mistake would be selecting option A (1 kHz), assuming that the maximum frequency is halved by the low-pass filter. However, the sampling rate ensures that frequencies up to 4 kHz are preserved before filtering."
+    },
+    {
+      "id": "Asd456",
+      "stem": "A discrete- time signal x[n] with a Fourier transform X(e^(jwt)) has a non-zero value at w = π rad/ sample. After applying an ideal downsampling operation by a factor of 2, what is the frequency bin in which this component will appear in the new Fourier transform?",
+      "choices": {
+        "A": "π/2 rad/ sample",
+        "B": "π rad/ sample",
+        "C": "3π/2 rad/ sample",
+        "D": "2π rad/ sample"
+      },
+      "correct_choice": "A",
+      "solution": "When a discrete-time signal is downsampled by a factor of M, the frequency axis is compressed by the same factor. The non-zero value at w = π rad/ sample in X(e^(jwt)) will appear at (π/M) rad/ sample in the new Fourier transform.",
+      "explanation": "Downsampling reduces the sampling rate and folds higher frequency components onto lower ones. In this case, downsampling by 2 means that each second sample is discarded, effectively halving the sampling rate and compressing the frequency axis by a factor of 2.",
+      "common_mistake_notes": "A common mistake would be selecting option B (π rad/ sample), assuming that the frequency remains unchanged after downsampling. However, the frequency axis is scaled due to the reduction in the sampling rate."
+    },
+    {
+      "id": "Asd789",
+      "stem": "A discrete-time signal x[n] is passed through an LTI system with impulse response h[n] = δ[n - 2]. What is the output of the system at n = 4?",
+      "choices": {
+        "A": "x[1]",
+        "B": "x[2]",
+        "C": "x[3]",
+        "D": "x[4]"
+      },
+      "correct_choice": "C",
+      "solution": "The impulse response h[n] shifted by 2 samples to the right will be h[n - 2]. At n = 4, the output is x[4 - 2] = x[2].",
+      "explanation": "In an LTI system, the output at any time step is a linear combination of past and present inputs. When the impulse response is shifted to the right by 2 samples, it delays the input signal accordingly.",
+      "common_mistake_notes": "A common mistake would be selecting option A (x[1]), assuming that the delay is one sample instead of two. The shift in h[n] affects the time index of x[n]."
+    },
+    {
+      "id": "Asd012",
+      "stem": "A continuous-time signal x(t) is passed through a Hilbert transformer, which results in an analytic signal y(t). What can be concluded about the relationship between x(t) and y(t)?",
+      "choices": {
+        "A": "y(t) has no negative frequency components.",
+        "B": "x(t) and y(t) have the same energy.",
+        "C": "The real part of y(t) is equal to x(t).",
+        "D": "The imaginary part of y(t) is a 90-degree phase shift of x(t)."
+      },
+      "correct_choice": "D",
+      "solution": "A Hilbert transformer creates an analytic signal by adding a 90-degree phase-shifted version of the original signal to it. The real part remains unchanged, while the imaginary part represents a 90-degree phase shift.",
+      "explanation": "The Hilbert transform is used to obtain the instantaneous frequency and amplitude of a signal. It does not change the energy or introduce new frequency components; it merely shifts the phase.",
+      "common_mistake_notes": "A common mistake would be selecting option C (the real part of y(t) is equal to x(t)), overlooking that the Hilbert transformer adds a phase-shifted component to x(t)."
+    },
+    {
+      "id": "Asd345",
+      "stem": "In digital signal processing, what is the purpose of windowing a signal before performing an FFT analysis?",
+      "choices": {
+        "A": "To reduce spectral leakage.",
+        "B": "To increase the sampling rate.",
+        "C": "To remove high-frequency components.",
+        "D": "To add artificial padding to the signal."
+      },
+      "correct_choice": "A",
+      "solution": "Windowing a signal before performing an FFT analysis helps in reducing spectral leakage, which occurs when the discontinuities at the beginning and end of the finite-length signal interfere with frequency-domain results.",
+      "explanation": "Spectral leakage is an artifact that arises due to the periodic extension of non-periodic signals. Window functions are used to taper the signal's amplitude at the edges, reducing this interference and improving the accuracy of frequency analysis.",
+      "common_mistake_notes": "A common mistake would be selecting option B (increase the sampling rate), as windowing does not affect the sampling rate but rather modifies the signal's shape."
+    },
+    {
+      "id": "Asd678",
+      "stem": "What is the effect of a Butterworth low-pass filter on a signal with a frequency component at 1 kHz, when its cutoff frequency is set to 2 kHz?",
+      "choices": {
+        "A": "The 1 kHz component will be attenuated.",
+        "B": "The 1 kHz component will be amplified.",
+        "C": "The 1 kHz component will remain unchanged.",
+        "D": "The filter will remove all frequency components."
+      },
+      "correct_choice": "A",
+      "solution": "A Butterworth low-pass filter allows frequencies below its cutoff frequency to pass through with minimal attenuation, while attenuating higher frequencies. Since the cutoff is set to 2 kHz and the frequency component is at 1 kHz, it will not be affected much.",
+      "explanation": "Butterworth filters are characterized by a smooth roll-off in the stopband, meaning that they gradually reduce the amplitude of frequencies above the cutoff point.",
+      "common_mistake_notes": "A common mistake would be selecting option B (amplify), as low-pass filters do not amplify frequency components; they either pass them through or attenuate them."
+    },
+    {
+      "id": "Asd901",
+      "stem": "In a digital communication system, what is the purpose of pulse shaping?",
+      "choices": {
+        "A": "To increase the signal- to-noise ratio.",
+        "B": "To reduce inter-symbol interference (ISI).",
+        "C": "To improve the channel bandwidth efficiency.",
+        "D": "To eliminate noise from the received signal."
+      },
+      "correct_choice": "B",
+      "solution": "Pulse shaping is used to minimize inter-symbol interference in digital communication systems by shaping the waveform of each symbol, ensuring that they do not overlap and interfere with one another.",
+      "explanation": "Inter-symbol interference occurs when symbols from previous or subsequent time slots interfere with the current symbol. Pulse shaping helps in mitigating this effect by making sure that the signal energy is concentrated within a specific time interval.",
+      "common_mistake_notes": "A common mistake would be selecting option A (increase SNR), as pulse shaping does not directly improve the signal-to-noise ratio but rather focuses on reducing interference."
+    }
+  ]
+}

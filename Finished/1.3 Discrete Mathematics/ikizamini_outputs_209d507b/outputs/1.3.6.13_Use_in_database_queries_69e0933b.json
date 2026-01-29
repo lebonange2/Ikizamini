@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.6.13",
+  "objective_text": "Use in database queries",
+  "difficulty_profile": "medium",
+  "questions": [
+    {
+      "id": ":Q1",
+      "stem": "Which SQL statement correctly selects all customers from the 'customers' table who live in either 'New York' or 'Los Angeles'?",
+      "choices": {
+        "A": "SELECT * FROM customers WHERE city = 'New York' OR city = 'Los Angeles'",
+        "B": "SELECT * FROM customers WHERE city IN ('New York', 'Los Angeles')",
+        "C": "SELECT * FROM customers WHERE city LIKE '%York%' OR LIKE '% Angeles'",
+        "D": "SELECT * FROM customers WHERE city = 'New York'; SELECT * FROM customers WHERE city = 'Los Angeles'"
+      },
+      "correct_choice": "B",
+      "solution": "The correct SQL statement uses the IN operator to select multiple values within a single condition. Answer B is correct because it uses the IN operator with parentheses around the list of cities.",
+      "explanation": "The IN operator allows for matching one value against a list of values in a WHERE clause. Option A uses OR, which would match either city independently. Option C uses LIKE with wildcards, which would not be specific enough to only match 'New York' and 'Los Angeles'. Option D executes two separate queries, which is not the same as selecting all customers from both cities within a single query.",
+      "common_mistake_notes": "Common mistake: Using OR instead of IN. This would return customers who live in either city but not necessarily those living in both."
+    },
+    {
+      "id": ":Q2",
+      "stem": "Which SQL statement correctly selects all orders with a status of 'Completed' or 'Shipped' from the 'orders' table?",
+      "choices": {
+        "A": "SELECT * FROM orders WHERE order_status = 'Completed' AND 'Shipped'",
+        "B": "SELECT * FROM orders WHERE order_status IN ('Completed', 'Shipped')",
+        "C": "SELECT * FROM orders WHERE order_status LIKE '%ompleted%' OR '%hipped'",
+        "D": "SELECT * FROM orders WHERE order_status = 'Completed'; SELECT * FROM orders WHERE order_status = 'Shipped'"
+      },
+      "correct_choice": "B",
+      "solution": "The correct SQL statement uses the IN operator to select multiple values within a single condition. Answer B is correct because it uses the IN operator with parentheses around the list of statuses.",
+      "explanation": "The IN operator allows for matching one value against a list of values in a WHERE clause. Option A combines two different status values with AND, which would only match orders with both statuses simultaneously. Option C uses LIKE with wildcards, which is not specific enough to only match 'Completed' and 'Shipped'. Option D executes two separate queries, which is not the same as selecting all orders with either status within a single query.",
+      "common_mistake_notes": "Common mistake: Using AND instead of IN. This would return orders with both statuses simultaneously, not just those with either one."
+    },
+    {
+      "id": ":Q3",
+      "stem": "Which SQL statement correctly selects all products from the 'products' table that have a price greater than $50 or less than $25?",
+      "choices": {
+        "A": "SELECT * FROM products WHERE price > 50 OR < 25",
+        "B": "SELECT * FROM products WHERE price BETWEEN 25 AND 50",
+        "C": "SELECT * FROM products WHERE price IN (50, 25)",
+        "D": "SELECT * FROM products WHERE price > 50; SELECT * FROM products WHERE price < 25"
+      },
+      "correct_choice": "A",
+      "solution": "The correct SQL statement uses the OR operator to select records that meet either condition. Answer A is correct because it correctly applies the greater than and less than operators with OR.",
+      "explanation": "The OR operator combines two conditions, returning rows that match either one. Option B uses BETWEEN, which would return products priced between $25 and $50 (inclusive). Option C uses IN with a single price range, which is not correct for this scenario. Option D executes two separate queries, which is not the same as selecting all products within the specified price ranges within a single query.",
+      "common_mistake_notes": "Common mistake: Using BETWEEN instead of OR. This would return products priced between $25 and $50, not those priced above or below this range."
+    },
+    {
+      "id": ":Q4",
+      "stem": "Which SQL statement correctly selects all employees with the job title 'Manager' or 'Supervisor' from the 'employees' table?",
+      "choices": {
+        "A": "SELECT * FROM employees WHERE job_title = 'Manager' OR 'Supervisor'",
+        "B": "SELECT * FROM employees WHERE job_title IN ('Manager', 'Supervisor')",
+        "C": "SELECT * FROM employees WHERE job_title LIKE '%anager%' OR '%upervisor'",
+        "D": "SELECT * FROM employees WHERE job_title = 'Manager'; SELECT * FROM employees WHERE job_title = 'Supervisor'"
+      },
+      "correct_choice": "B",
+      "solution": "The correct SQL statement uses the IN operator to select multiple values within a single condition. Answer B is correct because it uses the IN operator with parentheses around the list of job titles.",
+      "explanation": "The IN operator allows for matching one value against a list of values in a WHERE clause. Option A combines two different job titles with OR, which would only match employees with both job titles simultaneously. Option C uses LIKE with wildcards, which is not specific enough to only match 'Manager' and 'Supervisor'. Option D executes two separate queries, which is not the same as selecting all employees with either job title within a single query.",
+      "common_mistake_notes": "Common mistake: Using AND instead of IN. This would return employees with both job titles simultaneously, not just those with either one."
+    },
+    {
+      "id": ":Q5",
+      "stem": "Which SQL statement correctly selects all books from the 'books' table that were published in 2018 or 2020?",
+      "choices": {
+        "A": "SELECT * FROM books WHERE year_published = 2018 OR 2020",
+        "B": "SELECT * FROM books WHERE year_published IN (2018, 2020)",
+        "C": "SELECT * FROM books WHERE year_published BETWEEN 2018 AND 2020",
+        "D": "SELECT * FROM books WHERE year_published = 2018; SELECT * FROM books WHERE year_published = 2020"
+      },
+      "correct_choice": "B",
+      "solution": "The correct SQL statement uses the IN operator to select multiple values within a single condition. Answer B is correct because it uses the IN operator with parentheses around the list of years.",
+      "explanation": "The IN operator allows for matching one value against a list of values in a WHERE clause. Option A combines two different years with OR, which would only match books published in either year independently. Option C uses BETWEEN, which would return books published between 2018 and 2020 (inclusive). Option D executes two separate queries, which is not the same as selecting all books published in both years within a single query.",
+      "common_mistake_notes": "Common mistake: Using OR instead of IN. This would return books published in either year independently, not just those published in both."
+    },
+    {
+      "id": ":Q6",
+      "stem": "Which SQL statement correctly selects all users with the email domain 'gmail.com' or 'yahoo.com' from the 'users' table?",
+      "choices": {
+        "A": "SELECT * FROM users WHERE email LIKE '%gmail.com' OR '%yahoo.com'",
+        "B": "SELECT * FROM users WHERE email = 'gmail.com' OR 'yahoo.com'",
+        "C": "SELECT * FROM users WHERE email IN ('%gmail.com', '%yahoo.com')",
+        "D": "SELECT * FROM users WHERE email = 'gmail.com'; SELECT * FROM users WHERE email = 'yahoo.com'"
+      },
+      "correct_choice": "A",
+      "solution": "The correct SQL statement uses the LIKE operator with wildcards to match email domains. Answer A is correct because it correctly applies wildcards to match both email domains.",
+      "explanation": "The LIKE operator allows for pattern matching within a string value in a WHERE clause. Option B compares email addresses directly, which would not match any records. Option C uses IN with wildcards, which is incorrect syntax. Option D executes two separate queries, which is not the same as selecting all users with either email domain within a single query.",
+      "common_mistake_notes": "Common mistake: Using = instead of LIKE. This would not return any results because it compares entire email addresses directly."
+    },
+    {
+      "id": ":Q7",
+      "stem": "Which SQL statement correctly selects all products from the 'products' table that have a category of 'Electronics' or 'Clothing'?",
+      "choices": {
+        "A": "SELECT * FROM products WHERE product_category = 'Electronics' OR 'Clothing'",
+        "B": "SELECT * FROM products WHERE product_category IN ('Electronics', 'Clothing')",
+        "C": "SELECT * FROM products WHERE product_category LIKE '%lectronics%' OR '%lothing'",
+        "D": "SELECT * FROM products WHERE product_category = 'Electronics'; SELECT * FROM products WHERE product_category = 'Clothing'"
+      },
+      "correct_choice": "B",
+      "solution": "The correct SQL statement uses the IN operator to select multiple values within a single condition. Answer B is correct because it uses the IN operator with parentheses around the list of categories.",
+      "explanation": "The IN operator allows for matching one value against a list of values in a WHERE clause. Option A combines two different categories with OR, which would only match products with both categories simultaneously. Option C uses LIKE with wildcards, which is not specific enough to only match 'Electronics' and 'Clothing'. Option D executes two separate queries, which is not the same as selecting all products with either category within a single query.",
+      "common_mistake_notes": "Common mistake: Using AND instead of IN. This would return products with both categories simultaneously, not just those with either one."
+    }
+  ]
+}

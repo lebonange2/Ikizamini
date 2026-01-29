@@ -1,0 +1,105 @@
+{
+  "objective_id": "1.3.14.9",
+  "objective_text": "Apply Karnaugh maps (K-maps)",
+  "difficulty_profile": "easy→medium mixed",
+  "questions": [
+    {
+      "id": "Asdf",
+      "stem": "Simplify the Boolean expression using a 2x2 Karnaugh map: A'B' + AB + ABC",
+      "choices": {
+        "A": "A'C'",
+        "B": "A'B'",
+        "C": "B+C",
+        "D": "A+B"
+      },
+      "correct_choice": "B",
+      "solution": "The Karnaugh map for the given expression is as follows:\n\n   |    | A' B'\n--+---+-----\n A'| 1  | 0  \n--+---+-----\n AB| 1  | 1  \n--+---+-----\n ABC| 0  | 1  \n\nGroup the 1s in the map to form a largest possible grouping:\n\n   |    | A' B'\n--+---+-----\n A'| 1  |     \n--+---+-----\n AB| 1  | 1  \n--+---+-----\n ABC|\n\nThe largest grouping is 2 cells, which gives us the simplified expression A'B'.",
+      "explanation": "The Karnaugh map helps to visualize and simplify Boolean expressions by grouping similar terms. In this case, grouping A'B' and AB results in a simplified form of A'B'.",
+      "common_mistake_notes": "A common mistake is not grouping the 1s correctly or attempting to group more than 4 cells at once. Remember that Karnaugh maps for up to 3 variables allow grouping of up to 4 adjacent cells."
+    },
+    {
+      "id": "Asdf2",
+      "stem": "Simplify the Boolean expression using a 4x4 Karnaugh map: A'B'C'D' + ABC'D + AB'C'D + ABCD'",
+      "choices": {
+        "A": "A'C'D'",
+        "B": "AB'C'D'",
+        "C": "ABC'D'",
+        "D": "ABCD'"
+      },
+      "correct_choice": "C",
+      "solution": "The Karnaugh map for the given expression is as follows:\n\n   |    | A' B'\n--+---+-----\n A'| 1  | 0  \n--+---+-----\n ABC| 0  | 1  \n--+---+-----\n AB'C| 1  | 0  \n--+---+-----\n ABCD|\n\nGroup the 1s in the map to form a largest possible grouping:\n\n   |    | A' B'\n--+---+-----\n A'| 1  |     \n--+---+-----\n ABC|      \n--+---+-----\n AB'C|\n--+---+-----\n ABCD|\n\nThe largest grouping is 4 cells, which gives us the simplified expression ABC'D'.",
+      "explanation": "The Karnaugh map helps to visualize and simplify Boolean expressions by grouping similar terms. In this case, grouping A'B'C'D' and ABCD' results in a simplified form of ABC'D'.",
+      "common_mistake_notes": "A common mistake is not recognizing that the 1s are diagonally adjacent in this case. It's important to consider all possible groupings, including diagonal ones when working with larger Karnaugh maps."
+    },
+    {
+      "id": "Asdf3",
+      "stem": "Simplify the Boolean expression using a 2x2 Karnaugh map: A'B' + A'C'D' + ABCD",
+      "choices": {
+        "A": "A'B'",
+        "B": "A'C' D'",
+        "C": "ABCD",
+        "D": "A+C"
+      },
+      "correct_choice": "B",
+      "solution": "The Karnaugh map for the given expression is as follows:\n\n   |    | A' B'\n--+---+-----\n A'| 1  | 0  \n--+---+-----\n AC| 0  | 1  \n--+---+-----\n ABCD|\n\nGroup the 1s in the map to form a largest possible grouping:\n\n   |    | A' B'\n--+---+-----\n A'| 1  |     \n--+---+-----\n AC|      \n--+---+-----\n ABCD|\n\nThe largest grouping is 2 cells, which gives us the simplified expression A'C'D'.",
+      "explanation": "The Karnaugh map helps to visualize and simplify Boolean expressions by grouping similar terms. In this case, grouping A'B' and A'C'D' results in a simplified form of A'C'D'.",
+      "common_mistake_notes": "A common mistake is not recognizing that the 1s are horizontally adjacent in this case. It's essential to consider all possible groupings when working with Karnaugh maps."
+    },
+    {
+      "id": "Asdf4",
+      "stem": "Simplify the Boolean expression using a 3x3 Karnaugh map: A'B'C' + ABC'D + AB'C'D' + ABCD",
+      "choices": {
+        "A": "A'C'D'",
+        "B": "AB'C'D'",
+        "C": "ABC'D'",
+        "D": "ABCD'"
+      },
+      "correct_choice": "B",
+      "solution": "The Karnaugh map for the given expression is as follows:\n\n   |    | A' B'\n--+---+-----\n A'| 1  | 0  \n--+---+-----\n ABC| 0  | 1  \n--+---+-----\n AB'C| 1  | 0  \n--+---+-----\n ABCD|\n\nGroup the 1s in the map to form a largest possible grouping:\n\n   |    | A' B'\n--+---+-----\n A'| 1  |     \n--+---+-----\n AB'C| 1  | 0  \n--+---+-----\n ABCD|\n\nThe largest grouping is 4 cells, which gives us the simplified expression AB'C'D'.",
+      "explanation": "The Karnaugh map helps to visualize and simplify Boolean expressions by grouping similar terms. In this case, grouping A'B'C' and AB'C'D' results in a simplified form of AB'C'D'.",
+      "common_mistake_notes": "A common mistake is not recognizing that the 1s are diagonally adjacent in this case. It's important to consider all possible groupings, including diagonal ones when working with larger Karnaugh maps."
+    },
+    {
+      "id": "Asdf5",
+      "stem": "Simplify the Boolean expression using a 4x4 Karnaugh map: A'B'C'D' + A'B'C'E' + AB'C'D'E' + ABCD'E'",
+      "choices": {
+        "A": "A'B'C'D'",
+        "B": "A'B'C'E'",
+        "C": "AB'C'D'E'",
+        "D": "ABCD'E'"
+      },
+      "correct_choice": "C",
+      "solution": "The Karnaugh map for the given expression is as follows:\n\n   |    | A' B'\n--+---+-----\n A'| 1  | 0  \n--+---+-----\n ABC| 0  | 1  \n--+---+-----\n AB'C| 1  | 0  \n--+---+-----\n ABCD|\n\nGroup the 1s in the map to form a largest possible grouping:\n\n   |    | A' B'\n--+---+-----\n A'| 1  |     \n--+---+-----\n AB'C| 1  | 0  \n--+---+-----\n ABCD|\n\nThe largest grouping is 4 cells, which gives us the simplified expression AB'C'D'E'.",
+      "explanation": "The Karnaugh map helps to visualize and simplify Boolean expressions by grouping similar terms. In this case, grouping A'B'C'D' and AB'C'D'E' results in a simplified form of AB'C'D'E'.",
+      "common_mistake_notes": "A common mistake is not recognizing that the 1s are diagonally adjacent in this case. It's important to consider all possible groupings, including diagonal ones when working with larger Karnaugh maps."
+    },
+    {
+      "id": "Asdf6",
+      "stem": "Simplify the Boolean expression using a 2x2 Karnaugh map: A'B' + ABCD",
+      "choices": {
+        "A": "A'B'",
+        "B": "ABCD",
+        "C": "A'C'D'",
+        "D": "A+C"
+      },
+      "correct_choice": "A",
+      "solution": "The Karnaugh map for the given expression is as follows:\n\n   |    | A' B'\n--+---+-----\n A'| 1  | 0  \n--+---+-----\n ABCD|\n\nGroup the 1s in the map to form a largest possible grouping:\n\n   |    | A' B'\n--+---+-----\n A'| 1  |     \n--+---+-----\n ABCD|\n\nThe largest grouping is 2 cells, which gives us the simplified expression A'B'.",
+      "explanation": "The Karnaugh map helps to visualize and simplify Boolean expressions by grouping similar terms. In this case, grouping A'B' results in a simplified form of A'B'.",
+      "common_mistake_notes": "A common mistake is attempting to group ABCD with A'B', but they are not adjacent in the 2x2 Karnaugh map. Remember that only adjacent cells can be grouped."
+    },
+    {
+      "id": "Asdf7",
+      "stem": "Simplify the Boolean expression using a 3x3 Karnaugh map: A'B'C' + ABC'D + AB'C'D'",
+      "choices": {
+        "A": "A'C'D'",
+        "B": "AB'C'D'",
+        "C": "ABC'D'",
+        "D": "ABCD'"
+      },
+      "correct_choice": "B",
+      "solution": "The Karnaugh map for the given expression is as follows:\n\n   |    | A' B'\n--+---+-----\n A'| 1  | 0  \n--+---+-----\n ABC| 0  | 1  \n--+---+-----\n AB'C| 1  | 0  \n--+---+-----\n ABCD|\n\nGroup the 1s in the map to form a largest possible grouping:\n\n   |    | A' B'\n--+---+-----\n A'| 1  |     \n--+---+-----\n AB'C| 1  | 0  \n--+---+-----\n ABCD|\n\nThe largest grouping is 4 cells, which gives us the simplified expression AB'C'D'.",
+      "explanation": "The Karnaugh map helps to visualize and simplify Boolean expressions by grouping similar terms. In this case, grouping A'B'C' and AB'C'D' results in a simplified form of AB'C'D'.",
+      "common_mistake_notes": "A common mistake is not recognizing that the 1s are diagonally adjacent in this case. It's important to consider all possible groupings, including diagonal ones when working with larger Karnaugh maps."
+    }
+  ]
+}
