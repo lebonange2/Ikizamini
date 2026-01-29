@@ -32,6 +32,92 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+log_info() { echo -e "${YELLOW}[INFO]${NC} $*"; }
+log_ok() { echo -e "${GREEN}[OK]${NC} $*"; }
+log_err() { echo -e "${RED}[ERROR]${NC} $*"; }
+
+SUDO=""
+if [ "${EUID:-$(id -u)}" -ne 0 ]; then
+  if command -v sudo >/dev/null 2>&1; then
+    SUDO="sudo"
+  else
+    log_err "Not running as root and sudo not found; cannot install system packages."
+    exit 1
+  fi
+fi
+
+PKG_MANAGER=""
+INSTALL_CMD=""
+UPDATE_CMD=""
+
+detect_package_manager() {
+  if command -v apt-get >/dev/null 2>&1; then
+    PKG_MANAGER="apt-get"
+    UPDATE_CMD="$SUDO apt-get update -y"
+    INSTALL_CMD="$SUDO apt-get install -y"
+  elif command -v dnf >/dev/null 2>&1; then
+    PKG_MANAGER="dnf"
+    UPDATE_CMD="$SUDO dnf makecache -y"
+    INSTALL_CMD="$SUDO dnf install -y"
+  elif command -v yum >/dev/null 2>&1; then
+    PKG_MANAGER="yum"
+    UPDATE_CMD="$SUDO yum makecache -y"
+    INSTALL_CMD="$SUDO yum install -y"
+  elif command -v pacman >/dev/null 2>&1; then
+    PKG_MANAGER="pacman"
+    UPDATE_CMD="$SUDO pacman -Sy --noconfirm"
+    INSTALL_CMD="$SUDO pacman -S --noconfirm"
+  else
+    log_err "Could not detect a supported package manager (apt-get/dnf/yum/pacman)."
+    exit 1
+  fi
+}
+
+install_system_deps() {
+  detect_package_manager
+  log_info "Updating package lists ($PKG_MANAGER)..."
+  # shellcheck disable=SC2086
+  $UPDATE_CMD >/dev/null 2>&1 || true
+
+  # Minimum packages needed for Ollama install + building venv reliably
+  log_info "Installing system packages (curl, ca-certificates, zstd, python venv tooling)..."
+  if [ "$PKG_MANAGER" = "apt-get" ]; then
+    # shellcheck disable=SC2086
+    $INSTALL_CMD curl ca-certificates zstd python3-venv python3-pip >/dev/null
+  else
+    # Best-effort across distros
+    # shellcheck disable=SC2086
+    $INSTALL_CMD curl ca-certificates zstd python3 python3-pip >/dev/null || true
+  fi
+
+  if ! command -v curl >/dev/null 2>&1; then
+    log_err "curl is still missing after install. Please install curl manually."
+    exit 1
+  fi
+}
+
+install_ollama_if_needed() {
+  if command -v ollama >/dev/null 2>&1; then
+    log_ok "Ollama already installed: $(ollama --version 2>/dev/null || echo installed)"
+    return
+  fi
+
+  log_info "Installing Ollama..."
+  # Official install script; on containers systemd warnings are normal.
+  curl -fsSL https://ollama.com/install.sh | sh
+
+  if ! command -v ollama >/dev/null 2>&1; then
+    log_err "Ollama installation failed."
+    exit 1
+  fi
+  log_ok "Ollama installed: $(ollama --version 2>/dev/null || echo installed)"
+}
+
 IK_INPUT="${IK_INPUT:-Uru.txt}"
 IK_OUTPUT_DIR="${IK_OUTPUT_DIR:-Parallely_Processed}"
 IK_OLLAMA_URL="${IK_OLLAMA_URL:-http://localhost:11434}"
@@ -62,21 +148,19 @@ if ! command -v python3 >/dev/null 2>&1; then
   exit 1
 fi
 
+install_system_deps
+install_ollama_if_needed
+
 if [ ! -d "venv" ]; then
-  echo "[SETUP] Creating venv/ ..."
+  log_info "Creating venv/ ..."
   python3 -m venv venv
 fi
 
-echo "[SETUP] Activating venv and installing deps ..."
+log_info "Activating venv and installing Python deps ..."
 # shellcheck disable=SC1091
 source venv/bin/activate
 python -m pip install -q --upgrade pip
 python -m pip install -q flask requests jsonschema openai
-
-if ! command -v ollama >/dev/null 2>&1; then
-  echo "[ERROR] ollama not found. Install Ollama first (or run ./setup.sh)."
-  exit 1
-fi
 
 START_FLAGS=()
 if [ "$IK_START_OLLAMA" = "1" ]; then
@@ -93,7 +177,7 @@ if [ "${IK_LIMIT}" != "0" ]; then
   LIMIT_FLAGS+=(--limit "$IK_LIMIT")
 fi
 
-echo "[RUN] Starting parallel runner ..."
+log_info "Starting parallel runner ..."
 python3 -u ikizamini_local_parallel.py \
   --input "$IK_INPUT" \
   --output-dir "$IK_OUTPUT_DIR" \
