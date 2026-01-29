@@ -168,7 +168,17 @@ if [ "$IK_START_OLLAMA" = "1" ]; then
   # Start in background if not already responding (non-fatal if already running)
   if ! curl -fsS "$IK_OLLAMA_URL/api/tags" >/dev/null 2>&1; then
     ollama serve >/dev/null 2>&1 &
-    sleep 2
+    # Wait until ready (max IK_WAIT_OLLAMA seconds)
+    for i in $(seq 1 "$IK_WAIT_OLLAMA"); do
+      if curl -fsS "$IK_OLLAMA_URL/api/tags" >/dev/null 2>&1; then
+        break
+      fi
+      sleep 1
+    done
+    if ! curl -fsS "$IK_OLLAMA_URL/api/tags" >/dev/null 2>&1; then
+      log_err "Ollama did not become ready at $IK_OLLAMA_URL after ${IK_WAIT_OLLAMA}s"
+      exit 1
+    fi
   fi
 fi
 
@@ -183,6 +193,8 @@ fi
 export IKIZAMINI_PARALLEL_WORKERS="$IK_WORKERS"
 export IKIZAMINI_OLLAMA_TIMEOUT="$IK_TIMEOUT_S"
 export IKIZAMINI_OLLAMA_RETRIES="$IK_MAX_RETRIES"
+export IKIZAMINI_DEFAULT_WORKER_MODEL="$IK_WORKER_MODEL"
+export IKIZAMINI_DEFAULT_MANAGER_MODEL="$IK_MANAGER_MODEL"
 
 log_info "Starting IKIZAMINI Parallel UI ..."
 python3 -u ikizamini_local_parallel.py

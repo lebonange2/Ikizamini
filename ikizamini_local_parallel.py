@@ -29,6 +29,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List, Optional, Tuple
 
 import ikizamini_local as base  # reuse the full UI + persistence
+import subprocess
 
 
 PARALLEL_WORKERS = int(os.environ.get("IKIZAMINI_PARALLEL_WORKERS", "4"))
@@ -144,58 +145,68 @@ def _process_objective(
 
 def run_job(job_id: str, resume: bool = False) -> None:
     """Parallel objective processing version of ikizamini_local.run_job()."""
-    with base.RUNNER_LOCK:
-        conn = base.db_connect()
-        cur = conn.cursor()
-        cur.execute("SELECT * FROM jobs WHERE job_id=?", (job_id,))
-        job = cur.fetchone()
-        conn.close()
+    try:
+        with base.RUNNER_LOCK:
+            conn = base.db_connect()
+            cur = conn.cursor()
+            cur.execute("SELECT * FROM jobs WHERE job_id=?", (job_id,))
+            job = cur.fetchone()
+            conn.close()
 
-        if not job:
-            return
+            if not job:
+                return
 
-        cfg = json.loads(job["config_json"])
-        ollama_url = cfg["ollama_url"]
-        worker_model = cfg["worker_model"]
-        manager_model = cfg["manager_model"]
-        max_rounds = int(cfg["max_rounds"])
-        num_ctx = int(cfg["num_ctx"])
-        limit = int(cfg.get("limit", 0))
-        timeout_s = int(cfg.get("timeout_s", base.DEFAULT_TIMEOUT_S))
-        max_retries = int(cfg.get("max_retries", base.DEFAULT_MAX_RETRIES))
+            cfg = json.loads(job["config_json"])
+            ollama_url = cfg["ollama_url"]
+            worker_model = cfg["worker_model"]
+            manager_model = cfg["manager_model"]
+            max_rounds = int(cfg["max_rounds"])
+            num_ctx = int(cfg["num_ctx"])
+            limit = int(cfg.get("limit", 0))
+            timeout_s = int(cfg.get("timeout_s", base.DEFAULT_TIMEOUT_S))
+            max_retries = int(cfg.get("max_retries", base.DEFAULT_MAX_RETRIES))
 
-        input_path = job["input_path"]
-        if not input_path or not os.path.exists(input_path):
-            _log(job_id, "ERROR: input file missing; cannot start.")
+            # Diagnostics: show whether Ollama thinks it is using CPU/GPU for the loaded model(s)
+            try:
+                ps_out = subprocess.check_output(["ollama", "ps"], text=True, stderr=subprocess.STDOUT)
+                _log(job_id, "Ollama ps (diagnostic):")
+                for ln in ps_out.strip().splitlines()[:12]:
+                    _log(job_id, ln)
+            except Exception:
+                _log(job_id, "Ollama ps (diagnostic): unavailable")
+
+            input_path = job["input_path"]
+            if not input_path or not os.path.exists(input_path):
+                _log(job_id, "ERROR: input file missing; cannot start.")
+                conn = base.db_connect()
+                conn.execute(
+                    "UPDATE jobs SET status=?, finished_at_unix=? WHERE job_id=?",
+                    ("error", int(time.time()), job_id),
+                )
+                conn.commit()
+                conn.close()
+                return
+
             conn = base.db_connect()
             conn.execute(
-                "UPDATE jobs SET status=?, finished_at_unix=? WHERE job_id=?",
-                ("error", int(time.time()), job_id),
+                "UPDATE jobs SET status=?, started_at_unix=?, heartbeat_unix=? WHERE job_id=?",
+                ("running", job["started_at_unix"] or int(time.time()), int(time.time()), job_id),
             )
             conn.commit()
             conn.close()
-            return
 
-        conn = base.db_connect()
-        conn.execute(
-            "UPDATE jobs SET status=?, started_at_unix=?, heartbeat_unix=? WHERE job_id=?",
-            ("running", job["started_at_unix"] or int(time.time()), int(time.time()), job_id),
-        )
-        conn.commit()
-        conn.close()
+            _log(job_id, "============================================================")
+            _log(job_id, "BACKGROUND GENERATION STARTED (PARALLEL)")
+            _log(job_id, f"Ollama URL: {ollama_url}")
+            _log(job_id, f"Worker model: {worker_model}")
+            _log(job_id, f"Manager model: {manager_model}")
+            _log(job_id, f"Max rounds: {max_rounds}  num_ctx: {num_ctx}")
+            _log(job_id, f"Timeout: {timeout_s}s  Retries: {max_retries}")
+            _log(job_id, f"Objective concurrency: {PARALLEL_WORKERS}")
+            _log(job_id, "============================================================")
 
-        _log(job_id, "============================================================")
-        _log(job_id, "BACKGROUND GENERATION STARTED (PARALLEL)")
-        _log(job_id, f"Ollama URL: {ollama_url}")
-        _log(job_id, f"Worker model: {worker_model}")
-        _log(job_id, f"Manager model: {manager_model}")
-        _log(job_id, f"Max rounds: {max_rounds}  num_ctx: {num_ctx}")
-        _log(job_id, f"Timeout: {timeout_s}s  Retries: {max_retries}")
-        _log(job_id, f"Objective concurrency: {PARALLEL_WORKERS}")
-        _log(job_id, "============================================================")
-
-        with open(input_path, "r", encoding="utf-8", errors="replace") as f:
-            content = f.read()
+            with open(input_path, "r", encoding="utf-8", errors="replace") as f:
+                content = f.read()
 
         roots = base.parse_objectives(content)
         objectives = base.collect_learning_objectives_with_paths(roots)
@@ -305,6 +316,19 @@ def run_job(job_id: str, resume: bool = False) -> None:
         _log(job_id, "============================================================")
         _log(job_id, f"JOB COMPLETED: {job_id}  (outputs persisted to disk + DB)")
         _log(job_id, "============================================================")
+    except Exception as e:
+        # Ensure UI doesn't look stuck forever if the runner crashes.
+        try:
+            _log(job_id, f"FATAL: job runner crashed: {e}")
+            conn = base.db_connect()
+            conn.execute(
+                "UPDATE jobs SET status=?, finished_at_unix=?, heartbeat_unix=? WHERE job_id=?",
+                ("error", int(time.time()), int(time.time()), job_id),
+            )
+            conn.commit()
+            conn.close()
+        except Exception:
+            pass
 
 
 # Override the base runner used by the existing UI routes.

@@ -70,6 +70,10 @@ DEFAULT_TIMEOUT_S = int(os.environ.get("IKIZAMINI_OLLAMA_TIMEOUT", "600"))  # lo
 DEFAULT_MAX_RETRIES = int(os.environ.get("IKIZAMINI_OLLAMA_RETRIES", "4"))
 HEARTBEAT_EVERY_SEC = 10
 
+# Allow env-driven model defaults (useful on Runpod where you pre-pull a model like gemma3)
+DEFAULT_WORKER_MODEL = os.environ.get("IKIZAMINI_DEFAULT_WORKER_MODEL", "qwen:32b")
+DEFAULT_MANAGER_MODEL = os.environ.get("IKIZAMINI_DEFAULT_MANAGER_MODEL", DEFAULT_WORKER_MODEL)
+
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(JOBS_DIR, exist_ok=True)
 
@@ -1838,12 +1842,12 @@ PAGE_HOME = """
 
               <div class="field">
                 <label>Worker model</label>
-                <input type="text" name="worker_model" value="qwen:32b" />
+                <input type="text" name="worker_model" value="{{ default_worker_model }}" />
               </div>
 
               <div class="field">
                 <label>Manager model</label>
-                <input type="text" name="manager_model" value="qwen:32b" />
+                <input type="text" name="manager_model" value="{{ default_manager_model }}" />
               </div>
 
               <div class="field">
@@ -2132,6 +2136,8 @@ def home():
         jobs=jobs,
         ui_css=UI_BASE_CSS,
         ui_title=os.environ.get("IKIZAMINI_UI_TITLE", "IKIZAMINI"),
+        default_worker_model=DEFAULT_WORKER_MODEL,
+        default_manager_model=DEFAULT_MANAGER_MODEL,
         db_path=DB_PATH,
         data_dir=DATA_DIR,
         abs_data_dir=os.path.abspath(DATA_DIR),
@@ -2205,8 +2211,8 @@ def generate():
     content = up.read().decode("utf-8", errors="replace")
 
     ollama_url = request.form.get("ollama_url", "http://localhost:11434").strip()
-    worker_model = request.form.get("worker_model", "qwen:32b").strip()
-    manager_model = request.form.get("manager_model", "qwen:32b").strip()
+    worker_model = request.form.get("worker_model", DEFAULT_WORKER_MODEL).strip()
+    manager_model = request.form.get("manager_model", DEFAULT_MANAGER_MODEL).strip()
     max_rounds = int(request.form.get("max_rounds", "6"))
     num_ctx = int(request.form.get("num_ctx", "8192"))
     timeout_s = int(request.form.get("timeout_s", str(DEFAULT_TIMEOUT_S)))
