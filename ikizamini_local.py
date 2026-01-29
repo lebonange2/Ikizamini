@@ -108,6 +108,7 @@ def db_init() -> None:
       started_at_unix INTEGER,
       finished_at_unix INTEGER,
       heartbeat_unix INTEGER,
+      cancel_requested INTEGER DEFAULT 0,
       input_filename TEXT,
       input_path TEXT,
       config_json TEXT NOT NULL,
@@ -139,6 +140,18 @@ def db_init() -> None:
     conn.commit()
     conn.close()
 
+    # Best-effort migration for existing DBs created before cancel_requested existed
+    try:
+        conn = db_connect()
+        conn.execute("ALTER TABLE jobs ADD COLUMN cancel_requested INTEGER DEFAULT 0;")
+        conn.commit()
+        conn.close()
+    except Exception:
+        try:
+            conn.close()
+        except Exception:
+            pass
+
 
 def db_mark_stale_jobs_as_interrupted(stale_after_sec: int = 3600) -> None:
     """If server crashed, jobs may be stuck in running/queued. Mark as interrupted if heartbeat is old."""
@@ -161,6 +174,40 @@ def db_mark_stale_jobs_as_interrupted(stale_after_sec: int = 3600) -> None:
         elif (now - created) > stale_after_sec:
             cur.execute("UPDATE jobs SET status=? WHERE job_id=?", ("interrupted", r["job_id"]))
 
+    conn.commit()
+    conn.close()
+
+
+def is_cancel_requested(job_id: str) -> bool:
+    try:
+        conn = db_connect()
+        cur = conn.cursor()
+        cur.execute("SELECT cancel_requested FROM jobs WHERE job_id=?", (job_id,))
+        row = cur.fetchone()
+        conn.close()
+        return bool(row and int(row["cancel_requested"] or 0) == 1)
+    except Exception:
+        return False
+
+
+def request_cancel(job_id: str) -> None:
+    conn = db_connect()
+    conn.execute("UPDATE jobs SET cancel_requested=1 WHERE job_id=?", (job_id,))
+    conn.commit()
+    conn.close()
+
+
+def mark_remaining_objectives_cancelled(job_id: str) -> None:
+    """Mark any objectives not completed as cancelled."""
+    conn = db_connect()
+    conn.execute(
+        """
+        UPDATE objectives
+        SET status='cancelled', finished_at_unix=?, error_text=COALESCE(error_text,'Cancelled by user')
+        WHERE job_id=? AND status IN ('pending')
+        """,
+        (int(time.time()), job_id),
+    )
     conn.commit()
     conn.close()
 
@@ -1387,6 +1434,15 @@ def run_job(job_id: str, resume: bool = False) -> None:
         last_hb = time.time()
 
         for idx, obj in enumerate(objectives, start=1):
+            if is_cancel_requested(job_id):
+                append_job_log(job_id, "CANCEL REQUESTED: stopping job (sequential).")
+                conn = db_connect()
+                conn.execute("UPDATE jobs SET status=?, heartbeat_unix=? WHERE job_id=?",
+                             ("cancelling", int(time.time()), job_id))
+                conn.commit()
+                conn.close()
+                break
+
             if time.time() - last_hb >= HEARTBEAT_EVERY_SEC:
                 update_job_heartbeat(job_id)
                 last_hb = time.time()
@@ -1468,11 +1524,19 @@ def run_job(job_id: str, resume: bool = False) -> None:
             conn.commit()
             conn.close()
 
-        conn = db_connect()
-        conn.execute("UPDATE jobs SET status=?, finished_at_unix=?, heartbeat_unix=? WHERE job_id=?",
-                     ("done", int(time.time()), int(time.time()), job_id))
-        conn.commit()
-        conn.close()
+        if is_cancel_requested(job_id):
+            mark_remaining_objectives_cancelled(job_id)
+            conn = db_connect()
+            conn.execute("UPDATE jobs SET status=?, finished_at_unix=?, heartbeat_unix=? WHERE job_id=?",
+                         ("cancelled", int(time.time()), int(time.time()), job_id))
+            conn.commit()
+            conn.close()
+        else:
+            conn = db_connect()
+            conn.execute("UPDATE jobs SET status=?, finished_at_unix=?, heartbeat_unix=? WHERE job_id=?",
+                         ("done", int(time.time()), int(time.time()), job_id))
+            conn.commit()
+            conn.close()
 
         append_job_log(job_id, "============================================================")
         append_job_log(job_id, f"JOB COMPLETED: {job_id}  (outputs persisted to disk + DB)")
@@ -1749,6 +1813,8 @@ input[type=text]:focus, input[type=number]:focus, input[type=file]:focus{
 .status.error{ color: rgba(255,92,119,.95); border-color: rgba(255,92,119,.35); background: rgba(255,92,119,.08); }
 .status.queued{ color: rgba(255,204,102,.95); border-color: rgba(255,204,102,.35); background: rgba(255,204,102,.08); }
 .status.interrupted{ color: rgba(255,204,102,.95); border-color: rgba(255,204,102,.35); background: rgba(255,204,102,.08); }
+.status.cancelling{ color: rgba(255,204,102,.95); border-color: rgba(255,204,102,.35); background: rgba(255,204,102,.08); }
+.status.cancelled{ color: rgba(255,92,119,.95); border-color: rgba(255,92,119,.35); background: rgba(255,92,119,.08); }
 
 .hr{height:1px; background: rgba(255,255,255,.08); margin:12px 0;}
 
@@ -2007,6 +2073,13 @@ PAGE_JOB = """
             <a class="btn primary" href="/download/master/{{ job_id }}">Download master (.txt)</a>
             <a class="btn" href="/download/zip/{{ job_id }}">Download ZIP (partial ok)</a>
             <a class="btn good" href="/resume/{{ job_id }}" title="Resume skips done/failed objectives">Resume</a>
+            <form method="post" action="/terminate/{{ job_id }}" style="display:inline;">
+              <button class="btn" type="submit"
+                style="border-color: rgba(255,92,119,.35); background: rgba(255,92,119,.10);"
+                onclick="return confirm('Terminate this job? In-flight requests may finish, but no new objectives will start.');">
+                Terminate
+              </button>
+            </form>
             <a class="btn" href="/">Home</a>
           </div>
 
@@ -2162,6 +2235,30 @@ def job_view(job_id: str):
         db_path=DB_PATH,
         data_dir=DATA_DIR,
     )
+
+
+@app.post("/terminate/<job_id>")
+def terminate_job(job_id: str):
+    conn = db_connect()
+    cur = conn.cursor()
+    cur.execute("SELECT status FROM jobs WHERE job_id=?", (job_id,))
+    row = cur.fetchone()
+    conn.close()
+    if not row:
+        abort(404)
+
+    status = row["status"]
+    if status in ("done", "error", "cancelled"):
+        return redirect(f"/job/{job_id}")
+
+    request_cancel(job_id)
+    append_job_log(job_id, "Terminate requested from UI.")
+    conn = db_connect()
+    conn.execute("UPDATE jobs SET status=?, heartbeat_unix=? WHERE job_id=?",
+                 ("cancelling", int(time.time()), job_id))
+    conn.commit()
+    conn.close()
+    return redirect(f"/job/{job_id}")
 
 
 

@@ -25,7 +25,7 @@ import os
 import json
 import time
 import threading
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed, wait, FIRST_COMPLETED
 from typing import Any, Dict, List, Optional, Tuple
 
 import ikizamini_local as base  # reuse the full UI + persistence
@@ -34,6 +34,10 @@ import subprocess
 
 PARALLEL_WORKERS = int(os.environ.get("IKIZAMINI_PARALLEL_WORKERS", "4"))
 LOG_LOCK = threading.Lock()
+
+
+def _cancel_requested(job_id: str) -> bool:
+    return base.is_cancel_requested(job_id)  # type: ignore
 
 
 def _log(job_id: str, message: str) -> None:
@@ -271,44 +275,84 @@ def run_job(job_id: str, resume: bool = False) -> None:
         hb_thread = threading.Thread(target=_hb_loop, daemon=True)
         hb_thread.start()
 
-        # Parallel objective execution
+        # Parallel objective execution (supports termination: stop scheduling new work)
         total = len(to_run)
+        cancelling = False
         with ThreadPoolExecutor(max_workers=max(1, PARALLEL_WORKERS)) as ex:
-            futures = []
-            for i, obj in enumerate(to_run, start=1):
-                futures.append(
-                    ex.submit(
-                        _process_objective,
-                        job_id,
-                        obj,
-                        i,
-                        total,
-                        ollama_url,
-                        worker_model,
-                        manager_model,
-                        max_rounds,
-                        num_ctx,
-                        timeout_s,
-                        max_retries,
-                        failures,
-                        failures_lock,
-                    )
-                )
-            # Ensure exceptions propagate into logs
-            for fut in as_completed(futures):
+            futs: Dict[Any, Tuple[int, Dict[str, Any]]] = {}
+            it = iter(list(enumerate(to_run, start=1)))
+
+            def submit_next() -> bool:
+                nonlocal cancelling
+                if cancelling or _cancel_requested(job_id):
+                    cancelling = True
+                    return False
                 try:
-                    fut.result()
-                except Exception as e:
-                    _log(job_id, f"INTERNAL ERROR in worker thread: {e}")
-                    with failures_lock:
-                        failures.append(f"internal: {e}")
+                    i, obj = next(it)
+                except StopIteration:
+                    return False
+                fut = ex.submit(
+                    _process_objective,
+                    job_id,
+                    obj,
+                    i,
+                    total,
+                    ollama_url,
+                    worker_model,
+                    manager_model,
+                    max_rounds,
+                    num_ctx,
+                    timeout_s,
+                    max_retries,
+                    failures,
+                    failures_lock,
+                )
+                futs[fut] = (i, obj)
+                return True
+
+            # Prefill
+            for _ in range(max(1, PARALLEL_WORKERS)):
+                if not submit_next():
+                    break
+
+            # Main loop: wait for completions and keep queue filled while not cancelling
+            while futs:
+                done, _ = wait(set(futs.keys()), return_when=FIRST_COMPLETED)
+                for fut in done:
+                    futs.pop(fut, None)
+                    try:
+                        fut.result()
+                    except Exception as e:
+                        _log(job_id, f"INTERNAL ERROR in worker thread: {e}")
+                        with failures_lock:
+                            failures.append(f"internal: {e}")
+
+                if _cancel_requested(job_id) and not cancelling:
+                    cancelling = True
+                    _log(job_id, "CANCEL REQUESTED: stopping scheduling new objectives (parallel).")
+                    conn = base.db_connect()
+                    conn.execute(
+                        "UPDATE jobs SET status=?, heartbeat_unix=? WHERE job_id=?",
+                        ("cancelling", int(time.time()), job_id),
+                    )
+                    conn.commit()
+                    conn.close()
+                    base.mark_remaining_objectives_cancelled(job_id)  # type: ignore
+
+                # Keep filling queue if not cancelling
+                while len(futs) < max(1, PARALLEL_WORKERS):
+                    if not submit_next():
+                        break
 
         stop_hb.set()
 
+        final_status = "cancelled" if _cancel_requested(job_id) else "done"
+        if final_status == "cancelled":
+            base.mark_remaining_objectives_cancelled(job_id)  # type: ignore
         conn = base.db_connect()
         conn.execute(
             "UPDATE jobs SET status=?, finished_at_unix=?, heartbeat_unix=? WHERE job_id=?",
-            ("done", int(time.time()), int(time.time()), job_id),
+            (final_status, int(time.time()), int(time.time()), job_id),
         )
         conn.commit()
         conn.close()
